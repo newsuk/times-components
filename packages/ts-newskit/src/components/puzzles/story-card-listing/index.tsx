@@ -39,18 +39,15 @@ export const StoryCardListing: FC<StoryCardListingProps> = ({
         columns={{ xs: 'repeat(1, 1fr)', md: 'repeat(4, 1fr)' }}
         columnGap={{ md: 'space050', xl: 'space060' }}
       >
-        {articles.map((article: StoryCardProps, articleIndex) => {
-          return (
-            <React.Fragment key={article.title}>
-              <StoryCard
-                {...article}
-                imgHiddenMobile={articleIndex > 0 ? true : false}
-                mobileDivider={articleIndex > 0 ? true : false}
-                hiddenMobile={articleIndex > 2 ? true : false}
-              />
-            </React.Fragment>
-          );
-        })}
+        {articles.map((article: StoryCardProps, articleIndex) => (
+          <StoryCard
+            key={article.title}
+            {...article}
+            imgHiddenMobile={articleIndex > 0 ? true : false}
+            mobileDivider={articleIndex > 0 ? true : false}
+            hiddenMobile={articleIndex > 2 ? true : false}
+          />
+        ))}
       </GridLayout>
     </>
   );

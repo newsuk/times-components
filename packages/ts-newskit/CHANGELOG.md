@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.33.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.32.0...@times-components/ts-newskit@1.33.0) (2023-05-02)
+
+
+### Features
+
+* **TMST-626:** Puzzle Card component  ([#3333](https://github.com/newsuk/times-components/issues/3333)) ([bb8c37c](https://github.com/newsuk/times-components/commit/bb8c37cba2b7f255630c76ce09067501d6e11ce0))
+
+
+
+
+
+# [1.32.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.31.1...@times-components/ts-newskit@1.32.0) (2023-05-02)
+
+
+### Features
+
+* **TMST-623:** create article card ([#3331](https://github.com/newsuk/times-components/issues/3331)) ([7601526](https://github.com/newsuk/times-components/commit/7601526d79ac3b6f64ecaf441624bc7b6a8de845))
+
+
+
+
+
 ## [1.31.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.31.0...@times-components/ts-newskit@1.31.1) (2023-05-02)
 
 

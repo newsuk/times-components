@@ -208,7 +208,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
                 </div>
               </div>
               <img
-                alt="ChatGPT invents Sudoku-style puzzle to keep the humans busy ChatGPT invents Sudoku-style puzzle to keep the humans busy"
+                alt="Early birds from across globe make camp in The Mall"
                 class="css-1qgqq71"
                 src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
               />
@@ -235,7 +235,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
                   <h3
                     class="nk-headline-heading css-1spnxj1"
                   >
-                    ChatGPT invents Sudoku-style puzzle to keep the humans busy ChatGPT invents Sudoku-style puzzle to keep the humans busy
+                    Early birds from across globe make camp in The Mall
                   </h3>
                 </section>
               </span>
@@ -344,7 +344,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
                 </div>
               </div>
               <img
-                alt="Title 3"
+                alt="A dish best served cold: Rees-Mogg takes revenge on quiche"
                 class="css-1qgqq71"
                 src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
               />
@@ -371,7 +371,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
                   <h3
                     class="nk-headline-heading css-1spnxj1"
                   >
-                    Title 3
+                    A dish best served cold: Rees-Mogg takes revenge on quiche
                   </h3>
                 </section>
               </span>
@@ -480,7 +480,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
                 </div>
               </div>
               <img
-                alt="title 4"
+                alt="Hour-by-hour guide to a day of remarkable ceremony"
                 class="css-1qgqq71"
                 src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
               />
@@ -507,7 +507,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
                   <h3
                     class="nk-headline-heading css-1spnxj1"
                   >
-                    title 4
+                    Hour-by-hour guide to a day of remarkable ceremony
                   </h3>
                 </section>
               </span>
