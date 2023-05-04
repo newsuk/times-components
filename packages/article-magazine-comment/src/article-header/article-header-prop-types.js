@@ -15,7 +15,6 @@ const articleHeaderPropTypes = {
   longRead: PropTypes.bool,
   publicationName: PropTypes.string.isRequired,
   publishedTime: PropTypes.string.isRequired,
-  showAudioPlayer: PropTypes.bool,
   standfirst: PropTypes.string,
   updatedTime: PropTypes.string
 };
@@ -25,7 +24,6 @@ const articleHeaderDefaultProps = {
   hasVideo: false,
   label: null,
   longRead: false,
-  showAudioPlayer: false,
   standfirst: null,
   updatedTime: null
 };
