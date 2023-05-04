@@ -59,3 +59,41 @@ stylePresets.puzzleCardMedia = {
       '{{borders.borderRadiusRounded010}} {{borders.borderRadiusRounded010}} 0 0'
   }
 };
+
+stylePresets.accordionHeader = {
+  base: {
+    color: '{{colors.inkBrand010}}',
+    borderStyle: 'none none dashed none',
+    iconColor: '{{colors.inkSubtle}}'
+  },
+  hover: {
+    backgroundColor: 'none',
+    color: '{{colors.inkBrand010}}',
+    iconColor: '{{colors.inkSubtle}}'
+  }
+};
+
+stylePresets.accordionPanel = {
+  base: {
+    borderStyle: 'none none dashed none'
+  }
+};
+
+stylePresets.accordionHeaderPrimary = {
+  base: {
+    color: '{{colors.inkBase}}',
+    backgroundColor: '{{colors.white}}',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderStyle: 'none none solid none',
+    borderColor: '{{colors.neutral050}}'
+  }
+};
+
+stylePresets.accordionPanelPrimary = {
+  base: {
+    color: '{{colors.inkSubtle}}',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderStyle: 'none none solid none',
+    borderColor: '{{colors.neutral050}}'
+  }
+};

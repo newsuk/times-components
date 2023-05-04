@@ -1,7 +1,7 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
 import { Archive } from "./index";
 import { NewsKitProvider, Block } from 'newskit';
-import { TimesWebLightTheme } from '../../../theme';
+import { PuzzlesWebLightTheme } from '../../../theme';
 import { sudokuArchive } from './fixtures/sudokuArchive.json';
 import { corsswordsArchive } from './fixtures/corsswordsArchive.json';
 import { wordPuzzlesArchive } from './fixtures/wordPuzzlesArchive.json';
@@ -27,7 +27,7 @@ The `Archive` component is used to display a list of archived Puzzle games, filt
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
 export const ArchiveStory = ({ data, seeMoreLink }) => (
-  <NewsKitProvider theme={TimesWebLightTheme}>
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
     <Block marginInline='space030' marginBlock='space020'>
       <Archive data={data} seeMoreLink={seeMoreLink}/>
     </Block>

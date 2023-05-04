@@ -13,11 +13,13 @@ export const DateCard = ({ data, sectionColour }: DateCardProps) => {
   const { publishedAt, gameLevel, url, status } = data;
   const timestamp = new Date(publishedAt);
   const dayOfWeek = timestamp.toLocaleString('en-us', { weekday: 'short' });
-  const dateString = timestamp.toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric'
-  });
+  const dateString = timestamp
+    .toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric'
+    })
+    .replace(',', '');
 
   return (
     <Card href={url}>
@@ -26,6 +28,7 @@ export const DateCard = ({ data, sectionColour }: DateCardProps) => {
           size="small"
           sectionColour={sectionColour}
           hasGameLevel={!!gameLevel}
+          overrides={{ typographyPreset: 'utilityLabel010' }}
         >
           {gameLevel && gameLevel}
         </StyledLabel>
@@ -38,7 +41,7 @@ export const DateCard = ({ data, sectionColour }: DateCardProps) => {
             <TextBlock
               as="div"
               paddingBlock="space020"
-              typographyPreset="dateCardHeader"
+              typographyPreset="editorialDisplay005"
               stylePreset="inkBase"
             >
               {dayOfWeek}
@@ -46,13 +49,13 @@ export const DateCard = ({ data, sectionColour }: DateCardProps) => {
           )}
           <TextBlock
             paddingBlock="space010"
-            typographyPreset="utilityLabel010"
+            typographyPreset="utilityBody010"
             stylePreset="inkSubtle"
           >
             {dateString}
           </TextBlock>
           {status && (
-            <Block marginBlockStart="space030">
+            <Block marginBlockStart="space020">
               <PuzzlesFlag status={status} />
             </Block>
           )}
