@@ -4,6 +4,8 @@ import { TheTimesLight } from '@newskit-themes/the-times';
 import { stylePresets } from './style-presets';
 import { typographyPresets } from './styles/typography-presets';
 
+const themeTypographyPresets = TheTimesLight.typographyPresets;
+
 export const TimesWebLightTheme = createTheme({
   name: 'times-web-light',
   overrides: {
@@ -15,7 +17,10 @@ export const TimesWebLightTheme = createTheme({
       xl: 1320
     },
     ...TheTimesLight,
-    typographyPresets,
+    typographyPresets: {
+      ...themeTypographyPresets,
+      ...typographyPresets
+    },
     stylePresets
   }
 });
