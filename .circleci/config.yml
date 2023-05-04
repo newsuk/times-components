@@ -6,6 +6,9 @@ executors:
           - image: cimg/node:12.15.0-browsers
         resource_class: 2xlarge
 
+orbs:
+  sonarcloud: sonarsource/sonarcloud@1.0.3
+
 commands:
     install-dependencies:
         description: 'Install Dependencies'
@@ -104,6 +107,19 @@ jobs:
                       npx lerna run test:unit --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
 
+    sonarcloud_scan:
+      executor: node
+      steps:
+        - checkout
+        - attach_workspace:
+            at: ./
+        - sonarcloud/scan
+#        - run:
+#            name: Run Unit Tests
+#            command: |
+#              npx lerna run test:unit --stream --since -- -- --ci --bail --coverage
+#            working_directory: ~/project/
+
     run_cypress_tests:
         executor: node
         steps:
@@ -188,6 +204,9 @@ workflows:
             - run_unit_tests:
                   requires:
                       - setup
+            - sonarcloud_scan:
+                requires:
+                  - run_unit_tests
             - run_cypress_tests:
                   requires:
                       - setup
