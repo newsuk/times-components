@@ -14,7 +14,7 @@ exports[`Render Archive should render a snapshot 1`] = `
         <button
           aria-controls="nk-29-content"
           aria-expanded="true"
-          class="css-1lzindw"
+          class="css-juo7ax"
           data-testid="accordion-control"
           id="nk-1"
         >
@@ -52,7 +52,7 @@ exports[`Render Archive should render a snapshot 1`] = `
       >
         <div
           aria-labelledby="nk-1"
-          class="css-13x0634"
+          class="css-1ruumh7"
           data-testid="accordion-content"
           id="nk-29-content"
           role="region"
@@ -86,10 +86,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
+                              class="css-106gd8f"
                             >
                               Jumbo
                             </label>
@@ -97,24 +97,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Fri
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 3 2023
                               </p>
@@ -122,11 +110,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                                 class="css-11paagg"
                               >
                                 <div
-<<<<<<< HEAD
                                   class="css-7el6ft"
-=======
-                                  class="css-fsetkb"
->>>>>>> d0ebdfc03 (update snnapshot)
                                   data-testid="flag"
                                 >
                                   <span
@@ -161,17 +145,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -179,24 +156,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Thu
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 2 2023
                               </p>
@@ -225,17 +190,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -243,24 +201,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Sun
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Feb 26 2023
                               </p>
@@ -268,11 +214,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                                 class="css-11paagg"
                               >
                                 <div
-<<<<<<< HEAD
                                   class="css-7el6ft"
-=======
-                                  class="css-i9b1ai"
->>>>>>> d0ebdfc03 (update snnapshot)
                                   data-testid="flag"
                                 >
                                   <span
@@ -307,40 +249,21 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-19cm5oj"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-1hcuz64"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-1f8dfil"
                             />
                             <div
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Sat
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Feb 25 2023
                               </p>
@@ -369,17 +292,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Jumbo
                             </label>
@@ -387,24 +303,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Fri
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Feb 24 2023
                               </p>
@@ -412,11 +316,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                                 class="css-11paagg"
                               >
                                 <div
-<<<<<<< HEAD
                                   class="css-7el6ft"
-=======
-                                  class="css-i9b1ai"
->>>>>>> d0ebdfc03 (update snnapshot)
                                   data-testid="flag"
                                 >
                                   <span
@@ -451,17 +351,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -469,24 +362,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Thu
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Feb 23 2023
                               </p>
@@ -515,17 +396,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -533,24 +407,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Wed
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Feb 22 2023
                               </p>
@@ -595,15 +457,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                             />
                           </svg>
                           <p
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            class="css-pe2a7o"
-=======
-                            class="css-wt2eve"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                            class="css-uvqptz"
->>>>>>> b28b48ebf (update snapshot)
+                            class="css-7g1a3i"
                           >
                             See more
                           </p>
@@ -627,11 +481,7 @@ exports[`Render Archive should render a snapshot 1`] = `
         <button
           aria-controls="nk-30-content"
           aria-expanded="false"
-<<<<<<< HEAD
-          class="css-1lzindw"
-=======
-          class="css-18cfj8o"
->>>>>>> d0ebdfc03 (update snnapshot)
+          class="css-juo7ax"
           data-testid="accordion-control"
           id="nk-9"
         >
@@ -669,11 +519,7 @@ exports[`Render Archive should render a snapshot 1`] = `
       >
         <div
           aria-labelledby="nk-9"
-<<<<<<< HEAD
-          class="css-13x0634"
-=======
-          class="css-rujccu"
->>>>>>> d0ebdfc03 (update snnapshot)
+          class="css-1ruumh7"
           data-testid="accordion-content"
           id="nk-30-content"
           role="region"
@@ -707,17 +553,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Jumbo
                             </label>
@@ -725,24 +564,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Fri
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 3 2023
                               </p>
@@ -771,17 +598,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -789,24 +609,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Thu
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 2 2023
                               </p>
@@ -835,17 +643,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -853,24 +654,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Sun
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Feb 26 2023
                               </p>
@@ -878,11 +667,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                                 class="css-11paagg"
                               >
                                 <div
-<<<<<<< HEAD
                                   class="css-7el6ft"
-=======
-                                  class="css-i9b1ai"
->>>>>>> d0ebdfc03 (update snnapshot)
                                   data-testid="flag"
                                 >
                                   <span
@@ -933,15 +718,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                             />
                           </svg>
                           <p
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            class="css-pe2a7o"
-=======
-                            class="css-wt2eve"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                            class="css-uvqptz"
->>>>>>> b28b48ebf (update snapshot)
+                            class="css-7g1a3i"
                           >
                             See more
                           </p>
@@ -965,11 +742,7 @@ exports[`Render Archive should render a snapshot 1`] = `
         <button
           aria-controls="nk-31-content"
           aria-expanded="false"
-<<<<<<< HEAD
-          class="css-1lzindw"
-=======
-          class="css-18cfj8o"
->>>>>>> d0ebdfc03 (update snnapshot)
+          class="css-juo7ax"
           data-testid="accordion-control"
           id="nk-13"
         >
@@ -1007,11 +780,7 @@ exports[`Render Archive should render a snapshot 1`] = `
       >
         <div
           aria-labelledby="nk-13"
-<<<<<<< HEAD
-          class="css-13x0634"
-=======
-          class="css-rujccu"
->>>>>>> d0ebdfc03 (update snnapshot)
+          class="css-1ruumh7"
           data-testid="accordion-content"
           id="nk-31-content"
           role="region"
@@ -1045,17 +814,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Jumbo
                             </label>
@@ -1063,24 +825,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Fri
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 3 2023
                               </p>
@@ -1109,17 +859,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -1127,24 +870,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Thu
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 2 2023
                               </p>
@@ -1173,17 +904,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -1191,24 +915,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Sun
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Feb 26 2023
                               </p>
@@ -1216,11 +928,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                                 class="css-11paagg"
                               >
                                 <div
-<<<<<<< HEAD
                                   class="css-7el6ft"
-=======
-                                  class="css-i9b1ai"
->>>>>>> d0ebdfc03 (update snnapshot)
                                   data-testid="flag"
                                 >
                                   <span
@@ -1271,15 +979,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                             />
                           </svg>
                           <p
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            class="css-pe2a7o"
-=======
-                            class="css-wt2eve"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                            class="css-uvqptz"
->>>>>>> b28b48ebf (update snapshot)
+                            class="css-7g1a3i"
                           >
                             See more
                           </p>
@@ -1303,11 +1003,7 @@ exports[`Render Archive should render a snapshot 1`] = `
         <button
           aria-controls="nk-32-content"
           aria-expanded="false"
-<<<<<<< HEAD
-          class="css-1lzindw"
-=======
-          class="css-18cfj8o"
->>>>>>> d0ebdfc03 (update snnapshot)
+          class="css-juo7ax"
           data-testid="accordion-control"
           id="nk-17"
         >
@@ -1345,11 +1041,7 @@ exports[`Render Archive should render a snapshot 1`] = `
       >
         <div
           aria-labelledby="nk-17"
-<<<<<<< HEAD
-          class="css-13x0634"
-=======
-          class="css-rujccu"
->>>>>>> d0ebdfc03 (update snnapshot)
+          class="css-1ruumh7"
           data-testid="accordion-content"
           id="nk-32-content"
           role="region"
@@ -1383,17 +1075,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Jumbo
                             </label>
@@ -1401,24 +1086,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Fri
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 3 2023
                               </p>
@@ -1447,17 +1120,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -1465,24 +1131,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Thu
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 2 2023
                               </p>
@@ -1511,17 +1165,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -1529,24 +1176,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Sun
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Feb 26 2023
                               </p>
@@ -1554,11 +1189,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                                 class="css-11paagg"
                               >
                                 <div
-<<<<<<< HEAD
                                   class="css-7el6ft"
-=======
-                                  class="css-i9b1ai"
->>>>>>> d0ebdfc03 (update snnapshot)
                                   data-testid="flag"
                                 >
                                   <span
@@ -1609,15 +1240,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                             />
                           </svg>
                           <p
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            class="css-pe2a7o"
-=======
-                            class="css-wt2eve"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                            class="css-uvqptz"
->>>>>>> b28b48ebf (update snapshot)
+                            class="css-7g1a3i"
                           >
                             See more
                           </p>
@@ -1641,11 +1264,7 @@ exports[`Render Archive should render a snapshot 1`] = `
         <button
           aria-controls="nk-33-content"
           aria-expanded="false"
-<<<<<<< HEAD
-          class="css-1lzindw"
-=======
-          class="css-18cfj8o"
->>>>>>> d0ebdfc03 (update snnapshot)
+          class="css-juo7ax"
           data-testid="accordion-control"
           id="nk-21"
         >
@@ -1683,11 +1302,7 @@ exports[`Render Archive should render a snapshot 1`] = `
       >
         <div
           aria-labelledby="nk-21"
-<<<<<<< HEAD
-          class="css-13x0634"
-=======
-          class="css-rujccu"
->>>>>>> d0ebdfc03 (update snnapshot)
+          class="css-1ruumh7"
           data-testid="accordion-content"
           id="nk-33-content"
           role="region"
@@ -1721,17 +1336,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Jumbo
                             </label>
@@ -1739,24 +1347,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Fri
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 3 2023
                               </p>
@@ -1785,17 +1381,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -1803,24 +1392,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Thu
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 2 2023
                               </p>
@@ -1849,17 +1426,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -1867,24 +1437,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Sun
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Feb 26 2023
                               </p>
@@ -1892,11 +1450,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                                 class="css-11paagg"
                               >
                                 <div
-<<<<<<< HEAD
                                   class="css-7el6ft"
-=======
-                                  class="css-i9b1ai"
->>>>>>> d0ebdfc03 (update snnapshot)
                                   data-testid="flag"
                                 >
                                   <span
@@ -1947,15 +1501,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                             />
                           </svg>
                           <p
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            class="css-pe2a7o"
-=======
-                            class="css-wt2eve"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                            class="css-uvqptz"
->>>>>>> b28b48ebf (update snapshot)
+                            class="css-7g1a3i"
                           >
                             See more
                           </p>
@@ -1979,11 +1525,7 @@ exports[`Render Archive should render a snapshot 1`] = `
         <button
           aria-controls="nk-34-content"
           aria-expanded="false"
-<<<<<<< HEAD
-          class="css-1lzindw"
-=======
-          class="css-18cfj8o"
->>>>>>> d0ebdfc03 (update snnapshot)
+          class="css-juo7ax"
           data-testid="accordion-control"
           id="nk-25"
         >
@@ -2021,11 +1563,7 @@ exports[`Render Archive should render a snapshot 1`] = `
       >
         <div
           aria-labelledby="nk-25"
-<<<<<<< HEAD
-          class="css-13x0634"
-=======
-          class="css-rujccu"
->>>>>>> d0ebdfc03 (update snnapshot)
+          class="css-1ruumh7"
           data-testid="accordion-content"
           id="nk-34-content"
           role="region"
@@ -2059,17 +1597,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Jumbo
                             </label>
@@ -2077,24 +1608,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Fri
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 3 2023
                               </p>
@@ -2123,17 +1642,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -2141,24 +1653,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Thu
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Mar 2 2023
                               </p>
@@ -2187,17 +1687,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
-                            class="css-1r6lj58"
+                            class="css-1ee1okj"
                           >
                             <label
-                              class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
+                              class="css-106gd8f"
                             >
                               Quick
                             </label>
@@ -2205,24 +1698,12 @@ exports[`Render Archive should render a snapshot 1`] = `
                               class="css-1dfr6je"
                             >
                               <div
-<<<<<<< HEAD
-<<<<<<< HEAD
-                                class="css-4a6i60"
-=======
-                                class="css-1cvlhtx"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                                class="css-18nirtd"
->>>>>>> b28b48ebf (update snapshot)
+                                class="css-1iwrktp"
                               >
                                 Sun
                               </div>
                               <p
-<<<<<<< HEAD
-                                class="css-110204x"
-=======
-                                class="css-gvuzi6"
->>>>>>> d0ebdfc03 (update snnapshot)
+                                class="css-1vlg01v"
                               >
                                 Feb 26 2023
                               </p>
@@ -2230,11 +1711,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                                 class="css-11paagg"
                               >
                                 <div
-<<<<<<< HEAD
                                   class="css-7el6ft"
-=======
-                                  class="css-i9b1ai"
->>>>>>> d0ebdfc03 (update snnapshot)
                                   data-testid="flag"
                                 >
                                   <span
@@ -2285,15 +1762,7 @@ exports[`Render Archive should render a snapshot 1`] = `
                             />
                           </svg>
                           <p
-<<<<<<< HEAD
-<<<<<<< HEAD
-                            class="css-pe2a7o"
-=======
-                            class="css-wt2eve"
->>>>>>> d0ebdfc03 (update snnapshot)
-=======
-                            class="css-uvqptz"
->>>>>>> b28b48ebf (update snapshot)
+                            class="css-7g1a3i"
                           >
                             See more
                           </p>

@@ -235,14 +235,6 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: '1.286',
       letterSpacing: '0%',
       fontStretch: 'normal'
-    },
-    dateCardHeader: {
-      fontFamily: 'TimesModern-Bold',
-      fontSize: '32px',
-      fontWeight: 800,
-      lineHeight: '1.250',
-      letterSpacing: '0%',
-      fontStretch: 'normal'
     }
   })
 );
