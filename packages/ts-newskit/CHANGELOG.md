@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.34.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.33.2...@times-components/ts-newskit@1.34.0) (2023-05-04)
+
+
+### Features
+
+* **TMRX-1243:** update theme reference to pull from package ([#3344](https://github.com/newsuk/times-components/issues/3344)) ([d9cec44](https://github.com/newsuk/times-components/commit/d9cec4469a5632f8ba85462c3931ec7b69497580))
+
+
+
+
+
 ## [1.33.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.33.1...@times-components/ts-newskit@1.33.2) (2023-05-04)
 
 **Note:** Version bump only for package @times-components/ts-newskit
