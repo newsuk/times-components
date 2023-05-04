@@ -51,10 +51,7 @@ const ArticleHeader = ({
       {headline}
     </HeadlineContainer>
     {!!showAudioPlayer && (
-      <>
-        <InArticleAudio />
-        <StaticContent html={"<div>Hello Sweetie</div>"} />
-      </>
+      <InArticleAudio />
     )}
     <FlagsContainer>
       <UpdatedTimeProvider updatedTime={updatedTime}>

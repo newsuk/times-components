@@ -52,8 +52,7 @@ const ArticleSkeleton = ({
   isPreview,
   swgProductId,
   getFallbackThumbnailUrl169,
-  zephrDivs,
-  showAudioPlayer
+  zephrDivs
 }) => {
   const {
     commentsEnabled,
@@ -190,12 +189,6 @@ const ArticleSkeleton = ({
                   />
                 )}
                 <Header />
-                {!!showAudioPlayer && (
-                  <>
-                    <InArticleAudio />
-                    <StaticContent html={"<div>Hello Sweetie</div>"} />
-                  </>
-                )}
                 {isSharingSavingEnabled ? (
                   <UserState state={UserState.showSaveAndShareBar}>
                     <MessageContext.Consumer>
