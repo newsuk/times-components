@@ -205,6 +205,7 @@ workflows:
                   requires:
                       - setup
             - sonarcloud_scan:
+                context: SonarCloud
                 requires:
                   - run_unit_tests
             - run_cypress_tests:
