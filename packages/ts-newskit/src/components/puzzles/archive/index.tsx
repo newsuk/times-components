@@ -35,7 +35,7 @@ export const Archive = ({ data, seeMoreLink }: ArchiveProps) => {
           id={getSSRId()}
           overrides={{
             header: {
-              typographyPreset: 'utilityButton010',
+              typographyPreset: 'utilityLabel010',
               paddingInline: 'space000'
             },
             panel: {
@@ -76,7 +76,7 @@ export const Archive = ({ data, seeMoreLink }: ArchiveProps) => {
                       }}
                     />
                     <TextBlock
-                      typographyPreset="utilitySubheadline010"
+                      typographyPreset="utilityButton020"
                       stylePreset="inkContrast"
                       marginBlockStart="space030"
                     >

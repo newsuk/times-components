@@ -1,7 +1,7 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
 import { DateCard } from "./index";
 import { NewsKitProvider } from 'newskit';
-import { TimesWebLightTheme } from '../../../theme';
+import { PuzzlesWebLightTheme } from '../../../theme';
 import { fonts } from '@times-components/ts-styleguide';
 
 <Meta
@@ -24,7 +24,7 @@ This takes in a `data` and `sectionColour` props, as below, to display the card.
 Please click the 'Canvas' tab for a better viewing experience, where you can review and configure with different titles.
 
 export const DateCardStory = ({ publishedAt, status, gameLevel, url, sectionColour }) => (
-  <NewsKitProvider theme={TimesWebLightTheme}>
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
     <DateCard data={{ publishedAt, status, gameLevel, url }} sectionColour={sectionColour} />
   </NewsKitProvider>
 );

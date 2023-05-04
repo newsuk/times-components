@@ -41,7 +41,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
         class="css-7wldo2"
       >
         <div
-          class="css-vylmno"
+          class="css-7el6ft"
           data-testid="flag"
         >
           <span

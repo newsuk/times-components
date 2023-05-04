@@ -12,7 +12,7 @@ exports[`Render Toast should render the component 1`] = `
         <button
           aria-controls="nk-1-content"
           aria-expanded="false"
-          class="css-1r0iinl"
+          class="css-19fif8f"
           data-testid="accordion-control"
           id="nk-1-control"
         >
@@ -50,7 +50,7 @@ exports[`Render Toast should render the component 1`] = `
       >
         <div
           aria-labelledby="nk-1-control"
-          class="css-1b62ctp"
+          class="css-ltus7y"
           data-testid="accordion-content"
           id="nk-1-content"
           role="region"
