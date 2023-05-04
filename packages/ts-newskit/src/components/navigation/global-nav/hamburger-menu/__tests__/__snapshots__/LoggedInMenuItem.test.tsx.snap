@@ -3,12 +3,12 @@
 exports[`Logged in Menu Item should render the component 1`] = `
 <DocumentFragment>
   <button
-    class="css-1ntc43f"
+    class="css-oh7ily"
     data-testid="button"
     type="button"
   >
     <span
-      class="css-wo6lye"
+      class="css-t9dmcw"
     >
       title
     </span>

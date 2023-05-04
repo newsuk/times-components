@@ -3,31 +3,31 @@
 exports[`Feedback Component should render snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-17my11n"
+    class="css-1w2p2av"
   >
     <div
       class="css-h0jm43"
     >
       <div
-        class="css-1pnvew3"
+        class="css-m88g9a"
       >
         <div
-          class="css-1ypkhuh"
+          class="css-14t1cah"
         >
           <p
-            class="css-ntpk9b"
+            class="css-z5m428"
           >
             Want to listen to more articles? Give your feedback below or email
           </p>
           <a
-            class="css-1arsg2x"
+            class="css-19d1df6"
             href="mailto:comments+engagement@thetimes.co.uk"
           >
             <span
               class="css-17x5lw"
             >
               <span
-                class="css-xg3rz1"
+                class="css-10izgsu"
               >
                 comments+engagement@thetimes.co.uk
               </span>
@@ -40,12 +40,12 @@ exports[`Feedback Component should render snapshot 1`] = `
       >
         <button
           aria-label="close"
-          class="css-1z0ieme"
+          class="css-1ptfube"
           data-testid="button"
           type="button"
         >
           <svg
-            class="css-j6fc06"
+            class="css-ny3roy"
             fill="none"
             height="24"
             width="24"
@@ -84,12 +84,12 @@ exports[`Feedback Component should render snapshot 1`] = `
       >
         <button
           aria-label="Thumbs Down"
-          class="css-196hyhg"
+          class="css-qla9w6"
           data-testid="button"
           type="button"
         >
           <svg
-            class="css-j6fc06"
+            class="css-ny3roy"
             fill="none"
             height="32"
             viewBox="0 0 32 32"
@@ -131,12 +131,12 @@ exports[`Feedback Component should render snapshot 1`] = `
       >
         <button
           aria-label="Thumbs Up"
-          class="css-196hyhg"
+          class="css-qla9w6"
           data-testid="button"
           type="button"
         >
           <svg
-            class="css-j6fc06"
+            class="css-ny3roy"
             fill="none"
             height="32"
             viewBox="0 0 32 32"

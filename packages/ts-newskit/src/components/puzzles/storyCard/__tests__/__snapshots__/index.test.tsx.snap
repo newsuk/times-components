@@ -3,7 +3,7 @@
 exports[`Render puzzles story card should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-9de76o"
+    class="css-pu54k6"
   >
     <div
       class="css-9fndha"
@@ -12,7 +12,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
         class="css-1kwj960"
       >
         <picture
-          class="css-18ycrwi"
+          class="css-zp0elg"
         >
           <div
             class="css-5pczz7"
@@ -22,7 +22,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
             >
               <svg
                 aria-hidden="true"
-                class="css-cn3v4a-EmotionIconBase ex0cdmw0"
+                class="css-2xpd25-EmotionIconBase ex0cdmw0"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -50,7 +50,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
       class="css-diffbd"
     >
       <a
-        class="css-5huxlf"
+        class="css-1540jle"
         data-testid="storyCard-link"
         href="https://newskit.co.uk/"
       >
@@ -61,10 +61,10 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
             class="css-1xzc2un"
           >
             <section
-              class="css-1ep19sd"
+              class="css-1go78j3"
             >
               <h3
-                class="nk-headline-heading css-1spnxj1"
+                class="nk-headline-heading css-i2jo9u"
               >
                 ChatGPT invents Sudoku-style puzzle to keep the humans busy
               </h3>
@@ -74,7 +74,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
             class="css-1xzc2un"
           >
             <svg
-              class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+              class="css-1my36lh-EmotionIconBase ex0cdmw0"
               fill="currentColor"
               focusable="false"
               role="img"
@@ -103,21 +103,21 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
         class="css-1wxz2ss"
       >
         <div
-          class="css-5pyblu"
+          class="css-e027nv"
           data-testid="tag"
         >
           <span
-            class="css-n79ak9"
+            class="css-1pjbpyz"
           >
             Review
           </span>
         </div>
         <div
-          class="css-1nxfrzf"
+          class="css-lbmzh3"
           data-testid="tag"
         >
           <span
-            class="css-n79ak9"
+            class="css-1pjbpyz"
           >
             4 min read
           </span>

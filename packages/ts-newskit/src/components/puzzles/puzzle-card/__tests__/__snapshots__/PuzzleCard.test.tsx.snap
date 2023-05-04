@@ -10,7 +10,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
       style="position: relative;"
     >
       <svg
-        class="css-17hrftr"
+        class="css-b28mi"
         data-testid="puzzle-placeholder"
         fill="none"
         viewBox="0 0 293 196"
@@ -45,7 +45,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
           data-testid="flag"
         >
           <span
-            class="css-n79ak9"
+            class="css-1pjbpyz"
           >
             COMPLETE
           </span>
@@ -67,7 +67,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
             class="css-1xzc2un"
           >
             <div
-              class="css-12p5eap"
+              class="css-1c31q1i"
             >
               General Knowledge
             </div>
@@ -76,7 +76,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
             class="css-1xzc2un"
           >
             <svg
-              class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+              class="css-1my36lh-EmotionIconBase ex0cdmw0"
               fill="currentColor"
               focusable="false"
               role="img"
@@ -104,12 +104,12 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
           class="css-13byt3y"
         >
           <span
-            class="css-1x9evae"
+            class="css-6zh2x5"
           >
             Sunday
           </span>
           <span
-            class="css-178hr5"
+            class="css-7bspk1"
           >
              | No. 9873
           </span>

@@ -6,7 +6,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
     class="css-13byt3y"
   >
     <div
-      class="css-1a2x76v"
+      class="css-1y4oxz0"
     >
       <div
         class="css-bj811j"
@@ -18,7 +18,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1m4sqrt"
+              class="css-m5rii3"
             >
               508
             </span>
@@ -27,7 +27,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1jnccx1"
+              class="css-rb22oc"
             >
               Puzzles played
             </span>
@@ -40,7 +40,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1m4sqrt"
+              class="css-m5rii3"
             >
               180
             </span>
@@ -49,7 +49,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1jnccx1"
+              class="css-rb22oc"
             >
               Current streak
             </span>
@@ -62,7 +62,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1m4sqrt"
+              class="css-m5rii3"
             >
               280
             </span>
@@ -71,7 +71,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1jnccx1"
+              class="css-rb22oc"
             >
               Longest streak
             </span>
@@ -80,7 +80,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
       </div>
     </div>
     <svg
-      class="css-17hrftr"
+      class="css-pc2hck"
       height="24"
       preserveAspectRatio="none"
       viewBox="0 0 1440 24"
