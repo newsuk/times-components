@@ -211,8 +211,9 @@ workflows:
             # regarding requires, it should be 'setup' for now until we implement coverage
             - sonarcloud_scan:
                 context: SonarCloud
-                requires:
-                  - run_unit_tests
+                # note: until we're doing coverage tests, should be able to remove the requirement on run_unit_tests and setup
+#                requires:
+#                  - run_unit_tests
             - run_cypress_tests:
                   requires:
                       - setup
