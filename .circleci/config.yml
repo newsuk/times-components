@@ -5,6 +5,10 @@ executors:
         docker:
           - image: cimg/node:12.15.0-browsers
         resource_class: 2xlarge
+    node-sonar:
+      docker:
+        - image: cimg/node:16.13.1
+      resource_class: 2xlarge
 
 orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.3
@@ -108,7 +112,7 @@ jobs:
                   working_directory: ~/project/
 
     sonarcloud_scan:
-      executor: node
+      executor: node_sonar
       steps:
         - checkout
         - attach_workspace:
@@ -204,6 +208,7 @@ workflows:
             - run_unit_tests:
                   requires:
                       - setup
+            # regarding requires, it should be 'setup' for now until we implement coverage
             - sonarcloud_scan:
                 context: SonarCloud
                 requires:
