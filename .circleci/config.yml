@@ -6,9 +6,9 @@ executors:
           - image: cimg/node:12.15.0-browsers
         resource_class: 2xlarge
     node-sonar:
-      docker:
-        - image: cimg/node:16.13.1
-      resource_class: 2xlarge
+        docker:
+          - image: cimg/node:16.13.1
+        resource_class: 2xlarge
 
 orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.3
