@@ -21,7 +21,8 @@ const articlePageDefaultProps = {
   article: null,
   error: null,
   isLoading: false,
-  onImagePress: null
+  onImagePress: null,
+  showAudioPlayer: false
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };

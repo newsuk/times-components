@@ -11,8 +11,7 @@ const articleSkeletonPropTypes = {
     account: PropTypes.string.isRequired
   }).isRequired,
   swgProductId: PropTypes.string,
-  zephrDivs: PropTypes.bool,
-  showAudioPlayer: PropTypes.bool
+  zephrDivs: PropTypes.bool
 };
 
 const articleSkeletonDefaultProps = {
@@ -21,8 +20,7 @@ const articleSkeletonDefaultProps = {
   Header: () => null,
   receiveChildList: () => {},
   swgProductId: null,
-  zephrDivs: false,
-  showAudioPlayer: false
+  zephrDivs: false
 };
 
 export { articleSkeletonPropTypes, articleSkeletonDefaultProps };
