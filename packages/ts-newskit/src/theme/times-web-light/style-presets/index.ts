@@ -9,8 +9,6 @@ import { pageStylePresets } from './page';
 import { secondaryNavigationStylePresets } from './secondary-nav';
 import { sliceStylePresets } from './slices';
 import { textStylePresets } from './text';
-import { flagStylePresets } from './flag';
-import { accordionStylePresets } from './accordion';
 import { feedbackStylePresets } from './feedback';
 import { buttonStylePresets } from './buttons';
 
@@ -27,7 +25,5 @@ export const stylePresets = {
   ...secondaryNavigationStylePresets,
   ...leadStoryStylePresets,
   ...sliceStylePresets,
-  ...flagStylePresets,
-  ...accordionStylePresets,
   ...feedbackStylePresets
 };

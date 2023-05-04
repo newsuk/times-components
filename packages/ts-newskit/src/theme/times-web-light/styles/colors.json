@@ -98,7 +98,6 @@
   "blackTint080": "rgba(0,0,0,0.8)",
   "blackTint090": "rgba(0,0,0,0.9)",
   "inkBase": "{{colors.neutral080}}",
-  "inkPuzzle": "rgba(197,70,0,1)",
   "inkContrast": "{{colors.neutral090}}",
   "inkSubtle": "{{colors.neutral070}}",
   "inkNonEssential": "{{colors.neutral050}}",
