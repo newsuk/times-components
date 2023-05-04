@@ -32,6 +32,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     swgProductId,
     getFallbackThumbnailUrl169,
     zephrDivs,
+    showAudioPlayer,
     sharingSavingFlag,
     commentingFlag
   } = data;
@@ -97,7 +98,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               isPreview,
               swgProductId,
               getFallbackThumbnailUrl169,
-              zephrDivs
+              zephrDivs,
+              showAudioPlayer
             })
           );
         }

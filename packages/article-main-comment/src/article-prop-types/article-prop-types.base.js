@@ -13,7 +13,8 @@ const articlePagePropTypes = {
   isLoading: PropTypes.bool,
   onImagePress: PropTypes.func,
   receiveChildList: PropTypes.func.isRequired,
-  zephrDivs: PropTypes.bool
+  zephrDivs: PropTypes.bool,
+  showAudioPlayer: PropTypes.bool
 };
 
 const articlePageDefaultProps = {

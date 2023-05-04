@@ -51,7 +51,8 @@ const ArticleSkeleton = ({
   isPreview,
   swgProductId,
   getFallbackThumbnailUrl169,
-  zephrDivs
+  zephrDivs,
+  showAudioPlayer
 }) => {
   const {
     commentsEnabled,
@@ -212,6 +213,9 @@ const ArticleSkeleton = ({
                       '<div id="nu-zephr-article-target-bottom-headercontainer"></div>'
                     }
                   />
+                )}
+                {!!showAudioPlayer && (
+                  <InArticleAudio {...{ src, readyToPlayText, playingText, narrator, headline, feedback }} />
                 )}
               </HeaderContainer>
               <BodyContainer>
