@@ -30,6 +30,7 @@ const ArticleHeader = ({
   label,
   publicationName,
   publishedTime,
+  showAudioPlayer,
   standfirst,
   updatedTime
 }) => (
@@ -49,6 +50,12 @@ const ArticleHeader = ({
     >
       {headline}
     </HeadlineContainer>
+    {!!showAudioPlayer && (
+      <>
+        <InArticleAudio />
+        <StaticContent html={"<div>Hello Sweetie</div>"} />
+      </>
+    )}
     <FlagsContainer>
       <UpdatedTimeProvider updatedTime={updatedTime}>
         <ArticleFlags flags={flags} />
