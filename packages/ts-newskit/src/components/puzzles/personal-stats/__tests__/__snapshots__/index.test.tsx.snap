@@ -27,7 +27,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-3mguq5"
+              class="css-rb22oc"
             >
               Puzzles played
             </span>
@@ -49,7 +49,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-3mguq5"
+              class="css-rb22oc"
             >
               Current streak
             </span>
@@ -71,7 +71,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-3mguq5"
+              class="css-rb22oc"
             >
               Longest streak
             </span>

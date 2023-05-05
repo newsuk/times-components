@@ -254,7 +254,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                 class="css-1iuvgg2"
               >
                 <span
-                  class="css-hh6ckh"
+                  class="css-gtloop"
                   data-testid="audio-player-time-display"
                 >
                   00:00
@@ -307,7 +307,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                 class="css-11r7h3x"
               >
                 <span
-                  class="css-hh6ckh"
+                  class="css-gtloop"
                   data-testid="audio-player-time-display"
                 >
                   00:00

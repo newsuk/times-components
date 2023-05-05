@@ -56,7 +56,7 @@ exports[`Render Toast should render the component 1`] = `
           role="region"
         >
           <p
-            class="css-u5rv8x"
+            class="css-z5m428"
           >
             content
           </p>

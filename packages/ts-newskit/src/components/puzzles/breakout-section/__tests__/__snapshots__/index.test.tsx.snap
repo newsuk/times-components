@@ -129,7 +129,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-3lb4lf"
+              class="css-npvr24"
             >
               Crosswords
             </span>
@@ -145,7 +145,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-3lb4lf"
+              class="css-npvr24"
             >
               Sudokus
             </span>
@@ -161,7 +161,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-3lb4lf"
+              class="css-npvr24"
             >
               Word Puzzles
             </span>
@@ -177,7 +177,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-3lb4lf"
+              class="css-npvr24"
             >
               Numbers and Logic
             </span>
@@ -193,7 +193,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-3lb4lf"
+              class="css-npvr24"
             >
               Quizzes and Teasers
             </span>
@@ -209,7 +209,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-3lb4lf"
+              class="css-npvr24"
             >
               Board and Card Games
             </span>
