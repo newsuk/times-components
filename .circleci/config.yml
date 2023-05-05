@@ -114,6 +114,7 @@ jobs:
     sonarcloud_scan:
       executor: node_sonar
       steps:
+        - checkout
         - attach_workspace:
             at: ./
         - sonarcloud/scan
