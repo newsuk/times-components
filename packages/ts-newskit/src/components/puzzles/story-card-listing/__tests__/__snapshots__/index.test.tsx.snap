@@ -1,0 +1,572 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render puzzles story card should render a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-26wenj"
+    data-testid="title-bar"
+  >
+    <div
+      class="css-1aiajnh"
+    >
+      <section
+        class="css-1oteowz"
+      >
+        <h2
+          class="nk-headline-heading css-i2jo9u"
+        >
+          Recent stories
+        </h2>
+      </section>
+    </div>
+  </div>
+  <div
+    class="css-kt7cnl"
+  >
+    <div
+      class="css-9fndha"
+    >
+      <div
+        class="css-1hd1l2l"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-obfal1"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-pu54k6"
+      >
+        <div
+          class="css-9fndha"
+        >
+          <div
+            class="css-1kwj960"
+          >
+            <picture
+              class="css-zp0elg"
+            >
+              <div
+                class="css-5pczz7"
+              >
+                <div
+                  class="css-1q2lbmy"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-2xpd25-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img
+                alt="ChatGPT invents Sudoku-style puzzle to keep the humans busy"
+                class="css-1qgqq71"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
+              />
+            </picture>
+          </div>
+        </div>
+        <div
+          class="css-diffbd"
+        >
+          <a
+            class="css-1540jle"
+            data-testid="storyCard-link"
+            href="https://newskit.co.uk/"
+          >
+            <span
+              class="css-pqzzby"
+            >
+              <span
+                class="css-1xzc2un"
+              >
+                <section
+                  class="css-117km6"
+                >
+                  <h3
+                    class="nk-headline-heading css-i2jo9u"
+                  >
+                    ChatGPT invents Sudoku-style puzzle to keep the humans busy
+                  </h3>
+                </section>
+              </span>
+              <span
+                class="css-1xzc2un"
+              >
+                <svg
+                  class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                  fill="currentColor"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    External link
+                  </title>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div
+          class="css-2drvku"
+        >
+          <div
+            class="css-1wxz2ss"
+          >
+            <div
+              class="css-e027nv"
+              data-testid="tag"
+            >
+              <span
+                class="css-1pjbpyz"
+              >
+                Technology
+              </span>
+            </div>
+            <div
+              class="css-lbmzh3"
+              data-testid="tag"
+            >
+              <span
+                class="css-1pjbpyz"
+              >
+                6 min read
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-9fndha"
+    >
+      <div
+        class="css-gre9re"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-obfal1"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-pu54k6"
+      >
+        <div
+          class="css-11l110t"
+        >
+          <div
+            class="css-1kwj960"
+          >
+            <picture
+              class="css-zp0elg"
+            >
+              <div
+                class="css-5pczz7"
+              >
+                <div
+                  class="css-1q2lbmy"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-2xpd25-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img
+                alt="Early birds from across globe make camp in The Mall"
+                class="css-1qgqq71"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
+              />
+            </picture>
+          </div>
+        </div>
+        <div
+          class="css-diffbd"
+        >
+          <a
+            class="css-1540jle"
+            data-testid="storyCard-link"
+            href="https://newskit.co.uk/"
+          >
+            <span
+              class="css-pqzzby"
+            >
+              <span
+                class="css-1xzc2un"
+              >
+                <section
+                  class="css-1ofui2o"
+                >
+                  <h3
+                    class="nk-headline-heading css-i2jo9u"
+                  >
+                    Early birds from across globe make camp in The Mall
+                  </h3>
+                </section>
+              </span>
+              <span
+                class="css-1xzc2un"
+              >
+                <svg
+                  class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                  fill="currentColor"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    External link
+                  </title>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div
+          class="css-2drvku"
+        >
+          <div
+            class="css-1wxz2ss"
+          >
+            <div
+              class="css-e027nv"
+              data-testid="tag"
+            >
+              <span
+                class="css-1pjbpyz"
+              >
+                Technology
+              </span>
+            </div>
+            <div
+              class="css-lbmzh3"
+              data-testid="tag"
+            >
+              <span
+                class="css-1pjbpyz"
+              >
+                6 min read
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-9fndha"
+    >
+      <div
+        class="css-gre9re"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-obfal1"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-pu54k6"
+      >
+        <div
+          class="css-11l110t"
+        >
+          <div
+            class="css-1kwj960"
+          >
+            <picture
+              class="css-zp0elg"
+            >
+              <div
+                class="css-5pczz7"
+              >
+                <div
+                  class="css-1q2lbmy"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-2xpd25-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img
+                alt="A dish best served cold: Rees-Mogg takes revenge on quiche"
+                class="css-1qgqq71"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
+              />
+            </picture>
+          </div>
+        </div>
+        <div
+          class="css-diffbd"
+        >
+          <a
+            class="css-1540jle"
+            data-testid="storyCard-link"
+            href="https://newskit.co.uk/"
+          >
+            <span
+              class="css-pqzzby"
+            >
+              <span
+                class="css-1xzc2un"
+              >
+                <section
+                  class="css-1ofui2o"
+                >
+                  <h3
+                    class="nk-headline-heading css-i2jo9u"
+                  >
+                    A dish best served cold: Rees-Mogg takes revenge on quiche
+                  </h3>
+                </section>
+              </span>
+              <span
+                class="css-1xzc2un"
+              >
+                <svg
+                  class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                  fill="currentColor"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    External link
+                  </title>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div
+          class="css-2drvku"
+        >
+          <div
+            class="css-1wxz2ss"
+          >
+            <div
+              class="css-e027nv"
+              data-testid="tag"
+            >
+              <span
+                class="css-1pjbpyz"
+              >
+                Technology
+              </span>
+            </div>
+            <div
+              class="css-lbmzh3"
+              data-testid="tag"
+            >
+              <span
+                class="css-1pjbpyz"
+              >
+                6 min read
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-11l110t"
+    >
+      <div
+        class="css-gre9re"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-obfal1"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-pu54k6"
+      >
+        <div
+          class="css-11l110t"
+        >
+          <div
+            class="css-1kwj960"
+          >
+            <picture
+              class="css-zp0elg"
+            >
+              <div
+                class="css-5pczz7"
+              >
+                <div
+                  class="css-1q2lbmy"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-2xpd25-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <img
+                alt="Hour-by-hour guide to a day of remarkable ceremony"
+                class="css-1qgqq71"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
+              />
+            </picture>
+          </div>
+        </div>
+        <div
+          class="css-diffbd"
+        >
+          <a
+            class="css-1540jle"
+            data-testid="storyCard-link"
+            href="https://newskit.co.uk/"
+          >
+            <span
+              class="css-pqzzby"
+            >
+              <span
+                class="css-1xzc2un"
+              >
+                <section
+                  class="css-1ofui2o"
+                >
+                  <h3
+                    class="nk-headline-heading css-i2jo9u"
+                  >
+                    Hour-by-hour guide to a day of remarkable ceremony
+                  </h3>
+                </section>
+              </span>
+              <span
+                class="css-1xzc2un"
+              >
+                <svg
+                  class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                  fill="currentColor"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    External link
+                  </title>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div
+          class="css-2drvku"
+        >
+          <div
+            class="css-1wxz2ss"
+          >
+            <div
+              class="css-e027nv"
+              data-testid="tag"
+            >
+              <span
+                class="css-1pjbpyz"
+              >
+                Technology
+              </span>
+            </div>
+            <div
+              class="css-lbmzh3"
+              data-testid="tag"
+            >
+              <span
+                class="css-1pjbpyz"
+              >
+                6 min read
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
