@@ -10,7 +10,8 @@ const defaultProps = {
   image: {
     src:
       '//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63',
-    alt: 'This is ALT Text'
+    alt: 'This is ALT Text',
+    caption: 'Credit'
   },
   title: "Harry & Meghan's New Project?",
   url:
@@ -33,9 +34,10 @@ describe('Render Article List Item', () => {
   });
 
   it('items should have link with href', () => {
-    const { getAllByTestId } = renderComponent(defaultProps);
-    const articleListUrl = getAllByTestId('article-ListItem')[0];
-    expect(articleListUrl).toHaveAttribute(
+    const { getByText } = renderComponent(defaultProps);
+    const getArticleListItem = getByText("Harry & Meghan's New Project?");
+
+    expect(getArticleListItem.closest('a')).toHaveAttribute(
       'href',
       '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m'
     );
@@ -66,5 +68,48 @@ describe('Render Article List Item', () => {
       'alt',
       "Harry & Meghan's New Project?"
     );
+  });
+
+  it('it should not render `timeToRead` if not passed', () => {
+    renderComponent({ ...defaultProps, timeToRead: '', articleType: '' });
+
+    const articleType = screen.queryByText('Review');
+    const timeToRead = screen.queryByText('4 min read');
+
+    expect(articleType).not.toBeInTheDocument();
+    expect(timeToRead).not.toBeInTheDocument();
+  });
+
+  it('it should add margin to CardContent if `isLeadImage` is `true`', () => {
+    renderComponent({ ...defaultProps, isLeadImage: true });
+
+    const getArticleListItem = screen.getByText(
+      "Harry & Meghan's New Project?"
+    );
+    const cardContent = getArticleListItem.closest('div');
+
+    expect(cardContent).toHaveStyle({
+      marginInline: '20px'
+    });
+  });
+});
+
+describe('Render Article List Item with hidden image', () => {
+  it('items should renderwithout image', () => {
+    renderComponent(defaultProps);
+    const articleImage = screen.getByRole('img');
+    const caption = screen.queryByText('Credit');
+
+    expect(articleImage).toBeInTheDocument();
+    expect(caption).toHaveTextContent('Credit');
+  });
+
+  it('items should renderwithout image', () => {
+    renderComponent({ ...defaultProps, hideImage: true });
+    const articleImage = screen.queryByRole('img');
+    const caption = screen.queryByText('Credit');
+
+    expect(articleImage).toBeNull();
+    expect(caption).toBeNull();
   });
 });

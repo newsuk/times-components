@@ -80,31 +80,36 @@ export const ContentBucket1 = ({
               xl: '1fr 1px 1fr'
             }}
             columnGap="space040"
+            data-testid="article-container"
           >
-            {articles.map((article: ArticleListItemProps, articleIndex) => {
-              const articleBorder =
-                breakpointKey === 'xl' && articleIndex % 2 !== 0 ? null : (
-                  <Divider
-                    overrides={{ stylePreset: 'lightDivider' }}
-                    vertical
-                  />
+            {articles.map(
+              (article: ArticleListItemProps, articleIndex, articleArr) => {
+                const articleBorder =
+                  breakpointKey === 'xl' && articleIndex % 2 !== 0
+                    ? null
+                    : articleIndex < articleArr.length - 1 && (
+                        <Divider
+                          overrides={{ stylePreset: 'lightDivider' }}
+                          vertical
+                        />
+                      );
+
+                const articleTopBorder =
+                  (breakpointKey === 'xl' && articleIndex > 1) ||
+                  (breakpointKey === 'lg' && articleIndex > 0);
+
+                return (
+                  <React.Fragment key={article.title}>
+                    <ArticleListItem
+                      {...article}
+                      hasTopBorder={articleTopBorder}
+                      hideImage={breakpointKey === 'lg'}
+                    />
+                    {articleBorder}
+                  </React.Fragment>
                 );
-
-              const articleTopBorder =
-                (breakpointKey === 'xl' && articleIndex > 1) ||
-                (breakpointKey === 'lg' && articleIndex > 0);
-
-              return (
-                <React.Fragment key={article.title}>
-                  <ArticleListItem
-                    {...article}
-                    hasTopBorder={articleTopBorder}
-                    hideImage={breakpointKey === 'lg'}
-                  />
-                  {articleBorder}
-                </React.Fragment>
-              );
-            })}
+              }
+            )}
           </GridLayout>
         </Scroll>
       </CellNoMargin>

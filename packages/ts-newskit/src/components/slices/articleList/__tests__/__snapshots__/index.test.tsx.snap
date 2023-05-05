@@ -3,47 +3,58 @@
 exports[`Render Article List Item should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-zwpyzu"
+    class="css-139nwb1"
   >
-    <a
-      class="css-1c29u09"
-      data-testid="article-ListItem"
-      href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+    <div
+      class="css-1shocxe"
     >
-      <span
-        class="css-17x5lw"
+      <div
+        class="css-o476j2"
       >
-        <section
-          class="css-13byt3y"
+        <div
+          class="css-qw1yda"
         >
           <picture
-            class="css-r9kxr3"
+            class="css-1udor4k"
           >
             <div
               class="css-5pczz7"
             />
             <img
               alt="This is ALT Text"
-              class="css-1t6p58q"
-              data-testid="article-ListItemImg"
+              class="css-1qgqq71"
               src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-              width="100%"
             />
           </picture>
-          <section
-            class="css-pata8y"
+        </div>
+        <div
+          class="css-nv8tgr"
+        >
+          <p
+            class="css-1fo91if"
           >
-            <h3
-              class="nk-headline-heading css-i2jo9u"
-            >
-              Harry & Meghan's New Project?
-            </h3>
-          </section>
-          <div
-            class="css-1ihi07t"
+            Credit
+          </p>
+          <a
+            class="css-pyeu96"
+            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+            role="link"
           >
             <span
-              class="css-1izicv9"
+              class="css-17x5lw"
+            >
+              <span
+                class="css-k2d5qk"
+              >
+                Harry & Meghan's New Project?
+              </span>
+            </span>
+          </a>
+          <div
+            class="css-13byt3y"
+          >
+            <span
+              class="css-18v3nbo"
             >
               Review
             </span>
@@ -62,9 +73,9 @@ exports[`Render Article List Item should render a snapshot 1`] = `
               4 min read
             </span>
           </div>
-        </section>
-      </span>
-    </a>
+        </div>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

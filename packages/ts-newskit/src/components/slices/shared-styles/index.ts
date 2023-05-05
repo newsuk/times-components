@@ -14,13 +14,10 @@ export const CardHeadlineLink = styled(CardLink)`
   &&:hover,
   &&:active {
     text-decoration: none;
-  }
-
-  && :hover {
     ${getColorCssFromTheme('color', 'interactiveLink020')};
   }
 
-  && :active {
+  &&:active {
     ${getColorCssFromTheme('color', 'interactiveLink030')};
   }
 `;

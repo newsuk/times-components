@@ -29,17 +29,25 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
             md: '1fr 1px 1fr 1px 1fr 1px 1fr'
           }}
           columnGap="space040"
+          data-testid="article-container"
         >
           {articles.map(
             (article: ArticleListItemProps, articleIndex, articleArr) => {
-              const articleBorder = breakpointKey !== 'xs' &&
-                breakpointKey !== 'sm' &&
-                articleIndex < articleArr.length - 1 && (
+              const articleBorder =
+                articleIndex < articleArr.length - 1 &&
+                (breakpointKey === 'xs' || breakpointKey === 'sm' ? (
+                  <Divider
+                    overrides={{
+                      marginBlock: 'space040',
+                      stylePreset: 'dashedDivider'
+                    }}
+                  />
+                ) : (
                   <Divider
                     overrides={{ stylePreset: 'lightDivider' }}
                     vertical
                   />
-                );
+                ));
 
               const isAfterFirstArticle =
                 (breakpointKey === 'xs' || breakpointKey === 'sm') &&
@@ -49,7 +57,6 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
                 <React.Fragment key={article.title}>
                   <ArticleListItem
                     {...article}
-                    hasTopBorder={isAfterFirstArticle}
                     hideImage={isAfterFirstArticle}
                     isLeadImage={
                       (breakpointKey === 'xs' || breakpointKey === 'sm') &&
