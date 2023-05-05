@@ -14,7 +14,6 @@ export const Container = styled(Block)`
   background-color: #f9f9f9;
   ${getColorCssFromTheme('borderColor', 'interface050')};
   height: 138px;
-  width: 110px;
   ${getMediaQueryFromTheme('xs')} {
     width: 110px;
   }
@@ -35,7 +34,6 @@ export const StyledLabel = styled(Label)<{
   justify-content: center;
   align-items: center;
   border-radius: 5px 5px 0 0;
-  line-height: 18px;
   text-transform: uppercase;
   ${getSpacingCssFromTheme('paddingBlock', 'space010')};
   ${getSpacingCssFromTheme('paddingInline', 'space010')};

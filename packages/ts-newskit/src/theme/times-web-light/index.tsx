@@ -1,12 +1,7 @@
 // @ts-nocheck
 import { createTheme } from 'newskit';
+import { TheTimesLight } from '@newskit-themes/the-times';
 
-import borders from './styles/borders.json';
-import colors from './styles/colors.json';
-import overlays from './styles/overlays.json';
-import shadows from './styles/shadows.json';
-
-import { fonts } from './styles/fonts';
 import { stylePresets } from './style-presets';
 import { typographyPresets } from './styles/typography-presets';
 
@@ -20,11 +15,7 @@ export const TimesWebLightTheme = createTheme({
       lg: 1024,
       xl: 1320
     },
-    borders,
-    colors,
-    overlays,
-    shadows,
-    fonts,
+    ...TheTimesLight,
     typographyPresets,
     stylePresets
   }

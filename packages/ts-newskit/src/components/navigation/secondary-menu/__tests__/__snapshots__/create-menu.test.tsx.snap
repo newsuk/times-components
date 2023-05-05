@@ -19,12 +19,12 @@ exports[`Create Menu should render snapshot 1`] = `
         >
           <a
             aria-current="page"
-            class="css-1gidcgh"
+            class="css-8wrz8o"
             data-testid="buttonLink"
             href="/home"
           >
             <span
-              class="css-wo6lye"
+              class="css-t9dmcw"
             >
               Home
             </span>
@@ -35,12 +35,12 @@ exports[`Create Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-88n01i"
+            class="css-3c5d0n"
             data-testid="buttonLink"
             href="/news"
           >
             <span
-              class="css-wo6lye"
+              class="css-t9dmcw"
             >
               News
             </span>
@@ -51,12 +51,12 @@ exports[`Create Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-88n01i"
+            class="css-3c5d0n"
             data-testid="buttonLink"
             href="/comment"
           >
             <span
-              class="css-wo6lye"
+              class="css-t9dmcw"
             >
               Comment
             </span>
@@ -67,12 +67,12 @@ exports[`Create Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-88n01i"
+            class="css-3c5d0n"
             data-testid="buttonLink"
             href="/life-and-style"
           >
             <span
-              class="css-wo6lye"
+              class="css-t9dmcw"
             >
               Life & Style
             </span>
@@ -83,12 +83,12 @@ exports[`Create Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-88n01i"
+            class="css-3c5d0n"
             data-testid="buttonLink"
             href="/arts-and-books"
           >
             <span
-              class="css-wo6lye"
+              class="css-t9dmcw"
             >
               Arts & Books
             </span>
@@ -99,12 +99,12 @@ exports[`Create Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-88n01i"
+            class="css-3c5d0n"
             data-testid="buttonLink"
             href="/sport"
           >
             <span
-              class="css-wo6lye"
+              class="css-t9dmcw"
             >
               Sport
             </span>
@@ -115,12 +115,12 @@ exports[`Create Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-88n01i"
+            class="css-3c5d0n"
             data-testid="buttonLink"
             href="/business-and-money"
           >
             <span
-              class="css-wo6lye"
+              class="css-t9dmcw"
             >
               Business & Money
             </span>
@@ -132,18 +132,18 @@ exports[`Create Menu should render snapshot 1`] = `
       >
         <button
           aria-expanded="false"
-          class="css-13gyra4"
+          class="css-1azw1w"
           data-testid="menu-sub-button"
           type="button"
         >
           <span
-            class="css-wo6lye"
+            class="css-t9dmcw"
           >
             More
           </span>
           <svg
             aria-hidden="true"
-            class="css-bl48kn-EmotionIconBase ex0cdmw0"
+            class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -183,12 +183,12 @@ exports[`Create Menu should render snapshot 1`] = `
                   >
                     <a
                       aria-current="false"
-                      class="css-3pl4e0"
+                      class="css-11eetjm"
                       data-testid="buttonLink"
                       href="/puzzles"
                     >
                       <span
-                        class="css-13r5wx9"
+                        class="css-jfuxhr"
                       >
                         Puzzles
                       </span>
@@ -196,7 +196,7 @@ exports[`Create Menu should render snapshot 1`] = `
                   </li>
                   <hr
                     aria-hidden="true"
-                    class="css-1njghbt"
+                    class="css-s9wquo"
                     data-testid="divider"
                   />
                   <li
@@ -204,12 +204,12 @@ exports[`Create Menu should render snapshot 1`] = `
                   >
                     <a
                       aria-current="false"
-                      class="css-3pl4e0"
+                      class="css-11eetjm"
                       data-testid="buttonLink"
                       href="/magazines"
                     >
                       <span
-                        class="css-13r5wx9"
+                        class="css-jfuxhr"
                       >
                         Magazines
                       </span>
@@ -217,7 +217,7 @@ exports[`Create Menu should render snapshot 1`] = `
                   </li>
                   <hr
                     aria-hidden="true"
-                    class="css-1njghbt"
+                    class="css-s9wquo"
                     data-testid="divider"
                   />
                 </ul>

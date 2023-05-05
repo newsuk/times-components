@@ -3,19 +3,19 @@
 exports[`Date Card should render puzzles Date Card 1`] = `
 <DocumentFragment>
   <div
-    class="css-ho1b0g"
+    class="css-139nwb1"
   >
     <div
       class="css-1shocxe"
     >
       <div
-        class="css-l3wl0d"
+        class="css-o476j2"
       >
         <div
-          class="css-n81net"
+          class="css-1ee1okj"
         >
           <label
-            class="css-1q5hjdt"
+            class="css-1e3nl54"
           >
             Quick
           </label>
@@ -23,14 +23,14 @@ exports[`Date Card should render puzzles Date Card 1`] = `
             class="css-1dfr6je"
           >
             <div
-              class="css-1hdzxmh"
+              class="css-1iwrktp"
             >
               Thu
             </div>
             <p
-              class="css-fn1n1g"
+              class="css-1vlg01v"
             >
-              Mar 2, 2023
+              Mar 2 2023
             </p>
           </div>
         </div>

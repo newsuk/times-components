@@ -49,7 +49,7 @@ export const StoryCard: FC<StoryCardProps> = ({
             <CardMedia
               media={{
                 loadingAspectRatio: '3:2',
-                alt: altText ? altText : title,
+                alt: altText || title,
                 src: image,
                 placeholderIcon: true
               }}

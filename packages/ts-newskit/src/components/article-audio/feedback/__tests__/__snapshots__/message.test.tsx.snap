@@ -9,7 +9,7 @@ exports[`Message Component should render snapshot 1`] = `
       class="css-fcx7ij"
     >
       <p
-        class="css-fl8ixt"
+        class="css-1ecre70"
       >
         Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this.
       </p>
@@ -19,12 +19,12 @@ exports[`Message Component should render snapshot 1`] = `
     >
       <button
         aria-label="close"
-        class="css-1z0ieme"
+        class="css-1ptfube"
         data-testid="button"
         type="button"
       >
         <svg
-          class="css-j6fc06"
+          class="css-ny3roy"
           fill="none"
           height="24"
           width="24"

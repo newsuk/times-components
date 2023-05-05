@@ -6,7 +6,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
     class="css-13byt3y"
   >
     <div
-      class="css-rnfvhm"
+      class="css-116zady"
     >
       <h2
         class="css-18mb4bh"
@@ -14,7 +14,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         Add a challenge to your day
       </h2>
       <p
-        class="css-1020wg1"
+        class="css-1djppsy"
       >
         Play exclusive Word puzzles, Number puzzles, Quizzes and more
       </p>
@@ -129,7 +129,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-bspkx3"
+              class="css-npvr24"
             >
               Crosswords
             </span>
@@ -145,7 +145,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-bspkx3"
+              class="css-npvr24"
             >
               Sudokus
             </span>
@@ -161,7 +161,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-bspkx3"
+              class="css-npvr24"
             >
               Word Puzzles
             </span>
@@ -177,7 +177,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-bspkx3"
+              class="css-npvr24"
             >
               Numbers and Logic
             </span>
@@ -193,7 +193,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-bspkx3"
+              class="css-npvr24"
             >
               Quizzes and Teasers
             </span>
@@ -209,7 +209,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-bspkx3"
+              class="css-npvr24"
             >
               Board and Card Games
             </span>
@@ -304,7 +304,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
       </svg>
     </div>
     <svg
-      class="css-17hrftr"
+      class="css-pc2hck"
       height="24"
       preserveAspectRatio="none"
       viewBox="0 0 1440 24"

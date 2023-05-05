@@ -9,18 +9,18 @@ exports[`Render Component one should render a snapshot 1`] = `
       class="css-1hdbizi"
     >
       <p
-        class="css-1x3okx2"
+        class="css-1ep9v36"
       >
         JOEL KPOKU INTERVIEW
       </p>
       <section
-        class="css-1nztlxo"
+        class="css-14fzduz"
       >
         <h1
-          class="nk-headline-heading css-1spnxj1"
+          class="nk-headline-heading css-i2jo9u"
         >
           <a
-            class="css-gc5coy"
+            class="css-r41826"
             href="https://www.thetimes.co.uk"
           >
             <span
@@ -36,10 +36,10 @@ exports[`Render Component one should render a snapshot 1`] = `
         </h1>
       </section>
       <p
-        class="css-1w7gqe7"
+        class="css-fc2ncw"
       >
         <a
-          class="css-173icha"
+          class="css-100pzid"
           href="https://www.thetimes.co.uk"
         >
           <span
@@ -57,7 +57,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-13byt3y"
       >
         <span
-          class="css-1bfgzir"
+          class="css-1njurdt"
         >
           Review
         </span>
@@ -66,29 +66,29 @@ exports[`Render Component one should render a snapshot 1`] = `
         >
           <hr
             aria-hidden="true"
-            class="css-b2ej4n"
+            class="css-15kf7hd"
             data-testid="divider"
           />
         </div>
         <span
-          class="css-u3nbck"
+          class="css-1uhwhfo"
         >
           4 min read
         </span>
       </div>
     </div>
     <div
-      class="css-11qxz0s"
+      class="css-1yxixdd"
     >
       <a
-        class="css-143897p"
+        class="css-157tire"
         href="https://www.thetimes.co.uk"
       >
         <span
           class="css-17x5lw"
         >
           <picture
-            class="css-18ycrwi"
+            class="css-zp0elg"
           >
             <div
               class="css-5pczz7"
@@ -107,7 +107,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-13byt3y"
       >
         <p
-          class="css-5frf24"
+          class="css-j86oci"
         >
           Caption One Line Dummy Caption Here
         </p>
@@ -120,7 +120,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-1de9iv"
       >
         <p
-          class="css-55j7i6"
+          class="css-heohu9"
         >
           REUTERS/PHIL NOBLE
         </p>

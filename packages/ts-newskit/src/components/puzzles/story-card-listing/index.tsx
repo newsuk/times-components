@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import { StoryCard, StoryCardProps } from '../storyCard';
-import { GridLayout } from 'newskit';
-import { StyledTitleBar } from './styles';
+import { GridLayout, TitleBar } from 'newskit';
 
 export interface StoryCardListingProps {
   articles: StoryCardProps[];
@@ -14,9 +13,10 @@ export const StoryCardListing: FC<StoryCardListingProps> = ({
 }) => {
   return (
     <>
-      <StyledTitleBar
+      <TitleBar
         headingAs="h2"
         overrides={{
+          stylePreset: 'dashedDivider',
           paddingBlock: {
             xs: 'space040',
             lg: 'space050'
@@ -34,7 +34,7 @@ export const StoryCardListing: FC<StoryCardListingProps> = ({
         data-testid="title-bar"
       >
         {sectionTitle}
-      </StyledTitleBar>
+      </TitleBar>
       <GridLayout
         columns={{ xs: 'repeat(1, 1fr)', md: 'repeat(4, 1fr)' }}
         columnGap={{ md: 'space050', xl: 'space060' }}

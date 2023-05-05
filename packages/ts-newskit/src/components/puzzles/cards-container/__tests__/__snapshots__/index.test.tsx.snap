@@ -3,7 +3,7 @@
 exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
 <DocumentFragment>
   <div
-    class="css-1y25n6u"
+    class="css-vfe4cu"
     data-testid="title-bar"
   >
     <div
@@ -13,7 +13,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
         class="css-1oteowz"
       >
         <h2
-          class="nk-headline-heading css-sxktxw"
+          class="nk-headline-heading css-i2jo9u"
         >
           Crosswords
         </h2>
@@ -26,24 +26,24 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
         class="css-17x5lw"
       >
         <a
-          class="css-1tarvo2"
+          class="css-1u1nlsz"
           data-testid="buttonLink"
           href="https://newskit.co.uk/components"
         >
           <span
-            class="css-n79ak9"
+            class="css-1pjbpyz"
           >
             SEE ALL
           </span>
         </a>
         <button
-          class="css-1llax8i"
+          class="css-1v2cnmj"
           data-testid="scroll-left"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="css-1arce68-EmotionIconBase ex0cdmw0"
+            class="css-o0xy9h-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
             overrides="[object Object]"
@@ -61,13 +61,13 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           </svg>
         </button>
         <button
-          class="css-13tcow"
+          class="css-19u5zmf"
           data-testid="scroll-right"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="css-1arce68-EmotionIconBase ex0cdmw0"
+            class="css-o0xy9h-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
             overrides="[object Object]"
@@ -139,7 +139,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
 exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
 <DocumentFragment>
   <div
-    class="css-1y25n6u"
+    class="css-vfe4cu"
     data-testid="title-bar"
   >
     <div
@@ -149,7 +149,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
         class="css-1oteowz"
       >
         <h2
-          class="nk-headline-heading css-sxktxw"
+          class="nk-headline-heading css-i2jo9u"
         >
           Crosswords
         </h2>

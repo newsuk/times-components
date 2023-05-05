@@ -15,12 +15,12 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-py9ney"
+          class="css-9d2q0m"
           data-testid="buttonLink"
           href="/sport"
         >
           <span
-            class="css-1i8ei5j"
+            class="css-1dtf1su"
           >
             Sport
           </span>
@@ -32,7 +32,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="css-luf8la-EmotionIconBase ex0cdmw0"
+          class="css-3q5u2i-EmotionIconBase ex0cdmw0"
           fill="currentColor"
           focusable="false"
           viewBox="0 0 24 24"
@@ -52,12 +52,12 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-py9ney"
+          class="css-9d2q0m"
           data-testid="buttonLink"
           href="/sport/tennis"
         >
           <span
-            class="css-1i8ei5j"
+            class="css-1dtf1su"
           >
             Tennis
           </span>
@@ -69,7 +69,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="css-luf8la-EmotionIconBase ex0cdmw0"
+          class="css-3q5u2i-EmotionIconBase ex0cdmw0"
           fill="currentColor"
           focusable="false"
           viewBox="0 0 24 24"
@@ -89,12 +89,12 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <button
           aria-current="page"
-          class="css-1sioj94"
+          class="css-15tm3e7"
           data-testid="button"
           type="button"
         >
           <span
-            class="css-1i8ei5j"
+            class="css-1dtf1su"
           >
             Australian Open
           </span>
