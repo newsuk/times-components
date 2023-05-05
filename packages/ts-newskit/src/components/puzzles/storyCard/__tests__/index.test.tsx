@@ -14,7 +14,9 @@ const defaultProps = {
   url: 'https://newskit.co.uk/',
   category: 'Review',
   timeToRead: '4 min read',
-  imgHiddenMobile: false
+  imgHiddenMobile: false,
+  hiddenMobile: false,
+  mobileDivider: false
 };
 
 describe('Render puzzles story card', () => {
@@ -52,7 +54,9 @@ describe('Render puzzles story card', () => {
       url: 'https://newskit.co.uk/',
       category: 'Review',
       timeToRead: '4 min read',
-      imgHiddenMobile: false
+      imgHiddenMobile: false,
+      hiddenMobile: false,
+      mobileDivider: false
     });
     const storyCardAlt = screen.getByAltText(
       'ChatGPT invents Sudoku-style puzzle to keep the humans busy'
@@ -70,7 +74,9 @@ describe('Render puzzles story card', () => {
       url: 'https://newskit.co.uk/',
       category: 'Review',
       timeToRead: '4 min read',
-      imgHiddenMobile: false
+      imgHiddenMobile: false,
+      hiddenMobile: false,
+      mobileDivider: false
     });
     const storyCardPlaceholder = getAllByTestId('storyCard-placeholder')[0];
     expect(storyCardPlaceholder).toBeVisible;

@@ -1,0 +1,49 @@
+{
+  "section": { "title": "Rugby Union" },
+  "articles": [
+    {
+      "image": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498",
+      "title": "ChatGPT invents Sudoku-style puzzle to keep the humans busy",
+      "alt": "This is ALT Text",
+      "url": "https://newskit.co.uk/",
+      "category": "Technology",
+      "timeToRead": "6 min read",
+      "imgHiddenMobile": true,
+      "hiddenMobile": false,
+      "mobileDivider": true
+    },
+    {
+      "image": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498",
+      "title": "Early birds from across globe make camp in The Mall",
+      "alt": "This is ALT Text",
+      "url": "https://newskit.co.uk/",
+      "category": "Technology",
+      "timeToRead": "6 min read",
+      "imgHiddenMobile": true,
+      "hiddenMobile": false,
+      "mobileDivider": true
+    },
+    {
+      "image": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498",
+      "title": "A dish best served cold: Rees-Mogg takes revenge on quiche",
+      "alt": "This is ALT Text",
+      "url": "https://newskit.co.uk/",
+      "category": "Technology",
+      "timeToRead": "6 min read",
+      "imgHiddenMobile": true,
+      "hiddenMobile": false,
+      "mobileDivider": true
+    },
+    {
+      "image": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498",
+      "title": "Hour-by-hour guide to a day of remarkable ceremony",
+      "alt": "This is ALT Text",
+      "url": "https://newskit.co.uk/",
+      "category": "Technology",
+      "timeToRead": "6 min read",
+      "imgHiddenMobile": true,
+      "hiddenMobile": false,
+      "mobileDivider": true
+    }
+  ]
+}

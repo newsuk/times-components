@@ -1,0 +1,40 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { TCThemeProvider } from '../../../utils/index';
+import { PuzzlesWebLightTheme } from '../../../theme';
+import { StoryCardListing } from './index';
+import { NewsKitProvider, CardComposable } from 'newskit';
+import { ContentWrapper } from './styles';
+
+import { articles } from './fixtures/data.json';
+
+<Meta
+  title="Newskit Components/Puzzles/StoryCardListing"
+  component={StoryCardListing}
+/>
+
+# StoryCardListing component
+The `StoryCardListing component` component displays recent stories on puzzles page.
+
+This takes in props listed below to display recent story.
+
+## Props
+<Props of={StoryCardListing} />
+
+## Code Example
+`<StoryCardListing data={...{articles, sectionTitle}} />`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const StoryCardListingStory = ({ articles, sectionTitle }) => (
+  <TCThemeProvider theme={PuzzlesWebLightTheme}>
+    <ContentWrapper marginInline='auto' paddingBlock='space020' paddingInline='space020'>
+        <StoryCardListing {...{ articles, sectionTitle }} />
+    </ContentWrapper> 
+  </TCThemeProvider>
+);
+
+
+<Story name="StoryCardListing" args={{ articles, sectionTitle:'Recent stories' }}>
+  {StoryCardListingStory.bind({})}
+</Story>
