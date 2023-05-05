@@ -24,6 +24,7 @@ class ArticlePage extends Component {
       publicationName,
       publishedTime,
       shortHeadline,
+      showAudioPlayer,
       standfirst,
       updatedTime
     } = article;
@@ -49,7 +50,7 @@ class ArticlePage extends Component {
         publishedTime={publishedTime}
         standfirst={standfirst}
         updatedTime={updatedTime}
-        showAudioPlayer={this.props.showAudioPlayer}
+        showAudioPlayer={showAudioPlayer}
       />
     );
   }

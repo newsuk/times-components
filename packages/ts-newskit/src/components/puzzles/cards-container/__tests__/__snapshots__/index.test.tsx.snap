@@ -43,10 +43,9 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="css-1arce68-EmotionIconBase ex0cdmw0"
+            class="css-18cthx4-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
-            overrides="[object Object]"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -67,10 +66,9 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
         >
           <svg
             aria-hidden="true"
-            class="css-1arce68-EmotionIconBase ex0cdmw0"
+            class="css-18cthx4-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
-            overrides="[object Object]"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

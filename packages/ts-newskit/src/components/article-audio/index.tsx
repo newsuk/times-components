@@ -12,7 +12,11 @@ import { Feedback } from './feedback';
 import { StickyPlayerDesktop } from './sticky-player/stickyplayer.desktop';
 import { StickyPlayerExpanded } from './sticky-player/stickyplayer.expanded';
 import { StickyPlayerMob } from './sticky-player/stickyplayer.mob';
-import { AudioContainer, StickyAudioPlayer, StickyAudioPlayerContainer } from './styles';
+import {
+  AudioContainer,
+  StickyAudioPlayer,
+  StickyAudioPlayerContainer
+} from './styles';
 
 type FeedbackProps = {
   requestFeedback: boolean;
