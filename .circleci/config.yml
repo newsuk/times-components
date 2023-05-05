@@ -8,7 +8,7 @@ executors:
     node_sonar:
         docker:
           - image: cimg/node:16.13.1
-        resource_class: 2xlarge
+        resource_class: small
 
 orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.3
@@ -203,12 +203,8 @@ workflows:
             - run_unit_tests:
                   requires:
                       - setup
-            # regarding requires, it should be 'setup' for now until we implement coverage
             - sonarcloud_scan:
                 context: SonarCloud
-                # note: until we're doing coverage tests, should be able to remove the requirement on run_unit_tests and setup
-#                requires:
-#                  - run_unit_tests
             - run_cypress_tests:
                   requires:
                       - setup
