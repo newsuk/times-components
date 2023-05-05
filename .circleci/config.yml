@@ -114,15 +114,9 @@ jobs:
     sonarcloud_scan:
       executor: node_sonar
       steps:
-        - checkout
         - attach_workspace:
             at: ./
         - sonarcloud/scan
-#        - run:
-#            name: Run Unit Tests
-#            command: |
-#              npx lerna run test:unit --stream --since -- -- --ci --bail --coverage
-#            working_directory: ~/project/
 
     run_cypress_tests:
         executor: node
