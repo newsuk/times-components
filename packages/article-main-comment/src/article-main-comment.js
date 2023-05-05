@@ -49,6 +49,7 @@ class ArticlePage extends Component {
         publishedTime={publishedTime}
         standfirst={standfirst}
         updatedTime={updatedTime}
+        showAudioPlayer={this.props.showAudioPlayer}
       />
     );
   }
@@ -66,8 +67,7 @@ class ArticlePage extends Component {
       paidContentClassName,
       isPreview,
       swgProductId,
-      zephrDivs,
-      showAudioPlayer
+      zephrDivs
     } = this.props;
 
     if (error || isLoading) {
@@ -87,7 +87,6 @@ class ArticlePage extends Component {
         isPreview={isPreview}
         swgProductId={swgProductId}
         zephrDivs={zephrDivs}
-        showAudioPlayer={showAudioPlayer}
       />
     );
   }

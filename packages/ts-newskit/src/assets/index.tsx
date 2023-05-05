@@ -69,17 +69,17 @@ export const NewsKitWaveBg = customToNewsKitIcon('NewskitWaveBg', props => (
   <WaveBg {...props} />
 ));
 
-export const NewskitIconEast = customToNewsKitIcon('NewskitIconEast', props => (
-  <East {...props} />
+export const NewskitIconEast = customToNewsKitIcon('NewskitIconEast', () => (
+  <East />
 ));
 
-export const NewskitIconBack = customToNewsKitIcon('NewskitIconBack', props => (
-  <ArrowBackIosNew {...props} />
+export const NewskitIconBack = customToNewsKitIcon('NewskitIconBack', () => (
+  <ArrowBackIosNew />
 ));
 
 export const NewskitIconForward = customToNewsKitIcon(
   'NewskitIconForward',
-  props => <ArrowForwardIos {...props} />
+  () => <ArrowForwardIos />
 );
 
 export const NewsKitThumbsDownIcon = customToNewsKitIcon(

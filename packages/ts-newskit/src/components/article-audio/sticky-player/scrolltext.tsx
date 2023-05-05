@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { debounce, getWidth } from '../../../../utils';
+import { debounce, getWidth } from '../../../utils';
 import { ScrollText, ScrollTextItem } from '../styles';
 
 export const ScrollingText: React.FC = ({ children }) => {

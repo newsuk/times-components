@@ -27,8 +27,13 @@ const scrollText = keyframes`
   }
 `;
 
+export const AudioContainer = styled(Block)`
+  width: 100%;
+`;
+
 export const StickyAudioPlayerContainer = styled(Block)`
   border-top: 1px solid;
+  ${getColorCssFromTheme('backgroundColor', 'inkInverse')};
   ${getColorCssFromTheme('borderTopColor', 'interface040')};
   position: fixed;
   bottom: 0;

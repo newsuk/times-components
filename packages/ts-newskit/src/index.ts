@@ -22,3 +22,4 @@ export { DateCard } from './components/puzzles/date-card';
 export { PuzzlesFlag } from './components/puzzles/flag';
 export { AccordionGroup } from './components/misc/accordion/accordion-group';
 export { BreakoutSection } from './components/puzzles/breakout-section';
+export { InArticleAudio } from './components/article-audio';
