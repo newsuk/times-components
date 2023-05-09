@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-const ChevronRigthIcon = (props: any) => (
+const ChevronRightIcon = (props: any) => (
   <svg
     viewBox="0 0 32 32"
     fill="currentcolor"
@@ -15,4 +15,4 @@ const ChevronRigthIcon = (props: any) => (
   </svg>
 );
 
-export default ChevronRigthIcon;
+export default ChevronRightIcon;
