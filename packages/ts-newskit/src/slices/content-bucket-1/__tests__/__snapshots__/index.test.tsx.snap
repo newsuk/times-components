@@ -22,11 +22,11 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             >
               Rugby Union
             </p>
-            <button
+            <a
               class="css-cbmwfk"
-              data-testid="button"
+              data-testid="buttonLink"
+              href="https://www.thetimes.co.uk/"
               role="link"
-              type="button"
             >
               <svg
                 class="css-15vq000"
@@ -48,7 +48,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   fill="currentcolor"
                 />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -22,11 +22,11 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
             >
               Rugby Union
             </p>
-            <button
+            <a
               class="css-cbmwfk"
-              data-testid="button"
+              data-testid="buttonLink"
+              href="https://www.thetimes.co.uk/"
               role="link"
-              type="button"
             >
               <svg
                 class="css-15vq000"
@@ -48,7 +48,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   fill="currentcolor"
                 />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -383,11 +383,11 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
             >
               Rugby Union
             </p>
-            <button
+            <a
               class="css-cbmwfk"
-              data-testid="button"
+              data-testid="buttonLink"
+              href="https://www.thetimes.co.uk/"
               role="link"
-              type="button"
             >
               <svg
                 class="css-15vq000"
@@ -409,7 +409,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   fill="currentcolor"
                 />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
       </div>
