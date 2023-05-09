@@ -1,39 +1,42 @@
 import React from 'react';
-import { StyledStack, StyledButton } from './styles';
 import { NewsKitChevronRightIcon } from '../../../assets';
-import { ColouredText } from '../shared-styles';
+import { Block, Stack, IconButton, TextBlock } from 'newskit';
 
 export interface SliceHeaderProps {
   title: string;
-  color: string;
+  href: string;
 }
 
-export const SliceHeader = ({ title, color }: SliceHeaderProps) => {
+export const SliceHeader = ({ title, href }: SliceHeaderProps) => {
   return (
-    <StyledStack flow="horizontal-center" stackDistribution="space-between">
-      <ColouredText
-        typographyPreset={{
-          xs: 'newPreset070',
-          lg: 'newPreset060'
-        }}
-        $color={color}
+    <Block stylePreset="sliceHeaderPreset">
+      <Stack
+        flow="horizontal-center"
+        stackDistribution="space-between"
+        paddingBlock="space030"
       >
-        {title}
-      </ColouredText>
-      <StyledButton>
-        <NewsKitChevronRightIcon
+        <TextBlock
+          typographyPreset="editorialDisplay004"
+          stylePreset="inkBrand010"
+        >
+          {title}
+        </TextBlock>
+        <IconButton
+          size="medium"
           overrides={{
-            size: {
-              xs: '40px',
-              md: '32px',
-              lg: '48px'
-            }
+            stylePreset: 'iconButtonSolidPrimary'
           }}
-          color={color}
-          data-testid="icon"
-          href="#"
-        />
-      </StyledButton>
-    </StyledStack>
+          role="link"
+          href={href}
+        >
+          <NewsKitChevronRightIcon
+            overrides={{
+              size: 'sizing080',
+              stylePreset: 'sliceIconPreset'
+            }}
+          />
+        </IconButton>
+      </Stack>
+    </Block>
   );
 };

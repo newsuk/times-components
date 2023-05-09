@@ -10,6 +10,7 @@ import { sliceStylePresets } from './slices';
 import { textStylePresets } from './text';
 import { feedbackStylePresets } from './feedback';
 import { buttonStylePresets } from './buttons';
+import { sliceHeaderStylePresets } from './slice-header';
 
 export const stylePresets = {
   ...breadcrumbStylePresets,
@@ -23,5 +24,6 @@ export const stylePresets = {
   ...secondaryNavigationStylePresets,
   ...leadStoryStylePresets,
   ...sliceStylePresets,
-  ...feedbackStylePresets
+  ...feedbackStylePresets,
+  ...sliceHeaderStylePresets
 };
