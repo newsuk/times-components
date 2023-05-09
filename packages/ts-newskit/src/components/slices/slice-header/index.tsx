@@ -1,6 +1,6 @@
 import React from 'react';
 import { NewsKitChevronRightIcon } from '../../../assets';
-import { Block, Stack, IconButton, TextBlock } from 'newskit';
+import { Block, Stack, IconButton, TitleBar } from 'newskit';
 
 export interface SliceHeaderProps {
   title: string;
@@ -15,12 +15,18 @@ export const SliceHeader = ({ title, href }: SliceHeaderProps) => {
         stackDistribution="space-between"
         paddingBlock="space030"
       >
-        <TextBlock
-          typographyPreset="editorialDisplay004"
-          stylePreset="inkBrand010"
+        <TitleBar
+          overrides={{
+            heading: {
+              typographyPreset: 'editorialDisplay004',
+              stylePreset: 'inkBrand010'
+            },
+            paddingInline: 'space000',
+            paddingBlock: 'space000'
+          }}
         >
           {title}
-        </TextBlock>
+        </TitleBar>
         <IconButton
           size="medium"
           overrides={{

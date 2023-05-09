@@ -3,16 +3,28 @@
 exports[`Render Header should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1ro45ro"
+    class="css-6ym3sz"
   >
     <div
       class="css-128qn49"
     >
-      <p
-        class="css-phgxy6"
+      <div
+        class="css-86cix"
       >
-        Rugby Union
-      </p>
+        <div
+          class="css-1aiajnh"
+        >
+          <section
+            class="css-16kr8bf"
+          >
+            <h3
+              class="nk-headline-heading css-i2jo9u"
+            >
+              Rugby Union
+            </h3>
+          </section>
+        </div>
+      </div>
       <a
         class="css-cbmwfk"
         data-testid="buttonLink"

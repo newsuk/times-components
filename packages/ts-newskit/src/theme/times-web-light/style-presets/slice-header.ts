@@ -1,7 +1,7 @@
 export const sliceHeaderStylePresets = {
   sliceHeaderPreset: {
     base: {
-      borderStyle: 'dashed none none none',
+      borderTop: 'dashed',
       borderWidth: '{{borders.borderWidth010}}',
       borderColor: '{{colors.interface060}}',
       borderRadius: '{{colors.borderRadiusSharp}}'
