@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.35.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.34.1...@times-components/ts-newskit@1.35.0) (2023-05-09)
+
+
+### Features
+
+* **TMRX-1245:** composable card refactor ([#3350](https://github.com/newsuk/times-components/issues/3350)) ([09d9a3f](https://github.com/newsuk/times-components/commit/09d9a3fc3cc8d2e775452c8626245e8f44edeffb))
+
+
+
+
+
 ## [1.34.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.34.0...@times-components/ts-newskit@1.34.1) (2023-05-05)
 
 **Note:** Version bump only for package @times-components/ts-newskit
