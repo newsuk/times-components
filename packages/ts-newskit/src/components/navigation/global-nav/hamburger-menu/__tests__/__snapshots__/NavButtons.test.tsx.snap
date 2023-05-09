@@ -12,23 +12,23 @@ exports[`NavButtons Logged In should render the component 1`] = `
       role="list"
     >
       <button
-        class="css-1ntc43f"
+        class="css-oh7ily"
         data-testid="button"
         type="button"
       >
         <span
-          class="css-wo6lye"
+          class="css-t9dmcw"
         >
           Sections
         </span>
       </button>
       <button
-        class="css-1ntc43f"
+        class="css-oh7ily"
         data-testid="button"
         type="button"
       >
         <span
-          class="css-wo6lye"
+          class="css-t9dmcw"
         >
           My account
         </span>

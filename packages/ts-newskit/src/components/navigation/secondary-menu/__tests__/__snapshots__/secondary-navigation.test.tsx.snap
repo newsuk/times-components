@@ -15,24 +15,24 @@ exports[`Secondary Menu should render snapshot 1`] = `
         role="list"
       >
         <div
-          class="css-ss2ymz"
+          class="css-11tcrto"
         >
           <p
-            class="css-dmifd7"
+            class="css-yhevtm"
           >
             Home
           </p>
           <li
-            class="nk-menu-item css-1gz71w1"
+            class="nk-menu-item css-zbkqx2"
           >
             <button
               aria-expanded="false"
-              class="css-i3znmg"
+              class="css-1q8vei8"
               data-testid="menu-sub-button"
               type="button"
             >
               <span
-                class="css-dud3zo"
+                class="css-vx6avn"
               >
                 See all
               </span>
@@ -54,7 +54,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               </svg>
             </button>
             <ul
-              class="css-n5iuvv"
+              class="css-1mm64yz"
             />
           </li>
         </div>
@@ -81,12 +81,12 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="page"
-              class="css-1gidcgh"
+              class="css-8wrz8o"
               data-testid="buttonLink"
               href="/home"
             >
               <span
-                class="css-wo6lye"
+                class="css-t9dmcw"
               >
                 Home
               </span>
@@ -97,12 +97,12 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-88n01i"
+              class="css-3c5d0n"
               data-testid="buttonLink"
               href="/news"
             >
               <span
-                class="css-wo6lye"
+                class="css-t9dmcw"
               >
                 News
               </span>
@@ -113,12 +113,12 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-88n01i"
+              class="css-3c5d0n"
               data-testid="buttonLink"
               href="/comment"
             >
               <span
-                class="css-wo6lye"
+                class="css-t9dmcw"
               >
                 Comment
               </span>
@@ -129,12 +129,12 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-88n01i"
+              class="css-3c5d0n"
               data-testid="buttonLink"
               href="/life-and-style"
             >
               <span
-                class="css-wo6lye"
+                class="css-t9dmcw"
               >
                 Life & Style
               </span>
@@ -145,12 +145,12 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-88n01i"
+              class="css-3c5d0n"
               data-testid="buttonLink"
               href="/arts-and-books"
             >
               <span
-                class="css-wo6lye"
+                class="css-t9dmcw"
               >
                 Arts & Books
               </span>
@@ -161,12 +161,12 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-88n01i"
+              class="css-3c5d0n"
               data-testid="buttonLink"
               href="/sport"
             >
               <span
-                class="css-wo6lye"
+                class="css-t9dmcw"
               >
                 Sport
               </span>
@@ -177,12 +177,12 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-88n01i"
+              class="css-3c5d0n"
               data-testid="buttonLink"
               href="/business-and-money"
             >
               <span
-                class="css-wo6lye"
+                class="css-t9dmcw"
               >
                 Business & Money
               </span>
@@ -193,12 +193,12 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-88n01i"
+              class="css-3c5d0n"
               data-testid="buttonLink"
               href="/puzzles"
             >
               <span
-                class="css-wo6lye"
+                class="css-t9dmcw"
               >
                 Puzzles
               </span>
@@ -209,12 +209,12 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-88n01i"
+              class="css-3c5d0n"
               data-testid="buttonLink"
               href="/magazines"
             >
               <span
-                class="css-wo6lye"
+                class="css-t9dmcw"
               >
                 Magazines
               </span>
@@ -225,7 +225,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
     </nav>
     <hr
       aria-hidden="true"
-      class="css-fdgl4i"
+      class="css-1nvdtcj"
       data-testid="divider"
     />
   </div>

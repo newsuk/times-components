@@ -3,10 +3,10 @@
 exports[`<TCThemeProvider> should match snapshot 1`] = `
 <DocumentFragment>
   <section
-    class="css-7576wd"
+    class="css-1vmkmhu"
   >
     <h1
-      class="nk-headline-heading css-1spnxj1"
+      class="nk-headline-heading css-i2jo9u"
     >
       test
     </h1>

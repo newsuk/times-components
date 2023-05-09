@@ -12,24 +12,24 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
       role="list"
     >
       <div
-        class="css-ss2ymz"
+        class="css-11tcrto"
       >
         <p
-          class="css-dmifd7"
+          class="css-yhevtm"
         >
           Home
         </p>
         <li
-          class="nk-menu-item css-1gz71w1"
+          class="nk-menu-item css-zbkqx2"
         >
           <button
             aria-expanded="false"
-            class="css-i3znmg"
+            class="css-1q8vei8"
             data-testid="menu-sub-button"
             type="button"
           >
             <span
-              class="css-dud3zo"
+              class="css-vx6avn"
             >
               See all
             </span>
@@ -51,7 +51,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
             </svg>
           </button>
           <ul
-            class="css-n5iuvv"
+            class="css-1mm64yz"
           />
         </li>
       </div>
@@ -72,24 +72,24 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
       role="list"
     >
       <div
-        class="css-ss2ymz"
+        class="css-11tcrto"
       >
         <p
-          class="css-dmifd7"
+          class="css-yhevtm"
         >
           Home
         </p>
         <li
-          class="nk-menu-item css-1gz71w1"
+          class="nk-menu-item css-zbkqx2"
         >
           <button
             aria-expanded="false"
-            class="css-i3znmg"
+            class="css-1q8vei8"
             data-testid="menu-sub-button"
             type="button"
           >
             <span
-              class="css-dud3zo"
+              class="css-vx6avn"
             >
               See all
             </span>
@@ -111,7 +111,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
             </svg>
           </button>
           <ul
-            class="css-n5iuvv"
+            class="css-1mm64yz"
           />
         </li>
       </div>

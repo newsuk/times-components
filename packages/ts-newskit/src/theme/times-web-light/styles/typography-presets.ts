@@ -1,191 +1,240 @@
-import themeDefault from './typography-presets.json';
-
 export const typographyPresets = Object.fromEntries(
   Object.entries({
-    ...themeDefault,
     newPreset010: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight020}}',
-      fontSize: '{{fonts.fontSize020}}',
-      lineHeight: '{{fonts.fontLineHeight030}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Medium',
+      fontWeight: 500,
+      fontSize: '14px',
+      lineHeight: '1.000',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     topNav010: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight020}}',
-      fontSize: '{{fonts.fontSize020}}',
-      lineHeight: '{{fonts.fontLineHeight010}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Medium',
+      fontWeight: 500,
+      fontSize: '14px',
+      lineHeight: '0.778',
+      letterSpacing: '0%',
       fontStretch: 'normal',
       whiteSpace: 'nowrap'
     },
     newPreset020: {
-      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight020}}',
-      fontSize: '{{fonts.newFontSize1}}',
-      lineHeight: '{{fonts.fontLineHeight030}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Regular',
+      fontWeight: 500,
+      fontSize: '15px',
+      lineHeight: '1.000',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     newPreset030: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight020}}',
-      fontSize: '{{fonts.newFontSize010}}',
-      lineHeight: '{{fonts.fontLineHeight030}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Medium',
+      fontWeight: 500,
+      fontSize: '13px',
+      lineHeight: '1.000',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     newPreset040: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight020}}',
-      fontSize: '{{fonts.newFontSize1}}',
-      lineHeight: '{{fonts.fontLineHeight070}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Medium',
+      fontWeight: 500,
+      fontSize: '15px',
+      lineHeight: '1.250',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     newPreset050: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight010}}',
-      fontSize: '{{fonts.fontSize020}}',
-      lineHeight: '{{fonts.fontLineHeight030}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Medium',
+      fontWeight: 400,
+      fontSize: '14px',
+      lineHeight: '1.000',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     newPreset060: {
-      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight040}}',
-      fontSize: '{{fonts.fontSize080}}',
-      lineHeight: '{{fonts.fontLineHeight040}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'TimesModern-Regular',
+      fontWeight: 800,
+      fontSize: '28px',
+      lineHeight: '1.143',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     newPreset070: {
-      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight040}}',
-      fontSize: '{{fonts.fontSize060}}',
-      lineHeight: '{{fonts.fontLineHeight110}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'TimesModern-Regular',
+      fontWeight: 800,
+      fontSize: '22px',
+      lineHeight: '1.429',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     newPreset080: {
-      fontFamily: '{{fonts.fontFamily040.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight030}}',
-      fontSize: '{{fonts.fontSize080}}',
-      lineHeight: '{{fonts.fontLineHeight040}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'TimesModern-Bold',
+      fontWeight: 700,
+      fontSize: '28px',
+      lineHeight: '1.143',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     newPreset090: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
-      fontSize: '{{fonts.fontSize010}}',
-      fontWeight: '{{fonts.fontWeight030}}',
-      lineHeight: '{{fonts.fontLineHeight050}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Medium',
+      fontSize: '12px',
+      fontWeight: 700,
+      lineHeight: '1.200',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     newPreset100: {
-      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
-      fontSize: '{{fonts.fontSize010}}',
-      fontWeight: '{{fonts.fontWeight010}}',
-      lineHeight: '{{fonts.fontLineHeight060}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Regular',
+      fontSize: '12px',
+      fontWeight: 400,
+      lineHeight: '1.222',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     editorialHeadline035: {
-      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight030}}',
-      fontSize: '{{fonts.fontSize060}}',
-      lineHeight: '{{fonts.fontLineHeight030}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'TimesModern-Regular',
+      fontWeight: 700,
+      fontSize: '22px',
+      lineHeight: '1.000',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     editorialHeadline082: {
-      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight030}}',
-      fontSize: '{{fonts.fontSize112}}',
-      lineHeight: '{{fonts.fontLineHeight030}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'TimesModern-Regular',
+      fontWeight: 700,
+      fontSize: '44px',
+      lineHeight: '1.000',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     editorialHeadline085: {
-      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight030}}',
-      fontSize: '{{fonts.fontSize115}}',
-      lineHeight: '{{fonts.fontLineHeight030}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'TimesModern-Regular',
+      fontWeight: 700,
+      fontSize: '48px',
+      lineHeight: '1.000',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     editorialHeadline087: {
-      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
-      fontWeight: '{{fonts.fontWeight030}}',
-      fontSize: '{{fonts.fontSize117}}',
-      lineHeight: '{{fonts.fontLineHeight030}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'TimesModern-Regular',
+      fontWeight: 700,
+      fontSize: '52px',
+      lineHeight: '1.000',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     sectionHeader010: {
-      fontFamily: '{{fonts.fontFamily040.fontFamily}}',
-      fontSize: '{{fonts.fontSize115}}',
-      fontWeight: '{{fonts.fontWeight040}}',
-      lineHeight: '{{fonts.fontLineHeight270}}',
-      letterSpacing: '{{fonts.fontLetterSpacing020}}',
+      fontFamily: 'TimesModern-Bold',
+      fontSize: '44px',
+      fontWeight: 800,
+      lineHeight: '2.750',
+      letterSpacing: '10%',
       fontStretch: 'normal',
       textAlign: 'center'
     },
     mastheadTime: {
-      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
-      fontSize: '{{fonts.fontSize010}}',
-      fontWeight: '{{fonts.fontWeight010}}',
-      lineHeight: '{{fonts.fontLineHeight270}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Regular',
+      fontSize: '12px',
+      fontWeight: 400,
+      lineHeight: '2.750',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     breadcrumbText: {
-      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
-      fontSize: '{{fonts.fontSize010}}',
-      fontWeight: '{{fonts.fontWeight020}}',
-      lineHeight: '{{fonts.fontLineHeight070}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Regular',
+      fontSize: '12px',
+      fontWeight: 500,
+      lineHeight: '1.250',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     articleListTitle: {
-      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
-      fontSize: '{{fonts.fontSize040}}',
-      fontWeight: '{{fonts.fontWeight010}}',
-      lineHeight: '{{fonts.fontLineHeight080}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'TimesModern-Regular',
+      fontSize: '18px',
+      fontWeight: 400,
+      lineHeight: '1.273',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     articleListArticleType: {
-      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
-      fontSize: '{{fonts.fontSize010}}',
-      fontWeight: '{{fonts.fontWeight030}}',
-      lineHeight: '{{fonts.fontLineHeight020}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Regular',
+      fontSize: '12px',
+      fontWeight: 700,
+      lineHeight: '0.875',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     },
     articleListTimeToRead: {
-      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
-      fontSize: '{{fonts.fontSize010}}',
-      fontWeight: '{{fonts.fontWeight010}}',
-      lineHeight: '{{fonts.fontLineHeight020}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontFamily: 'Roboto-Regular',
+      fontSize: '12px',
+      fontWeight: 400,
+      lineHeight: '0.875',
+      letterSpacing: '0%',
+      fontStretch: 'normal'
+    },
+    editorialItalic060: {
+      fontFamily: 'TimesModern-Regular',
+      fontWeight: 400,
+      fontSize: '22px',
+      fontStyle: 'italic',
+      lineHeight: '1.200',
+      letterSpacing: '0%',
+      fontStretch: 'normal'
+    },
+    utilityHeading060: {
+      fontFamily: 'Roboto-Regular',
+      fontWeight: 700,
+      fontSize: '14px',
+      lineHeight: '1.286',
+      letterSpacing: '0%',
+      fontStretch: 'normal'
+    },
+    editorialItalic050: {
+      fontFamily: 'TimesModern-Regular',
+      fontWeight: 400,
+      fontSize: '20px',
+      fontStyle: 'italic',
+      lineHeight: '1.200',
+      letterSpacing: '0%',
+      fontStretch: 'normal'
+    },
+    utilitySubheadline010: {
+      fontFamily: 'Roboto-Regular',
+      fontWeight: 500,
+      fontSize: '16px',
+      lineHeight: '1.250',
+      letterSpacing: '0%',
+      fontStretch: 'normal'
+    },
+    utilitySubheadline020: {
+      fontFamily: 'Roboto-Regular',
+      fontWeight: 500,
+      fontSize: '18px',
+      lineHeight: '1.333',
+      letterSpacing: '0%',
+      fontStretch: 'normal'
+    },
+    utilitySubheadline030: {
+      fontFamily: 'Roboto-Regular',
+      fontWeight: 500,
+      fontSize: '22px',
+      lineHeight: '1.273',
+      letterSpacing: '0%',
+      fontStretch: 'normal'
+    },
+    utilitySubheadline040: {
+      fontFamily: 'Roboto-Regular',
+      fontWeight: 500,
+      fontSize: '24px',
+      lineHeight: '1.333',
+      letterSpacing: '0%',
+      fontStretch: 'normal'
+    },
+    utilitySubheadline050: {
+      fontFamily: 'Roboto-Regular',
+      fontWeight: 500,
+      fontSize: '28px',
+      lineHeight: '1.286',
+      letterSpacing: '0%',
       fontStretch: 'normal'
     }
-  }).map(([key, value]) => {
-    if (
-      [
-        'editorialHeadline010',
-        'editorialHeadline030',
-        'editorialHeadline060',
-        'editorialHeadline070',
-        'editorialHeadline080'
-      ].includes(key)
-    ) {
-      value.lineHeight = '{{fonts.fontLineHeight030}}';
-    }
-
-    return [key, value];
   })
 );

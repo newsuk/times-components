@@ -6,7 +6,7 @@ exports[`Render Header should render a snapshot 1`] = `
     class="css-58ces8"
   >
     <p
-      class="css-1t9z88m"
+      class="css-1fkv1e4"
     >
       Rugby Union
     </p>
@@ -14,7 +14,7 @@ exports[`Render Header should render a snapshot 1`] = `
       class="css-11vhp8a"
     >
       <svg
-        class="css-y6gpfa"
+        class="css-1utrq9o"
         color="red"
         data-testid="icon"
         fill="none"

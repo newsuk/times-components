@@ -95,6 +95,6 @@ describe('NavButtons Logged Out', () => {
     const subscribeBtn = screen.getByRole('link', { name: 'Subscribe' });
 
     expect(loginBtn).toHaveStyle('background-color: rgba(29,29,27,1)');
-    expect(subscribeBtn).toHaveStyle('background-color: rgba(21,115,162,1)');
+    expect(subscribeBtn).toHaveStyle('background-color: rgba(0, 92, 138, 1)');
   });
 });

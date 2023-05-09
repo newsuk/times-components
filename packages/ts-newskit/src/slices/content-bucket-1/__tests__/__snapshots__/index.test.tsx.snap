@@ -15,7 +15,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
           class="css-58ces8"
         >
           <p
-            class="css-16fouza"
+            class="css-m42380"
           >
             Rugby Union
           </p>
@@ -23,7 +23,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             class="css-11vhp8a"
           >
             <svg
-              class="css-y6gpfa"
+              class="css-1utrq9o"
               color="#008347"
               data-testid="icon"
               fill="none"
@@ -57,7 +57,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-8d4l77"
+              class="css-11qixs9"
               data-testid="divider"
             />
           </div>
@@ -68,18 +68,18 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-1hdbizi"
             >
               <p
-                class="css-1x3okx2"
+                class="css-1ep9v36"
               >
                 JOEL KPOKU INTERVIEW
               </p>
               <section
-                class="css-1nztlxo"
+                class="css-14fzduz"
               >
                 <h1
-                  class="nk-headline-heading css-1spnxj1"
+                  class="nk-headline-heading css-i2jo9u"
                 >
                   <a
-                    class="css-gc5coy"
+                    class="css-r41826"
                     href="https://www.thetimes.co.uk"
                   >
                     <span
@@ -95,10 +95,10 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 </h1>
               </section>
               <p
-                class="css-1w7gqe7"
+                class="css-fc2ncw"
               >
                 <a
-                  class="css-173icha"
+                  class="css-100pzid"
                   href="https://www.thetimes.co.uk"
                 >
                   <span
@@ -116,7 +116,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-13byt3y"
               >
                 <span
-                  class="css-1bfgzir"
+                  class="css-1njurdt"
                 >
                   Review
                 </span>
@@ -125,29 +125,29 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 >
                   <hr
                     aria-hidden="true"
-                    class="css-b2ej4n"
+                    class="css-15kf7hd"
                     data-testid="divider"
                   />
                 </div>
                 <span
-                  class="css-u3nbck"
+                  class="css-1uhwhfo"
                 >
                   4 min read
                 </span>
               </div>
             </div>
             <div
-              class="css-11qxz0s"
+              class="css-1yxixdd"
             >
               <a
-                class="css-143897p"
+                class="css-157tire"
                 href="https://www.thetimes.co.uk"
               >
                 <span
                   class="css-17x5lw"
                 >
                   <picture
-                    class="css-18ycrwi"
+                    class="css-zp0elg"
                   >
                     <div
                       class="css-5pczz7"
@@ -166,7 +166,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-13byt3y"
               >
                 <p
-                  class="css-5frf24"
+                  class="css-j86oci"
                 >
                   Caption One Line Dummy Caption Here
                 </p>
@@ -179,7 +179,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-1de9iv"
               >
                 <p
-                  class="css-55j7i6"
+                  class="css-heohu9"
                 >
                   REUTERS/PHIL NOBLE
                 </p>
@@ -188,14 +188,14 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="css-qfsqcb"
+          class="css-sqw2mm"
         >
           <div
             class="css-196m710"
           >
             <hr
               aria-hidden="true"
-              class="css-1qw1oup"
+              class="css-obfal1"
               data-testid="divider"
             />
             <div
@@ -208,7 +208,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-1jtygxa"
                 >
                   <picture
-                    class="css-qtdqdf"
+                    class="css-oyoi5t"
                   >
                     <div
                       class="css-5pczz7"
@@ -226,16 +226,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-13byt3y"
                 >
                   <h4
-                    class="css-1rffhsu"
+                    class="css-1njjou3"
                   >
                     <span
-                      class="css-11wi9d7"
+                      class="css-1px0mqo"
                     >
                       Deborah Haynes
                     </span>
                   </h4>
                   <p
-                    class="css-1l4hvr8"
+                    class="css-1ewx0ox"
                   >
                     Now is Willis’s chance to show he’s got more to offer than Curry
                   </p>
@@ -243,7 +243,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               </div>
               <hr
                 aria-hidden="true"
-                class="css-p74ctv"
+                class="css-1r6g7x8"
                 data-testid="divider"
               />
               <div
@@ -253,7 +253,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-1jtygxa"
                 >
                   <picture
-                    class="css-qtdqdf"
+                    class="css-oyoi5t"
                   >
                     <div
                       class="css-5pczz7"
@@ -271,16 +271,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-13byt3y"
                 >
                   <h4
-                    class="css-1rffhsu"
+                    class="css-1njjou3"
                   >
                     <span
-                      class="css-11wi9d7"
+                      class="css-1px0mqo"
                     >
                       Deborah Haynes 2
                     </span>
                   </h4>
                   <p
-                    class="css-1l4hvr8"
+                    class="css-1ewx0ox"
                   >
                     Now is Willis’s chance to show he’s got more to offer than Curry
                   </p>
@@ -298,7 +298,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
         >
           <hr
             aria-hidden="true"
-            class="css-1qw1oup"
+            class="css-obfal1"
             data-testid="divider"
           />
         </div>
@@ -314,10 +314,10 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-5e9od2"
             >
               <div
-                class="css-bhyki6"
+                class="css-zwpyzu"
               >
                 <a
-                  class="css-13fiaa0"
+                  class="css-1c29u09"
                   data-testid="article-ListItem"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 >
@@ -328,7 +328,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       class="css-13byt3y"
                     >
                       <picture
-                        class="css-ta48gm"
+                        class="css-r9kxr3"
                       >
                         <div
                           class="css-5pczz7"
@@ -342,19 +342,19 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         />
                       </picture>
                       <section
-                        class="css-ab1uvh"
+                        class="css-pata8y"
                       >
                         <h3
-                          class="nk-headline-heading css-1spnxj1"
+                          class="nk-headline-heading css-i2jo9u"
                         >
                           European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                         </h3>
                       </section>
                       <div
-                        class="css-tpekxe"
+                        class="css-1ihi07t"
                       >
                         <span
-                          class="css-l4eawk"
+                          class="css-1izicv9"
                         >
                           Review
                         </span>
@@ -363,12 +363,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         >
                           <hr
                             aria-hidden="true"
-                            class="css-b2ej4n"
+                            class="css-15kf7hd"
                             data-testid="divider"
                           />
                         </div>
                         <span
-                          class="css-l03yw1"
+                          class="css-sidzln"
                         >
                           4 min read
                         </span>
@@ -379,14 +379,14 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               </div>
               <hr
                 aria-hidden="true"
-                class="css-1flwvlg"
+                class="css-13rcg9f"
                 data-testid="divider"
               />
               <div
-                class="css-bhyki6"
+                class="css-zwpyzu"
               >
                 <a
-                  class="css-13fiaa0"
+                  class="css-1c29u09"
                   data-testid="article-ListItem"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 >
@@ -397,7 +397,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       class="css-13byt3y"
                     >
                       <picture
-                        class="css-ta48gm"
+                        class="css-r9kxr3"
                       >
                         <div
                           class="css-5pczz7"
@@ -411,19 +411,19 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         />
                       </picture>
                       <section
-                        class="css-ab1uvh"
+                        class="css-pata8y"
                       >
                         <h3
-                          class="nk-headline-heading css-1spnxj1"
+                          class="nk-headline-heading css-i2jo9u"
                         >
                           ‘American owners pose threat to English pyramid’
                         </h3>
                       </section>
                       <div
-                        class="css-tpekxe"
+                        class="css-1ihi07t"
                       >
                         <span
-                          class="css-l4eawk"
+                          class="css-1izicv9"
                         >
                           Review
                         </span>
@@ -432,12 +432,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         >
                           <hr
                             aria-hidden="true"
-                            class="css-b2ej4n"
+                            class="css-15kf7hd"
                             data-testid="divider"
                           />
                         </div>
                         <span
-                          class="css-l03yw1"
+                          class="css-sidzln"
                         >
                           4 min read
                         </span>
@@ -447,15 +447,15 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 </a>
               </div>
               <div
-                class="css-bhyki6"
+                class="css-zwpyzu"
               >
                 <hr
                   aria-hidden="true"
-                  class="css-1qw1oup"
+                  class="css-obfal1"
                   data-testid="divider"
                 />
                 <a
-                  class="css-13fiaa0"
+                  class="css-1c29u09"
                   data-testid="article-ListItem"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 >
@@ -466,7 +466,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       class="css-13byt3y"
                     >
                       <picture
-                        class="css-ta48gm"
+                        class="css-r9kxr3"
                       >
                         <div
                           class="css-5pczz7"
@@ -480,19 +480,19 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         />
                       </picture>
                       <section
-                        class="css-ab1uvh"
+                        class="css-pata8y"
                       >
                         <h3
-                          class="nk-headline-heading css-1spnxj1"
+                          class="nk-headline-heading css-i2jo9u"
                         >
                           £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
                         </h3>
                       </section>
                       <div
-                        class="css-tpekxe"
+                        class="css-1ihi07t"
                       >
                         <span
-                          class="css-l4eawk"
+                          class="css-1izicv9"
                         >
                           Review
                         </span>
@@ -501,12 +501,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         >
                           <hr
                             aria-hidden="true"
-                            class="css-b2ej4n"
+                            class="css-15kf7hd"
                             data-testid="divider"
                           />
                         </div>
                         <span
-                          class="css-l03yw1"
+                          class="css-sidzln"
                         >
                           4 min read
                         </span>
@@ -517,19 +517,19 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               </div>
               <hr
                 aria-hidden="true"
-                class="css-1flwvlg"
+                class="css-13rcg9f"
                 data-testid="divider"
               />
               <div
-                class="css-bhyki6"
+                class="css-zwpyzu"
               >
                 <hr
                   aria-hidden="true"
-                  class="css-1qw1oup"
+                  class="css-obfal1"
                   data-testid="divider"
                 />
                 <a
-                  class="css-13fiaa0"
+                  class="css-1c29u09"
                   data-testid="article-ListItem"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 >
@@ -540,7 +540,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       class="css-13byt3y"
                     >
                       <picture
-                        class="css-ta48gm"
+                        class="css-r9kxr3"
                       >
                         <div
                           class="css-5pczz7"
@@ -554,19 +554,19 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         />
                       </picture>
                       <section
-                        class="css-ab1uvh"
+                        class="css-pata8y"
                       >
                         <h3
-                          class="nk-headline-heading css-1spnxj1"
+                          class="nk-headline-heading css-i2jo9u"
                         >
                           Blow for rebel clubs as court says Uefa can block Super League
                         </h3>
                       </section>
                       <div
-                        class="css-tpekxe"
+                        class="css-1ihi07t"
                       >
                         <span
-                          class="css-l4eawk"
+                          class="css-1izicv9"
                         >
                           Review
                         </span>
@@ -575,12 +575,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         >
                           <hr
                             aria-hidden="true"
-                            class="css-b2ej4n"
+                            class="css-15kf7hd"
                             data-testid="divider"
                           />
                         </div>
                         <span
-                          class="css-l03yw1"
+                          class="css-sidzln"
                         >
                           4 min read
                         </span>
@@ -601,7 +601,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
         >
           <hr
             aria-hidden="true"
-            class="css-1qw1oup"
+            class="css-obfal1"
             data-testid="divider"
           />
           <div
@@ -614,7 +614,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-1jtygxa"
               >
                 <picture
-                  class="css-qtdqdf"
+                  class="css-oyoi5t"
                 >
                   <div
                     class="css-5pczz7"
@@ -632,16 +632,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-13byt3y"
               >
                 <h4
-                  class="css-1rffhsu"
+                  class="css-1njjou3"
                 >
                   <span
-                    class="css-11wi9d7"
+                    class="css-1px0mqo"
                   >
                     Deborah Haynes
                   </span>
                 </h4>
                 <p
-                  class="css-1l4hvr8"
+                  class="css-1ewx0ox"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
@@ -649,7 +649,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             </div>
             <hr
               aria-hidden="true"
-              class="css-p74ctv"
+              class="css-1r6g7x8"
               data-testid="divider"
             />
             <div
@@ -659,7 +659,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-1jtygxa"
               >
                 <picture
-                  class="css-qtdqdf"
+                  class="css-oyoi5t"
                 >
                   <div
                     class="css-5pczz7"
@@ -677,16 +677,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-13byt3y"
               >
                 <h4
-                  class="css-1rffhsu"
+                  class="css-1njjou3"
                 >
                   <span
-                    class="css-11wi9d7"
+                    class="css-1px0mqo"
                   >
                     Deborah Haynes 2
                   </span>
                 </h4>
                 <p
-                  class="css-1l4hvr8"
+                  class="css-1ewx0ox"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>

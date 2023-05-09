@@ -19,6 +19,13 @@ stylePresets.puzzlesCenterAlignedText = {
   }
 };
 
+stylePresets.dashedDivider = {
+  base: {
+    borderStyle: 'dashed none none none',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderColor: '{{colors.interface060}}'
+  }
+};
 stylePresets.flagProgress = {
   base: {
     backgroundColor: '{{colors.interfaceInformative010}}',
