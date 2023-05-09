@@ -95,7 +95,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 </h1>
               </section>
               <p
-                class="css-fc2ncw"
+                class="css-yljxz1"
               >
                 <a
                   class="css-100pzid"
@@ -226,7 +226,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-13byt3y"
                 >
                   <h4
-                    class="css-1njjou3"
+                    class="css-linkqs"
                   >
                     <span
                       class="css-1px0mqo"
@@ -271,7 +271,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-13byt3y"
                 >
                   <h4
-                    class="css-1njjou3"
+                    class="css-linkqs"
                   >
                     <span
                       class="css-1px0mqo"
@@ -312,49 +312,56 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
           >
             <div
               class="css-5e9od2"
+              data-testid="article-container"
             >
               <div
-                class="css-zwpyzu"
+                class="css-139nwb1"
               >
-                <a
-                  class="css-1c29u09"
-                  data-testid="article-ListItem"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                <div
+                  class="css-1shocxe"
                 >
-                  <span
-                    class="css-17x5lw"
+                  <div
+                    class="css-o476j2"
                   >
-                    <section
-                      class="css-13byt3y"
+                    <div
+                      class="css-qw1yda"
                     >
                       <picture
-                        class="css-r9kxr3"
+                        class="css-1udor4k"
                       >
                         <div
                           class="css-5pczz7"
                         />
                         <img
                           alt="This is ALT Text"
-                          class="css-1t6p58q"
-                          data-testid="article-ListItemImg"
+                          class="css-1qgqq71"
                           src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                          width="100%"
                         />
                       </picture>
-                      <section
-                        class="css-pata8y"
-                      >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
-                        >
-                          European cup winner Mihajlovic dies aged 53 after battle with leukaemia
-                        </h3>
-                      </section>
-                      <div
-                        class="css-1ihi07t"
+                    </div>
+                    <div
+                      class="css-nv8tgr"
+                    >
+                      <a
+                        class="css-pyeu96"
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                        role="link"
                       >
                         <span
-                          class="css-1izicv9"
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-k2d5qk"
+                          >
+                            European cup winner Mihajlovic dies aged 53 after battle with leukaemia
+                          </span>
+                        </span>
+                      </a>
+                      <div
+                        class="css-13byt3y"
+                      >
+                        <span
+                          class="css-18v3nbo"
                         >
                           Review
                         </span>
@@ -373,9 +380,9 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           4 min read
                         </span>
                       </div>
-                    </section>
-                  </span>
-                </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <hr
                 aria-hidden="true"
@@ -383,47 +390,53 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 data-testid="divider"
               />
               <div
-                class="css-zwpyzu"
+                class="css-139nwb1"
               >
-                <a
-                  class="css-1c29u09"
-                  data-testid="article-ListItem"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                <div
+                  class="css-1shocxe"
                 >
-                  <span
-                    class="css-17x5lw"
+                  <div
+                    class="css-o476j2"
                   >
-                    <section
-                      class="css-13byt3y"
+                    <div
+                      class="css-qw1yda"
                     >
                       <picture
-                        class="css-r9kxr3"
+                        class="css-1udor4k"
                       >
                         <div
                           class="css-5pczz7"
                         />
                         <img
                           alt="This is ALT Text"
-                          class="css-1t6p58q"
-                          data-testid="article-ListItemImg"
+                          class="css-1qgqq71"
                           src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                          width="100%"
                         />
                       </picture>
-                      <section
-                        class="css-pata8y"
-                      >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
-                        >
-                          ‘American owners pose threat to English pyramid’
-                        </h3>
-                      </section>
-                      <div
-                        class="css-1ihi07t"
+                    </div>
+                    <div
+                      class="css-nv8tgr"
+                    >
+                      <a
+                        class="css-pyeu96"
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                        role="link"
                       >
                         <span
-                          class="css-1izicv9"
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-k2d5qk"
+                          >
+                            ‘American owners pose threat to English pyramid’
+                          </span>
+                        </span>
+                      </a>
+                      <div
+                        class="css-13byt3y"
+                      >
+                        <span
+                          class="css-18v3nbo"
                         >
                           Review
                         </span>
@@ -442,57 +455,63 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           4 min read
                         </span>
                       </div>
-                    </section>
-                  </span>
-                </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div
-                class="css-zwpyzu"
+                class="css-139nwb1"
               >
-                <hr
-                  aria-hidden="true"
-                  class="css-obfal1"
-                  data-testid="divider"
-                />
-                <a
-                  class="css-1c29u09"
-                  data-testid="article-ListItem"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                <div
+                  class="css-1shocxe"
                 >
-                  <span
-                    class="css-17x5lw"
+                  <div
+                    class="css-o476j2"
                   >
-                    <section
-                      class="css-13byt3y"
+                    <hr
+                      aria-hidden="true"
+                      class="css-obfal1"
+                      data-testid="divider"
+                    />
+                    <div
+                      class="css-qw1yda"
                     >
                       <picture
-                        class="css-r9kxr3"
+                        class="css-1udor4k"
                       >
                         <div
                           class="css-5pczz7"
                         />
                         <img
                           alt="This is ALT Text"
-                          class="css-1t6p58q"
-                          data-testid="article-ListItemImg"
+                          class="css-1qgqq71"
                           src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                          width="100%"
                         />
                       </picture>
-                      <section
-                        class="css-pata8y"
-                      >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
-                        >
-                          £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
-                        </h3>
-                      </section>
-                      <div
-                        class="css-1ihi07t"
+                    </div>
+                    <div
+                      class="css-nv8tgr"
+                    >
+                      <a
+                        class="css-pyeu96"
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                        role="link"
                       >
                         <span
-                          class="css-1izicv9"
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-k2d5qk"
+                          >
+                            £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
+                          </span>
+                        </span>
+                      </a>
+                      <div
+                        class="css-13byt3y"
+                      >
+                        <span
+                          class="css-18v3nbo"
                         >
                           Review
                         </span>
@@ -511,9 +530,9 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           4 min read
                         </span>
                       </div>
-                    </section>
-                  </span>
-                </a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <hr
                 aria-hidden="true"
@@ -521,52 +540,58 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 data-testid="divider"
               />
               <div
-                class="css-zwpyzu"
+                class="css-139nwb1"
               >
-                <hr
-                  aria-hidden="true"
-                  class="css-obfal1"
-                  data-testid="divider"
-                />
-                <a
-                  class="css-1c29u09"
-                  data-testid="article-ListItem"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                <div
+                  class="css-1shocxe"
                 >
-                  <span
-                    class="css-17x5lw"
+                  <div
+                    class="css-o476j2"
                   >
-                    <section
-                      class="css-13byt3y"
+                    <hr
+                      aria-hidden="true"
+                      class="css-obfal1"
+                      data-testid="divider"
+                    />
+                    <div
+                      class="css-qw1yda"
                     >
                       <picture
-                        class="css-r9kxr3"
+                        class="css-1udor4k"
                       >
                         <div
                           class="css-5pczz7"
                         />
                         <img
                           alt="This is ALT Text"
-                          class="css-1t6p58q"
-                          data-testid="article-ListItemImg"
+                          class="css-1qgqq71"
                           src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                          width="100%"
                         />
                       </picture>
-                      <section
-                        class="css-pata8y"
-                      >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
-                        >
-                          Blow for rebel clubs as court says Uefa can block Super League
-                        </h3>
-                      </section>
-                      <div
-                        class="css-1ihi07t"
+                    </div>
+                    <div
+                      class="css-nv8tgr"
+                    >
+                      <a
+                        class="css-pyeu96"
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                        role="link"
                       >
                         <span
-                          class="css-1izicv9"
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-k2d5qk"
+                          >
+                            Blow for rebel clubs as court says Uefa can block Super League
+                          </span>
+                        </span>
+                      </a>
+                      <div
+                        class="css-13byt3y"
+                      >
+                        <span
+                          class="css-18v3nbo"
                         >
                           Review
                         </span>
@@ -585,9 +610,9 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           4 min read
                         </span>
                       </div>
-                    </section>
-                  </span>
-                </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -632,7 +657,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-13byt3y"
               >
                 <h4
-                  class="css-1njjou3"
+                  class="css-linkqs"
                 >
                   <span
                     class="css-1px0mqo"
@@ -677,7 +702,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-13byt3y"
               >
                 <h4
-                  class="css-1njjou3"
+                  class="css-linkqs"
                 >
                   <span
                     class="css-1px0mqo"

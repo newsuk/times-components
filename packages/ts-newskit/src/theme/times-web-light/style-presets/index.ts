@@ -1,4 +1,3 @@
-import { articleListStylePresets } from './articlelist';
 import { breadcrumbStylePresets } from './breadcrumb';
 import { colorStylePresets } from './color';
 import { leadStoryStylePresets } from './lead-story';
@@ -13,7 +12,6 @@ import { feedbackStylePresets } from './feedback';
 import { buttonStylePresets } from './buttons';
 
 export const stylePresets = {
-  ...articleListStylePresets,
   ...breadcrumbStylePresets,
   ...buttonStylePresets,
   ...colorStylePresets,

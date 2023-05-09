@@ -13,4 +13,9 @@ describe('sanitiseCopy', () => {
     );
     expect(text).toBe('<a href>Click here</a> if you want to live');
   });
+
+  it('should return default props correctly', () => {
+    const text = sanitiseCopy();
+    expect(text).toBe('');
+  });
 });

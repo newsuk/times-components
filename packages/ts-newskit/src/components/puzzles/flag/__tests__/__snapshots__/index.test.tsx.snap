@@ -7,7 +7,7 @@ exports[`Flag test should render a snapshot 1`] = `
     data-testid="flag"
   >
     <span
-      class="css-1pjbpyz"
+      class="css-1qlv5b"
     >
       COMPLETE
     </span>
@@ -22,7 +22,7 @@ exports[`Flag test should render a snapshot with label in progress 1`] = `
     data-testid="flag"
   >
     <span
-      class="css-1pjbpyz"
+      class="css-1qlv5b"
     >
       IN PROGRESS
     </span>

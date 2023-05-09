@@ -36,25 +36,22 @@ describe('Content Bucket 2 Articles list above `md` breakpoint', () => {
   (useBreakpointKey as any).mockReturnValue('md');
   renderComponent();
 
-  const articleItem1 = screen.getByText(data.articles[0].title).closest('div');
-  const articleItem3 = screen.getByText(data.articles[2].title).closest('div');
-  const articleItem4 = screen.getByText(data.articles[3].title).closest('div');
+  const articleContainer = screen.getByTestId('article-container');
+
+  const articleItem1 = articleContainer.firstChild;
+  const articleItem4 = articleContainer.lastChild;
 
   test('articleBorder', () => {
     expect(articleItem1!.nextSibling).toHaveAttribute('data-testid', 'divider');
-    expect(articleItem3!.nextSibling).toHaveAttribute('data-testid', 'divider');
+    expect(articleItem4!.previousSibling).toHaveAttribute(
+      'data-testid',
+      'divider'
+    );
     expect(articleItem4!.nextSibling).toBeNull();
-  });
-
-  test('articleTopBorder', () => {
-    expect(articleItem1!.firstChild).not.toHaveAttribute(
-      'data-testid',
-      'divider'
-    );
-    expect(articleItem3!.firstChild).not.toHaveAttribute(
-      'data-testid',
-      'divider'
-    );
+    expect(articleItem1!.nextSibling).toHaveStyle({
+      borderColor: '#e4e4e4',
+      borderStyle: 'solid'
+    });
   });
 });
 
@@ -65,40 +62,21 @@ describe('Content Bucket 2 Articles list below `md` breakpoint', () => {
   });
 
   test('articleBorder', () => {
-    const articleItem1 = screen
-      .getByText(data.articles[0].title)
-      .closest('div');
-    const articleItem3 = screen
-      .getByText(data.articles[2].title)
-      .closest('div');
-    const articleItem4 = screen
-      .getByText(data.articles[3].title)
-      .closest('div');
+    const articleContainer = screen.getByTestId('article-container');
 
-    expect(articleItem1!.nextSibling).not.toHaveAttribute(
-      'data-testid',
-      'divider'
-    );
-    expect(articleItem3!.nextSibling).not.toHaveAttribute(
+    const articleItem1 = articleContainer.firstChild;
+    const articleItem4 = articleContainer.lastChild;
+
+    expect(articleItem1!.nextSibling).toHaveAttribute('data-testid', 'divider');
+    expect(articleItem4!.previousSibling).toHaveAttribute(
       'data-testid',
       'divider'
     );
     expect(articleItem4!.nextSibling).toBeNull();
-  });
-
-  test('articleTopBorder', () => {
-    const articleItem1 = screen
-      .getByText(data.articles[0].title)
-      .closest('div');
-    const articleItem3 = screen
-      .getByText(data.articles[2].title)
-      .closest('div');
-
-    expect(articleItem1!.firstChild).not.toHaveAttribute(
-      'data-testid',
-      'divider'
-    );
-    expect(articleItem3!.firstChild).toHaveAttribute('data-testid', 'divider');
+    expect(articleItem1!.nextSibling).toHaveStyle({
+      borderColor: '#01000d',
+      borderStyle: 'dashed'
+    });
   });
 
   test('article images', () => {
@@ -109,7 +87,9 @@ describe('Content Bucket 2 Articles list below `md` breakpoint', () => {
       .getByText(data.articles[2].title)
       .closest('div');
 
-    expect(articleItem1!.getElementsByTagName('img').length).toBe(1);
-    expect(articleItem3!.getElementsByTagName('img').length).toBe(0);
+    expect(
+      articleItem1!.previousElementSibling!.getElementsByTagName('img').length
+    ).toBe(1);
+    expect(articleItem3!.previousElementSibling).toBeNull();
   });
 });

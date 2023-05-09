@@ -25,47 +25,48 @@ describe('Render Content Bucket 1 Slice', () => {
 
 describe('Content Bucket 1 Articles list ', () => {
   renderComponent();
-  const articleItem1 = screen.getByText(data.articles[0].title).closest('div');
-  const articleItem2 = screen.getByText(data.articles[1].title).closest('div');
-  const articleItem3 = screen.getByText(data.articles[2].title).closest('div');
+  const articleContainer = screen.getByTestId('article-container');
+
+  const articleItem1 = articleContainer.firstElementChild;
+  const articleItem4 = articleContainer.lastElementChild;
 
   test('articleBorder render after odd numbered items', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
 
     expect(articleItem1!.nextSibling).toHaveAttribute('data-testid', 'divider');
-    expect(articleItem2!.nextSibling).not.toHaveAttribute(
+    expect(articleItem4!.nextSibling).toBeNull();
+    expect(articleItem4!.previousSibling).toHaveAttribute(
       'data-testid',
       'divider'
     );
-    expect(articleItem3!.nextSibling).toHaveAttribute('data-testid', 'divider');
   });
 
   test("articleTopBorder renders correctly at 'xl' breakpoint", () => {
     (useBreakpointKey as any).mockReturnValue('xl');
-    expect(articleItem1!.firstChild).not.toHaveAttribute(
-      'data-testid',
-      'divider'
-    );
-    expect(articleItem3!.firstChild).toHaveAttribute('data-testid', 'divider');
+    expect(articleItem1!.getElementsByTagName('hr').length).toBe(1);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
   });
 
   test("articleTopBorder renders correctly at 'lg' breakpoint", () => {
     (useBreakpointKey as any).mockReturnValue('lg');
     renderComponent();
-    const articleItem1LG = screen
-      .getByText(data.articles[0].title)
-      .closest('div');
-    const articleItem2LG = screen
-      .getByText(data.articles[1].title)
-      .closest('div');
+    const articleContainerLG = screen.getByTestId('article-container');
 
-    expect(articleItem1LG!.firstChild).not.toHaveAttribute(
+    const articleItem1LG = articleContainerLG.firstChild;
+    const articleItem4LG = articleContainerLG.lastChild;
+
+    expect(articleItem1LG!.nextSibling).toHaveAttribute(
       'data-testid',
       'divider'
     );
-    expect(articleItem2LG!.firstChild).toHaveAttribute(
+    expect(articleItem4LG!.previousSibling).toHaveAttribute(
       'data-testid',
       'divider'
     );
+    expect(articleItem4LG!.nextSibling).toBeNull();
+    expect(articleItem1LG!.nextSibling).toHaveStyle({
+      borderColor: '#e4e4e4',
+      borderStyle: 'solid'
+    });
   });
 });

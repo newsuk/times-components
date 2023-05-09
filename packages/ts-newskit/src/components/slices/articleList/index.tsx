@@ -1,22 +1,25 @@
 import React from 'react';
 import {
-  Block,
-  Image,
-  LinkStandalone,
-  Headline,
-  Stack,
-  TextBlock,
   Divider,
-  useTheme
+  CardMedia,
+  CardContent,
+  Block,
+  TextBlock,
+  Card
 } from 'newskit';
-import { ColouredText, ContainerInline } from '../shared-styles';
+import { CardHeadlineLink, ContainerInline } from '../shared-styles';
+
+type ImageProps = {
+  src: string;
+  alt?: string;
+  caption?: string;
+};
 
 export interface ArticleListItemProps {
-  image?: string;
   color?: string;
-  alt?: string;
   title: string;
   url: string;
+  image?: ImageProps;
   articleType?: string;
   timeToRead?: string;
   hasTopBorder?: boolean;
@@ -26,8 +29,6 @@ export interface ArticleListItemProps {
 
 export const ArticleListItem = ({
   image,
-  color,
-  alt,
   title,
   url,
   articleType,
@@ -36,57 +37,61 @@ export const ArticleListItem = ({
   hideImage,
   isLeadImage
 }: ArticleListItemProps) => {
-  const theme = useTheme();
+  const cardImage = !hideImage &&
+    image && {
+      media: {
+        src: image.src,
+        alt: image.alt || title
+      }
+    };
 
   return (
-    <Stack
-      marginInline={
-        isLeadImage ? `-${theme.spacePresets.space045}` : 'space000'
-      }
-    >
+    <Card>
       {hasTopBorder && (
         <Divider
           overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
         />
       )}
-      <LinkStandalone
-        href={url}
-        data-testid="article-ListItem"
+
+      {image && !hideImage && <CardMedia {...cardImage} />}
+
+      <CardContent
         overrides={{
-          stylePreset: 'articleListLink'
+          marginInline: isLeadImage ? 'space045' : 'space000'
         }}
       >
-        <Block as="section">
-          {!hideImage && (
-            <Image
-              src={image}
-              data-testid="article-ListItemImg"
-              alt={alt || title}
-              loadingAspectRatio="3:2"
-              width="100%"
-              overrides={{
-                marginBlockEnd: 'space040'
-              }}
-            />
+        {image &&
+          image.caption &&
+          !hideImage && (
+            <TextBlock
+              paddingBlockStart="space020"
+              stylePreset="inkSubtle"
+              typographyPreset="utilityMeta010"
+            >
+              {image.caption}
+            </TextBlock>
           )}
-          <Headline
-            headingAs="h3"
-            overrides={{
-              typographyPreset: 'articleListTitle',
-              marginInline: isLeadImage ? 'space045' : 'space000'
-            }}
-          >
-            {title}
-          </Headline>
-          <Block marginInline={isLeadImage ? 'space045' : 'space000'}>
-            <ColouredText
+
+        <CardHeadlineLink
+          href={url}
+          role="link"
+          overrides={{
+            typographyPreset: 'editorialHeadline020',
+            paddingBlockStart: 'space040'
+          }}
+        >
+          {title}
+        </CardHeadlineLink>
+
+        {(articleType || timeToRead) && (
+          <Block>
+            <TextBlock
               typographyPreset="articleListArticleType"
               as="span"
-              $color={color}
               marginBlockStart="space030"
             >
               {articleType}
-            </ColouredText>
+            </TextBlock>
             {articleType &&
               timeToRead && (
                 <ContainerInline>
@@ -107,8 +112,8 @@ export const ArticleListItem = ({
               {timeToRead}
             </TextBlock>
           </Block>
-        </Block>
-      </LinkStandalone>
-    </Stack>
+        )}
+      </CardContent>
+    </Card>
   );
 };
