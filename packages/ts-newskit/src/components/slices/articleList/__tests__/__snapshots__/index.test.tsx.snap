@@ -3,10 +3,10 @@
 exports[`Render Article List Item should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-bhyki6"
+    class="css-zwpyzu"
   >
     <a
-      class="css-13fiaa0"
+      class="css-1c29u09"
       data-testid="article-ListItem"
       href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
     >
@@ -17,7 +17,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
           class="css-13byt3y"
         >
           <picture
-            class="css-ta48gm"
+            class="css-r9kxr3"
           >
             <div
               class="css-5pczz7"
@@ -31,19 +31,19 @@ exports[`Render Article List Item should render a snapshot 1`] = `
             />
           </picture>
           <section
-            class="css-ab1uvh"
+            class="css-pata8y"
           >
             <h3
-              class="nk-headline-heading css-1spnxj1"
+              class="nk-headline-heading css-i2jo9u"
             >
               Harry & Meghan's New Project?
             </h3>
           </section>
           <div
-            class="css-tpekxe"
+            class="css-1ihi07t"
           >
             <span
-              class="css-l4eawk"
+              class="css-1izicv9"
             >
               Review
             </span>
@@ -52,12 +52,12 @@ exports[`Render Article List Item should render a snapshot 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-b2ej4n"
+                class="css-15kf7hd"
                 data-testid="divider"
               />
             </div>
             <span
-              class="css-l03yw1"
+              class="css-sidzln"
             >
               4 min read
             </span>

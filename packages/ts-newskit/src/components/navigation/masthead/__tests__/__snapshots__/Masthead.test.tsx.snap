@@ -16,21 +16,21 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
           id="sr-times-logo"
         >
           <section
-            class="css-1jupc52"
+            class="css-1x4skmb"
           >
             <h1
-              class="nk-headline-heading css-1spnxj1"
+              class="nk-headline-heading css-i2jo9u"
             >
               The Times & The Sunday Times Homepage
             </h1>
           </section>
         </span>
         <span
-          class="css-6trbv7"
+          class="css-nha6jk"
           data-testid="date-time"
         >
           <time
-            class="css-100bbur"
+            class="css-1vd9v2f"
             datetime="2023-02-26 12:01:00+00"
           >
             Sunday February 26 2023 
@@ -48,7 +48,7 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
               class="css-17x5lw"
             >
               <svg
-                class="css-j6fc06"
+                class="css-ny3roy"
                 fill="none"
                 height="45"
                 viewBox="0 0 520 45"
@@ -141,21 +141,21 @@ exports[`EditionMasthead should render The Times masthead 1`] = `
           id="sr-times-logo"
         >
           <section
-            class="css-1jupc52"
+            class="css-1x4skmb"
           >
             <h1
-              class="nk-headline-heading css-1spnxj1"
+              class="nk-headline-heading css-i2jo9u"
             >
               The Times & The Sunday Times Homepage
             </h1>
           </section>
         </span>
         <span
-          class="css-6trbv7"
+          class="css-nha6jk"
           data-testid="date-time"
         >
           <time
-            class="css-100bbur"
+            class="css-1vd9v2f"
             datetime="2023-02-22 12:01:00+00"
           >
             Wednesday February 22 2023 
@@ -173,7 +173,7 @@ exports[`EditionMasthead should render The Times masthead 1`] = `
               class="css-17x5lw"
             >
               <svg
-                class="css-j6fc06"
+                class="css-ny3roy"
                 fill="none"
                 height="53"
                 viewBox="0 0 434 53"

@@ -91,7 +91,7 @@ export const navStylePresets = {
   },
   menuScrollOverlay: {
     base: {
-      backgroundImage: '{{overlays.overlayGradientInverseHorizontal}}'
+      backgroundImage: '{{overlays.overlayGradientBaseHorizontal}}'
     }
   }
 };

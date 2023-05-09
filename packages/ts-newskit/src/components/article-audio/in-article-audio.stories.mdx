@@ -41,18 +41,3 @@ export const InArticleAudioStory = ({ src, readyToPlayText, playingText, narrato
     <InArticleAudio {...{ src, readyToPlayText, playingText, narrator, headline, feedback }} />
   </TCThemeProvider>
 );
-
-<Story name="InArticleAudio" args={{ 
-  src: "https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3",
-  readyToPlayText: 'Listen to article',
-  playingText: 'Playing',
-  narrator: 'James Marriott',
-  headline: 'Article headline',
-  feedback: {
-    requestFeedback: true,
-    feedbackMessage: "Want to listen to more articles? Give your feedback below or email",
-    thankyouMessage: "Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this."
-  }
-}}>
-  {InArticleAudioStory.bind({})}
-</Story>

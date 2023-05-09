@@ -20,13 +20,13 @@ exports[`Audio player renders correctly 1`] = `
           aria-label="Play"
           aria-live="polite"
           aria-pressed="false"
-          class="css-1vd1omt"
+          class="css-7ycgmb"
           data-testid="audio-player-play-pause-button"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="css-1su91n6"
+            class="css-mxa34f"
             fill="currentColor"
             viewBox="0 0 64 64"
             xmlns="http://www.w3.org/2000/svg"
@@ -41,12 +41,12 @@ exports[`Audio player renders correctly 1`] = `
           class="css-1iuvgg2"
         >
           <p
-            class="css-1lyk11c"
+            class="css-1f17fhc"
           >
             Listen to article
           </p>
           <p
-            class="css-nv3u4r"
+            class="css-19ti35d"
           >
             Narrated by James Marriott
           </p>

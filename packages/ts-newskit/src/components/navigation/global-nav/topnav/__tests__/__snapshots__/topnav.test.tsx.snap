@@ -4,7 +4,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-yzdpcl"
+    class="css-cfp6i5"
   >
     <div
       class="css-1ycac6s"
@@ -13,12 +13,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
         aria-controls="hamburgerMenu"
         aria-expanded="false"
         aria-label="Open Menu"
-        class="css-1704mz3"
+        class="css-xh7ub"
         data-testid="button"
         type="button"
       >
         <svg
-          class="css-j6fc06"
+          class="css-ny3roy"
           fill="none"
           height="16"
           viewBox="0 0 16 12"
@@ -36,19 +36,19 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1udfuyx"
           data-testid="divider"
         />
         <button
           aria-controls="searchTimes"
           aria-expanded="false"
           aria-label="Open Search"
-          class="css-1704mz3"
+          class="css-xh7ub"
           data-testid="button"
           type="button"
         >
           <svg
-            class="css-j6fc06"
+            class="css-ny3roy"
             fill="none"
             height="16"
             viewBox="0 0 16 16"
@@ -63,11 +63,11 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
         </button>
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1udfuyx"
           data-testid="divider"
         />
         <a
-          class="css-1xvrpya"
+          class="css-177mij2"
           href="/"
         >
           <span
@@ -75,7 +75,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
           >
             <svg
               aria-label="The Times &amp; The Sunday Times"
-              class="css-6lxvx4"
+              class="css-1j3cfnz"
               fill="none"
               height="20"
               overrides="[object Object]"
@@ -158,7 +158,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
         </a>
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1udfuyx"
           data-testid="divider"
         />
         <div
@@ -174,135 +174,135 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
               role="list"
             >
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/home"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/news"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/comment"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/sport"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>
@@ -316,7 +316,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
         class="css-11ra1is"
       >
         <a
-          class="css-1xvrpya"
+          class="css-177mij2"
           href="/"
         >
           <span
@@ -324,7 +324,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
           >
             <svg
               aria-label="The Times &amp; The Sunday Times"
-              class="css-6lxvx4"
+              class="css-1j3cfnz"
               fill="none"
               height="20"
               overrides="[object Object]"
@@ -421,25 +421,25 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
         >
           <li
             aria-hidden="true"
-            class="css-1d4iq23"
+            class="css-1lgifga"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="css-1px1mhi"
+              class="css-1udfuyx"
               data-testid="divider"
             />
           </li>
           <li
-            class="nk-menu-item css-1qhmdz3"
+            class="nk-menu-item css-1i1v9fb"
           >
             <a
-              class="css-6qmzmp"
+              class="css-no2l92"
               data-testid="buttonLink"
               href="/times-plus"
             >
               <span
-                class="css-mvu7fj"
+                class="css-1pur78d"
               >
                 Times +
               </span>
@@ -447,32 +447,32 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
           </li>
           <li
             aria-hidden="true"
-            class="css-1d4iq23"
+            class="css-1lgifga"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="css-1px1mhi"
+              class="css-1udfuyx"
               data-testid="divider"
             />
           </li>
           <li
-            class="nk-menu-item css-1qhmdz3"
+            class="nk-menu-item css-1i1v9fb"
           >
             <button
               aria-expanded="false"
-              class="css-bvcuob"
+              class="css-au5zjl"
               data-testid="menu-sub-button"
               type="button"
             >
               <span
-                class="css-mvu7fj"
+                class="css-1pur78d"
               >
                 My Account
               </span>
               <svg
                 aria-hidden="true"
-                class="css-bl48kn-EmotionIconBase ex0cdmw0"
+                class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -503,12 +503,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/account"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         Manage account
                       </span>
@@ -518,12 +518,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/change-password"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         Change password
                       </span>
@@ -533,12 +533,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/my-newsletters"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         My Newsletters
                       </span>
@@ -548,12 +548,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/my-articles"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         My articles
                       </span>
@@ -563,12 +563,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/contact-us"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         Contact us
                       </span>
@@ -578,12 +578,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/log-out"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         Log out
                       </span>
@@ -624,12 +624,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/home"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
@@ -639,12 +639,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/news"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
@@ -654,12 +654,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/comment"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
@@ -669,12 +669,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
@@ -684,12 +684,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
@@ -699,12 +699,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/sport"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
@@ -714,12 +714,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
@@ -729,12 +729,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
@@ -744,12 +744,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>
@@ -762,7 +762,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
     </div>
     <hr
       aria-hidden="true"
-      class="css-1njghbt"
+      class="css-s9wquo"
       data-testid="divider"
     />
   </div>
@@ -773,7 +773,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-yzdpcl"
+    class="css-cfp6i5"
   >
     <div
       class="css-1ycac6s"
@@ -782,12 +782,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
         aria-controls="hamburgerMenu"
         aria-expanded="false"
         aria-label="Open Menu"
-        class="css-1704mz3"
+        class="css-xh7ub"
         data-testid="button"
         type="button"
       >
         <svg
-          class="css-j6fc06"
+          class="css-ny3roy"
           fill="none"
           height="16"
           viewBox="0 0 16 12"
@@ -805,19 +805,19 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1udfuyx"
           data-testid="divider"
         />
         <button
           aria-controls="searchTimes"
           aria-expanded="false"
           aria-label="Open Search"
-          class="css-1704mz3"
+          class="css-xh7ub"
           data-testid="button"
           type="button"
         >
           <svg
-            class="css-j6fc06"
+            class="css-ny3roy"
             fill="none"
             height="16"
             viewBox="0 0 16 16"
@@ -832,11 +832,11 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
         </button>
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1udfuyx"
           data-testid="divider"
         />
         <a
-          class="css-1xvrpya"
+          class="css-177mij2"
           href="/"
         >
           <span
@@ -844,7 +844,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
           >
             <svg
               aria-label="The Times &amp; The Sunday Times"
-              class="css-6lxvx4"
+              class="css-1j3cfnz"
               fill="none"
               height="20"
               overrides="[object Object]"
@@ -927,7 +927,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
         </a>
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1udfuyx"
           data-testid="divider"
         />
         <div
@@ -943,135 +943,135 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
               role="list"
             >
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/home"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/news"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/comment"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/sport"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>
@@ -1085,7 +1085,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
         class="css-11ra1is"
       >
         <a
-          class="css-1xvrpya"
+          class="css-177mij2"
           href="/"
         >
           <span
@@ -1093,7 +1093,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
           >
             <svg
               aria-label="The Times &amp; The Sunday Times"
-              class="css-6lxvx4"
+              class="css-1j3cfnz"
               fill="none"
               height="20"
               overrides="[object Object]"
@@ -1190,25 +1190,25 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
         >
           <li
             aria-hidden="true"
-            class="css-1d4iq23"
+            class="css-1lgifga"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="css-1px1mhi"
+              class="css-1udfuyx"
               data-testid="divider"
             />
           </li>
           <li
-            class="nk-menu-item css-1qhmdz3"
+            class="nk-menu-item css-1i1v9fb"
           >
             <a
-              class="css-6qmzmp"
+              class="css-no2l92"
               data-testid="buttonLink"
               href="/login"
             >
               <span
-                class="css-mvu7fj"
+                class="css-1pur78d"
               >
                 Login
               </span>
@@ -1216,25 +1216,25 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
           </li>
           <li
             aria-hidden="true"
-            class="css-1d4iq23"
+            class="css-1lgifga"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="css-1px1mhi"
+              class="css-1udfuyx"
               data-testid="divider"
             />
           </li>
           <li
-            class="nk-menu-item css-1qhmdz3"
+            class="nk-menu-item css-1i1v9fb"
           >
             <a
-              class="css-a3b9wc"
+              class="css-13qt8e4"
               data-testid="buttonLink"
               href="/"
             >
               <span
-                class="css-mvu7fj"
+                class="css-1pur78d"
               >
                 Subscribe
               </span>
@@ -1249,19 +1249,19 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
   >
     <div
       aria-label="My Account Navigation"
-      class="css-1n4xhq5"
+      class="css-6gjyau"
       role="region"
     >
       <div
         class="css-12u9ntt"
       >
         <a
-          class="css-1kznnii"
+          class="css-1jnhsna"
           data-testid="buttonLink"
           href="/"
         >
           <span
-            class="css-bspkx3"
+            class="css-npvr24"
           >
             Log in
           </span>
@@ -1270,12 +1270,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
           class="css-b6vv9c"
         />
         <a
-          class="css-1yh0br7"
+          class="css-iuyt7t"
           data-testid="buttonLink"
           href="/"
         >
           <span
-            class="css-bspkx3"
+            class="css-npvr24"
           >
             Subscribe
           </span>
@@ -1306,12 +1306,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/home"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
@@ -1321,12 +1321,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/news"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
@@ -1336,12 +1336,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/comment"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
@@ -1351,12 +1351,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
@@ -1366,12 +1366,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
@@ -1381,12 +1381,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/sport"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
@@ -1396,12 +1396,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
@@ -1411,12 +1411,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
@@ -1426,12 +1426,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>
@@ -1444,7 +1444,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
     </div>
     <hr
       aria-hidden="true"
-      class="css-1njghbt"
+      class="css-s9wquo"
       data-testid="divider"
     />
   </div>
@@ -1455,7 +1455,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-yzdpcl"
+    class="css-cfp6i5"
   >
     <div
       class="css-1ycac6s"
@@ -1464,12 +1464,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
         aria-controls="hamburgerMenu"
         aria-expanded="false"
         aria-label="Open Menu"
-        class="css-1704mz3"
+        class="css-xh7ub"
         data-testid="button"
         type="button"
       >
         <svg
-          class="css-j6fc06"
+          class="css-ny3roy"
           fill="none"
           height="16"
           viewBox="0 0 16 12"
@@ -1487,19 +1487,19 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
       >
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1udfuyx"
           data-testid="divider"
         />
         <button
           aria-controls="searchTimes"
           aria-expanded="false"
           aria-label="Open Search"
-          class="css-1704mz3"
+          class="css-xh7ub"
           data-testid="button"
           type="button"
         >
           <svg
-            class="css-j6fc06"
+            class="css-ny3roy"
             fill="none"
             height="16"
             viewBox="0 0 16 16"
@@ -1514,11 +1514,11 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
         </button>
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1udfuyx"
           data-testid="divider"
         />
         <a
-          class="css-1xvrpya"
+          class="css-177mij2"
           href="/"
         >
           <span
@@ -1526,7 +1526,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
           >
             <svg
               aria-label="The Times &amp; The Sunday Times"
-              class="css-6lxvx4"
+              class="css-1j3cfnz"
               fill="none"
               height="20"
               overrides="[object Object]"
@@ -1599,7 +1599,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
         </a>
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1udfuyx"
           data-testid="divider"
         />
         <div
@@ -1615,135 +1615,135 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
               role="list"
             >
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/home"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/news"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/comment"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/sport"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
                 </a>
               </li>
               <li
-                class="nk-menu-item css-1qhmdz3"
+                class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>
@@ -1757,7 +1757,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
         class="css-11ra1is"
       >
         <a
-          class="css-1xvrpya"
+          class="css-177mij2"
           href="/"
         >
           <span
@@ -1765,7 +1765,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
           >
             <svg
               aria-label="The Times &amp; The Sunday Times"
-              class="css-6lxvx4"
+              class="css-1j3cfnz"
               fill="none"
               height="20"
               overrides="[object Object]"
@@ -1852,25 +1852,25 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
         >
           <li
             aria-hidden="true"
-            class="css-1d4iq23"
+            class="css-1lgifga"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="css-1px1mhi"
+              class="css-1udfuyx"
               data-testid="divider"
             />
           </li>
           <li
-            class="nk-menu-item css-1qhmdz3"
+            class="nk-menu-item css-1i1v9fb"
           >
             <a
-              class="css-6qmzmp"
+              class="css-no2l92"
               data-testid="buttonLink"
               href="/times-plus"
             >
               <span
-                class="css-mvu7fj"
+                class="css-1pur78d"
               >
                 Times +
               </span>
@@ -1878,32 +1878,32 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
           </li>
           <li
             aria-hidden="true"
-            class="css-1d4iq23"
+            class="css-1lgifga"
             role="separator"
           >
             <hr
               aria-hidden="true"
-              class="css-1px1mhi"
+              class="css-1udfuyx"
               data-testid="divider"
             />
           </li>
           <li
-            class="nk-menu-item css-1qhmdz3"
+            class="nk-menu-item css-1i1v9fb"
           >
             <button
               aria-expanded="false"
-              class="css-bvcuob"
+              class="css-au5zjl"
               data-testid="menu-sub-button"
               type="button"
             >
               <span
-                class="css-mvu7fj"
+                class="css-1pur78d"
               >
                 My Account
               </span>
               <svg
                 aria-hidden="true"
-                class="css-bl48kn-EmotionIconBase ex0cdmw0"
+                class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"
@@ -1934,12 +1934,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/account"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         Manage account
                       </span>
@@ -1949,12 +1949,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/change-password"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         Change password
                       </span>
@@ -1964,12 +1964,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/my-newsletters"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         My Newsletters
                       </span>
@@ -1979,12 +1979,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/my-articles"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         My articles
                       </span>
@@ -1994,12 +1994,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/contact-us"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         Contact us
                       </span>
@@ -2009,12 +2009,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xuadgf"
+                      class="css-4yjxcc"
                       data-testid="buttonLink"
                       href="/log-out"
                     >
                       <span
-                        class="css-mvu7fj"
+                        class="css-1pur78d"
                       >
                         Log out
                       </span>
@@ -2055,12 +2055,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/home"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
@@ -2070,12 +2070,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/news"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
@@ -2085,12 +2085,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/comment"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
@@ -2100,12 +2100,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
@@ -2115,12 +2115,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
@@ -2130,12 +2130,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/sport"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
@@ -2145,12 +2145,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
@@ -2160,12 +2160,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
@@ -2175,12 +2175,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ake6bf"
+                  class="css-1mopshi"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
                   <span
-                    class="css-mvu7fj"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>
@@ -2193,7 +2193,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
     </div>
     <hr
       aria-hidden="true"
-      class="css-1njghbt"
+      class="css-s9wquo"
       data-testid="divider"
     />
   </div>
