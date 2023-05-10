@@ -45,7 +45,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
           data-testid="flag"
         >
           <span
-            class="css-1pjbpyz"
+            class="css-1qlv5b"
           >
             COMPLETE
           </span>
@@ -67,7 +67,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
             class="css-1xzc2un"
           >
             <div
-              class="css-1c31q1i"
+              class="css-reoy8x"
             >
               General Knowledge
             </div>
@@ -104,12 +104,12 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
           class="css-13byt3y"
         >
           <span
-            class="css-6zh2x5"
+            class="css-qsmink"
           >
             Sunday
           </span>
           <span
-            class="css-7bspk1"
+            class="css-16ew30g"
           >
              | No. 9873
           </span>

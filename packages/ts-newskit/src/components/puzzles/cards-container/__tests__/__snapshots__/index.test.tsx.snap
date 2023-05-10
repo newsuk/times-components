@@ -10,7 +10,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
       class="css-16bai6p"
     >
       <section
-        class="css-1oteowz"
+        class="css-1goqtre"
       >
         <h2
           class="nk-headline-heading css-i2jo9u"
@@ -31,7 +31,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           href="https://newskit.co.uk/components"
         >
           <span
-            class="css-1pjbpyz"
+            class="css-1qlv5b"
           >
             SEE ALL
           </span>
@@ -146,7 +146,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
       class="css-16bai6p"
     >
       <section
-        class="css-1oteowz"
+        class="css-1goqtre"
       >
         <h2
           class="nk-headline-heading css-i2jo9u"
