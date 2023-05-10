@@ -23,6 +23,7 @@ class ArticlePage extends Component {
       label,
       publicationName,
       publishedTime,
+      showAudioPlayer,
       shortHeadline,
       standfirst,
       updatedTime
@@ -49,6 +50,7 @@ class ArticlePage extends Component {
         publishedTime={publishedTime}
         standfirst={standfirst}
         updatedTime={updatedTime}
+        showAudioPlayer={showAudioPlayer}
       />
     );
   }
