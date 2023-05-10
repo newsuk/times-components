@@ -86,7 +86,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-1hdbizi"
             >
               <p
-                class="css-1ep9v36"
+                class="css-cdmgjp"
               >
                 JOEL KPOKU INTERVIEW
               </p>
@@ -134,7 +134,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-13byt3y"
               >
                 <span
-                  class="css-1njurdt"
+                  class="css-1qg017p"
                 >
                   Review
                 </span>
@@ -220,40 +220,44 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-hnfuhb"
             >
               <div
-                class="css-1o6tuda"
+                class="css-11g8q6o"
               >
                 <div
-                  class="css-1jtygxa"
+                  class="css-1kwj960"
                 >
                   <picture
-                    class="css-oyoi5t"
+                    class="css-33c418"
                   >
                     <div
                       class="css-5pczz7"
                     />
                     <img
                       alt="Deborah Haynes"
-                      class="css-pdkseh"
-                      height="77"
+                      class="css-1t6p58q"
                       src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
-                      width="77"
+                      width="77px"
                     />
                   </picture>
                 </div>
                 <div
-                  class="css-13byt3y"
+                  class="css-1ir4tu4"
                 >
-                  <h4
-                    class="css-linkqs"
+                  <a
+                    class="css-gull0f"
+                    href="/"
                   >
                     <span
-                      class="css-1px0mqo"
+                      class="css-17x5lw"
                     >
-                      Deborah Haynes
+                      <span
+                        class="css-k2d5qk"
+                      >
+                        Deborah Haynes
+                      </span>
                     </span>
-                  </h4>
+                  </a>
                   <p
-                    class="css-1ewx0ox"
+                    class="css-v1jlbq"
                   >
                     Now is Willis’s chance to show he’s got more to offer than Curry
                   </p>
@@ -265,40 +269,44 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 data-testid="divider"
               />
               <div
-                class="css-1o6tuda"
+                class="css-11g8q6o"
               >
                 <div
-                  class="css-1jtygxa"
+                  class="css-1kwj960"
                 >
                   <picture
-                    class="css-oyoi5t"
+                    class="css-33c418"
                   >
                     <div
                       class="css-5pczz7"
                     />
                     <img
                       alt="Deborah Haynes 2"
-                      class="css-pdkseh"
-                      height="77"
+                      class="css-1t6p58q"
                       src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
-                      width="77"
+                      width="77px"
                     />
                   </picture>
                 </div>
                 <div
-                  class="css-13byt3y"
+                  class="css-1ir4tu4"
                 >
-                  <h4
-                    class="css-linkqs"
+                  <a
+                    class="css-gull0f"
+                    href="/"
                   >
                     <span
-                      class="css-1px0mqo"
+                      class="css-17x5lw"
                     >
-                      Deborah Haynes 2
+                      <span
+                        class="css-k2d5qk"
+                      >
+                        Deborah Haynes 2
+                      </span>
                     </span>
-                  </h4>
+                  </a>
                   <p
-                    class="css-1ewx0ox"
+                    class="css-v1jlbq"
                   >
                     Now is Willis’s chance to show he’s got more to offer than Curry
                   </p>
@@ -366,7 +374,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         Credit
                       </p>
                       <a
-                        class="css-pyeu96"
+                        class="css-1ajoxx4"
                         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                         role="link"
                       >
@@ -423,7 +431,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         Credit
                       </p>
                       <a
-                        class="css-pyeu96"
+                        class="css-1ajoxx4"
                         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                         role="link"
                       >
@@ -475,7 +483,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       class="css-nv8tgr"
                     >
                       <a
-                        class="css-pyeu96"
+                        class="css-1ajoxx4"
                         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                         role="link"
                       >
@@ -537,7 +545,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         Credit
                       </p>
                       <a
-                        class="css-pyeu96"
+                        class="css-1ajoxx4"
                         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                         role="link"
                       >
@@ -574,40 +582,44 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             class="css-hnfuhb"
           >
             <div
-              class="css-1o6tuda"
+              class="css-11g8q6o"
             >
               <div
-                class="css-1jtygxa"
+                class="css-1kwj960"
               >
                 <picture
-                  class="css-oyoi5t"
+                  class="css-33c418"
                 >
                   <div
                     class="css-5pczz7"
                   />
                   <img
                     alt="Deborah Haynes"
-                    class="css-pdkseh"
-                    height="77"
+                    class="css-1t6p58q"
                     src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
-                    width="77"
+                    width="77px"
                   />
                 </picture>
               </div>
               <div
-                class="css-13byt3y"
+                class="css-1ir4tu4"
               >
-                <h4
-                  class="css-linkqs"
+                <a
+                  class="css-gull0f"
+                  href="/"
                 >
                   <span
-                    class="css-1px0mqo"
+                    class="css-17x5lw"
                   >
-                    Deborah Haynes
+                    <span
+                      class="css-k2d5qk"
+                    >
+                      Deborah Haynes
+                    </span>
                   </span>
-                </h4>
+                </a>
                 <p
-                  class="css-1ewx0ox"
+                  class="css-v1jlbq"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
@@ -619,40 +631,44 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               data-testid="divider"
             />
             <div
-              class="css-1o6tuda"
+              class="css-11g8q6o"
             >
               <div
-                class="css-1jtygxa"
+                class="css-1kwj960"
               >
                 <picture
-                  class="css-oyoi5t"
+                  class="css-33c418"
                 >
                   <div
                     class="css-5pczz7"
                   />
                   <img
                     alt="Deborah Haynes 2"
-                    class="css-pdkseh"
-                    height="77"
+                    class="css-1t6p58q"
                     src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
-                    width="77"
+                    width="77px"
                   />
                 </picture>
               </div>
               <div
-                class="css-13byt3y"
+                class="css-1ir4tu4"
               >
-                <h4
-                  class="css-linkqs"
+                <a
+                  class="css-gull0f"
+                  href="/"
                 >
                   <span
-                    class="css-1px0mqo"
+                    class="css-17x5lw"
                   >
-                    Deborah Haynes 2
+                    <span
+                      class="css-k2d5qk"
+                    >
+                      Deborah Haynes 2
+                    </span>
                   </span>
-                </h4>
+                </a>
                 <p
-                  class="css-1ewx0ox"
+                  class="css-v1jlbq"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>

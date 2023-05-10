@@ -9,7 +9,7 @@ exports[`Render Component one should render a snapshot 1`] = `
       class="css-1hdbizi"
     >
       <p
-        class="css-1ep9v36"
+        class="css-cdmgjp"
       >
         JOEL KPOKU INTERVIEW
       </p>
@@ -57,7 +57,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-13byt3y"
       >
         <span
-          class="css-1njurdt"
+          class="css-1qg017p"
         >
           Review
         </span>

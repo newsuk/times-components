@@ -10,7 +10,7 @@ import {
   Visible
 } from 'newskit';
 import React from 'react';
-import { JournalistQuoteProps } from '../../components/slices/journalist-quote';
+import { CommentCardProps } from '../../components/slices/comment-card';
 import { LeadStory, LeadStoryProps } from '../../components/slices/lead-story';
 import {
   SliceHeader,
@@ -25,19 +25,19 @@ import {
   LeadStoryCell,
   CellNoMargin
 } from '../shared-styles';
-import { JournalistStack } from './journalist-stack';
+import { CommentStack } from './comment-card';
 
 export interface ContentBucket1Props {
   section: SliceHeaderProps;
   leadStory: LeadStoryProps;
-  journalists: JournalistQuoteProps[];
+  comments: CommentCardProps[];
   articles: ArticleListItemProps[];
 }
 
 export const ContentBucket1 = ({
   section,
   leadStory,
-  journalists,
+  comments,
   articles
 }: ContentBucket1Props) => {
   const breakpointKey = useBreakpointKey();
@@ -58,7 +58,7 @@ export const ContentBucket1 = ({
         </Block>
         <Block marginInlineEnd={{ xs: 'space000', lg: 'space040' }}>
           <Hidden md>
-            <JournalistStack journalists={journalists} />
+            <CommentStack comments={comments} />
           </Hidden>
         </Block>
       </LeadStoryCell>
@@ -115,7 +115,7 @@ export const ContentBucket1 = ({
       </CellNoMargin>
       <Visible md>
         <CellNoMargin xs={12}>
-          <JournalistStack journalists={journalists} />
+          <CommentStack comments={comments} />
         </CellNoMargin>
       </Visible>
     </Grid>
