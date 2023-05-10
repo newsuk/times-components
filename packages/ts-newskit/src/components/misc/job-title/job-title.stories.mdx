@@ -1,0 +1,35 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+
+import { NewsKitProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../../theme';
+
+import { JobTitle } from './job-title.tsx';
+
+<Meta
+  title="Newskit Components/Misc/JobTitle"
+  component={JobTitle}
+/>
+
+# Toast component
+The `Job Title` component is used to show the author job title, and in a tooltip their contractual title.
+
+This component takes in -TODO- , as below, to display both job titles.
+
+## Props
+<Props of={JobTitle} />
+
+## Code Example
+`<JobTitle />`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const JobTitleStory = () => (
+  <NewsKitProvider theme={TimesWebLightTheme}>
+    <JobTitle contractualTitle="Senior Correspondent"/>
+  </NewsKitProvider>
+);
+
+<Story name="JobTitle">
+  {JobTitleStory.bind({})}
+</Story>

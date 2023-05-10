@@ -1,0 +1,26 @@
+import React from 'react';
+import { Tooltip, IconButton } from 'newskit';
+import { NewsKitTooltipIcon } from '../../../assets';
+
+
+export const JobTitle: React.FC<{contractualTitle: string}> = ({contractualTitle}) => (
+<Tooltip
+  content={contractualTitle}
+  asLabel
+  placement="top-end"
+  trigger={['focus', 'hover']}
+  overrides={{
+    offset: 'space000',
+    panel: {
+      typographyPreset: 'utilityLabel010',
+      stylePreset: 'tooltipPanel',
+      paddingBlock: 'space010',
+      paddingInline: 'space020'
+    }
+  }}
+>
+  <IconButton overrides={{stylePreset: 'iconButtonMinimalSecondary', marginInlineStart: 'space020'}}>
+    <NewsKitTooltipIcon />
+  </IconButton>
+</Tooltip>
+);
