@@ -28,5 +28,5 @@ export { AccordionGroup } from './components/misc/accordion/accordion-group';
 export { BreakoutSection } from './components/puzzles/breakout-section';
 
 // SLICES
-export { ContentBucket1 } from './slices/content-bucket-1'
-export { ContentBucket2 } from './slices/content-bucket-2'
+export { ContentBucket1 } from './slices/content-bucket-1';
+export { ContentBucket2 } from './slices/content-bucket-2';
