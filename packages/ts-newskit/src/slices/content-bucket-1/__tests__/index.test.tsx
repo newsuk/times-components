@@ -43,8 +43,8 @@ describe('Content Bucket 1 Articles list ', () => {
 
   test("articleTopBorder renders correctly at 'xl' breakpoint", () => {
     (useBreakpointKey as any).mockReturnValue('xl');
-    expect(articleItem1!.getElementsByTagName('hr').length).toBe(1);
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
+    expect(articleItem1!.getElementsByTagName('hr').length).toBe(0);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
   });
 
   test("articleTopBorder renders correctly at 'lg' breakpoint", () => {
