@@ -53,7 +53,7 @@ export const LeadStory = ({
         md: `content media`
       }}
       columnGap="space040"
-      columns={{ xs: '1fr', md: '3fr 5fr' }}
+      columns={{ md: '3fr 5fr' }}
     >
       <Block>
         <CardMedia
