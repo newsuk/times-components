@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.38.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.37.0...@times-components/ts-newskit@1.38.0) (2023-05-10)
+
+
+### Features
+
+* **TMRX-1258:** update comment card ([#3355](https://github.com/newsuk/times-components/issues/3355)) ([a0817d4](https://github.com/newsuk/times-components/commit/a0817d47b9897c35d9a03d88452eb81af3af7380))
+
+
+
+
+
 # [1.37.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.36.0...@times-components/ts-newskit@1.37.0) (2023-05-10)
 
 
