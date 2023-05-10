@@ -7,8 +7,9 @@ import {
   CardLink
 } from 'newskit';
 
-export const CardHeadlineLink = styled(CardLink)`
-  ${getColorCssFromTheme('color', 'inkContrast')};
+export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
+  ${({ $color }) => getColorCssFromTheme('color', $color || 'inkContrast')};
+  cursor: pointer;
   text-decoration: none;
 
   &&:hover,
@@ -23,7 +24,7 @@ export const CardHeadlineLink = styled(CardLink)`
 `;
 
 export const ColouredText = styled(TextBlock)<{ $color?: string }>`
-  ${({ $color }) => $color && `color: ${$color};`};
+  ${({ $color }) => $color && getColorCssFromTheme('color', $color)};
 `;
 
 export const ContainerInline = styled(Block)`

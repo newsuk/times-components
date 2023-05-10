@@ -53,26 +53,18 @@
       "color": "#E34605"
     }
   ],
-  "journalists": [
+  "comments": [
     {
-      "journalist": {
-        "name": "Deborah Haynes",
-        "image": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
-      },
-      "quote": "Now is Willis’s chance to show he’s got more to offer than Curry",
-      "heading": "",
-      "sectionColour": "#008347",
-      "textColour": "#222222"
+      "heading": "Deborah Haynes",
+      "content": "Now is Willis’s chance to show he’s got more to offer than Curry",
+      "image": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
+      "href": "/"
     },
     {
-      "journalist": {
-        "name": "Deborah Haynes 2",
-        "image": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
-      },
-      "quote": "Now is Willis’s chance to show he’s got more to offer than Curry",
-      "heading": "",
-      "sectionColour": "#008347",
-      "textColour": "#222222"
+      "heading": "Deborah Haynes 2",
+      "content": "Now is Willis’s chance to show he’s got more to offer than Curry",
+      "image": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
+      "href": "/"
     }
   ]
 }
