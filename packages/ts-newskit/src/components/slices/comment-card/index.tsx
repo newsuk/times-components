@@ -4,7 +4,7 @@ import { CardHeadlineLink, ColouredText } from '../shared-styles';
 
 export interface CommentCardProps {
   image?: string;
-  heading?: string;
+  heading: string;
   content: string;
   href: string;
 }
