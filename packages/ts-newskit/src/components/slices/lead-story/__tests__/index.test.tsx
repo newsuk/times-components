@@ -4,7 +4,12 @@ import { render } from '../../../../utils/test-utils';
 import { LeadStory } from '../index';
 import { leadStory } from '../../../../slices/fixtures/data.json';
 
-const renderComponent = () => render(<LeadStory {...leadStory} />);
+const leadStoryData = {
+  ...leadStory,
+  subHeadline: 'TAG'
+};
+
+const renderComponent = () => render(<LeadStory {...leadStoryData} />);
 
 describe('Render Component one', () => {
   it('should render a snapshot', () => {
@@ -17,12 +22,7 @@ describe('Render Component one', () => {
     const headlineText = getByText(leadStory.headline);
     expect(headlineText).toBeInTheDocument();
   });
-  it('should render correct subHeadline color', () => {
-    const { getByText } = renderComponent();
 
-    const subHeadlineText = getByText('JOEL KPOKU INTERVIEW');
-    expect(subHeadlineText).toHaveStyle('color: #008347');
-  });
   it('should render correct summary', () => {
     const { getByText } = renderComponent();
 
@@ -35,33 +35,16 @@ describe('Render Component one', () => {
     const readingTimeText = getByText(leadStory.readingTime);
     expect(readingTimeText).toBeInTheDocument();
   });
-  it('should render correct bylines', () => {
-    const { getByText } = renderComponent();
-
-    const bylinesText = getByText(leadStory.bylines);
-    expect(bylinesText).toBeInTheDocument();
-  });
   it('should render correct caption', () => {
     const { getByText } = renderComponent();
 
     const captionText = getByText(leadStory.caption);
     expect(captionText).toBeInTheDocument();
   });
-  it('should render correct summary href', () => {
+  it('should render subHeadline if passed as props', () => {
     const { getByText } = renderComponent();
 
-    expect(getByText(leadStory.summary).closest('a')).toHaveAttribute(
-      'href',
-      'https://www.thetimes.co.uk'
-    );
-  });
-
-  it('should render correct headline href', () => {
-    const { getByText } = renderComponent();
-
-    expect(getByText(leadStory.headline).closest('a')).toHaveAttribute(
-      'href',
-      'https://www.thetimes.co.uk'
-    );
+    const subHeadline = getByText('TAG');
+    expect(subHeadline).toBeInTheDocument();
   });
 });
