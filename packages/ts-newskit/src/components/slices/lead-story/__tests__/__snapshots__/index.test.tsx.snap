@@ -8,8 +8,8 @@ exports[`Render Component one should render a snapshot 1`] = `
     <div
       class="css-13byt3y"
     >
-      <p
-        class="css-cdmgjp"
+      <div
+        class="css-1kwj960"
       >
         <picture
           class="css-zp0elg"
@@ -53,11 +53,11 @@ exports[`Render Component one should render a snapshot 1`] = `
         </div>
       </div>
       <a
-        class="css-8uddtl"
+        class="css-1t08m60"
         href="https://www.thetimes.co.uk"
       >
         <span
-          class="css-1qg017p"
+          class="css-17x5lw"
         >
           <span
             class="css-13ln2fu"
