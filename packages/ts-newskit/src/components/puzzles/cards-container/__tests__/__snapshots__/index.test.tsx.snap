@@ -43,11 +43,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
         >
           <svg
             aria-hidden="true"
-<<<<<<< HEAD
             class="css-18cthx4-EmotionIconBase ex0cdmw0"
-=======
-            class="css-o0xy9h-EmotionIconBase ex0cdmw0"
->>>>>>> d9cec4469 (feat(TMRX-1243): update theme reference to pull from package (#3344))
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -70,11 +66,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
         >
           <svg
             aria-hidden="true"
-<<<<<<< HEAD
             class="css-18cthx4-EmotionIconBase ex0cdmw0"
-=======
-            class="css-o0xy9h-EmotionIconBase ex0cdmw0"
->>>>>>> d9cec4469 (feat(TMRX-1243): update theme reference to pull from package (#3344))
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
