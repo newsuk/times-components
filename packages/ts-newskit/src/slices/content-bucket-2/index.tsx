@@ -51,7 +51,7 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
                     {...article}
                     hideImage={isAfterFirstArticle}
                     isLeadImage={isMob && articleIndex === 0}
-                    hasTopBorder={isMob}
+                    hasTopBorder={isMob && articleIndex > 0}
                   />
                   {articleBorder}
                 </React.Fragment>

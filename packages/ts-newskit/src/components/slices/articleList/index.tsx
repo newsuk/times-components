@@ -5,7 +5,7 @@ import {
   CardContent,
   Block,
   TextBlock,
-  Card
+  CardComposable
 } from 'newskit';
 import { CardHeadlineLink, ContainerInline } from '../shared-styles';
 
@@ -46,7 +46,7 @@ export const ArticleListItem = ({
     };
 
   return (
-    <Card>
+    <CardComposable alignContent="start">
       {hasTopBorder && (
         <Divider
           overrides={{
@@ -117,6 +117,6 @@ export const ArticleListItem = ({
           </Block>
         )}
       </CardContent>
-    </Card>
+    </CardComposable>
   );
 };
