@@ -8,7 +8,7 @@ import {
   Visible
 } from 'newskit';
 import React, { useEffect, useRef, useState } from 'react';
-import { Feedback } from '../feedback';
+import { Feedback } from './feedback';
 import { StickyPlayerDesktop } from './sticky-player/stickyplayer.desktop';
 import { StickyPlayerExpanded } from './sticky-player/stickyplayer.expanded';
 import { StickyPlayerMob } from './sticky-player/stickyplayer.mob';
