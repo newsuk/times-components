@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.36.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.35.0...@times-components/ts-newskit@1.36.0) (2023-05-10)
+
+
+### Features
+
+* **TMRX-1260:** update refactor title bar component ([#3352](https://github.com/newsuk/times-components/issues/3352)) ([72ae24b](https://github.com/newsuk/times-components/commit/72ae24bb1142339f4e55892477edd96fae89a86c))
+
+
+
+
+
 # [1.35.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.34.1...@times-components/ts-newskit@1.35.0) (2023-05-09)
 
 
