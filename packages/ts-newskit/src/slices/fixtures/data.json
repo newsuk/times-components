@@ -16,23 +16,21 @@
     {
       "image": {
         "src": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
-        "alt": "This is ALT Text"
+        "alt": "This is ALT Text",
+        "credit": "Credit"
       },
       "title": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "articleType": "Review",
-      "timeToRead": "4 min read",
       "color": "#E34605"
     },
     {
       "image": {
         "src": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
-        "alt": "This is ALT Text"
+        "alt": "This is ALT Text",
+        "credit": "Credit"
       },
       "title": "‘American owners pose threat to English pyramid’",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "articleType": "Review",
-      "timeToRead": "4 min read",
       "color": "#E34605"
     },
     {
@@ -42,19 +40,16 @@
       },
       "title": "£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "articleType": "Review",
-      "timeToRead": "4 min read",
       "color": "#E34605"
     },
     {
       "image": {
         "src": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
-        "alt": "This is ALT Text"
+        "alt": "This is ALT Text",
+        "credit": "Credit"
       },
       "title": "Blow for rebel clubs as court says Uefa can block Super League",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "articleType": "Review",
-      "timeToRead": "4 min read",
       "color": "#E34605"
     }
   ],

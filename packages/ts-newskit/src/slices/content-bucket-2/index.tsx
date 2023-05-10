@@ -17,6 +17,8 @@ export interface ContentBucket2Props {
 
 export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
   const breakpointKey = useBreakpointKey();
+  const isMob = breakpointKey === 'xs' || breakpointKey === 'sm';
+
   return (
     <Grid xsMargin="space045" mdMargin="space050">
       <Cell xs={12}>
@@ -33,35 +35,23 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
         >
           {articles.map(
             (article: ArticleListItemProps, articleIndex, articleArr) => {
-              const articleBorder =
-                articleIndex < articleArr.length - 1 &&
-                (breakpointKey === 'xs' || breakpointKey === 'sm' ? (
-                  <Divider
-                    overrides={{
-                      marginBlock: 'space040',
-                      stylePreset: 'dashedDivider'
-                    }}
-                  />
-                ) : (
+              const articleBorder = articleIndex < articleArr.length - 1 &&
+                !isMob && (
                   <Divider
                     overrides={{ stylePreset: 'lightDivider' }}
                     vertical
                   />
-                ));
+                );
 
-              const isAfterFirstArticle =
-                (breakpointKey === 'xs' || breakpointKey === 'sm') &&
-                articleIndex > 0;
+              const isAfterFirstArticle = isMob && articleIndex > 0;
 
               return (
                 <React.Fragment key={article.title}>
                   <ArticleListItem
                     {...article}
                     hideImage={isAfterFirstArticle}
-                    isLeadImage={
-                      (breakpointKey === 'xs' || breakpointKey === 'sm') &&
-                      articleIndex === 0
-                    }
+                    isLeadImage={isMob && articleIndex === 0}
+                    hasTopBorder={isMob}
                   />
                   {articleBorder}
                 </React.Fragment>

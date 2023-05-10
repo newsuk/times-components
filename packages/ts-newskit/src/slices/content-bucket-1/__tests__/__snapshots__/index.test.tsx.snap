@@ -360,6 +360,11 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     <div
                       class="css-nv8tgr"
                     >
+                      <p
+                        class="css-1fo91if"
+                      >
+                        Credit
+                      </p>
                       <a
                         class="css-pyeu96"
                         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -375,29 +380,6 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           </span>
                         </span>
                       </a>
-                      <div
-                        class="css-13byt3y"
-                      >
-                        <span
-                          class="css-18v3nbo"
-                        >
-                          Review
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-sidzln"
-                        >
-                          4 min read
-                        </span>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -435,6 +417,11 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     <div
                       class="css-nv8tgr"
                     >
+                      <p
+                        class="css-1fo91if"
+                      >
+                        Credit
+                      </p>
                       <a
                         class="css-pyeu96"
                         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -450,29 +437,6 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           </span>
                         </span>
                       </a>
-                      <div
-                        class="css-13byt3y"
-                      >
-                        <span
-                          class="css-18v3nbo"
-                        >
-                          Review
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-sidzln"
-                        >
-                          4 min read
-                        </span>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -488,7 +452,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   >
                     <hr
                       aria-hidden="true"
-                      class="css-obfal1"
+                      class="css-1f0staz"
                       data-testid="divider"
                     />
                     <div
@@ -525,29 +489,6 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           </span>
                         </span>
                       </a>
-                      <div
-                        class="css-13byt3y"
-                      >
-                        <span
-                          class="css-18v3nbo"
-                        >
-                          Review
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-sidzln"
-                        >
-                          4 min read
-                        </span>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -568,7 +509,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   >
                     <hr
                       aria-hidden="true"
-                      class="css-obfal1"
+                      class="css-1f0staz"
                       data-testid="divider"
                     />
                     <div
@@ -590,6 +531,11 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     <div
                       class="css-nv8tgr"
                     >
+                      <p
+                        class="css-1fo91if"
+                      >
+                        Credit
+                      </p>
                       <a
                         class="css-pyeu96"
                         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -605,29 +551,6 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           </span>
                         </span>
                       </a>
-                      <div
-                        class="css-13byt3y"
-                      >
-                        <span
-                          class="css-18v3nbo"
-                        >
-                          Review
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-sidzln"
-                        >
-                          4 min read
-                        </span>
-                      </div>
                     </div>
                   </div>
                 </div>
