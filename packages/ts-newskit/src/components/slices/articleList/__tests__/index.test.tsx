@@ -11,7 +11,7 @@ const defaultProps = {
     src:
       '//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63',
     alt: 'This is ALT Text',
-    caption: 'Credit'
+    credit: 'Credit'
   },
   title: "Harry & Meghan's New Project?",
   url:
@@ -98,18 +98,18 @@ describe('Render Article List Item with hidden image', () => {
   it('items should renderwithout image', () => {
     renderComponent(defaultProps);
     const articleImage = screen.getByRole('img');
-    const caption = screen.queryByText('Credit');
+    const credit = screen.queryByText('Credit');
 
     expect(articleImage).toBeInTheDocument();
-    expect(caption).toHaveTextContent('Credit');
+    expect(credit).toHaveTextContent('Credit');
   });
 
   it('items should renderwithout image', () => {
     renderComponent({ ...defaultProps, hideImage: true });
     const articleImage = screen.queryByRole('img');
-    const caption = screen.queryByText('Credit');
+    const credit = screen.queryByText('Credit');
 
     expect(articleImage).toBeNull();
-    expect(caption).toBeNull();
+    expect(credit).toBeNull();
   });
 });

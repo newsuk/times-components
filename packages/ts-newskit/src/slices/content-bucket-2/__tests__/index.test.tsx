@@ -62,18 +62,22 @@ describe('Content Bucket 2 Articles list below `md` breakpoint', () => {
   });
 
   test('articleBorder', () => {
-    const articleContainer = screen.getByTestId('article-container');
+    const articleItem1 = screen
+      .getByText(data.articles[0].title)
+      .closest('div');
+    const articleItem3 = screen
+      .getByText(data.articles[2].title)
+      .closest('div');
 
-    const articleItem1 = articleContainer.firstChild;
-    const articleItem4 = articleContainer.lastChild;
-
-    expect(articleItem1!.nextSibling).toHaveAttribute('data-testid', 'divider');
-    expect(articleItem4!.previousSibling).toHaveAttribute(
+    expect(articleItem1!.previousSibling).not.toHaveAttribute(
       'data-testid',
       'divider'
     );
-    expect(articleItem4!.nextSibling).toBeNull();
-    expect(articleItem1!.nextSibling).toHaveStyle({
+    expect(articleItem3!.previousSibling).toHaveAttribute(
+      'data-testid',
+      'divider'
+    );
+    expect(articleItem3!.previousSibling).toHaveStyle({
       borderColor: '#01000d',
       borderStyle: 'dashed'
     });
@@ -90,6 +94,9 @@ describe('Content Bucket 2 Articles list below `md` breakpoint', () => {
     expect(
       articleItem1!.previousElementSibling!.getElementsByTagName('img').length
     ).toBe(1);
-    expect(articleItem3!.previousElementSibling).toBeNull();
+    expect(articleItem3!.previousElementSibling).toHaveAttribute(
+      'data-testid',
+      'divider'
+    );
   });
 });
