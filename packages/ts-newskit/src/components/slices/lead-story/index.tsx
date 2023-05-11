@@ -1,24 +1,22 @@
 import {
   TextBlock,
-  Image,
-  Stack,
   Visible,
   Block,
-  Headline,
-  LinkInline,
-  useTheme,
-  Divider
+  Divider,
+  CardMedia,
+  CardContent,
+  CardComposable,
+  Flag
 } from 'newskit';
 import React from 'react';
-import { StyledTextBlock, StyledTextStack } from './styles';
-import { ContainerInline, ColouredText } from '../shared-styles';
+import { ContainerInline, CardHeadlineLink } from '../shared-styles';
+import { ColouredText, StyledDivider } from './styles';
 
 export interface LeadStoryProps {
   headline: string;
   color?: string;
   readingTime: string;
   summary: string;
-  bylines: string;
   subHeadline?: string;
   caption: string;
   image: string;
@@ -31,67 +29,89 @@ export const LeadStory = ({
   color,
   readingTime,
   summary,
-  bylines,
   subHeadline,
   caption,
   image,
   url,
   articleType
 }: LeadStoryProps) => {
-  const theme = useTheme();
+  const stylePresets = {
+    typographyPreset: 'utilityButton010',
+    stylePreset: 'inkBrand010',
+    paddingBlockStart: 'space050',
+    paddingInline: 'space000',
+    paddingBlock: 'space000',
+    iconSize: 'iconSize010',
+    spaceInline: 'space010'
+  };
+
   return (
-    <Stack flow={{ sm: 'vertical-center', md: 'horizontal-stretch' }}>
-      <StyledTextStack marginInlineEnd={{ md: 'space040' }}>
-        <ColouredText
-          $color={color}
-          paddingBlockStart={{
-            xs: 'space040',
-            md: 'space020',
-            lg: 'space040'
+    <CardComposable
+      areas={{
+        xs: `media 
+             content`,
+        md: `content media`
+      }}
+      columnGap="space040"
+      columns={{ md: '3fr 5fr' }}
+    >
+      <Block>
+        <CardMedia
+          media={{
+            src: image,
+            alt: headline,
+            loadingAspectRatio: '3:2'
           }}
-          paddingBlockEnd="space020"
-          typographyPreset="newPreset090"
+        />
+        <TextBlock
+          paddingBlockStart="space020"
+          typographyPreset="utilityMeta010"
         >
-          {subHeadline}
-        </ColouredText>
-        <Headline
-          headingAs="h1"
+          {caption}
+        </TextBlock>
+      </Block>
+      <CardContent alignContent="start">
+        <StyledDivider overrides={{ stylePreset: 'dashedDivider' }} />
+        <Visible md lg xl>
+          {subHeadline && (
+            <ColouredText
+              size="small"
+              overrides={{
+                ...stylePresets
+              }}
+              $color={color}
+            >
+              {subHeadline}
+            </ColouredText>
+          )}
+        </Visible>
+        <CardHeadlineLink
+          expand
+          href={url}
           overrides={{
-            typographyPreset: 'newPreset080',
-            paddingBlockEnd: 'space020'
+            typographyPreset: 'editorialHeadline040',
+            paddingBlockStart: 'space050'
           }}
+          external={false}
         >
-          <LinkInline
-            overrides={{
-              stylePreset: 'leadStoryHeader'
-            }}
-            external={false}
-            href={url}
-          >
-            {headline}
-          </LinkInline>
-        </Headline>
+          {headline}
+        </CardHeadlineLink>
         <TextBlock
           typographyPreset={{
             xs: 'editorialParagraph020',
             md: 'editorialParagraph010'
           }}
+          marginBlockStart="space050"
+          as="p"
         >
-          <LinkInline
-            overrides={{
-              stylePreset: 'leadStoryDescription',
-              paddingBlockEnd: 'space020'
-            }}
-            external={false}
-            href={url}
-          >
-            {summary}
-          </LinkInline>
+          {summary}
         </TextBlock>
-        <Block>
+        <Visible md lg xl>
           <ColouredText
-            typographyPreset="articleListArticleType"
-            as="span"
+            size="small"
+            overrides={{
+              ...stylePresets
+            }}
             $color={color}
           >
             {articleType}
@@ -107,59 +127,17 @@ export const LeadStory = ({
                 />
               </ContainerInline>
             )}
-          <TextBlock
-            typographyPreset="newPreset100"
-            stylePreset="leadStoryText"
-            as="span"
-          >
-            {readingTime}
-          </TextBlock>
-        </Block>
-      </StyledTextStack>
-      <Block
-        paddingBlockStart={{
-          xs: 'space040',
-          md: 'space000'
-        }}
-        marginInline={{
-          xs: `-${theme.spacePresets.space045}`,
-          md: 'space000'
-        }}
-      >
-        <LinkInline external={false} href={url}>
-          <Image
-            src={image}
-            alt={headline}
-            width="100%"
-            height="100%"
-            loadingAspectRatio="3:2"
-          />
-        </LinkInline>
-        <Block>
-          <TextBlock
-            stylePreset="leadStoryText"
-            paddingBlockStart="space020"
-            typographyPreset="newPreset100"
-            marginInline={{
-              xs: 'space045',
-              md: 'space000'
+          <Flag
+            size="small"
+            overrides={{
+              ...stylePresets,
+              stylePreset: 'flagMinimalPrimary'
             }}
           >
-            {caption}
-          </TextBlock>
-        </Block>
-      </Block>
-      <Visible lg xl>
-        <Stack flow="horizontal-bottom" paddingInlineStart="space010">
-          <StyledTextBlock
-            stylePreset="leadStoryText"
-            typographyPreset="newPreset100"
-            marginInlineEnd="space045"
-          >
-            {bylines}
-          </StyledTextBlock>
-        </Stack>
-      </Visible>
-    </Stack>
+            {readingTime}
+          </Flag>
+        </Visible>
+      </CardContent>
+    </CardComposable>
   );
 };

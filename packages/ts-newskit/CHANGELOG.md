@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.40.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.39.0...@times-components/ts-newskit@1.40.0) (2023-05-11)
+
+
+### Features
+
+* **TMRX-1257:** update refactor lead story component ([#3356](https://github.com/newsuk/times-components/issues/3356)) ([c000bb7](https://github.com/newsuk/times-components/commit/c000bb7e06e51f4b2f9a333b7f8d7eaadb145a7f))
+
+
+
+
+
 # [1.39.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.38.0...@times-components/ts-newskit@1.39.0) (2023-05-11)
 
 

@@ -1,6 +1,5 @@
 import { breadcrumbStylePresets } from './breadcrumb';
 import { colorStylePresets } from './color';
-import { leadStoryStylePresets } from './lead-story';
 import { mastheadStylePresets } from './masthead';
 import { menuStylePresets } from './menu';
 import { navStylePresets } from './navigation';
@@ -22,7 +21,6 @@ export const stylePresets = {
   ...menuStylePresets,
   ...navStylePresets,
   ...secondaryNavigationStylePresets,
-  ...leadStoryStylePresets,
   ...sliceStylePresets,
   ...feedbackStylePresets,
   ...sliceHeaderStylePresets
