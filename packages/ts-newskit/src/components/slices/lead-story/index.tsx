@@ -56,13 +56,20 @@ export const LeadStory = ({
       columns={{ md: '3fr 5fr' }}
     >
       <Block>
-        <CardMedia
-          media={{
-            src: image,
-            alt: headline,
-            loadingAspectRatio: '3:2'
+        <Block
+          marginInline={{
+            xs: '-20px',
+            md: 'space000'
           }}
-        />
+        >
+          <CardMedia
+            media={{
+              src: image,
+              alt: headline,
+              loadingAspectRatio: '3:2'
+            }}
+          />
+        </Block>
         <TextBlock
           paddingBlockStart="space020"
           typographyPreset="utilityMeta010"
