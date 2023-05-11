@@ -11,19 +11,15 @@ export const sliceHeaderStylePresets = {
     base: {
       iconColor: '{{colors.interactiveSecondary020}}',
       color: '{{colors.inkBrand010}}',
-      backgroundColor:'{{colors.interactiveSecondary020}}',
-
-
+      backgroundColor: '{{colors.interactiveSecondary020}}'
     },
     hover: {
       iconColor: '{{colors.interface040}}',
-      backgroundColor:'{{colors.interface040}}',
-
+      backgroundColor: '{{colors.interface040}}'
     },
     active: {
       iconColor: '{{colors.interface050}}',
-      backgroundColor:'{{colors.interface050}}',
-
+      backgroundColor: '{{colors.interface050}}'
     }
   }
 };

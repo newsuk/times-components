@@ -54,7 +54,13 @@ export const ContentBucket1 = ({
               vertical
             />
           </Visible>
-          <LeadStory {...leadStory} />
+          <Block
+            marginInlineEnd={{
+              lg: 'space040'
+            }}
+          >
+            <LeadStory {...leadStory} />
+          </Block>
         </Block>
         <Block marginInlineEnd={{ xs: 'space000', lg: 'space040' }}>
           <Hidden md>

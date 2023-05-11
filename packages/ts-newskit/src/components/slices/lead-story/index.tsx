@@ -6,7 +6,8 @@ import {
   CardMedia,
   CardContent,
   CardComposable,
-  Flag
+  Flag,
+  useTheme
 } from 'newskit';
 import React from 'react';
 import { ContainerInline, CardHeadlineLink } from '../shared-styles';
@@ -35,6 +36,8 @@ export const LeadStory = ({
   url,
   articleType
 }: LeadStoryProps) => {
+  const theme = useTheme();
+
   const stylePresets = {
     typographyPreset: 'utilityButton010',
     stylePreset: 'inkBrand010',
@@ -58,7 +61,7 @@ export const LeadStory = ({
       <Block>
         <Block
           marginInline={{
-            xs: '-20px',
+            xs: `-${theme.spacePresets.space045}`,
             md: 'space000'
           }}
         >
