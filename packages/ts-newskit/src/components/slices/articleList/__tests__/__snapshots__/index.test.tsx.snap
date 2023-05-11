@@ -3,7 +3,7 @@
 exports[`Render Article List Item should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-mffi94"
+    class="css-gsfmea"
   >
     <div
       class="css-1kwj960"
@@ -22,7 +22,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
       </picture>
     </div>
     <div
-      class="css-fngm6c"
+      class="css-diffbd"
     >
       <p
         class="css-1fo91if"

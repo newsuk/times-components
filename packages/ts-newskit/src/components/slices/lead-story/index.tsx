@@ -3,13 +3,16 @@ import {
   Visible,
   Block,
   Divider,
-  CardMedia,
   CardContent,
   CardComposable,
   Flag
 } from 'newskit';
 import React from 'react';
-import { ContainerInline, CardHeadlineLink } from '../shared-styles';
+import {
+  ContainerInline,
+  CardHeadlineLink,
+  FullWidthCardMediaMob
+} from '../shared-styles';
 import { ColouredText, StyledDivider } from './styles';
 
 export interface LeadStoryProps {
@@ -56,7 +59,7 @@ export const LeadStory = ({
       columns={{ md: '3fr 5fr' }}
     >
       <Block>
-        <CardMedia
+        <FullWidthCardMediaMob
           media={{
             src: image,
             alt: headline,

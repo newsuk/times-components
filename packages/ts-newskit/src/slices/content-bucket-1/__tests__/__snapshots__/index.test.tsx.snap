@@ -35,7 +35,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <a
-              class="css-cbmwfk"
+              class="css-12mlald"
               data-testid="buttonLink"
               href="https://www.thetimes.co.uk/"
               role="link"
@@ -68,7 +68,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
         class="css-1c2qrr1"
       >
         <div
-          class="css-13byt3y"
+          class="css-sqw2mm"
         >
           <div
             class="css-15edd2j"
@@ -86,7 +86,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-13byt3y"
             >
               <div
-                class="css-1kwj960"
+                class="css-uxw9nr"
               >
                 <picture
                   class="css-zp0elg"
@@ -305,11 +305,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             tabindex="0"
           >
             <div
-              class="css-5e9od2"
+              class="css-u3rc4r"
               data-testid="article-container"
+              style="position: relative;"
             >
               <div
-                class="css-mffi94"
+                class="css-gsfmea"
               >
                 <div
                   class="css-1kwj960"
@@ -328,7 +329,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </picture>
                 </div>
                 <div
-                  class="css-fngm6c"
+                  class="css-diffbd"
                 >
                   <p
                     class="css-1fo91if"
@@ -352,13 +353,8 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </a>
                 </div>
               </div>
-              <hr
-                aria-hidden="true"
-                class="css-13rcg9f"
-                data-testid="divider"
-              />
               <div
-                class="css-mffi94"
+                class="css-gsfmea"
               >
                 <div
                   class="css-1kwj960"
@@ -377,7 +373,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </picture>
                 </div>
                 <div
-                  class="css-fngm6c"
+                  class="css-diffbd"
                 >
                   <p
                     class="css-1fo91if"
@@ -402,13 +398,17 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="css-mffi94"
+                class="css-gsfmea"
               >
-                <hr
-                  aria-hidden="true"
-                  class="css-1f0staz"
-                  data-testid="divider"
-                />
+                <div
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-xvacx"
+                    data-testid="divider"
+                  />
+                </div>
                 <div
                   class="css-1kwj960"
                 >
@@ -426,7 +426,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </picture>
                 </div>
                 <div
-                  class="css-fngm6c"
+                  class="css-diffbd"
                 >
                   <a
                     class="css-1ajoxx4"
@@ -445,19 +445,18 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </a>
                 </div>
               </div>
-              <hr
-                aria-hidden="true"
-                class="css-13rcg9f"
-                data-testid="divider"
-              />
               <div
-                class="css-mffi94"
+                class="css-gsfmea"
               >
-                <hr
-                  aria-hidden="true"
-                  class="css-1f0staz"
-                  data-testid="divider"
-                />
+                <div
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-xvacx"
+                    data-testid="divider"
+                  />
+                </div>
                 <div
                   class="css-1kwj960"
                 >
@@ -475,7 +474,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </picture>
                 </div>
                 <div
-                  class="css-fngm6c"
+                  class="css-diffbd"
                 >
                   <p
                     class="css-1fo91if"
@@ -499,6 +498,11 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </a>
                 </div>
               </div>
+              <hr
+                aria-hidden="true"
+                class="css-po9buu"
+                data-testid="divider"
+              />
             </div>
           </div>
         </div>
