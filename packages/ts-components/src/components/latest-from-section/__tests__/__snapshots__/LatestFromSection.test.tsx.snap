@@ -76,6 +76,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         >
                           <img
                             class="responsive-sc-1nnon4d-0 fwlcWP"
+                            loading="lazy"
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg?resize=200&quality=3"
                           />
                           <div
@@ -190,6 +191,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         >
                           <img
                             class="responsive-sc-1nnon4d-0 fwlcWP"
+                            loading="lazy"
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
                           />
                           <div
@@ -304,6 +306,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         >
                           <img
                             class="responsive-sc-1nnon4d-0 fwlcWP"
+                            loading="lazy"
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F798e1dce-d918-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
                           />
                           <div
