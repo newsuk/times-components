@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.41.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.40.0...@times-components/ts-newskit@1.41.0) (2023-05-11)
+
+
+### Features
+
+* **TMST-660:** Free Trail banner component ([#3357](https://github.com/newsuk/times-components/issues/3357)) ([55758dd](https://github.com/newsuk/times-components/commit/55758ddb7d6f91c2ed78fb79bc0a2ae94179c062))
+
+
+
+
+
 # [1.40.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.39.0...@times-components/ts-newskit@1.40.0) (2023-05-11)
 
 
