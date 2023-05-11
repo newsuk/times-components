@@ -1,4 +1,5 @@
 export { TCThemeProvider } from './utils/TCThemeProvider';
+export { InArticleAudio } from './components/article-audio';
 
 // NAVIGATION
 export { Breadcrumb } from './components/navigation/breadcrumb';

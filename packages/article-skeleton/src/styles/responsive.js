@@ -35,6 +35,7 @@ export const MainContainer = styled.main`
 
 export const HeaderContainer = styled(TcView)`
   display: flex;
+  z-index: 1;
 
   /* stylelint-disable */
   > ${ArticleKeylineItem} {
