@@ -117,6 +117,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     <article>
       <img
         alt="An image caption"
+        loading="lazy"
         src="https://image.io?resize=400&quality=3"
       />
       <svg

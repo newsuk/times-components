@@ -67,6 +67,7 @@ class TimesImage extends Component {
         <StyledImage
           alt={accessibilityLabel}
           ref={this.getHighResImage}
+          loading="lazy"
           isLoaded={highResIsLoaded}
           onLoad={this.handleHighResOnLoad}
           onTransitionEnd={this.onHighResTransitionEnd}
@@ -91,6 +92,7 @@ class TimesImage extends Component {
       return (
         <StyledImage
           alt={accessibilityLabel}
+          loading="lazy"
           ref={this.getLowResImage}
           isLoaded={lowResIsLoaded}
           onLoad={this.handleLowResOnLoad}
