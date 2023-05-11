@@ -3,64 +3,87 @@
 exports[`Render Component one should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-10zrx1s"
+    class="css-1t3y47i"
   >
     <div
-      class="css-1hdbizi"
+      class="css-13byt3y"
     >
-      <p
-        class="css-cdmgjp"
+      <div
+        class="css-1kwj960"
       >
-        JOEL KPOKU INTERVIEW
-      </p>
-      <section
-        class="css-14fzduz"
-      >
-        <h1
-          class="nk-headline-heading css-i2jo9u"
+        <picture
+          class="css-zp0elg"
         >
-          <a
-            class="css-r41826"
-            href="https://www.thetimes.co.uk"
-          >
-            <span
-              class="css-17x5lw"
-            >
-              <span
-                class="css-1wc2zh5"
-              >
-                Sarcacens an inclusive club? They didnt look out for me
-              </span>
-            </span>
-          </a>
-        </h1>
-      </section>
+          <div
+            class="css-5pczz7"
+          />
+          <img
+            alt="Sarcacens an inclusive club? They didnt look out for me"
+            class="css-1qgqq71"
+            src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0"
+          />
+        </picture>
+      </div>
       <p
-        class="css-yljxz1"
+        class="css-k8n4lr"
       >
-        <a
-          class="css-100pzid"
-          href="https://www.thetimes.co.uk"
+        Credit
+      </p>
+    </div>
+    <div
+      class="css-17cghxi"
+    >
+      <hr
+        aria-hidden="true"
+        class="css-1ka10v1"
+        data-testid="divider"
+      />
+      <div
+        class="css-11l110t"
+      >
+        <div
+          class="css-1j46hv8"
+          data-testid="tag"
         >
           <span
-            class="css-17x5lw"
+            class="css-1qlv5b"
           >
-            <span
-              class="css-1wc2zh5"
-            >
-              Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
-            </span>
+            TAG
           </span>
-        </a>
-      </p>
-      <div
-        class="css-13byt3y"
+        </div>
+      </div>
+      <a
+        class="css-1t08m60"
+        href="https://www.thetimes.co.uk"
       >
         <span
-          class="css-1qg017p"
+          class="css-17x5lw"
         >
-          Review
+          <span
+            class="css-13ln2fu"
+          >
+            Sarcacens an inclusive club? They didnt look out for me
+          </span>
         </span>
+      </a>
+      <p
+        class="css-1bjsyle"
+      >
+        Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
+      </p>
+      <div
+        class="css-11l110t"
+      >
+        <div
+          class="css-1j46hv8"
+          data-testid="tag"
+        >
+          <span
+            class="css-1qlv5b"
+          >
+            Review
+          </span>
+        </div>
         <div
           class="css-lew009"
         >
@@ -70,60 +93,16 @@ exports[`Render Component one should render a snapshot 1`] = `
             data-testid="divider"
           />
         </div>
-        <span
-          class="css-1uhwhfo"
+        <div
+          class="css-144htjt"
+          data-testid="flag"
         >
-          4 min read
-        </span>
-      </div>
-    </div>
-    <div
-      class="css-1yxixdd"
-    >
-      <a
-        class="css-157tire"
-        href="https://www.thetimes.co.uk"
-      >
-        <span
-          class="css-17x5lw"
-        >
-          <picture
-            class="css-zp0elg"
+          <span
+            class="css-1qlv5b"
           >
-            <div
-              class="css-5pczz7"
-            />
-            <img
-              alt="Sarcacens an inclusive club? They didnt look out for me"
-              class="css-1t2lz8m"
-              height="100%"
-              src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0"
-              width="100%"
-            />
-          </picture>
-        </span>
-      </a>
-      <div
-        class="css-13byt3y"
-      >
-        <p
-          class="css-j86oci"
-        >
-          Caption One Line Dummy Caption Here
-        </p>
-      </div>
-    </div>
-    <div
-      class="css-15edd2j"
-    >
-      <div
-        class="css-1de9iv"
-      >
-        <p
-          class="css-heohu9"
-        >
-          REUTERS/PHIL NOBLE
-        </p>
+            4 min read
+          </span>
+        </div>
       </div>
     </div>
   </div>
