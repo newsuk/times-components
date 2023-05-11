@@ -16,7 +16,7 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
           id="sr-times-logo"
         >
           <section
-            class="css-1x4skmb"
+            class="css-korq89"
           >
             <h1
               class="nk-headline-heading css-i2jo9u"
@@ -141,7 +141,7 @@ exports[`EditionMasthead should render The Times masthead 1`] = `
           id="sr-times-logo"
         >
           <section
-            class="css-1x4skmb"
+            class="css-korq89"
           >
             <h1
               class="nk-headline-heading css-i2jo9u"

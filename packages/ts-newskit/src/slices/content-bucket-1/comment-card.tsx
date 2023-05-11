@@ -1,15 +1,15 @@
 import { Divider, Stack } from 'newskit';
 import React from 'react';
 import {
-  JournalistQuote,
-  JournalistQuoteProps
-} from '../../components/slices/journalist-quote';
+  CommentCard,
+  CommentCardProps
+} from '../../components/slices/comment-card';
 import { AvatarDivider } from '../shared-styles';
 
-interface JournalistStackProps {
-  journalists: JournalistQuoteProps[];
+interface CommentStackProps {
+  comments: CommentCardProps[];
 }
-export const JournalistStack = ({ journalists }: JournalistStackProps) => {
+export const CommentStack = ({ comments }: CommentStackProps) => {
   return (
     <>
       <Divider
@@ -19,8 +19,8 @@ export const JournalistStack = ({ journalists }: JournalistStackProps) => {
         flow={{ xs: 'vertical-left', md: 'horizontal-center' }}
         stackDistribution="space-evenly"
       >
-        {journalists.map((journalist, journalistIndex, journalistArr) => {
-          const hasBorder = journalistIndex < journalistArr.length - 1 && (
+        {comments.map((comment, commentIndex, commentArr) => {
+          const hasBorder = commentIndex < commentArr.length - 1 && (
             <AvatarDivider
               overrides={{
                 marginInline: { md: 'space040' },
@@ -32,8 +32,8 @@ export const JournalistStack = ({ journalists }: JournalistStackProps) => {
           );
 
           return (
-            <React.Fragment key={journalist.journalist.name}>
-              <JournalistQuote {...journalist} />
+            <React.Fragment key={comment.heading}>
+              <CommentCard {...comment} />
               {hasBorder}
             </React.Fragment>
           );

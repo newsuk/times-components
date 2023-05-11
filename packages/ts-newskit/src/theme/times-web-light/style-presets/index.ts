@@ -1,4 +1,3 @@
-import { articleListStylePresets } from './articlelist';
 import { breadcrumbStylePresets } from './breadcrumb';
 import { colorStylePresets } from './color';
 import { leadStoryStylePresets } from './lead-story';
@@ -11,9 +10,9 @@ import { sliceStylePresets } from './slices';
 import { textStylePresets } from './text';
 import { feedbackStylePresets } from './feedback';
 import { buttonStylePresets } from './buttons';
+import { sliceHeaderStylePresets } from './slice-header';
 
 export const stylePresets = {
-  ...articleListStylePresets,
   ...breadcrumbStylePresets,
   ...buttonStylePresets,
   ...colorStylePresets,
@@ -25,5 +24,6 @@ export const stylePresets = {
   ...secondaryNavigationStylePresets,
   ...leadStoryStylePresets,
   ...sliceStylePresets,
-  ...feedbackStylePresets
+  ...feedbackStylePresets,
+  ...sliceHeaderStylePresets
 };

@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.38.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.37.0...@times-components/ts-newskit@1.38.0) (2023-05-10)
+
+
+### Features
+
+* **TMRX-1258:** update comment card ([#3355](https://github.com/newsuk/times-components/issues/3355)) ([a0817d4](https://github.com/newsuk/times-components/commit/a0817d47b9897c35d9a03d88452eb81af3af7380))
+
+
+
+
+
+# [1.37.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.36.0...@times-components/ts-newskit@1.37.0) (2023-05-10)
+
+
+### Features
+
+* **TMRX-1240:** update content bucket 2 ([#3353](https://github.com/newsuk/times-components/issues/3353)) ([99d6b8f](https://github.com/newsuk/times-components/commit/99d6b8fc3dddb8b527f32e9e34a9e90b94bcbb89))
+
+
+
+
+
+# [1.36.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.35.0...@times-components/ts-newskit@1.36.0) (2023-05-10)
+
+
+### Features
+
+* **TMRX-1260:** update refactor title bar component ([#3352](https://github.com/newsuk/times-components/issues/3352)) ([72ae24b](https://github.com/newsuk/times-components/commit/72ae24bb1142339f4e55892477edd96fae89a86c))
+
+
+
+
+
+# [1.35.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.34.1...@times-components/ts-newskit@1.35.0) (2023-05-09)
+
+
+### Features
+
+* **TMRX-1245:** composable card refactor ([#3350](https://github.com/newsuk/times-components/issues/3350)) ([09d9a3f](https://github.com/newsuk/times-components/commit/09d9a3fc3cc8d2e775452c8626245e8f44edeffb))
+
+
+
+
+
 ## [1.34.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.34.0...@times-components/ts-newskit@1.34.1) (2023-05-05)
 
 **Note:** Version bump only for package @times-components/ts-newskit

@@ -9,7 +9,7 @@ export const sliceStylePresets = {
   dashedDivider: {
     base: {
       borderStyle: 'dashed',
-      borderWidth: '{{borders.borderWidth010}}',
+      borderWidth: '{{borders.borderWidthDefault}}',
       borderColor: '{{colors.interface060}}'
     }
   }
