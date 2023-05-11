@@ -1,26 +1,19 @@
 import React from 'react';
-import { Tooltip, IconButton } from 'newskit';
-import { NewsKitTooltipIcon } from '../../../assets';
+import { JobTitlePopover } from './job-title-popover';
+import { JobTitleTooltip } from './job-title-tooltip';
+import { useBreakpointKey } from 'newskit';
 
-
-export const JobTitle: React.FC<{contractualTitle: string}> = ({contractualTitle}) => (
-<Tooltip
-  content={contractualTitle}
-  asLabel
-  placement="top-end"
-  trigger={['focus', 'hover']}
-  overrides={{
-    offset: 'space000',
-    panel: {
-      typographyPreset: 'utilityLabel010',
-      stylePreset: 'tooltipPanel',
-      paddingBlock: 'space010',
-      paddingInline: 'space020'
-    }
-  }}
->
-  <IconButton overrides={{stylePreset: 'iconButtonMinimalSecondary', marginInlineStart: 'space020'}}>
-    <NewsKitTooltipIcon />
-  </IconButton>
-</Tooltip>
-);
+export const JobTitle: React.FC<{contractualTitle: string}> = ({ contractualTitle }) => {
+  const breakpointKey = useBreakpointKey();
+  const isLargeDevice = breakpointKey === 'lg' || breakpointKey === 'xl';
+  return (
+    <>
+      {isLargeDevice ? (
+        <JobTitleTooltip contractualTitle={contractualTitle} />
+      ) : (
+        <JobTitlePopover contractualTitle={contractualTitle} />
+      )
+      }
+    </>
+  )
+}
