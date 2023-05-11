@@ -35,7 +35,7 @@ export const StyledBlock = styled(Block)`
 
 export const StyledWrapper = styled(Block)`
   ${getMediaQueryFromTheme('lg')} {
-    padding-right: 240px;
+    padding-right: 270px;
   }
 `;
 
@@ -65,7 +65,7 @@ export const StyledIconD2 = styled(IconD2)`
   }
   ${getMediaQueryFromTheme('xl')} {
     top: -30px;
-    right: 160px;
+    right: 190px;
     width: 82.99px;
     height: 82.99px;
   }
@@ -98,7 +98,7 @@ export const StyledIconA4 = styled(IconA4)`
     height: 113.58px;
   }
   ${getMediaQueryFromTheme('xl')} {
-    right: 50px;
+    right: 80px;
     bottom: -20px;
     width: 125.1px;
     height: 125.1px;

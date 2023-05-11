@@ -12,7 +12,7 @@ exports[`FreeTrail should render freeTrail banner component 1`] = `
         class="css-1n1xv1r"
       >
         <div
-          class="css-l2bfkz"
+          class="css-1ru9wvo"
         >
           <h2
             class="css-1qkrt2l"
@@ -25,7 +25,7 @@ exports[`FreeTrail should render freeTrail banner component 1`] = `
             Brain train, read and comment free for one month
           </p>
           <a
-            class="css-qyddo6"
+            class="css-18px5lo"
             data-testid="buttonLink"
             href="https://www.newskit.co.uk/"
           >
@@ -37,7 +37,7 @@ exports[`FreeTrail should render freeTrail banner component 1`] = `
           </a>
         </div>
         <svg
-          class="css-qls3rk"
+          class="css-1d5fclk"
           fill="none"
           height="124"
           viewBox="0 0 121 124"
@@ -88,7 +88,7 @@ exports[`FreeTrail should render freeTrail banner component 1`] = `
           />
         </svg>
         <svg
-          class="css-1dcg03a"
+          class="css-1lwbs23"
           fill="none"
           height="197"
           viewBox="0 0 196 197"

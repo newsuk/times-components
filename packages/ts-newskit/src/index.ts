@@ -26,6 +26,12 @@ export { DateCard } from './components/puzzles/date-card';
 export { PuzzlesFlag } from './components/puzzles/flag';
 export { AccordionGroup } from './components/misc/accordion/accordion-group';
 export { BreakoutSection } from './components/puzzles/breakout-section';
+export { CardsContainer } from './components/puzzles/cards-container';
+export { FreeTrail } from './components/puzzles/free-trail';
+export { PersonalStats } from './components/puzzles/personal-stats';
+export { PuzzleCard } from './components/puzzles/puzzle-card';
+export { StoryCardListing } from './components/puzzles/story-card-listing';
+export { StoryCard } from './components/puzzles/storyCard';
 
 // SLICES
 export { ContentBucket1 } from './slices/content-bucket-1';

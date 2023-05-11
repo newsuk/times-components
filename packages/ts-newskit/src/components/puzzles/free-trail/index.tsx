@@ -56,7 +56,7 @@ export const FreeTrail: FC<FreeTrailProps> = ({
                 paddingBlock: 'space030',
                 paddingInline: 'space040',
                 marginBlockStart: 'space045',
-                width: {
+                minWidth: {
                   xs: '167px',
                   lg: '199px'
                 },
