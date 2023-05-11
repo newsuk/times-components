@@ -11,23 +11,23 @@ import { TimesWebLightTheme } from '../../../theme';
 # SliceHeader component
 The `SliceHeader` component is used to display the Header of slices.
 
-This takes in a series of props, as below, to display title and color.
+This takes in a series of props, as below, to display title and href.
 
 ## Props
 <Props of={SliceHeader} />
 
 ## Code Example
-`<SliceHeader title='Title' color='#008347' />`
+`<SliceHeader title='Title' href='https://www.thetimes.co.uk/'/>`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const HeaderStory = ({ title , color}) => (
+export const HeaderStory = ({ title , href}) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <SliceHeader {...{ title,color }} />
+    <SliceHeader {...{ title,href }} />
   </NewsKitProvider>
 );
 
-<Story name="SliceHeader" args={{ title: 'Rugby Union', color : '#008347' }}>
+<Story name="SliceHeader" args={{ title: 'Rugby Union', href : 'https://www.thetimes.co.uk/' }}>
   {HeaderStory.bind({})}
 </Story>

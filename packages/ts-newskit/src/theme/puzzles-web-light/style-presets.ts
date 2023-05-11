@@ -104,3 +104,15 @@ stylePresets.accordionPanelPrimary = {
     borderColor: '{{colors.neutral050}}'
   }
 };
+
+stylePresets.freeTrailShadowBtn = {
+  base: {
+    borderStyle: 'solid',
+    borderColor: '{{colors.interface060}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
+    borderWidth: '{{borders.borderWidth030}}',
+    boxShadow: '{{shadows.shadow020}}',
+    backgroundColor: '{{colors.interface010}}',
+    color: '{{colors.inkContrast}}'
+  }
+};

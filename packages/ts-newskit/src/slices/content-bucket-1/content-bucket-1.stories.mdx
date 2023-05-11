@@ -3,7 +3,7 @@ import { NewsKitProvider } from 'newskit';
 import { ContentBucket1 } from "./";
 import { TimesWebLightTheme } from '../../theme/times-web-light/index';
 
-import { section, leadStory, articles, journalists } from '../fixtures/data.json';
+import { section, leadStory, articles, comments } from '../fixtures/data.json';
 
 <Meta
   title="Newskit Slices/Content Bucket 1"
@@ -11,8 +11,8 @@ import { section, leadStory, articles, journalists } from '../fixtures/data.json
 />
 
 # ContentBucket1 component
-The `ContentBucket1` component is used to display the main story, supplementary articles and journalist quotes.
-It is comprised of the `LeadStory`, `SliceHeader`, `ArticleListItem`, and `JournalistQuote` slice components.
+The `ContentBucket1` component is used to display the main story, supplementary articles and comment quotes.
+It is comprised of the `LeadStory`, `SliceHeader`, `ArticleListItem`, and `CommentCard` slice components.
 
 This takes in a series of props, as below, to display the part of the slices.
 
@@ -20,14 +20,14 @@ This takes in a series of props, as below, to display the part of the slices.
 <Props of={ContentBucket1} />
 
 ## Code Example
-`<ContentBucket1 {...{ section, leadStory, journalists, articles }} />`
+`<ContentBucket1 {...{ section, leadStory, comments, articles }} />`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const ContentBucket1Story = ({ section, leadStory, journalists, articles }) => (
+export const ContentBucket1Story = ({ section, leadStory, comments, articles }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <ContentBucket1 {...{ section, leadStory, journalists, articles }} />
+    <ContentBucket1 {...{ section, leadStory, comments, articles }} />
   </NewsKitProvider>
 );
 
@@ -35,7 +35,7 @@ export const ContentBucket1Story = ({ section, leadStory, journalists, articles 
   section,
   leadStory,
   articles,
-  journalists
+  comments
 }}>
   {ContentBucket1Story.bind({})}
 </Story>

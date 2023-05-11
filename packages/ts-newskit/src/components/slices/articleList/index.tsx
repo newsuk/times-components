@@ -12,7 +12,7 @@ import { CardHeadlineLink, ContainerInline } from '../shared-styles';
 type ImageProps = {
   src: string;
   alt?: string;
-  caption?: string;
+  credit?: string;
 };
 
 export interface ArticleListItemProps {
@@ -49,7 +49,10 @@ export const ArticleListItem = ({
     <Card>
       {hasTopBorder && (
         <Divider
-          overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
+          overrides={{
+            marginBlockStart: 'space040',
+            stylePreset: 'dashedDivider'
+          }}
         />
       )}
 
@@ -61,14 +64,14 @@ export const ArticleListItem = ({
         }}
       >
         {image &&
-          image.caption &&
+          image.credit &&
           !hideImage && (
             <TextBlock
               paddingBlockStart="space020"
               stylePreset="inkSubtle"
               typographyPreset="utilityMeta010"
             >
-              {image.caption}
+              {image.credit}
             </TextBlock>
           )}
 

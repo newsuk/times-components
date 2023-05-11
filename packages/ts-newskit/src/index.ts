@@ -1,4 +1,6 @@
 export { TCThemeProvider } from './utils/TCThemeProvider';
+
+// NAVIGATION
 export { Breadcrumb } from './components/navigation/breadcrumb';
 export { GlobalNav } from './components/navigation/global-nav';
 export { TopNav } from './components/navigation/global-nav/topnav/topnav';
@@ -17,8 +19,14 @@ export {
 export { GlobalNavWithCustomDrawer } from './components/navigation/global-nav';
 export { SecondaryNavigation } from './components/navigation/secondary-menu';
 export { TSNewskitDrawer } from './components/navigation/global-nav';
+
+// PUZZLES
 export { Archive } from './components/puzzles/archive';
 export { DateCard } from './components/puzzles/date-card';
 export { PuzzlesFlag } from './components/puzzles/flag';
 export { AccordionGroup } from './components/misc/accordion/accordion-group';
 export { BreakoutSection } from './components/puzzles/breakout-section';
+
+// SLICES
+export { ContentBucket1 } from './slices/content-bucket-1';
+export { ContentBucket2 } from './slices/content-bucket-2';

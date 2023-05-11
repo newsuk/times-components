@@ -67,12 +67,13 @@ exports[`Icons Component: NewsKitChevronRightIcon NewsKitChevronRightIcon render
 <DocumentFragment>
   <svg
     class="css-ny3roy"
-    fill="none"
+    fill="currentcolor"
     viewBox="0 0 32 32"
     xmlns="http://www.w3.org/2000/svg"
   >
     <rect
-      fill="#F4F4F4"
+      class="css-ny3roy"
+      fill="currentcolor"
       height="32"
       rx="16"
       width="32"

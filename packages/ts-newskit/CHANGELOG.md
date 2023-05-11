@@ -3,6 +3,61 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.40.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.39.0...@times-components/ts-newskit@1.40.0) (2023-05-11)
+
+
+### Features
+
+* **TMRX-1257:** update refactor lead story component ([#3356](https://github.com/newsuk/times-components/issues/3356)) ([c000bb7](https://github.com/newsuk/times-components/commit/c000bb7e06e51f4b2f9a333b7f8d7eaadb145a7f))
+
+
+
+
+
+# [1.39.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.38.0...@times-components/ts-newskit@1.39.0) (2023-05-11)
+
+
+### Features
+
+* **TMST-660:** Free Trail banner component ([#3351](https://github.com/newsuk/times-components/issues/3351)) ([f0c14f9](https://github.com/newsuk/times-components/commit/f0c14f9dbceac66d50fe19cd9be214f4211913d8))
+
+
+
+
+
+# [1.38.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.37.0...@times-components/ts-newskit@1.38.0) (2023-05-10)
+
+
+### Features
+
+* **TMRX-1258:** update comment card ([#3355](https://github.com/newsuk/times-components/issues/3355)) ([a0817d4](https://github.com/newsuk/times-components/commit/a0817d47b9897c35d9a03d88452eb81af3af7380))
+
+
+
+
+
+# [1.37.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.36.0...@times-components/ts-newskit@1.37.0) (2023-05-10)
+
+
+### Features
+
+* **TMRX-1240:** update content bucket 2 ([#3353](https://github.com/newsuk/times-components/issues/3353)) ([99d6b8f](https://github.com/newsuk/times-components/commit/99d6b8fc3dddb8b527f32e9e34a9e90b94bcbb89))
+
+
+
+
+
+# [1.36.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.35.0...@times-components/ts-newskit@1.36.0) (2023-05-10)
+
+
+### Features
+
+* **TMRX-1260:** update refactor title bar component ([#3352](https://github.com/newsuk/times-components/issues/3352)) ([72ae24b](https://github.com/newsuk/times-components/commit/72ae24bb1142339f4e55892477edd96fae89a86c))
+
+
+
+
+
 # [1.35.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.34.1...@times-components/ts-newskit@1.35.0) (2023-05-09)
 
 

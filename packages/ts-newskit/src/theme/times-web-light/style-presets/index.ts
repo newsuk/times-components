@@ -1,6 +1,5 @@
 import { breadcrumbStylePresets } from './breadcrumb';
 import { colorStylePresets } from './color';
-import { leadStoryStylePresets } from './lead-story';
 import { mastheadStylePresets } from './masthead';
 import { menuStylePresets } from './menu';
 import { navStylePresets } from './navigation';
@@ -10,6 +9,7 @@ import { sliceStylePresets } from './slices';
 import { textStylePresets } from './text';
 import { feedbackStylePresets } from './feedback';
 import { buttonStylePresets } from './buttons';
+import { sliceHeaderStylePresets } from './slice-header';
 
 export const stylePresets = {
   ...breadcrumbStylePresets,
@@ -21,7 +21,7 @@ export const stylePresets = {
   ...menuStylePresets,
   ...navStylePresets,
   ...secondaryNavigationStylePresets,
-  ...leadStoryStylePresets,
   ...sliceStylePresets,
-  ...feedbackStylePresets
+  ...feedbackStylePresets,
+  ...sliceHeaderStylePresets
 };

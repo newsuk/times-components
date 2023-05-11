@@ -1,0 +1,45 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { CommentCard } from "./index";
+import { NewsKitProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../../theme';
+
+<Meta
+  title="Newskit Components/Slices/CommentCard"
+  component={CommentCard}
+/>
+
+# CommentCard component
+The `CommentCard` component is used to display a content from the journalist/author.
+
+This takes in a series of props, as below, to display journalists details, the content, and the section heading and colour.
+
+## Props
+<Props of={CommentCard} />
+
+## Code Example
+```
+<CommentCard
+  image='https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
+  heading='Deborah Haynes'
+  content='Now is Willis’s chance to show he’s got more to offer than Curry'
+  href="/"
+/>
+```
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const CommentCardStory = ({ image, heading, content, href }) => (
+  <NewsKitProvider theme={TimesWebLightTheme}>
+    <CommentCard {...{ image, heading, content, href }} />
+  </NewsKitProvider>
+);
+
+<Story name="CommentCard" args={{
+  image: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
+  content: 'Now is Willis’s chance to show he’s got more to offer than Curry',
+  heading: 'Deborah Haynes',
+  href: '/',
+}}>
+  {CommentCardStory.bind({})}
+</Story>
