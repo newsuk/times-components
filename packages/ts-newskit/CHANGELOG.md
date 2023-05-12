@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.42.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.41.0...@times-components/ts-newskit@1.42.0) (2023-05-12)
+
+
+### Features
+
+* **TMRX-1259:** content bucket 1 refactor ([#3360](https://github.com/newsuk/times-components/issues/3360)) ([0d6fd9e](https://github.com/newsuk/times-components/commit/0d6fd9ec1056355e652a72c1fae9e1800ade2629))
+
+
+
+
+
 # [1.41.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.40.0...@times-components/ts-newskit@1.41.0) (2023-05-11)
 
 
