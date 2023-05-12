@@ -51,7 +51,8 @@ const ArticleSkeleton = ({
   isPreview,
   swgProductId,
   getFallbackThumbnailUrl169,
-  zephrDivs
+  zephrDivs,
+  showAudioPlayer
 }) => {
   const {
     commentsEnabled,
@@ -179,7 +180,7 @@ const ArticleSkeleton = ({
                   }
                 />
               )}
-              <HeaderContainer>
+              <HeaderContainer showAudioPlayer={showAudioPlayer}>
                 {!!zephrDivs && (
                   <StaticContent
                     html={

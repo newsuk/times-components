@@ -294,6 +294,7 @@ exports[`full article with style 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  z-index: 0;
 }
 
 .c3 > .c15 {

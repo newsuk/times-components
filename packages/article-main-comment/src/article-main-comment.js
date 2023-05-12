@@ -14,7 +14,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article } = this.props;
+    const { article, showAudioPlayer } = this.props;
     const {
       bylines,
       expirableFlags,
@@ -49,6 +49,7 @@ class ArticlePage extends Component {
         publishedTime={publishedTime}
         standfirst={standfirst}
         updatedTime={updatedTime}
+        showAudioPlayer={showAudioPlayer}
       />
     );
   }
@@ -65,6 +66,7 @@ class ArticlePage extends Component {
       commentingConfig,
       paidContentClassName,
       isPreview,
+      showAudioPlayer,
       swgProductId,
       zephrDivs
     } = this.props;
@@ -86,6 +88,7 @@ class ArticlePage extends Component {
         isPreview={isPreview}
         swgProductId={swgProductId}
         zephrDivs={zephrDivs}
+        showAudioPlayer={showAudioPlayer}
       />
     );
   }

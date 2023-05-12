@@ -11,7 +11,8 @@ const articleSkeletonPropTypes = {
     account: PropTypes.string.isRequired
   }).isRequired,
   swgProductId: PropTypes.string,
-  zephrDivs: PropTypes.bool
+  zephrDivs: PropTypes.bool,
+  showAudioPlayer: PropTypes.bool
 };
 
 const articleSkeletonDefaultProps = {

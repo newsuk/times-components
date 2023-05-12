@@ -15,6 +15,7 @@ const articleHeaderPropTypes = {
   longRead: PropTypes.bool,
   publicationName: PropTypes.string.isRequired,
   publishedTime: PropTypes.string.isRequired,
+  showAudioPlayer: PropTypes.bool,
   standfirst: PropTypes.string,
   updatedTime: PropTypes.string
 };

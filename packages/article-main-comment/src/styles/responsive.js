@@ -42,6 +42,7 @@ export const FlagsContainer = styled(TcView)`
 
 export const HeaderContainer = styled(TcView)`
   order: 2;
+  z-index: 1;
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
