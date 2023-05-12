@@ -134,7 +134,8 @@ export const LeadStory = ({
             size="small"
             overrides={{
               ...stylePresets,
-              stylePreset: 'flagMinimalPrimary'
+              stylePreset: 'inkSubtle',
+              typographyPreset: 'utilityLabel010'
             }}
           >
             {readingTime}

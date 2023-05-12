@@ -94,7 +94,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <div
-          class="css-144htjt"
+          class="css-lplqfv"
           data-testid="flag"
         >
           <span
