@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.74.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.73.0...@times-components/article-main-standard@3.74.0) (2023-05-12)
+
+
+### Features
+
+* **TMRX-766:** Audio Player on Articles ([#3354](https://github.com/newsuk/times-components/issues/3354)) ([3024743](https://github.com/newsuk/times-components/commit/3024743cecaf6f49fe916bb20d18e3c0600c6b06))
+
+
+
+
+
 # [3.73.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.72.5...@times-components/article-main-standard@3.73.0) (2023-05-12)
 
 
