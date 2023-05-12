@@ -42,7 +42,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-11l110t"
       >
         <div
-          class="css-1j46hv8"
+          class="css-zn36sl"
           data-testid="tag"
         >
           <span
@@ -53,7 +53,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         </div>
       </div>
       <a
-        class="css-1t08m60"
+        class="css-qyhh3j"
         href="https://www.thetimes.co.uk"
       >
         <span
@@ -75,8 +75,9 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-11l110t"
       >
         <div
-          class="css-1j46hv8"
+          class="css-zn36sl"
           data-testid="tag"
+          tabindex="0"
         >
           <span
             class="css-1qlv5b"
@@ -94,7 +95,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <div
-          class="css-lplqfv"
+          class="css-107ty6x"
           data-testid="flag"
         >
           <span

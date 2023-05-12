@@ -46,7 +46,8 @@ export const ArticleListItem = ({
     image && {
       media: {
         src: image.src,
-        alt: image.alt || title
+        alt: image.alt || title,
+        loadingAspectRatio: "3:2"
       }
     };
 
@@ -93,7 +94,7 @@ export const ArticleListItem = ({
           role="link"
           overrides={{
             typographyPreset: 'editorialHeadline020',
-            paddingBlockStart: 'space040'
+            marginBlockStart: 'space040'
           }}
         >
           {title}
@@ -105,6 +106,7 @@ export const ArticleListItem = ({
               typographyPreset="articleListArticleType"
               as="span"
               marginBlockStart="space030"
+              tabIndex={0}
             >
               {articleType}
             </TextBlock>
@@ -124,6 +126,7 @@ export const ArticleListItem = ({
               stylePreset="articleListTimeToRead"
               as="span"
               marginBlockStart="space030"
+              tabIndex={0}
             >
               {timeToRead}
             </TextBlock>

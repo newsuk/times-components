@@ -7,8 +7,7 @@ import {
   CardLink,
   CardMedia,
   getSpacingCssFromTheme,
-  getMediaQueryFromTheme,
-  IconButton
+  getMediaQueryFromTheme
 } from 'newskit';
 
 export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
@@ -34,13 +33,6 @@ export const ColouredText = styled(TextBlock)<{ $color?: string }>`
 export const ContainerInline = styled(Block)`
   display: inline-block;
   ${getSizingCssFromTheme('height', 'sizing020')};
-`;
-
-export const TransparentButton = styled(IconButton)`
-  &,
-  &:hover:not(:disabled) {
-    background-color: transparent;
-  }
 `;
 
 const setImageMargin = (space: string) => ({ marginInline: `-${space}` });

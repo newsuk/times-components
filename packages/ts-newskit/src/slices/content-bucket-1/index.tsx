@@ -48,7 +48,7 @@ export const ContentBucket1 = ({
         <SliceHeader {...section} />
       </Cell>
       <LeadStoryCell xs={12} lg={9} xl={8}>
-        <Block marginInlineEnd={{ xs: 'space000', lg: 'space040' }}>
+        <Block marginInlineEnd={{ xs: 'space000', lg: 'space020' }}>
           <Visible lg xl>
             <LeadStoryDivider
               overrides={{ stylePreset: 'lightDivider' }}
@@ -57,7 +57,7 @@ export const ContentBucket1 = ({
           </Visible>
           <LeadStory {...leadStory} />
         </Block>
-        <Block marginInlineEnd={{ xs: 'space000', lg: 'space040' }}>
+        <Block marginInlineEnd={{ xs: 'space000', lg: 'space020' }}>
           <Hidden md>
             <CommentStack comments={comments} />
           </Hidden>
@@ -72,7 +72,7 @@ export const ContentBucket1 = ({
             }}
           />
         </Hidden>
-        <Scroll overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}>
+        <Scroll overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }} tabIndex={undefined}>
           <GridLayout
             columns={{
               xs: '170px 1px 170px 1px 170px 1px 170px',

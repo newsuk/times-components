@@ -44,7 +44,7 @@ export const LeadStory = ({
   const stylePresets = {
     typographyPreset: 'utilityButton010',
     stylePreset: 'inkBrand010',
-    paddingBlockStart: 'space050',
+    marginBlockStart: 'space050',
     paddingInline: 'space000',
     paddingBlock: 'space000',
     iconSize: 'iconSize010',
@@ -126,6 +126,7 @@ export const LeadStory = ({
               ...stylePresets
             }}
             $color={color}
+            tabIndex={0}
           >
             {articleType}
           </ColouredText>
