@@ -66,6 +66,7 @@ class ArticlePage extends Component {
       commentingConfig,
       paidContentClassName,
       isPreview,
+      showAudioPlayer,
       swgProductId,
       zephrDivs
     } = this.props;
@@ -87,6 +88,7 @@ class ArticlePage extends Component {
         isPreview={isPreview}
         swgProductId={swgProductId}
         zephrDivs={zephrDivs}
+        showAudioPlayer={showAudioPlayer}
       />
     );
   }
