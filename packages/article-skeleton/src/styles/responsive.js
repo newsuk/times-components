@@ -35,7 +35,7 @@ export const MainContainer = styled.main`
 
 export const HeaderContainer = styled(TcView)`
   display: flex;
-  z-index: ${({ showAudioPlayer }) =>  showAudioPlayer ? 1 : 0};
+  z-index: ${({ showAudioPlayer }) => (showAudioPlayer ? 1 : 0)};
 
   /* stylelint-disable */
   > ${ArticleKeylineItem} {
