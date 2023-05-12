@@ -3,7 +3,7 @@
 exports[`StickyPlayerMob renders renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="css-13byt3y"
+    class="css-og8l64"
   >
     <section
       aria-label="Audio Player"
@@ -53,7 +53,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="css-1m31ofc"
+        class="css-46qicc"
       >
         <div
           class="css-gsu0bj"

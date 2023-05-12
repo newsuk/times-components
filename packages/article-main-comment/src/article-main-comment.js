@@ -14,7 +14,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article } = this.props;
+    const { article, showAudioPlayer } = this.props;
     const {
       bylines,
       expirableFlags,
@@ -49,7 +49,7 @@ class ArticlePage extends Component {
         publishedTime={publishedTime}
         standfirst={standfirst}
         updatedTime={updatedTime}
-        showAudioPlayer={this.props.showAudioPlayer}
+        showAudioPlayer={showAudioPlayer}
       />
     );
   }

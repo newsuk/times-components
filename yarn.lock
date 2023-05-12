@@ -5494,19 +5494,6 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
-"@times-components/ts-newskit@1.40.0":
-  version "1.40.0"
-  resolved "https://registry.yarnpkg.com/@times-components/ts-newskit/-/ts-newskit-1.40.0.tgz#48ac664df3e2de683bceaa3832ad0f804b7fe3d2"
-  integrity sha512-PhX2+cxJBybfnT9kFhTDVYHKKcdu9kUdpCNxjzzJRSpV5xz2Jf0unhwZC6hWurULPD3fWf7xlVb4Z1nCKsoaMg==
-  dependencies:
-    "@emotion-icons/material" "3.14.0"
-    "@emotion/react" "11.10.0"
-    "@emotion/styled" "11.10.0"
-    "@newskit-themes/the-times" "0.1.1"
-    newskit "7.2.0"
-    react "16.9.0"
-    xss "^1.0.10"
-
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
