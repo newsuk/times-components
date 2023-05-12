@@ -1,13 +1,18 @@
 import React from 'react';
 import {
   Divider,
-  CardMedia,
   CardContent,
   Block,
   TextBlock,
-  Card
+  CardComposable,
+  CardMedia,
+  GridLayoutItem
 } from 'newskit';
-import { CardHeadlineLink, ContainerInline } from '../shared-styles';
+import {
+  CardHeadlineLink,
+  ContainerInline,
+  FullWidthCardMediaMob
+} from '../shared-styles';
 
 type ImageProps = {
   src: string;
@@ -45,24 +50,32 @@ export const ArticleListItem = ({
       }
     };
 
+  const CardMediaComponent = isLeadImage ? FullWidthCardMediaMob : CardMedia;
+
   return (
-    <Card>
+    <CardComposable
+      alignContent="start"
+      areas={`
+      border
+      media
+      content
+    `}
+    >
       {hasTopBorder && (
-        <Divider
-          overrides={{
-            marginBlockStart: 'space040',
-            stylePreset: 'dashedDivider'
-          }}
-        />
+        <GridLayoutItem area="border">
+          <Divider
+            overrides={{
+              marginBlockStart: 'space040',
+              marginBlockEnd: hideImage ? 'space000' : 'space040',
+              stylePreset: 'dashedDivider'
+            }}
+          />
+        </GridLayoutItem>
       )}
 
-      {image && !hideImage && <CardMedia {...cardImage} />}
+      {image && !hideImage && <CardMediaComponent {...cardImage} />}
 
-      <CardContent
-        overrides={{
-          marginInline: isLeadImage ? 'space045' : 'space000'
-        }}
-      >
+      <CardContent>
         {image &&
           image.credit &&
           !hideImage && (
@@ -117,6 +130,6 @@ export const ArticleListItem = ({
           </Block>
         )}
       </CardContent>
-    </Card>
+    </CardComposable>
   );
 };

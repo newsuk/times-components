@@ -62,41 +62,25 @@ describe('Content Bucket 2 Articles list below `md` breakpoint', () => {
   });
 
   test('articleBorder', () => {
-    const articleItem1 = screen
-      .getByText(data.articles[0].title)
-      .closest('div');
-    const articleItem3 = screen
-      .getByText(data.articles[2].title)
-      .closest('div');
+    const articleContainer = screen.getByTestId('article-container');
 
-    expect(articleItem1!.previousSibling).not.toHaveAttribute(
-      'data-testid',
-      'divider'
-    );
-    expect(articleItem3!.previousSibling).toHaveAttribute(
-      'data-testid',
-      'divider'
-    );
-    expect(articleItem3!.previousSibling).toHaveStyle({
-      borderColor: '#01000d',
-      borderStyle: 'dashed'
-    });
+    const articleItem1 = articleContainer.firstElementChild;
+    const articleItem4 = articleContainer.lastElementChild;
+
+    expect(articleItem1!.getElementsByTagName('hr').length).toBe(0);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
   });
 
   test('article images', () => {
-    const articleItem1 = screen
-      .getByText(data.articles[0].title)
-      .closest('div');
-    const articleItem3 = screen
-      .getByText(data.articles[2].title)
-      .closest('div');
+    const articleContainer = screen.getByTestId('article-container');
 
-    expect(
-      articleItem1!.previousElementSibling!.getElementsByTagName('img').length
-    ).toBe(1);
-    expect(articleItem3!.previousElementSibling).toHaveAttribute(
-      'data-testid',
-      'divider'
-    );
+    const articleItem1 = articleContainer.firstElementChild;
+    const articleItem4 = articleContainer.lastElementChild;
+
+    expect(articleItem1!.getElementsByTagName('img').length).toBe(1);
+
+    expect(articleItem4!.getElementsByTagName('img').length).toBe(0);
+
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
   });
 });

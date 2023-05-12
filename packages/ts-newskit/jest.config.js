@@ -27,6 +27,7 @@ const buildConfig = dir => {
         tsConfig: './tsconfig.jest.json'
       }
     },
+    clearMocks: true,
     collectCoverage: true,
     coverageReporters: ['json', 'html', 'lcov', 'text'],
     coverageDirectory: path.join(dir, 'coverage'),

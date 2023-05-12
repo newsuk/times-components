@@ -35,7 +35,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <a
-              class="css-cbmwfk"
+              class="css-12mlald"
               data-testid="buttonLink"
               href="https://www.thetimes.co.uk/"
               role="link"
@@ -68,7 +68,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
         class="css-1c2qrr1"
       >
         <div
-          class="css-13byt3y"
+          class="css-sqw2mm"
         >
           <div
             class="css-15edd2j"
@@ -86,7 +86,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-13byt3y"
             >
               <div
-                class="css-1kwj960"
+                class="css-uxw9nr"
               >
                 <picture
                   class="css-zp0elg"
@@ -305,232 +305,204 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             tabindex="0"
           >
             <div
-              class="css-5e9od2"
+              class="css-u3rc4r"
               data-testid="article-container"
+              style="position: relative;"
             >
               <div
-                class="css-139nwb1"
+                class="css-gsfmea"
               >
                 <div
-                  class="css-1shocxe"
+                  class="css-1kwj960"
                 >
-                  <div
-                    class="css-o476j2"
+                  <picture
+                    class="css-1udor4k"
                   >
                     <div
-                      class="css-qw1yda"
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="This is ALT Text"
+                      class="css-1qgqq71"
+                      src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-diffbd"
+                >
+                  <p
+                    class="css-1fo91if"
+                  >
+                    Credit
+                  </p>
+                  <a
+                    class="css-1ajoxx4"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
                     >
-                      <picture
-                        class="css-1udor4k"
+                      <span
+                        class="css-k2d5qk"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
-                        <img
-                          alt="This is ALT Text"
-                          class="css-1qgqq71"
-                          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                        />
-                      </picture>
-                    </div>
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="css-gsfmea"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-1udor4k"
+                  >
                     <div
-                      class="css-nv8tgr"
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="This is ALT Text"
+                      class="css-1qgqq71"
+                      src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-diffbd"
+                >
+                  <p
+                    class="css-1fo91if"
+                  >
+                    Credit
+                  </p>
+                  <a
+                    class="css-1ajoxx4"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
                     >
-                      <p
-                        class="css-1fo91if"
+                      <span
+                        class="css-k2d5qk"
                       >
-                        Credit
-                      </p>
-                      <a
-                        class="css-1ajoxx4"
-                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                        role="link"
+                        ‘American owners pose threat to English pyramid’
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="css-gsfmea"
+              >
+                <div
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-xvacx"
+                    data-testid="divider"
+                  />
+                </div>
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-1udor4k"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="This is ALT Text"
+                      class="css-1qgqq71"
+                      src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-diffbd"
+                >
+                  <a
+                    class="css-1ajoxx4"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-k2d5qk"
                       >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-k2d5qk"
-                          >
-                            European cup winner Mihajlovic dies aged 53 after battle with leukaemia
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
+                        £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="css-gsfmea"
+              >
+                <div
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-xvacx"
+                    data-testid="divider"
+                  />
+                </div>
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-1udor4k"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="This is ALT Text"
+                      class="css-1qgqq71"
+                      src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-diffbd"
+                >
+                  <p
+                    class="css-1fo91if"
+                  >
+                    Credit
+                  </p>
+                  <a
+                    class="css-1ajoxx4"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-k2d5qk"
+                      >
+                        Blow for rebel clubs as court says Uefa can block Super League
+                      </span>
+                    </span>
+                  </a>
                 </div>
               </div>
               <hr
                 aria-hidden="true"
-                class="css-13rcg9f"
+                class="css-po9buu"
                 data-testid="divider"
               />
-              <div
-                class="css-139nwb1"
-              >
-                <div
-                  class="css-1shocxe"
-                >
-                  <div
-                    class="css-o476j2"
-                  >
-                    <div
-                      class="css-qw1yda"
-                    >
-                      <picture
-                        class="css-1udor4k"
-                      >
-                        <div
-                          class="css-5pczz7"
-                        />
-                        <img
-                          alt="This is ALT Text"
-                          class="css-1qgqq71"
-                          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                        />
-                      </picture>
-                    </div>
-                    <div
-                      class="css-nv8tgr"
-                    >
-                      <p
-                        class="css-1fo91if"
-                      >
-                        Credit
-                      </p>
-                      <a
-                        class="css-1ajoxx4"
-                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                        role="link"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-k2d5qk"
-                          >
-                            ‘American owners pose threat to English pyramid’
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="css-139nwb1"
-              >
-                <div
-                  class="css-1shocxe"
-                >
-                  <div
-                    class="css-o476j2"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-1f0staz"
-                      data-testid="divider"
-                    />
-                    <div
-                      class="css-qw1yda"
-                    >
-                      <picture
-                        class="css-1udor4k"
-                      >
-                        <div
-                          class="css-5pczz7"
-                        />
-                        <img
-                          alt="This is ALT Text"
-                          class="css-1qgqq71"
-                          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                        />
-                      </picture>
-                    </div>
-                    <div
-                      class="css-nv8tgr"
-                    >
-                      <a
-                        class="css-1ajoxx4"
-                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                        role="link"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-k2d5qk"
-                          >
-                            £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr
-                aria-hidden="true"
-                class="css-13rcg9f"
-                data-testid="divider"
-              />
-              <div
-                class="css-139nwb1"
-              >
-                <div
-                  class="css-1shocxe"
-                >
-                  <div
-                    class="css-o476j2"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-1f0staz"
-                      data-testid="divider"
-                    />
-                    <div
-                      class="css-qw1yda"
-                    >
-                      <picture
-                        class="css-1udor4k"
-                      >
-                        <div
-                          class="css-5pczz7"
-                        />
-                        <img
-                          alt="This is ALT Text"
-                          class="css-1qgqq71"
-                          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                        />
-                      </picture>
-                    </div>
-                    <div
-                      class="css-nv8tgr"
-                    >
-                      <p
-                        class="css-1fo91if"
-                      >
-                        Credit
-                      </p>
-                      <a
-                        class="css-1ajoxx4"
-                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                        role="link"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-k2d5qk"
-                          >
-                            Blow for rebel clubs as court says Uefa can block Super League
-                          </span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
