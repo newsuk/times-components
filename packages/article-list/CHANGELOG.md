@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.17.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.16.9...@times-components/article-list@9.17.0) (2023-05-12)
+
+
+### Features
+
+* **TMRX-1181:** added lazy loading to tc_images ([#3358](https://github.com/newsuk/times-components/issues/3358)) ([80efb79](https://github.com/newsuk/times-components/commit/80efb79b64494a5c436c34db46f4266c704e99e8))
+
+
+
+
+
 ## [9.16.9](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.16.8...@times-components/article-list@9.16.9) (2023-04-24)
 
 **Note:** Version bump only for package @times-components/article-list
