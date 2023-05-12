@@ -69,6 +69,7 @@ exports[`1. a full article 1`] = `
   <main>
     <img
       alt="author-image"
+      loading="lazy"
       src={null}
     />
     <svg
@@ -205,6 +206,7 @@ exports[`1. a full article 1`] = `
     <article>
       <img
         alt="An image caption"
+        loading="lazy"
         src="https://image.io?resize=400&quality=3"
       />
       <svg
