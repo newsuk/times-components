@@ -47,7 +47,7 @@ export const ArticleListItem = ({
       media: {
         src: image.src,
         alt: image.alt || title,
-        loadingAspectRatio: "3:2"
+        loadingAspectRatio: '3:2'
       }
     };
 

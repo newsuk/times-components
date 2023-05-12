@@ -72,7 +72,10 @@ export const ContentBucket1 = ({
             }}
           />
         </Hidden>
-        <Scroll overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }} tabIndex={undefined}>
+        <Scroll
+          overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
+          tabIndex={undefined}
+        >
           <GridLayout
             columns={{
               xs: '170px 1px 170px 1px 170px 1px 170px',
