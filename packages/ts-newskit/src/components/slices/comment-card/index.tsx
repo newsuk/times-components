@@ -33,7 +33,7 @@ export const CommentCard = ({
           overrides: { stylePreset: 'imageCircle' }
         }}
       />
-      <CardContent rowGap="space020" alignContent="start">
+      <CardContent rowGap="space040" alignContent="start">
         <CardHeadlineLink
           href={href}
           $color="inkBrand010"
