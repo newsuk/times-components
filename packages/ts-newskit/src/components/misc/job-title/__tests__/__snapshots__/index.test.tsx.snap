@@ -26,12 +26,12 @@ exports[`JobTitle - Larger Devices renders the Job title Tooltip on larger devic
       >
         <path
           d="M7.333 4.667h1.334V6H7.334V4.667ZM7.333 7.333h1.334v4H7.334v-4Z"
-          fill="#0A0A0A"
+          fill="currentcolor"
         />
         <path
           clip-rule="evenodd"
           d="M1.333 8A6.67 6.67 0 0 1 8 1.333 6.67 6.67 0 0 1 14.667 8 6.67 6.67 0 0 1 8 14.667 6.67 6.67 0 0 1 1.333 8Zm1.334 0A5.34 5.34 0 0 0 8 13.333 5.34 5.34 0 0 0 13.334 8 5.34 5.34 0 0 0 8 2.667 5.34 5.34 0 0 0 2.667 8Z"
-          fill="#0A0A0A"
+          fill="currentcolor"
           fill-rule="evenodd"
         />
       </mask>
@@ -40,7 +40,7 @@ exports[`JobTitle - Larger Devices renders the Job title Tooltip on larger devic
       >
         <path
           d="M0 0h16v16H0z"
-          fill="#696969"
+          fill="currentcolor"
         />
       </g>
     </svg>
@@ -75,12 +75,12 @@ exports[`JobTitle - Smaller Devices renders the Job title Popover 1`] = `
       >
         <path
           d="M7.333 4.667h1.334V6H7.334V4.667ZM7.333 7.333h1.334v4H7.334v-4Z"
-          fill="#0A0A0A"
+          fill="currentcolor"
         />
         <path
           clip-rule="evenodd"
           d="M1.333 8A6.67 6.67 0 0 1 8 1.333 6.67 6.67 0 0 1 14.667 8 6.67 6.67 0 0 1 8 14.667 6.67 6.67 0 0 1 1.333 8Zm1.334 0A5.34 5.34 0 0 0 8 13.333 5.34 5.34 0 0 0 13.334 8 5.34 5.34 0 0 0 8 2.667 5.34 5.34 0 0 0 2.667 8Z"
-          fill="#0A0A0A"
+          fill="currentcolor"
           fill-rule="evenodd"
         />
       </mask>
@@ -89,7 +89,7 @@ exports[`JobTitle - Smaller Devices renders the Job title Popover 1`] = `
       >
         <path
           d="M0 0h16v16H0z"
-          fill="#696969"
+          fill="currentcolor"
         />
       </g>
     </svg>
@@ -125,12 +125,12 @@ exports[`JobTitlePopover Renders the Popover when clicked 1`] = `
       >
         <path
           d="M7.333 4.667h1.334V6H7.334V4.667ZM7.333 7.333h1.334v4H7.334v-4Z"
-          fill="#0A0A0A"
+          fill="currentcolor"
         />
         <path
           clip-rule="evenodd"
           d="M1.333 8A6.67 6.67 0 0 1 8 1.333 6.67 6.67 0 0 1 14.667 8 6.67 6.67 0 0 1 8 14.667 6.67 6.67 0 0 1 1.333 8Zm1.334 0A5.34 5.34 0 0 0 8 13.333 5.34 5.34 0 0 0 13.334 8 5.34 5.34 0 0 0 8 2.667 5.34 5.34 0 0 0 2.667 8Z"
-          fill="#0A0A0A"
+          fill="currentcolor"
           fill-rule="evenodd"
         />
       </mask>
@@ -139,7 +139,7 @@ exports[`JobTitlePopover Renders the Popover when clicked 1`] = `
       >
         <path
           d="M0 0h16v16H0z"
-          fill="#696969"
+          fill="currentcolor"
         />
       </g>
     </svg>
@@ -232,12 +232,12 @@ exports[`JobTitleTooltip Renders the tooltip when clicked 1`] = `
       >
         <path
           d="M7.333 4.667h1.334V6H7.334V4.667ZM7.333 7.333h1.334v4H7.334v-4Z"
-          fill="#0A0A0A"
+          fill="currentcolor"
         />
         <path
           clip-rule="evenodd"
           d="M1.333 8A6.67 6.67 0 0 1 8 1.333 6.67 6.67 0 0 1 14.667 8 6.67 6.67 0 0 1 8 14.667 6.67 6.67 0 0 1 1.333 8Zm1.334 0A5.34 5.34 0 0 0 8 13.333 5.34 5.34 0 0 0 13.334 8 5.34 5.34 0 0 0 8 2.667 5.34 5.34 0 0 0 2.667 8Z"
-          fill="#0A0A0A"
+          fill="currentcolor"
           fill-rule="evenodd"
         />
       </mask>
@@ -246,7 +246,7 @@ exports[`JobTitleTooltip Renders the tooltip when clicked 1`] = `
       >
         <path
           d="M0 0h16v16H0z"
-          fill="#696969"
+          fill="currentcolor"
         />
       </g>
     </svg>
