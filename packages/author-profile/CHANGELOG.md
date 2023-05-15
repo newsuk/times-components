@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.15.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.14.10...@times-components/author-profile@6.15.0) (2023-05-15)
+
+
+### Features
+
+* **TMRX-499:** contractual title author profile ([#3363](https://github.com/newsuk/times-components/issues/3363)) ([aff85fc](https://github.com/newsuk/times-components/commit/aff85fc7c874410fa84f84dd39f244723e2ec118))
+
+
+
+
+
 ## [6.14.10](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.14.9...@times-components/author-profile@6.14.10) (2023-05-12)
 
 **Note:** Version bump only for package @times-components/author-profile

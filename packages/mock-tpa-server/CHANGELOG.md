@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.3.3...@times-components/mock-tpa-server@0.4.0) (2023-05-15)
+
+
+### Features
+
+* **TMRX-499:** contractual title author profile ([#3363](https://github.com/newsuk/times-components/issues/3363)) ([aff85fc](https://github.com/newsuk/times-components/commit/aff85fc7c874410fa84f84dd39f244723e2ec118))
+
+
+
+
+
 ## [0.3.3](https://github.com/newsuk/times-components/compare/@times-components/mock-tpa-server@0.3.2...@times-components/mock-tpa-server@0.3.3) (2023-04-03)
 
 **Note:** Version bump only for package @times-components/mock-tpa-server

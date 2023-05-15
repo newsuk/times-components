@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.28.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.27.3...@times-components/provider-test-tools@1.28.0) (2023-05-15)
+
+
+### Features
+
+* **TMRX-499:** contractual title author profile ([#3363](https://github.com/newsuk/times-components/issues/3363)) ([aff85fc](https://github.com/newsuk/times-components/commit/aff85fc7c874410fa84f84dd39f244723e2ec118))
+
+
+
+
+
 ## [1.27.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.27.2...@times-components/provider-test-tools@1.27.3) (2023-04-03)
 
 **Note:** Version bump only for package @times-components/provider-test-tools
