@@ -56,10 +56,13 @@ export const LeadStory = ({
       areas={{
         xs: `media 
              content`,
-        md: `content media`
+        md: isBukcet1
+          ? `media 
+             content`
+          : `content media`
       }}
       columnGap="space040"
-      columns={{ md: '3fr 5fr' }}
+      columns={isBukcet1 ? { md: '1fr' } : { md: '3fr 5fr' }}
     >
       <Block>
         <FullWidthCardMediaMob
@@ -77,7 +80,9 @@ export const LeadStory = ({
         </TextBlock>
       </Block>
       <CardContent alignContent="start">
-        <StyledDivider overrides={{ stylePreset: 'dashedDivider' }} />
+        {!isBukcet1 && (
+          <StyledDivider overrides={{ stylePreset: 'dashedDivider' }} />
+        )}
         <Visible md lg xl>
           {subHeadline && (
             <ColouredText
