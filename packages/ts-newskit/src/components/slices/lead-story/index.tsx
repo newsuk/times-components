@@ -26,7 +26,7 @@ export interface LeadStoryProps {
   url: string;
   articleType?: string;
   hasTagOrTimeToRead?: boolean;
-  isBukcet1?: boolean;
+  isBucket1?: boolean;
 }
 export const LeadStory = ({
   headline,
@@ -39,7 +39,7 @@ export const LeadStory = ({
   url,
   articleType,
   hasTagOrTimeToRead,
-  isBukcet1
+  isBucket1
 }: LeadStoryProps) => {
   const stylePresets = {
     typographyPreset: 'utilityButton010',
@@ -56,13 +56,13 @@ export const LeadStory = ({
       areas={{
         xs: `media 
              content`,
-        md: isBukcet1
+        md: isBucket1
           ? `media 
              content`
           : `content media`
       }}
       columnGap="space040"
-      columns={{ md: isBukcet1 ? '1fr' : '3fr 5fr' }}
+      columns={{ md: isBucket1 ? '1fr' : '3fr 5fr' }}
     >
       <Block>
         <FullWidthCardMediaMob
@@ -80,7 +80,7 @@ export const LeadStory = ({
         </TextBlock>
       </Block>
       <CardContent alignContent="start">
-        {!isBukcet1 && (
+        {!isBucket1 && (
           <StyledDivider overrides={{ stylePreset: 'dashedDivider' }} />
         )}
         <Visible md lg xl>
@@ -100,7 +100,7 @@ export const LeadStory = ({
           expand
           href={url}
           overrides={{
-            typographyPreset: isBukcet1
+            typographyPreset: isBucket1
               ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
               : 'editorialHeadline040',
             paddingBlockStart: 'space050'

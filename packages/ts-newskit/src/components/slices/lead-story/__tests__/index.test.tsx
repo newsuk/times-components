@@ -20,7 +20,7 @@ const renderComponent = () =>
     <LeadStory
       {...leadStoryData}
       hasTagOrTimeToRead={false}
-      isBukcet1={false}
+      isBucket1={false}
     />
   );
 
@@ -73,7 +73,7 @@ describe('Render Component one', () => {
       <LeadStory
         {...leadStoryData}
         hasTagOrTimeToRead={true}
-        isBukcet1={true}
+        isBucket1={true}
       />
     );
     const articleType = queryByText(leadStory.articleType);
