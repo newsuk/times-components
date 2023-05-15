@@ -16,7 +16,8 @@ const AuthorProfileHeadBase = memo(
     renderBiography,
     renderImage,
     renderName,
-    twitter
+    twitter,
+    contractualTitle
   }) => {
     if (isLoading) {
       return <AuthorProfileHeadLoading />;
@@ -24,7 +25,12 @@ const AuthorProfileHeadBase = memo(
 
     const renderJobTitle = () => {
       if (!jobTitle) return null;
-      return <AuthorProfileHeadJobTitle jobTitle={jobTitle} />;
+      return (
+        <AuthorProfileHeadJobTitle
+          jobTitle={jobTitle}
+          contractualTitle={contractualTitle}
+        />
+      );
     };
 
     const renderTwitterLink = () => {
@@ -61,7 +67,8 @@ AuthorProfileHeadBase.propTypes = {
   renderBiography: PropTypes.func.isRequired,
   renderImage: PropTypes.func.isRequired,
   renderName: PropTypes.func.isRequired,
-  twitter: PropTypes.string
+  twitter: PropTypes.string,
+  contractualTitle: PropTypes.string
 };
 
 AuthorProfileHeadBase.defaultProps = {

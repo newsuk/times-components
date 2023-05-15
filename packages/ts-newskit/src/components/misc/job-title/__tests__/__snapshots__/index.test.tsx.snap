@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobTitlePopover Renders the component 1`] = `
+<DocumentFragment>
+  <button
+    aria-haspopup="dialog"
+    class="css-odwgmx"
+    data-testid="button"
+    type="button"
+  >
+    <svg
+      class="css-ny3roy"
+      fill="none"
+      height="16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <mask
+        height="16"
+        id="a"
+        maskUnits="userSpaceOnUse"
+        style="mask-type: alpha;"
+        width="16"
+        x="0"
+        y="0"
+      >
+        <path
+          d="M7.333 4.667h1.334V6H7.334V4.667ZM7.333 7.333h1.334v4H7.334v-4Z"
+          fill="#0A0A0A"
+        />
+        <path
+          clip-rule="evenodd"
+          d="M1.333 8A6.67 6.67 0 0 1 8 1.333 6.67 6.67 0 0 1 14.667 8 6.67 6.67 0 0 1 8 14.667 6.67 6.67 0 0 1 1.333 8Zm1.334 0A5.34 5.34 0 0 0 8 13.333 5.34 5.34 0 0 0 13.334 8 5.34 5.34 0 0 0 8 2.667 5.34 5.34 0 0 0 2.667 8Z"
+          fill="#0A0A0A"
+          fill-rule="evenodd"
+        />
+      </mask>
+      <g
+        mask="url(#a)"
+      >
+        <path
+          d="M0 0h16v16H0z"
+          fill="#696969"
+        />
+      </g>
+    </svg>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`JobTitleTooltip Renders the component 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="Contractual Title"
+    class="css-odwgmx"
+    data-testid="button"
+    type="button"
+  >
+    <svg
+      class="css-ny3roy"
+      fill="none"
+      height="16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <mask
+        height="16"
+        id="a"
+        maskUnits="userSpaceOnUse"
+        style="mask-type: alpha;"
+        width="16"
+        x="0"
+        y="0"
+      >
+        <path
+          d="M7.333 4.667h1.334V6H7.334V4.667ZM7.333 7.333h1.334v4H7.334v-4Z"
+          fill="#0A0A0A"
+        />
+        <path
+          clip-rule="evenodd"
+          d="M1.333 8A6.67 6.67 0 0 1 8 1.333 6.67 6.67 0 0 1 14.667 8 6.67 6.67 0 0 1 8 14.667 6.67 6.67 0 0 1 1.333 8Zm1.334 0A5.34 5.34 0 0 0 8 13.333 5.34 5.34 0 0 0 13.334 8 5.34 5.34 0 0 0 8 2.667 5.34 5.34 0 0 0 2.667 8Z"
+          fill="#0A0A0A"
+          fill-rule="evenodd"
+        />
+      </mask>
+      <g
+        mask="url(#a)"
+      >
+        <path
+          d="M0 0h16v16H0z"
+          fill="#696969"
+        />
+      </g>
+    </svg>
+  </button>
+</DocumentFragment>
+`;

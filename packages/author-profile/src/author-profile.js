@@ -43,14 +43,16 @@ const AuthorProfile = ({
     image: uri,
     jobTitle,
     name,
-    twitter
+    twitter,
+    contractualTitle
   } = isHeaderLoading
     ? {
         articles: [],
         image: "",
         jobTitle: "",
         name: "",
-        twitter: ""
+        twitter: "",
+        contractualTitle: ""
       }
     : author;
 
@@ -63,6 +65,7 @@ const AuthorProfile = ({
       onTwitterLinkPress={onTwitterLinkPress}
       twitter={twitter}
       uri={uri}
+      contractualTitle={contractualTitle}
     />
   );
 

@@ -43,8 +43,7 @@ const styles = {
     ...fontFactory({
       font: "bodyRegularSmallCaps",
       fontSize: "meta"
-    }),
-    marginTop: spacing(1)
+    })
   },
   loadingContainer: {
     alignItems: "center",

@@ -15,5 +15,6 @@ export default {
   image: "https://image.io",
   jobTitle: "Job Title",
   name: "Name",
-  twitter: "twitter"
+  twitter: "twitter",
+  contractualTitle: "Contractual Title"
 };

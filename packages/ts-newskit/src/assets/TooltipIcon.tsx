@@ -1,5 +1,5 @@
-import * as React from "react"
-const TooltipIcon = (props) => (
+import * as React from 'react';
+const TooltipIcon = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={16}
@@ -15,7 +15,7 @@ const TooltipIcon = (props) => (
       y={0}
       maskUnits="userSpaceOnUse"
       style={{
-        maskType: "alpha",
+        maskType: 'alpha'
       }}
     >
       <path
@@ -33,5 +33,5 @@ const TooltipIcon = (props) => (
       <path fill="#696969" d="M0 0h16v16H0z" />
     </g>
   </svg>
-)
-export default TooltipIcon
+);
+export default TooltipIcon;

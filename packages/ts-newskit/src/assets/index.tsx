@@ -96,4 +96,4 @@ export const NewsKitThumbsUpIcon = customToNewsKitIcon(
 export const NewsKitTooltipIcon = customToNewsKitIcon(
   'NewsKitTooltipIcon',
   props => <TooltipIcon {...props} />
-)
+);

@@ -48,7 +48,8 @@ const generateAuthors = ({ count, error, hasLeadAssets, slug }) => {
           image: "//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
           jobTitle: "Defence Editor",
           name: "Deborah Haynes",
-          twitter: "jdoe"
+          twitter: "jdoe",
+          contractualTitle: "Contractual Title"
         })
       }
     },
