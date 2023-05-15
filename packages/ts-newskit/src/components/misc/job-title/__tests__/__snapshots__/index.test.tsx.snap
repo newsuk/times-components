@@ -144,7 +144,7 @@ exports[`JobTitlePopover Renders the Popover when clicked 1`] = `
   </button>
   <div
     aria-describedby="header-floating-ui-7"
-    class=" nk-popover-enter-active css-mtgoen"
+    class=" nk-popover-enter-active css-3q4rqj"
     id="floating-floating-ui-9"
     role="dialog"
     tabindex="-1"
@@ -158,7 +158,7 @@ exports[`JobTitlePopover Renders the Popover when clicked 1`] = `
         class="css-x9cisz"
       >
         <div
-          class="css-9ageco"
+          class="css-1krrmnb"
           data-testid="header-text"
           id="header-floating-ui-7"
         >
@@ -168,7 +168,7 @@ exports[`JobTitlePopover Renders the Popover when clicked 1`] = `
           class="css-xy11cm"
         />
         <div
-          class="css-1lnhayt"
+          class="css-j3i2on"
         >
           <button
             aria-label="close"
