@@ -206,17 +206,38 @@ exports[`1. an article list header 1`] = `
       >
         Name
       </h1>
-      <h2
-        WebkitFontSmoothing="antialiased"
-        className="c5"
-        color="#696969"
-        fontFamily="TimesDigitalW04-RegularSC, TimesDigitalW04-RegularSC-fallback, serif"
-        fontSize={13}
-        lineHeight="14px"
-        marginTop="5px"
+      <div
+        alignItems="center"
+        display="flex"
       >
-        job title
-      </h2>
+        <h2
+          WebkitFontSmoothing="antialiased"
+          className="c5"
+          color="#696969"
+          fontFamily="TimesDigitalW04-RegularSC, TimesDigitalW04-RegularSC-fallback, serif"
+          fontSize={13}
+          lineHeight="14px"
+        >
+          job title
+        </h2>
+        <button
+          className="css-odwgmx"
+        >
+          <svg
+            className="css-ny3roy"
+          >
+            <mask
+              maskType="alpha"
+            >
+              <path />
+              <path />
+            </mask>
+            <g>
+              <path />
+            </g>
+          </svg>
+        </button>
+      </div>
       <div
         alignItems="flex-end"
         className="c2"
