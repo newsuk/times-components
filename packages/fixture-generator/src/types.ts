@@ -1249,7 +1249,7 @@ export interface Author {
 
   slug?: Slug | null;
 
-  contractualTitle?: string | null
+  contractualTitle?: string | null;
 }
 
 export interface AuthorArticles {
