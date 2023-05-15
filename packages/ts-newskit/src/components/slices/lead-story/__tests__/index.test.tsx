@@ -3,20 +3,32 @@ import '@testing-library/jest-dom';
 import { render } from '../../../../utils/test-utils';
 import { LeadStory } from '../index';
 import { leadStory } from '../../../../slices/fixtures/data.json';
+import { useBreakpointKey } from 'newskit';
+
+jest.mock('newskit', () => ({
+  ...jest.requireActual('newskit'),
+  useBreakpointKey: jest.fn().mockReturnValue('xs')
+}));
 
 const leadStoryData = {
   ...leadStory,
   subHeadline: 'TAG'
 };
 
-const renderComponent = () => render(<LeadStory {...leadStoryData} />);
+const renderComponent = () =>
+  render(
+    <LeadStory
+      {...leadStoryData}
+      hasTagOrTimeToRead={false}
+      isBucket1={false}
+    />
+  );
 
 describe('Render Component one', () => {
   it('should render a snapshot', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
-
   it('should render correct headline', () => {
     const { getByText } = renderComponent();
     const headlineText = getByText(leadStory.headline);
@@ -46,5 +58,25 @@ describe('Render Component one', () => {
 
     const subHeadline = getByText('TAG');
     expect(subHeadline).toBeInTheDocument();
+  });
+
+  it('should not render articleType if hasTagOrTimeToRead is false', () => {
+    (useBreakpointKey as any).mockReturnValue('xs');
+    const { queryByText } = renderComponent();
+    const articleType = queryByText(leadStory.articleType);
+    expect(articleType).not.toBeVisible();
+  });
+
+  it('should render articleType if hasTagOrTimeToRead is false', () => {
+    (useBreakpointKey as any).mockReturnValue('xs');
+    const { queryByText } = render(
+      <LeadStory
+        {...leadStoryData}
+        hasTagOrTimeToRead={true}
+        isBucket1={true}
+      />
+    );
+    const articleType = queryByText(leadStory.articleType);
+    expect(articleType).toBeVisible();
   });
 });
