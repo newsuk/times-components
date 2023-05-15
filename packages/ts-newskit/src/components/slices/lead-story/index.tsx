@@ -62,7 +62,7 @@ export const LeadStory = ({
           : `content media`
       }}
       columnGap="space040"
-      columns={isBukcet1 ? { md: '1fr' } : { md: '3fr 5fr' }}
+      columns={{ md: isBukcet1 ? '1fr' : '3fr 5fr' }}
     >
       <Block>
         <FullWidthCardMediaMob
