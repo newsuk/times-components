@@ -16,6 +16,7 @@ exports[`2. a loading state 1`] = `
   <ArticleList
     articleListHeader={
       <AuthorProfileHead
+        contractualTitle=""
         isLoading={true}
         jobTitle=""
         metaDescription=""
@@ -68,6 +69,7 @@ exports[`3. an article list with images 1`] = `
             },
           ]
         }
+        contractualTitle="Contractual Title"
         isLoading={false}
         jobTitle="Job Title"
         metaDescription=""
@@ -120,6 +122,7 @@ exports[`4. an article list without images 1`] = `
             },
           ]
         }
+        contractualTitle="Contractual Title"
         isLoading={false}
         jobTitle="Job Title"
         metaDescription=""
@@ -172,6 +175,7 @@ exports[`5. fetches more articles 1`] = `
             },
           ]
         }
+        contractualTitle="Contractual Title"
         isLoading={false}
         jobTitle="Job Title"
         metaDescription=""
@@ -229,6 +233,7 @@ exports[`6. fetches more articles and falls back to previous data if no more 1`]
             },
           ]
         }
+        contractualTitle="Contractual Title"
         isLoading={false}
         jobTitle="Job Title"
         metaDescription=""
@@ -273,12 +278,55 @@ exports[`7. an article list header 1`] = `
       >
         Name
       </h1>
-      <h2
-        aria-level="2"
-        role="heading"
-      >
-        job title
-      </h2>
+      <div>
+        <h2
+          aria-level="2"
+          role="heading"
+        >
+          job title
+        </h2>
+        <button
+          aria-haspopup="dialog"
+          aria-label="See contractual title, button"
+          size="small"
+          type="button"
+        >
+          <svg
+            fill="none"
+            height={16}
+            width={16}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              height={16}
+              id="a"
+              maskUnits="userSpaceOnUse"
+              width={16}
+              x={0}
+              y={0}
+            >
+              <path
+                d="M7.333 4.667h1.334V6H7.334V4.667ZM7.333 7.333h1.334v4H7.334v-4Z"
+                fill="currentcolor"
+              />
+              <path
+                clipRule="evenodd"
+                d="M1.333 8A6.67 6.67 0 0 1 8 1.333 6.67 6.67 0 0 1 14.667 8 6.67 6.67 0 0 1 8 14.667 6.67 6.67 0 0 1 1.333 8Zm1.334 0A5.34 5.34 0 0 0 8 13.333 5.34 5.34 0 0 0 13.334 8 5.34 5.34 0 0 0 8 2.667 5.34 5.34 0 0 0 2.667 8Z"
+                fill="currentcolor"
+                fillRule="evenodd"
+              />
+            </mask>
+            <g
+              mask="url(#a)"
+            >
+              <path
+                d="M0 0h16v16H0z"
+                fill="currentcolor"
+              />
+            </g>
+          </svg>
+        </button>
+      </div>
       <div>
         <div>
           <IconTwitter

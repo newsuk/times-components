@@ -14,6 +14,7 @@ exports[`1. an article list loading with images 1`] = `
   <ArticleList
     articleListHeader={
       <AuthorProfileHead
+        contractualTitle=""
         isLoading={true}
         jobTitle=""
         metaDescription=""
@@ -46,6 +47,7 @@ exports[`2. an article list loading without images 1`] = `
   <ArticleList
     articleListHeader={
       <AuthorProfileHead
+        contractualTitle=""
         isLoading={true}
         jobTitle=""
         metaDescription=""

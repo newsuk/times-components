@@ -17,6 +17,7 @@ import ArticlePlaceholder from './ArticlePlaceholder';
 import WaveBg from './WaveBg';
 import ThumbsDownIcon from './ThumbsDown';
 import ThumbsUpIcon from './ThumbsUp';
+import TooltipIcon from './TooltipIcon';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -90,4 +91,9 @@ export const NewsKitThumbsDownIcon = customToNewsKitIcon(
 export const NewsKitThumbsUpIcon = customToNewsKitIcon(
   'NewsKitThumbsUpIcon',
   props => <ThumbsUpIcon {...props} />
+);
+
+export const NewsKitTooltipIcon = customToNewsKitIcon(
+  'NewsKitTooltipIcon',
+  props => <TooltipIcon {...props} />
 );

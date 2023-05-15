@@ -37,3 +37,6 @@ export { StoryCard } from './components/puzzles/storyCard';
 // SLICES
 export { ContentBucket1 } from './slices/content-bucket-1';
 export { ContentBucket2 } from './slices/content-bucket-2';
+
+// MISC
+export { JobTitle } from './components/misc/job-title/job-title';

@@ -1248,6 +1248,8 @@ export interface Author {
   twitter?: string | null;
 
   slug?: Slug | null;
+
+  contractualTitle?: string | null;
 }
 
 export interface AuthorArticles {

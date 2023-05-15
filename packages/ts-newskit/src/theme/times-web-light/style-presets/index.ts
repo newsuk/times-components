@@ -10,8 +10,10 @@ import { textStylePresets } from './text';
 import { feedbackStylePresets } from './feedback';
 import { buttonStylePresets } from './buttons';
 import { sliceHeaderStylePresets } from './slice-header';
+import { popoverStylePresets } from './popover';
 
 export const stylePresets = {
+  ...popoverStylePresets,
   ...breadcrumbStylePresets,
   ...buttonStylePresets,
   ...colorStylePresets,

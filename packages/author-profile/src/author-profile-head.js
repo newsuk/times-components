@@ -17,7 +17,8 @@ const AuthorProfileHead = ({
   jobTitle,
   name,
   twitter,
-  uri
+  uri,
+  contractualTitle
 }) => {
   const renderBiography = () => {
     if (!biography) return null;
@@ -59,6 +60,7 @@ const AuthorProfileHead = ({
         renderImage={renderImage}
         renderName={renderName}
         twitter={twitter}
+        contractualTitle={contractualTitle}
       />
     </AuthorHeadWrapper>
   );

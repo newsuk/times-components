@@ -1,0 +1,274 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobTitle - Larger Devices renders the Job title Tooltip on larger devices 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="Contractual Title"
+    class="css-odwgmx"
+    data-testid="Tooltip"
+    type="button"
+  >
+    <svg
+      class="css-ny3roy"
+      fill="none"
+      height="16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <mask
+        height="16"
+        id="a"
+        maskUnits="userSpaceOnUse"
+        style="mask-type: alpha;"
+        width="16"
+        x="0"
+        y="0"
+      >
+        <path
+          d="M7.333 4.667h1.334V6H7.334V4.667ZM7.333 7.333h1.334v4H7.334v-4Z"
+          fill="currentcolor"
+        />
+        <path
+          clip-rule="evenodd"
+          d="M1.333 8A6.67 6.67 0 0 1 8 1.333 6.67 6.67 0 0 1 14.667 8 6.67 6.67 0 0 1 8 14.667 6.67 6.67 0 0 1 1.333 8Zm1.334 0A5.34 5.34 0 0 0 8 13.333 5.34 5.34 0 0 0 13.334 8 5.34 5.34 0 0 0 8 2.667 5.34 5.34 0 0 0 2.667 8Z"
+          fill="currentcolor"
+          fill-rule="evenodd"
+        />
+      </mask>
+      <g
+        mask="url(#a)"
+      >
+        <path
+          d="M0 0h16v16H0z"
+          fill="currentcolor"
+        />
+      </g>
+    </svg>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`JobTitle - Smaller Devices renders the Job title Popover 1`] = `
+<DocumentFragment>
+  <button
+    aria-haspopup="dialog"
+    aria-label="See contractual title, button"
+    class="css-odwgmx"
+    data-testid="Popover"
+    type="button"
+  >
+    <svg
+      class="css-ny3roy"
+      fill="none"
+      height="16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <mask
+        height="16"
+        id="a"
+        maskUnits="userSpaceOnUse"
+        style="mask-type: alpha;"
+        width="16"
+        x="0"
+        y="0"
+      >
+        <path
+          d="M7.333 4.667h1.334V6H7.334V4.667ZM7.333 7.333h1.334v4H7.334v-4Z"
+          fill="currentcolor"
+        />
+        <path
+          clip-rule="evenodd"
+          d="M1.333 8A6.67 6.67 0 0 1 8 1.333 6.67 6.67 0 0 1 14.667 8 6.67 6.67 0 0 1 8 14.667 6.67 6.67 0 0 1 1.333 8Zm1.334 0A5.34 5.34 0 0 0 8 13.333 5.34 5.34 0 0 0 13.334 8 5.34 5.34 0 0 0 8 2.667 5.34 5.34 0 0 0 2.667 8Z"
+          fill="currentcolor"
+          fill-rule="evenodd"
+        />
+      </mask>
+      <g
+        mask="url(#a)"
+      >
+        <path
+          d="M0 0h16v16H0z"
+          fill="currentcolor"
+        />
+      </g>
+    </svg>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`JobTitlePopover Renders the Popover when clicked 1`] = `
+<DocumentFragment>
+  <button
+    aria-controls="floating-floating-ui-9"
+    aria-haspopup="dialog"
+    aria-label="See contractual title, button"
+    class="css-odwgmx"
+    data-testid="Popover"
+    type="button"
+  >
+    <svg
+      class="css-ny3roy"
+      fill="none"
+      height="16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <mask
+        height="16"
+        id="a"
+        maskUnits="userSpaceOnUse"
+        style="mask-type: alpha;"
+        width="16"
+        x="0"
+        y="0"
+      >
+        <path
+          d="M7.333 4.667h1.334V6H7.334V4.667ZM7.333 7.333h1.334v4H7.334v-4Z"
+          fill="currentcolor"
+        />
+        <path
+          clip-rule="evenodd"
+          d="M1.333 8A6.67 6.67 0 0 1 8 1.333 6.67 6.67 0 0 1 14.667 8 6.67 6.67 0 0 1 8 14.667 6.67 6.67 0 0 1 1.333 8Zm1.334 0A5.34 5.34 0 0 0 8 13.333 5.34 5.34 0 0 0 13.334 8 5.34 5.34 0 0 0 8 2.667 5.34 5.34 0 0 0 2.667 8Z"
+          fill="currentcolor"
+          fill-rule="evenodd"
+        />
+      </mask>
+      <g
+        mask="url(#a)"
+      >
+        <path
+          d="M0 0h16v16H0z"
+          fill="currentcolor"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    aria-describedby="header-floating-ui-7"
+    class=" nk-popover-enter-active css-3q4rqj"
+    id="floating-floating-ui-9"
+    role="dialog"
+    tabindex="-1"
+  >
+    <div
+      class="css-1nqtgi2 nk-popover-enter nk-popover-enter-active"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      <div
+        class="css-x9cisz"
+      >
+        <div
+          class="css-1krrmnb"
+          data-testid="header-text"
+          id="header-floating-ui-7"
+        >
+          Contractual Title Popover
+        </div>
+        <div
+          class="css-xy11cm"
+        />
+        <div
+          class="css-j3i2on"
+        >
+          <button
+            aria-label="close"
+            class="css-nvu5v2"
+            data-testid="close-button"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="css-1my36lh-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-qjfmyb"
+      id="floating-floating-ui-9-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`JobTitleTooltip Renders the tooltip when clicked 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="Contractual Title Tooltip"
+    class="css-odwgmx"
+    data-testid="Tooltip"
+    type="button"
+  >
+    <svg
+      class="css-ny3roy"
+      fill="none"
+      height="16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <mask
+        height="16"
+        id="a"
+        maskUnits="userSpaceOnUse"
+        style="mask-type: alpha;"
+        width="16"
+        x="0"
+        y="0"
+      >
+        <path
+          d="M7.333 4.667h1.334V6H7.334V4.667ZM7.333 7.333h1.334v4H7.334v-4Z"
+          fill="currentcolor"
+        />
+        <path
+          clip-rule="evenodd"
+          d="M1.333 8A6.67 6.67 0 0 1 8 1.333 6.67 6.67 0 0 1 14.667 8 6.67 6.67 0 0 1 8 14.667 6.67 6.67 0 0 1 1.333 8Zm1.334 0A5.34 5.34 0 0 0 8 13.333 5.34 5.34 0 0 0 13.334 8 5.34 5.34 0 0 0 8 2.667 5.34 5.34 0 0 0 2.667 8Z"
+          fill="currentcolor"
+          fill-rule="evenodd"
+        />
+      </mask>
+      <g
+        mask="url(#a)"
+      >
+        <path
+          d="M0 0h16v16H0z"
+          fill="currentcolor"
+        />
+      </g>
+    </svg>
+  </button>
+  <div
+    aria-hidden="true"
+    class="Tooltip nk-tooltip-enter-active css-18t1twk"
+    data-testid="Tooltip"
+    id="floating-floating-ui-6"
+    tabindex="-1"
+  >
+    <p
+      class="css-w40n27 nk-tooltip-enter nk-tooltip-enter-active"
+      data-testid="floating-element-panel"
+      tabindex="-1"
+    >
+      Contractual Title Tooltip
+    </p>
+    <div
+      class="css-c4c3om"
+      id="floating-floating-ui-6-pointer"
+    />
+  </div>
+</DocumentFragment>
+`;
