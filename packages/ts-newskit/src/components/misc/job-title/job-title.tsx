@@ -14,8 +14,10 @@ export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
     overrides={{
       offset: 'space000'
     }}
+    data-testid="Tooltip"
   >
     <IconButton
+      data-testid="Tooltip"
       overrides={{
         stylePreset: 'iconButtonMinimalSecondary',
         marginInlineStart: 'space020'
@@ -50,6 +52,7 @@ export const JobTitlePopover: React.FC<{ contractualTitle: string }> = ({
     }}
   >
     <IconButton
+      data-testid="Popover"
       overrides={{
         stylePreset: 'iconButtonMinimalSecondary',
         marginInlineStart: 'space020'
@@ -69,9 +72,9 @@ export const JobTitle: React.FC<{ contractualTitle: string }> = ({
   return (
     <NewsKitProvider theme={TimesWebLightTheme}>
       {isLargeDevice ? (
-        <JobTitleTooltip contractualTitle={contractualTitle} />
+        <JobTitleTooltip contractualTitle={contractualTitle} data-testid="Tooltip" />
       ) : (
-        <JobTitlePopover contractualTitle={contractualTitle} />
+        <JobTitlePopover contractualTitle={contractualTitle} data-testid="Popover" />
       )}
     </NewsKitProvider>
   );

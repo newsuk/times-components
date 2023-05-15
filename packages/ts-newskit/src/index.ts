@@ -40,5 +40,3 @@ export { ContentBucket2 } from './slices/content-bucket-2';
 
 // MISC
 export { JobTitle } from './components/misc/job-title/job-title';
-export { JobTitleTooltip } from './components/misc/job-title/job-title-tooltip';
-export { JobTitlePopover } from './components/misc/job-title/job-title-popover';
