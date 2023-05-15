@@ -25,8 +25,9 @@ export interface LeadStoryProps {
   image: string;
   url: string;
   articleType?: string;
+  hasTagOrTimeToRead?: boolean;
+  isBukcet1?: boolean;
 }
-
 export const LeadStory = ({
   headline,
   color,
@@ -36,7 +37,9 @@ export const LeadStory = ({
   caption,
   image,
   url,
-  articleType
+  articleType,
+  hasTagOrTimeToRead,
+  isBukcet1
 }: LeadStoryProps) => {
   const stylePresets = {
     typographyPreset: 'utilityButton010',
@@ -92,7 +95,9 @@ export const LeadStory = ({
           expand
           href={url}
           overrides={{
-            typographyPreset: 'editorialHeadline040',
+            typographyPreset: isBukcet1
+              ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
+              : 'editorialHeadline040',
             paddingBlockStart: 'space050'
           }}
           external={false}
@@ -109,7 +114,7 @@ export const LeadStory = ({
         >
           {summary}
         </TextBlock>
-        <Visible md lg xl>
+        <Visible xs={hasTagOrTimeToRead} sm={hasTagOrTimeToRead} md lg xl>
           <ColouredText
             size="small"
             overrides={{
