@@ -25,8 +25,9 @@ export interface LeadStoryProps {
   image: string;
   url: string;
   articleType?: string;
+  hasTagOrTimeToRead?: boolean;
+  isBucket1?: boolean;
 }
-
 export const LeadStory = ({
   headline,
   color,
@@ -36,7 +37,9 @@ export const LeadStory = ({
   caption,
   image,
   url,
-  articleType
+  articleType,
+  hasTagOrTimeToRead,
+  isBucket1
 }: LeadStoryProps) => {
   const stylePresets = {
     typographyPreset: 'utilityButton010',
@@ -53,10 +56,13 @@ export const LeadStory = ({
       areas={{
         xs: `media 
              content`,
-        md: `content media`
+        md: isBucket1
+          ? `media 
+             content`
+          : `content media`
       }}
       columnGap="space040"
-      columns={{ md: '3fr 5fr' }}
+      columns={{ md: isBucket1 ? '1fr' : '3fr 5fr' }}
     >
       <Block>
         <FullWidthCardMediaMob
@@ -74,7 +80,9 @@ export const LeadStory = ({
         </TextBlock>
       </Block>
       <CardContent alignContent="start">
-        <StyledDivider overrides={{ stylePreset: 'dashedDivider' }} />
+        {!isBucket1 && (
+          <StyledDivider overrides={{ stylePreset: 'dashedDivider' }} />
+        )}
         <Visible md lg xl>
           {subHeadline && (
             <ColouredText
@@ -92,7 +100,9 @@ export const LeadStory = ({
           expand
           href={url}
           overrides={{
-            typographyPreset: 'editorialHeadline040',
+            typographyPreset: isBucket1
+              ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
+              : 'editorialHeadline040',
             paddingBlockStart: 'space050'
           }}
           external={false}
@@ -109,7 +119,7 @@ export const LeadStory = ({
         >
           {summary}
         </TextBlock>
-        <Visible md lg xl>
+        <Visible xs={hasTagOrTimeToRead} sm={hasTagOrTimeToRead} md lg xl>
           <ColouredText
             size="small"
             overrides={{

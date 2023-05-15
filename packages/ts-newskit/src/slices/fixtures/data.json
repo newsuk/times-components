@@ -9,7 +9,9 @@
     "caption": "Credit",
     "image": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
     "url": "https://www.thetimes.co.uk",
-    "articleType": "Review"
+    "articleType": "Review",
+    "hasTagOrTimeToRead": false,
+    "isBucket1": false
   },
   "articles": [
     {
