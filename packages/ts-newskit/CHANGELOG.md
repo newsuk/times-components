@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.44.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.43.0...@times-components/ts-newskit@1.44.0) (2023-05-15)
+
+
+### Features
+
+* **TMRX-1225:** update leadStory component to accommodate slice ([#3364](https://github.com/newsuk/times-components/issues/3364)) ([06ea1d6](https://github.com/newsuk/times-components/commit/06ea1d66e1f16ebaa7594d82d6dbb6bc05e9d0fa))
+
+
+
+
+
 # [1.43.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.42.1...@times-components/ts-newskit@1.43.0) (2023-05-12)
 
 
