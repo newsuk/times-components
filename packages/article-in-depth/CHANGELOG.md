@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.71.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.70.0...@times-components/article-in-depth@3.71.0) (2023-05-12)
+
+
+### Features
+
+* **TMRX-766:** Audio Player on Articles ([#3354](https://github.com/newsuk/times-components/issues/3354)) ([3024743](https://github.com/newsuk/times-components/commit/3024743cecaf6f49fe916bb20d18e3c0600c6b06))
+
+
+
+
+
+# [3.70.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.69.5...@times-components/article-in-depth@3.70.0) (2023-05-12)
+
+
+### Features
+
+* **TMRX-1181:** added lazy loading to tc_images ([#3358](https://github.com/newsuk/times-components/issues/3358)) ([80efb79](https://github.com/newsuk/times-components/commit/80efb79b64494a5c436c34db46f4266c704e99e8))
+
+
+
+
+
 ## [3.69.5](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.69.4...@times-components/article-in-depth@3.69.5) (2023-04-28)
 
 **Note:** Version bump only for package @times-components/article-in-depth

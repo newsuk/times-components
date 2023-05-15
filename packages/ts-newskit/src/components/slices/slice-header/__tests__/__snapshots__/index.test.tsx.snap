@@ -26,7 +26,7 @@ exports[`Render Header should render a snapshot 1`] = `
         </div>
       </div>
       <a
-        class="css-cbmwfk"
+        class="css-12mlald"
         data-testid="buttonLink"
         href="https://www.thetimes.co.uk/"
         role="link"

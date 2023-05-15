@@ -29,6 +29,7 @@ const scrollText = keyframes`
 
 export const StickyAudioPlayerContainer = styled(Block)`
   border-top: 1px solid;
+  ${getColorCssFromTheme('background', 'inkInverse')};
   ${getColorCssFromTheme('borderTopColor', 'interface040')};
   position: fixed;
   bottom: 0;
@@ -47,6 +48,10 @@ export const StickyAudioPlayer = styled(Block)`
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
+`;
+
+export const AudioPlayerContainer = styled(Block)`
+  width: 100%;
 `;
 
 export const ButtonContainer = styled(Block)`

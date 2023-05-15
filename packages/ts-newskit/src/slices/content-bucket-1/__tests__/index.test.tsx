@@ -24,49 +24,51 @@ describe('Render Content Bucket 1 Slice', () => {
 });
 
 describe('Content Bucket 1 Articles list ', () => {
-  renderComponent();
-  const articleContainer = screen.getByTestId('article-container');
-
-  const articleItem1 = articleContainer.firstElementChild;
-  const articleItem4 = articleContainer.lastElementChild;
-
   test('articleBorder render after odd numbered items', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
+    renderComponent();
+    const articleContainer = screen.getByTestId('article-container');
 
-    expect(articleItem1!.nextSibling).toHaveAttribute('data-testid', 'divider');
-    expect(articleItem4!.nextSibling).toBeNull();
-    expect(articleItem4!.previousSibling).toHaveAttribute(
-      'data-testid',
-      'divider'
-    );
+    const articleItem4 = articleContainer.lastElementChild!
+      .previousElementSibling;
+    const articleHR = articleContainer.lastElementChild;
+
+    expect(articleHR).toHaveAttribute('data-testid', 'divider');
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
   });
 
   test("articleTopBorder renders correctly at 'xl' breakpoint", () => {
     (useBreakpointKey as any).mockReturnValue('xl');
+    renderComponent();
+    const articleContainer = screen.getByTestId('article-container');
+
+    const articleItem1 = articleContainer.firstElementChild;
+    const articleItem4 = articleContainer.lastElementChild!
+      .previousElementSibling;
+
     expect(articleItem1!.getElementsByTagName('hr').length).toBe(0);
     expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
+  });
+
+  test("articleTopBorder renders correctly below 'lg' breakpoint", () => {
+    (useBreakpointKey as any).mockReturnValue('md');
+    renderComponent();
+    const articleContainer = screen.getByTestId('article-container');
+
+    const articleItem1 = articleContainer.firstElementChild;
+
+    expect(articleItem1!.nextSibling).toHaveAttribute('data-testid', 'divider');
   });
 
   test("articleTopBorder renders correctly at 'lg' breakpoint", () => {
     (useBreakpointKey as any).mockReturnValue('lg');
     renderComponent();
-    const articleContainerLG = screen.getByTestId('article-container');
+    const articleContainer = screen.getByTestId('article-container');
 
-    const articleItem1LG = articleContainerLG.firstChild;
-    const articleItem4LG = articleContainerLG.lastChild;
+    const articleItem1 = articleContainer.firstElementChild;
+    const articleItem4 = articleContainer.lastElementChild;
 
-    expect(articleItem1LG!.nextSibling).toHaveAttribute(
-      'data-testid',
-      'divider'
-    );
-    expect(articleItem4LG!.previousSibling).toHaveAttribute(
-      'data-testid',
-      'divider'
-    );
-    expect(articleItem4LG!.nextSibling).toBeNull();
-    expect(articleItem1LG!.nextSibling).toHaveStyle({
-      borderColor: '#e4e4e4',
-      borderStyle: 'solid'
-    });
+    expect(articleItem1!.getElementsByTagName('hr').length).toBe(0);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
   });
 });

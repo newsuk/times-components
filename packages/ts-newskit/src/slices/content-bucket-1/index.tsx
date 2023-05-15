@@ -26,6 +26,7 @@ import {
   CellNoMargin
 } from '../shared-styles';
 import { CommentStack } from './comment-card';
+import { ArticleDividerXL } from './styles';
 
 export interface ContentBucket1Props {
   section: SliceHeaderProps;
@@ -47,7 +48,7 @@ export const ContentBucket1 = ({
         <SliceHeader {...section} />
       </Cell>
       <LeadStoryCell xs={12} lg={9} xl={8}>
-        <Block>
+        <Block marginInlineEnd={{ xs: 'space000', lg: 'space040' }}>
           <Visible lg xl>
             <LeadStoryDivider
               overrides={{ stylePreset: 'lightDivider' }}
@@ -77,22 +78,22 @@ export const ContentBucket1 = ({
               xs: '170px 1px 170px 1px 170px 1px 170px',
               md: '1fr 1px 1fr 1px 1fr 1px 1fr',
               lg: '1fr',
-              xl: '1fr 1px 1fr'
+              xl: '1fr 1fr'
             }}
-            columnGap="space040"
+            style={{ position: 'relative' }}
+            columnGap={{ xs: 'space040', xl: 'space060' }}
             data-testid="article-container"
           >
             {articles.map(
               (article: ArticleListItemProps, articleIndex, articleArr) => {
-                const articleBorder =
-                  breakpointKey === 'xl' && articleIndex % 2 !== 0
-                    ? null
-                    : articleIndex < articleArr.length - 1 && (
-                        <Divider
-                          overrides={{ stylePreset: 'lightDivider' }}
-                          vertical
-                        />
-                      );
+                const articleBorder = breakpointKey !== 'lg' &&
+                  breakpointKey !== 'xl' &&
+                  articleIndex < articleArr.length - 1 && (
+                    <Divider
+                      overrides={{ stylePreset: 'lightDivider' }}
+                      vertical
+                    />
+                  );
 
                 const articleTopBorder =
                   (breakpointKey === 'xl' && articleIndex > 1) ||
@@ -109,6 +110,13 @@ export const ContentBucket1 = ({
                   </React.Fragment>
                 );
               }
+            )}
+
+            {breakpointKey === 'xl' && (
+              <ArticleDividerXL
+                overrides={{ stylePreset: 'lightDivider' }}
+                vertical
+              />
             )}
           </GridLayout>
         </Scroll>

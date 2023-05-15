@@ -79,23 +79,10 @@ describe('Render Article List Item', () => {
     expect(articleType).not.toBeInTheDocument();
     expect(timeToRead).not.toBeInTheDocument();
   });
-
-  it('it should add margin to CardContent if `isLeadImage` is `true`', () => {
-    renderComponent({ ...defaultProps, isLeadImage: true });
-
-    const getArticleListItem = screen.getByText(
-      "Harry & Meghan's New Project?"
-    );
-    const cardContent = getArticleListItem.closest('div');
-
-    expect(cardContent).toHaveStyle({
-      marginInline: '20px'
-    });
-  });
 });
 
 describe('Render Article List Item with hidden image', () => {
-  it('items should renderwithout image', () => {
+  it('items should render without image', () => {
     renderComponent(defaultProps);
     const articleImage = screen.getByRole('img');
     const credit = screen.queryByText('Credit');
@@ -104,7 +91,7 @@ describe('Render Article List Item with hidden image', () => {
     expect(credit).toHaveTextContent('Credit');
   });
 
-  it('items should renderwithout image', () => {
+  it('items should render without image', () => {
     renderComponent({ ...defaultProps, hideImage: true });
     const articleImage = screen.queryByRole('img');
     const credit = screen.queryByText('Credit');

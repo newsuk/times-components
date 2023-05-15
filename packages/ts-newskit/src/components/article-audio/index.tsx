@@ -8,11 +8,15 @@ import {
   Visible
 } from 'newskit';
 import React, { useEffect, useRef, useState } from 'react';
-import { Feedback } from '../feedback';
+import { Feedback } from './feedback';
 import { StickyPlayerDesktop } from './sticky-player/stickyplayer.desktop';
 import { StickyPlayerExpanded } from './sticky-player/stickyplayer.expanded';
 import { StickyPlayerMob } from './sticky-player/stickyplayer.mob';
-import { StickyAudioPlayer, StickyAudioPlayerContainer } from './styles';
+import {
+  AudioPlayerContainer,
+  StickyAudioPlayer,
+  StickyAudioPlayerContainer
+} from './styles';
 
 type FeedbackProps = {
   requestFeedback: boolean;
@@ -74,7 +78,7 @@ export const InArticleAudio = ({
   );
 
   return (
-    <Block ref={audioRef}>
+    <AudioPlayerContainer ref={audioRef}>
       <AudioPlayerComposable src={src}>
         <Stack flow="horizontal-center" marginBlock="space040">
           <AudioPlayerPlayPauseButton
@@ -136,6 +140,6 @@ export const InArticleAudio = ({
           </StickyAudioPlayerContainer>
         )}
       </AudioPlayerComposable>
-    </Block>
+    </AudioPlayerContainer>
   );
 };

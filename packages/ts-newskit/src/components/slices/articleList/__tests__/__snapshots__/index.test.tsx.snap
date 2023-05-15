@@ -3,77 +3,69 @@
 exports[`Render Article List Item should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-139nwb1"
+    class="css-gsfmea"
   >
     <div
-      class="css-1shocxe"
+      class="css-1kwj960"
     >
-      <div
-        class="css-o476j2"
+      <picture
+        class="css-1udor4k"
       >
         <div
-          class="css-qw1yda"
+          class="css-5pczz7"
+        />
+        <img
+          alt="This is ALT Text"
+          class="css-1qgqq71"
+          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+        />
+      </picture>
+    </div>
+    <div
+      class="css-diffbd"
+    >
+      <p
+        class="css-1fo91if"
+      >
+        Credit
+      </p>
+      <a
+        class="css-1ajoxx4"
+        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+        role="link"
+      >
+        <span
+          class="css-17x5lw"
         >
-          <picture
-            class="css-1udor4k"
+          <span
+            class="css-k2d5qk"
           >
-            <div
-              class="css-5pczz7"
-            />
-            <img
-              alt="This is ALT Text"
-              class="css-1qgqq71"
-              src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-            />
-          </picture>
-        </div>
+            Harry & Meghan's New Project?
+          </span>
+        </span>
+      </a>
+      <div
+        class="css-13byt3y"
+      >
+        <span
+          class="css-18v3nbo"
+        >
+          Review
+        </span>
         <div
-          class="css-nv8tgr"
+          class="css-lew009"
         >
-          <p
-            class="css-1fo91if"
-          >
-            Credit
-          </p>
-          <a
-            class="css-1ajoxx4"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
-          >
-            <span
-              class="css-17x5lw"
-            >
-              <span
-                class="css-k2d5qk"
-              >
-                Harry & Meghan's New Project?
-              </span>
-            </span>
-          </a>
-          <div
-            class="css-13byt3y"
-          >
-            <span
-              class="css-18v3nbo"
-            >
-              Review
-            </span>
-            <div
-              class="css-lew009"
-            >
-              <hr
-                aria-hidden="true"
-                class="css-15kf7hd"
-                data-testid="divider"
-              />
-            </div>
-            <span
-              class="css-sidzln"
-            >
-              4 min read
-            </span>
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
         </div>
+        <span
+          class="css-sidzln"
+        >
+          4 min read
+        </span>
       </div>
     </div>
   </div>

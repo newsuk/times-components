@@ -3,6 +3,72 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.43.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.42.1...@times-components/ts-newskit@1.43.0) (2023-05-12)
+
+
+### Features
+
+* **TMRX-766:** Audio Player on Articles ([#3354](https://github.com/newsuk/times-components/issues/3354)) ([3024743](https://github.com/newsuk/times-components/commit/3024743cecaf6f49fe916bb20d18e3c0600c6b06))
+
+
+
+
+
+## [1.42.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.42.0...@times-components/ts-newskit@1.42.1) (2023-05-12)
+
+
+### Bug Fixes
+
+* **TMRX-1257:** fix color mismatch ([#3361](https://github.com/newsuk/times-components/issues/3361)) ([d215df2](https://github.com/newsuk/times-components/commit/d215df2d5d31f7b1301ff07e2fda0e6b175c8300))
+
+
+
+
+
+# [1.42.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.41.0...@times-components/ts-newskit@1.42.0) (2023-05-12)
+
+
+### Features
+
+* **TMRX-1259:** content bucket 1 refactor ([#3360](https://github.com/newsuk/times-components/issues/3360)) ([0d6fd9e](https://github.com/newsuk/times-components/commit/0d6fd9ec1056355e652a72c1fae9e1800ade2629))
+
+
+
+
+
+# [1.41.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.40.0...@times-components/ts-newskit@1.41.0) (2023-05-11)
+
+
+### Features
+
+* **TMST-660:** Free Trail banner component ([#3357](https://github.com/newsuk/times-components/issues/3357)) ([55758dd](https://github.com/newsuk/times-components/commit/55758ddb7d6f91c2ed78fb79bc0a2ae94179c062))
+
+
+
+
+
+# [1.40.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.39.0...@times-components/ts-newskit@1.40.0) (2023-05-11)
+
+
+### Features
+
+* **TMRX-1257:** update refactor lead story component ([#3356](https://github.com/newsuk/times-components/issues/3356)) ([c000bb7](https://github.com/newsuk/times-components/commit/c000bb7e06e51f4b2f9a333b7f8d7eaadb145a7f))
+
+
+
+
+
+# [1.39.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.38.0...@times-components/ts-newskit@1.39.0) (2023-05-11)
+
+
+### Features
+
+* **TMST-660:** Free Trail banner component ([#3351](https://github.com/newsuk/times-components/issues/3351)) ([f0c14f9](https://github.com/newsuk/times-components/commit/f0c14f9dbceac66d50fe19cd9be214f4211913d8))
+
+
+
+
+
 # [1.38.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.37.0...@times-components/ts-newskit@1.38.0) (2023-05-10)
 
 

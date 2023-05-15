@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.12.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.11.7...@times-components/card@6.12.0) (2023-05-12)
+
+
+### Features
+
+* **TMRX-1181:** added lazy loading to tc_images ([#3358](https://github.com/newsuk/times-components/issues/3358)) ([80efb79](https://github.com/newsuk/times-components/commit/80efb79b64494a5c436c34db46f4266c704e99e8))
+
+
+
+
+
 ## [6.11.7](https://github.com/newsuk/times-components/compare/@times-components/card@6.11.6...@times-components/card@6.11.7) (2023-04-19)
 
 **Note:** Version bump only for package @times-components/card

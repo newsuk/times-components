@@ -55,11 +55,13 @@ Array [
             <responsive
               alt={null}
               isLoaded={false}
+              loading="lazy"
               src="https://img/someImage"
               zIndex={2}
             >
               <img
                 alt={null}
+                loading="lazy"
                 src="https://img/someImage"
               />
             </responsive>
@@ -162,11 +164,13 @@ Array [
             <responsive
               alt="Some caption"
               isLoaded={false}
+              loading="lazy"
               src="https://img/someImage"
               zIndex={2}
             >
               <img
                 alt="Some caption"
+                loading="lazy"
                 src="https://img/someImage"
               />
             </responsive>
@@ -254,22 +258,26 @@ Array [
             <responsive
               alt="Some caption"
               isLoaded={false}
+              loading="lazy"
               src="https://img/someImage?resize=900"
               zIndex={2}
             >
               <img
                 alt="Some caption"
+                loading="lazy"
                 src="https://img/someImage?resize=900"
               />
             </responsive>
             <responsive
               alt="Some caption"
               isLoaded={true}
+              loading="lazy"
               src="https://img/someImage?resize=50"
               zIndex={1}
             >
               <img
                 alt="Some caption"
+                loading="lazy"
                 src="https://img/someImage?resize=50"
               />
             </responsive>
