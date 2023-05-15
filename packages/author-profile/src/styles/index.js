@@ -18,6 +18,10 @@ const styles = {
   },
   twitterLink: {
     ...sharedStyles.twitterLink
+  },
+  jobTitleContainer: {
+    display: "flex",
+    alignItems: "center"
   }
 };
 

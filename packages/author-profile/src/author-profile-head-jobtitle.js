@@ -6,7 +6,7 @@ import styles from "./styles";
 import { AuthorProfileHeadJobTitleContainer } from "./styles/responsive";
 
 const AuthorProfileHeadJobTitle = ({ jobTitle, contractualTitle }) => (
-  <div style={{ display: "flex", alignItems: "center" }}>
+  <div style={checkStylesForUnits(styles.jobTitleContainer)}>
     <AuthorProfileHeadJobTitleContainer
       role="heading"
       aria-level="2"
