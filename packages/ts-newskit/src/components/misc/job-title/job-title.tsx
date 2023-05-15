@@ -23,6 +23,7 @@ export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
     data-testid="Tooltip"
   >
     <IconButton
+      aria-label="See contractual title, button"
       data-testid="Tooltip"
       overrides={{
         stylePreset: 'iconButtonMinimalSecondary',
@@ -57,6 +58,7 @@ export const JobTitlePopover: React.FC<{ contractualTitle: string }> = ({
     }}
   >
     <IconButton
+      aria-label="See contractual title, button"
       data-testid="Popover"
       overrides={{
         stylePreset: 'iconButtonMinimalSecondary',

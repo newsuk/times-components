@@ -147,7 +147,8 @@ export default () => ({
       jobTitle: "Legal Editor",
       name: "Fiona Hamilton",
       slug: "fiona-hamilton",
-      twitter: "jdoe"
+      twitter: "jdoe",
+      contractualTitle: "Contractual title"
     }),
     topic: () => ({
       __typename: "Topic",
