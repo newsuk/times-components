@@ -1,5 +1,11 @@
 import React from 'react';
-import { useBreakpointKey, NewsKitProvider, Popover, IconButton, Tooltip } from 'newskit';
+import {
+  useBreakpointKey,
+  NewsKitProvider,
+  Popover,
+  IconButton,
+  Tooltip
+} from 'newskit';
 import { TimesWebLightTheme } from '../../../theme';
 import { NewsKitTooltipIcon } from '../../../assets';
 
@@ -27,7 +33,6 @@ export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
     </IconButton>
   </Tooltip>
 );
-
 
 export const JobTitlePopover: React.FC<{ contractualTitle: string }> = ({
   contractualTitle
@@ -63,7 +68,6 @@ export const JobTitlePopover: React.FC<{ contractualTitle: string }> = ({
   </Popover>
 );
 
-
 export const JobTitle: React.FC<{ contractualTitle: string }> = ({
   contractualTitle
 }) => {
@@ -72,9 +76,15 @@ export const JobTitle: React.FC<{ contractualTitle: string }> = ({
   return (
     <NewsKitProvider theme={TimesWebLightTheme}>
       {isLargeDevice ? (
-        <JobTitleTooltip contractualTitle={contractualTitle} data-testid="Tooltip" />
+        <JobTitleTooltip
+          contractualTitle={contractualTitle}
+          data-testid="Tooltip"
+        />
       ) : (
-        <JobTitlePopover contractualTitle={contractualTitle} data-testid="Popover" />
+        <JobTitlePopover
+          contractualTitle={contractualTitle}
+          data-testid="Popover"
+        />
       )}
     </NewsKitProvider>
   );

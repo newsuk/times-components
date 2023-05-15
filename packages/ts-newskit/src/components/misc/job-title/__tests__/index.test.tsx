@@ -21,33 +21,40 @@ afterEach(() => {
 describe('JobTitle - Smaller Devices', () => {
   beforeEach(() => {
     (useBreakpointKey as any).mockReturnValue('xs');
-  })
+  });
   it('renders the Job title Popover', () => {
     const { asFragment, getByTestId } = render(
-      <JobTitle contractualTitle='Contractual Title' />
+      <JobTitle contractualTitle="Contractual Title" />
     );
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId('Popover')).toBeVisible();
   });
-})
+});
 
 describe('JobTitle - Larger Devices', () => {
   beforeEach(() => {
     (useBreakpointKey as any).mockReturnValue('lg');
-  })
+  });
   it('renders the Job title Tooltip on larger devices', () => {
     const { asFragment, getByTestId } = render(
-      <JobTitle contractualTitle='Contractual Title' />
+      <JobTitle contractualTitle="Contractual Title" />
     );
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId('Tooltip')).toBeVisible();
-  })
-})
+  });
+});
 
 describe('JobTitleTooltip', () => {
-  it('Renders the tooltip when clicked', async ()  => {
-    const { getByRole, asFragment, getByTestId, getByText, queryByTestId, queryByText } = render(
-      <JobTitleTooltip contractualTitle='Contractual Title Tooltip' />
+  it('Renders the tooltip when clicked', async () => {
+    const {
+      getByRole,
+      asFragment,
+      getByTestId,
+      getByText,
+      queryByTestId,
+      queryByText
+    } = render(
+      <JobTitleTooltip contractualTitle="Contractual Title Tooltip" />
     );
     expect(queryByTestId('floating-element-panel')).toBeFalsy();
     expect(queryByText('Contractual Title Tooltip')).toBeFalsy();
@@ -59,9 +66,16 @@ describe('JobTitleTooltip', () => {
 });
 
 describe('JobTitlePopover', () => {
-  it('Renders the Popover when clicked', ()  => {
-    const { asFragment, getByRole, getByText, queryByText, queryByTestId, getByTestId } = render(
-      <JobTitlePopover contractualTitle='Contractual Title Popover' />
+  it('Renders the Popover when clicked', () => {
+    const {
+      asFragment,
+      getByRole,
+      getByText,
+      queryByText,
+      queryByTestId,
+      getByTestId
+    } = render(
+      <JobTitlePopover contractualTitle="Contractual Title Popover" />
     );
     expect(queryByTestId('floating-element-panel')).toBeFalsy();
     expect(queryByText('Contractual Title Popover')).toBeFalsy();
@@ -69,7 +83,7 @@ describe('JobTitlePopover', () => {
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId('floating-element-panel')).toBeVisible();
     expect(getByText('Contractual Title Popover')).toBeVisible();
-    const closeButton = getByTestId('close-button')
+    const closeButton = getByTestId('close-button');
     expect(closeButton).toBeVisible();
   });
 });
