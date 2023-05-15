@@ -52,6 +52,7 @@ exports[`JobTitle - Smaller Devices renders the Job title Popover 1`] = `
 <DocumentFragment>
   <button
     aria-haspopup="dialog"
+    aria-label="See contractual title, button"
     class="css-odwgmx"
     data-testid="Popover"
     type="button"
@@ -101,6 +102,7 @@ exports[`JobTitlePopover Renders the Popover when clicked 1`] = `
   <button
     aria-controls="floating-floating-ui-9"
     aria-haspopup="dialog"
+    aria-label="See contractual title, button"
     class="css-odwgmx"
     data-testid="Popover"
     type="button"
