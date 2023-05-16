@@ -13,15 +13,17 @@ exports[`1. an article list loading with images 1`] = `
   </Helmet>
   <ArticleList
     articleListHeader={
-      <AuthorProfileHead
-        contractualTitle=""
-        isLoading={true}
-        jobTitle=""
-        metaDescription=""
-        name=""
-        twitter=""
-        uri=""
-      />
+      <TCThemeProvider>
+        <AuthorProfileHead
+          contractualTitle=""
+          isLoading={true}
+          jobTitle=""
+          metaDescription=""
+          name=""
+          twitter=""
+          uri=""
+        />
+      </TCThemeProvider>
     }
     articlesLoading={true}
     count={0}
@@ -46,15 +48,17 @@ exports[`2. an article list loading without images 1`] = `
   </Helmet>
   <ArticleList
     articleListHeader={
-      <AuthorProfileHead
-        contractualTitle=""
-        isLoading={true}
-        jobTitle=""
-        metaDescription=""
-        name=""
-        twitter=""
-        uri=""
-      />
+      <TCThemeProvider>
+        <AuthorProfileHead
+          contractualTitle=""
+          isLoading={true}
+          jobTitle=""
+          metaDescription=""
+          name=""
+          twitter=""
+          uri=""
+        />
+      </TCThemeProvider>
     }
     articlesLoading={true}
     count={0}

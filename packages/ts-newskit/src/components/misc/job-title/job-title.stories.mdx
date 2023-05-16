@@ -13,25 +13,29 @@ import { JobTitle } from './job-title.tsx';
 # Job Title component
 The `Job Title` component is used to show the author's contractual job title in either a Tooltip (Desktop) or a Popover (Smaller Devices).
 
-This component takes in a single prop `contractualTitle` as below, to display both job titles.
+This component takes in two props `contractualTitle` and `isLargeDevice` as below.
 
 ## Props
 <Props of={JobTitle} />
 
 ## Code Example
-`<JobTitle contractualTitle="Senior Correspondent" />`
+`<JobTitle contractualTitle="Senior Correspondent" isLargeDevice={true}/>`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const JobTitleStory = () => (
+export const JobTitleStory = ({ isLargeDevice }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
   <div style={{ paddingTop: '150px'}}>
-    <JobTitle contractualTitle="Senior Correspondent"/>
+    <JobTitle contractualTitle="Senior Correspondent" isLargeDevice={isLargeDevice} />
   </div>
   </NewsKitProvider>
 );
 
-<Story name="JobTitle">
+<Story name="JobTitle"
+  args={{ isLargeDevice: true }}
+  argTypes={{
+    isLargeDevice: { control: "select", options: [true, false] }
+  }}>
   {JobTitleStory.bind({})}
 </Story>
