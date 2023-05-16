@@ -5,7 +5,11 @@ import { JobTitle } from "@times-components/ts-newskit";
 import styles from "./styles";
 import { AuthorProfileHeadJobTitleContainer } from "./styles/responsive";
 
-const AuthorProfileHeadJobTitle = ({ jobTitle, contractualTitle, isLargeDevice }) => (
+const AuthorProfileHeadJobTitle = ({
+  jobTitle,
+  contractualTitle,
+  isLargeDevice
+}) => (
   <div style={checkStylesForUnits(styles.jobTitleContainer)}>
     <AuthorProfileHeadJobTitleContainer
       role="heading"
@@ -14,13 +18,19 @@ const AuthorProfileHeadJobTitle = ({ jobTitle, contractualTitle, isLargeDevice }
     >
       {jobTitle.toLowerCase()}
     </AuthorProfileHeadJobTitleContainer>
-    {contractualTitle ? <JobTitle contractualTitle={contractualTitle} isLargeDevice={isLargeDevice} /> : null}
+    {contractualTitle ? (
+      <JobTitle
+        contractualTitle={contractualTitle}
+        isLargeDevice={isLargeDevice}
+      />
+    ) : null}
   </div>
 );
 
 AuthorProfileHeadJobTitle.propTypes = {
   jobTitle: PropTypes.string.isRequired,
-  contractualTitle: PropTypes.string
+  contractualTitle: PropTypes.string,
+  isLargeDevice: PropTypes.bool.isRequired
 };
 
 AuthorProfileHeadJobTitle.defaultProps = {

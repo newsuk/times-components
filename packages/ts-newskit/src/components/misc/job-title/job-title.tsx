@@ -1,15 +1,9 @@
 import React from 'react';
-import {
-  NewsKitProvider,
-  Popover,
-  IconButton,
-  Tooltip
-} from 'newskit';
-import { TimesWebLightTheme } from '../../../theme';
+import { Popover, IconButton, Tooltip } from 'newskit';
 import { NewsKitTooltipIcon } from '../../../assets';
 
 export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
-  contractualTitle,
+  contractualTitle
 }) => (
   <Tooltip
     content={contractualTitle}
@@ -69,24 +63,19 @@ export const JobTitlePopover: React.FC<{ contractualTitle: string }> = ({
   </Popover>
 );
 
-export const JobTitle: React.FC<{ contractualTitle: string, isLargeDevice: boolean }> = ({
-  contractualTitle,
-  isLargeDevice
-}) => {
-  console.log(isLargeDevice, 'IS LARGE DEVICE');
-  return (
-    <NewsKitProvider theme={TimesWebLightTheme}>
-      {isLargeDevice ? (
-        <JobTitleTooltip
-          contractualTitle={contractualTitle}
-          data-testid="Tooltip"
-        />
-      ) : (
-        <JobTitlePopover
-          contractualTitle={contractualTitle}
-          data-testid="Popover"
-        />
-      )}
-    </NewsKitProvider>
+export const JobTitle: React.FC<{
+  contractualTitle: string;
+  isLargeDevice: boolean;
+}> = ({ contractualTitle, isLargeDevice }) => {
+  return isLargeDevice ? (
+    <JobTitleTooltip
+      contractualTitle={contractualTitle}
+      data-testid="Tooltip"
+    />
+  ) : (
+    <JobTitlePopover
+      contractualTitle={contractualTitle}
+      data-testid="Popover"
+    />
   );
 };

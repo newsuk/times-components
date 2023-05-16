@@ -2,12 +2,12 @@ import React, { memo } from "react";
 import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { Animations } from "@times-components/ts-styleguide";
+import { useBreakpointKey } from "newskit";
 import AuthorProfileHeadLoading from "./author-profile-head-loading";
 import AuthorProfileHeadJobTitle from "./author-profile-head-jobtitle";
 import AuthorProfileHeadTwitter from "./author-profile-head-twitter";
 import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
-import { useBreakpointKey } from "newskit";
 
 const AuthorProfileHeadBase = memo(
   ({
@@ -21,13 +21,11 @@ const AuthorProfileHeadBase = memo(
     contractualTitle
   }) => {
     const breakpoint = useBreakpointKey();
-    console.log(breakpoint, 'BREAKPOINT');
-    const isLargeDevice = breakpoint === 'lg' || breakpoint === 'xl';
-  
+    const isLargeDevice = breakpoint === "lg" || breakpoint === "xl";
+
     if (isLoading) {
       return <AuthorProfileHeadLoading />;
     }
-
 
     const renderJobTitle = () => {
       if (!jobTitle) return null;
