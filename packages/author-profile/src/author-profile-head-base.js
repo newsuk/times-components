@@ -7,6 +7,7 @@ import AuthorProfileHeadJobTitle from "./author-profile-head-jobtitle";
 import AuthorProfileHeadTwitter from "./author-profile-head-twitter";
 import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
+import { useBreakpointKey } from "newskit";
 
 const AuthorProfileHeadBase = memo(
   ({
@@ -17,9 +18,12 @@ const AuthorProfileHeadBase = memo(
     renderImage,
     renderName,
     twitter,
-    contractualTitle,
-    isLargeDevice
+    contractualTitle
   }) => {
+    const breakpoint = useBreakpointKey();
+    console.log(breakpoint, 'BREAKPOINT');
+    const isLargeDevice = breakpoint === 'lg' || breakpoint === 'xl';
+  
     if (isLoading) {
       return <AuthorProfileHeadLoading />;
     }

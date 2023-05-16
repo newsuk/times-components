@@ -14,7 +14,7 @@ import AuthorProfileHead from "./author-profile-head";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
 import Head from "./head";
-import { useBreakpointKey } from 'newskit';
+import { TCThemeProvider } from "@times-components/ts-newskit";
 
 const AuthorProfile = ({
   author,
@@ -57,11 +57,8 @@ const AuthorProfile = ({
       }
     : author;
 
-  const breakpoint = useBreakpointKey();
-  console.log(breakpoint, 'BREAKPOINT');
-  const isLargeDevice = breakpoint === 'lg' || breakpoint === 'xl';
-
   const articleListHeader = (
+    <TCThemeProvider>
     <AuthorProfileHead
       biography={biography}
       isLoading={isHeaderLoading}
@@ -71,8 +68,8 @@ const AuthorProfile = ({
       twitter={twitter}
       uri={uri}
       contractualTitle={contractualTitle}
-      isLargeDevice={isLargeDevice}
     />
+    </TCThemeProvider>
   );
 
   const SelectedProvider = hasLeadAssets
