@@ -10,6 +10,7 @@ import {
 } from "@times-components/provider";
 import Responsive from "@times-components/responsive";
 import { ratioTextToFloat } from "@times-components/utils";
+import { TCThemeProvider } from "@times-components/ts-newskit";
 import AuthorProfileHead from "./author-profile-head";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
@@ -57,16 +58,18 @@ const AuthorProfile = ({
     : author;
 
   const articleListHeader = (
-    <AuthorProfileHead
-      biography={biography}
-      isLoading={isHeaderLoading}
-      jobTitle={jobTitle}
-      name={name}
-      onTwitterLinkPress={onTwitterLinkPress}
-      twitter={twitter}
-      uri={uri}
-      contractualTitle={contractualTitle}
-    />
+    <TCThemeProvider>
+      <AuthorProfileHead
+        biography={biography}
+        isLoading={isHeaderLoading}
+        jobTitle={jobTitle}
+        name={name}
+        onTwitterLinkPress={onTwitterLinkPress}
+        twitter={twitter}
+        uri={uri}
+        contractualTitle={contractualTitle}
+      />
+    </TCThemeProvider>
   );
 
   const SelectedProvider = hasLeadAssets

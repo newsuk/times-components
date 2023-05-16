@@ -1,30 +1,15 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render, fireEvent } from '../../../../utils/test-utils';
-import { useBreakpointKey } from 'newskit';
 import { JobTitleTooltip, JobTitlePopover, JobTitle } from '../job-title';
 import * as ResizeObserverModule from 'resize-observer-polyfill';
 
 (window as any).ResizeObserver = ResizeObserverModule.default;
 
-jest.mock('newskit', () => ({
-  ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xs')
-}));
-
-afterEach(() => {
-  jest.clearAllMocks();
-  jest.resetAllMocks();
-  jest.restoreAllMocks();
-});
-
 describe('JobTitle - Smaller Devices', () => {
-  beforeEach(() => {
-    (useBreakpointKey as any).mockReturnValue('xs');
-  });
   it('renders the Job title Popover', () => {
     const { asFragment, getByTestId } = render(
-      <JobTitle contractualTitle="Contractual Title" />
+      <JobTitle isLargeDevice={false} contractualTitle="Contractual Title" />
     );
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId('Popover')).toBeVisible();
@@ -32,12 +17,9 @@ describe('JobTitle - Smaller Devices', () => {
 });
 
 describe('JobTitle - Larger Devices', () => {
-  beforeEach(() => {
-    (useBreakpointKey as any).mockReturnValue('lg');
-  });
   it('renders the Job title Tooltip on larger devices', () => {
     const { asFragment, getByTestId } = render(
-      <JobTitle contractualTitle="Contractual Title" />
+      <JobTitle isLargeDevice={true} contractualTitle="Contractual Title" />
     );
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId('Tooltip')).toBeVisible();
