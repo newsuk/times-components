@@ -6,7 +6,6 @@ import * as ResizeObserverModule from 'resize-observer-polyfill';
 
 (window as any).ResizeObserver = ResizeObserverModule.default;
 
-
 describe('JobTitle - Smaller Devices', () => {
   it('renders the Job title Popover', () => {
     const { asFragment, getByTestId } = render(
