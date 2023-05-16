@@ -8,7 +8,8 @@ import {
   CardMedia,
   getSpacingCssFromTheme,
   getMediaQueryFromTheme,
-  IconButton
+  IconButton,
+  Tag
 } from 'newskit';
 
 export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
@@ -28,6 +29,10 @@ export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
 `;
 
 export const ColouredText = styled(TextBlock)<{ $color?: string }>`
+  ${({ $color }) => $color && getColorCssFromTheme('color', $color)};
+`;
+
+export const ColouredTextTag = styled(Tag)<{ $color?: string }>`
   ${({ $color }) => $color && getColorCssFromTheme('color', $color)};
 `;
 

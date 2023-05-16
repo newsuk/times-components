@@ -23,15 +23,18 @@ This takes in a series of props, as below, to display journalists details, the c
   heading='Deborah Haynes'
   content='Now is Willis’s chance to show he’s got more to offer than Curry'
   href="/"
+  isBucket1=false
+  articleType:"Tag"
+  readingTime:"Flag"
 />
 ```
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const CommentCardStory = ({ image, heading, content, href }) => (
+export const CommentCardStory = ({ image, heading, content, href, isBucket1, articleType, readingTime }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <CommentCard {...{ image, heading, content, href }} />
+    <CommentCard {...{ image, heading, content, href, isBucket1, articleType, readingTime }} />
   </NewsKitProvider>
 );
 
@@ -40,6 +43,9 @@ export const CommentCardStory = ({ image, heading, content, href }) => (
   content: 'Now is Willis’s chance to show he’s got more to offer than Curry',
   heading: 'Deborah Haynes',
   href: '/',
+  isBucket1:false,
+  articleType:"Tag",
+  readingTime:"Flag"
 }}>
   {CommentCardStory.bind({})}
 </Story>

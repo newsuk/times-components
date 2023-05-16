@@ -59,13 +59,19 @@
       "heading": "Deborah Haynes",
       "content": "Now is Willis’s chance to show he’s got more to offer than Curry",
       "image": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
-      "href": "/"
+      "href": "/",
+      "isBucket1": false,
+      "articleType": "Tag",
+      "readingTime": "Flag"
     },
     {
       "heading": "Deborah Haynes 2",
       "content": "Now is Willis’s chance to show he’s got more to offer than Curry",
       "image": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
-      "href": "/"
+      "href": "/",
+      "isBucket1": false,
+      "articleType": "Tag",
+      "readingTime": "Flag"
     }
   ]
 }
