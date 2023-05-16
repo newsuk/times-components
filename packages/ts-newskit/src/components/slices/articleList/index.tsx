@@ -71,7 +71,9 @@ export const ArticleListItem = ({
       alignContent="start"
       areas={
         isBucket1True
-          ? `content media`
+          ? `
+          border  border
+          content media`
           : `border
          media
          content
