@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.45.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.45.0...@times-components/ts-newskit@1.45.1) (2023-05-16)
+
+
+### Bug Fixes
+
+* **TMST-theme-export:** exported puzzles theme ([#3365](https://github.com/newsuk/times-components/issues/3365)) ([e70a2f2](https://github.com/newsuk/times-components/commit/e70a2f2ac8128b749999ea4c19b628d0955c435e))
+
+
+
+
+
 # [1.45.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.44.0...@times-components/ts-newskit@1.45.0) (2023-05-15)
 
 
