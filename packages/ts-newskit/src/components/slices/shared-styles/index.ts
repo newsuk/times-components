@@ -7,7 +7,8 @@ import {
   CardLink,
   CardMedia,
   getSpacingCssFromTheme,
-  getMediaQueryFromTheme
+  getMediaQueryFromTheme,
+  LinkInline
 } from 'newskit';
 
 export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
@@ -23,6 +24,15 @@ export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
 
   &&:active {
     ${getColorCssFromTheme('color', 'interactiveLink030')};
+  }
+`;
+
+export const TextLink = styled(LinkInline)`
+  text-decoration: none;
+
+  &&:hover,
+  &&:active {
+    text-decoration: underline;
   }
 `;
 

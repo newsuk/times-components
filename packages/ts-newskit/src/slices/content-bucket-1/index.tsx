@@ -3,9 +3,7 @@ import {
   Cell,
   Divider,
   Grid,
-  GridLayout,
   Hidden,
-  Scroll,
   useBreakpointKey,
   Visible
 } from 'newskit';
@@ -17,7 +15,6 @@ import {
   SliceHeaderProps
 } from '../../components/slices/slice-header';
 import {
-  ArticleListItem,
   ArticleListItemProps
 } from '../../components/slices/articleList';
 import {
@@ -25,8 +22,8 @@ import {
   LeadStoryCell,
   CellNoMargin
 } from '../shared-styles';
-import { CommentStack } from './comment-card';
-import { ArticleDividerXL } from './styles';
+import { CommentStack } from './comment-stack';
+import { ArticleStack } from './article-stack';
 
 export interface ContentBucket1Props {
   section: SliceHeaderProps;
@@ -42,6 +39,7 @@ export const ContentBucket1 = ({
   articles
 }: ContentBucket1Props) => {
   const breakpointKey = useBreakpointKey();
+
   return (
     <Grid xsMargin="space045" mdMargin="space050">
       <Cell xs={12}>
@@ -72,57 +70,7 @@ export const ContentBucket1 = ({
             }}
           />
         </Hidden>
-        <Scroll
-          overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
-          tabIndex={undefined}
-        >
-          <GridLayout
-            columns={{
-              xs: '170px 1px 170px 1px 170px 1px 170px',
-              md: '1fr 1px 1fr 1px 1fr 1px 1fr',
-              lg: '1fr',
-              xl: '1fr 1fr'
-            }}
-            style={{ position: 'relative' }}
-            columnGap={{ xs: 'space040', xl: 'space060' }}
-            data-testid="article-container"
-          >
-            {articles.map(
-              (article: ArticleListItemProps, articleIndex, articleArr) => {
-                const articleBorder = breakpointKey !== 'lg' &&
-                  breakpointKey !== 'xl' &&
-                  articleIndex < articleArr.length - 1 && (
-                    <Divider
-                      overrides={{ stylePreset: 'lightDivider' }}
-                      vertical
-                    />
-                  );
-
-                const articleTopBorder =
-                  (breakpointKey === 'xl' && articleIndex > 1) ||
-                  (breakpointKey === 'lg' && articleIndex > 0);
-
-                return (
-                  <React.Fragment key={article.title}>
-                    <ArticleListItem
-                      {...article}
-                      hasTopBorder={articleTopBorder}
-                      hideImage={breakpointKey === 'lg'}
-                    />
-                    {articleBorder}
-                  </React.Fragment>
-                );
-              }
-            )}
-
-            {breakpointKey === 'xl' && (
-              <ArticleDividerXL
-                overrides={{ stylePreset: 'lightDivider' }}
-                vertical
-              />
-            )}
-          </GridLayout>
-        </Scroll>
+        <ArticleStack articles={articles} breakpoint={breakpointKey} />
       </CellNoMargin>
       <Visible md>
         <CellNoMargin xs={12}>

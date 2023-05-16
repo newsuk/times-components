@@ -21,7 +21,6 @@ type ImageProps = {
 };
 
 export interface ArticleListItemProps {
-  color?: string;
   title: string;
   url: string;
   image?: ImageProps;
@@ -57,16 +56,15 @@ export const ArticleListItem = ({
     <CardComposable
       alignContent="start"
       areas={`
-      border
-      media
-      content
-    `}
+        border
+        media
+        content
+      `}
     >
       {hasTopBorder && (
         <GridLayoutItem area="border">
           <Divider
             overrides={{
-              marginBlockStart: 'space040',
               marginBlockEnd: hideImage ? 'space000' : 'space040',
               stylePreset: 'dashedDivider'
             }}

@@ -11,26 +11,28 @@ import React from 'react';
 import {
   ContainerInline,
   CardHeadlineLink,
-  FullWidthCardMediaMob
+  FullWidthCardMediaMob,
+  TextLink
 } from '../shared-styles';
 import { ColouredText, StyledDivider } from './styles';
 
 export interface LeadStoryProps {
   headline: string;
-  color?: string;
   readingTime: string;
   summary: string;
   subHeadline?: string;
   caption: string;
   image: string;
   url: string;
-  articleType?: string;
+  articleType?: {
+    label: string;
+    href: string;
+  };
   hasTagOrTimeToRead?: boolean;
   isBucket1?: boolean;
 }
 export const LeadStory = ({
   headline,
-  color,
   readingTime,
   summary,
   subHeadline,
@@ -69,11 +71,11 @@ export const LeadStory = ({
           media={{
             src: image,
             alt: headline,
-            loadingAspectRatio: '3:2'
+            loadingAspectRatio: '3:2',
           }}
         />
         <TextBlock
-          paddingBlockStart="space020"
+          marginBlockStart="space020"
           typographyPreset="utilityMeta010"
         >
           {caption}
@@ -90,20 +92,18 @@ export const LeadStory = ({
               overrides={{
                 ...stylePresets
               }}
-              $color={color}
             >
               {subHeadline}
             </ColouredText>
           )}
         </Visible>
         <CardHeadlineLink
-          expand
           href={url}
           overrides={{
             typographyPreset: isBucket1
               ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
               : 'editorialHeadline040',
-            paddingBlockStart: 'space050'
+            marginBlockStart: 'space050'
           }}
           external={false}
         >
@@ -120,16 +120,16 @@ export const LeadStory = ({
           {summary}
         </TextBlock>
         <Visible xs={hasTagOrTimeToRead} sm={hasTagOrTimeToRead} md lg xl>
-          <ColouredText
-            size="small"
-            overrides={{
-              ...stylePresets
-            }}
-            $color={color}
-            tabIndex={0}
-          >
-            {articleType}
-          </ColouredText>
+          {articleType && (
+            <TextLink
+              overrides={{
+                ...stylePresets
+              }}
+              href={articleType.href}
+            >
+              {articleType.label}
+            </TextLink>
+          )}
           {articleType &&
             readingTime && (
               <ContainerInline>
@@ -140,17 +140,19 @@ export const LeadStory = ({
                   }}
                 />
               </ContainerInline>
-            )}
-          <Flag
-            size="small"
-            overrides={{
-              ...stylePresets,
-              stylePreset: 'inkSubtle',
-              typographyPreset: 'utilityLabel010'
-            }}
-          >
-            {readingTime}
-          </Flag>
+          )}
+          {readingTime && (
+            <Flag
+              size="small"
+              overrides={{
+                ...stylePresets,
+                stylePreset: 'inkSubtle',
+                typographyPreset: 'utilityLabel010'
+              }}
+            >
+              {readingTime}
+            </Flag>
+          )}
         </Visible>
       </CardContent>
     </CardComposable>

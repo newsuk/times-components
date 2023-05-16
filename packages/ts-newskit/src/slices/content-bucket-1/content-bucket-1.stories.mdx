@@ -1,8 +1,7 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
 import { NewsKitProvider } from 'newskit';
 import { ContentBucket1 } from "./";
-import { TimesWebLightTheme } from '../../theme/times-web-light/index';
-
+import { TCThemeProvider, themes } from '../../utils/index.tsx';
 import { section, leadStory, articles, comments } from '../fixtures/data.json';
 
 <Meta
@@ -26,9 +25,9 @@ This takes in a series of props, as below, to display the part of the slices.
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
 export const ContentBucket1Story = ({ section, leadStory, comments, articles }) => (
-  <NewsKitProvider theme={TimesWebLightTheme}>
+  <TCThemeProvider theme={themes.TimesWebLightTheme}>
     <ContentBucket1 {...{ section, leadStory, comments, articles }} />
-  </NewsKitProvider>
+  </TCThemeProvider>
 );
 
 <Story name="ContentBucket1" args={{
