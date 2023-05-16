@@ -18,7 +18,8 @@ const AuthorProfileHead = ({
   name,
   twitter,
   uri,
-  contractualTitle
+  contractualTitle,
+  isLargeDevice
 }) => {
   const renderBiography = () => {
     if (!biography) return null;
@@ -61,6 +62,7 @@ const AuthorProfileHead = ({
         renderName={renderName}
         twitter={twitter}
         contractualTitle={contractualTitle}
+        isLargeDevice={isLargeDevice}
       />
     </AuthorHeadWrapper>
   );

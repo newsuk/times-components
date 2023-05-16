@@ -14,6 +14,7 @@ import AuthorProfileHead from "./author-profile-head";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
 import Head from "./head";
+import { useBreakpointKey } from 'newskit';
 
 const AuthorProfile = ({
   author,
@@ -56,6 +57,10 @@ const AuthorProfile = ({
       }
     : author;
 
+  const breakpoint = useBreakpointKey();
+  console.log(breakpoint, 'BREAKPOINT');
+  const isLargeDevice = breakpoint === 'lg' || breakpoint === 'xl';
+
   const articleListHeader = (
     <AuthorProfileHead
       biography={biography}
@@ -66,6 +71,7 @@ const AuthorProfile = ({
       twitter={twitter}
       uri={uri}
       contractualTitle={contractualTitle}
+      isLargeDevice={isLargeDevice}
     />
   );
 

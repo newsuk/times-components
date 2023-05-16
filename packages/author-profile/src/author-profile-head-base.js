@@ -17,11 +17,13 @@ const AuthorProfileHeadBase = memo(
     renderImage,
     renderName,
     twitter,
-    contractualTitle
+    contractualTitle,
+    isLargeDevice
   }) => {
     if (isLoading) {
       return <AuthorProfileHeadLoading />;
     }
+
 
     const renderJobTitle = () => {
       if (!jobTitle) return null;
@@ -29,6 +31,7 @@ const AuthorProfileHeadBase = memo(
         <AuthorProfileHeadJobTitle
           jobTitle={jobTitle}
           contractualTitle={contractualTitle}
+          isLargeDevice={isLargeDevice}
         />
       );
     };

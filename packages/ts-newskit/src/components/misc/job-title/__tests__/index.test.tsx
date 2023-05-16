@@ -24,7 +24,7 @@ describe('JobTitle - Smaller Devices', () => {
   });
   it('renders the Job title Popover', () => {
     const { asFragment, getByTestId } = render(
-      <JobTitle contractualTitle="Contractual Title" />
+      <JobTitle isLargeDevice={false} contractualTitle="Contractual Title" />
     );
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId('Popover')).toBeVisible();
@@ -37,7 +37,7 @@ describe('JobTitle - Larger Devices', () => {
   });
   it('renders the Job title Tooltip on larger devices', () => {
     const { asFragment, getByTestId } = render(
-      <JobTitle contractualTitle="Contractual Title" />
+      <JobTitle isLargeDevice={true} contractualTitle="Contractual Title" />
     );
     expect(asFragment()).toMatchSnapshot();
     expect(getByTestId('Tooltip')).toBeVisible();
