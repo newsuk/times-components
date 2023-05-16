@@ -63,7 +63,7 @@ describe('Render Component one', () => {
   it('should not render articleType if hasTagOrTimeToRead is false', () => {
     (useBreakpointKey as any).mockReturnValue('xs');
     const { queryByText } = renderComponent();
-    const articleType = queryByText(leadStory.articleType);
+    const articleType = queryByText(leadStory.articleType.label);
     expect(articleType).not.toBeVisible();
   });
 
@@ -76,7 +76,7 @@ describe('Render Component one', () => {
         isBucket1={true}
       />
     );
-    const articleType = queryByText(leadStory.articleType);
+    const articleType = queryByText(leadStory.articleType.label);
     expect(articleType).toBeVisible();
   });
 });

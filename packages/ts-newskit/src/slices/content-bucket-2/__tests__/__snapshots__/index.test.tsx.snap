@@ -12,7 +12,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
         class="css-1jneg5s"
       >
         <div
-          class="css-6ym3sz"
+          class="css-lihpnt"
         >
           <div
             class="css-128qn49"
@@ -82,18 +82,13 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 <img
                   alt="This is ALT Text"
                   class="css-1qgqq71"
-                  src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                  src="/assets/small_01.jpg"
                 />
               </picture>
             </div>
             <div
               class="css-diffbd"
             >
-              <p
-                class="css-1fo91if"
-              >
-                Credit
-              </p>
               <a
                 class="css-u57k3c"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -131,18 +126,13 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 <img
                   alt="This is ALT Text"
                   class="css-1qgqq71"
-                  src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                  src="/assets/small_02.jpg"
                 />
               </picture>
             </div>
             <div
               class="css-diffbd"
             >
-              <p
-                class="css-1fo91if"
-              >
-                Credit
-              </p>
               <a
                 class="css-u57k3c"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -180,7 +170,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 <img
                   alt="This is ALT Text"
                   class="css-1qgqq71"
-                  src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                  src="/assets/small_03.jpg"
                 />
               </picture>
             </div>
@@ -224,18 +214,13 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 <img
                   alt="This is ALT Text"
                   class="css-1qgqq71"
-                  src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                  src="/assets/small_04.jpg"
                 />
               </picture>
             </div>
             <div
               class="css-diffbd"
             >
-              <p
-                class="css-1fo91if"
-              >
-                Credit
-              </p>
               <a
                 class="css-u57k3c"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -272,7 +257,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
         class="css-1jneg5s"
       >
         <div
-          class="css-6ym3sz"
+          class="css-lihpnt"
         >
           <div
             class="css-128qn49"
@@ -342,18 +327,13 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 <img
                   alt="This is ALT Text"
                   class="css-1qgqq71"
-                  src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                  src="/assets/small_01.jpg"
                 />
               </picture>
             </div>
             <div
               class="css-diffbd"
             >
-              <p
-                class="css-1fo91if"
-              >
-                Credit
-              </p>
               <a
                 class="css-u57k3c"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -379,7 +359,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
             >
               <hr
                 aria-hidden="true"
-                class="css-1utyvwv"
+                class="css-exb5cr"
                 data-testid="divider"
               />
             </div>
@@ -411,7 +391,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
             >
               <hr
                 aria-hidden="true"
-                class="css-1utyvwv"
+                class="css-exb5cr"
                 data-testid="divider"
               />
             </div>
@@ -443,7 +423,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
             >
               <hr
                 aria-hidden="true"
-                class="css-1utyvwv"
+                class="css-exb5cr"
                 data-testid="divider"
               />
             </div>
