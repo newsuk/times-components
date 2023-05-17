@@ -100,7 +100,7 @@ export const Article = ({
           image.credit &&
           !hideImage && (
             <TextBlock
-              paddingBlockStart="space020"
+              marginBlockStart="space020"
               stylePreset="inkSubtle"
               typographyPreset="utilityMeta010"
             >
@@ -113,7 +113,7 @@ export const Article = ({
             role="link"
             overrides={{
               typographyPreset: 'editorialHeadline020',
-              paddingBlockStart: isImageRight ? 'space000' : 'space040'
+              marginBlockStart: isImageRight ? 'space000' : 'space040'
             }}
           >
             {title}

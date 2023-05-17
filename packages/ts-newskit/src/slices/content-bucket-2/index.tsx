@@ -28,6 +28,7 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
             md: '1fr 1px 1fr 1px 1fr 1px 1fr'
           }}
           columnGap="space040"
+          rowGap="space040"
           data-testid="article-container"
         >
           {articles.map((article: ArticleProps, articleIndex, articleArr) => {
