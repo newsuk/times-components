@@ -6,12 +6,16 @@ export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
   contractualTitle
 }) => (
   <Tooltip
+    aria-live="polite"
     content={contractualTitle}
     asLabel
     placement="top-end"
     trigger={['focus', 'hover']}
     overrides={{
-      offset: 'space000'
+      offset: 'space000',
+      panel: {
+        typographyPreset: 'utilityLabel010'
+      }
     }}
     data-testid="Tooltip"
   >

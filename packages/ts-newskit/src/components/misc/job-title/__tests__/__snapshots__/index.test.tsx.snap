@@ -253,6 +253,7 @@ exports[`JobTitleTooltip Renders the tooltip when clicked 1`] = `
   </button>
   <div
     aria-hidden="true"
+    aria-live="polite"
     class="Tooltip nk-tooltip-enter-active css-18t1twk"
     data-testid="Tooltip"
     id="floating-floating-ui-6"
