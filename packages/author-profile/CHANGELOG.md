@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.15.4](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.15.3...@times-components/author-profile@6.15.4) (2023-05-17)
+
+
+### Bug Fixes
+
+* **TMRX-499:** Update author profile styling ([#3369](https://github.com/newsuk/times-components/issues/3369)) ([85d2b27](https://github.com/newsuk/times-components/commit/85d2b27a8bce0de021f46505ef133fdb247858a1))
+
+
+
+
+
 ## [6.15.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.15.2...@times-components/author-profile@6.15.3) (2023-05-17)
 
 **Note:** Version bump only for package @times-components/author-profile
