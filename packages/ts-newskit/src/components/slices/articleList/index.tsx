@@ -30,11 +30,11 @@ export interface ArticleListItemProps {
   hasTopBorder?: boolean;
   hideImage?: boolean;
   isLeadImage?: boolean;
-  isBucket1?: boolean;
+  imageRight?: boolean;
 }
 
 type LayoutProps = {
-  isBucket1True: boolean;
+  isImageRight: boolean;
 };
 
 export const ArticleListItem = ({
@@ -46,7 +46,7 @@ export const ArticleListItem = ({
   hasTopBorder,
   hideImage,
   isLeadImage,
-  isBucket1
+  imageRight
 }: ArticleListItemProps) => {
   const breakpointKey = useBreakpointKey();
   const cardImage = !hideImage &&
@@ -58,19 +58,19 @@ export const ArticleListItem = ({
       }
     };
 
-  const isBucket1True = isBucket1 && breakpointKey === 'xl';
+  const isImageRight = imageRight && breakpointKey === 'xl';
 
   const CardMediaComponent = isLeadImage ? FullWidthCardMediaMob : CardMedia;
 
   const Layout: React.FC<LayoutProps> = ({ children }) => {
-    return isBucket1True ? <Block>{children}</Block> : <>{children}</>;
+    return isImageRight ? <Block>{children}</Block> : <>{children}</>;
   };
 
   return (
     <CardComposable
       alignContent="start"
       areas={
-        isBucket1True
+        isImageRight
           ? `
           border  border
           content media`
@@ -79,7 +79,7 @@ export const ArticleListItem = ({
          content
         `
       }
-      columns={{ xl: isBucket1True ? '1fr 1fr' : '1fr' }}
+      columns={{ xl: isImageRight ? '1fr 1fr' : '1fr' }}
       columnGap="space040"
     >
       {hasTopBorder && (
@@ -96,7 +96,7 @@ export const ArticleListItem = ({
       {image && !hideImage && <CardMediaComponent {...cardImage} />}
       <CardContent>
         {image &&
-          !isBucket1True &&
+          !isImageRight &&
           image.credit &&
           !hideImage && (
             <TextBlock
@@ -107,13 +107,13 @@ export const ArticleListItem = ({
               {image.credit}
             </TextBlock>
           )}
-        <Layout isBucket1True={isBucket1True || false}>
+        <Layout isImageRight={isImageRight || false}>
           <CardHeadlineLink
             href={url}
             role="link"
             overrides={{
               typographyPreset: 'editorialHeadline020',
-              paddingBlockStart: isBucket1True ? 'space000' : 'space040'
+              paddingBlockStart: isImageRight ? 'space000' : 'space040'
             }}
           >
             {title}

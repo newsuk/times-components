@@ -25,7 +25,7 @@ const defaultProps = {
   articleType: 'Review',
   timeToRead: '4 min read',
   color: '#E34605',
-  isBucket1: false
+  imageRight: false
 };
 
 describe('Render Article List Item', () => {
@@ -38,7 +38,7 @@ describe('Render Article List Item', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
     const { asFragment } = renderComponent({
       ...defaultProps,
-      isBucket1: true
+      imageRight: true
     });
     expect(asFragment()).toMatchSnapshot();
   });
