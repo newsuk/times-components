@@ -81,6 +81,7 @@ exports[`1. an article list header 1`] = `
   box-sizing: border-box;
   display: inline;
   margin: 0px;
+  margin-bottom: 12px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
@@ -108,6 +109,7 @@ exports[`1. an article list header 1`] = `
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 6px;
 }
 
 .c3 {
@@ -127,6 +129,7 @@ exports[`1. an article list header 1`] = `
   position: relative;
   z-index: 0;
   width: 100%;
+  margin-bottom: 14px;
 }
 
 .c5 {
@@ -151,6 +154,7 @@ exports[`1. an article list header 1`] = `
 @media (min-width:768px) {
   .c4 {
     font-size: 45px;
+    margin-bottom: 14px;
   }
 }
 
@@ -159,12 +163,19 @@ exports[`1. an article list header 1`] = `
     padding-left: 0;
     padding-right: 0;
     max-width: 680px;
+    padding-top: 16px;
   }
 }
 
 @media (min-width:1320px) {
   .c6 {
     max-width: 760px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    margin-bottom: 23px;
   }
 }
 
@@ -194,7 +205,6 @@ exports[`1. an article list header 1`] = `
         <Image
           borderColor="#FFFFFF"
           borderRadius={50}
-          marginBottom="20px"
           marginLeft="auto"
           marginRight="auto"
           overflow="hidden"
@@ -264,6 +274,10 @@ exports[`1. an article list header 1`] = `
       </div>
       <div
         className="c6"
+        paddingBottom="30px"
+        paddingLeft="10px"
+        paddingRight="10px"
+        width="100%"
       >
         <div
           className="c7"
