@@ -24,7 +24,7 @@ const AuthorProfileHead = ({
   const renderBiography = () => {
     if (!biography) return null;
     return (
-      <BioContainer>
+      <BioContainer style={styles.biographyContainer}>
         <AuthorProfileHeadBiography biography={biography} />
       </BioContainer>
     );
@@ -46,6 +46,7 @@ const AuthorProfileHead = ({
         role="heading"
         aria-level="1"
         data-testid="author-name"
+        style={styles.authorNameWrapper}
       >
         {name}
       </AuthorNameWrapper>

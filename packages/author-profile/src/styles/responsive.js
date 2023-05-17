@@ -25,7 +25,6 @@ export const AuthorNameWrapper = styled.h1`
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-
   color: ${colours.functional.brandColour};
   font-family: ${fontsWithFallback.headline};
   font-size: ${fontSizes.headline}px;
