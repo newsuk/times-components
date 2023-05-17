@@ -6,10 +6,10 @@ export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
   contractualTitle
 }) => (
   <Tooltip
+    fallbackBehaviour={'shift'}
     aria-live="polite"
     content={contractualTitle}
-    asLabel
-    placement="top-end"
+    placement="top-start"
     trigger={['focus', 'hover']}
     overrides={{
       offset: 'space000',
