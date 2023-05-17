@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.47.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.46.1...@times-components/ts-newskit@1.47.0) (2023-05-17)
+
+
+### Features
+
+* **TMRX-1226:** update articleList component to accommodate slice ([#3366](https://github.com/newsuk/times-components/issues/3366)) ([ddc3c41](https://github.com/newsuk/times-components/commit/ddc3c41a3e357f7823df17fc1440ea01b5febb3c))
+
+
+
+
+
 ## [1.46.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.46.0...@times-components/ts-newskit@1.46.1) (2023-05-17)
 
 
