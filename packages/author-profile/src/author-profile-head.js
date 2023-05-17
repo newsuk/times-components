@@ -24,7 +24,7 @@ const AuthorProfileHead = ({
   const renderBiography = () => {
     if (!biography) return null;
     return (
-      <BioContainer>
+      <BioContainer style={styles.biographyContainer}>
         <AuthorProfileHeadBiography biography={biography} />
       </BioContainer>
     );

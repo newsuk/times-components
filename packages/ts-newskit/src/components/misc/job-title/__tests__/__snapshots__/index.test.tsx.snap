@@ -3,7 +3,7 @@
 exports[`JobTitle - Larger Devices renders the Job title Tooltip on larger devices 1`] = `
 <DocumentFragment>
   <button
-    aria-label="Contractual Title"
+    aria-label="See contractual title, button"
     class="css-odwgmx"
     data-testid="Tooltip"
     type="button"
@@ -209,7 +209,8 @@ exports[`JobTitlePopover Renders the Popover when clicked 1`] = `
 exports[`JobTitleTooltip Renders the tooltip when clicked 1`] = `
 <DocumentFragment>
   <button
-    aria-label="Contractual Title Tooltip"
+    aria-describedby="floating-floating-ui-6"
+    aria-label="See contractual title, button"
     class="css-odwgmx"
     data-testid="Tooltip"
     type="button"
@@ -253,9 +254,11 @@ exports[`JobTitleTooltip Renders the tooltip when clicked 1`] = `
   </button>
   <div
     aria-hidden="true"
+    aria-live="polite"
     class="Tooltip nk-tooltip-enter-active css-18t1twk"
     data-testid="Tooltip"
     id="floating-floating-ui-6"
+    role="tooltip"
     tabindex="-1"
   >
     <p
