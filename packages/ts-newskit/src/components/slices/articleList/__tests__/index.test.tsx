@@ -2,6 +2,12 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '../../../../utils/test-utils';
 import { ArticleListItem, ArticleListItemProps } from '../index';
+import { useBreakpointKey } from 'newskit';
+
+jest.mock('newskit', () => ({
+  ...jest.requireActual('newskit'),
+  useBreakpointKey: jest.fn().mockReturnValue('xs')
+}));
 
 const renderComponent = (props: ArticleListItemProps) =>
   render(<ArticleListItem {...props} />);
@@ -17,12 +23,23 @@ const defaultProps = {
   url:
     '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
   articleType: 'Review',
-  timeToRead: '4 min read'
+  timeToRead: '4 min read',
+  color: '#E34605',
+  imageRight: false
 };
 
 describe('Render Article List Item', () => {
   it('should render a snapshot', () => {
     const { asFragment } = renderComponent(defaultProps);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('items should render without margin', () => {
+    (useBreakpointKey as any).mockReturnValue('xl');
+    const { asFragment } = renderComponent({
+      ...defaultProps,
+      imageRight: true
+    });
     expect(asFragment()).toMatchSnapshot();
   });
 

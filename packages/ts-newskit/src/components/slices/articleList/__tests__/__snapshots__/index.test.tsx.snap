@@ -1,9 +1,80 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Render Article List Item items should render without margin 1`] = `
+<DocumentFragment>
+  <div
+    class="css-niwyl0"
+  >
+    <div
+      class="css-1kwj960"
+    >
+      <picture
+        class="css-zp0elg"
+      >
+        <div
+          class="css-5pczz7"
+        />
+        <img
+          alt="This is ALT Text"
+          class="css-1qgqq71"
+          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+        />
+      </picture>
+    </div>
+    <div
+      class="css-diffbd"
+    >
+      <div
+        class="css-13byt3y"
+      >
+        <a
+          class="css-1xx4ios"
+          href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+          role="link"
+        >
+          <span
+            class="css-17x5lw"
+          >
+            <span
+              class="css-k2d5qk"
+            >
+              Harry & Meghan's New Project?
+            </span>
+          </span>
+        </a>
+        <div
+          class="css-13byt3y"
+        >
+          <span
+            class="css-18v3nbo"
+          >
+            Review
+          </span>
+          <div
+            class="css-lew009"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-15kf7hd"
+              data-testid="divider"
+            />
+          </div>
+          <span
+            class="css-sidzln"
+          >
+            4 min read
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`Render Article List Item should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-gsfmea"
+    class="css-1nw1nne"
   >
     <div
       class="css-1kwj960"
@@ -30,7 +101,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
         Credit
       </p>
       <a
-        class="css-u57k3c"
+        class="css-1ajoxx4"
         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
         role="link"
       >
@@ -49,7 +120,6 @@ exports[`Render Article List Item should render a snapshot 1`] = `
       >
         <span
           class="css-18v3nbo"
-          tabindex="0"
         >
           Review
         </span>
@@ -64,7 +134,6 @@ exports[`Render Article List Item should render a snapshot 1`] = `
         </div>
         <span
           class="css-sidzln"
-          tabindex="0"
         >
           4 min read
         </span>
