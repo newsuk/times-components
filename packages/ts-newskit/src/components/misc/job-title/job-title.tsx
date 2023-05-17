@@ -6,7 +6,6 @@ export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
   contractualTitle
 }) => (
   <Tooltip
-    fallbackBehaviour={'shift'}
     aria-live="polite"
     content={contractualTitle}
     placement="top-start"
