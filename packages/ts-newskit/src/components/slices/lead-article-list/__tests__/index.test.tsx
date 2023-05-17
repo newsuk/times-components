@@ -47,4 +47,13 @@ describe('Render Lead Article Item', () => {
     const articleListUrl = getByText('Flag');
     expect(articleListUrl).toBeInTheDocument();
   });
+
+  it('items should not render Tag', () => {
+    const { queryByText } = renderComponent({
+      ...defaultProps,
+      articleType: ''
+    });
+    const articleType = queryByText('Tag');
+    expect(articleType).not.toBeInTheDocument();
+  });
 });
