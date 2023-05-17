@@ -21,7 +21,7 @@ export const LeadArticle = ({
   listData
 }: LeadArticleProps) => {
   return (
-    <Block>
+    <>
       {articleType && (
         <Block>
           <TextBlock typographyPreset="utilityButton010" as="span">
@@ -32,8 +32,8 @@ export const LeadArticle = ({
       <CardHeadlineLink
         href={url}
         overrides={{
-          typographyPreset: 'editorialHeadline040',
-          marginBlockStart: 'space040'
+          typographyPreset: 'editorialHeadline020',
+          marginBlockStart: articleType ? 'space040' : 'space000'
         }}
         external={false}
       >
@@ -94,6 +94,6 @@ export const LeadArticle = ({
           {listData}
         </StyledUnorderedList>
       )}
-    </Block>
+    </>
   );
 };
