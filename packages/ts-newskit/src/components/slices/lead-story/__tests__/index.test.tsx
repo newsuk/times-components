@@ -17,11 +17,7 @@ const leadStoryData = {
 
 const renderComponent = () =>
   render(
-    <LeadStory
-      {...leadStoryData}
-      hasTagOrTimeToRead={false}
-      isBucket1={false}
-    />
+    <LeadStory {...leadStoryData} hasTagOrTimeToRead={false} imageTop={false} />
   );
 
 describe('Render Component one', () => {
@@ -63,20 +59,16 @@ describe('Render Component one', () => {
   it('should not render articleType if hasTagOrTimeToRead is false', () => {
     (useBreakpointKey as any).mockReturnValue('xs');
     const { queryByText } = renderComponent();
-    const articleType = queryByText(leadStory.articleType);
+    const articleType = queryByText(leadStory.articleType.label);
     expect(articleType).not.toBeVisible();
   });
 
   it('should render articleType if hasTagOrTimeToRead is false', () => {
     (useBreakpointKey as any).mockReturnValue('xs');
     const { queryByText } = render(
-      <LeadStory
-        {...leadStoryData}
-        hasTagOrTimeToRead={true}
-        isBucket1={true}
-      />
+      <LeadStory {...leadStoryData} hasTagOrTimeToRead={true} imageTop={true} />
     );
-    const articleType = queryByText(leadStory.articleType);
+    const articleType = queryByText(leadStory.articleType.label);
     expect(articleType).toBeVisible();
   });
 });

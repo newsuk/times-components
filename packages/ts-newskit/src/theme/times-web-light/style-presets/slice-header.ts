@@ -4,19 +4,20 @@ export const sliceHeaderStylePresets = {
       borderTop: 'dashed',
       borderWidth: '{{borders.borderWidth010}}',
       borderColor: '{{colors.interface060}}',
-      borderRadius: '{{colors.borderRadiusSharp}}'
+      borderRadius: '{{borders.borderRadiusSharp}}'
     }
   },
   sliceIconPreset: {
     base: {
-      iconColor: '{{colors.interactiveSecondary020}}',
-      color: '{{colors.inkBrand010}}'
+      backgroundColor: '{{colors.interactiveSecondary020}}',
+      color: '{{colors.inkBrand010}}',
+      borderRadius: '{{borders.borderRadiusCircle}}'
     },
     hover: {
-      iconColor: '{{colors.interface040}}'
+      backgroundColor: '{{colors.interface040}}'
     },
     active: {
-      iconColor: '{{colors.interface050}}'
+      backgroundColor: '{{colors.interface050}}'
     }
   }
 };

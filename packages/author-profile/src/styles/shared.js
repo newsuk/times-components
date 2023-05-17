@@ -18,7 +18,6 @@ const styles = {
   authorPhoto: {
     borderColor: colours.functional.contrast,
     borderRadius: 50,
-    marginBottom: spacing(4),
     marginLeft: "auto",
     marginRight: "auto",
     overflow: "hidden",

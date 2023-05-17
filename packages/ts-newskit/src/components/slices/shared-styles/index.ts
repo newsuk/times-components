@@ -1,6 +1,5 @@
 import {
   styled,
-  TextBlock,
   Block,
   getSizingCssFromTheme,
   getColorCssFromTheme,
@@ -8,7 +7,7 @@ import {
   CardMedia,
   getSpacingCssFromTheme,
   getMediaQueryFromTheme,
-  IconButton
+  LinkInline
 } from 'newskit';
 
 export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
@@ -27,20 +26,18 @@ export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
   }
 `;
 
-export const ColouredText = styled(TextBlock)<{ $color?: string }>`
-  ${({ $color }) => $color && getColorCssFromTheme('color', $color)};
+export const TextLink = styled(LinkInline)`
+  text-decoration: none;
+
+  &&:hover,
+  &&:active {
+    text-decoration: underline;
+  }
 `;
 
 export const ContainerInline = styled(Block)`
   display: inline-block;
   ${getSizingCssFromTheme('height', 'sizing020')};
-`;
-
-export const TransparentButton = styled(IconButton)`
-  &,
-  &:hover:not(:disabled) {
-    background-color: transparent;
-  }
 `;
 
 const setImageMargin = (space: string) => ({ marginInline: `-${space}` });

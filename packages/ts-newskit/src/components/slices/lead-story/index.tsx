@@ -5,32 +5,35 @@ import {
   Divider,
   CardContent,
   CardComposable,
-  Flag
+  Flag,
+  Tag
 } from 'newskit';
 import React from 'react';
 import {
   ContainerInline,
   CardHeadlineLink,
-  FullWidthCardMediaMob
+  FullWidthCardMediaMob,
+  TextLink
 } from '../shared-styles';
-import { ColouredText, StyledDivider } from './styles';
+import { StyledDivider } from './styles';
 
 export interface LeadStoryProps {
   headline: string;
-  color?: string;
   readingTime: string;
   summary: string;
   subHeadline?: string;
   caption: string;
   image: string;
   url: string;
-  articleType?: string;
+  articleType?: {
+    label: string;
+    href: string;
+  };
   hasTagOrTimeToRead?: boolean;
-  isBucket1?: boolean;
+  imageTop?: boolean;
 }
 export const LeadStory = ({
   headline,
-  color,
   readingTime,
   summary,
   subHeadline,
@@ -39,12 +42,12 @@ export const LeadStory = ({
   url,
   articleType,
   hasTagOrTimeToRead,
-  isBucket1
+  imageTop
 }: LeadStoryProps) => {
   const stylePresets = {
     typographyPreset: 'utilityButton010',
     stylePreset: 'inkBrand010',
-    paddingBlockStart: 'space050',
+    marginBlockStart: 'space050',
     paddingInline: 'space000',
     paddingBlock: 'space000',
     iconSize: 'iconSize010',
@@ -56,13 +59,13 @@ export const LeadStory = ({
       areas={{
         xs: `media 
              content`,
-        md: isBucket1
+        md: imageTop
           ? `media 
              content`
           : `content media`
       }}
       columnGap="space040"
-      columns={{ md: isBucket1 ? '1fr' : '3fr 5fr' }}
+      columns={{ md: imageTop ? '1fr' : '3fr 5fr' }}
     >
       <Block>
         <FullWidthCardMediaMob
@@ -73,39 +76,38 @@ export const LeadStory = ({
           }}
         />
         <TextBlock
-          paddingBlockStart="space020"
+          marginBlockStart="space020"
           typographyPreset="utilityMeta010"
         >
           {caption}
         </TextBlock>
       </Block>
       <CardContent alignContent="start">
-        {!isBucket1 && (
+        {!imageTop && (
           <StyledDivider overrides={{ stylePreset: 'dashedDivider' }} />
         )}
-        <Visible md lg xl>
-          {subHeadline && (
-            <ColouredText
+        {subHeadline && (
+          <Visible md lg xl>
+            <Tag
               size="small"
               overrides={{
                 ...stylePresets
               }}
-              $color={color}
             >
               {subHeadline}
-            </ColouredText>
-          )}
-        </Visible>
+            </Tag>
+          </Visible>
+        )}
         <CardHeadlineLink
-          expand
           href={url}
           overrides={{
-            typographyPreset: isBucket1
+            typographyPreset: imageTop
               ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
               : 'editorialHeadline040',
-            paddingBlockStart: 'space050'
+            marginBlockStart: 'space050'
           }}
           external={false}
+          expand={!articleType}
         >
           {headline}
         </CardHeadlineLink>
@@ -120,15 +122,16 @@ export const LeadStory = ({
           {summary}
         </TextBlock>
         <Visible xs={hasTagOrTimeToRead} sm={hasTagOrTimeToRead} md lg xl>
-          <ColouredText
-            size="small"
-            overrides={{
-              ...stylePresets
-            }}
-            $color={color}
-          >
-            {articleType}
-          </ColouredText>
+          {articleType && (
+            <TextLink
+              overrides={{
+                ...stylePresets
+              }}
+              href={articleType.href}
+            >
+              {articleType.label}
+            </TextLink>
+          )}
           {articleType &&
             readingTime && (
               <ContainerInline>
@@ -140,16 +143,18 @@ export const LeadStory = ({
                 />
               </ContainerInline>
             )}
-          <Flag
-            size="small"
-            overrides={{
-              ...stylePresets,
-              stylePreset: 'inkSubtle',
-              typographyPreset: 'utilityLabel010'
-            }}
-          >
-            {readingTime}
-          </Flag>
+          {readingTime && (
+            <Flag
+              size="small"
+              overrides={{
+                ...stylePresets,
+                stylePreset: 'inkSubtle',
+                typographyPreset: 'utilityLabel010'
+              }}
+            >
+              {readingTime}
+            </Flag>
+          )}
         </Visible>
       </CardContent>
     </CardComposable>

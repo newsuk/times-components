@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.47.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.46.1...@times-components/ts-newskit@1.47.0) (2023-05-17)
+
+
+### Features
+
+* **TMRX-1226:** update articleList component to accommodate slice ([#3366](https://github.com/newsuk/times-components/issues/3366)) ([ddc3c41](https://github.com/newsuk/times-components/commit/ddc3c41a3e357f7823df17fc1440ea01b5febb3c))
+
+
+
+
+
+## [1.46.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.46.0...@times-components/ts-newskit@1.46.1) (2023-05-17)
+
+
+### Bug Fixes
+
+* **TMRX-499:** Update author profile styling ([#3369](https://github.com/newsuk/times-components/issues/3369)) ([85d2b27](https://github.com/newsuk/times-components/commit/85d2b27a8bce0de021f46505ef133fdb247858a1))
+
+
+
+
+
+# [1.46.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.45.2...@times-components/ts-newskit@1.46.0) (2023-05-17)
+
+
+### Features
+
+* **TMRX-1267:** implement slice feedback ([#3362](https://github.com/newsuk/times-components/issues/3362)) ([e5aa16e](https://github.com/newsuk/times-components/commit/e5aa16ef9f35b1d8a7368d50db63111245661d3f))
+
+
+
+
+
 ## [1.45.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.45.1...@times-components/ts-newskit@1.45.2) (2023-05-16)
 
 **Note:** Version bump only for package @times-components/ts-newskit
