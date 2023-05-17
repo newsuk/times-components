@@ -17,17 +17,17 @@ This takes in a series of props, as below, to display heading, paragraph, articl
 <Props of={LeadArticle} />
 
 ## Code Example
-`<LeadArticle heading='Short title of the card describing the main content' paragraph='Short paragraph description of the article, outlining main story and focus.' articleType='Tag' readingTime='Flag'/>`
+`<LeadArticle heading='Short title of the card describing the main content' paragraph='Short paragraph description of the article, outlining main story and focus.' articleType='Tag' readingTime='Flag' listData = ['Unordered list item']/>`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const LeadArticleStory = ({ heading , paragraph , articleType , readingTime , url}) => (
+export const LeadArticleStory = ({ heading , paragraph , articleType , readingTime , url , listData}) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <LeadArticle {...{ heading,paragraph,articleType,readingTime,url }} />
+    <LeadArticle {...{ heading,paragraph,articleType,readingTime,url,listData}} />
   </NewsKitProvider>
 );
 
-<Story name="LeadArticle" args={{ heading: 'Short title of the card describing the main content', paragraph : 'Short paragraph description of the article, outlining main story and focus.', articleType:'Tag', readingTime:'Flag', url:'#'  }}>
+<Story name="LeadArticle" args={{ heading: 'Short title of the card describing the main content', paragraph : 'Short paragraph description of the article, outlining main story and focus.', articleType:'Tag', readingTime:'Flag', url:'#', listData: ['Unordered list item']  }}>
   {LeadArticleStory.bind({})}
 </Story>
