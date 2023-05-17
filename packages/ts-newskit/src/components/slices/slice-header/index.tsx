@@ -1,7 +1,6 @@
 import React from 'react';
 import { NewsKitChevronRightIcon } from '../../../assets';
-import { Block, Stack, TitleBar } from 'newskit';
-import { TransparentButton } from '../shared-styles';
+import { Block, IconButton, Stack, TitleBar } from 'newskit';
 
 export interface SliceHeaderProps {
   title: string;
@@ -28,21 +27,17 @@ export const SliceHeader = ({ title, href }: SliceHeaderProps) => {
         >
           {title}
         </TitleBar>
-        <TransparentButton
+        <IconButton
           size="medium"
           overrides={{
-            stylePreset: 'iconButtonSolidPrimary'
+            stylePreset: 'sliceIconPreset',
+            iconSize: 'iconSize020'
           }}
           role="link"
           href={href}
         >
-          <NewsKitChevronRightIcon
-            overrides={{
-              size: 'sizing080',
-              stylePreset: 'sliceIconPreset'
-            }}
-          />
-        </TransparentButton>
+          <NewsKitChevronRightIcon />
+        </IconButton>
       </Stack>
     </Block>
   );

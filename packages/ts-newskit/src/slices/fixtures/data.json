@@ -7,18 +7,20 @@
     "summary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
     "subHeadline": "",
     "caption": "Credit",
-    "image": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
+    "image": "/assets/main_01.jpg",
     "url": "https://www.thetimes.co.uk",
-    "articleType": "Review",
+    "articleType": {
+      "label": "Review",
+      "href": "/"
+    },
     "hasTagOrTimeToRead": false,
     "isBucket1": false
   },
   "articles": [
     {
       "image": {
-        "src": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
-        "alt": "This is ALT Text",
-        "credit": "Credit"
+        "src": "/assets/small_01.jpg",
+        "alt": "This is ALT Text"
       },
       "title": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
@@ -26,9 +28,8 @@
     },
     {
       "image": {
-        "src": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
-        "alt": "This is ALT Text",
-        "credit": "Credit"
+        "src": "/assets/small_02.jpg",
+        "alt": "This is ALT Text"
       },
       "title": "‘American owners pose threat to English pyramid’",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
@@ -36,7 +37,7 @@
     },
     {
       "image": {
-        "src": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
+        "src": "/assets/small_03.jpg",
         "alt": "This is ALT Text"
       },
       "title": "£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid",
@@ -45,9 +46,8 @@
     },
     {
       "image": {
-        "src": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
-        "alt": "This is ALT Text",
-        "credit": "Credit"
+        "src": "/assets/small_04.jpg",
+        "alt": "This is ALT Text"
       },
       "title": "Blow for rebel clubs as court says Uefa can block Super League",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",

@@ -20,12 +20,12 @@ exports[`Render Component one should render a snapshot 1`] = `
           <img
             alt="Sarcacens an inclusive club? They didnt look out for me"
             class="css-1qgqq71"
-            src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0"
+            src="/assets/main_01.jpg"
           />
         </picture>
       </div>
       <p
-        class="css-k8n4lr"
+        class="css-98oi0p"
       >
         Credit
       </p>
@@ -42,7 +42,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-11l110t"
       >
         <div
-          class="css-1j46hv8"
+          class="css-140acpc"
           data-testid="tag"
         >
           <span
@@ -53,7 +53,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         </div>
       </div>
       <a
-        class="css-1t08m60"
+        class="css-1xxy735"
         href="https://www.thetimes.co.uk"
       >
         <span
@@ -74,16 +74,20 @@ exports[`Render Component one should render a snapshot 1`] = `
       <div
         class="css-11l110t"
       >
-        <div
-          class="css-1j46hv8"
-          data-testid="tag"
+        <a
+          class="css-p268y5"
+          href="/"
         >
           <span
-            class="css-1qlv5b"
+            class="css-17x5lw"
           >
-            Review
+            <span
+              class="css-1i385gi"
+            >
+              Review
+            </span>
           </span>
-        </div>
+        </a>
         <div
           class="css-lew009"
         >
@@ -94,7 +98,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <div
-          class="css-lplqfv"
+          class="css-107ty6x"
           data-testid="flag"
         >
           <span

@@ -1,6 +1,6 @@
-import { CardComposable, CardContent, CardMedia } from 'newskit';
+import { CardComposable, CardContent, CardMedia, TextBlock } from 'newskit';
 import React from 'react';
-import { CardHeadlineLink, ColouredText } from '../shared-styles';
+import { CardHeadlineLink } from '../shared-styles';
 
 export interface CommentCardProps {
   image?: string;
@@ -42,9 +42,12 @@ export const CommentCard = ({
         >
           {heading}
         </CardHeadlineLink>
-        <ColouredText $color="inkBase" typographyPreset="editorialHeadline020">
+        <TextBlock
+          stylePreset="inkBase"
+          typographyPreset="editorialHeadline020"
+        >
           {content}
-        </ColouredText>
+        </TextBlock>
       </CardContent>
     </CardComposable>
   );

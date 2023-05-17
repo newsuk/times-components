@@ -21,7 +21,6 @@ type ImageProps = {
 };
 
 export interface ArticleListItemProps {
-  color?: string;
   title: string;
   url: string;
   image?: ImageProps;
@@ -46,7 +45,8 @@ export const ArticleListItem = ({
     image && {
       media: {
         src: image.src,
-        alt: image.alt || title
+        alt: image.alt || title,
+        loadingAspectRatio: '3:2'
       }
     };
 
@@ -56,16 +56,15 @@ export const ArticleListItem = ({
     <CardComposable
       alignContent="start"
       areas={`
-      border
-      media
-      content
-    `}
+        border
+        media
+        content
+      `}
     >
       {hasTopBorder && (
         <GridLayoutItem area="border">
           <Divider
             overrides={{
-              marginBlockStart: 'space040',
               marginBlockEnd: hideImage ? 'space000' : 'space040',
               stylePreset: 'dashedDivider'
             }}
@@ -93,7 +92,7 @@ export const ArticleListItem = ({
           role="link"
           overrides={{
             typographyPreset: 'editorialHeadline020',
-            paddingBlockStart: 'space040'
+            marginBlockStart: 'space040'
           }}
         >
           {title}
@@ -105,6 +104,7 @@ export const ArticleListItem = ({
               typographyPreset="articleListArticleType"
               as="span"
               marginBlockStart="space030"
+              tabIndex={0}
             >
               {articleType}
             </TextBlock>
@@ -124,6 +124,7 @@ export const ArticleListItem = ({
               stylePreset="articleListTimeToRead"
               as="span"
               marginBlockStart="space030"
+              tabIndex={0}
             >
               {timeToRead}
             </TextBlock>
