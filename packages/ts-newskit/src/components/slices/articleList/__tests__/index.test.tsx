@@ -17,8 +17,7 @@ const defaultProps = {
   url:
     '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
   articleType: 'Review',
-  timeToRead: '4 min read',
-  color: '#E34605'
+  timeToRead: '4 min read'
 };
 
 describe('Render Article List Item', () => {
@@ -60,8 +59,7 @@ describe('Render Article List Item', () => {
       url:
         '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
       articleType: 'Review',
-      timeToRead: '4 min read',
-      color: '#E34605'
+      timeToRead: '4 min read'
     });
     const articleListUrl = screen.getByAltText("Harry & Meghan's New Project?");
     expect(articleListUrl).toHaveAttribute(
