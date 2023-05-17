@@ -1,6 +1,5 @@
 import {
   styled,
-  TextBlock,
   Block,
   getSizingCssFromTheme,
   getColorCssFromTheme,
@@ -34,10 +33,6 @@ export const TextLink = styled(LinkInline)`
   &&:active {
     text-decoration: underline;
   }
-`;
-
-export const ColouredText = styled(TextBlock)<{ $color?: string }>`
-  ${({ $color }) => $color && getColorCssFromTheme('color', $color)};
 `;
 
 export const ContainerInline = styled(Block)`

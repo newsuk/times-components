@@ -111,9 +111,6 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-1ka10v1"
                 data-testid="divider"
               />
-              <div
-                class="css-11l110t"
-              />
               <a
                 class="css-1xxy735"
                 href="https://www.thetimes.co.uk"
@@ -225,7 +222,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     </span>
                   </a>
                   <p
-                    class="css-v1jlbq"
+                    class="css-x6wfrt"
                   >
                     Now is Willis’s chance to show he’s got more to offer than Curry
                   </p>
@@ -274,7 +271,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     </span>
                   </a>
                   <p
-                    class="css-v1jlbq"
+                    class="css-x6wfrt"
                   >
                     Now is Willis’s chance to show he’s got more to offer than Curry
                   </p>
@@ -534,7 +531,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </span>
                 </a>
                 <p
-                  class="css-v1jlbq"
+                  class="css-x6wfrt"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
@@ -583,7 +580,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </span>
                 </a>
                 <p
-                  class="css-v1jlbq"
+                  class="css-x6wfrt"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>

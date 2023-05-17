@@ -5,7 +5,8 @@ import {
   Divider,
   CardContent,
   CardComposable,
-  Flag
+  Flag,
+  Tag
 } from 'newskit';
 import React from 'react';
 import {
@@ -14,7 +15,7 @@ import {
   FullWidthCardMediaMob,
   TextLink
 } from '../shared-styles';
-import { ColouredText, StyledDivider } from './styles';
+import { StyledDivider } from './styles';
 
 export interface LeadStoryProps {
   headline: string;
@@ -71,7 +72,7 @@ export const LeadStory = ({
           media={{
             src: image,
             alt: headline,
-            loadingAspectRatio: '3:2',
+            loadingAspectRatio: '3:2'
           }}
         />
         <TextBlock
@@ -85,18 +86,18 @@ export const LeadStory = ({
         {!isBucket1 && (
           <StyledDivider overrides={{ stylePreset: 'dashedDivider' }} />
         )}
-        <Visible md lg xl>
-          {subHeadline && (
-            <ColouredText
+        {subHeadline && (
+          <Visible md lg xl>
+            <Tag
               size="small"
               overrides={{
                 ...stylePresets
               }}
             >
               {subHeadline}
-            </ColouredText>
-          )}
-        </Visible>
+            </Tag>
+          </Visible>
+        )}
         <CardHeadlineLink
           href={url}
           overrides={{
@@ -106,6 +107,7 @@ export const LeadStory = ({
             marginBlockStart: 'space050'
           }}
           external={false}
+          expand={!articleType}
         >
           {headline}
         </CardHeadlineLink>
@@ -140,7 +142,7 @@ export const LeadStory = ({
                   }}
                 />
               </ContainerInline>
-          )}
+            )}
           {readingTime && (
             <Flag
               size="small"

@@ -1,10 +1,18 @@
 import React from 'react';
 import { BreakpointKeys, Divider, GridLayout, Scroll } from 'newskit';
-import { ArticleListItem, ArticleListItemProps } from '../../components/slices/articleList';
+import {
+  ArticleListItem,
+  ArticleListItemProps
+} from '../../components/slices/articleList';
 import { ArticleDividerXL } from './styles';
 
-
-export const ArticleStack = ({ articles, breakpoint }: { articles: ArticleListItemProps[], breakpoint: BreakpointKeys }) => {
+export const ArticleStack = ({
+  articles,
+  breakpoint
+}: {
+  articles: ArticleListItemProps[];
+  breakpoint: BreakpointKeys;
+}) => {
   const articleGrid = (
     <GridLayout
       columns={{
@@ -23,10 +31,7 @@ export const ArticleStack = ({ articles, breakpoint }: { articles: ArticleListIt
           const articleBorder = breakpoint !== 'lg' &&
             breakpoint !== 'xl' &&
             articleIndex < articleArr.length - 1 && (
-              <Divider
-                overrides={{ stylePreset: 'lightDivider' }}
-                vertical
-              />
+              <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
             );
 
           const articleTopBorder =
@@ -55,16 +60,16 @@ export const ArticleStack = ({ articles, breakpoint }: { articles: ArticleListIt
     </GridLayout>
   );
 
-  const isMob = (breakpoint === "xs" || breakpoint === "sm");
+  const isMob = breakpoint === 'xs' || breakpoint === 'sm';
 
-  return (
-    isMob ? (
-      <Scroll
-        overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
-        tabIndex={undefined}
-      >
-        {articleGrid}
-      </Scroll>
-    ) : articleGrid
+  return isMob ? (
+    <Scroll
+      overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
+      tabIndex={undefined}
+    >
+      {articleGrid}
+    </Scroll>
+  ) : (
+    articleGrid
   );
 };

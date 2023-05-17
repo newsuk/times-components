@@ -9,7 +9,7 @@ type TCThemeProviderProps = {
 export const themes = {
   TimesWebLightTheme,
   TimesWebLightSportTheme
-}
+};
 
 export const TCThemeProvider: React.FC<TCThemeProviderProps> = ({
   theme = TimesWebLightTheme,

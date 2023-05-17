@@ -14,9 +14,7 @@ import {
   SliceHeader,
   SliceHeaderProps
 } from '../../components/slices/slice-header';
-import {
-  ArticleListItemProps
-} from '../../components/slices/articleList';
+import { ArticleListItemProps } from '../../components/slices/articleList';
 import {
   LeadStoryDivider,
   LeadStoryCell,
