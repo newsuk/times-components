@@ -46,7 +46,6 @@ const AuthorProfileHead = ({
         role="heading"
         aria-level="1"
         data-testid="author-name"
-        style={styles.authorNameWrapper}
       >
         {name}
       </AuthorNameWrapper>

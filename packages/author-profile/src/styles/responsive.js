@@ -22,6 +22,7 @@ export const AuthorNameWrapper = styled.h1`
   box-sizing: border-box;
   display: inline;
   margin: 0px;
+  margin-bottom: 12px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
@@ -31,6 +32,7 @@ export const AuthorNameWrapper = styled.h1`
 
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
+    margin-bottom: 14px;
   }
 `;
 
@@ -38,11 +40,12 @@ export const BioContainer = styled(TcView)`
   width: 100%;
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
-
+  padding-top: 6px;
   @media (min-width: ${breakpoints.medium}px) {
     padding-left: 0;
     padding-right: 0;
     max-width: 680px;
+    padding-top: 16px;
   }
 
   @media (min-width: ${breakpoints.huge}px) {
@@ -52,6 +55,10 @@ export const BioContainer = styled(TcView)`
 
 export const ImageContainer = styled(TcView)`
   width: 100%;
+  margin-bottom: 14px;
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-bottom: 23px;
+  }
 `;
 
 export const AuthorProfileHeadJobTitleContainer = styled.h2`

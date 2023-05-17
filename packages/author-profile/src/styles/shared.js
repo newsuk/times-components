@@ -1,9 +1,6 @@
 import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
 const styles = {
-  authorNameWrapper: {
-    paddingBottom: spacing(3)
-  },
   authorHeadContainer: {
     alignItems: "center",
     backgroundColor: colours.functional.backgroundPrimary,
@@ -21,7 +18,6 @@ const styles = {
   authorPhoto: {
     borderColor: colours.functional.contrast,
     borderRadius: 50,
-    marginBottom: spacing(5),
     marginLeft: "auto",
     marginRight: "auto",
     overflow: "hidden",
@@ -39,7 +35,6 @@ const styles = {
     paddingBottom: spacing(6),
     paddingLeft: spacing(2),
     paddingRight: spacing(2),
-    paddingTop: spacing(3),
     width: "100%"
   },
   jobTitle: {
