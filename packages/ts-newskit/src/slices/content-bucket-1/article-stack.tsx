@@ -1,16 +1,13 @@
 import React from 'react';
 import { BreakpointKeys, Divider, GridLayout, Scroll } from 'newskit';
-import {
-  ArticleListItem,
-  ArticleListItemProps
-} from '../../components/slices/articleList';
+import { Article, ArticleProps } from '../../components/slices/article';
 import { ArticleDividerXL } from './styles';
 
 export const ArticleStack = ({
   articles,
   breakpoint
 }: {
-  articles: ArticleListItemProps[];
+  articles: ArticleProps[];
   breakpoint: BreakpointKeys;
 }) => {
   const articleGrid = (
@@ -26,30 +23,28 @@ export const ArticleStack = ({
       rowGap="space040"
       data-testid="article-container"
     >
-      {articles.map(
-        (article: ArticleListItemProps, articleIndex, articleArr) => {
-          const articleBorder = breakpoint !== 'lg' &&
-            breakpoint !== 'xl' &&
-            articleIndex < articleArr.length - 1 && (
-              <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
-            );
-
-          const articleTopBorder =
-            (breakpoint === 'xl' && articleIndex > 1) ||
-            (breakpoint === 'lg' && articleIndex > 0);
-
-          return (
-            <React.Fragment key={article.title}>
-              <ArticleListItem
-                {...article}
-                hasTopBorder={articleTopBorder}
-                hideImage={breakpoint === 'lg'}
-              />
-              {articleBorder}
-            </React.Fragment>
+      {articles.map((article: ArticleProps, articleIndex, articleArr) => {
+        const articleBorder = breakpoint !== 'lg' &&
+          breakpoint !== 'xl' &&
+          articleIndex < articleArr.length - 1 && (
+            <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
           );
-        }
-      )}
+
+        const articleTopBorder =
+          (breakpoint === 'xl' && articleIndex > 1) ||
+          (breakpoint === 'lg' && articleIndex > 0);
+
+        return (
+          <React.Fragment key={article.title}>
+            <Article
+              {...article}
+              hasTopBorder={articleTopBorder}
+              hideImage={breakpoint === 'lg'}
+            />
+            {articleBorder}
+          </React.Fragment>
+        );
+      })}
 
       {breakpoint === 'xl' && (
         <ArticleDividerXL

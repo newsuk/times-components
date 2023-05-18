@@ -4,15 +4,12 @@ import {
   SliceHeader,
   SliceHeaderProps
 } from '../../components/slices/slice-header';
-import {
-  ArticleListItem,
-  ArticleListItemProps
-} from '../../components/slices/articleList';
+import { Article, ArticleProps } from '../../components/slices/article';
 import { CellNoMargin } from '../shared-styles';
 
 export interface ContentBucket2Props {
   section: SliceHeaderProps;
-  articles: ArticleListItemProps[];
+  articles: ArticleProps[];
 }
 
 export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
@@ -33,31 +30,26 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
           columnGap="space040"
           data-testid="article-container"
         >
-          {articles.map(
-            (article: ArticleListItemProps, articleIndex, articleArr) => {
-              const articleBorder = articleIndex < articleArr.length - 1 &&
-                !isMob && (
-                  <Divider
-                    overrides={{ stylePreset: 'lightDivider' }}
-                    vertical
-                  />
-                );
-
-              const isAfterFirstArticle = isMob && articleIndex > 0;
-
-              return (
-                <React.Fragment key={article.title}>
-                  <ArticleListItem
-                    {...article}
-                    hideImage={isAfterFirstArticle}
-                    isLeadImage={isMob && articleIndex === 0}
-                    hasTopBorder={isMob && articleIndex > 0}
-                  />
-                  {articleBorder}
-                </React.Fragment>
+          {articles.map((article: ArticleProps, articleIndex, articleArr) => {
+            const articleBorder = articleIndex < articleArr.length - 1 &&
+              !isMob && (
+                <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
               );
-            }
-          )}
+
+            const isAfterFirstArticle = isMob && articleIndex > 0;
+
+            return (
+              <React.Fragment key={article.title}>
+                <Article
+                  {...article}
+                  hideImage={isAfterFirstArticle}
+                  isLeadImage={isMob && articleIndex === 0}
+                  hasTopBorder={isMob && articleIndex > 0}
+                />
+                {articleBorder}
+              </React.Fragment>
+            );
+          })}
         </GridLayout>
       </CellNoMargin>
     </Grid>

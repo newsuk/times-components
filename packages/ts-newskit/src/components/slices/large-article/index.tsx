@@ -1,31 +1,33 @@
 import { Block, TextBlock, Divider } from 'newskit';
 import React from 'react';
-import { CardHeadlineLink, ContainerInline } from '../shared-styles';
+import { CardHeadlineLink, ContainerInline, TextLink } from '../shared-styles';
 import { StyledUnorderedList } from './style';
 
-export interface LeadArticleProps {
+export interface LargeArticleProps {
   heading: string;
   paragraph?: string;
-  articleType?: string;
-  readingTime?: string;
+  tagL1?: string;
+  flag?: string;
   url: string;
   listData?: string[];
+  tag?: string;
 }
 
-export const LeadArticle = ({
+export const LargeArticle = ({
   heading,
   paragraph,
-  articleType,
-  readingTime,
+  tagL1,
+  flag,
   url,
-  listData
-}: LeadArticleProps) => {
+  listData,
+  tag
+}: LargeArticleProps) => {
   return (
     <>
-      {articleType && (
+      {tagL1 && (
         <Block>
           <TextBlock typographyPreset="utilityButton010" as="span">
-            {articleType.toUpperCase()}
+            {tagL1.toUpperCase()}
           </TextBlock>
         </Block>
       )}
@@ -33,7 +35,7 @@ export const LeadArticle = ({
         href={url}
         overrides={{
           typographyPreset: 'editorialHeadline020',
-          marginBlockStart: articleType ? 'space040' : 'space000'
+          marginBlockStart: tagL1 ? 'space040' : 'space000'
         }}
         external={false}
       >
@@ -51,13 +53,19 @@ export const LeadArticle = ({
           {paragraph}
         </TextBlock>
       )}
-      {(articleType || readingTime) && (
+      {(tag || flag) && (
         <Block marginBlockStart="space050">
-          <TextBlock typographyPreset="utilityButton010" as="span">
-            {articleType}
-          </TextBlock>
-          {articleType &&
-            readingTime && (
+          <TextLink
+            overrides={{
+              typographyPreset: 'utilityButton010',
+              stylePreset: 'inkBrand010'
+            }}
+            href={url}
+          >
+            {tag}
+          </TextLink>
+          {tag &&
+            flag && (
               <ContainerInline>
                 <Divider
                   vertical
@@ -72,7 +80,7 @@ export const LeadArticle = ({
             stylePreset="inkSubtle"
             as="span"
           >
-            {readingTime}
+            {flag}
           </TextBlock>
         </Block>
       )}

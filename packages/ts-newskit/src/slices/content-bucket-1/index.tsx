@@ -9,12 +9,15 @@ import {
 } from 'newskit';
 import React from 'react';
 import { CommentCardProps } from '../../components/slices/comment-card';
-import { LeadStory, LeadStoryProps } from '../../components/slices/lead-story';
+import {
+  LeadArticle,
+  LeadArticleProps
+} from '../../components/slices/lead-article';
 import {
   SliceHeader,
   SliceHeaderProps
 } from '../../components/slices/slice-header';
-import { ArticleListItemProps } from '../../components/slices/articleList';
+import { ArticleProps } from '../../components/slices/article';
 import {
   LeadStoryDivider,
   LeadStoryCell,
@@ -25,14 +28,14 @@ import { ArticleStack } from './article-stack';
 
 export interface ContentBucket1Props {
   section: SliceHeaderProps;
-  leadStory: LeadStoryProps;
+  leadArticle: LeadArticleProps;
   comments: CommentCardProps[];
-  articles: ArticleListItemProps[];
+  articles: ArticleProps[];
 }
 
 export const ContentBucket1 = ({
   section,
-  leadStory,
+  leadArticle,
   comments,
   articles
 }: ContentBucket1Props) => {
@@ -51,7 +54,7 @@ export const ContentBucket1 = ({
               vertical
             />
           </Visible>
-          <LeadStory {...leadStory} />
+          <LeadArticle {...leadArticle} />
         </Block>
         <Block marginInlineEnd={{ xs: 'space000', lg: 'space020' }}>
           <Hidden md>

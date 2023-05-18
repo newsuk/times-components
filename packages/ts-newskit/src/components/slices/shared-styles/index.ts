@@ -28,10 +28,10 @@ export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
 
 export const TextLink = styled(LinkInline)`
   text-decoration: none;
-
   &&:hover,
   &&:active {
     text-decoration: underline;
+    text-underline-position: under;
   }
 `;
 

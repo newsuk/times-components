@@ -1,17 +1,18 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '../../../../utils/test-utils';
-import { LeadArticle, LeadArticleProps } from '../index';
+import { LargeArticle, LargeArticleProps } from '../index';
 
-const renderComponent = (props: LeadArticleProps) =>
-  render(<LeadArticle {...props} />);
+const renderComponent = (props: LargeArticleProps) =>
+  render(<LargeArticle {...props} />);
 
 const defaultProps = {
   heading: 'Short title of the card describing the main content',
   paragraph:
     'Short paragraph description of the article, outlining main story and focus.',
-  articleType: 'Tag',
-  readingTime: 'Flag',
+  tagL1: 'TAG',
+  tag: 'Tag',
+  flag: 'Flag',
   url: '#',
   listData: ['Unordered list item']
 };
@@ -48,10 +49,19 @@ describe('Render Lead Article Item', () => {
     expect(articleListUrl).toBeInTheDocument();
   });
 
+  it('items should not render TAG', () => {
+    const { queryByText } = renderComponent({
+      ...defaultProps,
+      tagL1: ''
+    });
+    const articleType = queryByText('TAG');
+    expect(articleType).not.toBeInTheDocument();
+  });
+
   it('items should not render Tag', () => {
     const { queryByText } = renderComponent({
       ...defaultProps,
-      articleType: ''
+      tag: ''
     });
     const articleType = queryByText('Tag');
     expect(articleType).not.toBeInTheDocument();

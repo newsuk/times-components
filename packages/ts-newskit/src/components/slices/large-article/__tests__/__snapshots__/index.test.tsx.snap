@@ -33,11 +33,20 @@ exports[`Render Lead Article Item should render a snapshot 1`] = `
   <div
     class="css-13s74dp"
   >
-    <span
-      class="css-1qlv5b"
+    <a
+      class="css-10d4t8c"
+      href="#"
     >
-      Tag
-    </span>
+      <span
+        class="css-17x5lw"
+      >
+        <span
+          class="css-1i385gi"
+        >
+          Tag
+        </span>
+      </span>
+    </a>
     <div
       class="css-lew009"
     >
