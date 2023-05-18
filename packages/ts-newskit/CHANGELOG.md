@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.48.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.47.0...@times-components/ts-newskit@1.48.0) (2023-05-18)
+
+
+### Features
+
+* **TMRX-1229:** develop lead article list component ([#3370](https://github.com/newsuk/times-components/issues/3370)) ([d4caf93](https://github.com/newsuk/times-components/commit/d4caf93fb23311e0242840628c3c726ce445e2ea))
+
+
+
+
+
 # [1.47.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.46.1...@times-components/ts-newskit@1.47.0) (2023-05-17)
 
 
