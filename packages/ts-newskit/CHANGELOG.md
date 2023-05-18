@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.49.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.48.0...@times-components/ts-newskit@1.49.0) (2023-05-18)
+
+
+### Features
+
+* **TMRX-1267:** change padding to margin on ContentBucket2 ([#3371](https://github.com/newsuk/times-components/issues/3371)) ([7db9c8c](https://github.com/newsuk/times-components/commit/7db9c8c81e28ac9a4b1a7a9f7a75a1bc314ff41e))
+
+
+
+
+
 # [1.48.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.47.0...@times-components/ts-newskit@1.48.0) (2023-05-18)
 
 
