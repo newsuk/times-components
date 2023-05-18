@@ -1,4 +1,4 @@
-import { Divider, Stack } from 'newskit';
+import { Divider, GridLayout } from 'newskit';
 import React from 'react';
 import {
   CommentCard,
@@ -15,15 +15,17 @@ export const CommentStack = ({ comments }: CommentStackProps) => {
       <Divider
         overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
       />
-      <Stack
-        flow={{ xs: 'vertical-left', md: 'horizontal-center' }}
-        stackDistribution="space-evenly"
+      <GridLayout
+        columns={{
+          xs: '1fr',
+          md: '1fr 1px 1fr'
+        }}
+        columnGap="space040"
       >
         {comments.map((comment, commentIndex, commentArr) => {
           const hasBorder = commentIndex < commentArr.length - 1 && (
             <AvatarDivider
               overrides={{
-                marginInline: { md: 'space040' },
                 marginBlock: { xs: 'space040', md: 'space000' },
                 stylePreset: 'lightDivider'
               }}
@@ -38,7 +40,7 @@ export const CommentStack = ({ comments }: CommentStackProps) => {
             </React.Fragment>
           );
         })}
-      </Stack>
+      </GridLayout>
     </>
   );
 };
