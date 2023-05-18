@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '../../../../utils/test-utils';
-import { ArticleListItem, ArticleListItemProps } from '../index';
+import { Article, ArticleProps } from '../index';
 import { useBreakpointKey } from 'newskit';
 
 jest.mock('newskit', () => ({
@@ -9,8 +9,7 @@ jest.mock('newskit', () => ({
   useBreakpointKey: jest.fn().mockReturnValue('xs')
 }));
 
-const renderComponent = (props: ArticleListItemProps) =>
-  render(<ArticleListItem {...props} />);
+const renderComponent = (props: ArticleProps) => render(<Article {...props} />);
 
 const defaultProps = {
   image: {

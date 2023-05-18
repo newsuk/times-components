@@ -21,7 +21,7 @@ type ImageProps = {
   credit?: string;
 };
 
-export interface ArticleListItemProps {
+export interface ArticleProps {
   title: string;
   url: string;
   image?: ImageProps;
@@ -37,7 +37,7 @@ type LayoutProps = {
   isImageRight: boolean;
 };
 
-export const ArticleListItem = ({
+export const Article = ({
   image,
   title,
   url,
@@ -47,7 +47,7 @@ export const ArticleListItem = ({
   hideImage,
   isLeadImage,
   imageRight
-}: ArticleListItemProps) => {
+}: ArticleProps) => {
   const breakpointKey = useBreakpointKey();
   const cardImage = !hideImage &&
     image && {

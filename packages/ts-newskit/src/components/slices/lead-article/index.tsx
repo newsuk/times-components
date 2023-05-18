@@ -17,7 +17,7 @@ import {
 } from '../shared-styles';
 import { StyledDivider } from './styles';
 
-export interface LeadStoryProps {
+export interface LeadArticleProps {
   headline: string;
   readingTime: string;
   summary: string;
@@ -32,7 +32,7 @@ export interface LeadStoryProps {
   hasTagOrTimeToRead?: boolean;
   imageTop?: boolean;
 }
-export const LeadStory = ({
+export const LeadArticle = ({
   headline,
   readingTime,
   summary,
@@ -43,7 +43,7 @@ export const LeadStory = ({
   articleType,
   hasTagOrTimeToRead,
   imageTop
-}: LeadStoryProps) => {
+}: LeadArticleProps) => {
   const stylePresets = {
     typographyPreset: 'utilityButton010',
     stylePreset: 'inkBrand010',
