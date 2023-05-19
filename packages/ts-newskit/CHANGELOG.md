@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.49.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.49.0...@times-components/ts-newskit@1.49.1) (2023-05-19)
+
+
+### Bug Fixes
+
+* **TMST-673:** CardsContainer and PuzzleCard fixes ([#3372](https://github.com/newsuk/times-components/issues/3372)) ([a2753b5](https://github.com/newsuk/times-components/commit/a2753b580e2462744d4be3b577937b0b3bb41fb2))
+
+
+
+
+
 # [1.49.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.48.0...@times-components/ts-newskit@1.49.0) (2023-05-18)
 
 
