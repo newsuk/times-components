@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
-import { GridLayout, getSSRId, Scroll } from 'newskit';
+import { GridLayout, getSSRId, Scroll, GridLayoutItem } from 'newskit';
 import { Puzzle } from '../archive/types';
-import { StyledGridLayoutItem, StyledTitleBar } from './styles';
+import { StyledTitleBar } from './styles';
 import { ScrollControls } from './ScrollControls';
+import { PuzzleCard } from '../puzzle-card';
 
 interface CardsContainerProps {
   cards: Puzzle[];
@@ -86,14 +87,14 @@ export const CardsContainer = ({
           }}
         >
           {' '}
-          {cards.map(() => (
-            <StyledGridLayoutItem
+          {cards.map(card => (
+            <GridLayoutItem
               key={getSSRId()}
               data-test-id="single-card"
               ref={cardRef}
             >
-              {/* add card here */}
-            </StyledGridLayoutItem>
+              <PuzzleCard data={card} />
+            </GridLayoutItem>
           ))}
         </GridLayout>
       </Scroll>

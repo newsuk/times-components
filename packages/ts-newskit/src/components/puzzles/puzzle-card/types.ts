@@ -1,7 +1,14 @@
 export type Image = {
-  id: number;
-  src: string;
-  title: string;
+  id: string;
+  title?: string;
   caption?: string;
   credit?: string;
+  crops: Array<{
+    ratio?: string;
+    url?: string;
+  }>;
+  crop: {
+    ratio?: string;
+    url?: string;
+  };
 };

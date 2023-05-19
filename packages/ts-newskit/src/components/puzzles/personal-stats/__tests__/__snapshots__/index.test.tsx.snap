@@ -80,8 +80,9 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
       </div>
     </div>
     <svg
-      class="css-pc2hck"
+      class="css-18bymcv"
       height="24"
+      overrides="[object Object]"
       preserveAspectRatio="none"
       viewBox="0 0 1440 24"
       width="100%"

@@ -18,14 +18,14 @@ This component takes in the following props:
 <Props of={PuzzleCard} />
 
 ## Code Example
-`<PuzzleCard data={ id, shortIdentifier, title, publishedAt, status, url, image } />`
+`<PuzzleCard data={data} />`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review and configure with different titles.
 
-export const PuzzleCardStory = ({id, shortIdentifier, title, publishedAt, status, url, image}) => (
+export const PuzzleCardStory = ({data}) => (
   <NewsKitProvider theme={PuzzlesWebLightTheme}>
-    <PuzzleCard {...{ id, shortIdentifier, title, publishedAt, status, url, image }} />
+    <PuzzleCard {...{data}} />
   </NewsKitProvider>
 );
 
@@ -35,15 +35,7 @@ export const PuzzleCardStory = ({id, shortIdentifier, title, publishedAt, status
     publishedAt: { control: 'date' },
     status: { control: "select", options: ["COMPLETE", "IN PROGRESS"] }
   }}
-  args={{
-    id: puzzles.list[0].id,
-    shortIdentifier: puzzles.list[0].shortIdentifier,
-    title: puzzles.list[0].title,
-    publishedAt: puzzles.list[0].publishedAt,
-    status: puzzles.list[0].status,
-    url: puzzles.list[0].url,
-    image: puzzles.list[0].image,
-  }}
+  args={{ data: puzzles.list[0] }}
 >
   {PuzzleCardStory.bind({})}
 </Story>

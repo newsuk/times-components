@@ -3,7 +3,7 @@
         "list": [
             {
                 "hideOnMobile": true,
-                "id": 1,
+                "id": "1",
                 "shortIdentifier": "test-1",
                 "slug": "",
                 "title": "Sudoku",
@@ -11,11 +11,20 @@
                 "publishedAt": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
                 "status": "",
                 "gameLevel": "easy",
-                "url": "https://www.newskit.co.uk/components/accordion/"
+                "url": "https://www.newskit.co.uk/components/accordion/",
+                "image": {
+                    "id": "1dsadsa4dsa5dsad4",
+                    "crops": [
+                        {
+                            "ratio": "3:2",
+                            "url": "https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                        }
+                    ]
+                }
             },
             {
                 "hideOnMobile": true,
-                "id": 2,
+                "id": "2",
                 "shortIdentifier": "test-2",
                 "slug": "",
                 "title": "Sudoku",
@@ -23,11 +32,20 @@
                 "publishedAt": "Fri Mar 03 2023 00:00:00 GMT+0100 (Central European Standard Time)",
                 "status": "",
                 "gameLevel": "mild",
-                "url": "https://www.newskit.co.uk/components/accordion/"
+                "url": "https://www.newskit.co.uk/components/accordion/",
+                "image": {
+                    "id": "1dsadsa4dsa5dsad4",
+                    "crops": [
+                        {
+                            "ratio": "3:2",
+                            "url": "https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                        }
+                    ]
+                }
             },
             {
                 "hideOnMobile": true,
-                "id": 3,
+                "id": "3",
                 "shortIdentifier": "test-3",
                 "slug": "",
                 "title": "Sudoku",
@@ -35,11 +53,20 @@
                 "publishedAt": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
                 "status": "COMPLETE",
                 "gameLevel": "difficult",
-                "url": "https://www.newskit.co.uk/components/accordion/"
+                "url": "https://www.newskit.co.uk/components/accordion/",
+                "image": {
+                    "id": "1dsadsa4dsa5dsad4",
+                    "crops": [
+                        {
+                            "ratio": "3:2",
+                            "url": "https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                        }
+                    ]
+                }
             },
             {
                 "hideOnMobile": true,
-                "id": 4,
+                "id": "4",
                 "shortIdentifier": "test-4",
                 "slug": "",
                 "title": "Sudoku",
@@ -47,11 +74,20 @@
                 "publishedAt": "Sun Feb 26 2023 00:00:00 GMT+0100 (Central European Standard Time)",
                 "status": "",
                 "gameLevel": "warm up",
-                "url": "https://www.newskit.co.uk/components/accordion/"
+                "url": "https://www.newskit.co.uk/components/accordion/",
+                "image": {
+                    "id": "1dsadsa4dsa5dsad4",
+                    "crops": [
+                        {
+                            "ratio": "3:2",
+                            "url": "https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                        }
+                    ]
+                }
             },
             {
                 "hideOnMobile": true,
-                "id": 5,
+                "id": "5",
                 "shortIdentifier": "test-5",
                 "slug": "",
                 "title": "Sudoku",
@@ -59,11 +95,20 @@
                 "publishedAt": "Sat Feb 25 2023 00:00:00 GMT+0100 (Central European Standard Time)",
                 "status": "COMPLETE",
                 "gameLevel": "hard",
-                "url": "https://www.newskit.co.uk/components/accordion/"
+                "url": "https://www.newskit.co.uk/components/accordion/",
+                "image": {
+                    "id": "1dsadsa4dsa5dsad4",
+                    "crops": [
+                        {
+                            "ratio": "3:2",
+                            "url": "https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                        }
+                    ]
+                }
             },
             {
                 "hideOnMobile": true,
-                "id": 6,
+                "id": "6",
                 "shortIdentifier": "test-6",
                 "slug": "",
                 "title": "Sudoku",
@@ -71,11 +116,20 @@
                 "publishedAt": "Fri Feb 24 2023 00:00:00 GMT+0100 (Central European Standard Time)",
                 "status": "",
                 "gameLevel": "very hard",
-                "url": "https://www.newskit.co.uk/components/accordion/"
+                "url": "https://www.newskit.co.uk/components/accordion/",
+                "image": {
+                    "id": "1dsadsa4dsa5dsad4",
+                    "crops": [
+                        {
+                            "ratio": "3:2",
+                            "url": "https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                        }
+                    ]
+                }
             },
             {
                 "hideOnMobile": true,
-                "id": 7,
+                "id": "7",
                 "shortIdentifier": "test-7",
                 "slug": "",
                 "title": "Sudoku",
@@ -83,11 +137,20 @@
                 "publishedAt": "Thu Feb 23 2023 00:00:00 GMT+0100 (Central European Standard Time)",
                 "status": "",
                 "gameLevel": "fiendish",
-                "url": "https://www.newskit.co.uk/components/accordion/"
+                "url": "https://www.newskit.co.uk/components/accordion/",
+                "image": {
+                    "id": "1dsadsa4dsa5dsad4",
+                    "crops": [
+                        {
+                            "ratio": "3:2",
+                            "url": "https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                        }
+                    ]
+                }
             },
             {
                 "hideOnMobile": true,
-                "id": 8,
+                "id": "8",
                 "shortIdentifier": "test-8",
                 "slug": "",
                 "title": "Killer sudoku",
@@ -95,11 +158,20 @@
                 "publishedAt": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
                 "status": "",
                 "gameLevel": "hard",
-                "url": "https://www.newskit.co.uk/components/accordion/"
+                "url": "https://www.newskit.co.uk/components/accordion/",
+                "image": {
+                    "id": "1dsadsa4dsa5dsad4",
+                    "crops": [
+                        {
+                            "ratio": "3:2",
+                            "url": "https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                        }
+                    ]
+                }
             },
             {
                 "hideOnMobile": true,
-                "id": 9,
+                "id": "9",
                 "shortIdentifier": "test-9",
                 "slug": "",
                 "title": "Killer sudoku",
@@ -107,11 +179,20 @@
                 "publishedAt": "Fri Mar 03 2023 00:00:00 GMT+0100 (Central European Standard Time)",
                 "status": "",
                 "gameLevel": "warm up",
-                "url": "https://www.newskit.co.uk/components/accordion/"
+                "url": "https://www.newskit.co.uk/components/accordion/",
+                "image": {
+                    "id": "1dsadsa4dsa5dsad4",
+                    "crops": [
+                        {
+                            "ratio": "3:2",
+                            "url": "https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                        }
+                    ]
+                }
             },
             {
                 "hideOnMobile": true,
-                "id": 10,
+                "id": "10",
                 "shortIdentifier": "test-10",
                 "slug": "",
                 "title": "Killer sudoku",
@@ -119,7 +200,16 @@
                 "publishedAt": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
                 "status": "COMPLETE",
                 "gameLevel": "mild",
-                "url": "https://www.newskit.co.uk/components/accordion/"
+                "url": "https://www.newskit.co.uk/components/accordion/",
+                "image": {
+                    "id": "1dsadsa4dsa5dsad4",
+                    "crops": [
+                        {
+                            "ratio": "3:2",
+                            "url": "https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                        }
+                    ]
+                }
             }
         ]
     }

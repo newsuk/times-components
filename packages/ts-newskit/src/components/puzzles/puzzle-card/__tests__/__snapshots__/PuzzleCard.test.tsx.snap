@@ -9,47 +9,43 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
       class="css-13byt3y"
       style="position: relative;"
     >
-      <svg
-        class="css-b28mi"
-        data-testid="puzzle-placeholder"
-        fill="none"
-        viewBox="0 0 293 196"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          clip-path="url(#clip0_3503_95754)"
-        >
-          <path
-            clip-rule="evenodd"
-            d="M0 4C0 1.79086 1.79086 0 4 0H289C291.209 0 293 1.79086 293 4V195.333H0V4Z"
-            fill="currentcolor"
-            fill-rule="evenodd"
-          />
-        </g>
-        <defs>
-          <clippath
-            id="clip0_3503_95754"
-          >
-            <path
-              d="M0 4C0 1.79086 1.79086 0 4 0H289C291.209 0 293 1.79086 293 4V195.333H0V4Z"
-              fill="currentcolor"
-            />
-          </clippath>
-        </defs>
-      </svg>
       <div
-        class="css-7wldo2"
+        class="css-1kwj960"
+        data-testid="puzzle-image"
       >
-        <div
-          class="css-7el6ft"
-          data-testid="flag"
+        <picture
+          class="css-2pubdt"
         >
-          <span
-            class="css-1qlv5b"
+          <div
+            class="css-5pczz7"
           >
-            COMPLETE
-          </span>
-        </div>
+            <div
+              class="css-1q2lbmy"
+            >
+              <svg
+                aria-hidden="true"
+                class="css-2xpd25-EmotionIconBase ex0cdmw0"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <img
+            alt="Polygon"
+            class="css-1qgqq71"
+            src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+          />
+        </picture>
       </div>
     </div>
     <div
@@ -58,7 +54,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
       <a
         class="css-1r8aulg"
         data-testid="puzzleCard-link"
-        href="https://www.newskit.co.uk/"
+        href="https://www.newskit.co.uk/components/accordion/"
       >
         <span
           class="css-pqzzby"
@@ -69,7 +65,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
             <div
               class="css-reoy8x"
             >
-              General Knowledge
+              Polygon
             </div>
           </span>
           <span
@@ -106,12 +102,12 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
           <span
             class="css-qsmink"
           >
-            Sunday
+            Friday
           </span>
           <span
             class="css-16ew30g"
           >
-             | No. 9873
+             | test-1
           </span>
         </div>
       </div>

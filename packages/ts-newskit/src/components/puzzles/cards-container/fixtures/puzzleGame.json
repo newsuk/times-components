@@ -1,7 +1,7 @@
 {
     "puzzleGame": {
         "hideOnMobile": false,
-        "id": 1,
+        "id": "1da45sasds1dsa6",
         "shortIdentifier": "test-1",
         "slug": "",
         "title": "Puzzle Name",
@@ -9,6 +9,15 @@
         "publishedAt": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
         "status": "IN PROGRESS",
         "gameLevel": "Jumbo",
-        "url": "https://www.newskit.co.uk/components/accordion/"
+        "url": "https://www.newskit.co.uk/components/accordion/",
+        "image": {
+            "id": "1dsadsa4dsa5dsad4",
+            "crops": [
+                {
+                    "ratio": "3:2",
+                    "url": "https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                }
+            ]
+        }
     }
 }
