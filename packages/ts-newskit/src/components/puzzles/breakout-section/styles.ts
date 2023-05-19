@@ -28,7 +28,7 @@ export const BreakoutSectionBtn = styled(Button)<ButtonProps>`
 
 export const StyledSudokuIconD4 = styled(SudokuIconD4)`
   position: absolute;
-  bottom: -21px;
+  bottom: -20px;
 `;
 
 export const StyledSudokuIconD2 = styled(SudokuIconD2)`

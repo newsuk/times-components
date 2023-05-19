@@ -64,7 +64,7 @@ export const PersonalStats: FC<PersonalStatsProps> = ({ data }) => {
           ))}
         </PersonalStatisticsCard>
       </PersonalStatisticsContainer>
-      <StyledNewskitWaveBg />
+      <StyledNewskitWaveBg overrides={{ marginBlockStart: '-1px' }} />
     </Block>
   );
 };

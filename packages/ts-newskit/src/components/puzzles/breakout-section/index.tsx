@@ -68,7 +68,7 @@ export const BreakoutSection: FC<BreakoutSectionProps> = ({ data }) => {
         </BreakoutSectionGridLayout>
         <StyledSudokuIconD4 />
       </BreakoutSectionContainer>
-      <StyledNewskitWaveBg />
+      <StyledNewskitWaveBg overrides={{ marginBlockStart: '-1px' }} />
     </Block>
   );
 };

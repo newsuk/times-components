@@ -23,8 +23,8 @@ export type Puzzle = {
   type?: string;
   url: string;
   publishedAt: string; // needs to be added
-  status: 'COMPLETE' | 'IN PROGRESS' | string; // needs to be added
-  gameLevel: string; // needs to be added
+  status?: 'COMPLETE' | 'IN PROGRESS' | string; // needs to be added
+  gameLevel?: string; // needs to be added
 };
 
 export type Puzzles = {
