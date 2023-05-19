@@ -1,18 +1,26 @@
 type Image = {
-  caption: string;
-  credit: string;
-  id: number;
-  title: string;
+  id: string;
+  title?: string;
+  caption?: string;
+  credit?: string;
+  crops: Array<{
+    ratio?: string;
+    url?: string;
+  }>;
+  crop?: {
+    ratio?: string;
+    url?: string;
+  };
 };
 
 export type Puzzle = {
   hideOnMobile: boolean;
-  id: number;
-  image?: Image;
-  shortIdentifier: string;
-  slug: string;
+  id: string;
+  image: Image;
+  shortIdentifier?: string;
+  slug?: string;
   title: string;
-  type: string;
+  type?: string;
   url: string;
   publishedAt: string; // needs to be added
   status: 'COMPLETE' | 'IN PROGRESS' | string; // needs to be added
