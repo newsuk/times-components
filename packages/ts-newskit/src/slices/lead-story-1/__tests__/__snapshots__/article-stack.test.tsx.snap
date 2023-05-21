@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Lead Story 1 Slice Large Article Stack 1`] = `
+exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
 <DocumentFragment>
   <div
     class="css-1r18k3i"
@@ -341,7 +341,7 @@ exports[`Render Lead Story 1 Slice Large Article Stack 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Render Lead Story 1 Slice Small Aricle Stack 1`] = `
+exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
 <DocumentFragment>
   <div
     class="css-194m366"
@@ -352,6 +352,15 @@ exports[`Render Lead Story 1 Slice Small Aricle Stack 1`] = `
       <div
         class="css-1nw1nne"
       >
+        <div
+          class="css-tj8oo8"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1i1gqyx"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-1kwj960"
         >
@@ -428,6 +437,15 @@ exports[`Render Lead Story 1 Slice Small Aricle Stack 1`] = `
         class="css-1nw1nne"
       >
         <div
+          class="css-tj8oo8"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1i1gqyx"
+            data-testid="divider"
+          />
+        </div>
+        <div
           class="css-1kwj960"
         >
           <picture
@@ -470,6 +488,15 @@ exports[`Render Lead Story 1 Slice Small Aricle Stack 1`] = `
       <div
         class="css-1nw1nne"
       >
+        <div
+          class="css-tj8oo8"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1i1gqyx"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-1kwj960"
         >
@@ -535,6 +562,15 @@ exports[`Render Lead Story 1 Slice Small Aricle Stack 1`] = `
         class="css-1nw1nne"
       >
         <div
+          class="css-tj8oo8"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1i1gqyx"
+            data-testid="divider"
+          />
+        </div>
+        <div
           class="css-1kwj960"
         >
           <picture
@@ -598,6 +634,15 @@ exports[`Render Lead Story 1 Slice Small Aricle Stack 1`] = `
       <div
         class="css-1nw1nne"
       >
+        <div
+          class="css-tj8oo8"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1i1gqyx"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-1kwj960"
         >

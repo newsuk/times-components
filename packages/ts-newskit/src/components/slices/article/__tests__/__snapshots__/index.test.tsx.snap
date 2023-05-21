@@ -42,6 +42,38 @@ exports[`Render Article List Item items should render without margin 1`] = `
             </span>
           </span>
         </a>
+        <div
+          class="css-1atazsr"
+        >
+          <a
+            class="css-10d4t8c"
+            href="/"
+          >
+            <span
+              class="css-17x5lw"
+            >
+              <span
+                class="css-1i385gi"
+              >
+                Review
+              </span>
+            </span>
+          </a>
+          <div
+            class="css-lew009"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-15kf7hd"
+              data-testid="divider"
+            />
+          </div>
+          <span
+            class="css-nqhqa4"
+          >
+            4 min read
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -92,6 +124,38 @@ exports[`Render Article List Item should render a snapshot 1`] = `
           </span>
         </span>
       </a>
+      <div
+        class="css-1atazsr"
+      >
+        <a
+          class="css-10d4t8c"
+          href="/"
+        >
+          <span
+            class="css-17x5lw"
+          >
+            <span
+              class="css-1i385gi"
+            >
+              Review
+            </span>
+          </span>
+        </a>
+        <div
+          class="css-lew009"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
+        </div>
+        <span
+          class="css-nqhqa4"
+        >
+          4 min read
+        </span>
+      </div>
     </div>
   </div>
 </DocumentFragment>
