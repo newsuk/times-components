@@ -2,30 +2,24 @@ import {
   TextBlock,
   Visible,
   Block,
-  Divider,
   CardContent,
   CardComposable,
-  Flag,
   Tag
 } from 'newskit';
 import React from 'react';
-import {
-  ContainerInline,
-  CardHeadlineLink,
-  FullWidthCardMediaMob,
-  TextLink
-} from '../shared-styles';
+import { CardHeadlineLink, FullWidthCardMediaMob } from '../shared-styles';
 import { StyledDivider } from './styles';
+import { TagAndFlag } from '../shared';
 
 export interface LeadArticleProps {
   headline: string;
-  readingTime: string;
+  flag: string;
   summary: string;
   subHeadline?: string;
   caption: string;
   image: string;
   url: string;
-  articleType?: {
+  tag?: {
     label: string;
     href: string;
   };
@@ -34,13 +28,13 @@ export interface LeadArticleProps {
 }
 export const LeadArticle = ({
   headline,
-  readingTime,
+  flag,
   summary,
   subHeadline,
   caption,
   image,
   url,
-  articleType,
+  tag,
   hasTagOrTimeToRead,
   imageTop
 }: LeadArticleProps) => {
@@ -53,6 +47,9 @@ export const LeadArticle = ({
     iconSize: 'iconSize010',
     spaceInline: 'space010'
   };
+
+  const defaultTag = { label: '', href: '' };
+  const { label, href } = tag || defaultTag;
 
   return (
     <CardComposable
@@ -107,7 +104,7 @@ export const LeadArticle = ({
             marginBlockStart: 'space050'
           }}
           external={false}
-          expand={!articleType}
+          expand={!tag}
         >
           {headline}
         </CardHeadlineLink>
@@ -122,38 +119,13 @@ export const LeadArticle = ({
           {summary}
         </TextBlock>
         <Visible xs={hasTagOrTimeToRead} sm={hasTagOrTimeToRead} md lg xl>
-          {articleType && (
-            <TextLink
-              overrides={{
-                ...stylePresets
-              }}
-              href={articleType.href}
-            >
-              {articleType.label}
-            </TextLink>
-          )}
-          {articleType &&
-            readingTime && (
-              <ContainerInline>
-                <Divider
-                  vertical
-                  overrides={{
-                    marginInline: 'space020'
-                  }}
-                />
-              </ContainerInline>
-            )}
-          {readingTime && (
-            <Flag
-              size="small"
-              overrides={{
-                ...stylePresets,
-                stylePreset: 'inkSubtle',
-                typographyPreset: 'utilityLabel010'
-              }}
-            >
-              {readingTime}
-            </Flag>
+          {(tag || flag) && (
+            <TagAndFlag
+              tag={label}
+              flag={flag}
+              href={href}
+              marginBlockStart="space050"
+            />
           )}
         </Visible>
       </CardContent>

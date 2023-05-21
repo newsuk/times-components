@@ -1,7 +1,8 @@
-import { Block, TextBlock, Divider } from 'newskit';
+import { Block, TextBlock } from 'newskit';
 import React from 'react';
-import { CardHeadlineLink, ContainerInline, TextLink } from '../shared-styles';
+import { CardHeadlineLink } from '../shared-styles';
 import { StyledUnorderedList } from './style';
+import { TagAndFlag } from '../shared';
 
 export interface LargeArticleProps {
   heading: string;
@@ -10,7 +11,11 @@ export interface LargeArticleProps {
   flag?: string;
   url: string;
   listData?: string[];
-  tag?: string;
+  tag?: {
+    label: string;
+    href: string;
+  };
+  topArticle?: string;
 }
 
 export const LargeArticle = ({
@@ -20,10 +25,13 @@ export const LargeArticle = ({
   flag,
   url,
   listData,
-  tag
+  tag,
+  topArticle
 }: LargeArticleProps) => {
+  const defaultTag = { label: '', href: '' };
+  const { label, href } = tag || defaultTag;
   return (
-    <>
+    <Block>
       {tagL1 && (
         <Block>
           <TextBlock typographyPreset="utilityButton010" as="span">
@@ -34,7 +42,9 @@ export const LargeArticle = ({
       <CardHeadlineLink
         href={url}
         overrides={{
-          typographyPreset: 'editorialHeadline020',
+          typographyPreset: topArticle
+            ? 'editorialHeadline040'
+            : 'editorialHeadline020',
           marginBlockStart: tagL1 ? 'space040' : 'space000'
         }}
         external={false}
@@ -54,35 +64,12 @@ export const LargeArticle = ({
         </TextBlock>
       )}
       {(tag || flag) && (
-        <Block marginBlockStart="space050">
-          <TextLink
-            overrides={{
-              typographyPreset: 'utilityButton010',
-              stylePreset: 'inkBrand010'
-            }}
-            href={url}
-          >
-            {tag}
-          </TextLink>
-          {tag &&
-            flag && (
-              <ContainerInline>
-                <Divider
-                  vertical
-                  overrides={{
-                    marginInline: 'space020'
-                  }}
-                />
-              </ContainerInline>
-            )}
-          <TextBlock
-            typographyPreset="utilityLabel010"
-            stylePreset="inkSubtle"
-            as="span"
-          >
-            {flag}
-          </TextBlock>
-        </Block>
+        <TagAndFlag
+          tag={label}
+          flag={flag}
+          href={href}
+          marginBlockStart="space050"
+        />
       )}
       {listData && (
         <StyledUnorderedList
@@ -102,6 +89,6 @@ export const LargeArticle = ({
           {listData}
         </StyledUnorderedList>
       )}
-    </>
+    </Block>
   );
 };

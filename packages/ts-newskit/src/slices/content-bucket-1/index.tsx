@@ -52,6 +52,7 @@ export const ContentBucket1 = ({
             <LeadStoryDivider
               overrides={{ stylePreset: 'lightDivider' }}
               vertical
+              position="right"
             />
           </Visible>
           <LeadArticle {...leadArticle} />
