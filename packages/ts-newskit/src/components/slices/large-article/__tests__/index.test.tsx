@@ -72,4 +72,23 @@ describe('Render Lead Article Item', () => {
     const articleType = queryByText('Tag');
     expect(articleType).not.toBeInTheDocument();
   });
+
+  it('should not render tag or flag if they are not provided', () => {
+    const formatedDefaultProps = {
+      heading: 'Short title of the card describing the main content',
+      paragraph:
+        'Short paragraph description of the article, outlining main story and focus.',
+
+      tagL1: 'TAG',
+      url: '#',
+      listData: ['Unordered list item']
+    };
+
+    const { queryByText } = render(<LargeArticle {...formatedDefaultProps} />);
+    const tag = queryByText('Tag');
+    const flag = queryByText('Flag');
+
+    expect(tag).not.toBeInTheDocument();
+    expect(flag).not.toBeInTheDocument();
+  });
 });
