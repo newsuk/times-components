@@ -18,7 +18,7 @@ import {
 } from '../../components/slices/slice-header';
 import { ArticleProps } from '../../components/slices/article';
 import {
-  LeadStoryCell,
+  LeadSArticleCell,
   CellNoMargin,
   LeadStoryDivider
 } from '../shared-styles';
@@ -88,7 +88,7 @@ export const LeadStory1 = ({
       <CellNoMargin xs={12} md={5} lg={3} xl={3}>
         <LargeArticles largeArticles={largeArticles} />
       </CellNoMargin>
-      <LeadStoryCell xs={12} md={7} lg={6} xl={5}>
+      <LeadSArticleCell xs={12} md={7} lg={6} xl={5}>
         <Hidden md lg xl>
           <FullWidthDividerMob>
             <Divider
@@ -119,7 +119,7 @@ export const LeadStory1 = ({
             breakpoint={breakpointKey}
           />
         </Block>
-      </LeadStoryCell>
+      </LeadSArticleCell>
       <CellNoMargin xs={12} lg={3} xl={4}>
         <Hidden lg xl>
           <FullWidthDividerMob>
@@ -145,13 +145,15 @@ export const LeadStory1 = ({
               }}
             />
           </Hidden>
-          <ArticleStackSmall
-            articles={twoArticles}
-            isLeadStory={true}
-            hideImage={screenMd}
-            hasTopBorder={false}
-            breakpoint={breakpointKey}
-          />
+          <Block marginBlockEnd={{ md: 'space040' }}>
+            <ArticleStackSmall
+              articles={twoArticles}
+              isLeadStory={true}
+              hideImage={screenMd}
+              hasTopBorder={false}
+              breakpoint={breakpointKey}
+            />
+          </Block>
         </Visible>
       </CellNoMargin>
     </Grid>

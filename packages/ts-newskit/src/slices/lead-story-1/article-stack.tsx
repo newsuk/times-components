@@ -85,7 +85,7 @@ export const ArticleStackSmall = ({
           breakpoint !== 'sm' &&
           articleIndex < articleArr.length - 1 && (
             <Block
-              marginBlock={{
+              marginBlockStart={{
                 md: !hideImage ? 'space000' : 'space040'
               }}
             >
@@ -99,7 +99,7 @@ export const ArticleStackSmall = ({
           );
         return (
           <React.Fragment key={article.title}>
-            <Block marginBlockEnd={{ xs: 'space040' }}>
+            <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
               <Article
                 {...article}
                 hasTopBorder={hasTopBorder}

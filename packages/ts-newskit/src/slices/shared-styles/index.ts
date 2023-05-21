@@ -12,6 +12,14 @@ export const CellNoMargin = styled(Cell)`
   }
 `;
 
+const setBlockMargin = (space: string) => ({ marginBlockEnd: `${space}` });
+export const LeadSArticleCell = styled(CellNoMargin)`
+  position: relative;
+  ${getMediaQueryFromTheme('md')} {
+    ${getSpacingCssFromTheme(setBlockMargin, 'space040')};
+  }
+`;
+
 export const LeadStoryCell = styled(CellNoMargin)`
   position: relative;
 `;

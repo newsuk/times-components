@@ -30,8 +30,7 @@
         "label": "Tag",
         "href": "/"
       },
-      "flag": "Flag1",
-      "area": "A"
+      "flag": "Flag1"
     },
     {
       "image": {
@@ -41,8 +40,7 @@
       "title": "American owners pose threat to English pyramid",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "color": "#E34605",
-      "imageRight": false,
-      "area": "B"
+      "imageRight": false
     },
     {
       "image": {
@@ -56,8 +54,7 @@
       "tag": {
         "label": "Tag",
         "href": "/"
-      },
-      "area": "C"
+      }
     },
     {
       "image": {
@@ -68,8 +65,7 @@
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "color": "#E34605",
       "imageRight": false,
-      "flag": "Flag4",
-      "area": "D"
+      "flag": "Flag4"
     },
     {
       "image": {
@@ -84,8 +80,7 @@
         "label": "Tag",
         "href": "/"
       },
-      "flag": "Flag5",
-      "area": "E"
+      "flag": "Flag5"
     }
   ],
 
