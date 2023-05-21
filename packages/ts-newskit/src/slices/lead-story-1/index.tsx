@@ -26,7 +26,7 @@ import { ArticleStackLarge, ArticleStackSmall } from './article-stack';
 import { LargeArticles } from './large-article-stack';
 import { LargeArticleProps } from '../../components/slices/large-article';
 import { FullWidthDividerMob } from '../../components/slices/shared-styles';
-export interface ContentBucket1Props {
+export interface LeadStory1Props {
   section: SliceHeaderProps;
   leadArticle: LeadArticleProps;
   articles: ArticleProps[];
@@ -40,7 +40,7 @@ export const LeadStory1 = ({
   articles,
   largeArticles,
   smallArticles
-}: ContentBucket1Props) => {
+}: LeadStory1Props) => {
   const breakpointKey = useBreakpointKey();
 
   const modifedArticles =
