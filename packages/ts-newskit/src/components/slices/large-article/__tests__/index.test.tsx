@@ -10,10 +10,13 @@ const defaultProps = {
   heading: 'Short title of the card describing the main content',
   paragraph:
     'Short paragraph description of the article, outlining main story and focus.',
+  tag: {
+    label: 'Tag',
+    href: '/'
+  },
   tagL1: 'TAG',
-  tag: 'Tag',
-  flag: 'Flag',
   url: '#',
+  flag: 'Flag',
   listData: ['Unordered list item']
 };
 
@@ -61,7 +64,10 @@ describe('Render Lead Article Item', () => {
   it('items should not render Tag', () => {
     const { queryByText } = renderComponent({
       ...defaultProps,
-      tag: ''
+      tag: {
+        label: '',
+        href: ''
+      }
     });
     const articleType = queryByText('Tag');
     expect(articleType).not.toBeInTheDocument();

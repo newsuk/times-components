@@ -44,7 +44,7 @@ describe('Render Component one', () => {
   it('should render correct readingTime', () => {
     const { getByText } = renderComponent();
 
-    const readingTimeText = getByText(leadArticle.readingTime);
+    const readingTimeText = getByText(leadArticle.tag.label);
     expect(readingTimeText).toBeInTheDocument();
   });
   it('should render correct caption', () => {
@@ -63,7 +63,7 @@ describe('Render Component one', () => {
   it('should not render articleType if hasTagOrTimeToRead is false', () => {
     (useBreakpointKey as any).mockReturnValue('xs');
     const { queryByText } = renderComponent();
-    const articleType = queryByText(leadArticle.articleType.label);
+    const articleType = queryByText(leadArticle.tag.label);
     expect(articleType).not.toBeVisible();
   });
 
@@ -76,7 +76,7 @@ describe('Render Component one', () => {
         imageTop={true}
       />
     );
-    const articleType = queryByText(leadArticle.articleType.label);
+    const articleType = queryByText(leadArticle.tag.label);
     expect(articleType).toBeVisible();
   });
 });
