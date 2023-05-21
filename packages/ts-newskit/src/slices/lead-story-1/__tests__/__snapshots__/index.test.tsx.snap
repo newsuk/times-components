@@ -381,7 +381,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           class="css-3hmgqa"
         >
           <div
-            class="css-1pgtvq2"
+            class="css-13byt3y"
           >
             <div
               class="css-15edd2j"
@@ -443,40 +443,44 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   Lyon lock Joel Kpoku tells Will Kelleher that he's fired up to face old team — and urges more English stars to move to France
                 </p>
                 <div
-                  class="css-11l110t"
+                  class="css-1pgtvq2"
                 >
                   <div
-                    class="css-13s74dp"
-                    data-testid="tag-and-flag"
+                    class="css-11l110t"
                   >
-                    <a
-                      class="css-10d4t8c"
-                      href="/"
+                    <div
+                      class="css-1atazsr"
+                      data-testid="tag-and-flag"
                     >
-                      <span
-                        class="css-17x5lw"
+                      <a
+                        class="css-10d4t8c"
+                        href="/"
                       >
                         <span
-                          class="css-1i385gi"
+                          class="css-17x5lw"
                         >
-                          Review
+                          <span
+                            class="css-1i385gi"
+                          >
+                            Review
+                          </span>
                         </span>
+                      </a>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                      <span
+                        class="css-nqhqa4"
+                      >
+                        4 min read
                       </span>
-                    </a>
-                    <div
-                      class="css-lew009"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
                     </div>
-                    <span
-                      class="css-nqhqa4"
-                    >
-                      4 min read
-                    </span>
                   </div>
                 </div>
               </div>
@@ -1575,7 +1579,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-3hmgqa"
         >
           <div
-            class="css-1pgtvq2"
+            class="css-13byt3y"
           >
             <div
               class="css-15edd2j"
@@ -1637,40 +1641,44 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   Lyon lock Joel Kpoku tells Will Kelleher that he's fired up to face old team — and urges more English stars to move to France
                 </p>
                 <div
-                  class="css-11l110t"
+                  class="css-1pgtvq2"
                 >
                   <div
-                    class="css-13s74dp"
-                    data-testid="tag-and-flag"
+                    class="css-11l110t"
                   >
-                    <a
-                      class="css-10d4t8c"
-                      href="/"
+                    <div
+                      class="css-1atazsr"
+                      data-testid="tag-and-flag"
                     >
-                      <span
-                        class="css-17x5lw"
+                      <a
+                        class="css-10d4t8c"
+                        href="/"
                       >
                         <span
-                          class="css-1i385gi"
+                          class="css-17x5lw"
                         >
-                          Review
+                          <span
+                            class="css-1i385gi"
+                          >
+                            Review
+                          </span>
                         </span>
+                      </a>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                      <span
+                        class="css-nqhqa4"
+                      >
+                        4 min read
                       </span>
-                    </a>
-                    <div
-                      class="css-lew009"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
                     </div>
-                    <span
-                      class="css-nqhqa4"
-                    >
-                      4 min read
-                    </span>
                   </div>
                 </div>
               </div>

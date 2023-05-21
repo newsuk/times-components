@@ -58,7 +58,7 @@ export const LeadStory1 = ({
 
   const LeadStoryLayout: React.FC = ({ children }) => {
     return (
-      <Block marginBlockEnd="space040">
+      <Block>
         <Visible lg xl>
           <LeadStoryDivider
             overrides={{ stylePreset: 'lightDivider' }}

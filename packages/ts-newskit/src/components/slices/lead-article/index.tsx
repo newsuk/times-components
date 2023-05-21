@@ -4,11 +4,11 @@ import {
   Block,
   CardContent,
   CardComposable,
-  Tag
+  Tag,
+  Divider
 } from 'newskit';
 import React from 'react';
 import { CardHeadlineLink, FullWidthCardMediaMob } from '../shared-styles';
-import { StyledDivider } from './styles';
 import { TagAndFlag } from '../shared';
 
 export interface LeadArticleProps {
@@ -54,8 +54,11 @@ export const LeadArticle = ({
   return (
     <CardComposable
       areas={{
-        xs: `media 
-             content`,
+        xs: imageTop
+          ? `media
+             content`
+          : `content 
+             media`,
         md: imageTop
           ? `media 
              content`
@@ -81,7 +84,11 @@ export const LeadArticle = ({
       </Block>
       <CardContent alignContent="start">
         {!imageTop && (
-          <StyledDivider overrides={{ stylePreset: 'dashedDivider' }} />
+          <Divider
+            overrides={{
+              stylePreset: 'dashedDivider'
+            }}
+          />
         )}
         {subHeadline && (
           <Visible md lg xl>
@@ -118,16 +125,18 @@ export const LeadArticle = ({
         >
           {summary}
         </TextBlock>
-        <Visible xs={hasTagOrTimeToRead} sm={hasTagOrTimeToRead} md lg xl>
-          {(tag || flag) && (
-            <TagAndFlag
-              tag={label}
-              flag={flag}
-              href={href}
-              marginBlockStart="space050"
-            />
-          )}
-        </Visible>
+        <Block marginBlockEnd="space040">
+          <Visible xs={hasTagOrTimeToRead} sm={hasTagOrTimeToRead} md lg xl>
+            {(tag || flag) && (
+              <TagAndFlag
+                tag={label}
+                flag={flag}
+                href={href}
+                marginBlockStart="space040"
+              />
+            )}
+          </Visible>
+        </Block>
       </CardContent>
     </CardComposable>
   );
