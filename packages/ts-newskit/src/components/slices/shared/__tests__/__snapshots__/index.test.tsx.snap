@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TagAndFlag should render a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1atazsr"
+    data-testid="tag-and-flag"
+  >
+    <a
+      class="css-10d4t8c"
+      href="/"
+    >
+      <span
+        class="css-17x5lw"
+      >
+        <span
+          class="css-1i385gi"
+        >
+          Tag
+        </span>
+      </span>
+    </a>
+    <div
+      class="css-lew009"
+    >
+      <hr
+        aria-hidden="true"
+        class="css-15kf7hd"
+        data-testid="divider"
+      />
+    </div>
+    <span
+      class="css-nqhqa4"
+    >
+      flag
+    </span>
+  </div>
+</DocumentFragment>
+`;

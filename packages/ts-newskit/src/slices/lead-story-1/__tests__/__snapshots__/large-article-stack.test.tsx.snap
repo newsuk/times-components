@@ -41,6 +41,7 @@ exports[`Render Lead Story 1 Slice Large Article Stack 1`] = `
         </p>
         <div
           class="css-13s74dp"
+          data-testid="tag-and-flag"
         >
           <a
             class="css-10d4t8c"
@@ -191,6 +192,7 @@ exports[`Render Lead Story 1 Slice Large Article Stack 1`] = `
         </p>
         <div
           class="css-13s74dp"
+          data-testid="tag-and-flag"
         >
           <a
             class="css-10d4t8c"
@@ -341,6 +343,7 @@ exports[`Render Lead Story 1 Slice Large Article Stack 1`] = `
         </p>
         <div
           class="css-13s74dp"
+          data-testid="tag-and-flag"
         >
           <a
             class="css-10d4t8c"

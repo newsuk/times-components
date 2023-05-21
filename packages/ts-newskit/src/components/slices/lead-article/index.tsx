@@ -13,7 +13,7 @@ import { TagAndFlag } from '../shared';
 
 export interface LeadArticleProps {
   headline: string;
-  flag: string;
+  flag?: string;
   summary: string;
   subHeadline?: string;
   caption: string;

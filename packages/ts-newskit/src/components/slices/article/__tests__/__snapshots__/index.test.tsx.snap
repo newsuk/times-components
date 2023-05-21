@@ -44,6 +44,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
         </a>
         <div
           class="css-1atazsr"
+          data-testid="tag-and-flag"
         >
           <a
             class="css-10d4t8c"
@@ -126,6 +127,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
       </a>
       <div
         class="css-1atazsr"
+        data-testid="tag-and-flag"
       >
         <a
           class="css-10d4t8c"

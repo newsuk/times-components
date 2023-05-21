@@ -102,6 +102,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               </p>
               <div
                 class="css-13s74dp"
+                data-testid="tag-and-flag"
               >
                 <a
                   class="css-10d4t8c"
@@ -252,6 +253,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               </p>
               <div
                 class="css-13s74dp"
+                data-testid="tag-and-flag"
               >
                 <a
                   class="css-10d4t8c"
@@ -445,6 +447,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 >
                   <div
                     class="css-13s74dp"
+                    data-testid="tag-and-flag"
                   >
                     <a
                       class="css-10d4t8c"
@@ -542,6 +545,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   </a>
                   <div
                     class="css-1atazsr"
+                    data-testid="tag-and-flag"
                   >
                     <a
                       class="css-10d4t8c"
@@ -693,6 +697,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 </a>
                 <div
                   class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
                   <a
                     class="css-10d4t8c"
@@ -829,6 +834,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 </a>
                 <div
                   class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
                   <a
                     class="css-10d4t8c"
@@ -902,6 +908,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 </a>
                 <div
                   class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
                   <a
                     class="css-10d4t8c"
@@ -975,6 +982,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 </a>
                 <div
                   class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
                   <a
                     class="css-10d4t8c"
@@ -1066,6 +1074,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   </a>
                   <div
                     class="css-1atazsr"
+                    data-testid="tag-and-flag"
                   >
                     <a
                       class="css-10d4t8c"
@@ -1139,6 +1148,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   </a>
                   <div
                     class="css-1atazsr"
+                    data-testid="tag-and-flag"
                   >
                     <a
                       class="css-10d4t8c"
@@ -1282,6 +1292,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               </p>
               <div
                 class="css-13s74dp"
+                data-testid="tag-and-flag"
               >
                 <a
                   class="css-10d4t8c"
@@ -1432,6 +1443,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               </p>
               <div
                 class="css-13s74dp"
+                data-testid="tag-and-flag"
               >
                 <a
                   class="css-10d4t8c"
@@ -1625,6 +1637,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 >
                   <div
                     class="css-13s74dp"
+                    data-testid="tag-and-flag"
                   >
                     <a
                       class="css-10d4t8c"
@@ -1722,6 +1735,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   </a>
                   <div
                     class="css-1atazsr"
+                    data-testid="tag-and-flag"
                   >
                     <a
                       class="css-10d4t8c"
@@ -1870,6 +1884,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               </a>
               <div
                 class="css-1atazsr"
+                data-testid="tag-and-flag"
               >
                 <a
                   class="css-10d4t8c"
@@ -1990,6 +2005,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               </a>
               <div
                 class="css-1atazsr"
+                data-testid="tag-and-flag"
               >
                 <a
                   class="css-10d4t8c"
@@ -2053,6 +2069,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   </a>
                   <div
                     class="css-1atazsr"
+                    data-testid="tag-and-flag"
                   >
                     <a
                       class="css-10d4t8c"
@@ -2110,6 +2127,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   </a>
                   <div
                     class="css-1atazsr"
+                    data-testid="tag-and-flag"
                   >
                     <a
                       class="css-10d4t8c"

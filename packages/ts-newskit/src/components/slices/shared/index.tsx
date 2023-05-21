@@ -16,7 +16,10 @@ export const TagAndFlag = ({
   marginBlockStart
 }: TagAndFlagProps) => {
   return (
-    <Block marginBlockStart={marginBlockStart || 'space000'}>
+    <Block
+      marginBlockStart={marginBlockStart || 'space000'}
+      data-testid="tag-and-flag"
+    >
       <TextLink
         overrides={{
           typographyPreset: 'utilityButton010',

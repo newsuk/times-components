@@ -35,6 +35,7 @@ exports[`Render Lead Article Item should render a snapshot 1`] = `
     </p>
     <div
       class="css-13s74dp"
+      data-testid="tag-and-flag"
     >
       <a
         class="css-10d4t8c"

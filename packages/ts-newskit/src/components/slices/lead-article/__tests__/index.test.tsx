@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '../../../../utils/test-utils';
-import { LeadArticle } from '../index';
+import { LeadArticle, LeadArticleProps } from '../index';
 import { leadArticle } from '../../../../slices/fixtures/data.json';
 import { useBreakpointKey } from 'newskit';
 
@@ -10,7 +10,7 @@ jest.mock('newskit', () => ({
   useBreakpointKey: jest.fn().mockReturnValue('xs')
 }));
 
-const leadStoryData = {
+const leadStoryData: LeadArticleProps = {
   ...leadArticle,
   subHeadline: 'TAG'
 };
@@ -78,5 +78,19 @@ describe('Render Component one', () => {
     );
     const articleType = queryByText(leadArticle.tag.label);
     expect(articleType).toBeVisible();
+  });
+
+  it('should not render tag or flag if they are not provided', () => {
+    (useBreakpointKey as any).mockReturnValue('lg');
+
+    delete leadStoryData.tag;
+    delete leadStoryData.flag;
+
+    const { queryByText } = render(<LeadArticle {...leadStoryData} />);
+    const tag = queryByText('Tag');
+    const flag = queryByText('Flag');
+
+    expect(tag).not.toBeInTheDocument();
+    expect(flag).not.toBeInTheDocument();
   });
 });
