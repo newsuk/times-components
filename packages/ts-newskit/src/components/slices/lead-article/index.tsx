@@ -23,7 +23,6 @@ export interface LeadArticleProps {
     label: string;
     href: string;
   };
-  hasTagOrTimeToRead?: boolean;
   imageTop?: boolean;
 }
 export const LeadArticle = ({
@@ -35,7 +34,6 @@ export const LeadArticle = ({
   image,
   url,
   tag,
-  hasTagOrTimeToRead,
   imageTop
 }: LeadArticleProps) => {
   const stylePresets = {
@@ -123,15 +121,9 @@ export const LeadArticle = ({
           {summary}
         </TextBlock>
         <Block marginBlockEnd="space040">
-          <Visible xs={hasTagOrTimeToRead} sm={hasTagOrTimeToRead} md lg xl>
-            {(tag || flag) && (
-              <TagAndFlag
-                tag={tag}
-                flag={flag}
-                marginBlockStart="space040"
-              />
-            )}
-          </Visible>
+          {(tag || flag) && (
+            <TagAndFlag tag={tag} flag={flag} marginBlockStart="space040" />
+          )}
         </Block>
       </CardContent>
     </CardComposable>

@@ -26,7 +26,6 @@ const data = {
       label: 'Review',
       href: '/'
     },
-    hasTagOrTimeToRead: false,
     imageTop: true
   },
   articles: [
@@ -39,7 +38,6 @@ const data = {
         'European cup winner Mihajlovic dies aged 53 after battle with leukemia',
       url:
         '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
-      color: '#E34605',
       imageRight: false,
       tag: {
         label: 'Tag',
@@ -55,7 +53,6 @@ const data = {
       title: 'American owners pose threat to English pyramid',
       url:
         '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
-      color: '#E34605',
       imageRight: false
     },
     {
@@ -66,7 +63,6 @@ const data = {
       title: '£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid',
       url:
         '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
-      color: '#E34605',
       imageRight: false,
       tag: {
         label: 'Tag',
@@ -81,7 +77,6 @@ const data = {
       title: 'Blow for rebel clubs as court says UEFA can block Super League',
       url:
         '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
-      color: '#E34605',
       imageRight: false,
       flag: 'Flag4'
     },
@@ -93,7 +88,6 @@ const data = {
       title: 'Blow for rebel clubs as court says UEFA can block Super League',
       url:
         '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
-      color: '#E34605',
       imageRight: false,
       tag: {
         label: 'Tag',
@@ -137,7 +131,6 @@ const data = {
       title:
         'European cup winner Mihajlovic dies aged 53 after battle with leukemia',
       url: '/article/european-cup-winner-mihajlovic-dies',
-      color: '#E34605',
       imageRight: false,
       tag: {
         label: 'Tag',
@@ -152,7 +145,6 @@ const data = {
       },
       title: 'American owners pose threat to English pyramid',
       url: '/article/american-owners-pose-threat-to-english-pyramid',
-      color: '#E34605',
       imageRight: false,
       flag: ''
     }
@@ -168,8 +160,13 @@ describe('Render Lead Story 1 Slice', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
-  test('modifies articles correctly when breakpointKey is "xl"', () => {
+  test('modifies articles correctly when breakpointKey is "md"', () => {
     (useBreakpointKey as any).mockReturnValue('md');
+    const { asFragment } = renderComponent();
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('modifies articles correctly when breakpointKey is "xs"', () => {
+    (useBreakpointKey as any).mockReturnValue('xs');
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });

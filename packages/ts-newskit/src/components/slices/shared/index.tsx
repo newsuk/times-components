@@ -43,8 +43,7 @@ export const TagAndFlag = ({
               }}
             />
           </ContainerInline>
-        )
-      }
+        )}
 
       {flag && (
         <TextBlock

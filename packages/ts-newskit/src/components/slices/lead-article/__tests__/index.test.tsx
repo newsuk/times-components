@@ -16,13 +16,7 @@ const leadStoryData: LeadArticleProps = {
 };
 
 const renderComponent = () =>
-  render(
-    <LeadArticle
-      {...leadStoryData}
-      hasTagOrTimeToRead={false}
-      imageTop={false}
-    />
-  );
+  render(<LeadArticle {...leadStoryData} imageTop={false} />);
 
 describe('Render Component one', () => {
   it('should render a snapshot', () => {
@@ -60,21 +54,10 @@ describe('Render Component one', () => {
     expect(subHeadline).toBeInTheDocument();
   });
 
-  it('should not render articleType if hasTagOrTimeToRead is false', () => {
-    (useBreakpointKey as any).mockReturnValue('xs');
-    const { queryByText } = renderComponent();
-    const articleType = queryByText(leadArticle.tag.label);
-    expect(articleType).not.toBeVisible();
-  });
-
-  it('should render articleType if hasTagOrTimeToRead is false', () => {
+  it('should render articleType if tag is provided', () => {
     (useBreakpointKey as any).mockReturnValue('xs');
     const { queryByText } = render(
-      <LeadArticle
-        {...leadStoryData}
-        hasTagOrTimeToRead={true}
-        imageTop={true}
-      />
+      <LeadArticle {...leadStoryData} imageTop={true} />
     );
     const articleType = queryByText(leadArticle.tag.label);
     expect(articleType).toBeVisible();

@@ -62,11 +62,7 @@ export const LargeArticle = ({
         </TextBlock>
       )}
       {(tag || flag) && (
-        <TagAndFlag
-          tag={tag}
-          flag={flag}
-          marginBlockStart="space050"
-        />
+        <TagAndFlag tag={tag} flag={flag} marginBlockStart="space050" />
       )}
       {listData && (
         <StyledUnorderedList

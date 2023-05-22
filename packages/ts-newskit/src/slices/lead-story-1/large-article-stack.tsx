@@ -4,7 +4,7 @@ import {
   LargeArticle,
   LargeArticleProps
 } from '../../components/slices/large-article';
-import { StyledDivider, StyledBlock } from './styles';
+import { StyledDivider, BlockNoTopMargin } from './styles';
 import { FullWidthDividerMob } from '../../components/slices/shared-styles';
 
 export interface LargeArticlesProps {
@@ -19,7 +19,7 @@ export const LargeArticles = ({ largeArticles }: LargeArticlesProps) => {
   const newArray = [modifiedObject, ...largeArticles.slice(1)];
 
   return (
-    <StyledBlock>
+    <BlockNoTopMargin>
       {newArray &&
         newArray.map((item, index) => {
           const isSecondDivider = index === 2;
@@ -47,6 +47,6 @@ export const LargeArticles = ({ largeArticles }: LargeArticlesProps) => {
             </>
           );
         })}
-    </StyledBlock>
+    </BlockNoTopMargin>
   );
 };

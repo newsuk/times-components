@@ -11,6 +11,6 @@ export const StyledDivider = styled(Divider)`
 `;
 
 const setBlockMargin = (space: string) => ({ marginBlockStart: `-${space}` });
-export const StyledBlock = styled(Block)`
+export const BlockNoTopMargin = styled(Block)`
   ${getSpacingCssFromTheme(setBlockMargin, 'space040')};
 `;

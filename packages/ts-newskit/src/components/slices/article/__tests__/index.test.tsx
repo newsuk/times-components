@@ -26,7 +26,6 @@ const defaultProps = {
     href: '/'
   },
   flag: '4 min read',
-  color: '#E34605',
   imageRight: false,
   hideImage: false
 };

@@ -14,8 +14,8 @@ import {
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
 import {
-  LeadSArticleCell,
   CellNoMargin,
+  LeadArticleCell,
   LeadStoryDivider
 } from '../shared-styles';
 import { ArticleStackSmall } from '../shared/article-stacks';
@@ -47,7 +47,7 @@ export const LeadStory1 = ({
         }))
       : articles;
 
-  const screenXsAndSm = !!(breakpointKey === 'xs' || breakpointKey === 'sm');
+  const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
 
   const LeadStoryLayout: React.FC = ({ children }) => {
     return (
@@ -78,7 +78,7 @@ export const LeadStory1 = ({
       <Cell xs={12} md={5} lg={3} xl={3}>
         <LargeArticles largeArticles={largeArticles} />
       </Cell>
-      <LeadSArticleCell xs={12} md={7} lg={6} xl={5}>
+      <LeadArticleCell xs={12} md={7} lg={6} xl={5}>
         <Hidden md lg xl>
           <FullWidthDividerMob>
             <Divider
@@ -109,13 +109,22 @@ export const LeadStory1 = ({
             breakpoint={breakpointKey}
           />
         </Block>
-      </LeadSArticleCell>
-      <CellNoMargin xs={12} lg={3} xl={4}>
-        <ComposedArticleStack
-          articles={modifedArticles}
-          breakpoint={breakpointKey}
-        />
-      </CellNoMargin>
+      </LeadArticleCell>
+      {screenXsAndSm ? (
+        <CellNoMargin xs={12} lg={3} xl={4}>
+          <ComposedArticleStack
+            articles={modifedArticles}
+            breakpoint={breakpointKey}
+          />
+        </CellNoMargin>
+      ) : (
+        <Cell xs={12} lg={3} xl={4}>
+          <ComposedArticleStack
+            articles={modifedArticles}
+            breakpoint={breakpointKey}
+          />
+        </Cell>
+      )}
     </Grid>
   );
 };
