@@ -1043,7 +1043,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="css-1fgalmf"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-niwyl0"
                 >
                   <div
                     class="css-1kwj960"
@@ -1064,42 +1064,46 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <div
                     class="css-diffbd"
                   >
-                    <a
-                      class="css-u57k3c"
-                      href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                      role="link"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-k2d5qk"
-                        >
-                          Blow for rebel clubs as court says UEFA can block Super League
-                        </span>
-                      </span>
-                    </a>
                     <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
+                      class="css-13byt3y"
                     >
                       <a
-                        class="css-10d4t8c"
-                        href=""
+                        class="css-bxykrz"
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                        role="link"
                       >
                         <span
                           class="css-17x5lw"
                         >
                           <span
-                            class="css-1i385gi"
-                          />
+                            class="css-k2d5qk"
+                          >
+                            Blow for rebel clubs as court says UEFA can block Super League
+                          </span>
                         </span>
                       </a>
-                      <span
-                        class="css-nqhqa4"
+                      <div
+                        class="css-1atazsr"
+                        data-testid="tag-and-flag"
                       >
-                        Flag4
-                      </span>
+                        <a
+                          class="css-10d4t8c"
+                          href=""
+                        >
+                          <span
+                            class="css-17x5lw"
+                          >
+                            <span
+                              class="css-1i385gi"
+                            />
+                          </span>
+                        </a>
+                        <span
+                          class="css-nqhqa4"
+                        >
+                          Flag4
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1117,7 +1121,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="css-1fgalmf"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-niwyl0"
                 >
                   <div
                     class="css-1kwj960"
@@ -1138,53 +1142,57 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <div
                     class="css-diffbd"
                   >
-                    <a
-                      class="css-u57k3c"
-                      href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                      role="link"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-k2d5qk"
-                        >
-                          Blow for rebel clubs as court says UEFA can block Super League
-                        </span>
-                      </span>
-                    </a>
                     <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
+                      class="css-13byt3y"
                     >
                       <a
-                        class="css-10d4t8c"
-                        href="/"
+                        class="css-bxykrz"
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                        role="link"
                       >
                         <span
                           class="css-17x5lw"
                         >
                           <span
-                            class="css-1i385gi"
+                            class="css-k2d5qk"
                           >
-                            Tag
+                            Blow for rebel clubs as court says UEFA can block Super League
                           </span>
                         </span>
                       </a>
                       <div
-                        class="css-lew009"
+                        class="css-1atazsr"
+                        data-testid="tag-and-flag"
                       >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
+                        <a
+                          class="css-10d4t8c"
+                          href="/"
+                        >
+                          <span
+                            class="css-17x5lw"
+                          >
+                            <span
+                              class="css-1i385gi"
+                            >
+                              Tag
+                            </span>
+                          </span>
+                        </a>
+                        <div
+                          class="css-lew009"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
+                        </div>
+                        <span
+                          class="css-nqhqa4"
+                        >
+                          Flag5
+                        </span>
                       </div>
-                      <span
-                        class="css-nqhqa4"
-                      >
-                        Flag5
-                      </span>
                     </div>
                   </div>
                 </div>

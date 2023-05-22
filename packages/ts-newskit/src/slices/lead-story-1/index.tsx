@@ -22,10 +22,12 @@ import {
   CellNoMargin,
   LeadStoryDivider
 } from '../shared-styles';
-import { ArticleStackLarge, ArticleStackSmall } from './article-stack';
+import { ArticleStackSmall } from '../shared/article-stacks';
 import { LargeArticles } from './large-article-stack';
 import { LargeArticleProps } from '../../components/slices/large-article';
 import { FullWidthDividerMob } from '../../components/slices/shared-styles';
+import { ComposedArticleStack } from '../shared/composed-article-stack';
+
 export interface LeadStory1Props {
   section: SliceHeaderProps;
   leadArticle: LeadArticleProps;
@@ -51,10 +53,7 @@ export const LeadStory1 = ({
         }))
       : articles;
 
-  const firstThreeArticles = articles.slice(0, 3);
-  const secondTwoArticles = articles.slice(3);
   const screenXsAndSm = !!(breakpointKey === 'xs' || breakpointKey === 'sm');
-  const screenMd = !!(breakpointKey === 'md');
 
   const LeadStoryLayout: React.FC = ({ children }) => {
     return (
@@ -121,40 +120,10 @@ export const LeadStory1 = ({
         </Block>
       </LeadSArticleCell>
       <CellNoMargin xs={12} lg={3} xl={4}>
-        <Hidden lg xl>
-          <FullWidthDividerMob>
-            <Divider
-              overrides={{
-                marginBlockEnd: 'space040',
-                stylePreset: 'dashedDivider'
-              }}
-            />
-          </FullWidthDividerMob>
-        </Hidden>
-        <ArticleStackLarge
-          firstThreeArticles={firstThreeArticles}
+        <ComposedArticleStack
           articles={modifedArticles}
           breakpoint={breakpointKey}
         />
-        <Visible md>
-          <Hidden xs sm>
-            <Divider
-              overrides={{
-                stylePreset: 'dashedDivider',
-                marginBlockStart: 'space040'
-              }}
-            />
-          </Hidden>
-          <Block marginBlockEnd={{ md: 'space040' }}>
-            <ArticleStackSmall
-              articles={secondTwoArticles}
-              isFullWidth={screenXsAndSm}
-              hideImage={screenMd}
-              hasTopBorder={false}
-              breakpoint={breakpointKey}
-            />
-          </Block>
-        </Visible>
       </CellNoMargin>
     </Grid>
   );

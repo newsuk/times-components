@@ -3,7 +3,10 @@ import { useBreakpointKey, BreakpointKeys } from 'newskit';
 import { render, screen } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { articles } from '../../fixtures/lead-story.json';
-import { ArticleStackLarge, ArticleStackSmall } from '../article-stack';
+import {
+  ArticleStackLarge,
+  ArticleStackSmall
+} from '../../shared/article-stacks';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
@@ -13,18 +16,12 @@ jest.mock('newskit', () => ({
 const threeArticles = [articles[1], articles[2], articles[3]];
 
 const renderComponentLarge = (breakpoint: BreakpointKeys) =>
-  render(
-    <ArticleStackLarge
-      articles={articles}
-      firstThreeArticles={threeArticles}
-      breakpoint={breakpoint}
-    />
-  );
+  render(<ArticleStackLarge articles={articles} breakpoint={breakpoint} />);
 
 const renderComponentSmall = () =>
   render(
     <ArticleStackSmall
-      articles={articles}
+      articles={threeArticles}
       breakpoint={'xs'}
       isFullWidth={false}
       hideImage={false}
@@ -71,17 +68,8 @@ describe('Render Lead Story 1 Slice', () => {
   });
   test('renders article container with correct data-testid', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
-
     renderComponentLarge('xl');
-
     const articleContainer = screen.getByTestId('article-container');
     expect(articleContainer).toBeInTheDocument();
-  });
-
-  test('renders Divider components when needed', () => {
-    (useBreakpointKey as any).mockReturnValue('xl');
-    renderComponentLarge('xl');
-    const dividers = screen.getAllByTestId('divider');
-    expect(dividers.length).toBe(articles.length + 1);
   });
 });

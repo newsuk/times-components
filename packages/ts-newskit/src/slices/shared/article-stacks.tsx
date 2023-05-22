@@ -4,15 +4,11 @@ import { Article, ArticleProps } from '../../components/slices/article';
 
 export const ArticleStackLarge = ({
   articles,
-  breakpoint,
-  firstThreeArticles
+  breakpoint
 }: {
   articles: ArticleProps[];
   breakpoint: BreakpointKeys;
-  firstThreeArticles: ArticleProps[];
 }) => {
-  const articlesArray = breakpoint === 'md' ? firstThreeArticles : articles;
-
   const articleGrid = (
     <GridLayout
       columns={{
@@ -26,7 +22,7 @@ export const ArticleStackLarge = ({
       rowGap="space040"
       data-testid="article-container"
     >
-      {articlesArray.map((article: ArticleProps, articleIndex, articleArr) => {
+      {articles.map((article: ArticleProps, articleIndex, articleArr) => {
         const articleBorder = breakpoint !== 'lg' &&
           breakpoint !== 'xl' &&
           articleIndex < articleArr.length - 1 && (
@@ -61,7 +57,7 @@ export const ArticleStackLarge = ({
       {articleGrid}
     </Scroll>
   ) : (
-    <>{articleGrid}</>
+    articleGrid
   );
 };
 
