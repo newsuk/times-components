@@ -51,8 +51,8 @@ export const LeadStory1 = ({
         }))
       : articles;
 
-  const threeArticles = articles.slice(0, 3);
-  const twoArticles = articles.slice(3);
+  const firstThreeArticles = articles.slice(0, 3);
+  const secondTwoArticles = articles.slice(3);
   const screenXsAndSm = !!(breakpointKey === 'xs' || breakpointKey === 'sm');
   const screenMd = !!(breakpointKey === 'md');
 
@@ -113,7 +113,7 @@ export const LeadStory1 = ({
           </Hidden>
           <ArticleStackSmall
             articles={smallArticles}
-            isLeadStory={true}
+            isFullWidth={screenXsAndSm}
             hideImage={screenXsAndSm}
             hasTopBorder={!!screenXsAndSm}
             breakpoint={breakpointKey}
@@ -132,7 +132,7 @@ export const LeadStory1 = ({
           </FullWidthDividerMob>
         </Hidden>
         <ArticleStackLarge
-          threeArticles={threeArticles}
+          firstThreeArticles={firstThreeArticles}
           articles={modifedArticles}
           breakpoint={breakpointKey}
         />
@@ -147,8 +147,8 @@ export const LeadStory1 = ({
           </Hidden>
           <Block marginBlockEnd={{ md: 'space040' }}>
             <ArticleStackSmall
-              articles={twoArticles}
-              isLeadStory={true}
+              articles={secondTwoArticles}
+              isFullWidth={screenXsAndSm}
               hideImage={screenMd}
               hasTopBorder={false}
               breakpoint={breakpointKey}

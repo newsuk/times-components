@@ -113,17 +113,17 @@ describe('Render Article List Item with hidden image', () => {
   it('items should render with divider', () => {
     renderComponent({
       ...defaultProps,
-      isLeadStory: true,
+      isFullWidth: true,
       hasTopBorder: true,
       hideImage: true
     });
     const articleDivider = screen.getAllByTestId('divider')[0];
     expect(articleDivider).toBeInTheDocument();
   });
-  it('items should render the divaider with right margin', () => {
+  it('items should render the divider with right margin', () => {
     renderComponent({
       ...defaultProps,
-      isLeadStory: true,
+      isFullWidth: true,
       hasTopBorder: true,
       hideImage: false
     });

@@ -34,7 +34,7 @@ export interface ArticleProps {
   hideImage?: boolean;
   isLeadImage?: boolean;
   imageRight?: boolean;
-  isLeadStory?: boolean;
+  isFullWidth?: boolean;
 }
 
 type LayoutProps = {
@@ -51,7 +51,7 @@ export const Article = ({
   hideImage,
   isLeadImage,
   imageRight,
-  isLeadStory
+  isFullWidth
 }: ArticleProps) => {
   const cardImage = !hideImage &&
     image && {
@@ -89,7 +89,7 @@ export const Article = ({
     >
       {hasTopBorder && (
         <GridLayoutItem area="border">
-          {isLeadStory ? (
+          {isFullWidth ? (
             <FullWidthDividerMob>
               <Divider
                 overrides={{

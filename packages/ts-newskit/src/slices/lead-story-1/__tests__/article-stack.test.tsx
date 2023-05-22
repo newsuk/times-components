@@ -16,7 +16,7 @@ const renderComponentLarge = (breakpoint: BreakpointKeys) =>
   render(
     <ArticleStackLarge
       articles={articles}
-      threeArticles={threeArticles}
+      firstThreeArticles={threeArticles}
       breakpoint={breakpoint}
     />
   );
@@ -26,7 +26,7 @@ const renderComponentSmall = () =>
     <ArticleStackSmall
       articles={articles}
       breakpoint={'xs'}
-      isLeadStory={false}
+      isFullWidth={false}
       hideImage={false}
       hasTopBorder={true}
     />

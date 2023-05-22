@@ -5,13 +5,13 @@ import { Article, ArticleProps } from '../../components/slices/article';
 export const ArticleStackLarge = ({
   articles,
   breakpoint,
-  threeArticles
+  firstThreeArticles
 }: {
   articles: ArticleProps[];
   breakpoint: BreakpointKeys;
-  threeArticles: ArticleProps[];
+  firstThreeArticles: ArticleProps[];
 }) => {
-  const articlesArray = breakpoint === 'md' ? threeArticles : articles;
+  const articlesArray = breakpoint === 'md' ? firstThreeArticles : articles;
 
   const articleGrid = (
     <GridLayout
@@ -67,13 +67,13 @@ export const ArticleStackLarge = ({
 
 export const ArticleStackSmall = ({
   articles,
-  isLeadStory,
+  isFullWidth,
   hideImage,
   hasTopBorder,
   breakpoint
 }: {
   articles: ArticleProps[];
-  isLeadStory: boolean;
+  isFullWidth: boolean;
   hideImage: boolean;
   hasTopBorder: boolean;
   breakpoint: BreakpointKeys;
@@ -104,7 +104,7 @@ export const ArticleStackSmall = ({
                 {...article}
                 hasTopBorder={hasTopBorder}
                 hideImage={hideImage}
-                isLeadStory={isLeadStory}
+                isFullWidth={isFullWidth}
               />
             </Block>
             {articleBorder}
