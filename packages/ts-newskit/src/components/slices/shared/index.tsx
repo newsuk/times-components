@@ -4,15 +4,16 @@ import { ContainerInline, TextLink } from '../shared-styles';
 
 export interface TagAndFlagProps {
   flag?: string;
-  tag?: string;
-  href: string;
+  tag?: {
+    label: string;
+    href: string;
+  };
   marginBlockStart?: string;
 }
 
 export const TagAndFlag = ({
   flag,
   tag,
-  href,
   marginBlockStart
 }: TagAndFlagProps) => {
   return (
@@ -20,15 +21,18 @@ export const TagAndFlag = ({
       marginBlockStart={marginBlockStart || 'space000'}
       data-testid="tag-and-flag"
     >
-      <TextLink
-        overrides={{
-          typographyPreset: 'utilityButton010',
-          stylePreset: 'inkBrand010'
-        }}
-        href={href}
-      >
-        {tag}
-      </TextLink>
+      {tag && (
+        <TextLink
+          overrides={{
+            typographyPreset: 'utilityButton010',
+            stylePreset: 'inkBrand010'
+          }}
+          href={tag.href}
+        >
+          {tag.label}
+        </TextLink>
+      )}
+
       {tag &&
         flag && (
           <ContainerInline>
@@ -39,14 +43,18 @@ export const TagAndFlag = ({
               }}
             />
           </ContainerInline>
-        )}
-      <TextBlock
-        typographyPreset="utilityLabel010"
-        stylePreset="inkSubtle"
-        as="span"
-      >
-        {flag}
-      </TextBlock>
+        )
+      }
+
+      {flag && (
+        <TextBlock
+          typographyPreset="utilityLabel010"
+          stylePreset="inkSubtle"
+          as="span"
+        >
+          {flag}
+        </TextBlock>
+      )}
     </Block>
   );
 };

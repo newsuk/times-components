@@ -64,9 +64,6 @@ export const Article = ({
 
   const CardMediaComponent = isLeadImage ? FullWidthCardMediaMob : CardMedia;
 
-  const defaultTag = { label: '', href: '' };
-  const { label, href } = tag || defaultTag;
-
   const Layout: React.FC<LayoutProps> = ({ children }) => {
     return imageRight ? <Block>{children}</Block> : <>{children}</>;
   };
@@ -136,9 +133,8 @@ export const Article = ({
           </CardHeadlineLink>
           {(tag || flag) && (
             <TagAndFlag
-              tag={label}
+              tag={tag}
               flag={flag}
-              href={href}
               marginBlockStart="space040"
             />
           )}

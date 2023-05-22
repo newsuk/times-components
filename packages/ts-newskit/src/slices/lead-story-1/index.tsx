@@ -12,10 +12,6 @@ import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
-import {
-  SliceHeader,
-  SliceHeaderProps
-} from '../../components/slices/slice-header';
 import { ArticleProps } from '../../components/slices/article';
 import {
   LeadSArticleCell,
@@ -29,7 +25,6 @@ import { FullWidthDividerMob } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 
 export interface LeadStory1Props {
-  section: SliceHeaderProps;
   leadArticle: LeadArticleProps;
   articles: ArticleProps[];
   largeArticles: LargeArticleProps[];
@@ -37,7 +32,6 @@ export interface LeadStory1Props {
 }
 
 export const LeadStory1 = ({
-  section,
   leadArticle,
   articles,
   largeArticles,
@@ -81,12 +75,9 @@ export const LeadStory1 = ({
 
   return (
     <Grid xsMargin="space045" mdMargin="space050">
-      <Cell xs={12}>
-        <SliceHeader {...section} />
-      </Cell>
-      <CellNoMargin xs={12} md={5} lg={3} xl={3}>
+      <Cell xs={12} md={5} lg={3} xl={3}>
         <LargeArticles largeArticles={largeArticles} />
-      </CellNoMargin>
+      </Cell>
       <LeadSArticleCell xs={12} md={7} lg={6} xl={5}>
         <Hidden md lg xl>
           <FullWidthDividerMob>

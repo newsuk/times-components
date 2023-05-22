@@ -26,23 +26,21 @@ export const LargeArticles = ({ largeArticles }: LargeArticlesProps) => {
           const articleTopBorder = index === 0;
           return (
             <>
-              {articleTopBorder ? null : isSecondDivider ? (
-                <FullWidthDividerMob>
+              <FullWidthDividerMob>
+                {articleTopBorder ? null : isSecondDivider ? (
                   <Divider
                     overrides={{
                       stylePreset: 'dashedDivider'
                     }}
                   />
-                </FullWidthDividerMob>
-              ) : (
-                <FullWidthDividerMob>
+                ) : (
                   <StyledDivider
                     overrides={{
                       stylePreset: 'dashedDivider'
                     }}
                   />
-                </FullWidthDividerMob>
-              )}
+                )}
+              </FullWidthDividerMob>
               <Block marginBlock="space040">
                 <LargeArticle {...item} />
               </Block>

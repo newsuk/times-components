@@ -190,9 +190,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   </span>
                 </span>
               </a>
-              <span
-                class="css-nqhqa4"
-              />
             </div>
           </div>
         </div>
@@ -242,18 +239,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               class="css-1atazsr"
               data-testid="tag-and-flag"
             >
-              <a
-                class="css-10d4t8c"
-                href=""
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-1i385gi"
-                  />
-                </span>
-              </a>
               <span
                 class="css-nqhqa4"
               >
@@ -469,9 +454,6 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
                 </span>
               </span>
             </a>
-            <span
-              class="css-nqhqa4"
-            />
           </div>
         </div>
       </div>
@@ -529,18 +511,6 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
             class="css-1atazsr"
             data-testid="tag-and-flag"
           >
-            <a
-              class="css-10d4t8c"
-              href=""
-            >
-              <span
-                class="css-17x5lw"
-              >
-                <span
-                  class="css-1i385gi"
-                />
-              </span>
-            </a>
             <span
               class="css-nqhqa4"
             >

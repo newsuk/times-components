@@ -28,8 +28,6 @@ export const LargeArticle = ({
   tag,
   topArticle
 }: LargeArticleProps) => {
-  const defaultTag = { label: '', href: '' };
-  const { label, href } = tag || defaultTag;
   return (
     <Block>
       {tagL1 && (
@@ -65,9 +63,8 @@ export const LargeArticle = ({
       )}
       {(tag || flag) && (
         <TagAndFlag
-          tag={label}
+          tag={tag}
           flag={flag}
-          href={href}
           marginBlockStart="space050"
         />
       )}

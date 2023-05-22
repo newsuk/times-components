@@ -48,9 +48,6 @@ export const LeadArticle = ({
     spaceInline: 'space010'
   };
 
-  const defaultTag = { label: '', href: '' };
-  const { label, href } = tag || defaultTag;
-
   return (
     <CardComposable
       areas={{
@@ -129,9 +126,8 @@ export const LeadArticle = ({
           <Visible xs={hasTagOrTimeToRead} sm={hasTagOrTimeToRead} md lg xl>
             {(tag || flag) && (
               <TagAndFlag
-                tag={label}
+                tag={tag}
                 flag={flag}
-                href={href}
                 marginBlockStart="space040"
               />
             )}

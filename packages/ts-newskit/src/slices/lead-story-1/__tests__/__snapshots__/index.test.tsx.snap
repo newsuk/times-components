@@ -9,63 +9,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
       class="css-146arns"
     >
       <div
-        class="css-1jneg5s"
-      >
-        <div
-          class="css-lihpnt"
-        >
-          <div
-            class="css-128qn49"
-          >
-            <div
-              class="css-86cix"
-            >
-              <div
-                class="css-1aiajnh"
-              >
-                <section
-                  class="css-16kr8bf"
-                >
-                  <h3
-                    class="nk-headline-heading css-i2jo9u"
-                  >
-                    Rugby Union
-                  </h3>
-                </section>
-              </div>
-            </div>
-            <a
-              class="css-166fjww"
-              data-testid="buttonLink"
-              href="https://www.thetimes.co.uk/"
-              role="link"
-            >
-              <svg
-                aria-hidden="true"
-                class="css-3rbz36"
-                fill="currentcolor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                  fill="currentcolor"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="css-19jbney"
+        class="css-1imst2"
       >
         <div
           class="css-dl45po"
         >
+          <div
+            class="css-1qkqv92"
+          />
           <div
             class="css-h18yzn"
           >
@@ -854,9 +805,6 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       </span>
                     </span>
                   </a>
-                  <span
-                    class="css-nqhqa4"
-                  />
                 </div>
               </div>
             </div>
@@ -914,18 +862,6 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   class="css-1atazsr"
                   data-testid="tag-and-flag"
                 >
-                  <a
-                    class="css-10d4t8c"
-                    href=""
-                  >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-1i385gi"
-                      />
-                    </span>
-                  </a>
                   <span
                     class="css-nqhqa4"
                   >
@@ -1086,18 +1022,6 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         class="css-1atazsr"
                         data-testid="tag-and-flag"
                       >
-                        <a
-                          class="css-10d4t8c"
-                          href=""
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-1i385gi"
-                            />
-                          </span>
-                        </a>
                         <span
                           class="css-nqhqa4"
                         >
@@ -1215,63 +1139,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
       class="css-146arns"
     >
       <div
-        class="css-1jneg5s"
-      >
-        <div
-          class="css-lihpnt"
-        >
-          <div
-            class="css-128qn49"
-          >
-            <div
-              class="css-86cix"
-            >
-              <div
-                class="css-1aiajnh"
-              >
-                <section
-                  class="css-16kr8bf"
-                >
-                  <h3
-                    class="nk-headline-heading css-i2jo9u"
-                  >
-                    Rugby Union
-                  </h3>
-                </section>
-              </div>
-            </div>
-            <a
-              class="css-166fjww"
-              data-testid="buttonLink"
-              href="https://www.thetimes.co.uk/"
-              role="link"
-            >
-              <svg
-                aria-hidden="true"
-                class="css-3rbz36"
-                fill="currentcolor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                  fill="currentcolor"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div
-        class="css-19jbney"
+        class="css-1imst2"
       >
         <div
           class="css-dl45po"
         >
+          <div
+            class="css-1qkqv92"
+          />
           <div
             class="css-h18yzn"
           >
@@ -2041,9 +1916,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     </span>
                   </span>
                 </a>
-                <span
-                  class="css-nqhqa4"
-                />
               </div>
             </div>
           </div>
@@ -2094,18 +1966,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-1atazsr"
                       data-testid="tag-and-flag"
                     >
-                      <a
-                        class="css-10d4t8c"
-                        href=""
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-1i385gi"
-                          />
-                        </span>
-                      </a>
                       <span
                         class="css-nqhqa4"
                       >
