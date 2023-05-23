@@ -35,3 +35,7 @@ export const AvatarDivider = styled(Divider)`
     height: 77px;
   }
 `;
+
+export const StyledLeadStoryCell = styled(Cell)`
+  position: relative;
+`;
