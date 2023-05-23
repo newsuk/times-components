@@ -10,7 +10,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
       class="css-16bai6p"
     >
       <section
-        class="css-1goqtre"
+        class="css-reqlla"
       >
         <h2
           class="nk-headline-heading css-i2jo9u"
@@ -31,7 +31,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           href="https://newskit.co.uk/components"
         >
           <span
-            class="css-1qlv5b"
+            class="css-14u1cgq"
           >
             SEE ALL
           </span>
@@ -155,7 +155,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -177,7 +177,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -214,12 +214,12 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -285,7 +285,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -307,7 +307,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -344,12 +344,12 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -415,7 +415,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -437,7 +437,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -474,12 +474,12 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -545,7 +545,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -567,7 +567,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -604,12 +604,12 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -675,7 +675,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -697,7 +697,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -734,12 +734,12 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -805,7 +805,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -827,7 +827,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -864,12 +864,12 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -935,7 +935,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -957,7 +957,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -994,12 +994,12 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -1065,7 +1065,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -1087,7 +1087,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -1124,12 +1124,12 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -1154,7 +1154,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
       class="css-16bai6p"
     >
       <section
-        class="css-1goqtre"
+        class="css-reqlla"
       >
         <h2
           class="nk-headline-heading css-i2jo9u"
@@ -1236,7 +1236,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -1258,7 +1258,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -1295,12 +1295,12 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -1366,7 +1366,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -1388,7 +1388,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -1425,12 +1425,12 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -1496,7 +1496,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -1518,7 +1518,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -1555,12 +1555,12 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -1626,7 +1626,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -1648,7 +1648,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -1685,12 +1685,12 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -1756,7 +1756,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -1778,7 +1778,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -1815,12 +1815,12 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -1886,7 +1886,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -1908,7 +1908,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -1945,12 +1945,12 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -2016,7 +2016,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -2038,7 +2038,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -2075,12 +2075,12 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>
@@ -2146,7 +2146,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   data-testid="flag"
                 >
                   <span
-                    class="css-1qlv5b"
+                    class="css-14u1cgq"
                   >
                     IN PROGRESS
                   </span>
@@ -2168,7 +2168,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-reoy8x"
+                      class="css-3mtjyz"
                     >
                       Puzzle Name
                     </div>
@@ -2205,12 +2205,12 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   class="css-13byt3y"
                 >
                   <span
-                    class="css-qsmink"
+                    class="css-1e50s58"
                   >
                     Friday
                   </span>
                   <span
-                    class="css-16ew30g"
+                    class="css-3wq9sf"
                   >
                      | test-1
                   </span>

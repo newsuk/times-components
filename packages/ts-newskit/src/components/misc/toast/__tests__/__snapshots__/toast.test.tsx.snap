@@ -15,7 +15,7 @@ exports[`Render Toast should render the component 1`] = `
         role="status"
       >
         <p
-          class="css-1bswnl7"
+          class="css-1myxng4"
         >
           Toast message will display here
         </p>

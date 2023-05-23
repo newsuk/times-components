@@ -36,7 +36,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
             class="css-17x5lw"
           >
             <span
-              class="css-k2d5qk"
+              class="css-4qsr1y"
             >
               Harry & Meghan's New Project?
             </span>
@@ -54,7 +54,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
               class="css-17x5lw"
             >
               <span
-                class="css-1i385gi"
+                class="css-1j5e90f"
               >
                 Review
               </span>
@@ -70,7 +70,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
             />
           </div>
           <span
-            class="css-nqhqa4"
+            class="css-l4j3xy"
           >
             4 min read
           </span>
@@ -106,7 +106,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
       class="css-diffbd"
     >
       <p
-        class="css-1xgmrwa"
+        class="css-1j5xsj6"
       >
         Credit
       </p>
@@ -119,7 +119,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
           class="css-17x5lw"
         >
           <span
-            class="css-k2d5qk"
+            class="css-4qsr1y"
           >
             Harry & Meghan's New Project?
           </span>
@@ -137,7 +137,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
             class="css-17x5lw"
           >
             <span
-              class="css-1i385gi"
+              class="css-1j5e90f"
             >
               Review
             </span>
@@ -153,7 +153,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-nqhqa4"
+          class="css-l4j3xy"
         >
           4 min read
         </span>

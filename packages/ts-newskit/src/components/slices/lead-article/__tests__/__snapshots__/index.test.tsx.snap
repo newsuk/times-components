@@ -25,7 +25,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         </picture>
       </div>
       <p
-        class="css-98oi0p"
+        class="css-1qlz25y"
       >
         Credit
       </p>
@@ -46,7 +46,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           data-testid="tag"
         >
           <span
-            class="css-1qlv5b"
+            class="css-14u1cgq"
           >
             TAG
           </span>
@@ -60,14 +60,14 @@ exports[`Render Component one should render a snapshot 1`] = `
           class="css-17x5lw"
         >
           <span
-            class="css-13ln2fu"
+            class="css-1payua0"
           >
             Sarcacens an inclusive club? They didnt look out for me
           </span>
         </span>
       </a>
       <p
-        class="css-1bjsyle"
+        class="css-1ocner8"
       >
         Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
       </p>
@@ -86,7 +86,7 @@ exports[`Render Component one should render a snapshot 1`] = `
               class="css-17x5lw"
             >
               <span
-                class="css-1i385gi"
+                class="css-1j5e90f"
               >
                 Review
               </span>
@@ -102,7 +102,7 @@ exports[`Render Component one should render a snapshot 1`] = `
             />
           </div>
           <span
-            class="css-nqhqa4"
+            class="css-l4j3xy"
           >
             4 min read
           </span>

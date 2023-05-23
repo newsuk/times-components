@@ -27,7 +27,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="css-13byt3y"
               >
                 <span
-                  class="css-1qlv5b"
+                  class="css-14u1cgq"
                 >
                   TAGL1 1
                 </span>
@@ -40,14 +40,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-13ln2fu"
+                    class="css-1payua0"
                   >
                     Article 1
                   </span>
                 </span>
               </a>
               <p
-                class="css-1bjsyle"
+                class="css-1ocner8"
               >
                 Lorem ipsum dolor sit amet.
               </p>
@@ -63,7 +63,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1i385gi"
+                      class="css-1j5e90f"
                     >
                       Tag 1
                     </span>
@@ -79,7 +79,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-nqhqa4"
+                  class="css-l4j3xy"
                 >
                   Flag 1
                 </span>
@@ -116,7 +116,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 1
                     </p>
@@ -150,7 +150,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 2
                     </p>
@@ -178,7 +178,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="css-13byt3y"
               >
                 <span
-                  class="css-1qlv5b"
+                  class="css-14u1cgq"
                 >
                   TAGL1 2
                 </span>
@@ -191,14 +191,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-k2d5qk"
+                    class="css-4qsr1y"
                   >
                     Article 2
                   </span>
                 </span>
               </a>
               <p
-                class="css-1bjsyle"
+                class="css-1ocner8"
               >
                 Lorem ipsum dolor sit amet.
               </p>
@@ -214,7 +214,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1i385gi"
+                      class="css-1j5e90f"
                     >
                       Tag 2
                     </span>
@@ -230,7 +230,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-nqhqa4"
+                  class="css-l4j3xy"
                 >
                   Flag 2
                 </span>
@@ -267,7 +267,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 1
                     </p>
@@ -301,7 +301,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 2
                     </p>
@@ -366,7 +366,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   </picture>
                 </div>
                 <p
-                  class="css-98oi0p"
+                  class="css-1qlz25y"
                 >
                   Credit
                 </p>
@@ -382,14 +382,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-174i6ea"
+                      class="css-z2qs"
                     >
                       Saracens an inclusive club? They didn't look out for me
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-1bjsyle"
+                  class="css-1ocner8"
                 >
                   Lyon lock Joel Kpoku tells Will Kelleher that he's fired up to face old team — and urges more English stars to move to France
                 </p>
@@ -408,7 +408,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1i385gi"
+                          class="css-1j5e90f"
                         >
                           Review
                         </span>
@@ -424,7 +424,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       />
                     </div>
                     <span
-                      class="css-nqhqa4"
+                      class="css-l4j3xy"
                     >
                       4 min read
                     </span>
@@ -488,7 +488,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-k2d5qk"
+                        class="css-4qsr1y"
                       >
                         European cup winner Mihajlovic dies aged 53 after battle with leukemia
                       </span>
@@ -506,7 +506,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1i385gi"
+                          class="css-1j5e90f"
                         >
                           Tag
                         </span>
@@ -522,7 +522,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       />
                     </div>
                     <span
-                      class="css-nqhqa4"
+                      class="css-l4j3xy"
                     >
                       Flag
                     </span>
@@ -573,7 +573,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-k2d5qk"
+                        class="css-4qsr1y"
                       >
                         American owners pose threat to English pyramid
                       </span>
@@ -640,7 +640,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-k2d5qk"
+                      class="css-4qsr1y"
                     >
                       European cup winner Mihajlovic dies aged 53 after battle with leukemia
                     </span>
@@ -658,7 +658,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1i385gi"
+                        class="css-1j5e90f"
                       >
                         Tag
                       </span>
@@ -674,7 +674,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-nqhqa4"
+                    class="css-l4j3xy"
                   >
                     Flag1
                   </span>
@@ -725,7 +725,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-k2d5qk"
+                      class="css-4qsr1y"
                     >
                       American owners pose threat to English pyramid
                     </span>
@@ -777,7 +777,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-k2d5qk"
+                      class="css-4qsr1y"
                     >
                       £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
                     </span>
@@ -795,7 +795,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1i385gi"
+                        class="css-1j5e90f"
                       >
                         Tag
                       </span>
@@ -848,7 +848,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-k2d5qk"
+                      class="css-4qsr1y"
                     >
                       Blow for rebel clubs as court says UEFA can block Super League
                     </span>
@@ -859,7 +859,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   data-testid="tag-and-flag"
                 >
                   <span
-                    class="css-nqhqa4"
+                    class="css-l4j3xy"
                   >
                     Flag4
                   </span>
@@ -910,7 +910,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-k2d5qk"
+                      class="css-4qsr1y"
                     >
                       Blow for rebel clubs as court says UEFA can block Super League
                     </span>
@@ -928,7 +928,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1i385gi"
+                        class="css-1j5e90f"
                       >
                         Tag
                       </span>
@@ -944,7 +944,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-nqhqa4"
+                    class="css-l4j3xy"
                   >
                     Flag5
                   </span>
@@ -1008,7 +1008,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           class="css-17x5lw"
                         >
                           <span
-                            class="css-k2d5qk"
+                            class="css-4qsr1y"
                           >
                             Blow for rebel clubs as court says UEFA can block Super League
                           </span>
@@ -1019,7 +1019,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         data-testid="tag-and-flag"
                       >
                         <span
-                          class="css-nqhqa4"
+                          class="css-l4j3xy"
                         >
                           Flag4
                         </span>
@@ -1074,7 +1074,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           class="css-17x5lw"
                         >
                           <span
-                            class="css-k2d5qk"
+                            class="css-4qsr1y"
                           >
                             Blow for rebel clubs as court says UEFA can block Super League
                           </span>
@@ -1092,7 +1092,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             class="css-17x5lw"
                           >
                             <span
-                              class="css-1i385gi"
+                              class="css-1j5e90f"
                             >
                               Tag
                             </span>
@@ -1108,7 +1108,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           />
                         </div>
                         <span
-                          class="css-nqhqa4"
+                          class="css-l4j3xy"
                         >
                           Flag5
                         </span>
@@ -1153,7 +1153,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-13byt3y"
               >
                 <span
-                  class="css-1qlv5b"
+                  class="css-14u1cgq"
                 >
                   TAGL1 1
                 </span>
@@ -1166,14 +1166,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-13ln2fu"
+                    class="css-1payua0"
                   >
                     Article 1
                   </span>
                 </span>
               </a>
               <p
-                class="css-1bjsyle"
+                class="css-1ocner8"
               >
                 Lorem ipsum dolor sit amet.
               </p>
@@ -1189,7 +1189,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1i385gi"
+                      class="css-1j5e90f"
                     >
                       Tag 1
                     </span>
@@ -1205,7 +1205,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-nqhqa4"
+                  class="css-l4j3xy"
                 >
                   Flag 1
                 </span>
@@ -1242,7 +1242,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 1
                     </p>
@@ -1276,7 +1276,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 2
                     </p>
@@ -1304,7 +1304,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-13byt3y"
               >
                 <span
-                  class="css-1qlv5b"
+                  class="css-14u1cgq"
                 >
                   TAGL1 2
                 </span>
@@ -1317,14 +1317,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-k2d5qk"
+                    class="css-4qsr1y"
                   >
                     Article 2
                   </span>
                 </span>
               </a>
               <p
-                class="css-1bjsyle"
+                class="css-1ocner8"
               >
                 Lorem ipsum dolor sit amet.
               </p>
@@ -1340,7 +1340,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1i385gi"
+                      class="css-1j5e90f"
                     >
                       Tag 2
                     </span>
@@ -1356,7 +1356,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-nqhqa4"
+                  class="css-l4j3xy"
                 >
                   Flag 2
                 </span>
@@ -1393,7 +1393,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 1
                     </p>
@@ -1427,7 +1427,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 2
                     </p>
@@ -1492,7 +1492,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   </picture>
                 </div>
                 <p
-                  class="css-98oi0p"
+                  class="css-1qlz25y"
                 >
                   Credit
                 </p>
@@ -1508,14 +1508,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-174i6ea"
+                      class="css-z2qs"
                     >
                       Saracens an inclusive club? They didn't look out for me
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-1bjsyle"
+                  class="css-1ocner8"
                 >
                   Lyon lock Joel Kpoku tells Will Kelleher that he's fired up to face old team — and urges more English stars to move to France
                 </p>
@@ -1534,7 +1534,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1i385gi"
+                          class="css-1j5e90f"
                         >
                           Review
                         </span>
@@ -1550,7 +1550,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-nqhqa4"
+                      class="css-l4j3xy"
                     >
                       4 min read
                     </span>
@@ -1614,7 +1614,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-k2d5qk"
+                        class="css-4qsr1y"
                       >
                         European cup winner Mihajlovic dies aged 53 after battle with leukemia
                       </span>
@@ -1632,7 +1632,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1i385gi"
+                          class="css-1j5e90f"
                         >
                           Tag
                         </span>
@@ -1648,7 +1648,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-nqhqa4"
+                      class="css-l4j3xy"
                     >
                       Flag
                     </span>
@@ -1699,7 +1699,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-k2d5qk"
+                        class="css-4qsr1y"
                       >
                         American owners pose threat to English pyramid
                       </span>
@@ -1763,7 +1763,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-k2d5qk"
+                    class="css-4qsr1y"
                   >
                     European cup winner Mihajlovic dies aged 53 after battle with leukemia
                   </span>
@@ -1781,7 +1781,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1i385gi"
+                      class="css-1j5e90f"
                     >
                       Tag
                     </span>
@@ -1797,7 +1797,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-nqhqa4"
+                  class="css-l4j3xy"
                 >
                   Flag1
                 </span>
@@ -1840,7 +1840,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-k2d5qk"
+                    class="css-4qsr1y"
                   >
                     American owners pose threat to English pyramid
                   </span>
@@ -1884,7 +1884,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-k2d5qk"
+                    class="css-4qsr1y"
                   >
                     £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
                   </span>
@@ -1902,7 +1902,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1i385gi"
+                      class="css-1j5e90f"
                     >
                       Tag
                     </span>
@@ -1948,7 +1948,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-k2d5qk"
+                          class="css-4qsr1y"
                         >
                           Blow for rebel clubs as court says UEFA can block Super League
                         </span>
@@ -1959,7 +1959,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       data-testid="tag-and-flag"
                     >
                       <span
-                        class="css-nqhqa4"
+                        class="css-l4j3xy"
                       >
                         Flag4
                       </span>
@@ -1994,7 +1994,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-k2d5qk"
+                          class="css-4qsr1y"
                         >
                           Blow for rebel clubs as court says UEFA can block Super League
                         </span>
@@ -2012,7 +2012,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           class="css-17x5lw"
                         >
                           <span
-                            class="css-1i385gi"
+                            class="css-1j5e90f"
                           >
                             Tag
                           </span>
@@ -2028,7 +2028,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         />
                       </div>
                       <span
-                        class="css-nqhqa4"
+                        class="css-l4j3xy"
                       >
                         Flag5
                       </span>
@@ -2072,7 +2072,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-13byt3y"
               >
                 <span
-                  class="css-1qlv5b"
+                  class="css-14u1cgq"
                 >
                   TAGL1 1
                 </span>
@@ -2085,14 +2085,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-13ln2fu"
+                    class="css-1payua0"
                   >
                     Article 1
                   </span>
                 </span>
               </a>
               <p
-                class="css-1bjsyle"
+                class="css-1ocner8"
               >
                 Lorem ipsum dolor sit amet.
               </p>
@@ -2108,7 +2108,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1i385gi"
+                      class="css-1j5e90f"
                     >
                       Tag 1
                     </span>
@@ -2124,7 +2124,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-nqhqa4"
+                  class="css-l4j3xy"
                 >
                   Flag 1
                 </span>
@@ -2161,7 +2161,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 1
                     </p>
@@ -2195,7 +2195,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 2
                     </p>
@@ -2223,7 +2223,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-13byt3y"
               >
                 <span
-                  class="css-1qlv5b"
+                  class="css-14u1cgq"
                 >
                   TAGL1 2
                 </span>
@@ -2236,14 +2236,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-k2d5qk"
+                    class="css-4qsr1y"
                   >
                     Article 2
                   </span>
                 </span>
               </a>
               <p
-                class="css-1bjsyle"
+                class="css-1ocner8"
               >
                 Lorem ipsum dolor sit amet.
               </p>
@@ -2259,7 +2259,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1i385gi"
+                      class="css-1j5e90f"
                     >
                       Tag 2
                     </span>
@@ -2275,7 +2275,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-nqhqa4"
+                  class="css-l4j3xy"
                 >
                   Flag 2
                 </span>
@@ -2312,7 +2312,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 1
                     </p>
@@ -2346,7 +2346,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </svg>
                     </div>
                     <p
-                      class="css-12leu6"
+                      class="css-rhakbt"
                     >
                       List item 2
                     </p>
@@ -2411,7 +2411,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   </picture>
                 </div>
                 <p
-                  class="css-98oi0p"
+                  class="css-1qlz25y"
                 >
                   Credit
                 </p>
@@ -2427,14 +2427,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-174i6ea"
+                      class="css-z2qs"
                     >
                       Saracens an inclusive club? They didn't look out for me
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-1bjsyle"
+                  class="css-1ocner8"
                 >
                   Lyon lock Joel Kpoku tells Will Kelleher that he's fired up to face old team — and urges more English stars to move to France
                 </p>
@@ -2453,7 +2453,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1i385gi"
+                          class="css-1j5e90f"
                         >
                           Review
                         </span>
@@ -2469,7 +2469,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-nqhqa4"
+                      class="css-l4j3xy"
                     >
                       4 min read
                     </span>
@@ -2530,7 +2530,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-k2d5qk"
+                        class="css-4qsr1y"
                       >
                         European cup winner Mihajlovic dies aged 53 after battle with leukemia
                       </span>
@@ -2548,7 +2548,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1i385gi"
+                          class="css-1j5e90f"
                         >
                           Tag
                         </span>
@@ -2564,7 +2564,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-nqhqa4"
+                      class="css-l4j3xy"
                     >
                       Flag
                     </span>
@@ -2603,7 +2603,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-k2d5qk"
+                        class="css-4qsr1y"
                       >
                         American owners pose threat to English pyramid
                       </span>
@@ -2674,7 +2674,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-k2d5qk"
+                        class="css-4qsr1y"
                       >
                         European cup winner Mihajlovic dies aged 53 after battle with leukemia
                       </span>
@@ -2692,7 +2692,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1i385gi"
+                          class="css-1j5e90f"
                         >
                           Tag
                         </span>
@@ -2708,7 +2708,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-nqhqa4"
+                      class="css-l4j3xy"
                     >
                       Flag1
                     </span>
@@ -2751,7 +2751,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-k2d5qk"
+                        class="css-4qsr1y"
                       >
                         American owners pose threat to English pyramid
                       </span>
@@ -2795,7 +2795,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-k2d5qk"
+                        class="css-4qsr1y"
                       >
                         £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
                       </span>
@@ -2813,7 +2813,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1i385gi"
+                          class="css-1j5e90f"
                         >
                           Tag
                         </span>
@@ -2858,7 +2858,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-k2d5qk"
+                        class="css-4qsr1y"
                       >
                         Blow for rebel clubs as court says UEFA can block Super League
                       </span>
@@ -2869,7 +2869,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-nqhqa4"
+                      class="css-l4j3xy"
                     >
                       Flag4
                     </span>
@@ -2912,7 +2912,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-k2d5qk"
+                        class="css-4qsr1y"
                       >
                         Blow for rebel clubs as court says UEFA can block Super League
                       </span>
@@ -2930,7 +2930,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1i385gi"
+                          class="css-1j5e90f"
                         >
                           Tag
                         </span>
@@ -2946,7 +2946,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-nqhqa4"
+                      class="css-l4j3xy"
                     >
                       Flag5
                     </span>
@@ -3008,7 +3008,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-k2d5qk"
+                          class="css-4qsr1y"
                         >
                           Blow for rebel clubs as court says UEFA can block Super League
                         </span>
@@ -3019,7 +3019,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       data-testid="tag-and-flag"
                     >
                       <span
-                        class="css-nqhqa4"
+                        class="css-l4j3xy"
                       >
                         Flag4
                       </span>
@@ -3061,7 +3061,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-k2d5qk"
+                          class="css-4qsr1y"
                         >
                           Blow for rebel clubs as court says UEFA can block Super League
                         </span>
@@ -3079,7 +3079,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           class="css-17x5lw"
                         >
                           <span
-                            class="css-1i385gi"
+                            class="css-1j5e90f"
                           >
                             Tag
                           </span>
@@ -3095,7 +3095,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         />
                       </div>
                       <span
-                        class="css-nqhqa4"
+                        class="css-l4j3xy"
                       >
                         Flag5
                       </span>

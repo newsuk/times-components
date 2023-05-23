@@ -15,12 +15,12 @@ exports[`FreeTrail should render freeTrail banner component 1`] = `
           class="css-1ru9wvo"
         >
           <h2
-            class="css-1qkrt2l"
+            class="css-hd1uiy"
           >
             Play thousands of puzzles with unlimited digital access
           </h2>
           <p
-            class="css-gril0l"
+            class="css-mjtjc2"
           >
             Brain train, read and comment free for one month
           </p>
@@ -30,7 +30,7 @@ exports[`FreeTrail should render freeTrail banner component 1`] = `
             href="https://www.newskit.co.uk/"
           >
             <span
-              class="css-imuzh3"
+              class="css-1dncs8y"
             >
               Start your free trail
             </span>

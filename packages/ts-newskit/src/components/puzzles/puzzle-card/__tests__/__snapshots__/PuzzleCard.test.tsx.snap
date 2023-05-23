@@ -63,7 +63,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
             class="css-1xzc2un"
           >
             <div
-              class="css-reoy8x"
+              class="css-3mtjyz"
             >
               Polygon
             </div>
@@ -100,12 +100,12 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
           class="css-13byt3y"
         >
           <span
-            class="css-qsmink"
+            class="css-1e50s58"
           >
             Friday
           </span>
           <span
-            class="css-16ew30g"
+            class="css-3wq9sf"
           >
              | test-1
           </span>
