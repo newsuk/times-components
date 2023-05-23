@@ -1,4 +1,3 @@
-import { Theme } from 'newskit';
 import xss from 'xss';
 
 const decodeEntities = (str: string) =>

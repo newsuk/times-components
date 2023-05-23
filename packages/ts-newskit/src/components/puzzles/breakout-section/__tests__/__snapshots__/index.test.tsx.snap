@@ -9,12 +9,12 @@ exports[`BreakoutSection should render Breakout section 1`] = `
       class="css-116zady"
     >
       <h2
-        class="css-lpztmt"
+        class="css-1nr274h"
       >
         Add a challenge to your day
       </h2>
       <p
-        class="css-17e0enp"
+        class="css-s7gvas"
       >
         Play exclusive Word puzzles, Number puzzles, Quizzes and more
       </p>
@@ -129,7 +129,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-imuzh3"
+              class="css-1dncs8y"
             >
               Crosswords
             </span>
@@ -145,7 +145,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-imuzh3"
+              class="css-1dncs8y"
             >
               Sudokus
             </span>
@@ -161,7 +161,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-imuzh3"
+              class="css-1dncs8y"
             >
               Word Puzzles
             </span>
@@ -177,7 +177,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-imuzh3"
+              class="css-1dncs8y"
             >
               Numbers and Logic
             </span>
@@ -193,7 +193,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-imuzh3"
+              class="css-1dncs8y"
             >
               Quizzes and Teasers
             </span>
@@ -209,7 +209,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
             href="/"
           >
             <span
-              class="css-imuzh3"
+              class="css-1dncs8y"
             >
               Board and Card Games
             </span>

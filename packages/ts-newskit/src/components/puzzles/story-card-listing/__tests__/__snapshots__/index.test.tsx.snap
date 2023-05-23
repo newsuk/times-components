@@ -10,7 +10,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
       class="css-1aiajnh"
     >
       <section
-        class="css-1goqtre"
+        class="css-reqlla"
       >
         <h2
           class="nk-headline-heading css-i2jo9u"
@@ -94,7 +94,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
                 class="css-1xzc2un"
               >
                 <section
-                  class="css-cvf1ch"
+                  class="css-1uaizzm"
                 >
                   <h3
                     class="nk-headline-heading css-i2jo9u"
@@ -140,7 +140,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               data-testid="tag"
             >
               <span
-                class="css-1qlv5b"
+                class="css-14u1cgq"
               >
                 Technology
               </span>
@@ -150,7 +150,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               data-testid="tag"
             >
               <span
-                class="css-1qlv5b"
+                class="css-14u1cgq"
               >
                 6 min read
               </span>
@@ -230,7 +230,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
                 class="css-1xzc2un"
               >
                 <section
-                  class="css-14s1uqg"
+                  class="css-69jkbe"
                 >
                   <h3
                     class="nk-headline-heading css-i2jo9u"
@@ -276,7 +276,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               data-testid="tag"
             >
               <span
-                class="css-1qlv5b"
+                class="css-14u1cgq"
               >
                 Technology
               </span>
@@ -286,7 +286,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               data-testid="tag"
             >
               <span
-                class="css-1qlv5b"
+                class="css-14u1cgq"
               >
                 6 min read
               </span>
@@ -366,7 +366,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
                 class="css-1xzc2un"
               >
                 <section
-                  class="css-14s1uqg"
+                  class="css-69jkbe"
                 >
                   <h3
                     class="nk-headline-heading css-i2jo9u"
@@ -412,7 +412,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               data-testid="tag"
             >
               <span
-                class="css-1qlv5b"
+                class="css-14u1cgq"
               >
                 Technology
               </span>
@@ -422,7 +422,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               data-testid="tag"
             >
               <span
-                class="css-1qlv5b"
+                class="css-14u1cgq"
               >
                 6 min read
               </span>
@@ -502,7 +502,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
                 class="css-1xzc2un"
               >
                 <section
-                  class="css-14s1uqg"
+                  class="css-69jkbe"
                 >
                   <h3
                     class="nk-headline-heading css-i2jo9u"
@@ -548,7 +548,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               data-testid="tag"
             >
               <span
-                class="css-1qlv5b"
+                class="css-14u1cgq"
               >
                 Technology
               </span>
@@ -558,7 +558,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               data-testid="tag"
             >
               <span
-                class="css-1qlv5b"
+                class="css-14u1cgq"
               >
                 6 min read
               </span>

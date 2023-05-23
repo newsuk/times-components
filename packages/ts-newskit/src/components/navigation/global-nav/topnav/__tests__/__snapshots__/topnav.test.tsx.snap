@@ -1261,7 +1261,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
           href="/"
         >
           <span
-            class="css-imuzh3"
+            class="css-1dncs8y"
           >
             Log in
           </span>
@@ -1275,7 +1275,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
           href="/"
         >
           <span
-            class="css-imuzh3"
+            class="css-1dncs8y"
           >
             Subscribe
           </span>

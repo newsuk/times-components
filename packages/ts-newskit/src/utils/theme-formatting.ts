@@ -1,4 +1,4 @@
-import { Theme } from "newskit";
+import { StylePreset, Theme, TypographyPreset } from "newskit";
 
 const modifyBaseRemValue = (multiplier: number, valueToUpdate: string) => {
   const getVal = valueToUpdate.slice(0, -3);
@@ -7,17 +7,21 @@ const modifyBaseRemValue = (multiplier: number, valueToUpdate: string) => {
   return `${updatedVal}rem`
 }
 
-const modifyFontFamilyValue = (family: string, weight?: number) => {
+export const modifyFontFamilyValue = (family: string, weight?: number) => {
   let updatedFont = family;
   switch (family) {
     case "Roboto":
-      updatedFont = weight && weight > 500 ? "Roboto-Medium" : "Roboto-Regular"
+      updatedFont = weight && weight >= 500 
+        ? "'Roboto-Medium', 'Roboto-Medium-fallback', sans-serif"
+        : "'Roboto-Regular', 'Roboto-Regular-fallback', sans-serif"
       break;
     case "Times Modern":
-      updatedFont = weight && weight > 500 ? "TimesModern-Bold" : "TimesModern-Regular"
+      updatedFont = weight && weight > 500 
+        ? "'TimesModern-Bold', 'TimesModern-Bold-fallback', serif"
+        : "'TimesModern-Regular', 'TimesModern-Regular-fallback', serif"
       break;
     case "Times Digital W04 Regular":
-      updatedFont = "TimesDigitalW04-Regular"
+      updatedFont = "'TimesDigitalW04-Regular', 'TimesDigitalW04-Regular-fallback', serif"
       break;
   
     default:
@@ -55,9 +59,7 @@ export const updateThemeTypography = (themeObj: Theme) => {
   // Update Font Families
   Object.values(themeObj.fonts).map(font => {
     if(font.fontFamily) {
-      font.fontFamily = font.fontFamily
-        ? modifyFontFamilyValue(font.fontFamily)
-        : null      
+      font.fontFamily = modifyFontFamilyValue(font.fontFamily)
     }
   });  
 
@@ -74,9 +76,12 @@ export const updateThemeTypography = (themeObj: Theme) => {
   return themeObj;
 }
   
-export const formatThemeOverrides = (themeObj: Theme, stylePresets = {}, typographyPresets = {}) => {
+export const formatThemeOverrides = (
+  themeObj: Theme,
+  stylePresets: StylePreset,
+  typographyPresets: TypographyPreset
+) => {
   const updatedThemeTypography = updateThemeTypography(themeObj);
-  console.log("updatedThemeTypography: ", updatedThemeTypography)
 
   return {
     overrides: {
