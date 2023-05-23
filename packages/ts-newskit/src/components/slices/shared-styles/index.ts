@@ -40,9 +40,15 @@ export const ContainerInline = styled(Block)`
   ${getSizingCssFromTheme('height', 'sizing020')};
 `;
 
-const setImageMargin = (space: string) => ({ marginInline: `-${space}` });
+const setFullWidthMargin = (space: string) => ({ marginInline: `-${space}` });
 export const FullWidthCardMediaMob = styled(CardMedia)`
   ${getMediaQueryFromTheme('xs', 'md')} {
-    ${getSpacingCssFromTheme(setImageMargin, 'space045')};
+    ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
+  }
+`;
+
+export const FullWidthDividerMob = styled(Block)`
+  ${getMediaQueryFromTheme('xs', 'md')} {
+    ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
   }
 `;

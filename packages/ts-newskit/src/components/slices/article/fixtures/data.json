@@ -6,8 +6,11 @@
   },
   "title": "Harry & Meghan's New Project?",
   "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-  "articleType": "Review",
-  "timeToRead": "4 min read",
+  "tag": {
+    "label":"Tag",
+    "href":"/"
+  },
+  "flag": "4 min read",
   "color": "#E34605",
   "imageRight": false
 }

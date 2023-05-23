@@ -21,10 +21,13 @@ const defaultProps = {
   title: "Harry & Meghan's New Project?",
   url:
     '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
-  articleType: 'Review',
-  timeToRead: '4 min read',
-  color: '#E34605',
-  imageRight: false
+  tag: {
+    label: 'Review',
+    href: '/'
+  },
+  flag: '4 min read',
+  imageRight: false,
+  hideImage: false
 };
 
 describe('Render Article List Item', () => {
@@ -74,24 +77,17 @@ describe('Render Article List Item', () => {
       title: "Harry & Meghan's New Project?",
       url:
         '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
-      articleType: 'Review',
-      timeToRead: '4 min read'
+      tag: {
+        label: 'Review',
+        href: '/'
+      },
+      flag: '4 min read'
     });
     const articleListUrl = screen.getByAltText("Harry & Meghan's New Project?");
     expect(articleListUrl).toHaveAttribute(
       'alt',
       "Harry & Meghan's New Project?"
     );
-  });
-
-  it('it should not render `timeToRead` if not passed', () => {
-    renderComponent({ ...defaultProps, timeToRead: '', articleType: '' });
-
-    const articleType = screen.queryByText('Review');
-    const timeToRead = screen.queryByText('4 min read');
-
-    expect(articleType).not.toBeInTheDocument();
-    expect(timeToRead).not.toBeInTheDocument();
   });
 });
 
@@ -112,5 +108,25 @@ describe('Render Article List Item with hidden image', () => {
 
     expect(articleImage).toBeNull();
     expect(credit).toBeNull();
+  });
+  it('items should render with divider', () => {
+    renderComponent({
+      ...defaultProps,
+      isFullWidth: true,
+      hasTopBorder: true,
+      hideImage: true
+    });
+    const articleDivider = screen.getAllByTestId('divider')[0];
+    expect(articleDivider).toBeInTheDocument();
+  });
+  it('items should render the divider with right margin', () => {
+    renderComponent({
+      ...defaultProps,
+      isFullWidth: true,
+      hasTopBorder: true,
+      hideImage: false
+    });
+    const articleDivider = screen.getAllByTestId('divider')[1];
+    expect(articleDivider.style.marginBottom).toBe('');
   });
 });

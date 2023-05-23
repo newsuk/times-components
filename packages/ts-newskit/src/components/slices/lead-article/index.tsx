@@ -2,46 +2,38 @@ import {
   TextBlock,
   Visible,
   Block,
-  Divider,
   CardContent,
   CardComposable,
-  Flag,
-  Tag
+  Tag,
+  Divider
 } from 'newskit';
 import React from 'react';
-import {
-  ContainerInline,
-  CardHeadlineLink,
-  FullWidthCardMediaMob,
-  TextLink
-} from '../shared-styles';
-import { StyledDivider } from './styles';
+import { CardHeadlineLink, FullWidthCardMediaMob } from '../shared-styles';
+import { TagAndFlag } from '../shared';
 
 export interface LeadArticleProps {
   headline: string;
-  readingTime: string;
+  flag?: string;
   summary: string;
   subHeadline?: string;
   caption: string;
   image: string;
   url: string;
-  articleType?: {
+  tag?: {
     label: string;
     href: string;
   };
-  hasTagOrTimeToRead?: boolean;
   imageTop?: boolean;
 }
 export const LeadArticle = ({
   headline,
-  readingTime,
+  flag,
   summary,
   subHeadline,
   caption,
   image,
   url,
-  articleType,
-  hasTagOrTimeToRead,
+  tag,
   imageTop
 }: LeadArticleProps) => {
   const stylePresets = {
@@ -57,8 +49,11 @@ export const LeadArticle = ({
   return (
     <CardComposable
       areas={{
-        xs: `media 
-             content`,
+        xs: imageTop
+          ? `media
+             content`
+          : `content 
+             media`,
         md: imageTop
           ? `media 
              content`
@@ -84,7 +79,11 @@ export const LeadArticle = ({
       </Block>
       <CardContent alignContent="start">
         {!imageTop && (
-          <StyledDivider overrides={{ stylePreset: 'dashedDivider' }} />
+          <Divider
+            overrides={{
+              stylePreset: 'dashedDivider'
+            }}
+          />
         )}
         {subHeadline && (
           <Visible md lg xl>
@@ -107,7 +106,7 @@ export const LeadArticle = ({
             marginBlockStart: 'space050'
           }}
           external={false}
-          expand={!articleType}
+          expand={!tag}
         >
           {headline}
         </CardHeadlineLink>
@@ -121,41 +120,11 @@ export const LeadArticle = ({
         >
           {summary}
         </TextBlock>
-        <Visible xs={hasTagOrTimeToRead} sm={hasTagOrTimeToRead} md lg xl>
-          {articleType && (
-            <TextLink
-              overrides={{
-                ...stylePresets
-              }}
-              href={articleType.href}
-            >
-              {articleType.label}
-            </TextLink>
+        <Block marginBlockEnd="space040">
+          {(tag || flag) && (
+            <TagAndFlag tag={tag} flag={flag} marginBlockStart="space040" />
           )}
-          {articleType &&
-            readingTime && (
-              <ContainerInline>
-                <Divider
-                  vertical
-                  overrides={{
-                    marginInline: 'space020'
-                  }}
-                />
-              </ContainerInline>
-            )}
-          {readingTime && (
-            <Flag
-              size="small"
-              overrides={{
-                ...stylePresets,
-                stylePreset: 'inkSubtle',
-                typographyPreset: 'utilityLabel010'
-              }}
-            >
-              {readingTime}
-            </Flag>
-          )}
-        </Visible>
+        </Block>
       </CardContent>
     </CardComposable>
   );

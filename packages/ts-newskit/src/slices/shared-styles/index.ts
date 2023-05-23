@@ -12,16 +12,24 @@ export const CellNoMargin = styled(Cell)`
   }
 `;
 
+const setBlockMargin = (space: string) => ({ marginBlockStart: `${space}` });
+export const LeadArticleCell = styled(CellNoMargin)`
+  position: relative;
+  ${getMediaQueryFromTheme('md')} {
+    ${getSpacingCssFromTheme(setBlockMargin, 'space040')};
+  }
+`;
+
 export const LeadStoryCell = styled(CellNoMargin)`
   position: relative;
 `;
 
-const setRightPos = (space: string) => ({ right: space });
-export const LeadStoryDivider = styled(Divider)`
+export const LeadStoryDivider = styled(Divider)<{ position: string }>`
   position: absolute;
   top: 0;
-  ${getSpacingCssFromTheme(setRightPos, 'space010')};
+  ${({ position }) => getSpacingCssFromTheme(position, 'space010')};
 `;
+
 export const AvatarDivider = styled(Divider)`
   ${getMediaQueryFromTheme('md')} {
     height: 77px;

@@ -5,101 +5,106 @@ exports[`Render Lead Article Item should render a snapshot 1`] = `
   <div
     class="css-13byt3y"
   >
-    <span
-      class="css-1qlv5b"
-    >
-      TAG
-    </span>
-  </div>
-  <a
-    class="css-u57k3c"
-    href="#"
-  >
-    <span
-      class="css-17x5lw"
+    <div
+      class="css-13byt3y"
     >
       <span
-        class="css-k2d5qk"
+        class="css-1qlv5b"
       >
-        Short title of the card describing the main content
+        TAG
       </span>
-    </span>
-  </a>
-  <p
-    class="css-1bjsyle"
-  >
-    Short paragraph description of the article, outlining main story and focus.
-  </p>
-  <div
-    class="css-13s74dp"
-  >
+    </div>
     <a
-      class="css-10d4t8c"
+      class="css-u57k3c"
       href="#"
     >
       <span
         class="css-17x5lw"
       >
         <span
-          class="css-1i385gi"
+          class="css-k2d5qk"
         >
-          Tag
+          Short title of the card describing the main content
         </span>
       </span>
     </a>
+    <p
+      class="css-1bjsyle"
+    >
+      Short paragraph description of the article, outlining main story and focus.
+    </p>
     <div
-      class="css-lew009"
+      class="css-13s74dp"
+      data-testid="tag-and-flag"
     >
-      <hr
-        aria-hidden="true"
-        class="css-15kf7hd"
-        data-testid="divider"
-      />
-    </div>
-    <span
-      class="css-nqhqa4"
-    >
-      Flag
-    </span>
-  </div>
-  <ul
-    class="css-1dl3yfl"
-    role="list"
-  >
-    <li
-      class="css-czt13m"
-    >
+      <a
+        class="css-10d4t8c"
+        href="/"
+      >
+        <span
+          class="css-17x5lw"
+        >
+          <span
+            class="css-1i385gi"
+          >
+            Tag
+          </span>
+        </span>
+      </a>
       <div
-        class="css-16r6s3u"
+        class="css-lew009"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-15kf7hd"
+          data-testid="divider"
+        />
+      </div>
+      <span
+        class="css-nqhqa4"
+      >
+        Flag
+      </span>
+    </div>
+    <ul
+      class="css-1dl3yfl"
+      role="list"
+    >
+      <li
+        class="css-czt13m"
       >
         <div
-          aria-hidden="true"
-          class="css-wmopxz"
+          class="css-16r6s3u"
         >
-          <svg
+          <div
             aria-hidden="true"
-            class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-            fill="currentColor"
-            focusable="false"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
+            class="css-wmopxz"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-            />
-          </svg>
+            <svg
+              aria-hidden="true"
+              class="css-z5ltm7-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+              />
+            </svg>
+          </div>
+          <p
+            class="css-12leu6"
+          >
+            Unordered list item
+          </p>
         </div>
-        <p
-          class="css-12leu6"
-        >
-          Unordered list item
-        </p>
-      </div>
-    </li>
-  </ul>
+      </li>
+    </ul>
+  </div>
 </DocumentFragment>
 `;

@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '../../../../utils/test-utils';
-import { LeadArticle } from '../index';
+import { LeadArticle, LeadArticleProps } from '../index';
 import { leadArticle } from '../../../../slices/fixtures/data.json';
 import { useBreakpointKey } from 'newskit';
 
@@ -10,19 +10,13 @@ jest.mock('newskit', () => ({
   useBreakpointKey: jest.fn().mockReturnValue('xs')
 }));
 
-const leadStoryData = {
+const leadStoryData: LeadArticleProps = {
   ...leadArticle,
   subHeadline: 'TAG'
 };
 
 const renderComponent = () =>
-  render(
-    <LeadArticle
-      {...leadStoryData}
-      hasTagOrTimeToRead={false}
-      imageTop={false}
-    />
-  );
+  render(<LeadArticle {...leadStoryData} imageTop={false} />);
 
 describe('Render Component one', () => {
   it('should render a snapshot', () => {
@@ -44,7 +38,7 @@ describe('Render Component one', () => {
   it('should render correct readingTime', () => {
     const { getByText } = renderComponent();
 
-    const readingTimeText = getByText(leadArticle.readingTime);
+    const readingTimeText = getByText(leadArticle.tag.label);
     expect(readingTimeText).toBeInTheDocument();
   });
   it('should render correct caption', () => {
@@ -60,23 +54,26 @@ describe('Render Component one', () => {
     expect(subHeadline).toBeInTheDocument();
   });
 
-  it('should not render articleType if hasTagOrTimeToRead is false', () => {
-    (useBreakpointKey as any).mockReturnValue('xs');
-    const { queryByText } = renderComponent();
-    const articleType = queryByText(leadArticle.articleType.label);
-    expect(articleType).not.toBeVisible();
-  });
-
-  it('should render articleType if hasTagOrTimeToRead is false', () => {
+  it('should render articleType if tag is provided', () => {
     (useBreakpointKey as any).mockReturnValue('xs');
     const { queryByText } = render(
-      <LeadArticle
-        {...leadStoryData}
-        hasTagOrTimeToRead={true}
-        imageTop={true}
-      />
+      <LeadArticle {...leadStoryData} imageTop={true} />
     );
-    const articleType = queryByText(leadArticle.articleType.label);
+    const articleType = queryByText(leadArticle.tag.label);
     expect(articleType).toBeVisible();
+  });
+
+  it('should not render tag or flag if they are not provided', () => {
+    (useBreakpointKey as any).mockReturnValue('lg');
+
+    delete leadStoryData.tag;
+    delete leadStoryData.flag;
+
+    const { queryByText } = render(<LeadArticle {...leadStoryData} />);
+    const tag = queryByText('Tag');
+    const flag = queryByText('Flag');
+
+    expect(tag).not.toBeInTheDocument();
+    expect(flag).not.toBeInTheDocument();
   });
 });

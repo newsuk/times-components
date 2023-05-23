@@ -3,7 +3,7 @@
 exports[`Render Component one should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1t3y47i"
+    class="css-ln8qdk"
   >
     <div
       class="css-13byt3y"
@@ -35,7 +35,7 @@ exports[`Render Component one should render a snapshot 1`] = `
     >
       <hr
         aria-hidden="true"
-        class="css-1ka10v1"
+        class="css-xr87n0"
         data-testid="divider"
       />
       <div
@@ -72,37 +72,37 @@ exports[`Render Component one should render a snapshot 1`] = `
         Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
       </p>
       <div
-        class="css-11l110t"
+        class="css-1pgtvq2"
       >
-        <a
-          class="css-zlgb5d"
-          href="/"
+        <div
+          class="css-1atazsr"
+          data-testid="tag-and-flag"
         >
-          <span
-            class="css-17x5lw"
+          <a
+            class="css-10d4t8c"
+            href="/"
           >
             <span
-              class="css-1i385gi"
+              class="css-17x5lw"
             >
-              Review
+              <span
+                class="css-1i385gi"
+              >
+                Review
+              </span>
             </span>
-          </span>
-        </a>
-        <div
-          class="css-lew009"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-15kf7hd"
-            data-testid="divider"
-          />
-        </div>
-        <div
-          class="css-107ty6x"
-          data-testid="flag"
-        >
+          </a>
+          <div
+            class="css-lew009"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-15kf7hd"
+              data-testid="divider"
+            />
+          </div>
           <span
-            class="css-1qlv5b"
+            class="css-nqhqa4"
           >
             4 min read
           </span>

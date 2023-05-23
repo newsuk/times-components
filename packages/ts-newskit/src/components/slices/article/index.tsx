@@ -6,14 +6,14 @@ import {
   TextBlock,
   CardComposable,
   CardMedia,
-  GridLayoutItem,
-  useBreakpointKey
+  GridLayoutItem
 } from 'newskit';
 import {
   CardHeadlineLink,
-  ContainerInline,
-  FullWidthCardMediaMob
+  FullWidthCardMediaMob,
+  FullWidthDividerMob
 } from '../shared-styles';
+import { TagAndFlag } from '../shared';
 
 type ImageProps = {
   src: string;
@@ -25,30 +25,34 @@ export interface ArticleProps {
   title: string;
   url: string;
   image?: ImageProps;
-  articleType?: string;
-  timeToRead?: string;
+  tag?: {
+    label: string;
+    href: string;
+  };
+  flag?: string;
   hasTopBorder?: boolean;
   hideImage?: boolean;
   isLeadImage?: boolean;
   imageRight?: boolean;
+  isFullWidth?: boolean;
 }
 
 type LayoutProps = {
-  isImageRight: boolean;
+  imageRight: boolean;
 };
 
 export const Article = ({
   image,
   title,
   url,
-  articleType,
-  timeToRead,
+  tag,
+  flag,
   hasTopBorder,
   hideImage,
   isLeadImage,
-  imageRight
+  imageRight,
+  isFullWidth
 }: ArticleProps) => {
-  const breakpointKey = useBreakpointKey();
   const cardImage = !hideImage &&
     image && {
       media: {
@@ -58,19 +62,17 @@ export const Article = ({
       }
     };
 
-  const isImageRight = imageRight && breakpointKey === 'xl';
-
   const CardMediaComponent = isLeadImage ? FullWidthCardMediaMob : CardMedia;
 
   const Layout: React.FC<LayoutProps> = ({ children }) => {
-    return isImageRight ? <Block>{children}</Block> : <>{children}</>;
+    return imageRight ? <Block>{children}</Block> : <>{children}</>;
   };
 
   return (
     <CardComposable
       alignContent="start"
       areas={
-        isImageRight
+        imageRight
           ? `
           border  border
           content media`
@@ -79,24 +81,35 @@ export const Article = ({
          content
         `
       }
-      columns={{ xl: isImageRight ? '1fr 1fr' : '1fr' }}
+      columns={{ xl: imageRight ? '1fr 1fr' : '1fr' }}
       columnGap="space040"
     >
       {hasTopBorder && (
         <GridLayoutItem area="border">
-          <Divider
-            overrides={{
-              marginBlockEnd: hideImage ? 'space000' : 'space040',
-              stylePreset: 'dashedDivider'
-            }}
-          />
+          {isFullWidth ? (
+            <FullWidthDividerMob>
+              <Divider
+                overrides={{
+                  marginBlockEnd: hideImage ? 'space000' : 'space040',
+                  stylePreset: 'dashedDivider'
+                }}
+              />
+            </FullWidthDividerMob>
+          ) : (
+            <Divider
+              overrides={{
+                marginBlockEnd: hideImage ? 'space000' : 'space040',
+                stylePreset: 'dashedDivider'
+              }}
+            />
+          )}
         </GridLayoutItem>
       )}
 
       {image && !hideImage && <CardMediaComponent {...cardImage} />}
       <CardContent>
         {image &&
-          !isImageRight &&
+          !imageRight &&
           image.credit &&
           !hideImage && (
             <TextBlock
@@ -107,46 +120,19 @@ export const Article = ({
               {image.credit}
             </TextBlock>
           )}
-        <Layout isImageRight={isImageRight || false}>
+        <Layout imageRight={imageRight || false}>
           <CardHeadlineLink
             href={url}
             role="link"
             overrides={{
               typographyPreset: 'editorialHeadline020',
-              marginBlockStart: isImageRight ? 'space000' : 'space040'
+              marginBlockStart: imageRight ? 'space000' : 'space040'
             }}
           >
             {title}
           </CardHeadlineLink>
-          {(articleType || timeToRead) && (
-            <Block>
-              <TextBlock
-                typographyPreset="articleListArticleType"
-                as="span"
-                marginBlockStart="space030"
-              >
-                {articleType}
-              </TextBlock>
-              {articleType &&
-                timeToRead && (
-                  <ContainerInline>
-                    <Divider
-                      vertical
-                      overrides={{
-                        marginInline: 'space020'
-                      }}
-                    />
-                  </ContainerInline>
-                )}
-              <TextBlock
-                typographyPreset="articleListTimeToRead"
-                stylePreset="articleListTimeToRead"
-                as="span"
-                marginBlockStart="space030"
-              >
-                {timeToRead}
-              </TextBlock>
-            </Block>
+          {(tag || flag) && (
+            <TagAndFlag tag={tag} flag={flag} marginBlockStart="space040" />
           )}
         </Layout>
       </CardContent>
