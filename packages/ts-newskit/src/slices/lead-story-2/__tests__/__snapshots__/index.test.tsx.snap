@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
+exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="css-8atxkm"
@@ -1022,7 +1022,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
+exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
 <DocumentFragment>
   <div
     class="css-8atxkm"
@@ -1837,7 +1837,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
 </DocumentFragment>
 `;
 
-exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
+exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
 <DocumentFragment>
   <div
     class="css-8atxkm"

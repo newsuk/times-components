@@ -156,7 +156,7 @@ const data = {
 
 const renderComponent = () => render(<LeadStory2 {...data} />);
 
-describe('Render Lead Story 1 Slice', () => {
+describe('Render Lead Story 2 Slice', () => {
   test('Slice matches snapshot', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
 
