@@ -5,7 +5,11 @@ import { stylePresets } from './style-presets';
 import { typographyPresets } from './styles/typography-presets';
 import { formatThemeOverrides } from '../../utils/theme-formatting';
 
-const updatedTheme = formatThemeOverrides(TheTimesLight, stylePresets, typographyPresets);
+const updatedTheme = formatThemeOverrides(
+  TheTimesLight,
+  stylePresets,
+  typographyPresets
+);
 
 export const TimesWebLightTheme = createTheme({
   name: 'times-web-light',
