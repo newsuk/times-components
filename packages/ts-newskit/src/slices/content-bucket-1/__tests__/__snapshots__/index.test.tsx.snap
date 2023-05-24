@@ -79,7 +79,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             class="css-ln8qdk"
           >
             <div
-              class="css-13byt3y"
+              class="css-fit37q"
             >
               <div
                 class="css-uxw9nr"
@@ -104,15 +104,15 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               </p>
             </div>
             <div
-              class="css-17cghxi"
+              class="css-15ermba"
             >
               <hr
                 aria-hidden="true"
-                class="css-xr87n0"
+                class="css-tk98gp"
                 data-testid="divider"
               />
               <a
-                class="css-1xxy735"
+                class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
               >
                 <span
@@ -131,41 +131,37 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
               </p>
               <div
-                class="css-1pgtvq2"
+                class="css-1atazsr"
+                data-testid="tag-and-flag"
               >
-                <div
-                  class="css-1atazsr"
-                  data-testid="tag-and-flag"
+                <a
+                  class="css-10d4t8c"
+                  href="/"
                 >
-                  <a
-                    class="css-10d4t8c"
-                    href="/"
+                  <span
+                    class="css-17x5lw"
                   >
                     <span
-                      class="css-17x5lw"
+                      class="css-1j5e90f"
                     >
-                      <span
-                        class="css-1j5e90f"
-                      >
-                        Review
-                      </span>
+                      Review
                     </span>
-                  </a>
-                  <div
-                    class="css-lew009"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-l4j3xy"
-                  >
-                    4 min read
                   </span>
+                </a>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
                 </div>
+                <span
+                  class="css-l4j3xy"
+                >
+                  4 min read
+                </span>
               </div>
             </div>
           </div>

@@ -1,8 +1,6 @@
 {
-  "section": { "title": "Rugby Union", "href": "https://www.thetimes.co.uk/" },
   "leadArticle": {
     "headline": "Sarcacens an inclusive club? They didnt look out for me",
-    "color": "#01000d",
     "summary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
     "subHeadline": "",
     "caption": "Credit",
@@ -23,7 +21,6 @@
       },
       "title": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "color": "#E34605",
       "imageRight": false,
       "tag": {
         "label": "Tag",
@@ -38,7 +35,6 @@
       },
       "title": "American owners pose threat to English pyramid",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "color": "#E34605",
       "imageRight": false
     },
     {
@@ -48,7 +44,6 @@
       },
       "title": "£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "color": "#E34605",
       "imageRight": false,
       "tag": {
         "label": "Tag",
@@ -62,7 +57,6 @@
       },
       "title": "Blow for rebel clubs as court says Uefa can block Super League",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "color": "#E34605",
       "imageRight": false,
       "flag": "Flag4"
     },
@@ -73,7 +67,6 @@
       },
       "title": "Blow for rebel clubs as court says Uefa can block Super League",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "color": "#E34605",
       "imageRight": false,
       "tag": {
         "label": "Tag",
@@ -119,7 +112,6 @@
       },
       "title": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "color": "#E34605",
       "imageRight": false,
       "flag": "Flag"
     },
@@ -130,9 +122,63 @@
       },
       "title": "‘American owners pose threat to English pyramid’",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "color": "#E34605",
       "imageRight": false,
       "flag": ""
+    }
+  ],
+
+  "verticalArticles": [
+    {
+      "headline": "Short title of the card describing the main content",
+      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "subHeadline": "",
+      "caption": "Credit",
+      "image": "/assets/main_01.jpg",
+      "url": "https://www.thetimes.co.uk",
+      "tag": {
+        "label": "Tag",
+        "href": "/"
+      },
+      "flag": "4 min read"
+    },
+    {
+      "headline": "Short title of the card describing the main content",
+      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "subHeadline": "",
+      "caption": "Credit",
+      "image": "/assets/main_01.jpg",
+      "url": "https://www.thetimes.co.uk",
+      "tag": {
+        "label": "Tag",
+        "href": "/"
+      },
+      "flag": "4 min read"
+    }
+  ],
+  "horizontalArticles": [
+    {
+      "headline": "Short title of the card describing the main content",
+      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "subHeadline": "",
+      "caption": "Credit",
+      "url": "https://www.thetimes.co.uk",
+      "tag": {
+        "label": "Tag",
+        "href": "/"
+      },
+      "flag": "4 min read"
+    },
+    {
+      "headline": "Short title of the card describing the main content",
+      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "subHeadline": "",
+      "caption": "Credit",
+      "url": "https://www.thetimes.co.uk",
+      "tag": {
+        "label": "Tag",
+        "href": "/"
+      },
+      "flag": "4 min read"
     }
   ]
 }

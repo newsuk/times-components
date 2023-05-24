@@ -17,13 +17,16 @@ export interface LeadArticleProps {
   summary: string;
   subHeadline?: string;
   caption: string;
-  image: string;
+  image?: string;
   url: string;
   tag?: {
     label: string;
     href: string;
   };
   imageTop?: boolean;
+  hasTopBorder?: boolean;
+  contentTop?: boolean;
+  typographyPreset?: string;
 }
 export const LeadArticle = ({
   headline,
@@ -34,7 +37,10 @@ export const LeadArticle = ({
   image,
   url,
   tag,
-  imageTop
+  imageTop,
+  hasTopBorder = true,
+  contentTop,
+  typographyPreset
 }: LeadArticleProps) => {
   const stylePresets = {
     typographyPreset: 'utilityButton010',
@@ -62,29 +68,41 @@ export const LeadArticle = ({
       columnGap="space040"
       columns={{ md: imageTop ? '1fr' : '3fr 5fr' }}
     >
-      <Block>
-        <FullWidthCardMediaMob
-          media={{
-            src: image,
-            alt: headline,
-            loadingAspectRatio: '3:2'
-          }}
-        />
-        <TextBlock
-          marginBlockStart="space020"
-          typographyPreset="utilityMeta010"
-        >
-          {caption}
-        </TextBlock>
-      </Block>
-      <CardContent alignContent="start">
-        {!imageTop && (
-          <Divider
-            overrides={{
-              stylePreset: 'dashedDivider'
+      {image && (
+        <Block marginBlockEnd={imageTop ? 'space050' : 'space000'}>
+          <FullWidthCardMediaMob
+            media={{
+              src: image,
+              alt: headline,
+              loadingAspectRatio: '3:2'
             }}
           />
+          <TextBlock
+            marginBlockStart="space020"
+            typographyPreset="utilityMeta010"
+          >
+            {caption}
+          </TextBlock>
+        </Block>
+      )}
+
+      <CardContent
+        alignContent="start"
+        overrides={{ marginBlockEnd: contentTop ? 'space040' : 'space000' }}
+      >
+        {hasTopBorder && (
+          <>
+            {!imageTop && (
+              <Divider
+                overrides={{
+                  stylePreset: 'dashedDivider',
+                  marginBlockEnd: 'space050'
+                }}
+              />
+            )}
+          </>
         )}
+
         {subHeadline && (
           <Visible md lg xl>
             <Tag
@@ -100,10 +118,11 @@ export const LeadArticle = ({
         <CardHeadlineLink
           href={url}
           overrides={{
-            typographyPreset: imageTop
-              ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
-              : 'editorialHeadline040',
-            marginBlockStart: 'space050'
+            typographyPreset: typographyPreset
+              ? typographyPreset
+              : imageTop
+                ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
+                : 'editorialHeadline040'
           }}
           external={false}
           expand={!tag}
@@ -120,11 +139,9 @@ export const LeadArticle = ({
         >
           {summary}
         </TextBlock>
-        <Block marginBlockEnd="space040">
-          {(tag || flag) && (
-            <TagAndFlag tag={tag} flag={flag} marginBlockStart="space040" />
-          )}
-        </Block>
+        {(tag || flag) && (
+          <TagAndFlag tag={tag} flag={flag} marginBlockStart="space040" />
+        )}
       </CardContent>
     </CardComposable>
   );
