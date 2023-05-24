@@ -36,7 +36,7 @@ export const modifyFontFamilyValue = (family: string, weight?: number) => {
 };
 
 export const updateThemeTypography = (themeObj: Theme) => {
-  if(!themeObj.fonts.updated) {
+  if (!themeObj.fonts.updated) {
     themeObj.fonts.updated = 1;
 
     // Update Borders
@@ -94,7 +94,7 @@ export const formatThemeOverrides = (
   typographyPresets: TypographyPreset
 ) => {
   const updatedThemeTypography = updateThemeTypography(themeObj);
-  
+
   return {
     overrides: {
       ...updatedThemeTypography,
