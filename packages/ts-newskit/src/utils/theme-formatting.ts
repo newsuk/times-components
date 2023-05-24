@@ -36,50 +36,54 @@ export const modifyFontFamilyValue = (family: string, weight?: number) => {
 };
 
 export const updateThemeTypography = (themeObj: Theme) => {
-  // Update Borders
-  themeObj.borders = Object.fromEntries(
-    Object.entries(themeObj.borders).map(border => {
-      const updatedVal =
-        typeof border[1] === 'string' && border[1].includes('rem')
-          ? modifyBaseRemValue(1.6, border[1])
-          : border[1];
+  if (!themeObj.fonts.updated) {
+    themeObj.fonts.updated = 1;
 
-      return [border[0], updatedVal];
-    })
-  );
+    // Update Borders
+    themeObj.borders = Object.fromEntries(
+      Object.entries(themeObj.borders).map(border => {
+        const updatedVal =
+          typeof border[1] === 'string' && border[1].includes('rem')
+            ? modifyBaseRemValue(1.6, border[1])
+            : border[1];
 
-  // Update Font Sizes
-  themeObj.fonts = Object.fromEntries(
-    Object.entries(themeObj.fonts).map(font => {
-      const updatedVal =
-        typeof font[1] === 'string' && font[1].includes('rem')
-          ? modifyBaseRemValue(1.6, font[1])
-          : font[1];
-
-      return [font[0], updatedVal];
-    })
-  );
-
-  // Update Font Families
-  Object.values(themeObj.fonts).map(font => {
-    if (font.fontFamily) {
-      font.fontFamily = modifyFontFamilyValue(font.fontFamily);
-    }
-  });
-
-  // Update Typography Presets
-  Object.values(themeObj.typographyPresets).map(preset => {
-    preset.fontFamily = modifyFontFamilyValue(
-      String(preset.fontFamily),
-      Number(preset.fontWeight)
+        return [border[0], updatedVal];
+      })
     );
-    preset.fontWeight = 400;
 
-    preset.fontSize =
-      typeof preset.fontSize === 'string' && preset.fontSize.includes('rem')
-        ? modifyBaseRemValue(1.6, preset.fontSize)
-        : preset.fontSize;
-  });
+    // Update Font Sizes
+    themeObj.fonts = Object.fromEntries(
+      Object.entries(themeObj.fonts).map(font => {
+        const updatedVal =
+          typeof font[1] === 'string' && font[1].includes('rem')
+            ? modifyBaseRemValue(1.6, font[1])
+            : font[1];
+
+        return [font[0], updatedVal];
+      })
+    );
+
+    // Update Font Families
+    Object.values(themeObj.fonts).map(font => {
+      if (font.fontFamily) {
+        font.fontFamily = modifyFontFamilyValue(font.fontFamily);
+      }
+    });
+
+    // Update Typography Presets
+    Object.values(themeObj.typographyPresets).map(preset => {
+      preset.fontFamily = modifyFontFamilyValue(
+        String(preset.fontFamily),
+        Number(preset.fontWeight)
+      );
+      preset.fontWeight = 400;
+
+      preset.fontSize =
+        typeof preset.fontSize === 'string' && preset.fontSize.includes('rem')
+          ? modifyBaseRemValue(1.6, preset.fontSize)
+          : preset.fontSize;
+    });
+  }
 
   return themeObj;
 };
