@@ -405,33 +405,10 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1i385gi"
+                        class="css-1j5e90f"
                       >
-<<<<<<< HEAD
-                        <span
-                          class="css-1j5e90f"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-lew009"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-l4j3xy"
-                    >
-                      4 min read
-=======
                         Review
                       </span>
->>>>>>> 5ac7ff004 (feat(TMRX-1095): build lead story module two slice)
                     </span>
                   </a>
                   <div
@@ -444,7 +421,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-nqhqa4"
+                    class="css-l4j3xy"
                   >
                     4 min read
                   </span>
@@ -1550,7 +1527,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1i385gi"
+                        class="css-1j5e90f"
                       >
                         Review
                       </span>
@@ -1566,7 +1543,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     />
                   </div>
                   <span
-                    class="css-nqhqa4"
+                    class="css-l4j3xy"
                   >
                     4 min read
                   </span>
@@ -2465,33 +2442,10 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1i385gi"
+                        class="css-1j5e90f"
                       >
-<<<<<<< HEAD
-                        <span
-                          class="css-1j5e90f"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-lew009"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-l4j3xy"
-                    >
-                      4 min read
-=======
                         Review
                       </span>
->>>>>>> 5ac7ff004 (feat(TMRX-1095): build lead story module two slice)
                     </span>
                   </a>
                   <div
@@ -2504,7 +2458,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     />
                   </div>
                   <span
-                    class="css-nqhqa4"
+                    class="css-l4j3xy"
                   >
                     4 min read
                   </span>
