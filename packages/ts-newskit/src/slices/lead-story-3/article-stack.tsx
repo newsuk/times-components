@@ -21,7 +21,7 @@ export const ArticleStack = ({ leadArticles }: ArticlesProps) => {
     <BlockNoTopMargin>
       {modifiedArticles &&
         modifiedArticles.map((modifiedArticle, index) => {
-          const modifyTypographyPreset =
+          const articlesWithModifiedTypography =
             index === 0
               ? { ...modifiedArticle, typographyPreset: 'editorialHeadline040' }
               : {
@@ -40,7 +40,7 @@ export const ArticleStack = ({ leadArticles }: ArticlesProps) => {
                 </FullWidthDividerMob>
               )}
               <Block marginBlock="space040">
-                <LeadArticle {...modifyTypographyPreset} />
+                <LeadArticle {...articlesWithModifiedTypography} />
               </Block>
             </>
           );
