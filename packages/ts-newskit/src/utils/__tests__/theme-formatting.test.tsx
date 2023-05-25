@@ -1,6 +1,4 @@
-import {
-  updateThemeTypography
-} from '../theme-formatting';
+import { updateThemeTypography } from '../theme-formatting';
 // @ts-ignore
 import { TheTimesLight } from '@newskit-themes/the-times';
 
