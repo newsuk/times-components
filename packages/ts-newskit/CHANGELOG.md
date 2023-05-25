@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.52.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.52.0...@times-components/ts-newskit@1.52.1) (2023-05-25)
+
+
+### Bug Fixes
+
+* **TMRX-1272:** font resizing ([#3380](https://github.com/newsuk/times-components/issues/3380)) ([f50972c](https://github.com/newsuk/times-components/commit/f50972c068241ae31c3eac7aed0847acbb265f88))
+
+
+
+
+
 # [1.52.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.51.1...@times-components/ts-newskit@1.52.0) (2023-05-24)
 
 
