@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
+exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="css-8atxkm"
@@ -9,474 +9,415 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
       class="css-146arns"
     >
       <div
-        class="css-1oqkk4f"
+        class="css-1imst2"
       >
         <div
-          class="css-3hmgqa"
+          class="css-dl45po"
         >
           <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-16fyx8h"
-              data-testid="divider"
-            />
-          </div>
-          <div
-            class="css-ln8qdk"
+            class="css-h18yzn"
           >
             <div
-              class="css-1vuk75f"
+              class="css-1sqhgnb"
             >
               <div
-                class="css-uxw9nr"
-              >
-                <picture
-                  class="css-zp0elg"
-                >
-                  <div
-                    class="css-5pczz7"
-                  />
-                  <img
-                    alt="Sarcacens an inclusive club? They didnt look out for me"
-                    class="css-1qgqq71"
-                    src="/assets/main_01.jpg"
-                  />
-                </picture>
-              </div>
-              <p
-                class="css-9pk24b"
-              >
-                Credit
-              </p>
-            </div>
-            <div
-              class="css-gpke1l"
-            >
-              <a
-                class="css-10h0i3c"
-                href="https://www.thetimes.co.uk"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-8gj81n"
-                  >
-                    Sarcacens an inclusive club? They didnt look out for me
-                  </span>
-                </span>
-              </a>
-              <p
-                class="css-vdfsd1"
-              >
-                Short paragraph description of the article, outlining main story and focus.
-              </p>
-              <div
-                class="css-1atazsr"
-                data-testid="tag-and-flag"
+                class="css-gpke1l"
               >
                 <a
-                  class="css-10d4t8c"
-                  href="/"
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-8gj81n"
                     >
-                      Tag
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-65zrxz"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 2
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-65zrxz"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 3
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-65zrxz"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 4
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-s1w7dc"
+      >
+        <div
+          class="css-gre9re"
+        >
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+        </div>
+        <div
+          class="css-3hmgqa"
+        >
+          <div
+            class="css-1fgalmf"
+          >
+            <div
+              class="css-15edd2j"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-16fyx8h"
+                data-testid="divider"
+              />
+            </div>
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-1l8qede"
+              >
+                <div
+                  class="css-uxw9nr"
+                >
+                  <picture
+                    class="css-y00bg8"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="Short title of the card describing the main content"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c246bf4-fa83-11ed-9be0-622d8a105167.jpg?crop=1200%2C1500%2C0%2C0&resize=747"
+                    />
+                  </picture>
+                </div>
+                <p
+                  class="css-9pk24b"
+                >
+                  Credit
+                </p>
+              </div>
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-8gj81n"
+                    >
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
                 <div
-                  class="css-lew009"
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  4 min read
-                </span>
-              </div>
-            </div>
-          </div>
-          <hr
-            aria-hidden="true"
-            class="css-obfal1"
-            data-testid="divider"
-          />
-          <div
-            class="css-vq63er"
-          >
-            <div
-              class="css-e0a604"
-            >
-              <div
-                class="css-13byt3y"
-              >
-                <div
-                  class="css-1qkqv92"
-                />
-                <div
-                  class="css-1sqhgnb"
-                >
-                  <div
-                    class="css-gpke1l"
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
                   >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
+                    <span
+                      class="css-17x5lw"
                     >
                       <span
-                        class="css-17x5lw"
+                        class="css-pwugga"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
+                        Tag
                       </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="css-13byt3y"
-              >
-                <div
-                  class="css-1qkqv92"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-obfal1"
-                    data-testid="divider"
-                  />
-                </div>
-                <div
-                  class="css-1sqhgnb"
-                >
+                    </span>
+                  </a>
                   <div
-                    class="css-gpke1l"
-                  >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
-                      </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr
-              aria-hidden="true"
-              class="css-13rcg9f"
-              data-testid="divider"
-            />
-            <div
-              class="css-194m366"
-            >
-              <div
-                class="css-13byt3y"
-              >
-                <div
-                  class="css-1qkqv92"
-                >
-                  <div
-                    class="css-gre9re"
+                    class="css-lew009"
                   >
                     <hr
                       aria-hidden="true"
-                      class="css-obfal1"
+                      class="css-15kf7hd"
                       data-testid="divider"
                     />
                   </div>
-                </div>
-                <div
-                  class="css-1sqhgnb"
-                >
-                  <div
-                    class="css-1l8qede"
+                  <span
+                    class="css-64fvyz"
                   >
-                    <div
-                      class="css-uxw9nr"
-                    >
-                      <picture
-                        class="css-zp0elg"
-                      >
-                        <div
-                          class="css-5pczz7"
-                        />
-                        <img
-                          alt="Short title of the card describing the main content"
-                          class="css-1qgqq71"
-                          src="/assets/main_01.jpg"
-                        />
-                      </picture>
-                    </div>
-                    <p
-                      class="css-9pk24b"
-                    >
-                      Credit
-                    </p>
-                  </div>
-                  <div
-                    class="css-gpke1l"
-                  >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
-                      </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
-                  </div>
+                    4 min read 1
+                  </span>
                 </div>
               </div>
+            </div>
+            <div
+              class="css-11l110t"
+            >
               <hr
                 aria-hidden="true"
-                class="css-13rcg9f"
+                class="css-85egwf"
                 data-testid="divider"
               />
-              <div
-                class="css-13byt3y"
-              >
-                <div
-                  class="css-1qkqv92"
-                >
-                  <div
-                    class="css-gre9re"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-obfal1"
-                      data-testid="divider"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="css-1sqhgnb"
-                >
-                  <div
-                    class="css-1l8qede"
-                  >
-                    <div
-                      class="css-uxw9nr"
-                    >
-                      <picture
-                        class="css-zp0elg"
-                      >
-                        <div
-                          class="css-5pczz7"
-                        />
-                        <img
-                          alt="Short title of the card describing the main content"
-                          class="css-1qgqq71"
-                          src="/assets/main_01.jpg"
-                        />
-                      </picture>
-                    </div>
-                    <p
-                      class="css-9pk24b"
-                    >
-                      Credit
-                    </p>
-                  </div>
-                  <div
-                    class="css-gpke1l"
-                  >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
-                      </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -1022,7 +963,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
+exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
 <DocumentFragment>
   <div
     class="css-8atxkm"
@@ -1031,474 +972,415 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
       class="css-146arns"
     >
       <div
-        class="css-1oqkk4f"
+        class="css-1imst2"
       >
         <div
-          class="css-3hmgqa"
+          class="css-dl45po"
         >
           <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-16fyx8h"
-              data-testid="divider"
-            />
-          </div>
-          <div
-            class="css-ln8qdk"
+            class="css-h18yzn"
           >
             <div
-              class="css-1vuk75f"
+              class="css-1sqhgnb"
             >
               <div
-                class="css-uxw9nr"
-              >
-                <picture
-                  class="css-zp0elg"
-                >
-                  <div
-                    class="css-5pczz7"
-                  />
-                  <img
-                    alt="Sarcacens an inclusive club? They didnt look out for me"
-                    class="css-1qgqq71"
-                    src="/assets/main_01.jpg"
-                  />
-                </picture>
-              </div>
-              <p
-                class="css-9pk24b"
-              >
-                Credit
-              </p>
-            </div>
-            <div
-              class="css-gpke1l"
-            >
-              <a
-                class="css-10h0i3c"
-                href="https://www.thetimes.co.uk"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-8gj81n"
-                  >
-                    Sarcacens an inclusive club? They didnt look out for me
-                  </span>
-                </span>
-              </a>
-              <p
-                class="css-vdfsd1"
-              >
-                Short paragraph description of the article, outlining main story and focus.
-              </p>
-              <div
-                class="css-1atazsr"
-                data-testid="tag-and-flag"
+                class="css-gpke1l"
               >
                 <a
-                  class="css-10d4t8c"
-                  href="/"
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-8gj81n"
                     >
-                      Tag
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-65zrxz"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 2
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-65zrxz"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 3
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-65zrxz"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 4
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-s1w7dc"
+      >
+        <div
+          class="css-gre9re"
+        >
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+        </div>
+        <div
+          class="css-3hmgqa"
+        >
+          <div
+            class="css-1fgalmf"
+          >
+            <div
+              class="css-15edd2j"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-16fyx8h"
+                data-testid="divider"
+              />
+            </div>
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-1l8qede"
+              >
+                <div
+                  class="css-uxw9nr"
+                >
+                  <picture
+                    class="css-y00bg8"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="Short title of the card describing the main content"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c246bf4-fa83-11ed-9be0-622d8a105167.jpg?crop=1200%2C1500%2C0%2C0&resize=747"
+                    />
+                  </picture>
+                </div>
+                <p
+                  class="css-9pk24b"
+                >
+                  Credit
+                </p>
+              </div>
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-8gj81n"
+                    >
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
                 <div
-                  class="css-lew009"
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  4 min read
-                </span>
-              </div>
-            </div>
-          </div>
-          <hr
-            aria-hidden="true"
-            class="css-obfal1"
-            data-testid="divider"
-          />
-          <div
-            class="css-vq63er"
-          >
-            <div
-              class="css-e0a604"
-            >
-              <div
-                class="css-13byt3y"
-              >
-                <div
-                  class="css-1qkqv92"
-                />
-                <div
-                  class="css-1sqhgnb"
-                >
-                  <div
-                    class="css-gpke1l"
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
                   >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
+                    <span
+                      class="css-17x5lw"
                     >
                       <span
-                        class="css-17x5lw"
+                        class="css-pwugga"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
+                        Tag
                       </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="css-13byt3y"
-              >
-                <div
-                  class="css-1qkqv92"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-obfal1"
-                    data-testid="divider"
-                  />
-                </div>
-                <div
-                  class="css-1sqhgnb"
-                >
+                    </span>
+                  </a>
                   <div
-                    class="css-gpke1l"
-                  >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
-                      </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <hr
-              aria-hidden="true"
-              class="css-13rcg9f"
-              data-testid="divider"
-            />
-            <div
-              class="css-194m366"
-            >
-              <div
-                class="css-13byt3y"
-              >
-                <div
-                  class="css-1qkqv92"
-                >
-                  <div
-                    class="css-gre9re"
+                    class="css-lew009"
                   >
                     <hr
                       aria-hidden="true"
-                      class="css-obfal1"
+                      class="css-15kf7hd"
                       data-testid="divider"
                     />
                   </div>
-                </div>
-                <div
-                  class="css-1sqhgnb"
-                >
-                  <div
-                    class="css-1l8qede"
+                  <span
+                    class="css-64fvyz"
                   >
-                    <div
-                      class="css-uxw9nr"
-                    >
-                      <picture
-                        class="css-zp0elg"
-                      >
-                        <div
-                          class="css-5pczz7"
-                        />
-                        <img
-                          alt="Short title of the card describing the main content"
-                          class="css-1qgqq71"
-                          src="/assets/main_01.jpg"
-                        />
-                      </picture>
-                    </div>
-                    <p
-                      class="css-9pk24b"
-                    >
-                      Credit
-                    </p>
-                  </div>
-                  <div
-                    class="css-gpke1l"
-                  >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
-                      </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
-                  </div>
+                    4 min read 1
+                  </span>
                 </div>
               </div>
+            </div>
+            <div
+              class="css-11l110t"
+            >
               <hr
                 aria-hidden="true"
-                class="css-13rcg9f"
+                class="css-85egwf"
                 data-testid="divider"
               />
-              <div
-                class="css-13byt3y"
-              >
-                <div
-                  class="css-1qkqv92"
-                >
-                  <div
-                    class="css-gre9re"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-obfal1"
-                      data-testid="divider"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="css-1sqhgnb"
-                >
-                  <div
-                    class="css-1l8qede"
-                  >
-                    <div
-                      class="css-uxw9nr"
-                    >
-                      <picture
-                        class="css-zp0elg"
-                      >
-                        <div
-                          class="css-5pczz7"
-                        />
-                        <img
-                          alt="Short title of the card describing the main content"
-                          class="css-1qgqq71"
-                          src="/assets/main_01.jpg"
-                        />
-                      </picture>
-                    </div>
-                    <p
-                      class="css-9pk24b"
-                    >
-                      Credit
-                    </p>
-                  </div>
-                  <div
-                    class="css-gpke1l"
-                  >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
-                      </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -1837,7 +1719,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
 </DocumentFragment>
 `;
 
-exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
+exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
 <DocumentFragment>
   <div
     class="css-8atxkm"
@@ -1846,102 +1728,72 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
       class="css-146arns"
     >
       <div
-        class="css-1oqkk4f"
+        class="css-1imst2"
       >
         <div
-          class="css-3hmgqa"
+          class="css-dl45po"
         >
           <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-16fyx8h"
-              data-testid="divider"
-            />
-          </div>
-          <div
-            class="css-1sqhgnb"
+            class="css-h18yzn"
           >
             <div
-              class="css-1l8qede"
+              class="css-1sqhgnb"
             >
               <div
-                class="css-uxw9nr"
-              >
-                <picture
-                  class="css-zp0elg"
-                >
-                  <div
-                    class="css-5pczz7"
-                  />
-                  <img
-                    alt="Sarcacens an inclusive club? They didnt look out for me"
-                    class="css-1qgqq71"
-                    src="/assets/main_01.jpg"
-                  />
-                </picture>
-              </div>
-              <p
-                class="css-9pk24b"
-              >
-                Credit
-              </p>
-            </div>
-            <div
-              class="css-gpke1l"
-            >
-              <a
-                class="css-10h0i3c"
-                href="https://www.thetimes.co.uk"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-1tplk7g"
-                  >
-                    Sarcacens an inclusive club? They didnt look out for me
-                  </span>
-                </span>
-              </a>
-              <p
-                class="css-vdfsd1"
-              >
-                Short paragraph description of the article, outlining main story and focus.
-              </p>
-              <div
-                class="css-1atazsr"
-                data-testid="tag-and-flag"
+                class="css-gpke1l"
               >
                 <a
-                  class="css-10d4t8c"
-                  href="/"
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-8gj81n"
                     >
-                      Tag
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
                 <div
-                  class="css-lew009"
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 1
+                  </span>
                 </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  4 min read
-                </span>
               </div>
             </div>
           </div>
@@ -1950,367 +1802,216 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-xvacx"
+              class="css-xr87n0"
               data-testid="divider"
             />
           </div>
           <div
-            class="css-vq63er"
+            class="css-h18yzn"
           >
             <div
-              class="css-e0a604"
+              class="css-1sqhgnb"
             >
               <div
-                class="css-13byt3y"
+                class="css-gpke1l"
               >
-                <div
-                  class="css-1qkqv92"
-                />
-                <div
-                  class="css-1sqhgnb"
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
-                  <div
-                    class="css-gpke1l"
+                  <span
+                    class="css-17x5lw"
                   >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
+                    <span
+                      class="css-65zrxz"
                     >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
-                      </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="css-13byt3y"
-              >
-                <div
-                  class="css-1qkqv92"
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-obfal1"
-                    data-testid="divider"
-                  />
-                </div>
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
                 <div
-                  class="css-1sqhgnb"
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
-                  <div
-                    class="css-gpke1l"
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
                   >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
+                    <span
+                      class="css-17x5lw"
                     >
                       <span
-                        class="css-17x5lw"
+                        class="css-pwugga"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
+                        Tag
                       </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 2
+                  </span>
                 </div>
               </div>
             </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
             <hr
               aria-hidden="true"
-              class="css-13rcg9f"
+              class="css-xr87n0"
               data-testid="divider"
             />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
             <div
-              class="css-194m366"
+              class="css-1sqhgnb"
             >
               <div
-                class="css-13byt3y"
+                class="css-gpke1l"
               >
-                <div
-                  class="css-1qkqv92"
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-65zrxz"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
                   <div
-                    class="css-gre9re"
+                    class="css-lew009"
                   >
                     <hr
                       aria-hidden="true"
-                      class="css-obfal1"
+                      class="css-15kf7hd"
                       data-testid="divider"
                     />
                   </div>
-                </div>
-                <div
-                  class="css-1sqhgnb"
-                >
-                  <div
-                    class="css-1l8qede"
+                  <span
+                    class="css-64fvyz"
                   >
-                    <div
-                      class="css-uxw9nr"
-                    >
-                      <picture
-                        class="css-zp0elg"
-                      >
-                        <div
-                          class="css-5pczz7"
-                        />
-                        <img
-                          alt="Short title of the card describing the main content"
-                          class="css-1qgqq71"
-                          src="/assets/main_01.jpg"
-                        />
-                      </picture>
-                    </div>
-                    <p
-                      class="css-9pk24b"
-                    >
-                      Credit
-                    </p>
-                  </div>
-                  <div
-                    class="css-gpke1l"
-                  >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
-                      </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
-                  </div>
+                    4 min read 3
+                  </span>
                 </div>
               </div>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
               <div
-                class="css-13byt3y"
+                class="css-gpke1l"
               >
-                <div
-                  class="css-1qkqv92"
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-65zrxz"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
                   <div
-                    class="css-gre9re"
+                    class="css-lew009"
                   >
                     <hr
                       aria-hidden="true"
-                      class="css-obfal1"
+                      class="css-15kf7hd"
                       data-testid="divider"
                     />
                   </div>
-                </div>
-                <div
-                  class="css-1sqhgnb"
-                >
-                  <div
-                    class="css-1l8qede"
+                  <span
+                    class="css-64fvyz"
                   >
-                    <div
-                      class="css-uxw9nr"
-                    >
-                      <picture
-                        class="css-zp0elg"
-                      >
-                        <div
-                          class="css-5pczz7"
-                        />
-                        <img
-                          alt="Short title of the card describing the main content"
-                          class="css-1qgqq71"
-                          src="/assets/main_01.jpg"
-                        />
-                      </picture>
-                    </div>
-                    <p
-                      class="css-9pk24b"
-                    >
-                      Credit
-                    </p>
-                  </div>
-                  <div
-                    class="css-gpke1l"
-                  >
-                    <a
-                      class="css-10h0i3c"
-                      href="https://www.thetimes.co.uk"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Short title of the card describing the main content
-                        </span>
-                      </span>
-                    </a>
-                    <p
-                      class="css-vdfsd1"
-                    >
-                      Short paragraph description of the article, outlining main story and focus.
-                    </p>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-pwugga"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-64fvyz"
-                      >
-                        4 min read
-                      </span>
-                    </div>
-                  </div>
+                    4 min read 4
+                  </span>
                 </div>
               </div>
             </div>
@@ -2318,7 +2019,130 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
         </div>
       </div>
       <div
-        class="css-s0ahbd"
+        class="css-s1w7dc"
+      >
+        <div
+          class="css-gre9re"
+        >
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+        </div>
+        <div
+          class="css-3hmgqa"
+        >
+          <div
+            class="css-1fgalmf"
+          >
+            <div
+              class="css-15edd2j"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-16fyx8h"
+                data-testid="divider"
+              />
+            </div>
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-1l8qede"
+              >
+                <div
+                  class="css-uxw9nr"
+                >
+                  <picture
+                    class="css-y00bg8"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="Short title of the card describing the main content"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c246bf4-fa83-11ed-9be0-622d8a105167.jpg?crop=1200%2C1500%2C0%2C0&resize=747"
+                    />
+                  </picture>
+                </div>
+                <p
+                  class="css-9pk24b"
+                >
+                  Credit
+                </p>
+              </div>
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-8gj81n"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 1
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-11l110t"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-85egwf"
+                data-testid="divider"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-1dj4shb"
       >
         <div
           class="css-1osy5lm"
