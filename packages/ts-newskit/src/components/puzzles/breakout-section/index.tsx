@@ -9,8 +9,7 @@ import {
   StyledSudokuIconD4
 } from './styles';
 import { StyledNewskitWaveBg } from '../personal-stats/styles';
-import { breakoutItems } from './fixtures/breakoutItems.json'
-
+import { breakoutItems } from './fixtures/breakoutItems.json';
 
 export const BreakoutSection: FC = () => {
   return (
