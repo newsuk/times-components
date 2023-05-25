@@ -41,12 +41,12 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
           class="css-1iuvgg2"
         >
           <p
-            class="css-67ej6s"
+            class="css-1yaue50"
           >
             Playing
           </p>
           <p
-            class="css-pkmihe"
+            class="css-90ibmi"
           >
             Narrated by James Marriott
           </p>
@@ -72,13 +72,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                   style="width: 480px;"
                 >
                   <p
-                    class="css-1g4cg8m"
+                    class="css-1378i5i"
                     style="width: 240px;"
                   >
                     Article headline - James Marriott
                   </p>
                   <p
-                    class="css-1g4cg8m"
+                    class="css-1378i5i"
                     style="width: 240px;"
                   >
                     Article headline - James Marriott
@@ -254,7 +254,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                 class="css-1iuvgg2"
               >
                 <span
-                  class="css-k554di"
+                  class="css-lk8lcn"
                   data-testid="audio-player-time-display"
                 >
                   00:00
@@ -307,7 +307,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                 class="css-11r7h3x"
               >
                 <span
-                  class="css-k554di"
+                  class="css-lk8lcn"
                   data-testid="audio-player-time-display"
                 >
                   00:00
@@ -321,7 +321,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                 type="button"
               >
                 <span
-                  class="css-14u1cgq"
+                  class="css-1x1ve0y"
                 >
                   Speed
                 </span>

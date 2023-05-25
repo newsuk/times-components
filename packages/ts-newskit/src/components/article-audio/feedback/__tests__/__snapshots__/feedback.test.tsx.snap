@@ -12,7 +12,7 @@ exports[`FeedbackText Component should render snapshot 1`] = `
         class="css-14t1cah"
       >
         <p
-          class="css-149e1nw"
+          class="css-pjqzf"
         >
           Want to listen to more articles? Give your feedback below or email
         </p>
@@ -24,7 +24,7 @@ exports[`FeedbackText Component should render snapshot 1`] = `
             class="css-17x5lw"
           >
             <span
-              class="css-1sgcvac"
+              class="css-1482vhr"
             >
               comments+engagement@thetimes.co.uk
             </span>
