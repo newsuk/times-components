@@ -1,8 +1,24 @@
 <style>
   @font-face {
+    font-family: "Times Modern";
+    src: url(./fonts/TimesModern-Bold.woff2) format("woff2"),
+      url(./fonts/TimesModern-Bold.woff) format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
     font-family: TimesModern-Bold;
     src: url(./fonts/TimesModern-Bold.woff2) format("woff2"),
       url(./fonts/TimesModern-Bold.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Times Modern";
+    src: url(./fonts/TimesModern-Regular.woff2) format("woff2"),
+      url(./fonts/TimesModern-Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
   }
@@ -40,6 +56,14 @@
   }
 
   @font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.woff2) format("woff2"),
+      url(./fonts/Roboto-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
     font-family: Roboto-Regular;
     src: url(./fonts/Roboto-Regular.woff2) format("woff2"),
       url(./fonts/Roboto-Regular.woff) format("woff");
@@ -68,75 +92,132 @@
   }
 
   @font-face {
-    font-family: "Roboto-Medium-fallback";
-    font-display: swap;
-    font-style: normal;
-    src: local("Arial");
-    font-weight: 400;
-    ascent-override: 91.62%;
-    descent-override: 24.11%;
-    line-gap-override: 0%;
-    size-adjust: 101.26%
+      font-family: "Roboto-Medium-fallback";
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+      src: local("Times New Roman");
+      ascent-override: 87.46%;
+      descent-override: 28.13%;
+      line-gap-override: 0%;
+      size-adjust: 113.42%
   }
 
   @font-face {
-    font-family: "TimesDigitalW04-fallback";
-    font-display: swap;
-    font-weight: 400;
-    font-style: normal;
-    src: local("Times New Roman");
-    ascent-override: 87.46%;
-    descent-override: 28.13%;
-    line-gap-override: 0%;
-    size-adjust: 113.42%
+      font-family: "TimesDigitalW04-fallback";
+      font-display: swap;
+      src: local("Arial");
+      font-style: normal;
+      font-weight: 400;
+      ascent-override: 91.62%;
+      descent-override: 24.11%;
+      line-gap-override: 0%;
+      size-adjust: 101.26%
   }
 
   @font-face {
-    font-family: "TimesDigitalW04-Regular-fallback";
-    font-display: swap;
-    font-style: normal;
-    font-weight: 400;
-    src: local("Times New Roman");
-    ascent-override: 87.46%;
-    descent-override: 28.13%;
-    line-gap-override: 0%;
-    size-adjust: 113.42%
+      font-family: "TimesDigitalW04-Regular-fallback";
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+      src: local("Times New Roman");
+      ascent-override: 87.46%;
+      descent-override: 28.13%;
+      line-gap-override: 0%;
+      size-adjust: 113.42%
   }
 
   @font-face {
-    font-family: "TimesDigitalW04-RegularSC-fallback";
-    font-display: swap;
-    font-style: normal;
-    font-weight: 400;
-    src: local("Times New Roman");
-    ascent-override: 76.71%;
-    descent-override: 24.67%;
-    line-gap-override: 0%;
-    size-adjust: 129.32%
+      font-family: "TimesDigitalW04-RegularSC-fallback";
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+      src: local("Times New Roman");
+      ascent-override: 76.71%;
+      descent-override: 24.67%;
+      line-gap-override: 0%;
+      size-adjust: 129.32%
   }
 
   @font-face {
-    font-family: "TimesModern-Regular-fallback";
-    font-display: swap;
-    font-style: normal;
-    font-weight: 400;
-    src: local("Times New Roman");
-    ascent-override: 71.84%;
-    descent-override: 17.78%;
-    line-gap-override: 6.72%;
-    size-adjust: 96.74%
+      font-family: "TimesModern-Regular-fallback";
+      font-display: swap;
+      font-style: normal;
+      font-weight: 400;
+      src: local("Times New Roman");
+      ascent-override: 71.84%;
+      descent-override: 17.78%;
+      line-gap-override: 6.72%;
+      size-adjust: 96.74%
   }
 
   @font-face {
-    font-family: "TimesModern-Bold-fallback";
+      font-family: "TimesModern-Bold-fallback";
+      font-display: swap;
+      font-style: normal;
+      font-weight: 700;
+      src: local("Times New Roman");
+      ascent-override: 73.8%;
+      descent-override: 18.26%;
+      line-gap-override: 6.9%;
+      size-adjust: 94.18%
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url(static/fonts/Roboto-Regular.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
     font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url(static/fonts/Roboto-Medium.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url(static/fonts/Roboto-Bold.woff2) format("woff2");
     font-style: normal;
     font-weight: 700;
-    src: local("Times New Roman");
-    ascent-override: 73.8%;
-    descent-override: 18.26%;
-    line-gap-override: 6.9%;
-    size-adjust: 94.18%
+    font-display: swap;
+  }
+
+  
+  @font-face {
+    font-family: 'Times Modern';
+    src: url(static/fonts/TimesModern-Regular.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Times Modern';
+    src: url(static/fonts/TimesModern-Bold.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Times Modern';
+    src: url(static/fonts/TimesModern-ExtraBold.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Times Digital W04 Regular';
+    src: url(static/fonts/TimesDigitalW04-Regular.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
   }
 
   * {

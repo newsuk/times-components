@@ -45,7 +45,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 class="css-17x5lw"
               >
                 <span
-                  class="css-4qsr1y"
+                  class="css-65zrxz"
                 >
                   European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                 </span>
@@ -63,7 +63,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1j5e90f"
+                    class="css-pwugga"
                   >
                     Tag
                   </span>
@@ -79,7 +79,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 />
               </div>
               <span
-                class="css-l4j3xy"
+                class="css-64fvyz"
               >
                 Flag1
               </span>
@@ -122,7 +122,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 class="css-17x5lw"
               >
                 <span
-                  class="css-4qsr1y"
+                  class="css-65zrxz"
                 >
                   American owners pose threat to English pyramid
                 </span>
@@ -166,7 +166,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 class="css-17x5lw"
               >
                 <span
-                  class="css-4qsr1y"
+                  class="css-65zrxz"
                 >
                   £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
                 </span>
@@ -184,7 +184,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1j5e90f"
+                    class="css-pwugga"
                   >
                     Tag
                   </span>
@@ -229,7 +229,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 class="css-17x5lw"
               >
                 <span
-                  class="css-4qsr1y"
+                  class="css-65zrxz"
                 >
                   Blow for rebel clubs as court says Uefa can block Super League
                 </span>
@@ -240,7 +240,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               data-testid="tag-and-flag"
             >
               <span
-                class="css-l4j3xy"
+                class="css-64fvyz"
               >
                 Flag4
               </span>
@@ -283,7 +283,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 class="css-17x5lw"
               >
                 <span
-                  class="css-4qsr1y"
+                  class="css-65zrxz"
                 >
                   Blow for rebel clubs as court says Uefa can block Super League
                 </span>
@@ -301,7 +301,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1j5e90f"
+                    class="css-pwugga"
                   >
                     Tag
                   </span>
@@ -317,7 +317,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 />
               </div>
               <span
-                class="css-l4j3xy"
+                class="css-64fvyz"
               >
                 Flag5
               </span>
@@ -378,7 +378,7 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
               class="css-17x5lw"
             >
               <span
-                class="css-4qsr1y"
+                class="css-65zrxz"
               >
                 American owners pose threat to English pyramid
               </span>
@@ -430,7 +430,7 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
               class="css-17x5lw"
             >
               <span
-                class="css-4qsr1y"
+                class="css-65zrxz"
               >
                 £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
               </span>
@@ -448,7 +448,7 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
                 class="css-17x5lw"
               >
                 <span
-                  class="css-1j5e90f"
+                  class="css-pwugga"
                 >
                   Tag
                 </span>
@@ -501,7 +501,7 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
               class="css-17x5lw"
             >
               <span
-                class="css-4qsr1y"
+                class="css-65zrxz"
               >
                 Blow for rebel clubs as court says Uefa can block Super League
               </span>
@@ -512,7 +512,7 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
             data-testid="tag-and-flag"
           >
             <span
-              class="css-l4j3xy"
+              class="css-64fvyz"
             >
               Flag4
             </span>

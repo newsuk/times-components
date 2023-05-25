@@ -9,7 +9,7 @@ exports[`Render Lead Article Item should render a snapshot 1`] = `
       class="css-13byt3y"
     >
       <span
-        class="css-14u1cgq"
+        class="css-1x1ve0y"
       >
         TAG
       </span>
@@ -22,14 +22,14 @@ exports[`Render Lead Article Item should render a snapshot 1`] = `
         class="css-17x5lw"
       >
         <span
-          class="css-4qsr1y"
+          class="css-65zrxz"
         >
           Short title of the card describing the main content
         </span>
       </span>
     </a>
     <p
-      class="css-1ocner8"
+      class="css-vdfsd1"
     >
       Short paragraph description of the article, outlining main story and focus.
     </p>
@@ -45,7 +45,7 @@ exports[`Render Lead Article Item should render a snapshot 1`] = `
           class="css-17x5lw"
         >
           <span
-            class="css-1j5e90f"
+            class="css-pwugga"
           >
             Tag
           </span>
@@ -61,7 +61,7 @@ exports[`Render Lead Article Item should render a snapshot 1`] = `
         />
       </div>
       <span
-        class="css-l4j3xy"
+        class="css-64fvyz"
       >
         Flag
       </span>
@@ -98,7 +98,7 @@ exports[`Render Lead Article Item should render a snapshot 1`] = `
             </svg>
           </div>
           <p
-            class="css-rhakbt"
+            class="css-1ja8y7g"
           >
             Unordered list item
           </p>
