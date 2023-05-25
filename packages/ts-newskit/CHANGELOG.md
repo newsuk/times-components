@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.53.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.52.1...@times-components/ts-newskit@1.53.0) (2023-05-25)
+
+
+### Features
+
+* **TMRX-1096:** build lead story module three slice ([#3379](https://github.com/newsuk/times-components/issues/3379)) ([f2c2cc5](https://github.com/newsuk/times-components/commit/f2c2cc5613cdef69fbb586d806260578234cb131))
+
+
+
+
+
 ## [1.52.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.52.0...@times-components/ts-newskit@1.52.1) (2023-05-25)
 
 
