@@ -14,8 +14,8 @@ import { TagAndFlag } from '../shared';
 export interface LeadArticleProps {
   headline: string;
   flag?: string;
-  summary: string;
-  subHeadline?: string;
+  summary?: string;
+  tagL1?: string;
   caption: string;
   image?: string;
   url: string;
@@ -27,12 +27,14 @@ export interface LeadArticleProps {
   hasTopBorder?: boolean;
   contentTop?: boolean;
   typographyPreset?: string;
+  loadingAspectRatio?: string;
+  marginBlockStart?: string;
 }
 export const LeadArticle = ({
   headline,
   flag,
   summary,
-  subHeadline,
+  tagL1,
   caption,
   image,
   url,
@@ -40,7 +42,9 @@ export const LeadArticle = ({
   imageTop,
   hasTopBorder = true,
   contentTop,
-  typographyPreset
+  typographyPreset,
+  loadingAspectRatio,
+  marginBlockStart
 }: LeadArticleProps) => {
   const stylePresets = {
     typographyPreset: 'utilityButton010',
@@ -69,12 +73,15 @@ export const LeadArticle = ({
       columns={{ md: imageTop ? '1fr' : '3fr 5fr' }}
     >
       {image && (
-        <Block marginBlockEnd={imageTop ? 'space050' : 'space000'}>
+        <Block
+          marginBlockEnd={imageTop ? 'space050' : 'space000'}
+          marginBlockStart={marginBlockStart || 'space000'}
+        >
           <FullWidthCardMediaMob
             media={{
               src: image,
               alt: headline,
-              loadingAspectRatio: '3:2'
+              loadingAspectRatio: loadingAspectRatio || '3:2'
             }}
           />
           <TextBlock
@@ -103,7 +110,7 @@ export const LeadArticle = ({
           </>
         )}
 
-        {subHeadline && (
+        {tagL1 && (
           <Visible md lg xl>
             <Tag
               size="small"
@@ -111,7 +118,7 @@ export const LeadArticle = ({
                 ...stylePresets
               }}
             >
-              {subHeadline}
+              {tagL1}
             </Tag>
           </Visible>
         )}
@@ -129,16 +136,19 @@ export const LeadArticle = ({
         >
           {headline}
         </CardHeadlineLink>
-        <TextBlock
-          typographyPreset={{
-            xs: 'editorialParagraph020',
-            md: 'editorialParagraph010'
-          }}
-          marginBlockStart="space050"
-          as="p"
-        >
-          {summary}
-        </TextBlock>
+        {summary && (
+          <TextBlock
+            typographyPreset={{
+              xs: 'editorialParagraph020',
+              md: 'editorialParagraph010'
+            }}
+            marginBlockStart="space050"
+            as="p"
+          >
+            {summary}
+          </TextBlock>
+        )}
+
         {(tag || flag) && (
           <TagAndFlag tag={tag} flag={flag} marginBlockStart="space040" />
         )}
