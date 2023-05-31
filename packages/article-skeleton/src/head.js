@@ -27,7 +27,7 @@ function getSectionName(article) {
   const { tiles } = article;
   const titles = reduceTilesToTitles(tiles);
 
-  if (titles === null) {
+  if (titles == null) {
     return null;
   }
 
@@ -39,13 +39,11 @@ function getSectionNameList(article) {
   const { tiles } = article;
   const titles = reduceTilesToTitles(tiles, 'Section:');
 
-  if (titles === null) {
+  if (titles == null) {
     return null;
   }
 
-  const uniqueSectionsArr = titles.filter(function (item, pos, self) {
-    return self.indexOf(item) == pos;
-  });
+  const uniqueSectionsArr = titles.filter((item, pos, self) => self.indexOf(item) === pos);
   const maxUniqueSections = 2;
   const uniqueSections = JSON.stringify(uniqueSectionsArr.slice(0, maxUniqueSections));
 
