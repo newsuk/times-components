@@ -27,7 +27,7 @@ export const ArticleStack = ({
     typographyPreset: 'editorialHeadline020'
   }));
   const articleGridVertical = (
-    <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space030' }}>
+    <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space040' }}>
       {modifiedVerticalArticles.map(
         (article: LeadArticleProps, articleIndex, articleArr) => {
           const articleBorder = breakpoint !== 'xs' &&
@@ -92,7 +92,7 @@ export const ArticleStack = ({
   return (
     <GridLayout
       columns={{ md: '1fr 1px 2fr ', xs: '1fr' }}
-      columnGap={{ md: 'space030' }}
+      columnGap={{ md: 'space040' }}
     >
       {articleStackHorizontal}
       <Divider
