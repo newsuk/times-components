@@ -196,6 +196,42 @@ describe("Head", () => {
     expect(testRenderer).toMatchSnapshot();
   });
 
+  it("outputs array of keywords in article schema", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          tiles: [
+            {
+              slices: [
+                {
+                  sections: [
+                    {
+                      id: "e0313ff2-5180-4ef1-a3dd-e6db63e21647",
+                      title: "Sport"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              slices: [
+                {
+                  sections: [
+                    {
+                      id: "a532cd03-8c03-4d91-8f66-9b937a5dff42",
+                      title: "Sport"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
   it("outputs array of sameAs if there are multiple urls", () => {
     const testRenderer = TestRenderer.create(
       <Head
