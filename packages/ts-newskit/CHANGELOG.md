@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.53.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.52.1...@times-components/ts-newskit@1.53.0) (2023-05-25)
+
+
+### Features
+
+* **TMRX-1096:** build lead story module three slice ([#3379](https://github.com/newsuk/times-components/issues/3379)) ([f2c2cc5](https://github.com/newsuk/times-components/commit/f2c2cc5613cdef69fbb586d806260578234cb131))
+
+
+
+
+
+## [1.52.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.52.0...@times-components/ts-newskit@1.52.1) (2023-05-25)
+
+
+### Bug Fixes
+
+* **TMRX-1272:** font resizing ([#3380](https://github.com/newsuk/times-components/issues/3380)) ([f50972c](https://github.com/newsuk/times-components/commit/f50972c068241ae31c3eac7aed0847acbb265f88))
+
+
+
+
+
+# [1.52.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.51.1...@times-components/ts-newskit@1.52.0) (2023-05-24)
+
+
+### Features
+
+* **TMRX-1095:** build lead story module two slice ([#3375](https://github.com/newsuk/times-components/issues/3375)) ([c01514e](https://github.com/newsuk/times-components/commit/c01514e66b3f09bd82de866130fcc651ee984181))
+
+
+
+
+
+## [1.51.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.51.0...@times-components/ts-newskit@1.51.1) (2023-05-24)
+
+
+### Bug Fixes
+
+* **TMRX-1272:** prevent typography update re-triggering ([#3377](https://github.com/newsuk/times-components/issues/3377)) ([31043f1](https://github.com/newsuk/times-components/commit/31043f1b58dbfd1c9c2f367c5f0fe1c3372bcc1d))
+
+
+
+
+
 # [1.51.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.50.0...@times-components/ts-newskit@1.51.0) (2023-05-23)
 
 

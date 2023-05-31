@@ -18,25 +18,21 @@ import {
   LeadArticleCell,
   LeadStoryDivider
 } from '../shared-styles';
-import { ArticleStackSmall } from '../shared/article-stacks';
-import { LargeArticles } from './large-article-stack';
-import { LargeArticleProps } from '../../components/slices/large-article';
 import { FullWidthDividerMob } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
+import { ArticleStack } from './article-stack';
 
-export interface LeadStory1Props {
+export interface LeadStory3Props {
   leadArticle: LeadArticleProps;
   articles: ArticleProps[];
-  largeArticles: LargeArticleProps[];
-  smallArticles: ArticleProps[];
+  leadArticles: LeadArticleProps[];
 }
 
-export const LeadStory1 = ({
+export const LeadStory3 = ({
   leadArticle,
   articles,
-  largeArticles,
-  smallArticles
-}: LeadStory1Props) => {
+  leadArticles
+}: LeadStory3Props) => {
   const breakpointKey = useBreakpointKey();
 
   const modifedArticles =
@@ -48,6 +44,13 @@ export const LeadStory1 = ({
       : articles;
 
   const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
+
+  const modifedLeadArticles = {
+    ...leadArticle,
+    typographyPreset: 'editorialHeadline040',
+    imageTop: true,
+    loadingAspectRatio: '4:5'
+  };
 
   const LeadStoryLayout: React.FC = ({ children }) => {
     return (
@@ -76,7 +79,7 @@ export const LeadStory1 = ({
   return (
     <Grid xsMargin="space045" mdMargin="space050">
       <Cell xs={12} md={5} lg={3} xl={3}>
-        <LargeArticles largeArticles={largeArticles} />
+        <ArticleStack leadArticles={leadArticles} />
       </Cell>
       <LeadArticleCell xs={12} md={7} lg={6} xl={5}>
         <Hidden md lg xl>
@@ -91,23 +94,8 @@ export const LeadStory1 = ({
         </Hidden>
         <Block marginInline={{ xs: 'space000', md: 'space020' }}>
           <LeadStoryLayout>
-            <LeadArticle {...leadArticle} />
+            <LeadArticle {...modifedLeadArticles} />
           </LeadStoryLayout>
-          <Hidden xs sm>
-            <Divider
-              overrides={{
-                stylePreset: 'dashedDivider',
-                marginBlock: 'space040'
-              }}
-            />
-          </Hidden>
-          <ArticleStackSmall
-            articles={smallArticles}
-            isFullWidth={screenXsAndSm}
-            hideImage={screenXsAndSm}
-            hasTopBorder={!!screenXsAndSm}
-            breakpoint={breakpointKey}
-          />
         </Block>
       </LeadArticleCell>
       {screenXsAndSm ? (

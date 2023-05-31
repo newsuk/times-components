@@ -1,0 +1,54 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { TCThemeProvider, themes } from '../../utils/index.tsx';
+import { LeadStory2 } from "./";
+import { leadArticle, articles, largeArticles, verticalArticles,horizontalArticles } from '../fixtures/lead-story.json';
+
+<Meta
+  title="Newskit Slices/Lead Story 2"
+  component={LeadStory2}
+/>
+
+# LeadStory2 component
+The `LeadStory2` component is used to display the main story, supplementary articles and comment quotes.
+It is comprised of the `leadArticle` and smaller size of `leadArticle` slice components.
+
+This takes in a series of props, as below, to display the part of the slices.
+
+## Props
+<Props of={LeadStory2} />
+
+## Code Example
+`<LeadStory2 {...{ leadArticle, comments, largeArticles, verticalArticles,horizontalArticles }} />`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const ContentBucket2Story = ({ leadArticle, articles, theme, largeArticles, verticalArticles,horizontalArticles }) => (
+  <TCThemeProvider theme={theme}>
+    <LeadStory2 {...{ leadArticle, articles, largeArticles, verticalArticles,horizontalArticles }} />
+  </TCThemeProvider>
+);
+ContentBucket2Story.args = {
+  theme: 'TimesWebLightTheme',
+};
+
+<Story 
+  name="LeadStory2"
+  args={{
+    leadArticle,
+    articles,
+    largeArticles,
+    verticalArticles,
+    horizontalArticles
+  }}
+  argTypes={{
+    theme: {
+      options: Object.keys(themes),
+      mapping: themes,
+      control: { type: 'select' },
+    },
+  }}
+>
+  {ContentBucket2Story.bind({})}
+</Story>
+

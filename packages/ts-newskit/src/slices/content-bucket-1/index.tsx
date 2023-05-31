@@ -41,6 +41,11 @@ export const ContentBucket1 = ({
 }: ContentBucket1Props) => {
   const breakpointKey = useBreakpointKey();
 
+  const modifiedLeadArticle = {
+    ...leadArticle,
+    contentTop: true
+  };
+
   return (
     <Grid xsMargin="space045" mdMargin="space050">
       <Cell xs={12}>
@@ -55,7 +60,7 @@ export const ContentBucket1 = ({
               position="right"
             />
           </Visible>
-          <LeadArticle {...leadArticle} />
+          <LeadArticle {...modifiedLeadArticle} />
         </Block>
         <Block marginInlineEnd={{ xs: 'space000', lg: 'space020' }}>
           <Hidden md>

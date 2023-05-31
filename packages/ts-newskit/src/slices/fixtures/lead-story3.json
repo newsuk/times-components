@@ -1,18 +1,4 @@
 {
-  "leadArticle": {
-    "headline": "Sarcacens an inclusive club? They didnt look out for me",
-    "summary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
-    "tagL1": "",
-    "caption": "Credit",
-    "image": "/assets/main_01.jpg",
-    "url": "https://www.thetimes.co.uk",
-    "tag": {
-      "label": "Tag",
-      "href": "/"
-    },
-    "flag": "4 min read",
-    "imageTop": true
-  },
   "articles": [
     {
       "image": {
@@ -76,109 +62,66 @@
     }
   ],
 
-  "largeArticles": [
+  "leadArticles": [
     {
-      "heading": "Short title of the card describing the main content",
-      "paragraph": "Short paragraph description of the article, outlining main story and focus.",
+      "headline": "Short title of the card describing the main content",
+      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "tagL1": "",
+      "caption": "Credit",
+      "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
         "href": "/"
       },
-      "tagL1": "TAG",
-      "url": "#",
-      "flag": "Flag",
-      "listData": ["Unordered list item"]
+      "flag": "4 min read 1"
     },
     {
-      "heading": "Short title of the card describing the main content"
+      "headline": "Short title of the card describing the main content",
+      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "tagL1": "",
+      "caption": "Credit",
+      "url": "https://www.thetimes.co.uk",
+      "tag": {
+        "label": "Tag",
+        "href": "/"
+      },
+      "flag": "4 min read 2"
     },
     {
-      "heading": "Short title of the card describing the main content",
-      "paragraph": "Short paragraph description of the article, outlining main story and focus.",
-      "url": "#",
-      "tagL1": "TAG"
+      "headline": "Short title of the card describing the main content",
+      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "tagL1": "",
+      "caption": "Credit",
+      "url": "https://www.thetimes.co.uk",
+      "tag": {
+        "label": "Tag",
+        "href": "/"
+      },
+      "flag": "4 min read 3"
     },
     {
-      "heading": "Short title of the card describing the main content",
-      "paragraph": "Short paragraph description of the article, outlining main story and focus.",
-      "url": "#"
+      "headline": "Short title of the card describing the main content",
+      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "tagL1": "",
+      "caption": "Credit",
+      "url": "https://www.thetimes.co.uk",
+      "tag": {
+        "label": "Tag",
+        "href": "/"
+      },
+      "flag": "4 min read 4"
     }
   ],
-  "smallArticles": [
-    {
-      "image": {
-        "src": "/assets/small_01.jpg",
-        "alt": "This is ALT Text"
-      },
-      "title": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
-      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "imageRight": false,
-      "flag": "Flag"
+  "leadArticle": {
+    "headline": "Short title of the card describing the main content",
+    "tagL1": "",
+    "image": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c246bf4-fa83-11ed-9be0-622d8a105167.jpg?crop=1200%2C1500%2C0%2C0&resize=747",
+    "caption": "Credit",
+    "url": "https://www.thetimes.co.uk",
+    "tag": {
+      "label": "Tag",
+      "href": "/"
     },
-    {
-      "image": {
-        "src": "/assets/small_02.jpg",
-        "alt": "This is ALT Text"
-      },
-      "title": "‘American owners pose threat to English pyramid’",
-      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "imageRight": false,
-      "flag": ""
-    }
-  ],
-
-  "verticalArticles": [
-    {
-      "headline": "Short title of the card describing the main content",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
-      "tagL1": "",
-      "caption": "Credit",
-      "image": "/assets/main_01.jpg",
-      "url": "https://www.thetimes.co.uk",
-      "tag": {
-        "label": "Tag",
-        "href": "/"
-      },
-      "flag": "4 min read"
-    },
-    {
-      "headline": "Short title of the card describing the main content",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
-      "tagL1": "",
-      "caption": "Credit",
-      "image": "/assets/main_01.jpg",
-      "url": "https://www.thetimes.co.uk",
-      "tag": {
-        "label": "Tag",
-        "href": "/"
-      },
-      "flag": "4 min read"
-    }
-  ],
-  "horizontalArticles": [
-    {
-      "headline": "Short title of the card describing the main content",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
-      "tagL1": "",
-      "caption": "Credit",
-      "url": "https://www.thetimes.co.uk",
-      "tag": {
-        "label": "Tag",
-        "href": "/"
-      },
-      "flag": "4 min read"
-    },
-    {
-      "headline": "Short title of the card describing the main content",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
-      "tagL1": "",
-      "caption": "Credit",
-      "url": "https://www.thetimes.co.uk",
-      "tag": {
-        "label": "Tag",
-        "href": "/"
-      },
-      "flag": "4 min read"
-    }
-  ]
+    "flag": "4 min read 1"
+  }
 }

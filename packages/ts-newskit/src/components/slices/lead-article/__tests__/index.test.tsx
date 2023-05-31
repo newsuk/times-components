@@ -12,7 +12,7 @@ jest.mock('newskit', () => ({
 
 const leadStoryData: LeadArticleProps = {
   ...leadArticle,
-  subHeadline: 'TAG'
+  tagL1: 'TAG'
 };
 
 const renderComponent = () =>
@@ -47,20 +47,20 @@ describe('Render Component one', () => {
     const captionText = getByText(leadArticle.caption);
     expect(captionText).toBeInTheDocument();
   });
-  it('should render subHeadline if passed as props', () => {
+  it('should render tagL1 if passed as props', () => {
     const { getByText } = renderComponent();
 
-    const subHeadline = getByText('TAG');
-    expect(subHeadline).toBeInTheDocument();
+    const tagL1 = getByText('TAG');
+    expect(tagL1).toBeInTheDocument();
   });
 
-  it('should render articleType if tag is provided', () => {
+  it('should render tag if tag is provided', () => {
     (useBreakpointKey as any).mockReturnValue('xs');
     const { queryByText } = render(
       <LeadArticle {...leadStoryData} imageTop={true} />
     );
-    const articleType = queryByText(leadArticle.tag.label);
-    expect(articleType).toBeVisible();
+    const tag = queryByText(leadArticle.tag.label);
+    expect(tag).toBeVisible();
   });
 
   it('should not render tag or flag if they are not provided', () => {

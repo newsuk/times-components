@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
+exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="css-8atxkm"
@@ -15,148 +15,67 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           class="css-dl45po"
         >
           <div
-            class="css-1qkqv92"
-          />
-          <div
             class="css-h18yzn"
           >
             <div
-              class="css-13byt3y"
+              class="css-1sqhgnb"
             >
               <div
-                class="css-13byt3y"
-              >
-                <span
-                  class="css-1x1ve0y"
-                >
-                  TAGL1 1
-                </span>
-              </div>
-              <a
-                class="css-u57k3c"
-                href="/article1"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-8gj81n"
-                  >
-                    Article 1
-                  </span>
-                </span>
-              </a>
-              <p
-                class="css-vdfsd1"
-              >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <div
-                class="css-13s74dp"
-                data-testid="tag-and-flag"
+                class="css-gpke1l"
               >
                 <a
-                  class="css-10d4t8c"
-                  href="/tag1"
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-8gj81n"
                     >
-                      Tag 1
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
                 <div
-                  class="css-lew009"
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 1
+                  </span>
                 </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  Flag 1
-                </span>
               </div>
-              <ul
-                class="css-1dl3yfl"
-                role="list"
-              >
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
-                  >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
-                  >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
-                    </p>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
           <div
@@ -164,7 +83,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-11bei24"
+              class="css-xr87n0"
               data-testid="divider"
             />
           </div>
@@ -172,142 +91,210 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             class="css-h18yzn"
           >
             <div
-              class="css-13byt3y"
+              class="css-1sqhgnb"
             >
               <div
-                class="css-13byt3y"
-              >
-                <span
-                  class="css-1x1ve0y"
-                >
-                  TAGL1 2
-                </span>
-              </div>
-              <a
-                class="css-u57k3c"
-                href="/article2"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-65zrxz"
-                  >
-                    Article 2
-                  </span>
-                </span>
-              </a>
-              <p
-                class="css-vdfsd1"
-              >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <div
-                class="css-13s74dp"
-                data-testid="tag-and-flag"
+                class="css-gpke1l"
               >
                 <a
-                  class="css-10d4t8c"
-                  href="/tag2"
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-65zrxz"
                     >
-                      Tag 2
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
                 <div
-                  class="css-lew009"
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 2
+                  </span>
                 </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  Flag 2
-                </span>
               </div>
-              <ul
-                class="css-1dl3yfl"
-                role="list"
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
               >
-                <li
-                  class="css-czt13m"
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
-                  <div
-                    class="css-16r6s3u"
+                  <span
+                    class="css-17x5lw"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
+                    <span
+                      class="css-65zrxz"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
                 >
-                  <div
-                    class="css-16r6s3u"
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
+                    <span
+                      class="css-17x5lw"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <span
+                        class="css-pwugga"
                       >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
-                    </p>
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
-                </li>
-              </ul>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 3
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-65zrxz"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 4
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -353,15 +340,15 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   class="css-uxw9nr"
                 >
                   <picture
-                    class="css-zp0elg"
+                    class="css-y00bg8"
                   >
                     <div
                       class="css-5pczz7"
                     />
                     <img
-                      alt="Saracens an inclusive club? They didn't look out for me"
+                      alt="Short title of the card describing the main content"
                       class="css-1qgqq71"
-                      src="/assets/main_01.jpg"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c246bf4-fa83-11ed-9be0-622d8a105167.jpg?crop=1200%2C1500%2C0%2C0&resize=747"
                     />
                   </picture>
                 </div>
@@ -382,17 +369,12 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1tplk7g"
+                      class="css-8gj81n"
                     >
-                      Saracens an inclusive club? They didn't look out for me
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
-                <p
-                  class="css-vdfsd1"
-                >
-                  Lyon lock Joel Kpoku tells Will Kelleher that he's fired up to face old team — and urges more English stars to move to France
-                </p>
                 <div
                   class="css-1atazsr"
                   data-testid="tag-and-flag"
@@ -407,7 +389,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-pwugga"
                       >
-                        Review
+                        Tag
                       </span>
                     </span>
                   </a>
@@ -423,7 +405,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <span
                     class="css-64fvyz"
                   >
-                    4 min read
+                    4 min read 1
                   </span>
                 </div>
               </div>
@@ -436,147 +418,6 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="css-85egwf"
                 data-testid="divider"
               />
-            </div>
-          </div>
-          <div
-            class="css-11l110t"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-obfal1"
-              data-testid="divider"
-            />
-          </div>
-          <div
-            class="css-194m366"
-          >
-            <div
-              class="css-1fgalmf"
-            >
-              <div
-                class="css-1nw1nne"
-              >
-                <div
-                  class="css-1kwj960"
-                >
-                  <picture
-                    class="css-zp0elg"
-                  >
-                    <div
-                      class="css-5pczz7"
-                    />
-                    <img
-                      alt="This is ALT Text"
-                      class="css-1qgqq71"
-                      src="/assets/small_01.jpg"
-                    />
-                  </picture>
-                </div>
-                <div
-                  class="css-diffbd"
-                >
-                  <a
-                    class="css-u57k3c"
-                    href="/article/european-cup-winner-mihajlovic-dies"
-                    role="link"
-                  >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-65zrxz"
-                      >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukemia
-                      </span>
-                    </span>
-                  </a>
-                  <div
-                    class="css-1atazsr"
-                    data-testid="tag-and-flag"
-                  >
-                    <a
-                      class="css-10d4t8c"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-pwugga"
-                        >
-                          Tag
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-lew009"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-64fvyz"
-                    >
-                      Flag
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="css-givux0"
-            >
-              <hr
-                aria-hidden="true"
-                class="css-13rcg9f"
-                data-testid="divider"
-              />
-            </div>
-            <div
-              class="css-1fgalmf"
-            >
-              <div
-                class="css-1nw1nne"
-              >
-                <div
-                  class="css-1kwj960"
-                >
-                  <picture
-                    class="css-zp0elg"
-                  >
-                    <div
-                      class="css-5pczz7"
-                    />
-                    <img
-                      alt="This is ALT Text"
-                      class="css-1qgqq71"
-                      src="/assets/small_02.jpg"
-                    />
-                  </picture>
-                </div>
-                <div
-                  class="css-diffbd"
-                >
-                  <a
-                    class="css-u57k3c"
-                    href="/article/american-owners-pose-threat-to-english-pyramid"
-                    role="link"
-                  >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-65zrxz"
-                      >
-                        American owners pose threat to English pyramid
-                      </span>
-                    </span>
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -638,7 +479,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     <span
                       class="css-65zrxz"
                     >
-                      European cup winner Mihajlovic dies aged 53 after battle with leukemia
+                      European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                     </span>
                   </span>
                 </a>
@@ -846,7 +687,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     <span
                       class="css-65zrxz"
                     >
-                      Blow for rebel clubs as court says UEFA can block Super League
+                      Blow for rebel clubs as court says Uefa can block Super League
                     </span>
                   </span>
                 </a>
@@ -908,7 +749,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     <span
                       class="css-65zrxz"
                     >
-                      Blow for rebel clubs as court says UEFA can block Super League
+                      Blow for rebel clubs as court says Uefa can block Super League
                     </span>
                   </span>
                 </a>
@@ -1006,7 +847,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-65zrxz"
                           >
-                            Blow for rebel clubs as court says UEFA can block Super League
+                            Blow for rebel clubs as court says Uefa can block Super League
                           </span>
                         </span>
                       </a>
@@ -1072,7 +913,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-65zrxz"
                           >
-                            Blow for rebel clubs as court says UEFA can block Super League
+                            Blow for rebel clubs as court says Uefa can block Super League
                           </span>
                         </span>
                       </a>
@@ -1122,7 +963,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
+exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
 <DocumentFragment>
   <div
     class="css-8atxkm"
@@ -1137,148 +978,67 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-dl45po"
         >
           <div
-            class="css-1qkqv92"
-          />
-          <div
             class="css-h18yzn"
           >
             <div
-              class="css-13byt3y"
+              class="css-1sqhgnb"
             >
               <div
-                class="css-13byt3y"
-              >
-                <span
-                  class="css-1x1ve0y"
-                >
-                  TAGL1 1
-                </span>
-              </div>
-              <a
-                class="css-u57k3c"
-                href="/article1"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-8gj81n"
-                  >
-                    Article 1
-                  </span>
-                </span>
-              </a>
-              <p
-                class="css-vdfsd1"
-              >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <div
-                class="css-13s74dp"
-                data-testid="tag-and-flag"
+                class="css-gpke1l"
               >
                 <a
-                  class="css-10d4t8c"
-                  href="/tag1"
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-8gj81n"
                     >
-                      Tag 1
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
                 <div
-                  class="css-lew009"
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 1
+                  </span>
                 </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  Flag 1
-                </span>
               </div>
-              <ul
-                class="css-1dl3yfl"
-                role="list"
-              >
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
-                  >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
-                  >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
-                    </p>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
           <div
@@ -1286,7 +1046,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-11bei24"
+              class="css-xr87n0"
               data-testid="divider"
             />
           </div>
@@ -1294,142 +1054,210 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="css-h18yzn"
           >
             <div
-              class="css-13byt3y"
+              class="css-1sqhgnb"
             >
               <div
-                class="css-13byt3y"
-              >
-                <span
-                  class="css-1x1ve0y"
-                >
-                  TAGL1 2
-                </span>
-              </div>
-              <a
-                class="css-u57k3c"
-                href="/article2"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-65zrxz"
-                  >
-                    Article 2
-                  </span>
-                </span>
-              </a>
-              <p
-                class="css-vdfsd1"
-              >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <div
-                class="css-13s74dp"
-                data-testid="tag-and-flag"
+                class="css-gpke1l"
               >
                 <a
-                  class="css-10d4t8c"
-                  href="/tag2"
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-65zrxz"
                     >
-                      Tag 2
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
                 <div
-                  class="css-lew009"
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 2
+                  </span>
                 </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  Flag 2
-                </span>
               </div>
-              <ul
-                class="css-1dl3yfl"
-                role="list"
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
               >
-                <li
-                  class="css-czt13m"
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
-                  <div
-                    class="css-16r6s3u"
+                  <span
+                    class="css-17x5lw"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
+                    <span
+                      class="css-65zrxz"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
                 >
-                  <div
-                    class="css-16r6s3u"
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
+                    <span
+                      class="css-17x5lw"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <span
+                        class="css-pwugga"
                       >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
-                    </p>
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
-                </li>
-              </ul>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 3
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-65zrxz"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 4
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1475,15 +1303,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-uxw9nr"
                 >
                   <picture
-                    class="css-zp0elg"
+                    class="css-y00bg8"
                   >
                     <div
                       class="css-5pczz7"
                     />
                     <img
-                      alt="Saracens an inclusive club? They didn't look out for me"
+                      alt="Short title of the card describing the main content"
                       class="css-1qgqq71"
-                      src="/assets/main_01.jpg"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c246bf4-fa83-11ed-9be0-622d8a105167.jpg?crop=1200%2C1500%2C0%2C0&resize=747"
                     />
                   </picture>
                 </div>
@@ -1504,17 +1332,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1tplk7g"
+                      class="css-8gj81n"
                     >
-                      Saracens an inclusive club? They didn't look out for me
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
-                <p
-                  class="css-vdfsd1"
-                >
-                  Lyon lock Joel Kpoku tells Will Kelleher that he's fired up to face old team — and urges more English stars to move to France
-                </p>
                 <div
                   class="css-1atazsr"
                   data-testid="tag-and-flag"
@@ -1529,7 +1352,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-pwugga"
                       >
-                        Review
+                        Tag
                       </span>
                     </span>
                   </a>
@@ -1545,7 +1368,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-64fvyz"
                   >
-                    4 min read
+                    4 min read 1
                   </span>
                 </div>
               </div>
@@ -1558,147 +1381,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-85egwf"
                 data-testid="divider"
               />
-            </div>
-          </div>
-          <div
-            class="css-11l110t"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-obfal1"
-              data-testid="divider"
-            />
-          </div>
-          <div
-            class="css-194m366"
-          >
-            <div
-              class="css-1fgalmf"
-            >
-              <div
-                class="css-1nw1nne"
-              >
-                <div
-                  class="css-1kwj960"
-                >
-                  <picture
-                    class="css-zp0elg"
-                  >
-                    <div
-                      class="css-5pczz7"
-                    />
-                    <img
-                      alt="This is ALT Text"
-                      class="css-1qgqq71"
-                      src="/assets/small_01.jpg"
-                    />
-                  </picture>
-                </div>
-                <div
-                  class="css-diffbd"
-                >
-                  <a
-                    class="css-u57k3c"
-                    href="/article/european-cup-winner-mihajlovic-dies"
-                    role="link"
-                  >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-65zrxz"
-                      >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukemia
-                      </span>
-                    </span>
-                  </a>
-                  <div
-                    class="css-1atazsr"
-                    data-testid="tag-and-flag"
-                  >
-                    <a
-                      class="css-10d4t8c"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-pwugga"
-                        >
-                          Tag
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-lew009"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-64fvyz"
-                    >
-                      Flag
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="css-givux0"
-            >
-              <hr
-                aria-hidden="true"
-                class="css-13rcg9f"
-                data-testid="divider"
-              />
-            </div>
-            <div
-              class="css-1fgalmf"
-            >
-              <div
-                class="css-1nw1nne"
-              >
-                <div
-                  class="css-1kwj960"
-                >
-                  <picture
-                    class="css-zp0elg"
-                  >
-                    <div
-                      class="css-5pczz7"
-                    />
-                    <img
-                      alt="This is ALT Text"
-                      class="css-1qgqq71"
-                      src="/assets/small_02.jpg"
-                    />
-                  </picture>
-                </div>
-                <div
-                  class="css-diffbd"
-                >
-                  <a
-                    class="css-u57k3c"
-                    href="/article/american-owners-pose-threat-to-english-pyramid"
-                    role="link"
-                  >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-65zrxz"
-                      >
-                        American owners pose threat to English pyramid
-                      </span>
-                    </span>
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -1757,7 +1439,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-65zrxz"
                   >
-                    European cup winner Mihajlovic dies aged 53 after battle with leukemia
+                    European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                   </span>
                 </span>
               </a>
@@ -1942,7 +1624,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          Blow for rebel clubs as court says UEFA can block Super League
+                          Blow for rebel clubs as court says Uefa can block Super League
                         </span>
                       </span>
                     </a>
@@ -1988,7 +1670,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          Blow for rebel clubs as court says UEFA can block Super League
+                          Blow for rebel clubs as court says Uefa can block Super League
                         </span>
                       </span>
                     </a>
@@ -2037,7 +1719,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
 </DocumentFragment>
 `;
 
-exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
+exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
 <DocumentFragment>
   <div
     class="css-8atxkm"
@@ -2052,148 +1734,67 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-dl45po"
         >
           <div
-            class="css-1qkqv92"
-          />
-          <div
             class="css-h18yzn"
           >
             <div
-              class="css-13byt3y"
+              class="css-1sqhgnb"
             >
               <div
-                class="css-13byt3y"
-              >
-                <span
-                  class="css-1x1ve0y"
-                >
-                  TAGL1 1
-                </span>
-              </div>
-              <a
-                class="css-u57k3c"
-                href="/article1"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-8gj81n"
-                  >
-                    Article 1
-                  </span>
-                </span>
-              </a>
-              <p
-                class="css-vdfsd1"
-              >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <div
-                class="css-13s74dp"
-                data-testid="tag-and-flag"
+                class="css-gpke1l"
               >
                 <a
-                  class="css-10d4t8c"
-                  href="/tag1"
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-8gj81n"
                     >
-                      Tag 1
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
                 <div
-                  class="css-lew009"
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 1
+                  </span>
                 </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  Flag 1
-                </span>
               </div>
-              <ul
-                class="css-1dl3yfl"
-                role="list"
-              >
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
-                  >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
-                  >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
-                    </p>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
           <div
@@ -2201,7 +1802,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-11bei24"
+              class="css-xr87n0"
               data-testid="divider"
             />
           </div>
@@ -2209,142 +1810,210 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="css-h18yzn"
           >
             <div
-              class="css-13byt3y"
+              class="css-1sqhgnb"
             >
               <div
-                class="css-13byt3y"
-              >
-                <span
-                  class="css-1x1ve0y"
-                >
-                  TAGL1 2
-                </span>
-              </div>
-              <a
-                class="css-u57k3c"
-                href="/article2"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-65zrxz"
-                  >
-                    Article 2
-                  </span>
-                </span>
-              </a>
-              <p
-                class="css-vdfsd1"
-              >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <div
-                class="css-13s74dp"
-                data-testid="tag-and-flag"
+                class="css-gpke1l"
               >
                 <a
-                  class="css-10d4t8c"
-                  href="/tag2"
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-65zrxz"
                     >
-                      Tag 2
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
                 <div
-                  class="css-lew009"
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 2
+                  </span>
                 </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  Flag 2
-                </span>
               </div>
-              <ul
-                class="css-1dl3yfl"
-                role="list"
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
               >
-                <li
-                  class="css-czt13m"
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
-                  <div
-                    class="css-16r6s3u"
+                  <span
+                    class="css-17x5lw"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
+                    <span
+                      class="css-65zrxz"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
                 >
-                  <div
-                    class="css-16r6s3u"
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
+                    <span
+                      class="css-17x5lw"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <span
+                        class="css-pwugga"
                       >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
-                    </p>
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
-                </li>
-              </ul>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 3
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-h18yzn"
+          >
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-65zrxz"
+                    >
+                      Short title of the card describing the main content
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-vdfsd1"
+                >
+                  Short paragraph description of the article, outlining main story and focus.
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-pwugga"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-64fvyz"
+                  >
+                    4 min read 4
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -2390,15 +2059,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-uxw9nr"
                 >
                   <picture
-                    class="css-zp0elg"
+                    class="css-y00bg8"
                   >
                     <div
                       class="css-5pczz7"
                     />
                     <img
-                      alt="Saracens an inclusive club? They didn't look out for me"
+                      alt="Short title of the card describing the main content"
                       class="css-1qgqq71"
-                      src="/assets/main_01.jpg"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c246bf4-fa83-11ed-9be0-622d8a105167.jpg?crop=1200%2C1500%2C0%2C0&resize=747"
                     />
                   </picture>
                 </div>
@@ -2419,17 +2088,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1tplk7g"
+                      class="css-8gj81n"
                     >
-                      Saracens an inclusive club? They didn't look out for me
+                      Short title of the card describing the main content
                     </span>
                   </span>
                 </a>
-                <p
-                  class="css-vdfsd1"
-                >
-                  Lyon lock Joel Kpoku tells Will Kelleher that he's fired up to face old team — and urges more English stars to move to France
-                </p>
                 <div
                   class="css-1atazsr"
                   data-testid="tag-and-flag"
@@ -2444,7 +2108,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-pwugga"
                       >
-                        Review
+                        Tag
                       </span>
                     </span>
                   </a>
@@ -2460,7 +2124,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-64fvyz"
                   >
-                    4 min read
+                    4 min read 1
                   </span>
                 </div>
               </div>
@@ -2473,132 +2137,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-85egwf"
                 data-testid="divider"
               />
-            </div>
-          </div>
-          <div
-            class="css-11l110t"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-obfal1"
-              data-testid="divider"
-            />
-          </div>
-          <div
-            class="css-194m366"
-          >
-            <div
-              class="css-1fgalmf"
-            >
-              <div
-                class="css-1nw1nne"
-              >
-                <div
-                  class="css-tj8oo8"
-                >
-                  <div
-                    class="css-1qkqv92"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-exb5cr"
-                      data-testid="divider"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="css-diffbd"
-                >
-                  <a
-                    class="css-u57k3c"
-                    href="/article/european-cup-winner-mihajlovic-dies"
-                    role="link"
-                  >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-65zrxz"
-                      >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukemia
-                      </span>
-                    </span>
-                  </a>
-                  <div
-                    class="css-1atazsr"
-                    data-testid="tag-and-flag"
-                  >
-                    <a
-                      class="css-10d4t8c"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-pwugga"
-                        >
-                          Tag
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-lew009"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-64fvyz"
-                    >
-                      Flag
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="css-1fgalmf"
-            >
-              <div
-                class="css-1nw1nne"
-              >
-                <div
-                  class="css-tj8oo8"
-                >
-                  <div
-                    class="css-1qkqv92"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-exb5cr"
-                      data-testid="divider"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="css-diffbd"
-                >
-                  <a
-                    class="css-u57k3c"
-                    href="/article/american-owners-pose-threat-to-english-pyramid"
-                    role="link"
-                  >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-65zrxz"
-                      >
-                        American owners pose threat to English pyramid
-                      </span>
-                    </span>
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -2664,7 +2202,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukemia
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                       </span>
                     </span>
                   </a>
@@ -2848,7 +2386,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        Blow for rebel clubs as court says UEFA can block Super League
+                        Blow for rebel clubs as court says Uefa can block Super League
                       </span>
                     </span>
                   </a>
@@ -2902,7 +2440,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        Blow for rebel clubs as court says UEFA can block Super League
+                        Blow for rebel clubs as court says Uefa can block Super League
                       </span>
                     </span>
                   </a>
@@ -2998,7 +2536,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          Blow for rebel clubs as court says UEFA can block Super League
+                          Blow for rebel clubs as court says Uefa can block Super League
                         </span>
                       </span>
                     </a>
@@ -3051,7 +2589,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          Blow for rebel clubs as court says UEFA can block Super League
+                          Blow for rebel clubs as court says Uefa can block Super League
                         </span>
                       </span>
                     </a>

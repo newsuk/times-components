@@ -4,7 +4,7 @@
     "headline": "Sarcacens an inclusive club? They didnt look out for me",
     "color": "#01000d",
     "summary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
-    "subHeadline": "",
+    "tagL1": "",
     "caption": "Credit",
     "image": "/assets/main_01.jpg",
     "url": "https://www.thetimes.co.uk",
@@ -12,8 +12,7 @@
       "label": "Review",
       "href": "/"
     },
-    "flag": "4 min read",
-    "imageTop": false
+    "flag": "4 min read"
   },
   "articles": [
     {

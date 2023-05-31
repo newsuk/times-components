@@ -18,7 +18,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1ee4437"
+              class="css-l4tus5"
             >
               508
             </span>
@@ -27,7 +27,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1cnwxyb"
+              class="css-8da5hg"
             >
               Puzzles played
             </span>
@@ -40,7 +40,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1ee4437"
+              class="css-l4tus5"
             >
               180
             </span>
@@ -49,7 +49,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1cnwxyb"
+              class="css-8da5hg"
             >
               Current streak
             </span>
@@ -62,7 +62,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1ee4437"
+              class="css-l4tus5"
             >
               280
             </span>
@@ -71,7 +71,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
             class="css-xy1p36"
           >
             <span
-              class="css-1cnwxyb"
+              class="css-8da5hg"
             >
               Longest streak
             </span>

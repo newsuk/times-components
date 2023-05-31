@@ -6,7 +6,7 @@ exports[`Render Component one should render a snapshot 1`] = `
     class="css-ln8qdk"
   >
     <div
-      class="css-13byt3y"
+      class="css-1vuk75f"
     >
       <div
         class="css-uxw9nr"
@@ -25,17 +25,17 @@ exports[`Render Component one should render a snapshot 1`] = `
         </picture>
       </div>
       <p
-        class="css-1qlz25y"
+        class="css-9pk24b"
       >
         Credit
       </p>
     </div>
     <div
-      class="css-17cghxi"
+      class="css-gpke1l"
     >
       <hr
         aria-hidden="true"
-        class="css-xr87n0"
+        class="css-tk98gp"
         data-testid="divider"
       />
       <div
@@ -46,67 +46,63 @@ exports[`Render Component one should render a snapshot 1`] = `
           data-testid="tag"
         >
           <span
-            class="css-14u1cgq"
+            class="css-1x1ve0y"
           >
             TAG
           </span>
         </div>
       </div>
       <a
-        class="css-1xxy735"
+        class="css-10h0i3c"
         href="https://www.thetimes.co.uk"
       >
         <span
           class="css-17x5lw"
         >
           <span
-            class="css-1payua0"
+            class="css-8gj81n"
           >
             Sarcacens an inclusive club? They didnt look out for me
           </span>
         </span>
       </a>
       <p
-        class="css-1ocner8"
+        class="css-vdfsd1"
       >
         Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
       </p>
       <div
-        class="css-1pgtvq2"
+        class="css-1atazsr"
+        data-testid="tag-and-flag"
       >
-        <div
-          class="css-1atazsr"
-          data-testid="tag-and-flag"
+        <a
+          class="css-10d4t8c"
+          href="/"
         >
-          <a
-            class="css-10d4t8c"
-            href="/"
+          <span
+            class="css-17x5lw"
           >
             <span
-              class="css-17x5lw"
+              class="css-pwugga"
             >
-              <span
-                class="css-1j5e90f"
-              >
-                Review
-              </span>
+              Review
             </span>
-          </a>
-          <div
-            class="css-lew009"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-15kf7hd"
-              data-testid="divider"
-            />
-          </div>
-          <span
-            class="css-l4j3xy"
-          >
-            4 min read
           </span>
+        </a>
+        <div
+          class="css-lew009"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
         </div>
+        <span
+          class="css-64fvyz"
+        >
+          4 min read
+        </span>
       </div>
     </div>
   </div>

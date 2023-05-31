@@ -15,7 +15,7 @@ exports[`Date Card should render puzzles Date Card 1`] = `
           class="css-1ee1okj"
         >
           <label
-            class="css-pngcta"
+            class="css-iwq5bo"
           >
             Quick
           </label>
@@ -23,12 +23,12 @@ exports[`Date Card should render puzzles Date Card 1`] = `
             class="css-1dfr6je"
           >
             <div
-              class="css-x7x0gg"
+              class="css-8nd4jd"
             >
               Thu
             </div>
             <p
-              class="css-lhr4ip"
+              class="css-masymo"
             >
               Mar 2 2023
             </p>

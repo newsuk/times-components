@@ -14,27 +14,37 @@ import { TagAndFlag } from '../shared';
 export interface LeadArticleProps {
   headline: string;
   flag?: string;
-  summary: string;
-  subHeadline?: string;
+  summary?: string;
+  tagL1?: string;
   caption: string;
-  image: string;
+  image?: string;
   url: string;
   tag?: {
     label: string;
     href: string;
   };
   imageTop?: boolean;
+  hasTopBorder?: boolean;
+  contentTop?: boolean;
+  typographyPreset?: string;
+  loadingAspectRatio?: string;
+  marginBlockStart?: string;
 }
 export const LeadArticle = ({
   headline,
   flag,
   summary,
-  subHeadline,
+  tagL1,
   caption,
   image,
   url,
   tag,
-  imageTop
+  imageTop,
+  hasTopBorder = true,
+  contentTop,
+  typographyPreset,
+  loadingAspectRatio,
+  marginBlockStart
 }: LeadArticleProps) => {
   const stylePresets = {
     typographyPreset: 'utilityButton010',
@@ -62,30 +72,45 @@ export const LeadArticle = ({
       columnGap="space040"
       columns={{ md: imageTop ? '1fr' : '3fr 5fr' }}
     >
-      <Block>
-        <FullWidthCardMediaMob
-          media={{
-            src: image,
-            alt: headline,
-            loadingAspectRatio: '3:2'
-          }}
-        />
-        <TextBlock
-          marginBlockStart="space020"
-          typographyPreset="utilityMeta010"
+      {image && (
+        <Block
+          marginBlockEnd={imageTop ? 'space050' : 'space000'}
+          marginBlockStart={marginBlockStart || 'space000'}
         >
-          {caption}
-        </TextBlock>
-      </Block>
-      <CardContent alignContent="start">
-        {!imageTop && (
-          <Divider
-            overrides={{
-              stylePreset: 'dashedDivider'
+          <FullWidthCardMediaMob
+            media={{
+              src: image,
+              alt: headline,
+              loadingAspectRatio: loadingAspectRatio || '3:2'
             }}
           />
+          <TextBlock
+            marginBlockStart="space020"
+            typographyPreset="utilityMeta010"
+          >
+            {caption}
+          </TextBlock>
+        </Block>
+      )}
+
+      <CardContent
+        alignContent="start"
+        overrides={{ marginBlockEnd: contentTop ? 'space040' : 'space000' }}
+      >
+        {hasTopBorder && (
+          <>
+            {!imageTop && (
+              <Divider
+                overrides={{
+                  stylePreset: 'dashedDivider',
+                  marginBlockEnd: 'space050'
+                }}
+              />
+            )}
+          </>
         )}
-        {subHeadline && (
+
+        {tagL1 && (
           <Visible md lg xl>
             <Tag
               size="small"
@@ -93,38 +118,40 @@ export const LeadArticle = ({
                 ...stylePresets
               }}
             >
-              {subHeadline}
+              {tagL1}
             </Tag>
           </Visible>
         )}
         <CardHeadlineLink
           href={url}
           overrides={{
-            typographyPreset: imageTop
-              ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
-              : 'editorialHeadline040',
-            marginBlockStart: 'space050'
+            typographyPreset: typographyPreset
+              ? typographyPreset
+              : imageTop
+                ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
+                : 'editorialHeadline040'
           }}
           external={false}
           expand={!tag}
         >
           {headline}
         </CardHeadlineLink>
-        <TextBlock
-          typographyPreset={{
-            xs: 'editorialParagraph020',
-            md: 'editorialParagraph010'
-          }}
-          marginBlockStart="space050"
-          as="p"
-        >
-          {summary}
-        </TextBlock>
-        <Block marginBlockEnd="space040">
-          {(tag || flag) && (
-            <TagAndFlag tag={tag} flag={flag} marginBlockStart="space040" />
-          )}
-        </Block>
+        {summary && (
+          <TextBlock
+            typographyPreset={{
+              xs: 'editorialParagraph020',
+              md: 'editorialParagraph010'
+            }}
+            marginBlockStart="space050"
+            as="p"
+          >
+            {summary}
+          </TextBlock>
+        )}
+
+        {(tag || flag) && (
+          <TagAndFlag tag={tag} flag={flag} marginBlockStart="space040" />
+        )}
       </CardContent>
     </CardComposable>
   );
