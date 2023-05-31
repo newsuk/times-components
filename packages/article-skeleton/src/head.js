@@ -7,7 +7,7 @@ import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
 
 // Get the section for an article, preferring it not to be News
-function reduceTilesToTitles(tiles, prefix = '') {
+function reduceTilesToTitles(tiles, prefix = "") {
   if (!tiles) {
     return null;
   }
@@ -21,8 +21,8 @@ function reduceTilesToTitles(tiles, prefix = '') {
     return acc;
   }, []);
 
-  return sections.map(section => prefix+section.title);
-};
+  return sections.map(section => prefix + section.title);
+}
 function getSectionName(article) {
   const { tiles } = article;
   const titles = reduceTilesToTitles(tiles);
@@ -37,15 +37,19 @@ function getSectionName(article) {
 }
 function getSectionNameList(article) {
   const { tiles } = article;
-  const titles = reduceTilesToTitles(tiles, 'Section:');
+  const titles = reduceTilesToTitles(tiles, "Section:");
 
   if (titles == null) {
     return null;
   }
 
-  const uniqueSectionsArr = titles.filter((item, pos, self) => self.indexOf(item) === pos);
+  const uniqueSectionsArr = titles.filter(
+    (item, pos, self) => self.indexOf(item) === pos
+  );
   const maxUniqueSections = 2;
-  const uniqueSections = JSON.stringify(uniqueSectionsArr.slice(0, maxUniqueSections));
+  const uniqueSections = JSON.stringify(
+    uniqueSectionsArr.slice(0, maxUniqueSections)
+  );
 
   return uniqueSections;
 }
