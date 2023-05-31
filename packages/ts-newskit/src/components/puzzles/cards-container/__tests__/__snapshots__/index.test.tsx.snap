@@ -46,7 +46,6 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-o0xy9h-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
-            overrides="[object Object]"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -70,7 +69,6 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-o0xy9h-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
-            overrides="[object Object]"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
