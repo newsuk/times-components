@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import { Block, GridLayoutItem, TextBlock } from 'newskit';
 import {
-  BreakoutSectionBtn,
   BreakoutSectionContainer,
   BreakoutSectionGridLayout,
+  BreakoutSectionLink,
   StyledSudokuIconA4,
   StyledSudokuIconD2,
   StyledSudokuIconD4
@@ -52,17 +52,15 @@ export const BreakoutSection: FC<BreakoutSectionProps> = ({ data }) => {
           <StyledSudokuIconA4 />
           {data.map(({ id, title, url }) => (
             <GridLayoutItem id={id}>
-              <BreakoutSectionBtn
-                size="medium"
-                href={url}
+              <BreakoutSectionLink
                 overrides={{
                   stylePreset: 'puzzlesShadowBtn',
-                  typographyPreset: 'utilityButton020',
-                  width: '100%'
+                  typographyPreset: 'utilityButton020'
                 }}
+                href={url}
               >
                 {title}
-              </BreakoutSectionBtn>
+              </BreakoutSectionLink>
             </GridLayoutItem>
           ))}
         </BreakoutSectionGridLayout>

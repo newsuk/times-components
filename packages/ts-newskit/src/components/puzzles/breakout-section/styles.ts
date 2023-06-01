@@ -5,7 +5,9 @@ import {
   styled,
   getColorCssFromTheme,
   ButtonProps,
-  StackProps
+  StackProps,
+  LinkStandalone,
+  LinkProps
 } from 'newskit';
 import SudokuIconD4 from '../../../assets/SudokuIconD4';
 import SudokuIconD2 from '../../../assets/SudokuIconD2';
@@ -24,6 +26,26 @@ export const BreakoutSectionGridLayout = styled(GridLayout)`
 export const BreakoutSectionBtn = styled(Button)<ButtonProps>`
   position: relative;
   z-index: 2;
+`;
+
+export const BreakoutSectionLink = styled(LinkStandalone)<LinkProps>`
+  position: relative;
+  z-index: 2;
+  color: black;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover,
+  &:link,
+  &:visited,
+  &:active {
+    text-decoration: none !important;
+    color: black !important;
+  }
 `;
 
 export const StyledSudokuIconD4 = styled(SudokuIconD4)`
