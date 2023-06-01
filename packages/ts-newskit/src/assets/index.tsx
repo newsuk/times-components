@@ -1,10 +1,8 @@
 import React from 'react';
 import { customToNewsKitIcon, styled } from 'newskit';
-import {
-  East,
-  ArrowForwardIos,
-  ArrowBackIosNew
-} from '@emotion-icons/material';
+import { East } from '@emotion-icons/material/East';
+import { ArrowForwardIos } from '@emotion-icons/material/ArrowForwardIos';
+import { ArrowBackIosNew } from '@emotion-icons/material/ArrowBackIosNew';
 import SearchIcon from './SearchIcon';
 import BurgerIcon from './BurgerIcon';
 import RoundedPlusIcon from './RoundedPlusIcon';
