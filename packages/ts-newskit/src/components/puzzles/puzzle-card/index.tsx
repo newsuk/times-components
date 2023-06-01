@@ -18,8 +18,34 @@ export interface PuzzleCardProps {
 
 export const PuzzleCard = ({ data }: PuzzleCardProps) => {
   const timestamp = new Date(data.publishedAt);
-  const dayOfWeek = timestamp.toLocaleString('en-us', { weekday: 'long' });
+  const cardDate = timestamp.toLocaleString('en-us', {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric'
+  });
+  const currentDate = new Date();
+  const currentDayOfWeek = currentDate.toLocaleString('en-us', {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric'
+  });
+  const yesterdayDate = new Date();
+  yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+  const yesterdayDayOfWeek = yesterdayDate.toLocaleString('en-us', {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric'
+  });
+  let outputDate;
   const imageUrl = data.image ? data.image.crops[0].url : '';
+
+  if (cardDate === currentDayOfWeek) {
+    outputDate = 'Today';
+  } else if (cardDate === yesterdayDayOfWeek) {
+    outputDate = 'Yesterday';
+  } else {
+    outputDate = cardDate;
+  }
 
   return (
     <CardComposable
@@ -89,7 +115,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
           height="auto"
         >
           <Block>
-            {dayOfWeek && (
+            {outputDate && (
               <TextBlock
                 as="span"
                 paddingBlockStart="space010"
@@ -97,7 +123,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
                 typographyPreset="utilityLabel010"
                 stylePreset="inkBase"
               >
-                {dayOfWeek}
+                {outputDate}
               </TextBlock>
             )}
             {data.shortIdentifier && (
