@@ -16,16 +16,20 @@ export const CellNoMargin = styled(Cell)`
 
 const setBlockMargin = (space: string) => ({ marginBlockStart: `${space}` });
 export const LeadArticleCell = styled(CellNoMargin)`
+  & {
+    padding: 0 16px;
+  }
   position: relative;
-  padding: 0 16px !important;
   ${getMediaQueryFromTheme('md')} {
     ${getSpacingCssFromTheme(setBlockMargin, 'space040')};
   }
 `;
 
 export const LeadStoryCell = styled(CellNoMargin)`
+  & {
+    padding: 0 16px;
+  }
   position: relative;
-  padding: 0 16px !important;
 `;
 
 export const LeadStoryDivider = styled(Divider)<{ position: string }>`
@@ -41,7 +45,9 @@ export const AvatarDivider = styled(Divider)`
 `;
 
 export const CellWithCustomPadding = styled(Cell)`
-  padding: 0 16px !important;
+  & {
+    padding: 0 16px;
+  }
 `;
 
 export const StyledLeadStoryCell = styled(CellWithCustomPadding)`

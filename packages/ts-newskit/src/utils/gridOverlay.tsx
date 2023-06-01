@@ -5,11 +5,13 @@ const StyledGrid = styled(Grid)<{ show?: boolean }>`
   display: ${({ show }) => (show ? 'flex' : 'none')};
   position: fixed;
   height: 100vh;
-  width: 100% !important;
   text-align: center;
   top: 0;
   z-index: 1;
-  margin: 0 !important;
+  & {
+    margin: 0;
+    width: 100%;
+  }
 `;
 const StyledCellBlock = styled(Block)`
   background-color: rgba(0, 0, 0, 0.1);
@@ -18,8 +20,10 @@ const StyledCellBlock = styled(Block)`
 `;
 
 const StyledCell = styled(Cell)`
-  padding: 0 16px !important;
-  width: 100% !important;
+  & {
+    padding: 0 16px;
+    width: 100%;
+  }
 `;
 
 export const GridOverlay = ({ show }: { show?: boolean }) => {
