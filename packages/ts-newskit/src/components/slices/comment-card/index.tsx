@@ -18,7 +18,6 @@ export const CommentCard = ({
   return (
     <CardComposable
       columnGap="space040"
-      overrides={{ paddingBlock: 'space020' }}
       columns="77px 1fr"
       areas={`
         media content

@@ -1,12 +1,4 @@
-import {
-  Block,
-  Cell,
-  Divider,
-  Grid,
-  Hidden,
-  useBreakpointKey,
-  Visible
-} from 'newskit';
+import { Block, Divider, Hidden, useBreakpointKey, Visible } from 'newskit';
 import React from 'react';
 import {
   LeadArticle,
@@ -16,13 +8,15 @@ import { ArticleProps } from '../../components/slices/article';
 import {
   CellNoMargin,
   LeadArticleCell,
-  LeadStoryDivider
+  LeadStoryDivider,
+  CellWithCustomPadding
 } from '../shared-styles';
 import { ArticleStackSmall } from '../shared/article-stacks';
 import { LargeArticles } from './large-article-stack';
 import { LargeArticleProps } from '../../components/slices/large-article';
 import { FullWidthDividerMob } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
+import { CustomGridLayout } from '../shared/grid-layout';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
@@ -74,10 +68,10 @@ export const LeadStory1 = ({
   };
 
   return (
-    <Grid xsMargin="space045" mdMargin="space050">
-      <Cell xs={12} md={5} lg={3} xl={3}>
+    <CustomGridLayout>
+      <CellWithCustomPadding xs={12} md={5} lg={3} xl={3}>
         <LargeArticles largeArticles={largeArticles} />
-      </Cell>
+      </CellWithCustomPadding>
       <LeadArticleCell xs={12} md={7} lg={6} xl={5}>
         <Hidden md lg xl>
           <FullWidthDividerMob>
@@ -89,7 +83,7 @@ export const LeadStory1 = ({
             />
           </FullWidthDividerMob>
         </Hidden>
-        <Block marginInline={{ xs: 'space000', md: 'space020' }}>
+        <Block>
           <LeadStoryLayout>
             <LeadArticle {...leadArticle} />
           </LeadStoryLayout>
@@ -118,13 +112,13 @@ export const LeadStory1 = ({
           />
         </CellNoMargin>
       ) : (
-        <Cell xs={12} lg={3} xl={4}>
+        <CellWithCustomPadding xs={12} lg={3} xl={4}>
           <ComposedArticleStack
             articles={modifedArticles}
             breakpoint={breakpointKey}
           />
-        </Cell>
+        </CellWithCustomPadding>
       )}
-    </Grid>
+    </CustomGridLayout>
   );
 };

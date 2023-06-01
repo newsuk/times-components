@@ -1,5 +1,5 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
-import { TCThemeProvider, themes } from '../../utils/index.tsx';
+import { TCThemeProvider, themes, GridOverlay } from '../../utils/index.tsx';
 import { LeadStory1 } from "./";
 import { leadArticle, articles, largeArticles, smallArticles } from '../fixtures/lead-story.json';
 
@@ -23,9 +23,12 @@ This takes in a series of props, as below, to display the part of the slices.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const ContentBucket1Story = ({ leadArticle, articles, theme, largeArticles, smallArticles }) => (
+export const ContentBucket1Story = ({ leadArticle, articles, theme, largeArticles, smallArticles, gridOverlay }) => (
   <TCThemeProvider theme={theme}>
-    <LeadStory1 {...{ leadArticle, articles, largeArticles, smallArticles }} />
+    <>
+      <GridOverlay show={gridOverlay} />
+       <LeadStory1 {...{ leadArticle, articles, largeArticles, smallArticles }} />
+    </>
   </TCThemeProvider>
 );
 ContentBucket1Story.args = {
@@ -45,6 +48,9 @@ ContentBucket1Story.args = {
       options: Object.keys(themes),
       mapping: themes,
       control: { type: 'select' },
+    },
+   gridOverlay: {
+      control: { type: 'boolean' },
     },
   }}
 >

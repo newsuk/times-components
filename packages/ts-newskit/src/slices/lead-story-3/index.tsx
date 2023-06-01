@@ -1,12 +1,4 @@
-import {
-  Block,
-  Cell,
-  Divider,
-  Grid,
-  Hidden,
-  useBreakpointKey,
-  Visible
-} from 'newskit';
+import { Block, Divider, Hidden, useBreakpointKey, Visible } from 'newskit';
 import React from 'react';
 import {
   LeadArticle,
@@ -16,11 +8,13 @@ import { ArticleProps } from '../../components/slices/article';
 import {
   CellNoMargin,
   LeadArticleCell,
-  LeadStoryDivider
+  LeadStoryDivider,
+  CellWithCustomPadding
 } from '../shared-styles';
 import { FullWidthDividerMob } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { ArticleStack } from './article-stack';
+import { CustomGridLayout } from '../shared/grid-layout';
 
 export interface LeadStory3Props {
   leadArticle: LeadArticleProps;
@@ -77,10 +71,10 @@ export const LeadStory3 = ({
   };
 
   return (
-    <Grid xsMargin="space045" mdMargin="space050">
-      <Cell xs={12} md={5} lg={3} xl={3}>
+    <CustomGridLayout>
+      <CellWithCustomPadding xs={12} md={5} lg={3} xl={3}>
         <ArticleStack leadArticles={leadArticles} />
-      </Cell>
+      </CellWithCustomPadding>
       <LeadArticleCell xs={12} md={7} lg={6} xl={5}>
         <Hidden md lg xl>
           <FullWidthDividerMob>
@@ -92,7 +86,7 @@ export const LeadStory3 = ({
             />
           </FullWidthDividerMob>
         </Hidden>
-        <Block marginInline={{ xs: 'space000', md: 'space020' }}>
+        <Block>
           <LeadStoryLayout>
             <LeadArticle {...modifedLeadArticles} />
           </LeadStoryLayout>
@@ -106,13 +100,13 @@ export const LeadStory3 = ({
           />
         </CellNoMargin>
       ) : (
-        <Cell xs={12} lg={3} xl={4}>
+        <CellWithCustomPadding xs={12} lg={3} xl={4}>
           <ComposedArticleStack
             articles={modifedArticles}
             breakpoint={breakpointKey}
           />
-        </Cell>
+        </CellWithCustomPadding>
       )}
-    </Grid>
+    </CustomGridLayout>
   );
 };
