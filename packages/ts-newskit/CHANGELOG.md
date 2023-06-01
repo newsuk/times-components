@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.54.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.53.2...@times-components/ts-newskit@1.54.0) (2023-06-01)
+
+
+### Features
+
+* **TMRX-1294:** revision slice grid ([#3383](https://github.com/newsuk/times-components/issues/3383)) ([a1ac559](https://github.com/newsuk/times-components/commit/a1ac55907bc7a18b101e8b4d118ae09261cf1fce))
+
+
+
+
+
 ## [1.53.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.53.1...@times-components/ts-newskit@1.53.2) (2023-06-01)
 
 **Note:** Version bump only for package @times-components/ts-newskit
