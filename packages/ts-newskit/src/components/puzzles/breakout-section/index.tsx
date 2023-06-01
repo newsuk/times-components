@@ -8,14 +8,10 @@ import {
   StyledSudokuIconD2,
   StyledSudokuIconD4
 } from './styles';
-import { BreakoutSectionItem } from './types';
 import { StyledNewskitWaveBg } from '../personal-stats/styles';
+import { breakoutItems } from './fixtures/breakoutItems.json';
 
-interface BreakoutSectionProps {
-  data: BreakoutSectionItem[];
-}
-
-export const BreakoutSection: FC<BreakoutSectionProps> = ({ data }) => {
+export const BreakoutSection: FC = () => {
   return (
     <Block as="section">
       <BreakoutSectionContainer
@@ -50,7 +46,7 @@ export const BreakoutSection: FC<BreakoutSectionProps> = ({ data }) => {
         >
           <StyledSudokuIconD2 />
           <StyledSudokuIconA4 />
-          {data.map(({ id, title, url }) => (
+          {breakoutItems.map(({ id, title, url }) => (
             <GridLayoutItem id={id}>
               <BreakoutSectionBtn
                 size="medium"
