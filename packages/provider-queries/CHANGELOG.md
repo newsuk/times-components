@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.20.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.19.0...@times-components/provider-queries@2.20.0) (2023-06-01)
+
+
+### Features
+
+* **TMRX-1266:** update schema to have sections listed under keywords ([#3384](https://github.com/newsuk/times-components/issues/3384)) ([82b3aff](https://github.com/newsuk/times-components/commit/82b3aff7c4c481a0a5437322ea904c0e3376ca95))
+
+
+
+
+
 # [2.19.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.18.2...@times-components/provider-queries@2.19.0) (2023-05-15)
 
 
