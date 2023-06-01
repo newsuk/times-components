@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.53.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.53.0...@times-components/ts-newskit@1.53.1) (2023-06-01)
+
+
+### Bug Fixes
+
+* **icons:** [@emotion-icons](https://github.com/emotion-icons) import fix ([#3382](https://github.com/newsuk/times-components/issues/3382)) ([9e80d54](https://github.com/newsuk/times-components/commit/9e80d5440e15ff0c2c722b092868cb3898fea3fc))
+
+
+
+
+
 # [1.53.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.52.1...@times-components/ts-newskit@1.53.0) (2023-05-25)
 
 

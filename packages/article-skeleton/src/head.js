@@ -7,9 +7,7 @@ import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
 
 // Get the section for an article, preferring it not to be News
-function getSectionName(article) {
-  const { tiles } = article;
-
+function reduceTilesToTitles(tiles, prefix = "") {
   if (!tiles) {
     return null;
   }
@@ -22,15 +20,38 @@ function getSectionName(article) {
     acc.push(...slice.sections);
     return acc;
   }, []);
-  const titles = sections.map(section => section.title);
 
-  if (titles.length === 0) {
+  return sections.map(section => prefix + section.title);
+}
+function getSectionName(article) {
+  const { tiles } = article;
+  const titles = reduceTilesToTitles(tiles);
+
+  if (titles == null) {
     return null;
   }
 
   const nonNews = titles.filter(title => title !== "News");
 
   return nonNews.length ? nonNews[0] : "News";
+}
+function getSectionNameList(article) {
+  const { tiles } = article;
+  const titles = reduceTilesToTitles(tiles, "Section:");
+
+  if (titles == null) {
+    return null;
+  }
+
+  const uniqueSectionsArr = titles.filter(
+    (item, pos, self) => self.indexOf(item) === pos
+  );
+  const maxUniqueSections = 2;
+  const uniqueSections = JSON.stringify(
+    uniqueSectionsArr.slice(0, maxUniqueSections)
+  );
+
+  return uniqueSections;
 }
 function getIsLiveBlogExpiryTime(articleFlags = []) {
   let time = "";
@@ -257,6 +278,7 @@ function Head({
       ? renderTreeAsText({ children: descriptionMarkup })
       : null);
   const sectionname = getSectionName(article);
+  const sectionNameList = getSectionNameList(article);
   const thumbnailUrl =
     getThumbnailUrl(article) ||
     (getFallbackThumbnailUrl169 ? getFallbackThumbnailUrl169() : null);
@@ -326,7 +348,8 @@ function Head({
     thumbnailUrl,
     dateModified,
     author: authorSchema,
-    articleSection: sectionname
+    articleSection: sectionname,
+    keywords: sectionNameList
   };
 
   if (swgProductId) {
