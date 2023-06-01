@@ -1,22 +1,26 @@
 import {
   TextBlock,
-  Visible,
   Block,
   CardContent,
   CardComposable,
   Tag,
-  Divider
+  Divider,
+  Hidden
 } from 'newskit';
 import React from 'react';
-import { CardHeadlineLink, FullWidthCardMediaMob } from '../shared-styles';
-import { TagAndFlag } from '../shared';
+import {
+  CardHeadlineLink,
+  FullWidthCardMediaMob,
+  StyledUnorderedList
+} from '../shared-styles';
+import { TagAndFlag } from '../shared/tag-and-flag';
 
 export interface LeadArticleProps {
   headline: string;
   flag?: string;
   summary?: string;
   tagL1?: string;
-  caption: string;
+  caption?: string;
   image?: string;
   url: string;
   tag?: {
@@ -29,6 +33,10 @@ export interface LeadArticleProps {
   typographyPreset?: string;
   loadingAspectRatio?: string;
   marginBlockStart?: string;
+  textBlockMarginBlockStart?: string;
+  tagAndFlagBlockMarginBlockStart?: string;
+  listData?: string[];
+  showTagL1?: boolean;
 }
 export const LeadArticle = ({
   headline,
@@ -44,16 +52,17 @@ export const LeadArticle = ({
   contentTop,
   typographyPreset,
   loadingAspectRatio,
-  marginBlockStart
+  marginBlockStart,
+  textBlockMarginBlockStart,
+  tagAndFlagBlockMarginBlockStart,
+  listData,
+  showTagL1
 }: LeadArticleProps) => {
   const stylePresets = {
     typographyPreset: 'utilityButton010',
     stylePreset: 'inkBrand010',
-    marginBlockStart: 'space050',
-    paddingInline: 'space000',
-    paddingBlock: 'space000',
-    iconSize: 'iconSize010',
-    spaceInline: 'space010'
+    marginBlockEnd: 'space040',
+    paddingInline: 'space000'
   };
 
   return (
@@ -111,7 +120,7 @@ export const LeadArticle = ({
         )}
 
         {tagL1 && (
-          <Visible md lg xl>
+          <Hidden xs={showTagL1} sm={showTagL1}>
             <Tag
               size="small"
               overrides={{
@@ -120,7 +129,7 @@ export const LeadArticle = ({
             >
               {tagL1}
             </Tag>
-          </Visible>
+          </Hidden>
         )}
         <CardHeadlineLink
           href={url}
@@ -142,7 +151,7 @@ export const LeadArticle = ({
               xs: 'editorialParagraph020',
               md: 'editorialParagraph010'
             }}
-            marginBlockStart="space050"
+            marginBlockStart={textBlockMarginBlockStart || 'space040'}
             as="p"
           >
             {summary}
@@ -150,7 +159,29 @@ export const LeadArticle = ({
         )}
 
         {(tag || flag) && (
-          <TagAndFlag tag={tag} flag={flag} marginBlockStart="space040" />
+          <TagAndFlag
+            tag={tag}
+            flag={flag}
+            marginBlockStart={tagAndFlagBlockMarginBlockStart || 'space040'}
+          />
+        )}
+        {listData && (
+          <StyledUnorderedList
+            overrides={{
+              marker: {
+                size: 'iconSize005',
+                spaceInline: 'space020',
+                stylePreset: 'inkContrast'
+              },
+              marginBlockStart: 'space050',
+              content: {
+                typographyPreset: 'utilityBody010',
+                stylePreset: 'inkContrast'
+              }
+            }}
+          >
+            {listData}
+          </StyledUnorderedList>
         )}
       </CardContent>
     </CardComposable>

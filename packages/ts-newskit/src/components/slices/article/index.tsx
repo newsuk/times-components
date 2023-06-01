@@ -13,7 +13,7 @@ import {
   FullWidthCardMediaMob,
   FullWidthDividerMob
 } from '../shared-styles';
-import { TagAndFlag } from '../shared';
+import { TagAndFlag } from '../shared/tag-and-flag';
 
 type ImageProps = {
   src: string;

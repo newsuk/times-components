@@ -12,60 +12,62 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
         class="css-8jh8ij"
       >
         <div
-          class="css-dl45po"
+          class="css-1fgalmf"
         >
           <div
-            class="css-1qkqv92"
-          />
-          <div
-            class="css-h18yzn"
+            class="css-1sqhgnb"
           >
             <div
-              class="css-13byt3y"
+              class="css-gpke1l"
             >
               <div
-                class="css-13byt3y"
+                class="css-9fndha"
               >
-                <span
-                  class="css-1x1ve0y"
+                <div
+                  class="css-46cej1"
+                  data-testid="tag"
                 >
-                  TAGL1 1
-                </span>
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    TAG
+                  </span>
+                </div>
               </div>
               <a
-                class="css-u57k3c"
-                href="/article1"
+                class="css-10h0i3c"
+                href="#"
               >
                 <span
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-8gj81n"
+                    class="css-1fceh50"
                   >
-                    Article 1
+                    Short title of the card describing the main content
                   </span>
                 </span>
               </a>
               <p
                 class="css-vdfsd1"
               >
-                Lorem ipsum dolor sit amet.
+                Short paragraph description of the article, outlining main story and focus.
               </p>
               <div
-                class="css-13s74dp"
+                class="css-1atazsr"
                 data-testid="tag-and-flag"
               >
                 <a
                   class="css-10d4t8c"
-                  href="/tag1"
+                  href="/"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-17tpekn"
                     >
-                      Tag 1
+                      Tag
                     </span>
                   </span>
                 </a>
@@ -79,9 +81,9 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-64fvyz"
+                  class="css-12zms6j"
                 >
-                  Flag 1
+                  Flag
                 </span>
               </div>
               <ul
@@ -118,41 +120,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     <p
                       class="css-1ja8y7g"
                     >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
-                  >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
+                      Unordered list item
                     </p>
                   </div>
                 </li>
@@ -169,23 +137,15 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             />
           </div>
           <div
-            class="css-h18yzn"
+            class="css-1nw1nne"
           >
             <div
-              class="css-13byt3y"
+              class="css-diffbd"
             >
-              <div
-                class="css-13byt3y"
-              >
-                <span
-                  class="css-1x1ve0y"
-                >
-                  TAGL1 2
-                </span>
-              </div>
               <a
                 class="css-u57k3c"
-                href="/article2"
+                href="#"
+                role="link"
               >
                 <span
                   class="css-17x5lw"
@@ -193,121 +153,104 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <span
                     class="css-65zrxz"
                   >
-                    Article 2
+                    Short title of the card describing the main content
                   </span>
                 </span>
               </a>
-              <p
-                class="css-vdfsd1"
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-obfal1"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-13byt3y"
+          >
+            <a
+              class="css-1bmzwxr"
+              href="/"
+            >
+              <span
+                class="css-17x5lw"
               >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <div
-                class="css-13s74dp"
-                data-testid="tag-and-flag"
-              >
-                <a
-                  class="css-10d4t8c"
-                  href="/tag2"
+                <span
+                  class="css-pwugga"
                 >
-                  <span
-                    class="css-17x5lw"
+                  TAG
+                </span>
+              </span>
+            </a>
+            <div
+              class="css-e0a604"
+            >
+              <div
+                class="css-1sqhgnb"
+              >
+                <div
+                  class="css-gpke1l"
+                >
+                  <a
+                    class="css-gull0f"
+                    href="#"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-17x5lw"
                     >
-                      Tag 2
+                      <span
+                        class="css-65zrxz"
+                      >
+                        Short title of the card describing the main content
+                      </span>
                     </span>
-                  </span>
-                </a>
-                <div
-                  class="css-lew009"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                  </a>
+                  <p
+                    class="css-1nrveqv"
+                  >
+                    Short paragraph description of the article, outlining main story and focus.
+                  </p>
                 </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  Flag 2
-                </span>
               </div>
-              <ul
-                class="css-1dl3yfl"
-                role="list"
+              <div
+                class="css-un10mj"
               >
-                <li
-                  class="css-czt13m"
+                <hr
+                  aria-hidden="true"
+                  class="css-11bei24"
+                  data-testid="divider"
+                />
+              </div>
+              <div
+                class="css-1sqhgnb"
+              >
+                <div
+                  class="css-gpke1l"
                 >
-                  <div
-                    class="css-16r6s3u"
+                  <a
+                    class="css-gull0f"
+                    href="#"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
+                    <span
+                      class="css-17x5lw"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <span
+                        class="css-65zrxz"
                       >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
+                        Short title of the card describing the main content
+                      </span>
+                    </span>
+                  </a>
+                  <p
+                    class="css-1nrveqv"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
-                    </p>
-                  </div>
-                </li>
-              </ul>
+                    Short paragraph description of the article, outlining main story and focus.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -359,7 +302,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-5pczz7"
                     />
                     <img
-                      alt="Saracens an inclusive club? They didn't look out for me"
+                      alt="Sarcacens an inclusive club? They didnt look out for me"
                       class="css-1qgqq71"
                       src="/assets/main_01.jpg"
                     />
@@ -384,14 +327,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     <span
                       class="css-1tplk7g"
                     >
-                      Saracens an inclusive club? They didn't look out for me
+                      Sarcacens an inclusive club? They didnt look out for me
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-vdfsd1"
+                  class="css-1nrveqv"
                 >
-                  Lyon lock Joel Kpoku tells Will Kelleher that he's fired up to face old team — and urges more English stars to move to France
+                  Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
                 </p>
                 <div
                   class="css-1atazsr"
@@ -405,9 +348,9 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-pwugga"
+                        class="css-17tpekn"
                       >
-                        Review
+                        Tag
                       </span>
                     </span>
                   </a>
@@ -421,7 +364,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-64fvyz"
+                    class="css-12zms6j"
                   >
                     4 min read
                   </span>
@@ -477,7 +420,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 >
                   <a
                     class="css-u57k3c"
-                    href="/article/european-cup-winner-mihajlovic-dies"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
                     <span
@@ -486,7 +429,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukemia
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                       </span>
                     </span>
                   </a>
@@ -494,31 +437,8 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-1atazsr"
                     data-testid="tag-and-flag"
                   >
-                    <a
-                      class="css-10d4t8c"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-pwugga"
-                        >
-                          Tag
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-lew009"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
-                      class="css-64fvyz"
+                      class="css-12zms6j"
                     >
                       Flag
                     </span>
@@ -562,7 +482,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 >
                   <a
                     class="css-u57k3c"
-                    href="/article/american-owners-pose-threat-to-english-pyramid"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
                     <span
@@ -571,7 +491,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-65zrxz"
                       >
-                        American owners pose threat to English pyramid
+                        ‘American owners pose threat to English pyramid’
                       </span>
                     </span>
                   </a>
@@ -638,7 +558,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     <span
                       class="css-65zrxz"
                     >
-                      European cup winner Mihajlovic dies aged 53 after battle with leukemia
+                      European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                     </span>
                   </span>
                 </a>
@@ -654,7 +574,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-pwugga"
+                        class="css-17tpekn"
                       >
                         Tag
                       </span>
@@ -670,7 +590,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-64fvyz"
+                    class="css-12zms6j"
                   >
                     Flag1
                   </span>
@@ -791,7 +711,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-pwugga"
+                        class="css-17tpekn"
                       >
                         Tag
                       </span>
@@ -846,7 +766,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     <span
                       class="css-65zrxz"
                     >
-                      Blow for rebel clubs as court says UEFA can block Super League
+                      Blow for rebel clubs as court says Uefa can block Super League
                     </span>
                   </span>
                 </a>
@@ -855,7 +775,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   data-testid="tag-and-flag"
                 >
                   <span
-                    class="css-64fvyz"
+                    class="css-12zms6j"
                   >
                     Flag4
                   </span>
@@ -908,7 +828,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     <span
                       class="css-65zrxz"
                     >
-                      Blow for rebel clubs as court says UEFA can block Super League
+                      Blow for rebel clubs as court says Uefa can block Super League
                     </span>
                   </span>
                 </a>
@@ -924,7 +844,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-pwugga"
+                        class="css-17tpekn"
                       >
                         Tag
                       </span>
@@ -940,7 +860,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-64fvyz"
+                    class="css-12zms6j"
                   >
                     Flag5
                   </span>
@@ -1006,7 +926,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-65zrxz"
                           >
-                            Blow for rebel clubs as court says UEFA can block Super League
+                            Blow for rebel clubs as court says Uefa can block Super League
                           </span>
                         </span>
                       </a>
@@ -1015,7 +935,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         data-testid="tag-and-flag"
                       >
                         <span
-                          class="css-64fvyz"
+                          class="css-12zms6j"
                         >
                           Flag4
                         </span>
@@ -1072,7 +992,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-65zrxz"
                           >
-                            Blow for rebel clubs as court says UEFA can block Super League
+                            Blow for rebel clubs as court says Uefa can block Super League
                           </span>
                         </span>
                       </a>
@@ -1088,7 +1008,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             class="css-17x5lw"
                           >
                             <span
-                              class="css-pwugga"
+                              class="css-17tpekn"
                             >
                               Tag
                             </span>
@@ -1104,7 +1024,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           />
                         </div>
                         <span
-                          class="css-64fvyz"
+                          class="css-12zms6j"
                         >
                           Flag5
                         </span>
@@ -1134,60 +1054,62 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         class="css-8jh8ij"
       >
         <div
-          class="css-dl45po"
+          class="css-1fgalmf"
         >
           <div
-            class="css-1qkqv92"
-          />
-          <div
-            class="css-h18yzn"
+            class="css-1sqhgnb"
           >
             <div
-              class="css-13byt3y"
+              class="css-gpke1l"
             >
               <div
-                class="css-13byt3y"
+                class="css-9fndha"
               >
-                <span
-                  class="css-1x1ve0y"
+                <div
+                  class="css-46cej1"
+                  data-testid="tag"
                 >
-                  TAGL1 1
-                </span>
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    TAG
+                  </span>
+                </div>
               </div>
               <a
-                class="css-u57k3c"
-                href="/article1"
+                class="css-10h0i3c"
+                href="#"
               >
                 <span
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-8gj81n"
+                    class="css-1fceh50"
                   >
-                    Article 1
+                    Short title of the card describing the main content
                   </span>
                 </span>
               </a>
               <p
                 class="css-vdfsd1"
               >
-                Lorem ipsum dolor sit amet.
+                Short paragraph description of the article, outlining main story and focus.
               </p>
               <div
-                class="css-13s74dp"
+                class="css-1atazsr"
                 data-testid="tag-and-flag"
               >
                 <a
                   class="css-10d4t8c"
-                  href="/tag1"
+                  href="/"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-17tpekn"
                     >
-                      Tag 1
+                      Tag
                     </span>
                   </span>
                 </a>
@@ -1201,9 +1123,9 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-64fvyz"
+                  class="css-12zms6j"
                 >
-                  Flag 1
+                  Flag
                 </span>
               </div>
               <ul
@@ -1240,41 +1162,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <p
                       class="css-1ja8y7g"
                     >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
-                  >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
+                      Unordered list item
                     </p>
                   </div>
                 </li>
@@ -1291,23 +1179,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             />
           </div>
           <div
-            class="css-h18yzn"
+            class="css-1nw1nne"
           >
             <div
-              class="css-13byt3y"
+              class="css-diffbd"
             >
-              <div
-                class="css-13byt3y"
-              >
-                <span
-                  class="css-1x1ve0y"
-                >
-                  TAGL1 2
-                </span>
-              </div>
               <a
                 class="css-u57k3c"
-                href="/article2"
+                href="#"
+                role="link"
               >
                 <span
                   class="css-17x5lw"
@@ -1315,121 +1195,104 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-65zrxz"
                   >
-                    Article 2
+                    Short title of the card describing the main content
                   </span>
                 </span>
               </a>
-              <p
-                class="css-vdfsd1"
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-obfal1"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-13byt3y"
+          >
+            <a
+              class="css-1bmzwxr"
+              href="/"
+            >
+              <span
+                class="css-17x5lw"
               >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <div
-                class="css-13s74dp"
-                data-testid="tag-and-flag"
-              >
-                <a
-                  class="css-10d4t8c"
-                  href="/tag2"
+                <span
+                  class="css-pwugga"
                 >
-                  <span
-                    class="css-17x5lw"
+                  TAG
+                </span>
+              </span>
+            </a>
+            <div
+              class="css-e0a604"
+            >
+              <div
+                class="css-1sqhgnb"
+              >
+                <div
+                  class="css-gpke1l"
+                >
+                  <a
+                    class="css-gull0f"
+                    href="#"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-17x5lw"
                     >
-                      Tag 2
+                      <span
+                        class="css-65zrxz"
+                      >
+                        Short title of the card describing the main content
+                      </span>
                     </span>
-                  </span>
-                </a>
-                <div
-                  class="css-lew009"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                  </a>
+                  <p
+                    class="css-1nrveqv"
+                  >
+                    Short paragraph description of the article, outlining main story and focus.
+                  </p>
                 </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  Flag 2
-                </span>
               </div>
-              <ul
-                class="css-1dl3yfl"
-                role="list"
+              <div
+                class="css-un10mj"
               >
-                <li
-                  class="css-czt13m"
+                <hr
+                  aria-hidden="true"
+                  class="css-11bei24"
+                  data-testid="divider"
+                />
+              </div>
+              <div
+                class="css-1sqhgnb"
+              >
+                <div
+                  class="css-gpke1l"
                 >
-                  <div
-                    class="css-16r6s3u"
+                  <a
+                    class="css-gull0f"
+                    href="#"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
+                    <span
+                      class="css-17x5lw"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <span
+                        class="css-65zrxz"
                       >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
+                        Short title of the card describing the main content
+                      </span>
+                    </span>
+                  </a>
+                  <p
+                    class="css-1nrveqv"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
-                    </p>
-                  </div>
-                </li>
-              </ul>
+                    Short paragraph description of the article, outlining main story and focus.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1481,7 +1344,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-5pczz7"
                     />
                     <img
-                      alt="Saracens an inclusive club? They didn't look out for me"
+                      alt="Sarcacens an inclusive club? They didnt look out for me"
                       class="css-1qgqq71"
                       src="/assets/main_01.jpg"
                     />
@@ -1506,14 +1369,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-1tplk7g"
                     >
-                      Saracens an inclusive club? They didn't look out for me
+                      Sarcacens an inclusive club? They didnt look out for me
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-vdfsd1"
+                  class="css-1nrveqv"
                 >
-                  Lyon lock Joel Kpoku tells Will Kelleher that he's fired up to face old team — and urges more English stars to move to France
+                  Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
                 </p>
                 <div
                   class="css-1atazsr"
@@ -1527,9 +1390,9 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-pwugga"
+                        class="css-17tpekn"
                       >
-                        Review
+                        Tag
                       </span>
                     </span>
                   </a>
@@ -1543,7 +1406,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     />
                   </div>
                   <span
-                    class="css-64fvyz"
+                    class="css-12zms6j"
                   >
                     4 min read
                   </span>
@@ -1599,7 +1462,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 >
                   <a
                     class="css-u57k3c"
-                    href="/article/european-cup-winner-mihajlovic-dies"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
                     <span
@@ -1608,7 +1471,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukemia
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                       </span>
                     </span>
                   </a>
@@ -1616,31 +1479,8 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-1atazsr"
                     data-testid="tag-and-flag"
                   >
-                    <a
-                      class="css-10d4t8c"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-pwugga"
-                        >
-                          Tag
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-lew009"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
-                      class="css-64fvyz"
+                      class="css-12zms6j"
                     >
                       Flag
                     </span>
@@ -1684,7 +1524,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 >
                   <a
                     class="css-u57k3c"
-                    href="/article/american-owners-pose-threat-to-english-pyramid"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
                     <span
@@ -1693,7 +1533,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        American owners pose threat to English pyramid
+                        ‘American owners pose threat to English pyramid’
                       </span>
                     </span>
                   </a>
@@ -1757,7 +1597,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-65zrxz"
                   >
-                    European cup winner Mihajlovic dies aged 53 after battle with leukemia
+                    European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                   </span>
                 </span>
               </a>
@@ -1773,7 +1613,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-17tpekn"
                     >
                       Tag
                     </span>
@@ -1789,7 +1629,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-64fvyz"
+                  class="css-12zms6j"
                 >
                   Flag1
                 </span>
@@ -1894,7 +1734,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-17tpekn"
                     >
                       Tag
                     </span>
@@ -1942,7 +1782,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          Blow for rebel clubs as court says UEFA can block Super League
+                          Blow for rebel clubs as court says Uefa can block Super League
                         </span>
                       </span>
                     </a>
@@ -1951,7 +1791,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       data-testid="tag-and-flag"
                     >
                       <span
-                        class="css-64fvyz"
+                        class="css-12zms6j"
                       >
                         Flag4
                       </span>
@@ -1988,7 +1828,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          Blow for rebel clubs as court says UEFA can block Super League
+                          Blow for rebel clubs as court says Uefa can block Super League
                         </span>
                       </span>
                     </a>
@@ -2004,7 +1844,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           class="css-17x5lw"
                         >
                           <span
-                            class="css-pwugga"
+                            class="css-17tpekn"
                           >
                             Tag
                           </span>
@@ -2020,7 +1860,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         />
                       </div>
                       <span
-                        class="css-64fvyz"
+                        class="css-12zms6j"
                       >
                         Flag5
                       </span>
@@ -2037,7 +1877,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
 </DocumentFragment>
 `;
 
-exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
+exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "sm" 1`] = `
 <DocumentFragment>
   <div
     class="css-8atxkm"
@@ -2049,60 +1889,62 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         class="css-8jh8ij"
       >
         <div
-          class="css-dl45po"
+          class="css-1fgalmf"
         >
           <div
-            class="css-1qkqv92"
-          />
-          <div
-            class="css-h18yzn"
+            class="css-1sqhgnb"
           >
             <div
-              class="css-13byt3y"
+              class="css-gpke1l"
             >
               <div
-                class="css-13byt3y"
+                class="css-9fndha"
               >
-                <span
-                  class="css-1x1ve0y"
+                <div
+                  class="css-46cej1"
+                  data-testid="tag"
                 >
-                  TAGL1 1
-                </span>
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    TAG
+                  </span>
+                </div>
               </div>
               <a
-                class="css-u57k3c"
-                href="/article1"
+                class="css-10h0i3c"
+                href="#"
               >
                 <span
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-8gj81n"
+                    class="css-d9g6wh"
                   >
-                    Article 1
+                    Short title of the card describing the main content
                   </span>
                 </span>
               </a>
               <p
                 class="css-vdfsd1"
               >
-                Lorem ipsum dolor sit amet.
+                Short paragraph description of the article, outlining main story and focus.
               </p>
               <div
-                class="css-13s74dp"
+                class="css-1atazsr"
                 data-testid="tag-and-flag"
               >
                 <a
                   class="css-10d4t8c"
-                  href="/tag1"
+                  href="/"
                 >
                   <span
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-17tpekn"
                     >
-                      Tag 1
+                      Tag
                     </span>
                   </span>
                 </a>
@@ -2116,9 +1958,9 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-64fvyz"
+                  class="css-12zms6j"
                 >
-                  Flag 1
+                  Flag
                 </span>
               </div>
               <ul
@@ -2155,41 +1997,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <p
                       class="css-1ja8y7g"
                     >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
-                  >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
+                      Unordered list item
                     </p>
                   </div>
                 </li>
@@ -2206,23 +2014,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             />
           </div>
           <div
-            class="css-h18yzn"
+            class="css-1nw1nne"
           >
             <div
-              class="css-13byt3y"
+              class="css-diffbd"
             >
-              <div
-                class="css-13byt3y"
-              >
-                <span
-                  class="css-1x1ve0y"
-                >
-                  TAGL1 2
-                </span>
-              </div>
               <a
                 class="css-u57k3c"
-                href="/article2"
+                href="#"
+                role="link"
               >
                 <span
                   class="css-17x5lw"
@@ -2230,121 +2030,104 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-65zrxz"
                   >
-                    Article 2
+                    Short title of the card describing the main content
                   </span>
                 </span>
               </a>
-              <p
-                class="css-vdfsd1"
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-obfal1"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-13byt3y"
+          >
+            <a
+              class="css-1bmzwxr"
+              href="/"
+            >
+              <span
+                class="css-17x5lw"
               >
-                Lorem ipsum dolor sit amet.
-              </p>
-              <div
-                class="css-13s74dp"
-                data-testid="tag-and-flag"
-              >
-                <a
-                  class="css-10d4t8c"
-                  href="/tag2"
+                <span
+                  class="css-pwugga"
                 >
-                  <span
-                    class="css-17x5lw"
+                  TAG
+                </span>
+              </span>
+            </a>
+            <div
+              class="css-e0a604"
+            >
+              <div
+                class="css-1sqhgnb"
+              >
+                <div
+                  class="css-gpke1l"
+                >
+                  <a
+                    class="css-gull0f"
+                    href="#"
                   >
                     <span
-                      class="css-pwugga"
+                      class="css-17x5lw"
                     >
-                      Tag 2
+                      <span
+                        class="css-65zrxz"
+                      >
+                        Short title of the card describing the main content
+                      </span>
                     </span>
-                  </span>
-                </a>
-                <div
-                  class="css-lew009"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                  </a>
+                  <p
+                    class="css-1nrveqv"
+                  >
+                    Short paragraph description of the article, outlining main story and focus.
+                  </p>
                 </div>
-                <span
-                  class="css-64fvyz"
-                >
-                  Flag 2
-                </span>
               </div>
-              <ul
-                class="css-1dl3yfl"
-                role="list"
+              <div
+                class="css-un10mj"
               >
-                <li
-                  class="css-czt13m"
+                <hr
+                  aria-hidden="true"
+                  class="css-11bei24"
+                  data-testid="divider"
+                />
+              </div>
+              <div
+                class="css-1sqhgnb"
+              >
+                <div
+                  class="css-gpke1l"
                 >
-                  <div
-                    class="css-16r6s3u"
+                  <a
+                    class="css-gull0f"
+                    href="#"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
+                    <span
+                      class="css-17x5lw"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
+                      <span
+                        class="css-65zrxz"
                       >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 1
-                    </p>
-                  </div>
-                </li>
-                <li
-                  class="css-czt13m"
-                >
-                  <div
-                    class="css-16r6s3u"
+                        Short title of the card describing the main content
+                      </span>
+                    </span>
+                  </a>
+                  <p
+                    class="css-1nrveqv"
                   >
-                    <div
-                      aria-hidden="true"
-                      class="css-wmopxz"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                        />
-                      </svg>
-                    </div>
-                    <p
-                      class="css-1ja8y7g"
-                    >
-                      List item 2
-                    </p>
-                  </div>
-                </li>
-              </ul>
+                    Short paragraph description of the article, outlining main story and focus.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -2396,7 +2179,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-5pczz7"
                     />
                     <img
-                      alt="Saracens an inclusive club? They didn't look out for me"
+                      alt="Sarcacens an inclusive club? They didnt look out for me"
                       class="css-1qgqq71"
                       src="/assets/main_01.jpg"
                     />
@@ -2421,14 +2204,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-1tplk7g"
                     >
-                      Saracens an inclusive club? They didn't look out for me
+                      Sarcacens an inclusive club? They didnt look out for me
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-vdfsd1"
+                  class="css-1nrveqv"
                 >
-                  Lyon lock Joel Kpoku tells Will Kelleher that he's fired up to face old team — and urges more English stars to move to France
+                  Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
                 </p>
                 <div
                   class="css-1atazsr"
@@ -2442,9 +2225,9 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-pwugga"
+                        class="css-17tpekn"
                       >
-                        Review
+                        Tag
                       </span>
                     </span>
                   </a>
@@ -2458,7 +2241,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     />
                   </div>
                   <span
-                    class="css-64fvyz"
+                    class="css-12zms6j"
                   >
                     4 min read
                   </span>
@@ -2511,7 +2294,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 >
                   <a
                     class="css-u57k3c"
-                    href="/article/european-cup-winner-mihajlovic-dies"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
                     <span
@@ -2520,7 +2303,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukemia
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                       </span>
                     </span>
                   </a>
@@ -2528,31 +2311,8 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-1atazsr"
                     data-testid="tag-and-flag"
                   >
-                    <a
-                      class="css-10d4t8c"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-pwugga"
-                        >
-                          Tag
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-lew009"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
-                      class="css-64fvyz"
+                      class="css-12zms6j"
                     >
                       Flag
                     </span>
@@ -2584,7 +2344,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 >
                   <a
                     class="css-u57k3c"
-                    href="/article/american-owners-pose-threat-to-english-pyramid"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
                     <span
@@ -2593,7 +2353,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        American owners pose threat to English pyramid
+                        ‘American owners pose threat to English pyramid’
                       </span>
                     </span>
                   </a>
@@ -2664,7 +2424,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukemia
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                       </span>
                     </span>
                   </a>
@@ -2680,7 +2440,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-pwugga"
+                          class="css-17tpekn"
                         >
                           Tag
                         </span>
@@ -2696,7 +2456,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-64fvyz"
+                      class="css-12zms6j"
                     >
                       Flag1
                     </span>
@@ -2801,7 +2561,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-pwugga"
+                          class="css-17tpekn"
                         >
                           Tag
                         </span>
@@ -2848,7 +2608,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        Blow for rebel clubs as court says UEFA can block Super League
+                        Blow for rebel clubs as court says Uefa can block Super League
                       </span>
                     </span>
                   </a>
@@ -2857,7 +2617,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-64fvyz"
+                      class="css-12zms6j"
                     >
                       Flag4
                     </span>
@@ -2902,7 +2662,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        Blow for rebel clubs as court says UEFA can block Super League
+                        Blow for rebel clubs as court says Uefa can block Super League
                       </span>
                     </span>
                   </a>
@@ -2918,7 +2678,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-pwugga"
+                          class="css-17tpekn"
                         >
                           Tag
                         </span>
@@ -2934,7 +2694,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-64fvyz"
+                      class="css-12zms6j"
                     >
                       Flag5
                     </span>
@@ -2998,7 +2758,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          Blow for rebel clubs as court says UEFA can block Super League
+                          Blow for rebel clubs as court says Uefa can block Super League
                         </span>
                       </span>
                     </a>
@@ -3007,7 +2767,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       data-testid="tag-and-flag"
                     >
                       <span
-                        class="css-64fvyz"
+                        class="css-12zms6j"
                       >
                         Flag4
                       </span>
@@ -3051,7 +2811,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          Blow for rebel clubs as court says UEFA can block Super League
+                          Blow for rebel clubs as court says Uefa can block Super League
                         </span>
                       </span>
                     </a>
@@ -3067,7 +2827,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           class="css-17x5lw"
                         >
                           <span
-                            class="css-pwugga"
+                            class="css-17tpekn"
                           >
                             Tag
                           </span>
@@ -3083,7 +2843,990 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         />
                       </div>
                       <span
-                        class="css-64fvyz"
+                        class="css-12zms6j"
+                      >
+                        Flag5
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
+<DocumentFragment>
+  <div
+    class="css-8atxkm"
+  >
+    <div
+      class="css-179k3k0"
+    >
+      <div
+        class="css-8jh8ij"
+      >
+        <div
+          class="css-1fgalmf"
+        >
+          <div
+            class="css-1sqhgnb"
+          >
+            <div
+              class="css-gpke1l"
+            >
+              <div
+                class="css-9fndha"
+              >
+                <div
+                  class="css-46cej1"
+                  data-testid="tag"
+                >
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    TAG
+                  </span>
+                </div>
+              </div>
+              <a
+                class="css-10h0i3c"
+                href="#"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-8gj81n"
+                  >
+                    Short title of the card describing the main content
+                  </span>
+                </span>
+              </a>
+              <p
+                class="css-vdfsd1"
+              >
+                Short paragraph description of the article, outlining main story and focus.
+              </p>
+              <div
+                class="css-1atazsr"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-10d4t8c"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-17tpekn"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-12zms6j"
+                >
+                  Flag
+                </span>
+              </div>
+              <ul
+                class="css-1dl3yfl"
+                role="list"
+              >
+                <li
+                  class="css-czt13m"
+                >
+                  <div
+                    class="css-16r6s3u"
+                  >
+                    <div
+                      aria-hidden="true"
+                      class="css-wmopxz"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="css-z5ltm7-EmotionIconBase ex0cdmw0"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+                        />
+                      </svg>
+                    </div>
+                    <p
+                      class="css-1ja8y7g"
+                    >
+                      Unordered list item
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-11bei24"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              class="css-diffbd"
+            >
+              <a
+                class="css-u57k3c"
+                href="#"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-65zrxz"
+                  >
+                    Short title of the card describing the main content
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-obfal1"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-13byt3y"
+          >
+            <a
+              class="css-1bmzwxr"
+              href="/"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-pwugga"
+                >
+                  TAG
+                </span>
+              </span>
+            </a>
+            <div
+              class="css-e0a604"
+            >
+              <div
+                class="css-1sqhgnb"
+              >
+                <div
+                  class="css-gpke1l"
+                >
+                  <a
+                    class="css-gull0f"
+                    href="#"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        Short title of the card describing the main content
+                      </span>
+                    </span>
+                  </a>
+                  <p
+                    class="css-1nrveqv"
+                  >
+                    Short paragraph description of the article, outlining main story and focus.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="css-un10mj"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-11bei24"
+                  data-testid="divider"
+                />
+              </div>
+              <div
+                class="css-1sqhgnb"
+              >
+                <div
+                  class="css-gpke1l"
+                >
+                  <a
+                    class="css-gull0f"
+                    href="#"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        Short title of the card describing the main content
+                      </span>
+                    </span>
+                  </a>
+                  <p
+                    class="css-1nrveqv"
+                  >
+                    Short paragraph description of the article, outlining main story and focus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-hbf6qc"
+      >
+        <div
+          class="css-gre9re"
+        >
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+        </div>
+        <div
+          class="css-13byt3y"
+        >
+          <div
+            class="css-1fgalmf"
+          >
+            <div
+              class="css-15edd2j"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-1bwjg6b"
+                data-testid="divider"
+              />
+            </div>
+            <div
+              class="css-1sqhgnb"
+            >
+              <div
+                class="css-1l8qede"
+              >
+                <div
+                  class="css-uxw9nr"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="Sarcacens an inclusive club? They didnt look out for me"
+                      class="css-1qgqq71"
+                      src="/assets/main_01.jpg"
+                    />
+                  </picture>
+                </div>
+                <p
+                  class="css-9pk24b"
+                >
+                  Credit
+                </p>
+              </div>
+              <div
+                class="css-gpke1l"
+              >
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-1tplk7g"
+                    >
+                      Sarcacens an inclusive club? They didnt look out for me
+                    </span>
+                  </span>
+                </a>
+                <p
+                  class="css-1nrveqv"
+                >
+                  Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
+                </p>
+                <div
+                  class="css-1atazsr"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-10d4t8c"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-17tpekn"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-12zms6j"
+                  >
+                    4 min read
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-11l110t"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-9fhm4e"
+                data-testid="divider"
+              />
+            </div>
+          </div>
+          <div
+            class="css-11l110t"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-obfal1"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-194m366"
+          >
+            <div
+              class="css-1fgalmf"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-tj8oo8"
+                >
+                  <div
+                    class="css-1qkqv92"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-exb5cr"
+                      data-testid="divider"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="css-diffbd"
+                >
+                  <a
+                    class="css-u57k3c"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-1atazsr"
+                    data-testid="tag-and-flag"
+                  >
+                    <span
+                      class="css-12zms6j"
+                    >
+                      Flag
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-1fgalmf"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-tj8oo8"
+                >
+                  <div
+                    class="css-1qkqv92"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-exb5cr"
+                      data-testid="divider"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="css-diffbd"
+                >
+                  <a
+                    class="css-u57k3c"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        ‘American owners pose threat to English pyramid’
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-47dioy"
+      >
+        <div
+          class="css-1osy5lm"
+        >
+          <div
+            class="css-1qkqv92"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+        </div>
+        <div
+          class="css-1r18k3i"
+        >
+          <div
+            class="css-6uqogc"
+            data-testid="scroll-container"
+          >
+            <div
+              class="css-35mzo8"
+              data-testid="article-container"
+              style="position: relative;"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="This is ALT Text"
+                      class="css-1qgqq71"
+                      src="/assets/small_01.jpg"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-diffbd"
+                >
+                  <a
+                    class="css-u57k3c"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-1atazsr"
+                    data-testid="tag-and-flag"
+                  >
+                    <a
+                      class="css-10d4t8c"
+                      href="/"
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-17tpekn"
+                        >
+                          Tag
+                        </span>
+                      </span>
+                    </a>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-12zms6j"
+                    >
+                      Flag1
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <hr
+                aria-hidden="true"
+                class="css-13rcg9f"
+                data-testid="divider"
+              />
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="This is ALT Text"
+                      class="css-1qgqq71"
+                      src="/assets/small_02.jpg"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-diffbd"
+                >
+                  <a
+                    class="css-u57k3c"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        American owners pose threat to English pyramid
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <hr
+                aria-hidden="true"
+                class="css-13rcg9f"
+                data-testid="divider"
+              />
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="This is ALT Text"
+                      class="css-1qgqq71"
+                      src="/assets/small_03.jpg"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-diffbd"
+                >
+                  <a
+                    class="css-u57k3c"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-1atazsr"
+                    data-testid="tag-and-flag"
+                  >
+                    <a
+                      class="css-10d4t8c"
+                      href="/"
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-17tpekn"
+                        >
+                          Tag
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <hr
+                aria-hidden="true"
+                class="css-13rcg9f"
+                data-testid="divider"
+              />
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="This is ALT Text"
+                      class="css-1qgqq71"
+                      src="/assets/small_04.jpg"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-diffbd"
+                >
+                  <a
+                    class="css-u57k3c"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        Blow for rebel clubs as court says Uefa can block Super League
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-1atazsr"
+                    data-testid="tag-and-flag"
+                  >
+                    <span
+                      class="css-12zms6j"
+                    >
+                      Flag4
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <hr
+                aria-hidden="true"
+                class="css-13rcg9f"
+                data-testid="divider"
+              />
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="This is ALT Text"
+                      class="css-1qgqq71"
+                      src="/assets/small_04.jpg"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-diffbd"
+                >
+                  <a
+                    class="css-u57k3c"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        Blow for rebel clubs as court says Uefa can block Super League
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-1atazsr"
+                    data-testid="tag-and-flag"
+                  >
+                    <a
+                      class="css-10d4t8c"
+                      href="/"
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-17tpekn"
+                        >
+                          Tag
+                        </span>
+                      </span>
+                    </a>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-12zms6j"
+                    >
+                      Flag5
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-13fsx86"
+        >
+          <div
+            class="css-11l110t"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1f0staz"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-16w3nt8"
+          >
+            <div
+              class="css-194m366"
+            >
+              <div
+                class="css-1fgalmf"
+              >
+                <div
+                  class="css-1nw1nne"
+                >
+                  <div
+                    class="css-1kwj960"
+                  >
+                    <picture
+                      class="css-zp0elg"
+                    >
+                      <div
+                        class="css-5pczz7"
+                      />
+                      <img
+                        alt="This is ALT Text"
+                        class="css-1qgqq71"
+                        src="/assets/small_04.jpg"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="css-diffbd"
+                  >
+                    <a
+                      class="css-u57k3c"
+                      href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                      role="link"
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-65zrxz"
+                        >
+                          Blow for rebel clubs as court says Uefa can block Super League
+                        </span>
+                      </span>
+                    </a>
+                    <div
+                      class="css-1atazsr"
+                      data-testid="tag-and-flag"
+                    >
+                      <span
+                        class="css-12zms6j"
+                      >
+                        Flag4
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-1fgalmf"
+              >
+                <div
+                  class="css-1nw1nne"
+                >
+                  <div
+                    class="css-1kwj960"
+                  >
+                    <picture
+                      class="css-zp0elg"
+                    >
+                      <div
+                        class="css-5pczz7"
+                      />
+                      <img
+                        alt="This is ALT Text"
+                        class="css-1qgqq71"
+                        src="/assets/small_04.jpg"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="css-diffbd"
+                  >
+                    <a
+                      class="css-u57k3c"
+                      href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                      role="link"
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-65zrxz"
+                        >
+                          Blow for rebel clubs as court says Uefa can block Super League
+                        </span>
+                      </span>
+                    </a>
+                    <div
+                      class="css-1atazsr"
+                      data-testid="tag-and-flag"
+                    >
+                      <a
+                        class="css-10d4t8c"
+                        href="/"
+                      >
+                        <span
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-17tpekn"
+                          >
+                            Tag
+                          </span>
+                        </span>
+                      </a>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                      <span
+                        class="css-12zms6j"
                       >
                         Flag5
                       </span>

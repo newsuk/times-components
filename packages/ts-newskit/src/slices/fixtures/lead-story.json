@@ -76,34 +76,37 @@
     }
   ],
 
-  "largeArticles": [
-    {
-      "heading": "Short title of the card describing the main content",
-      "paragraph": "Short paragraph description of the article, outlining main story and focus.",
-      "tag": {
-        "label": "Tag",
-        "href": "/"
+  "articlesWithUnorderedList": {
+    "tagL1": "TAG",
+    "headline": "Short title of the card describing the main content",
+    "summary": "Short paragraph description of the article, outlining main story and focus.",
+    "tag": {
+      "label": "Tag",
+      "href": "/"
+    },
+    "flag": "Flag",
+    "url": "#",
+    "listData": ["Unordered list item"]
+  },
+  "singleArticle": {
+    "title": "Short title of the card describing the main content",
+    "url": "#"
+  },
+  "groupedArticles": {
+    "tagL1": "TAG",
+    "articles": [
+      {
+        "headline": "Short title of the card describing the main content",
+        "summary": "Short paragraph description of the article, outlining main story and focus.",
+        "url": "#"
       },
-      "tagL1": "TAG",
-      "url": "#",
-      "flag": "Flag",
-      "listData": ["Unordered list item"]
-    },
-    {
-      "heading": "Short title of the card describing the main content"
-    },
-    {
-      "heading": "Short title of the card describing the main content",
-      "paragraph": "Short paragraph description of the article, outlining main story and focus.",
-      "url": "#",
-      "tagL1": "TAG"
-    },
-    {
-      "heading": "Short title of the card describing the main content",
-      "paragraph": "Short paragraph description of the article, outlining main story and focus.",
-      "url": "#"
-    }
-  ],
+      {
+        "headline": "Short title of the card describing the main content",
+        "summary": "Short paragraph description of the article, outlining main story and focus.",
+        "url": "#"
+      }
+    ]
+  },
   "smallArticles": [
     {
       "image": {
