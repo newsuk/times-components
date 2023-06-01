@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.66.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.65.16...@times-components/article-main-comment@2.66.0) (2023-06-01)
+
+
+### Features
+
+* **TMRX-1266:** update schema to have sections listed under keywords ([#3384](https://github.com/newsuk/times-components/issues/3384)) ([82b3aff](https://github.com/newsuk/times-components/commit/82b3aff7c4c481a0a5437322ea904c0e3376ca95))
+
+
+
+
+
 ## [2.65.16](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.65.15...@times-components/article-main-comment@2.65.16) (2023-05-25)
 
 **Note:** Version bump only for package @times-components/article-main-comment
