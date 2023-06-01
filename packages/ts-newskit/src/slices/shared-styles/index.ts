@@ -10,8 +10,8 @@ import {
 export const CellNoMargin = styled(Cell)`
   & {
     margin-top: 0;
+    padding: 0 16px;
   }
-  padding: 0 16px !important;
 `;
 
 const setBlockMargin = (space: string) => ({ marginBlockStart: `${space}` });
