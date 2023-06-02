@@ -1,12 +1,4 @@
-import {
-  Block,
-  Cell,
-  Divider,
-  Grid,
-  Hidden,
-  useBreakpointKey,
-  Visible
-} from 'newskit';
+import { Block, Divider, Hidden, useBreakpointKey, Visible } from 'newskit';
 import React from 'react';
 import { CommentCardProps } from '../../components/slices/comment-card';
 import {
@@ -21,10 +13,13 @@ import { ArticleProps } from '../../components/slices/article';
 import {
   LeadStoryDivider,
   LeadStoryCell,
-  CellNoMargin
+  CellNoMargin,
+  CellWithCustomPadding
 } from '../shared-styles';
+
 import { CommentStack } from './comment-stack';
 import { ArticleStack } from './article-stack';
+import { CustomGridLayout } from '../shared/grid-layout';
 
 export interface ContentBucket1Props {
   section: SliceHeaderProps;
@@ -47,12 +42,12 @@ export const ContentBucket1 = ({
   };
 
   return (
-    <Grid xsMargin="space045" mdMargin="space050">
-      <Cell xs={12}>
+    <CustomGridLayout>
+      <CellWithCustomPadding xs={12}>
         <SliceHeader {...section} />
-      </Cell>
+      </CellWithCustomPadding>
       <LeadStoryCell xs={12} lg={9} xl={8}>
-        <Block marginInlineEnd={{ xs: 'space000', lg: 'space020' }}>
+        <Block>
           <Visible lg xl>
             <LeadStoryDivider
               overrides={{ stylePreset: 'lightDivider' }}
@@ -62,7 +57,7 @@ export const ContentBucket1 = ({
           </Visible>
           <LeadArticle {...modifiedLeadArticle} />
         </Block>
-        <Block marginInlineEnd={{ xs: 'space000', lg: 'space020' }}>
+        <Block>
           <Hidden md>
             <CommentStack comments={comments} />
           </Hidden>
@@ -84,6 +79,6 @@ export const ContentBucket1 = ({
           <CommentStack comments={comments} />
         </CellNoMargin>
       </Visible>
-    </Grid>
+    </CustomGridLayout>
   );
 };

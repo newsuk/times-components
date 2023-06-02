@@ -27,7 +27,7 @@ export const ArticleStack = ({
     typographyPreset: 'editorialHeadline020'
   }));
   const articleGridVertical = (
-    <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space030' }}>
+    <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space040' }}>
       {modifiedVerticalArticles.map(
         (article: LeadArticleProps, articleIndex, articleArr) => {
           const articleBorder = breakpoint !== 'xs' &&
@@ -65,7 +65,7 @@ export const ArticleStack = ({
   );
 
   const articleStackHorizontal = (
-    <GridLayout>
+    <GridLayout columns={{ md: '1fr 1px' }} columnGap={{ md: 'space040' }}>
       {modifiredHorizontalArticles.map(
         (article: LeadArticleProps, articleIndex: number) => {
           const articleBorder = articleIndex !== 0 && (
@@ -82,6 +82,12 @@ export const ArticleStack = ({
                 <FullWidthDividerMob>{articleBorder}</FullWidthDividerMob>
                 <LeadArticle {...article} />
               </Block>
+              <Divider
+                overrides={{
+                  stylePreset: 'lightDivider'
+                }}
+                vertical
+              />
             </React.Fragment>
           );
         }
@@ -91,16 +97,10 @@ export const ArticleStack = ({
 
   return (
     <GridLayout
-      columns={{ md: '1fr 1px 2fr ', xs: '1fr' }}
-      columnGap={{ md: 'space030' }}
+      columns={{ md: '3fr 5fr ', xs: '1fr' }}
+      columnGap={{ md: 'space040' }}
     >
       {articleStackHorizontal}
-      <Divider
-        overrides={{
-          stylePreset: 'lightDivider'
-        }}
-        vertical
-      />
       {articleGridVertical}
     </GridLayout>
   );

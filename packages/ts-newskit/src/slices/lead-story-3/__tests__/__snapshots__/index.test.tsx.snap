@@ -6,10 +6,10 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
     class="css-8atxkm"
   >
     <div
-      class="css-146arns"
+      class="css-179k3k0"
     >
       <div
-        class="css-1imst2"
+        class="css-8jh8ij"
       >
         <div
           class="css-dl45po"
@@ -300,7 +300,7 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="css-s1w7dc"
+        class="css-hbf6qc"
       >
         <div
           class="css-gre9re"
@@ -316,7 +316,7 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="css-3hmgqa"
+          class="css-13byt3y"
         >
           <div
             class="css-1fgalmf"
@@ -326,7 +326,7 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-16fyx8h"
+                class="css-1bwjg6b"
                 data-testid="divider"
               />
             </div>
@@ -415,7 +415,7 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-85egwf"
+                class="css-9fhm4e"
                 data-testid="divider"
               />
             </div>
@@ -423,7 +423,7 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="css-s0ahbd"
+        class="css-1gxwbub"
       >
         <div
           class="css-1osy5lm"
@@ -969,10 +969,10 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
     class="css-8atxkm"
   >
     <div
-      class="css-146arns"
+      class="css-179k3k0"
     >
       <div
-        class="css-1imst2"
+        class="css-8jh8ij"
       >
         <div
           class="css-dl45po"
@@ -1263,7 +1263,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
         </div>
       </div>
       <div
-        class="css-s1w7dc"
+        class="css-hbf6qc"
       >
         <div
           class="css-gre9re"
@@ -1279,7 +1279,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
           </div>
         </div>
         <div
-          class="css-3hmgqa"
+          class="css-13byt3y"
         >
           <div
             class="css-1fgalmf"
@@ -1289,7 +1289,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
             >
               <hr
                 aria-hidden="true"
-                class="css-16fyx8h"
+                class="css-1bwjg6b"
                 data-testid="divider"
               />
             </div>
@@ -1378,7 +1378,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
             >
               <hr
                 aria-hidden="true"
-                class="css-85egwf"
+                class="css-9fhm4e"
                 data-testid="divider"
               />
             </div>
@@ -1386,7 +1386,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
         </div>
       </div>
       <div
-        class="css-s0ahbd"
+        class="css-1gxwbub"
       >
         <div
           class="css-1osy5lm"
@@ -1725,10 +1725,10 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
     class="css-8atxkm"
   >
     <div
-      class="css-146arns"
+      class="css-179k3k0"
     >
       <div
-        class="css-1imst2"
+        class="css-8jh8ij"
       >
         <div
           class="css-dl45po"
@@ -2019,7 +2019,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
         </div>
       </div>
       <div
-        class="css-s1w7dc"
+        class="css-hbf6qc"
       >
         <div
           class="css-gre9re"
@@ -2035,7 +2035,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
           </div>
         </div>
         <div
-          class="css-3hmgqa"
+          class="css-13byt3y"
         >
           <div
             class="css-1fgalmf"
@@ -2045,7 +2045,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
             >
               <hr
                 aria-hidden="true"
-                class="css-16fyx8h"
+                class="css-1bwjg6b"
                 data-testid="divider"
               />
             </div>
@@ -2134,7 +2134,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
             >
               <hr
                 aria-hidden="true"
-                class="css-85egwf"
+                class="css-9fhm4e"
                 data-testid="divider"
               />
             </div>
@@ -2142,7 +2142,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
         </div>
       </div>
       <div
-        class="css-1dj4shb"
+        class="css-47dioy"
       >
         <div
           class="css-1osy5lm"

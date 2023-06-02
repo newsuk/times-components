@@ -2,7 +2,6 @@ import { Meta, Story, Props } from '@storybook/addon-docs'
 import { TCThemeProvider } from '../../../utils/index.tsx';
 import { PuzzlesWebLightTheme } from '../../../theme';
 import { BreakoutSection } from './index';
-import { breakoutItems } from './fixtures/breakoutItems.json'
 
 <Meta
   title="Newskit Components/Puzzles/BreakoutSection"
@@ -16,12 +15,8 @@ The `BreakoutSection` component is used to display a list of available challenge
 <Props of={BreakoutSection} />
 
 ## Code Example
-`<BreakoutSection
-  data={data}
-/>
+`<BreakoutSection />
 `
-
-An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the BreakoutSection component.
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
@@ -32,6 +27,6 @@ export const BreakoutSectionStory = ({ data }) => (
   </TCThemeProvider>
 );
 
-<Story name="BreakoutSection" args={{ data: breakoutItems }}>
+<Story name="BreakoutSection">
   {BreakoutSectionStory.bind({})}
 </Story>

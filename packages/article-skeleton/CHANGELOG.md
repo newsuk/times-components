@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.101.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.100.0...@times-components/article-skeleton@1.101.0) (2023-06-01)
+
+
+### Features
+
+* **TMR-1147:** revert head product id ([#3381](https://github.com/newsuk/times-components/issues/3381)) ([4979e88](https://github.com/newsuk/times-components/commit/4979e884bc21e3d4074092b4562a3ebdc6941da8))
+
+
+
+
+
+# [1.100.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.99.1...@times-components/article-skeleton@1.100.0) (2023-06-01)
+
+
+### Features
+
+* **TMRX-1266:** update schema to have sections listed under keywords ([#3384](https://github.com/newsuk/times-components/issues/3384)) ([82b3aff](https://github.com/newsuk/times-components/commit/82b3aff7c4c481a0a5437322ea904c0e3376ca95))
+
+
+
+
+
 ## [1.99.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.99.0...@times-components/article-skeleton@1.99.1) (2023-05-15)
 
 **Note:** Version bump only for package @times-components/article-skeleton

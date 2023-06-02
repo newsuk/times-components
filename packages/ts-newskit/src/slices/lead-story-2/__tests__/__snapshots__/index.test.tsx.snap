@@ -6,20 +6,20 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
     class="css-8atxkm"
   >
     <div
-      class="css-146arns"
+      class="css-179k3k0"
     >
       <div
-        class="css-1oqkk4f"
+        class="css-tsyw8u"
       >
         <div
-          class="css-3hmgqa"
+          class="css-13byt3y"
         >
           <div
             class="css-15edd2j"
           >
             <hr
               aria-hidden="true"
-              class="css-16fyx8h"
+              class="css-1bwjg6b"
               data-testid="divider"
             />
           </div>
@@ -114,10 +114,10 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
             data-testid="divider"
           />
           <div
-            class="css-vq63er"
+            class="css-m6erw9"
           >
             <div
-              class="css-e0a604"
+              class="css-14odj7m"
             >
               <div
                 class="css-13byt3y"
@@ -186,6 +186,11 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                   </div>
                 </div>
               </div>
+              <hr
+                aria-hidden="true"
+                class="css-13rcg9f"
+                data-testid="divider"
+              />
               <div
                 class="css-13byt3y"
               >
@@ -259,14 +264,14 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                   </div>
                 </div>
               </div>
+              <hr
+                aria-hidden="true"
+                class="css-13rcg9f"
+                data-testid="divider"
+              />
             </div>
-            <hr
-              aria-hidden="true"
-              class="css-13rcg9f"
-              data-testid="divider"
-            />
             <div
-              class="css-194m366"
+              class="css-1fw9bkp"
             >
               <div
                 class="css-13byt3y"
@@ -482,7 +487,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="css-s0ahbd"
+        class="css-1gxwbub"
       >
         <div
           class="css-1osy5lm"
@@ -1028,20 +1033,20 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
     class="css-8atxkm"
   >
     <div
-      class="css-146arns"
+      class="css-179k3k0"
     >
       <div
-        class="css-1oqkk4f"
+        class="css-tsyw8u"
       >
         <div
-          class="css-3hmgqa"
+          class="css-13byt3y"
         >
           <div
             class="css-15edd2j"
           >
             <hr
               aria-hidden="true"
-              class="css-16fyx8h"
+              class="css-1bwjg6b"
               data-testid="divider"
             />
           </div>
@@ -1136,10 +1141,10 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             data-testid="divider"
           />
           <div
-            class="css-vq63er"
+            class="css-m6erw9"
           >
             <div
-              class="css-e0a604"
+              class="css-14odj7m"
             >
               <div
                 class="css-13byt3y"
@@ -1208,6 +1213,11 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   </div>
                 </div>
               </div>
+              <hr
+                aria-hidden="true"
+                class="css-13rcg9f"
+                data-testid="divider"
+              />
               <div
                 class="css-13byt3y"
               >
@@ -1281,14 +1291,14 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   </div>
                 </div>
               </div>
+              <hr
+                aria-hidden="true"
+                class="css-13rcg9f"
+                data-testid="divider"
+              />
             </div>
-            <hr
-              aria-hidden="true"
-              class="css-13rcg9f"
-              data-testid="divider"
-            />
             <div
-              class="css-194m366"
+              class="css-1fw9bkp"
             >
               <div
                 class="css-13byt3y"
@@ -1504,7 +1514,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
         </div>
       </div>
       <div
-        class="css-s0ahbd"
+        class="css-1gxwbub"
       >
         <div
           class="css-1osy5lm"
@@ -1843,20 +1853,20 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
     class="css-8atxkm"
   >
     <div
-      class="css-146arns"
+      class="css-179k3k0"
     >
       <div
-        class="css-1oqkk4f"
+        class="css-tsyw8u"
       >
         <div
-          class="css-3hmgqa"
+          class="css-13byt3y"
         >
           <div
             class="css-15edd2j"
           >
             <hr
               aria-hidden="true"
-              class="css-16fyx8h"
+              class="css-1bwjg6b"
               data-testid="divider"
             />
           </div>
@@ -1955,10 +1965,10 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             />
           </div>
           <div
-            class="css-vq63er"
+            class="css-m6erw9"
           >
             <div
-              class="css-e0a604"
+              class="css-14odj7m"
             >
               <div
                 class="css-13byt3y"
@@ -2027,6 +2037,11 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   </div>
                 </div>
               </div>
+              <hr
+                aria-hidden="true"
+                class="css-13rcg9f"
+                data-testid="divider"
+              />
               <div
                 class="css-13byt3y"
               >
@@ -2100,14 +2115,14 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   </div>
                 </div>
               </div>
+              <hr
+                aria-hidden="true"
+                class="css-13rcg9f"
+                data-testid="divider"
+              />
             </div>
-            <hr
-              aria-hidden="true"
-              class="css-13rcg9f"
-              data-testid="divider"
-            />
             <div
-              class="css-194m366"
+              class="css-1fw9bkp"
             >
               <div
                 class="css-13byt3y"
@@ -2318,7 +2333,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
         </div>
       </div>
       <div
-        class="css-s0ahbd"
+        class="css-1gxwbub"
       >
         <div
           class="css-1osy5lm"

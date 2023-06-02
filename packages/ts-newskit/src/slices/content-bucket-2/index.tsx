@@ -1,11 +1,12 @@
-import { Cell, Divider, Grid, GridLayout, useBreakpointKey } from 'newskit';
+import { Divider, GridLayout, useBreakpointKey } from 'newskit';
 import React from 'react';
 import {
   SliceHeader,
   SliceHeaderProps
 } from '../../components/slices/slice-header';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { CellNoMargin } from '../shared-styles';
+import { CellNoMargin, CellWithCustomPadding } from '../shared-styles';
+import { CustomGridLayout } from '../shared/grid-layout';
 
 export interface ContentBucket2Props {
   section: SliceHeaderProps;
@@ -17,10 +18,10 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
   const isMob = breakpointKey === 'xs' || breakpointKey === 'sm';
 
   return (
-    <Grid xsMargin="space045" mdMargin="space050">
-      <Cell xs={12}>
+    <CustomGridLayout>
+      <CellWithCustomPadding xs={12}>
         <SliceHeader {...section} />
-      </Cell>
+      </CellWithCustomPadding>
       <CellNoMargin xs={12}>
         <GridLayout
           columns={{
@@ -53,6 +54,6 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
           })}
         </GridLayout>
       </CellNoMargin>
-    </Grid>
+    </CustomGridLayout>
   );
 };
