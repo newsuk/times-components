@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.73.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.72.1...@times-components/article-in-depth@3.73.0) (2023-06-02)
+
+
+### Features
+
+* **TMRX-1266:** updated keywords ([#3389](https://github.com/newsuk/times-components/issues/3389)) ([8e68ec0](https://github.com/newsuk/times-components/commit/8e68ec0bd13b4e97f4c062b2745b0c8d3d0a1234))
+
+
+
+
+
 ## [3.72.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.72.0...@times-components/article-in-depth@3.72.1) (2023-06-01)
 
 **Note:** Version bump only for package @times-components/article-in-depth

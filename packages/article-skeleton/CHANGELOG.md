@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.102.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.101.0...@times-components/article-skeleton@1.102.0) (2023-06-02)
+
+
+### Features
+
+* **TMRX-1266:** updated keywords ([#3389](https://github.com/newsuk/times-components/issues/3389)) ([8e68ec0](https://github.com/newsuk/times-components/commit/8e68ec0bd13b4e97f4c062b2745b0c8d3d0a1234))
+
+
+
+
+
 # [1.101.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.100.0...@times-components/article-skeleton@1.101.0) (2023-06-01)
 
 
