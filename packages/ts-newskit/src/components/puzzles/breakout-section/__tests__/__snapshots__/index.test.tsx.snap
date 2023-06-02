@@ -124,7 +124,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="0"
         >
           <a
-            class="css-pw0zms"
+            class="css-9rhswx"
             href="/puzzles/crosswords"
           >
             <span
@@ -143,7 +143,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="1"
         >
           <a
-            class="css-pw0zms"
+            class="css-9rhswx"
             href="/puzzles/sudokus"
           >
             <span
@@ -162,7 +162,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="2"
         >
           <a
-            class="css-pw0zms"
+            class="css-9rhswx"
             href="/puzzles/word-puzzles"
           >
             <span
@@ -181,7 +181,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="3"
         >
           <a
-            class="css-pw0zms"
+            class="css-9rhswx"
             href="/puzzles/numbers-and-logic"
           >
             <span
@@ -200,7 +200,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="4"
         >
           <a
-            class="css-pw0zms"
+            class="css-9rhswx"
             href="/puzzles/quizzes-and-teasers"
           >
             <span
@@ -219,7 +219,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="5"
         >
           <a
-            class="css-pw0zms"
+            class="css-9rhswx"
             href="/puzzles/board-and-card-games"
           >
             <span

@@ -31,20 +31,19 @@ export const BreakoutSectionBtn = styled(Button)<ButtonProps>`
 export const BreakoutSectionLink = styled(LinkStandalone)<LinkProps>`
   position: relative;
   z-index: 2;
-  color: black;
   width: 100%;
   height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
 
   &:hover,
   &:link,
   &:visited,
   &:active {
-    text-decoration: none !important;
-    color: black !important;
+    text-decoration: none;
+  }
+
+  & span {
+    margin: 0 auto;
   }
 `;
 
