@@ -6,14 +6,16 @@ import article from "../fixtures/article.json";
 const getMediaUrl = (obj, ratio) => {
   const crop = obj[`crop${ratio.replace(":", "")}`];
   const ratios = {
-    "3:2": "300/200",
-    "16:9": "320/180"
+    "3:2": "300_200",
+    "16:9": "320_180"
   };
 
   return {
     url: crop
       ? crop.url
-      : `https://placeimg.com/${ratios[ratio] || "100/100"}/tech`
+      : `https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_${ratios[
+          ratio
+        ] || "100_100"}.jpg`
   };
 };
 
