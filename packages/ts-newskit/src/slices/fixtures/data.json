@@ -2,9 +2,7 @@
   "section": { "title": "Rugby Union", "href": "https://www.thetimes.co.uk/" },
   "leadArticle": {
     "headline": "Sarcacens an inclusive club? They didnt look out for me",
-    "color": "#01000d",
     "summary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
-    "tagL1": "",
     "caption": "Credit",
     "image": "/assets/main_01.jpg",
     "url": "https://www.thetimes.co.uk",
@@ -21,8 +19,7 @@
         "alt": "This is ALT Text"
       },
       "title": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
-      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "color": "#E34605"
+      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
     },
     {
       "image": {
@@ -30,8 +27,7 @@
         "alt": "This is ALT Text"
       },
       "title": "‘American owners pose threat to English pyramid’",
-      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "color": "#E34605"
+      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
     },
     {
       "image": {
@@ -39,8 +35,7 @@
         "alt": "This is ALT Text"
       },
       "title": "£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid",
-      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "color": "#E34605"
+      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
     },
     {
       "image": {
@@ -48,8 +43,7 @@
         "alt": "This is ALT Text"
       },
       "title": "Blow for rebel clubs as court says Uefa can block Super League",
-      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "color": "#E34605"
+      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
     }
   ],
   "comments": [

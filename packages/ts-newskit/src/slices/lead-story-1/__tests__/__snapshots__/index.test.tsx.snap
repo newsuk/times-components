@@ -23,16 +23,20 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               <div
                 class="css-9fndha"
               >
-                <div
-                  class="css-46cej1"
-                  data-testid="tag"
+                <a
+                  class="css-1bmzwxr"
+                  href="/"
                 >
                   <span
-                    class="css-1x1ve0y"
+                    class="css-17x5lw"
                   >
-                    TAG
+                    <span
+                      class="css-pwugga"
+                    >
+                      TAG
+                    </span>
                   </span>
-                </div>
+                </a>
               </div>
               <a
                 class="css-10h0i3c"
@@ -65,7 +69,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-17tpekn"
+                      class="css-zhtub2"
                     >
                       Tag
                     </span>
@@ -81,13 +85,13 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-12zms6j"
+                  class="css-1vzvkql"
                 >
                   Flag
                 </span>
               </div>
               <ul
-                class="css-1dl3yfl"
+                class="css-a5fiw2"
                 role="list"
               >
                 <li
@@ -118,9 +122,22 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       </svg>
                     </div>
                     <p
-                      class="css-1ja8y7g"
+                      class="css-xg8lki"
                     >
-                      Unordered list item
+                      <a
+                        class="css-1ks9f1u"
+                        href="/"
+                      >
+                        <span
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-1wc2zh5"
+                          >
+                            Unordered list item
+                          </span>
+                        </span>
+                      </a>
                     </p>
                   </div>
                 </li>
@@ -132,7 +149,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-11bei24"
+              class="css-5znksa"
               data-testid="divider"
             />
           </div>
@@ -164,7 +181,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-obfal1"
+              class="css-xvacx"
               data-testid="divider"
             />
           </div>
@@ -348,7 +365,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-17tpekn"
+                        class="css-zhtub2"
                       >
                         Tag
                       </span>
@@ -364,7 +381,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-12zms6j"
+                    class="css-1vzvkql"
                   >
                     4 min read
                   </span>
@@ -438,7 +455,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-12zms6j"
+                      class="css-1vzvkql"
                     >
                       Flag
                     </span>
@@ -574,7 +591,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-17tpekn"
+                        class="css-zhtub2"
                       >
                         Tag
                       </span>
@@ -590,7 +607,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-12zms6j"
+                    class="css-1vzvkql"
                   >
                     Flag1
                   </span>
@@ -711,7 +728,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-17tpekn"
+                        class="css-zhtub2"
                       >
                         Tag
                       </span>
@@ -775,7 +792,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   data-testid="tag-and-flag"
                 >
                   <span
-                    class="css-12zms6j"
+                    class="css-1vzvkql"
                   >
                     Flag4
                   </span>
@@ -844,7 +861,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-17tpekn"
+                        class="css-zhtub2"
                       >
                         Tag
                       </span>
@@ -860,7 +877,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-12zms6j"
+                    class="css-1vzvkql"
                   >
                     Flag5
                   </span>
@@ -935,7 +952,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         data-testid="tag-and-flag"
                       >
                         <span
-                          class="css-12zms6j"
+                          class="css-1vzvkql"
                         >
                           Flag4
                         </span>
@@ -1008,7 +1025,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             class="css-17x5lw"
                           >
                             <span
-                              class="css-17tpekn"
+                              class="css-zhtub2"
                             >
                               Tag
                             </span>
@@ -1024,7 +1041,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           />
                         </div>
                         <span
-                          class="css-12zms6j"
+                          class="css-1vzvkql"
                         >
                           Flag5
                         </span>
@@ -1065,16 +1082,20 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-9fndha"
               >
-                <div
-                  class="css-46cej1"
-                  data-testid="tag"
+                <a
+                  class="css-1bmzwxr"
+                  href="/"
                 >
                   <span
-                    class="css-1x1ve0y"
+                    class="css-17x5lw"
                   >
-                    TAG
+                    <span
+                      class="css-pwugga"
+                    >
+                      TAG
+                    </span>
                   </span>
-                </div>
+                </a>
               </div>
               <a
                 class="css-10h0i3c"
@@ -1107,7 +1128,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-17tpekn"
+                      class="css-zhtub2"
                     >
                       Tag
                     </span>
@@ -1123,13 +1144,13 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-12zms6j"
+                  class="css-1vzvkql"
                 >
                   Flag
                 </span>
               </div>
               <ul
-                class="css-1dl3yfl"
+                class="css-a5fiw2"
                 role="list"
               >
                 <li
@@ -1160,9 +1181,22 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </svg>
                     </div>
                     <p
-                      class="css-1ja8y7g"
+                      class="css-xg8lki"
                     >
-                      Unordered list item
+                      <a
+                        class="css-1ks9f1u"
+                        href="/"
+                      >
+                        <span
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-1wc2zh5"
+                          >
+                            Unordered list item
+                          </span>
+                        </span>
+                      </a>
                     </p>
                   </div>
                 </li>
@@ -1174,7 +1208,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-11bei24"
+              class="css-5znksa"
               data-testid="divider"
             />
           </div>
@@ -1206,7 +1240,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-obfal1"
+              class="css-xvacx"
               data-testid="divider"
             />
           </div>
@@ -1390,7 +1424,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-17tpekn"
+                        class="css-zhtub2"
                       >
                         Tag
                       </span>
@@ -1406,7 +1440,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     />
                   </div>
                   <span
-                    class="css-12zms6j"
+                    class="css-1vzvkql"
                   >
                     4 min read
                   </span>
@@ -1480,7 +1514,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-12zms6j"
+                      class="css-1vzvkql"
                     >
                       Flag
                     </span>
@@ -1613,7 +1647,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-17tpekn"
+                      class="css-zhtub2"
                     >
                       Tag
                     </span>
@@ -1629,7 +1663,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-12zms6j"
+                  class="css-1vzvkql"
                 >
                   Flag1
                 </span>
@@ -1734,7 +1768,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-17tpekn"
+                      class="css-zhtub2"
                     >
                       Tag
                     </span>
@@ -1791,7 +1825,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       data-testid="tag-and-flag"
                     >
                       <span
-                        class="css-12zms6j"
+                        class="css-1vzvkql"
                       >
                         Flag4
                       </span>
@@ -1844,7 +1878,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           class="css-17x5lw"
                         >
                           <span
-                            class="css-17tpekn"
+                            class="css-zhtub2"
                           >
                             Tag
                           </span>
@@ -1860,7 +1894,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         />
                       </div>
                       <span
-                        class="css-12zms6j"
+                        class="css-1vzvkql"
                       >
                         Flag5
                       </span>
@@ -1900,16 +1934,20 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-9fndha"
               >
-                <div
-                  class="css-46cej1"
-                  data-testid="tag"
+                <a
+                  class="css-1bmzwxr"
+                  href="/"
                 >
                   <span
-                    class="css-1x1ve0y"
+                    class="css-17x5lw"
                   >
-                    TAG
+                    <span
+                      class="css-pwugga"
+                    >
+                      TAG
+                    </span>
                   </span>
-                </div>
+                </a>
               </div>
               <a
                 class="css-10h0i3c"
@@ -1942,7 +1980,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-17tpekn"
+                      class="css-zhtub2"
                     >
                       Tag
                     </span>
@@ -1958,13 +1996,13 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-12zms6j"
+                  class="css-1vzvkql"
                 >
                   Flag
                 </span>
               </div>
               <ul
-                class="css-1dl3yfl"
+                class="css-a5fiw2"
                 role="list"
               >
                 <li
@@ -1995,9 +2033,22 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </svg>
                     </div>
                     <p
-                      class="css-1ja8y7g"
+                      class="css-xg8lki"
                     >
-                      Unordered list item
+                      <a
+                        class="css-1ks9f1u"
+                        href="/"
+                      >
+                        <span
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-1wc2zh5"
+                          >
+                            Unordered list item
+                          </span>
+                        </span>
+                      </a>
                     </p>
                   </div>
                 </li>
@@ -2009,7 +2060,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-11bei24"
+              class="css-5znksa"
               data-testid="divider"
             />
           </div>
@@ -2041,7 +2092,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-obfal1"
+              class="css-xvacx"
               data-testid="divider"
             />
           </div>
@@ -2225,7 +2276,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-17tpekn"
+                        class="css-zhtub2"
                       >
                         Tag
                       </span>
@@ -2241,7 +2292,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     />
                   </div>
                   <span
-                    class="css-12zms6j"
+                    class="css-1vzvkql"
                   >
                     4 min read
                   </span>
@@ -2312,7 +2363,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-12zms6j"
+                      class="css-1vzvkql"
                     >
                       Flag
                     </span>
@@ -2440,7 +2491,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-17tpekn"
+                          class="css-zhtub2"
                         >
                           Tag
                         </span>
@@ -2456,7 +2507,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-12zms6j"
+                      class="css-1vzvkql"
                     >
                       Flag1
                     </span>
@@ -2561,7 +2612,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-17tpekn"
+                          class="css-zhtub2"
                         >
                           Tag
                         </span>
@@ -2617,7 +2668,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-12zms6j"
+                      class="css-1vzvkql"
                     >
                       Flag4
                     </span>
@@ -2678,7 +2729,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-17tpekn"
+                          class="css-zhtub2"
                         >
                           Tag
                         </span>
@@ -2694,7 +2745,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-12zms6j"
+                      class="css-1vzvkql"
                     >
                       Flag5
                     </span>
@@ -2767,7 +2818,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       data-testid="tag-and-flag"
                     >
                       <span
-                        class="css-12zms6j"
+                        class="css-1vzvkql"
                       >
                         Flag4
                       </span>
@@ -2827,7 +2878,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           class="css-17x5lw"
                         >
                           <span
-                            class="css-17tpekn"
+                            class="css-zhtub2"
                           >
                             Tag
                           </span>
@@ -2843,7 +2894,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         />
                       </div>
                       <span
-                        class="css-12zms6j"
+                        class="css-1vzvkql"
                       >
                         Flag5
                       </span>
@@ -2883,16 +2934,20 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-9fndha"
               >
-                <div
-                  class="css-46cej1"
-                  data-testid="tag"
+                <a
+                  class="css-1bmzwxr"
+                  href="/"
                 >
                   <span
-                    class="css-1x1ve0y"
+                    class="css-17x5lw"
                   >
-                    TAG
+                    <span
+                      class="css-pwugga"
+                    >
+                      TAG
+                    </span>
                   </span>
-                </div>
+                </a>
               </div>
               <a
                 class="css-10h0i3c"
@@ -2925,7 +2980,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-17tpekn"
+                      class="css-zhtub2"
                     >
                       Tag
                     </span>
@@ -2941,13 +2996,13 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   />
                 </div>
                 <span
-                  class="css-12zms6j"
+                  class="css-1vzvkql"
                 >
                   Flag
                 </span>
               </div>
               <ul
-                class="css-1dl3yfl"
+                class="css-a5fiw2"
                 role="list"
               >
                 <li
@@ -2978,9 +3033,22 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </svg>
                     </div>
                     <p
-                      class="css-1ja8y7g"
+                      class="css-xg8lki"
                     >
-                      Unordered list item
+                      <a
+                        class="css-1ks9f1u"
+                        href="/"
+                      >
+                        <span
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-1wc2zh5"
+                          >
+                            Unordered list item
+                          </span>
+                        </span>
+                      </a>
                     </p>
                   </div>
                 </li>
@@ -2992,7 +3060,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-11bei24"
+              class="css-5znksa"
               data-testid="divider"
             />
           </div>
@@ -3024,7 +3092,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-obfal1"
+              class="css-xvacx"
               data-testid="divider"
             />
           </div>
@@ -3208,7 +3276,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-17tpekn"
+                        class="css-zhtub2"
                       >
                         Tag
                       </span>
@@ -3224,7 +3292,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     />
                   </div>
                   <span
-                    class="css-12zms6j"
+                    class="css-1vzvkql"
                   >
                     4 min read
                   </span>
@@ -3295,7 +3363,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-12zms6j"
+                      class="css-1vzvkql"
                     >
                       Flag
                     </span>
@@ -3423,7 +3491,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-17tpekn"
+                          class="css-zhtub2"
                         >
                           Tag
                         </span>
@@ -3439,7 +3507,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-12zms6j"
+                      class="css-1vzvkql"
                     >
                       Flag1
                     </span>
@@ -3544,7 +3612,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-17tpekn"
+                          class="css-zhtub2"
                         >
                           Tag
                         </span>
@@ -3600,7 +3668,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-12zms6j"
+                      class="css-1vzvkql"
                     >
                       Flag4
                     </span>
@@ -3661,7 +3729,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-17tpekn"
+                          class="css-zhtub2"
                         >
                           Tag
                         </span>
@@ -3677,7 +3745,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       />
                     </div>
                     <span
-                      class="css-12zms6j"
+                      class="css-1vzvkql"
                     >
                       Flag5
                     </span>
@@ -3750,7 +3818,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       data-testid="tag-and-flag"
                     >
                       <span
-                        class="css-12zms6j"
+                        class="css-1vzvkql"
                       >
                         Flag4
                       </span>
@@ -3810,7 +3878,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           class="css-17x5lw"
                         >
                           <span
-                            class="css-17tpekn"
+                            class="css-zhtub2"
                           >
                             Tag
                           </span>
@@ -3826,7 +3894,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         />
                       </div>
                       <span
-                        class="css-12zms6j"
+                        class="css-1vzvkql"
                       >
                         Flag5
                       </span>

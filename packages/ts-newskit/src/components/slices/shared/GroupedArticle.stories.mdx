@@ -29,18 +29,22 @@ export const GroupedArticleStory = ({tagL1 , articles}) => (
   </NewsKitProvider>
 );
 
-<Story name="GroupedArticle" args={{ tagL1:'TAG', articles:[
-      {
-        "headline": "Short title of the card describing the main content",
-        "summary": "Short paragraph description of the article, outlining main story and focus.",
-        "url": "https://www.thetimes.co.uk",
-      },
-      {
-        "headline": "Short title of the card describing the main content",
-        "summary": "Short paragraph description of the article, outlining main story and focus.",
-        "url": "https://www.thetimes.co.uk",
-    
-      }
-]  }}>
+<Story name="GroupedArticle" args={{ 
+  tagL1:{
+    label:"TAG",
+    href:"/"
+  }, 
+  articles:[
+  {
+    "headline": "Short title of the card describing the main content",
+    "summary": "Short paragraph description of the article, outlining main story and focus.",
+    "url": "https://www.thetimes.co.uk",
+  },
+  {
+    "headline": "Short title of the card describing the main content",
+    "summary": "Short paragraph description of the article, outlining main story and focus.",
+    "url": "https://www.thetimes.co.uk",
+  }
+]}}>
   {GroupedArticleStory.bind({})}
 </Story>

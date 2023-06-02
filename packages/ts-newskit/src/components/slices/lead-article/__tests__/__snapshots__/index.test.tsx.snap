@@ -38,20 +38,6 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-tk98gp"
         data-testid="divider"
       />
-      <div
-        class="css-9fndha"
-      >
-        <div
-          class="css-46cej1"
-          data-testid="tag"
-        >
-          <span
-            class="css-1x1ve0y"
-          >
-            TAG
-          </span>
-        </div>
-      </div>
       <a
         class="css-10h0i3c"
         href="https://www.thetimes.co.uk"
@@ -83,7 +69,7 @@ exports[`Render Component one should render a snapshot 1`] = `
             class="css-17x5lw"
           >
             <span
-              class="css-17tpekn"
+              class="css-zhtub2"
             >
               Review
             </span>
@@ -99,7 +85,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-12zms6j"
+          class="css-1vzvkql"
         >
           4 min read
         </span>

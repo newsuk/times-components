@@ -6,7 +6,10 @@ import { FullWidthDividerMob } from '../shared-styles/index';
 import { StyledDivider } from '../../../slices/lead-story-1/styles';
 
 export interface GroupedArticleProps {
-  tagL1: string;
+  tagL1: {
+    label: string;
+    href: string;
+  };
   articles: LeadArticleProps[];
 }
 
@@ -25,9 +28,9 @@ export const GroupedArticle = ({ articles, tagL1 }: GroupedArticleProps) => {
           stylePreset: 'inkBrand010',
           marginBlockEnd: 'space040'
         }}
-        href={'/'}
+        href={tagL1.href}
       >
-        {tagL1}
+        {tagL1.label}
       </TextLink>
       <GridLayout>
         {modifiedGroupedArticles.map(

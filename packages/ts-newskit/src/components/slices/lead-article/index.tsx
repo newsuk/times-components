@@ -3,23 +3,30 @@ import {
   Block,
   CardContent,
   CardComposable,
-  Tag,
   Divider,
-  Hidden
+  Hidden,
+  UnorderedList,
+  LinkInline
 } from 'newskit';
 import React from 'react';
 import {
   CardHeadlineLink,
   FullWidthCardMediaMob,
-  StyledUnorderedList
+  TextLink
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
-
+type ListData = {
+  label: string;
+  href: string;
+};
 export interface LeadArticleProps {
   headline: string;
   flag?: string;
   summary?: string;
-  tagL1?: string;
+  tagL1?: {
+    label: string;
+    href: string;
+  };
   caption?: string;
   image?: string;
   url: string;
@@ -35,7 +42,7 @@ export interface LeadArticleProps {
   marginBlockStart?: string;
   textBlockMarginBlockStart?: string;
   tagAndFlagBlockMarginBlockStart?: string;
-  listData?: string[];
+  listData?: ListData[];
   showTagL1?: boolean;
 }
 export const LeadArticle = ({
@@ -58,13 +65,6 @@ export const LeadArticle = ({
   listData,
   showTagL1
 }: LeadArticleProps) => {
-  const stylePresets = {
-    typographyPreset: 'utilityButton010',
-    stylePreset: 'inkBrand010',
-    marginBlockEnd: 'space040',
-    paddingInline: 'space000'
-  };
-
   return (
     <CardComposable
       areas={{
@@ -121,14 +121,16 @@ export const LeadArticle = ({
 
         {tagL1 && (
           <Hidden xs={showTagL1} sm={showTagL1}>
-            <Tag
-              size="small"
+            <TextLink
               overrides={{
-                ...stylePresets
+                typographyPreset: 'utilityButton010',
+                stylePreset: 'inkBrand010',
+                marginBlockEnd: 'space040'
               }}
+              href={tagL1.href}
             >
-              {tagL1}
-            </Tag>
+              {tagL1.label}
+            </TextLink>
           </Hidden>
         )}
         <CardHeadlineLink
@@ -157,7 +159,6 @@ export const LeadArticle = ({
             {summary}
           </TextBlock>
         )}
-
         {(tag || flag) && (
           <TagAndFlag
             tag={tag}
@@ -166,7 +167,7 @@ export const LeadArticle = ({
           />
         )}
         {listData && (
-          <StyledUnorderedList
+          <UnorderedList
             overrides={{
               marker: {
                 size: 'iconSize005',
@@ -175,13 +176,27 @@ export const LeadArticle = ({
               },
               marginBlockStart: 'space050',
               content: {
-                typographyPreset: 'utilityBody010',
-                stylePreset: 'inkContrast'
+                typographyPreset: 'utilityBody010'
               }
             }}
           >
-            {listData}
-          </StyledUnorderedList>
+            {listData.map(({ label, href }, index) => {
+              const hasHref = !!href;
+              return hasHref ? (
+                <LinkInline
+                  overrides={{
+                    stylePreset: 'inkContrast'
+                  }}
+                  key={index}
+                  href={href}
+                >
+                  {label}
+                </LinkInline>
+              ) : (
+                <>{label}</>
+              );
+            })}
+          </UnorderedList>
         )}
       </CardContent>
     </CardComposable>

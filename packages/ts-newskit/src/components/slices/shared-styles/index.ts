@@ -7,8 +7,7 @@ import {
   CardMedia,
   getSpacingCssFromTheme,
   getMediaQueryFromTheme,
-  LinkInline,
-  UnorderedList
+  LinkInline
 } from 'newskit';
 
 export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
@@ -52,8 +51,4 @@ export const FullWidthDividerMob = styled(Block)`
   ${getMediaQueryFromTheme('xs', 'md')} {
     ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
   }
-`;
-
-export const StyledUnorderedList = styled(UnorderedList)`
-  text-decoration: underline;
 `;

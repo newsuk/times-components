@@ -23,11 +23,14 @@ export interface LeadStory1Props {
   articles: ArticleProps[];
   groupedArticles: {
     articles: LeadArticleProps[];
-    tagL1: string;
+    tagL1: {
+      label: string;
+      href: string;
+    };
   };
   smallArticles: ArticleProps[];
   singleArticle: ArticleProps;
-  articlesWithUnorderedList: LeadArticleProps;
+  articlesWithListItems: LeadArticleProps;
 }
 
 export const LeadStory1 = ({
@@ -36,7 +39,7 @@ export const LeadStory1 = ({
   groupedArticles,
   smallArticles,
   singleArticle,
-  articlesWithUnorderedList
+  articlesWithListItems
 }: LeadStory1Props) => {
   const breakpointKey = useBreakpointKey();
 
@@ -49,7 +52,7 @@ export const LeadStory1 = ({
       : articles;
 
   const modifiedArticlesWithUnorderedList = {
-    ...articlesWithUnorderedList,
+    ...articlesWithListItems,
     imageTop: true,
     textBlockMarginBlockStart: 'space050',
     typographyPreset:
@@ -97,23 +100,39 @@ export const LeadStory1 = ({
           }}
         >
           <LeadArticle {...modifiedArticlesWithUnorderedList} />
-          <FullWidthDividerMob>
-            <StyledDivider
-              overrides={{
-                stylePreset: 'dashedDivider'
-              }}
-            />
-          </FullWidthDividerMob>
-          <Article {...singleArticle} />
-          <FullWidthDividerMob>
-            <Divider
-              overrides={{
-                stylePreset: 'dashedDivider',
-                marginBlock: 'space040'
-              }}
-            />
-          </FullWidthDividerMob>
-          <GroupedArticle {...groupedArticles} />
+          {singleArticle && (
+            <>
+              <FullWidthDividerMob>
+                <StyledDivider
+                  overrides={{
+                    stylePreset: 'dashedDivider',
+                    marginBlockStart: !!articlesWithListItems.listData
+                      ? 'space020'
+                      : 'space040'
+                  }}
+                />
+              </FullWidthDividerMob>
+              <Article {...singleArticle} />
+            </>
+          )}
+          {groupedArticles && (
+            <>
+              <FullWidthDividerMob>
+                <Divider
+                  overrides={{
+                    stylePreset: 'dashedDivider',
+                    marginBlockStart: singleArticle
+                      ? 'space040'
+                      : !!articlesWithListItems.listData
+                        ? 'space020'
+                        : 'space040',
+                    marginBlockEnd: 'space040'
+                  }}
+                />
+              </FullWidthDividerMob>
+              <GroupedArticle {...groupedArticles} />
+            </>
+          )}
         </Block>
       </CellWithCustomPadding>
       <LeadArticleCell xs={12} md={7} lg={6} xl={5}>

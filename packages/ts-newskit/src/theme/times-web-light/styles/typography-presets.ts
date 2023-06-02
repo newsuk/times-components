@@ -240,7 +240,7 @@ export const typographyPresets = Object.fromEntries(
       fontFamily: 'Roboto',
       fontWeight: 500,
       lineHeight: 1.5,
-      fontSize: '12px',
+      fontSize: '1.2rem',
       letterSpacing: '0em'
     }
   })
