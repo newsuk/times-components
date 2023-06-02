@@ -43,7 +43,14 @@ export const LeadStory2 = ({
   const modifiedLeadArticle = {
     ...leadArticle,
     imageTop: !!screenXsAndSm,
-    hasTopBorder: false
+    hasTopBorder: false,
+    textBlockMarginBlockStart: 'space050',
+    typographyPreset:
+      breakpointKey === 'xs'
+        ? 'editorialHeadline040'
+        : breakpointKey === 'sm'
+          ? 'editorialHeadline050'
+          : 'editorialHeadline060'
   };
 
   return (
