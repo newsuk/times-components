@@ -11,7 +11,7 @@ import {
 import { Wrap, StyledNewsKitPuzzlePlaceholder } from './styles';
 import { PuzzlesFlag } from '../flag';
 import { Puzzle } from '../archive/types';
-import { convertDateToWeekday } from '../../../utils/date-formatting';
+import { convertDateToWeekday } from '../../../utils';
 
 export interface PuzzleCardProps {
   data: Puzzle;
