@@ -18,7 +18,7 @@ Object {
           "caption": "Hello World",
           "crop": Object {
             "__typename": "Crop",
-            "url": "https://placeimg.com/300/200/tech",
+            "url": "https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_300_200.jpg",
           },
           "id": "e98c2 1c-cb16-11e7-b529-95e3fc05f40f",
           "title": "Some title 1",
