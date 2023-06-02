@@ -19,7 +19,11 @@ const getMediaUrl = (obj, ratio) => {
   const crop = obj[`crop${ratio.replace(":", "")}`];
 
   return {
-    url: crop ? crop.url : `https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_${convertRatio(ratio)}.jpg`
+    url: crop
+      ? crop.url
+      : `https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_${convertRatio(
+          ratio
+        )}.jpg`
   };
 };
 

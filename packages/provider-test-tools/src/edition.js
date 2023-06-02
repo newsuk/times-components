@@ -13,7 +13,9 @@ const getMediaUrl = (obj, ratio) => {
   return {
     url: crop
       ? crop.url
-      : `https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_${ratios[ratio] || "100_100"}.jpg`    
+      : `https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_${ratios[
+          ratio
+        ] || "100_100"}.jpg`
   };
 };
 

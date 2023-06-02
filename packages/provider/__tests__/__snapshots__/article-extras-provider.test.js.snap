@@ -37,7 +37,7 @@ Object {
                 "crop": Object {
                   "__typename": "Crop",
                   "ratio": "16:9",
-                  "url": "https://placeimg.com/100/100/tech",
+                  "url": "https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_100_100.jpg",
                 },
                 "id": "a-u-u-i-d",
                 "title": "Hello World",
@@ -147,7 +147,7 @@ Object {
                 "crop": Object {
                   "__typename": "Crop",
                   "ratio": "16:9",
-                  "url": "https://placeimg.com/100/100/tech",
+                  "url": "https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_100_100.jpg",
                 },
                 "id": "a-u-u-i-d",
                 "title": "Hello World",
@@ -237,7 +237,7 @@ Object {
                 "crop": Object {
                   "__typename": "Crop",
                   "ratio": "16:9",
-                  "url": "https://placeimg.com/100/100/tech",
+                  "url": "https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_100_100.jpg",
                 },
                 "id": "a-u-u-i-d",
                 "title": "Hello World",
