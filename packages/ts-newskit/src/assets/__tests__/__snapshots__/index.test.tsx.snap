@@ -494,21 +494,37 @@ exports[`Icons Component: NewsKitWaveBg NewsKitWaveBg renders with default props
 exports[`Icons Component: NewskitIconBack NewskitIconBack renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    aria-hidden="true"
-    class="css-1my36lh-EmotionIconBase ex0cdmw0"
-    fill="currentColor"
-    focusable="false"
-    viewBox="0 0 24 24"
+    class="css-ny3roy"
+    fill="none"
+    height="17"
+    viewBox="0 0 16 17"
+    width="16"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <rect
-      fill="none"
-      height="24"
-      width="24"
-    />
-    <polygon
-      points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"
-    />
+    <mask
+      height="17"
+      id="mask0_4797_41229"
+      maskUnits="userSpaceOnUse"
+      style="mask-type: alpha;"
+      width="16"
+      x="0"
+      y="0"
+    >
+      <path
+        d="M11.6736 3.39289L10.4869 2.21289L3.89355 8.81289L10.4936 15.4129L11.6736 14.2329L6.25355 8.81289L11.6736 3.39289Z"
+        fill="#0A0A0A"
+      />
+    </mask>
+    <g
+      mask="url(#mask0_4797_41229)"
+    >
+      <rect
+        fill="#3B3B3B"
+        height="16"
+        width="16"
+        y="0.8125"
+      />
+    </g>
   </svg>
 </DocumentFragment>
 `;
@@ -516,21 +532,38 @@ exports[`Icons Component: NewskitIconBack NewskitIconBack renders with default p
 exports[`Icons Component: NewskitIconEast NewskitIconEast renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    aria-hidden="true"
-    class="css-1my36lh-EmotionIconBase ex0cdmw0"
-    fill="currentColor"
-    focusable="false"
-    viewBox="0 0 24 24"
+    class="css-ny3roy"
+    fill="none"
+    height="33"
+    viewBox="0 0 33 33"
+    width="33"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <rect
-      fill="none"
-      height="24"
-      width="24"
-    />
-    <path
-      d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
-    />
+    <mask
+      height="33"
+      id="mask0_4797_76249"
+      maskUnits="userSpaceOnUse"
+      style="mask-type: alpha;"
+      width="33"
+      x="0"
+      y="0"
+    >
+      <path
+        d="M20.3753 7.49951L18.4953 9.37951L24.602 15.4995H3.04199V18.1662H24.602L18.482 24.2862L20.3753 26.1662L29.7087 16.8328L20.3753 7.49951Z"
+        fill="black"
+      />
+    </mask>
+    <g
+      mask="url(#mask0_4797_76249)"
+    >
+      <rect
+        fill="#3B3B3B"
+        height="32"
+        width="32"
+        x="0.375"
+        y="0.833008"
+      />
+    </g>
   </svg>
 </DocumentFragment>
 `;
@@ -538,20 +571,37 @@ exports[`Icons Component: NewskitIconEast NewskitIconEast renders with default p
 exports[`Icons Component: NewskitIconForward NewskitIconForward renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    aria-hidden="true"
-    class="css-1my36lh-EmotionIconBase ex0cdmw0"
-    fill="currentColor"
-    focusable="false"
-    viewBox="0 0 24 24"
+    class="css-ny3roy"
+    fill="none"
+    height="17"
+    viewBox="0 0 16 17"
+    width="16"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path
-      d="M0 0h24v24H0z"
-      fill="none"
-    />
-    <path
-      d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-    />
+    <mask
+      height="17"
+      id="mask0_4797_41239"
+      maskUnits="userSpaceOnUse"
+      style="mask-type: alpha;"
+      width="16"
+      x="0"
+      y="0"
+    >
+      <path
+        d="M4.32666 14.2329L5.50666 15.4129L12.1067 8.81289L5.50666 2.21289L4.32666 3.39289L9.74666 8.81289L4.32666 14.2329Z"
+        fill="#0A0A0A"
+      />
+    </mask>
+    <g
+      mask="url(#mask0_4797_41239)"
+    >
+      <rect
+        fill="#3B3B3B"
+        height="16"
+        width="16"
+        y="0.8125"
+      />
+    </g>
   </svg>
 </DocumentFragment>
 `;
