@@ -73,7 +73,10 @@ export const LeadStory3 = ({
   return (
     <CustomGridLayout>
       <CellWithCustomPadding xs={12} md={5} lg={3} xl={3}>
-        <ArticleStack leadArticles={leadArticles} />
+        <ArticleStack
+          leadArticles={leadArticles}
+          breakpointKey={breakpointKey}
+        />
       </CellWithCustomPadding>
       <LeadArticleCell xs={12} md={7} lg={6} xl={5}>
         <Hidden md lg xl>

@@ -1,7 +1,7 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
 import { TCThemeProvider, themes, GridOverlay } from '../../utils/index.tsx';
 import { LeadStory2 } from "./";
-import { leadArticle, articles, largeArticles, verticalArticles,horizontalArticles } from '../fixtures/lead-story.json';
+import { leadArticle, articles, verticalArticles, horizontalArticles } from '../fixtures/lead-story.json';
 
 <Meta
   title="Newskit Slices/Lead Story 2"
@@ -18,16 +18,16 @@ This takes in a series of props, as below, to display the part of the slices.
 <Props of={LeadStory2} />
 
 ## Code Example
-`<LeadStory2 {...{ leadArticle, comments, largeArticles, verticalArticles,horizontalArticles }} />`
+`<LeadStory2 {...{ leadArticle, comments, verticalArticles, horizontalArticles }} />`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const ContentBucket2Story = ({ leadArticle, articles, theme, largeArticles, verticalArticles, horizontalArticles, gridOverlay }) => (
+export const ContentBucket2Story = ({ leadArticle, articles, theme, verticalArticles, horizontalArticles, gridOverlay }) => (
   <TCThemeProvider theme={theme}>
     <>
      <GridOverlay show={gridOverlay} />
-     <LeadStory2 {...{ leadArticle, articles, largeArticles, verticalArticles, horizontalArticles }} />
+     <LeadStory2 {...{ leadArticle, articles, verticalArticles, horizontalArticles }} />
     </>
   </TCThemeProvider>
 );
@@ -40,7 +40,6 @@ ContentBucket2Story.args = {
   args={{
     leadArticle,
     articles,
-    largeArticles,
     verticalArticles,
     horizontalArticles
   }}

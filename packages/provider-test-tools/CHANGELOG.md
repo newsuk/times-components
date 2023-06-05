@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.29.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.28.1...@times-components/provider-test-tools@1.29.0) (2023-06-02)
+
+
+### Features
+
+* **TMRX-697:** replaced 3rd party images with S3 hosted ones ([#3388](https://github.com/newsuk/times-components/issues/3388)) ([8ca726e](https://github.com/newsuk/times-components/commit/8ca726ea2fa147691d4dca2f9effc113d0f076a2))
+
+
+
+
+
 ## [1.28.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.28.0...@times-components/provider-test-tools@1.28.1) (2023-06-01)
 
 **Note:** Version bump only for package @times-components/provider-test-tools

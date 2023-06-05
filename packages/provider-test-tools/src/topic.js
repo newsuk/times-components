@@ -109,7 +109,8 @@ export default ({
             );
           },
           Crop: () => ({
-            url: "https://placeimg.com/300/200/tech"
+            url:
+              "https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_300_200.jpg"
           }),
           Image: () => {
             imageIndex += 1;

@@ -1,4 +1,4 @@
-import { Block, Divider } from 'newskit';
+import { Block, Divider, BreakpointKeys } from 'newskit';
 import React from 'react';
 import { BlockNoTopMargin } from '../lead-story-1/styles';
 import { FullWidthDividerMob } from '../../components/slices/shared-styles';
@@ -9,9 +9,13 @@ import {
 
 export interface ArticlesProps {
   leadArticles: LeadArticleProps[];
+  breakpointKey: BreakpointKeys;
 }
 
-export const ArticleStack = ({ leadArticles }: ArticlesProps) => {
+export const ArticleStack = ({
+  leadArticles,
+  breakpointKey
+}: ArticlesProps) => {
   const modifiedArticles = leadArticles.map(leadArticle => ({
     ...leadArticle,
     imageTop: true
@@ -23,7 +27,16 @@ export const ArticleStack = ({ leadArticles }: ArticlesProps) => {
         modifiedArticles.map((modifiedArticle, index) => {
           const articlesWithModifiedTypography =
             index === 0
-              ? { ...modifiedArticle, typographyPreset: 'editorialHeadline040' }
+              ? {
+                  ...modifiedArticle,
+                  textBlockMarginBlockStart: 'space050',
+                  typographyPreset:
+                    breakpointKey === 'xs'
+                      ? 'editorialHeadline040'
+                      : breakpointKey === 'sm'
+                        ? 'editorialHeadline050'
+                        : 'editorialHeadline060'
+                }
               : {
                   ...modifiedArticle,
                   typographyPreset: 'editorialHeadline020'
