@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.56.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.55.0...@times-components/ts-newskit@1.56.0) (2023-06-06)
+
+
+### Features
+
+* **TMST-683:** updated puzzle card date formating ([#3385](https://github.com/newsuk/times-components/issues/3385)) ([b7af561](https://github.com/newsuk/times-components/commit/b7af561800e02cc109dfe3d7ff9ab116feb9fddc))
+
+
+
+
+
 # [1.55.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.54.0...@times-components/ts-newskit@1.55.0) (2023-06-02)
 
 

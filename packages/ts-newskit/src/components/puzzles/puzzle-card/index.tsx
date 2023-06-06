@@ -11,14 +11,14 @@ import {
 import { Wrap, StyledNewsKitPuzzlePlaceholder } from './styles';
 import { PuzzlesFlag } from '../flag';
 import { Puzzle } from '../archive/types';
+import { convertDateToWeekday } from '../../../utils';
 
 export interface PuzzleCardProps {
   data: Puzzle;
 }
 
 export const PuzzleCard = ({ data }: PuzzleCardProps) => {
-  const timestamp = new Date(data.publishedAt);
-  const dayOfWeek = timestamp.toLocaleString('en-us', { weekday: 'long' });
+  const publishedDate = convertDateToWeekday(data.publishedAt);
   const imageUrl = data.image ? data.image.crops[0].url : '';
 
   return (
@@ -89,7 +89,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
           height="auto"
         >
           <Block>
-            {dayOfWeek && (
+            {publishedDate && (
               <TextBlock
                 as="span"
                 paddingBlockStart="space010"
@@ -97,7 +97,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
                 typographyPreset="utilityLabel010"
                 stylePreset="inkBase"
               >
-                {dayOfWeek}
+                {publishedDate}
               </TextBlock>
             )}
             {data.shortIdentifier && (
