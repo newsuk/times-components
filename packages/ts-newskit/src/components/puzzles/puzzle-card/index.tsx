@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  CardComposable,
   CardContent,
   CardLink,
   CardMedia,
@@ -8,7 +7,11 @@ import {
   TextBlock,
   Block
 } from 'newskit';
-import { Wrap, StyledNewsKitPuzzlePlaceholder } from './styles';
+import {
+  Wrap,
+  StyledNewsKitPuzzlePlaceholder,
+  PuzzleCardComposable
+} from './styles';
 import { PuzzlesFlag } from '../flag';
 import { Puzzle } from '../archive/types';
 import { convertDateToWeekday } from '../../../utils';
@@ -22,7 +25,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
   const imageUrl = data.image ? data.image.crops[0].url : '';
 
   return (
-    <CardComposable
+    <PuzzleCardComposable
       key={data.id}
       overrides={{
         minHeight: {
@@ -32,10 +35,17 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
           lg: '211.33px',
           xl: '261.33px'
         },
+        height: '100%',
         stylePreset: 'puzzleCard'
       }}
     >
-      <Block style={{ position: 'relative' }}>
+      <Block
+        style={{
+          position: 'relative',
+          display: 'flex',
+          alignSelf: 'flex-start'
+        }}
+      >
         {imageUrl ? (
           <CardMedia
             media={{
@@ -115,6 +125,6 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
           </Block>
         </Stack>
       </CardContent>
-    </CardComposable>
+    </PuzzleCardComposable>
   );
 };
