@@ -50,7 +50,6 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@emotion-icons/material": "3.14.0",
     "@emotion/react": "11.11.0",
     "@emotion/styled": "11.11.0",
     "@newskit-themes/the-times": "0.1.1",
