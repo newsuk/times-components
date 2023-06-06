@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '../../../../utils/test-utils';
-import { TagAndFlag } from '../index';
+import { TagAndFlag } from '../tag-and-flag';
 
 describe('TagAndFlag', () => {
   it('should render a snapshot', () => {

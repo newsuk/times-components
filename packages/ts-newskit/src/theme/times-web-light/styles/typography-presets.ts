@@ -235,6 +235,13 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: '1.286',
       letterSpacing: '0%',
       fontStretch: 'normal'
+    },
+    customTagAndFlagPreset: {
+      fontFamily: 'Roboto',
+      fontWeight: 500,
+      lineHeight: 1.5,
+      fontSize: '1.2rem',
+      letterSpacing: '0em'
     }
   })
 );

@@ -24,7 +24,7 @@ export const TagAndFlag = ({
       {tag && (
         <TextLink
           overrides={{
-            typographyPreset: 'utilityButton010',
+            typographyPreset: 'customTagAndFlagPreset',
             stylePreset: 'inkBrand010'
           }}
           href={tag.href}
@@ -47,7 +47,7 @@ export const TagAndFlag = ({
 
       {flag && (
         <TextBlock
-          typographyPreset="utilityLabel010"
+          typographyPreset="customTagAndFlagPreset"
           stylePreset="inkSubtle"
           as="span"
         >

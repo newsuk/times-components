@@ -38,20 +38,6 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-tk98gp"
         data-testid="divider"
       />
-      <div
-        class="css-11l110t"
-      >
-        <div
-          class="css-140acpc"
-          data-testid="tag"
-        >
-          <span
-            class="css-1x1ve0y"
-          >
-            TAG
-          </span>
-        </div>
-      </div>
       <a
         class="css-10h0i3c"
         href="https://www.thetimes.co.uk"
@@ -67,7 +53,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         </span>
       </a>
       <p
-        class="css-vdfsd1"
+        class="css-1nrveqv"
       >
         Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
       </p>
@@ -83,7 +69,7 @@ exports[`Render Component one should render a snapshot 1`] = `
             class="css-17x5lw"
           >
             <span
-              class="css-pwugga"
+              class="css-zhtub2"
             >
               Review
             </span>
@@ -99,7 +85,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-64fvyz"
+          class="css-1vzvkql"
         >
           4 min read
         </span>

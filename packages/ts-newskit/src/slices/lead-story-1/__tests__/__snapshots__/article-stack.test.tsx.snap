@@ -63,7 +63,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-pwugga"
+                    class="css-zhtub2"
                   >
                     Tag
                   </span>
@@ -79,7 +79,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 />
               </div>
               <span
-                class="css-64fvyz"
+                class="css-1vzvkql"
               >
                 Flag1
               </span>
@@ -184,7 +184,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-pwugga"
+                    class="css-zhtub2"
                   >
                     Tag
                   </span>
@@ -240,7 +240,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               data-testid="tag-and-flag"
             >
               <span
-                class="css-64fvyz"
+                class="css-1vzvkql"
               >
                 Flag4
               </span>
@@ -301,7 +301,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-pwugga"
+                    class="css-zhtub2"
                   >
                     Tag
                   </span>
@@ -317,7 +317,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 />
               </div>
               <span
-                class="css-64fvyz"
+                class="css-1vzvkql"
               >
                 Flag5
               </span>
@@ -448,7 +448,7 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
                 class="css-17x5lw"
               >
                 <span
-                  class="css-pwugga"
+                  class="css-zhtub2"
                 >
                   Tag
                 </span>
@@ -512,7 +512,7 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
             data-testid="tag-and-flag"
           >
             <span
-              class="css-64fvyz"
+              class="css-1vzvkql"
             >
               Flag4
             </span>

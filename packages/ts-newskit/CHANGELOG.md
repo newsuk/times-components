@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.55.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.54.0...@times-components/ts-newskit@1.55.0) (2023-06-02)
+
+
+### Features
+
+* **TMRX-1295:** article headline margin and grouped article ([#3386](https://github.com/newsuk/times-components/issues/3386)) ([10203d3](https://github.com/newsuk/times-components/commit/10203d39c6d23e696cd2835bf0f9e51606f7ced9))
+
+
+
+
+
 # [1.54.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.53.2...@times-components/ts-newskit@1.54.0) (2023-06-01)
 
 

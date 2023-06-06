@@ -47,9 +47,9 @@ function getSectionNameList(article) {
     (item, pos, self) => self.indexOf(item) === pos
   );
   const maxUniqueSections = 2;
-  const uniqueSections = JSON.stringify(
-    uniqueSectionsArr.slice(0, maxUniqueSections)
-  );
+  const uniqueSections = uniqueSectionsArr
+    .slice(0, maxUniqueSections)
+    .toString();
 
   return uniqueSections;
 }
