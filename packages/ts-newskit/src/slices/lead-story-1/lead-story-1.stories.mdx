@@ -1,7 +1,7 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
-import { TCThemeProvider, themes, GridOverlay } from '../../utils/index.tsx';
+import { TCThemeProvider, themes,GridOverlay } from '../../utils/index.tsx';
 import { LeadStory1 } from "./";
-import { leadArticle, articles, largeArticles, smallArticles } from '../fixtures/lead-story.json';
+import { leadArticle,articles,smallArticles,groupedArticles,singleArticle,articlesWithListItems } from '../fixtures/lead-story.json';
 
 <Meta
   title="Newskit Slices/Lead Story 1"
@@ -10,7 +10,7 @@ import { leadArticle, articles, largeArticles, smallArticles } from '../fixtures
 
 # LeadStory1 component
 The `LeadStory1` component is used to display the main story, supplementary articles and comment quotes.
-It is comprised of the `leadArticle`, `ArticleListItem`, and `LargeArticles` slice components.
+It is comprised of the `leadArticle`, `ArticleListItem`, `smallArticles`, `groupedArticles`, `singleArticle`, and `articlesWithListItems` slice components.
 
 This takes in a series of props, as below, to display the part of the slices.
 
@@ -18,16 +18,16 @@ This takes in a series of props, as below, to display the part of the slices.
 <Props of={LeadStory1} />
 
 ## Code Example
-`<LeadStory1 {...{ leadArticle, comments, largeArticles, smallArticles }} />`
+`<LeadStory1 {...{ leadArticle, comments, smallArticles,groupedArticles,singleArticle,articlesWithListItems }} />`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const ContentBucket1Story = ({ leadArticle, articles, theme, largeArticles, smallArticles, gridOverlay }) => (
+export const ContentBucket1Story = ({ leadArticle,articles,theme,smallArticles,groupedArticles,singleArticle,articlesWithListItems,gridOverlay}) => (
   <TCThemeProvider theme={theme}>
     <>
       <GridOverlay show={gridOverlay} />
-       <LeadStory1 {...{ leadArticle, articles, largeArticles, smallArticles }} />
+       <LeadStory1 {...{ leadArticle,articles,smallArticles,groupedArticles,singleArticle,articlesWithListItems }} />
     </>
   </TCThemeProvider>
 );
@@ -40,8 +40,10 @@ ContentBucket1Story.args = {
   args={{
     leadArticle,
     articles,
-    largeArticles,
-    smallArticles
+    smallArticles,
+    groupedArticles,
+    singleArticle,
+    articlesWithListItems
   }}
   argTypes={{
     theme: {
@@ -49,11 +51,10 @@ ContentBucket1Story.args = {
       mapping: themes,
       control: { type: 'select' },
     },
-   gridOverlay: {
+    gridOverlay: {
       control: { type: 'boolean' },
     },
   }}
 >
   {ContentBucket1Story.bind({})}
 </Story>
-

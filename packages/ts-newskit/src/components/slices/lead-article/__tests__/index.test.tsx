@@ -11,8 +11,7 @@ jest.mock('newskit', () => ({
 }));
 
 const leadStoryData: LeadArticleProps = {
-  ...leadArticle,
-  tagL1: 'TAG'
+  ...leadArticle
 };
 
 const renderComponent = () =>
@@ -46,12 +45,6 @@ describe('Render Component one', () => {
 
     const captionText = getByText(leadArticle.caption);
     expect(captionText).toBeInTheDocument();
-  });
-  it('should render tagL1 if passed as props', () => {
-    const { getByText } = renderComponent();
-
-    const tagL1 = getByText('TAG');
-    expect(tagL1).toBeInTheDocument();
   });
 
   it('should render tag if tag is provided', () => {

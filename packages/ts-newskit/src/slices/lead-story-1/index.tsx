@@ -4,32 +4,42 @@ import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
-import { ArticleProps } from '../../components/slices/article';
+import { Article, ArticleProps } from '../../components/slices/article';
 import {
   CellNoMargin,
+  CellWithCustomPadding,
   LeadArticleCell,
-  LeadStoryDivider,
-  CellWithCustomPadding
+  LeadStoryDivider
 } from '../shared-styles';
 import { ArticleStackSmall } from '../shared/article-stacks';
-import { LargeArticles } from './large-article-stack';
-import { LargeArticleProps } from '../../components/slices/large-article';
 import { FullWidthDividerMob } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
+import { GroupedArticle } from '../../components/slices/shared/grouped-article';
+import { StyledDivider } from './styles';
 import { CustomGridLayout } from '../shared/grid-layout';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
   articles: ArticleProps[];
-  largeArticles: LargeArticleProps[];
+  groupedArticles: {
+    articles: LeadArticleProps[];
+    tagL1: {
+      label: string;
+      href: string;
+    };
+  };
   smallArticles: ArticleProps[];
+  singleArticle: ArticleProps;
+  articlesWithListItems: LeadArticleProps;
 }
 
 export const LeadStory1 = ({
   leadArticle,
   articles,
-  largeArticles,
-  smallArticles
+  groupedArticles,
+  smallArticles,
+  singleArticle,
+  articlesWithListItems
 }: LeadStory1Props) => {
   const breakpointKey = useBreakpointKey();
 
@@ -40,6 +50,19 @@ export const LeadStory1 = ({
           imageRight: true
         }))
       : articles;
+
+  const modifiedArticlesWithUnorderedList = {
+    ...articlesWithListItems,
+    imageTop: true,
+    textBlockMarginBlockStart: 'space050',
+    typographyPreset:
+      breakpointKey === 'xs'
+        ? 'editorialHeadline040'
+        : breakpointKey === 'sm'
+          ? 'editorialHeadline050'
+          : 'editorialHeadline060',
+    showTagL1: false
+  };
 
   const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
 
@@ -70,7 +93,47 @@ export const LeadStory1 = ({
   return (
     <CustomGridLayout>
       <CellWithCustomPadding xs={12} md={5} lg={3} xl={3}>
-        <LargeArticles largeArticles={largeArticles} />
+        <Block
+          marginBlockEnd={{
+            xs: 'space040',
+            md: 'space000'
+          }}
+        >
+          <LeadArticle {...modifiedArticlesWithUnorderedList} />
+          {singleArticle && (
+            <>
+              <FullWidthDividerMob>
+                <StyledDivider
+                  overrides={{
+                    stylePreset: 'dashedDivider',
+                    marginBlockStart: !!articlesWithListItems.listData
+                      ? 'space020'
+                      : 'space040'
+                  }}
+                />
+              </FullWidthDividerMob>
+              <Article {...singleArticle} />
+            </>
+          )}
+          {groupedArticles && (
+            <>
+              <FullWidthDividerMob>
+                <Divider
+                  overrides={{
+                    stylePreset: 'dashedDivider',
+                    marginBlockStart: singleArticle
+                      ? 'space040'
+                      : !!articlesWithListItems.listData
+                        ? 'space020'
+                        : 'space040',
+                    marginBlockEnd: 'space040'
+                  }}
+                />
+              </FullWidthDividerMob>
+              <GroupedArticle {...groupedArticles} />
+            </>
+          )}
+        </Block>
       </CellWithCustomPadding>
       <LeadArticleCell xs={12} md={7} lg={6} xl={5}>
         <Hidden md lg xl>

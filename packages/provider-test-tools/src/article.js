@@ -5,21 +5,25 @@ import article from "../fixtures/article.json";
 
 const convertRatio = ratio => {
   if (ratio === "16:9") {
-    return "320/180";
+    return "320_180";
   }
 
   if (ratio === "3:2") {
-    return "300/200";
+    return "300_200";
   }
 
-  return "100/100";
+  return "100_100";
 };
 
 const getMediaUrl = (obj, ratio) => {
   const crop = obj[`crop${ratio.replace(":", "")}`];
 
   return {
-    url: crop ? crop.url : `https://placeimg.com/${convertRatio(ratio)}/tech`
+    url: crop
+      ? crop.url
+      : `https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_${convertRatio(
+          ratio
+        )}.jpg`
   };
 };
 
