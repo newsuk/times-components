@@ -439,22 +439,39 @@ exports[`Render Archive should render a snapshot 1`] = `
                           class="css-efqjdh"
                         >
                           <svg
-                            aria-hidden="true"
-                            class="css-f6f1pt-EmotionIconBase ex0cdmw0"
-                            fill="currentColor"
-                            focusable="false"
+                            class="css-16j74e3"
+                            fill="none"
+                            height="33"
                             overrides="[object Object]"
-                            viewBox="0 0 24 24"
+                            viewBox="0 0 33 33"
+                            width="33"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <rect
-                              fill="none"
-                              height="24"
-                              width="24"
-                            />
-                            <path
-                              d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
-                            />
+                            <mask
+                              height="33"
+                              id="mask0_4797_76249"
+                              maskUnits="userSpaceOnUse"
+                              style="mask-type: alpha;"
+                              width="33"
+                              x="0"
+                              y="0"
+                            >
+                              <path
+                                d="M20.3753 7.49951L18.4953 9.37951L24.602 15.4995H3.04199V18.1662H24.602L18.482 24.2862L20.3753 26.1662L29.7087 16.8328L20.3753 7.49951Z"
+                                fill="black"
+                              />
+                            </mask>
+                            <g
+                              mask="url(#mask0_4797_76249)"
+                            >
+                              <rect
+                                fill="#3B3B3B"
+                                height="32"
+                                width="32"
+                                x="0.375"
+                                y="0.833008"
+                              />
+                            </g>
                           </svg>
                           <p
                             class="css-159kr1k"
@@ -700,22 +717,39 @@ exports[`Render Archive should render a snapshot 1`] = `
                           class="css-efqjdh"
                         >
                           <svg
-                            aria-hidden="true"
-                            class="css-f6f1pt-EmotionIconBase ex0cdmw0"
-                            fill="currentColor"
-                            focusable="false"
+                            class="css-16j74e3"
+                            fill="none"
+                            height="33"
                             overrides="[object Object]"
-                            viewBox="0 0 24 24"
+                            viewBox="0 0 33 33"
+                            width="33"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <rect
-                              fill="none"
-                              height="24"
-                              width="24"
-                            />
-                            <path
-                              d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
-                            />
+                            <mask
+                              height="33"
+                              id="mask0_4797_76249"
+                              maskUnits="userSpaceOnUse"
+                              style="mask-type: alpha;"
+                              width="33"
+                              x="0"
+                              y="0"
+                            >
+                              <path
+                                d="M20.3753 7.49951L18.4953 9.37951L24.602 15.4995H3.04199V18.1662H24.602L18.482 24.2862L20.3753 26.1662L29.7087 16.8328L20.3753 7.49951Z"
+                                fill="black"
+                              />
+                            </mask>
+                            <g
+                              mask="url(#mask0_4797_76249)"
+                            >
+                              <rect
+                                fill="#3B3B3B"
+                                height="32"
+                                width="32"
+                                x="0.375"
+                                y="0.833008"
+                              />
+                            </g>
                           </svg>
                           <p
                             class="css-159kr1k"
@@ -961,22 +995,39 @@ exports[`Render Archive should render a snapshot 1`] = `
                           class="css-efqjdh"
                         >
                           <svg
-                            aria-hidden="true"
-                            class="css-f6f1pt-EmotionIconBase ex0cdmw0"
-                            fill="currentColor"
-                            focusable="false"
+                            class="css-16j74e3"
+                            fill="none"
+                            height="33"
                             overrides="[object Object]"
-                            viewBox="0 0 24 24"
+                            viewBox="0 0 33 33"
+                            width="33"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <rect
-                              fill="none"
-                              height="24"
-                              width="24"
-                            />
-                            <path
-                              d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
-                            />
+                            <mask
+                              height="33"
+                              id="mask0_4797_76249"
+                              maskUnits="userSpaceOnUse"
+                              style="mask-type: alpha;"
+                              width="33"
+                              x="0"
+                              y="0"
+                            >
+                              <path
+                                d="M20.3753 7.49951L18.4953 9.37951L24.602 15.4995H3.04199V18.1662H24.602L18.482 24.2862L20.3753 26.1662L29.7087 16.8328L20.3753 7.49951Z"
+                                fill="black"
+                              />
+                            </mask>
+                            <g
+                              mask="url(#mask0_4797_76249)"
+                            >
+                              <rect
+                                fill="#3B3B3B"
+                                height="32"
+                                width="32"
+                                x="0.375"
+                                y="0.833008"
+                              />
+                            </g>
                           </svg>
                           <p
                             class="css-159kr1k"
@@ -1222,22 +1273,39 @@ exports[`Render Archive should render a snapshot 1`] = `
                           class="css-efqjdh"
                         >
                           <svg
-                            aria-hidden="true"
-                            class="css-f6f1pt-EmotionIconBase ex0cdmw0"
-                            fill="currentColor"
-                            focusable="false"
+                            class="css-16j74e3"
+                            fill="none"
+                            height="33"
                             overrides="[object Object]"
-                            viewBox="0 0 24 24"
+                            viewBox="0 0 33 33"
+                            width="33"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <rect
-                              fill="none"
-                              height="24"
-                              width="24"
-                            />
-                            <path
-                              d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
-                            />
+                            <mask
+                              height="33"
+                              id="mask0_4797_76249"
+                              maskUnits="userSpaceOnUse"
+                              style="mask-type: alpha;"
+                              width="33"
+                              x="0"
+                              y="0"
+                            >
+                              <path
+                                d="M20.3753 7.49951L18.4953 9.37951L24.602 15.4995H3.04199V18.1662H24.602L18.482 24.2862L20.3753 26.1662L29.7087 16.8328L20.3753 7.49951Z"
+                                fill="black"
+                              />
+                            </mask>
+                            <g
+                              mask="url(#mask0_4797_76249)"
+                            >
+                              <rect
+                                fill="#3B3B3B"
+                                height="32"
+                                width="32"
+                                x="0.375"
+                                y="0.833008"
+                              />
+                            </g>
                           </svg>
                           <p
                             class="css-159kr1k"
@@ -1483,22 +1551,39 @@ exports[`Render Archive should render a snapshot 1`] = `
                           class="css-efqjdh"
                         >
                           <svg
-                            aria-hidden="true"
-                            class="css-f6f1pt-EmotionIconBase ex0cdmw0"
-                            fill="currentColor"
-                            focusable="false"
+                            class="css-16j74e3"
+                            fill="none"
+                            height="33"
                             overrides="[object Object]"
-                            viewBox="0 0 24 24"
+                            viewBox="0 0 33 33"
+                            width="33"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <rect
-                              fill="none"
-                              height="24"
-                              width="24"
-                            />
-                            <path
-                              d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
-                            />
+                            <mask
+                              height="33"
+                              id="mask0_4797_76249"
+                              maskUnits="userSpaceOnUse"
+                              style="mask-type: alpha;"
+                              width="33"
+                              x="0"
+                              y="0"
+                            >
+                              <path
+                                d="M20.3753 7.49951L18.4953 9.37951L24.602 15.4995H3.04199V18.1662H24.602L18.482 24.2862L20.3753 26.1662L29.7087 16.8328L20.3753 7.49951Z"
+                                fill="black"
+                              />
+                            </mask>
+                            <g
+                              mask="url(#mask0_4797_76249)"
+                            >
+                              <rect
+                                fill="#3B3B3B"
+                                height="32"
+                                width="32"
+                                x="0.375"
+                                y="0.833008"
+                              />
+                            </g>
                           </svg>
                           <p
                             class="css-159kr1k"
@@ -1744,22 +1829,39 @@ exports[`Render Archive should render a snapshot 1`] = `
                           class="css-efqjdh"
                         >
                           <svg
-                            aria-hidden="true"
-                            class="css-f6f1pt-EmotionIconBase ex0cdmw0"
-                            fill="currentColor"
-                            focusable="false"
+                            class="css-16j74e3"
+                            fill="none"
+                            height="33"
                             overrides="[object Object]"
-                            viewBox="0 0 24 24"
+                            viewBox="0 0 33 33"
+                            width="33"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <rect
-                              fill="none"
-                              height="24"
-                              width="24"
-                            />
-                            <path
-                              d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
-                            />
+                            <mask
+                              height="33"
+                              id="mask0_4797_76249"
+                              maskUnits="userSpaceOnUse"
+                              style="mask-type: alpha;"
+                              width="33"
+                              x="0"
+                              y="0"
+                            >
+                              <path
+                                d="M20.3753 7.49951L18.4953 9.37951L24.602 15.4995H3.04199V18.1662H24.602L18.482 24.2862L20.3753 26.1662L29.7087 16.8328L20.3753 7.49951Z"
+                                fill="black"
+                              />
+                            </mask>
+                            <g
+                              mask="url(#mask0_4797_76249)"
+                            >
+                              <rect
+                                fill="#3B3B3B"
+                                height="32"
+                                width="32"
+                                x="0.375"
+                                y="0.833008"
+                              />
+                            </g>
                           </svg>
                           <p
                             class="css-159kr1k"
