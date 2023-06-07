@@ -10,7 +10,8 @@ import {
 import {
   Wrap,
   StyledNewsKitPuzzlePlaceholder,
-  PuzzleCardComposable
+  PuzzleCardComposable,
+  PuzzleCardImgWrapper
 } from './styles';
 import { PuzzlesFlag } from '../flag';
 import { Puzzle } from '../archive/types';
@@ -39,13 +40,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
         stylePreset: 'puzzleCard'
       }}
     >
-      <Block
-        style={{
-          position: 'relative',
-          display: 'flex',
-          alignSelf: 'flex-start'
-        }}
-      >
+      <PuzzleCardImgWrapper>
         {imageUrl ? (
           <CardMedia
             media={{
@@ -67,7 +62,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
             <PuzzlesFlag status={data.status} />
           </Wrap>
         )}
-      </Block>
+      </PuzzleCardImgWrapper>
       <CardContent justifyItems="center">
         <CardLink
           expand

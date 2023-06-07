@@ -106,8 +106,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -148,7 +147,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -236,8 +235,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -278,7 +276,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -366,8 +364,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -408,7 +405,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -496,8 +493,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -538,7 +534,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -626,8 +622,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -668,7 +663,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -756,8 +751,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -798,7 +792,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -886,8 +880,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -928,7 +921,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1016,8 +1009,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -1058,7 +1050,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1187,8 +1179,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -1229,7 +1220,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1317,8 +1308,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -1359,7 +1349,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1447,8 +1437,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -1489,7 +1478,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1577,8 +1566,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -1619,7 +1607,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1707,8 +1695,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -1749,7 +1736,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1837,8 +1824,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -1879,7 +1865,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1967,8 +1953,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -2009,7 +1994,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -2097,8 +2082,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative; display: flex; align-self: flex-start;"
+              class="css-17csqz3"
             >
               <div
                 class="css-1kwj960"
@@ -2139,7 +2123,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
