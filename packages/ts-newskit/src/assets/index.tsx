@@ -1,8 +1,8 @@
 import React from 'react';
 import { customToNewsKitIcon, styled } from 'newskit';
-import { East } from '@emotion-icons/material/East';
-import { ArrowForwardIos } from '@emotion-icons/material/ArrowForwardIos';
-import { ArrowBackIosNew } from '@emotion-icons/material/ArrowBackIosNew';
+import EastArrow from './EastArrow';
+import SeeAllLeft from './SeeAllLeft';
+import SeeAllRight from './SeeAllRight';
 import SearchIcon from './SearchIcon';
 import BurgerIcon from './BurgerIcon';
 import RoundedPlusIcon from './RoundedPlusIcon';
@@ -69,16 +69,16 @@ export const NewsKitWaveBg = customToNewsKitIcon('NewskitWaveBg', props => (
 ));
 
 export const NewskitIconEast = customToNewsKitIcon('NewskitIconEast', props => (
-  <East {...props} />
+  <EastArrow {...props} />
 ));
 
 export const NewskitIconBack = customToNewsKitIcon('NewskitIconBack', props => (
-  <ArrowBackIosNew {...props} />
+  <SeeAllLeft {...props} />
 ));
 
 export const NewskitIconForward = customToNewsKitIcon(
   'NewskitIconForward',
-  props => <ArrowForwardIos {...props} />
+  props => <SeeAllRight {...props} />
 );
 
 export const NewsKitThumbsDownIcon = customToNewsKitIcon(

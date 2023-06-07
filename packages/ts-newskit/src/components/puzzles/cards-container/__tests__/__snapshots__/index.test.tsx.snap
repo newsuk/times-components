@@ -42,22 +42,38 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           type="button"
         >
           <svg
-            aria-hidden="true"
-            class="css-o0xy9h-EmotionIconBase ex0cdmw0"
-            fill="currentColor"
-            focusable="false"
+            class="css-1e6cmyg"
+            fill="none"
+            height="17"
             overrides="[object Object]"
-            viewBox="0 0 24 24"
+            viewBox="0 0 16 17"
+            width="16"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect
-              fill="none"
-              height="24"
-              width="24"
-            />
-            <polygon
-              points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"
-            />
+            <mask
+              height="17"
+              id="mask0_4797_41229"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: alpha;"
+              width="16"
+              x="0"
+              y="0"
+            >
+              <path
+                d="M11.6736 3.39289L10.4869 2.21289L3.89355 8.81289L10.4936 15.4129L11.6736 14.2329L6.25355 8.81289L11.6736 3.39289Z"
+                fill="#0A0A0A"
+              />
+            </mask>
+            <g
+              mask="url(#mask0_4797_41229)"
+            >
+              <rect
+                fill="#3B3B3B"
+                height="16"
+                width="16"
+                y="0.8125"
+              />
+            </g>
           </svg>
         </button>
         <button
@@ -66,21 +82,38 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           type="button"
         >
           <svg
-            aria-hidden="true"
-            class="css-o0xy9h-EmotionIconBase ex0cdmw0"
-            fill="currentColor"
-            focusable="false"
+            class="css-1e6cmyg"
+            fill="none"
+            height="17"
             overrides="[object Object]"
-            viewBox="0 0 24 24"
+            viewBox="0 0 16 17"
+            width="16"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M0 0h24v24H0z"
-              fill="none"
-            />
-            <path
-              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
-            />
+            <mask
+              height="17"
+              id="mask0_4797_41239"
+              maskUnits="userSpaceOnUse"
+              style="mask-type: alpha;"
+              width="16"
+              x="0"
+              y="0"
+            >
+              <path
+                d="M4.32666 14.2329L5.50666 15.4129L12.1067 8.81289L5.50666 2.21289L4.32666 3.39289L9.74666 8.81289L4.32666 14.2329Z"
+                fill="#0A0A0A"
+              />
+            </mask>
+            <g
+              mask="url(#mask0_4797_41239)"
+            >
+              <rect
+                fill="#3B3B3B"
+                height="16"
+                width="16"
+                y="0.8125"
+              />
+            </g>
           </svg>
         </button>
       </div>
