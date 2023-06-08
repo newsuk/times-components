@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.45.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.44.27...@times-components/ssr@2.45.0) (2023-06-08)
+
+
+### Features
+
+* TPA get requests ([#3393](https://github.com/newsuk/times-components/issues/3393)) ([c697ce1](https://github.com/newsuk/times-components/commit/c697ce17c4cfcae9dfe2486414a5063bd7b0587e))
+
+
+
+
+
 ## [2.44.27](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.44.26...@times-components/ssr@2.44.27) (2023-06-07)
 
 **Note:** Version bump only for package @times-components/ssr
