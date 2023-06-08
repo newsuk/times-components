@@ -20,7 +20,13 @@ const makeClient = options => {
   }
 
   const networkInterfaceOptions = {
-    fetch,
+    fetch: (url, options) => {
+      const compressedUrl = url
+        .replace(/(%20)+/g, "%20")
+        .replace(/(%0A)+/g, "");
+
+      return fetch(compressedUrl, options);
+    },
     headers: options.headers ? { ...options.headers } : {},
     uri: options.uri
   };
