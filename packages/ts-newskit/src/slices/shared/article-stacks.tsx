@@ -1,6 +1,8 @@
 import React from 'react';
 import { Block, BreakpointKeys, Divider, GridLayout, Scroll } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
+import { StackItem } from '../shared-styles';
+import { ComposedArticleStack } from './composed-article-stack';
 
 export const ArticleStackLarge = ({
   articles,
@@ -111,4 +113,29 @@ export const ArticleStackSmall = ({
   );
 
   return <>{articleGrid}</>;
+};
+
+export const ArticleStackLeadStory = ({
+  mdWidth,
+  modifedArticles,
+  breakpoint
+}: {
+  mdWidth: string;
+  modifedArticles: ArticleProps[];
+  breakpoint: BreakpointKeys;
+}) => {
+  return (
+    <StackItem
+      $width={{
+        md: mdWidth,
+        lg: '185px',
+        xl: '405px'
+      }}
+    >
+      <ComposedArticleStack
+        articles={modifedArticles}
+        breakpoint={breakpoint}
+      />
+    </StackItem>
+  );
 };

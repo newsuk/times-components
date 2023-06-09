@@ -37,6 +37,7 @@ export interface LeadArticleProps {
   imageTop?: boolean;
   hasTopBorder?: boolean;
   contentTop?: boolean;
+  contentWidth?: string;
   typographyPreset?: string;
   loadingAspectRatio?: string;
   marginBlockStart?: string;
@@ -57,6 +58,7 @@ export const LeadArticle = ({
   imageTop,
   hasTopBorder = true,
   contentTop,
+  contentWidth,
   typographyPreset,
   loadingAspectRatio,
   marginBlockStart,
@@ -79,7 +81,7 @@ export const LeadArticle = ({
           : `content media`
       }}
       columnGap="space040"
-      columns={{ md: imageTop ? '1fr' : '3fr 5fr' }}
+      columns={{ md: imageTop ? '100%' : `${contentWidth || '260px'} auto` }}
     >
       {image && (
         <Block

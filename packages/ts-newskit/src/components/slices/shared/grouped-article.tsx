@@ -2,7 +2,7 @@ import React from 'react';
 import { Block, GridLayout } from 'newskit';
 import { TextLink } from '../shared-styles';
 import { LeadArticle, LeadArticleProps } from '../lead-article/index';
-import { FullWidthDividerMob } from '../shared-styles/index';
+import { FullWidthBlock } from '../shared-styles/index';
 import { StyledDivider } from '../../../slices/lead-story-1/styles';
 
 export interface GroupedArticleProps {
@@ -39,13 +39,13 @@ export const GroupedArticle = ({ articles, tagL1 }: GroupedArticleProps) => {
             return (
               <React.Fragment key={article.headline}>
                 {isSecondDivider && (
-                  <FullWidthDividerMob marginBlock="space040">
+                  <FullWidthBlock marginBlock="space040">
                     <StyledDivider
                       overrides={{
                         stylePreset: 'dashedDivider'
                       }}
                     />
-                  </FullWidthDividerMob>
+                  </FullWidthBlock>
                 )}
                 <LeadArticle {...article} />
               </React.Fragment>
