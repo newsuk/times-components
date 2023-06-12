@@ -131,6 +131,10 @@ export const ArticleStackLeadStory = ({
         lg: '185px',
         xl: '405px'
       }}
+      marginBlockStart={{
+        xs: 'space040',
+        lg: 'space000'
+      }}
     >
       <ComposedArticleStack
         articles={modifedArticles}

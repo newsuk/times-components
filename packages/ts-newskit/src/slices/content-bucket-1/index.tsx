@@ -10,11 +10,7 @@ import {
   SliceHeaderProps
 } from '../../components/slices/slice-header';
 import { ArticleProps } from '../../components/slices/article';
-import {
-  LeadStoryDivider,
-  StackItem,
-  BlockItem
-} from '../shared-styles';
+import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
 
 import { CommentStack } from './comment-stack';
 import { ArticleStack } from './article-stack';

@@ -420,10 +420,10 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="css-1tr95hc"
+      class="css-p12rzj"
     >
       <div
-        class="css-1osy5lm"
+        class="css-1r4d587"
       >
         <div
           class="css-1g5vzsh"
@@ -1379,10 +1379,10 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
       </div>
     </div>
     <div
-      class="css-1tr95hc"
+      class="css-p12rzj"
     >
       <div
-        class="css-1osy5lm"
+        class="css-1r4d587"
       >
         <div
           class="css-1g5vzsh"
@@ -2134,7 +2134,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
       class="css-11icnc2"
     >
       <div
-        class="css-1osy5lm"
+        class="css-1r4d587"
       >
         <div
           class="css-1g5vzsh"
@@ -3049,7 +3049,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
       class="css-11icnc2"
     >
       <div
-        class="css-1osy5lm"
+        class="css-1r4d587"
       >
         <div
           class="css-1g5vzsh"

@@ -23,7 +23,7 @@ export const ArticleStack = ({
   verticalArticles: LeadArticleProps[];
   breakpoint: BreakpointKeys;
   horizontalArticles: LeadArticleProps[];
-  horizontalArticleContentWidth: string;
+  horizontalArticleContentWidth?: string;
 }) => {
   const modifiedVerticalArticles = verticalArticles.map(item => ({
     ...item,

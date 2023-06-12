@@ -105,7 +105,7 @@ export const LeadStory2 = ({
         </Block>
       </StackItem>
       {screenXsAndSm ? (
-        <BlockItem>
+        <BlockItem marginBlockStart="space040">
           <ComposedArticleStack
             articles={modifedArticles}
             breakpoint={breakpointKey}
