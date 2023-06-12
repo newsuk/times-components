@@ -1,0 +1,41 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { NewsKitProvider } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../theme';
+import { FreeTrial } from './index';
+
+<Meta
+  title="Newskit Components/Puzzles/FreeTrial"
+  component={FreeTrial}
+/>
+
+# FreeTrial component
+The `FreeTrial` component is used to display a list of available challenges.
+
+## Props
+<Props of={FreeTrial} />
+
+## Code Example
+`<FreeTrial
+  data={ freeTrialHeader, freeTrialSubheadline, url, title }
+/>
+`
+
+An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the FreeTrial component.
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const FreeTrialStory = ({ freeTrialHeader, freeTrialSubheadline, url, title }) => (
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+    <FreeTrial {...{ freeTrialHeader, freeTrialSubheadline, url, title }} />
+  </NewsKitProvider>
+);
+
+<Story name="FreeTrial"  args={{
+    freeTrialHeader: "Play thousands of puzzles with unlimited digital access",
+    freeTrialSubheadline: "Brain train, read and comment free for one month",
+    url: "https://www.newskit.co.uk/",
+    title: "Start your free trial",
+  }}>
+  {FreeTrialStory.bind({})}
+</Story>

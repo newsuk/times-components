@@ -28,7 +28,7 @@ export { PuzzlesFlag } from './components/puzzles/flag';
 export { AccordionGroup } from './components/misc/accordion/accordion-group';
 export { BreakoutSection } from './components/puzzles/breakout-section';
 export { CardsContainer } from './components/puzzles/cards-container';
-export { FreeTrail } from './components/puzzles/free-trail';
+export { FreeTrial } from './components/puzzles/free-trial';
 export { PersonalStats } from './components/puzzles/personal-stats';
 export { PuzzleCard } from './components/puzzles/puzzle-card';
 export { StoryCardListing } from './components/puzzles/story-card-listing';

@@ -9,7 +9,7 @@ import {
 import IconD2 from '../../../assets/IconD2';
 import IconA4 from '../../../assets/IconA4';
 
-export const FreeTrailContainer = styled(Stack)<StackProps>`
+export const FreeTrialContainer = styled(Stack)<StackProps>`
   overflow: hidden;
   ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
   ${getMediaQueryFromTheme('xs')} {
