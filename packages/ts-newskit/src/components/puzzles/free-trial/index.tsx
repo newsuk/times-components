@@ -1,29 +1,29 @@
 import React, { FC } from 'react';
 import { Block, TextBlock, Button } from 'newskit';
 import {
-  FreeTrailContainer,
+  FreeTrialContainer,
   StyledBlock,
   StyledIconA4,
   StyledIconD2,
   StyledWrapper
 } from './styles';
 
-export interface FreeTrailProps {
-  freeTrailHeader: string;
-  freeTrailSubheadline: string;
+export interface FreeTrialProps {
+  freeTrialHeader: string;
+  freeTrialSubheadline: string;
   url: string;
   title: string;
 }
 
-export const FreeTrail: FC<FreeTrailProps> = ({
-  freeTrailHeader,
-  freeTrailSubheadline,
+export const FreeTrial: FC<FreeTrialProps> = ({
+  freeTrialHeader,
+  freeTrialSubheadline,
   url,
   title
 }) => {
   return (
     <Block as="section">
-      <FreeTrailContainer paddingBlock="space090" paddingInline="space045">
+      <FreeTrialContainer paddingBlock="space090" paddingInline="space045">
         <StyledBlock marginBlock="space000" marginInline="auto">
           <StyledWrapper>
             <TextBlock
@@ -34,7 +34,7 @@ export const FreeTrail: FC<FreeTrailProps> = ({
               }}
               stylePreset="inkContrast"
             >
-              {freeTrailHeader}
+              {freeTrialHeader}
             </TextBlock>
             <TextBlock
               as="p"
@@ -45,13 +45,13 @@ export const FreeTrail: FC<FreeTrailProps> = ({
               stylePreset="inkBase"
               marginBlockStart="space045"
             >
-              {freeTrailSubheadline}
+              {freeTrialSubheadline}
             </TextBlock>
             <Button
               size="medium"
               href={url}
               overrides={{
-                stylePreset: 'freeTrailShadowBtn',
+                stylePreset: 'freeTrialShadowBtn',
                 typographyPreset: 'utilityButton020',
                 paddingBlock: 'space030',
                 paddingInline: 'space040',
@@ -69,7 +69,7 @@ export const FreeTrail: FC<FreeTrailProps> = ({
           <StyledIconD2 />
           <StyledIconA4 />
         </StyledBlock>
-      </FreeTrailContainer>
+      </FreeTrialContainer>
     </Block>
   );
 };

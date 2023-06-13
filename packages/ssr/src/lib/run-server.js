@@ -20,13 +20,25 @@ const makeClient = options => {
   }
 
   const networkInterfaceOptions = {
-    fetch,
+    fetch: (url, opts) => {
+      const compressedUrl = url
+        .replace(/(%20)+/g, "%20")
+        .replace(/(%0A)+/g, "");
+
+      return fetch(compressedUrl, opts);
+    },
     headers: { "content-type": "application/json" },
     uri: options.uri
   };
 
   if (options.headers) {
     Object.assign(networkInterfaceOptions.headers, options.headers);
+  }
+
+  if (options.useGET) {
+    networkInterfaceOptions.headers["content-type"] =
+      "application/x-www-form-urlencoded";
+    networkInterfaceOptions.useGETForQueries = true;
   }
 
   const httpLink = createHttpLink(networkInterfaceOptions);

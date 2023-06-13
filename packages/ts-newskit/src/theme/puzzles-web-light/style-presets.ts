@@ -105,7 +105,7 @@ stylePresets.accordionPanelPrimary = {
   }
 };
 
-stylePresets.freeTrailShadowBtn = {
+stylePresets.freeTrialShadowBtn = {
   base: {
     borderStyle: 'solid',
     borderColor: '{{colors.interface060}}',

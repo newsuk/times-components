@@ -9,7 +9,7 @@ interface CardsContainerProps {
   cards: Puzzle[];
   title?: string;
   isScrollable?: boolean;
-  seeAllLink: string;
+  seeAllLink?: string;
 }
 
 export const CardsContainer = ({

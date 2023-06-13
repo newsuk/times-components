@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`FreeTrail should render freeTrail banner component 1`] = `
+exports[`FreeTrial should render freeTrial banner component 1`] = `
 <DocumentFragment>
   <section
     class="css-13byt3y"
@@ -32,7 +32,7 @@ exports[`FreeTrail should render freeTrail banner component 1`] = `
             <span
               class="css-135wemz"
             >
-              Start your free trail
+              Start your free trial
             </span>
           </a>
         </div>
