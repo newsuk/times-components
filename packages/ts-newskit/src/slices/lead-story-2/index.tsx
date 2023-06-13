@@ -1,19 +1,14 @@
-import { Block, Divider, useBreakpointKey, Visible } from 'newskit';
+import { Block, Divider, Stack, useBreakpointKey, Visible } from 'newskit';
 import React from 'react';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
-import {
-  LeadStoryDivider,
-  StyledLeadStoryCell,
-  CellWithCustomPadding
-} from '../shared-styles';
+import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
 import { ArticleStack } from './article-stacks';
-import { FullWidthDividerMob } from '../../components/slices/shared-styles';
-import { ComposedArticleStack } from '../shared/composed-article-stack';
-import { CustomGridLayout } from '../shared/grid-layout';
+import { FullWidthBlock } from '../../components/slices/shared-styles';
+import { ArticleStackLeadStory, ComposedArticleStack } from '../shared';
 
 export interface LeadStory2Props {
   leadArticle: LeadArticleProps;
@@ -54,8 +49,26 @@ export const LeadStory2 = ({
   };
 
   return (
-    <CustomGridLayout>
-      <StyledLeadStoryCell xs={12} md={12} lg={9} xl={8}>
+    <Stack
+      flow="horizontal-top"
+      stackDistribution="center"
+      wrap="wrap"
+      marginInline={{
+        xs: 'space045',
+        md: 'space000'
+      }}
+    >
+      <StackItem
+        $width={{
+          xs: '100%',
+          md: '720px',
+          lg: '760px',
+          xl: '840px'
+        }}
+        marginInlineEnd={{
+          lg: 'space060'
+        }}
+      >
         <Block>
           <Visible lg xl>
             <LeadStoryDivider
@@ -64,9 +77,9 @@ export const LeadStory2 = ({
               position="right"
             />
           </Visible>
-          <LeadArticle {...modifiedLeadArticle} />
+          <LeadArticle contentWidth="245px" {...modifiedLeadArticle} />
           {screenXsAndSm ? (
-            <FullWidthDividerMob>
+            <FullWidthBlock>
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
@@ -74,7 +87,7 @@ export const LeadStory2 = ({
                   marginBlockEnd: 'space040'
                 }}
               />
-            </FullWidthDividerMob>
+            </FullWidthBlock>
           ) : (
             <Divider
               overrides={{
@@ -87,15 +100,24 @@ export const LeadStory2 = ({
             verticalArticles={verticalArticles}
             breakpoint={breakpointKey}
             horizontalArticles={horizontalArticles}
+            horizontalArticleContentWidth="230px"
           />
         </Block>
-      </StyledLeadStoryCell>
-      <CellWithCustomPadding xs={12} lg={3} xl={4}>
-        <ComposedArticleStack
-          articles={modifedArticles}
+      </StackItem>
+      {screenXsAndSm ? (
+        <BlockItem marginBlockStart="space040">
+          <ComposedArticleStack
+            articles={modifedArticles}
+            breakpoint={breakpointKey}
+          />
+        </BlockItem>
+      ) : (
+        <ArticleStackLeadStory
+          mdWidth="722px"
+          modifedArticles={modifedArticles}
           breakpoint={breakpointKey}
         />
-      </CellWithCustomPadding>
-    </CustomGridLayout>
+      )}
+    </Stack>
   );
 };
