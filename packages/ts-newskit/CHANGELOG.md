@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.57.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.56.4...@times-components/ts-newskit@1.57.0) (2023-06-13)
+
+
+### Features
+
+* **TMRX-1093:** implement design feedback from grid to flex layout ([#3395](https://github.com/newsuk/times-components/issues/3395)) ([38009e5](https://github.com/newsuk/times-components/commit/38009e57dc60e88869c9434fbf50811a764dce62))
+
+
+
+
+
 ## [1.56.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.56.3...@times-components/ts-newskit@1.56.4) (2023-06-12)
 
 **Note:** Version bump only for package @times-components/ts-newskit

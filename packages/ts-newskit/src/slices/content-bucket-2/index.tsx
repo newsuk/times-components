@@ -5,8 +5,9 @@ import {
   SliceHeaderProps
 } from '../../components/slices/slice-header';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { CellNoMargin, CellWithCustomPadding } from '../shared-styles';
-import { CustomGridLayout } from '../shared/grid-layout';
+import { StackItem } from '../shared-styles';
+import { CustomStackLayout } from '../shared';
+import { FullWidthBlock } from '../../components/slices/shared-styles';
 
 export interface ContentBucket2Props {
   section: SliceHeaderProps;
@@ -18,11 +19,13 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
   const isMob = breakpointKey === 'xs' || breakpointKey === 'sm';
 
   return (
-    <CustomGridLayout>
-      <CellWithCustomPadding xs={12}>
-        <SliceHeader {...section} />
-      </CellWithCustomPadding>
-      <CellNoMargin xs={12}>
+    <CustomStackLayout>
+      <StackItem>
+        <FullWidthBlock>
+          <SliceHeader {...section} />
+        </FullWidthBlock>
+      </StackItem>
+      <StackItem>
         <GridLayout
           columns={{
             xs: '1fr',
@@ -53,7 +56,7 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
             );
           })}
         </GridLayout>
-      </CellNoMargin>
-    </CustomGridLayout>
+      </StackItem>
+    </CustomStackLayout>
   );
 };

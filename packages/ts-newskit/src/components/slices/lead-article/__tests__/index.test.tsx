@@ -69,4 +69,14 @@ describe('Render Component one', () => {
     expect(tag).not.toBeInTheDocument();
     expect(flag).not.toBeInTheDocument();
   });
+
+  it('should use corrrect spacing if `contentTop` is set', () => {
+    const { getByText } = render(<LeadArticle {...leadStoryData} contentTop />);
+    const headline = getByText(leadStoryData.headline);
+    const cardContainer = headline.closest('div');
+
+    expect(cardContainer).toHaveStyle({
+      marginBlockEnd: '16px'
+    });
+  });
 });

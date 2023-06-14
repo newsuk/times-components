@@ -11,7 +11,7 @@ import {
 import {
   CardHeadlineLink,
   FullWidthCardMediaMob,
-  FullWidthDividerMob
+  FullWidthBlock
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 
@@ -87,14 +87,14 @@ export const Article = ({
       {hasTopBorder && (
         <GridLayoutItem area="border">
           {isFullWidth ? (
-            <FullWidthDividerMob>
+            <FullWidthBlock>
               <Divider
                 overrides={{
                   marginBlockEnd: hideImage ? 'space000' : 'space040',
                   stylePreset: 'dashedDivider'
                 }}
               />
-            </FullWidthDividerMob>
+            </FullWidthBlock>
           ) : (
             <Divider
               overrides={{

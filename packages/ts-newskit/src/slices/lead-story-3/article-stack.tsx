@@ -1,7 +1,7 @@
 import { Block, Divider, BreakpointKeys } from 'newskit';
 import React from 'react';
 import { BlockNoTopMargin } from '../lead-story-1/styles';
-import { FullWidthDividerMob } from '../../components/slices/shared-styles';
+import { FullWidthBlock } from '../../components/slices/shared-styles';
 import {
   LeadArticle,
   LeadArticleProps
@@ -44,13 +44,13 @@ export const ArticleStack = ({
           return (
             <>
               {index !== 0 && (
-                <FullWidthDividerMob>
+                <FullWidthBlock>
                   <Divider
                     overrides={{
                       stylePreset: 'dashedDivider'
                     }}
                   />
-                </FullWidthDividerMob>
+                </FullWidthBlock>
               )}
               <Block marginBlock="space040">
                 <LeadArticle {...articlesWithModifiedTypography} />

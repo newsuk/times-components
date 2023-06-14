@@ -2,7 +2,10 @@ import React from 'react';
 import { Block, Divider, Hidden, Visible, BreakpointKeys } from 'newskit';
 import { ArticleProps } from '../../components/slices/article';
 import { ArticleStackLarge, ArticleStackSmall } from './article-stacks';
-import { FullWidthDividerMob } from '../../components/slices/shared-styles';
+import {
+  FullWidthBlock,
+  FullWidthHidden
+} from '../../components/slices/shared-styles';
 
 export interface LeadStory1Props {
   articles: ArticleProps[];
@@ -21,16 +24,16 @@ export const ComposedArticleStack = ({
 
   return (
     <>
-      <Hidden lg xl>
-        <FullWidthDividerMob>
+      <FullWidthHidden lg xl>
+        <FullWidthBlock>
           <Divider
             overrides={{
               marginBlockEnd: 'space040',
               stylePreset: 'dashedDivider'
             }}
           />
-        </FullWidthDividerMob>
-      </Hidden>
+        </FullWidthBlock>
+      </FullWidthHidden>
       <ArticleStackLarge articles={articlesArray} breakpoint={breakpoint} />
       <Visible md>
         <Hidden xs sm>
