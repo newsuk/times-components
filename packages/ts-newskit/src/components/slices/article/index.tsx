@@ -35,6 +35,7 @@ export interface ArticleProps {
   isLeadImage?: boolean;
   imageRight?: boolean;
   isFullWidth?: boolean;
+  articleTitleMarginTop?: string;
 }
 
 type LayoutProps = {
@@ -51,7 +52,8 @@ export const Article = ({
   hideImage,
   isLeadImage,
   imageRight,
-  isFullWidth
+  isFullWidth,
+  articleTitleMarginTop
 }: ArticleProps) => {
   const cardImage = !hideImage &&
     image && {
@@ -63,6 +65,8 @@ export const Article = ({
     };
 
   const CardMediaComponent = isLeadImage ? FullWidthCardMediaMob : CardMedia;
+  const titleMarginBlockStart =
+    imageRight || hideImage ? 'space000' : articleTitleMarginTop || 'space040';
 
   const Layout: React.FC<LayoutProps> = ({ children }) => {
     return imageRight ? <Block>{children}</Block> : <>{children}</>;
@@ -90,7 +94,7 @@ export const Article = ({
             <FullWidthBlock>
               <Divider
                 overrides={{
-                  marginBlockEnd: hideImage ? 'space000' : 'space040',
+                  marginBlockEnd: 'space040',
                   stylePreset: 'dashedDivider'
                 }}
               />
@@ -98,7 +102,7 @@ export const Article = ({
           ) : (
             <Divider
               overrides={{
-                marginBlockEnd: hideImage ? 'space000' : 'space040',
+                marginBlockEnd: 'space040',
                 stylePreset: 'dashedDivider'
               }}
             />
@@ -126,7 +130,7 @@ export const Article = ({
             role="link"
             overrides={{
               typographyPreset: 'editorialHeadline020',
-              marginBlockStart: imageRight ? 'space000' : 'space040'
+              marginBlockStart: titleMarginBlockStart
             }}
           >
             {title}

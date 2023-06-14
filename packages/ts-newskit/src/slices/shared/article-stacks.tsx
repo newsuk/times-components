@@ -82,18 +82,12 @@ export const ArticleStackSmall = ({
         const articleBorder = breakpoint !== 'xs' &&
           breakpoint !== 'sm' &&
           articleIndex < articleArr.length - 1 && (
-            <Block
-              marginBlockStart={{
-                md: !hideImage ? 'space000' : 'space040'
+            <Divider
+              overrides={{
+                stylePreset: 'lightDivider'
               }}
-            >
-              <Divider
-                overrides={{
-                  stylePreset: 'lightDivider'
-                }}
-                vertical
-              />
-            </Block>
+              vertical
+            />
           );
         return (
           <React.Fragment key={article.title}>

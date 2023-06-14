@@ -456,15 +456,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            class="css-givux0"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-13rcg9f"
-              data-testid="divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1fgalmf"
           >
@@ -887,7 +883,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
         >
           <hr
             aria-hidden="true"
-            class="css-1f0staz"
+            class="css-obfal1"
             data-testid="divider"
           />
         </div>
@@ -954,15 +950,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 </div>
               </div>
             </div>
-            <div
-              class="css-givux0"
-            >
-              <hr
-                aria-hidden="true"
-                class="css-13rcg9f"
-                data-testid="divider"
-              />
-            </div>
+            <hr
+              aria-hidden="true"
+              class="css-13rcg9f"
+              data-testid="divider"
+            />
             <div
               class="css-1fgalmf"
             >
@@ -1507,15 +1499,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               </div>
             </div>
           </div>
-          <div
-            class="css-givux0"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-13rcg9f"
-              data-testid="divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1fgalmf"
           >
@@ -1771,7 +1759,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-1f0staz"
+            class="css-obfal1"
             data-testid="divider"
           />
         </div>
@@ -1791,7 +1779,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-diffbd"
                 >
                   <a
-                    class="css-u57k3c"
+                    class="css-bxykrz"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -1818,15 +1806,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 </div>
               </div>
             </div>
-            <div
-              class="css-17jjsyb"
-            >
-              <hr
-                aria-hidden="true"
-                class="css-13rcg9f"
-                data-testid="divider"
-              />
-            </div>
+            <hr
+              aria-hidden="true"
+              class="css-13rcg9f"
+              data-testid="divider"
+            />
             <div
               class="css-1fgalmf"
             >
@@ -1837,7 +1821,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-diffbd"
                 >
                   <a
-                    class="css-u57k3c"
+                    class="css-bxykrz"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2312,7 +2296,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 >
                   <hr
                     aria-hidden="true"
-                    class="css-exb5cr"
+                    class="css-1i1gqyx"
                     data-testid="divider"
                   />
                 </div>
@@ -2321,7 +2305,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <a
-                  class="css-u57k3c"
+                  class="css-bxykrz"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2362,7 +2346,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 >
                   <hr
                     aria-hidden="true"
-                    class="css-exb5cr"
+                    class="css-1i1gqyx"
                     data-testid="divider"
                   />
                 </div>
@@ -2371,7 +2355,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <a
-                  class="css-u57k3c"
+                  class="css-bxykrz"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2740,7 +2724,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-1f0staz"
+            class="css-obfal1"
             data-testid="divider"
           />
         </div>
@@ -3304,7 +3288,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 >
                   <hr
                     aria-hidden="true"
-                    class="css-exb5cr"
+                    class="css-1i1gqyx"
                     data-testid="divider"
                   />
                 </div>
@@ -3313,7 +3297,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <a
-                  class="css-u57k3c"
+                  class="css-bxykrz"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3354,7 +3338,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 >
                   <hr
                     aria-hidden="true"
-                    class="css-exb5cr"
+                    class="css-1i1gqyx"
                     data-testid="divider"
                   />
                 </div>
@@ -3363,7 +3347,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <a
-                  class="css-u57k3c"
+                  class="css-bxykrz"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3732,7 +3716,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-1f0staz"
+            class="css-obfal1"
             data-testid="divider"
           />
         </div>

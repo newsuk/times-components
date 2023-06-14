@@ -12,7 +12,7 @@ import {
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
-import { LeadStoryDivider, RelativeBlockItem } from '../shared-styles';
+import { RelativeBlockItem } from '../shared-styles';
 
 export const ArticleStack = ({
   verticalArticles,
@@ -38,7 +38,7 @@ export const ArticleStack = ({
   }));
   const articleGridVertical = (
     <GridLayout
-      columns={{ md: '1fr 1px 1fr' }}
+      columns={{ md: '1px 1fr 1px 1fr' }}
       columnGap={{ md: 'space040' }}
       overrides={{ marginBlockStart: 'space000' }}
     >
@@ -57,6 +57,7 @@ export const ArticleStack = ({
 
           return (
             <React.Fragment key={article.headline}>
+              {articleBorder}
               <Block>
                 <FullWidthBlock>
                   <Visible xs sm>
@@ -100,11 +101,6 @@ export const ArticleStack = ({
                 <FullWidthBlock>{articleBorder}</FullWidthBlock>
                 <LeadArticle {...article} />
               </Block>
-              <LeadStoryDivider
-                overrides={{ stylePreset: 'lightDivider' }}
-                vertical
-                position="right"
-              />
             </RelativeBlockItem>
           );
         }
@@ -121,7 +117,7 @@ export const ArticleStack = ({
           : 'vertical-left'
       }
       spaceInline={
-        breakpoint === 'xs' || breakpoint === 'sm' ? 'space000' : 'space060'
+        breakpoint === 'xs' || breakpoint === 'sm' ? 'space000' : 'space040'
       }
     >
       {articleStackHorizontal}

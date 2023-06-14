@@ -21,6 +21,12 @@ describe('Render Content Bucket 1 Slice', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
+
+  test('Slice matches snapshot for mobile', () => {
+    (useBreakpointKey as any).mockReturnValue('sm');
+    const { asFragment } = renderComponent();
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
 
 describe('Content Bucket 1 Articles list ', () => {
