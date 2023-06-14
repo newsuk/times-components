@@ -124,14 +124,17 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="0"
         >
           <a
-            class="css-hisx5a"
-            data-testid="buttonLink"
-            href="/"
+            class="css-9rhswx"
+            href="/puzzles/crosswords?puzzlesPage=true"
           >
             <span
-              class="css-135wemz"
+              class="css-17x5lw"
             >
-              Crosswords
+              <span
+                class="css-ynhrmm"
+              >
+                Crosswords
+              </span>
             </span>
           </a>
         </div>
@@ -140,14 +143,17 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="1"
         >
           <a
-            class="css-hisx5a"
-            data-testid="buttonLink"
-            href="/"
+            class="css-9rhswx"
+            href="/puzzles/sudokus?puzzlesPage=true"
           >
             <span
-              class="css-135wemz"
+              class="css-17x5lw"
             >
-              Sudokus
+              <span
+                class="css-ynhrmm"
+              >
+                Sudokus
+              </span>
             </span>
           </a>
         </div>
@@ -156,14 +162,17 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="2"
         >
           <a
-            class="css-hisx5a"
-            data-testid="buttonLink"
-            href="/"
+            class="css-9rhswx"
+            href="/puzzles/word-puzzles?puzzlesPage=true"
           >
             <span
-              class="css-135wemz"
+              class="css-17x5lw"
             >
-              Word Puzzles
+              <span
+                class="css-ynhrmm"
+              >
+                Word Puzzles
+              </span>
             </span>
           </a>
         </div>
@@ -172,14 +181,17 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="3"
         >
           <a
-            class="css-hisx5a"
-            data-testid="buttonLink"
-            href="/"
+            class="css-9rhswx"
+            href="/puzzles/numbers-and-logic?puzzlesPage=true"
           >
             <span
-              class="css-135wemz"
+              class="css-17x5lw"
             >
-              Numbers and Logic
+              <span
+                class="css-ynhrmm"
+              >
+                Numbers and Logic
+              </span>
             </span>
           </a>
         </div>
@@ -188,14 +200,17 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="4"
         >
           <a
-            class="css-hisx5a"
-            data-testid="buttonLink"
-            href="/"
+            class="css-9rhswx"
+            href="/puzzles/quizzes-and-teasers?puzzlesPage=true"
           >
             <span
-              class="css-135wemz"
+              class="css-17x5lw"
             >
-              Quizzes and Teasers
+              <span
+                class="css-ynhrmm"
+              >
+                Quizzes and Teasers
+              </span>
             </span>
           </a>
         </div>
@@ -204,14 +219,17 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="5"
         >
           <a
-            class="css-hisx5a"
-            data-testid="buttonLink"
-            href="/"
+            class="css-9rhswx"
+            href="/puzzles/board-and-card-games?puzzlesPage=true"
           >
             <span
-              class="css-135wemz"
+              class="css-17x5lw"
             >
-              Board and Card Games
+              <span
+                class="css-ynhrmm"
+              >
+                Board and Card Games
+              </span>
             </span>
           </a>
         </div>
