@@ -53,7 +53,7 @@ export const Article = ({
   isLeadImage,
   imageRight,
   isFullWidth,
-  articleTitleMarginTop
+  articleTitleMarginTop = 'space040'
 }: ArticleProps) => {
   const cardImage = !hideImage &&
     image && {
@@ -66,7 +66,7 @@ export const Article = ({
 
   const CardMediaComponent = isLeadImage ? FullWidthCardMediaMob : CardMedia;
   const titleMarginBlockStart =
-    imageRight || hideImage ? 'space000' : articleTitleMarginTop || 'space040';
+    imageRight || hideImage ? 'space000' : articleTitleMarginTop;
 
   const Layout: React.FC<LayoutProps> = ({ children }) => {
     return imageRight ? <Block>{children}</Block> : <>{children}</>;
