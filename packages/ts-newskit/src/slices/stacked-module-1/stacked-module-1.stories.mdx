@@ -1,5 +1,5 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
-import { TCThemeProvider, themes } from '../../utils/index.tsx';
+import { TCThemeProvider, themes, GridOverlay } from '../../utils/index.tsx';
 import { StackModule1 } from "./";
 import { stackedModule1Articles } from '../fixtures/data.json';
 
@@ -22,9 +22,12 @@ This takes in a series of props, as below, to display the part of the slices.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const StackModule1Story = ({ articles: stackedModule1Articles, theme }) => (
+export const StackModule1Story = ({ articles: stackedModule1Articles, theme, gridOverlay }) => (
   <TCThemeProvider theme={theme}>
-    <StackModule1 {...{ articles: stackedModule1Articles }} />
+    <>
+      <GridOverlay show={gridOverlay} />
+      <StackModule1 {...{ articles: stackedModule1Articles }} />
+    </> 
   </TCThemeProvider>
 );
 StackModule1Story.args = {
@@ -39,6 +42,9 @@ StackModule1Story.args = {
       options: Object.keys(themes),
       mapping: themes,
       control: { type: 'select' },
+    },
+  gridOverlay: {
+     control: { type: 'boolean' },
     },
   }}
 >
