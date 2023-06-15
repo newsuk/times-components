@@ -1,11 +1,9 @@
 import styled from 'styled-components';
-// import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
+import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 import { WidgetContainerBase } from '../shared-styles';
 
-export const WidgetContainer = styled(WidgetContainerBase)``;
-
-/*
+export const WidgetContainer = styled(WidgetContainerBase)`
   .Opta {
     h2 {
       margin: 20px 0 10px 0 !important;
@@ -18,17 +16,7 @@ export const WidgetContainer = styled(WidgetContainerBase)``;
       table {
         tbody {
           tr {
-            th.Opta-Stats-Bars-Text {
-              height: auto;
-              padding: 20px 0 0 0;
-              color: ${colours.functional.brandColour};
-              font-family: ${fonts.supporting};
-              font-size: 14px;
-              line-height: 14px;
-            }
-
             td {
-              height: auto;
               color: ${colours.functional.brandColour};
               font-family: ${fonts.headline};
               font-size: 18px;
@@ -43,7 +31,7 @@ export const WidgetContainer = styled(WidgetContainerBase)``;
                 }
 
                 img {
-                  width: 40px;
+                  height: 40px;
                 }
               }
 
@@ -58,76 +46,11 @@ export const WidgetContainer = styled(WidgetContainerBase)``;
                   text-align: right;
                 }
               }
-
-              &.Opta-Score {
-                width: 20px;
-                font-size: 24px;
-                line-height: 24px;
-                text-align: left;
-
-                &.Opta-Home {
-                  text-align: right;
-                }
-
-                span {
-                  min-width: 0;
-                  padding: 0;
-                  color: inherit;
-                  font-family: inherit;
-                  font-size: inherit;
-                  line-height: inherit;
-                  text-align: inherit;
-                  background-color: transparent !important;
-                }
-
-                @media (min-width: ${breakpoints.medium}px) {
-                  width: 30px;
-                  font-size: 32px;
-                  line-height: 32px;
-                }
-              }
-
-              &.Opta-Divider {
-                width: 20px;
-                text-align: center;
-
-                abbr {
-                  font-size: inherit;
-                  line-height: inherit;
-                  text-decoration: none;
-                }
-              }
-
-              .Opta-Bars {
-                margin: 0;
-
-                .Opta-Percent.Opta-Home {
-                  background-color: ${colours.section.sport};
-                }
-
-                .Opta-Percent.Opta-Away {
-                  background-color: ${colours.section.sport};
-                  opacity: 0.5;
-                }
-              }
-            }
-
-            &.Opta-Score-Extras {
-              td {
-                color: ${colours.functional.brandColour};
-                font-family: ${fonts.supporting};
-                font-size: 14px;
-                line-height: 28px;
-
-                span {
-                  color: inherit;
-                  font-size: inherit;
-                }
-              }
             }
 
             &.Opta-MatchHeader-Details {
               div {
+                margin: 6px 0;
                 padding: 0;
                 color: ${colours.section.sport};
                 font-family: ${fonts.supporting};
@@ -137,21 +60,278 @@ export const WidgetContainer = styled(WidgetContainerBase)``;
                 text-transform: uppercase;
                 background-color: transparent;
 
-                span {
-                  margin: 0 6px;
+                dl {
+                  margin: 0 6px 4px 6px;
                   color: inherit;
                   font-size: inherit;
+
+                  :before {
+                    display: none;
+                  }
+
+                  &:first-of-type,
+                  &:last-of-type {
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .Opta-CricketStateOfPlay {
+        div {
+          min-height: 0;
+          margin: 0;
+          padding: 10px;
+          color: ${colours.functional.brandColour};
+          font-family: ${fonts.headline};
+          font-size: 18px;
+          font-weight: normal;
+          line-height: 18px;
+          background-color: transparent;
+        }
+      }
+
+      .Opta-scorecard {
+        .Opta-Tabs {
+          .Opta-Nav {
+            background-color: transparent;
+          
+            ul {
+              display: flex;
+              background-color: transparent;
+
+              li {
+                width: 100%;
+
+                a {
+                  width: 100%;
+                  color: ${colours.functional.brandColour};
+                  font-family: ${fonts.supporting};
+                  font-size: 14px;
+                  font-weight: normal;
+                  text-align: center;
+                  background-color: #DBDBDB;
+
+                  &:hover {
+                    background-color: #EDEDED;
+                  }
+                }
+
+                &.Opta-On a {
+                  color: white;
+                  background-color: #008347;
                 }
               }
             }
           }
         }
 
-        &.Opta-Stats-Bars {
-          margin-bottom: 20px;
+        .Opta-TabbedContent {
+          table.Opta-batting {
+            margin-bottom: 10px;
+
+            thead {
+              th {
+                padding: 0;
+                color: ${colours.functional.primary};
+                font-family: ${fonts.supporting};
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: normal;
+                text-align: center;
+                background-color: #EDEDED;
+
+                &:first-of-type {
+                  padding-left: 5px;
+                  text-align: left;
+                }
+
+                &:nth-of-type(2) {
+                  text-align: left;
+                }
+              }
+            }
+
+            tfoot {
+              th {
+                color: ${colours.functional.brandColour};
+                font-family: ${fonts.supporting};
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: bold;
+                background-color: #DBDBDB;
+
+                &:first-of-type {
+                  padding-left: 5px;
+                }
+
+                &:last-of-type {
+                  padding-left: 0;
+                }
+              }
+            }
+
+            tbody {
+              tr:nth-child(2n) th,
+              tr:nth-child(2n) td {
+                background-color: #EDEDED;
+              }
+
+              tr:last-of-type td {
+                color: ${colours.functional.brandColour};
+                font-family: ${fonts.supporting};
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: normal;
+              }
+
+              th {
+                padding: 0;
+                color: ${colours.functional.brandColour};
+                font-family: ${fonts.supporting};
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: bold;
+                text-align: left;
+              }
+
+              td {
+                padding: 0;
+                color: ${colours.section.sport};
+                font-family: ${fonts.supporting};
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: normal;
+                text-align: center;
+
+                &:first-of-type,
+                &:nth-of-type(2) {
+                  padding-left: 5px;
+                  color: ${colours.functional.brandColour};
+                  font-family: ${fonts.headline};
+                  font-size: 16px;
+                  font-weight: normal;
+                  line-height: 16px;
+                  text-align: left;
+                }
+              }
+            }
+          }
+
+          table.Opta-bowling {
+            width: calc(70% - 10px);
+            float: left;
+
+            thead {
+              th {
+                color: ${colours.functional.brandColour};
+                font-family: ${fonts.supporting};
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: normal;
+                text-align: center;
+                background-color: #EDEDED;
+
+                &:first-of-type {
+                  padding-left: 5px;
+                  text-align: left;
+                }
+              }
+            }
+
+            tbody {
+              th {
+                padding: 0;
+                color: ${colours.functional.brandColour};
+                font-family: ${fonts.supporting};
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: bold;
+                text-align: center;
+              }
+
+              td {
+                padding: 0;
+                color: ${colours.section.sport};
+                font-family: ${fonts.supporting};
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: normal;
+                text-align: center;
+
+                &:first-of-type {
+                  padding-left: 5px;
+                  color: ${colours.functional.brandColour};
+                  font-family: ${fonts.headline};
+                  font-size: 16px;
+                  font-weight: normal;
+                  line-height: 16px;
+                  text-align: left;
+                }
+              }
+            }
+          }
+
+          .Opta-Ranking {
+            table {
+              width: calc(30%);
+              float: right;
+
+              thead {
+                th {
+                  color: ${colours.functional.brandColour};
+                  font-family: ${fonts.supporting};
+                  font-size: 12px;
+                  line-height: 14px;
+                  font-weight: normal;
+                  text-align: center;
+                  background-color: #EDEDED;
+  
+                  &:first-of-type {
+                    padding-left: 5px;
+                    text-align: left;
+                  }
+                }
+              }
+
+              tbody {
+                th {
+                  padding: 0;
+                  color: ${colours.functional.brandColour};
+                  font-family: ${fonts.supporting};
+                  font-size: 12px;
+                  line-height: 14px;
+                  font-weight: bold;
+                  text-align: center;
+                }
+  
+                td {
+                  padding: 0;
+                  color: ${colours.section.sport};
+                  font-family: ${fonts.supporting};
+                  font-size: 12px;
+                  line-height: 14px;
+                  font-weight: normal;
+                  text-align: center;
+  
+                  &:first-of-type {
+                    padding-left: 5px;
+                    color: ${colours.functional.brandColour};
+                    font-family: ${fonts.headline};
+                    font-size: 16px;
+                    font-weight: normal;
+                    line-height: 16px;
+                    text-align: left;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 `;
-*/
