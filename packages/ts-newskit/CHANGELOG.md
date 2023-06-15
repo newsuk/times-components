@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.58.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.57.1...@times-components/ts-newskit@1.58.0) (2023-06-15)
+
+
+### Features
+
+* **TMRX-1093:** build stacked module 1 slice ([#3397](https://github.com/newsuk/times-components/issues/3397)) ([5ca3db2](https://github.com/newsuk/times-components/commit/5ca3db2c6c8bfd5c6db21d51a184d21e8cc2575b))
+
+
+
+
+
 ## [1.57.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.57.0...@times-components/ts-newskit@1.57.1) (2023-06-14)
 
 **Note:** Version bump only for package @times-components/ts-newskit
