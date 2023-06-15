@@ -27,6 +27,9 @@ export const initSettings = () => {
 
 const getStyleSheetUrl = (sport: string) => {
   switch (sport) {
+    case 'cricket':
+      return 'https://secure.widget.cloud.opta.net/v3/css/v3.cricket.opta-widgets.css';
+
     case 'rugby':
       return 'https://secure.widget.cloud.opta.net/v3/css/v3.rugby.opta-widgets.css';
 

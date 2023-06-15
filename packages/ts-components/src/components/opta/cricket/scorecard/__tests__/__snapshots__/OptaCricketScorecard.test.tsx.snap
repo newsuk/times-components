@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptaCricketScorecard should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa giUBsz"
+  >
+    <div
+      class="sc-htpNat sc-bxivhb bDwkbs"
+    />
+    <div
+      class="sc-bwzfXH kVYHKf"
+    >
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`OptaCricketScorecard should render correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa hGXeaj"
+  >
+    <div
+      class="sc-htpNat sc-bxivhb bDwkbs"
+    >
+      <div>
+        Widget
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
