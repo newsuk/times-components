@@ -1,0 +1,46 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { TCThemeProvider, themes } from '../../utils/index.tsx';
+import { StackModule1 } from "./";
+import { stackedModule1Articles } from '../fixtures/data.json';
+
+<Meta
+  title="Newskit Slices/Stack Module 1"
+  component={StackModule1}
+/>
+
+# StackModule1 component
+The `StackModule1` component is used to display the main story and supplementary articles.
+
+This takes in a series of props, as below, to display the part of the slices.
+
+## Props
+<Props of={StackModule1} />
+
+## Code Example
+`<StackModule1 {...{ articles: stackedModule1Articles }} />`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const StackModule1Story = ({ articles: stackedModule1Articles, theme }) => (
+  <TCThemeProvider theme={theme}>
+    <StackModule1 {...{ articles: stackedModule1Articles }} />
+  </TCThemeProvider>
+);
+StackModule1Story.args = {
+  theme: 'TimesWebLightTheme',
+};
+
+<Story
+  name="StackModule1"
+  args={{ articles: stackedModule1Articles }}
+  argTypes={{
+    theme: {
+      options: Object.keys(themes),
+      mapping: themes,
+      control: { type: 'select' },
+    },
+  }}
+>
+  {StackModule1Story.bind({})}
+</Story>

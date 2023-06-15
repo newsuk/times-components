@@ -79,4 +79,16 @@ describe('Render Component one', () => {
       marginBlockEnd: '16px'
     });
   });
+
+  it('should render ordered list without link  if href not provided', () => {
+    const modifiedLeadStoryData: LeadArticleProps = {
+      ...leadArticle,
+      listData: [{ label: 'Unordered list item', href: '' }]
+    };
+    const { getByText } = render(
+      <LeadArticle {...modifiedLeadStoryData} contentTop />
+    );
+    const link = getByText('Unordered list item');
+    expect(link.tagName.toLowerCase()).toBe('p');
+  });
 });

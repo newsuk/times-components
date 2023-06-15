@@ -66,7 +66,11 @@ export const LeadStory1 = ({
   };
 
   const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
-
+  const marginTop = singleArticle
+    ? 'space040'
+    : !!articlesWithListItems.listData
+      ? 'space020'
+      : 'space040';
   const LeadStoryLayout: React.FC = ({ children }) => {
     return (
       <BlockItem marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
@@ -109,11 +113,7 @@ export const LeadStory1 = ({
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
-                  marginBlockStart: singleArticle
-                    ? 'space040'
-                    : !!articlesWithListItems.listData
-                      ? 'space020'
-                      : 'space040',
+                  marginBlockStart: marginTop,
                   marginBlockEnd: 'space040'
                 }}
               />

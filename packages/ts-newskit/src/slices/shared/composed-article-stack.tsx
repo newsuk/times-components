@@ -40,7 +40,7 @@ export const ComposedArticleStack = ({
           <Divider
             overrides={{
               stylePreset: 'dashedDivider',
-              marginBlockStart: 'space040'
+              marginBlock: 'space040'
             }}
           />
         </Hidden>

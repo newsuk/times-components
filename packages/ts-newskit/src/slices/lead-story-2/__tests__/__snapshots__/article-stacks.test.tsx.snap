@@ -3,10 +3,10 @@
 exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
 <DocumentFragment>
   <div
-    class="css-1kgfnke"
+    class="css-y73puv"
   >
     <div
-      class="css-1chjujt"
+      class="css-1th2wme"
     >
       <div
         class="css-1jza4en"
@@ -82,11 +82,6 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               </div>
             </div>
           </div>
-          <hr
-            aria-hidden="true"
-            class="css-uh7mej"
-            data-testid="divider"
-          />
         </div>
         <div
           class="css-6wnvz7"
@@ -164,20 +159,20 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               </div>
             </div>
           </div>
-          <hr
-            aria-hidden="true"
-            class="css-uh7mej"
-            data-testid="divider"
-          />
         </div>
       </div>
     </div>
     <div
-      class="css-1chjujt"
+      class="css-1th2wme"
     >
       <div
-        class="css-ttau4q"
+        class="css-r51htr"
       >
+        <hr
+          aria-hidden="true"
+          class="css-13rcg9f"
+          data-testid="divider"
+        />
         <div
           class="css-13byt3y"
         >
@@ -396,10 +391,10 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
 exports[`Render ArticleStack renders with passed width 1`] = `
 <DocumentFragment>
   <div
-    class="css-1kgfnke"
+    class="css-y73puv"
   >
     <div
-      class="css-1chjujt"
+      class="css-1th2wme"
     >
       <div
         class="css-1eh6fyx"
@@ -475,11 +470,6 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               </div>
             </div>
           </div>
-          <hr
-            aria-hidden="true"
-            class="css-uh7mej"
-            data-testid="divider"
-          />
         </div>
         <div
           class="css-6wnvz7"
@@ -557,20 +547,20 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               </div>
             </div>
           </div>
-          <hr
-            aria-hidden="true"
-            class="css-uh7mej"
-            data-testid="divider"
-          />
         </div>
       </div>
     </div>
     <div
-      class="css-1chjujt"
+      class="css-1th2wme"
     >
       <div
-        class="css-ttau4q"
+        class="css-r51htr"
       >
+        <hr
+          aria-hidden="true"
+          class="css-13rcg9f"
+          data-testid="divider"
+        />
         <div
           class="css-13byt3y"
         >
