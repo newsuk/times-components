@@ -36,6 +36,7 @@ export interface ArticleProps {
   imageRight?: boolean;
   isFullWidth?: boolean;
   articleTitleMarginTop?: string;
+  titleTypographyPreset?: string;
 }
 
 type LayoutProps = {
@@ -53,7 +54,8 @@ export const Article = ({
   isLeadImage,
   imageRight,
   isFullWidth,
-  articleTitleMarginTop = 'space040'
+  articleTitleMarginTop = 'space040',
+  titleTypographyPreset = 'editorialHeadline020'
 }: ArticleProps) => {
   const cardImage = !hideImage &&
     image && {
@@ -129,7 +131,7 @@ export const Article = ({
             href={url}
             role="link"
             overrides={{
-              typographyPreset: 'editorialHeadline020',
+              typographyPreset: titleTypographyPreset,
               marginBlockStart: titleMarginBlockStart
             }}
           >

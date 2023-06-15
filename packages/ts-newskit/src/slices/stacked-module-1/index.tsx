@@ -66,6 +66,9 @@ const articleStack = ({
                 hasTopBorder={hasImage}
                 isFullWidth={true}
                 articleTitleMarginTop={articleTitleMarginTop}
+                titleTypographyPreset={
+                  isMob ? 'editorialHeadline030' : 'editorialHeadline020'
+                }
               />
               {articleBorder}
             </React.Fragment>
