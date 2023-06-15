@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.59.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.58.0...@times-components/ts-newskit@1.59.0) (2023-06-15)
+
+
+### Features
+
+* **TMRX-1093:** add gridOverlay ([#3398](https://github.com/newsuk/times-components/issues/3398)) ([04679da](https://github.com/newsuk/times-components/commit/04679da5674ee6042fcc91d920d8c2d9c9c8ae1b))
+
+
+
+
+
 # [1.58.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.57.1...@times-components/ts-newskit@1.58.0) (2023-06-15)
 
 
