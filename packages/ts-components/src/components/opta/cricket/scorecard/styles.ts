@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
+import { colours, fonts } from '@times-components/ts-styleguide';
 
 import { WidgetContainerBase } from '../shared-styles';
 
@@ -98,7 +98,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
         .Opta-Tabs {
           .Opta-Nav {
             background-color: transparent;
-          
+
             ul {
               display: flex;
               background-color: transparent;
@@ -113,10 +113,10 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                   font-size: 14px;
                   font-weight: normal;
                   text-align: center;
-                  background-color: #DBDBDB;
+                  background-color: #dbdbdb;
 
                   &:hover {
-                    background-color: #EDEDED;
+                    background-color: #ededed;
                   }
                 }
 
@@ -142,7 +142,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                 line-height: 14px;
                 font-weight: normal;
                 text-align: center;
-                background-color: #EDEDED;
+                background-color: #ededed;
 
                 &:first-of-type {
                   padding-left: 5px;
@@ -162,7 +162,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                 font-size: 12px;
                 line-height: 14px;
                 font-weight: bold;
-                background-color: #DBDBDB;
+                background-color: #dbdbdb;
 
                 &:first-of-type {
                   padding-left: 5px;
@@ -177,7 +177,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
             tbody {
               tr:nth-child(2n) th,
               tr:nth-child(2n) td {
-                background-color: #EDEDED;
+                background-color: #ededed;
               }
 
               tr:last-of-type td {
@@ -233,7 +233,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                 line-height: 14px;
                 font-weight: normal;
                 text-align: center;
-                background-color: #EDEDED;
+                background-color: #ededed;
 
                 &:first-of-type {
                   padding-left: 5px;
@@ -288,8 +288,8 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                   line-height: 14px;
                   font-weight: normal;
                   text-align: center;
-                  background-color: #EDEDED;
-  
+                  background-color: #ededed;
+
                   &:first-of-type {
                     padding-left: 5px;
                     text-align: left;
@@ -307,7 +307,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                   font-weight: bold;
                   text-align: center;
                 }
-  
+
                 td {
                   padding: 0;
                   color: ${colours.section.sport};
@@ -316,7 +316,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                   line-height: 14px;
                   font-weight: normal;
                   text-align: center;
-  
+
                   &:first-of-type {
                     padding-left: 5px;
                     color: ${colours.functional.brandColour};
