@@ -129,28 +129,28 @@ export const WidgetContainer = styled(WidgetContainerBase)`
           }
         }
 
-      
         table.Opta-batting {
           margin-bottom: 10px;
 
           thead {
             th {
+              width: 8%;
               padding: 0;
               color: ${colours.functional.primary};
               font-family: ${fonts.supporting};
               font-size: 12px;
               line-height: 14px;
               font-weight: normal;
-              text-align: center;
               background-color: #ededed;
 
               &:first-of-type {
+                width: 64%;
                 padding-left: 5px;
-                text-align: left;
               }
 
-              &:nth-of-type(2) {
-                text-align: left;
+              &:nth-of-type(4),
+              &:nth-of-type(5) {
+                width: 6%;
               }
             }
           }
@@ -159,7 +159,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
             th {
               color: ${colours.functional.brandColour};
               font-family: ${fonts.supporting};
-              font-size: 12px;
+              font-size: 14px;
               line-height: 14px;
               font-weight: bold;
               background-color: #dbdbdb;
@@ -195,7 +195,6 @@ export const WidgetContainer = styled(WidgetContainerBase)`
               font-size: 12px;
               line-height: 14px;
               font-weight: bold;
-              text-align: left;
             }
 
             td {
@@ -205,7 +204,6 @@ export const WidgetContainer = styled(WidgetContainerBase)`
               font-size: 12px;
               line-height: 14px;
               font-weight: normal;
-              text-align: center;
 
               &:first-of-type,
               &:nth-of-type(2) {
@@ -215,18 +213,18 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                 font-size: 16px;
                 font-weight: normal;
                 line-height: 16px;
-                text-align: left;
               }
             }
           }
         }
 
         table.Opta-bowling {
-          width: calc(70% - 10px);
+          width: calc(60% - 10px);
           float: left;
 
           thead {
             th {
+              width: 12%;
               color: ${colours.functional.brandColour};
               font-family: ${fonts.supporting};
               font-size: 12px;
@@ -236,6 +234,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
               background-color: #ededed;
 
               &:first-of-type {
+                width: 40%;
                 padding-left: 5px;
                 text-align: left;
               }
@@ -277,7 +276,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
 
         .Opta-Ranking {
           table {
-            width: calc(30%);
+            width: calc(40%);
             float: right;
 
             thead {
