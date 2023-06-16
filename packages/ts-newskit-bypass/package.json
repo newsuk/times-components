@@ -50,6 +50,7 @@
     "node": ">=8.9"
   },
   "dependencies": {
+    "@newskit-themes/the-times": "0.1.1",
     "newskit": "7.2.0",
     "react": "16.9.0"
   },
