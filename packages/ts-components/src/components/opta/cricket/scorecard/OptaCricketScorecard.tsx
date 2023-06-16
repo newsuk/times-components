@@ -50,7 +50,7 @@ export const OptaCricketScorecard: React.FC<{
           show_state_of_play: true,
           navigation: 'tabs',
           show_batting: true,
-          show_mins_batted: true,
+          show_mins_batted: false,
           show_fours: true,
           show_sixes: true,
           show_strike_rate: true,

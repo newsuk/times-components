@@ -18,6 +18,13 @@ const showcase = {
       ),
       name: 'Scorecard',
       type: 'story'
+    },
+    {
+      component: () => (
+        <OptaCricketScorecard competition="3071" match="55391" />
+      ),
+      name: 'Scorecard (1st inns)',
+      type: 'story'
     }
   ],
   name: 'Typescript Component/In Article/Cricket/Scorecard'
