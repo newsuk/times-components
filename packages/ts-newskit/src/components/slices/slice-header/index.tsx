@@ -1,24 +1,35 @@
 import React from 'react';
 import { NewsKitChevronRightIcon } from '../../../assets';
-import { Block, IconButton, Stack, TitleBar } from 'newskit';
+import { Block, FlagSize, IconButton, Stack, TitleBar } from 'newskit';
 
 export interface SliceHeaderProps {
   title: string;
   href: string;
+  titleTypographyPreset?: string;
+  iconArrowSize?: string;
+  iconSize?: FlagSize;
+  padding?: string;
 }
 
-export const SliceHeader = ({ title, href }: SliceHeaderProps) => {
+export const SliceHeader = ({
+  title,
+  href,
+  titleTypographyPreset = 'editorialDisplay004',
+  iconArrowSize = 'iconSize020',
+  iconSize = 'medium',
+  padding = 'space030'
+}: SliceHeaderProps) => {
   return (
     <Block stylePreset="sliceHeaderPreset">
       <Stack
         flow="horizontal-center"
         stackDistribution="space-between"
-        paddingBlock="space030"
+        paddingBlock={padding}
       >
         <TitleBar
           overrides={{
             heading: {
-              typographyPreset: 'editorialDisplay004',
+              typographyPreset: titleTypographyPreset,
               stylePreset: 'inkBrand010'
             },
             paddingInline: 'space000',
@@ -28,10 +39,10 @@ export const SliceHeader = ({ title, href }: SliceHeaderProps) => {
           {title}
         </TitleBar>
         <IconButton
-          size="medium"
+          size={iconSize}
           overrides={{
             stylePreset: 'sliceIconPreset',
-            iconSize: 'iconSize020'
+            iconSize: iconArrowSize
           }}
           role="link"
           href={href}

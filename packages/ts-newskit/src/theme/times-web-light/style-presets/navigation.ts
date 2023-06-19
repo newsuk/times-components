@@ -93,5 +93,10 @@ export const navStylePresets = {
     base: {
       backgroundImage: '{{overlays.overlayGradientBaseHorizontal}}'
     }
+  },
+  sectionBucketScrollOverlay: {
+    base: {
+      backgroundImage: 'transparent'
+    }
   }
 };
