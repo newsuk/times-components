@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.60.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.0...@times-components/ts-newskit@1.60.1) (2023-06-19)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** fix pipline issue ([#3402](https://github.com/newsuk/times-components/issues/3402)) ([41e62a0](https://github.com/newsuk/times-components/commit/41e62a01c8b87f5b9d42f95e825928d4949accc1))
+
+
+
+
+
 # [1.60.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.59.0...@times-components/ts-newskit@1.60.0) (2023-06-19)
 
 
