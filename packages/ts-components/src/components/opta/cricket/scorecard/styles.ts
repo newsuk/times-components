@@ -129,101 +129,155 @@ export const WidgetContainer = styled(WidgetContainerBase)`
           }
         }
 
-        .Opta-TabbedContent {
-          table.Opta-batting {
-            margin-bottom: 10px;
+        table.Opta-batting {
+          margin-bottom: 10px;
 
-            thead {
-              th {
-                padding: 0;
-                color: ${colours.functional.primary};
-                font-family: ${fonts.supporting};
-                font-size: 12px;
-                line-height: 14px;
-                font-weight: normal;
-                text-align: center;
-                background-color: #ededed;
+          thead {
+            th {
+              width: 8%;
+              padding: 0;
+              color: ${colours.functional.primary};
+              font-family: ${fonts.supporting};
+              font-size: 12px;
+              line-height: 14px;
+              font-weight: normal;
+              background-color: #ededed;
 
-                &:first-of-type {
-                  padding-left: 5px;
-                  text-align: left;
-                }
+              &:first-of-type {
+                width: 64%;
+                padding-left: 5px;
+              }
 
-                &:nth-of-type(2) {
-                  text-align: left;
-                }
+              &:nth-of-type(4),
+              &:nth-of-type(5) {
+                width: 6%;
               }
             }
+          }
 
-            tfoot {
-              th {
-                color: ${colours.functional.brandColour};
-                font-family: ${fonts.supporting};
-                font-size: 12px;
-                line-height: 14px;
-                font-weight: bold;
-                background-color: #dbdbdb;
+          tfoot {
+            th {
+              color: ${colours.functional.brandColour};
+              font-family: ${fonts.supporting};
+              font-size: 14px;
+              line-height: 14px;
+              font-weight: bold;
+              background-color: #dbdbdb;
 
-                &:first-of-type {
-                  padding-left: 5px;
-                }
+              &:first-of-type {
+                padding-left: 5px;
+              }
 
-                &:last-of-type {
-                  padding-left: 0;
-                }
+              &:last-of-type {
+                padding-left: 0;
               }
             }
+          }
 
-            tbody {
-              tr:nth-child(2n) th,
-              tr:nth-child(2n) td {
-                background-color: #ededed;
-              }
+          tbody {
+            tr:nth-child(2n) th,
+            tr:nth-child(2n) td {
+              background-color: #ededed;
+            }
 
-              tr:last-of-type td {
+            tr:last-of-type td {
+              color: ${colours.functional.brandColour};
+              font-family: ${fonts.supporting};
+              font-size: 12px;
+              line-height: 14px;
+              font-weight: normal;
+            }
+
+            th {
+              padding: 0;
+              color: ${colours.functional.brandColour};
+              font-family: ${fonts.supporting};
+              font-size: 12px;
+              line-height: 14px;
+              font-weight: bold;
+            }
+
+            td {
+              padding: 0;
+              color: ${colours.section.sport};
+              font-family: ${fonts.supporting};
+              font-size: 12px;
+              line-height: 14px;
+              font-weight: normal;
+
+              &:first-of-type,
+              &:nth-of-type(2) {
+                padding-left: 5px;
                 color: ${colours.functional.brandColour};
-                font-family: ${fonts.supporting};
-                font-size: 12px;
-                line-height: 14px;
+                font-family: ${fonts.headline};
+                font-size: 16px;
                 font-weight: normal;
+                line-height: 16px;
               }
+            }
+          }
+        }
 
-              th {
-                padding: 0;
-                color: ${colours.functional.brandColour};
-                font-family: ${fonts.supporting};
-                font-size: 12px;
-                line-height: 14px;
-                font-weight: bold;
+        table.Opta-bowling {
+          width: calc(60% - 10px);
+          float: left;
+
+          thead {
+            th {
+              width: 12%;
+              color: ${colours.functional.brandColour};
+              font-family: ${fonts.supporting};
+              font-size: 12px;
+              line-height: 14px;
+              font-weight: normal;
+              text-align: center;
+              background-color: #ededed;
+
+              &:first-of-type {
+                width: 40%;
+                padding-left: 5px;
                 text-align: left;
               }
-
-              td {
-                padding: 0;
-                color: ${colours.section.sport};
-                font-family: ${fonts.supporting};
-                font-size: 12px;
-                line-height: 14px;
-                font-weight: normal;
-                text-align: center;
-
-                &:first-of-type,
-                &:nth-of-type(2) {
-                  padding-left: 5px;
-                  color: ${colours.functional.brandColour};
-                  font-family: ${fonts.headline};
-                  font-size: 16px;
-                  font-weight: normal;
-                  line-height: 16px;
-                  text-align: left;
-                }
-              }
             }
           }
 
-          table.Opta-bowling {
-            width: calc(70% - 10px);
-            float: left;
+          tbody {
+            th {
+              padding: 0;
+              color: ${colours.functional.brandColour};
+              font-family: ${fonts.supporting};
+              font-size: 12px;
+              line-height: 14px;
+              font-weight: bold;
+              text-align: center;
+            }
+
+            td {
+              padding: 0;
+              color: ${colours.section.sport};
+              font-family: ${fonts.supporting};
+              font-size: 12px;
+              line-height: 14px;
+              font-weight: normal;
+              text-align: center;
+
+              &:first-of-type {
+                padding-left: 5px;
+                color: ${colours.functional.brandColour};
+                font-family: ${fonts.headline};
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 16px;
+                text-align: left;
+              }
+            }
+          }
+        }
+
+        .Opta-Ranking {
+          table {
+            width: calc(40%);
+            float: right;
 
             thead {
               th {
@@ -270,62 +324,6 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                   font-weight: normal;
                   line-height: 16px;
                   text-align: left;
-                }
-              }
-            }
-          }
-
-          .Opta-Ranking {
-            table {
-              width: calc(30%);
-              float: right;
-
-              thead {
-                th {
-                  color: ${colours.functional.brandColour};
-                  font-family: ${fonts.supporting};
-                  font-size: 12px;
-                  line-height: 14px;
-                  font-weight: normal;
-                  text-align: center;
-                  background-color: #ededed;
-
-                  &:first-of-type {
-                    padding-left: 5px;
-                    text-align: left;
-                  }
-                }
-              }
-
-              tbody {
-                th {
-                  padding: 0;
-                  color: ${colours.functional.brandColour};
-                  font-family: ${fonts.supporting};
-                  font-size: 12px;
-                  line-height: 14px;
-                  font-weight: bold;
-                  text-align: center;
-                }
-
-                td {
-                  padding: 0;
-                  color: ${colours.section.sport};
-                  font-family: ${fonts.supporting};
-                  font-size: 12px;
-                  line-height: 14px;
-                  font-weight: normal;
-                  text-align: center;
-
-                  &:first-of-type {
-                    padding-left: 5px;
-                    color: ${colours.functional.brandColour};
-                    font-family: ${fonts.headline};
-                    font-size: 16px;
-                    font-weight: normal;
-                    line-height: 16px;
-                    text-align: left;
-                  }
                 }
               }
             }

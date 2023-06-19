@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.74.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.73.0...@times-components/ts-components@1.74.0) (2023-06-16)
+
+
+### Features
+
+* cricket widget ([#3399](https://github.com/newsuk/times-components/issues/3399)) ([bc75fc5](https://github.com/newsuk/times-components/commit/bc75fc55d3f62b26754e0c9397344585000d4f30))
+
+
+
+
+
 # [1.73.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.72.3...@times-components/ts-components@1.73.0) (2023-06-15)
 
 
