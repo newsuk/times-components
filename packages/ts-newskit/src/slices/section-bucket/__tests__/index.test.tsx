@@ -31,18 +31,21 @@ describe('Render SectionBucket Slice', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
+
   test('Slice matches snapshot with xl', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
 
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
+
   test('renders correct number of article blocks', () => {
     const { getAllByTestId } = renderComponent();
     const articleStackContainer = getAllByTestId('article-block');
 
     expect(articleStackContainer.length).toBe(4);
   });
+
   test('renders correct number of articles in each blocks', () => {
     const { getAllByTestId } = renderComponent();
     const articleStackBlocks = getAllByTestId('article-block');
