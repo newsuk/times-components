@@ -37,4 +37,18 @@ describe('Render SectionBucket Slice', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
+  test('renders correct number of article blocks', () => {
+    const { getAllByTestId } = renderComponent();
+    const articleStackContainer = getAllByTestId('article-block');
+
+    expect(articleStackContainer.length).toBe(4);
+  });
+  test('renders correct number of articles in each blocks', () => {
+    const { getAllByTestId } = renderComponent();
+    const articleStackBlocks = getAllByTestId('article-block');
+    articleStackBlocks.forEach(block => {
+      const articles = block.querySelectorAll('.css-1nw1nne');
+      expect(articles.length).toBe(3);
+    });
+  });
 });

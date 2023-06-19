@@ -23,7 +23,7 @@ type ArticleStackProps = {
 
 const ArticleStackBlock = ({ articles, section }: ArticleStackProps) => (
   <>
-    <StyledBlock>
+    <StyledBlock data-testid="article-block">
       <SliceHeader
         {...section}
         titleTypographyPreset="editorialDisplay003"
@@ -63,7 +63,7 @@ export const SectionBucket = ({
 
   return isMobile ? (
     <Scroll
-      overrides={{ overlays: { stylePreset: 'sectionBucketScrollOverlay' } }}
+      overrides={{ overlays: { stylePreset: 'transparentBackground' } }}
       tabIndex={undefined}
     >
       {ArticleStackBlocks}
