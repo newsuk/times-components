@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-newskit-bypass",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A shortcut to load newskit into cps-content-render packages that are using legacy nk 0.9",
   "main": "dist/index.js",
   "dev": "dist/index.js",
