@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Headline> should render the component 1`] = `
+<body>
+  <div>
+    <section
+      class="css-v3yq0t"
+    >
+      <h1
+        class="nk-headline-heading css-i2jo9u"
+      >
+        Headline Text
+      </h1>
+    </section>
+  </div>
+  <div
+    class="nk-layer-organizer"
+  />
+</body>
+`;
