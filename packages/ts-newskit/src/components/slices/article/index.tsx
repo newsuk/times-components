@@ -37,6 +37,7 @@ export interface ArticleProps {
   isFullWidth?: boolean;
   articleTitleMarginTop?: string;
   titleTypographyPreset?: string;
+  tagAndFlagMarginBlockStart?: string;
 }
 
 type LayoutProps = {
@@ -55,7 +56,8 @@ export const Article = ({
   imageRight,
   isFullWidth,
   articleTitleMarginTop = 'space040',
-  titleTypographyPreset = 'editorialHeadline020'
+  titleTypographyPreset = 'editorialHeadline020',
+  tagAndFlagMarginBlockStart = 'space040'
 }: ArticleProps) => {
   const cardImage = !hideImage &&
     image && {
@@ -138,7 +140,11 @@ export const Article = ({
             {title}
           </CardHeadlineLink>
           {(tag || flag) && (
-            <TagAndFlag tag={tag} flag={flag} marginBlockStart="space040" />
+            <TagAndFlag
+              tag={tag}
+              flag={flag}
+              marginBlockStart={tagAndFlagMarginBlockStart}
+            />
           )}
         </Layout>
       </CardContent>

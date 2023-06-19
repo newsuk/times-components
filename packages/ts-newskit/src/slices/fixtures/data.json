@@ -161,5 +161,133 @@
       "image": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
       "href": "/"
     }
-  ]
+  ],
+  "articleStackOne": {
+    "section": {
+      "title": "Title bar",
+      "href": "https://www.thetimes.co.uk/"
+    },
+    "articles": [
+      {
+        "image": {
+          "src": "/assets/small_01.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      },
+      {
+        "image": {
+          "src": "/assets/small_02.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      },
+      {
+        "image": {
+          "src": "/assets/small_03.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      }
+    ]
+  },
+  "articleStackTwo": {
+    "section": {
+      "title": "Title bar",
+      "href": "https://www.thetimes.co.uk/"
+    },
+    "articles": [
+      {
+        "image": {
+          "src": "/assets/small_01.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      },
+      {
+        "image": {
+          "src": "/assets/small_02.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      },
+      {
+        "image": {
+          "src": "/assets/small_03.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      }
+    ]
+  },
+  "articleStackThree": {
+    "section": {
+      "title": "Title bar",
+      "href": "https://www.thetimes.co.uk/"
+    },
+    "articles": [
+      {
+        "image": {
+          "src": "/assets/small_01.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      },
+      {
+        "image": {
+          "src": "/assets/small_02.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      },
+      {
+        "image": {
+          "src": "/assets/small_03.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      }
+    ]
+  },
+  "articleStackFour": {
+    "section": {
+      "title": "Title bar",
+      "href": "https://www.thetimes.co.uk/"
+    },
+    "articles": [
+      {
+        "image": {
+          "src": "/assets/small_01.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      },
+      {
+        "image": {
+          "src": "/assets/small_02.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      },
+      {
+        "image": {
+          "src": "/assets/small_03.jpg",
+          "alt": "This is ALT Text"
+        },
+        "title": "Short title of the card describing the main content",
+        "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      }
+    ]
+  }
 }
