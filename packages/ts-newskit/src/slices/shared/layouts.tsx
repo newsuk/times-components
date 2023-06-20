@@ -1,5 +1,5 @@
 import React from 'react';
-import { Stack } from 'newskit';
+import { Stack, GridLayout } from 'newskit';
 
 export const CustomStackLayout: React.FC = ({ children }) => {
   return (
@@ -14,5 +14,18 @@ export const CustomStackLayout: React.FC = ({ children }) => {
     >
       {children}
     </Stack>
+  );
+};
+
+export const CustomGridLayout: React.FC = ({ children }) => {
+  return (
+    <GridLayout
+      columns={'1fr 1px 1fr 1px 1fr 1px 1fr'}
+      columnGap="space040"
+      rowGap="space040"
+      data-testid="article-container"
+    >
+      {children}
+    </GridLayout>
   );
 };

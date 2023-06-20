@@ -55,8 +55,7 @@ const articleStack = ({
             );
 
           const hasImage = isMob && articleIndex > 0;
-          const articleTitleMarginTop =
-            hasImage || (hasImage || isDesktop) ? 'space040' : 'space050';
+
           return (
             <React.Fragment key={article.title}>
               <Article
@@ -65,7 +64,7 @@ const articleStack = ({
                 isLeadImage={isMob && articleIndex === 0}
                 hasTopBorder={hasImage}
                 isFullWidth={true}
-                articleTitleMarginTop={articleTitleMarginTop}
+                tagAndFlagMarginBlockStart="space030"
                 titleTypographyPreset={
                   isMob ? 'editorialHeadline030' : 'editorialHeadline020'
                 }
