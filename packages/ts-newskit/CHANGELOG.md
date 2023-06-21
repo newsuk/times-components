@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.60.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.1...@times-components/ts-newskit@1.60.2) (2023-06-21)
+
+
+### Bug Fixes
+
+* **TMRX-1099:** apply design feedback ([#3409](https://github.com/newsuk/times-components/issues/3409)) ([3d12aa7](https://github.com/newsuk/times-components/commit/3d12aa78838d89a347a5503f9d48693ee281d404))
+
+
+
+
+
 ## [1.60.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.0...@times-components/ts-newskit@1.60.1) (2023-06-19)
 
 
