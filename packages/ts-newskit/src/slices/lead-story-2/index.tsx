@@ -62,7 +62,7 @@ export const LeadStory2 = ({
         $width={{
           xs: '100%',
           md: '720px',
-          lg: '760px',
+          lg: '757px',
           xl: '840px'
         }}
         marginInlineEnd={{
@@ -77,7 +77,10 @@ export const LeadStory2 = ({
               position="right"
             />
           </Visible>
-          <LeadArticle contentWidth="245px" {...modifiedLeadArticle} />
+          <LeadArticle
+            contentWidth={breakpointKey === 'xl' ? '274px' : '246px'}
+            {...modifiedLeadArticle}
+          />
           {screenXsAndSm ? (
             <FullWidthBlock>
               <Divider
@@ -100,7 +103,9 @@ export const LeadStory2 = ({
             verticalArticles={verticalArticles}
             breakpoint={breakpointKey}
             horizontalArticles={horizontalArticles}
-            horizontalArticleContentWidth="230px"
+            horizontalArticleContentWidth={
+              breakpointKey === 'xl' ? '258px' : '230px'
+            }
           />
         </Block>
       </StackItem>
