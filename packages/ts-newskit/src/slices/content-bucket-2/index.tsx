@@ -1,11 +1,11 @@
-import { Divider, GridLayout, useBreakpointKey } from 'newskit';
+import { GridLayout, useBreakpointKey } from 'newskit';
 import React from 'react';
 import {
   SliceHeader,
   SliceHeaderProps
 } from '../../components/slices/slice-header';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { StackItem } from '../shared-styles';
+import { StackItem, StyledDivider } from '../shared-styles';
 import { CustomStackLayout } from '../shared';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 
@@ -38,7 +38,10 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
           {articles.map((article: ArticleProps, articleIndex, articleArr) => {
             const articleBorder = articleIndex < articleArr.length - 1 &&
               !isMob && (
-                <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
+                <StyledDivider
+                  overrides={{ stylePreset: 'lightDivider' }}
+                  vertical
+                />
               );
 
             const isAfterFirstArticle = isMob && articleIndex > 0;

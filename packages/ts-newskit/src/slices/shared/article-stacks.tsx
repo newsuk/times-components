@@ -1,7 +1,7 @@
 import React from 'react';
 import { Block, BreakpointKeys, Divider, GridLayout, Scroll } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { StackItem } from '../shared-styles';
+import { StackItem, StyledDivider } from '../shared-styles';
 import { ComposedArticleStack } from './composed-article-stack';
 
 export const ArticleStackLarge = ({
@@ -28,7 +28,10 @@ export const ArticleStackLarge = ({
         const articleBorder = breakpoint !== 'lg' &&
           breakpoint !== 'xl' &&
           articleIndex < articleArr.length - 1 && (
-            <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
+            <StyledDivider
+              overrides={{ stylePreset: 'lightDivider' }}
+              vertical
+            />
           );
         const topArticle = articleIndex === 0;
         const articleTopBorder =

@@ -25,6 +25,10 @@ export const AvatarDivider = styled(Divider)`
   }
 `;
 
+export const StyledDivider = styled(Divider)`
+  height: auto;
+`;
+
 export const StackItem = styled(Stack)<{
   $width?: { xs?: string; sm?: string; md?: string; lg?: string; xl?: string };
 }>`
