@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.60.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.2...@times-components/ts-newskit@1.60.3) (2023-06-22)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** fixed invalid colour reference ([#3410](https://github.com/newsuk/times-components/issues/3410)) ([b9ed3ae](https://github.com/newsuk/times-components/commit/b9ed3ae4e241ddd295f393cb2d285d690d6d5bc8))
+
+
+
+
+
 ## [1.60.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.1...@times-components/ts-newskit@1.60.2) (2023-06-21)
 
 
