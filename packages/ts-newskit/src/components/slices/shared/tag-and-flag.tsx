@@ -16,6 +16,13 @@ export const TagAndFlag = ({
   tag,
   marginBlockStart
 }: TagAndFlagProps) => {
+  const hasTag = tag && tag.label;
+  const hasFlag = flag && flag !== '';
+
+  if (!hasTag && !hasFlag) {
+    return null;
+  }
+
   return (
     <Block
       marginBlockStart={marginBlockStart || 'space000'}
@@ -34,6 +41,8 @@ export const TagAndFlag = ({
       )}
 
       {tag &&
+        Object.keys(tag).length > 0 &&
+        tag.label !== '' &&
         flag && (
           <ContainerInline>
             <Divider

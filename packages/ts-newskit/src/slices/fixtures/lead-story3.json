@@ -21,7 +21,12 @@
       },
       "title": "American owners pose threat to English pyramid",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "imageRight": false
+      "imageRight": false,
+      "tag": {
+        "label": "",
+        "href": ""
+      },
+      "flag": ""
     },
     {
       "image": {
@@ -34,7 +39,8 @@
       "tag": {
         "label": "Tag",
         "href": "/"
-      }
+      },
+      "flag": ""
     },
     {
       "image": {
@@ -44,6 +50,10 @@
       "title": "Blow for rebel clubs as court says Uefa can block Super League",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "imageRight": false,
+      "tag": {
+        "label": "",
+        "href": ""
+      },
       "flag": "Flag4"
     },
     {

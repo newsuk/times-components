@@ -692,6 +692,18 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
                 class="css-1atazsr"
                 data-testid="tag-and-flag"
               >
+                <a
+                  class="css-10d4t8c"
+                  href=""
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-zhtub2"
+                    />
+                  </span>
+                </a>
                 <span
                   class="css-1vzvkql"
                 >
@@ -852,6 +864,18 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
                       class="css-1atazsr"
                       data-testid="tag-and-flag"
                     >
+                      <a
+                        class="css-10d4t8c"
+                        href=""
+                      >
+                        <span
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-zhtub2"
+                          />
+                        </span>
+                      </a>
                       <span
                         class="css-1vzvkql"
                       >
@@ -1621,6 +1645,18 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
                     class="css-1atazsr"
                     data-testid="tag-and-flag"
                   >
+                    <a
+                      class="css-10d4t8c"
+                      href=""
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-zhtub2"
+                        />
+                      </span>
+                    </a>
                     <span
                       class="css-1vzvkql"
                     >
@@ -2375,6 +2411,18 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
                   class="css-1atazsr"
                   data-testid="tag-and-flag"
                 >
+                  <a
+                    class="css-10d4t8c"
+                    href=""
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-zhtub2"
+                      />
+                    </span>
+                  </a>
                   <span
                     class="css-1vzvkql"
                   >
@@ -2525,6 +2573,18 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
                     class="css-1atazsr"
                     data-testid="tag-and-flag"
                   >
+                    <a
+                      class="css-10d4t8c"
+                      href=""
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-zhtub2"
+                        />
+                      </span>
+                    </a>
                     <span
                       class="css-1vzvkql"
                     >
@@ -3290,6 +3350,18 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
                   class="css-1atazsr"
                   data-testid="tag-and-flag"
                 >
+                  <a
+                    class="css-10d4t8c"
+                    href=""
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-zhtub2"
+                      />
+                    </span>
+                  </a>
                   <span
                     class="css-1vzvkql"
                   >
@@ -3440,6 +3512,18 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
                     class="css-1atazsr"
                     data-testid="tag-and-flag"
                   >
+                    <a
+                      class="css-10d4t8c"
+                      href=""
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-zhtub2"
+                        />
+                      </span>
+                    </a>
                     <span
                       class="css-1vzvkql"
                     >

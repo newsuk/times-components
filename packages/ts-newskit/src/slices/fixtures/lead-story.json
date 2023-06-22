@@ -34,7 +34,12 @@
       },
       "title": "American owners pose threat to English pyramid",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "imageRight": false
+      "imageRight": false,
+      "tag": {
+        "label": "",
+        "href": ""
+      },
+      "flag": ""
     },
     {
       "image": {
@@ -47,7 +52,8 @@
       "tag": {
         "label": "Tag",
         "href": "/"
-      }
+      },
+      "flag": ""
     },
     {
       "image": {
@@ -92,7 +98,12 @@
   },
   "singleArticle": {
     "title": "Short title of the card describing the main content 2",
-    "url": "#"
+    "url": "#",
+    "tag": {
+      "label": "",
+      "href": ""
+    },
+    "flag": ""
   },
   "groupedArticles": {
     "tagL1": {
@@ -103,12 +114,22 @@
       {
         "headline": "Short title of the card describing the main content",
         "summary": "Short paragraph description of the article, outlining main story and focus.",
-        "url": "#"
+        "url": "#",
+        "tag": {
+          "label": "",
+          "href": ""
+        },
+        "flag": ""
       },
       {
         "headline": "Short title of the card describing the main content 2",
         "summary": "Short paragraph description of the article, outlining main story and focus.",
-        "url": "#"
+        "url": "#",
+        "tag": {
+          "label": "",
+          "href": ""
+        },
+        "flag": ""
       }
     ]
   },
@@ -121,6 +142,10 @@
       "title": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "imageRight": false,
+      "tag": {
+        "label": "",
+        "href": ""
+      },
       "flag": "Flag"
     },
     {
@@ -131,6 +156,10 @@
       "title": "‘American owners pose threat to English pyramid’",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "imageRight": false,
+      "tag": {
+        "label": "",
+        "href": ""
+      },
       "flag": ""
     }
   ],

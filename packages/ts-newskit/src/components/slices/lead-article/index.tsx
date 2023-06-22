@@ -161,13 +161,11 @@ export const LeadArticle = ({
             {summary}
           </TextBlock>
         )}
-        {(tag || flag) && (
-          <TagAndFlag
-            tag={tag}
-            flag={flag}
-            marginBlockStart={tagAndFlagBlockMarginBlockStart || 'space040'}
-          />
-        )}
+        <TagAndFlag
+          tag={tag}
+          flag={flag}
+          marginBlockStart={tagAndFlagBlockMarginBlockStart || 'space040'}
+        />
         {listData && (
           <UnorderedList
             overrides={{

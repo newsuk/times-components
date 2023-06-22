@@ -139,13 +139,11 @@ export const Article = ({
           >
             {title}
           </CardHeadlineLink>
-          {(tag || flag) && (
-            <TagAndFlag
-              tag={tag}
-              flag={flag}
-              marginBlockStart={tagAndFlagMarginBlockStart}
-            />
-          )}
+          <TagAndFlag
+            tag={tag}
+            flag={flag}
+            marginBlockStart={tagAndFlagMarginBlockStart}
+          />
         </Layout>
       </CardContent>
     </CardComposable>
