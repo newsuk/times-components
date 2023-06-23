@@ -100,7 +100,11 @@ export const LeadStory1 = ({
                   stylePreset: 'dashedDivider',
                   marginBlockStart: !!articlesWithListItems.listData
                     ? 'space020'
-                    : 'space040'
+                    : 'space040',
+                  marginBlockEnd:
+                    singleArticle.image && singleArticle.image.src !== ''
+                      ? 'space040'
+                      : 'space000'
                 }}
               />
             </FullWidthBlock>

@@ -114,7 +114,9 @@ export const Article = ({
         </GridLayoutItem>
       )}
 
-      {image && !hideImage && <CardMediaComponent {...cardImage} />}
+      {image &&
+        image.src !== '' &&
+        !hideImage && <CardMediaComponent {...cardImage} />}
       <CardContent>
         {image &&
           !imageRight &&

@@ -63,6 +63,10 @@
       "title": "Blow for rebel clubs as court says Uefa can block Super League",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "imageRight": false,
+      "tag": {
+        "label": "",
+        "href": ""
+      },
       "flag": "Flag4"
     },
     {
@@ -97,8 +101,13 @@
     "listData": [{ "label": "Unordered list item", "href": "/" }]
   },
   "singleArticle": {
-    "title": "Short title of the card describing the main content 2",
+    "image": {
+      "src": "",
+      "alt": ""
+    },
+    "title": "Short title of the card describing the main content 3",
     "url": "#",
+    "imageRight": null,
     "tag": {
       "label": "",
       "href": ""
