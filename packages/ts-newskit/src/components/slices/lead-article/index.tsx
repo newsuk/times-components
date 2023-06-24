@@ -47,7 +47,7 @@ export interface LeadArticleProps {
   loadingAspectRatio?: string;
   marginBlockStart?: string;
   textBlockMarginBlockStart?: string;
-  tagAndFlagBlockMarginBlockStart?: string;
+  tagAndFlagMarginBlockStart?: string;
   listData?: ListData[];
   showTagL1?: boolean;
   hideImage?: boolean;
@@ -69,7 +69,7 @@ export const LeadArticle = ({
   loadingAspectRatio,
   marginBlockStart,
   textBlockMarginBlockStart = 'space040',
-  tagAndFlagBlockMarginBlockStart = 'space040',
+  tagAndFlagMarginBlockStart = 'space040',
   listData,
   showTagL1,
   hideImage
@@ -179,7 +179,7 @@ export const LeadArticle = ({
         <TagAndFlag
           tag={tag}
           flag={flag}
-          marginBlockStart={tagAndFlagBlockMarginBlockStart}
+          marginBlockStart={tagAndFlagMarginBlockStart}
         />
         <UnorderedListItems listData={listData} />
       </CardContent>
