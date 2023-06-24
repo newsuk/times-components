@@ -205,7 +205,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     class="css-5pczz7"
                   />
                   <img
-                    alt="Short title of the card describing the main content"
+                    alt="This is ALT Text"
                     class="css-1qgqq71"
                     src="/assets/main_01.jpg"
                   />
@@ -312,7 +312,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     class="css-5pczz7"
                   />
                   <img
-                    alt="Short title of the card describing the main content 2"
+                    alt="This is ALT Text"
                     class="css-1qgqq71"
                     src="/assets/main_01.jpg"
                   />
@@ -593,7 +593,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     class="css-5pczz7"
                   />
                   <img
-                    alt="Short title of the card describing the main content"
+                    alt="This is ALT Text"
                     class="css-1qgqq71"
                     src="/assets/main_01.jpg"
                   />
@@ -700,7 +700,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     class="css-5pczz7"
                   />
                   <img
-                    alt="Short title of the card describing the main content 2"
+                    alt="This is ALT Text"
                     class="css-1qgqq71"
                     src="/assets/main_01.jpg"
                   />

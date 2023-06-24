@@ -4,9 +4,7 @@ import {
   CardContent,
   CardComposable,
   Divider,
-  Hidden,
-  UnorderedList,
-  LinkInline
+  Hidden
 } from 'newskit';
 import React from 'react';
 import {
@@ -15,9 +13,16 @@ import {
   TextLink
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
+import { UnorderedListItems } from './unorderedList';
 type ListData = {
   label: string;
   href: string;
+};
+
+type ImageProps = {
+  src: string;
+  alt?: string;
+  credit?: string;
 };
 export interface LeadArticleProps {
   headline: string;
@@ -28,7 +33,7 @@ export interface LeadArticleProps {
     href: string;
   };
   caption?: string;
-  image?: string;
+  image?: ImageProps;
   url: string;
   tag?: {
     label: string;
@@ -45,6 +50,7 @@ export interface LeadArticleProps {
   tagAndFlagBlockMarginBlockStart?: string;
   listData?: ListData[];
   showTagL1?: boolean;
+  hideImage?: boolean;
 }
 export const LeadArticle = ({
   headline,
@@ -62,11 +68,29 @@ export const LeadArticle = ({
   typographyPreset,
   loadingAspectRatio,
   marginBlockStart,
-  textBlockMarginBlockStart,
-  tagAndFlagBlockMarginBlockStart,
+  textBlockMarginBlockStart = 'space040',
+  tagAndFlagBlockMarginBlockStart = 'space040',
   listData,
-  showTagL1
+  showTagL1,
+  hideImage
 }: LeadArticleProps) => {
+  const cardImage = image &&
+    image.src !== '' && {
+      media: {
+        src: image.src,
+        alt: image.alt || headline,
+        loadingAspectRatio: loadingAspectRatio || '3:2'
+      }
+    };
+
+  const hasImage = image && image.src !== '';
+  const hasCaption = caption && caption !== '';
+  const headlineTypography = typographyPreset
+    ? typographyPreset
+    : imageTop
+      ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
+      : 'editorialHeadline040';
+
   return (
     <CardComposable
       areas={{
@@ -83,66 +107,57 @@ export const LeadArticle = ({
       columnGap="space040"
       columns={{ md: imageTop ? '100%' : `${contentWidth || '260px'} auto` }}
     >
-      {image && (
-        <Block
-          marginBlockEnd={imageTop ? 'space050' : 'space000'}
-          marginBlockStart={marginBlockStart || 'space000'}
-        >
-          <FullWidthCardMediaMob
-            media={{
-              src: image,
-              alt: headline,
-              loadingAspectRatio: loadingAspectRatio || '3:2'
-            }}
-          />
-          <TextBlock
-            marginBlockStart="space020"
-            typographyPreset="utilityMeta010"
+      {hasImage &&
+        !hideImage && (
+          <Block
+            marginBlockEnd={imageTop ? 'space050' : 'space000'}
+            marginBlockStart={marginBlockStart || 'space000'}
           >
-            {caption}
-          </TextBlock>
-        </Block>
-      )}
+            <FullWidthCardMediaMob {...cardImage} />
+            {hasCaption && (
+              <TextBlock
+                marginBlockStart="space020"
+                typographyPreset="utilityMeta010"
+              >
+                {caption}
+              </TextBlock>
+            )}
+          </Block>
+        )}
 
       <CardContent
         alignContent="start"
         overrides={{ marginBlockEnd: contentTop ? 'space040' : 'space000' }}
       >
         {hasTopBorder && (
-          <>
-            {!imageTop && (
-              <Divider
-                overrides={{
-                  stylePreset: 'dashedDivider',
-                  marginBlockEnd: 'space050'
-                }}
-              />
-            )}
-          </>
+          <Divider
+            overrides={{
+              stylePreset: 'dashedDivider',
+              marginBlockEnd: 'space050'
+            }}
+          />
         )}
 
-        {tagL1 && (
-          <Hidden xs={showTagL1} sm={showTagL1}>
-            <TextLink
-              overrides={{
-                typographyPreset: 'utilityButton010',
-                stylePreset: 'inkBrand010',
-                marginBlockEnd: 'space040'
-              }}
-              href={tagL1.href}
-            >
-              {tagL1.label}
-            </TextLink>
-          </Hidden>
-        )}
+        {tagL1 &&
+          tagL1.label !== '' && (
+            <Hidden xs={showTagL1} sm={showTagL1}>
+              <TextLink
+                overrides={{
+                  typographyPreset: 'utilityButton010',
+                  stylePreset: 'inkBrand010',
+                  marginBlockEnd: 'space040'
+                }}
+                href={tagL1.href}
+              >
+                {tagL1.label}
+              </TextLink>
+            </Hidden>
+          )}
+
         <CardHeadlineLink
           href={url}
           overrides={{
-            typographyPreset: typographyPreset
-              ? typographyPreset
-              : imageTop
-                ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
-                : 'editorialHeadline040'
+            typographyPreset: headlineTypography
           }}
           external={false}
           expand={!tag}
@@ -155,7 +170,7 @@ export const LeadArticle = ({
               xs: 'editorialParagraph020',
               md: 'editorialParagraph010'
             }}
-            marginBlockStart={textBlockMarginBlockStart || 'space040'}
+            marginBlockStart={textBlockMarginBlockStart}
             as="p"
           >
             {summary}
@@ -164,40 +179,9 @@ export const LeadArticle = ({
         <TagAndFlag
           tag={tag}
           flag={flag}
-          marginBlockStart={tagAndFlagBlockMarginBlockStart || 'space040'}
+          marginBlockStart={tagAndFlagBlockMarginBlockStart}
         />
-        {listData && (
-          <UnorderedList
-            overrides={{
-              marker: {
-                size: 'iconSize005',
-                spaceInline: 'space020',
-                stylePreset: 'inkContrast'
-              },
-              marginBlockStart: 'space050',
-              content: {
-                typographyPreset: 'utilityBody010'
-              }
-            }}
-          >
-            {listData.map(({ label, href }, index) => {
-              const hasHref = !!href;
-              return hasHref ? (
-                <LinkInline
-                  overrides={{
-                    stylePreset: 'inkContrast'
-                  }}
-                  key={index}
-                  href={href}
-                >
-                  {label}
-                </LinkInline>
-              ) : (
-                <>{label}</>
-              );
-            })}
-          </UnorderedList>
-        )}
+        <UnorderedListItems listData={listData} />
       </CardContent>
     </CardComposable>
   );

@@ -54,7 +54,7 @@ export const LeadStory1 = ({
 
   const modifiedArticlesWithUnorderedList = {
     ...articlesWithListItems,
-    imageTop: true,
+    hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
     typographyPreset:
       breakpointKey === 'xs'
@@ -63,6 +63,12 @@ export const LeadStory1 = ({
           ? 'editorialHeadline050'
           : 'editorialHeadline060',
     showTagL1: false
+  };
+
+  const modifedLeadArticle = {
+    ...leadArticle,
+    hasTopBorder: false,
+    imageTop: true
   };
 
   const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
@@ -159,7 +165,7 @@ export const LeadStory1 = ({
             />
           </Visible>
           <LeadStoryLayout>
-            <LeadArticle {...leadArticle} />
+            <LeadArticle {...modifedLeadArticle} />
           </LeadStoryLayout>
           <Visible md lg xl>
             <LeadStoryDivider
