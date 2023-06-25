@@ -43,9 +43,9 @@ export interface LeadArticleProps {
   hasTopBorder?: boolean;
   contentTop?: boolean;
   contentWidth?: string;
-  typographyPreset?: string;
+  headlineTypographyPreset?: string;
   loadingAspectRatio?: string;
-  marginBlockStart?: string;
+  imageMarginBlockStart?: string;
   textBlockMarginBlockStart?: string;
   tagAndFlagMarginBlockStart?: string;
   listData?: ListData[];
@@ -65,9 +65,9 @@ export const LeadArticle = ({
   hasTopBorder = true,
   contentTop,
   contentWidth,
-  typographyPreset,
+  headlineTypographyPreset,
   loadingAspectRatio,
-  marginBlockStart,
+  imageMarginBlockStart = 'space000',
   textBlockMarginBlockStart = 'space040',
   tagAndFlagMarginBlockStart = 'space040',
   listData,
@@ -85,8 +85,8 @@ export const LeadArticle = ({
 
   const hasImage = image && image.src !== '';
   const hasCaption = caption && caption !== '';
-  const headlineTypography = typographyPreset
-    ? typographyPreset
+  const headlineTypography = headlineTypographyPreset
+    ? headlineTypographyPreset
     : imageTop
       ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
       : 'editorialHeadline040';
@@ -111,7 +111,7 @@ export const LeadArticle = ({
         !hideImage && (
           <Block
             marginBlockEnd={imageTop ? 'space050' : 'space000'}
-            marginBlockStart={marginBlockStart || 'space000'}
+            marginBlockStart={imageMarginBlockStart}
           >
             <FullWidthCardMediaMob {...cardImage} />
             {hasCaption && (

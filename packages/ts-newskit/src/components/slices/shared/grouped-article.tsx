@@ -17,7 +17,7 @@ export const GroupedArticle = ({ articles, tagL1 }: GroupedArticleProps) => {
   const modifiedGroupedArticles = articles.map(article => ({
     ...article,
     hasTopBorder: false,
-    typographyPreset: 'editorialHeadline020',
+    headlineTypographyPreset: 'editorialHeadline020',
     hideImage: true
   }));
 

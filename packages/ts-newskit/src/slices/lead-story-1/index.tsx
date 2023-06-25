@@ -43,6 +43,7 @@ export const LeadStory1 = ({
   articlesWithListItems
 }: LeadStory1Props) => {
   const breakpointKey = useBreakpointKey();
+  const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
 
   const modifedArticles =
     breakpointKey === 'xl'
@@ -56,7 +57,7 @@ export const LeadStory1 = ({
     ...articlesWithListItems,
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
-    typographyPreset:
+    headlineTypographyPreset:
       breakpointKey === 'xs'
         ? 'editorialHeadline040'
         : breakpointKey === 'sm'
@@ -68,10 +69,12 @@ export const LeadStory1 = ({
   const modifedLeadArticle = {
     ...leadArticle,
     hasTopBorder: false,
-    imageTop: true
+    imageTop: true,
+    headlineTypographyPreset: screenXsAndSm
+      ? 'editorialHeadline040'
+      : 'editorialHeadline030'
   };
 
-  const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
   const marginTop = singleArticle
     ? 'space040'
     : !!articlesWithListItems.listData

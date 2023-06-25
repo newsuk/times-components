@@ -28,14 +28,14 @@ export const ArticleStack = ({
   const modifiedVerticalArticles = verticalArticles.map(item => ({
     ...item,
     imageTop: true,
-    typographyPreset: 'editorialHeadline020',
+    headlineTypographyPreset: 'editorialHeadline020',
     hasTopBorder: false
   }));
 
   const modifiredHorizontalArticles = horizontalArticles.map(item => ({
     ...item,
     imageTop: true,
-    typographyPreset: 'editorialHeadline020',
+    headlineTypographyPreset: 'editorialHeadline020',
     hasTopBorder: false
   }));
   const articleGridVertical = (
