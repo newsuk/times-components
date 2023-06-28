@@ -1,6 +1,10 @@
 {
   "section": { "title": "Rugby Union", "href": "https://www.thetimes.co.uk/" },
   "leadArticle": {
+    "tagL1": {
+      "label": "",
+      "href": ""
+    },
     "headline": "Sarcacens an inclusive club? They didnt look out for me",
     "summary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
     "caption": "Credit",
