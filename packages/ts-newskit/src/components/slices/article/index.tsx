@@ -72,6 +72,8 @@ export const Article = ({
   const titleMarginBlockStart =
     imageRight || hideImage ? 'space000' : articleTitleMarginTop;
 
+  const hasImage = image && image.src !== '';
+
   const Layout: React.FC<LayoutProps> = ({ children }) => {
     return imageRight ? <Block>{children}</Block> : <>{children}</>;
   };
@@ -114,7 +116,7 @@ export const Article = ({
         </GridLayoutItem>
       )}
 
-      {image && !hideImage && <CardMediaComponent {...cardImage} />}
+      {hasImage && !hideImage && <CardMediaComponent {...cardImage} />}
       <CardContent>
         {image &&
           !imageRight &&
@@ -139,13 +141,11 @@ export const Article = ({
           >
             {title}
           </CardHeadlineLink>
-          {(tag || flag) && (
-            <TagAndFlag
-              tag={tag}
-              flag={flag}
-              marginBlockStart={tagAndFlagMarginBlockStart}
-            />
-          )}
+          <TagAndFlag
+            tag={tag}
+            flag={flag}
+            marginBlockStart={tagAndFlagMarginBlockStart}
+          />
         </Layout>
       </CardContent>
     </CardComposable>

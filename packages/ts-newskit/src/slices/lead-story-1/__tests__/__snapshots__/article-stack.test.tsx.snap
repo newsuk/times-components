@@ -88,7 +88,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
         </div>
         <hr
           aria-hidden="true"
-          class="css-13rcg9f"
+          class="css-5iyysz"
           data-testid="divider"
         />
         <div
@@ -132,7 +132,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
         </div>
         <hr
           aria-hidden="true"
-          class="css-13rcg9f"
+          class="css-5iyysz"
           data-testid="divider"
         />
         <div
@@ -195,7 +195,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
         </div>
         <hr
           aria-hidden="true"
-          class="css-13rcg9f"
+          class="css-5iyysz"
           data-testid="divider"
         />
         <div
@@ -239,6 +239,18 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               class="css-1atazsr"
               data-testid="tag-and-flag"
             >
+              <a
+                class="css-10d4t8c"
+                href=""
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-zhtub2"
+                  />
+                </span>
+              </a>
               <span
                 class="css-1vzvkql"
               >
@@ -249,7 +261,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
         </div>
         <hr
           aria-hidden="true"
-          class="css-13rcg9f"
+          class="css-5iyysz"
           data-testid="divider"
         />
         <div
@@ -511,6 +523,18 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
             class="css-1atazsr"
             data-testid="tag-and-flag"
           >
+            <a
+              class="css-10d4t8c"
+              href=""
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-zhtub2"
+                />
+              </span>
+            </a>
             <span
               class="css-1vzvkql"
             >

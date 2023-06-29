@@ -36,7 +36,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                   class="css-5pczz7"
                 />
                 <img
-                  alt="Sarcacens an inclusive club? They didnt look out for me"
+                  alt="This is ALT Text"
                   class="css-1qgqq71"
                   src="/assets/main_01.jpg"
                 />
@@ -313,7 +313,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                           class="css-5pczz7"
                         />
                         <img
-                          alt="Short title of the card describing the main content"
+                          alt="This is ALT Text"
                           class="css-1qgqq71"
                           src="/assets/main_01.jpg"
                         />
@@ -420,7 +420,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                           class="css-5pczz7"
                         />
                         <img
-                          alt="Short title of the card describing the main content 2"
+                          alt="This is ALT Text"
                           class="css-1qgqq71"
                           src="/assets/main_01.jpg"
                         />
@@ -768,6 +768,18 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                 class="css-1atazsr"
                 data-testid="tag-and-flag"
               >
+                <a
+                  class="css-10d4t8c"
+                  href=""
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-zhtub2"
+                    />
+                  </span>
+                </a>
                 <span
                   class="css-1vzvkql"
                 >
@@ -928,6 +940,18 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                       class="css-1atazsr"
                       data-testid="tag-and-flag"
                     >
+                      <a
+                        class="css-10d4t8c"
+                        href=""
+                      >
+                        <span
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-zhtub2"
+                          />
+                        </span>
+                      </a>
                       <span
                         class="css-1vzvkql"
                       >
@@ -1067,7 +1091,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-5pczz7"
                 />
                 <img
-                  alt="Sarcacens an inclusive club? They didnt look out for me"
+                  alt="This is ALT Text"
                   class="css-1qgqq71"
                   src="/assets/main_01.jpg"
                 />
@@ -1344,7 +1368,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                           class="css-5pczz7"
                         />
                         <img
-                          alt="Short title of the card describing the main content"
+                          alt="This is ALT Text"
                           class="css-1qgqq71"
                           src="/assets/main_01.jpg"
                         />
@@ -1451,7 +1475,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                           class="css-5pczz7"
                         />
                         <img
-                          alt="Short title of the card describing the main content 2"
+                          alt="This is ALT Text"
                           class="css-1qgqq71"
                           src="/assets/main_01.jpg"
                         />
@@ -1621,7 +1645,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
         </div>
         <hr
           aria-hidden="true"
-          class="css-13rcg9f"
+          class="css-5iyysz"
           data-testid="divider"
         />
         <div
@@ -1665,7 +1689,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
         </div>
         <hr
           aria-hidden="true"
-          class="css-13rcg9f"
+          class="css-5iyysz"
           data-testid="divider"
         />
         <div
@@ -1773,6 +1797,18 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     class="css-1atazsr"
                     data-testid="tag-and-flag"
                   >
+                    <a
+                      class="css-10d4t8c"
+                      href=""
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-zhtub2"
+                        />
+                      </span>
+                    </a>
                     <span
                       class="css-1vzvkql"
                     >
@@ -1891,7 +1927,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-5pczz7"
                 />
                 <img
-                  alt="Sarcacens an inclusive club? They didnt look out for me"
+                  alt="This is ALT Text"
                   class="css-1qgqq71"
                   src="/assets/main_01.jpg"
                 />
@@ -2160,7 +2196,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                         class="css-5pczz7"
                       />
                       <img
-                        alt="Short title of the card describing the main content"
+                        alt="This is ALT Text"
                         class="css-1qgqq71"
                         src="/assets/main_01.jpg"
                       />
@@ -2262,7 +2298,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                         class="css-5pczz7"
                       />
                       <img
-                        alt="Short title of the card describing the main content 2"
+                        alt="This is ALT Text"
                         class="css-1qgqq71"
                         src="/assets/main_01.jpg"
                       />
@@ -2438,7 +2474,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             </div>
             <hr
               aria-hidden="true"
-              class="css-13rcg9f"
+              class="css-5iyysz"
               data-testid="divider"
             />
             <div
@@ -2482,7 +2518,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             </div>
             <hr
               aria-hidden="true"
-              class="css-13rcg9f"
+              class="css-5iyysz"
               data-testid="divider"
             />
             <div
@@ -2545,7 +2581,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             </div>
             <hr
               aria-hidden="true"
-              class="css-13rcg9f"
+              class="css-5iyysz"
               data-testid="divider"
             />
             <div
@@ -2589,6 +2625,18 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-1atazsr"
                   data-testid="tag-and-flag"
                 >
+                  <a
+                    class="css-10d4t8c"
+                    href=""
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-zhtub2"
+                      />
+                    </span>
+                  </a>
                   <span
                     class="css-1vzvkql"
                   >
@@ -2599,7 +2647,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             </div>
             <hr
               aria-hidden="true"
-              class="css-13rcg9f"
+              class="css-5iyysz"
               data-testid="divider"
             />
             <div
@@ -2739,6 +2787,18 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     class="css-1atazsr"
                     data-testid="tag-and-flag"
                   >
+                    <a
+                      class="css-10d4t8c"
+                      href=""
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-zhtub2"
+                        />
+                      </span>
+                    </a>
                     <span
                       class="css-1vzvkql"
                     >
@@ -2868,7 +2928,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-5pczz7"
                 />
                 <img
-                  alt="Sarcacens an inclusive club? They didnt look out for me"
+                  alt="This is ALT Text"
                   class="css-1qgqq71"
                   src="/assets/main_01.jpg"
                 />
@@ -3137,7 +3197,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                         class="css-5pczz7"
                       />
                       <img
-                        alt="Short title of the card describing the main content"
+                        alt="This is ALT Text"
                         class="css-1qgqq71"
                         src="/assets/main_01.jpg"
                       />
@@ -3239,7 +3299,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                         class="css-5pczz7"
                       />
                       <img
-                        alt="Short title of the card describing the main content 2"
+                        alt="This is ALT Text"
                         class="css-1qgqq71"
                         src="/assets/main_01.jpg"
                       />
@@ -3415,7 +3475,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             </div>
             <hr
               aria-hidden="true"
-              class="css-13rcg9f"
+              class="css-5iyysz"
               data-testid="divider"
             />
             <div
@@ -3459,7 +3519,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             </div>
             <hr
               aria-hidden="true"
-              class="css-13rcg9f"
+              class="css-5iyysz"
               data-testid="divider"
             />
             <div
@@ -3522,7 +3582,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             </div>
             <hr
               aria-hidden="true"
-              class="css-13rcg9f"
+              class="css-5iyysz"
               data-testid="divider"
             />
             <div
@@ -3566,6 +3626,18 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-1atazsr"
                   data-testid="tag-and-flag"
                 >
+                  <a
+                    class="css-10d4t8c"
+                    href=""
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-zhtub2"
+                      />
+                    </span>
+                  </a>
                   <span
                     class="css-1vzvkql"
                   >
@@ -3576,7 +3648,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             </div>
             <hr
               aria-hidden="true"
-              class="css-13rcg9f"
+              class="css-5iyysz"
               data-testid="divider"
             />
             <div
@@ -3716,6 +3788,18 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     class="css-1atazsr"
                     data-testid="tag-and-flag"
                   >
+                    <a
+                      class="css-10d4t8c"
+                      href=""
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-zhtub2"
+                        />
+                      </span>
+                    </a>
                     <span
                       class="css-1vzvkql"
                     >

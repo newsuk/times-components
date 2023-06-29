@@ -30,7 +30,7 @@ export const ArticleStack = ({
               ? {
                   ...modifiedArticle,
                   textBlockMarginBlockStart: 'space050',
-                  typographyPreset:
+                  headlineTypographyPreset:
                     breakpointKey === 'xs'
                       ? 'editorialHeadline040'
                       : breakpointKey === 'sm'
@@ -39,7 +39,7 @@ export const ArticleStack = ({
                 }
               : {
                   ...modifiedArticle,
-                  typographyPreset: 'editorialHeadline020'
+                  headlineTypographyPreset: 'editorialHeadline020'
                 };
           return (
             <>
