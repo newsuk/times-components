@@ -4,7 +4,8 @@ import {
   getSpacingCssFromTheme,
   styled,
   Stack,
-  Block
+  Block,
+  Scroll
 } from 'newskit';
 
 const setDividerPositionLeft = (space: string) => ({ left: `-${space}` });
@@ -64,4 +65,8 @@ export const BlockItem = styled(Block)<{
 
 export const RelativeBlockItem = styled(Block)`
   position: relative;
+`;
+
+export const ScrollContainer = styled(Scroll)`
+  overflow-y: hidden;
 `;

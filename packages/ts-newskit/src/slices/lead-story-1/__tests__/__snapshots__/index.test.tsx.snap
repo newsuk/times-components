@@ -2467,7 +2467,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         class="css-1r18k3i"
       >
         <div
-          class="css-6uqogc"
+          class="css-amkxca"
           data-testid="scroll-container"
         >
           <div
@@ -3495,7 +3495,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         class="css-1r18k3i"
       >
         <div
-          class="css-6uqogc"
+          class="css-amkxca"
           data-testid="scroll-container"
         >
           <div
