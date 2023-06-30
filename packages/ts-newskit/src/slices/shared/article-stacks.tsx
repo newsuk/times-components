@@ -1,7 +1,7 @@
 import React from 'react';
-import { Block, BreakpointKeys, Divider, GridLayout, Scroll } from 'newskit';
+import { Block, BreakpointKeys, Divider, GridLayout } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { StackItem, StyledDivider } from '../shared-styles';
+import { StackItem, StyledDivider, ScrollContainer } from '../shared-styles';
 import { ComposedArticleStack } from './composed-article-stack';
 
 export const ArticleStackLarge = ({
@@ -55,12 +55,12 @@ export const ArticleStackLarge = ({
   const isMob = breakpoint === 'xs' || breakpoint === 'sm';
 
   return isMob ? (
-    <Scroll
+    <ScrollContainer
       overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
       tabIndex={undefined}
     >
       {articleGrid}
-    </Scroll>
+    </ScrollContainer>
   ) : (
     articleGrid
   );
