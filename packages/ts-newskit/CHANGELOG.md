@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.60.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.4...@times-components/ts-newskit@1.60.5) (2023-06-30)
+
+
+### Bug Fixes
+
+* **TMRX-1348:** vertical scroll bounce ([#3414](https://github.com/newsuk/times-components/issues/3414)) ([0b87ddf](https://github.com/newsuk/times-components/commit/0b87ddfb2cca9df876f33b98f9f3d1dd0ef713bd))
+
+
+
+
+
 ## [1.60.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.3...@times-components/ts-newskit@1.60.4) (2023-06-29)
 
 
