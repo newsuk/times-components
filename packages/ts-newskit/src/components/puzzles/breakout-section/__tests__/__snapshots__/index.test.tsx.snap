@@ -125,7 +125,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         >
           <a
             class="css-9rhswx"
-            href="/puzzles/crosswords?puzzlesPage=true"
+            href="/puzzles/subpuzzles/crosswords"
           >
             <span
               class="css-17x5lw"
@@ -144,7 +144,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         >
           <a
             class="css-9rhswx"
-            href="/puzzles/sudokus?puzzlesPage=true"
+            href="/puzzles/subpuzzles/sudokus"
           >
             <span
               class="css-17x5lw"
@@ -163,7 +163,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         >
           <a
             class="css-9rhswx"
-            href="/puzzles/word-puzzles?puzzlesPage=true"
+            href="/puzzles/subpuzzles/word-puzzles"
           >
             <span
               class="css-17x5lw"
@@ -182,7 +182,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         >
           <a
             class="css-9rhswx"
-            href="/puzzles/numbers-and-logic?puzzlesPage=true"
+            href="/puzzles/subpuzzles/numbers-and-logic"
           >
             <span
               class="css-17x5lw"
@@ -201,7 +201,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         >
           <a
             class="css-9rhswx"
-            href="/puzzles/quizzes-and-teasers?puzzlesPage=true"
+            href="/puzzles/subpuzzles/quizzes-and-teasers"
           >
             <span
               class="css-17x5lw"
@@ -220,7 +220,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         >
           <a
             class="css-9rhswx"
-            href="/puzzles/board-and-card-games?puzzlesPage=true"
+            href="/puzzles/subpuzzles/board-and-card-games"
           >
             <span
               class="css-17x5lw"

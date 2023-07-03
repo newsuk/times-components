@@ -47,7 +47,7 @@ export const BreakoutSection: FC = () => {
           <StyledSudokuIconD2 />
           <StyledSudokuIconA4 />
           {breakoutItems.map(({ id, title, url }) => (
-            <GridLayoutItem id={id}>
+            <GridLayoutItem key={id} id={id}>
               <BreakoutSectionLink
                 overrides={{
                   stylePreset: 'puzzlesShadowBtn',
