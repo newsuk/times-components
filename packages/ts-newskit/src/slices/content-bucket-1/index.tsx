@@ -34,10 +34,12 @@ export const ContentBucket1 = ({
   articles
 }: ContentBucket1Props) => {
   const breakpointKey = useBreakpointKey();
+  const isMobile = ['xs', 'sm'].includes(breakpointKey);
 
   const modifiedLeadArticle = {
     ...leadArticle,
-    imageTop: breakpointKey === 'xs' || breakpointKey === 'sm' ? true : false
+    imageTop: isMobile,
+    hasTopBorder: !isMobile
   };
 
   return (

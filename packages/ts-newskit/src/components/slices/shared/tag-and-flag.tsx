@@ -14,13 +14,17 @@ export interface TagAndFlagProps {
 export const TagAndFlag = ({
   flag,
   tag,
-  marginBlockStart
+  marginBlockStart = 'space000'
 }: TagAndFlagProps) => {
+  const hasTag = tag && tag.label;
+  const hasFlag = flag && flag !== '';
+
+  if (!hasTag && !hasFlag) {
+    return null;
+  }
+
   return (
-    <Block
-      marginBlockStart={marginBlockStart || 'space000'}
-      data-testid="tag-and-flag"
-    >
+    <Block marginBlockStart={marginBlockStart} data-testid="tag-and-flag">
       {tag && (
         <TextLink
           overrides={{
@@ -34,6 +38,8 @@ export const TagAndFlag = ({
       )}
 
       {tag &&
+        Object.keys(tag).length > 0 &&
+        tag.label !== '' &&
         flag && (
           <ContainerInline>
             <Divider

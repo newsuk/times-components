@@ -34,13 +34,18 @@ export const LeadStory3 = ({
 
   const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
 
-  const modifedLeadArticles = {
+  const modifedLeadArticle = {
     ...leadArticle,
-    typographyPreset: 'editorialHeadline040',
+    headlineTypographyPreset: 'editorialHeadline040',
     imageTop: true,
+    hasTopBorder: false,
     loadingAspectRatio: '4:5'
   };
 
+  const modifedLeadArticles = leadArticles.map(article => ({
+    ...article,
+    hasTopBorder: false
+  }));
   const LeadStoryLayout: React.FC = ({ children }) => {
     return (
       <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
@@ -74,7 +79,7 @@ export const LeadStory3 = ({
         }}
       >
         <ArticleStack
-          leadArticles={leadArticles}
+          leadArticles={modifedLeadArticles}
           breakpointKey={breakpointKey}
         />
       </StackItem>
@@ -104,7 +109,7 @@ export const LeadStory3 = ({
         </Hidden>
         <Block>
           <LeadStoryLayout>
-            <LeadArticle {...modifedLeadArticles} />
+            <LeadArticle {...modifedLeadArticle} />
           </LeadStoryLayout>
         </Block>
       </StackItem>

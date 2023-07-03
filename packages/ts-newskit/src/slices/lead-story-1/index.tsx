@@ -43,6 +43,7 @@ export const LeadStory1 = ({
   articlesWithListItems
 }: LeadStory1Props) => {
   const breakpointKey = useBreakpointKey();
+  const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
 
   const modifedArticles =
     breakpointKey === 'xl'
@@ -54,9 +55,9 @@ export const LeadStory1 = ({
 
   const modifiedArticlesWithUnorderedList = {
     ...articlesWithListItems,
-    imageTop: true,
+    hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
-    typographyPreset:
+    headlineTypographyPreset:
       breakpointKey === 'xs'
         ? 'editorialHeadline040'
         : breakpointKey === 'sm'
@@ -65,7 +66,15 @@ export const LeadStory1 = ({
     showTagL1: false
   };
 
-  const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
+  const modifedLeadArticle = {
+    ...leadArticle,
+    hasTopBorder: false,
+    imageTop: true,
+    headlineTypographyPreset: screenXsAndSm
+      ? 'editorialHeadline040'
+      : 'editorialHeadline030'
+  };
+
   const marginTop = singleArticle
     ? 'space040'
     : !!articlesWithListItems.listData
@@ -100,7 +109,11 @@ export const LeadStory1 = ({
                   stylePreset: 'dashedDivider',
                   marginBlockStart: !!articlesWithListItems.listData
                     ? 'space020'
-                    : 'space040'
+                    : 'space040',
+                  marginBlockEnd:
+                    singleArticle.image && singleArticle.image.src !== ''
+                      ? 'space040'
+                      : 'space000'
                 }}
               />
             </FullWidthBlock>
@@ -155,7 +168,7 @@ export const LeadStory1 = ({
             />
           </Visible>
           <LeadStoryLayout>
-            <LeadArticle {...leadArticle} />
+            <LeadArticle {...modifedLeadArticle} />
           </LeadStoryLayout>
           <Visible md lg xl>
             <LeadStoryDivider

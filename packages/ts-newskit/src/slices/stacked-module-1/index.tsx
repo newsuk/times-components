@@ -3,7 +3,7 @@ import React from 'react';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { CustomStackLayout } from '../shared';
-import { StackItem } from '../shared-styles';
+import { StackItem, StyledDivider } from '../shared-styles';
 
 export interface StackModule1Props {
   articles: ArticleProps[];
@@ -51,7 +51,10 @@ const articleStack = ({
           const articleBorder = articleIndex < articleArr.length - 1 &&
             !isMob &&
             articleIndex !== 3 && (
-              <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
+              <StyledDivider
+                overrides={{ stylePreset: 'lightDivider' }}
+                vertical
+              />
             );
 
           const hasImage = isMob && articleIndex > 0;

@@ -40,7 +40,7 @@ export const LeadStory2 = ({
     imageTop: !!screenXsAndSm,
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
-    typographyPreset:
+    headlineTypographyPreset:
       breakpointKey === 'xs'
         ? 'editorialHeadline040'
         : breakpointKey === 'sm'
