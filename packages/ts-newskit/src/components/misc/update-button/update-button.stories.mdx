@@ -11,9 +11,11 @@ import { UpdateButton } from './update-button.tsx';
 />
 
 # UpdateButton component
-The `UpdateButton` component is used to show and hide related content.
+The `UpdateButton` component is used to highlight when there is an update in an article.
 
-This component takes in a two props, as below, to display text based content.
+This component takes in a two props, loading to display the loading spinner and display which should be true when an update has happened.
+
+You can set a delay on the component for it to be removed after a particular time (ms).
 
 ## Props
 <Props of={UpdateButton} />
@@ -24,14 +26,14 @@ This component takes in a two props, as below, to display text based content.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const UpdateButtonStory = ({ loading }) => (
+export const UpdateButtonStory = ({ loading, display, delay }) => (
   <TCThemeProvider theme={TimesWebLightTheme}>
-    <UpdateButton loading={loading}/>
+    <UpdateButton loading={loading} display={display} delay={delay}/>
   </TCThemeProvider>
 );
 
 <Story name="UpdateButton"
-  args={{ loading: false }}
+  args={{ loading: false, display: true, delay: 8000} }
 >
   {UpdateButtonStory.bind({})}
 </Story>
