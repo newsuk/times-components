@@ -13,9 +13,9 @@ import { UpdateButton } from './update-button.tsx';
 # UpdateButton component
 The `UpdateButton` component is used to highlight when there is an update in an article.
 
-This component takes in a two props, loading to display the loading spinner and display which should be true when an update has happened.
+The `UpdateButton` component makes use of the `DelayedComponent` which will set the component to mount or unmount given a delay and intial state.
 
-You can set a delay on the component for it to be removed after a particular time (ms).
+This component takes in a two props, loading to display the loading spinner and display which should be true when an update has happened.
 
 ## Props
 <Props of={UpdateButton} />
