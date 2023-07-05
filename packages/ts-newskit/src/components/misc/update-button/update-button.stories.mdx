@@ -21,19 +21,19 @@ This component takes in a two props, loading to display the loading spinner and 
 <Props of={UpdateButton} />
 
 ## Code Example
-`<UpdateButton />`
+`<UpdateButton loading={loading} display={true} delay={8000} label='New updates'/>`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const UpdateButtonStory = ({ loading, display, delay }) => (
+export const UpdateButtonStory = ({ loading, display, delay, label }) => (
   <TCThemeProvider theme={TimesWebLightTheme}>
-    <UpdateButton loading={loading} display={display} delay={delay}/>
+    <UpdateButton loading={loading} display={display} delay={delay} label={label}/>
   </TCThemeProvider>
 );
 
 <Story name="UpdateButton"
-  args={{ loading: false, display: true, delay: 8000} }
+  args={{ loading: false, display: true, delay: 8000, label: 'New Updates'} }
 >
   {UpdateButtonStory.bind({})}
 </Story>
