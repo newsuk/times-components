@@ -49,6 +49,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
               src: imageUrl,
               placeholderIcon: true,
               fit: 'cover',
+              loading: 'lazy',
               overrides: {
                 stylePreset: 'puzzleCardMedia'
               }

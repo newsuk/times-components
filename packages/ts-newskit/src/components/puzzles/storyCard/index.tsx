@@ -52,7 +52,8 @@ export const StoryCard: FC<StoryCardProps> = ({
                 alt: altText || title,
                 src: image,
                 placeholderIcon: true,
-                fit: 'cover'
+                fit: 'cover',
+                loading: 'lazy'
               }}
             />
           ) : (
