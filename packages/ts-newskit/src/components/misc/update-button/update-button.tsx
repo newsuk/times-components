@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from 'newskit';
 import { NewsKitFilledArrowIcon } from '../../../assets';
-import { DelayedComponent } from '../delayed-exit/delayed-component';
+import { DelayedComponent } from '../delayed-component/delayed-component';
 
 export const UpdateButton: React.FC<{ loading: boolean, display: boolean, delay: number, label: string, handleClick: any }> = ({ loading, display, delay, label, handleClick }) => {
   return (
