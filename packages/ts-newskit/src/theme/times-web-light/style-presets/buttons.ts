@@ -8,17 +8,18 @@ export const buttonStylePresets = {
         '{{borders.borderWidth020}} {{borders.borderWidth000}} {{borders.borderWidth000}} {{borders.borderWidth000}}'
     }
   },
-  pillButton: {
+  updateButton: {
     base: {
-      borderRadius: '{{borders.borderRadiusPill}}',
-      backgroundColor: '{{colors.red090}}',
-      color: '{{colors.inkInverse}}'
+      backgroundColor: '{{colors.interactiveNegative040}}',
+      borderRadius: '{{borders.borderRadiusSharp}}',
+      color: '{{colors.inkInverse}}',
+      shadow: '{{shadows.shadow040}}'
     },
     hover: {
-      backgroundColor: '{{colors.red100}}'
+      backgroundColor: '{{colors.interactiveNegative050}}'
     },
     active: {
-      backgroundColor: '{{colors.red100}}'
+      backgroundColor: '{{colors.interactiveNegative050}}'
     },
     loading: {
       backgroundColor: '{{colors.interface040}}',

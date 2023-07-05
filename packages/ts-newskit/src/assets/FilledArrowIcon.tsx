@@ -3,14 +3,14 @@ import React from 'react';
 const FilledArrowIcon: React.FC = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
+    width={17}
+    height={16}
     fill="none"
     {...props}
   >
     <path
       fill="currentcolor"
-      d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8Z"
+      d="m3.166 8 .94.94 3.727-3.72v8.113h1.333V5.22l3.72 3.727.947-.947-5.334-5.333L3.166 8Z"
     />
   </svg>
 );

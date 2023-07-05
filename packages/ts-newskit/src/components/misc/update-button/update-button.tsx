@@ -20,11 +20,13 @@ export const UpdateButton = ({
 }: UpdateButtonProps) => {
   return (
     <Button
-      size="medium"
+      size="small"
       loading={loading}
       overrides={{
-        stylePreset: 'pillButton',
-        height: 'sizing060',
+        stylePreset: 'updateButton',
+        paddingBlock: 'space020',
+        paddingInline: 'space030',
+        typographyPreset: 'utilityButton010',
         width: loading ? 'sizing060' : 'fit-content'
       }}
       onClick={() => handleClick()}
