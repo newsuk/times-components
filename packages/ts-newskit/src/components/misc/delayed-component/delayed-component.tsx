@@ -8,7 +8,7 @@ export const DelayedComponent: React.FC<{
   const [showElement, setShowElement] = React.useState(initialState);
 
   useEffect(() => {
-    setTimeout(function() {
+    setTimeout(() => {
       setShowElement(!initialState);
     }, delay);
   }, []);

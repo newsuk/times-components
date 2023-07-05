@@ -4,7 +4,7 @@ import { render, fireEvent } from '../../../../utils/test-utils';
 
 import { UpdateButton } from '../update-button';
 
-const handleClick = jest.fn();
+const handleClickMock = jest.fn();
 
 const renderComponent = (
   loading: boolean,
@@ -26,7 +26,7 @@ describe('Render UpdateButton', () => {
     const { asFragment } = renderComponent(
       false,
       'New Updates',
-      handleClick,
+      handleClickMock,
       true
     );
     expect(asFragment()).toMatchSnapshot();
@@ -35,7 +35,7 @@ describe('Render UpdateButton', () => {
     const { asFragment } = renderComponent(
       true,
       'New Update',
-      handleClick,
+      handleClickMock,
       true
     );
     expect(asFragment()).toMatchSnapshot();
@@ -44,7 +44,7 @@ describe('Render UpdateButton', () => {
     const { getByText } = renderComponent(
       false,
       'Test New Updates',
-      handleClick,
+      handleClickMock,
       true
     );
     expect(getByText('Test New Updates')).toBeVisible();
@@ -53,18 +53,18 @@ describe('Render UpdateButton', () => {
     const { getByRole } = renderComponent(
       false,
       'New Update',
-      handleClick,
+      handleClickMock,
       true
     );
     const Button = getByRole('button');
     fireEvent.click(Button);
-    expect(handleClick).toHaveBeenCalled();
+    expect(handleClickMock).toHaveBeenCalled();
   });
   it('should render the upward facing arrow icon if arrowUp is true', () => {
     const { getByTestId } = renderComponent(
       false,
       'New Updates',
-      handleClick,
+      handleClickMock,
       true
     );
     expect(getByTestId('upward-arrow')).toBeVisible();
@@ -73,7 +73,7 @@ describe('Render UpdateButton', () => {
     const { getByTestId } = renderComponent(
       false,
       'New Updates',
-      handleClick,
+      handleClickMock,
       false
     );
     expect(getByTestId('downward-arrow')).toBeVisible();

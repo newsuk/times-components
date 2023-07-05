@@ -4,7 +4,7 @@ import { render, waitFor } from '../../../../utils/test-utils';
 
 import { UpdateButtonWithDelay } from '../update-button-with-delay';
 
-const handleClick = jest.fn();
+const handleClickMock = jest.fn();
 
 const renderComponent = (
   loading: boolean,
@@ -32,7 +32,7 @@ describe('Render UpdateButtonWithDelay', () => {
       800,
       true,
       'New Updates',
-      handleClick,
+      handleClickMock,
       true
     );
     expect(asFragment()).toMatchSnapshot();
