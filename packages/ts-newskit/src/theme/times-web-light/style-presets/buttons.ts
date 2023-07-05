@@ -15,14 +15,14 @@ export const buttonStylePresets = {
       color: '{{colors.inkInverse}}'
     },
     hover: {
-      backgroundColor: '{{colors.red100}}',
+      backgroundColor: '{{colors.red100}}'
     },
     active: {
-      backgroundColor: '{{colors.red100}}',
+      backgroundColor: '{{colors.red100}}'
     },
     loading: {
       backgroundColor: '{{colors.interface040}}',
-      borderRadius: '{{borders.borderRadiusCircle}}',
+      borderRadius: '{{borders.borderRadiusCircle}}'
     }
-  },
+  }
 };

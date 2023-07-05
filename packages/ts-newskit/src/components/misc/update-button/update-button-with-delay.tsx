@@ -11,9 +11,22 @@ type UpdateWithDelayProps = {
   arrowUp: boolean;
 };
 
-export const UpdateButtonWithDelay = ({ loading, delay, display, label, handleClick, arrowUp} :  UpdateWithDelayProps) => {
+export const UpdateButtonWithDelay = ({
+  loading,
+  delay,
+  display,
+  label,
+  handleClick,
+  arrowUp
+}: UpdateWithDelayProps) => {
   return (
     <DelayedComponent delay={delay} initialState={display}>
-      <UpdateButton loading={loading} label={label} handleClick={handleClick} arrowUp={arrowUp}/>
+      <UpdateButton
+        loading={loading}
+        label={label}
+        handleClick={handleClick}
+        arrowUp={arrowUp}
+      />
     </DelayedComponent>
-  )};
+  );
+};

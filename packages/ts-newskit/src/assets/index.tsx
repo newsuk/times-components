@@ -24,7 +24,7 @@ const RoundedCloseIcon = styled(RoundedPlusIcon)`
 
 const FilledArrowIconDown = styled(FilledArrowIcon)`
   transform: rotate(180deg);
-` ;
+`;
 
 export const NewsKitSearchIcon = customToNewsKitIcon(
   'NewskitSearchIcon',
@@ -107,5 +107,6 @@ export const NewsKitFilledArrowIcon = customToNewsKitIcon(
 );
 
 export const NewsKitFilledArrowIconDown = customToNewsKitIcon(
-  'NewsKitFilledArrowIconDown', props => <FilledArrowIconDown {...props}/>
-)
+  'NewsKitFilledArrowIconDown',
+  props => <FilledArrowIconDown {...props} />
+);
