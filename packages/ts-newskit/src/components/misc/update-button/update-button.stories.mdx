@@ -11,29 +11,27 @@ import { UpdateButton } from './update-button.tsx';
 />
 
 # UpdateButton component
-The `UpdateButton` component is used to highlight when there is an update in an article.
+The `UpdateButton` component is used to highlight when there is an update.
 
-The `UpdateButton` component makes use of the `DelayedComponent` which will set the component to mount or unmount given a delay and intial state.
-
-This component takes in a two props, loading to display the loading spinner and display which should be true when an update has happened.
+This component takes in a two props, loading to display the loading spinner, arrowUp - determines the position of the arrow Icon, label - which determines the text content of the button, and handleClick which is the function called upon clicking the button. 
 
 ## Props
 <Props of={UpdateButton} />
 
 ## Code Example
-`<UpdateButton loading={loading} display={true} delay={8000} label='New updates'/>`
+`<UpdateButton loading={loading} label='New updates', arrowUp={true}/>`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const UpdateButtonStory = ({ loading, display, delay, label }) => (
+export const UpdateButtonStory = ({ loading, label, arrowUp }) => (
   <TCThemeProvider theme={TimesWebLightTheme}>
-    <UpdateButton loading={loading} display={display} delay={delay} label={label}/>
+    <UpdateButton loading={loading} label={label} arrowUp={arrowUp} />
   </TCThemeProvider>
 );
 
 <Story name="UpdateButton"
-  args={{ loading: false, display: true, delay: 8000, label: 'New Updates'} }
+  args={{ loading: false, label: 'New Updates', arrowUp: true} }
 >
   {UpdateButtonStory.bind({})}
 </Story>

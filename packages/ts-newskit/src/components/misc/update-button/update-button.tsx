@@ -1,15 +1,21 @@
 import React from 'react';
 import { Button } from 'newskit';
-import { NewsKitFilledArrowIcon } from '../../../assets';
-import { DelayedComponent } from '../delayed-component/delayed-component';
+import { NewsKitFilledArrowIcon, NewsKitFilledArrowIconDown } from '../../../assets';
 
-export const UpdateButton: React.FC<{ loading: boolean, display: boolean, delay: number, label: string, handleClick: any }> = ({ loading, display, delay, label, handleClick }) => {
+type UpdateButtonProps = {
+  loading: boolean;
+  label: string;
+  handleClick: () => void;
+  arrowUp: boolean;
+};
+
+export const UpdateButton = ({ loading, label, handleClick, arrowUp} : UpdateButtonProps ) => {
   return (
-    <DelayedComponent delay={delay} initialState={display}>
       <Button size='medium' loading={loading}
       overrides={{ stylePreset: 'pillButton', height: 'sizing060', width: loading ? 'sizing060' : 'fit-content'}} onClick={() => handleClick()}>
-      <NewsKitFilledArrowIcon />
+        {
+          arrowUp ? (<NewsKitFilledArrowIcon data-testid="upward-arrow"/>) : (<NewsKitFilledArrowIconDown data-testid="downward-arrow"/>) 
+        }
         {label}
     </Button>
-    </DelayedComponent>
   )};

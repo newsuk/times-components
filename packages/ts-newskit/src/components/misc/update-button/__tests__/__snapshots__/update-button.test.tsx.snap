@@ -9,6 +9,7 @@ exports[`Render UpdateButton should render the component 1`] = `
   >
     <svg
       class="css-ny3roy"
+      data-testid="upward-arrow"
       fill="none"
       height="24"
       width="24"
