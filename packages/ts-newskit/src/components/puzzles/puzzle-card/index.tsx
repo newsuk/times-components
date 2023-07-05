@@ -48,6 +48,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
               alt: data.title || 'Puzzle thumbnail',
               src: imageUrl,
               placeholderIcon: true,
+              fit: 'cover',
               overrides: {
                 stylePreset: 'puzzleCardMedia'
               }

@@ -6,7 +6,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
     class="css-kjwcwf"
   >
     <div
-      class="css-17csqz3"
+      class="css-1jtzw40"
     >
       <div
         class="css-1kwj960"
@@ -41,7 +41,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
           </div>
           <img
             alt="Polygon"
-            class="css-1qgqq71"
+            class="css-1km3pto"
             src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
           />
         </picture>

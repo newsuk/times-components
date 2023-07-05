@@ -42,7 +42,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
           class="css-9fndha"
         >
           <div
-            class="css-1kwj960"
+            class="css-1lxmnox"
           >
             <picture
               class="css-zp0elg"
@@ -73,7 +73,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               </div>
               <img
                 alt="ChatGPT invents Sudoku-style puzzle to keep the humans busy"
-                class="css-1qgqq71"
+                class="css-1km3pto"
                 src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
               />
             </picture>
@@ -178,7 +178,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
           class="css-11l110t"
         >
           <div
-            class="css-1kwj960"
+            class="css-1lxmnox"
           >
             <picture
               class="css-zp0elg"
@@ -209,7 +209,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               </div>
               <img
                 alt="Early birds from across globe make camp in The Mall"
-                class="css-1qgqq71"
+                class="css-1km3pto"
                 src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
               />
             </picture>
@@ -314,7 +314,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
           class="css-11l110t"
         >
           <div
-            class="css-1kwj960"
+            class="css-1lxmnox"
           >
             <picture
               class="css-zp0elg"
@@ -345,7 +345,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               </div>
               <img
                 alt="A dish best served cold: Rees-Mogg takes revenge on quiche"
-                class="css-1qgqq71"
+                class="css-1km3pto"
                 src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
               />
             </picture>
@@ -450,7 +450,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
           class="css-11l110t"
         >
           <div
-            class="css-1kwj960"
+            class="css-1lxmnox"
           >
             <picture
               class="css-zp0elg"
@@ -481,7 +481,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
               </div>
               <img
                 alt="Hour-by-hour guide to a day of remarkable ceremony"
-                class="css-1qgqq71"
+                class="css-1km3pto"
                 src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
               />
             </picture>

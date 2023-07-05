@@ -16,6 +16,10 @@ export const PuzzleCardImgWrapper = styled(Block)`
   justify-content: center;
   align-items: center;
   align-self: flex-start;
+
+  img {
+    aspect-ratio: 3/2;
+  }
 `;
 
 export const StyledNewsKitPuzzlePlaceholder = styled(NewsKitPuzzlePlaceholder)`
