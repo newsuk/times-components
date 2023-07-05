@@ -123,12 +123,12 @@ exports[`Icons Component: NewsKitFilledArrowIcon NewsKitFilledArrowIcon renders 
   <svg
     class="css-ny3roy"
     fill="none"
-    height="24"
-    width="24"
+    height="16"
+    width="17"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8Z"
+      d="m3.166 8 .94.94 3.727-3.72v8.113h1.333V5.22l3.72 3.727.947-.947-5.334-5.333L3.166 8Z"
       fill="currentcolor"
     />
   </svg>
@@ -140,12 +140,12 @@ exports[`Icons Component: NewsKitFilledArrowIconDown NewsKitFilledArrowIconDown 
   <svg
     class="css-10up5ig"
     fill="none"
-    height="24"
-    width="24"
+    height="16"
+    width="17"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="m4 12 1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8Z"
+      d="m3.166 8 .94.94 3.727-3.72v8.113h1.333V5.22l3.72 3.727.947-.947-5.334-5.333L3.166 8Z"
       fill="currentcolor"
     />
   </svg>
