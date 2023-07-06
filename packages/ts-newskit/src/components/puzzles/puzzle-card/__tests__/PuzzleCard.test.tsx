@@ -3,6 +3,7 @@ import '@testing-library/jest-dom';
 import { render } from '../../../../utils/test-utils';
 import { puzzles } from '../fixtures/data.json';
 import { PuzzleCard } from '../index';
+import { NewsKitPuzzlePlaceholder } from '../assets';
 
 const renderComponent = () => render(<PuzzleCard data={puzzles.list[0]} />);
 
@@ -26,5 +27,14 @@ describe('Puzzle Card', () => {
       const placeholder = getByTestId('puzzle-placeholder');
       expect(placeholder).toBeInTheDocument();
     }
+  });
+
+  it('renders NewsKitPuzzlePlaceholder component', () => {
+    const { container } = render(<NewsKitPuzzlePlaceholder />);
+
+    expect(container).toBeInTheDocument();
+
+    const svgElement = container.querySelector('svg');
+    expect(svgElement).toBeInTheDocument();
   });
 });
