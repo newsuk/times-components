@@ -8,11 +8,11 @@ import {
   Visible,
   CardLink,
   Headline,
-  CardMedia,
   GridLayout,
   Divider
 } from 'newskit';
 
+import { ImgWrap } from './styles';
 export interface StoryCardProps {
   image?: string;
   altText?: string;
@@ -46,12 +46,14 @@ export const StoryCard: FC<StoryCardProps> = ({
       <CardComposable>
         <Visible xs={!imgHiddenMobile} sm={!imgHiddenMobile} md lg xl>
           {image ? (
-            <CardMedia
+            <ImgWrap
               media={{
                 loadingAspectRatio: '3:2',
                 alt: altText || title,
                 src: image,
-                placeholderIcon: true
+                placeholderIcon: true,
+                fit: 'cover',
+                loading: 'lazy'
               }}
             />
           ) : (
