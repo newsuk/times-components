@@ -36,6 +36,10 @@ export const PuzzleCardImgWrapper = styled(Block)`
   ${getMediaQueryFromTheme('xl')} {
     min-height: 74%;
   }
+
+  img {
+    aspect-ratio: 3/2;
+  }
 `;
 
 export const StyledNewsKitPuzzlePlaceholder = styled(NewsKitPuzzlePlaceholder)`
