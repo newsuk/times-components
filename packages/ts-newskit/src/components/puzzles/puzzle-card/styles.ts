@@ -1,4 +1,10 @@
-import { styled, Block, getColorCssFromTheme, CardComposable } from 'newskit';
+import {
+  styled,
+  Block,
+  getColorCssFromTheme,
+  CardComposable,
+  getMediaQueryFromTheme
+} from 'newskit';
 import { NewsKitPuzzlePlaceholder } from './assets';
 
 export const Wrap = styled(Block)`
@@ -16,6 +22,20 @@ export const PuzzleCardImgWrapper = styled(Block)`
   justify-content: center;
   align-items: center;
   align-self: flex-start;
+  min-height: 50%;
+
+  ${getMediaQueryFromTheme('sm')} {
+    min-height: 51%;
+  }
+  ${getMediaQueryFromTheme('md')} {
+    min-height: 55%;
+  }
+  ${getMediaQueryFromTheme('lg')} {
+    min-height: 68%;
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    min-height: 74%;
+  }
 
   img {
     aspect-ratio: 3/2;
