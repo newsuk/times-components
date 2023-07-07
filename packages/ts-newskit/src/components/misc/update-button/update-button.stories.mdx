@@ -1,0 +1,37 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+
+import { TCThemeProvider } from '../../../utils/index.tsx';
+import { TimesWebLightTheme } from '../../../theme';
+
+import { UpdateButton } from './update-button.tsx';
+
+<Meta
+  title="Newskit Components/Misc/UpdateButton"
+  component={UpdateButton}
+/>
+
+# UpdateButton component
+The `UpdateButton` component is used to highlight when there is an update.
+
+This component takes in a two props, loading to display the loading spinner, arrowUp - determines the position of the arrow Icon, label - which determines the text content of the button, and handleClick which is the function called upon clicking the button. 
+
+## Props
+<Props of={UpdateButton} />
+
+## Code Example
+`<UpdateButton loading={loading} label='New updates', arrowUp={true}/>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const UpdateButtonStory = ({ loading, label, arrowUp }) => (
+  <TCThemeProvider theme={TimesWebLightTheme}>
+    <UpdateButton loading={loading} label={label} arrowUp={arrowUp} />
+  </TCThemeProvider>
+);
+
+<Story name="UpdateButton"
+  args={{ loading: false, label: 'New Updates', arrowUp: true} }
+>
+  {UpdateButtonStory.bind({})}
+</Story>

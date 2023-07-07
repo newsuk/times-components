@@ -16,9 +16,14 @@ import WaveBg from './WaveBg';
 import ThumbsDownIcon from './ThumbsDown';
 import ThumbsUpIcon from './ThumbsUp';
 import TooltipIcon from './TooltipIcon';
+import FilledArrowIcon from './FilledArrowIcon';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
+`;
+
+const FilledArrowIconDown = styled(FilledArrowIcon)`
+  transform: rotate(180deg);
 `;
 
 export const NewsKitSearchIcon = customToNewsKitIcon(
@@ -94,4 +99,14 @@ export const NewsKitThumbsUpIcon = customToNewsKitIcon(
 export const NewsKitTooltipIcon = customToNewsKitIcon(
   'NewsKitTooltipIcon',
   props => <TooltipIcon {...props} />
+);
+
+export const NewsKitFilledArrowIcon = customToNewsKitIcon(
+  'NewsKitFilledArrowIcon',
+  props => <FilledArrowIcon {...props} />
+);
+
+export const NewsKitFilledArrowIconDown = customToNewsKitIcon(
+  'NewsKitFilledArrowIconDown',
+  props => <FilledArrowIconDown {...props} />
 );

@@ -41,3 +41,6 @@ export { ContentBucket2 } from './slices/content-bucket-2';
 
 // MISC
 export { JobTitle } from './components/misc/job-title/job-title';
+export {
+  UpdateButtonWithDelay
+} from './components/misc/update-button/update-button-with-delay';

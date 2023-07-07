@@ -1,0 +1,45 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+
+import { TCThemeProvider } from '../../../utils/index.tsx';
+import { TimesWebLightTheme } from '../../../theme';
+
+import { UpdateButtonWithDelay } from './update-button-with-delay.tsx';
+
+<Meta
+  title="Newskit Components/Misc/UpdateButtonWithDelay"
+  component={UpdateButtonWithDelay}
+/>
+
+# UpdateButtonWithDelay component
+The `UpdateButtonWithDelay` component is used to highlight when there is an update in an article.
+
+The `UpdateButtonWithDelay` component makes use of the `DelayedComponent` which will set the component to mount or unmount given a delay and intial state.
+
+This component takes in a six props:
+- `loading` to display the loading spinner.
+- `delay` to determine the delay in milliseconds for mounting or unmounting the component.
+- `display` which will determine if the component initially displays, or is rendered after the delay has passed.
+- `label` this is for the text label in the button.
+- `handleClick` determines the function called on interaction.
+- `arrowUp` this is to render either the upward arrow icon or the downward icon (depending on where in the article the user is vs where the update is).
+
+## Props
+<Props of={UpdateButtonWithDelay} />
+
+## Code Example
+`<UpdateButtonWithDelay loading={loading} display={true} delay={8000} label='New updates', arrowUp={true}/>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const UpdateButtonWithDelayStory = ({ loading, display, delay, label, arrowUp }) => (
+  <TCThemeProvider theme={TimesWebLightTheme}>
+    <UpdateButtonWithDelay loading={loading} display={display} delay={delay} label={label} arrowUp={arrowUp} />
+  </TCThemeProvider>
+);
+
+<Story name="UpdateButtonWithDelay"
+  args={{ loading: false, display: true, delay: 8000, label: 'New Updates', arrowUp: true} }
+>
+  {UpdateButtonWithDelayStory.bind({})}
+</Story>
