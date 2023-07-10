@@ -48,3 +48,11 @@ export const BodyContainer = styled.article`
   display: block;
   order: 4;
 `;
+
+export const UpdateButtonContainer = styled.div`
+  position: sticky;
+  bottom: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+`;

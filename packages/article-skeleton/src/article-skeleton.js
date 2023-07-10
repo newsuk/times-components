@@ -23,7 +23,8 @@ import {
   BodyContainer,
   getHeaderAdStyles,
   HeaderContainer,
-  MainContainer
+  MainContainer,
+  UpdateButtonContainer
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -77,7 +78,6 @@ const ArticleSkeleton = ({
     isSharingEnabled,
     isCommentEnabled,
   } = article;
-  console.log(hasUpdate, 'HAS UPDATE HAS PASSED THROUGH TO ARTICLE SKELETON')
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
@@ -247,9 +247,9 @@ const ArticleSkeleton = ({
                 )}
                 {hasUpdate && (
                   <TCThemeProvider>
-                    <div style={{ position: 'sticky', bottom: 20, display: 'flex', width: '100%', justifyContent: 'center'}}>
+                    <UpdateButtonContainer data-testid="Update button container">
                     <UpdateButtonWithDelay loading={false} delay={8000000} display={true} label="an update" handleClick={() => scrollToTop(window)} arrowUp={true}/>
-                    </div>
+                    </UpdateButtonContainer>
                   </TCThemeProvider>
                 )}
                 <PaywallPortal
