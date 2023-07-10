@@ -9,6 +9,7 @@ import { TrackingContextProvider } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
+import { UpdateButtonWithDelay, TCThemeProvider } from '@times-components/ts-newskit';
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -35,7 +36,6 @@ import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertNativeAd from "./contentModifiers/native-ad";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
-import { UpdateButtonWithDelay, TCThemeProvider } from '@times-components/ts-newskit';
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -248,7 +248,7 @@ const ArticleSkeleton = ({
                 {hasUpdate && (
                   <TCThemeProvider>
                     <UpdateButtonContainer data-testid="Update button container">
-                    <UpdateButtonWithDelay loading={false} delay={8000000} display={true} label="an update" handleClick={() => scrollToTop(window)} arrowUp={true}/>
+                    <UpdateButtonWithDelay loading={false} delay={8000000} display label="an update" handleClick={() => scrollToTop(window)} arrowUp/>
                     </UpdateButtonContainer>
                   </TCThemeProvider>
                 )}
