@@ -95,7 +95,6 @@ class ArticlePage extends Component {
       return null;
     }
 
-
     return (
       <ArticleMainStandardContainer>
         <ArticleSkeleton

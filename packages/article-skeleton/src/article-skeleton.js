@@ -9,7 +9,10 @@ import { TrackingContextProvider } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
-import { UpdateButtonWithDelay, TCThemeProvider } from '@times-components/ts-newskit';
+import {
+  UpdateButtonWithDelay,
+  TCThemeProvider
+} from "@times-components/ts-newskit";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -76,7 +79,7 @@ const ArticleSkeleton = ({
     publishedTime,
     isSavingEnabled,
     isSharingEnabled,
-    isCommentEnabled,
+    isCommentEnabled
   } = article;
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
@@ -89,10 +92,11 @@ const ArticleSkeleton = ({
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
-  const scrollToTop = (window) => (window.scroll({
-    left: 0,
-    top: 0
-  })) 
+  const scrollToTop = window =>
+    window.scroll({
+      left: 0,
+      top: 0
+    });
 
   receiveChildList([
     {
@@ -248,7 +252,14 @@ const ArticleSkeleton = ({
                 {hasUpdate && (
                   <TCThemeProvider>
                     <UpdateButtonContainer data-testid="Update button container">
-                    <UpdateButtonWithDelay loading={false} delay={8000000} display label="an update" handleClick={() => scrollToTop(window)} arrowUp/>
+                      <UpdateButtonWithDelay
+                        loading={false}
+                        delay={8000000}
+                        display
+                        label="an update"
+                        handleClick={() => scrollToTop(window)}
+                        arrowUp
+                      />
                     </UpdateButtonContainer>
                   </TCThemeProvider>
                 )}

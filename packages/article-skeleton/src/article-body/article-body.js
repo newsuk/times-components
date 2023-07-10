@@ -105,7 +105,7 @@ const renderers = ({
   isLiveOrBreaking,
   section,
   articleHeadline,
-  articleId,
+  articleId
 }) => ({
   ...coreRenderers,
   ad(key) {
