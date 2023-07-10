@@ -34,6 +34,7 @@ import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertNativeAd from "./contentModifiers/native-ad";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
+import { UpdateButtonWithDelay, TCThemeProvider } from '@times-components/ts-newskit';
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -52,7 +53,8 @@ const ArticleSkeleton = ({
   swgProductId,
   getFallbackThumbnailUrl169,
   zephrDivs,
-  showAudioPlayer
+  showAudioPlayer,
+  hasUpdate
 }) => {
   const {
     commentsEnabled,
@@ -73,9 +75,9 @@ const ArticleSkeleton = ({
     publishedTime,
     isSavingEnabled,
     isSharingEnabled,
-    isCommentEnabled
+    isCommentEnabled,
   } = article;
-
+  console.log(hasUpdate, 'HAS UPDATE HAS PASSED THROUGH TO ARTICLE SKELETON')
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
@@ -86,6 +88,11 @@ const ArticleSkeleton = ({
   const newContent = reduceArticleContent(content, articleContentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
+
+  const scrollToTop = (window) => (window.scroll({
+    left: 0,
+    top: 0
+  })) 
 
   receiveChildList([
     {
@@ -235,7 +242,15 @@ const ArticleSkeleton = ({
                     template={template}
                     isPreview={isPreview}
                     isLiveOrBreaking={isLiveOrBreaking}
+                    hasUpdate={hasUpdate}
                   />
+                )}
+                {hasUpdate && (
+                  <TCThemeProvider>
+                    <div style={{ position: 'sticky', bottom: 20, display: 'flex', width: '100%', justifyContent: 'center'}}>
+                    <UpdateButtonWithDelay loading={false} delay={8000000} display={true} label="an update" handleClick={() => scrollToTop(window)} arrowUp={true}/>
+                    </div>
+                  </TCThemeProvider>
                 )}
                 <PaywallPortal
                   id="paywall-portal-article-footer"
