@@ -22,6 +22,20 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
           />
         </picture>
       </div>
+      <div
+        class="css-593iq0"
+      >
+        <div
+          class="css-7el6ft"
+          data-testid="flag"
+        >
+          <span
+            class="css-1x1ve0y"
+          >
+            COMPLETE
+          </span>
+        </div>
+      </div>
     </div>
     <div
       class="css-5p0hht"
