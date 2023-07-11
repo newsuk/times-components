@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.61.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.9...@times-components/ts-newskit@1.61.0) (2023-07-11)
+
+
+### Features
+
+* **TMST-751:** removed puzzle card unecesary components ([#3421](https://github.com/newsuk/times-components/issues/3421)) ([460ff49](https://github.com/newsuk/times-components/commit/460ff49699d70975fae0e850f0129d6bd48d64f8))
+
+
+
+
+
 ## [1.60.9](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.8...@times-components/ts-newskit@1.60.9) (2023-07-07)
 
 **Note:** Version bump only for package @times-components/ts-newskit

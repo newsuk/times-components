@@ -31,10 +31,6 @@ export const PuzzleCardStory = ({data}) => (
 
 <Story
   name="PuzzleCard"
-  argTypes={{
-    publishedAt: { control: 'date' },
-    status: { control: "select", options: ["COMPLETE", "IN PROGRESS"] }
-  }}
   args={{ data: puzzles.list[0] }}
 >
   {PuzzleCardStory.bind({})}
