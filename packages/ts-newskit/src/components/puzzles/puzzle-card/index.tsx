@@ -19,10 +19,13 @@ import { convertDateToWeekday } from '../../../utils';
 
 export interface PuzzleCardProps {
   data: Puzzle;
-  isImageCropped?: boolean
+  isImageCropped?: boolean;
 }
 
-export const PuzzleCard = ({ data, isImageCropped = false }: PuzzleCardProps) => {
+export const PuzzleCard = ({
+  data,
+  isImageCropped = false
+}: PuzzleCardProps) => {
   const publishedDate = convertDateToWeekday(data.publishedAt);
   const imageUrl = data.image ? data.image.crops[0].url : '';
   const croppedImageUrl = isImageCropped ? `${imageUrl}&resize=500` : imageUrl;
