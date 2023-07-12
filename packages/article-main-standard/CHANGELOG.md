@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.77.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.76.3...@times-components/article-main-standard@3.77.0) (2023-07-12)
+
+
+### Features
+
+* **TMRX-1250:** Pass hasUpdate from render ([#3419](https://github.com/newsuk/times-components/issues/3419)) ([232dc06](https://github.com/newsuk/times-components/commit/232dc065cdea3325f0faf9c8cf1823def3682e05))
+
+
+
+
+
 ## [3.76.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.76.2...@times-components/article-main-standard@3.76.3) (2023-06-16)
 
 **Note:** Version bump only for package @times-components/article-main-standard
