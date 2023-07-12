@@ -81,6 +81,7 @@
     "@times-components/sticky": "0.5.29",
     "@times-components/tracking": "2.20.0",
     "@times-components/ts-components": "1.74.0",
+    "@times-components/ts-newskit": "1.61.0",
     "@times-components/ts-styleguide": "1.43.1",
     "@times-components/typeset": "0.3.2",
     "@times-components/user-state": "0.4.29",

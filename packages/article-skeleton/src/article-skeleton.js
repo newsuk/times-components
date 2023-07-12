@@ -9,6 +9,10 @@ import { TrackingContextProvider } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
+import {
+  UpdateButtonWithDelay,
+  TCThemeProvider
+} from "@times-components/ts-newskit";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -23,7 +27,8 @@ import {
   BodyContainer,
   getHeaderAdStyles,
   HeaderContainer,
-  MainContainer
+  MainContainer,
+  UpdateButtonContainer
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -52,7 +57,8 @@ const ArticleSkeleton = ({
   swgProductId,
   getFallbackThumbnailUrl169,
   zephrDivs,
-  showAudioPlayer
+  showAudioPlayer,
+  hasUpdate
 }) => {
   const {
     commentsEnabled,
@@ -75,7 +81,6 @@ const ArticleSkeleton = ({
     isSharingEnabled,
     isCommentEnabled
   } = article;
-
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
@@ -86,6 +91,12 @@ const ArticleSkeleton = ({
   const newContent = reduceArticleContent(content, articleContentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
+
+  const scrollToTop = window =>
+    window.scroll({
+      left: 0,
+      top: 0
+    });
 
   receiveChildList([
     {
@@ -235,7 +246,22 @@ const ArticleSkeleton = ({
                     template={template}
                     isPreview={isPreview}
                     isLiveOrBreaking={isLiveOrBreaking}
+                    hasUpdate={hasUpdate}
                   />
+                )}
+                {hasUpdate && (
+                  <TCThemeProvider>
+                    <UpdateButtonContainer data-testid="Update button container">
+                      <UpdateButtonWithDelay
+                        loading={false}
+                        delay={8000000}
+                        display
+                        label="an update"
+                        handleClick={() => scrollToTop(window)}
+                        arrowUp
+                      />
+                    </UpdateButtonContainer>
+                  </TCThemeProvider>
                 )}
                 <PaywallPortal
                   id="paywall-portal-article-footer"

@@ -87,12 +87,14 @@ class ArticlePage extends Component {
       isPreview,
       swgProductId,
       getFallbackThumbnailUrl169,
-      zephrDivs
+      zephrDivs,
+      hasUpdate
     } = this.props;
 
     if (error || isLoading) {
       return null;
     }
+
     return (
       <ArticleMainStandardContainer>
         <ArticleSkeleton
@@ -108,6 +110,7 @@ class ArticlePage extends Component {
           isPreview={isPreview}
           swgProductId={swgProductId}
           zephrDivs={zephrDivs}
+          hasUpdate={hasUpdate}
         />
       </ArticleMainStandardContainer>
     );
