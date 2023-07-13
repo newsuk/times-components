@@ -54,7 +54,6 @@ export const PuzzleCard = ({
               src: croppedImageUrl,
               placeholderIcon: true,
               fit: 'cover',
-              loading: 'lazy',
               overrides: {
                 stylePreset: 'puzzleCardMedia'
               }
