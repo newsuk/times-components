@@ -18,7 +18,7 @@ export const CardsContainer = ({
   title,
   isScrollable = false,
   seeAllLink,
-  isImageCropped = false,
+  isImageCropped = false
 }: CardsContainerProps) => {
   const scrollRef = useRef(null);
   const cardRef = useRef(null);
@@ -95,7 +95,7 @@ export const CardsContainer = ({
               data-test-id="single-card"
               ref={cardRef}
             >
-              <PuzzleCard data={card} isImageCropped={isImageCropped}/>
+              <PuzzleCard data={card} isImageCropped={isImageCropped} />
             </GridLayoutItem>
           ))}
         </GridLayout>
