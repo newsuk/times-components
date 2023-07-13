@@ -6,7 +6,7 @@ Article consumes components such as `ArticleHeader`, `ArticleTopics` and `Relate
 
 It takes a Header as a prop so that each template can use the `Article` and provide its own unique spin on it.
 
-These are some of the packages that live within the article skeleton package:
+These are some of the packages that live within the article skeleton package:-
 
 ### Article Body
 

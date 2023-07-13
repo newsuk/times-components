@@ -17,7 +17,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     zephrDivs,
     sharingSavingFlag = true,
     commentingFlag = true,
-    showAudioPlayer
+    showAudioPlayer,
+    hasUpdate
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
@@ -36,7 +37,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     zephrDivs,
     sharingSavingFlag,
     commentingFlag,
-    showAudioPlayer
+    showAudioPlayer,
+    hasUpdate
   };
 
   const clientOptions = {
