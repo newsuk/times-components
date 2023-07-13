@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.62.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.61.0...@times-components/ts-newskit@1.62.0) (2023-07-13)
+
+
+### Features
+
+* **TMST 725:** image crop ([#3422](https://github.com/newsuk/times-components/issues/3422)) ([4507f1a](https://github.com/newsuk/times-components/commit/4507f1a3013dfdaa770411eb28e2aad21da9a6cc))
+
+
+
+
+
 # [1.61.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.9...@times-components/ts-newskit@1.61.0) (2023-07-11)
 
 
