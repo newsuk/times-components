@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.15.45](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.15.44...@times-components/author-profile@6.15.45) (2023-07-13)
+
+
+### Bug Fixes
+
+* **TMRX-1278:** fix page meta title on author profile ([#3425](https://github.com/newsuk/times-components/issues/3425)) ([adbd730](https://github.com/newsuk/times-components/commit/adbd730e79afcec6f806e60a9ac5ffaaf36b75d3))
+
+
+
+
+
 ## [6.15.44](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.15.43...@times-components/author-profile@6.15.44) (2023-07-13)
 
 **Note:** Version bump only for package @times-components/author-profile
