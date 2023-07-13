@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.62.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.62.0...@times-components/ts-newskit@1.62.1) (2023-07-13)
+
+
+### Bug Fixes
+
+* Added isImageCropped to CardsContainer component. ([#3426](https://github.com/newsuk/times-components/issues/3426)) ([5c52a84](https://github.com/newsuk/times-components/commit/5c52a842f052333f8c9f0c983f92442960ffb0a7))
+
+
+
+
+
 # [1.62.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.61.0...@times-components/ts-newskit@1.62.0) (2023-07-13)
 
 
