@@ -23,15 +23,21 @@ This component takes in the following props:
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review and configure with different titles.
 
-export const PuzzleCardStory = ({data}) => (
+export const PuzzleCardStory = ({data, isImageCropped}) => (
   <NewsKitProvider theme={PuzzlesWebLightTheme}>
-    <PuzzleCard {...{data}} />
+    <PuzzleCard {...{data}} isImageCropped={isImageCropped}/>
   </NewsKitProvider>
 );
 
 <Story
   name="PuzzleCard"
   args={{ data: puzzles.list[0] }}
+  argTypes={{
+    isImageCropped: {
+        control: 'boolean',
+        name: 'Is Image Cropped'
+    }
+  }}
 >
   {PuzzleCardStory.bind({})}
 </Story>

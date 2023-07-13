@@ -19,11 +19,16 @@ import { convertDateToWeekday } from '../../../utils';
 
 export interface PuzzleCardProps {
   data: Puzzle;
+  isImageCropped?: boolean;
 }
 
-export const PuzzleCard = ({ data }: PuzzleCardProps) => {
+export const PuzzleCard = ({
+  data,
+  isImageCropped = false
+}: PuzzleCardProps) => {
   const publishedDate = convertDateToWeekday(data.publishedAt);
   const imageUrl = data.image ? data.image.crops[0].url : '';
+  const croppedImageUrl = isImageCropped ? `${imageUrl}&resize=500` : imageUrl;
 
   return (
     <PuzzleCardComposable
@@ -46,10 +51,9 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
             media={{
               loadingAspectRatio: '3:2',
               alt: data.title || 'Puzzle thumbnail',
-              src: imageUrl,
+              src: croppedImageUrl,
               placeholderIcon: true,
               fit: 'cover',
-              loading: 'lazy',
               overrides: {
                 stylePreset: 'puzzleCardMedia'
               }
