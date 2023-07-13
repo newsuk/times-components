@@ -593,7 +593,6 @@ const ArticleBody = ({
   isLiveOrBreaking,
   articleHeadline,
   id: articleId,
-  hasUpdate
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -607,7 +606,6 @@ const ArticleBody = ({
       articleId,
       section,
       articleHeadline,
-      hasUpdate
     })
   );
 

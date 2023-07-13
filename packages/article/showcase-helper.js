@@ -219,7 +219,6 @@ const renderArticle = ({
   template,
   isTeaser,
   isMeteredExpired,
-  hasUpdate
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -279,7 +278,6 @@ const renderArticle = ({
             )}
             refetch={refetch}
             commentingConfig={commentingConfig}
-            hasUpdate={hasUpdate}
           />
         </ContextProviderWithDefaults>
       );
@@ -314,7 +312,6 @@ const renderArticleConfig = ({
   const withPullQuote = boolean("Pull Quote", false);
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
-  const hasUpdate = boolean("HasUpdate", false);
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
   const template = selectTemplate(select);
@@ -362,7 +359,6 @@ const renderArticleConfig = ({
             scale,
             section,
             template,
-            hasUpdate
           })}
         </ArticleConfigurator>
       }

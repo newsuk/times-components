@@ -18,7 +18,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     sharingSavingFlag = true,
     commentingFlag = true,
     showAudioPlayer,
-    hasUpdate
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
@@ -38,7 +37,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     sharingSavingFlag,
     commentingFlag,
     showAudioPlayer,
-    hasUpdate
   };
 
   const clientOptions = {

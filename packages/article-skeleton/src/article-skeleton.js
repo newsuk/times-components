@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
@@ -58,7 +58,6 @@ const ArticleSkeleton = ({
   getFallbackThumbnailUrl169,
   zephrDivs,
   showAudioPlayer,
-  hasUpdate
 }) => {
   const {
     commentsEnabled,
@@ -81,6 +80,7 @@ const ArticleSkeleton = ({
     isSharingEnabled,
     isCommentEnabled
   } = article;
+
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
@@ -246,10 +246,9 @@ const ArticleSkeleton = ({
                     template={template}
                     isPreview={isPreview}
                     isLiveOrBreaking={isLiveOrBreaking}
-                    hasUpdate={hasUpdate}
                   />
                 )}
-                {hasUpdate && (
+                {isLiveOrBreaking &&
                   <TCThemeProvider>
                     <UpdateButtonContainer data-testid="Update button container">
                       <UpdateButtonWithDelay
@@ -259,10 +258,11 @@ const ArticleSkeleton = ({
                         label="an update"
                         handleClick={() => scrollToTop(window)}
                         arrowUp
+                        updatedTime={article.updatedTime}
                       />
                     </UpdateButtonContainer>
                   </TCThemeProvider>
-                )}
+}
                 <PaywallPortal
                   id="paywall-portal-article-footer"
                   componentName="subscribe-cta"
