@@ -1,8 +1,7 @@
-import React, { Component, Fragment, useState, useEffect } from "react";
+import React, { Component, Fragment } from "react";
 import ArticleSkeleton, {
   ArticleKeylineItem
 } from "@times-components/article-skeleton";
-import fetch from 'isomorphic-unfetch';
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import { CentredCaption } from "@times-components/caption";
 import Meta from "./article-meta/article-meta";
