@@ -32,14 +32,14 @@ This component takes in a six props:
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const UpdateButtonWithDelayStory = ({ loading, display, delay, label, arrowUp }) => (
+export const UpdateButtonWithDelayStory = ({ loading, display, delay, label, arrowUp, updatedTime }) => (
   <TCThemeProvider theme={TimesWebLightTheme}>
-    <UpdateButtonWithDelay loading={loading} display={display} delay={delay} label={label} arrowUp={arrowUp} />
+    <UpdateButtonWithDelay loading={loading} display={display} delay={delay} label={label} arrowUp={arrowUp} updatedTime={updatedTime} />
   </TCThemeProvider>
 );
 
 <Story name="UpdateButtonWithDelay"
-  args={{ loading: false, display: true, delay: 8000, label: 'New Updates', arrowUp: true} }
+  args={{ loading: false, display: true, delay: 8000, label: 'New Updates', arrowUp: true, updatedTime: '2023-07-13T12:00:00.000Z'} }
 >
   {UpdateButtonWithDelayStory.bind({})}
 </Story>

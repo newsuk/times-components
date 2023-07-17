@@ -592,8 +592,7 @@ const ArticleBody = ({
   inArticlePuffFlag,
   isLiveOrBreaking,
   articleHeadline,
-  id: articleId,
-  hasUpdate
+  id: articleId
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -606,8 +605,7 @@ const ArticleBody = ({
       isLiveOrBreaking,
       articleId,
       section,
-      articleHeadline,
-      hasUpdate
+      articleHeadline
     })
   );
 

@@ -26,7 +26,7 @@ module.exports = (
     sharingSavingFlag = true,
     commentingFlag = true,
     showAudioPlayer,
-    hasUpdate
+    showUpdate
   },
   userState
 ) => {
@@ -80,7 +80,7 @@ module.exports = (
       sharingSavingFlag,
       commentingFlag,
       showAudioPlayer,
-      hasUpdate
+      showUpdate
     },
     name: "article"
   };

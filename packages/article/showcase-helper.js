@@ -219,7 +219,7 @@ const renderArticle = ({
   template,
   isTeaser,
   isMeteredExpired,
-  hasUpdate
+  showUpdate
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -279,7 +279,7 @@ const renderArticle = ({
             )}
             refetch={refetch}
             commentingConfig={commentingConfig}
-            hasUpdate={hasUpdate}
+            showUpdate={showUpdate}
           />
         </ContextProviderWithDefaults>
       );
@@ -314,7 +314,6 @@ const renderArticleConfig = ({
   const withPullQuote = boolean("Pull Quote", false);
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
-  const hasUpdate = boolean("HasUpdate", false);
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
   const template = selectTemplate(select);
@@ -330,6 +329,7 @@ const renderArticleConfig = ({
   const user = (global.nuk && global.nuk.user) || {};
   const { isLoggedIn, isMeteredExpired, isShared } = user;
   const isTeaser = !isShared && (isMeteredExpired || !isLoggedIn);
+  const showUpdate = boolean("Show Update", true);
 
   return (
     <Fragment>
@@ -346,7 +346,8 @@ const renderArticleConfig = ({
             withPullQuote,
             withStandfirst,
             withVideo,
-            withTeasedContent: isTeaser
+            withTeasedContent: isTeaser,
+            showUpdate
           })}
           id={id}
         >
@@ -362,7 +363,7 @@ const renderArticleConfig = ({
             scale,
             section,
             template,
-            hasUpdate
+            showUpdate
           })}
         </ArticleConfigurator>
       }
