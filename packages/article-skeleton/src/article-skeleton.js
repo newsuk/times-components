@@ -57,8 +57,7 @@ const ArticleSkeleton = ({
   swgProductId,
   getFallbackThumbnailUrl169,
   zephrDivs,
-  showAudioPlayer,
-  showUpdate
+  showAudioPlayer
 }) => {
   const {
     commentsEnabled,
@@ -251,7 +250,7 @@ const ArticleSkeleton = ({
                     isLiveOrBreaking={isLiveOrBreaking}
                   />
                 )}
-                {showUpdate && (
+                {isLiveOrBreaking && (
                   <TCThemeProvider>
                     <UpdateButtonContainer data-testid="Update button container">
                       <UpdateButtonWithDelay
