@@ -11,7 +11,7 @@ type UpdateWithDelayProps = {
   handleClick: () => void;
   arrowUp: boolean;
   updatedTime: string;
-  articleId: string
+  articleId: string;
 };
 
 export const UpdateButtonWithDelay = ({
@@ -24,38 +24,37 @@ export const UpdateButtonWithDelay = ({
   updatedTime,
   articleId
 }: UpdateWithDelayProps) => {
-  
   const [hasUpdate, setUpdate] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-          const response = await fetch(`/api/article-update-time/${articleId}`)
-          const json = await response.json();
-          return json.article.updatedTime;
-      } catch(err) {
-        console.log(err)
+        const response = await fetch(`/api/article-update-time/${articleId}`);
+        const json = await response.json();
+        return json.article.updatedTime;
+      } catch (err) {
+        // tslint:disable-next-line:no-console
+        console.log(err);
       }
-    }
+    };
     const interval = setInterval(async () => {
-      await fetchData() > updatedTime &&
-      setUpdate(true)
+      (await fetchData()) > updatedTime && setUpdate(true);
     }, 500);
 
     return () => clearInterval(interval);
   }, []);
   return (
     <>
-    {hasUpdate ? (
-      <DelayedComponent delay={delay} initialState={display}>
-      <UpdateButton
-        loading={loading}
-        label={label}
-        handleClick={handleClick}
-        arrowUp={arrowUp}
-      />
-    </DelayedComponent>
-    ) : null}
+      {hasUpdate ? (
+        <DelayedComponent delay={delay} initialState={display}>
+          <UpdateButton
+            loading={loading}
+            label={label}
+            handleClick={handleClick}
+            arrowUp={arrowUp}
+          />
+        </DelayedComponent>
+      ) : null}
     </>
   );
 };
