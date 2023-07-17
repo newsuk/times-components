@@ -18,7 +18,9 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     sharingSavingFlag = true,
     commentingFlag = true,
     showAudioPlayer,
+    showUpdate
   } = window.nuk.article;
+
   const { getCookieValue } = window.nuk;
 
   const data = {
@@ -37,13 +39,14 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     sharingSavingFlag,
     commentingFlag,
     showAudioPlayer,
+    showUpdate
   };
 
   const clientOptions = {
     rootTag,
     useGET: true,
     headers: {
-      "x-new-topic-data-source": true
+      "x-new-topic-data-source": true,
     },
     zephrDivs,
     showAudioPlayer

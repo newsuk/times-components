@@ -58,6 +58,7 @@ const ArticleSkeleton = ({
   getFallbackThumbnailUrl169,
   zephrDivs,
   showAudioPlayer,
+  showUpdate
 }) => {
   const {
     commentsEnabled,
@@ -92,11 +93,12 @@ const ArticleSkeleton = ({
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
-  const scrollToTop = window =>
+  const scrollToTopAndRefresh = window => {
     window.scroll({
       left: 0,
       top: 0
-    });
+    })
+    window.location.reload()}
 
   receiveChildList([
     {
@@ -248,7 +250,7 @@ const ArticleSkeleton = ({
                     isLiveOrBreaking={isLiveOrBreaking}
                   />
                 )}
-                {isLiveOrBreaking &&
+                {showUpdate && 
                   <TCThemeProvider>
                     <UpdateButtonContainer data-testid="Update button container">
                       <UpdateButtonWithDelay
@@ -256,9 +258,10 @@ const ArticleSkeleton = ({
                         delay={8000000}
                         display
                         label="an update"
-                        handleClick={() => scrollToTop(window)}
+                        handleClick={() => scrollToTopAndRefresh(window)}
                         arrowUp
                         updatedTime={article.updatedTime}
+                        articleId={article.id}
                       />
                     </UpdateButtonContainer>
                   </TCThemeProvider>

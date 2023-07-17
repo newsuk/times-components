@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { DelayedComponent } from '../delayed-component/delayed-component';
 import { UpdateButton } from './update-button';
+import fetch from 'isomorphic-unfetch';
 
 type UpdateWithDelayProps = {
   loading: boolean;
@@ -10,6 +11,7 @@ type UpdateWithDelayProps = {
   handleClick: () => void;
   arrowUp: boolean;
   updatedTime: string;
+  articleId: string
 };
 
 export const UpdateButtonWithDelay = ({
@@ -19,19 +21,24 @@ export const UpdateButtonWithDelay = ({
   label,
   handleClick,
   arrowUp,
-  updatedTime
+  updatedTime,
+  articleId
 }: UpdateWithDelayProps) => {
-  console.log(updatedTime, 'UPDATED TIME')
-  const getUpdatedTime = () => {
-    console.log('HI');
-    return ('2024-07-13T14:00:00.000Z')
-    }
-
+  
   const [hasUpdate, setUpdate] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      getUpdatedTime() > updatedTime &&
+    const fetchData = async () => {
+      try {
+          const response = await fetch(`/api/article-update-time/${articleId}`)
+          const json = await response.json();
+          return json.article.updatedTime;
+      } catch(err) {
+        console.log(err)
+      }
+    }
+    const interval = setInterval(async () => {
+      await fetchData() > updatedTime &&
       setUpdate(true)
     }, 500);
 
