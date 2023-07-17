@@ -46,7 +46,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     rootTag,
     useGET: true,
     headers: {
-      "x-new-topic-data-source": true,
+      "x-new-topic-data-source": true
     },
     zephrDivs,
     showAudioPlayer

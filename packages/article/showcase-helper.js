@@ -329,7 +329,7 @@ const renderArticleConfig = ({
   const user = (global.nuk && global.nuk.user) || {};
   const { isLoggedIn, isMeteredExpired, isShared } = user;
   const isTeaser = !isShared && (isMeteredExpired || !isLoggedIn);
-  const showUpdate = boolean("Show Update", true)
+  const showUpdate = boolean("Show Update", true);
 
   return (
     <Fragment>

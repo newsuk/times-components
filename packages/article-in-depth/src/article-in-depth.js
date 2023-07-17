@@ -85,7 +85,6 @@ class ArticlePage extends Component {
       return null;
     }
 
-
     return (
       <ArticleSkeleton
         analyticsStream={analyticsStream}

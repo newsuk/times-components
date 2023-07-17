@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
@@ -97,8 +97,9 @@ const ArticleSkeleton = ({
     window.scroll({
       left: 0,
       top: 0
-    })
-    window.location.reload()}
+    });
+    window.location.reload();
+  };
 
   receiveChildList([
     {
@@ -250,7 +251,7 @@ const ArticleSkeleton = ({
                     isLiveOrBreaking={isLiveOrBreaking}
                   />
                 )}
-                {showUpdate && 
+                {showUpdate && (
                   <TCThemeProvider>
                     <UpdateButtonContainer data-testid="Update button container">
                       <UpdateButtonWithDelay
@@ -265,7 +266,7 @@ const ArticleSkeleton = ({
                       />
                     </UpdateButtonContainer>
                   </TCThemeProvider>
-}
+                )}
                 <PaywallPortal
                   id="paywall-portal-article-footer"
                   componentName="subscribe-cta"
