@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.15.0](https://github.com/newsuk/times-components/compare/@times-components/article@7.14.6...@times-components/article@7.15.0) (2023-07-17)
+
+
+### Features
+
+* **TMRX-1250:** Live updates behind a flag ([#3429](https://github.com/newsuk/times-components/issues/3429)) ([2fe0200](https://github.com/newsuk/times-components/commit/2fe02005cde5042d7d2ad69c879d0b9a4c0411fc))
+
+
+
+
+
 ## [7.14.6](https://github.com/newsuk/times-components/compare/@times-components/article@7.14.5...@times-components/article@7.14.6) (2023-07-17)
 
 **Note:** Version bump only for package @times-components/article

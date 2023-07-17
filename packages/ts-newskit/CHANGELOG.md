@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.63.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.62.3...@times-components/ts-newskit@1.63.0) (2023-07-17)
+
+
+### Features
+
+* **TMRX-1250:** Live updates behind a flag ([#3429](https://github.com/newsuk/times-components/issues/3429)) ([2fe0200](https://github.com/newsuk/times-components/commit/2fe02005cde5042d7d2ad69c879d0b9a4c0411fc))
+
+
+
+
+
 ## [1.62.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.62.2...@times-components/ts-newskit@1.62.3) (2023-07-17)
 
 **Note:** Version bump only for package @times-components/ts-newskit
