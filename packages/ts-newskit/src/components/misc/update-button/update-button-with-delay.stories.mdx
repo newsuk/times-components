@@ -27,19 +27,19 @@ This component takes in a six props:
 <Props of={UpdateButtonWithDelay} />
 
 ## Code Example
-`<UpdateButtonWithDelay loading={loading} display={true} delay={8000} label='New updates', arrowUp={true}/>`
+`<UpdateButtonWithDelay display={true} delay={8000} label='New updates', arrowUp={true} updatedTime="2023-12-12T12:00:00.000Z" articleId="12345"/>`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const UpdateButtonWithDelayStory = ({ loading, display, delay, label, arrowUp, updatedTime }) => (
+export const UpdateButtonWithDelayStory = ({ display, delay, label, arrowUp, updatedTime, articleId }) => (
   <TCThemeProvider theme={TimesWebLightTheme}>
-    <UpdateButtonWithDelay loading={loading} display={display} delay={delay} label={label} arrowUp={arrowUp} updatedTime={updatedTime} />
+    <UpdateButtonWithDelay display={display} delay={delay} label={label} arrowUp={arrowUp} updatedTime={updatedTime} articleId={articleId} update={true}/>
   </TCThemeProvider>
 );
 
 <Story name="UpdateButtonWithDelay"
-  args={{ loading: false, display: true, delay: 8000, label: 'New Updates', arrowUp: true, updatedTime: '2023-07-13T12:00:00.000Z'} }
+  args={{ display: true, delay: 8000, label: 'New Updates', arrowUp: true, updatedTime: '2023-07-13T12:00:00.000Z', articleId: '12345'} }
 >
   {UpdateButtonWithDelayStory.bind({})}
 </Story>

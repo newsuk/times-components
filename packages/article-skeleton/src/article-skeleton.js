@@ -255,10 +255,9 @@ const ArticleSkeleton = ({
                   <TCThemeProvider>
                     <UpdateButtonContainer data-testid="Update button container">
                       <UpdateButtonWithDelay
-                        loading={false}
-                        delay={8000000}
+                        delay={8000}
                         display
-                        label="an update"
+                        label="New update"
                         handleClick={() => scrollToTopAndRefresh(window)}
                         arrowUp
                         updatedTime={article.updatedTime}

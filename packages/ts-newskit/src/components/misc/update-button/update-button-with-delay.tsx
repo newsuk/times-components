@@ -12,20 +12,20 @@ type UpdateWithDelayProps = {
   arrowUp: boolean;
   updatedTime: string;
   articleId: string;
+  update: boolean;
 };
 
 export const UpdateButtonWithDelay = ({
-  loading,
   delay,
   display,
   label,
   handleClick,
   arrowUp,
   updatedTime,
-  articleId
+  articleId,
+  update = false
 }: UpdateWithDelayProps) => {
-  const [hasUpdate, setUpdate] = useState(false);
-
+  const [hasUpdate, setUpdate] = useState(update);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -43,12 +43,13 @@ export const UpdateButtonWithDelay = ({
 
     return () => clearInterval(interval);
   }, []);
+
   return (
     <>
       {hasUpdate ? (
         <DelayedComponent delay={delay} initialState={display}>
           <UpdateButton
-            loading={loading}
+            loading={false}
             label={label}
             handleClick={handleClick}
             arrowUp={arrowUp}
