@@ -38,6 +38,11 @@ export { PuzzlesWebLightTheme } from './theme/puzzles-web-light/index';
 // SLICES
 export { ContentBucket1 } from './slices/content-bucket-1';
 export { ContentBucket2 } from './slices/content-bucket-2';
+export { LeadStory1 } from './slices/lead-story-1';
+export { LeadStory2 } from './slices/lead-story-2';
+export { LeadStory3 } from './slices/lead-story-3';
+export { SectionBucket } from './slices/section-bucket';
+export { StackModule1 } from './slices/stacked-module-1';
 
 // MISC
 export { JobTitle } from './components/misc/job-title/job-title';

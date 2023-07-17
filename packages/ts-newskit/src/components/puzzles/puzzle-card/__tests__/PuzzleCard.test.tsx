@@ -37,4 +37,17 @@ describe('Puzzle Card', () => {
     const svgElement = container.querySelector('svg');
     expect(svgElement).toBeInTheDocument();
   });
+
+  it('crops the image', () => {
+    const { container, queryByAltText } = render(
+      <PuzzleCard data={puzzles.list[0]} isImageCropped />
+    );
+    const imageUrl = puzzles.list[0].image.crops[0].url;
+    const croppedImageUrl = imageUrl + '&resize=500';
+    const image = queryByAltText('Polygon');
+
+    expect(container).toBeInTheDocument();
+
+    expect(image).toHaveAttribute('src', croppedImageUrl);
+  });
 });

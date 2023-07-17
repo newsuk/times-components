@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.62.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.62.1...@times-components/ts-newskit@1.62.2) (2023-07-17)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.62.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.62.0...@times-components/ts-newskit@1.62.1) (2023-07-13)
+
+
+### Bug Fixes
+
+* Added isImageCropped to CardsContainer component. ([#3426](https://github.com/newsuk/times-components/issues/3426)) ([5c52a84](https://github.com/newsuk/times-components/commit/5c52a842f052333f8c9f0c983f92442960ffb0a7))
+
+
+
+
+
+# [1.62.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.61.0...@times-components/ts-newskit@1.62.0) (2023-07-13)
+
+
+### Features
+
+* **TMST 725:** image crop ([#3422](https://github.com/newsuk/times-components/issues/3422)) ([4507f1a](https://github.com/newsuk/times-components/commit/4507f1a3013dfdaa770411eb28e2aad21da9a6cc))
+
+
+
+
+
 # [1.61.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.9...@times-components/ts-newskit@1.61.0) (2023-07-11)
 
 
