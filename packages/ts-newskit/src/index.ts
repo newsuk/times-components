@@ -1,6 +1,10 @@
 export { TCThemeProvider } from './utils/TCThemeProvider';
 export { InArticleAudio } from './components/article-audio';
 
+// THEMES
+export { TimesWebLightTheme } from './theme/times-web-light';
+export { TimesWebLightSportTheme } from './theme/times-web-light-sport';
+
 // NAVIGATION
 export { Breadcrumb } from './components/navigation/breadcrumb';
 export { GlobalNav } from './components/navigation/global-nav';
