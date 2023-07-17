@@ -23,16 +23,20 @@ export const GroupedArticle = ({ articles, tagL1 }: GroupedArticleProps) => {
 
   return (
     <Block>
-      <TextLink
-        overrides={{
-          typographyPreset: 'utilityButton010',
-          stylePreset: 'inkBrand010',
-          marginBlockEnd: 'space040'
-        }}
-        href={tagL1.href}
-      >
-        {tagL1.label}
-      </TextLink>
+      {tagL1 &&
+        tagL1.label !== '' && (
+          <TextLink
+            overrides={{
+              typographyPreset: 'utilityButton010',
+              stylePreset: 'inkBrand010',
+              marginBlockEnd: 'space040'
+            }}
+            href={tagL1.href}
+          >
+            {tagL1.label}
+          </TextLink>
+        )}
+
       <GridLayout>
         {modifiedGroupedArticles.map(
           (article: LeadArticleProps, articleIndex: number) => {

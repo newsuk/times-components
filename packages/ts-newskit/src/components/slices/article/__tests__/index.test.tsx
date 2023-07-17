@@ -18,7 +18,7 @@ const defaultProps = {
     alt: 'This is ALT Text',
     credit: 'Credit'
   },
-  title: "Harry & Meghan's New Project?",
+  headline: "Harry & Meghan's New Project?",
   url:
     '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
   tag: {
@@ -74,7 +74,7 @@ describe('Render Article List Item', () => {
           '//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63',
         alt: ''
       },
-      title: "Harry & Meghan's New Project?",
+      headline: "Harry & Meghan's New Project?",
       url:
         '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
       tag: {

@@ -4,15 +4,15 @@ import { CardHeadlineLink } from '../shared-styles';
 
 export interface CommentCardProps {
   image?: string;
-  heading: string;
-  content: string;
+  byline: string;
+  headline: string;
   href: string;
 }
 
 export const CommentCard = ({
   image,
-  heading,
-  content,
+  byline,
+  headline,
   href
 }: CommentCardProps) => {
   return (
@@ -27,7 +27,7 @@ export const CommentCard = ({
         media={{
           width: '77px',
           src: image,
-          alt: heading,
+          alt: byline,
           loadingAspectRatio: '1:1',
           overrides: { stylePreset: 'imageCircle' }
         }}
@@ -39,13 +39,13 @@ export const CommentCard = ({
           overrides={{ typographyPreset: 'editorialHeadline020' }}
           expand
         >
-          {heading}
+          {byline}
         </CardHeadlineLink>
         <TextBlock
           stylePreset="inkBase"
           typographyPreset="editorialHeadline020"
         >
-          {content}
+          {headline}
         </TextBlock>
       </CardContent>
     </CardComposable>

@@ -8,8 +8,8 @@ const renderComponent = (props: CommentCardProps) =>
 
 const defaultProps = {
   image: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
-  heading: 'Journalist name',
-  content: 'Quote text',
+  byline: 'Journalist name',
+  headline: 'Quote text',
   href: '/#'
 };
 
@@ -44,8 +44,8 @@ it('should render the correct image', () => {
 it('should render the correct text, without Heading', () => {
   renderComponent({
     image: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
-    heading: 'Journalist name',
-    content: 'Quote text',
+    byline: 'Journalist name',
+    headline: 'Quote text',
     href: '/'
   });
 

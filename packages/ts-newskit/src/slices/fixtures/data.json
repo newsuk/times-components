@@ -26,7 +26,7 @@
         "src": "/assets/small_01.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
+      "headline": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "",
@@ -39,7 +39,7 @@
         "src": "/assets/small_02.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "‘American owners pose threat to English pyramid’",
+      "headline": "‘American owners pose threat to English pyramid’",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "",
@@ -52,7 +52,7 @@
         "src": "/assets/small_03.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid",
+      "headline": "£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "",
@@ -65,7 +65,7 @@
         "src": "/assets/small_04.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "Blow for rebel clubs as court says Uefa can block Super League",
+      "headline": "Blow for rebel clubs as court says Uefa can block Super League",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "",
@@ -80,7 +80,7 @@
         "src": "/assets/small_01.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "Short title of the card describing the main content",
+      "headline": "Short title of the card describing the main content",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -93,7 +93,7 @@
         "src": "/assets/small_02.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "Short title of the card describing the main content",
+      "headline": "Short title of the card describing the main content",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -106,7 +106,7 @@
         "src": "/assets/small_03.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "Short title of the card describing the main content",
+      "headline": "Short title of the card describing the main content",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -119,7 +119,7 @@
         "src": "/assets/small_04.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "Short title of the card describing the main content",
+      "headline": "Short title of the card describing the main content",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -132,7 +132,7 @@
         "src": "/assets/small_01.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "Short title of the card describing the main content",
+      "headline": "Short title of the card describing the main content",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -145,7 +145,7 @@
         "src": "/assets/small_02.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "Short title of the card describing the main content",
+      "headline": "Short title of the card describing the main content",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -158,7 +158,7 @@
         "src": "/assets/small_03.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "Short title of the card describing the main content",
+      "headline": "Short title of the card describing the main content",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -171,7 +171,7 @@
         "src": "/assets/small_04.jpg",
         "alt": "This is ALT Text"
       },
-      "title": "Short title of the card describing the main content",
+      "headline": "Short title of the card describing the main content",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -182,14 +182,14 @@
   ],
   "comments": [
     {
-      "heading": "Deborah Haynes",
-      "content": "Now is Willis’s chance to show he’s got more to offer than Curry",
+      "byline": "Deborah Haynes",
+      "headline": "Now is Willis’s chance to show he’s got more to offer than Curry",
       "image": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
       "href": "/"
     },
     {
-      "heading": "Deborah Haynes 2",
-      "content": "Now is Willis’s chance to show he’s got more to offer than Curry",
+      "byline": "Deborah Haynes 2",
+      "headline": "Now is Willis’s chance to show he’s got more to offer than Curry",
       "image": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
       "href": "/"
     }
@@ -205,7 +205,7 @@
           "src": "/assets/small_01.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",
@@ -218,7 +218,7 @@
           "src": "/assets/small_02.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",
@@ -231,7 +231,7 @@
           "src": "/assets/small_03.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",
@@ -252,7 +252,7 @@
           "src": "/assets/small_01.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",
@@ -265,7 +265,7 @@
           "src": "/assets/small_02.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",
@@ -278,7 +278,7 @@
           "src": "/assets/small_03.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",
@@ -299,7 +299,7 @@
           "src": "/assets/small_01.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",
@@ -312,7 +312,7 @@
           "src": "/assets/small_02.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",
@@ -325,7 +325,7 @@
           "src": "/assets/small_03.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",
@@ -346,7 +346,7 @@
           "src": "/assets/small_01.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",
@@ -359,7 +359,7 @@
           "src": "/assets/small_02.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",
@@ -372,7 +372,7 @@
           "src": "/assets/small_03.jpg",
           "alt": "This is ALT Text"
         },
-        "title": "Short title of the card describing the main content",
+        "headline": "Short title of the card describing the main content",
         "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
         "tag": {
           "label": "",

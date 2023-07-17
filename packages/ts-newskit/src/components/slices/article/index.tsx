@@ -22,7 +22,7 @@ type ImageProps = {
 };
 
 export interface ArticleProps {
-  title: string;
+  headline: string;
   url: string;
   image?: ImageProps;
   tag?: {
@@ -46,7 +46,7 @@ type LayoutProps = {
 
 export const Article = ({
   image,
-  title,
+  headline,
   url,
   tag,
   flag,
@@ -63,7 +63,7 @@ export const Article = ({
     image && {
       media: {
         src: image.src,
-        alt: image.alt || title,
+        alt: image.alt || headline,
         loadingAspectRatio: '3:2'
       }
     };
@@ -139,7 +139,7 @@ export const Article = ({
               marginBlockStart: titleMarginBlockStart
             }}
           >
-            {title}
+            {headline}
           </CardHeadlineLink>
           <TagAndFlag
             tag={tag}
