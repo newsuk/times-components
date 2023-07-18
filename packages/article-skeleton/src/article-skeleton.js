@@ -82,6 +82,8 @@ const ArticleSkeleton = ({
     isCommentEnabled
   } = article;
 
+  console.log(article.publishedTime, 'PUBLISHED TIME');
+
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
@@ -260,7 +262,7 @@ const ArticleSkeleton = ({
                         label="New update"
                         handleClick={() => scrollToTopAndRefresh(window)}
                         arrowUp
-                        updatedTime={article.updatedTime}
+                        updatedTime={article.publishedTime}
                         articleId={article.id}
                       />
                     </UpdateButtonContainer>
