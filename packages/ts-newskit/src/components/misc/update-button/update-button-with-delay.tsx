@@ -47,7 +47,6 @@ export const UpdateButtonWithDelay = ({
     <>
       {hasUpdate ? (
         <DelayedComponent
-          setUpdate={setUpdate}
           delay={delay}
           initialState={display}
         >
