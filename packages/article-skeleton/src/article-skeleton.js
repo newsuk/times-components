@@ -82,8 +82,6 @@ const ArticleSkeleton = ({
     isCommentEnabled
   } = article;
 
-  console.log(article.publishedTime, 'PUBLISHED TIME');
-
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
