@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.65.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.65.0...@times-components/ts-newskit@1.65.1) (2023-07-18)
+
+
+### Bug Fixes
+
+* **TMRX-1250:** Revert state reset and point to publishedTime ([#3433](https://github.com/newsuk/times-components/issues/3433)) ([83457f2](https://github.com/newsuk/times-components/commit/83457f284586c14ee7e4c4cef2d5316dc05a2dd8))
+
+
+
+
+
 # [1.65.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.64.0...@times-components/ts-newskit@1.65.0) (2023-07-18)
 
 
