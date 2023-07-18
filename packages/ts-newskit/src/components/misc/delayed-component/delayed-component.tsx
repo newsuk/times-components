@@ -11,7 +11,7 @@ export const DelayedComponent: React.FC<{
   useEffect(() => {
     setTimeout(() => {
       setShowElement(!initialState);
-      setUpdate(false)
+      setUpdate(false);
     }, delay);
   }, []);
   return <>{showElement ? children : null}</>;
