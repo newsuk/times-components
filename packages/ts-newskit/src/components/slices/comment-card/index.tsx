@@ -2,8 +2,19 @@ import { CardComposable, CardContent, CardMedia, TextBlock } from 'newskit';
 import React from 'react';
 import { CardHeadlineLink } from '../shared-styles';
 
+type ImageCrops = {
+  url?: string;
+  ratio?: string;
+};
+
+type ImageProps = {
+  alt?: string;
+  credit?: string;
+  crops?: ImageCrops[];
+};
+
 export interface CommentCardProps {
-  image?: string;
+  image?: ImageProps;
   byline: string;
   headline: string;
   href: string;
@@ -15,6 +26,9 @@ export const CommentCard = ({
   headline,
   href
 }: CommentCardProps) => {
+  const imageWithCorrectRatio =
+    image && image.crops && image.crops.find(crop => crop.ratio === '1:1');
+
   return (
     <CardComposable
       columnGap="space040"
@@ -23,15 +37,18 @@ export const CommentCard = ({
         media content
       `}
     >
-      <CardMedia
-        media={{
-          width: '77px',
-          src: image,
-          alt: byline,
-          loadingAspectRatio: '1:1',
-          overrides: { stylePreset: 'imageCircle' }
-        }}
-      />
+      {imageWithCorrectRatio && (
+        <CardMedia
+          media={{
+            src: imageWithCorrectRatio.url,
+            alt: (image && image.alt) || headline,
+            loadingAspectRatio: imageWithCorrectRatio.ratio || '1:1',
+            width: '77px',
+            overrides: { stylePreset: 'imageCircle' }
+          }}
+        />
+      )}
+
       <CardContent rowGap="space040" alignContent="start">
         <CardHeadlineLink
           href={href}
