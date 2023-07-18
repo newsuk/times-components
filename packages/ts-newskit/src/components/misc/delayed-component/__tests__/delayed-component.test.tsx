@@ -5,13 +5,11 @@ import { render, waitFor } from '../../../../utils/test-utils';
 import { DelayedComponent } from '../delayed-component';
 
 describe('DelayedComponent', () => {
-  const mockSetUpdate = jest.fn();
   it('should remove the component after the specified delay when initial state is true', async () => {
     const { queryByText, getByText } = render(
       <DelayedComponent
         initialState={true}
         delay={800}
-        setUpdate={mockSetUpdate}
       >
         <div>Children</div>
       </DelayedComponent>
@@ -26,7 +24,6 @@ describe('DelayedComponent', () => {
       <DelayedComponent
         initialState={false}
         delay={800}
-        setUpdate={mockSetUpdate}
       >
         <div>Children</div>
       </DelayedComponent>
