@@ -92,12 +92,10 @@ const ArticleSkeleton = ({
   const newContent = reduceArticleContent(content, articleContentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
-  const target = document.getElementById('header-container');
+  const target = document.getElementById('save-and-share-bar');
 
   const scrollToTopAndRefresh = window => {
-    window.scroll({
-      top: target
-    });
+    target.scrollIntoView();
     window.location.reload(true);
   };
 
@@ -194,7 +192,7 @@ const ArticleSkeleton = ({
                   }
                 />
               )}
-              <HeaderContainer id="header-container" showAudioPlayer={showAudioPlayer}>
+              <HeaderContainer showAudioPlayer={showAudioPlayer}>
                 {!!zephrDivs && (
                   <StaticContent
                     html={
@@ -208,6 +206,7 @@ const ArticleSkeleton = ({
                     <MessageContext.Consumer>
                       {({ showMessage }) => (
                         <StickySaveAndShareBar
+                          id="save-and-share-bar"
                           articleId={articleId}
                           articleHeadline={headline}
                           articleUrl={url}
