@@ -92,13 +92,13 @@ const ArticleSkeleton = ({
   const newContent = reduceArticleContent(content, articleContentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
+  const target = document.getElementById('header-container');
 
   const scrollToTopAndRefresh = window => {
     window.scroll({
-      left: 0,
-      top: 0
+      top: target
     });
-    window.location.reload();
+    window.location.reload(true);
   };
 
   receiveChildList([
@@ -194,7 +194,7 @@ const ArticleSkeleton = ({
                   }
                 />
               )}
-              <HeaderContainer showAudioPlayer={showAudioPlayer}>
+              <HeaderContainer id="header-container" showAudioPlayer={showAudioPlayer}>
                 {!!zephrDivs && (
                   <StaticContent
                     html={
