@@ -98,7 +98,7 @@ const ArticleSkeleton = ({
       left: 0,
       top: 0
     });
-    window.location.reload();
+    window.location.reload(true);
   };
 
   receiveChildList([
@@ -260,7 +260,7 @@ const ArticleSkeleton = ({
                         label="New update"
                         handleClick={() => scrollToTopAndRefresh(window)}
                         arrowUp
-                        updatedTime={article.updatedTime}
+                        updatedTime={article.publishedTime}
                         articleId={article.id}
                       />
                     </UpdateButtonContainer>
