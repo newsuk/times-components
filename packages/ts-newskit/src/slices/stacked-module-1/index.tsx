@@ -60,7 +60,7 @@ const articleStack = ({
           const hasImage = isMob && articleIndex > 0;
 
           return (
-            <React.Fragment key={article.title}>
+            <React.Fragment key={article.headline}>
               <Article
                 {...article}
                 hideImage={hasImage || (hasImage || isDesktop)}

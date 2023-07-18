@@ -47,7 +47,7 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
             const isAfterFirstArticle = isMob && articleIndex > 0;
 
             return (
-              <React.Fragment key={article.title}>
+              <React.Fragment key={article.headline}>
                 <Article
                   {...article}
                   hideImage={isAfterFirstArticle}

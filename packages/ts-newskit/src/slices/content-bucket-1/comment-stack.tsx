@@ -37,7 +37,7 @@ export const CommentStack = ({ comments }: CommentStackProps) => {
           );
 
           return (
-            <React.Fragment key={comment.heading}>
+            <React.Fragment key={comment.headline}>
               <CommentCard {...comment} />
               {hasBorder}
             </React.Fragment>
