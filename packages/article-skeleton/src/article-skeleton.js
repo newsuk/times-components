@@ -92,10 +92,12 @@ const ArticleSkeleton = ({
   const newContent = reduceArticleContent(content, articleContentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
-  const target = document.getElementById('save-and-share-bar');
 
   const scrollToTopAndRefresh = window => {
-    target.scrollIntoView();
+    window.scroll({
+      left: 0,
+      top: 0
+    });
     window.location.reload(true);
   };
 
@@ -202,11 +204,11 @@ const ArticleSkeleton = ({
                 )}
                 <Header />
                 {isSharingSavingEnabled ? (
+                  <div id="hi">
                   <UserState state={UserState.showSaveAndShareBar}>
                     <MessageContext.Consumer>
                       {({ showMessage }) => (
                         <StickySaveAndShareBar
-                          id="save-and-share-bar"
                           articleId={articleId}
                           articleHeadline={headline}
                           articleUrl={url}
@@ -219,6 +221,7 @@ const ArticleSkeleton = ({
                       )}
                     </MessageContext.Consumer>
                   </UserState>
+                  </div>
                 ) : null}
                 {!!zephrDivs && (
                   <StaticContent
