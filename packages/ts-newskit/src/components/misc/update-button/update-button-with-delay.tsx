@@ -30,7 +30,7 @@ export const UpdateButtonWithDelay = ({
       try {
         const response = await fetch(`/api/article-update-time/${articleId}`);
         const json = await response.json();
-        return json.article.updatedTime;
+        return json.article.publishedTime;
       } catch (err) {
         // tslint:disable-next-line:no-console
         console.log(err);
