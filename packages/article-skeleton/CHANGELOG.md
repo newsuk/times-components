@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.106.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.105.0...@times-components/article-skeleton@1.106.0) (2023-07-18)
+
+
+### Features
+
+* **TMRX-1250:** Live update button behind flag ([#3430](https://github.com/newsuk/times-components/issues/3430)) ([5069dd6](https://github.com/newsuk/times-components/commit/5069dd62174d9dd63cf78a4b30e8b7ea9582f6b5))
+
+
+
+
+
 # [1.105.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.104.5...@times-components/article-skeleton@1.105.0) (2023-07-17)
 
 
