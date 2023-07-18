@@ -4,7 +4,6 @@ import { UpdateButton } from './update-button';
 import fetch from 'isomorphic-unfetch';
 
 type UpdateWithDelayProps = {
-  loading: boolean;
   display: boolean;
   delay: number;
   label: string;
@@ -39,7 +38,7 @@ export const UpdateButtonWithDelay = ({
     };
     const interval = setInterval(async () => {
       (await fetchData()) > updatedTime && setUpdate(true);
-    }, 120000);
+    }, 30000);
 
     return () => clearInterval(interval);
   }, []);

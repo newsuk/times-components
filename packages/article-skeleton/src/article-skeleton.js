@@ -265,7 +265,7 @@ const ArticleSkeleton = ({
                       />
                     </UpdateButtonContainer>
                   </TCThemeProvider>
-                ): null}
+                ) : null}
                 <PaywallPortal
                   id="paywall-portal-article-footer"
                   componentName="subscribe-cta"
