@@ -1,8 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render, waitFor } from '../../../../utils/test-utils';
-// import _fetchMock from 'isomorphic-unfetch';
-// import { FetchMockStatic } from 'fetch-mock';
 import { UpdateButtonWithDelay } from '../update-button-with-delay';
 
 const handleClickMock = jest.fn();
