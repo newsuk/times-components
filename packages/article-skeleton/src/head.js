@@ -359,7 +359,7 @@ function Head({
       productID: swgProductId
     };
   }
-  const videoJsonLD = hasVideo
+  const videoJsonLD = hasVideo && brightcoveAccountId && brightcoveVideoId
     ? {
         "@context": "https://schema.org",
         "@type": "VideoObject",
