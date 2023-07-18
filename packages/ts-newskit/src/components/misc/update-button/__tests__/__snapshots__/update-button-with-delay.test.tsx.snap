@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render UpdateButtonWithDelay should render the Update button component and the DelayComponent as expected 1`] = `
+exports[`Render UpdateButtonWithDelay should render the Update button component and the DelayComponent as expected when it has an update 1`] = `
 <DocumentFragment>
   <button
     class="css-12pttu1"
