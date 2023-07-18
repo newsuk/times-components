@@ -204,7 +204,6 @@ const ArticleSkeleton = ({
                 )}
                 <Header />
                 {isSharingSavingEnabled ? (
-                  <div id="hi">
                   <UserState state={UserState.showSaveAndShareBar}>
                     <MessageContext.Consumer>
                       {({ showMessage }) => (
@@ -221,7 +220,6 @@ const ArticleSkeleton = ({
                       )}
                     </MessageContext.Consumer>
                   </UserState>
-                  </div>
                 ) : null}
                 {!!zephrDivs && (
                   <StaticContent
