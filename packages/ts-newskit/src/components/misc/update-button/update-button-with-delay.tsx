@@ -4,7 +4,6 @@ import { UpdateButton } from './update-button';
 import fetch from 'isomorphic-unfetch';
 
 type UpdateWithDelayProps = {
-  loading: boolean;
   display: boolean;
   delay: number;
   label: string;
@@ -12,20 +11,20 @@ type UpdateWithDelayProps = {
   arrowUp: boolean;
   updatedTime: string;
   articleId: string;
+  update: boolean;
 };
 
 export const UpdateButtonWithDelay = ({
-  loading,
   delay,
   display,
   label,
   handleClick,
   arrowUp,
   updatedTime,
-  articleId
+  articleId,
+  update = false
 }: UpdateWithDelayProps) => {
-  const [hasUpdate, setUpdate] = useState(false);
-
+  const [hasUpdate, setUpdate] = useState(update);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -39,16 +38,17 @@ export const UpdateButtonWithDelay = ({
     };
     const interval = setInterval(async () => {
       (await fetchData()) > updatedTime && setUpdate(true);
-    }, 120000);
+    }, 30000);
 
     return () => clearInterval(interval);
   }, []);
+
   return (
     <>
       {hasUpdate ? (
         <DelayedComponent delay={delay} initialState={display}>
           <UpdateButton
-            loading={loading}
+            loading={false}
             label={label}
             handleClick={handleClick}
             arrowUp={arrowUp}
