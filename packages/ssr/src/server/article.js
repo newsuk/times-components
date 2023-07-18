@@ -25,7 +25,8 @@ module.exports = (
     zephrDivs,
     sharingSavingFlag = true,
     commentingFlag = true,
-    showAudioPlayer
+    showAudioPlayer,
+    showUpdate
   },
   userState
 ) => {
@@ -78,7 +79,8 @@ module.exports = (
       zephrDivs,
       sharingSavingFlag,
       commentingFlag,
-      showAudioPlayer
+      showAudioPlayer,
+      showUpdate
     },
     name: "article"
   };

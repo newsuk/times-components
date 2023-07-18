@@ -57,7 +57,8 @@ const ArticleSkeleton = ({
   swgProductId,
   getFallbackThumbnailUrl169,
   zephrDivs,
-  showAudioPlayer
+  showAudioPlayer,
+  showUpdate
 }) => {
   const {
     commentsEnabled,
@@ -250,7 +251,7 @@ const ArticleSkeleton = ({
                     isLiveOrBreaking={isLiveOrBreaking}
                   />
                 )}
-                {isLiveOrBreaking && (
+                {isLiveOrBreaking && showUpdate ? (
                   <TCThemeProvider>
                     <UpdateButtonContainer data-testid="Update button container">
                       <UpdateButtonWithDelay
@@ -264,7 +265,7 @@ const ArticleSkeleton = ({
                       />
                     </UpdateButtonContainer>
                   </TCThemeProvider>
-                )}
+                ): null}
                 <PaywallPortal
                   id="paywall-portal-article-footer"
                   componentName="subscribe-cta"
