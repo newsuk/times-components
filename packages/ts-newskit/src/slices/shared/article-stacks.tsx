@@ -39,7 +39,7 @@ export const ArticleStackLarge = ({
           (breakpoint === 'lg' && articleIndex > 0);
 
         return (
-          <React.Fragment key={article.title}>
+          <React.Fragment key={article.headline}>
             <Article
               {...article}
               hasTopBorder={articleTopBorder}
@@ -93,7 +93,7 @@ export const ArticleStackSmall = ({
             />
           );
         return (
-          <React.Fragment key={article.title}>
+          <React.Fragment key={article.headline}>
             <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
               <Article
                 {...article}

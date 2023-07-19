@@ -15,14 +15,19 @@ import {
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 
+type ImageCrops = {
+  url?: string;
+  ratio?: string;
+};
+
 type ImageProps = {
-  src: string;
   alt?: string;
   credit?: string;
+  crops?: ImageCrops[];
 };
 
 export interface ArticleProps {
-  title: string;
+  headline: string;
   url: string;
   image?: ImageProps;
   tag?: {
@@ -46,7 +51,7 @@ type LayoutProps = {
 
 export const Article = ({
   image,
-  title,
+  headline,
   url,
   tag,
   flag,
@@ -59,12 +64,15 @@ export const Article = ({
   titleTypographyPreset = 'editorialHeadline020',
   tagAndFlagMarginBlockStart = 'space040'
 }: ArticleProps) => {
+  const imageWithCorrectRatio =
+    image && image.crops && image.crops.find(crop => crop.ratio === '3:2');
+
   const cardImage = !hideImage &&
-    image && {
+    imageWithCorrectRatio && {
       media: {
-        src: image.src,
-        alt: image.alt || title,
-        loadingAspectRatio: '3:2'
+        src: imageWithCorrectRatio.url,
+        alt: (image && image.alt) || headline,
+        loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2'
       }
     };
 
@@ -72,7 +80,12 @@ export const Article = ({
   const titleMarginBlockStart =
     imageRight || hideImage ? 'space000' : articleTitleMarginTop;
 
-  const hasImage = image && image.src !== '';
+  const hasImage =
+    image &&
+    image.crops &&
+    image.crops.length > 0 &&
+    imageWithCorrectRatio &&
+    imageWithCorrectRatio.url !== '';
 
   const Layout: React.FC<LayoutProps> = ({ children }) => {
     return imageRight ? <Block>{children}</Block> : <>{children}</>;
@@ -127,7 +140,7 @@ export const Article = ({
               stylePreset="inkSubtle"
               typographyPreset="utilityMeta010"
             >
-              {image.credit}
+              {image && image.credit}
             </TextBlock>
           )}
         <Layout imageRight={imageRight || false}>
@@ -139,7 +152,7 @@ export const Article = ({
               marginBlockStart: titleMarginBlockStart
             }}
           >
-            {title}
+            {headline}
           </CardHeadlineLink>
           <TagAndFlag
             tag={tag}

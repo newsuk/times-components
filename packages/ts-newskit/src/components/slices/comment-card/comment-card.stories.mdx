@@ -19,9 +19,38 @@ This takes in a series of props, as below, to display journalists details, the c
 ## Code Example
 ```
 <CommentCard
-  image='https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
-  heading='Deborah Haynes'
-  content='Now is Willis’s chance to show he’s got more to offer than Curry'
+  "image": {
+    "alt": "",
+    "credit": "Credit",
+    "crops": [
+      {
+        "url": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
+        "ratio": "3:2"
+      },
+      {
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+        "ratio": "16:9"
+      },
+      {
+        "url": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
+        "ratio": "1:1"
+      },
+      {
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+        "ratio": "2:3"
+      },
+      {
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+        "ratio": "4:5"
+      },
+      {
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+        "ratio": "5:4"
+      }
+    ]
+  },
+  byline='Deborah Haynes'
+  headline='Now is Willis’s chance to show he’s got more to offer than Curry'
   href="/"
 />
 ```
@@ -29,16 +58,45 @@ This takes in a series of props, as below, to display journalists details, the c
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const CommentCardStory = ({ image, heading, content, href }) => (
+export const CommentCardStory = ({ image, headline, byline, href }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <CommentCard {...{ image, heading, content, href }} />
+    <CommentCard {...{ image, headline, byline, href }} />
   </NewsKitProvider>
 );
 
 <Story name="CommentCard" args={{
-  image: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
-  content: 'Now is Willis’s chance to show he’s got more to offer than Curry',
-  heading: 'Deborah Haynes',
+  "image": {
+    "alt": "",
+    "credit": "Credit",
+    "crops": [
+      {
+        "url": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
+        "ratio": "3:2"
+      },
+      {
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+        "ratio": "16:9"
+      },
+      {
+        "url": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
+        "ratio": "1:1"
+      },
+      {
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+        "ratio": "2:3"
+      },
+      {
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+        "ratio": "4:5"
+      },
+      {
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+        "ratio": "5:4"
+      }
+    ]
+  },
+  headline: 'Now is Willis’s chance to show he’s got more to offer than Curry',
+  byline: 'Deborah Haynes',
   href: '/',
 }}>
   {CommentCardStory.bind({})}

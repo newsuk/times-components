@@ -14,15 +14,20 @@ import {
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
+
+type ImageCrops = {
+  url?: string;
+  ratio?: string;
+};
 type ListData = {
   label: string;
   href: string;
 };
 
 type ImageProps = {
-  src: string;
   alt?: string;
   credit?: string;
+  crops?: ImageCrops[];
 };
 export interface LeadArticleProps {
   headline: string;
@@ -32,7 +37,6 @@ export interface LeadArticleProps {
     label: string;
     href: string;
   };
-  caption?: string;
   image?: ImageProps;
   url: string;
   tag?: {
@@ -57,7 +61,6 @@ export const LeadArticle = ({
   flag,
   summary,
   tagL1,
-  caption,
   image,
   url,
   tag,
@@ -74,17 +77,27 @@ export const LeadArticle = ({
   showTagL1,
   hideImage
 }: LeadArticleProps) => {
+  const imageWithCorrectRatio =
+    image && image.crops && image.crops.find(crop => crop.ratio === '3:2');
+
   const cardImage = image &&
-    image.src !== '' && {
+    imageWithCorrectRatio &&
+    imageWithCorrectRatio.url !== '' && {
       media: {
-        src: image.src,
-        alt: image.alt || headline,
-        loadingAspectRatio: loadingAspectRatio || '3:2'
+        src: imageWithCorrectRatio.url,
+        alt: (image && image.alt) || headline,
+        loadingAspectRatio: loadingAspectRatio || imageWithCorrectRatio.ratio
       }
     };
 
-  const hasImage = image && image.src !== '';
-  const hasCaption = caption && caption !== '';
+  const hasImage =
+    image &&
+    image.crops &&
+    image.crops.length > 0 &&
+    imageWithCorrectRatio &&
+    imageWithCorrectRatio.url !== '';
+
+  const hasCaption = image && image.credit;
   const headlineTypography = headlineTypographyPreset
     ? headlineTypographyPreset
     : imageTop
@@ -119,7 +132,7 @@ export const LeadArticle = ({
                 marginBlockStart="space020"
                 typographyPreset="utilityMeta010"
               >
-                {caption}
+                {image && image.credit}
               </TextBlock>
             )}
           </Block>

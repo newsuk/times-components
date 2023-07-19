@@ -44,7 +44,6 @@ export const LeadStory1 = ({
 }: LeadStory1Props) => {
   const breakpointKey = useBreakpointKey();
   const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
-
   const modifedArticles =
     breakpointKey === 'xl'
       ? articles.map(article => ({
@@ -111,7 +110,9 @@ export const LeadStory1 = ({
                     ? 'space020'
                     : 'space040',
                   marginBlockEnd:
-                    singleArticle.image && singleArticle.image.src !== ''
+                    singleArticle.image &&
+                    singleArticle.image.crops &&
+                    singleArticle.image.crops.length > 0
                       ? 'space040'
                       : 'space000'
                 }}

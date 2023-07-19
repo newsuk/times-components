@@ -36,7 +36,7 @@ export const ArticleStack = ({
           (breakpoint === 'lg' && articleIndex > 0);
 
         return (
-          <React.Fragment key={article.title}>
+          <React.Fragment key={article.headline}>
             <Article
               {...article}
               hasTopBorder={articleTopBorder}
