@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.66.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.65.1...@times-components/ts-newskit@1.66.0) (2023-07-19)
+
+
+### Features
+
+* **TMRX-1314:** match the props with tpa ([#3432](https://github.com/newsuk/times-components/issues/3432)) ([4d106aa](https://github.com/newsuk/times-components/commit/4d106aa16ac1bb7f1fd3ef0c1b61161aeff538ce))
+
+
+
+
+
 ## [1.65.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.65.0...@times-components/ts-newskit@1.65.1) (2023-07-18)
 
 
