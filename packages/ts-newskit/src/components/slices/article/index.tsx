@@ -134,7 +134,6 @@ export const Article = ({
         {image &&
           !imageRight &&
           image.credit &&
-          image.credit !== '' &&
           !hideImage && (
             <TextBlock
               marginBlockStart="space020"

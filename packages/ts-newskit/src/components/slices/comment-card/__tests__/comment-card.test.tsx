@@ -71,7 +71,7 @@ it('should render the correct image', () => {
     'src',
     'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
   );
-  expect(image).toHaveAttribute('alt', 'Quote text');
+  expect(image).toHaveAttribute('alt', 'Journalist name');
 });
 
 it('should render the correct text, without Heading', () => {

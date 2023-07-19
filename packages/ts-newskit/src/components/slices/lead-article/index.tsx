@@ -97,7 +97,7 @@ export const LeadArticle = ({
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
 
-  const hasCaption = image && image.credit && image.credit !== '';
+  const hasCaption = image && image.credit;
   const headlineTypography = headlineTypographyPreset
     ? headlineTypographyPreset
     : imageTop
