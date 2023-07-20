@@ -78,7 +78,6 @@ class ArticlePage extends Component {
       commentingConfig,
       isPreview,
       swgProductId,
-      showUpdate
     } = this.props;
 
     if (error || isLoading) {
@@ -96,7 +95,6 @@ class ArticlePage extends Component {
         commentingConfig={commentingConfig}
         isPreview={isPreview}
         swgProductId={swgProductId}
-        showUpdate={showUpdate}
       />
     );
   }

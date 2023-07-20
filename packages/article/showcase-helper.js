@@ -218,8 +218,7 @@ const renderArticle = ({
   section,
   template,
   isTeaser,
-  isMeteredExpired,
-  showUpdate
+  isMeteredExpired
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -279,7 +278,6 @@ const renderArticle = ({
             )}
             refetch={refetch}
             commentingConfig={commentingConfig}
-            showUpdate={showUpdate}
           />
         </ContextProviderWithDefaults>
       );
@@ -329,7 +327,6 @@ const renderArticleConfig = ({
   const user = (global.nuk && global.nuk.user) || {};
   const { isLoggedIn, isMeteredExpired, isShared } = user;
   const isTeaser = !isShared && (isMeteredExpired || !isLoggedIn);
-  const showUpdate = boolean("Show Update", true);
 
   return (
     <Fragment>
@@ -346,8 +343,7 @@ const renderArticleConfig = ({
             withPullQuote,
             withStandfirst,
             withVideo,
-            withTeasedContent: isTeaser,
-            showUpdate
+            withTeasedContent: isTeaser
           })}
           id={id}
         >
@@ -362,8 +358,7 @@ const renderArticleConfig = ({
             isMeteredExpired,
             scale,
             section,
-            template,
-            showUpdate
+            template
           })}
         </ArticleConfigurator>
       }

@@ -34,8 +34,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     zephrDivs,
     sharingSavingFlag,
     commentingFlag,
-    showAudioPlayer,
-    showUpdate
+    showAudioPlayer
   } = data;
 
   return React.createElement(
@@ -100,8 +99,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               swgProductId,
               getFallbackThumbnailUrl169,
               zephrDivs,
-              showAudioPlayer,
-              showUpdate
+              showAudioPlayer
             })
           );
         }
