@@ -77,7 +77,7 @@ class ArticlePage extends Component {
       receiveChildList,
       commentingConfig,
       isPreview,
-      swgProductId,
+      swgProductId
     } = this.props;
 
     if (error || isLoading) {
