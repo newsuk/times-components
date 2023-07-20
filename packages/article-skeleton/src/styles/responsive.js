@@ -51,7 +51,7 @@ export const BodyContainer = styled.article`
 
 export const UpdateButtonContainer = styled.div`
   position: sticky;
-  bottom: 40px;
+  bottom: 50px;
   display: flex;
   width: 100%;
   justify-content: center;
