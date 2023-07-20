@@ -38,7 +38,7 @@ export const UpdateButtonWithDelay = ({
     };
     const interval = setInterval(async () => {
       (await fetchData()) > updatedTime && setUpdate(true);
-    }, 30000);
+    }, 120000);
 
     return () => clearInterval(interval);
   }, []);
