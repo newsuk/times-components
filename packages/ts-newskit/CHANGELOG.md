@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.67.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.66.0...@times-components/ts-newskit@1.67.0) (2023-07-20)
+
+
+### Features
+
+* **TMRX-1250:** remove update button feature flag ([#3435](https://github.com/newsuk/times-components/issues/3435)) ([b32914a](https://github.com/newsuk/times-components/commit/b32914a4dab11cdecc3b36f8579f679429208227))
+
+
+
+
+
 # [1.66.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.65.1...@times-components/ts-newskit@1.66.0) (2023-07-19)
 
 

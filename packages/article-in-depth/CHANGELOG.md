@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.75.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.74.4...@times-components/article-in-depth@3.75.0) (2023-07-20)
+
+
+### Features
+
+* **TMRX-1250:** remove update button feature flag ([#3435](https://github.com/newsuk/times-components/issues/3435)) ([b32914a](https://github.com/newsuk/times-components/commit/b32914a4dab11cdecc3b36f8579f679429208227))
+
+
+
+
+
 ## [3.74.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.74.3...@times-components/article-in-depth@3.74.4) (2023-07-19)
 
 **Note:** Version bump only for package @times-components/article-in-depth
