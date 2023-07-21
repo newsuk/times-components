@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.67.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.1...@times-components/ts-newskit@1.67.2) (2023-07-21)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** Try to fix breakpoint key issue ([#3440](https://github.com/newsuk/times-components/issues/3440)) ([831c363](https://github.com/newsuk/times-components/commit/831c36339b4b45bc20d8582751b8b58f8c5fb1f5))
+
+
+
+
+
 ## [1.67.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.0...@times-components/ts-newskit@1.67.1) (2023-07-21)
 
 
