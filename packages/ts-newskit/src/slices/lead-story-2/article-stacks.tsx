@@ -25,7 +25,7 @@ export const ArticleStack = ({
   horizontalArticles: LeadArticleProps[];
   horizontalArticleContentWidth?: string;
 }) => {
-  const modifiredHorizontalArticles = horizontalArticles.map(item => ({
+  const modifiedHorizontalArticles = horizontalArticles.map(item => ({
     ...item,
     imageTop: true,
     headlineTypographyPreset: 'editorialHeadline020',
@@ -45,7 +45,7 @@ export const ArticleStack = ({
       columnGap={{ md: 'space040' }}
       overrides={{ marginBlockStart: 'space000' }}
     >
-      {modifiredHorizontalArticles.map(
+      {modifiedHorizontalArticles.map(
         (article: LeadArticleProps, articleIndex, articleArr) => {
           const articleBorder = breakpoint !== 'xs' &&
             breakpoint !== 'sm' &&
