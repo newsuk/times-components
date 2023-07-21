@@ -37,7 +37,7 @@ export interface LeadArticleProps {
     label: string;
     href: string;
   };
-  image?: ImageProps;
+  images?: ImageProps;
   url: string;
   tag?: {
     label: string;
@@ -61,7 +61,7 @@ export const LeadArticle = ({
   flag,
   summary,
   tagL1,
-  image,
+  images,
   url,
   tag,
   imageTop,
@@ -78,26 +78,26 @@ export const LeadArticle = ({
   hideImage
 }: LeadArticleProps) => {
   const imageWithCorrectRatio =
-    image && image.crops && image.crops.find(crop => crop.ratio === '3:2');
+    images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
 
-  const cardImage = image &&
+  const cardImage = images &&
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '' && {
       media: {
         src: imageWithCorrectRatio.url,
-        alt: (image && image.alt) || headline,
+        alt: (images && images.alt) || headline,
         loadingAspectRatio: loadingAspectRatio || imageWithCorrectRatio.ratio
       }
     };
 
   const hasImage =
-    image &&
-    image.crops &&
-    image.crops.length > 0 &&
+    images &&
+    images.crops &&
+    images.crops.length > 0 &&
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
 
-  const hasCaption = image && image.credit;
+  const hasCaption = images && images.credit;
   const headlineTypography = headlineTypographyPreset
     ? headlineTypographyPreset
     : imageTop
@@ -132,7 +132,7 @@ export const LeadArticle = ({
                 marginBlockStart="space020"
                 typographyPreset="utilityMeta010"
               >
-                {image && image.credit}
+                {images && images.credit}
               </TextBlock>
             )}
           </Block>

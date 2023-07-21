@@ -29,7 +29,7 @@ type ImageProps = {
 export interface ArticleProps {
   headline: string;
   url: string;
-  image?: ImageProps;
+  images?: ImageProps;
   tag?: {
     label: string;
     href: string;
@@ -50,7 +50,7 @@ type LayoutProps = {
 };
 
 export const Article = ({
-  image,
+  images,
   headline,
   url,
   tag,
@@ -65,13 +65,13 @@ export const Article = ({
   tagAndFlagMarginBlockStart = 'space040'
 }: ArticleProps) => {
   const imageWithCorrectRatio =
-    image && image.crops && image.crops.find(crop => crop.ratio === '3:2');
+    images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
 
   const cardImage = !hideImage &&
     imageWithCorrectRatio && {
       media: {
         src: imageWithCorrectRatio.url,
-        alt: (image && image.alt) || headline,
+        alt: (images && images.alt) || headline,
         loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2'
       }
     };
@@ -81,9 +81,9 @@ export const Article = ({
     imageRight || hideImage ? 'space000' : articleTitleMarginTop;
 
   const hasImage =
-    image &&
-    image.crops &&
-    image.crops.length > 0 &&
+    images &&
+    images.crops &&
+    images.crops.length > 0 &&
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
 
@@ -131,16 +131,16 @@ export const Article = ({
 
       {hasImage && !hideImage && <CardMediaComponent {...cardImage} />}
       <CardContent>
-        {image &&
+        {images &&
           !imageRight &&
-          image.credit &&
+          images.credit &&
           !hideImage && (
             <TextBlock
               marginBlockStart="space020"
               stylePreset="inkSubtle"
               typographyPreset="utilityMeta010"
             >
-              {image && image.credit}
+              {images && images.credit}
             </TextBlock>
           )}
         <Layout imageRight={imageRight || false}>

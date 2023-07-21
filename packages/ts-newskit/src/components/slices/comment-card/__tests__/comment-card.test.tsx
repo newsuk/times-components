@@ -7,7 +7,7 @@ const renderComponent = (props: CommentCardProps) =>
   render(<CommentCard {...props} />);
 
 const defaultProps = {
-  image: {
+  images: {
     alt: '',
     credit: 'Credit',
     crops: [
@@ -76,7 +76,7 @@ it('should render the correct image', () => {
 
 it('should render the correct text, without Heading', () => {
   renderComponent({
-    image: {
+    images: {
       alt: '',
       credit: 'Credit',
       crops: [

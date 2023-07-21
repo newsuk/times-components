@@ -7,7 +7,7 @@
     },
     "headline": "Sarcacens an inclusive club? They didnt look out for me",
     "summary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
-    "image": {
+    "images": {
       "alt": "",
       "credit": "Credit",
       "crops": [
@@ -47,7 +47,7 @@
   },
   "articles": [
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -86,7 +86,7 @@
       "flag": ""
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -125,7 +125,7 @@
       "flag": ""
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -164,7 +164,7 @@
       "flag": ""
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -205,7 +205,7 @@
   ],
   "stackedModule1Articles": [
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -244,7 +244,7 @@
       "flag": ""
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -283,7 +283,7 @@
       "flag": "Flag"
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -322,7 +322,7 @@
       "flag": ""
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -361,7 +361,7 @@
       "flag": "Flag"
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -400,7 +400,7 @@
       "flag": ""
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -439,7 +439,7 @@
       "flag": "Flag"
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -478,7 +478,7 @@
       "flag": ""
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -521,7 +521,7 @@
     {
       "byline": "Deborah Haynes",
       "headline": "Now is Willis’s chance to show he’s got more to offer than Curry",
-      "image": {
+      "images": {
         "alt": "",
         "credit": "Credit",
         "crops": [
@@ -556,7 +556,7 @@
     {
       "byline": "Deborah Haynes 2",
       "headline": "Now is Willis’s chance to show he’s got more to offer than Curry",
-      "image": {
+      "images": {
         "alt": "",
         "credit": "Credit",
         "crops": [
@@ -596,7 +596,7 @@
     },
     "articles": [
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [
@@ -635,7 +635,7 @@
         "flag": ""
       },
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [
@@ -674,7 +674,7 @@
         "flag": ""
       },
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [
@@ -721,7 +721,7 @@
     },
     "articles": [
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [
@@ -760,7 +760,7 @@
         "flag": ""
       },
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [
@@ -799,7 +799,7 @@
         "flag": ""
       },
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [
@@ -846,7 +846,7 @@
     },
     "articles": [
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [
@@ -885,7 +885,7 @@
         "flag": ""
       },
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [
@@ -924,7 +924,7 @@
         "flag": ""
       },
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [
@@ -971,7 +971,7 @@
     },
     "articles": [
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [
@@ -1010,7 +1010,7 @@
         "flag": ""
       },
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [
@@ -1049,7 +1049,7 @@
         "flag": ""
       },
       {
-        "image": {
+        "images": {
           "alt": "",
           "credit": "",
           "crops": [

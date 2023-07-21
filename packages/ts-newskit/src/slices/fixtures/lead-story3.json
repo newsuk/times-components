@@ -1,7 +1,7 @@
 {
   "articles": [
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -40,7 +40,7 @@
       "flag": "Flag1"
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -79,7 +79,7 @@
       "flag": ""
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -118,7 +118,7 @@
       "flag": ""
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -157,7 +157,7 @@
       "flag": "Flag4"
     },
     {
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": [
@@ -203,7 +203,7 @@
         "label": "",
         "href": ""
       },
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": []
@@ -223,7 +223,7 @@
         "label": "",
         "href": ""
       },
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": []
@@ -243,7 +243,7 @@
         "label": "",
         "href": ""
       },
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": []
@@ -263,7 +263,7 @@
         "label": "",
         "href": ""
       },
-      "image": {
+      "images": {
         "alt": "",
         "credit": "",
         "crops": []
@@ -284,7 +284,7 @@
       "label": "",
       "href": ""
     },
-    "image": {
+    "images": {
       "alt": "",
       "credit": "Credit",
       "crops": [

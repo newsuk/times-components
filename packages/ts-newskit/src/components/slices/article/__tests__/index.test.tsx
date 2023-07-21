@@ -12,7 +12,7 @@ jest.mock('newskit', () => ({
 const renderComponent = (props: ArticleProps) => render(<Article {...props} />);
 
 const defaultProps = {
-  image: {
+  images: {
     alt: 'This is ALT Text',
     credit: '',
     crops: [
@@ -99,7 +99,7 @@ describe('Render Article List Item', () => {
 
   it('items should render TITLE text if ALT is missing', () => {
     renderComponent({
-      image: {
+      images: {
         alt: '',
         credit: '',
         crops: [

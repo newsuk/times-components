@@ -14,20 +14,20 @@ type ImageProps = {
 };
 
 export interface CommentCardProps {
-  image?: ImageProps;
+  images?: ImageProps;
   byline: string;
   headline: string;
   href: string;
 }
 
 export const CommentCard = ({
-  image,
+  images,
   byline,
   headline,
   href
 }: CommentCardProps) => {
   const imageWithCorrectRatio =
-    image && image.crops && image.crops.find(crop => crop.ratio === '1:1');
+    images && images.crops && images.crops.find(crop => crop.ratio === '1:1');
 
   return (
     <CardComposable
@@ -41,7 +41,7 @@ export const CommentCard = ({
         <CardMedia
           media={{
             src: imageWithCorrectRatio.url,
-            alt: (image && image.alt) || byline,
+            alt: (images && images.alt) || byline,
             loadingAspectRatio: imageWithCorrectRatio.ratio || '1:1',
             width: '77px',
             overrides: { stylePreset: 'imageCircle' }
