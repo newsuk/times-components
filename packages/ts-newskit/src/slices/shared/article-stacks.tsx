@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, BreakpointKeys, Divider, GridLayout } from 'newskit';
+import { Block, Divider, GridLayout, BreakpointKeys } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { StackItem, StyledDivider, ScrollContainer } from '../shared-styles';
 import { ComposedArticleStack } from './composed-article-stack';
