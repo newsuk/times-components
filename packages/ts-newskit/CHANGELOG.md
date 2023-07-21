@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.67.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.2...@times-components/ts-newskit@1.67.3) (2023-07-21)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** swap horizontal article stack with vertical ([#3439](https://github.com/newsuk/times-components/issues/3439)) ([77a83d3](https://github.com/newsuk/times-components/commit/77a83d370062e76e8492445098d91cadce052917))
+
+
+
+
+
 ## [1.67.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.1...@times-components/ts-newskit@1.67.2) (2023-07-21)
 
 
