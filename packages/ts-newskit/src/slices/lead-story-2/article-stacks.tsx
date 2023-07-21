@@ -1,5 +1,12 @@
 import React from 'react';
-import { Block, Divider, GridLayout, Stack, Visible, BreakpointKeys } from 'newskit';
+import {
+  Block,
+  Divider,
+  GridLayout,
+  Stack,
+  Visible,
+  BreakpointKeys
+} from 'newskit';
 import {
   LeadArticle,
   LeadArticleProps
