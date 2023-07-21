@@ -41,7 +41,7 @@ commands:
         - run:
             name: 'Install Lerna'
             command:
-              npm i lerna
+              yarn add lerna
 
 jobs:
     setup:
