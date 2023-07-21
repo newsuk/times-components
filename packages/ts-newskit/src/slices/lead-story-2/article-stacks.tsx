@@ -7,8 +7,6 @@ import {
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { RelativeBlockItem } from '../shared-styles';
 
-type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-
 export const ArticleStack = ({
   verticalArticles,
   breakpoint,
@@ -16,7 +14,7 @@ export const ArticleStack = ({
   horizontalArticleContentWidth
 }: {
   verticalArticles: LeadArticleProps[];
-  breakpoint: Breakpoint;
+  breakpoint: string;
   horizontalArticles: LeadArticleProps[];
   horizontalArticleContentWidth?: string;
 }) => {
