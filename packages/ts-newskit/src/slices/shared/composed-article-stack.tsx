@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Divider, Hidden, Visible } from 'newskit';
+import { Block, Divider, Hidden, Visible, BreakpointKeys } from 'newskit';
 import { ArticleProps } from '../../components/slices/article';
 import { ArticleStackLarge, ArticleStackSmall } from './article-stacks';
 import {
@@ -9,7 +9,7 @@ import {
 
 export interface LeadStory1Props {
   articles: ArticleProps[];
-  breakpoint: string;
+  breakpoint: BreakpointKeys;
 }
 
 export const ComposedArticleStack = ({
