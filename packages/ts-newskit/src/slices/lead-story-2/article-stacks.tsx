@@ -25,26 +25,27 @@ export const ArticleStack = ({
   horizontalArticles: LeadArticleProps[];
   horizontalArticleContentWidth?: string;
 }) => {
-  const modifiedVerticalArticles = verticalArticles.map(item => ({
+  const modifiedHorizontalArticles = horizontalArticles.map(item => ({
     ...item,
     imageTop: true,
     headlineTypographyPreset: 'editorialHeadline020',
     hasTopBorder: false
   }));
 
-  const modifiredHorizontalArticles = horizontalArticles.map(item => ({
+  const modifiedVerticalArticles = verticalArticles.map(item => ({
     ...item,
     imageTop: true,
     headlineTypographyPreset: 'editorialHeadline020',
-    hasTopBorder: false
+    hasTopBorder: false,
+    hideImage: true
   }));
-  const articleGridVertical = (
+  const articleStackHorizontal = (
     <GridLayout
       columns={{ md: '1px 1fr 1px 1fr' }}
       columnGap={{ md: 'space040' }}
       overrides={{ marginBlockStart: 'space000' }}
     >
-      {modifiedVerticalArticles.map(
+      {modifiedHorizontalArticles.map(
         (article: LeadArticleProps, articleIndex, articleArr) => {
           const articleBorder = breakpoint !== 'xs' &&
             breakpoint !== 'sm' &&
@@ -81,13 +82,13 @@ export const ArticleStack = ({
     </GridLayout>
   );
 
-  const articleStackHorizontal = (
+  const articleGridVertical = (
     <GridLayout
       columns={{ md: `${horizontalArticleContentWidth || '1fr'}` }}
       columnGap={{ md: 'space060' }}
       style={{ marginBlock: 'space000' }}
     >
-      {modifiredHorizontalArticles.map(
+      {modifiedVerticalArticles.map(
         (article: LeadArticleProps, articleIndex: number) => {
           const articleBorder = articleIndex !== 0 && (
             <Divider
@@ -122,8 +123,8 @@ export const ArticleStack = ({
         breakpoint === 'xs' || breakpoint === 'sm' ? 'space000' : 'space040'
       }
     >
-      {articleStackHorizontal}
       {articleGridVertical}
+      {articleStackHorizontal}
     </Stack>
   );
 };

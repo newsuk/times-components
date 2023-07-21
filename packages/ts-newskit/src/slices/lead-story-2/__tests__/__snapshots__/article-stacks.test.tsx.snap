@@ -211,11 +211,6 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </picture>
               </div>
-              <p
-                class="css-9pk24b"
-              >
-                Credit
-              </p>
             </div>
             <div
               class="css-gpke1l"
@@ -318,11 +313,6 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </picture>
               </div>
-              <p
-                class="css-9pk24b"
-              >
-                Credit
-              </p>
             </div>
             <div
               class="css-gpke1l"
@@ -599,11 +589,6 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </picture>
               </div>
-              <p
-                class="css-9pk24b"
-              >
-                Credit
-              </p>
             </div>
             <div
               class="css-gpke1l"
@@ -706,11 +691,6 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </picture>
               </div>
-              <p
-                class="css-9pk24b"
-              >
-                Credit
-              </p>
             </div>
             <div
               class="css-gpke1l"
