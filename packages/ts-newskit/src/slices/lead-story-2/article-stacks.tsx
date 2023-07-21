@@ -1,18 +1,13 @@
 import React from 'react';
-import {
-  Block,
-  BreakpointKeys,
-  Divider,
-  GridLayout,
-  Stack,
-  Visible
-} from 'newskit';
+import { Block, Divider, GridLayout, Stack, Visible } from 'newskit';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { RelativeBlockItem } from '../shared-styles';
+
+type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
 export const ArticleStack = ({
   verticalArticles,
@@ -21,7 +16,7 @@ export const ArticleStack = ({
   horizontalArticleContentWidth
 }: {
   verticalArticles: LeadArticleProps[];
-  breakpoint: BreakpointKeys;
+  breakpoint: Breakpoint;
   horizontalArticles: LeadArticleProps[];
   horizontalArticleContentWidth?: string;
 }) => {

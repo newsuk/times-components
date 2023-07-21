@@ -1,5 +1,5 @@
 import { Block, Divider, Stack, useBreakpointKey, Visible } from 'newskit';
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   LeadArticle,
   LeadArticleProps
@@ -23,11 +23,14 @@ export const LeadStory2 = ({
   verticalArticles,
   horizontalArticles
 }: LeadStory2Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState('xs')
+  const [currentBreakpoint, setBreakpoint] = useState('xs');
   const breakpointKey = useBreakpointKey();
-  useEffect(() => {
-    setBreakpoint(breakpointKey)
-  }, [breakpointKey])
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
 
   const modifedArticles =
     currentBreakpoint === 'xl'
@@ -37,7 +40,8 @@ export const LeadStory2 = ({
         }))
       : articles;
 
-  const screenXsAndSm = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
+  const screenXsAndSm =
+    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
 
   const modifiedLeadArticle = {
     ...leadArticle,
