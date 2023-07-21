@@ -1,11 +1,11 @@
 import React from 'react';
 import {
   Block,
-  BreakpointKeys,
   Divider,
   GridLayout,
   Stack,
-  Visible
+  Visible,
+  BreakpointKeys
 } from 'newskit';
 import {
   LeadArticle,
