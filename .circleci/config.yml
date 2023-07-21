@@ -35,6 +35,13 @@ commands:
                   key: yarn-packages-{{ checksum "yarn.lock" }}
                   paths:
                       - ~/.cache/yarn
+    install-lerna:
+      description: 'Install Lerna'
+      steps:
+        - run:
+            name: 'Install Lerna'
+            command:
+              npm i lerna
 
 jobs:
     setup:
@@ -44,6 +51,7 @@ jobs:
             - restore-yarn
             - install-dependencies
             - save-yarn
+            - install-lerna
             - persist_to_workspace:
                 root: ./
                 paths:
