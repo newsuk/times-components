@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Divider, GridLayout } from 'newskit';
+import { Block, Divider, GridLayout, BreakpointKeys } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { StackItem, StyledDivider, ScrollContainer } from '../shared-styles';
 import { ComposedArticleStack } from './composed-article-stack';
@@ -9,7 +9,7 @@ export const ArticleStackLarge = ({
   breakpoint
 }: {
   articles: ArticleProps[];
-  breakpoint: string;
+  breakpoint: BreakpointKeys;
 }) => {
   const articleGrid = (
     <GridLayout
@@ -77,7 +77,7 @@ export const ArticleStackSmall = ({
   isFullWidth: boolean;
   hideImage: boolean;
   hasTopBorder: boolean;
-  breakpoint: string;
+  breakpoint: BreakpointKeys;
 }) => {
   const articleGrid = (
     <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space030' }}>
@@ -119,7 +119,7 @@ export const ArticleStackLeadStory = ({
 }: {
   mdWidth: string;
   modifedArticles: ArticleProps[];
-  breakpoint: string;
+  breakpoint: BreakpointKeys;
 }) => {
   return (
     <StackItem

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, Divider, GridLayout, Stack, Visible } from 'newskit';
+import { Block, Divider, GridLayout, Stack, Visible, BreakpointKeys } from 'newskit';
 import {
   LeadArticle,
   LeadArticleProps
@@ -14,7 +14,7 @@ export const ArticleStack = ({
   horizontalArticleContentWidth
 }: {
   verticalArticles: LeadArticleProps[];
-  breakpoint: string;
+  breakpoint: BreakpointKeys;
   horizontalArticles: LeadArticleProps[];
   horizontalArticleContentWidth?: string;
 }) => {
