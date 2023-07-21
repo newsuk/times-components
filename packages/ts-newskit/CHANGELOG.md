@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.67.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.0...@times-components/ts-newskit@1.67.1) (2023-07-21)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** change image props ([#3437](https://github.com/newsuk/times-components/issues/3437)) ([935a0ee](https://github.com/newsuk/times-components/commit/935a0eef85bf2932d87bc8ae2887a8fbc1deed7c))
+
+
+
+
+
 # [1.67.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.66.0...@times-components/ts-newskit@1.67.0) (2023-07-20)
 
 
