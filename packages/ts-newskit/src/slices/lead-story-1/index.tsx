@@ -110,9 +110,9 @@ export const LeadStory1 = ({
                     ? 'space020'
                     : 'space040',
                   marginBlockEnd:
-                    singleArticle.image &&
-                    singleArticle.image.crops &&
-                    singleArticle.image.crops.length > 0
+                    singleArticle.images &&
+                    singleArticle.images.crops &&
+                    singleArticle.images.crops.length > 0
                       ? 'space040'
                       : 'space000'
                 }}

@@ -19,7 +19,7 @@ This takes in a series of props, as below, to display journalists details, the c
 ## Code Example
 ```
 <CommentCard
-  "image": {
+  "images": {
     "alt": "",
     "credit": "Credit",
     "crops": [
@@ -58,14 +58,14 @@ This takes in a series of props, as below, to display journalists details, the c
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const CommentCardStory = ({ image, headline, byline, href }) => (
+export const CommentCardStory = ({ images, headline, byline, href }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <CommentCard {...{ image, headline, byline, href }} />
+    <CommentCard {...{ images, headline, byline, href }} />
   </NewsKitProvider>
 );
 
 <Story name="CommentCard" args={{
-  "image": {
+  "images": {
     "alt": "",
     "credit": "Credit",
     "crops": [
