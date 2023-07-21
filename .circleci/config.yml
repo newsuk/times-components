@@ -90,6 +90,7 @@ jobs:
             - checkout
             - attach_workspace:
                   at: ./
+            - install-lerna
             - run:
                   name: Run No Specific Platform Tests
                   command: |
@@ -99,6 +100,7 @@ jobs:
         executor: node
         steps:
             - checkout
+            - install-lerna
             - attach_workspace:
                   at: ./
             - run:
@@ -111,6 +113,7 @@ jobs:
         executor: node
         steps:
             - checkout
+            - install-lerna
             - attach_workspace:
                   at: ./
             - run:
@@ -171,6 +174,7 @@ jobs:
             - checkout
             - attach_workspace:
                   at: ./
+            - install-lerna
             - run:
                   name: Publish to npm
                   command: |
