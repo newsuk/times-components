@@ -146,7 +146,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
         >
           <hr
             aria-hidden="true"
-            class="css-1rbgup8"
+            class="css-wd6tj"
             data-testid="divider"
           />
         </div>
@@ -157,7 +157,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             class="css-diffbd"
           >
             <a
-              class="css-u57k3c"
+              class="css-bxykrz"
               href="#"
               role="link"
             >
@@ -1230,7 +1230,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-1rbgup8"
+            class="css-wd6tj"
             data-testid="divider"
           />
         </div>
@@ -1241,7 +1241,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="css-diffbd"
           >
             <a
-              class="css-u57k3c"
+              class="css-bxykrz"
               href="#"
               role="link"
             >
@@ -2095,7 +2095,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-1rbgup8"
+            class="css-wd6tj"
             data-testid="divider"
           />
         </div>
@@ -2106,7 +2106,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="css-diffbd"
           >
             <a
-              class="css-u57k3c"
+              class="css-bxykrz"
               href="#"
               role="link"
             >
@@ -3123,7 +3123,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-1rbgup8"
+            class="css-wd6tj"
             data-testid="divider"
           />
         </div>
@@ -3134,7 +3134,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="css-diffbd"
           >
             <a
-              class="css-u57k3c"
+              class="css-bxykrz"
               href="#"
               role="link"
             >

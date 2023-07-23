@@ -18,7 +18,8 @@ export const ArticleStack = ({
 }: ArticlesProps) => {
   const modifiedArticles = leadArticles.map(leadArticle => ({
     ...leadArticle,
-    imageTop: true
+    imageTop: true,
+    hideImage: true
   }));
 
   return (

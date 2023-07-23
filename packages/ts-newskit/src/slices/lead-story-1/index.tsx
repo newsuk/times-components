@@ -74,7 +74,13 @@ export const LeadStory1 = ({
       : 'editorialHeadline030'
   };
 
-  const marginTop = singleArticle
+  const modifedSingleArticle = {
+    ...singleArticle,
+    imageTop: true,
+    hideImage: true
+  };
+
+  const marginTop = modifedSingleArticle
     ? 'space040'
     : !!articlesWithListItems.listData
       ? 'space020'
@@ -100,7 +106,7 @@ export const LeadStory1 = ({
         }}
       >
         <LeadArticle {...modifiedArticlesWithUnorderedList} />
-        {singleArticle && (
+        {modifedSingleArticle && (
           <BlockItem>
             <FullWidthBlock>
               <StyledDivider
@@ -109,16 +115,11 @@ export const LeadStory1 = ({
                   marginBlockStart: !!articlesWithListItems.listData
                     ? 'space020'
                     : 'space040',
-                  marginBlockEnd:
-                    singleArticle.images &&
-                    singleArticle.images.crops &&
-                    singleArticle.images.crops.length > 0
-                      ? 'space040'
-                      : 'space000'
+                  marginBlockEnd: 'space040'
                 }}
               />
             </FullWidthBlock>
-            <Article {...singleArticle} />
+            <Article {...modifedSingleArticle} />
           </BlockItem>
         )}
         {groupedArticles && (
