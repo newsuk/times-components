@@ -76,7 +76,6 @@ export const LeadStory1 = ({
 
   const modifedSingleArticle = {
     ...singleArticle,
-    imageTop: true,
     hideImage: true
   };
 
