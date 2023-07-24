@@ -6,12 +6,13 @@ import Context from "@times-components/context";
 import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
 
+const SYNDICATED_ARTICLE_IDS = ['37a19ac4-1cbb-11ee-8198-bf96b6365670']
+
 // Get the section for an article, preferring it not to be News
 function reduceTilesToTitles(tiles, prefix = "") {
   if (!tiles) {
     return null;
   }
-
   const slices = tiles.reduce((acc, tile) => {
     acc.push(...tile.slices);
     return acc;
@@ -20,29 +21,23 @@ function reduceTilesToTitles(tiles, prefix = "") {
     acc.push(...slice.sections);
     return acc;
   }, []);
-
   return sections.map(section => prefix + section.title);
 }
 function getSectionName(article) {
   const { tiles } = article;
   const titles = reduceTilesToTitles(tiles);
-
   if (titles == null) {
     return null;
   }
-
   const nonNews = titles.filter(title => title !== "News");
-
   return nonNews.length ? nonNews[0] : "News";
 }
 function getSectionNameList(article) {
   const { tiles } = article;
   const titles = reduceTilesToTitles(tiles, "Section:");
-
   if (titles == null) {
     return null;
   }
-
   const uniqueSectionsArr = titles.filter(
     (item, pos, self) => self.indexOf(item) === pos
   );
@@ -50,7 +45,6 @@ function getSectionNameList(article) {
   const uniqueSections = uniqueSectionsArr
     .slice(0, maxUniqueSections)
     .toString();
-
   return uniqueSections;
 }
 function getIsLiveBlogExpiryTime(articleFlags = []) {
@@ -90,11 +84,9 @@ function getAuthorAsText(article) {
   }, []);
   return renderTreeAsText({ children });
 }
-
 function getAuthors({ bylines }) {
   return bylines.map(byline => byline.author).filter(author => author);
 }
-
 function getAuthorSchema(article) {
   const { bylines } = article;
   return bylines
@@ -109,59 +101,44 @@ function getAuthorSchema(article) {
       })
     : [];
 }
-
 const PUBLICATION_NAMES = {
   SUNDAYTIMES: "The Sunday Times",
   TIMES: "The Times"
 };
-
 const get169CropUrl = asset => get(asset, "crop169.url", null);
-
 const getVideoLeadAssetUrl = article =>
   get169CropUrl(
     get(article, "leadAsset.posterImage", get(article, "leadAsset", null))
   );
-
 const getImageLeadAssetUrl = article =>
   get169CropUrl(get(article, "leadAsset", null));
-
 const getArticleLeadAssetUrl = article =>
   (article.hasVideo ? getVideoLeadAssetUrl : getImageLeadAssetUrl)(article);
-
 const getThumbnailUrlFromImage = article => {
   const tileUrl =
     article.tiles &&
     article.tiles.find(tile => get(tile.leadAsset, "crop169.url", null));
-
   if (tileUrl) {
     return tileUrl;
   }
-
   const listingAssetUrl = get(article.listingAsset, "crop169.url", null);
-
   if (listingAssetUrl) {
     return listingAssetUrl;
   }
-
   return get(article.leadAsset, "crop169.url", null);
 };
-
 const getThumbnailUrl = article => {
   const { hasVideo, leadAsset } = article;
   const thumbnailUrl = hasVideo
     ? getVideoLeadAssetUrl(article)
     : getThumbnailUrlFromImage(article);
-
   if (thumbnailUrl) return thumbnailUrl;
-
   if (!leadAsset) return null;
-
   const { crop32, crop1251, crop11, crop45, crop23, crop2251 } =
     leadAsset && leadAsset.posterImage ? leadAsset.posterImage : leadAsset;
   const crop = crop32 || crop1251 || crop11 || crop45 || crop23 || crop2251;
   return crop ? crop.url : "";
 };
-
 const getLiveBlogUpdates = (article, publisher, author) => {
   const updates = [];
   if (article === null) {
@@ -176,7 +153,6 @@ const getLiveBlogUpdates = (article, publisher, author) => {
     const acronym = acronymMatch === null ? "" : acronymMatch.join("");
     return `u_${onlyNumbers}${acronym}`;
   };
-
   if (content !== undefined) {
     let update;
     const loopContent = contentObj => {
@@ -237,15 +213,12 @@ const getLiveBlogUpdates = (article, publisher, author) => {
       }
     };
     loopContent(content);
-
     if (update !== undefined) {
       updates.push(update);
     }
   }
-
   return updates;
 };
-
 function Head({
   article,
   logoUrl,
@@ -266,7 +239,6 @@ function Head({
     keywords,
     url
   } = article;
-
   const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
   const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
   const isLiveBlogArticle = getIsLiveBlog(article.expirableFlags);
@@ -282,7 +254,6 @@ function Head({
   const thumbnailUrl =
     getThumbnailUrl(article) ||
     (getFallbackThumbnailUrl169 ? getFallbackThumbnailUrl169() : null);
-
   const leadassetUrl =
     appendToImageURL(getArticleLeadAssetUrl(article), "resize", 1200) ||
     thumbnailUrl;
@@ -290,9 +261,7 @@ function Head({
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = publishedTime && new Date(publishedTime).toISOString();
-
   const dateModified = updatedTime || datePublished;
-
   const defaultAuthorSchema = {
     "@type": "Organization",
     name: "The Times"
@@ -316,7 +285,6 @@ function Head({
     publisherSchema,
     authorSchema
   );
-
   const jsonLD = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
@@ -351,7 +319,6 @@ function Head({
     articleSection: sectionname,
     keywords: sectionNameList
   };
-
   if (swgProductId) {
     jsonLD.isPartOf = {
       "@type": ["CreativeWork", "Product"],
@@ -373,7 +340,6 @@ function Head({
         contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
       }
     : null;
-
   const liveBlogJsonLD = {
     "@context": "https://schema.org",
     "@type": "LiveBlogPosting",
@@ -399,6 +365,7 @@ function Head({
     liveBlogUpdate: liveBlogUpdateSchema,
     articleSection: sectionname
   };
+  const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id)
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
@@ -406,12 +373,12 @@ function Head({
         return (
           <Helmet encodeSpecialCharacters={false}>
             <title>{title}</title>
+            {isSyndicatedArticle && <meta name="robots" content="noindex" />}
             <meta name="robots" content="max-image-preview:large" />
             <meta content={title} name="article:title" />
             <meta content={publication} name="article:publication" />
             {desc && <meta content={desc} name="description" />}
             {authorName && <meta content={authorName} name="author" />}
-
             <meta content={title} property="og:title" />
             <meta content="article" property="og:type" />
             <meta content={makeArticleUrl(article)} property="og:url" />
@@ -420,7 +387,6 @@ function Head({
               <meta content={leadassetUrl} property="og:image" />
             )}
             {hasVideo && <meta name="robots" content="max-video-preview:-1" />}
-
             <meta content={title} name="twitter:title" />
             <meta content="summary_large_image" name="twitter:card" />
             <meta content={makeArticleUrl(article)} name="twitter:url" />
@@ -428,7 +394,6 @@ function Head({
             {leadassetUrl && (
               <meta content={leadassetUrl} name="twitter:image" />
             )}
-
             {isLiveBlogArticle ? (
               <script type="application/ld+json">
                 {JSON.stringify(liveBlogJsonLD)}
@@ -438,7 +403,6 @@ function Head({
                 {JSON.stringify(jsonLD)}
               </script>
             )}
-
             {videoJsonLD && (
               <script type="application/ld+json">
                 {JSON.stringify(videoJsonLD)}
@@ -450,7 +414,6 @@ function Head({
     </Context.Consumer>
   );
 }
-
 Head.propTypes = {
   article: PropTypes.shape({
     bylines: PropTypes.array,
@@ -468,9 +431,7 @@ Head.propTypes = {
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
   swgProductId: PropTypes.string
 };
-
 Head.defaultProps = {
   swgProductId: null
 };
-
 export default Head;
