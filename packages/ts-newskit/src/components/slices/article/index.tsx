@@ -151,6 +151,7 @@ export const Article = ({
               typographyPreset: titleTypographyPreset,
               marginBlockStart: titleMarginBlockStart
             }}
+            external={false}
           >
             {headline}
           </CardHeadlineLink>
