@@ -6,7 +6,8 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 20px 33px 19px;
+  padding: 38px 33px 34px;
+  border: 1px solid ${colours.functional.primary};
 `;
 
 export const Title = styled.div`
