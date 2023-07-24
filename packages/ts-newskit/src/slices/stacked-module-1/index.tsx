@@ -1,5 +1,5 @@
-import { Divider, GridLayout, useBreakpointKey } from 'newskit';
-import React from 'react';
+import { Divider, GridLayout, useBreakpointKey, BreakpointKeys } from 'newskit';
+import React, { useState, useEffect } from 'react';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { CustomStackLayout } from '../shared';
@@ -82,8 +82,15 @@ const articleStack = ({
 );
 
 export const StackModule1 = ({ articles }: StackModule1Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
-  const isMob = breakpointKey === 'xs' || breakpointKey === 'sm';
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
+  const isMob = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
   const articlesTop = articles.slice(0, 4);
   const articlesBottom = articles.slice(4);
 
