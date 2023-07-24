@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.67.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.4...@times-components/ts-newskit@1.67.5) (2023-07-24)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** try to fix image flashing ([#3447](https://github.com/newsuk/times-components/issues/3447)) ([83fe818](https://github.com/newsuk/times-components/commit/83fe81806751ad629b056a6e410c87d35f6a1bb3))
+
+
+
+
+
 ## [1.67.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.3...@times-components/ts-newskit@1.67.4) (2023-07-24)
 
 
