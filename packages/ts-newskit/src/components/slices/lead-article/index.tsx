@@ -78,7 +78,10 @@ export const LeadArticle = ({
   hideImage
 }: LeadArticleProps) => {
   const imageWithCorrectRatio =
-    images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
+    images && images.crops
+      ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
+        images.crops.find(crop => crop.ratio === '3:2')
+      : null;
 
   const cardImage = images &&
     imageWithCorrectRatio &&
@@ -86,7 +89,7 @@ export const LeadArticle = ({
       media: {
         src: imageWithCorrectRatio.url,
         alt: (images && images.alt) || headline,
-        loadingAspectRatio: loadingAspectRatio || imageWithCorrectRatio.ratio
+        loadingAspectRatio: imageWithCorrectRatio.ratio
       }
     };
 
