@@ -1,4 +1,11 @@
-import { Block, Divider, Hidden, useBreakpointKey, Visible, BreakpointKeys } from 'newskit';
+import {
+  Block,
+  Divider,
+  Hidden,
+  useBreakpointKey,
+  Visible,
+  BreakpointKeys
+} from 'newskit';
 import React, { useState, useEffect } from 'react';
 import {
   LeadArticle,
@@ -39,7 +46,8 @@ export const LeadStory3 = ({
         }))
       : articles;
 
-  const screenXsAndSm = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
+  const screenXsAndSm =
+    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
 
   const modifedLeadArticle = {
     ...leadArticle,
