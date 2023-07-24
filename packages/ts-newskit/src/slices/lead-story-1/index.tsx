@@ -44,7 +44,7 @@ export const LeadStory1 = ({
 }: LeadStory1Props) => {
   const breakpointKey = useBreakpointKey();
   const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
-  const modifedArticles =
+  const modifiedArticles =
     breakpointKey === 'xl'
       ? articles.map(article => ({
           ...article,
@@ -65,7 +65,7 @@ export const LeadStory1 = ({
     showTagL1: false
   };
 
-  const modifedLeadArticle = {
+  const modifiedLeadArticle = {
     ...leadArticle,
     hasTopBorder: false,
     imageTop: true,
@@ -74,12 +74,12 @@ export const LeadStory1 = ({
       : 'editorialHeadline030'
   };
 
-  const modifedSingleArticle = {
+  const modifiedSingleArticle = {
     ...singleArticle,
     hideImage: true
   };
 
-  const marginTop = modifedSingleArticle
+  const marginTop = modifiedSingleArticle
     ? 'space040'
     : !!articlesWithListItems.listData
       ? 'space020'
@@ -105,7 +105,7 @@ export const LeadStory1 = ({
         }}
       >
         <LeadArticle {...modifiedArticlesWithUnorderedList} />
-        {modifedSingleArticle && (
+        {modifiedSingleArticle && (
           <BlockItem>
             <FullWidthBlock>
               <StyledDivider
@@ -118,7 +118,7 @@ export const LeadStory1 = ({
                 }}
               />
             </FullWidthBlock>
-            <Article {...modifedSingleArticle} />
+            <Article {...modifiedSingleArticle} />
           </BlockItem>
         )}
         {groupedArticles && (
@@ -169,7 +169,7 @@ export const LeadStory1 = ({
             />
           </Visible>
           <LeadStoryLayout>
-            <LeadArticle {...modifedLeadArticle} />
+            <LeadArticle {...modifiedLeadArticle} />
           </LeadStoryLayout>
           <Visible md lg xl>
             <LeadStoryDivider
@@ -198,14 +198,14 @@ export const LeadStory1 = ({
       {screenXsAndSm ? (
         <BlockItem>
           <ComposedArticleStack
-            articles={modifedArticles}
+            articles={modifiedArticles}
             breakpoint={breakpointKey}
           />
         </BlockItem>
       ) : (
         <ArticleStackLeadStory
           mdWidth="722px"
-          modifedArticles={modifedArticles}
+          modifedArticles={modifiedArticles}
           breakpoint={breakpointKey}
         />
       )}

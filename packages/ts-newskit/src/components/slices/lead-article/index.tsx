@@ -103,24 +103,24 @@ export const LeadArticle = ({
     : imageTop
       ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
       : 'editorialHeadline040';
-  const displayImageAtTop = imageTop || hideImage;
+  const displayContentVertical = imageTop || hideImage;
 
   return (
     <CardComposable
       areas={{
-        xs: displayImageAtTop
+        xs: displayContentVertical
           ? `media
              content`
           : `content 
              media`,
-        md: displayImageAtTop
+        md: displayContentVertical
           ? `media 
              content`
           : `content media`
       }}
       columnGap="space040"
       columns={{
-        md: displayImageAtTop ? '100%' : `${contentWidth || '260px'} auto`
+        md: displayContentVertical ? '100%' : `${contentWidth || '260px'} auto`
       }}
     >
       {hasImage &&
