@@ -75,7 +75,7 @@ export const LeadStory3 = ({
       <StackItem
         $width={{
           xs: '100%',
-          md: '292px'
+          md: '260px'
         }}
       >
         <ArticleStack
@@ -122,7 +122,7 @@ export const LeadStory3 = ({
         </BlockItem>
       ) : (
         <ArticleStackLeadStory
-          mdWidth="752px"
+          mdWidth="722px"
           modifedArticles={modifedArticles}
           breakpoint={breakpointKey}
         />
