@@ -1,5 +1,5 @@
-import { GridLayout, useBreakpointKey } from 'newskit';
-import React from 'react';
+import { GridLayout, useBreakpointKey, BreakpointKeys } from 'newskit';
+import React, { useState, useEffect } from 'react';
 import {
   SliceHeader,
   SliceHeaderProps
@@ -15,8 +15,15 @@ export interface ContentBucket2Props {
 }
 
 export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
-  const isMob = breakpointKey === 'xs' || breakpointKey === 'sm';
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
+  const isMob = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
 
   return (
     <CustomStackLayout>

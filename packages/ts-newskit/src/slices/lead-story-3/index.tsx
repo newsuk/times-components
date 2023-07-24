@@ -1,5 +1,12 @@
-import { Block, Divider, Hidden, useBreakpointKey, Visible } from 'newskit';
-import React from 'react';
+import {
+  Block,
+  Divider,
+  Hidden,
+  useBreakpointKey,
+  Visible,
+  BreakpointKeys
+} from 'newskit';
+import React, { useState, useEffect } from 'react';
 import {
   LeadArticle,
   LeadArticleProps
@@ -22,17 +29,25 @@ export const LeadStory3 = ({
   articles,
   leadArticles
 }: LeadStory3Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
 
   const modifedArticles =
-    breakpointKey === 'xl'
+    currentBreakpoint === 'xl'
       ? articles.map(article => ({
           ...article,
           imageRight: true
         }))
       : articles;
 
-  const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
+  const screenXsAndSm =
+    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
 
   const modifedLeadArticle = {
     ...leadArticle,
@@ -80,7 +95,7 @@ export const LeadStory3 = ({
       >
         <ArticleStack
           leadArticles={modifedLeadArticles}
-          breakpointKey={breakpointKey}
+          breakpointKey={currentBreakpoint}
         />
       </StackItem>
       <StackItem
@@ -117,14 +132,14 @@ export const LeadStory3 = ({
         <BlockItem>
           <ComposedArticleStack
             articles={modifedArticles}
-            breakpoint={breakpointKey}
+            breakpoint={currentBreakpoint}
           />
         </BlockItem>
       ) : (
         <ArticleStackLeadStory
           mdWidth="722px"
           modifedArticles={modifedArticles}
-          breakpoint={breakpointKey}
+          breakpoint={currentBreakpoint}
         />
       )}
     </CustomStackLayout>

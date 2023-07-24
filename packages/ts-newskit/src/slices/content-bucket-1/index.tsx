@@ -1,5 +1,12 @@
-import { Block, Divider, Hidden, useBreakpointKey, Visible } from 'newskit';
-import React from 'react';
+import {
+  Block,
+  Divider,
+  Hidden,
+  useBreakpointKey,
+  Visible,
+  BreakpointKeys
+} from 'newskit';
+import React, { useState, useEffect } from 'react';
 import { CommentCardProps } from '../../components/slices/comment-card';
 import {
   LeadArticle,
@@ -33,8 +40,15 @@ export const ContentBucket1 = ({
   comments,
   articles
 }: ContentBucket1Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
-  const isMobile = ['xs', 'sm'].includes(breakpointKey);
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
+  const isMobile = ['xs', 'sm'].includes(currentBreakpoint);
 
   const modifiedLeadArticle = {
     ...leadArticle,
@@ -77,7 +91,7 @@ export const ContentBucket1 = ({
           </Visible>
           <LeadArticle
             {...modifiedLeadArticle}
-            contentWidth={breakpointKey === 'xl' ? '312px' : '283px'}
+            contentWidth={currentBreakpoint === 'xl' ? '312px' : '283px'}
           />
         </Block>
         <Block>
@@ -105,7 +119,7 @@ export const ContentBucket1 = ({
           </FullWidthBlock>
         </FullWidthHidden>
         <BlockItem>
-          <ArticleStack articles={articles} breakpoint={breakpointKey} />
+          <ArticleStack articles={articles} breakpoint={currentBreakpoint} />
         </BlockItem>
       </StackItem>
       <Visible md>

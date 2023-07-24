@@ -1,5 +1,11 @@
-import { Block, Divider, useBreakpointKey, Visible } from 'newskit';
-import React from 'react';
+import {
+  Block,
+  Divider,
+  useBreakpointKey,
+  Visible,
+  BreakpointKeys
+} from 'newskit';
+import React, { useState, useEffect } from 'react';
 import {
   LeadArticle,
   LeadArticleProps
@@ -42,10 +48,18 @@ export const LeadStory1 = ({
   singleArticle,
   articlesWithListItems
 }: LeadStory1Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
-  const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
+  const screenXsAndSm =
+    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
   const modifiedArticles =
-    breakpointKey === 'xl'
+    currentBreakpoint === 'xl'
       ? articles.map(article => ({
           ...article,
           imageRight: true
@@ -57,9 +71,9 @@ export const LeadStory1 = ({
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
     headlineTypographyPreset:
-      breakpointKey === 'xs'
+      currentBreakpoint === 'xs'
         ? 'editorialHeadline040'
-        : breakpointKey === 'sm'
+        : currentBreakpoint === 'sm'
           ? 'editorialHeadline050'
           : 'editorialHeadline060',
     showTagL1: false
@@ -191,7 +205,7 @@ export const LeadStory1 = ({
             isFullWidth={screenXsAndSm}
             hideImage={screenXsAndSm}
             hasTopBorder={!!screenXsAndSm}
-            breakpoint={breakpointKey}
+            breakpoint={currentBreakpoint}
           />
         </Block>
       </StackItem>
@@ -199,14 +213,14 @@ export const LeadStory1 = ({
         <BlockItem>
           <ComposedArticleStack
             articles={modifiedArticles}
-            breakpoint={breakpointKey}
+            breakpoint={currentBreakpoint}
           />
         </BlockItem>
       ) : (
         <ArticleStackLeadStory
           mdWidth="722px"
           modifedArticles={modifiedArticles}
-          breakpoint={breakpointKey}
+          breakpoint={currentBreakpoint}
         />
       )}
     </CustomStackLayout>
