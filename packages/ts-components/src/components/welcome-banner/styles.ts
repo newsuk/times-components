@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colours, fonts } from '@times-components/ts-styleguide'
+import { colours, fonts } from '@times-components/ts-styleguide';
 
 export const Container = styled.div`
   display: flex;
@@ -18,11 +18,9 @@ export const Title = styled.div`
 `;
 
 export const Text = styled.div`
- font-family: ${fonts.supporting};
- font-size: 18px;
- color: ${colours.functional.primary};
- padding-top: 9px;
- text-align: center;
+  font-family: ${fonts.supporting};
+  font-size: 18px;
+  color: ${colours.functional.primary};
+  padding-top: 9px;
+  text-align: center;
 `;
-
-
