@@ -5,7 +5,7 @@ import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import { TrackingContextProvider } from "@times-components/ts-components";
+import { TrackingContextProvider, WelcomeBanner } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
@@ -118,6 +118,7 @@ const ArticleSkeleton = ({
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
 
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+  const hasWelcomeBanner = sessionStorage.getItem('showWelcomeBanner');
 
   return (
     <StickyProvider>
@@ -186,6 +187,12 @@ const ArticleSkeleton = ({
               <AdContainer slotName="header" style={styles.adMarginStyle} />
             </HeaderAdContainer>
             <MainContainer>
+              {(() => {
+                if (hasWelcomeBanner) {
+                  sessionStorage.removeItem('showWelcomeBanner');
+                  return (<WelcomeBanner />)
+              }
+                return null})}
               {!!zephrDivs && (
                 <StaticContent
                   html={
