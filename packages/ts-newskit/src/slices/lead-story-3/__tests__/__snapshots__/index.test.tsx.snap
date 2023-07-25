@@ -313,109 +313,105 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="css-13byt3y"
+        class="css-1fgalmf"
       >
         <div
-          class="css-1fgalmf"
+          class="css-15edd2j"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-uh7mej"
+            data-testid="divider"
+          />
+        </div>
+        <div
+          class="css-6wqjuf"
         >
           <div
-            class="css-15edd2j"
+            class="css-1l8qede"
           >
-            <hr
-              aria-hidden="true"
-              class="css-uh7mej"
-              data-testid="divider"
-            />
+            <div
+              class="css-uxw9nr"
+            >
+              <picture
+                class="css-y00bg8"
+              >
+                <div
+                  class="css-5pczz7"
+                />
+                <img
+                  alt="Short title of the card describing the main content"
+                  class="css-1qgqq71"
+                  src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173"
+                />
+              </picture>
+            </div>
+            <p
+              class="css-9pk24b"
+            >
+              Credit
+            </p>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-gpke1l"
           >
-            <div
-              class="css-1l8qede"
+            <a
+              class="css-10h0i3c"
+              href="https://www.thetimes.co.uk"
             >
-              <div
-                class="css-uxw9nr"
+              <span
+                class="css-17x5lw"
               >
-                <picture
-                  class="css-y00bg8"
+                <span
+                  class="css-8gj81n"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
-                  <img
-                    alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173"
-                  />
-                </picture>
-              </div>
-              <p
-                class="css-9pk24b"
-              >
-                Credit
-              </p>
-            </div>
+                  Short title of the card describing the main content
+                </span>
+              </span>
+            </a>
             <div
-              class="css-gpke1l"
+              class="css-1atazsr"
+              data-testid="tag-and-flag"
             >
               <a
-                class="css-10h0i3c"
-                href="https://www.thetimes.co.uk"
+                class="css-10d4t8c"
+                href="/"
               >
                 <span
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-8gj81n"
+                    class="css-zhtub2"
                   >
-                    Short title of the card describing the main content
+                    Tag
                   </span>
                 </span>
               </a>
               <div
-                class="css-1atazsr"
-                data-testid="tag-and-flag"
+                class="css-lew009"
               >
-                <a
-                  class="css-10d4t8c"
-                  href="/"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-zhtub2"
-                    >
-                      Tag
-                    </span>
-                  </span>
-                </a>
-                <div
-                  class="css-lew009"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
-                <span
-                  class="css-1vzvkql"
-                >
-                  4 min read 1
-                </span>
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
               </div>
+              <span
+                class="css-1vzvkql"
+              >
+                4 min read 1
+              </span>
             </div>
           </div>
-          <div
-            class="css-11l110t"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1imcii2"
-              data-testid="divider"
-            />
-          </div>
+        </div>
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1imcii2"
+            data-testid="divider"
+          />
         </div>
       </div>
     </div>
@@ -1292,109 +1288,105 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
         </div>
       </div>
       <div
-        class="css-13byt3y"
+        class="css-1fgalmf"
       >
         <div
-          class="css-1fgalmf"
+          class="css-15edd2j"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-uh7mej"
+            data-testid="divider"
+          />
+        </div>
+        <div
+          class="css-6wqjuf"
         >
           <div
-            class="css-15edd2j"
+            class="css-1l8qede"
           >
-            <hr
-              aria-hidden="true"
-              class="css-uh7mej"
-              data-testid="divider"
-            />
+            <div
+              class="css-uxw9nr"
+            >
+              <picture
+                class="css-y00bg8"
+              >
+                <div
+                  class="css-5pczz7"
+                />
+                <img
+                  alt="Short title of the card describing the main content"
+                  class="css-1qgqq71"
+                  src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173"
+                />
+              </picture>
+            </div>
+            <p
+              class="css-9pk24b"
+            >
+              Credit
+            </p>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-gpke1l"
           >
-            <div
-              class="css-1l8qede"
+            <a
+              class="css-10h0i3c"
+              href="https://www.thetimes.co.uk"
             >
-              <div
-                class="css-uxw9nr"
+              <span
+                class="css-17x5lw"
               >
-                <picture
-                  class="css-y00bg8"
+                <span
+                  class="css-8gj81n"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
-                  <img
-                    alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173"
-                  />
-                </picture>
-              </div>
-              <p
-                class="css-9pk24b"
-              >
-                Credit
-              </p>
-            </div>
+                  Short title of the card describing the main content
+                </span>
+              </span>
+            </a>
             <div
-              class="css-gpke1l"
+              class="css-1atazsr"
+              data-testid="tag-and-flag"
             >
               <a
-                class="css-10h0i3c"
-                href="https://www.thetimes.co.uk"
+                class="css-10d4t8c"
+                href="/"
               >
                 <span
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-8gj81n"
+                    class="css-zhtub2"
                   >
-                    Short title of the card describing the main content
+                    Tag
                   </span>
                 </span>
               </a>
               <div
-                class="css-1atazsr"
-                data-testid="tag-and-flag"
+                class="css-lew009"
               >
-                <a
-                  class="css-10d4t8c"
-                  href="/"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-zhtub2"
-                    >
-                      Tag
-                    </span>
-                  </span>
-                </a>
-                <div
-                  class="css-lew009"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
-                <span
-                  class="css-1vzvkql"
-                >
-                  4 min read 1
-                </span>
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
               </div>
+              <span
+                class="css-1vzvkql"
+              >
+                4 min read 1
+              </span>
             </div>
           </div>
-          <div
-            class="css-11l110t"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1imcii2"
-              data-testid="divider"
-            />
-          </div>
+        </div>
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1imcii2"
+            data-testid="divider"
+          />
         </div>
       </div>
     </div>
@@ -2052,109 +2044,105 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
         </div>
       </div>
       <div
-        class="css-13byt3y"
+        class="css-1fgalmf"
       >
         <div
-          class="css-1fgalmf"
+          class="css-15edd2j"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-uh7mej"
+            data-testid="divider"
+          />
+        </div>
+        <div
+          class="css-6wqjuf"
         >
           <div
-            class="css-15edd2j"
+            class="css-1l8qede"
           >
-            <hr
-              aria-hidden="true"
-              class="css-uh7mej"
-              data-testid="divider"
-            />
+            <div
+              class="css-uxw9nr"
+            >
+              <picture
+                class="css-y00bg8"
+              >
+                <div
+                  class="css-5pczz7"
+                />
+                <img
+                  alt="Short title of the card describing the main content"
+                  class="css-1qgqq71"
+                  src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173"
+                />
+              </picture>
+            </div>
+            <p
+              class="css-9pk24b"
+            >
+              Credit
+            </p>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-gpke1l"
           >
-            <div
-              class="css-1l8qede"
+            <a
+              class="css-10h0i3c"
+              href="https://www.thetimes.co.uk"
             >
-              <div
-                class="css-uxw9nr"
+              <span
+                class="css-17x5lw"
               >
-                <picture
-                  class="css-y00bg8"
+                <span
+                  class="css-8gj81n"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
-                  <img
-                    alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173"
-                  />
-                </picture>
-              </div>
-              <p
-                class="css-9pk24b"
-              >
-                Credit
-              </p>
-            </div>
+                  Short title of the card describing the main content
+                </span>
+              </span>
+            </a>
             <div
-              class="css-gpke1l"
+              class="css-1atazsr"
+              data-testid="tag-and-flag"
             >
               <a
-                class="css-10h0i3c"
-                href="https://www.thetimes.co.uk"
+                class="css-10d4t8c"
+                href="/"
               >
                 <span
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-8gj81n"
+                    class="css-zhtub2"
                   >
-                    Short title of the card describing the main content
+                    Tag
                   </span>
                 </span>
               </a>
               <div
-                class="css-1atazsr"
-                data-testid="tag-and-flag"
+                class="css-lew009"
               >
-                <a
-                  class="css-10d4t8c"
-                  href="/"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-zhtub2"
-                    >
-                      Tag
-                    </span>
-                  </span>
-                </a>
-                <div
-                  class="css-lew009"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
-                <span
-                  class="css-1vzvkql"
-                >
-                  4 min read 1
-                </span>
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
               </div>
+              <span
+                class="css-1vzvkql"
+              >
+                4 min read 1
+              </span>
             </div>
           </div>
-          <div
-            class="css-11l110t"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1imcii2"
-              data-testid="divider"
-            />
-          </div>
+        </div>
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1imcii2"
+            data-testid="divider"
+          />
         </div>
       </div>
     </div>
@@ -2991,109 +2979,105 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
         </div>
       </div>
       <div
-        class="css-13byt3y"
+        class="css-1fgalmf"
       >
         <div
-          class="css-1fgalmf"
+          class="css-15edd2j"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-uh7mej"
+            data-testid="divider"
+          />
+        </div>
+        <div
+          class="css-6wqjuf"
         >
           <div
-            class="css-15edd2j"
+            class="css-1l8qede"
           >
-            <hr
-              aria-hidden="true"
-              class="css-uh7mej"
-              data-testid="divider"
-            />
+            <div
+              class="css-uxw9nr"
+            >
+              <picture
+                class="css-y00bg8"
+              >
+                <div
+                  class="css-5pczz7"
+                />
+                <img
+                  alt="Short title of the card describing the main content"
+                  class="css-1qgqq71"
+                  src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173"
+                />
+              </picture>
+            </div>
+            <p
+              class="css-9pk24b"
+            >
+              Credit
+            </p>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-gpke1l"
           >
-            <div
-              class="css-1l8qede"
+            <a
+              class="css-10h0i3c"
+              href="https://www.thetimes.co.uk"
             >
-              <div
-                class="css-uxw9nr"
+              <span
+                class="css-17x5lw"
               >
-                <picture
-                  class="css-y00bg8"
+                <span
+                  class="css-8gj81n"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
-                  <img
-                    alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173"
-                  />
-                </picture>
-              </div>
-              <p
-                class="css-9pk24b"
-              >
-                Credit
-              </p>
-            </div>
+                  Short title of the card describing the main content
+                </span>
+              </span>
+            </a>
             <div
-              class="css-gpke1l"
+              class="css-1atazsr"
+              data-testid="tag-and-flag"
             >
               <a
-                class="css-10h0i3c"
-                href="https://www.thetimes.co.uk"
+                class="css-10d4t8c"
+                href="/"
               >
                 <span
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-8gj81n"
+                    class="css-zhtub2"
                   >
-                    Short title of the card describing the main content
+                    Tag
                   </span>
                 </span>
               </a>
               <div
-                class="css-1atazsr"
-                data-testid="tag-and-flag"
+                class="css-lew009"
               >
-                <a
-                  class="css-10d4t8c"
-                  href="/"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-zhtub2"
-                    >
-                      Tag
-                    </span>
-                  </span>
-                </a>
-                <div
-                  class="css-lew009"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
-                <span
-                  class="css-1vzvkql"
-                >
-                  4 min read 1
-                </span>
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
               </div>
+              <span
+                class="css-1vzvkql"
+              >
+                4 min read 1
+              </span>
             </div>
           </div>
-          <div
-            class="css-11l110t"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1imcii2"
-              data-testid="divider"
-            />
-          </div>
+        </div>
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1imcii2"
+            data-testid="divider"
+          />
         </div>
       </div>
     </div>
