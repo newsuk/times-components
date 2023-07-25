@@ -30,17 +30,11 @@ export const LeadStory2 = ({
   verticalArticles,
   horizontalArticles
 }: LeadStory2Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
-    },
-    [breakpointKey]
-  );
+  console.log("USE BREAKPOINT", breakpointKey);
 
   const modifedArticles =
-    currentBreakpoint === 'xl'
+    breakpointKey === 'xl'
       ? articles.map(article => ({
           ...article,
           imageRight: true
@@ -48,7 +42,7 @@ export const LeadStory2 = ({
       : articles;
 
   const screenXsAndSm =
-    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
+    breakpointKey === 'xs' || breakpointKey === 'sm';
 
   const modifiedLeadArticle = {
     ...leadArticle,
@@ -56,9 +50,9 @@ export const LeadStory2 = ({
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
     headlineTypographyPreset:
-      currentBreakpoint === 'xs'
+      breakpointKey === 'xs'
         ? 'editorialHeadline040'
-        : currentBreakpoint === 'sm'
+        : breakpointKey === 'sm'
           ? 'editorialHeadline050'
           : 'editorialHeadline060'
   };
@@ -93,7 +87,7 @@ export const LeadStory2 = ({
             />
           </Visible>
           <LeadArticle
-            contentWidth={currentBreakpoint === 'xl' ? '274px' : '246px'}
+            contentWidth={breakpointKey === 'xl' ? '274px' : '246px'}
             {...modifiedLeadArticle}
           />
           {screenXsAndSm ? (
@@ -116,10 +110,10 @@ export const LeadStory2 = ({
           )}
           <ArticleStack
             verticalArticles={verticalArticles}
-            breakpoint={currentBreakpoint}
+            breakpoint={breakpointKey}
             horizontalArticles={horizontalArticles}
             horizontalArticleContentWidth={
-              currentBreakpoint === 'xl' ? '258px' : '230px'
+              breakpointKey === 'xl' ? '258px' : '230px'
             }
           />
         </Block>
@@ -128,14 +122,14 @@ export const LeadStory2 = ({
         <BlockItem marginBlockStart="space040">
           <ComposedArticleStack
             articles={modifedArticles}
-            breakpoint={currentBreakpoint}
+            breakpoint={breakpointKey}
           />
         </BlockItem>
       ) : (
         <ArticleStackLeadStory
           mdWidth="722px"
           modifedArticles={modifedArticles}
-          breakpoint={currentBreakpoint}
+          breakpoint={breakpointKey}
         />
       )}
     </Stack>
