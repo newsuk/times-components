@@ -63,6 +63,22 @@ describe("Head", () => {
     expect(testRenderer).toMatchSnapshot();
   });
 
+  it("outputs correct metadata when syndicated article", () => {
+    const syndicatedArticle = {
+      ...article,
+      id: "37a19ac4-1cbb-11ee-8198-bf96b6365670"
+    };
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={syndicatedArticle}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+
+    expect(testRenderer).toMatchSnapshot();
+  });
+
   it("outputs correct metadata when the swgProductId is passed as prop", () => {
     const testRenderer = TestRenderer.create(
       <Head

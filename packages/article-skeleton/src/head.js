@@ -6,6 +6,8 @@ import Context from "@times-components/context";
 import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
 
+const SYNDICATED_ARTICLE_IDS = ["37a19ac4-1cbb-11ee-8198-bf96b6365670"];
+
 // Get the section for an article, preferring it not to be News
 function reduceTilesToTitles(tiles, prefix = "") {
   if (!tiles) {
@@ -399,6 +401,8 @@ function Head({
     liveBlogUpdate: liveBlogUpdateSchema,
     articleSection: sectionname
   };
+  const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
+
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
@@ -406,6 +410,7 @@ function Head({
         return (
           <Helmet encodeSpecialCharacters={false}>
             <title>{title}</title>
+            {isSyndicatedArticle && <meta name="robots" content="noindex" />}
             <meta name="robots" content="max-image-preview:large" />
             <meta content={title} name="article:title" />
             <meta content={publication} name="article:publication" />

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.110.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.109.2...@times-components/article-skeleton@1.110.0) (2023-07-25)
+
+
+### Features
+
+* **tmrx-1362:** added noindex tag for syndicated article ([#3445](https://github.com/newsuk/times-components/issues/3445)) ([8097cae](https://github.com/newsuk/times-components/commit/8097cae2899fe1e7cbcd33023da3f3eb5bc63a7f))
+
+
+
+
+
 ## [1.109.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.109.1...@times-components/article-skeleton@1.109.2) (2023-07-25)
 
 **Note:** Version bump only for package @times-components/article-skeleton
