@@ -14,7 +14,7 @@ const renderComponent = (props: ArticleProps) => render(<Article {...props} />);
 const defaultProps = {
   images: {
     alt: 'This is ALT Text',
-    credit: '',
+    caption: '',
     crops: [
       {
         url:
@@ -101,7 +101,7 @@ describe('Render Article List Item', () => {
     renderComponent({
       images: {
         alt: '',
-        credit: '',
+        caption: '',
         crops: [
           {
             url:
@@ -156,19 +156,19 @@ describe('Render Article List Item with hidden image', () => {
   it('items should render without image', () => {
     renderComponent(defaultProps);
     const articleImage = screen.getByRole('img');
-    const credit = screen.queryByText('Credit');
+    const caption = screen.queryByText('Caption');
 
     expect(articleImage).toBeInTheDocument();
-    expect(credit).toBeNull();
+    expect(caption).toBeNull();
   });
 
   it('items should render without image', () => {
     renderComponent({ ...defaultProps, hideImage: true });
     const articleImage = screen.queryByRole('img');
-    const credit = screen.queryByText('Credit');
+    const caption = screen.queryByText('Caption');
 
     expect(articleImage).toBeNull();
-    expect(credit).toBeNull();
+    expect(caption).toBeNull();
   });
   it('items should render with divider', () => {
     renderComponent({

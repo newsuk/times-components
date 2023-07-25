@@ -27,7 +27,7 @@ exports[`Render Component one should render a snapshot 1`] = `
       <p
         class="css-9pk24b"
       >
-        Credit
+        Caption
       </p>
     </div>
     <div

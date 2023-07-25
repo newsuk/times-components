@@ -325,7 +325,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               <p
                 class="css-9pk24b"
               >
-                Credit
+                Caption
               </p>
             </div>
             <div
@@ -431,7 +431,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <p
                   class="css-1khw599"
                 >
-                  Credit
+                  Caption
                 </p>
                 <a
                   class="css-u57k3c"
@@ -1409,7 +1409,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <p
                 class="css-9pk24b"
               >
-                Credit
+                Caption
               </p>
             </div>
             <div
@@ -1515,7 +1515,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <p
                   class="css-1khw599"
                 >
-                  Credit
+                  Caption
                 </p>
                 <a
                   class="css-u57k3c"
@@ -2274,7 +2274,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <p
                 class="css-9pk24b"
               >
-                Credit
+                Caption
               </p>
             </div>
             <div
@@ -3302,7 +3302,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <p
                 class="css-9pk24b"
               >
-                Credit
+                Caption
               </p>
             </div>
             <div

@@ -43,7 +43,7 @@ describe('Render Component one', () => {
   it('should render correct caption', () => {
     const { getByText } = renderComponent();
 
-    const captionText = getByText(leadArticle.images.credit);
+    const captionText = getByText(leadArticle.images.caption);
     expect(captionText).toBeInTheDocument();
   });
 
