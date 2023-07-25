@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@times-components/provider-queries": "2.20.0",
-    "@times-components/utils": "6.16.7",
+    "@times-components/utils": "6.16.8",
     "graphql-tag": "2.10.3",
     "hoist-non-react-statics": "3.3.2",
     "lodash.isequal": "4.4.0",
