@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { ArticleProps } from '../../components/slices/article';
 import { ArticleStack } from './article-stacks';
 import {
   SliceHeader,
   SliceHeaderProps
 } from '../../components/slices/slice-header';
-import { Divider, useBreakpointKey, Scroll } from 'newskit';
+import { Divider, useBreakpointKey, Scroll, BreakpointKeys } from 'newskit';
 import { CustomGridLayout } from '../shared/layouts';
 import { StyledBlock } from './styles';
 
@@ -43,8 +43,15 @@ export const SectionBucket = ({
   articleStackThree,
   articleStackFour
 }: SectionBucketProps) => {
-  const breakpoint = useBreakpointKey();
-  const isMobile = breakpoint === 'xs' || breakpoint === 'sm';
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
+  const breakpointKey = useBreakpointKey();
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
+  const isMobile = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
 
   const articleStacksArray = [
     articleStackOne,

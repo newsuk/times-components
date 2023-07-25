@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.48.10](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.48.9...@times-components/ssr@2.48.10) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.48.9](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.48.8...@times-components/ssr@2.48.9) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.48.8](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.48.7...@times-components/ssr@2.48.8) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.48.7](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.48.6...@times-components/ssr@2.48.7) (2023-07-24)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.48.6](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.48.5...@times-components/ssr@2.48.6) (2023-07-24)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.48.5](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.48.4...@times-components/ssr@2.48.5) (2023-07-24)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
 ## [2.48.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.48.3...@times-components/ssr@2.48.4) (2023-07-21)
 
 **Note:** Version bump only for package @times-components/ssr

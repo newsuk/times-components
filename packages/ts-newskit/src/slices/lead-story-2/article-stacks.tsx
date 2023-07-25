@@ -34,7 +34,6 @@ export const ArticleStack = ({
 
   const modifiedVerticalArticles = verticalArticles.map(item => ({
     ...item,
-    imageTop: true,
     headlineTypographyPreset: 'editorialHeadline020',
     hasTopBorder: false,
     hideImage: true

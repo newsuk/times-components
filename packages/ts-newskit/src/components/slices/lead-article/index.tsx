@@ -78,7 +78,10 @@ export const LeadArticle = ({
   hideImage
 }: LeadArticleProps) => {
   const imageWithCorrectRatio =
-    images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
+    images && images.crops
+      ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
+        images.crops.find(crop => crop.ratio === '3:2')
+      : null;
 
   const cardImage = images &&
     imageWithCorrectRatio &&
@@ -86,7 +89,7 @@ export const LeadArticle = ({
       media: {
         src: imageWithCorrectRatio.url,
         alt: (images && images.alt) || headline,
-        loadingAspectRatio: loadingAspectRatio || imageWithCorrectRatio.ratio
+        loadingAspectRatio: imageWithCorrectRatio.ratio
       }
     };
 
@@ -103,22 +106,25 @@ export const LeadArticle = ({
     : imageTop
       ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
       : 'editorialHeadline040';
+  const displayArticleVertical = imageTop || hideImage;
 
   return (
     <CardComposable
       areas={{
-        xs: imageTop
+        xs: displayArticleVertical
           ? `media
              content`
           : `content 
              media`,
-        md: imageTop
+        md: displayArticleVertical
           ? `media 
              content`
           : `content media`
       }}
       columnGap="space040"
-      columns={{ md: imageTop ? '100%' : `${contentWidth || '260px'} auto` }}
+      columns={{
+        md: displayArticleVertical ? '100%' : `${contentWidth || '260px'} auto`
+      }}
     >
       {hasImage &&
         !hideImage && (

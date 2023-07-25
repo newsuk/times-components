@@ -92,6 +92,7 @@ export {
 
 export { UpdatedTimeProvider } from './helpers/time/UpdatedTimeProvider';
 
+export { WelcomeBanner } from './components/welcome-banner/WelcomeBanner';
 export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';

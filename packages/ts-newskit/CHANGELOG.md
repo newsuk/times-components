@@ -3,6 +3,66 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.67.9](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.8...@times-components/ts-newskit@1.67.9) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.67.8](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.7...@times-components/ts-newskit@1.67.8) (2023-07-25)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** fix image jumping issue ([#3450](https://github.com/newsuk/times-components/issues/3450)) ([8b19feb](https://github.com/newsuk/times-components/commit/8b19feb5c74e115a6b0e7bef61d0efc6e0535a8b))
+
+
+
+
+
+## [1.67.7](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.6...@times-components/ts-newskit@1.67.7) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.67.6](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.5...@times-components/ts-newskit@1.67.6) (2023-07-24)
+
+
+### Bug Fixes
+
+* **TMRX-1313:** Fix breakpoint key on slices ([#3448](https://github.com/newsuk/times-components/issues/3448)) ([a88f82a](https://github.com/newsuk/times-components/commit/a88f82a1f711de612fd2ac5f7cbb62ce739c0664))
+
+
+
+
+
+## [1.67.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.4...@times-components/ts-newskit@1.67.5) (2023-07-24)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** try to fix image flashing ([#3447](https://github.com/newsuk/times-components/issues/3447)) ([83fe818](https://github.com/newsuk/times-components/commit/83fe81806751ad629b056a6e410c87d35f6a1bb3))
+
+
+
+
+
+## [1.67.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.3...@times-components/ts-newskit@1.67.4) (2023-07-24)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** remove external link icon ([#3442](https://github.com/newsuk/times-components/issues/3442)) ([9ef5d21](https://github.com/newsuk/times-components/commit/9ef5d21fb33b760b572a93b618b4221330b4fb0d))
+
+
+
+
+
 ## [1.67.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.2...@times-components/ts-newskit@1.67.3) (2023-07-21)
 
 

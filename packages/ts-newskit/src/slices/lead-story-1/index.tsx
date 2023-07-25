@@ -1,5 +1,11 @@
-import { Block, Divider, useBreakpointKey, Visible } from 'newskit';
-import React from 'react';
+import {
+  Block,
+  Divider,
+  useBreakpointKey,
+  Visible,
+  BreakpointKeys
+} from 'newskit';
+import React, { useState, useEffect } from 'react';
 import {
   LeadArticle,
   LeadArticleProps
@@ -42,10 +48,18 @@ export const LeadStory1 = ({
   singleArticle,
   articlesWithListItems
 }: LeadStory1Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
-  const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
-  const modifedArticles =
-    breakpointKey === 'xl'
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
+  const screenXsAndSm =
+    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
+  const modifiedArticles =
+    currentBreakpoint === 'xl'
       ? articles.map(article => ({
           ...article,
           imageRight: true
@@ -57,15 +71,15 @@ export const LeadStory1 = ({
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
     headlineTypographyPreset:
-      breakpointKey === 'xs'
+      currentBreakpoint === 'xs'
         ? 'editorialHeadline040'
-        : breakpointKey === 'sm'
+        : currentBreakpoint === 'sm'
           ? 'editorialHeadline050'
           : 'editorialHeadline060',
     showTagL1: false
   };
 
-  const modifedLeadArticle = {
+  const modifiedLeadArticle = {
     ...leadArticle,
     hasTopBorder: false,
     imageTop: true,
@@ -74,18 +88,16 @@ export const LeadStory1 = ({
       : 'editorialHeadline030'
   };
 
-  const marginTop = singleArticle
+  const modifiedSingleArticle = {
+    ...singleArticle,
+    hideImage: true
+  };
+
+  const marginTop = modifiedSingleArticle
     ? 'space040'
     : !!articlesWithListItems.listData
       ? 'space020'
       : 'space040';
-  const LeadStoryLayout: React.FC = ({ children }) => {
-    return (
-      <BlockItem marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-        {children}
-      </BlockItem>
-    );
-  };
 
   return (
     <CustomStackLayout>
@@ -100,7 +112,7 @@ export const LeadStory1 = ({
         }}
       >
         <LeadArticle {...modifiedArticlesWithUnorderedList} />
-        {singleArticle && (
+        {modifiedSingleArticle && (
           <BlockItem>
             <FullWidthBlock>
               <StyledDivider
@@ -109,16 +121,11 @@ export const LeadStory1 = ({
                   marginBlockStart: !!articlesWithListItems.listData
                     ? 'space020'
                     : 'space040',
-                  marginBlockEnd:
-                    singleArticle.images &&
-                    singleArticle.images.crops &&
-                    singleArticle.images.crops.length > 0
-                      ? 'space040'
-                      : 'space000'
+                  marginBlockEnd: 'space040'
                 }}
               />
             </FullWidthBlock>
-            <Article {...singleArticle} />
+            <Article {...modifiedSingleArticle} />
           </BlockItem>
         )}
         {groupedArticles && (
@@ -168,9 +175,9 @@ export const LeadStory1 = ({
               position="right"
             />
           </Visible>
-          <LeadStoryLayout>
-            <LeadArticle {...modifedLeadArticle} />
-          </LeadStoryLayout>
+          <BlockItem marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
+            <LeadArticle {...modifiedLeadArticle} />
+          </BlockItem>
           <Visible md lg xl>
             <LeadStoryDivider
               overrides={{
@@ -191,22 +198,22 @@ export const LeadStory1 = ({
             isFullWidth={screenXsAndSm}
             hideImage={screenXsAndSm}
             hasTopBorder={!!screenXsAndSm}
-            breakpoint={breakpointKey}
+            breakpoint={currentBreakpoint}
           />
         </Block>
       </StackItem>
       {screenXsAndSm ? (
         <BlockItem>
           <ComposedArticleStack
-            articles={modifedArticles}
-            breakpoint={breakpointKey}
+            articles={modifiedArticles}
+            breakpoint={currentBreakpoint}
           />
         </BlockItem>
       ) : (
         <ArticleStackLeadStory
           mdWidth="722px"
-          modifedArticles={modifedArticles}
-          breakpoint={breakpointKey}
+          modifedArticles={modifiedArticles}
+          breakpoint={currentBreakpoint}
         />
       )}
     </CustomStackLayout>
