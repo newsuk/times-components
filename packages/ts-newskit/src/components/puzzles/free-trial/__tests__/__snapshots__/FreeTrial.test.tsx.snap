@@ -9,7 +9,7 @@ exports[`FreeTrial should render freeTrial banner component 1`] = `
       class="css-nbnefg"
     >
       <div
-        class="css-1n1xv1r"
+        class="css-1ixse4t"
       >
         <div
           class="css-1ru9wvo"
@@ -17,22 +17,22 @@ exports[`FreeTrial should render freeTrial banner component 1`] = `
           <h2
             class="css-xpw4yj"
           >
-            Play thousands of puzzles with unlimited digital access
+            Train your brain with Times Puzzles
           </h2>
           <p
             class="css-1c5z7cp"
           >
-            Brain train, read and comment free for one month
+            Start playing today for just £1 for your first month
           </p>
           <a
             class="css-18px5lo"
             data-testid="buttonLink"
-            href="https://www.newskit.co.uk/"
+            href="https://www.thetimes.co.uk/subscribe/puzzles/"
           >
             <span
               class="css-135wemz"
             >
-              Start your free trial
+              Subscribe Now
             </span>
           </a>
         </div>

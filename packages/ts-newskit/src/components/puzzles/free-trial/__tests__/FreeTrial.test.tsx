@@ -7,10 +7,10 @@ const renderComponent = (props: FreeTrialProps) =>
   render(<FreeTrial {...props} />);
 
 const defaultProps = {
-  freeTrialHeader: 'Play thousands of puzzles with unlimited digital access',
-  freeTrialSubheadline: 'Brain train, read and comment free for one month',
-  url: 'https://www.newskit.co.uk/',
-  title: 'Start your free trial'
+  freeTrialHeader: 'Train your brain with Times Puzzles',
+  freeTrialSubheadline: 'Start playing today for just £1 for your first month',
+  url: 'https://www.thetimes.co.uk/subscribe/puzzles/',
+  title: 'Subscribe Now'
 };
 
 describe('FreeTrial', () => {
