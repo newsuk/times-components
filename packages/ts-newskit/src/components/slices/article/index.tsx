@@ -22,7 +22,7 @@ type ImageCrops = {
 
 type ImageProps = {
   alt?: string;
-  credit?: string;
+  caption?: string;
   crops?: ImageCrops[];
 };
 
@@ -133,14 +133,14 @@ export const Article = ({
       <CardContent>
         {images &&
           !imageRight &&
-          images.credit &&
+          images.caption &&
           !hideImage && (
             <TextBlock
               marginBlockStart="space020"
               stylePreset="inkSubtle"
               typographyPreset="utilityMeta010"
             >
-              {images && images.credit}
+              {images && images.caption}
             </TextBlock>
           )}
         <Layout imageRight={imageRight || false}>
