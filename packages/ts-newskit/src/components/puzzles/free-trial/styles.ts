@@ -23,13 +23,13 @@ export const FreeTrialContainer = styled(Stack)<StackProps>`
 export const StyledBlock = styled(Block)`
   position: relative;
   ${getMediaQueryFromTheme('md')} {
-    max-width: 604px;
+    width: 604px;
   }
   ${getMediaQueryFromTheme('lg')} {
-    max-width: 838px;
+    width: 838px;
   }
   ${getMediaQueryFromTheme('xl')} {
-    max-width: 1058px;
+    width: 1058px;
   }
 `;
 
