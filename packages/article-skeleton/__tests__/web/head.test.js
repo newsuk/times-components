@@ -64,7 +64,10 @@ describe("Head", () => {
   });
 
   it("outputs correct metadata when syndicated article", () => {
-    const syndicatedArticle = {...article, id:'37a19ac4-1cbb-11ee-8198-bf96b6365670'}
+    const syndicatedArticle = {
+      ...article,
+      id: "37a19ac4-1cbb-11ee-8198-bf96b6365670"
+    };
     const testRenderer = TestRenderer.create(
       <Head
         article={syndicatedArticle}

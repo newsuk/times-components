@@ -6,7 +6,7 @@ import Context from "@times-components/context";
 import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
 
-const SYNDICATED_ARTICLE_IDS = ['37a19ac4-1cbb-11ee-8198-bf96b6365670']
+const SYNDICATED_ARTICLE_IDS = ["37a19ac4-1cbb-11ee-8198-bf96b6365670"];
 
 // Get the section for an article, preferring it not to be News
 function reduceTilesToTitles(tiles, prefix = "") {
@@ -401,8 +401,8 @@ function Head({
     liveBlogUpdate: liveBlogUpdateSchema,
     articleSection: sectionname
   };
-  const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id)
-  
+  const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
+
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
