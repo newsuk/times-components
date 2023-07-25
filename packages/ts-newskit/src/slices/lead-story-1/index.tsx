@@ -98,13 +98,6 @@ export const LeadStory1 = ({
     : !!articlesWithListItems.listData
       ? 'space020'
       : 'space040';
-  const LeadStoryLayout: React.FC = ({ children }) => {
-    return (
-      <BlockItem marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-        {children}
-      </BlockItem>
-    );
-  };
 
   return (
     <CustomStackLayout>
@@ -182,9 +175,9 @@ export const LeadStory1 = ({
               position="right"
             />
           </Visible>
-          <LeadStoryLayout>
+          <BlockItem marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
             <LeadArticle {...modifiedLeadArticle} />
-          </LeadStoryLayout>
+          </BlockItem>
           <Visible md lg xl>
             <LeadStoryDivider
               overrides={{
