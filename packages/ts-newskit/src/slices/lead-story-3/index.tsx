@@ -61,29 +61,6 @@ export const LeadStory3 = ({
     ...article,
     hasTopBorder: false
   }));
-  const LeadStoryLayout: React.FC = ({ children }) => {
-    return (
-      <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-        <Visible lg xl>
-          <LeadStoryDivider
-            overrides={{ stylePreset: 'lightDivider' }}
-            vertical
-            position="right"
-          />
-        </Visible>
-        {children}
-        <Visible md lg xl>
-          <LeadStoryDivider
-            overrides={{
-              stylePreset: 'lightDivider'
-            }}
-            vertical
-            position="left"
-          />
-        </Visible>
-      </Block>
-    );
-  };
 
   return (
     <CustomStackLayout>
@@ -122,10 +99,24 @@ export const LeadStory3 = ({
             />
           </FullWidthBlock>
         </Hidden>
-        <Block>
-          <LeadStoryLayout>
-            <LeadArticle {...modifedLeadArticle} />
-          </LeadStoryLayout>
+        <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
+          <Visible lg xl>
+            <LeadStoryDivider
+              overrides={{ stylePreset: 'lightDivider' }}
+              vertical
+              position="right"
+            />
+          </Visible>
+          <LeadArticle {...modifedLeadArticle} />
+          <Visible md lg xl>
+            <LeadStoryDivider
+              overrides={{
+                stylePreset: 'lightDivider'
+              }}
+              vertical
+              position="left"
+            />
+          </Visible>
         </Block>
       </StackItem>
       {screenXsAndSm ? (

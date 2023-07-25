@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.10.1](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.10.0...@times-components/storybook@4.10.1) (2023-07-25)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** fix image jumping issue ([#3450](https://github.com/newsuk/times-components/issues/3450)) ([8b19feb](https://github.com/newsuk/times-components/commit/8b19feb5c74e115a6b0e7bef61d0efc6e0535a8b))
+
+
+
+
+
 # [4.10.0](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.9.3...@times-components/storybook@4.10.0) (2023-04-19)
 
 
