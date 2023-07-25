@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.16.2](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.16.1...@times-components/article-lead-asset@1.16.2) (2023-07-25)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** fix image jumping issue ([#3450](https://github.com/newsuk/times-components/issues/3450)) ([8b19feb](https://github.com/newsuk/times-components/commit/8b19feb5c74e115a6b0e7bef61d0efc6e0535a8b))
+
+
+
+
+
 ## [1.16.1](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.16.0...@times-components/article-lead-asset@1.16.1) (2023-05-12)
 
 **Note:** Version bump only for package @times-components/article-lead-asset
