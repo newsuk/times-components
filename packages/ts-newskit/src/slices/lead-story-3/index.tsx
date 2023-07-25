@@ -99,26 +99,24 @@ export const LeadStory3 = ({
             />
           </FullWidthBlock>
         </Hidden>
-        <Block>
-          <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-            <Visible lg xl>
-              <LeadStoryDivider
-                overrides={{ stylePreset: 'lightDivider' }}
-                vertical
-                position="right"
-              />
-            </Visible>
-            <LeadArticle {...modifedLeadArticle} />
-            <Visible md lg xl>
-              <LeadStoryDivider
-                overrides={{
-                  stylePreset: 'lightDivider'
-                }}
-                vertical
-                position="left"
-              />
-            </Visible>
-          </Block>
+        <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
+          <Visible lg xl>
+            <LeadStoryDivider
+              overrides={{ stylePreset: 'lightDivider' }}
+              vertical
+              position="right"
+            />
+          </Visible>
+          <LeadArticle {...modifedLeadArticle} />
+          <Visible md lg xl>
+            <LeadStoryDivider
+              overrides={{
+                stylePreset: 'lightDivider'
+              }}
+              vertical
+              position="left"
+            />
+          </Visible>
         </Block>
       </StackItem>
       {screenXsAndSm ? (
