@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video",
-  "version": "4.15.8",
+  "version": "4.15.9",
   "main": "dist/video",
   "dev": "src/video",
   "description": "Video",
@@ -52,11 +52,11 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/error-view": "2.6.7",
-    "@times-components/icons": "2.20.7",
-    "@times-components/image": "6.15.0",
-    "@times-components/ts-styleguide": "1.43.1",
-    "@times-components/utils": "6.16.7",
+    "@times-components/error-view": "2.6.8",
+    "@times-components/icons": "2.20.8",
+    "@times-components/image": "6.15.1",
+    "@times-components/ts-styleguide": "1.44.0",
+    "@times-components/utils": "6.16.8",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

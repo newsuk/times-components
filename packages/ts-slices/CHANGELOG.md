@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.13](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.12...@times-components/ts-slices@1.8.13) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/ts-slices
+
+
+
+
+
 ## [1.8.12](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.11...@times-components/ts-slices@1.8.12) (2023-04-19)
 
 **Note:** Version bump only for package @times-components/ts-slices

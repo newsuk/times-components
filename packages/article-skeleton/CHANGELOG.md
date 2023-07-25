@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.109.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.108.7...@times-components/article-skeleton@1.109.0) (2023-07-25)
+
+
+### Features
+
+* **TMG-773:** Create welcome banner ([#3443](https://github.com/newsuk/times-components/issues/3443)) ([f5c67bb](https://github.com/newsuk/times-components/commit/f5c67bbe5d116d75edd51f2eef35ef99e0450db3))
+
+
+
+
+
 ## [1.108.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.108.6...@times-components/article-skeleton@1.108.7) (2023-07-24)
 
 **Note:** Version bump only for package @times-components/article-skeleton

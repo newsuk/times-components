@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.44.0](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.43.1...@times-components/ts-styleguide@1.44.0) (2023-07-25)
+
+
+### Features
+
+* **TMG-773:** Create welcome banner ([#3443](https://github.com/newsuk/times-components/issues/3443)) ([f5c67bb](https://github.com/newsuk/times-components/commit/f5c67bbe5d116d75edd51f2eef35ef99e0450db3))
+
+
+
+
+
 ## [1.43.1](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.43.0...@times-components/ts-styleguide@1.43.1) (2023-04-19)
 
 **Note:** Version bump only for package @times-components/ts-styleguide

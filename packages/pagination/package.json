@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "3.12.7",
+  "version": "3.12.8",
   "main": "dist/pagination",
   "dev": "src/pagination",
   "scripts": {
@@ -54,10 +54,10 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/link": "3.12.6",
+    "@times-components/link": "3.12.7",
     "@times-components/tracking": "2.20.0",
-    "@times-components/ts-styleguide": "1.43.1",
-    "@times-components/utils": "6.16.7",
+    "@times-components/ts-styleguide": "1.44.0",
+    "@times-components/utils": "6.16.8",
     "prop-types": "15.7.2",
     "react-display-name": "0.2.3",
     "styled-components": "4.3.2"
