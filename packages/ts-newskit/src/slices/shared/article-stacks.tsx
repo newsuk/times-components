@@ -80,7 +80,7 @@ export const ArticleStackSmall = ({
   breakpoint: BreakpointKeys;
 }) => {
   const articleGrid = (
-    <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space030' }}>
+    <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space040' }}>
       {articles.map((article: ArticleProps, articleIndex, articleArr) => {
         const articleBorder = breakpoint !== 'xs' &&
           breakpoint !== 'sm' &&
