@@ -140,7 +140,7 @@ export const Article = ({
               stylePreset="inkSubtle"
               typographyPreset="utilityMeta010"
             >
-              {images && images.caption}
+              {images.caption}
             </TextBlock>
           )}
         <Layout imageRight={imageRight || false}>

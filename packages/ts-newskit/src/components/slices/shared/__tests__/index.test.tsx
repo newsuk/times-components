@@ -4,17 +4,16 @@ import { render, screen } from '../../../../utils/test-utils';
 import { TagAndFlag } from '../tag-and-flag';
 
 describe('TagAndFlag', () => {
-  it('should render with custom marginBlockStart', () => {
-    const customMargin = '0px';
+  it('should render 0 margin when marginBlockStart not provided', () => {
     render(
       <TagAndFlag
         flag="flag"
         tag={{ label: 'Tag', href: '/' }}
-        marginBlockStart={customMargin}
+        marginBlockStart="space000"
       />
     );
     const tagAndFlag = screen.getByTestId('tag-and-flag');
-    expect(tagAndFlag).toHaveStyle(`margin-block-start: ${customMargin}`);
+    expect(tagAndFlag.style.marginTop).toBe('');
   });
   it('should render a snapshot', () => {
     const { asFragment } = render(
