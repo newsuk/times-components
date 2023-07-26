@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.67.11](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.10...@times-components/ts-newskit@1.67.11) (2023-07-26)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** increase margin to match with design ([#3453](https://github.com/newsuk/times-components/issues/3453)) ([31db227](https://github.com/newsuk/times-components/commit/31db227a22a7c497f100b1b4f3a698c26aa5ee70))
+
+
+
+
+
 ## [1.67.10](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.9...@times-components/ts-newskit@1.67.10) (2023-07-26)
 
 **Note:** Version bump only for package @times-components/ts-newskit
