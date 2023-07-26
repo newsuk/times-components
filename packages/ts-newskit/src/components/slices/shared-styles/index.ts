@@ -58,3 +58,9 @@ export const FullWidthBlock = styled(Block)`
     ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
   }
 `;
+
+export const StyledSpan = styled.span`
+  font-style: italic;
+  padding-left: 4px;
+  font-weight: 300;
+`;

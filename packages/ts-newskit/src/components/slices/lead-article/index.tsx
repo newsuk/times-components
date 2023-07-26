@@ -10,6 +10,7 @@ import React from 'react';
 import {
   CardHeadlineLink,
   FullWidthCardMediaMob,
+  StyledSpan,
   TextLink
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
@@ -27,6 +28,7 @@ type ListData = {
 type ImageProps = {
   alt?: string;
   caption?: string;
+  credits?: string;
   crops?: ImageCrops[];
 };
 export interface LeadArticleProps {
@@ -139,6 +141,7 @@ export const LeadArticle = ({
                 typographyPreset="utilityMeta010"
               >
                 {images && images.caption}
+                {images && <StyledSpan>{images.credits}</StyledSpan>}
               </TextBlock>
             )}
           </Block>
