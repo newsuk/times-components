@@ -67,7 +67,7 @@ export const CommentCard = ({
         >
           {headline}
         </TextBlock>
-        <TagAndFlag flag={flag} />
+        {flag && <TagAndFlag flag={flag} />}
       </CardContent>
     </CardComposable>
   );
