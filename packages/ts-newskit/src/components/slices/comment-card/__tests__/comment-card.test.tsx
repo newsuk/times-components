@@ -62,6 +62,15 @@ it('should render the correct text, with Heading', () => {
   expect(quote).toBeInTheDocument();
 });
 
+it('should render the flag if available', () => {
+  renderComponent({ ...defaultProps, flag: '3 mins ago' });
+  const flag = screen.getByText('3 mins ago');
+  expect(flag).toBeInTheDocument();
+});
+it('should not render the flag if it is not available', () => {
+  renderComponent(defaultProps);
+  expect(screen.queryByText('3 mins ago')).toBeFalsy();
+});
 it('should render the correct image', () => {
   renderComponent(defaultProps);
 

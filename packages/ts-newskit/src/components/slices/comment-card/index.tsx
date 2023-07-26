@@ -1,6 +1,7 @@
 import { CardComposable, CardContent, CardMedia, TextBlock } from 'newskit';
 import React from 'react';
 import { CardHeadlineLink } from '../shared-styles';
+import { TagAndFlag } from '../shared/tag-and-flag';
 
 type ImageCrops = {
   url?: string;
@@ -18,13 +19,15 @@ export interface CommentCardProps {
   byline: string;
   headline: string;
   href: string;
+  flag?: string;
 }
 
 export const CommentCard = ({
   images,
   byline,
   headline,
-  href
+  href,
+  flag
 }: CommentCardProps) => {
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '1:1');
@@ -64,6 +67,7 @@ export const CommentCard = ({
         >
           {headline}
         </TextBlock>
+        {flag && <TagAndFlag flag={flag} />}
       </CardContent>
     </CardComposable>
   );
