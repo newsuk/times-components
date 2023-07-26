@@ -13,7 +13,7 @@ type ImageProps = {
   credits?: string;
   crops?: ImageCrops[];
 };
-type ArticleProps = {
+export type ArticleProps = {
   headline: string;
   flag?: string;
   standfirst?: string;
