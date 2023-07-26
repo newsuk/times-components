@@ -105,3 +105,4 @@ the project.
 `yarn commit` will commit files (same as `git commit`), and will aid the
 contributor with adding a suitable commit message inline with
 [conventional changelog](https://github.com/commitizen/cz-cli)
+
