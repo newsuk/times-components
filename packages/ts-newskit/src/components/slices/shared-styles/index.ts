@@ -58,9 +58,11 @@ export const FullWidthBlock = styled(Block)`
     ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
   }
 `;
-
+const setInlinePaddingStart = (space: string) => ({
+  paddingInlineStart: `${space}`
+});
 export const StyledSpan = styled.span`
   font-style: italic;
-  padding-left: 4px;
+  ${getSpacingCssFromTheme(setInlinePaddingStart, 'space010')};
   font-weight: 300;
 `;
