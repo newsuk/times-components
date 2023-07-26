@@ -9,7 +9,7 @@ const renderComponent = (props: CommentCardProps) =>
 const defaultProps = {
   images: {
     alt: '',
-    credit: 'Credit',
+    caption: 'Caption',
     crops: [
       {
         url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
@@ -78,7 +78,7 @@ it('should render the correct text, without Heading', () => {
   renderComponent({
     images: {
       alt: '',
-      credit: 'Credit',
+      caption: 'Caption',
       crops: [
         {
           url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',

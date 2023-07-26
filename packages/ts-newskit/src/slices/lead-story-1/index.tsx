@@ -76,7 +76,8 @@ export const LeadStory1 = ({
         : currentBreakpoint === 'sm'
           ? 'editorialHeadline050'
           : 'editorialHeadline060',
-    showTagL1: false
+    showTagL1: false,
+    hideImage: true
   };
 
   const modifiedLeadArticle = {

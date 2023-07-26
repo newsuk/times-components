@@ -349,7 +349,7 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
             <p
               class="css-9pk24b"
             >
-              Credit
+              Caption
             </p>
           </div>
           <div
@@ -1324,7 +1324,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
             <p
               class="css-9pk24b"
             >
-              Credit
+              Caption
             </p>
           </div>
           <div
@@ -2080,7 +2080,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
             <p
               class="css-9pk24b"
             >
-              Credit
+              Caption
             </p>
           </div>
           <div
@@ -3015,7 +3015,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
             <p
               class="css-9pk24b"
             >
-              Credit
+              Caption
             </p>
           </div>
           <div
