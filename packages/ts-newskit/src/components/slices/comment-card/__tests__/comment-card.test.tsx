@@ -41,6 +41,7 @@ const defaultProps = {
       }
     ]
   },
+  flag: '3 mins ago',
   byline: 'Journalist name',
   headline: 'Quote text',
   href: '/#'
@@ -62,6 +63,11 @@ it('should render the correct text, with Heading', () => {
   expect(quote).toBeInTheDocument();
 });
 
+it('should render the flag', () => {
+  renderComponent(defaultProps);
+  const flag = screen.getByText('3 mins ago');
+  expect(flag).toBeInTheDocument();
+});
 it('should render the correct image', () => {
   renderComponent(defaultProps);
 
