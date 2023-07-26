@@ -20,7 +20,7 @@ export const Title = styled.div`
 
 export const Text = styled.div`
   padding-top: 8px;
-  color: ${colours.functional.primary};  
+  color: ${colours.functional.primary};
   font-family: ${fonts.supporting};
   font-size: 18px;
   text-align: center;
