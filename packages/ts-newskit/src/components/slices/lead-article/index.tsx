@@ -26,7 +26,7 @@ type ListData = {
 
 type ImageProps = {
   alt?: string;
-  credit?: string;
+  caption?: string;
   crops?: ImageCrops[];
 };
 export interface LeadArticleProps {
@@ -100,7 +100,7 @@ export const LeadArticle = ({
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
 
-  const hasCaption = images && images.credit;
+  const hasCaption = images && images.caption;
   const headlineTypography = headlineTypographyPreset
     ? headlineTypographyPreset
     : imageTop
@@ -138,7 +138,7 @@ export const LeadArticle = ({
                 marginBlockStart="space020"
                 typographyPreset="utilityMeta010"
               >
-                {images && images.credit}
+                {images && images.caption}
               </TextBlock>
             )}
           </Block>

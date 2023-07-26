@@ -9,7 +9,7 @@ type ImageCrops = {
 
 type ImageProps = {
   alt?: string;
-  credit?: string;
+  caption?: string;
   crops?: ImageCrops[];
 };
 

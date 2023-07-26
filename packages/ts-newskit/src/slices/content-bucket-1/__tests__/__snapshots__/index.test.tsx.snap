@@ -101,7 +101,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             <p
               class="css-9pk24b"
             >
-              Credit
+              Caption
             </p>
           </div>
           <div
@@ -707,7 +707,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
             <p
               class="css-9pk24b"
             >
-              Credit
+              Caption
             </p>
           </div>
           <div
