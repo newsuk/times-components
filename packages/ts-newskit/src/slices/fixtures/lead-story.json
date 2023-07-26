@@ -5,7 +5,7 @@
       "href": ""
     },
     "headline": "Sarcacens an inclusive club? They didnt look out for me",
-    "summary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
+    "standfirst": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
     "images": {
       "alt": "",
       "caption": "Caption",
@@ -253,7 +253,7 @@
       "crops": []
     },
     "headline": "Short title of the card describing the main content",
-    "summary": "Short paragraph description of the article, outlining main story and focus.",
+    "standfirst": "Short paragraph description of the article, outlining main story and focus.",
     "tag": {
       "label": "Tag",
       "href": "/"
@@ -343,7 +343,7 @@
           ]
         },
         "headline": "Short title of the card describing the main content",
-        "summary": "Short paragraph description of the article, outlining main story and focus.",
+        "standfirst": "Short paragraph description of the article, outlining main story and focus.",
         "url": "#",
         "tag": {
           "label": "",
@@ -388,7 +388,7 @@
           ]
         },
         "headline": "Short title of the card describing the main content 2",
-        "summary": "Short paragraph description of the article, outlining main story and focus.",
+        "standfirst": "Short paragraph description of the article, outlining main story and focus.",
         "url": "#",
         "tag": {
           "label": "",
@@ -517,7 +517,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "standfirst": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -562,7 +562,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content 2",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "standfirst": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -609,7 +609,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "standfirst": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -654,7 +654,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content 2",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
+      "standfirst": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
