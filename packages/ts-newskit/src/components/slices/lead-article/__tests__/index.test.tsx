@@ -28,11 +28,11 @@ describe('Render Component one', () => {
     expect(headlineText).toBeInTheDocument();
   });
 
-  it('should render correct summary', () => {
+  it('should render correct standfirst', () => {
     const { getByText } = renderComponent();
 
-    const summaryText = getByText(leadArticle.summary);
-    expect(summaryText).toBeInTheDocument();
+    const standfirstText = getByText(leadArticle.standfirst);
+    expect(standfirstText).toBeInTheDocument();
   });
   it('should render correct readingTime', () => {
     const { getByText } = renderComponent();
