@@ -13,7 +13,7 @@ interface CommentStackProps {
 export const CommentStack = ({ comments }: CommentStackProps) => {
   return (
     <>
-      <FullWidthBlock>
+      <FullWidthBlock id="COMMENT STACK">
         <Divider
           overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
         />
