@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.68.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.13...@times-components/ts-newskit@1.68.0) (2023-07-26)
+
+
+### Features
+
+* **TMRX-1314:** Add flag to comment cards ([#3459](https://github.com/newsuk/times-components/issues/3459)) ([f3f4ed5](https://github.com/newsuk/times-components/commit/f3f4ed5db6acfed939e73863ae0907bc112aa768))
+
+
+
+
+
 ## [1.67.13](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.12...@times-components/ts-newskit@1.67.13) (2023-07-26)
 
 **Note:** Version bump only for package @times-components/ts-newskit
