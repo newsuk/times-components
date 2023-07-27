@@ -311,7 +311,6 @@ function Head({
       url: logoUrl
     }
   };
-
   const liveBlogUpdateSchema = getLiveBlogUpdates(
     article,
     publisherSchema,
