@@ -47,6 +47,9 @@
     "test:unit:updatesnapshot": "lerna run test:unit:updatesnapshot --stream",
     "test:e2e": "yarn bundle && lerna run test:integration --stream",
     "test:e2e:debug": "yarn bundle && lerna run test:integration:debug --stream",
+    "lerna:publish:verdaccio": "yarn lerna publish --conventional-commits --concurrency=1  --registry=\"http://localhost:4873\" --no-verify-access --no-git-tag-version   --no-verify-registry --yes ",
+    "verdaccio:start": "yarn verdaccio -c ./.verdaccio-config.yaml",
+    "verdaccio:start:detached": "yarn pm2 start \"yarn verdaccio:start\"",
     "watch": "lerna run watch --stream --no-sort --concurrency 100"
   },
   "jest": {
@@ -149,6 +152,11 @@
   },
   "dependencies": {
     "@babel/runtime-corejs2": "7.4.4",
-    "opentype.js": "1.1.0"
+    "chalk": "4.1.2",
+    "get-yarn-workspaces": "1.0.2",
+    "opentype.js": "1.1.0",
+    "pm2": "5.3.0",
+    "verdaccio": "5.26.2",
+    "winston": "3.10.0"
   }
 }

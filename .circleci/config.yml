@@ -208,6 +208,59 @@ jobs:
                       yarn storybook:publish
                   working_directory: ~/project/
 
+    verdaccio-test:
+      executor: node
+      steps:
+        - checkout
+        - install-lerna
+        - run:
+            name: Install Dependencies
+            command: yarn install --frozen-lockfile --ignore-engines
+            working_directory: ~/project/
+        - run:
+            name: Clean Lerna
+            command: lerna clean -y
+        - run:
+            name: Start Verdaccio
+            command: yarn verdaccio:start:detached
+            working_directory: ~/project/
+        - run:
+            name: Init Lerna
+            command: lerna init
+        - run:
+            name: Configure NPM to use local registry
+            command: npm config set registry http://localhost:4873
+        - run:
+            name: Configure Yarn registry
+            command: yarn config set registry http://localhost:4873/
+        - run:
+            name: Check Changed Packages
+            command: |
+              CHANGED_PACKAGES=$(lerna changed --json 2>/dev/null || echo "")
+              echo "$CHANGED_PACKAGES" > changed-packages.json
+        - run:
+            name: Publish Changed Packages to Verdaccio
+            command: |
+              # Use the changed-packages.json file to determine which packages to publish
+              PACKAGES_TO_PUBLISH=$(cat changed-packages.json | jq -r '.[].name')
+              if [ -n "$PACKAGES_TO_PUBLISH" ]; then
+                lerna run bundle --stream
+                yarn lerna:publish:verdaccio
+              else
+                echo "No changed packages to publish."
+              fi
+        - run:
+            name: Unset npm registry
+            command: |
+              sed -i '/registry=http:\/\/localhost:4873\//d' .npmrc
+        - run:
+            name: Point registry back to yarnpkg.com
+            command: npm config set registry https://registry.yarnpkg.com
+        - run:
+            name: Remove npm and Yarn config files
+            command: |
+              yarn config delete registry
+
 workflows:
     version: 2
 
@@ -234,14 +287,22 @@ workflows:
             - run_cypress_tests:
                   requires:
                       - setup
+
+            - verdaccio-test-approval:
+                type: approval
+                requires:
+                  - build_storybook
+                  - run_lint
+                  - run_noplatform_tests
+                  - run_web_tests
+                  - run_unit_tests
+                  - run_cypress_tests
+            - verdaccio-test:
+                requires:
+                  - verdaccio-test-approval
             - publish_coverage:
-                  requires:
-                      - build_storybook
-                      - run_lint
-                      - run_noplatform_tests
-                      - run_web_tests
-                      - run_unit_tests
-                      - run_cypress_tests
+                requires:
+                  - verdaccio-test
             - publish_storybook:
                   filters:
                     branches:
@@ -262,12 +323,7 @@ workflows:
                         ignore:
                           - master
                   requires:
-                      - build_storybook
-                      - run_lint
-                      - run_noplatform_tests
-                      - run_web_tests
-                      - run_unit_tests
-                      - run_cypress_tests
+                      - verdaccio-test
             - publish_canary:
                   filters:
                     branches:
@@ -281,9 +337,4 @@ workflows:
                         only:
                           - master
                   requires:
-                      - build_storybook
-                      - run_lint
-                      - run_noplatform_tests
-                      - run_web_tests
-                      - run_unit_tests
-                      - run_cypress_tests
+                      - verdaccio-test
