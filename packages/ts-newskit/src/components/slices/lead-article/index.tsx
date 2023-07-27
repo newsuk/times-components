@@ -102,7 +102,11 @@ export const LeadArticle = ({
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
 
-  const hasCaption = images && images.caption;
+  const hasCaption = !!(images && images.caption);
+  const hasCredits = !!(images && images.credits);
+
+  const hasCaptionOrCredits = hasCaption || hasCredits;
+
   const headlineTypography = headlineTypographyPreset
     ? headlineTypographyPreset
     : imageTop
@@ -135,13 +139,18 @@ export const LeadArticle = ({
             marginBlockStart={imageMarginBlockStart}
           >
             <FullWidthCardMediaMob {...cardImage} />
-            {hasCaption && (
+            {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"
                 typographyPreset="utilityMeta010"
               >
                 {images && images.caption}
-                {images && <StyledSpan>{images.credits}</StyledSpan>}
+                {images &&
+                  images.credits && (
+                    <StyledSpan hasCaption={hasCaption}>
+                      {images.credits}
+                    </StyledSpan>
+                  )}
               </TextBlock>
             )}
           </Block>

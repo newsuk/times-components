@@ -61,8 +61,11 @@ export const FullWidthBlock = styled(Block)`
 const setInlinePaddingStart = (space: string) => ({
   paddingInlineStart: `${space}`
 });
-export const StyledSpan = styled.span`
+export const StyledSpan = styled.span<{ hasCaption: boolean }>`
   font-style: italic;
-  ${getSpacingCssFromTheme(setInlinePaddingStart, 'space010')};
+  ${({ hasCaption }) =>
+    hasCaption
+      ? getSpacingCssFromTheme(setInlinePaddingStart, 'space010')
+      : getSpacingCssFromTheme(setInlinePaddingStart, 'space000')};
   font-weight: 300;
 `;
