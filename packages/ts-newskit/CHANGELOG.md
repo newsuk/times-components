@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.69.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.68.0...@times-components/ts-newskit@1.69.0) (2023-07-27)
+
+
+### Features
+
+* **TMRX-1314:** add credits lead image articles ([#3460](https://github.com/newsuk/times-components/issues/3460)) ([bd5d66b](https://github.com/newsuk/times-components/commit/bd5d66b40dbb1050917435866c819bcf4a98d64d))
+
+
+
+
+
 # [1.68.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.13...@times-components/ts-newskit@1.68.0) (2023-07-26)
 
 
