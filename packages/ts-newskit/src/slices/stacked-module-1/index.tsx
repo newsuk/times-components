@@ -4,6 +4,7 @@ import { Article, ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { CustomStackLayout } from '../shared';
 import { StackItem, StyledDivider } from '../shared-styles';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export interface StackModule1Props {
   articles: ArticleProps[];
@@ -62,7 +63,7 @@ const articleStack = ({
           return (
             <React.Fragment key={article.headline}>
               <Article
-                {...article}
+                {...clearCreditsAndCaption(article)}
                 hideImage={hasImage || (hasImage || isDesktop)}
                 isLeadImage={isMob && articleIndex === 0}
                 hasTopBorder={hasImage}

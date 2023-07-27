@@ -27,7 +27,12 @@ exports[`Render Component one should render a snapshot 1`] = `
       <p
         class="css-9pk24b"
       >
-        Caption
+        Sarcacens an inclusive club? They didnt look
+        <span
+          class="css-9hwrm8"
+        >
+          Gareth Fuller/Press Association
+        </span>
       </p>
     </div>
     <div

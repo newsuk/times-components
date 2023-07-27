@@ -3,6 +3,7 @@ import { Block, Divider, GridLayout, BreakpointKeys } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { StackItem, StyledDivider, ScrollContainer } from '../shared-styles';
 import { ComposedArticleStack } from './composed-article-stack';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export const ArticleStackLarge = ({
   articles,
@@ -41,7 +42,7 @@ export const ArticleStackLarge = ({
         return (
           <React.Fragment key={article.headline}>
             <Article
-              {...article}
+              {...clearCreditsAndCaption(article)}
               hasTopBorder={articleTopBorder}
               hideImage={breakpoint === 'lg' && !topArticle}
             />
@@ -96,7 +97,7 @@ export const ArticleStackSmall = ({
           <React.Fragment key={article.headline}>
             <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
               <Article
-                {...article}
+                {...clearCreditsAndCaption(article)}
                 hasTopBorder={hasTopBorder}
                 hideImage={hideImage}
                 isFullWidth={isFullWidth}

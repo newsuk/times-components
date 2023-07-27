@@ -3,6 +3,7 @@ import { BreakpointKeys, Divider, GridLayout } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { ArticleDividerXL } from './styles';
 import { ScrollContainer } from '../shared-styles';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export const ArticleStack = ({
   articles,
@@ -38,7 +39,7 @@ export const ArticleStack = ({
         return (
           <React.Fragment key={article.headline}>
             <Article
-              {...article}
+              {...clearCreditsAndCaption(article)}
               hasTopBorder={articleTopBorder}
               hideImage={breakpoint === 'lg'}
             />

@@ -325,7 +325,12 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               <p
                 class="css-9pk24b"
               >
-                Caption
+                Sarcacens an inclusive club? They didnt look out for me
+                <span
+                  class="css-9hwrm8"
+                >
+                  Gareth Fuller/Press Association
+                </span>
               </p>
             </div>
             <div
@@ -428,11 +433,6 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               <div
                 class="css-diffbd"
               >
-                <p
-                  class="css-1khw599"
-                >
-                  Caption
-                </p>
                 <a
                   class="css-u57k3c"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -1409,7 +1409,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <p
                 class="css-9pk24b"
               >
-                Caption
+                Sarcacens an inclusive club? They didnt look out for me
+                <span
+                  class="css-9hwrm8"
+                >
+                  Gareth Fuller/Press Association
+                </span>
               </p>
             </div>
             <div
@@ -1512,11 +1517,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
-                <p
-                  class="css-1khw599"
-                >
-                  Caption
-                </p>
                 <a
                   class="css-u57k3c"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -2274,7 +2274,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <p
                 class="css-9pk24b"
               >
-                Caption
+                Sarcacens an inclusive club? They didnt look out for me
+                <span
+                  class="css-9hwrm8"
+                >
+                  Gareth Fuller/Press Association
+                </span>
               </p>
             </div>
             <div
@@ -3302,7 +3307,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <p
                 class="css-9pk24b"
               >
-                Caption
+                Sarcacens an inclusive club? They didnt look out for me
+                <span
+                  class="css-9hwrm8"
+                >
+                  Gareth Fuller/Press Association
+                </span>
               </p>
             </div>
             <div

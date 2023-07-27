@@ -8,6 +8,7 @@ import { Article, ArticleProps } from '../../components/slices/article';
 import { StackItem, StyledDivider } from '../shared-styles';
 import { CustomStackLayout } from '../shared';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export interface ContentBucket2Props {
   section: SliceHeaderProps;
@@ -56,7 +57,7 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
             return (
               <React.Fragment key={article.headline}>
                 <Article
-                  {...article}
+                  {...clearCreditsAndCaption(article)}
                   hideImage={isAfterFirstArticle}
                   isLeadImage={isMob && articleIndex === 0}
                   hasTopBorder={isMob && articleIndex > 0}

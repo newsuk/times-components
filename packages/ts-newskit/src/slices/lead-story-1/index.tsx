@@ -24,6 +24,7 @@ import {
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
 import { StyledDivider } from './styles';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
@@ -61,7 +62,7 @@ export const LeadStory1 = ({
   const modifiedArticles =
     currentBreakpoint === 'xl'
       ? articles.map(article => ({
-          ...article,
+          ...clearCreditsAndCaption(article),
           imageRight: true
         }))
       : articles;

@@ -4,6 +4,17 @@ import { render, screen } from '../../../../utils/test-utils';
 import { TagAndFlag } from '../tag-and-flag';
 
 describe('TagAndFlag', () => {
+  it('should render 0 margin when marginBlockStart not provided', () => {
+    render(
+      <TagAndFlag
+        flag="flag"
+        tag={{ label: 'Tag', href: '/' }}
+        marginBlockStart="space000"
+      />
+    );
+    const tagAndFlag = screen.getByTestId('tag-and-flag');
+    expect(tagAndFlag.style.marginTop).toBe('');
+  });
   it('should render a snapshot', () => {
     const { asFragment } = render(
       <TagAndFlag

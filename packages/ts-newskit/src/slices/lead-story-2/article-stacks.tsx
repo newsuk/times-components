@@ -13,6 +13,7 @@ import {
 } from '../../components/slices/lead-article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { RelativeBlockItem } from '../shared-styles';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export const ArticleStack = ({
   verticalArticles,
@@ -26,7 +27,7 @@ export const ArticleStack = ({
   horizontalArticleContentWidth?: string;
 }) => {
   const modifiedHorizontalArticles = horizontalArticles.map(item => ({
-    ...item,
+    ...clearCreditsAndCaption(item),
     imageTop: true,
     headlineTypographyPreset: 'editorialHeadline020',
     hasTopBorder: false

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Block } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 interface ArticleStackProps {
   articles: ArticleProps[];
@@ -16,7 +17,7 @@ export const ArticleStack: React.FC<ArticleStackProps> = ({ articles }) => {
         return (
           <React.Fragment key={article.headline}>
             <Article
-              {...article}
+              {...clearCreditsAndCaption(article)}
               hasTopBorder={articleTopBorder}
               hideImage={!topArticle}
             />
