@@ -180,6 +180,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
         >
           <div
             class="css-1g5vzsh"
+            id="COMMENT STACK"
           >
             <hr
               aria-hidden="true"
@@ -232,6 +233,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
+                <div
+                  class="css-eu36n0"
+                  data-testid="tag-and-flag"
+                >
+                  <span
+                    class="css-1vzvkql"
+                  >
+                    3 mins ago
+                  </span>
+                </div>
               </div>
             </div>
             <hr
@@ -281,6 +292,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
+                <div
+                  class="css-eu36n0"
+                  data-testid="tag-and-flag"
+                >
+                  <span
+                    class="css-1vzvkql"
+                  >
+                    21 mins ago
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -501,6 +522,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
       >
         <div
           class="css-1g5vzsh"
+          id="COMMENT STACK"
         >
           <hr
             aria-hidden="true"
@@ -553,6 +575,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               >
                 Now is Willis’s chance to show he’s got more to offer than Curry
               </p>
+              <div
+                class="css-eu36n0"
+                data-testid="tag-and-flag"
+              >
+                <span
+                  class="css-1vzvkql"
+                >
+                  3 mins ago
+                </span>
+              </div>
             </div>
           </div>
           <hr
@@ -602,6 +634,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               >
                 Now is Willis’s chance to show he’s got more to offer than Curry
               </p>
+              <div
+                class="css-eu36n0"
+                data-testid="tag-and-flag"
+              >
+                <span
+                  class="css-1vzvkql"
+                >
+                  21 mins ago
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -786,6 +828,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
         >
           <div
             class="css-1g5vzsh"
+            id="COMMENT STACK"
           >
             <hr
               aria-hidden="true"
@@ -838,6 +881,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
+                <div
+                  class="css-eu36n0"
+                  data-testid="tag-and-flag"
+                >
+                  <span
+                    class="css-1vzvkql"
+                  >
+                    3 mins ago
+                  </span>
+                </div>
               </div>
             </div>
             <hr
@@ -887,6 +940,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
+                <div
+                  class="css-eu36n0"
+                  data-testid="tag-and-flag"
+                >
+                  <span
+                    class="css-1vzvkql"
+                  >
+                    21 mins ago
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1108,6 +1171,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
       >
         <div
           class="css-1g5vzsh"
+          id="COMMENT STACK"
         >
           <hr
             aria-hidden="true"
@@ -1160,6 +1224,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
               >
                 Now is Willis’s chance to show he’s got more to offer than Curry
               </p>
+              <div
+                class="css-eu36n0"
+                data-testid="tag-and-flag"
+              >
+                <span
+                  class="css-1vzvkql"
+                >
+                  3 mins ago
+                </span>
+              </div>
             </div>
           </div>
           <hr
@@ -1209,6 +1283,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
               >
                 Now is Willis’s chance to show he’s got more to offer than Curry
               </p>
+              <div
+                class="css-eu36n0"
+                data-testid="tag-and-flag"
+              >
+                <span
+                  class="css-1vzvkql"
+                >
+                  21 mins ago
+                </span>
+              </div>
             </div>
           </div>
         </div>

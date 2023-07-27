@@ -34,7 +34,7 @@ type ImageProps = {
 export interface LeadArticleProps {
   headline: string;
   flag?: string;
-  standfirst?: string;
+  shortSummary?: string;
   tagL1?: {
     label: string;
     href: string;
@@ -61,7 +61,7 @@ export interface LeadArticleProps {
 export const LeadArticle = ({
   headline,
   flag,
-  standfirst,
+  shortSummary,
   tagL1,
   images,
   url,
@@ -186,7 +186,7 @@ export const LeadArticle = ({
         >
           {headline}
         </CardHeadlineLink>
-        {standfirst && (
+        {shortSummary && (
           <TextBlock
             typographyPreset={{
               xs: 'editorialParagraph020',
@@ -195,7 +195,7 @@ export const LeadArticle = ({
             marginBlockStart={textBlockMarginBlockStart}
             as="p"
           >
-            {standfirst}
+            {shortSummary}
           </TextBlock>
         )}
         <TagAndFlag

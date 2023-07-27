@@ -240,7 +240,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content",
-      "standfirst": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -286,7 +286,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content",
-      "standfirst": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -332,7 +332,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content",
-      "standfirst": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -378,7 +378,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content",
-      "standfirst": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
