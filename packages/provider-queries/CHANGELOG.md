@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.20.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.20.0...@times-components/provider-queries@2.20.1) (2023-07-27)
+
+
+### Bug Fixes
+
+* **TMRX-1307:** Add name field to VideoObjects ([#3463](https://github.com/newsuk/times-components/issues/3463)) ([fc4d3da](https://github.com/newsuk/times-components/commit/fc4d3dab8bf615c5f9a2565e6899774ad8abc2c3))
+
+
+
+
+
 # [2.20.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.19.0...@times-components/provider-queries@2.20.0) (2023-06-01)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.110.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.7...@times-components/article-skeleton@1.110.8) (2023-07-27)
+
+
+### Bug Fixes
+
+* **TMRX-1307:** Add name field to VideoObjects ([#3463](https://github.com/newsuk/times-components/issues/3463)) ([fc4d3da](https://github.com/newsuk/times-components/commit/fc4d3dab8bf615c5f9a2565e6899774ad8abc2c3))
+
+
+
+
+
 ## [1.110.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.6...@times-components/article-skeleton@1.110.7) (2023-07-27)
 
 **Note:** Version bump only for package @times-components/article-skeleton

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider-queries",
-  "version": "2.20.0",
+  "version": "2.20.1",
   "description": "GraphQL queries for sharing",
   "main": "dist/provider-queries",
   "dev": "src/provider-queries",

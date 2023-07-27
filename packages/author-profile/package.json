@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "6.15.69",
+  "version": "6.15.70",
   "description": "Author profile information along with a list of articles they have written ",
   "main": "dist/author-profile",
   "dev": "src/author-profile",
@@ -37,8 +37,8 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.1",
     "@times-components/jest-serializer": "3.9.1",
-    "@times-components/provider-queries": "2.20.0",
-    "@times-components/provider-test-tools": "1.29.0",
+    "@times-components/provider-queries": "2.20.1",
+    "@times-components/provider-test-tools": "1.29.1",
     "@times-components/storybook": "4.10.1",
     "@times-components/tealium-utils": "0.9.0",
     "@times-components/test-utils": "2.4.1",
@@ -59,7 +59,7 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/article-list": "9.17.9",
+    "@times-components/article-list": "9.17.10",
     "@times-components/gradient": "3.5.9",
     "@times-components/icons": "2.20.9",
     "@times-components/image": "6.15.2",
@@ -67,7 +67,7 @@
     "@times-components/markup": "3.8.9",
     "@times-components/markup-forest": "1.9.1",
     "@times-components/pagination": "3.12.9",
-    "@times-components/provider": "1.38.1",
+    "@times-components/provider": "1.38.2",
     "@times-components/responsive": "0.14.28",
     "@times-components/tracking": "2.20.1",
     "@times-components/ts-newskit": "1.69.0",
