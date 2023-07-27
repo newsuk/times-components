@@ -361,11 +361,12 @@ function Head({
       productID: swgProductId
     };
   }
+
   const videoJsonLD = hasVideo
     ? {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        name: leadAsset ? leadAsset.title : title,
+        name: leadAsset && leadAsset.title ? leadAsset.title : title,
         uploadDate: dateModified,
         thumbnailUrl,
         description:
