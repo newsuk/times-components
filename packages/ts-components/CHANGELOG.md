@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.76.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.75.4...@times-components/ts-components@1.76.0) (2023-07-27)
+
+
+### Features
+
+* **TMG-773:** Fix Welcome Banner styling ([#3461](https://github.com/newsuk/times-components/issues/3461)) ([4cb7e26](https://github.com/newsuk/times-components/commit/4cb7e2626d8ff4cc55cbbceabc46356df37714ec))
+
+
+
+
+
 ## [1.75.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.75.3...@times-components/ts-components@1.75.4) (2023-07-27)
 
 **Note:** Version bump only for package @times-components/ts-components
