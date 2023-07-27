@@ -104,4 +104,36 @@ describe('Render Component one', () => {
       'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173'
     );
   });
+  it('should render StyledSpan if caption not provided', () => {
+    (useBreakpointKey as any).mockReturnValue('lg');
+
+    const leadStoryDataWithCaption = {
+      ...leadStoryData,
+      images: {
+        ...leadStoryData.images,
+        caption: '',
+        credits: 'test'
+      }
+    };
+    const { container } = render(<LeadArticle {...leadStoryDataWithCaption} />);
+
+    const styledSpan = container.querySelector('span');
+    expect(styledSpan).toBeInTheDocument();
+  });
+  it('should render StyledSpan with if caption provided', () => {
+    (useBreakpointKey as any).mockReturnValue('lg');
+
+    const leadStoryDataWithCaption = {
+      ...leadStoryData,
+      images: {
+        ...leadStoryData.images,
+        caption: 'caption',
+        credits: 'test'
+      }
+    };
+    const { container } = render(<LeadArticle {...leadStoryDataWithCaption} />);
+
+    const styledSpan = container.querySelector('span');
+    expect(styledSpan).toBeInTheDocument();
+  });
 });
