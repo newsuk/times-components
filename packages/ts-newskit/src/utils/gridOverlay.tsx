@@ -29,7 +29,7 @@ const StyledCell = styled(Cell)`
 export const GridOverlay = ({ show }: { show?: boolean }) => {
   const cellsArray = [...Array(12).keys()];
   const cells = cellsArray.map(cell => (
-    <StyledCell>
+    <StyledCell key={cell}>
       <StyledCellBlock>{cell + 1}</StyledCellBlock>
     </StyledCell>
   ));

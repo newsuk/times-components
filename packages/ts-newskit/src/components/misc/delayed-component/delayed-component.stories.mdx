@@ -1,0 +1,43 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+
+import { TCThemeProvider } from '../../../utils/index.tsx';
+import { TimesWebLightTheme } from '../../../theme';
+
+import { DelayedComponent } from './delayed-component.tsx';
+
+<Meta
+  title="Newskit Components/Misc/DelayedComponent"
+  component={DelayedComponent}
+/>
+
+# DelayedComponent component
+The `DelayedComponent` component is a helper component used to delay the mount or dismount of the children passed to the component. 
+
+This component takes in three props: `initialState`, `delay` and `children`. 
+initialState - This used to set the initial component state, if it is meant to be displayed initially and removed after x amount of time intialState would be true. and Vice versa.
+delay - This is the time in milliseconds it takes for the component to mount or unmount. 
+
+Given the nature of this component you may need to play around with the controls so that you can see what it's doing. 
+
+
+
+## Props
+<Props of={DelayedComponent} />
+
+## Code Example
+`<DelayedComponent initialState={true} delay={8000}><div>Hello</div></DelayedComponent>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const DelayedComponentStory = ({ initialState, delay }) => (
+  <TCThemeProvider theme={TimesWebLightTheme}>
+    <DelayedComponent initialState={initialState} delay={delay}><div style={{ fontSize: '20px', color: 'red'}}>I am a delayed component</div></DelayedComponent>
+  </TCThemeProvider>
+);
+
+<Story name="DelayedComponent"
+  args={{ initialState: true, delay: 8000} }
+>
+  {DelayedComponentStory.bind({})}
+</Story>

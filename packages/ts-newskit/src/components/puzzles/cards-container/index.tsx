@@ -9,14 +9,16 @@ interface CardsContainerProps {
   cards: Puzzle[];
   title?: string;
   isScrollable?: boolean;
-  seeAllLink: string;
+  seeAllLink?: string;
+  isImageCropped?: boolean;
 }
 
 export const CardsContainer = ({
   cards,
   title,
   isScrollable = false,
-  seeAllLink
+  seeAllLink,
+  isImageCropped = false
 }: CardsContainerProps) => {
   const scrollRef = useRef(null);
   const cardRef = useRef(null);
@@ -93,7 +95,7 @@ export const CardsContainer = ({
               data-test-id="single-card"
               ref={cardRef}
             >
-              <PuzzleCard data={card} />
+              <PuzzleCard data={card} isImageCropped={isImageCropped} />
             </GridLayoutItem>
           ))}
         </GridLayout>

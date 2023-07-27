@@ -7,7 +7,8 @@ import {
   CardMedia,
   getSpacingCssFromTheme,
   getMediaQueryFromTheme,
-  LinkInline
+  LinkInline,
+  Hidden
 } from 'newskit';
 
 export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
@@ -47,8 +48,24 @@ export const FullWidthCardMediaMob = styled(CardMedia)`
   }
 `;
 
-export const FullWidthDividerMob = styled(Block)`
+export const FullWidthHidden = styled(Hidden)`
+  width: 100%;
+`;
+export const FullWidthBlock = styled(Block)`
+  width: 100%;
   ${getMediaQueryFromTheme('xs', 'md')} {
+    width: 100vw;
     ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
   }
+`;
+const setInlinePaddingStart = (space: string) => ({
+  paddingInlineStart: `${space}`
+});
+export const StyledSpan = styled.span<{ hasCaption: boolean }>`
+  font-style: italic;
+  ${({ hasCaption }) =>
+    hasCaption
+      ? getSpacingCssFromTheme(setInlinePaddingStart, 'space010')
+      : getSpacingCssFromTheme(setInlinePaddingStart, 'space000')};
+  font-weight: 300;
 `;

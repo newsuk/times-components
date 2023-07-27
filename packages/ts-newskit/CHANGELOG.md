@@ -3,6 +3,434 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.69.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.68.0...@times-components/ts-newskit@1.69.0) (2023-07-27)
+
+
+### Features
+
+* **TMRX-1314:** add credits lead image articles ([#3460](https://github.com/newsuk/times-components/issues/3460)) ([bd5d66b](https://github.com/newsuk/times-components/commit/bd5d66b40dbb1050917435866c819bcf4a98d64d))
+
+
+
+
+
+# [1.68.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.13...@times-components/ts-newskit@1.68.0) (2023-07-26)
+
+
+### Features
+
+* **TMRX-1314:** Add flag to comment cards ([#3459](https://github.com/newsuk/times-components/issues/3459)) ([f3f4ed5](https://github.com/newsuk/times-components/commit/f3f4ed5db6acfed939e73863ae0907bc112aa768))
+
+
+
+
+
+## [1.67.13](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.12...@times-components/ts-newskit@1.67.13) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.67.12](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.11...@times-components/ts-newskit@1.67.12) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.67.11](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.10...@times-components/ts-newskit@1.67.11) (2023-07-26)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** increase margin to match with design ([#3453](https://github.com/newsuk/times-components/issues/3453)) ([31db227](https://github.com/newsuk/times-components/commit/31db227a22a7c497f100b1b4f3a698c26aa5ee70))
+
+
+
+
+
+## [1.67.10](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.9...@times-components/ts-newskit@1.67.10) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.67.9](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.8...@times-components/ts-newskit@1.67.9) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.67.8](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.7...@times-components/ts-newskit@1.67.8) (2023-07-25)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** fix image jumping issue ([#3450](https://github.com/newsuk/times-components/issues/3450)) ([8b19feb](https://github.com/newsuk/times-components/commit/8b19feb5c74e115a6b0e7bef61d0efc6e0535a8b))
+
+
+
+
+
+## [1.67.7](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.6...@times-components/ts-newskit@1.67.7) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.67.6](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.5...@times-components/ts-newskit@1.67.6) (2023-07-24)
+
+
+### Bug Fixes
+
+* **TMRX-1313:** Fix breakpoint key on slices ([#3448](https://github.com/newsuk/times-components/issues/3448)) ([a88f82a](https://github.com/newsuk/times-components/commit/a88f82a1f711de612fd2ac5f7cbb62ce739c0664))
+
+
+
+
+
+## [1.67.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.4...@times-components/ts-newskit@1.67.5) (2023-07-24)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** try to fix image flashing ([#3447](https://github.com/newsuk/times-components/issues/3447)) ([83fe818](https://github.com/newsuk/times-components/commit/83fe81806751ad629b056a6e410c87d35f6a1bb3))
+
+
+
+
+
+## [1.67.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.3...@times-components/ts-newskit@1.67.4) (2023-07-24)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** remove external link icon ([#3442](https://github.com/newsuk/times-components/issues/3442)) ([9ef5d21](https://github.com/newsuk/times-components/commit/9ef5d21fb33b760b572a93b618b4221330b4fb0d))
+
+
+
+
+
+## [1.67.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.2...@times-components/ts-newskit@1.67.3) (2023-07-21)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** swap horizontal article stack with vertical ([#3439](https://github.com/newsuk/times-components/issues/3439)) ([77a83d3](https://github.com/newsuk/times-components/commit/77a83d370062e76e8492445098d91cadce052917))
+
+
+
+
+
+## [1.67.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.1...@times-components/ts-newskit@1.67.2) (2023-07-21)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** Try to fix breakpoint key issue ([#3440](https://github.com/newsuk/times-components/issues/3440)) ([831c363](https://github.com/newsuk/times-components/commit/831c36339b4b45bc20d8582751b8b58f8c5fb1f5))
+
+
+
+
+
+## [1.67.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.67.0...@times-components/ts-newskit@1.67.1) (2023-07-21)
+
+
+### Bug Fixes
+
+* **TMRX-1314:** change image props ([#3437](https://github.com/newsuk/times-components/issues/3437)) ([935a0ee](https://github.com/newsuk/times-components/commit/935a0eef85bf2932d87bc8ae2887a8fbc1deed7c))
+
+
+
+
+
+# [1.67.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.66.0...@times-components/ts-newskit@1.67.0) (2023-07-20)
+
+
+### Features
+
+* **TMRX-1250:** remove update button feature flag ([#3435](https://github.com/newsuk/times-components/issues/3435)) ([b32914a](https://github.com/newsuk/times-components/commit/b32914a4dab11cdecc3b36f8579f679429208227))
+
+
+
+
+
+# [1.66.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.65.1...@times-components/ts-newskit@1.66.0) (2023-07-19)
+
+
+### Features
+
+* **TMRX-1314:** match the props with tpa ([#3432](https://github.com/newsuk/times-components/issues/3432)) ([4d106aa](https://github.com/newsuk/times-components/commit/4d106aa16ac1bb7f1fd3ef0c1b61161aeff538ce))
+
+
+
+
+
+## [1.65.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.65.0...@times-components/ts-newskit@1.65.1) (2023-07-18)
+
+
+### Bug Fixes
+
+* **TMRX-1250:** Revert state reset and point to publishedTime ([#3433](https://github.com/newsuk/times-components/issues/3433)) ([83457f2](https://github.com/newsuk/times-components/commit/83457f284586c14ee7e4c4cef2d5316dc05a2dd8))
+
+
+
+
+
+# [1.65.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.64.0...@times-components/ts-newskit@1.65.0) (2023-07-18)
+
+
+### Features
+
+* **TMRX-1250:** Updates to update button ([#3431](https://github.com/newsuk/times-components/issues/3431)) ([555284d](https://github.com/newsuk/times-components/commit/555284d02bb5e2360843d85cb70e889b969df590))
+
+
+
+
+
+# [1.64.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.63.0...@times-components/ts-newskit@1.64.0) (2023-07-18)
+
+
+### Features
+
+* **TMRX-1250:** Live update button behind flag ([#3430](https://github.com/newsuk/times-components/issues/3430)) ([5069dd6](https://github.com/newsuk/times-components/commit/5069dd62174d9dd63cf78a4b30e8b7ea9582f6b5))
+
+
+
+
+
+# [1.63.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.62.3...@times-components/ts-newskit@1.63.0) (2023-07-17)
+
+
+### Features
+
+* **TMRX-1250:** Live updates behind a flag ([#3429](https://github.com/newsuk/times-components/issues/3429)) ([2fe0200](https://github.com/newsuk/times-components/commit/2fe02005cde5042d7d2ad69c879d0b9a4c0411fc))
+
+
+
+
+
+## [1.62.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.62.2...@times-components/ts-newskit@1.62.3) (2023-07-17)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.62.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.62.1...@times-components/ts-newskit@1.62.2) (2023-07-17)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.62.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.62.0...@times-components/ts-newskit@1.62.1) (2023-07-13)
+
+
+### Bug Fixes
+
+* Added isImageCropped to CardsContainer component. ([#3426](https://github.com/newsuk/times-components/issues/3426)) ([5c52a84](https://github.com/newsuk/times-components/commit/5c52a842f052333f8c9f0c983f92442960ffb0a7))
+
+
+
+
+
+# [1.62.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.61.0...@times-components/ts-newskit@1.62.0) (2023-07-13)
+
+
+### Features
+
+* **TMST 725:** image crop ([#3422](https://github.com/newsuk/times-components/issues/3422)) ([4507f1a](https://github.com/newsuk/times-components/commit/4507f1a3013dfdaa770411eb28e2aad21da9a6cc))
+
+
+
+
+
+# [1.61.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.9...@times-components/ts-newskit@1.61.0) (2023-07-11)
+
+
+### Features
+
+* **TMST-751:** removed puzzle card unecesary components ([#3421](https://github.com/newsuk/times-components/issues/3421)) ([460ff49](https://github.com/newsuk/times-components/commit/460ff49699d70975fae0e850f0129d6bd48d64f8))
+
+
+
+
+
+## [1.60.9](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.8...@times-components/ts-newskit@1.60.9) (2023-07-07)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.60.8](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.7...@times-components/ts-newskit@1.60.8) (2023-07-06)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.60.7](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.6...@times-components/ts-newskit@1.60.7) (2023-07-06)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.60.6](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.5...@times-components/ts-newskit@1.60.6) (2023-07-03)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.60.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.4...@times-components/ts-newskit@1.60.5) (2023-06-30)
+
+
+### Bug Fixes
+
+* **TMRX-1348:** vertical scroll bounce ([#3414](https://github.com/newsuk/times-components/issues/3414)) ([0b87ddf](https://github.com/newsuk/times-components/commit/0b87ddfb2cca9df876f33b98f9f3d1dd0ef713bd))
+
+
+
+
+
+## [1.60.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.3...@times-components/ts-newskit@1.60.4) (2023-06-29)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** apply design feedback ([#3411](https://github.com/newsuk/times-components/issues/3411)) ([d5f036d](https://github.com/newsuk/times-components/commit/d5f036d30cf798ddafd35b2ba2ae7b7486aa1c25))
+
+
+
+
+
+## [1.60.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.2...@times-components/ts-newskit@1.60.3) (2023-06-22)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** fixed invalid colour reference ([#3410](https://github.com/newsuk/times-components/issues/3410)) ([b9ed3ae](https://github.com/newsuk/times-components/commit/b9ed3ae4e241ddd295f393cb2d285d690d6d5bc8))
+
+
+
+
+
+## [1.60.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.1...@times-components/ts-newskit@1.60.2) (2023-06-21)
+
+
+### Bug Fixes
+
+* **TMRX-1099:** apply design feedback ([#3409](https://github.com/newsuk/times-components/issues/3409)) ([3d12aa7](https://github.com/newsuk/times-components/commit/3d12aa78838d89a347a5503f9d48693ee281d404))
+
+
+
+
+
+## [1.60.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.60.0...@times-components/ts-newskit@1.60.1) (2023-06-19)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** fix pipline issue ([#3402](https://github.com/newsuk/times-components/issues/3402)) ([41e62a0](https://github.com/newsuk/times-components/commit/41e62a01c8b87f5b9d42f95e825928d4949accc1))
+
+
+
+
+
+# [1.60.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.59.0...@times-components/ts-newskit@1.60.0) (2023-06-19)
+
+
+### Features
+
+* **TMRX-1099:** build section buckets slice ([#3401](https://github.com/newsuk/times-components/issues/3401)) ([8a48ba1](https://github.com/newsuk/times-components/commit/8a48ba1fc164a750a7b48e82577bbba1b8926805))
+
+
+
+
+
+# [1.59.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.58.0...@times-components/ts-newskit@1.59.0) (2023-06-15)
+
+
+### Features
+
+* **TMRX-1093:** add gridOverlay ([#3398](https://github.com/newsuk/times-components/issues/3398)) ([04679da](https://github.com/newsuk/times-components/commit/04679da5674ee6042fcc91d920d8c2d9c9c8ae1b))
+
+
+
+
+
+# [1.58.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.57.1...@times-components/ts-newskit@1.58.0) (2023-06-15)
+
+
+### Features
+
+* **TMRX-1093:** build stacked module 1 slice ([#3397](https://github.com/newsuk/times-components/issues/3397)) ([5ca3db2](https://github.com/newsuk/times-components/commit/5ca3db2c6c8bfd5c6db21d51a184d21e8cc2575b))
+
+
+
+
+
+## [1.57.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.57.0...@times-components/ts-newskit@1.57.1) (2023-06-14)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+# [1.57.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.56.4...@times-components/ts-newskit@1.57.0) (2023-06-13)
+
+
+### Features
+
+* **TMRX-1093:** implement design feedback from grid to flex layout ([#3395](https://github.com/newsuk/times-components/issues/3395)) ([38009e5](https://github.com/newsuk/times-components/commit/38009e57dc60e88869c9434fbf50811a764dce62))
+
+
+
+
+
+## [1.56.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.56.3...@times-components/ts-newskit@1.56.4) (2023-06-12)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.56.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.56.2...@times-components/ts-newskit@1.56.3) (2023-06-09)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.56.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.56.1...@times-components/ts-newskit@1.56.2) (2023-06-07)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
 ## [1.56.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.56.0...@times-components/ts-newskit@1.56.1) (2023-06-06)
 
 **Note:** Version bump only for package @times-components/ts-newskit

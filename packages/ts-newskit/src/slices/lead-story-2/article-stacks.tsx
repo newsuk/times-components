@@ -1,34 +1,51 @@
 import React from 'react';
-import { Block, BreakpointKeys, Divider, GridLayout, Visible } from 'newskit';
+import {
+  Block,
+  Divider,
+  GridLayout,
+  Stack,
+  Visible,
+  BreakpointKeys
+} from 'newskit';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
-import { FullWidthDividerMob } from '../../components/slices/shared-styles';
+import { FullWidthBlock } from '../../components/slices/shared-styles';
+import { RelativeBlockItem } from '../shared-styles';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export const ArticleStack = ({
   verticalArticles,
   breakpoint,
-  horizontalArticles
+  horizontalArticles,
+  horizontalArticleContentWidth
 }: {
   verticalArticles: LeadArticleProps[];
   breakpoint: BreakpointKeys;
   horizontalArticles: LeadArticleProps[];
+  horizontalArticleContentWidth?: string;
 }) => {
-  const modifiedVerticalArticles = verticalArticles.map(item => ({
-    ...item,
+  const modifiedHorizontalArticles = horizontalArticles.map(item => ({
+    ...clearCreditsAndCaption(item),
     imageTop: true,
-    typographyPreset: 'editorialHeadline020'
+    headlineTypographyPreset: 'editorialHeadline020',
+    hasTopBorder: false
   }));
 
-  const modifiredHorizontalArticles = horizontalArticles.map(item => ({
+  const modifiedVerticalArticles = verticalArticles.map(item => ({
     ...item,
-    imageTop: true,
-    typographyPreset: 'editorialHeadline020'
+    headlineTypographyPreset: 'editorialHeadline020',
+    hasTopBorder: false,
+    hideImage: true
   }));
-  const articleGridVertical = (
-    <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space040' }}>
-      {modifiedVerticalArticles.map(
+  const articleStackHorizontal = (
+    <GridLayout
+      columns={{ md: '1px 1fr 1px 1fr' }}
+      columnGap={{ md: 'space040' }}
+      overrides={{ marginBlockStart: 'space000' }}
+    >
+      {modifiedHorizontalArticles.map(
         (article: LeadArticleProps, articleIndex, articleArr) => {
           const articleBorder = breakpoint !== 'xs' &&
             breakpoint !== 'sm' &&
@@ -43,8 +60,9 @@ export const ArticleStack = ({
 
           return (
             <React.Fragment key={article.headline}>
+              {articleBorder}
               <Block>
-                <FullWidthDividerMob>
+                <FullWidthBlock>
                   <Visible xs sm>
                     <Divider
                       overrides={{
@@ -53,7 +71,7 @@ export const ArticleStack = ({
                       }}
                     />
                   </Visible>
-                </FullWidthDividerMob>
+                </FullWidthBlock>
                 <LeadArticle {...article} />
               </Block>
               {articleBorder}
@@ -64,9 +82,13 @@ export const ArticleStack = ({
     </GridLayout>
   );
 
-  const articleStackHorizontal = (
-    <GridLayout columns={{ md: '1fr 1px' }} columnGap={{ md: 'space040' }}>
-      {modifiredHorizontalArticles.map(
+  const articleGridVertical = (
+    <GridLayout
+      columns={{ md: `${horizontalArticleContentWidth || '1fr'}` }}
+      columnGap={{ md: 'space060' }}
+      style={{ marginBlock: 'space000' }}
+    >
+      {modifiedVerticalArticles.map(
         (article: LeadArticleProps, articleIndex: number) => {
           const articleBorder = articleIndex !== 0 && (
             <Divider
@@ -77,18 +99,12 @@ export const ArticleStack = ({
             />
           );
           return (
-            <React.Fragment key={article.headline}>
+            <RelativeBlockItem key={article.headline}>
               <Block>
-                <FullWidthDividerMob>{articleBorder}</FullWidthDividerMob>
+                <FullWidthBlock>{articleBorder}</FullWidthBlock>
                 <LeadArticle {...article} />
               </Block>
-              <Divider
-                overrides={{
-                  stylePreset: 'lightDivider'
-                }}
-                vertical
-              />
-            </React.Fragment>
+            </RelativeBlockItem>
           );
         }
       )}
@@ -96,12 +112,19 @@ export const ArticleStack = ({
   );
 
   return (
-    <GridLayout
-      columns={{ md: '3fr 5fr ', xs: '1fr' }}
-      columnGap={{ md: 'space040' }}
+    <Stack
+      stackDistribution="flex-start"
+      flow={
+        breakpoint !== 'xs' && breakpoint !== 'sm'
+          ? 'horizontal-top'
+          : 'vertical-left'
+      }
+      spaceInline={
+        breakpoint === 'xs' || breakpoint === 'sm' ? 'space000' : 'space040'
+      }
     >
-      {articleStackHorizontal}
       {articleGridVertical}
-    </GridLayout>
+      {articleStackHorizontal}
+    </Stack>
   );
 };

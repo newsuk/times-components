@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  CardComposable,
   CardContent,
   CardLink,
   CardMedia,
@@ -8,21 +7,31 @@ import {
   TextBlock,
   Block
 } from 'newskit';
-import { Wrap, StyledNewsKitPuzzlePlaceholder } from './styles';
+import {
+  Wrap,
+  StyledNewsKitPuzzlePlaceholder,
+  PuzzleCardComposable,
+  PuzzleCardImgWrapper
+} from './styles';
 import { PuzzlesFlag } from '../flag';
 import { Puzzle } from '../archive/types';
 import { convertDateToWeekday } from '../../../utils';
 
 export interface PuzzleCardProps {
   data: Puzzle;
+  isImageCropped?: boolean;
 }
 
-export const PuzzleCard = ({ data }: PuzzleCardProps) => {
+export const PuzzleCard = ({
+  data,
+  isImageCropped = false
+}: PuzzleCardProps) => {
   const publishedDate = convertDateToWeekday(data.publishedAt);
   const imageUrl = data.image ? data.image.crops[0].url : '';
+  const croppedImageUrl = isImageCropped ? `${imageUrl}&resize=500` : imageUrl;
 
   return (
-    <CardComposable
+    <PuzzleCardComposable
       key={data.id}
       overrides={{
         minHeight: {
@@ -32,17 +41,19 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
           lg: '211.33px',
           xl: '261.33px'
         },
+        height: '100%',
         stylePreset: 'puzzleCard'
       }}
     >
-      <Block style={{ position: 'relative' }}>
+      <PuzzleCardImgWrapper>
         {imageUrl ? (
           <CardMedia
             media={{
               loadingAspectRatio: '3:2',
               alt: data.title || 'Puzzle thumbnail',
-              src: imageUrl,
+              src: croppedImageUrl,
               placeholderIcon: true,
+              fit: 'cover',
               overrides: {
                 stylePreset: 'puzzleCardMedia'
               }
@@ -57,7 +68,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
             <PuzzlesFlag status={data.status} />
           </Wrap>
         )}
-      </Block>
+      </PuzzleCardImgWrapper>
       <CardContent justifyItems="center">
         <CardLink
           expand
@@ -115,6 +126,6 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
           </Block>
         </Stack>
       </CardContent>
-    </CardComposable>
+    </PuzzleCardComposable>
   );
 };

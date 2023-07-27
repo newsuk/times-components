@@ -1,5 +1,6 @@
 export default "Ad";
 export const AdComposer = ({ children }) => children;
+
 export const adConfig = {
   adUnit: "mockAdUnit",
   biddersConfig: {

@@ -1,19 +1,21 @@
-import { Block, Divider, useBreakpointKey, Visible } from 'newskit';
-import React from 'react';
+import {
+  Block,
+  Divider,
+  Stack,
+  useBreakpointKey,
+  Visible,
+  BreakpointKeys
+} from 'newskit';
+import React, { useState, useEffect } from 'react';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
-import {
-  LeadStoryDivider,
-  StyledLeadStoryCell,
-  CellWithCustomPadding
-} from '../shared-styles';
+import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
 import { ArticleStack } from './article-stacks';
-import { FullWidthDividerMob } from '../../components/slices/shared-styles';
-import { ComposedArticleStack } from '../shared/composed-article-stack';
-import { CustomGridLayout } from '../shared/grid-layout';
+import { FullWidthBlock } from '../../components/slices/shared-styles';
+import { ArticleStackLeadStory, ComposedArticleStack } from '../shared';
 
 export interface LeadStory2Props {
   leadArticle: LeadArticleProps;
@@ -28,34 +30,60 @@ export const LeadStory2 = ({
   verticalArticles,
   horizontalArticles
 }: LeadStory2Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
 
   const modifedArticles =
-    breakpointKey === 'xl'
+    currentBreakpoint === 'xl'
       ? articles.map(article => ({
           ...article,
           imageRight: true
         }))
       : articles;
 
-  const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
+  const screenXsAndSm =
+    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
 
   const modifiedLeadArticle = {
     ...leadArticle,
     imageTop: !!screenXsAndSm,
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
-    typographyPreset:
-      breakpointKey === 'xs'
+    headlineTypographyPreset:
+      currentBreakpoint === 'xs'
         ? 'editorialHeadline040'
-        : breakpointKey === 'sm'
+        : currentBreakpoint === 'sm'
           ? 'editorialHeadline050'
           : 'editorialHeadline060'
   };
 
   return (
-    <CustomGridLayout>
-      <StyledLeadStoryCell xs={12} md={12} lg={9} xl={8}>
+    <Stack
+      flow="horizontal-top"
+      stackDistribution="center"
+      wrap="wrap"
+      marginInline={{
+        xs: 'space045',
+        md: 'space000'
+      }}
+    >
+      <StackItem
+        $width={{
+          xs: '100%',
+          md: '720px',
+          lg: '757px',
+          xl: '840px'
+        }}
+        marginInlineEnd={{
+          lg: 'space060'
+        }}
+      >
         <Block>
           <Visible lg xl>
             <LeadStoryDivider
@@ -64,9 +92,12 @@ export const LeadStory2 = ({
               position="right"
             />
           </Visible>
-          <LeadArticle {...modifiedLeadArticle} />
+          <LeadArticle
+            contentWidth={currentBreakpoint === 'xl' ? '274px' : '246px'}
+            {...modifiedLeadArticle}
+          />
           {screenXsAndSm ? (
-            <FullWidthDividerMob>
+            <FullWidthBlock>
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
@@ -74,7 +105,7 @@ export const LeadStory2 = ({
                   marginBlockEnd: 'space040'
                 }}
               />
-            </FullWidthDividerMob>
+            </FullWidthBlock>
           ) : (
             <Divider
               overrides={{
@@ -85,17 +116,28 @@ export const LeadStory2 = ({
           )}
           <ArticleStack
             verticalArticles={verticalArticles}
-            breakpoint={breakpointKey}
+            breakpoint={currentBreakpoint}
             horizontalArticles={horizontalArticles}
+            horizontalArticleContentWidth={
+              currentBreakpoint === 'xl' ? '258px' : '230px'
+            }
           />
         </Block>
-      </StyledLeadStoryCell>
-      <CellWithCustomPadding xs={12} lg={3} xl={4}>
-        <ComposedArticleStack
-          articles={modifedArticles}
-          breakpoint={breakpointKey}
+      </StackItem>
+      {screenXsAndSm ? (
+        <BlockItem marginBlockStart="space040">
+          <ComposedArticleStack
+            articles={modifedArticles}
+            breakpoint={currentBreakpoint}
+          />
+        </BlockItem>
+      ) : (
+        <ArticleStackLeadStory
+          mdWidth="722px"
+          modifedArticles={modifedArticles}
+          breakpoint={currentBreakpoint}
         />
-      </CellWithCustomPadding>
-    </CustomGridLayout>
+      )}
+    </Stack>
   );
 };

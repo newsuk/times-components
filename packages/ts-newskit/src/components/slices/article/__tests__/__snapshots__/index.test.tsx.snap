@@ -17,7 +17,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
         <img
           alt="This is ALT Text"
           class="css-1qgqq71"
-          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
         />
       </picture>
     </div>
@@ -98,18 +98,13 @@ exports[`Render Article List Item should render a snapshot 1`] = `
         <img
           alt="This is ALT Text"
           class="css-1qgqq71"
-          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
         />
       </picture>
     </div>
     <div
       class="css-diffbd"
     >
-      <p
-        class="css-1khw599"
-      >
-        Credit
-      </p>
       <a
         class="css-u57k3c"
         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"

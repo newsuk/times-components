@@ -14,12 +14,12 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     userState,
     isPreview,
     swgProductId,
-    commentCount,
     zephrDivs,
     sharingSavingFlag = true,
     commentingFlag = true,
     showAudioPlayer
   } = window.nuk.article;
+
   const { getCookieValue } = window.nuk;
 
   const data = {
@@ -34,7 +34,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     userState,
     isPreview,
     swgProductId,
-    commentCount,
     zephrDivs,
     sharingSavingFlag,
     commentingFlag,
@@ -43,7 +42,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
 
   const clientOptions = {
     rootTag,
-    useGET: false,
+    useGET: true,
     headers: {
       "x-new-topic-data-source": true
     },

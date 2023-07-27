@@ -6,7 +6,8 @@ exports[`2. a loading state 1`] = `
 <authorArticlesWithImagesProvider>
   <Helmet>
     <title>
-       | The Times &amp; The Sunday Times
+      
+       | The Times & The Sunday Times
     </title>
     <meta
       content="Get up to date information and read all the latest articles from ."
@@ -50,7 +51,8 @@ exports[`3. an article list with images 1`] = `
 <authorArticlesWithImagesProvider>
   <Helmet>
     <title>
-      Name | The Times &amp; The Sunday Times
+      Name
+       | The Times & The Sunday Times
     </title>
     <meta
       content="Camilla Long"
@@ -105,7 +107,8 @@ exports[`4. an article list without images 1`] = `
 <authorArticlesNoImagesProvider>
   <Helmet>
     <title>
-      Name | The Times &amp; The Sunday Times
+      Name
+       | The Times & The Sunday Times
     </title>
     <meta
       content="Camilla Long"
@@ -160,7 +163,8 @@ exports[`5. fetches more articles 1`] = `
 <authorArticlesWithImagesProvider>
   <Helmet>
     <title>
-      Name | The Times &amp; The Sunday Times
+      Name
+       | The Times & The Sunday Times
     </title>
     <meta
       content="Camilla Long"
@@ -220,7 +224,8 @@ exports[`6. fetches more articles and falls back to previous data if no more 1`]
 <authorArticlesNoImagesProvider>
   <Helmet>
     <title>
-      Name | The Times &amp; The Sunday Times
+      Name
+       | The Times & The Sunday Times
     </title>
     <meta
       content="Camilla Long"

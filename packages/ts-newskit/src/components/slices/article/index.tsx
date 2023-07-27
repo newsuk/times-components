@@ -11,20 +11,25 @@ import {
 import {
   CardHeadlineLink,
   FullWidthCardMediaMob,
-  FullWidthDividerMob
+  FullWidthBlock
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 
+type ImageCrops = {
+  url?: string;
+  ratio?: string;
+};
+
 type ImageProps = {
-  src: string;
   alt?: string;
-  credit?: string;
+  caption?: string;
+  crops?: ImageCrops[];
 };
 
 export interface ArticleProps {
-  title: string;
+  headline: string;
   url: string;
-  image?: ImageProps;
+  images?: ImageProps;
   tag?: {
     label: string;
     href: string;
@@ -35,6 +40,9 @@ export interface ArticleProps {
   isLeadImage?: boolean;
   imageRight?: boolean;
   isFullWidth?: boolean;
+  articleTitleMarginTop?: string;
+  titleTypographyPreset?: string;
+  tagAndFlagMarginBlockStart?: string;
 }
 
 type LayoutProps = {
@@ -42,8 +50,8 @@ type LayoutProps = {
 };
 
 export const Article = ({
-  image,
-  title,
+  images,
+  headline,
   url,
   tag,
   flag,
@@ -51,18 +59,33 @@ export const Article = ({
   hideImage,
   isLeadImage,
   imageRight,
-  isFullWidth
+  isFullWidth,
+  articleTitleMarginTop = 'space040',
+  titleTypographyPreset = 'editorialHeadline020',
+  tagAndFlagMarginBlockStart = 'space040'
 }: ArticleProps) => {
+  const imageWithCorrectRatio =
+    images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
+
   const cardImage = !hideImage &&
-    image && {
+    imageWithCorrectRatio && {
       media: {
-        src: image.src,
-        alt: image.alt || title,
-        loadingAspectRatio: '3:2'
+        src: imageWithCorrectRatio.url,
+        alt: (images && images.alt) || headline,
+        loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2'
       }
     };
 
   const CardMediaComponent = isLeadImage ? FullWidthCardMediaMob : CardMedia;
+  const titleMarginBlockStart =
+    imageRight || hideImage ? 'space000' : articleTitleMarginTop;
+
+  const hasImage =
+    images &&
+    images.crops &&
+    images.crops.length > 0 &&
+    imageWithCorrectRatio &&
+    imageWithCorrectRatio.url !== '';
 
   const Layout: React.FC<LayoutProps> = ({ children }) => {
     return imageRight ? <Block>{children}</Block> : <>{children}</>;
@@ -87,18 +110,18 @@ export const Article = ({
       {hasTopBorder && (
         <GridLayoutItem area="border">
           {isFullWidth ? (
-            <FullWidthDividerMob>
+            <FullWidthBlock>
               <Divider
                 overrides={{
-                  marginBlockEnd: hideImage ? 'space000' : 'space040',
+                  marginBlockEnd: 'space040',
                   stylePreset: 'dashedDivider'
                 }}
               />
-            </FullWidthDividerMob>
+            </FullWidthBlock>
           ) : (
             <Divider
               overrides={{
-                marginBlockEnd: hideImage ? 'space000' : 'space040',
+                marginBlockEnd: 'space040',
                 stylePreset: 'dashedDivider'
               }}
             />
@@ -106,18 +129,18 @@ export const Article = ({
         </GridLayoutItem>
       )}
 
-      {image && !hideImage && <CardMediaComponent {...cardImage} />}
+      {hasImage && !hideImage && <CardMediaComponent {...cardImage} />}
       <CardContent>
-        {image &&
+        {images &&
           !imageRight &&
-          image.credit &&
+          images.caption &&
           !hideImage && (
             <TextBlock
               marginBlockStart="space020"
               stylePreset="inkSubtle"
               typographyPreset="utilityMeta010"
             >
-              {image.credit}
+              {images.caption}
             </TextBlock>
           )}
         <Layout imageRight={imageRight || false}>
@@ -125,15 +148,18 @@ export const Article = ({
             href={url}
             role="link"
             overrides={{
-              typographyPreset: 'editorialHeadline020',
-              marginBlockStart: imageRight ? 'space000' : 'space040'
+              typographyPreset: titleTypographyPreset,
+              marginBlockStart: titleMarginBlockStart
             }}
+            external={false}
           >
-            {title}
+            {headline}
           </CardHeadlineLink>
-          {(tag || flag) && (
-            <TagAndFlag tag={tag} flag={flag} marginBlockStart="space040" />
-          )}
+          <TagAndFlag
+            tag={tag}
+            flag={flag}
+            marginBlockStart={tagAndFlagMarginBlockStart}
+          />
         </Layout>
       </CardContent>
     </CardComposable>

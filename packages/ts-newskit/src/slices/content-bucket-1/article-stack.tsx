@@ -1,7 +1,9 @@
 import React from 'react';
-import { BreakpointKeys, Divider, GridLayout, Scroll } from 'newskit';
+import { BreakpointKeys, Divider, GridLayout } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { ArticleDividerXL } from './styles';
+import { ScrollContainer } from '../shared-styles';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export const ArticleStack = ({
   articles,
@@ -35,9 +37,9 @@ export const ArticleStack = ({
           (breakpoint === 'lg' && articleIndex > 0);
 
         return (
-          <React.Fragment key={article.title}>
+          <React.Fragment key={article.headline}>
             <Article
-              {...article}
+              {...clearCreditsAndCaption(article)}
               hasTopBorder={articleTopBorder}
               hideImage={breakpoint === 'lg'}
             />
@@ -58,12 +60,12 @@ export const ArticleStack = ({
   const isMob = breakpoint === 'xs' || breakpoint === 'sm';
 
   return isMob ? (
-    <Scroll
+    <ScrollContainer
       overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
       tabIndex={undefined}
     >
       {articleGrid}
-    </Scroll>
+    </ScrollContainer>
   ) : (
     articleGrid
   );

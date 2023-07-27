@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.12.19](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.18...@times-components/key-facts@2.12.19) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.18](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.17...@times-components/key-facts@2.12.18) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.17](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.16...@times-components/key-facts@2.12.17) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.16](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.15...@times-components/key-facts@2.12.16) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.15](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.14...@times-components/key-facts@2.12.15) (2023-06-16)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.12.14](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.13...@times-components/key-facts@2.12.14) (2023-06-15)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
 ## [2.12.13](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.12.12...@times-components/key-facts@2.12.13) (2023-06-02)
 
 **Note:** Version bump only for package @times-components/key-facts

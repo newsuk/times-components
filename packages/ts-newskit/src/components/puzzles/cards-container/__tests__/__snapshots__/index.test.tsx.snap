@@ -136,11 +136,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -175,13 +174,13 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -266,11 +265,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -305,13 +303,13 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -396,11 +394,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -435,13 +432,13 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -526,11 +523,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -565,13 +561,13 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -656,11 +652,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -695,13 +690,13 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -786,11 +781,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -825,13 +819,13 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -916,11 +910,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -955,13 +948,13 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1046,11 +1039,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -1085,13 +1077,13 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1217,11 +1209,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -1256,13 +1247,13 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1347,11 +1338,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -1386,13 +1376,13 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1477,11 +1467,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -1516,13 +1505,13 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1607,11 +1596,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -1646,13 +1634,13 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1737,11 +1725,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -1776,13 +1763,13 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1867,11 +1854,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -1906,13 +1892,13 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -1997,11 +1983,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -2036,13 +2021,13 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"
@@ -2127,11 +2112,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-z9y7jf"
+            class="css-kjwcwf"
           >
             <div
-              class="css-13byt3y"
-              style="position: relative;"
+              class="css-jwo9d7"
             >
               <div
                 class="css-1kwj960"
@@ -2166,13 +2150,13 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                   </div>
                   <img
                     alt="Puzzle Name"
-                    class="css-1qgqq71"
-                    src="https://www.uat-thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                    class="css-1km3pto"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
                   />
                 </picture>
               </div>
               <div
-                class="css-7wldo2"
+                class="css-593iq0"
               >
                 <div
                   class="css-7el6ft"

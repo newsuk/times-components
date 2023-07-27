@@ -1,6 +1,9 @@
 import React from 'react';
-import { Block, BreakpointKeys, Divider, GridLayout, Scroll } from 'newskit';
+import { Block, Divider, GridLayout, BreakpointKeys } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
+import { StackItem, StyledDivider, ScrollContainer } from '../shared-styles';
+import { ComposedArticleStack } from './composed-article-stack';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export const ArticleStackLarge = ({
   articles,
@@ -26,7 +29,10 @@ export const ArticleStackLarge = ({
         const articleBorder = breakpoint !== 'lg' &&
           breakpoint !== 'xl' &&
           articleIndex < articleArr.length - 1 && (
-            <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
+            <StyledDivider
+              overrides={{ stylePreset: 'lightDivider' }}
+              vertical
+            />
           );
         const topArticle = articleIndex === 0;
         const articleTopBorder =
@@ -34,9 +40,9 @@ export const ArticleStackLarge = ({
           (breakpoint === 'lg' && articleIndex > 0);
 
         return (
-          <React.Fragment key={article.title}>
+          <React.Fragment key={article.headline}>
             <Article
-              {...article}
+              {...clearCreditsAndCaption(article)}
               hasTopBorder={articleTopBorder}
               hideImage={breakpoint === 'lg' && !topArticle}
             />
@@ -50,12 +56,12 @@ export const ArticleStackLarge = ({
   const isMob = breakpoint === 'xs' || breakpoint === 'sm';
 
   return isMob ? (
-    <Scroll
+    <ScrollContainer
       overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
       tabIndex={undefined}
     >
       {articleGrid}
-    </Scroll>
+    </ScrollContainer>
   ) : (
     articleGrid
   );
@@ -75,29 +81,23 @@ export const ArticleStackSmall = ({
   breakpoint: BreakpointKeys;
 }) => {
   const articleGrid = (
-    <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space030' }}>
+    <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space040' }}>
       {articles.map((article: ArticleProps, articleIndex, articleArr) => {
         const articleBorder = breakpoint !== 'xs' &&
           breakpoint !== 'sm' &&
           articleIndex < articleArr.length - 1 && (
-            <Block
-              marginBlockStart={{
-                md: !hideImage ? 'space000' : 'space040'
+            <Divider
+              overrides={{
+                stylePreset: 'lightDivider'
               }}
-            >
-              <Divider
-                overrides={{
-                  stylePreset: 'lightDivider'
-                }}
-                vertical
-              />
-            </Block>
+              vertical
+            />
           );
         return (
-          <React.Fragment key={article.title}>
+          <React.Fragment key={article.headline}>
             <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
               <Article
-                {...article}
+                {...clearCreditsAndCaption(article)}
                 hasTopBorder={hasTopBorder}
                 hideImage={hideImage}
                 isFullWidth={isFullWidth}
@@ -111,4 +111,33 @@ export const ArticleStackSmall = ({
   );
 
   return <>{articleGrid}</>;
+};
+
+export const ArticleStackLeadStory = ({
+  mdWidth,
+  modifedArticles,
+  breakpoint
+}: {
+  mdWidth: string;
+  modifedArticles: ArticleProps[];
+  breakpoint: BreakpointKeys;
+}) => {
+  return (
+    <StackItem
+      $width={{
+        md: mdWidth,
+        lg: '185px',
+        xl: '405px'
+      }}
+      marginBlockStart={{
+        xs: 'space040',
+        lg: 'space000'
+      }}
+    >
+      <ComposedArticleStack
+        articles={modifedArticles}
+        breakpoint={breakpoint}
+      />
+    </StackItem>
+  );
 };

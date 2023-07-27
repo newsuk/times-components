@@ -21,39 +21,15 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
         class="css-9fndha"
       >
         <div
-          class="css-1kwj960"
+          class="css-1lxmnox"
         >
           <picture
-            class="css-zp0elg"
+            class="css-l4lngz"
           >
-            <div
-              class="css-5pczz7"
-            >
-              <div
-                class="css-1q2lbmy"
-              >
-                <svg
-                  aria-hidden="true"
-                  class="css-2xpd25-EmotionIconBase ex0cdmw0"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0V0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
-                  />
-                </svg>
-              </div>
-            </div>
             <img
               alt="Some alt text"
-              class="css-1qgqq71"
-              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
+              class="css-1955ygm"
+              loading="lazy"
             />
           </picture>
         </div>

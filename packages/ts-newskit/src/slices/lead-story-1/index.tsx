@@ -1,22 +1,30 @@
-import { Block, Divider, Hidden, useBreakpointKey, Visible } from 'newskit';
-import React from 'react';
+import {
+  Block,
+  Divider,
+  useBreakpointKey,
+  Visible,
+  BreakpointKeys
+} from 'newskit';
+import React, { useState, useEffect } from 'react';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { Article, ArticleProps } from '../../components/slices/article';
+import { StackItem, LeadStoryDivider, BlockItem } from '../shared-styles';
 import {
-  CellNoMargin,
-  CellWithCustomPadding,
-  LeadArticleCell,
-  LeadStoryDivider
-} from '../shared-styles';
-import { ArticleStackSmall } from '../shared/article-stacks';
-import { FullWidthDividerMob } from '../../components/slices/shared-styles';
+  ArticleStackLeadStory,
+  ArticleStackSmall,
+  CustomStackLayout
+} from '../shared';
+import {
+  FullWidthBlock,
+  FullWidthHidden
+} from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
 import { StyledDivider } from './styles';
-import { CustomGridLayout } from '../shared/grid-layout';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
@@ -41,147 +49,175 @@ export const LeadStory1 = ({
   singleArticle,
   articlesWithListItems
 }: LeadStory1Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
-
-  const modifedArticles =
-    breakpointKey === 'xl'
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
+  const screenXsAndSm =
+    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
+  const modifiedArticles =
+    currentBreakpoint === 'xl'
       ? articles.map(article => ({
-          ...article,
+          ...clearCreditsAndCaption(article),
           imageRight: true
         }))
       : articles;
 
   const modifiedArticlesWithUnorderedList = {
     ...articlesWithListItems,
-    imageTop: true,
+    hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
-    typographyPreset:
-      breakpointKey === 'xs'
+    headlineTypographyPreset:
+      currentBreakpoint === 'xs'
         ? 'editorialHeadline040'
-        : breakpointKey === 'sm'
+        : currentBreakpoint === 'sm'
           ? 'editorialHeadline050'
           : 'editorialHeadline060',
-    showTagL1: false
+    showTagL1: false,
+    hideImage: true
   };
 
-  const screenXsAndSm = breakpointKey === 'xs' || breakpointKey === 'sm';
-
-  const LeadStoryLayout: React.FC = ({ children }) => {
-    return (
-      <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-        <Visible lg xl>
-          <LeadStoryDivider
-            overrides={{ stylePreset: 'lightDivider' }}
-            vertical
-            position="right"
-          />
-        </Visible>
-        {children}
-        <Visible md lg xl>
-          <LeadStoryDivider
-            overrides={{
-              stylePreset: 'lightDivider'
-            }}
-            vertical
-            position="left"
-          />
-        </Visible>
-      </Block>
-    );
+  const modifiedLeadArticle = {
+    ...leadArticle,
+    hasTopBorder: false,
+    imageTop: true,
+    headlineTypographyPreset: screenXsAndSm
+      ? 'editorialHeadline040'
+      : 'editorialHeadline030'
   };
+
+  const modifiedSingleArticle = {
+    ...singleArticle,
+    hideImage: true
+  };
+
+  const marginTop = modifiedSingleArticle
+    ? 'space040'
+    : !!articlesWithListItems.listData
+      ? 'space020'
+      : 'space040';
 
   return (
-    <CustomGridLayout>
-      <CellWithCustomPadding xs={12} md={5} lg={3} xl={3}>
-        <Block
-          marginBlockEnd={{
-            xs: 'space040',
-            md: 'space000'
-          }}
-        >
-          <LeadArticle {...modifiedArticlesWithUnorderedList} />
-          {singleArticle && (
-            <>
-              <FullWidthDividerMob>
-                <StyledDivider
-                  overrides={{
-                    stylePreset: 'dashedDivider',
-                    marginBlockStart: !!articlesWithListItems.listData
-                      ? 'space020'
-                      : 'space040'
-                  }}
-                />
-              </FullWidthDividerMob>
-              <Article {...singleArticle} />
-            </>
-          )}
-          {groupedArticles && (
-            <>
-              <FullWidthDividerMob>
-                <Divider
-                  overrides={{
-                    stylePreset: 'dashedDivider',
-                    marginBlockStart: singleArticle
-                      ? 'space040'
-                      : !!articlesWithListItems.listData
-                        ? 'space020'
-                        : 'space040',
-                    marginBlockEnd: 'space040'
-                  }}
-                />
-              </FullWidthDividerMob>
-              <GroupedArticle {...groupedArticles} />
-            </>
-          )}
-        </Block>
-      </CellWithCustomPadding>
-      <LeadArticleCell xs={12} md={7} lg={6} xl={5}>
-        <Hidden md lg xl>
-          <FullWidthDividerMob>
+    <CustomStackLayout>
+      <StackItem
+        marginBlockEnd={{
+          xs: 'space040',
+          md: 'space000'
+        }}
+        $width={{
+          xs: '100%',
+          md: '260px'
+        }}
+      >
+        <LeadArticle {...modifiedArticlesWithUnorderedList} />
+        {modifiedSingleArticle && (
+          <BlockItem>
+            <FullWidthBlock>
+              <StyledDivider
+                overrides={{
+                  stylePreset: 'dashedDivider',
+                  marginBlockStart: !!articlesWithListItems.listData
+                    ? 'space020'
+                    : 'space040',
+                  marginBlockEnd: 'space040'
+                }}
+              />
+            </FullWidthBlock>
+            <Article {...modifiedSingleArticle} />
+          </BlockItem>
+        )}
+        {groupedArticles && (
+          <>
+            <FullWidthBlock>
+              <Divider
+                overrides={{
+                  stylePreset: 'dashedDivider',
+                  marginBlockStart: marginTop,
+                  marginBlockEnd: 'space040'
+                }}
+              />
+            </FullWidthBlock>
+            <GroupedArticle {...groupedArticles} />
+          </>
+        )}
+      </StackItem>
+      <StackItem
+        $width={{
+          xs: '100%',
+          md: '428px',
+          lg: '465px',
+          xl: '550px'
+        }}
+        marginInlineStart={{
+          md: 'space060'
+        }}
+        marginInlineEnd={{
+          lg: 'space060'
+        }}
+      >
+        <FullWidthHidden md lg xl>
+          <FullWidthBlock>
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
                 marginBlockEnd: 'space040'
               }}
             />
-          </FullWidthDividerMob>
-        </Hidden>
+          </FullWidthBlock>
+        </FullWidthHidden>
         <Block>
-          <LeadStoryLayout>
-            <LeadArticle {...leadArticle} />
-          </LeadStoryLayout>
-          <Hidden xs sm>
+          <Visible lg xl>
+            <LeadStoryDivider
+              overrides={{ stylePreset: 'lightDivider' }}
+              vertical
+              position="right"
+            />
+          </Visible>
+          <BlockItem marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
+            <LeadArticle {...modifiedLeadArticle} />
+          </BlockItem>
+          <Visible md lg xl>
+            <LeadStoryDivider
+              overrides={{
+                stylePreset: 'lightDivider'
+              }}
+              vertical
+              position="left"
+            />
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
                 marginBlock: 'space040'
               }}
             />
-          </Hidden>
+          </Visible>
           <ArticleStackSmall
             articles={smallArticles}
             isFullWidth={screenXsAndSm}
             hideImage={screenXsAndSm}
             hasTopBorder={!!screenXsAndSm}
-            breakpoint={breakpointKey}
+            breakpoint={currentBreakpoint}
           />
         </Block>
-      </LeadArticleCell>
+      </StackItem>
       {screenXsAndSm ? (
-        <CellNoMargin xs={12} lg={3} xl={4}>
+        <BlockItem>
           <ComposedArticleStack
-            articles={modifedArticles}
-            breakpoint={breakpointKey}
+            articles={modifiedArticles}
+            breakpoint={currentBreakpoint}
           />
-        </CellNoMargin>
+        </BlockItem>
       ) : (
-        <CellWithCustomPadding xs={12} lg={3} xl={4}>
-          <ComposedArticleStack
-            articles={modifedArticles}
-            breakpoint={breakpointKey}
-          />
-        </CellWithCustomPadding>
+        <ArticleStackLeadStory
+          mdWidth="722px"
+          modifedArticles={modifiedArticles}
+          breakpoint={currentBreakpoint}
+        />
       )}
-    </CustomGridLayout>
+    </CustomStackLayout>
   );
 };

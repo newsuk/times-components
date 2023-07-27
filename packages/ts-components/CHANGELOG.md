@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.75.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.75.2...@times-components/ts-components@1.75.3) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.75.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.75.1...@times-components/ts-components@1.75.2) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.75.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.75.0...@times-components/ts-components@1.75.1) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.75.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.74.0...@times-components/ts-components@1.75.0) (2023-07-25)
+
+
+### Features
+
+* **TMG-773:** Create welcome banner ([#3443](https://github.com/newsuk/times-components/issues/3443)) ([f5c67bb](https://github.com/newsuk/times-components/commit/f5c67bbe5d116d75edd51f2eef35ef99e0450db3))
+
+
+
+
+
+# [1.74.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.73.0...@times-components/ts-components@1.74.0) (2023-06-16)
+
+
+### Features
+
+* cricket widget ([#3399](https://github.com/newsuk/times-components/issues/3399)) ([bc75fc5](https://github.com/newsuk/times-components/commit/bc75fc55d3f62b26754e0c9397344585000d4f30))
+
+
+
+
+
+# [1.73.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.72.3...@times-components/ts-components@1.73.0) (2023-06-15)
+
+
+### Features
+
+* **TDP-2222:** Cricket scorecard ([#3013](https://github.com/newsuk/times-components/issues/3013)) ([2a9df33](https://github.com/newsuk/times-components/commit/2a9df33224955bf7632a02a3a5be223793c6a968))
+
+
+
+
+
 ## [1.72.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.72.2...@times-components/ts-components@1.72.3) (2023-06-02)
 
 **Note:** Version bump only for package @times-components/ts-components

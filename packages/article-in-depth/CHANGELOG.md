@@ -3,6 +3,276 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.75.18](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.17...@times-components/article-in-depth@3.75.18) (2023-07-27)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.17](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.16...@times-components/article-in-depth@3.75.17) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.16](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.15...@times-components/article-in-depth@3.75.16) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.15](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.14...@times-components/article-in-depth@3.75.15) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.14](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.13...@times-components/article-in-depth@3.75.14) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.13](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.12...@times-components/article-in-depth@3.75.13) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.12](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.11...@times-components/article-in-depth@3.75.12) (2023-07-26)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.11](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.10...@times-components/article-in-depth@3.75.11) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.10](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.9...@times-components/article-in-depth@3.75.10) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.9](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.8...@times-components/article-in-depth@3.75.9) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.8](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.7...@times-components/article-in-depth@3.75.8) (2023-07-25)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.7](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.6...@times-components/article-in-depth@3.75.7) (2023-07-24)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.6](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.5...@times-components/article-in-depth@3.75.6) (2023-07-24)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.5](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.4...@times-components/article-in-depth@3.75.5) (2023-07-24)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.3...@times-components/article-in-depth@3.75.4) (2023-07-21)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.2...@times-components/article-in-depth@3.75.3) (2023-07-21)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.1...@times-components/article-in-depth@3.75.2) (2023-07-21)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.75.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.75.0...@times-components/article-in-depth@3.75.1) (2023-07-20)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+# [3.75.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.74.4...@times-components/article-in-depth@3.75.0) (2023-07-20)
+
+
+### Features
+
+* **TMRX-1250:** remove update button feature flag ([#3435](https://github.com/newsuk/times-components/issues/3435)) ([b32914a](https://github.com/newsuk/times-components/commit/b32914a4dab11cdecc3b36f8579f679429208227))
+
+
+
+
+
+## [3.74.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.74.3...@times-components/article-in-depth@3.74.4) (2023-07-19)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.74.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.74.2...@times-components/article-in-depth@3.74.3) (2023-07-18)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.74.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.74.1...@times-components/article-in-depth@3.74.2) (2023-07-18)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.74.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.74.0...@times-components/article-in-depth@3.74.1) (2023-07-18)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+# [3.74.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.73.10...@times-components/article-in-depth@3.74.0) (2023-07-17)
+
+
+### Features
+
+* **TMRX-1250:** Live updates behind a flag ([#3429](https://github.com/newsuk/times-components/issues/3429)) ([2fe0200](https://github.com/newsuk/times-components/commit/2fe02005cde5042d7d2ad69c879d0b9a4c0411fc))
+
+
+
+
+
+## [3.73.10](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.73.9...@times-components/article-in-depth@3.73.10) (2023-07-17)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.73.9](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.73.8...@times-components/article-in-depth@3.73.9) (2023-07-17)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.73.8](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.73.7...@times-components/article-in-depth@3.73.8) (2023-07-13)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.73.7](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.73.6...@times-components/article-in-depth@3.73.7) (2023-07-13)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.73.6](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.73.5...@times-components/article-in-depth@3.73.6) (2023-07-12)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.73.5](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.73.4...@times-components/article-in-depth@3.73.5) (2023-07-12)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.73.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.73.3...@times-components/article-in-depth@3.73.4) (2023-07-12)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.73.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.73.2...@times-components/article-in-depth@3.73.3) (2023-06-16)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.73.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.73.1...@times-components/article-in-depth@3.73.2) (2023-06-15)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
 ## [3.73.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.73.0...@times-components/article-in-depth@3.73.1) (2023-06-02)
 
 **Note:** Version bump only for package @times-components/article-in-depth

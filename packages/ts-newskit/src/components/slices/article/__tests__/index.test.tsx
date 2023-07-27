@@ -12,13 +12,43 @@ jest.mock('newskit', () => ({
 const renderComponent = (props: ArticleProps) => render(<Article {...props} />);
 
 const defaultProps = {
-  image: {
-    src:
-      '//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63',
+  images: {
     alt: 'This is ALT Text',
-    credit: 'Credit'
+    caption: '',
+    crops: [
+      {
+        url:
+          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173',
+        ratio: '3:2'
+      },
+      {
+        url:
+          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169',
+        ratio: '16:9'
+      },
+      {
+        url:
+          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173',
+        ratio: '1:1'
+      },
+      {
+        url:
+          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173',
+        ratio: '2:3'
+      },
+      {
+        url:
+          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173',
+        ratio: '4:5'
+      },
+      {
+        url:
+          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173',
+        ratio: '5:4'
+      }
+    ]
   },
-  title: "Harry & Meghan's New Project?",
+  headline: "Harry & Meghan's New Project?",
   url:
     '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
   tag: {
@@ -69,12 +99,43 @@ describe('Render Article List Item', () => {
 
   it('items should render TITLE text if ALT is missing', () => {
     renderComponent({
-      image: {
-        src:
-          '//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63',
-        alt: ''
+      images: {
+        alt: '',
+        caption: '',
+        crops: [
+          {
+            url:
+              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173',
+            ratio: '3:2'
+          },
+          {
+            url:
+              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169',
+            ratio: '16:9'
+          },
+          {
+            url:
+              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173',
+            ratio: '1:1'
+          },
+          {
+            url:
+              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173',
+            ratio: '2:3'
+          },
+          {
+            url:
+              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173',
+            ratio: '4:5'
+          },
+          {
+            url:
+              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173',
+            ratio: '5:4'
+          }
+        ]
       },
-      title: "Harry & Meghan's New Project?",
+      headline: "Harry & Meghan's New Project?",
       url:
         '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
       tag: {
@@ -95,19 +156,19 @@ describe('Render Article List Item with hidden image', () => {
   it('items should render without image', () => {
     renderComponent(defaultProps);
     const articleImage = screen.getByRole('img');
-    const credit = screen.queryByText('Credit');
+    const caption = screen.queryByText('Caption');
 
     expect(articleImage).toBeInTheDocument();
-    expect(credit).toHaveTextContent('Credit');
+    expect(caption).toBeNull();
   });
 
   it('items should render without image', () => {
     renderComponent({ ...defaultProps, hideImage: true });
     const articleImage = screen.queryByRole('img');
-    const credit = screen.queryByText('Credit');
+    const caption = screen.queryByText('Caption');
 
     expect(articleImage).toBeNull();
-    expect(credit).toBeNull();
+    expect(caption).toBeNull();
   });
   it('items should render with divider', () => {
     renderComponent({

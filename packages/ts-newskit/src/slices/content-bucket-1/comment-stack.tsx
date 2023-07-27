@@ -4,6 +4,7 @@ import {
   CommentCard,
   CommentCardProps
 } from '../../components/slices/comment-card';
+import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { AvatarDivider } from '../shared-styles';
 
 interface CommentStackProps {
@@ -12,9 +13,11 @@ interface CommentStackProps {
 export const CommentStack = ({ comments }: CommentStackProps) => {
   return (
     <>
-      <Divider
-        overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
-      />
+      <FullWidthBlock id="COMMENT STACK">
+        <Divider
+          overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
+        />
+      </FullWidthBlock>
       <GridLayout
         columns={{
           xs: '1fr',
@@ -34,7 +37,7 @@ export const CommentStack = ({ comments }: CommentStackProps) => {
           );
 
           return (
-            <React.Fragment key={comment.heading}>
+            <React.Fragment key={comment.headline}>
               <CommentCard {...comment} />
               {hasBorder}
             </React.Fragment>

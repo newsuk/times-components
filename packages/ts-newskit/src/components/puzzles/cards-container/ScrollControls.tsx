@@ -5,7 +5,7 @@ import { NewskitIconBack, NewskitIconForward } from '../../../assets';
 interface ScrollControlsProps {
   scrollRef: React.RefObject<HTMLDivElement>;
   cardRef: React.RefObject<HTMLDivElement>;
-  seeAllLink: string;
+  seeAllLink?: string;
 }
 
 export const ScrollControls = ({
@@ -29,18 +29,20 @@ export const ScrollControls = ({
   };
   return (
     <Stack flow="horizontal-center">
-      <Button
-        href={seeAllLink}
-        overrides={{
-          stylePreset: 'inkBrand010',
-          marginInlineEnd: 'space030',
-          typographyPreset: 'utilityLabel010',
-          paddingInline: 'space000',
-          minWidth: 'unset'
-        }}
-      >
-        SEE ALL
-      </Button>
+      {seeAllLink && (
+        <Button
+          href={seeAllLink}
+          overrides={{
+            stylePreset: 'inkBrand010',
+            marginInlineEnd: 'space030',
+            typographyPreset: 'utilityLabel010',
+            paddingInline: 'space000',
+            minWidth: 'unset'
+          }}
+        >
+          SEE ALL
+        </Button>
+      )}
       <IconButton
         overrides={{
           stylePreset: 'iconButtonOutlinedSecondary',

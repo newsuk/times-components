@@ -9,7 +9,7 @@ import {
 import IconD2 from '../../../assets/IconD2';
 import IconA4 from '../../../assets/IconA4';
 
-export const FreeTrailContainer = styled(Stack)<StackProps>`
+export const FreeTrialContainer = styled(Stack)<StackProps>`
   overflow: hidden;
   ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
   ${getMediaQueryFromTheme('xs')} {
@@ -23,13 +23,13 @@ export const FreeTrailContainer = styled(Stack)<StackProps>`
 export const StyledBlock = styled(Block)`
   position: relative;
   ${getMediaQueryFromTheme('md')} {
-    max-width: 604px;
+    width: 604px;
   }
   ${getMediaQueryFromTheme('lg')} {
-    max-width: 838px;
+    width: 838px;
   }
   ${getMediaQueryFromTheme('xl')} {
-    max-width: 1058px;
+    width: 1058px;
   }
 `;
 

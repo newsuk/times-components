@@ -312,7 +312,6 @@ const renderArticleConfig = ({
   const withPullQuote = boolean("Pull Quote", false);
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
-
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
   const template = selectTemplate(select);

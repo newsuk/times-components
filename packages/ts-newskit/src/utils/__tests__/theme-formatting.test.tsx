@@ -4,6 +4,10 @@ import { TheTimesLight } from '@newskit-themes/the-times';
 
 describe('updateThemeTypography function', () => {
   test('typographyPreset fontSize is updated if it has a rem value', () => {
+    expect(TheTimesLight.typographyPresets.editorialDisplay001.fontSize).toBe(
+      '1rem'
+    );
+
     const updatedTheme = updateThemeTypography(TheTimesLight);
     expect(updatedTheme.typographyPresets.editorialDisplay001.fontSize).toBe(
       '1.6rem'

@@ -1,5 +1,12 @@
-import { Block, Divider, Hidden, useBreakpointKey, Visible } from 'newskit';
-import React from 'react';
+import {
+  Block,
+  Divider,
+  Hidden,
+  useBreakpointKey,
+  Visible,
+  BreakpointKeys
+} from 'newskit';
+import React, { useState, useEffect } from 'react';
 import { CommentCardProps } from '../../components/slices/comment-card';
 import {
   LeadArticle,
@@ -10,16 +17,15 @@ import {
   SliceHeaderProps
 } from '../../components/slices/slice-header';
 import { ArticleProps } from '../../components/slices/article';
-import {
-  LeadStoryDivider,
-  LeadStoryCell,
-  CellNoMargin,
-  CellWithCustomPadding
-} from '../shared-styles';
+import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
 
 import { CommentStack } from './comment-stack';
 import { ArticleStack } from './article-stack';
-import { CustomGridLayout } from '../shared/grid-layout';
+import { CustomStackLayout } from '../shared';
+import {
+  FullWidthBlock,
+  FullWidthHidden
+} from '../../components/slices/shared-styles';
 
 export interface ContentBucket1Props {
   section: SliceHeaderProps;
@@ -34,19 +40,47 @@ export const ContentBucket1 = ({
   comments,
   articles
 }: ContentBucket1Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
+  const isMobile = ['xs', 'sm'].includes(currentBreakpoint);
 
   const modifiedLeadArticle = {
     ...leadArticle,
-    contentTop: true
+    imageTop: isMobile,
+    hasTopBorder: !isMobile
   };
 
   return (
-    <CustomGridLayout>
-      <CellWithCustomPadding xs={12}>
-        <SliceHeader {...section} />
-      </CellWithCustomPadding>
-      <LeadStoryCell xs={12} lg={9} xl={8}>
+    <CustomStackLayout>
+      <FullWidthBlock>
+        <BlockItem
+          $width={{
+            xs: '100%',
+            md: '720px',
+            lg: '977px',
+            xl: '1274px'
+          }}
+        >
+          <SliceHeader {...section} />
+        </BlockItem>
+      </FullWidthBlock>
+      <StackItem
+        $width={{
+          xs: '100%',
+          md: '720px',
+          lg: '760px',
+          xl: '840px'
+        }}
+        marginInlineEnd={{
+          lg: 'space060'
+        }}
+      >
         <Block>
           <Visible lg xl>
             <LeadStoryDivider
@@ -55,30 +89,51 @@ export const ContentBucket1 = ({
               position="right"
             />
           </Visible>
-          <LeadArticle {...modifiedLeadArticle} />
+          <LeadArticle
+            {...modifiedLeadArticle}
+            contentWidth={currentBreakpoint === 'xl' ? '312px' : '283px'}
+          />
         </Block>
         <Block>
           <Hidden md>
             <CommentStack comments={comments} />
           </Hidden>
         </Block>
-      </LeadStoryCell>
-      <CellNoMargin xs={12} lg={3} xl={4}>
-        <Hidden lg xl>
-          <Divider
-            overrides={{
-              marginBlock: 'space040',
-              stylePreset: 'dashedDivider'
-            }}
-          />
-        </Hidden>
-        <ArticleStack articles={articles} breakpoint={breakpointKey} />
-      </CellNoMargin>
+      </StackItem>
+      <StackItem
+        $width={{
+          xs: '100%',
+          md: '720px',
+          lg: '185px',
+          xl: '402px'
+        }}
+      >
+        <FullWidthHidden lg xl>
+          <FullWidthBlock>
+            <Divider
+              overrides={{
+                marginBlock: 'space040',
+                stylePreset: 'dashedDivider'
+              }}
+            />
+          </FullWidthBlock>
+        </FullWidthHidden>
+        <BlockItem>
+          <ArticleStack articles={articles} breakpoint={currentBreakpoint} />
+        </BlockItem>
+      </StackItem>
       <Visible md>
-        <CellNoMargin xs={12}>
+        <BlockItem
+          $width={{
+            xs: '100%',
+            md: '720px',
+            lg: '977px',
+            xl: '1274px'
+          }}
+        >
           <CommentStack comments={comments} />
-        </CellNoMargin>
+        </BlockItem>
       </Visible>
-    </CustomGridLayout>
+    </CustomStackLayout>
   );
 };

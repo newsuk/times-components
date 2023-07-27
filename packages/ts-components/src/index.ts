@@ -35,6 +35,10 @@ export {
 
 // Sport Components
 export {
+  OptaCricketScorecard
+} from './components/opta/cricket/scorecard/OptaCricketScorecard';
+
+export {
   OptaFootballFixtures
 } from './components/opta/football/fixtures/OptaFootballFixtures';
 export {
@@ -88,6 +92,7 @@ export {
 
 export { UpdatedTimeProvider } from './helpers/time/UpdatedTimeProvider';
 
+export { WelcomeBanner } from './components/welcome-banner/WelcomeBanner';
 export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';

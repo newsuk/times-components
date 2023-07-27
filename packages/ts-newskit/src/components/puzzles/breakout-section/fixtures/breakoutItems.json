@@ -2,32 +2,32 @@
     "breakoutItems": [
         {
             "id": "0",
-            "url": "/",
+            "url": "/puzzles/subpuzzles/crosswords",
             "title": "Crosswords"
         },
         {
             "id": "1",
-            "url": "/",
+            "url": "/puzzles/subpuzzles/sudokus",
             "title": "Sudokus"
         },
         {
             "id": "2",
-            "url": "/",
+            "url": "/puzzles/subpuzzles/word-puzzles",
             "title": "Word Puzzles"
         },
         {
             "id": "3",
-            "url": "/",
+            "url": "/puzzles/subpuzzles/numbers-and-logic",
             "title": "Numbers and Logic"
         },
         {
             "id": "4",
-            "url": "/",
+            "url": "/puzzles/subpuzzles/quizzes-and-teasers",
             "title": "Quizzes and Teasers"
         },
         {
             "id": "5",
-            "url": "/",
+            "url": "/puzzles/subpuzzles/board-and-card-games",
             "title": "Board and Card Games"
         }
     ]

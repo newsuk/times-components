@@ -1,12 +1,14 @@
-import { Divider, GridLayout, useBreakpointKey } from 'newskit';
-import React from 'react';
+import { GridLayout, useBreakpointKey, BreakpointKeys } from 'newskit';
+import React, { useState, useEffect } from 'react';
 import {
   SliceHeader,
   SliceHeaderProps
 } from '../../components/slices/slice-header';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { CellNoMargin, CellWithCustomPadding } from '../shared-styles';
-import { CustomGridLayout } from '../shared/grid-layout';
+import { StackItem, StyledDivider } from '../shared-styles';
+import { CustomStackLayout } from '../shared';
+import { FullWidthBlock } from '../../components/slices/shared-styles';
+import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export interface ContentBucket2Props {
   section: SliceHeaderProps;
@@ -14,15 +16,24 @@ export interface ContentBucket2Props {
 }
 
 export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
-  const isMob = breakpointKey === 'xs' || breakpointKey === 'sm';
+  useEffect(
+    () => {
+      setBreakpoint(breakpointKey);
+    },
+    [breakpointKey]
+  );
+  const isMob = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
 
   return (
-    <CustomGridLayout>
-      <CellWithCustomPadding xs={12}>
-        <SliceHeader {...section} />
-      </CellWithCustomPadding>
-      <CellNoMargin xs={12}>
+    <CustomStackLayout>
+      <StackItem>
+        <FullWidthBlock>
+          <SliceHeader {...section} />
+        </FullWidthBlock>
+      </StackItem>
+      <StackItem>
         <GridLayout
           columns={{
             xs: '1fr',
@@ -35,15 +46,18 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
           {articles.map((article: ArticleProps, articleIndex, articleArr) => {
             const articleBorder = articleIndex < articleArr.length - 1 &&
               !isMob && (
-                <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
+                <StyledDivider
+                  overrides={{ stylePreset: 'lightDivider' }}
+                  vertical
+                />
               );
 
             const isAfterFirstArticle = isMob && articleIndex > 0;
 
             return (
-              <React.Fragment key={article.title}>
+              <React.Fragment key={article.headline}>
                 <Article
-                  {...article}
+                  {...clearCreditsAndCaption(article)}
                   hideImage={isAfterFirstArticle}
                   isLeadImage={isMob && articleIndex === 0}
                   hasTopBorder={isMob && articleIndex > 0}
@@ -53,7 +67,7 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
             );
           })}
         </GridLayout>
-      </CellNoMargin>
-    </CustomGridLayout>
+      </StackItem>
+    </CustomStackLayout>
   );
 };

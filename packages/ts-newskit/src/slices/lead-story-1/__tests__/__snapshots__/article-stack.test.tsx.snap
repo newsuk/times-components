@@ -6,7 +6,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
     class="css-1r18k3i"
   >
     <div
-      class="css-6uqogc"
+      class="css-amkxca"
       data-testid="scroll-container"
     >
       <div
@@ -27,9 +27,9 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 class="css-5pczz7"
               />
               <img
-                alt="This is ALT Text"
+                alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                 class="css-1qgqq71"
-                src="/assets/small_01.jpg"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
               />
             </picture>
           </div>
@@ -88,7 +88,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
         </div>
         <hr
           aria-hidden="true"
-          class="css-13rcg9f"
+          class="css-5iyysz"
           data-testid="divider"
         />
         <div
@@ -104,9 +104,9 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 class="css-5pczz7"
               />
               <img
-                alt="This is ALT Text"
+                alt="American owners pose threat to English pyramid"
                 class="css-1qgqq71"
-                src="/assets/small_02.jpg"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
               />
             </picture>
           </div>
@@ -132,7 +132,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
         </div>
         <hr
           aria-hidden="true"
-          class="css-13rcg9f"
+          class="css-5iyysz"
           data-testid="divider"
         />
         <div
@@ -148,9 +148,9 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 class="css-5pczz7"
               />
               <img
-                alt="This is ALT Text"
+                alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                 class="css-1qgqq71"
-                src="/assets/small_03.jpg"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
               />
             </picture>
           </div>
@@ -195,7 +195,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
         </div>
         <hr
           aria-hidden="true"
-          class="css-13rcg9f"
+          class="css-5iyysz"
           data-testid="divider"
         />
         <div
@@ -211,9 +211,9 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 class="css-5pczz7"
               />
               <img
-                alt="This is ALT Text"
+                alt="Blow for rebel clubs as court says Uefa can block Super League"
                 class="css-1qgqq71"
-                src="/assets/small_04.jpg"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
               />
             </picture>
           </div>
@@ -239,6 +239,18 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               class="css-1atazsr"
               data-testid="tag-and-flag"
             >
+              <a
+                class="css-10d4t8c"
+                href=""
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-zhtub2"
+                  />
+                </span>
+              </a>
               <span
                 class="css-1vzvkql"
               >
@@ -249,7 +261,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
         </div>
         <hr
           aria-hidden="true"
-          class="css-13rcg9f"
+          class="css-5iyysz"
           data-testid="divider"
         />
         <div
@@ -265,9 +277,9 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 class="css-5pczz7"
               />
               <img
-                alt="This is ALT Text"
+                alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                 class="css-1qgqq71"
-                src="/assets/small_04.jpg"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
               />
             </picture>
           </div>
@@ -285,7 +297,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 <span
                   class="css-65zrxz"
                 >
-                  Blow for rebel clubs as court says Uefa can block Super League
+                  Blow for rebel clubs as court says Uefa can block Super League 2
                 </span>
               </span>
             </a>
@@ -333,7 +345,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
 exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
 <DocumentFragment>
   <div
-    class="css-194m366"
+    class="css-1fw9bkp"
   >
     <div
       class="css-1fgalmf"
@@ -360,9 +372,9 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
               class="css-5pczz7"
             />
             <img
-              alt="This is ALT Text"
+              alt="American owners pose threat to English pyramid"
               class="css-1qgqq71"
-              src="/assets/small_02.jpg"
+              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
             />
           </picture>
         </div>
@@ -412,9 +424,9 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
               class="css-5pczz7"
             />
             <img
-              alt="This is ALT Text"
+              alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
               class="css-1qgqq71"
-              src="/assets/small_03.jpg"
+              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
             />
           </picture>
         </div>
@@ -483,9 +495,9 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
               class="css-5pczz7"
             />
             <img
-              alt="This is ALT Text"
+              alt="Blow for rebel clubs as court says Uefa can block Super League"
               class="css-1qgqq71"
-              src="/assets/small_04.jpg"
+              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
             />
           </picture>
         </div>
@@ -511,6 +523,18 @@ exports[`Render Lead Story 1 Slice small Aricle Stack 1`] = `
             class="css-1atazsr"
             data-testid="tag-and-flag"
           >
+            <a
+              class="css-10d4t8c"
+              href=""
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-zhtub2"
+                />
+              </span>
+            </a>
             <span
               class="css-1vzvkql"
             >

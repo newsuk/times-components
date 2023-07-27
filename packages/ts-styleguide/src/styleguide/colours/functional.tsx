@@ -15,6 +15,7 @@ export const functionalColours = {
   greyLabel: '#CCC',
   greyStickyBarBoxShadow: '#c9c7c7ed',
   greyStickyBarBorderBottom: '#ffffffdb',
+  greyText: '#3b3b3b',
   gutter: '#f0f0f0',
   keyline: '#DBDBDB',
   modalBackground: '#000000',

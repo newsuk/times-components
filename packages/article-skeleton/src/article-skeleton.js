@@ -5,10 +5,17 @@ import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import { TrackingContextProvider } from "@times-components/ts-components";
+import {
+  TrackingContextProvider,
+  WelcomeBanner
+} from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
+import {
+  UpdateButtonWithDelay,
+  TCThemeProvider
+} from "@times-components/ts-newskit";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -23,7 +30,8 @@ import {
   BodyContainer,
   getHeaderAdStyles,
   HeaderContainer,
-  MainContainer
+  MainContainer,
+  UpdateButtonContainer
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -86,6 +94,14 @@ const ArticleSkeleton = ({
   const newContent = reduceArticleContent(content, articleContentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
+
+  const scrollToTopAndRefresh = window => {
+    window.scroll({
+      left: 0,
+      top: 0
+    });
+    window.location.reload(true);
+  };
 
   receiveChildList([
     {
@@ -173,6 +189,7 @@ const ArticleSkeleton = ({
               <AdContainer slotName="header" style={styles.adMarginStyle} />
             </HeaderAdContainer>
             <MainContainer>
+              <WelcomeBanner />
               {!!zephrDivs && (
                 <StaticContent
                   html={
@@ -236,6 +253,21 @@ const ArticleSkeleton = ({
                     isPreview={isPreview}
                     isLiveOrBreaking={isLiveOrBreaking}
                   />
+                )}
+                {isLiveOrBreaking && (
+                  <TCThemeProvider>
+                    <UpdateButtonContainer data-testid="Update button container">
+                      <UpdateButtonWithDelay
+                        delay={8000}
+                        display
+                        label="New update"
+                        handleClick={() => scrollToTopAndRefresh(window)}
+                        arrowUp
+                        updatedTime={article.publishedTime}
+                        articleId={article.id}
+                      />
+                    </UpdateButtonContainer>
+                  </TCThemeProvider>
                 )}
                 <PaywallPortal
                   id="paywall-portal-article-footer"

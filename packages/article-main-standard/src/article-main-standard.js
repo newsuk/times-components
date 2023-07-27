@@ -93,6 +93,7 @@ class ArticlePage extends Component {
     if (error || isLoading) {
       return null;
     }
+
     return (
       <ArticleMainStandardContainer>
         <ArticleSkeleton

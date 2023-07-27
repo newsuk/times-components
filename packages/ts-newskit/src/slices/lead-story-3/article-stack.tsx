@@ -1,7 +1,7 @@
 import { Block, Divider, BreakpointKeys } from 'newskit';
 import React from 'react';
 import { BlockNoTopMargin } from '../lead-story-1/styles';
-import { FullWidthDividerMob } from '../../components/slices/shared-styles';
+import { FullWidthBlock } from '../../components/slices/shared-styles';
 import {
   LeadArticle,
   LeadArticleProps
@@ -18,7 +18,7 @@ export const ArticleStack = ({
 }: ArticlesProps) => {
   const modifiedArticles = leadArticles.map(leadArticle => ({
     ...leadArticle,
-    imageTop: true
+    hideImage: true
   }));
 
   return (
@@ -30,7 +30,7 @@ export const ArticleStack = ({
               ? {
                   ...modifiedArticle,
                   textBlockMarginBlockStart: 'space050',
-                  typographyPreset:
+                  headlineTypographyPreset:
                     breakpointKey === 'xs'
                       ? 'editorialHeadline040'
                       : breakpointKey === 'sm'
@@ -39,18 +39,18 @@ export const ArticleStack = ({
                 }
               : {
                   ...modifiedArticle,
-                  typographyPreset: 'editorialHeadline020'
+                  headlineTypographyPreset: 'editorialHeadline020'
                 };
           return (
             <>
               {index !== 0 && (
-                <FullWidthDividerMob>
+                <FullWidthBlock>
                   <Divider
                     overrides={{
                       stylePreset: 'dashedDivider'
                     }}
                   />
-                </FullWidthDividerMob>
+                </FullWidthBlock>
               )}
               <Block marginBlock="space040">
                 <LeadArticle {...articlesWithModifiedTypography} />

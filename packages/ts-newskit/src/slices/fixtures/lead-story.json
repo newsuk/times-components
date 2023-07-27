@@ -1,26 +1,85 @@
 {
   "leadArticle": {
+    "tagL1": {
+      "label": "",
+      "href": ""
+    },
     "headline": "Sarcacens an inclusive club? They didnt look out for me",
-    "summary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
-    "caption": "Credit",
-    "image": "/assets/main_01.jpg",
+    "shortSummary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
+    "images": {
+      "alt": "",
+      "credits": "Gareth Fuller/Press Association",
+      "caption": "Sarcacens an inclusive club? They didnt look out for me",
+      "crops": [
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+          "ratio": "3:2"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+          "ratio": "16:9"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+          "ratio": "1:1"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+          "ratio": "2:3"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+          "ratio": "4:5"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+          "ratio": "5:4"
+        }
+      ]
+    },
     "url": "https://www.thetimes.co.uk",
     "tag": {
       "label": "Tag",
       "href": "/"
     },
     "flag": "4 min read",
-    "imageTop": true
+    "listData": []
   },
   "articles": [
     {
-      "image": {
-        "src": "/assets/small_01.jpg",
-        "alt": "This is ALT Text"
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
       },
-      "title": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
+      "headline": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "imageRight": false,
       "tag": {
         "label": "Tag",
         "href": "/"
@@ -28,45 +87,159 @@
       "flag": "Flag1"
     },
     {
-      "image": {
-        "src": "/assets/small_02.jpg",
-        "alt": "This is ALT Text"
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
       },
-      "title": "American owners pose threat to English pyramid",
+      "headline": "American owners pose threat to English pyramid",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "imageRight": false
+      "tag": {
+        "label": "",
+        "href": ""
+      },
+      "flag": ""
     },
     {
-      "image": {
-        "src": "/assets/small_03.jpg",
-        "alt": "This is ALT Text"
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
       },
-      "title": "£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid",
+      "headline": "£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "imageRight": false,
       "tag": {
         "label": "Tag",
         "href": "/"
-      }
+      },
+      "flag": ""
     },
     {
-      "image": {
-        "src": "/assets/small_04.jpg",
-        "alt": "This is ALT Text"
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
       },
-      "title": "Blow for rebel clubs as court says Uefa can block Super League",
+      "headline": "Blow for rebel clubs as court says Uefa can block Super League",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "imageRight": false,
+      "tag": {
+        "label": "",
+        "href": ""
+      },
       "flag": "Flag4"
     },
     {
-      "image": {
-        "src": "/assets/small_04.jpg",
-        "alt": "This is ALT Text"
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
       },
-      "title": "Blow for rebel clubs as court says Uefa can block Super League",
+      "headline": "Blow for rebel clubs as court says Uefa can block Super League 2",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "imageRight": false,
       "tag": {
         "label": "Tag",
         "href": "/"
@@ -80,8 +253,14 @@
       "label": "TAG",
       "href": "/"
     },
+    "images": {
+      "alt": "",
+      "credits": "Gareth Fuller/Press Association",
+      "caption": "Sarcacens an inclusive club? They didnt look out for me",
+      "crops": []
+    },
     "headline": "Short title of the card describing the main content",
-    "summary": "Short paragraph description of the article, outlining main story and focus.",
+    "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
     "tag": {
       "label": "Tag",
       "href": "/"
@@ -91,8 +270,44 @@
     "listData": [{ "label": "Unordered list item", "href": "/" }]
   },
   "singleArticle": {
-    "title": "Short title of the card describing the main content",
-    "url": "#"
+    "images": {
+      "alt": "",
+      "credits": "Gareth Fuller/Press Association",
+      "caption": "Sarcacens an inclusive club? They didnt look out for me",
+      "crops": [
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+          "ratio": "3:2"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+          "ratio": "16:9"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+          "ratio": "1:1"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+          "ratio": "2:3"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+          "ratio": "4:5"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+          "ratio": "5:4"
+        }
+      ]
+    },
+    "headline": "Short title of the card describing the main content 3",
+    "url": "#",
+    "tag": {
+      "label": "",
+      "href": ""
+    },
+    "flag": ""
   },
   "groupedArticles": {
     "tagL1": {
@@ -101,88 +316,368 @@
     },
     "articles": [
       {
+        "tagL1": {
+          "label": "",
+          "href": ""
+        },
+        "images": {
+          "alt": "",
+          "credits": "Gareth Fuller/Press Association",
+          "caption": "Sarcacens an inclusive club? They didnt look out for me",
+          "crops": [
+            {
+              "url": "/assets/small_04.jpg",
+              "ratio": "3:2"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+              "ratio": "16:9"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+              "ratio": "1:1"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+              "ratio": "2:3"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+              "ratio": "4:5"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+              "ratio": "5:4"
+            }
+          ]
+        },
         "headline": "Short title of the card describing the main content",
-        "summary": "Short paragraph description of the article, outlining main story and focus.",
-        "url": "#"
+        "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+        "url": "#",
+        "tag": {
+          "label": "",
+          "href": ""
+        },
+        "flag": "",
+        "listData": []
       },
       {
-        "headline": "Short title of the card describing the main content",
-        "summary": "Short paragraph description of the article, outlining main story and focus.",
-        "url": "#"
+        "tagL1": {
+          "label": "",
+          "href": ""
+        },
+        "images": {
+          "alt": "",
+          "credits": "Gareth Fuller/Press Association",
+          "caption": "Sarcacens an inclusive club? They didnt look out for me",
+          "crops": [
+            {
+              "url": "/assets/small_04.jpg",
+              "ratio": "3:2"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+              "ratio": "16:9"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+              "ratio": "1:1"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+              "ratio": "2:3"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+              "ratio": "4:5"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+              "ratio": "5:4"
+            }
+          ]
+        },
+        "headline": "Short title of the card describing the main content 2",
+        "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+        "url": "#",
+        "tag": {
+          "label": "",
+          "href": ""
+        },
+        "flag": "",
+        "listData": []
       }
     ]
   },
   "smallArticles": [
     {
-      "image": {
-        "src": "/assets/small_01.jpg",
-        "alt": "This is ALT Text"
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
       },
-      "title": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
+      "headline": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "imageRight": false,
+      "tag": {
+        "label": "",
+        "href": ""
+      },
       "flag": "Flag"
     },
     {
-      "image": {
-        "src": "/assets/small_02.jpg",
-        "alt": "This is ALT Text"
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
       },
-      "title": "‘American owners pose threat to English pyramid’",
+      "headline": "‘American owners pose threat to English pyramid’",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
-      "imageRight": false,
+      "tag": {
+        "label": "",
+        "href": ""
+      },
       "flag": ""
     }
   ],
 
   "verticalArticles": [
     {
+      "tagL1": {
+        "label": "",
+        "href": ""
+      },
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
+      },
       "headline": "Short title of the card describing the main content",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
-      "caption": "Credit",
-      "image": "/assets/main_01.jpg",
+      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
         "href": "/"
       },
-      "flag": "4 min read"
+      "flag": "4 min read",
+      "listData": []
     },
     {
-      "headline": "Short title of the card describing the main content",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
-      "caption": "Credit",
-      "image": "/assets/main_01.jpg",
+      "tagL1": {
+        "label": "",
+        "href": ""
+      },
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
+      },
+      "headline": "Short title of the card describing the main content 2",
+      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
         "href": "/"
       },
-      "flag": "4 min read"
+      "flag": "4 min read",
+      "listData": []
     }
   ],
   "horizontalArticles": [
     {
+      "tagL1": {
+        "label": "",
+        "href": ""
+      },
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
+      },
       "headline": "Short title of the card describing the main content",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
-      "caption": "Credit",
+      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
         "href": "/"
       },
-      "flag": "4 min read"
+      "flag": "4 min read",
+      "listData": []
     },
     {
-      "headline": "Short title of the card describing the main content",
-      "summary": "Short paragraph description of the article, outlining main story and focus.",
-      "caption": "Credit",
+      "tagL1": {
+        "label": "",
+        "href": ""
+      },
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
+      },
+      "headline": "Short title of the card describing the main content 2",
+      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
         "href": "/"
       },
-      "flag": "4 min read"
+      "flag": "4 min read",
+      "listData": []
     }
   ]
 }
