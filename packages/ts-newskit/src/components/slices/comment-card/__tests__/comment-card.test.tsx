@@ -43,13 +43,13 @@ const defaultProps = {
   },
   byline: 'Journalist name',
   headline: 'Quote text',
-  href: '/#'
+  url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
 };
 
 it('should render component to match snapshot', () => {
   const { asFragment } = renderComponent(defaultProps);
 
-  expect(asFragment).toMatchSnapshot();
+  expect(asFragment()).toMatchSnapshot();
 });
 
 it('should render the correct text, with Heading', () => {
@@ -121,7 +121,7 @@ it('should render the correct text, without Heading', () => {
     },
     byline: 'Journalist name',
     headline: 'Quote text',
-    href: '/'
+    url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
   });
 
   const heading = screen.queryByText('Heading text');

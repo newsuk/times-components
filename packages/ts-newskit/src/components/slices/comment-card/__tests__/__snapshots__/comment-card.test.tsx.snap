@@ -1,3 +1,50 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render component to match snapshot 1`] = `[Function]`;
+exports[`should render component to match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-19w1t19"
+  >
+    <div
+      class="css-1kwj960"
+    >
+      <picture
+        class="css-33c418"
+      >
+        <div
+          class="css-5pczz7"
+        />
+        <img
+          alt="Journalist name"
+          class="css-1t6p58q"
+          src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+          width="77px"
+        />
+      </picture>
+    </div>
+    <div
+      class="css-lq9usb"
+    >
+      <a
+        class="css-gull0f"
+        href="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+      >
+        <span
+          class="css-17x5lw"
+        >
+          <span
+            class="css-65zrxz"
+          >
+            Journalist name
+          </span>
+        </span>
+      </a>
+      <p
+        class="css-d8s6u6"
+      >
+        Quote text
+      </p>
+    </div>
+  </div>
+</DocumentFragment>
+`;
