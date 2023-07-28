@@ -18,7 +18,7 @@ export interface CommentCardProps {
   images?: ImageProps;
   byline: string;
   headline: string;
-  href: string;
+  url: string;
   flag?: string;
 }
 
@@ -26,7 +26,7 @@ export const CommentCard = ({
   images,
   byline,
   headline,
-  href,
+  url,
   flag
 }: CommentCardProps) => {
   const imageWithCorrectRatio =
@@ -54,10 +54,11 @@ export const CommentCard = ({
 
       <CardContent rowGap="space040" alignContent="start">
         <CardHeadlineLink
-          href={href}
+          href={url}
           $color="inkBrand010"
           overrides={{ typographyPreset: 'editorialHeadline020' }}
           expand
+          external={false}
         >
           {byline}
         </CardHeadlineLink>
