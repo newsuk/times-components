@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.71.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.70.0...@times-components/ts-newskit@1.71.0) (2023-07-31)
+
+
+### Features
+
+* **TMRX-1315:** add container widths ([#3467](https://github.com/newsuk/times-components/issues/3467)) ([4361ca2](https://github.com/newsuk/times-components/commit/4361ca25353f1194d534c83912aec12590aba1c7))
+
+
+
+
+
 # [1.70.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.69.1...@times-components/ts-newskit@1.70.0) (2023-07-31)
 
 
