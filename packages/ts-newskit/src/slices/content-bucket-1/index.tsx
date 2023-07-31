@@ -63,8 +63,8 @@ export const ContentBucket1 = ({
           $width={{
             xs: '100%',
             md: '720px',
-            lg: '977px',
-            xl: '1274px'
+            lg: '976px',
+            xl: '1276px'
           }}
         >
           <SliceHeader {...section} />
@@ -127,8 +127,8 @@ export const ContentBucket1 = ({
           $width={{
             xs: '100%',
             md: '720px',
-            lg: '977px',
-            xl: '1274px'
+            lg: '976px',
+            xl: '1276px'
           }}
         >
           <CommentStack comments={comments} />

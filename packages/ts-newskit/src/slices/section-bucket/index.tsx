@@ -8,6 +8,7 @@ import {
 import { Divider, useBreakpointKey, Scroll, BreakpointKeys } from 'newskit';
 import { CustomGridLayout } from '../shared/layouts';
 import { StyledBlock } from './styles';
+import { BlockItem } from '../shared-styles';
 
 export interface SectionBucketProps {
   articleStackOne: ArticleStackProps;
@@ -76,6 +77,15 @@ export const SectionBucket = ({
       {ArticleStackBlocks}
     </Scroll>
   ) : (
-    ArticleStackBlocks
+    <BlockItem
+      $width={{
+        xs: '100%',
+        md: '720px',
+        lg: '976px',
+        xl: '1276px'
+      }}
+    >
+      {ArticleStackBlocks}
+    </BlockItem>
   );
 };

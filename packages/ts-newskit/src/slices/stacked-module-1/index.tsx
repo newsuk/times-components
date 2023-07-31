@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { CustomStackLayout } from '../shared';
-import { StackItem, StyledDivider } from '../shared-styles';
+import { BlockItem, StackItem, StyledDivider } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export interface StackModule1Props {
@@ -96,7 +96,14 @@ export const StackModule1 = ({ articles }: StackModule1Props) => {
   const articlesBottom = articles.slice(4);
 
   return (
-    <>
+    <BlockItem
+      $width={{
+        xs: '100%',
+        md: '720px',
+        lg: '976px',
+        xl: '1276px'
+      }}
+    >
       {articleStack({ articles: articlesTop, isMob })}
       {articleStack({
         articles: articlesBottom,
@@ -105,6 +112,6 @@ export const StackModule1 = ({ articles }: StackModule1Props) => {
         isMob
       })}
       {fullWidthDivider('space040')}
-    </>
+    </BlockItem>
   );
 };

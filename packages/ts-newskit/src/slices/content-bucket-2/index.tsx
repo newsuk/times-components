@@ -5,7 +5,7 @@ import {
   SliceHeaderProps
 } from '../../components/slices/slice-header';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { StackItem, StyledDivider } from '../shared-styles';
+import { BlockItem, StackItem, StyledDivider } from '../shared-styles';
 import { CustomStackLayout } from '../shared';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
@@ -30,10 +30,26 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
     <CustomStackLayout>
       <StackItem>
         <FullWidthBlock>
-          <SliceHeader {...section} />
+          <BlockItem
+            $width={{
+              xs: '100%',
+              md: '720px',
+              lg: '976px',
+              xl: '1276px'
+            }}
+          >
+            <SliceHeader {...section} />
+          </BlockItem>
         </FullWidthBlock>
       </StackItem>
-      <StackItem>
+      <StackItem
+        $width={{
+          xs: '100%',
+          md: '720px',
+          lg: '976px',
+          xl: '1276px'
+        }}
+      >
         <GridLayout
           columns={{
             xs: '1fr',
