@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.70.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.69.1...@times-components/ts-newskit@1.70.0) (2023-07-31)
+
+
+### Features
+
+* **TMRX-1152:** allowing render to update custom themes ([#3466](https://github.com/newsuk/times-components/issues/3466)) ([a405ef5](https://github.com/newsuk/times-components/commit/a405ef5a7dfbe884d452e018a0180b6fa0fe9613))
+
+
+
+
+
 ## [1.69.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.69.0...@times-components/ts-newskit@1.69.1) (2023-07-28)
 
 
