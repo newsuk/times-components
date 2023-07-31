@@ -213,7 +213,7 @@ export const LeadStory1 = ({
         </BlockItem>
       ) : (
         <ArticleStackLeadStory
-          mdWidth="722px"
+          mdWidth="720px"
           modifedArticles={modifiedArticles}
           breakpoint={currentBreakpoint}
         />

@@ -702,689 +702,693 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
 exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
 <DocumentFragment>
   <div
-    class="css-gmqme8"
-    data-testid="article-container"
+    class="css-1frprgo"
   >
     <div
-      class="css-yd8jik"
-      data-testid="article-block"
+      class="css-gmqme8"
+      data-testid="article-container"
     >
       <div
-        class="css-lihpnt"
+        class="css-yd8jik"
+        data-testid="article-block"
       >
         <div
-          class="css-66z36v"
+          class="css-lihpnt"
         >
           <div
-            class="css-86cix"
+            class="css-66z36v"
           >
             <div
-              class="css-1aiajnh"
+              class="css-86cix"
             >
-              <section
-                class="css-6cr1qt"
+              <div
+                class="css-1aiajnh"
               >
-                <h3
-                  class="nk-headline-heading css-i2jo9u"
+                <section
+                  class="css-6cr1qt"
                 >
-                  Title bar
-                </h3>
-              </section>
+                  <h3
+                    class="nk-headline-heading css-i2jo9u"
+                  >
+                    Title bar
+                  </h3>
+                </section>
+              </div>
             </div>
-          </div>
-          <a
-            class="css-1vespcj"
-            data-testid="buttonLink"
-            href="https://www.thetimes.co.uk/"
-            role="link"
-          >
-            <svg
-              aria-hidden="true"
-              class="css-3rbz36"
-              fill="currentcolor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+            <a
+              class="css-1vespcj"
+              data-testid="buttonLink"
+              href="https://www.thetimes.co.uk/"
+              role="link"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+              <svg
+                aria-hidden="true"
+                class="css-3rbz36"
                 fill="currentcolor"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1nw1nne"
-      >
-        <div
-          class="css-1kwj960"
-        >
-          <picture
-            class="css-zp0elg"
-          >
-            <div
-              class="css-5pczz7"
-            />
-            <img
-              alt="Short title of the card describing the main content"
-              class="css-1qgqq71"
-              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-            />
-          </picture>
-        </div>
-        <div
-          class="css-diffbd"
-        >
-          <a
-            class="css-u57k3c"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
-          >
-            <span
-              class="css-17x5lw"
-            >
-              <span
-                class="css-65zrxz"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Short title of the card describing the main content
-              </span>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1atazsr"
-      />
-      <div
-        class="css-1nw1nne"
-      >
-        <div
-          class="css-tj8oo8"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-1i1gqyx"
-            data-testid="divider"
-          />
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                  fill="currentcolor"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
         <div
-          class="css-diffbd"
-        >
-          <a
-            class="css-bxykrz"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
-          >
-            <span
-              class="css-17x5lw"
-            >
-              <span
-                class="css-65zrxz"
-              >
-                Short title of the card describing the main content
-              </span>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1atazsr"
-      />
-      <div
-        class="css-1nw1nne"
-      >
-        <div
-          class="css-tj8oo8"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-1i1gqyx"
-            data-testid="divider"
-          />
-        </div>
-        <div
-          class="css-diffbd"
-        >
-          <a
-            class="css-bxykrz"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
-          >
-            <span
-              class="css-17x5lw"
-            >
-              <span
-                class="css-65zrxz"
-              >
-                Short title of the card describing the main content
-              </span>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1atazsr"
-      />
-    </div>
-    <hr
-      aria-hidden="true"
-      class="css-13rcg9f"
-      data-testid="divider"
-    />
-    <div
-      class="css-yd8jik"
-      data-testid="article-block"
-    >
-      <div
-        class="css-lihpnt"
-      >
-        <div
-          class="css-66z36v"
+          class="css-1nw1nne"
         >
           <div
-            class="css-86cix"
+            class="css-1kwj960"
           >
-            <div
-              class="css-1aiajnh"
+            <picture
+              class="css-zp0elg"
             >
-              <section
-                class="css-6cr1qt"
-              >
-                <h3
-                  class="nk-headline-heading css-i2jo9u"
-                >
-                  Title bar
-                </h3>
-              </section>
-            </div>
+              <div
+                class="css-5pczz7"
+              />
+              <img
+                alt="Short title of the card describing the main content"
+                class="css-1qgqq71"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+              />
+            </picture>
           </div>
-          <a
-            class="css-1vespcj"
-            data-testid="buttonLink"
-            href="https://www.thetimes.co.uk/"
-            role="link"
+          <div
+            class="css-diffbd"
           >
-            <svg
-              aria-hidden="true"
-              class="css-3rbz36"
-              fill="currentcolor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                fill="currentcolor"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1nw1nne"
-      >
-        <div
-          class="css-1kwj960"
-        >
-          <picture
-            class="css-zp0elg"
-          >
-            <div
-              class="css-5pczz7"
-            />
-            <img
-              alt="Short title of the card describing the main content"
-              class="css-1qgqq71"
-              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-            />
-          </picture>
-        </div>
-        <div
-          class="css-diffbd"
-        >
-          <a
-            class="css-u57k3c"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
-          >
-            <span
-              class="css-17x5lw"
+            <a
+              class="css-u57k3c"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
             >
               <span
-                class="css-65zrxz"
+                class="css-17x5lw"
               >
-                Short title of the card describing the main content
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
               </span>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1atazsr"
-      />
-      <div
-        class="css-1nw1nne"
-      >
-        <div
-          class="css-tj8oo8"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-1i1gqyx"
-            data-testid="divider"
-          />
+            </a>
+          </div>
         </div>
         <div
-          class="css-diffbd"
-        >
-          <a
-            class="css-bxykrz"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
-          >
-            <span
-              class="css-17x5lw"
-            >
-              <span
-                class="css-65zrxz"
-              >
-                Short title of the card describing the main content
-              </span>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1atazsr"
-      />
-      <div
-        class="css-1nw1nne"
-      >
+          class="css-1atazsr"
+        />
         <div
-          class="css-tj8oo8"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-1i1gqyx"
-            data-testid="divider"
-          />
-        </div>
-        <div
-          class="css-diffbd"
-        >
-          <a
-            class="css-bxykrz"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
-          >
-            <span
-              class="css-17x5lw"
-            >
-              <span
-                class="css-65zrxz"
-              >
-                Short title of the card describing the main content
-              </span>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1atazsr"
-      />
-    </div>
-    <hr
-      aria-hidden="true"
-      class="css-13rcg9f"
-      data-testid="divider"
-    />
-    <div
-      class="css-yd8jik"
-      data-testid="article-block"
-    >
-      <div
-        class="css-lihpnt"
-      >
-        <div
-          class="css-66z36v"
+          class="css-1nw1nne"
         >
           <div
-            class="css-86cix"
+            class="css-tj8oo8"
           >
-            <div
-              class="css-1aiajnh"
-            >
-              <section
-                class="css-6cr1qt"
-              >
-                <h3
-                  class="nk-headline-heading css-i2jo9u"
-                >
-                  Title bar
-                </h3>
-              </section>
-            </div>
-          </div>
-          <a
-            class="css-1vespcj"
-            data-testid="buttonLink"
-            href="https://www.thetimes.co.uk/"
-            role="link"
-          >
-            <svg
+            <hr
               aria-hidden="true"
-              class="css-3rbz36"
-              fill="currentcolor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                fill="currentcolor"
-              />
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1nw1nne"
-      >
-        <div
-          class="css-1kwj960"
-        >
-          <picture
-            class="css-zp0elg"
-          >
-            <div
-              class="css-5pczz7"
+              class="css-1i1gqyx"
+              data-testid="divider"
             />
-            <img
-              alt="Short title of the card describing the main content"
-              class="css-1qgqq71"
-              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-            />
-          </picture>
-        </div>
-        <div
-          class="css-diffbd"
-        >
-          <a
-            class="css-u57k3c"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
+          </div>
+          <div
+            class="css-diffbd"
           >
-            <span
-              class="css-17x5lw"
+            <a
+              class="css-bxykrz"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
             >
               <span
-                class="css-65zrxz"
+                class="css-17x5lw"
               >
-                Short title of the card describing the main content
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
               </span>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1atazsr"
-      />
-      <div
-        class="css-1nw1nne"
-      >
-        <div
-          class="css-tj8oo8"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-1i1gqyx"
-            data-testid="divider"
-          />
+            </a>
+          </div>
         </div>
         <div
-          class="css-diffbd"
-        >
-          <a
-            class="css-bxykrz"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
-          >
-            <span
-              class="css-17x5lw"
-            >
-              <span
-                class="css-65zrxz"
-              >
-                Short title of the card describing the main content
-              </span>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1atazsr"
-      />
-      <div
-        class="css-1nw1nne"
-      >
+          class="css-1atazsr"
+        />
         <div
-          class="css-tj8oo8"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-1i1gqyx"
-            data-testid="divider"
-          />
-        </div>
-        <div
-          class="css-diffbd"
-        >
-          <a
-            class="css-bxykrz"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
-          >
-            <span
-              class="css-17x5lw"
-            >
-              <span
-                class="css-65zrxz"
-              >
-                Short title of the card describing the main content
-              </span>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div
-        class="css-1atazsr"
-      />
-    </div>
-    <hr
-      aria-hidden="true"
-      class="css-13rcg9f"
-      data-testid="divider"
-    />
-    <div
-      class="css-yd8jik"
-      data-testid="article-block"
-    >
-      <div
-        class="css-lihpnt"
-      >
-        <div
-          class="css-66z36v"
+          class="css-1nw1nne"
         >
           <div
-            class="css-86cix"
+            class="css-tj8oo8"
           >
-            <div
-              class="css-1aiajnh"
-            >
-              <section
-                class="css-6cr1qt"
-              >
-                <h3
-                  class="nk-headline-heading css-i2jo9u"
-                >
-                  Title bar
-                </h3>
-              </section>
-            </div>
-          </div>
-          <a
-            class="css-1vespcj"
-            data-testid="buttonLink"
-            href="https://www.thetimes.co.uk/"
-            role="link"
-          >
-            <svg
+            <hr
               aria-hidden="true"
-              class="css-3rbz36"
-              fill="currentcolor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-diffbd"
+          >
+            <a
+              class="css-bxykrz"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
             >
-              <path
-                d="M0 0h24v24H0z"
-                fill="none"
-              />
-              <path
-                d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                fill="currentcolor"
-              />
-            </svg>
-          </a>
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
+              </span>
+            </a>
+          </div>
         </div>
+        <div
+          class="css-1atazsr"
+        />
       </div>
+      <hr
+        aria-hidden="true"
+        class="css-13rcg9f"
+        data-testid="divider"
+      />
       <div
-        class="css-1nw1nne"
+        class="css-yd8jik"
+        data-testid="article-block"
       >
         <div
-          class="css-1kwj960"
+          class="css-lihpnt"
         >
-          <picture
-            class="css-zp0elg"
+          <div
+            class="css-66z36v"
           >
             <div
-              class="css-5pczz7"
-            />
-            <img
-              alt="Short title of the card describing the main content"
-              class="css-1qgqq71"
-              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-            />
-          </picture>
+              class="css-86cix"
+            >
+              <div
+                class="css-1aiajnh"
+              >
+                <section
+                  class="css-6cr1qt"
+                >
+                  <h3
+                    class="nk-headline-heading css-i2jo9u"
+                  >
+                    Title bar
+                  </h3>
+                </section>
+              </div>
+            </div>
+            <a
+              class="css-1vespcj"
+              data-testid="buttonLink"
+              href="https://www.thetimes.co.uk/"
+              role="link"
+            >
+              <svg
+                aria-hidden="true"
+                class="css-3rbz36"
+                fill="currentcolor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                  fill="currentcolor"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
         <div
-          class="css-diffbd"
+          class="css-1nw1nne"
         >
-          <a
-            class="css-u57k3c"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
+          <div
+            class="css-1kwj960"
           >
-            <span
-              class="css-17x5lw"
+            <picture
+              class="css-zp0elg"
+            >
+              <div
+                class="css-5pczz7"
+              />
+              <img
+                alt="Short title of the card describing the main content"
+                class="css-1qgqq71"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+              />
+            </picture>
+          </div>
+          <div
+            class="css-diffbd"
+          >
+            <a
+              class="css-u57k3c"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
             >
               <span
-                class="css-65zrxz"
+                class="css-17x5lw"
               >
-                Short title of the card describing the main content
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
               </span>
-            </span>
-          </a>
+            </a>
+          </div>
         </div>
+        <div
+          class="css-1atazsr"
+        />
+        <div
+          class="css-1nw1nne"
+        >
+          <div
+            class="css-tj8oo8"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-diffbd"
+          >
+            <a
+              class="css-bxykrz"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="css-1atazsr"
+        />
+        <div
+          class="css-1nw1nne"
+        >
+          <div
+            class="css-tj8oo8"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-diffbd"
+          >
+            <a
+              class="css-bxykrz"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="css-1atazsr"
+        />
       </div>
-      <div
-        class="css-1atazsr"
+      <hr
+        aria-hidden="true"
+        class="css-13rcg9f"
+        data-testid="divider"
       />
       <div
-        class="css-1nw1nne"
+        class="css-yd8jik"
+        data-testid="article-block"
       >
         <div
-          class="css-tj8oo8"
+          class="css-lihpnt"
         >
-          <hr
-            aria-hidden="true"
-            class="css-1i1gqyx"
-            data-testid="divider"
-          />
+          <div
+            class="css-66z36v"
+          >
+            <div
+              class="css-86cix"
+            >
+              <div
+                class="css-1aiajnh"
+              >
+                <section
+                  class="css-6cr1qt"
+                >
+                  <h3
+                    class="nk-headline-heading css-i2jo9u"
+                  >
+                    Title bar
+                  </h3>
+                </section>
+              </div>
+            </div>
+            <a
+              class="css-1vespcj"
+              data-testid="buttonLink"
+              href="https://www.thetimes.co.uk/"
+              role="link"
+            >
+              <svg
+                aria-hidden="true"
+                class="css-3rbz36"
+                fill="currentcolor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                  fill="currentcolor"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
         <div
-          class="css-diffbd"
+          class="css-1nw1nne"
         >
-          <a
-            class="css-bxykrz"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
+          <div
+            class="css-1kwj960"
           >
-            <span
-              class="css-17x5lw"
+            <picture
+              class="css-zp0elg"
+            >
+              <div
+                class="css-5pczz7"
+              />
+              <img
+                alt="Short title of the card describing the main content"
+                class="css-1qgqq71"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+              />
+            </picture>
+          </div>
+          <div
+            class="css-diffbd"
+          >
+            <a
+              class="css-u57k3c"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
             >
               <span
-                class="css-65zrxz"
+                class="css-17x5lw"
               >
-                Short title of the card describing the main content
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
               </span>
-            </span>
-          </a>
+            </a>
+          </div>
         </div>
+        <div
+          class="css-1atazsr"
+        />
+        <div
+          class="css-1nw1nne"
+        >
+          <div
+            class="css-tj8oo8"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-diffbd"
+          >
+            <a
+              class="css-bxykrz"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="css-1atazsr"
+        />
+        <div
+          class="css-1nw1nne"
+        >
+          <div
+            class="css-tj8oo8"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-diffbd"
+          >
+            <a
+              class="css-bxykrz"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="css-1atazsr"
+        />
       </div>
-      <div
-        class="css-1atazsr"
+      <hr
+        aria-hidden="true"
+        class="css-13rcg9f"
+        data-testid="divider"
       />
       <div
-        class="css-1nw1nne"
+        class="css-yd8jik"
+        data-testid="article-block"
       >
         <div
-          class="css-tj8oo8"
+          class="css-lihpnt"
         >
-          <hr
-            aria-hidden="true"
-            class="css-1i1gqyx"
-            data-testid="divider"
-          />
+          <div
+            class="css-66z36v"
+          >
+            <div
+              class="css-86cix"
+            >
+              <div
+                class="css-1aiajnh"
+              >
+                <section
+                  class="css-6cr1qt"
+                >
+                  <h3
+                    class="nk-headline-heading css-i2jo9u"
+                  >
+                    Title bar
+                  </h3>
+                </section>
+              </div>
+            </div>
+            <a
+              class="css-1vespcj"
+              data-testid="buttonLink"
+              href="https://www.thetimes.co.uk/"
+              role="link"
+            >
+              <svg
+                aria-hidden="true"
+                class="css-3rbz36"
+                fill="currentcolor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                  fill="currentcolor"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
         <div
-          class="css-diffbd"
+          class="css-1nw1nne"
         >
-          <a
-            class="css-bxykrz"
-            href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-            role="link"
+          <div
+            class="css-1kwj960"
           >
-            <span
-              class="css-17x5lw"
+            <picture
+              class="css-zp0elg"
+            >
+              <div
+                class="css-5pczz7"
+              />
+              <img
+                alt="Short title of the card describing the main content"
+                class="css-1qgqq71"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+              />
+            </picture>
+          </div>
+          <div
+            class="css-diffbd"
+          >
+            <a
+              class="css-u57k3c"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
             >
               <span
-                class="css-65zrxz"
+                class="css-17x5lw"
               >
-                Short title of the card describing the main content
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
               </span>
-            </span>
-          </a>
+            </a>
+          </div>
         </div>
+        <div
+          class="css-1atazsr"
+        />
+        <div
+          class="css-1nw1nne"
+        >
+          <div
+            class="css-tj8oo8"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-diffbd"
+          >
+            <a
+              class="css-bxykrz"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="css-1atazsr"
+        />
+        <div
+          class="css-1nw1nne"
+        >
+          <div
+            class="css-tj8oo8"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-1i1gqyx"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-diffbd"
+          >
+            <a
+              class="css-bxykrz"
+              href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+              role="link"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="css-1atazsr"
+        />
       </div>
-      <div
-        class="css-1atazsr"
+      <hr
+        aria-hidden="true"
+        class="css-13rcg9f"
+        data-testid="divider"
       />
     </div>
-    <hr
-      aria-hidden="true"
-      class="css-13rcg9f"
-      data-testid="divider"
-    />
   </div>
 </DocumentFragment>
 `;

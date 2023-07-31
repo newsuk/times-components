@@ -127,7 +127,7 @@ export const ArticleStackLeadStory = ({
       $width={{
         md: mdWidth,
         lg: '185px',
-        xl: '405px'
+        xl: '402px'
       }}
       marginBlockStart={{
         xs: 'space040',
