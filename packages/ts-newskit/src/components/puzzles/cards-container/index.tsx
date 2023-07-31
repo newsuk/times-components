@@ -1,5 +1,11 @@
 import React, { useRef } from 'react';
-import { GridLayout, getSSRId, Scroll, GridLayoutItem } from 'newskit';
+import {
+  GridLayout,
+  getSSRId,
+  Scroll,
+  GridLayoutItem,
+  LinkInline
+} from 'newskit';
 import { Puzzle } from '../archive/types';
 import { StyledTitleBar } from './styles';
 import { ScrollControls } from './ScrollControls';
@@ -57,7 +63,19 @@ export const CardsContainer = ({
         }}
         data-testid="title-bar"
       >
-        {title}
+        {seeAllLink ? (
+          <LinkInline
+            href={seeAllLink}
+            overrides={{
+              externalIcon: { size: '0' },
+              stylePreset: 'inkBrand010'
+            }}
+          >
+            {title}
+          </LinkInline>
+        ) : (
+          title
+        )}
       </StyledTitleBar>
       <Scroll
         ref={scrollRef}
