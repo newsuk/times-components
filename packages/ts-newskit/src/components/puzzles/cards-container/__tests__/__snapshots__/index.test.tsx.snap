@@ -3,7 +3,7 @@
 exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
 <DocumentFragment>
   <div
-    class="css-vfe4cu"
+    class="css-1n1vvh4"
     data-testid="title-bar"
   >
     <div
@@ -15,7 +15,47 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
         <h2
           class="nk-headline-heading css-i2jo9u"
         >
-          Crosswords
+          <a
+            class="css-1ks9f1u"
+            href="https://newskit.co.uk/components"
+          >
+            <span
+              class="css-pqzzby"
+            >
+              <span
+                class="css-1xzc2un"
+              >
+                <span
+                  class="css-1wc2zh5"
+                >
+                  Crosswords
+                </span>
+              </span>
+              <span
+                class="css-1xzc2un"
+              >
+                <svg
+                  class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                  fill="currentColor"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    External link
+                  </title>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
         </h2>
       </section>
     </div>
@@ -1172,7 +1212,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
 exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
 <DocumentFragment>
   <div
-    class="css-vfe4cu"
+    class="css-1n1vvh4"
     data-testid="title-bar"
   >
     <div
@@ -1184,7 +1224,47 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
         <h2
           class="nk-headline-heading css-i2jo9u"
         >
-          Crosswords
+          <a
+            class="css-1ks9f1u"
+            href="https://newskit.co.uk/components"
+          >
+            <span
+              class="css-pqzzby"
+            >
+              <span
+                class="css-1xzc2un"
+              >
+                <span
+                  class="css-1wc2zh5"
+                >
+                  Crosswords
+                </span>
+              </span>
+              <span
+                class="css-1xzc2un"
+              >
+                <svg
+                  class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                  fill="currentColor"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    External link
+                  </title>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
         </h2>
       </section>
     </div>
