@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.77.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.76.0...@times-components/ts-components@1.77.0) (2023-08-01)
+
+
+### Features
+
+* **TMG-773:** update Welcome Banner copy ([#3468](https://github.com/newsuk/times-components/issues/3468)) ([00e7f9d](https://github.com/newsuk/times-components/commit/00e7f9d709d9830e441dd4724cad36e04835b7ac))
+
+
+
+
+
 # [1.76.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.75.4...@times-components/ts-components@1.76.0) (2023-07-27)
 
 
