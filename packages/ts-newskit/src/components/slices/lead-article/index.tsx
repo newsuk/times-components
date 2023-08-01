@@ -15,6 +15,7 @@ import {
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
+import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 
 type ImageCrops = {
   url?: string;
@@ -32,6 +33,7 @@ type ImageProps = {
   crops?: ImageCrops[];
 };
 export interface LeadArticleProps {
+  id: string;
   headline: string;
   flag?: string;
   shortSummary?: string;
@@ -57,8 +59,10 @@ export interface LeadArticleProps {
   listData?: ListData[];
   showTagL1?: boolean;
   hideImage?: boolean;
+  clickHandler: ClickHandlerType
 }
 export const LeadArticle = ({
+  id,
   headline,
   flag,
   shortSummary,
@@ -77,7 +81,8 @@ export const LeadArticle = ({
   tagAndFlagMarginBlockStart = 'space040',
   listData,
   showTagL1,
-  hideImage
+  hideImage,
+  clickHandler
 }: LeadArticleProps) => {
   const imageWithCorrectRatio =
     images && images.crops
@@ -113,6 +118,17 @@ export const LeadArticle = ({
       ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
       : 'editorialHeadline040';
   const displayArticleVertical = imageTop || hideImage;
+
+  const onClick = (event: MouseEventType) => {
+    const article = { headline, id }
+    console.log('HELLOOOOO');
+    console.log(article, 'ARTICLE')
+    event.preventDefault();
+
+    if (article && clickHandler) {
+        clickHandler(event, article);
+    }
+};
 
   return (
     <CardComposable
@@ -192,6 +208,7 @@ export const LeadArticle = ({
           }}
           external={false}
           expand={!tag}
+          onClick={onClick}
         >
           {headline}
         </CardHeadlineLink>

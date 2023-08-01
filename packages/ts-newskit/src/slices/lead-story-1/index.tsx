@@ -25,6 +25,7 @@ import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
 import { StyledDivider } from './styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
+import { ClickHandlerType  } from '../types';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
@@ -39,6 +40,7 @@ export interface LeadStory1Props {
   smallArticles: ArticleProps[];
   singleArticle: ArticleProps;
   articlesWithListItems: LeadArticleProps;
+  clickHandler: ClickHandlerType;
 }
 
 export const LeadStory1 = ({
@@ -47,7 +49,8 @@ export const LeadStory1 = ({
   groupedArticles,
   smallArticles,
   singleArticle,
-  articlesWithListItems
+  articlesWithListItems,
+  clickHandler
 }: LeadStory1Props) => {
   const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
@@ -63,7 +66,8 @@ export const LeadStory1 = ({
     currentBreakpoint === 'xl'
       ? articles.map(article => ({
           ...clearCreditsAndCaption(article),
-          imageRight: true
+          imageRight: true,
+          
         }))
       : articles;
 
@@ -78,7 +82,7 @@ export const LeadStory1 = ({
           ? 'editorialHeadline050'
           : 'editorialHeadline060',
     showTagL1: false,
-    hideImage: true
+    hideImage: true,
   };
 
   const modifiedLeadArticle = {
@@ -87,12 +91,12 @@ export const LeadStory1 = ({
     imageTop: true,
     headlineTypographyPreset: screenXsAndSm
       ? 'editorialHeadline040'
-      : 'editorialHeadline030'
+      : 'editorialHeadline030',
   };
 
   const modifiedSingleArticle = {
     ...singleArticle,
-    hideImage: true
+    hideImage: true,
   };
 
   const marginTop = modifiedSingleArticle
@@ -127,7 +131,7 @@ export const LeadStory1 = ({
                 }}
               />
             </FullWidthBlock>
-            <Article {...modifiedSingleArticle} />
+            <Article {...modifiedSingleArticle} clickHandler={clickHandler} />
           </BlockItem>
         )}
         {groupedArticles && (
@@ -141,7 +145,7 @@ export const LeadStory1 = ({
                 }}
               />
             </FullWidthBlock>
-            <GroupedArticle {...groupedArticles} />
+            <GroupedArticle {...groupedArticles} clickHandler={clickHandler}/>
           </>
         )}
       </StackItem>
@@ -201,6 +205,7 @@ export const LeadStory1 = ({
             hideImage={screenXsAndSm}
             hasTopBorder={!!screenXsAndSm}
             breakpoint={currentBreakpoint}
+            clickHandler={clickHandler}
           />
         </Block>
       </StackItem>
@@ -209,6 +214,7 @@ export const LeadStory1 = ({
           <ComposedArticleStack
             articles={modifiedArticles}
             breakpoint={currentBreakpoint}
+            clickHandler={clickHandler}
           />
         </BlockItem>
       ) : (
@@ -216,6 +222,7 @@ export const LeadStory1 = ({
           mdWidth="720px"
           modifedArticles={modifiedArticles}
           breakpoint={currentBreakpoint}
+          clickHandler={clickHandler}
         />
       )}
     </CustomStackLayout>

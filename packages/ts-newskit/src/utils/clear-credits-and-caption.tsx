@@ -14,6 +14,7 @@ type ImageProps = {
   crops?: ImageCrops[];
 };
 export type ArticleProps = {
+  id: string;
   headline: string;
   flag?: string;
   standfirst?: string;

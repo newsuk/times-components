@@ -4,13 +4,16 @@ import { Article, ArticleProps } from '../../components/slices/article';
 import { StackItem, StyledDivider, ScrollContainer } from '../shared-styles';
 import { ComposedArticleStack } from './composed-article-stack';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
+import { ClickHandlerType } from '../types';
 
 export const ArticleStackLarge = ({
   articles,
-  breakpoint
+  breakpoint,
+  clickHandler
 }: {
   articles: ArticleProps[];
   breakpoint: BreakpointKeys;
+  clickHandler: ClickHandlerType
 }) => {
   const articleGrid = (
     <GridLayout
@@ -45,6 +48,7 @@ export const ArticleStackLarge = ({
               {...clearCreditsAndCaption(article)}
               hasTopBorder={articleTopBorder}
               hideImage={breakpoint === 'lg' && !topArticle}
+              clickHandler={clickHandler}
             />
             {articleBorder}
           </React.Fragment>
@@ -72,13 +76,15 @@ export const ArticleStackSmall = ({
   isFullWidth,
   hideImage,
   hasTopBorder,
-  breakpoint
+  breakpoint,
+  clickHandler
 }: {
   articles: ArticleProps[];
   isFullWidth: boolean;
   hideImage: boolean;
   hasTopBorder: boolean;
   breakpoint: BreakpointKeys;
+  clickHandler: ClickHandlerType;
 }) => {
   const articleGrid = (
     <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space040' }}>
@@ -101,6 +107,7 @@ export const ArticleStackSmall = ({
                 hasTopBorder={hasTopBorder}
                 hideImage={hideImage}
                 isFullWidth={isFullWidth}
+                clickHandler={clickHandler}
               />
             </Block>
             {articleBorder}
@@ -116,11 +123,13 @@ export const ArticleStackSmall = ({
 export const ArticleStackLeadStory = ({
   mdWidth,
   modifedArticles,
-  breakpoint
+  breakpoint,
+  clickHandler
 }: {
   mdWidth: string;
   modifedArticles: ArticleProps[];
   breakpoint: BreakpointKeys;
+  clickHandler: ClickHandlerType;
 }) => {
   return (
     <StackItem
@@ -137,6 +146,7 @@ export const ArticleStackLeadStory = ({
       <ComposedArticleStack
         articles={modifedArticles}
         breakpoint={breakpoint}
+        clickHandler={clickHandler}
       />
     </StackItem>
   );

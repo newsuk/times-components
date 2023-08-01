@@ -2,6 +2,7 @@ import { CardComposable, CardContent, CardMedia, TextBlock } from 'newskit';
 import React from 'react';
 import { CardHeadlineLink } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
+import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 
 type ImageCrops = {
   url?: string;
@@ -15,23 +16,37 @@ type ImageProps = {
 };
 
 export interface CommentCardProps {
+  id: string;
   images?: ImageProps;
   byline: string;
   headline: string;
   url: string;
   flag?: string;
+  clickHandler: ClickHandlerType
 }
 
 export const CommentCard = ({
+  id,
   images,
   byline,
   headline,
   url,
-  flag
+  flag,
+  clickHandler
 }: CommentCardProps) => {
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '1:1');
 
+    const onClick = (event: MouseEventType) => {
+      const article = { headline, id }
+      console.log('HELLOOOOO');
+      console.log(article, 'ARTICLE')
+      event.preventDefault();
+  
+      if (article && clickHandler) {
+          clickHandler(event, article);
+      }
+  };
   return (
     <CardComposable
       columnGap="space040"
@@ -59,6 +74,7 @@ export const CommentCard = ({
           overrides={{ typographyPreset: 'editorialHeadline020' }}
           expand
           external={false}
+          onClick={onClick}
         >
           {byline}
         </CardHeadlineLink>

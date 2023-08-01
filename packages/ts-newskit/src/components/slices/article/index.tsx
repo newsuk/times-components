@@ -14,6 +14,7 @@ import {
   FullWidthBlock
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
+import { ClickHandlerType } from '../../../slices/types';
 
 type ImageCrops = {
   url?: string;
@@ -27,6 +28,7 @@ type ImageProps = {
 };
 
 export interface ArticleProps {
+  id: string;
   headline: string;
   url: string;
   images?: ImageProps;
@@ -43,13 +45,17 @@ export interface ArticleProps {
   articleTitleMarginTop?: string;
   titleTypographyPreset?: string;
   tagAndFlagMarginBlockStart?: string;
+  clickHandler: ClickHandlerType
 }
 
 type LayoutProps = {
   imageRight: boolean;
 };
 
+type MouseEventType = React.MouseEvent<HTMLAnchorElement, MouseEvent>;
+
 export const Article = ({
+  id,
   images,
   headline,
   url,
@@ -62,7 +68,8 @@ export const Article = ({
   isFullWidth,
   articleTitleMarginTop = 'space040',
   titleTypographyPreset = 'editorialHeadline020',
-  tagAndFlagMarginBlockStart = 'space040'
+  tagAndFlagMarginBlockStart = 'space040',
+  clickHandler
 }: ArticleProps) => {
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
@@ -90,6 +97,17 @@ export const Article = ({
   const Layout: React.FC<LayoutProps> = ({ children }) => {
     return imageRight ? <Block>{children}</Block> : <>{children}</>;
   };
+
+  const onClick = (event: MouseEventType) => {
+    const article = { headline, id }
+    console.log('HELLOOOOO');
+    console.log(article, 'ARTICLE')
+    event.preventDefault();
+
+    if (article && clickHandler) {
+        clickHandler(event, article);
+    }
+};
 
   return (
     <CardComposable
@@ -152,6 +170,7 @@ export const Article = ({
               marginBlockStart: titleMarginBlockStart
             }}
             external={false}
+            onClick={onClick}
           >
             {headline}
           </CardHeadlineLink>
