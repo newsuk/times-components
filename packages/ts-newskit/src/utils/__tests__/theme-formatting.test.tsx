@@ -1,6 +1,6 @@
 import { updateThemeTypography } from '../theme-formatting';
 // @ts-ignore
-import { TheTimesLight } from '@newskit-themes/the-times';
+import { TheTimesLight } from '@newskit-themes/the-times/TheTimes-light.json';
 
 describe('updateThemeTypography function', () => {
   test('typographyPreset fontSize is updated if it has a rem value', () => {
