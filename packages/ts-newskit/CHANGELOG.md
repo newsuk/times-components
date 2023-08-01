@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.72.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.71.0...@times-components/ts-newskit@1.72.0) (2023-08-01)
+
+
+### Features
+
+* **TMPZ-44:** Allow the reader to click through to L2 pages from L1 puzzle sections ([#3469](https://github.com/newsuk/times-components/issues/3469)) ([dfc6f01](https://github.com/newsuk/times-components/commit/dfc6f01ba1811787d5e15f8e65658d8a87b0e611))
+
+
+
+
+
 # [1.71.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.70.0...@times-components/ts-newskit@1.71.0) (2023-07-31)
 
 
