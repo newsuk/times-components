@@ -17,7 +17,7 @@ export const WelcomeBanner: React.FC = () => {
       <Title data-testId="title">
         Welcome to The Times and The Sunday Times
       </Title>
-      <Text data-testId="text">We hope you enjoy your free article</Text>
+      <Text data-testId="text">We hope you enjoy your free content</Text>
     </WelcomeBannerContainer>
   ) : null;
 };

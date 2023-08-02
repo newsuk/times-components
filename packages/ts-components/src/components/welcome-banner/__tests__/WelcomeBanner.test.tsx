@@ -13,7 +13,7 @@ describe('WelcomeBanner', () => {
     window.sessionStorage.setItem('showWelcomeBanner', 'true');
     const { getByText } = render(<WelcomeBanner />);
     expect(getByText('Welcome to The Times and The Sunday Times'));
-    expect(getByText('We hope you enjoy your free article'));
+    expect(getByText('We hope you enjoy your free content'));
   });
 
   it('should not render the component if the session storage token showWelcomeBanner does not exist', () => {
