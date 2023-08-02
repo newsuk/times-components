@@ -9,7 +9,9 @@ describe('updateThemeTypography function', () => {
       '1rem'
     );
 
-    const updatedTheme = updateThemeTypography(TheTimesLight as unknown as Theme);
+    const updatedTheme = updateThemeTypography(
+      (TheTimesLight as unknown) as Theme
+    );
     expect(updatedTheme.typographyPresets.editorialDisplay001.fontSize).toBe(
       '1.6rem'
     );
@@ -24,11 +26,14 @@ describe('updateThemeTypography function', () => {
       letterSpacing: '0em'
     };
 
-    (TheTimesLight as unknown as Theme).typographyPresets.testPreset = testPreset;
+    ((TheTimesLight as unknown) as Theme).typographyPresets.testPreset = testPreset;
 
-    const updatedTheme = updateThemeTypography(TheTimesLight as unknown as Theme);
+    const updatedTheme = updateThemeTypography(
+      (TheTimesLight as unknown) as Theme
+    );
     expect(updatedTheme.typographyPresets.testPreset.fontSize).toBe(
-      (TheTimesLight as unknown as Theme).typographyPresets.testPreset.fontSize
+      ((TheTimesLight as unknown) as Theme).typographyPresets.testPreset
+        .fontSize
     );
   });
 });
