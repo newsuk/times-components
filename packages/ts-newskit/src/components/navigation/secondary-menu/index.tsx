@@ -22,8 +22,10 @@ export const SecondaryNavigation = ({
 
   const handleSelect = (slug: string) => {
     const filteredItem = data.find(item => item.slug === slug);
-    
-    if (!filteredItem) { return; }
+
+    if (!filteredItem) {
+      return;
+    }
 
     setIsSelected(filteredItem.slug);
   };
