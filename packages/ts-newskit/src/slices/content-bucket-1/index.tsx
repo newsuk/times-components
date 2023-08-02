@@ -12,7 +12,6 @@ import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
-import { SliceHeaderProps } from '../../components/slices/slice-header';
 import { ArticleProps } from '../../components/slices/article';
 import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
 
@@ -25,7 +24,6 @@ import {
 } from '../../components/slices/shared-styles';
 
 export interface ContentBucket1Props {
-  section: SliceHeaderProps;
   leadArticle: LeadArticleProps;
   comments: CommentCardProps[];
   articles: ArticleProps[];

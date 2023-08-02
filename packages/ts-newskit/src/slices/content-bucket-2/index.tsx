@@ -1,13 +1,11 @@
 import { GridLayout, useBreakpointKey, BreakpointKeys } from 'newskit';
 import React, { useState, useEffect } from 'react';
-import { SliceHeaderProps } from '../../components/slices/slice-header';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { StackItem, StyledDivider } from '../shared-styles';
 import { CustomStackLayout } from '../shared';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export interface ContentBucket2Props {
-  section: SliceHeaderProps;
   articles: ArticleProps[];
 }
 
