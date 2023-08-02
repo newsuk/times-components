@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { UnorderedList, LinkInline } from 'newskit';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
 
 type ListData = {
   label: string;
@@ -35,18 +36,8 @@ export const UnorderedListItems = ({ listData, clickHandler }: ListDataProps) =>
     >
       {listData.map(({ label, href, id }, index) => {
         const onClick = (event: MouseEventType) => {
-          const article = { headline: label, id }
-          console.log('HELLOOOOO');
-          console.log(article, 'ARTICLE')
-          event.preventDefault();
-      
-          if (article && clickHandler) {
-              clickHandler(event, article);
-          }
-          // location.href is required instead of <a href={} />
-    // this is a side effect caused by transformChannelData
-    // changing article urls client-side causes hydration warning
-          location.href = href;
+          const article = { headline: label, id, url: href }
+          articleClickTracking(event, article, clickHandler)
       };
         const hasHref = !!href;
         return hasHref ? (

@@ -26,19 +26,22 @@ import {
   FullWidthBlock,
   FullWidthHidden
 } from '../../components/slices/shared-styles';
+import { ClickHandlerType } from '../types';
 
 export interface ContentBucket1Props {
   section: SliceHeaderProps;
   leadArticle: LeadArticleProps;
   comments: CommentCardProps[];
   articles: ArticleProps[];
+  clickHandler: ClickHandlerType;
 }
 
 export const ContentBucket1 = ({
   section,
   leadArticle,
   comments,
-  articles
+  articles,
+  clickHandler
 }: ContentBucket1Props) => {
   const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
@@ -92,11 +95,12 @@ export const ContentBucket1 = ({
           <LeadArticle
             {...modifiedLeadArticle}
             contentWidth={currentBreakpoint === 'xl' ? '312px' : '283px'}
+            clickHandler={clickHandler}
           />
         </Block>
         <Block>
           <Hidden md>
-            <CommentStack comments={comments} />
+            <CommentStack comments={comments} clickHandler={clickHandler} />
           </Hidden>
         </Block>
       </StackItem>
@@ -131,7 +135,7 @@ export const ContentBucket1 = ({
             xl: '1276px'
           }}
         >
-          <CommentStack comments={comments} />
+          <CommentStack comments={comments} clickHandler={clickHandler}/>
         </BlockItem>
       </Visible>
     </CustomStackLayout>

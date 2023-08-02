@@ -15,6 +15,7 @@ import {
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { ClickHandlerType } from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
 
 type ImageCrops = {
   url?: string;
@@ -45,7 +46,6 @@ export interface ArticleProps {
   articleTitleMarginTop?: string;
   titleTypographyPreset?: string;
   tagAndFlagMarginBlockStart?: string;
-  clickHandler: ClickHandlerType
 }
 
 type LayoutProps = {
@@ -55,7 +55,11 @@ type LayoutProps = {
 type MouseEventType = React.MouseEvent<HTMLAnchorElement, MouseEvent>;
 
 export const Article = ({
-  id,
+  article,
+  clickHandler
+}: {article: ArticleProps, clickHandler: ClickHandlerType}) => {
+  const { 
+    id,
   images,
   headline,
   url,
@@ -69,8 +73,7 @@ export const Article = ({
   articleTitleMarginTop = 'space040',
   titleTypographyPreset = 'editorialHeadline020',
   tagAndFlagMarginBlockStart = 'space040',
-  clickHandler
-}: ArticleProps) => {
+  } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
 
@@ -99,19 +102,8 @@ export const Article = ({
   };
 
   const onClick = (event: MouseEventType) => {
-    const article = { headline, id }
-    console.log('HELLOOOOO');
-    console.log(article, 'ARTICLE')
-    event.preventDefault();
-
-    if (article && clickHandler) {
-        clickHandler(event, article);
-    }
-    // location.href is required instead of <a href={} />
-    // this is a side effect caused by transformChannelData
-    // changing article urls client-side causes hydration warning
-    
-    location.href = url;
+    const article = { headline, id, url }
+    articleClickTracking(event, article, clickHandler)
 };
 
   return (

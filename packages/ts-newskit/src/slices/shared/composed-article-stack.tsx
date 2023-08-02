@@ -11,7 +11,7 @@ import { ClickHandlerType } from '../types';
 export interface LeadStory1Props {
   articles: ArticleProps[];
   breakpoint: BreakpointKeys;
-  clickHandler: ClickHandlerType
+  clickHandler: ClickHandlerType;
 }
 
 export const ComposedArticleStack = ({

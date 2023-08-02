@@ -45,9 +45,7 @@ export const ArticleStackLarge = ({
         return (
           <React.Fragment key={article.headline}>
             <Article
-              {...clearCreditsAndCaption(article)}
-              hasTopBorder={articleTopBorder}
-              hideImage={breakpoint === 'lg' && !topArticle}
+              article={{...clearCreditsAndCaption(article), hasTopBorder: articleTopBorder, hideImage: breakpoint === 'lg' && !topArticle}}
               clickHandler={clickHandler}
             />
             {articleBorder}
@@ -103,10 +101,7 @@ export const ArticleStackSmall = ({
           <React.Fragment key={article.headline}>
             <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
               <Article
-                {...clearCreditsAndCaption(article)}
-                hasTopBorder={hasTopBorder}
-                hideImage={hideImage}
-                isFullWidth={isFullWidth}
+                article={{...clearCreditsAndCaption(article), hasTopBorder, hideImage, isFullWidth}}
                 clickHandler={clickHandler}
               />
             </Block>

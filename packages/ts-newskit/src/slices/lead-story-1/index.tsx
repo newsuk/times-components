@@ -131,7 +131,7 @@ export const LeadStory1 = ({
                 }}
               />
             </FullWidthBlock>
-            <Article {...modifiedSingleArticle} clickHandler={clickHandler} />
+            <Article article={modifiedSingleArticle} clickHandler={clickHandler} />
           </BlockItem>
         )}
         {groupedArticles && (

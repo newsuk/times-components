@@ -16,6 +16,7 @@ import {
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
 
 type ImageCrops = {
   url?: string;
@@ -24,6 +25,7 @@ type ImageCrops = {
 type ListData = {
   label: string;
   href: string;
+  id: string;
 };
 
 type ImageProps = {
@@ -61,6 +63,7 @@ export interface LeadArticleProps {
   hideImage?: boolean;
   clickHandler: ClickHandlerType
 }
+
 export const LeadArticle = ({
   id,
   headline,
@@ -120,18 +123,8 @@ export const LeadArticle = ({
   const displayArticleVertical = imageTop || hideImage;
 
   const onClick = (event: MouseEventType) => {
-    const article = { headline, id }
-    console.log('HELLOOOOO');
-    console.log(article, 'ARTICLE')
-    event.preventDefault();
-
-    if (article && clickHandler) {
-        clickHandler(event, article);
-    }
-    // location.href is required instead of <a href={} />
-    // this is a side effect caused by transformChannelData
-    // changing article urls client-side causes hydration warning
-    location.href = url;
+    const article = { headline, id, url }
+    articleClickTracking(event, article, clickHandler)
 };
 
   return (
@@ -233,7 +226,7 @@ export const LeadArticle = ({
           flag={flag}
           marginBlockStart={tagAndFlagMarginBlockStart}
         />
-        <UnorderedListItems listData={listData} />
+        <UnorderedListItems listData={listData} clickHandler={clickHandler}/>
       </CardContent>
     </CardComposable>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render } from '../../../../utils/test-utils';
+import { render, fireEvent } from '../../../../utils/test-utils';
 import { LeadArticle, LeadArticleProps } from '../index';
 import { leadArticle } from '../../../../slices/fixtures/data.json';
 import { useBreakpointKey } from 'newskit';
@@ -11,11 +11,14 @@ jest.mock('newskit', () => ({
 }));
 
 const leadStoryData: LeadArticleProps = {
-  ...leadArticle
+  ...leadArticle,
+  clickHandler: jest.fn()
 };
 
+const mockClickHandler = jest.fn();
+
 const renderComponent = () =>
-  render(<LeadArticle {...leadStoryData} imageTop={false} />);
+  render(<LeadArticle {...leadStoryData} imageTop={false} clickHandler={mockClickHandler} />);
 
 describe('Render Component one', () => {
   it('should render a snapshot', () => {
@@ -136,4 +139,9 @@ describe('Render Component one', () => {
     const styledSpan = container.querySelector('span');
     expect(styledSpan).toBeInTheDocument();
   });
+  it('should call the clickHandler when clicked', () => {
+    const { getByRole } = renderComponent();
+    fireEvent.click(getByRole("link"));
+    expect(mockClickHandler).toHaveBeenCalled()
+  })
 });

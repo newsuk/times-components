@@ -3,6 +3,7 @@ import React from 'react';
 import { CardHeadlineLink } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
 
 type ImageCrops = {
   url?: string;
@@ -38,18 +39,8 @@ export const CommentCard = ({
     images && images.crops && images.crops.find(crop => crop.ratio === '1:1');
 
     const onClick = (event: MouseEventType) => {
-      const article = { headline, id }
-      console.log('HELLOOOOO');
-      console.log(article, 'ARTICLE')
-      event.preventDefault();
-  
-      if (article && clickHandler) {
-          clickHandler(event, article);
-      }
-      // location.href is required instead of <a href={} />
-    // this is a side effect caused by transformChannelData
-    // changing article urls client-side causes hydration warning
-      location.href = url;
+      const article = { headline, id, url }
+      articleClickTracking(event, article, clickHandler)
   };
   return (
     <CardComposable
