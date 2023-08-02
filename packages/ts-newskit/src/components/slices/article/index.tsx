@@ -14,7 +14,7 @@ import {
   FullWidthBlock
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
-import { ClickHandlerType } from '../../../slices/types';
+import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
 
 type ImageCrops = {
@@ -51,8 +51,6 @@ export interface ArticleProps {
 type LayoutProps = {
   imageRight: boolean;
 };
-
-type MouseEventType = React.MouseEvent<HTMLAnchorElement, MouseEvent>;
 
 export const Article = ({
   article,
