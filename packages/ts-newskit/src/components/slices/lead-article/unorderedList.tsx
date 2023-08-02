@@ -11,14 +11,16 @@ type ListData = {
 
 export interface ListDataProps {
   listData?: ListData[];
-  clickHandler: ClickHandlerType
+  clickHandler: ClickHandlerType;
 }
 
-export const UnorderedListItems = ({ listData, clickHandler }: ListDataProps) => {
+export const UnorderedListItems = ({
+  listData,
+  clickHandler
+}: ListDataProps) => {
   if (!listData || listData.length === 0) {
     return null;
   }
-
 
   return (
     <UnorderedList
@@ -36,9 +38,9 @@ export const UnorderedListItems = ({ listData, clickHandler }: ListDataProps) =>
     >
       {listData.map(({ label, href, id }, index) => {
         const onClick = (event: MouseEventType) => {
-          const article = { headline: label, id, url: href }
-          articleClickTracking(event, article, clickHandler)
-      };
+          const article = { headline: label, id, url: href };
+          articleClickTracking(event, article, clickHandler);
+        };
         const hasHref = !!href;
         return hasHref ? (
           <LinkInline

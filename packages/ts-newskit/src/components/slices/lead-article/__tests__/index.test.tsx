@@ -18,7 +18,13 @@ const leadStoryData: LeadArticleProps = {
 const mockClickHandler = jest.fn();
 
 const renderComponent = () =>
-  render(<LeadArticle {...leadStoryData} imageTop={false} clickHandler={mockClickHandler} />);
+  render(
+    <LeadArticle
+      {...leadStoryData}
+      imageTop={false}
+      clickHandler={mockClickHandler}
+    />
+  );
 
 describe('Render Component one', () => {
   it('should render a snapshot', () => {
@@ -141,7 +147,7 @@ describe('Render Component one', () => {
   });
   it('should call the clickHandler when clicked', () => {
     const { getByRole } = renderComponent();
-    fireEvent.click(getByRole("link"));
-    expect(mockClickHandler).toHaveBeenCalled()
-  })
+    fireEvent.click(getByRole('link'));
+    expect(mockClickHandler).toHaveBeenCalled();
+  });
 });

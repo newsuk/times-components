@@ -117,7 +117,7 @@ export const ContentBucket1 = ({
             xl: '1276px'
           }}
         >
-          <CommentStack comments={comments} clickHandler={clickHandler}/>
+          <CommentStack comments={comments} clickHandler={clickHandler} />
         </BlockItem>
       </Visible>
     </CustomStackLayout>

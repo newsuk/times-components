@@ -37,7 +37,11 @@ export const ComposedArticleStack = ({
           />
         </FullWidthBlock>
       </FullWidthHidden>
-      <ArticleStackLarge articles={articlesArray} breakpoint={breakpoint} clickHandler={clickHandler} />
+      <ArticleStackLarge
+        articles={articlesArray}
+        breakpoint={breakpoint}
+        clickHandler={clickHandler}
+      />
       <Visible md>
         <Hidden xs sm>
           <Divider

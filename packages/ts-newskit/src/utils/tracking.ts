@@ -1,7 +1,11 @@
-import { ArticleProps } from "../components/slices/article";
-import { ClickHandlerType, MouseEventType } from "../slices/types";
+import { ArticleProps } from '../components/slices/article';
+import { ClickHandlerType, MouseEventType } from '../slices/types';
 
-export const articleClickTracking = (event: MouseEventType, article: ArticleProps, clickHandler: ClickHandlerType) => {
+export const articleClickTracking = (
+  event: MouseEventType,
+  article: ArticleProps,
+  clickHandler: ClickHandlerType
+) => {
   if (article && clickHandler) {
     clickHandler(event, article);
   }
@@ -9,4 +13,4 @@ export const articleClickTracking = (event: MouseEventType, article: ArticleProp
   // this is a side effect caused by transformChannelData
   // changing article urls client-side causes hydration warning
   location.href = article.url;
-}
+};

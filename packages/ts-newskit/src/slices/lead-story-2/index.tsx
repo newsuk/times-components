@@ -23,7 +23,7 @@ export interface LeadStory2Props {
   articles: ArticleProps[];
   verticalArticles: LeadArticleProps[];
   horizontalArticles: LeadArticleProps[];
-  clickHandler: ClickHandlerType
+  clickHandler: ClickHandlerType;
 }
 
 export const LeadStory2 = ({

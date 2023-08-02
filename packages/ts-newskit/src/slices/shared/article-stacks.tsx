@@ -13,7 +13,7 @@ export const ArticleStackLarge = ({
 }: {
   articles: ArticleProps[];
   breakpoint: BreakpointKeys;
-  clickHandler: ClickHandlerType
+  clickHandler: ClickHandlerType;
 }) => {
   const articleGrid = (
     <GridLayout
@@ -45,7 +45,11 @@ export const ArticleStackLarge = ({
         return (
           <React.Fragment key={article.headline}>
             <Article
-              article={{...clearCreditsAndCaption(article), hasTopBorder: articleTopBorder, hideImage: breakpoint === 'lg' && !topArticle}}
+              article={{
+                ...clearCreditsAndCaption(article),
+                hasTopBorder: articleTopBorder,
+                hideImage: breakpoint === 'lg' && !topArticle
+              }}
               clickHandler={clickHandler}
             />
             {articleBorder}
@@ -101,7 +105,12 @@ export const ArticleStackSmall = ({
           <React.Fragment key={article.headline}>
             <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
               <Article
-                article={{...clearCreditsAndCaption(article), hasTopBorder, hideImage, isFullWidth}}
+                article={{
+                  ...clearCreditsAndCaption(article),
+                  hasTopBorder,
+                  hideImage,
+                  isFullWidth
+                }}
                 clickHandler={clickHandler}
               />
             </Block>

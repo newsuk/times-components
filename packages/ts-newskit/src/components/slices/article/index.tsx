@@ -55,22 +55,25 @@ type LayoutProps = {
 export const Article = ({
   article,
   clickHandler
-}: {article: ArticleProps, clickHandler: ClickHandlerType}) => {
-  const { 
+}: {
+  article: ArticleProps;
+  clickHandler: ClickHandlerType;
+}) => {
+  const {
     id,
-  images,
-  headline,
-  url,
-  tag,
-  flag,
-  hasTopBorder,
-  hideImage,
-  isLeadImage,
-  imageRight,
-  isFullWidth,
-  articleTitleMarginTop = 'space040',
-  titleTypographyPreset = 'editorialHeadline020',
-  tagAndFlagMarginBlockStart = 'space040',
+    images,
+    headline,
+    url,
+    tag,
+    flag,
+    hasTopBorder,
+    hideImage,
+    isLeadImage,
+    imageRight,
+    isFullWidth,
+    articleTitleMarginTop = 'space040',
+    titleTypographyPreset = 'editorialHeadline020',
+    tagAndFlagMarginBlockStart = 'space040'
   } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
@@ -100,9 +103,9 @@ export const Article = ({
   };
 
   const onClick = (event: MouseEventType) => {
-    const article = { headline, id, url }
-    articleClickTracking(event, article, clickHandler)
-};
+    const articleForTracking = { headline, id, url };
+    articleClickTracking(event, articleForTracking, clickHandler);
+  };
 
   return (
     <CardComposable

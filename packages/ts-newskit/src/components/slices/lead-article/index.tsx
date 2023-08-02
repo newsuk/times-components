@@ -61,7 +61,7 @@ export interface LeadArticleProps {
   listData?: ListData[];
   showTagL1?: boolean;
   hideImage?: boolean;
-  clickHandler: ClickHandlerType
+  clickHandler: ClickHandlerType;
 }
 
 export const LeadArticle = ({
@@ -123,9 +123,9 @@ export const LeadArticle = ({
   const displayArticleVertical = imageTop || hideImage;
 
   const onClick = (event: MouseEventType) => {
-    const article = { headline, id, url }
-    articleClickTracking(event, article, clickHandler)
-};
+    const article = { headline, id, url };
+    articleClickTracking(event, article, clickHandler);
+  };
 
   return (
     <CardComposable
@@ -226,7 +226,7 @@ export const LeadArticle = ({
           flag={flag}
           marginBlockStart={tagAndFlagMarginBlockStart}
         />
-        <UnorderedListItems listData={listData} clickHandler={clickHandler}/>
+        <UnorderedListItems listData={listData} clickHandler={clickHandler} />
       </CardContent>
     </CardComposable>
   );

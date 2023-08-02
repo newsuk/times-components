@@ -12,10 +12,14 @@ export interface GroupedArticleProps {
     href: string;
   };
   articles: LeadArticleProps[];
-  clickHandler: ClickHandlerType
+  clickHandler: ClickHandlerType;
 }
 
-export const GroupedArticle = ({ articles, tagL1, clickHandler }: GroupedArticleProps) => {
+export const GroupedArticle = ({
+  articles,
+  tagL1,
+  clickHandler
+}: GroupedArticleProps) => {
   const modifiedGroupedArticles = articles.map(article => ({
     ...article,
     hasTopBorder: false,

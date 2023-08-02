@@ -25,7 +25,7 @@ import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
 import { StyledDivider } from './styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
-import { ClickHandlerType  } from '../types';
+import { ClickHandlerType } from '../types';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
@@ -66,8 +66,7 @@ export const LeadStory1 = ({
     currentBreakpoint === 'xl'
       ? articles.map(article => ({
           ...clearCreditsAndCaption(article),
-          imageRight: true,
-          
+          imageRight: true
         }))
       : articles;
 
@@ -82,7 +81,7 @@ export const LeadStory1 = ({
           ? 'editorialHeadline050'
           : 'editorialHeadline060',
     showTagL1: false,
-    hideImage: true,
+    hideImage: true
   };
 
   const modifiedLeadArticle = {
@@ -91,12 +90,12 @@ export const LeadStory1 = ({
     imageTop: true,
     headlineTypographyPreset: screenXsAndSm
       ? 'editorialHeadline040'
-      : 'editorialHeadline030',
+      : 'editorialHeadline030'
   };
 
   const modifiedSingleArticle = {
     ...singleArticle,
-    hideImage: true,
+    hideImage: true
   };
 
   const marginTop = modifiedSingleArticle
@@ -131,7 +130,10 @@ export const LeadStory1 = ({
                 }}
               />
             </FullWidthBlock>
-            <Article article={modifiedSingleArticle} clickHandler={clickHandler} />
+            <Article
+              article={modifiedSingleArticle}
+              clickHandler={clickHandler}
+            />
           </BlockItem>
         )}
         {groupedArticles && (
@@ -145,7 +147,7 @@ export const LeadStory1 = ({
                 }}
               />
             </FullWidthBlock>
-            <GroupedArticle {...groupedArticles} clickHandler={clickHandler}/>
+            <GroupedArticle {...groupedArticles} clickHandler={clickHandler} />
           </>
         )}
       </StackItem>

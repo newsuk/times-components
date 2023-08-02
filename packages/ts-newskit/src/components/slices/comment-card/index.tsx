@@ -23,7 +23,7 @@ export interface CommentCardProps {
   headline: string;
   url: string;
   flag?: string;
-  clickHandler: ClickHandlerType
+  clickHandler: ClickHandlerType;
 }
 
 export const CommentCard = ({
@@ -38,9 +38,9 @@ export const CommentCard = ({
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '1:1');
 
-    const onClick = (event: MouseEventType) => {
-      const article = { headline, id, url }
-      articleClickTracking(event, article, clickHandler)
+  const onClick = (event: MouseEventType) => {
+    const article = { headline, id, url };
+    articleClickTracking(event, article, clickHandler);
   };
   return (
     <CardComposable
