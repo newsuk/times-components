@@ -12,10 +12,7 @@ import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
-import {
-  SliceHeader,
-  SliceHeaderProps
-} from '../../components/slices/slice-header';
+import { SliceHeaderProps } from '../../components/slices/slice-header';
 import { ArticleProps } from '../../components/slices/article';
 import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
 
@@ -35,7 +32,6 @@ export interface ContentBucket1Props {
 }
 
 export const ContentBucket1 = ({
-  section,
   leadArticle,
   comments,
   articles
@@ -58,18 +54,6 @@ export const ContentBucket1 = ({
 
   return (
     <CustomStackLayout>
-      <FullWidthBlock>
-        <BlockItem
-          $width={{
-            xs: '100%',
-            md: '720px',
-            lg: '976px',
-            xl: '1276px'
-          }}
-        >
-          <SliceHeader {...section} />
-        </BlockItem>
-      </FullWidthBlock>
       <StackItem
         $width={{
           xs: '100%',
