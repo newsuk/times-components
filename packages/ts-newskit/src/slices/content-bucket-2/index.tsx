@@ -1,21 +1,15 @@
 import { GridLayout, useBreakpointKey, BreakpointKeys } from 'newskit';
 import React, { useState, useEffect } from 'react';
-import {
-  SliceHeader,
-  SliceHeaderProps
-} from '../../components/slices/slice-header';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { BlockItem, StackItem, StyledDivider } from '../shared-styles';
+import { StackItem, StyledDivider } from '../shared-styles';
 import { CustomStackLayout } from '../shared';
-import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 
 export interface ContentBucket2Props {
-  section: SliceHeaderProps;
   articles: ArticleProps[];
 }
 
-export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
+export const ContentBucket2 = ({ articles }: ContentBucket2Props) => {
   const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
   useEffect(
@@ -28,20 +22,6 @@ export const ContentBucket2 = ({ section, articles }: ContentBucket2Props) => {
 
   return (
     <CustomStackLayout>
-      <StackItem>
-        <FullWidthBlock>
-          <BlockItem
-            $width={{
-              xs: '100%',
-              md: '720px',
-              lg: '976px',
-              xl: '1276px'
-            }}
-          >
-            <SliceHeader {...section} />
-          </BlockItem>
-        </FullWidthBlock>
-      </StackItem>
       <StackItem
         $width={{
           xs: '100%',
