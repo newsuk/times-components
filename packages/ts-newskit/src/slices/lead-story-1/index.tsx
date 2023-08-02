@@ -116,7 +116,10 @@ export const LeadStory1 = ({
           md: '260px'
         }}
       >
-        <LeadArticle {...modifiedArticlesWithUnorderedList} />
+        <LeadArticle
+          {...modifiedArticlesWithUnorderedList}
+          clickHandler={clickHandler}
+        />
         {modifiedSingleArticle && (
           <BlockItem>
             <FullWidthBlock>

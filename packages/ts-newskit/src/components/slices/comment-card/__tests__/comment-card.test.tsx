@@ -3,10 +3,13 @@ import '@testing-library/jest-dom';
 import { render, screen } from '../../../../utils/test-utils';
 import { CommentCard, CommentCardProps } from '..';
 
+const mockClickHandler = jest.fn();
+
 const renderComponent = (props: CommentCardProps) =>
   render(<CommentCard {...props} />);
 
 const defaultProps = {
+  id: '123',
   images: {
     alt: '',
     caption: 'Caption',
@@ -43,7 +46,8 @@ const defaultProps = {
   },
   byline: 'Journalist name',
   headline: 'Quote text',
-  url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
+  url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
+  clickHandler: mockClickHandler
 };
 
 it('should render component to match snapshot', () => {
@@ -85,6 +89,7 @@ it('should render the correct image', () => {
 
 it('should render the correct text, without Heading', () => {
   renderComponent({
+    id: '123',
     images: {
       alt: '',
       caption: 'Caption',
@@ -121,7 +126,8 @@ it('should render the correct text, without Heading', () => {
     },
     byline: 'Journalist name',
     headline: 'Quote text',
-    url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
+    url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
+    clickHandler: mockClickHandler
   });
 
   const heading = screen.queryByText('Heading text');
