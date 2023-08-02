@@ -1,7 +1,7 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
 import { TCThemeProvider, themes, GridOverlay } from '../../utils/index.tsx';
 import { ContentBucket2 } from "./";
-import { section, articles } from '../fixtures/data.json';
+import { articles } from '../fixtures/data.json';
 
 <Meta
   title="Newskit Slices/Content Bucket 2"
@@ -10,7 +10,7 @@ import { section, articles } from '../fixtures/data.json';
 
 # ContentBucket2 component
 The `ContentBucket2` component is used to display the main story, supplementary articles and journalist quotes.
-It is comprised of the `SliceHeader`, and `ArticleListItem` slice components.
+It is comprised of the `ArticleListItem` slice components.
 
 This takes in a series of props, as below, to display the part of the slices.
 
@@ -18,16 +18,16 @@ This takes in a series of props, as below, to display the part of the slices.
 <Props of={ContentBucket2} />
 
 ## Code Example
-`<ContentBucket2 {...{ section, articles }} />`
+`<ContentBucket2 {...{ articles }} />`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const ContentBucket2Story = ({ section, articles, theme, gridOverlay }) => (
+export const ContentBucket2Story = ({ articles, theme, gridOverlay }) => (
   <TCThemeProvider theme={theme}>
     <>
       <GridOverlay show={gridOverlay} />
-      <ContentBucket2 {...{ section, articles }} />
+      <ContentBucket2 {...{ articles }} />
     </>
   </TCThemeProvider>
 );
@@ -38,7 +38,6 @@ ContentBucket2Story.args = {
 <Story
   name="ContentBucket2"
   args={{
-    section,
     articles
   }}
   argTypes={{

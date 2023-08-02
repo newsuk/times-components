@@ -6,62 +6,6 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
     class="css-1sr0a1l"
   >
     <div
-      class="css-1g5vzsh"
-    >
-      <div
-        class="css-1frprgo"
-      >
-        <div
-          class="css-lihpnt"
-        >
-          <div
-            class="css-128qn49"
-          >
-            <div
-              class="css-86cix"
-            >
-              <div
-                class="css-1aiajnh"
-              >
-                <section
-                  class="css-5diunv"
-                >
-                  <h3
-                    class="nk-headline-heading css-i2jo9u"
-                  >
-                    Rugby Union
-                  </h3>
-                </section>
-              </div>
-            </div>
-            <a
-              class="css-166fjww"
-              data-testid="buttonLink"
-              href="https://www.thetimes.co.uk/"
-              role="link"
-            >
-              <svg
-                aria-hidden="true"
-                class="css-3rbz36"
-                fill="currentcolor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                  fill="currentcolor"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
       class="css-1klr24i"
     >
       <div
@@ -658,62 +602,6 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
   <div
     class="css-1sr0a1l"
   >
-    <div
-      class="css-1g5vzsh"
-    >
-      <div
-        class="css-1frprgo"
-      >
-        <div
-          class="css-lihpnt"
-        >
-          <div
-            class="css-128qn49"
-          >
-            <div
-              class="css-86cix"
-            >
-              <div
-                class="css-1aiajnh"
-              >
-                <section
-                  class="css-5diunv"
-                >
-                  <h3
-                    class="nk-headline-heading css-i2jo9u"
-                  >
-                    Rugby Union
-                  </h3>
-                </section>
-              </div>
-            </div>
-            <a
-              class="css-166fjww"
-              data-testid="buttonLink"
-              href="https://www.thetimes.co.uk/"
-              role="link"
-            >
-              <svg
-                aria-hidden="true"
-                class="css-3rbz36"
-                fill="currentcolor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                  fill="currentcolor"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
     <div
       class="css-1klr24i"
     >

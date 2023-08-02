@@ -14,9 +14,9 @@ afterAll(() => {
   jest.clearAllMocks();
   jest.resetAllMocks();
 });
-const { section, articles } = data;
+const { articles } = data;
 const renderComponent = async () =>
-  render(<ContentBucket2 {...{ section, articles }} />);
+  render(<ContentBucket2 {...{ articles }} />);
 
 describe('Render Content Bucket 2 Slice', () => {
   test('Slice matches snapshot at `lg` breakpoint', async () => {
