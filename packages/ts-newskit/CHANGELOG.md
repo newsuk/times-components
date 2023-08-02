@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.74.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.73.0...@times-components/ts-newskit@1.74.0) (2023-08-02)
+
+
+### Features
+
+* **TMRX-1152:** corrected export from TC ([#3475](https://github.com/newsuk/times-components/issues/3475)) ([767d9ee](https://github.com/newsuk/times-components/commit/767d9ee7e71d6207f02c7cf373193d28019cebc8))
+
+
+
+
+
 # [1.73.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.72.0...@times-components/ts-newskit@1.73.0) (2023-08-02)
 
 
