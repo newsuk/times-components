@@ -17,6 +17,7 @@ interface CardsContainerProps {
   isScrollable?: boolean;
   seeAllLink?: string;
   isImageCropped?: boolean;
+  trackAction?: (title: string, scrollDirection: string) => void;
 }
 
 export const CardsContainer = ({
@@ -24,10 +25,17 @@ export const CardsContainer = ({
   title,
   isScrollable = false,
   seeAllLink,
-  isImageCropped = false
+  isImageCropped = false,
+  trackAction
 }: CardsContainerProps) => {
   const scrollRef = useRef(null);
   const cardRef = useRef(null);
+
+  const handleScrollArrowClick = (scrollDirection: 'previous' | 'next') => {
+    if (trackAction) {
+      trackAction(title || '', scrollDirection);
+    }
+  };
 
   return (
     <>
@@ -54,6 +62,7 @@ export const CardsContainer = ({
               scrollRef={scrollRef}
               seeAllLink={seeAllLink}
               cardRef={cardRef}
+              onScrollArrowClick={handleScrollArrowClick}
             />
           ) : null
         }
