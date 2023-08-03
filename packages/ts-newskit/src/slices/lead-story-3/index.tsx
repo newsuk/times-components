@@ -76,6 +76,7 @@ export const LeadStory3 = ({
         <ArticleStack
           leadArticles={modifedLeadArticles}
           breakpointKey={currentBreakpoint}
+          clickHandler={clickHandler}
         />
       </StackItem>
       <StackItem
@@ -110,7 +111,7 @@ export const LeadStory3 = ({
               position="right"
             />
           </Visible>
-          <LeadArticle {...modifedLeadArticle} />
+          <LeadArticle article={modifedLeadArticle} clickHandler={clickHandler} />
           <Visible md lg xl>
             <LeadStoryDivider
               overrides={{

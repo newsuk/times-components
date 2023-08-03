@@ -96,8 +96,8 @@ export const LeadStory2 = ({
             />
           </Visible>
           <LeadArticle
-            contentWidth={currentBreakpoint === 'xl' ? '274px' : '246px'}
-            {...modifiedLeadArticle}
+            article={{...modifiedLeadArticle, contentWidth: currentBreakpoint === 'xl' ? '274px' : '246px'}}
+            clickHandler={clickHandler}
           />
           {screenXsAndSm ? (
             <FullWidthBlock>
@@ -124,6 +124,7 @@ export const LeadStory2 = ({
             horizontalArticleContentWidth={
               currentBreakpoint === 'xl' ? '258px' : '230px'
             }
+            clickHandler={clickHandler}
           />
         </Block>
       </StackItem>

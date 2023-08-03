@@ -6,7 +6,7 @@ export const articleClickTracking = (
   article: ArticleProps,
   clickHandler: ClickHandlerType
 ) => {
-  if (article && clickHandler) {
+  if (article) {
     clickHandler(event, article);
   }
   // location.href is required instead of <a href={} />

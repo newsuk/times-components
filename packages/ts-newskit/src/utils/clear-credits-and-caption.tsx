@@ -5,6 +5,7 @@ type ImageCrops = {
 type ListData = {
   label: string;
   href: string;
+  id: string;
 };
 
 type ImageProps = {

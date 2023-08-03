@@ -40,7 +40,7 @@ export const CommentStack = ({ comments, clickHandler }: CommentStackProps) => {
 
           return (
             <React.Fragment key={comment.headline}>
-              <CommentCard {...comment} clickHandler={clickHandler} />
+              <CommentCard article={comment} clickHandler={clickHandler} />
               {hasBorder}
             </React.Fragment>
           );

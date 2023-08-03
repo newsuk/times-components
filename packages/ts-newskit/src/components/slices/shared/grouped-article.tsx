@@ -58,7 +58,7 @@ export const GroupedArticle = ({
                     />
                   </FullWidthBlock>
                 )}
-                <LeadArticle {...article} clickHandler={clickHandler} />
+                <LeadArticle article={article} clickHandler={clickHandler} />
               </React.Fragment>
             );
           }

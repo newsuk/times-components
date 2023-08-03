@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render, fireEvent } from '../../../../utils/test-utils';
-import { LeadArticle, LeadArticleProps } from '../index';
+import { LeadArticle } from '../index';
 import { leadArticle } from '../../../../slices/fixtures/data.json';
 import { useBreakpointKey } from 'newskit';
 
@@ -10,18 +10,12 @@ jest.mock('newskit', () => ({
   useBreakpointKey: jest.fn().mockReturnValue('xs')
 }));
 
-const leadStoryData: LeadArticleProps = {
-  ...leadArticle,
-  clickHandler: jest.fn()
-};
-
 const mockClickHandler = jest.fn();
 
 const renderComponent = () =>
   render(
     <LeadArticle
-      {...leadStoryData}
-      imageTop={false}
+      article={{...leadArticle, imageTop: false}}
       clickHandler={mockClickHandler}
     />
   );
@@ -59,7 +53,7 @@ describe('Render Component one', () => {
   it('should render tag if tag is provided', () => {
     (useBreakpointKey as any).mockReturnValue('xs');
     const { queryByText } = render(
-      <LeadArticle article={...leadStoryData} imageTop={true} />
+      <LeadArticle article={{...leadArticle, imageTop: true}} clickHandler={mockClickHandler} />
     );
     const tag = queryByText(leadArticle.tag.label);
     expect(tag).toBeVisible();
@@ -68,10 +62,13 @@ describe('Render Component one', () => {
   it('should not render tag or flag if they are not provided', () => {
     (useBreakpointKey as any).mockReturnValue('lg');
 
-    delete leadStoryData.tag;
-    delete leadStoryData.flag;
+    const leadArticleNoFlags = {
+      ...leadArticle,
+      tag: undefined,
+      flag: undefined
+    }
 
-    const { queryByText } = render(<LeadArticle {...leadStoryData} />);
+    const { queryByText } = render(<LeadArticle article={leadArticleNoFlags} clickHandler={mockClickHandler}/>);
     const tag = queryByText('Tag');
     const flag = queryByText('Flag');
 
@@ -80,8 +77,8 @@ describe('Render Component one', () => {
   });
 
   it('should use corrrect spacing if `contentTop` is set', () => {
-    const { getByText } = render(<LeadArticle {...leadStoryData} contentTop />);
-    const headline = getByText(leadStoryData.headline);
+    const { getByText } = render(<LeadArticle article={{...leadArticle, contentTop: true}} clickHandler={mockClickHandler}/>);
+    const headline = getByText(leadArticle.headline);
     const cardContainer = headline.closest('div');
 
     expect(cardContainer).toHaveStyle({
@@ -90,9 +87,9 @@ describe('Render Component one', () => {
   });
 
   it('should select image with correct ratio when loadingAspectRatio matches', () => {
-    const { getByAltText } = render(<LeadArticle {...leadStoryData} />);
+    const { getByAltText } = render(<LeadArticle article={{...leadArticle}} clickHandler={mockClickHandler} />);
     const imageElement = getByAltText(
-      leadStoryData.headline
+      leadArticle.headline
     ) as HTMLImageElement;
     expect(imageElement.src).toBe(
       'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173'
@@ -103,10 +100,10 @@ describe('Render Component one', () => {
     const loadingAspectRatio = '4:5';
 
     const { getByAltText } = render(
-      <LeadArticle {...leadStoryData} loadingAspectRatio={loadingAspectRatio} />
+      <LeadArticle article={{...leadArticle, loadingAspectRatio}} clickHandler={mockClickHandler} />
     );
     const imageElement = getByAltText(
-      leadStoryData.headline
+      leadArticle.headline
     ) as HTMLImageElement;
 
     expect(imageElement.src).toBe(
@@ -117,14 +114,14 @@ describe('Render Component one', () => {
     (useBreakpointKey as any).mockReturnValue('lg');
 
     const leadStoryDataWithCaption = {
-      ...leadStoryData,
+      ...leadArticle,
       images: {
-        ...leadStoryData.images,
+        ...leadArticle.images,
         caption: '',
         credits: 'test'
       }
     };
-    const { container } = render(<LeadArticle {...leadStoryDataWithCaption} />);
+    const { container } = render(<LeadArticle article={leadStoryDataWithCaption} clickHandler={mockClickHandler} />);
 
     const styledSpan = container.querySelector('span');
     expect(styledSpan).toBeInTheDocument();
@@ -133,14 +130,14 @@ describe('Render Component one', () => {
     (useBreakpointKey as any).mockReturnValue('lg');
 
     const leadStoryDataWithCaption = {
-      ...leadStoryData,
+      ...leadArticle,
       images: {
-        ...leadStoryData.images,
+        ...leadArticle.images,
         caption: 'caption',
         credits: 'test'
       }
     };
-    const { container } = render(<LeadArticle {...leadStoryDataWithCaption} />);
+    const { container } = render(<LeadArticle article={{...leadStoryDataWithCaption}} clickHandler={mockClickHandler} />);
 
     const styledSpan = container.querySelector('span');
     expect(styledSpan).toBeInTheDocument();
