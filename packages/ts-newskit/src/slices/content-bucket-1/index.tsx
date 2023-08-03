@@ -75,8 +75,10 @@ export const ContentBucket1 = ({
             />
           </Visible>
           <LeadArticle
-            {...modifiedLeadArticle}
-            contentWidth={currentBreakpoint === 'xl' ? '312px' : '283px'}
+            article={{
+              ...modifiedLeadArticle,
+              contentWidth: currentBreakpoint === 'xl' ? '312px' : '283px'
+            }}
             clickHandler={clickHandler}
           />
         </Block>
@@ -105,7 +107,11 @@ export const ContentBucket1 = ({
           </FullWidthBlock>
         </FullWidthHidden>
         <BlockItem>
-          <ArticleStack articles={articles} breakpoint={currentBreakpoint} />
+          <ArticleStack
+            articles={articles}
+            breakpoint={currentBreakpoint}
+            clickHandler={clickHandler}
+          />
         </BlockItem>
       </StackItem>
       <Visible md>

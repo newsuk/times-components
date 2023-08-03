@@ -11,7 +11,14 @@ jest.mock('newskit', () => ({
   useBreakpointKey: jest.fn().mockReturnValue('xl')
 }));
 
-const renderComponent = () => render(<LeadStory3 {...data} />);
+const mockClickHandler = jest.fn();
+
+const defaultProps = {
+  ...data,
+  clickHandler: mockClickHandler
+};
+
+const renderComponent = () => render(<LeadStory3 {...defaultProps} />);
 
 describe('Render Lead Story 3 Slice', () => {
   test('Slice matches snapshot', () => {

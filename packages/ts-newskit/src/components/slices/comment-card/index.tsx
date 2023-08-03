@@ -23,18 +23,16 @@ export interface CommentCardProps {
   headline: string;
   url: string;
   flag?: string;
-  clickHandler: ClickHandlerType;
 }
 
 export const CommentCard = ({
-  id,
-  images,
-  byline,
-  headline,
-  url,
-  flag,
+  article,
   clickHandler
-}: CommentCardProps) => {
+}: {
+  article: CommentCardProps;
+  clickHandler: ClickHandlerType;
+}) => {
+  const { id, images, byline, headline, url, flag } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '1:1');
 

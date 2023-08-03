@@ -59,7 +59,7 @@ describe('Render Component one', () => {
   it('should render tag if tag is provided', () => {
     (useBreakpointKey as any).mockReturnValue('xs');
     const { queryByText } = render(
-      <LeadArticle {...leadStoryData} imageTop={true} />
+      <LeadArticle article={...leadStoryData} imageTop={true} />
     );
     const tag = queryByText(leadArticle.tag.label);
     expect(tag).toBeVisible();

@@ -5,9 +5,11 @@ import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { CustomStackLayout } from '../shared';
 import { BlockItem, StackItem, StyledDivider } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
+import { ClickHandlerType } from '../types';
 
 export interface StackModule1Props {
   articles: ArticleProps[];
+  clickHandler: ClickHandlerType;
 }
 
 type ArticleStackProps = {
@@ -15,6 +17,7 @@ type ArticleStackProps = {
   marginBlockStart?: string;
   isDesktop?: boolean;
   isMob?: boolean;
+  clickHandler: ClickHandlerType;
 };
 
 const fullWidthDivider = (marginBlockStart?: string) => (
@@ -30,7 +33,8 @@ const articleStack = ({
   articles,
   marginBlockStart,
   isDesktop,
-  isMob
+  isMob,
+  clickHandler
 }: ArticleStackProps) => (
   <CustomStackLayout>
     <StackItem>
@@ -63,15 +67,18 @@ const articleStack = ({
           return (
             <React.Fragment key={article.headline}>
               <Article
-                {...clearCreditsAndCaption(article)}
-                hideImage={hasImage || (hasImage || isDesktop)}
-                isLeadImage={isMob && articleIndex === 0}
-                hasTopBorder={hasImage}
-                isFullWidth={true}
-                tagAndFlagMarginBlockStart="space030"
-                titleTypographyPreset={
-                  isMob ? 'editorialHeadline030' : 'editorialHeadline020'
-                }
+                article={{
+                  ...clearCreditsAndCaption(article),
+                  hideImage: hasImage || (hasImage || isDesktop),
+                  isLeadImage: isMob && articleIndex === 0,
+                  hasTopBorder: hasImage,
+                  isFullWidth: true,
+                  tagAndFlagMarginBlockStart: 'space030',
+                  titleTypographyPreset: isMob
+                    ? 'editorialHeadline030'
+                    : 'editorialHeadline020'
+                }}
+                clickHandler={clickHandler}
               />
               {articleBorder}
             </React.Fragment>
@@ -82,7 +89,7 @@ const articleStack = ({
   </CustomStackLayout>
 );
 
-export const StackModule1 = ({ articles }: StackModule1Props) => {
+export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
   const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
   useEffect(
@@ -104,12 +111,13 @@ export const StackModule1 = ({ articles }: StackModule1Props) => {
         xl: '1276px'
       }}
     >
-      {articleStack({ articles: articlesTop, isMob })}
+      {articleStack({ articles: articlesTop, isMob, clickHandler })}
       {articleStack({
         articles: articlesBottom,
         marginBlockStart: 'space040',
         isDesktop: !isMob,
-        isMob
+        isMob,
+        clickHandler
       })}
       {fullWidthDivider('space040')}
     </BlockItem>

@@ -13,8 +13,14 @@ jest.mock('newskit', () => ({
 afterAll(() => {
   jest.clearAllMocks();
 });
+const mockClickHandler = jest.fn();
 
-const renderComponent = () => render(<ContentBucket1 {...data} />);
+const defaultProps = {
+  ...data,
+  clickHandler: mockClickHandler
+};
+
+const renderComponent = () => render(<ContentBucket1 {...defaultProps} />);
 
 describe('Render Content Bucket 1 Slice', () => {
   test('Slice matches snapshot', () => {

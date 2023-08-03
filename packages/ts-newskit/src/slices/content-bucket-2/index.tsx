@@ -4,12 +4,17 @@ import { Article, ArticleProps } from '../../components/slices/article';
 import { StackItem, StyledDivider } from '../shared-styles';
 import { CustomStackLayout } from '../shared';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
+import { ClickHandlerType } from '../types';
 
 export interface ContentBucket2Props {
   articles: ArticleProps[];
+  clickHandler: ClickHandlerType;
 }
 
-export const ContentBucket2 = ({ articles }: ContentBucket2Props) => {
+export const ContentBucket2 = ({
+  articles,
+  clickHandler
+}: ContentBucket2Props) => {
   const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
   useEffect(
@@ -53,10 +58,13 @@ export const ContentBucket2 = ({ articles }: ContentBucket2Props) => {
             return (
               <React.Fragment key={article.headline}>
                 <Article
-                  {...clearCreditsAndCaption(article)}
-                  hideImage={isAfterFirstArticle}
-                  isLeadImage={isMob && articleIndex === 0}
-                  hasTopBorder={isMob && articleIndex > 0}
+                  article={{
+                    ...clearCreditsAndCaption(article),
+                    hideImage: isAfterFirstArticle,
+                    isLeadImage: isMob && articleIndex === 0,
+                    hasTopBorder: isMob && articleIndex > 0
+                  }}
+                  clickHandler={clickHandler}
                 />
                 {articleBorder}
               </React.Fragment>

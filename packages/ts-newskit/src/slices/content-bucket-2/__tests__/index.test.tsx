@@ -14,9 +14,16 @@ afterAll(() => {
   jest.clearAllMocks();
   jest.resetAllMocks();
 });
-const { articles } = data;
+
+const mockClickHandler = jest.fn();
+
+const defaultProps = {
+  ...data,
+  clickHandler: mockClickHandler
+};
+
 const renderComponent = async () =>
-  render(<ContentBucket2 {...{ articles }} />);
+  render(<ContentBucket2 {...defaultProps} />);
 
 describe('Render Content Bucket 2 Slice', () => {
   test('Slice matches snapshot at `lg` breakpoint', async () => {

@@ -117,7 +117,7 @@ export const LeadStory1 = ({
         }}
       >
         <LeadArticle
-          {...modifiedArticlesWithUnorderedList}
+          article={modifiedArticlesWithUnorderedList}
           clickHandler={clickHandler}
         />
         {modifiedSingleArticle && (
@@ -187,7 +187,10 @@ export const LeadStory1 = ({
             />
           </Visible>
           <BlockItem marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-            <LeadArticle {...modifiedLeadArticle} />
+            <LeadArticle
+              article={modifiedLeadArticle}
+              clickHandler={clickHandler}
+            />
           </BlockItem>
           <Visible md lg xl>
             <LeadStoryDivider

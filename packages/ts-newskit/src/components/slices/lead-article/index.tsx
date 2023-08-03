@@ -61,32 +61,33 @@ export interface LeadArticleProps {
   listData?: ListData[];
   showTagL1?: boolean;
   hideImage?: boolean;
-  clickHandler: ClickHandlerType;
 }
 
 export const LeadArticle = ({
-  id,
-  headline,
-  flag,
-  shortSummary,
-  tagL1,
-  images,
-  url,
-  tag,
-  imageTop,
-  hasTopBorder = true,
-  contentTop,
-  contentWidth,
-  headlineTypographyPreset,
-  loadingAspectRatio,
-  imageMarginBlockStart = 'space000',
-  textBlockMarginBlockStart = 'space040',
-  tagAndFlagMarginBlockStart = 'space040',
-  listData,
-  showTagL1,
-  hideImage,
+  article,
   clickHandler
-}: LeadArticleProps) => {
+}: {article: LeadArticleProps, clickHandler: ClickHandlerType}) => {
+
+  const { id,
+    headline,
+    flag,
+    shortSummary,
+    tagL1,
+    images,
+    url,
+    tag,
+    imageTop,
+    hasTopBorder = true,
+    contentTop,
+    contentWidth,
+    headlineTypographyPreset,
+    loadingAspectRatio,
+    imageMarginBlockStart = 'space000',
+    textBlockMarginBlockStart = 'space040',
+    tagAndFlagMarginBlockStart = 'space040',
+    listData,
+    showTagL1,
+    hideImage } = article;
   const imageWithCorrectRatio =
     images && images.crops
       ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
