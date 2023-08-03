@@ -1,7 +1,10 @@
 import React from 'react';
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Block, FlagSize, IconButton, Stack, TitleBar } from 'newskit';
-import { TrackingContextProvider, TrackingContext } from '../../../utils/TrackingContextProvider';
+import {
+  TrackingContextProvider,
+  TrackingContext
+} from '../../../utils/TrackingContextProvider';
 
 export interface SliceHeaderProps {
   title: string;
@@ -38,40 +41,40 @@ export const SliceHeader = ({
   };
   return (
     <TrackingContextProvider>
-    {({fireAnalyticsEvent}) => 
-    <Block stylePreset="sliceHeaderPreset">
-      <Stack
-        flow="horizontal-center"
-        stackDistribution="space-between"
-        paddingBlock={padding}
-      >
-        <TitleBar
-          overrides={{
-            heading: {
-              typographyPreset: titleTypographyPreset,
-              stylePreset: 'inkBrand010'
-            },
-            paddingInline: 'space000',
-            paddingBlock: 'space000'
-          }}
-        >
-          {title}
-        </TitleBar>
-        <IconButton
-          size={iconSize}
-          overrides={{
-            stylePreset: 'sliceIconPreset',
-            iconSize: iconArrowSize
-          }}
-          role="link"
-          href={href}
-          onClick={() => handleClick(fireAnalyticsEvent, title)}
-        >
-          <NewsKitChevronRightIcon />
-        </IconButton>
-      </Stack>
-    </Block>
-}
+      {({ fireAnalyticsEvent }) => (
+        <Block stylePreset="sliceHeaderPreset">
+          <Stack
+            flow="horizontal-center"
+            stackDistribution="space-between"
+            paddingBlock={padding}
+          >
+            <TitleBar
+              overrides={{
+                heading: {
+                  typographyPreset: titleTypographyPreset,
+                  stylePreset: 'inkBrand010'
+                },
+                paddingInline: 'space000',
+                paddingBlock: 'space000'
+              }}
+            >
+              {title}
+            </TitleBar>
+            <IconButton
+              size={iconSize}
+              overrides={{
+                stylePreset: 'sliceIconPreset',
+                iconSize: iconArrowSize
+              }}
+              role="link"
+              href={href}
+              onClick={() => handleClick(fireAnalyticsEvent, title)}
+            >
+              <NewsKitChevronRightIcon />
+            </IconButton>
+          </Stack>
+        </Block>
+      )}
     </TrackingContextProvider>
   );
 };
