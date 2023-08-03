@@ -37,8 +37,8 @@ export const CommentCard = ({
     images && images.crops && images.crops.find(crop => crop.ratio === '1:1');
 
   const onClick = (event: MouseEventType) => {
-    const article = { headline, id, url };
-    articleClickTracking(event, article, clickHandler);
+    const articleForTracking = { headline, id, url };
+    articleClickTracking(event, articleForTracking, clickHandler);
   };
   return (
     <CardComposable

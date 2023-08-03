@@ -111,7 +111,10 @@ export const LeadStory3 = ({
               position="right"
             />
           </Visible>
-          <LeadArticle article={modifedLeadArticle} clickHandler={clickHandler} />
+          <LeadArticle
+            article={modifedLeadArticle}
+            clickHandler={clickHandler}
+          />
           <Visible md lg xl>
             <LeadStoryDivider
               overrides={{

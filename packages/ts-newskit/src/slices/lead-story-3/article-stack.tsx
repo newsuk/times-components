@@ -56,7 +56,10 @@ export const ArticleStack = ({
                 </FullWidthBlock>
               )}
               <Block marginBlock="space040">
-                <LeadArticle article={articlesWithModifiedTypography} clickHandler={clickHandler} />
+                <LeadArticle
+                  article={articlesWithModifiedTypography}
+                  clickHandler={clickHandler}
+                />
               </Block>
             </>
           );

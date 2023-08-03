@@ -96,7 +96,10 @@ export const LeadStory2 = ({
             />
           </Visible>
           <LeadArticle
-            article={{...modifiedLeadArticle, contentWidth: currentBreakpoint === 'xl' ? '274px' : '246px'}}
+            article={{
+              ...modifiedLeadArticle,
+              contentWidth: currentBreakpoint === 'xl' ? '274px' : '246px'
+            }}
             clickHandler={clickHandler}
           />
           {screenXsAndSm ? (

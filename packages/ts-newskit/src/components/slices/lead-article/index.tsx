@@ -66,9 +66,12 @@ export interface LeadArticleProps {
 export const LeadArticle = ({
   article,
   clickHandler
-}: {article: LeadArticleProps, clickHandler: ClickHandlerType}) => {
-
-  const { id,
+}: {
+  article: LeadArticleProps;
+  clickHandler: ClickHandlerType;
+}) => {
+  const {
+    id,
     headline,
     flag,
     shortSummary,
@@ -87,7 +90,8 @@ export const LeadArticle = ({
     tagAndFlagMarginBlockStart = 'space040',
     listData,
     showTagL1,
-    hideImage } = article;
+    hideImage
+  } = article;
   const imageWithCorrectRatio =
     images && images.crops
       ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
@@ -124,8 +128,8 @@ export const LeadArticle = ({
   const displayArticleVertical = imageTop || hideImage;
 
   const onClick = (event: MouseEventType) => {
-    const article = { headline, id, url };
-    articleClickTracking(event, article, clickHandler);
+    const articleForTracking = { headline, id, url };
+    articleClickTracking(event, articleForTracking, clickHandler);
   };
 
   return (

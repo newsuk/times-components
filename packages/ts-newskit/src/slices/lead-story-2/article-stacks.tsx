@@ -27,7 +27,7 @@ export const ArticleStack = ({
   breakpoint: BreakpointKeys;
   horizontalArticles: LeadArticleProps[];
   horizontalArticleContentWidth?: string;
-  clickHandler: ClickHandlerType
+  clickHandler: ClickHandlerType;
 }) => {
   const modifiedHorizontalArticles = horizontalArticles.map(item => ({
     ...clearCreditsAndCaption(item),
@@ -105,7 +105,7 @@ export const ArticleStack = ({
             <RelativeBlockItem key={article.headline}>
               <Block>
                 <FullWidthBlock>{articleBorder}</FullWidthBlock>
-                <LeadArticle article={article} clickHandler={clickHandler}/>
+                <LeadArticle article={article} clickHandler={clickHandler} />
               </Block>
             </RelativeBlockItem>
           );
