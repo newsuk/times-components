@@ -1,6 +1,6 @@
 export { TCThemeProvider } from './utils/TCThemeProvider';
 export { InArticleAudio } from './components/article-audio';
-export { updateThemeTypography } from './utils/theme-formatting';
+export { formatThemeOverrides } from './utils/theme-formatting';
 
 // THEMES
 export { TimesWebLightTheme } from './theme/times-web-light';
