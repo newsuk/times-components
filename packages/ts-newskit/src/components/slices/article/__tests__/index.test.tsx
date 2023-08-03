@@ -211,11 +211,11 @@ describe('Render Article List Item with hidden image', () => {
     expect(articleDivider.style.marginBottom).toBe('');
   });
   it('should call click handler when clicked', () => {
-    const { getByRole } = renderComponent(
+    const { getByText } = renderComponent(
       { ...defaultProps },
       mockClickHandler
     );
-    fireEvent.click(getByRole('link'));
+    fireEvent.click(getByText("Harry & Meghan's New Project?"));
     expect(mockClickHandler).toHaveBeenCalled();
   });
 });

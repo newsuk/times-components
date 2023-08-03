@@ -143,8 +143,8 @@ describe('Render Component one', () => {
     expect(styledSpan).toBeInTheDocument();
   });
   it('should call the clickHandler when clicked', () => {
-    const { getByRole } = renderComponent();
-    fireEvent.click(getByRole('link'));
+    const { getByText } = renderComponent();
+    fireEvent.click(getByText("Sarcacens an inclusive club? They didnt look out for me"));
     expect(mockClickHandler).toHaveBeenCalled();
   });
 });
