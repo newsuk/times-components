@@ -1,6 +1,6 @@
 export { TCThemeProvider } from './utils/TCThemeProvider';
 export { InArticleAudio } from './components/article-audio';
-export { updateThemeTypography } from './utils/theme-formatting';
+export { formatThemeOverrides } from './utils/theme-formatting';
 
 // THEMES
 export { TimesWebLightTheme } from './theme/times-web-light';
@@ -48,6 +48,9 @@ export { LeadStory2 } from './slices/lead-story-2';
 export { LeadStory3 } from './slices/lead-story-3';
 export { SectionBucket } from './slices/section-bucket';
 export { StackModule1 } from './slices/stacked-module-1';
+
+// SLICES HEADER
+export { SliceHeader } from './components/slices/slice-header';
 
 // MISC
 export { JobTitle } from './components/misc/job-title/job-title';

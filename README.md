@@ -50,7 +50,7 @@ Any of these source files can be debugged directly.
 
 ## Link times-components to the Render project
 
-Follow these steps [here](https://github.com/newsuk/cps-content-render#locally-mount-your-custom-build-of-times-components)
+Follow these steps [here](https://github.com/newsuk/cps-content-render#integrating-with-times-components)
 
 ## Debugging the tests
 

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.74.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.73.0...@times-components/ts-newskit@1.74.0) (2023-08-02)
+
+
+### Features
+
+* **TMRX-1152:** corrected export from TC ([#3475](https://github.com/newsuk/times-components/issues/3475)) ([767d9ee](https://github.com/newsuk/times-components/commit/767d9ee7e71d6207f02c7cf373193d28019cebc8))
+
+
+
+
+
+# [1.73.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.72.0...@times-components/ts-newskit@1.73.0) (2023-08-02)
+
+
+### Features
+
+* **TMRX-1402:** remove slice header from slices and export it ([#3473](https://github.com/newsuk/times-components/issues/3473)) ([c61fcb9](https://github.com/newsuk/times-components/commit/c61fcb91190f549fa82bc6bb8b391ccc1188cdf9))
+
+
+
+
+
 # [1.72.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.71.0...@times-components/ts-newskit@1.72.0) (2023-08-01)
 
 
