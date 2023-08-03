@@ -1,6 +1,6 @@
 // @ts-nocheck
 import { createTheme } from 'newskit';
-import { TheTimesLight } from '@newskit-themes/the-times';
+import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 import { stylePresets } from './style-presets';
 import { typographyPresets } from './styles/typography-presets';
 import { formatThemeOverrides } from '../../utils/theme-formatting';
