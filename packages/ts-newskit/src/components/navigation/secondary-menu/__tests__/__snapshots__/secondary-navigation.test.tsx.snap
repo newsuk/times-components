@@ -20,7 +20,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           <p
             class="css-yhevtm"
           >
-            home
+            Home
           </p>
           <li
             class="nk-menu-item css-zbkqx2"

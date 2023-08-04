@@ -27,7 +27,7 @@ export const SecondaryNavigation = ({
       return;
     }
 
-    setIsSelected(filteredItem.slug);
+    setIsSelected(filteredItem.title);
   };
 
   const options = {

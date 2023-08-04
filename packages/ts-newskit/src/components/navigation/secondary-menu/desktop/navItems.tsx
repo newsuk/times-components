@@ -22,7 +22,7 @@ export const NavItems: React.FC<{
           href={url}
           key={url}
           onClick={() => handleSelect(slug)}
-          selected={isSelected === slug}
+          selected={isSelected === title}
         >
           {title}
         </StyledMenuItemsDesktop>
