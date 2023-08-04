@@ -3,6 +3,7 @@ import { LeadArticle } from "./index";
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../../theme/times-web-light/index';
 import { leadArticle as leadArticleData } from '../../../slices/fixtures/data.json';
+import { TrackingContextProvider, analyticsStream } from '@times-components/ts-components'
 
 <Meta
   title="Newskit Components/Slices/LeadArticle"
@@ -25,7 +26,16 @@ Please click the 'Canvas' tab for a better viewing experience, where you can upd
 
 export const LeadArticleStory = ({headline, color, flag, shortSummary, bylines, tagL1, caption, images, url, tag, imageTop}) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
+  <TrackingContextProvider
+      analyticsStream={analyticsStream}
+      context={{
+        component: 'Tag',
+        attrs: {
+        }
+      }}
+    >
     <LeadArticle {...{headline, color, flag, shortSummary, bylines, tagL1, caption, images, url, tag, imageTop}} />
+    </TrackingContextProvider>
   </NewsKitProvider>
 );
 
