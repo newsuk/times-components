@@ -4,7 +4,7 @@ import { Block, FlagSize, IconButton, Stack, TitleBar } from 'newskit';
 import {
   TrackingContextProvider,
   TrackingContext
-} from '../../../utils/TrackingContextProvider';
+} from '@times-components/ts-components';
 
 export interface SliceHeaderProps {
   title: string;

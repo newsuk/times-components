@@ -21,7 +21,7 @@ export type TrackingContextType = TrackingContextProps & {
   fireAnalyticsEvent?: (analyticsEvent: any) => void;
 };
 
-const TrackingContext = React.createContext<TrackingContextType>({
+export const TrackingContext = React.createContext<TrackingContextType>({
   context: {}
 });
 
