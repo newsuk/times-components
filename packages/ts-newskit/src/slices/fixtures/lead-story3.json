@@ -425,6 +425,7 @@
       ]
     },
     "headline": "Short title of the card describing the main content",
+    "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
     "url": "https://www.thetimes.co.uk",
     "tag": {
       "label": "Tag",
