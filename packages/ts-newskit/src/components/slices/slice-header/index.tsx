@@ -65,7 +65,7 @@ export const SliceHeader = ({
               }}
               role="link"
               href={href}
-              onClick={() => handleClick(fireAnalyticsEvent, title)}
+              onClick={() => handleClick(fireAnalyticsEvent)}
             >
               <NewsKitChevronRightIcon />
             </IconButton>
