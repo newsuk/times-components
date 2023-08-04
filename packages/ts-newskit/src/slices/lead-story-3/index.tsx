@@ -54,7 +54,8 @@ export const LeadStory3 = ({
     headlineTypographyPreset: 'editorialHeadline040',
     imageTop: true,
     hasTopBorder: false,
-    loadingAspectRatio: '4:5'
+    loadingAspectRatio: '4:5',
+    shortSummary: undefined
   };
 
   const modifedLeadArticles = leadArticles.map(article => ({
