@@ -23,7 +23,7 @@ export const SliceHeader = ({
   iconSize = 'medium',
   padding = 'space030'
 }: SliceHeaderProps) => {
-  const clickEvent = (title: string) => ({
+  const clickEvent = () => ({
     action: 'Clicked',
     attrs: {
       event_navigation_action: 'navigation',
@@ -33,11 +33,8 @@ export const SliceHeader = ({
     }
   });
 
-  const handleClick = (
-    fireAnalyticsEvent: (evt: TrackingContext) => void,
-    buttonLabel: string
-  ) => {
-    fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(buttonLabel));
+  const handleClick = (fireAnalyticsEvent: (evt: TrackingContext) => void) => {
+    fireAnalyticsEvent && fireAnalyticsEvent(clickEvent());
   };
   return (
     <TrackingContextProvider>
