@@ -6,6 +6,7 @@ export type SecondaryMenuItem = {
 
 export type MainMenuProp = {
   hasMoreItems: boolean;
+  currentTop: number;
 };
 
 export type BreakPointProp = {

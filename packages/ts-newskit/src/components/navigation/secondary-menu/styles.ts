@@ -27,7 +27,18 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
     justify-content: ${({ hasMoreItems }) =>
       hasMoreItems ? `space-between` : `center`};
   }
+  position: ${({ currentTop }) => (currentTop < 60 ? 'static' : 'fixed')};
+  top: 60px;
+  background-color: red;
+  z-index: 10;
 `;
+
+export const MainMenuMobile = styled(Menu)<{currentTop: number}>`
+  position: ${({ currentTop }) => (currentTop < 110 ? 'static' : 'fixed')};
+  top: 110px;
+  background-color: white;
+  z-index: 10;
+`
 
 export const Wrapper = styled.div`
   display: flex;

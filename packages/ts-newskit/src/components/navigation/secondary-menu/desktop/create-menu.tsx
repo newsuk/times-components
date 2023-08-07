@@ -16,6 +16,11 @@ export const CreateMenu: React.FC<{
   const [hasMenuItem, setHasMenuItem] = useState<number>(data.length);
   const [moreMenuItemsLength, setMoreMenuItemsLength] = useState<number>(0);
   const subMenuTitle = isExpanded ? 'Less' : 'More';
+  // const [currentTop, setCurrentTop] = useState<number>();
+
+  // const handleScroll = () => {
+  //   setCurrentTop(contanierRef.current?.getBoundingClientRect().top)
+  // }
 
   useEffect(() => {
     const handleResize = async (navAdjustCount = 1) => {
@@ -39,11 +44,16 @@ export const CreateMenu: React.FC<{
       }
     };
 
+
     window.addEventListener('resize', debounce(() => handleResize(), 500));
     handleResize();
 
+    // window.addEventListener('scroll', debounce(() => handleScroll(), 500));
+    // handleScroll();
+
     return () => {
       window.removeEventListener('resize', debounce(() => handleResize(), 500));
+      // window.removeEventListener('scroll', debounce(() => handleScroll(), 500));
     };
   }, []);
 
@@ -69,6 +79,7 @@ export const CreateMenu: React.FC<{
   return (
     <MainMenu
       hasMoreItems={moreMenuItemsLength > 0 ? true : false}
+      currentTop={60}
       aria-label="Secondary Navigation"
       overrides={{
         spaceInline: 'space030'
