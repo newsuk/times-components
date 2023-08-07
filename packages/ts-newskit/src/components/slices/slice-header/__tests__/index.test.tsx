@@ -39,6 +39,7 @@ describe('Render Header', () => {
     fireEvent.click(getByRole('link'));
     expect(analyticsStream).toHaveBeenCalledWith({
       action: 'Clicked',
+      object: 'SliceHeader',
       attrs: {
         article_parent_name: 'Rugby Union',
         eventTime: '2021-05-03T00:00:00.000Z',
