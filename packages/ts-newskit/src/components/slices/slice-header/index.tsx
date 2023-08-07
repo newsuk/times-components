@@ -37,7 +37,11 @@ export const SliceHeader = ({
     fireAnalyticsEvent && fireAnalyticsEvent(clickEvent());
   };
   return (
-    <TrackingContextProvider>
+    <TrackingContextProvider
+      context={{
+        object: 'SliceHeader'
+      }}
+    >
       {({ fireAnalyticsEvent }) => (
         <Block stylePreset="sliceHeaderPreset">
           <Stack
