@@ -2,6 +2,8 @@ import { Meta, Story, Props } from '@storybook/addon-docs'
 import { SliceHeader } from "./index";
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../../theme';
+import { TrackingContextProvider } from '../../../utils/TrackingContextProvider';
+import analyticsStream from '../../../slices/fixtures/analytics-actions';
 
 <Meta
   title="Newskit Components/Slices/SliceHeader"
@@ -24,10 +26,19 @@ Please click the 'Canvas' tab for a better viewing experience, where you can upd
 
 export const HeaderStory = ({ title , href}) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
+  <TrackingContextProvider
+      analyticsStream={analyticsStream}
+      context={{
+        component: 'SliceHeader',
+        attrs: {
+        }
+      }}
+    >
     <SliceHeader {...{ title,href }} />
+    </TrackingContextProvider>
   </NewsKitProvider>
 );
 
-<Story name="SliceHeader" args={{ title: 'Rugby Union', href : 'https://www.thetimes.co.uk/' }}>
+<Story name="SliceHeader" args={{ title: 'Rugby Union', href : undefined }}>
   {HeaderStory.bind({})}
 </Story>
