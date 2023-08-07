@@ -6,8 +6,12 @@ export type SecondaryMenuItem = {
 
 export type MainMenuProp = {
   hasMoreItems: boolean;
-  currentTop: number;
 };
+
+export type SecondaryNavContainerProp = {
+  isSticky: boolean;
+  isSmallScreen?: boolean;
+} 
 
 export type BreakPointProp = {
   breakpointKey: string;

@@ -7,7 +7,8 @@ import {
   MenuSub,
   MenuItem
 } from 'newskit';
-import { MainMenuProp, BreakPointProp } from './types';
+import { MainMenuProp, BreakPointProp, SecondaryNavContainerProp } from './types';
+import themes from "@newskit-themes/the-times"
 
 export const MenuDivider = styled(Divider)<BreakPointProp>`
   width: ${({ breakpointKey }) =>
@@ -27,18 +28,14 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
     justify-content: ${({ hasMoreItems }) =>
       hasMoreItems ? `space-between` : `center`};
   }
-  position: ${({ currentTop }) => (currentTop < 60 ? 'static' : 'fixed')};
-  top: 60px;
-  background-color: red;
-  z-index: 10;
 `;
 
-export const MainMenuMobile = styled(Menu)<{currentTop: number}>`
-  position: ${({ currentTop }) => (currentTop < 110 ? 'static' : 'fixed')};
-  top: 110px;
+export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
+  position: ${({ isSticky }) => (isSticky ? 'sticky' : 'static')};
+  top: ${({ isSmallScreen }) => ( isSmallScreen ? "110px" : "60px")};
   background-color: white;
   z-index: 10;
-`
+` // change background-color: white to use theming color instead.
 
 export const Wrapper = styled.div`
   display: flex;

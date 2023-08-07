@@ -1,20 +1,26 @@
 import React, { useState, useEffect } from 'react';
 import { SecondaryNavDesktop } from './desktop';
 import { SecondaryNavMobile } from './mobile';
-import { Visible } from 'newskit';
+import { Visible, useBreakpointKey } from 'newskit';
 import { SecondaryMenuItem } from './types';
+import { SecondaryNavContainer } from './styles';
 
 interface SecondaryNavigationProps {
   data: SecondaryMenuItem[];
   pageSlug: string;
+  isSticky: boolean;
 }
 
 export const SecondaryNavigation = ({
   data,
-  pageSlug
+  pageSlug,
+  isSticky
 }: SecondaryNavigationProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');
+
+  const breakpoint = useBreakpointKey()
+  const isSmallScreen = breakpoint == 'xs' || breakpoint == 'sm';
 
   useEffect(() => {
     handleSelect(pageSlug);
@@ -38,13 +44,13 @@ export const SecondaryNavigation = ({
   };
 
   return (
-    <>
+    <SecondaryNavContainer isSticky={isSticky} isSmallScreen={isSmallScreen}>
       <Visible sm xs>
         <SecondaryNavMobile data={data} options={options} />
       </Visible>
       <Visible md lg xl>
         <SecondaryNavDesktop data={data} options={options} />
       </Visible>
-    </>
+    </SecondaryNavContainer>
   );
 };
