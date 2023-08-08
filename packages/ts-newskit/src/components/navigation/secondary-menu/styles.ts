@@ -8,7 +8,7 @@ import {
   MenuItem
 } from 'newskit';
 import { MainMenuProp, BreakPointProp, SecondaryNavContainerProp } from './types';
-import themes from "@newskit-themes/the-times"
+import TheTimesLightSport from "@newskit-themes/the-times/TheTimes-light-sport.json"
 
 export const MenuDivider = styled(Divider)<BreakPointProp>`
   width: ${({ breakpointKey }) =>
@@ -33,8 +33,8 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
 export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
   position: ${({ isSticky }) => (isSticky ? 'sticky' : 'static')};
   top: ${({ isSmallScreen }) => ( isSmallScreen ? "110px" : "60px")};
-  background-color: white;
-  z-index: 10;
+  background-color: ${TheTimesLightSport.colors.interfaceBackground};
+  z-index: 2;
 ` // change background-color: white to use theming color instead.
 
 export const Wrapper = styled.div`
