@@ -2,6 +2,7 @@ import { Meta, Story, Props } from '@storybook/addon-docs'
 import { TCThemeProvider, themes,GridOverlay } from '../../utils/index.tsx';
 import { LeadStory1 } from "./";
 import { leadArticle,articles,smallArticles,groupedArticles,singleArticle,articlesWithListItems } from '../fixtures/lead-story.json';
+import { action } from '@storybook/addon-actions';
 
 <Meta
   title="Newskit Slices/Lead Story 1"
@@ -37,12 +38,6 @@ LeadStory1Story.args = {
 
 <Story 
   name="LeadStory1"
-  methods={{
-    clickHandler: e => {
-      e.preventDefault();
-      console.log('hello');
-    },
-  }}
   args={{
     leadArticle,
     articles,
@@ -50,6 +45,7 @@ LeadStory1Story.args = {
     groupedArticles,
     singleArticle,
     articlesWithListItems,
+    clickHandler: action("ClickHandler")
   }}
   argTypes={{
     theme: {

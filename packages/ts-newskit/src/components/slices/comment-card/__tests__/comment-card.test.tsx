@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render, screen } from '../../../../utils/test-utils';
+import { render, screen, fireEvent } from '../../../../utils/test-utils';
 import { CommentCard, CommentCardProps } from '..';
 import { ClickHandlerType } from '../../../../slices/types';
 
@@ -88,6 +88,12 @@ it('should render the correct image', () => {
   );
   expect(image).toHaveAttribute('alt', 'Journalist name');
 });
+
+it('should call the click handler when clicked', () => {
+  const { getByRole } = renderComponent(defaultProps, mockClickHandler);
+  fireEvent.click(getByRole('link'));
+  expect(mockClickHandler).toHaveBeenCalled();
+})
 
 it('should render the correct text, without Heading', () => {
   renderComponent(
