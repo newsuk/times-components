@@ -3,7 +3,7 @@ version: 2.1
 executors:
     node:
         docker:
-          - image: cimg/node:12.15.0-browsers
+          - image: cimg/node:16.14.0-browsers
         resource_class: 2xlarge
     node_sonar:
         docker:
@@ -19,7 +19,7 @@ commands:
         steps:
             - run:
                   name: Install Dependencies
-                  command: npx yarn@1.22.15 install --frozen-lockfile --ignore-engines
+                  command: yarn install --frozen-lockfile --ignore-engines
                   working_directory: ~/project/
 
     restore-yarn:
@@ -35,6 +35,13 @@ commands:
                   key: yarn-packages-{{ checksum "yarn.lock" }}
                   paths:
                       - ~/.cache/yarn
+    install-lerna:
+      description: 'Install Lerna'
+      steps:
+        - run:
+            name: 'Install Lerna'
+            command: yarn global add lerna
+            working_directory: ~/project/
 
 jobs:
     setup:
@@ -44,6 +51,7 @@ jobs:
             - restore-yarn
             - install-dependencies
             - save-yarn
+            - install-lerna
             - persist_to_workspace:
                 root: ./
                 paths:
@@ -58,7 +66,7 @@ jobs:
             - run:
                   name: Run Lint
                   command: |
-                      npx yarn@1.22.15 lint
+                      yarn lint
                   working_directory: ~/project/
 
     build_storybook:
@@ -70,7 +78,7 @@ jobs:
             - run:
                   name: Run Tests
                   command: |
-                      npx yarn@1.22.15 test
+                      yarn test
                   working_directory: ~/project/
             - store_artifacts:
                 path: ./storybook-static
@@ -82,33 +90,36 @@ jobs:
             - checkout
             - attach_workspace:
                   at: ./
+            - install-lerna
             - run:
                   name: Run No Specific Platform Tests
                   command: |
-                      npx lerna run test --stream --since -- -- --ci --bail --coverage
+                      lerna run test --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
     run_web_tests:
         executor: node
         steps:
             - checkout
+            - install-lerna
             - attach_workspace:
                   at: ./
             - run:
                   name: Run Web Tests
                   command: |
-                      npx lerna run test:web --stream --since -- -- --ci --bail --coverage
+                      lerna run test:web --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
 
     run_unit_tests:
         executor: node
         steps:
             - checkout
+            - install-lerna
             - attach_workspace:
                   at: ./
             - run:
                   name: Run Unit Tests
                   command: |
-                      npx lerna run test:unit --stream --since -- -- --ci --bail --coverage
+                      lerna run test:unit --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
 
     sonarcloud_scan:
@@ -131,12 +142,12 @@ jobs:
                     sudo apt-get update;
                     sudo apt-get install -y lsof;
                     sudo apt-get install --no-install-recommends -y libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
-                    npx yarn@1.22.15 cypress install
+                    yarn cypress install
                   working_directory: ~/project/
             - run:
                   name: Run Cypress Tests
                   command: |
-                    npx yarn@1.22.15 test:e2e
+                    yarn test:e2e
                   working_directory: ~/project/
             - store_artifacts:
                 path: packages/ssr/__tests__/screenshots
@@ -154,7 +165,7 @@ jobs:
                   command: |
                       export COVERALLS_GIT_COMMIT=$CIRCLE_SHA1
                       export COVERALLS_GIT_BRANCH=$CIRCLE_BRANCH
-                      npx yarn@1.22.15 coverage:publish
+                      yarn coverage:publish
                   working_directory: ~/project/
 
     publish_npm:
@@ -163,11 +174,12 @@ jobs:
             - checkout
             - attach_workspace:
                   at: ./
+            - install-lerna
             - run:
                   name: Publish to npm
                   command: |
-                      npx lerna run bundle --stream
-                      npx yarn@1.22.15 npm:publish
+                      lerna run bundle --stream
+                      yarn npm:publish
                   working_directory: ~/project/
 
     publish_storybook:
@@ -179,7 +191,7 @@ jobs:
             - run:
                   name: Publish Storybook
                   command: |
-                      npx yarn@1.22.15 storybook:publish
+                      yarn storybook:publish
                   working_directory: ~/project/
 
 workflows:

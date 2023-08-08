@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.76.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.76.1...@times-components/ts-newskit@1.76.2) (2023-08-07)
+
+
+### Bug Fixes
+
+* **TMRX-1312:** Add object name to SliceHeader for tracking ([#3478](https://github.com/newsuk/times-components/issues/3478)) ([9c2f105](https://github.com/newsuk/times-components/commit/9c2f105ff7c4a2d3eebceff34b639901f02e801b))
+
+
+
+
+
+## [1.76.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.76.0...@times-components/ts-newskit@1.76.1) (2023-08-07)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+# [1.76.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.75.1...@times-components/ts-newskit@1.76.0) (2023-08-04)
+
+
+### Features
+
+* **TMRX-1312:** Add tracking to Slice Header ([#3477](https://github.com/newsuk/times-components/issues/3477)) ([1b2c324](https://github.com/newsuk/times-components/commit/1b2c324d8c571b3c1766e14017d10470325c9a03))
+
+
+
+
+
+## [1.75.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.75.0...@times-components/ts-newskit@1.75.1) (2023-08-03)
+
+
+### Bug Fixes
+
+* **TMRX-1402:** apply design feedback ([#3476](https://github.com/newsuk/times-components/issues/3476)) ([3fac8a8](https://github.com/newsuk/times-components/commit/3fac8a8ac4c59f7666ce95d2abe8f62e2a93f0f4))
+
+
+
+
+
 # [1.75.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.74.0...@times-components/ts-newskit@1.75.0) (2023-08-03)
 
 

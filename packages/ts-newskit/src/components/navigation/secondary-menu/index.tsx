@@ -15,7 +15,6 @@ export const SecondaryNavigation = ({
 }: SecondaryNavigationProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');
-  const firstItem = data[0].title;
 
   useEffect(() => {
     handleSelect(pageSlug);
@@ -23,11 +22,12 @@ export const SecondaryNavigation = ({
 
   const handleSelect = (slug: string) => {
     const filteredItem = data.find(item => item.slug === slug);
-    if (filteredItem) {
-      setIsSelected(filteredItem.title);
-    } else {
-      setIsSelected(firstItem);
+
+    if (!filteredItem) {
+      return;
     }
+
+    setIsSelected(filteredItem.title);
   };
 
   const options = {

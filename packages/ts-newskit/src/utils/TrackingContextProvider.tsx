@@ -38,7 +38,7 @@ export const useTrackingContext = () => useContext(TrackingContext);
 export const TrackingContextProvider = ({
   children,
   analyticsStream,
-  context,
+  context
 }: TrackingContextProps & TrackingContextChildren) => {
   const parentTrackingContext = useContext(TrackingContext);
   const stream =
