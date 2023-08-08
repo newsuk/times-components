@@ -26,7 +26,7 @@ describe('Secondary Menu', () => {
       <SecondaryNavigation
         data={mainMenuItems}
         pageSlug="home"
-        isSticky={false}
+        isSticky={true}
       />
     );
     const SeeAllButton = getByText('See all');

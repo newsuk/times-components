@@ -12,7 +12,7 @@ import {
   BreakPointProp,
   SecondaryNavContainerProp
 } from './types';
-import TheTimesLightSport from '@newskit-themes/the-times/TheTimes-light-sport.json';
+import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
 export const MenuDivider = styled(Divider)<BreakPointProp>`
   width: ${({ breakpointKey }) =>
@@ -37,7 +37,7 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
 export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
   position: ${({ isSticky }) => (isSticky ? 'sticky' : 'static')};
   top: ${({ isSmallScreen }) => (isSmallScreen ? '110px' : '60px')};
-  background-color: ${TheTimesLightSport.colors.interfaceBackground};
+  background-color: ${TheTimesLight.colors.interfaceBackground};
   z-index: 2;
 `;
 
