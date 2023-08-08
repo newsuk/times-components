@@ -8,8 +8,12 @@ export type MainMenuProp = {
   hasMoreItems: boolean;
 };
 
-export type SecondaryNavContainerProp = {
-  isSticky: boolean;
+export type StickyProps = {
+  top: number;
+  topInSmallScreen: number;
+}
+
+export type SecondaryNavContainerProp = StickyProps &  {
   isSmallScreen?: boolean;
 };
 
