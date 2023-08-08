@@ -10,8 +10,8 @@ export type MainMenuProp = {
 
 export type StickyProps = {
   isSticky: boolean
-  top: number;
-  topInSmallScreen: number;
+  top: string;
+  topInSmallScreen: string;
 }
 
 export type SecondaryNavContainerProp = StickyProps &  {

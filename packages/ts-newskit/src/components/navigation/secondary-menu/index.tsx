@@ -9,16 +9,16 @@ interface SecondaryNavigationProps {
   data: SecondaryMenuItem[];
   pageSlug: string;
   isSticky?: boolean;
-  stickyTop?: number;
-  stickyTopInSmallScreen?: number
+  stickyTop?: string;
+  stickyTopInSmallScreen?: string
 }
 
 export const SecondaryNavigation = ({
   data,
   pageSlug,
   isSticky = false,
-  stickyTop = 60,
-  stickyTopInSmallScreen = 110
+  stickyTop = '60px',
+  stickyTopInSmallScreen = '110px'
 }: SecondaryNavigationProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');

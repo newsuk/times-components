@@ -36,7 +36,7 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
 
 export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
   position: ${({ isSticky }) => (isSticky ? 'sticky' : 'static')};
-  top: ${({ isSmallScreen, top, topInSmallScreen }) => (isSmallScreen ? `${topInSmallScreen}px` : `${top}px`)};
+  top: ${({ isSmallScreen, top, topInSmallScreen }) => (isSmallScreen ? `${topInSmallScreen}` : `${top}`)};
   background-color: ${TheTimesLight.colors.interfaceBackground};
   z-index: 2;
 `;
