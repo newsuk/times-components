@@ -4,6 +4,11 @@ import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavigation } from '../index';
 import { cleanup, fireEvent, waitFor } from '@testing-library/react';
+ 
+jest.mock('newskit', () => ({
+  ...jest.requireActual('newskit'),
+  useBreakpointKey: jest.fn().mockReturnValue('sm')
+}));
 
 describe('Secondary Menu', () => {
   afterEach(() => {
