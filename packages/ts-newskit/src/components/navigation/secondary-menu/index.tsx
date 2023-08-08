@@ -20,7 +20,7 @@ export const SecondaryNavigation = ({
   const [isSelected, setIsSelected] = useState<string>('');
 
   const breakpoint = useBreakpointKey();
-  const isSmallScreen = breakpoint == 'xs' || breakpoint == 'sm';
+  const isSmallScreen = breakpoint === 'xs' || breakpoint === 'sm';
 
   useEffect(() => {
     handleSelect(pageSlug);
