@@ -11,7 +11,7 @@ export type MainMenuProp = {
 export type SecondaryNavContainerProp = {
   isSticky: boolean;
   isSmallScreen?: boolean;
-} 
+};
 
 export type BreakPointProp = {
   breakpointKey: string;

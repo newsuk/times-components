@@ -39,7 +39,6 @@ export const CreateMenu: React.FC<{
       }
     };
 
-
     window.addEventListener('resize', debounce(() => handleResize(), 500));
     handleResize();
 

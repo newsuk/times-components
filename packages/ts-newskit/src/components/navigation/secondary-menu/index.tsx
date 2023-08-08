@@ -19,7 +19,7 @@ export const SecondaryNavigation = ({
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');
 
-  const breakpoint = useBreakpointKey()
+  const breakpoint = useBreakpointKey();
   const isSmallScreen = breakpoint == 'xs' || breakpoint == 'sm';
 
   useEffect(() => {
