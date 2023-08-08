@@ -61,8 +61,8 @@ export const SliceHeader = ({
             >
               {title}
             </TitleBar>
-              {href && (
-                <IconButton
+            {href && (
+              <IconButton
                 size={iconSize}
                 overrides={{
                   stylePreset: 'sliceIconPreset',
@@ -71,10 +71,10 @@ export const SliceHeader = ({
                 role="link"
                 href={href}
                 onClick={() => handleClick(fireAnalyticsEvent)}
-                >
+              >
                 <NewsKitChevronRightIcon />
-                </IconButton>
-              )}
+              </IconButton>
+            )}
           </Stack>
         </Block>
       )}
