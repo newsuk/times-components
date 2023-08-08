@@ -93,7 +93,7 @@ it('should call the click handler when clicked', () => {
   const { getByRole } = renderComponent(defaultProps, mockClickHandler);
   fireEvent.click(getByRole('link'));
   expect(mockClickHandler).toHaveBeenCalled();
-})
+});
 
 it('should render the correct text, without Heading', () => {
   renderComponent(
