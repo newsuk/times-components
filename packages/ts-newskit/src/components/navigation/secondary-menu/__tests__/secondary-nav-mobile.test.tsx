@@ -24,7 +24,12 @@ describe('Secondary Menu', () => {
   });
   it('should close the dropdown ', () => {
     const { getByText, queryByText, getAllByText } = render(
-      <SecondaryNavigation data={mainMenuItems} pageSlug="home" stickyTop={110} stickyTopDesktop={60} />
+      <SecondaryNavigation
+        data={mainMenuItems}
+        pageSlug="home"
+        stickyTop={110}
+        stickyTopDesktop={60}
+      />
     );
     const SeeAllButton = getByText('See all');
     fireEvent.click(SeeAllButton);

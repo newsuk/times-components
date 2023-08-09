@@ -37,9 +37,9 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
 
 export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
   position: sticky;
-  ${({ topMobile }) => topMobile ? `top: ${topMobile}px;` : ''} 
-  ${getMediaQueryFromTheme('md')} {
-    ${({ topDesktop }) => topDesktop ? `top: ${topDesktop}px;` : ''};
+  ${({ topMobile }) =>
+    topMobile ? `top: ${topMobile}px;` : ''} ${getMediaQueryFromTheme('md')} {
+    ${({ topDesktop }) => (topDesktop ? `top: ${topDesktop}px;` : '')};
   }
   background-color: ${TheTimesLight.colors.interfaceBackground};
   z-index: 2;
