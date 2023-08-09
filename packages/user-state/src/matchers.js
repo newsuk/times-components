@@ -13,10 +13,12 @@ const hasAccessLoggedInNonMeteredUser = userState =>
   hasAccessLoggedInUser(userState) && !isMeteredUser(userState);
 
 const hasAccessLoggedInMeteredUser = userState =>
-  hasAccessLoggedInUser(userState) && isMeteredUser(userState) && userState.isRegisteredUser;
+  hasAccessLoggedInUser(userState) &&
+  isMeteredUser(userState) &&
+  userState.isRegisteredUser;
 
 const hasAccessRegisteredUser = userState =>
-  hasAccessLoggedInOrSharedUser(userState) && !userState.isRegisteredUser
+  hasAccessLoggedInOrSharedUser(userState) && !userState.isRegisteredUser;
 
 const hasAccessLoggedInRegisteredUser = userState =>
   hasAccessLoggedInNonMeteredUser(userState) && !userState.isRegisteredUser;
