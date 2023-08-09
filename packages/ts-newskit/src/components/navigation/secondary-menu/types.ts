@@ -9,8 +9,8 @@ export type MainMenuProp = {
 };
 
 export type SecondaryNavContainerProp = {
-  topDesktop: string;
-  topMobile: string;
+  topDesktop: number | undefined;
+  topMobile: number;
 };
 
 export type BreakPointProp = {

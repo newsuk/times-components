@@ -18,7 +18,7 @@ describe('Secondary Menu Desktop', () => {
 
   it('should render snapshot', () => {
     const { asFragment } = render(
-      <SecondaryNavigation data={mainMenuItems} pageSlug="home" />
+      <SecondaryNavigation data={mainMenuItems} pageSlug="home" stickyTop={110} />
     );
     expect(asFragment()).toMatchSnapshot();
   });

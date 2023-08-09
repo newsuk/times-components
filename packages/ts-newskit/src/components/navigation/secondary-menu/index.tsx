@@ -8,15 +8,15 @@ import { SecondaryNavContainer } from './styles';
 interface SecondaryNavigationProps {
   data: SecondaryMenuItem[];
   pageSlug: string;
-  stickyTopDesktop?: string;
-  stickyTopMobile?: string;
+  stickyTopDesktop?: number;
+  stickyTop: number;
 }
 
 export const SecondaryNavigation = ({
   data,
   pageSlug,
-  stickyTopDesktop = '60px',
-  stickyTopMobile = '110px'
+  stickyTopDesktop,
+  stickyTop
 }: SecondaryNavigationProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');
@@ -45,7 +45,7 @@ export const SecondaryNavigation = ({
   return (
     <SecondaryNavContainer
       topDesktop={stickyTopDesktop}
-      topMobile={stickyTopMobile}
+      topMobile={stickyTop}
     >
       <Visible sm xs>
         <SecondaryNavMobile data={data} options={options} />
