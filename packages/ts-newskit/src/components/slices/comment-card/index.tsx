@@ -53,7 +53,7 @@ export const CommentCard = ({
           media={{
             src: imageWithCorrectRatio.url,
             alt: (images && images.alt) || byline,
-            loadingAspectRatio: imageWithCorrectRatio.ratio || '1:1',
+            loadingAspectRatio: imageWithCorrectRatio.ratio,
             width: '77px',
             overrides: { stylePreset: 'imageCircle' }
           }}
