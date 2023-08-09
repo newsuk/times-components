@@ -49,4 +49,8 @@ describe('Render Header', () => {
       }
     });
   });
+  it('does not render the icon button if no href is supplied', () => {
+    const { queryByRole } = render(<SliceHeader title="Rugby Union" />);
+    expect(queryByRole('link')).toBeFalsy();
+  });
 });

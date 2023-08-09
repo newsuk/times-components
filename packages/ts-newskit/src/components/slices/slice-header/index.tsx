@@ -8,7 +8,7 @@ import {
 
 export interface SliceHeaderProps {
   title: string;
-  href: string;
+  href?: string;
   titleTypographyPreset?: string;
   iconArrowSize?: string;
   iconSize?: FlagSize;
@@ -61,18 +61,20 @@ export const SliceHeader = ({
             >
               {title}
             </TitleBar>
-            <IconButton
-              size={iconSize}
-              overrides={{
-                stylePreset: 'sliceIconPreset',
-                iconSize: iconArrowSize
-              }}
-              role="link"
-              href={href}
-              onClick={() => handleClick(fireAnalyticsEvent)}
-            >
-              <NewsKitChevronRightIcon />
-            </IconButton>
+            {href && (
+              <IconButton
+                size={iconSize}
+                overrides={{
+                  stylePreset: 'sliceIconPreset',
+                  iconSize: iconArrowSize
+                }}
+                role="link"
+                href={href}
+                onClick={() => handleClick(fireAnalyticsEvent)}
+              >
+                <NewsKitChevronRightIcon />
+              </IconButton>
+            )}
           </Stack>
         </Block>
       )}
