@@ -5,7 +5,8 @@ import {
   Divider,
   Block,
   MenuSub,
-  MenuItem
+  MenuItem,
+  getMediaQueryFromTheme
 } from 'newskit';
 import {
   MainMenuProp,
@@ -35,8 +36,10 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
 `;
 
 export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
-  position: ${({ isSticky }) => (isSticky ? 'sticky' : 'static')};
-  top: ${({ isSmallScreen, top, topInSmallScreen }) => (isSmallScreen ? `${topInSmallScreen}` : `${top}`)};
+  position: sticky;
+  ${({ topMobile }) => `top: ${topMobile};`} ${getMediaQueryFromTheme('md')} {
+    ${({ topDesktop }) => `top: ${topDesktop};`};
+  }
   background-color: ${TheTimesLight.colors.interfaceBackground};
   z-index: 2;
 `;
