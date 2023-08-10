@@ -319,6 +319,8 @@ function Head({
     authorSchema
   );
 
+  const {id: articleId} = article;
+
   const jsonLD = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
@@ -351,7 +353,9 @@ function Head({
     dateModified,
     author: authorSchema,
     articleSection: sectionname,
-    keywords: sectionNameList
+    keywords: sectionNameList,
+    articleID: articleId,
+    url
   };
 
   if (swgProductId) {
@@ -400,7 +404,8 @@ function Head({
     publisher: publisherSchema,
     author: authorSchema,
     liveBlogUpdate: liveBlogUpdateSchema,
-    articleSection: sectionname
+    articleSection: sectionname,
+    articleID: articleId
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
