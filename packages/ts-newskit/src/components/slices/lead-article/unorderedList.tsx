@@ -1,16 +1,23 @@
 import React, { Fragment } from 'react';
 import { UnorderedList, LinkInline } from 'newskit';
+import { ClickHandlerType, MouseEventType } from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
 
 type ListData = {
   label: string;
   href: string;
+  id: string;
 };
 
 export interface ListDataProps {
   listData?: ListData[];
+  clickHandler: ClickHandlerType;
 }
 
-export const UnorderedListItems = ({ listData }: ListDataProps) => {
+export const UnorderedListItems = ({
+  listData,
+  clickHandler
+}: ListDataProps) => {
   if (!listData || listData.length === 0) {
     return null;
   }
@@ -29,7 +36,11 @@ export const UnorderedListItems = ({ listData }: ListDataProps) => {
         }
       }}
     >
-      {listData.map(({ label, href }, index) => {
+      {listData.map(({ label, href, id }, index) => {
+        const onClick = (event: MouseEventType) => {
+          const article = { headline: label, id, url: href };
+          articleClickTracking(event, article, clickHandler);
+        };
         const hasHref = !!href;
         return hasHref ? (
           <LinkInline
@@ -38,6 +49,7 @@ export const UnorderedListItems = ({ listData }: ListDataProps) => {
             }}
             key={index}
             href={href}
+            onClick={onClick}
           >
             {label}
           </LinkInline>

@@ -5,6 +5,7 @@
       "href": ""
     },
     "headline": "Sarcacens an inclusive club? They didnt look out for me",
+    "id": "1912",
     "shortSummary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
     "images": {
       "alt": "",
@@ -79,6 +80,7 @@
         ]
       },
       "headline": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
+      "id": "19123",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -119,6 +121,7 @@
         ]
       },
       "headline": "American owners pose threat to English pyramid",
+      "id": "191234",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "",
@@ -159,6 +162,7 @@
         ]
       },
       "headline": "£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid",
+      "id": "1912345",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -199,6 +203,7 @@
         ]
       },
       "headline": "Blow for rebel clubs as court says Uefa can block Super League",
+      "id": "19123456",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "",
@@ -239,6 +244,7 @@
         ]
       },
       "headline": "Blow for rebel clubs as court says Uefa can block Super League 2",
+      "id": "191234567",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -247,7 +253,6 @@
       "flag": "Flag5"
     }
   ],
-
   "articlesWithListItems": {
     "tagL1": {
       "label": "TAG",
@@ -260,6 +265,7 @@
       "crops": []
     },
     "headline": "Short title of the card describing the main content",
+    "id": "191234568",
     "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
     "tag": {
       "label": "Tag",
@@ -267,7 +273,13 @@
     },
     "flag": "Flag",
     "url": "#",
-    "listData": [{ "label": "Unordered list item", "href": "/" }]
+    "listData": [
+      {
+        "label": "Unordered list item",
+        "href": "/",
+        "id": "19127"
+      }
+    ]
   },
   "singleArticle": {
     "images": {
@@ -302,6 +314,7 @@
       ]
     },
     "headline": "Short title of the card describing the main content 3",
+    "id": "19123456789",
     "url": "#",
     "tag": {
       "label": "",
@@ -352,6 +365,7 @@
           ]
         },
         "headline": "Short title of the card describing the main content",
+        "id": "191234567890",
         "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
         "url": "#",
         "tag": {
@@ -398,6 +412,7 @@
           ]
         },
         "headline": "Short title of the card describing the main content 2",
+        "id": "1912345678901",
         "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
         "url": "#",
         "tag": {
@@ -443,6 +458,7 @@
         ]
       },
       "headline": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
+      "id": "19123456789012",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "",
@@ -483,6 +499,7 @@
         ]
       },
       "headline": "‘American owners pose threat to English pyramid’",
+      "id": "191234567890123",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "",
@@ -491,7 +508,6 @@
       "flag": ""
     }
   ],
-
   "verticalArticles": [
     {
       "tagL1": {
@@ -530,6 +546,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content",
+      "id": "1912345678901234",
       "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
@@ -576,6 +593,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content 2",
+      "id": "19123456789012345",
       "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
@@ -624,6 +642,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content",
+      "id": "191234567890123456",
       "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {
@@ -670,6 +689,7 @@
         ]
       },
       "headline": "Short title of the card describing the main content 2",
+      "id": "1912345678901234567",
       "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
       "url": "https://www.thetimes.co.uk",
       "tag": {

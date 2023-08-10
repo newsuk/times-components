@@ -3,6 +3,7 @@ import { LeadArticle } from "./index";
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../../theme/times-web-light/index';
 import { leadArticle as leadArticleData } from '../../../slices/fixtures/data.json';
+import { action } from '@storybook/addon-actions';
 
 <Meta
   title="Newskit Components/Slices/LeadArticle"
@@ -23,12 +24,12 @@ This takes in a series of props, as below, to display the part of the slices.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const LeadArticleStory = ({headline, color, flag, shortSummary, bylines, tagL1, caption, images, url, tag, imageTop}) => (
+export const LeadArticleStory = ({article, clickHandler}) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <LeadArticle {...{headline, color, flag, shortSummary, bylines, tagL1, caption, images, url, tag, imageTop}} />
+    <LeadArticle article={article} clickHandler={clickHandler} />
   </NewsKitProvider>
 );
 
-<Story name="LeadArticle" args={{...leadArticleData}}>
+<Story name="LeadArticle" args={{article: leadArticleData, clickHandler: action("ClickHandler") }}>
   {LeadArticleStory.bind({})}
 </Story>

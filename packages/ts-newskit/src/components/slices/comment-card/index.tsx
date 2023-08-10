@@ -2,6 +2,8 @@ import { CardComposable, CardContent, CardMedia, TextBlock } from 'newskit';
 import React from 'react';
 import { CardHeadlineLink } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
+import { ClickHandlerType, MouseEventType } from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
 
 type ImageCrops = {
   url?: string;
@@ -15,6 +17,7 @@ type ImageProps = {
 };
 
 export interface CommentCardProps {
+  id: string;
   images?: ImageProps;
   byline: string;
   headline: string;
@@ -23,15 +26,20 @@ export interface CommentCardProps {
 }
 
 export const CommentCard = ({
-  images,
-  byline,
-  headline,
-  url,
-  flag
-}: CommentCardProps) => {
+  article,
+  clickHandler
+}: {
+  article: CommentCardProps;
+  clickHandler: ClickHandlerType;
+}) => {
+  const { id, images, byline, headline, url, flag } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '1:1');
 
+  const onClick = (event: MouseEventType) => {
+    const articleForTracking = { headline, id, url };
+    articleClickTracking(event, articleForTracking, clickHandler);
+  };
   return (
     <CardComposable
       columnGap="space040"
@@ -45,7 +53,7 @@ export const CommentCard = ({
           media={{
             src: imageWithCorrectRatio.url,
             alt: (images && images.alt) || byline,
-            loadingAspectRatio: imageWithCorrectRatio.ratio || '1:1',
+            loadingAspectRatio: imageWithCorrectRatio.ratio,
             width: '77px',
             overrides: { stylePreset: 'imageCircle' }
           }}
@@ -59,6 +67,7 @@ export const CommentCard = ({
           overrides={{ typographyPreset: 'editorialHeadline020' }}
           expand
           external={false}
+          onClick={onClick}
         >
           {byline}
         </CardHeadlineLink>

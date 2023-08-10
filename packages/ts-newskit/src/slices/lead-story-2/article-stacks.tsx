@@ -14,17 +14,20 @@ import {
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { RelativeBlockItem } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
+import { ClickHandlerType } from '../types';
 
 export const ArticleStack = ({
   verticalArticles,
   breakpoint,
   horizontalArticles,
-  horizontalArticleContentWidth
+  horizontalArticleContentWidth,
+  clickHandler
 }: {
   verticalArticles: LeadArticleProps[];
   breakpoint: BreakpointKeys;
   horizontalArticles: LeadArticleProps[];
   horizontalArticleContentWidth?: string;
+  clickHandler: ClickHandlerType;
 }) => {
   const modifiedHorizontalArticles = horizontalArticles.map(item => ({
     ...clearCreditsAndCaption(item),
@@ -72,7 +75,7 @@ export const ArticleStack = ({
                     />
                   </Visible>
                 </FullWidthBlock>
-                <LeadArticle {...article} />
+                <LeadArticle article={article} clickHandler={clickHandler} />
               </Block>
               {articleBorder}
             </React.Fragment>
@@ -102,7 +105,7 @@ export const ArticleStack = ({
             <RelativeBlockItem key={article.headline}>
               <Block>
                 <FullWidthBlock>{articleBorder}</FullWidthBlock>
-                <LeadArticle {...article} />
+                <LeadArticle article={article} clickHandler={clickHandler} />
               </Block>
             </RelativeBlockItem>
           );

@@ -25,6 +25,7 @@ import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
 import { StyledDivider } from './styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
+import { ClickHandlerType } from '../types';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
@@ -39,6 +40,7 @@ export interface LeadStory1Props {
   smallArticles: ArticleProps[];
   singleArticle: ArticleProps;
   articlesWithListItems: LeadArticleProps;
+  clickHandler: ClickHandlerType;
 }
 
 export const LeadStory1 = ({
@@ -47,7 +49,8 @@ export const LeadStory1 = ({
   groupedArticles,
   smallArticles,
   singleArticle,
-  articlesWithListItems
+  articlesWithListItems,
+  clickHandler
 }: LeadStory1Props) => {
   const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
@@ -113,7 +116,10 @@ export const LeadStory1 = ({
           md: '260px'
         }}
       >
-        <LeadArticle {...modifiedArticlesWithUnorderedList} />
+        <LeadArticle
+          article={modifiedArticlesWithUnorderedList}
+          clickHandler={clickHandler}
+        />
         {modifiedSingleArticle && (
           <BlockItem>
             <FullWidthBlock>
@@ -127,7 +133,10 @@ export const LeadStory1 = ({
                 }}
               />
             </FullWidthBlock>
-            <Article {...modifiedSingleArticle} />
+            <Article
+              article={modifiedSingleArticle}
+              clickHandler={clickHandler}
+            />
           </BlockItem>
         )}
         {groupedArticles && (
@@ -141,7 +150,7 @@ export const LeadStory1 = ({
                 }}
               />
             </FullWidthBlock>
-            <GroupedArticle {...groupedArticles} />
+            <GroupedArticle {...groupedArticles} clickHandler={clickHandler} />
           </>
         )}
       </StackItem>
@@ -178,7 +187,10 @@ export const LeadStory1 = ({
             />
           </Visible>
           <BlockItem marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-            <LeadArticle {...modifiedLeadArticle} />
+            <LeadArticle
+              article={modifiedLeadArticle}
+              clickHandler={clickHandler}
+            />
           </BlockItem>
           <Visible md lg xl>
             <LeadStoryDivider
@@ -201,6 +213,7 @@ export const LeadStory1 = ({
             hideImage={screenXsAndSm}
             hasTopBorder={!!screenXsAndSm}
             breakpoint={currentBreakpoint}
+            clickHandler={clickHandler}
           />
         </Block>
       </StackItem>
@@ -209,6 +222,7 @@ export const LeadStory1 = ({
           <ComposedArticleStack
             articles={modifiedArticles}
             breakpoint={currentBreakpoint}
+            clickHandler={clickHandler}
           />
         </BlockItem>
       ) : (
@@ -216,6 +230,7 @@ export const LeadStory1 = ({
           mdWidth="720px"
           modifedArticles={modifiedArticles}
           breakpoint={currentBreakpoint}
+          clickHandler={clickHandler}
         />
       )}
     </CustomStackLayout>

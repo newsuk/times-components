@@ -17,17 +17,20 @@ import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { ArticleStack } from './article-stack';
 import { ArticleStackLeadStory, CustomStackLayout } from '../shared';
+import { ClickHandlerType } from '../types';
 
 export interface LeadStory3Props {
   leadArticle: LeadArticleProps;
   articles: ArticleProps[];
   leadArticles: LeadArticleProps[];
+  clickHandler: ClickHandlerType;
 }
 
 export const LeadStory3 = ({
   leadArticle,
   articles,
-  leadArticles
+  leadArticles,
+  clickHandler
 }: LeadStory3Props) => {
   const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
@@ -74,6 +77,7 @@ export const LeadStory3 = ({
         <ArticleStack
           leadArticles={modifedLeadArticles}
           breakpointKey={currentBreakpoint}
+          clickHandler={clickHandler}
         />
       </StackItem>
       <StackItem
@@ -108,7 +112,10 @@ export const LeadStory3 = ({
               position="right"
             />
           </Visible>
-          <LeadArticle {...modifedLeadArticle} />
+          <LeadArticle
+            article={modifedLeadArticle}
+            clickHandler={clickHandler}
+          />
           <Visible md lg xl>
             <LeadStoryDivider
               overrides={{
@@ -125,6 +132,7 @@ export const LeadStory3 = ({
           <ComposedArticleStack
             articles={modifedArticles}
             breakpoint={currentBreakpoint}
+            clickHandler={clickHandler}
           />
         </BlockItem>
       ) : (
@@ -132,6 +140,7 @@ export const LeadStory3 = ({
           mdWidth="720px"
           modifedArticles={modifedArticles}
           breakpoint={currentBreakpoint}
+          clickHandler={clickHandler}
         />
       )}
     </CustomStackLayout>
