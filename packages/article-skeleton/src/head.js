@@ -319,7 +319,7 @@ function Head({
     authorSchema
   );
 
-  const {id: articleId} = article;
+  const { id: articleId } = article;
 
   const jsonLD = {
     "@context": "https://schema.org",
