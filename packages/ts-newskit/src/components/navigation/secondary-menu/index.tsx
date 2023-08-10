@@ -8,8 +8,8 @@ import { SecondaryNavContainer } from './styles';
 interface SecondaryNavigationProps {
   data: SecondaryMenuItem[];
   pageSlug: string;
+  stickyTop?: number;
   stickyTopDesktop?: number;
-  stickyTop: number;
 }
 
 export const SecondaryNavigation = ({

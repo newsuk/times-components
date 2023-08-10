@@ -10,7 +10,7 @@ export type MainMenuProp = {
 
 export type SecondaryNavContainerProp = {
   topDesktop: number | undefined;
-  topMobile: number;
+  topMobile: number | undefined;
 };
 
 export type BreakPointProp = {
