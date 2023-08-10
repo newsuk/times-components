@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.10.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.9.1...@times-components/jest-serializer@3.10.0) (2023-08-10)
+
+
+### Features
+
+* **TMRX-1444:** Update image on mobile web for Lead 1 and Lead 3 ([#3483](https://github.com/newsuk/times-components/issues/3483)) ([e49f620](https://github.com/newsuk/times-components/commit/e49f6203bc75b2e528538343fac8483e9ee34960))
+
+
+
+
+
 ## [3.9.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.9.0...@times-components/jest-serializer@3.9.1) (2023-07-25)
 
 
