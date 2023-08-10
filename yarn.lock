@@ -5504,6 +5504,54 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
+"@times-components/storybook@4.10.2":
+  version "4.10.2"
+  resolved "https://registry.yarnpkg.com/@times-components/storybook/-/storybook-4.10.2.tgz#85bff57a63739f9967fa4dec478c5f9dae3696df"
+  integrity sha512-UqGmpnJiCa6N0KJp5opnITqi+7CU4sOt4mCXFwsTSK24rMieBAEtsWToKenmYrE5Q8sOv35JNG9bd11nnWI5KA==
+  dependencies:
+    "@babel/core" "7.4.4"
+    "@storybook/addon-actions" "6.5.16"
+    "@storybook/addon-knobs" "6.4.0"
+    "@storybook/react" "6.5.16"
+    "@times-components/schema" "0.7.4"
+    "@times-components/user-state" "0.5.0"
+    "@times-components/utils" "6.16.10"
+    apollo-cache-inmemory "1.5.1"
+    apollo-client "2.5.1"
+    apollo-link-http "1.5.14"
+    prop-types "15.7.2"
+    react "16.9.0"
+    react-apollo "2.5.5"
+    react-helmet-async "1.0.2"
+    styled-components "4.3.2"
+
+"@times-components/user-state@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@times-components/user-state/-/user-state-0.5.0.tgz#5f4a631df9eb5f79dde44d9a966a76fab455ce1c"
+  integrity sha512-5ri0V2KVj+W/nehybcMVhaSiQkdlYAJMCHiOPOyuz5cICIqWGoJShCZZQ4M9ch47FVUK/rA6NN1oOQwF5yeVug==
+  dependencies:
+    "@storybook/addon-knobs" "6.4.0"
+    "@times-components/context" "1.10.29"
+    "@times-components/utils" "6.16.10"
+    prop-types "15.7.2"
+
+"@times-components/utils@6.16.10":
+  version "6.16.10"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.16.10.tgz#fa3b7705a2d14b0dd8961491729e9d5b011bffa1"
+  integrity sha512-36MbvOuxEFy5qgAxQnT9UWfWyYOX91SNiApK2+ejnEugsx86CVBCfJbhMWwrKmKaep9A2KMR7QGUQ1y8vFPslg==
+  dependencies:
+    "@times-components/schema" "0.7.4"
+    "@times-components/ts-styleguide" "1.44.2"
+    apollo-cache-inmemory "1.5.1"
+    apollo-client "2.5.1"
+    apollo-link "1.2.4"
+    apollo-link-http "1.5.14"
+    apollo-link-persisted-queries "0.2.2"
+    lodash.omitby "4.6.0"
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+    unfetch "^3.0.0"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
