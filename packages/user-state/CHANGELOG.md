@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.4.31...@times-components/user-state@0.5.0) (2023-08-10)
+
+
+### Features
+
+* **TMG-867:** updated conditions for registered user ([#3481](https://github.com/newsuk/times-components/issues/3481)) ([74866ba](https://github.com/newsuk/times-components/commit/74866ba07f8c1a03b7b88aef82591190f1ae8598))
+
+
+
+
+
 ## [0.4.31](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.4.30...@times-components/user-state@0.4.31) (2023-07-25)
 
 **Note:** Version bump only for package @times-components/user-state
