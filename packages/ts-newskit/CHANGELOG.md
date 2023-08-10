@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.78.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.77.1...@times-components/ts-newskit@1.78.0) (2023-08-10)
+
+
+### Features
+
+* **TMRX-1444:** Update image on mobile web for Lead 1 and Lead 3 ([#3483](https://github.com/newsuk/times-components/issues/3483)) ([e49f620](https://github.com/newsuk/times-components/commit/e49f6203bc75b2e528538343fac8483e9ee34960))
+
+
+
+
+
 ## [1.77.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.77.0...@times-components/ts-newskit@1.77.1) (2023-08-10)
 
 **Note:** Version bump only for package @times-components/ts-newskit
