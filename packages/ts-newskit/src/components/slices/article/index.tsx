@@ -14,6 +14,8 @@ import {
   FullWidthBlock
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
+import { ClickHandlerType, MouseEventType } from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
 
 type ImageCrops = {
   url?: string;
@@ -27,6 +29,7 @@ type ImageProps = {
 };
 
 export interface ArticleProps {
+  id: string;
   headline: string;
   url: string;
   images?: ImageProps;
@@ -50,20 +53,28 @@ type LayoutProps = {
 };
 
 export const Article = ({
-  images,
-  headline,
-  url,
-  tag,
-  flag,
-  hasTopBorder,
-  hideImage,
-  isLeadImage,
-  imageRight,
-  isFullWidth,
-  articleTitleMarginTop = 'space040',
-  titleTypographyPreset = 'editorialHeadline020',
-  tagAndFlagMarginBlockStart = 'space040'
-}: ArticleProps) => {
+  article,
+  clickHandler
+}: {
+  article: ArticleProps;
+  clickHandler: ClickHandlerType;
+}) => {
+  const {
+    id,
+    images,
+    headline,
+    url,
+    tag,
+    flag,
+    hasTopBorder,
+    hideImage,
+    isLeadImage,
+    imageRight,
+    isFullWidth,
+    articleTitleMarginTop = 'space040',
+    titleTypographyPreset = 'editorialHeadline020',
+    tagAndFlagMarginBlockStart = 'space040'
+  } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
 
@@ -89,6 +100,11 @@ export const Article = ({
 
   const Layout: React.FC<LayoutProps> = ({ children }) => {
     return imageRight ? <Block>{children}</Block> : <>{children}</>;
+  };
+
+  const onClick = (event: MouseEventType) => {
+    const articleForTracking = { headline, id, url };
+    articleClickTracking(event, articleForTracking, clickHandler);
   };
 
   return (
@@ -152,6 +168,7 @@ export const Article = ({
               marginBlockStart: titleMarginBlockStart
             }}
             external={false}
+            onClick={onClick}
           >
             {headline}
           </CardHeadlineLink>

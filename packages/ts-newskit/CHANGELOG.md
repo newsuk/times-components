@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.77.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.76.3...@times-components/ts-newskit@1.77.0) (2023-08-10)
+
+
+### Features
+
+* **TMRX-1312:** Add tracking to slices ([#3471](https://github.com/newsuk/times-components/issues/3471)) ([29d23af](https://github.com/newsuk/times-components/commit/29d23af4225535f59a3979d3bd14158a76e9d712))
+
+
+
+
+
 ## [1.76.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.76.2...@times-components/ts-newskit@1.76.3) (2023-08-08)
 
 **Note:** Version bump only for package @times-components/ts-newskit

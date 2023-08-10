@@ -3,6 +3,7 @@ import { Meta, Story, Props } from '@storybook/addon-docs'
 import { GroupedArticle } from "./grouped-article";
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../../theme/times-web-light/index';
+import { action } from '@storybook/addon-actions';
 
 <Meta
   title="Newskit Components/Slices/Grouped Article"
@@ -23,9 +24,9 @@ This takes in a series of props, as below, to display the part of the slices.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const GroupedArticleStory = ({tagL1 , articles}) => (
+export const GroupedArticleStory = ({tagL1 , articles, clickHandler}) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <GroupedArticle {...{ tagL1 , articles}} />
+    <GroupedArticle {...{ tagL1 , articles, clickHandler}} />
   </NewsKitProvider>
 );
 
@@ -45,6 +46,6 @@ export const GroupedArticleStory = ({tagL1 , articles}) => (
     "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
     "url": "https://www.thetimes.co.uk",
   }
-]}}>
+], clickHandler: action("ClickHandler")}}>
   {GroupedArticleStory.bind({})}
 </Story>

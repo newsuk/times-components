@@ -9,20 +9,27 @@ import { Divider, useBreakpointKey, Scroll, BreakpointKeys } from 'newskit';
 import { CustomGridLayout } from '../shared/layouts';
 import { StyledBlock } from './styles';
 import { BlockItem } from '../shared-styles';
+import { ClickHandlerType } from '../types';
 
 export interface SectionBucketProps {
   articleStackOne: ArticleStackProps;
   articleStackTwo: ArticleStackProps;
   articleStackThree: ArticleStackProps;
   articleStackFour: ArticleStackProps;
+  clickHandler: ClickHandlerType;
 }
 
 type ArticleStackProps = {
   articles: ArticleProps[];
   section: SliceHeaderProps;
+  clickHandler: ClickHandlerType;
 };
 
-const ArticleStackBlock = ({ articles, section }: ArticleStackProps) => (
+const ArticleStackBlock = ({
+  articles,
+  section,
+  clickHandler
+}: ArticleStackProps) => (
   <>
     <StyledBlock data-testid="article-block">
       <SliceHeader
@@ -32,7 +39,7 @@ const ArticleStackBlock = ({ articles, section }: ArticleStackProps) => (
         iconSize="small"
         padding="space040"
       />
-      <ArticleStack articles={articles} />
+      <ArticleStack articles={articles} clickHandler={clickHandler} />
     </StyledBlock>
     <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
   </>
@@ -42,7 +49,8 @@ export const SectionBucket = ({
   articleStackOne,
   articleStackTwo,
   articleStackThree,
-  articleStackFour
+  articleStackFour,
+  clickHandler
 }: SectionBucketProps) => {
   const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
@@ -64,7 +72,7 @@ export const SectionBucket = ({
   const ArticleStackBlocks = (
     <CustomGridLayout>
       {articleStacksArray.map((stack, index) => (
-        <ArticleStackBlock key={index} {...stack} />
+        <ArticleStackBlock key={index} {...stack} clickHandler={clickHandler} />
       ))}
     </CustomGridLayout>
   );

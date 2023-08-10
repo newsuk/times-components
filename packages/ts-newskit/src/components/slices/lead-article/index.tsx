@@ -15,6 +15,8 @@ import {
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
+import { ClickHandlerType, MouseEventType } from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
 
 type ImageCrops = {
   url?: string;
@@ -23,6 +25,7 @@ type ImageCrops = {
 type ListData = {
   label: string;
   href: string;
+  id: string;
 };
 
 type ImageProps = {
@@ -32,6 +35,7 @@ type ImageProps = {
   crops?: ImageCrops[];
 };
 export interface LeadArticleProps {
+  id: string;
   headline: string;
   flag?: string;
   shortSummary?: string;
@@ -58,27 +62,36 @@ export interface LeadArticleProps {
   showTagL1?: boolean;
   hideImage?: boolean;
 }
+
 export const LeadArticle = ({
-  headline,
-  flag,
-  shortSummary,
-  tagL1,
-  images,
-  url,
-  tag,
-  imageTop,
-  hasTopBorder = true,
-  contentTop,
-  contentWidth,
-  headlineTypographyPreset,
-  loadingAspectRatio,
-  imageMarginBlockStart = 'space000',
-  textBlockMarginBlockStart = 'space040',
-  tagAndFlagMarginBlockStart = 'space040',
-  listData,
-  showTagL1,
-  hideImage
-}: LeadArticleProps) => {
+  article,
+  clickHandler
+}: {
+  article: LeadArticleProps;
+  clickHandler: ClickHandlerType;
+}) => {
+  const {
+    id,
+    headline,
+    flag,
+    shortSummary,
+    tagL1,
+    images,
+    url,
+    tag,
+    imageTop,
+    hasTopBorder = true,
+    contentTop,
+    contentWidth,
+    headlineTypographyPreset,
+    loadingAspectRatio,
+    imageMarginBlockStart = 'space000',
+    textBlockMarginBlockStart = 'space040',
+    tagAndFlagMarginBlockStart = 'space040',
+    listData,
+    showTagL1,
+    hideImage
+  } = article;
   const imageWithCorrectRatio =
     images && images.crops
       ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
@@ -113,6 +126,11 @@ export const LeadArticle = ({
       ? { xs: 'editorialHeadline040', md: 'editorialHeadline030' }
       : 'editorialHeadline040';
   const displayArticleVertical = imageTop || hideImage;
+
+  const onClick = (event: MouseEventType) => {
+    const articleForTracking = { headline, id, url };
+    articleClickTracking(event, articleForTracking, clickHandler);
+  };
 
   return (
     <CardComposable
@@ -192,6 +210,7 @@ export const LeadArticle = ({
           }}
           external={false}
           expand={!tag}
+          onClick={onClick}
         >
           {headline}
         </CardHeadlineLink>
@@ -212,7 +231,7 @@ export const LeadArticle = ({
           flag={flag}
           marginBlockStart={tagAndFlagMarginBlockStart}
         />
-        <UnorderedListItems listData={listData} />
+        <UnorderedListItems listData={listData} clickHandler={clickHandler} />
       </CardContent>
     </CardComposable>
   );

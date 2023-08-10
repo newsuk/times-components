@@ -13,10 +13,18 @@ jest.mock('newskit', () => ({
   useBreakpointKey: jest.fn().mockReturnValue('xl')
 }));
 
+const mockClickHandler = jest.fn();
+
 const threeArticles = [articles[1], articles[2], articles[3]];
 
 const renderComponentLarge = (breakpoint: BreakpointKeys) =>
-  render(<ArticleStackLarge articles={articles} breakpoint={breakpoint} />);
+  render(
+    <ArticleStackLarge
+      articles={articles}
+      breakpoint={breakpoint}
+      clickHandler={mockClickHandler}
+    />
+  );
 
 const renderComponentSmall = () =>
   render(
@@ -26,6 +34,7 @@ const renderComponentSmall = () =>
       isFullWidth={false}
       hideImage={false}
       hasTopBorder={true}
+      clickHandler={mockClickHandler}
     />
   );
 

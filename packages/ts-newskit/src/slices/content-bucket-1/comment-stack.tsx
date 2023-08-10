@@ -6,11 +6,13 @@ import {
 } from '../../components/slices/comment-card';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { AvatarDivider } from '../shared-styles';
+import { ClickHandlerType } from '../types';
 
 interface CommentStackProps {
   comments: CommentCardProps[];
+  clickHandler: ClickHandlerType;
 }
-export const CommentStack = ({ comments }: CommentStackProps) => {
+export const CommentStack = ({ comments, clickHandler }: CommentStackProps) => {
   return (
     <>
       <FullWidthBlock id="COMMENT STACK">
@@ -38,7 +40,7 @@ export const CommentStack = ({ comments }: CommentStackProps) => {
 
           return (
             <React.Fragment key={comment.headline}>
-              <CommentCard {...comment} />
+              <CommentCard article={comment} clickHandler={clickHandler} />
               {hasBorder}
             </React.Fragment>
           );
