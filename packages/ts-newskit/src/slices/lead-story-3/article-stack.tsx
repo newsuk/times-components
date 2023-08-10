@@ -32,7 +32,6 @@ export const ArticleStack = ({
                   hideImage: !screenXsAndSm,
                   imageTop: true,
                   textBlockMarginBlockStart: 'space050',
-                  loadingAspectRatio: '3:2',
                   headlineTypographyPreset:
                     breakpointKey === 'xs'
                       ? 'editorialHeadline040'
