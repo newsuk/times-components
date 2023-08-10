@@ -5,6 +5,7 @@ type ImageCrops = {
 type ListData = {
   label: string;
   href: string;
+  id: string;
 };
 
 type ImageProps = {
@@ -14,6 +15,7 @@ type ImageProps = {
   crops?: ImageCrops[];
 };
 export type ArticleProps = {
+  id: string;
   headline: string;
   flag?: string;
   standfirst?: string;

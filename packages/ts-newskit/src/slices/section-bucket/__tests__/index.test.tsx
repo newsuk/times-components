@@ -15,13 +15,19 @@ jest.mock('newskit', () => ({
   useBreakpointKey: jest.fn().mockReturnValue('xl')
 }));
 
+const mockClickHandler = jest.fn();
+
 const renderComponent = () =>
   render(
     <SectionBucket
-      articleStackOne={articleStackOne}
-      articleStackTwo={articleStackTwo}
-      articleStackThree={articleStackThree}
-      articleStackFour={articleStackFour}
+      articleStackOne={{ ...articleStackOne, clickHandler: mockClickHandler }}
+      articleStackTwo={{ ...articleStackTwo, clickHandler: mockClickHandler }}
+      articleStackThree={{
+        ...articleStackThree,
+        clickHandler: mockClickHandler
+      }}
+      articleStackFour={{ ...articleStackFour, clickHandler: mockClickHandler }}
+      clickHandler={mockClickHandler}
     />
   );
 

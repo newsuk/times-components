@@ -10,12 +10,15 @@ jest.mock('newskit', () => ({
 }));
 const { horizontalArticles, verticalArticles } = data;
 
+const mockClickHandler = jest.fn();
+
 const renderComponent = (width?: string) =>
   render(
     <ArticleStack
       {...{ horizontalArticles, verticalArticles }}
       breakpoint="lg"
       horizontalArticleContentWidth={width}
+      clickHandler={mockClickHandler}
     />
   );
 

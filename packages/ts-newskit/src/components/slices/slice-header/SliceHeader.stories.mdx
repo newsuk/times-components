@@ -3,7 +3,7 @@ import { SliceHeader } from "./index";
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../../theme';
 import { TrackingContextProvider } from '../../../utils/TrackingContextProvider';
-import analyticsStream from '../../../slices/fixtures/analytics-actions';
+import { action } from '@storybook/addon-actions';
 
 <Meta
   title="Newskit Components/Slices/SliceHeader"
@@ -27,7 +27,7 @@ Please click the 'Canvas' tab for a better viewing experience, where you can upd
 export const HeaderStory = ({ title , href}) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
   <TrackingContextProvider
-      analyticsStream={analyticsStream}
+      analyticsStream={action('analytics-action')}
       context={{
         component: 'SliceHeader',
         attrs: {

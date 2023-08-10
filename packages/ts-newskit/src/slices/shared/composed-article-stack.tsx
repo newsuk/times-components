@@ -6,15 +6,18 @@ import {
   FullWidthBlock,
   FullWidthHidden
 } from '../../components/slices/shared-styles';
+import { ClickHandlerType } from '../types';
 
 export interface LeadStory1Props {
   articles: ArticleProps[];
   breakpoint: BreakpointKeys;
+  clickHandler: ClickHandlerType;
 }
 
 export const ComposedArticleStack = ({
   breakpoint,
-  articles
+  articles,
+  clickHandler
 }: LeadStory1Props) => {
   const firstThreeArticles = articles.slice(0, 3);
   const secondTwoArticles = articles.slice(3);
@@ -34,7 +37,11 @@ export const ComposedArticleStack = ({
           />
         </FullWidthBlock>
       </FullWidthHidden>
-      <ArticleStackLarge articles={articlesArray} breakpoint={breakpoint} />
+      <ArticleStackLarge
+        articles={articlesArray}
+        breakpoint={breakpoint}
+        clickHandler={clickHandler}
+      />
       <Visible md>
         <Hidden xs sm>
           <Divider
@@ -51,6 +58,7 @@ export const ComposedArticleStack = ({
             hideImage={screenMd}
             hasTopBorder={false}
             breakpoint={breakpoint}
+            clickHandler={clickHandler}
           />
         </Block>
       </Visible>

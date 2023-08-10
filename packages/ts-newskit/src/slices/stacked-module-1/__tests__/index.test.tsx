@@ -10,8 +10,15 @@ jest.mock('newskit', () => ({
   useBreakpointKey: jest.fn().mockReturnValue('xl')
 }));
 
+const mockClickHandler = jest.fn();
+
 const renderComponent = () =>
-  render(<StackModule1 articles={stackedModule1Articles} />);
+  render(
+    <StackModule1
+      articles={stackedModule1Articles}
+      clickHandler={mockClickHandler}
+    />
+  );
 
 describe('Render StackModule 1 Slice', () => {
   test('Slice matches snapshot', () => {

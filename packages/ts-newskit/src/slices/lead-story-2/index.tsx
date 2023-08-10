@@ -16,19 +16,22 @@ import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
 import { ArticleStack } from './article-stacks';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { ArticleStackLeadStory, ComposedArticleStack } from '../shared';
+import { ClickHandlerType } from '../types';
 
 export interface LeadStory2Props {
   leadArticle: LeadArticleProps;
   articles: ArticleProps[];
   verticalArticles: LeadArticleProps[];
   horizontalArticles: LeadArticleProps[];
+  clickHandler: ClickHandlerType;
 }
 
 export const LeadStory2 = ({
   leadArticle,
   articles,
   verticalArticles,
-  horizontalArticles
+  horizontalArticles,
+  clickHandler
 }: LeadStory2Props) => {
   const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
   const breakpointKey = useBreakpointKey();
@@ -93,8 +96,11 @@ export const LeadStory2 = ({
             />
           </Visible>
           <LeadArticle
-            contentWidth={currentBreakpoint === 'xl' ? '274px' : '246px'}
-            {...modifiedLeadArticle}
+            article={{
+              ...modifiedLeadArticle,
+              contentWidth: currentBreakpoint === 'xl' ? '274px' : '246px'
+            }}
+            clickHandler={clickHandler}
           />
           {screenXsAndSm ? (
             <FullWidthBlock>
@@ -121,6 +127,7 @@ export const LeadStory2 = ({
             horizontalArticleContentWidth={
               currentBreakpoint === 'xl' ? '258px' : '230px'
             }
+            clickHandler={clickHandler}
           />
         </Block>
       </StackItem>
@@ -129,6 +136,7 @@ export const LeadStory2 = ({
           <ComposedArticleStack
             articles={modifedArticles}
             breakpoint={currentBreakpoint}
+            clickHandler={clickHandler}
           />
         </BlockItem>
       ) : (
@@ -136,6 +144,7 @@ export const LeadStory2 = ({
           mdWidth="720px"
           modifedArticles={modifedArticles}
           breakpoint={currentBreakpoint}
+          clickHandler={clickHandler}
         />
       )}
     </Stack>

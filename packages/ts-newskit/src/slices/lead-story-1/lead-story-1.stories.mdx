@@ -2,6 +2,7 @@ import { Meta, Story, Props } from '@storybook/addon-docs'
 import { TCThemeProvider, themes,GridOverlay } from '../../utils/index.tsx';
 import { LeadStory1 } from "./";
 import { leadArticle,articles,smallArticles,groupedArticles,singleArticle,articlesWithListItems } from '../fixtures/lead-story.json';
+import { action } from '@storybook/addon-actions';
 
 <Meta
   title="Newskit Slices/Lead Story 1"
@@ -23,11 +24,11 @@ This takes in a series of props, as below, to display the part of the slices.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const LeadStory1Story = ({ leadArticle,articles,theme,smallArticles,groupedArticles,singleArticle,articlesWithListItems,gridOverlay}) => (
+export const LeadStory1Story = ({ leadArticle,articles,theme,smallArticles,groupedArticles,singleArticle,articlesWithListItems,gridOverlay, clickHandler}) => (
   <TCThemeProvider theme={theme}>
     <>
       <GridOverlay show={gridOverlay} />
-       <LeadStory1 {...{ leadArticle,articles,smallArticles,groupedArticles,singleArticle,articlesWithListItems }} />
+       <LeadStory1 {...{ leadArticle,articles,smallArticles,groupedArticles,singleArticle,articlesWithListItems, clickHandler}} />
     </>
   </TCThemeProvider>
 );
@@ -43,7 +44,8 @@ LeadStory1Story.args = {
     smallArticles,
     groupedArticles,
     singleArticle,
-    articlesWithListItems
+    articlesWithListItems,
+    clickHandler: action("ClickHandler")
   }}
   argTypes={{
     theme: {

@@ -4,6 +4,7 @@ import { TextLink } from '../shared-styles';
 import { LeadArticle, LeadArticleProps } from '../lead-article/index';
 import { FullWidthBlock } from '../shared-styles/index';
 import { StyledDivider } from '../../../slices/lead-story-1/styles';
+import { ClickHandlerType } from '../../../slices/types';
 
 export interface GroupedArticleProps {
   tagL1: {
@@ -11,9 +12,14 @@ export interface GroupedArticleProps {
     href: string;
   };
   articles: LeadArticleProps[];
+  clickHandler: ClickHandlerType;
 }
 
-export const GroupedArticle = ({ articles, tagL1 }: GroupedArticleProps) => {
+export const GroupedArticle = ({
+  articles,
+  tagL1,
+  clickHandler
+}: GroupedArticleProps) => {
   const modifiedGroupedArticles = articles.map(article => ({
     ...article,
     hasTopBorder: false,
@@ -52,7 +58,7 @@ export const GroupedArticle = ({ articles, tagL1 }: GroupedArticleProps) => {
                     />
                   </FullWidthBlock>
                 )}
-                <LeadArticle {...article} />
+                <LeadArticle article={article} clickHandler={clickHandler} />
               </React.Fragment>
             );
           }

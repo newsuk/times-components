@@ -4,13 +4,16 @@ import { Article, ArticleProps } from '../../components/slices/article';
 import { ArticleDividerXL } from './styles';
 import { ScrollContainer } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
+import { ClickHandlerType } from '../types';
 
 export const ArticleStack = ({
   articles,
-  breakpoint
+  breakpoint,
+  clickHandler
 }: {
   articles: ArticleProps[];
   breakpoint: BreakpointKeys;
+  clickHandler: ClickHandlerType;
 }) => {
   const articleGrid = (
     <GridLayout
@@ -39,9 +42,12 @@ export const ArticleStack = ({
         return (
           <React.Fragment key={article.headline}>
             <Article
-              {...clearCreditsAndCaption(article)}
-              hasTopBorder={articleTopBorder}
-              hideImage={breakpoint === 'lg'}
+              article={{
+                ...clearCreditsAndCaption(article),
+                hasTopBorder: articleTopBorder,
+                hideImage: breakpoint === 'lg'
+              }}
+              clickHandler={clickHandler}
             />
             {articleBorder}
           </React.Fragment>

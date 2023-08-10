@@ -6,15 +6,18 @@ import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
+import { ClickHandlerType } from '../types';
 
 export interface ArticlesProps {
   leadArticles: LeadArticleProps[];
   breakpointKey: BreakpointKeys;
+  clickHandler: ClickHandlerType;
 }
 
 export const ArticleStack = ({
   leadArticles,
-  breakpointKey
+  breakpointKey,
+  clickHandler
 }: ArticlesProps) => {
   const modifiedArticles = leadArticles.map(leadArticle => ({
     ...leadArticle,
@@ -53,7 +56,10 @@ export const ArticleStack = ({
                 </FullWidthBlock>
               )}
               <Block marginBlock="space040">
-                <LeadArticle {...articlesWithModifiedTypography} />
+                <LeadArticle
+                  article={articlesWithModifiedTypography}
+                  clickHandler={clickHandler}
+                />
               </Block>
             </>
           );

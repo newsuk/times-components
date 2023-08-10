@@ -6,6 +6,7 @@ import {
 describe('clearCreditsAndCaptionObject', () => {
   it('should clear credits and caption of a single ArticleProps object', () => {
     const leadArticle: ArticleProps = {
+      id: '1234',
       headline: 'Example Headline',
       url: '',
       images: {
