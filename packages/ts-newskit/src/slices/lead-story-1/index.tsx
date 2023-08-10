@@ -81,7 +81,8 @@ export const LeadStory1 = ({
           ? 'editorialHeadline050'
           : 'editorialHeadline060',
     showTagL1: false,
-    hideImage: true
+    hideImage: !screenXsAndSm,
+    imageTop: true
   };
 
   const modifiedLeadArticle = {

@@ -12,26 +12,25 @@ export interface ArticlesProps {
   leadArticles: LeadArticleProps[];
   breakpointKey: BreakpointKeys;
   clickHandler: ClickHandlerType;
+  screenXsAndSm: boolean;
 }
 
 export const ArticleStack = ({
   leadArticles,
   breakpointKey,
-  clickHandler
+  clickHandler,
+  screenXsAndSm
 }: ArticlesProps) => {
-  const modifiedArticles = leadArticles.map(leadArticle => ({
-    ...leadArticle,
-    hideImage: true
-  }));
-
   return (
     <BlockNoTopMargin>
-      {modifiedArticles &&
-        modifiedArticles.map((modifiedArticle, index) => {
+      {leadArticles &&
+        leadArticles.map((modifiedArticle, index) => {
           const articlesWithModifiedTypography =
             index === 0
               ? {
                   ...modifiedArticle,
+                  hideImage: !screenXsAndSm,
+                  imageTop: true,
                   textBlockMarginBlockStart: 'space050',
                   headlineTypographyPreset:
                     breakpointKey === 'xs'
@@ -42,7 +41,8 @@ export const ArticleStack = ({
                 }
               : {
                   ...modifiedArticle,
-                  headlineTypographyPreset: 'editorialHeadline020'
+                  headlineTypographyPreset: 'editorialHeadline020',
+                  hideImage: true
                 };
           return (
             <>

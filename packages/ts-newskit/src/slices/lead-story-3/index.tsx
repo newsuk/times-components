@@ -78,6 +78,7 @@ export const LeadStory3 = ({
           leadArticles={modifedLeadArticles}
           breakpointKey={currentBreakpoint}
           clickHandler={clickHandler}
+          screenXsAndSm={screenXsAndSm}
         />
       </StackItem>
       <StackItem
