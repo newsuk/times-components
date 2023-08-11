@@ -72,7 +72,7 @@
     "@times-components/pagination": "3.12.12",
     "@times-components/tracking": "2.20.3",
     "@times-components/ts-styleguide": "1.45.0",
-    "@times-components/utils": "6.16.12",
+    "@times-components/utils": "6.16.10",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"

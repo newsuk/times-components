@@ -38,7 +38,7 @@
     "@times-components/provider-queries": "2.20.1",
     "@times-components/tracking": "2.20.3",
     "@times-components/ts-styleguide": "1.45.0",
-    "@times-components/utils": "6.16.12",
+    "@times-components/utils": "6.16.10",
     "prop-types": "15.7.2",
     "react-apollo": "2.5.5",
     "styled-components": "4.3.2"

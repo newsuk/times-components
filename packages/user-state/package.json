@@ -33,7 +33,7 @@
   "dependencies": {
     "@storybook/addon-knobs": "6.4.0",
     "@times-components/context": "1.10.30",
-    "@times-components/utils": "6.16.12",
+    "@times-components/utils": "6.16.10",
     "prop-types": "15.7.2"
   },
   "devDependencies": {

@@ -57,7 +57,7 @@
     "@times-components/markup-forest": "1.9.1",
     "@times-components/ts-components": "1.77.3",
     "@times-components/ts-styleguide": "1.45.0",
-    "@times-components/utils": "6.16.12",
+    "@times-components/utils": "6.16.10",
     "@times-components/video-label": "2.11.12",
     "prop-types": "15.7.2"
   },

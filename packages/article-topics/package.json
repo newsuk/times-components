@@ -57,7 +57,7 @@
     "@times-components/link": "3.13.0",
     "@times-components/tracking": "2.20.3",
     "@times-components/ts-styleguide": "1.45.0",
-    "@times-components/utils": "6.16.12",
+    "@times-components/utils": "6.16.10",
     "prop-types": "15.7.2"
   },
   "resolutions": {

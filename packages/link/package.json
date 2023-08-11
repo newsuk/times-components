@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@times-components/ts-styleguide": "1.45.0",
-    "@times-components/utils": "6.16.12",
+    "@times-components/utils": "6.16.10",
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-dom": "16.9.0",
