@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.72.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.71.53...@times-components/article-magazine-comment@3.72.0) (2023-08-11)
+
+
+### Features
+
+* **ARCH-00:** add url and articleID to ld+json for Parsely crawler so Parsely does not detect duplicate articles when we change the slug ([#3482](https://github.com/newsuk/times-components/issues/3482)) ([45565c8](https://github.com/newsuk/times-components/commit/45565c81a13db75b03408d744900e783bfda66cc))
+
+
+
+
+
 ## [3.71.53](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.71.52...@times-components/article-magazine-comment@3.71.53) (2023-08-11)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

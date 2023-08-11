@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.111.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.27...@times-components/article-skeleton@1.111.0) (2023-08-11)
+
+
+### Features
+
+* **ARCH-00:** add url and articleID to ld+json for Parsely crawler so Parsely does not detect duplicate articles when we change the slug ([#3482](https://github.com/newsuk/times-components/issues/3482)) ([45565c8](https://github.com/newsuk/times-components/commit/45565c81a13db75b03408d744900e783bfda66cc))
+
+
+
+
+
 ## [1.110.27](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.26...@times-components/article-skeleton@1.110.27) (2023-08-11)
 
 **Note:** Version bump only for package @times-components/article-skeleton
