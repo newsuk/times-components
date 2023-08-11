@@ -266,7 +266,8 @@ function Head({
     hasVideo,
     seoDescription,
     keywords,
-    url
+    url,
+    id
   } = article;
 
   const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
@@ -351,7 +352,9 @@ function Head({
     dateModified,
     author: authorSchema,
     articleSection: sectionname,
-    keywords: sectionNameList
+    keywords: sectionNameList,
+    articleID: id,
+    url
   };
 
   if (swgProductId) {
@@ -400,7 +403,8 @@ function Head({
     publisher: publisherSchema,
     author: authorSchema,
     liveBlogUpdate: liveBlogUpdateSchema,
-    articleSection: sectionname
+    articleSection: sectionname,
+    articleID: id
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
