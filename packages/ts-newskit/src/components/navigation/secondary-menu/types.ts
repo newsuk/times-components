@@ -8,6 +8,11 @@ export type MainMenuProp = {
   hasMoreItems: boolean;
 };
 
+export type SecondaryNavContainerProp = {
+  topDesktop: number | undefined;
+  topMobile: number | undefined;
+};
+
 export type BreakPointProp = {
   breakpointKey: string;
 };

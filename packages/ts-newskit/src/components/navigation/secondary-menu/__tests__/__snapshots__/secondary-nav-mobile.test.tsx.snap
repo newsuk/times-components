@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Secondary Menu should render snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-19u0kbr"
+  >
+    <div
+      class="css-gre9re"
+    >
+      <nav
+        aria-label="Secondary Navigation"
+        class="css-1e8qhdd"
+        data-testid="menu-container"
+        role="navigation"
+      >
+        <ul
+          role="list"
+        >
+          <div
+            class="css-11tcrto"
+          >
+            <p
+              class="css-yhevtm"
+            >
+              Home
+            </p>
+            <li
+              class="nk-menu-item css-zbkqx2"
+            >
+              <button
+                aria-expanded="false"
+                class="css-1q8vei8"
+                data-testid="menu-sub-button"
+                type="button"
+              >
+                <span
+                  class="css-vx6avn"
+                >
+                  See all
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="css-1auvcm3-EmotionIconBase ex0cdmw0"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </button>
+              <ul
+                class="css-1mm64yz"
+              />
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div
+      class="css-11l110t"
+    >
+      <nav
+        aria-label="Secondary Navigation"
+        class="css-1hyt1wq"
+        data-testid="menu-container"
+        role="navigation"
+      >
+        <ul
+          role="list"
+        >
+          <div
+            class="css-ov1ktg"
+          >
+            <li
+              class="nk-menu-item css-1e8z97h"
+            >
+              <a
+                aria-current="page"
+                class="css-8wrz8o"
+                data-testid="buttonLink"
+                href="/home"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Home
+                </span>
+              </a>
+            </li>
+            <li
+              class="nk-menu-item css-1e8z97h"
+            >
+              <a
+                aria-current="false"
+                class="css-3c5d0n"
+                data-testid="buttonLink"
+                href="/news"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  News
+                </span>
+              </a>
+            </li>
+            <li
+              class="nk-menu-item css-1e8z97h"
+            >
+              <a
+                aria-current="false"
+                class="css-3c5d0n"
+                data-testid="buttonLink"
+                href="/comment"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Comment
+                </span>
+              </a>
+            </li>
+            <li
+              class="nk-menu-item css-1e8z97h"
+            >
+              <a
+                aria-current="false"
+                class="css-3c5d0n"
+                data-testid="buttonLink"
+                href="/life-and-style"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Life & Style
+                </span>
+              </a>
+            </li>
+            <li
+              class="nk-menu-item css-1e8z97h"
+            >
+              <a
+                aria-current="false"
+                class="css-3c5d0n"
+                data-testid="buttonLink"
+                href="/arts-and-books"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Arts & Books
+                </span>
+              </a>
+            </li>
+            <li
+              class="nk-menu-item css-1e8z97h"
+            >
+              <a
+                aria-current="false"
+                class="css-3c5d0n"
+                data-testid="buttonLink"
+                href="/sport"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Sport
+                </span>
+              </a>
+            </li>
+            <li
+              class="nk-menu-item css-1e8z97h"
+            >
+              <a
+                aria-current="false"
+                class="css-3c5d0n"
+                data-testid="buttonLink"
+                href="/business-and-money"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Business & Money
+                </span>
+              </a>
+            </li>
+            <li
+              class="nk-menu-item css-1e8z97h"
+            >
+              <a
+                aria-current="false"
+                class="css-3c5d0n"
+                data-testid="buttonLink"
+                href="/puzzles"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Puzzles
+                </span>
+              </a>
+            </li>
+            <li
+              class="nk-menu-item css-1e8z97h"
+            >
+              <a
+                aria-current="false"
+                class="css-3c5d0n"
+                data-testid="buttonLink"
+                href="/magazines"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Magazines
+                </span>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <hr
+        aria-hidden="true"
+        class="css-1nvdtcj"
+        data-testid="divider"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

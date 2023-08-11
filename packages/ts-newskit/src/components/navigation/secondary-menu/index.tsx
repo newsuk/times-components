@@ -3,15 +3,20 @@ import { SecondaryNavDesktop } from './desktop';
 import { SecondaryNavMobile } from './mobile';
 import { Visible } from 'newskit';
 import { SecondaryMenuItem } from './types';
+import { SecondaryNavContainer } from './styles';
 
 interface SecondaryNavigationProps {
   data: SecondaryMenuItem[];
   pageSlug: string;
+  stickyTop?: number;
+  stickyTopDesktop?: number;
 }
 
 export const SecondaryNavigation = ({
   data,
-  pageSlug
+  pageSlug,
+  stickyTopDesktop,
+  stickyTop
 }: SecondaryNavigationProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');
@@ -38,13 +43,13 @@ export const SecondaryNavigation = ({
   };
 
   return (
-    <>
+    <SecondaryNavContainer topDesktop={stickyTopDesktop} topMobile={stickyTop}>
       <Visible sm xs>
         <SecondaryNavMobile data={data} options={options} />
       </Visible>
       <Visible md lg xl>
         <SecondaryNavDesktop data={data} options={options} />
       </Visible>
-    </>
+    </SecondaryNavContainer>
   );
 };

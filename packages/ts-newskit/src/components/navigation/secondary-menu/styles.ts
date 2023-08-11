@@ -5,9 +5,15 @@ import {
   Divider,
   Block,
   MenuSub,
-  MenuItem
+  MenuItem,
+  getMediaQueryFromTheme
 } from 'newskit';
-import { MainMenuProp, BreakPointProp } from './types';
+import {
+  MainMenuProp,
+  BreakPointProp,
+  SecondaryNavContainerProp
+} from './types';
+import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
 export const MenuDivider = styled(Divider)<BreakPointProp>`
   width: ${({ breakpointKey }) =>
@@ -27,6 +33,16 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
     justify-content: ${({ hasMoreItems }) =>
       hasMoreItems ? `space-between` : `center`};
   }
+`;
+
+export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
+  position: sticky;
+  ${({ topMobile }) => topMobile !== undefined && `top: ${topMobile}px`};
+  ${getMediaQueryFromTheme('md')} {
+    ${({ topDesktop }) => topDesktop !== undefined && `top: ${topDesktop}px`};
+  }
+  background-color: ${TheTimesLight.colors.interfaceBackground};
+  z-index: 2;
 `;
 
 export const Wrapper = styled.div`

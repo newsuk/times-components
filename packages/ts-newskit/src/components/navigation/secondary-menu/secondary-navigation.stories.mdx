@@ -25,12 +25,20 @@ An example of the `data` structure can be found in the 'Controls' section on the
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const SecondaryNavStory = ({data, pageSlug}) => (
+export const SecondaryNavStory = ({data, pageSlug, stickyTopDesktop, stickyTop }) => (
   <TCThemeProvider>
-    <SecondaryNavigation data={mainMenuItems} pageSlug={pageSlug}/>
+  <div style={{ "minHeight": "200vh" }}>
+    <div style={{ "backgroundColor": "white", "minHeight": "340px", "textAlign": "center" }}>
+      <h1>Top Content</h1>
+    </div>
+    <SecondaryNavigation data={mainMenuItems} pageSlug={pageSlug} stickyTopDesktop={stickyTopDesktop} stickyTop={stickyTop} />
+    <div style={{ "backgroundColor": "cyan", "textAlign": "center" }}>
+      <h1>Bottom Content</h1>
+    </div>
+  </div>
   </TCThemeProvider>
 );
 
-<Story name="Secondary Navigation" args={{ data: mainMenuItems, pageSlug: 'news' }}>
+<Story name="Secondary Navigation" args={{ data: mainMenuItems, pageSlug: 'news', stickyTopDesktop: 60, stickyTop: 110 }}>
   {SecondaryNavStory.bind({})}
 </Story>
