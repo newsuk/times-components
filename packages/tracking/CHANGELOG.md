@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.20.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.3...@times-components/tracking@2.20.4) (2023-08-11)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** remove script and align versions ([#3486](https://github.com/newsuk/times-components/issues/3486)) ([dec0168](https://github.com/newsuk/times-components/commit/dec016815d3c34d54c1a20d35d3b7bf2e2e5e965))
+
+
+
+
+
 ## [2.20.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.2...@times-components/tracking@2.20.3) (2023-08-10)
 
 **Note:** Version bump only for package @times-components/tracking

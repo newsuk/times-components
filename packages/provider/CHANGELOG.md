@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.5](https://github.com/newsuk/times-components/compare/@times-components/provider@1.38.4...@times-components/provider@1.38.5) (2023-08-11)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** remove script and align versions ([#3486](https://github.com/newsuk/times-components/issues/3486)) ([dec0168](https://github.com/newsuk/times-components/commit/dec016815d3c34d54c1a20d35d3b7bf2e2e5e965))
+
+
+
+
+
 ## [1.38.4](https://github.com/newsuk/times-components/compare/@times-components/provider@1.38.3...@times-components/provider@1.38.4) (2023-08-10)
 
 **Note:** Version bump only for package @times-components/provider

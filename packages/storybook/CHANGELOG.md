@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.10.4](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.10.3...@times-components/storybook@4.10.4) (2023-08-11)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** remove script and align versions ([#3486](https://github.com/newsuk/times-components/issues/3486)) ([dec0168](https://github.com/newsuk/times-components/commit/dec016815d3c34d54c1a20d35d3b7bf2e2e5e965))
+
+
+
+
+
 ## [4.10.3](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.10.2...@times-components/storybook@4.10.3) (2023-08-10)
 
 **Note:** Version bump only for package @times-components/storybook

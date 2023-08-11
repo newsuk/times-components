@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.79.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.79.0...@times-components/ts-newskit@1.79.1) (2023-08-11)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** remove script and align versions ([#3486](https://github.com/newsuk/times-components/issues/3486)) ([dec0168](https://github.com/newsuk/times-components/commit/dec016815d3c34d54c1a20d35d3b7bf2e2e5e965))
+
+
+
+
+
 # [1.79.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.78.0...@times-components/ts-newskit@1.79.0) (2023-08-11)
 
 
