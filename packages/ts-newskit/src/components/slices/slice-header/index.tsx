@@ -19,37 +19,37 @@ export const SliceHeader = ({
   iconSize = 'medium',
   padding = 'space030'
 }: SliceHeaderProps) => (
-        <Block stylePreset="sliceHeaderPreset">
-          <Stack
-            flow="horizontal-center"
-            stackDistribution="space-between"
-            paddingBlock={padding}
-          >
-            <TitleBar
-              overrides={{
-                heading: {
-                  typographyPreset: titleTypographyPreset,
-                  stylePreset: 'inkBrand010'
-                },
-                paddingInline: 'space000',
-                paddingBlock: 'space000'
-              }}
-            >
-              {title}
-            </TitleBar>
-            {href && (
-              <IconButton
-                size={iconSize}
-                overrides={{
-                  stylePreset: 'sliceIconPreset',
-                  iconSize: iconArrowSize
-                }}
-                role="link"
-                href={href}
-              >
-                <NewsKitChevronRightIcon />
-              </IconButton>
-            )}
-          </Stack>
-        </Block>
-  );
+  <Block stylePreset="sliceHeaderPreset">
+    <Stack
+      flow="horizontal-center"
+      stackDistribution="space-between"
+      paddingBlock={padding}
+    >
+      <TitleBar
+        overrides={{
+          heading: {
+            typographyPreset: titleTypographyPreset,
+            stylePreset: 'inkBrand010'
+          },
+          paddingInline: 'space000',
+          paddingBlock: 'space000'
+        }}
+      >
+        {title}
+      </TitleBar>
+      {href && (
+        <IconButton
+          size={iconSize}
+          overrides={{
+            stylePreset: 'sliceIconPreset',
+            iconSize: iconArrowSize
+          }}
+          role="link"
+          href={href}
+        >
+          <NewsKitChevronRightIcon />
+        </IconButton>
+      )}
+    </Stack>
+  </Block>
+);
