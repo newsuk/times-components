@@ -27,7 +27,6 @@
     "fix:prettier": "prettier \"src/**/*.{ts,tsx}\" \"__tests__/**/*.tsx\" --write",
     "fix:tslint": "tslint --fix --project .",
     "lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
-    "prepublishOnly": "yarn transpile && yarn bundle",
     "test:unit": "TZ=UTC jest --coverage",
     "test:unit:updatesnapshot": "TZ=UTC yarn test:unit -u",
     "watch:build": "run-s clean && run-p build:* \"build:module -- -w\"",
