@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.45.0](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.44.2...@times-components/ts-styleguide@1.45.0) (2023-08-11)
+
+
+### Features
+
+* **TMRX-1385:** Make Secondary Nav Stick under Global Nav ([#3479](https://github.com/newsuk/times-components/issues/3479)) ([410eae7](https://github.com/newsuk/times-components/commit/410eae794efb0065fa69d4e62556df68fbc629da))
+
+
+
+
+
 ## [1.44.2](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.44.1...@times-components/ts-styleguide@1.44.2) (2023-08-10)
 
 **Note:** Version bump only for package @times-components/ts-styleguide
