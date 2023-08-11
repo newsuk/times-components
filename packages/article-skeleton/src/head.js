@@ -404,7 +404,7 @@ function Head({
     author: authorSchema,
     liveBlogUpdate: liveBlogUpdateSchema,
     articleSection: sectionname,
-    articleID: articleId
+    articleID: id
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
