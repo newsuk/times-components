@@ -266,7 +266,8 @@ function Head({
     hasVideo,
     seoDescription,
     keywords,
-    url
+    url,
+    id
   } = article;
 
   const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
@@ -319,8 +320,6 @@ function Head({
     authorSchema
   );
 
-  const { id: articleId } = article;
-
   const jsonLD = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
@@ -354,7 +353,7 @@ function Head({
     author: authorSchema,
     articleSection: sectionname,
     keywords: sectionNameList,
-    articleID: articleId,
+    articleID: id,
     url
   };
 
