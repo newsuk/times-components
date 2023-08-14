@@ -15,7 +15,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
         class="css-ov1ktg"
       >
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i0pcg0"
         >
           <a
             aria-current="page"
@@ -31,7 +31,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i0pcg0"
         >
           <a
             aria-current="false"
@@ -47,7 +47,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i0pcg0"
         >
           <a
             aria-current="false"
@@ -63,7 +63,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i0pcg0"
         >
           <a
             aria-current="false"
@@ -79,7 +79,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i0pcg0"
         >
           <a
             aria-current="false"
@@ -95,7 +95,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i0pcg0"
         >
           <a
             aria-current="false"
@@ -111,7 +111,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i0pcg0"
         >
           <a
             aria-current="false"
@@ -127,7 +127,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i0pcg0"
         >
           <a
             aria-current="false"
@@ -143,7 +143,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i0pcg0"
         >
           <a
             aria-current="false"
