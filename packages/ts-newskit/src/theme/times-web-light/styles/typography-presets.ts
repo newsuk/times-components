@@ -89,7 +89,7 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '0%',
       fontStretch: 'normal'
     },
-    newPreset110: {
+    robotoBold: {
       fontFamily: 'Roboto-Regular',
       fontWeight: 800,
       fontSize: '15px',
