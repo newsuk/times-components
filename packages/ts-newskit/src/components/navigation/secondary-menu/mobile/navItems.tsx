@@ -7,7 +7,7 @@ export const NavItems: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
 }> = ({ options, data }) => {
-  const { handleSelect , isSelected} = options;
+  const { handleSelect , isSelected } = options;
 
   return (
     <NavItemsContainer>
@@ -26,7 +26,7 @@ export const NavItems: React.FC<{
           onClick={() => handleSelect(slug)}
           key={slug}
         >
-        {title}
+         {title}
         </MenuItem>
       ))}
     </NavItemsContainer>
