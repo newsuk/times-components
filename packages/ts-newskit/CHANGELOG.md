@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.80.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.79.1...@times-components/ts-newskit@1.80.0) (2023-08-15)
+
+
+### Features
+
+* **TMRX-1386:** Fixed inconsistent padding between elements in L2 Nav ([#3488](https://github.com/newsuk/times-components/issues/3488)) ([6e814cf](https://github.com/newsuk/times-components/commit/6e814cfe9443cb52d544aad6b1cbbcbb8e53aa39))
+
+
+
+
+
 ## [1.79.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.79.0...@times-components/ts-newskit@1.79.1) (2023-08-11)
 
 
