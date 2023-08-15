@@ -11,7 +11,8 @@ import {
 import {
   MainMenuProp,
   BreakPointProp,
-  SecondaryNavContainerProp
+  SecondaryNavContainerProp,
+  NavItemMobileContainerProp
 } from './types';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
@@ -94,4 +95,8 @@ export const NavItemsContainer = styled.div`
   right: 0;
   z-index: 1;
   ${getColorCssFromTheme('backgroundColor', 'white')};
+`;
+
+export const NavItemMobileContainer = styled.div<NavItemMobileContainerProp>`
+    ${({ withScroll }) => withScroll && `min-height:'calc(100vh -110px)'`}
 `;

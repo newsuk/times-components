@@ -10,13 +10,17 @@ interface SecondaryNavigationProps {
   pageSlug: string;
   stickyTop?: number;
   stickyTopDesktop?: number;
+  onClick?: (isExpanded: boolean) => void
+  withScroll?: boolean
 }
 
 export const SecondaryNavigation = ({
   data,
   pageSlug,
   stickyTopDesktop,
-  stickyTop
+  stickyTop,
+  onClick,
+  withScroll = false
 }: SecondaryNavigationProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');
@@ -45,7 +49,7 @@ export const SecondaryNavigation = ({
   return (
     <SecondaryNavContainer topDesktop={stickyTopDesktop} topMobile={stickyTop}>
       <Visible sm xs>
-        <SecondaryNavMobile data={data} options={options} />
+        <SecondaryNavMobile data={data} options={options} onClick={onClick} withScroll={withScroll}/>
       </Visible>
       <Visible md lg xl>
         <SecondaryNavDesktop data={data} options={options} />
