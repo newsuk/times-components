@@ -7,7 +7,9 @@ const hasAccessLoggedInUser = userState =>
   userState.hasAccess && userState.isLoggedIn;
 
 const isMeteredUser = userState =>
-  userState.isMetered || userState.isLightPackUser;
+  userState.isMetered ||
+  userState.isLightPackUser ||
+  userState.isRegisteredUser;
 
 const hasAccessLoggedInNonMeteredUser = userState =>
   hasAccessLoggedInUser(userState) && !isMeteredUser(userState);
