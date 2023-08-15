@@ -19,7 +19,7 @@ export const SecondaryNavMobile: React.FC<{
     useEffect(() => {
         if (navRef?.current) {
             if (
-                window.innerHeight >
+                window.innerHeight <=
                 navRef.current.getBoundingClientRect().bottom
             ) {
                 setHeight(
@@ -28,9 +28,9 @@ export const SecondaryNavMobile: React.FC<{
                         navRef.current.getBoundingClientRect().top
                     }px`
                 );
-            } else setHeight('auto');
+            } else setHeight('100vh');
         }
-    }, [navRef.current]);
+    }, [navRef?.current]);
 
     return (
         <Menu
