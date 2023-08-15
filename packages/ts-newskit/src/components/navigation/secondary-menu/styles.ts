@@ -98,5 +98,6 @@ export const NavItemsContainer = styled.div`
 `;
 
 export const NavItemMobileContainer = styled.div<NavItemMobileContainerProp>`
-    ${({ withScroll }) => withScroll && `min-height:'calc(100vh -110px)'`}
-`;
+    height:  ${({ height }) => `${height}px`};
+    overflow-y: ${({ withScroll }) => `${withScroll && 'scroll'}`};
+    `;
