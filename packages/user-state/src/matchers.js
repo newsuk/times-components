@@ -13,20 +13,12 @@ const hasAccessLoggedInNonMeteredUser = userState =>
   hasAccessLoggedInUser(userState) && !isMeteredUser(userState);
 
 const hasAccessLoggedInMeteredUser = userState =>
-  hasAccessLoggedInUser(userState) &&
-  isMeteredUser(userState) &&
-  userState.isRegisteredUser;
-
-const hasAccessRegisteredUser = userState =>
-  hasAccessLoggedInOrSharedUser(userState) && !userState.isRegisteredUser;
-
-const hasAccessLoggedInRegisteredUser = userState =>
-  hasAccessLoggedInNonMeteredUser(userState) && !userState.isRegisteredUser;
+  hasAccessLoggedInUser(userState) && isMeteredUser(userState);
 
 /* Entitlements */
 
 export const showSaveAndShareBar = userState =>
-  hasAccessRegisteredUser(userState);
+  hasAccessLoggedInOrSharedUser(userState);
 
 export const showArticleExtras = userState =>
   hasAccessLoggedInOrSharedUser(userState);
@@ -41,7 +33,7 @@ export const showTokenisedEmailShare = userState =>
   hasAccessLoggedInNonMeteredUser(userState);
 
 export const showCommentingModule = userState =>
-  hasAccessLoggedInRegisteredUser(userState);
+  hasAccessLoggedInNonMeteredUser(userState);
 
 export const showJoinTheConversationDialog = userState =>
   hasAccessLoggedInMeteredUser(userState);
