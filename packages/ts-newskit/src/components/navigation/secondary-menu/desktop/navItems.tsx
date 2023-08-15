@@ -14,8 +14,8 @@ export const NavItems: React.FC<{
       {data.slice(0, hasMenuItem).map(({ title, slug, url }) => (
         <StyledMenuItemsDesktop
           overrides={{
-            paddingInlineStart: '6px',
-            paddingInlineEnd: '6px',
+            paddingInlineStart: '16px',
+            paddingInlineEnd: '16px',
             stylePreset: 'menuItemDesktop',
             typographyPreset: 'newPreset040'
           }}
