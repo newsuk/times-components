@@ -8,8 +8,8 @@ export interface ArticleTileInfoProps {
   expirableFlag?: string;
   contentType?: string;
   articleLabel?: string;
-  marginBottom?: string;
-  marginTop?: string;
+  marginBlockEnd?: string;
+  marginBlockStart?: string;
 }
 
 const CustomTextBlock = ({
@@ -55,8 +55,8 @@ export const ArticleTileInfo = ({
   expirableFlag,
   contentType,
   articleLabel,
-  marginTop = 'space000',
-  marginBottom = 'space000'
+  marginBlockStart = 'space000',
+  marginBlockEnd = 'space000'
 }: ArticleTileInfoProps) => {
   const hasTag = Boolean(contentType);
   const hasExpirableFlag = Boolean(expirableFlag && expirableFlag !== '');
@@ -72,8 +72,8 @@ export const ArticleTileInfo = ({
 
   return (
     <StyledBlock
-      marginBlockStart={marginTop}
-      marginBlockEnd={marginBottom}
+      marginBlockStart={marginBlockStart}
+      marginBlockEnd={marginBlockEnd}
       hasVideoIcon={hasVideoIcon}
     >
       {isLiveTag ? (

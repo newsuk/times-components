@@ -94,8 +94,7 @@ export const Article = ({
 
   const CardMediaComponent = isLeadImage ? FullWidthCardMediaMob : CardMedia;
 
-  const titleMarginBlockStart =
-    imageRight || hideImage ? 'space000' : 'space040';
+  const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
     images &&
     images.crops &&
@@ -169,7 +168,7 @@ export const Article = ({
             contentType={contentType}
             expirableFlag={expirableFlag}
             articleLabel={articleLabel}
-            marginTop={hideImage || imageRight ? 'space000' : 'space040'}
+            marginBlockStart={marginBlockStart}
           />
           <CardHeadlineLink
             href={url}
@@ -178,7 +177,7 @@ export const Article = ({
               typographyPreset: titleTypographyPreset,
               marginBlockStart: hasArticleTileInfo
                 ? 'space020'
-                : titleMarginBlockStart
+                : marginBlockStart
             }}
             external={false}
             onClick={onClick}
