@@ -7,7 +7,7 @@ export const NavItems: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
 }> = ({ options, data }) => {
-  const { handleSelect , isSelected } = options;
+  const { handleSelect, isSelected } = options;
 
   return (
     <NavItemsContainer>
@@ -19,14 +19,15 @@ export const NavItems: React.FC<{
             marginBlockStart: '-2px',
             marginInlineEnd: '-2px',
             stylePreset: 'secondaryMenuItem',
-            typographyPreset: isSelected === title ? 'robotoBold' : 'newPreset020'
+            typographyPreset:
+              isSelected === title ? 'robotoBold' : 'newPreset020'
           }}
           href={url}
           id={`vertical-${slug}`}
           onClick={() => handleSelect(slug)}
           key={slug}
         >
-         {title}
+          {title}
         </MenuItem>
       ))}
     </NavItemsContainer>
