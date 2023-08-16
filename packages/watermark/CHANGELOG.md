@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.35](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.10.34...@times-components/watermark@2.10.35) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
 ## [2.10.34](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.10.33...@times-components/watermark@2.10.34) (2023-08-11)
 
 **Note:** Version bump only for package @times-components/watermark

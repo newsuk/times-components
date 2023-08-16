@@ -15,11 +15,11 @@ exports[`Create Menu should render snapshot 1`] = `
         class="css-ov1ktg"
       >
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i1v9fb"
         >
           <a
             aria-current="page"
-            class="css-8wrz8o"
+            class="css-np1loc"
             data-testid="buttonLink"
             href="/home"
           >
@@ -31,11 +31,11 @@ exports[`Create Menu should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i1v9fb"
         >
           <a
             aria-current="false"
-            class="css-3c5d0n"
+            class="css-ltup8m"
             data-testid="buttonLink"
             href="/news"
           >
@@ -47,11 +47,11 @@ exports[`Create Menu should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i1v9fb"
         >
           <a
             aria-current="false"
-            class="css-3c5d0n"
+            class="css-ltup8m"
             data-testid="buttonLink"
             href="/comment"
           >
@@ -63,11 +63,11 @@ exports[`Create Menu should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i1v9fb"
         >
           <a
             aria-current="false"
-            class="css-3c5d0n"
+            class="css-ltup8m"
             data-testid="buttonLink"
             href="/life-and-style"
           >
@@ -79,11 +79,11 @@ exports[`Create Menu should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i1v9fb"
         >
           <a
             aria-current="false"
-            class="css-3c5d0n"
+            class="css-ltup8m"
             data-testid="buttonLink"
             href="/arts-and-books"
           >
@@ -95,11 +95,11 @@ exports[`Create Menu should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i1v9fb"
         >
           <a
             aria-current="false"
-            class="css-3c5d0n"
+            class="css-ltup8m"
             data-testid="buttonLink"
             href="/sport"
           >
@@ -111,11 +111,11 @@ exports[`Create Menu should render snapshot 1`] = `
           </a>
         </li>
         <li
-          class="nk-menu-item css-1e8z97h"
+          class="nk-menu-item css-1i1v9fb"
         >
           <a
             aria-current="false"
-            class="css-3c5d0n"
+            class="css-ltup8m"
             data-testid="buttonLink"
             href="/business-and-money"
           >
@@ -128,7 +128,7 @@ exports[`Create Menu should render snapshot 1`] = `
         </li>
       </div>
       <li
-        class="nk-menu-item css-1e8z97h"
+        class="nk-menu-item css-1i1v9fb"
       >
         <button
           aria-expanded="false"
