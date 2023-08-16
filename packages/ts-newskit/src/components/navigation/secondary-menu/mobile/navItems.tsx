@@ -19,7 +19,7 @@ export const NavItems: React.FC<{
             marginBlockStart: '-2px',
             marginInlineEnd: '-2px',
             stylePreset: 'secondaryMenuItem',
-            typographyPreset: isSelected === title ? 'robotoBold':'newPreset020'
+            typographyPreset: isSelected === title ? 'robotoBold' : 'newPreset020'
           }}
           href={url}
           id={`vertical-${slug}`}
