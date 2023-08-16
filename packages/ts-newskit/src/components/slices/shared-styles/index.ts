@@ -8,7 +8,8 @@ import {
   getSpacingCssFromTheme,
   getMediaQueryFromTheme,
   LinkInline,
-  Hidden
+  Hidden,
+  TextBlock
 } from 'newskit';
 
 export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
@@ -69,4 +70,8 @@ export const StyledSpan = styled.span<{ hasCaption: boolean }>`
       : getSpacingCssFromTheme(setInlinePaddingStart, 'space000')};
   font-weight: 300;
   font-size: 1.2rem;
+`;
+
+export const StyledTextBlock = styled(TextBlock)`
+  border-radius: 2px;
 `;

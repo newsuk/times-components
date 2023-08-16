@@ -24,17 +24,13 @@ This takes in a series of props, as below, to display the part of the slices.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const GroupedArticleStory = ({tagL1 , articles, clickHandler}) => (
+export const GroupedArticleStory = ({articles, clickHandler}) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <GroupedArticle {...{ tagL1 , articles, clickHandler}} />
+    <GroupedArticle {...{ articles, clickHandler}} />
   </NewsKitProvider>
 );
 
 <Story name="GroupedArticle" args={{ 
-  tagL1:{
-    label:"TAG",
-    href:"/"
-  }, 
   articles:[
   {
     "headline": "Short title of the card describing the main content",

@@ -56,6 +56,7 @@ export const LeadStory3 = ({
     ...leadArticle,
     headlineTypographyPreset: 'editorialHeadline040',
     imageTop: true,
+    isLeadImage: true,
     hasTopBorder: false,
     loadingAspectRatio: '4:5',
     shortSummary: undefined

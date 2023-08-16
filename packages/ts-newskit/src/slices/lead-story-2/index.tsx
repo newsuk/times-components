@@ -57,6 +57,7 @@ export const LeadStory2 = ({
     ...leadArticle,
     imageTop: !!screenXsAndSm,
     hasTopBorder: false,
+    isLeadImage: true,
     textBlockMarginBlockStart: 'space050',
     headlineTypographyPreset:
       currentBreakpoint === 'xs'

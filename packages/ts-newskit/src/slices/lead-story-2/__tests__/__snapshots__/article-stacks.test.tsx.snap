@@ -27,6 +27,29 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               <div
                 class="css-gpke1l"
               >
+                <div
+                  class="css-q7a4fs"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    EXCLUSIVE
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    REVIEW
+                  </span>
+                </div>
                 <a
                   class="css-10h0i3c"
                   href="https://www.thetimes.co.uk"
@@ -104,6 +127,29 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               <div
                 class="css-gpke1l"
               >
+                <div
+                  class="css-q7a4fs"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    EXCLUSIVE
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    REVIEW
+                  </span>
+                </div>
                 <a
                   class="css-10h0i3c"
                   href="https://www.thetimes.co.uk"
@@ -215,6 +261,29 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-q7a4fs"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  EXCLUSIVE
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  REVIEW
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
@@ -317,6 +386,29 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-q7a4fs"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  EXCLUSIVE
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  REVIEW
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
@@ -405,6 +497,29 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               <div
                 class="css-gpke1l"
               >
+                <div
+                  class="css-q7a4fs"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    EXCLUSIVE
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    REVIEW
+                  </span>
+                </div>
                 <a
                   class="css-10h0i3c"
                   href="https://www.thetimes.co.uk"
@@ -482,6 +597,29 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               <div
                 class="css-gpke1l"
               >
+                <div
+                  class="css-q7a4fs"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    EXCLUSIVE
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    REVIEW
+                  </span>
+                </div>
                 <a
                   class="css-10h0i3c"
                   href="https://www.thetimes.co.uk"
@@ -593,6 +731,29 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-q7a4fs"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  EXCLUSIVE
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  REVIEW
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
@@ -695,6 +856,29 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-q7a4fs"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  EXCLUSIVE
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  REVIEW
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"

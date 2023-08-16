@@ -31,6 +31,7 @@ export const ArticleStack = ({
                   ...modifiedArticle,
                   hideImage: !screenXsAndSm,
                   imageTop: true,
+                  isLeadImage: screenXsAndSm,
                   textBlockMarginBlockStart: 'space050',
                   headlineTypographyPreset:
                     breakpointKey === 'xs'
