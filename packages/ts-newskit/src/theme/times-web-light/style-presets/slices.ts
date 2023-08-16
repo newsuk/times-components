@@ -13,12 +13,6 @@ export const sliceStylePresets = {
       borderColor: '{{colors.interface060}}'
     }
   },
-  expirableFlagLivePreset: {
-    base: {
-      backgroundColor: '{{colors.interactiveNegative030}}',
-      color: '{{colors.interactiveInverse030}}'
-    }
-  },
   expirableFlagPreset: {
     base: {
       color: '{{colors.interactiveNegative030}}'

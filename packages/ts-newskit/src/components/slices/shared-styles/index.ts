@@ -11,6 +11,7 @@ import {
   Hidden,
   TextBlock
 } from 'newskit';
+import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
 export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
   ${({ $color }) => getColorCssFromTheme('color', $color || 'inkContrast')};
@@ -73,6 +74,8 @@ export const StyledSpan = styled.span<{ hasCaption: boolean }>`
 `;
 
 export const StyledTextBlock = styled(TextBlock)`
+  background-color: ${TheTimesLight.colors.interactiveNegative030};
+  color: ${TheTimesLight.colors.interactiveInverse030};
   border-radius: 2px;
 `;
 
