@@ -89,6 +89,14 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '0%',
       fontStretch: 'normal'
     },
+    robotoBold: {
+      fontFamily: 'Roboto-Regular',
+      fontWeight: 800,
+      fontSize: '15px',
+      lineHeight: '1.000',
+      letterSpacing: '0%',
+      fontStretch: 'normal'
+    },
     editorialHeadline035: {
       fontFamily: 'TimesModern-Regular',
       fontWeight: 700,
