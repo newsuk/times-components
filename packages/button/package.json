@@ -1,6 +1,6 @@
 {
   "name": "@times-components/button",
-  "version": "2.10.14",
+  "version": "2.10.15",
   "description": "Button component",
   "main": "dist/button",
   "dev": "src/button",
@@ -35,8 +35,8 @@
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.1",
-    "@times-components/jest-serializer": "3.10.1",
-    "@times-components/storybook": "4.10.5",
+    "@times-components/jest-serializer": "3.11.0",
+    "@times-components/storybook": "4.10.6",
     "@times-components/test-utils": "2.4.1",
     "@times-components/webpack-configurator": "2.1.0",
     "babel-jest": "24.8.0",
@@ -52,7 +52,7 @@
   },
   "dependencies": {
     "@times-components/ts-styleguide": "1.45.2",
-    "@times-components/utils": "6.16.14",
+    "@times-components/utils": "6.16.15",
     "prop-types": "15.7.2"
   },
   "resolutions": {
