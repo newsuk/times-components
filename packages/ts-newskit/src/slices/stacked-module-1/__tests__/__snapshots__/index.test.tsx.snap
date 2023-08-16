@@ -51,12 +51,12 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  NEW
                 </span>
                 <div
                   class="css-lew009"
@@ -70,7 +70,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  PROFILE
                 </span>
               </div>
               <a
@@ -137,12 +137,12 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -237,7 +237,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
@@ -256,7 +256,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a
@@ -323,7 +323,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
@@ -428,12 +428,12 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -498,12 +498,12 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  NEW
                 </span>
                 <div
                   class="css-lew009"
@@ -582,7 +582,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
@@ -652,12 +652,12 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -671,7 +671,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a
@@ -787,12 +787,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  NEW
                 </span>
                 <div
                   class="css-lew009"
@@ -806,7 +806,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  PROFILE
                 </span>
               </div>
               <a
@@ -873,12 +873,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -973,7 +973,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
@@ -992,7 +992,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a
@@ -1059,7 +1059,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
@@ -1164,12 +1164,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -1234,12 +1234,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  NEW
                 </span>
                 <div
                   class="css-lew009"
@@ -1318,7 +1318,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
@@ -1388,12 +1388,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -1407,7 +1407,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a
@@ -1523,12 +1523,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  NEW
                 </span>
                 <div
                   class="css-lew009"
@@ -1542,7 +1542,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  PROFILE
                 </span>
               </div>
               <a
@@ -1601,12 +1601,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -1693,7 +1693,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
@@ -1712,7 +1712,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a
@@ -1771,7 +1771,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
@@ -1892,12 +1892,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -1970,12 +1970,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  NEW
                 </span>
                 <div
                   class="css-lew009"
@@ -2062,7 +2062,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
@@ -2140,12 +2140,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -2159,7 +2159,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a
@@ -2275,12 +2275,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  NEW
                 </span>
                 <div
                   class="css-lew009"
@@ -2294,7 +2294,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  PROFILE
                 </span>
               </div>
               <a
@@ -2353,12 +2353,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -2445,7 +2445,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
@@ -2464,7 +2464,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a
@@ -2523,7 +2523,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
@@ -2644,12 +2644,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -2722,12 +2722,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  NEW
                 </span>
                 <div
                   class="css-lew009"
@@ -2814,7 +2814,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
@@ -2892,12 +2892,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-diffbd"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -2911,7 +2911,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a

@@ -28,12 +28,12 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="css-q7a4fs"
+                  class="css-1lqahog"
                 >
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    NEW
                   </span>
                   <div
                     class="css-lew009"
@@ -47,7 +47,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    PROFILE
                   </span>
                 </div>
                 <a
@@ -128,7 +128,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="css-q7a4fs"
+                  class="css-1lqahog"
                 >
                   <span
                     class="css-1g58ijf"
@@ -262,12 +262,12 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="css-q7a4fs"
+                class="css-1lqahog"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  NEW
                 </span>
                 <div
                   class="css-lew009"
@@ -387,7 +387,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="css-q7a4fs"
+                class="css-1lqahog"
               >
                 <span
                   class="css-1g58ijf"
@@ -406,7 +406,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  INTERVIEW
                 </span>
               </div>
               <a
@@ -498,12 +498,12 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="css-q7a4fs"
+                  class="css-1lqahog"
                 >
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    NEW
                   </span>
                   <div
                     class="css-lew009"
@@ -517,7 +517,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    PROFILE
                   </span>
                 </div>
                 <a
@@ -598,7 +598,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="css-q7a4fs"
+                  class="css-1lqahog"
                 >
                   <span
                     class="css-1g58ijf"
@@ -732,12 +732,12 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="css-q7a4fs"
+                class="css-1lqahog"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  NEW
                 </span>
                 <div
                   class="css-lew009"
@@ -857,7 +857,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="css-q7a4fs"
+                class="css-1lqahog"
               >
                 <span
                   class="css-1g58ijf"
@@ -876,7 +876,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  INTERVIEW
                 </span>
               </div>
               <a

@@ -57,7 +57,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
             class="css-gpke1l"
           >
             <div
-              class="css-1l8qede"
+              class="css-u0xlwu"
             >
               <span
                 class="css-nf7qod"
@@ -76,7 +76,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
               <span
                 class="css-btda8w"
               >
-                REVIEW
+                INTERVIEW
               </span>
               <div
                 class="css-lew009"
@@ -178,12 +178,12 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                       class="css-gpke1l"
                     >
                       <div
-                        class="css-q7a4fs"
+                        class="css-1lqahog"
                       >
                         <span
                           class="css-1g58ijf"
                         >
-                          EXCLUSIVE
+                          NEW
                         </span>
                         <div
                           class="css-lew009"
@@ -197,7 +197,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                         <span
                           class="css-btda8w"
                         >
-                          REVIEW
+                          PROFILE
                         </span>
                       </div>
                       <a
@@ -278,7 +278,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                       class="css-gpke1l"
                     >
                       <div
-                        class="css-q7a4fs"
+                        class="css-1lqahog"
                       >
                         <span
                           class="css-1g58ijf"
@@ -412,12 +412,12 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                     class="css-gpke1l"
                   >
                     <div
-                      class="css-q7a4fs"
+                      class="css-1lqahog"
                     >
                       <span
                         class="css-1g58ijf"
                       >
-                        EXCLUSIVE
+                        NEW
                       </span>
                       <div
                         class="css-lew009"
@@ -537,7 +537,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                     class="css-gpke1l"
                   >
                     <div
-                      class="css-q7a4fs"
+                      class="css-1lqahog"
                     >
                       <span
                         class="css-1g58ijf"
@@ -556,7 +556,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-btda8w"
                       >
-                        REVIEW
+                        INTERVIEW
                       </span>
                     </div>
                     <a
@@ -666,12 +666,12 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
               class="css-13byt3y"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -685,7 +685,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a
@@ -774,12 +774,12 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
               class="css-13byt3y"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -793,7 +793,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  PROFILE
                 </span>
               </div>
               <a
@@ -849,7 +849,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
               class="css-13byt3y"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
@@ -943,12 +943,12 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
               class="css-13byt3y"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -962,7 +962,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a
@@ -1040,12 +1040,12 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
               class="css-13byt3y"
             >
               <div
-                class="css-1vuk75f"
+                class="css-122i4mv"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  BREAKING
                 </span>
                 <div
                   class="css-lew009"
@@ -1059,7 +1059,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a
@@ -1161,12 +1161,12 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                     class="css-13byt3y"
                   >
                     <div
-                      class="css-1vuk75f"
+                      class="css-122i4mv"
                     >
                       <span
                         class="css-1g58ijf"
                       >
-                        EXCLUSIVE
+                        UPDATED
                       </span>
                       <div
                         class="css-lew009"
@@ -1180,7 +1180,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-btda8w"
                       >
-                        REVIEW
+                        Q&A
                       </span>
                     </div>
                     <a
@@ -1258,12 +1258,12 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                     class="css-13byt3y"
                   >
                     <div
-                      class="css-1vuk75f"
+                      class="css-122i4mv"
                     >
                       <span
                         class="css-1g58ijf"
                       >
-                        EXCLUSIVE
+                        BREAKING
                       </span>
                       <div
                         class="css-lew009"
@@ -1277,7 +1277,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-btda8w"
                       >
-                        REVIEW
+                        Q&A
                       </span>
                     </div>
                     <a
@@ -1397,7 +1397,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             class="css-gpke1l"
           >
             <div
-              class="css-1l8qede"
+              class="css-u0xlwu"
             >
               <span
                 class="css-nf7qod"
@@ -1416,7 +1416,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-btda8w"
               >
-                REVIEW
+                INTERVIEW
               </span>
               <div
                 class="css-lew009"
@@ -1518,12 +1518,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                       class="css-gpke1l"
                     >
                       <div
-                        class="css-q7a4fs"
+                        class="css-1lqahog"
                       >
                         <span
                           class="css-1g58ijf"
                         >
-                          EXCLUSIVE
+                          NEW
                         </span>
                         <div
                           class="css-lew009"
@@ -1537,7 +1537,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-btda8w"
                         >
-                          REVIEW
+                          PROFILE
                         </span>
                       </div>
                       <a
@@ -1618,7 +1618,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                       class="css-gpke1l"
                     >
                       <div
-                        class="css-q7a4fs"
+                        class="css-1lqahog"
                       >
                         <span
                           class="css-1g58ijf"
@@ -1752,12 +1752,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     class="css-gpke1l"
                   >
                     <div
-                      class="css-q7a4fs"
+                      class="css-1lqahog"
                     >
                       <span
                         class="css-1g58ijf"
                       >
-                        EXCLUSIVE
+                        NEW
                       </span>
                       <div
                         class="css-lew009"
@@ -1877,7 +1877,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     class="css-gpke1l"
                   >
                     <div
-                      class="css-q7a4fs"
+                      class="css-1lqahog"
                     >
                       <span
                         class="css-1g58ijf"
@@ -1896,7 +1896,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-btda8w"
                       >
-                        REVIEW
+                        INTERVIEW
                       </span>
                     </div>
                     <a
@@ -2003,12 +2003,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             class="css-diffbd"
           >
             <div
-              class="css-env9oy"
+              class="css-i1f2uq"
             >
               <span
                 class="css-1g58ijf"
               >
-                EXCLUSIVE
+                UPDATED
               </span>
               <div
                 class="css-lew009"
@@ -2022,7 +2022,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-btda8w"
               >
-                REVIEW
+                Q&A
               </span>
             </div>
             <a
@@ -2103,12 +2103,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             class="css-diffbd"
           >
             <div
-              class="css-env9oy"
+              class="css-i1f2uq"
             >
               <span
                 class="css-1g58ijf"
               >
-                EXCLUSIVE
+                UPDATED
               </span>
               <div
                 class="css-lew009"
@@ -2122,7 +2122,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-btda8w"
               >
-                REVIEW
+                PROFILE
               </span>
             </div>
             <a
@@ -2170,7 +2170,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             class="css-diffbd"
           >
             <div
-              class="css-env9oy"
+              class="css-i1f2uq"
             >
               <span
                 class="css-1g58ijf"
@@ -2257,12 +2257,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-diffbd"
                 >
                   <div
-                    class="css-1vuk75f"
+                    class="css-122i4mv"
                   >
                     <span
                       class="css-1g58ijf"
                     >
-                      EXCLUSIVE
+                      UPDATED
                     </span>
                     <div
                       class="css-lew009"
@@ -2276,7 +2276,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      REVIEW
+                      Q&A
                     </span>
                   </div>
                   <a
@@ -2334,12 +2334,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-diffbd"
                 >
                   <div
-                    class="css-1vuk75f"
+                    class="css-122i4mv"
                   >
                     <span
                       class="css-1g58ijf"
                     >
-                      EXCLUSIVE
+                      BREAKING
                     </span>
                     <div
                       class="css-lew009"
@@ -2353,7 +2353,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      REVIEW
+                      Q&A
                     </span>
                   </div>
                   <a
@@ -2472,7 +2472,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             class="css-gpke1l"
           >
             <div
-              class="css-1l8qede"
+              class="css-u0xlwu"
             >
               <span
                 class="css-nf7qod"
@@ -2491,7 +2491,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-btda8w"
               >
-                REVIEW
+                INTERVIEW
               </span>
               <div
                 class="css-lew009"
@@ -2594,12 +2594,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     class="css-gpke1l"
                   >
                     <div
-                      class="css-q7a4fs"
+                      class="css-1lqahog"
                     >
                       <span
                         class="css-1g58ijf"
                       >
-                        EXCLUSIVE
+                        NEW
                       </span>
                       <div
                         class="css-lew009"
@@ -2613,7 +2613,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-btda8w"
                       >
-                        REVIEW
+                        PROFILE
                       </span>
                     </div>
                     <a
@@ -2694,7 +2694,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     class="css-gpke1l"
                   >
                     <div
-                      class="css-q7a4fs"
+                      class="css-1lqahog"
                     >
                       <span
                         class="css-1g58ijf"
@@ -2819,12 +2819,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-gpke1l"
                 >
                   <div
-                    class="css-q7a4fs"
+                    class="css-1lqahog"
                   >
                     <span
                       class="css-1g58ijf"
                     >
-                      EXCLUSIVE
+                      NEW
                     </span>
                     <div
                       class="css-lew009"
@@ -2939,7 +2939,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-gpke1l"
                 >
                   <div
-                    class="css-q7a4fs"
+                    class="css-1lqahog"
                   >
                     <span
                       class="css-1g58ijf"
@@ -2958,7 +2958,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      REVIEW
+                      INTERVIEW
                     </span>
                   </div>
                   <a
@@ -3071,12 +3071,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <div
-                  class="css-env9oy"
+                  class="css-i1f2uq"
                 >
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    UPDATED
                   </span>
                   <div
                     class="css-lew009"
@@ -3090,7 +3090,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    Q&A
                   </span>
                 </div>
                 <a
@@ -3171,12 +3171,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <div
-                  class="css-env9oy"
+                  class="css-i1f2uq"
                 >
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    UPDATED
                   </span>
                   <div
                     class="css-lew009"
@@ -3190,7 +3190,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    PROFILE
                   </span>
                 </div>
                 <a
@@ -3238,7 +3238,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <div
-                  class="css-env9oy"
+                  class="css-i1f2uq"
                 >
                   <span
                     class="css-1g58ijf"
@@ -3324,12 +3324,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <div
-                  class="css-env9oy"
+                  class="css-i1f2uq"
                 >
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    UPDATED
                   </span>
                   <div
                     class="css-lew009"
@@ -3343,7 +3343,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    Q&A
                   </span>
                 </div>
                 <a
@@ -3413,12 +3413,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <div
-                  class="css-env9oy"
+                  class="css-i1f2uq"
                 >
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    BREAKING
                   </span>
                   <div
                     class="css-lew009"
@@ -3432,7 +3432,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    Q&A
                   </span>
                 </div>
                 <a
@@ -3532,12 +3532,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-diffbd"
                 >
                   <div
-                    class="css-env9oy"
+                    class="css-i1f2uq"
                   >
                     <span
                       class="css-1g58ijf"
                     >
-                      EXCLUSIVE
+                      UPDATED
                     </span>
                     <div
                       class="css-lew009"
@@ -3551,7 +3551,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      REVIEW
+                      Q&A
                     </span>
                   </div>
                   <a
@@ -3620,12 +3620,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-diffbd"
                 >
                   <div
-                    class="css-env9oy"
+                    class="css-i1f2uq"
                   >
                     <span
                       class="css-1g58ijf"
                     >
-                      EXCLUSIVE
+                      BREAKING
                     </span>
                     <div
                       class="css-lew009"
@@ -3639,7 +3639,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      REVIEW
+                      Q&A
                     </span>
                   </div>
                   <a
@@ -3758,7 +3758,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
             class="css-gpke1l"
           >
             <div
-              class="css-1l8qede"
+              class="css-u0xlwu"
             >
               <span
                 class="css-nf7qod"
@@ -3777,7 +3777,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-btda8w"
               >
-                REVIEW
+                INTERVIEW
               </span>
               <div
                 class="css-lew009"
@@ -3880,12 +3880,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     class="css-gpke1l"
                   >
                     <div
-                      class="css-q7a4fs"
+                      class="css-1lqahog"
                     >
                       <span
                         class="css-1g58ijf"
                       >
-                        EXCLUSIVE
+                        NEW
                       </span>
                       <div
                         class="css-lew009"
@@ -3899,7 +3899,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-btda8w"
                       >
-                        REVIEW
+                        PROFILE
                       </span>
                     </div>
                     <a
@@ -3980,7 +3980,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     class="css-gpke1l"
                   >
                     <div
-                      class="css-q7a4fs"
+                      class="css-1lqahog"
                     >
                       <span
                         class="css-1g58ijf"
@@ -4105,12 +4105,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-gpke1l"
                 >
                   <div
-                    class="css-q7a4fs"
+                    class="css-1lqahog"
                   >
                     <span
                       class="css-1g58ijf"
                     >
-                      EXCLUSIVE
+                      NEW
                     </span>
                     <div
                       class="css-lew009"
@@ -4225,7 +4225,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-gpke1l"
                 >
                   <div
-                    class="css-q7a4fs"
+                    class="css-1lqahog"
                   >
                     <span
                       class="css-1g58ijf"
@@ -4244,7 +4244,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      REVIEW
+                      INTERVIEW
                     </span>
                   </div>
                   <a
@@ -4357,12 +4357,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <div
-                  class="css-env9oy"
+                  class="css-i1f2uq"
                 >
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    UPDATED
                   </span>
                   <div
                     class="css-lew009"
@@ -4376,7 +4376,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    Q&A
                   </span>
                 </div>
                 <a
@@ -4457,12 +4457,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <div
-                  class="css-env9oy"
+                  class="css-i1f2uq"
                 >
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    UPDATED
                   </span>
                   <div
                     class="css-lew009"
@@ -4476,7 +4476,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    PROFILE
                   </span>
                 </div>
                 <a
@@ -4524,7 +4524,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <div
-                  class="css-env9oy"
+                  class="css-i1f2uq"
                 >
                   <span
                     class="css-1g58ijf"
@@ -4610,12 +4610,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <div
-                  class="css-env9oy"
+                  class="css-i1f2uq"
                 >
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    UPDATED
                   </span>
                   <div
                     class="css-lew009"
@@ -4629,7 +4629,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    Q&A
                   </span>
                 </div>
                 <a
@@ -4699,12 +4699,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                 class="css-diffbd"
               >
                 <div
-                  class="css-env9oy"
+                  class="css-i1f2uq"
                 >
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    BREAKING
                   </span>
                   <div
                     class="css-lew009"
@@ -4718,7 +4718,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    Q&A
                   </span>
                 </div>
                 <a
@@ -4818,12 +4818,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-diffbd"
                 >
                   <div
-                    class="css-env9oy"
+                    class="css-i1f2uq"
                   >
                     <span
                       class="css-1g58ijf"
                     >
-                      EXCLUSIVE
+                      UPDATED
                     </span>
                     <div
                       class="css-lew009"
@@ -4837,7 +4837,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      REVIEW
+                      Q&A
                     </span>
                   </div>
                   <a
@@ -4906,12 +4906,12 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-diffbd"
                 >
                   <div
-                    class="css-env9oy"
+                    class="css-i1f2uq"
                   >
                     <span
                       class="css-1g58ijf"
                     >
-                      EXCLUSIVE
+                      BREAKING
                     </span>
                     <div
                       class="css-lew009"
@@ -4925,7 +4925,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      REVIEW
+                      Q&A
                     </span>
                   </div>
                   <a

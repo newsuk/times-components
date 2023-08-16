@@ -75,3 +75,15 @@ export const StyledSpan = styled.span<{ hasCaption: boolean }>`
 export const StyledTextBlock = styled(TextBlock)`
   border-radius: 2px;
 `;
+
+export const StyledBlock = styled(Block)<{ hasVideoIcon?: boolean }>`
+  display: ${({ hasVideoIcon }) => (hasVideoIcon ? 'flex' : 'inline-block')};
+  align-items: ${({ hasVideoIcon }) =>
+    hasVideoIcon ? 'last baseline' : 'initial'};
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 4px;
+`;

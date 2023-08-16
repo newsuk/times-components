@@ -1,7 +1,8 @@
 import React from 'react';
-import { Block, TextBlock, Divider } from 'newskit';
-import { ContainerInline } from '../shared-styles';
+import { TextBlock, Divider } from 'newskit';
+import { ContainerInline, StyledBlock, Wrapper } from '../shared-styles';
 import { LiveTag } from './live-tag';
+import { NewsKitVideoButtonIcon } from '../../../assets/index';
 
 export interface ArticleTileInfoProps {
   expirableFlag?: string;
@@ -13,19 +14,31 @@ export interface ArticleTileInfoProps {
 
 const CustomTextBlock = ({
   text,
-  stylePreset
+  stylePreset,
+  hasVideoIcon
 }: {
   text: string;
   stylePreset?: string;
-}) => (
-  <TextBlock
-    typographyPreset="customArticleTileInfoPreset"
-    stylePreset={stylePreset ? stylePreset : 'inkBrand010'}
-    as="span"
-  >
-    {text.toUpperCase()}
-  </TextBlock>
-);
+  hasVideoIcon?: boolean;
+}) => {
+  const capitalizedText = text.toUpperCase();
+  return (
+    <TextBlock
+      typographyPreset="customArticleTileInfoPreset"
+      stylePreset={stylePreset ? stylePreset : 'inkBrand010'}
+      as="span"
+    >
+      {hasVideoIcon ? (
+        <Wrapper>
+          <NewsKitVideoButtonIcon />
+          {capitalizedText}
+        </Wrapper>
+      ) : (
+        capitalizedText
+      )}
+    </TextBlock>
+  );
+};
 
 const CustomDivider = () => (
   <ContainerInline>
@@ -47,14 +60,23 @@ export const ArticleTileInfo = ({
 }: ArticleTileInfoProps) => {
   const hasTag = Boolean(contentType);
   const hasExpirableFlag = Boolean(expirableFlag && expirableFlag !== '');
-
+  const hasVideoIcon = Boolean(
+    contentType && contentType.toUpperCase() === 'VIDEO'
+  );
+  const isLiveTag = Boolean(
+    expirableFlag && expirableFlag.toUpperCase() === 'LIVE'
+  );
   if (!hasTag && !hasExpirableFlag && !articleLabel) {
     return null;
   }
 
   return (
-    <Block marginBlockStart={marginTop} marginBlockEnd={marginBottom}>
-      {expirableFlag === 'live' ? (
+    <StyledBlock
+      marginBlockStart={marginTop}
+      marginBlockEnd={marginBottom}
+      hasVideoIcon={hasVideoIcon}
+    >
+      {isLiveTag ? (
         <LiveTag liveTag={expirableFlag} />
       ) : (
         expirableFlag && (
@@ -65,9 +87,11 @@ export const ArticleTileInfo = ({
         )
       )}
       {contentType && expirableFlag && <CustomDivider />}
-      {contentType && <CustomTextBlock text={contentType} />}
+      {contentType && (
+        <CustomTextBlock text={contentType} hasVideoIcon={hasVideoIcon} />
+      )}
       {articleLabel && <CustomDivider />}
       {articleLabel && <CustomTextBlock text={articleLabel} />}
-    </Block>
+    </StyledBlock>
   );
 };

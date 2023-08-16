@@ -1,7 +1,7 @@
 {
   "articles": [
     {
-      "contentType": "Review",
+      "contentType": "Profile",
       "articleLabel": "",
       "expirableFlag": "live",
       "images": {
@@ -89,9 +89,9 @@
       "flag": ""
     },
     {
-      "contentType": "Review",
+      "contentType": "Interview",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "Breaking",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -133,7 +133,7 @@
       "flag": ""
     },
     {
-      "contentType": "Review",
+      "contentType": "Q&A",
       "articleLabel": "",
       "expirableFlag": "Exclusive",
       "images": {
@@ -177,9 +177,9 @@
       "flag": "Flag4"
     },
     {
-      "contentType": "Review",
+      "contentType": "Q&A",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "Breaking",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -225,7 +225,7 @@
     {
       "contentType": "Review",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "New",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -269,7 +269,7 @@
       "listData": []
     },
     {
-      "contentType": "Review",
+      "contentType": "Interview",
       "articleLabel": "",
       "expirableFlag": "Exclusive",
       "images": {
@@ -315,9 +315,9 @@
       "listData": []
     },
     {
-      "contentType": "Review",
+      "contentType": "Profile",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "New",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -363,7 +363,7 @@
     {
       "contentType": "Review",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -408,7 +408,7 @@
     }
   ],
   "leadArticle": {
-    "contentType": "Review",
+    "contentType": "Profile",
     "articleLabel": "",
     "expirableFlag": "Exclusive",
     "images": {

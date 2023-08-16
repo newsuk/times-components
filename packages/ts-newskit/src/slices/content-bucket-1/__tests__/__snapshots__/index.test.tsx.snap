@@ -62,7 +62,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               data-testid="divider"
             />
             <div
-              class="css-1l8qede"
+              class="css-u0xlwu"
             >
               <span
                 class="css-nf7qod"
@@ -81,7 +81,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               <span
                 class="css-btda8w"
               >
-                REVIEW
+                INTERVIEW
               </span>
               <div
                 class="css-lew009"
@@ -336,12 +336,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -355,7 +355,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  PROFILE
                 </span>
               </div>
               <a
@@ -398,7 +398,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
@@ -469,12 +469,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  UPDATED
                 </span>
                 <div
                   class="css-lew009"
@@ -488,7 +488,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  Q&A
                 </span>
               </div>
               <a
@@ -540,7 +540,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-diffbd"
             >
               <div
-                class="css-env9oy"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-1g58ijf"
@@ -783,7 +783,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
             class="css-gpke1l"
           >
             <div
-              class="css-1l8qede"
+              class="css-u0xlwu"
             >
               <span
                 class="css-nf7qod"
@@ -802,7 +802,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
               <span
                 class="css-btda8w"
               >
-                REVIEW
+                INTERVIEW
               </span>
               <div
                 class="css-lew009"
@@ -1064,12 +1064,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-diffbd"
                 >
                   <div
-                    class="css-env9oy"
+                    class="css-i1f2uq"
                   >
                     <span
                       class="css-1g58ijf"
                     >
-                      EXCLUSIVE
+                      UPDATED
                     </span>
                     <div
                       class="css-lew009"
@@ -1083,7 +1083,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     <span
                       class="css-btda8w"
                     >
-                      REVIEW
+                      PROFILE
                     </span>
                   </div>
                   <a
@@ -1131,7 +1131,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-diffbd"
                 >
                   <div
-                    class="css-env9oy"
+                    class="css-i1f2uq"
                   >
                     <span
                       class="css-1g58ijf"
@@ -1198,12 +1198,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-diffbd"
                 >
                   <div
-                    class="css-env9oy"
+                    class="css-i1f2uq"
                   >
                     <span
                       class="css-1g58ijf"
                     >
-                      EXCLUSIVE
+                      UPDATED
                     </span>
                     <div
                       class="css-lew009"
@@ -1217,7 +1217,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     <span
                       class="css-btda8w"
                     >
-                      REVIEW
+                      Q&A
                     </span>
                   </div>
                   <a
@@ -1265,7 +1265,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-diffbd"
                 >
                   <div
-                    class="css-env9oy"
+                    class="css-i1f2uq"
                   >
                     <span
                       class="css-1g58ijf"

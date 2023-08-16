@@ -1,6 +1,6 @@
 {
   "leadArticle": {
-    "contentType": "Review",
+    "contentType": "Interview",
     "articleLabel": "Martin Samuel",
     "expirableFlag": "live",
     "id": "1",
@@ -47,9 +47,9 @@
   },
   "articles": [
     {
-      "contentType": "Review",
+      "contentType": "Profile",
       "articleLabel": "",
-      "expirableFlag": "exclusive",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -135,9 +135,9 @@
       "flag": ""
     },
     {
-      "contentType": "Review",
+      "contentType": "Q&A",
       "articleLabel": "",
-      "expirableFlag": "exclusive",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -225,9 +225,9 @@
   ],
   "stackedModule1Articles": [
     {
-      "contentType": "Review",
+      "contentType": "Profile",
       "articleLabel": "",
-      "expirableFlag": "exclusive",
+      "expirableFlag": "New",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -271,7 +271,7 @@
     {
       "contentType": "Review",
       "articleLabel": "",
-      "expirableFlag": "exclusive",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -313,7 +313,7 @@
       "flag": "Flag"
     },
     {
-      "contentType": "Review",
+      "contentType": "Q&A",
       "articleLabel": "",
       "expirableFlag": "exclusive",
       "images": {
@@ -403,7 +403,7 @@
     {
       "contentType": "Review",
       "articleLabel": "",
-      "expirableFlag": "exclusive",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -447,7 +447,7 @@
     {
       "contentType": "Review",
       "articleLabel": "",
-      "expirableFlag": "exclusive",
+      "expirableFlag": "New",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -533,9 +533,9 @@
       "flag": ""
     },
     {
-      "contentType": "Review",
+      "contentType": "Q&A",
       "articleLabel": "",
-      "expirableFlag": "exclusive",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -662,9 +662,9 @@
     },
     "articles": [
       {
-        "contentType": "Review",
+        "contentType": "Q&A",
         "articleLabel": "",
-        "expirableFlag": "exclusive",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -708,7 +708,7 @@
       {
         "contentType": "Review",
         "articleLabel": "",
-        "expirableFlag": "exclusive",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -752,7 +752,7 @@
       {
         "contentType": "Review",
         "articleLabel": "",
-        "expirableFlag": "exclusive",
+        "expirableFlag": "New",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -848,7 +848,7 @@
       {
         "contentType": "Review",
         "articleLabel": "",
-        "expirableFlag": "exclusive",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -892,7 +892,7 @@
       {
         "contentType": "Review",
         "articleLabel": "",
-        "expirableFlag": "exclusive",
+        "expirableFlag": "New",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -988,7 +988,7 @@
       {
         "contentType": "Review",
         "articleLabel": "",
-        "expirableFlag": "exclusive",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -1084,7 +1084,7 @@
       {
         "contentType": "Review",
         "articleLabel": "",
-        "expirableFlag": "exclusive",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -1128,7 +1128,7 @@
       {
         "contentType": "Review",
         "articleLabel": "",
-        "expirableFlag": "exclusive",
+        "expirableFlag": "New",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -1170,9 +1170,9 @@
         "flag": ""
       },
       {
-        "contentType": "Review",
+        "contentType": "Interview",
         "articleLabel": "",
-        "expirableFlag": "exclusive",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",

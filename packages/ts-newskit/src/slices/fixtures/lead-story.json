@@ -1,6 +1,6 @@
 {
   "leadArticle": {
-    "contentType": "Review",
+    "contentType": "Interview",
     "articleLabel": "Martin Samuel",
     "expirableFlag": "live",
     "headline": "Sarcacens an inclusive club? They didnt look out for me",
@@ -47,9 +47,9 @@
   },
   "articles": [
     {
-      "contentType": "Review",
+      "contentType": "Q&A",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -91,9 +91,9 @@
       "flag": "Flag1"
     },
     {
-      "contentType": "Review",
+      "contentType": "Profile",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -179,9 +179,9 @@
       "flag": ""
     },
     {
-      "contentType": "Review",
+      "contentType": "Q&A",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -223,9 +223,9 @@
       "flag": "Flag4"
     },
     {
-      "contentType": "Review",
+      "contentType": "Q&A",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "Breaking",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -270,7 +270,7 @@
   "articlesWithListItems": {
     "contentType": "Review",
     "articleLabel": "",
-    "expirableFlag": "Exclusive",
+    "expirableFlag": "New",
     "images": {
       "alt": "",
       "credits": "Gareth Fuller/Press Association",
@@ -320,9 +320,9 @@
     ]
   },
   "singleArticle": {
-    "contentType": "Review",
+    "contentType": "Profile",
     "articleLabel": "",
-    "expirableFlag": "Exclusive",
+    "expirableFlag": "Breaking",
     "images": {
       "alt": "",
       "credits": "Gareth Fuller/Press Association",
@@ -366,7 +366,7 @@
   "groupedArticles": {
     "articles": [
       {
-        "contentType": "Review",
+        "contentType": "Video",
         "articleLabel": "",
         "expirableFlag": "Exclusive",
         "images": {
@@ -414,7 +414,7 @@
       {
         "contentType": "Review",
         "articleLabel": "",
-        "expirableFlag": "Exclusive",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -461,9 +461,9 @@
   },
   "smallArticles": [
     {
-      "contentType": "Review",
+      "contentType": "Profile",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "New",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -551,9 +551,9 @@
   ],
   "verticalArticles": [
     {
-      "contentType": "Review",
+      "contentType": "Profile",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "New",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -647,7 +647,7 @@
     {
       "contentType": "Review",
       "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "expirableFlag": "New",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -691,7 +691,7 @@
       "listData": []
     },
     {
-      "contentType": "Review",
+      "contentType": "Interview",
       "articleLabel": "",
       "expirableFlag": "Exclusive",
       "images": {

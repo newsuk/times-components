@@ -44,7 +44,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         data-testid="divider"
       />
       <div
-        class="css-q7a4fs"
+        class="css-1lqahog"
       >
         <span
           class="css-nf7qod"
@@ -63,7 +63,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         <span
           class="css-btda8w"
         >
-          REVIEW
+          INTERVIEW
         </span>
         <div
           class="css-lew009"
