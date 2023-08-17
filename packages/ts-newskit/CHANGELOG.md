@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.81.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.80.1...@times-components/ts-newskit@1.81.0) (2023-08-16)
+
+
+### Features
+
+* **TMRX-1388:** updated typography for dropdown active state ([#3489](https://github.com/newsuk/times-components/issues/3489)) ([b339e33](https://github.com/newsuk/times-components/commit/b339e3350a890223da7bfd9a782653933d277198))
+
+
+
+
+
+## [1.80.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.80.0...@times-components/ts-newskit@1.80.1) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+# [1.80.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.79.1...@times-components/ts-newskit@1.80.0) (2023-08-15)
+
+
+### Features
+
+* **TMRX-1386:** Fixed inconsistent padding between elements in L2 Nav ([#3488](https://github.com/newsuk/times-components/issues/3488)) ([6e814cf](https://github.com/newsuk/times-components/commit/6e814cfe9443cb52d544aad6b1cbbcbb8e53aa39))
+
+
+
+
+
 ## [1.79.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.79.0...@times-components/ts-newskit@1.79.1) (2023-08-11)
 
 
