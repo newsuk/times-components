@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React, { SVGProps } from 'react';
 
-const VideoIcon = (props: any) => (
+const VideoIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="18"
     height="20"
