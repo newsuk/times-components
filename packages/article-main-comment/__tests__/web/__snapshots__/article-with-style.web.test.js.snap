@@ -923,7 +923,7 @@ exports[`full article with style 1`] = `
             </div>
           </div>
           <div
-            className="opHide_articleAudio css-1nz1ej9"
+            className="opHide_articleAudio css-1i5p60e"
           >
             <section>
               <audio />

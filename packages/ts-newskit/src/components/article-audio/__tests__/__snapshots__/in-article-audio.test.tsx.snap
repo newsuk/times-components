@@ -3,7 +3,7 @@
 exports[`Audio player renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="opHide_articleAudio css-1nz1ej9"
+    class="opHide_articleAudio css-1i5p60e"
   >
     <section
       aria-label="Audio Player"
@@ -60,7 +60,7 @@ exports[`Audio player renders correctly 1`] = `
 exports[`Audio player renders correctly when visible 1`] = `
 <DocumentFragment>
   <div
-    class="opShow_articleAudio css-1nz1ej9"
+    class="opShow_articleAudio css-1i5p60e"
   >
     <section
       aria-label="Audio Player"

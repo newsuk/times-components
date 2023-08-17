@@ -80,7 +80,12 @@ export const InArticleAudio = ({
   );
 
   return (
-    <AudioPlayerContainer ref={audioRef} className={showAudioPlayer ? 'opShow_articleAudio' : 'opHide_articleAudio'}>
+    <AudioPlayerContainer
+      ref={audioRef}
+      className={
+        showAudioPlayer ? 'opShow_articleAudio' : 'opHide_articleAudio'
+      }
+    >
       <AudioPlayerComposable src={src}>
         <Stack flow="horizontal-center" marginBlock="space040">
           <AudioPlayerPlayPauseButton

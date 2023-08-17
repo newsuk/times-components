@@ -55,10 +55,10 @@ export const AudioPlayerContainer = styled(Block)`
 
   &.opHide_articleAudio {
     display: none;
-  }  
+  }
   &.opShow_articleAudio {
     display: block;
-  }  
+  }
 `;
 
 export const ButtonContainer = styled(Block)`
