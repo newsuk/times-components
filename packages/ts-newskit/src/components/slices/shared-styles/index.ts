@@ -88,5 +88,5 @@ export const StyledBlock = styled(Block)<{ hasVideoIcon?: boolean }>`
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 4px;
+  ${getSpacingCssFromTheme('gap', 'space010')};
 `;

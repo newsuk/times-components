@@ -19,7 +19,7 @@ export const LiveTag = ({ liveTag }: LiveTagProps) => {
       paddingBlock="space010"
       as="span"
     >
-      {liveTag && liveTag.toUpperCase()}
+      {liveTag}
     </StyledTextBlock>
   );
 };

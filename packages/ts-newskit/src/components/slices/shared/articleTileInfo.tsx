@@ -1,8 +1,9 @@
 import React from 'react';
-import { TextBlock, Divider } from 'newskit';
-import { ContainerInline, StyledBlock, Wrapper } from '../shared-styles';
+import { Divider } from 'newskit';
+import { ContainerInline, StyledBlock } from '../shared-styles';
 import { LiveTag } from './live-tag';
 import { NewsKitVideoButtonIcon } from '../../../assets/index';
+import { CustomTextBlock } from './customTextBlock';
 
 export interface ArticleTileInfoProps {
   expirableFlag?: string;
@@ -11,34 +12,6 @@ export interface ArticleTileInfoProps {
   marginBlockEnd?: string;
   marginBlockStart?: string;
 }
-
-const CustomTextBlock = ({
-  text,
-  stylePreset,
-  hasVideoIcon
-}: {
-  text: string;
-  stylePreset?: string;
-  hasVideoIcon?: boolean;
-}) => {
-  const capitalizedText = text.toUpperCase();
-  return (
-    <TextBlock
-      typographyPreset="customArticleTileInfoPreset"
-      stylePreset={stylePreset ? stylePreset : 'inkBrand010'}
-      as="span"
-    >
-      {hasVideoIcon ? (
-        <Wrapper>
-          <NewsKitVideoButtonIcon />
-          {capitalizedText}
-        </Wrapper>
-      ) : (
-        capitalizedText
-      )}
-    </TextBlock>
-  );
-};
 
 const CustomDivider = () => (
   <ContainerInline>
@@ -69,6 +42,7 @@ export const ArticleTileInfo = ({
   if (!hasTag && !hasExpirableFlag && !articleLabel) {
     return null;
   }
+  const capitalizedText = (text: string) => text.toUpperCase();
 
   return (
     <StyledBlock
@@ -76,22 +50,25 @@ export const ArticleTileInfo = ({
       marginBlockEnd={marginBlockEnd}
       hasVideoIcon={hasVideoIcon}
     >
-      {isLiveTag ? (
-        <LiveTag liveTag={expirableFlag} />
+      {isLiveTag && expirableFlag ? (
+        <LiveTag liveTag={capitalizedText(expirableFlag)} />
       ) : (
         expirableFlag && (
           <CustomTextBlock
             stylePreset="expirableFlagPreset"
-            text={expirableFlag}
+            text={capitalizedText(expirableFlag)}
           />
         )
       )}
       {contentType && expirableFlag && <CustomDivider />}
       {contentType && (
-        <CustomTextBlock text={contentType} hasVideoIcon={hasVideoIcon} />
+        <CustomTextBlock
+          text={capitalizedText(contentType)}
+          icon={hasVideoIcon && <NewsKitVideoButtonIcon />}
+        />
       )}
-      {articleLabel && <CustomDivider />}
-      {articleLabel && <CustomTextBlock text={articleLabel} />}
+      {articleLabel && (contentType || expirableFlag) && <CustomDivider />}
+      {articleLabel && <CustomTextBlock text={capitalizedText(articleLabel)} />}
     </StyledBlock>
   );
 };

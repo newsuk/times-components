@@ -20,7 +20,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             <span
               class="css-1g58ijf"
             >
-              NEW
+              <div
+                class="css-gb5m6n"
+              >
+                NEW
+              </div>
             </span>
             <div
               class="css-lew009"
@@ -34,7 +38,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             <span
               class="css-btda8w"
             >
-              REVIEW
+              <div
+                class="css-gb5m6n"
+              >
+                REVIEW
+              </div>
             </span>
           </div>
           <a
@@ -167,7 +175,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               <span
                 class="css-1g58ijf"
               >
-                BREAKING
+                <div
+                  class="css-gb5m6n"
+                >
+                  BREAKING
+                </div>
               </span>
               <div
                 class="css-lew009"
@@ -181,7 +193,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               <span
                 class="css-btda8w"
               >
-                PROFILE
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
               </span>
             </div>
             <a
@@ -229,7 +245,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -244,7 +264,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   class="css-btda8w"
                 >
                   <div
-                    class="css-44gx6g"
+                    class="css-gb5m6n"
                   >
                     <svg
                       class="css-ny3roy"
@@ -326,7 +346,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-1g58ijf"
                 >
-                  BREAKING
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    BREAKING
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -340,7 +364,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
               </div>
               <a
@@ -454,7 +482,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  INTERVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    INTERVIEW
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -468,7 +500,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  MARTIN SAMUEL
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    MARTIN SAMUEL
+                  </div>
                 </span>
               </div>
               <a
@@ -574,7 +610,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <span
                     class="css-1g58ijf"
                   >
-                    NEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      NEW
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -588,7 +628,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <span
                     class="css-btda8w"
                   >
-                    PROFILE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
                   </span>
                 </div>
                 <a
@@ -667,7 +711,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -681,7 +729,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
                   </span>
                 </div>
                 <a
@@ -757,7 +809,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-1g58ijf"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -771,7 +827,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
               </div>
               <a
@@ -865,7 +925,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-1g58ijf"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -879,7 +943,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  PROFILE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    PROFILE
+                  </div>
                 </span>
               </div>
               <a
@@ -940,7 +1008,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -954,7 +1026,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
               </div>
               <a
@@ -1034,7 +1110,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-1g58ijf"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -1048,7 +1128,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
               </div>
               <a
@@ -1131,7 +1215,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-1g58ijf"
                 >
-                  BREAKING
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    BREAKING
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -1145,7 +1233,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-btda8w"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
               </div>
               <a
@@ -1252,7 +1344,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-1g58ijf"
                       >
-                        UPDATED
+                        <div
+                          class="css-gb5m6n"
+                        >
+                          UPDATED
+                        </div>
                       </span>
                       <div
                         class="css-lew009"
@@ -1266,7 +1362,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-btda8w"
                       >
-                        Q&A
+                        <div
+                          class="css-gb5m6n"
+                        >
+                          Q&A
+                        </div>
                       </span>
                     </div>
                     <a
@@ -1349,7 +1449,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-1g58ijf"
                       >
-                        BREAKING
+                        <div
+                          class="css-gb5m6n"
+                        >
+                          BREAKING
+                        </div>
                       </span>
                       <div
                         class="css-lew009"
@@ -1363,7 +1467,11 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-btda8w"
                       >
-                        Q&A
+                        <div
+                          class="css-gb5m6n"
+                        >
+                          Q&A
+                        </div>
                       </span>
                     </div>
                     <a
@@ -1446,7 +1554,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <span
               class="css-1g58ijf"
             >
-              NEW
+              <div
+                class="css-gb5m6n"
+              >
+                NEW
+              </div>
             </span>
             <div
               class="css-lew009"
@@ -1460,7 +1572,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <span
               class="css-btda8w"
             >
-              REVIEW
+              <div
+                class="css-gb5m6n"
+              >
+                REVIEW
+              </div>
             </span>
           </div>
           <a
@@ -1593,7 +1709,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-1g58ijf"
               >
-                BREAKING
+                <div
+                  class="css-gb5m6n"
+                >
+                  BREAKING
+                </div>
               </span>
               <div
                 class="css-lew009"
@@ -1607,7 +1727,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-btda8w"
               >
-                PROFILE
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
               </span>
             </div>
             <a
@@ -1655,7 +1779,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -1670,7 +1798,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-btda8w"
                 >
                   <div
-                    class="css-44gx6g"
+                    class="css-gb5m6n"
                   >
                     <svg
                       class="css-ny3roy"
@@ -1752,7 +1880,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-1g58ijf"
                 >
-                  BREAKING
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    BREAKING
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -1766,7 +1898,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
               </div>
               <a
@@ -1880,7 +2016,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-btda8w"
                 >
-                  INTERVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    INTERVIEW
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -1894,7 +2034,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-btda8w"
                 >
-                  MARTIN SAMUEL
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    MARTIN SAMUEL
+                  </div>
                 </span>
               </div>
               <a
@@ -2000,7 +2144,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    NEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      NEW
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -2014,7 +2162,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    PROFILE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
                   </span>
                 </div>
                 <a
@@ -2093,7 +2245,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -2107,7 +2263,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
                   </span>
                 </div>
                 <a
@@ -2180,7 +2340,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-1g58ijf"
               >
-                UPDATED
+                <div
+                  class="css-gb5m6n"
+                >
+                  UPDATED
+                </div>
               </span>
               <div
                 class="css-lew009"
@@ -2194,7 +2358,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-btda8w"
               >
-                Q&A
+                <div
+                  class="css-gb5m6n"
+                >
+                  Q&A
+                </div>
               </span>
             </div>
             <a
@@ -2280,7 +2448,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-1g58ijf"
               >
-                UPDATED
+                <div
+                  class="css-gb5m6n"
+                >
+                  UPDATED
+                </div>
               </span>
               <div
                 class="css-lew009"
@@ -2294,7 +2466,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-btda8w"
               >
-                PROFILE
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
               </span>
             </div>
             <a
@@ -2347,7 +2523,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-1g58ijf"
               >
-                EXCLUSIVE
+                <div
+                  class="css-gb5m6n"
+                >
+                  EXCLUSIVE
+                </div>
               </span>
               <div
                 class="css-lew009"
@@ -2361,7 +2541,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-btda8w"
               >
-                REVIEW
+                <div
+                  class="css-gb5m6n"
+                >
+                  REVIEW
+                </div>
               </span>
             </div>
             <a
@@ -2434,7 +2618,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-1g58ijf"
                     >
-                      UPDATED
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
                     </span>
                     <div
                       class="css-lew009"
@@ -2448,7 +2636,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      Q&A
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
                     </span>
                   </div>
                   <a
@@ -2511,7 +2703,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-1g58ijf"
                     >
-                      BREAKING
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        BREAKING
+                      </div>
                     </span>
                     <div
                       class="css-lew009"
@@ -2525,7 +2721,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      Q&A
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
                     </span>
                   </div>
                   <a
@@ -2637,7 +2837,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <span
               class="css-1g58ijf"
             >
-              NEW
+              <div
+                class="css-gb5m6n"
+              >
+                NEW
+              </div>
             </span>
             <div
               class="css-lew009"
@@ -2651,7 +2855,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <span
               class="css-btda8w"
             >
-              REVIEW
+              <div
+                class="css-gb5m6n"
+              >
+                REVIEW
+              </div>
             </span>
           </div>
           <a
@@ -2784,7 +2992,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-1g58ijf"
               >
-                BREAKING
+                <div
+                  class="css-gb5m6n"
+                >
+                  BREAKING
+                </div>
               </span>
               <div
                 class="css-lew009"
@@ -2798,7 +3010,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-btda8w"
               >
-                PROFILE
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
               </span>
             </div>
             <a
@@ -2846,7 +3062,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -2861,7 +3081,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-btda8w"
                 >
                   <div
-                    class="css-44gx6g"
+                    class="css-gb5m6n"
                   >
                     <svg
                       class="css-ny3roy"
@@ -2943,7 +3163,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-1g58ijf"
                 >
-                  BREAKING
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    BREAKING
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -2957,7 +3181,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
               </div>
               <a
@@ -3071,7 +3299,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-btda8w"
                 >
-                  INTERVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    INTERVIEW
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -3085,7 +3317,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-btda8w"
                 >
-                  MARTIN SAMUEL
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    MARTIN SAMUEL
+                  </div>
                 </span>
               </div>
               <a
@@ -3188,7 +3424,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    NEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      NEW
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -3202,7 +3442,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    PROFILE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
                   </span>
                 </div>
                 <a
@@ -3273,7 +3517,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -3287,7 +3535,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
                   </span>
                 </div>
                 <a
@@ -3367,7 +3619,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    UPDATED
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -3381,7 +3637,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    Q&A
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
                   </span>
                 </div>
                 <a
@@ -3467,7 +3727,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    UPDATED
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -3481,7 +3745,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    PROFILE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
                   </span>
                 </div>
                 <a
@@ -3534,7 +3802,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -3548,7 +3820,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
                   </span>
                 </div>
                 <a
@@ -3620,7 +3896,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    UPDATED
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -3634,7 +3914,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    Q&A
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
                   </span>
                 </div>
                 <a
@@ -3709,7 +3993,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    BREAKING
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      BREAKING
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -3723,7 +4011,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    Q&A
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
                   </span>
                 </div>
                 <a
@@ -3828,7 +4120,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-1g58ijf"
                     >
-                      UPDATED
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
                     </span>
                     <div
                       class="css-lew009"
@@ -3842,7 +4138,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      Q&A
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
                     </span>
                   </div>
                   <a
@@ -3916,7 +4216,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-1g58ijf"
                     >
-                      BREAKING
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        BREAKING
+                      </div>
                     </span>
                     <div
                       class="css-lew009"
@@ -3930,7 +4234,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      Q&A
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
                     </span>
                   </div>
                   <a
@@ -4042,7 +4350,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <span
               class="css-1g58ijf"
             >
-              NEW
+              <div
+                class="css-gb5m6n"
+              >
+                NEW
+              </div>
             </span>
             <div
               class="css-lew009"
@@ -4056,7 +4368,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <span
               class="css-btda8w"
             >
-              REVIEW
+              <div
+                class="css-gb5m6n"
+              >
+                REVIEW
+              </div>
             </span>
           </div>
           <a
@@ -4189,7 +4505,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-1g58ijf"
               >
-                BREAKING
+                <div
+                  class="css-gb5m6n"
+                >
+                  BREAKING
+                </div>
               </span>
               <div
                 class="css-lew009"
@@ -4203,7 +4523,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <span
                 class="css-btda8w"
               >
-                PROFILE
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
               </span>
             </div>
             <a
@@ -4251,7 +4575,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-1g58ijf"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -4266,7 +4594,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="css-btda8w"
                 >
                   <div
-                    class="css-44gx6g"
+                    class="css-gb5m6n"
                   >
                     <svg
                       class="css-ny3roy"
@@ -4348,7 +4676,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-1g58ijf"
                 >
-                  BREAKING
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    BREAKING
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -4362,7 +4694,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-btda8w"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
               </div>
               <a
@@ -4476,7 +4812,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-btda8w"
                 >
-                  INTERVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    INTERVIEW
+                  </div>
                 </span>
                 <div
                   class="css-lew009"
@@ -4490,7 +4830,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-btda8w"
                 >
-                  MARTIN SAMUEL
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    MARTIN SAMUEL
+                  </div>
                 </span>
               </div>
               <a
@@ -4593,7 +4937,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    NEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      NEW
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -4607,7 +4955,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    PROFILE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
                   </span>
                 </div>
                 <a
@@ -4678,7 +5030,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -4692,7 +5048,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
                   </span>
                 </div>
                 <a
@@ -4772,7 +5132,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    UPDATED
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -4786,7 +5150,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    Q&A
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
                   </span>
                 </div>
                 <a
@@ -4872,7 +5240,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    UPDATED
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -4886,7 +5258,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    PROFILE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
                   </span>
                 </div>
                 <a
@@ -4939,7 +5315,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    EXCLUSIVE
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -4953,7 +5333,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    REVIEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
                   </span>
                 </div>
                 <a
@@ -5025,7 +5409,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    UPDATED
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -5039,7 +5427,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    Q&A
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
                   </span>
                 </div>
                 <a
@@ -5114,7 +5506,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-1g58ijf"
                   >
-                    BREAKING
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      BREAKING
+                    </div>
                   </span>
                   <div
                     class="css-lew009"
@@ -5128,7 +5524,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <span
                     class="css-btda8w"
                   >
-                    Q&A
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
                   </span>
                 </div>
                 <a
@@ -5233,7 +5633,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-1g58ijf"
                     >
-                      UPDATED
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
                     </span>
                     <div
                       class="css-lew009"
@@ -5247,7 +5651,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      Q&A
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
                     </span>
                   </div>
                   <a
@@ -5321,7 +5729,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-1g58ijf"
                     >
-                      BREAKING
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        BREAKING
+                      </div>
                     </span>
                     <div
                       class="css-lew009"
@@ -5335,7 +5747,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-btda8w"
                     >
-                      Q&A
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
                     </span>
                   </div>
                   <a
