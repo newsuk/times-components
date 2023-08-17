@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "3.13.9",
+  "version": "3.13.10",
   "description": "Article byline information ",
   "main": "dist/article-byline",
   "dev": "src/article-byline",
@@ -52,12 +52,12 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/link": "3.13.2",
-    "@times-components/markup": "3.8.15",
+    "@times-components/link": "3.14.0",
+    "@times-components/markup": "3.8.16",
     "@times-components/markup-forest": "1.9.1",
     "@times-components/tracking": "2.20.6",
-    "@times-components/ts-styleguide": "1.45.2",
-    "@times-components/utils": "6.16.15",
+    "@times-components/ts-styleguide": "1.46.0",
+    "@times-components/utils": "6.16.16",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

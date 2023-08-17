@@ -1,6 +1,6 @@
 {
   "name": "@times-components/sticky",
-  "version": "0.5.37",
+  "version": "0.5.38",
   "description": "Attach children to viewport on scroll (web only) ",
   "main": "dist/sticky",
   "dev": "src/sticky",
@@ -42,7 +42,7 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.1",
     "@times-components/storybook": "4.10.6",
-    "@times-components/ts-styleguide": "1.45.2",
+    "@times-components/ts-styleguide": "1.46.0",
     "@times-components/webpack-configurator": "2.1.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",

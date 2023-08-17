@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.82.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.81.0...@times-components/ts-newskit@1.82.0) (2023-08-17)
+
+
+### Features
+
+* **TMRX-1400:** Implement category labels flags above the headline ([#3495](https://github.com/newsuk/times-components/issues/3495)) ([506b900](https://github.com/newsuk/times-components/commit/506b900d6c592c3d701078cfe0c58d2ea8a18a72))
+
+
+
+
+
 # [1.81.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.80.1...@times-components/ts-newskit@1.81.0) (2023-08-16)
 
 

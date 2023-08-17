@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.26.2...@times-components/date-publication@0.27.0) (2023-08-17)
+
+
+### Features
+
+* **TMRX-1400:** Implement category labels flags above the headline ([#3495](https://github.com/newsuk/times-components/issues/3495)) ([506b900](https://github.com/newsuk/times-components/commit/506b900d6c592c3d701078cfe0c58d2ea8a18a72))
+
+
+
+
+
 ## [0.26.2](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.26.1...@times-components/date-publication@0.26.2) (2023-08-15)
 
 **Note:** Version bump only for package @times-components/date-publication

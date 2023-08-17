@@ -1,6 +1,6 @@
 {
   "name": "@times-components/key-facts",
-  "version": "2.12.28",
+  "version": "2.12.29",
   "description": "Bulleted list of text data ",
   "main": "dist/key-facts",
   "dev": "src/key-facts",
@@ -53,12 +53,12 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/markup": "3.8.15",
+    "@times-components/markup": "3.8.16",
     "@times-components/markup-forest": "1.9.1",
-    "@times-components/responsive": "0.15.2",
-    "@times-components/ts-components": "1.77.6",
-    "@times-components/ts-styleguide": "1.45.2",
-    "@times-components/utils": "6.16.15",
+    "@times-components/responsive": "0.16.0",
+    "@times-components/ts-components": "1.77.7",
+    "@times-components/ts-styleguide": "1.46.0",
+    "@times-components/utils": "6.16.16",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
