@@ -63,24 +63,23 @@ const ArticleHeader = ({
       publicationName={publicationName}
       publishedTime={publishedTime}
     />
-    {showAudioPlayer && (
-      <TCThemeProvider>
-        <InArticleAudio
-          src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
-          readyToPlayText="Listen to article"
-          playingText="Playing"
-          narrator="James Marriott"
-          headline="Sorry, we can’t all be destined for greatness"
-          feedback={{
-            requestFeedback: true,
-            feedbackMessage:
-              "Want to listen to more articles? Give your feedback below or email",
-            thankyouMessage:
-              "Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this."
-          }}
-        />
-      </TCThemeProvider>
-    )}
+    <TCThemeProvider>
+      <InArticleAudio
+        showAudioPlayer={showAudioPlayer}
+        src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+        readyToPlayText="Listen to article"
+        playingText="Playing"
+        narrator="James Marriott"
+        headline="Sorry, we can’t all be destined for greatness"
+        feedback={{
+          requestFeedback: true,
+          feedbackMessage:
+            "Want to listen to more articles? Give your feedback below or email",
+          thankyouMessage:
+            "Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this."
+        }}
+      />
+    </TCThemeProvider>
   </HeaderContainer>
 );
 

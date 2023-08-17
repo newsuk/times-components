@@ -3,7 +3,7 @@
 exports[`StickyPlayerMob renders renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="css-og8l64"
+    class="opShow_articleAudio css-1i5p60e"
   >
     <section
       aria-label="Audio Player"

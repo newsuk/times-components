@@ -141,6 +141,46 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
               </div>
             </div>
           </div>
+          <div>
+            <section
+              aria-label="Audio Player"
+            >
+              <audio
+                autoPlay={false}
+                src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+              />
+              <div>
+                <button
+                  aria-busy="true"
+                  aria-label="Play"
+                  aria-live="polite"
+                  aria-pressed={false}
+                  size="small"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden={true}
+                    fill="currentColor"
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                    />
+                  </svg>
+                </button>
+                <div>
+                  <p>
+                    Listen to article
+                  </p>
+                  <p>
+                    Narrated by James Marriott
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
         <div>
           <div
@@ -400,6 +440,46 @@ exports[`4. an article with ads 1`] = `
                 />
               </div>
             </div>
+          </div>
+          <div>
+            <section
+              aria-label="Audio Player"
+            >
+              <audio
+                autoPlay={false}
+                src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+              />
+              <div>
+                <button
+                  aria-busy="true"
+                  aria-label="Play"
+                  aria-live="polite"
+                  aria-pressed={false}
+                  size="small"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden={true}
+                    fill="currentColor"
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                    />
+                  </svg>
+                </button>
+                <div>
+                  <p>
+                    Listen to article
+                  </p>
+                  <p>
+                    Narrated by James Marriott
+                  </p>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
         <div>

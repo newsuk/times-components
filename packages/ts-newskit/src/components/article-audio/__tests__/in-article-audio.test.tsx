@@ -9,7 +9,8 @@ export const data = {
   readyToPlayText: 'Listen to article',
   playingText: 'Playing',
   narrator: 'James Marriott',
-  headline: 'Article headline'
+  headline: 'Article headline',
+  showAudioPlayer: false
 };
 
 export const renderComponent = (props: InArticleAudioProps) =>
@@ -21,6 +22,21 @@ describe('Audio player', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  test('renders correctly when visible', () => {
+    const { asFragment } = renderComponent({
+      ...data,
+      showAudioPlayer: true
+    });
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  test('does not render by default', () => {
+    renderComponent(data);
+
+    const readyToPlayDefaultText = screen.queryByText('Listen to article');
+    expect(readyToPlayDefaultText).not.toBeVisible();
+  });
+
   test('renders correctly with default props', () => {
     const loadStub = jest
       .spyOn(window.HTMLMediaElement.prototype, 'load')
@@ -29,6 +45,7 @@ describe('Audio player', () => {
 
     renderComponent({
       ...data,
+      showAudioPlayer: true,
       readyToPlayText: undefined,
       playingText: undefined
     });
@@ -44,6 +61,7 @@ describe('Audio player', () => {
   test('audio control, when clicking play button', async () => {
     renderComponent({
       ...data,
+      showAudioPlayer: true,
       readyToPlayText: undefined,
       playingText: undefined
     });

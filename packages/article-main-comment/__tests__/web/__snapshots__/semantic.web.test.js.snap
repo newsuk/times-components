@@ -107,6 +107,41 @@ exports[`1. a full article 1`] = `
     <span>
       The Times
     </span>
+    <section
+      aria-label="Audio Player"
+    >
+      <audio
+        autoPlay={false}
+        data-testid="audio-element"
+        src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+      />
+      <button
+        aria-busy="true"
+        aria-label="Play"
+        aria-live="polite"
+        aria-pressed={false}
+        data-testid="audio-player-play-pause-button"
+        size="small"
+        type="button"
+      >
+        <svg
+          aria-hidden={true}
+          viewBox="0 0 64 64"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="50%"
+            cy="50%"
+          />
+        </svg>
+      </button>
+      <p>
+        Listen to article
+      </p>
+      <p>
+        Narrated by James Marriott
+      </p>
+    </section>
     Share
     <a
       href=""

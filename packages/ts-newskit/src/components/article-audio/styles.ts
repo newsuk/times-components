@@ -52,6 +52,13 @@ export const StickyAudioPlayer = styled(Block)`
 
 export const AudioPlayerContainer = styled(Block)`
   width: 100%;
+
+  &.opHide_articleAudio {
+    display: none;
+  }
+  &.opShow_articleAudio {
+    display: block;
+  }
 `;
 
 export const ButtonContainer = styled(Block)`
