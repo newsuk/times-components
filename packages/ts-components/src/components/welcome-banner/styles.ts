@@ -6,7 +6,7 @@ export const WelcomeBannerContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-bottom: 28px;
+  margin-bottom: 16px;
   padding: 16px 34px;
   background-color: ${colours.functional.bannerBackground};
 `;
