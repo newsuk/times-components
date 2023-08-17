@@ -50,7 +50,8 @@ export const ContentBucket1 = ({
   const modifiedLeadArticle = {
     ...leadArticle,
     imageTop: isMobile,
-    hasTopBorder: !isMobile
+    hasTopBorder: !isMobile,
+    isLeadImage: true
   };
 
   return (

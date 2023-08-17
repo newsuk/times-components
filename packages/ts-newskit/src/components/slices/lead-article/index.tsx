@@ -3,20 +3,19 @@ import {
   Block,
   CardContent,
   CardComposable,
-  Divider,
-  Hidden
+  Divider
 } from 'newskit';
 import React from 'react';
 import {
   CardHeadlineLink,
   FullWidthCardMediaMob,
-  StyledSpan,
-  TextLink
+  StyledSpan
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
+import { ArticleTileInfo } from '../shared/articleTileInfo';
 
 type ImageCrops = {
   url?: string;
@@ -39,10 +38,9 @@ export interface LeadArticleProps {
   headline: string;
   flag?: string;
   shortSummary?: string;
-  tagL1?: {
-    label: string;
-    href: string;
-  };
+  contentType?: string;
+  articleLabel?: string;
+  expirableFlag?: string;
   images?: ImageProps;
   url: string;
   tag?: {
@@ -52,6 +50,7 @@ export interface LeadArticleProps {
   imageTop?: boolean;
   hasTopBorder?: boolean;
   contentTop?: boolean;
+  isLeadImage?: boolean;
   contentWidth?: string;
   headlineTypographyPreset?: string;
   loadingAspectRatio?: string;
@@ -59,7 +58,6 @@ export interface LeadArticleProps {
   textBlockMarginBlockStart?: string;
   tagAndFlagMarginBlockStart?: string;
   listData?: ListData[];
-  showTagL1?: boolean;
   hideImage?: boolean;
 }
 
@@ -75,13 +73,14 @@ export const LeadArticle = ({
     headline,
     flag,
     shortSummary,
-    tagL1,
+    contentType,
     images,
     url,
     tag,
     imageTop,
     hasTopBorder = true,
     contentTop,
+    isLeadImage,
     contentWidth,
     headlineTypographyPreset,
     loadingAspectRatio,
@@ -89,8 +88,9 @@ export const LeadArticle = ({
     textBlockMarginBlockStart = 'space040',
     tagAndFlagMarginBlockStart = 'space040',
     listData,
-    showTagL1,
-    hideImage
+    hideImage,
+    expirableFlag,
+    articleLabel
   } = article;
   const imageWithCorrectRatio =
     images && images.crops
@@ -186,23 +186,12 @@ export const LeadArticle = ({
             }}
           />
         )}
-
-        {tagL1 &&
-          tagL1.label !== '' && (
-            <Hidden xs={showTagL1} sm={showTagL1}>
-              <TextLink
-                overrides={{
-                  typographyPreset: 'utilityButton010',
-                  stylePreset: 'inkBrand010',
-                  marginBlockEnd: 'space040'
-                }}
-                href={tagL1.href}
-              >
-                {tagL1.label}
-              </TextLink>
-            </Hidden>
-          )}
-
+        <ArticleTileInfo
+          contentType={contentType}
+          expirableFlag={expirableFlag}
+          articleLabel={articleLabel}
+          marginBlockEnd={isLeadImage ? 'space050' : 'space020'}
+        />
         <CardHeadlineLink
           href={url}
           overrides={{

@@ -250,6 +250,13 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: 1.5,
       fontSize: '1.2rem',
       letterSpacing: '0em'
+    },
+    customArticleTileInfoPreset: {
+      fontFamily: 'Roboto',
+      fontWeight: 'bold',
+      lineHeight: 1.5,
+      fontSize: '12px',
+      letterSpacing: '0em'
     }
   })
 );

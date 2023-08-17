@@ -43,6 +43,51 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-tk98gp"
         data-testid="divider"
       />
+      <div
+        class="css-1lqahog"
+      >
+        <span
+          class="css-t7ynxc"
+        >
+          LIVE
+        </span>
+        <div
+          class="css-lew009"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
+        </div>
+        <span
+          class="css-btda8w"
+        >
+          <div
+            class="css-gb5m6n"
+          >
+            INTERVIEW
+          </div>
+        </span>
+        <div
+          class="css-lew009"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
+        </div>
+        <span
+          class="css-btda8w"
+        >
+          <div
+            class="css-gb5m6n"
+          >
+            MARTIN SAMUEL
+          </div>
+        </span>
+      </div>
       <a
         class="css-10h0i3c"
         href="https://www.thetimes.co.uk"

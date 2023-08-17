@@ -12,5 +12,10 @@ export const sliceStylePresets = {
       borderWidth: '{{borders.borderWidthDefault}}',
       borderColor: '{{colors.interface060}}'
     }
+  },
+  expirableFlagPreset: {
+    base: {
+      color: '{{colors.interactiveNegative030}}'
+    }
   }
 };

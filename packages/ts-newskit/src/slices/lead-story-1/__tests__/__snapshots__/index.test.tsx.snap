@@ -15,22 +15,35 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           class="css-gpke1l"
         >
           <div
-            class="css-9fndha"
+            class="css-1lqahog"
           >
-            <a
-              class="css-1bmzwxr"
-              href="/"
+            <span
+              class="css-1g58ijf"
             >
-              <span
-                class="css-17x5lw"
+              <div
+                class="css-gb5m6n"
               >
-                <span
-                  class="css-pwugga"
-                >
-                  TAG
-                </span>
-              </span>
-            </a>
+                NEW
+              </div>
+            </span>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-15kf7hd"
+                data-testid="divider"
+              />
+            </div>
+            <span
+              class="css-btda8w"
+            >
+              <div
+                class="css-gb5m6n"
+              >
+                REVIEW
+              </div>
+            </span>
           </div>
           <a
             class="css-10h0i3c"
@@ -156,8 +169,39 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           <div
             class="css-diffbd"
           >
+            <div
+              class="css-122i4mv"
+            >
+              <span
+                class="css-1g58ijf"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  BREAKING
+                </div>
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-btda8w"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
+              </span>
+            </div>
             <a
-              class="css-bxykrz"
+              class="css-1wa082o"
               href="#"
               role="link"
             >
@@ -186,20 +230,6 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
       <div
         class="css-13byt3y"
       >
-        <a
-          class="css-1bmzwxr"
-          href="/"
-        >
-          <span
-            class="css-17x5lw"
-          >
-            <span
-              class="css-pwugga"
-            >
-              TAG
-            </span>
-          </span>
-        </a>
         <div
           class="css-e0a604"
         >
@@ -209,6 +239,71 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-19c9dcb"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    <svg
+                      class="css-ny3roy"
+                      fill="none"
+                      height="20"
+                      viewBox="0 0 22 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect
+                        fill="url(#pattern0)"
+                        height="24"
+                        width="22"
+                      />
+                      <defs>
+                        <pattern
+                          height="1"
+                          id="pattern0"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                        >
+                          <use
+                            transform="matrix(0.0454545 0 0 0.0416667 -0.0909091 0)"
+                            xlink:href="#image0_3031_245372"
+                          />
+                        </pattern>
+                        <image
+                          height="24"
+                          id="image0_3031_245372"
+                          width="24"
+                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA90lEQVR4nN2UPQrCQBCFPwJJZeElvI5GkZSexc6ot/AXbD2Incaf9LaihZUrC5NGk+wmEYQ8eE0yM2+Znwd1hwcEwAqIgIcwkm+BxJRCD4gBZeAF6BYp7AATi8Lqg2PJNWJaorgShjZtURXpZxX3pJ9VBeKswQeGxF0BkX6awNqQ5AAD4GohsEgTOBmSEjSAIfDMidV38oW7pUCCFrDJiNW1fiKwzYi9pQkcLQWasu95LTqkCSx/OOTZX9bUBc4VDkyZDg1xxSrFX0AbA8o4qRKOsIAj1lv05aGtXSfwLWeiHaBDSbiyEdpb9G7rY9TcA3P5p2NqjDd1yyIEG3kosgAAAABJRU5ErkJggg=="
+                        />
+                      </defs>
+                    </svg>
+                    VIDEO
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="#"
@@ -245,6 +340,37 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-1lqahog"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    BREAKING
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="#"
@@ -336,6 +462,51 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-u0xlwu"
+              >
+                <span
+                  class="css-t7ynxc"
+                >
+                  LIVE
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    INTERVIEW
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    MARTIN SAMUEL
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
@@ -385,7 +556,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-1vzvkql"
                 >
-                  4 min read
+                  4 minutes read
                 </span>
               </div>
             </div>
@@ -433,8 +604,39 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      NEW
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -503,8 +705,39 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -570,8 +803,39 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-13byt3y"
             >
+              <div
+                class="css-122i4mv"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
+                </span>
+              </div>
               <a
-                class="css-bxykrz"
+                class="css-1wa082o"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 role="link"
               >
@@ -655,8 +919,39 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-13byt3y"
             >
+              <div
+                class="css-122i4mv"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    PROFILE
+                  </div>
+                </span>
+              </div>
               <a
-                class="css-bxykrz"
+                class="css-1wa082o"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 role="link"
               >
@@ -707,8 +1002,39 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-13byt3y"
             >
+              <div
+                class="css-122i4mv"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
               <a
-                class="css-bxykrz"
+                class="css-1wa082o"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 role="link"
               >
@@ -778,8 +1104,39 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-13byt3y"
             >
+              <div
+                class="css-122i4mv"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
+                </span>
+              </div>
               <a
-                class="css-bxykrz"
+                class="css-1wa082o"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 role="link"
               >
@@ -852,8 +1209,39 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-13byt3y"
             >
+              <div
+                class="css-122i4mv"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    BREAKING
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
+                </span>
+              </div>
               <a
-                class="css-bxykrz"
+                class="css-1wa082o"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 role="link"
               >
@@ -950,8 +1338,39 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <div
                     class="css-13byt3y"
                   >
+                    <div
+                      class="css-122i4mv"
+                    >
+                      <span
+                        class="css-1g58ijf"
+                      >
+                        <div
+                          class="css-gb5m6n"
+                        >
+                          UPDATED
+                        </div>
+                      </span>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                      <span
+                        class="css-btda8w"
+                      >
+                        <div
+                          class="css-gb5m6n"
+                        >
+                          Q&A
+                        </div>
+                      </span>
+                    </div>
                     <a
-                      class="css-bxykrz"
+                      class="css-1wa082o"
                       href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                       role="link"
                     >
@@ -1024,8 +1443,39 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <div
                     class="css-13byt3y"
                   >
+                    <div
+                      class="css-122i4mv"
+                    >
+                      <span
+                        class="css-1g58ijf"
+                      >
+                        <div
+                          class="css-gb5m6n"
+                        >
+                          BREAKING
+                        </div>
+                      </span>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                      <span
+                        class="css-btda8w"
+                      >
+                        <div
+                          class="css-gb5m6n"
+                        >
+                          Q&A
+                        </div>
+                      </span>
+                    </div>
                     <a
-                      class="css-bxykrz"
+                      class="css-1wa082o"
                       href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                       role="link"
                     >
@@ -1099,22 +1549,35 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-gpke1l"
         >
           <div
-            class="css-9fndha"
+            class="css-1lqahog"
           >
-            <a
-              class="css-1bmzwxr"
-              href="/"
+            <span
+              class="css-1g58ijf"
             >
-              <span
-                class="css-17x5lw"
+              <div
+                class="css-gb5m6n"
               >
-                <span
-                  class="css-pwugga"
-                >
-                  TAG
-                </span>
-              </span>
-            </a>
+                NEW
+              </div>
+            </span>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-15kf7hd"
+                data-testid="divider"
+              />
+            </div>
+            <span
+              class="css-btda8w"
+            >
+              <div
+                class="css-gb5m6n"
+              >
+                REVIEW
+              </div>
+            </span>
           </div>
           <a
             class="css-10h0i3c"
@@ -1240,8 +1703,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           <div
             class="css-diffbd"
           >
+            <div
+              class="css-122i4mv"
+            >
+              <span
+                class="css-1g58ijf"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  BREAKING
+                </div>
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-btda8w"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
+              </span>
+            </div>
             <a
-              class="css-bxykrz"
+              class="css-1wa082o"
               href="#"
               role="link"
             >
@@ -1270,20 +1764,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
       <div
         class="css-13byt3y"
       >
-        <a
-          class="css-1bmzwxr"
-          href="/"
-        >
-          <span
-            class="css-17x5lw"
-          >
-            <span
-              class="css-pwugga"
-            >
-              TAG
-            </span>
-          </span>
-        </a>
         <div
           class="css-e0a604"
         >
@@ -1293,6 +1773,71 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-19c9dcb"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    <svg
+                      class="css-ny3roy"
+                      fill="none"
+                      height="20"
+                      viewBox="0 0 22 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect
+                        fill="url(#pattern0)"
+                        height="24"
+                        width="22"
+                      />
+                      <defs>
+                        <pattern
+                          height="1"
+                          id="pattern0"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                        >
+                          <use
+                            transform="matrix(0.0454545 0 0 0.0416667 -0.0909091 0)"
+                            xlink:href="#image0_3031_245372"
+                          />
+                        </pattern>
+                        <image
+                          height="24"
+                          id="image0_3031_245372"
+                          width="24"
+                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA90lEQVR4nN2UPQrCQBCFPwJJZeElvI5GkZSexc6ot/AXbD2Incaf9LaihZUrC5NGk+wmEYQ8eE0yM2+Znwd1hwcEwAqIgIcwkm+BxJRCD4gBZeAF6BYp7AATi8Lqg2PJNWJaorgShjZtURXpZxX3pJ9VBeKswQeGxF0BkX6awNqQ5AAD4GohsEgTOBmSEjSAIfDMidV38oW7pUCCFrDJiNW1fiKwzYi9pQkcLQWasu95LTqkCSx/OOTZX9bUBc4VDkyZDg1xxSrFX0AbA8o4qRKOsIAj1lv05aGtXSfwLWeiHaBDSbiyEdpb9G7rY9TcA3P5p2NqjDd1yyIEG3kosgAAAABJRU5ErkJggg=="
+                        />
+                      </defs>
+                    </svg>
+                    VIDEO
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="#"
@@ -1329,6 +1874,37 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-1lqahog"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    BREAKING
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="#"
@@ -1420,6 +1996,51 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-u0xlwu"
+              >
+                <span
+                  class="css-t7ynxc"
+                >
+                  LIVE
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    INTERVIEW
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    MARTIN SAMUEL
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
@@ -1469,7 +2090,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-1vzvkql"
                 >
-                  4 min read
+                  4 minutes read
                 </span>
               </div>
             </div>
@@ -1517,8 +2138,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      NEW
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -1587,8 +2239,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -1651,8 +2334,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           <div
             class="css-diffbd"
           >
+            <div
+              class="css-i1f2uq"
+            >
+              <span
+                class="css-1g58ijf"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  UPDATED
+                </div>
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-btda8w"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  Q&A
+                </div>
+              </span>
+            </div>
             <a
-              class="css-u57k3c"
+              class="css-1wa082o"
               href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               role="link"
             >
@@ -1728,8 +2442,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           <div
             class="css-diffbd"
           >
+            <div
+              class="css-i1f2uq"
+            >
+              <span
+                class="css-1g58ijf"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  UPDATED
+                </div>
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-btda8w"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
+              </span>
+            </div>
             <a
-              class="css-u57k3c"
+              class="css-1wa082o"
               href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               role="link"
             >
@@ -1772,8 +2517,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           <div
             class="css-diffbd"
           >
+            <div
+              class="css-i1f2uq"
+            >
+              <span
+                class="css-1g58ijf"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  EXCLUSIVE
+                </div>
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-btda8w"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  REVIEW
+                </div>
+              </span>
+            </div>
             <a
-              class="css-u57k3c"
+              class="css-1wa082o"
               href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               role="link"
             >
@@ -1836,8 +2612,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <div
                   class="css-diffbd"
                 >
+                  <div
+                    class="css-122i4mv"
+                  >
+                    <span
+                      class="css-1g58ijf"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-btda8w"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
+                    </span>
+                  </div>
                   <a
-                    class="css-bxykrz"
+                    class="css-1wa082o"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -1890,8 +2697,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <div
                   class="css-diffbd"
                 >
+                  <div
+                    class="css-122i4mv"
+                  >
+                    <span
+                      class="css-1g58ijf"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        BREAKING
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-btda8w"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
+                    </span>
+                  </div>
                   <a
-                    class="css-bxykrz"
+                    class="css-1wa082o"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -1994,22 +2832,35 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-gpke1l"
         >
           <div
-            class="css-9fndha"
+            class="css-u0xlwu"
           >
-            <a
-              class="css-1bmzwxr"
-              href="/"
+            <span
+              class="css-1g58ijf"
             >
-              <span
-                class="css-17x5lw"
+              <div
+                class="css-gb5m6n"
               >
-                <span
-                  class="css-pwugga"
-                >
-                  TAG
-                </span>
-              </span>
-            </a>
+                NEW
+              </div>
+            </span>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-15kf7hd"
+                data-testid="divider"
+              />
+            </div>
+            <span
+              class="css-btda8w"
+            >
+              <div
+                class="css-gb5m6n"
+              >
+                REVIEW
+              </div>
+            </span>
           </div>
           <a
             class="css-10h0i3c"
@@ -2135,8 +2986,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           <div
             class="css-diffbd"
           >
+            <div
+              class="css-122i4mv"
+            >
+              <span
+                class="css-1g58ijf"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  BREAKING
+                </div>
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-btda8w"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
+              </span>
+            </div>
             <a
-              class="css-bxykrz"
+              class="css-1wa082o"
               href="#"
               role="link"
             >
@@ -2165,20 +3047,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
       <div
         class="css-13byt3y"
       >
-        <a
-          class="css-1bmzwxr"
-          href="/"
-        >
-          <span
-            class="css-17x5lw"
-          >
-            <span
-              class="css-pwugga"
-            >
-              TAG
-            </span>
-          </span>
-        </a>
         <div
           class="css-e0a604"
         >
@@ -2188,6 +3056,71 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-19c9dcb"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    <svg
+                      class="css-ny3roy"
+                      fill="none"
+                      height="20"
+                      viewBox="0 0 22 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect
+                        fill="url(#pattern0)"
+                        height="24"
+                        width="22"
+                      />
+                      <defs>
+                        <pattern
+                          height="1"
+                          id="pattern0"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                        >
+                          <use
+                            transform="matrix(0.0454545 0 0 0.0416667 -0.0909091 0)"
+                            xlink:href="#image0_3031_245372"
+                          />
+                        </pattern>
+                        <image
+                          height="24"
+                          id="image0_3031_245372"
+                          width="24"
+                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA90lEQVR4nN2UPQrCQBCFPwJJZeElvI5GkZSexc6ot/AXbD2Incaf9LaihZUrC5NGk+wmEYQ8eE0yM2+Znwd1hwcEwAqIgIcwkm+BxJRCD4gBZeAF6BYp7AATi8Lqg2PJNWJaorgShjZtURXpZxX3pJ9VBeKswQeGxF0BkX6awNqQ5AAD4GohsEgTOBmSEjSAIfDMidV38oW7pUCCFrDJiNW1fiKwzYi9pQkcLQWasu95LTqkCSx/OOTZX9bUBc4VDkyZDg1xxSrFX0AbA8o4qRKOsIAj1lv05aGtXSfwLWeiHaBDSbiyEdpb9G7rY9TcA3P5p2NqjDd1yyIEG3kosgAAAABJRU5ErkJggg=="
+                        />
+                      </defs>
+                    </svg>
+                    VIDEO
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="#"
@@ -2224,6 +3157,37 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-1lqahog"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    BREAKING
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="#"
@@ -2315,6 +3279,51 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-u0xlwu"
+              >
+                <span
+                  class="css-t7ynxc"
+                >
+                  LIVE
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    INTERVIEW
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    MARTIN SAMUEL
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
@@ -2364,7 +3373,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-1vzvkql"
                 >
-                  4 min read
+                  4 minutes read
                 </span>
               </div>
             </div>
@@ -2409,8 +3418,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-122i4mv"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      NEW
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-bxykrz"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2471,8 +3511,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-122i4mv"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-bxykrz"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2542,8 +3613,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2619,8 +3721,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2663,8 +3796,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2726,8 +3890,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2792,8 +3987,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      BREAKING
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2888,8 +4114,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <div
                   class="css-diffbd"
                 >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-1g58ijf"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-btda8w"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
+                    </span>
+                  </div>
                   <a
-                    class="css-u57k3c"
+                    class="css-1wa082o"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2953,8 +4210,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <div
                   class="css-diffbd"
                 >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-1g58ijf"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        BREAKING
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-btda8w"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
+                    </span>
+                  </div>
                   <a
-                    class="css-u57k3c"
+                    class="css-1wa082o"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -3057,22 +4345,35 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-gpke1l"
         >
           <div
-            class="css-9fndha"
+            class="css-u0xlwu"
           >
-            <a
-              class="css-1bmzwxr"
-              href="/"
+            <span
+              class="css-1g58ijf"
             >
-              <span
-                class="css-17x5lw"
+              <div
+                class="css-gb5m6n"
               >
-                <span
-                  class="css-pwugga"
-                >
-                  TAG
-                </span>
-              </span>
-            </a>
+                NEW
+              </div>
+            </span>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-15kf7hd"
+                data-testid="divider"
+              />
+            </div>
+            <span
+              class="css-btda8w"
+            >
+              <div
+                class="css-gb5m6n"
+              >
+                REVIEW
+              </div>
+            </span>
           </div>
           <a
             class="css-10h0i3c"
@@ -3198,8 +4499,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           <div
             class="css-diffbd"
           >
+            <div
+              class="css-122i4mv"
+            >
+              <span
+                class="css-1g58ijf"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  BREAKING
+                </div>
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-btda8w"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
+              </span>
+            </div>
             <a
-              class="css-bxykrz"
+              class="css-1wa082o"
               href="#"
               role="link"
             >
@@ -3228,20 +4560,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
       <div
         class="css-13byt3y"
       >
-        <a
-          class="css-1bmzwxr"
-          href="/"
-        >
-          <span
-            class="css-17x5lw"
-          >
-            <span
-              class="css-pwugga"
-            >
-              TAG
-            </span>
-          </span>
-        </a>
         <div
           class="css-e0a604"
         >
@@ -3251,6 +4569,71 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-19c9dcb"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    <svg
+                      class="css-ny3roy"
+                      fill="none"
+                      height="20"
+                      viewBox="0 0 22 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect
+                        fill="url(#pattern0)"
+                        height="24"
+                        width="22"
+                      />
+                      <defs>
+                        <pattern
+                          height="1"
+                          id="pattern0"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                        >
+                          <use
+                            transform="matrix(0.0454545 0 0 0.0416667 -0.0909091 0)"
+                            xlink:href="#image0_3031_245372"
+                          />
+                        </pattern>
+                        <image
+                          height="24"
+                          id="image0_3031_245372"
+                          width="24"
+                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA90lEQVR4nN2UPQrCQBCFPwJJZeElvI5GkZSexc6ot/AXbD2Incaf9LaihZUrC5NGk+wmEYQ8eE0yM2+Znwd1hwcEwAqIgIcwkm+BxJRCD4gBZeAF6BYp7AATi8Lqg2PJNWJaorgShjZtURXpZxX3pJ9VBeKswQeGxF0BkX6awNqQ5AAD4GohsEgTOBmSEjSAIfDMidV38oW7pUCCFrDJiNW1fiKwzYi9pQkcLQWasu95LTqkCSx/OOTZX9bUBc4VDkyZDg1xxSrFX0AbA8o4qRKOsIAj1lv05aGtXSfwLWeiHaBDSbiyEdpb9G7rY9TcA3P5p2NqjDd1yyIEG3kosgAAAABJRU5ErkJggg=="
+                        />
+                      </defs>
+                    </svg>
+                    VIDEO
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="#"
@@ -3287,6 +4670,37 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-1lqahog"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    BREAKING
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="#"
@@ -3378,6 +4792,51 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-u0xlwu"
+              >
+                <span
+                  class="css-t7ynxc"
+                >
+                  LIVE
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    INTERVIEW
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    MARTIN SAMUEL
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
@@ -3427,7 +4886,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <span
                   class="css-1vzvkql"
                 >
-                  4 min read
+                  4 minutes read
                 </span>
               </div>
             </div>
@@ -3472,8 +4931,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-122i4mv"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      NEW
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-bxykrz"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3534,8 +5024,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-122i4mv"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-bxykrz"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3605,8 +5126,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3682,8 +5234,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3726,8 +5309,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3789,8 +5403,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      UPDATED
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3855,8 +5500,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               <div
                 class="css-diffbd"
               >
+                <div
+                  class="css-i1f2uq"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      BREAKING
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      Q&A
+                    </div>
+                  </span>
+                </div>
                 <a
-                  class="css-u57k3c"
+                  class="css-1wa082o"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3951,8 +5627,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <div
                   class="css-diffbd"
                 >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-1g58ijf"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-btda8w"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
+                    </span>
+                  </div>
                   <a
-                    class="css-u57k3c"
+                    class="css-1wa082o"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -4016,8 +5723,39 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <div
                   class="css-diffbd"
                 >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-1g58ijf"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        BREAKING
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-btda8w"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
+                    </span>
+                  </div>
                   <a
-                    class="css-u57k3c"
+                    class="css-1wa082o"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >

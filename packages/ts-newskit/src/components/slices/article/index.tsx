@@ -16,6 +16,7 @@ import {
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
+import { ArticleTileInfo } from '../shared/articleTileInfo';
 
 type ImageCrops = {
   url?: string;
@@ -37,13 +38,15 @@ export interface ArticleProps {
     label: string;
     href: string;
   };
+  contentType?: string;
+  articleLabel?: string;
+  expirableFlag?: string;
   flag?: string;
   hasTopBorder?: boolean;
   hideImage?: boolean;
   isLeadImage?: boolean;
   imageRight?: boolean;
   isFullWidth?: boolean;
-  articleTitleMarginTop?: string;
   titleTypographyPreset?: string;
   tagAndFlagMarginBlockStart?: string;
 }
@@ -71,13 +74,15 @@ export const Article = ({
     isLeadImage,
     imageRight,
     isFullWidth,
-    articleTitleMarginTop = 'space040',
     titleTypographyPreset = 'editorialHeadline020',
-    tagAndFlagMarginBlockStart = 'space040'
+    tagAndFlagMarginBlockStart = 'space040',
+    expirableFlag,
+    articleLabel,
+    contentType
   } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
-
+  const hasArticleTileInfo = expirableFlag || articleLabel || contentType;
   const cardImage = !hideImage &&
     imageWithCorrectRatio && {
       media: {
@@ -88,9 +93,8 @@ export const Article = ({
     };
 
   const CardMediaComponent = isLeadImage ? FullWidthCardMediaMob : CardMedia;
-  const titleMarginBlockStart =
-    imageRight || hideImage ? 'space000' : articleTitleMarginTop;
 
+  const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
     images &&
     images.crops &&
@@ -160,12 +164,20 @@ export const Article = ({
             </TextBlock>
           )}
         <Layout imageRight={imageRight || false}>
+          <ArticleTileInfo
+            contentType={contentType}
+            expirableFlag={expirableFlag}
+            articleLabel={articleLabel}
+            marginBlockStart={marginBlockStart}
+          />
           <CardHeadlineLink
             href={url}
             role="link"
             overrides={{
               typographyPreset: titleTypographyPreset,
-              marginBlockStart: titleMarginBlockStart
+              marginBlockStart: hasArticleTileInfo
+                ? 'space020'
+                : marginBlockStart
             }}
             external={false}
             onClick={onClick}

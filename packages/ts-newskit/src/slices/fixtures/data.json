@@ -1,9 +1,8 @@
 {
   "leadArticle": {
-    "tagL1": {
-      "label": "",
-      "href": ""
-    },
+    "contentType": "Interview",
+    "articleLabel": "Martin Samuel",
+    "expirableFlag": "live",
     "id": "1",
     "headline": "Sarcacens an inclusive club? They didnt look out for me",
     "shortSummary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
@@ -48,6 +47,9 @@
   },
   "articles": [
     {
+      "contentType": "Profile",
+      "articleLabel": "",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -89,6 +91,9 @@
       "flag": ""
     },
     {
+      "contentType": "Review",
+      "articleLabel": "",
+      "expirableFlag": "exclusive",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -130,6 +135,9 @@
       "flag": ""
     },
     {
+      "contentType": "Q&A",
+      "articleLabel": "",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -171,6 +179,9 @@
       "flag": ""
     },
     {
+      "contentType": "Review",
+      "articleLabel": "",
+      "expirableFlag": "exclusive",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -214,6 +225,9 @@
   ],
   "stackedModule1Articles": [
     {
+      "contentType": "Profile",
+      "articleLabel": "",
+      "expirableFlag": "New",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -255,6 +269,9 @@
       "flag": ""
     },
     {
+      "contentType": "Review",
+      "articleLabel": "",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -296,6 +313,9 @@
       "flag": "Flag"
     },
     {
+      "contentType": "Q&A",
+      "articleLabel": "",
+      "expirableFlag": "exclusive",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -337,6 +357,9 @@
       "flag": ""
     },
     {
+      "contentType": "Review",
+      "articleLabel": "",
+      "expirableFlag": "exclusive",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -378,6 +401,9 @@
       "flag": "Flag"
     },
     {
+      "contentType": "Review",
+      "articleLabel": "",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -419,6 +445,9 @@
       "flag": ""
     },
     {
+      "contentType": "Review",
+      "articleLabel": "",
+      "expirableFlag": "New",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -460,6 +489,9 @@
       "flag": "Flag"
     },
     {
+      "contentType": "Review",
+      "articleLabel": "",
+      "expirableFlag": "exclusive",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -501,6 +533,9 @@
       "flag": ""
     },
     {
+      "contentType": "Q&A",
+      "articleLabel": "",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -627,6 +662,9 @@
     },
     "articles": [
       {
+        "contentType": "Q&A",
+        "articleLabel": "",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -668,6 +706,9 @@
         "flag": ""
       },
       {
+        "contentType": "Review",
+        "articleLabel": "",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -709,6 +750,9 @@
         "flag": ""
       },
       {
+        "contentType": "Review",
+        "articleLabel": "",
+        "expirableFlag": "New",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -758,6 +802,9 @@
     },
     "articles": [
       {
+        "contentType": "Review",
+        "articleLabel": "",
+        "expirableFlag": "exclusive",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -799,6 +846,9 @@
         "flag": ""
       },
       {
+        "contentType": "Review",
+        "articleLabel": "",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -840,6 +890,9 @@
         "flag": ""
       },
       {
+        "contentType": "Review",
+        "articleLabel": "",
+        "expirableFlag": "New",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -889,6 +942,9 @@
     },
     "articles": [
       {
+        "contentType": "Review",
+        "articleLabel": "",
+        "expirableFlag": "exclusive",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -930,6 +986,9 @@
         "flag": ""
       },
       {
+        "contentType": "Review",
+        "articleLabel": "",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -971,6 +1030,9 @@
         "flag": ""
       },
       {
+        "contentType": "Review",
+        "articleLabel": "",
+        "expirableFlag": "exclusive",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -1020,6 +1082,9 @@
     },
     "articles": [
       {
+        "contentType": "Review",
+        "articleLabel": "",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -1061,6 +1126,9 @@
         "flag": ""
       },
       {
+        "contentType": "Review",
+        "articleLabel": "",
+        "expirableFlag": "New",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
@@ -1102,6 +1170,9 @@
         "flag": ""
       },
       {
+        "contentType": "Interview",
+        "articleLabel": "",
+        "expirableFlag": "Breaking",
         "images": {
           "alt": "",
           "credits": "Gareth Fuller/Press Association",
