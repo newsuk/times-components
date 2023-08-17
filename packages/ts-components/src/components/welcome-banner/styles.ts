@@ -8,13 +8,13 @@ export const WelcomeBannerContainer = styled.div`
   width: 100%;
   margin-bottom: 28px;
   padding: 16px 34px;
-  border: 1px solid ${colours.functional.primary};
+  background-color: ${colours.functional.bannerBackground};
 `;
 
 export const Title = styled.div`
   color: ${colours.functional.greyText};
   font-family: ${fonts.headline};
-  font-size: 28px;
+  font-size: 40px;
   line-height: 31px;
   text-align: center;
 `;
