@@ -21,7 +21,8 @@ const data = {
   readyToPlayText: 'Listen to article',
   playingText: 'Playing',
   narrator: 'James Marriott',
-  headline: 'Article headline'
+  headline: 'Article headline',
+  showAudioPlayer: true
 };
 
 const renderComponent = (props: InArticleAudioProps) =>

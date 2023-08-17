@@ -63,9 +63,9 @@ const ArticleHeader = ({
       publicationName={publicationName}
       publishedTime={publishedTime}
     />
-    {showAudioPlayer && (
       <TCThemeProvider>
         <InArticleAudio
+          showAudioPlayer={showAudioPlayer}
           src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
           readyToPlayText="Listen to article"
           playingText="Playing"
@@ -80,7 +80,6 @@ const ArticleHeader = ({
           }}
         />
       </TCThemeProvider>
-    )}
   </HeaderContainer>
 );
 
