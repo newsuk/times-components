@@ -77,7 +77,6 @@ export const LeadStory1 = ({
           ? 'editorialHeadline050'
           : 'editorialHeadline060',
     hideImage: !screenXsAndSm,
-    isLeadImage: screenXsAndSm,
     imageTop: true
   };
 

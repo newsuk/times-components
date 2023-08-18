@@ -257,6 +257,13 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: 1.5,
       fontSize: '12px',
       letterSpacing: '0em'
+    },
+    customUtilityMeta: {
+      fontFamily: 'Roboto',
+      fontWeight: 400,
+      lineHeight: 1.286,
+      fontSize: '1.4rem',
+      letterSpacing: '0em'
     }
   })
 );
