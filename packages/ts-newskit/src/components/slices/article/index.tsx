@@ -176,7 +176,7 @@ export const Article = ({
             overrides={{
               typographyPreset: titleTypographyPreset,
               marginBlockStart: hasArticleTileInfo
-                ? 'space020'
+                ? 'space030'
                 : marginBlockStart
             }}
             external={false}

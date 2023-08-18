@@ -77,7 +77,6 @@ export const LeadStory1 = ({
           ? 'editorialHeadline050'
           : 'editorialHeadline060',
     hideImage: !screenXsAndSm,
-    isLeadImage: screenXsAndSm,
     imageTop: true
   };
 
@@ -88,7 +87,7 @@ export const LeadStory1 = ({
     isLeadImage: true,
     headlineTypographyPreset: screenXsAndSm
       ? 'editorialHeadline040'
-      : 'editorialHeadline030'
+      : 'customEditorialHeadline030'
   };
 
   const modifiedSingleArticle = {
