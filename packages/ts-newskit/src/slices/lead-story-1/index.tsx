@@ -87,7 +87,7 @@ export const LeadStory1 = ({
     isLeadImage: true,
     headlineTypographyPreset: screenXsAndSm
       ? 'editorialHeadline040'
-      : 'editorialHeadline030'
+      : 'customEditorialHeadline030'
   };
 
   const modifiedSingleArticle = {
