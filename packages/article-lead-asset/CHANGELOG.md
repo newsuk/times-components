@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.17.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.16.7...@times-components/article-lead-asset@1.17.0) (2023-08-18)
+
+
+### Features
+
+* **TMRX-1268:** update article audio to toggle by class ([#3496](https://github.com/newsuk/times-components/issues/3496)) ([eb2c76f](https://github.com/newsuk/times-components/commit/eb2c76f2d2025a33f09a079042947bdae496413c))
+
+
+
+
+
 ## [1.16.7](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.16.6...@times-components/article-lead-asset@1.16.7) (2023-08-16)
 
 **Note:** Version bump only for package @times-components/article-lead-asset
