@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.69.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.68.4...@times-components/article-main-comment@2.69.0) (2023-08-18)
+
+
+### Features
+
+* **TMRX-1268:** update article audio to toggle by class ([#3496](https://github.com/newsuk/times-components/issues/3496)) ([eb2c76f](https://github.com/newsuk/times-components/commit/eb2c76f2d2025a33f09a079042947bdae496413c))
+
+
+
+
+
 ## [2.68.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.68.3...@times-components/article-main-comment@2.68.4) (2023-08-17)
 
 **Note:** Version bump only for package @times-components/article-main-comment
