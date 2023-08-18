@@ -29,6 +29,5 @@ export type SecondaryMenuOptions = {
 };
 
 export type NavItemMobileContainerProp = {
-  withScroll?: boolean
   height: string
 }

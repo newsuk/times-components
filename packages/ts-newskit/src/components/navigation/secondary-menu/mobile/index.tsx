@@ -9,8 +9,7 @@ export const SecondaryNavMobile: React.FC<{
     options: SecondaryMenuOptions;
     data: SecondaryMenuItem[];
     onClick?: (isExpanded: boolean) => void;
-    withScroll?: boolean;
-}> = ({ options, data, onClick, withScroll = false }) => {
+}> = ({ options, data, onClick }) => {
     const { isExpanded, isSelected } = options;
     const subMenuTitle = isExpanded ? 'Close' : 'See all';
     const navRef = useRef<HTMLDivElement>(null);
@@ -48,7 +47,6 @@ export const SecondaryNavMobile: React.FC<{
             />
             {isExpanded ? (
                 <NavItemMobileContainer
-                    withScroll={withScroll}
                     height={height}
                     ref={navRef}
                 >

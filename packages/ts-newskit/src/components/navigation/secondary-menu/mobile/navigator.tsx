@@ -28,7 +28,7 @@ export const Navigator: React.FC<{
         expanded={isExpanded}
         onClick={() => {
           setIsExpanded(!isExpanded);
-          onClick?.(!isExpanded)
+          onClick && onClick(!isExpanded)
         }}
         overrides={{
           marginBlockStart: 'space020',

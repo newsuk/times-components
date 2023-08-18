@@ -23,7 +23,7 @@ export const NavItems: React.FC<{
           }}
           href={url}
           id={`vertical-${slug}`}
-          onClick={() => handleSelect(title)}
+          onClick={() => handleSelect(slug)}
           key={slug}
         >
           {title}

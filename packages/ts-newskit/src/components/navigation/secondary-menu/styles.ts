@@ -99,5 +99,5 @@ export const NavItemsContainer = styled.div`
 
 export const NavItemMobileContainer = styled.div<NavItemMobileContainerProp>`
     height:  ${({ height }) => height};
-    overflow-y: ${({ withScroll }) => `${withScroll ? 'scroll': 'visible'}`};
+    overflow-y: 'scroll';
     `;
