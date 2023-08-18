@@ -24,6 +24,7 @@ type FeedbackProps = {
   thankyouMessage: string;
 };
 export interface InArticleAudioProps {
+  showAudioPlayer?: boolean;
   src: string;
   playingText?: string;
   readyToPlayText?: string;
@@ -33,6 +34,7 @@ export interface InArticleAudioProps {
 }
 
 export const InArticleAudio = ({
+  showAudioPlayer,
   src,
   readyToPlayText = 'Listen to article',
   playingText = 'Playing',
@@ -78,7 +80,12 @@ export const InArticleAudio = ({
   );
 
   return (
-    <AudioPlayerContainer ref={audioRef}>
+    <AudioPlayerContainer
+      ref={audioRef}
+      className={
+        showAudioPlayer ? 'opShow_articleAudio' : 'opHide_articleAudio'
+      }
+    >
       <AudioPlayerComposable src={src}>
         <Stack flow="horizontal-center" marginBlock="space040">
           <AudioPlayerPlayPauseButton

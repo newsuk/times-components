@@ -19,10 +19,9 @@ export type ArticleProps = {
   headline: string;
   flag?: string;
   standfirst?: string;
-  tagL1?: {
-    label: string;
-    href: string;
-  };
+  contentType?: string;
+  articleLabel?: string;
+  expirableFlag?: string;
   images?: ImageProps;
   url: string;
   tag?: {
@@ -39,7 +38,6 @@ export type ArticleProps = {
   textBlockMarginBlockStart?: string;
   tagAndFlagMarginBlockStart?: string;
   listData?: ListData[];
-  showTagL1?: boolean;
   hideImage?: boolean;
 };
 

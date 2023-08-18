@@ -57,7 +57,7 @@ describe('Render Lead Story 1 Slice', () => {
     const articleContainer = screen.getByTestId('article-container');
     const articleItem4 = articleContainer.lastElementChild!
       .previousElementSibling;
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
   });
 
   test("articleTopBorder renders correctly below 'lg' breakpoint", () => {
@@ -73,7 +73,7 @@ describe('Render Lead Story 1 Slice', () => {
     renderComponentLarge('lg');
     const articleContainer = screen.getByTestId('article-container');
     const articleItem4 = articleContainer.lastElementChild;
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(3);
   });
   test('renders article container with correct data-testid', () => {
     (useBreakpointKey as any).mockReturnValue('xl');

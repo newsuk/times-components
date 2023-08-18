@@ -27,6 +27,37 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               <div
                 class="css-gpke1l"
               >
+                <div
+                  class="css-3kejzs"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      NEW
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
+                  </span>
+                </div>
                 <a
                   class="css-10h0i3c"
                   href="https://www.thetimes.co.uk"
@@ -44,7 +75,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 <p
                   class="css-1nrveqv"
                 >
-                  Short paragraph description of the article, outlining main story and focus.
+                  160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
                   class="css-1atazsr"
@@ -104,6 +135,37 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               <div
                 class="css-gpke1l"
               >
+                <div
+                  class="css-3kejzs"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
+                  </span>
+                </div>
                 <a
                   class="css-10h0i3c"
                   href="https://www.thetimes.co.uk"
@@ -121,7 +183,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 <p
                   class="css-1nrveqv"
                 >
-                  Short paragraph description of the article, outlining main story and focus.
+                  160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
                   class="css-1atazsr"
@@ -193,7 +255,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             class="css-6wqjuf"
           >
             <div
-              class="css-1l8qede"
+              class="css-j6pksw"
             >
               <div
                 class="css-uxw9nr"
@@ -215,6 +277,37 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-3kejzs"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
@@ -232,7 +325,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               <p
                 class="css-1nrveqv"
               >
-                Short paragraph description of the article, outlining main story and focus.
+                160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
               </p>
               <div
                 class="css-1atazsr"
@@ -295,7 +388,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             class="css-6wqjuf"
           >
             <div
-              class="css-1l8qede"
+              class="css-j6pksw"
             >
               <div
                 class="css-uxw9nr"
@@ -317,6 +410,37 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-3kejzs"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    INTERVIEW
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
@@ -334,7 +458,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               <p
                 class="css-1nrveqv"
               >
-                Short paragraph description of the article, outlining main story and focus.
+                160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
               </p>
               <div
                 class="css-1atazsr"
@@ -405,6 +529,37 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               <div
                 class="css-gpke1l"
               >
+                <div
+                  class="css-3kejzs"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      NEW
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      PROFILE
+                    </div>
+                  </span>
+                </div>
                 <a
                   class="css-10h0i3c"
                   href="https://www.thetimes.co.uk"
@@ -422,7 +577,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 <p
                   class="css-1nrveqv"
                 >
-                  Short paragraph description of the article, outlining main story and focus.
+                  160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
                   class="css-1atazsr"
@@ -482,6 +637,37 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               <div
                 class="css-gpke1l"
               >
+                <div
+                  class="css-3kejzs"
+                >
+                  <span
+                    class="css-1g58ijf"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      EXCLUSIVE
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-btda8w"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      REVIEW
+                    </div>
+                  </span>
+                </div>
                 <a
                   class="css-10h0i3c"
                   href="https://www.thetimes.co.uk"
@@ -499,7 +685,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 <p
                   class="css-1nrveqv"
                 >
-                  Short paragraph description of the article, outlining main story and focus.
+                  160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
                   class="css-1atazsr"
@@ -571,7 +757,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             class="css-6wqjuf"
           >
             <div
-              class="css-1l8qede"
+              class="css-j6pksw"
             >
               <div
                 class="css-uxw9nr"
@@ -593,6 +779,37 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-3kejzs"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
@@ -610,7 +827,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               <p
                 class="css-1nrveqv"
               >
-                Short paragraph description of the article, outlining main story and focus.
+                160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
               </p>
               <div
                 class="css-1atazsr"
@@ -673,7 +890,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             class="css-6wqjuf"
           >
             <div
-              class="css-1l8qede"
+              class="css-j6pksw"
             >
               <div
                 class="css-uxw9nr"
@@ -695,6 +912,37 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             <div
               class="css-gpke1l"
             >
+              <div
+                class="css-3kejzs"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    INTERVIEW
+                  </div>
+                </span>
+              </div>
               <a
                 class="css-10h0i3c"
                 href="https://www.thetimes.co.uk"
@@ -712,7 +960,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               <p
                 class="css-1nrveqv"
               >
-                Short paragraph description of the article, outlining main story and focus.
+                160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
               </p>
               <div
                 class="css-1atazsr"

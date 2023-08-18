@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.12.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.11.0...@times-components/jest-serializer@3.12.0) (2023-08-18)
+
+
+### Features
+
+* **TMRX-1268:** update article audio to toggle by class ([#3496](https://github.com/newsuk/times-components/issues/3496)) ([eb2c76f](https://github.com/newsuk/times-components/commit/eb2c76f2d2025a33f09a079042947bdae496413c))
+
+
+
+
+
+# [3.11.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.10.1...@times-components/jest-serializer@3.11.0) (2023-08-16)
+
+
+### Features
+
+* **TMRX-1388:** updated typography for dropdown active state ([#3489](https://github.com/newsuk/times-components/issues/3489)) ([b339e33](https://github.com/newsuk/times-components/commit/b339e3350a890223da7bfd9a782653933d277198))
+
+
+
+
+
 ## [3.10.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.10.0...@times-components/jest-serializer@3.10.1) (2023-08-11)
 
 

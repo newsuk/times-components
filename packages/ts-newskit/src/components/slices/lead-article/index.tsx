@@ -3,20 +3,19 @@ import {
   Block,
   CardContent,
   CardComposable,
-  Divider,
-  Hidden
+  Divider
 } from 'newskit';
 import React from 'react';
 import {
   CardHeadlineLink,
   FullWidthCardMediaMob,
-  StyledSpan,
-  TextLink
+  StyledSpan
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
+import { ArticleTileInfo } from '../shared/articleTileInfo';
 
 type ImageCrops = {
   url?: string;
@@ -39,10 +38,9 @@ export interface LeadArticleProps {
   headline: string;
   flag?: string;
   shortSummary?: string;
-  tagL1?: {
-    label: string;
-    href: string;
-  };
+  contentType?: string;
+  articleLabel?: string;
+  expirableFlag?: string;
   images?: ImageProps;
   url: string;
   tag?: {
@@ -59,7 +57,6 @@ export interface LeadArticleProps {
   textBlockMarginBlockStart?: string;
   tagAndFlagMarginBlockStart?: string;
   listData?: ListData[];
-  showTagL1?: boolean;
   hideImage?: boolean;
 }
 
@@ -75,7 +72,7 @@ export const LeadArticle = ({
     headline,
     flag,
     shortSummary,
-    tagL1,
+    contentType,
     images,
     url,
     tag,
@@ -89,8 +86,9 @@ export const LeadArticle = ({
     textBlockMarginBlockStart = 'space040',
     tagAndFlagMarginBlockStart = 'space040',
     listData,
-    showTagL1,
-    hideImage
+    hideImage,
+    expirableFlag,
+    articleLabel
   } = article;
   const imageWithCorrectRatio =
     images && images.crops
@@ -153,14 +151,14 @@ export const LeadArticle = ({
       {hasImage &&
         !hideImage && (
           <Block
-            marginBlockEnd={imageTop ? 'space050' : 'space000'}
+            marginBlockEnd={imageTop ? 'space040' : 'space000'}
             marginBlockStart={imageMarginBlockStart}
           >
             <FullWidthCardMediaMob {...cardImage} />
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"
-                typographyPreset="utilityMeta010"
+                typographyPreset="customUtilityMeta"
               >
                 {images && images.caption}
                 {images &&
@@ -186,23 +184,12 @@ export const LeadArticle = ({
             }}
           />
         )}
-
-        {tagL1 &&
-          tagL1.label !== '' && (
-            <Hidden xs={showTagL1} sm={showTagL1}>
-              <TextLink
-                overrides={{
-                  typographyPreset: 'utilityButton010',
-                  stylePreset: 'inkBrand010',
-                  marginBlockEnd: 'space040'
-                }}
-                href={tagL1.href}
-              >
-                {tagL1.label}
-              </TextLink>
-            </Hidden>
-          )}
-
+        <ArticleTileInfo
+          contentType={contentType}
+          expirableFlag={expirableFlag}
+          articleLabel={articleLabel}
+          marginBlockEnd="space030"
+        />
         <CardHeadlineLink
           href={url}
           overrides={{

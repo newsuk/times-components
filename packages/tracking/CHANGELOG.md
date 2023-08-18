@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.21.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.6...@times-components/tracking@2.21.0) (2023-08-18)
+
+
+### Features
+
+* **TMRX-1268:** update article audio to toggle by class ([#3496](https://github.com/newsuk/times-components/issues/3496)) ([eb2c76f](https://github.com/newsuk/times-components/commit/eb2c76f2d2025a33f09a079042947bdae496413c))
+
+
+
+
+
+## [2.20.6](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.5...@times-components/tracking@2.20.6) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.20.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.4...@times-components/tracking@2.20.5) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
 ## [2.20.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.3...@times-components/tracking@2.20.4) (2023-08-11)
 
 

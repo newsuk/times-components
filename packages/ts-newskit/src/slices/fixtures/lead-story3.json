@@ -1,6 +1,9 @@
 {
   "articles": [
     {
+      "contentType": "Profile",
+      "articleLabel": "",
+      "expirableFlag": "live",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -42,6 +45,9 @@
       "flag": "Flag1"
     },
     {
+      "contentType": "Review",
+      "articleLabel": "",
+      "expirableFlag": "Exclusive",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -83,6 +89,9 @@
       "flag": ""
     },
     {
+      "contentType": "Interview",
+      "articleLabel": "",
+      "expirableFlag": "Breaking",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -124,6 +133,9 @@
       "flag": ""
     },
     {
+      "contentType": "Q&A",
+      "articleLabel": "",
+      "expirableFlag": "Exclusive",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -165,6 +177,9 @@
       "flag": "Flag4"
     },
     {
+      "contentType": "Q&A",
+      "articleLabel": "",
+      "expirableFlag": "Breaking",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -208,10 +223,9 @@
   ],
   "leadArticles": [
     {
-      "tagL1": {
-        "label": "",
-        "href": ""
-      },
+      "contentType": "Review",
+      "articleLabel": "",
+      "expirableFlag": "New",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -245,7 +259,7 @@
       },
       "headline": "Short title of the card describing the main content",
       "id": "21234567",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -255,10 +269,9 @@
       "listData": []
     },
     {
-      "tagL1": {
-        "label": "",
-        "href": ""
-      },
+      "contentType": "Interview",
+      "articleLabel": "",
+      "expirableFlag": "Exclusive",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -292,7 +305,7 @@
       },
       "headline": "Short title of the card describing the main content",
       "id": "212345678",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -302,10 +315,9 @@
       "listData": []
     },
     {
-      "tagL1": {
-        "label": "",
-        "href": ""
-      },
+      "contentType": "Profile",
+      "articleLabel": "",
+      "expirableFlag": "New",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -339,7 +351,7 @@
       },
       "headline": "Short title of the card describing the main content",
       "id": "2123456789",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -349,10 +361,9 @@
       "listData": []
     },
     {
-      "tagL1": {
-        "label": "",
-        "href": ""
-      },
+      "contentType": "Review",
+      "articleLabel": "",
+      "expirableFlag": "Updated",
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -386,7 +397,7 @@
       },
       "headline": "Short title of the card describing the main content",
       "id": "21234567891",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -397,10 +408,9 @@
     }
   ],
   "leadArticle": {
-    "tagL1": {
-      "label": "",
-      "href": ""
-    },
+    "contentType": "Profile",
+    "articleLabel": "",
+    "expirableFlag": "Exclusive",
     "images": {
       "alt": "",
       "credits": "Gareth Fuller/Press Association",
@@ -434,7 +444,7 @@
     },
     "headline": "Short title of the card describing the main content",
     "id": "21234567892",
-    "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+    "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
     "url": "https://www.thetimes.co.uk",
     "tag": {
       "label": "Tag",

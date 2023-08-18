@@ -46,7 +46,7 @@ describe('Content Bucket 1 Articles list ', () => {
     const articleHR = articleContainer.lastElementChild;
 
     expect(articleHR).toHaveAttribute('data-testid', 'divider');
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
   });
 
   test("articleTopBorder renders correctly at 'xl' breakpoint", () => {
@@ -58,8 +58,8 @@ describe('Content Bucket 1 Articles list ', () => {
     const articleItem4 = articleContainer.lastElementChild!
       .previousElementSibling;
 
-    expect(articleItem1!.getElementsByTagName('hr').length).toBe(0);
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
+    expect(articleItem1!.getElementsByTagName('hr').length).toBe(1);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
   });
 
   test("articleTopBorder renders correctly below 'lg' breakpoint", () => {
@@ -80,7 +80,7 @@ describe('Content Bucket 1 Articles list ', () => {
     const articleItem1 = articleContainer.firstElementChild;
     const articleItem4 = articleContainer.lastElementChild;
 
-    expect(articleItem1!.getElementsByTagName('hr').length).toBe(0);
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
+    expect(articleItem1!.getElementsByTagName('hr').length).toBe(1);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
   });
 });

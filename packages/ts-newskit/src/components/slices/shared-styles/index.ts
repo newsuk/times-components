@@ -8,8 +8,10 @@ import {
   getSpacingCssFromTheme,
   getMediaQueryFromTheme,
   LinkInline,
-  Hidden
+  Hidden,
+  TextBlock
 } from 'newskit';
+import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
 export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
   ${({ $color }) => getColorCssFromTheme('color', $color || 'inkContrast')};
@@ -69,4 +71,22 @@ export const StyledSpan = styled.span<{ hasCaption: boolean }>`
       : getSpacingCssFromTheme(setInlinePaddingStart, 'space000')};
   font-weight: 300;
   font-size: 1.2rem;
+`;
+
+export const StyledTextBlock = styled(TextBlock)`
+  background-color: ${TheTimesLight.colors.interactiveNegative030};
+  color: ${TheTimesLight.colors.interactiveInverse030};
+  border-radius: 2px;
+`;
+
+export const StyledBlock = styled(Block)<{ hasVideoIcon?: boolean }>`
+  display: ${({ hasVideoIcon }) => (hasVideoIcon ? 'flex' : 'inline-block')};
+  align-items: ${({ hasVideoIcon }) =>
+    hasVideoIcon ? 'last baseline' : 'initial'};
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  ${getSpacingCssFromTheme('gap', 'space010')};
 `;

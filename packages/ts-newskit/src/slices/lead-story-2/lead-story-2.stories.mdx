@@ -24,11 +24,11 @@ This takes in a series of props, as below, to display the part of the slices.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const LeadStory2Story = ({ leadArticle, articles, theme, verticalArticles, horizontalArticles, gridOverlay, clickHandler }) => (
+export const LeadStory2Story = ({ leadArticle, articles, theme, verticalArticles, horizontalArticles, gridOverlay, clickHandler, expirableFlag, contentType, articleLabel }) => (
   <TCThemeProvider theme={theme}>
     <>
      <GridOverlay show={gridOverlay} />
-     <LeadStory2 {...{ leadArticle, articles, verticalArticles, horizontalArticles, clickHandler }} />
+     <LeadStory2 {...{ leadArticle, articles, verticalArticles, horizontalArticles, clickHandler, expirableFlag, contentType, articleLabel }} />
     </>
   </TCThemeProvider>
 );
@@ -43,7 +43,10 @@ LeadStory2Story.args = {
     articles,
     verticalArticles,
     horizontalArticles,
-    clickHandler: action("ClickHandler")
+    clickHandler: action("ClickHandler"),
+    expirableFlag:"BREAKING",
+    contentType:"Q&A",
+    articleLabel:"MARTIN SAMUAL",
   }}
   argTypes={{
     theme: {

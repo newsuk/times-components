@@ -3,6 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.84.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.83.0...@times-components/ts-newskit@1.84.0) (2023-08-18)
+
+
+### Features
+
+* **TMRX-1400:** implement design feedback ([#3498](https://github.com/newsuk/times-components/issues/3498)) ([d49b103](https://github.com/newsuk/times-components/commit/d49b1031ad19f263c7a29ba6e0ca6f4ef16c8b0b))
+
+
+
+
+
+# [1.83.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.82.0...@times-components/ts-newskit@1.83.0) (2023-08-18)
+
+
+### Features
+
+* **TMRX-1268:** update article audio to toggle by class ([#3496](https://github.com/newsuk/times-components/issues/3496)) ([eb2c76f](https://github.com/newsuk/times-components/commit/eb2c76f2d2025a33f09a079042947bdae496413c))
+
+
+
+
+
+# [1.82.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.81.0...@times-components/ts-newskit@1.82.0) (2023-08-17)
+
+
+### Features
+
+* **TMRX-1400:** Implement category labels flags above the headline ([#3495](https://github.com/newsuk/times-components/issues/3495)) ([506b900](https://github.com/newsuk/times-components/commit/506b900d6c592c3d701078cfe0c58d2ea8a18a72))
+
+
+
+
+
+# [1.81.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.80.1...@times-components/ts-newskit@1.81.0) (2023-08-16)
+
+
+### Features
+
+* **TMRX-1388:** updated typography for dropdown active state ([#3489](https://github.com/newsuk/times-components/issues/3489)) ([b339e33](https://github.com/newsuk/times-components/commit/b339e3350a890223da7bfd9a782653933d277198))
+
+
+
+
+
+## [1.80.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.80.0...@times-components/ts-newskit@1.80.1) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+# [1.80.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.79.1...@times-components/ts-newskit@1.80.0) (2023-08-15)
+
+
+### Features
+
+* **TMRX-1386:** Fixed inconsistent padding between elements in L2 Nav ([#3488](https://github.com/newsuk/times-components/issues/3488)) ([6e814cf](https://github.com/newsuk/times-components/commit/6e814cfe9443cb52d544aad6b1cbbcbb8e53aa39))
+
+
+
+
+
 ## [1.79.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.79.0...@times-components/ts-newskit@1.79.1) (2023-08-11)
 
 

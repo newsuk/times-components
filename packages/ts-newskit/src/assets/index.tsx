@@ -17,6 +17,7 @@ import ThumbsDownIcon from './ThumbsDown';
 import ThumbsUpIcon from './ThumbsUp';
 import TooltipIcon from './TooltipIcon';
 import FilledArrowIcon from './FilledArrowIcon';
+import VideoIcon from './VideoIcon';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -109,4 +110,9 @@ export const NewsKitFilledArrowIcon = customToNewsKitIcon(
 export const NewsKitFilledArrowIconDown = customToNewsKitIcon(
   'NewsKitFilledArrowIconDown',
   props => <FilledArrowIconDown {...props} />
+);
+
+export const NewsKitVideoButtonIcon = customToNewsKitIcon(
+  'NewsKitVideoButtonIcon',
+  props => <VideoIcon {...props} />
 );

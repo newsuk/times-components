@@ -32,10 +32,6 @@ export interface LeadStory1Props {
   articles: ArticleProps[];
   groupedArticles: {
     articles: LeadArticleProps[];
-    tagL1: {
-      label: string;
-      href: string;
-    };
   };
   smallArticles: ArticleProps[];
   singleArticle: ArticleProps;
@@ -80,7 +76,6 @@ export const LeadStory1 = ({
         : currentBreakpoint === 'sm'
           ? 'editorialHeadline050'
           : 'editorialHeadline060',
-    showTagL1: false,
     hideImage: !screenXsAndSm,
     imageTop: true
   };
@@ -89,9 +84,10 @@ export const LeadStory1 = ({
     ...leadArticle,
     hasTopBorder: false,
     imageTop: true,
+    isLeadImage: true,
     headlineTypographyPreset: screenXsAndSm
       ? 'editorialHeadline040'
-      : 'editorialHeadline030'
+      : 'customEditorialHeadline030'
   };
 
   const modifiedSingleArticle = {

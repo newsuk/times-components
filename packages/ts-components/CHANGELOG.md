@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.78.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.7...@times-components/ts-components@1.78.0) (2023-08-18)
+
+
+### Features
+
+* **TMG-914:** Update welcome banner design ([#3497](https://github.com/newsuk/times-components/issues/3497)) ([2d79a74](https://github.com/newsuk/times-components/commit/2d79a74166875b309bf5fa91ebee980801082500))
+
+
+
+
+
+## [1.77.7](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.6...@times-components/ts-components@1.77.7) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.77.6](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.5...@times-components/ts-components@1.77.6) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.77.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.4...@times-components/ts-components@1.77.5) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 ## [1.77.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.3...@times-components/ts-components@1.77.4) (2023-08-11)
 
 **Note:** Version bump only for package @times-components/ts-components

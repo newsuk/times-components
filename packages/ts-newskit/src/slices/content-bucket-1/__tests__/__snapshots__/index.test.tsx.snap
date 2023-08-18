@@ -43,7 +43,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               </picture>
             </div>
             <p
-              class="css-9pk24b"
+              class="css-18bm9yp"
             >
               Sarcacens an inclusive club? They didnt look
               <span
@@ -61,6 +61,51 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-tk98gp"
               data-testid="divider"
             />
+            <div
+              class="css-3kejzs"
+            >
+              <span
+                class="css-t7ynxc"
+              >
+                LIVE
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-btda8w"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  INTERVIEW
+                </div>
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-btda8w"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  MARTIN SAMUEL
+                </div>
+              </span>
+            </div>
             <a
               class="css-10h0i3c"
               href="https://www.thetimes.co.uk"
@@ -78,7 +123,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             <p
               class="css-1nrveqv"
             >
-              Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
+              160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
             </p>
             <div
               class="css-1atazsr"
@@ -298,8 +343,39 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-diffbd"
             >
+              <div
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    PROFILE
+                  </div>
+                </span>
+              </div>
               <a
-                class="css-u57k3c"
+                class="css-17mo6gr"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 role="link"
               >
@@ -337,8 +413,39 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-diffbd"
             >
+              <div
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
               <a
-                class="css-u57k3c"
+                class="css-17mo6gr"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 role="link"
               >
@@ -385,8 +492,39 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-diffbd"
             >
+              <div
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
+                </span>
+              </div>
               <a
-                class="css-u57k3c"
+                class="css-17mo6gr"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 role="link"
               >
@@ -433,8 +571,39 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             <div
               class="css-diffbd"
             >
+              <div
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-1g58ijf"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-btda8w"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
               <a
-                class="css-u57k3c"
+                class="css-17mo6gr"
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                 role="link"
               >
@@ -621,7 +790,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
           class="css-6wqjuf"
         >
           <div
-            class="css-1l8qede"
+            class="css-j6pksw"
           >
             <div
               class="css-uxw9nr"
@@ -640,7 +809,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
               </picture>
             </div>
             <p
-              class="css-9pk24b"
+              class="css-18bm9yp"
             >
               Sarcacens an inclusive club? They didnt look
               <span
@@ -653,6 +822,51 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
           <div
             class="css-gpke1l"
           >
+            <div
+              class="css-3kejzs"
+            >
+              <span
+                class="css-t7ynxc"
+              >
+                LIVE
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-btda8w"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  INTERVIEW
+                </div>
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-btda8w"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  MARTIN SAMUEL
+                </div>
+              </span>
+            </div>
             <a
               class="css-10h0i3c"
               href="https://www.thetimes.co.uk"
@@ -670,7 +884,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
             <p
               class="css-1nrveqv"
             >
-              Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
+              160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
             </p>
             <div
               class="css-1atazsr"
@@ -897,8 +1111,39 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 <div
                   class="css-diffbd"
                 >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-1g58ijf"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-btda8w"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        PROFILE
+                      </div>
+                    </span>
+                  </div>
                   <a
-                    class="css-u57k3c"
+                    class="css-17mo6gr"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -941,8 +1186,39 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 <div
                   class="css-diffbd"
                 >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-1g58ijf"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        EXCLUSIVE
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-btda8w"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        REVIEW
+                      </div>
+                    </span>
+                  </div>
                   <a
-                    class="css-u57k3c"
+                    class="css-17mo6gr"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -985,8 +1261,39 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 <div
                   class="css-diffbd"
                 >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-1g58ijf"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-btda8w"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
+                    </span>
+                  </div>
                   <a
-                    class="css-u57k3c"
+                    class="css-17mo6gr"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -1029,8 +1336,39 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 <div
                   class="css-diffbd"
                 >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-1g58ijf"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        EXCLUSIVE
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-btda8w"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        REVIEW
+                      </div>
+                    </span>
+                  </div>
                   <a
-                    class="css-u57k3c"
+                    class="css-17mo6gr"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >

@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.47.0](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.46.0...@times-components/ts-styleguide@1.47.0) (2023-08-18)
+
+
+### Features
+
+* **TMG-914:** Update welcome banner design ([#3497](https://github.com/newsuk/times-components/issues/3497)) ([2d79a74](https://github.com/newsuk/times-components/commit/2d79a74166875b309bf5fa91ebee980801082500))
+
+
+
+
+
+# [1.46.0](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.45.2...@times-components/ts-styleguide@1.46.0) (2023-08-17)
+
+
+### Features
+
+* **TMRX-1400:** Implement category labels flags above the headline ([#3495](https://github.com/newsuk/times-components/issues/3495)) ([506b900](https://github.com/newsuk/times-components/commit/506b900d6c592c3d701078cfe0c58d2ea8a18a72))
+
+
+
+
+
+## [1.45.2](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.45.1...@times-components/ts-styleguide@1.45.2) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/ts-styleguide
+
+
+
+
+
 ## [1.45.1](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.45.0...@times-components/ts-styleguide@1.45.1) (2023-08-11)
 
 **Note:** Version bump only for package @times-components/ts-styleguide
