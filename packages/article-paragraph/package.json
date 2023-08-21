@@ -1,7 +1,7 @@
 {
   "name": "@times-components/article-paragraph",
   "version": "1.9.83",
-  "description": "Article Paragraph",
+  "description": "Article Paragraph ",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {

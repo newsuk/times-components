@@ -1,7 +1,7 @@
 {
   "name": "@times-components/article",
   "version": "7.16.45",
-  "description": "The article",
+  "description": "The article ",
   "main": "dist/article",
   "dev": "src/article",
   "scripts": {

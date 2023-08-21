@@ -119,7 +119,7 @@ jobs:
             - run:
                   name: Run Unit Tests
                   command: |
-                      lerna run test:unit --loglevel silly --stream --since -- -- --ci --bail --coverage --verbose
+                      lerna run test:unit --stream --since -- -- --ci --bail --coverage
                   no_output_timeout: 30m
                   working_directory: ~/project/
 
