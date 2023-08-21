@@ -109,7 +109,6 @@ jobs:
                       lerna run test:web --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
 
-    # TODO: the test:unit already has --coverage/other arguments which are being doubled
     run_unit_tests:
         executor: node
         steps:
@@ -120,7 +119,8 @@ jobs:
             - run:
                   name: Run Unit Tests
                   command: |
-                      lerna run test:unit --loglevel silly --stream --since -- -- --no-ci --bail --coverage --verbose
+                      lerna run test:unit --loglevel silly --stream --since -- -- --ci --bail --coverage --verbose
+                  no_output_timeout: 30m
                   working_directory: ~/project/
 
     sonarcloud_scan:
