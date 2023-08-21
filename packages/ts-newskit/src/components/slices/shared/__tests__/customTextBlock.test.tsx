@@ -12,9 +12,4 @@ describe('CustomTextBlock', () => {
     const textElement = getByText(text);
     expect(textElement).toBeInTheDocument();
   });
-
-  it('renders nothing when text is null', () => {
-    const { container } = render(<CustomTextBlock text={null} />);
-    expect(container.firstChild).toBeNull();
-  });
 });

@@ -15,12 +15,10 @@ import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
-import { ArticleTileInfo } from '../shared/articleTileInfo';
-
-type expirableFlagsProps = {
-  type?: string;
-  expiryTime?: string | null;
-};
+import {
+  ArticleTileInfo,
+  expirableFlagsProps
+} from '../shared/articleTileInfo';
 
 type ImageCrops = {
   url?: string;

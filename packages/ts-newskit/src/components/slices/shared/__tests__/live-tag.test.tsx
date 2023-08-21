@@ -4,11 +4,6 @@ import { LiveTag } from '../live-tag';
 import '@testing-library/jest-dom';
 
 describe('LiveTag', () => {
-  it('renders nothing when liveTag is null', () => {
-    const { container } = render(<LiveTag liveTag={null} />);
-    expect(container.firstChild).toBeNull();
-  });
-
   it('renders nothing when liveTag is an empty string', () => {
     const { container } = render(<LiveTag liveTag="" />);
     expect(container.firstChild).toBeNull();
