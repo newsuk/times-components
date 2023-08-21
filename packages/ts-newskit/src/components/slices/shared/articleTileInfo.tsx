@@ -54,7 +54,7 @@ export const ArticleTileInfo = ({
   if (!hasTag && !hasExpirableFlag && !label) {
     return null;
   }
-  const capitalizedText = (text?: string | null) => text && text.toUpperCase();
+  const capitalizedText = (text?: string) => text && text.toUpperCase();
 
   return (
     <StyledBlock

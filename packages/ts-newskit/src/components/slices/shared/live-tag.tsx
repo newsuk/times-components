@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledTextBlock } from '../shared-styles';
 
 export interface LiveTagProps {
-  liveTag?: string | null;
+  liveTag?: string;
 }
 
 export const LiveTag = ({ liveTag }: LiveTagProps) => {
