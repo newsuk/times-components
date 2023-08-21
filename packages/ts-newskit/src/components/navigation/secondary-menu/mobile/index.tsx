@@ -25,7 +25,9 @@ export const SecondaryNavMobile: React.FC<{
             `${window.innerHeight -
               navRef.current.getBoundingClientRect().top}px`
           );
-        } else { setHeight('100vh'); }
+        } else {
+          setHeight('100vh');
+        }
       }
     },
     [navRef && navRef.current]
