@@ -22,9 +22,9 @@ export const NavItems: React.FC<{
             typographyPreset:
               isSelected === title ? 'robotoBold' : 'newPreset020'
           }}
-          href={url}
+          href='#'
           id={`vertical-${slug}`}
-          onClick={() => handleSelect(slug)}
+          onClick={() => handleSelect(title)}
           key={slug}
         >
           {title}

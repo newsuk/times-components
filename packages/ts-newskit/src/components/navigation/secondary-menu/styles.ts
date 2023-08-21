@@ -89,15 +89,15 @@ export const MenuContainer = styled(Menu)`
 `;
 
 export const NavItemsContainer = styled.div`
-  position: absolute;
-  top: 100%;
+  height: 100%;
+  top: 48px;
   left: 0;
   right: 0;
   z-index: 1;
   ${getColorCssFromTheme('backgroundColor', 'white')};
 `;
 
-export const NavItemMobileContainer = styled.div<NavItemMobileContainerProp>`
-    height:  ${({ height }) => height};
-    overflow-y: 'auto';
-    `;
+export const NavItemsMobileContainer = styled.div<NavItemMobileContainerProp>`
+  height: ${({ $height }) => $height};
+  overflow-y: auto;
+`;

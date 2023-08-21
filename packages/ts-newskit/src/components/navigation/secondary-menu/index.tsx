@@ -10,7 +10,7 @@ interface SecondaryNavigationProps {
   pageSlug: string;
   stickyTop?: number;
   stickyTopDesktop?: number;
-  onClick?: (isExpanded: boolean) => void
+  onClick?: (isExpanded: boolean) => void;
 }
 
 export const SecondaryNavigation = ({
@@ -18,7 +18,7 @@ export const SecondaryNavigation = ({
   pageSlug,
   stickyTopDesktop,
   stickyTop,
-  onClick,
+  onClick
 }: SecondaryNavigationProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');

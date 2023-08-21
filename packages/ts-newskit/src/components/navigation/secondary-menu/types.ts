@@ -29,5 +29,5 @@ export type SecondaryMenuOptions = {
 };
 
 export type NavItemMobileContainerProp = {
-  height: string
-}
+  $height: string;
+};

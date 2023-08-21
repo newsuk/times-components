@@ -11,7 +11,7 @@ export const NavItems: React.FC<{
 
   return (
     <>
-      {data.slice(0, hasMenuItem).map(({ title, slug, url }) => (
+      {data.slice(0, hasMenuItem).map(({ title, url }) => (
         <StyledMenuItemsDesktop
           overrides={{
             paddingInline: 'space040',
@@ -20,8 +20,8 @@ export const NavItems: React.FC<{
           }}
           href={url}
           key={url}
-          onClick={() => handleSelect(slug)}
-          selected={isSelected === slug}
+          onClick={() => handleSelect(title)}
+          selected={isSelected === title}
         >
           {title}
         </StyledMenuItemsDesktop>

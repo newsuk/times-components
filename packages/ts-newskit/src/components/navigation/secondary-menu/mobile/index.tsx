@@ -3,7 +3,7 @@ import { Menu } from 'newskit';
 import { Navigator } from './navigator';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
-import { NavItemMobileContainer } from '../styles';
+import { NavItemsMobileContainer } from '../styles';
 
 export const SecondaryNavMobile: React.FC<{
     options: SecondaryMenuOptions;
@@ -16,7 +16,7 @@ export const SecondaryNavMobile: React.FC<{
     const [height, setHeight] = useState<string>('auto');
 
     useEffect(() => {
-        if (navRef?.current) {
+        if (navRef && navRef.current) {
             if (
                 window.innerHeight <=
                 navRef.current.getBoundingClientRect().bottom
@@ -29,7 +29,7 @@ export const SecondaryNavMobile: React.FC<{
                 );
             } else setHeight('100vh');
         }
-    }, [navRef?.current]);
+    }, [navRef && navRef.current]);
 
     return (
         <Menu
@@ -46,12 +46,12 @@ export const SecondaryNavMobile: React.FC<{
                 onClick={onClick}
             />
             {isExpanded ? (
-                <NavItemMobileContainer
-                    height={height}
+                <NavItemsMobileContainer
+                    $height={height}
                     ref={navRef}
                 >
                     <NavItems data={data} options={options} />
-                </NavItemMobileContainer>
+                </NavItemsMobileContainer>
             ) : null}
         </Menu>
     );
