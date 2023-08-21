@@ -119,7 +119,7 @@ jobs:
             - run:
                   name: Run Unit Tests
                   command: |
-                      lerna run test:unit --stream --since -- -- --ci --bail --coverage
+                      lerna run test:unit --stream --since -- -- --no-ci --bail --coverage
                   working_directory: ~/project/
 
     sonarcloud_scan:
