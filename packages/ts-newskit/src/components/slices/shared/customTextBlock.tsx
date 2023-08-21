@@ -11,10 +11,6 @@ export const CustomTextBlock = ({
   stylePreset?: string;
   icon?: ReactNode;
 }) => {
-  if (!text) {
-    return null;
-  }
-
   return (
     <TextBlock
       typographyPreset="customArticleTileInfoPreset"
