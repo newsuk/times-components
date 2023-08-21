@@ -1,3 +1,5 @@
+import { expirableFlagsProps } from '../components/slices/shared/articleTileInfo';
+
 type ImageCrops = {
   url?: string;
   ratio?: string;
@@ -20,8 +22,8 @@ export type ArticleProps = {
   flag?: string;
   standfirst?: string;
   contentType?: string;
-  articleLabel?: string;
-  expirableFlag?: string;
+  label?: string;
+  expirableFlags?: expirableFlagsProps[];
   images?: ImageProps;
   url: string;
   tag?: {
