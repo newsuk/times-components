@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Divider,
   CardContent,
-  Block,
   TextBlock,
   CardComposable,
   CardMedia,
@@ -147,7 +146,7 @@ export const Article = ({
       )}
 
       {hasImage && !hideImage && <CardMediaComponent {...cardImage} />}
-      <CardContent>
+      <CardContent alignContent="start">
         {images &&
           !imageRight &&
           images.caption &&
@@ -160,33 +159,30 @@ export const Article = ({
               {images.caption}
             </TextBlock>
           )}
-        <Block>
-          <ArticleTileInfo
-            contentType={contentType}
-            expirableFlags={expirableFlags}
-            label={label}
-            marginBlockStart={marginBlockStart}
-          />
-          <CardHeadlineLink
-            href={url}
-            role="link"
-            overrides={{
-              typographyPreset: titleTypographyPreset,
-              marginBlockStart: hasArticleTileInfo
-                ? 'space030'
-                : marginBlockStart
-            }}
-            external={false}
-            onClick={onClick}
-          >
-            {headline}
-          </CardHeadlineLink>
-          <TagAndFlag
-            tag={tag}
-            flag={flag}
-            marginBlockStart={tagAndFlagMarginBlockStart}
-          />
-        </Block>
+
+        <ArticleTileInfo
+          contentType={contentType}
+          expirableFlags={expirableFlags}
+          label={label}
+          marginBlockStart={marginBlockStart}
+        />
+        <CardHeadlineLink
+          href={url}
+          role="link"
+          overrides={{
+            typographyPreset: titleTypographyPreset,
+            marginBlockStart: hasArticleTileInfo ? 'space030' : marginBlockStart
+          }}
+          external={false}
+          onClick={onClick}
+        >
+          {headline}
+        </CardHeadlineLink>
+        <TagAndFlag
+          tag={tag}
+          flag={flag}
+          marginBlockStart={tagAndFlagMarginBlockStart}
+        />
       </CardContent>
     </CardComposable>
   );
