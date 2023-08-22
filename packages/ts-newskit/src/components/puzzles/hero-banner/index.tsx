@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import {
   HeroBannerContainer,
-  StyledBlock,
+  StyledStack,
   StyledIconA4,
   StyledIconD2,
   StyledWrapper,
@@ -12,14 +12,18 @@ import {
 } from './styles';
 import { Button, TextBlock } from 'newskit';
 
-interface HeroBannerProps {
+export interface HeroBannerProps {
   puzzleName: string;
 }
 
 export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName }) => {
   return (
     <HeroBannerContainer paddingBlockStart="space100" paddingInline="space090">
-      <StyledBlock flow="horizontal-center" stackDistribution="space-between" marginBlockEnd="space080">
+      <StyledStack
+        flow="horizontal-center"
+        stackDistribution="space-between"
+        marginBlockEnd="space080"
+      >
         <StyledWrapper>
           <TextBlock
             as="h2"
@@ -48,7 +52,10 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName }) => {
             {[
               'Play thousands of Times Puzzles',
               'Sudoku, Polygon, Codeword, Lexica and many more',
-              <span>Read up to 30 articles per month on <a href="https://www.thetimes.co.uk">thetimes.co.uk</a></span>
+              <span>
+                Read up to 30 articles per month on{' '}
+                <a href="https://www.thetimes.co.uk">thetimes.co.uk</a>
+              </span>
             ]}
           </SyledUnorderedList>
           <Button
@@ -71,7 +78,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName }) => {
           </Button>
         </StyledWrapper>
         <StyledCrosswordIcon />
-      </StyledBlock>
+      </StyledStack>
       <StyledDivider />
 
       <StyledTextBlock

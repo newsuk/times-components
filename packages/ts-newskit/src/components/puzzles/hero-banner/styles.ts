@@ -14,11 +14,11 @@ import IconA4 from '../../../assets/IconA4';
 import CrosswordIcon from '../../../assets/CrosswordIcon';
 
 export const SyledUnorderedList = styled(UnorderedList)`
-& a {
-  color: inherit;
-  font-weight: 600;
-}
-`
+  & a {
+    color: inherit;
+    font-weight: 600;
+  }
+`;
 
 export const StyledDivider = styled(Divider)`
   border-style: dashed;
@@ -45,7 +45,7 @@ export const HeroBannerContainer = styled(Stack)<StackProps>`
   }
 `;
 
-export const StyledBlock = styled(Stack)`
+export const StyledStack = styled(Stack)`
   width: 100%;
   ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
 `;
