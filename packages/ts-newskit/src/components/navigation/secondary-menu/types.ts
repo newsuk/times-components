@@ -27,3 +27,7 @@ export type SecondaryMenuOptions = {
   isExpanded: boolean;
   setIsExpanded: (value: boolean) => void;
 };
+
+export type NavItemMobileContainerProp = {
+  $height: string;
+};

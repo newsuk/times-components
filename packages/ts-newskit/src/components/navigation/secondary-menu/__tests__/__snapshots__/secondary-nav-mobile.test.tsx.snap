@@ -2,236 +2,212 @@
 
 exports[`Secondary Menu should render snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="css-19u0kbr"
+  <nav
+    aria-label="Secondary Navigation"
+    class="css-1e8qhdd"
+    data-testid="menu-container"
+    role="navigation"
   >
-    <div
-      class="css-gre9re"
+    <ul
+      role="list"
     >
-      <nav
-        aria-label="Secondary Navigation"
-        class="css-1e8qhdd"
-        data-testid="menu-container"
-        role="navigation"
+      <div
+        class="css-11tcrto"
       >
-        <ul
-          role="list"
+        <p
+          class="css-yhevtm"
         >
-          <div
-            class="css-11tcrto"
+          News
+        </p>
+        <li
+          class="nk-menu-item css-zbkqx2"
+        >
+          <button
+            aria-expanded="true"
+            class="css-1q8vei8"
+            data-testid="menu-sub-button"
+            type="button"
           >
-            <p
-              class="css-yhevtm"
+            <span
+              class="css-vx6avn"
             >
-              Home
-            </p>
-            <li
-              class="nk-menu-item css-zbkqx2"
+              Close
+            </span>
+            <svg
+              aria-hidden="true"
+              class="css-1auvcm3-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <button
-                aria-expanded="false"
-                class="css-1q8vei8"
-                data-testid="menu-sub-button"
-                type="button"
-              >
-                <span
-                  class="css-vx6avn"
-                >
-                  See all
-                </span>
-                <svg
-                  aria-hidden="true"
-                  class="css-1auvcm3-EmotionIconBase ex0cdmw0"
-                  fill="currentColor"
-                  focusable="false"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M0 0h24v24H0z"
-                    fill="none"
-                  />
-                  <path
-                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                  />
-                </svg>
-              </button>
-              <ul
-                class="css-1mm64yz"
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
               />
-            </li>
-          </div>
-        </ul>
-      </nav>
-    </div>
-    <div
-      class="css-11l110t"
-    >
-      <nav
-        aria-label="Secondary Navigation"
-        class="css-1hyt1wq"
-        data-testid="menu-container"
-        role="navigation"
+              <path
+                d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+              />
+            </svg>
+          </button>
+          <ul
+            class="css-260c02"
+          />
+        </li>
+      </div>
+      <div
+        class="css-1jmdk2t"
       >
-        <ul
-          role="list"
+        <div
+          class="css-74ql93"
         >
-          <div
-            class="css-ov1ktg"
+          <li
+            class="nk-menu-item css-zbkqx2"
           >
-            <li
-              class="nk-menu-item css-1i1v9fb"
+            <a
+              class="css-f2u5p9"
+              data-testid="buttonLink"
+              href="/home"
+              id="vertical-home"
             >
-              <a
-                aria-current="page"
-                class="css-np1loc"
-                data-testid="buttonLink"
-                href="/home"
+              <span
+                class="css-i5wmgn"
               >
-                <span
-                  class="css-t9dmcw"
-                >
-                  Home
-                </span>
-              </a>
-            </li>
-            <li
-              class="nk-menu-item css-1i1v9fb"
+                Home
+              </span>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item css-zbkqx2"
+          >
+            <a
+              class="css-f2u5p9"
+              data-testid="buttonLink"
+              href="/news"
+              id="vertical-news"
             >
-              <a
-                aria-current="false"
-                class="css-ltup8m"
-                data-testid="buttonLink"
-                href="/news"
+              <span
+                class="css-5w969y"
               >
-                <span
-                  class="css-t9dmcw"
-                >
-                  News
-                </span>
-              </a>
-            </li>
-            <li
-              class="nk-menu-item css-1i1v9fb"
+                News
+              </span>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item css-zbkqx2"
+          >
+            <a
+              class="css-f2u5p9"
+              data-testid="buttonLink"
+              href="/comment"
+              id="vertical-comment"
             >
-              <a
-                aria-current="false"
-                class="css-ltup8m"
-                data-testid="buttonLink"
-                href="/comment"
+              <span
+                class="css-i5wmgn"
               >
-                <span
-                  class="css-t9dmcw"
-                >
-                  Comment
-                </span>
-              </a>
-            </li>
-            <li
-              class="nk-menu-item css-1i1v9fb"
+                Comment
+              </span>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item css-zbkqx2"
+          >
+            <a
+              class="css-f2u5p9"
+              data-testid="buttonLink"
+              href="/life-and-style"
+              id="vertical-life-and-style"
             >
-              <a
-                aria-current="false"
-                class="css-ltup8m"
-                data-testid="buttonLink"
-                href="/life-and-style"
+              <span
+                class="css-i5wmgn"
               >
-                <span
-                  class="css-t9dmcw"
-                >
-                  Life & Style
-                </span>
-              </a>
-            </li>
-            <li
-              class="nk-menu-item css-1i1v9fb"
+                Life & Style
+              </span>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item css-zbkqx2"
+          >
+            <a
+              class="css-f2u5p9"
+              data-testid="buttonLink"
+              href="/arts-and-books"
+              id="vertical-arts-and-books"
             >
-              <a
-                aria-current="false"
-                class="css-ltup8m"
-                data-testid="buttonLink"
-                href="/arts-and-books"
+              <span
+                class="css-i5wmgn"
               >
-                <span
-                  class="css-t9dmcw"
-                >
-                  Arts & Books
-                </span>
-              </a>
-            </li>
-            <li
-              class="nk-menu-item css-1i1v9fb"
+                Arts & Books
+              </span>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item css-zbkqx2"
+          >
+            <a
+              class="css-f2u5p9"
+              data-testid="buttonLink"
+              href="/sport"
+              id="vertical-sport"
             >
-              <a
-                aria-current="false"
-                class="css-ltup8m"
-                data-testid="buttonLink"
-                href="/sport"
+              <span
+                class="css-i5wmgn"
               >
-                <span
-                  class="css-t9dmcw"
-                >
-                  Sport
-                </span>
-              </a>
-            </li>
-            <li
-              class="nk-menu-item css-1i1v9fb"
+                Sport
+              </span>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item css-zbkqx2"
+          >
+            <a
+              class="css-f2u5p9"
+              data-testid="buttonLink"
+              href="/business-and-money"
+              id="vertical-business-and-money"
             >
-              <a
-                aria-current="false"
-                class="css-ltup8m"
-                data-testid="buttonLink"
-                href="/business-and-money"
+              <span
+                class="css-i5wmgn"
               >
-                <span
-                  class="css-t9dmcw"
-                >
-                  Business & Money
-                </span>
-              </a>
-            </li>
-            <li
-              class="nk-menu-item css-1i1v9fb"
+                Business & Money
+              </span>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item css-zbkqx2"
+          >
+            <a
+              class="css-f2u5p9"
+              data-testid="buttonLink"
+              href="/puzzles"
+              id="vertical-puzzles"
             >
-              <a
-                aria-current="false"
-                class="css-ltup8m"
-                data-testid="buttonLink"
-                href="/puzzles"
+              <span
+                class="css-i5wmgn"
               >
-                <span
-                  class="css-t9dmcw"
-                >
-                  Puzzles
-                </span>
-              </a>
-            </li>
-            <li
-              class="nk-menu-item css-1i1v9fb"
+                Puzzles
+              </span>
+            </a>
+          </li>
+          <li
+            class="nk-menu-item css-zbkqx2"
+          >
+            <a
+              class="css-f2u5p9"
+              data-testid="buttonLink"
+              href="/magazines"
+              id="vertical-magazines"
             >
-              <a
-                aria-current="false"
-                class="css-ltup8m"
-                data-testid="buttonLink"
-                href="/magazines"
+              <span
+                class="css-i5wmgn"
               >
-                <span
-                  class="css-t9dmcw"
-                >
-                  Magazines
-                </span>
-              </a>
-            </li>
-          </div>
-        </ul>
-      </nav>
-      <hr
-        aria-hidden="true"
-        class="css-1nvdtcj"
-        data-testid="divider"
-      />
-    </div>
-  </div>
+                Magazines
+              </span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </ul>
+  </nav>
 </DocumentFragment>
 `;
