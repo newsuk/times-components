@@ -36,6 +36,7 @@
     "postinstall": "yarn run copy-fonts && lerna run postinstall && lerna run transpile",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "yarn packages:publish --no-git-tag-version --no-push",
+    "packages:canary-dry-run": "lerna publish --canary --no-push",
     "commit": "git-cz",
     "prepublishOnly": "lerna run prepublishOnly",
     "test": "yarn storybook:test-build && jest ./lib --ci --bail --coverage",
