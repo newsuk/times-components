@@ -6,11 +6,19 @@ import {
   StackProps,
   Block,
   Divider,
-  TextBlock
+  TextBlock,
+  UnorderedList
 } from 'newskit';
 import IconD2 from '../../../assets/IconD2';
 import IconA4 from '../../../assets/IconA4';
 import CrosswordIcon from '../../../assets/CrosswordIcon';
+
+export const SyledUnorderedList = styled(UnorderedList)`
+& a {
+  color: inherit;
+  font-weight: 600;
+}
+`
 
 export const StyledDivider = styled(Divider)`
   border-style: dashed;
@@ -38,16 +46,8 @@ export const HeroBannerContainer = styled(Stack)<StackProps>`
 `;
 
 export const StyledBlock = styled(Stack)`
+  width: 100%;
   ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
-  ${getMediaQueryFromTheme('md')} {
-    width: 604px;
-  }
-  ${getMediaQueryFromTheme('lg')} {
-    width: 838px;
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    width: 1058px;
-  }
 `;
 
 export const StyledWrapper = styled(Block)`
@@ -68,6 +68,8 @@ export const StyledIconA4 = styled(IconA4)`
   position: absolute;
   right: 15%;
   bottom: -5%;
+  width: 122px;
+  height: 122px;
 `;
 
 export const StyledCrosswordIcon = styled(CrosswordIcon)``;

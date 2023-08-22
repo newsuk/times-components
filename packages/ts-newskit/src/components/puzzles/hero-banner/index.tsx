@@ -7,18 +7,19 @@ import {
   StyledWrapper,
   StyledDivider,
   StyledTextBlock,
-  StyledCrosswordIcon
+  StyledCrosswordIcon,
+  SyledUnorderedList
 } from './styles';
-import { Block, Button, TextBlock, UnorderedList } from 'newskit';
+import { Button, TextBlock } from 'newskit';
 
 interface HeroBannerProps {
-  title: string;
+  puzzleName: string;
 }
 
-export const HeroBanner: FC<HeroBannerProps> = ({ title }) => {
+export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName }) => {
   return (
     <HeroBannerContainer paddingBlockStart="space100" paddingInline="space090">
-      <StyledBlock flow="horizontal-center">
+      <StyledBlock flow="horizontal-center" stackDistribution="space-between" marginBlockEnd="space080">
         <StyledWrapper>
           <TextBlock
             as="h2"
@@ -29,9 +30,9 @@ export const HeroBanner: FC<HeroBannerProps> = ({ title }) => {
             stylePreset="inkContrast"
             marginBlockEnd="space080"
           >
-            Play the times crossword
+            Play the Times {puzzleName}
           </TextBlock>
-          <UnorderedList
+          <SyledUnorderedList
             overrides={{
               marker: {
                 size: 'iconSize005',
@@ -47,12 +48,12 @@ export const HeroBanner: FC<HeroBannerProps> = ({ title }) => {
             {[
               'Play thousands of Times Puzzles',
               'Sudoku, Polygon, Codeword, Lexica and many more',
-              'Read up to 30 articles per month on the times.co.uk'
+              <span>Read up to 30 articles per month on <a href="https://www.thetimes.co.uk">thetimes.co.uk</a></span>
             ]}
-          </UnorderedList>
+          </SyledUnorderedList>
           <Button
             size="medium"
-            href="dadada"
+            href="https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00"
             overrides={{
               stylePreset: 'freeTrialShadowBtn',
               typographyPreset: 'utilityButton020',
