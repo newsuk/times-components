@@ -86,9 +86,8 @@ export const Article = ({
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
   const hasArticleTileInfo =
-    (expirableFlags && expirableFlags.length > 0 && expirableFlags[0].type) ||
-    label ||
-    contentType;
+    (expirableFlags && expirableFlags.length > 0) || label || contentType;
+
   const cardImage = !hideImage &&
     imageWithCorrectRatio && {
       media: {

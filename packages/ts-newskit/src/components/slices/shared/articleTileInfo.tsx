@@ -7,8 +7,8 @@ import { CustomTextBlock } from './customTextBlock';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
 
 export type expirableFlagsProps = {
-  type?: string;
-  expiryTime?: string | null;
+  type: string;
+  expiryTime: string | null;
 };
 
 export interface ArticleTileInfoProps {
@@ -38,19 +38,19 @@ export const ArticleTileInfo = ({
   marginBlockEnd = 'space000'
 }: ArticleTileInfoProps) => {
   const hasTag = Boolean(contentType);
-  const hasExpirableFlag = Boolean(
-    expirableFlags && getActiveArticleFlags(expirableFlags)
-  );
+
+  const hasExpirableFlag =
+    expirableFlags && getActiveArticleFlags(expirableFlags);
 
   const hasVideoIcon = Boolean(
     contentType && contentType.toUpperCase() === 'VIDEO'
   );
-  const isLiveTag = Boolean(
+  const isLiveTag =
     expirableFlags &&
-      getActiveArticleFlags(expirableFlags) &&
-      expirableFlags[0].type !== undefined &&
-      expirableFlags[0].type.toUpperCase() === 'LIVE'
-  );
+    getActiveArticleFlags(expirableFlags) &&
+    expirableFlags[0].type !== undefined &&
+    expirableFlags[0].type.toUpperCase() === 'LIVE';
+
   if (!hasTag && !hasExpirableFlag && !label) {
     return null;
   }
