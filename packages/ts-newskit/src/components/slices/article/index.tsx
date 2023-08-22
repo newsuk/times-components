@@ -16,7 +16,10 @@ import {
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
-import { ArticleTileInfo } from '../shared/articleTileInfo';
+import {
+  ArticleTileInfo,
+  expirableFlagsProps
+} from '../shared/articleTileInfo';
 
 type ImageCrops = {
   url?: string;
@@ -39,8 +42,8 @@ export interface ArticleProps {
     href: string;
   };
   contentType?: string;
-  articleLabel?: string;
-  expirableFlag?: string;
+  label?: string;
+  expirableFlags?: expirableFlagsProps[];
   flag?: string;
   hasTopBorder?: boolean;
   hideImage?: boolean;
@@ -76,13 +79,15 @@ export const Article = ({
     isFullWidth,
     titleTypographyPreset = 'editorialHeadline020',
     tagAndFlagMarginBlockStart = 'space040',
-    expirableFlag,
-    articleLabel,
+    expirableFlags,
+    label,
     contentType
   } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
-  const hasArticleTileInfo = expirableFlag || articleLabel || contentType;
+  const hasArticleTileInfo =
+    (expirableFlags && expirableFlags.length > 0) || label || contentType;
+
   const cardImage = !hideImage &&
     imageWithCorrectRatio && {
       media: {
@@ -166,8 +171,8 @@ export const Article = ({
         <Layout imageRight={imageRight || false}>
           <ArticleTileInfo
             contentType={contentType}
-            expirableFlag={expirableFlag}
-            articleLabel={articleLabel}
+            expirableFlags={expirableFlags}
+            label={label}
             marginBlockStart={marginBlockStart}
           />
           <CardHeadlineLink

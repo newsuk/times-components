@@ -7,7 +7,7 @@ export const CustomTextBlock = ({
   stylePreset,
   icon
 }: {
-  text: string;
+  text?: string;
   stylePreset?: string;
   icon?: ReactNode;
 }) => {

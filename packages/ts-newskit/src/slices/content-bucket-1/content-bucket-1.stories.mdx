@@ -24,11 +24,11 @@ This takes in a series of props, as below, to display the part of the slices.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const ContentBucket1Story = ({ leadArticle, comments, articles, theme, gridOverlay, clickHandler, expirableFlag, contentType, articleLabel }) => (
+export const ContentBucket1Story = ({ leadArticle, comments, articles, theme, gridOverlay, clickHandler }) => (
   <TCThemeProvider theme={theme}>
     <>
       <GridOverlay show={gridOverlay} />
-      <ContentBucket1 {...{ leadArticle, comments, articles, clickHandler, expirableFlag, contentType, articleLabel }} />
+      <ContentBucket1 {...{ leadArticle, comments, articles, clickHandler }} />
     </>
   </TCThemeProvider>
 );
@@ -43,9 +43,14 @@ ContentBucket1Story.args = {
     articles,
     comments,
     clickHandler: action("ClickHandler"),
-    expirableFlag:"BREAKING",
+    expirableFlags: [
+        {
+          type: "BREAKING",
+          expiryTime: null
+        }
+    ],
     contentType:"Q&A",
-    articleLabel:"MARTIN SAMUAL",
+    label:"MARTIN SAMUAL",
   }}
   argTypes={{
     theme: {
