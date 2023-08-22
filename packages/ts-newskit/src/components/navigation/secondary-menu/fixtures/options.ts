@@ -1,10 +1,12 @@
-import { noop } from 'lodash';
 import { SecondaryMenuOptions } from '../types';
 
 export const options: SecondaryMenuOptions = {
   isSelected: 'News',
-  handleSelect: () => noop,
+  handleSelect: () => {
+    // noop
+  },
   isExpanded: true,
-  setIsExpanded: () => noop
+  setIsExpanded: () => {
+    // noop
+  }
 };
-
