@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.72.7](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.72.6...@times-components/article-magazine-comment@3.72.7) (2023-08-22)
+
+
+### Bug Fixes
+
+* **ARCH-00:** change ld+json articleID to be articleId so parsely can find it ([#3500](https://github.com/newsuk/times-components/issues/3500)) ([f21d54c](https://github.com/newsuk/times-components/commit/f21d54c3fc3cb79df46b551ec11c1ef99c0f3ba1))
+
+
+
+
+
 ## [3.72.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.72.5...@times-components/article-magazine-comment@3.72.6) (2023-08-18)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
