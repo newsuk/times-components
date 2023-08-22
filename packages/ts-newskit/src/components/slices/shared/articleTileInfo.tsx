@@ -48,7 +48,6 @@ export const ArticleTileInfo = ({
   const isLiveTag =
     expirableFlags &&
     getActiveArticleFlags(expirableFlags) &&
-    expirableFlags[0].type !== undefined &&
     expirableFlags[0].type.toUpperCase() === 'LIVE';
 
   if (!hasTag && !hasExpirableFlag && !label) {
