@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.85.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.84.0...@times-components/ts-newskit@1.85.0) (2023-08-22)
+
+
+### Features
+
+* **TMRX-1390:** scrollable l2 nav ([#3493](https://github.com/newsuk/times-components/issues/3493)) ([a8d778d](https://github.com/newsuk/times-components/commit/a8d778df183e56776fd3813a5456ba98a328702c))
+
+
+
+
+
 # [1.84.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.83.0...@times-components/ts-newskit@1.84.0) (2023-08-18)
 
 
