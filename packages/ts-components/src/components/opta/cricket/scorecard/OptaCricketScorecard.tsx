@@ -73,6 +73,7 @@ export const OptaCricketScorecard: React.FC<{
 
       {!isReady && (
         <PlaceholderContainer>
+          test
           <Placeholder />
         </PlaceholderContainer>
       )}
