@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "6.15.96",
+  "version": "6.15.97",
   "description": "Author profile information along with a list of articles they have written ",
   "main": "dist/author-profile",
   "dev": "src/author-profile",
@@ -70,7 +70,7 @@
     "@times-components/provider": "1.39.0",
     "@times-components/responsive": "0.16.1",
     "@times-components/tracking": "2.21.0",
-    "@times-components/ts-newskit": "1.85.0",
+    "@times-components/ts-newskit": "1.86.0",
     "@times-components/ts-styleguide": "1.47.0",
     "@times-components/utils": "6.16.17",
     "lodash.get": "4.4.2",

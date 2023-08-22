@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.86.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.85.0...@times-components/ts-newskit@1.86.0) (2023-08-22)
+
+
+### Features
+
+* **TMRX-0000:** change articlelLabel to label ([#3499](https://github.com/newsuk/times-components/issues/3499)) ([d753118](https://github.com/newsuk/times-components/commit/d7531184bce50c098eda32c56d3ad3dceb2f5c04))
+
+
+
+
+
 # [1.85.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.84.0...@times-components/ts-newskit@1.85.0) (2023-08-22)
 
 
