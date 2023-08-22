@@ -42,7 +42,15 @@ LeadStory3Story.args = {
     leadArticle,
     articles,
     leadArticles,
-    clickHandler: action("ClickHandler")
+    clickHandler: action("ClickHandler"),
+    expirableFlags: [
+        {
+          type: "BREAKING",
+          expiryTime: null
+        }
+    ],
+    contentType:"Q&A",
+    label:"MARTIN SAMUAL",
   }}
   argTypes={{
     theme: {
