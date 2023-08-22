@@ -54,10 +54,6 @@ export interface ArticleProps {
   tagAndFlagMarginBlockStart?: string;
 }
 
-type LayoutProps = {
-  imageRight: boolean;
-};
-
 export const Article = ({
   article,
   clickHandler
@@ -106,10 +102,6 @@ export const Article = ({
     images.crops.length > 0 &&
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
-
-  const Layout: React.FC<LayoutProps> = ({ children }) => {
-    return imageRight ? <Block>{children}</Block> : <>{children}</>;
-  };
 
   const onClick = (event: MouseEventType) => {
     const articleForTracking = { headline, id, url };
@@ -168,7 +160,7 @@ export const Article = ({
               {images.caption}
             </TextBlock>
           )}
-        <Layout imageRight={imageRight || false}>
+        <Block>
           <ArticleTileInfo
             contentType={contentType}
             expirableFlags={expirableFlags}
@@ -194,7 +186,7 @@ export const Article = ({
             flag={flag}
             marginBlockStart={tagAndFlagMarginBlockStart}
           />
-        </Layout>
+        </Block>
       </CardContent>
     </CardComposable>
   );
