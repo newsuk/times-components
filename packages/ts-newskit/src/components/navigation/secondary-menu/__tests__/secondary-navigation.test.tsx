@@ -29,19 +29,7 @@ describe('Secondary Menu', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
-  it('should render snapshot', () => {
-    const { asFragment } = render(
-      <SecondaryNavigation
-        data={mainMenuItems}
-        pageSlug="home"
-        stickyTop={0}
-        onClick={() => {
-          // noop
-        }}
-      />
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
+
   it('should close the dropdown ', () => {
     const { getByText, queryByText, getAllByText } = render(
       <SecondaryNavigation
