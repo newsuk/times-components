@@ -4,7 +4,8 @@ import { render } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 
 const defaultProps: HeroBannerProps = {
-  puzzleName: 'Crossword'
+  puzzleName: 'Crossword',
+  loginUrl: "https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles"
 };
 
 const renderComponent = (props: HeroBannerProps) =>

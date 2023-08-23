@@ -238,7 +238,9 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
       class="css-1nmhncz"
     >
       Already a subscriber? 
-      <a>
+      <a
+        href="https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles"
+      >
         Log In
       </a>
     </span>
