@@ -168,18 +168,6 @@ jobs:
                       yarn coverage:publish
                   working_directory: ~/project/
 
-    publish_canary_approval:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Run Lint
-                  command: |
-                      yarn lint
-                  working_directory: ~/project/
-
     publish_canary:
         executor: node
         steps:
@@ -274,19 +262,19 @@ workflows:
                         ignore:
                           - master
                   requires:
-                      - build_storybook
-                      - run_lint
-                      - run_noplatform_tests
-                      - run_web_tests
-                      - run_unit_tests
-                      - run_cypress_tests
+                      - publish_canary_approval
             - publish_canary:
                   filters:
                     branches:
                         ignore:
                           - master
                   requires:
-                      - publish_canary_approval
+                      - build_storybook
+                      - run_lint
+                      - run_noplatform_tests
+                      - run_web_tests
+                      - run_unit_tests
+                      - run_cypress_tests
             - publish_npm:
                   filters:
                     branches:
