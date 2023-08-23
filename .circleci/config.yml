@@ -262,19 +262,19 @@ workflows:
                         ignore:
                           - master
                   requires:
-                      - publish_canary_approval
-            - publish_canary:
-                  filters:
-                    branches:
-                        ignore:
-                          - master
-                  requires:
                       - build_storybook
                       - run_lint
                       - run_noplatform_tests
                       - run_web_tests
                       - run_unit_tests
                       - run_cypress_tests
+            - publish_canary:
+                  filters:
+                    branches:
+                        ignore:
+                          - master
+                  requires:
+                      - Approve canary release
             - publish_npm:
                   filters:
                     branches:
