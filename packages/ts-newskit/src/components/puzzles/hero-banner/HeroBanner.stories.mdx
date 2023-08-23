@@ -16,18 +16,28 @@ import { HeroBanner } from './index';
 ## Code Example
 `<HeroBanner
   puzzleName="Crossword"
+  loginUrl="https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles"
 />
 `
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const HeroBannerStory = () => (
+export const HeroBannerStory = ({puzzleName, loginUrl}) => (
   <NewsKitProvider theme={PuzzlesWebLightTheme}>
-    <HeroBanner puzzleName="Crossword"/>
+    <HeroBanner puzzleName={puzzleName} loginUrl={loginUrl}/>
   </NewsKitProvider>
 );
 
-<Story name="HeroBanner">
+<Story name="HeroBanner" argTypes={{
+  puzzleName: {
+    control: 'text',
+    name: 'Puzzle Name'
+  },
+  loginUrl: {
+    control: 'text',
+    name: 'Login Url'
+  }
+}}>
   {HeroBannerStory.bind({})}
 </Story>

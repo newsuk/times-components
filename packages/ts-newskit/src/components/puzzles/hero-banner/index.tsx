@@ -15,9 +15,10 @@ import { Button, TextBlock } from 'newskit';
 
 export interface HeroBannerProps {
   puzzleName: string;
+  loginUrl: string;
 }
 
-export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName }) => {
+export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName, loginUrl }) => {
   return (
     <HeroBannerContainer paddingBlockStart="space100" paddingInline="space090">
       <StyledStack
@@ -46,7 +47,10 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName }) => {
               },
               spaceStack: 'space040',
               content: {
-                typographyPreset: 'editorialSubheadline030'
+                typographyPreset: {
+                  xs: 'editorialSubheadline020',
+                  sm: 'editorialSubheadline030'
+                }
               }
             }}
           >
@@ -70,7 +74,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName }) => {
               marginBlock: 'space045',
               minWidth: {
                 xs: '100%',
-                sm: "227px"
+                sm: '227px'
               },
               height: 'sizing.sizing050'
             }}
@@ -90,7 +94,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName }) => {
         stylePreset="inkContrast"
         marginBlock="space080"
       >
-        Already a subscriber? <a href="">Log In</a>
+        Already a subscriber? <a href={loginUrl}>Log In</a>
       </StyledTextBlock>
       <StyledIconD2 />
       <StyledIconA4 />

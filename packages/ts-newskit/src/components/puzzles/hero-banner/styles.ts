@@ -75,11 +75,11 @@ export const StyledIconA4 = styled(IconA4)`
     bottom: -14%;
     right: 0;
   }
-  ${getMediaQueryFromTheme("sm")} {
+  ${getMediaQueryFromTheme('sm')} {
     bottom: -14%;
     right: 0;
   }
-  ${getMediaQueryFromTheme("md")} {
+  ${getMediaQueryFromTheme('md')} {
     right: 15%;
     bottom: -5%;
   }
