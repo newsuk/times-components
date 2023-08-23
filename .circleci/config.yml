@@ -169,6 +169,7 @@ jobs:
                   working_directory: ~/project/
 
     publish_canary_approval:
+        executor: node
         name: Approve canary release
                 
     publish_canary:
