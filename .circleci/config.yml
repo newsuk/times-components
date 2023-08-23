@@ -170,7 +170,16 @@ jobs:
 
     publish_canary_approval:
         executor: node
-                
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Run Lint
+                  command: |
+                      yarn lint
+                  working_directory: ~/project/
+
     publish_canary:
         executor: node
         steps:
