@@ -6,7 +6,7 @@ import { WidgetContainerBase } from '../shared-styles';
 export const WidgetContainer = styled(WidgetContainerBase)`
   .Opta {
     h2 {
-      margin: 20px 0 11px 0 !important;
+      margin: 20px 0 12px 0 !important;
     }
 
     .Opta-Cf {
