@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Divider,
   CardContent,
-  Block,
   TextBlock,
   CardComposable,
   CardMedia,
@@ -54,10 +53,6 @@ export interface ArticleProps {
   tagAndFlagMarginBlockStart?: string;
 }
 
-type LayoutProps = {
-  imageRight: boolean;
-};
-
 export const Article = ({
   article,
   clickHandler
@@ -107,10 +102,6 @@ export const Article = ({
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
 
-  const Layout: React.FC<LayoutProps> = ({ children }) => {
-    return imageRight ? <Block>{children}</Block> : <>{children}</>;
-  };
-
   const onClick = (event: MouseEventType) => {
     const articleForTracking = { headline, id, url };
     articleClickTracking(event, articleForTracking, clickHandler);
@@ -155,7 +146,7 @@ export const Article = ({
       )}
 
       {hasImage && !hideImage && <CardMediaComponent {...cardImage} />}
-      <CardContent>
+      <CardContent alignContent="start">
         {images &&
           !imageRight &&
           images.caption &&
@@ -168,33 +159,30 @@ export const Article = ({
               {images.caption}
             </TextBlock>
           )}
-        <Layout imageRight={imageRight || false}>
-          <ArticleTileInfo
-            contentType={contentType}
-            expirableFlags={expirableFlags}
-            label={label}
-            marginBlockStart={marginBlockStart}
-          />
-          <CardHeadlineLink
-            href={url}
-            role="link"
-            overrides={{
-              typographyPreset: titleTypographyPreset,
-              marginBlockStart: hasArticleTileInfo
-                ? 'space030'
-                : marginBlockStart
-            }}
-            external={false}
-            onClick={onClick}
-          >
-            {headline}
-          </CardHeadlineLink>
-          <TagAndFlag
-            tag={tag}
-            flag={flag}
-            marginBlockStart={tagAndFlagMarginBlockStart}
-          />
-        </Layout>
+
+        <ArticleTileInfo
+          contentType={contentType}
+          expirableFlags={expirableFlags}
+          label={label}
+          marginBlockStart={marginBlockStart}
+        />
+        <CardHeadlineLink
+          href={url}
+          role="link"
+          overrides={{
+            typographyPreset: titleTypographyPreset,
+            marginBlockStart: hasArticleTileInfo ? 'space030' : marginBlockStart
+          }}
+          external={false}
+          onClick={onClick}
+        >
+          {headline}
+        </CardHeadlineLink>
+        <TagAndFlag
+          tag={tag}
+          flag={flag}
+          marginBlockStart={tagAndFlagMarginBlockStart}
+        />
       </CardContent>
     </CardComposable>
   );
