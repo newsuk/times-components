@@ -11,7 +11,6 @@ import {
 } from 'newskit';
 import IconD2 from '../../../assets/IconD2';
 import IconA4 from '../../../assets/IconA4';
-import CrosswordIcon from '../../../assets/CrosswordIcon';
 
 export const SyledUnorderedList = styled(UnorderedList)`
   & a {
@@ -30,6 +29,10 @@ export const StyledTextBlock = styled(TextBlock)`
     color: inherit;
     font-weight: 600;
   }
+
+  ${getMediaQueryFromTheme('xs', 'md')} {
+    align-self: center;
+  }
 `;
 
 export const HeroBannerContainer = styled(Stack)<StackProps>`
@@ -38,10 +41,10 @@ export const HeroBannerContainer = styled(Stack)<StackProps>`
   overflow: hidden;
   ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
   ${getMediaQueryFromTheme('xs')} {
-    text-align: center;
+    padding: 80px 24px 0 24px;
   }
-  ${getMediaQueryFromTheme('md')} {
-    text-align: left;
+  ${getMediaQueryFromTheme('sm')} {
+    padding: 80px 64px 0 64px;
   }
 `;
 
@@ -66,10 +69,24 @@ export const StyledIconD2 = styled(IconD2)`
 
 export const StyledIconA4 = styled(IconA4)`
   position: absolute;
-  right: 15%;
-  bottom: -5%;
   width: 122px;
   height: 122px;
+  ${getMediaQueryFromTheme('xs')} {
+    bottom: -14%;
+    right: 0;
+  }
+  ${getMediaQueryFromTheme("sm")} {
+    bottom: -14%;
+    right: 0;
+  }
+  ${getMediaQueryFromTheme("md")} {
+    right: 15%;
+    bottom: -5%;
+  }
 `;
 
-export const StyledCrosswordIcon = styled(CrosswordIcon)``;
+export const StyledCrosswordIconWrapper = styled(Block)`
+  ${getMediaQueryFromTheme('xs', 'md')} {
+    display: none;
+  }
+`;

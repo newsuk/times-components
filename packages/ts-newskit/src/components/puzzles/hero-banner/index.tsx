@@ -7,9 +7,10 @@ import {
   StyledWrapper,
   StyledDivider,
   StyledTextBlock,
-  StyledCrosswordIcon,
+  StyledCrosswordIconWrapper,
   SyledUnorderedList
 } from './styles';
+import CrosswordIcon from '../../../assets/CrosswordIcon';
 import { Button, TextBlock } from 'newskit';
 
 export interface HeroBannerProps {
@@ -68,8 +69,8 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName }) => {
               paddingInline: 'space040',
               marginBlock: 'space045',
               minWidth: {
-                xs: '167px',
-                lg: '199px'
+                xs: '100%',
+                sm: "227px"
               },
               height: 'sizing.sizing050'
             }}
@@ -77,7 +78,9 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName }) => {
             Subscribe
           </Button>
         </StyledWrapper>
-        <StyledCrosswordIcon />
+        <StyledCrosswordIconWrapper>
+          <CrosswordIcon />
+        </StyledCrosswordIconWrapper>
       </StyledStack>
       <StyledDivider />
 
