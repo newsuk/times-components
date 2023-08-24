@@ -6,6 +6,7 @@ export const functionalColours = {
   articleFlagUpdated: '#3C81BE',
   backgroundPrimary: '#F9F9F9',
   backgroundSecondary: '#EDEDED',
+  bannerBackground: '#BEDEED',
   black: '#000000',
   border: '#F0F0F0',
   brandColour: '#1D1D1B',

@@ -2,8 +2,13 @@
   "articles": [
     {
       "contentType": "Profile",
-      "articleLabel": "",
-      "expirableFlag": "live",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "live",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -46,8 +51,13 @@
     },
     {
       "contentType": "Review",
-      "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "Exclusive",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -90,8 +100,13 @@
     },
     {
       "contentType": "Interview",
-      "articleLabel": "",
-      "expirableFlag": "Breaking",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "Breaking",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -134,8 +149,13 @@
     },
     {
       "contentType": "Q&A",
-      "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "Exclusive",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -178,8 +198,13 @@
     },
     {
       "contentType": "Q&A",
-      "articleLabel": "",
-      "expirableFlag": "Breaking",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "Breaking",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -224,8 +249,13 @@
   "leadArticles": [
     {
       "contentType": "Review",
-      "articleLabel": "",
-      "expirableFlag": "New",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "New",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -259,7 +289,7 @@
       },
       "headline": "Short title of the card describing the main content",
       "id": "21234567",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -270,8 +300,13 @@
     },
     {
       "contentType": "Interview",
-      "articleLabel": "",
-      "expirableFlag": "Exclusive",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "Exclusive",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -305,7 +340,7 @@
       },
       "headline": "Short title of the card describing the main content",
       "id": "212345678",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -316,8 +351,13 @@
     },
     {
       "contentType": "Profile",
-      "articleLabel": "",
-      "expirableFlag": "New",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "New",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -351,7 +391,7 @@
       },
       "headline": "Short title of the card describing the main content",
       "id": "2123456789",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -362,8 +402,13 @@
     },
     {
       "contentType": "Review",
-      "articleLabel": "",
-      "expirableFlag": "Updated",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "Updated",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -397,7 +442,7 @@
       },
       "headline": "Short title of the card describing the main content",
       "id": "21234567891",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+      "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -409,8 +454,13 @@
   ],
   "leadArticle": {
     "contentType": "Profile",
-    "articleLabel": "",
-    "expirableFlag": "Exclusive",
+    "label": "",
+    "expirableFlags": [
+      {
+        "type": "Exclusive",
+        "expiryTime": null
+      }
+    ],
     "images": {
       "alt": "",
       "credits": "Gareth Fuller/Press Association",
@@ -444,7 +494,7 @@
     },
     "headline": "Short title of the card describing the main content",
     "id": "21234567892",
-    "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+    "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
     "url": "https://www.thetimes.co.uk",
     "tag": {
       "label": "Tag",

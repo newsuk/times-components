@@ -1,0 +1,46 @@
+
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { ArticleTileInfo } from './articleTileInfo';
+import { NewsKitProvider } from 'newskit';
+import { TCThemeProvider, themes } from '../../../utils/index.tsx';
+import { TimesWebLightTheme } from '../../../theme/times-web-light/index';
+import { action } from '@storybook/addon-actions';
+
+<Meta
+  title="Newskit Components/Slices/Article Tile Info"
+  component={ArticleTileInfo}
+/>
+
+# ArticleTileInfo component
+The `ArticleTileInfo` component is used to display the main story of slices.
+
+This takes in a series of props, as below, to display the part of the slices.
+
+## Props
+<Props of={ArticleTileInfo} />
+
+## Code Example
+`<ArticleTileInfo data={ArticleTileInfo}/>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const ArticleTileInfoStory = ({expirableFlags, contentType, label, theme, marginBlockEnd, marginBlockStart}) => (
+  <TCThemeProvider theme={theme}>
+    <ArticleTileInfo {...{expirableFlags, contentType, label, marginBlockEnd, marginBlockStart}} />
+  </TCThemeProvider>
+);
+
+ArticleTileInfoStory.args = {
+  theme: 'TimesWebLightTheme',
+};
+
+<Story name="ArticleTileInfo" args={{ marginBlockEnd:"0" , marginBlockStart:"0" , contentType: "Profile", label: "Breaking",expirableFlags: [{ type: "New", expiryTime: null}] }}   argTypes={{
+    theme: {
+      options: Object.keys(themes),
+      mapping: themes,
+      control: { type: 'select' },
+    },
+  }}>
+  {ArticleTileInfoStory.bind({})}
+</Story>

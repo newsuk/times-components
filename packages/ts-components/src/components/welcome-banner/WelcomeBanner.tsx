@@ -15,7 +15,10 @@ export const WelcomeBanner: React.FC = () => {
   return isEnabled ? (
     <WelcomeBannerContainer>
       <Title data-testId="title">
-        Welcome to The Times and The Sunday Times
+        Welcome to <br className="mobile" />
+        The Times <br className="larger-breakpoints" /> and{' '}
+        <br className="mobile" />
+        The Sunday Times
       </Title>
       <Text data-testId="text">We hope you enjoy your free content</Text>
     </WelcomeBannerContainer>

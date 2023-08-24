@@ -29,6 +29,7 @@
     "prefmt": "prettier --write '**/*.{js,json}'",
     "fmt": "lerna run fmt",
     "npm:publish": "bash ./lib/publish.sh",
+    "npm:publish-canary": "bash ./lib/publish_canary.sh",
     "cinstall": "bash ./lib/custom_install.sh",
     "clean": "watchman watch-del-all && rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-* && yarn cache clean && jest --clearCache",
     "bundle": "lerna run bundle",

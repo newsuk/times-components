@@ -4,11 +4,12 @@ import { LeadArticle, LeadArticleProps } from '../lead-article/index';
 import { FullWidthBlock } from '../shared-styles/index';
 import { StyledDivider } from '../../../slices/lead-story-1/styles';
 import { ClickHandlerType } from '../../../slices/types';
+import { expirableFlagsProps } from './articleTileInfo';
 
 export interface GroupedArticleProps {
   contentType?: string;
-  articleLabel?: string;
-  expirableFlag?: string;
+  label?: string;
+  expirableFlags?: expirableFlagsProps[];
   articles: LeadArticleProps[];
   clickHandler: ClickHandlerType;
 }

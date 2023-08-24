@@ -23,11 +23,11 @@ This takes in a series of props, as below, to display the part of the slices.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const StackModule1Story = ({ articles: stackedModule1Articles, theme, gridOverlay, clickHandler, expirableFlag, contentType, articleLabel }) => (
+export const StackModule1Story = ({ articles: stackedModule1Articles, theme, gridOverlay, clickHandler }) => (
   <TCThemeProvider theme={theme}>
     <>
       <GridOverlay show={gridOverlay} />
-      <StackModule1 {...{ articles: stackedModule1Articles, clickHandler, expirableFlag, contentType, articleLabel }} />
+      <StackModule1 {...{ articles: stackedModule1Articles, clickHandler }} />
     </> 
   </TCThemeProvider>
 );
@@ -40,9 +40,14 @@ StackModule1Story.args = {
   args={{ 
     articles: stackedModule1Articles, 
     clickHandler: action("ClickHandler"),
-    expirableFlag:"BREAKING",
+    expirableFlags: [
+        {
+          type: "BREAKING",
+          expiryTime: null
+        }
+    ],
     contentType:"Q&A",
-    articleLabel:"MARTIN SAMUAL", 
+    label:"MARTIN SAMUAL", 
   }}
   argTypes={{
     theme: {

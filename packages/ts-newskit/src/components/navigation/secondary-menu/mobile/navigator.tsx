@@ -7,7 +7,8 @@ export const Navigator: React.FC<{
   options: SecondaryMenuOptions;
   title: string;
   subMenuTitle: string;
-}> = ({ title, options, subMenuTitle }) => {
+  onClick?: (isExpanded: boolean) => void;
+}> = ({ title, options, subMenuTitle, onClick }) => {
   const { isExpanded, setIsExpanded } = options;
 
   return (
@@ -27,6 +28,7 @@ export const Navigator: React.FC<{
         expanded={isExpanded}
         onClick={() => {
           setIsExpanded(!isExpanded);
+          onClick && onClick(!isExpanded);
         }}
         overrides={{
           marginBlockStart: 'space020',

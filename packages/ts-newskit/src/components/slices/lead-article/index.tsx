@@ -15,7 +15,10 @@ import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
-import { ArticleTileInfo } from '../shared/articleTileInfo';
+import {
+  ArticleTileInfo,
+  expirableFlagsProps
+} from '../shared/articleTileInfo';
 
 type ImageCrops = {
   url?: string;
@@ -39,8 +42,8 @@ export interface LeadArticleProps {
   flag?: string;
   shortSummary?: string;
   contentType?: string;
-  articleLabel?: string;
-  expirableFlag?: string;
+  label?: string;
+  expirableFlags?: expirableFlagsProps[];
   images?: ImageProps;
   url: string;
   tag?: {
@@ -50,7 +53,6 @@ export interface LeadArticleProps {
   imageTop?: boolean;
   hasTopBorder?: boolean;
   contentTop?: boolean;
-  isLeadImage?: boolean;
   contentWidth?: string;
   headlineTypographyPreset?: string;
   loadingAspectRatio?: string;
@@ -80,7 +82,6 @@ export const LeadArticle = ({
     imageTop,
     hasTopBorder = true,
     contentTop,
-    isLeadImage,
     contentWidth,
     headlineTypographyPreset,
     loadingAspectRatio,
@@ -89,8 +90,8 @@ export const LeadArticle = ({
     tagAndFlagMarginBlockStart = 'space040',
     listData,
     hideImage,
-    expirableFlag,
-    articleLabel
+    expirableFlags,
+    label
   } = article;
   const imageWithCorrectRatio =
     images && images.crops
@@ -153,14 +154,14 @@ export const LeadArticle = ({
       {hasImage &&
         !hideImage && (
           <Block
-            marginBlockEnd={imageTop ? 'space050' : 'space000'}
+            marginBlockEnd={imageTop ? 'space040' : 'space000'}
             marginBlockStart={imageMarginBlockStart}
           >
             <FullWidthCardMediaMob {...cardImage} />
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"
-                typographyPreset="utilityMeta010"
+                typographyPreset="customUtilityMeta"
               >
                 {images && images.caption}
                 {images &&
@@ -188,9 +189,9 @@ export const LeadArticle = ({
         )}
         <ArticleTileInfo
           contentType={contentType}
-          expirableFlag={expirableFlag}
-          articleLabel={articleLabel}
-          marginBlockEnd={isLeadImage ? 'space050' : 'space020'}
+          expirableFlags={expirableFlags}
+          label={label}
+          marginBlockEnd="space030"
         />
         <CardHeadlineLink
           href={url}

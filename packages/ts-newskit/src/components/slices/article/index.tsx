@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Divider,
   CardContent,
-  Block,
   TextBlock,
   CardComposable,
   CardMedia,
@@ -16,7 +15,10 @@ import {
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
-import { ArticleTileInfo } from '../shared/articleTileInfo';
+import {
+  ArticleTileInfo,
+  expirableFlagsProps
+} from '../shared/articleTileInfo';
 
 type ImageCrops = {
   url?: string;
@@ -39,8 +41,8 @@ export interface ArticleProps {
     href: string;
   };
   contentType?: string;
-  articleLabel?: string;
-  expirableFlag?: string;
+  label?: string;
+  expirableFlags?: expirableFlagsProps[];
   flag?: string;
   hasTopBorder?: boolean;
   hideImage?: boolean;
@@ -50,10 +52,6 @@ export interface ArticleProps {
   titleTypographyPreset?: string;
   tagAndFlagMarginBlockStart?: string;
 }
-
-type LayoutProps = {
-  imageRight: boolean;
-};
 
 export const Article = ({
   article,
@@ -76,13 +74,15 @@ export const Article = ({
     isFullWidth,
     titleTypographyPreset = 'editorialHeadline020',
     tagAndFlagMarginBlockStart = 'space040',
-    expirableFlag,
-    articleLabel,
+    expirableFlags,
+    label,
     contentType
   } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
-  const hasArticleTileInfo = expirableFlag || articleLabel || contentType;
+  const hasArticleTileInfo =
+    (expirableFlags && expirableFlags.length > 0) || label || contentType;
+
   const cardImage = !hideImage &&
     imageWithCorrectRatio && {
       media: {
@@ -101,10 +101,6 @@ export const Article = ({
     images.crops.length > 0 &&
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
-
-  const Layout: React.FC<LayoutProps> = ({ children }) => {
-    return imageRight ? <Block>{children}</Block> : <>{children}</>;
-  };
 
   const onClick = (event: MouseEventType) => {
     const articleForTracking = { headline, id, url };
@@ -150,7 +146,7 @@ export const Article = ({
       )}
 
       {hasImage && !hideImage && <CardMediaComponent {...cardImage} />}
-      <CardContent>
+      <CardContent alignContent="start">
         {images &&
           !imageRight &&
           images.caption &&
@@ -163,33 +159,30 @@ export const Article = ({
               {images.caption}
             </TextBlock>
           )}
-        <Layout imageRight={imageRight || false}>
-          <ArticleTileInfo
-            contentType={contentType}
-            expirableFlag={expirableFlag}
-            articleLabel={articleLabel}
-            marginBlockStart={marginBlockStart}
-          />
-          <CardHeadlineLink
-            href={url}
-            role="link"
-            overrides={{
-              typographyPreset: titleTypographyPreset,
-              marginBlockStart: hasArticleTileInfo
-                ? 'space020'
-                : marginBlockStart
-            }}
-            external={false}
-            onClick={onClick}
-          >
-            {headline}
-          </CardHeadlineLink>
-          <TagAndFlag
-            tag={tag}
-            flag={flag}
-            marginBlockStart={tagAndFlagMarginBlockStart}
-          />
-        </Layout>
+
+        <ArticleTileInfo
+          contentType={contentType}
+          expirableFlags={expirableFlags}
+          label={label}
+          marginBlockStart={marginBlockStart}
+        />
+        <CardHeadlineLink
+          href={url}
+          role="link"
+          overrides={{
+            typographyPreset: titleTypographyPreset,
+            marginBlockStart: hasArticleTileInfo ? 'space030' : marginBlockStart
+          }}
+          external={false}
+          onClick={onClick}
+        >
+          {headline}
+        </CardHeadlineLink>
+        <TagAndFlag
+          tag={tag}
+          flag={flag}
+          marginBlockStart={tagAndFlagMarginBlockStart}
+        />
       </CardContent>
     </CardComposable>
   );

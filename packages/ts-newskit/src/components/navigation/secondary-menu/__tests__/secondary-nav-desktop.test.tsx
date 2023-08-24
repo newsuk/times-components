@@ -22,6 +22,9 @@ describe('Secondary Menu Desktop', () => {
         data={mainMenuItems}
         pageSlug="home"
         stickyTop={110}
+        onClick={() => {
+          // noop
+        }}
       />
     );
     expect(asFragment()).toMatchSnapshot();
