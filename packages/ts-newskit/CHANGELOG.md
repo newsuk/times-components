@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.86.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.86.2...@times-components/ts-newskit@1.86.3) (2023-08-24)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** change typographyPreset to editorialHeadline020 ([#3506](https://github.com/newsuk/times-components/issues/3506)) ([1179e8c](https://github.com/newsuk/times-components/commit/1179e8c4245b1f82765a4732e4aab1a54471ec4c))
+
+
+
+
+
 ## [1.86.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.86.1...@times-components/ts-newskit@1.86.2) (2023-08-24)
 
 
