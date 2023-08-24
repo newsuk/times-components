@@ -168,6 +168,20 @@ jobs:
                       yarn coverage:publish
                   working_directory: ~/project/
 
+    publish_canary:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - install-lerna
+            - run:
+                  name: Publish canary to npm
+                  command: |
+                      lerna run bundle --stream
+                      yarn npm:publish-canary
+                  working_directory: ~/project/
+
     publish_npm:
         executor: node
         steps:
@@ -240,6 +254,27 @@ workflows:
                       - run_web_tests
                       - run_unit_tests
                       - run_cypress_tests
+            - publish_canary_approval:
+                  name: Approve canary release
+                  type: approval
+                  filters:
+                    branches:
+                        ignore:
+                          - master
+                  requires:
+                      - build_storybook
+                      - run_lint
+                      - run_noplatform_tests
+                      - run_web_tests
+                      - run_unit_tests
+                      - run_cypress_tests
+            - publish_canary:
+                  filters:
+                    branches:
+                        ignore:
+                          - master
+                  requires:
+                      - Approve canary release
             - publish_npm:
                   filters:
                     branches:
