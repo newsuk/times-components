@@ -1,7 +1,7 @@
-import { styled, getMediaQueryFromTheme, Stack } from 'newskit';
+import { styled, getMediaQueryFromTheme, Stack, getColorCssFromTheme } from 'newskit';
 
 export const StyledIconWrapper = styled(Stack)`
-  background: #feefd9;
+  ${getColorCssFromTheme('background-color', 'puzzles010')};
   .puzzle-icon {
     height: auto;
     ${getMediaQueryFromTheme('xs')} {
