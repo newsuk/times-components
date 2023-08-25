@@ -3,6 +3,7 @@ import {
   styled,
   getColorCssFromTheme,
   getMediaQueryFromTheme,
+  getSpacingCssFromTheme,
   StackProps,
   Block,
   Divider,
@@ -41,10 +42,12 @@ export const HeroBannerContainer = styled(Stack)<StackProps>`
   overflow: hidden;
   ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
   ${getMediaQueryFromTheme('xs')} {
-    padding: 80px 24px 0 24px;
+    ${getSpacingCssFromTheme("paddingBlockStart", "space100")};
+    ${getSpacingCssFromTheme("paddingInline", "space050")};
   }
   ${getMediaQueryFromTheme('sm')} {
-    padding: 80px 64px 0 64px;
+    ${getSpacingCssFromTheme("paddingBlockStart", "space100")};
+    ${getSpacingCssFromTheme("paddingInline", "space090")};
   }
 `;
 
