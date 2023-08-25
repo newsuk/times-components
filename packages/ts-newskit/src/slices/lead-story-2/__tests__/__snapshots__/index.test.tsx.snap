@@ -109,7 +109,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                 class="css-17x5lw"
               >
                 <span
-                  class="css-pmpoka"
+                  class="css-1fceh50"
                 >
                   Sarcacens an inclusive club? They didnt look out for me
                 </span>
@@ -1517,7 +1517,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                 class="css-17x5lw"
               >
                 <span
-                  class="css-pmpoka"
+                  class="css-1fceh50"
                 >
                   Sarcacens an inclusive club? They didnt look out for me
                 </span>
