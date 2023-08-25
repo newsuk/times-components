@@ -1,4 +1,9 @@
-import { styled, getMediaQueryFromTheme, Stack, getColorCssFromTheme } from 'newskit';
+import {
+  styled,
+  getMediaQueryFromTheme,
+  Stack,
+  getColorCssFromTheme
+} from 'newskit';
 
 export const StyledIconWrapper = styled(Stack)`
   ${getColorCssFromTheme('background-color', 'puzzles010')};
