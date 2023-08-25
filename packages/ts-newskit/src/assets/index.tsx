@@ -18,6 +18,7 @@ import ThumbsUpIcon from './ThumbsUp';
 import TooltipIcon from './TooltipIcon';
 import FilledArrowIcon from './FilledArrowIcon';
 import VideoIcon from './VideoIcon';
+import CrosswordIcon from './CrosswordIcon';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -115,4 +116,9 @@ export const NewsKitFilledArrowIconDown = customToNewsKitIcon(
 export const NewsKitVideoButtonIcon = customToNewsKitIcon(
   'NewsKitVideoButtonIcon',
   props => <VideoIcon {...props} />
+);
+
+export const NewsKitCrosswordIcon = customToNewsKitIcon(
+  'NewsKitCrosswordIcon',
+  props => <CrosswordIcon {...props} />
 );

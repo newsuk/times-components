@@ -10,7 +10,7 @@ import {
   StyledCrosswordIconWrapper,
   SyledUnorderedList
 } from './styles';
-import CrosswordIcon from '../../../assets/CrosswordIcon';
+import { NewsKitCrosswordIcon } from '../../../assets';
 import { Button, TextBlock } from 'newskit';
 
 export interface HeroBannerProps {
@@ -83,7 +83,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName, loginUrl }) => {
           </Button>
         </StyledWrapper>
         <StyledCrosswordIconWrapper>
-          <CrosswordIcon />
+          <NewsKitCrosswordIcon />
         </StyledCrosswordIconWrapper>
       </StyledStack>
       <StyledDivider />

@@ -42,12 +42,12 @@ export const HeroBannerContainer = styled(Stack)<StackProps>`
   overflow: hidden;
   ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
   ${getMediaQueryFromTheme('xs')} {
-    ${getSpacingCssFromTheme("paddingBlockStart", "space100")};
-    ${getSpacingCssFromTheme("paddingInline", "space050")};
+    ${getSpacingCssFromTheme('paddingBlockStart', 'space100')};
+    ${getSpacingCssFromTheme('paddingInline', 'space050')};
   }
   ${getMediaQueryFromTheme('sm')} {
-    ${getSpacingCssFromTheme("paddingBlockStart", "space100")};
-    ${getSpacingCssFromTheme("paddingInline", "space090")};
+    ${getSpacingCssFromTheme('paddingBlockStart', 'space100')};
+    ${getSpacingCssFromTheme('paddingInline', 'space090')};
   }
 `;
 
