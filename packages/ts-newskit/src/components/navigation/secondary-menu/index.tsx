@@ -11,6 +11,7 @@ interface SecondaryNavigationProps {
   stickyTop?: number;
   stickyTopDesktop?: number;
   onClick?: (isExpanded: boolean) => void;
+  defaultSelectedIndex?: number;
 }
 
 export const SecondaryNavigation = ({
@@ -18,10 +19,15 @@ export const SecondaryNavigation = ({
   pageSlug,
   stickyTopDesktop,
   stickyTop,
-  onClick
+  onClick,
+  defaultSelectedIndex = -1
 }: SecondaryNavigationProps) => {
+  const selectedItem =
+    defaultSelectedIndex >= 0
+      ? data[defaultSelectedIndex] && data[defaultSelectedIndex].title
+      : '';
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
-  const [isSelected, setIsSelected] = useState<string>('');
+  const [isSelected, setIsSelected] = useState<string>(selectedItem);
 
   useEffect(() => {
     handleSelect(pageSlug);
@@ -30,11 +36,9 @@ export const SecondaryNavigation = ({
   const handleSelect = (slug: string) => {
     const filteredItem = data.find(item => item.slug === slug);
 
-    if (!filteredItem) {
-      return;
+    if (!!filteredItem) {
+      setIsSelected(filteredItem.title);
     }
-
-    setIsSelected(filteredItem.title);
   };
 
   const options = {
