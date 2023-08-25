@@ -43,6 +43,14 @@ export const ArticleStory = ({article, clickHandler}) => (
     url: undefined,
     tag,
     flag,
+    expirableFlags: [
+        {
+          type: "BREAKING",
+          expiryTime: null
+        }
+    ],
+    contentType:"Q&A",
+    label:"MARTIN SAMUAL",
     hasTopBorder: false,
     hideImage: false,
     isLeadImage: false,

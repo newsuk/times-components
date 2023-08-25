@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.86.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.86.2...@times-components/ts-newskit@1.86.3) (2023-08-24)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** change typographyPreset to editorialHeadline020 ([#3506](https://github.com/newsuk/times-components/issues/3506)) ([1179e8c](https://github.com/newsuk/times-components/commit/1179e8c4245b1f82765a4732e4aab1a54471ec4c))
+
+
+
+
+
+## [1.86.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.86.1...@times-components/ts-newskit@1.86.2) (2023-08-24)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** revert font size of leadStory2 and leadStory3 ([#3505](https://github.com/newsuk/times-components/issues/3505)) ([4c583e5](https://github.com/newsuk/times-components/commit/4c583e5339d490121d0174d3b5f707cdf4bff891))
+
+
+
+
+
+## [1.86.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.86.0...@times-components/ts-newskit@1.86.1) (2023-08-23)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+# [1.86.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.85.0...@times-components/ts-newskit@1.86.0) (2023-08-22)
+
+
+### Features
+
+* **TMRX-0000:** change articlelLabel to label ([#3499](https://github.com/newsuk/times-components/issues/3499)) ([d753118](https://github.com/newsuk/times-components/commit/d7531184bce50c098eda32c56d3ad3dceb2f5c04))
+
+
+
+
+
+# [1.85.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.84.0...@times-components/ts-newskit@1.85.0) (2023-08-22)
+
+
+### Features
+
+* **TMRX-1390:** scrollable l2 nav ([#3493](https://github.com/newsuk/times-components/issues/3493)) ([a8d778d](https://github.com/newsuk/times-components/commit/a8d778df183e56776fd3813a5456ba98a328702c))
+
+
+
+
+
 # [1.84.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.83.0...@times-components/ts-newskit@1.84.0) (2023-08-18)
 
 

@@ -22,59 +22,55 @@ exports[`Render Article List Item items should render without margin 1`] = `
       </picture>
     </div>
     <div
-      class="css-diffbd"
+      class="css-17cghxi"
     >
+      <a
+        class="css-bxykrz"
+        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+        role="link"
+      >
+        <span
+          class="css-17x5lw"
+        >
+          <span
+            class="css-65zrxz"
+          >
+            Harry & Meghan's New Project?
+          </span>
+        </span>
+      </a>
       <div
-        class="css-13byt3y"
+        class="css-1atazsr"
+        data-testid="tag-and-flag"
       >
         <a
-          class="css-bxykrz"
-          href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-          role="link"
+          class="css-10d4t8c"
+          href="/"
         >
           <span
             class="css-17x5lw"
           >
             <span
-              class="css-65zrxz"
+              class="css-zhtub2"
             >
-              Harry & Meghan's New Project?
+              Review
             </span>
           </span>
         </a>
         <div
-          class="css-1atazsr"
-          data-testid="tag-and-flag"
+          class="css-lew009"
         >
-          <a
-            class="css-10d4t8c"
-            href="/"
-          >
-            <span
-              class="css-17x5lw"
-            >
-              <span
-                class="css-zhtub2"
-              >
-                Review
-              </span>
-            </span>
-          </a>
-          <div
-            class="css-lew009"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-15kf7hd"
-              data-testid="divider"
-            />
-          </div>
-          <span
-            class="css-1vzvkql"
-          >
-            4 min read
-          </span>
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
         </div>
+        <span
+          class="css-1vzvkql"
+        >
+          4 min read
+        </span>
       </div>
     </div>
   </div>
@@ -103,7 +99,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
       </picture>
     </div>
     <div
-      class="css-diffbd"
+      class="css-17cghxi"
     >
       <a
         class="css-u57k3c"

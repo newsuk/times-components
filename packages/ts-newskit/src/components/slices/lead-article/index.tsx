@@ -15,7 +15,10 @@ import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
-import { ArticleTileInfo } from '../shared/articleTileInfo';
+import {
+  ArticleTileInfo,
+  expirableFlagsProps
+} from '../shared/articleTileInfo';
 
 type ImageCrops = {
   url?: string;
@@ -39,8 +42,8 @@ export interface LeadArticleProps {
   flag?: string;
   shortSummary?: string;
   contentType?: string;
-  articleLabel?: string;
-  expirableFlag?: string;
+  label?: string;
+  expirableFlags?: expirableFlagsProps[];
   images?: ImageProps;
   url: string;
   tag?: {
@@ -87,8 +90,8 @@ export const LeadArticle = ({
     tagAndFlagMarginBlockStart = 'space040',
     listData,
     hideImage,
-    expirableFlag,
-    articleLabel
+    expirableFlags,
+    label
   } = article;
   const imageWithCorrectRatio =
     images && images.crops
@@ -186,8 +189,8 @@ export const LeadArticle = ({
         )}
         <ArticleTileInfo
           contentType={contentType}
-          expirableFlag={expirableFlag}
-          articleLabel={articleLabel}
+          expirableFlags={expirableFlags}
+          label={label}
           marginBlockEnd="space030"
         />
         <CardHeadlineLink
