@@ -17,4 +17,17 @@ describe('HeroBanner', () => {
     const { asFragment } = renderComponent(defaultProps);
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('should render HeroBanner with props', () => {
+    const { getByText } = renderComponent(defaultProps);
+
+    const title = getByText('Play the Times Crossword');
+    expect(title).toBeInTheDocument();
+
+    const loginButton = getByText('Log In');
+    expect(loginButton).toHaveAttribute(
+      'href',
+      'https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles'
+    );
+  });
 });
