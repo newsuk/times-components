@@ -63,7 +63,7 @@ export const LeadStory2 = ({
         ? 'editorialHeadline040'
         : currentBreakpoint === 'sm'
           ? 'editorialHeadline050'
-          : 'customEditorialHeadline030'
+          : 'editorialHeadline060'
   };
 
   return (
