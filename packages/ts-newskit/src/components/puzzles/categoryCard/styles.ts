@@ -9,12 +9,7 @@ export const StyledIconWrapper = styled(Stack)`
   ${getColorCssFromTheme('background-color', 'puzzles010')};
   .puzzle-icon {
     height: auto;
-    ${getMediaQueryFromTheme('xs')} {
-      width: 75px;
-    }
-    ${getMediaQueryFromTheme('sm')} {
-      width: 75px;
-    }
+    width: 75px;
     ${getMediaQueryFromTheme('md')} {
       width: 65px;
     }

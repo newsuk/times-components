@@ -11,7 +11,7 @@ import { StyledIconWrapper } from './styles';
 export interface CategoryCardProps {
   type: string;
   url: string;
-  Icon: FC;
+  Icon: React.ComponentType;
 }
 
 export const CategoryCard: FC<CategoryCardProps> = ({ type, url, Icon }) => {

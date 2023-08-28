@@ -2,27 +2,29 @@ import React from 'react';
 import { GridLayout, GridLayoutItem } from 'newskit';
 import { StyledTitleBar, GridItemWithDivider } from './styles';
 import { CategoryCard } from '../categoryCard';
-import SudokusIcon from '../../../assets/Sudokus';
-import CrosswordsIcon from '../../../assets/Crosswords';
-import WordPuzzlesIcon from '../../../assets/WordPuzzles';
-import NumbersAndLogicIcon from '../../../assets/NumbersAndLogic';
-import QuizzesAndTeasersIcon from '../../../assets/QuizzesAndTeasers';
-import BoardAndCardGamesIcon from '../../../assets/BoardAndCardGames';
+import {
+  NewsKitSudokusIcon,
+  NewsKitCrosswordsIcon,
+  NewsKitWordPuzzlesIcon,
+  NewsKitNumbersAndLogicIcon,
+  NewsKitQuizzesAndTeasersIcon,
+  NewsKitBoardAndCardGamesIcon
+} from '../../../assets';
 
 interface TeaserCardsContainerProps {
   types: string[];
   title?: string;
 }
 
-type IconComponent = React.FC;
+type IconComponent = React.ComponentType;
 
 const iconMapping: Record<string, IconComponent> = {
-  Sudokus: SudokusIcon,
-  Crosswords: CrosswordsIcon,
-  'Word Puzzles': WordPuzzlesIcon,
-  'Numbers And Logic': NumbersAndLogicIcon,
-  'Quizzes And Teasers': QuizzesAndTeasersIcon,
-  'Board And Card Games': BoardAndCardGamesIcon
+  Sudokus: NewsKitSudokusIcon,
+  Crosswords: NewsKitCrosswordsIcon,
+  'Word Puzzles': NewsKitWordPuzzlesIcon,
+  'Numbers And Logic': NewsKitNumbersAndLogicIcon,
+  'Quizzes And Teasers': NewsKitQuizzesAndTeasersIcon,
+  'Board And Card Games': NewsKitBoardAndCardGamesIcon
 };
 
 export const TeaserCardsContainer = ({
