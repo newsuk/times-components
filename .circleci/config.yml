@@ -122,6 +122,8 @@ jobs:
                       lerna run test:unit --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
 
+        parallelism: 10
+
     sonarcloud_scan:
       executor: node_sonar
       steps:
