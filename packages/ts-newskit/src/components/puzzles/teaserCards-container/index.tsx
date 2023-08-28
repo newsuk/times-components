@@ -11,14 +11,21 @@ import {
   NewsKitBoardAndCardGamesIcon
 } from '../../../assets';
 
+type PuzzleType =
+  | 'Crosswords'
+  | 'Sudokus'
+  | 'Word Puzzles'
+  | 'Numbers And Logic'
+  | 'Quizzes And Teasers'
+  | 'Board And Card Games';
+type IconComponent = React.ComponentType;
+
 interface TeaserCardsContainerProps {
-  types: string[];
+  types: PuzzleType[];
   title?: string;
 }
 
-type IconComponent = React.ComponentType;
-
-const iconMapping: Record<string, IconComponent> = {
+const iconMapping: Record<PuzzleType, IconComponent> = {
   Sudokus: NewsKitSudokusIcon,
   Crosswords: NewsKitCrosswordsIcon,
   'Word Puzzles': NewsKitWordPuzzlesIcon,
