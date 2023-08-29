@@ -21,7 +21,7 @@ exports[`Audio player renders correctly 1`] = `
           aria-live="polite"
           aria-pressed="false"
           class="css-7ycgmb"
-          data-testid="audio-player-play-pause-button"
+          data-testid="audio-player-play-btn"
           type="button"
         >
           <svg
@@ -78,7 +78,7 @@ exports[`Audio player renders correctly when visible 1`] = `
           aria-live="polite"
           aria-pressed="false"
           class="css-7ycgmb"
-          data-testid="audio-player-play-pause-button"
+          data-testid="audio-player-play-btn"
           type="button"
         >
           <svg

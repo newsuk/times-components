@@ -32,7 +32,9 @@ export const StickyPlayerDesktop: React.FC<StickyPlayerDesktopProps> = ({
         <AudioPlayerPlayPauseButton
           onClick={handleClickPlayPause}
           overrides={{ stylePreset: 'iconButtonMinimalPrimary' }}
-          data-testid={isPlaying ? "audio-player-pause-btn" : "audio-player-play-btn"}
+          data-testid={
+            isPlaying ? 'audio-player-pause-btn' : 'audio-player-play-btn'
+          }
         />
       </ButtonContainer>
       <AudioPlayerVolumeControl
@@ -74,7 +76,7 @@ export const StickyPlayerDesktop: React.FC<StickyPlayerDesktopProps> = ({
           onClick={() => setShowStickyPlayer(false)}
           overrides={{ stylePreset: 'iconButtonMinimalPrimary' }}
           aria-label="Close"
-          data-testid="audio-player-close-btn-desktop"
+          data-testid="CloseBtnDesktop"
         >
           <IconOutlinedClose />
         </IconButton>

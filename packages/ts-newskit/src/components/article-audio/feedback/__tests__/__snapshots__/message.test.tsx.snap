@@ -20,7 +20,7 @@ exports[`Message Component should render snapshot 1`] = `
       <button
         aria-label="close"
         class="css-1ptfube"
-        data-testid="button"
+        data-testid="audio-player-btn-close"
         type="button"
       >
         <svg

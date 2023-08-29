@@ -38,7 +38,6 @@ export const StickyPlayerMob: React.FC<StickyPlayerMobProps> = ({
             onClick={() => setShowStickyPlayer(false)}
             overrides={{ stylePreset: 'iconButtonMinimalPrimary' }}
             aria-label="Close"
-            data-testid="audio-player-close-btn-mobile"
           >
             <IconOutlinedClose />
           </IconButton>
