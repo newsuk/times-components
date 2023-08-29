@@ -21,7 +21,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
           aria-live="polite"
           aria-pressed="false"
           class="css-7ycgmb"
-          data-testid="audio-player-play-pause-button"
+          data-testid="audio-player-pause-btn"
           type="button"
         >
           <svg
@@ -94,7 +94,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                   aria-live="polite"
                   aria-pressed="false"
                   class="css-16wgoqe"
-                  data-testid="audio-player-play-pause-button"
+                  data-testid="audio-player-pause-btn"
                   type="button"
                 >
                   <svg
@@ -155,7 +155,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                   aria-live="polite"
                   aria-pressed="false"
                   class="css-16wgoqe"
-                  data-testid="audio-player-play-pause-button"
+                  data-testid="audio-player-pause-btn"
                   type="button"
                 >
                   <svg
