@@ -49,6 +49,7 @@ export const FeedbackText: React.FC<{
           size="small"
           onClick={() => setClosed(!closed)}
           aria-label="close"
+          data-testid="audio-player-btn-close"
         >
           <NewsKitCloseIcon />
         </IconButton>
@@ -66,8 +67,8 @@ export const FeedbackText: React.FC<{
           }}
           size="small"
           onClick={() => handleFeedback(!showFeedback)}
-          aria-label="Thumbs Down"
-          data-testid="audio-player-feedback-thumbs-down"
+          aria-label="Thumbs Up"
+          data-testid="audio-player-feedback-thumbs-up"
         >
           <NewsKitThumbsUpIcon />
         </IconButton>
@@ -78,8 +79,8 @@ export const FeedbackText: React.FC<{
           }}
           size="small"
           onClick={() => handleFeedback(!showFeedback)}
-          aria-label="Thumbs Up"
-          data-testid="audio-player-feedback-thumbs-up"
+          aria-label="Thumbs Down"
+          data-testid="audio-player-feedback-thumbs-down"
         >
           <NewsKitThumbsDownIcon />
         </IconButton>

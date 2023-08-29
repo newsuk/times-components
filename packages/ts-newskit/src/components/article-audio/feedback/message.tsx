@@ -24,6 +24,7 @@ export const Message: React.FC<{
         }}
         onClick={() => setClosed(!closed)}
         aria-label="close"
+        data-testid="audio-player-btn-close"
       >
         <NewsKitCloseIcon />
       </IconButton>
