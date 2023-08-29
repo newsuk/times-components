@@ -2,7 +2,7 @@ import React from 'react';
 import { useBreakpointKey } from 'newskit';
 import { render, screen } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
-import { ContentBucket3 } from '../index';
+import { ContentBucket3 } from '..';
 import data from '../../fixtures/data.json';
 
 jest.mock('newskit', () => ({
@@ -22,7 +22,7 @@ const defaultProps = {
 
 const renderComponent = () => render(<ContentBucket3 {...defaultProps} />);
 
-describe('Render Content Bucket 1 Slice', () => {
+describe('Render Content Bucket 3 Slice', () => {
   test('Slice matches snapshot', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
@@ -35,7 +35,7 @@ describe('Render Content Bucket 1 Slice', () => {
   });
 });
 
-describe('Content Bucket 1 Articles list ', () => {
+describe('Content Bucket 3 Articles list ', () => {
   test('articleBorder render after odd numbered items', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
     renderComponent();
