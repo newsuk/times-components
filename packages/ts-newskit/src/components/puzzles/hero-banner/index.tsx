@@ -5,14 +5,29 @@ import {
   StyledWrapper,
   StyledDivider,
   StyledTextBlock,
-  StyledCrosswordIconWrapper,
-  SyledUnorderedList
+  StyledHeroIconContainer,
+  SyledUnorderedList,
+  StyledHeroBackground,
+  StyledCrosswordIcon,
+  StyledHeroBannerKillerSudoku,
+  StyledHeroBannerQuintagram,
+  StyledHeroBannerSuko,
+  StyledHeroBannerWordPuzzle,
+  StyledIconWrapper
 } from './styles';
-import { NewsKitCrosswordIcon } from '../../../assets';
 import { Button, TextBlock } from 'newskit';
+
+export type PuzzleType =
+  | 'crosswords'
+  | 'sudokus'
+  | 'word-puzzles'
+  | 'numbers-and-logic'
+  | 'quizzes-and-teasers'
+  | 'board-and-card-games';
 
 export interface HeroBannerProps {
   puzzleName: string;
+  puzzleType: PuzzleType;
   loginUrl: string;
 }
 
@@ -53,8 +68,8 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName, loginUrl }) => {
             }}
           >
             {[
-              'Play thousands of the Times Puzzles',
-              'Read up to 30 articles per month on The Times',
+              'Play thousands of puzzles and crosswords',
+              'Read up to 30 articles per month on The Times & Sunday Times',
               'Just £1 for your first month, then £4.99 a month thereafter'
             ]}
           </SyledUnorderedList>
@@ -77,9 +92,16 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName, loginUrl }) => {
             Subscribe
           </Button>
         </StyledWrapper>
-        <StyledCrosswordIconWrapper>
-          <NewsKitCrosswordIcon />
-        </StyledCrosswordIconWrapper>
+        <StyledHeroIconContainer>
+          <StyledIconWrapper>
+            <StyledHeroBackground />
+            <StyledHeroBannerKillerSudoku />
+            <StyledHeroBannerQuintagram />
+            <StyledHeroBannerSuko />
+            <StyledHeroBannerWordPuzzle />
+          </StyledIconWrapper>
+          <StyledCrosswordIcon />
+        </StyledHeroIconContainer>
       </StyledStack>
       <StyledDivider />
 

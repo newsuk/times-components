@@ -10,6 +10,14 @@ import {
   TextBlock,
   UnorderedList
 } from 'newskit';
+import {
+  NewsKitCrosswordIcon,
+  NewsKitHeroBannerBackground,
+  NewsKitHeroBannerKillerSudoku,
+  NewsKitHeroBannerQuintagram,
+  NewsKitHeroBannerSuko,
+  NewsKitHeroBannerWordPuzzle
+} from '../../../assets';
 
 export const SyledUnorderedList = styled(UnorderedList)`
   & a {
@@ -60,8 +68,58 @@ export const StyledWrapper = styled(Block)`
   }
 `;
 
-export const StyledCrosswordIconWrapper = styled(Block)`
-  ${getMediaQueryFromTheme('xs', 'md')} {
+export const StyledHeroIconContainer = styled(Block)`
+  position: relative;
+`;
+
+export const StyledHeroBackground = styled(NewsKitHeroBannerBackground)`
+  transform: scale(1.1);
+`;
+
+export const StyledCrosswordIcon = styled(NewsKitCrosswordIcon)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 30%);
+  z-index: 2;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    position: relative;
+    transform: translate(0%, 0%);
+    ${getSpacingCssFromTheme('marginInlineStart', 'space010')};
+  }
+`;
+
+export const StyledIconWrapper = styled(Block)`
+  position: relative;
+  ${getMediaQueryFromTheme('xs', 'lg')} {
     display: none;
   }
+`;
+
+export const StyledHeroBannerKillerSudoku = styled(
+  NewsKitHeroBannerKillerSudoku
+)`
+  position: absolute;
+  left: 13%;
+  top: 16.5%;
+`;
+
+export const StyledHeroBannerQuintagram = styled(NewsKitHeroBannerQuintagram)`
+  position: absolute;
+  right: 20%;
+  bottom: 1%;
+`;
+
+export const StyledHeroBannerSuko = styled(NewsKitHeroBannerSuko)`
+  position: absolute;
+  top: 10%;
+  right: 19%;
+`;
+
+export const StyledHeroBannerWordPuzzle = styled(NewsKitHeroBannerWordPuzzle)`
+  position: absolute;
+  left: 13%;
+  bottom: 3%;
+}
 `;

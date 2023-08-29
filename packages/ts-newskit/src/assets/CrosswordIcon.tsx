@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CrosswordIcon = () => {
+const CrosswordIcon: React.FC = (props: any) => {
   return (
     <svg
       width="240"
@@ -8,6 +8,7 @@ const CrosswordIcon = () => {
       viewBox="0 0 240 240"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
     >
       <path
         d="M3.74609 3.75024H81.2461V81.2502H3.74609V3.75024Z"
