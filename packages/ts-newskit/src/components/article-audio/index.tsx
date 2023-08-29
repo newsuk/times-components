@@ -91,6 +91,7 @@ export const InArticleAudio = ({
           <AudioPlayerPlayPauseButton
             onClick={handleClickPlayPause}
             size={playButtonSize}
+            data-testid={isPlaying ? "audio-player-pause-btn" : "audio-player-play-btn"}
           />
           <Block marginInlineStart="space020">
             <TextBlock
@@ -140,7 +141,7 @@ export const InArticleAudio = ({
               </Visible>
               <Visible md lg xl>
                 <StickyPlayerDesktop
-                  {...{ handleClickPlayPause, setShowStickyPlayer }}
+                  {...{ handleClickPlayPause, setShowStickyPlayer, isPlaying }}
                 />
               </Visible>
             </StickyAudioPlayer>
