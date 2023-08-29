@@ -10,8 +10,6 @@ import {
   TextBlock,
   UnorderedList
 } from 'newskit';
-import IconD2 from '../../../assets/IconD2';
-import IconA4 from '../../../assets/IconA4';
 
 export const SyledUnorderedList = styled(UnorderedList)`
   & a {
@@ -59,32 +57,6 @@ export const StyledStack = styled(Stack)`
 export const StyledWrapper = styled(Block)`
   ${getMediaQueryFromTheme('lg')} {
     padding-right: 270px;
-  }
-`;
-
-export const StyledIconD2 = styled(IconD2)`
-  position: absolute;
-  width: 62.64px;
-  height: 62.64px;
-  top: -2%;
-  right: 50%;
-`;
-
-export const StyledIconA4 = styled(IconA4)`
-  position: absolute;
-  width: 122px;
-  height: 122px;
-  ${getMediaQueryFromTheme('xs')} {
-    bottom: -14%;
-    right: 0;
-  }
-  ${getMediaQueryFromTheme('sm')} {
-    bottom: -14%;
-    right: 0;
-  }
-  ${getMediaQueryFromTheme('md')} {
-    right: 15%;
-    bottom: -5%;
   }
 `;
 

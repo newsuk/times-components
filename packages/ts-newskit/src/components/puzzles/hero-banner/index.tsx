@@ -2,8 +2,6 @@ import React, { FC } from 'react';
 import {
   HeroBannerContainer,
   StyledStack,
-  StyledIconA4,
-  StyledIconD2,
   StyledWrapper,
   StyledDivider,
   StyledTextBlock,
@@ -96,8 +94,6 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName, loginUrl }) => {
       >
         Already a subscriber? <a href={loginUrl}>Log In</a>
       </StyledTextBlock>
-      <StyledIconD2 />
-      <StyledIconA4 />
     </HeroBannerContainer>
   );
 };
