@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.87.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.86.4...@times-components/ts-newskit@1.87.0) (2023-08-29)
+
+
+### Features
+
+* **TMRX-1462:** added data-testids to required components ([#3509](https://github.com/newsuk/times-components/issues/3509)) ([7830614](https://github.com/newsuk/times-components/commit/78306144f857704c3186369f4daeb2ecc1434b82))
+
+
+
+
+
 ## [1.86.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.86.3...@times-components/ts-newskit@1.86.4) (2023-08-25)
 
 **Note:** Version bump only for package @times-components/ts-newskit
