@@ -2,7 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '../../../../utils/test-utils';
 import { CategoryCard, CategoryCardProps } from '../index';
-import SudokusIcon from '../../../../assets/Sudokus';
+import { NewsKitSudokusIcon } from '../../../../assets/index';
 
 const renderComponent = (props: CategoryCardProps) =>
   render(<CategoryCard {...props} />);
@@ -10,7 +10,7 @@ const renderComponent = (props: CategoryCardProps) =>
 const defaultProps = {
   type: 'Sudokus',
   url: 'https://newskit.co.uk/',
-  Icon: SudokusIcon
+  Icon: NewsKitSudokusIcon
 };
 
 describe('Render puzzles category card', () => {

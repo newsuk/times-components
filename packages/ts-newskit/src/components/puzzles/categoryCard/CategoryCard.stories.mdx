@@ -3,7 +3,7 @@ import { TCThemeProvider } from '../../../utils/index';
 import { PuzzlesWebLightTheme } from '../../../theme';
 import { CategoryCard } from './index';
 import { CardComposable } from 'newskit';
-import SudokusIcon from '../../../assets/Sudokus';
+import { NewsKitSudokusIcon } from '../../../assets';
 
 <Meta
   title="Newskit Components/Puzzles/CategoryCard"
@@ -33,6 +33,6 @@ export const CategoryCardStory = ({ type, url, Icon }) => (
 );
 
 
-<Story name="Category Card" args={{ type: 'Sudokus', url: 'https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00', Icon: SudokusIcon }}>
+<Story name="Category Card" args={{ type: 'Sudokus', url: 'https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00', Icon: NewsKitSudokusIcon }}>
   {CategoryCardStory.bind({})}
 </Story>
