@@ -49,7 +49,6 @@ export const FeedbackText: React.FC<{
           size="small"
           onClick={() => setClosed(!closed)}
           aria-label="close"
-          data-testid="audio-player-btn-close"
         >
           <NewsKitCloseIcon />
         </IconButton>

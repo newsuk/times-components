@@ -38,7 +38,7 @@ exports[`FeedbackText Component should render snapshot 1`] = `
       <button
         aria-label="close"
         class="css-1ptfube"
-        data-testid="audio-player-btn-close"
+        data-testid="button"
         type="button"
       >
         <svg
