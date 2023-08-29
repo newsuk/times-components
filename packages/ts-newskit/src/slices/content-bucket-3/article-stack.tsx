@@ -1,7 +1,7 @@
 import React from 'react';
 import { BreakpointKeys, Divider, GridLayout } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { ScrollContainer, ArticleDividerXL } from '../shared-styles';
+import { ArticleDividerXL } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType } from '../types';
 
@@ -14,10 +14,10 @@ export const ArticleStack = ({
   breakpoint: BreakpointKeys;
   clickHandler: ClickHandlerType;
 }) => {
-  const articleGrid = (
+  return (
     <GridLayout
       columns={{
-        xs: '170px 1px 170px 1px 170px 1px 170px',
+        xs: '1fr',
         md: '1fr 1px 1fr 1px 1fr 1px 1fr',
         lg: '1fr',
         xl: '1fr 1fr'
@@ -28,15 +28,16 @@ export const ArticleStack = ({
       data-testid="article-container"
     >
       {articles.map((article: ArticleProps, articleIndex, articleArr) => {
-        const articleBorder = breakpoint !== 'lg' &&
-          breakpoint !== 'xl' &&
+        const articleBorder = breakpoint === 'md' &&
           articleIndex < articleArr.length - 1 && (
             <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
           );
 
+        const hasImage = ['xs', 'sm', 'lg'].includes(breakpoint);
+
         const articleTopBorder =
-          (breakpoint === 'xl' && articleIndex > 1) ||
-          (breakpoint === 'lg' && articleIndex > 0);
+          (hasImage && articleIndex > 0) ||
+          (breakpoint === 'xl' && articleIndex > 1);
 
         return (
           <React.Fragment key={article.headline}>
@@ -44,7 +45,7 @@ export const ArticleStack = ({
               article={{
                 ...clearCreditsAndCaption(article),
                 hasTopBorder: articleTopBorder,
-                hideImage: breakpoint === 'lg'
+                hideImage: hasImage
               }}
               clickHandler={clickHandler}
             />
@@ -60,18 +61,5 @@ export const ArticleStack = ({
         />
       )}
     </GridLayout>
-  );
-
-  const isMob = breakpoint === 'xs' || breakpoint === 'sm';
-
-  return isMob ? (
-    <ScrollContainer
-      overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
-      tabIndex={undefined}
-    >
-      {articleGrid}
-    </ScrollContainer>
-  ) : (
-    articleGrid
   );
 };

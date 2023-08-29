@@ -20,6 +20,11 @@ export const LeadStoryDivider = styled(Divider)<{ position: string }>`
     )};
 `;
 
+export const ArticleDivider = styled(Divider)`
+  position: absolute;
+  top: 0;
+`;
+
 export const AvatarDivider = styled(Divider)`
   ${getMediaQueryFromTheme('md')} {
     height: 100%;
@@ -28,6 +33,12 @@ export const AvatarDivider = styled(Divider)`
 
 export const StyledDivider = styled(Divider)`
   height: auto;
+`;
+
+export const ArticleDividerXL = styled(Divider)`
+  position: absolute;
+  height: 100%;
+  left: 50%;
 `;
 
 export const StackItem = styled(Stack)<{

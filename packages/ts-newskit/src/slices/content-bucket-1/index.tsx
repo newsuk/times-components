@@ -15,7 +15,7 @@ import {
 import { ArticleProps } from '../../components/slices/article';
 import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
 
-import { CommentStack } from './comment-stack';
+import { CommentStack } from '../shared/comment-stack';
 import { ArticleStack } from './article-stack';
 import { CustomStackLayout } from '../shared';
 import {
