@@ -127,7 +127,8 @@ export const InArticleAudio = ({
                     narrator,
                     setShowStickyPlayer,
                     setIsExpanded,
-                    handleClickPlayPause
+                    handleClickPlayPause,
+                    isPlaying
                   }}
                 />
                 {isExpanded && (
