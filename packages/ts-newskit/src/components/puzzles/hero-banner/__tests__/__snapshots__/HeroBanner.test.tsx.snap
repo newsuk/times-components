@@ -50,7 +50,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               <p
                 class="css-1c1lphz"
               >
-                Play thousands of Times Puzzles
+                Play thousands of the Times Puzzles
               </p>
             </div>
           </li>
@@ -84,7 +84,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               <p
                 class="css-1c1lphz"
               >
-                Sudoku, Polygon, Codeword, Lexica and many more
+                Read up to 30 articles per month on The Times
               </p>
             </div>
           </li>
@@ -118,14 +118,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               <p
                 class="css-1c1lphz"
               >
-                <span>
-                  Read up to 30 articles per month on 
-                  <a
-                    href="https://www.thetimes.co.uk"
-                  >
-                    thetimes.co.uk
-                  </a>
-                </span>
+                Just £1 for your first month, then £4.99 a month thereafter
               </p>
             </div>
           </li>

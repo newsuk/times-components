@@ -53,12 +53,9 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName, loginUrl }) => {
             }}
           >
             {[
-              'Play thousands of Times Puzzles',
-              'Sudoku, Polygon, Codeword, Lexica and many more',
-              <span>
-                Read up to 30 articles per month on{' '}
-                <a href="https://www.thetimes.co.uk">thetimes.co.uk</a>
-              </span>
+              'Play thousands of the Times Puzzles',
+              'Read up to 30 articles per month on The Times',
+              'Just £1 for your first month, then £4.99 a month thereafter'
             ]}
           </SyledUnorderedList>
           <Button
