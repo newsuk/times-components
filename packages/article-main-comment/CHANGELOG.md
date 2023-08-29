@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.70.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.69.8...@times-components/article-main-comment@2.70.0) (2023-08-29)
+
+
+### Features
+
+* **TMRX-1462:** added data-testids to required components ([#3509](https://github.com/newsuk/times-components/issues/3509)) ([7830614](https://github.com/newsuk/times-components/commit/78306144f857704c3186369f4daeb2ecc1434b82))
+
+
+
+
+
 ## [2.69.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.69.7...@times-components/article-main-comment@2.69.8) (2023-08-25)
 
 **Note:** Version bump only for package @times-components/article-main-comment

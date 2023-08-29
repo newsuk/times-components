@@ -11,6 +11,7 @@ export type StickyPlayerMobProps = {
   setIsExpanded: (value: boolean) => void;
   narrator: string;
   headline: string;
+  isPlaying: boolean;
 };
 
 export const StickyPlayerMob: React.FC<StickyPlayerMobProps> = ({
@@ -18,7 +19,8 @@ export const StickyPlayerMob: React.FC<StickyPlayerMobProps> = ({
   narrator,
   handleClickPlayPause,
   setShowStickyPlayer,
-  setIsExpanded
+  setIsExpanded,
+  isPlaying
 }) => {
   return (
     <>
@@ -30,6 +32,9 @@ export const StickyPlayerMob: React.FC<StickyPlayerMobProps> = ({
           <AudioPlayerPlayPauseButton
             onClick={handleClickPlayPause}
             overrides={{ stylePreset: 'iconButtonMinimalPrimary' }}
+            data-testid={
+              isPlaying ? 'audio-player-pause-btn' : 'audio-player-play-btn'
+            }
           />
         </ButtonContainer>
         <ButtonContainer marginInlineStart="space020">
