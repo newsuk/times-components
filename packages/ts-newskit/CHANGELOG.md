@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.89.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.89.0...@times-components/ts-newskit@1.89.1) (2023-08-30)
+
+
+### Bug Fixes
+
+* **TMRX-1442:** fix image layout issue ([#3514](https://github.com/newsuk/times-components/issues/3514)) ([c7d5f55](https://github.com/newsuk/times-components/commit/c7d5f557c4d7b8d7a4467632a1125762ad05583c))
+
+
+
+
+
 # [1.89.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.88.0...@times-components/ts-newskit@1.89.0) (2023-08-30)
 
 
