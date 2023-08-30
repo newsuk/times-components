@@ -20,15 +20,6 @@ type ArticleStackProps = {
   clickHandler: ClickHandlerType;
 };
 
-const fullWidthDivider = (marginBlockStart?: string) => (
-  <Divider
-    overrides={{
-      stylePreset: 'dashedDivider',
-      marginBlockStart: marginBlockStart || 'space000'
-    }}
-  />
-);
-
 const articleStack = ({
   articles,
   marginBlockStart,
@@ -39,7 +30,12 @@ const articleStack = ({
   <CustomStackLayout>
     <StackItem>
       <FullWidthBlock marginBlockEnd="space040">
-        {fullWidthDivider(marginBlockStart)}
+        <Divider
+          overrides={{
+            stylePreset: 'dashedDivider',
+            marginBlockStart: marginBlockStart || 'space000'
+          }}
+        />
       </FullWidthBlock>
     </StackItem>
     <StackItem>
@@ -119,7 +115,6 @@ export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
         isMob,
         clickHandler
       })}
-      {fullWidthDivider('space040')}
     </BlockItem>
   );
 };

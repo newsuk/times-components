@@ -183,7 +183,7 @@ export const LeadArticle = ({
           <Divider
             overrides={{
               stylePreset: 'dashedDivider',
-              marginBlockEnd: 'space050'
+              marginBlockEnd: 'space045'
             }}
           />
         )}
