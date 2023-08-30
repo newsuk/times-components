@@ -19,6 +19,7 @@ import {
   ArticleTileInfo,
   expirableFlagsProps
 } from '../shared/articleTileInfo';
+import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
 
 type ImageCrops = {
   url?: string;
@@ -81,7 +82,11 @@ export const Article = ({
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
   const hasArticleTileInfo =
-    (expirableFlags && expirableFlags.length > 0) || label || contentType;
+    (expirableFlags &&
+      getActiveArticleFlags(expirableFlags) &&
+      expirableFlags.length > 0) ||
+    label ||
+    contentType;
 
   const cardImage = !hideImage &&
     imageWithCorrectRatio && {
