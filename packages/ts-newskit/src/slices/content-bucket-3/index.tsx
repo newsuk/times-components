@@ -5,7 +5,7 @@ import {
   useBreakpointKey,
   Visible,
   BreakpointKeys,
-  Stack
+  GridLayout
 } from 'newskit';
 import React, { useState, useEffect } from 'react';
 import { CommentCardProps } from '../../components/slices/comment-card';
@@ -73,9 +73,13 @@ export const ContentBucket3 = ({
         </Visible>
         <StackItem>
           <Block>
-            <Stack
-              spaceInline={{ xs: 'space020', md: 'space040' }}
-              flow={{ sm: 'vertical-center', md: 'horizontal-center' }}
+            <GridLayout
+              columns={{
+                xs: '1fr',
+                md: '1fr 1px 1fr'
+              }}
+              columnGap={{ md: 'space040' }}
+              rowGap="space040"
             >
               <Article
                 article={{
@@ -107,7 +111,7 @@ export const ContentBucket3 = ({
                 }}
                 clickHandler={clickHandler}
               />
-            </Stack>
+            </GridLayout>
           </Block>
         </StackItem>
         <Block>
