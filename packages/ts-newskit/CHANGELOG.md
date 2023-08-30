@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.89.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.89.1...@times-components/ts-newskit@1.89.2) (2023-08-30)
+
+
+### Bug Fixes
+
+* **TMRX-1442:** add null check to expirableFlags ([#3516](https://github.com/newsuk/times-components/issues/3516)) ([63a17ad](https://github.com/newsuk/times-components/commit/63a17ada55edead646684d14acc58eeabf5878a8))
+
+
+
+
+
 ## [1.89.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.89.0...@times-components/ts-newskit@1.89.1) (2023-08-30)
 
 
