@@ -86,7 +86,9 @@ const articleStack = ({
 );
 
 export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(null);
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
+    null
+  );
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -95,7 +97,7 @@ export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
     [breakpointKey]
   );
 
-  if(!currentBreakpoint) {
+  if (!currentBreakpoint) {
     return null;
   }
 

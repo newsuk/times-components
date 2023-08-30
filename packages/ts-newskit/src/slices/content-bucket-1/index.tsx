@@ -37,7 +37,9 @@ export const ContentBucket1 = ({
   articles,
   clickHandler
 }: ContentBucket1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(null);
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
+    null
+  );
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -45,8 +47,8 @@ export const ContentBucket1 = ({
     },
     [breakpointKey]
   );
-  
-  if(!currentBreakpoint) {
+
+  if (!currentBreakpoint) {
     return null;
   }
 

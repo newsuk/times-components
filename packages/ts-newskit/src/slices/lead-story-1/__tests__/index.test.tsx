@@ -46,6 +46,4 @@ describe('Render Lead Story 1 Slice', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
-
-
 });

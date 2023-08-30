@@ -52,7 +52,9 @@ export const SectionBucket = ({
   articleStackFour,
   clickHandler
 }: SectionBucketProps) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(null);
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
+    null
+  );
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -61,7 +63,7 @@ export const SectionBucket = ({
     [breakpointKey]
   );
 
-  if(!currentBreakpoint) {
+  if (!currentBreakpoint) {
     return null;
   }
 

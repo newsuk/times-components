@@ -48,7 +48,9 @@ export const LeadStory1 = ({
   articlesWithListItems,
   clickHandler
 }: LeadStory1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(null);
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
+    null
+  );
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -57,7 +59,7 @@ export const LeadStory1 = ({
     [breakpointKey]
   );
 
-  if(!currentBreakpoint) {
+  if (!currentBreakpoint) {
     return null;
   }
 
