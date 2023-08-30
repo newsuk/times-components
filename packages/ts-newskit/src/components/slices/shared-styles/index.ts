@@ -9,7 +9,8 @@ import {
   getMediaQueryFromTheme,
   LinkInline,
   Hidden,
-  TextBlock
+  TextBlock,
+  Stack
 } from 'newskit';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
@@ -89,4 +90,8 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   ${getSpacingCssFromTheme('gap', 'space010')};
+`;
+
+export const StyledStack = styled(Stack)`
+  min-height: 72px;
 `;
