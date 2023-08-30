@@ -86,7 +86,7 @@ const articleStack = ({
 );
 
 export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(null);
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -94,6 +94,11 @@ export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
     },
     [breakpointKey]
   );
+
+  if(!currentBreakpoint) {
+    return null;
+  }
+
   const isMob = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
   const articlesTop = articles.slice(0, 4);
   const articlesBottom = articles.slice(4);

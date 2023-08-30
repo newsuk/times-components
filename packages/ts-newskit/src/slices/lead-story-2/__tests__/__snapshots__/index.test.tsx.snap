@@ -1408,6 +1408,8 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Render Lead Story 2 Slice Slice matches snapshot for \`null\` breakpoint value 1`] = `<DocumentFragment />`;
+
 exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
 <DocumentFragment>
   <div

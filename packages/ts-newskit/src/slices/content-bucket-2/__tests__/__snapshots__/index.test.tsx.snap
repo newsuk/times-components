@@ -589,3 +589,5 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
   </div>
 </DocumentFragment>
 `;
+
+exports[`Render Content Bucket 2 Slice Slice matches snapshot for \`null\` breakpoint value 1`] = `<DocumentFragment />`;
