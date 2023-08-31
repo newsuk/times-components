@@ -3,6 +3,61 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.89.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.89.1...@times-components/ts-newskit@1.89.2) (2023-08-30)
+
+
+### Bug Fixes
+
+* **TMRX-1442:** add null check to expirableFlags ([#3516](https://github.com/newsuk/times-components/issues/3516)) ([63a17ad](https://github.com/newsuk/times-components/commit/63a17ada55edead646684d14acc58eeabf5878a8))
+
+
+
+
+
+## [1.89.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.89.0...@times-components/ts-newskit@1.89.1) (2023-08-30)
+
+
+### Bug Fixes
+
+* **TMRX-1442:** fix image layout issue ([#3514](https://github.com/newsuk/times-components/issues/3514)) ([c7d5f55](https://github.com/newsuk/times-components/commit/c7d5f557c4d7b8d7a4467632a1125762ad05583c))
+
+
+
+
+
+# [1.89.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.88.0...@times-components/ts-newskit@1.89.0) (2023-08-30)
+
+
+### Features
+
+* **TMRX-0000:** apply design feedback ([#3512](https://github.com/newsuk/times-components/issues/3512)) ([c32f922](https://github.com/newsuk/times-components/commit/c32f92283a26ad3d6880efa7a011889563e1fe77))
+
+
+
+
+
+# [1.88.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.87.0...@times-components/ts-newskit@1.88.0) (2023-08-30)
+
+
+### Features
+
+* **TMRX-1442:** create content bucket 3 slice ([#3510](https://github.com/newsuk/times-components/issues/3510)) ([d2fba8e](https://github.com/newsuk/times-components/commit/d2fba8e8eda2e787dec35340991f9c3480cfbc52))
+
+
+
+
+
+# [1.87.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.86.4...@times-components/ts-newskit@1.87.0) (2023-08-29)
+
+
+### Features
+
+* **TMRX-1462:** added data-testids to required components ([#3509](https://github.com/newsuk/times-components/issues/3509)) ([7830614](https://github.com/newsuk/times-components/commit/78306144f857704c3186369f4daeb2ecc1434b82))
+
+
+
+
+
 ## [1.86.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.86.3...@times-components/ts-newskit@1.86.4) (2023-08-25)
 
 **Note:** Version bump only for package @times-components/ts-newskit

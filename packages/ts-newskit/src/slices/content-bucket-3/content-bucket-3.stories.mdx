@@ -1,0 +1,68 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { GridOverlay, TCThemeProvider, themes } from '../../utils/index.tsx';
+import { ContentBucket3 } from "./";
+import { leadArticleLeft,leadArticleRight, articles, comments } from '../fixtures/data.json';
+import { action } from '@storybook/addon-actions';
+
+<Meta
+  title="Newskit Slices/Content Bucket 3"
+  component={ContentBucket3}
+/>
+
+# ContentBucket3 component
+The `ContentBucket3` component is used to display the main story, supplementary articles and comment quotes.
+It is comprised of the `leadArticleLeft`,`leadArticleRight`, `ArticleListItem`, and `CommentCard` slice components.
+
+This takes in a series of props, as below, to display the part of the slices.
+
+## Props
+<Props of={ContentBucket3} />
+
+## Code Example
+`<ContentBucket3 {...{ leadArticleLeft, leadArticleRight, comments, articles }} />`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const ContentBucket3Story = ({ leadArticleLeft, leadArticleRight, comments, articles, theme, gridOverlay, clickHandler }) => (
+  <TCThemeProvider theme={theme}>
+    <>
+      <GridOverlay show={gridOverlay} />
+      <ContentBucket3 {...{ leadArticleLeft, leadArticleRight, comments, articles, clickHandler }} />
+    </>
+  </TCThemeProvider>
+);
+ContentBucket3Story.args = {
+  theme: 'TimesWebLightTheme',
+};
+
+<Story 
+  name="ContentBucket3"
+  args={{
+    leadArticleLeft,
+    leadArticleRight,
+    articles,
+    comments,
+    clickHandler: action("ClickHandler"),
+    expirableFlags: [
+        {
+          type: "BREAKING",
+          expiryTime: null
+        }
+    ],
+    contentType:"Q&A",
+    label:"MARTIN SAMUAL",
+  }}
+  argTypes={{
+    theme: {
+      options: Object.keys(themes),
+      mapping: themes,
+      control: { type: 'select' },
+    },
+    gridOverlay: {
+      control: { type: 'boolean' },
+    },
+  }}
+>
+  {ContentBucket3Story.bind({})}
+</Story>
