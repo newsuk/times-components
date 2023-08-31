@@ -26,6 +26,11 @@ describe('Render Lead Story 1 Slice', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
+  test('Slice matches snapshot for `null` breakpoint value', () => {
+    (useBreakpointKey as any).mockReturnValue(null);
+    const { asFragment } = renderComponent();
+    expect(asFragment()).toMatchSnapshot();
+  });
   test('modifies articles correctly when breakpointKey is "md"', () => {
     (useBreakpointKey as any).mockReturnValue('md');
     const { asFragment } = renderComponent();
@@ -36,7 +41,6 @@ describe('Render Lead Story 1 Slice', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
-
   test('modifies articles correctly when breakpointKey is "sm"', () => {
     (useBreakpointKey as any).mockReturnValue('sm');
     const { asFragment } = renderComponent();
