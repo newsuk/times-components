@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.90.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.89.2...@times-components/ts-newskit@1.90.0) (2023-08-31)
+
+
+### Features
+
+* **TMRX-1406:** add logic to await breakpoint value before loading s… ([#3513](https://github.com/newsuk/times-components/issues/3513)) ([31f0578](https://github.com/newsuk/times-components/commit/31f0578fe47bc3632cda494b66589fe098bb4b25))
+
+
+
+
+
 ## [1.89.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.89.1...@times-components/ts-newskit@1.89.2) (2023-08-30)
 
 
