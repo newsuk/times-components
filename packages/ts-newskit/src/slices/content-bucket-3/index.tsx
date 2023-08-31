@@ -24,7 +24,7 @@ import { CustomStackLayout } from '../shared';
 import { FullWidthHidden } from '../../components/slices/shared-styles';
 import { ClickHandlerType } from '../types';
 
-export interface ContentBucket1Props {
+export interface ContentBucket3Props {
   leadArticleLeft: LeadArticleProps;
   leadArticleRight: LeadArticleProps;
   comments: CommentCardProps[];
@@ -38,8 +38,10 @@ export const ContentBucket3 = ({
   comments,
   articles,
   clickHandler
-}: ContentBucket1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
+}: ContentBucket3Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
+    null
+  );
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -47,6 +49,11 @@ export const ContentBucket3 = ({
     },
     [breakpointKey]
   );
+
+  if (!currentBreakpoint) {
+    return null;
+  }
+
   const isMobile = ['xs', 'sm'].includes(currentBreakpoint);
   const isMedium = currentBreakpoint === 'md';
   const isLarge = ['lg', 'xl'].includes(currentBreakpoint);

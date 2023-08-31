@@ -32,6 +32,12 @@ const renderComponent = () =>
   );
 
 describe('Render SectionBucket Slice', () => {
+  test('Slice matches snapshot for `null` breakpoint value', () => {
+    (useBreakpointKey as any).mockReturnValue(null);
+    const { asFragment } = renderComponent();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   test('Slice matches snapshot with sm', () => {
     (useBreakpointKey as any).mockReturnValue('sm');
     const { asFragment } = renderComponent();
