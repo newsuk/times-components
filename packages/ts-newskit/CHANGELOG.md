@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.91.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.90.0...@times-components/ts-newskit@1.91.0) (2023-08-31)
+
+
+### Features
+
+* **TMPZ-132:** Create storybook component for category card ([#3508](https://github.com/newsuk/times-components/issues/3508)) ([17b28d0](https://github.com/newsuk/times-components/commit/17b28d0dd25f629baa6600de6880133275649a15))
+
+
+
+
+
 # [1.90.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.89.2...@times-components/ts-newskit@1.90.0) (2023-08-31)
 
 
