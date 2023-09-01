@@ -5,7 +5,7 @@ import {
   useBreakpointKey,
   Visible,
   BreakpointKeys,
-  Stack
+  GridLayout
 } from 'newskit';
 import React, { useState, useEffect } from 'react';
 import { CommentCardProps } from '../../components/slices/comment-card';
@@ -24,7 +24,7 @@ import { CustomStackLayout } from '../shared';
 import { FullWidthHidden } from '../../components/slices/shared-styles';
 import { ClickHandlerType } from '../types';
 
-export interface ContentBucket1Props {
+export interface ContentBucket3Props {
   leadArticleLeft: LeadArticleProps;
   leadArticleRight: LeadArticleProps;
   comments: CommentCardProps[];
@@ -38,8 +38,10 @@ export const ContentBucket3 = ({
   comments,
   articles,
   clickHandler
-}: ContentBucket1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
+}: ContentBucket3Props) => {
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
+    null
+  );
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -47,6 +49,11 @@ export const ContentBucket3 = ({
     },
     [breakpointKey]
   );
+
+  if (!currentBreakpoint) {
+    return null;
+  }
+
   const isMobile = ['xs', 'sm'].includes(currentBreakpoint);
   const isMedium = currentBreakpoint === 'md';
   const isLarge = ['lg', 'xl'].includes(currentBreakpoint);
@@ -73,9 +80,13 @@ export const ContentBucket3 = ({
         </Visible>
         <StackItem>
           <Block>
-            <Stack
-              spaceInline={{ xs: 'space020', md: 'space040' }}
-              flow={{ sm: 'vertical-center', md: 'horizontal-center' }}
+            <GridLayout
+              columns={{
+                xs: '1fr',
+                md: '1fr 1px 1fr'
+              }}
+              columnGap={{ md: 'space040' }}
+              rowGap="space040"
             >
               <Article
                 article={{
@@ -107,7 +118,7 @@ export const ContentBucket3 = ({
                 }}
                 clickHandler={clickHandler}
               />
-            </Stack>
+            </GridLayout>
           </Block>
         </StackItem>
         <Block>

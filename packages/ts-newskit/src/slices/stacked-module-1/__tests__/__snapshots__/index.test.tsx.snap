@@ -791,14 +791,11 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         </div>
       </div>
     </div>
-    <hr
-      aria-hidden="true"
-      class="css-1f0staz"
-      data-testid="divider"
-    />
   </div>
 </DocumentFragment>
 `;
+
+exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoint value 1`] = `<DocumentFragment />`;
 
 exports[`Render StackModule 1 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
 <DocumentFragment>
@@ -1591,11 +1588,6 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         </div>
       </div>
     </div>
-    <hr
-      aria-hidden="true"
-      class="css-1f0staz"
-      data-testid="divider"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2407,11 +2399,6 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         </div>
       </div>
     </div>
-    <hr
-      aria-hidden="true"
-      class="css-1f0staz"
-      data-testid="divider"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -3223,11 +3210,6 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         </div>
       </div>
     </div>
-    <hr
-      aria-hidden="true"
-      class="css-1f0staz"
-      data-testid="divider"
-    />
   </div>
 </DocumentFragment>
 `;

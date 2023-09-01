@@ -43,6 +43,7 @@ export { PuzzlesWebLightTheme } from './theme/puzzles-web-light/index';
 // SLICES
 export { ContentBucket1 } from './slices/content-bucket-1';
 export { ContentBucket2 } from './slices/content-bucket-2';
+export { ContentBucket3 } from './slices/content-bucket-3';
 export { LeadStory1 } from './slices/lead-story-1';
 export { LeadStory2 } from './slices/lead-story-2';
 export { LeadStory3 } from './slices/lead-story-3';
