@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.92.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.91.0...@times-components/ts-newskit@1.92.0) (2023-09-01)
+
+
+### Features
+
+* **TMPZ - 131:** Implemented HeroBanner ([#3502](https://github.com/newsuk/times-components/issues/3502)) ([a14be97](https://github.com/newsuk/times-components/commit/a14be976089c23badfda719a073e124088601870))
+
+
+
+
+
 # [1.91.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.90.0...@times-components/ts-newskit@1.91.0) (2023-08-31)
 
 
