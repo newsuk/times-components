@@ -18,11 +18,13 @@ import { AudioSeekBarContainer, ButtonContainer } from '../styles';
 type StickyPlayerDesktopProps = {
   handleClickPlayPause: () => void;
   setShowStickyPlayer: (value: boolean) => void;
+  isPlaying: boolean;
 };
 
 export const StickyPlayerDesktop: React.FC<StickyPlayerDesktopProps> = ({
   handleClickPlayPause,
-  setShowStickyPlayer
+  setShowStickyPlayer,
+  isPlaying
 }) => {
   return (
     <Stack flow="horizontal-center" stackDistribution="center">
@@ -30,6 +32,9 @@ export const StickyPlayerDesktop: React.FC<StickyPlayerDesktopProps> = ({
         <AudioPlayerPlayPauseButton
           onClick={handleClickPlayPause}
           overrides={{ stylePreset: 'iconButtonMinimalPrimary' }}
+          data-testid={
+            isPlaying ? 'audio-player-pause-btn' : 'audio-player-play-btn'
+          }
         />
       </ButtonContainer>
       <AudioPlayerVolumeControl

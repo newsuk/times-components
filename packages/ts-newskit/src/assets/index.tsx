@@ -22,8 +22,13 @@ import ThumbsUpIcon from './ThumbsUp';
 import TooltipIcon from './TooltipIcon';
 import FilledArrowIcon from './FilledArrowIcon';
 import VideoIcon from './VideoIcon';
-import CrosswordIcon from './CrosswordIcon';
 import HeroBannerWordPuzzle from './HeroBannerWordPuzzle';
+import SudokusIcon from './Sudokus';
+import CrosswordsIcon from './Crosswords';
+import WordPuzzlesIcon from './WordPuzzles';
+import NumbersAndLogicIcon from './NumbersAndLogic';
+import QuizzesAndTeasersIcon from './QuizzesAndTeasers';
+import BoardAndCardGamesIcon from './BoardAndCardGames';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -123,11 +128,6 @@ export const NewsKitVideoButtonIcon = customToNewsKitIcon(
   props => <VideoIcon {...props} />
 );
 
-export const NewsKitCrosswordIcon = customToNewsKitIcon(
-  'NewsKitCrosswordIcon',
-  props => <CrosswordIcon {...props} />
-);
-
 export const NewsKitHeroBannerBackground = customToNewsKitIcon(
   'NewsKitHeroBannerBackground',
   props => <HeroBannerBackground {...props} />
@@ -151,4 +151,34 @@ export const NewsKitHeroBannerSuko = customToNewsKitIcon(
 export const NewsKitHeroBannerWordPuzzle = customToNewsKitIcon(
   'NewsKitHeroBannerWordPuzzle',
   props => <HeroBannerWordPuzzle {...props} />
+);
+
+export const NewsKitSudokusIcon = customToNewsKitIcon(
+  'NewsKitSudokusIcon',
+  props => <SudokusIcon {...props} />
+);
+
+export const NewsKitCrosswordsIcon = customToNewsKitIcon(
+  'NewsKitCrosswordsIcon',
+  props => <CrosswordsIcon {...props} />
+);
+
+export const NewsKitWordPuzzlesIcon = customToNewsKitIcon(
+  'NewsKitWordPuzzlesIcon',
+  props => <WordPuzzlesIcon {...props} />
+);
+
+export const NewsKitNumbersAndLogicIcon = customToNewsKitIcon(
+  'NewsKitNumbersAndLogicIcon',
+  props => <NumbersAndLogicIcon {...props} />
+);
+
+export const NewsKitQuizzesAndTeasersIcon = customToNewsKitIcon(
+  'NewsKitQuizzesAndTeasersIcon',
+  props => <QuizzesAndTeasersIcon {...props} />
+);
+
+export const NewsKitBoardAndCardGamesIcon = customToNewsKitIcon(
+  'NewsKitBoardAndCardGamesIcon',
+  props => <BoardAndCardGamesIcon {...props} />
 );

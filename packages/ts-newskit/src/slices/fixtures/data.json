@@ -50,6 +50,108 @@
     "flag": "4 min read",
     "listData": []
   },
+  "leadArticleLeft": {
+    "contentType": "Interview",
+    "label": "Martin Samuel",
+    "expirableFlags": [
+      {
+        "type": "LIVE",
+        "expiryTime": null
+      }
+    ],
+    "id": "1",
+    "headline": "Sarcacens an inclusive club? They didnt look out for me",
+    "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
+    "images": {
+      "alt": "",
+      "credits": "Gareth Fuller/Press Association",
+      "caption": "Sarcacens an inclusive club? They didnt look",
+      "crops": [
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+          "ratio": "3:2"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+          "ratio": "16:9"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+          "ratio": "1:1"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+          "ratio": "2:3"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+          "ratio": "4:5"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+          "ratio": "5:4"
+        }
+      ]
+    },
+    "url": "https://www.thetimes.co.uk",
+    "tag": {
+      "label": "Review",
+      "href": "/"
+    },
+    "flag": "4 min read",
+    "listData": []
+  },
+  "leadArticleRight": {
+    "contentType": "Interview",
+    "label": "Martin Samuel",
+    "expirableFlags": [
+      {
+        "type": "LIVE",
+        "expiryTime": null
+      }
+    ],
+    "id": "1",
+    "headline": "Sarcacens an inclusive club? They didnt look out for me",
+    "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
+    "images": {
+      "alt": "",
+      "credits": "Gareth Fuller/Press Association",
+      "caption": "Sarcacens an inclusive club? They didnt look",
+      "crops": [
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+          "ratio": "3:2"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+          "ratio": "16:9"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+          "ratio": "1:1"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+          "ratio": "2:3"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+          "ratio": "4:5"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+          "ratio": "5:4"
+        }
+      ]
+    },
+    "url": "https://www.thetimes.co.uk",
+    "tag": {
+      "label": "Review",
+      "href": "/"
+    },
+    "flag": "4 min read",
+    "listData": []
+  },
   "articles": [
     {
       "contentType": "Profile",

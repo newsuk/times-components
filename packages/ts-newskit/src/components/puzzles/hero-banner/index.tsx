@@ -7,14 +7,15 @@ import {
   StyledTextBlock,
   StyledHeroIconContainer,
   SyledUnorderedList,
-  StyledHeroBackground,
   StyledCrosswordIcon,
   StyledHeroBannerKillerSudoku,
   StyledHeroBannerQuintagram,
   StyledHeroBannerSuko,
   StyledHeroBannerWordPuzzle,
-  StyledIconWrapper
+  StyledIconWrapper,
+  MainIconContainer
 } from './styles';
+import { NewsKitHeroBannerBackground } from '../../../assets';
 import { Button, TextBlock } from 'newskit';
 
 export type PuzzleType =
@@ -38,6 +39,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName, loginUrl }) => {
         flow="horizontal-center"
         stackDistribution="space-between"
         marginBlockEnd="space080"
+        spaceInline={{ xl: 'space100', lg: 'space100' }}
       >
         <StyledWrapper>
           <TextBlock
@@ -94,13 +96,15 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName, loginUrl }) => {
         </StyledWrapper>
         <StyledHeroIconContainer>
           <StyledIconWrapper>
-            <StyledHeroBackground />
+            <NewsKitHeroBannerBackground />
             <StyledHeroBannerKillerSudoku />
             <StyledHeroBannerQuintagram />
             <StyledHeroBannerSuko />
             <StyledHeroBannerWordPuzzle />
           </StyledIconWrapper>
-          <StyledCrosswordIcon />
+          <MainIconContainer>
+            <StyledCrosswordIcon />
+          </MainIconContainer>
         </StyledHeroIconContainer>
       </StyledStack>
       <StyledDivider />

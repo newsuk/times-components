@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Render SectionBucket Slice Slice matches snapshot for \`null\` breakpoint value 1`] = `<DocumentFragment />`;
+
 exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
 <DocumentFragment>
   <div

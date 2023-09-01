@@ -66,7 +66,8 @@ export const FeedbackText: React.FC<{
           }}
           size="small"
           onClick={() => handleFeedback(!showFeedback)}
-          aria-label="Thumbs Down"
+          aria-label="Thumbs Up"
+          data-testid="audio-player-feedback-thumbs-up"
         >
           <NewsKitThumbsUpIcon />
         </IconButton>
@@ -77,7 +78,8 @@ export const FeedbackText: React.FC<{
           }}
           size="small"
           onClick={() => handleFeedback(!showFeedback)}
-          aria-label="Thumbs Up"
+          aria-label="Thumbs Down"
+          data-testid="audio-player-feedback-thumbs-down"
         >
           <NewsKitThumbsDownIcon />
         </IconButton>

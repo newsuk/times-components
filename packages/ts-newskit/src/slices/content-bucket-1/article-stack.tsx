@@ -1,8 +1,7 @@
 import React from 'react';
 import { BreakpointKeys, Divider, GridLayout } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { ArticleDividerXL } from './styles';
-import { ScrollContainer } from '../shared-styles';
+import { ScrollContainer, ArticleDividerXL } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType } from '../types';
 

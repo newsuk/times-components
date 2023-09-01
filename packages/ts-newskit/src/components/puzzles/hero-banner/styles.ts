@@ -11,8 +11,7 @@ import {
   UnorderedList
 } from 'newskit';
 import {
-  NewsKitCrosswordIcon,
-  NewsKitHeroBannerBackground,
+  NewsKitCrosswordsIcon,
   NewsKitHeroBannerKillerSudoku,
   NewsKitHeroBannerQuintagram,
   NewsKitHeroBannerSuko,
@@ -62,33 +61,31 @@ export const StyledStack = styled(Stack)`
   ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
 `;
 
-export const StyledWrapper = styled(Block)`
-  ${getMediaQueryFromTheme('lg')} {
-    padding-right: 270px;
-  }
-`;
+export const StyledWrapper = styled(Block)``;
 
 export const StyledHeroIconContainer = styled(Block)`
   position: relative;
 `;
 
-export const StyledHeroBackground = styled(NewsKitHeroBannerBackground)`
-  transform: scale(1.1);
-`;
-
-export const StyledCrosswordIcon = styled(NewsKitCrosswordIcon)`
+export const MainIconContainer = styled(Block)`
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(50%, 30%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
 
+  ${getMediaQueryFromTheme('xs', 'md')} {
+    display: none;
+  }
+
   ${getMediaQueryFromTheme('md', 'lg')} {
+    display: block;
     position: relative;
-    transform: translate(0%, 0%);
     ${getSpacingCssFromTheme('marginInlineStart', 'space010')};
   }
 `;
+
+export const StyledCrosswordIcon = styled(NewsKitCrosswordsIcon)``;
 
 export const StyledIconWrapper = styled(Block)`
   position: relative;
@@ -101,25 +98,25 @@ export const StyledHeroBannerKillerSudoku = styled(
   NewsKitHeroBannerKillerSudoku
 )`
   position: absolute;
-  left: 13%;
-  top: 16.5%;
+  left: 18.5%;
+  top: 17.5%;
 `;
 
 export const StyledHeroBannerQuintagram = styled(NewsKitHeroBannerQuintagram)`
   position: absolute;
-  right: 20%;
-  bottom: 1%;
+  right: 22.5%;
+  bottom: 11.5%;
 `;
 
 export const StyledHeroBannerSuko = styled(NewsKitHeroBannerSuko)`
   position: absolute;
   top: 10%;
-  right: 19%;
+  right: 22%;
 `;
 
 export const StyledHeroBannerWordPuzzle = styled(NewsKitHeroBannerWordPuzzle)`
   position: absolute;
-  left: 13%;
-  bottom: 3%;
+  left: 18%;
+  bottom: 13%;
 }
 `;
