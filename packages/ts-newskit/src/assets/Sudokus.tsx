@@ -1,14 +1,12 @@
 import React from 'react';
 
-const SudokusIcon: React.FC = () => {
+const SudokusIcon: React.FC = props => {
   return (
     <svg
-      width="120"
-      height="120"
       viewBox="0 0 383 382"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="puzzle-icon"
+      {...props}
     >
       <path
         d="M4.49756 132.918H126.469V255.719H4.49756V132.918Z"

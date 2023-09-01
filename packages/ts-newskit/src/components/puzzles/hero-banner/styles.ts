@@ -11,7 +11,6 @@ import {
   UnorderedList
 } from 'newskit';
 import {
-  NewsKitCrosswordsIcon,
   NewsKitHeroBannerKillerSudoku,
   NewsKitHeroBannerQuintagram,
   NewsKitHeroBannerSuko,
@@ -84,8 +83,6 @@ export const MainIconContainer = styled(Block)`
     ${getSpacingCssFromTheme('marginInlineStart', 'space010')};
   }
 `;
-
-export const StyledCrosswordIcon = styled(NewsKitCrosswordsIcon)``;
 
 export const StyledIconWrapper = styled(Block)`
   position: relative;

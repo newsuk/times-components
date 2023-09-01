@@ -40,11 +40,9 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="css-ny3roy"
                 fill="none"
-                height="120"
                 viewBox="0 0 382 382"
-                width="120"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -194,11 +192,9 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="css-ny3roy"
                 fill="none"
-                height="120"
                 viewBox="0 0 383 382"
-                width="120"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -356,11 +352,9 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="css-ny3roy"
                 fill="none"
-                height="120"
                 viewBox="0 0 382 382"
-                width="120"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -466,11 +460,9 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="css-ny3roy"
                 fill="none"
-                height="120"
                 viewBox="0 0 382 382"
-                width="120"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -650,11 +642,9 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="css-ny3roy"
                 fill="none"
-                height="120"
                 viewBox="0 0 382 407"
-                width="120"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
@@ -792,11 +782,9 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="css-ny3roy"
                 fill="none"
-                height="120"
                 viewBox="0 0 382 382"
-                width="120"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path

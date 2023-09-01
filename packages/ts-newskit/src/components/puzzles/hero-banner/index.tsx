@@ -7,7 +7,6 @@ import {
   StyledTextBlock,
   StyledHeroIconContainer,
   SyledUnorderedList,
-  StyledCrosswordIcon,
   StyledHeroBannerKillerSudoku,
   StyledHeroBannerQuintagram,
   StyledHeroBannerSuko,
@@ -15,12 +14,20 @@ import {
   StyledIconWrapper,
   MainIconContainer
 } from './styles';
-import { NewsKitHeroBannerBackground } from '../../../assets';
+import {
+  NewsKitBoardAndCardGamesIcon,
+  NewsKitCrosswordsIcon,
+  NewsKitHeroBannerBackground,
+  NewsKitNumbersAndLogicIcon,
+  NewsKitQuizzesAndTeasersIcon,
+  NewsKitSudokusIcon,
+  NewsKitWordPuzzlesIcon
+} from '../../../assets';
 import { Button, TextBlock } from 'newskit';
 
 export type PuzzleType =
-  | 'crosswords'
-  | 'sudokus'
+  | 'crossword'
+  | 'sudoku'
   | 'word-puzzles'
   | 'numbers-and-logic'
   | 'quizzes-and-teasers'
@@ -32,7 +39,28 @@ export interface HeroBannerProps {
   loginUrl: string;
 }
 
-export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName, loginUrl }) => {
+export const HeroBanner: FC<HeroBannerProps> = ({
+  puzzleName,
+  loginUrl,
+  puzzleType
+}) => {
+  const renderMainIcon = (type: PuzzleType) => {
+    switch (type) {
+      case 'crossword':
+        return <NewsKitCrosswordsIcon width={200} height={200} />;
+      case 'sudoku':
+        return <NewsKitSudokusIcon width={200} height={200} />;
+      case 'word-puzzles':
+        return <NewsKitWordPuzzlesIcon width={200} height={200} />;
+      case 'numbers-and-logic':
+        return <NewsKitNumbersAndLogicIcon width={200} height={200} />;
+      case 'quizzes-and-teasers':
+        return <NewsKitQuizzesAndTeasersIcon width={200} height={200} />;
+      case 'board-and-card-games':
+        return <NewsKitBoardAndCardGamesIcon width={200} height={200} />;
+    }
+  };
+
   return (
     <HeroBannerContainer paddingBlockStart="space100" paddingInline="space090">
       <StyledStack
@@ -102,9 +130,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({ puzzleName, loginUrl }) => {
             <StyledHeroBannerSuko />
             <StyledHeroBannerWordPuzzle />
           </StyledIconWrapper>
-          <MainIconContainer>
-            <StyledCrosswordIcon />
-          </MainIconContainer>
+          <MainIconContainer>{renderMainIcon(puzzleType)}</MainIconContainer>
         </StyledHeroIconContainer>
       </StyledStack>
       <StyledDivider />
