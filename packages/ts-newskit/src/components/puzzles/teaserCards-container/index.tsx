@@ -26,12 +26,36 @@ interface TeaserCardsContainerProps {
 }
 
 const iconMapping: Record<PuzzleType, IconComponent> = {
-  Sudokus: NewsKitSudokusIcon,
-  Crosswords: NewsKitCrosswordsIcon,
-  'Word Puzzles': NewsKitWordPuzzlesIcon,
-  'Numbers And Logic': NewsKitNumbersAndLogicIcon,
-  'Quizzes And Teasers': NewsKitQuizzesAndTeasersIcon,
-  'Board And Card Games': NewsKitBoardAndCardGamesIcon
+  Sudokus: () => (
+    <NewsKitSudokusIcon className="puzzle-icon" width={120} height={120} />
+  ),
+  Crosswords: () => (
+    <NewsKitCrosswordsIcon className="puzzle-icon" width={120} height={120} />
+  ),
+  'Word Puzzles': () => (
+    <NewsKitWordPuzzlesIcon className="puzzle-icon" width={120} height={120} />
+  ),
+  'Numbers And Logic': () => (
+    <NewsKitNumbersAndLogicIcon
+      className="puzzle-icon"
+      width={120}
+      height={120}
+    />
+  ),
+  'Quizzes And Teasers': () => (
+    <NewsKitQuizzesAndTeasersIcon
+      className="puzzle-icon"
+      width={120}
+      height={120}
+    />
+  ),
+  'Board And Card Games': () => (
+    <NewsKitBoardAndCardGamesIcon
+      className="puzzle-icon"
+      width={120}
+      height={120}
+    />
+  )
 };
 
 export const TeaserCardsContainer = ({
