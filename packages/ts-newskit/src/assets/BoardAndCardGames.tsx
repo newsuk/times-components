@@ -1,14 +1,12 @@
 import React from 'react';
 
-const BoardAndCardGamesIcon: React.FC = () => {
+const BoardAndCardGamesIcon: React.FC = (props: any) => {
   return (
     <svg
-      width="120"
-      height="120"
       viewBox="0 0 382 382"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="puzzle-icon"
+      {...props}
     >
       <path d="M196.89 188.476H378.635V378.634H196.89V188.476Z" fill="white" />
       <path

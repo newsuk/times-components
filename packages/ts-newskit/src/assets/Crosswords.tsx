@@ -1,14 +1,12 @@
 import React from 'react';
 
-const CrosswordsIcon: React.FC = () => {
+const CrosswordsIcon: React.FC = (props: any) => {
   return (
     <svg
-      width="120"
-      height="120"
       viewBox="0 0 382 382"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="puzzle-icon"
+      {...props}
     >
       <path
         d="M5.96191 5.96948H129.316V129.324H5.96191V5.96948Z"

@@ -1,14 +1,12 @@
 import React from 'react';
 
-const WordPuzzlesIcon: React.FC = () => {
+const WordPuzzlesIcon: React.FC = props => {
   return (
     <svg
-      width="120"
-      height="120"
       viewBox="0 0 382 382"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="puzzle-icon"
+      {...props}
     >
       <path
         d="M191.591 4.19324L341.268 78.7302L377.948 244.772L274.416 378.09H108.174L4.05127 245.378L40.731 78.1242L191.591 4.19324Z"

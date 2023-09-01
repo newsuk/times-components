@@ -1,0 +1,49 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { NewsKitProvider } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../theme';
+import { HeroBanner } from './index';
+
+<Meta
+  title="Newskit Components/Puzzles/HeroBanner"
+  component={HeroBanner}
+/>
+
+# HeroBanner component
+The `HeroBanner` component is used to display the short details about the Puzzle and to tell the user to subscribe.
+
+## Props
+<Props of={HeroBanner} />
+
+## Code Example
+`<HeroBanner
+  puzzleName="Crossword"
+  loginUrl="https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles"
+  puzzleType="crossword"
+/>
+`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const HeroBannerStory = ({puzzleName, loginUrl, puzzleType}) => (
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+    <HeroBanner puzzleName={puzzleName} loginUrl={loginUrl} puzzleType={puzzleType}/>
+  </NewsKitProvider>
+);
+
+<Story name="HeroBanner" args={{puzzleType: 'crossword'}} argTypes={{
+  puzzleName: {
+    control: 'text',
+    name: 'Puzzle Name'
+  },
+  loginUrl: {
+    control: 'text',
+    name: 'Login Url'
+  },
+  puzzleType: {
+    control: 'select',
+    options: ['crossword', 'sudoku', 'word-puzzles', 'numbers-and-logic', 'quizzes-and-teasers', 'board-and-card-games'],
+  }
+}}>
+  {HeroBannerStory.bind({})}
+</Story>

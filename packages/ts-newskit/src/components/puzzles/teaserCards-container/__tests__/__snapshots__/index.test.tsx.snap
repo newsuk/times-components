@@ -40,7 +40,7 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="puzzle-icon css-ny3roy"
                 fill="none"
                 height="120"
                 viewBox="0 0 382 382"
@@ -194,7 +194,7 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="puzzle-icon css-ny3roy"
                 fill="none"
                 height="120"
                 viewBox="0 0 383 382"
@@ -356,7 +356,7 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="puzzle-icon css-ny3roy"
                 fill="none"
                 height="120"
                 viewBox="0 0 382 382"
@@ -466,7 +466,7 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="puzzle-icon css-ny3roy"
                 fill="none"
                 height="120"
                 viewBox="0 0 382 382"
@@ -650,7 +650,7 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="puzzle-icon css-ny3roy"
                 fill="none"
                 height="120"
                 viewBox="0 0 382 407"
@@ -792,7 +792,7 @@ exports[`TeaserCardsContainer tests should render a snapshot 1`] = `
               class="css-1x1danv"
             >
               <svg
-                class="puzzle-icon"
+                class="puzzle-icon css-ny3roy"
                 fill="none"
                 height="120"
                 viewBox="0 0 382 382"

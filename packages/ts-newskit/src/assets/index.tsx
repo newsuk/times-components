@@ -10,6 +10,10 @@ import CloseIcon from './CloseIcon';
 import ChevronIcon from './ChevronIcon';
 import TimesMasthead from './TimesMasthead';
 import SundayTimesMasthead from './SundayTimesMasthead';
+import HeroBannerBackground from './HeroBannerBackground';
+import HeroBannerKillerSudoku from './HeroBannerKillerSudoku';
+import HeroBannerQuintagram from './HeroBannerQuintagram';
+import HeroBannerSuko from './HeroBannerSuko';
 import ChevronRightIcon from './ChevronRightIcon';
 import ArticlePlaceholder from './ArticlePlaceholder';
 import WaveBg from './WaveBg';
@@ -18,6 +22,7 @@ import ThumbsUpIcon from './ThumbsUp';
 import TooltipIcon from './TooltipIcon';
 import FilledArrowIcon from './FilledArrowIcon';
 import VideoIcon from './VideoIcon';
+import HeroBannerWordPuzzle from './HeroBannerWordPuzzle';
 import SudokusIcon from './Sudokus';
 import CrosswordsIcon from './Crosswords';
 import WordPuzzlesIcon from './WordPuzzles';
@@ -121,6 +126,31 @@ export const NewsKitFilledArrowIconDown = customToNewsKitIcon(
 export const NewsKitVideoButtonIcon = customToNewsKitIcon(
   'NewsKitVideoButtonIcon',
   props => <VideoIcon {...props} />
+);
+
+export const NewsKitHeroBannerBackground = customToNewsKitIcon(
+  'NewsKitHeroBannerBackground',
+  props => <HeroBannerBackground {...props} />
+);
+
+export const NewsKitHeroBannerKillerSudoku = customToNewsKitIcon(
+  'NewsKitHeroBannerKillerSudoku',
+  props => <HeroBannerKillerSudoku {...props} />
+);
+
+export const NewsKitHeroBannerQuintagram = customToNewsKitIcon(
+  'NewsKitHeroBannerQuintagram',
+  props => <HeroBannerQuintagram {...props} />
+);
+
+export const NewsKitHeroBannerSuko = customToNewsKitIcon(
+  'NewsKitHeroBannerSuko',
+  props => <HeroBannerSuko {...props} />
+);
+
+export const NewsKitHeroBannerWordPuzzle = customToNewsKitIcon(
+  'NewsKitHeroBannerWordPuzzle',
+  props => <HeroBannerWordPuzzle {...props} />
 );
 
 export const NewsKitSudokusIcon = customToNewsKitIcon(
