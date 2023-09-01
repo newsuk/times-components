@@ -49,7 +49,7 @@ export const HeroBannerContainer = styled(Stack)<StackProps>`
     ${getSpacingCssFromTheme('paddingBlockStart', 'space100')};
     ${getSpacingCssFromTheme('paddingInline', 'space050')};
   }
-  ${getMediaQueryFromTheme('sm')} {
+  ${getMediaQueryFromTheme('md')} {
     ${getSpacingCssFromTheme('paddingBlockStart', 'space100')};
     ${getSpacingCssFromTheme('paddingInline', 'space090')};
   }
@@ -59,8 +59,6 @@ export const StyledStack = styled(Stack)`
   width: 100%;
   ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
 `;
-
-export const StyledWrapper = styled(Block)``;
 
 export const StyledHeroIconContainer = styled(Block)`
   position: relative;

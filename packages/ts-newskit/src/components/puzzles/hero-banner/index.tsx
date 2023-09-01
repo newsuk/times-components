@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import {
   HeroBannerContainer,
   StyledStack,
-  StyledWrapper,
   StyledDivider,
   StyledTextBlock,
   StyledHeroIconContainer,
@@ -23,7 +22,7 @@ import {
   NewsKitSudokusIcon,
   NewsKitWordPuzzlesIcon
 } from '../../../assets';
-import { Button, TextBlock } from 'newskit';
+import { Button, TextBlock, Block } from 'newskit';
 
 export type PuzzleType =
   | 'crossword'
@@ -33,33 +32,35 @@ export type PuzzleType =
   | 'quizzes-and-teasers'
   | 'board-and-card-games';
 
+type IconComponent = React.ComponentType;
+
 export interface HeroBannerProps {
   puzzleName: string;
   puzzleType: PuzzleType;
   loginUrl: string;
 }
 
+const iconMapping: Record<PuzzleType, IconComponent> = {
+  sudoku: () => <NewsKitSudokusIcon width={200} height={200} />,
+  crossword: () => <NewsKitCrosswordsIcon width={200} height={200} />,
+  'word-puzzles': () => <NewsKitWordPuzzlesIcon width={200} height={200} />,
+  'numbers-and-logic': () => (
+    <NewsKitNumbersAndLogicIcon width={200} height={200} />
+  ),
+  'quizzes-and-teasers': () => (
+    <NewsKitQuizzesAndTeasersIcon width={200} height={200} />
+  ),
+  'board-and-card-games': () => (
+    <NewsKitBoardAndCardGamesIcon width={200} height={200} />
+  )
+};
+
 export const HeroBanner: FC<HeroBannerProps> = ({
   puzzleName,
   loginUrl,
   puzzleType
 }) => {
-  const renderMainIcon = (type: PuzzleType) => {
-    switch (type) {
-      case 'crossword':
-        return <NewsKitCrosswordsIcon width={200} height={200} />;
-      case 'sudoku':
-        return <NewsKitSudokusIcon width={200} height={200} />;
-      case 'word-puzzles':
-        return <NewsKitWordPuzzlesIcon width={200} height={200} />;
-      case 'numbers-and-logic':
-        return <NewsKitNumbersAndLogicIcon width={200} height={200} />;
-      case 'quizzes-and-teasers':
-        return <NewsKitQuizzesAndTeasersIcon width={200} height={200} />;
-      case 'board-and-card-games':
-        return <NewsKitBoardAndCardGamesIcon width={200} height={200} />;
-    }
-  };
+  const Icon = iconMapping[puzzleType];
 
   return (
     <HeroBannerContainer paddingBlockStart="space100" paddingInline="space090">
@@ -69,7 +70,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({
         marginBlockEnd="space080"
         spaceInline={{ xl: 'space100', lg: 'space100' }}
       >
-        <StyledWrapper>
+        <Block>
           <TextBlock
             as="h2"
             typographyPreset={{
@@ -121,7 +122,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({
           >
             Subscribe
           </Button>
-        </StyledWrapper>
+        </Block>
         <StyledHeroIconContainer>
           <StyledIconWrapper>
             <NewsKitHeroBannerBackground />
@@ -130,7 +131,9 @@ export const HeroBanner: FC<HeroBannerProps> = ({
             <StyledHeroBannerSuko />
             <StyledHeroBannerWordPuzzle />
           </StyledIconWrapper>
-          <MainIconContainer>{renderMainIcon(puzzleType)}</MainIconContainer>
+          <MainIconContainer>
+            <Icon />
+          </MainIconContainer>
         </StyledHeroIconContainer>
       </StyledStack>
       <StyledDivider />
