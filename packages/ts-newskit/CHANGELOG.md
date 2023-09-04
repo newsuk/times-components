@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.92.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.0...@times-components/ts-newskit@1.92.1) (2023-09-04)
+
+
+### Bug Fixes
+
+* Added props to BreakoutSection. ([#3511](https://github.com/newsuk/times-components/issues/3511)) ([a2787a5](https://github.com/newsuk/times-components/commit/a2787a5fa443a716751b1dc29ecc9ec153e4ebe5))
+
+
+
+
+
 # [1.92.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.91.0...@times-components/ts-newskit@1.92.0) (2023-09-01)
 
 
