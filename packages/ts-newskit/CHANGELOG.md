@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.92.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.1...@times-components/ts-newskit@1.92.2) (2023-09-06)
+
+
+### Bug Fixes
+
+* Exported components from index.ts file. ([#3518](https://github.com/newsuk/times-components/issues/3518)) ([0c970eb](https://github.com/newsuk/times-components/commit/0c970eb1085fd82ca74cb052739e1ecf0fb75bd1))
+
+
+
+
+
 ## [1.92.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.0...@times-components/ts-newskit@1.92.1) (2023-09-04)
 
 
