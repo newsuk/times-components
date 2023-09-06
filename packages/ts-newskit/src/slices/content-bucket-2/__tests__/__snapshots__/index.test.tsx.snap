@@ -3,7 +3,7 @@
 exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoint 1`] = `
 <DocumentFragment>
   <div
-    class="css-1b7p4pb"
+    class="css-1gwix8r"
   >
     <div
       class="css-zry7cx"
@@ -316,7 +316,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
 exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoint 1`] = `
 <DocumentFragment>
   <div
-    class="css-1b7p4pb"
+    class="css-1gwix8r"
   >
     <div
       class="css-zry7cx"

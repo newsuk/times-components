@@ -5,7 +5,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot for \`null\` breakpoi
 exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
 <DocumentFragment>
   <div
-    class="css-1q37olt"
+    class="css-1wil340"
   >
     <div
       class="css-6uqogc"
@@ -1076,7 +1076,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
 exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
 <DocumentFragment>
   <div
-    class="css-1233jpw"
+    class="css-1frprgo"
   >
     <div
       class="css-gmqme8"

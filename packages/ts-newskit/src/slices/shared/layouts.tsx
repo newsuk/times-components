@@ -11,7 +11,7 @@ export const CustomStackLayout: React.FC = ({ children }) => {
         xs: 'space045',
         md: 'space000'
       }}
-      marginBlock="space040"
+      marginBlockEnd="space060"
     >
       {children}
     </Stack>
