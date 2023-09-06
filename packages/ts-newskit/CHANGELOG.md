@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.92.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.2...@times-components/ts-newskit@1.92.3) (2023-09-06)
+
+
+### Bug Fixes
+
+* **TMRX-1477:** add min-height to slice header ([#3519](https://github.com/newsuk/times-components/issues/3519)) ([afa3f4e](https://github.com/newsuk/times-components/commit/afa3f4ede876c3ca6d330e95b533480d88bf7672))
+
+
+
+
+
 ## [1.92.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.1...@times-components/ts-newskit@1.92.2) (2023-09-06)
 
 
