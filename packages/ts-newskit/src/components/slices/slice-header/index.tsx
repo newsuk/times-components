@@ -1,10 +1,11 @@
 import React from 'react';
 import { NewsKitChevronRightIcon } from '../../../assets';
-import { Block, FlagSize, IconButton, Stack, TitleBar } from 'newskit';
+import { Block, FlagSize, IconButton, TitleBar } from 'newskit';
 import {
   TrackingContextProvider,
   TrackingContext
 } from '../../../utils/TrackingContextProvider';
+import { SliceHeaderContainer } from './styles';
 
 export interface SliceHeaderProps {
   title: string;
@@ -44,7 +45,7 @@ export const SliceHeader = ({
     >
       {({ fireAnalyticsEvent }) => (
         <Block stylePreset="sliceHeaderPreset">
-          <Stack
+          <SliceHeaderContainer
             flow="horizontal-center"
             stackDistribution="space-between"
             paddingBlock={padding}
@@ -75,7 +76,7 @@ export const SliceHeader = ({
                 <NewsKitChevronRightIcon />
               </IconButton>
             )}
-          </Stack>
+          </SliceHeaderContainer>
         </Block>
       )}
     </TrackingContextProvider>

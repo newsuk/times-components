@@ -3,7 +3,7 @@
 exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1sr0a1l"
+    class="css-1b7p4pb"
   >
     <div
       class="css-1polam9"
@@ -1511,7 +1511,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot for \`null\` breakpoin
 exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
 <DocumentFragment>
   <div
-    class="css-1sr0a1l"
+    class="css-1b7p4pb"
   >
     <div
       class="css-1polam9"
@@ -2764,7 +2764,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
 exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "sm" 1`] = `
 <DocumentFragment>
   <div
-    class="css-1sr0a1l"
+    class="css-1b7p4pb"
   >
     <div
       class="css-1polam9"
@@ -4277,7 +4277,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
 exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
 <DocumentFragment>
   <div
-    class="css-1sr0a1l"
+    class="css-1b7p4pb"
   >
     <div
       class="css-1polam9"
