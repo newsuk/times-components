@@ -1,7 +1,6 @@
 import {
   Block,
   Divider,
-  Stack,
   useBreakpointKey,
   Visible,
   BreakpointKeys
@@ -15,7 +14,11 @@ import { ArticleProps } from '../../components/slices/article';
 import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
 import { ArticleStack } from './article-stacks';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
-import { ArticleStackLeadStory, ComposedArticleStack } from '../shared';
+import {
+  ArticleStackLeadStory,
+  ComposedArticleStack,
+  CustomStackLayout
+} from '../shared';
 import { ClickHandlerType } from '../types';
 
 export interface LeadStory2Props {
@@ -33,7 +36,9 @@ export const LeadStory2 = ({
   horizontalArticles,
   clickHandler
 }: LeadStory2Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
+    null
+  );
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -41,6 +46,10 @@ export const LeadStory2 = ({
     },
     [breakpointKey]
   );
+
+  if (!currentBreakpoint) {
+    return null;
+  }
 
   const modifedArticles =
     currentBreakpoint === 'xl'
@@ -67,15 +76,7 @@ export const LeadStory2 = ({
   };
 
   return (
-    <Stack
-      flow="horizontal-top"
-      stackDistribution="center"
-      wrap="wrap"
-      marginInline={{
-        xs: 'space045',
-        md: 'space000'
-      }}
-    >
+    <CustomStackLayout>
       <StackItem
         $width={{
           xs: '100%',
@@ -147,6 +148,6 @@ export const LeadStory2 = ({
           clickHandler={clickHandler}
         />
       )}
-    </Stack>
+    </CustomStackLayout>
   );
 };

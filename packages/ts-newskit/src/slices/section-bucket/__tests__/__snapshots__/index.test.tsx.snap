@@ -1,9 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Render SectionBucket Slice Slice matches snapshot for \`null\` breakpoint value 1`] = `<DocumentFragment />`;
+
 exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
 <DocumentFragment>
   <div
-    class="css-1r18k3i"
+    class="css-1wil340"
   >
     <div
       class="css-6uqogc"
@@ -21,7 +23,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             class="css-lihpnt"
           >
             <div
-              class="css-66z36v"
+              class="css-kdlajr"
             >
               <div
                 class="css-86cix"
@@ -284,7 +286,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             class="css-lihpnt"
           >
             <div
-              class="css-66z36v"
+              class="css-kdlajr"
             >
               <div
                 class="css-86cix"
@@ -547,7 +549,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             class="css-lihpnt"
           >
             <div
-              class="css-66z36v"
+              class="css-kdlajr"
             >
               <div
                 class="css-86cix"
@@ -810,7 +812,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             class="css-lihpnt"
           >
             <div
-              class="css-66z36v"
+              class="css-kdlajr"
             >
               <div
                 class="css-86cix"
@@ -1088,7 +1090,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
           class="css-lihpnt"
         >
           <div
-            class="css-66z36v"
+            class="css-kdlajr"
           >
             <div
               class="css-86cix"
@@ -1351,7 +1353,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
           class="css-lihpnt"
         >
           <div
-            class="css-66z36v"
+            class="css-kdlajr"
           >
             <div
               class="css-86cix"
@@ -1614,7 +1616,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
           class="css-lihpnt"
         >
           <div
-            class="css-66z36v"
+            class="css-kdlajr"
           >
             <div
               class="css-86cix"
@@ -1877,7 +1879,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
           class="css-lihpnt"
         >
           <div
-            class="css-66z36v"
+            class="css-kdlajr"
           >
             <div
               class="css-86cix"

@@ -83,9 +83,9 @@ exports[`Feedback Component should render snapshot 1`] = `
         class="css-1th2wme"
       >
         <button
-          aria-label="Thumbs Down"
+          aria-label="Thumbs Up"
           class="css-qla9w6"
-          data-testid="button"
+          data-testid="audio-player-feedback-thumbs-up"
           type="button"
         >
           <svg
@@ -130,9 +130,9 @@ exports[`Feedback Component should render snapshot 1`] = `
         class="css-1th2wme"
       >
         <button
-          aria-label="Thumbs Up"
+          aria-label="Thumbs Down"
           class="css-qla9w6"
-          data-testid="button"
+          data-testid="audio-player-feedback-thumbs-down"
           type="button"
         >
           <svg

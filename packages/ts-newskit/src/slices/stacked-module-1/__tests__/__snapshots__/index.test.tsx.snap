@@ -6,7 +6,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
     class="css-1frprgo"
   >
     <div
-      class="css-1sr0a1l"
+      class="css-1gwix8r"
     >
       <div
         class="css-13tedu1"
@@ -431,7 +431,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
       </div>
     </div>
     <div
-      class="css-1sr0a1l"
+      class="css-1gwix8r"
     >
       <div
         class="css-13tedu1"
@@ -791,14 +791,11 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         </div>
       </div>
     </div>
-    <hr
-      aria-hidden="true"
-      class="css-1f0staz"
-      data-testid="divider"
-    />
   </div>
 </DocumentFragment>
 `;
+
+exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoint value 1`] = `<DocumentFragment />`;
 
 exports[`Render StackModule 1 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
 <DocumentFragment>
@@ -806,7 +803,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
     class="css-1frprgo"
   >
     <div
-      class="css-1sr0a1l"
+      class="css-1gwix8r"
     >
       <div
         class="css-13tedu1"
@@ -1231,7 +1228,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
       </div>
     </div>
     <div
-      class="css-1sr0a1l"
+      class="css-1gwix8r"
     >
       <div
         class="css-13tedu1"
@@ -1591,11 +1588,6 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         </div>
       </div>
     </div>
-    <hr
-      aria-hidden="true"
-      class="css-1f0staz"
-      data-testid="divider"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -1606,7 +1598,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
     class="css-1frprgo"
   >
     <div
-      class="css-1sr0a1l"
+      class="css-1gwix8r"
     >
       <div
         class="css-13tedu1"
@@ -2007,7 +1999,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
       </div>
     </div>
     <div
-      class="css-1sr0a1l"
+      class="css-1gwix8r"
     >
       <div
         class="css-13tedu1"
@@ -2407,11 +2399,6 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         </div>
       </div>
     </div>
-    <hr
-      aria-hidden="true"
-      class="css-1f0staz"
-      data-testid="divider"
-    />
   </div>
 </DocumentFragment>
 `;
@@ -2422,7 +2409,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
     class="css-1frprgo"
   >
     <div
-      class="css-1sr0a1l"
+      class="css-1gwix8r"
     >
       <div
         class="css-13tedu1"
@@ -2823,7 +2810,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
       </div>
     </div>
     <div
-      class="css-1sr0a1l"
+      class="css-1gwix8r"
     >
       <div
         class="css-13tedu1"
@@ -3223,11 +3210,6 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         </div>
       </div>
     </div>
-    <hr
-      aria-hidden="true"
-      class="css-1f0staz"
-      data-testid="divider"
-    />
   </div>
 </DocumentFragment>
 `;

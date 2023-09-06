@@ -1,0 +1,35 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { TeaserCardsContainer } from "./index";
+import { NewsKitProvider } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../theme';
+import { ContentWrapper } from '../../../utils/contentWrapper.tsx';
+import { Categories } from './fixtures/data.json';
+
+<Meta
+  title="Newskit Components/Puzzles/Cards Container"
+  component={TeaserCardsContainer}
+/>
+
+# TeaserCardsContainer component
+The `TeaserCardsContainer` component is used to display Puzzle cards using the NewsKit Grid
+
+## Props 
+<Props of={TeaserCardsContainer} />               
+
+## Code Example
+`<TeaserCardsContainer types={[Categories]} title='Crosswords'/>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const TeaserCardsContainerStory = ({types, title}) => (
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+    <ContentWrapper marginInline='auto' paddingBlock='space020' paddingInline='space020'>
+      <TeaserCardsContainer types={types} title={title} />
+    </ContentWrapper>
+  </NewsKitProvider>
+);
+
+<Story name="Teaser Cards Container" args={{types: Categories, title: 'Subscribe to access all of The Times puzzles'}}>
+  {TeaserCardsContainerStory.bind({})}
+</Story>

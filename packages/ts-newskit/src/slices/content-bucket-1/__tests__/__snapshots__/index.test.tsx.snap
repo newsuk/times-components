@@ -3,7 +3,7 @@
 exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1sr0a1l"
+    class="css-1gwix8r"
   >
     <div
       class="css-1klr24i"
@@ -58,7 +58,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-tk98gp"
+              class="css-1haabs"
               data-testid="divider"
             />
             <div
@@ -766,10 +766,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
 </DocumentFragment>
 `;
 
+exports[`Render Content Bucket 1 Slice Slice matches snapshot for \`null\` breakpoint value 1`] = `<DocumentFragment />`;
+
 exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
 <DocumentFragment>
   <div
-    class="css-1sr0a1l"
+    class="css-1gwix8r"
   >
     <div
       class="css-1klr24i"

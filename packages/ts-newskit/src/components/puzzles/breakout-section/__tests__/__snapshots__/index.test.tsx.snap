@@ -121,7 +121,6 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         </svg>
         <div
           class="css-bdm6mo"
-          id="0"
         >
           <a
             class="css-9rhswx"
@@ -140,7 +139,6 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         </div>
         <div
           class="css-bdm6mo"
-          id="1"
         >
           <a
             class="css-9rhswx"
@@ -159,7 +157,6 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         </div>
         <div
           class="css-bdm6mo"
-          id="2"
         >
           <a
             class="css-9rhswx"
@@ -178,7 +175,6 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         </div>
         <div
           class="css-bdm6mo"
-          id="3"
         >
           <a
             class="css-9rhswx"
@@ -197,7 +193,6 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         </div>
         <div
           class="css-bdm6mo"
-          id="4"
         >
           <a
             class="css-9rhswx"
@@ -216,7 +211,6 @@ exports[`BreakoutSection should render Breakout section 1`] = `
         </div>
         <div
           class="css-bdm6mo"
-          id="5"
         >
           <a
             class="css-9rhswx"

@@ -3,6 +3,138 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.92.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.3...@times-components/ts-newskit@1.92.4) (2023-09-06)
+
+
+### Bug Fixes
+
+* **TMRX-1477:** update margin to marginBlockEnd ([#3520](https://github.com/newsuk/times-components/issues/3520)) ([7c923c0](https://github.com/newsuk/times-components/commit/7c923c06579b9c406a4a50db412c68c989a2f061))
+
+
+
+
+
+## [1.92.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.2...@times-components/ts-newskit@1.92.3) (2023-09-06)
+
+
+### Bug Fixes
+
+* **TMRX-1477:** add min-height to slice header ([#3519](https://github.com/newsuk/times-components/issues/3519)) ([afa3f4e](https://github.com/newsuk/times-components/commit/afa3f4ede876c3ca6d330e95b533480d88bf7672))
+
+
+
+
+
+## [1.92.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.1...@times-components/ts-newskit@1.92.2) (2023-09-06)
+
+
+### Bug Fixes
+
+* Exported components from index.ts file. ([#3518](https://github.com/newsuk/times-components/issues/3518)) ([0c970eb](https://github.com/newsuk/times-components/commit/0c970eb1085fd82ca74cb052739e1ecf0fb75bd1))
+
+
+
+
+
+## [1.92.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.0...@times-components/ts-newskit@1.92.1) (2023-09-04)
+
+
+### Bug Fixes
+
+* Added props to BreakoutSection. ([#3511](https://github.com/newsuk/times-components/issues/3511)) ([a2787a5](https://github.com/newsuk/times-components/commit/a2787a5fa443a716751b1dc29ecc9ec153e4ebe5))
+
+
+
+
+
+# [1.92.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.91.0...@times-components/ts-newskit@1.92.0) (2023-09-01)
+
+
+### Features
+
+* **TMPZ - 131:** Implemented HeroBanner ([#3502](https://github.com/newsuk/times-components/issues/3502)) ([a14be97](https://github.com/newsuk/times-components/commit/a14be976089c23badfda719a073e124088601870))
+
+
+
+
+
+# [1.91.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.90.0...@times-components/ts-newskit@1.91.0) (2023-08-31)
+
+
+### Features
+
+* **TMPZ-132:** Create storybook component for category card ([#3508](https://github.com/newsuk/times-components/issues/3508)) ([17b28d0](https://github.com/newsuk/times-components/commit/17b28d0dd25f629baa6600de6880133275649a15))
+
+
+
+
+
+# [1.90.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.89.2...@times-components/ts-newskit@1.90.0) (2023-08-31)
+
+
+### Features
+
+* **TMRX-1406:** add logic to await breakpoint value before loading s… ([#3513](https://github.com/newsuk/times-components/issues/3513)) ([31f0578](https://github.com/newsuk/times-components/commit/31f0578fe47bc3632cda494b66589fe098bb4b25))
+
+
+
+
+
+## [1.89.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.89.1...@times-components/ts-newskit@1.89.2) (2023-08-30)
+
+
+### Bug Fixes
+
+* **TMRX-1442:** add null check to expirableFlags ([#3516](https://github.com/newsuk/times-components/issues/3516)) ([63a17ad](https://github.com/newsuk/times-components/commit/63a17ada55edead646684d14acc58eeabf5878a8))
+
+
+
+
+
+## [1.89.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.89.0...@times-components/ts-newskit@1.89.1) (2023-08-30)
+
+
+### Bug Fixes
+
+* **TMRX-1442:** fix image layout issue ([#3514](https://github.com/newsuk/times-components/issues/3514)) ([c7d5f55](https://github.com/newsuk/times-components/commit/c7d5f557c4d7b8d7a4467632a1125762ad05583c))
+
+
+
+
+
+# [1.89.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.88.0...@times-components/ts-newskit@1.89.0) (2023-08-30)
+
+
+### Features
+
+* **TMRX-0000:** apply design feedback ([#3512](https://github.com/newsuk/times-components/issues/3512)) ([c32f922](https://github.com/newsuk/times-components/commit/c32f92283a26ad3d6880efa7a011889563e1fe77))
+
+
+
+
+
+# [1.88.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.87.0...@times-components/ts-newskit@1.88.0) (2023-08-30)
+
+
+### Features
+
+* **TMRX-1442:** create content bucket 3 slice ([#3510](https://github.com/newsuk/times-components/issues/3510)) ([d2fba8e](https://github.com/newsuk/times-components/commit/d2fba8e8eda2e787dec35340991f9c3480cfbc52))
+
+
+
+
+
+# [1.87.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.86.4...@times-components/ts-newskit@1.87.0) (2023-08-29)
+
+
+### Features
+
+* **TMRX-1462:** added data-testids to required components ([#3509](https://github.com/newsuk/times-components/issues/3509)) ([7830614](https://github.com/newsuk/times-components/commit/78306144f857704c3186369f4daeb2ecc1434b82))
+
+
+
+
+
 ## [1.86.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.86.3...@times-components/ts-newskit@1.86.4) (2023-08-25)
 
 **Note:** Version bump only for package @times-components/ts-newskit

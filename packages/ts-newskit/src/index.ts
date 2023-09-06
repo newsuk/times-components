@@ -32,6 +32,10 @@ export { DateCard } from './components/puzzles/date-card';
 export { PuzzlesFlag } from './components/puzzles/flag';
 export { AccordionGroup } from './components/misc/accordion/accordion-group';
 export { BreakoutSection } from './components/puzzles/breakout-section';
+export { HeroBanner } from './components/puzzles/hero-banner';
+export {
+  TeaserCardsContainer
+} from './components/puzzles/teaserCards-container';
 export { CardsContainer } from './components/puzzles/cards-container';
 export { FreeTrial } from './components/puzzles/free-trial';
 export { PersonalStats } from './components/puzzles/personal-stats';
@@ -43,6 +47,7 @@ export { PuzzlesWebLightTheme } from './theme/puzzles-web-light/index';
 // SLICES
 export { ContentBucket1 } from './slices/content-bucket-1';
 export { ContentBucket2 } from './slices/content-bucket-2';
+export { ContentBucket3 } from './slices/content-bucket-3';
 export { LeadStory1 } from './slices/lead-story-1';
 export { LeadStory2 } from './slices/lead-story-2';
 export { LeadStory3 } from './slices/lead-story-3';

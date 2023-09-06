@@ -52,7 +52,9 @@ export const SectionBucket = ({
   articleStackFour,
   clickHandler
 }: SectionBucketProps) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
+    null
+  );
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -60,6 +62,11 @@ export const SectionBucket = ({
     },
     [breakpointKey]
   );
+
+  if (!currentBreakpoint) {
+    return null;
+  }
+
   const isMobile = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
 
   const articleStacksArray = [
@@ -79,7 +86,10 @@ export const SectionBucket = ({
 
   return isMobile ? (
     <Scroll
-      overrides={{ overlays: { stylePreset: 'transparentBackground' } }}
+      overrides={{
+        overlays: { stylePreset: 'transparentBackground' },
+        marginBlockEnd: 'space060'
+      }}
       tabIndex={undefined}
     >
       {ArticleStackBlocks}
@@ -92,6 +102,7 @@ export const SectionBucket = ({
         lg: '976px',
         xl: '1276px'
       }}
+      marginBlockEnd="sizing060"
     >
       {ArticleStackBlocks}
     </BlockItem>

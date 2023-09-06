@@ -120,7 +120,7 @@ exports[`1. a full article 1`] = `
         aria-label="Play"
         aria-live="polite"
         aria-pressed={false}
-        data-testid="audio-player-play-pause-button"
+        data-testid="audio-player-play-btn"
         size="small"
         type="button"
       >
