@@ -88,7 +88,7 @@ export const SectionBucket = ({
     <Scroll
       overrides={{
         overlays: { stylePreset: 'transparentBackground' },
-        marginBlock: 'space040'
+        marginBlockEnd: 'space060'
       }}
       tabIndex={undefined}
     >
@@ -102,7 +102,7 @@ export const SectionBucket = ({
         lg: '976px',
         xl: '1276px'
       }}
-      marginBlock="space040"
+      marginBlockEnd="sizing060"
     >
       {ArticleStackBlocks}
     </BlockItem>
