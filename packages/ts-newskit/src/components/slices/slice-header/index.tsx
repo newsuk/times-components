@@ -40,6 +40,7 @@ export const SliceHeader = ({
   return (
     <TrackingContextProvider
       context={{
+        component: 'SliceHeader',
         object: 'SliceHeader'
       }}
     >
