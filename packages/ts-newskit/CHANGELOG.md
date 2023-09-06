@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.92.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.3...@times-components/ts-newskit@1.92.4) (2023-09-06)
+
+
+### Bug Fixes
+
+* **TMRX-1477:** update margin to marginBlockEnd ([#3520](https://github.com/newsuk/times-components/issues/3520)) ([7c923c0](https://github.com/newsuk/times-components/commit/7c923c06579b9c406a4a50db412c68c989a2f061))
+
+
+
+
+
 ## [1.92.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.2...@times-components/ts-newskit@1.92.3) (2023-09-06)
 
 
