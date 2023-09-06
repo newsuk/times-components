@@ -86,7 +86,10 @@ export const SectionBucket = ({
 
   return isMobile ? (
     <Scroll
-      overrides={{ overlays: { stylePreset: 'transparentBackground' }, marginBlock: 'space040' }}
+      overrides={{
+        overlays: { stylePreset: 'transparentBackground' },
+        marginBlock: 'space040'
+      }}
       tabIndex={undefined}
     >
       {ArticleStackBlocks}
