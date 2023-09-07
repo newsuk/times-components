@@ -33,6 +33,7 @@ export const StyledTextBlock = styled(TextBlock)`
   & a {
     color: inherit;
     font-weight: 600;
+    text-decoration: underline;
   }
 
   ${getMediaQueryFromTheme('xs', 'md')} {
