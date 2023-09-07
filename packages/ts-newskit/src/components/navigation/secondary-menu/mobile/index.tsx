@@ -9,7 +9,7 @@ export const SecondaryNavMobile: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
   onClick?: (isExpanded: boolean) => void;
-  height?: string
+  height?: string;
 }> = ({ options, data, onClick, height = 'auto' }) => {
   const { isExpanded, isSelected } = options;
   const subMenuTitle = isExpanded ? 'Close' : 'See all';
