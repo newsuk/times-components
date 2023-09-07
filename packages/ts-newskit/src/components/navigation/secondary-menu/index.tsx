@@ -12,6 +12,7 @@ interface SecondaryNavigationProps {
   stickyTopDesktop?: number;
   onClick?: (isExpanded: boolean) => void;
   defaultSelectedIndex?: number;
+  hightMobile?: string;
 }
 
 export const SecondaryNavigation = ({
@@ -20,7 +21,8 @@ export const SecondaryNavigation = ({
   stickyTopDesktop,
   stickyTop,
   onClick,
-  defaultSelectedIndex = -1
+  defaultSelectedIndex = -1,
+  hightMobile = 'auto'
 }: SecondaryNavigationProps) => {
   const selectedItem =
     defaultSelectedIndex >= 0
@@ -51,7 +53,12 @@ export const SecondaryNavigation = ({
   return (
     <SecondaryNavContainer topDesktop={stickyTopDesktop} topMobile={stickyTop}>
       <Visible sm xs>
-        <SecondaryNavMobile data={data} options={options} onClick={onClick} />
+        <SecondaryNavMobile
+          data={data}
+          options={options}
+          onClick={onClick}
+          height={hightMobile}
+        />
       </Visible>
       <Visible md lg xl>
         <SecondaryNavDesktop data={data} options={options} />
