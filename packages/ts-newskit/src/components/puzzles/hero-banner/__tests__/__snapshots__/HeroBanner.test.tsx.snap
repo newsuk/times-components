@@ -500,7 +500,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
       data-testid="divider"
     />
     <span
-      class="css-1nmhncz"
+      class="css-wmdeqq"
     >
       Already a subscriber? 
       <a
