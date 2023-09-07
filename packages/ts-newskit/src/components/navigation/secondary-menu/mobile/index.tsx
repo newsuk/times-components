@@ -27,7 +27,7 @@ export const SecondaryNavMobile: React.FC<{
               navRef.current.getBoundingClientRect().top}px`
           );
         } else {
-          setNavHeight('100vh');
+          setNavHeight(height);
         }
       }
     },
