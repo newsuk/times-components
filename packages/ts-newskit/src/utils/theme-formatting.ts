@@ -47,13 +47,16 @@ export const updateThemeTypography = (themeObj: Theme) => {
   return themeObj;
 };
 
-export const addOverride = ( updatedThemeObj: Theme, themeOverrides: ThemeBase) => {
-  Object.entries(themeOverrides).forEach((themeOverride) => {
+export const addOverride = (
+  updatedThemeObj: Theme,
+  themeOverrides: ThemeBase
+) => {
+  Object.entries(themeOverrides).forEach(themeOverride => {
     const [key, value] = themeOverride;
     updatedThemeObj[key as keyof ThemeBase] = {
       ...updatedThemeObj[key as keyof ThemeBase],
       ...value
-    }
+    };
   });
 
   return updatedThemeObj;
@@ -63,9 +66,19 @@ export const formatThemeOverrides = (
   themeObj: Theme,
   themeOverrides?: ThemeBase
 ) => {
+  const breakpoints = {
+    xs: 0,
+    sm: 520,
+    md: 768,
+    lg: 1024,
+    xl: 1320
+  };
+
   const updatedThemeTypography = updateThemeTypography(themeObj);
-  
-  let addOverrides: ThemeBase | undefined = undefined
+
+  updatedThemeTypography.breakpoints = breakpoints;
+
+  let addOverrides: ThemeBase | undefined;
   if (!addOverrides && themeOverrides) {
     addOverrides = addOverride(updatedThemeTypography, themeOverrides);
   }
@@ -73,14 +86,6 @@ export const formatThemeOverrides = (
   return {
     overrides: {
       ...updatedThemeTypography,
-      breakpoints: {
-        xs: 0,
-        sm: 520,
-        md: 768,
-        lg: 1024,
-        xl: 1320,
-        ...themeOverrides?.breakpoints
-      },
       ...addOverrides
     }
   };

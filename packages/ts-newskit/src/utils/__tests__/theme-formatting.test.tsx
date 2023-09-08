@@ -48,11 +48,7 @@ describe('addOverride function', () => {
   };
 
   test('theme does NOT contain any overrides', () => {
-    expect(TheTimesLight).not.toEqual(
-      expect.objectContaining(
-        stylePresets
-      )
-    );
+    expect(TheTimesLight).not.toEqual(expect.objectContaining(stylePresets));
   });
 
   test('theme does contain added style preset overrides', () => {
@@ -62,9 +58,7 @@ describe('addOverride function', () => {
     );
 
     expect(updatedThemeWithOverride).toEqual(
-      expect.objectContaining(
-        stylePresets
-      )
+      expect.objectContaining(stylePresets)
     );
   });
 });
