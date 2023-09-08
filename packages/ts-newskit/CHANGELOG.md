@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.92.7](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.6...@times-components/ts-newskit@1.92.7) (2023-09-08)
+
+
+### Bug Fixes
+
+* Added underline. ([#3522](https://github.com/newsuk/times-components/issues/3522)) ([95773c5](https://github.com/newsuk/times-components/commit/95773c5ffd8a78def5f726b3a6636a8e7122bb24))
+
+
+
+
+
 ## [1.92.6](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.5...@times-components/ts-newskit@1.92.6) (2023-09-07)
 
 **Note:** Version bump only for package @times-components/ts-newskit
