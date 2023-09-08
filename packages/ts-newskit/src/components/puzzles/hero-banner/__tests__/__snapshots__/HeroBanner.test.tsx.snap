@@ -227,7 +227,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               />
             </svg>
             <svg
-              class="css-1k6sr6t"
+              class="css-1ye7y4k"
               fill="none"
               height="75"
               viewBox="0 0 76 75"
@@ -500,7 +500,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
       data-testid="divider"
     />
     <span
-      class="css-1nmhncz"
+      class="css-wmdeqq"
     >
       Already a subscriber? 
       <a
