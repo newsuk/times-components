@@ -1,5 +1,5 @@
-import { Theme } from 'newskit';
-import { updateThemeTypography } from '../theme-formatting';
+import { Theme, ThemeBase } from 'newskit';
+import { addOverride, updateThemeTypography } from '../theme-formatting';
 // @ts-ignore
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
@@ -34,6 +34,37 @@ describe('updateThemeTypography function', () => {
     expect(updatedTheme.typographyPresets.testPreset.fontSize).toBe(
       ((TheTimesLight as unknown) as Theme).typographyPresets.testPreset
         .fontSize
+    );
+  });
+});
+
+describe('addOverride function', () => {
+  const stylePresets = {
+    breadcrumbSeparator: {
+      base: {
+        color: '{{colors.inkNonEssential}}'
+      }
+    }
+  };
+
+  test('theme does NOT contain any overrides', () => {
+    expect(TheTimesLight).not.toEqual(
+      expect.objectContaining(
+        stylePresets
+      )
+    );
+  });
+
+  test('theme does contain added style preset overrides', () => {
+    const updatedThemeWithOverride = addOverride(
+      (TheTimesLight as unknown) as Theme,
+      (stylePresets as unknown) as ThemeBase
+    );
+
+    expect(updatedThemeWithOverride).toEqual(
+      expect.objectContaining(
+        stylePresets
+      )
     );
   });
 });

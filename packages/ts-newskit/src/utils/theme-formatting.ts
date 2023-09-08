@@ -1,4 +1,4 @@
-import { StylePreset, Theme, TypographyPreset } from 'newskit';
+import { Theme, ThemeBase } from 'newskit';
 
 const modifyBaseRemValue = (multiplier: number, valueToUpdate: string) => {
   const getVal = valueToUpdate.slice(0, -3);
@@ -47,12 +47,28 @@ export const updateThemeTypography = (themeObj: Theme) => {
   return themeObj;
 };
 
+export const addOverride = ( updatedThemeObj: Theme, themeOverrides: ThemeBase) => {
+  Object.entries(themeOverrides).forEach((themeOverride) => {
+    const [key, value] = themeOverride;
+    updatedThemeObj[key as keyof ThemeBase] = {
+      ...updatedThemeObj[key as keyof ThemeBase],
+      ...value
+    }
+  });
+
+  return updatedThemeObj;
+};
+
 export const formatThemeOverrides = (
   themeObj: Theme,
-  stylePresets: StylePreset,
-  typographyPresets: TypographyPreset
+  themeOverrides?: ThemeBase
 ) => {
   const updatedThemeTypography = updateThemeTypography(themeObj);
+  
+  let addOverrides: ThemeBase | undefined = undefined
+  if (!addOverrides && themeOverrides) {
+    addOverrides = addOverride(updatedThemeTypography, themeOverrides);
+  }
 
   return {
     overrides: {
@@ -62,13 +78,10 @@ export const formatThemeOverrides = (
         sm: 520,
         md: 768,
         lg: 1024,
-        xl: 1320
+        xl: 1320,
+        ...themeOverrides?.breakpoints
       },
-      typographyPresets: {
-        ...updatedThemeTypography.typographyPresets,
-        ...typographyPresets
-      },
-      stylePresets
+      ...addOverrides
     }
   };
 };
