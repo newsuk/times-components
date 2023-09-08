@@ -101,7 +101,7 @@ export const StyledHeroBannerKillerSudoku = styled(
 export const StyledHeroBannerQuintagram = styled(NewsKitHeroBannerQuintagram)`
   position: absolute;
   right: 22.5%;
-  bottom: 12.0%;
+  bottom: 12%;
 `;
 
 export const StyledHeroBannerSuko = styled(NewsKitHeroBannerSuko)`
