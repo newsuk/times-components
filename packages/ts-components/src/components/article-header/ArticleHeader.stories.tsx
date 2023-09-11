@@ -25,11 +25,8 @@ const getAttributes = () => {
 
   const headline = text('Headline', 'This is the headline', id);
 
+  const authorSlug = text('Author Slug', 'oliver-wright', id);
   const description = text('Description', 'Analysis', id);
-
-  const authorSlugOptions = ['Oliver Wright', 'Milan Haria', 'Ibrahim Kurhan'];
-  const defaultValue = authorSlugOptions[0];
-  const authorSlug = select('Author Slug', authorSlugOptions, defaultValue, id);
 
   return { updated, breaking, headline, authorSlug, description };
 };
