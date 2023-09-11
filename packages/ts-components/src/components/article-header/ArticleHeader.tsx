@@ -41,7 +41,7 @@ const ArticleHeader: React.FC<{
   description?: string;
 }> = ({ updated, breaking, headline, authorSlug, description }) => {
   const [timezone, setTimezone] = useState<string>('');
-  const [bylineData, setBylineData] = useState<ArticleByline | null>(null);
+  const [bylineData, setBylineData] = useState<ArticleByline>();
 
   const currentDateTime = new Date();
   const updatedDate = new Date(updated);

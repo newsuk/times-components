@@ -12,10 +12,10 @@ import {
 } from './styles';
 
 export const ArticleBylineBlock: React.FC<{
-  data?: ArticleByline | null;
+  data?: ArticleByline;
   description?: string;
 }> = ({ data, description }) => {
-  if (!(data && data.name && data.image) && !description) {
+  if (!((data && data.name) || (data && data.image)) && !description) {
     return null;
   }
 
