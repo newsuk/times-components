@@ -21,6 +21,8 @@ import {
   UpdatesContainer,
   FlagContainer
 } from './styles';
+import { ArticleByline } from '../../types/related-article-slice';
+import { ArticleBylineBlock } from './ArticleBylineBlock';
 
 const anchorString = (updateTxt = '', headlineTxt = '') => {
   const onlyNumbersReg = /\D+/g;
@@ -35,8 +37,11 @@ const ArticleHeader: React.FC<{
   updated: string;
   breaking?: string;
   headline?: string;
-}> = ({ updated, breaking, headline }) => {
+  authorSlug?: string;
+  description?: string;
+}> = ({ updated, breaking, headline, authorSlug, description }) => {
   const [timezone, setTimezone] = useState<string>('');
+  const [bylineData, setBylineData] = useState<ArticleByline | null>(null);
 
   const currentDateTime = new Date();
   const updatedDate = new Date(updated);
@@ -51,6 +56,22 @@ const ArticleHeader: React.FC<{
       setTimezone(format(parsedDate, 'zzz', { timeZone }));
     }
   });
+
+  useEffect(
+    () => {
+      if (authorSlug) {
+        // TODO: fetch the data
+        setBylineData({
+          slug: authorSlug,
+          name: 'Oliver Wright',
+          jobTitle: 'Policy Editor',
+          image:
+            'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F043bbdb4-f8df-4856-92a4-132cc1524cb9.jpg?crop=668%2C668%2C0%2C0&resize=200'
+        });
+      }
+    },
+    [authorSlug]
+  );
 
   const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
@@ -102,6 +123,7 @@ const ArticleHeader: React.FC<{
       </UpdatesContainer>
 
       {headline && <Headline>{safeDecodeURIComponent(headline)}</Headline>}
+      <ArticleBylineBlock data={bylineData} description={description} />
     </Container>
   );
 };

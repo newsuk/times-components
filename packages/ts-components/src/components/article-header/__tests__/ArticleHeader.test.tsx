@@ -144,4 +144,39 @@ describe('ArticleHeader', () => {
       expect(getByText('December 31')).toBeVisible();
     });
   });
+
+  describe('Byline block', () => {
+    afterEach(() => MockDate.reset());
+
+    const updated = '2021-12-31T22:30:00+00:00';
+    const description = 'Analysis';
+
+    it('Displays description', () => {
+      MockDate.set('2022-01-01T02:30:00+00:00');
+
+      const { getByText } = render(
+        <ArticleHeader updated={updated} description={description} />
+      );
+
+      expect(getByText('Analysis')).toBeVisible();
+    });
+
+    it('Displays author details', () => {
+      MockDate.set('2022-01-01T02:30:00+00:00');
+
+      const { getByText, getByRole } = render(
+        <ArticleHeader
+          updated={updated}
+          authorSlug="oliver-wright"
+          description={description}
+        />
+      );
+      expect(getByText('Oliver Wright')).toBeVisible();
+      const bylineImg = getByRole('img');
+      expect(bylineImg).toHaveAttribute(
+        'src',
+        'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F043bbdb4-f8df-4856-92a4-132cc1524cb9.jpg?crop=668%2C668%2C0%2C0&resize=200'
+      );
+    });
+  });
 });

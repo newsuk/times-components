@@ -25,7 +25,13 @@ const getAttributes = () => {
 
   const headline = text('Headline', 'This is the headline', id);
 
-  return { updated, breaking, headline };
+  const description = text('Description', 'Analysis', id);
+
+  const authorSlugOptions = ['Oliver Wright', 'Milan Haria', 'Ibrahim Kurhan'];
+  const defaultValue = authorSlugOptions[0];
+  const authorSlug = select('Author Slug', authorSlugOptions, defaultValue, id);
+
+  return { updated, breaking, headline, authorSlug, description };
 };
 
 storiesOf('Typescript Component/Article Header', module)
@@ -39,6 +45,8 @@ storiesOf('Typescript Component/Article Header', module)
           // time={props.time}
           breaking={props.breaking}
           headline={encodeURIComponent(props.headline)}
+          authorSlug={props.authorSlug}
+          description={props.description}
         />
       </ArticleHarness>
     );
@@ -52,6 +60,8 @@ storiesOf('Typescript Component/Article Header', module)
           // date={props.date}
           // time={props.time}
           breaking={props.breaking}
+          authorSlug={props.authorSlug}
+          description={props.description}
         />
       </ArticleHarness>
     );
