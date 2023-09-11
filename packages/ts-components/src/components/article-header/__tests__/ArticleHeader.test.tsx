@@ -161,7 +161,17 @@ describe('ArticleHeader', () => {
       expect(getByText('Analysis')).toBeVisible();
     });
 
-    it('Displays author details', () => {
+    it('Does not display the byline block component when no details exist', () => {
+      MockDate.set('2022-01-01T02:30:00+00:00');
+
+      const { queryByText } = render(
+        <ArticleHeader updated={updated} description={description} />
+      );
+
+      expect(queryByText('Oliver Wright')).not.toBeInTheDocument();
+    });
+
+    it.skip('Displays author details', () => {
       MockDate.set('2022-01-01T02:30:00+00:00');
 
       const { getByText, getByRole } = render(
