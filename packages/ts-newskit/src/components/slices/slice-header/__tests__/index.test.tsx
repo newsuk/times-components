@@ -8,14 +8,22 @@ describe('Render Header', () => {
   const analyticsStream = jest.fn();
   it('should render a snapshot', () => {
     const { asFragment } = render(
-      <SliceHeader title="Rugby Union" href="https://www.thetimes.co.uk/" analyticsStream={analyticsStream} />
+      <SliceHeader
+        title="Rugby Union"
+        href="https://www.thetimes.co.uk/"
+        analyticsStream={analyticsStream}
+      />
     );
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render correct title', () => {
     const { getByText } = render(
-      <SliceHeader title="Rugby Union" href="https://www.thetimes.co.uk/" analyticsStream={analyticsStream}/>
+      <SliceHeader
+        title="Rugby Union"
+        href="https://www.thetimes.co.uk/"
+        analyticsStream={analyticsStream}
+      />
     );
     const text = getByText('Rugby Union');
     expect(text).toBeInTheDocument();
@@ -23,7 +31,11 @@ describe('Render Header', () => {
 
   it('should render correct color', () => {
     const { getByText } = render(
-      <SliceHeader title="Rugby Union" href="https://www.thetimes.co.uk/" analyticsStream={analyticsStream}/>
+      <SliceHeader
+        title="Rugby Union"
+        href="https://www.thetimes.co.uk/"
+        analyticsStream={analyticsStream}
+      />
     );
     const text = getByText('Rugby Union');
     expect(text).toHaveStyle('color: #01000d');
@@ -31,7 +43,11 @@ describe('Render Header', () => {
   it('should trigger tracking', () => {
     mockDate.set(1620000000000);
     const { getByRole } = render(
-        <SliceHeader title="Rugby Union" href="https://www.thetimes.co.uk/" analyticsStream={analyticsStream}/>
+      <SliceHeader
+        title="Rugby Union"
+        href="https://www.thetimes.co.uk/"
+        analyticsStream={analyticsStream}
+      />
     );
     fireEvent.click(getByRole('link'));
     expect(analyticsStream).toHaveBeenCalledWith({
