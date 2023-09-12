@@ -6,6 +6,27 @@ import {
   TrackingContext
 } from '../../../utils/TrackingContextProvider';
 import { SliceHeaderContainer } from './styles';
+const {
+  default: tealiumReporter,
+  TealiumSendScheduler
+} = require("@times-components/tealium");
+
+const makeAnalyticsStream = (options: any) => {
+  const tealiumSendScheduler = new TealiumSendScheduler(
+    options.tracking,
+    window,
+    document
+  );
+  const reporter = tealiumReporter(tealiumSendScheduler);
+  return reporter.analytics;
+};
+
+const reporterOptions = {
+  // @ts-ignore
+  tracking: window.nuk.tracking
+};
+
+const analyticsStream = makeAnalyticsStream(reporterOptions);
 
 export interface SliceHeaderProps {
   title: string;
@@ -43,6 +64,7 @@ export const SliceHeader = ({
         component: 'SliceHeader',
         object: 'SliceHeader'
       }}
+      analyticsStream={analyticsStream}
     >
       {({ fireAnalyticsEvent }) => (
         <Block stylePreset="sliceHeaderPreset">
