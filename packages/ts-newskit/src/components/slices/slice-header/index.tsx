@@ -9,6 +9,7 @@ import { SliceHeaderContainer } from './styles';
 import {
   deafult as tealiumReporter,
   TealiumSendScheduler
+  // @ts-ignore
 } from '@times-components/tealium';
 
 const makeAnalyticsStream = (options: any) => {
