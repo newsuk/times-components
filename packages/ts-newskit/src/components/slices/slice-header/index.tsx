@@ -6,10 +6,10 @@ import {
   TrackingContext
 } from '../../../utils/TrackingContextProvider';
 import { SliceHeaderContainer } from './styles';
-const {
-  default: tealiumReporter,
+import {
+  deafult as tealiumReporter,
   TealiumSendScheduler
-} = require("@times-components/tealium");
+} from '@times-components/tealium';
 
 const makeAnalyticsStream = (options: any) => {
   const tealiumSendScheduler = new TealiumSendScheduler(
