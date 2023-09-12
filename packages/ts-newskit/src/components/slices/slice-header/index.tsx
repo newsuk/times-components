@@ -14,7 +14,7 @@ export interface SliceHeaderProps {
   iconArrowSize?: string;
   iconSize?: FlagSize;
   padding?: string;
-  analyticsStream?: any;
+  analyticsStream: any;
 }
 
 export const SliceHeader = ({
