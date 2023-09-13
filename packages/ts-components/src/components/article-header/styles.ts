@@ -86,3 +86,55 @@ export const Headline = styled.h2`
 export const FlagContainer = styled.div`
   margin-right: 8px;
 `;
+
+export const BylineBlockContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+`;
+
+export const BylineBlockImgContainer = styled.div`
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  margin-right: 10px;
+`;
+
+export const BylineBlockImg = styled.img`
+  height: 100%;
+  width: 100%;
+`;
+
+export const BylineBlockContent = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const BylineBlockAuthorContent = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+`;
+
+export const BylineBlockAuthorName = styled.p`
+  color: #069;
+  margin-right: 5px;
+  margin-block: 0;
+`;
+
+export const BylineBlockAuthorJobTitle = styled.p`
+  color: #696969;
+  margin-block: 0;
+`;
+
+export const BylineBlockDescription = styled.p`
+  color: #696969;
+  font-weight: 500;
+  margin-block: 0;
+`;

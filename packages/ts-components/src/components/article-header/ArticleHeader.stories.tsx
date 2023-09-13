@@ -25,7 +25,10 @@ const getAttributes = () => {
 
   const headline = text('Headline', 'This is the headline', id);
 
-  return { updated, breaking, headline };
+  const authorSlug = text('Author Slug', 'oliver-wright', id);
+  const description = text('Description', 'Analysis', id);
+
+  return { updated, breaking, headline, authorSlug, description };
 };
 
 storiesOf('Typescript Component/Article Header', module)
@@ -39,6 +42,8 @@ storiesOf('Typescript Component/Article Header', module)
           // time={props.time}
           breaking={props.breaking}
           headline={encodeURIComponent(props.headline)}
+          authorSlug={props.authorSlug}
+          description={props.description}
         />
       </ArticleHarness>
     );
@@ -52,6 +57,8 @@ storiesOf('Typescript Component/Article Header', module)
           // date={props.date}
           // time={props.time}
           breaking={props.breaking}
+          authorSlug={props.authorSlug}
+          description={props.description}
         />
       </ArticleHarness>
     );

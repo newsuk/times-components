@@ -9,11 +9,12 @@ export const SecondaryNavMobile: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
   onClick?: (isExpanded: boolean) => void;
-}> = ({ options, data, onClick }) => {
+  height?: string;
+}> = ({ options, data, onClick, height = 'auto' }) => {
   const { isExpanded, isSelected } = options;
   const subMenuTitle = isExpanded ? 'Close' : 'See all';
   const navRef = useRef<HTMLDivElement>(null);
-  const [height, setHeight] = useState<string>('auto');
+  const [navHeight, setNavHeight] = useState<string>(height);
 
   useEffect(
     () => {
@@ -21,12 +22,12 @@ export const SecondaryNavMobile: React.FC<{
         if (
           window.innerHeight <= navRef.current.getBoundingClientRect().bottom
         ) {
-          setHeight(
+          setNavHeight(
             `${window.innerHeight -
               navRef.current.getBoundingClientRect().top}px`
           );
         } else {
-          setHeight('100vh');
+          setNavHeight(height);
         }
       }
     },
@@ -48,7 +49,7 @@ export const SecondaryNavMobile: React.FC<{
         onClick={onClick}
       />
       {isExpanded ? (
-        <NavItemsMobileContainer $height={height} ref={navRef}>
+        <NavItemsMobileContainer $height={navHeight} ref={navRef}>
           <NavItems data={data} options={options} />
         </NavItemsMobileContainer>
       ) : null}

@@ -33,6 +33,7 @@ export const StyledTextBlock = styled(TextBlock)`
   & a {
     color: inherit;
     font-weight: 600;
+    text-decoration: underline;
   }
 
   ${getMediaQueryFromTheme('xs', 'md')} {
@@ -100,7 +101,7 @@ export const StyledHeroBannerKillerSudoku = styled(
 export const StyledHeroBannerQuintagram = styled(NewsKitHeroBannerQuintagram)`
   position: absolute;
   right: 22.5%;
-  bottom: 11.5%;
+  bottom: 12%;
 `;
 
 export const StyledHeroBannerSuko = styled(NewsKitHeroBannerSuko)`
