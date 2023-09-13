@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.93.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.7...@times-components/ts-newskit@1.93.0) (2023-09-13)
+
+
+### Features
+
+* **TMRX-1460:** replace custom typography presets with those provided by design team ([#3530](https://github.com/newsuk/times-components/issues/3530)) ([c2fce1d](https://github.com/newsuk/times-components/commit/c2fce1dc4eda59b0ab227f77e3576e59eccff011))
+
+
+
+
+
 ## [1.92.7](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.6...@times-components/ts-newskit@1.92.7) (2023-09-08)
 
 
