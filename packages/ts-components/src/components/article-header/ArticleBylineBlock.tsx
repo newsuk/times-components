@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArticleByline } from '../../types/related-article-slice';
+import { ArticleBylineAuthorData } from '../../types/related-article-slice';
 import {
   BylineBlockContainer,
   BylineBlockImgContainer,
@@ -8,42 +8,43 @@ import {
   BylineBlockAuthorContent,
   BylineBlockAuthorName,
   BylineBlockAuthorJobTitle,
-  BylineBlockAuthorDescription
+  BylineBlockDescription
 } from './styles';
 
 export const ArticleBylineBlock: React.FC<{
-  data?: ArticleByline;
+  authorData?: ArticleBylineAuthorData;
   description?: string;
-}> = ({ data, description }) => {
-  if (!((data && data.name) || (data && data.image)) && !description) {
+}> = ({ authorData, description }) => {
+  if (
+    !((authorData && authorData.name) || (authorData && authorData.image)) &&
+    !description
+  ) {
     return null;
   }
 
   return (
     <BylineBlockContainer>
-      {data &&
-        data.image && (
+      {authorData &&
+        authorData.image && (
           <BylineBlockImgContainer>
-            <BylineBlockImg src={data.image} alt={data.name} />
+            <BylineBlockImg src={authorData.image} alt={authorData.name} />
           </BylineBlockImgContainer>
         )}
       <BylineBlockContent>
         <BylineBlockAuthorContent>
-          {data &&
-            data.name && (
-              <BylineBlockAuthorName>{data.name}</BylineBlockAuthorName>
+          {authorData &&
+            authorData.name && (
+              <BylineBlockAuthorName>{authorData.name}</BylineBlockAuthorName>
             )}
-          {data &&
-            data.jobTitle && (
+          {authorData &&
+            authorData.jobTitle && (
               <BylineBlockAuthorJobTitle>
-                {data.jobTitle}
+                {authorData.jobTitle}
               </BylineBlockAuthorJobTitle>
             )}
         </BylineBlockAuthorContent>
         {description && (
-          <BylineBlockAuthorDescription>
-            {description}
-          </BylineBlockAuthorDescription>
+          <BylineBlockDescription>{description}</BylineBlockDescription>
         )}
       </BylineBlockContent>
     </BylineBlockContainer>

@@ -133,7 +133,7 @@ export const BylineBlockAuthorJobTitle = styled.p`
   margin-block: 0;
 `;
 
-export const BylineBlockAuthorDescription = styled.p`
+export const BylineBlockDescription = styled.p`
   color: #696969;
   font-weight: 500;
   margin-block: 0;

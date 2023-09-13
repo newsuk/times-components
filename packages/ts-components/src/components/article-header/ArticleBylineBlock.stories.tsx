@@ -24,7 +24,7 @@ storiesOf('Typescript Component/Article Header', module).add(
     const props = getAttributes();
     return (
       <ArticleBylineBlock
-        data={{
+        authorData={{
           slug: 'oliver-wright',
           name: props.name,
           jobTitle: props.jobTitle,

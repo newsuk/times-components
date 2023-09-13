@@ -21,7 +21,7 @@ import {
   UpdatesContainer,
   FlagContainer
 } from './styles';
-import { ArticleByline } from '../../types/related-article-slice';
+import { ArticleBylineAuthorData } from '../../types/related-article-slice';
 import { ArticleBylineBlock } from './ArticleBylineBlock';
 
 const anchorString = (updateTxt = '', headlineTxt = '') => {
@@ -41,7 +41,7 @@ const ArticleHeader: React.FC<{
   description?: string;
 }> = ({ updated, breaking, headline, authorSlug, description }) => {
   const [timezone, setTimezone] = useState<string>('');
-  const [bylineData, setBylineData] = useState<ArticleByline>();
+  const [authorData, setAuthorData] = useState<ArticleBylineAuthorData>();
 
   const currentDateTime = new Date();
   const updatedDate = new Date(updated);
@@ -63,7 +63,7 @@ const ArticleHeader: React.FC<{
         try {
           const response = await fetch(`/api/author-profile/${authorSlug}`);
           const authorDetails = await response.json();
-          setBylineData(authorDetails);
+          setAuthorData(authorDetails);
         } catch (err) {
           // tslint:disable-next-line:no-console
           console.log(err);
@@ -125,7 +125,7 @@ const ArticleHeader: React.FC<{
       </UpdatesContainer>
 
       {headline && <Headline>{safeDecodeURIComponent(headline)}</Headline>}
-      <ArticleBylineBlock data={bylineData} description={description} />
+      <ArticleBylineBlock authorData={authorData} description={description} />
     </Container>
   );
 };

@@ -18,7 +18,7 @@ type Byline = {
 
 type Bylines = Array<{ byline: Byline[]; image?: any }>;
 
-export type ArticleByline = {
+export type ArticleBylineAuthorData = {
   slug: string;
   name?: string;
   jobTitle?: string;
