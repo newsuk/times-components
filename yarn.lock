@@ -4161,10 +4161,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@newskit-themes/the-times@0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@newskit-themes/the-times/-/the-times-0.1.1.tgz#1e2d2ac1f21016eb1600669eb9f4043d84755818"
-  integrity sha512-OZ1eg8jMuTXAkFVc0TCvWf5YlC6hL9KA7IddQ0VmBaxA4RaR702GZFrdeqd1mu5QILAoagq3reJ1U3KNG5/Scg==
+"@newskit-themes/the-times@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@newskit-themes/the-times/-/the-times-0.2.0.tgz#abd3944511267564b3c632960640c6ed5b1d561e"
+  integrity sha512-ABRxDov/wRwuTcESsZmRYCh2sozhxnQUGSl5ssi8XHFeFOZiBW95F740+o4Mxzt0FB4YQAYWaIGSuCzF8qVK6w==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

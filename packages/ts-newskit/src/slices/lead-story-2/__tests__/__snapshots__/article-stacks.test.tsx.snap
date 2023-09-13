@@ -31,7 +31,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   class="css-3kejzs"
                 >
                   <span
-                    class="css-1g58ijf"
+                    class="css-6tvr2h"
                   >
                     <div
                       class="css-gb5m6n"
@@ -49,7 +49,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-btda8w"
+                    class="css-1basb1c"
                   >
                     <div
                       class="css-gb5m6n"
@@ -89,7 +89,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-zhtub2"
+                        class="css-1jxv40d"
                       >
                         Tag
                       </span>
@@ -105,7 +105,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1vzvkql"
+                    class="css-d9hjcx"
                   >
                     4 min read
                   </span>
@@ -139,7 +139,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   class="css-3kejzs"
                 >
                   <span
-                    class="css-1g58ijf"
+                    class="css-6tvr2h"
                   >
                     <div
                       class="css-gb5m6n"
@@ -157,7 +157,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-btda8w"
+                    class="css-1basb1c"
                   >
                     <div
                       class="css-gb5m6n"
@@ -197,7 +197,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-zhtub2"
+                        class="css-1jxv40d"
                       >
                         Tag
                       </span>
@@ -213,7 +213,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1vzvkql"
+                    class="css-d9hjcx"
                   >
                     4 min read
                   </span>
@@ -281,7 +281,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-3kejzs"
               >
                 <span
-                  class="css-1g58ijf"
+                  class="css-6tvr2h"
                 >
                   <div
                     class="css-gb5m6n"
@@ -299,7 +299,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-btda8w"
+                  class="css-1basb1c"
                 >
                   <div
                     class="css-gb5m6n"
@@ -339,7 +339,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-zhtub2"
+                      class="css-1jxv40d"
                     >
                       Tag
                     </span>
@@ -355,7 +355,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1vzvkql"
+                  class="css-d9hjcx"
                 >
                   4 min read
                 </span>
@@ -414,7 +414,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-3kejzs"
               >
                 <span
-                  class="css-1g58ijf"
+                  class="css-6tvr2h"
                 >
                   <div
                     class="css-gb5m6n"
@@ -432,7 +432,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-btda8w"
+                  class="css-1basb1c"
                 >
                   <div
                     class="css-gb5m6n"
@@ -472,7 +472,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-zhtub2"
+                      class="css-1jxv40d"
                     >
                       Tag
                     </span>
@@ -488,7 +488,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1vzvkql"
+                  class="css-d9hjcx"
                 >
                   4 min read
                 </span>
@@ -533,7 +533,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   class="css-3kejzs"
                 >
                   <span
-                    class="css-1g58ijf"
+                    class="css-6tvr2h"
                   >
                     <div
                       class="css-gb5m6n"
@@ -551,7 +551,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-btda8w"
+                    class="css-1basb1c"
                   >
                     <div
                       class="css-gb5m6n"
@@ -591,7 +591,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-zhtub2"
+                        class="css-1jxv40d"
                       >
                         Tag
                       </span>
@@ -607,7 +607,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1vzvkql"
+                    class="css-d9hjcx"
                   >
                     4 min read
                   </span>
@@ -641,7 +641,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   class="css-3kejzs"
                 >
                   <span
-                    class="css-1g58ijf"
+                    class="css-6tvr2h"
                   >
                     <div
                       class="css-gb5m6n"
@@ -659,7 +659,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-btda8w"
+                    class="css-1basb1c"
                   >
                     <div
                       class="css-gb5m6n"
@@ -699,7 +699,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-zhtub2"
+                        class="css-1jxv40d"
                       >
                         Tag
                       </span>
@@ -715,7 +715,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1vzvkql"
+                    class="css-d9hjcx"
                   >
                     4 min read
                   </span>
@@ -783,7 +783,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-3kejzs"
               >
                 <span
-                  class="css-1g58ijf"
+                  class="css-6tvr2h"
                 >
                   <div
                     class="css-gb5m6n"
@@ -801,7 +801,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-btda8w"
+                  class="css-1basb1c"
                 >
                   <div
                     class="css-gb5m6n"
@@ -841,7 +841,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-zhtub2"
+                      class="css-1jxv40d"
                     >
                       Tag
                     </span>
@@ -857,7 +857,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1vzvkql"
+                  class="css-d9hjcx"
                 >
                   4 min read
                 </span>
@@ -916,7 +916,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-3kejzs"
               >
                 <span
-                  class="css-1g58ijf"
+                  class="css-6tvr2h"
                 >
                   <div
                     class="css-gb5m6n"
@@ -934,7 +934,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-btda8w"
+                  class="css-1basb1c"
                 >
                   <div
                     class="css-gb5m6n"
@@ -974,7 +974,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-zhtub2"
+                      class="css-1jxv40d"
                     >
                       Tag
                     </span>
@@ -990,7 +990,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1vzvkql"
+                  class="css-d9hjcx"
                 >
                   4 min read
                 </span>
