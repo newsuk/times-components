@@ -1,7 +1,19 @@
 import React from 'react';
 import { Stack, GridLayout } from 'newskit';
 
-export const CustomStackLayout: React.FC = ({ children }) => {
+interface CustomStackLayoutProps {
+  marginBlockEnd?: string;
+  children?: React.ReactNode;
+}
+
+interface CustomGridLayoutProp {
+  children?: React.ReactNode;
+}
+
+export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
+  children,
+  marginBlockEnd
+}) => {
   return (
     <Stack
       flow="horizontal-top"
@@ -11,14 +23,16 @@ export const CustomStackLayout: React.FC = ({ children }) => {
         xs: 'space045',
         md: 'space000'
       }}
-      marginBlockEnd="space060"
+      marginBlockEnd={marginBlockEnd || 'space060'}
     >
       {children}
     </Stack>
   );
 };
 
-export const CustomGridLayout: React.FC = ({ children }) => {
+export const CustomGridLayout: React.FC<CustomGridLayoutProp> = ({
+  children
+}) => {
   return (
     <GridLayout
       columns={'1fr 1px 1fr 1px 1fr 1px 1fr'}

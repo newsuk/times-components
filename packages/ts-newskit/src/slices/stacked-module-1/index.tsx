@@ -27,7 +27,7 @@ const articleStack = ({
   isMob,
   clickHandler
 }: ArticleStackProps) => (
-  <CustomStackLayout>
+  <CustomStackLayout marginBlockEnd="space000">
     <StackItem>
       <FullWidthBlock marginBlockEnd="space040">
         <Divider

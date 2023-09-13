@@ -161,7 +161,7 @@ export const LeadArticle = ({
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"
-                typographyPreset="customUtilityMeta"
+                typographyPreset="editorialCaption020"
               >
                 {images && images.caption}
                 {images &&
