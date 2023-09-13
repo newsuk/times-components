@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.112.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.28...@times-components/article-skeleton@1.112.0) (2023-09-13)
+
+
+### Features
+
+* **TMRX-1300:** create article byline block ([#3525](https://github.com/newsuk/times-components/issues/3525)) ([2f1466a](https://github.com/newsuk/times-components/commit/2f1466a6d992b577ddae3d9fc20e62eb4fd80cd2))
+
+
+
+
+
 ## [1.111.28](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.27...@times-components/article-skeleton@1.111.28) (2023-09-08)
 
 **Note:** Version bump only for package @times-components/article-skeleton
