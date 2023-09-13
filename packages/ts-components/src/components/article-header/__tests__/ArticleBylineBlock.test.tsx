@@ -16,7 +16,7 @@ describe('Article byline block', () => {
 
   it('Displays description', () => {
     const { getByText } = render(
-      <ArticleBylineBlock data={undefined} description={description} />
+      <ArticleBylineBlock authorData={undefined} description={description} />
     );
 
     expect(getByText(description)).toBeVisible();
@@ -31,7 +31,7 @@ describe('Article byline block', () => {
 
   it('Displays author details and description', () => {
     const { getByText, getByRole } = render(
-      <ArticleBylineBlock data={data} description={description} />
+      <ArticleBylineBlock authorData={data} description={description} />
     );
     expect(getByText(data.name)).toBeVisible();
     expect(getByText(data.jobTitle)).toBeVisible();
