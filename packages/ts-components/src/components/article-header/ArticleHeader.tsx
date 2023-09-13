@@ -21,6 +21,8 @@ import {
   UpdatesContainer,
   FlagContainer
 } from './styles';
+import { ArticleBylineAuthorData } from '../../types/related-article-slice';
+import { ArticleBylineBlock } from './ArticleBylineBlock';
 
 const anchorString = (updateTxt = '', headlineTxt = '') => {
   const onlyNumbersReg = /\D+/g;
@@ -35,8 +37,11 @@ const ArticleHeader: React.FC<{
   updated: string;
   breaking?: string;
   headline?: string;
-}> = ({ updated, breaking, headline }) => {
+  authorSlug?: string;
+  description?: string;
+}> = ({ updated, breaking, headline, authorSlug, description }) => {
   const [timezone, setTimezone] = useState<string>('');
+  const [authorData, setAuthorData] = useState<ArticleBylineAuthorData>();
 
   const currentDateTime = new Date();
   const updatedDate = new Date(updated);
@@ -51,6 +56,24 @@ const ArticleHeader: React.FC<{
       setTimezone(format(parsedDate, 'zzz', { timeZone }));
     }
   });
+
+  useEffect(
+    () => {
+      const fetchData = async () => {
+        try {
+          const response = await fetch(`/api/author-profile/${authorSlug}`);
+          const authorDetails = await response.json();
+          setAuthorData(authorDetails);
+        } catch (err) {
+          // tslint:disable-next-line:no-console
+          console.log(err);
+        }
+      };
+
+      fetchData();
+    },
+    [authorSlug]
+  );
 
   const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
@@ -102,6 +125,7 @@ const ArticleHeader: React.FC<{
       </UpdatesContainer>
 
       {headline && <Headline>{safeDecodeURIComponent(headline)}</Headline>}
+      <ArticleBylineBlock authorData={authorData} description={description} />
     </Container>
   );
 };
