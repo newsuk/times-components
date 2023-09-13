@@ -9,6 +9,7 @@ export const WelcomeBannerContainer = styled.div`
   margin-bottom: 16px;
   padding: 18px 16px;
   background-color: ${colours.functional.bannerBackground};
+  background-color: hotpink;
 `;
 
 export const Title = styled.div`
