@@ -1922,26 +1922,10 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
           class="css-1nw1nne"
         >
           <div
-            class="css-1kwj960"
-          >
-            <picture
-              class="css-zp0elg"
-            >
-              <div
-                class="css-5pczz7"
-              />
-              <img
-                alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                class="css-1qgqq71"
-                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-              />
-            </picture>
-          </div>
-          <div
             class="css-17cghxi"
           >
             <div
-              class="css-i1f2uq"
+              class="css-122i4mv"
             >
               <span
                 class="css-18jfcy0"
