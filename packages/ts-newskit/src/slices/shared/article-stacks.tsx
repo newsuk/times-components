@@ -48,8 +48,7 @@ export const ArticleStackLarge = ({
               article={{
                 ...clearCreditsAndCaption(article),
                 hasTopBorder: articleTopBorder,
-                hideImage:
-                  (breakpoint === 'lg' && !topArticle) || breakpoint === 'lg'
+                hideImage: breakpoint === 'lg' && !topArticle
               }}
               clickHandler={clickHandler}
             />

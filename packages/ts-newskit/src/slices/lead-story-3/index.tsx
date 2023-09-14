@@ -59,8 +59,9 @@ export const LeadStory3 = ({
         ...article,
         hideImage: true
       };
+    } else {
+      return article;
     }
-    else { return article; }
   });
 
   const screenXsAndSm =
