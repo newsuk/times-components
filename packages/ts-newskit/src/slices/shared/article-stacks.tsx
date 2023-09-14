@@ -37,6 +37,7 @@ export const ArticleStackLarge = ({
               vertical
             />
           );
+        const topArticle = articleIndex === 0;
         const articleTopBorder =
           (breakpoint === 'xl' && articleIndex > 0) ||
           (breakpoint === 'lg' && articleIndex > 0);
@@ -47,7 +48,8 @@ export const ArticleStackLarge = ({
               article={{
                 ...clearCreditsAndCaption(article),
                 hasTopBorder: articleTopBorder,
-                hideImage: breakpoint === 'lg' 
+                hideImage:
+                  (breakpoint === 'lg' && !topArticle) || breakpoint === 'lg'
               }}
               clickHandler={clickHandler}
             />
