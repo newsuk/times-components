@@ -27,6 +27,12 @@ describe('Render Lead Story 3 Slice', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
+  test('modifies articles correctly when breakpointKey is "lg"', () => {
+    (useBreakpointKey as any).mockReturnValue('lg');
+
+    const { asFragment } = renderComponent();
+    expect(asFragment()).toMatchSnapshot();
+  });
   test('modifies articles correctly when breakpointKey is "md"', () => {
     (useBreakpointKey as any).mockReturnValue('md');
     const { asFragment } = renderComponent();

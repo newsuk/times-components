@@ -14,7 +14,7 @@ export const LiveTag = ({ liveTag }: LiveTagProps) => {
 
   return (
     <StyledTextBlock
-      typographyPreset="customArticleTileInfoPreset"
+      typographyPreset="utilityLabel005"
       paddingInline="space010"
       paddingBlock="space010"
       as="span"

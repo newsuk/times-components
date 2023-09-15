@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.94.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.94.0...@times-components/ts-newskit@1.94.1) (2023-09-15)
+
+
+### Bug Fixes
+
+* **TMRX-1487:** remove rogue dividing line ([#3534](https://github.com/newsuk/times-components/issues/3534)) ([4b475fb](https://github.com/newsuk/times-components/commit/4b475fb5e4fbfb1bb518c451df8543c6f690b4ca))
+
+
+
+
+
+# [1.94.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.93.0...@times-components/ts-newskit@1.94.0) (2023-09-15)
+
+
+### Features
+
+* **TMRX-1492:** hide top image in lead 3  ([#3533](https://github.com/newsuk/times-components/issues/3533)) ([46dd5c8](https://github.com/newsuk/times-components/commit/46dd5c8ef90a0aa0a697482719ef6e720038cd0b))
+
+
+
+
+
+# [1.93.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.7...@times-components/ts-newskit@1.93.0) (2023-09-13)
+
+
+### Features
+
+* **TMRX-1460:** replace custom typography presets with those provided by design team ([#3530](https://github.com/newsuk/times-components/issues/3530)) ([c2fce1d](https://github.com/newsuk/times-components/commit/c2fce1dc4eda59b0ab227f77e3576e59eccff011))
+
+
+
+
+
 ## [1.92.7](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.92.6...@times-components/ts-newskit@1.92.7) (2023-09-08)
 
 

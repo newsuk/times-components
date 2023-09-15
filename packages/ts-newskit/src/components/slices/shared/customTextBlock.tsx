@@ -13,7 +13,7 @@ export const CustomTextBlock = ({
 }) => {
   return (
     <TextBlock
-      typographyPreset="customArticleTileInfoPreset"
+      typographyPreset="utilityLabel005"
       stylePreset={stylePreset ? stylePreset : 'inkBrand010'}
       as="span"
     >

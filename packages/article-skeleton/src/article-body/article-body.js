@@ -423,6 +423,8 @@ const renderers = ({
               // time={attributes.time}
               breaking={attributes.breaking}
               headline={attributes.headline}
+              authorSlug={attributes.slug}
+              description={attributes.description}
             />
           </div>
         );

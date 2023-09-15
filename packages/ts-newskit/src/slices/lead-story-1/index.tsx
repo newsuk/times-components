@@ -102,7 +102,7 @@ export const LeadStory1 = ({
     hideImage: true
   };
 
-  const marginTop = modifiedSingleArticle
+  const marginTop = singleArticle
     ? 'space040'
     : !!articlesWithListItems.listData
       ? 'space020'
@@ -124,7 +124,7 @@ export const LeadStory1 = ({
           article={modifiedArticlesWithUnorderedList}
           clickHandler={clickHandler}
         />
-        {modifiedSingleArticle && (
+        {singleArticle && (
           <BlockItem>
             <FullWidthBlock>
               <StyledDivider
