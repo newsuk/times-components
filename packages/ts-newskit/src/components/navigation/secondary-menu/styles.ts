@@ -6,7 +6,8 @@ import {
   Block,
   MenuSub,
   MenuItem,
-  getMediaQueryFromTheme
+  getMediaQueryFromTheme,
+  getSpacingCssFromTheme
 } from 'newskit';
 import {
   MainMenuProp,
@@ -41,6 +42,7 @@ export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
   ${({ topMobile }) => topMobile !== undefined && `top: ${topMobile}px`};
   ${getMediaQueryFromTheme('md')} {
     ${({ topDesktop }) => topDesktop !== undefined && `top: ${topDesktop}px`};
+    ${getSpacingCssFromTheme('marginBlockEnd', 'space040')};
   }
   background-color: ${TheTimesLight.colors.interfaceBackground};
   z-index: 2;
