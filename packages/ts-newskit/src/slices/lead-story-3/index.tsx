@@ -47,13 +47,13 @@ export const LeadStory3 = ({
     return null;
   }
 
-  const modifedArticles =
-    currentBreakpoint === 'xl'
-      ? articles.map(article => ({
-          ...article,
-          imageRight: true
-        }))
-      : articles;
+  const modifedArticles = articles.map(article => {
+    return {
+      ...article,
+      imageRight: currentBreakpoint === 'xl',
+      hideImage: currentBreakpoint === 'lg'
+    };
+  });
 
   const screenXsAndSm =
     currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
