@@ -1,9 +1,12 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import MockDate from 'mockdate';
+import { mockFetch } from '../../../test-utils/mockFetch';
 
 import ArticleHeader from '../ArticleHeader';
+
+mockFetch(null);
 
 describe('ArticleHeader', () => {
   describe('Same calendar day during GMT', () => {
@@ -142,6 +145,56 @@ describe('ArticleHeader', () => {
       expect(getByText(/10.30pm/i)).toBeVisible();
       expect(getByText('4 hours ago')).toBeVisible();
       expect(getByText('December 31')).toBeVisible();
+    });
+  });
+
+  describe('Article header byline', () => {
+    beforeEach(() => MockDate.set('2022-01-01T02:30:00+00:00'));
+
+    const updated = '2021-12-31T22:30:00+00:00';
+    const authorData = {
+      slug: 'oliver-wright',
+      name: 'Oliver Wright',
+      image:
+        'https://www.staging-thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fstag%2Fweb%2Fbin%2Fe1ca81d9-5ef0-442e-9493-8d9705bd9d03.jpg?crop=270%2C270%2C0%2C0&resize=200',
+      jobTitle: 'Business Columnist'
+    };
+
+    it('Does not display the author details if the fetch request throws an error', async () => {
+      mockFetch(null);
+
+      const { queryByText, queryByRole } = render(
+        <ArticleHeader
+          updated={updated}
+          authorSlug={authorData.slug}
+          description="Analysis"
+        />
+      );
+
+      expect(queryByText(authorData.name)).not.toBeInTheDocument();
+      expect(queryByText(authorData.jobTitle)).not.toBeInTheDocument();
+      expect(queryByRole('img')).not.toBeInTheDocument();
+    });
+
+    it('Displays the author details on successful fetch', async () => {
+      mockFetch(authorData);
+      const { getByText, getByRole } = render(
+        <ArticleHeader
+          updated={updated}
+          authorSlug={authorData.slug}
+          description="Analysis"
+        />
+      );
+
+      await waitFor(() => {
+        expect(global.fetch).toHaveBeenCalledWith(
+          `/api/author-profile/${authorData.slug}`
+        );
+      });
+
+      expect(getByText(authorData.name)).toBeInTheDocument();
+      expect(getByText(authorData.jobTitle)).toBeInTheDocument();
+      expect(getByRole('img')).toHaveAttribute('src', authorData.image);
     });
   });
 });
