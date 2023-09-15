@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.94.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.94.0...@times-components/ts-newskit@1.94.1) (2023-09-15)
+
+
+### Bug Fixes
+
+* **TMRX-1487:** remove rogue dividing line ([#3534](https://github.com/newsuk/times-components/issues/3534)) ([4b475fb](https://github.com/newsuk/times-components/commit/4b475fb5e4fbfb1bb518c451df8543c6f690b4ca))
+
+
+
+
+
 # [1.94.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.93.0...@times-components/ts-newskit@1.94.0) (2023-09-15)
 
 
