@@ -27,7 +27,7 @@ export const RecommendedFetch: React.FC<{
   articleSection: string;
 }> = ({ articleId, articleHeadline, articleSection }) => {
   const [isClientSide, setIsClientSide] = useState<boolean>(false);
-
+  const isGoodUni = articleSection === 'good-university-guide-2024'
   useEffect(() => {
     try {
       const acsCookie = window.nuk.getCookieValue('acs_tnl');
@@ -43,6 +43,7 @@ export const RecommendedFetch: React.FC<{
   }, []);
 
   const heading = `Today\u{2019}s ${getSectionText(articleSection)}`;
+  const goodUniHeading = 'Good University Guide 2024';
 
   return isClientSide ? (
     <FetchProvider
@@ -57,13 +58,13 @@ export const RecommendedFetch: React.FC<{
             event_navigation_browsing_method: 'click',
             section_details: `section : ${articleSection}`,
             article_name: articleHeadline,
-            widget_headline: heading.toLowerCase(),
+            widget_headline: !isGoodUni ? heading.toLowerCase() : goodUniHeading.toLowerCase(),
             widget_section: articleSection,
             widget_type: "today's section"
           }
         }}
       >
-        <RecommendedArticles heading={heading} />
+        <RecommendedArticles heading={!isGoodUni ? heading : goodUniHeading} />
       </TrackingContextProvider>
     </FetchProvider>
   ) : null;

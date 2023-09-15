@@ -66,4 +66,15 @@ describe('<RecommendedFetch>', () => {
 
     expect(getByText('Today’s Ireland'));
   });
+  it('should the good uni heading if the section is good-university-guide-2024', () => {
+    const { getByText } = render(
+      <RecommendedFetch
+        articleId="1234"
+        articleHeadline="Some headline"
+        articleSection="good-university-guide-2024"
+      />
+    );
+
+    expect(getByText('Good University Guide 2024'));
+  });
 });
