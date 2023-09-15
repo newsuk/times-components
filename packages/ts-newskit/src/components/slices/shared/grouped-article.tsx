@@ -1,8 +1,7 @@
 import React from 'react';
-import { Block, GridLayout } from 'newskit';
+import { Block, GridLayout, Divider } from 'newskit';
 import { LeadArticle, LeadArticleProps } from '../lead-article/index';
 import { FullWidthBlock } from '../shared-styles/index';
-import { StyledDivider } from '../../../slices/lead-story-1/styles';
 import { ClickHandlerType } from '../../../slices/types';
 import { expirableFlagsProps } from './articleTileInfo';
 
@@ -35,7 +34,7 @@ export const GroupedArticle = ({
               <React.Fragment key={article.headline}>
                 {isSecondDivider && (
                   <FullWidthBlock marginBlock="space040">
-                    <StyledDivider
+                    <Divider
                       overrides={{
                         stylePreset: 'dashedDivider'
                       }}
