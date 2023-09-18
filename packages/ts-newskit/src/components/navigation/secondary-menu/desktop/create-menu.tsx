@@ -86,8 +86,7 @@ export const CreateMenu: React.FC<{
           overrides={{
             paddingBlockStart: 'space020',
             paddingBlockEnd: 'space030',
-            paddingInlineStart: 'space040',
-            paddingInlineEnd: 'space040',
+            paddingInline: 'space040',
             stylePreset: `${isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'}`,
             list: { stylePreset: 'subMenuItems' },
             typographyPreset: 'newPreset040'

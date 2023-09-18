@@ -1,6 +1,5 @@
 import React from 'react';
-import { MenuItem } from 'newskit';
-import { NavItemsContainer } from '../styles';
+import { NavItemsContainer, SecondaryNavMenuItemMob } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 
 export const NavItems: React.FC<{
@@ -12,23 +11,22 @@ export const NavItems: React.FC<{
   return (
     <NavItemsContainer>
       {data.map(({ url, slug, title }) => (
-        <MenuItem
+        <SecondaryNavMenuItemMob
           overrides={{
-            paddingInlineStart: 'space060',
-            paddingInlineEnd: 'space060',
+            paddingInline: 'space060',
             marginBlockStart: '-2px',
             marginInlineEnd: '-2px',
             stylePreset: 'secondaryMenuItem',
-            typographyPreset:
-              isSelected === title ? 'robotoBold' : 'newPreset020'
+            typographyPreset: 'secondaryNavMenuItemMob'
           }}
           href={url}
           id={`vertical-${slug}`}
           onClick={() => handleSelect(slug)}
           key={slug}
+          isSelected={isSelected === title}
         >
           {title}
-        </MenuItem>
+        </SecondaryNavMenuItemMob>
       ))}
     </NavItemsContainer>
   );

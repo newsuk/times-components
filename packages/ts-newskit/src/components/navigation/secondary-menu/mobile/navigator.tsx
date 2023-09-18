@@ -13,8 +13,7 @@ export const Navigator: React.FC<{
 
   return (
     <StyledBlock
-      paddingInlineStart="space040"
-      paddingInlineEnd="space040"
+      paddingInline="space040"
       stylePreset="secondaryNavMenuBlock"
     >
       <TextBlock
