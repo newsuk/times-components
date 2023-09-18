@@ -12,10 +12,7 @@ export const Navigator: React.FC<{
   const { isExpanded, setIsExpanded } = options;
 
   return (
-    <StyledBlock
-      paddingInline="space040"
-      stylePreset="secondaryNavMenuBlock"
-    >
+    <StyledBlock paddingInline="space040" stylePreset="secondaryNavMenuBlock">
       <TextBlock
         marginBlockStart="space040"
         typographyPreset="utilityHeading060"
