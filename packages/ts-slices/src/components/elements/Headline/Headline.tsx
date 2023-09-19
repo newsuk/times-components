@@ -5,7 +5,7 @@ import { MouseEventType, ClickHandlerType } from '../../../types/event';
 import { DisplaySchema } from '../../../types/styles';
 
 import { HeadlineContainer } from './styles';
-import { TimesWebLightSportTheme } from '@times-components/ts-newskit';
+import { TimesWebLightTheme } from '@times-components/ts-newskit';
 import { getThemeValue } from '../../../utils/getThemeValue';
 
 export const Headline: React.FC<{
@@ -27,11 +27,7 @@ export const Headline: React.FC<{
   return (
     <HeadlineContainer
       schema={displaySchema}
-      color={
-        theme === 'sport'
-          ? getThemeValue(TimesWebLightSportTheme.colors, 'sport070')
-          : undefined
-      }
+      color={getThemeValue(TimesWebLightTheme.colors, `${theme}070`)}
     >
       <a onClick={onClick} href={article.url}>
         <h3>{article.headline}</h3>

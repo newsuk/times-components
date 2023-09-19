@@ -9,7 +9,7 @@ import { Headline } from '../../elements/Headline/Headline';
 
 import { SideBySideColumn, Label } from '../shared-styles';
 import { ArticleContainer, ImageContainer, Byline } from './styles';
-import { TimesWebLightSportTheme } from '@times-components/ts-newskit';
+import { TimesWebLightTheme } from '@times-components/ts-newskit';
 import { getThemeValue } from '../../../utils/getThemeValue';
 
 export const ArticleComment: React.FC<{
@@ -26,11 +26,10 @@ export const ArticleComment: React.FC<{
     <ArticleContainer schema={displaySchema}>
       <SideBySideColumn schema={displaySchema}>
         <ImageContainer
-          backgroundColor={
-            theme === 'sport'
-              ? getThemeValue(TimesWebLightSportTheme.colors, 'interface030')
-              : undefined
-          }
+          backgroundColor={getThemeValue(
+            TimesWebLightTheme.colors,
+            `interface030`
+          )}
         >
           <Image
             article={article}
@@ -43,19 +42,11 @@ export const ArticleComment: React.FC<{
         {article.label && <Label>{article.label}</Label>}
         {article.byline && (
           <Byline
-            color={
-              theme === 'sport'
-                ? getThemeValue(TimesWebLightSportTheme.colors, 'sport050')
-                : undefined
-            }
-            marginBlockEnd={
-              theme === 'sport'
-                ? getThemeValue(
-                    TimesWebLightSportTheme.spacePresets,
-                    'space030'
-                  )
-                : undefined
-            }
+            color={getThemeValue(TimesWebLightTheme.colors, `${theme}050`)}
+            marginBlockEnd={getThemeValue(
+              TimesWebLightTheme.spacePresets,
+              'space030'
+            )}
           >
             {article.byline}
           </Byline>
