@@ -12,7 +12,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
       role="list"
     >
       <div
-        class="css-11tcrto"
+        class="css-pdlt48"
       >
         <p
           class="css-yhevtm"
@@ -72,7 +72,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
       role="list"
     >
       <div
-        class="css-11tcrto"
+        class="css-pdlt48"
       >
         <p
           class="css-yhevtm"

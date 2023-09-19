@@ -12,7 +12,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
       role="list"
     >
       <div
-        class="css-11tcrto"
+        class="css-pdlt48"
       >
         <p
           class="css-yhevtm"
@@ -65,13 +65,13 @@ exports[`Secondary Menu should render snapshot 1`] = `
             class="nk-menu-item css-zbkqx2"
           >
             <a
-              class="css-f2u5p9"
+              class="css-y3t8pq"
               data-testid="buttonLink"
               href="/home"
               id="vertical-home"
             >
               <span
-                class="css-i5wmgn"
+                class="css-fmaqio"
               >
                 Home
               </span>
@@ -81,13 +81,13 @@ exports[`Secondary Menu should render snapshot 1`] = `
             class="nk-menu-item css-zbkqx2"
           >
             <a
-              class="css-f2u5p9"
+              class="css-1uamgz7"
               data-testid="buttonLink"
               href="/news"
               id="vertical-news"
             >
               <span
-                class="css-5w969y"
+                class="css-fmaqio"
               >
                 News
               </span>
@@ -97,13 +97,13 @@ exports[`Secondary Menu should render snapshot 1`] = `
             class="nk-menu-item css-zbkqx2"
           >
             <a
-              class="css-f2u5p9"
+              class="css-y3t8pq"
               data-testid="buttonLink"
               href="/comment"
               id="vertical-comment"
             >
               <span
-                class="css-i5wmgn"
+                class="css-fmaqio"
               >
                 Comment
               </span>
@@ -113,13 +113,13 @@ exports[`Secondary Menu should render snapshot 1`] = `
             class="nk-menu-item css-zbkqx2"
           >
             <a
-              class="css-f2u5p9"
+              class="css-y3t8pq"
               data-testid="buttonLink"
               href="/life-and-style"
               id="vertical-life-and-style"
             >
               <span
-                class="css-i5wmgn"
+                class="css-fmaqio"
               >
                 Life & Style
               </span>
@@ -129,13 +129,13 @@ exports[`Secondary Menu should render snapshot 1`] = `
             class="nk-menu-item css-zbkqx2"
           >
             <a
-              class="css-f2u5p9"
+              class="css-y3t8pq"
               data-testid="buttonLink"
               href="/arts-and-books"
               id="vertical-arts-and-books"
             >
               <span
-                class="css-i5wmgn"
+                class="css-fmaqio"
               >
                 Arts & Books
               </span>
@@ -145,13 +145,13 @@ exports[`Secondary Menu should render snapshot 1`] = `
             class="nk-menu-item css-zbkqx2"
           >
             <a
-              class="css-f2u5p9"
+              class="css-y3t8pq"
               data-testid="buttonLink"
               href="/sport"
               id="vertical-sport"
             >
               <span
-                class="css-i5wmgn"
+                class="css-fmaqio"
               >
                 Sport
               </span>
@@ -161,13 +161,13 @@ exports[`Secondary Menu should render snapshot 1`] = `
             class="nk-menu-item css-zbkqx2"
           >
             <a
-              class="css-f2u5p9"
+              class="css-y3t8pq"
               data-testid="buttonLink"
               href="/business-and-money"
               id="vertical-business-and-money"
             >
               <span
-                class="css-i5wmgn"
+                class="css-fmaqio"
               >
                 Business & Money
               </span>
@@ -177,13 +177,13 @@ exports[`Secondary Menu should render snapshot 1`] = `
             class="nk-menu-item css-zbkqx2"
           >
             <a
-              class="css-f2u5p9"
+              class="css-y3t8pq"
               data-testid="buttonLink"
               href="/puzzles"
               id="vertical-puzzles"
             >
               <span
-                class="css-i5wmgn"
+                class="css-fmaqio"
               >
                 Puzzles
               </span>
@@ -193,13 +193,13 @@ exports[`Secondary Menu should render snapshot 1`] = `
             class="nk-menu-item css-zbkqx2"
           >
             <a
-              class="css-f2u5p9"
+              class="css-y3t8pq"
               data-testid="buttonLink"
               href="/magazines"
               id="vertical-magazines"
             >
               <span
-                class="css-i5wmgn"
+                class="css-fmaqio"
               >
                 Magazines
               </span>
