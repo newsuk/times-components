@@ -27,6 +27,7 @@ export const TagAndFlag = ({
     <Block marginBlockStart={marginBlockStart} data-testid="tag-and-flag">
       {tag && (
         <TextLink
+          hasLink={tag.href ? true : false}
           overrides={{
             typographyPreset: 'utilityButton005',
             stylePreset: 'inkBrand010'

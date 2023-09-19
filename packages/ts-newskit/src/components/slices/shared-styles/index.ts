@@ -29,11 +29,11 @@ export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
   }
 `;
 
-export const TextLink = styled(LinkInline)`
+export const TextLink = styled(LinkInline)<{ hasLink: boolean}>`
   text-decoration: none;
   &&:hover,
   &&:active {
-    text-decoration: underline;
+    text-decoration: ${({ hasLink }) => hasLink ? 'underline;' : 'none'}
     text-underline-position: under;
   }
 `;
