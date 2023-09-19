@@ -16,8 +16,8 @@ export const ArticleComment: React.FC<{
   article?: SliceArticle;
   displaySchema?: DisplaySchema;
   clickHandler?: ClickHandlerType;
-  slug?: string;
-}> = ({ article, displaySchema, clickHandler, slug }) => {
+  theme?: string;
+}> = ({ article, displaySchema, clickHandler, theme }) => {
   if (!article) {
     return null;
   }
@@ -27,7 +27,7 @@ export const ArticleComment: React.FC<{
       <SideBySideColumn schema={displaySchema}>
         <ImageContainer
           backgroundColor={
-            slug === 'sport'
+            theme === 'sport'
               ? getThemeValue(TimesWebLightSportTheme.colors, 'interface030')
               : undefined
           }
@@ -44,12 +44,12 @@ export const ArticleComment: React.FC<{
         {article.byline && (
           <Byline
             color={
-              slug === 'sport'
+              theme === 'sport'
                 ? getThemeValue(TimesWebLightSportTheme.colors, 'sport050')
                 : undefined
             }
             marginBlockEnd={
-              slug === 'sport'
+              theme === 'sport'
                 ? getThemeValue(
                     TimesWebLightSportTheme.spacePresets,
                     'space030'
@@ -64,7 +64,7 @@ export const ArticleComment: React.FC<{
           article={article}
           displaySchema={displaySchema}
           clickHandler={clickHandler}
-          slug={slug}
+          theme={theme}
         />
       </SideBySideColumn>
     </ArticleContainer>

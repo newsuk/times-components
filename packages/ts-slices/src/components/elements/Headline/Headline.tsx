@@ -12,8 +12,8 @@ export const Headline: React.FC<{
   article: SliceArticle;
   displaySchema?: DisplaySchema;
   clickHandler?: ClickHandlerType;
-  slug?: string;
-}> = ({ article, displaySchema, clickHandler, slug }) => {
+  theme?: string;
+}> = ({ article, displaySchema, clickHandler, theme }) => {
   if (!article.headline) {
     return null;
   }
@@ -28,7 +28,7 @@ export const Headline: React.FC<{
     <HeadlineContainer
       schema={displaySchema}
       color={
-        slug === 'sport'
+        theme === 'sport'
           ? getThemeValue(TimesWebLightSportTheme.colors, 'sport070')
           : undefined
       }
