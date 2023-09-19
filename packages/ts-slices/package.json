@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@times-components/ts-styleguide": "1.47.0",
+    "@times-components/ts-newskit": "1.95.0",
     "date-fns": "2.28.0",
     "lodash.get": "4.4.2",
     "react": "16.9.0",

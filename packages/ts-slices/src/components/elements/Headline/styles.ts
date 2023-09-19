@@ -19,7 +19,10 @@ const getWidth = (breakpoint: string, schema?: DisplaySchema) =>
 const getTextAlign = (breakpoint: string, schema?: DisplaySchema) =>
   isCentered(breakpoint, schema) ? 'center' : 'left';
 
-export const HeadlineContainer = styled.div<{ schema?: DisplaySchema }>`
+export const HeadlineContainer = styled.div<{
+  schema?: DisplaySchema;
+  color?: string;
+}>`
   width: ${({ schema }) => getWidth('sm', schema)};
   margin: 0 auto;
 
@@ -40,7 +43,7 @@ export const HeadlineContainer = styled.div<{ schema?: DisplaySchema }>`
 
     h3 {
       margin: 0;
-      color: ${colours.functional.brandColour};
+      color: ${({ color }) => (color ? color : colours.functional.brandColour)};
       font-size: ${({ schema }) => getFontSize('sm', schema)}px;
       line-height: ${({ schema }) => getFontSize('sm', schema)}px;
       font-family: ${fonts.headline};
