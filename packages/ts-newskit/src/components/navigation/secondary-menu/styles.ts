@@ -46,6 +46,16 @@ export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
   z-index: 2;
 `;
 
+export const SecondaryNavMenuItemMob = styled(MenuItem)<{
+  isSelected: boolean;
+}>`
+  ${({ isSelected }) =>
+    isSelected &&
+    `& span {
+    font-weight: 800
+  }`};
+`;
+
 export const Wrapper = styled.div`
   display: flex;
 `;

@@ -26,7 +26,7 @@ export const secondaryNavigationStylePresets = {
     },
     hover: {
       backgroundColor: '{{colors.neutral010}}',
-      borderBottom: '1px solid #F5F5F5'
+      borderBottom: '1px solid {{colors.neutral010}}'
     }
   },
   icon: {

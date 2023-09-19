@@ -132,7 +132,7 @@ exports[`Create Menu should render snapshot 1`] = `
       >
         <button
           aria-expanded="false"
-          class="css-1azw1w"
+          class="css-wxo2bw"
           data-testid="menu-sub-button"
           type="button"
         >
