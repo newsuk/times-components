@@ -3,7 +3,7 @@ import { MenuDivider, Block, Visible, TextBlock } from 'newskit';
 import NavigationList from './NavigationList';
 import { HamburgerMenuNav } from '../styles';
 import { NavigationData } from '../types';
-import NavSearch from '../search';
+import NavSearch from '../search/search';
 import NavButtonSection from './NavButtons';
 
 export const HamburgerMenu: React.FC<{

@@ -17,7 +17,7 @@ import {
   TopNavHide,
   TopNavIcon
 } from '../styles';
-import NavSearch from '../search';
+import NavSearch from '../search/search';
 import { LoggedOutButtons } from './loggedOutButtons';
 
 type TopNavProps = {

@@ -3,7 +3,6 @@ import { fireEvent } from '@testing-library/react';
 import { render, screen } from '../../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { TopNav } from '../topnav';
-import NavSearch from '../../search';
 import data from '../../fixtures/data.json';
 
 const renderComponent = (isLoggedIn?: boolean, isSunday?: boolean) =>
@@ -45,15 +44,5 @@ describe('TopNav button functions', () => {
 
     fireEvent.click(searchBtn);
     expect(searchBtn.getAttribute('aria-label')).toEqual('Close Search');
-  });
-});
-
-describe('Search field', () => {
-  it('should update onChange', async () => {
-    render(<NavSearch />);
-    const searchField: HTMLInputElement = screen.getByRole('textbox');
-    fireEvent.change(searchField, { target: { value: 'test' } });
-
-    expect(searchField.getAttribute('value')).toBe('test');
   });
 });
