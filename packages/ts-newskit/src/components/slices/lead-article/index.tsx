@@ -6,11 +6,7 @@ import {
   Divider
 } from 'newskit';
 import React from 'react';
-import {
-  CardHeadlineLink,
-  FullWidthCardMediaMob,
-  StyledSpan
-} from '../shared-styles';
+import { CardHeadlineLink, FullWidthCardMediaMob } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
@@ -19,6 +15,7 @@ import {
   ArticleTileInfo,
   expirableFlagsProps
 } from '../shared/articleTileInfo';
+import { CaptionsAndCredits } from '../shared/captions-and-credits';
 
 type ImageCrops = {
   url?: string;
@@ -30,7 +27,7 @@ type ListData = {
   id: string;
 };
 
-type ImageProps = {
+export type ImageProps = {
   alt?: string;
   caption?: string;
   credits?: string;
@@ -159,22 +156,10 @@ export const LeadArticle = ({
           >
             <FullWidthCardMediaMob {...cardImage} />
             {hasCaptionOrCredits && (
-              <TextBlock
-                marginBlockStart="space020"
-                typographyPreset="editorialCaption010"
-              >
-                {images && images.caption}
-                {images &&
-                  images.credits && (
-                    <StyledSpan hasCaption={hasCaption}>
-                      {images.credits}
-                    </StyledSpan>
-                  )}
-              </TextBlock>
+              <CaptionsAndCredits images={images} hasCaption={hasCaption} />
             )}
           </Block>
         )}
-
       <CardContent
         alignContent="start"
         overrides={{ marginBlockEnd: contentTop ? 'space040' : 'space000' }}

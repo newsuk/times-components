@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CaptionsAndCredits should render a snapshot 1`] = `
+<DocumentFragment>
+  <p
+    class="css-1c5i4sy"
+  >
+    Saracens an inclusive club? They didnt look out for me
+    <span
+      class="css-bbx0sz"
+    >
+      Gareth Fuller/Press Association
+    </span>
+  </p>
+</DocumentFragment>
+`;

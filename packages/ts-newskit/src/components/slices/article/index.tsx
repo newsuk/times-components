@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Divider,
   CardContent,
-  TextBlock,
   CardComposable,
   CardMedia,
   GridLayoutItem
@@ -20,6 +19,7 @@ import {
   expirableFlagsProps
 } from '../shared/articleTileInfo';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
+import { CaptionsAndCredits } from '../shared/captions-and-credits';
 
 type ImageCrops = {
   url?: string;
@@ -29,6 +29,7 @@ type ImageCrops = {
 type ImageProps = {
   alt?: string;
   caption?: string;
+  credits?: string;
   crops?: ImageCrops[];
 };
 
@@ -107,6 +108,11 @@ export const Article = ({
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
 
+  const hasCaption = !!(images && images.caption);
+  const hasCredits = !!(images && images.credits);
+
+  const hasCaptionOrCredits = hasCaption || hasCredits;
+
   const onClick = (event: MouseEventType) => {
     const articleForTracking = { headline, id, url };
     articleClickTracking(event, articleForTracking, clickHandler);
@@ -154,17 +160,10 @@ export const Article = ({
       <CardContent alignContent="start">
         {images &&
           !imageRight &&
-          images.caption &&
+          hasCaptionOrCredits &&
           !hideImage && (
-            <TextBlock
-              marginBlockStart="space020"
-              stylePreset="inkSubtle"
-              typographyPreset="utilityMeta010"
-            >
-              {images.caption}
-            </TextBlock>
+            <CaptionsAndCredits images={images} hasCaption={hasCaption} />
           )}
-
         <ArticleTileInfo
           contentType={contentType}
           expirableFlags={expirableFlags}

@@ -63,7 +63,7 @@ export const FullWidthBlock = styled(Block)`
 const setInlinePaddingStart = (space: string) => ({
   paddingInlineStart: `${space}`
 });
-export const StyledSpan = styled.span<{ hasCaption: boolean }>`
+export const StyledSpan = styled.span<{ hasCaption?: boolean }>`
   font-style: italic;
   ${({ hasCaption }) =>
     hasCaption
