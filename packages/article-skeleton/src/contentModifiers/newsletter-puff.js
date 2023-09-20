@@ -98,7 +98,7 @@ const newslettersBySection = [
       code: "TNL-152",
       headline: "Best of Times Ireland newsletter:",
       copy:
-        "The most compelling Irish news, business, sport and lifestyle stories from the week, every Sunday.",
+        "The most compelling Irish news, business, sport and lifestyle stories from the week, every Sunday."
     })
   },
   {
@@ -107,7 +107,7 @@ const newslettersBySection = [
       code: "TNL-152",
       headline: "Best of Times Ireland newsletter:",
       copy:
-        "The most compelling Irish news, business, sport and lifestyle stories from the week, every Sunday.",
+        "The most compelling Irish news, business, sport and lifestyle stories from the week, every Sunday."
     })
   }
 ];
