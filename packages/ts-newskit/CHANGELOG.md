@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.97.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.96.0...@times-components/ts-newskit@1.97.0) (2023-09-20)
+
+
+### Features
+
+* **TMRX-1256:** integrate search function in globalnav ([#3538](https://github.com/newsuk/times-components/issues/3538)) ([99583a9](https://github.com/newsuk/times-components/commit/99583a91ab140539a09d55dd4a1aebdf1fcea804))
+
+
+
+
+
 # [1.96.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.95.1...@times-components/ts-newskit@1.96.0) (2023-09-20)
 
 
