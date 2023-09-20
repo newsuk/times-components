@@ -99,8 +99,6 @@ const newslettersBySection = [
       headline: "Best of Times Ireland newsletter:",
       copy:
         "The most compelling Irish news, business, sport and lifestyle stories from the week, every Sunday.",
-      imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800"
     })
   },
   {
@@ -110,8 +108,6 @@ const newslettersBySection = [
       headline: "Best of Times Ireland newsletter:",
       copy:
         "The most compelling Irish news, business, sport and lifestyle stories from the week, every Sunday.",
-      imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800"
     })
   }
 ];
