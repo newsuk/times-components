@@ -1,10 +1,6 @@
 import React from 'react';
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Block, FlagSize, IconButton, TitleBar } from 'newskit';
-import {
-  TrackingContextProvider,
-  TrackingContext
-} from '../../../utils/TrackingContextProvider';
 import { SliceHeaderContainer } from './styles';
 
 export interface SliceHeaderProps {
@@ -14,6 +10,7 @@ export interface SliceHeaderProps {
   iconArrowSize?: string;
   iconSize?: FlagSize;
   padding?: string;
+  clickHandler: (title: string) => void;
 }
 
 export const SliceHeader = ({
@@ -22,29 +19,10 @@ export const SliceHeader = ({
   titleTypographyPreset = 'editorialDisplay004',
   iconArrowSize = 'iconSize020',
   iconSize = 'medium',
-  padding = 'space030'
+  padding = 'space030',
+  clickHandler
 }: SliceHeaderProps) => {
-  const clickEvent = () => ({
-    action: 'Clicked',
-    attrs: {
-      event_navigation_action: 'navigation',
-      event_navigation_name: 'title block link',
-      event_navigation_browsing_method: 'click',
-      article_parent_name: title
-    }
-  });
-
-  const handleClick = (fireAnalyticsEvent: (evt: TrackingContext) => void) => {
-    fireAnalyticsEvent && fireAnalyticsEvent(clickEvent());
-  };
   return (
-    <TrackingContextProvider
-      context={{
-        component: 'SliceHeader',
-        object: 'SliceHeader'
-      }}
-    >
-      {({ fireAnalyticsEvent }) => (
         <Block stylePreset="sliceHeaderPreset">
           <SliceHeaderContainer
             flow="horizontal-center"
@@ -72,14 +50,12 @@ export const SliceHeader = ({
                 }}
                 role="link"
                 href={href}
-                onClick={() => handleClick(fireAnalyticsEvent)}
+                onClick={() => clickHandler(title)}
               >
                 <NewsKitChevronRightIcon />
               </IconButton>
             )}
           </SliceHeaderContainer>
         </Block>
-      )}
-    </TrackingContextProvider>
   );
 };
