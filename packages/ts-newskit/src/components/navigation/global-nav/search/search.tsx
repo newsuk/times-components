@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { TextField, ScreenReaderOnly, IconButton } from 'newskit';
-import { NewsKitRoundedCloseIcon, NewsKitSearchIcon } from '../../../assets';
+import { TextField, ScreenReaderOnly, IconButton, Form } from 'newskit';
+import { NewsKitRoundedCloseIcon, NewsKitSearchIcon } from '../../../../assets';
+import { handleSearchSubmit } from './handleSearchSubmit';
 
 type NavSearchProps = {
   isHamburger?: boolean;
@@ -21,11 +22,17 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
       };
 
   return (
-    <>
+    <Form
+      onSubmit={() =>
+        handleSearchSubmit(isHamburger ? 'mobile' : 'desktop', searchText)
+      }
+      role="search"
+    >
       <TextField
         id={isHamburger ? undefined : 'searchTimes'}
         aria-describedby="searchTimesLabel"
         value={searchText}
+        autoFocus
         onChange={event => setSearchText(event.target.value)}
         placeholder="Search times.co.uk"
         overrides={{
@@ -60,7 +67,7 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
       <ScreenReaderOnly id="searchTimesLabel">
         Search times.co.uk
       </ScreenReaderOnly>
-    </>
+    </Form>
   );
 };
 

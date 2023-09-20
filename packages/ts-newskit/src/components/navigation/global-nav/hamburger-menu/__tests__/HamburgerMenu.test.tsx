@@ -6,26 +6,23 @@ import data from '../../__tests__/fixtures/test-data.json';
 
 import HamburgerMenu from '../HamburgerMenu';
 
+const renderComponent = (loggedIn: boolean) =>
+  render(<HamburgerMenu data={data} isLoggedIn={loggedIn} />);
+
 describe('HamburgerMenu', () => {
   it('should render the component', () => {
-    const { asFragment } = render(
-      <HamburgerMenu data={data} isLoggedIn={true} />
-    );
+    const { asFragment } = renderComponent(true);
     expect(asFragment()).toMatchSnapshot();
   });
   it('should expand the L1 you click on it', () => {
-    const { getByText, getAllByTestId } = render(
-      <HamburgerMenu data={data} isLoggedIn={true} />
-    );
+    const { getByText, getAllByTestId } = renderComponent(true);
     expect(getByText('Item 1')).not.toBeVisible();
     const Button = getAllByTestId('menu-sub-button')[0];
     fireEvent.click(Button);
     expect(getByText('Item 1')).toBeVisible();
   });
   it('should close the expanded L1 if you click on it again', () => {
-    const { getByText, getAllByTestId } = render(
-      <HamburgerMenu data={data} isLoggedIn={true} />
-    );
+    const { getByText, getAllByTestId } = renderComponent(true);
     expect(getByText('Item 1')).not.toBeVisible();
     const Button = getAllByTestId('menu-sub-button')[0];
     fireEvent.click(Button);
@@ -34,9 +31,7 @@ describe('HamburgerMenu', () => {
     expect(getByText('Item 1')).not.toBeVisible();
   });
   it('should close the expanded L1 if you click on another L1', () => {
-    const { getByText, getAllByTestId } = render(
-      <HamburgerMenu data={data} isLoggedIn={true} />
-    );
+    const { getByText, getAllByTestId } = renderComponent(true);
     expect(getByText('Item 1')).not.toBeVisible();
     const Button1 = getAllByTestId('menu-sub-button')[0];
     const Button2 = getAllByTestId('menu-sub-button')[1];
@@ -49,27 +44,21 @@ describe('HamburgerMenu', () => {
 
 describe('HamburgerMenu - Logged In', () => {
   it('should render the Sections and account section on smaller devices', () => {
-    const { asFragment, getByText } = render(
-      <HamburgerMenu data={data} isLoggedIn={true} />
-    );
+    const { asFragment, getByText } = renderComponent(true);
     expect(asFragment()).toMatchSnapshot();
     expect(getByText('Sections')).toBeVisible();
     expect(getByText('My account')).toBeVisible();
   });
 
   it('should default to show the Sections', () => {
-    const { getByText, queryByText } = render(
-      <HamburgerMenu data={data} isLoggedIn={true} />
-    );
+    const { getByText, queryByText } = renderComponent(true);
     expect(queryByText('Account Menu 1')).toBeFalsy();
     expect(getByText('Main Menu 1')).toBeVisible();
     expect(getByText('More 1')).toBeVisible();
   });
 
   it('should change the nav items if you click onto the Logged in Menu buttons', () => {
-    const { getByText, queryByText } = render(
-      <HamburgerMenu data={data} isLoggedIn={true} />
-    );
+    const { getByText, queryByText } = renderComponent(true);
     expect(getByText('Main Menu 1')).toBeVisible();
     expect(queryByText('Account Menu 1')).toBeFalsy();
     const myAccountButton = getByText('My account');
@@ -85,9 +74,7 @@ describe('HamburgerMenu - Logged In', () => {
 
 describe('HamburgerMenu - Logged Out', () => {
   it('should only show the Sections and not the account menu', () => {
-    const { getByText, queryByText } = render(
-      <HamburgerMenu data={data} isLoggedIn={false} />
-    );
+    const { getByText, queryByText } = renderComponent(false);
     expect(queryByText('Account Menu 1')).toBeFalsy();
     expect(getByText('Main Menu 1')).toBeVisible();
     expect(getByText('More 1')).toBeVisible();
@@ -96,12 +83,12 @@ describe('HamburgerMenu - Logged Out', () => {
 
 describe('Search field', () => {
   it('contains the search bar', () => {
-    const { getByPlaceholderText } = render(<HamburgerMenu data={data} />);
+    const { getByPlaceholderText } = renderComponent(false);
     expect(getByPlaceholderText('Search times.co.uk')).toBeVisible();
   });
 
   it('should update search field value', async () => {
-    render(<HamburgerMenu data={data} />);
+    renderComponent(false);
 
     const searchField = screen.getByPlaceholderText('Search times.co.uk');
 
@@ -112,7 +99,7 @@ describe('Search field', () => {
   });
 
   it('should clear search field when clicked', async () => {
-    render(<HamburgerMenu data={data} />);
+    renderComponent(false);
 
     const searchField = screen.getByPlaceholderText('Search times.co.uk');
 
