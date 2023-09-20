@@ -261,6 +261,17 @@ jobs:
             command: |
               yarn config delete registry
 
+only_on_pr_branch: &only_on_pr_branch
+  filters:
+    branches:
+      ignore:
+        - master
+only_on_master_branch: &only_on_master_branch
+  filters:
+    branches:
+      only:
+        - master
+
 workflows:
     version: 2
 
@@ -289,6 +300,7 @@ workflows:
                       - setup
 
             - verdaccio-test-approval:
+                <<: *only_on_master_branch
                 type: approval
                 requires:
                   - build_storybook
@@ -298,16 +310,25 @@ workflows:
                   - run_unit_tests
                   - run_cypress_tests
             - verdaccio-test:
+                <<: *only_on_master_branch
                 requires:
                   - verdaccio-test-approval
             - publish_coverage:
                 requires:
-                  - verdaccio-test
+                  - build_storybook
+                  - run_lint
+                  - run_noplatform_tests
+                  - run_web_tests
+                  - run_unit_tests
+                  - run_cypress_tests
             - publish_storybook:
-                  filters:
-                    branches:
-                        only:
-                          - master
+                  <<: *only_on_master_branch
+                  requires:
+                      - verdaccio-test
+            - publish_canary_approval:
+                  name: Approve canary release
+                  type: approval
+                  <<: *only_on_pr_branch
                   requires:
                       - build_storybook
                       - run_lint
@@ -315,26 +336,11 @@ workflows:
                       - run_web_tests
                       - run_unit_tests
                       - run_cypress_tests
-            - publish_canary_approval:
-                  name: Approve canary release
-                  type: approval
-                  filters:
-                    branches:
-                        ignore:
-                          - master
-                  requires:
-                      - verdaccio-test
             - publish_canary:
-                  filters:
-                    branches:
-                        ignore:
-                          - master
+                  <<: *only_on_pr_branch
                   requires:
                       - Approve canary release
             - publish_npm:
-                  filters:
-                    branches:
-                        only:
-                          - master
+                  <<: *only_on_master_branch
                   requires:
                       - verdaccio-test
