@@ -159,7 +159,7 @@ export const Article = ({
             <TextBlock
               marginBlockStart="space020"
               stylePreset="inkSubtle"
-              typographyPreset="utilityMeta010"
+              typographyPreset="editorialCaption010"
             >
               {images.caption}
             </TextBlock>

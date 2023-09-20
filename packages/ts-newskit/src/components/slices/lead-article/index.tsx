@@ -162,6 +162,7 @@ export const LeadArticle = ({
               <TextBlock
                 marginBlockStart="space020"
                 typographyPreset="editorialCaption010"
+                stylePreset="inkSubtle"
               >
                 {images && images.caption}
                 {images &&
