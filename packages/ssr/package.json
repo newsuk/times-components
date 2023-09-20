@@ -45,7 +45,7 @@
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "eslint-plugin-cypress": "2.0.1",
-    "express": "4.16.3",
+    "express": "4.17.3",
     "graphql": "14.2.1",
     "prettier": "1.14.3",
     "wait-on": "3.1.0",
