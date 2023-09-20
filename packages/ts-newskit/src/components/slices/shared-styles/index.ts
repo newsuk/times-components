@@ -69,8 +69,7 @@ export const StyledSpan = styled.span<{ hasCaption: boolean }>`
     hasCaption
       ? getSpacingCssFromTheme(setInlinePaddingStart, 'space010')
       : getSpacingCssFromTheme(setInlinePaddingStart, 'space000')};
-  font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1rem;
 `;
 
 export const StyledTextBlock = styled(TextBlock)`
