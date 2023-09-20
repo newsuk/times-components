@@ -2,20 +2,28 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render, fireEvent } from '../../../../utils/test-utils';
 import { SliceHeader } from '../index';
-import { TrackingContextProvider } from '../../../../utils/TrackingContextProvider';
 import mockDate from 'mockdate';
 
 describe('Render Header', () => {
+  const analyticsStream = jest.fn();
   it('should render a snapshot', () => {
     const { asFragment } = render(
-      <SliceHeader title="Rugby Union" href="https://www.thetimes.co.uk/" />
+      <SliceHeader
+        title="Rugby Union"
+        href="https://www.thetimes.co.uk/"
+        analyticsStream={analyticsStream}
+      />
     );
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render correct title', () => {
     const { getByText } = render(
-      <SliceHeader title="Rugby Union" href="https://www.thetimes.co.uk/" />
+      <SliceHeader
+        title="Rugby Union"
+        href="https://www.thetimes.co.uk/"
+        analyticsStream={analyticsStream}
+      />
     );
     const text = getByText('Rugby Union');
     expect(text).toBeInTheDocument();
@@ -23,18 +31,23 @@ describe('Render Header', () => {
 
   it('should render correct color', () => {
     const { getByText } = render(
-      <SliceHeader title="Rugby Union" href="https://www.thetimes.co.uk/" />
+      <SliceHeader
+        title="Rugby Union"
+        href="https://www.thetimes.co.uk/"
+        analyticsStream={analyticsStream}
+      />
     );
     const text = getByText('Rugby Union');
     expect(text).toHaveStyle('color: #01000d');
   });
   it('should trigger tracking', () => {
     mockDate.set(1620000000000);
-    const analyticsStream = jest.fn();
     const { getByRole } = render(
-      <TrackingContextProvider analyticsStream={analyticsStream}>
-        <SliceHeader title="Rugby Union" href="https://www.thetimes.co.uk/" />
-      </TrackingContextProvider>
+      <SliceHeader
+        title="Rugby Union"
+        href="https://www.thetimes.co.uk/"
+        analyticsStream={analyticsStream}
+      />
     );
     fireEvent.click(getByRole('link'));
     expect(analyticsStream).toHaveBeenCalledWith({
