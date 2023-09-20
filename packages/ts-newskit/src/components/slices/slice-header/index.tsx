@@ -14,6 +14,7 @@ export interface SliceHeaderProps {
   iconArrowSize?: string;
   iconSize?: FlagSize;
   padding?: string;
+  analyticsStream?: any;
 }
 
 export const SliceHeader = ({
@@ -22,7 +23,8 @@ export const SliceHeader = ({
   titleTypographyPreset = 'editorialDisplay004',
   iconArrowSize = 'iconSize020',
   iconSize = 'medium',
-  padding = 'space030'
+  padding = 'space030',
+  analyticsStream
 }: SliceHeaderProps) => {
   const clickEvent = () => ({
     action: 'Clicked',
@@ -43,6 +45,7 @@ export const SliceHeader = ({
         component: 'SliceHeader',
         object: 'SliceHeader'
       }}
+      analyticsStream={analyticsStream}
     >
       {({ fireAnalyticsEvent }) => (
         <Block stylePreset="sliceHeaderPreset">

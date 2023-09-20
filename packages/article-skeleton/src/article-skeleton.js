@@ -14,7 +14,8 @@ import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 import {
   UpdateButtonWithDelay,
-  TCThemeProvider
+  TCThemeProvider,
+  SliceHeader
 } from "@times-components/ts-newskit";
 import StaticContent from "./static-content";
 
@@ -188,6 +189,9 @@ const ArticleSkeleton = ({
             <HeaderAdContainer key="headerAd">
               <AdContainer slotName="header" style={styles.adMarginStyle} />
             </HeaderAdContainer>
+            <TCThemeProvider>
+            <SliceHeader title="Test Slice Header" href="/" analyticsStream={analyticsStream} />
+            </TCThemeProvider>
             <MainContainer>
               <WelcomeBanner />
               {!!zephrDivs && (
