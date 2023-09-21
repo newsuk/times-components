@@ -10,7 +10,7 @@ export interface SliceHeaderProps {
   iconArrowSize?: string;
   iconSize?: FlagSize;
   padding?: string;
-  clickHandler: (title: string) => void;
+  sliceHeaderClickHandler: (title: string) => void;
 }
 
 export const SliceHeader = ({
@@ -20,42 +20,42 @@ export const SliceHeader = ({
   iconArrowSize = 'iconSize020',
   iconSize = 'medium',
   padding = 'space030',
-  clickHandler
+  sliceHeaderClickHandler
 }: SliceHeaderProps) => {
   return (
-        <Block stylePreset="sliceHeaderPreset">
-          <SliceHeaderContainer
-            flow="horizontal-center"
-            stackDistribution="space-between"
-            paddingBlock={padding}
+    <Block stylePreset="sliceHeaderPreset">
+      <SliceHeaderContainer
+        flow="horizontal-center"
+        stackDistribution="space-between"
+        paddingBlock={padding}
+      >
+        <TitleBar
+          overrides={{
+            heading: {
+              typographyPreset: titleTypographyPreset,
+              stylePreset: 'inkBrand010'
+            },
+            paddingInline: 'space000',
+            paddingBlock: 'space000'
+          }}
+        >
+          {title}
+        </TitleBar>
+        {href && (
+          <IconButton
+            size={iconSize}
+            overrides={{
+              stylePreset: 'sliceIconPreset',
+              iconSize: iconArrowSize
+            }}
+            role="link"
+            href={href}
+            onClick={() => sliceHeaderClickHandler(title)}
           >
-            <TitleBar
-              overrides={{
-                heading: {
-                  typographyPreset: titleTypographyPreset,
-                  stylePreset: 'inkBrand010'
-                },
-                paddingInline: 'space000',
-                paddingBlock: 'space000'
-              }}
-            >
-              {title}
-            </TitleBar>
-            {href && (
-              <IconButton
-                size={iconSize}
-                overrides={{
-                  stylePreset: 'sliceIconPreset',
-                  iconSize: iconArrowSize
-                }}
-                role="link"
-                href={href}
-                onClick={() => clickHandler(title)}
-              >
-                <NewsKitChevronRightIcon />
-              </IconButton>
-            )}
-          </SliceHeaderContainer>
-        </Block>
+            <NewsKitChevronRightIcon />
+          </IconButton>
+        )}
+      </SliceHeaderContainer>
+    </Block>
   );
 };

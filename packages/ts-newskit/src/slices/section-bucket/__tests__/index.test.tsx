@@ -16,18 +16,33 @@ jest.mock('newskit', () => ({
 }));
 
 const mockClickHandler = jest.fn();
+const mockSliceHeaderClickHandler = jest.fn();
 
 const renderComponent = () =>
   render(
     <SectionBucket
-      articleStackOne={{ ...articleStackOne, clickHandler: mockClickHandler }}
-      articleStackTwo={{ ...articleStackTwo, clickHandler: mockClickHandler }}
+      articleStackOne={{
+        ...articleStackOne,
+        clickHandler: mockClickHandler,
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler
+      }}
+      articleStackTwo={{
+        ...articleStackTwo,
+        clickHandler: mockClickHandler,
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler
+      }}
       articleStackThree={{
         ...articleStackThree,
-        clickHandler: mockClickHandler
+        clickHandler: mockClickHandler,
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler
       }}
-      articleStackFour={{ ...articleStackFour, clickHandler: mockClickHandler }}
+      articleStackFour={{
+        ...articleStackFour,
+        clickHandler: mockClickHandler,
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler
+      }}
       clickHandler={mockClickHandler}
+      sliceHeaderClickHandler={mockSliceHeaderClickHandler}
     />
   );
 
