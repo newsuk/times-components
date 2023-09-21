@@ -5,11 +5,12 @@ import { stylePresets } from '../times-web-light/style-presets';
 import { typographyPresets } from '../times-web-light/styles/typography-presets';
 import { formatThemeOverrides } from '../../utils/theme-formatting';
 
-const updatedTheme = formatThemeOverrides(
-  TheTimesLightSport,
+const themeOverrides = {
   stylePresets,
   typographyPresets
-);
+};
+
+const updatedTheme = formatThemeOverrides(TheTimesLightSport, themeOverrides);
 
 export const TimesWebLightSportTheme = createTheme({
   name: 'times-web-light-sport',
