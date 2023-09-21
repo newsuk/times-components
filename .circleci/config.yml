@@ -190,6 +190,10 @@ jobs:
                   at: ./
             - install-lerna
             - run:
+                name: Who am I
+                command: |
+                   npm whoami
+            - run:
                   name: Publish to npm
                   command: |
                       lerna run bundle --stream
