@@ -42,10 +42,14 @@ describe('Render Header', () => {
   });
   it('should call the tracking function when clicked', () => {
     const { getByRole } = render(
-             <SliceHeader title="Rugby Union" href="https://www.thetimes.co.uk/" sliceHeaderClickHandler={mockSliceHeaderClickHandler}/>
-         );
-         fireEvent.click(getByRole('link'));
-         expect(mockSliceHeaderClickHandler).toHaveBeenCalledWith('Rugby Union')
+      <SliceHeader
+        title="Rugby Union"
+        href="https://www.thetimes.co.uk/"
+        sliceHeaderClickHandler={mockSliceHeaderClickHandler}
+      />
+    );
+    fireEvent.click(getByRole('link'));
+    expect(mockSliceHeaderClickHandler).toHaveBeenCalledWith('Rugby Union');
   });
   it('does not render the icon button if no href is supplied', () => {
     const { queryByRole } = render(

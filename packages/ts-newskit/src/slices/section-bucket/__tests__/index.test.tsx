@@ -75,10 +75,10 @@ describe('Render SectionBucket Slice', () => {
   test('calls the click event when the slice header button is clicked', () => {
     const { getAllByRole } = renderComponent();
     const links = getAllByRole('link');
-    links.map((link) => fireEvent.click(link))
+    links.map(link => fireEvent.click(link));
     expect(mockSliceHeaderClickHandler).toHaveBeenCalledTimes(4);
     expect(mockSliceHeaderClickHandler).toHaveBeenCalledWith('Title bar');
-  })
+  });
 
   test('renders correct number of articles in each blocks', () => {
     const { getAllByTestId } = renderComponent();
