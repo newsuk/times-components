@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.98.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.97.0...@times-components/ts-newskit@1.98.0) (2023-09-21)
+
+
+### Features
+
+* **TMRX-1495:** update function to support addition of theme overrides ([#3524](https://github.com/newsuk/times-components/issues/3524)) ([51066cc](https://github.com/newsuk/times-components/commit/51066cc2241307e6b19c111acc528feaed55cfdf))
+
+
+
+
+
 # [1.97.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.96.0...@times-components/ts-newskit@1.97.0) (2023-09-20)
 
 
