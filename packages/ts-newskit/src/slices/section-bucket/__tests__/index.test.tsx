@@ -1,6 +1,6 @@
 import React from 'react';
 import { useBreakpointKey } from 'newskit';
-import { render } from '../../../utils/test-utils';
+import { render, fireEvent } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { SectionBucket } from '../index';
 import {
@@ -72,6 +72,13 @@ describe('Render SectionBucket Slice', () => {
 
     expect(articleStackContainer.length).toBe(4);
   });
+  test('calls the click event when the slice header button is clicked', () => {
+    const { getAllByRole } = renderComponent();
+    const links = getAllByRole('link');
+    links.map((link) => fireEvent.click(link))
+    expect(mockSliceHeaderClickHandler).toHaveBeenCalledTimes(4);
+    expect(mockSliceHeaderClickHandler).toHaveBeenCalledWith('Title bar');
+  })
 
   test('renders correct number of articles in each blocks', () => {
     const { getAllByTestId } = renderComponent();
