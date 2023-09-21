@@ -25,7 +25,7 @@ git config user.email "tools@news.co.uk"
 PR_MSG=$(git log --pretty=format:"%h" -1)
 MESSAGE=$(printf "chore: Publish %s [ci skip]" $PR_MSG)
 echo $MESSAGE
-
+npm whoami
 lerna publish from-git --conventional-commits --yes --concurrency=1 --no-cache --exact -m "$MESSAGE" --loglevel verbose
 
 # push above changes to git
