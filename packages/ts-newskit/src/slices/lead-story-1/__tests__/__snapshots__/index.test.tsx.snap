@@ -159,7 +159,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
         >
           <hr
             aria-hidden="true"
-            class="css-wd6tj"
+            class="css-l3xd1q"
             data-testid="divider"
           />
         </div>
@@ -1667,7 +1667,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-wd6tj"
+            class="css-l3xd1q"
             data-testid="divider"
           />
         </div>
@@ -2950,7 +2950,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-wd6tj"
+            class="css-l3xd1q"
             data-testid="divider"
           />
         </div>
@@ -4463,7 +4463,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-wd6tj"
+            class="css-l3xd1q"
             data-testid="divider"
           />
         </div>
