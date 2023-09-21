@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.99.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.99.0...@times-components/ts-newskit@1.99.1) (2023-09-21)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** change divider color ([#3546](https://github.com/newsuk/times-components/issues/3546)) ([6715a09](https://github.com/newsuk/times-components/commit/6715a093bc1c449eb9461b47449d2d774f3431ba))
+
+
+
+
+
+# [1.99.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.98.0...@times-components/ts-newskit@1.99.0) (2023-09-21)
+
+
+### Features
+
+* **TMRX-1522:** update captions and credits token ([#3545](https://github.com/newsuk/times-components/issues/3545)) ([e14e15a](https://github.com/newsuk/times-components/commit/e14e15af1f0200dacde0a195e427951e365bfa9a))
+
+
+
+
+
+# [1.98.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.97.0...@times-components/ts-newskit@1.98.0) (2023-09-21)
+
+
+### Features
+
+* **TMRX-1495:** update function to support addition of theme overrides ([#3524](https://github.com/newsuk/times-components/issues/3524)) ([51066cc](https://github.com/newsuk/times-components/commit/51066cc2241307e6b19c111acc528feaed55cfdf))
+
+
+
+
+
 # [1.97.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.96.0...@times-components/ts-newskit@1.97.0) (2023-09-20)
 
 

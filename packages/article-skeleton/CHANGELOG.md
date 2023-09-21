@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.113.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.1...@times-components/article-skeleton@1.113.2) (2023-09-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.0...@times-components/article-skeleton@1.113.1) (2023-09-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.113.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.112.8...@times-components/article-skeleton@1.113.0) (2023-09-21)
+
+
+### Features
+
+* **TMRX-1463:** add newsletter objects for ireland ([#3544](https://github.com/newsuk/times-components/issues/3544)) ([ffc98ca](https://github.com/newsuk/times-components/commit/ffc98cae85b39d819fe2511e2eff2d08de1b3c0b))
+
+
+
+
+
 ## [1.112.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.112.7...@times-components/article-skeleton@1.112.8) (2023-09-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton
