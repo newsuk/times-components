@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.99.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.99.0...@times-components/ts-newskit@1.99.1) (2023-09-21)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** change divider color ([#3546](https://github.com/newsuk/times-components/issues/3546)) ([6715a09](https://github.com/newsuk/times-components/commit/6715a093bc1c449eb9461b47449d2d774f3431ba))
+
+
+
+
+
 # [1.99.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.98.0...@times-components/ts-newskit@1.99.0) (2023-09-21)
 
 
