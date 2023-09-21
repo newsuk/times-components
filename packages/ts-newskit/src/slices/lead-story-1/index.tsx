@@ -23,7 +23,6 @@ import {
 } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
-import { StyledDivider } from './styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType } from '../types';
 
@@ -127,7 +126,7 @@ export const LeadStory1 = ({
         {singleArticle && (
           <BlockItem>
             <FullWidthBlock>
-              <StyledDivider
+              <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
                   marginBlockStart: !!articlesWithListItems.listData
