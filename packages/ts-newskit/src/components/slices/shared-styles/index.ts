@@ -64,7 +64,6 @@ const setInlinePaddingStart = (space: string) => ({
   paddingInlineStart: `${space}`
 });
 export const StyledSpan = styled.span<{ hasCaption: boolean }>`
-  font-style: italic;
   ${({ hasCaption }) =>
     hasCaption
       ? getSpacingCssFromTheme(setInlinePaddingStart, 'space010')
