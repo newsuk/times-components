@@ -1,35 +1,50 @@
 import React, { useState, useEffect } from 'react';
 import { ArticleProps } from '../../components/slices/article';
 import { ArticleStack } from './article-stacks';
+import { SliceHeader } from '../../components/slices/slice-header';
 import {
-  SliceHeader,
-  SliceHeaderProps
-} from '../../components/slices/slice-header';
-import { Divider, useBreakpointKey, Scroll, BreakpointKeys } from 'newskit';
+  Divider,
+  useBreakpointKey,
+  Scroll,
+  BreakpointKeys,
+  FlagSize
+} from 'newskit';
 import { CustomGridLayout } from '../shared/layouts';
 import { StyledBlock } from './styles';
 import { BlockItem } from '../shared-styles';
 import { ClickHandlerType } from '../types';
 
 export interface SectionBucketProps {
-  articleStackOne: ArticleStackProps;
-  articleStackTwo: ArticleStackProps;
-  articleStackThree: ArticleStackProps;
-  articleStackFour: ArticleStackProps;
+  articleStackOne: ArticleStackBlockProps;
+  articleStackTwo: ArticleStackBlockProps;
+  articleStackThree: ArticleStackBlockProps;
+  articleStackFour: ArticleStackBlockProps;
   clickHandler: ClickHandlerType;
+  sliceHeaderClickHandler: (title: string) => void;
 }
 
-type ArticleStackProps = {
+type SectionBucketSliceHeaderProps = {
+  title: string;
+  href?: string;
+  titleTypographyPreset?: string;
+  iconArrowSize?: string;
+  iconSize?: FlagSize;
+  padding?: string;
+};
+
+type ArticleStackBlockProps = {
   articles: ArticleProps[];
-  section: SliceHeaderProps;
+  section: SectionBucketSliceHeaderProps;
   clickHandler: ClickHandlerType;
+  sliceHeaderClickHandler: (title: string) => void;
 };
 
 const ArticleStackBlock = ({
   articles,
   section,
-  clickHandler
-}: ArticleStackProps) => (
+  clickHandler,
+  sliceHeaderClickHandler
+}: ArticleStackBlockProps) => (
   <>
     <StyledBlock data-testid="article-block">
       <SliceHeader
@@ -38,6 +53,7 @@ const ArticleStackBlock = ({
         iconArrowSize="iconSize010"
         iconSize="small"
         padding="space040"
+        sliceHeaderClickHandler={sliceHeaderClickHandler}
       />
       <ArticleStack articles={articles} clickHandler={clickHandler} />
     </StyledBlock>
@@ -50,7 +66,8 @@ export const SectionBucket = ({
   articleStackTwo,
   articleStackThree,
   articleStackFour,
-  clickHandler
+  clickHandler,
+  sliceHeaderClickHandler
 }: SectionBucketProps) => {
   const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
     null
@@ -79,7 +96,12 @@ export const SectionBucket = ({
   const ArticleStackBlocks = (
     <CustomGridLayout>
       {articleStacksArray.map((stack, index) => (
-        <ArticleStackBlock key={index} {...stack} clickHandler={clickHandler} />
+        <ArticleStackBlock
+          key={index}
+          {...stack}
+          clickHandler={clickHandler}
+          sliceHeaderClickHandler={sliceHeaderClickHandler}
+        />
       ))}
     </CustomGridLayout>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useBreakpointKey } from 'newskit';
-import { render } from '../../../utils/test-utils';
+import { render, fireEvent } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { SectionBucket } from '../index';
 import {
@@ -16,18 +16,33 @@ jest.mock('newskit', () => ({
 }));
 
 const mockClickHandler = jest.fn();
+const mockSliceHeaderClickHandler = jest.fn();
 
 const renderComponent = () =>
   render(
     <SectionBucket
-      articleStackOne={{ ...articleStackOne, clickHandler: mockClickHandler }}
-      articleStackTwo={{ ...articleStackTwo, clickHandler: mockClickHandler }}
+      articleStackOne={{
+        ...articleStackOne,
+        clickHandler: mockClickHandler,
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler
+      }}
+      articleStackTwo={{
+        ...articleStackTwo,
+        clickHandler: mockClickHandler,
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler
+      }}
       articleStackThree={{
         ...articleStackThree,
-        clickHandler: mockClickHandler
+        clickHandler: mockClickHandler,
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler
       }}
-      articleStackFour={{ ...articleStackFour, clickHandler: mockClickHandler }}
+      articleStackFour={{
+        ...articleStackFour,
+        clickHandler: mockClickHandler,
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler
+      }}
       clickHandler={mockClickHandler}
+      sliceHeaderClickHandler={mockSliceHeaderClickHandler}
     />
   );
 
@@ -56,6 +71,13 @@ describe('Render SectionBucket Slice', () => {
     const articleStackContainer = getAllByTestId('article-block');
 
     expect(articleStackContainer.length).toBe(4);
+  });
+  test('calls the click event when the slice header button is clicked', () => {
+    const { getAllByRole } = renderComponent();
+    const links = getAllByRole('link');
+    links.map(link => fireEvent.click(link));
+    expect(mockSliceHeaderClickHandler).toHaveBeenCalledTimes(4);
+    expect(mockSliceHeaderClickHandler).toHaveBeenCalledWith('Title bar');
   });
 
   test('renders correct number of articles in each blocks', () => {
