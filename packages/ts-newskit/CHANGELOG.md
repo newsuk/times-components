@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.101.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.100.0...@times-components/ts-newskit@1.101.0) (2023-09-28)
+
+
+### Features
+
+* **TMPZ-167-168:** Winning/Losing Screen UI ([#3558](https://github.com/newsuk/times-components/issues/3558)) ([e1f4c47](https://github.com/newsuk/times-components/commit/e1f4c47aa57a674edc9718a0d544153f80788c48))
+
+
+
+
+
 # [1.100.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.99.3...@times-components/ts-newskit@1.100.0) (2023-09-28)
 
 
