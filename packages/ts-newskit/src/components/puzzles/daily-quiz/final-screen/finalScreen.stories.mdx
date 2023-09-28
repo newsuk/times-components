@@ -1,0 +1,46 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { TCThemeProvider } from '../../../../utils/index';
+import { FinalScreen } from './index';
+
+<Meta
+  title="Newskit Components/Puzzles/FinalScreen"
+  component={FinalScreen}
+/>
+
+# Feedback component
+The `FinalScreen` component displays the winning/loosing screen for daily quiz.
+
+
+## Props
+<Props of={FinalScreen} />
+
+## Code Example
+`<FinalScreen 
+       message: "Well done, you’re a genius!"
+       hints: 2
+       ans: "Cape verde"
+       status: "Win"
+ />`
+
+An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the FinalScreen component.
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const FinalScreenStory = ({ message, hints, ans, status }) => (
+  <TCThemeProvider>
+    <FinalScreen {...{ message, hints, ans, status }}/>
+  </TCThemeProvider>
+);
+
+<Story name="FinalScreen" args={{
+    message: "Well done, you’re a <strong>genius</strong>!",
+    hints: 2,
+    ans: "Cape Verde",
+    status: "Win"
+}}
+argTypes={{
+    status: { control: "select", options: ["Win", "Lose"] }
+}}>
+  {FinalScreenStory.bind({})}
+</Story>

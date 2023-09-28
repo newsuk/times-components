@@ -29,6 +29,8 @@ import WordPuzzlesIcon from './WordPuzzles';
 import NumbersAndLogicIcon from './NumbersAndLogic';
 import QuizzesAndTeasersIcon from './QuizzesAndTeasers';
 import BoardAndCardGamesIcon from './BoardAndCardGames';
+import CrossIcon from './CrossIcon';
+import DoneIcon from './DoneIcon';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -182,3 +184,12 @@ export const NewsKitBoardAndCardGamesIcon = customToNewsKitIcon(
   'NewsKitBoardAndCardGamesIcon',
   props => <BoardAndCardGamesIcon {...props} />
 );
+
+export const NewsKitCrossIcon = customToNewsKitIcon(
+  'NewsKitCrossIcon',
+  props => <CrossIcon {...props} />
+);
+
+export const NewsKitDoneIcon = customToNewsKitIcon('NewsKitDoneIcon', props => (
+  <DoneIcon {...props} />
+));

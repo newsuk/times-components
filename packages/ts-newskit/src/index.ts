@@ -36,6 +36,8 @@ export { HeroBanner } from './components/puzzles/hero-banner';
 export {
   TeaserCardsContainer
 } from './components/puzzles/teaserCards-container';
+export { Hint } from './components/puzzles/daily-quiz/hint';
+export { FinalScreen } from './components/puzzles/daily-quiz/final-screen';
 export { CardsContainer } from './components/puzzles/cards-container';
 export { FreeTrial } from './components/puzzles/free-trial';
 export { PersonalStats } from './components/puzzles/personal-stats';
