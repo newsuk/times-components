@@ -37,9 +37,9 @@ describe('FinalScreen Component', () => {
     expect(getByText(`You did it with ${hints} hints.`)).toBeInTheDocument();
   });
 
-  it('should display "You didn\'t get it this time." for "Loose" status', () => {
+  it('should display "You didn\'t get it this time." for "Lose" status', () => {
     const { getByText } = render(
-      <FinalScreen message={message} hints={hints} ans={ans} status="Loose" />
+      <FinalScreen message={message} hints={hints} ans={ans} status="Lose" />
     );
     expect(getByText("You didn't get it this time.")).toBeInTheDocument();
   });

@@ -9,7 +9,7 @@ export interface FinalScreenProps {
   message: string;
   hints: number;
   ans: string;
-  status: 'Win' | 'Loose' | string;
+  status: 'Win' | 'Lose' | string;
 }
 
 export const FinalScreen = ({
@@ -41,7 +41,7 @@ export const FinalScreen = ({
       >
         {ans}
       </StyledTextBlock>
-      {status === 'Loose' ? (
+      {status === 'Lose' ? (
         <StyledTextBlock
           as="p"
           typographyPreset="utilityBody020"
