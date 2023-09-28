@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.100.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.99.3...@times-components/ts-newskit@1.100.0) (2023-09-28)
+
+
+### Features
+
+* **TMPZ-165:** Hint trigger and hints display UI ([#3555](https://github.com/newsuk/times-components/issues/3555)) ([a4bc317](https://github.com/newsuk/times-components/commit/a4bc317835597debcb18d7435194f04578d2208a))
+
+
+
+
+
 ## [1.99.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.99.2...@times-components/ts-newskit@1.99.3) (2023-09-22)
 
 **Note:** Version bump only for package @times-components/ts-newskit
