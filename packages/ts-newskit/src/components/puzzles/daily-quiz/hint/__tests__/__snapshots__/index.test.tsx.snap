@@ -11,7 +11,7 @@ exports[`Hint should render the Hint component 1`] = `
       type="button"
     >
       <p
-        class="css-qddcvn"
+        class="css-1ynvxmq"
       >
         Give me a hint
       </p>

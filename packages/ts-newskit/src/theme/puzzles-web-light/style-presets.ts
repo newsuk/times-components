@@ -125,5 +125,13 @@ stylePresets.HintBtn = {
     borderWidth: '{{borders.borderWidthDefault}}',
     borderColor: '{{colors.interactiveLink020}}',
     backgroundColor: '{{colors.transparent}}'
+  },
+  disabled: {
+    borderRadius: '{{borders.borderRadiusRounded010}}',
+    color: '{{colors.neutral060}}',
+    borderStyle: 'solid',
+    borderWidth: '{{borders.borderWidthDefault}}',
+    borderColor: '{{colors.neutral020}}',
+    backgroundColor: '{{colors.neutral020}}'
   }
 };

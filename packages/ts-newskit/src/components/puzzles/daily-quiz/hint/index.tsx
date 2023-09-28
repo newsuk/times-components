@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
-import { Button, Block } from 'newskit';
-import { HintLink, StyledTextBlock } from './styles';
+import { Button, Block, TextBlock } from 'newskit';
+import { StyledTextBlock } from './styles';
 import { Hints } from './fixtures/data.json';
 
 export interface HintProps {
@@ -38,13 +38,14 @@ export const Hint: FC<HintProps> = ({ title }) => {
           },
           height: '48px'
         }}
+        disabled={hintIndex >= totalHints}
       >
-        <HintLink
+        <TextBlock
           stylePreset="interactiveLink030"
           typographyPreset="utilityButton020"
         >
           {title ? title : 'Give me a hint'}
-        </HintLink>
+        </TextBlock>
       </Button>
       {hints.map((hint, index) => (
         <React.Fragment key={index}>
