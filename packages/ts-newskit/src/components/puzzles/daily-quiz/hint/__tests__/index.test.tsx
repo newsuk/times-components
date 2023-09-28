@@ -1,6 +1,6 @@
 import React from 'react';
 import { Hint } from '../index';
-import { render, fireEvent } from '../../../../utils/test-utils';
+import { render, fireEvent } from '../../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 
 describe('Hint', () => {
