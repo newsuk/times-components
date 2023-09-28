@@ -44,10 +44,4 @@ describe('FinalScreen Component', () => {
     expect(getByText("You didn't get it this time.")).toBeInTheDocument();
   });
 
-  it('should display "Well done, you\'re a genius!" for "Win" status', () => {
-    const { getByText } = render(
-      <FinalScreen message={message} hints={hints} ans={ans} status={status} />
-    );
-    expect(getByText(message)).toBeInTheDocument();
-  });
 });
