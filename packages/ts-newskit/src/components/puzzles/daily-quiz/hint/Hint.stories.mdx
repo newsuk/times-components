@@ -1,0 +1,41 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { NewsKitProvider } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../../theme';
+import { Hint } from './index';
+
+<Meta
+  title="Newskit Components/Puzzles/Hint"
+  component={Hint}
+/>
+
+# Hint component
+The `Hint` component is used to display a list of hints for the given question.
+
+## Props
+<Props of={Hint} />
+
+### `title` (optional)
+The title of the hint button. This prop is optional.
+
+## Code Example
+`<Hint
+  title="Give me a hint"
+/>
+`
+
+An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the Hint component.
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const HintStory = ({ title }) => (
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+    <Hint {...{ title }} />
+  </NewsKitProvider>
+);
+
+<Story name="Hint"  args={{
+    title: "Give me a hint",
+  }}>
+  {HintStory.bind({})}
+</Story>
