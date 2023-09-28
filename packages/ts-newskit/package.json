@@ -53,7 +53,6 @@
     "@emotion/react": "11.11.0",
     "@emotion/styled": "11.11.0",
     "@newskit-themes/the-times": "0.2.0",
-    "@emotion-icons/material": "3.14.0",
     "isomorphic-unfetch": "3.1.0",
     "lodash.merge": "4.6.2",
     "newskit": "7.2.0",

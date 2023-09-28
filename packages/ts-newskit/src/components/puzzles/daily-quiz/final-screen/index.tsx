@@ -1,9 +1,7 @@
 import React from 'react';
-import { Block, toNewsKitIcon } from 'newskit';
+import { Block } from 'newskit';
 import { StyledTextBlock, StyledBlock } from './styles';
-import { DoneOutline } from '@emotion-icons/material/DoneOutline';
-import { NewsKitCrossIcon } from '../../../../assets';
-const IconDoneOutline = toNewsKitIcon(DoneOutline);
+import { NewsKitCrossIcon, NewsKitDoneIcon } from '../../../../assets';
 
 export interface FinalScreenProps {
   message: string;
@@ -24,13 +22,7 @@ export const FinalScreen = ({
   return (
     <Block>
       <StyledBlock>
-        {status === 'Win' ? (
-          <IconDoneOutline
-            overrides={{ stylePreset: 'inkPositive', size: 'iconSize020' }}
-          />
-        ) : (
-          <NewsKitCrossIcon />
-        )}
+        {status === 'Win' ? <NewsKitDoneIcon /> : <NewsKitCrossIcon />}
       </StyledBlock>
       <StyledTextBlock
         as="h3"

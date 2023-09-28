@@ -43,5 +43,4 @@ describe('FinalScreen Component', () => {
     );
     expect(getByText("You didn't get it this time.")).toBeInTheDocument();
   });
-
 });
