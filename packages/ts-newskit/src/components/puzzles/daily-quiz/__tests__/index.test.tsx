@@ -37,5 +37,4 @@ describe('Hint', () => {
     fireEvent.click(getByText('Give me a hint'));
     expect(getByText('Hint 1 of 5')).toBeInTheDocument();
   });
-
 });
