@@ -116,3 +116,14 @@ stylePresets.freeTrialShadowBtn = {
     color: '{{colors.inkContrast}}'
   }
 };
+
+stylePresets.HintBtn = {
+  base: {
+    color: '{{colors.interactiveLink030}}',
+    borderRadius: '{{borders.borderRadiusRounded010}}',
+    borderStyle: 'solid',
+    borderWidth: '{{borders.borderWidthDefault}}',
+    borderColor: '{{colors.interactiveLink020}}',
+    backgroundColor: '{{colors.transparent}}'
+  }
+};
