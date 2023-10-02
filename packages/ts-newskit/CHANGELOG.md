@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.102.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.101.0...@times-components/ts-newskit@1.102.0) (2023-10-02)
+
+
+### Features
+
+* **TMRX-1547:** Add tracking to secondary navigation ([#3559](https://github.com/newsuk/times-components/issues/3559)) ([3d256fd](https://github.com/newsuk/times-components/commit/3d256fdd5caa2322e4a4f4a26eb07b0cb178d005))
+
+
+
+
+
 # [1.101.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.100.0...@times-components/ts-newskit@1.101.0) (2023-09-28)
 
 
