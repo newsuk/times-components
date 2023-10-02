@@ -5,7 +5,8 @@ import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 export const NavItems: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-}> = ({ options, data }) => {
+  clickHandler: (title: string) => void;
+}> = ({ options, data, clickHandler }) => {
   const { handleSelect, isSelected } = options;
 
   return (
@@ -21,7 +22,10 @@ export const NavItems: React.FC<{
           }}
           href={url}
           id={`vertical-${slug}`}
-          onClick={() => handleSelect(slug)}
+          onClick={() => {
+            handleSelect(slug)
+            clickHandler(title)
+          }}
           key={slug}
           isSelected={isSelected === title}
         >

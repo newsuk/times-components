@@ -6,8 +6,14 @@ export const NavItems: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
   hasMenuItem: number;
-}> = ({ options, data, hasMenuItem }) => {
+  clickHandler: (title: string) => void;
+}> = ({ options, data, hasMenuItem, clickHandler }) => {
   const { handleSelect, isSelected } = options;
+
+  const handleClick = (slug: string, title: string) => {
+    handleSelect(slug)
+    clickHandler(title)
+  }
 
   return (
     <>
@@ -20,7 +26,7 @@ export const NavItems: React.FC<{
           }}
           href={url}
           key={url}
-          onClick={() => handleSelect(slug)}
+          onClick={() => handleClick(slug, title)}
           selected={isSelected === title}
         >
           {title}
