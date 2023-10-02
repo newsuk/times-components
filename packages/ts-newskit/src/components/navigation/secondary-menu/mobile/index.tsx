@@ -51,7 +51,7 @@ export const SecondaryNavMobile: React.FC<{
       />
       {isExpanded ? (
         <NavItemsMobileContainer $height={navHeight} ref={navRef}>
-          <NavItems data={data} options={options} clickHandler={clickHandler}/>
+          <NavItems data={data} options={options} clickHandler={clickHandler} />
         </NavItemsMobileContainer>
       ) : null}
     </Menu>

@@ -24,7 +24,7 @@ export const CreateMoreMenu: React.FC<{
             onClick={() => {
               handleSelect(title);
               setIsExpanded(!isExpanded);
-              clickHandler(title)
+              clickHandler(title);
             }}
             selected={isSelected === title}
           >

@@ -17,6 +17,9 @@ const options = {
   isExpanded: false,
   isSelected: 'Home'
 };
+
+const mockClickHandler = jest.fn();
+
 describe('Secondary Menu Desktop', () => {
   afterEach(() => {
     jest.clearAllMocks();
@@ -25,27 +28,43 @@ describe('Secondary Menu Desktop', () => {
 
   it('should render snapshot', () => {
     const { asFragment } = render(
-      <SecondaryNavDesktop data={mainMenuItems} options={options} />
+      <SecondaryNavDesktop
+        data={mainMenuItems}
+        options={options}
+        clickHandler={mockClickHandler}
+      />
     );
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render the menu item', () => {
     const { getByText } = render(
-      <SecondaryNavDesktop data={mainMenuItems} options={options} />
+      <SecondaryNavDesktop
+        data={mainMenuItems}
+        options={options}
+        clickHandler={mockClickHandler}
+      />
     );
     const title = getByText('Home');
     expect(title).toBeInTheDocument();
   });
   it('items should have ancher with href', () => {
     const { getAllByTestId } = render(
-      <SecondaryNavDesktop data={mainMenuItems} options={options} />
+      <SecondaryNavDesktop
+        data={mainMenuItems}
+        options={options}
+        clickHandler={mockClickHandler}
+      />
     );
     const title = getAllByTestId('buttonLink')[0];
     expect(title).toHaveAttribute('href', '/home');
   });
   it('should call handleSelect when clicked', () => {
     const { getAllByTestId } = render(
-      <SecondaryNavDesktop data={mainMenuItems} options={options} />
+      <SecondaryNavDesktop
+        data={mainMenuItems}
+        options={options}
+        clickHandler={mockClickHandler}
+      />
     );
     const Anchor = getAllByTestId('buttonLink')[0];
     fireEvent.click(Anchor);
@@ -54,7 +73,11 @@ describe('Secondary Menu Desktop', () => {
 
   it('should render navitems', () => {
     const { getAllByRole } = render(
-      <SecondaryNavDesktop data={mainMenuItems} options={options} />
+      <SecondaryNavDesktop
+        data={mainMenuItems}
+        options={options}
+        clickHandler={mockClickHandler}
+      />
     );
     const list = getAllByRole('listitem');
     expect(list.length).toEqual(9);
@@ -63,7 +86,11 @@ describe('Secondary Menu Desktop', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
 
     const { getByTestId } = render(
-      <SecondaryNavDesktop data={mainMenuItems} options={options} />
+      <SecondaryNavDesktop
+        data={mainMenuItems}
+        options={options}
+        clickHandler={mockClickHandler}
+      />
     );
     const hr = getByTestId('divider');
     expect(hr).toHaveStyle('width: 1140px');

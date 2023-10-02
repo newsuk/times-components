@@ -77,7 +77,12 @@ export const CreateMenu: React.FC<{
       ref={contanierRef}
     >
       <Wrapper ref={navListRef}>
-        <NavItems data={data} options={options} hasMenuItem={hasMenuItem} clickHandler={clickHandler} />
+        <NavItems
+          data={data}
+          options={options}
+          hasMenuItem={hasMenuItem}
+          clickHandler={clickHandler}
+        />
       </Wrapper>
       {moreMenuItemsLength > 0 && (
         <StyledMenuSub

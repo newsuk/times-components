@@ -13,7 +13,7 @@ export const SecondaryNavDesktop: React.FC<{
 
   return (
     <Fragment>
-      <CreateMenu data={data} options={options} clickHandler={clickHandler}/>
+      <CreateMenu data={data} options={options} clickHandler={clickHandler} />
       <MenuDivider breakpointKey={breakpointKey} />
     </Fragment>
   );

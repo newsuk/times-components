@@ -15,6 +15,8 @@ jest.mock('newskit', () => ({
   useBreakpointKey: jest.fn().mockReturnValue('sm')
 }));
 
+const mockClickHandler = jest.fn();
+
 describe('Secondary Menu', () => {
   afterEach(() => {
     jest.clearAllMocks();
@@ -30,6 +32,7 @@ describe('Secondary Menu', () => {
         onClick={() => {
           // noop
         }}
+        clickHandler={mockClickHandler}
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -44,6 +47,7 @@ describe('Secondary Menu', () => {
         onClick={() => {
           // noop
         }}
+        clickHandler={mockClickHandler}
       />
     );
 
@@ -68,6 +72,7 @@ describe('Secondary Menu', () => {
         onClick={() => {
           // noop
         }}
+        clickHandler={mockClickHandler}
       />
     );
 
@@ -92,6 +97,7 @@ describe('Secondary Menu', () => {
         onClick={() => {
           // noop
         }}
+        clickHandler={mockClickHandler}
       />
     );
     const SeeAllButton = getByText('See all');

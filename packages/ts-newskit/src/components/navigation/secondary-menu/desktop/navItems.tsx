@@ -11,9 +11,9 @@ export const NavItems: React.FC<{
   const { handleSelect, isSelected } = options;
 
   const handleClick = (slug: string, title: string) => {
-    handleSelect(slug)
-    clickHandler(title)
-  }
+    handleSelect(slug);
+    clickHandler(title);
+  };
 
   return (
     <>

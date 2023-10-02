@@ -64,7 +64,11 @@ export const SecondaryNavigation = ({
         />
       </Visible>
       <Visible md lg xl>
-        <SecondaryNavDesktop data={data} options={options} clickHandler={clickHandler}/>
+        <SecondaryNavDesktop
+          data={data}
+          options={options}
+          clickHandler={clickHandler}
+        />
       </Visible>
     </SecondaryNavContainer>
   );
