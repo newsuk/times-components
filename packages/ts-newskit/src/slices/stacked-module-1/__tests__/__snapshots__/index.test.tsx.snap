@@ -3,7 +3,7 @@
 exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1frprgo"
+    class="css-6buzpa"
   >
     <div
       class="css-114l5ed"
@@ -800,7 +800,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
 exports[`Render StackModule 1 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
 <DocumentFragment>
   <div
-    class="css-1frprgo"
+    class="css-6buzpa"
   >
     <div
       class="css-114l5ed"
@@ -1595,7 +1595,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
 exports[`Render StackModule 1 Slice modifies articles correctly when breakpointKey is "sm" 1`] = `
 <DocumentFragment>
   <div
-    class="css-1frprgo"
+    class="css-6buzpa"
   >
     <div
       class="css-114l5ed"
@@ -2406,7 +2406,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
 exports[`Render StackModule 1 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
 <DocumentFragment>
   <div
-    class="css-1frprgo"
+    class="css-6buzpa"
   >
     <div
       class="css-114l5ed"
