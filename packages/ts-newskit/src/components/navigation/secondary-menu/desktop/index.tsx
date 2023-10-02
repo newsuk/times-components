@@ -7,7 +7,6 @@ export const SecondaryNavDesktop: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
 }> = ({ options, data }) => {
-
   return (
     <Fragment>
       <CreateMenu data={data} options={options} />

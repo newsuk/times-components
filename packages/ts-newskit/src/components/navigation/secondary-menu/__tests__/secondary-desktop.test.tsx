@@ -5,16 +5,13 @@ import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavDesktop } from '../desktop';
 import { cleanup, fireEvent } from '@testing-library/react';
 
-jest.mock('newskit', () => ({
-  ...jest.requireActual('newskit'),
-}));
-
 const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),
   isExpanded: false,
   isSelected: 'Home'
 };
+
 describe('Secondary Menu Desktop', () => {
   afterEach(() => {
     jest.clearAllMocks();
@@ -49,7 +46,6 @@ describe('Secondary Menu Desktop', () => {
     fireEvent.click(Anchor);
     expect(options.handleSelect).toHaveBeenCalled();
   });
-
   it('should render navitems', () => {
     const { getAllByRole } = render(
       <SecondaryNavDesktop data={mainMenuItems} options={options} />
