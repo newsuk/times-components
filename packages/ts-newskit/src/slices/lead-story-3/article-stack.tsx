@@ -41,7 +41,7 @@ export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
           if (index === 0) {
             return (
               <>
-                <Block marginBlock="space040">
+                <Block key={modifiedArticle.id} marginBlock="space040">
                   <Visible xs sm>
                     <LeadArticle
                       article={{ ...modifiedArticle }}
@@ -60,7 +60,7 @@ export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
           }
 
           return (
-            <>
+            <React.Fragment key={modifiedArticle.id}>
               <FullWidthBlock>
                 <Divider
                   overrides={{
@@ -88,7 +88,7 @@ export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
                   />
                 </Visible>
               </Block>
-            </>
+            </React.Fragment>
           );
         })}
     </BlockNoTopMargin>

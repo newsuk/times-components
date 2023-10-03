@@ -136,14 +136,12 @@ export const LeadStory2 = ({
         <BlockItem marginBlockStart="space040">
           <ComposedArticleStack
             articles={modifiedArticles}
-            breakpoint={currentBreakpoint}
             clickHandler={clickHandler}
           />
         </BlockItem>
       ) : (
         <ArticleStackLeadStory
           modifiedArticles={modifiedArticles}
-          breakpoint={currentBreakpoint}
           clickHandler={clickHandler}
         />
       )}

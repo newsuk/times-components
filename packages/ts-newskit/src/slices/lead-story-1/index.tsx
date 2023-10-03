@@ -212,7 +212,7 @@ export const LeadStory1 = ({
           </Visible>
           <ArticleStackSmall
             articles={smallArticles}
-            options={{
+            articleOptions={{
               xs: {
                 isFullWidth: true,
                 hasTopBorder: true,
