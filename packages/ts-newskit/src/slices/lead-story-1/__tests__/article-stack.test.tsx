@@ -18,7 +18,7 @@ const mockClickHandler = jest.fn();
 const threeArticles = [articles[1], articles[2], articles[3]];
 
 const renderComponentLarge = (breakpoint?: BreakpointKeys) => {
-  const getMaxWidth = (breakpoint?: BreakpointKeys) => {
+  const getMaxWidth = () => {
     switch (breakpoint) {
       case 'lg':
         return '1024px';
@@ -30,7 +30,7 @@ const renderComponentLarge = (breakpoint?: BreakpointKeys) => {
     }
   };
   return render(
-    <div style={{ maxWidth: getMaxWidth(breakpoint) }}>
+    <div style={{ maxWidth: getMaxWidth() }}>
       <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />
     </div>
   );
@@ -71,7 +71,10 @@ describe('Render Lead Story 1 Slice', () => {
     renderComponentLarge('md');
     const articleContainer = screen.queryAllByTestId('article-container')[1];
     const articleItem1 = articleContainer.firstElementChild;
-    expect(articleItem1?.querySelectorAll("[data-testid=divider]").length).toBe(2)
+    articleItem1 &&
+      expect(
+        articleItem1.querySelectorAll('[data-testid=divider]').length
+      ).toBe(2);
   });
 
   test("articleTopBorder renders correctly at 'lg' breakpoint", () => {
