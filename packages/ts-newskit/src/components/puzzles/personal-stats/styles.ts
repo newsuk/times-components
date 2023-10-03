@@ -9,7 +9,7 @@ import {
 import { NewsKitWaveBg } from '../../../assets';
 
 export const PersonalStatisticsContainer = styled(Stack)<StackProps>`
-  ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
+  ${getColorCssFromTheme('backgroundColor', 'sectionBrand040')};
 `;
 
 export const PersonalStatisticsCard = styled(GridLayout)`
@@ -17,5 +17,5 @@ export const PersonalStatisticsCard = styled(GridLayout)`
 `;
 
 export const StyledNewskitWaveBg = styled(NewsKitWaveBg)`
-  ${getColorCssFromTheme('color', 'puzzles040')};
+  ${getColorCssFromTheme('color', 'sectionBrand040')};
 `;

@@ -25,6 +25,7 @@ describe('Secondary Menu', () => {
         onClick={() => {
           // noop
         }}
+        clickHandler={jest.fn()}
       />
     );
     expect(asFragment()).toMatchSnapshot();

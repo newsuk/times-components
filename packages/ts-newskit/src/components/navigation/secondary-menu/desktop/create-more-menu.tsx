@@ -7,7 +7,8 @@ export const CreateMoreMenu: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
   moreMenuItemsLength: number;
-}> = ({ options, data, moreMenuItemsLength }) => {
+  clickHandler: (title: string) => void;
+}> = ({ options, data, moreMenuItemsLength, clickHandler }) => {
   const { handleSelect, isSelected, isExpanded, setIsExpanded } = options;
 
   return (
@@ -23,6 +24,7 @@ export const CreateMoreMenu: React.FC<{
             onClick={() => {
               handleSelect(title);
               setIsExpanded(!isExpanded);
+              clickHandler(title);
             }}
             selected={isSelected === title}
           >

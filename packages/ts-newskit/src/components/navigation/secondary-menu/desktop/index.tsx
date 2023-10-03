@@ -6,10 +6,11 @@ import { CreateMenu } from './create-menu';
 export const SecondaryNavDesktop: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-}> = ({ options, data }) => {
+  clickHandler: (title: string) => void;
+}> = ({ options, data, clickHandler }) => {
   return (
     <Fragment>
-      <CreateMenu data={data} options={options} />
+      <CreateMenu data={data} options={options} clickHandler={clickHandler} />
       <MenuDivider />
     </Fragment>
   );

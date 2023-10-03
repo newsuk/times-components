@@ -37,9 +37,7 @@ export const ContentBucket1 = ({
   articles,
   clickHandler
 }: ContentBucket1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
-    null
-  );
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xl');
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -47,10 +45,6 @@ export const ContentBucket1 = ({
     },
     [breakpointKey]
   );
-
-  if (!currentBreakpoint) {
-    return null;
-  }
 
   const isMobile = ['xs', 'sm'].includes(currentBreakpoint);
   const modifiedLeadArticle = {
