@@ -69,9 +69,7 @@ export const SectionBucket = ({
   clickHandler,
   sliceHeaderClickHandler
 }: SectionBucketProps) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>(
-    'xl'
-  );
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xl');
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {

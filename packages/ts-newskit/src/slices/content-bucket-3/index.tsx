@@ -39,9 +39,7 @@ export const ContentBucket3 = ({
   articles,
   clickHandler
 }: ContentBucket3Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>(
-    'xl'
-  );
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xl');
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {

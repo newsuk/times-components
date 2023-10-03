@@ -37,7 +37,6 @@ describe('Render Content Bucket 2 Slice', () => {
     const { asFragment } = await renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
-
 });
 
 describe('Content Bucket 2 Articles list above `md` breakpoint', () => {

@@ -28,7 +28,6 @@ describe('Render Content Bucket 3 Slice', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-
   test('Slice matches snapshot for mobile', () => {
     (useBreakpointKey as any).mockReturnValue('sm');
     const { asFragment } = renderComponent();
