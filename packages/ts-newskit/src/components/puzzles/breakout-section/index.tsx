@@ -9,7 +9,6 @@ import {
   StyledSudokuIconD4
 } from './styles';
 import { StyledNewskitWaveBg } from '../personal-stats/styles';
-import { breakoutItems } from './fixtures/breakoutItems.json';
 
 interface BreakoutSectionItem {
   title: string;
@@ -17,12 +16,10 @@ interface BreakoutSectionItem {
 }
 
 interface BreakoutSectionProps {
-  items?: BreakoutSectionItem[];
+  items: BreakoutSectionItem[];
 }
 
-export const BreakoutSection: FC<BreakoutSectionProps> = ({
-  items = breakoutItems
-}) => {
+export const BreakoutSection: FC<BreakoutSectionProps> = ({ items }) => {
   return (
     <Block as="section">
       <BreakoutSectionContainer
