@@ -36,9 +36,7 @@ export const LeadStory2 = ({
   horizontalArticles,
   clickHandler
 }: LeadStory2Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
-    null
-  );
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xl');
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -46,10 +44,6 @@ export const LeadStory2 = ({
     },
     [breakpointKey]
   );
-
-  if (!currentBreakpoint) {
-    return null;
-  }
 
   const modifedArticles =
     currentBreakpoint === 'xl'
