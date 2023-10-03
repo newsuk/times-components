@@ -51,6 +51,12 @@ export const ComposedArticleStack = ({
         />
       </Visible>
       <Visible md>
+        <Divider
+          overrides={{
+            stylePreset: 'dashedDivider',
+            marginBlock: 'space040'
+          }}
+        />
         <Block marginBlockEnd={{ md: 'space040' }}>
           <ArticleStackSmall
             articles={secondTwoArticles}
