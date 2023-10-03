@@ -26,10 +26,6 @@ export const ContentBucket2 = ({
     [breakpointKey]
   );
 
-  if (!currentBreakpoint) {
-    return null;
-  }
-
   const isMob = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
 
   return (

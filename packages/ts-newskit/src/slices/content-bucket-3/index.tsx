@@ -50,10 +50,6 @@ export const ContentBucket3 = ({
     [breakpointKey]
   );
 
-  if (!currentBreakpoint) {
-    return null;
-  }
-
   const isMobile = ['xs', 'sm'].includes(currentBreakpoint);
   const isMedium = currentBreakpoint === 'md';
   const isLarge = ['lg', 'xl'].includes(currentBreakpoint);
