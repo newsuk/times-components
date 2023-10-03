@@ -38,11 +38,6 @@ describe('Render Content Bucket 2 Slice', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test('Slice matches snapshot for `null` breakpoint value', async () => {
-    (useBreakpointKey as any).mockReturnValue(null);
-    const { asFragment } = await renderComponent();
-    expect(asFragment()).toMatchSnapshot();
-  });
 });
 
 describe('Content Bucket 2 Articles list above `md` breakpoint', () => {

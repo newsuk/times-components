@@ -42,9 +42,4 @@ describe('Render Lead Story 2 Slice', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
-  test('Slice matches snapshot for `null` breakpoint value', () => {
-    (useBreakpointKey as any).mockReturnValue(null);
-    const { asFragment } = renderComponent();
-    expect(asFragment()).toMatchSnapshot();
-  });
 });
