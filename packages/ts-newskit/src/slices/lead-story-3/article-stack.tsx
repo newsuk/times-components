@@ -1,65 +1,92 @@
-import { Block, Divider, BreakpointKeys } from 'newskit';
+import { Block, Divider, Visible } from 'newskit';
 import React from 'react';
 import { BlockNoTopMargin } from '../lead-story-1/styles';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
+import { ClickHandlerType } from '../types';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
-import { ClickHandlerType } from '../types';
 
 export interface ArticlesProps {
   leadArticles: LeadArticleProps[];
-  breakpointKey: BreakpointKeys;
   clickHandler: ClickHandlerType;
-  screenXsAndSm: boolean;
 }
 
-export const ArticleStack = ({
-  leadArticles,
-  breakpointKey,
-  clickHandler,
-  screenXsAndSm
-}: ArticlesProps) => {
+export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
   return (
     <BlockNoTopMargin>
       {leadArticles &&
-        leadArticles.map((modifiedArticle, index) => {
-          const articlesWithModifiedTypography =
+        leadArticles.map((article, index) => {
+          const modifiedArticle =
             index === 0
               ? {
-                  ...modifiedArticle,
-                  hideImage: !screenXsAndSm,
+                  ...article,
                   imageTop: true,
                   textBlockMarginBlockStart: 'space050',
-                  headlineTypographyPreset:
-                    breakpointKey === 'xs'
-                      ? 'editorialHeadline040'
-                      : breakpointKey === 'sm'
-                        ? 'editorialHeadline050'
-                        : 'editorialHeadline060'
+                  headlineTypographyPreset: {
+                    xs: 'editorialHeadline040',
+                    sm: 'editorialHeadline050',
+                    md: 'editorialHeadline060'
+                  },
+                  hasTopBorder: false
                 }
               : {
-                  ...modifiedArticle,
+                  ...article,
                   headlineTypographyPreset: 'editorialHeadline020',
-                  hideImage: true
+                  hideImage: true,
+                  hasTopBorder: false
                 };
+
+          if (index === 0) {
+            return (
+              <>
+                <Block marginBlock="space040">
+                  <Visible xs sm>
+                    <LeadArticle
+                      article={{ ...modifiedArticle }}
+                      clickHandler={clickHandler}
+                    />
+                  </Visible>
+                  <Visible md lg xl>
+                    <LeadArticle
+                      article={{ ...modifiedArticle, hideImage: true }}
+                      clickHandler={clickHandler}
+                    />
+                  </Visible>
+                </Block>
+              </>
+            );
+          }
+
           return (
             <>
-              {index !== 0 && (
-                <FullWidthBlock>
-                  <Divider
-                    overrides={{
-                      stylePreset: 'dashedDivider'
-                    }}
-                  />
-                </FullWidthBlock>
-              )}
-              <Block marginBlock="space040">
-                <LeadArticle
-                  article={articlesWithModifiedTypography}
-                  clickHandler={clickHandler}
+              <FullWidthBlock>
+                <Divider
+                  overrides={{
+                    stylePreset: 'dashedDivider'
+                  }}
                 />
+              </FullWidthBlock>
+              <Block marginBlock="space040">
+                <Visible xs sm lg xl>
+                  <LeadArticle
+                    article={modifiedArticle}
+                    clickHandler={clickHandler}
+                  />
+                </Visible>
+                <Visible md>
+                  <LeadArticle
+                    article={{
+                      ...modifiedArticle,
+                      shortSummary:
+                        index === leadArticles.length - 1
+                          ? ''
+                          : modifiedArticle.shortSummary
+                    }}
+                    clickHandler={clickHandler}
+                  />
+                </Visible>
               </Block>
             </>
           );

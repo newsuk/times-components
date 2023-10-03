@@ -1,3 +1,6 @@
+import { MQPartial } from 'newskit';
+import { ArticleProps } from '../components/slices/article';
+
 export type SliceArticle = {
   id?: string;
   headline: string;
@@ -10,3 +13,5 @@ export type ClickHandlerType = (
   article: SliceArticle,
   position?: string
 ) => void;
+
+export type StackArticleOptions = MQPartial<Partial<ArticleProps>>;

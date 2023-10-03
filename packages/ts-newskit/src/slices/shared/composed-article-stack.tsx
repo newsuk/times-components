@@ -6,7 +6,7 @@ import {
   FullWidthBlock,
   FullWidthHidden
 } from '../../components/slices/shared-styles';
-import { ClickHandlerType } from '../types';
+import { ClickHandlerType, StackArticleOptions } from '../types';
 
 export interface LeadStory1Props {
   articles: ArticleProps[];
@@ -15,15 +15,14 @@ export interface LeadStory1Props {
 }
 
 export const ComposedArticleStack = ({
-  breakpoint,
   articles,
-  clickHandler
-}: LeadStory1Props) => {
+  clickHandler,
+  articleOptions
+}: Omit<LeadStory1Props, 'breakpoint'> & {
+  articleOptions?: StackArticleOptions;
+}) => {
   const firstThreeArticles = articles.slice(0, 3);
   const secondTwoArticles = articles.slice(3);
-  const screenXsAndSm = breakpoint === 'xs' || breakpoint === 'sm';
-  const screenMd = breakpoint === 'md';
-  const articlesArray = screenMd ? firstThreeArticles : articles;
 
   return (
     <>
@@ -37,27 +36,29 @@ export const ComposedArticleStack = ({
           />
         </FullWidthBlock>
       </FullWidthHidden>
-      <ArticleStackLarge
-        articles={articlesArray}
-        breakpoint={breakpoint}
-        clickHandler={clickHandler}
-      />
+      <Hidden md>
+        <ArticleStackLarge
+          articles={articles}
+          clickHandler={clickHandler}
+          articleOptions={articleOptions}
+        />
+      </Hidden>
       <Visible md>
-        <Hidden xs sm>
-          <Divider
-            overrides={{
-              stylePreset: 'dashedDivider',
-              marginBlock: 'space040'
-            }}
-          />
-        </Hidden>
+        <ArticleStackLarge
+          articles={firstThreeArticles}
+          clickHandler={clickHandler}
+          articleOptions={articleOptions}
+        />
+      </Visible>
+      <Visible md>
         <Block marginBlockEnd={{ md: 'space040' }}>
           <ArticleStackSmall
             articles={secondTwoArticles}
-            isFullWidth={screenXsAndSm}
-            hideImage={screenMd}
-            hasTopBorder={false}
-            breakpoint={breakpoint}
+            articleOptions={{
+              md: {
+                hideImage: true
+              }
+            }}
             clickHandler={clickHandler}
           />
         </Block>

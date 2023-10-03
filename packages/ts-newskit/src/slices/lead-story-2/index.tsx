@@ -51,7 +51,7 @@ export const LeadStory2 = ({
     return null;
   }
 
-  const modifedArticles =
+  const modifiedArticles =
     currentBreakpoint === 'xl'
       ? articles.map(article => ({
           ...article,
@@ -135,15 +135,14 @@ export const LeadStory2 = ({
       {screenXsAndSm ? (
         <BlockItem marginBlockStart="space040">
           <ComposedArticleStack
-            articles={modifedArticles}
+            articles={modifiedArticles}
             breakpoint={currentBreakpoint}
             clickHandler={clickHandler}
           />
         </BlockItem>
       ) : (
         <ArticleStackLeadStory
-          mdWidth="720px"
-          modifedArticles={modifedArticles}
+          modifiedArticles={modifiedArticles}
           breakpoint={currentBreakpoint}
           clickHandler={clickHandler}
         />
