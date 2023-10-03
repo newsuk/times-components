@@ -6,7 +6,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
     class="css-13byt3y"
   >
     <div
-      class="css-1y4oxz0"
+      class="css-1a2x76v"
     >
       <div
         class="css-bj811j"
@@ -80,7 +80,7 @@ exports[`PersonalStats should render PersonalStats component 1`] = `
       </div>
     </div>
     <svg
-      class="css-18bymcv"
+      class="css-22vdtv"
       height="24"
       overrides="[object Object]"
       preserveAspectRatio="none"

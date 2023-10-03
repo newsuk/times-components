@@ -6,7 +6,7 @@ import {
 } from 'newskit';
 
 export const StyledIconWrapper = styled(Stack)`
-  ${getColorCssFromTheme('background-color', 'puzzles010')};
+  ${getColorCssFromTheme('background-color', 'sectionBrand010')};
   .puzzle-icon {
     height: auto;
     width: 75px;
