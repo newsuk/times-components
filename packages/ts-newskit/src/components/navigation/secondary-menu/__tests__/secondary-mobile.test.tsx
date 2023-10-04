@@ -12,6 +12,8 @@ const options = {
   isSelected: 'Home'
 };
 
+const mockClickHandler = jest.fn();
+
 describe('Secondary Menu Mobile', () => {
   afterEach(() => {
     jest.clearAllMocks();
@@ -19,19 +21,31 @@ describe('Secondary Menu Mobile', () => {
   });
   it('should render the snapshot when dropdown is not expanded', () => {
     const { asFragment } = render(
-      <SecondaryNavMobile data={mainMenuItems} options={options} />
+      <SecondaryNavMobile
+        data={mainMenuItems}
+        options={options}
+        clickHandler={mockClickHandler}
+      />
     );
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render the snapshot when dropdown is expanded', () => {
     const { asFragment } = render(
-      <SecondaryNavMobile data={mainMenuItems} options={options} />
+      <SecondaryNavMobile
+        data={mainMenuItems}
+        options={options}
+        clickHandler={mockClickHandler}
+      />
     );
     expect(asFragment()).toMatchSnapshot();
   });
   it('should close the dropdown when you click on it again', () => {
     const { queryByText, getByTestId } = render(
-      <SecondaryNavMobile data={mainMenuItems} options={options} />
+      <SecondaryNavMobile
+        data={mainMenuItems}
+        options={options}
+        clickHandler={mockClickHandler}
+      />
     );
     const Button = getByTestId('menu-sub-button');
     fireEvent.click(Button);

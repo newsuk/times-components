@@ -12,6 +12,8 @@ const options = {
   isSelected: 'Puzzles'
 };
 
+const mockClickHandler = jest.fn();
+
 describe('Create More Menu', () => {
   afterEach(() => {
     jest.clearAllMocks();
@@ -24,6 +26,7 @@ describe('Create More Menu', () => {
         data={mainMenuItems}
         options={options}
         moreMenuItemsLength={2}
+        clickHandler={mockClickHandler}
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -34,6 +37,7 @@ describe('Create More Menu', () => {
         data={mainMenuItems}
         options={options}
         moreMenuItemsLength={2}
+        clickHandler={mockClickHandler}
       />
     );
     const title = getByText('Puzzles');
@@ -45,6 +49,7 @@ describe('Create More Menu', () => {
         data={mainMenuItems}
         options={options}
         moreMenuItemsLength={2}
+        clickHandler={mockClickHandler}
       />
     );
     const title = getAllByTestId('buttonLink')[0];
@@ -57,6 +62,7 @@ describe('Create More Menu', () => {
         data={mainMenuItems}
         options={options}
         moreMenuItemsLength={2}
+        clickHandler={mockClickHandler}
       />
     );
     const title = getByText('Puzzles');
@@ -71,6 +77,7 @@ describe('Create More Menu', () => {
         data={mainMenuItems}
         options={options}
         moreMenuItemsLength={2}
+        clickHandler={mockClickHandler}
       />
     );
     const list = getAllByRole('listitem');
@@ -82,6 +89,7 @@ describe('Create More Menu', () => {
         data={mainMenuItems}
         options={options}
         moreMenuItemsLength={8}
+        clickHandler={mockClickHandler}
       />
     );
     const list = getAllByRole('listitem');

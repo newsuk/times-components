@@ -113,6 +113,7 @@ export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
         lg: '976px',
         xl: '1276px'
       }}
+      marginBlockEnd="space060"
     >
       {articleStack({ articles: articlesTop, isMob, clickHandler })}
       {articleStack({

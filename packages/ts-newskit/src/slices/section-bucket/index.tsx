@@ -69,9 +69,7 @@ export const SectionBucket = ({
   clickHandler,
   sliceHeaderClickHandler
 }: SectionBucketProps) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
-    null
-  );
+  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xl');
   const breakpointKey = useBreakpointKey();
   useEffect(
     () => {
@@ -79,10 +77,6 @@ export const SectionBucket = ({
     },
     [breakpointKey]
   );
-
-  if (!currentBreakpoint) {
-    return null;
-  }
 
   const isMobile = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
 
@@ -124,7 +118,7 @@ export const SectionBucket = ({
         lg: '976px',
         xl: '1276px'
       }}
-      marginBlockEnd="sizing060"
+      marginBlockEnd="space060"
     >
       {ArticleStackBlocks}
     </BlockItem>

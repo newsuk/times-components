@@ -7,12 +7,13 @@ import { useBreakpointKey } from 'newskit';
 export const SecondaryNavDesktop: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-}> = ({ options, data }) => {
+  clickHandler: (title: string) => void;
+}> = ({ options, data, clickHandler }) => {
   const breakpointKey = useBreakpointKey();
 
   return (
     <Fragment>
-      <CreateMenu data={data} options={options} />
+      <CreateMenu data={data} options={options} clickHandler={clickHandler} />
       <MenuDivider breakpointKey={breakpointKey} />
     </Fragment>
   );

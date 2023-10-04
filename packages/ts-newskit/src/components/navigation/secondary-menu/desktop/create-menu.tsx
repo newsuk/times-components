@@ -9,7 +9,8 @@ import { debounce, getWidth } from '../../../../utils';
 export const CreateMenu: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-}> = ({ options, data }) => {
+  clickHandler: (title: string) => void;
+}> = ({ options, data, clickHandler }) => {
   const contanierRef = useRef<HTMLDivElement>(null);
   const navListRef = useRef<HTMLDivElement>(null);
   const { isExpanded, setIsExpanded } = options;
@@ -76,7 +77,12 @@ export const CreateMenu: React.FC<{
       ref={contanierRef}
     >
       <Wrapper ref={navListRef}>
-        <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
+        <NavItems
+          data={data}
+          options={options}
+          hasMenuItem={hasMenuItem}
+          clickHandler={clickHandler}
+        />
       </Wrapper>
       {moreMenuItemsLength > 0 && (
         <StyledMenuSub
@@ -105,6 +111,7 @@ export const CreateMenu: React.FC<{
                 data={data}
                 options={options}
                 moreMenuItemsLength={moreMenuItemsLength}
+                clickHandler={clickHandler}
               />
             </Menu>
           </MenuContainer>
