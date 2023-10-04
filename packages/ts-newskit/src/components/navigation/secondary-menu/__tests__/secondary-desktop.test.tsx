@@ -4,12 +4,6 @@ import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavDesktop } from '../desktop';
 import { cleanup, fireEvent } from '@testing-library/react';
-import { useBreakpointKey } from 'newskit';
-
-jest.mock('newskit', () => ({
-  ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
-}));
 
 const options = {
   handleSelect: jest.fn(),
@@ -70,7 +64,6 @@ describe('Secondary Menu Desktop', () => {
     fireEvent.click(Anchor);
     expect(options.handleSelect).toHaveBeenCalled();
   });
-
   it('should render navitems', () => {
     const { getAllByRole } = render(
       <SecondaryNavDesktop
@@ -83,8 +76,6 @@ describe('Secondary Menu Desktop', () => {
     expect(list.length).toEqual(9);
   });
   it('should change the width of menudivader when screen size change', () => {
-    (useBreakpointKey as any).mockReturnValue('xl');
-
     const { getByTestId } = render(
       <SecondaryNavDesktop
         data={mainMenuItems}
@@ -93,6 +84,6 @@ describe('Secondary Menu Desktop', () => {
       />
     );
     const hr = getByTestId('divider');
-    expect(hr).toHaveStyle('width: 1140px');
+    expect(hr).toHaveStyle('width: 100%');
   });
 });

@@ -228,7 +228,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
       </nav>
       <hr
         aria-hidden="true"
-        class="css-1nvdtcj"
+        class="css-aqz7qs"
         data-testid="divider"
       />
     </div>

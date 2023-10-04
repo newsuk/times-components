@@ -10,15 +10,13 @@ import {
 } from 'newskit';
 import {
   MainMenuProp,
-  BreakPointProp,
   SecondaryNavContainerProp,
   NavItemMobileContainerProp
 } from './types';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
-export const MenuDivider = styled(Divider)<BreakPointProp>`
-  width: ${({ breakpointKey }) =>
-    breakpointKey === 'xl' ? '1140px' : 'calc(100% - 54px)'};
+export const MenuDivider = styled(Divider)`
+  width: 100%;
   margin: auto;
   ${getColorCssFromTheme('borderColor', 'neutral030')};
 `;
