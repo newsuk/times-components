@@ -1,7 +1,7 @@
 import React from 'react';
 import { Block, Divider, GridLayout, Hidden, Visible } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { StackItem, StyledDivider, ScrollContainer } from '../shared-styles';
+import { StackItem, ScrollContainer } from '../shared-styles';
 import { ComposedArticleStack } from './composed-article-stack';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType, StackArticleOptions } from '../types';
@@ -73,10 +73,7 @@ export const ArticleStackLarge = ({
             )}
             {articleIndex < articleArr.length - 1 && (
               <Hidden lg xl>
-                <StyledDivider
-                  overrides={{ stylePreset: 'lightDivider' }}
-                  vertical
-                />
+                <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
               </Hidden>
             )}
           </React.Fragment>
