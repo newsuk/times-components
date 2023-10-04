@@ -1,0 +1,52 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { NewsKitProvider } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../../theme';
+import { HintDisplay } from './index';
+
+<Meta title="Newskit Components/Puzzles/HintDisplay" component={HintDisplay} />
+
+# HintDisplay
+
+The `HintDisplay` component is used to display hints.
+
+## Props
+
+<Props of={HintDisplay} />
+
+### `hints` (required)
+An array of hint objects to be displayed.
+
+Each hint object should have the following structure:
+- `text` (string): The hint text.
+
+## Code Example
+
+`<HintDisplay
+  hints={[
+    { text: "This is the first hint." },
+    { text: "This is the second hint." },
+    { text: "This is the third hint." },
+  ]}
+/>`
+
+An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the FinalScreen component.
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const HintDisplayStory = ({ hints }) => (
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+    <HintDisplay hints={hints} />
+  </NewsKitProvider>
+);
+
+<Story name="HintDisplay" args={{
+  hints: [
+    { text: "This is the first hint." },
+    { text: "This is the second hint." },
+    { text: "This is the third hint." },
+  ],
+}}>
+  {HintDisplayStory}
+</Story>
+
