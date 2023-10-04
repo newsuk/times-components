@@ -66,5 +66,6 @@ export { JobTitle } from './components/misc/job-title/job-title';
 export {
   UpdateButtonWithDelay
 } from './components/misc/update-button/update-button-with-delay';
+export { ColouredText } from './components/coloured-text';
 
 // TODO Remove after tests - borisovy
