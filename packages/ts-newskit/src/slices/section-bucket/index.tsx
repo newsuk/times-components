@@ -124,7 +124,7 @@ export const SectionBucket = ({
         lg: '976px',
         xl: '1276px'
       }}
-      marginBlockEnd="sizing060"
+      marginBlockEnd="space060"
     >
       {ArticleStackBlocks}
     </BlockItem>

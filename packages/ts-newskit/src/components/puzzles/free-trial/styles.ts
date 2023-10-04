@@ -11,7 +11,7 @@ import IconA4 from '../../../assets/IconA4';
 
 export const FreeTrialContainer = styled(Stack)<StackProps>`
   overflow: hidden;
-  ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
+  ${getColorCssFromTheme('backgroundColor', 'sectionBrand040')};
   ${getMediaQueryFromTheme('xs')} {
     text-align: center;
   }

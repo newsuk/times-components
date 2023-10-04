@@ -43,5 +43,5 @@ export const PuzzleCardImgWrapper = styled(Block)`
 `;
 
 export const StyledNewsKitPuzzlePlaceholder = styled(NewsKitPuzzlePlaceholder)`
-  ${getColorCssFromTheme('color', 'puzzles010')};
+  ${getColorCssFromTheme('color', 'sectionBrand010')};
 `;
