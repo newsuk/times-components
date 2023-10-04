@@ -40,22 +40,20 @@ export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
 
           if (index === 0) {
             return (
-              <>
-                <Block key={modifiedArticle.id} marginBlock="space040">
-                  <Visible xs sm>
-                    <LeadArticle
-                      article={{ ...modifiedArticle }}
-                      clickHandler={clickHandler}
-                    />
-                  </Visible>
-                  <Visible md lg xl>
-                    <LeadArticle
-                      article={{ ...modifiedArticle, hideImage: true }}
-                      clickHandler={clickHandler}
-                    />
-                  </Visible>
-                </Block>
-              </>
+              <Block key={modifiedArticle.id} marginBlock="space040">
+                <Visible xs sm>
+                  <LeadArticle
+                    article={{ ...modifiedArticle }}
+                    clickHandler={clickHandler}
+                  />
+                </Visible>
+                <Visible md lg xl>
+                  <LeadArticle
+                    article={{ ...modifiedArticle, hideImage: true }}
+                    clickHandler={clickHandler}
+                  />
+                </Visible>
+              </Block>
             );
           }
 

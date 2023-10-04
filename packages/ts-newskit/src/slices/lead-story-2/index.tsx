@@ -45,7 +45,7 @@ export const LeadStory2 = ({
     [breakpointKey]
   );
 
-  const modifedArticles =
+  const modifiedArticles =
     currentBreakpoint === 'xl'
       ? articles.map(article => ({
           ...article,
