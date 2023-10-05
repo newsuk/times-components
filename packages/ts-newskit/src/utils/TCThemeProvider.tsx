@@ -1,17 +1,14 @@
 import React from 'react';
 import { NewsKitProvider, Theme } from 'newskit';
-import { TimesWebLightTheme, TimesWebLightSportTheme } from '../theme';
+import * as themes from '../theme';
 
 type TCThemeProviderProps = {
   theme?: Theme;
 };
 
-export const themes = {
-  TimesWebLightTheme,
-  TimesWebLightSportTheme
-};
+export const TimesWebThemes = themes;
 
 export const TCThemeProvider: React.FC<TCThemeProviderProps> = ({
-  theme = TimesWebLightTheme,
+  theme = themes.TimesWebLightTheme,
   children
 }) => <NewsKitProvider theme={theme}>{children}</NewsKitProvider>;
