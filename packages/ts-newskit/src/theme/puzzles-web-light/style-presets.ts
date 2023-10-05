@@ -135,3 +135,27 @@ stylePresets.HintBtn = {
     backgroundColor: '{{colors.neutral020}}'
   }
 };
+
+stylePresets.HowToPlay = {
+  base: {
+    color: '{{colors.interactiveLink030}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
+    borderStyle: 'solid',
+    borderWidth: '{{borders.borderWidth000}}',
+    backgroundColor: '{{colors.transparent}}'
+  }
+};
+
+stylePresets.modalHeaderCustom = {
+  base: {
+    borderStyle: 'none none solid none',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderColor: '{{colors.interface040}}',
+    color: '{{colors.inkBase}}'
+  }
+};
+stylePresets.overlayCustom = {
+  base: {
+    backgroundColor: '{{overlays.overlayTintBase020}}'
+  }
+};
