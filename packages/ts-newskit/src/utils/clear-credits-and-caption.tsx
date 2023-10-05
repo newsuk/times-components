@@ -1,3 +1,4 @@
+import { MQ } from 'newskit';
 import { expirableFlagsProps } from '../components/slices/shared/articleTileInfo';
 
 type ImageCrops = {
@@ -34,7 +35,7 @@ export type ArticleProps = {
   hasTopBorder?: boolean;
   contentTop?: boolean;
   contentWidth?: string;
-  headlineTypographyPreset?: string;
+  headlineTypographyPreset?: string | MQ<string>;
   loadingAspectRatio?: string;
   imageMarginBlockStart?: string;
   textBlockMarginBlockStart?: string;
