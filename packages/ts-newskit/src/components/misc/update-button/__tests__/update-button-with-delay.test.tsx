@@ -58,8 +58,14 @@ describe('Render UpdateButtonWithDelay', () => {
       '12345',
       false
     );
-    await waitFor(() => {}, { timeout: 500 });
-    expect(queryByTestId('button')).toBeNull();
+
+    await waitFor(
+      () => {
+        expect(queryByTestId('button')).toBeNull();
+      },
+      { timeout: 500 }
+    );
+
     unmount();
   });
 });
