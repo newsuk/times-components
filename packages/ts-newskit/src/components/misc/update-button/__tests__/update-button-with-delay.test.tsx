@@ -47,8 +47,8 @@ describe('Render UpdateButtonWithDelay', () => {
     });
   });
 
-  it('should set hasUpdate to true after the interval if there is an update', async () => {
-    const { unmount } = renderComponent(
+  it('should not render the Update button component and the DelayComponent as expected when it has an update', async () => {
+    const { unmount, queryByTestId } = renderComponent(
       500,
       true,
       'Update Now',
@@ -58,10 +58,8 @@ describe('Render UpdateButtonWithDelay', () => {
       '12345',
       false
     );
-
-    jest.advanceTimersByTime(120000);
-    expect(true).toBe(true);
-
+    await waitFor(() => {}, { timeout: 500 });
+    expect(queryByTestId('button')).toBeNull();
     unmount();
   });
 });
