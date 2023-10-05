@@ -1,4 +1,4 @@
-export { TCThemeProvider } from './utils/TCThemeProvider';
+export { TCThemeProvider, TimesWebThemes } from './utils/TCThemeProvider';
 export { InArticleAudio } from './components/article-audio';
 export { formatThemeOverrides } from './utils/theme-formatting';
 

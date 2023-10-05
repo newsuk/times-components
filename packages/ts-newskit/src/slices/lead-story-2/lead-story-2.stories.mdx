@@ -1,5 +1,5 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
-import { TCThemeProvider, themes, GridOverlay } from '../../utils/index.tsx';
+import { TCThemeProvider, TimesWebThemes, GridOverlay } from '../../utils/index.tsx';
 import { LeadStory2 } from "./";
 import { leadArticle, articles, verticalArticles, horizontalArticles } from '../fixtures/lead-story.json';
 import { action } from '@storybook/addon-actions';
@@ -55,8 +55,8 @@ LeadStory2Story.args = {
   }}
   argTypes={{
     theme: {
-      options: Object.keys(themes),
-      mapping: themes,
+      options: Object.keys(TimesWebThemes),
+      mapping: TimesWebThemes,
       control: { type: 'select' },
     },
   gridOverlay: {
