@@ -39,6 +39,7 @@ export {
 export { HintButton } from './components/puzzles/daily-quiz/hint-button';
 export { HintDisplay } from './components/puzzles/daily-quiz/hints';
 export { HintContainer } from './components/puzzles/daily-quiz/hint-container';
+export { HowToPlay } from './components/puzzles/daily-quiz/how-to-play';
 export { FinalScreen } from './components/puzzles/daily-quiz/final-screen';
 export { CardsContainer } from './components/puzzles/cards-container';
 export { FreeTrial } from './components/puzzles/free-trial';
