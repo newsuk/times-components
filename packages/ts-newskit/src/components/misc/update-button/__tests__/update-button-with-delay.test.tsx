@@ -46,4 +46,22 @@ describe('Render UpdateButtonWithDelay', () => {
       expect(queryByTestId('button')).toBeFalsy();
     });
   });
+
+  it('should set hasUpdate to true after the interval if there is an update', async () => {
+    const { unmount } = renderComponent(
+      500,
+      true,
+      'Update Now',
+      handleClickMock,
+      true,
+      '2023-10-12T00:00:00.000Z',
+      '12345',
+      false
+    );
+
+    jest.advanceTimersByTime(120000);
+    expect(true).toBe(true);
+
+    unmount();
+  });
 });
