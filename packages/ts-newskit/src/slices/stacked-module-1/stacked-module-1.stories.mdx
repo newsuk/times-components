@@ -1,5 +1,5 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
-import { TCThemeProvider, themes, GridOverlay } from '../../utils/index.tsx';
+import { TCThemeProvider, TimesWebThemes, GridOverlay } from '../../utils/index.tsx';
 import { StackModule1 } from "./";
 import { stackedModule1Articles } from '../fixtures/data.json';
 import { action } from '@storybook/addon-actions';
@@ -51,8 +51,8 @@ StackModule1Story.args = {
   }}
   argTypes={{
     theme: {
-      options: Object.keys(themes),
-      mapping: themes,
+      options: Object.keys(TimesWebThemes),
+      mapping: TimesWebThemes,
       control: { type: 'select' },
     },
   gridOverlay: {

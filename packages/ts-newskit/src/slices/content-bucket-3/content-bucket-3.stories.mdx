@@ -1,5 +1,5 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
-import { GridOverlay, TCThemeProvider, themes } from '../../utils/index.tsx';
+import { GridOverlay, TCThemeProvider, TimesWebThemes } from '../../utils/index.tsx';
 import { ContentBucket3 } from "./";
 import { leadArticleLeft,leadArticleRight, articles, comments } from '../fixtures/data.json';
 import { action } from '@storybook/addon-actions';
@@ -55,8 +55,8 @@ ContentBucket3Story.args = {
   }}
   argTypes={{
     theme: {
-      options: Object.keys(themes),
-      mapping: themes,
+      options: Object.keys(TimesWebThemes),
+      mapping: TimesWebThemes,
       control: { type: 'select' },
     },
     gridOverlay: {
