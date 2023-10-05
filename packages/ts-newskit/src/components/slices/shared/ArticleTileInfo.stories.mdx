@@ -2,7 +2,7 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
 import { ArticleTileInfo } from './articleTileInfo';
 import { NewsKitProvider } from 'newskit';
-import { TCThemeProvider, themes } from '../../../utils/index.tsx';
+import { TCThemeProvider, TimesWebThemes } from '../../../utils/index.tsx';
 import { TimesWebLightTheme } from '../../../theme/times-web-light/index';
 import { action } from '@storybook/addon-actions';
 
@@ -37,8 +37,8 @@ ArticleTileInfoStory.args = {
 
 <Story name="ArticleTileInfo" args={{ marginBlockEnd:"0" , marginBlockStart:"0" , contentType: "Profile", label: "Breaking",expirableFlags: [{ type: "New", expiryTime: null}] }}   argTypes={{
     theme: {
-      options: Object.keys(themes),
-      mapping: themes,
+      options: Object.keys(TimesWebThemes),
+      mapping: TimesWebThemes,
       control: { type: 'select' },
     },
   }}>
