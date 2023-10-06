@@ -1,9 +1,16 @@
-import { CardComposable, CardContent, CardMedia, TextBlock } from 'newskit';
+import {
+  CardComposable,
+  CardContent,
+  CardMedia,
+  Block,
+  useTheme
+} from 'newskit';
 import React from 'react';
 import { CardHeadlineLink } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
+import { ColouredText } from '../../coloured-text/index';
 
 type ImageCrops = {
   url?: string;
@@ -32,6 +39,8 @@ export const CommentCard = ({
   article: CommentCardProps;
   clickHandler: ClickHandlerType;
 }) => {
+  const theme = useTheme();
+
   const { id, images, byline, headline, url, flag } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '1:1');
@@ -60,24 +69,27 @@ export const CommentCard = ({
         />
       )}
 
-      <CardContent rowGap="space040" alignContent="start">
+      <CardContent rowGap="space030" alignContent="start">
         <CardHeadlineLink
           href={url}
-          $color="inkBrand010"
-          overrides={{ typographyPreset: 'editorialHeadline020' }}
+          $color={theme.colors.sectionBrand050 || theme.colors.inkBrand010}
+          $hoverColor={theme.colors.sectionBrand060}
+          overrides={{ typographyPreset: 'editorialHeadline010' }}
           expand
           external={false}
           onClick={onClick}
         >
           {byline}
         </CardHeadlineLink>
-        <TextBlock
-          stylePreset="inkBase"
+        <ColouredText
           typographyPreset="editorialHeadline020"
+          $color="sectionBrand070"
         >
           {headline}
-        </TextBlock>
-        {flag && <TagAndFlag flag={flag} />}
+        </ColouredText>
+        <Block marginBlockStart="space010">
+          {flag && <TagAndFlag flag={flag} />}
+        </Block>
       </CardContent>
     </CardComposable>
   );
