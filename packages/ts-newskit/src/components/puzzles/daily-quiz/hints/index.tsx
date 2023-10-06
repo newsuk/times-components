@@ -4,9 +4,12 @@ import { StyledTextBlock } from './styles';
 
 interface HintDisplayProps {
   hints: Array<{ text: string }>;
+  totalHints?: number;
 }
 
-export const HintDisplay: FC<HintDisplayProps> = ({ hints }) => {
+export const HintDisplay: FC<HintDisplayProps> = ({ hints, totalHints }) => {
+  const hintstotal = totalHints ? totalHints : hints.length;
+
   return (
     <Block>
       {hints.map((hint, index) => (
@@ -18,7 +21,7 @@ export const HintDisplay: FC<HintDisplayProps> = ({ hints }) => {
             stylePreset="register080"
             marginBlockStart="space050"
           >
-            {`Hint ${index + 1} of ${hints.length}`}
+            {`Hint ${index + 1} of ${hintstotal}`}
           </StyledTextBlock>
           <StyledTextBlock
             key={`text_${index}`}
