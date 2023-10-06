@@ -13,7 +13,10 @@ import {
 } from 'newskit';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
-export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
+export const CardHeadlineLink = styled(CardLink)<{
+  $color?: string;
+  $hoverColor?: string;
+}>`
   ${({ $color }) => getColorCssFromTheme('color', $color || 'inkContrast')};
   cursor: pointer;
   text-decoration: none;
@@ -21,7 +24,8 @@ export const CardHeadlineLink = styled(CardLink)<{ $color?: string }>`
   &&:hover,
   &&:active {
     text-decoration: none;
-    ${getColorCssFromTheme('color', 'interactiveLink020')};
+    ${({ $hoverColor }) =>
+      getColorCssFromTheme('color', $hoverColor || 'interactiveLink020')};
   }
 
   &&:active {

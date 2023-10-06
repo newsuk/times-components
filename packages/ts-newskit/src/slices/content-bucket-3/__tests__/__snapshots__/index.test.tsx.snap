@@ -322,7 +322,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                 </picture>
               </div>
               <div
-                class="css-lq9usb"
+                class="css-xt66pu"
               >
                 <a
                   class="css-gull0f"
@@ -332,26 +332,30 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-65zrxz"
+                      class="css-u8ri0n"
                     >
                       Deborah Haynes
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-d8s6u6"
+                  class="css-1cszihj"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
                 <div
-                  class="css-eu36n0"
-                  data-testid="tag-and-flag"
+                  class="css-sb8utn"
                 >
-                  <span
-                    class="css-d9hjcx"
+                  <div
+                    class="css-eu36n0"
+                    data-testid="tag-and-flag"
                   >
-                    3 mins ago
-                  </span>
+                    <span
+                      class="css-d9hjcx"
+                    >
+                      3 mins ago
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -381,7 +385,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                 </picture>
               </div>
               <div
-                class="css-lq9usb"
+                class="css-xt66pu"
               >
                 <a
                   class="css-gull0f"
@@ -391,26 +395,30 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-65zrxz"
+                      class="css-u8ri0n"
                     >
                       Deborah Haynes 2
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-d8s6u6"
+                  class="css-1cszihj"
                 >
                   Now is Jack's chance to show he’s got more to offer than Curry
                 </p>
                 <div
-                  class="css-eu36n0"
-                  data-testid="tag-and-flag"
+                  class="css-sb8utn"
                 >
-                  <span
-                    class="css-d9hjcx"
+                  <div
+                    class="css-eu36n0"
+                    data-testid="tag-and-flag"
                   >
-                    21 mins ago
-                  </span>
+                    <span
+                      class="css-d9hjcx"
+                    >
+                      21 mins ago
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -784,7 +792,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               </picture>
             </div>
             <div
-              class="css-lq9usb"
+              class="css-xt66pu"
             >
               <a
                 class="css-gull0f"
@@ -794,26 +802,30 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-u8ri0n"
                   >
                     Deborah Haynes
                   </span>
                 </span>
               </a>
               <p
-                class="css-d8s6u6"
+                class="css-1cszihj"
               >
                 Now is Willis’s chance to show he’s got more to offer than Curry
               </p>
               <div
-                class="css-eu36n0"
-                data-testid="tag-and-flag"
+                class="css-sb8utn"
               >
-                <span
-                  class="css-d9hjcx"
+                <div
+                  class="css-eu36n0"
+                  data-testid="tag-and-flag"
                 >
-                  3 mins ago
-                </span>
+                  <span
+                    class="css-d9hjcx"
+                  >
+                    3 mins ago
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -843,7 +855,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               </picture>
             </div>
             <div
-              class="css-lq9usb"
+              class="css-xt66pu"
             >
               <a
                 class="css-gull0f"
@@ -853,26 +865,30 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-u8ri0n"
                   >
                     Deborah Haynes 2
                   </span>
                 </span>
               </a>
               <p
-                class="css-d8s6u6"
+                class="css-1cszihj"
               >
                 Now is Jack's chance to show he’s got more to offer than Curry
               </p>
               <div
-                class="css-eu36n0"
-                data-testid="tag-and-flag"
+                class="css-sb8utn"
               >
-                <span
-                  class="css-d9hjcx"
+                <div
+                  class="css-eu36n0"
+                  data-testid="tag-and-flag"
                 >
-                  21 mins ago
-                </span>
+                  <span
+                    class="css-d9hjcx"
+                  >
+                    21 mins ago
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1214,7 +1230,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                 </picture>
               </div>
               <div
-                class="css-lq9usb"
+                class="css-xt66pu"
               >
                 <a
                   class="css-gull0f"
@@ -1224,26 +1240,30 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-65zrxz"
+                      class="css-u8ri0n"
                     >
                       Deborah Haynes
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-d8s6u6"
+                  class="css-1cszihj"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
                 <div
-                  class="css-eu36n0"
-                  data-testid="tag-and-flag"
+                  class="css-sb8utn"
                 >
-                  <span
-                    class="css-d9hjcx"
+                  <div
+                    class="css-eu36n0"
+                    data-testid="tag-and-flag"
                   >
-                    3 mins ago
-                  </span>
+                    <span
+                      class="css-d9hjcx"
+                    >
+                      3 mins ago
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1273,7 +1293,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                 </picture>
               </div>
               <div
-                class="css-lq9usb"
+                class="css-xt66pu"
               >
                 <a
                   class="css-gull0f"
@@ -1283,26 +1303,30 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-65zrxz"
+                      class="css-u8ri0n"
                     >
                       Deborah Haynes 2
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-d8s6u6"
+                  class="css-1cszihj"
                 >
                   Now is Jack's chance to show he’s got more to offer than Curry
                 </p>
                 <div
-                  class="css-eu36n0"
-                  data-testid="tag-and-flag"
+                  class="css-sb8utn"
                 >
-                  <span
-                    class="css-d9hjcx"
+                  <div
+                    class="css-eu36n0"
+                    data-testid="tag-and-flag"
                   >
-                    21 mins ago
-                  </span>
+                    <span
+                      class="css-d9hjcx"
+                    >
+                      21 mins ago
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1616,7 +1640,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               </picture>
             </div>
             <div
-              class="css-lq9usb"
+              class="css-xt66pu"
             >
               <a
                 class="css-gull0f"
@@ -1626,26 +1650,30 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-u8ri0n"
                   >
                     Deborah Haynes
                   </span>
                 </span>
               </a>
               <p
-                class="css-d8s6u6"
+                class="css-1cszihj"
               >
                 Now is Willis’s chance to show he’s got more to offer than Curry
               </p>
               <div
-                class="css-eu36n0"
-                data-testid="tag-and-flag"
+                class="css-sb8utn"
               >
-                <span
-                  class="css-d9hjcx"
+                <div
+                  class="css-eu36n0"
+                  data-testid="tag-and-flag"
                 >
-                  3 mins ago
-                </span>
+                  <span
+                    class="css-d9hjcx"
+                  >
+                    3 mins ago
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1675,7 +1703,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               </picture>
             </div>
             <div
-              class="css-lq9usb"
+              class="css-xt66pu"
             >
               <a
                 class="css-gull0f"
@@ -1685,26 +1713,30 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-u8ri0n"
                   >
                     Deborah Haynes 2
                   </span>
                 </span>
               </a>
               <p
-                class="css-d8s6u6"
+                class="css-1cszihj"
               >
                 Now is Jack's chance to show he’s got more to offer than Curry
               </p>
               <div
-                class="css-eu36n0"
-                data-testid="tag-and-flag"
+                class="css-sb8utn"
               >
-                <span
-                  class="css-d9hjcx"
+                <div
+                  class="css-eu36n0"
+                  data-testid="tag-and-flag"
                 >
-                  21 mins ago
-                </span>
+                  <span
+                    class="css-d9hjcx"
+                  >
+                    21 mins ago
+                  </span>
+                </div>
               </div>
             </div>
           </div>
