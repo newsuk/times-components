@@ -1,19 +1,15 @@
-import {
-  Block,
-  Divider,
-  Hidden,
-  useBreakpointKey,
-  Visible,
-  BreakpointKeys
-} from 'newskit';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Block, Divider, Hidden, Visible } from 'newskit';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
 import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
-import { FullWidthBlock } from '../../components/slices/shared-styles';
+import {
+  FullWidthBlock,
+  FullWidthHidden
+} from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { ArticleStack } from './article-stack';
 import { ArticleStackLeadStory, CustomStackLayout } from '../shared';
@@ -32,33 +28,7 @@ export const LeadStory3 = ({
   leadArticles,
   clickHandler
 }: LeadStory3Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
-    null
-  );
-  const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
-    },
-    [breakpointKey]
-  );
-
-  if (!currentBreakpoint) {
-    return null;
-  }
-
-  const modifedArticles = articles.map(article => {
-    return {
-      ...article,
-      imageRight: currentBreakpoint === 'xl',
-      hideImage: currentBreakpoint === 'lg'
-    };
-  });
-
-  const screenXsAndSm =
-    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
-
-  const modifedLeadArticle = {
+  const modifiedLeadArticle = {
     ...leadArticle,
     headlineTypographyPreset: 'editorialHeadline040',
     imageTop: true,
@@ -68,11 +38,6 @@ export const LeadStory3 = ({
     shortSummary: undefined
   };
 
-  const modifedLeadArticles = leadArticles.map(article => ({
-    ...article,
-    hasTopBorder: false
-  }));
-
   return (
     <CustomStackLayout>
       <StackItem
@@ -81,12 +46,7 @@ export const LeadStory3 = ({
           md: '260px'
         }}
       >
-        <ArticleStack
-          leadArticles={modifedLeadArticles}
-          breakpointKey={currentBreakpoint}
-          clickHandler={clickHandler}
-          screenXsAndSm={screenXsAndSm}
-        />
+        <ArticleStack leadArticles={leadArticles} clickHandler={clickHandler} />
       </StackItem>
       <StackItem
         $width={{
@@ -121,7 +81,7 @@ export const LeadStory3 = ({
             />
           </Visible>
           <LeadArticle
-            article={modifedLeadArticle}
+            article={modifiedLeadArticle}
             clickHandler={clickHandler}
           />
           <Visible md lg xl>
@@ -135,22 +95,28 @@ export const LeadStory3 = ({
           </Visible>
         </Block>
       </StackItem>
-      {screenXsAndSm ? (
+      <FullWidthHidden md lg xl>
         <BlockItem>
           <ComposedArticleStack
-            articles={modifedArticles}
-            breakpoint={currentBreakpoint}
+            articles={articles}
             clickHandler={clickHandler}
           />
         </BlockItem>
-      ) : (
+      </FullWidthHidden>
+      <Visible md lg xl>
         <ArticleStackLeadStory
-          mdWidth="720px"
-          modifedArticles={modifedArticles}
-          breakpoint={currentBreakpoint}
+          articleOptions={{
+            lg: {
+              hideImage: true
+            },
+            xl: {
+              imageRight: true
+            }
+          }}
+          modifiedArticles={articles}
           clickHandler={clickHandler}
         />
-      )}
+      </Visible>
     </CustomStackLayout>
   );
 };

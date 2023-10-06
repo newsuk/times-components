@@ -206,10 +206,18 @@ export const LeadStory1 = ({
           </Visible>
           <ArticleStackSmall
             articles={smallArticles}
-            isFullWidth={screenXsAndSm}
-            hideImage={screenXsAndSm}
-            hasTopBorder={!!screenXsAndSm}
-            breakpoint={currentBreakpoint}
+            articleOptions={{
+              xs: {
+                isFullWidth: true,
+                hasTopBorder: true,
+                hideImage: true
+              },
+              sm: {
+                isFullWidth: true,
+                hasTopBorder: true,
+                hideImage: true
+              }
+            }}
             clickHandler={clickHandler}
           />
         </Block>
@@ -218,15 +226,12 @@ export const LeadStory1 = ({
         <BlockItem>
           <ComposedArticleStack
             articles={modifiedArticles}
-            breakpoint={currentBreakpoint}
             clickHandler={clickHandler}
           />
         </BlockItem>
       ) : (
         <ArticleStackLeadStory
-          mdWidth="720px"
-          modifedArticles={modifiedArticles}
-          breakpoint={currentBreakpoint}
+          modifiedArticles={modifiedArticles}
           clickHandler={clickHandler}
         />
       )}

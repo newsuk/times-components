@@ -3,7 +3,8 @@ import {
   Block,
   CardContent,
   CardComposable,
-  Divider
+  Divider,
+  MQ
 } from 'newskit';
 import React from 'react';
 import {
@@ -54,7 +55,7 @@ export interface LeadArticleProps {
   hasTopBorder?: boolean;
   contentTop?: boolean;
   contentWidth?: string;
-  headlineTypographyPreset?: string;
+  headlineTypographyPreset?: MQ<string> | string;
   loadingAspectRatio?: string;
   imageMarginBlockStart?: string;
   textBlockMarginBlockStart?: string;
