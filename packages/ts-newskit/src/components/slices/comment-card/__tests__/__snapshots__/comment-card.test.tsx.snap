@@ -23,7 +23,7 @@ exports[`should render component to match snapshot 1`] = `
       </picture>
     </div>
     <div
-      class="css-lq9usb"
+      class="css-xt66pu"
     >
       <a
         class="css-gull0f"
@@ -33,17 +33,20 @@ exports[`should render component to match snapshot 1`] = `
           class="css-17x5lw"
         >
           <span
-            class="css-65zrxz"
+            class="css-u8ri0n"
           >
             Journalist name
           </span>
         </span>
       </a>
       <p
-        class="css-d8s6u6"
+        class="css-1cszihj"
       >
         Quote text
       </p>
+      <div
+        class="css-sb8utn"
+      />
     </div>
   </div>
 </DocumentFragment>
