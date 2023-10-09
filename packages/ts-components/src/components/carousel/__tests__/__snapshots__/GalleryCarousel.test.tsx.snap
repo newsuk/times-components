@@ -108,7 +108,7 @@ exports[`GalleryCarousel should render the component 1`] = `
                   >
                     <path
                       d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                      fill-rule="nonzero"
+                      fillRule="nonzero"
                     />
                   </svg>
                 </button>
@@ -135,7 +135,7 @@ exports[`GalleryCarousel should render the component 1`] = `
                   >
                     <path
                       d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                      fill-rule="nonzero"
+                      fillRule="nonzero"
                     />
                   </svg>
                 </button>
@@ -178,7 +178,7 @@ exports[`GalleryCarousel should render the component 1`] = `
                   >
                     <path
                       d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                      fill-rule="nonzero"
+                      fillRule="nonzero"
                     />
                   </svg>
                 </button>
@@ -205,7 +205,7 @@ exports[`GalleryCarousel should render the component 1`] = `
                   >
                     <path
                       d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                      fill-rule="nonzero"
+                      fillRule="nonzero"
                     />
                   </svg>
                 </button>

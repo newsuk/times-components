@@ -1,49 +1,49 @@
 import React from 'react';
-import { MenuSub, TextBlock } from 'newskit';
+import { useTheme } from 'newskit';
 import { SecondaryMenuOptions } from '../types';
-import { StyledBlock } from '../styles';
+import { MenuContainerMob, MenuSubMob } from '../styles';
+import { ColouredText } from '../../../coloured-text';
 
 export const Navigator: React.FC<{
   options: SecondaryMenuOptions;
   title: string;
-  subMenuTitle: string;
   onClick?: (isExpanded: boolean) => void;
-}> = ({ title, options, subMenuTitle, onClick }) => {
+}> = ({ title, options, onClick }) => {
   const { isExpanded, setIsExpanded } = options;
+  const theme = useTheme();
 
   return (
-    <StyledBlock paddingInline="space040" stylePreset="secondaryNavMenuBlock">
-      <TextBlock
-        marginBlockStart="space040"
-        typographyPreset="utilityHeading060"
+    <MenuContainerMob paddingInline="space045">
+      <ColouredText
+        typographyPreset="utilitySubheading010"
+        $color={theme.colors.sectionBrand060 && 'white'}
       >
         {title}
-      </TextBlock>
-      <MenuSub
-        title={subMenuTitle}
+      </ColouredText>
+      <MenuSubMob
         expanded={isExpanded}
         onClick={() => {
           setIsExpanded(!isExpanded);
           onClick && onClick(!isExpanded);
         }}
+        aria-label={isExpanded ? "Collapse Sccondary Menu" : "Expand Sccondary Menu"}
         overrides={{
-          marginBlockStart: 'space020',
-          marginInlineEnd: 'space020',
-          paddingInline: 'space030',
-          minHeight: 'sizing060',
-          stylePreset: 'subMenu',
-          typographyPreset: 'newPreset030',
+          paddingBlock: 'space000',
+          paddingInline: 'space000',
+          minHeight: 'sizing050',
+          minWidth: 'sizing050',
+          stylePreset: 'subMenuMob',
           indicatorIcon: {
             props: {
               overrides: {
-                stylePreset: 'icon'
+                stylePreset: 'subMenuMobIcon'
               }
             }
           }
         }}
       >
         {null}
-      </MenuSub>
-    </StyledBlock>
+      </MenuSubMob>
+    </MenuContainerMob>
   );
 };

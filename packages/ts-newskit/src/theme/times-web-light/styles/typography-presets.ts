@@ -25,14 +25,6 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '0%',
       fontStretch: 'normal'
     },
-    newPreset030: {
-      fontFamily: 'Roboto-Medium',
-      fontWeight: 500,
-      fontSize: '13px',
-      lineHeight: '1.000',
-      letterSpacing: '0%',
-      fontStretch: 'normal'
-    },
     newPreset040: {
       fontFamily: 'Roboto-Medium',
       fontWeight: 500,

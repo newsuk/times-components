@@ -863,7 +863,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-65zrxz"
                 >
-                  Short title of the card describing the main content 3
+                  Short title of the card describing the main content 2
                 </span>
               </span>
             </a>
@@ -966,7 +966,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <span
                     class="css-65zrxz"
                   >
-                    Short title of the card describing the main content
+                    Short title of the card describing the main content 3
                   </span>
                 </span>
               </a>
@@ -1033,7 +1033,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <span
                     class="css-65zrxz"
                   >
-                    Short title of the card describing the main content 2
+                    Short title of the card describing the main content 4
                   </span>
                 </span>
               </a>
@@ -1298,7 +1298,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </span>
                   </a>
@@ -1391,7 +1391,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </span>
                   </a>
@@ -1436,7 +1436,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-5pczz7"
                     />
                     <img
-                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
                       class="css-1qgqq71"
                       src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
@@ -1487,7 +1487,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </span>
                   </a>
@@ -1532,7 +1532,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-5pczz7"
                     />
                     <img
-                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
                       class="css-1qgqq71"
                       src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
@@ -1583,7 +1583,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </span>
                   </a>
@@ -1628,7 +1628,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       class="css-5pczz7"
                     />
                     <img
-                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
                       class="css-1qgqq71"
                       src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
@@ -1679,7 +1679,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </span>
                   </a>
@@ -2679,8 +2679,24 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <div
                         class="css-1kwj960"
                       >
-                        <picture
-                          class="css-zp0elg"
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
+                      <div
+                        class="css-122i4mv"
+                      >
+                        <span
+                          class="css-6tvr2h"
                         >
                           <div
                             class="css-5pczz7"
@@ -2701,12 +2717,44 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-6tvr2h"
                           >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              UPDATED
-                            </div>
+                            American owners pose threat to English pyramid 2
                           </span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="css-17e8e7g"
+                >
+                  <div
+                    class="css-niwyl0"
+                  >
+                    <div
+                      class="css-1kwj960"
+                    >
+                      <picture
+                        class="css-zp0elg"
+                      >
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
+                      <div
+                        class="css-122i4mv"
+                      >
+                        <span
+                          class="css-6tvr2h"
+                        >
                           <div
                             class="css-lew009"
                           >
@@ -2734,11 +2782,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-17x5lw"
                           >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              American owners pose threat to English pyramid
-                            </span>
+                            American owners pose threat to English pyramid 2
                           </span>
                         </a>
                       </div>
@@ -2748,7 +2792,23 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-17e8e7g"
                   >
                     <div
-                      class="css-1nw1nne"
+                      class="css-1kwj960"
+                    >
+                      <picture
+                        class="css-zp0elg"
+                      >
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
                     >
                       <div
                         class="css-1kwj960"
@@ -2808,11 +2868,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-17x5lw"
                           >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              American owners pose threat to English pyramid
-                            </span>
+                            American owners pose threat to English pyramid 2
                           </span>
                         </a>
                       </div>
@@ -2882,11 +2938,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-17x5lw"
                           >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              American owners pose threat to English pyramid
-                            </span>
+                            American owners pose threat to English pyramid 2
                           </span>
                         </a>
                       </div>
@@ -2901,10 +2953,13 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <div
                         class="css-tj8oo8"
                       >
-                        <hr
-                          aria-hidden="true"
-                          class="css-1i1gqyx"
-                          data-testid="divider"
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                         />
                       </div>
                       <div
@@ -2949,11 +3004,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-17x5lw"
                           >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              American owners pose threat to English pyramid
-                            </span>
+                            American owners pose threat to English pyramid 2
                           </span>
                         </a>
                       </div>
@@ -5115,7 +5166,23 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="css-919cy0"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -5160,12 +5227,58 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-1basb1c"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          PROFILE
-                        </div>
+                        American owners pose threat to English pyramid 2
                       </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-17e8e7g"
+            >
+              <div
+                class="css-niwyl0"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
+                  <div
+                    class="css-122i4mv"
+                  >
+                    <span
+                      class="css-6tvr2h"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                     <a
                       class="css-17mo6gr"
@@ -5175,11 +5288,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-17x5lw"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          American owners pose threat to English pyramid
-                        </span>
+                        American owners pose threat to English pyramid 2
                       </span>
                     </a>
                   </div>
@@ -5189,7 +5298,23 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="css-17e8e7g"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -5216,11 +5341,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-6tvr2h"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
+                        American owners pose threat to English pyramid 2
                       </span>
                       <div
                         class="css-lew009"
@@ -5249,11 +5370,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-17x5lw"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          American owners pose threat to English pyramid
-                        </span>
+                        American owners pose threat to English pyramid 2
                       </span>
                     </a>
                   </div>
@@ -5263,7 +5380,32 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="css-13fsx86"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-1i1gqyx"
+                    data-testid="divider"
+                  />
+                </div>
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -5290,11 +5432,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-6tvr2h"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
+                        American owners pose threat to English pyramid 2
                       </span>
                       <div
                         class="css-lew009"
@@ -7347,19 +7485,19 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <div
                         class="css-1kwj960"
                       >
-                        <picture
-                          class="css-zp0elg"
-                        >
-                          <div
-                            class="css-5pczz7"
-                          />
-                          <img
-                            alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                          />
-                        </picture>
-                      </div>
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-17cghxi"
                       >
@@ -7439,7 +7577,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-d9hjcx"
                           >
-                            Flag1
+                            American owners pose threat to English pyramid 2
                           </span>
                         </div>
                       </div>
@@ -7454,19 +7592,19 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <div
                         class="css-1kwj960"
                       >
-                        <picture
-                          class="css-zp0elg"
-                        >
-                          <div
-                            class="css-5pczz7"
-                          />
-                          <img
-                            alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                          />
-                        </picture>
-                      </div>
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-17cghxi"
                       >
@@ -7546,7 +7684,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-d9hjcx"
                           >
-                            Flag1
+                            American owners pose threat to English pyramid 2
                           </span>
                         </div>
                       </div>
@@ -7565,7 +7703,23 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-919cy0"
                   >
                     <div
-                      class="css-1nw1nne"
+                      class="css-1kwj960"
+                    >
+                      <picture
+                        class="css-zp0elg"
+                      >
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
                     >
                       <div
                         class="css-1kwj960"
@@ -7625,11 +7779,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-17x5lw"
                           >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              American owners pose threat to English pyramid
-                            </span>
+                            American owners pose threat to English pyramid 2
                           </span>
                         </a>
                       </div>
@@ -7699,11 +7849,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-17x5lw"
                           >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              American owners pose threat to English pyramid
-                            </span>
+                            American owners pose threat to English pyramid 2
                           </span>
                         </a>
                       </div>
@@ -7713,7 +7859,32 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     class="css-13fsx86"
                   >
                     <div
-                      class="css-1nw1nne"
+                      class="css-tj8oo8"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-1i1gqyx"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <div
+                      class="css-1kwj960"
+                    >
+                      <picture
+                        class="css-zp0elg"
+                      >
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
                     >
                       <div
                         class="css-1kwj960"
@@ -7773,11 +7944,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           <span
                             class="css-17x5lw"
                           >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              American owners pose threat to English pyramid
-                            </span>
+                            American owners pose threat to English pyramid 2
                           </span>
                         </a>
                       </div>
@@ -8969,7 +9136,23 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="css-919cy0"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -9029,11 +9212,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-17x5lw"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          American owners pose threat to English pyramid
-                        </span>
+                        American owners pose threat to English pyramid 2
                       </span>
                     </a>
                   </div>
@@ -9043,7 +9222,23 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="css-17e8e7g"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -9070,12 +9265,44 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-6tvr2h"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
+                        American owners pose threat to English pyramid 2
                       </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-13fsx86"
+            >
+              <div
+                class="css-niwyl0"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
+                  <div
+                    class="css-122i4mv"
+                  >
+                    <span
+                      class="css-6tvr2h"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -9103,11 +9330,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-17x5lw"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          American owners pose threat to English pyramid
-                        </span>
+                        American owners pose threat to English pyramid 2
                       </span>
                     </a>
                   </div>
@@ -9144,12 +9367,53 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-6tvr2h"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
+                        American owners pose threat to English pyramid 2
                       </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-1ipehn5"
+            >
+              <div
+                class="css-niwyl0"
+              >
+                <div
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-1i1gqyx"
+                    data-testid="divider"
+                  />
+                </div>
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
+                  <div
+                    class="css-122i4mv"
+                  >
+                    <span
+                      class="css-6tvr2h"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -9177,11 +9441,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       <span
                         class="css-17x5lw"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          American owners pose threat to English pyramid
-                        </span>
+                        American owners pose threat to English pyramid 2
                       </span>
                     </a>
                   </div>
@@ -40962,6 +41222,42 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 </div>
               </div>
             </div>
+            <a
+              class="css-17mo6gr"
+              href="#"
+              role="link"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content 2
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-1g5vzsh"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-xvacx"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-e0a604"
+        >
+          <div
+            class="css-6wqjuf"
+          >
             <div
               class="css-17e8e7g"
             >
@@ -41020,18 +41316,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-65zrxz"
-                      >
-                        ‘American owners pose threat to English pyramid’
-                      </span>
-                    </span>
-                  </a>
-                </div>
-              </div>
+                    Short title of the card describing the main content 3
+                  </span>
+                </span>
+              </a>
+              <p
+                class="css-1nrveqv"
+              >
+                160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+              </p>
             </div>
             <div
               class="css-13fsx86"
@@ -41094,18 +41387,83 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-65zrxz"
-                      >
-                        ‘American owners pose threat to English pyramid’
-                      </span>
-                    </span>
-                  </a>
-                </div>
+                    Short title of the card describing the main content 4
+                  </span>
+                </span>
+              </a>
+              <p
+                class="css-1nrveqv"
+              >
+                160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-geh752"
+    >
+      <div
+        class="css-16i6sav"
+      >
+        <div
+          class="css-1g5vzsh"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1i1gqyx"
+            data-testid="divider"
+          />
+        </div>
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-15edd2j"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-uh7mej"
+            data-testid="divider"
+          />
+        </div>
+        <div
+          class="css-1snp8e9"
+        >
+          <div
+            class="css-6wqjuf"
+          >
+            <div
+              class="css-j6pksw"
+            >
+              <div
+                class="css-uxw9nr"
+              >
+                <picture
+                  class="css-zp0elg"
+                >
+                  <div
+                    class="css-5pczz7"
+                  />
+                  <img
+                    alt="Sarcacens an inclusive club? They didnt look out for me"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                  />
+                </picture>
               </div>
+              <p
+                class="css-1c5i4sy"
+              >
+                Sarcacens an inclusive club? They didnt look out for me
+                <span
+                  class="css-15rs040"
+                >
+                  Gareth Fuller/Press Association
+                </span>
+              </p>
             </div>
             <div
               class="css-yj8ahp"
@@ -41914,6 +42272,21 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
+                      </span>
+                    </span>
+                  </a>
                   <div
                     class="css-17e8e7g"
                   >
@@ -42062,6 +42435,21 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
+                      </span>
+                    </span>
+                  </a>
                   <div
                     class="css-yj8ahp"
                   >
@@ -42129,6 +42517,34 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-13fsx86"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-1ipehn5"
                   >
@@ -42215,12 +42631,16 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <div
                     class="css-1osy5lm"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-13rcg9f"
-                      data-testid="divider"
-                    />
-                  </div>
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
+                      </span>
+                    </span>
+                  </a>
                   <div
                     class="css-919cy0"
                   >
@@ -42314,6 +42734,34 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-yj8ahp"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-17e8e7g"
                   >
@@ -42407,6 +42855,21 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
+                      </span>
+                    </span>
+                  </a>
                   <div
                     class="css-13fsx86"
                   >
@@ -42500,6 +42963,34 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-1ipehn5"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-yj8ahp"
                   >
@@ -42586,6 +43077,21 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
+                      </span>
+                    </span>
+                  </a>
                   <div
                     class="css-1ipehn5"
                   >
@@ -44090,11 +44596,18 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
-                      </span>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -44143,7 +44656,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-1jxv40d"
                           >
-                            Tag
+                            American owners pose threat to English pyramid 2
                           </span>
                         </span>
                       </a>
@@ -44197,11 +44710,18 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
-                      </span>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -44250,7 +44770,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-1jxv40d"
                           >
-                            Tag
+                            American owners pose threat to English pyramid 2
                           </span>
                         </span>
                       </a>
@@ -44313,18 +44833,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                         />
                       </div>
                       <span
@@ -44422,7 +44936,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          American owners pose threat to English pyramid
+                          <span
+                            class="css-65zrxz"
+                          >
+                            American owners pose threat to English pyramid 2
+                          </span>
                         </span>
                       </span>
                     </a>
@@ -44496,7 +45014,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          American owners pose threat to English pyramid
+                          <span
+                            class="css-65zrxz"
+                          >
+                            American owners pose threat to English pyramid 2
+                          </span>
                         </span>
                       </span>
                     </a>
@@ -44528,11 +45050,18 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
-                      </span>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -44563,7 +45092,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          American owners pose threat to English pyramid
+                          <span
+                            class="css-65zrxz"
+                          >
+                            American owners pose threat to English pyramid 2
+                          </span>
                         </span>
                       </span>
                     </a>
@@ -47106,10 +47639,13 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <div
                     class="css-1osy5lm"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-13rcg9f"
-                      data-testid="divider"
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </div>
                   <div
@@ -47205,6 +47741,49 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-17e8e7g"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-17e8e7g"
                   >
@@ -47298,6 +47877,49 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-13fsx86"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-13fsx86"
                   >
@@ -47391,6 +48013,42 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-yj8ahp"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-1i1gqyx"
+                    data-testid="divider"
+                  />
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-yj8ahp"
                   >
@@ -47477,6 +48135,58 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-1ipehn5"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-1i1gqyx"
+                    data-testid="divider"
+                  />
+                </div>
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-1ipehn5"
                   >
@@ -47579,6 +48289,21 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -49801,7 +50526,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           class="css-5pczz7"
                         />
                         <img
-                          alt="Blow for rebel clubs as court says Uefa can block Super League 2"
+                          alt="American owners pose threat to English pyramid 2"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                         />
@@ -49852,7 +50577,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-65zrxz"
                           >
-                            Blow for rebel clubs as court says Uefa can block Super League 2
+                            American owners pose threat to English pyramid 2
                           </span>
                         </span>
                       </a>
@@ -49908,7 +50633,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           class="css-5pczz7"
                         />
                         <img
-                          alt="Blow for rebel clubs as court says Uefa can block Super League 2"
+                          alt="American owners pose threat to English pyramid 2"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                         />
@@ -49959,7 +50684,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-65zrxz"
                           >
-                            Blow for rebel clubs as court says Uefa can block Super League 2
+                            American owners pose threat to English pyramid 2
                           </span>
                         </span>
                       </a>
@@ -50068,85 +50793,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17cghxi"
                       >
                         <div
-                          class="css-i1f2uq"
-                        >
-                          <span
-                            class="css-6tvr2h"
-                          >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              UPDATED
-                            </div>
-                          </span>
-                          <div
-                            class="css-lew009"
-                          >
-                            <hr
-                              aria-hidden="true"
-                              class="css-15kf7hd"
-                              data-testid="divider"
-                            />
-                          </div>
-                          <span
-                            class="css-1basb1c"
-                          >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              Q&A
-                            </div>
-                          </span>
-                        </div>
-                        <a
-                          class="css-17mo6gr"
-                          href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                          role="link"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              European cup winner Mihajlovic dies aged 53 after battle with leukaemia
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-1atazsr"
-                          data-testid="tag-and-flag"
-                        >
-                          <a
-                            class="css-10d4t8c"
-                            href="/"
-                          >
-                            <span
-                              class="css-17x5lw"
-                            >
-                              <span
-                                class="css-1jxv40d"
-                              >
-                                Tag
-                              </span>
-                            </span>
-                          </a>
-                          <div
-                            class="css-lew009"
-                          >
-                            <hr
-                              aria-hidden="true"
-                              class="css-15kf7hd"
-                              data-testid="divider"
-                            />
-                          </div>
-                          <span
-                            class="css-d9hjcx"
-                          >
-                            Flag1
-                          </span>
-                        </div>
-                      </div>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
                     </div>
                   </div>
                   <div
@@ -50250,7 +50904,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-d9hjcx"
                           >
-                            Flag1
+                            American owners pose threat to English pyramid 2
                           </span>
                         </div>
                       </div>
@@ -50357,7 +51011,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-d9hjcx"
                           >
-                            Flag1
+                            American owners pose threat to English pyramid 2
                           </span>
                         </div>
                       </div>
@@ -50389,85 +51043,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17cghxi"
                       >
                         <div
-                          class="css-i1f2uq"
-                        >
-                          <span
-                            class="css-6tvr2h"
-                          >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              UPDATED
-                            </div>
-                          </span>
-                          <div
-                            class="css-lew009"
-                          >
-                            <hr
-                              aria-hidden="true"
-                              class="css-15kf7hd"
-                              data-testid="divider"
-                            />
-                          </div>
-                          <span
-                            class="css-1basb1c"
-                          >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              Q&A
-                            </div>
-                          </span>
-                        </div>
-                        <a
-                          class="css-17mo6gr"
-                          href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                          role="link"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              European cup winner Mihajlovic dies aged 53 after battle with leukaemia
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-1atazsr"
-                          data-testid="tag-and-flag"
-                        >
-                          <a
-                            class="css-10d4t8c"
-                            href="/"
-                          >
-                            <span
-                              class="css-17x5lw"
-                            >
-                              <span
-                                class="css-1jxv40d"
-                              >
-                                Tag
-                              </span>
-                            </span>
-                          </a>
-                          <div
-                            class="css-lew009"
-                          >
-                            <hr
-                              aria-hidden="true"
-                              class="css-15kf7hd"
-                              data-testid="divider"
-                            />
-                          </div>
-                          <span
-                            class="css-d9hjcx"
-                          >
-                            Flag1
-                          </span>
-                        </div>
-                      </div>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
                     </div>
                   </div>
                   <div
@@ -50617,11 +51200,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-6tvr2h"
                           >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              UPDATED
-                            </div>
+                            American owners pose threat to English pyramid 2
                           </span>
                           <div
                             class="css-lew009"
@@ -51928,10 +52507,13 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <div
                     class="css-1osy5lm"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-13rcg9f"
-                      data-testid="divider"
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </div>
                   <div
@@ -52041,6 +52623,49 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-17e8e7g"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-17e8e7g"
                   >
@@ -52148,6 +52773,49 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </div>
                     </div>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-13fsx86"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-13fsx86"
                   >
@@ -52264,97 +52932,31 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <div
                         class="css-tj8oo8"
                       >
-                        <hr
-                          aria-hidden="true"
-                          class="css-1i1gqyx"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <div
-                        class="css-17cghxi"
-                      >
-                        <div
-                          class="css-122i4mv"
-                        >
-                          <span
-                            class="css-6tvr2h"
-                          >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              BREAKING
-                            </div>
-                          </span>
-                          <div
-                            class="css-lew009"
-                          >
-                            <hr
-                              aria-hidden="true"
-                              class="css-15kf7hd"
-                              data-testid="divider"
-                            />
-                          </div>
-                          <span
-                            class="css-1basb1c"
-                          >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              Q&A
-                            </div>
-                          </span>
-                        </div>
-                        <a
-                          class="css-17mo6gr"
-                          href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                          role="link"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              Blow for rebel clubs as court says Uefa can block Super League 2
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-1atazsr"
-                          data-testid="tag-and-flag"
-                        >
-                          <a
-                            class="css-10d4t8c"
-                            href="/"
-                          >
-                            <span
-                              class="css-17x5lw"
-                            >
-                              <span
-                                class="css-1jxv40d"
-                              >
-                                Tag
-                              </span>
-                            </span>
-                          </a>
-                          <div
-                            class="css-lew009"
-                          >
-                            <hr
-                              aria-hidden="true"
-                              class="css-15kf7hd"
-                              data-testid="divider"
-                            />
-                          </div>
-                          <span
-                            class="css-d9hjcx"
-                          >
-                            Flag5
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-yj8ahp"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-1i1gqyx"
+                    data-testid="divider"
+                  />
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-1ipehn5"
                   >
@@ -52389,88 +52991,10 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <div
                         class="css-17cghxi"
                       >
-                        <div
-                          class="css-122i4mv"
-                        >
-                          <span
-                            class="css-6tvr2h"
-                          >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              BREAKING
-                            </div>
-                          </span>
-                          <div
-                            class="css-lew009"
-                          >
-                            <hr
-                              aria-hidden="true"
-                              class="css-15kf7hd"
-                              data-testid="divider"
-                            />
-                          </div>
-                          <span
-                            class="css-1basb1c"
-                          >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              Q&A
-                            </div>
-                          </span>
-                        </div>
-                        <a
-                          class="css-17mo6gr"
-                          href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                          role="link"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              Blow for rebel clubs as court says Uefa can block Super League 2
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-1atazsr"
-                          data-testid="tag-and-flag"
-                        >
-                          <a
-                            class="css-10d4t8c"
-                            href="/"
-                          >
-                            <span
-                              class="css-17x5lw"
-                            >
-                              <span
-                                class="css-1jxv40d"
-                              >
-                                Tag
-                              </span>
-                            </span>
-                          </a>
-                          <div
-                            class="css-lew009"
-                          >
-                            <hr
-                              aria-hidden="true"
-                              class="css-15kf7hd"
-                              data-testid="divider"
-                            />
-                          </div>
-                          <span
-                            class="css-d9hjcx"
-                          >
-                            Flag5
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -52492,19 +53016,19 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <div
                     class="css-1kwj960"
                   >
-                    <picture
-                      class="css-zp0elg"
-                    >
-                      <div
-                        class="css-5pczz7"
-                      />
-                      <img
-                        alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                        class="css-1qgqq71"
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                      />
-                    </picture>
-                  </div>
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-17cghxi"
                   >
@@ -52584,7 +53108,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-d9hjcx"
                       >
-                        Flag1
+                        American owners pose threat to English pyramid 2
                       </span>
                     </div>
                   </div>
@@ -54076,6 +54600,385 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "sm" 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1gwix8r"
+  >
+    <div
+      class="css-1polam9"
+    >
+      <div
+        class="css-6wqjuf"
+      >
+        <div
+          class="css-j6pksw"
+        >
+          <div
+            class="css-uxw9nr"
+          >
+            <picture
+              class="css-zp0elg"
+            >
+              <div
+                class="css-5pczz7"
+              />
+              <img
+                alt="Short title of the card describing the main content"
+                class="css-1qgqq71"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+              />
+            </picture>
+          </div>
+          <p
+            class="css-1c5i4sy"
+          >
+            Sarcacens an inclusive club? They didnt look out for me
+            <span
+              class="css-15rs040"
+            >
+              Gareth Fuller/Press Association
+            </span>
+          </p>
+        </div>
+        <div
+          class="css-gpke1l"
+        >
+          <div
+            class="css-3kejzs"
+          >
+            <span
+              class="css-6tvr2h"
+            >
+              <div
+                class="css-gb5m6n"
+              >
+                NEW
+              </div>
+            </span>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-15kf7hd"
+                data-testid="divider"
+              />
+            </div>
+            <span
+              class="css-1basb1c"
+            >
+              <div
+                class="css-gb5m6n"
+              >
+                REVIEW
+              </div>
+            </span>
+          </div>
+          <a
+            class="css-10h0i3c"
+            href="#"
+          >
+            <span
+              class="css-17x5lw"
+            >
+              <span
+                class="css-d9g6wh"
+              >
+                Short title of the card describing the main content
+              </span>
+            </span>
+          </a>
+          <p
+            class="css-vdfsd1"
+          >
+            160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+          </p>
+          <div
+            class="css-1atazsr"
+            data-testid="tag-and-flag"
+          >
+            <a
+              class="css-10d4t8c"
+              href="/"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-1jxv40d"
+                >
+                  Tag
+                </span>
+              </span>
+            </a>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-15kf7hd"
+                data-testid="divider"
+              />
+            </div>
+            <span
+              class="css-d9hjcx"
+            >
+              Flag
+            </span>
+          </div>
+          <ul
+            class="css-a5fiw2"
+            role="list"
+          >
+            <li
+              class="css-czt13m"
+            >
+              <div
+                class="css-16r6s3u"
+              >
+                <div
+                  aria-hidden="true"
+                  class="css-wmopxz"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-z5ltm7-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="css-xg8lki"
+                >
+                  <a
+                    class="css-1ks9f1u"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-1wc2zh5"
+                      >
+                        Unordered list item
+                      </span>
+                    </span>
+                  </a>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="css-11icnc2"
+      >
+        <div
+          class="css-1g5vzsh"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-l3xd1q"
+            data-testid="divider"
+          />
+        </div>
+        <div
+          class="css-1nw1nne"
+        >
+          <div
+            class="css-17cghxi"
+          >
+            <div
+              class="css-122i4mv"
+            >
+              <span
+                class="css-6tvr2h"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  BREAKING
+                </div>
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-1basb1c"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
+              </span>
+            </div>
+            <a
+              class="css-17mo6gr"
+              href="#"
+              role="link"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content 2
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-1g5vzsh"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-xvacx"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-e0a604"
+        >
+          <div
+            class="css-6wqjuf"
+          >
+            <div
+              class="css-gpke1l"
+            >
+              <div
+                class="css-86452u"
+              >
+                <span
+                  class="css-6tvr2h"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    <svg
+                      class="css-ny3roy"
+                      fill="none"
+                      height="20"
+                      viewBox="0 0 22 24"
+                      width="18"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <rect
+                        fill="url(#pattern0)"
+                        height="24"
+                        width="22"
+                      />
+                      <defs>
+                        <pattern
+                          height="1"
+                          id="pattern0"
+                          patternContentUnits="objectBoundingBox"
+                          width="1"
+                        >
+                          <use
+                            transform="matrix(0.0454545 0 0 0.0416667 -0.0909091 0)"
+                            xlink:href="#image0_3031_245372"
+                          />
+                        </pattern>
+                        <image
+                          height="24"
+                          id="image0_3031_245372"
+                          width="24"
+                          xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA90lEQVR4nN2UPQrCQBCFPwJJZeElvI5GkZSexc6ot/AXbD2Incaf9LaihZUrC5NGk+wmEYQ8eE0yM2+Znwd1hwcEwAqIgIcwkm+BxJRCD4gBZeAF6BYp7AATi8Lqg2PJNWJaorgShjZtURXpZxX3pJ9VBeKswQeGxF0BkX6awNqQ5AAD4GohsEgTOBmSEjSAIfDMidV38oW7pUCCFrDJiNW1fiKwzYi9pQkcLQWasu95LTqkCSx/OOTZX9bUBc4VDkyZDg1xxSrFX0AbA8o4qRKOsIAj1lv05aGtXSfwLWeiHaBDSbiyEdpb9G7rY9TcA3P5p2NqjDd1yyIEG3kosgAAAABJRU5ErkJggg=="
+                        />
+                      </defs>
+                    </svg>
+                    VIDEO
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-10h0i3c"
+                href="#"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-65zrxz"
+                  >
+                    Short title of the card describing the main content 3
+                  </span>
+                </span>
+              </a>
+              <p
+                class="css-1nrveqv"
+              >
+                160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+              </p>
+            </div>
+          </div>
+          <div
+            class="css-1je0m5w"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-6wqjuf"
+          >
+            <div
+              class="css-gpke1l"
+            >
               <div
                 class="css-13fsx86"
               >
@@ -54172,6 +55075,67 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   </div>
                 </div>
               </div>
+              <a
+                class="css-10h0i3c"
+                href="#"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-65zrxz"
+                  >
+                    Short title of the card describing the main content 4
+                  </span>
+                </span>
+              </a>
+              <p
+                class="css-1nrveqv"
+              >
+                160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-geh752"
+    >
+      <div
+        class="css-16i6sav"
+      >
+        <div
+          class="css-1g5vzsh"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1i1gqyx"
+            data-testid="divider"
+          />
+        </div>
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-15edd2j"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-uh7mej"
+            data-testid="divider"
+          />
+        </div>
+        <div
+          class="css-1snp8e9"
+        >
+          <div
+            class="css-6wqjuf"
+          >
+            <div
+              class="css-j6pksw"
+            >
               <div
                 class="css-yj8ahp"
               >
@@ -54424,11 +55388,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-1basb1c"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          Q&A
-                        </div>
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </div>
                     <a
@@ -54531,11 +55491,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-1basb1c"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          Q&A
-                        </div>
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </div>
                     <a
@@ -54593,7 +55549,23 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-13fsx86"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -54638,11 +55610,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-1basb1c"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          Q&A
-                        </div>
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </div>
                     <a
@@ -54705,10 +55673,13 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <div
                     class="css-tj8oo8"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-1i1gqyx"
-                      data-testid="divider"
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </div>
                   <div
@@ -54738,11 +55709,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-1basb1c"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          Q&A
-                        </div>
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </div>
                     <a
@@ -54805,10 +55772,13 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <div
                     class="css-tj8oo8"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-1i1gqyx"
-                      data-testid="divider"
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </div>
                   <div
@@ -54854,11 +55824,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-1basb1c"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          Q&A
-                        </div>
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </div>
                     <a
@@ -56913,18 +57879,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                         />
                       </div>
                       <span
@@ -57022,7 +57982,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          American owners pose threat to English pyramid
+                          <span
+                            class="css-65zrxz"
+                          >
+                            American owners pose threat to English pyramid 2
+                          </span>
                         </span>
                       </span>
                     </a>
@@ -57061,11 +58025,18 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
-                      </span>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -57096,7 +58067,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          American owners pose threat to English pyramid
+                          <span
+                            class="css-65zrxz"
+                          >
+                            American owners pose threat to English pyramid 2
+                          </span>
                         </span>
                       </span>
                     </a>
@@ -57128,11 +58103,18 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
-                      </span>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -57163,7 +58145,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          American owners pose threat to English pyramid
+                          <span
+                            class="css-65zrxz"
+                          >
+                            American owners pose threat to English pyramid 2
+                          </span>
                         </span>
                       </span>
                     </a>
@@ -57246,7 +58232,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          American owners pose threat to English pyramid
+                          <span
+                            class="css-65zrxz"
+                          >
+                            American owners pose threat to English pyramid 2
+                          </span>
                         </span>
                       </span>
                     </a>
@@ -57294,11 +58284,18 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          EXCLUSIVE
-                        </div>
-                      </span>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -57347,7 +58344,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-1jxv40d"
                           >
-                            Tag
+                            American owners pose threat to English pyramid 2
                           </span>
                         </span>
                       </a>
@@ -59880,11 +60877,18 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 <div
                   class="css-lew009"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
                 </div>
                 <span
                   class="css-1basb1c"
@@ -59947,7 +60951,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <span
                       class="css-1jxv40d"
                     >
-                      Tag
+                      <span
+                        class="css-65zrxz"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
                     </span>
                   </span>
                 </a>
@@ -60001,10 +61009,13 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <div
                     class="css-1g5vzsh"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-1i1gqyx"
-                      data-testid="divider"
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </div>
                 </div>
@@ -60053,10 +61064,38 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
+                        American owners pose threat to English pyramid 2
                       </span>
                     </span>
                   </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-13fsx86"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-1atazsr"
                     data-testid="tag-and-flag"
@@ -60079,6 +61118,21 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       Flag
                     </span>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -60146,10 +61200,47 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-65zrxz"
                       >
-                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia
+                        American owners pose threat to English pyramid 2
                       </span>
                     </span>
                   </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-1ipehn5"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-1i1gqyx"
+                    data-testid="divider"
+                  />
+                </div>
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
                   <div
                     class="css-1atazsr"
                     data-testid="tag-and-flag"
@@ -60172,6 +61263,21 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       Flag
                     </span>
                   </div>
+                  <a
+                    class="css-17mo6gr"
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                    role="link"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-65zrxz"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -63782,11 +64888,18 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
-                      </span>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -63835,7 +64948,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-1jxv40d"
                           >
-                            Tag
+                            American owners pose threat to English pyramid 2
                           </span>
                         </span>
                       </a>
@@ -63898,11 +65011,18 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
-                      </span>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -63933,7 +65053,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          American owners pose threat to English pyramid
+                          <span
+                            class="css-65zrxz"
+                          >
+                            American owners pose threat to English pyramid 2
+                          </span>
                         </span>
                       </span>
                     </a>
@@ -63972,11 +65096,18 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
-                      </span>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -64007,7 +65138,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          American owners pose threat to English pyramid
+                          <span
+                            class="css-65zrxz"
+                          >
+                            American owners pose threat to English pyramid 2
+                          </span>
                         </span>
                       </span>
                     </a>
@@ -64081,7 +65216,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          American owners pose threat to English pyramid
+                          <span
+                            class="css-65zrxz"
+                          >
+                            American owners pose threat to English pyramid 2
+                          </span>
                         </span>
                       </span>
                     </a>
@@ -64113,18 +65252,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-6tvr2h"
                       >
                         <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                         />
                       </div>
                       <span
@@ -64231,7 +65364,11 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         <span
                           class="css-65zrxz"
                         >
-                          American owners pose threat to English pyramid
+                          <span
+                            class="css-65zrxz"
+                          >
+                            American owners pose threat to English pyramid 2
+                          </span>
                         </span>
                       </span>
                     </a>
@@ -65216,6 +66353,205 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               </div>
               <div
                 class="css-919cy0"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
+                  <div
+                    class="css-1kwj960"
+                  >
+                    <picture
+                      class="css-zp0elg"
+                    >
+                      <div
+                        class="css-5pczz7"
+                      />
+                      <img
+                        alt="Blow for rebel clubs as court says Uefa can block Super League 2"
+                        class="css-1qgqq71"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                      />
+                    </picture>
+                  </div>
+                  <div
+                    class="css-17cghxi"
+                  >
+                    <div
+                      class="css-i1f2uq"
+                    >
+                      <span
+                        class="css-6tvr2h"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-17e8e7g"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-6tvr2h"
+                    >
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1basb1c"
+                    >
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                      <span
+                        class="css-1basb1c"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-13fsx86"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-6tvr2h"
+                    >
+                      <span
+                        class="css-17x5lw"
+                      >
+                        <span
+                          class="css-65zrxz"
+                        >
+                          Blow for rebel clubs as court says Uefa can block Super League 2
+                        </span>
+                      </span>
+                    </a>
+                    <div
+                      class="css-1atazsr"
+                      data-testid="tag-and-flag"
+                    >
+                      <a
+                        class="css-10d4t8c"
+                        href="/"
+                      >
+                        <span
+                          class="css-17x5lw"
+                        >
+                          <span
+                            class="css-1jxv40d"
+                          >
+                            Tag
+                          </span>
+                        </span>
+                      </a>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                      <span
+                        class="css-d9hjcx"
+                      >
+                        American owners pose threat to English pyramid 2
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-17e8e7g"
               >
                 <div
                   class="css-1nw1nne"
@@ -65245,12 +66581,53 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-6tvr2h"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          BREAKING
-                        </div>
+                        American owners pose threat to English pyramid 2
                       </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-1ipehn5"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-1i1gqyx"
+                    data-testid="divider"
+                  />
+                </div>
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-6tvr2h"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -65315,114 +66692,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-d9hjcx"
                       >
-                        Flag5
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="css-17e8e7g"
-              >
-                <div
-                  class="css-1nw1nne"
-                >
-                  <div
-                    class="css-1kwj960"
-                  >
-                    <picture
-                      class="css-zp0elg"
-                    >
-                      <div
-                        class="css-5pczz7"
-                      />
-                      <img
-                        alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                        class="css-1qgqq71"
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                      />
-                    </picture>
-                  </div>
-                  <div
-                    class="css-17cghxi"
-                  >
-                    <div
-                      class="css-i1f2uq"
-                    >
-                      <span
-                        class="css-6tvr2h"
-                      >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          BREAKING
-                        </div>
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-1basb1c"
-                      >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          Q&A
-                        </div>
-                      </span>
-                    </div>
-                    <a
-                      class="css-17mo6gr"
-                      href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                      role="link"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          Blow for rebel clubs as court says Uefa can block Super League 2
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
-                    >
-                      <a
-                        class="css-10d4t8c"
-                        href="/"
-                      >
-                        <span
-                          class="css-17x5lw"
-                        >
-                          <span
-                            class="css-1jxv40d"
-                          >
-                            Tag
-                          </span>
-                        </span>
-                      </a>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                      <span
-                        class="css-d9hjcx"
-                      >
-                        Flag5
+                        American owners pose threat to English pyramid 2
                       </span>
                     </div>
                   </div>
@@ -67705,12 +68975,290 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-d9hjcx"
                       >
-                        Flag1
+                        Flag5
                       </span>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1gwix8r"
+  >
+    <div
+      class="css-1polam9"
+    >
+      <div
+        class="css-6wqjuf"
+      >
+        <div
+          class="css-j6pksw"
+        >
+          <div
+            class="css-uxw9nr"
+          >
+            <picture
+              class="css-zp0elg"
+            >
+              <div
+                class="css-5pczz7"
+              />
+              <img
+                alt="Short title of the card describing the main content"
+                class="css-1qgqq71"
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+              />
+            </picture>
+          </div>
+          <p
+            class="css-1c5i4sy"
+          >
+            Sarcacens an inclusive club? They didnt look out for me
+            <span
+              class="css-15rs040"
+            >
+              Gareth Fuller/Press Association
+            </span>
+          </p>
+        </div>
+        <div
+          class="css-gpke1l"
+        >
+          <div
+            class="css-3kejzs"
+          >
+            <span
+              class="css-6tvr2h"
+            >
+              <div
+                class="css-gb5m6n"
+              >
+                NEW
+              </div>
+            </span>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-15kf7hd"
+                data-testid="divider"
+              />
+            </div>
+            <span
+              class="css-1basb1c"
+            >
+              <div
+                class="css-gb5m6n"
+              >
+                REVIEW
+              </div>
+            </span>
+          </div>
+          <a
+            class="css-10h0i3c"
+            href="#"
+          >
+            <span
+              class="css-17x5lw"
+            >
+              <span
+                class="css-8gj81n"
+              >
+                Short title of the card describing the main content
+              </span>
+            </span>
+          </a>
+          <p
+            class="css-vdfsd1"
+          >
+            160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+          </p>
+          <div
+            class="css-1atazsr"
+            data-testid="tag-and-flag"
+          >
+            <a
+              class="css-10d4t8c"
+              href="/"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-1jxv40d"
+                >
+                  Tag
+                </span>
+              </span>
+            </a>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-15kf7hd"
+                data-testid="divider"
+              />
+            </div>
+            <span
+              class="css-d9hjcx"
+            >
+              Flag
+            </span>
+          </div>
+          <ul
+            class="css-a5fiw2"
+            role="list"
+          >
+            <li
+              class="css-czt13m"
+            >
+              <div
+                class="css-16r6s3u"
+              >
+                <div
+                  aria-hidden="true"
+                  class="css-wmopxz"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-z5ltm7-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="css-xg8lki"
+                >
+                  <a
+                    class="css-1ks9f1u"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-1wc2zh5"
+                      >
+                        Unordered list item
+                      </span>
+                    </span>
+                  </a>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="css-11icnc2"
+      >
+        <div
+          class="css-1g5vzsh"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-l3xd1q"
+            data-testid="divider"
+          />
+        </div>
+        <div
+          class="css-1nw1nne"
+        >
+          <div
+            class="css-17cghxi"
+          >
+            <div
+              class="css-122i4mv"
+            >
+              <span
+                class="css-6tvr2h"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  BREAKING
+                </div>
+              </span>
+              <div
+                class="css-lew009"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-15kf7hd"
+                  data-testid="divider"
+                />
+              </div>
+              <span
+                class="css-1basb1c"
+              >
+                <div
+                  class="css-gb5m6n"
+                >
+                  PROFILE
+                </div>
+              </span>
+            </div>
+            <a
+              class="css-17mo6gr"
+              href="#"
+              role="link"
+            >
+              <span
+                class="css-17x5lw"
+              >
+                <span
+                  class="css-65zrxz"
+                >
+                  Short title of the card describing the main content 2
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-1g5vzsh"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-xvacx"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-e0a604"
+        >
+          <div
+            class="css-6wqjuf"
+          >
+            <div
+              class="css-gpke1l"
+            >
               <div
                 class="css-1osy5lm"
               >
@@ -67794,6 +69342,42 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   </div>
                 </div>
               </div>
+              <a
+                class="css-10h0i3c"
+                href="#"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-65zrxz"
+                  >
+                    Short title of the card describing the main content 3
+                  </span>
+                </span>
+              </a>
+              <p
+                class="css-1nrveqv"
+              >
+                160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+              </p>
+            </div>
+          </div>
+          <div
+            class="css-1je0m5w"
+          >
+            <hr
+              aria-hidden="true"
+              class="css-xr87n0"
+              data-testid="divider"
+            />
+          </div>
+          <div
+            class="css-6wqjuf"
+          >
+            <div
+              class="css-gpke1l"
+            >
               <div
                 class="css-17e8e7g"
               >
@@ -67866,7 +69450,84 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       </span>
                     </a>
                   </div>
-                </div>
+                </span>
+              </div>
+              <a
+                class="css-10h0i3c"
+                href="#"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-65zrxz"
+                  >
+                    Short title of the card describing the main content 4
+                  </span>
+                </span>
+              </a>
+              <p
+                class="css-1nrveqv"
+              >
+                160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-geh752"
+    >
+      <div
+        class="css-16i6sav"
+      >
+        <div
+          class="css-1g5vzsh"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1i1gqyx"
+            data-testid="divider"
+          />
+        </div>
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-15edd2j"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-uh7mej"
+            data-testid="divider"
+          />
+        </div>
+        <div
+          class="css-1snp8e9"
+        >
+          <div
+            class="css-6wqjuf"
+          >
+            <div
+              class="css-j6pksw"
+            >
+              <div
+                class="css-uxw9nr"
+              >
+                <picture
+                  class="css-zp0elg"
+                >
+                  <div
+                    class="css-5pczz7"
+                  />
+                  <img
+                    alt="Sarcacens an inclusive club? They didnt look out for me"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                  />
+                </picture>
               </div>
               <div
                 class="css-13fsx86"
@@ -67984,11 +69645,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-1basb1c"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          PROFILE
-                        </div>
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </div>
                     <a
@@ -68067,11 +69724,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-1basb1c"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          PROFILE
-                        </div>
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </div>
                     <a
@@ -68105,7 +69758,23 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-919cy0"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -68150,11 +69819,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-1basb1c"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          REVIEW
-                        </div>
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </div>
                     <a
@@ -68198,7 +69863,23 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-17e8e7g"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -68243,11 +69924,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-1basb1c"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          REVIEW
-                        </div>
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </div>
                     <a
@@ -68291,7 +69968,23 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-13fsx86"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -68336,11 +70029,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-1basb1c"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          REVIEW
-                        </div>
+                        European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2
                       </span>
                     </div>
                     <a
@@ -69286,6 +70975,22 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-1nw1nne"
                   >
                     <div
+                      class="css-1kwj960"
+                    >
+                      <picture
+                        class="css-zp0elg"
+                      >
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
                       class="css-17cghxi"
                     >
                       <div
@@ -69330,7 +71035,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-65zrxz"
                           >
-                            Blow for rebel clubs as court says Uefa can block Super League 2
+                            American owners pose threat to English pyramid 2
                           </span>
                         </span>
                       </a>
@@ -69386,7 +71091,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           class="css-5pczz7"
                         />
                         <img
-                          alt="Blow for rebel clubs as court says Uefa can block Super League 2"
+                          alt="American owners pose threat to English pyramid 2"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                         />
@@ -69437,7 +71142,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-65zrxz"
                           >
-                            Blow for rebel clubs as court says Uefa can block Super League 2
+                            American owners pose threat to English pyramid 2
                           </span>
                         </span>
                       </a>
@@ -69493,7 +71198,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           class="css-5pczz7"
                         />
                         <img
-                          alt="Blow for rebel clubs as court says Uefa can block Super League 2"
+                          alt="American owners pose threat to English pyramid 2"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                         />
@@ -69544,7 +71249,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-65zrxz"
                           >
-                            Blow for rebel clubs as court says Uefa can block Super League 2
+                            American owners pose threat to English pyramid 2
                           </span>
                         </span>
                       </a>
@@ -69979,11 +71684,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-6tvr2h"
                           >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              UPDATED
-                            </div>
+                            American owners pose threat to English pyramid 2
                           </span>
                           <div
                             class="css-lew009"
@@ -70197,52 +71898,14 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         class="css-17cghxi"
                       >
                         <div
-                          class="css-i1f2uq"
-                        >
-                          <span
-                            class="css-6tvr2h"
-                          >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              UPDATED
-                            </div>
-                          </span>
-                          <div
-                            class="css-lew009"
-                          >
-                            <hr
-                              aria-hidden="true"
-                              class="css-15kf7hd"
-                              data-testid="divider"
-                            />
-                          </div>
-                          <span
-                            class="css-1basb1c"
-                          >
-                            <div
-                              class="css-gb5m6n"
-                            >
-                              PROFILE
-                            </div>
-                          </span>
-                        </div>
-                        <a
-                          class="css-17mo6gr"
-                          href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                          role="link"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              American owners pose threat to English pyramid
-                            </span>
-                          </span>
-                        </a>
-                      </div>
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
                     </div>
                   </div>
                   <div
@@ -70383,11 +72046,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-17x5lw"
                           >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              American owners pose threat to English pyramid
-                            </span>
+                            American owners pose threat to English pyramid 2
                           </span>
                         </a>
                       </div>
@@ -72500,7 +74159,23 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-1ipehn5"
               >
                 <div
-                  class="css-niwyl0"
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -72527,12 +74202,44 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-6tvr2h"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
+                        American owners pose threat to English pyramid 2
                       </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-17e8e7g"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-6tvr2h"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -72560,16 +74267,27 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-17x5lw"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          European cup winner Mihajlovic dies aged 53 after battle with leukaemia
-                        </span>
+                        American owners pose threat to English pyramid 2
                       </span>
                     </a>
                     <div
-                      class="css-1atazsr"
-                      data-testid="tag-and-flag"
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-6tvr2h"
                     >
                       <a
                         class="css-10d4t8c"
@@ -72597,7 +74315,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-d9hjcx"
                       >
-                        Flag1
+                        American owners pose threat to English pyramid 2
                       </span>
                     </div>
                   </div>
@@ -72676,11 +74394,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-17x5lw"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          American owners pose threat to English pyramid
-                        </span>
+                        American owners pose threat to English pyramid 2
                       </span>
                     </a>
                   </div>
@@ -72690,7 +74404,32 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-17e8e7g"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-1i1gqyx"
+                    data-testid="divider"
+                  />
+                </div>
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -72750,11 +74489,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-17x5lw"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          American owners pose threat to English pyramid
-                        </span>
+                        American owners pose threat to English pyramid 2
                       </span>
                     </a>
                   </div>
@@ -74741,19 +76476,19 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <div
                         class="css-1kwj960"
                       >
-                        <picture
-                          class="css-zp0elg"
-                        >
-                          <div
-                            class="css-5pczz7"
-                          />
-                          <img
-                            alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                          />
-                        </picture>
-                      </div>
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-17cghxi"
                       >
@@ -74833,7 +76568,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-d9hjcx"
                           >
-                            Flag1
+                            American owners pose threat to English pyramid 2
                           </span>
                         </div>
                       </div>
@@ -74848,19 +76583,19 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <div
                         class="css-1kwj960"
                       >
-                        <picture
-                          class="css-zp0elg"
-                        >
-                          <div
-                            class="css-5pczz7"
-                          />
-                          <img
-                            alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                          />
-                        </picture>
-                      </div>
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-17cghxi"
                       >
@@ -74940,7 +76675,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-d9hjcx"
                           >
-                            Flag1
+                            American owners pose threat to English pyramid 2
                           </span>
                         </div>
                       </div>
@@ -74955,19 +76690,19 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <div
                         class="css-1kwj960"
                       >
-                        <picture
-                          class="css-zp0elg"
-                        >
-                          <div
-                            class="css-5pczz7"
-                          />
-                          <img
-                            alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                          />
-                        </picture>
-                      </div>
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
+                    >
                       <div
                         class="css-17cghxi"
                       >
@@ -75047,7 +76782,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-d9hjcx"
                           >
-                            Flag1
+                            American owners pose threat to English pyramid 2
                           </span>
                         </div>
                       </div>
@@ -75126,11 +76861,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-17x5lw"
                           >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              American owners pose threat to English pyramid
-                            </span>
+                            American owners pose threat to English pyramid 2
                           </span>
                         </a>
                       </div>
@@ -75140,7 +76871,32 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     class="css-17e8e7g"
                   >
                     <div
-                      class="css-1nw1nne"
+                      class="css-tj8oo8"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-1i1gqyx"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <div
+                      class="css-1kwj960"
+                    >
+                      <picture
+                        class="css-zp0elg"
+                      >
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="American owners pose threat to English pyramid 2"
+                          class="css-1qgqq71"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        />
+                      </picture>
+                    </div>
+                    <div
+                      class="css-17cghxi"
                     >
                       <div
                         class="css-1kwj960"
@@ -75200,11 +76956,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           <span
                             class="css-17x5lw"
                           >
-                            <span
-                              class="css-65zrxz"
-                            >
-                              American owners pose threat to English pyramid
-                            </span>
+                            American owners pose threat to English pyramid 2
                           </span>
                         </a>
                       </div>
@@ -76247,7 +77999,23 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-yj8ahp"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -76274,12 +78042,44 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-6tvr2h"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
+                        American owners pose threat to English pyramid 2
                       </span>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-17e8e7g"
+            >
+              <div
+                class="css-1nw1nne"
+              >
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
+                >
+                  <div
+                    class="css-i1f2uq"
+                  >
+                    <span
+                      class="css-6tvr2h"
+                    >
                       <div
                         class="css-lew009"
                       >
@@ -76344,7 +78144,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-d9hjcx"
                       >
-                        Flag1
+                        American owners pose threat to English pyramid 2
                       </span>
                     </div>
                   </div>
@@ -76354,7 +78154,23 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-1ipehn5"
               >
                 <div
-                  class="css-niwyl0"
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -76381,11 +78197,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-6tvr2h"
                       >
-                        <div
-                          class="css-gb5m6n"
-                        >
-                          UPDATED
-                        </div>
+                        American owners pose threat to English pyramid 2
                       </span>
                       <div
                         class="css-lew009"
@@ -76451,7 +78263,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-d9hjcx"
                       >
-                        Flag1
+                        American owners pose threat to English pyramid 2
                       </span>
                     </div>
                   </div>
@@ -76470,7 +78282,32 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="css-919cy0"
               >
                 <div
-                  class="css-1nw1nne"
+                  class="css-tj8oo8"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-1i1gqyx"
+                    data-testid="divider"
+                  />
+                </div>
+                <div
+                  class="css-1kwj960"
+                >
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="American owners pose threat to English pyramid 2"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <div
+                  class="css-17cghxi"
                 >
                   <div
                     class="css-1kwj960"
@@ -76530,11 +78367,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                       <span
                         class="css-17x5lw"
                       >
-                        <span
-                          class="css-65zrxz"
-                        >
-                          American owners pose threat to English pyramid
-                        </span>
+                        American owners pose threat to English pyramid 2
                       </span>
                     </a>
                   </div>

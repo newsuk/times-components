@@ -35,50 +35,50 @@ const HeroBannerQuintagram: React.FC = (props: any) => {
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M75.0071 2.1853L40.2582 37.9886L39.1735 36.9529L73.9224 1.14951L75.0071 2.1853Z"
         fill="#FFD7A6"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M39.2863 38.6284L1.77276 74.6121L0.723514 73.5395L38.237 37.5558L39.2863 38.6284Z"
         fill="#FFD7A6"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M37.9684 0.000287085L75.54 0.000288743L75.54 1.85059L37.9684 1.85058L37.9684 0.000287085Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0.399848 73.1029L75.54 73.1029L75.54 74.9531L0.399848 74.9531L0.399848 73.1029Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0.397895 37.015L75.5381 37.015L75.5381 38.8652L0.397894 38.8652L0.397895 37.015Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M0.361573 74.9568L0.361573 37.4883L2.19434 37.4883L2.19434 74.9568L0.361573 74.9568Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M37.9749 74.934L37.9749 0L39.8076 0L39.8076 74.934L37.9749 74.934Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M73.7074 74.934L73.7074 0L75.54 0L75.54 74.934L73.7074 74.934Z"
         fill="black"
       />
