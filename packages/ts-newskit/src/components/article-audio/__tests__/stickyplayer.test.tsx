@@ -31,10 +31,20 @@ const renderComponent = (props: InArticleAudioProps) =>
 describe('StickyPlayerMob renders', () => {
   test('renders correctly', async () => {
     const { asFragment } = renderComponent(data);
-    const playBtn = screen.getByRole('button', { name: 'Play' });
+    const playBtn = screen.getByTestId('audio-player-play-btn');
+
+    expect(playBtn).toBeVisible();
+
     await fireEvent.click(playBtn);
 
+    const pauseBtn = screen.getAllByTestId('audio-player-pause-btn');
+    expect(pauseBtn[1]).toBeVisible();
     expect(asFragment()).toMatchSnapshot();
+
+    await fireEvent.click(playBtn);
+
+    const stickyPlayBtn = screen.getAllByTestId('audio-player-play-btn')[1];
+    expect(stickyPlayBtn).toBeVisible();
   });
 });
 
@@ -57,6 +67,7 @@ describe('StickyPlayerMob functions', () => {
     await fireEvent.click(scrollText);
     const audioSlider = screen.queryAllByTestId('audio-slider');
     expect(audioSlider[0]).toBeVisible();
+    expect(audioSlider[1]).not.toBeVisible();
     expect(audioSlider[1]).not.toBeVisible();
   });
 

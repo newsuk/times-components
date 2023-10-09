@@ -12,10 +12,10 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
       role="list"
     >
       <div
-        class="css-pdlt48"
+        class="css-14sj7dz"
       >
         <p
-          class="css-yhevtm"
+          class="css-kkkz9d"
         >
           Home
         </p>
@@ -24,18 +24,14 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
         >
           <button
             aria-expanded="false"
-            class="css-1q8vei8"
+            aria-label="Expand Sccondary Menu"
+            class="css-1mlhsuo"
             data-testid="menu-sub-button"
             type="button"
           >
-            <span
-              class="css-vx6avn"
-            >
-              See all
-            </span>
             <svg
               aria-hidden="true"
-              class="css-1auvcm3-EmotionIconBase ex0cdmw0"
+              class="css-1tvoidw-EmotionIconBase ex0cdmw0"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -72,10 +68,10 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
       role="list"
     >
       <div
-        class="css-pdlt48"
+        class="css-14sj7dz"
       >
         <p
-          class="css-yhevtm"
+          class="css-kkkz9d"
         >
           Home
         </p>
@@ -84,18 +80,14 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
         >
           <button
             aria-expanded="false"
-            class="css-1q8vei8"
+            aria-label="Expand Sccondary Menu"
+            class="css-1mlhsuo"
             data-testid="menu-sub-button"
             type="button"
           >
-            <span
-              class="css-vx6avn"
-            >
-              See all
-            </span>
             <svg
               aria-hidden="true"
-              class="css-1auvcm3-EmotionIconBase ex0cdmw0"
+              class="css-1tvoidw-EmotionIconBase ex0cdmw0"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"

@@ -58,32 +58,32 @@ const SudokusIcon: React.FC = props => {
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M376.225 5.96875H6.16211V376.031H376.225V5.96875ZM0.193359 0V382H382.193V0H0.193359Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M124.809 381.84L124.809 5.96899L131.447 5.96899L131.447 381.84L124.809 381.84Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M250.099 381.84L250.099 5.96899L256.737 5.96899L256.737 381.84L250.099 381.84Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M6.15674 127.94L379.538 127.94L379.538 134.578L6.15674 134.578L6.15674 127.94Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M6.15674 253.23L379.538 253.23L379.538 259.868L6.15674 259.868L6.15674 253.23Z"
         fill="black"
       />

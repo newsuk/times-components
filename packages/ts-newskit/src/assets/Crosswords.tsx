@@ -45,32 +45,32 @@ const CrosswordsIcon: React.FC = (props: any) => {
         fill="#FFBB6A"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M376.031 5.96875H5.96875V376.031H376.031V5.96875ZM0 0V382H382V0H0Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M127.103 379.351L127.103 5.96948L133.741 5.96948L133.741 379.351L127.103 379.351Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M249.904 381.84L249.904 5.96948L256.542 5.96948L256.542 381.84L249.904 381.84Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M376.024 257.38L0.153809 257.38L0.153809 250.742L376.024 250.742L376.024 257.38Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M376.024 132.089L0.153809 132.089L0.153809 125.452L376.024 125.452L376.024 132.089Z"
         fill="black"
       />

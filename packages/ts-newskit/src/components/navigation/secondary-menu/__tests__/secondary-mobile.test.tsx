@@ -50,6 +50,5 @@ describe('Secondary Menu Mobile', () => {
     const Button = getByTestId('menu-sub-button');
     fireEvent.click(Button);
     expect(queryByText('News')).not.toBeInTheDocument();
-    expect(queryByText('See all')).toBeInTheDocument();
   });
 });

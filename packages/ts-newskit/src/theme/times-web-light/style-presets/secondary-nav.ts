@@ -1,8 +1,14 @@
 export const secondaryNavigationStylePresets = {
-  subMenu: {
+  subMenuMob: {
     base: {
-      borderRadius: '{{sizing.sizing010}}',
+      borderRadius: '{{sizing.sizing050}}',
       backgroundColor: '{{colors.white}}'
+    }
+  },
+  subMenuMobIcon: {
+    base: {
+      height: '{{sizing.sizing040}}',
+      width: '{{sizing.sizing040}}'
     }
   },
   menuItemDesktop: {
@@ -29,21 +35,6 @@ export const secondaryNavigationStylePresets = {
       borderBottom: '1px solid {{colors.neutral010}}'
     }
   },
-  icon: {
-    base: {
-      position: 'absolute',
-      right: '25px',
-      height: '{{sizing.sizing040}}',
-      width: '{{sizing.sizing040}}'
-    }
-  },
-
-  secondaryNavMenuBlock: {
-    base: {
-      backgroundColor: '{{colors.neutral010}}'
-    }
-  },
-
   menuItemMore: {
     base: {
       color: '{{colors.neutral090}}'

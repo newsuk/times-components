@@ -72,6 +72,12 @@ export const StyledBlock = styled(Block)`
   height: 48px;
 `;
 
+export const MenuContainerMob = styled(StyledBlock)`
+  align-items: center;
+  ${getColorCssFromTheme('backgroundColor', 'neutral010')};
+  ${getColorCssFromTheme('backgroundColor', 'sectionBrand060')};
+`;
+
 export const MenuContainer = styled(Menu)`
   ul {
     display: flex;
@@ -108,4 +114,10 @@ export const NavItemsContainer = styled.div`
 export const NavItemsMobileContainer = styled.div<NavItemMobileContainerProp>`
   height: ${({ $height }) => $height};
   overflow-y: auto;
+`;
+
+export const MenuSubMob = styled(MenuSub)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
