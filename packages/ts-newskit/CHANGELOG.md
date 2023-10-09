@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.106.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.105.0...@times-components/ts-newskit@1.106.0) (2023-10-06)
+
+
+### Features
+
+* **TMPZ-169:** How to play ([#3568](https://github.com/newsuk/times-components/issues/3568)) ([471de52](https://github.com/newsuk/times-components/commit/471de52697a3f20d70962038cfc225120edf2921))
+
+
+
+
+
 # [1.105.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.104.0...@times-components/ts-newskit@1.105.0) (2023-10-06)
 
 

@@ -19,6 +19,9 @@ An array of hint objects to be displayed.
 Each hint object should have the following structure:
 - `text` (string): The hint text.
 
+### `totalHints` (optional)
+Number of total hints
+
 ## Code Example
 
 `<HintDisplay
@@ -27,6 +30,7 @@ Each hint object should have the following structure:
     { text: "This is the second hint." },
     { text: "This is the third hint." },
   ]}
+  totalHints= 3
 />`
 
 An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the FinalScreen component.
@@ -34,9 +38,9 @@ An example of the `data` structure can be found in the 'Controls' section on the
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const HintDisplayStory = ({ hints }) => (
+export const HintDisplayStory = ({ hints, totalHints }) => (
   <NewsKitProvider theme={PuzzlesWebLightTheme}>
-    <HintDisplay hints={hints} />
+    <HintDisplay hints={hints} totalHints={totalHints}/>
   </NewsKitProvider>
 );
 
@@ -46,6 +50,7 @@ export const HintDisplayStory = ({ hints }) => (
     { text: "This is the second hint." },
     { text: "This is the third hint." },
   ],
+  totalHints: 3
 }}>
   {HintDisplayStory}
 </Story>

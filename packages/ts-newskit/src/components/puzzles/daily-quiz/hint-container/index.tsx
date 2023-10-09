@@ -32,7 +32,7 @@ export const HintContainer: FC<HintProps> = ({
         disabled={hintIndex >= totalHints}
         title={title}
       />
-      <HintDisplay hints={hints} />
+      <HintDisplay hints={hints} totalHints={totalHints} />
     </>
   );
 };
