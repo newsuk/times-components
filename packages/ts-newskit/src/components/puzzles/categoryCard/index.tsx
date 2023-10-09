@@ -28,10 +28,10 @@ export const CategoryCard: FC<CategoryCardProps> = ({ type, url, Icon }) => {
           stackDistribution="center"
           paddingBlock={{
             xs: 'space040',
-            sm: 'space050',
-            md: 'space050',
-            lg: 'space060',
-            xl: 'space070'
+            sm: 'space060',
+            md: 'space040',
+            lg: 'space040',
+            xl: 'space050'
           }}
         >
           <Icon />
@@ -53,7 +53,7 @@ export const CategoryCard: FC<CategoryCardProps> = ({ type, url, Icon }) => {
               overrides={{
                 marginBlockEnd: 'space040',
                 marginBlockStart: 'space040',
-                typographyPreset: 'editorialHeadline020'
+                typographyPreset: 'editorialHeadline010'
               }}
             >
               {type}

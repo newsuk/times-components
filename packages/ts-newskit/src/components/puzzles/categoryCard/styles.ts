@@ -11,13 +11,13 @@ export const StyledIconWrapper = styled(Stack)`
     height: auto;
     width: 75px;
     ${getMediaQueryFromTheme('md')} {
-      width: 65px;
+      width: 60px;
     }
     ${getMediaQueryFromTheme('lg')} {
-      width: 82px;
+      width: 75px;
     }
     ${getMediaQueryFromTheme('xl')} {
-      width: 120px;
+      width: 75px;
     }
   }
 `;
