@@ -225,7 +225,7 @@ exports[`InfoCard renders 1`] = `
                   >
                     <path
                       d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                      fillRule="nonzero"
+                      fill-rule="nonzero"
                     />
                   </svg>
                 </button>
@@ -256,7 +256,7 @@ exports[`InfoCard renders 1`] = `
                   >
                     <path
                       d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                      fillRule="nonzero"
+                      fill-rule="nonzero"
                     />
                   </svg>
                 </button>
@@ -495,7 +495,7 @@ exports[`InfoCard renders no image 1`] = `
                   >
                     <path
                       d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                      fillRule="nonzero"
+                      fill-rule="nonzero"
                     />
                   </svg>
                 </button>
@@ -526,7 +526,7 @@ exports[`InfoCard renders no image 1`] = `
                   >
                     <path
                       d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                      fillRule="nonzero"
+                      fill-rule="nonzero"
                     />
                   </svg>
                 </button>
@@ -773,7 +773,7 @@ exports[`InfoCard should render the standard component 1`] = `
                 >
                   <path
                     d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                    fillRule="nonzero"
+                    fill-rule="nonzero"
                   />
                 </svg>
               </button>
@@ -804,7 +804,7 @@ exports[`InfoCard should render the standard component 1`] = `
                 >
                   <path
                     d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                    fillRule="nonzero"
+                    fill-rule="nonzero"
                   />
                 </svg>
               </button>
@@ -1036,7 +1036,7 @@ exports[`InfoCard should render the wide component 1`] = `
                 >
                   <path
                     d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                    fillRule="nonzero"
+                    fill-rule="nonzero"
                   />
                 </svg>
               </button>
@@ -1063,7 +1063,7 @@ exports[`InfoCard should render the wide component 1`] = `
                 >
                   <path
                     d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                    fillRule="nonzero"
+                    fill-rule="nonzero"
                   />
                 </svg>
               </button>
