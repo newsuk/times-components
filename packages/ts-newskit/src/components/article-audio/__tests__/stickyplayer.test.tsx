@@ -34,9 +34,9 @@ describe('StickyPlayerMob renders', () => {
     const playBtn = screen.getByTestId('audio-player-play-btn');
 
     expect(playBtn).toBeVisible();
-    
+
     await fireEvent.click(playBtn);
-    
+
     const pauseBtn = screen.getAllByTestId('audio-player-pause-btn');
     expect(pauseBtn[1]).toBeVisible();
     expect(asFragment()).toMatchSnapshot();
