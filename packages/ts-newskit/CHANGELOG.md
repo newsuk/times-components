@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.109.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.108.1...@times-components/ts-newskit@1.109.0) (2023-10-10)
+
+
+### Features
+
+* **TMRX-1519:** update token ([#3573](https://github.com/newsuk/times-components/issues/3573)) ([76f1ec1](https://github.com/newsuk/times-components/commit/76f1ec1998350a962f1bef67fa5f063847a414c6))
+
+
+
+
+
 ## [1.108.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.108.0...@times-components/ts-newskit@1.108.1) (2023-10-10)
 
 **Note:** Version bump only for package @times-components/ts-newskit
