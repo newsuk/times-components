@@ -82,7 +82,7 @@ export const CommentCard = ({
           {byline}
         </CardHeadlineLink>
         <ColouredText
-          typographyPreset="editorialHeadline020"
+          typographyPreset="editorialRegularHeadline020"
           $color="sectionBrand070"
         >
           {headline}
