@@ -135,3 +135,24 @@ stylePresets.HintBtn = {
     backgroundColor: '{{colors.neutral020}}'
   }
 };
+
+stylePresets.inputStyle = {
+    base: {
+      borderRadius: '{{borders.borderRadiusRounded020}}',
+      borderStyle: 'solid',
+      borderWidth: '{{borders.borderWidthDefault}}',
+      textAlign: 'right',
+      borderColor: '{{colors.interactiveInput020}}',    
+    },
+    invalid: {
+      borderColor: '{{colors.inkNegative}}',   
+    }
+  };
+
+  stylePresets.assistiveTextError = {
+    base: {
+      color: '{{colors.inkNegative}}',
+      textAlign: 'center'
+    }
+  }
+

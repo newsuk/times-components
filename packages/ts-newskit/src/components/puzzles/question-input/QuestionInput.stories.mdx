@@ -1,0 +1,40 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { QuestionInput } from "./index";
+import { puzzles } from './fixtures/data.json';
+import { NewsKitProvider } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../theme';
+
+<Meta
+  title="Newskit Components/Puzzles/Question input"
+  component={QuestionInput}
+/>
+
+# QuestionInput component
+The `QuestionInput` component is used to display a puzzle card.
+
+This component takes in the following props:
+
+## Props
+<Props of={QuestionInput} />
+
+## Code Example
+`<QuestionInput data={data} />`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can review and configure with different titles.
+
+export const QuestionInputStory = ({}) => (
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+    <QuestionInput />
+  </NewsKitProvider>
+);
+
+<Story
+  name="QuestionInput"
+  args={{  }}
+  argTypes={{
+   
+  }}
+>
+  {QuestionInputStory.bind({})}
+</Story>

@@ -46,6 +46,7 @@ export { PersonalStats } from './components/puzzles/personal-stats';
 export { PuzzleCard } from './components/puzzles/puzzle-card';
 export { StoryCardListing } from './components/puzzles/story-card-listing';
 export { StoryCard } from './components/puzzles/storyCard';
+export { QuestionInput } from './components/puzzles/question-input';
 export { PuzzlesWebLightTheme } from './theme/puzzles-web-light/index';
 
 // SLICES
