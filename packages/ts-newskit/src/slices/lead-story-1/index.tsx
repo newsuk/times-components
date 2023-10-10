@@ -1,11 +1,5 @@
-import {
-  Block,
-  Divider,
-  useBreakpointKey,
-  Visible,
-  BreakpointKeys
-} from 'newskit';
-import React, { useState, useEffect } from 'react';
+import { Block, Divider, Visible } from 'newskit';
+import React from 'react';
 import {
   LeadArticle,
   LeadArticleProps
@@ -23,8 +17,8 @@ import {
 } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
-import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType } from '../types';
+import { defaultArticleOptions } from '../../utils/default-article-options';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
@@ -47,37 +41,33 @@ export const LeadStory1 = ({
   articlesWithListItems,
   clickHandler
 }: LeadStory1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xl');
-  const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
-    },
-    [breakpointKey]
-  );
-
-  const screenXsAndSm =
-    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
-  const modifiedArticles =
-    currentBreakpoint === 'xl'
-      ? articles.map(article => ({
-          ...clearCreditsAndCaption(article),
-          imageRight: true
-        }))
-      : articles;
-
   const modifiedArticlesWithUnorderedList = {
     ...articlesWithListItems,
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
-    headlineTypographyPreset:
-      currentBreakpoint === 'xs'
-        ? 'editorialHeadline040'
-        : currentBreakpoint === 'sm'
-          ? 'editorialHeadline050'
-          : 'editorialHeadline060',
-    hideImage: !screenXsAndSm,
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline040',
+      sm: 'editorialHeadline050',
+      md: 'editorialHeadline060'
+    },
     imageTop: true
+  };
+
+  const articlesWithUnorderedListOptions = {
+    md: {
+      hideImage: true
+    },
+    lg: {
+      hideImage: true
+    },
+    xl: {
+      hideImage: true
+    }
+  };
+
+  const modifiedArticlesWithUnorderedListOptions = {
+    ...defaultArticleOptions,
+    ...articlesWithUnorderedListOptions
   };
 
   const modifiedLeadArticle = {
@@ -85,9 +75,10 @@ export const LeadStory1 = ({
     hasTopBorder: false,
     imageTop: true,
     isLeadImage: true,
-    headlineTypographyPreset: screenXsAndSm
-      ? 'editorialHeadline040'
-      : 'editorialHeadline020'
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline040',
+      md: 'editorialHeadline020'
+    }
   };
 
   const modifiedSingleArticle = {
@@ -113,10 +104,19 @@ export const LeadStory1 = ({
           md: '260px'
         }}
       >
-        <LeadArticle
-          article={modifiedArticlesWithUnorderedList}
-          clickHandler={clickHandler}
-        />
+        {Object.entries(modifiedArticlesWithUnorderedListOptions).map(
+          ([breakpoint, opts]) => (
+            <Visible {...{ [breakpoint]: true }}>
+              <LeadArticle
+                article={{
+                  ...modifiedArticlesWithUnorderedList,
+                  ...opts
+                }}
+                clickHandler={clickHandler}
+              />
+            </Visible>
+          )
+        )}
         {singleArticle && (
           <BlockItem>
             <FullWidthBlock>
@@ -222,19 +222,25 @@ export const LeadStory1 = ({
           />
         </Block>
       </StackItem>
-      {screenXsAndSm ? (
+      <FullWidthHidden md lg xl>
         <BlockItem>
           <ComposedArticleStack
-            articles={modifiedArticles}
+            articles={articles}
             clickHandler={clickHandler}
           />
         </BlockItem>
-      ) : (
+      </FullWidthHidden>
+      <Visible md lg xl>
         <ArticleStackLeadStory
-          modifiedArticles={modifiedArticles}
+          articleOptions={{
+            xl: {
+              imageRight: true
+            }
+          }}
+          modifiedArticles={articles}
           clickHandler={clickHandler}
         />
-      )}
+      </Visible>
     </CustomStackLayout>
   );
 };

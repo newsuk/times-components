@@ -5,6 +5,7 @@ import { StackItem, ScrollContainer } from '../shared-styles';
 import { ComposedArticleStack } from './composed-article-stack';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType, StackArticleOptions } from '../types';
+import { defaultArticleOptions } from '../../utils/default-article-options';
 
 export const ArticleStackLarge = ({
   articles,
@@ -15,14 +16,6 @@ export const ArticleStackLarge = ({
   clickHandler: ClickHandlerType;
   articleOptions?: StackArticleOptions;
 }) => {
-  const defaultArticleOptions = {
-    xs: {},
-    sm: {},
-    md: {},
-    lg: {},
-    xl: {}
-  };
-
   const modifiedArticleOptions = {
     ...defaultArticleOptions,
     ...articleOptions
@@ -108,14 +101,6 @@ export const ArticleStackSmall = ({
   clickHandler: ClickHandlerType;
   articleOptions?: StackArticleOptions;
 }) => {
-  const defaultArticleOptions = {
-    xs: {},
-    sm: {},
-    md: {},
-    lg: {},
-    xl: {}
-  };
-
   const modifiedArticleOptions = {
     ...defaultArticleOptions,
     ...articleOptions

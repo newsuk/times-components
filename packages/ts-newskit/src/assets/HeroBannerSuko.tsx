@@ -12,26 +12,26 @@ const HeroBannerSuko: React.FC = (props: any) => {
     >
       <path d="M16.834 16.834H57.9162V57.9162H16.834V16.834Z" fill="#FFD7A6" />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M16.0652 59.3598L16.0652 0.0781249L18.3965 0.078125L18.3965 59.3598L16.0652 59.3598Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M57.0271 74.0161L57.0271 16.7327L59.3584 16.7327L59.3584 74.0161L57.0271 74.0161Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M74.9994 59.3825L16.0508 59.3825L16.0508 57.3843L74.9994 57.3843L74.9994 59.3825Z"
         fill="black"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M59.3578 17.7297L0.0761719 17.7297L0.0761719 15.3984L59.3578 15.3984L59.3578 17.7297Z"
         fill="black"
       />
@@ -40,8 +40,8 @@ const HeroBannerSuko: React.FC = (props: any) => {
         fill="white"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M74.9231 57.2343C74.9231 66.5539 67.3681 74.1089 58.0485 74.1089C48.7289 74.1089 41.1738 66.5539 41.1738 57.2343C41.1738 47.9147 48.7289 40.3596 58.0485 40.3596C67.3681 40.3596 74.9231 47.9147 74.9231 57.2343ZM58.0485 71.8802C66.1372 71.8802 72.6944 65.323 72.6944 57.2343C72.6944 49.1455 66.1372 42.5883 58.0485 42.5883C49.9597 42.5883 43.4026 49.1455 43.4026 57.2343C43.4026 65.323 49.9597 71.8802 58.0485 71.8802Z"
         fill="black"
       />
@@ -50,8 +50,8 @@ const HeroBannerSuko: React.FC = (props: any) => {
         fill="white"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M33.7493 16.8746C33.7493 26.1942 26.1942 33.7493 16.8746 33.7493C7.55503 33.7493 0 26.1942 0 16.8746C0 7.55503 7.55503 0 16.8746 0C26.1942 0 33.7493 7.55503 33.7493 16.8746ZM16.8746 31.5206C24.9633 31.5206 31.5205 24.9634 31.5205 16.8746C31.5205 8.78592 24.9633 2.22873 16.8746 2.22873C8.78592 2.22873 2.22872 8.78592 2.22872 16.8746C2.22872 24.9634 8.78592 31.5206 16.8746 31.5206Z"
         fill="black"
       />

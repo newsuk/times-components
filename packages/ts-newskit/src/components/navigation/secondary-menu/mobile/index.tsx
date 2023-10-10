@@ -13,7 +13,6 @@ export const SecondaryNavMobile: React.FC<{
   clickHandler: (title: string) => void;
 }> = ({ options, data, onClick, height = 'auto', clickHandler }) => {
   const { isExpanded, isSelected } = options;
-  const subMenuTitle = isExpanded ? 'Close' : 'See all';
   const navRef = useRef<HTMLDivElement>(null);
   const [navHeight, setNavHeight] = useState<string>(height);
 
@@ -43,12 +42,7 @@ export const SecondaryNavMobile: React.FC<{
         spaceInline: 'space000'
       }}
     >
-      <Navigator
-        title={isSelected}
-        options={options}
-        subMenuTitle={subMenuTitle}
-        onClick={onClick}
-      />
+      <Navigator title={isSelected} options={options} onClick={onClick} />
       {isExpanded ? (
         <NavItemsMobileContainer $height={navHeight} ref={navRef}>
           <NavItems data={data} options={options} clickHandler={clickHandler} />

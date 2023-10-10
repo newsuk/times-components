@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.81.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.80.0...@times-components/ts-components@1.81.0) (2023-10-09)
+
+
+### Features
+
+* **TMRX-1528:** update secondary nav styling ([#3571](https://github.com/newsuk/times-components/issues/3571)) ([8ebe00e](https://github.com/newsuk/times-components/commit/8ebe00eecc22cd00fca9c9a8b54bb3942b8665a0))
+
+
+
+
+
 # [1.80.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.79.0...@times-components/ts-components@1.80.0) (2023-09-15)
 
 

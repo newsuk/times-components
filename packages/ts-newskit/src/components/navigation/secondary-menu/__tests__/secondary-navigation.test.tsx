@@ -88,7 +88,7 @@ describe('Secondary Menu', () => {
   });
 
   it('should close the dropdown ', () => {
-    const { getByText, queryByText, getAllByText } = render(
+    const { getByTestId, queryByText, getAllByText } = render(
       <SecondaryNavigation
         data={mainMenuItems}
         pageSlug="home"
@@ -100,10 +100,9 @@ describe('Secondary Menu', () => {
         clickHandler={mockClickHandler}
       />
     );
-    const SeeAllButton = getByText('See all');
+    const SeeAllButton = getByTestId('menu-sub-button');
     fireEvent.click(SeeAllButton);
     waitFor(() => expect(queryByText('News')).toBeInTheDocument());
-    waitFor(() => expect(queryByText('Close')).toBeInTheDocument());
     const newsButton = getAllByText('News')[0];
     fireEvent.click(newsButton);
     waitFor(() => expect(queryByText('News')).toBeInTheDocument());
