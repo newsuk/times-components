@@ -1,6 +1,6 @@
 import React from 'react';
 import { GridLayout, GridLayoutItem } from 'newskit';
-import { StyledTitleBar, GridItemWithDivider } from './styles';
+import { StyledTitleBar } from './styles';
 import { CategoryCard } from '../categoryCard';
 import {
   NewsKitSudokusIcon,
@@ -27,33 +27,33 @@ interface TeaserCardsContainerProps {
 
 const iconMapping: Record<PuzzleType, IconComponent> = {
   Sudokus: () => (
-    <NewsKitSudokusIcon className="puzzle-icon" width={120} height={120} />
+    <NewsKitSudokusIcon className="puzzle-icon" width={75} height={75} />
   ),
   Crosswords: () => (
-    <NewsKitCrosswordsIcon className="puzzle-icon" width={120} height={120} />
+    <NewsKitCrosswordsIcon className="puzzle-icon" width={75} height={75} />
   ),
   'Word Puzzles': () => (
-    <NewsKitWordPuzzlesIcon className="puzzle-icon" width={120} height={120} />
+    <NewsKitWordPuzzlesIcon className="puzzle-icon" width={75} height={75} />
   ),
   'Numbers And Logic': () => (
     <NewsKitNumbersAndLogicIcon
       className="puzzle-icon"
-      width={120}
-      height={120}
+      width={75}
+      height={75}
     />
   ),
   'Quizzes And Teasers': () => (
     <NewsKitQuizzesAndTeasersIcon
       className="puzzle-icon"
-      width={120}
-      height={120}
+      width={75}
+      height={75}
     />
   ),
   'Board And Card Games': () => (
     <NewsKitBoardAndCardGamesIcon
       className="puzzle-icon"
-      width={120}
-      height={120}
+      width={75}
+      height={75}
     />
   )
 };
@@ -62,8 +62,6 @@ export const TeaserCardsContainer = ({
   types,
   title
 }: TeaserCardsContainerProps) => {
-  const remainingColumns = (4 - (types.length % 4)) % 4;
-
   return (
     <>
       <StyledTitleBar
@@ -86,32 +84,24 @@ export const TeaserCardsContainer = ({
       <GridLayout
         columns={{
           xs: 'repeat(2, 1fr)',
-          md: 'repeat(4, 1fr)'
+          md: 'repeat(6, 1fr)'
         }}
         columnGap={{
           xs: 'space050',
-          md: 'space060'
+          md: 'space040',
+          lg: 'space050',
+          xl: 'space060'
         }}
       >
-        {types.map((type, index) => (
-          <GridItemWithDivider className={index % 4 === 3 ? 'last-in-row' : ''}>
-            <GridLayoutItem data-testid="single-card">
-              <CategoryCard
-                type={type}
-                url="https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00"
-                Icon={iconMapping[type]}
-              />
-            </GridLayoutItem>
-          </GridItemWithDivider>
-        ))}
-
-        {/* Empty grid items for dividers */}
-        {remainingColumns > 0 &&
-          Array.from({ length: remainingColumns }).map((_, index) => (
-            <GridItemWithDivider
-              className={index === remainingColumns - 1 ? 'last-in-row' : ''}
+        {types.map((type, __) => (
+          <GridLayoutItem data-testid="single-card">
+            <CategoryCard
+              type={type}
+              url="https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00"
+              Icon={iconMapping[type]}
             />
-          ))}
+          </GridLayoutItem>
+        ))}
       </GridLayout>
     </>
   );
