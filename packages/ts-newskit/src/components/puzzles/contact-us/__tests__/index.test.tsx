@@ -27,4 +27,12 @@ describe('ContactUs', () => {
     const phoneNumber = getByText('080 0068 4965');
     expect(phoneNumber).toBeInTheDocument();
   });
+
+  it('should render contact item phone number', () => {
+    const { getByText } = render(
+      <ContactUs data={contactItems} header="Custom Header" />
+    );
+    const CustomHeader = getByText('Custom Header');
+    expect(CustomHeader).toBeInTheDocument();
+  });
 });
