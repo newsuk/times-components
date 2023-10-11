@@ -24,7 +24,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
         >
           <button
             aria-expanded="false"
-            aria-label="Expand Sccondary Menu"
+            aria-label="Expand Secondary Menu"
             class="css-1mlhsuo"
             data-testid="menu-sub-button"
             type="button"
@@ -80,7 +80,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
         >
           <button
             aria-expanded="false"
-            aria-label="Expand Sccondary Menu"
+            aria-label="Expand Secondary Menu"
             class="css-1mlhsuo"
             data-testid="menu-sub-button"
             type="button"
