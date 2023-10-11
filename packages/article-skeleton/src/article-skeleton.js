@@ -191,148 +191,141 @@ const ArticleSkeleton = ({
               <AdContainer slotName="header" style={styles.adMarginStyle} />
             </HeaderAdContainer>
             <MainContainer>
-              {takeoverContent ? (
+              {!!takeoverContent && (
                 <div
                   dangerouslySetInnerHTML={{
                     __html: takeoverContent
                   }}
                 />
-              ) : (
-                <>
-                  <WelcomeBanner />
-                  {!!zephrDivs && (
-                    <StaticContent
-                      html={
-                        '<div id="nu-zephr-article-target-top-maincontainer"></div>'
-                      }
-                    />
-                  )}
-                  <HeaderContainer showAudioPlayer={showAudioPlayer}>
-                    {!!zephrDivs && (
-                      <StaticContent
-                        html={
-                          '<div id="nu-zephr-article-target-top-headercontainer"></div>'
-                        }
-                      />
-                    )}
-                    <Header />
-                    {isSharingSavingEnabled ? (
-                      <UserState state={UserState.showSaveAndShareBar}>
-                        <MessageContext.Consumer>
-                          {({ showMessage }) => (
-                            <StickySaveAndShareBar
-                              articleId={articleId}
-                              articleHeadline={headline}
-                              articleUrl={url}
-                              onCopyLink={() =>
-                                showMessage("Article link copied")
-                              }
-                              onSaveToMyArticles={() => {}}
-                              onShareOnEmail={() => {}}
-                              savingEnabled={savingEnabled}
-                              sharingEnabled={sharingEnabled}
-                            />
-                          )}
-                        </MessageContext.Consumer>
-                      </UserState>
-                    ) : null}
-                    {!!zephrDivs && (
-                      <StaticContent
-                        html={
-                          '<div id="nu-zephr-article-target-bottom-headercontainer"></div>'
-                        }
-                      />
-                    )}
-                  </HeaderContainer>
-                  <BodyContainer>
-                    {!!zephrDivs && (
-                      <StaticContent
-                        html={
-                          '<div id="nu-zephr-article-target-top-bodycontainer"></div>'
-                        }
-                      />
-                    )}
-                    {newContent && (
-                      <ArticleBody
-                        id={article.id}
-                        analyticsStream={analyticsStream}
-                        content={newContent}
-                        contextUrl={url}
-                        section={section}
-                        articleHeadline={headline}
-                        paidContentClassName={paidContentClassName}
-                        template={template}
-                        isPreview={isPreview}
-                        isLiveOrBreaking={isLiveOrBreaking}
-                      />
-                    )}
-                    {isLiveOrBreaking && (
-                      <TCThemeProvider>
-                        <UpdateButtonContainer data-testid="Update button container">
-                          <UpdateButtonWithDelay
-                            delay={8000}
-                            display
-                            label="New update"
-                            handleClick={() => scrollToTopAndRefresh(window)}
-                            arrowUp
-                            updatedTime={article.publishedTime}
-                            articleId={article.id}
-                          />
-                        </UpdateButtonContainer>
-                      </TCThemeProvider>
-                    )}
-                    <PaywallPortal
-                      id="paywall-portal-article-footer"
-                      componentName="subscribe-cta"
-                    >
-                      {!!zephrDivs && (
-                        <StaticContent
-                          html={
-                            '<div id="nu-zephr-article-target-paywall"></div>'
-                          }
-                        />
-                      )}
-                    </PaywallPortal>
-                    <LazyLoad rootMargin={spacing(40)} threshold={0}>
-                      {({ observed, registerNode }) => (
-                        <ArticleExtras
-                          analyticsStream={analyticsStream}
+              )}
+              <WelcomeBanner />
+              {!!zephrDivs && (
+                <StaticContent
+                  html={
+                    '<div id="nu-zephr-article-target-top-maincontainer"></div>'
+                  }
+                />
+              )}
+              <HeaderContainer showAudioPlayer={showAudioPlayer}>
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={
+                      '<div id="nu-zephr-article-target-top-headercontainer"></div>'
+                    }
+                  />
+                )}
+                <Header />
+                {isSharingSavingEnabled ? (
+                  <UserState state={UserState.showSaveAndShareBar}>
+                    <MessageContext.Consumer>
+                      {({ showMessage }) => (
+                        <StickySaveAndShareBar
                           articleId={articleId}
                           articleHeadline={headline}
                           articleUrl={url}
-                          section={section}
-                          publishedTime={publishedTime}
+                          onCopyLink={() => showMessage("Article link copied")}
+                          onSaveToMyArticles={() => {}}
+                          onShareOnEmail={() => {}}
                           savingEnabled={savingEnabled}
                           sharingEnabled={sharingEnabled}
-                          commentsEnabled={commentsEnabled}
-                          registerNode={registerNode}
-                          relatedArticleSlice={relatedArticleSlice}
-                          relatedArticlesVisible={
-                            !!observed.get("related-articles")
-                          }
-                          commentingConfig={commentingConfig}
-                          topics={topics}
-                          isSharingSavingEnabled={isSharingSavingEnabled}
-                          isCommentEnabled={isCommentEnabled}
                         />
                       )}
-                    </LazyLoad>
-                    {!!zephrDivs && (
-                      <StaticContent
-                        html={
-                          '<div id="nu-zephr-article-target-bottom-bodycontainer"></div>'
-                        }
+                    </MessageContext.Consumer>
+                  </UserState>
+                ) : null}
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={
+                      '<div id="nu-zephr-article-target-bottom-headercontainer"></div>'
+                    }
+                  />
+                )}
+              </HeaderContainer>
+              <BodyContainer>
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={
+                      '<div id="nu-zephr-article-target-top-bodycontainer"></div>'
+                    }
+                  />
+                )}
+                {newContent && (
+                  <ArticleBody
+                    id={article.id}
+                    analyticsStream={analyticsStream}
+                    content={newContent}
+                    contextUrl={url}
+                    section={section}
+                    articleHeadline={headline}
+                    paidContentClassName={paidContentClassName}
+                    template={template}
+                    isPreview={isPreview}
+                    isLiveOrBreaking={isLiveOrBreaking}
+                  />
+                )}
+                {isLiveOrBreaking && (
+                  <TCThemeProvider>
+                    <UpdateButtonContainer data-testid="Update button container">
+                      <UpdateButtonWithDelay
+                        delay={8000}
+                        display
+                        label="New update"
+                        handleClick={() => scrollToTopAndRefresh(window)}
+                        arrowUp
+                        updatedTime={article.publishedTime}
+                        articleId={article.id}
                       />
-                    )}
-                  </BodyContainer>
+                    </UpdateButtonContainer>
+                  </TCThemeProvider>
+                )}
+                <PaywallPortal
+                  id="paywall-portal-article-footer"
+                  componentName="subscribe-cta"
+                >
                   {!!zephrDivs && (
                     <StaticContent
-                      html={
-                        '<div id="nu-zephr-article-target-bottom-maincontainer"></div>'
-                      }
+                      html={'<div id="nu-zephr-article-target-paywall"></div>'}
                     />
                   )}
-                </>
+                </PaywallPortal>
+                <LazyLoad rootMargin={spacing(40)} threshold={0}>
+                  {({ observed, registerNode }) => (
+                    <ArticleExtras
+                      analyticsStream={analyticsStream}
+                      articleId={articleId}
+                      articleHeadline={headline}
+                      articleUrl={url}
+                      section={section}
+                      publishedTime={publishedTime}
+                      savingEnabled={savingEnabled}
+                      sharingEnabled={sharingEnabled}
+                      commentsEnabled={commentsEnabled}
+                      registerNode={registerNode}
+                      relatedArticleSlice={relatedArticleSlice}
+                      relatedArticlesVisible={
+                        !!observed.get("related-articles")
+                      }
+                      commentingConfig={commentingConfig}
+                      topics={topics}
+                      isSharingSavingEnabled={isSharingSavingEnabled}
+                      isCommentEnabled={isCommentEnabled}
+                    />
+                  )}
+                </LazyLoad>
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={
+                      '<div id="nu-zephr-article-target-bottom-bodycontainer"></div>'
+                    }
+                  />
+                )}
+              </BodyContainer>
+              {!!zephrDivs && (
+                <StaticContent
+                  html={
+                    '<div id="nu-zephr-article-target-bottom-maincontainer"></div>'
+                  }
+                />
               )}
             </MainContainer>
           </Fragment>
