@@ -191,13 +191,7 @@ const ArticleSkeleton = ({
               <AdContainer slotName="header" style={styles.adMarginStyle} />
             </HeaderAdContainer>
             <MainContainer>
-              {!!takeoverContent && (
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: takeoverContent
-                  }}
-                />
-              )}
+              {!!takeoverContent && <StaticContent html={takeoverContent} />}
               <WelcomeBanner />
               {!!zephrDivs && (
                 <StaticContent
