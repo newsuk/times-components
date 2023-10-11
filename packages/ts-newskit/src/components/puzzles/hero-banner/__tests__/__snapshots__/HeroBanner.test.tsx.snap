@@ -409,6 +409,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
           >
             <svg
               class="css-ny3roy"
+              data-testid="crossword-icon"
               fill="none"
               height="200"
               viewBox="0 0 382 382"
