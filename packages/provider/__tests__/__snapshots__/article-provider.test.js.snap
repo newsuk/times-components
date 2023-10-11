@@ -595,6 +595,22 @@ Object {
   ],
   "descriptionMarkup": Object {},
   "dropcapsDisabled": false,
+  "embeddedContent": Object {
+    "__typename": "EmbeddedContent",
+    "content": "Hello World",
+    "scripts": Array [
+      Object {
+        "__typename": "EmbeddedComponentResource",
+        "name": "Hello World",
+        "url": "Hello World",
+      },
+      Object {
+        "__typename": "EmbeddedComponentResource",
+        "name": "Hello World",
+        "url": "Hello World",
+      },
+    ],
+  },
   "expirableFlags": Array [
     Object {
       "__typename": "ExpirableFlag",
