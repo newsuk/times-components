@@ -24,7 +24,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
         >
           <button
             aria-expanded="true"
-            aria-label="Collapse Sccondary Menu"
+            aria-label="Collapse Secondary Menu"
             class="css-1mlhsuo"
             data-testid="menu-sub-button"
             type="button"
