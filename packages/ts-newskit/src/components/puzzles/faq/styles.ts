@@ -25,6 +25,7 @@ export const StyledAccordionGroup = styled(AccordionGroup)`
     font-size: 16px;
     white-space: pre-line;
     line-height: 24px;
+    border-bottom-style: solid;
   }
 `;
 

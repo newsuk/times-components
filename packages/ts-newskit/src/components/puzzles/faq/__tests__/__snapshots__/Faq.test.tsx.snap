@@ -11,7 +11,7 @@ exports[`Faq should render Faq 1`] = `
       All your questions answered
     </h2>
     <div
-      class="css-nq6bv4"
+      class="css-1bw84s8"
     >
       <div
         class="css-1oteowz"
@@ -65,7 +65,7 @@ exports[`Faq should render Faq 1`] = `
             id="nk-1-content"
             role="region"
           >
-            Bla bla
+            A Puzzles subscription gives you unlimited access to Times Puzzles. It also gives you access to 30 articles per calendar month on thetimes.co.uk website.
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@ exports[`Faq should render Faq 1`] = `
             id="nk-2-content"
             role="region"
           >
-            Bla bla
+            Your 30 articles will renew on the 1st of each calendar month.
           </div>
         </div>
       </div>
@@ -186,7 +186,7 @@ exports[`Faq should render Faq 1`] = `
     </div>
     <a
       class="css-1pt7f53"
-      href="ddad"
+      href="/subscribe/faqs/"
     >
       <span
         class="css-17x5lw"

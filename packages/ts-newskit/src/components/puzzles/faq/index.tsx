@@ -23,7 +23,7 @@ export const Faq: React.FC<FaqProps> = ({ data }) => {
           <Accordion header={question}>{answer}</Accordion>
         ))}
       </StyledAccordionGroup>
-      <SeeAll href="ddad">See All FAQs</SeeAll>
+      <SeeAll href="/subscribe/faqs/">See All FAQs</SeeAll>
     </Container>
   );
 };
