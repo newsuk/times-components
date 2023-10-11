@@ -59,7 +59,7 @@ export interface LeadArticleProps {
   loadingAspectRatio?: string;
   imageMarginBlockStart?: string;
   textBlockMarginBlockStart?: string;
-  tagAndFlagMarginBlockStart?: string;
+  tagAndFlagMarginBlockStart?: MQ<string> | string;
   listData?: ListData[];
   hideImage?: boolean;
 }
@@ -208,6 +208,10 @@ export const LeadArticle = ({
         </CardHeadlineLink>
         {shortSummary && (
           <TextBlock
+            stylePreset={{
+              xs: 'inkSubtle',
+              md: 'inkBase'
+            }}
             typographyPreset={{
               xs: 'editorialParagraph020',
               md: 'editorialParagraph010'

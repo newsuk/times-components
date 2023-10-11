@@ -45,6 +45,10 @@ export const LeadStory1 = ({
     ...articlesWithListItems,
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
+    tagAndFlagMarginBlockStart: {
+      xs: 'space050',
+      md: 'space040'
+    },
     headlineTypographyPreset: {
       xs: 'editorialHeadline040',
       sm: 'editorialHeadline050',
@@ -119,7 +123,12 @@ export const LeadStory1 = ({
         )}
         {singleArticle && (
           <BlockItem>
-            <FullWidthBlock>
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
@@ -138,7 +147,12 @@ export const LeadStory1 = ({
         )}
         {groupedArticles && (
           <>
-            <FullWidthBlock>
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
@@ -166,7 +180,12 @@ export const LeadStory1 = ({
         }}
       >
         <FullWidthHidden md lg xl>
-          <FullWidthBlock>
+          <FullWidthBlock
+            paddingInline={{
+              xs: 'space045',
+              md: 'space000'
+            }}
+          >
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',

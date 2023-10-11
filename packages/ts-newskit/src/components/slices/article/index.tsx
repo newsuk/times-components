@@ -131,7 +131,12 @@ export const Article = ({
       {hasTopBorder && (
         <GridLayoutItem area="border">
           {isFullWidth ? (
-            <FullWidthBlock>
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
               <Divider
                 overrides={{
                   marginBlockEnd: 'space040',
