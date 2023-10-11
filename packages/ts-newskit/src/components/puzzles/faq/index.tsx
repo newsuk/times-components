@@ -1,6 +1,6 @@
 import React from 'react';
 import { Question } from './types';
-import { Container, Title, StyledAccordionGroup } from './styles';
+import { Container, Title, StyledAccordionGroup, SeeAll } from './styles';
 import { Accordion } from 'newskit';
 
 interface FaqProps {
@@ -23,6 +23,7 @@ export const Faq: React.FC<FaqProps> = ({ data }) => {
           <Accordion header={question}>{answer}</Accordion>
         ))}
       </StyledAccordionGroup>
+      <SeeAll href="ddad">See All FAQs</SeeAll>
     </Container>
   );
 };
