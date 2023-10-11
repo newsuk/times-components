@@ -36,6 +36,26 @@ export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
   );
 };
 
+export const WrappedStackLayout: React.FC<CustomStackLayoutProps> = ({
+  children,
+  marginBlockEnd
+}) => {
+  return (
+    <Stack
+      flow="horizontal-top"
+      stackDistribution="center"
+      wrap="wrap"
+      marginInline={{
+        xs: 'space045',
+        md: 'space000'
+      }}
+      marginBlockEnd={marginBlockEnd || 'space060'}
+    >
+      {children}
+    </Stack>
+  );
+};
+
 export const CustomGridLayout: React.FC<CustomGridLayoutProp> = ({
   children
 }) => {
