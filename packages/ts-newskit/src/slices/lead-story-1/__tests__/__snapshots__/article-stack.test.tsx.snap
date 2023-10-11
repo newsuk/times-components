@@ -3,7 +3,7 @@
 exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
 <DocumentFragment>
   <div
-    style="max-width: 768px;"
+    style="max-width: 320px;"
   >
     <div
       class="css-gre9re"

@@ -4,10 +4,6 @@ import '@testing-library/jest-dom';
 import data from '../../fixtures/lead-story.json';
 import { ArticleStack } from '../article-stacks';
 
-jest.mock('newskit', () => ({
-  ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
-}));
 const { horizontalArticles, verticalArticles } = data;
 
 const mockClickHandler = jest.fn();
@@ -16,7 +12,6 @@ const renderComponent = (width?: string) =>
   render(
     <ArticleStack
       {...{ horizontalArticles, verticalArticles }}
-      breakpoint="lg"
       horizontalArticleContentWidth={width}
       clickHandler={mockClickHandler}
     />
