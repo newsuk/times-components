@@ -66,7 +66,8 @@ export const HowToPlay: FC<HowToPlayProps> = ({ title, header, listItems }) => {
               xs: '100%',
               sm: '100%',
               md: '80%',
-              lg: '70%'
+              lg: '65%',
+              xl: '52%'
             }
           },
           header: {
