@@ -257,6 +257,7 @@ function Head({
 }) {
   const {
     descriptionMarkup,
+    embeddedContent,
     headline,
     leadAsset,
     publicationName,
@@ -408,10 +409,13 @@ function Head({
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
+  const takeoverScripts = get(embeddedContent, "scripts", []);
+
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
         jsonLD.mainEntityOfPage["@id"] = makeArticleUrl(article);
+
         return (
           <Helmet encodeSpecialCharacters={false}>
             <title>{title}</title>
@@ -454,6 +458,10 @@ function Head({
                 {JSON.stringify(videoJsonLD)}
               </script>
             )}
+
+            {takeoverScripts.map(script => (
+              <script src={script.url} />
+            ))}
           </Helmet>
         );
       }}
