@@ -595,6 +595,7 @@ Object {
   ],
   "descriptionMarkup": Object {},
   "dropcapsDisabled": false,
+  "embeddedContent": null,
   "expirableFlags": Array [
     Object {
       "__typename": "ExpirableFlag",
