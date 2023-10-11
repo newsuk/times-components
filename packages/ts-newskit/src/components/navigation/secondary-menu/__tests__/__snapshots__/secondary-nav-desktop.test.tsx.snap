@@ -30,7 +30,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
             >
               <button
                 aria-expanded="false"
-                aria-label="Expand Sccondary Menu"
+                aria-label="Expand Secondary Menu"
                 class="css-1mlhsuo"
                 data-testid="menu-sub-button"
                 type="button"
