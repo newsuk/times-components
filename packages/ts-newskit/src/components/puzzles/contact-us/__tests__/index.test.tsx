@@ -28,7 +28,7 @@ describe('ContactUs', () => {
     expect(phoneNumber).toBeInTheDocument();
   });
 
-  it('should render contact item phone number', () => {
+  it('should render contact Us section header if provided', () => {
     const { getByText } = render(
       <ContactUs data={contactItems} header="Custom Header" />
     );
