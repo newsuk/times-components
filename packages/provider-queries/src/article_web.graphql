@@ -13,7 +13,7 @@ query ArticleQuery($id: ID!) {
     embeddedContent {
       content
       scripts {
-        ...on EmbeddedComponentResource {
+        ... on EmbeddedComponentResource {
           name
           url
         }
