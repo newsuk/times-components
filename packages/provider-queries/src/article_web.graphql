@@ -13,8 +13,9 @@ query ArticleQuery($id: ID!) {
     embeddedContent {
       content
       scripts {
-        name
-        url
+        ...on EmbeddedComponentResource {
+          url
+        }
       }
     }
     descriptionMarkup: summary(maxCharCount: 200)
