@@ -3,7 +3,7 @@
 exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1gwix8r"
+    class="css-wdske1"
   >
     <div
       class="css-1klr24i"
@@ -902,7 +902,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
 exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
 <DocumentFragment>
   <div
-    class="css-1gwix8r"
+    class="css-wdske1"
   >
     <div
       class="css-1klr24i"

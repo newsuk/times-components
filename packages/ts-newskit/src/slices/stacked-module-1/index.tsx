@@ -2,7 +2,7 @@ import { Divider, GridLayout, useBreakpointKey, BreakpointKeys } from 'newskit';
 import React, { useState, useEffect } from 'react';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
-import { CustomStackLayout } from '../shared';
+import { WrappedStackLayout } from '../shared';
 import { BlockItem, StackItem, StyledDivider } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType } from '../types';
@@ -27,7 +27,7 @@ const articleStack = ({
   isMob,
   clickHandler
 }: ArticleStackProps) => (
-  <CustomStackLayout marginBlockEnd="space000">
+  <WrappedStackLayout marginBlockEnd="space000">
     <StackItem>
       <FullWidthBlock marginBlockEnd="space040">
         <Divider
@@ -82,7 +82,7 @@ const articleStack = ({
         })}
       </GridLayout>
     </StackItem>
-  </CustomStackLayout>
+  </WrappedStackLayout>
 );
 
 export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
