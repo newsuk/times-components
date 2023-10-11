@@ -414,7 +414,6 @@ function Head({
     <Context.Consumer>
       {({ makeArticleUrl }) => {
         jsonLD.mainEntityOfPage["@id"] = makeArticleUrl(article);
-
         return (
           <Helmet encodeSpecialCharacters={false}>
             <title>{title}</title>
