@@ -16,15 +16,14 @@ export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
 }) => {
   return (
     <Stack
-      data-testid="Hey"
       flow="horizontal-top"
       stackDistribution="center"
       wrap={{
-        xs: "wrap",
-        sm: "wrap",
-        md: "wrap",
-        lg: "nowrap",
-        xl: "nowrap"
+        xs: 'wrap',
+        sm: 'wrap',
+        md: 'wrap',
+        lg: 'nowrap',
+        xl: 'nowrap'
       }}
       marginInline={{
         xs: 'space045',
