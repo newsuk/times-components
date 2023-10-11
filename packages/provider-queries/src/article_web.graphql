@@ -10,6 +10,13 @@ query ArticleQuery($id: ID!) {
     }
     commentsEnabled
     content: paywalledContent
+    embeddedContent {
+      content
+      scripts {
+        name
+        url
+      }
+    }
     descriptionMarkup: summary(maxCharCount: 200)
     dropcapsDisabled
     expirableFlags {
