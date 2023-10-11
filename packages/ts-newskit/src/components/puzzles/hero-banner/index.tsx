@@ -41,43 +41,17 @@ export interface HeroBannerProps {
 }
 
 const iconMapping: Record<PuzzleType, IconComponent> = {
-  sudoku: () => (
-    <NewsKitSudokusIcon width={200} height={200} data-testid="sudoku-icon" />
-  ),
-  crossword: () => (
-    <NewsKitCrosswordsIcon
-      width={200}
-      height={200}
-      data-testid="crossword-icon"
-    />
-  ),
-  'word-puzzles': () => (
-    <NewsKitWordPuzzlesIcon
-      width={200}
-      height={200}
-      data-testid="wordpuzzles-icon"
-    />
-  ),
+  sudoku: () => <NewsKitSudokusIcon width={200} height={200} />,
+  crossword: () => <NewsKitCrosswordsIcon width={200} height={200} />,
+  'word-puzzles': () => <NewsKitWordPuzzlesIcon width={200} height={200} />,
   'numbers-and-logic': () => (
-    <NewsKitNumbersAndLogicIcon
-      width={200}
-      height={200}
-      data-testid="numberlogic-icon"
-    />
+    <NewsKitNumbersAndLogicIcon width={200} height={200} />
   ),
   'quizzes-and-teasers': () => (
-    <NewsKitQuizzesAndTeasersIcon
-      width={200}
-      height={200}
-      data-testid="quizzesteasers-icon"
-    />
+    <NewsKitQuizzesAndTeasersIcon width={200} height={200} />
   ),
   'board-and-card-games': () => (
-    <NewsKitBoardAndCardGamesIcon
-      width={200}
-      height={200}
-      data-testid="boardcardgames-icon"
-    />
+    <NewsKitBoardAndCardGamesIcon width={200} height={200} />
   )
 };
 
