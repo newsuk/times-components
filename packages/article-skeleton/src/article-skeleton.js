@@ -122,7 +122,6 @@ const ArticleSkeleton = ({
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
 
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
-
   const takeoverContent = embeddedContent && embeddedContent.content;
 
   return (
