@@ -61,6 +61,7 @@ class MockArticle {
         .addParagraphs(3)
         .addAds()
         .get(),
+      embeddedContent: null,
       headline: "Venezuela shows how Corbyn’s socialism works",
       publishedTime: new Date(0),
       section: SectionName.Business,
