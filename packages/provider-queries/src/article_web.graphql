@@ -14,7 +14,6 @@ query ArticleQuery($id: ID!) {
       content
       scripts {
         ... on EmbeddedComponentResource {
-          name
           url
         }
       }
