@@ -408,8 +408,7 @@ function Head({
     articleId: id
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
-
-  const takeoverScripts = get(embeddedContent, "scripts", []);
+  const takeoverScriptUrl = get(embeddedContent, "scripts[0].url");
 
   return (
     <Context.Consumer>
@@ -459,9 +458,7 @@ function Head({
               </script>
             )}
 
-            {takeoverScripts.map(script => (
-              <script src={script.url} />
-            ))}
+            {takeoverScriptUrl && <script src={takeoverScriptUrl} />}
           </Helmet>
         );
       }}
