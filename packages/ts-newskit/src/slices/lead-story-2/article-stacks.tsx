@@ -107,27 +107,13 @@ export const ArticleStack = ({
   );
 
   return (
-    <>
-      <Hidden xs sm>
-        <Stack
-          stackDistribution="flex-start"
-          flow="horizontal-top"
-          spaceInline="space040"
-        >
-          {articleGridVertical}
-          {articleStackHorizontal}
-        </Stack>
-      </Hidden>
-      <Visible xs sm>
-        <Stack
-          stackDistribution="flex-start"
-          flow="vertical-left"
-          spaceInline="space000"
-        >
-          {articleGridVertical}
-          {articleStackHorizontal}
-        </Stack>
-      </Visible>
-    </>
+    <Stack
+      stackDistribution="flex-start"
+      flow={{ xs: 'vertical-left', md: 'horizontal-top' }}
+      spaceInline={{ xs: 'space000', md: 'space040' }}
+    >
+      {articleGridVertical}
+      {articleStackHorizontal}
+    </Stack>
   );
 };
