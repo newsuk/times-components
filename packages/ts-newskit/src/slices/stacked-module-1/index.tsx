@@ -29,10 +29,19 @@ const articleStack = ({
 }: ArticleStackProps) => (
   <WrappedStackLayout marginBlockEnd="space000">
     <StackItem>
-      <FullWidthBlock marginBlockEnd="space040">
+      <FullWidthBlock
+        paddingInline={{
+          xs: 'space045',
+          md: 'space000'
+        }}
+        marginBlockEnd="space040"
+      >
         <Divider
           overrides={{
-            stylePreset: 'dashedDivider',
+            stylePreset: {
+              xs: 'lightDashedDivider',
+              md: 'dashedDivider'
+            },
             marginBlockStart: marginBlockStart || 'space000'
           }}
         />
@@ -68,6 +77,10 @@ const articleStack = ({
                   hideImage: hasImage || (hasImage || isDesktop),
                   isLeadImage: isMob && articleIndex === 0,
                   hasTopBorder: hasImage,
+                  topBorderStyle: {
+                    xs: 'lightDashedDivider',
+                    md: 'dashedDivider'
+                  },
                   isFullWidth: true,
                   tagAndFlagMarginBlockStart: 'space030',
                   titleTypographyPreset: isMob
