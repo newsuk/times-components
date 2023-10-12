@@ -41,7 +41,7 @@ const ArticleHeader: React.FC<{
   description?: string;
 }> = ({ updated, breaking, headline, authorSlug, description }) => {
   const [timezone, setTimezone] = useState<string>('');
-  const [authorData, setAuthorData] = useState<ArticleBylineAuthorData>();
+  const [authorData, setAuthorData] = useState<ArticleBylineAuthorData | null>();
 
   const currentDateTime = new Date();
   const updatedDate = new Date(updated);
@@ -59,6 +59,10 @@ const ArticleHeader: React.FC<{
 
   useEffect(
     () => {
+      if (authorSlug === undefined) {
+        setAuthorData(null)
+        return;
+      }
       const fetchData = async () => {
         try {
           const response = await fetch(`/api/author-profile/${authorSlug}`);
@@ -125,7 +129,7 @@ const ArticleHeader: React.FC<{
       </UpdatesContainer>
 
       {headline && <Headline>{safeDecodeURIComponent(headline)}</Headline>}
-      <ArticleBylineBlock authorData={authorData} description={description} />
+      {authorData && (<ArticleBylineBlock authorData={authorData} description={description} />)}
     </Container>
   );
 };
