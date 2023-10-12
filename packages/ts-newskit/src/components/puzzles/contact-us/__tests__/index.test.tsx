@@ -24,7 +24,7 @@ describe('ContactUs', () => {
 
   it('should render contact item phone number', () => {
     const { getByText } = render(<ContactUs data={contactItems} />);
-    const phoneNumber = getByText('080 0068 4965');
+    const phoneNumber = getByText('0800 068 4965');
     expect(phoneNumber).toBeInTheDocument();
   });
 

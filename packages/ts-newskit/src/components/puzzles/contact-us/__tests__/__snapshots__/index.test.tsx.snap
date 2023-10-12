@@ -15,7 +15,7 @@ exports[`ContactUs should render Contact Us section 1`] = `
     >
       <a
         class="css-1rh8w4c"
-        href="tel: 080 0068 4965"
+        href="tel: 0800 068 4965"
       >
         <div
           class="css-qeb9wt"
@@ -62,7 +62,7 @@ exports[`ContactUs should render Contact Us section 1`] = `
           <p
             class="css-mxc1nl"
           >
-            080 0068 4965
+            0800 068 4965
           </p>
           <p
             class="css-mxc1nl"
