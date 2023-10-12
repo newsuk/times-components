@@ -50,4 +50,26 @@ describe('Puzzle Card', () => {
 
     expect(image).toHaveAttribute('src', croppedImageUrl);
   });
+
+  it('renders the puzzle card with alt attribute set to data.title', () => {
+    const { getByAltText } = render(
+      <PuzzleCard
+        data={{ ...puzzles.list[0], title: 'Custom Puzzle Title' }}
+        isImageCropped={false}
+      />
+    );
+    const image = getByAltText('Custom Puzzle Title');
+    expect(image).toBeInTheDocument();
+  });
+
+  it('renders the puzzle card with alt attribute set to "Puzzle thumbnail"', () => {
+    const { getByAltText } = render(
+      <PuzzleCard
+        data={{ ...puzzles.list[0], title: '' }}
+        isImageCropped={false}
+      />
+    );
+    const image = getByAltText('Puzzle thumbnail');
+    expect(image).toBeInTheDocument();
+  });
 });

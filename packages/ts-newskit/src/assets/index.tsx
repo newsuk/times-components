@@ -31,6 +31,7 @@ import QuizzesAndTeasersIcon from './QuizzesAndTeasers';
 import BoardAndCardGamesIcon from './BoardAndCardGames';
 import CrossIcon from './CrossIcon';
 import DoneIcon from './DoneIcon';
+import PhoneIcon from './phone';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -193,3 +194,8 @@ export const NewsKitCrossIcon = customToNewsKitIcon(
 export const NewsKitDoneIcon = customToNewsKitIcon('NewsKitDoneIcon', props => (
   <DoneIcon {...props} />
 ));
+
+export const NewsKitPhoneIcon = customToNewsKitIcon(
+  'NewsKitPhoneIcon',
+  props => <PhoneIcon {...props} />
+);
