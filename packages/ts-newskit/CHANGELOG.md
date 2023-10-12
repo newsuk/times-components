@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.110.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.109.1...@times-components/ts-newskit@1.110.0) (2023-10-12)
+
+
+### Features
+
+* **TMPZ-155:** Create storybook components for Contacts section ([#3582](https://github.com/newsuk/times-components/issues/3582)) ([84a93db](https://github.com/newsuk/times-components/commit/84a93db7ec55bdba76d4497bda7d86b2eb7b10b8))
+
+
+
+
+
 ## [1.109.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.109.0...@times-components/ts-newskit@1.109.1) (2023-10-11)
 
 
