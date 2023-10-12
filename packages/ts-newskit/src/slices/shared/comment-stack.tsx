@@ -15,9 +15,18 @@ interface CommentStackProps {
 export const CommentStack = ({ comments, clickHandler }: CommentStackProps) => {
   return (
     <>
-      <FullWidthBlock id="COMMENT STACK">
+      <FullWidthBlock
+        id="COMMENT STACK"
+        paddingInline={{
+          xs: 'space045',
+          md: 'space000'
+        }}
+      >
         <Divider
-          overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
+          overrides={{
+            marginBlock: 'space040',
+            stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' }
+          }}
         />
       </FullWidthBlock>
       <GridLayout
@@ -32,7 +41,7 @@ export const CommentStack = ({ comments, clickHandler }: CommentStackProps) => {
             <AvatarDivider
               overrides={{
                 marginBlock: { xs: 'space040', md: 'space000' },
-                stylePreset: 'lightDivider'
+                stylePreset: { xs: 'lightDashedDivider', md: 'lightDivider' }
               }}
               vertical={{ xs: false, md: true }}
             />

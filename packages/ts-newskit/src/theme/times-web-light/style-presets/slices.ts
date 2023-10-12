@@ -13,6 +13,13 @@ export const sliceStylePresets = {
       borderColor: '{{colors.interface060}}'
     }
   },
+  lightDashedDivider: {
+    base: {
+      borderStyle: 'dashed',
+      borderWidth: '{{borders.borderWidthDefault}}',
+      borderColor: '{{colors.interface050}}'
+    }
+  },
   expirableFlagPreset: {
     base: {
       color: '{{colors.interactiveNegative030}}'
