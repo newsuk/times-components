@@ -42,10 +42,7 @@ describe('Render Content Bucket 2 Slice', () => {
 });
 
 describe('Content Bucket 2 Articles list above `md` breakpoint', () => {
-  renderComponent(
-    <ContentBucket2 {...defaultProps} />,
-    'md'
-  );
+  renderComponent(<ContentBucket2 {...defaultProps} />, 'md');
 
   const articleContainer = screen.getByTestId('article-container');
 
@@ -68,10 +65,7 @@ describe('Content Bucket 2 Articles list above `md` breakpoint', () => {
 
 describe('Content Bucket 2 Articles list below `md` breakpoint', () => {
   beforeEach(async () => {
-    renderComponent(
-      <ContentBucket2 {...defaultProps} />,
-      'xs'
-    );
+    renderComponent(<ContentBucket2 {...defaultProps} />, 'xs');
   });
 
   test('articleBorder', () => {

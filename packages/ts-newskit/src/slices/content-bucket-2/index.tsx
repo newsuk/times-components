@@ -43,7 +43,7 @@ export const ContentBucket2 = ({
 
           return (
             <React.Fragment key={article.id}>
-              <Block marginBlockEnd={{xs: 'space040', md: 'space000'}}>
+              <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
                 <Visible xs sm>
                   <Article
                     article={{
@@ -75,4 +75,3 @@ export const ContentBucket2 = ({
     </StackItem>
   </CustomStackLayout>
 );
-
