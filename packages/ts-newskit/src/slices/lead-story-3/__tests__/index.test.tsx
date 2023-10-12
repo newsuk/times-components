@@ -2,7 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { LeadStory3 } from '../index';
 import data from '../../fixtures/lead-story3.json';
-import { renderComponent } from '../../../utils/responsiveRender';
+import { renderComponent } from '../../../utils';
 
 const mockClickHandler = jest.fn();
 

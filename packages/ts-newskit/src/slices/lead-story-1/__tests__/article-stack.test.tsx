@@ -6,7 +6,7 @@ import {
   ArticleStackLarge,
   ArticleStackSmall
 } from '../../shared/article-stacks';
-import { renderComponent } from '../../../utils/responsiveRender';
+import { renderComponent } from '../../../utils';
 
 const mockClickHandler = jest.fn();
 
