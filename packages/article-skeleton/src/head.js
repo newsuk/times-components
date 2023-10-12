@@ -457,7 +457,11 @@ function Head({
               </script>
             )}
 
-            {takeoverScriptUrl && <script src={takeoverScriptUrl} />}
+            {takeoverScriptUrl && (
+              <script type="application/ld+json">{`{ "takeover": true }`}</script>
+            )}
+
+            {/*takeoverScriptUrl && <script src={takeoverScriptUrl} />*/}
           </Helmet>
         );
       }}
