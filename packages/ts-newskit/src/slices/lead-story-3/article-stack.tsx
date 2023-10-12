@@ -26,14 +26,21 @@ export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
                   textBlockMarginBlockStart: 'space050',
                   headlineTypographyPreset: {
                     xs: 'editorialHeadline040',
-                    sm: 'editorialHeadline050',
                     md: 'editorialHeadline060'
+                  },
+                  tagAndFlagMarginBlockStart: {
+                    xs: 'space050',
+                    md: 'space040'
                   },
                   hasTopBorder: false
                 }
               : {
                   ...article,
                   headlineTypographyPreset: 'editorialHeadline020',
+                  tagAndFlagMarginBlockStart: {
+                    xs: 'space050',
+                    md: 'space040'
+                  },
                   hideImage: true,
                   hasTopBorder: false
                 };
@@ -59,7 +66,12 @@ export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
 
           return (
             <React.Fragment key={modifiedArticle.id}>
-              <FullWidthBlock>
+              <FullWidthBlock
+                paddingInline={{
+                  xs: 'space045',
+                  md: 'space000'
+                }}
+              >
                 <Divider
                   overrides={{
                     stylePreset: 'dashedDivider'

@@ -35,8 +35,14 @@ export const LeadStory3 = ({
     isLeadImage: true,
     hasTopBorder: false,
     loadingAspectRatio: '4:5',
-    shortSummary: undefined
+    shortSummary: undefined,
+    tagAndFlagMarginBlockStart: { xs: 'space050', md: 'space040' }
   };
+
+  const modifiedArticles = articles.map(article => ({
+    ...article,
+    tagAndFlagMarginBlockStart: { xs: 'space050', md: 'space040' }
+  }));
 
   return (
     <CustomStackLayout>
@@ -63,7 +69,12 @@ export const LeadStory3 = ({
         }}
       >
         <Hidden md lg xl>
-          <FullWidthBlock>
+          <FullWidthBlock
+            paddingInline={{
+              xs: 'space045',
+              md: 'space000'
+            }}
+          >
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
@@ -98,7 +109,13 @@ export const LeadStory3 = ({
       <FullWidthHidden md lg xl>
         <BlockItem>
           <ComposedArticleStack
-            articles={articles}
+            articles={modifiedArticles.map(article => ({
+              ...article,
+              titleTypographyPreset: {
+                xs: 'editorialHeadline030',
+                md: 'editorialHeadline020'
+              }
+            }))}
             clickHandler={clickHandler}
           />
         </BlockItem>
@@ -113,7 +130,7 @@ export const LeadStory3 = ({
               imageRight: true
             }
           }}
-          modifiedArticles={articles}
+          modifiedArticles={modifiedArticles}
           clickHandler={clickHandler}
         />
       </Visible>

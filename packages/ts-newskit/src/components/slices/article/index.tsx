@@ -51,7 +51,7 @@ export interface ArticleProps {
   isLeadImage?: boolean;
   imageRight?: boolean;
   isFullWidth?: boolean;
-  titleTypographyPreset?: string;
+  titleTypographyPreset?: MQ<string> | string;
   tagAndFlagMarginBlockStart?: MQ<string> | string;
 }
 
