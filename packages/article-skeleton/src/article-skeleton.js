@@ -186,10 +186,9 @@ const ArticleSkeleton = ({
               html={'<div id="nu-zephr-article-target-below-head"></div>'}
             />
           )}
-          {!!takeoverContent ? (
+          {takeoverContent ? (
             <>
               <div>TAKEOVER PAGE</div>
-              {/*<StaticContent html={takeoverContent} />*/}
             </>
           ) : (
             <Fragment>
