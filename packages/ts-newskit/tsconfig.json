@@ -41,11 +41,7 @@
 
     "lib": ["es6", "dom", "es2019"],
     "types": ["jest"],
-    "typeRoots": [
-      "node_modules/@types",
-      "src/types",
-      "../../node_modules/@types"
-    ]
+    "typeRoots": ["node_modules/@types", "src/types", "../../node_modules/@types"]
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules/**"],

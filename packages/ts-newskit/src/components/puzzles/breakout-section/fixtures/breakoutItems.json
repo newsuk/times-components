@@ -1,28 +1,28 @@
 {
-  "breakoutItems": [
-    {
-      "url": "/puzzles/subpuzzles/crosswords",
-      "title": "Crosswords"
-    },
-    {
-      "url": "/puzzles/subpuzzles/sudokus",
-      "title": "Sudokus"
-    },
-    {
-      "url": "/puzzles/subpuzzles/word-puzzles",
-      "title": "Word Puzzles"
-    },
-    {
-      "url": "/puzzles/subpuzzles/numbers-and-logic",
-      "title": "Numbers and Logic"
-    },
-    {
-      "url": "/puzzles/subpuzzles/quizzes-and-teasers",
-      "title": "Quizzes and Teasers"
-    },
-    {
-      "url": "/puzzles/subpuzzles/board-and-card-games",
-      "title": "Board and Card Games"
-    }
-  ]
+    "breakoutItems": [
+        {
+            "url": "/puzzles/subpuzzles/crosswords",
+            "title": "Crosswords"
+        },
+        {
+            "url": "/puzzles/subpuzzles/sudokus",
+            "title": "Sudokus"
+        },
+        {
+            "url": "/puzzles/subpuzzles/word-puzzles",
+            "title": "Word Puzzles"
+        },
+        {
+            "url": "/puzzles/subpuzzles/numbers-and-logic",
+            "title": "Numbers and Logic"
+        },
+        {
+            "url": "/puzzles/subpuzzles/quizzes-and-teasers",
+            "title": "Quizzes and Teasers"
+        },
+        {
+            "url": "/puzzles/subpuzzles/board-and-card-games",
+            "title": "Board and Card Games"
+        }
+    ]
 }
