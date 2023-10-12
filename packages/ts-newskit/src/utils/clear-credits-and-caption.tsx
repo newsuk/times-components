@@ -39,7 +39,7 @@ export type ArticleProps = {
   loadingAspectRatio?: string;
   imageMarginBlockStart?: string;
   textBlockMarginBlockStart?: string;
-  tagAndFlagMarginBlockStart?: string;
+  tagAndFlagMarginBlockStart?: MQ<string> | string;
   listData?: ListData[];
   hideImage?: boolean;
 };

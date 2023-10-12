@@ -90,6 +90,12 @@ export const LeadStory1 = ({
     hideImage: true
   };
 
+  const addTagAndFlagMargin = (articles: ArticleProps[]) =>
+    articles.map(article => ({
+      ...article,
+      tagAndFlagMarginBlockStart: { xs: 'space050', md: 'space040' }
+    }));
+
   const marginTop = singleArticle
     ? 'space040'
     : !!articlesWithListItems.listData
@@ -224,7 +230,7 @@ export const LeadStory1 = ({
             />
           </Visible>
           <ArticleStackSmall
-            articles={smallArticles}
+            articles={addTagAndFlagMargin(smallArticles)}
             articleOptions={{
               xs: {
                 isFullWidth: true,
@@ -244,7 +250,7 @@ export const LeadStory1 = ({
       <FullWidthHidden md lg xl>
         <BlockItem>
           <ComposedArticleStack
-            articles={articles}
+            articles={addTagAndFlagMargin(articles)}
             clickHandler={clickHandler}
           />
         </BlockItem>
@@ -256,7 +262,7 @@ export const LeadStory1 = ({
               imageRight: true
             }
           }}
-          modifiedArticles={articles}
+          modifiedArticles={addTagAndFlagMargin(articles)}
           clickHandler={clickHandler}
         />
       </Visible>

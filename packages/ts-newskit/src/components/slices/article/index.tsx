@@ -5,7 +5,8 @@ import {
   TextBlock,
   CardComposable,
   CardMedia,
-  GridLayoutItem
+  GridLayoutItem,
+  MQ
 } from 'newskit';
 import {
   CardHeadlineLink,
@@ -51,7 +52,7 @@ export interface ArticleProps {
   imageRight?: boolean;
   isFullWidth?: boolean;
   titleTypographyPreset?: string;
-  tagAndFlagMarginBlockStart?: string;
+  tagAndFlagMarginBlockStart?: MQ<string> | string;
 }
 
 export const Article = ({
