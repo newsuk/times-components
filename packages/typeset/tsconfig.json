@@ -38,7 +38,11 @@
 
     "lib": ["esnext"],
     "types": ["jest", "node"],
-    "typeRoots": ["node_modules/@types", "src/types", "../../node_modules/@types"]
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types",
+      "../../node_modules/@types"
+    ]
   },
   "include": ["src/**/*.ts", "src/Utils.tsx"],
   "exclude": ["node_modules/**"],

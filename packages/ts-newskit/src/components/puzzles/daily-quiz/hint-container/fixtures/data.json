@@ -1,9 +1,9 @@
 {
-    "Hints": [
+  "Hints": [
     { "text": "This is the first hint." },
     { "text": "This is the second hint." },
     { "text": "This is the third hint." },
     { "text": "This is the fourth hint." },
     { "text": "This is the fifth hint." }
-    ]
+  ]
 }
