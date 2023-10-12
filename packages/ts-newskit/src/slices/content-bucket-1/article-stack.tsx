@@ -1,17 +1,16 @@
 import React from 'react';
-import { BreakpointKeys, Divider, GridLayout } from 'newskit';
+import { Divider, GridLayout, Hidden, Visible } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { ScrollContainer, ArticleDividerXL } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType } from '../types';
+import { defaultArticleOptions } from '../../utils/default-article-options';
 
 export const ArticleStack = ({
   articles,
-  breakpoint,
   clickHandler
 }: {
   articles: ArticleProps[];
-  breakpoint: BreakpointKeys;
   clickHandler: ClickHandlerType;
 }) => {
   const articleGrid = (
@@ -28,50 +27,62 @@ export const ArticleStack = ({
       data-testid="article-container"
     >
       {articles.map((article: ArticleProps, articleIndex, articleArr) => {
-        const articleBorder = breakpoint !== 'lg' &&
-          breakpoint !== 'xl' &&
-          articleIndex < articleArr.length - 1 && (
+        const articleBorder = articleIndex < articleArr.length - 1 && (
+          <Hidden lg xl>
             <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
-          );
+          </Hidden>
+        );
 
-        const articleTopBorder =
-          (breakpoint === 'xl' && articleIndex > 1) ||
-          (breakpoint === 'lg' && articleIndex > 0);
+        const lgOptions = {
+          hasTopBorder: articleIndex > 0,
+          hideImage: true
+        };
+        const xlOptions = {
+          hasTopBorder: articleIndex > 1
+        };
 
         return (
           <React.Fragment key={article.headline}>
-            <Article
-              article={{
-                ...clearCreditsAndCaption(article),
-                hasTopBorder: articleTopBorder,
-                hideImage: breakpoint === 'lg'
-              }}
-              clickHandler={clickHandler}
-            />
+            {Object.entries(defaultArticleOptions).map(([breakpoint, opts]) => (
+              <Visible {...{ [breakpoint]: true }}>
+                <Article
+                  article={{
+                    ...clearCreditsAndCaption(article),
+                    ...(breakpoint === 'lg' && lgOptions),
+                    ...(breakpoint === 'xl' && xlOptions),
+                    ...opts
+                  }}
+                  clickHandler={clickHandler}
+                />
+              </Visible>
+            ))}
             {articleBorder}
           </React.Fragment>
         );
       })}
 
-      {breakpoint === 'xl' && (
+      <Visible xl>
         <ArticleDividerXL
           overrides={{ stylePreset: 'lightDivider' }}
           vertical
         />
-      )}
+      </Visible>
     </GridLayout>
   );
 
-  const isMob = breakpoint === 'xs' || breakpoint === 'sm';
-
-  return isMob ? (
-    <ScrollContainer
-      overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
-      tabIndex={undefined}
-    >
-      {articleGrid}
-    </ScrollContainer>
-  ) : (
-    articleGrid
+  return (
+    <>
+      <Visible xs sm>
+        <ScrollContainer
+          overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
+          tabIndex={undefined}
+        >
+          {articleGrid}
+        </ScrollContainer>
+      </Visible>
+      <Hidden xs sm>
+        {articleGrid}
+      </Hidden>
+    </>
   );
 };

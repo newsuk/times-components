@@ -1,12 +1,5 @@
-import {
-  Block,
-  Divider,
-  Hidden,
-  useBreakpointKey,
-  Visible,
-  BreakpointKeys
-} from 'newskit';
-import React, { useState, useEffect } from 'react';
+import { Block, Divider, Hidden, Visible } from 'newskit';
+import React from 'react';
 import { CommentCardProps } from '../../components/slices/comment-card';
 import {
   LeadArticle,
@@ -23,6 +16,7 @@ import {
   FullWidthHidden
 } from '../../components/slices/shared-styles';
 import { ClickHandlerType } from '../types';
+import { defaultArticleOptions } from '../../utils/default-article-options';
 
 export interface ContentBucket1Props {
   leadArticle: LeadArticleProps;
@@ -37,20 +31,37 @@ export const ContentBucket1 = ({
   articles,
   clickHandler
 }: ContentBucket1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xl');
-  const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
+  const leadArticleOptions = {
+    xs: {
+      imageTop: true,
+      hasTopBorder: false,
+      contentWidth: '283px'
     },
-    [breakpointKey]
-  );
+    sm: {
+      imageTop: true,
+      hasTopBorder: false,
+      contentWidth: '283px'
+    },
+    md: {
+      hasTopBorder: true,
+      imageTop: false,
+      contentWidth: '283px'
+    },
+    lg: {
+      hasTopBorder: true,
+      imageTop: false,
+      contentWidth: '283px'
+    },
+    xl: {
+      hasTopBorder: true,
+      imageTop: false,
+      contentWidth: '312px'
+    }
+  };
 
-  const isMobile = ['xs', 'sm'].includes(currentBreakpoint);
-  const modifiedLeadArticle = {
-    ...leadArticle,
-    imageTop: isMobile,
-    hasTopBorder: !isMobile
+  const modifiedLeadArticleOptions = {
+    ...defaultArticleOptions,
+    ...leadArticleOptions
   };
 
   return (
@@ -74,13 +85,19 @@ export const ContentBucket1 = ({
               position="right"
             />
           </Visible>
-          <LeadArticle
-            article={{
-              ...modifiedLeadArticle,
-              contentWidth: currentBreakpoint === 'xl' ? '312px' : '283px'
-            }}
-            clickHandler={clickHandler}
-          />
+          {Object.entries(modifiedLeadArticleOptions).map(
+            ([breakpoint, opts]) => (
+              <Visible {...{ [breakpoint]: true }}>
+                <LeadArticle
+                  article={{
+                    ...leadArticle,
+                    ...opts
+                  }}
+                  clickHandler={clickHandler}
+                />
+              </Visible>
+            )
+          )}
         </Block>
         <Block>
           <Hidden md>
@@ -107,11 +124,7 @@ export const ContentBucket1 = ({
           </FullWidthBlock>
         </FullWidthHidden>
         <BlockItem>
-          <ArticleStack
-            articles={articles}
-            breakpoint={currentBreakpoint}
-            clickHandler={clickHandler}
-          />
+          <ArticleStack articles={articles} clickHandler={clickHandler} />
         </BlockItem>
       </StackItem>
       <Visible md>

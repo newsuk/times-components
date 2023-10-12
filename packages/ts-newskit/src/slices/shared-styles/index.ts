@@ -39,6 +39,7 @@ export const ArticleDividerXL = styled(Divider)`
   position: absolute;
   height: 100%;
   left: 50%;
+  top: 0;
 `;
 
 export const StackItem = styled(Stack)<{
