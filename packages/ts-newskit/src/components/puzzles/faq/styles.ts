@@ -1,18 +1,26 @@
-import { Block, TextBlock, AccordionGroup, styled, LinkInline } from 'newskit';
+import {
+  Block,
+  TextBlock,
+  AccordionGroup,
+  styled,
+  LinkInline,
+  getColorCssFromTheme,
+  getSpacingCssFromTheme
+} from 'newskit';
 
 export const Container = styled(Block)`
   max-width: 620px;
-  max-height: 457px;
+  height: 457px;
 `;
 export const Title = styled(TextBlock)`
   text-align: center;
 `;
 
 export const StyledAccordionGroup = styled(AccordionGroup)`
-  margin-bottom: 40px;
+  ${getSpacingCssFromTheme('margin-bottom', 'space070')};
   font-family: Roboto;
   h3 button {
-    color: #333333;
+    ${getColorCssFromTheme('color', 'inkNotice')};
     border-bottom-style: solid;
 
     &:hover {
@@ -36,13 +44,13 @@ export const SeeAll = styled(LinkInline)`
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #01000d;
+  ${getColorCssFromTheme('color', 'inkDark010')};
   text-decoration: none;
   font-family: Roboto;
 
   &:link,
   &:visited,
   &:hover span {
-    color: #01000d;
+    ${getColorCssFromTheme('color', 'inkDark010')};
   }
 `;

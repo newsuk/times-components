@@ -3,7 +3,7 @@
 exports[`Faq should render Faq 1`] = `
 <DocumentFragment>
   <div
-    class="css-j61mz"
+    class="css-180mn5p"
   >
     <h2
       class="css-8ud8np"
@@ -11,7 +11,7 @@ exports[`Faq should render Faq 1`] = `
       All your questions answered
     </h2>
     <div
-      class="css-1bw84s8"
+      class="css-ja2ho2"
     >
       <div
         class="css-1oteowz"
@@ -185,7 +185,7 @@ exports[`Faq should render Faq 1`] = `
       </div>
     </div>
     <a
-      class="css-1pt7f53"
+      class="css-1ir023x"
       href="/subscribe/faqs/"
     >
       <span
