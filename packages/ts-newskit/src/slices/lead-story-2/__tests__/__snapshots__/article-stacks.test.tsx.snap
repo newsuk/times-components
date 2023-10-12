@@ -3,10 +3,10 @@
 exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
 <DocumentFragment>
   <div
-    class="css-y73puv"
+    class="css-1s57n01"
   >
     <div
-      class="css-1th2wme"
+      class="css-uxiwo2"
     >
       <div
         class="css-1jza4en"
@@ -225,16 +225,20 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
       </div>
     </div>
     <div
-      class="css-1th2wme"
+      class="css-uxiwo2"
     >
       <div
         class="css-r51htr"
       >
-        <hr
-          aria-hidden="true"
-          class="css-13rcg9f"
-          data-testid="divider"
-        />
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-13byt3y"
         >
@@ -363,11 +367,15 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             </div>
           </div>
         </div>
-        <hr
-          aria-hidden="true"
-          class="css-13rcg9f"
-          data-testid="divider"
-        />
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-13byt3y"
         >
@@ -505,10 +513,10 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
 exports[`Render ArticleStack renders with passed width 1`] = `
 <DocumentFragment>
   <div
-    class="css-y73puv"
+    class="css-1s57n01"
   >
     <div
-      class="css-1th2wme"
+      class="css-uxiwo2"
     >
       <div
         class="css-1eh6fyx"
@@ -727,16 +735,20 @@ exports[`Render ArticleStack renders with passed width 1`] = `
       </div>
     </div>
     <div
-      class="css-1th2wme"
+      class="css-uxiwo2"
     >
       <div
         class="css-r51htr"
       >
-        <hr
-          aria-hidden="true"
-          class="css-13rcg9f"
-          data-testid="divider"
-        />
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-13byt3y"
         >
@@ -865,11 +877,15 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             </div>
           </div>
         </div>
-        <hr
-          aria-hidden="true"
-          class="css-13rcg9f"
-          data-testid="divider"
-        />
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-13byt3y"
         >

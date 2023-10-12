@@ -159,3 +159,12 @@ stylePresets.overlayCustom = {
     backgroundColor: '{{overlays.overlayTintBase020}}'
   }
 };
+
+stylePresets.contactuslink = {
+  base: {
+    textDecoration: 'none',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interface040}}'
+  }
+};

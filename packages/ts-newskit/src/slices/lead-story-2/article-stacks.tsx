@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Block,
-  Divider,
-  GridLayout,
-  Stack,
-  Visible,
-  BreakpointKeys
-} from 'newskit';
+import { Block, Divider, GridLayout, Stack, Visible, Hidden } from 'newskit';
 import {
   LeadArticle,
   LeadArticleProps
@@ -18,13 +11,11 @@ import { ClickHandlerType } from '../types';
 
 export const ArticleStack = ({
   verticalArticles,
-  breakpoint,
   horizontalArticles,
   horizontalArticleContentWidth,
   clickHandler
 }: {
   verticalArticles: LeadArticleProps[];
-  breakpoint: BreakpointKeys;
   horizontalArticles: LeadArticleProps[];
   horizontalArticleContentWidth?: string;
   clickHandler: ClickHandlerType;
@@ -42,6 +33,7 @@ export const ArticleStack = ({
     hasTopBorder: false,
     hideImage: true
   }));
+
   const articleStackHorizontal = (
     <GridLayout
       columns={{ md: '1px 1fr 1px 1fr' }}
@@ -50,16 +42,16 @@ export const ArticleStack = ({
     >
       {modifiedHorizontalArticles.map(
         (article: LeadArticleProps, articleIndex, articleArr) => {
-          const articleBorder = breakpoint !== 'xs' &&
-            breakpoint !== 'sm' &&
-            articleIndex < articleArr.length - 1 && (
+          const articleBorder = articleIndex < articleArr.length - 1 && (
+            <Hidden xs sm>
               <Divider
                 overrides={{
                   stylePreset: 'lightDivider'
                 }}
                 vertical
               />
-            );
+            </Hidden>
+          );
 
           return (
             <React.Fragment key={article.headline}>
@@ -117,14 +109,8 @@ export const ArticleStack = ({
   return (
     <Stack
       stackDistribution="flex-start"
-      flow={
-        breakpoint !== 'xs' && breakpoint !== 'sm'
-          ? 'horizontal-top'
-          : 'vertical-left'
-      }
-      spaceInline={
-        breakpoint === 'xs' || breakpoint === 'sm' ? 'space000' : 'space040'
-      }
+      flow={{ xs: 'vertical-left', md: 'horizontal-top' }}
+      spaceInline={{ xs: 'space000', md: 'space040' }}
     >
       {articleGridVertical}
       {articleStackHorizontal}
