@@ -3,7 +3,7 @@
 exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1gwix8r"
+    class="css-wdske1"
   >
     <div
       class="css-1waal5p"
@@ -9408,7 +9408,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
 exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
 <DocumentFragment>
   <div
-    class="css-1gwix8r"
+    class="css-wdske1"
   >
     <div
       class="css-1waal5p"
@@ -18813,7 +18813,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
 exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKey is "sm" 1`] = `
 <DocumentFragment>
   <div
-    class="css-1gwix8r"
+    class="css-wdske1"
   >
     <div
       class="css-1waal5p"
@@ -28204,7 +28204,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
 exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKey is "xs" 1`] = `
 <DocumentFragment>
   <div
-    class="css-1gwix8r"
+    class="css-wdske1"
   >
     <div
       class="css-1waal5p"
