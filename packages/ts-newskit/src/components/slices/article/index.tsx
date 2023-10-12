@@ -47,6 +47,7 @@ export interface ArticleProps {
   expirableFlags?: expirableFlagsProps[];
   flag?: string;
   hasTopBorder?: boolean;
+  topBorderStyle?: MQ<string> | string;
   hideImage?: boolean;
   isLeadImage?: boolean;
   imageRight?: boolean;
@@ -70,6 +71,7 @@ export const Article = ({
     tag,
     flag,
     hasTopBorder,
+    topBorderStyle = 'dashedDivider',
     hideImage,
     isLeadImage,
     imageRight,
@@ -141,7 +143,7 @@ export const Article = ({
               <Divider
                 overrides={{
                   marginBlockEnd: 'space040',
-                  stylePreset: 'dashedDivider'
+                  stylePreset: topBorderStyle
                 }}
               />
             </FullWidthBlock>
@@ -149,7 +151,7 @@ export const Article = ({
             <Divider
               overrides={{
                 marginBlockEnd: 'space040',
-                stylePreset: 'dashedDivider'
+                stylePreset: topBorderStyle
               }}
             />
           )}

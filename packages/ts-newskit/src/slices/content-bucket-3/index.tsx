@@ -87,6 +87,10 @@ export const ContentBucket3 = ({
                   ...leadArticleLeft,
                   hasTopBorder: false,
                   isLeadImage: true,
+                  tagAndFlagMarginBlockStart: {
+                    xs: 'space050',
+                    md: 'space040'
+                  },
                   titleTypographyPreset: isLarge
                     ? 'editorialHeadline030'
                     : isMedium
@@ -105,7 +109,12 @@ export const ContentBucket3 = ({
                 article={{
                   ...leadArticleRight,
                   hasTopBorder: isMobile,
+                  topBorderStyle: 'lightDashedDivider',
                   isLeadImage: true,
+                  tagAndFlagMarginBlockStart: {
+                    xs: 'space050',
+                    md: 'space040'
+                  },
                   titleTypographyPreset: isLarge
                     ? 'editorialHeadline030'
                     : 'editorialHeadline020'
@@ -133,13 +142,16 @@ export const ContentBucket3 = ({
           <Divider
             overrides={{
               marginBlock: 'space040',
-              stylePreset: 'dashedDivider'
+              stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' }
             }}
           />
         </FullWidthHidden>
         <BlockItem>
           <ArticleStack
-            articles={articles}
+            articles={articles.map(article => ({
+              ...article,
+              topBorderStyle: { xs: 'lightDashedDivider', md: 'dashedDivider' }
+            }))}
             breakpoint={currentBreakpoint}
             clickHandler={clickHandler}
           />
