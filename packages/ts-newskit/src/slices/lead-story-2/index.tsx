@@ -46,11 +46,13 @@ export const LeadStory2 = ({
   const leadArticleOptions = {
     xs: {
       contentWidth: '246px',
-      imageTop: true
+      imageTop: true,
+      tagAndFlagMarginBlockStart: 'space050'
     },
     sm: {
       contentWidth: '246px',
-      imageTop: true
+      imageTop: true,
+      tagAndFlagMarginBlockStart: 'space050'
     },
     md: {
       contentWidth: '246px'
@@ -103,7 +105,12 @@ export const LeadStory2 = ({
             )
           )}
           <Visible xs sm>
-            <FullWidthBlock>
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
@@ -142,7 +149,10 @@ export const LeadStory2 = ({
       <FullWidthHidden md lg xl>
         <BlockItem marginBlockStart="space040">
           <ComposedArticleStack
-            articles={articles}
+            articles={articles.map(article => ({
+              ...article,
+              tagAndFlagMarginBlockStart: 'space050'
+            }))}
             clickHandler={clickHandler}
           />
         </BlockItem>

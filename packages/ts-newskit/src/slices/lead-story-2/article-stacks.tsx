@@ -23,15 +23,23 @@ export const ArticleStack = ({
   const modifiedHorizontalArticles = horizontalArticles.map(item => ({
     ...clearCreditsAndCaption(item),
     imageTop: true,
-    headlineTypographyPreset: 'editorialHeadline020',
-    hasTopBorder: false
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline020'
+    },
+    hasTopBorder: false,
+    tagAndFlagMarginBlockStart: { xs: 'space050', md: 'space040' }
   }));
 
   const modifiedVerticalArticles = verticalArticles.map(item => ({
     ...item,
-    headlineTypographyPreset: 'editorialHeadline020',
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline020'
+    },
     hasTopBorder: false,
-    hideImage: true
+    hideImage: true,
+    tagAndFlagMarginBlockStart: { xs: 'space050', md: 'space040' }
   }));
 
   const articleStackHorizontal = (
@@ -57,7 +65,12 @@ export const ArticleStack = ({
             <React.Fragment key={article.headline}>
               {articleBorder}
               <Block>
-                <FullWidthBlock>
+                <FullWidthBlock
+                  paddingInline={{
+                    xs: 'space045',
+                    md: 'space000'
+                  }}
+                >
                   <Visible xs sm>
                     <Divider
                       overrides={{
@@ -96,7 +109,14 @@ export const ArticleStack = ({
           return (
             <RelativeBlockItem key={article.headline}>
               <Block>
-                <FullWidthBlock>{articleBorder}</FullWidthBlock>
+                <FullWidthBlock
+                  paddingInline={{
+                    xs: 'space045',
+                    md: 'space000'
+                  }}
+                >
+                  {articleBorder}
+                </FullWidthBlock>
                 <LeadArticle article={article} clickHandler={clickHandler} />
               </Block>
             </RelativeBlockItem>
