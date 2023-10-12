@@ -49,6 +49,13 @@ export const ContainerInline = styled(Block)`
 
 const setFullWidthMargin = (space: string) => ({ marginInline: `-${space}` });
 export const FullWidthCardMediaMob = styled(CardMedia)`
+img: {
+    opacity: 1,
+    zIndex: 2,
+    width: "100%",
+    position: "absolute",
+    display: "block"
+  }
   ${getMediaQueryFromTheme('xs', 'md')} {
     ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
   }
