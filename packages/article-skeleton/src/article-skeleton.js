@@ -188,7 +188,7 @@ const ArticleSkeleton = ({
           )}
           {takeoverContent ? (
             <>
-              <div>TAKEOVER PAGE</div>
+              <div>TAKEOVER PAGE FUCKOFF!!!!</div>
             </>
           ) : (
             <Fragment>
