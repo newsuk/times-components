@@ -6,9 +6,8 @@ export const articleClickTracking = (
   article: ArticleProps,
   clickHandler: ClickHandlerType
 ) => {
-  if (article) {
-    clickHandler(event, article);
-  }
+  article && clickHandler(event, article);
+
   // location.href is required instead of <a href={} />
   // this is a side effect caused by transformChannelData
   // changing article urls client-side causes hydration warning
