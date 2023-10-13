@@ -23,7 +23,6 @@ import {
 
 const styles = {
   wrapper: {
-    display: "table",
     height: 0,
     overflow: "hidden",
     position: "relative",
@@ -183,10 +182,8 @@ export const LeadArticle = ({
             marginBlockStart={imageMarginBlockStart}
           >
             {/* Simplify the styling here to just paddingBottom becoming height and width 100%. Probs don\t need the rest - Ask Adam. */}
-            <div style={{ ...styles.wrapper, paddingBottom: `${100 / getRatio(cardImage.media.loadingAspectRatio)}%` }}
-      className="lcpItem">
-            <FullWidthCardMediaMob {...cardImage} />
-            </div>
+            <FullWidthCardMediaMob {...cardImage} style={{ ...styles.wrapper, paddingBottom: `${100 / getRatio(cardImage.media.loadingAspectRatio)}%` }}
+      className="lcpItem"/>
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"
