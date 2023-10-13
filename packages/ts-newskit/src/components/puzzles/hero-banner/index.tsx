@@ -41,17 +41,31 @@ export interface HeroBannerProps {
 }
 
 const iconMapping: Record<PuzzleType, IconComponent> = {
-  sudoku: () => <NewsKitSudokusIcon width={200} height={200} />,
-  crossword: () => <NewsKitCrosswordsIcon width={200} height={200} />,
-  'word-puzzles': () => <NewsKitWordPuzzlesIcon width={200} height={200} />,
+  sudoku: () => (
+    <NewsKitSudokusIcon width={200} height={200} className="iconType" />
+  ),
+  crossword: () => (
+    <NewsKitCrosswordsIcon width={200} height={200} className="iconType" />
+  ),
+  'word-puzzles': () => (
+    <NewsKitWordPuzzlesIcon width={200} height={200} className="iconType" />
+  ),
   'numbers-and-logic': () => (
-    <NewsKitNumbersAndLogicIcon width={200} height={200} />
+    <NewsKitNumbersAndLogicIcon width={200} height={200} className="iconType" />
   ),
   'quizzes-and-teasers': () => (
-    <NewsKitQuizzesAndTeasersIcon width={200} height={200} />
+    <NewsKitQuizzesAndTeasersIcon
+      width={200}
+      height={200}
+      className="iconType"
+    />
   ),
   'board-and-card-games': () => (
-    <NewsKitBoardAndCardGamesIcon width={200} height={200} />
+    <NewsKitBoardAndCardGamesIcon
+      width={200}
+      height={200}
+      className="iconType"
+    />
   )
 };
 
@@ -91,10 +105,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({
               },
               spaceStack: 'space040',
               content: {
-                typographyPreset: {
-                  xs: 'editorialSubheadline020',
-                  sm: 'editorialSubheadline030'
-                }
+                typographyPreset: 'editorialSubheadline020'
               }
             }}
           >
@@ -125,7 +136,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({
         </Block>
         <StyledHeroIconContainer>
           <StyledIconWrapper>
-            <NewsKitHeroBannerBackground />
+            <NewsKitHeroBannerBackground className="iconBg" />
             <StyledHeroBannerKillerSudoku />
             <StyledHeroBannerQuintagram />
             <StyledHeroBannerSuko />

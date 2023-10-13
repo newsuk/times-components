@@ -1,0 +1,41 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { NewsKitProvider } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../theme';
+import { SubscribeBanner } from './index';
+
+<Meta
+  title="Newskit Components/Puzzles/SubscribeBanner"
+  component={SubscribeBanner}
+/>
+
+# SubscribeBanner component
+The `SubscribeBanner` component is used to display a list of available challenges.
+
+## Props
+<Props of={SubscribeBanner} />
+
+## Code Example
+`<SubscribeBanner
+  data={ SubscribeBannerHeader, SubscribeBannerSubheadline, url, title }
+/>
+`
+
+An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the SubscribeBanner component.
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const SubscribeBannerStory = ({ SubscribeBannerHeader, SubscribeBannerSubheadline, url, title }) => (
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+    <SubscribeBanner {...{ SubscribeBannerHeader, SubscribeBannerSubheadline, url, title }} />
+  </NewsKitProvider>
+);
+
+<Story name="SubscribeBanner"  args={{
+    SubscribeBannerHeader: "Start playing today",
+    SubscribeBannerSubheadline: "Just £1 for your first month, then £4.99 a month thereafter",
+    url: "https://www.thetimes.co.uk/subscribe/puzzles/",
+    title: "Subscribe",
+  }}>
+  {SubscribeBannerStory.bind({})}
+</Story>

@@ -1,0 +1,34 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { Faq } from "./index";
+import { NewsKitProvider } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../theme';
+import { questions } from './fixtures/data.json';
+import { fonts } from '@times-components/ts-styleguide';
+
+<Meta
+  title="Newskit Components/Puzzles/Faq"
+  component={Faq}
+/>
+
+# Faq component
+The `Faq` component is used to frequently asked questions.
+
+The component accepts `data` prop
+
+## Code Example
+`<Faq data={questions}/>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can review and configure with different titles.
+
+export const FaqStory = ({ data = questions }) => (
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+    <Faq data={data}/>
+  </NewsKitProvider>
+);
+
+<Story
+  name="Faq"
+>
+  {FaqStory.bind({})}
+</Story>
