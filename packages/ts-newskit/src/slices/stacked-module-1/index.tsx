@@ -1,4 +1,10 @@
-import { Divider, GridLayout, useBreakpointKey, BreakpointKeys } from 'newskit';
+import {
+  Divider,
+  GridLayout,
+  useBreakpointKey,
+  BreakpointKeys,
+  Visible
+} from 'newskit';
 import React, { useState, useEffect } from 'react';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
@@ -36,15 +42,22 @@ const articleStack = ({
         }}
         marginBlockEnd="space040"
       >
-        <Divider
-          overrides={{
-            stylePreset: {
-              xs: 'lightDashedDivider',
-              md: 'dashedDivider'
-            },
-            marginBlockStart: marginBlockStart || 'space000'
-          }}
-        />
+        <Visible xs sm>
+          <Divider
+            overrides={{
+              stylePreset: 'lightDashedDivider',
+              marginBlockStart: marginBlockStart || 'space000'
+            }}
+          />
+        </Visible>
+        <Visible md lg xl>
+          <Divider
+            overrides={{
+              stylePreset: 'dashedDivider',
+              marginBlockStart: marginBlockStart || 'space000'
+            }}
+          />
+        </Visible>
       </FullWidthBlock>
     </StackItem>
     <StackItem>
@@ -71,24 +84,40 @@ const articleStack = ({
 
           return (
             <React.Fragment key={article.headline}>
-              <Article
-                article={{
-                  ...clearCreditsAndCaption(article),
-                  hideImage: hasImage || (hasImage || isDesktop),
-                  isLeadImage: isMob && articleIndex === 0,
-                  hasTopBorder: hasImage,
-                  topBorderStyle: {
-                    xs: 'lightDashedDivider',
-                    md: 'dashedDivider'
-                  },
-                  isFullWidth: true,
-                  tagAndFlagMarginBlockStart: 'space030',
-                  titleTypographyPreset: isMob
-                    ? 'editorialHeadline030'
-                    : 'editorialHeadline020'
-                }}
-                clickHandler={clickHandler}
-              />
+              <Visible xs sm>
+                <Article
+                  article={{
+                    ...clearCreditsAndCaption(article),
+                    hideImage: hasImage || (hasImage || isDesktop),
+                    isLeadImage: isMob && articleIndex === 0,
+                    hasTopBorder: hasImage,
+                    topBorderStyle: 'lightDashedDivider',
+                    isFullWidth: true,
+                    tagAndFlagMarginBlockStart: 'space030',
+                    titleTypographyPreset: isMob
+                      ? 'editorialHeadline030'
+                      : 'editorialHeadline020'
+                  }}
+                  clickHandler={clickHandler}
+                />
+              </Visible>
+              <Visible md lg xl>
+                <Article
+                  article={{
+                    ...clearCreditsAndCaption(article),
+                    hideImage: hasImage || (hasImage || isDesktop),
+                    isLeadImage: isMob && articleIndex === 0,
+                    hasTopBorder: hasImage,
+                    topBorderStyle: 'dashedDivider',
+                    isFullWidth: true,
+                    tagAndFlagMarginBlockStart: 'space030',
+                    titleTypographyPreset: isMob
+                      ? 'editorialHeadline030'
+                      : 'editorialHeadline020'
+                  }}
+                  clickHandler={clickHandler}
+                />
+              </Visible>
               {articleBorder}
             </React.Fragment>
           );
