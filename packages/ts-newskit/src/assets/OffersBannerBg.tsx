@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OffersBannerBg = () => {
+const OffersBannerBg = (props: any) => {
   return (
     <svg
       width="1024"
@@ -9,6 +9,7 @@ const OffersBannerBg = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      {...props}
     >
       <rect width="1024" height="227" fill="url(#pattern0)" />
       <defs>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { TextBlock } from 'newskit';
-import { ViewOffersButton, Container } from './styles';
-import { NewsKitOffersBannerBg } from '../../../assets';
+import { ViewOffersButton, Container, Background } from './styles';
 
 export const OffersBanner = () => {
   return (
@@ -23,7 +22,7 @@ export const OffersBanner = () => {
         View all digital subscription offers
       </TextBlock>
       <ViewOffersButton>View offers</ViewOffersButton>
-      <NewsKitOffersBannerBg />
+      <Background />
     </Container>
   );
 };
