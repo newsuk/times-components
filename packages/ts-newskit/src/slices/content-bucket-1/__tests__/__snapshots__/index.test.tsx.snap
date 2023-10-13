@@ -3,7 +3,7 @@
 exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-1gwix8r"
+    class="css-wdske1"
   >
     <div
       class="css-1klr24i"
@@ -218,7 +218,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </span>
                 </a>
                 <p
-                  class="css-1cszihj"
+                  class="css-1xcccqf"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
@@ -281,7 +281,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </span>
                 </a>
                 <p
-                  class="css-1cszihj"
+                  class="css-1xcccqf"
                 >
                   Now is Jack's chance to show he’s got more to offer than Curry
                 </p>
@@ -692,7 +692,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 </span>
               </a>
               <p
-                class="css-1cszihj"
+                class="css-1xcccqf"
               >
                 Now is Willis’s chance to show he’s got more to offer than Curry
               </p>
@@ -755,7 +755,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 </span>
               </a>
               <p
-                class="css-1cszihj"
+                class="css-1xcccqf"
               >
                 Now is Jack's chance to show he’s got more to offer than Curry
               </p>
@@ -785,7 +785,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
 exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
 <DocumentFragment>
   <div
-    class="css-1gwix8r"
+    class="css-wdske1"
   >
     <div
       class="css-1klr24i"
@@ -995,7 +995,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   </span>
                 </a>
                 <p
-                  class="css-1cszihj"
+                  class="css-1xcccqf"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
@@ -1058,7 +1058,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   </span>
                 </a>
                 <p
-                  class="css-1cszihj"
+                  class="css-1xcccqf"
                 >
                   Now is Jack's chance to show he’s got more to offer than Curry
                 </p>
@@ -1470,7 +1470,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 </span>
               </a>
               <p
-                class="css-1cszihj"
+                class="css-1xcccqf"
               >
                 Now is Willis’s chance to show he’s got more to offer than Curry
               </p>
@@ -1533,7 +1533,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 </span>
               </a>
               <p
-                class="css-1cszihj"
+                class="css-1xcccqf"
               >
                 Now is Jack's chance to show he’s got more to offer than Curry
               </p>

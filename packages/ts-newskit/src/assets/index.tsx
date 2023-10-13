@@ -34,6 +34,7 @@ import DoneIcon from './DoneIcon';
 import IconSubscribe3 from './IconSubscribe3';
 import IconSubscribeB from './IconSubscribeB';
 import IconSubscribeQuestion from './IconSubscribeQuestion';
+import PhoneIcon from './phone';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -210,4 +211,9 @@ export const NewsKitIconSubscribeB = customToNewsKitIcon(
 export const NewsKitIconSubscribeQuestion = customToNewsKitIcon(
   'NewsKitIconSubscribeQuestion',
   props => <IconSubscribeQuestion {...props} />
+);
+
+export const NewsKitPhoneIcon = customToNewsKitIcon(
+  'NewsKitPhoneIcon',
+  props => <PhoneIcon {...props} />
 );
