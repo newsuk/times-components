@@ -90,8 +90,8 @@ export const LeadStory1 = ({
     hideImage: true
   };
 
-  const addTagAndFlagMargin = (articles: ArticleProps[]) =>
-    articles.map(article => ({
+  const addTagAndFlagMargin = (baseArticles: ArticleProps[]) =>
+    baseArticles.map(article => ({
       ...article,
       tagAndFlagMarginBlockStart: { xs: 'space050', md: 'space040' }
     }));
