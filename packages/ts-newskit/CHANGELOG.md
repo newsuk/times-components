@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.112.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.111.0...@times-components/ts-newskit@1.112.0) (2023-10-13)
+
+
+### Bug Fixes
+
+* **TMPZ-157:** New signup page banner design Issue for iPad Pro resolution ([#3590](https://github.com/newsuk/times-components/issues/3590)) ([6ea3b21](https://github.com/newsuk/times-components/commit/6ea3b21fd678a24b623aecfe58dc97e7df3bd307))
+
+
+### Features
+
+* **TMPZ-152:** created subscribe banner ([#3584](https://github.com/newsuk/times-components/issues/3584)) ([ba8ceaa](https://github.com/newsuk/times-components/commit/ba8ceaae1fd43a6757c186440b926adde0bc0442))
+* **TMPZ-153:** Implemented FAQ ([#3581](https://github.com/newsuk/times-components/issues/3581)) ([8ec1805](https://github.com/newsuk/times-components/commit/8ec1805754d25187e2e56bd2a2d16eaba0f850c1))
+* **TMRX-1556:** refactor content bucket 2 ([#3583](https://github.com/newsuk/times-components/issues/3583)) ([805f9f6](https://github.com/newsuk/times-components/commit/805f9f67847a477015ff5e408fbad0b3fb371e1f))
+
+
+
+
+
 # [1.111.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.110.0...@times-components/ts-newskit@1.111.0) (2023-10-12)
 
 
