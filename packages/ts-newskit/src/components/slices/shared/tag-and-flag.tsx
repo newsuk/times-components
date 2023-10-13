@@ -4,6 +4,10 @@ import { ContainerInline, TextLink } from '../shared-styles';
 
 export interface TagAndFlagProps {
   flag?: string;
+  flagOverrides?: {
+    typographyPreset?: MQ<string> | string;
+    stylePreset?: MQ<string> | string;
+  };
   tag?: {
     label: string;
     href: string;
@@ -13,6 +17,7 @@ export interface TagAndFlagProps {
 
 export const TagAndFlag = ({
   flag,
+  flagOverrides,
   tag,
   marginBlockStart = 'space000'
 }: TagAndFlagProps) => {
@@ -56,8 +61,16 @@ export const TagAndFlag = ({
 
       {flag && (
         <TextBlock
-          typographyPreset={{ xs: 'utilityMeta010', md: 'utilityMeta005' }}
-          stylePreset={{ xs: 'inkNonEssential', md: 'inkSubtle' }}
+          typographyPreset={
+            flagOverrides && flagOverrides.typographyPreset
+              ? flagOverrides.typographyPreset
+              : { xs: 'utilityMeta010', md: 'utilityMeta005' }
+          }
+          stylePreset={
+            flagOverrides && flagOverrides.stylePreset
+              ? flagOverrides.stylePreset
+              : { xs: 'inkNonEssential', md: 'inkSubtle' }
+          }
           as="span"
         >
           {flag}
