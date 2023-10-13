@@ -2,12 +2,7 @@ import React from 'react';
 import { ArticleProps } from '../../components/slices/article';
 import { ArticleStack } from './article-stacks';
 import { SliceHeader } from '../../components/slices/slice-header';
-import {
-  Divider,
-  Scroll,
-  FlagSize,
-  Visible
-} from 'newskit';
+import { Divider, Scroll, FlagSize, Visible } from 'newskit';
 import { CustomGridLayout } from '../shared/layouts';
 import { StyledBlock } from './styles';
 import { BlockItem } from '../shared-styles';
@@ -68,7 +63,6 @@ export const SectionBucket = ({
   clickHandler,
   sliceHeaderClickHandler
 }: SectionBucketProps) => {
-
   const articleStacksArray = [
     articleStackOne,
     articleStackTwo,
