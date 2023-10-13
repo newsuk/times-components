@@ -114,7 +114,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                   </span>
                 </a>
                 <div
-                  class="css-1atazsr"
+                  class="css-1kfs2jd"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -125,7 +125,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Review
                       </span>
@@ -141,7 +141,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -245,7 +245,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                   </span>
                 </a>
                 <div
-                  class="css-1atazsr"
+                  class="css-1kfs2jd"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -256,7 +256,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Review
                       </span>
@@ -272,7 +272,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -289,12 +289,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
           class="css-15edd2j"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
             id="COMMENT STACK"
           >
             <hr
               aria-hidden="true"
-              class="css-obfal1"
+              class="css-1u10mo6"
               data-testid="divider"
             />
           </div>
@@ -351,7 +351,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       3 mins ago
                     </span>
@@ -361,7 +361,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             </div>
             <hr
               aria-hidden="true"
-              class="css-clg7cq"
+              class="css-1ocu5e1"
               data-testid="divider"
             />
             <div
@@ -414,7 +414,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       21 mins ago
                     </span>
@@ -434,7 +434,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-obfal1"
+          class="css-1u10mo6"
           data-testid="divider"
         />
       </div>
@@ -594,7 +594,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-1i1gqyx"
+                class="css-53zuuf"
                 data-testid="divider"
               />
             </div>
@@ -673,7 +673,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-1i1gqyx"
+                class="css-53zuuf"
                 data-testid="divider"
               />
             </div>
@@ -759,12 +759,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
         class="css-1frprgo"
       >
         <div
-          class="css-1g5vzsh"
+          class="css-1ms6dj6"
           id="COMMENT STACK"
         >
           <hr
             aria-hidden="true"
-            class="css-obfal1"
+            class="css-1u10mo6"
             data-testid="divider"
           />
         </div>
@@ -821,7 +821,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                   data-testid="tag-and-flag"
                 >
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     3 mins ago
                   </span>
@@ -831,7 +831,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="css-clg7cq"
+            class="css-1ocu5e1"
             data-testid="divider"
           />
           <div
@@ -884,7 +884,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                   data-testid="tag-and-flag"
                 >
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     21 mins ago
                   </span>
@@ -1013,7 +1013,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                   </span>
                 </a>
                 <div
-                  class="css-1atazsr"
+                  class="css-1kfs2jd"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -1024,7 +1024,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Review
                       </span>
@@ -1040,7 +1040,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -1064,7 +1064,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <hr
                   aria-hidden="true"
-                  class="css-1i1gqyx"
+                  class="css-y3i219"
                   data-testid="divider"
                 />
               </div>
@@ -1153,7 +1153,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                   </span>
                 </a>
                 <div
-                  class="css-1atazsr"
+                  class="css-1kfs2jd"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -1164,7 +1164,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Review
                       </span>
@@ -1180,7 +1180,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -1197,12 +1197,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
           class="css-15edd2j"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
             id="COMMENT STACK"
           >
             <hr
               aria-hidden="true"
-              class="css-obfal1"
+              class="css-1u10mo6"
               data-testid="divider"
             />
           </div>
@@ -1259,7 +1259,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       3 mins ago
                     </span>
@@ -1269,7 +1269,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
             </div>
             <hr
               aria-hidden="true"
-              class="css-clg7cq"
+              class="css-1ocu5e1"
               data-testid="divider"
             />
             <div
@@ -1322,7 +1322,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     data-testid="tag-and-flag"
                   >
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       21 mins ago
                     </span>
@@ -1342,7 +1342,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-obfal1"
+          class="css-1u10mo6"
           data-testid="divider"
         />
       </div>
@@ -1416,7 +1416,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-1i1gqyx"
+                class="css-53zuuf"
                 data-testid="divider"
               />
             </div>
@@ -1479,7 +1479,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-1i1gqyx"
+                class="css-53zuuf"
                 data-testid="divider"
               />
             </div>
@@ -1542,7 +1542,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-1i1gqyx"
+                class="css-53zuuf"
                 data-testid="divider"
               />
             </div>
@@ -1607,12 +1607,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
         class="css-1frprgo"
       >
         <div
-          class="css-1g5vzsh"
+          class="css-1ms6dj6"
           id="COMMENT STACK"
         >
           <hr
             aria-hidden="true"
-            class="css-obfal1"
+            class="css-1u10mo6"
             data-testid="divider"
           />
         </div>
@@ -1669,7 +1669,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                   data-testid="tag-and-flag"
                 >
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     3 mins ago
                   </span>
@@ -1679,7 +1679,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="css-clg7cq"
+            class="css-1ocu5e1"
             data-testid="divider"
           />
           <div
@@ -1732,7 +1732,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                   data-testid="tag-and-flag"
                 >
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     21 mins ago
                   </span>
