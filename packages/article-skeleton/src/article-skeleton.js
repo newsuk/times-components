@@ -65,6 +65,7 @@ const ArticleSkeleton = ({
   const {
     commentsEnabled,
     content,
+    embeddedContent,
     dropcapsDisabled,
     id: articleId,
     section,
@@ -184,6 +185,9 @@ const ArticleSkeleton = ({
               html={'<div id="nu-zephr-article-target-below-head"></div>'}
             />
           )}
+
+          {embeddedContent && <div>{JSON.stringify(embeddedContent)}</div>}
+
           <Fragment>
             <HeaderAdContainer key="headerAd">
               <AdContainer slotName="header" style={styles.adMarginStyle} />
