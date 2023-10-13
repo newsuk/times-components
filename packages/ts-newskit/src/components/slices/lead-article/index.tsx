@@ -21,22 +21,6 @@ import {
   expirableFlagsProps
 } from '../shared/articleTileInfo';
 
-const styles = {
-  wrapper: {
-    height: 0,
-    overflow: "hidden",
-    position: "relative",
-    width: "100%"
-  },
-  img: {
-    opacity: 1,
-    zIndex: 2,
-    width: "100%",
-    position: "absolute",
-    display: "block"
-  }
-};
-
 type ImageCrops = {
   url?: string;
   ratio?: string;
@@ -151,11 +135,7 @@ export const LeadArticle = ({
     const articleForTracking = { headline, id, url };
     articleClickTracking(event, articleForTracking, clickHandler);
   };
-  const getRatio = (ratioString: string) => {
-    const [ratioWidth, ratioHeight] = ratioString.split(":");
-  
-    return Number(ratioWidth) / Number(ratioHeight);
-  };
+
 
   return (
     <CardComposable
@@ -181,9 +161,7 @@ export const LeadArticle = ({
             marginBlockEnd={imageTop ? 'space040' : 'space000'}
             marginBlockStart={imageMarginBlockStart}
           >
-            {/* Simplify the styling here to just paddingBottom becoming height and width 100%. Probs don\t need the rest - Ask Adam. */}
-            <FullWidthCardMediaMob {...cardImage} style={{ ...styles.wrapper, paddingBottom: `${100 / getRatio(cardImage.media.loadingAspectRatio)}%` }}
-      className="lcpItem"/>
+            <FullWidthCardMediaMob {...cardImage} className="lcpItem" ratio={imageWithCorrectRatio.ratio}/>
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"
