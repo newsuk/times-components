@@ -1,4 +1,4 @@
-import { Divider, GridLayout } from 'newskit';
+import { Divider, GridLayout, Hidden, Visible } from 'newskit';
 import React from 'react';
 import {
   CommentCard,
@@ -22,12 +22,22 @@ export const CommentStack = ({ comments, clickHandler }: CommentStackProps) => {
           md: 'space000'
         }}
       >
-        <Divider
-          overrides={{
-            marginBlock: 'space040',
-            stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' }
-          }}
-        />
+        <Visible xs sm>
+          <Divider
+            overrides={{
+              marginBlock: 'space040',
+              stylePreset: 'lightDashedDivider'
+            }}
+          />
+        </Visible>
+        <Hidden xs sm>
+          <Divider
+            overrides={{
+              marginBlock: 'space040',
+              stylePreset: 'dashedDivider'
+            }}
+          />
+        </Hidden>
       </FullWidthBlock>
       <GridLayout
         columns={{
@@ -38,13 +48,25 @@ export const CommentStack = ({ comments, clickHandler }: CommentStackProps) => {
       >
         {comments.map((comment, commentIndex, commentArr) => {
           const hasBorder = commentIndex < commentArr.length - 1 && (
-            <AvatarDivider
-              overrides={{
-                marginBlock: { xs: 'space040', md: 'space000' },
-                stylePreset: { xs: 'lightDashedDivider', md: 'lightDivider' }
-              }}
-              vertical={{ xs: false, md: true }}
-            />
+            <>
+              <Visible xs sm>
+                <AvatarDivider
+                  overrides={{
+                    marginBlock: 'space040',
+                    stylePreset: 'lightDashedDivider'
+                  }}
+                />
+              </Visible>
+              <Hidden xs sm>
+                <AvatarDivider
+                  overrides={{
+                    marginBlock: 'space000',
+                    stylePreset: 'lightDivider'
+                  }}
+                  vertical
+                />
+              </Hidden>
+            </>
           );
 
           return (
