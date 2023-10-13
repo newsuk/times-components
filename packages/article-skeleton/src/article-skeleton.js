@@ -185,9 +185,9 @@ const ArticleSkeleton = ({
               html={'<div id="nu-zephr-article-target-below-head"></div>'}
             />
           )}
-
-          {embeddedContent && <div>{JSON.stringify(embeddedContent)}</div>}
-
+          {embeddedContent && (
+            <StaticContent html={JSON.stringify(embeddedContent)} />
+          )}
           <Fragment>
             <HeaderAdContainer key="headerAd">
               <AdContainer slotName="header" style={styles.adMarginStyle} />
