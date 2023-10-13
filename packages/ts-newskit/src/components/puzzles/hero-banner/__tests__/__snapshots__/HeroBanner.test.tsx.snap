@@ -51,7 +51,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
                   </svg>
                 </div>
                 <p
-                  class="css-1c1lphz"
+                  class="css-1dy03x9"
                 >
                   Play thousands of puzzles and crosswords
                 </p>
@@ -85,7 +85,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
                   </svg>
                 </div>
                 <p
-                  class="css-1c1lphz"
+                  class="css-1dy03x9"
                 >
                   Read up to 30 articles per month on The Times & Sunday Times
                 </p>
@@ -119,7 +119,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
                   </svg>
                 </div>
                 <p
-                  class="css-1c1lphz"
+                  class="css-1dy03x9"
                 >
                   Just £1 for your first month, then £4.99 a month thereafter
                 </p>
@@ -143,13 +143,13 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
         class="css-1fhiupl"
       >
         <div
-          class="css-6wnvz7"
+          class="css-1271pis"
         >
           <div
-            class="css-cy70wm"
+            class="css-1gsh0yp"
           >
             <svg
-              class="css-ny3roy"
+              class="iconBg css-ny3roy"
               fill="none"
               height="350"
               viewBox="0 0 495 350"
@@ -405,10 +405,10 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
             </svg>
           </div>
           <div
-            class="css-1ia9lmz"
+            class="css-halusf"
           >
             <svg
-              class="css-ny3roy"
+              class="iconType css-ny3roy"
               fill="none"
               height="200"
               viewBox="0 0 382 382"

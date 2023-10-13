@@ -63,6 +63,12 @@ export const StyledStack = styled(Stack)`
 
 export const StyledHeroIconContainer = styled(Block)`
   position: relative;
+
+  ${getMediaQueryFromTheme('lg')} {
+    right: 5%;
+    top: 5%;
+    position: absolute;
+  }
 `;
 
 export const MainIconContainer = styled(Block)`
@@ -81,12 +87,32 @@ export const MainIconContainer = styled(Block)`
     position: relative;
     ${getSpacingCssFromTheme('marginInlineStart', 'space010')};
   }
+  ${getMediaQueryFromTheme('lg')} {
+    & .iconType {
+      width: 150px;
+    }
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    & .iconType {
+      width: 200px;
+    }
+  }
 `;
 
 export const StyledIconWrapper = styled(Block)`
   position: relative;
   ${getMediaQueryFromTheme('xs', 'lg')} {
     display: none;
+  }
+  ${getMediaQueryFromTheme('lg')} {
+    & .iconBg {
+      width: 400px;
+    }
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    & .iconBg {
+      width: 495px;
+    }
   }
 `;
 
