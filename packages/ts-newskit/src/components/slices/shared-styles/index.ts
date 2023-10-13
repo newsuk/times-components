@@ -14,7 +14,7 @@ import {
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
 const getRatio = (ratioString: string) => {
-  const [ratioWidth, ratioHeight] = ratioString.split(":");
+  const [ratioWidth, ratioHeight] = ratioString.split(':');
 
   return Number(ratioWidth) / Number(ratioHeight);
 };
@@ -54,8 +54,11 @@ export const ContainerInline = styled(Block)`
 `;
 
 const setFullWidthMargin = (space: string) => ({ marginInline: `-${space}` });
-export const FullWidthCardMediaMob = styled(CardMedia)<{ratio?: string, className: string}>`
-  height: 0;
+export const FullWidthCardMediaMob = styled(CardMedia)<{
+  ratio?: string;
+  className?: string;
+}>`
+  height: ${({ className }) => (className ? 0 : '100%')};
   overflow: "hidden";
   position: "relative";
   width: "100%";

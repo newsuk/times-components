@@ -106,12 +106,10 @@ export const LeadArticle = ({
       media: {
         src: imageWithCorrectRatio.url,
         alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio.ratio,
+        loadingAspectRatio: imageWithCorrectRatio.ratio
       }
     };
 
-
-    console.log(cardImage, 'CARD IMAGE')
   const hasImage =
     images &&
     images.crops &&
@@ -135,7 +133,6 @@ export const LeadArticle = ({
     const articleForTracking = { headline, id, url };
     articleClickTracking(event, articleForTracking, clickHandler);
   };
-
 
   return (
     <CardComposable
@@ -161,7 +158,11 @@ export const LeadArticle = ({
             marginBlockEnd={imageTop ? 'space040' : 'space000'}
             marginBlockStart={imageMarginBlockStart}
           >
-            <FullWidthCardMediaMob {...cardImage} className="lcpItem" ratio={imageWithCorrectRatio.ratio}/>
+            <FullWidthCardMediaMob
+              {...cardImage}
+              className="lcpItem"
+              ratio={imageWithCorrectRatio!.ratio}
+            />
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"
