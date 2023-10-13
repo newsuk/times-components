@@ -7,9 +7,11 @@ import {
   Block
 } from 'newskit';
 
-import IconSubscribe3 from '../../../assets/IconSubscribe3';
-import IconSubscribeB from '../../../assets/IconSubscribeB';
-import IconSubscribeQuestion from '../../../assets/IconSubscribeQuestion';
+import {
+  NewsKitIconSubscribe3,
+  NewsKitIconSubscribeB,
+  NewsKitIconSubscribeQuestion
+} from '../../../assets';
 
 export const SubscribeBannerContainer = styled(Stack)<StackProps>`
   overflow: hidden;
@@ -33,7 +35,7 @@ export const StyledBlock = styled(Block)`
   }
 `;
 
-export const StyledIconSubscribe3 = styled(IconSubscribe3)`
+export const StyledIconSubscribe3 = styled(NewsKitIconSubscribe3)`
   ${getMediaQueryFromTheme('xs')} {
     display: none;
   }
@@ -45,7 +47,7 @@ export const StyledIconSubscribe3 = styled(IconSubscribe3)`
   }
 `;
 
-export const StyledIconSubscribeB = styled(IconSubscribeB)`
+export const StyledIconSubscribeB = styled(NewsKitIconSubscribeB)`
   position: absolute;
   ${getMediaQueryFromTheme('xs')} {
     display: none;
@@ -59,7 +61,7 @@ export const StyledIconSubscribeB = styled(IconSubscribeB)`
   }
 `;
 
-export const StyledIconSubscribeQuestion = styled(IconSubscribeQuestion)`
+export const StyledIconSubscribeQuestion = styled(NewsKitIconSubscribeQuestion)`
   position: absolute;
   ${getMediaQueryFromTheme('xs')} {
     display: none;

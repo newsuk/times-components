@@ -38,7 +38,7 @@ exports[`SubscribeBanner should render SubscribeBanner banner component 1`] = `
         </div>
       </div>
       <svg
-        class="css-11o8eyp"
+        class="css-17pqrn0"
         fill="none"
         height="66"
         viewBox="0 0 64 66"
@@ -89,7 +89,7 @@ exports[`SubscribeBanner should render SubscribeBanner banner component 1`] = `
         />
       </svg>
       <svg
-        class="css-f3gmb2"
+        class="css-bw95sp"
         fill="none"
         height="63"
         viewBox="0 0 107 63"
@@ -170,7 +170,7 @@ exports[`SubscribeBanner should render SubscribeBanner banner component 1`] = `
         />
       </svg>
       <svg
-        class="css-196ei5k"
+        class="css-4b7n7k"
         fill="none"
         height="53"
         viewBox="0 0 75 53"
