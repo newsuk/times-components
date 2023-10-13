@@ -120,25 +120,49 @@ export const StyledHeroBannerKillerSudoku = styled(
   NewsKitHeroBannerKillerSudoku
 )`
   position: absolute;
-  left: 18.5%;
-  top: 17.5%;
+  ${getMediaQueryFromTheme('lg')} {
+    left: 17%;
+    top: 24.5%;
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    left: 18.5%;
+    top: 17.5%;
+  }
 `;
 
 export const StyledHeroBannerQuintagram = styled(NewsKitHeroBannerQuintagram)`
   position: absolute;
-  right: 22.5%;
-  bottom: 12%;
+  ${getMediaQueryFromTheme('lg')} {
+    right: 22.2%;
+    bottom: 19%;
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    right: 22.5%;
+    bottom: 12%;
+  }
 `;
 
 export const StyledHeroBannerSuko = styled(NewsKitHeroBannerSuko)`
   position: absolute;
-  top: 10%;
-  right: 22%;
+  ${getMediaQueryFromTheme('lg')} {
+    top: 17%;
+    right: 21%;
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    top: 10%;
+    right: 22%;
+  }
 `;
 
 export const StyledHeroBannerWordPuzzle = styled(NewsKitHeroBannerWordPuzzle)`
   position: absolute;
-  left: 18%;
-  bottom: 13%;
+  ${getMediaQueryFromTheme('lg')} {
+    left: 16%;
+    bottom: 20%;
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    left: 18%;
+    bottom: 13%;
+  }
 }
 `;

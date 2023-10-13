@@ -162,7 +162,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               />
             </svg>
             <svg
-              class="css-1rn81qg"
+              class="css-1poeuvp"
               fill="none"
               height="87"
               viewBox="0 0 64 87"
@@ -227,7 +227,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               />
             </svg>
             <svg
-              class="css-1ye7y4k"
+              class="css-13367om"
               fill="none"
               height="75"
               viewBox="0 0 76 75"
@@ -308,7 +308,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               />
             </svg>
             <svg
-              class="css-ertbu7"
+              class="css-s6fhb1"
               fill="none"
               height="75"
               viewBox="0 0 75 75"
@@ -381,7 +381,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               />
             </svg>
             <svg
-              class="css-huft0m"
+              class="css-1ucn2f5"
               fill="none"
               height="75"
               viewBox="0 0 75 75"
