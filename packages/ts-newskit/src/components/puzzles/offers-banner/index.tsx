@@ -1,18 +1,18 @@
 import React from 'react';
-import { Button, Stack, TextBlock } from 'newskit';
-import { Container, ViewOffersButton } from './styles';
-import image from './image.png';
+import { TextBlock } from 'newskit';
+import { ViewOffersButton, Container } from './styles';
+import { NewsKitOffersBannerBg } from '../../../assets';
 
 export const OffersBanner = () => {
   return (
-    <div>
+    <Container>
       <TextBlock
         typographyPreset="editorialHeadline050"
         stylePreset="inkContrast"
         marginBlockEnd="space050"
         style={{ textAlign: 'center' }}
       >
-        gtgggs Looking for unlimited digital access?
+        Looking for unlimited digital access?
       </TextBlock>
       <TextBlock
         typographyPreset="editorialSubheadline030"
@@ -22,10 +22,8 @@ export const OffersBanner = () => {
       >
         View all digital subscription offers
       </TextBlock>
-      <img src={image} />
-      <ViewOffersButton overrides={{ stylePreset: 'stylingOverrides' }}>
-        View offers
-      </ViewOffersButton>
-    </div>
+      <ViewOffersButton>View offers</ViewOffersButton>
+      <NewsKitOffersBannerBg />
+    </Container>
   );
 };

@@ -1,7 +1,8 @@
-import { Button, Stack, styled } from 'newskit';
+import { Button, Block, styled } from 'newskit';
 
-export const Container = styled(Stack)`
+export const Container = styled(Block)`
   width: 100%;
+  position: relative;
 `;
 
 export const ViewOffersButton = styled(Button)`
