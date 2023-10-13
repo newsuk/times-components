@@ -1,13 +1,5 @@
-import {
-  Block,
-  Divider,
-  Hidden,
-  useBreakpointKey,
-  Visible,
-  BreakpointKeys,
-  GridLayout
-} from 'newskit';
-import React, { useState, useEffect } from 'react';
+import { Block, Divider, Hidden, Visible, GridLayout } from 'newskit';
+import React from 'react';
 import { CommentCardProps } from '../../components/slices/comment-card';
 import { LeadArticleProps } from '../../components/slices/lead-article';
 import { ArticleProps, Article } from '../../components/slices/article';
@@ -23,6 +15,7 @@ import { ArticleStack } from '../content-bucket-3/article-stack';
 import { CustomStackLayout } from '../shared';
 import { FullWidthHidden } from '../../components/slices/shared-styles';
 import { ClickHandlerType } from '../types';
+import { defaultArticleOptions } from '../../utils/default-article-options';
 
 export interface ContentBucket3Props {
   leadArticleLeft: LeadArticleProps;
@@ -39,18 +32,48 @@ export const ContentBucket3 = ({
   articles,
   clickHandler
 }: ContentBucket3Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xl');
-  const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
+  const leadArticleRightOptions = {
+    xs: {
+      hasTopBorder: true
     },
-    [breakpointKey]
-  );
+    sm: {
+      hasTopBorder: true
+    },
+    md: {
+      hasTopBorder: false
+    },
+    lg: {
+      hasTopBorder: false
+    },
+    xl: {
+      hasTopBorder: false
+    }
+  };
 
-  const isMobile = ['xs', 'sm'].includes(currentBreakpoint);
-  const isMedium = currentBreakpoint === 'md';
-  const isLarge = ['lg', 'xl'].includes(currentBreakpoint);
+  const modifiedleadArticleRightOptions = {
+    ...defaultArticleOptions,
+    ...leadArticleRightOptions
+  };
+
+  const modifiedleadArticleLeft = {
+    ...leadArticleLeft,
+    hasTopBorder: false,
+    isLeadImage: true,
+    titleTypographyPreset: {
+      xs: 'editorialHeadline040',
+      md: 'editorialHeadline020',
+      lg: 'editorialHeadline030'
+    }
+  };
+
+  const modifiedleadArticleRight = {
+    ...leadArticleRight,
+    isLeadImage: true,
+    titleTypographyPreset: {
+      xs: 'editorialHeadline020',
+      lg: 'editorialHeadline030'
+    }
+  };
 
   return (
     <CustomStackLayout>
@@ -81,16 +104,7 @@ export const ContentBucket3 = ({
               rowGap="space040"
             >
               <Article
-                article={{
-                  ...leadArticleLeft,
-                  hasTopBorder: false,
-                  isLeadImage: true,
-                  titleTypographyPreset: isLarge
-                    ? 'editorialHeadline030'
-                    : isMedium
-                      ? 'editorialHeadline020'
-                      : 'editorialHeadline040'
-                }}
+                article={modifiedleadArticleLeft}
                 clickHandler={clickHandler}
               />
               <Hidden xs sm>
