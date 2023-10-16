@@ -153,7 +153,7 @@ export const Article = ({
         isLeadImage ? (
           <FullWidthCardMediaMob {...cardImage} />
         ) : (
-          <CardMedia {...{ ...cardImage, loading: 'lazy' }} />
+          <CardMedia media={{...cardImage.media, loading: 'lazy'}}/>
         )
       ) : null}
       <CardContent alignContent="start">
@@ -197,3 +197,5 @@ export const Article = ({
     </CardComposable>
   );
 };
+
+// <Image src={imageWithCorrectRatio.url} loading="lazy" alt={(images && images.alt) || headline} loadingAspectRatio={imageWithCorrectRatio.ratio || '3:2'}/>
