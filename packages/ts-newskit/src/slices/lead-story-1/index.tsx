@@ -176,13 +176,11 @@ export const LeadStory1 = ({
           </FullWidthBlock>
         </FullWidthHidden>
         <Block>
-          <Visible lg xl>
-            <LeadStoryDivider
-              overrides={{ stylePreset: 'lightDivider' }}
-              vertical
-              position="right"
-            />
-          </Visible>
+          <LeadStoryDivider
+            overrides={{ stylePreset: 'lightDivider' }}
+            vertical
+            position="right"
+          />
           <BlockItem marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
             <LeadArticle
               article={modifiedLeadArticle}

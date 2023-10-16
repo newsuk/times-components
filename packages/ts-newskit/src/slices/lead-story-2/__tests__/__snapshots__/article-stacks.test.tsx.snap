@@ -22,7 +22,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-1g5vzsh"
             />
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
@@ -130,7 +130,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               />
             </div>
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
@@ -256,7 +256,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
               class="css-j6pksw"
@@ -393,7 +393,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
               class="css-j6pksw"
@@ -532,7 +532,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-1g5vzsh"
             />
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
@@ -640,7 +640,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               />
             </div>
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
@@ -766,7 +766,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
               class="css-j6pksw"
@@ -903,7 +903,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
               class="css-j6pksw"

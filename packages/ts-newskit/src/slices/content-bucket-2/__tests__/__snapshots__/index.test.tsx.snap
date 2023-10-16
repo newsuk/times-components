@@ -183,6 +183,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -330,6 +331,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -477,6 +479,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -795,6 +798,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -942,6 +946,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -1089,6 +1094,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />

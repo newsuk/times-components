@@ -8,15 +8,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
     <div
       class="css-1klr24i"
     >
-      <div
-        class="css-15edd2j"
-      >
-        <hr
-          aria-hidden="true"
-          class="css-uh7mej"
-          data-testid="divider"
-        />
-      </div>
+      <hr
+        aria-hidden="true"
+        class="css-a6kwjq"
+        data-testid="divider"
+      />
       <div
         class="css-13tedu1"
       >
@@ -581,6 +577,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />
@@ -657,6 +654,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />
@@ -881,15 +879,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
     <div
       class="css-1klr24i"
     >
-      <div
-        class="css-15edd2j"
-      >
-        <hr
-          aria-hidden="true"
-          class="css-uh7mej"
-          data-testid="divider"
-        />
-      </div>
+      <hr
+        aria-hidden="true"
+        class="css-a6kwjq"
+        data-testid="divider"
+      />
       <div
         class="css-13tedu1"
       >
@@ -1038,6 +1032,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-1i1gqyx"
                   data-testid="divider"
                 />
@@ -1383,6 +1378,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />
@@ -1446,6 +1442,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />
@@ -1509,6 +1506,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />

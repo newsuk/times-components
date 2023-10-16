@@ -773,6 +773,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -840,6 +841,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -1199,6 +1201,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -1285,6 +1288,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -1672,6 +1676,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -1761,6 +1766,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -2184,6 +2190,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -2284,6 +2291,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   <hr
                     aria-hidden="true"
+                    aria-label="article-divider-horizontal"
                     class="css-1i1gqyx"
                     data-testid="divider"
                   />
@@ -3151,6 +3159,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />
@@ -3218,6 +3227,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />
@@ -3577,6 +3587,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />
@@ -3663,6 +3674,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />
@@ -4050,6 +4062,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />
@@ -4139,6 +4152,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />
@@ -4562,6 +4576,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />
@@ -4662,6 +4677,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
             >
               <hr
                 aria-hidden="true"
+                aria-label="article-divider-horizontal"
                 class="css-1i1gqyx"
                 data-testid="divider"
               />

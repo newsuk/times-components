@@ -111,6 +111,16 @@ export const Article = ({
     articleClickTracking(event, articleForTracking, clickHandler);
   };
 
+  const articleDivider = (
+    <Divider
+      overrides={{
+        marginBlockEnd: 'space040',
+        stylePreset: 'dashedDivider'
+      }}
+      aria-label="article-divider-horizontal"
+    />
+  );
+
   return (
     <CardComposable
       alignContent="start"
@@ -130,21 +140,9 @@ export const Article = ({
       {hasTopBorder && (
         <GridLayoutItem area="border">
           {isFullWidth ? (
-            <FullWidthBlock>
-              <Divider
-                overrides={{
-                  marginBlockEnd: 'space040',
-                  stylePreset: 'dashedDivider'
-                }}
-              />
-            </FullWidthBlock>
+            <FullWidthBlock>{articleDivider}</FullWidthBlock>
           ) : (
-            <Divider
-              overrides={{
-                marginBlockEnd: 'space040',
-                stylePreset: 'dashedDivider'
-              }}
-            />
+            articleDivider
           )}
         </GridLayoutItem>
       )}

@@ -16,7 +16,6 @@ import {
   FullWidthHidden
 } from '../../components/slices/shared-styles';
 import { ClickHandlerType } from '../types';
-import { defaultArticleOptions } from '../../utils/default-article-options';
 
 export interface ContentBucket1Props {
   leadArticle: LeadArticleProps;
@@ -30,115 +29,89 @@ export const ContentBucket1 = ({
   comments,
   articles,
   clickHandler
-}: ContentBucket1Props) => {
-  const leadArticleOptions = {
-    xs: {
-      imageTop: true,
-      hasTopBorder: false,
-      contentWidth: '283px'
-    },
-    sm: {
-      imageTop: true,
-      hasTopBorder: false,
-      contentWidth: '283px'
-    },
-    md: {
-      hasTopBorder: true,
-      imageTop: false,
-      contentWidth: '283px'
-    },
-    lg: {
-      hasTopBorder: true,
-      imageTop: false,
-      contentWidth: '283px'
-    },
-    xl: {
-      hasTopBorder: true,
-      imageTop: false,
-      contentWidth: '312px'
-    }
-  };
-
-  const modifiedLeadArticleOptions = {
-    ...defaultArticleOptions,
-    ...leadArticleOptions
-  };
-
-  return (
-    <CustomStackLayout>
-      <StackItem
-        $width={{
-          xs: '100%',
-          md: '720px',
-          lg: '760px',
-          xl: '840px'
-        }}
-        marginInlineEnd={{
-          lg: 'space060'
-        }}
-      >
-        <Block>
-          <Visible lg xl>
-            <LeadStoryDivider
-              overrides={{ stylePreset: 'lightDivider' }}
-              vertical
-              position="right"
-            />
-          </Visible>
-          {Object.entries(modifiedLeadArticleOptions).map(
-            ([breakpoint, opts]) => (
-              <Visible {...{ [breakpoint]: true }}>
-                <LeadArticle
-                  article={{
-                    ...leadArticle,
-                    ...opts
-                  }}
-                  clickHandler={clickHandler}
-                />
-              </Visible>
-            )
-          )}
-        </Block>
-        <Block>
-          <Hidden md>
-            <CommentStack comments={comments} clickHandler={clickHandler} />
-          </Hidden>
-        </Block>
-      </StackItem>
-      <StackItem
-        $width={{
-          xs: '100%',
-          md: '720px',
-          lg: '185px',
-          xl: '402px'
-        }}
-      >
-        <FullWidthHidden lg xl>
-          <FullWidthBlock>
-            <Divider
-              overrides={{
-                marginBlock: 'space040',
-                stylePreset: 'dashedDivider'
-              }}
-            />
-          </FullWidthBlock>
-        </FullWidthHidden>
-        <BlockItem>
-          <ArticleStack articles={articles} clickHandler={clickHandler} />
-        </BlockItem>
-      </StackItem>
-      <Visible md>
-        <BlockItem
-          $width={{
-            xs: '100%',
-            md: '720px',
-            lg: '976px',
-            xl: '1276px'
-          }}
-        >
+}: ContentBucket1Props) => (
+  <CustomStackLayout>
+    <StackItem
+      $width={{
+        xs: '100%',
+        md: '720px',
+        lg: '760px',
+        xl: '840px'
+      }}
+      marginInlineEnd={{
+        lg: 'space060'
+      }}
+    >
+      <Block>
+        <Visible xs sm>
+          <LeadArticle
+            article={{
+              ...leadArticle,
+              hasTopBorder: false,
+              imageTop: true
+            }}
+            clickHandler={clickHandler}
+          />
+        </Visible>
+        <Visible md lg xl>
+          <LeadStoryDivider
+            overrides={{ stylePreset: 'lightDivider' }}
+            vertical
+            position="right"
+          />
+          <LeadArticle
+            article={{
+              ...leadArticle,
+              hasTopBorder: true,
+              imageTop: false,
+              contentWidth: {
+                md: '283px',
+                xl: '312px'
+              }
+            }}
+            clickHandler={clickHandler}
+          />
+        </Visible>
+      </Block>
+      <Block>
+        <Hidden md>
           <CommentStack comments={comments} clickHandler={clickHandler} />
-        </BlockItem>
-      </Visible>
-    </CustomStackLayout>
-  );
-};
+        </Hidden>
+      </Block>
+    </StackItem>
+    <StackItem
+      $width={{
+        xs: '100%',
+        md: '720px',
+        lg: '185px',
+        xl: '402px'
+      }}
+    >
+      <FullWidthHidden lg xl>
+        <FullWidthBlock>
+          <Divider
+            overrides={{
+              marginBlock: 'space040',
+              stylePreset: 'dashedDivider'
+            }}
+          />
+        </FullWidthBlock>
+      </FullWidthHidden>
+      <BlockItem>
+        <ArticleStack articles={articles} clickHandler={clickHandler} />
+      </BlockItem>
+    </StackItem>
+    <Visible md>
+      <BlockItem
+        $width={{
+          xs: '100%',
+          md: '720px',
+          lg: '976px',
+          xl: '1276px'
+        }}
+      >
+        <CommentStack comments={comments} clickHandler={clickHandler} />
+      </BlockItem>
+    </Visible>
+  </CustomStackLayout>
+);

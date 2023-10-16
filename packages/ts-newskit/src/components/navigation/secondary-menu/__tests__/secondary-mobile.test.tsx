@@ -1,9 +1,11 @@
 import React from 'react';
-import { render } from '../../../../utils/test-utils';
+import { render, screen } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavMobile } from '../mobile';
 import { cleanup, fireEvent } from '@testing-library/react';
+import { ThemeProvider } from 'newskit';
+import { TimesWebLightSportTheme } from '../../../..';
 
 const options = {
   handleSelect: jest.fn(),
@@ -20,7 +22,7 @@ describe('Secondary Menu Mobile', () => {
     cleanup();
   });
   it('should render the snapshot when dropdown is not expanded', () => {
-    const { asFragment } = render(
+    const { asFragment, getByText } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
         options={options}
@@ -28,27 +30,51 @@ describe('Secondary Menu Mobile', () => {
       />
     );
     expect(asFragment()).toMatchSnapshot();
+    expect(getByText('Home')).not.toHaveStyle({
+      color: 'rgb(255, 255, 255)'
+    });
   });
+  it('should render the correct white text if theme color applied', () => {
+    const { getByText } = render(
+      <ThemeProvider theme={TimesWebLightSportTheme}>
+        <SecondaryNavMobile
+          data={mainMenuItems}
+          options={options}
+          clickHandler={mockClickHandler}
+        />
+      </ThemeProvider>
+    );
+    expect(getByText('Home')).toHaveStyle({
+      color: 'rgb(255, 255, 255)'
+    });
+  });
+
   it('should render the snapshot when dropdown is expanded', () => {
     const { asFragment } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
-        options={options}
+        options={{ ...options, isExpanded: true }}
         clickHandler={mockClickHandler}
       />
     );
     expect(asFragment()).toMatchSnapshot();
+    const Button = screen.getByTestId('menu-sub-button');
+    expect(Button).toHaveAttribute('aria-label', 'Collapse Secondary Menu');
   });
-  it('should close the dropdown when you click on it again', () => {
-    const { queryByText, getByTestId } = render(
+  it('should close the dropdown when you click on it again', async () => {
+    const onClickMock = jest.fn();
+    render(
       <SecondaryNavMobile
         data={mainMenuItems}
         options={options}
         clickHandler={mockClickHandler}
+        onClick={onClickMock}
       />
     );
-    const Button = getByTestId('menu-sub-button');
-    fireEvent.click(Button);
-    expect(queryByText('News')).not.toBeInTheDocument();
+    const Button = screen.getByTestId('menu-sub-button');
+    expect(Button).toHaveAttribute('aria-label', 'Expand Secondary Menu');
+    await fireEvent.click(Button);
+    expect(screen.queryByText('News')).not.toBeInTheDocument();
+    expect(onClickMock).toHaveBeenCalled();
   });
 });
