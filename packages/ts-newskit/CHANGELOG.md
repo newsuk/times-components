@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.114.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.113.0...@times-components/ts-newskit@1.114.0) (2023-10-16)
+
+
+### Features
+
+* **TMRX-1580:**  Add lazy loading to slice images ([#3593](https://github.com/newsuk/times-components/issues/3593)) ([178daab](https://github.com/newsuk/times-components/commit/178daabd0c4a479608b7d723aa8e83f68acb701a))
+
+
+
+
+
 # [1.113.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.112.0...@times-components/ts-newskit@1.113.0) (2023-10-16)
 
 
