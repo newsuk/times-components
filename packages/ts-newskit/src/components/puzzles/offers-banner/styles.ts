@@ -32,7 +32,6 @@ export const ViewOffersButton = styled(Button)`
   ${getColorCssFromTheme('backround-color', 'inkInformative')};
   color: white;
   margin: 0 auto;
-  display: block;
   width: 200px;
   text-align: center;
   display: flex;
