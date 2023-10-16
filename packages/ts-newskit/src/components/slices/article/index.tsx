@@ -149,8 +149,9 @@ export const Article = ({
           )}
         </GridLayoutItem>
       )}
-
-      {hasImage && !hideImage && <CardMediaComponent {...cardImage} />}
+      {hasImage && !hideImage && isLeadImage ? (
+        <FullWidthCardMediaMob {...cardImage}/>
+      ) : <CardMedia {...{...cardImage, loading: "lazy" }}/>}
       <CardContent alignContent="start">
         {images &&
           !imageRight &&

@@ -64,7 +64,8 @@ export const CommentCard = ({
             alt: (images && images.alt) || byline,
             loadingAspectRatio: imageWithCorrectRatio.ratio,
             width: '77px',
-            overrides: { stylePreset: 'imageCircle' }
+            overrides: { stylePreset: 'imageCircle' },
+            loading: "lazy"
           }}
         />
       )}
