@@ -196,5 +196,3 @@ export const Article = ({
     </CardComposable>
   );
 };
-
-// <Image src={imageWithCorrectRatio.url} loading="lazy" alt={(images && images.alt) || headline} loadingAspectRatio={imageWithCorrectRatio.ratio || '3:2'}/>
