@@ -31,7 +31,6 @@ import QuizzesAndTeasersIcon from './QuizzesAndTeasers';
 import BoardAndCardGamesIcon from './BoardAndCardGames';
 import CrossIcon from './CrossIcon';
 import DoneIcon from './DoneIcon';
-import OffersBannerBg from './OffersBannerBg';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -194,8 +193,3 @@ export const NewsKitCrossIcon = customToNewsKitIcon(
 export const NewsKitDoneIcon = customToNewsKitIcon('NewsKitDoneIcon', props => (
   <DoneIcon {...props} />
 ));
-
-export const NewsKitOffersBannerBg = customToNewsKitIcon(
-  'NewsKitOffersBannerBg',
-  props => <OffersBannerBg {...props} />
-);
