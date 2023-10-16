@@ -89,12 +89,12 @@ export const Article = ({
     contentType;
 
   const cardImage = {
-      media: {
-        src: imageWithCorrectRatio!.url,
-        alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio!.ratio || '3:2'
-      }
-    };
+    media: {
+      src: imageWithCorrectRatio!.url,
+      alt: (images && images.alt) || headline,
+      loadingAspectRatio: imageWithCorrectRatio!.ratio || '3:2'
+    }
+  };
 
   const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
