@@ -33,6 +33,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           >
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"
@@ -127,6 +128,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           >
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"
@@ -235,6 +237,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           >
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"
@@ -329,6 +332,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           >
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"
@@ -830,6 +834,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           >
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"
@@ -924,6 +929,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           >
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"
@@ -1032,6 +1038,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           >
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"
@@ -1126,6 +1133,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           >
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"

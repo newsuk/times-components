@@ -150,9 +150,9 @@ export const Article = ({
         </GridLayoutItem>
       )}
       {
-        showImage &&
+        showImage ? (
           isLeadImage ? (
-            <FullWidthCardMediaMob {...cardImage}/> ) : <CardMedia {...{...cardImage, loading: "lazy" }}/>
+            <FullWidthCardMediaMob {...cardImage}/> ) : <CardMedia {...{...cardImage, loading: "lazy" }}/> ) : null
         }
       <CardContent alignContent="start">
         {images &&

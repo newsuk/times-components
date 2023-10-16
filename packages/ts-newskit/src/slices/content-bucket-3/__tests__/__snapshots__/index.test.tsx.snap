@@ -290,7 +290,6 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
         >
           <div
             class="css-1g5vzsh"
-            id="COMMENT STACK"
           >
             <hr
               aria-hidden="true"
@@ -308,15 +307,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                 class="css-1kwj960"
               >
                 <picture
-                  class="css-33c418"
+                  class="css-rrorzh"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Deborah Haynes"
-                    class="css-1t6p58q"
-                    src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                    class="css-176aubw"
+                    loading="lazy"
                     width="77px"
                   />
                 </picture>
@@ -371,15 +367,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                 class="css-1kwj960"
               >
                 <picture
-                  class="css-33c418"
+                  class="css-rrorzh"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Deborah Haynes 2"
-                    class="css-1t6p58q"
-                    src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                    class="css-176aubw"
+                    loading="lazy"
                     width="77px"
                   />
                 </picture>
@@ -451,6 +444,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
           >
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"
@@ -521,6 +515,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
           >
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"
@@ -600,6 +595,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             </div>
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"
@@ -679,6 +675,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             </div>
             <div
               class="css-1kwj960"
+              loading="lazy"
             >
               <picture
                 class="css-zp0elg"
@@ -760,7 +757,6 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
       >
         <div
           class="css-1g5vzsh"
-          id="COMMENT STACK"
         >
           <hr
             aria-hidden="true"
@@ -778,15 +774,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               class="css-1kwj960"
             >
               <picture
-                class="css-33c418"
+                class="css-rrorzh"
               >
-                <div
-                  class="css-5pczz7"
-                />
                 <img
                   alt="Deborah Haynes"
-                  class="css-1t6p58q"
-                  src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                  class="css-176aubw"
+                  loading="lazy"
                   width="77px"
                 />
               </picture>
@@ -841,15 +834,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               class="css-1kwj960"
             >
               <picture
-                class="css-33c418"
+                class="css-rrorzh"
               >
-                <div
-                  class="css-5pczz7"
-                />
                 <img
                   alt="Deborah Haynes 2"
-                  class="css-1t6p58q"
-                  src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                  class="css-176aubw"
+                  loading="lazy"
                   width="77px"
                 />
               </picture>
@@ -1198,7 +1188,6 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
         >
           <div
             class="css-1g5vzsh"
-            id="COMMENT STACK"
           >
             <hr
               aria-hidden="true"
@@ -1216,15 +1205,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                 class="css-1kwj960"
               >
                 <picture
-                  class="css-33c418"
+                  class="css-rrorzh"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Deborah Haynes"
-                    class="css-1t6p58q"
-                    src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                    class="css-176aubw"
+                    loading="lazy"
                     width="77px"
                   />
                 </picture>
@@ -1279,15 +1265,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                 class="css-1kwj960"
               >
                 <picture
-                  class="css-33c418"
+                  class="css-rrorzh"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Deborah Haynes 2"
-                    class="css-1t6p58q"
-                    src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                    class="css-176aubw"
+                    loading="lazy"
                     width="77px"
                   />
                 </picture>
@@ -1608,7 +1591,6 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
       >
         <div
           class="css-1g5vzsh"
-          id="COMMENT STACK"
         >
           <hr
             aria-hidden="true"
@@ -1626,15 +1608,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               class="css-1kwj960"
             >
               <picture
-                class="css-33c418"
+                class="css-rrorzh"
               >
-                <div
-                  class="css-5pczz7"
-                />
                 <img
                   alt="Deborah Haynes"
-                  class="css-1t6p58q"
-                  src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                  class="css-176aubw"
+                  loading="lazy"
                   width="77px"
                 />
               </picture>
@@ -1689,15 +1668,12 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               class="css-1kwj960"
             >
               <picture
-                class="css-33c418"
+                class="css-rrorzh"
               >
-                <div
-                  class="css-5pczz7"
-                />
                 <img
                   alt="Deborah Haynes 2"
-                  class="css-1t6p58q"
-                  src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                  class="css-176aubw"
+                  loading="lazy"
                   width="77px"
                 />
               </picture>

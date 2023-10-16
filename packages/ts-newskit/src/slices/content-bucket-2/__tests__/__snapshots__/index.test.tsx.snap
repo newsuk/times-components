@@ -100,6 +100,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -250,6 +251,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -400,6 +402,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -550,6 +553,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -724,6 +728,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -874,6 +879,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -1024,6 +1030,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -1174,6 +1181,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"

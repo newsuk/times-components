@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render, screen, fireEvent } from '../../../../utils/test-utils';
+import { render, screen, fireEvent, waitFor } from '../../../../utils/test-utils';
 import { CommentCard, CommentCardProps } from '..';
 import { ClickHandlerType } from '../../../../slices/types';
 
@@ -79,13 +79,12 @@ it('should not render the flag if it is not available', () => {
 });
 it('should render the correct image', () => {
   renderComponent(defaultProps, mockClickHandler);
-
   const image = screen.getByRole('img');
 
-  expect(image).toHaveAttribute(
+  waitFor(() => expect(image).toHaveAttribute(
     'src',
     'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
-  );
+  ));
   expect(image).toHaveAttribute('alt', 'Journalist name');
 });
 
