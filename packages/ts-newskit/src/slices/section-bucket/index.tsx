@@ -1,14 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { ArticleProps } from '../../components/slices/article';
 import { ArticleStack } from './article-stacks';
 import { SliceHeader } from '../../components/slices/slice-header';
-import {
-  Divider,
-  useBreakpointKey,
-  Scroll,
-  BreakpointKeys,
-  FlagSize
-} from 'newskit';
+import { Divider, Scroll, FlagSize, Visible } from 'newskit';
 import { CustomGridLayout } from '../shared/layouts';
 import { StyledBlock } from './styles';
 import { BlockItem } from '../shared-styles';
@@ -69,17 +63,6 @@ export const SectionBucket = ({
   clickHandler,
   sliceHeaderClickHandler
 }: SectionBucketProps) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xl');
-  const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
-    },
-    [breakpointKey]
-  );
-
-  const isMobile = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
-
   const articleStacksArray = [
     articleStackOne,
     articleStackTwo,
@@ -100,27 +83,32 @@ export const SectionBucket = ({
     </CustomGridLayout>
   );
 
-  return isMobile ? (
-    <Scroll
-      overrides={{
-        overlays: { stylePreset: 'transparentBackground' },
-        marginBlockEnd: 'space060'
-      }}
-      tabIndex={undefined}
-    >
-      {ArticleStackBlocks}
-    </Scroll>
-  ) : (
-    <BlockItem
-      $width={{
-        xs: '100%',
-        md: '720px',
-        lg: '976px',
-        xl: '1276px'
-      }}
-      marginBlockEnd="space060"
-    >
-      {ArticleStackBlocks}
-    </BlockItem>
+  return (
+    <>
+      <Visible xs sm>
+        <Scroll
+          overrides={{
+            overlays: { stylePreset: 'transparentBackground' },
+            marginBlockEnd: 'space060'
+          }}
+          tabIndex={undefined}
+        >
+          {ArticleStackBlocks}
+        </Scroll>
+      </Visible>
+      <Visible md lg xl>
+        <BlockItem
+          $width={{
+            xs: '100%',
+            md: '720px',
+            lg: '976px',
+            xl: '1276px'
+          }}
+          marginBlockEnd="space060"
+        >
+          {ArticleStackBlocks}
+        </BlockItem>
+      </Visible>
+    </>
   );
 };

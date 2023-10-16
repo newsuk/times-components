@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.81.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.81.0...@times-components/ts-components@1.81.1) (2023-10-13)
+
+
+### Bug Fixes
+
+* **TMRX-1577:** Dont call fetch if authorSlug is undefined ([#3585](https://github.com/newsuk/times-components/issues/3585)) ([921f648](https://github.com/newsuk/times-components/commit/921f648000070ff70868d2ec992a06c21afcc21f))
+
+
+
+
+
 # [1.81.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.80.0...@times-components/ts-components@1.81.0) (2023-10-09)
 
 

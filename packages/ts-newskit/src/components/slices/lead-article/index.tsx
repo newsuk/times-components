@@ -158,7 +158,11 @@ export const LeadArticle = ({
             marginBlockEnd={imageTop ? 'space040' : 'space000'}
             marginBlockStart={imageMarginBlockStart}
           >
-            <FullWidthCardMediaMob {...cardImage} />
+            <FullWidthCardMediaMob
+              {...cardImage}
+              className="lcpItem"
+              ratio={imageWithCorrectRatio!.ratio}
+            />
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"
