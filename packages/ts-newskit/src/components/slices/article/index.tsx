@@ -89,12 +89,12 @@ export const Article = ({
     contentType;
 
   const cardImage = {
-      media: {
-        src: imageWithCorrectRatio?.url,
-        alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio?.ratio || '3:2'
-      }
-    };
+    media: {
+      src: imageWithCorrectRatio!.url,
+      alt: (images && images.alt) || headline,
+      loadingAspectRatio: imageWithCorrectRatio!.ratio || '3:2'
+    }
+  };
 
   const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
@@ -152,7 +152,7 @@ export const Article = ({
         isLeadImage ? (
           <FullWidthCardMediaMob {...cardImage} />
         ) : (
-          <CardMedia media={{ ...cardImage.media, loading: 'lazy'}}/>
+          <CardMedia media={{ ...cardImage.media, loading: 'lazy' }} />
         )
       ) : null}
       <CardContent alignContent="start">
