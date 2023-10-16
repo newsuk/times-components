@@ -10,7 +10,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
     >
       <hr
         aria-hidden="true"
-        class="css-a6kwjq"
+        class="css-r9cz30"
         data-testid="divider"
       />
       <div
@@ -881,7 +881,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
     >
       <hr
         aria-hidden="true"
-        class="css-a6kwjq"
+        class="css-r9cz30"
         data-testid="divider"
       />
       <div

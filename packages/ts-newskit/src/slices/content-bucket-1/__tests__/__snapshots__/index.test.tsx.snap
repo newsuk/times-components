@@ -14,45 +14,6 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
         <div
           class="css-13byt3y"
         >
-          <hr
-            aria-hidden="true"
-            class="css-uh7mej"
-            data-testid="divider"
-          />
-        </div>
-        <div
-          class="css-iqarug"
-        >
-          <div
-            class="css-1vuk75f"
-          >
-            <div
-              class="lcpItem css-4t8ylq"
-            >
-              <picture
-                class="css-zp0elg"
-              >
-                <div
-                  class="css-5pczz7"
-                />
-                <img
-                  alt="Sarcacens an inclusive club? They didnt look out for me"
-                  class="css-1qgqq71"
-                  src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                />
-              </picture>
-            </div>
-            <p
-              class="css-1c5i4sy"
-            >
-              Sarcacens an inclusive club? They didnt look
-              <span
-                class="css-15rs040"
-              >
-                Gareth Fuller/Press Association
-              </span>
-            </p>
-          </div>
           <div
             class="css-gre9re"
           >
@@ -63,7 +24,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-j6pksw"
               >
                 <div
-                  class="css-uxw9nr"
+                  class="lcpItem css-1rkt0l2"
                 >
                   <picture
                     class="css-zp0elg"
@@ -89,53 +50,54 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </span>
                 </p>
               </div>
-              <span
-                class="css-d9hjcx"
-              >
-                4 min read
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="css-13byt3y"
-      >
-        <div
-          class="css-196m710"
-        >
-          <div
-            class="css-1g5vzsh"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-obfal1"
-              data-testid="divider"
-            />
-          </div>
-          <div
-            class="css-1704wtt"
-          >
-            <div
-              class="css-19w1t19"
-            >
               <div
                 class="css-gpke1l"
               >
-                <picture
-                  class="css-rrorzh"
+                <div
+                  class="css-3kejzs"
                 >
-                  <img
-                    alt="Deborah Haynes"
-                    class="css-176aubw"
-                    loading="lazy"
-                    width="77px"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-xt66pu"
-              >
+                  <span
+                    class="css-7b9bzx"
+                  >
+                    LIVE
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1basb1c"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      INTERVIEW
+                    </div>
+                  </span>
+                  <div
+                    class="css-lew009"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1basb1c"
+                  >
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      MARTIN SAMUEL
+                    </div>
+                  </span>
+                </div>
                 <a
                   class="css-10h0i3c"
                   href="https://www.thetimes.co.uk"
@@ -196,7 +158,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-a6kwjq"
+              class="css-r9cz30"
               data-testid="divider"
             />
             <div
@@ -205,16 +167,32 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               <div
                 class="css-1vuk75f"
               >
-                <picture
-                  class="css-rrorzh"
+                <div
+                  class="lcpItem css-1rkt0l2"
                 >
-                  <img
-                    alt="Deborah Haynes 2"
-                    class="css-176aubw"
-                    loading="lazy"
-                    width="77px"
-                  />
-                </picture>
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="Sarcacens an inclusive club? They didnt look out for me"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    />
+                  </picture>
+                </div>
+                <p
+                  class="css-1c5i4sy"
+                >
+                  Sarcacens an inclusive club? They didnt look
+                  <span
+                    class="css-15rs040"
+                  >
+                    Gareth Fuller/Press Association
+                  </span>
+                </p>
               </div>
               <div
                 class="css-gpke1l"
@@ -345,7 +323,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               </picture>
             </div>
             <div
-              class="css-17cghxi"
+              class="css-1704wtt"
             >
               <div
                 class="css-19w1t19"
@@ -354,15 +332,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-1kwj960"
                 >
                   <picture
-                    class="css-33c418"
+                    class="css-rrorzh"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
                     <img
                       alt="Deborah Haynes"
-                      class="css-1t6p58q"
-                      src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                      class="css-176aubw"
+                      loading="lazy"
                       width="77px"
                     />
                   </picture>
@@ -444,20 +419,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         3 mins ago
                       </span>
                     </div>
-                  </span>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div
-            class="css-1nw1nne"
-          >
-            <div
-              class="css-tj8oo8"
-            >
+                  </div>
+                </div>
+              </div>
               <hr
                 aria-hidden="true"
-                class="css-1i1gqyx"
+                class="css-clg7cq"
                 data-testid="divider"
               />
             </div>
@@ -478,21 +445,18 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="css-19w1t19"
               >
-                <span
-                  class="css-6tvr2h"
+                <div
+                  class="css-1kwj960"
                 >
                   <picture
-                    class="css-33c418"
+                    class="css-rrorzh"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
                     <img
                       alt="Deborah Haynes 2"
-                      class="css-1t6p58q"
-                      src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                      class="css-176aubw"
+                      loading="lazy"
                       width="77px"
                     />
                   </picture>
@@ -590,7 +554,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="css-2ddd2y"
+                  class="css-rgeebf"
                   data-testid="article-container-mobile"
                   style="position: relative;"
                 >
@@ -599,6 +563,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
+                      loading="lazy"
                     >
                       <picture
                         class="css-zp0elg"
@@ -685,6 +650,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
+                      loading="lazy"
                     >
                       <picture
                         class="css-zp0elg"
@@ -771,6 +737,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
+                      loading="lazy"
                     >
                       <picture
                         class="css-zp0elg"
@@ -855,69 +822,9 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         data-testid="divider"
                       />
                     </div>
-                  </span>
-                </span>
-              </a>
-            </div>
-          </div>
-          <hr
-            aria-hidden="true"
-            class="css-po9buu"
-            data-testid="divider"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      class="css-13fsx86"
-    >
-      <div
-        class="css-1frprgo"
-      >
-        <div
-          class="css-1g5vzsh"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-obfal1"
-            data-testid="divider"
-          />
-        </div>
-        <div
-          class="css-1704wtt"
-        >
-          <div
-            class="css-19w1t19"
-          >
-            <div
-              class="css-1kwj960"
-            >
-              <picture
-                class="css-rrorzh"
-              >
-                <img
-                  alt="Deborah Haynes"
-                  class="css-176aubw"
-                  loading="lazy"
-                  width="77px"
-                />
-              </picture>
-            </div>
-            <div
-              class="css-xt66pu"
-            >
-              <a
-                class="css-gull0f"
-                href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-8gj81n"
+                    <div
+                      class="css-1kwj960"
+                      loading="lazy"
                     >
                       <picture
                         class="css-zp0elg"
@@ -1000,30 +907,16 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             class="css-11l110t"
           >
             <div
-              class="css-2ddd2y"
+              class="css-rgeebf"
               data-testid="article-container-desktop"
               style="position: relative;"
             >
-              <picture
-                class="css-rrorzh"
+              <div
+                class="css-1nw1nne"
               >
-                <img
-                  alt="Deborah Haynes 2"
-                  class="css-176aubw"
+                <div
+                  class="css-1kwj960"
                   loading="lazy"
-                  width="77px"
-                />
-              </picture>
-            </div>
-            <div
-              class="css-xt66pu"
-            >
-              <a
-                class="css-gull0f"
-                href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
-              >
-                <span
-                  class="css-17x5lw"
                 >
                   <picture
                     class="css-zp0elg"
@@ -1041,176 +934,8 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 <div
                   class="css-17cghxi"
                 >
-                  Sarcacens an inclusive club? They didnt look
-                  <span
-                    class="css-15rs040"
-                  >
-                    Gareth Fuller/Press Association
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
-<DocumentFragment>
-  <div
-    class="css-wdske1"
-  >
-    <div
-      class="css-1klr24i"
-    >
-      <div
-        class="css-13byt3y"
-      >
-        <div
-          class="css-15edd2j"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-uh7mej"
-            data-testid="divider"
-          />
-        </div>
-        <div
-          class="css-6wqjuf"
-        >
-          <div
-            class="css-j6pksw"
-          >
-            <div
-              class="lcpItem css-4t8ylq"
-            >
-              <picture
-                class="css-zp0elg"
-              >
-                <div
-                  class="css-5pczz7"
-                />
-                <img
-                  alt="Sarcacens an inclusive club? They didnt look out for me"
-                  class="css-1qgqq71"
-                  src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                />
-              </picture>
-            </div>
-            <p
-              class="css-1c5i4sy"
-            >
-              Sarcacens an inclusive club? They didnt look
-              <span
-                class="css-15rs040"
-              >
-                Gareth Fuller/Press Association
-              </span>
-            </p>
-          </div>
-          <div
-            class="css-gpke1l"
-          >
-            <div
-              class="css-3kejzs"
-            >
-              <span
-                class="css-7b9bzx"
-              >
-                LIVE
-              </span>
-              <div
-                class="css-lew009"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
-              <div
-                class="css-gpke1l"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-1haabs"
-                  data-testid="divider"
-                />
-                <div
-                  class="css-3kejzs"
-                >
-                  <span
-                    class="css-7b9bzx"
-                  >
-                    LIVE
-                  </span>
-                </span>
-              </a>
-              <div
-                class="css-lew009"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
-              <span
-                class="css-d9hjcx"
-              >
-                4 min read
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="css-13byt3y"
-      >
-        <div
-          class="css-196m710"
-        >
-          <div
-            class="css-1g5vzsh"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-obfal1"
-              data-testid="divider"
-            />
-          </div>
-          <div
-            class="css-1704wtt"
-          >
-            <div
-              class="css-19w1t19"
-            >
-              <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-rrorzh"
-                >
-                  <img
-                    alt="Deborah Haynes"
-                    class="css-176aubw"
-                    loading="lazy"
-                    width="77px"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-xt66pu"
-              >
-                <a
-                  class="css-gull0f"
-                  href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
-                >
-                  <span
-                    class="css-1basb1c"
+                  <div
+                    class="css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -1230,42 +955,6 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                         data-testid="divider"
                       />
                     </div>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <hr
-              aria-hidden="true"
-              class="css-clg7cq"
-              data-testid="divider"
-            />
-            <div
-              class="css-19w1t19"
-            >
-              <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-rrorzh"
-                >
-                  <img
-                    alt="Deborah Haynes 2"
-                    class="css-176aubw"
-                    loading="lazy"
-                    width="77px"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-xt66pu"
-              >
-                <a
-                  class="css-10h0i3c"
-                  href="https://www.thetimes.co.uk"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
                     <span
                       class="css-1basb1c"
                     >
@@ -1397,6 +1086,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 </div>
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -1570,7 +1260,6 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
         >
           <div
             class="css-1g5vzsh"
-            id="COMMENT STACK"
           >
             <hr
               aria-hidden="true"
@@ -1588,15 +1277,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 class="css-1kwj960"
               >
                 <picture
-                  class="css-33c418"
+                  class="css-rrorzh"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Deborah Haynes"
-                    class="css-1t6p58q"
-                    src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                    class="css-176aubw"
+                    loading="lazy"
                     width="77px"
                   />
                 </picture>
@@ -1651,15 +1337,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 class="css-1kwj960"
               >
                 <picture
-                  class="css-33c418"
+                  class="css-rrorzh"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Deborah Haynes 2"
-                    class="css-1t6p58q"
-                    src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                    class="css-176aubw"
+                    loading="lazy"
                     width="77px"
                   />
                 </picture>
@@ -1734,7 +1417,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 class="css-j6pksw"
               >
                 <div
-                  class="css-uxw9nr"
+                  class="lcpItem css-1rkt0l2"
                 >
                   <picture
                     class="css-zp0elg"
@@ -1868,7 +1551,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-a6kwjq"
+              class="css-r9cz30"
               data-testid="divider"
             />
             <div
@@ -1878,7 +1561,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 class="css-1vuk75f"
               >
                 <div
-                  class="css-uxw9nr"
+                  class="lcpItem css-1rkt0l2"
                 >
                   <picture
                     class="css-zp0elg"
@@ -2021,7 +1704,6 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
           >
             <div
               class="css-1g5vzsh"
-              id="COMMENT STACK"
             >
               <hr
                 aria-hidden="true"
@@ -2039,15 +1721,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-1kwj960"
                 >
                   <picture
-                    class="css-33c418"
+                    class="css-rrorzh"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
                     <img
                       alt="Deborah Haynes"
-                      class="css-1t6p58q"
-                      src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                      class="css-176aubw"
+                      loading="lazy"
                       width="77px"
                     />
                   </picture>
@@ -2102,15 +1781,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-1kwj960"
                 >
                   <picture
-                    class="css-33c418"
+                    class="css-rrorzh"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
                     <img
                       alt="Deborah Haynes 2"
-                      class="css-1t6p58q"
-                      src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+                      class="css-176aubw"
+                      loading="lazy"
                       width="77px"
                     />
                   </picture>
@@ -2187,7 +1863,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 data-testid="scroll-container"
               >
                 <div
-                  class="css-2ddd2y"
+                  class="css-rgeebf"
                   data-testid="article-container-mobile"
                   style="position: relative;"
                 >
@@ -2196,6 +1872,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   >
                     <div
                       class="css-1kwj960"
+                      loading="lazy"
                     >
                       <picture
                         class="css-zp0elg"
@@ -2282,6 +1959,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
+                      loading="lazy"
                     >
                       <picture
                         class="css-zp0elg"
@@ -2368,6 +2046,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
+                      loading="lazy"
                     >
                       <picture
                         class="css-zp0elg"
@@ -2454,6 +2133,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
+                      loading="lazy"
                     >
                       <picture
                         class="css-zp0elg"
@@ -2536,7 +2216,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
             class="css-11l110t"
           >
             <div
-              class="css-2ddd2y"
+              class="css-rgeebf"
               data-testid="article-container-desktop"
               style="position: relative;"
             >
@@ -2545,6 +2225,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -2621,6 +2302,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-l4lngz"
@@ -2856,20 +2538,10 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
         class="css-13fsx86"
       >
         <div
-          class="css-1g5vzsh"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-obfal1"
-            data-testid="divider"
-          />
-        </div>
-        <div
-          class="css-1704wtt"
+          class="css-1frprgo"
         >
           <div
             class="css-1g5vzsh"
-            id="COMMENT STACK"
           >
             <hr
               aria-hidden="true"
@@ -2883,23 +2555,22 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
             <div
               class="css-19w1t19"
             >
-              <picture
-                class="css-rrorzh"
+              <div
+                class="css-1kwj960"
               >
-                <img
-                  alt="Deborah Haynes"
-                  class="css-176aubw"
-                  loading="lazy"
-                  width="77px"
-                />
-              </picture>
-            </div>
-            <div
-              class="css-xt66pu"
-            >
-              <a
-                class="css-gull0f"
-                href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+                <picture
+                  class="css-rrorzh"
+                >
+                  <img
+                    alt="Deborah Haynes"
+                    class="css-176aubw"
+                    loading="lazy"
+                    width="77px"
+                  />
+                </picture>
+              </div>
+              <div
+                class="css-xt66pu"
               >
                 <a
                   class="css-gull0f"
@@ -2944,23 +2615,22 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
             <div
               class="css-19w1t19"
             >
-              <picture
-                class="css-rrorzh"
+              <div
+                class="css-1kwj960"
               >
-                <img
-                  alt="Deborah Haynes 2"
-                  class="css-176aubw"
-                  loading="lazy"
-                  width="77px"
-                />
-              </picture>
-            </div>
-            <div
-              class="css-xt66pu"
-            >
-              <a
-                class="css-gull0f"
-                href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+                <picture
+                  class="css-rrorzh"
+                >
+                  <img
+                    alt="Deborah Haynes 2"
+                    class="css-176aubw"
+                    loading="lazy"
+                    width="77px"
+                  />
+                </picture>
+              </div>
+              <div
+                class="css-xt66pu"
               >
                 <a
                   class="css-gull0f"
