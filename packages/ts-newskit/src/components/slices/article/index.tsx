@@ -88,12 +88,11 @@ export const Article = ({
     label ||
     contentType;
 
-  const cardImage = !hideImage &&
-    imageWithCorrectRatio && {
+  const cardImage = {
       media: {
-        src: imageWithCorrectRatio.url,
+        src: imageWithCorrectRatio!.url,
         alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2'
+        loadingAspectRatio: imageWithCorrectRatio!.ratio || '3:2'
       }
     };
 
@@ -153,7 +152,7 @@ export const Article = ({
         isLeadImage ? (
           <FullWidthCardMediaMob {...cardImage} />
         ) : (
-          <CardMedia {...{ ...cardImage, loading: 'lazy' }} />
+          <CardMedia media={{ ...cardImage.media, loading: 'lazy' }} />
         )
       ) : null}
       <CardContent alignContent="start">
