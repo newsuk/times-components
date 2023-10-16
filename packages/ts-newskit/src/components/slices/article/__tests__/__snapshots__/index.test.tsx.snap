@@ -7,6 +7,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
   >
     <div
       class="css-1kwj960"
+      loading="lazy"
     >
       <picture
         class="css-zp0elg"
@@ -84,6 +85,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
   >
     <div
       class="css-1kwj960"
+      loading="lazy"
     >
       <picture
         class="css-zp0elg"

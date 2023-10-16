@@ -9,15 +9,12 @@ exports[`should render component to match snapshot 1`] = `
       class="css-1kwj960"
     >
       <picture
-        class="css-33c418"
+        class="css-rrorzh"
       >
-        <div
-          class="css-5pczz7"
-        />
         <img
           alt="Journalist name"
-          class="css-1t6p58q"
-          src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+          class="css-176aubw"
+          loading="lazy"
           width="77px"
         />
       </picture>

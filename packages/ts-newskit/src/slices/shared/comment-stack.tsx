@@ -16,7 +16,6 @@ export const CommentStack = ({ comments, clickHandler }: CommentStackProps) => {
   return (
     <>
       <FullWidthBlock
-        id="COMMENT STACK"
         paddingInline={{
           xs: 'space045',
           md: 'space000'

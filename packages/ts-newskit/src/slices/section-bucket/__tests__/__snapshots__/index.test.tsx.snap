@@ -76,6 +76,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -339,6 +340,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -602,6 +604,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -865,6 +868,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -1142,6 +1146,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             >
               <div
                 class="css-1kwj960"
+                loading="lazy"
               >
                 <picture
                   class="css-zp0elg"
@@ -1405,6 +1410,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             >
               <div
                 class="css-1kwj960"
+                loading="lazy"
               >
                 <picture
                   class="css-zp0elg"
@@ -1668,6 +1674,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             >
               <div
                 class="css-1kwj960"
+                loading="lazy"
               >
                 <picture
                   class="css-zp0elg"
@@ -1931,6 +1938,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             >
               <div
                 class="css-1kwj960"
+                loading="lazy"
               >
                 <picture
                   class="css-zp0elg"
@@ -2220,6 +2228,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -2483,6 +2492,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -2746,6 +2756,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -3009,6 +3020,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               >
                 <div
                   class="css-1kwj960"
+                  loading="lazy"
                 >
                   <picture
                     class="css-zp0elg"
@@ -3286,6 +3298,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
             >
               <div
                 class="css-1kwj960"
+                loading="lazy"
               >
                 <picture
                   class="css-zp0elg"
@@ -3549,6 +3562,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
             >
               <div
                 class="css-1kwj960"
+                loading="lazy"
               >
                 <picture
                   class="css-zp0elg"
@@ -3812,6 +3826,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
             >
               <div
                 class="css-1kwj960"
+                loading="lazy"
               >
                 <picture
                   class="css-zp0elg"
@@ -4075,6 +4090,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
             >
               <div
                 class="css-1kwj960"
+                loading="lazy"
               >
                 <picture
                   class="css-zp0elg"
