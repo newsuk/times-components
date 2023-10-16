@@ -65,7 +65,7 @@ export const CommentCard = ({
             loadingAspectRatio: imageWithCorrectRatio.ratio,
             width: '77px',
             overrides: { stylePreset: 'imageCircle' },
-            loading: "lazy"
+            loading: 'lazy'
           }}
         />
       )}

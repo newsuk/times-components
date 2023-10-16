@@ -105,7 +105,7 @@ export const Article = ({
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
 
-  const showImage = hasImage && !hideImage
+  const showImage = hasImage && !hideImage;
 
   const onClick = (event: MouseEventType) => {
     const articleForTracking = { headline, id, url };
@@ -149,11 +149,13 @@ export const Article = ({
           )}
         </GridLayoutItem>
       )}
-      {
-        showImage ? (
-          isLeadImage ? (
-            <FullWidthCardMediaMob {...cardImage}/> ) : <CardMedia {...{...cardImage, loading: "lazy" }}/> ) : null
-        }
+      {showImage ? (
+        isLeadImage ? (
+          <FullWidthCardMediaMob {...cardImage} />
+        ) : (
+          <CardMedia {...{ ...cardImage, loading: 'lazy' }} />
+        )
+      ) : null}
       <CardContent alignContent="start">
         {images &&
           !imageRight &&
