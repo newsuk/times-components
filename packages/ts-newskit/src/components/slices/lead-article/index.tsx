@@ -88,7 +88,7 @@ export const LeadArticle = ({
     loadingAspectRatio,
     imageMarginBlockStart = 'space000',
     textBlockMarginBlockStart = 'space040',
-    tagAndFlagMarginBlockStart = 'space040',
+    tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
     listData,
     hideImage,
     expirableFlags,

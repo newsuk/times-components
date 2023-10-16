@@ -77,7 +77,7 @@ export const Article = ({
     imageRight,
     isFullWidth,
     titleTypographyPreset = 'editorialHeadline020',
-    tagAndFlagMarginBlockStart = 'space040',
+    tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
     expirableFlags,
     label,
     contentType

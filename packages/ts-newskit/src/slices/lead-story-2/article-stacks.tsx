@@ -27,8 +27,7 @@ export const ArticleStack = ({
       xs: 'editorialHeadline030',
       md: 'editorialHeadline020'
     },
-    hasTopBorder: false,
-    tagAndFlagMarginBlockStart: { xs: 'space050', md: 'space040' }
+    hasTopBorder: false
   }));
 
   const modifiedVerticalArticles = verticalArticles.map(item => ({
@@ -38,8 +37,7 @@ export const ArticleStack = ({
       md: 'editorialHeadline020'
     },
     hasTopBorder: false,
-    hideImage: true,
-    tagAndFlagMarginBlockStart: { xs: 'space050', md: 'space040' }
+    hideImage: true
   }));
 
   const articleStackHorizontal = (

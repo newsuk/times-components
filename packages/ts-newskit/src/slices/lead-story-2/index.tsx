@@ -46,13 +46,11 @@ export const LeadStory2 = ({
   const leadArticleOptions = {
     xs: {
       contentWidth: '246px',
-      imageTop: true,
-      tagAndFlagMarginBlockStart: 'space050'
+      imageTop: true
     },
     sm: {
       contentWidth: '246px',
-      imageTop: true,
-      tagAndFlagMarginBlockStart: 'space050'
+      imageTop: true
     },
     md: {
       contentWidth: '246px'
@@ -149,10 +147,7 @@ export const LeadStory2 = ({
       <FullWidthHidden md lg xl>
         <BlockItem marginBlockStart="space040">
           <ComposedArticleStack
-            articles={articles.map(article => ({
-              ...article,
-              tagAndFlagMarginBlockStart: 'space050'
-            }))}
+            articles={articles}
             clickHandler={clickHandler}
           />
         </BlockItem>

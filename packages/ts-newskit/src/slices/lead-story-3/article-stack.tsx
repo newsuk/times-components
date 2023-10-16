@@ -28,19 +28,11 @@ export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
                     xs: 'editorialHeadline040',
                     md: 'editorialHeadline060'
                   },
-                  tagAndFlagMarginBlockStart: {
-                    xs: 'space050',
-                    md: 'space040'
-                  },
                   hasTopBorder: false
                 }
               : {
                   ...article,
                   headlineTypographyPreset: 'editorialHeadline020',
-                  tagAndFlagMarginBlockStart: {
-                    xs: 'space050',
-                    md: 'space040'
-                  },
                   hideImage: true,
                   hasTopBorder: false
                 };

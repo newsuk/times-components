@@ -45,10 +45,6 @@ export const LeadStory1 = ({
     ...articlesWithListItems,
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
-    tagAndFlagMarginBlockStart: {
-      xs: 'space050',
-      md: 'space040'
-    },
     headlineTypographyPreset: {
       xs: 'editorialHeadline040',
       sm: 'editorialHeadline050',
@@ -89,12 +85,6 @@ export const LeadStory1 = ({
     ...singleArticle,
     hideImage: true
   };
-
-  const addTagAndFlagMargin = (baseArticles: ArticleProps[]) =>
-    baseArticles.map(article => ({
-      ...article,
-      tagAndFlagMarginBlockStart: { xs: 'space050', md: 'space040' }
-    }));
 
   const marginTop = singleArticle
     ? 'space040'
@@ -230,7 +220,7 @@ export const LeadStory1 = ({
             />
           </Visible>
           <ArticleStackSmall
-            articles={addTagAndFlagMargin(smallArticles)}
+            articles={smallArticles}
             articleOptions={{
               xs: {
                 isFullWidth: true,
@@ -250,7 +240,7 @@ export const LeadStory1 = ({
       <FullWidthHidden md lg xl>
         <BlockItem>
           <ComposedArticleStack
-            articles={addTagAndFlagMargin(articles)}
+            articles={articles}
             clickHandler={clickHandler}
           />
         </BlockItem>
@@ -262,7 +252,7 @@ export const LeadStory1 = ({
               imageRight: true
             }
           }}
-          modifiedArticles={addTagAndFlagMargin(articles)}
+          modifiedArticles={articles}
           clickHandler={clickHandler}
         />
       </Visible>
