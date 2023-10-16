@@ -97,8 +97,6 @@ export const Article = ({
       }
     };
 
-  const CardMediaComponent = isLeadImage ? FullWidthCardMediaMob : CardMedia;
-
   const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
     images &&
@@ -106,6 +104,8 @@ export const Article = ({
     images.crops.length > 0 &&
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
+
+  const showImage = hasImage && !hideImage;
 
   const onClick = (event: MouseEventType) => {
     const articleForTracking = { headline, id, url };
@@ -149,8 +149,13 @@ export const Article = ({
           )}
         </GridLayoutItem>
       )}
-
-      {hasImage && !hideImage && <CardMediaComponent {...cardImage} />}
+      {showImage ? (
+        isLeadImage ? (
+          <FullWidthCardMediaMob {...cardImage} />
+        ) : (
+          <CardMedia {...{ ...cardImage, loading: 'lazy' }} />
+        )
+      ) : null}
       <CardContent alignContent="start">
         {images &&
           !imageRight &&
