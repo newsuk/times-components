@@ -1,21 +1,44 @@
-import { Button, Block, styled } from 'newskit';
-import { NewsKitOffersBannerBg } from '../../../assets';
+import {
+  Button,
+  Block,
+  styled,
+  getSpacingCssFromTheme,
+  getMediaQueryFromTheme,
+  TextBlock,
+  getColorCssFromTheme
+} from 'newskit';
 
 export const Container = styled(Block)`
   width: 100%;
-  height: 233px;
   position: relative;
+  ${getMediaQueryFromTheme('xs')} {
+    ${getSpacingCssFromTheme('padding', 'space045')};
+  }
+
+  ${getMediaQueryFromTheme('md')} {
+    ${getSpacingCssFromTheme('padding', 'space070')};
+  }
+`;
+
+export const Title = styled(TextBlock)`
+  text-align: center;
+`;
+
+export const Subtitle = styled(TextBlock)`
+  text-align: center;
 `;
 
 export const ViewOffersButton = styled(Button)`
-  background-color: #005c8a;
+  ${getColorCssFromTheme("backround-color", "inkInformative")};
   color: white;
   margin: 0 auto;
   display: block;
   width: 200px;
+  text-align: center;
+  display: flex;
 `;
 
-export const Background = styled(NewsKitOffersBannerBg)`
+export const Background = styled.img`
   position: absolute;
   left: 0;
   top: 0;
