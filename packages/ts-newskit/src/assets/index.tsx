@@ -31,6 +31,10 @@ import QuizzesAndTeasersIcon from './QuizzesAndTeasers';
 import BoardAndCardGamesIcon from './BoardAndCardGames';
 import CrossIcon from './CrossIcon';
 import DoneIcon from './DoneIcon';
+import IconSubscribe3 from './IconSubscribe3';
+import IconSubscribeB from './IconSubscribeB';
+import IconSubscribeQuestion from './IconSubscribeQuestion';
+import PhoneIcon from './phone';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -193,3 +197,23 @@ export const NewsKitCrossIcon = customToNewsKitIcon(
 export const NewsKitDoneIcon = customToNewsKitIcon('NewsKitDoneIcon', props => (
   <DoneIcon {...props} />
 ));
+
+export const NewsKitIconSubscribe3 = customToNewsKitIcon(
+  'NewsKitIconSubscribe3',
+  props => <IconSubscribe3 {...props} />
+);
+
+export const NewsKitIconSubscribeB = customToNewsKitIcon(
+  'NewsKitIconSubscribeB',
+  props => <IconSubscribeB {...props} />
+);
+
+export const NewsKitIconSubscribeQuestion = customToNewsKitIcon(
+  'NewsKitIconSubscribeQuestion',
+  props => <IconSubscribeQuestion {...props} />
+);
+
+export const NewsKitPhoneIcon = customToNewsKitIcon(
+  'NewsKitPhoneIcon',
+  props => <PhoneIcon {...props} />
+);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { useBreakpointKey, BreakpointKeys } from 'newskit';
 import { render, screen } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { articles } from '../../fixtures/lead-story.json';
@@ -7,59 +6,36 @@ import {
   ArticleStackLarge,
   ArticleStackSmall
 } from '../../shared/article-stacks';
-
-jest.mock('newskit', () => ({
-  ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
-}));
+import { renderComponent } from '../../../utils';
 
 const mockClickHandler = jest.fn();
 
 const threeArticles = [articles[1], articles[2], articles[3]];
 
-const renderComponentLarge = (breakpoint?: BreakpointKeys) => {
-  const getMaxWidth = () => {
-    switch (breakpoint) {
-      case 'lg':
-        return '1024px';
-
-      case 'xl':
-        return '1440px';
-      default:
-        return '768px';
-    }
-  };
-  return render(
-    <div style={{ maxWidth: getMaxWidth() }}>
-      <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />
-    </div>
-  );
-};
-
-const renderComponentSmall = () =>
-  render(
-    <ArticleStackSmall
-      articles={threeArticles}
-      clickHandler={mockClickHandler}
-    />
-  );
-
 describe('Render Lead Story 1 Slice', () => {
   test('large Article Stack', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
-    const { asFragment } = renderComponentLarge('xs');
+    const { asFragment } = renderComponent(
+      <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />,
+      'xs'
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 
   test('small Article Stack', () => {
-    (useBreakpointKey as any).mockReturnValue('ld');
-    const { asFragment } = renderComponentSmall();
+    const { asFragment } = render(
+      <ArticleStackSmall
+        articles={threeArticles}
+        clickHandler={mockClickHandler}
+      />
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 
   test("articleTopBorder renders correctly at 'xl' breakpoint", () => {
-    (useBreakpointKey as any).mockReturnValue('xl');
-    renderComponentLarge('xl');
+    renderComponent(
+      <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />,
+      'xl'
+    );
     const articleContainer = screen.queryAllByTestId('article-container')[1];
     const articleItem4 = articleContainer.lastElementChild!
       .previousElementSibling;
@@ -67,8 +43,10 @@ describe('Render Lead Story 1 Slice', () => {
   });
 
   test("articleTopBorder renders correctly below 'lg' breakpoint", () => {
-    (useBreakpointKey as any).mockReturnValue('md');
-    renderComponentLarge('md');
+    renderComponent(
+      <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />,
+      'lg'
+    );
     const articleContainer = screen.queryAllByTestId('article-container')[1];
     const articleItem1 = articleContainer.firstElementChild;
     articleItem1 &&
@@ -78,15 +56,19 @@ describe('Render Lead Story 1 Slice', () => {
   });
 
   test("articleTopBorder renders correctly at 'lg' breakpoint", () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
-    renderComponentLarge('lg');
+    renderComponent(
+      <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />,
+      'lg'
+    );
     const articleContainer = screen.queryAllByTestId('article-container')[1];
     const articleItem4 = articleContainer.lastElementChild;
     expect(articleItem4!.getElementsByTagName('hr').length).toBe(3);
   });
   test('renders article container with correct data-testid', () => {
-    (useBreakpointKey as any).mockReturnValue('xl');
-    renderComponentLarge('xl');
+    renderComponent(
+      <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />,
+      'xl'
+    );
     const articleContainer = screen.queryAllByTestId('article-container')[1];
     expect(articleContainer).toBeInTheDocument();
   });

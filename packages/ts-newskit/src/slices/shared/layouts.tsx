@@ -18,6 +18,32 @@ export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
     <Stack
       flow="horizontal-top"
       stackDistribution="center"
+      wrap={{
+        xs: 'wrap',
+        sm: 'wrap',
+        md: 'wrap',
+        lg: 'nowrap',
+        xl: 'nowrap'
+      }}
+      marginInline={{
+        xs: 'space045',
+        md: 'space000'
+      }}
+      marginBlockEnd={marginBlockEnd || 'space060'}
+    >
+      {children}
+    </Stack>
+  );
+};
+
+export const WrappedStackLayout: React.FC<CustomStackLayoutProps> = ({
+  children,
+  marginBlockEnd
+}) => {
+  return (
+    <Stack
+      flow="horizontal-top"
+      stackDistribution="center"
       wrap="wrap"
       marginInline={{
         xs: 'space045',

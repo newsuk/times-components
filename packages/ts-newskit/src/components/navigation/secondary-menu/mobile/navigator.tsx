@@ -27,7 +27,7 @@ export const Navigator: React.FC<{
           onClick && onClick(!isExpanded);
         }}
         aria-label={
-          isExpanded ? 'Collapse Sccondary Menu' : 'Expand Sccondary Menu'
+          isExpanded ? 'Collapse Secondary Menu' : 'Expand Secondary Menu'
         }
         overrides={{
           paddingBlock: 'space000',

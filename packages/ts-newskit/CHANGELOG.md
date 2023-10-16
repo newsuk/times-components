@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.112.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.111.0...@times-components/ts-newskit@1.112.0) (2023-10-13)
+
+
+### Bug Fixes
+
+* **TMPZ-157:** New signup page banner design Issue for iPad Pro resolution ([#3590](https://github.com/newsuk/times-components/issues/3590)) ([6ea3b21](https://github.com/newsuk/times-components/commit/6ea3b21fd678a24b623aecfe58dc97e7df3bd307))
+
+
+### Features
+
+* **TMPZ-152:** created subscribe banner ([#3584](https://github.com/newsuk/times-components/issues/3584)) ([ba8ceaa](https://github.com/newsuk/times-components/commit/ba8ceaae1fd43a6757c186440b926adde0bc0442))
+* **TMPZ-153:** Implemented FAQ ([#3581](https://github.com/newsuk/times-components/issues/3581)) ([8ec1805](https://github.com/newsuk/times-components/commit/8ec1805754d25187e2e56bd2a2d16eaba0f850c1))
+* **TMRX-1556:** refactor content bucket 2 ([#3583](https://github.com/newsuk/times-components/issues/3583)) ([805f9f6](https://github.com/newsuk/times-components/commit/805f9f67847a477015ff5e408fbad0b3fb371e1f))
+
+
+
+
+
+# [1.111.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.110.0...@times-components/ts-newskit@1.111.0) (2023-10-12)
+
+
+### Features
+
+* **TMRX-1554:** refactor lead story module 2 ([#3579](https://github.com/newsuk/times-components/issues/3579)) ([0aa8074](https://github.com/newsuk/times-components/commit/0aa80744ef27909dce80e81b17a5b75e29fa79dd))
+
+
+
+
+
+# [1.110.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.109.1...@times-components/ts-newskit@1.110.0) (2023-10-12)
+
+
+### Features
+
+* **TMPZ-155:** Create storybook components for Contacts section ([#3582](https://github.com/newsuk/times-components/issues/3582)) ([84a93db](https://github.com/newsuk/times-components/commit/84a93db7ec55bdba76d4497bda7d86b2eb7b10b8))
+
+
+
+
+
+## [1.109.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.109.0...@times-components/ts-newskit@1.109.1) (2023-10-11)
+
+
+### Bug Fixes
+
+* **TMRX-1571:** Fix content bucket wrapping bug ([#3574](https://github.com/newsuk/times-components/issues/3574)) ([5e01070](https://github.com/newsuk/times-components/commit/5e010707e164b672d591c3677b6906abc2ce57e0))
+
+
+
+
+
 # [1.109.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.108.1...@times-components/ts-newskit@1.109.0) (2023-10-10)
 
 

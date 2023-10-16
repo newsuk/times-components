@@ -42,11 +42,13 @@ export { HintContainer } from './components/puzzles/daily-quiz/hint-container';
 export { HowToPlay } from './components/puzzles/daily-quiz/how-to-play';
 export { FinalScreen } from './components/puzzles/daily-quiz/final-screen';
 export { CardsContainer } from './components/puzzles/cards-container';
+export { ContactUs } from './components/puzzles/contact-us';
 export { FreeTrial } from './components/puzzles/free-trial';
 export { PersonalStats } from './components/puzzles/personal-stats';
 export { PuzzleCard } from './components/puzzles/puzzle-card';
 export { StoryCardListing } from './components/puzzles/story-card-listing';
 export { StoryCard } from './components/puzzles/storyCard';
+export { SubscribeBanner } from './components/puzzles/subscribe-banner';
 export { PuzzlesWebLightTheme } from './theme/puzzles-web-light/index';
 
 // SLICES
