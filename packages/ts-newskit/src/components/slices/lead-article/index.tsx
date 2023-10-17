@@ -106,7 +106,8 @@ export const LeadArticle = ({
       media: {
         src: imageWithCorrectRatio.url,
         alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio.ratio
+        loadingAspectRatio: imageWithCorrectRatio.ratio,
+        loading: 'lazy'
       }
     };
 
@@ -156,11 +157,8 @@ export const LeadArticle = ({
             marginBlockEnd={imageTop ? 'space040' : 'space000'}
             marginBlockStart={imageMarginBlockStart}
           >
-            <FullWidthCardMediaMob
-              {...cardImage}
-              className="lcpItem"
-              ratio={imageWithCorrectRatio!.ratio}
-            />
+            {/* @ts-ignore */}
+            <FullWidthCardMediaMob {...cardImage} />
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"

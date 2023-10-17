@@ -24,15 +24,12 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -201,15 +198,12 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -1084,18 +1078,15 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="css-j6pksw"
               >
                 <div
-                  class="lcpItem css-1rkt0l2"
+                  class="css-uxw9nr"
                 >
                   <picture
-                    class="css-zp0elg"
+                    class="css-l4lngz"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                      class="css-ssxt4f"
+                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -1429,18 +1420,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 >
                   <div
                     class="css-1kwj960"
-                    loading="lazy"
                   >
                     <picture
-                      class="css-zp0elg"
+                      class="css-l4lngz"
                     >
-                      <div
-                        class="css-5pczz7"
-                      />
                       <img
                         alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
-                        class="css-1qgqq71"
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        class="css-ssxt4f"
+                        loading="lazy"
                       />
                     </picture>
                   </div>
@@ -1526,18 +1513,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 >
                   <div
                     class="css-1kwj960"
-                    loading="lazy"
                   >
                     <picture
-                      class="css-zp0elg"
+                      class="css-l4lngz"
                     >
-                      <div
-                        class="css-5pczz7"
-                      />
                       <img
                         alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
-                        class="css-1qgqq71"
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        class="css-ssxt4f"
+                        loading="lazy"
                       />
                     </picture>
                   </div>
@@ -1623,18 +1606,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 >
                   <div
                     class="css-1kwj960"
-                    loading="lazy"
                   >
                     <picture
-                      class="css-zp0elg"
+                      class="css-l4lngz"
                     >
-                      <div
-                        class="css-5pczz7"
-                      />
                       <img
                         alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
-                        class="css-1qgqq71"
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        class="css-ssxt4f"
+                        loading="lazy"
                       />
                     </picture>
                   </div>
@@ -1877,18 +1856,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 >
                   <div
                     class="css-1kwj960"
-                    loading="lazy"
                   >
                     <picture
-                      class="css-zp0elg"
+                      class="css-l4lngz"
                     >
-                      <div
-                        class="css-5pczz7"
-                      />
                       <img
                         alt="‘American owners pose threat to English pyramid’"
-                        class="css-1qgqq71"
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        class="css-ssxt4f"
+                        loading="lazy"
                       />
                     </picture>
                   </div>
@@ -1952,18 +1927,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 >
                   <div
                     class="css-1kwj960"
-                    loading="lazy"
                   >
                     <picture
-                      class="css-zp0elg"
+                      class="css-l4lngz"
                     >
-                      <div
-                        class="css-5pczz7"
-                      />
                       <img
                         alt="‘American owners pose threat to English pyramid’"
-                        class="css-1qgqq71"
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        class="css-ssxt4f"
+                        loading="lazy"
                       />
                     </picture>
                   </div>
@@ -2027,18 +1998,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 >
                   <div
                     class="css-1kwj960"
-                    loading="lazy"
                   >
                     <picture
-                      class="css-zp0elg"
+                      class="css-l4lngz"
                     >
-                      <div
-                        class="css-5pczz7"
-                      />
                       <img
                         alt="‘American owners pose threat to English pyramid’"
-                        class="css-1qgqq71"
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                        class="css-ssxt4f"
+                        loading="lazy"
                       />
                     </picture>
                   </div>
@@ -2143,18 +2110,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -2251,18 +2214,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -2359,18 +2318,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -2467,18 +2422,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -2575,18 +2526,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -2692,18 +2639,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -2767,18 +2710,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -2842,18 +2781,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -2995,18 +2930,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -3079,18 +3010,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -3173,18 +3100,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -3267,18 +3190,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -3458,18 +3377,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -3561,18 +3476,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -3658,18 +3569,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -3755,18 +3662,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -3952,18 +3855,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -4058,18 +3957,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -4166,18 +4061,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -4274,18 +4165,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -4493,18 +4380,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -4613,18 +4496,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -4721,18 +4600,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -4829,18 +4704,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -4937,18 +4808,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -5045,18 +4912,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -5162,18 +5025,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -5237,18 +5096,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -5312,18 +5167,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -5465,18 +5316,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -5549,18 +5396,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -5643,18 +5486,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -5737,18 +5576,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -5928,18 +5763,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -6031,18 +5862,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -6128,18 +5955,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -6225,18 +6048,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -6422,18 +6241,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -6528,18 +6343,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -6636,18 +6447,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -6744,18 +6551,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -6963,18 +6766,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -7092,18 +6891,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -7200,18 +6995,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -7308,18 +7099,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -7416,18 +7203,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -7524,18 +7307,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -7641,18 +7420,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -7716,18 +7491,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -7791,18 +7562,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -7944,18 +7711,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -8028,18 +7791,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -8122,18 +7881,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -8216,18 +7971,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -8407,18 +8158,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -8513,18 +8260,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -8621,18 +8364,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -8729,18 +8468,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -8837,18 +8572,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -8945,18 +8676,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -9062,18 +8789,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -9137,18 +8860,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -9212,18 +8931,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -9365,18 +9080,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -9449,18 +9160,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -9543,18 +9250,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -9637,18 +9340,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -9828,18 +9527,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -9942,18 +9637,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -10039,18 +9730,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -10216,18 +9903,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -10313,18 +9996,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -10423,18 +10102,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -10531,18 +10206,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -10730,18 +10401,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -10838,18 +10505,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -10989,18 +10652,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -11097,18 +10756,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -11205,18 +10860,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -11313,18 +10964,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -11421,18 +11068,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -11538,18 +11181,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -11613,18 +11252,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -11688,18 +11323,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -11841,18 +11472,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -11925,18 +11552,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -12019,18 +11642,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -12113,18 +11732,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -12304,18 +11919,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -12407,18 +12018,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -12504,18 +12111,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -12601,18 +12204,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -12798,18 +12397,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -12904,18 +12499,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -13012,18 +12603,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -13120,18 +12707,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -13339,18 +12922,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -13459,18 +13038,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -13567,18 +13142,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -13675,18 +13246,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -13783,18 +13350,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -13891,18 +13454,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -14008,18 +13567,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -14083,18 +13638,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -14158,18 +13709,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -14311,18 +13858,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -14395,18 +13938,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -14489,18 +14028,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -14583,18 +14118,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -14774,18 +14305,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -14877,18 +14404,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -14974,18 +14497,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -15071,18 +14590,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -15268,18 +14783,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -15374,18 +14885,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -15482,18 +14989,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -15590,18 +15093,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -15809,18 +15308,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -15938,18 +15433,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -16046,18 +15537,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -16154,18 +15641,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -16262,18 +15745,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -16370,18 +15849,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -16487,18 +15962,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -16562,18 +16033,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -16637,18 +16104,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -16790,18 +16253,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="American owners pose threat to English pyramid 2"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -16874,18 +16333,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -16968,18 +16423,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -17062,18 +16513,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                       >
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -17253,18 +16700,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         </div>
                         <div
                           class="css-1kwj960"
-                          loading="lazy"
                         >
                           <picture
-                            class="css-zp0elg"
+                            class="css-l4lngz"
                           >
-                            <div
-                              class="css-5pczz7"
-                            />
                             <img
                               alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                              class="css-1qgqq71"
-                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                              class="css-ssxt4f"
+                              loading="lazy"
                             />
                           </picture>
                         </div>
@@ -17359,18 +16802,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -17467,18 +16906,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -17575,18 +17010,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -17683,18 +17114,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -17791,18 +17218,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -17908,18 +17331,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -17983,18 +17402,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -18058,18 +17473,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -18211,18 +17622,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="American owners pose threat to English pyramid 2"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -18295,18 +17702,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -18389,18 +17792,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -18483,18 +17882,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   >
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -18674,18 +18069,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     </div>
                     <div
                       class="css-1kwj960"
-                      loading="lazy"
                     >
                       <picture
-                        class="css-zp0elg"
+                        class="css-l4lngz"
                       >
-                        <div
-                          class="css-5pczz7"
-                        />
                         <img
                           alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-1qgqq71"
-                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                          class="css-ssxt4f"
+                          loading="lazy"
                         />
                       </picture>
                     </div>
@@ -18788,18 +18179,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -18885,18 +18272,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -19062,18 +18445,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -19159,18 +18538,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -19269,18 +18644,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -19377,18 +18748,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -19576,18 +18943,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -19684,18 +19047,14 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     >
                       <div
                         class="css-1kwj960"
-                        loading="lazy"
                       >
                         <picture
-                          class="css-zp0elg"
+                          class="css-l4lngz"
                         >
-                          <div
-                            class="css-5pczz7"
-                          />
                           <img
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
-                            class="css-1qgqq71"
-                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                            class="css-ssxt4f"
+                            loading="lazy"
                           />
                         </picture>
                       </div>
@@ -19816,18 +19175,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
               class="css-j6pksw"
             >
               <div
-                class="lcpItem css-1rkt0l2"
+                class="css-uxw9nr"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -19993,18 +19349,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
               class="css-j6pksw"
             >
               <div
-                class="lcpItem css-1rkt0l2"
+                class="css-uxw9nr"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -20879,18 +20232,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                 class="css-j6pksw"
               >
                 <div
-                  class="lcpItem css-1rkt0l2"
+                  class="css-uxw9nr"
                 >
                   <picture
-                    class="css-zp0elg"
+                    class="css-l4lngz"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                      class="css-ssxt4f"
+                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -38982,15 +38332,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -39159,15 +38506,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -40045,15 +39389,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="lcpItem css-4t8ylq"
                 >
                   <picture
-                    class="css-zp0elg"
+                    class="css-l4lngz"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                      class="css-ssxt4f"
+                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -58145,15 +57486,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -58322,15 +57660,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -59208,15 +58543,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="lcpItem css-4t8ylq"
                 >
                   <picture
-                    class="css-zp0elg"
+                    class="css-l4lngz"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                      class="css-ssxt4f"
+                      loading="lazy"
                     />
                   </picture>
                 </div>
@@ -77308,15 +76640,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -77485,15 +76814,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -78371,15 +77697,12 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="lcpItem css-4t8ylq"
                 >
                   <picture
-                    class="css-zp0elg"
+                    class="css-l4lngz"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                      class="css-ssxt4f"
+                      loading="lazy"
                     />
                   </picture>
                 </div>

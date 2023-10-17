@@ -88,13 +88,15 @@ export const Article = ({
     label ||
     contentType;
 
-  const cardImage = {
-    media: {
-      src: imageWithCorrectRatio!.url,
-      alt: (images && images.alt) || headline,
-      loadingAspectRatio: imageWithCorrectRatio!.ratio || '3:2'
-    }
-  };
+  const cardImage = !hideImage &&
+    imageWithCorrectRatio && {
+      media: {
+        src: imageWithCorrectRatio.url,
+        alt: (images && images.alt) || headline,
+        loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2',
+        loading: 'lazy'
+      }
+    };
 
   const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
@@ -148,9 +150,11 @@ export const Article = ({
       )}
       {showImage ? (
         isLeadImage ? (
+          /* @ts-ignore */
           <FullWidthCardMediaMob {...cardImage} />
         ) : (
-          <CardMedia media={{ ...cardImage.media, loading: 'lazy' }} />
+          /* @ts-ignore */
+          <CardMedia {...cardImage} />
         )
       ) : null}
       <CardContent alignContent="start">
