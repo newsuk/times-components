@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.115.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.114.1...@times-components/ts-newskit@1.115.0) (2023-10-17)
+
+
+### Bug Fixes
+
+* **TMRX-000:** Remove quotes around styles ([#3596](https://github.com/newsuk/times-components/issues/3596)) ([eb7a965](https://github.com/newsuk/times-components/commit/eb7a96528db26e87857d7cb026a3f371caf68874))
+
+
+### Features
+
+* **TMPZ-154:** Offers Banner ([#3592](https://github.com/newsuk/times-components/issues/3592)) ([4ce1944](https://github.com/newsuk/times-components/commit/4ce1944c9d515f27603d6eda636dfc745eb29394))
+
+
+
+
+
 ## [1.114.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.114.0...@times-components/ts-newskit@1.114.1) (2023-10-16)
 
 
