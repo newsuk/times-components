@@ -54,7 +54,7 @@ export interface LeadArticleProps {
   imageTop?: boolean;
   hasTopBorder?: boolean;
   contentTop?: boolean;
-  contentWidth?: string;
+  contentWidth?: MQ<string> | string;
   headlineTypographyPreset?: MQ<string> | string;
   loadingAspectRatio?: string;
   imageMarginBlockStart?: string;
