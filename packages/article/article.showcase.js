@@ -36,21 +36,6 @@ export default {
       type: "story",
       defaultUserState: USER_STATES.GUEST
     },
-    {
-      component: ({ boolean, color, select }, { decorateAction }) =>
-        renderArticleConfig({
-          boolean,
-          color,
-          decorateAction,
-          hasScaling: false,
-          link: <NewTab />,
-          select
-        }),
-      name: "Article metered expired",
-      platform: "web",
-      type: "story",
-      defaultUserState: USER_STATES.RA_EXPIRED
-    }
   ],
   name: "Pages/Article (marketing overlays)"
 };
