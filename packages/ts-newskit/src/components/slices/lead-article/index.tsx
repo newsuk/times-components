@@ -148,9 +148,10 @@ export const LeadArticle = ({
           : `content media`
       }}
       columnGap="space040"
-      columns={{
-        md: displayArticleVertical ? '100%' : `${contentWidth || '260px'} auto`
-      }}
+      columns={(displayArticleVertical || !contentWidth)
+        ? '100%'
+        : contentWidth
+      }
     >
       {hasImage &&
         !hideImage && (

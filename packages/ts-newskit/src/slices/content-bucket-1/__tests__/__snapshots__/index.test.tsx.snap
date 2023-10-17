@@ -18,7 +18,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             class="css-gre9re"
           >
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-j6pksw"
@@ -162,7 +162,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               data-testid="divider"
             />
             <div
-              class="css-1fnfy6n"
+              class="css-72prt6"
             >
               <div
                 class="css-1vuk75f"
@@ -1299,7 +1299,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
             class="css-gre9re"
           >
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-j6pksw"
@@ -1443,7 +1443,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
               data-testid="divider"
             />
             <div
-              class="css-1fnfy6n"
+              class="css-72prt6"
             >
               <div
                 class="css-1vuk75f"

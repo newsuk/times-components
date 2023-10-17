@@ -65,8 +65,8 @@ export const ContentBucket1 = ({
               hasTopBorder: true,
               imageTop: false,
               contentWidth: {
-                md: '283px',
-                xl: '312px'
+                md: '283px auto',
+                xl: '312px auto'
               }
             }}
             clickHandler={clickHandler}
