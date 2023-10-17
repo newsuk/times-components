@@ -218,7 +218,6 @@ const renderArticle = ({
   section,
   template,
   isTeaser,
-  isMeteredExpired
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -243,8 +242,7 @@ const renderArticle = ({
               scale: scale || defaults.theme.scale
             },
             user: {
-              isLoggedIn: !isTeaser || isMeteredExpired,
-              isMeteredExpired
+              isLoggedIn: !isTeaser,
             }
           }}
         >
@@ -325,8 +323,8 @@ const renderArticleConfig = ({
       : null;
 
   const user = (global.nuk && global.nuk.user) || {};
-  const { isLoggedIn, isMeteredExpired, isShared } = user;
-  const isTeaser = !isShared && (isMeteredExpired || !isLoggedIn);
+  const { isLoggedIn, isShared } = user;
+  const isTeaser = !isShared && !isLoggedIn;
 
   return (
     <Fragment>
@@ -355,7 +353,6 @@ const renderArticleConfig = ({
             inDepthBackgroundColour,
             inDepthTextColour,
             isTeaser,
-            isMeteredExpired,
             scale,
             section,
             template
