@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.114.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.114.0...@times-components/ts-newskit@1.114.1) (2023-10-16)
+
+
+### Bug Fixes
+
+* **TMRX-1580:** Add lazy loading to images that aren't lead images ([#3595](https://github.com/newsuk/times-components/issues/3595)) ([683a2bc](https://github.com/newsuk/times-components/commit/683a2bc8bf06b85d5d867428b2647c6aee46a396))
+
+
+
+
+
+# [1.114.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.113.0...@times-components/ts-newskit@1.114.0) (2023-10-16)
+
+
+### Features
+
+* **TMRX-1580:**  Add lazy loading to slice images ([#3593](https://github.com/newsuk/times-components/issues/3593)) ([178daab](https://github.com/newsuk/times-components/commit/178daabd0c4a479608b7d723aa8e83f68acb701a))
+
+
+
+
+
+# [1.113.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.112.0...@times-components/ts-newskit@1.113.0) (2023-10-16)
+
+
+### Features
+
+* **TMRX-1563:** refactor section bucket ([#3586](https://github.com/newsuk/times-components/issues/3586)) ([caab73b](https://github.com/newsuk/times-components/commit/caab73b7ef9154fd8eb1f79720066df9a753a92a))
+* **TMRX-1570:** Improve image performance new slices ([#3591](https://github.com/newsuk/times-components/issues/3591)) ([420748c](https://github.com/newsuk/times-components/commit/420748c2d811ea54f7a37b1205dcfd3a1dd42dd1))
+
+
+
+
+
 # [1.112.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.111.0...@times-components/ts-newskit@1.112.0) (2023-10-13)
 
 

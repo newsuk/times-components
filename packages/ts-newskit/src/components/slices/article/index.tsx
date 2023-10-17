@@ -88,16 +88,13 @@ export const Article = ({
     label ||
     contentType;
 
-  const cardImage = !hideImage &&
-    imageWithCorrectRatio && {
-      media: {
-        src: imageWithCorrectRatio.url,
-        alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2'
-      }
-    };
-
-  const CardMediaComponent = isLeadImage ? FullWidthCardMediaMob : CardMedia;
+  const cardImage = {
+    media: {
+      src: imageWithCorrectRatio!.url,
+      alt: (images && images.alt) || headline,
+      loadingAspectRatio: imageWithCorrectRatio!.ratio || '3:2'
+    }
+  };
 
   const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
@@ -106,6 +103,8 @@ export const Article = ({
     images.crops.length > 0 &&
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '';
+
+  const showImage = hasImage && !hideImage;
 
   const onClick = (event: MouseEventType) => {
     const articleForTracking = { headline, id, url };
@@ -149,8 +148,13 @@ export const Article = ({
           )}
         </GridLayoutItem>
       )}
-
-      {hasImage && !hideImage && <CardMediaComponent {...cardImage} />}
+      {showImage ? (
+        isLeadImage ? (
+          <FullWidthCardMediaMob {...cardImage} />
+        ) : (
+          <CardMedia media={{ ...cardImage.media, loading: 'lazy' }} />
+        )
+      ) : null}
       <CardContent alignContent="start">
         {images &&
           !imageRight &&
