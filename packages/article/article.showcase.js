@@ -35,7 +35,7 @@ export default {
       platform: "web",
       type: "story",
       defaultUserState: USER_STATES.GUEST
-    },
+    }
   ],
   name: "Pages/Article (marketing overlays)"
 };

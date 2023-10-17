@@ -217,7 +217,7 @@ const renderArticle = ({
   scale,
   section,
   template,
-  isTeaser,
+  isTeaser
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -242,7 +242,7 @@ const renderArticle = ({
               scale: scale || defaults.theme.scale
             },
             user: {
-              isLoggedIn: !isTeaser,
+              isLoggedIn: !isTeaser
             }
           }}
         >
