@@ -18,6 +18,10 @@ export const LeadStoryDivider = styled(Divider)<{ position: string }>`
       position === 'left' ? setDividerPositionLeft : setDividerPositionRight,
       'space040'
     )};
+
+  ${getMediaQueryFromTheme('xs', 'lg')} {
+    ${({ position }) => position !== 'left' && 'display: none'};
+  }
 `;
 
 export const ArticleDivider = styled(Divider)`
@@ -39,6 +43,7 @@ export const ArticleDividerXL = styled(Divider)`
   position: absolute;
   height: 100%;
   left: 50%;
+  top: 0;
 `;
 
 export const StackItem = styled(Stack)<{

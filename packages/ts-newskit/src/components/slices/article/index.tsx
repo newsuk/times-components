@@ -88,13 +88,15 @@ export const Article = ({
     label ||
     contentType;
 
-  const cardImage = {
-    media: {
-      src: imageWithCorrectRatio!.url,
-      alt: (images && images.alt) || headline,
-      loadingAspectRatio: imageWithCorrectRatio!.ratio || '3:2'
-    }
-  };
+  const cardImage = !hideImage &&
+    imageWithCorrectRatio && {
+      media: {
+        src: imageWithCorrectRatio.url,
+        alt: (images && images.alt) || headline,
+        loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2',
+        loading: 'lazy'
+      }
+    };
 
   const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
@@ -110,6 +112,16 @@ export const Article = ({
     const articleForTracking = { headline, id, url };
     articleClickTracking(event, articleForTracking, clickHandler);
   };
+
+  const articleDivider = (
+    <Divider
+      overrides={{
+        marginBlockEnd: 'space040',
+        stylePreset: 'dashedDivider'
+      }}
+      aria-label="article-divider-horizontal"
+    />
+  );
 
   return (
     <CardComposable
@@ -130,29 +142,19 @@ export const Article = ({
       {hasTopBorder && (
         <GridLayoutItem area="border">
           {isFullWidth ? (
-            <FullWidthBlock>
-              <Divider
-                overrides={{
-                  marginBlockEnd: 'space040',
-                  stylePreset: 'dashedDivider'
-                }}
-              />
-            </FullWidthBlock>
+            <FullWidthBlock>{articleDivider}</FullWidthBlock>
           ) : (
-            <Divider
-              overrides={{
-                marginBlockEnd: 'space040',
-                stylePreset: 'dashedDivider'
-              }}
-            />
+            articleDivider
           )}
         </GridLayoutItem>
       )}
       {showImage ? (
         isLeadImage ? (
+          /* @ts-ignore */
           <FullWidthCardMediaMob {...cardImage} />
         ) : (
-          <CardMedia media={{ ...cardImage.media, loading: 'lazy' }} />
+          /* @ts-ignore */
+          <CardMedia {...cardImage} />
         )
       ) : null}
       <CardContent alignContent="start">
