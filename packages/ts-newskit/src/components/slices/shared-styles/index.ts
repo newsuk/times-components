@@ -59,16 +59,14 @@ export const FullWidthCardMediaMob = styled(CardMedia)<{
   className?: string;
 }>`
   height: ${({ className }) => (className ? 0 : '100%')};
-  overflow: "hidden";
-  position: "relative";
-  width: "100%";
+  overflow: hidden;
+  position: relative;
   padding-bottom: ${({ ratio }) => (ratio ? `${100 / getRatio(ratio)}%;` : 0)};
-img: {
+  img: {
     opacity: 1,
     zIndex: 2,
-    width: "100%",
-    position: "absolute",
-    display: "block"
+    position: absolute,
+    display: block
   }
   ${getMediaQueryFromTheme('xs', 'md')} {
     ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
