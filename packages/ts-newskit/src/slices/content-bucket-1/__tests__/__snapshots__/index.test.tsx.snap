@@ -18,21 +18,24 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             class="css-gre9re"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-j6pksw"
               >
                 <div
-                  class="css-uxw9nr"
+                  class="lcpItem css-1u3clu4"
                 >
                   <picture
-                    class="css-l4lngz"
+                    class="css-zp0elg"
                   >
+                    <div
+                      class="css-5pczz7"
+                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-ssxt4f"
-                      loading="lazy"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </picture>
                 </div>
@@ -159,21 +162,24 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               data-testid="divider"
             />
             <div
-              class="css-1yefkg3"
+              class="css-1fnfy6n"
             >
               <div
                 class="css-1vuk75f"
               >
                 <div
-                  class="css-uxw9nr"
+                  class="lcpItem css-1u3clu4"
                 >
                   <picture
-                    class="css-l4lngz"
+                    class="css-zp0elg"
                   >
+                    <div
+                      class="css-5pczz7"
+                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-ssxt4f"
-                      loading="lazy"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </picture>
                 </div>
@@ -1293,21 +1299,24 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
             class="css-gre9re"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-j6pksw"
               >
                 <div
-                  class="css-uxw9nr"
+                  class="lcpItem css-1u3clu4"
                 >
                   <picture
-                    class="css-l4lngz"
+                    class="css-zp0elg"
                   >
+                    <div
+                      class="css-5pczz7"
+                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-ssxt4f"
-                      loading="lazy"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </picture>
                 </div>
@@ -1434,21 +1443,24 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
               data-testid="divider"
             />
             <div
-              class="css-1yefkg3"
+              class="css-1fnfy6n"
             >
               <div
                 class="css-1vuk75f"
               >
                 <div
-                  class="css-uxw9nr"
+                  class="lcpItem css-1u3clu4"
                 >
                   <picture
-                    class="css-l4lngz"
+                    class="css-zp0elg"
                   >
+                    <div
+                      class="css-5pczz7"
+                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-ssxt4f"
-                      loading="lazy"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </picture>
                 </div>

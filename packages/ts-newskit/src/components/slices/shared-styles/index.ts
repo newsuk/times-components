@@ -13,6 +13,12 @@ import {
 } from 'newskit';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
+const getRatio = (ratioString: string) => {
+  const [ratioWidth, ratioHeight] = ratioString.split(':');
+
+  return Number(ratioWidth) / Number(ratioHeight);
+};
+
 export const CardHeadlineLink = styled(CardLink)<{
   $color?: string;
   $hoverColor?: string;

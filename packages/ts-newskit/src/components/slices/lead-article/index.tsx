@@ -54,7 +54,7 @@ export interface LeadArticleProps {
   imageTop?: boolean;
   hasTopBorder?: boolean;
   contentTop?: boolean;
-  contentWidth?: MQ<string> | string;
+  contentWidth?: string;
   headlineTypographyPreset?: MQ<string> | string;
   loadingAspectRatio?: string;
   imageMarginBlockStart?: string;
@@ -106,8 +106,7 @@ export const LeadArticle = ({
       media: {
         src: imageWithCorrectRatio.url,
         alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio.ratio,
-        loading: 'lazy'
+        loadingAspectRatio: imageWithCorrectRatio.ratio
       }
     };
 
@@ -149,7 +148,9 @@ export const LeadArticle = ({
           : `content media`
       }}
       columnGap="space040"
-      columns={displayArticleVertical || !contentWidth ? '100%' : contentWidth}
+      columns={{
+        md: displayArticleVertical ? '100%' : `${contentWidth || '260px'} auto`
+      }}
     >
       {hasImage &&
         !hideImage && (
@@ -157,8 +158,11 @@ export const LeadArticle = ({
             marginBlockEnd={imageTop ? 'space040' : 'space000'}
             marginBlockStart={imageMarginBlockStart}
           >
-            {/* @ts-ignore */}
-            <FullWidthCardMediaMob {...cardImage} />
+            <FullWidthCardMediaMob
+              {...cardImage}
+              className="lcpItem"
+              ratio={imageWithCorrectRatio!.ratio}
+            />
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"

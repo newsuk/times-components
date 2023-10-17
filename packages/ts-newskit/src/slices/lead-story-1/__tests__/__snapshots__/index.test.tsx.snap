@@ -15,7 +15,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           class="css-919cy0"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-j6pksw"
@@ -24,12 +24,15 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-l4lngz"
+                  class="css-zp0elg"
                 >
+                  <div
+                    class="css-5pczz7"
+                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-ssxt4f"
-                    loading="lazy"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                   />
                 </picture>
               </div>
@@ -189,7 +192,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           class="css-17e8e7g"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-j6pksw"
@@ -198,12 +201,15 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-l4lngz"
+                  class="css-zp0elg"
                 >
+                  <div
+                    class="css-5pczz7"
+                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-ssxt4f"
-                    loading="lazy"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                   />
                 </picture>
               </div>
@@ -363,7 +369,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           class="css-13fsx86"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -510,7 +516,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           class="css-yj8ahp"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -657,7 +663,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           class="css-1ipehn5"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -883,7 +889,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             class="css-e0a604"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-gpke1l"
@@ -984,7 +990,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               />
             </div>
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-gpke1l"
@@ -1072,21 +1078,24 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             class="css-1snp8e9"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-j6pksw"
               >
                 <div
-                  class="css-uxw9nr"
+                  class="lcpItem css-1u3clu4"
                 >
                   <picture
-                    class="css-l4lngz"
+                    class="css-zp0elg"
                   >
+                    <div
+                      class="css-5pczz7"
+                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-ssxt4f"
-                      loading="lazy"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </picture>
                 </div>
@@ -19169,21 +19178,24 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
           class="css-919cy0"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-j6pksw"
             >
               <div
-                class="css-uxw9nr"
+                class="lcpItem css-1u3clu4"
               >
                 <picture
-                  class="css-l4lngz"
+                  class="css-zp0elg"
                 >
+                  <div
+                    class="css-5pczz7"
+                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-ssxt4f"
-                    loading="lazy"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                   />
                 </picture>
               </div>
@@ -19343,21 +19355,24 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
           class="css-17e8e7g"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-j6pksw"
             >
               <div
-                class="css-uxw9nr"
+                class="lcpItem css-1u3clu4"
               >
                 <picture
-                  class="css-l4lngz"
+                  class="css-zp0elg"
                 >
+                  <div
+                    class="css-5pczz7"
+                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-ssxt4f"
-                    loading="lazy"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                   />
                 </picture>
               </div>
@@ -19517,7 +19532,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
           class="css-13fsx86"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -19664,7 +19679,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
           class="css-yj8ahp"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -19811,7 +19826,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
           class="css-1ipehn5"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -20037,7 +20052,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
             class="css-e0a604"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-gpke1l"
@@ -20138,7 +20153,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
               />
             </div>
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-gpke1l"
@@ -20226,21 +20241,24 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
             class="css-1snp8e9"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-j6pksw"
               >
                 <div
-                  class="css-uxw9nr"
+                  class="lcpItem css-1u3clu4"
                 >
                   <picture
-                    class="css-l4lngz"
+                    class="css-zp0elg"
                   >
+                    <div
+                      class="css-5pczz7"
+                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-ssxt4f"
-                      loading="lazy"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </picture>
                 </div>
@@ -38323,7 +38341,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-919cy0"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-j6pksw"
@@ -38332,12 +38350,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-l4lngz"
+                  class="css-zp0elg"
                 >
+                  <div
+                    class="css-5pczz7"
+                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-ssxt4f"
-                    loading="lazy"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                   />
                 </picture>
               </div>
@@ -38497,7 +38518,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-17e8e7g"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-j6pksw"
@@ -38506,12 +38527,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-l4lngz"
+                  class="css-zp0elg"
                 >
+                  <div
+                    class="css-5pczz7"
+                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-ssxt4f"
-                    loading="lazy"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                   />
                 </picture>
               </div>
@@ -38671,7 +38695,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-13fsx86"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -38818,7 +38842,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-yj8ahp"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -38965,7 +38989,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-1ipehn5"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -39191,7 +39215,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="css-e0a604"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-gpke1l"
@@ -39292,7 +39316,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               />
             </div>
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-gpke1l"
@@ -39380,7 +39404,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="css-1snp8e9"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-j6pksw"
@@ -39389,12 +39413,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="lcpItem css-4t8ylq"
                 >
                   <picture
-                    class="css-l4lngz"
+                    class="css-zp0elg"
                   >
+                    <div
+                      class="css-5pczz7"
+                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-ssxt4f"
-                      loading="lazy"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </picture>
                 </div>
@@ -57477,7 +57504,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-919cy0"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-j6pksw"
@@ -57486,12 +57513,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-l4lngz"
+                  class="css-zp0elg"
                 >
+                  <div
+                    class="css-5pczz7"
+                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-ssxt4f"
-                    loading="lazy"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                   />
                 </picture>
               </div>
@@ -57651,7 +57681,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-17e8e7g"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-j6pksw"
@@ -57660,12 +57690,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-l4lngz"
+                  class="css-zp0elg"
                 >
+                  <div
+                    class="css-5pczz7"
+                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-ssxt4f"
-                    loading="lazy"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                   />
                 </picture>
               </div>
@@ -57825,7 +57858,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-13fsx86"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -57972,7 +58005,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-yj8ahp"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -58119,7 +58152,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-1ipehn5"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -58345,7 +58378,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="css-e0a604"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-gpke1l"
@@ -58446,7 +58479,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               />
             </div>
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-gpke1l"
@@ -58534,7 +58567,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="css-1snp8e9"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-j6pksw"
@@ -58543,12 +58576,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="lcpItem css-4t8ylq"
                 >
                   <picture
-                    class="css-l4lngz"
+                    class="css-zp0elg"
                   >
+                    <div
+                      class="css-5pczz7"
+                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-ssxt4f"
-                      loading="lazy"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </picture>
                 </div>
@@ -76631,7 +76667,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-919cy0"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-j6pksw"
@@ -76640,12 +76676,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-l4lngz"
+                  class="css-zp0elg"
                 >
+                  <div
+                    class="css-5pczz7"
+                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-ssxt4f"
-                    loading="lazy"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                   />
                 </picture>
               </div>
@@ -76805,7 +76844,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-17e8e7g"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-j6pksw"
@@ -76814,12 +76853,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lcpItem css-4t8ylq"
               >
                 <picture
-                  class="css-l4lngz"
+                  class="css-zp0elg"
                 >
+                  <div
+                    class="css-5pczz7"
+                  />
                   <img
                     alt="Short title of the card describing the main content"
-                    class="css-ssxt4f"
-                    loading="lazy"
+                    class="css-1qgqq71"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                   />
                 </picture>
               </div>
@@ -76979,7 +77021,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-13fsx86"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -77126,7 +77168,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-yj8ahp"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -77273,7 +77315,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           class="css-1ipehn5"
         >
           <div
-            class="css-1kb13lf"
+            class="css-6wqjuf"
           >
             <div
               class="css-gpke1l"
@@ -77499,7 +77541,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="css-e0a604"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-gpke1l"
@@ -77600,7 +77642,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               />
             </div>
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-gpke1l"
@@ -77688,7 +77730,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="css-1snp8e9"
           >
             <div
-              class="css-1kb13lf"
+              class="css-6wqjuf"
             >
               <div
                 class="css-j6pksw"
@@ -77697,12 +77739,15 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   class="lcpItem css-4t8ylq"
                 >
                   <picture
-                    class="css-l4lngz"
+                    class="css-zp0elg"
                   >
+                    <div
+                      class="css-5pczz7"
+                    />
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-ssxt4f"
-                      loading="lazy"
+                      class="css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
                     />
                   </picture>
                 </div>
