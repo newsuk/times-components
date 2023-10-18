@@ -6,6 +6,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
     class="css-niwyl0"
   >
     <div
+      aria-label="article-image"
       class="css-1kwj960"
     >
       <picture
@@ -80,6 +81,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
     class="css-1nw1nne"
   >
     <div
+      aria-label="article-image"
       class="css-1kwj960"
     >
       <picture

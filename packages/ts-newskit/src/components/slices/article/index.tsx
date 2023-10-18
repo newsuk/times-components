@@ -152,10 +152,10 @@ export const Article = ({
       {showImage ? (
         isLeadImage ? (
           /* @ts-ignore */
-          <FullWidthCardMediaMob {...cardImage} />
-        ) : (
+          <FullWidthCardMediaMob aria-label="article-lead-image" {...cardImage} />
+          ) : (
           /* @ts-ignore */
-          <CardMedia {...cardImage} />
+          <CardMedia aria-label="article-image" {...cardImage} />
         )
       ) : null}
       <CardContent alignContent="start">

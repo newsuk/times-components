@@ -25,14 +25,15 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-ezq1rc"
+          class="css-8s35v3"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="css-1kwj960"
+              aria-label="article-lead-image"
+              class="css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -48,6 +49,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -87,7 +89,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content
                   </span>
@@ -116,13 +118,29 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
               class="css-1kwj960"
             >
               <picture
@@ -139,6 +157,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -178,7 +197,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 2
                   </span>
@@ -221,13 +240,29 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
               class="css-1kwj960"
             >
               <picture
@@ -244,6 +279,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -283,7 +319,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 3
                   </span>
@@ -312,13 +348,29 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
               class="css-1kwj960"
             >
               <picture
@@ -335,6 +387,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -374,7 +427,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 4
                   </span>
@@ -438,17 +491,32 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-ezq1rc"
+          class="css-1xbveta"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
+              aria-label="article-lead-image"
+              class="css-75ozqf"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 5"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -487,7 +555,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 5
                   </span>
@@ -516,17 +584,47 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 6"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -565,7 +663,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 6
                   </span>
@@ -608,17 +706,47 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 7"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -657,7 +785,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 7
                   </span>
@@ -686,17 +814,47 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 8"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -735,7 +893,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 8
                   </span>
@@ -783,9 +941,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoint value 1`] = `<DocumentFragment />`;
-
-exports[`Render StackModule 1 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
+exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoint value 1`] = `
 <DocumentFragment>
   <div
     class="css-6buzpa"
@@ -810,14 +966,15 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-ezq1rc"
+          class="css-8s35v3"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="css-1kwj960"
+              aria-label="article-lead-image"
+              class="css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -833,6 +990,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -872,7 +1030,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content
                   </span>
@@ -901,13 +1059,29 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
               class="css-1kwj960"
             >
               <picture
@@ -924,6 +1098,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -963,7 +1138,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 2
                   </span>
@@ -1006,13 +1181,29 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
               class="css-1kwj960"
             >
               <picture
@@ -1029,6 +1220,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -1068,7 +1260,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 3
                   </span>
@@ -1097,13 +1289,29 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
               class="css-1kwj960"
             >
               <picture
@@ -1120,6 +1328,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -1159,7 +1368,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 4
                   </span>
@@ -1223,17 +1432,32 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-ezq1rc"
+          class="css-1xbveta"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
+              aria-label="article-lead-image"
+              class="css-75ozqf"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 5"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1272,7 +1496,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 5
                   </span>
@@ -1301,17 +1525,47 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 6"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1350,7 +1604,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 6
                   </span>
@@ -1393,17 +1647,47 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 7"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1442,7 +1726,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 7
                   </span>
@@ -1471,17 +1755,47 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           </div>
           <hr
             aria-hidden="true"
-            class="css-5iyysz"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
             data-testid="divider"
           />
           <div
             class="css-1nw1nne"
           >
             <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 8"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1520,7 +1834,948 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content 8
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-dgqeis"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-10d4t8c"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-1jxv40d"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-d9hjcx"
+                >
+                  Flag
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Render StackModule 1 Slice modifies articles correctly when breakpointKey is "md" 1`] = `
+<DocumentFragment>
+  <div
+    class="css-6buzpa"
+  >
+    <div
+      class="css-114l5ed"
+    >
+      <div
+        class="css-13tedu1"
+      >
+        <div
+          class="css-1goigs6"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1czxc5l"
+            data-testid="divider"
+          />
+        </div>
+      </div>
+      <div
+        class="css-13tedu1"
+      >
+        <div
+          class="css-8s35v3"
+          data-testid="article-container"
+        >
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              aria-label="article-lead-image"
+              class="css-75ozqf"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
+              class="css-17cghxi"
+            >
+              <div
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-6tvr2h"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    PROFILE
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-dgqeis"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-10d4t8c"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-1jxv40d"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 2"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
+              class="css-17cghxi"
+            >
+              <div
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-6tvr2h"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content 2
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-dgqeis"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-10d4t8c"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-1jxv40d"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-d9hjcx"
+                >
+                  Flag
+                </span>
+              </div>
+            </div>
+          </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 3"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
+              class="css-17cghxi"
+            >
+              <div
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-6tvr2h"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content 3
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-dgqeis"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-10d4t8c"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-1jxv40d"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 4"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
+              class="css-17cghxi"
+            >
+              <div
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-6tvr2h"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content 4
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-dgqeis"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-10d4t8c"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-1jxv40d"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-d9hjcx"
+                >
+                  Flag
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-114l5ed"
+    >
+      <div
+        class="css-13tedu1"
+      >
+        <div
+          class="css-1goigs6"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-1f0staz"
+            data-testid="divider"
+          />
+        </div>
+      </div>
+      <div
+        class="css-13tedu1"
+      >
+        <div
+          class="css-1xbveta"
+          data-testid="article-container"
+        >
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              aria-label="article-lead-image"
+              class="css-75ozqf"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 5"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
+              class="css-17cghxi"
+            >
+              <div
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-6tvr2h"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content 5
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-dgqeis"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-10d4t8c"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-1jxv40d"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 6"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
+              class="css-17cghxi"
+            >
+              <div
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-6tvr2h"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content 6
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-dgqeis"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-10d4t8c"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-1jxv40d"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-d9hjcx"
+                >
+                  Flag
+                </span>
+              </div>
+            </div>
+          </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 7"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
+              class="css-17cghxi"
+            >
+              <div
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-6tvr2h"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content 7
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-dgqeis"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-10d4t8c"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-1jxv40d"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              class="css-tj8oo8"
+            >
+              <div
+                class="css-1g5vzsh"
+              >
+                <hr
+                  aria-hidden="true"
+                  aria-label="article-divider-horizontal"
+                  class="css-1i1gqyx"
+                  data-testid="divider"
+                />
+              </div>
+            </div>
+            <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 8"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
+              class="css-17cghxi"
+            >
+              <div
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-6tvr2h"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 8
                   </span>
@@ -1593,13 +2848,14 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-ezq1rc"
+          class="css-8s35v3"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
+              aria-label="article-lead-image"
               class="css-75ozqf"
             >
               <picture
@@ -1616,6 +2872,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -1655,7 +2912,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content
                   </span>
@@ -1682,6 +2939,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -1700,10 +2963,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 2"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1742,7 +3020,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 2
                   </span>
@@ -1783,6 +3061,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -1801,10 +3085,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 3"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1843,7 +3142,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 3
                   </span>
@@ -1870,6 +3169,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -1888,10 +3193,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 4"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1930,7 +3250,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 4
                   </span>
@@ -1994,13 +3314,14 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-ezq1rc"
+          class="css-1xbveta"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
+              aria-label="article-lead-image"
               class="css-75ozqf"
             >
               <picture
@@ -2017,6 +3338,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -2056,7 +3378,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 5
                   </span>
@@ -2083,6 +3405,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -2101,10 +3429,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 6"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2143,7 +3486,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 6
                   </span>
@@ -2184,6 +3527,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -2202,10 +3551,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 7"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2244,7 +3608,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 7
                   </span>
@@ -2271,6 +3635,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -2289,10 +3659,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 8"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2331,7 +3716,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 8
                   </span>
@@ -2404,13 +3789,14 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-ezq1rc"
+          class="css-8s35v3"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
+              aria-label="article-lead-image"
               class="css-75ozqf"
             >
               <picture
@@ -2427,6 +3813,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -2466,7 +3853,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content
                   </span>
@@ -2493,6 +3880,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -2511,10 +3904,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 2"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2553,7 +3961,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 2
                   </span>
@@ -2594,6 +4002,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -2612,10 +4026,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 3"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2654,7 +4083,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 3
                   </span>
@@ -2681,6 +4110,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -2699,10 +4134,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 4"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2741,7 +4191,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 4
                   </span>
@@ -2805,13 +4255,14 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-ezq1rc"
+          class="css-1xbveta"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
+              aria-label="article-lead-image"
               class="css-75ozqf"
             >
               <picture
@@ -2828,6 +4279,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
+                aria-label="article-tile-info"
                 class="css-i1f2uq"
               >
                 <span
@@ -2867,7 +4319,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 5
                   </span>
@@ -2894,6 +4346,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -2912,10 +4370,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 6"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2954,7 +4427,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 6
                   </span>
@@ -2995,6 +4468,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -3013,10 +4492,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 7"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -3055,7 +4549,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 7
                   </span>
@@ -3082,6 +4576,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
           </div>
+          <hr
+            aria-hidden="true"
+            aria-label="stacked-article-divider-vertical"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
           <div
             class="css-1nw1nne"
           >
@@ -3100,10 +4600,25 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
+              aria-label="article-image"
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Short title of the card describing the main content 8"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                aria-label="article-tile-info"
+                class="css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -3142,7 +4657,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 8
                   </span>

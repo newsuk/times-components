@@ -67,10 +67,7 @@ const articleStack = ({
                   hasTopBorder: articleIndex > 0,
                   isFullWidth: true,
                   tagAndFlagMarginBlockStart: 'space030',
-                  titleTypographyPreset: {
-                    xs: 'editorialHeadline030',
-                    md: 'editorialHeadline020'
-                  }
+                  titleTypographyPreset: {xs: "editorialHeadline030", md: 'editorialHeadline020'}
                 }}
                 clickHandler={clickHandler}
               />

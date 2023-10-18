@@ -1,4 +1,4 @@
-import { GridLayout, getMediaQueryFromTheme, styled } from 'newskit';
+import { GridLayout, getMediaQueryFromTheme, getSpacingCssFromTheme, styled } from 'newskit';
 
 export const ArticleGrid = styled(GridLayout)<{
   hideImage?: boolean;
@@ -9,35 +9,31 @@ export const ArticleGrid = styled(GridLayout)<{
         display: none;
       }
 
-      picture {
+      [aria-label='article-image'] {
         display: none;
       }
-      
-      & > div:nth-of-type(1) picture {
-        display: block;
-      }
 
-      & > div:nth-of-type(1) > div:nth-of-type(1) {
-        margin-bottom: 16px;
+      [aria-label='article-lead-image'] {
+        ${getSpacingCssFromTheme('margin-block-end','space040')}
       }
 
       div[aria-label='article-tile-info']{
-        margin-block-start: 0;
+        ${getSpacingCssFromTheme('margin-block-start','space000')}
       }
     }
 
     ${getMediaQueryFromTheme('md')} {
 
-      picture {
+      hr[aria-label='article-divider-horizontal'] {
+        display: none;
+      }
+
+      [aria-label='article-image'], [aria-label='article-lead-image'] {
         display: ${({ hideImage }) => (hideImage ? 'none' : 'block')};
       }
 
       div[aria-label='article-tile-info']{
         margin-top: ${({ hideImage }) => hideImage && '0'};
-      }
-
-      hr[aria-label='article-divider-horizontal'] {
-        display: none;
       }
     }
 
