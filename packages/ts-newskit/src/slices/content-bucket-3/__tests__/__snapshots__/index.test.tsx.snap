@@ -281,24 +281,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
           <div
             class="css-1ms6dj6"
           >
-            <div
-              class="css-gre9re"
-            >
-              <hr
-                aria-hidden="true"
-                class="css-iis9tp"
-                data-testid="divider"
-              />
-            </div>
-            <div
-              class="css-11l110t"
-            >
-              <hr
-                aria-hidden="true"
-                class="css-obfal1"
-                data-testid="divider"
-              />
-            </div>
+            <hr
+              aria-hidden="true"
+              class="css-glg6bd"
+              data-testid="divider"
+            />
           </div>
           <div
             class="css-1704wtt"
@@ -363,7 +350,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-hwf98q"
+                class="css-189ndrp"
                 data-testid="divider"
               />
             </div>
@@ -441,633 +428,313 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
       <div
         class="css-1r4d587"
       >
-        <div
-          class="css-gre9re"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-iis9tp"
-            data-testid="divider"
-          />
-        </div>
-        <div
-          class="css-13fsx86"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-obfal1"
-            data-testid="divider"
-          />
-        </div>
+        <hr
+          aria-hidden="true"
+          class="css-glg6bd"
+          data-testid="divider"
+        />
       </div>
       <div
         class="css-11icnc2"
       >
         <div
-          class="css-gre9re"
+          class="css-104c46d"
+          data-testid="article-container"
+          style="position: relative;"
         >
           <div
-            class="css-104c46d"
-            data-testid="article-container"
-            style="position: relative;"
+            class="css-1nw1nne"
           >
             <div
-              class="css-1nw1nne"
+              class="css-1kwj960"
             >
-              <div
-                class="css-1kwj960"
+              <picture
+                class="css-l4lngz"
               >
-                <picture
-                  class="css-l4lngz"
-                >
-                  <img
-                    alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                    class="css-ssxt4f"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-i1f2uq"
-                >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      UPDATED
-                    </div>
-                  </span>
-                  <div
-                    class="css-lew009"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      PROFILE
-                    </div>
-                  </span>
-                </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      European cup winner Mihajlovic dies aged 53 after battle with leukaemia
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div
-              class="css-1nw1nne"
-            >
-              <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-l4lngz"
-                >
-                  <img
-                    alt="‘American owners pose threat to English pyramid’"
-                    class="css-ssxt4f"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-i1f2uq"
-                >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
-                  </span>
-                  <div
-                    class="css-lew009"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
-                  </span>
-                </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      ‘American owners pose threat to English pyramid’
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div
-              class="css-1nw1nne"
-            >
-              <div
-                class="css-tj8oo8"
-              >
-                <hr
-                  aria-hidden="true"
-                  aria-label="article-divider-horizontal"
-                  class="css-y3i219"
-                  data-testid="divider"
+                <img
+                  alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
+                  class="css-ssxt4f"
+                  loading="lazy"
                 />
-              </div>
-              <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-l4lngz"
-                >
-                  <img
-                    alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                    class="css-ssxt4f"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-i1f2uq"
-                >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      UPDATED
-                    </div>
-                  </span>
-                  <div
-                    class="css-lew009"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      Q&A
-                    </div>
-                  </span>
-                </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
-                    </span>
-                  </span>
-                </a>
-              </div>
+              </picture>
             </div>
             <div
-              class="css-1nw1nne"
+              class="css-17cghxi"
             >
               <div
-                class="css-tj8oo8"
+                class="css-i1f2uq"
               >
-                <hr
-                  aria-hidden="true"
-                  aria-label="article-divider-horizontal"
-                  class="css-y3i219"
-                  data-testid="divider"
-                />
-              </div>
-              <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-l4lngz"
+                <span
+                  class="css-6tvr2h"
                 >
-                  <img
-                    alt="Blow for rebel clubs as court says Uefa can block Super League"
-                    class="css-ssxt4f"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-i1f2uq"
-                >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
-                  </span>
                   <div
-                    class="css-lew009"
+                    class="css-gb5m6n"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
+                    UPDATED
                   </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
-                  </span>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
                 </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    PROFILE
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
                 >
                   <span
-                    class="css-17x5lw"
+                    class="css-65zrxz"
                   >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      Blow for rebel clubs as court says Uefa can block Super League
-                    </span>
+                    European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                   </span>
-                </a>
-              </div>
+                </span>
+              </a>
             </div>
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="divider"
-            />
           </div>
-        </div>
-        <div
-          class="css-11l110t"
-        >
           <div
-            class="css-104c46d"
-            data-testid="article-container"
-            style="position: relative;"
+            class="css-1nw1nne"
           >
             <div
-              class="css-1nw1nne"
+              class="css-1kwj960"
             >
-              <div
-                class="css-1kwj960"
+              <picture
+                class="css-l4lngz"
               >
-                <picture
-                  class="css-l4lngz"
-                >
-                  <img
-                    alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                    class="css-ssxt4f"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-i1f2uq"
-                >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      UPDATED
-                    </div>
-                  </span>
-                  <div
-                    class="css-lew009"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      PROFILE
-                    </div>
-                  </span>
-                </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      European cup winner Mihajlovic dies aged 53 after battle with leukaemia
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div
-              class="css-1nw1nne"
-            >
-              <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-l4lngz"
-                >
-                  <img
-                    alt="‘American owners pose threat to English pyramid’"
-                    class="css-ssxt4f"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-i1f2uq"
-                >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
-                  </span>
-                  <div
-                    class="css-lew009"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
-                  </span>
-                </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      ‘American owners pose threat to English pyramid’
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div
-              class="css-1nw1nne"
-            >
-              <div
-                class="css-tj8oo8"
-              >
-                <hr
-                  aria-hidden="true"
-                  aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
-                  data-testid="divider"
+                <img
+                  alt="‘American owners pose threat to English pyramid’"
+                  class="css-ssxt4f"
+                  loading="lazy"
                 />
-              </div>
-              <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-l4lngz"
-                >
-                  <img
-                    alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                    class="css-ssxt4f"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-i1f2uq"
-                >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      UPDATED
-                    </div>
-                  </span>
-                  <div
-                    class="css-lew009"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      Q&A
-                    </div>
-                  </span>
-                </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
-                    </span>
-                  </span>
-                </a>
-              </div>
+              </picture>
             </div>
             <div
-              class="css-1nw1nne"
+              class="css-17cghxi"
             >
               <div
-                class="css-tj8oo8"
+                class="css-i1f2uq"
               >
-                <hr
-                  aria-hidden="true"
-                  aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
-                  data-testid="divider"
-                />
-              </div>
-              <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-l4lngz"
+                <span
+                  class="css-6tvr2h"
                 >
-                  <img
-                    alt="Blow for rebel clubs as court says Uefa can block Super League"
-                    class="css-ssxt4f"
-                    loading="lazy"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-i1f2uq"
-                >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
-                  </span>
                   <div
-                    class="css-lew009"
+                    class="css-gb5m6n"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
+                    EXCLUSIVE
                   </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
-                  </span>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
                 </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
                 >
                   <span
-                    class="css-17x5lw"
+                    class="css-65zrxz"
                   >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      Blow for rebel clubs as court says Uefa can block Super League
-                    </span>
+                    ‘American owners pose threat to English pyramid’
                   </span>
-                </a>
-              </div>
+                </span>
+              </a>
             </div>
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="divider"
-            />
           </div>
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              class="css-tj8oo8"
+            >
+              <hr
+                aria-hidden="true"
+                aria-label="article-divider-horizontal"
+                class="css-6ty7um"
+                data-testid="divider"
+              />
+            </div>
+            <div
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
+              class="css-17cghxi"
+            >
+              <div
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-6tvr2h"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-65zrxz"
+                  >
+                    £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              class="css-tj8oo8"
+            >
+              <hr
+                aria-hidden="true"
+                aria-label="article-divider-horizontal"
+                class="css-6ty7um"
+                data-testid="divider"
+              />
+            </div>
+            <div
+              class="css-1kwj960"
+            >
+              <picture
+                class="css-l4lngz"
+              >
+                <img
+                  alt="Blow for rebel clubs as court says Uefa can block Super League"
+                  class="css-ssxt4f"
+                  loading="lazy"
+                />
+              </picture>
+            </div>
+            <div
+              class="css-17cghxi"
+            >
+              <div
+                class="css-i1f2uq"
+              >
+                <span
+                  class="css-6tvr2h"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-65zrxz"
+                  >
+                    Blow for rebel clubs as court says Uefa can block Super League
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <hr
+            aria-hidden="true"
+            class="css-1b55m0t"
+            data-testid="divider"
+          />
         </div>
       </div>
     </div>
@@ -1080,24 +747,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
         <div
           class="css-1ms6dj6"
         >
-          <div
-            class="css-gre9re"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-iis9tp"
-              data-testid="divider"
-            />
-          </div>
-          <div
-            class="css-11l110t"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-obfal1"
-              data-testid="divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-glg6bd"
+            data-testid="divider"
+          />
         </div>
         <div
           class="css-1704wtt"
@@ -1162,7 +816,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-hwf98q"
+              class="css-189ndrp"
               data-testid="divider"
             />
           </div>
@@ -1396,7 +1050,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-y3i219"
+                  class="css-ppqz87"
                   data-testid="divider"
                 />
               </div>
@@ -1528,24 +1182,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
           <div
             class="css-1ms6dj6"
           >
-            <div
-              class="css-gre9re"
-            >
-              <hr
-                aria-hidden="true"
-                class="css-iis9tp"
-                data-testid="divider"
-              />
-            </div>
-            <div
-              class="css-11l110t"
-            >
-              <hr
-                aria-hidden="true"
-                class="css-obfal1"
-                data-testid="divider"
-              />
-            </div>
+            <hr
+              aria-hidden="true"
+              class="css-glg6bd"
+              data-testid="divider"
+            />
           </div>
           <div
             class="css-1704wtt"
@@ -1610,7 +1251,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-hwf98q"
+                class="css-189ndrp"
                 data-testid="divider"
               />
             </div>
@@ -1688,537 +1329,264 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
       <div
         class="css-1r4d587"
       >
-        <div
-          class="css-gre9re"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-iis9tp"
-            data-testid="divider"
-          />
-        </div>
-        <div
-          class="css-13fsx86"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-obfal1"
-            data-testid="divider"
-          />
-        </div>
+        <hr
+          aria-hidden="true"
+          class="css-glg6bd"
+          data-testid="divider"
+        />
       </div>
       <div
         class="css-11icnc2"
       >
         <div
-          class="css-gre9re"
+          class="css-104c46d"
+          data-testid="article-container"
+          style="position: relative;"
         >
           <div
-            class="css-104c46d"
-            data-testid="article-container"
-            style="position: relative;"
+            class="css-1nw1nne"
           >
             <div
-              class="css-1nw1nne"
+              class="css-17cghxi"
             >
               <div
-                class="css-17cghxi"
+                class="css-122i4mv"
               >
-                <div
-                  class="css-122i4mv"
+                <span
+                  class="css-6tvr2h"
                 >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      UPDATED
-                    </div>
-                  </span>
                   <div
-                    class="css-lew009"
+                    class="css-gb5m6n"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
+                    UPDATED
                   </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      PROFILE
-                    </div>
-                  </span>
-                </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      European cup winner Mihajlovic dies aged 53 after battle with leukaemia
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div
-              class="css-1nw1nne"
-            >
-              <div
-                class="css-tj8oo8"
-              >
-                <hr
-                  aria-hidden="true"
-                  aria-label="article-divider-horizontal"
-                  class="css-y3i219"
-                  data-testid="divider"
-                />
-              </div>
-              <div
-                class="css-17cghxi"
-              >
+                </span>
                 <div
-                  class="css-122i4mv"
+                  class="css-lew009"
                 >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
-                  </span>
-                  <div
-                    class="css-lew009"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
-                  </span>
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
                 </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
+                <span
+                  class="css-1basb1c"
                 >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      ‘American owners pose threat to English pyramid’
-                    </span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div
-              class="css-1nw1nne"
-            >
-              <div
-                class="css-tj8oo8"
-              >
-                <hr
-                  aria-hidden="true"
-                  aria-label="article-divider-horizontal"
-                  class="css-y3i219"
-                  data-testid="divider"
-                />
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-122i4mv"
-                >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      UPDATED
-                    </div>
-                  </span>
                   <div
-                    class="css-lew009"
+                    class="css-gb5m6n"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
+                    PROFILE
                   </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      Q&A
-                    </div>
-                  </span>
-                </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
-                    </span>
-                  </span>
-                </a>
+                </span>
               </div>
-            </div>
-            <div
-              class="css-1nw1nne"
-            >
-              <div
-                class="css-tj8oo8"
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
               >
-                <hr
-                  aria-hidden="true"
-                  aria-label="article-divider-horizontal"
-                  class="css-y3i219"
-                  data-testid="divider"
-                />
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-122i4mv"
+                <span
+                  class="css-17x5lw"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-65zrxz"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
+                    European cup winner Mihajlovic dies aged 53 after battle with leukaemia
                   </span>
-                  <div
-                    class="css-lew009"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
-                  </span>
-                </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      Blow for rebel clubs as court says Uefa can block Super League
-                    </span>
-                  </span>
-                </a>
-              </div>
+                </span>
+              </a>
             </div>
           </div>
-        </div>
-        <div
-          class="css-11l110t"
-        >
           <div
-            class="css-104c46d"
-            data-testid="article-container"
-            style="position: relative;"
+            class="css-1nw1nne"
           >
             <div
-              class="css-1nw1nne"
+              class="css-tj8oo8"
             >
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-122i4mv"
-                >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      UPDATED
-                    </div>
-                  </span>
-                  <div
-                    class="css-lew009"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      PROFILE
-                    </div>
-                  </span>
-                </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      European cup winner Mihajlovic dies aged 53 after battle with leukaemia
-                    </span>
-                  </span>
-                </a>
-              </div>
+              <hr
+                aria-hidden="true"
+                aria-label="article-divider-horizontal"
+                class="css-6ty7um"
+                data-testid="divider"
+              />
             </div>
             <div
-              class="css-1nw1nne"
+              class="css-17cghxi"
             >
               <div
-                class="css-tj8oo8"
+                class="css-122i4mv"
               >
-                <hr
-                  aria-hidden="true"
-                  aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
-                  data-testid="divider"
-                />
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-122i4mv"
+                <span
+                  class="css-6tvr2h"
                 >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
-                  </span>
                   <div
-                    class="css-lew009"
+                    class="css-gb5m6n"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
+                    EXCLUSIVE
                   </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
-                  </span>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
                 </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
                 >
                   <span
-                    class="css-17x5lw"
+                    class="css-65zrxz"
                   >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      ‘American owners pose threat to English pyramid’
-                    </span>
+                    ‘American owners pose threat to English pyramid’
                   </span>
-                </a>
-              </div>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              class="css-tj8oo8"
+            >
+              <hr
+                aria-hidden="true"
+                aria-label="article-divider-horizontal"
+                class="css-6ty7um"
+                data-testid="divider"
+              />
             </div>
             <div
-              class="css-1nw1nne"
+              class="css-17cghxi"
             >
               <div
-                class="css-tj8oo8"
+                class="css-122i4mv"
               >
-                <hr
-                  aria-hidden="true"
-                  aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
-                  data-testid="divider"
-                />
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-122i4mv"
+                <span
+                  class="css-6tvr2h"
                 >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      UPDATED
-                    </div>
-                  </span>
                   <div
-                    class="css-lew009"
+                    class="css-gb5m6n"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
+                    UPDATED
                   </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      Q&A
-                    </div>
-                  </span>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
                 </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
                 >
                   <span
-                    class="css-17x5lw"
+                    class="css-65zrxz"
                   >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
-                    </span>
+                    £60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid
                   </span>
-                </a>
-              </div>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div
+            class="css-1nw1nne"
+          >
+            <div
+              class="css-tj8oo8"
+            >
+              <hr
+                aria-hidden="true"
+                aria-label="article-divider-horizontal"
+                class="css-6ty7um"
+                data-testid="divider"
+              />
             </div>
             <div
-              class="css-1nw1nne"
+              class="css-17cghxi"
             >
               <div
-                class="css-tj8oo8"
+                class="css-122i4mv"
               >
-                <hr
-                  aria-hidden="true"
-                  aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
-                  data-testid="divider"
-                />
-              </div>
-              <div
-                class="css-17cghxi"
-              >
-                <div
-                  class="css-122i4mv"
+                <span
+                  class="css-6tvr2h"
                 >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
-                  </span>
                   <div
-                    class="css-lew009"
+                    class="css-gb5m6n"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
+                    EXCLUSIVE
                   </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
-                  </span>
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
                 </div>
-                <a
-                  class="css-17mo6gr"
-                  href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-                  role="link"
+                <span
+                  class="css-1basb1c"
+                >
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
+                </span>
+              </div>
+              <a
+                class="css-17mo6gr"
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+                role="link"
+              >
+                <span
+                  class="css-17x5lw"
                 >
                   <span
-                    class="css-17x5lw"
+                    class="css-65zrxz"
                   >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      Blow for rebel clubs as court says Uefa can block Super League
-                    </span>
+                    Blow for rebel clubs as court says Uefa can block Super League
                   </span>
-                </a>
-              </div>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -2233,24 +1601,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
         <div
           class="css-1ms6dj6"
         >
-          <div
-            class="css-gre9re"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-iis9tp"
-              data-testid="divider"
-            />
-          </div>
-          <div
-            class="css-11l110t"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-obfal1"
-              data-testid="divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-glg6bd"
+            data-testid="divider"
+          />
         </div>
         <div
           class="css-1704wtt"
@@ -2315,7 +1670,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-hwf98q"
+              class="css-189ndrp"
               data-testid="divider"
             />
           </div>

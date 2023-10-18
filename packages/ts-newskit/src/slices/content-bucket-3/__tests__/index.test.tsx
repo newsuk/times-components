@@ -3,7 +3,6 @@ import { useBreakpointKey } from 'newskit';
 import { render, screen } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { ContentBucket3 } from '..';
-import { renderComponent as renderComponentWithBreakPoint } from '../../../utils';
 import data from '../../fixtures/data.json';
 
 jest.mock('newskit', () => ({
@@ -39,8 +38,8 @@ describe('Render Content Bucket 3 Slice', () => {
 describe('Content Bucket 3 Articles list ', () => {
   test('articleBorder render after odd numbered items', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
-    renderComponentWithBreakPoint(<ContentBucket3 {...defaultProps} />, 'xl');
-    const articleContainer = screen.queryAllByTestId('article-container')[1];
+    renderComponent();
+    const articleContainer = screen.getByTestId('article-container');
 
     const articleItem4 = articleContainer.lastElementChild!
       .previousElementSibling;
@@ -52,8 +51,8 @@ describe('Content Bucket 3 Articles list ', () => {
 
   test("articleTopBorder renders correctly at 'xl' breakpoint", () => {
     (useBreakpointKey as any).mockReturnValue('xl');
-    renderComponentWithBreakPoint(<ContentBucket3 {...defaultProps} />, 'xl');
-    const articleContainer = screen.queryAllByTestId('article-container')[1];
+    renderComponent();
+    const articleContainer = screen.getByTestId('article-container');
 
     const articleItem1 = articleContainer.firstElementChild;
     const articleItem4 = articleContainer.lastElementChild!
@@ -65,8 +64,8 @@ describe('Content Bucket 3 Articles list ', () => {
 
   test("articleTopBorder renders correctly below 'lg' breakpoint", () => {
     (useBreakpointKey as any).mockReturnValue('md');
-    renderComponentWithBreakPoint(<ContentBucket3 {...defaultProps} />, 'md');
-    const articleContainer = screen.queryAllByTestId('article-container')[1];
+    renderComponent();
+    const articleContainer = screen.getByTestId('article-container');
 
     const articleItem1 = articleContainer.firstElementChild;
 
@@ -75,8 +74,8 @@ describe('Content Bucket 3 Articles list ', () => {
 
   test("articleTopBorder renders correctly at 'lg' breakpoint", () => {
     (useBreakpointKey as any).mockReturnValue('lg');
-    renderComponentWithBreakPoint(<ContentBucket3 {...defaultProps} />, 'lg');
-    const articleContainer = screen.queryAllByTestId('article-container')[1];
+    renderComponent();
+    const articleContainer = screen.getByTestId('article-container');
 
     const articleItem1 = articleContainer.firstElementChild;
     const articleItem4 = articleContainer.lastElementChild;

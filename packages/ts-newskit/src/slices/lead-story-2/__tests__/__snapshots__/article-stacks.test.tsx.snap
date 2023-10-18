@@ -125,7 +125,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
@@ -250,7 +250,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
@@ -387,7 +387,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
@@ -635,7 +635,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
@@ -760,7 +760,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
@@ -897,7 +897,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>

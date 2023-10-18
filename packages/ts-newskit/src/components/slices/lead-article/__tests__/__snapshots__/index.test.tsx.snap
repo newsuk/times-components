@@ -40,7 +40,7 @@ exports[`Render Component one should render a snapshot 1`] = `
     >
       <hr
         aria-hidden="true"
-        class="css-1haabs"
+        class="css-yrt0o7"
         data-testid="divider"
       />
       <div
