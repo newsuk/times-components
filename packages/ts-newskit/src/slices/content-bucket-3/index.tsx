@@ -11,11 +11,11 @@ import {
 } from '../shared-styles';
 
 import { CommentStack } from '../shared/comment-stack';
-import { ArticleStack } from '../content-bucket-3/article-stack';
 import { CustomStackLayout } from '../shared';
 import { FullWidthHidden } from '../../components/slices/shared-styles';
 import { ClickHandlerType } from '../types';
-import { defaultArticleOptions } from '../../utils/default-article-options';
+import { LeadArticles } from './styles';
+import { ArticleStack } from '../shared/article-stack-cb';
 
 export interface ContentBucket3Props {
   leadArticleLeft: LeadArticleProps;
@@ -32,29 +32,6 @@ export const ContentBucket3 = ({
   articles,
   clickHandler
 }: ContentBucket3Props) => {
-  const leadArticleRightOptions = {
-    xs: {
-      hasTopBorder: true
-    },
-    sm: {
-      hasTopBorder: true
-    },
-    md: {
-      hasTopBorder: false
-    },
-    lg: {
-      hasTopBorder: false
-    },
-    xl: {
-      hasTopBorder: false
-    }
-  };
-
-  const modifiedleadArticleRightOptions = {
-    ...defaultArticleOptions,
-    ...leadArticleRightOptions
-  };
-
   const modifiedleadArticleLeft = {
     ...leadArticleLeft,
     hasTopBorder: false,
@@ -69,6 +46,7 @@ export const ContentBucket3 = ({
   const modifiedleadArticleRight = {
     ...leadArticleRight,
     isLeadImage: true,
+    hasTopBorder: true,
     titleTypographyPreset: {
       xs: 'editorialHeadline020',
       lg: 'editorialHeadline030'
@@ -94,7 +72,7 @@ export const ContentBucket3 = ({
           position="right"
         />
         <StackItem>
-          <Block>
+          <LeadArticles>
             <GridLayout
               columns={{
                 xs: '1fr',
@@ -114,23 +92,11 @@ export const ContentBucket3 = ({
                 />
               </Hidden>
               <Article
-                article={{
-                  ...leadArticleRight,
-                  hasTopBorder: isMobile,
-                  topBorderStyle: 'lightDashedDivider',
-                  tagAndFlagMarginBlockStart: {
-                    xs: 'space030',
-                    md: 'space040'
-                  },
-                  isLeadImage: true,
-                  titleTypographyPreset: isLarge
-                    ? 'editorialHeadline030'
-                    : 'editorialHeadline020'
-                }}
+                article={modifiedleadArticleRight}
                 clickHandler={clickHandler}
               />
             </GridLayout>
-          </Block>
+          </LeadArticles>
         </StackItem>
         <Block>
           <Hidden xs sm md>
@@ -160,12 +126,11 @@ export const ContentBucket3 = ({
               ...article,
               topBorderStyle: { xs: 'lightDashedDivider', md: 'dashedDivider' }
             }))}
-            breakpoint={currentBreakpoint}
             clickHandler={clickHandler}
           />
         </BlockItem>
       </StackItem>
-      <Visible md xs sm>
+      <Visible xs sm md>
         <BlockItem
           $width={{
             xs: '100%',

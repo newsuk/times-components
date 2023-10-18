@@ -4,7 +4,7 @@ import { Article, ArticleProps } from '../../components/slices/article';
 import { ScrollContainer, ArticleDividerXL } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType } from '../types';
-import { ArticleGrid } from './styles';
+import { ArticleGrid } from '../shared-styles/article-stack';
 
 export const ArticleStack = ({
   articles,

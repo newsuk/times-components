@@ -132,12 +132,12 @@ export const Article = ({
       areas={
         imageRight
           ? `
-          border  border
-          content media`
+        border  border
+        content media`
           : `border
          media
          content
-        `
+      `
       }
       columns={{ xl: imageRight ? '1fr 1fr' : '1fr' }}
       columnGap="space040"

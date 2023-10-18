@@ -33,24 +33,21 @@ describe('Render Content Bucket 3 Slice', () => {
 });
 
 describe('Content Bucket 3 Articles list ', () => {
-  test('articleBorder render after odd numbered items', () => {
+  test("<ArticleDividerXL> renders in article-container at 'xl' breakpoint", () => {
     renderComponent(<ContentBucket3 {...defaultProps} />, 'xl');
-    const articleContainer = screen.getByTestId('article-container');
+    const articleContainer = screen.getByTestId('article-container-desktop');
+    const articleBorder = articleContainer.querySelector(
+      '[data-testid="article-stack-large-divider"]'
+    );
 
-    const articleItem4 = articleContainer.lastElementChild!
-      .previousElementSibling;
-    const articleHR = articleContainer.lastElementChild;
-
-    expect(articleHR).toHaveAttribute('data-testid', 'divider');
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
+    expect(articleBorder).toBeInTheDocument();
   });
 
   test("articleTopBorder renders correctly at 'xl' breakpoint", () => {
     renderComponent(<ContentBucket3 {...defaultProps} />, 'xl');
-    const articleContainer = screen.getByTestId('article-container');
-
+    const articleContainer = screen.getByTestId('article-container-desktop');
     const articleItem1 = articleContainer.firstElementChild;
-    const articleItem4 = articleContainer.lastElementChild!
+    const articleItem4 = articleContainer!.lastElementChild!
       .previousElementSibling;
 
     expect(articleItem1!.getElementsByTagName('hr').length).toBe(1);
@@ -58,20 +55,23 @@ describe('Content Bucket 3 Articles list ', () => {
   });
 
   test("articleTopBorder renders correctly below 'lg' breakpoint", () => {
-    renderComponent(<ContentBucket3 {...defaultProps} />, 'md');
-    const articleContainer = screen.getByTestId('article-container');
-
+    renderComponent(<ContentBucket3 {...defaultProps} />, 'lg');
+    const articleContainer = screen.getByTestId('article-container-desktop');
     const articleItem1 = articleContainer.firstElementChild;
+    const articleBorder = articleContainer.querySelector(
+      '[data-testid="article-stack-large-divider"]'
+    );
 
+    expect(articleBorder).not.toBeVisible();
     expect(articleItem1!.nextSibling).toHaveAttribute('data-testid', 'divider');
   });
 
   test("articleTopBorder renders correctly at 'lg' breakpoint", () => {
     renderComponent(<ContentBucket3 {...defaultProps} />, 'lg');
-    const articleContainer = screen.getByTestId('article-container');
-
-    const articleItem1 = articleContainer.firstElementChild;
-    const articleItem4 = articleContainer.lastElementChild;
+    const articleContainer = screen.getByTestId('article-container-desktop');
+    const articleItem1 = articleContainer!.firstElementChild;
+    const articleItem4 = articleContainer!.lastElementChild!
+      .previousElementSibling;
 
     expect(articleItem1!.getElementsByTagName('hr').length).toBe(1);
     expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
