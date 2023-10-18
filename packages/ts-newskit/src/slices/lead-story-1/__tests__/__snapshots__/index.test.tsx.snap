@@ -32,7 +32,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <img
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -209,7 +209,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   <img
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -1095,7 +1095,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
                       class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                     />
                   </picture>
                 </div>
@@ -19195,7 +19195,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                   <img
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -19372,7 +19372,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                   <img
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -20258,7 +20258,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
                       class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                     />
                   </picture>
                 </div>
@@ -38358,7 +38358,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <img
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -38535,7 +38535,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <img
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -39421,7 +39421,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
                       class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                     />
                   </picture>
                 </div>
@@ -57521,7 +57521,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <img
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -57698,7 +57698,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <img
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -58584,7 +58584,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
                       class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                     />
                   </picture>
                 </div>
@@ -76684,7 +76684,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <img
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -76861,7 +76861,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   <img
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -77747,7 +77747,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <img
                       alt="Sarcacens an inclusive club? They didnt look out for me"
                       class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                     />
                   </picture>
                 </div>

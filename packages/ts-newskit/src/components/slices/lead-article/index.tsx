@@ -104,7 +104,7 @@ export const LeadArticle = ({
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '' && {
       media: {
-        src: imageWithCorrectRatio.url,
+        src: `${imageWithCorrectRatio.url}&resize=750`,
         alt: (images && images.alt) || headline,
         loadingAspectRatio: imageWithCorrectRatio.ratio
       }
