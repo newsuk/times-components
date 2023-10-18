@@ -1,4 +1,4 @@
-import { Divider, GridLayout, Hidden, Visible } from 'newskit';
+import { Divider, GridLayout } from 'newskit';
 import React from 'react';
 import {
   CommentCard,
@@ -37,25 +37,13 @@ export const CommentStack = ({ comments, clickHandler }: CommentStackProps) => {
       >
         {comments.map((comment, commentIndex, commentArr) => {
           const hasBorder = commentIndex < commentArr.length - 1 && (
-            <>
-              <Visible xs sm>
-                <AvatarDivider
-                  overrides={{
-                    marginBlock: 'space040',
-                    stylePreset: 'lightDashedDivider'
-                  }}
-                />
-              </Visible>
-              <Hidden xs sm>
-                <AvatarDivider
-                  overrides={{
-                    marginBlock: 'space000',
-                    stylePreset: 'lightDivider'
-                  }}
-                  vertical
-                />
-              </Hidden>
-            </>
+            <AvatarDivider
+              overrides={{
+                marginBlock: { xs: 'space040', md: 'space000' },
+                stylePreset: { xs: 'lightDashedDivider', md: 'lightDivider' }
+              }}
+              vertical={{ xs: false, md: true }}
+            />
           );
 
           return (
