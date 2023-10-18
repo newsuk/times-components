@@ -94,9 +94,10 @@ export const Article = ({
   const cardImage = !hideImage &&
     imageWithCorrectRatio && {
       media: {
-        src: imageWithCorrectRatio.url,
+        src: `${imageWithCorrectRatio.url}&resize=750`,
         alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2'
+        loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2',
+        loading: 'lazy'
       }
     };
 
@@ -114,6 +115,16 @@ export const Article = ({
     const articleForTracking = { headline, id, url };
     articleClickTracking(event, articleForTracking, clickHandler);
   };
+
+  const articleDivider = (
+    <Divider
+      overrides={{
+        marginBlockEnd: 'space040',
+        stylePreset: topBorderStyle
+      }}
+      aria-label="article-divider-horizontal"
+    />
+  );
 
   return (
     <CardComposable
@@ -135,33 +146,25 @@ export const Article = ({
         <GridLayoutItem area="border">
           {isFullWidth ? (
             <FullWidthBlock
-              paddingInline={{
+              paddingInlineStart={{
                 xs: 'space045',
                 md: 'space000'
               }}
             >
-              <Divider
-                overrides={{
-                  marginBlockEnd: 'space040',
-                  stylePreset: topBorderStyle
-                }}
-              />
+              {articleDivider}
             </FullWidthBlock>
           ) : (
-            <Divider
-              overrides={{
-                marginBlockEnd: 'space040',
-                stylePreset: topBorderStyle
-              }}
-            />
+            articleDivider
           )}
         </GridLayoutItem>
       )}
       {showImage ? (
         isLeadImage ? (
+          /* @ts-ignore */
           <FullWidthCardMediaMob {...cardImage} />
         ) : (
-          <CardMedia {...{ ...cardImage, loading: 'lazy' }} />
+          /* @ts-ignore */
+          <CardMedia {...cardImage} />
         )
       ) : null}
       <CardContent alignContent="start">

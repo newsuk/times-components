@@ -65,13 +65,11 @@ export const ContentBucket3 = ({
           lg: 'space060'
         }}
       >
-        <Visible lg xl>
-          <LeadStoryDivider
-            overrides={{ stylePreset: 'lightDivider' }}
-            vertical
-            position="right"
-          />
-        </Visible>
+        <LeadStoryDivider
+          overrides={{ stylePreset: 'lightDivider' }}
+          vertical
+          position="right"
+        />
         <StackItem>
           <Block>
             <GridLayout

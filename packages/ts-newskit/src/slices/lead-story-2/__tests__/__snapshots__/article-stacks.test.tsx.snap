@@ -22,7 +22,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-1ms6dj6"
             />
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
@@ -130,7 +130,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               />
             </div>
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
@@ -256,13 +256,13 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
               class="css-j6pksw"
             >
               <div
-                class="lcpItem css-1rkt0l2"
+                class="lcpItem css-4t8ylq"
               >
                 <picture
                   class="css-zp0elg"
@@ -273,7 +273,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   <img
                     alt="Short title of the card describing the main content 7"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -393,13 +393,13 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
               class="css-j6pksw"
             >
               <div
-                class="lcpItem css-1rkt0l2"
+                class="lcpItem css-4t8ylq"
               >
                 <picture
                   class="css-zp0elg"
@@ -410,7 +410,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   <img
                     alt="Short title of the card describing the main content 8"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -532,7 +532,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-1ms6dj6"
             />
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
@@ -640,7 +640,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               />
             </div>
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
@@ -766,13 +766,13 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
               class="css-j6pksw"
             >
               <div
-                class="lcpItem css-1rkt0l2"
+                class="lcpItem css-4t8ylq"
               >
                 <picture
                   class="css-zp0elg"
@@ -783,7 +783,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   <img
                     alt="Short title of the card describing the main content 7"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>
@@ -903,13 +903,13 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
               class="css-j6pksw"
             >
               <div
-                class="lcpItem css-1rkt0l2"
+                class="lcpItem css-4t8ylq"
               >
                 <picture
                   class="css-zp0elg"
@@ -920,7 +920,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   <img
                     alt="Short title of the card describing the main content 8"
                     class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                   />
                 </picture>
               </div>

@@ -12,7 +12,6 @@ export default {
   user: {
     isLoggedIn: false,
     isMetered: false,
-    isMeteredExpired: false,
     isShared: false,
     registrationType: ""
   }

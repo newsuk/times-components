@@ -82,13 +82,11 @@ export const LeadStory2 = ({
         }}
       >
         <Block>
-          <Visible lg xl>
-            <LeadStoryDivider
-              overrides={{ stylePreset: 'lightDivider' }}
-              vertical
-              position="right"
-            />
-          </Visible>
+          <LeadStoryDivider
+            overrides={{ stylePreset: 'lightDivider' }}
+            vertical
+            position="right"
+          />
           {Object.entries(modifiedLeadArticleOptions).map(
             ([breakpoint, opts]) => (
               <Visible {...{ [breakpoint]: true }}>

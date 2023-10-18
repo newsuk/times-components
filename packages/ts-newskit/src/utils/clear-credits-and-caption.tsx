@@ -34,7 +34,7 @@ export type ArticleProps = {
   imageTop?: boolean;
   hasTopBorder?: boolean;
   contentTop?: boolean;
-  contentWidth?: string;
+  contentWidth?: MQ<string> | string;
   headlineTypographyPreset?: string | MQ<string>;
   loadingAspectRatio?: string;
   imageMarginBlockStart?: string;

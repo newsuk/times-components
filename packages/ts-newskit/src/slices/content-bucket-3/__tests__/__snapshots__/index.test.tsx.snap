@@ -8,15 +8,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
     <div
       class="css-1klr24i"
     >
-      <div
-        class="css-15edd2j"
-      >
-        <hr
-          aria-hidden="true"
-          class="css-uh7mej"
-          data-testid="divider"
-        />
-      </div>
+      <hr
+        aria-hidden="true"
+        class="css-r9cz30"
+        data-testid="divider"
+      />
       <div
         class="css-13tedu1"
       >
@@ -30,18 +26,15 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               class="css-1nw1nne"
             >
               <div
-                class="css-1sg6411"
+                class="css-75ozqf"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Sarcacens an inclusive club? They didnt look out for me"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -161,18 +154,15 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               class="css-1nw1nne"
             >
               <div
-                class="css-1sg6411"
+                class="css-75ozqf"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Sarcacens an inclusive club? They didnt look out for me"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -486,18 +476,14 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             >
               <div
                 class="css-1kwj960"
-                loading="lazy"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -557,18 +543,14 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             >
               <div
                 class="css-1kwj960"
-                loading="lazy"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="‘American owners pose threat to English pyramid’"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -631,24 +613,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-y3i219"
                   data-testid="divider"
                 />
               </div>
               <div
                 class="css-1kwj960"
-                loading="lazy"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -711,24 +690,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-y3i219"
                   data-testid="divider"
                 />
               </div>
               <div
                 class="css-1kwj960"
-                loading="lazy"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Blow for rebel clubs as court says Uefa can block Super League"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -785,7 +761,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             </div>
             <hr
               aria-hidden="true"
-              class="css-po9buu"
+              class="css-1b55m0t"
               data-testid="divider"
             />
           </div>
@@ -803,18 +779,14 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             >
               <div
                 class="css-1kwj960"
-                loading="lazy"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -874,18 +846,14 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             >
               <div
                 class="css-1kwj960"
-                loading="lazy"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="‘American owners pose threat to English pyramid’"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -948,24 +916,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-1i1gqyx"
                   data-testid="divider"
                 />
               </div>
               <div
                 class="css-1kwj960"
-                loading="lazy"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -1028,24 +993,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-1i1gqyx"
                   data-testid="divider"
                 />
               </div>
               <div
                 class="css-1kwj960"
-                loading="lazy"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Blow for rebel clubs as court says Uefa can block Super League"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -1102,7 +1064,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             </div>
             <hr
               aria-hidden="true"
-              class="css-po9buu"
+              class="css-1b55m0t"
               data-testid="divider"
             />
           </div>
@@ -1283,15 +1245,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
     <div
       class="css-1klr24i"
     >
-      <div
-        class="css-15edd2j"
-      >
-        <hr
-          aria-hidden="true"
-          class="css-uh7mej"
-          data-testid="divider"
-        />
-      </div>
+      <hr
+        aria-hidden="true"
+        class="css-r9cz30"
+        data-testid="divider"
+      />
       <div
         class="css-13tedu1"
       >
@@ -1305,18 +1263,15 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               class="css-1nw1nne"
             >
               <div
-                class="css-1sg6411"
+                class="css-75ozqf"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Sarcacens an inclusive club? They didnt look out for me"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -1440,23 +1395,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-y3i219"
                   data-testid="divider"
                 />
               </div>
               <div
-                class="css-1sg6411"
+                class="css-75ozqf"
               >
                 <picture
-                  class="css-zp0elg"
+                  class="css-l4lngz"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
                   <img
                     alt="Sarcacens an inclusive club? They didnt look out for me"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
+                    class="css-ssxt4f"
+                    loading="lazy"
                   />
                 </picture>
               </div>
@@ -1827,6 +1780,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-y3i219"
                   data-testid="divider"
                 />
@@ -1890,6 +1844,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-y3i219"
                   data-testid="divider"
                 />
@@ -1953,6 +1908,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-y3i219"
                   data-testid="divider"
                 />
@@ -2080,6 +2036,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-1i1gqyx"
                   data-testid="divider"
                 />
@@ -2143,6 +2100,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-1i1gqyx"
                   data-testid="divider"
                 />
@@ -2206,6 +2164,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <hr
                   aria-hidden="true"
+                  aria-label="article-divider-horizontal"
                   class="css-1i1gqyx"
                   data-testid="divider"
                 />

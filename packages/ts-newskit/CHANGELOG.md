@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.117.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.116.1...@times-components/ts-newskit@1.117.0) (2023-10-18)
+
+
+### Features
+
+* **TMRX-1585:** Resize images on new slices ([#3599](https://github.com/newsuk/times-components/issues/3599)) ([2c728bb](https://github.com/newsuk/times-components/commit/2c728bb32a5e3f76727a41846e19f16e28b10428))
+
+
+
+
+
+## [1.116.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.116.0...@times-components/ts-newskit@1.116.1) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+# [1.116.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.115.0...@times-components/ts-newskit@1.116.0) (2023-10-17)
+
+
+### Features
+
+* **TMRX-1555:** refactor content bucket 1 ([#3587](https://github.com/newsuk/times-components/issues/3587)) ([527a466](https://github.com/newsuk/times-components/commit/527a466a26425d7c42fd0680853b0c6d35e4adff))
+
+
+
+
+
+# [1.115.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.114.1...@times-components/ts-newskit@1.115.0) (2023-10-17)
+
+
+### Bug Fixes
+
+* **TMRX-000:** Remove quotes around styles ([#3596](https://github.com/newsuk/times-components/issues/3596)) ([eb7a965](https://github.com/newsuk/times-components/commit/eb7a96528db26e87857d7cb026a3f371caf68874))
+
+
+### Features
+
+* **TMPZ-154:** Offers Banner ([#3592](https://github.com/newsuk/times-components/issues/3592)) ([4ce1944](https://github.com/newsuk/times-components/commit/4ce1944c9d515f27603d6eda636dfc745eb29394))
+
+
+
+
+
+## [1.114.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.114.0...@times-components/ts-newskit@1.114.1) (2023-10-16)
+
+
+### Bug Fixes
+
+* **TMRX-1580:** Add lazy loading to images that aren't lead images ([#3595](https://github.com/newsuk/times-components/issues/3595)) ([683a2bc](https://github.com/newsuk/times-components/commit/683a2bc8bf06b85d5d867428b2647c6aee46a396))
+
+
+
+
+
 # [1.114.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.113.0...@times-components/ts-newskit@1.114.0) (2023-10-16)
 
 

@@ -28,7 +28,6 @@ it("analytics when rendering a shared Article page with metered access", () => {
     isLoggedIn: true,
     isMetered: true,
     isShared: true,
-    isMeteredExpired: false,
     registrationType: "metered access:article limit not reached"
   };
 

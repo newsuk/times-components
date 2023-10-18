@@ -1,16 +1,14 @@
 /* eslint-env browser */
 
 import { select, boolean } from "@storybook/addon-knobs";
-import { SUBSCRIBER, RA, RA_EXPIRED, GUEST } from "./states";
+import { SUBSCRIBER, GUEST } from "./states";
 
 const activeStatesPerUserState = {
   [SUBSCRIBER]: ["isLoggedIn"],
-  [RA]: ["isLoggedIn", "isMetered"],
-  [RA_EXPIRED]: ["isLoggedIn", "isMetered", "isMeteredExpired"],
   [GUEST]: []
 };
 
-const userStatesOptions = [SUBSCRIBER, RA, RA_EXPIRED, GUEST];
+const userStatesOptions = [SUBSCRIBER, GUEST];
 
 function addUserStateKnobs(defaultState = SUBSCRIBER) {
   window.nuk = window.nuk || {};
@@ -39,7 +37,6 @@ function addUserStateKnobs(defaultState = SUBSCRIBER) {
       return {
         isLoggedIn: false,
         isMetered: false,
-        isMeteredExpired: false,
         isShared,
         ...activeStates
       };
