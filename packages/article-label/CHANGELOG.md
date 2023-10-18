@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.16.0](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.15.2...@times-components/article-label@2.16.0) (2023-10-18)
+
+
+### Features
+
+* **TMRX-1585:** Resize images on new slices ([#3599](https://github.com/newsuk/times-components/issues/3599)) ([2c728bb](https://github.com/newsuk/times-components/commit/2c728bb32a5e3f76727a41846e19f16e28b10428))
+
+
+
+
+
 ## [2.15.2](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.15.1...@times-components/article-label@2.15.2) (2023-10-17)
 
 **Note:** Version bump only for package @times-components/article-label
