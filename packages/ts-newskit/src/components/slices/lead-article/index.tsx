@@ -43,6 +43,7 @@ export interface LeadArticleProps {
   flag?: string;
   shortSummary?: string;
   contentType?: string;
+  hasVideo: boolean;
   label?: string;
   expirableFlags?: expirableFlagsProps[];
   images?: ImageProps;
@@ -77,6 +78,7 @@ export const LeadArticle = ({
     flag,
     shortSummary,
     contentType,
+    hasVideo,
     images,
     url,
     tag,
@@ -192,6 +194,7 @@ export const LeadArticle = ({
           />
         )}
         <ArticleTileInfo
+          hasVideo={hasVideo}
           contentType={contentType}
           expirableFlags={expirableFlags}
           label={label}

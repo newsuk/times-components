@@ -42,6 +42,7 @@ export interface ArticleProps {
     href: string;
   };
   contentType?: string;
+  hasVideo: boolean;
   label?: string;
   expirableFlags?: expirableFlagsProps[];
   flag?: string;
@@ -77,7 +78,8 @@ export const Article = ({
     tagAndFlagMarginBlockStart = 'space040',
     expirableFlags,
     label,
-    contentType
+    contentType,
+    hasVideo
   } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
@@ -172,6 +174,7 @@ export const Article = ({
           )}
 
         <ArticleTileInfo
+          hasVideo={hasVideo}
           contentType={contentType}
           expirableFlags={expirableFlags}
           label={label}

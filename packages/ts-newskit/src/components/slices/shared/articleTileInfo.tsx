@@ -13,6 +13,7 @@ export type expirableFlagsProps = {
 
 export interface ArticleTileInfoProps {
   expirableFlags?: expirableFlagsProps[];
+  hasVideo: boolean;
   contentType?: string;
   label?: string;
   marginBlockEnd?: string;
@@ -33,6 +34,7 @@ const CustomDivider = () => (
 export const ArticleTileInfo = ({
   expirableFlags,
   contentType,
+  hasVideo,
   label,
   marginBlockStart = 'space000',
   marginBlockEnd = 'space000'
@@ -80,8 +82,13 @@ export const ArticleTileInfo = ({
       {contentType && (
         <CustomTextBlock
           text={capitalizedText(contentType)}
-          icon={hasVideoIcon && <NewsKitVideoButtonIcon />}
         />
+      )}
+      {hasVideo && (
+        <CustomTextBlock
+        text="VIDEO"
+        icon={<NewsKitVideoButtonIcon />}
+      />
       )}
       {label &&
         (contentType ||
