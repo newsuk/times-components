@@ -129,44 +129,22 @@ export const ContentBucket3 = ({
         }}
       >
         <FullWidthHidden lg xl>
-          <Visible xs sm>
-            <Divider
-              overrides={{
-                marginBlock: 'space040',
-                stylePreset: 'lightDashedDivider'
-              }}
-            />
-          </Visible>
-          <Visible md>
-            <Divider
-              overrides={{
-                marginBlock: 'space040',
-                stylePreset: 'dashedDivider'
-              }}
-            />
-          </Visible>
+          <Divider
+            overrides={{
+              marginBlock: 'space040',
+              stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' }
+            }}
+          />
         </FullWidthHidden>
         <BlockItem>
-          <Visible xs sm>
-            <ArticleStack
-              articles={articles.map(article => ({
-                ...article,
-                topBorderStyle: 'lightDashedDivider'
-              }))}
-              breakpoint={currentBreakpoint}
-              clickHandler={clickHandler}
-            />
-          </Visible>
-          <Visible md lg xl>
-            <ArticleStack
-              articles={articles.map(article => ({
-                ...article,
-                topBorderStyle: 'dashedDivider'
-              }))}
-              breakpoint={currentBreakpoint}
-              clickHandler={clickHandler}
-            />
-          </Visible>
+          <ArticleStack
+            articles={articles.map(article => ({
+              ...article,
+              topBorderStyle: { xs: 'lightDashedDivider', md: 'dashedDivider' }
+            }))}
+            breakpoint={currentBreakpoint}
+            clickHandler={clickHandler}
+          />
         </BlockItem>
       </StackItem>
       <Visible md xs sm>

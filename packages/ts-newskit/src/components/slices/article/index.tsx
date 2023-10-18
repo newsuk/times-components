@@ -146,7 +146,7 @@ export const Article = ({
         <GridLayoutItem area="border">
           {isFullWidth ? (
             <FullWidthBlock
-              paddingInlineStart={{
+              paddingInline={{
                 xs: 'space045',
                 md: 'space000'
               }}

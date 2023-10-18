@@ -96,22 +96,12 @@ export const ContentBucket1 = ({
             md: 'space000'
           }}
         >
-          <Visible xs sm>
-            <Divider
-              overrides={{
-                marginBlock: 'space040',
-                stylePreset: 'lightDashedDivider'
-              }}
-            />
-          </Visible>
-          <Visible md>
-            <Divider
-              overrides={{
-                marginBlock: 'space040',
-                stylePreset: 'dashedDivider'
-              }}
-            />
-          </Visible>
+          <Divider
+            overrides={{
+              marginBlock: 'space040',
+              stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' }
+            }}
+          />
         </FullWidthBlock>
       </FullWidthHidden>
       <BlockItem>
