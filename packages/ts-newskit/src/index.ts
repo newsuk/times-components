@@ -43,6 +43,8 @@ export { HowToPlay } from './components/puzzles/daily-quiz/how-to-play';
 export { FinalScreen } from './components/puzzles/daily-quiz/final-screen';
 export { CardsContainer } from './components/puzzles/cards-container';
 export { ContactUs } from './components/puzzles/contact-us';
+export { Faq } from './components/puzzles/faq';
+export { OffersBanner } from './components/puzzles/offers-banner';
 export { FreeTrial } from './components/puzzles/free-trial';
 export { PersonalStats } from './components/puzzles/personal-stats';
 export { PuzzleCard } from './components/puzzles/puzzle-card';
