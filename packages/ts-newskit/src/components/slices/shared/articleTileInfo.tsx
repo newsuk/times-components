@@ -57,6 +57,7 @@ export const ArticleTileInfo = ({
 
   return (
     <StyledBlock
+      aria-label="article-tile-info"
       marginBlockStart={marginBlockStart}
       marginBlockEnd={marginBlockEnd}
       hasVideoIcon={hasVideoIcon}
