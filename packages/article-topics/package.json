@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-topics",
-  "version": "4.11.13",
+  "version": "4.11.14",
   "description": "Map of Topics related to the Article ",
   "main": "dist/article-topics",
   "dev": "src/article-topics",
@@ -53,11 +53,11 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/context": "1.10.35",
-    "@times-components/link": "3.14.2",
+    "@times-components/context": "1.10.36",
+    "@times-components/link": "3.15.0",
     "@times-components/tracking": "2.21.2",
-    "@times-components/ts-styleguide": "1.47.1",
-    "@times-components/utils": "6.16.19",
+    "@times-components/ts-styleguide": "1.48.0",
+    "@times-components/utils": "6.16.20",
     "prop-types": "15.7.2"
   },
   "resolutions": {
