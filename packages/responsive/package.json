@@ -33,7 +33,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@times-components/ts-styleguide": "1.47.1",
-    "@times-components/utils": "6.16.18",
+    "@times-components/utils": "6.16.19",
     "prop-types": "15.7.2"
   },
   "devDependencies": {
