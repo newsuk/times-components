@@ -1,9 +1,9 @@
-import { Divider, GridLayout, useBreakpointKey, BreakpointKeys } from 'newskit';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Divider, GridLayout, Hidden, Visible } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { WrappedStackLayout } from '../shared';
-import { BlockItem, StackItem, StyledDivider } from '../shared-styles';
+import { BlockItem, StackItem } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType } from '../types';
 
@@ -15,16 +15,14 @@ export interface StackModule1Props {
 type ArticleStackProps = {
   articles: ArticleProps[];
   marginBlockStart?: string;
-  isDesktop?: boolean;
-  isMob?: boolean;
+  hideImageOnDesktop?: boolean;
   clickHandler: ClickHandlerType;
 };
 
 const articleStack = ({
   articles,
   marginBlockStart,
-  isDesktop,
-  isMob,
+  hideImageOnDesktop,
   clickHandler
 }: ArticleStackProps) => (
   <WrappedStackLayout marginBlockEnd="space000">
@@ -50,32 +48,40 @@ const articleStack = ({
       >
         {articles.map((article: ArticleProps, articleIndex, articleArr) => {
           const articleBorder = articleIndex < articleArr.length - 1 &&
-            !isMob &&
             articleIndex !== 3 && (
-              <StyledDivider
-                overrides={{ stylePreset: 'lightDivider' }}
-                vertical
-              />
+              <Hidden xs sm>
+                <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
+              </Hidden>
             );
-
-          const hasImage = isMob && articleIndex > 0;
 
           return (
             <React.Fragment key={article.headline}>
-              <Article
-                article={{
-                  ...clearCreditsAndCaption(article),
-                  hideImage: hasImage || (hasImage || isDesktop),
-                  isLeadImage: isMob && articleIndex === 0,
-                  hasTopBorder: hasImage,
-                  isFullWidth: true,
-                  tagAndFlagMarginBlockStart: 'space030',
-                  titleTypographyPreset: isMob
-                    ? 'editorialHeadline030'
-                    : 'editorialHeadline020'
-                }}
-                clickHandler={clickHandler}
-              />
+              <Visible xs sm>
+                <Article
+                  article={{
+                    ...clearCreditsAndCaption(article),
+                    hideImage: articleIndex > 0,
+                    isLeadImage: articleIndex === 0,
+                    hasTopBorder: articleIndex > 0,
+                    isFullWidth: true,
+                    tagAndFlagMarginBlockStart: 'space030',
+                    titleTypographyPreset: 'editorialHeadline030'
+                  }}
+                  clickHandler={clickHandler}
+                />
+              </Visible>
+              <Visible md lg xl>
+                <Article
+                  article={{
+                    ...clearCreditsAndCaption(article),
+                    hideImage: hideImageOnDesktop,
+                    isFullWidth: true,
+                    tagAndFlagMarginBlockStart: 'space030',
+                    titleTypographyPreset: 'editorialHeadline020'
+                  }}
+                  clickHandler={clickHandler}
+                />
+              </Visible>
               {articleBorder}
             </React.Fragment>
           );
@@ -86,22 +92,6 @@ const articleStack = ({
 );
 
 export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys | null>(
-    null
-  );
-  const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
-    },
-    [breakpointKey]
-  );
-
-  if (!currentBreakpoint) {
-    return null;
-  }
-
-  const isMob = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
   const articlesTop = articles.slice(0, 4);
   const articlesBottom = articles.slice(4);
 
@@ -115,12 +105,11 @@ export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
       }}
       marginBlockEnd="space060"
     >
-      {articleStack({ articles: articlesTop, isMob, clickHandler })}
+      {articleStack({ articles: articlesTop, clickHandler })}
       {articleStack({
         articles: articlesBottom,
         marginBlockStart: 'space040',
-        isDesktop: !isMob,
-        isMob,
+        hideImageOnDesktop: true,
         clickHandler
       })}
     </BlockItem>
