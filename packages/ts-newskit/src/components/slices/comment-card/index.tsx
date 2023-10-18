@@ -60,7 +60,7 @@ export const CommentCard = ({
       {imageWithCorrectRatio && (
         <CardMedia
           media={{
-            src: `${imageWithCorrectRatio.url}&resize=360`,
+            src: imageWithCorrectRatio.url,
             alt: (images && images.alt) || byline,
             loadingAspectRatio: imageWithCorrectRatio.ratio,
             width: '77px',
