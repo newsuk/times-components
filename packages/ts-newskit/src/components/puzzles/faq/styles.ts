@@ -10,7 +10,7 @@ import {
 
 export const Container = styled(Block)`
   max-width: 620px;
-  height: 457px;
+  height: auto;
 `;
 export const Title = styled(TextBlock)`
   text-align: center;
