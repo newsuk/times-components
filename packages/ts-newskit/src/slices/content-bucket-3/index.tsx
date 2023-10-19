@@ -122,7 +122,10 @@ export const ContentBucket3 = ({
         </FullWidthHidden>
         <BlockItem>
           <ArticleStack
-            articles={articles}
+            articles={articles.map(article => ({
+              ...article,
+              topBorderStyle: { xs: 'lightDashedDivider', md: 'dashedDivider' }
+            }))}
             clickHandler={clickHandler}
             isContentBucket3
           />
