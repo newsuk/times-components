@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.117.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.117.0...@times-components/ts-newskit@1.117.1) (2023-10-19)
+
+
+### Bug Fixes
+
+* **TMPZ-192:** Toggle dynamic height on FAQ component ([#3603](https://github.com/newsuk/times-components/issues/3603)) ([095d074](https://github.com/newsuk/times-components/commit/095d0747dc5dac8bb183ad5b00595898c7f435a2))
+
+
+
+
+
 # [1.117.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.116.1...@times-components/ts-newskit@1.117.0) (2023-10-18)
 
 
