@@ -8,11 +8,38 @@ import { ArticleGrid } from '../shared-styles/article-stack';
 
 export const ArticleStack = ({
   articles,
-  clickHandler
+  clickHandler,
+  isContentBucket3
 }: {
   articles: ArticleProps[];
   clickHandler: ClickHandlerType;
+  isContentBucket3: boolean;
 }) => {
+  const articleLoop = (hideImage?: boolean) =>
+    articles.map((article: ArticleProps, articleIndex, articleArr) => {
+      const articleBorder = articleIndex < articleArr.length - 1 && (
+        <Divider
+          aria-label="article-divider-vertical"
+          overrides={{ stylePreset: 'lightDivider' }}
+          vertical
+        />
+      );
+
+      return (
+        <React.Fragment key={article.id}>
+          <Article
+            article={{
+              ...clearCreditsAndCaption(article),
+              hasTopBorder: articleIndex > 0,
+              hideImage: hideImage
+            }}
+            clickHandler={clickHandler}
+          />
+          {articleBorder}
+        </React.Fragment>
+      );
+    });
+
   const articleGrid = (viewport: 'mobile' | 'desktop') => (
     <ArticleGrid
       columns={{
@@ -26,28 +53,7 @@ export const ArticleStack = ({
       rowGap="space040"
       data-testid={`article-container-${viewport}`}
     >
-      {articles.map((article: ArticleProps, articleIndex, articleArr) => {
-        const articleBorder = articleIndex < articleArr.length - 1 && (
-          <Divider
-            aria-label="article-divider-vertical"
-            overrides={{ stylePreset: 'lightDivider' }}
-            vertical
-          />
-        );
-
-        return (
-          <React.Fragment key={article.id}>
-            <Article
-              article={{
-                ...clearCreditsAndCaption(article),
-                hasTopBorder: articleIndex > 0
-              }}
-              clickHandler={clickHandler}
-            />
-            {articleBorder}
-          </React.Fragment>
-        );
-      })}
+      {articleLoop()}
       <Visible xl>
         <ArticleDividerXL
           overrides={{ stylePreset: 'lightDivider' }}
@@ -61,12 +67,16 @@ export const ArticleStack = ({
   return (
     <>
       <Visible xs sm>
-        <ScrollContainer
-          overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
-          tabIndex={undefined}
-        >
-          {articleGrid('mobile')}
-        </ScrollContainer>
+        {isContentBucket3 ? (
+          articleLoop(true)
+        ) : (
+          <ScrollContainer
+            overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
+            tabIndex={undefined}
+          >
+            {articleGrid('mobile')}
+          </ScrollContainer>
+        )}
       </Visible>
       <Hidden xs sm>
         {articleGrid('desktop')}
