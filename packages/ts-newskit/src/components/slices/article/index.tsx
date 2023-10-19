@@ -58,10 +58,12 @@ export interface ArticleProps {
 
 export const Article = ({
   article,
-  clickHandler
+  clickHandler,
+  className
 }: {
   article: ArticleProps;
   clickHandler: ClickHandlerType;
+  className?: string;
 }) => {
   const {
     id,
@@ -141,6 +143,7 @@ export const Article = ({
       }
       columns={{ xl: imageRight ? '1fr 1fr' : '1fr' }}
       columnGap="space040"
+      className={className}
     >
       {hasTopBorder && (
         <GridLayoutItem area="border">

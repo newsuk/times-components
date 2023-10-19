@@ -1,8 +1,12 @@
 import React from 'react';
 import { Stack, GridLayout } from 'newskit';
+import { StackWithClass } from '../shared-styles';
 export interface CustomStackLayoutProps {
   marginBlockEnd?: string;
   className?: string;
+}
+interface CustomGridLayoutProps {
+  children?: React.ReactNode;
 }
 
 export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
@@ -11,7 +15,7 @@ export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
   className
 }) => {
   return (
-    <Stack
+    <StackWithClass
       flow="horizontal-top"
       stackDistribution="center"
       wrap={{
@@ -29,7 +33,7 @@ export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
       className={className}
     >
       {children}
-    </Stack>
+    </StackWithClass>
   );
 };
 
@@ -53,9 +57,7 @@ export const WrappedStackLayout: React.FC<CustomStackLayoutProps> = ({
   );
 };
 
-export const CustomGridLayout: React.FC = ({
-  children
-}) => {
+export const CustomGridLayout: React.FC<CustomGridLayoutProps> = ({ children }) => {
   return (
     <GridLayout
       columns={'1fr 1px 1fr 1px 1fr 1px 1fr'}

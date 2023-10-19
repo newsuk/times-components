@@ -5,12 +5,13 @@ import {
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { StackItem, LeadStoryDivider, BlockItem } from '../shared-styles';
 import {
-  ArticleStackLeadStory,
-  ArticleStackSmall,
-  CustomStackLayout
-} from '../shared';
+  StackItem,
+  LeadStoryDivider,
+  BlockItem,
+  LeadStoryContainer
+} from '../shared-styles';
+import { ArticleStackLeadStory, ArticleStackSmall } from '../shared';
 import {
   FullWidthBlock,
   FullWidthHidden
@@ -18,8 +19,6 @@ import {
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
 import { ClickHandlerType } from '../types';
-import { defaultArticleOptions } from '../../utils/default-article-options';
-import { LeadStoryContainer } from './styles';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
@@ -51,23 +50,6 @@ export const LeadStory1 = ({
       md: 'editorialHeadline060'
     },
     imageTop: true
-  };
-
-  const articlesWithUnorderedListOptions = {
-    md: {
-      hideImage: true
-    },
-    lg: {
-      hideImage: true
-    },
-    xl: {
-      hideImage: true
-    }
-  };
-
-  const modifiedArticlesWithUnorderedListOptions = {
-    ...defaultArticleOptions,
-    ...articlesWithUnorderedListOptions
   };
 
   const modifiedLeadArticle = {
@@ -220,12 +202,12 @@ export const LeadStory1 = ({
           <Visible xs sm>
             <ArticleStackSmall
               articles={smallArticles}
-              clickHandler={clickHandler}
               articleOptions={{
                 isFullWidth: true,
                 hasTopBorder: true,
                 hideImage: true
-              }}
+              }}    
+              clickHandler={clickHandler}
             />
           </Visible>
         </Block>
@@ -240,11 +222,6 @@ export const LeadStory1 = ({
       </FullWidthHidden>
       <Visible md lg xl>
         <ArticleStackLeadStory
-          articleOptions={{
-            xl: {
-              imageRight: true
-            }
-          }}
           modifiedArticles={articles}
           clickHandler={clickHandler}
         />

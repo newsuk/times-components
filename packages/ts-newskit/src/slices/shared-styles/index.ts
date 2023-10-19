@@ -7,6 +7,54 @@ import {
   Block,
   Scroll
 } from 'newskit';
+import { CustomStackLayout } from '../shared';
+
+export const StackWithClass = styled(Stack)<{className?: string}>``
+
+const setMarginBlockStart = (space: string) => ({
+  marginBlockStart: `${space}`
+});
+export const LeadStoryContainer = styled(CustomStackLayout)<{className?: string;}>`
+  ${getMediaQueryFromTheme('xs', 'lg')} {
+    hr[aria-label='article-divider-horizontal'] {
+      display: none;
+    }
+  }
+
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    .article-image {
+      display: none;
+    }
+    .article-info {
+      margin-block-start: 0;
+    }
+    .composed-article-card-0 .article-info {
+      ${({ className }) =>
+        getSpacingCssFromTheme(
+          setMarginBlockStart,
+          className !== 'lead-story-3-container' ? 'space030' : 'space000'
+        )};
+    }
+    .composed-article-card-0 .article-image {
+      display: ${({ className }) =>
+        className === 'lead-story-3-container' ? 'none' : 'grid'};
+    }
+  }
+
+  ${getMediaQueryFromTheme('md')} {
+    .lead-article .lead-image-container {
+      display: none;
+    }
+  }
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    .bottom-article-stack .article-image {
+      display: none;
+    }
+    .bottom-article-stack .article-info {
+      margin-block-start: 0;
+    }
+  }
+`;
 
 const setDividerPositionLeft = (space: string) => ({ left: `-${space}` });
 const setDividerPositionRight = (space: string) => ({ right: `-${space}` });
