@@ -19,7 +19,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             class="css-13byt3y"
           >
             <div
-              class="css-1g5vzsh"
+              class="css-1ms6dj6"
             />
             <div
               class="css-1kb13lf"
@@ -66,19 +66,19 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-65zrxz"
+                      class="css-135o9vn"
                     >
                       Short title of the card describing the main content 5
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-1nrveqv"
+                  class="css-lp9m77"
                 >
                   160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
-                  class="css-1atazsr"
+                  class="css-1kfs2jd"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -89,7 +89,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Tag
                       </span>
@@ -105,7 +105,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -121,11 +121,11 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             class="css-13byt3y"
           >
             <div
-              class="css-1g5vzsh"
+              class="css-1ms6dj6"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
@@ -174,19 +174,19 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-65zrxz"
+                      class="css-135o9vn"
                     >
                       Short title of the card describing the main content 6
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-1nrveqv"
+                  class="css-lp9m77"
                 >
                   160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
-                  class="css-1atazsr"
+                  class="css-1kfs2jd"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -197,7 +197,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Tag
                       </span>
@@ -213,7 +213,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -243,14 +243,14 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
           class="css-13byt3y"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
           >
             <div
               class="css-gre9re"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
@@ -320,19 +320,19 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 7
                   </span>
                 </span>
               </a>
               <p
-                class="css-1nrveqv"
+                class="css-lp9m77"
               >
                 160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
               </p>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -343,7 +343,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -359,7 +359,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   4 min read
                 </span>
@@ -380,14 +380,14 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
           class="css-13byt3y"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
           >
             <div
               class="css-gre9re"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
@@ -457,19 +457,19 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 8
                   </span>
                 </span>
               </a>
               <p
-                class="css-1nrveqv"
+                class="css-lp9m77"
               >
                 160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
               </p>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -480,7 +480,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -496,7 +496,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   4 min read
                 </span>
@@ -529,7 +529,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             class="css-13byt3y"
           >
             <div
-              class="css-1g5vzsh"
+              class="css-1ms6dj6"
             />
             <div
               class="css-1kb13lf"
@@ -576,19 +576,19 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-65zrxz"
+                      class="css-135o9vn"
                     >
                       Short title of the card describing the main content 5
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-1nrveqv"
+                  class="css-lp9m77"
                 >
                   160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
-                  class="css-1atazsr"
+                  class="css-1kfs2jd"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -599,7 +599,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Tag
                       </span>
@@ -615,7 +615,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -631,11 +631,11 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             class="css-13byt3y"
           >
             <div
-              class="css-1g5vzsh"
+              class="css-1ms6dj6"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
@@ -684,19 +684,19 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-65zrxz"
+                      class="css-135o9vn"
                     >
                       Short title of the card describing the main content 6
                     </span>
                   </span>
                 </a>
                 <p
-                  class="css-1nrveqv"
+                  class="css-lp9m77"
                 >
                   160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
-                  class="css-1atazsr"
+                  class="css-1kfs2jd"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -707,7 +707,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Tag
                       </span>
@@ -723,7 +723,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -753,14 +753,14 @@ exports[`Render ArticleStack renders with passed width 1`] = `
           class="css-13byt3y"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
           >
             <div
               class="css-gre9re"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
@@ -830,19 +830,19 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 7
                   </span>
                 </span>
               </a>
               <p
-                class="css-1nrveqv"
+                class="css-lp9m77"
               >
                 160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
               </p>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -853,7 +853,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -869,7 +869,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   4 min read
                 </span>
@@ -890,14 +890,14 @@ exports[`Render ArticleStack renders with passed width 1`] = `
           class="css-13byt3y"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
           >
             <div
               class="css-gre9re"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
@@ -967,19 +967,19 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-65zrxz"
+                    class="css-135o9vn"
                   >
                     Short title of the card describing the main content 8
                   </span>
                 </span>
               </a>
               <p
-                class="css-1nrveqv"
+                class="css-lp9m77"
               >
                 160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
               </p>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -990,7 +990,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -1006,7 +1006,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   4 min read
                 </span>

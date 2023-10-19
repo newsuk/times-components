@@ -63,7 +63,12 @@ export const LeadStory3 = ({
         }}
       >
         <Hidden md lg xl>
-          <FullWidthBlock>
+          <FullWidthBlock
+            paddingInline={{
+              xs: 'space045',
+              md: 'space000'
+            }}
+          >
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',

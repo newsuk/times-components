@@ -40,7 +40,7 @@ exports[`Render Component one should render a snapshot 1`] = `
     >
       <hr
         aria-hidden="true"
-        class="css-1haabs"
+        class="css-yrt0o7"
         data-testid="divider"
       />
       <div
@@ -103,12 +103,12 @@ exports[`Render Component one should render a snapshot 1`] = `
         </span>
       </a>
       <p
-        class="css-1nrveqv"
+        class="css-lp9m77"
       >
         160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
       </p>
       <div
-        class="css-1atazsr"
+        class="css-1kfs2jd"
         data-testid="tag-and-flag"
       >
         <a
@@ -119,7 +119,7 @@ exports[`Render Component one should render a snapshot 1`] = `
             class="css-17x5lw"
           >
             <span
-              class="css-1jxv40d"
+              class="css-qx2986"
             >
               Review
             </span>
@@ -135,7 +135,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-d9hjcx"
+          class="css-1selp7x"
         >
           4 min read
         </span>

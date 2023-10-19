@@ -12,11 +12,11 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-1goigs6"
+          class="css-1rwz0g7"
         >
           <hr
             aria-hidden="true"
-            class="css-1czxc5l"
+            class="css-1hw73g1"
             data-testid="divider"
           />
         </div>
@@ -105,7 +105,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -196,7 +196,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -212,7 +212,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -301,7 +301,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -392,7 +392,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -408,7 +408,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -425,11 +425,11 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-1goigs6"
+          class="css-1rwz0g7"
         >
           <hr
             aria-hidden="true"
-            class="css-1f0staz"
+            class="css-7ui5wu"
             data-testid="divider"
           />
         </div>
@@ -505,7 +505,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -583,7 +583,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -599,7 +599,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -675,7 +675,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -753,7 +753,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -769,7 +769,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -797,11 +797,11 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1goigs6"
+          class="css-1rwz0g7"
         >
           <hr
             aria-hidden="true"
-            class="css-1czxc5l"
+            class="css-1hw73g1"
             data-testid="divider"
           />
         </div>
@@ -890,7 +890,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -981,7 +981,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -997,7 +997,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -1086,7 +1086,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -1177,7 +1177,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -1193,7 +1193,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -1210,11 +1210,11 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1goigs6"
+          class="css-1rwz0g7"
         >
           <hr
             aria-hidden="true"
-            class="css-1f0staz"
+            class="css-7ui5wu"
             data-testid="divider"
           />
         </div>
@@ -1290,7 +1290,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -1368,7 +1368,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -1384,7 +1384,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -1460,7 +1460,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -1538,7 +1538,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -1554,7 +1554,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -1580,11 +1580,11 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1goigs6"
+          class="css-1rwz0g7"
         >
           <hr
             aria-hidden="true"
-            class="css-1czxc5l"
+            class="css-1hw73g1"
             data-testid="divider"
           />
         </div>
@@ -1655,7 +1655,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content
                   </span>
@@ -1673,7 +1673,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -1689,12 +1689,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -1742,7 +1742,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 2
                   </span>
@@ -1760,7 +1760,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -1776,7 +1776,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -1790,12 +1790,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -1843,7 +1843,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 3
                   </span>
@@ -1861,7 +1861,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -1877,12 +1877,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -1930,7 +1930,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 4
                   </span>
@@ -1948,7 +1948,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -1964,7 +1964,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -1981,11 +1981,11 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1goigs6"
+          class="css-1rwz0g7"
         >
           <hr
             aria-hidden="true"
-            class="css-1f0staz"
+            class="css-7ui5wu"
             data-testid="divider"
           />
         </div>
@@ -2056,7 +2056,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 5
                   </span>
@@ -2074,7 +2074,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2090,12 +2090,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -2143,7 +2143,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 6
                   </span>
@@ -2161,7 +2161,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2177,7 +2177,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -2191,12 +2191,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -2244,7 +2244,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 7
                   </span>
@@ -2262,7 +2262,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2278,12 +2278,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -2331,7 +2331,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 8
                   </span>
@@ -2349,7 +2349,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2365,7 +2365,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -2391,11 +2391,11 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1goigs6"
+          class="css-1rwz0g7"
         >
           <hr
             aria-hidden="true"
-            class="css-1czxc5l"
+            class="css-1hw73g1"
             data-testid="divider"
           />
         </div>
@@ -2466,7 +2466,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content
                   </span>
@@ -2484,7 +2484,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2500,12 +2500,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -2553,7 +2553,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 2
                   </span>
@@ -2571,7 +2571,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2587,7 +2587,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -2601,12 +2601,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -2654,7 +2654,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 3
                   </span>
@@ -2672,7 +2672,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2688,12 +2688,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -2741,7 +2741,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 4
                   </span>
@@ -2759,7 +2759,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2775,7 +2775,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -2792,11 +2792,11 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1goigs6"
+          class="css-1rwz0g7"
         >
           <hr
             aria-hidden="true"
-            class="css-1f0staz"
+            class="css-7ui5wu"
             data-testid="divider"
           />
         </div>
@@ -2867,7 +2867,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 5
                   </span>
@@ -2885,7 +2885,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2901,12 +2901,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -2954,7 +2954,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 6
                   </span>
@@ -2972,7 +2972,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2988,7 +2988,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>
@@ -3002,12 +3002,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -3055,7 +3055,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 7
                   </span>
@@ -3073,7 +3073,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -3089,12 +3089,12 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-tj8oo8"
             >
               <div
-                class="css-1g5vzsh"
+                class="css-1ms6dj6"
               >
                 <hr
                   aria-hidden="true"
                   aria-label="article-divider-horizontal"
-                  class="css-1i1gqyx"
+                  class="css-6ty7um"
                   data-testid="divider"
                 />
               </div>
@@ -3142,7 +3142,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1qa0j03"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 8
                   </span>
@@ -3160,7 +3160,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -3176,7 +3176,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag
                 </span>

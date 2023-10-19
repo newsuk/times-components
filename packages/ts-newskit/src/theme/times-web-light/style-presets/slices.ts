@@ -8,9 +8,16 @@ export const sliceStylePresets = {
   },
   dashedDivider: {
     base: {
-      borderStyle: 'dashed',
+      borderStyle: 'dashed none none none',
       borderWidth: '{{borders.borderWidthDefault}}',
       borderColor: '{{colors.interface060}}'
+    }
+  },
+  lightDashedDivider: {
+    base: {
+      borderStyle: 'dashed none none none',
+      borderWidth: '{{borders.borderWidthDefault}}',
+      borderColor: '{{colors.interface050}}'
     }
   },
   expirableFlagPreset: {

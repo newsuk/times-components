@@ -1,18 +1,23 @@
 import React from 'react';
-import { Block, TextBlock, Divider } from 'newskit';
+import { Block, TextBlock, Divider, MQ } from 'newskit';
 import { ContainerInline, TextLink } from '../shared-styles';
 
 export interface TagAndFlagProps {
   flag?: string;
+  flagOverrides?: {
+    typographyPreset?: MQ<string> | string;
+    stylePreset?: MQ<string> | string;
+  };
   tag?: {
     label: string;
     href: string;
   };
-  marginBlockStart?: string;
+  marginBlockStart?: MQ<string> | string;
 }
 
 export const TagAndFlag = ({
   flag,
+  flagOverrides,
   tag,
   marginBlockStart = 'space000'
 }: TagAndFlagProps) => {
@@ -28,7 +33,10 @@ export const TagAndFlag = ({
       {tag && (
         <TextLink
           overrides={{
-            typographyPreset: 'utilityButton005',
+            typographyPreset: {
+              xs: 'utilityButton010',
+              md: 'utilityButton005'
+            },
             stylePreset: 'inkBrand010'
           }}
           href={tag.href}
@@ -53,8 +61,16 @@ export const TagAndFlag = ({
 
       {flag && (
         <TextBlock
-          typographyPreset="utilityMeta005"
-          stylePreset="inkSubtle"
+          typographyPreset={
+            flagOverrides && flagOverrides.typographyPreset
+              ? flagOverrides.typographyPreset
+              : { xs: 'utilityMeta010', md: 'utilityMeta005' }
+          }
+          stylePreset={
+            flagOverrides && flagOverrides.stylePreset
+              ? flagOverrides.stylePreset
+              : { xs: 'inkNonEssential', md: 'inkSubtle' }
+          }
           as="span"
         >
           {flag}

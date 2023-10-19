@@ -48,7 +48,9 @@ export const ContentBucket1 = ({
             article={{
               ...leadArticle,
               hasTopBorder: false,
-              imageTop: true
+              imageTop: true,
+              textBlockMarginBlockStart: 'space050',
+              tagAndFlagMarginBlockStart: 'space050'
             }}
             clickHandler={clickHandler}
           />
@@ -88,11 +90,16 @@ export const ContentBucket1 = ({
       }}
     >
       <FullWidthHidden lg xl>
-        <FullWidthBlock>
+        <FullWidthBlock
+          paddingInlineStart={{
+            xs: 'space045',
+            md: 'space000'
+          }}
+        >
           <Divider
             overrides={{
               marginBlock: 'space040',
-              stylePreset: 'dashedDivider'
+              stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' }
             }}
           />
         </FullWidthBlock>
