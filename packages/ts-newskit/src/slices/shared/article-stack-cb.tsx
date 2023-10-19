@@ -31,7 +31,7 @@ export const ArticleStack = ({
             article={{
               ...clearCreditsAndCaption(article),
               hasTopBorder: articleIndex > 0,
-              hideImage: hideImage
+              hideImage
             }}
             clickHandler={clickHandler}
           />
