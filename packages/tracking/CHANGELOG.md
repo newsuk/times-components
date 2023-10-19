@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.21.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.2...@times-components/tracking@2.21.3) (2023-10-19)
+
+
+### Bug Fixes
+
+* **TMPZ-192:** Toggle dynamic height on FAQ component ([#3603](https://github.com/newsuk/times-components/issues/3603)) ([095d074](https://github.com/newsuk/times-components/commit/095d0747dc5dac8bb183ad5b00595898c7f435a2))
+
+
+
+
+
 ## [2.21.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.1...@times-components/tracking@2.21.2) (2023-10-18)
 
 **Note:** Version bump only for package @times-components/tracking
