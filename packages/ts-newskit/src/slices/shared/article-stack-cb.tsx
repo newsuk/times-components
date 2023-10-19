@@ -13,7 +13,7 @@ export const ArticleStack = ({
 }: {
   articles: ArticleProps[];
   clickHandler: ClickHandlerType;
-  isContentBucket3: boolean;
+  isContentBucket3?: boolean;
 }) => {
   const articleLoop = (hideImage?: boolean) =>
     articles.map((article: ArticleProps, articleIndex, articleArr) => {
