@@ -99,7 +99,11 @@ export const ArticleStackSmall = ({
 }: {
   articles: ArticleProps[];
   clickHandler: ClickHandlerType;
-  articleOptions?: StackArticleOptions;
+  articleOptions?: {
+    isFullWidth: boolean,
+    hasTopBorder: boolean,
+    hideImage: boolean
+  };
 }) => {
   const modifiedArticleOptions = {
     ...defaultArticleOptions,
@@ -111,8 +115,17 @@ export const ArticleStackSmall = ({
       {articles.map((article: ArticleProps, articleIndex, articleArr) => {
         return (
           <React.Fragment key={article.headline}>
-            <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-              {Object.entries(modifiedArticleOptions).map(
+            <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }} className="article-stack-small">
+              <Article
+                article={{
+                  ...clearCreditsAndCaption(article),
+                  ...articleOptions 
+                }}
+                clickHandler={clickHandler}
+              />
+
+
+              {/* {Object.entries(modifiedArticleOptions).map(
                 ([breakpoint, opts]) => (
                   <Visible {...{ [breakpoint]: true }}>
                     <Article
@@ -124,7 +137,7 @@ export const ArticleStackSmall = ({
                     />
                   </Visible>
                 )
-              )}
+              )} */}
             </Block>
             {articleIndex < articleArr.length - 1 && (
               <Visible md lg xl>

@@ -19,6 +19,7 @@ import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
 import { ClickHandlerType } from '../types';
 import { defaultArticleOptions } from '../../utils/default-article-options';
+import { LeadStoryContainer } from './styles';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
@@ -96,7 +97,7 @@ export const LeadStory1 = ({
       : 'space040';
 
   return (
-    <CustomStackLayout>
+    <LeadStoryContainer>
       <StackItem
         marginBlockEnd={{
           xs: 'space040',
@@ -107,19 +108,11 @@ export const LeadStory1 = ({
           md: '260px'
         }}
       >
-        {Object.entries(modifiedArticlesWithUnorderedListOptions).map(
-          ([breakpoint, opts]) => (
-            <Visible {...{ [breakpoint]: true }}>
-              <LeadArticle
-                article={{
-                  ...modifiedArticlesWithUnorderedList,
-                  ...opts
-                }}
-                clickHandler={clickHandler}
-              />
-            </Visible>
-          )
-        )}
+        <LeadArticle
+          article={modifiedArticlesWithUnorderedList}
+          clickHandler={clickHandler}
+          className="lead-article"
+        />
         {singleArticle && (
           <BlockItem>
             <FullWidthBlock
@@ -219,23 +212,22 @@ export const LeadStory1 = ({
                 marginBlock: 'space040'
               }}
             />
+            <ArticleStackSmall
+              articles={smallArticles}
+              clickHandler={clickHandler}
+            />
           </Visible>
-          <ArticleStackSmall
-            articles={smallArticles}
-            articleOptions={{
-              xs: {
+          <Visible xs sm>
+            <ArticleStackSmall
+              articles={smallArticles}
+              clickHandler={clickHandler}
+              articleOptions={{
                 isFullWidth: true,
                 hasTopBorder: true,
                 hideImage: true
-              },
-              sm: {
-                isFullWidth: true,
-                hasTopBorder: true,
-                hideImage: true
-              }
-            }}
-            clickHandler={clickHandler}
-          />
+              }}
+            />
+          </Visible>
         </Block>
       </StackItem>
       <FullWidthHidden md lg xl>
@@ -257,6 +249,6 @@ export const LeadStory1 = ({
           clickHandler={clickHandler}
         />
       </Visible>
-    </CustomStackLayout>
+    </LeadStoryContainer>
   );
 };

@@ -1,18 +1,14 @@
 import React from 'react';
 import { Stack, GridLayout } from 'newskit';
-
-interface CustomStackLayoutProps {
+export interface CustomStackLayoutProps {
   marginBlockEnd?: string;
-  children?: React.ReactNode;
-}
-
-interface CustomGridLayoutProp {
-  children?: React.ReactNode;
+  className?: string;
 }
 
 export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
   children,
-  marginBlockEnd
+  marginBlockEnd,
+  className
 }) => {
   return (
     <Stack
@@ -30,6 +26,7 @@ export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
         md: 'space000'
       }}
       marginBlockEnd={marginBlockEnd || 'space060'}
+      className={className}
     >
       {children}
     </Stack>
@@ -56,7 +53,7 @@ export const WrappedStackLayout: React.FC<CustomStackLayoutProps> = ({
   );
 };
 
-export const CustomGridLayout: React.FC<CustomGridLayoutProp> = ({
+export const CustomGridLayout: React.FC = ({
   children
 }) => {
   return (

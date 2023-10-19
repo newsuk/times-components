@@ -60,6 +60,7 @@ export const ArticleTileInfo = ({
       marginBlockStart={marginBlockStart}
       marginBlockEnd={marginBlockEnd}
       hasVideoIcon={hasVideoIcon}
+      className="article-info"
     >
       {isLiveTag && expirableFlags && getActiveArticleFlags(expirableFlags) ? (
         <LiveTag

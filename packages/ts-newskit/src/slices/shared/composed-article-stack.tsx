@@ -62,7 +62,7 @@ export const ComposedArticleStack = ({
             marginBlock: 'space040'
           }}
         />
-        <Block marginBlockEnd={{ md: 'space040' }}>
+        <Block marginBlockEnd={{ md: 'space040' }} className="bottom-article-stack">
           <ArticleStackSmall
             articles={secondTwoArticles}
             articleOptions={{
