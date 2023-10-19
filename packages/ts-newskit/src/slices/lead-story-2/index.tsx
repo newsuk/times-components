@@ -38,7 +38,6 @@ export const LeadStory2 = ({
     textBlockMarginBlockStart: 'space050',
     headlineTypographyPreset: {
       xs: 'editorialHeadline040',
-      sm: 'editorialHeadline050',
       md: 'editorialHeadline060'
     }
   };
@@ -101,7 +100,12 @@ export const LeadStory2 = ({
             )
           )}
           <Visible xs sm>
-            <FullWidthBlock>
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',

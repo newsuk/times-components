@@ -47,12 +47,13 @@ export interface ArticleProps {
   expirableFlags?: expirableFlagsProps[];
   flag?: string;
   hasTopBorder?: boolean;
+  topBorderStyle?: MQ<string> | string;
   hideImage?: boolean;
   isLeadImage?: boolean;
   imageRight?: boolean;
   isFullWidth?: boolean;
   titleTypographyPreset?: MQ<string> | string;
-  tagAndFlagMarginBlockStart?: string;
+  tagAndFlagMarginBlockStart?: MQ<string> | string;
 }
 
 export const Article = ({
@@ -70,12 +71,13 @@ export const Article = ({
     tag,
     flag,
     hasTopBorder,
+    topBorderStyle = 'dashedDivider',
     hideImage,
     isLeadImage,
     imageRight,
     isFullWidth,
     titleTypographyPreset = 'editorialHeadline020',
-    tagAndFlagMarginBlockStart = 'space040',
+    tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
     expirableFlags,
     label,
     contentType
@@ -118,7 +120,7 @@ export const Article = ({
     <Divider
       overrides={{
         marginBlockEnd: 'space040',
-        stylePreset: 'dashedDivider'
+        stylePreset: topBorderStyle
       }}
       aria-label="article-divider-horizontal"
     />
@@ -143,7 +145,14 @@ export const Article = ({
       {hasTopBorder && (
         <GridLayoutItem area="border">
           {isFullWidth ? (
-            <FullWidthBlock>{articleDivider}</FullWidthBlock>
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
+              {articleDivider}
+            </FullWidthBlock>
           ) : (
             articleDivider
           )}
@@ -152,8 +161,11 @@ export const Article = ({
       {showImage ? (
         isLeadImage ? (
           /* @ts-ignore */
-          <FullWidthCardMediaMob aria-label="article-lead-image" {...cardImage} />
-          ) : (
+          <FullWidthCardMediaMob
+            aria-label="article-lead-image"
+            {...cardImage}
+          />
+        ) : (
           /* @ts-ignore */
           <CardMedia aria-label="article-image" {...cardImage} />
         )

@@ -38,8 +38,8 @@ export type ArticleProps = {
   headlineTypographyPreset?: string | MQ<string>;
   loadingAspectRatio?: string;
   imageMarginBlockStart?: string;
-  textBlockMarginBlockStart?: string;
-  tagAndFlagMarginBlockStart?: string;
+  textBlockMarginBlockStart?: MQ<string> | string;
+  tagAndFlagMarginBlockStart?: MQ<string> | string;
   listData?: ListData[];
   hideImage?: boolean;
 };

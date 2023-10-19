@@ -28,10 +28,19 @@ const articleStack = ({
 }: ArticleStackProps) => (
   <WrappedStackLayout marginBlockEnd="space000">
     <StackItem>
-      <FullWidthBlock marginBlockEnd="space040">
+      <FullWidthBlock
+        paddingInline={{
+          xs: 'space045',
+          md: 'space000'
+        }}
+        marginBlockEnd="space040"
+      >
         <Divider
           overrides={{
-            stylePreset: 'dashedDivider',
+            stylePreset: {
+              xs: 'lightDashedDivider',
+              md: 'dashedDivider'
+            },
             marginBlockStart: marginBlockStart || 'space000'
           }}
         />
@@ -67,7 +76,14 @@ const articleStack = ({
                   hasTopBorder: articleIndex > 0,
                   isFullWidth: true,
                   tagAndFlagMarginBlockStart: 'space030',
-                  titleTypographyPreset: {xs: "editorialHeadline030", md: 'editorialHeadline020'}
+                  topBorderStyle: {
+                    xs: 'lightDashedDivider',
+                    md: 'dashedDivider'
+                  },
+                  titleTypographyPreset: {
+                    xs: 'editorialHeadline030',
+                    md: 'editorialHeadline020'
+                  }
                 }}
                 clickHandler={clickHandler}
               />

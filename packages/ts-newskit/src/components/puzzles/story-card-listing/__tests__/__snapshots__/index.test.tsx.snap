@@ -3,7 +3,7 @@
 exports[`Render puzzles story card should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-26wenj"
+    class="css-1bi47nz"
     data-testid="title-bar"
   >
     <div
@@ -31,7 +31,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-obfal1"
+          class="css-1ft1o8k"
           data-testid="divider"
         />
       </div>
@@ -143,7 +143,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-obfal1"
+          class="css-1ft1o8k"
           data-testid="divider"
         />
       </div>
@@ -255,7 +255,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-obfal1"
+          class="css-1ft1o8k"
           data-testid="divider"
         />
       </div>
@@ -367,7 +367,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-obfal1"
+          class="css-1ft1o8k"
           data-testid="divider"
         />
       </div>

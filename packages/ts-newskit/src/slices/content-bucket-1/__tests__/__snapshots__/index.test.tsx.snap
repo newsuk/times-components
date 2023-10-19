@@ -114,12 +114,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </span>
                 </a>
                 <p
-                  class="css-1nrveqv"
+                  class="css-7ljupj"
                 >
                   160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
-                  class="css-1atazsr"
+                  class="css-13s74dp"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -130,7 +130,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Review
                       </span>
@@ -146,7 +146,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -200,7 +200,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               >
                 <hr
                   aria-hidden="true"
-                  class="css-1haabs"
+                  class="css-yrt0o7"
                   data-testid="divider"
                 />
                 <div
@@ -264,12 +264,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </span>
                 </a>
                 <p
-                  class="css-1nrveqv"
+                  class="css-lp9m77"
                 >
                   160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
-                  class="css-1atazsr"
+                  class="css-1kfs2jd"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -280,7 +280,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Review
                       </span>
@@ -296,7 +296,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -312,11 +312,11 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             class="css-196m710"
           >
             <div
-              class="css-1g5vzsh"
+              class="css-1ms6dj6"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-glg6bd"
                 data-testid="divider"
               />
             </div>
@@ -378,11 +378,24 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </div>
                 </div>
               </div>
-              <hr
-                aria-hidden="true"
-                class="css-clg7cq"
-                data-testid="divider"
-              />
+              <div
+                class="css-gre9re"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-189ndrp"
+                  data-testid="divider"
+                />
+              </div>
+              <div
+                class="css-11l110t"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-11gzkvf"
+                  data-testid="divider"
+                />
+              </div>
               <div
                 class="css-19w1t19"
               >
@@ -449,11 +462,11 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
           class="css-1r4d587"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-qyu9or"
           >
             <hr
               aria-hidden="true"
-              class="css-obfal1"
+              class="css-glg6bd"
               data-testid="divider"
             />
           </div>
@@ -560,7 +573,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       <hr
                         aria-hidden="true"
                         aria-label="article-divider-horizontal"
-                        class="css-1i1gqyx"
+                        class="css-176zs48"
                         data-testid="divider"
                       />
                     </div>
@@ -645,7 +658,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       <hr
                         aria-hidden="true"
                         aria-label="article-divider-horizontal"
-                        class="css-1i1gqyx"
+                        class="css-176zs48"
                         data-testid="divider"
                       />
                     </div>
@@ -730,7 +743,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       <hr
                         aria-hidden="true"
                         aria-label="article-divider-horizontal"
-                        class="css-1i1gqyx"
+                        class="css-176zs48"
                         data-testid="divider"
                       />
                     </div>
@@ -905,7 +918,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -990,7 +1003,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -1075,7 +1088,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -1165,11 +1178,11 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
           class="css-1frprgo"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
           >
             <hr
               aria-hidden="true"
-              class="css-obfal1"
+              class="css-glg6bd"
               data-testid="divider"
             />
           </div>
@@ -1231,11 +1244,24 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 </div>
               </div>
             </div>
-            <hr
-              aria-hidden="true"
-              class="css-clg7cq"
-              data-testid="divider"
-            />
+            <div
+              class="css-gre9re"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-189ndrp"
+                data-testid="divider"
+              />
+            </div>
+            <div
+              class="css-11l110t"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-11gzkvf"
+                data-testid="divider"
+              />
+            </div>
             <div
               class="css-19w1t19"
             >
@@ -1413,12 +1439,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   </span>
                 </a>
                 <p
-                  class="css-1nrveqv"
+                  class="css-7ljupj"
                 >
                   160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
-                  class="css-1atazsr"
+                  class="css-13s74dp"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -1429,7 +1455,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Review
                       </span>
@@ -1445,7 +1471,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -1499,7 +1525,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <hr
                   aria-hidden="true"
-                  class="css-1haabs"
+                  class="css-yrt0o7"
                   data-testid="divider"
                 />
                 <div
@@ -1563,12 +1589,12 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   </span>
                 </a>
                 <p
-                  class="css-1nrveqv"
+                  class="css-lp9m77"
                 >
                   160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
                 </p>
                 <div
-                  class="css-1atazsr"
+                  class="css-1kfs2jd"
                   data-testid="tag-and-flag"
                 >
                   <a
@@ -1579,7 +1605,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       class="css-17x5lw"
                     >
                       <span
-                        class="css-1jxv40d"
+                        class="css-qx2986"
                       >
                         Review
                       </span>
@@ -1595,7 +1621,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     />
                   </div>
                   <span
-                    class="css-d9hjcx"
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -1611,11 +1637,11 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
             class="css-196m710"
           >
             <div
-              class="css-1g5vzsh"
+              class="css-1ms6dj6"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-glg6bd"
                 data-testid="divider"
               />
             </div>
@@ -1677,11 +1703,24 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   </div>
                 </div>
               </div>
-              <hr
-                aria-hidden="true"
-                class="css-clg7cq"
-                data-testid="divider"
-              />
+              <div
+                class="css-gre9re"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-189ndrp"
+                  data-testid="divider"
+                />
+              </div>
+              <div
+                class="css-11l110t"
+              >
+                <hr
+                  aria-hidden="true"
+                  class="css-11gzkvf"
+                  data-testid="divider"
+                />
+              </div>
               <div
                 class="css-19w1t19"
               >
@@ -1748,11 +1787,11 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
           class="css-1r4d587"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-qyu9or"
           >
             <hr
               aria-hidden="true"
-              class="css-obfal1"
+              class="css-glg6bd"
               data-testid="divider"
             />
           </div>
@@ -1859,7 +1898,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       <hr
                         aria-hidden="true"
                         aria-label="article-divider-horizontal"
-                        class="css-1i1gqyx"
+                        class="css-176zs48"
                         data-testid="divider"
                       />
                     </div>
@@ -1944,7 +1983,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       <hr
                         aria-hidden="true"
                         aria-label="article-divider-horizontal"
-                        class="css-1i1gqyx"
+                        class="css-176zs48"
                         data-testid="divider"
                       />
                     </div>
@@ -2029,7 +2068,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       <hr
                         aria-hidden="true"
                         aria-label="article-divider-horizontal"
-                        class="css-1i1gqyx"
+                        class="css-176zs48"
                         data-testid="divider"
                       />
                     </div>
@@ -2204,7 +2243,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -2289,7 +2328,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -2374,7 +2413,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -2464,11 +2503,11 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
           class="css-1frprgo"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
           >
             <hr
               aria-hidden="true"
-              class="css-obfal1"
+              class="css-glg6bd"
               data-testid="divider"
             />
           </div>
@@ -2530,11 +2569,24 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 </div>
               </div>
             </div>
-            <hr
-              aria-hidden="true"
-              class="css-clg7cq"
-              data-testid="divider"
-            />
+            <div
+              class="css-gre9re"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-189ndrp"
+                data-testid="divider"
+              />
+            </div>
+            <div
+              class="css-11l110t"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-11gzkvf"
+                data-testid="divider"
+              />
+            </div>
             <div
               class="css-19w1t19"
             >

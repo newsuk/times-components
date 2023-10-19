@@ -1,4 +1,9 @@
-import { GridLayout, getMediaQueryFromTheme, getSpacingCssFromTheme, styled } from 'newskit';
+import {
+  GridLayout,
+  getMediaQueryFromTheme,
+  getSpacingCssFromTheme,
+  styled
+} from 'newskit';
 
 export const ArticleGrid = styled(GridLayout)<{
   hideImageOnDesktop?: boolean;
@@ -14,11 +19,11 @@ export const ArticleGrid = styled(GridLayout)<{
       }
 
       [aria-label='article-lead-image'] {
-        ${getSpacingCssFromTheme('margin-block-end','space040')}
+        ${getSpacingCssFromTheme('margin-block-end', 'space040')}
       }
 
       div[aria-label='article-tile-info']{
-        ${getSpacingCssFromTheme('margin-block-start','space000')}
+        ${getSpacingCssFromTheme('margin-block-start', 'space000')}
       }
     }
 
@@ -29,7 +34,8 @@ export const ArticleGrid = styled(GridLayout)<{
       }
 
       [aria-label='article-image'], [aria-label='article-lead-image'] {
-        display: ${({ hideImageOnDesktop }) => (hideImageOnDesktop ? 'none' : 'block')};
+        display: ${({ hideImageOnDesktop }) =>
+          hideImageOnDesktop ? 'none' : 'block'};
       }
 
       div[aria-label='article-tile-info']{

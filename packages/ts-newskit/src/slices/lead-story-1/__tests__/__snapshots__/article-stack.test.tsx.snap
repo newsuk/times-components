@@ -91,7 +91,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -102,7 +102,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -118,7 +118,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                       />
                     </div>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag1
                     </span>
@@ -197,7 +197,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -208,7 +208,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -224,7 +224,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                       />
                     </div>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag1
                     </span>
@@ -303,7 +303,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -314,7 +314,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -330,7 +330,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                       />
                     </div>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag1
                     </span>
@@ -409,7 +409,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -420,7 +420,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -436,7 +436,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                       />
                     </div>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag1
                     </span>
@@ -515,7 +515,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -526,7 +526,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -542,7 +542,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                       />
                     </div>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag1
                     </span>
@@ -790,7 +790,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -859,7 +859,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -1010,7 +1010,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -1021,7 +1021,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -1102,7 +1102,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -1113,7 +1113,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -1194,7 +1194,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -1205,7 +1205,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -1227,7 +1227,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -1282,7 +1282,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -1293,7 +1293,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -1315,7 +1315,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -1384,7 +1384,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -1395,7 +1395,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -1485,7 +1485,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -1496,12 +1496,12 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         />
                       </span>
                     </a>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag4
                     </span>
@@ -1580,7 +1580,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -1591,12 +1591,12 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         />
                       </span>
                     </a>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag4
                     </span>
@@ -1675,7 +1675,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -1686,12 +1686,12 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         />
                       </span>
                     </a>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag4
                     </span>
@@ -1711,7 +1711,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -1766,7 +1766,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -1777,12 +1777,12 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         />
                       </span>
                     </a>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag4
                     </span>
@@ -1802,7 +1802,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -1871,7 +1871,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -1882,12 +1882,12 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         />
                       </span>
                     </a>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag4
                     </span>
@@ -1975,7 +1975,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -1986,7 +1986,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -2002,7 +2002,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                       />
                     </div>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag5
                     </span>
@@ -2081,7 +2081,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -2092,7 +2092,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -2108,7 +2108,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                       />
                     </div>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag5
                     </span>
@@ -2187,7 +2187,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -2198,7 +2198,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -2214,7 +2214,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                       />
                     </div>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag5
                     </span>
@@ -2234,7 +2234,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -2289,7 +2289,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -2300,7 +2300,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -2316,7 +2316,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                       />
                     </div>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag5
                     </span>
@@ -2336,7 +2336,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-176zs48"
                     data-testid="divider"
                   />
                 </div>
@@ -2405,7 +2405,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-1atazsr"
+                    class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
                     <a
@@ -2416,7 +2416,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         class="css-17x5lw"
                       >
                         <span
-                          class="css-1jxv40d"
+                          class="css-qx2986"
                         >
                           Tag
                         </span>
@@ -2432,7 +2432,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                       />
                     </div>
                     <span
-                      class="css-d9hjcx"
+                      class="css-1selp7x"
                     >
                       Flag5
                     </span>
@@ -2523,7 +2523,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -2534,7 +2534,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2550,7 +2550,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag1
                 </span>
@@ -2629,7 +2629,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -2640,7 +2640,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2656,7 +2656,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag1
                 </span>
@@ -2735,7 +2735,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -2746,7 +2746,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2762,7 +2762,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag1
                 </span>
@@ -2841,7 +2841,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -2852,7 +2852,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2868,7 +2868,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag1
                 </span>
@@ -2947,7 +2947,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -2958,7 +2958,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -2974,7 +2974,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag1
                 </span>
@@ -3222,7 +3222,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               <hr
                 aria-hidden="true"
                 aria-label="article-divider-horizontal"
-                class="css-1i1gqyx"
+                class="css-176zs48"
                 data-testid="divider"
               />
             </div>
@@ -3291,7 +3291,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               <hr
                 aria-hidden="true"
                 aria-label="article-divider-horizontal"
-                class="css-1i1gqyx"
+                class="css-176zs48"
                 data-testid="divider"
               />
             </div>
@@ -3442,7 +3442,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -3453,7 +3453,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -3534,7 +3534,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -3545,7 +3545,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -3626,7 +3626,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -3637,7 +3637,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -3659,7 +3659,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               <hr
                 aria-hidden="true"
                 aria-label="article-divider-horizontal"
-                class="css-1i1gqyx"
+                class="css-176zs48"
                 data-testid="divider"
               />
             </div>
@@ -3714,7 +3714,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -3725,7 +3725,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -3747,7 +3747,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               <hr
                 aria-hidden="true"
                 aria-label="article-divider-horizontal"
-                class="css-1i1gqyx"
+                class="css-176zs48"
                 data-testid="divider"
               />
             </div>
@@ -3816,7 +3816,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -3827,7 +3827,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -3917,7 +3917,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -3928,12 +3928,12 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     />
                   </span>
                 </a>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag4
                 </span>
@@ -4012,7 +4012,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -4023,12 +4023,12 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     />
                   </span>
                 </a>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag4
                 </span>
@@ -4107,7 +4107,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -4118,12 +4118,12 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     />
                   </span>
                 </a>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag4
                 </span>
@@ -4143,7 +4143,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               <hr
                 aria-hidden="true"
                 aria-label="article-divider-horizontal"
-                class="css-1i1gqyx"
+                class="css-176zs48"
                 data-testid="divider"
               />
             </div>
@@ -4198,7 +4198,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -4209,12 +4209,12 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     />
                   </span>
                 </a>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag4
                 </span>
@@ -4234,7 +4234,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               <hr
                 aria-hidden="true"
                 aria-label="article-divider-horizontal"
-                class="css-1i1gqyx"
+                class="css-176zs48"
                 data-testid="divider"
               />
             </div>
@@ -4303,7 +4303,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -4314,12 +4314,12 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     />
                   </span>
                 </a>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag4
                 </span>
@@ -4407,7 +4407,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -4418,7 +4418,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -4434,7 +4434,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag5
                 </span>
@@ -4513,7 +4513,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -4524,7 +4524,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -4540,7 +4540,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag5
                 </span>
@@ -4619,7 +4619,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -4630,7 +4630,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -4646,7 +4646,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag5
                 </span>
@@ -4666,7 +4666,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               <hr
                 aria-hidden="true"
                 aria-label="article-divider-horizontal"
-                class="css-1i1gqyx"
+                class="css-176zs48"
                 data-testid="divider"
               />
             </div>
@@ -4721,7 +4721,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -4732,7 +4732,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -4748,7 +4748,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag5
                 </span>
@@ -4768,7 +4768,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
               <hr
                 aria-hidden="true"
                 aria-label="article-divider-horizontal"
-                class="css-1i1gqyx"
+                class="css-176zs48"
                 data-testid="divider"
               />
             </div>
@@ -4837,7 +4837,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 </span>
               </a>
               <div
-                class="css-1atazsr"
+                class="css-1kfs2jd"
                 data-testid="tag-and-flag"
               >
                 <a
@@ -4848,7 +4848,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-1jxv40d"
+                      class="css-qx2986"
                     >
                       Tag
                     </span>
@@ -4864,7 +4864,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                   />
                 </div>
                 <span
-                  class="css-d9hjcx"
+                  class="css-1selp7x"
                 >
                   Flag5
                 </span>
@@ -5335,7 +5335,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
               </span>
             </a>
             <div
-              class="css-1atazsr"
+              class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
               <a
@@ -5346,7 +5346,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1jxv40d"
+                    class="css-qx2986"
                   >
                     Tag
                   </span>
@@ -5427,7 +5427,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
               </span>
             </a>
             <div
-              class="css-1atazsr"
+              class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
               <a
@@ -5438,7 +5438,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1jxv40d"
+                    class="css-qx2986"
                   >
                     Tag
                   </span>
@@ -5519,7 +5519,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
               </span>
             </a>
             <div
-              class="css-1atazsr"
+              class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
               <a
@@ -5530,7 +5530,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1jxv40d"
+                    class="css-qx2986"
                   >
                     Tag
                   </span>
@@ -5611,7 +5611,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
               </span>
             </a>
             <div
-              class="css-1atazsr"
+              class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
               <a
@@ -5622,7 +5622,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1jxv40d"
+                    class="css-qx2986"
                   >
                     Tag
                   </span>
@@ -5703,7 +5703,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
               </span>
             </a>
             <div
-              class="css-1atazsr"
+              class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
               <a
@@ -5714,7 +5714,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1jxv40d"
+                    class="css-qx2986"
                   >
                     Tag
                   </span>
@@ -5808,7 +5808,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
               </span>
             </a>
             <div
-              class="css-1atazsr"
+              class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
               <a
@@ -5819,12 +5819,12 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1jxv40d"
+                    class="css-qx2986"
                   />
                 </span>
               </a>
               <span
-                class="css-d9hjcx"
+                class="css-1selp7x"
               >
                 Flag4
               </span>
@@ -5903,7 +5903,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
               </span>
             </a>
             <div
-              class="css-1atazsr"
+              class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
               <a
@@ -5914,12 +5914,12 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1jxv40d"
+                    class="css-qx2986"
                   />
                 </span>
               </a>
               <span
-                class="css-d9hjcx"
+                class="css-1selp7x"
               >
                 Flag4
               </span>
@@ -5998,7 +5998,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
               </span>
             </a>
             <div
-              class="css-1atazsr"
+              class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
               <a
@@ -6009,12 +6009,12 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1jxv40d"
+                    class="css-qx2986"
                   />
                 </span>
               </a>
               <span
-                class="css-d9hjcx"
+                class="css-1selp7x"
               >
                 Flag4
               </span>
@@ -6093,7 +6093,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
               </span>
             </a>
             <div
-              class="css-1atazsr"
+              class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
               <a
@@ -6104,12 +6104,12 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1jxv40d"
+                    class="css-qx2986"
                   />
                 </span>
               </a>
               <span
-                class="css-d9hjcx"
+                class="css-1selp7x"
               >
                 Flag4
               </span>
@@ -6188,7 +6188,7 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
               </span>
             </a>
             <div
-              class="css-1atazsr"
+              class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
               <a
@@ -6199,12 +6199,12 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-1jxv40d"
+                    class="css-qx2986"
                   />
                 </span>
               </a>
               <span
-                class="css-d9hjcx"
+                class="css-1selp7x"
               >
                 Flag4
               </span>
