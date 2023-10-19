@@ -58,7 +58,8 @@ export const FullWidthCardMediaMob = styled(CardMedia)<{
   ratio?: string;
   className?: string;
 }>`
-  height: ${({ className }) => (className && className !== 'article-image' ? 0 : '100%')};
+  height: ${({ className }) =>
+    className && className !== 'article-image' ? 0 : '100%'};
   overflow: hidden;
   position: relative;
   padding-bottom: ${({ ratio }) => (ratio ? `${100 / getRatio(ratio)}%;` : 0)};

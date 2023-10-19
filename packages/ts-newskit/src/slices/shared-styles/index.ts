@@ -9,12 +9,12 @@ import {
 } from 'newskit';
 import { CustomStackLayout } from '../shared';
 
-export const StackWithClass = styled(Stack)<{className?: string}>``
-
 const setMarginBlockStart = (space: string) => ({
   marginBlockStart: `${space}`
 });
-export const LeadStoryContainer = styled(CustomStackLayout)<{className?: string;}>`
+export const LeadStoryContainer = styled(CustomStackLayout)<{
+  className?: string;
+}>`
   ${getMediaQueryFromTheme('xs', 'lg')} {
     hr[aria-label='article-divider-horizontal'] {
       display: none;

@@ -206,7 +206,7 @@ export const LeadStory1 = ({
                 isFullWidth: true,
                 hasTopBorder: true,
                 hideImage: true
-              }}    
+              }}
               clickHandler={clickHandler}
             />
           </Visible>

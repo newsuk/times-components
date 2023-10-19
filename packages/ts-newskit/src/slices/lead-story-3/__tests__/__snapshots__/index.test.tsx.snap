@@ -6,7 +6,7 @@ exports[`Render Lead Story 3 Slice Slice matches snapshot 1`] = `
     style="max-width: 768px;"
   >
     <div
-      class="lead-story-3-container css-yz0w0p"
+      class="lead-story-3-container css-1dofwii"
     >
       <div
         class="css-9tpu5q"
@@ -8899,7 +8899,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
     style="max-width: 1024px;"
   >
     <div
-      class="lead-story-3-container css-yz0w0p"
+      class="lead-story-3-container css-1dofwii"
     >
       <div
         class="css-9tpu5q"
@@ -27686,7 +27686,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
     style="max-width: 520px;"
   >
     <div
-      class="lead-story-3-container css-yz0w0p"
+      class="lead-story-3-container css-1dofwii"
     >
       <div
         class="css-9tpu5q"
@@ -37116,7 +37116,7 @@ exports[`Render Lead Story 3 Slice modifies articles correctly when breakpointKe
     style="max-width: 320px;"
   >
     <div
-      class="lead-story-3-container css-yz0w0p"
+      class="lead-story-3-container css-1dofwii"
     >
       <div
         class="css-9tpu5q"
