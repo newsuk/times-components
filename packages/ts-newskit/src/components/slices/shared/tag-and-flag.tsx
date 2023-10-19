@@ -34,7 +34,7 @@ export const TagAndFlag = ({
         <TextLink
           overrides={{
             typographyPreset: {
-              xs: 'utilityLabel010',
+              xs: 'utilityButton010',
               md: 'utilityButton005'
             },
             stylePreset: 'inkBrand010'

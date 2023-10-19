@@ -38,7 +38,6 @@ export const LeadStory2 = ({
     textBlockMarginBlockStart: 'space050',
     headlineTypographyPreset: {
       xs: 'editorialHeadline040',
-      sm: 'editorialHeadline050',
       md: 'editorialHeadline060'
     }
   };

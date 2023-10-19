@@ -47,7 +47,6 @@ export const LeadStory1 = ({
     textBlockMarginBlockStart: 'space050',
     headlineTypographyPreset: {
       xs: 'editorialHeadline040',
-      sm: 'editorialHeadline050',
       md: 'editorialHeadline060'
     },
     imageTop: true
@@ -83,7 +82,8 @@ export const LeadStory1 = ({
 
   const modifiedSingleArticle = {
     ...singleArticle,
-    hideImage: true
+    hideImage: true,
+    titleTypographyPreset: {xs: 'editorialHeadline030', md: 'editorialHeadline020'}
   };
 
   const marginTop = singleArticle

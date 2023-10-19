@@ -32,7 +32,10 @@ export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
                 }
               : {
                   ...article,
-                  headlineTypographyPreset: 'editorialHeadline020',
+                  headlineTypographyPreset: {
+                    xs: 'editorialHeadline030',
+                    md: 'editorialHeadline020'
+                  },
                   hideImage: true,
                   hasTopBorder: false
                 };

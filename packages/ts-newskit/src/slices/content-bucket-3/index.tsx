@@ -104,6 +104,10 @@ export const ContentBucket3 = ({
                   ...leadArticleRight,
                   hasTopBorder: isMobile,
                   topBorderStyle: 'lightDashedDivider',
+                  tagAndFlagMarginBlockStart: {
+                    xs: 'space030',
+                    md: 'space040'
+                  },
                   isLeadImage: true,
                   titleTypographyPreset: isLarge
                     ? 'editorialHeadline030'

@@ -101,13 +101,7 @@ export const LeadStory3 = ({
       <FullWidthHidden md lg xl>
         <BlockItem>
           <ComposedArticleStack
-            articles={articles.map(article => ({
-              ...article,
-              titleTypographyPreset: {
-                xs: 'editorialHeadline030',
-                md: 'editorialHeadline020'
-              }
-            }))}
+            articles={articles}
             clickHandler={clickHandler}
           />
         </BlockItem>
