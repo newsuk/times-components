@@ -39,7 +39,7 @@ const articleStack = ({
     </StackItem>
     <StackItem>
       <ArticleGrid
-        hideImage={hideImageOnDesktop}
+        hideImageOnDesktop={hideImageOnDesktop}
         columns={{
           xs: '1fr',
           md: '1fr 1px 1fr 1px 1fr 1px 1fr'

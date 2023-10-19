@@ -1,7 +1,7 @@
 import { GridLayout, getMediaQueryFromTheme, getSpacingCssFromTheme, styled } from 'newskit';
 
 export const ArticleGrid = styled(GridLayout)<{
-  hideImage?: boolean;
+  hideImageOnDesktop?: boolean;
 }>`
   
     ${getMediaQueryFromTheme('xs', 'md')} {
@@ -29,11 +29,11 @@ export const ArticleGrid = styled(GridLayout)<{
       }
 
       [aria-label='article-image'], [aria-label='article-lead-image'] {
-        display: ${({ hideImage }) => (hideImage ? 'none' : 'block')};
+        display: ${({ hideImageOnDesktop }) => (hideImageOnDesktop ? 'none' : 'block')};
       }
 
       div[aria-label='article-tile-info']{
-        margin-top: ${({ hideImage }) => hideImage && '0'};
+        margin-top: ${({ hideImageOnDesktop }) => hideImageOnDesktop && '0'};
       }
     }
 
