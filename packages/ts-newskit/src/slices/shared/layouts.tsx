@@ -29,7 +29,7 @@ export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
         md: 'space000'
       }}
       marginBlockEnd={marginBlockEnd || 'space060'}
-      //@ts-ignore
+      // @ts-ignore
       className={className}
     >
       {children}
