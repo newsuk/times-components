@@ -1,0 +1,34 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { NewsKitProvider } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../theme';
+import { ArticleSidebar } from './index';
+import { CardComposable } from 'newskit';
+
+
+<Meta
+  title="Newskit Components/Puzzles/ArticleSidebar"
+  component={ArticleSidebar}
+/>
+
+# ArticleSidebar component
+The `ArticleSidebar`
+
+## Props
+<Props of={HeroBanner} />
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const ArticleSidebarStory = ({title, data}) => (
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+     <CardComposable overrides={{maxWidth: '204px'}}>
+    <ArticleSidebar {...{ title, data }} />
+     </CardComposable>
+  </NewsKitProvider>
+);
+
+<Story name="ArticleSidebar" args={{ title: 'Puzzles for you', data:[{puzzleTitle: 'Crossword', puzzleUrl: 'https://www.thetimes.co.uk/puzzles/crossword', imgUrl: 'https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500'}, {puzzleTitle: 'Polygon', puzzleUrl: 'https://www.thetimes.co.uk/puzzles/sudoku', imgUrl: 'https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500'}, {puzzleTitle: 'Sudoku', puzzleUrl: 'https://www.thetimes.co.uk/puzzles/sudoku', imgUrl: 'https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500'}]
+  
+}}>
+  {ArticleSidebarStory.bind({})}
+</Story>
