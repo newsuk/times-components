@@ -9,13 +9,14 @@ import {
   PageErrorContentContainer
 } from "./styles/responsive";
 import { retryButtonStyles } from "./styles/index";
+import { INTERNAL_ERROR_IMAGE_BASE_URL } from "./utils/constants";
 
 const ArticleListPageError = ({ refetch }) => (
   <PageErrorContainer>
     <PageErrorImageContainer>
       <Image
         aspectRatio={700 / 770}
-        uri="https://www.thetimes.co.uk/d/img/internal-error-c45d0e8347.png"
+        uri={`${INTERNAL_ERROR_IMAGE_BASE_URL}/d/img/internal-error-c45d0e8347.png`}
       />
     </PageErrorImageContainer>
     <PageErrorContentContainer>
