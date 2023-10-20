@@ -48,6 +48,7 @@ export const ContentBucket3 = ({
     isLeadImage: true,
     hasTopBorder: true,
     topBorderStyle: 'lightDashedDivider',
+    tagAndFlagMarginBlockStart: {xs: 'space030', md: 'space040'},
     titleTypographyPreset: {
       xs: 'editorialHeadline020',
       lg: 'editorialHeadline030'
