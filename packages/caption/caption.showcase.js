@@ -1,11 +1,11 @@
 import React from "react";
 import Caption, { CentredCaption } from "./src/caption";
+import { SHOWCASE_IMAGE_BASE_URL } from "./constants";
 
 const captionText =
   'The prime minister said HMS Queen Elizabeth was a symbol of Britain’s status as a "great maritime nation"';
 const credits = "BEN STANSALL/PA WIRE";
-const exampleImage =
-  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff10d34c8-abaf-11e8-9969-06853d7144fd.jpg?crop=1688%2C949%2C0%2C88&resize=685";
+const exampleImage = `${SHOWCASE_IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff10d34c8-abaf-11e8-9969-06853d7144fd.jpg?crop=1688%2C949%2C0%2C88&resize=685`;
 const style = {
   container: {
     backgroundColor: "blue"
