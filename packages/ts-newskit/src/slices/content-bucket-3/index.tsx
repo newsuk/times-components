@@ -47,6 +47,7 @@ export const ContentBucket3 = ({
     ...leadArticleRight,
     isLeadImage: true,
     hasTopBorder: true,
+    topBorderStyle: 'lightDashedDivider',
     titleTypographyPreset: {
       xs: 'editorialHeadline020',
       lg: 'editorialHeadline030'

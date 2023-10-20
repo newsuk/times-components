@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Hidden, Visible } from 'newskit';
+import { Divider, GridLayout, Hidden, Visible } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { ScrollContainer, ArticleDividerXL } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
@@ -68,7 +68,7 @@ export const ArticleStack = ({
     <>
       <Visible xs sm>
         {isContentBucket3 ? (
-          articleLoop(true)
+          <GridLayout rowGap="space020">{articleLoop(true)}</GridLayout>
         ) : (
           <ScrollContainer
             overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}
