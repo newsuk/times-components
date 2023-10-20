@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { AD_COMPOSER_DEFAULT_AD_UNIT } from "./utils/constants";
 
 export const propTypes = {
   adConfig: PropTypes.shape({
@@ -18,7 +19,7 @@ export const propTypes = {
 // @TODO: check these are sensible
 export const defaultProps = {
   adConfig: {
-    adUnit: "d.thetimes.co.uk",
+    adUnit: AD_COMPOSER_DEFAULT_AD_UNIT,
     biddersConfig: {
       bidders: {
         amazon: {

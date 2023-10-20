@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { AD_DEFAULT_BASE_URL } from "./utils/constants";
 
 const { style: ViewPropTypesStyle } = PropTypes.object;
 
@@ -12,7 +13,7 @@ export const propTypes = {
 };
 
 export const defaultProps = {
-  baseUrl: "https://www.thetimes.co.uk/",
+  baseUrl: `${AD_DEFAULT_BASE_URL}/`,
   contextUrl: "",
   isLoading: false,
   section: "",
