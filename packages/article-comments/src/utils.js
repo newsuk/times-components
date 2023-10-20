@@ -1,12 +1,11 @@
 /* global fetch window */
 
+import { STORE_URL_GB, STORE_URL_GLOBAL, STORE_URL_IE } from "./constants";
+
 const storeURL = {
-  gb:
-    "https://thetimes.co.uk/subscribe/digital?ILC=GB-TNL_The_Times-Conversion_Page-Homepage-2020",
-  ie:
-    "https://store.thetimes.ie/?ILC=IE-TNL_The_Times-Conversion_Page-Homepage-2020",
-  global:
-    "https://globalstore.thetimes.co.uk/?ILC=INTL-TNL_The_Times-Conversion_Page-Homepage-2020"
+  gb: `${STORE_URL_GB}?ILC=GB-TNL_The_Times-Conversion_Page-Homepage-2020`,
+  ie: `${STORE_URL_IE}?ILC=IE-TNL_The_Times-Conversion_Page-Homepage-2020`,
+  global: `${STORE_URL_GLOBAL}?ILC=INTL-TNL_The_Times-Conversion_Page-Homepage-2020`
 };
 
 export const userShouldUpdateName = async username => {

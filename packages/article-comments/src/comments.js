@@ -6,6 +6,7 @@ import { CommentContainer } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
 import { getDisplayNameFromLocalStorage, userShouldUpdateName } from "./utils";
+import { ARTICLE_BASE_URL } from "./constants";
 
 class Comments extends Component {
   constructor() {
@@ -144,7 +145,7 @@ class Comments extends Component {
     launcherScript.setAttribute("data-post-id", articleId);
     launcherScript.setAttribute(
       "data-post-url",
-      `https://www.thetimes.co.uk/article/${articleId}`
+      `${ARTICLE_BASE_URL}/article/${articleId}`
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
