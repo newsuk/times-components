@@ -58,8 +58,8 @@ export interface LeadArticleProps {
   headlineTypographyPreset?: MQ<string> | string;
   loadingAspectRatio?: string;
   imageMarginBlockStart?: string;
-  textBlockMarginBlockStart?: string;
-  tagAndFlagMarginBlockStart?: string;
+  textBlockMarginBlockStart?: MQ<string> | string;
+  tagAndFlagMarginBlockStart?: MQ<string> | string;
   listData?: ListData[];
   hideImage?: boolean;
 }
@@ -88,7 +88,7 @@ export const LeadArticle = ({
     loadingAspectRatio,
     imageMarginBlockStart = 'space000',
     textBlockMarginBlockStart = 'space040',
-    tagAndFlagMarginBlockStart = 'space040',
+    tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
     listData,
     hideImage,
     expirableFlags,
@@ -104,7 +104,7 @@ export const LeadArticle = ({
     imageWithCorrectRatio &&
     imageWithCorrectRatio.url !== '' && {
       media: {
-        src: imageWithCorrectRatio.url,
+        src: `${imageWithCorrectRatio.url}&resize=750`,
         alt: (images && images.alt) || headline,
         loadingAspectRatio: imageWithCorrectRatio.ratio
       }
@@ -210,6 +210,10 @@ export const LeadArticle = ({
         </CardHeadlineLink>
         {shortSummary && (
           <TextBlock
+            stylePreset={{
+              xs: 'inkSubtle',
+              md: 'inkBase'
+            }}
             typographyPreset={{
               xs: 'editorialParagraph020',
               md: 'editorialParagraph010'

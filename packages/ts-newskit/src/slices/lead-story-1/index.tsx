@@ -47,7 +47,6 @@ export const LeadStory1 = ({
     textBlockMarginBlockStart: 'space050',
     headlineTypographyPreset: {
       xs: 'editorialHeadline040',
-      sm: 'editorialHeadline050',
       md: 'editorialHeadline060'
     },
     imageTop: true
@@ -83,7 +82,11 @@ export const LeadStory1 = ({
 
   const modifiedSingleArticle = {
     ...singleArticle,
-    hideImage: true
+    hideImage: true,
+    titleTypographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline020'
+    }
   };
 
   const marginTop = singleArticle
@@ -119,7 +122,12 @@ export const LeadStory1 = ({
         )}
         {singleArticle && (
           <BlockItem>
-            <FullWidthBlock>
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
@@ -138,7 +146,12 @@ export const LeadStory1 = ({
         )}
         {groupedArticles && (
           <>
-            <FullWidthBlock>
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
@@ -166,7 +179,12 @@ export const LeadStory1 = ({
         }}
       >
         <FullWidthHidden md lg xl>
-          <FullWidthBlock>
+          <FullWidthBlock
+            paddingInline={{
+              xs: 'space045',
+              md: 'space000'
+            }}
+          >
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',

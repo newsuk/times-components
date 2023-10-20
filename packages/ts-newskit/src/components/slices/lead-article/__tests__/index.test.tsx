@@ -108,7 +108,7 @@ describe('Render Component one', () => {
     );
     const imageElement = getByAltText(leadArticle.headline) as HTMLImageElement;
     expect(imageElement.src).toBe(
-      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173'
+      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750'
     );
   });
 
@@ -124,7 +124,7 @@ describe('Render Component one', () => {
     const imageElement = getByAltText(leadArticle.headline) as HTMLImageElement;
 
     expect(imageElement.src).toBe(
-      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173'
+      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173&resize=750'
     );
   });
   it('should render StyledSpan if caption not provided', () => {

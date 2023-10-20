@@ -5,7 +5,8 @@ import {
   TextBlock,
   CardComposable,
   CardMedia,
-  GridLayoutItem
+  GridLayoutItem,
+  MQ
 } from 'newskit';
 import {
   CardHeadlineLink,
@@ -46,12 +47,13 @@ export interface ArticleProps {
   expirableFlags?: expirableFlagsProps[];
   flag?: string;
   hasTopBorder?: boolean;
+  topBorderStyle?: MQ<string> | string;
   hideImage?: boolean;
   isLeadImage?: boolean;
   imageRight?: boolean;
   isFullWidth?: boolean;
-  titleTypographyPreset?: string;
-  tagAndFlagMarginBlockStart?: string;
+  titleTypographyPreset?: MQ<string> | string;
+  tagAndFlagMarginBlockStart?: MQ<string> | string;
 }
 
 export const Article = ({
@@ -69,12 +71,13 @@ export const Article = ({
     tag,
     flag,
     hasTopBorder,
+    topBorderStyle = 'dashedDivider',
     hideImage,
     isLeadImage,
     imageRight,
     isFullWidth,
     titleTypographyPreset = 'editorialHeadline020',
-    tagAndFlagMarginBlockStart = 'space040',
+    tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
     expirableFlags,
     label,
     contentType
@@ -91,7 +94,7 @@ export const Article = ({
   const cardImage = !hideImage &&
     imageWithCorrectRatio && {
       media: {
-        src: imageWithCorrectRatio.url,
+        src: `${imageWithCorrectRatio.url}&resize=750`,
         alt: (images && images.alt) || headline,
         loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2',
         loading: 'lazy'
@@ -117,7 +120,7 @@ export const Article = ({
     <Divider
       overrides={{
         marginBlockEnd: 'space040',
-        stylePreset: 'dashedDivider'
+        stylePreset: topBorderStyle
       }}
       aria-label="article-divider-horizontal"
     />
@@ -142,7 +145,14 @@ export const Article = ({
       {hasTopBorder && (
         <GridLayoutItem area="border">
           {isFullWidth ? (
-            <FullWidthBlock>{articleDivider}</FullWidthBlock>
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
+              {articleDivider}
+            </FullWidthBlock>
           ) : (
             articleDivider
           )}

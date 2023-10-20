@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.11.3](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.11.2...@times-components/storybook@4.11.3) (2023-10-19)
+
+
+### Bug Fixes
+
+* **TMPZ-192:** Toggle dynamic height on FAQ component ([#3603](https://github.com/newsuk/times-components/issues/3603)) ([095d074](https://github.com/newsuk/times-components/commit/095d0747dc5dac8bb183ad5b00595898c7f435a2))
+
+
+
+
+
+## [4.11.2](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.11.1...@times-components/storybook@4.11.2) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
 ## [4.11.1](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.11.0...@times-components/storybook@4.11.1) (2023-10-17)
 
 **Note:** Version bump only for package @times-components/storybook

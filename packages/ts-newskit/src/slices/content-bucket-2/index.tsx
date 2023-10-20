@@ -50,7 +50,8 @@ export const ContentBucket2 = ({
                       ...clearCreditsAndCaption(article),
                       hideImage: articleIndex > 0,
                       isLeadImage: articleIndex === 0,
-                      hasTopBorder: articleIndex > 0
+                      hasTopBorder: articleIndex > 0,
+                      topBorderStyle: 'lightDashedDivider'
                     }}
                     clickHandler={clickHandler}
                   />

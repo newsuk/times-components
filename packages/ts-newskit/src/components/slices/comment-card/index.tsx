@@ -60,7 +60,7 @@ export const CommentCard = ({
       {imageWithCorrectRatio && (
         <CardMedia
           media={{
-            src: imageWithCorrectRatio.url,
+            src: `${imageWithCorrectRatio.url}&resize=360`,
             alt: (images && images.alt) || byline,
             loadingAspectRatio: imageWithCorrectRatio.ratio,
             width: '77px',
@@ -89,7 +89,15 @@ export const CommentCard = ({
           {headline}
         </ColouredText>
         <Block marginBlockStart="space010">
-          {flag && <TagAndFlag flag={flag} />}
+          {flag && (
+            <TagAndFlag
+              flag={flag}
+              flagOverrides={{
+                typographyPreset: 'utilityMeta005',
+                stylePreset: 'inkSubtle'
+              }}
+            />
+          )}
         </Block>
       </CardContent>
     </CardComposable>

@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.118.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.117.1...@times-components/ts-newskit@1.118.0) (2023-10-19)
+
+
+### Features
+
+* **TMRX-1494:** update mobile web tokens ([#3589](https://github.com/newsuk/times-components/issues/3589)) ([0615fe2](https://github.com/newsuk/times-components/commit/0615fe2dbf20be4817f3e8be5b58d64401a52250))
+
+
+
+
+
+## [1.117.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.117.0...@times-components/ts-newskit@1.117.1) (2023-10-19)
+
+
+### Bug Fixes
+
+* **TMPZ-192:** Toggle dynamic height on FAQ component ([#3603](https://github.com/newsuk/times-components/issues/3603)) ([095d074](https://github.com/newsuk/times-components/commit/095d0747dc5dac8bb183ad5b00595898c7f435a2))
+
+
+
+
+
+# [1.117.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.116.1...@times-components/ts-newskit@1.117.0) (2023-10-18)
+
+
+### Features
+
+* **TMRX-1585:** Resize images on new slices ([#3599](https://github.com/newsuk/times-components/issues/3599)) ([2c728bb](https://github.com/newsuk/times-components/commit/2c728bb32a5e3f76727a41846e19f16e28b10428))
+
+
+
+
+
+## [1.116.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.116.0...@times-components/ts-newskit@1.116.1) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
 # [1.116.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.115.0...@times-components/ts-newskit@1.116.0) (2023-10-17)
 
 

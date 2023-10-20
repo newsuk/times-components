@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.12.2](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.1...@times-components/jest-serializer@3.12.2) (2023-10-19)
+
+
+### Bug Fixes
+
+* **TMPZ-192:** Toggle dynamic height on FAQ component ([#3603](https://github.com/newsuk/times-components/issues/3603)) ([095d074](https://github.com/newsuk/times-components/commit/095d0747dc5dac8bb183ad5b00595898c7f435a2))
+
+
+
+
+
+## [3.12.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.0...@times-components/jest-serializer@3.12.1) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
 # [3.12.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.11.0...@times-components/jest-serializer@3.12.0) (2023-08-18)
 
 

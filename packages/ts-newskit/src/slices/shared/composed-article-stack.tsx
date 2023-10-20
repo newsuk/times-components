@@ -27,7 +27,12 @@ export const ComposedArticleStack = ({
   return (
     <>
       <FullWidthHidden lg xl>
-        <FullWidthBlock>
+        <FullWidthBlock
+          paddingInlineStart={{
+            xs: 'space045',
+            md: 'space000'
+          }}
+        >
           <Divider
             overrides={{
               marginBlockEnd: 'space040',
