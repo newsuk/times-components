@@ -9,9 +9,10 @@ import {
 } from "@times-components/jest-serializer";
 import adConfig from "../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../src/ad";
+import { AD_DEFAULT_BASE_URL } from "../src/utils/constants";
 
 const props = {
-  contextUrl: "https://www.thetimes.co.uk",
+  contextUrl: AD_DEFAULT_BASE_URL,
   section: "news",
   style: {
     backgroundColor: "red"

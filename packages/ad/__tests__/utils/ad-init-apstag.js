@@ -1,5 +1,6 @@
 import merge from "lodash.merge";
 import { makeAdInitMocks, adInit } from "../../fixtures/ad-init-mocks";
+import { AD_COMPOSER_DEFAULT_AD_UNIT } from "../../src/utils/constants";
 
 const amazonInitExtension = {
   data: {
@@ -97,14 +98,14 @@ export default () => {
       {
         sizes: [[970, 250], [970, 90]],
         slotID: "ad-header",
-        slotName: "/3048/d.thetimes.co.uk"
+        slotName: `/3048/${AD_COMPOSER_DEFAULT_AD_UNIT}`
       }
     ];
     expect(
       init.apstag.getConfig({
         slots,
         networkId: "3048",
-        adUnit: "d.thetimes.co.uk"
+        adUnit: AD_COMPOSER_DEFAULT_AD_UNIT
       })
     ).toEqual(amazonSlotConfig);
   });
@@ -115,7 +116,7 @@ export default () => {
       init.apstag.getConfig({
         slots: [],
         networkId: "3048",
-        adUnit: "d.thetimes.co.uk",
+        adUnit: AD_COMPOSER_DEFAULT_AD_UNIT,
         section: "news"
       })
     ).toEqual([]);
