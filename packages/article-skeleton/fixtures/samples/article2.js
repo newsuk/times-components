@@ -1,3 +1,5 @@
+import { FIXTURES_ARTICLE_BASE_URL, IMAGE_BASE_URL } from "../../constants";
+
 export default {
   data: {
     article: {
@@ -72,8 +74,7 @@ export default {
                 display: "primary",
                 caption: "Camp Mana in Mana Pools National Park",
                 credits: null,
-                url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F073481d4-f446-11eb-8f01-2c678acbb979.jpg?crop=1267%2C845%2C4%2C40",
+                url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F073481d4-f446-11eb-8f01-2c678acbb979.jpg?crop=1267%2C845%2C4%2C40`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0.003125,
                 relativeVerticalOffset: 0.041666666666666664,
@@ -165,8 +166,7 @@ export default {
                 display: "fullwidth",
                 caption: "Visiting elephants on the shore of Kariba",
                 credits: "GETTY IMAGES",
-                url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F29b74e4e-f446-11eb-8f01-2c678acbb979.jpg?crop=5404%2C3603%2C195%2C907",
+                url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F29b74e4e-f446-11eb-8f01-2c678acbb979.jpg?crop=5404%2C3603%2C195%2C907`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0.034367289390200915,
                 relativeVerticalOffset: 0.19764654608847243,
@@ -222,8 +222,7 @@ export default {
                 caption:
                   "Staying at Camp Mana is not a boutique experience — and all the better for it",
                 credits: "ALAMY",
-                url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F085039d2-f446-11eb-8f01-2c678acbb979.jpg?crop=5760%2C3840%2C0%2C0",
+                url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F085039d2-f446-11eb-8f01-2c678acbb979.jpg?crop=5760%2C3840%2C0%2C0`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
@@ -307,8 +306,7 @@ export default {
                 display: "primary",
                 caption: "Jane with her family",
                 credits: "GEORGINA MARA WOOD",
-                url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbcf58a8c-f445-11eb-8f01-2c678acbb979.jpg?crop=6240%2C4160%2C0%2C0",
+                url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbcf58a8c-f445-11eb-8f01-2c678acbb979.jpg?crop=6240%2C4160%2C0%2C0`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
@@ -363,8 +361,7 @@ export default {
                 display: "primary",
                 caption: "Kariba teems with hippos and crocodiles",
                 credits: "GETTY IMAGES",
-                url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52287826-f446-11eb-8f01-2c678acbb979.jpg?crop=5197%2C3465%2C0%2C0",
+                url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52287826-f446-11eb-8f01-2c678acbb979.jpg?crop=5197%2C3465%2C0%2C0`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
@@ -419,8 +416,7 @@ export default {
                 display: "fullwidth",
                 caption: "Sunset over the Kariba reservoir",
                 credits: null,
-                url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1c4b820c-f446-11eb-8f01-2c678acbb979.jpg?crop=5877%2C3918%2C0%2C0",
+                url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1c4b820c-f446-11eb-8f01-2c678acbb979.jpg?crop=5877%2C3918%2C0%2C0`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
@@ -555,29 +551,24 @@ export default {
         credits: "ALAMY",
         crop169: {
           ratio: "16:9",
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4ae53f0e-f446-11eb-8f01-2c678acbb979.jpg?crop=3346%2C1882%2C624%2C1560"
+          url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4ae53f0e-f446-11eb-8f01-2c678acbb979.jpg?crop=3346%2C1882%2C624%2C1560`
         },
         crop32: {
           ratio: "3:2",
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4ae53f0e-f446-11eb-8f01-2c678acbb979.jpg?crop=2891%2C1927%2C643%2C1519"
+          url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4ae53f0e-f446-11eb-8f01-2c678acbb979.jpg?crop=2891%2C1927%2C643%2C1519`
         },
         crop1251: null,
         crop11: {
           ratio: "1:1",
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4ae53f0e-f446-11eb-8f01-2c678acbb979.jpg?crop=1835%2C1835%2C812%2C1587"
+          url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4ae53f0e-f446-11eb-8f01-2c678acbb979.jpg?crop=1835%2C1835%2C812%2C1587`
         },
         crop45: {
           ratio: "4:5",
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4ae53f0e-f446-11eb-8f01-2c678acbb979.jpg?crop=2769%2C3461%2C1211%2C0"
+          url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4ae53f0e-f446-11eb-8f01-2c678acbb979.jpg?crop=2769%2C3461%2C1211%2C0`
         },
         crop23: {
           ratio: "2:3",
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4ae53f0e-f446-11eb-8f01-2c678acbb979.jpg?crop=2307%2C3461%2C1442%2C0"
+          url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4ae53f0e-f446-11eb-8f01-2c678acbb979.jpg?crop=2307%2C3461%2C1442%2C0`
         },
         crop2251: null,
         id: "ef2e5137-49c4-456d-b9d8-1a2e95efc653",
@@ -592,12 +583,10 @@ export default {
             article: {
               leadAsset: {
                 crop169: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F76d7a14c-b323-11eb-9055-64edaa2be8dd.jpg?crop=3000%2C1687%2C0%2C156"
+                  url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F76d7a14c-b323-11eb-9055-64edaa2be8dd.jpg?crop=3000%2C1687%2C0%2C156`
                 },
                 crop32: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F76d7a14c-b323-11eb-9055-64edaa2be8dd.jpg?crop=3000%2C2000%2C0%2C0"
+                  url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F76d7a14c-b323-11eb-9055-64edaa2be8dd.jpg?crop=3000%2C2000%2C0%2C0`
                 },
                 id: "00da340e-c9ac-463c-903c-032fbf6625f2",
                 title: "DUMA TAU"
@@ -632,8 +621,7 @@ export default {
               shortIdentifier: "pvvhzq3r9",
               shortHeadline: "Botswana’s revamped star safari camp",
               slug: "dumatau-botswanas-revamped-safari-camp",
-              url:
-                "https://www.thetimes.co.uk/article/dumatau-botswanas-revamped-safari-camp-pvvhzq3r9",
+              url: `${FIXTURES_ARTICLE_BASE_URL}/article/dumatau-botswanas-revamped-safari-camp-pvvhzq3r9`,
               summary105: [
                 {
                   name: "paragraph",
@@ -731,12 +719,10 @@ export default {
             article: {
               leadAsset: {
                 crop169: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4d125740-a427-11eb-94df-c582ee5e0ca2.jpg?crop=1600%2C900%2C0%2C0"
+                  url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4d125740-a427-11eb-94df-c582ee5e0ca2.jpg?crop=1600%2C900%2C0%2C0`
                 },
                 crop32: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4b60c09e-a427-11eb-94df-c582ee5e0ca2.jpg?crop=1500%2C1000%2C0%2C0"
+                  url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4b60c09e-a427-11eb-94df-c582ee5e0ca2.jpg?crop=1500%2C1000%2C0%2C0`
                 },
                 id: "be6b9b68-91b3-489b-bce7-24c2fabfd0a4",
                 title: ""
@@ -772,8 +758,7 @@ export default {
               shortHeadline:
                 "Segera Retreat: Luxury safari lodge in northern Kenya",
               slug: "segera-retreat-luxury-safari-lodge-in-northern-kenya",
-              url:
-                "https://www.thetimes.co.uk/article/segera-retreat-luxury-safari-lodge-in-northern-kenya-swxfnl2rx",
+              url: `${FIXTURES_ARTICLE_BASE_URL}/article/segera-retreat-luxury-safari-lodge-in-northern-kenya-swxfnl2rx`,
               summary105: [
                 {
                   name: "paragraph",
@@ -871,12 +856,10 @@ export default {
             article: {
               leadAsset: {
                 crop169: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fd9abc906-81d2-11eb-b349-cb6bdd05284f.jpg?crop=2667%2C1500%2C0%2C0"
+                  url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fd9abc906-81d2-11eb-b349-cb6bdd05284f.jpg?crop=2667%2C1500%2C0%2C0`
                 },
                 crop32: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fd9abc906-81d2-11eb-b349-cb6bdd05284f.jpg?crop=2250%2C1500%2C209%2C0"
+                  url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fd9abc906-81d2-11eb-b349-cb6bdd05284f.jpg?crop=2250%2C1500%2C209%2C0`
                 },
                 id: "1b77becc-ac2b-4ff9-9dad-0c6575afae87",
                 title:
@@ -915,8 +898,7 @@ export default {
                 "Pride of Botswana: the safari camps putting local people first",
               slug:
                 "pride-of-botswana-the-safari-camps-putting-local-people-first",
-              url:
-                "https://www.thetimes.co.uk/article/pride-of-botswana-the-safari-camps-putting-local-people-first-nnkd9805n",
+              url: `${FIXTURES_ARTICLE_BASE_URL}/article/pride-of-botswana-the-safari-camps-putting-local-people-first-nnkd9805n`,
               summary105: [
                 {
                   name: "paragraph",
@@ -1072,8 +1054,7 @@ export default {
       shortIdentifier: "d63l0pk5d",
       shortHeadline: "On safari in Zimbabwe’s Mana Pools National Park",
       slug: "on-safari-in-zimbabwes-mana-pools-national-park",
-      url:
-        "https://www.thetimes.co.uk/article/on-safari-in-zimbabwes-mana-pools-national-park-d63l0pk5d"
+      url: `${FIXTURES_ARTICLE_BASE_URL}/article/on-safari-in-zimbabwes-mana-pools-national-park-d63l0pk5d`
     }
   }
 };

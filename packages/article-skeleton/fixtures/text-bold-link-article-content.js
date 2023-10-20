@@ -1,3 +1,5 @@
+import { FIXTURES_ARTICLE_BASE_URL } from "../constants";
+
 export default [
   {
     name: "paragraph",
@@ -15,8 +17,7 @@ export default [
           {
             name: "link",
             attributes: {
-              href:
-                "https://www.thetimes.co.uk/article/review-becoming-by-michelle-obama-the-astonishing-pressures-of-being-first-lady-zb6jkpffd",
+              href: `${FIXTURES_ARTICLE_BASE_URL}/article/review-becoming-by-michelle-obama-the-astonishing-pressures-of-being-first-lady-zb6jkpffd`,
               type: "article",
               canonicalId:
                 "review-becoming-by-michelle-obama-the-astonishing-pressures-of-being-first-lady-zb6jkpffd"
