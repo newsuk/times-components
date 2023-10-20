@@ -1,0 +1,1 @@
+export const SHOWCASE_IMAGE_BASE_URL = "https://www.thetimes.co.uk";
