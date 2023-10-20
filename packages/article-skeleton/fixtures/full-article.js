@@ -1,3 +1,4 @@
+import { FIXTURES_ARTICLE_BASE_URL, IMAGE_BASE_URL } from "../constants";
 import defaultContent from "./full-article-content";
 
 export const bylineWithLink = () => [
@@ -6,7 +7,7 @@ export const bylineWithLink = () => [
       {
         author: {
           image:
-            "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+            `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200`,
           jobTitle: "Asia Editor",
           twitter: "dicklp",
           slug: "richard-lloyd-parry",
@@ -146,7 +147,7 @@ export const longContent = [
       display: "primary",
       ratio: "1500:1000",
       url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0"
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -186,7 +187,7 @@ export const longContent = [
       display: "secondary",
       ratio: "3:2",
       url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0"
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -231,7 +232,7 @@ export const longContent = [
       display: "inline",
       ratio: "1:1.50",
       url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0"
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -257,7 +258,7 @@ export const longContent = [
       display: "inline",
       ratio: "3:2",
       url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0"
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -763,7 +764,7 @@ const defaultBylines = [
   {
     author: {
       image:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200`,
       jobTitle: "Asia Editor",
       twitter: "dicklp",
       slug: "richard-lloyd-parry",
@@ -807,7 +808,7 @@ const defaultBylines = [
   {
     author: {
       image:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200`,
       jobTitle: "Asia Editor",
       twitter: "dicklp",
       slug: "richard-lloyd-parry",
@@ -927,7 +928,7 @@ const defaultDescriptionMarkup = [
     children: [
       {
         attributes: {
-          href: "https://www.thetimes.co.uk/topic/boris-johnson",
+          href: `${FIXTURES_ARTICLE_BASE_URL}/topic/boris-johnson`,
           type: "topic"
         },
         children: [
@@ -954,7 +955,7 @@ const defaultDescriptionMarkup = [
           canonicalId:
             "independent-group-change-uk-gets-approval-but-makes-a-hash-of-logo-hwm0bxsxn",
           href:
-            "https://www.thetimes.co.uk/article/independent-group-change-uk-gets-approval-but-makes-a-hash-of-logo-hwm0bxsxn",
+            `${FIXTURES_ARTICLE_BASE_URL}/article/independent-group-change-uk-gets-approval-but-makes-a-hash-of-logo-hwm0bxsxn`,
           type: "article"
         },
         children: [
@@ -1081,7 +1082,7 @@ const defaultRelatedArticleSlice = {
           crop169: {
             __typename: "Crop",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104"
+              `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104`
           },
           id: "ea16d744-cb4a-11e4-a202-50ac5def393b",
           title: "TMS: Pratchett’s law of the jungle"
@@ -1352,7 +1353,7 @@ const defaultRelatedArticleSlice = {
           crop169: {
             __typename: "Crop",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108"
+              `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108`
           },
           id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
           title: "Rise of centenarian drivers as elderly push on"
@@ -1541,13 +1542,13 @@ const defaultRelatedArticleSlice = {
               __typename: "Crop",
               ratio: "3:2",
               url:
-                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0"
+                `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0`
             },
             crop169: {
               __typename: "Crop",
               ratio: "16:9",
               url:
-                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0"
+                `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0`
             },
             id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
             title: ""
@@ -1650,7 +1651,7 @@ const defaultRelatedArticleSlice = {
           }
         ],
         url:
-          "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23"
+          `${FIXTURES_ARTICLE_BASE_URL}/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23`
       }
     }
   ],
@@ -1689,7 +1690,7 @@ const defaultTopics = [
     slug: "rugby-union"
   }
 ];
-const defaultUrl = "https://www.thetimes.co.uk/";
+const defaultUrl = `${FIXTURES_ARTICLE_BASE_URL}/`;
 const defaultTemplate = "mainstandard";
 const defaultTiles = [
   {
@@ -1821,7 +1822,7 @@ export const testFixture = {
     {
       author: {
         image:
-          "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+          `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200`,
         jobTitle: "Asia Editor",
         twitter: "dicklp",
         slug: "richard-lloyd-parry",
@@ -2020,7 +2021,7 @@ export const contentWithItalicText = [
         name: "link",
         attributes: {
           href:
-            "https://www.thetimes.co.uk/article/what-next-for-james-bond-m0s5vjkxz",
+            `${FIXTURES_ARTICLE_BASE_URL}/article/what-next-for-james-bond-m0s5vjkxz`,
           type: "article",
           canonicalId: "what-next-for-james-bond-m0s5vjkxz"
         },

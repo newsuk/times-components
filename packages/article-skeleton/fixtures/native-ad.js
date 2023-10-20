@@ -1,3 +1,5 @@
+import { IMAGE_BASE_URL } from "../constants";
+
 const contentWithOutAd = [
   {
     name: "paragraph",
@@ -25,7 +27,7 @@ const contentWithOutAd = [
           caption: null,
           credits: null,
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535",
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535`,
           ratio: "1000:1000",
           relativeHorizontalOffset: 0.19904240766073872,
           relativeVerticalOffset: 0.18278100444140757,
@@ -105,7 +107,7 @@ const contentWithAd = [
           caption: null,
           credits: null,
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535",
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535`,
           ratio: "1000:1000",
           relativeHorizontalOffset: 0.19904240766073872,
           relativeVerticalOffset: 0.18278100444140757,
@@ -189,7 +191,7 @@ const contentWithoutParagraphs = [
           caption: null,
           credits: null,
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535",
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535`,
           ratio: "1000:1000",
           relativeHorizontalOffset: 0.19904240766073872,
           relativeVerticalOffset: 0.18278100444140757,

@@ -1,3 +1,5 @@
+import { IMAGE_BASE_URL } from "../constants";
+
 export const content = [
   {
     children: [
@@ -82,7 +84,7 @@ export const paywallContentWithNewsletter = {
             copy:
               "We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.",
             imageUri:
-              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
+              `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800`
           }
         }
       },

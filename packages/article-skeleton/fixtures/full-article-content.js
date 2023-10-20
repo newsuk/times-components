@@ -1,3 +1,5 @@
+import { FIXTURES_ARTICLE_BASE_URL, IMAGE_BASE_URL, UAT_IMAGE_BASE_URL } from "../constants";
+
 export default [
   {
     attributes: {
@@ -17,7 +19,7 @@ export default [
               },
               {
                 attributes: {
-                  href: "https://www.thetimes.co.uk/",
+                  href: `${FIXTURES_ARTICLE_BASE_URL}/`,
                   target: "_blank",
                   type: "article"
                 },
@@ -140,7 +142,7 @@ export default [
               label: "Straight in your inbox",
               headline: "Politics. Explained.",
               imageUri:
-                "https://www.uat-thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fsi-eb%2Fweb%2Fbin%2F852d8c90-9385-4b6c-9b4c-150353ada3d4.jpg?resize=1001"
+                `${UAT_IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fsi-eb%2Fweb%2Fbin%2F852d8c90-9385-4b6c-9b4c-150353ada3d4.jpg?resize=1001`
             },
             value: "newsletter-puff"
           }
@@ -501,7 +503,7 @@ export default [
           display: "inline",
           ratio: "1:1.50",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0`
         },
         children: [],
         name: "image"
@@ -527,7 +529,7 @@ export default [
           display: "inline",
           ratio: "3:2",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0`
         },
         children: [],
         name: "image"

@@ -1,3 +1,5 @@
+import { FIXTURES_ARTICLE_BASE_URL } from "../constants";
+
 export default [
   {
     name: "paragraph",
@@ -6,7 +8,7 @@ export default [
         name: "link",
         attributes: {
           href:
-            "https://www.thetimes.co.uk/article/i-like-it-boiling-hot-says-twitter-boss-jack-dorsey-cjclqjpb2",
+            `${FIXTURES_ARTICLE_BASE_URL}/article/i-like-it-boiling-hot-says-twitter-boss-jack-dorsey-cjclqjpb2`,
           type: "article",
           canonicalId:
             "i-like-it-boiling-hot-says-twitter-boss-jack-dorsey-cjclqjpb2"

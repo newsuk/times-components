@@ -1,3 +1,5 @@
+import { FIXTURES_ARTICLE_BASE_URL, IMAGE_BASE_URL } from "../../constants";
+
 export default {
   data: {
     article: {
@@ -142,7 +144,7 @@ export default {
                   "Eyers confessed that he wished he had received the vaccine",
                 credits: null,
                 url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6060bb00-f523-11eb-8f01-2c678acbb979.jpg?crop=1080%2C1080%2C0%2C0",
+                  `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6060bb00-f523-11eb-8f01-2c678acbb979.jpg?crop=1080%2C1080%2C0%2C0`,
                 ratio: "1000:1000",
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
@@ -201,7 +203,7 @@ export default {
                   ],
                   attributes: {
                     href:
-                      "https://www.thetimes.co.uk/article/all-children-over-16-will-be-offered-covid-jabs-235m87qj2",
+                      `${FIXTURES_ARTICLE_BASE_URL}/article/all-children-over-16-will-be-offered-covid-jabs-235m87qj2`,
                     type: "article",
                     canonicalId:
                       "all-children-over-16-will-be-offered-covid-jabs-235m87qj2"
@@ -275,28 +277,28 @@ export default {
         crop169: {
           ratio: "16:9",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=1018%2C573%2C20%2C154"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=1018%2C573%2C20%2C154`
         },
         crop32: {
           ratio: "3:2",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=1018%2C679%2C22%2C150"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=1018%2C679%2C22%2C150`
         },
         crop1251: null,
         crop11: {
           ratio: "1:1",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=558%2C558%2C352%2C132"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=558%2C558%2C352%2C132`
         },
         crop45: {
           ratio: "4:5",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=764%2C955%2C263%2C98"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=764%2C955%2C263%2C98`
         },
         crop23: {
           ratio: "2:3",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=524%2C786%2C371%2C140"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=524%2C786%2C371%2C140`
         },
         crop2251: null,
         id: "aad8cdea-43f7-46b9-85a6-30c1e5d5b736",
@@ -311,11 +313,11 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b0dbf90-f4a0-11eb-8f01-2c678acbb979.jpg?crop=5805%2C3265%2C458%2C825"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b0dbf90-f4a0-11eb-8f01-2c678acbb979.jpg?crop=5805%2C3265%2C458%2C825`
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b0dbf90-f4a0-11eb-8f01-2c678acbb979.jpg?crop=5805%2C3870%2C466%2C457"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b0dbf90-f4a0-11eb-8f01-2c678acbb979.jpg?crop=5805%2C3870%2C466%2C457`
                 },
                 id: "d6b0502d-5f54-413c-8701-907af06bf5c1",
                 title: "Teen girl after her vaccination"
@@ -408,7 +410,7 @@ export default {
               shortHeadline: "All children over 16 will be offered Covid jab",
               slug: "all-children-over-16-will-be-offered-covid-jabs",
               url:
-                "https://www.thetimes.co.uk/article/all-children-over-16-will-be-offered-covid-jabs-235m87qj2",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/all-children-over-16-will-be-offered-covid-jabs-235m87qj2`,
               summary105: [
                 {
                   name: "paragraph",
@@ -556,11 +558,11 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff339b932-f518-11eb-8f01-2c678acbb979.jpg?crop=3500%2C1969%2C0%2C182"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff339b932-f518-11eb-8f01-2c678acbb979.jpg?crop=3500%2C1969%2C0%2C182`
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff339b932-f518-11eb-8f01-2c678acbb979.jpg?crop=3500%2C2333%2C0%2C0"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff339b932-f518-11eb-8f01-2c678acbb979.jpg?crop=3500%2C2333%2C0%2C0`
                 },
                 id: "0533812b-b8b3-442d-8899-4dc8c82d09d1",
                 title: "Coronavirus - Tue Aug 3, 2021"
@@ -618,7 +620,7 @@ export default {
                 "94% of English adults have antibodies, official data shows",
               slug: "94-of-adults-have-covid-antibodies-ons-data-shows",
               url:
-                "https://www.thetimes.co.uk/article/94-of-adults-have-covid-antibodies-ons-data-shows-vrdgr9sqc",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/94-of-adults-have-covid-antibodies-ons-data-shows-vrdgr9sqc`,
               summary105: [
                 {
                   name: "paragraph",
@@ -841,7 +843,7 @@ export default {
       slug:
         "healthy-father-dies-after-refusing-covid-vaccine-and-wishing-he-had-listened",
       url:
-        "https://www.thetimes.co.uk/article/healthy-father-dies-after-refusing-covid-vaccine-and-wishing-he-had-listened-lzsqms0ds"
+        `${FIXTURES_ARTICLE_BASE_URL}/article/healthy-father-dies-after-refusing-covid-vaccine-and-wishing-he-had-listened-lzsqms0ds`
     }
   }
 };

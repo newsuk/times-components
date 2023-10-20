@@ -1,4 +1,5 @@
 import { getIsLiveOrBreakingFlag } from "../data-helper";
+import { IMAGE_BASE_URL } from "../../constants";
 
 const setNewsletterPayload = attributes => ({
   name: "autoNewsletterPuff",
@@ -23,7 +24,7 @@ const newslettersBySection = [
       copy:
         "Our flagship newsletter featuring our top stories and analysis, delivered every morning.",
       imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800`
     })
   },
   {
@@ -34,7 +35,7 @@ const newslettersBySection = [
       copy:
         "Morning and midday updates on financial and economic news from our award-winning business team.",
       imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F306637af-2b6f-48fc-b264-d661b2067818.jpg?resize=800"
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F306637af-2b6f-48fc-b264-d661b2067818.jpg?resize=800`
     })
   },
   {
@@ -45,7 +46,7 @@ const newslettersBySection = [
       copy:
         "The biggest stories from The Times and Sunday Times Scotland, every Saturday.",
       imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5777acf9-363f-4aa3-8176-1ea09cdae7d6.jpg?resize=800"
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5777acf9-363f-4aa3-8176-1ea09cdae7d6.jpg?resize=800`
     })
   },
   {
@@ -56,7 +57,7 @@ const newslettersBySection = [
       copy:
         "Personal finance and investment news from our money experts, every Monday.",
       imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffd44b15f-2fb8-4e5d-b409-315648b10646.jpg?resize=800"
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffd44b15f-2fb8-4e5d-b409-315648b10646.jpg?resize=800`
     })
   },
   {
@@ -67,7 +68,7 @@ const newslettersBySection = [
       copy:
         "Get expert analysis, news and commentary in The Brief, our legal editor's insider's guide, every Thursday.",
       imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F27a231b4-5658-4852-a603-37c5210a946e.jpg?resize=800"
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F27a231b4-5658-4852-a603-37c5210a946e.jpg?resize=800`
     })
   },
   {
@@ -78,7 +79,7 @@ const newslettersBySection = [
       copy:
         "Inside Britain's most exclusive homes, expert advice and what's really happening in the property market, every Monday.",
       imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800"
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800`
     })
   },
   {
@@ -89,7 +90,7 @@ const newslettersBySection = [
       copy:
         "Get expert advice and find out what's really happening in the property market.",
       imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800"
+        `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800`
     })
   },
   {

@@ -15,6 +15,7 @@ import articleFixture, {
   testFixture,
   videoLeadAsset
 } from "../../fixtures/full-article";
+import { IMAGE_BASE_URL } from "../../constants";
 
 jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
 
@@ -48,7 +49,7 @@ const standardArticleWithInlineVideo = articleFixture({
 
 const paidContentClassName = "class-name";
 const logoUrl =
-  "https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png";
+  `${IMAGE_BASE_URL}/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png`;
 
 describe("Head", () => {
   it("outputs correct metadata", () => {
@@ -113,7 +114,7 @@ describe("Head", () => {
               __typename: "AuthorByline",
               author: {
                 image:
-                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                  `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200`,
                 jobTitle: "Asia Editor",
                 twitter: "dicklp",
                 slug: "richard-lloyd-parry",
@@ -160,7 +161,7 @@ describe("Head", () => {
               __typename: "AuthorByline",
               author: {
                 image:
-                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                  `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200`,
                 jobTitle: "Asia Editor",
                 twitter: "dicklp",
                 slug: "richard-lloyd-parry",
@@ -258,7 +259,7 @@ describe("Head", () => {
               __typename: "AuthorByline",
               author: {
                 image:
-                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                  `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200`,
                 jobTitle: "Asia Editor",
                 twitter: "twitterusername",
                 slug: "richard-lloyd-parry",
@@ -302,7 +303,7 @@ describe("Head", () => {
               __typename: "AuthorByline",
               author: {
                 image:
-                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                  `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200`,
                 jobTitle: "Asia Editor",
                 twitter: "",
                 slug: "richard-lloyd-parry",

@@ -1,3 +1,5 @@
+import { FIXTURES_ARTICLE_BASE_URL, IMAGE_BASE_URL } from "../../constants";
+
 export default {
   data: {
     article: {
@@ -45,7 +47,7 @@ export default {
               name: "link",
               attributes: {
                 href:
-                  "https://www.thetimes.co.uk/article/macrons-big-idea-ask-the-voters-to-set-frances-climate-targets-7kd6k0r9c",
+                  `${FIXTURES_ARTICLE_BASE_URL}/article/macrons-big-idea-ask-the-voters-to-set-frances-climate-targets-7kd6k0r9c`,
                 type: "article",
                 canonicalId:
                   "macrons-big-idea-ask-the-voters-to-set-frances-climate-targets-7kd6k0r9c"
@@ -201,7 +203,7 @@ export default {
                   "Champagne producers have bottles in cellars but other areas have little to fall back on after a terrible year",
                 credits: "YIMING WOO/REUTERS",
                 url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F639b89ba-f39f-11eb-8f01-2c678acbb979.jpg?crop=3176%2C2117%2C0%2C0",
+                  `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F639b89ba-f39f-11eb-8f01-2c678acbb979.jpg?crop=3176%2C2117%2C0%2C0`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
@@ -458,28 +460,28 @@ export default {
         crop169: {
           ratio: "16:9",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=5906%2C3322%2C0%2C308"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=5906%2C3322%2C0%2C308`
         },
         crop32: {
           ratio: "3:2",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=5906%2C3937%2C0%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=5906%2C3937%2C0%2C0`
         },
         crop1251: null,
         crop11: {
           ratio: "1:1",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=3937%2C3937%2C984%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=3937%2C3937%2C984%2C0`
         },
         crop45: {
           ratio: "4:5",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=3150%2C3937%2C1378%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=3150%2C3937%2C1378%2C0`
         },
         crop23: {
           ratio: "2:3",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=2625%2C3937%2C1641%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=2625%2C3937%2C1641%2C0`
         },
         crop2251: null,
         id: "1c316133-6eb0-41f1-9640-6abcdc49cc3f",
@@ -494,11 +496,11 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F917c4054-f2eb-11eb-8f01-2c678acbb979.jpg?crop=5184%2C2916%2C0%2C270"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F917c4054-f2eb-11eb-8f01-2c678acbb979.jpg?crop=5184%2C2916%2C0%2C270`
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F917c4054-f2eb-11eb-8f01-2c678acbb979.jpg?crop=5184%2C3456%2C0%2C0"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F917c4054-f2eb-11eb-8f01-2c678acbb979.jpg?crop=5184%2C3456%2C0%2C0`
                 },
                 id: "7a2b4420-29f2-4738-8d1b-cab9b9507e72",
                 title: ""
@@ -537,7 +539,7 @@ export default {
               slug:
                 "changing-climate-gives-vineyards-a-helping-hand-on-the-south-downs",
               url:
-                "https://www.thetimes.co.uk/article/changing-climate-gives-vineyards-a-helping-hand-on-the-south-downs-pgxf9jvw2",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/changing-climate-gives-vineyards-a-helping-hand-on-the-south-downs-pgxf9jvw2`,
               summary105: [
                 {
                   name: "paragraph",
@@ -629,7 +631,7 @@ export default {
                       name: "link",
                       attributes: {
                         href:
-                          "https://www.thetimes.co.uk/article/132-000-leave-jobs-and-return-to-europe-5sslw65kn",
+                          `${FIXTURES_ARTICLE_BASE_URL}/article/132-000-leave-jobs-and-return-to-europe-5sslw65kn`,
                         type: "article",
                         canonicalId:
                           "132-000-leave-jobs-and-return-to-europe-5sslw65kn"
@@ -662,11 +664,11 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc3b4a5b8-e33a-11eb-afdb-c7b01afbcfc5.jpg?crop=1600%2C900%2C0%2C0"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc3b4a5b8-e33a-11eb-afdb-c7b01afbcfc5.jpg?crop=1600%2C900%2C0%2C0`
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc28f8658-e33a-11eb-afdb-c7b01afbcfc5.jpg?crop=1500%2C1000%2C0%2C0"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc28f8658-e33a-11eb-afdb-c7b01afbcfc5.jpg?crop=1500%2C1000%2C0%2C0`
                 },
                 id: "2f6fd274-6262-41bc-b84b-99d8bfa1e0ea",
                 title: ""
@@ -725,7 +727,7 @@ export default {
               slug:
                 "saint-emilions-image-has-turned-sour-for-us-complain-top-chateaux",
               url:
-                "https://www.thetimes.co.uk/article/saint-emilions-image-has-turned-sour-for-us-complain-top-chateaux-vmgbf87rp",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/saint-emilions-image-has-turned-sour-for-us-complain-top-chateaux-vmgbf87rp`,
               summary105: [
                 {
                   name: "paragraph",
@@ -836,11 +838,11 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdface8aa-dff9-11eb-bac0-9597568b601f.jpg?crop=5726%2C3221%2C0%2C298"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdface8aa-dff9-11eb-bac0-9597568b601f.jpg?crop=5726%2C3221%2C0%2C298`
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdface8aa-dff9-11eb-bac0-9597568b601f.jpg?crop=5726%2C3817%2C0%2C0"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdface8aa-dff9-11eb-bac0-9597568b601f.jpg?crop=5726%2C3817%2C0%2C0`
                 },
                 id: "8cb84225-1902-4929-a5c5-8d32d0f3f1ef",
                 title: "CHINA-FRANCE-DIPLOMACY"
@@ -899,7 +901,7 @@ export default {
               slug:
                 "bordeaux-emmanuel-macron-backs-burgundy-french-wine-capital",
               url:
-                "https://www.thetimes.co.uk/article/bordeaux-emmanuel-macron-backs-burgundy-french-wine-capital-tq3wx6zfw",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/bordeaux-emmanuel-macron-backs-burgundy-french-wine-capital-tq3wx6zfw`,
               summary105: [
                 {
                   name: "paragraph",
@@ -1129,7 +1131,7 @@ export default {
       slug:
         "fungus-is-the-bogeyman-for-this-years-harvest-in-champagne-and-alsace",
       url:
-        "https://www.thetimes.co.uk/article/fungus-is-the-bogeyman-for-this-years-harvest-in-champagne-and-alsace-tclz58csj"
+        `${FIXTURES_ARTICLE_BASE_URL}/article/fungus-is-the-bogeyman-for-this-years-harvest-in-champagne-and-alsace-tclz58csj`
     }
   }
 };

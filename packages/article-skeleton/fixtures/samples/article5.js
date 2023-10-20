@@ -1,3 +1,5 @@
+import { FIXTURES_ARTICLE_BASE_URL, IMAGE_BASE_URL } from "../../constants";
+
 export default {
   data: {
     article: {
@@ -30,7 +32,7 @@ export default {
             {
               name: "link",
               attributes: {
-                href: "https://www.thetimes.co.uk/sport/olympics"
+                href: `${FIXTURES_ARTICLE_BASE_URL}/sport/olympics`
               },
               children: [
                 {
@@ -74,7 +76,7 @@ export default {
               "Tamberi appeared on the track an hour after his success and let out a joyous scream",
             credits: "Fred Lee/Getty Images",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa619bdf6-f2dd-11eb-a2a3-afea84050239.jpg?crop=8640%2C5760%2C0%2C0",
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa619bdf6-f2dd-11eb-a2a3-afea84050239.jpg?crop=8640%2C5760%2C0%2C0`,
             ratio: "1500:1000",
             relativeHorizontalOffset: 0,
             relativeVerticalOffset: 0,
@@ -194,7 +196,7 @@ export default {
                   ],
                   attributes: {
                     href:
-                      "https://www.thetimes.co.uk/article/local-hero-mutaz-essa-barshim-delivers-in-style-in-front-of-home-crowd-htf5knzhh",
+                      `${FIXTURES_ARTICLE_BASE_URL}/article/local-hero-mutaz-essa-barshim-delivers-in-style-in-front-of-home-crowd-htf5knzhh`,
                     type: "article",
                     canonicalId:
                       "local-hero-mutaz-essa-barshim-delivers-in-style-in-front-of-home-crowd-htf5knzhh"
@@ -260,7 +262,7 @@ export default {
                   ],
                   attributes: {
                     href:
-                      "https://www.thetimes.co.uk/article/tokyo-olympics-lamont-marcell-jacobs-takes-100m-gold-for-italy-97p0dppqh",
+                      `${FIXTURES_ARTICLE_BASE_URL}/article/tokyo-olympics-lamont-marcell-jacobs-takes-100m-gold-for-italy-97p0dppqh`,
                     type: "article",
                     canonicalId:
                       "tokyo-olympics-lamont-marcell-jacobs-takes-100m-gold-for-italy-97p0dppqh"
@@ -285,7 +287,7 @@ export default {
                   "Tamberi succeeded at every height up to 2.37m but both he and Barshim squandered all three attempts at 2cm higher",
                 credits: "Fred Lee/Getty Images",
                 url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Faf1e2372-f2e9-11eb-a2a3-afea84050239.jpg?crop=8538%2C5692%2C0%2C0",
+                  `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Faf1e2372-f2e9-11eb-a2a3-afea84050239.jpg?crop=8538%2C5692%2C0%2C0`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
@@ -379,7 +381,7 @@ export default {
             {
               name: "link",
               attributes: {
-                href: "https://www.thetimes.co.uk/sport/olympics"
+                href: `${FIXTURES_ARTICLE_BASE_URL}/sport/olympics`
               },
               children: [
                 {
@@ -439,28 +441,28 @@ export default {
           crop169: {
             ratio: "16:9",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1aedf404-f2f1-11eb-9beb-a8c8694a90e3.jpg?crop=1280%2C720%2C0%2C0"
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1aedf404-f2f1-11eb-9beb-a8c8694a90e3.jpg?crop=1280%2C720%2C0%2C0`
           },
           crop32: {
             ratio: "3:2",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1aedf404-f2f1-11eb-9beb-a8c8694a90e3.jpg?crop=1080%2C720%2C100%2C0"
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1aedf404-f2f1-11eb-9beb-a8c8694a90e3.jpg?crop=1080%2C720%2C100%2C0`
           },
           crop1251: null,
           crop11: {
             ratio: "1:1",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1aedf404-f2f1-11eb-9beb-a8c8694a90e3.jpg?crop=720%2C720%2C280%2C0"
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1aedf404-f2f1-11eb-9beb-a8c8694a90e3.jpg?crop=720%2C720%2C280%2C0`
           },
           crop45: {
             ratio: "4:5",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1aedf404-f2f1-11eb-9beb-a8c8694a90e3.jpg?crop=576%2C720%2C352%2C0"
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1aedf404-f2f1-11eb-9beb-a8c8694a90e3.jpg?crop=576%2C720%2C352%2C0`
           },
           crop23: {
             ratio: "2:3",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1aedf404-f2f1-11eb-9beb-a8c8694a90e3.jpg?crop=480%2C720%2C400%2C0"
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1aedf404-f2f1-11eb-9beb-a8c8694a90e3.jpg?crop=480%2C720%2C400%2C0`
           },
           crop2251: null,
           id: "33a88054-86d2-474e-9c50-65a7bce4df60",
@@ -478,11 +480,11 @@ export default {
                 posterImage: {
                   crop169: {
                     url:
-                      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb39276e4-f2b5-11eb-8f01-2c678acbb979.jpg?crop=3500%2C1969%2C0%2C102"
+                      `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb39276e4-f2b5-11eb-8f01-2c678acbb979.jpg?crop=3500%2C1969%2C0%2C102`
                   },
                   crop32: {
                     url:
-                      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb39276e4-f2b5-11eb-8f01-2c678acbb979.jpg?crop=3500%2C2333%2C0%2C0"
+                      `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb39276e4-f2b5-11eb-8f01-2c678acbb979.jpg?crop=3500%2C2333%2C0%2C0`
                   },
                   id: "9a592588-3420-42e1-ae85-562fcb2ad767",
                   title: "Tokyo 2020 Olympic Games - Day Nine"
@@ -542,7 +544,7 @@ export default {
               slug:
                 "tokyo-olympics-max-whitlock-has-more-tricks-up-his-sleeve-after-virtuoso-gold",
               url:
-                "https://www.thetimes.co.uk/article/tokyo-olympics-max-whitlock-has-more-tricks-up-his-sleeve-after-virtuoso-gold-6v3s8w3p7",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/tokyo-olympics-max-whitlock-has-more-tricks-up-his-sleeve-after-virtuoso-gold-6v3s8w3p7`,
               summary105: [
                 {
                   name: "paragraph",
@@ -642,11 +644,11 @@ export default {
                 posterImage: {
                   crop169: {
                     url:
-                      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F582b758a-f2b0-11eb-a2a3-afea84050239.jpg?crop=4104%2C2309%2C0%2C139"
+                      `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F582b758a-f2b0-11eb-a2a3-afea84050239.jpg?crop=4104%2C2309%2C0%2C139`
                   },
                   crop32: {
                     url:
-                      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F582b758a-f2b0-11eb-a2a3-afea84050239.jpg?crop=3909%2C2606%2C89%2C48"
+                      `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F582b758a-f2b0-11eb-a2a3-afea84050239.jpg?crop=3909%2C2606%2C89%2C48`
                   },
                   id: "ef2a4eb2-b375-4ea6-ae54-c39aa4b8bb7a",
                   title: "Cycling - BMX Freestyle - Olympics: Day 9"
@@ -706,7 +708,7 @@ export default {
               slug:
                 "tokyo-olympics-charlotte-worthington-flips-script-with-an-audacious-piece-of-skill",
               url:
-                "https://www.thetimes.co.uk/article/tokyo-olympics-charlotte-worthington-flips-script-with-an-audacious-piece-of-skill-03t6zznkz",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/tokyo-olympics-charlotte-worthington-flips-script-with-an-audacious-piece-of-skill-03t6zznkz`,
               summary105: [
                 {
                   name: "paragraph",
@@ -919,7 +921,7 @@ export default {
       slug:
         "olympic-spirit-the-winner-after-high-jumpers-barshim-of-qatar-and-tamberi-of-italy-share-gold",
       url:
-        "https://www.thetimes.co.uk/article/olympic-spirit-the-winner-after-high-jumpers-barshim-of-qatar-and-tamberi-of-italy-share-gold-n7dszfmk9"
+        `${FIXTURES_ARTICLE_BASE_URL}/article/olympic-spirit-the-winner-after-high-jumpers-barshim-of-qatar-and-tamberi-of-italy-share-gold-n7dszfmk9`
     }
   }
 };

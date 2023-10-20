@@ -1,3 +1,5 @@
+import { FIXTURES_ARTICLE_BASE_URL, IMAGE_BASE_URL } from "../../constants";
+
 export default {
   data: {
     article: {
@@ -123,7 +125,7 @@ export default {
                 caption: "Madsen crashed into Tanfield’s back wheel",
                 credits: null,
                 url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa7a06232-f450-11eb-a2a3-afea84050239.jpg?crop=1003%2C669%2C129%2C141",
+                  `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa7a06232-f450-11eb-a2a3-afea84050239.jpg?crop=1003%2C669%2C129%2C141`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0.10078125,
                 relativeVerticalOffset: 0.146875,
@@ -221,28 +223,28 @@ export default {
         crop169: {
           ratio: "16:9",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=4497%2C2530%2C0%2C262"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=4497%2C2530%2C0%2C262`
         },
         crop32: {
           ratio: "3:2",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=4497%2C2998%2C0%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=4497%2C2998%2C0%2C0`
         },
         crop1251: null,
         crop11: {
           ratio: "1:1",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=2719%2C2719%2C327%2C103"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=2719%2C2719%2C327%2C103`
         },
         crop45: {
           ratio: "4:5",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F60d375fa-f44c-11eb-a2a3-afea84050239.jpg?crop=2298%2C2873%2C71%2C271"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F60d375fa-f44c-11eb-a2a3-afea84050239.jpg?crop=2298%2C2873%2C71%2C271`
         },
         crop23: {
           ratio: "2:3",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F60d375fa-f44c-11eb-a2a3-afea84050239.jpg?crop=2413%2C3619%2C0%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F60d375fa-f44c-11eb-a2a3-afea84050239.jpg?crop=2413%2C3619%2C0%2C0`
         },
         crop2251: null,
         id: "febd425e-4eab-4ac5-b7d9-04fe3a975492",
@@ -257,11 +259,11 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4529%2C2548%2C2%2C450"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4529%2C2548%2C2%2C450`
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4552%2C3035%2C0%2C0"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4552%2C3035%2C0%2C0`
                 },
                 id: "39de6425-613f-42d9-847b-cd49b16d7e65",
                 title:
@@ -321,7 +323,7 @@ export default {
               slug:
                 "tokyo-olympics-jason-kenny-and-laura-kenny-have-to-settle-for-silver-as-records-tumble",
               url:
-                "https://www.thetimes.co.uk/article/tokyo-olympics-jason-kenny-and-laura-kenny-have-to-settle-for-silver-as-records-tumble-lfjbwnpw2",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/tokyo-olympics-jason-kenny-and-laura-kenny-have-to-settle-for-silver-as-records-tumble-lfjbwnpw2`,
               summary105: [
                 {
                   name: "paragraph",
@@ -420,11 +422,11 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffcf2e3a-f445-11eb-8f01-2c678acbb979.jpg?crop=4692%2C2639%2C0%2C186"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffcf2e3a-f445-11eb-8f01-2c678acbb979.jpg?crop=4692%2C2639%2C0%2C186`
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffcf2e3a-f445-11eb-8f01-2c678acbb979.jpg?crop=4010%2C2673%2C267%2C131"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffcf2e3a-f445-11eb-8f01-2c678acbb979.jpg?crop=4010%2C2673%2C267%2C131`
                 },
                 id: "e6d165dd-7219-4923-ae22-f1ffa9ba7053",
                 title: "Tokyo 2020 Olympic Games - Day 11 - Athletics"
@@ -483,7 +485,7 @@ export default {
               slug:
                 "records-tumble-at-tokyo-olympics-thanks-to-cutting-edge-track-and-advances-in-shoe-technology",
               url:
-                "https://www.thetimes.co.uk/article/records-tumble-at-tokyo-olympics-thanks-to-cutting-edge-track-and-advances-in-shoe-technology-qx9bdj0qb",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/records-tumble-at-tokyo-olympics-thanks-to-cutting-edge-track-and-advances-in-shoe-technology-qx9bdj0qb`,
               summary105: [
                 {
                   name: "paragraph",
@@ -583,11 +585,11 @@ export default {
                 posterImage: {
                   crop169: {
                     url:
-                      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1278%2C719%2C0%2C0"
+                      `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1278%2C719%2C0%2C0`
                   },
                   crop32: {
                     url:
-                      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1078%2C719%2C100%2C0"
+                      `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1078%2C719%2C100%2C0`
                   },
                   id: "f874d69b-bd32-4734-b1f0-37f9cd36dec9",
                   title: ""
@@ -627,7 +629,7 @@ export default {
               slug:
                 "tokyo-olympics-britain-steal-gold-from-new-zealand-in-49er-class-race-before-giles-scott-triumphs-in-finn-class",
               url:
-                "https://www.thetimes.co.uk/article/tokyo-olympics-britain-steal-gold-from-new-zealand-in-49er-class-race-before-giles-scott-triumphs-in-finn-class-vxc7d03f8",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/tokyo-olympics-britain-steal-gold-from-new-zealand-in-49er-class-race-before-giles-scott-triumphs-in-finn-class-vxc7d03f8`,
               summary105: [
                 {
                   name: "paragraph",
@@ -860,7 +862,7 @@ export default {
       slug:
         "tokyo-olympics-denmark-crash-denies-great-britain-chance-to-defend-mens-team-pursuit-title",
       url:
-        "https://www.thetimes.co.uk/article/tokyo-olympics-denmark-crash-denies-great-britain-chance-to-defend-mens-team-pursuit-title-nvpkz5z0d"
+        `${FIXTURES_ARTICLE_BASE_URL}/article/tokyo-olympics-denmark-crash-denies-great-britain-chance-to-defend-mens-team-pursuit-title-nvpkz5z0d`
     }
   }
 };

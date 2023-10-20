@@ -1,3 +1,5 @@
+import { FIXTURES_ARTICLE_BASE_URL, IMAGE_BASE_URL } from "../../constants";
+
 export default {
   data: {
     article: {
@@ -209,7 +211,7 @@ export default {
                 caption: "Paterson Joseph as Scrooge in A Christmas Carol",
                 credits: "MANUEL HARLAN",
                 url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F06b62f6c-20dc-11ea-81b4-b78674dd3224.jpg?crop=2250%2C1500%2C0%2C0",
+                  `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F06b62f6c-20dc-11ea-81b4-b78674dd3224.jpg?crop=2250%2C1500%2C0%2C0`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
@@ -451,7 +453,7 @@ export default {
                 caption: "Punky and spunky: Peter Pan",
                 credits: "JOHAN PERSSON",
                 url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F1e163846-20dc-11ea-81b4-b78674dd3224.jpg?crop=2250%2C1500%2C0%2C0",
+                  `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F1e163846-20dc-11ea-81b4-b78674dd3224.jpg?crop=2250%2C1500%2C0%2C0`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
@@ -804,7 +806,7 @@ export default {
                 caption: "Seeing the world: The Snail and the Whale",
                 credits: "TALL STORIES",
                 url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F48e8c4da-20dc-11ea-81b4-b78674dd3224.jpg?crop=1300%2C1625%2C0%2C0",
+                  `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F48e8c4da-20dc-11ea-81b4-b78674dd3224.jpg?crop=1300%2C1625%2C0%2C0`,
                 ratio: "1200:1500",
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
@@ -968,7 +970,7 @@ export default {
                 caption: "Spook at bedtime: The Canterville Ghost",
                 credits: "MANUEL HARLAN",
                 url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F6ce985e0-20dc-11ea-81b4-b78674dd3224.jpg?crop=2250%2C1500%2C0%2C0",
+                  `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F6ce985e0-20dc-11ea-81b4-b78674dd3224.jpg?crop=2250%2C1500%2C0%2C0`,
                 ratio: "1500:1000",
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
@@ -1096,28 +1098,28 @@ export default {
         crop169: {
           ratio: "16:9",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb9b852ac-20fa-11ea-81b4-b78674dd3224.jpg?crop=1600%2C900%2C0%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb9b852ac-20fa-11ea-81b4-b78674dd3224.jpg?crop=1600%2C900%2C0%2C0`
         },
         crop32: {
           ratio: "3:2",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=1500%2C1000%2C0%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=1500%2C1000%2C0%2C0`
         },
         crop1251: null,
         crop11: {
           ratio: "1:1",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=1000%2C1000%2C250%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=1000%2C1000%2C250%2C0`
         },
         crop45: {
           ratio: "4:5",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=800%2C1000%2C350%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=800%2C1000%2C350%2C0`
         },
         crop23: {
           ratio: "2:3",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=667%2C1000%2C417%2C0"
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=667%2C1000%2C417%2C0`
         },
         crop2251: null,
         id: "e1c1f753-64aa-47bd-9726-5ba3a3b05276",
@@ -1132,11 +1134,11 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fe9ffb10e-20bd-11ea-81b4-b78674dd3224.jpg?crop=1600%2C900%2C0%2C0"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fe9ffb10e-20bd-11ea-81b4-b78674dd3224.jpg?crop=1600%2C900%2C0%2C0`
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fee78e692-20bd-11ea-81b4-b78674dd3224.jpg?crop=1500%2C1000%2C0%2C0"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fee78e692-20bd-11ea-81b4-b78674dd3224.jpg?crop=1500%2C1000%2C0%2C0`
                 },
                 id: "00bf1ad1-d244-49c5-8f6e-7650ab8b5211",
                 title: ""
@@ -1178,7 +1180,7 @@ export default {
               slug:
                 "pantomime-games-behind-the-scenes-of-hackney-empires-dick-whittington-and-his-cat",
               url:
-                "https://www.thetimes.co.uk/article/pantomime-games-behind-the-scenes-of-hackney-empires-dick-whittington-and-his-cat-25ffr8xd3",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/pantomime-games-behind-the-scenes-of-hackney-empires-dick-whittington-and-his-cat-25ffr8xd3`,
               summary105: [
                 {
                   name: "paragraph",
@@ -1277,11 +1279,11 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1493%2C840%2C4%2C152"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1493%2C840%2C4%2C152`
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1500%2C1000%2C0%2C0"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1500%2C1000%2C0%2C0`
                 },
                 id: "7781b9f1-6623-4700-9618-d012e2a40028",
                 title: ""
@@ -1317,7 +1319,7 @@ export default {
               shortHeadline: "Theatre, also showing",
               slug: "theatre-also-showing",
               url:
-                "https://www.thetimes.co.uk/article/theatre-also-showing-pldxw3prv",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/theatre-also-showing-pldxw3prv`,
               summary105: [
                 {
                   name: "paragraph",
@@ -1674,11 +1676,11 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F291526ea-1c30-11ea-ac3f-e63900c37a3c.jpg?crop=2667%2C1500%2C0%2C0"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F291526ea-1c30-11ea-ac3f-e63900c37a3c.jpg?crop=2667%2C1500%2C0%2C0`
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F68ca198a-1c35-11ea-aa74-16c5e3bdce26.jpg?crop=1500%2C1000%2C0%2C0"
+                    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F68ca198a-1c35-11ea-aa74-16c5e3bdce26.jpg?crop=1500%2C1000%2C0%2C0`
                 },
                 id: "74462401-0f48-40ef-97cc-8e0c6d8ced76",
                 title: ""
@@ -1710,7 +1712,7 @@ export default {
                     crop: {
                       ratio: "1:1",
                       url:
-                        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0b1ced7e-0bb6-11ea-8f6d-195dfbf668c7.jpg?crop=1429%2C1429%2C1014%2C7"
+                        `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0b1ced7e-0bb6-11ea-8f6d-195dfbf668c7.jpg?crop=1429%2C1429%2C1014%2C7`
                     }
                   }
                 }
@@ -1730,7 +1732,7 @@ export default {
               slug:
                 "theatre-review-three-sisters-lyttelton-theatre-national-cyrano-de-bergerac-playhouse",
               url:
-                "https://www.thetimes.co.uk/article/theatre-review-three-sisters-lyttelton-theatre-national-cyrano-de-bergerac-playhouse-8blm6bf37",
+                `${FIXTURES_ARTICLE_BASE_URL}/article/theatre-review-three-sisters-lyttelton-theatre-national-cyrano-de-bergerac-playhouse-8blm6bf37`,
               summary105: [
                 {
                   name: "paragraph",
@@ -2092,7 +2094,7 @@ export default {
       shortHeadline: "This year’s best Christmas shows",
       slug: "this-years-best-christmas-shows",
       url:
-        "https://www.thetimes.co.uk/article/this-years-best-christmas-shows-z8snn8fr3"
+        `${FIXTURES_ARTICLE_BASE_URL}/article/this-years-best-christmas-shows-z8snn8fr3`
     }
   }
 };
