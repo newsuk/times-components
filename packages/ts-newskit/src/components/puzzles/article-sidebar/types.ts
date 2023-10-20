@@ -1,5 +1,5 @@
 export type Puzzle = {
-  puzzleTitle: string;
-  puzzleUrl: string;
+  title: string;
+  url: string;
   imgUrl: string;
 };

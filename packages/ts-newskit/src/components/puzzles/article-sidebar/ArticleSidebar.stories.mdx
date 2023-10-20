@@ -25,9 +25,9 @@ export const ArticleSidebarStory = ({title, data}) => (
     <ArticleSidebar {...{ title, data }} />
      </CardComposable>
   </NewsKitProvider>
-);
+); 
 
-<Story name="ArticleSidebar" args={{ title: 'Puzzles for you', data:[{puzzleTitle: 'Crossword', puzzleUrl: 'https://www.thetimes.co.uk/puzzles/crossword', imgUrl: 'https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500'}, {puzzleTitle: 'Polygon', puzzleUrl: 'https://www.thetimes.co.uk/puzzles/sudoku', imgUrl: 'https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500'}, {puzzleTitle: 'Sudoku', puzzleUrl: 'https://www.thetimes.co.uk/puzzles/sudoku', imgUrl: 'https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500'}]
+<Story name="ArticleSidebar" args={{ title: 'Puzzles for you', data:[{title: 'Crossword', url: 'https://www.thetimes.co.uk/puzzles/crossword', imgUrl: 'https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500'}, {title: 'Polygon', url: 'https://www.thetimes.co.uk/puzzles/sudoku', imgUrl: 'https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500'}, {title: 'Sudoku', url: 'https://www.thetimes.co.uk/puzzles/sudoku', imgUrl: 'https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500'}]
   
 }}>
   {ArticleSidebarStory.bind({})}

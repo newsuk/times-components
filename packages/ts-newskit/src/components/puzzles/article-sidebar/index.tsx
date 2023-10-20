@@ -12,11 +12,14 @@ import { TextIcon } from './styles';
 import { Puzzle } from './types';
 
 export interface ArticleSideBarProps {
-  title: string;
+  sectionTitle: string;
   data: Puzzle[];
 }
 
-export const ArticleSidebar: FC<ArticleSideBarProps> = ({ title, data }) => {
+export const ArticleSidebar: FC<ArticleSideBarProps> = ({
+  sectionTitle,
+  data
+}) => {
   return (
     <Block
       stylePreset="sidebarCard"
@@ -29,10 +32,10 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({ title, data }) => {
         stylePreset="inkContrast"
         typographyPreset="utilityHeading020"
       >
-        {title}
+        {sectionTitle}
       </TextBlock>
 
-      {data.map(({ puzzleTitle, puzzleUrl, imgUrl }) => (
+      {data.map(({ title, url, imgUrl }) => (
         <CardComposable
           columns="0fr 1fr"
           overrides={{
@@ -54,13 +57,13 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({ title, data }) => {
               }
             }}
           />
-          <CardLink external={false} expand href={puzzleUrl} />
+          <CardLink external={false} expand href={url} />
           <CardContent alignItems="center">
             <TextBlock
               stylePreset="inkContrast"
               typographyPreset="editorialSubheadline010"
             >
-              {puzzleTitle}
+              {title}
             </TextBlock>
             <TextIcon
               stylePreset="inkInformative"
