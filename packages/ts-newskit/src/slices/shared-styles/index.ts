@@ -16,16 +16,16 @@ export const LeadStoryContainer = styled(CustomStackLayout)<{
   className?: string;
 }>`
   ${getMediaQueryFromTheme('xs', 'lg')} {
-    hr[aria-label='article-divider-horizontal'] {
+    .article-container hr[aria-label='article-divider-horizontal'] {
       display: none;
     }
   }
 
   ${getMediaQueryFromTheme('lg', 'xl')} {
-    .article-image {
+    .article-container .article-image {
       display: none;
     }
-    .article-info {
+    .article-container .article-info {
       margin-block-start: 0;
     }
     .composed-article-card-0 .article-info {
