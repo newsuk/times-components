@@ -2,11 +2,12 @@ import React from "react";
 import { fireEvent, render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import Link from "../../src/link";
+import { BASE_DOMAIN } from "../../constants";
 
 describe("Link", () => {
   it("renders the link", () => {
     const { baseElement, getByText, getByRole } = render(
-      <Link onPress={() => {}} url="http://thetimes.co.uk">
+      <Link onPress={() => {}} url={`http://${BASE_DOMAIN}`}>
         The Times
       </Link>
     );
@@ -16,7 +17,7 @@ describe("Link", () => {
   });
   it("renders the link with a target", () => {
     const { baseElement, getByRole } = render(
-      <Link onPress={() => {}} target="_blank" url="http://thetimes.co.uk">
+      <Link onPress={() => {}} target="_blank" url={`http://${BASE_DOMAIN}`}>
         The Times
       </Link>
     );
@@ -26,7 +27,7 @@ describe("Link", () => {
   it("calls onPress prop when clicked", () => {
     const mockOnPress = jest.fn();
     const { getByRole } = render(
-      <Link onPress={mockOnPress} target="_blank" url="http://thetimes.co.uk">
+      <Link onPress={mockOnPress} target="_blank" url={`http://${BASE_DOMAIN}`}>
         The Times
       </Link>
     );
