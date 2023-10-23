@@ -5,12 +5,13 @@ import {
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { StackItem, LeadStoryDivider, BlockItem } from '../shared-styles';
 import {
-  ArticleStackLeadStory,
-  ArticleStackSmall,
-  CustomStackLayout
-} from '../shared';
+  StackItem,
+  LeadStoryDivider,
+  BlockItem,
+  LeadStoryContainer
+} from '../shared-styles';
+import { ArticleStackLeadStory, ArticleStackSmall } from '../shared';
 import {
   FullWidthBlock,
   FullWidthHidden
@@ -18,7 +19,6 @@ import {
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
 import { ClickHandlerType } from '../types';
-import { defaultArticleOptions } from '../../utils/default-article-options';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
@@ -52,23 +52,6 @@ export const LeadStory1 = ({
     imageTop: true
   };
 
-  const articlesWithUnorderedListOptions = {
-    md: {
-      hideImage: true
-    },
-    lg: {
-      hideImage: true
-    },
-    xl: {
-      hideImage: true
-    }
-  };
-
-  const modifiedArticlesWithUnorderedListOptions = {
-    ...defaultArticleOptions,
-    ...articlesWithUnorderedListOptions
-  };
-
   const modifiedLeadArticle = {
     ...leadArticle,
     hasTopBorder: false,
@@ -96,7 +79,7 @@ export const LeadStory1 = ({
       : 'space040';
 
   return (
-    <CustomStackLayout>
+    <LeadStoryContainer>
       <StackItem
         marginBlockEnd={{
           xs: 'space040',
@@ -107,19 +90,11 @@ export const LeadStory1 = ({
           md: '260px'
         }}
       >
-        {Object.entries(modifiedArticlesWithUnorderedListOptions).map(
-          ([breakpoint, opts]) => (
-            <Visible {...{ [breakpoint]: true }}>
-              <LeadArticle
-                article={{
-                  ...modifiedArticlesWithUnorderedList,
-                  ...opts
-                }}
-                clickHandler={clickHandler}
-              />
-            </Visible>
-          )
-        )}
+        <LeadArticle
+          article={modifiedArticlesWithUnorderedList}
+          clickHandler={clickHandler}
+          className="lead-article"
+        />
         {singleArticle && (
           <BlockItem>
             <FullWidthBlock
@@ -219,23 +194,22 @@ export const LeadStory1 = ({
                 marginBlock: 'space040'
               }}
             />
+            <ArticleStackSmall
+              articles={smallArticles}
+              clickHandler={clickHandler}
+            />
           </Visible>
-          <ArticleStackSmall
-            articles={smallArticles}
-            articleOptions={{
-              xs: {
+          <Visible xs sm>
+            <ArticleStackSmall
+              articles={smallArticles}
+              articleOptions={{
                 isFullWidth: true,
                 hasTopBorder: true,
                 hideImage: true
-              },
-              sm: {
-                isFullWidth: true,
-                hasTopBorder: true,
-                hideImage: true
-              }
-            }}
-            clickHandler={clickHandler}
-          />
+              }}
+              clickHandler={clickHandler}
+            />
+          </Visible>
         </Block>
       </StackItem>
       <FullWidthHidden md lg xl>
@@ -248,15 +222,10 @@ export const LeadStory1 = ({
       </FullWidthHidden>
       <Visible md lg xl>
         <ArticleStackLeadStory
-          articleOptions={{
-            xl: {
-              imageRight: true
-            }
-          }}
           modifiedArticles={articles}
           clickHandler={clickHandler}
         />
       </Visible>
-    </CustomStackLayout>
+    </LeadStoryContainer>
   );
 };

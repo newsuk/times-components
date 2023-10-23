@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.118.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.117.1...@times-components/ts-newskit@1.118.0) (2023-10-19)
+
+
+### Features
+
+* **TMRX-1494:** update mobile web tokens ([#3589](https://github.com/newsuk/times-components/issues/3589)) ([0615fe2](https://github.com/newsuk/times-components/commit/0615fe2dbf20be4817f3e8be5b58d64401a52250))
+
+
+
+
+
 ## [1.117.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.117.0...@times-components/ts-newskit@1.117.1) (2023-10-19)
 
 

@@ -5,22 +5,15 @@ import { StackItem, ScrollContainer } from '../shared-styles';
 import { ComposedArticleStack } from './composed-article-stack';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType, StackArticleOptions } from '../types';
-import { defaultArticleOptions } from '../../utils/default-article-options';
 
 export const ArticleStackLarge = ({
   articles,
-  clickHandler,
-  articleOptions
+  clickHandler
 }: {
   articles: ArticleProps[];
   clickHandler: ClickHandlerType;
   articleOptions?: StackArticleOptions;
 }) => {
-  const modifiedArticleOptions = {
-    ...defaultArticleOptions,
-    ...articleOptions
-  };
-
   const articleGrid = (
     <GridLayout
       columns={{
@@ -33,37 +26,31 @@ export const ArticleStackLarge = ({
       columnGap={{ xs: 'space040', xl: 'space060' }}
       rowGap="space040"
       data-testid="article-container"
+      className="article-container"
     >
       {articles.map((article: ArticleProps, articleIndex, articleArr) => {
-        const topArticle = articleIndex === 0;
-
-        const lgOptions = {
-          hasTopBorder: articleIndex > 0,
-          hideImage: !topArticle || article.hideImage
-        };
-
-        const xlOptions = {
-          hasTopBorder: articleIndex > 0,
-          hideImage: article.hideImage
-        };
-
         return (
           <React.Fragment key={article.headline}>
-            {Object.entries(modifiedArticleOptions).map(
-              ([breakpoint, opts]) => (
-                <Visible {...{ [breakpoint]: true }}>
-                  <Article
-                    article={{
-                      ...clearCreditsAndCaption(article),
-                      ...(breakpoint === 'lg' && lgOptions),
-                      ...(breakpoint === 'xl' && xlOptions),
-                      ...opts
-                    }}
-                    clickHandler={clickHandler}
-                  />
-                </Visible>
-              )
-            )}
+            <Visible xl>
+              <Article
+                article={{
+                  ...clearCreditsAndCaption(article),
+                  imageRight: true,
+                  hasTopBorder: articleIndex > 0
+                }}
+                clickHandler={clickHandler}
+              />
+            </Visible>
+            <Hidden xl>
+              <Article
+                article={{
+                  ...clearCreditsAndCaption(article),
+                  hasTopBorder: articleIndex > 0
+                }}
+                clickHandler={clickHandler}
+                className={`composed-article-card-${articleIndex}`}
+              />
+            </Hidden>
             {articleIndex < articleArr.length - 1 && (
               <Hidden lg xl>
                 <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
@@ -99,32 +86,28 @@ export const ArticleStackSmall = ({
 }: {
   articles: ArticleProps[];
   clickHandler: ClickHandlerType;
-  articleOptions?: StackArticleOptions;
-}) => {
-  const modifiedArticleOptions = {
-    ...defaultArticleOptions,
-    ...articleOptions
+  articleOptions?: {
+    isFullWidth?: boolean;
+    hasTopBorder?: boolean;
+    hideImage?: boolean;
   };
-
+}) => {
   return (
     <GridLayout columns={{ md: '1fr 1px 1fr' }} columnGap={{ md: 'space040' }}>
       {articles.map((article: ArticleProps, articleIndex, articleArr) => {
         return (
           <React.Fragment key={article.headline}>
-            <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-              {Object.entries(modifiedArticleOptions).map(
-                ([breakpoint, opts]) => (
-                  <Visible {...{ [breakpoint]: true }}>
-                    <Article
-                      article={{
-                        ...clearCreditsAndCaption(article),
-                        ...opts
-                      }}
-                      clickHandler={clickHandler}
-                    />
-                  </Visible>
-                )
-              )}
+            <Block
+              marginBlockEnd={{ xs: 'space040', md: 'space000' }}
+              className="article-stack-small"
+            >
+              <Article
+                article={{
+                  ...clearCreditsAndCaption(article),
+                  ...articleOptions
+                }}
+                clickHandler={clickHandler}
+              />
             </Block>
             {articleIndex < articleArr.length - 1 && (
               <Visible md lg xl>

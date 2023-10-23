@@ -58,10 +58,12 @@ export interface ArticleProps {
 
 export const Article = ({
   article,
-  clickHandler
+  clickHandler,
+  className
 }: {
   article: ArticleProps;
   clickHandler: ClickHandlerType;
+  className?: string;
 }) => {
   const {
     id,
@@ -141,6 +143,7 @@ export const Article = ({
       }
       columns={{ xl: imageRight ? '1fr 1fr' : '1fr' }}
       columnGap="space040"
+      className={className}
     >
       {hasTopBorder && (
         <GridLayoutItem area="border">
@@ -161,13 +164,10 @@ export const Article = ({
       {showImage ? (
         isLeadImage ? (
           /* @ts-ignore */
-          <FullWidthCardMediaMob
-            aria-label="article-lead-image"
-            {...cardImage}
-          />
+          <FullWidthCardMediaMob {...cardImage} className="article-image" />
         ) : (
           /* @ts-ignore */
-          <CardMedia aria-label="article-image" {...cardImage} />
+          <CardMedia {...cardImage} className="article-image" />
         )
       ) : null}
       <CardContent alignContent="start">

@@ -25,15 +25,14 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-8s35v3"
+          class="css-qrji6b"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              aria-label="article-lead-image"
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -49,8 +48,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -89,7 +87,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content
                   </span>
@@ -140,8 +138,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -157,8 +154,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -197,7 +193,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 2
                   </span>
@@ -262,8 +258,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -279,8 +274,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -319,7 +313,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 3
                   </span>
@@ -370,8 +364,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -387,8 +380,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -427,7 +419,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 4
                   </span>
@@ -491,15 +483,14 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-1xbveta"
+          class="css-7zbbh8"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              aria-label="article-lead-image"
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -515,8 +506,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -555,7 +545,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 5
                   </span>
@@ -606,8 +596,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -623,8 +612,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -663,7 +651,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 6
                   </span>
@@ -728,8 +716,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -745,8 +732,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -785,7 +771,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 7
                   </span>
@@ -836,8 +822,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -853,8 +838,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -893,7 +877,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 8
                   </span>
@@ -966,15 +950,14 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
         class="css-13tedu1"
       >
         <div
-          class="css-8s35v3"
+          class="css-qrji6b"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              aria-label="article-lead-image"
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -990,8 +973,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1030,7 +1012,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content
                   </span>
@@ -1081,8 +1063,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -1098,8 +1079,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1138,7 +1118,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 2
                   </span>
@@ -1203,8 +1183,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -1220,8 +1199,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1260,7 +1238,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 3
                   </span>
@@ -1311,8 +1289,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -1328,8 +1305,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1368,7 +1344,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 4
                   </span>
@@ -1432,15 +1408,14 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
         class="css-13tedu1"
       >
         <div
-          class="css-1xbveta"
+          class="css-7zbbh8"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              aria-label="article-lead-image"
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -1456,8 +1431,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1496,7 +1470,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 5
                   </span>
@@ -1547,8 +1521,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -1564,8 +1537,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1604,7 +1576,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 6
                   </span>
@@ -1669,8 +1641,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -1686,8 +1657,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1726,7 +1696,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 7
                   </span>
@@ -1777,8 +1747,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -1794,8 +1763,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1834,7 +1802,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 8
                   </span>
@@ -1907,15 +1875,14 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-8s35v3"
+          class="css-qrji6b"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              aria-label="article-lead-image"
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -1931,8 +1898,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1971,7 +1937,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content
                   </span>
@@ -2022,8 +1988,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -2039,8 +2004,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2079,7 +2043,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 2
                   </span>
@@ -2144,8 +2108,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -2161,8 +2124,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2201,7 +2163,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 3
                   </span>
@@ -2252,8 +2214,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -2269,8 +2230,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2309,7 +2269,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 4
                   </span>
@@ -2373,15 +2333,14 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1xbveta"
+          class="css-7zbbh8"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              aria-label="article-lead-image"
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -2397,8 +2356,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2437,7 +2395,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 5
                   </span>
@@ -2488,8 +2446,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -2505,8 +2462,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2545,7 +2501,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 6
                   </span>
@@ -2610,8 +2566,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -2627,8 +2582,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2667,7 +2621,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 7
                   </span>
@@ -2718,8 +2672,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -2735,8 +2688,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2775,7 +2727,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 8
                   </span>
@@ -2848,15 +2800,14 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-8s35v3"
+          class="css-qrji6b"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              aria-label="article-lead-image"
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -2872,8 +2823,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2912,7 +2862,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content
                   </span>
@@ -2963,8 +2913,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -2980,8 +2929,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -3020,7 +2968,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 2
                   </span>
@@ -3085,8 +3033,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -3102,8 +3049,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -3142,7 +3088,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 3
                   </span>
@@ -3193,8 +3139,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -3210,8 +3155,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -3250,7 +3194,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 4
                   </span>
@@ -3314,15 +3258,14 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1xbveta"
+          class="css-7zbbh8"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              aria-label="article-lead-image"
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -3338,8 +3281,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -3378,7 +3320,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 5
                   </span>
@@ -3429,8 +3371,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -3446,8 +3387,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -3486,7 +3426,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 6
                   </span>
@@ -3551,8 +3491,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -3568,8 +3507,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -3608,7 +3546,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 7
                   </span>
@@ -3659,8 +3597,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -3676,8 +3613,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -3716,7 +3652,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 8
                   </span>
@@ -3789,15 +3725,14 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-8s35v3"
+          class="css-qrji6b"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              aria-label="article-lead-image"
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -3813,8 +3748,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -3853,7 +3787,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content
                   </span>
@@ -3904,8 +3838,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -3921,8 +3854,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -3961,7 +3893,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 2
                   </span>
@@ -4026,8 +3958,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -4043,8 +3974,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -4083,7 +4013,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 3
                   </span>
@@ -4134,8 +4064,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -4151,8 +4080,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -4191,7 +4119,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 4
                   </span>
@@ -4255,15 +4183,14 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1xbveta"
+          class="css-7zbbh8"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              aria-label="article-lead-image"
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -4279,8 +4206,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -4319,7 +4245,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 5
                   </span>
@@ -4370,8 +4296,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -4387,8 +4312,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -4427,7 +4351,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 6
                   </span>
@@ -4492,8 +4416,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -4509,8 +4432,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -4549,7 +4471,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 7
                   </span>
@@ -4600,8 +4522,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              aria-label="article-image"
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -4617,8 +4538,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                aria-label="article-tile-info"
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -4657,7 +4577,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   class="css-17x5lw"
                 >
                   <span
-                    class="css-135o9vn"
+                    class="css-65zrxz"
                   >
                     Short title of the card describing the main content 8
                   </span>

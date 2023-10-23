@@ -14,15 +14,19 @@ export const ArticleGrid = styled(GridLayout)<{
         display: none;
       }
 
-      [aria-label='article-image'] {
+      .article-image {
         display: none;
       }
 
-      [aria-label='article-lead-image'] {
+      .article-image:first-of-type {
+        display: block;
+      }
+
+      .article-image {
         ${getSpacingCssFromTheme('margin-block-end', 'space040')}
       }
 
-      div[aria-label='article-tile-info']{
+      div.article-info {
         ${getSpacingCssFromTheme('margin-block-start', 'space000')}
       }
     }
@@ -33,12 +37,12 @@ export const ArticleGrid = styled(GridLayout)<{
         display: none;
       }
 
-      [aria-label='article-image'], [aria-label='article-lead-image'] {
+     .article-image {
         display: ${({ hideImageOnDesktop }) =>
           hideImageOnDesktop ? 'none' : 'block'};
       }
 
-      div[aria-label='article-tile-info']{
+      div.article-info {
         margin-top: ${({ hideImageOnDesktop }) => hideImageOnDesktop && '0'};
       }
     }

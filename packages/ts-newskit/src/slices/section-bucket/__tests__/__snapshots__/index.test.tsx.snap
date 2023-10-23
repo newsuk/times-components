@@ -75,8 +75,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -92,8 +91,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -160,8 +158,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -228,8 +225,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -341,8 +337,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -358,8 +353,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -426,8 +420,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -494,8 +487,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -607,8 +599,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -624,8 +615,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -692,8 +682,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -760,8 +749,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -873,8 +861,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -890,8 +877,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -958,8 +944,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -1026,8 +1011,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -1153,8 +1137,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               class="css-1nw1nne"
             >
               <div
-                aria-label="article-image"
-                class="css-1kwj960"
+                class="article-image css-1kwj960"
               >
                 <picture
                   class="css-l4lngz"
@@ -1170,8 +1153,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-i1f2uq"
+                  class="article-info css-i1f2uq"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1238,8 +1220,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1306,8 +1287,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1419,8 +1399,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               class="css-1nw1nne"
             >
               <div
-                aria-label="article-image"
-                class="css-1kwj960"
+                class="article-image css-1kwj960"
               >
                 <picture
                   class="css-l4lngz"
@@ -1436,8 +1415,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-i1f2uq"
+                  class="article-info css-i1f2uq"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1504,8 +1482,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1572,8 +1549,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1685,8 +1661,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               class="css-1nw1nne"
             >
               <div
-                aria-label="article-image"
-                class="css-1kwj960"
+                class="article-image css-1kwj960"
               >
                 <picture
                   class="css-l4lngz"
@@ -1702,8 +1677,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-i1f2uq"
+                  class="article-info css-i1f2uq"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1770,8 +1744,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1838,8 +1811,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1951,8 +1923,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               class="css-1nw1nne"
             >
               <div
-                aria-label="article-image"
-                class="css-1kwj960"
+                class="article-image css-1kwj960"
               >
                 <picture
                   class="css-l4lngz"
@@ -1968,8 +1939,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-i1f2uq"
+                  class="article-info css-i1f2uq"
                 >
                   <span
                     class="css-6tvr2h"
@@ -2036,8 +2006,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -2104,8 +2073,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -2243,8 +2211,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -2260,8 +2227,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2328,8 +2294,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2396,8 +2361,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2509,8 +2473,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -2526,8 +2489,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2594,8 +2556,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2662,8 +2623,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2775,8 +2735,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -2792,8 +2751,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2860,8 +2818,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2928,8 +2885,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -3041,8 +2997,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -3058,8 +3013,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -3126,8 +3080,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -3194,8 +3147,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -3321,8 +3273,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               class="css-1nw1nne"
             >
               <div
-                aria-label="article-image"
-                class="css-1kwj960"
+                class="article-image css-1kwj960"
               >
                 <picture
                   class="css-l4lngz"
@@ -3338,8 +3289,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-i1f2uq"
+                  class="article-info css-i1f2uq"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3406,8 +3356,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3474,8 +3423,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3587,8 +3535,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               class="css-1nw1nne"
             >
               <div
-                aria-label="article-image"
-                class="css-1kwj960"
+                class="article-image css-1kwj960"
               >
                 <picture
                   class="css-l4lngz"
@@ -3604,8 +3551,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-i1f2uq"
+                  class="article-info css-i1f2uq"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3672,8 +3618,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3740,8 +3685,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3853,8 +3797,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               class="css-1nw1nne"
             >
               <div
-                aria-label="article-image"
-                class="css-1kwj960"
+                class="article-image css-1kwj960"
               >
                 <picture
                   class="css-l4lngz"
@@ -3870,8 +3813,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-i1f2uq"
+                  class="article-info css-i1f2uq"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3938,8 +3880,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -4006,8 +3947,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -4119,8 +4059,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               class="css-1nw1nne"
             >
               <div
-                aria-label="article-image"
-                class="css-1kwj960"
+                class="article-image css-1kwj960"
               >
                 <picture
                   class="css-l4lngz"
@@ -4136,8 +4075,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-i1f2uq"
+                  class="article-info css-i1f2uq"
                 >
                   <span
                     class="css-6tvr2h"
@@ -4204,8 +4142,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"
@@ -4272,8 +4209,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  aria-label="article-tile-info"
-                  class="css-122i4mv"
+                  class="article-info css-122i4mv"
                 >
                   <span
                     class="css-6tvr2h"

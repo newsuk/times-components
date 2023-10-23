@@ -25,8 +25,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-lead-image"
-                  class="css-75ozqf"
+                  class="article-image css-75ozqf"
                 >
                   <picture
                     class="css-l4lngz"
@@ -42,8 +41,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -98,8 +96,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -115,8 +112,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -193,8 +189,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -249,8 +244,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -266,8 +260,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -344,8 +337,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -400,8 +392,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -417,8 +408,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -495,8 +485,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -551,8 +540,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -568,8 +556,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -650,8 +637,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-lead-image"
-                  class="css-75ozqf"
+                  class="article-image css-75ozqf"
                 >
                   <picture
                     class="css-l4lngz"
@@ -667,8 +653,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -723,8 +708,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -740,8 +724,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -818,8 +801,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -874,8 +856,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -891,8 +872,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -969,8 +949,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -1025,8 +1004,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -1042,8 +1020,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -1120,8 +1097,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -1176,8 +1152,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  aria-label="article-image"
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -1193,8 +1168,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    aria-label="article-tile-info"
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"

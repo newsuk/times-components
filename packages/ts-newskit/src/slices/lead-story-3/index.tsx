@@ -5,14 +5,19 @@ import {
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
-import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
+import {
+  LeadStoryDivider,
+  StackItem,
+  BlockItem,
+  LeadStoryContainer
+} from '../shared-styles';
 import {
   FullWidthBlock,
   FullWidthHidden
 } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { ArticleStack } from './article-stack';
-import { ArticleStackLeadStory, CustomStackLayout } from '../shared';
+import { ArticleStackLeadStory } from '../shared';
 import { ClickHandlerType } from '../types';
 
 export interface LeadStory3Props {
@@ -39,7 +44,7 @@ export const LeadStory3 = ({
   };
 
   return (
-    <CustomStackLayout>
+    <LeadStoryContainer className="lead-story-3-container">
       <StackItem
         $width={{
           xs: '100%',
@@ -120,6 +125,6 @@ export const LeadStory3 = ({
           clickHandler={clickHandler}
         />
       </Visible>
-    </CustomStackLayout>
+    </LeadStoryContainer>
   );
 };

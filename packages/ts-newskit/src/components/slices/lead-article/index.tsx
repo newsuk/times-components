@@ -66,10 +66,12 @@ export interface LeadArticleProps {
 
 export const LeadArticle = ({
   article,
-  clickHandler
+  clickHandler,
+  className
 }: {
   article: LeadArticleProps;
   clickHandler: ClickHandlerType;
+  className?: string;
 }) => {
   const {
     id,
@@ -149,12 +151,14 @@ export const LeadArticle = ({
       }}
       columnGap="space040"
       columns={displayArticleVertical || !contentWidth ? '100%' : contentWidth}
+      className={className}
     >
       {hasImage &&
         !hideImage && (
           <Block
             marginBlockEnd={imageTop ? 'space040' : 'space000'}
             marginBlockStart={imageMarginBlockStart}
+            className="lead-image-container"
           >
             <FullWidthCardMediaMob
               {...cardImage}

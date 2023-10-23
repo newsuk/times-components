@@ -80,10 +80,7 @@ const articleStack = ({
                     xs: 'lightDashedDivider',
                     md: 'dashedDivider'
                   },
-                  titleTypographyPreset: {
-                    xs: 'editorialHeadline030',
-                    md: 'editorialHeadline020'
-                  }
+                  titleTypographyPreset: 'editorialHeadline020'
                 }}
                 clickHandler={clickHandler}
               />
