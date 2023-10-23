@@ -1,21 +1,21 @@
-import { Block, Divider, Hidden, Visible } from 'newskit';
+import { Block, Divider, Visible } from 'newskit';
 import React from 'react';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
-import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
+import {
+  LeadStoryDivider,
+  StackItem,
+  BlockItem,
+  LeadStoryContainer
+} from '../shared-styles';
 import { ArticleStack } from './article-stacks';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
-import {
-  ArticleStackLeadStory,
-  ComposedArticleStack,
-  CustomStackLayout
-} from '../shared';
+import { ArticleStackLeadStory, ComposedArticleStack } from '../shared';
 import { ClickHandlerType } from '../types';
 import { FullWidthHidden } from '../../components/slices/shared-styles/index';
-import { defaultArticleOptions } from '../../utils/default-article-options';
 
 export interface LeadStory2Props {
   leadArticle: LeadArticleProps;
@@ -42,33 +42,8 @@ export const LeadStory2 = ({
     }
   };
 
-  const leadArticleOptions = {
-    xs: {
-      contentWidth: '246px',
-      imageTop: true
-    },
-    sm: {
-      contentWidth: '246px',
-      imageTop: true
-    },
-    md: {
-      contentWidth: '246px'
-    },
-    lg: {
-      contentWidth: '246px'
-    },
-    xl: {
-      contentWidth: '274px'
-    }
-  };
-
-  const modifiedLeadArticleOptions = {
-    ...defaultArticleOptions,
-    ...leadArticleOptions
-  };
-
   return (
-    <CustomStackLayout>
+    <LeadStoryContainer>
       <StackItem
         $width={{
           xs: '100%',
@@ -86,20 +61,18 @@ export const LeadStory2 = ({
             vertical
             position="right"
           />
-          {Object.entries(modifiedLeadArticleOptions).map(
-            ([breakpoint, opts]) => (
-              <Visible {...{ [breakpoint]: true }}>
-                <LeadArticle
-                  article={{
-                    ...modifiedLeadArticle,
-                    ...opts
-                  }}
-                  clickHandler={clickHandler}
-                />
-              </Visible>
-            )
-          )}
           <Visible xs sm>
+            <LeadArticle
+              article={{
+                ...modifiedLeadArticle,
+                imageTop: true,
+                contentWidth: {
+                  xs: '246px auto',
+                  xl: '274px auto'
+                }
+              }}
+              clickHandler={clickHandler}
+            />
             <FullWidthBlock
               paddingInline={{
                 xs: 'space045',
@@ -116,6 +89,16 @@ export const LeadStory2 = ({
             </FullWidthBlock>
           </Visible>
           <Visible md lg xl>
+            <LeadArticle
+              article={{
+                ...modifiedLeadArticle,
+                contentWidth: {
+                  xs: '246px auto',
+                  xl: '274px auto'
+                }
+              }}
+              clickHandler={clickHandler}
+            />
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
@@ -123,22 +106,15 @@ export const LeadStory2 = ({
               }}
             />
           </Visible>
-          <Visible xl>
-            <ArticleStack
-              verticalArticles={verticalArticles}
-              horizontalArticles={horizontalArticles}
-              horizontalArticleContentWidth="258px"
-              clickHandler={clickHandler}
-            />
-          </Visible>
-          <Hidden xl>
-            <ArticleStack
-              verticalArticles={verticalArticles}
-              horizontalArticles={horizontalArticles}
-              horizontalArticleContentWidth="230px"
-              clickHandler={clickHandler}
-            />
-          </Hidden>
+          <ArticleStack
+            verticalArticles={verticalArticles}
+            horizontalArticles={horizontalArticles}
+            horizontalArticleContentWidth={{
+              md: '230px',
+              xl: '258px'
+            }}
+            clickHandler={clickHandler}
+          />
         </Block>
       </StackItem>
       <FullWidthHidden md lg xl>
@@ -160,6 +136,6 @@ export const LeadStory2 = ({
           clickHandler={clickHandler}
         />
       </Visible>
-    </CustomStackLayout>
+    </LeadStoryContainer>
   );
 };
