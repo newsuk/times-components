@@ -9,7 +9,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
       class="css-uxiwo2"
     >
       <div
-        class="css-1jza4en"
+        class="css-1vgdeio"
         style="margin-block: space000;"
       >
         <div
@@ -28,7 +28,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="css-3kejzs"
+                  class="article-info css-3kejzs"
                 >
                   <span
                     class="css-6tvr2h"
@@ -136,7 +136,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="css-3kejzs"
+                  class="article-info css-3kejzs"
                 >
                   <span
                     class="css-6tvr2h"
@@ -259,7 +259,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             class="css-1kb13lf"
           >
             <div
-              class="css-j6pksw"
+              class="lead-image-container css-j6pksw"
             >
               <div
                 class="lcpItem css-4t8ylq"
@@ -282,7 +282,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="css-3kejzs"
+                class="article-info css-3kejzs"
               >
                 <span
                   class="css-6tvr2h"
@@ -396,7 +396,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             class="css-1kb13lf"
           >
             <div
-              class="css-j6pksw"
+              class="lead-image-container css-j6pksw"
             >
               <div
                 class="lcpItem css-4t8ylq"
@@ -419,7 +419,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="css-3kejzs"
+                class="article-info css-3kejzs"
               >
                 <span
                   class="css-6tvr2h"
@@ -519,7 +519,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
       class="css-uxiwo2"
     >
       <div
-        class="css-1eh6fyx"
+        class="css-1szvsxp"
         style="margin-block: space000;"
       >
         <div
@@ -538,7 +538,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="css-3kejzs"
+                  class="article-info css-3kejzs"
                 >
                   <span
                     class="css-6tvr2h"
@@ -646,7 +646,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="css-3kejzs"
+                  class="article-info css-3kejzs"
                 >
                   <span
                     class="css-6tvr2h"
@@ -769,7 +769,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             class="css-1kb13lf"
           >
             <div
-              class="css-j6pksw"
+              class="lead-image-container css-j6pksw"
             >
               <div
                 class="lcpItem css-4t8ylq"
@@ -792,7 +792,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="css-3kejzs"
+                class="article-info css-3kejzs"
               >
                 <span
                   class="css-6tvr2h"
@@ -906,7 +906,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             class="css-1kb13lf"
           >
             <div
-              class="css-j6pksw"
+              class="lead-image-container css-j6pksw"
             >
               <div
                 class="lcpItem css-4t8ylq"
@@ -929,7 +929,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="css-3kejzs"
+                class="article-info css-3kejzs"
               >
                 <span
                   class="css-6tvr2h"
