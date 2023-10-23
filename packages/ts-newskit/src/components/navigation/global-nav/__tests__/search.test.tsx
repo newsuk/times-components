@@ -4,6 +4,7 @@ import { render, screen } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import NavSearch from '../search/search';
 import { handleSearchSubmit } from '../search/handleSearchSubmit';
+import { SEARCH_PLACEHOLDER_DOMAIN } from '../../../../constants';
 
 jest.mock('../search/handleSearchSubmit', () => ({
   handleSearchSubmit: jest.fn()
@@ -23,7 +24,9 @@ describe('Search', () => {
     handleSearchSubmit('desktop', 'Search');
 
     const searchForm = screen.getByRole('search');
-    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+    const searchField = screen.getByPlaceholderText(
+      `Search ${SEARCH_PLACEHOLDER_DOMAIN}`
+    );
 
     fireEvent.change(searchField, {
       target: { value: 'Test Value' }
@@ -39,7 +42,9 @@ describe('Search', () => {
     render(<NavSearch isHamburger />);
 
     const searchForm = screen.getByRole('search');
-    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+    const searchField = screen.getByPlaceholderText(
+      `Search ${SEARCH_PLACEHOLDER_DOMAIN}`
+    );
 
     fireEvent.change(searchField, {
       target: { value: 'Test Value' }

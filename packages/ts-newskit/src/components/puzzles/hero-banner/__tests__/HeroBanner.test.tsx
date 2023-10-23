@@ -2,12 +2,12 @@ import React from 'react';
 import { HeroBanner, HeroBannerProps } from '../index';
 import { render } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
+import { BASE_URL, LOGIN_BASE_URL } from '../../../../constants';
 
 const defaultProps: HeroBannerProps = {
   puzzleName: 'Crossword',
   puzzleType: 'crossword',
-  loginUrl:
-    'https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles'
+  loginUrl: `${LOGIN_BASE_URL}?gotoUrl=${BASE_URL}/puzzles`
 };
 
 const renderComponent = (props: HeroBannerProps) =>
@@ -30,7 +30,7 @@ describe('HeroBanner', () => {
     const loginButton = getByText('Log In');
     expect(loginButton).toHaveAttribute(
       'href',
-      'https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles'
+      `${LOGIN_BASE_URL}?gotoUrl=${BASE_URL}/puzzles`
     );
   });
 });

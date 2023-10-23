@@ -25,6 +25,7 @@ import {
   NewsKitWordPuzzlesIcon
 } from '../../../assets';
 import { Button, TextBlock, Block } from 'newskit';
+import { BASE_URL } from '../../../constants';
 
 export type PuzzleType =
   | 'crossword'
@@ -126,7 +127,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({
             </SyledUnorderedList>
             <Button
               size="medium"
-              href="https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00"
+              href={`${BASE_URL}/checkout?pc=PUZ025N3Z00`}
               overrides={{
                 stylePreset: 'freeTrialShadowBtn',
                 typographyPreset: 'utilityButton020',
