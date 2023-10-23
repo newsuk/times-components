@@ -43,7 +43,7 @@ export const ArticleGrid = styled(GridLayout)<{
       }
 
       div.article-info {
-        margin-top: ${({ hideImageOnDesktop }) => hideImageOnDesktop && '0'};
+        ${({ hideImageOnDesktop }) => hideImageOnDesktop && 'margin-top: 0'};
       }
     }
 
