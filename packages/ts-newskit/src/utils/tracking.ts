@@ -4,7 +4,7 @@ type TrackingArticleProps = {
   id: string;
   headline: string;
   url: string;
-}
+};
 
 export const articleClickTracking = (
   event: MouseEventType,

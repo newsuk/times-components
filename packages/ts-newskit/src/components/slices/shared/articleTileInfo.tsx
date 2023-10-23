@@ -25,7 +25,7 @@ const CustomDivider = () => (
     <Divider
       vertical
       overrides={{
-        marginInline: 'space020',
+        marginInline: 'space020'
       }}
     />
   </ContainerInline>
@@ -59,46 +59,52 @@ export const ArticleTileInfo = ({
 
   return (
     <>
-    <StyledBlock
-      marginBlockStart={marginBlockStart}
-      marginBlockEnd={marginBlockEnd}
-      hasVideoIcon={hasVideoIcon}
-      className="article-info"
-    ><>
-    
-      {isLiveTag && (
+      <StyledBlock
+        marginBlockStart={marginBlockStart}
+        marginBlockEnd={marginBlockEnd}
+        hasVideoIcon={hasVideoIcon}
+        className="article-info"
+      >
         <>
-        <LiveTag
-          liveTag={capitalizedText(getActiveArticleFlags(expirableFlags))}
-        />
-        <CustomDivider />
+          {isLiveTag && (
+            <>
+              <LiveTag
+                liveTag={capitalizedText(getActiveArticleFlags(expirableFlags))}
+              />
+              <CustomDivider />
+            </>
+          )}
+          {!isLiveTag &&
+            expirableFlags &&
+            getActiveArticleFlags(expirableFlags) && (
+              <>
+                <CustomTextBlock
+                  stylePreset="expirableFlagPreset"
+                  text={capitalizedText(getActiveArticleFlags(expirableFlags))}
+                />
+                <CustomDivider />
+              </>
+            )}
+          {contentType && (
+            <>
+              <CustomTextBlock text={capitalizedText(contentType)} />
+              <CustomDivider />
+            </>
+          )}
+          {hasVideo && (
+            <>
+              <CustomTextBlock text="VIDEO" icon={<NewsKitVideoButtonIcon />} />
+              <CustomDivider />
+            </>
+          )}
+          {label && (
+            <>
+              <CustomTextBlock text={capitalizedText(label)} />
+              <CustomDivider />
+            </>
+          )}
         </>
-      )}
-      {!isLiveTag && expirableFlags && getActiveArticleFlags(expirableFlags) && 
-      <><CustomTextBlock
-            stylePreset="expirableFlagPreset"
-            text={capitalizedText(getActiveArticleFlags(expirableFlags))}
-          /><CustomDivider/></> }
-      {contentType && (
-        <>
-        <CustomTextBlock
-          text={capitalizedText(contentType)}
-        />
-        <CustomDivider />
-        </>
-      )}
-      {hasVideo && (
-        <>
-        <CustomTextBlock
-        text="VIDEO"
-        icon={<NewsKitVideoButtonIcon />}
-      />
-      <CustomDivider />
-      </>
-      )}
-      {label && <><CustomTextBlock text={capitalizedText(label)} /><CustomDivider/></>}
-      </>
-    </StyledBlock>
+      </StyledBlock>
     </>
   );
 };
