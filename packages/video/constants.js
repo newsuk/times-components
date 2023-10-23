@@ -1,0 +1,1 @@
+export const CLIPS_BASE_URL = "https://clips.news.co.uk";

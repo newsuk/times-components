@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import Video from "./src/video";
+import { CLIPS_BASE_URL } from "./constants";
 
 const id = "3dbfe6b8-680b-11e9-b277-88f3d445182c";
 const policyKey =
@@ -8,7 +9,7 @@ const policyKey =
 const accountId = "5436121857001";
 const videoId = "5831024132001";
 const posterImageURI =
-  "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
+  `${CLIPS_BASE_URL}/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc`;
 
 const defaultVideoProps = {
   accountId,
