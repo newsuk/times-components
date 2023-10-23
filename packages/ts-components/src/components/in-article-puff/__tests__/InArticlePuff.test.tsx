@@ -9,6 +9,7 @@ import { TrackingContextProvider } from '../../../helpers/tracking/TrackingConte
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 
 import mockDate from 'mockdate';
+import { BASE_URL } from '../../../constants';
 
 jest.mock('@times-components/image', () => ({
   Placeholder: () => <div>Placeholder</div>
@@ -33,7 +34,7 @@ const deckApiPayloadWrapper = (data: { [name: string]: string }) => ({
 const requiredFields = {
   label: 'interactive',
   headline: 'Where can I get a Covid vaccine in England?',
-  link: 'https://www.thetimes.co.uk'
+  link: BASE_URL
 };
 
 const optionalFields = {

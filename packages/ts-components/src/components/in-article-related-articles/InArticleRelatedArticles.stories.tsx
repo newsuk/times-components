@@ -9,14 +9,13 @@ import { InArticleRelatedArticles } from './InArticleRelatedArticles';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { ArticleHarness } from '../../fixtures/article-harness/ArticleHarness';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
+import { BASE_URL, IMAGE_BASE_URL } from '../../constants';
 
 const article1 = {
   label: 'Environment',
   headline: 'Scientists discover ‘chocolate frogs’ in New Guinea',
-  link:
-    'https://www.thetimes.co.uk/article/scientists-discover-chocolate-frogs-in-new-guinea-bt3z986bj',
-  image:
-    'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F464a9dfe-c453-11eb-8601-6a2ece3e4634.jpg?crop=3586%2C2017%2C0%2C187&resize=663',
+  link: `${BASE_URL}/article/scientists-discover-chocolate-frogs-in-new-guinea-bt3z986bj`,
+  image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F464a9dfe-c453-11eb-8601-6a2ece3e4634.jpg?crop=3586%2C2017%2C0%2C187&resize=663`,
   summary:
     'Popularised by the Harry Potter books, the chocolate frog, it has emerged, is far from fictional. A living version of the confectionery shop favourite has been discovered in the jungles of New Guinea.',
   publishedTime: '2021-06-03T11:00:00.000Z',
@@ -26,8 +25,7 @@ const article1 = {
 const article2 = {
   label: 'COVID 19',
   headline: 'Where can I get a Covid vaccine in England?',
-  link:
-    'https://www.thetimes.co.uk/article/chinas-villages-trampled-in-elephant-herds-long-march-kvl8m8spx',
+  link: `${BASE_URL}/article/chinas-villages-trampled-in-elephant-herds-long-march-kvl8m8spx`,
   image:
     'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/c1b6ab118e9422965b7faa628e26e05b.jpeg'
 };
@@ -35,10 +33,8 @@ const article2 = {
 const article3 = {
   label: 'LEADING ARTICLE',
   headline: 'End of restriction is “hanging in the balance”',
-  link:
-    'https://www.thetimes.co.uk/article/the-times-view-on-elephants-suction-technique-talented-trunks-h3ck3zx6g',
-  image:
-    'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff1a0847a-c3ea-11eb-a26e-4c086490cfe1.jpg?crop=4418%2C2945%2C0%2C0&resize=685'
+  link: `${BASE_URL}/article/the-times-view-on-elephants-suction-technique-talented-trunks-h3ck3zx6g`,
+  image: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff1a0847a-c3ea-11eb-a26e-4c086490cfe1.jpg?crop=4418%2C2945%2C0%2C0&resize=685`
 };
 
 storiesOf('Typescript Component/In Article/Related Articles', module).add(

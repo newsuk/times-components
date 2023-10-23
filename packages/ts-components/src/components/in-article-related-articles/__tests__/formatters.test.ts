@@ -1,3 +1,4 @@
+import { BASE_URL, IMAGE_BASE_URL } from '../../../constants';
 import { formatRelatedArticles } from '../formatters';
 const sample = {
   sliceName: 'StandardSlice',
@@ -7,12 +8,10 @@ const sample = {
       article: {
         leadAsset: {
           crop169: {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4529%2C2548%2C2%2C450'
+            url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4529%2C2548%2C2%2C450`
           },
           crop32: {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4552%2C3035%2C0%2C0'
+            url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4552%2C3035%2C0%2C0`
           },
           id: '39de6425-613f-42d9-847b-cd49b16d7e65',
           title: "Tokyo Olympics. Day 11. Cycling Track - Women's Team Pursuit"
@@ -68,8 +67,7 @@ const sample = {
         shortIdentifier: 'lfjbwnpw2',
         slug:
           'tokyo-olympics-jason-kenny-and-laura-kenny-have-to-settle-for-silver-as-records-tumble',
-        url:
-          'https://www.thetimes.co.uk/article/tokyo-olympics-jason-kenny-and-laura-kenny-have-to-settle-for-silver-as-records-tumble-lfjbwnpw2',
+        url: `${BASE_URL}/article/tokyo-olympics-jason-kenny-and-laura-kenny-have-to-settle-for-silver-as-records-tumble-lfjbwnpw2`,
         summary105: [
           {
             name: 'paragraph',
@@ -168,12 +166,10 @@ const sample = {
         leadAsset: {
           posterImage: {
             crop169: {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1278%2C719%2C0%2C0'
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1278%2C719%2C0%2C0`
             },
             crop32: {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1078%2C719%2C100%2C0'
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1078%2C719%2C100%2C0`
             },
             id: 'f874d69b-bd32-4734-b1f0-37f9cd36dec9',
             title: ''
@@ -212,8 +208,7 @@ const sample = {
           'Keely Hodgkinson wins 800m silver, breaking Kelly Holmes’s record',
         slug:
           'tokyo-olympics-britain-steal-gold-from-new-zealand-in-49er-class-race-before-giles-scott-triumphs-in-finn-class',
-        url:
-          'https://www.thetimes.co.uk/article/tokyo-olympics-britain-steal-gold-from-new-zealand-in-49er-class-race-before-giles-scott-triumphs-in-finn-class-vxc7d03f8',
+        url: `${BASE_URL}/article/tokyo-olympics-britain-steal-gold-from-new-zealand-in-49er-class-race-before-giles-scott-triumphs-in-finn-class-vxc7d03f8`,
         summary105: [
           {
             name: 'paragraph',
@@ -311,12 +306,10 @@ const sample = {
       article: {
         leadAsset: {
           crop169: {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1493%2C840%2C4%2C152'
+            url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1493%2C840%2C4%2C152`
           },
           crop32: {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1500%2C1000%2C0%2C0'
+            url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1500%2C1000%2C0%2C0`
           },
           id: '7781b9f1-6623-4700-9618-d012e2a40028',
           title: ''
@@ -351,8 +344,7 @@ const sample = {
         shortIdentifier: 'pldxw3prv',
         shortHeadline: 'Theatre, also showing',
         slug: 'theatre-also-showing',
-        url:
-          'https://www.thetimes.co.uk/article/theatre-also-showing-pldxw3prv',
+        url: `${BASE_URL}/article/theatre-also-showing-pldxw3prv`,
         summary105: [
           {
             name: 'paragraph',

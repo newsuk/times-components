@@ -7,6 +7,7 @@ import { TrackingContextProvider } from '../../../helpers/tracking/TrackingConte
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import '@testing-library/jest-dom';
 import 'regenerator-runtime';
+import { IMAGE_BASE_URL } from '../../../constants';
 
 jest.mock('@times-components/image', () => ({
   Placeholder: () => <div>Placeholder</div>
@@ -130,8 +131,7 @@ const testDataCircle = {
         data: {
           date: '9 June 2018',
           eventHeading: 'Event Heading 1',
-          image:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
+          image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200`,
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -141,8 +141,7 @@ const testDataCircle = {
         data: {
           date: '10 June 2018',
           eventHeading: 'Event Heading 2',
-          image:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
+          image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200`,
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -152,8 +151,7 @@ const testDataCircle = {
         data: {
           date: '11 June 2018',
           eventHeading: 'Event Heading 3',
-          image:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
+          image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200`,
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -163,8 +161,7 @@ const testDataCircle = {
         data: {
           date: '12 June 2018',
           eventHeading: 'Event Heading 4',
-          image:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
+          image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200`,
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -174,8 +171,7 @@ const testDataCircle = {
         data: {
           date: '13 June 2018',
           eventHeading: 'Event Heading 5',
-          image:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
+          image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200`,
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -194,8 +190,7 @@ const testDataCircle = {
         data: {
           date: '15 June 2018',
           eventHeading: 'Event Heading 7',
-          image:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
+          image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200`,
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -239,7 +234,7 @@ describe('Timelines', () => {
     const { asFragment, getAllByRole } = renderTimelines();
     expect(getAllByRole('img')[0]).toHaveAttribute(
       'src',
-      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200'
+      `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200`
     );
     expect(asFragment()).toMatchSnapshot();
   });

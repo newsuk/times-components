@@ -1,3 +1,5 @@
+import { BASE_URL } from '../../constants';
+
 export default {
   41547: {
     body: {
@@ -10,8 +12,7 @@ export default {
             headline: 'How to build your own house',
             copy:
               'Prepare for the <b>Help to Build</b> equity loan scheme <i>before</i> it starts in the autumn',
-            link:
-              'https://www.thetimes.co.uk/article/how-to-build-your-own-house-a-beginners-guide-to-self-builds-v6khqxsbd',
+            link: `${BASE_URL}/article/how-to-build-your-own-house-a-beginners-guide-to-self-builds-v6khqxsbd`,
             linkText: ''
           }
         }
@@ -30,8 +31,7 @@ export default {
             headline: 'How to build your own house',
             copy:
               'Prepare for the <b>Help to Build</b> equity loan scheme <i>before</i> it starts in the autumn',
-            link:
-              'https://www.thetimes.co.uk/article/how-to-build-your-own-house-a-beginners-guide-to-self-builds-v6khqxsbd',
+            link: `${BASE_URL}/article/how-to-build-your-own-house-a-beginners-guide-to-self-builds-v6khqxsbd`,
             linkText: 'Read the article'
           }
         }
