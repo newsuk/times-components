@@ -89,7 +89,15 @@ export const CommentCard = ({
           {headline}
         </ColouredText>
         <Block marginBlockStart="space010">
-          {flag && <TagAndFlag flag={flag} />}
+          {flag && (
+            <TagAndFlag
+              flag={flag}
+              flagOverrides={{
+                typographyPreset: 'utilityMeta005',
+                stylePreset: 'inkSubtle'
+              }}
+            />
+          )}
         </Block>
       </CardContent>
     </CardComposable>

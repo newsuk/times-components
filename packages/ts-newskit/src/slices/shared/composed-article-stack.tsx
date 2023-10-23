@@ -27,7 +27,12 @@ export const ComposedArticleStack = ({
   return (
     <>
       <FullWidthHidden lg xl>
-        <FullWidthBlock>
+        <FullWidthBlock
+          paddingInlineStart={{
+            xs: 'space045',
+            md: 'space000'
+          }}
+        >
           <Divider
             overrides={{
               marginBlockEnd: 'space040',
@@ -57,14 +62,12 @@ export const ComposedArticleStack = ({
             marginBlock: 'space040'
           }}
         />
-        <Block marginBlockEnd={{ md: 'space040' }}>
+        <Block
+          marginBlockEnd={{ md: 'space040' }}
+          className="bottom-article-stack"
+        >
           <ArticleStackSmall
             articles={secondTwoArticles}
-            articleOptions={{
-              md: {
-                hideImage: true
-              }
-            }}
             clickHandler={clickHandler}
           />
         </Block>

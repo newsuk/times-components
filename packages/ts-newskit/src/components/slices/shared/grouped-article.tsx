@@ -20,7 +20,10 @@ export const GroupedArticle = ({
   const modifiedGroupedArticles = articles.map(article => ({
     ...article,
     hasTopBorder: false,
-    headlineTypographyPreset: 'editorialHeadline020',
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline020'
+    },
     hideImage: true
   }));
 
@@ -33,7 +36,13 @@ export const GroupedArticle = ({
             return (
               <React.Fragment key={article.headline}>
                 {isSecondDivider && (
-                  <FullWidthBlock marginBlock="space040">
+                  <FullWidthBlock
+                    marginBlock="space040"
+                    paddingInline={{
+                      xs: 'space045',
+                      md: 'space000'
+                    }}
+                  >
                     <Divider
                       overrides={{
                         stylePreset: 'dashedDivider'

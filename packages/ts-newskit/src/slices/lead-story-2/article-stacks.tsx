@@ -1,5 +1,13 @@
 import React from 'react';
-import { Block, Divider, GridLayout, Stack, Visible, Hidden } from 'newskit';
+import {
+  Block,
+  Divider,
+  GridLayout,
+  Stack,
+  Visible,
+  Hidden,
+  MQ
+} from 'newskit';
 import {
   LeadArticle,
   LeadArticleProps
@@ -17,19 +25,25 @@ export const ArticleStack = ({
 }: {
   verticalArticles: LeadArticleProps[];
   horizontalArticles: LeadArticleProps[];
-  horizontalArticleContentWidth?: string;
+  horizontalArticleContentWidth?: MQ<string> | string;
   clickHandler: ClickHandlerType;
 }) => {
   const modifiedHorizontalArticles = horizontalArticles.map(item => ({
     ...clearCreditsAndCaption(item),
     imageTop: true,
-    headlineTypographyPreset: 'editorialHeadline020',
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline020'
+    },
     hasTopBorder: false
   }));
 
   const modifiedVerticalArticles = verticalArticles.map(item => ({
     ...item,
-    headlineTypographyPreset: 'editorialHeadline020',
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline020'
+    },
     hasTopBorder: false,
     hideImage: true
   }));
@@ -57,7 +71,12 @@ export const ArticleStack = ({
             <React.Fragment key={article.headline}>
               {articleBorder}
               <Block>
-                <FullWidthBlock>
+                <FullWidthBlock
+                  paddingInline={{
+                    xs: 'space045',
+                    md: 'space000'
+                  }}
+                >
                   <Visible xs sm>
                     <Divider
                       overrides={{
@@ -79,7 +98,7 @@ export const ArticleStack = ({
 
   const articleGridVertical = (
     <GridLayout
-      columns={{ md: `${horizontalArticleContentWidth || '1fr'}` }}
+      columns={horizontalArticleContentWidth || '1fr'}
       columnGap={{ md: 'space060' }}
       style={{ marginBlock: 'space000' }}
     >
@@ -96,7 +115,14 @@ export const ArticleStack = ({
           return (
             <RelativeBlockItem key={article.headline}>
               <Block>
-                <FullWidthBlock>{articleBorder}</FullWidthBlock>
+                <FullWidthBlock
+                  paddingInline={{
+                    xs: 'space045',
+                    md: 'space000'
+                  }}
+                >
+                  {articleBorder}
+                </FullWidthBlock>
                 <LeadArticle article={article} clickHandler={clickHandler} />
               </Block>
             </RelativeBlockItem>

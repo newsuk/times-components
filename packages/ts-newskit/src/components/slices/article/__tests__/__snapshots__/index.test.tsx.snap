@@ -6,7 +6,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
     class="css-niwyl0"
   >
     <div
-      class="css-1kwj960"
+      class="article-image css-1kwj960"
     >
       <picture
         class="css-l4lngz"
@@ -37,7 +37,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
         </span>
       </a>
       <div
-        class="css-1atazsr"
+        class="css-1kfs2jd"
         data-testid="tag-and-flag"
       >
         <a
@@ -48,7 +48,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
             class="css-17x5lw"
           >
             <span
-              class="css-1jxv40d"
+              class="css-qx2986"
             >
               Review
             </span>
@@ -64,7 +64,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
           />
         </div>
         <span
-          class="css-d9hjcx"
+          class="css-1selp7x"
         >
           4 min read
         </span>
@@ -80,7 +80,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
     class="css-1nw1nne"
   >
     <div
-      class="css-1kwj960"
+      class="article-image css-1kwj960"
     >
       <picture
         class="css-l4lngz"
@@ -111,7 +111,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
         </span>
       </a>
       <div
-        class="css-1atazsr"
+        class="css-1kfs2jd"
         data-testid="tag-and-flag"
       >
         <a
@@ -122,7 +122,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
             class="css-17x5lw"
           >
             <span
-              class="css-1jxv40d"
+              class="css-qx2986"
             >
               Review
             </span>
@@ -138,7 +138,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-d9hjcx"
+          class="css-1selp7x"
         >
           4 min read
         </span>

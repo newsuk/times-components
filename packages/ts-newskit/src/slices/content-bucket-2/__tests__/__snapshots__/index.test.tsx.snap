@@ -25,7 +25,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  class="css-75ozqf"
+                  class="article-image css-75ozqf"
                 >
                   <picture
                     class="css-l4lngz"
@@ -41,7 +41,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -96,7 +96,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -112,7 +112,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -181,7 +181,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-ppqz87"
                     data-testid="divider"
                   />
                 </div>
@@ -189,7 +189,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -244,7 +244,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -260,7 +260,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -329,7 +329,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-ppqz87"
                     data-testid="divider"
                   />
                 </div>
@@ -337,7 +337,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -392,7 +392,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -408,7 +408,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -477,7 +477,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-ppqz87"
                     data-testid="divider"
                   />
                 </div>
@@ -485,7 +485,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -540,7 +540,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -556,7 +556,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`lg\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -637,7 +637,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  class="css-75ozqf"
+                  class="article-image css-75ozqf"
                 >
                   <picture
                     class="css-l4lngz"
@@ -653,7 +653,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -708,7 +708,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -724,7 +724,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -793,7 +793,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-ppqz87"
                     data-testid="divider"
                   />
                 </div>
@@ -801,7 +801,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -856,7 +856,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -872,7 +872,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -941,7 +941,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-ppqz87"
                     data-testid="divider"
                   />
                 </div>
@@ -949,7 +949,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -1004,7 +1004,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -1020,7 +1020,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"
@@ -1089,7 +1089,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   <hr
                     aria-hidden="true"
                     aria-label="article-divider-horizontal"
-                    class="css-1i1gqyx"
+                    class="css-ppqz87"
                     data-testid="divider"
                   />
                 </div>
@@ -1097,7 +1097,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-122i4mv"
+                    class="article-info css-122i4mv"
                   >
                     <span
                       class="css-6tvr2h"
@@ -1152,7 +1152,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                 class="css-1nw1nne"
               >
                 <div
-                  class="css-1kwj960"
+                  class="article-image css-1kwj960"
                 >
                   <picture
                     class="css-l4lngz"
@@ -1168,7 +1168,7 @@ exports[`Render Content Bucket 2 Slice Slice matches snapshot at \`xs\` breakpoi
                   class="css-17cghxi"
                 >
                   <div
-                    class="css-i1f2uq"
+                    class="article-info css-i1f2uq"
                   >
                     <span
                       class="css-6tvr2h"

@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.119.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.118.0...@times-components/ts-newskit@1.119.0) (2023-10-23)
+
+
+### Features
+
+* **TMRX-1557:** refactor content bucket 3 ([#3588](https://github.com/newsuk/times-components/issues/3588)) ([e801b53](https://github.com/newsuk/times-components/commit/e801b53844820385e5727155cca334ba84e79311))
+* **TMRX-1590:** refactor lead story slices ([#3604](https://github.com/newsuk/times-components/issues/3604)) ([41140a4](https://github.com/newsuk/times-components/commit/41140a40b857f1aced1035259a67bafa3e2d6032))
+
+
+
+
+
+# [1.118.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.117.1...@times-components/ts-newskit@1.118.0) (2023-10-19)
+
+
+### Features
+
+* **TMRX-1494:** update mobile web tokens ([#3589](https://github.com/newsuk/times-components/issues/3589)) ([0615fe2](https://github.com/newsuk/times-components/commit/0615fe2dbf20be4817f3e8be5b58d64401a52250))
+
+
+
+
+
+## [1.117.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.117.0...@times-components/ts-newskit@1.117.1) (2023-10-19)
+
+
+### Bug Fixes
+
+* **TMPZ-192:** Toggle dynamic height on FAQ component ([#3603](https://github.com/newsuk/times-components/issues/3603)) ([095d074](https://github.com/newsuk/times-components/commit/095d0747dc5dac8bb183ad5b00595898c7f435a2))
+
+
+
+
+
 # [1.117.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.116.1...@times-components/ts-newskit@1.117.0) (2023-10-18)
 
 

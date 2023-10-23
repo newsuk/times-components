@@ -59,18 +59,20 @@ export interface LeadArticleProps {
   headlineTypographyPreset?: MQ<string> | string;
   loadingAspectRatio?: string;
   imageMarginBlockStart?: string;
-  textBlockMarginBlockStart?: string;
-  tagAndFlagMarginBlockStart?: string;
+  textBlockMarginBlockStart?: MQ<string> | string;
+  tagAndFlagMarginBlockStart?: MQ<string> | string;
   listData?: ListData[];
   hideImage?: boolean;
 }
 
 export const LeadArticle = ({
   article,
-  clickHandler
+  clickHandler,
+  className
 }: {
   article: LeadArticleProps;
   clickHandler: ClickHandlerType;
+  className?: string;
 }) => {
   const {
     id,
@@ -90,7 +92,7 @@ export const LeadArticle = ({
     loadingAspectRatio,
     imageMarginBlockStart = 'space000',
     textBlockMarginBlockStart = 'space040',
-    tagAndFlagMarginBlockStart = 'space040',
+    tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
     listData,
     hideImage,
     expirableFlags,
@@ -151,12 +153,14 @@ export const LeadArticle = ({
       }}
       columnGap="space040"
       columns={displayArticleVertical || !contentWidth ? '100%' : contentWidth}
+      className={className}
     >
       {hasImage &&
         !hideImage && (
           <Block
             marginBlockEnd={imageTop ? 'space040' : 'space000'}
             marginBlockStart={imageMarginBlockStart}
+            className="lead-image-container"
           >
             <FullWidthCardMediaMob
               {...cardImage}
@@ -213,6 +217,10 @@ export const LeadArticle = ({
         </CardHeadlineLink>
         {shortSummary && (
           <TextBlock
+            stylePreset={{
+              xs: 'inkSubtle',
+              md: 'inkBase'
+            }}
             typographyPreset={{
               xs: 'editorialParagraph020',
               md: 'editorialParagraph010'
