@@ -168,3 +168,18 @@ stylePresets.contactuslink = {
     borderColor: '{{colors.interface040}}'
   }
 };
+
+stylePresets.sidebarCard = {
+  base: {
+    backgroundColor: '{{colors.interfaceSkeleton010}}',
+    borderStyle: 'solid none none none',
+    borderWidth: '{{borders.borderWidth020}}',
+    borderColor: '{{colors.inkBrand010}}'
+  }
+};
+
+stylePresets.transparentCard = {
+  base: {
+    backgroundColor: 'unset'
+  }
+};
