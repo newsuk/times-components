@@ -4,6 +4,7 @@ import { scales } from "@times-components/ts-styleguide";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import SaveAndShareBar from "./src/save-and-share-bar";
+import { BASE_URL } from "./constants";
 
 const articleId = "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6";
 
@@ -14,7 +15,7 @@ const mockGetTokenisedArticleUrl = id =>
         resolve({
           data: {
             article: {
-              tokenisedUrl: `https://www.thetimes.co.uk/article/${id}?shareToken=333310c5af52a3c6e467e3b15516c950`
+              tokenisedUrl: `${BASE_URL}/article/${id}?shareToken=333310c5af52a3c6e467e3b15516c950`
             }
           }
         }),
@@ -33,7 +34,7 @@ export default {
                 <SaveAndShareBar
                   articleId={articleId}
                   articleHeadline="test-headline"
-                  articleUrl="https://www.thetimes.co.uk/"
+                  articleUrl={`${BASE_URL}/`}
                   onCopyLink={() => showMessage("Article link copied")}
                   getTokenisedShareUrl={mockGetTokenisedArticleUrl}
                   savingEnabled={boolean("Is Saving Enabled", true)}

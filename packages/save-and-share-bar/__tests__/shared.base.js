@@ -7,6 +7,7 @@ import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 import EmailShare from "../src/email-share";
 import MockedProvider from "../../provider-test-tools/src/mocked-provider";
+import { BASE_URL } from "../constants";
 
 const mockEvent = {
   preventDefault: () => {}
@@ -17,7 +18,7 @@ export default () => {
     const onCopyLink = jest.fn();
     const onShareEmail = jest.fn();
     const articleId = "96508c84-6611-11e9-adc2-05e1b87efaea";
-    const articleUrl = "https://www.thetimes.co.uk/";
+    const articleUrl = `${BASE_URL}/`;
     const articleHeadline = "test-headline";
     const originalClipboard = { ...global.navigator.clipboard };
     const props = {
