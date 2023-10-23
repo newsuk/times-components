@@ -65,31 +65,40 @@ export const ArticleTileInfo = ({
       hasVideoIcon={hasVideoIcon}
       className="article-info"
     ><>
+    
       {isLiveTag && (
+        <>
         <LiveTag
           liveTag={capitalizedText(getActiveArticleFlags(expirableFlags))}
         />
+        <CustomDivider />
+        </>
       )}
       {!isLiveTag && expirableFlags && getActiveArticleFlags(expirableFlags) && 
-      <CustomTextBlock
+      <><CustomTextBlock
             stylePreset="expirableFlagPreset"
             text={capitalizedText(getActiveArticleFlags(expirableFlags))}
-          /> }
+          /><CustomDivider/></> }
       {contentType && (
+        <>
         <CustomTextBlock
           text={capitalizedText(contentType)}
         />
+        <CustomDivider />
+        </>
       )}
       {hasVideo && (
+        <>
         <CustomTextBlock
         text="VIDEO"
         icon={<NewsKitVideoButtonIcon />}
       />
+      <CustomDivider />
+      </>
       )}
-      {label && <CustomTextBlock text={capitalizedText(label)} />}
+      {label && <><CustomTextBlock text={capitalizedText(label)} /><CustomDivider/></>}
       </>
     </StyledBlock>
-    <CustomDivider/>
     </>
   );
 };

@@ -300,10 +300,6 @@
   "articlesWithListItems": {
     "label": "",
     "expirableFlags": [
-      {
-        "type": "New",
-        "expiryTime": null
-      }
     ],
     "images": {
       "alt": "",
