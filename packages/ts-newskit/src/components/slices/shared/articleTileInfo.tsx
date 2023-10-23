@@ -25,7 +25,7 @@ const CustomDivider = () => (
     <Divider
       vertical
       overrides={{
-        marginInline: 'space020'
+        marginInline: 'space020',
       }}
     />
   </ContainerInline>
