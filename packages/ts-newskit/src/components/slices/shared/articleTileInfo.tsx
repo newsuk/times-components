@@ -58,45 +58,45 @@ export const ArticleTileInfo = ({
   const capitalizedText = (text?: string) => text && text.toUpperCase();
 
   return (
+    <>
     <StyledBlock
       marginBlockStart={marginBlockStart}
       marginBlockEnd={marginBlockEnd}
       hasVideoIcon={hasVideoIcon}
       className="article-info"
     >
-      {isLiveTag && expirableFlags && getActiveArticleFlags(expirableFlags) ? (
+      {isLiveTag && (
+        <>
         <LiveTag
           liveTag={capitalizedText(getActiveArticleFlags(expirableFlags))}
         />
-      ) : (
-        expirableFlags &&
-        getActiveArticleFlags(expirableFlags) && (
-          <CustomTextBlock
+        <CustomDivider />
+        </>
+      )}
+      {!isLiveTag && expirableFlags && getActiveArticleFlags(expirableFlags) && 
+      <><CustomTextBlock
             stylePreset="expirableFlagPreset"
             text={capitalizedText(getActiveArticleFlags(expirableFlags))}
-          />
-        )
-      )}
-      {contentType &&
-        expirableFlags &&
-        getActiveArticleFlags(expirableFlags) && <CustomDivider />}
+          /><CustomDivider/></> }
       {contentType && (
+        <>
         <CustomTextBlock
           text={capitalizedText(contentType)}
         />
+        <CustomDivider />
+        </>
       )}
       {hasVideo && (
+        <>
         <CustomTextBlock
         text="VIDEO"
         icon={<NewsKitVideoButtonIcon />}
       />
+      <CustomDivider />
+      </>
       )}
-      {label &&
-        (contentType ||
-          (expirableFlags && getActiveArticleFlags(expirableFlags))) && (
-          <CustomDivider />
-        )}
-      {label && <CustomTextBlock text={capitalizedText(label)} />}
+      {label && <><CustomTextBlock text={capitalizedText(label)} /><CustomDivider/></>}
     </StyledBlock>
+    </>
   );
 };

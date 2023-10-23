@@ -102,9 +102,8 @@ export const StyledTextBlock = styled(TextBlock)`
 `;
 
 export const StyledBlock = styled(Block)<{ hasVideoIcon?: boolean }>`
-  display: ${({ hasVideoIcon }) => (hasVideoIcon ? 'flex' : 'inline-block')};
-  align-items: ${({ hasVideoIcon }) =>
-    hasVideoIcon ? 'last baseline' : 'initial'};
+  display: flex;
+  align-items: last baseline;
 `;
 
 export const Wrapper = styled.div`
