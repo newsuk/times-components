@@ -82,9 +82,10 @@ export const InArticleAudio = ({
   return (
     <AudioPlayerContainer
       ref={audioRef}
-      className={
+      className={[
+        'article-audio-container',
         showAudioPlayer ? 'opShow_articleAudio' : 'opHide_articleAudio'
-      }
+      ].join(' ')}
     >
       <AudioPlayerComposable src={src}>
         <Stack flow="horizontal-center" marginBlock="space040">
@@ -102,7 +103,10 @@ export const InArticleAudio = ({
             >
               {isPlaying ? playingText : pausedText}
             </TextBlock>
-            <TextBlock typographyPreset="utilityBody010">
+            <TextBlock
+              typographyPreset="utilityBody010"
+              className="article-audio-narrator"
+            >
               {`Narrated by ${narrator}`}
             </TextBlock>
           </Block>
@@ -137,6 +141,7 @@ export const InArticleAudio = ({
                       headline,
                       narrator,
                       setIsExpanded,
+                      isPlaying,
                       handleClickPlayPause
                     }}
                   />

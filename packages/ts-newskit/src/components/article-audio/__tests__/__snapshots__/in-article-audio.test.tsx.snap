@@ -3,7 +3,7 @@
 exports[`Audio player renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="opHide_articleAudio css-1i5p60e"
+    class="article-audio-container opHide_articleAudio css-1i5p60e"
   >
     <section
       aria-label="Audio Player"
@@ -46,7 +46,7 @@ exports[`Audio player renders correctly 1`] = `
             Listen to article
           </p>
           <p
-            class="css-90ibmi"
+            class="article-audio-narrator css-90ibmi"
           >
             Narrated by James Marriott
           </p>
@@ -60,7 +60,7 @@ exports[`Audio player renders correctly 1`] = `
 exports[`Audio player renders correctly when visible 1`] = `
 <DocumentFragment>
   <div
-    class="opShow_articleAudio css-1i5p60e"
+    class="article-audio-container opShow_articleAudio css-1i5p60e"
   >
     <section
       aria-label="Audio Player"
@@ -103,7 +103,7 @@ exports[`Audio player renders correctly when visible 1`] = `
             Listen to article
           </p>
           <p
-            class="css-90ibmi"
+            class="article-audio-narrator css-90ibmi"
           >
             Narrated by James Marriott
           </p>

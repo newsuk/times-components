@@ -147,7 +147,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             >
               <audio
                 autoPlay={false}
-                src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+                src=""
               />
               <div>
                 <button
@@ -175,7 +175,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                     Listen to article
                   </p>
                   <p>
-                    Narrated by James Marriott
+                    Narrated by Some byline
                   </p>
                 </div>
               </div>
@@ -447,7 +447,7 @@ exports[`4. an article with ads 1`] = `
             >
               <audio
                 autoPlay={false}
-                src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+                src=""
               />
               <div>
                 <button
@@ -475,7 +475,7 @@ exports[`4. an article with ads 1`] = `
                     Listen to article
                   </p>
                   <p>
-                    Narrated by James Marriott
+                    Narrated by Some byline
                   </p>
                 </div>
               </div>

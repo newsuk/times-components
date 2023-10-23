@@ -66,11 +66,11 @@ const ArticleHeader = ({
     <TCThemeProvider>
       <InArticleAudio
         showAudioPlayer={showAudioPlayer}
-        src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+        src=""
         readyToPlayText="Listen to article"
         playingText="Playing"
-        narrator="James Marriott"
-        headline="Sorry, we can’t all be destined for greatness"
+        narrator={bylines[0].byline[0].children[0].attributes.value || ""}
+        headline={headline}
         feedback={{
           requestFeedback: true,
           feedbackMessage:
