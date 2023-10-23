@@ -32,7 +32,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
             class="css-1nw1nne"
           >
             <div
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -48,7 +48,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -123,7 +123,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
             class="css-1nw1nne"
           >
             <div
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -139,7 +139,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -228,7 +228,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
             class="css-1nw1nne"
           >
             <div
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -244,7 +244,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -319,7 +319,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
             class="css-1nw1nne"
           >
             <div
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -335,7 +335,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -448,7 +448,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -526,7 +526,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -618,7 +618,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -696,7 +696,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -817,7 +817,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
             class="css-1nw1nne"
           >
             <div
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -833,7 +833,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -908,7 +908,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
             class="css-1nw1nne"
           >
             <div
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -924,7 +924,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1013,7 +1013,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
             class="css-1nw1nne"
           >
             <div
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -1029,7 +1029,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1104,7 +1104,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
             class="css-1nw1nne"
           >
             <div
-              class="css-1kwj960"
+              class="article-image css-1kwj960"
             >
               <picture
                 class="css-l4lngz"
@@ -1120,7 +1120,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1233,7 +1233,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -1311,7 +1311,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -1403,7 +1403,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -1481,7 +1481,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -1600,7 +1600,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
             class="css-1nw1nne"
           >
             <div
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -1616,7 +1616,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -1703,7 +1703,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -1804,7 +1804,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -1891,7 +1891,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -2001,7 +2001,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
             class="css-1nw1nne"
           >
             <div
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -2017,7 +2017,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2104,7 +2104,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -2205,7 +2205,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -2292,7 +2292,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -2411,7 +2411,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
             class="css-1nw1nne"
           >
             <div
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -2427,7 +2427,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2514,7 +2514,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -2615,7 +2615,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -2702,7 +2702,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -2812,7 +2812,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
             class="css-1nw1nne"
           >
             <div
-              class="css-75ozqf"
+              class="article-image css-75ozqf"
             >
               <picture
                 class="css-l4lngz"
@@ -2828,7 +2828,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-i1f2uq"
+                class="article-info css-i1f2uq"
               >
                 <span
                   class="css-6tvr2h"
@@ -2915,7 +2915,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -3016,7 +3016,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"
@@ -3103,7 +3103,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               class="css-17cghxi"
             >
               <div
-                class="css-122i4mv"
+                class="article-info css-122i4mv"
               >
                 <span
                   class="css-6tvr2h"

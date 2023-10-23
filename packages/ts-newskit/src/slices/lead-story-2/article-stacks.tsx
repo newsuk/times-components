@@ -1,5 +1,13 @@
 import React from 'react';
-import { Block, Divider, GridLayout, Stack, Visible, Hidden } from 'newskit';
+import {
+  Block,
+  Divider,
+  GridLayout,
+  Stack,
+  Visible,
+  Hidden,
+  MQ
+} from 'newskit';
 import {
   LeadArticle,
   LeadArticleProps
@@ -17,7 +25,7 @@ export const ArticleStack = ({
 }: {
   verticalArticles: LeadArticleProps[];
   horizontalArticles: LeadArticleProps[];
-  horizontalArticleContentWidth?: string;
+  horizontalArticleContentWidth?: MQ<string> | string;
   clickHandler: ClickHandlerType;
 }) => {
   const modifiedHorizontalArticles = horizontalArticles.map(item => ({
@@ -90,7 +98,7 @@ export const ArticleStack = ({
 
   const articleGridVertical = (
     <GridLayout
-      columns={{ md: `${horizontalArticleContentWidth || '1fr'}` }}
+      columns={horizontalArticleContentWidth || '1fr'}
       columnGap={{ md: 'space060' }}
       style={{ marginBlock: 'space000' }}
     >
