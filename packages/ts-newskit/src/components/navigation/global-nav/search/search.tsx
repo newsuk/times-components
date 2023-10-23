@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TextField, ScreenReaderOnly, IconButton, Form } from 'newskit';
 import { NewsKitRoundedCloseIcon, NewsKitSearchIcon } from '../../../../assets';
 import { handleSearchSubmit } from './handleSearchSubmit';
+import { SEARCH_PLACEHOLDER_DOMAIN } from '../../../../constants';
 
 type NavSearchProps = {
   isHamburger?: boolean;
@@ -34,7 +35,7 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
         value={searchText}
         autoFocus
         onChange={event => setSearchText(event.target.value)}
-        placeholder="Search times.co.uk"
+        placeholder={`Search ${SEARCH_PLACEHOLDER_DOMAIN}`}
         overrides={{
           ...presets,
           typographyPreset: 'topNav010'
@@ -65,7 +66,7 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
         }
       />
       <ScreenReaderOnly id="searchTimesLabel">
-        Search times.co.uk
+        Search {SEARCH_PLACEHOLDER_DOMAIN}
       </ScreenReaderOnly>
     </Form>
   );

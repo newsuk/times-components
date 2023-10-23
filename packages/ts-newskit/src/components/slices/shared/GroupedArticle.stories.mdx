@@ -4,6 +4,7 @@ import { GroupedArticle } from "./grouped-article";
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../../theme/times-web-light/index';
 import { action } from '@storybook/addon-actions';
+import { BASE_URL } from '../../../constants';
 
 <Meta
   title="Newskit Components/Slices/Grouped Article"
@@ -35,12 +36,12 @@ export const GroupedArticleStory = ({articles, clickHandler}) => (
   {
     "headline": "Short title of the card describing the main content",
     "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
-    "url": "https://www.thetimes.co.uk",
+    "url": BASE_URL,
   },
   {
     "headline": "Short title of the card describing the main content",
     "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
-    "url": "https://www.thetimes.co.uk",
+    "url": BASE_URL,
   }
 ], clickHandler: action("ClickHandler")}}>
   {GroupedArticleStory.bind({})}

@@ -2,13 +2,14 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '../../../../utils/test-utils';
 import { StoryCard, StoryCardProps } from '../index';
+import { IMAGE_BASE_URL } from '../../../../constants';
 
 const renderComponent = (props: StoryCardProps) =>
   render(<StoryCard {...props} />);
 
 const defaultProps = {
   image:
-    'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498',
+    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498`,
   altText: 'Some alt text',
   title: 'ChatGPT invents Sudoku-style puzzle to keep the humans busy',
   url: 'https://newskit.co.uk/',
@@ -48,7 +49,7 @@ describe('Render puzzles story card', () => {
   it('items should render TITLE text if ALT is missing', () => {
     renderComponent({
       image:
-        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498',
+        `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498`,
       altText: '',
       title: 'ChatGPT invents Sudoku-style puzzle to keep the humans busy',
       url: 'https://newskit.co.uk/',

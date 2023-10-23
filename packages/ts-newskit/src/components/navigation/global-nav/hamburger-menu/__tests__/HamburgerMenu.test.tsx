@@ -5,6 +5,7 @@ import '@testing-library/jest-dom';
 import data from '../../__tests__/fixtures/test-data.json';
 
 import HamburgerMenu from '../HamburgerMenu';
+import { SEARCH_PLACEHOLDER_DOMAIN } from '../../../../../constants';
 
 const renderComponent = (loggedIn: boolean) =>
   render(<HamburgerMenu data={data} isLoggedIn={loggedIn} />);
@@ -84,13 +85,13 @@ describe('HamburgerMenu - Logged Out', () => {
 describe('Search field', () => {
   it('contains the search bar', () => {
     const { getByPlaceholderText } = renderComponent(false);
-    expect(getByPlaceholderText('Search times.co.uk')).toBeVisible();
+    expect(getByPlaceholderText(`Search ${SEARCH_PLACEHOLDER_DOMAIN}`)).toBeVisible();
   });
 
   it('should update search field value', async () => {
     renderComponent(false);
 
-    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+    const searchField = screen.getByPlaceholderText(`Search ${SEARCH_PLACEHOLDER_DOMAIN}`);
 
     fireEvent.change(searchField, {
       target: { value: 'Test Value' }
@@ -101,7 +102,7 @@ describe('Search field', () => {
   it('should clear search field when clicked', async () => {
     renderComponent(false);
 
-    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+    const searchField = screen.getByPlaceholderText(`Search ${SEARCH_PLACEHOLDER_DOMAIN}`);
 
     fireEvent.change(searchField, {
       target: { value: 'Test Value' }
