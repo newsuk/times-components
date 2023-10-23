@@ -4,14 +4,15 @@ import '@testing-library/jest-dom';
 import { SingleRelatedArticle } from '../SingleRelatedArticle';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 import mockDate from 'mockdate';
+import { BASE_URL, IMAGE_BASE_URL } from '../../../constants';
 
 const article1 = {
   label: 'Environment',
   headline: 'Scientists discover ‘chocolate frogs’ in New Guinea',
   link:
-    'https://www.thetimes.co.uk/article/scientists-discover-chocolate-frogs-in-new-guinea-bt3z986bj',
+    `${BASE_URL}/article/scientists-discover-chocolate-frogs-in-new-guinea-bt3z986bj`,
   image:
-    'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F464a9dfe-c453-11eb-8601-6a2ece3e4634.jpg?crop=3586%2C2017%2C0%2C187&resize=663',
+    `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F464a9dfe-c453-11eb-8601-6a2ece3e4634.jpg?crop=3586%2C2017%2C0%2C187&resize=663`,
   summary:
     'Popularised by the Harry Potter books, the chocolate frog, it has emerged, is far from fictional. A living version of the confectionery shop favourite has been discovered in the jungles of New Guinea.',
   publishedTime: '2021-06-03T11:00:00.000Z',

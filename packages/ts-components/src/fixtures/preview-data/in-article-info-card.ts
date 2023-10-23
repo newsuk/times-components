@@ -1,3 +1,5 @@
+import { IMAGE_BASE_URL } from "../../constants";
+
 export default {
   43603: {
     fields: {
@@ -107,7 +109,7 @@ export default {
           type: 'card',
           data: {
             image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F3005c946-089d-11eb-b792-c9107992ffa0.jpg?crop=1500%2C1000%2C0%2C0&resize=1500',
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F3005c946-089d-11eb-b792-c9107992ffa0.jpg?crop=1500%2C1000%2C0%2C0&resize=1500`,
             subtitle: 'Birch',
             copy:
               '<b>Hotel of the year</b>. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently'
@@ -117,7 +119,7 @@ export default {
           type: 'card',
           data: {
             image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0f831cea-0317-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500',
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0f831cea-0317-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500`,
             subtitle: 'Crockers at Henley',
             copy:
               "<b>Regional winner: Central</b> The food comes first at this restaurant with rooms but you'll be glad you're staying the night"
@@ -127,7 +129,7 @@ export default {
           type: 'card',
           data: {
             image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F762b1950-0337-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500',
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F762b1950-0337-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500`,
             subtitle: 'Mitre',
             copy:
               'Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history'
@@ -137,7 +139,7 @@ export default {
           type: 'card',
           data: {
             image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F2f35c210-032e-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500',
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F2f35c210-032e-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500`,
             subtitle: 'Stock Exchange Hotel',
             copy:
               'Regional winner: North. Gary Neville and Ryan Giggs have transformed this historic building into a high-scoring hotel'
@@ -147,7 +149,7 @@ export default {
           type: 'card',
           data: {
             image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fc2ca3a0e-04b6-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500',
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fc2ca3a0e-04b6-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500`,
             subtitle: 'The Pig at Harlyn Bay',
             copy:
               '<b>Regional winner: South</b>. Beautiful views, cracking seafood and bags of character make this retreat extra special'
@@ -168,7 +170,7 @@ export default {
           type: 'card',
           data: {
             image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F3005c946-089d-11eb-b792-c9107992ffa0.jpg?crop=1500%2C1000%2C0%2C0&resize=1500',
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F3005c946-089d-11eb-b792-c9107992ffa0.jpg?crop=1500%2C1000%2C0%2C0&resize=1500`,
             subtitle: 'Birch',
             copy:
               '<b>Hotel of the year</b>. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently'
@@ -178,7 +180,7 @@ export default {
           type: 'card',
           data: {
             image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0f831cea-0317-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500',
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0f831cea-0317-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500`,
             subtitle: 'Crockers at Henley',
             copy:
               "<b>Regional winner: Central</b> The food comes first at this restaurant with rooms but you'll be glad you're staying the night"

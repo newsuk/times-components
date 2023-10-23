@@ -7,6 +7,7 @@ import analyticsStream from '../../fixtures/analytics-actions/analytics-actions'
 import { RelatedArticleSliceType } from '../../types/related-article-slice';
 import { select } from '@storybook/addon-knobs';
 import styled from 'styled-components';
+import { BASE_URL, IMAGE_BASE_URL } from '../../constants';
 
 const Container = styled.div`
   .RelatedArticleSlice {
@@ -53,11 +54,11 @@ export const relatedArticleSlice: RelatedArticleSliceType = {
         leadAsset: {
           crop169: {
             url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3159%2C0%2C293'
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3159%2C0%2C293`
           },
           crop32: {
             url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3744%2C0%2C0'
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3744%2C0%2C0`
           },
           id: '4d75a19d-1956-473a-9474-ccbcdc5ac152',
           title: 'Steve Hewitt'
@@ -86,7 +87,7 @@ export const relatedArticleSlice: RelatedArticleSliceType = {
               crop: {
                 ratio: '1:1',
                 url:
-                  'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F60f61f90-acbe-11eb-9dc9-5a05c2885d62.jpg?crop=1055%2C1055%2C114%2C109'
+                  `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F60f61f90-acbe-11eb-9dc9-5a05c2885d62.jpg?crop=1055%2C1055%2C114%2C109`
               }
             }
           }
@@ -103,7 +104,7 @@ export const relatedArticleSlice: RelatedArticleSliceType = {
         shortHeadline: 'How to recruit the best young people to your business',
         slug: 'how-to-recruit-the-best-young-people-to-your-business',
         url:
-          'https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t',
+          `${BASE_URL}/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t`,
         summary105: [
           {
             name: 'paragraph',
@@ -202,11 +203,11 @@ export const relatedArticleSlice: RelatedArticleSliceType = {
         leadAsset: {
           crop169: {
             url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=4105%2C2309%2C42%2C1828'
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=4105%2C2309%2C42%2C1828`
           },
           crop32: {
             url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=4126%2C2750%2C14%2C1764'
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=4126%2C2750%2C14%2C1764`
           },
           id: '25c7e706-1994-4692-aa1e-36701e0fb9fa',
           title: 'Susie Ma,'
@@ -235,7 +236,7 @@ export const relatedArticleSlice: RelatedArticleSliceType = {
               crop: {
                 ratio: '1:1',
                 url:
-                  'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=2778%2C2778%2C753%2C1685'
+                  `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=2778%2C2778%2C753%2C1685`
               }
             }
           }
@@ -252,7 +253,7 @@ export const relatedArticleSlice: RelatedArticleSliceType = {
         shortHeadline: 'My recipe for self-belief',
         slug: 'susie-ma-my-recipe-for-self-belief',
         url:
-          'https://www.thetimes.co.uk/article/susie-ma-my-recipe-for-self-belief-pstccwdxr',
+          `${BASE_URL}/article/susie-ma-my-recipe-for-self-belief-pstccwdxr`,
         summary105: [
           {
             name: 'paragraph',
@@ -351,11 +352,11 @@ export const relatedArticleSlice: RelatedArticleSliceType = {
         leadAsset: {
           crop169: {
             url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cb358-cce1-11eb-9bfa-a3bc386e6928.jpg?crop=1361%2C765%2C117%2C132'
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cb358-cce1-11eb-9bfa-a3bc386e6928.jpg?crop=1361%2C765%2C117%2C132`
           },
           crop32: {
             url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cb358-cce1-11eb-9bfa-a3bc386e6928.jpg?crop=1175%2C784%2C277%2C106'
+              `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cb358-cce1-11eb-9bfa-a3bc386e6928.jpg?crop=1175%2C784%2C277%2C106`
           },
           id: 'bcfdd93f-4385-4dcd-9451-52e191bab446',
           title: ''
@@ -384,7 +385,7 @@ export const relatedArticleSlice: RelatedArticleSliceType = {
               crop: {
                 ratio: '1:1',
                 url:
-                  'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe06c0b34-cce1-11eb-9bfa-a3bc386e6928.png?crop=300%2C300%2C0%2C0'
+                  `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe06c0b34-cce1-11eb-9bfa-a3bc386e6928.png?crop=300%2C300%2C0%2C0`
               }
             }
           }
@@ -401,7 +402,7 @@ export const relatedArticleSlice: RelatedArticleSliceType = {
         shortHeadline: 'Why business is eating software',
         slug: 'why-business-is-eating-software',
         url:
-          'https://www.thetimes.co.uk/article/why-business-is-eating-software-swl6j8jj3',
+          `${BASE_URL}/article/why-business-is-eating-software-swl6j8jj3`,
         summary105: [
           {
             name: 'paragraph',

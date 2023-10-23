@@ -8,6 +8,7 @@ import { GalleryCarousel, GalleryCarouselProps } from '../GalleryCarousel';
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 import mockDate from 'mockdate';
+import { IMAGE_BASE_URL } from '../../../constants';
 
 jest.mock('@times-components/image', () => ({
   Placeholder: () => <div>Placeholder</div>
@@ -42,7 +43,7 @@ const testData = {
         type: 'image',
         data: {
           image:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180',
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180`,
           credit: 'Michael Clarke',
           copy: 'Copy 1',
           imageTitle: 'Birch'
@@ -52,7 +53,7 @@ const testData = {
         type: 'image',
         data: {
           image:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0f831cea-0317-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500',
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0f831cea-0317-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500`,
           credit: 'John Doe',
           copy: 'Copy 2',
           imageTitle: 'Crockers at Henley'
@@ -105,7 +106,7 @@ describe('GalleryCarousel', () => {
     expect(queryAllByText('Copy 1')).toBeTruthy();
     expect(getAllByRole('img')[0]).toHaveAttribute(
       'src',
-      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180'
+      `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180`
     );
   });
   describe('tracking', () => {

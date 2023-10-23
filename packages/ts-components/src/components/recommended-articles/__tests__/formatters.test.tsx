@@ -2,6 +2,7 @@ import { getArticles } from '../helpers';
 import previewData from '../../../fixtures/preview-data/recommended-articles';
 
 import { getRecommendedArticlesSlice } from '../formatters';
+import { BASE_URL, IMAGE_BASE_URL } from '../../../constants';
 
 const expectedArticles = [
   {
@@ -15,7 +16,7 @@ const expectedArticles = [
         {
           ratio: '16:9',
           url:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F831e0f3c-e5b7-11ec-9b02-3f136f233710.jpg?crop=1600%2C900%2C0%2C0'
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F831e0f3c-e5b7-11ec-9b02-3f136f233710.jpg?crop=1600%2C900%2C0%2C0`
         }
       ]
     },
@@ -23,7 +24,7 @@ const expectedArticles = [
     summary:
       'How is your bank balance? Even if the cost of living crisis doesn’t constitute a crisis for you, you’ll have noticed that you’re suddenly paying more for  and what felt reasonable may now...',
     url:
-      'https://www.thetimes.co.uk/article/save-or-splurge-what-experts-spend-their-own-money-on-tdd65qlj6'
+      `${BASE_URL}/article/save-or-splurge-what-experts-spend-their-own-money-on-tdd65qlj6`
   },
   {
     byline: '',
@@ -35,7 +36,7 @@ const expectedArticles = [
         {
           ratio: '16:9',
           url:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5ecb5d44-e650-11ec-9b02-3f136f233710.jpg?crop=5616%2C3159%2C0%2C293'
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5ecb5d44-e650-11ec-9b02-3f136f233710.jpg?crop=5616%2C3159%2C0%2C293`
         }
       ]
     },
@@ -43,7 +44,7 @@ const expectedArticles = [
     summary:
       'On August 1, 1981, Major Ian Crooke, the operations officer of 22 Special Air Service in Hereford, received a telephone call from London. A Marxist coup d’état was taking place in the former British...',
     url:
-      'https://www.thetimes.co.uk/article/lieutenant-colonel-ian-crooke-obituary-t0b890wgp'
+      `${BASE_URL}/article/lieutenant-colonel-ian-crooke-obituary-t0b890wgp`
   },
   {
     byline: 'Patrick Maguire',
@@ -55,7 +56,7 @@ const expectedArticles = [
         {
           ratio: '16:9',
           url:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Feb05c224-e626-11ec-aa87-2eea7c6e5b01.jpg?crop=1500%2C844%2C0%2C78'
+            `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Feb05c224-e626-11ec-aa87-2eea7c6e5b01.jpg?crop=1500%2C844%2C0%2C78`
         }
       ]
     },
@@ -63,7 +64,7 @@ const expectedArticles = [
     summary:
       'Worse than May. Worse than Major. As bad as Thatcher. of his own MPs, far more than even the most pessimistic whip predicted this time yesterday. Can Boris...',
     url:
-      'https://www.thetimes.co.uk/article/is-the-party-over-for-boris-johnson-k8s0jxv6r'
+      `${BASE_URL}/article/is-the-party-over-for-boris-johnson-k8s0jxv6r`
   }
 ];
 
