@@ -64,7 +64,8 @@ const defaultProps = {
   },
   flag: '4 min read',
   imageRight: false,
-  hideImage: false
+  hideImage: false,
+  hasVideo: false,
 };
 
 describe('Render Article List Item', () => {
@@ -111,6 +112,7 @@ describe('Render Article List Item', () => {
     renderComponent(
       {
         id: '123',
+        hasVideo: false,
         images: {
           alt: '',
           caption: '',
