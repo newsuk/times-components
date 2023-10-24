@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies, no-bitwise, operator-assignment, react/prop-types */
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import {
   ContextProviderWithDefaults,
@@ -16,8 +16,8 @@ import { sections } from "@times-components/storybook";
 import { scales, themeFactory } from "@times-components/ts-styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 
-import Article, { templates } from "./src/article";
 import { TCThemeProvider } from "@times-components/ts-newskit";
+import Article, { templates } from "./src/article";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([

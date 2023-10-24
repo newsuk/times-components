@@ -16,17 +16,15 @@ exports[`2. a loading state 1`] = `
   </Helmet>
   <ArticleList
     articleListHeader={
-      <TCThemeProvider>
-        <AuthorProfileHead
-          contractualTitle=""
-          isLoading={true}
-          jobTitle=""
-          metaDescription=""
-          name=""
-          twitter=""
-          uri=""
-        />
-      </TCThemeProvider>
+      <AuthorProfileHead
+        contractualTitle=""
+        isLoading={true}
+        jobTitle=""
+        metaDescription=""
+        name=""
+        twitter=""
+        uri=""
+      />
     }
     articles={
       Array [
@@ -61,28 +59,26 @@ exports[`3. an article list with images 1`] = `
   </Helmet>
   <ArticleList
     articleListHeader={
-      <TCThemeProvider>
-        <AuthorProfileHead
-          biography={
-            Array [
-              Object {
-                "attributes": Object {
-                  "value": "Camilla Long",
-                },
-                "children": Array [],
-                "name": "text",
+      <AuthorProfileHead
+        biography={
+          Array [
+            Object {
+              "attributes": Object {
+                "value": "Camilla Long",
               },
-            ]
-          }
-          contractualTitle="Contractual Title"
-          isLoading={false}
-          jobTitle="Job Title"
-          metaDescription=""
-          name="Name"
-          twitter="twitter"
-          uri="https://image.io"
-        />
-      </TCThemeProvider>
+              "children": Array [],
+              "name": "text",
+            },
+          ]
+        }
+        contractualTitle="Contractual Title"
+        isLoading={false}
+        jobTitle="Job Title"
+        metaDescription=""
+        name="Name"
+        twitter="twitter"
+        uri="https://image.io"
+      />
     }
     articles={
       Array [
@@ -117,28 +113,26 @@ exports[`4. an article list without images 1`] = `
   </Helmet>
   <ArticleList
     articleListHeader={
-      <TCThemeProvider>
-        <AuthorProfileHead
-          biography={
-            Array [
-              Object {
-                "attributes": Object {
-                  "value": "Camilla Long",
-                },
-                "children": Array [],
-                "name": "text",
+      <AuthorProfileHead
+        biography={
+          Array [
+            Object {
+              "attributes": Object {
+                "value": "Camilla Long",
               },
-            ]
-          }
-          contractualTitle="Contractual Title"
-          isLoading={false}
-          jobTitle="Job Title"
-          metaDescription=""
-          name="Name"
-          twitter="twitter"
-          uri=""
-        />
-      </TCThemeProvider>
+              "children": Array [],
+              "name": "text",
+            },
+          ]
+        }
+        contractualTitle="Contractual Title"
+        isLoading={false}
+        jobTitle="Job Title"
+        metaDescription=""
+        name="Name"
+        twitter="twitter"
+        uri=""
+      />
     }
     articles={
       Array [
@@ -173,28 +167,26 @@ exports[`5. fetches more articles 1`] = `
   </Helmet>
   <ArticleList
     articleListHeader={
-      <TCThemeProvider>
-        <AuthorProfileHead
-          biography={
-            Array [
-              Object {
-                "attributes": Object {
-                  "value": "Camilla Long",
-                },
-                "children": Array [],
-                "name": "text",
+      <AuthorProfileHead
+        biography={
+          Array [
+            Object {
+              "attributes": Object {
+                "value": "Camilla Long",
               },
-            ]
-          }
-          contractualTitle="Contractual Title"
-          isLoading={false}
-          jobTitle="Job Title"
-          metaDescription=""
-          name="Name"
-          twitter="twitter"
-          uri="https://image.io"
-        />
-      </TCThemeProvider>
+              "children": Array [],
+              "name": "text",
+            },
+          ]
+        }
+        contractualTitle="Contractual Title"
+        isLoading={false}
+        jobTitle="Job Title"
+        metaDescription=""
+        name="Name"
+        twitter="twitter"
+        uri="https://image.io"
+      />
     }
     articles={
       Array [
@@ -234,28 +226,26 @@ exports[`6. fetches more articles and falls back to previous data if no more 1`]
   </Helmet>
   <ArticleList
     articleListHeader={
-      <TCThemeProvider>
-        <AuthorProfileHead
-          biography={
-            Array [
-              Object {
-                "attributes": Object {
-                  "value": "Camilla Long",
-                },
-                "children": Array [],
-                "name": "text",
+      <AuthorProfileHead
+        biography={
+          Array [
+            Object {
+              "attributes": Object {
+                "value": "Camilla Long",
               },
-            ]
-          }
-          contractualTitle="Contractual Title"
-          isLoading={false}
-          jobTitle="Job Title"
-          metaDescription=""
-          name="Name"
-          twitter="twitter"
-          uri="https://image.io"
-        />
-      </TCThemeProvider>
+              "children": Array [],
+              "name": "text",
+            },
+          ]
+        }
+        contractualTitle="Contractual Title"
+        isLoading={false}
+        jobTitle="Job Title"
+        metaDescription=""
+        name="Name"
+        twitter="twitter"
+        uri="https://image.io"
+      />
     }
     articles={
       Array [

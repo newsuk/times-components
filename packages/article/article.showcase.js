@@ -8,7 +8,7 @@ import renderArticleConfig from "./showcase-helper";
 export default {
   children: [
     {
-      component: ({ boolean, color, select }, { decorateAction }) => (
+      component: ({ boolean, color, select }, { decorateAction }) =>
         renderArticleConfig({
           boolean,
           color,
@@ -16,14 +16,13 @@ export default {
           hasScaling: false,
           link: <NewTab />,
           select
-        })
-      ),
+        }),
       name: "Article with template choice",
       platform: "web",
       type: "story"
     },
     {
-      component: ({ boolean, color, select }, { decorateAction }) => (
+      component: ({ boolean, color, select }, { decorateAction }) =>
         renderArticleConfig({
           boolean,
           color,
@@ -31,8 +30,7 @@ export default {
           hasScaling: false,
           link: <NewTab />,
           select
-        })
-      ),
+        }),
       name: "Article teaser",
       platform: "web",
       type: "story",
