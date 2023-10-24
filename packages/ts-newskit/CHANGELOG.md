@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.120.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.120.0...@times-components/ts-newskit@1.120.1) (2023-10-24)
+
+
+### Bug Fixes
+
+* **TMRX-1594:** Video icon on new slices ([#3601](https://github.com/newsuk/times-components/issues/3601)) ([8b39ce6](https://github.com/newsuk/times-components/commit/8b39ce6bd7f1c4157bef3d93c185c5f925130301))
+
+
+
+
+
 # [1.120.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.119.0...@times-components/ts-newskit@1.120.0) (2023-10-23)
 
 
