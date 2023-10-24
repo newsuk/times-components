@@ -1,5 +1,13 @@
 export const sliceHeaderStylePresets = {
-  sliceHeaderPreset: {
+  sliceHeaderPresetMobile: {
+    base: {
+      borderTop: 'solid',
+      borderWidth: '{{borders.borderWidth030}}',
+      borderColor: '{{colors.sectionBrand060}}',
+      borderRadius: '{{borders.borderRadiusSharp}}'
+    }
+  },
+  sliceHeaderPresetDesktop: {
     base: {
       borderTop: 'dashed',
       borderWidth: '{{borders.borderWidth010}}',
@@ -12,12 +20,6 @@ export const sliceHeaderStylePresets = {
       backgroundColor: '{{colors.interactiveSecondary020}}',
       color: '{{colors.inkBrand010}}',
       borderRadius: '{{borders.borderRadiusCircle}}'
-    },
-    hover: {
-      backgroundColor: '{{colors.interface040}}'
-    },
-    active: {
-      backgroundColor: '{{colors.interface050}}'
     }
   }
 };
