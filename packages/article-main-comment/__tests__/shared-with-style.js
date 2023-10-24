@@ -11,6 +11,7 @@ import {
 } from "@times-components/jest-serializer";
 import "./mocks";
 import { ContextProviderWithDefaults } from "@times-components/context";
+import { TCThemeProvider } from "@times-components/ts-newskit";
 import ArticleMainComment from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
@@ -162,7 +163,9 @@ export default () => {
           user: { isLoggedIn: true }
         }}
       >
-        <ArticleMainComment {...sharedProps} article={article} />
+        <TCThemeProvider>
+          <ArticleMainComment {...sharedProps} article={article} />
+        </TCThemeProvider>
       </ContextProviderWithDefaults>
     );
 

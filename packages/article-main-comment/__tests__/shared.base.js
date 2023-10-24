@@ -2,6 +2,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
+import { TCThemeProvider } from "@times-components/ts-newskit";
 import ArticleMainComment from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
@@ -29,10 +30,12 @@ export const snapshotTests = renderComponent => [
     name: "an error",
     test() {
       const testRenderer = renderComponent(
-        <ArticleMainComment
-          {...sharedProps}
-          error={{ message: "An example error." }}
-        />
+        <TCThemeProvider>
+          <ArticleMainComment
+            {...sharedProps}
+            error={{ message: "An example error." }}
+          />
+        </TCThemeProvider>
       );
 
       expect(testRenderer).toMatchSnapshot();
@@ -42,7 +45,9 @@ export const snapshotTests = renderComponent => [
     name: "loading",
     test() {
       const testRenderer = renderComponent(
-        <ArticleMainComment {...sharedProps} isLoading />
+        <TCThemeProvider>
+          <ArticleMainComment {...sharedProps} isLoading />
+        </TCThemeProvider>
       );
 
       expect(testRenderer).toMatchSnapshot();
@@ -52,14 +57,16 @@ export const snapshotTests = renderComponent => [
     name: "an article with no headline falls back to use shortHeadline",
     test() {
       const testRenderer = renderComponent(
-        <ArticleMainComment
-          {...sharedProps}
-          article={articleFixture({
-            ...testFixture,
-            ...emptyArticle,
-            headline: ""
-          })}
-        />
+        <TCThemeProvider>
+          <ArticleMainComment
+            {...sharedProps}
+            article={articleFixture({
+              ...testFixture,
+              ...emptyArticle,
+              headline: ""
+            })}
+          />
+        </TCThemeProvider>
       );
 
       expect(testRenderer).toMatchSnapshot();
@@ -69,20 +76,22 @@ export const snapshotTests = renderComponent => [
     name: "an article with ads",
     test() {
       const testRenderer = renderComponent(
-        <ArticleMainComment
-          {...sharedProps}
-          article={articleFixture({
-            ...testFixture,
-            ...emptyArticle,
-            content: [
-              {
-                attributes: {},
-                children: [],
-                name: "ad"
-              }
-            ]
-          })}
-        />
+        <TCThemeProvider>
+          <ArticleMainComment
+            {...sharedProps}
+            article={articleFixture({
+              ...testFixture,
+              ...emptyArticle,
+              content: [
+                {
+                  attributes: {},
+                  children: [],
+                  name: "ad"
+                }
+              ]
+            })}
+          />
+        </TCThemeProvider>
       );
 
       expect(testRenderer).toMatchSnapshot();
@@ -95,10 +104,12 @@ const negativeTests = [
     name: "an article with no label",
     test() {
       const testRenderer = TestRenderer.create(
-        <ArticleMainComment
-          {...sharedProps}
-          article={articleFixture({ ...testFixture, label: null })}
-        />
+        <TCThemeProvider>
+          <ArticleMainComment
+            {...sharedProps}
+            article={articleFixture({ ...testFixture, label: null })}
+          />
+        </TCThemeProvider>
       );
 
       const label = findComponents(testRenderer, "ArticleLabel");
@@ -110,13 +121,15 @@ const negativeTests = [
     name: "an article with no standfirst",
     test() {
       const testRenderer = TestRenderer.create(
-        <ArticleMainComment
-          {...sharedProps}
-          article={articleFixture({
-            ...testFixture,
-            standfirst: null
-          })}
-        />
+        <TCThemeProvider>
+          <ArticleMainComment
+            {...sharedProps}
+            article={articleFixture({
+              ...testFixture,
+              standfirst: null
+            })}
+          />
+        </TCThemeProvider>
       );
 
       const textNodes = testRenderer.root.findAll(node => {
