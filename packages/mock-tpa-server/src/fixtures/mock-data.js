@@ -1,4 +1,5 @@
 import { article } from "@times-components/provider-test-tools";
+import { BASE_DOMAIN, IMAGE_BASE_URL } from "../constants";
 
 const createArticle = () => ({
   bylines: [],
@@ -8,8 +9,7 @@ const createArticle = () => ({
   label: "EXAMPLE LABEL",
   leadAsset: {
     crop: {
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F93ca91ce-e071-11e8-9ca5-2dc8c6b25903.jpg?crop=2592%2C1728%2C204%2C100"
+      url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F93ca91ce-e071-11e8-9ca5-2dc8c6b25903.jpg?crop=2592%2C1728%2C204%2C100`
     },
     id: "34d64f20-cb67-11e4-a202-50ac5def393a"
   },
@@ -143,7 +143,7 @@ export default () => ({
       },
       biography: createBiography(),
       hasLeadAssets: false,
-      image: "//www.thetimes.co.uk/d/img/profile/greg-hurst.jpg",
+      image: `//${BASE_DOMAIN}/d/img/profile/greg-hurst.jpg`,
       jobTitle: "Legal Editor",
       name: "Fiona Hamilton",
       slug: "fiona-hamilton",
