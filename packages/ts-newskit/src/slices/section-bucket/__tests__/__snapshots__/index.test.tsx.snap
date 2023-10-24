@@ -50,58 +50,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         </section>
                       </div>
                     </div>
-                    <div
-                      class="css-gre9re"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                           fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <div
-                      class="css-11l110t"
-                    >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
-                          fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </a>
               </div>
@@ -346,58 +316,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         </section>
                       </div>
                     </div>
-                    <div
-                      class="css-gre9re"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                           fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <div
-                      class="css-11l110t"
-                    >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
-                          fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </a>
               </div>
@@ -642,58 +582,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         </section>
                       </div>
                     </div>
-                    <div
-                      class="css-gre9re"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                           fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <div
-                      class="css-11l110t"
-                    >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
-                          fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </a>
               </div>
@@ -938,58 +848,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         </section>
                       </div>
                     </div>
-                    <div
-                      class="css-gre9re"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                           fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <div
-                      class="css-11l110t"
-                    >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
-                          fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </a>
               </div>
@@ -1248,58 +1128,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </section>
                     </div>
                   </div>
-                  <div
-                    class="css-gre9re"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
+                      fill="currentcolor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                         fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <div
-                    class="css-11l110t"
-                  >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
-                        fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
+                      />
+                    </svg>
+                  </button>
                 </div>
               </a>
             </div>
@@ -1544,58 +1394,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </section>
                     </div>
                   </div>
-                  <div
-                    class="css-gre9re"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
+                      fill="currentcolor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                         fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <div
-                    class="css-11l110t"
-                  >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
-                        fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
+                      />
+                    </svg>
+                  </button>
                 </div>
               </a>
             </div>
@@ -1840,58 +1660,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </section>
                     </div>
                   </div>
-                  <div
-                    class="css-gre9re"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
+                      fill="currentcolor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                         fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <div
-                    class="css-11l110t"
-                  >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
-                        fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
+                      />
+                    </svg>
+                  </button>
                 </div>
               </a>
             </div>
@@ -2136,58 +1926,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </section>
                     </div>
                   </div>
-                  <div
-                    class="css-gre9re"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
+                      fill="currentcolor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                         fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <div
-                    class="css-11l110t"
-                  >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
-                        fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
+                      />
+                    </svg>
+                  </button>
                 </div>
               </a>
             </div>
@@ -2458,58 +2218,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         </section>
                       </div>
                     </div>
-                    <div
-                      class="css-gre9re"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                           fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <div
-                      class="css-11l110t"
-                    >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
-                          fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </a>
               </div>
@@ -2754,58 +2484,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         </section>
                       </div>
                     </div>
-                    <div
-                      class="css-gre9re"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                           fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <div
-                      class="css-11l110t"
-                    >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
-                          fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </a>
               </div>
@@ -3050,58 +2750,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         </section>
                       </div>
                     </div>
-                    <div
-                      class="css-gre9re"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                           fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <div
-                      class="css-11l110t"
-                    >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
-                          fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </a>
               </div>
@@ -3346,58 +3016,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         </section>
                       </div>
                     </div>
-                    <div
-                      class="css-gre9re"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                           fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
-                    <div
-                      class="css-11l110t"
-                    >
-                      <button
-                        class="css-wjwny5"
-                        data-testid="button"
-                        type="button"
-                      >
-                        <svg
-                          aria-hidden="true"
-                          class="css-3rbz36"
-                          fill="currentcolor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M0 0h24v24H0z"
-                            fill="none"
-                          />
-                          <path
-                            d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                            fill="currentcolor"
-                          />
-                        </svg>
-                      </button>
-                    </div>
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </a>
               </div>
@@ -3656,58 +3296,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </section>
                     </div>
                   </div>
-                  <div
-                    class="css-gre9re"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
+                      fill="currentcolor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                         fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <div
-                    class="css-11l110t"
-                  >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
-                        fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
+                      />
+                    </svg>
+                  </button>
                 </div>
               </a>
             </div>
@@ -3952,58 +3562,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </section>
                     </div>
                   </div>
-                  <div
-                    class="css-gre9re"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
+                      fill="currentcolor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                         fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <div
-                    class="css-11l110t"
-                  >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
-                        fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
+                      />
+                    </svg>
+                  </button>
                 </div>
               </a>
             </div>
@@ -4248,58 +3828,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </section>
                     </div>
                   </div>
-                  <div
-                    class="css-gre9re"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
+                      fill="currentcolor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                         fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <div
-                    class="css-11l110t"
-                  >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
-                        fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
+                      />
+                    </svg>
+                  </button>
                 </div>
               </a>
             </div>
@@ -4544,58 +4094,28 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </section>
                     </div>
                   </div>
-                  <div
-                    class="css-gre9re"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
+                      fill="currentcolor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
                         fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <div
-                    class="css-11l110t"
-                  >
-                    <button
-                      class="css-wjwny5"
-                      data-testid="button"
-                      type="button"
-                    >
-                      <svg
-                        aria-hidden="true"
-                        class="css-3rbz36"
-                        fill="currentcolor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                          fill="currentcolor"
-                        />
-                      </svg>
-                    </button>
-                  </div>
+                      />
+                    </svg>
+                  </button>
                 </div>
               </a>
             </div>
