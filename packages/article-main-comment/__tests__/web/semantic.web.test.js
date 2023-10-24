@@ -132,14 +132,14 @@ const tests = [
       const scale = scales.large;
       const sectionColour = "#FFFFFF";
       const testRenderer = TestRenderer.create(
-        <TCThemeProvider>
-          <ContextProviderWithDefaults
-            value={{
-              theme: { scale, sectionColour },
-              user: { hasAccess: true, isLoggedIn: true }
-            }}
-          >
-            <MockedProvider>
+        <ContextProviderWithDefaults
+          value={{
+            theme: { scale, sectionColour },
+            user: { hasAccess: true, isLoggedIn: true }
+          }}
+        >
+          <MockedProvider>
+            <TCThemeProvider>
               <Article
                 adConfig={adConfig}
                 analyticsStream={() => {}}
@@ -154,9 +154,9 @@ const tests = [
                 receiveChildList={() => {}}
                 commentingConfig={{ account: "dummiy-spotim-id" }}
               />
-            </MockedProvider>
-          </ContextProviderWithDefaults>
-        </TCThemeProvider>
+            </TCThemeProvider>
+          </MockedProvider>
+        </ContextProviderWithDefaults>
       );
 
       expect(testRenderer).toMatchSnapshot();
