@@ -36,6 +36,7 @@
     "label": "Tag",
     "href": "/"
   },
+  "hasVideo": false,
   "flag": "4 min read",
   "color": "#E34605",
   "imageRight": false
