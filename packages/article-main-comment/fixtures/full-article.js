@@ -1,3 +1,5 @@
+import { BASE_URL, FEEDS_BASE_URL, IMAGE_BASE_URL } from "../constants";
+
 export const bylineWithLink = () => [
   {
     byline: [
@@ -113,8 +115,7 @@ export const longContent = [
       credits: "The credits",
       display: "primary",
       ratio: "1500:1000",
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0"
+      url: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -153,8 +154,7 @@ export const longContent = [
       credits: "The credits",
       display: "secondary",
       ratio: "3:2",
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0"
+      url: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -198,8 +198,7 @@ export const longContent = [
       credits: "The credits",
       display: "inline",
       ratio: "1:1.50",
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0"
+      url: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -224,8 +223,7 @@ export const longContent = [
       credits: "The credits",
       display: "inline",
       ratio: "3:2",
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0"
+      url: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -674,8 +672,7 @@ export const videoLeadAsset = ({
 });
 
 const defaultAuthor = {
-  image:
-    "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
+  image: `${FEEDS_BASE_URL}/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400`
 };
 
 const defaultCommentsEnabled = true;
@@ -698,8 +695,7 @@ const defaultContent = [
               },
               {
                 attributes: {
-                  href:
-                    "https://www.thetimes.co.uk/edition/news/may-hit-by-another-brexit-walkout-amid-claims-of-establishment-coup-k9x69qlb8",
+                  href: `${BASE_URL}/edition/news/may-hit-by-another-brexit-walkout-amid-claims-of-establishment-coup-k9x69qlb8`,
                   target: "_blank",
                   type: "article"
                 },
@@ -823,8 +819,7 @@ const defaultContent = [
       },
       {
         attributes: {
-          href:
-            "https://www.thetimes.co.uk/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89"
+          href: `${BASE_URL}/article/peers-call-for-action-after-liam-allan-trial-blunder-vnzn0sz89`
         },
         children: [
           {
@@ -884,8 +879,7 @@ const defaultContent = [
       caption: "This is video caption",
       display: "primary",
       posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-      posterImageUrl:
-        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0"
+      posterImageUrl: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0`
     },
     children: [],
     name: "video"
@@ -918,8 +912,7 @@ const defaultContent = [
       brightcoveVideoId: "5831024132001",
       caption: "This is video caption secondary",
       display: "secondary",
-      posterImageUrl:
-        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0"
+      posterImageUrl: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0`
     },
     children: [],
     name: "video"
@@ -930,8 +923,7 @@ const defaultContent = [
       credits: "The credits",
       display: "primary",
       ratio: "1500:1000",
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0"
+      url: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7ac990a-d872-11e7-9b16-edd3826708d6.jpg?crop=3959%2C2639%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -986,8 +978,7 @@ const defaultContent = [
       credits: "The credits",
       display: "secondary",
       ratio: "3:2",
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0"
+      url: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4476fabc-be54-11e7-b58a-4186f6049f2e.jpg?crop=5760%2C3840%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -1031,8 +1022,7 @@ const defaultContent = [
       credits: "The credits",
       display: "inline",
       ratio: "1:1.50",
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0"
+      url: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -1057,8 +1047,7 @@ const defaultContent = [
       credits: "The credits",
       display: "inline",
       ratio: "3:2",
-      url:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0"
+      url: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0`
     },
     children: [],
     name: "image"
@@ -1274,8 +1263,7 @@ const defaultRelatedArticleSlice = {
           },
           crop169: {
             __typename: "Crop",
-            url:
-              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104"
+            url: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104`
           },
           id: "ea16d744-cb4a-11e4-a202-50ac5def393b",
           title: "TMS: Pratchett’s law of the jungle"
@@ -1545,8 +1533,7 @@ const defaultRelatedArticleSlice = {
           },
           crop169: {
             __typename: "Crop",
-            url:
-              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108"
+            url: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108`
           },
           id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
           title: "Rise of centenarian drivers as elderly push on"
@@ -1734,14 +1721,12 @@ const defaultRelatedArticleSlice = {
             crop32: {
               __typename: "Crop",
               ratio: "3:2",
-              url:
-                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0"
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0`
             },
             crop169: {
               __typename: "Crop",
               ratio: "16:9",
-              url:
-                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0"
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0`
             },
             id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
             title: ""
@@ -1843,8 +1828,7 @@ const defaultRelatedArticleSlice = {
             name: "paragraph"
           }
         ],
-        url:
-          "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23"
+        url: `${BASE_URL}/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23`
       }
     }
   ]
@@ -1882,8 +1866,7 @@ const defaultTopics = [
     slug: "rugby-union"
   }
 ];
-const defaultUrl =
-  "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
+const defaultUrl = `${BASE_URL}/edition/news/france-defies-may-over-russia-37b27qd2s`;
 
 const addProp = (obj, key, value) => {
   if (value != null) {
