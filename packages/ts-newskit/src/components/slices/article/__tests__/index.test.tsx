@@ -65,7 +65,7 @@ const defaultProps = {
   flag: '4 min read',
   imageRight: false,
   hideImage: false,
-  hasVideo: false,
+  hasVideo: false
 };
 
 describe('Render Article List Item', () => {

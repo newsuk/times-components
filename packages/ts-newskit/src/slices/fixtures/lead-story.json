@@ -1,5 +1,6 @@
 {
   "leadArticle": {
+    "hasVideo": false,
     "contentType": "Interview",
     "label": "Martin Samuel",
     "expirableFlags": [
@@ -52,6 +53,7 @@
   },
   "articles": [
     {
+      "hasVideo": false,
       "contentType": "Q&A",
       "label": "",
       "expirableFlags": [
@@ -101,6 +103,7 @@
       "flag": "Flag1"
     },
     {
+      "hasVideo": false,
       "contentType": "Profile",
       "label": "",
       "expirableFlags": [
@@ -150,6 +153,7 @@
       "flag": ""
     },
     {
+      "hasVideo": false,
       "contentType": "Review",
       "label": "",
       "expirableFlags": [
@@ -199,6 +203,7 @@
       "flag": ""
     },
     {
+      "hasVideo": false,
       "contentType": "Q&A",
       "label": "",
       "expirableFlags": [
@@ -248,6 +253,7 @@
       "flag": "Flag4"
     },
     {
+      "hasVideo": false,
       "contentType": "Q&A",
       "label": "",
       "expirableFlags": [
@@ -298,6 +304,7 @@
     }
   ],
   "articlesWithListItems": {
+    "hasVideo": false,
     "label": "",
     "expirableFlags": [
     ],
@@ -350,6 +357,7 @@
     ]
   },
   "singleArticle": {
+    "hasVideo": false,
     "contentType": "Profile",
     "label": "",
     "expirableFlags": [
@@ -452,6 +460,7 @@
         "listData": []
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -506,6 +515,7 @@
   },
   "smallArticles": [
     {
+      "hasVideo": false,
       "contentType": "Profile",
       "label": "",
       "expirableFlags": [
@@ -555,6 +565,7 @@
       "flag": "Flag"
     },
     {
+      "hasVideo": false,
       "contentType": "Review",
       "label": "",
       "expirableFlags": [
@@ -606,6 +617,7 @@
   ],
   "verticalArticles": [
     {
+      "hasVideo": false,
       "contentType": "Profile",
       "label": "",
       "expirableFlags": [
@@ -657,6 +669,7 @@
       "listData": []
     },
     {
+      "hasVideo": false,
       "contentType": "Review",
       "label": "",
       "expirableFlags": [
@@ -710,6 +723,7 @@
   ],
   "horizontalArticles": [
     {
+      "hasVideo": false,
       "contentType": "Review",
       "label": "",
       "expirableFlags": [
@@ -761,6 +775,7 @@
       "listData": []
     },
     {
+      "hasVideo": false,
       "contentType": "Interview",
       "label": "",
       "expirableFlags": [

@@ -66,14 +66,17 @@ export const ArticleTileInfo = ({
         className="article-info"
       >
         <>
-          {isLiveTag && (
-            <>
-              <LiveTag
-                liveTag={capitalizedText(getActiveArticleFlags(expirableFlags))}
-              />
-              <CustomDivider />
-            </>
-          )}
+          {isLiveTag &&
+            expirableFlags && (
+              <>
+                <LiveTag
+                  liveTag={capitalizedText(
+                    getActiveArticleFlags(expirableFlags)
+                  )}
+                />
+                <CustomDivider />
+              </>
+            )}
           {!isLiveTag &&
             expirableFlags &&
             getActiveArticleFlags(expirableFlags) && (

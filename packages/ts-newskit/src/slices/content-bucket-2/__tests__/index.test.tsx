@@ -74,8 +74,8 @@ describe('Content Bucket 2 Articles list below `md` breakpoint', () => {
     const articleItem1 = articleContainer.firstElementChild!.firstElementChild;
     const articleItem4 = articleContainer.lastElementChild!.firstElementChild;
 
-    expect(articleItem1!.getElementsByTagName('hr').length).toBe(1);
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
+    expect(articleItem1!.getElementsByTagName('hr').length).toBe(2);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(3);
   });
 
   test('article images', () => {
@@ -86,6 +86,6 @@ describe('Content Bucket 2 Articles list below `md` breakpoint', () => {
 
     expect(articleItem1!.getElementsByTagName('img').length).toBe(1);
     expect(articleItem4!.getElementsByTagName('img').length).toBe(0);
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(3);
   });
 });

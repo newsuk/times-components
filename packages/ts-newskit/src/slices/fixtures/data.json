@@ -844,6 +844,7 @@
     },
     "articles": [
       {
+        "hasVideo": false,
         "contentType": "Q&A",
         "label": "",
         "expirableFlags": [
@@ -893,6 +894,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -942,6 +944,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -999,6 +1002,7 @@
     },
     "articles": [
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1048,6 +1052,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1097,6 +1102,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1154,6 +1160,7 @@
     },
     "articles": [
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1203,6 +1210,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1252,6 +1260,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1309,6 +1318,7 @@
     },
     "articles": [
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1358,6 +1368,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1407,6 +1418,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Interview",
         "label": "",
         "expirableFlags": [
