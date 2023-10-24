@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.121.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.120.1...@times-components/ts-newskit@1.121.0) (2023-10-24)
+
+
+### Features
+
+* **TMRX-1561:** Refactor stacked module ([#3602](https://github.com/newsuk/times-components/issues/3602)) ([e9962c5](https://github.com/newsuk/times-components/commit/e9962c55e5274b6d897140ce5e6ec393de44d922))
+
+
+
+
+
 ## [1.120.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.120.0...@times-components/ts-newskit@1.120.1) (2023-10-24)
 
 
