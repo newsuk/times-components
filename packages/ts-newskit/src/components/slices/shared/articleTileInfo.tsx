@@ -5,7 +5,6 @@ import { LiveTag } from './live-tag';
 import { NewsKitVideoButtonIcon } from '../../../assets/index';
 import { CustomTextBlock } from './customTextBlock';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
-import { ReactJSXElementChildrenAttribute } from '@emotion/react/types/jsx-namespace';
 
 export type expirableFlagsProps = {
   type: string;
@@ -23,15 +22,15 @@ export interface ArticleTileInfoProps {
 
 const TileWrapper = ({ children }: { children: React.ReactNode }) => (
   <>
-  {children}
-  <ContainerInline>
-    <Divider
-      vertical
-      overrides={{
-        marginInline: 'space020'
-      }}
-    />
-  </ContainerInline>
+    {children}
+    <ContainerInline>
+      <Divider
+        vertical
+        overrides={{
+          marginInline: 'space020'
+        }}
+      />
+    </ContainerInline>
   </>
 );
 
@@ -78,7 +77,7 @@ export const ArticleTileInfo = ({
                     getActiveArticleFlags(expirableFlags)
                   )}
                 />
-                </TileWrapper>
+              </TileWrapper>
             )}
           {!isLiveTag &&
             expirableFlags &&
@@ -88,7 +87,7 @@ export const ArticleTileInfo = ({
                   stylePreset="expirableFlagPreset"
                   text={capitalizedText(getActiveArticleFlags(expirableFlags))}
                 />
-                </TileWrapper>
+              </TileWrapper>
             )}
           {contentType && (
             <TileWrapper>
@@ -103,7 +102,7 @@ export const ArticleTileInfo = ({
           {label && (
             <TileWrapper>
               <CustomTextBlock text={capitalizedText(label)} />
-              </TileWrapper>
+            </TileWrapper>
           )}
         </>
       </StyledBlock>
