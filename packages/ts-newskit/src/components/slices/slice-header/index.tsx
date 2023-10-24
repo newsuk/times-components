@@ -1,6 +1,6 @@
 import React from 'react';
 import { NewsKitChevronRightIcon } from '../../../assets';
-import { FlagSize, IconButton, TitleBar, Visible, MQ } from 'newskit';
+import { IconButton, TitleBar, MQ } from 'newskit';
 import {
   SliceHeaderWrapper,
   SliceHeaderLink,
@@ -12,7 +12,7 @@ export interface SliceHeaderProps {
   href?: string;
   titleTypographyPreset?: MQ<string>;
   iconArrowSize?: MQ<string>;
-  iconSize?: MQ<FlagSize>;
+  iconSize?: MQ<string>;
   padding?: string;
   sliceHeaderClickHandler: (title: string) => void;
 }
@@ -25,7 +25,7 @@ export const SliceHeader = ({
     md: 'editorialDisplay004'
   },
   iconArrowSize = { xs: 'iconSize010', md: 'iconSize020' },
-  iconSize = { xs: 'small', md: 'medium' },
+  iconSize = { xs: 'sizing060', md: 'sizing080' },
   padding = 'space030',
   sliceHeaderClickHandler
 }: SliceHeaderProps) => {
@@ -59,30 +59,16 @@ export const SliceHeader = ({
             {title}
           </TitleBar>
           {href && (
-            <>
-              <Visible xs sm>
-                <IconButton
-                  size={typeof iconSize === 'object' ? iconSize.xs : iconSize}
-                  overrides={{
-                    stylePreset: 'sliceIconPreset',
-                    iconSize: iconArrowSize
-                  }}
-                >
-                  <NewsKitChevronRightIcon />
-                </IconButton>
-              </Visible>
-              <Visible md lg xl>
-                <IconButton
-                  size={typeof iconSize === 'object' ? iconSize.md : iconSize}
-                  overrides={{
-                    stylePreset: 'sliceIconPreset',
-                    iconSize: iconArrowSize
-                  }}
-                >
-                  <NewsKitChevronRightIcon />
-                </IconButton>
-              </Visible>
-            </>
+            <IconButton
+              overrides={{
+                stylePreset: 'sliceIconPreset',
+                iconSize: iconArrowSize,
+                height: iconSize,
+                width: iconSize
+              }}
+            >
+              <NewsKitChevronRightIcon />
+            </IconButton>
           )}
         </SliceHeaderContainer>
       </SliceHeaderLink>
