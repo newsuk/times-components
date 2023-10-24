@@ -11,7 +11,7 @@ export const SectionHeader = ({ title }: SectionTitleItems) => {
       headingAs="h1"
       overrides={{
         marginBlockStart: { xs: '', md: 'space060' },
-        marginBlockEnd: 'space010',
+        marginBlockEnd:{ xs: 'space030', md: 'space010' },
         typographyPreset: {
           xs: 'sectionHeader010',
           md: 'editorialDisplay008'
