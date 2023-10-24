@@ -1,5 +1,6 @@
-const defaultFirstCrop169 =
-  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c7f242e-d1de-11ec-9d8b-0826aa666f4f.jpg?crop=1919%2C1080%2C134%2C281&resize=1500";
+import { BASE_URL, IMAGE_BASE_URL } from "../../constants";
+
+const defaultFirstCrop169 = `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c7f242e-d1de-11ec-9d8b-0826aa666f4f.jpg?crop=1919%2C1080%2C134%2C281&resize=1500`;
 const defaultFirstHeadline =
   "Now for a new battle: bringing the fragile masterpiece over safely";
 const defaultFirstShortHeadline =
@@ -104,13 +105,11 @@ const defaultFirstSummary225 = [
 ];
 const defaultFirstTitle =
   "The tapestry has had a purpose-built home since 1983, having once been kept at Bayeux Cathedral";
-const defaultFirstUrl =
-  "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh";
+const defaultFirstUrl = `${BASE_URL}/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh`;
 const defaultSlug =
   "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
 const defaultShortIdentifier = "2k629tpvh";
-const defaultSecondCrop169 =
-  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c7f242e-d1de-11ec-9d8b-0826aa666f4f.jpg?crop=1919%2C1080%2C134%2C281&resize=1500";
+const defaultSecondCrop169 = `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c7f242e-d1de-11ec-9d8b-0826aa666f4f.jpg?crop=1919%2C1080%2C134%2C281&resize=1500`;
 const defaultSecondHeadline = "Bayeux Tapestry to be displayed in Britain";
 const defaultSecondShortHeadline = "Bayeux Tapestry displayed in Britain";
 const defaultSecondLabel = "BAYEUX TAPESTRY";
@@ -378,10 +377,8 @@ const defaultSecondSummary225 = [
 ];
 const defaultSecondTitle =
   "Bayeux Tapestry 1067: Battle of Hastings, 14 October 1066. The death of Harold II, last Anglo-Saxon king of England. Left, figure pulling arrow from eye and then being cut down by Norman knight. Armour Chain Mail Sword Axe Textile";
-const defaultSecondUrl =
-  "https://www.thetimes.co.uk/article/britain-to-get-bayeux-tapestry-as-macron-agrees-loan-n5brflnjx";
-const defaultThirdCrop169 =
-  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0";
+const defaultSecondUrl = `${BASE_URL}/article/britain-to-get-bayeux-tapestry-as-macron-agrees-loan-n5brflnjx`;
+const defaultThirdCrop169 = `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0`;
 const defaultThirdHeadline =
   "YouTube ignored police pleas to remove threatening videos";
 const defaultThirdShortHeadline = "YouTube ignored police pleas to videos";
@@ -478,8 +475,7 @@ const defaultThirdSummary225 = [
   }
 ];
 const defaultThirdTitle = "Some scary people";
-const defaultThirdUrl =
-  "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23";
+const defaultThirdUrl = `${BASE_URL}/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23`;
 
 export default ({
   firstCrop169 = defaultFirstCrop169,

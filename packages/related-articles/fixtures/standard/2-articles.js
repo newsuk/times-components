@@ -1,5 +1,6 @@
-const defaultFirstCrop169 =
-  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c7f242e-d1de-11ec-9d8b-0826aa666f4f.jpg?crop=1919%2C1080%2C134%2C281&resize=1500";
+import { BASE_URL, IMAGE_BASE_URL } from "../../constants";
+
+const defaultFirstCrop169 = `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c7f242e-d1de-11ec-9d8b-0826aa666f4f.jpg?crop=1919%2C1080%2C134%2C281&resize=1500`;
 const defaultFirstHeadline =
   "Now for a new battle: bringing the fragile masterpiece over safely";
 const defaultFirstShortHeadline =
@@ -98,10 +99,8 @@ const defaultFirstSummary225 = [
 ];
 const defaultFirstTitle =
   "The tapestry has had a purpose-built home since 1983, having once been kept at Bayeux Cathedral";
-const defaultFirstUrl =
-  "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh";
-const defaultSecondCrop169 =
-  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c7f242e-d1de-11ec-9d8b-0826aa666f4f.jpg?crop=1919%2C1080%2C134%2C281&resize=1500";
+const defaultFirstUrl = `${BASE_URL}/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh`;
+const defaultSecondCrop169 = `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6c7f242e-d1de-11ec-9d8b-0826aa666f4f.jpg?crop=1919%2C1080%2C134%2C281&resize=1500`;
 const defaultSecondHeadline = "Bayeux Tapestry to be displayed in Britain";
 const defaultSecondShortHeadline = "Bayeux Tapestry displayed in Britain";
 const defaultSecondLabel = "BAYEUX TAPESTRY";
@@ -363,8 +362,7 @@ const defaultSecondSummary225 = [
     name: "paragraph"
   }
 ];
-const defaultSecondUrl =
-  "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh";
+const defaultSecondUrl = `${BASE_URL}/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh`;
 
 const defaultSlug =
   "bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely";
