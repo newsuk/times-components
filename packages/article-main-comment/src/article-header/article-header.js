@@ -69,7 +69,7 @@ const ArticleHeader = ({
       readyToPlayText="Listen to article"
       playingText="Playing"
       narrator={
-        bylines ? bylines[0]?.byline[0]?.children[0]?.attributes?.value : ""
+        bylines ? bylines[0].byline[0].children[0].attributes.value : ""
       }
       headline={headline}
       feedback={{
