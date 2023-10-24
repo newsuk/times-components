@@ -17,6 +17,7 @@ import { scales, themeFactory } from "@times-components/ts-styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 
 import Article, { templates } from "./src/article";
+import { TCThemeProvider } from "@times-components/ts-newskit";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -327,7 +328,7 @@ const renderArticleConfig = ({
   const isTeaser = !isShared && !isLoggedIn;
 
   return (
-    <Fragment>
+    <TCThemeProvider>
       {link}
       {
         <ArticleConfigurator
@@ -359,7 +360,7 @@ const renderArticleConfig = ({
           })}
         </ArticleConfigurator>
       }
-    </Fragment>
+    </TCThemeProvider>
   );
 };
 

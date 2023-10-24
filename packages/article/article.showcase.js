@@ -3,23 +3,20 @@
 import React from "react";
 import { USER_STATES } from "@times-components/user-state";
 import { NewTab } from "@times-components/storybook";
-import { TCThemeProvider } from "@times-components/ts-newskit";
 import renderArticleConfig from "./showcase-helper";
 
 export default {
   children: [
     {
       component: ({ boolean, color, select }, { decorateAction }) => (
-        <TCThemeProvider>
-          {renderArticleConfig({
-            boolean,
-            color,
-            decorateAction,
-            hasScaling: false,
-            link: <NewTab />,
-            select
-          })}
-        </TCThemeProvider>
+        renderArticleConfig({
+          boolean,
+          color,
+          decorateAction,
+          hasScaling: false,
+          link: <NewTab />,
+          select
+        })
       ),
       name: "Article with template choice",
       platform: "web",
@@ -27,16 +24,14 @@ export default {
     },
     {
       component: ({ boolean, color, select }, { decorateAction }) => (
-        <TCThemeProvider>
-          {renderArticleConfig({
-            boolean,
-            color,
-            decorateAction,
-            hasScaling: false,
-            link: <NewTab />,
-            select
-          })}
-        </TCThemeProvider>
+        renderArticleConfig({
+          boolean,
+          color,
+          decorateAction,
+          hasScaling: false,
+          link: <NewTab />,
+          select
+        })
       ),
       name: "Article teaser",
       platform: "web",
