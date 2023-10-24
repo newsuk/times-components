@@ -5,6 +5,7 @@ import { LiveTag } from './live-tag';
 import { NewsKitVideoButtonIcon } from '../../../assets/index';
 import { CustomTextBlock } from './customTextBlock';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
+import { ReactJSXElementChildrenAttribute } from '@emotion/react/types/jsx-namespace';
 
 export type expirableFlagsProps = {
   type: string;
@@ -20,7 +21,9 @@ export interface ArticleTileInfoProps {
   marginBlockStart?: string;
 }
 
-const CustomDivider = () => (
+const TileWrapper = ({ children }: { children: React.ReactNode }) => (
+  <>
+  {children}
   <ContainerInline>
     <Divider
       vertical
@@ -29,6 +32,7 @@ const CustomDivider = () => (
       }}
     />
   </ContainerInline>
+  </>
 );
 
 export const ArticleTileInfo = ({
@@ -68,43 +72,38 @@ export const ArticleTileInfo = ({
         <>
           {isLiveTag &&
             expirableFlags && (
-              <>
+              <TileWrapper>
                 <LiveTag
                   liveTag={capitalizedText(
                     getActiveArticleFlags(expirableFlags)
                   )}
                 />
-                <CustomDivider />
-              </>
+                </TileWrapper>
             )}
           {!isLiveTag &&
             expirableFlags &&
             getActiveArticleFlags(expirableFlags) && (
-              <>
+              <TileWrapper>
                 <CustomTextBlock
                   stylePreset="expirableFlagPreset"
                   text={capitalizedText(getActiveArticleFlags(expirableFlags))}
                 />
-                <CustomDivider />
-              </>
+                </TileWrapper>
             )}
           {contentType && (
-            <>
+            <TileWrapper>
               <CustomTextBlock text={capitalizedText(contentType)} />
-              <CustomDivider />
-            </>
+            </TileWrapper>
           )}
           {hasVideo && (
-            <>
+            <TileWrapper>
               <CustomTextBlock text="VIDEO" icon={<NewsKitVideoButtonIcon />} />
-              <CustomDivider />
-            </>
+            </TileWrapper>
           )}
           {label && (
-            <>
+            <TileWrapper>
               <CustomTextBlock text={capitalizedText(label)} />
-              <CustomDivider />
-            </>
+              </TileWrapper>
           )}
         </>
       </StyledBlock>
