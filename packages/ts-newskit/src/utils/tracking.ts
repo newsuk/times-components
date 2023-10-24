@@ -1,9 +1,14 @@
-import { ArticleProps } from '../components/slices/article';
 import { ClickHandlerType, MouseEventType } from '../slices/types';
+
+type TrackingArticleProps = {
+  id: string;
+  headline: string;
+  url: string;
+};
 
 export const articleClickTracking = (
   event: MouseEventType,
-  article: ArticleProps,
+  article: TrackingArticleProps,
   clickHandler: ClickHandlerType
 ) => {
   article && clickHandler(event, article);

@@ -50,8 +50,8 @@ describe('Content Bucket 3 Articles list ', () => {
     const articleItem4 = articleContainer!.lastElementChild!
       .previousElementSibling;
 
-    expect(articleItem1!.getElementsByTagName('hr').length).toBe(1);
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
+    expect(articleItem1!.getElementsByTagName('hr').length).toBe(2);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(3);
   });
 
   test("articleTopBorder renders correctly below 'lg' breakpoint", () => {
@@ -73,7 +73,7 @@ describe('Content Bucket 3 Articles list ', () => {
     const articleItem4 = articleContainer!.lastElementChild!
       .previousElementSibling;
 
-    expect(articleItem1!.getElementsByTagName('hr').length).toBe(1);
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(2);
+    expect(articleItem1!.getElementsByTagName('hr').length).toBe(2);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(3);
   });
 });
