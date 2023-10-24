@@ -2,11 +2,12 @@ import React from "react";
 import { TcView, TcText } from "@times-components/utils";
 import Card from "./src/card";
 import { CardWrapper, ReversedCardWrapper } from "./card-wrapper";
+import { IMAGE_BASE_URL } from "./constants";
 
 const cardProps = {
   image: {
     uri:
-      "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12"
+      `${IMAGE_BASE_URL}/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F9242e576-4dfc-11e7-a20e-a11097d3353d.jpg?crop=1463%2C975%2C293%2C12`
   },
   imageRatio: 1.5,
   imageSize: 360
