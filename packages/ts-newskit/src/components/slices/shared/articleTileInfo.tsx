@@ -13,26 +13,31 @@ export type expirableFlagsProps = {
 
 export interface ArticleTileInfoProps {
   expirableFlags?: expirableFlagsProps[];
+  hasVideo: boolean;
   contentType?: string;
   label?: string;
   marginBlockEnd?: string;
   marginBlockStart?: string;
 }
 
-const CustomDivider = () => (
-  <ContainerInline>
-    <Divider
-      vertical
-      overrides={{
-        marginInline: 'space020'
-      }}
-    />
-  </ContainerInline>
+const TileWrapper = ({ children }: { children: React.ReactNode }) => (
+  <>
+    {children}
+    <ContainerInline>
+      <Divider
+        vertical
+        overrides={{
+          marginInline: 'space020'
+        }}
+      />
+    </ContainerInline>
+  </>
 );
 
 export const ArticleTileInfo = ({
   expirableFlags,
   contentType,
+  hasVideo,
   label,
   marginBlockStart = 'space000',
   marginBlockEnd = 'space000'
@@ -56,40 +61,51 @@ export const ArticleTileInfo = ({
   const capitalizedText = (text?: string) => text && text.toUpperCase();
 
   return (
-    <StyledBlock
-      marginBlockStart={marginBlockStart}
-      marginBlockEnd={marginBlockEnd}
-      hasVideoIcon={hasVideoIcon}
-      className="article-info"
-    >
-      {isLiveTag && expirableFlags && getActiveArticleFlags(expirableFlags) ? (
-        <LiveTag
-          liveTag={capitalizedText(getActiveArticleFlags(expirableFlags))}
-        />
-      ) : (
-        expirableFlags &&
-        getActiveArticleFlags(expirableFlags) && (
-          <CustomTextBlock
-            stylePreset="expirableFlagPreset"
-            text={capitalizedText(getActiveArticleFlags(expirableFlags))}
-          />
-        )
-      )}
-      {contentType &&
-        expirableFlags &&
-        getActiveArticleFlags(expirableFlags) && <CustomDivider />}
-      {contentType && (
-        <CustomTextBlock
-          text={capitalizedText(contentType)}
-          icon={hasVideoIcon && <NewsKitVideoButtonIcon />}
-        />
-      )}
-      {label &&
-        (contentType ||
-          (expirableFlags && getActiveArticleFlags(expirableFlags))) && (
-          <CustomDivider />
-        )}
-      {label && <CustomTextBlock text={capitalizedText(label)} />}
-    </StyledBlock>
+    <>
+      <StyledBlock
+        marginBlockStart={marginBlockStart}
+        marginBlockEnd={marginBlockEnd}
+        hasVideoIcon={hasVideoIcon}
+        className="article-info"
+      >
+        <>
+          {isLiveTag &&
+            expirableFlags && (
+              <TileWrapper>
+                <LiveTag
+                  liveTag={capitalizedText(
+                    getActiveArticleFlags(expirableFlags)
+                  )}
+                />
+              </TileWrapper>
+            )}
+          {!isLiveTag &&
+            expirableFlags &&
+            getActiveArticleFlags(expirableFlags) && (
+              <TileWrapper>
+                <CustomTextBlock
+                  stylePreset="expirableFlagPreset"
+                  text={capitalizedText(getActiveArticleFlags(expirableFlags))}
+                />
+              </TileWrapper>
+            )}
+          {contentType && (
+            <TileWrapper>
+              <CustomTextBlock text={capitalizedText(contentType)} />
+            </TileWrapper>
+          )}
+          {hasVideo && (
+            <TileWrapper>
+              <CustomTextBlock text="VIDEO" icon={<NewsKitVideoButtonIcon />} />
+            </TileWrapper>
+          )}
+          {label && (
+            <TileWrapper>
+              <CustomTextBlock text={capitalizedText(label)} />
+            </TileWrapper>
+          )}
+        </>
+      </StyledBlock>
+    </>
   );
 };

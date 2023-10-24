@@ -1,5 +1,6 @@
 {
   "leadArticle": {
+    "hasVideo": false,
     "contentType": "Interview",
     "label": "Martin Samuel",
     "expirableFlags": [
@@ -51,6 +52,7 @@
     "listData": []
   },
   "leadArticleLeft": {
+    "hasVideo": false,
     "contentType": "Interview",
     "label": "Martin Samuel",
     "expirableFlags": [
@@ -102,6 +104,7 @@
     "listData": []
   },
   "leadArticleRight": {
+    "hasVideo": false,
     "contentType": "Interview",
     "label": "Martin Samuel",
     "expirableFlags": [
@@ -154,6 +157,7 @@
   },
   "articles": [
     {
+      "hasVideo": false,
       "contentType": "Profile",
       "label": "",
       "expirableFlags": [
@@ -203,6 +207,7 @@
       "flag": ""
     },
     {
+      "hasVideo": false,
       "contentType": "Review",
       "label": "",
       "expirableFlags": [
@@ -252,6 +257,7 @@
       "flag": ""
     },
     {
+      "hasVideo": false,
       "contentType": "Q&A",
       "label": "",
       "expirableFlags": [
@@ -301,6 +307,7 @@
       "flag": ""
     },
     {
+      "hasVideo": false,
       "contentType": "Review",
       "label": "",
       "expirableFlags": [
@@ -352,6 +359,7 @@
   ],
   "stackedModule1Articles": [
     {
+      "hasVideo": false,
       "contentType": "Profile",
       "label": "",
       "expirableFlags": [
@@ -401,6 +409,7 @@
       "flag": ""
     },
     {
+      "hasVideo": false,
       "contentType": "Review",
       "label": "",
       "expirableFlags": [
@@ -450,6 +459,7 @@
       "flag": "Flag"
     },
     {
+      "hasVideo": false,
       "contentType": "Q&A",
       "label": "",
       "expirableFlags": [
@@ -499,6 +509,7 @@
       "flag": ""
     },
     {
+      "hasVideo": false,
       "contentType": "Review",
       "label": "",
       "expirableFlags": [
@@ -548,6 +559,7 @@
       "flag": "Flag"
     },
     {
+      "hasVideo": false,
       "contentType": "Review",
       "label": "",
       "expirableFlags": [
@@ -597,6 +609,7 @@
       "flag": ""
     },
     {
+      "hasVideo": false,
       "contentType": "Review",
       "label": "",
       "expirableFlags": [
@@ -646,6 +659,7 @@
       "flag": "Flag"
     },
     {
+      "hasVideo": false,
       "contentType": "Review",
       "label": "",
       "expirableFlags": [
@@ -695,6 +709,7 @@
       "flag": ""
     },
     {
+      "hasVideo": false,
       "contentType": "Q&A",
       "label": "",
       "expirableFlags": [
@@ -829,6 +844,7 @@
     },
     "articles": [
       {
+        "hasVideo": false,
         "contentType": "Q&A",
         "label": "",
         "expirableFlags": [
@@ -878,6 +894,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -927,6 +944,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -984,6 +1002,7 @@
     },
     "articles": [
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1033,6 +1052,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1082,6 +1102,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1139,6 +1160,7 @@
     },
     "articles": [
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1188,6 +1210,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1237,6 +1260,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1294,6 +1318,7 @@
     },
     "articles": [
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1343,6 +1368,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Review",
         "label": "",
         "expirableFlags": [
@@ -1392,6 +1418,7 @@
         "flag": ""
       },
       {
+        "hasVideo": false,
         "contentType": "Interview",
         "label": "",
         "expirableFlags": [
