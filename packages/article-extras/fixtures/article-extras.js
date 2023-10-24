@@ -1,3 +1,5 @@
+import { BASE_URL, IMAGE_BASE_URL } from "../constants";
+
 const relatedArticleSlice = {
   items: [
     {
@@ -30,12 +32,12 @@ const relatedArticleSlice = {
           crop32: {
             __typename: "Crop",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=1600%2C1125%2C0%2C104"
+              `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=1600%2C1125%2C0%2C104`
           },
           crop169: {
             __typename: "Crop",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104"
+              `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=2000%2C1125%2C0%2C104`
           },
           id: "ea16d744-cb4a-11e4-a202-50ac5def393b",
           title: "TMS: Pratchett’s law of the jungle"
@@ -299,12 +301,12 @@ const relatedArticleSlice = {
           crop32: {
             __typename: "Crop",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108"
+              `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108`
           },
           crop169: {
             __typename: "Crop",
             url:
-              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108"
+              `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108`
           },
           id: "b09fc422-cb53-11e4-81dd-064fe933cd41",
           title: "Rise of centenarian drivers as elderly push on"
@@ -491,13 +493,13 @@ const relatedArticleSlice = {
               __typename: "Crop",
               ratio: "3:2",
               url:
-                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0"
+                `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=792%2C528%2C73%2C0`
             },
             crop169: {
               __typename: "Crop",
               ratio: "16:9",
               url:
-                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0"
+                `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffa613a54-39c4-11e8-b5b4-b935584040f4.jpg?crop=939%2C528%2C0%2C0`
             },
             id: "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
             title: ""
@@ -598,7 +600,7 @@ const relatedArticleSlice = {
           }
         ],
         url:
-          "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23"
+          `${BASE_URL}/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23`
       }
     }
   ],
