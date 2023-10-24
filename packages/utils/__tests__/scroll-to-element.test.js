@@ -1,3 +1,4 @@
+import { BASE_URL } from "../src/constants";
 import { handleOnClickScrollTo, handleHrefScrollTo } from "../src/index";
 
 const scrollTo = jest.fn();
@@ -6,7 +7,7 @@ const event = { preventDefault: () => {} };
 
 const id = "12345";
 const hash = `#${id}`;
-const link = "https://www.thetimes.co.uk";
+const link = BASE_URL;
 
 describe("handleOnClickScrollTo", () => {
   beforeEach(() => {
