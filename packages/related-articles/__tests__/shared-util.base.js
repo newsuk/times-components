@@ -3,6 +3,7 @@ import mockDate from "mockdate";
 import { iterator } from "@times-components/test-utils";
 import Card from "@times-components/card";
 import RelatedArticles from "../src/related-articles";
+import { IMAGE_BASE_URL } from "../constants";
 
 export const testSummary = summary => [
   {
@@ -271,7 +272,7 @@ export const threeArticlesWithLeadAssetOverrideTests = ({
         );
 
         expect(output.root.findAllByType(Card)[0].props.imageUri).toEqual(
-          "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d59bcac-d044-11e8-a7e2-4943f60e65b3.jpg?crop=1073%2C1750%2C64%2C400"
+          `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d59bcac-d044-11e8-a7e2-4943f60e65b3.jpg?crop=1073%2C1750%2C64%2C400`
         );
       }
     }
