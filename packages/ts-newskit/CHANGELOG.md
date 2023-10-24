@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.120.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.119.0...@times-components/ts-newskit@1.120.0) (2023-10-23)
+
+
+### Features
+
+* **TMPZ-113:** created sidebar component ([#3605](https://github.com/newsuk/times-components/issues/3605)) ([289000e](https://github.com/newsuk/times-components/commit/289000e6c8a88948f33c0b03626ef2522ba5ce28))
+
+
+
+
+
 # [1.119.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.118.0...@times-components/ts-newskit@1.119.0) (2023-10-23)
 
 
