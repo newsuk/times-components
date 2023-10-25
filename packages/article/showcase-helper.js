@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies, no-bitwise, operator-assignment, react/prop-types */
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import {
   ContextProviderWithDefaults,
@@ -327,7 +327,7 @@ const renderArticleConfig = ({
   const isTeaser = !isShared && !isLoggedIn;
 
   return (
-    <>
+    <Fragment>
       {link}
       {
         <ArticleConfigurator
@@ -359,7 +359,7 @@ const renderArticleConfig = ({
           })}
         </ArticleConfigurator>
       }
-    </>
+    </Fragment>
   );
 };
 
