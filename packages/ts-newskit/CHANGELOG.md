@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.122.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.121.0...@times-components/ts-newskit@1.122.0) (2023-10-25)
+
+
+### Features
+
+* **TMRX-1574:** updated section header space ([#3611](https://github.com/newsuk/times-components/issues/3611)) ([4c8c35f](https://github.com/newsuk/times-components/commit/4c8c35f79ea8894a3701419669f7643ec5487add))
+
+
+
+
+
 # [1.121.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.120.1...@times-components/ts-newskit@1.121.0) (2023-10-24)
 
 
