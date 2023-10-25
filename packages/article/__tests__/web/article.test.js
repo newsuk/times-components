@@ -4,7 +4,6 @@ import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
 import ArticleMagazineStandard from "@times-components/article-magazine-standard";
 import ArticleMagazineComment from "@times-components/article-magazine-comment";
-import { TCThemeProvider } from "@times-components/ts-newskit";
 import Article from "../../src/article";
 
 jest.mock("@times-components/image", () => "TimesImage");
@@ -82,9 +81,7 @@ describe("Article", () => {
 
   it("renders with ArticleMainComment if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <TCThemeProvider>
-        <Article article={{ template: "maincomment" }} {...requiredProps} />
-      </TCThemeProvider>
+      <Article article={{ template: "maincomment" }} {...requiredProps} />
     );
     const testInstance = testRenderer.root;
 
