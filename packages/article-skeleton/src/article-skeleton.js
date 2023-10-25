@@ -12,7 +12,10 @@ import {
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
-import { TCThemeProvider, UpdateButtonWithDelay } from "@times-components/ts-newskit";
+import {
+  TCThemeProvider,
+  UpdateButtonWithDelay
+} from "@times-components/ts-newskit";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
