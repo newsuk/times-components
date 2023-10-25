@@ -4,7 +4,6 @@ import {
   Block,
   Stack,
   TextBlock,
-  useBreakpointKey,
   Visible
 } from 'newskit';
 import React, { useEffect, useRef, useState } from 'react';
@@ -47,10 +46,8 @@ export const InArticleAudio = ({
   const [showStickyPlayer, setShowStickyPlayer] = useState<boolean>(false);
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const audioRef = useRef<HTMLDivElement>(null);
-  const breakpoint = useBreakpointKey();
 
   const pausedText = isPlayed ? 'Paused' : readyToPlayText;
-  const playButtonSize = breakpoint === 'xs' ? 'small' : 'medium';
 
   const handleClickPlayPause = () => {
     !isPlayed && setIsPlayed(true);
@@ -91,7 +88,12 @@ export const InArticleAudio = ({
         <Stack flow="horizontal-center" marginBlock="space040">
           <AudioPlayerPlayPauseButton
             onClick={handleClickPlayPause}
-            size={playButtonSize}
+            overrides={{
+              width: {
+                xs: 'small',
+                sm: 'medium'
+              }
+            }}
             data-testid={
               isPlaying ? 'audio-player-pause-btn' : 'audio-player-play-btn'
             }

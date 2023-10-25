@@ -121,7 +121,7 @@ exports[`1. a full article 1`] = `
         aria-live="polite"
         aria-pressed={false}
         data-testid="audio-player-play-btn"
-        size="small"
+        size="medium"
         type="button"
       >
         <svg

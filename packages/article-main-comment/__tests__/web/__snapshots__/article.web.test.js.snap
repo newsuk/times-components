@@ -155,7 +155,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                   aria-label="Play"
                   aria-live="polite"
                   aria-pressed={false}
-                  size="small"
+                  size="medium"
                   type="button"
                 >
                   <svg
@@ -455,7 +455,7 @@ exports[`4. an article with ads 1`] = `
                   aria-label="Play"
                   aria-live="polite"
                   aria-pressed={false}
-                  size="small"
+                  size="medium"
                   type="button"
                 >
                   <svg
