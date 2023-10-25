@@ -101,7 +101,6 @@ export const Article = ({
         src: `${imageWithCorrectRatio.url}&resize=750`,
         alt: (images && images.alt) || headline,
         loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2',
-        loading: 'lazy'
       }
     };
 
