@@ -923,7 +923,7 @@ exports[`full article with style 1`] = `
             </div>
           </div>
           <div
-            className="opHide_articleAudio css-1i5p60e"
+            className="article-audio-container opHide_articleAudio css-1i5p60e"
           >
             <section>
               <audio />
@@ -931,10 +931,10 @@ exports[`full article with style 1`] = `
                 className="css-qoq9ah"
               >
                 <button
-                  className="css-7ycgmb"
+                  className="css-1ycwa5a"
                 >
                   <svg
-                    className="css-mxa34f"
+                    className="css-1126nsi"
                   >
                     <circle />
                   </svg>
@@ -948,9 +948,9 @@ exports[`full article with style 1`] = `
                     Listen to article
                   </p>
                   <p
-                    className="css-90ibmi"
+                    className="article-audio-narrator css-90ibmi"
                   >
-                    Narrated by James Marriott
+                    Narrated by Some byline
                   </p>
                 </div>
               </div>

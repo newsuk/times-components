@@ -13,8 +13,8 @@ import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 import {
-  UpdateButtonWithDelay,
-  TCThemeProvider
+  TCThemeProvider,
+  UpdateButtonWithDelay
 } from "@times-components/ts-newskit";
 import StaticContent from "./static-content";
 
