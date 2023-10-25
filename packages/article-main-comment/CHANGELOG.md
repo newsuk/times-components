@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.71.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.70.60...@times-components/article-main-comment@2.71.0) (2023-10-25)
+
+
+### Features
+
+* **TMRX-1605:** update article audio component ([#3606](https://github.com/newsuk/times-components/issues/3606)) ([1b5510e](https://github.com/newsuk/times-components/commit/1b5510e42cba3cc3c30e2f4fefac4c5ce222d3f3))
+
+
+
+
+
 ## [2.70.60](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.70.59...@times-components/article-main-comment@2.70.60) (2023-10-25)
 
 **Note:** Version bump only for package @times-components/article-main-comment
