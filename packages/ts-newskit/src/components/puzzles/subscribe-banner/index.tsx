@@ -45,7 +45,7 @@ export const SubscribeBanner: FC<SubscribeBannerProps> = ({
                 xs: 'editorialSubheadline010',
                 md: 'editorialSubheadline020'
               }}
-              stylePreset="inkBase"
+              stylePreset="inkContrast"
               marginBlockStart={{
                 xs: 'space045',
                 md: 'space050'

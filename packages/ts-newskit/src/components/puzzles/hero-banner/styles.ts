@@ -22,6 +22,10 @@ export const SyledUnorderedList = styled(UnorderedList)`
     color: inherit;
     font-weight: 600;
   }
+
+  & p {
+    margin-bottom: 0px;
+  }
 `;
 
 export const StyledDivider = styled(Divider)`
@@ -39,6 +43,15 @@ export const StyledTextBlock = styled(TextBlock)`
   ${getMediaQueryFromTheme('xs', 'md')} {
     align-self: center;
   }
+
+  ${getMediaQueryFromTheme('xs')} {
+    text-align: center;
+    width: 100%;
+  }
+
+  ${getMediaQueryFromTheme('md')} {
+    width: unset;
+  }
 `;
 
 export const HeroBannerContainer = styled(Stack)<StackProps>`
@@ -46,14 +59,6 @@ export const HeroBannerContainer = styled(Stack)<StackProps>`
   width: 100%;
   overflow: hidden;
   ${getColorCssFromTheme('backgroundColor', 'sectionBrand040')};
-  ${getMediaQueryFromTheme('xs')} {
-    ${getSpacingCssFromTheme('paddingBlockStart', 'space100')};
-    ${getSpacingCssFromTheme('paddingInline', 'space050')};
-  }
-  ${getMediaQueryFromTheme('md')} {
-    ${getSpacingCssFromTheme('paddingBlockStart', 'space100')};
-    ${getSpacingCssFromTheme('paddingInline', 'space090')};
-  }
 `;
 
 export const StyledStack = styled(Stack)`
@@ -64,22 +69,29 @@ export const StyledStack = styled(Stack)`
 export const StyledHeroIconContainer = styled(Block)`
   position: relative;
 
+  ${getMediaQueryFromTheme('md')} {
+    margin: 0 auto;
+  }
+
   ${getMediaQueryFromTheme('lg')} {
-    right: 5%;
-    top: 5%;
-    position: absolute;
+    margin-right: 12px;
   }
 `;
 
 export const MainIconContainer = styled(Block)`
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 2;
+  top: 0;
 
   ${getMediaQueryFromTheme('xs', 'md')} {
     display: none;
+  }
+
+  ${getMediaQueryFromTheme('md')} {
+    & .iconType {
+      width: 180px;
+      height: 180px;
+    }
   }
 
   ${getMediaQueryFromTheme('md', 'lg')} {
@@ -88,13 +100,12 @@ export const MainIconContainer = styled(Block)`
     ${getSpacingCssFromTheme('marginInlineStart', 'space010')};
   }
   ${getMediaQueryFromTheme('lg')} {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     & .iconType {
-      width: 150px;
-    }
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    & .iconType {
-      width: 200px;
+      width: 130px;
+      height: unset;
     }
   }
 `;
@@ -106,12 +117,7 @@ export const StyledIconWrapper = styled(Block)`
   }
   ${getMediaQueryFromTheme('lg')} {
     & .iconBg {
-      width: 400px;
-    }
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    & .iconBg {
-      width: 495px;
+      width: 320px;
     }
   }
 `;
@@ -121,48 +127,56 @@ export const StyledHeroBannerKillerSudoku = styled(
 )`
   position: absolute;
   ${getMediaQueryFromTheme('lg')} {
-    left: 17%;
-    top: 24.5%;
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    left: 18.5%;
-    top: 17.5%;
+    left: 19%;
+    top: 29.6%;
+    width: 43px;
+    height: 54px;
   }
 `;
 
 export const StyledHeroBannerQuintagram = styled(NewsKitHeroBannerQuintagram)`
   position: absolute;
   ${getMediaQueryFromTheme('lg')} {
-    right: 22.2%;
-    bottom: 19%;
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    right: 22.5%;
-    bottom: 12%;
+    right: 22.4%;
+    bottom: 25.3%;
+    width: 49px;
+    height: 49px;
   }
 `;
 
 export const StyledHeroBannerSuko = styled(NewsKitHeroBannerSuko)`
   position: absolute;
   ${getMediaQueryFromTheme('lg')} {
-    top: 17%;
-    right: 21%;
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    top: 10%;
+    top: 24.6%;
     right: 22%;
+    width: 49px;
+    height: 49px;
   }
 `;
 
 export const StyledHeroBannerWordPuzzle = styled(NewsKitHeroBannerWordPuzzle)`
   position: absolute;
   ${getMediaQueryFromTheme('lg')} {
-    left: 16%;
-    bottom: 20%;
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    left: 18%;
-    bottom: 13%;
+    left: 17%;
+    bottom: 25%;
+    width: 49px;
+    height: 49px;
   }
 }
+`;
+
+export const StyledBlock = styled(Block)`
+  margin: 0 auto;
+  position: relative;
+  max-width: 1290px;
+  width: 100%;
+`;
+
+export const StyledSpan = styled(TextBlock)`
+  ${getMediaQueryFromTheme('xs')} {
+    display: block;
+  }
+  ${getMediaQueryFromTheme('md')} {
+    display: inline-block;
+  }
 `;
