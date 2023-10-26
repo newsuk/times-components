@@ -22,6 +22,10 @@ export const SyledUnorderedList = styled(UnorderedList)`
     color: inherit;
     font-weight: 600;
   }
+
+  & p {
+    margin-bottom: 0px;
+  }
 `;
 
 export const StyledDivider = styled(Divider)`
@@ -46,14 +50,6 @@ export const HeroBannerContainer = styled(Stack)<StackProps>`
   width: 100%;
   overflow: hidden;
   ${getColorCssFromTheme('backgroundColor', 'sectionBrand040')};
-  ${getMediaQueryFromTheme('xs')} {
-    ${getSpacingCssFromTheme('paddingBlockStart', 'space100')};
-    ${getSpacingCssFromTheme('paddingInline', 'space050')};
-  }
-  ${getMediaQueryFromTheme('md')} {
-    ${getSpacingCssFromTheme('paddingBlockStart', 'space100')};
-    ${getSpacingCssFromTheme('paddingInline', 'space090')};
-  }
 `;
 
 export const StyledStack = styled(Stack)`
@@ -63,23 +59,22 @@ export const StyledStack = styled(Stack)`
 
 export const StyledHeroIconContainer = styled(Block)`
   position: relative;
-
-  ${getMediaQueryFromTheme('lg')} {
-    right: 5%;
-    top: 5%;
-    position: absolute;
-  }
 `;
 
 export const MainIconContainer = styled(Block)`
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 2;
+  top: 0;
 
   ${getMediaQueryFromTheme('xs', 'md')} {
     display: none;
+  }
+
+  ${getMediaQueryFromTheme('md')} {
+    & .iconType {
+      width: 180px;
+      height: 180px;
+    }
   }
 
   ${getMediaQueryFromTheme('md', 'lg')} {
@@ -88,8 +83,12 @@ export const MainIconContainer = styled(Block)`
     ${getSpacingCssFromTheme('marginInlineStart', 'space010')};
   }
   ${getMediaQueryFromTheme('lg')} {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     & .iconType {
       width: 150px;
+      height: unset;
     }
   }
   ${getMediaQueryFromTheme('xl')} {
@@ -111,7 +110,7 @@ export const StyledIconWrapper = styled(Block)`
   }
   ${getMediaQueryFromTheme('xl')} {
     & .iconBg {
-      width: 495px;
+      width: 493px;
     }
   }
 `;
@@ -165,4 +164,11 @@ export const StyledHeroBannerWordPuzzle = styled(NewsKitHeroBannerWordPuzzle)`
     bottom: 13%;
   }
 }
+`;
+
+export const StyledBlock = styled(Block)`
+  margin: 0 auto;
+  position: relative;
+  max-width: 1290px;
+  width: 100%;
 `;

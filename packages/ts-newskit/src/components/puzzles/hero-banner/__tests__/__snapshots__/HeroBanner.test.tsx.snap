@@ -3,31 +3,31 @@
 exports[`HeroBanner should render HeroBanner component 1`] = `
 <DocumentFragment>
   <div
-    class="css-15jvjle"
+    class="css-1il02ox"
   >
     <div
-      class="css-1f36juh"
+      class="css-1ypo8kp"
     >
       <div
-        class="css-1fhiupl"
+        class="css-v6jbrz"
       >
         <div
           class="css-13byt3y"
         >
           <h2
-            class="css-cjwwid"
+            class="css-b95xoj"
           >
             Play the Times Crossword
           </h2>
           <ul
-            class="css-evk3mf"
+            class="css-jikt94"
             role="list"
           >
             <li
               class="css-czt13m"
             >
               <div
-                class="css-16r6s3u"
+                class="css-143fi60"
               >
                 <div
                   aria-hidden="true"
@@ -35,7 +35,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
                 >
                   <svg
                     aria-hidden="true"
-                    class="css-1f9aclb-EmotionIconBase ex0cdmw0"
+                    class="css-z5ltm7-EmotionIconBase ex0cdmw0"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -51,83 +51,83 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
                   </svg>
                 </div>
                 <p
-                  class="css-1dy03x9"
-                >
-                  Play thousands of puzzles and crosswords
-                </p>
-              </div>
-            </li>
-            <li
-              class="css-czt13m"
-            >
-              <div
-                class="css-16r6s3u"
-              >
-                <div
-                  aria-hidden="true"
-                  class="css-wmopxz"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="css-1f9aclb-EmotionIconBase ex0cdmw0"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                    />
-                  </svg>
-                </div>
-                <p
-                  class="css-1dy03x9"
-                >
-                  Read up to 30 articles per month on The Times & Sunday Times
-                </p>
-              </div>
-            </li>
-            <li
-              class="css-czt13m"
-            >
-              <div
-                class="css-16r6s3u"
-              >
-                <div
-                  aria-hidden="true"
-                  class="css-wmopxz"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="css-1f9aclb-EmotionIconBase ex0cdmw0"
-                    fill="currentColor"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                    />
-                  </svg>
-                </div>
-                <p
-                  class="css-1dy03x9"
+                  class="css-1f8fjff"
                 >
                   Just £1 for your first month, then £4.99 a month thereafter
                 </p>
               </div>
             </li>
+            <li
+              class="css-czt13m"
+            >
+              <div
+                class="css-143fi60"
+              >
+                <div
+                  aria-hidden="true"
+                  class="css-wmopxz"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-z5ltm7-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="css-1f8fjff"
+                >
+                  Play thousands of puzzles and crosswords on our website
+                </p>
+              </div>
+            </li>
+            <li
+              class="css-czt13m"
+            >
+              <div
+                class="css-143fi60"
+              >
+                <div
+                  aria-hidden="true"
+                  class="css-wmopxz"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-z5ltm7-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="css-1f8fjff"
+                >
+                  Read up to 30 articles per month on thetimes.co.uk
+                </p>
+              </div>
+            </li>
           </ul>
           <a
-            class="css-nif1c2"
+            class="css-6zwcb6"
             data-testid="buttonLink"
             href="https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00"
           >
@@ -138,15 +138,11 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
             </span>
           </a>
         </div>
-      </div>
-      <div
-        class="css-1fhiupl"
-      >
         <div
-          class="css-1271pis"
+          class="css-6wnvz7"
         >
           <div
-            class="css-1gsh0yp"
+            class="css-5x6yaw"
           >
             <svg
               class="iconBg css-ny3roy"
@@ -405,7 +401,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
             </svg>
           </div>
           <div
-            class="css-halusf"
+            class="css-251db0"
           >
             <svg
               class="iconType css-ny3roy"
@@ -493,22 +489,22 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
           </div>
         </div>
       </div>
-    </div>
-    <hr
-      aria-hidden="true"
-      class="css-ki63d9"
-      data-testid="divider"
-    />
-    <span
-      class="css-wmdeqq"
-    >
-      Already a subscriber? 
-      <a
-        href="https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles"
+      <hr
+        aria-hidden="true"
+        class="css-ki63d9"
+        data-testid="divider"
+      />
+      <span
+        class="css-2weq6d"
       >
-        Log In
-      </a>
-    </span>
+        Already a subscriber? 
+        <a
+          href="https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles"
+        >
+          Log In
+        </a>
+      </span>
+    </div>
   </div>
 </DocumentFragment>
 `;
