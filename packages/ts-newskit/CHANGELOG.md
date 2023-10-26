@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.123.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.123.1...@times-components/ts-newskit@1.123.2) (2023-10-26)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** update article audio icon ([#3615](https://github.com/newsuk/times-components/issues/3615)) ([75d0f3b](https://github.com/newsuk/times-components/commit/75d0f3bd776a3ab3b8978f3a1fdb21e91fb3f19d))
+* **TMRX-1612:** target class article-image  ([#3613](https://github.com/newsuk/times-components/issues/3613)) ([04432ea](https://github.com/newsuk/times-components/commit/04432eabb4d2cf1d722aec416cbefbdd693cfea3))
+
+
+
+
+
 ## [1.123.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.123.0...@times-components/ts-newskit@1.123.1) (2023-10-26)
 
 

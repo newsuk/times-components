@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.71.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.71.1...@times-components/article-main-comment@2.71.2) (2023-10-26)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** update article audio icon ([#3615](https://github.com/newsuk/times-components/issues/3615)) ([75d0f3b](https://github.com/newsuk/times-components/commit/75d0f3bd776a3ab3b8978f3a1fdb21e91fb3f19d))
+
+
+
+
+
 ## [2.71.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.71.0...@times-components/article-main-comment@2.71.1) (2023-10-26)
 
 **Note:** Version bump only for package @times-components/article-main-comment
