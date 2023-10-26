@@ -55,7 +55,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
           </span>
         </a>
         <div
-          class="css-lew009"
+          class="css-p44zak"
         >
           <hr
             aria-hidden="true"
@@ -129,7 +129,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
           </span>
         </a>
         <div
-          class="css-lew009"
+          class="css-p44zak"
         >
           <hr
             aria-hidden="true"

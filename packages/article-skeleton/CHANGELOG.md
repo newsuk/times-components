@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.114.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.36...@times-components/article-skeleton@1.114.0) (2023-10-25)
+
+
+### Features
+
+* **TMRX-1605:** update article audio component ([#3606](https://github.com/newsuk/times-components/issues/3606)) ([1b5510e](https://github.com/newsuk/times-components/commit/1b5510e42cba3cc3c30e2f4fefac4c5ce222d3f3))
+
+
+
+
+
+## [1.113.36](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.35...@times-components/article-skeleton@1.113.36) (2023-10-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.35](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.34...@times-components/article-skeleton@1.113.35) (2023-10-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.34](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.33...@times-components/article-skeleton@1.113.34) (2023-10-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.113.33](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.32...@times-components/article-skeleton@1.113.33) (2023-10-23)
 
 **Note:** Version bump only for package @times-components/article-skeleton

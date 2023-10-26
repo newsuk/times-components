@@ -24,52 +24,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               data-testid="article-block"
             >
               <div
-                class="css-lihpnt"
+                class="css-4ikyhe"
               >
-                <div
-                  class="css-kdlajr"
+                <a
+                  class="css-1pyvojw"
+                  href="https://www.thetimes.co.uk/"
                 >
                   <div
-                    class="css-86cix"
+                    class="css-1xlmj6j"
                   >
                     <div
-                      class="css-1aiajnh"
+                      class="css-86cix"
                     >
-                      <section
-                        class="css-6cr1qt"
+                      <div
+                        class="css-1aiajnh"
                       >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
+                        <section
+                          class="css-6cr1qt"
                         >
-                          Title bar
-                        </h3>
-                      </section>
+                          <h3
+                            class="nk-headline-heading css-i2jo9u"
+                          >
+                            Title bar
+                          </h3>
+                        </section>
+                      </div>
                     </div>
-                  </div>
-                  <a
-                    class="css-1vespcj"
-                    data-testid="buttonLink"
-                    href="https://www.thetimes.co.uk/"
-                    role="link"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-3rbz36"
-                      fill="currentcolor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
                         fill="currentcolor"
-                      />
-                    </svg>
-                  </a>
-                </div>
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </a>
               </div>
               <div
                 class="css-1nw1nne"
@@ -91,7 +95,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-i1f2uq"
+                    class="article-info css-1i9xcln"
                   >
                     <span
                       class="css-6tvr2h"
@@ -103,7 +107,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -120,6 +124,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         Q&A
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -158,7 +171,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -170,7 +183,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -187,6 +200,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -225,7 +247,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -237,7 +259,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -254,6 +276,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -286,52 +317,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               data-testid="article-block"
             >
               <div
-                class="css-lihpnt"
+                class="css-4ikyhe"
               >
-                <div
-                  class="css-kdlajr"
+                <a
+                  class="css-1pyvojw"
+                  href="https://www.thetimes.co.uk/"
                 >
                   <div
-                    class="css-86cix"
+                    class="css-1xlmj6j"
                   >
                     <div
-                      class="css-1aiajnh"
+                      class="css-86cix"
                     >
-                      <section
-                        class="css-6cr1qt"
+                      <div
+                        class="css-1aiajnh"
                       >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
+                        <section
+                          class="css-6cr1qt"
                         >
-                          Title bar
-                        </h3>
-                      </section>
+                          <h3
+                            class="nk-headline-heading css-i2jo9u"
+                          >
+                            Title bar
+                          </h3>
+                        </section>
+                      </div>
                     </div>
-                  </div>
-                  <a
-                    class="css-1vespcj"
-                    data-testid="buttonLink"
-                    href="https://www.thetimes.co.uk/"
-                    role="link"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-3rbz36"
-                      fill="currentcolor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
                         fill="currentcolor"
-                      />
-                    </svg>
-                  </a>
-                </div>
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </a>
               </div>
               <div
                 class="css-1nw1nne"
@@ -353,7 +388,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-i1f2uq"
+                    class="article-info css-1i9xcln"
                   >
                     <span
                       class="css-6tvr2h"
@@ -365,7 +400,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -382,6 +417,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -420,7 +464,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -432,7 +476,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -449,6 +493,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -487,7 +540,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -499,7 +552,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -516,6 +569,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -548,52 +610,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               data-testid="article-block"
             >
               <div
-                class="css-lihpnt"
+                class="css-4ikyhe"
               >
-                <div
-                  class="css-kdlajr"
+                <a
+                  class="css-1pyvojw"
+                  href="https://www.thetimes.co.uk/"
                 >
                   <div
-                    class="css-86cix"
+                    class="css-1xlmj6j"
                   >
                     <div
-                      class="css-1aiajnh"
+                      class="css-86cix"
                     >
-                      <section
-                        class="css-6cr1qt"
+                      <div
+                        class="css-1aiajnh"
                       >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
+                        <section
+                          class="css-6cr1qt"
                         >
-                          Title bar
-                        </h3>
-                      </section>
+                          <h3
+                            class="nk-headline-heading css-i2jo9u"
+                          >
+                            Title bar
+                          </h3>
+                        </section>
+                      </div>
                     </div>
-                  </div>
-                  <a
-                    class="css-1vespcj"
-                    data-testid="buttonLink"
-                    href="https://www.thetimes.co.uk/"
-                    role="link"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-3rbz36"
-                      fill="currentcolor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
                         fill="currentcolor"
-                      />
-                    </svg>
-                  </a>
-                </div>
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </a>
               </div>
               <div
                 class="css-1nw1nne"
@@ -615,7 +681,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-i1f2uq"
+                    class="article-info css-1i9xcln"
                   >
                     <span
                       class="css-6tvr2h"
@@ -627,7 +693,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -644,6 +710,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -682,7 +757,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -694,7 +769,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -711,6 +786,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -749,7 +833,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -761,7 +845,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -778,6 +862,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -810,52 +903,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               data-testid="article-block"
             >
               <div
-                class="css-lihpnt"
+                class="css-4ikyhe"
               >
-                <div
-                  class="css-kdlajr"
+                <a
+                  class="css-1pyvojw"
+                  href="https://www.thetimes.co.uk/"
                 >
                   <div
-                    class="css-86cix"
+                    class="css-1xlmj6j"
                   >
                     <div
-                      class="css-1aiajnh"
+                      class="css-86cix"
                     >
-                      <section
-                        class="css-6cr1qt"
+                      <div
+                        class="css-1aiajnh"
                       >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
+                        <section
+                          class="css-6cr1qt"
                         >
-                          Title bar
-                        </h3>
-                      </section>
+                          <h3
+                            class="nk-headline-heading css-i2jo9u"
+                          >
+                            Title bar
+                          </h3>
+                        </section>
+                      </div>
                     </div>
-                  </div>
-                  <a
-                    class="css-1vespcj"
-                    data-testid="buttonLink"
-                    href="https://www.thetimes.co.uk/"
-                    role="link"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-3rbz36"
-                      fill="currentcolor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
                         fill="currentcolor"
-                      />
-                    </svg>
-                  </a>
-                </div>
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </a>
               </div>
               <div
                 class="css-1nw1nne"
@@ -877,7 +974,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-i1f2uq"
+                    class="article-info css-1i9xcln"
                   >
                     <span
                       class="css-6tvr2h"
@@ -889,7 +986,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -906,6 +1003,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -944,7 +1050,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -956,7 +1062,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -973,6 +1079,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -1011,7 +1126,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -1023,7 +1138,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -1040,6 +1155,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                         INTERVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -1086,52 +1210,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             data-testid="article-block"
           >
             <div
-              class="css-lihpnt"
+              class="css-4ikyhe"
             >
-              <div
-                class="css-kdlajr"
+              <a
+                class="css-1pyvojw"
+                href="https://www.thetimes.co.uk/"
               >
                 <div
-                  class="css-86cix"
+                  class="css-1xlmj6j"
                 >
                   <div
-                    class="css-1aiajnh"
+                    class="css-86cix"
                   >
-                    <section
-                      class="css-6cr1qt"
+                    <div
+                      class="css-1aiajnh"
                     >
-                      <h3
-                        class="nk-headline-heading css-i2jo9u"
+                      <section
+                        class="css-6cr1qt"
                       >
-                        Title bar
-                      </h3>
-                    </section>
+                        <h3
+                          class="nk-headline-heading css-i2jo9u"
+                        >
+                          Title bar
+                        </h3>
+                      </section>
+                    </div>
                   </div>
-                </div>
-                <a
-                  class="css-1vespcj"
-                  data-testid="buttonLink"
-                  href="https://www.thetimes.co.uk/"
-                  role="link"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="css-3rbz36"
-                    fill="currentcolor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
                       fill="currentcolor"
-                    />
-                  </svg>
-                </a>
-              </div>
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </div>
             <div
               class="css-1nw1nne"
@@ -1153,7 +1281,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-i1f2uq"
+                  class="article-info css-1i9xcln"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1165,7 +1293,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -1182,6 +1310,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       Q&A
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -1220,7 +1357,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1232,7 +1369,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -1249,6 +1386,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -1287,7 +1433,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1299,7 +1445,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -1316,6 +1462,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -1348,52 +1503,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             data-testid="article-block"
           >
             <div
-              class="css-lihpnt"
+              class="css-4ikyhe"
             >
-              <div
-                class="css-kdlajr"
+              <a
+                class="css-1pyvojw"
+                href="https://www.thetimes.co.uk/"
               >
                 <div
-                  class="css-86cix"
+                  class="css-1xlmj6j"
                 >
                   <div
-                    class="css-1aiajnh"
+                    class="css-86cix"
                   >
-                    <section
-                      class="css-6cr1qt"
+                    <div
+                      class="css-1aiajnh"
                     >
-                      <h3
-                        class="nk-headline-heading css-i2jo9u"
+                      <section
+                        class="css-6cr1qt"
                       >
-                        Title bar
-                      </h3>
-                    </section>
+                        <h3
+                          class="nk-headline-heading css-i2jo9u"
+                        >
+                          Title bar
+                        </h3>
+                      </section>
+                    </div>
                   </div>
-                </div>
-                <a
-                  class="css-1vespcj"
-                  data-testid="buttonLink"
-                  href="https://www.thetimes.co.uk/"
-                  role="link"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="css-3rbz36"
-                    fill="currentcolor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
                       fill="currentcolor"
-                    />
-                  </svg>
-                </a>
-              </div>
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </div>
             <div
               class="css-1nw1nne"
@@ -1415,7 +1574,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-i1f2uq"
+                  class="article-info css-1i9xcln"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1427,7 +1586,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -1444,6 +1603,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -1482,7 +1650,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1494,7 +1662,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -1511,6 +1679,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -1549,7 +1726,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1561,7 +1738,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -1578,6 +1755,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -1610,52 +1796,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             data-testid="article-block"
           >
             <div
-              class="css-lihpnt"
+              class="css-4ikyhe"
             >
-              <div
-                class="css-kdlajr"
+              <a
+                class="css-1pyvojw"
+                href="https://www.thetimes.co.uk/"
               >
                 <div
-                  class="css-86cix"
+                  class="css-1xlmj6j"
                 >
                   <div
-                    class="css-1aiajnh"
+                    class="css-86cix"
                   >
-                    <section
-                      class="css-6cr1qt"
+                    <div
+                      class="css-1aiajnh"
                     >
-                      <h3
-                        class="nk-headline-heading css-i2jo9u"
+                      <section
+                        class="css-6cr1qt"
                       >
-                        Title bar
-                      </h3>
-                    </section>
+                        <h3
+                          class="nk-headline-heading css-i2jo9u"
+                        >
+                          Title bar
+                        </h3>
+                      </section>
+                    </div>
                   </div>
-                </div>
-                <a
-                  class="css-1vespcj"
-                  data-testid="buttonLink"
-                  href="https://www.thetimes.co.uk/"
-                  role="link"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="css-3rbz36"
-                    fill="currentcolor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
                       fill="currentcolor"
-                    />
-                  </svg>
-                </a>
-              </div>
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </div>
             <div
               class="css-1nw1nne"
@@ -1677,7 +1867,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-i1f2uq"
+                  class="article-info css-1i9xcln"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1689,7 +1879,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -1706,6 +1896,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -1744,7 +1943,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1756,7 +1955,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -1773,6 +1972,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -1811,7 +2019,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1823,7 +2031,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -1840,6 +2048,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -1872,52 +2089,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
             data-testid="article-block"
           >
             <div
-              class="css-lihpnt"
+              class="css-4ikyhe"
             >
-              <div
-                class="css-kdlajr"
+              <a
+                class="css-1pyvojw"
+                href="https://www.thetimes.co.uk/"
               >
                 <div
-                  class="css-86cix"
+                  class="css-1xlmj6j"
                 >
                   <div
-                    class="css-1aiajnh"
+                    class="css-86cix"
                   >
-                    <section
-                      class="css-6cr1qt"
+                    <div
+                      class="css-1aiajnh"
                     >
-                      <h3
-                        class="nk-headline-heading css-i2jo9u"
+                      <section
+                        class="css-6cr1qt"
                       >
-                        Title bar
-                      </h3>
-                    </section>
+                        <h3
+                          class="nk-headline-heading css-i2jo9u"
+                        >
+                          Title bar
+                        </h3>
+                      </section>
+                    </div>
                   </div>
-                </div>
-                <a
-                  class="css-1vespcj"
-                  data-testid="buttonLink"
-                  href="https://www.thetimes.co.uk/"
-                  role="link"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="css-3rbz36"
-                    fill="currentcolor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
                       fill="currentcolor"
-                    />
-                  </svg>
-                </a>
-              </div>
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </div>
             <div
               class="css-1nw1nne"
@@ -1939,7 +2160,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-i1f2uq"
+                  class="article-info css-1i9xcln"
                 >
                   <span
                     class="css-6tvr2h"
@@ -1951,7 +2172,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -1968,6 +2189,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -2006,7 +2236,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -2018,7 +2248,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -2035,6 +2265,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -2073,7 +2312,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -2085,7 +2324,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -2102,6 +2341,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       INTERVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -2160,52 +2408,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               data-testid="article-block"
             >
               <div
-                class="css-lihpnt"
+                class="css-4ikyhe"
               >
-                <div
-                  class="css-kdlajr"
+                <a
+                  class="css-1pyvojw"
+                  href="https://www.thetimes.co.uk/"
                 >
                   <div
-                    class="css-86cix"
+                    class="css-1xlmj6j"
                   >
                     <div
-                      class="css-1aiajnh"
+                      class="css-86cix"
                     >
-                      <section
-                        class="css-6cr1qt"
+                      <div
+                        class="css-1aiajnh"
                       >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
+                        <section
+                          class="css-6cr1qt"
                         >
-                          Title bar
-                        </h3>
-                      </section>
+                          <h3
+                            class="nk-headline-heading css-i2jo9u"
+                          >
+                            Title bar
+                          </h3>
+                        </section>
+                      </div>
                     </div>
-                  </div>
-                  <a
-                    class="css-1vespcj"
-                    data-testid="buttonLink"
-                    href="https://www.thetimes.co.uk/"
-                    role="link"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-3rbz36"
-                      fill="currentcolor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
                         fill="currentcolor"
-                      />
-                    </svg>
-                  </a>
-                </div>
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </a>
               </div>
               <div
                 class="css-1nw1nne"
@@ -2227,7 +2479,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-i1f2uq"
+                    class="article-info css-1i9xcln"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2239,7 +2491,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -2256,6 +2508,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         Q&A
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -2294,7 +2555,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2306,7 +2567,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -2323,6 +2584,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -2361,7 +2631,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2373,7 +2643,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -2390,6 +2660,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -2422,52 +2701,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               data-testid="article-block"
             >
               <div
-                class="css-lihpnt"
+                class="css-4ikyhe"
               >
-                <div
-                  class="css-kdlajr"
+                <a
+                  class="css-1pyvojw"
+                  href="https://www.thetimes.co.uk/"
                 >
                   <div
-                    class="css-86cix"
+                    class="css-1xlmj6j"
                   >
                     <div
-                      class="css-1aiajnh"
+                      class="css-86cix"
                     >
-                      <section
-                        class="css-6cr1qt"
+                      <div
+                        class="css-1aiajnh"
                       >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
+                        <section
+                          class="css-6cr1qt"
                         >
-                          Title bar
-                        </h3>
-                      </section>
+                          <h3
+                            class="nk-headline-heading css-i2jo9u"
+                          >
+                            Title bar
+                          </h3>
+                        </section>
+                      </div>
                     </div>
-                  </div>
-                  <a
-                    class="css-1vespcj"
-                    data-testid="buttonLink"
-                    href="https://www.thetimes.co.uk/"
-                    role="link"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-3rbz36"
-                      fill="currentcolor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
                         fill="currentcolor"
-                      />
-                    </svg>
-                  </a>
-                </div>
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </a>
               </div>
               <div
                 class="css-1nw1nne"
@@ -2489,7 +2772,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-i1f2uq"
+                    class="article-info css-1i9xcln"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2501,7 +2784,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -2518,6 +2801,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -2556,7 +2848,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2568,7 +2860,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -2585,6 +2877,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -2623,7 +2924,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2635,7 +2936,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -2652,6 +2953,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -2684,52 +2994,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               data-testid="article-block"
             >
               <div
-                class="css-lihpnt"
+                class="css-4ikyhe"
               >
-                <div
-                  class="css-kdlajr"
+                <a
+                  class="css-1pyvojw"
+                  href="https://www.thetimes.co.uk/"
                 >
                   <div
-                    class="css-86cix"
+                    class="css-1xlmj6j"
                   >
                     <div
-                      class="css-1aiajnh"
+                      class="css-86cix"
                     >
-                      <section
-                        class="css-6cr1qt"
+                      <div
+                        class="css-1aiajnh"
                       >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
+                        <section
+                          class="css-6cr1qt"
                         >
-                          Title bar
-                        </h3>
-                      </section>
+                          <h3
+                            class="nk-headline-heading css-i2jo9u"
+                          >
+                            Title bar
+                          </h3>
+                        </section>
+                      </div>
                     </div>
-                  </div>
-                  <a
-                    class="css-1vespcj"
-                    data-testid="buttonLink"
-                    href="https://www.thetimes.co.uk/"
-                    role="link"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-3rbz36"
-                      fill="currentcolor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
                         fill="currentcolor"
-                      />
-                    </svg>
-                  </a>
-                </div>
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </a>
               </div>
               <div
                 class="css-1nw1nne"
@@ -2751,7 +3065,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-i1f2uq"
+                    class="article-info css-1i9xcln"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2763,7 +3077,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -2780,6 +3094,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -2818,7 +3141,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2830,7 +3153,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -2847,6 +3170,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -2885,7 +3217,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -2897,7 +3229,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -2914,6 +3246,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -2946,52 +3287,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               data-testid="article-block"
             >
               <div
-                class="css-lihpnt"
+                class="css-4ikyhe"
               >
-                <div
-                  class="css-kdlajr"
+                <a
+                  class="css-1pyvojw"
+                  href="https://www.thetimes.co.uk/"
                 >
                   <div
-                    class="css-86cix"
+                    class="css-1xlmj6j"
                   >
                     <div
-                      class="css-1aiajnh"
+                      class="css-86cix"
                     >
-                      <section
-                        class="css-6cr1qt"
+                      <div
+                        class="css-1aiajnh"
                       >
-                        <h3
-                          class="nk-headline-heading css-i2jo9u"
+                        <section
+                          class="css-6cr1qt"
                         >
-                          Title bar
-                        </h3>
-                      </section>
+                          <h3
+                            class="nk-headline-heading css-i2jo9u"
+                          >
+                            Title bar
+                          </h3>
+                        </section>
+                      </div>
                     </div>
-                  </div>
-                  <a
-                    class="css-1vespcj"
-                    data-testid="buttonLink"
-                    href="https://www.thetimes.co.uk/"
-                    role="link"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-3rbz36"
-                      fill="currentcolor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
+                    <button
+                      class="css-1j08e08"
+                      data-testid="button"
+                      type="button"
                     >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                      <svg
+                        aria-hidden="true"
+                        class="css-3rbz36"
                         fill="currentcolor"
-                      />
-                    </svg>
-                  </a>
-                </div>
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </a>
               </div>
               <div
                 class="css-1nw1nne"
@@ -3013,7 +3358,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-i1f2uq"
+                    class="article-info css-1i9xcln"
                   >
                     <span
                       class="css-6tvr2h"
@@ -3025,7 +3370,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -3042,6 +3387,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -3080,7 +3434,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -3092,7 +3446,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -3109,6 +3463,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         REVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -3147,7 +3510,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-122i4mv"
+                    class="article-info css-1v4ghtp"
                   >
                     <span
                       class="css-6tvr2h"
@@ -3159,7 +3522,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       </div>
                     </span>
                     <div
-                      class="css-lew009"
+                      class="css-p44zak"
                     >
                       <hr
                         aria-hidden="true"
@@ -3176,6 +3539,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                         INTERVIEW
                       </div>
                     </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
                   </div>
                   <a
                     class="css-17mo6gr"
@@ -3222,52 +3594,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
             data-testid="article-block"
           >
             <div
-              class="css-lihpnt"
+              class="css-4ikyhe"
             >
-              <div
-                class="css-kdlajr"
+              <a
+                class="css-1pyvojw"
+                href="https://www.thetimes.co.uk/"
               >
                 <div
-                  class="css-86cix"
+                  class="css-1xlmj6j"
                 >
                   <div
-                    class="css-1aiajnh"
+                    class="css-86cix"
                   >
-                    <section
-                      class="css-6cr1qt"
+                    <div
+                      class="css-1aiajnh"
                     >
-                      <h3
-                        class="nk-headline-heading css-i2jo9u"
+                      <section
+                        class="css-6cr1qt"
                       >
-                        Title bar
-                      </h3>
-                    </section>
+                        <h3
+                          class="nk-headline-heading css-i2jo9u"
+                        >
+                          Title bar
+                        </h3>
+                      </section>
+                    </div>
                   </div>
-                </div>
-                <a
-                  class="css-1vespcj"
-                  data-testid="buttonLink"
-                  href="https://www.thetimes.co.uk/"
-                  role="link"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="css-3rbz36"
-                    fill="currentcolor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
                       fill="currentcolor"
-                    />
-                  </svg>
-                </a>
-              </div>
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </div>
             <div
               class="css-1nw1nne"
@@ -3289,7 +3665,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-i1f2uq"
+                  class="article-info css-1i9xcln"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3301,7 +3677,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -3318,6 +3694,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       Q&A
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -3356,7 +3741,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3368,7 +3753,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -3385,6 +3770,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -3423,7 +3817,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3435,7 +3829,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -3452,6 +3846,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -3484,52 +3887,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
             data-testid="article-block"
           >
             <div
-              class="css-lihpnt"
+              class="css-4ikyhe"
             >
-              <div
-                class="css-kdlajr"
+              <a
+                class="css-1pyvojw"
+                href="https://www.thetimes.co.uk/"
               >
                 <div
-                  class="css-86cix"
+                  class="css-1xlmj6j"
                 >
                   <div
-                    class="css-1aiajnh"
+                    class="css-86cix"
                   >
-                    <section
-                      class="css-6cr1qt"
+                    <div
+                      class="css-1aiajnh"
                     >
-                      <h3
-                        class="nk-headline-heading css-i2jo9u"
+                      <section
+                        class="css-6cr1qt"
                       >
-                        Title bar
-                      </h3>
-                    </section>
+                        <h3
+                          class="nk-headline-heading css-i2jo9u"
+                        >
+                          Title bar
+                        </h3>
+                      </section>
+                    </div>
                   </div>
-                </div>
-                <a
-                  class="css-1vespcj"
-                  data-testid="buttonLink"
-                  href="https://www.thetimes.co.uk/"
-                  role="link"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="css-3rbz36"
-                    fill="currentcolor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
                       fill="currentcolor"
-                    />
-                  </svg>
-                </a>
-              </div>
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </div>
             <div
               class="css-1nw1nne"
@@ -3551,7 +3958,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-i1f2uq"
+                  class="article-info css-1i9xcln"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3563,7 +3970,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -3580,6 +3987,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -3618,7 +4034,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3630,7 +4046,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -3647,6 +4063,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -3685,7 +4110,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3697,7 +4122,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -3714,6 +4139,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -3746,52 +4180,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
             data-testid="article-block"
           >
             <div
-              class="css-lihpnt"
+              class="css-4ikyhe"
             >
-              <div
-                class="css-kdlajr"
+              <a
+                class="css-1pyvojw"
+                href="https://www.thetimes.co.uk/"
               >
                 <div
-                  class="css-86cix"
+                  class="css-1xlmj6j"
                 >
                   <div
-                    class="css-1aiajnh"
+                    class="css-86cix"
                   >
-                    <section
-                      class="css-6cr1qt"
+                    <div
+                      class="css-1aiajnh"
                     >
-                      <h3
-                        class="nk-headline-heading css-i2jo9u"
+                      <section
+                        class="css-6cr1qt"
                       >
-                        Title bar
-                      </h3>
-                    </section>
+                        <h3
+                          class="nk-headline-heading css-i2jo9u"
+                        >
+                          Title bar
+                        </h3>
+                      </section>
+                    </div>
                   </div>
-                </div>
-                <a
-                  class="css-1vespcj"
-                  data-testid="buttonLink"
-                  href="https://www.thetimes.co.uk/"
-                  role="link"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="css-3rbz36"
-                    fill="currentcolor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
                       fill="currentcolor"
-                    />
-                  </svg>
-                </a>
-              </div>
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </div>
             <div
               class="css-1nw1nne"
@@ -3813,7 +4251,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-i1f2uq"
+                  class="article-info css-1i9xcln"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3825,7 +4263,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -3842,6 +4280,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -3880,7 +4327,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3892,7 +4339,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -3909,6 +4356,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -3947,7 +4403,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -3959,7 +4415,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -3976,6 +4432,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -4008,52 +4473,56 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
             data-testid="article-block"
           >
             <div
-              class="css-lihpnt"
+              class="css-4ikyhe"
             >
-              <div
-                class="css-kdlajr"
+              <a
+                class="css-1pyvojw"
+                href="https://www.thetimes.co.uk/"
               >
                 <div
-                  class="css-86cix"
+                  class="css-1xlmj6j"
                 >
                   <div
-                    class="css-1aiajnh"
+                    class="css-86cix"
                   >
-                    <section
-                      class="css-6cr1qt"
+                    <div
+                      class="css-1aiajnh"
                     >
-                      <h3
-                        class="nk-headline-heading css-i2jo9u"
+                      <section
+                        class="css-6cr1qt"
                       >
-                        Title bar
-                      </h3>
-                    </section>
+                        <h3
+                          class="nk-headline-heading css-i2jo9u"
+                        >
+                          Title bar
+                        </h3>
+                      </section>
+                    </div>
                   </div>
-                </div>
-                <a
-                  class="css-1vespcj"
-                  data-testid="buttonLink"
-                  href="https://www.thetimes.co.uk/"
-                  role="link"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="css-3rbz36"
-                    fill="currentcolor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                  <button
+                    class="css-1j08e08"
+                    data-testid="button"
+                    type="button"
                   >
-                    <path
-                      d="M0 0h24v24H0z"
-                      fill="none"
-                    />
-                    <path
-                      d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                    <svg
+                      aria-hidden="true"
+                      class="css-3rbz36"
                       fill="currentcolor"
-                    />
-                  </svg>
-                </a>
-              </div>
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                        fill="currentcolor"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </div>
             <div
               class="css-1nw1nne"
@@ -4075,7 +4544,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-i1f2uq"
+                  class="article-info css-1i9xcln"
                 >
                   <span
                     class="css-6tvr2h"
@@ -4087,7 +4556,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -4104,6 +4573,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -4142,7 +4620,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -4154,7 +4632,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -4171,6 +4649,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       REVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
@@ -4209,7 +4696,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-122i4mv"
+                  class="article-info css-1v4ghtp"
                 >
                   <span
                     class="css-6tvr2h"
@@ -4221,7 +4708,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </span>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -4238,6 +4725,15 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       INTERVIEW
                     </div>
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
                 <a
                   class="css-17mo6gr"
