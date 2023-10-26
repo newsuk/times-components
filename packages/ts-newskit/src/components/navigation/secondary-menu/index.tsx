@@ -43,8 +43,8 @@ export const SecondaryNavigation = ({
     if (!!filteredItem) {
       setIsSelected(filteredItem.title);
     } else {
-      const index = defaultSelectedIndex >= 0 ? defaultSelectedIndex : 0
-      setIsSelected((data[index] && data[index].title) || '')
+      const index = defaultSelectedIndex >= 0 ? defaultSelectedIndex : 0;
+      setIsSelected((data[index] && data[index].title) || '');
     }
   };
 
