@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.123.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.123.0...@times-components/ts-newskit@1.123.1) (2023-10-26)
+
+
+### Bug Fixes
+
+* **TMRX-1594:** Remove video icon for now as the iamge doesnt work in render ([#3614](https://github.com/newsuk/times-components/issues/3614)) ([24cd7b2](https://github.com/newsuk/times-components/commit/24cd7b2020dd7d3b5d24abe10cc0b61f4cadf5ed))
+
+
+
+
+
 # [1.123.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.122.0...@times-components/ts-newskit@1.123.0) (2023-10-25)
 
 
