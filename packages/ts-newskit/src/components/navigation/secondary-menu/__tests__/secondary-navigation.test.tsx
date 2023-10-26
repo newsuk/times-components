@@ -38,7 +38,7 @@ describe('Secondary Menu', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should highlight the first title when default index is not provided and slug cannot be found', () => {
+  it('should not highlight any titles when no default index is provided and no slug is found', () => {
     const { container } = render(
       <SecondaryNavigation
         data={[mainMenuItems[0], mainMenuItems[1]]}
@@ -55,7 +55,7 @@ describe('Secondary Menu', () => {
     const secondMenuItem = getAllByTestId(container, 'buttonLink')[1];
 
     expect(firstMenuItem).toHaveStyle({
-      'border-bottom': '4px solid #01000d'
+      'border-bottom': '4px solid transparent'
     });
     expect(secondMenuItem).toHaveStyle({
       'border-bottom': '4px solid transparent'

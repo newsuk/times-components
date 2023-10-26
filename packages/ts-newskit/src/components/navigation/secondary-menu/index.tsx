@@ -29,11 +29,12 @@ export const SecondaryNavigation = ({
   const getPageTitle = (slug: string) => {
     const filteredItem = data.find(item => item.slug === slug);
 
-    if (!!filteredItem) {
+    if (filteredItem) {
       return filteredItem.title;
     } else {
-      const index = defaultSelectedIndex >= 0 ? defaultSelectedIndex : 0;
-      return (data[index] && data[index].title) || '';
+      return defaultSelectedIndex >= 0
+        ? data[defaultSelectedIndex] && data[defaultSelectedIndex].title
+        : '';
     }
   };
 
