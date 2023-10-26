@@ -200,6 +200,7 @@ export const Article = ({
             typographyPreset: titleTypographyPreset,
             marginBlockStart: hasArticleTileInfo ? 'space030' : marginBlockStart
           }}
+          expand
           external={false}
           onClick={onClick}
         >
