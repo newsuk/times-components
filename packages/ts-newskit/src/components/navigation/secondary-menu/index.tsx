@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { SecondaryNavDesktop } from './desktop';
 import { SecondaryNavMobile } from './mobile';
 import { Visible } from 'newskit';
@@ -26,26 +26,22 @@ export const SecondaryNavigation = ({
   defaultSelectedIndex = -1,
   heightMobile = 'auto'
 }: SecondaryNavigationProps) => {
-  const selectedItem =
-    defaultSelectedIndex >= 0
-      ? data[defaultSelectedIndex] && data[defaultSelectedIndex].title
-      : '';
-  const [isExpanded, setIsExpanded] = useState<boolean>(false);
-  const [isSelected, setIsSelected] = useState<string>(selectedItem);
-
-  useEffect(() => {
-    handleSelect(pageSlug);
-  }, []);
-
-  const handleSelect = (slug: string) => {
+  const getPageTitle = (slug: string) => {
     const filteredItem = data.find(item => item.slug === slug);
 
     if (!!filteredItem) {
-      setIsSelected(filteredItem.title);
+      return filteredItem.title;
     } else {
       const index = defaultSelectedIndex >= 0 ? defaultSelectedIndex : 0;
-      setIsSelected((data[index] && data[index].title) || '');
+      return (data[index] && data[index].title) || '';
     }
+  };
+
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
+  const [isSelected, setIsSelected] = useState<string>(getPageTitle(pageSlug));
+
+  const handleSelect = (slug: string) => {
+    setIsSelected(getPageTitle(slug));
   };
 
   const options = {
