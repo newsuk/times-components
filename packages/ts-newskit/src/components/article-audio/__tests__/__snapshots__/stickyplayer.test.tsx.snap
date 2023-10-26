@@ -20,13 +20,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
           aria-label="Play"
           aria-live="polite"
           aria-pressed="false"
-          class="css-1ycwa5a"
+          class="css-1cktvs"
           data-testid="audio-player-pause-btn"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="css-1126nsi"
+            class="css-2gkv6s"
             fill="currentColor"
             viewBox="0 0 64 64"
             xmlns="http://www.w3.org/2000/svg"
