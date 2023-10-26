@@ -113,7 +113,7 @@ exports[`1. a full article 1`] = `
       <audio
         autoPlay={false}
         data-testid="audio-element"
-        src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+        src=""
       />
       <button
         aria-busy="true"
@@ -121,7 +121,7 @@ exports[`1. a full article 1`] = `
         aria-live="polite"
         aria-pressed={false}
         data-testid="audio-player-play-btn"
-        size="small"
+        size="medium"
         type="button"
       >
         <svg
@@ -139,7 +139,7 @@ exports[`1. a full article 1`] = `
         Listen to article
       </p>
       <p>
-        Narrated by James Marriott
+        Narrated by Some byline
       </p>
     </section>
     Share

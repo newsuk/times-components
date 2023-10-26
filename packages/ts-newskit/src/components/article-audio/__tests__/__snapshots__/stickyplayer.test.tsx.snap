@@ -3,7 +3,7 @@
 exports[`StickyPlayerMob renders renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="opShow_articleAudio css-1i5p60e"
+    class="article-audio-container opShow_articleAudio css-1i5p60e"
   >
     <section
       aria-label="Audio Player"
@@ -20,13 +20,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
           aria-label="Play"
           aria-live="polite"
           aria-pressed="false"
-          class="css-7ycgmb"
+          class="css-1ycwa5a"
           data-testid="audio-player-pause-btn"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="css-mxa34f"
+            class="css-1126nsi"
             fill="currentColor"
             viewBox="0 0 64 64"
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
             Playing
           </p>
           <p
-            class="css-90ibmi"
+            class="article-audio-narrator css-90ibmi"
           >
             Narrated by James Marriott
           </p>
@@ -72,13 +72,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                   style="width: 480px;"
                 >
                   <p
-                    class="css-1378i5i"
+                    class="article-audio-details css-1378i5i"
                     style="width: 240px;"
                   >
                     Article headline - James Marriott
                   </p>
                   <p
-                    class="css-1378i5i"
+                    class="article-audio-details css-1378i5i"
                     style="width: 240px;"
                   >
                     Article headline - James Marriott

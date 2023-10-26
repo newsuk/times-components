@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.123.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.123.0...@times-components/ts-newskit@1.123.1) (2023-10-26)
+
+
+### Bug Fixes
+
+* **TMRX-1594:** Remove video icon for now as the iamge doesnt work in render ([#3614](https://github.com/newsuk/times-components/issues/3614)) ([24cd7b2](https://github.com/newsuk/times-components/commit/24cd7b2020dd7d3b5d24abe10cc0b61f4cadf5ed))
+
+
+
+
+
+# [1.123.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.122.0...@times-components/ts-newskit@1.123.0) (2023-10-25)
+
+
+### Features
+
+* **TMRX-1562:** Update slice header ([#3608](https://github.com/newsuk/times-components/issues/3608)) ([071de7f](https://github.com/newsuk/times-components/commit/071de7f495076910a17810ca16cf216e414c28e0))
+* **TMRX-1605:** update article audio component ([#3606](https://github.com/newsuk/times-components/issues/3606)) ([1b5510e](https://github.com/newsuk/times-components/commit/1b5510e42cba3cc3c30e2f4fefac4c5ce222d3f3))
+
+
+
+
+
 # [1.122.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.121.0...@times-components/ts-newskit@1.122.0) (2023-10-25)
 
 

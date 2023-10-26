@@ -27,6 +27,7 @@ export const ScrollingText: React.FC = ({ children }) => {
       typographyPreset="utilityHeading010"
       ref={scrollText}
       style={{ width: `${scrollTextWidth}px` }}
+      className="article-audio-details"
     >
       {children}
     </ScrollTextItem>
