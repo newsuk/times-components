@@ -88,6 +88,7 @@ export const Article = ({
   } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
+
   const hasArticleTileInfo =
     (expirableFlags &&
       getActiveArticleFlags(expirableFlags) &&
