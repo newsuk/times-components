@@ -95,7 +95,7 @@ export const ArticleTileInfo = ({
           )}
           {hasVideo && (
             <TileWrapper>
-              <CustomTextBlock text="VIDEO" stylePreset='inkContrast' />
+              <CustomTextBlock text="VIDEO" stylePreset="inkContrast" />
             </TileWrapper>
           )}
           {label && (
