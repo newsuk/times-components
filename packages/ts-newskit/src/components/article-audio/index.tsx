@@ -89,9 +89,17 @@ export const InArticleAudio = ({
           <AudioPlayerPlayPauseButton
             onClick={handleClickPlayPause}
             overrides={{
+              height: {
+                xs: 'sizing060',
+                sm: 'sizing080'
+              },
               width: {
-                xs: 'small',
-                sm: 'medium'
+                xs: 'sizing060',
+                sm: 'sizing080'
+              },
+              iconSize: {
+                xs: 'sizing040',
+                sm: 'sizing050'
               }
             }}
             data-testid={

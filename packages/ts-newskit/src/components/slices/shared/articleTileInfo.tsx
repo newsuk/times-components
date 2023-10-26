@@ -2,7 +2,6 @@ import React from 'react';
 import { Divider } from 'newskit';
 import { ContainerInline, StyledBlock } from '../shared-styles';
 import { LiveTag } from './live-tag';
-import { NewsKitVideoButtonIcon } from '../../../assets/index';
 import { CustomTextBlock } from './customTextBlock';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
 
@@ -96,7 +95,7 @@ export const ArticleTileInfo = ({
           )}
           {hasVideo && (
             <TileWrapper>
-              <CustomTextBlock text="VIDEO" icon={<NewsKitVideoButtonIcon />} />
+              <CustomTextBlock text="VIDEO" stylePreset="inkContrast" />
             </TileWrapper>
           )}
           {label && (

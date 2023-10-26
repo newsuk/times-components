@@ -17,7 +17,7 @@ export const ArticleGrid = styled(GridLayout)`
     }
   }
   ${getMediaQueryFromTheme('lg', 'xl')} {
-    img {
+    .article-image {
       display: none;
     }
     & > div div {
