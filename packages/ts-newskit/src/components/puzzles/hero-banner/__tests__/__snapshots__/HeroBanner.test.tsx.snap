@@ -12,12 +12,22 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
         class="css-v6jbrz"
       >
         <div
-          class="css-13byt3y"
+          class="css-1i9lrhr"
         >
           <h2
             class="css-b95xoj"
           >
-            Play the Times Crossword
+            <span
+              class="css-hrqj8j"
+            >
+              Play the Times 
+            </span>
+             
+            <span
+              class="css-1fjptnb"
+            >
+              Crossword
+            </span>
           </h2>
           <ul
             class="css-jikt94"
@@ -139,10 +149,10 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
           </a>
         </div>
         <div
-          class="css-6wnvz7"
+          class="css-24cu3v"
         >
           <div
-            class="css-5x6yaw"
+            class="css-1fcua8a"
           >
             <svg
               class="iconBg css-ny3roy"
@@ -158,7 +168,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               />
             </svg>
             <svg
-              class="css-1poeuvp"
+              class="css-5dql1k"
               fill="none"
               height="87"
               viewBox="0 0 64 87"
@@ -223,7 +233,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               />
             </svg>
             <svg
-              class="css-13367om"
+              class="css-18s79rs"
               fill="none"
               height="75"
               viewBox="0 0 76 75"
@@ -304,7 +314,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               />
             </svg>
             <svg
-              class="css-s6fhb1"
+              class="css-1yeeait"
               fill="none"
               height="75"
               viewBox="0 0 75 75"
@@ -377,7 +387,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
               />
             </svg>
             <svg
-              class="css-1ucn2f5"
+              class="css-17c3udv"
               fill="none"
               height="75"
               viewBox="0 0 75 75"
@@ -401,7 +411,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
             </svg>
           </div>
           <div
-            class="css-251db0"
+            class="css-uheq1y"
           >
             <svg
               class="iconType css-ny3roy"
@@ -495,7 +505,7 @@ exports[`HeroBanner should render HeroBanner component 1`] = `
         data-testid="divider"
       />
       <span
-        class="css-2weq6d"
+        class="css-zqh5td"
       >
         Already a subscriber? 
         <a

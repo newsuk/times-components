@@ -43,6 +43,15 @@ export const StyledTextBlock = styled(TextBlock)`
   ${getMediaQueryFromTheme('xs', 'md')} {
     align-self: center;
   }
+
+  ${getMediaQueryFromTheme('xs')} {
+    text-align: center;
+    width: 100%;
+  }
+
+  ${getMediaQueryFromTheme('md')} {
+    width: unset;
+  }
 `;
 
 export const HeroBannerContainer = styled(Stack)<StackProps>`
@@ -59,6 +68,14 @@ export const StyledStack = styled(Stack)`
 
 export const StyledHeroIconContainer = styled(Block)`
   position: relative;
+
+  ${getMediaQueryFromTheme('md')} {
+    margin: 0 auto;
+  }
+
+  ${getMediaQueryFromTheme('lg')} {
+    margin-right: 12px;
+  }
 `;
 
 export const MainIconContainer = styled(Block)`
@@ -87,13 +104,8 @@ export const MainIconContainer = styled(Block)`
     top: 50%;
     transform: translate(-50%, -50%);
     & .iconType {
-      width: 150px;
+      width: 130px;
       height: unset;
-    }
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    & .iconType {
-      width: 200px;
     }
   }
 `;
@@ -105,12 +117,7 @@ export const StyledIconWrapper = styled(Block)`
   }
   ${getMediaQueryFromTheme('lg')} {
     & .iconBg {
-      width: 400px;
-    }
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    & .iconBg {
-      width: 493px;
+      width: 320px;
     }
   }
 `;
@@ -120,48 +127,40 @@ export const StyledHeroBannerKillerSudoku = styled(
 )`
   position: absolute;
   ${getMediaQueryFromTheme('lg')} {
-    left: 17%;
-    top: 24.5%;
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    left: 18.5%;
-    top: 17.5%;
+    left: 19%;
+    top: 29.6%;
+    width: 43px;
+    height: 54px;
   }
 `;
 
 export const StyledHeroBannerQuintagram = styled(NewsKitHeroBannerQuintagram)`
   position: absolute;
   ${getMediaQueryFromTheme('lg')} {
-    right: 22.2%;
-    bottom: 19%;
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    right: 22.5%;
-    bottom: 12%;
+    right: 22.4%;
+    bottom: 25.3%;
+    width: 49px;
+    height: 49px;
   }
 `;
 
 export const StyledHeroBannerSuko = styled(NewsKitHeroBannerSuko)`
   position: absolute;
   ${getMediaQueryFromTheme('lg')} {
-    top: 17%;
-    right: 21%;
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    top: 10%;
+    top: 24.6%;
     right: 22%;
+    width: 49px;
+    height: 49px;
   }
 `;
 
 export const StyledHeroBannerWordPuzzle = styled(NewsKitHeroBannerWordPuzzle)`
   position: absolute;
   ${getMediaQueryFromTheme('lg')} {
-    left: 16%;
-    bottom: 20%;
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    left: 18%;
-    bottom: 13%;
+    left: 17%;
+    bottom: 25%;
+    width: 49px;
+    height: 49px;
   }
 }
 `;
@@ -171,4 +170,13 @@ export const StyledBlock = styled(Block)`
   position: relative;
   max-width: 1290px;
   width: 100%;
+`;
+
+export const StyledSpan = styled(TextBlock)`
+  ${getMediaQueryFromTheme('xs')} {
+    display: block;
+  }
+  ${getMediaQueryFromTheme('md')} {
+    display: inline-block;
+  }
 `;

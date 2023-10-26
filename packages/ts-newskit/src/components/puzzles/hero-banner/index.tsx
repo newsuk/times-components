@@ -12,7 +12,8 @@ import {
   StyledHeroBannerWordPuzzle,
   StyledIconWrapper,
   MainIconContainer,
-  StyledBlock
+  StyledBlock,
+  StyledSpan
 } from './styles';
 import {
   NewsKitBoardAndCardGamesIcon,
@@ -89,7 +90,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({
           marginBlockEnd={{ xs: 'space070', md: 'space090', lg: 'space080' }}
           // spaceInline={{ xl: 'space100', lg: 'space100' }}
         >
-          <Block>
+          <Block marginInlineEnd={{ md: 'space070' }}>
             <TextBlock
               as="h2"
               typographyPreset={{
@@ -100,7 +101,8 @@ export const HeroBanner: FC<HeroBannerProps> = ({
               marginBlockEnd={{ xs: 'space070', md: 'space060' }}
               marginBlockStart={{ lg: 'space045' }}
             >
-              Play the Times {puzzleName}
+              <TextBlock as="span">Play the Times </TextBlock>{' '}
+              <StyledSpan as="span">{puzzleName}</StyledSpan>
             </TextBlock>
             <SyledUnorderedList
               overrides={{
