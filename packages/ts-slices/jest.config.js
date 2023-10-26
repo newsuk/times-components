@@ -21,7 +21,7 @@ const buildConfig = dir => {
       '.+\\.tsx?$': 'ts-jest'
     },
     transformIgnorePatterns: [
-      "node_modules/(?!(@times-components|@storybook/react)/)"
+      'node_modules/(?!(@times-components|@storybook/react)/)'
     ],
     globals: {
       'ts-jest': {
