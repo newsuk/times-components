@@ -501,7 +501,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 data-testid="scroll-container"
               >
                 <div
-                  class="css-rgeebf"
+                  class="css-14ml2ll"
                   data-testid="article-container-mobile"
                   style="position: relative;"
                 >
@@ -874,7 +874,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
             class="css-11l110t"
           >
             <div
-              class="css-rgeebf"
+              class="css-14ml2ll"
               data-testid="article-container-desktop"
               style="position: relative;"
             >
@@ -1898,7 +1898,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 data-testid="scroll-container"
               >
                 <div
-                  class="css-rgeebf"
+                  class="css-14ml2ll"
                   data-testid="article-container-mobile"
                   style="position: relative;"
                 >
@@ -2271,7 +2271,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
             class="css-11l110t"
           >
             <div
-              class="css-rgeebf"
+              class="css-14ml2ll"
               data-testid="article-container-desktop"
               style="position: relative;"
             >
