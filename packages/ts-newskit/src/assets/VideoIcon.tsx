@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react';
 const VideoIcon: React.FC = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -14,5 +14,5 @@ const VideoIcon: React.FC = (props: any) => (
       clipRule="evenodd"
     />
   </svg>
-)
+);
 export default VideoIcon;

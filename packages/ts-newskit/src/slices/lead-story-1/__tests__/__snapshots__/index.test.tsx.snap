@@ -277,6 +277,20 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     <div
                       class="css-gb5m6n"
                     >
+                      <svg
+                        class="css-ny3roy"
+                        fill="none"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm4-10-6-3.75v7.5L16 12Z"
+                          fill="#01000D"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
                       VIDEO
                     </div>
                   </span>
@@ -9000,6 +9014,20 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                     <div
                       class="css-gb5m6n"
                     >
+                      <svg
+                        class="css-ny3roy"
+                        fill="none"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm4-10-6-3.75v7.5L16 12Z"
+                          fill="#01000D"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
                       VIDEO
                     </div>
                   </span>
@@ -17723,6 +17751,20 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <div
                       class="css-gb5m6n"
                     >
+                      <svg
+                        class="css-ny3roy"
+                        fill="none"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm4-10-6-3.75v7.5L16 12Z"
+                          fill="#01000D"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
                       VIDEO
                     </div>
                   </span>
@@ -26446,6 +26488,20 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <div
                       class="css-gb5m6n"
                     >
+                      <svg
+                        class="css-ny3roy"
+                        fill="none"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm4-10-6-3.75v7.5L16 12Z"
+                          fill="#01000D"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
                       VIDEO
                     </div>
                   </span>
@@ -35169,6 +35225,20 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     <div
                       class="css-gb5m6n"
                     >
+                      <svg
+                        class="css-ny3roy"
+                        fill="none"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          clip-rule="evenodd"
+                          d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm4-10-6-3.75v7.5L16 12Z"
+                          fill="#01000D"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
                       VIDEO
                     </div>
                   </span>
