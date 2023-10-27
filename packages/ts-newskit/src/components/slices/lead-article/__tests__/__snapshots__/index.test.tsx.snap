@@ -6,7 +6,7 @@ exports[`Render Component one should render a snapshot 1`] = `
     class="css-1bk5aro"
   >
     <div
-      class="css-1vuk75f"
+      class="lead-image-container css-1vuk75f"
     >
       <div
         class="lcpItem css-4t8ylq"
@@ -44,7 +44,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         data-testid="divider"
       />
       <div
-        class="css-3kejzs"
+        class="article-info css-86452u"
       >
         <span
           class="css-7b9bzx"
@@ -52,7 +52,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           LIVE
         </span>
         <div
-          class="css-lew009"
+          class="css-p44zak"
         >
           <hr
             aria-hidden="true"
@@ -70,7 +70,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           </div>
         </span>
         <div
-          class="css-lew009"
+          class="css-p44zak"
         >
           <hr
             aria-hidden="true"
@@ -87,6 +87,15 @@ exports[`Render Component one should render a snapshot 1`] = `
             MARTIN SAMUEL
           </div>
         </span>
+        <div
+          class="css-p44zak"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
+        </div>
       </div>
       <a
         class="css-10h0i3c"
@@ -126,7 +135,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           </span>
         </a>
         <div
-          class="css-lew009"
+          class="css-p44zak"
         >
           <hr
             aria-hidden="true"

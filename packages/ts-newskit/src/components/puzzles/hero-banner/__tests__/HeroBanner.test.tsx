@@ -22,8 +22,10 @@ describe('HeroBanner', () => {
   it('should render HeroBanner with props', () => {
     const { getByText } = renderComponent(defaultProps);
 
-    const title = getByText('Play the Times Crossword');
-    expect(title).toBeInTheDocument();
+    const title1 = getByText('Play the Times');
+    const title2 = getByText('Crossword');
+    expect(title1).toBeInTheDocument();
+    expect(title2).toBeInTheDocument();
 
     const loginButton = getByText('Log In');
     expect(loginButton).toHaveAttribute(

@@ -3,6 +3,119 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.124.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.124.0...@times-components/ts-newskit@1.124.1) (2023-10-27)
+
+
+### Bug Fixes
+
+* **TMRX-1617:** only render as link if href is provided ([#3617](https://github.com/newsuk/times-components/issues/3617)) ([0ead694](https://github.com/newsuk/times-components/commit/0ead6944972f85c7e0b6c8c0b382039a661f7b4d))
+
+
+
+
+
+# [1.124.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.123.2...@times-components/ts-newskit@1.124.0) (2023-10-27)
+
+
+### Features
+
+* **TMPZ-195:** adjusted hero banner and subscribe banner ([#3612](https://github.com/newsuk/times-components/issues/3612)) ([34401c1](https://github.com/newsuk/times-components/commit/34401c192203488026dd9f21c660f8ee327f1266))
+
+
+
+
+
+## [1.123.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.123.1...@times-components/ts-newskit@1.123.2) (2023-10-26)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** update article audio icon ([#3615](https://github.com/newsuk/times-components/issues/3615)) ([75d0f3b](https://github.com/newsuk/times-components/commit/75d0f3bd776a3ab3b8978f3a1fdb21e91fb3f19d))
+* **TMRX-1612:** target class article-image  ([#3613](https://github.com/newsuk/times-components/issues/3613)) ([04432ea](https://github.com/newsuk/times-components/commit/04432eabb4d2cf1d722aec416cbefbdd693cfea3))
+
+
+
+
+
+## [1.123.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.123.0...@times-components/ts-newskit@1.123.1) (2023-10-26)
+
+
+### Bug Fixes
+
+* **TMRX-1594:** Remove video icon for now as the iamge doesnt work in render ([#3614](https://github.com/newsuk/times-components/issues/3614)) ([24cd7b2](https://github.com/newsuk/times-components/commit/24cd7b2020dd7d3b5d24abe10cc0b61f4cadf5ed))
+
+
+
+
+
+# [1.123.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.122.0...@times-components/ts-newskit@1.123.0) (2023-10-25)
+
+
+### Features
+
+* **TMRX-1562:** Update slice header ([#3608](https://github.com/newsuk/times-components/issues/3608)) ([071de7f](https://github.com/newsuk/times-components/commit/071de7f495076910a17810ca16cf216e414c28e0))
+* **TMRX-1605:** update article audio component ([#3606](https://github.com/newsuk/times-components/issues/3606)) ([1b5510e](https://github.com/newsuk/times-components/commit/1b5510e42cba3cc3c30e2f4fefac4c5ce222d3f3))
+
+
+
+
+
+# [1.122.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.121.0...@times-components/ts-newskit@1.122.0) (2023-10-25)
+
+
+### Features
+
+* **TMRX-1574:** updated section header space ([#3611](https://github.com/newsuk/times-components/issues/3611)) ([4c8c35f](https://github.com/newsuk/times-components/commit/4c8c35f79ea8894a3701419669f7643ec5487add))
+
+
+
+
+
+# [1.121.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.120.1...@times-components/ts-newskit@1.121.0) (2023-10-24)
+
+
+### Features
+
+* **TMRX-1561:** Refactor stacked module ([#3602](https://github.com/newsuk/times-components/issues/3602)) ([e9962c5](https://github.com/newsuk/times-components/commit/e9962c55e5274b6d897140ce5e6ec393de44d922))
+
+
+
+
+
+## [1.120.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.120.0...@times-components/ts-newskit@1.120.1) (2023-10-24)
+
+
+### Bug Fixes
+
+* **TMRX-1594:** Video icon on new slices ([#3601](https://github.com/newsuk/times-components/issues/3601)) ([8b39ce6](https://github.com/newsuk/times-components/commit/8b39ce6bd7f1c4157bef3d93c185c5f925130301))
+
+
+
+
+
+# [1.120.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.119.0...@times-components/ts-newskit@1.120.0) (2023-10-23)
+
+
+### Features
+
+* **TMPZ-113:** created sidebar component ([#3605](https://github.com/newsuk/times-components/issues/3605)) ([289000e](https://github.com/newsuk/times-components/commit/289000e6c8a88948f33c0b03626ef2522ba5ce28))
+
+
+
+
+
+# [1.119.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.118.0...@times-components/ts-newskit@1.119.0) (2023-10-23)
+
+
+### Features
+
+* **TMRX-1557:** refactor content bucket 3 ([#3588](https://github.com/newsuk/times-components/issues/3588)) ([e801b53](https://github.com/newsuk/times-components/commit/e801b53844820385e5727155cca334ba84e79311))
+* **TMRX-1590:** refactor lead story slices ([#3604](https://github.com/newsuk/times-components/issues/3604)) ([41140a4](https://github.com/newsuk/times-components/commit/41140a40b857f1aced1035259a67bafa3e2d6032))
+
+
+
+
+
 # [1.118.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.117.1...@times-components/ts-newskit@1.118.0) (2023-10-19)
 
 

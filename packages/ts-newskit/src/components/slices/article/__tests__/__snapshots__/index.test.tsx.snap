@@ -6,7 +6,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
     class="css-niwyl0"
   >
     <div
-      class="css-1kwj960"
+      class="article-image css-1kwj960"
     >
       <picture
         class="css-l4lngz"
@@ -55,7 +55,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
           </span>
         </a>
         <div
-          class="css-lew009"
+          class="css-p44zak"
         >
           <hr
             aria-hidden="true"
@@ -80,7 +80,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
     class="css-1nw1nne"
   >
     <div
-      class="css-1kwj960"
+      class="article-image css-1kwj960"
     >
       <picture
         class="css-l4lngz"
@@ -129,7 +129,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
           </span>
         </a>
         <div
-          class="css-lew009"
+          class="css-p44zak"
         >
           <hr
             aria-hidden="true"

@@ -4,7 +4,6 @@ import {
   Block,
   Stack,
   TextBlock,
-  useBreakpointKey,
   Visible
 } from 'newskit';
 import React, { useEffect, useRef, useState } from 'react';
@@ -47,10 +46,8 @@ export const InArticleAudio = ({
   const [showStickyPlayer, setShowStickyPlayer] = useState<boolean>(false);
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const audioRef = useRef<HTMLDivElement>(null);
-  const breakpoint = useBreakpointKey();
 
   const pausedText = isPlayed ? 'Paused' : readyToPlayText;
-  const playButtonSize = breakpoint === 'xs' ? 'small' : 'medium';
 
   const handleClickPlayPause = () => {
     !isPlayed && setIsPlayed(true);
@@ -82,15 +79,29 @@ export const InArticleAudio = ({
   return (
     <AudioPlayerContainer
       ref={audioRef}
-      className={
+      className={[
+        'article-audio-container',
         showAudioPlayer ? 'opShow_articleAudio' : 'opHide_articleAudio'
-      }
+      ].join(' ')}
     >
       <AudioPlayerComposable src={src}>
         <Stack flow="horizontal-center" marginBlock="space040">
           <AudioPlayerPlayPauseButton
             onClick={handleClickPlayPause}
-            size={playButtonSize}
+            overrides={{
+              height: {
+                xs: 'sizing060',
+                sm: 'sizing080'
+              },
+              width: {
+                xs: 'sizing060',
+                sm: 'sizing080'
+              },
+              iconSize: {
+                xs: 'sizing040',
+                sm: 'sizing050'
+              }
+            }}
             data-testid={
               isPlaying ? 'audio-player-pause-btn' : 'audio-player-play-btn'
             }
@@ -102,7 +113,10 @@ export const InArticleAudio = ({
             >
               {isPlaying ? playingText : pausedText}
             </TextBlock>
-            <TextBlock typographyPreset="utilityBody010">
+            <TextBlock
+              typographyPreset="utilityBody010"
+              className="article-audio-narrator"
+            >
               {`Narrated by ${narrator}`}
             </TextBlock>
           </Block>
@@ -137,6 +151,7 @@ export const InArticleAudio = ({
                       headline,
                       narrator,
                       setIsExpanded,
+                      isPlaying,
                       handleClickPlayPause
                     }}
                   />

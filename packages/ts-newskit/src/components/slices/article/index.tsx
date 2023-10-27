@@ -43,6 +43,7 @@ export interface ArticleProps {
     href: string;
   };
   contentType?: string;
+  hasVideo: boolean;
   label?: string;
   expirableFlags?: expirableFlagsProps[];
   flag?: string;
@@ -58,10 +59,12 @@ export interface ArticleProps {
 
 export const Article = ({
   article,
-  clickHandler
+  clickHandler,
+  className
 }: {
   article: ArticleProps;
   clickHandler: ClickHandlerType;
+  className?: string;
 }) => {
   const {
     id,
@@ -80,7 +83,8 @@ export const Article = ({
     tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
     expirableFlags,
     label,
-    contentType
+    contentType,
+    hasVideo
   } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
@@ -132,15 +136,16 @@ export const Article = ({
       areas={
         imageRight
           ? `
-          border  border
-          content media`
+        border  border
+        content media`
           : `border
          media
          content
-        `
+      `
       }
       columns={{ xl: imageRight ? '1fr 1fr' : '1fr' }}
       columnGap="space040"
+      className={className}
     >
       {hasTopBorder && (
         <GridLayoutItem area="border">
@@ -161,10 +166,10 @@ export const Article = ({
       {showImage ? (
         isLeadImage ? (
           /* @ts-ignore */
-          <FullWidthCardMediaMob {...cardImage} />
+          <FullWidthCardMediaMob {...cardImage} className="article-image" />
         ) : (
           /* @ts-ignore */
-          <CardMedia {...cardImage} />
+          <CardMedia {...cardImage} className="article-image" />
         )
       ) : null}
       <CardContent alignContent="start">
@@ -182,6 +187,7 @@ export const Article = ({
           )}
 
         <ArticleTileInfo
+          hasVideo={hasVideo}
           contentType={contentType}
           expirableFlags={expirableFlags}
           label={label}

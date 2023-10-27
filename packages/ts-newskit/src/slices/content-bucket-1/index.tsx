@@ -9,13 +9,13 @@ import { ArticleProps } from '../../components/slices/article';
 import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
 
 import { CommentStack } from '../shared/comment-stack';
-import { ArticleStack } from './article-stack';
 import { CustomStackLayout } from '../shared';
 import {
   FullWidthBlock,
   FullWidthHidden
 } from '../../components/slices/shared-styles';
 import { ClickHandlerType } from '../types';
+import { ArticleStack } from '../shared/article-stack-cb';
 
 export interface ContentBucket1Props {
   leadArticle: LeadArticleProps;

@@ -23,6 +23,7 @@ export type ArticleProps = {
   flag?: string;
   standfirst?: string;
   contentType?: string;
+  hasVideo: boolean;
   label?: string;
   expirableFlags?: expirableFlagsProps[];
   images?: ImageProps;

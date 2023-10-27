@@ -3,7 +3,7 @@
 exports[`Audio player renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="opHide_articleAudio css-1i5p60e"
+    class="article-audio-container opHide_articleAudio css-1i5p60e"
   >
     <section
       aria-label="Audio Player"
@@ -20,13 +20,13 @@ exports[`Audio player renders correctly 1`] = `
           aria-label="Play"
           aria-live="polite"
           aria-pressed="false"
-          class="css-7ycgmb"
+          class="css-1cktvs"
           data-testid="audio-player-play-btn"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="css-mxa34f"
+            class="css-2gkv6s"
             fill="currentColor"
             viewBox="0 0 64 64"
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ exports[`Audio player renders correctly 1`] = `
             Listen to article
           </p>
           <p
-            class="css-90ibmi"
+            class="article-audio-narrator css-90ibmi"
           >
             Narrated by James Marriott
           </p>
@@ -60,7 +60,7 @@ exports[`Audio player renders correctly 1`] = `
 exports[`Audio player renders correctly when visible 1`] = `
 <DocumentFragment>
   <div
-    class="opShow_articleAudio css-1i5p60e"
+    class="article-audio-container opShow_articleAudio css-1i5p60e"
   >
     <section
       aria-label="Audio Player"
@@ -77,13 +77,13 @@ exports[`Audio player renders correctly when visible 1`] = `
           aria-label="Play"
           aria-live="polite"
           aria-pressed="false"
-          class="css-7ycgmb"
+          class="css-1cktvs"
           data-testid="audio-player-play-btn"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="css-mxa34f"
+            class="css-2gkv6s"
             fill="currentColor"
             viewBox="0 0 64 64"
             xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ exports[`Audio player renders correctly when visible 1`] = `
             Listen to article
           </p>
           <p
-            class="css-90ibmi"
+            class="article-audio-narrator css-90ibmi"
           >
             Narrated by James Marriott
           </p>

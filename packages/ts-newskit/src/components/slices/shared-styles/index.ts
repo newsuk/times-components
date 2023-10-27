@@ -51,6 +51,9 @@ export const TextLink = styled(LinkInline)`
 export const ContainerInline = styled(Block)`
   display: inline-block;
   ${getSizingCssFromTheme('height', 'sizing020')};
+  :last-child {
+    display: none;
+  }
 `;
 
 const setFullWidthMargin = (space: string) => ({ marginInline: `-${space}` });
@@ -58,7 +61,8 @@ export const FullWidthCardMediaMob = styled(CardMedia)<{
   ratio?: string;
   className?: string;
 }>`
-  height: ${({ className }) => (className ? 0 : '100%')};
+  height: ${({ className }) =>
+    className && className !== 'article-image' ? 0 : '100%'};
   overflow: hidden;
   position: relative;
   padding-bottom: ${({ ratio }) => (ratio ? `${100 / getRatio(ratio)}%;` : 0)};
@@ -101,9 +105,8 @@ export const StyledTextBlock = styled(TextBlock)`
 `;
 
 export const StyledBlock = styled(Block)<{ hasVideoIcon?: boolean }>`
-  display: ${({ hasVideoIcon }) => (hasVideoIcon ? 'flex' : 'inline-block')};
-  align-items: ${({ hasVideoIcon }) =>
-    hasVideoIcon ? 'last baseline' : 'initial'};
+  display: flex;
+  align-items: last baseline;
 `;
 
 export const Wrapper = styled.div`

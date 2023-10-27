@@ -3,6 +3,86 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.80.79](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.80.78...@times-components/article-main-standard@3.80.79) (2023-10-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.80.78](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.80.77...@times-components/article-main-standard@3.80.78) (2023-10-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.80.77](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.80.76...@times-components/article-main-standard@3.80.77) (2023-10-26)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.80.76](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.80.75...@times-components/article-main-standard@3.80.76) (2023-10-26)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.80.75](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.80.74...@times-components/article-main-standard@3.80.75) (2023-10-25)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.80.74](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.80.73...@times-components/article-main-standard@3.80.74) (2023-10-25)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.80.73](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.80.72...@times-components/article-main-standard@3.80.73) (2023-10-24)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.80.72](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.80.71...@times-components/article-main-standard@3.80.72) (2023-10-24)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.80.71](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.80.70...@times-components/article-main-standard@3.80.71) (2023-10-23)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.80.70](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.80.69...@times-components/article-main-standard@3.80.70) (2023-10-23)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [3.80.69](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.80.68...@times-components/article-main-standard@3.80.69) (2023-10-19)
 
 **Note:** Version bump only for package @times-components/article-main-standard
