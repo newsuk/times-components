@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.124.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.124.2...@times-components/ts-newskit@1.124.3) (2023-10-27)
+
+
+### Bug Fixes
+
+* **TMRX-000:** Add new video Icon SVG ([#3620](https://github.com/newsuk/times-components/issues/3620)) ([86d8e53](https://github.com/newsuk/times-components/commit/86d8e53dac9d9c9297ad62699ea239627647c072))
+* **TMRX-1607:** Secondary nav indicator jumping ([#3619](https://github.com/newsuk/times-components/issues/3619)) ([21c171b](https://github.com/newsuk/times-components/commit/21c171b00d57f0c77d14c83a37c403d8d0cdcfdf))
+
+
+
+
+
 ## [1.124.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.124.1...@times-components/ts-newskit@1.124.2) (2023-10-27)
 
 **Note:** Version bump only for package @times-components/ts-newskit
