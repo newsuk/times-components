@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.124.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.123.2...@times-components/ts-newskit@1.124.0) (2023-10-27)
+
+
+### Features
+
+* **TMPZ-195:** adjusted hero banner and subscribe banner ([#3612](https://github.com/newsuk/times-components/issues/3612)) ([34401c1](https://github.com/newsuk/times-components/commit/34401c192203488026dd9f21c660f8ee327f1266))
+
+
+
+
+
 ## [1.123.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.123.1...@times-components/ts-newskit@1.123.2) (2023-10-26)
 
 
