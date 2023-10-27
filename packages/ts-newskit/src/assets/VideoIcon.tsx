@@ -1,36 +1,18 @@
-import React, { SVGProps } from 'react';
-
-const VideoIcon = (props: SVGProps<SVGSVGElement>) => (
+import * as React from "react"
+const VideoIcon: React.FC = (props: any) => (
   <svg
-    width="18"
-    height="20"
-    viewBox="0 0 22 24"
-    fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
+    width={24}
+    height={24}
+    fill="none"
     {...props}
   >
-    <rect width="22" height="24" fill="url(#pattern0)" />
-    <defs>
-      <pattern
-        id="pattern0"
-        patternContentUnits="objectBoundingBox"
-        width="1"
-        height="1"
-      >
-        <use
-          xlinkHref="#image0_3031_245372"
-          transform="matrix(0.0454545 0 0 0.0416667 -0.0909091 0)"
-        />
-      </pattern>
-      <image
-        id="image0_3031_245372"
-        width="24"
-        height="24"
-        xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA90lEQVR4nN2UPQrCQBCFPwJJZeElvI5GkZSexc6ot/AXbD2Incaf9LaihZUrC5NGk+wmEYQ8eE0yM2+Znwd1hwcEwAqIgIcwkm+BxJRCD4gBZeAF6BYp7AATi8Lqg2PJNWJaorgShjZtURXpZxX3pJ9VBeKswQeGxF0BkX6awNqQ5AAD4GohsEgTOBmSEjSAIfDMidV38oW7pUCCFrDJiNW1fiKwzYi9pQkcLQWasu95LTqkCSx/OOTZX9bUBc4VDkyZDg1xxSrFX0AbA8o4qRKOsIAj1lv05aGtXSfwLWeiHaBDSbiyEdpb9G7rY9TcA3P5p2NqjDd1yyIEG3kosgAAAABJRU5ErkJggg=="
-      />
-    </defs>
+    <path
+      fill="#01000D"
+      fillRule="evenodd"
+      d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Zm4-10-6-3.75v7.5L16 12Z"
+      clipRule="evenodd"
+    />
   </svg>
-);
-
+)
 export default VideoIcon;
