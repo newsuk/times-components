@@ -17,6 +17,25 @@ export interface SliceHeaderProps {
   sliceHeaderClickHandler: (title: string) => void;
 }
 
+const SliceHeaderLinkWrapper = ({
+  href,
+  onClick,
+  children
+}: {
+  onClick: () => void;
+  href?: string;
+  children: React.ReactNode;
+}) => {
+  if (href) {
+    return (
+      <SliceHeaderLink href={href} onClick={onClick}>
+        {children}
+      </SliceHeaderLink>
+    );
+  }
+  return <>{children}</>;
+};
+
 export const SliceHeader = ({
   title,
   href,
@@ -36,7 +55,7 @@ export const SliceHeader = ({
         md: 'sliceHeaderPresetDesktop'
       }}
     >
-      <SliceHeaderLink
+      <SliceHeaderLinkWrapper
         href={href}
         onClick={() => sliceHeaderClickHandler(title)}
       >
@@ -71,7 +90,7 @@ export const SliceHeader = ({
             </IconButton>
           )}
         </SliceHeaderContainer>
-      </SliceHeaderLink>
+      </SliceHeaderLinkWrapper>
     </SliceHeaderWrapper>
   );
 };

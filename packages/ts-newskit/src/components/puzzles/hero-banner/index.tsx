@@ -11,7 +11,9 @@ import {
   StyledHeroBannerSuko,
   StyledHeroBannerWordPuzzle,
   StyledIconWrapper,
-  MainIconContainer
+  MainIconContainer,
+  StyledBlock,
+  StyledSpan
 } from './styles';
 import {
   NewsKitBoardAndCardGamesIcon,
@@ -77,86 +79,95 @@ export const HeroBanner: FC<HeroBannerProps> = ({
   const Icon = iconMapping[puzzleType];
 
   return (
-    <HeroBannerContainer paddingBlockStart="space100" paddingInline="space090">
-      <StyledStack
-        flow="horizontal-center"
-        stackDistribution="space-between"
-        marginBlockEnd="space080"
-        spaceInline={{ xl: 'space100', lg: 'space100' }}
-      >
-        <Block>
-          <TextBlock
-            as="h2"
-            typographyPreset={{
-              xs: 'editorialHeadline050',
-              md: 'editorialHeadline080'
-            }}
-            stylePreset="inkContrast"
-            marginBlockEnd="space080"
-          >
-            Play the Times {puzzleName}
-          </TextBlock>
-          <SyledUnorderedList
-            overrides={{
-              marker: {
-                size: 'iconSize005',
-                spaceInline: 'space020',
-                stylePreset: 'inkBase'
-              },
-              spaceStack: 'space040',
-              content: {
-                typographyPreset: 'editorialSubheadline020'
-              }
-            }}
-          >
-            {[
-              'Play thousands of puzzles and crosswords',
-              'Read up to 30 articles per month on The Times & Sunday Times',
-              'Just £1 for your first month, then £4.99 a month thereafter'
-            ]}
-          </SyledUnorderedList>
-          <Button
-            size="medium"
-            href="https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00"
-            overrides={{
-              stylePreset: 'freeTrialShadowBtn',
-              typographyPreset: 'utilityButton020',
-              paddingBlock: 'space030',
-              paddingInline: 'space040',
-              marginBlock: 'space045',
-              minWidth: {
-                xs: '100%',
-                sm: '227px'
-              },
-              height: 'sizing.sizing050'
-            }}
-          >
-            Subscribe
-          </Button>
-        </Block>
-        <StyledHeroIconContainer>
-          <StyledIconWrapper>
-            <NewsKitHeroBannerBackground className="iconBg" />
-            <StyledHeroBannerKillerSudoku />
-            <StyledHeroBannerQuintagram />
-            <StyledHeroBannerSuko />
-            <StyledHeroBannerWordPuzzle />
-          </StyledIconWrapper>
-          <MainIconContainer>
-            <Icon />
-          </MainIconContainer>
-        </StyledHeroIconContainer>
-      </StyledStack>
-      <StyledDivider />
+    <HeroBannerContainer
+      paddingBlockStart={{ xs: 'space090', md: 'space080', lg: 'space080' }}
+      paddingInline={{ xs: 'space045', md: 'space050', lg: 'space100' }}
+    >
+      <StyledBlock>
+        <StyledStack
+          flow={{ md: 'horizontal-top', lg: 'horizontal-center' }}
+          stackDistribution="space-between"
+          marginBlockEnd={{ xs: 'space070', md: 'space090', lg: 'space080' }}
+          // spaceInline={{ xl: 'space100', lg: 'space100' }}
+        >
+          <Block marginInlineEnd={{ md: 'space070' }}>
+            <TextBlock
+              as="h2"
+              typographyPreset={{
+                xs: 'editorialHeadline050',
+                md: 'editorialHeadline080'
+              }}
+              stylePreset="inkContrast"
+              marginBlockEnd={{ xs: 'space070', md: 'space060' }}
+              marginBlockStart={{ lg: 'space045' }}
+            >
+              <TextBlock as="span">Play the Times </TextBlock>{' '}
+              <StyledSpan as="span">{puzzleName}</StyledSpan>
+            </TextBlock>
+            <SyledUnorderedList
+              overrides={{
+                marker: {
+                  size: 'iconSize005',
+                  spaceInline: 'space020',
+                  stylePreset: 'inkDark010'
+                },
+                spaceStack: 'space050',
+                content: {
+                  typographyPreset: 'editorialSubheadline020',
+                  stylePreset: 'inkDark010'
+                }
+              }}
+            >
+              {[
+                'Just £1 for your first month, then £4.99 a month thereafter',
+                'Play thousands of puzzles and crosswords on our website',
+                'Read up to 30 articles per month on thetimes.co.uk'
+              ]}
+            </SyledUnorderedList>
+            <Button
+              size="medium"
+              href="https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00"
+              overrides={{
+                stylePreset: 'freeTrialShadowBtn',
+                typographyPreset: 'utilityButton020',
+                paddingBlock: 'space030',
+                paddingInline: 'space040',
+                marginBlockStart: 'space040',
+                minWidth: {
+                  xs: '100%',
+                  sm: '227px'
+                },
+                height: 'sizing.sizing050'
+              }}
+            >
+              Subscribe
+            </Button>
+          </Block>
+          <StyledHeroIconContainer>
+            <StyledIconWrapper>
+              <NewsKitHeroBannerBackground className="iconBg" />
+              <StyledHeroBannerKillerSudoku />
+              <StyledHeroBannerQuintagram />
+              <StyledHeroBannerSuko />
+              <StyledHeroBannerWordPuzzle />
+            </StyledIconWrapper>
+            <MainIconContainer>
+              <Icon />
+            </MainIconContainer>
+          </StyledHeroIconContainer>
+        </StyledStack>
+        <StyledDivider />
 
-      <StyledTextBlock
-        as="span"
-        typographyPreset="utilityBody020"
-        stylePreset="inkContrast"
-        marginBlock="space080"
-      >
-        Already a subscriber? <a href={loginUrl}>Log In</a>
-      </StyledTextBlock>
+        <StyledTextBlock
+          as="span"
+          typographyPreset="utilityBody020"
+          stylePreset="inkContrast"
+          marginBlockStart={{ xs: 'space070', sm: 'space060' }}
+          marginBlockEnd={{ xs: 'space090', sm: 'space100' }}
+        >
+          Already a subscriber? <a href={loginUrl}>Log In</a>
+        </StyledTextBlock>
+      </StyledBlock>
     </HeroBannerContainer>
   );
 };

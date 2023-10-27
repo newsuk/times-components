@@ -1,7 +1,7 @@
 import { Block, Stack, getColorCssFromTheme, styled } from 'newskit';
 
 export const SliceHeaderWrapper = styled(Block)`
-  &:hover {
+  & a:hover {
     cursor: pointer;
 
     h3 {
@@ -13,7 +13,7 @@ export const SliceHeaderWrapper = styled(Block)`
     }
   }
 
-  &:active {
+  & a:active {
     h3 {
       ${getColorCssFromTheme('color', 'interactiveLink030')};
     }
