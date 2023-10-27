@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.124.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.124.0...@times-components/ts-newskit@1.124.1) (2023-10-27)
+
+
+### Bug Fixes
+
+* **TMRX-1617:** only render as link if href is provided ([#3617](https://github.com/newsuk/times-components/issues/3617)) ([0ead694](https://github.com/newsuk/times-components/commit/0ead6944972f85c7e0b6c8c0b382039a661f7b4d))
+
+
+
+
+
 # [1.124.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.123.2...@times-components/ts-newskit@1.124.0) (2023-10-27)
 
 
