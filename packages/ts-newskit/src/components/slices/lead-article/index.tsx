@@ -4,13 +4,15 @@ import {
   CardContent,
   CardComposable,
   Divider,
-  MQ
+  MQ,
+  GridLayoutItem,
+  Image
 } from 'newskit';
 import React from 'react';
 import {
   CardHeadlineLink,
   StyledSpan,
-  FullWidthCardMob
+  FullWidthCardMediaMob
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
@@ -104,16 +106,6 @@ export const LeadArticle = ({
         images.crops.find(crop => crop.ratio === '3:2')
       : null;
 
-  const cardImage = images &&
-    imageWithCorrectRatio &&
-    imageWithCorrectRatio.url !== '' && {
-      media: {
-        src: `${imageWithCorrectRatio.url}&resize=750`,
-        alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio.ratio
-      }
-    };
-
   const hasImage =
     images &&
     images.crops &&
@@ -162,11 +154,21 @@ export const LeadArticle = ({
             marginBlockStart={imageMarginBlockStart}
             className="lead-image-container"
           >
-            <FullWidthCardMob
-              {...cardImage}
-              className="lcpItem"
-              ratio={imageWithCorrectRatio!.ratio}
-            />
+            <GridLayoutItem area="media">
+              <FullWidthCardMediaMob
+                href={url}
+                external={false}
+                onClick={onClick}
+              >
+                <Image
+                  src={`${imageWithCorrectRatio!.url}&resize=750`}
+                  alt={(images && images.alt) || headline}
+                  loadingAspectRatio={imageWithCorrectRatio!.ratio || '3:2'}
+                  loading="lazy"
+                  className="lcpItem"
+                />
+              </FullWidthCardMediaMob>
+            </GridLayoutItem>
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"
@@ -210,26 +212,27 @@ export const LeadArticle = ({
             typographyPreset: headlineTypography
           }}
           external={false}
-          expand={!tag}
           onClick={onClick}
         >
           {headline}
         </CardHeadlineLink>
         {shortSummary && (
-          <TextBlock
-            stylePreset={{
-              xs: 'inkSubtle',
-              md: 'inkBase'
-            }}
-            typographyPreset={{
-              xs: 'editorialParagraph020',
-              md: 'editorialParagraph010'
-            }}
-            marginBlockStart={textBlockMarginBlockStart}
-            as="p"
-          >
-            {shortSummary}
-          </TextBlock>
+          <CardHeadlineLink href={url} external={false} onClick={onClick}>
+            <TextBlock
+              stylePreset={{
+                xs: 'inkSubtle',
+                md: 'inkBase'
+              }}
+              typographyPreset={{
+                xs: 'editorialParagraph020',
+                md: 'editorialParagraph010'
+              }}
+              marginBlockStart={textBlockMarginBlockStart}
+              as="p"
+            >
+              {shortSummary}
+            </TextBlock>
+          </CardHeadlineLink>
         )}
         <TagAndFlag
           tag={tag}
