@@ -93,7 +93,8 @@ export const Article = ({
       getActiveArticleFlags(expirableFlags) &&
       expirableFlags.length > 0) ||
     label ||
-    contentType;
+    contentType ||
+    hasVideo;
 
   const cardImage = !hideImage &&
     imageWithCorrectRatio && {
@@ -186,14 +187,17 @@ export const Article = ({
             </TextBlock>
           )}
 
-        <ArticleTileInfo
-          hasVideo={hasVideo}
-          contentType={contentType}
-          expirableFlags={expirableFlags}
-          label={label}
-          marginBlockStart={marginBlockStart}
-        />
+        {hasArticleTileInfo && (
+          <ArticleTileInfo
+            hasVideo={hasVideo}
+            contentType={contentType}
+            expirableFlags={expirableFlags}
+            label={label}
+            marginBlockStart={marginBlockStart}
+          />
+        )}
         <CardHeadlineLink
+          className="article-headline"
           href={url}
           role="link"
           overrides={{
