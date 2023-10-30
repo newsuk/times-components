@@ -4,6 +4,7 @@ import { ContainerInline, StyledBlock } from '../shared-styles';
 import { LiveTag } from './live-tag';
 import { CustomTextBlock } from './customTextBlock';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
+import { NewsKitVideoButtonIcon as VideoIcon } from '../../../assets';
 
 export type expirableFlagsProps = {
   type: string;
@@ -46,9 +47,6 @@ export const ArticleTileInfo = ({
   const hasExpirableFlag =
     expirableFlags && getActiveArticleFlags(expirableFlags);
 
-  const hasVideoIcon = Boolean(
-    contentType && contentType.toUpperCase() === 'VIDEO'
-  );
   const isLiveTag =
     expirableFlags &&
     getActiveArticleFlags(expirableFlags) &&
@@ -62,10 +60,9 @@ export const ArticleTileInfo = ({
   return (
     <>
       <StyledBlock
+        className="article-info"
         marginBlockStart={marginBlockStart}
         marginBlockEnd={marginBlockEnd}
-        hasVideoIcon={hasVideoIcon}
-        className="article-info"
       >
         <>
           {isLiveTag &&
@@ -95,7 +92,11 @@ export const ArticleTileInfo = ({
           )}
           {hasVideo && (
             <TileWrapper>
-              <CustomTextBlock text="VIDEO" stylePreset="inkContrast" />
+              <CustomTextBlock
+                text="VIDEO"
+                stylePreset="inkContrast"
+                icon={<VideoIcon />}
+              />
             </TileWrapper>
           )}
           {label && (

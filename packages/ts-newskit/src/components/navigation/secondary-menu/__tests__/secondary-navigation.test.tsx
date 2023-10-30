@@ -38,7 +38,7 @@ describe('Secondary Menu', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should not highlight any titles when default index is not provided', () => {
+  it('should not highlight any titles when default index is not provided and slug is not found', () => {
     const { container } = render(
       <SecondaryNavigation
         data={[mainMenuItems[0], mainMenuItems[1]]}

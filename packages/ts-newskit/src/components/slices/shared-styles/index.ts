@@ -103,7 +103,7 @@ export const StyledTextBlock = styled(TextBlock)`
   border-radius: 2px;
 `;
 
-export const StyledBlock = styled(Block)<{ hasVideoIcon?: boolean }>`
+export const StyledBlock = styled(Block)`
   display: flex;
   align-items: last baseline;
 `;
