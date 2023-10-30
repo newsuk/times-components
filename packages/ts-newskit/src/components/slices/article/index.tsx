@@ -122,6 +122,15 @@ export const Article = ({
     />
   );
 
+  const image = (
+    <Image
+      src={`${imageWithCorrectRatio!.url}&resize=750`}
+      alt={(images && images.alt) || headline}
+      loadingAspectRatio={imageWithCorrectRatio!.ratio || '3:2'}
+      loading="lazy"
+    />
+  );
+
   return (
     <CardComposable
       alignContent="start"
@@ -156,39 +165,27 @@ export const Article = ({
         </GridLayoutItem>
       )}
       {showImage ? (
-        isLeadImage ? (
-          <GridLayoutItem area="media">
+        <GridLayoutItem area="media">
+          {isLeadImage ? (
             <FullWidthCardMediaMob
               href={url}
               external={false}
               onClick={onClick}
               className="article-image"
             >
-              <Image
-                src={`${imageWithCorrectRatio!.url}&resize=750`}
-                alt={(images && images.alt) || headline}
-                loadingAspectRatio={imageWithCorrectRatio!.ratio || '3:2'}
-                loading="lazy"
-              />
+              {image}
             </FullWidthCardMediaMob>
-          </GridLayoutItem>
-        ) : (
-          <GridLayoutItem area="media">
+          ) : (
             <CardHeadlineLink
               href={url}
               external={false}
               onClick={onClick}
               className="article-image"
             >
-              <Image
-                src={`${imageWithCorrectRatio!.url}&resize=750`}
-                alt={(images && images.alt) || headline}
-                loadingAspectRatio={imageWithCorrectRatio!.ratio || '3:2'}
-                loading="lazy"
-              />
+              {image}
             </CardHeadlineLink>
-          </GridLayoutItem>
-        )
+          )}
+        </GridLayoutItem>
       ) : null}
       <CardContent alignContent="start">
         {images &&
