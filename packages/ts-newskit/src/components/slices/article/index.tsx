@@ -187,14 +187,15 @@ export const Article = ({
             </TextBlock>
           )}
 
-        <ArticleTileInfo
-          className={hasArticleTileInfo ? 'article-info' : ''}
-          hasVideo={hasVideo}
-          contentType={contentType}
-          expirableFlags={expirableFlags}
-          label={label}
-          marginBlockStart={marginBlockStart}
-        />
+        {hasArticleTileInfo && (
+          <ArticleTileInfo
+            hasVideo={hasVideo}
+            contentType={contentType}
+            expirableFlags={expirableFlags}
+            label={label}
+            marginBlockStart={marginBlockStart}
+          />
+        )}
         <CardHeadlineLink
           className="article-headline"
           href={url}

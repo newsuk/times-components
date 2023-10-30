@@ -12,7 +12,6 @@ export type expirableFlagsProps = {
 };
 
 export interface ArticleTileInfoProps {
-  className?: string;
   expirableFlags?: expirableFlagsProps[];
   hasVideo: boolean;
   contentType?: string;
@@ -36,7 +35,6 @@ const TileWrapper = ({ children }: { children: React.ReactNode }) => (
 );
 
 export const ArticleTileInfo = ({
-  className = 'article-info',
   expirableFlags,
   contentType,
   hasVideo,
@@ -49,9 +47,6 @@ export const ArticleTileInfo = ({
   const hasExpirableFlag =
     expirableFlags && getActiveArticleFlags(expirableFlags);
 
-  const hasVideoIcon = Boolean(
-    contentType && contentType.toUpperCase() === 'VIDEO'
-  );
   const isLiveTag =
     expirableFlags &&
     getActiveArticleFlags(expirableFlags) &&
@@ -65,10 +60,9 @@ export const ArticleTileInfo = ({
   return (
     <>
       <StyledBlock
+        className="article-info"
         marginBlockStart={marginBlockStart}
         marginBlockEnd={marginBlockEnd}
-        hasVideoIcon={hasVideoIcon}
-        className={className}
       >
         <>
           {isLiveTag &&
