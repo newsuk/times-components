@@ -58,7 +58,7 @@ export const ArticleTileInfo = ({
   if (!hasTag && !hasExpirableFlag && !label) {
     return null;
   }
-  const capitalizedText = (text?: string) => text && text.toUpperCase();
+  // const capitalizedText = (text?: string) => text && text.toUpperCase();
 
   return (
     <>
@@ -73,9 +73,9 @@ export const ArticleTileInfo = ({
             expirableFlags && (
               <TileWrapper>
                 <LiveTag
-                  liveTag={capitalizedText(
+                  liveTag={
                     getActiveArticleFlags(expirableFlags)
-                  )}
+                  }
                 />
               </TileWrapper>
             )}
@@ -85,13 +85,13 @@ export const ArticleTileInfo = ({
               <TileWrapper>
                 <CustomTextBlock
                   stylePreset="expirableFlagPreset"
-                  text={capitalizedText(getActiveArticleFlags(expirableFlags))}
+                  text={getActiveArticleFlags(expirableFlags)}
                 />
               </TileWrapper>
             )}
           {contentType && (
             <TileWrapper>
-              <CustomTextBlock text={capitalizedText(contentType)} />
+              <CustomTextBlock text={contentType} />
             </TileWrapper>
           )}
           {hasVideo && (
@@ -105,7 +105,7 @@ export const ArticleTileInfo = ({
           )}
           {label && (
             <TileWrapper>
-              <CustomTextBlock text={capitalizedText(label)} />
+              <CustomTextBlock text={label} />
             </TileWrapper>
           )}
         </>
