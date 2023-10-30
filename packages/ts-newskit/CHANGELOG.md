@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.124.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.124.3...@times-components/ts-newskit@1.124.4) (2023-10-30)
+
+
+### Bug Fixes
+
+* **TMRX-1616:** Content bucket article stack headline margin ([#3621](https://github.com/newsuk/times-components/issues/3621)) ([0a67d80](https://github.com/newsuk/times-components/commit/0a67d80697ebffb8f58ba119cdc37d3714e0d106))
+
+
+
+
+
 ## [1.124.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.124.2...@times-components/ts-newskit@1.124.3) (2023-10-27)
 
 
