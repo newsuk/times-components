@@ -176,10 +176,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -220,10 +220,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -305,10 +305,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -349,10 +349,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -434,10 +434,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -478,10 +478,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -563,10 +563,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -607,10 +607,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -692,10 +692,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -736,10 +736,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -821,10 +821,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -865,10 +865,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -950,10 +950,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -994,10 +994,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -1079,10 +1079,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -1123,10 +1123,10 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -1289,10 +1289,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -1333,10 +1333,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -1418,10 +1418,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -1462,10 +1462,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -1547,10 +1547,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -1591,10 +1591,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -1676,10 +1676,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -1720,10 +1720,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -1805,10 +1805,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -1849,10 +1849,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -1934,10 +1934,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -1978,10 +1978,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -2063,10 +2063,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -2107,10 +2107,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span
@@ -2192,10 +2192,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
           data-test-id="single-card"
         >
           <div
-            class="css-kjwcwf"
+            class="css-1ba9oov"
           >
             <div
-              class="css-jwo9d7"
+              class="css-ax4h27"
             >
               <div
                 class="css-1kwj960"
@@ -2236,10 +2236,10 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 </picture>
               </div>
               <div
-                class="css-593iq0"
+                class="css-11mq3i1"
               >
                 <div
-                  class="css-7el6ft"
+                  class="css-1az3j4h"
                   data-testid="flag"
                 >
                   <span

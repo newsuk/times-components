@@ -3,7 +3,7 @@
 exports[`Flag test should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-7el6ft"
+    class="css-1az3j4h"
     data-testid="flag"
   >
     <span
@@ -18,7 +18,7 @@ exports[`Flag test should render a snapshot 1`] = `
 exports[`Flag test should render a snapshot with label in progress 1`] = `
 <DocumentFragment>
   <div
-    class="css-7el6ft"
+    class="css-1az3j4h"
     data-testid="flag"
   >
     <span
