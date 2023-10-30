@@ -36,7 +36,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     <div
                       class="css-gb5m6n"
                     >
-                      NEW
+                      New
                     </div>
                   </span>
                   <div
@@ -54,7 +54,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     <div
                       class="css-gb5m6n"
                     >
-                      PROFILE
+                      Profile
                     </div>
                   </span>
                   <div
@@ -153,7 +153,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     <div
                       class="css-gb5m6n"
                     >
-                      EXCLUSIVE
+                      Exclusive
                     </div>
                   </span>
                   <div
@@ -171,7 +171,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     <div
                       class="css-gb5m6n"
                     >
-                      REVIEW
+                      Review
                     </div>
                   </span>
                   <div
@@ -308,7 +308,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   <div
                     class="css-gb5m6n"
                   >
-                    NEW
+                    New
                   </div>
                 </span>
                 <div
@@ -326,7 +326,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   <div
                     class="css-gb5m6n"
                   >
-                    REVIEW
+                    Review
                   </div>
                 </span>
                 <div
@@ -454,7 +454,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   <div
                     class="css-gb5m6n"
                   >
-                    EXCLUSIVE
+                    Exclusive
                   </div>
                 </span>
                 <div
@@ -472,7 +472,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   <div
                     class="css-gb5m6n"
                   >
-                    INTERVIEW
+                    Interview
                   </div>
                 </span>
                 <div
@@ -582,7 +582,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     <div
                       class="css-gb5m6n"
                     >
-                      NEW
+                      New
                     </div>
                   </span>
                   <div
@@ -600,7 +600,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     <div
                       class="css-gb5m6n"
                     >
-                      PROFILE
+                      Profile
                     </div>
                   </span>
                   <div
@@ -699,7 +699,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     <div
                       class="css-gb5m6n"
                     >
-                      EXCLUSIVE
+                      Exclusive
                     </div>
                   </span>
                   <div
@@ -717,7 +717,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     <div
                       class="css-gb5m6n"
                     >
-                      REVIEW
+                      Review
                     </div>
                   </span>
                   <div
@@ -854,7 +854,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   <div
                     class="css-gb5m6n"
                   >
-                    NEW
+                    New
                   </div>
                 </span>
                 <div
@@ -872,7 +872,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   <div
                     class="css-gb5m6n"
                   >
-                    REVIEW
+                    Review
                   </div>
                 </span>
                 <div
@@ -1000,7 +1000,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   <div
                     class="css-gb5m6n"
                   >
-                    EXCLUSIVE
+                    Exclusive
                   </div>
                 </span>
                 <div
@@ -1018,7 +1018,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   <div
                     class="css-gb5m6n"
                   >
-                    INTERVIEW
+                    Interview
                   </div>
                 </span>
                 <div

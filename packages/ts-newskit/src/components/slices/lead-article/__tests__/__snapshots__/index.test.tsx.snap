@@ -66,7 +66,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           <div
             class="css-gb5m6n"
           >
-            INTERVIEW
+            Interview
           </div>
         </span>
         <div
@@ -84,7 +84,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           <div
             class="css-gb5m6n"
           >
-            MARTIN SAMUEL
+            Martin Samuel
           </div>
         </span>
         <div

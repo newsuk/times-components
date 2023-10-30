@@ -68,11 +68,7 @@ export const ArticleTileInfo = ({
           {isLiveTag &&
             expirableFlags && (
               <TileWrapper>
-                <LiveTag
-                  liveTag={
-                    getActiveArticleFlags(expirableFlags)
-                  }
-                />
+                <LiveTag liveTag={getActiveArticleFlags(expirableFlags)} />
               </TileWrapper>
             )}
           {!isLiveTag &&
