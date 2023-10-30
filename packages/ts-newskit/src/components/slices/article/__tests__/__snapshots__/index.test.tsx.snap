@@ -6,23 +6,32 @@ exports[`Render Article List Item items should render without margin 1`] = `
     class="css-niwyl0"
   >
     <div
-      class="article-image css-1kwj960"
+      class="css-id8srm"
     >
-      <picture
-        class="css-l4lngz"
+      <a
+        class="article-image css-10h0i3c"
+        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
       >
-        <img
-          alt="This is ALT Text"
-          class="css-ssxt4f"
-          loading="lazy"
-        />
-      </picture>
+        <span
+          class="css-17x5lw"
+        >
+          <picture
+            class="css-l4lngz"
+          >
+            <img
+              alt="This is ALT Text"
+              class="css-ssxt4f"
+              loading="lazy"
+            />
+          </picture>
+        </span>
+      </a>
     </div>
     <div
       class="css-17cghxi"
     >
       <a
-        class="css-1fgmei7"
+        class="css-bxykrz"
         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
         role="link"
       >
@@ -80,23 +89,32 @@ exports[`Render Article List Item should render a snapshot 1`] = `
     class="css-1nw1nne"
   >
     <div
-      class="article-image css-1kwj960"
+      class="css-id8srm"
     >
-      <picture
-        class="css-l4lngz"
+      <a
+        class="article-image css-10h0i3c"
+        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
       >
-        <img
-          alt="This is ALT Text"
-          class="css-ssxt4f"
-          loading="lazy"
-        />
-      </picture>
+        <span
+          class="css-17x5lw"
+        >
+          <picture
+            class="css-l4lngz"
+          >
+            <img
+              alt="This is ALT Text"
+              class="css-ssxt4f"
+              loading="lazy"
+            />
+          </picture>
+        </span>
+      </a>
     </div>
     <div
       class="css-17cghxi"
     >
       <a
-        class="css-14d0id"
+        class="css-u57k3c"
         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
         role="link"
       >

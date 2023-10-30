@@ -9,8 +9,8 @@ import {
 import React from 'react';
 import {
   CardHeadlineLink,
-  FullWidthCardMediaMob,
-  StyledSpan
+  StyledSpan,
+  FullWidthCardMob
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
@@ -162,7 +162,7 @@ export const LeadArticle = ({
             marginBlockStart={imageMarginBlockStart}
             className="lead-image-container"
           >
-            <FullWidthCardMediaMob
+            <FullWidthCardMob
               {...cardImage}
               className="lcpItem"
               ratio={imageWithCorrectRatio!.ratio}

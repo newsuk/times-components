@@ -4,14 +4,14 @@ import {
   CardContent,
   TextBlock,
   CardComposable,
-  CardMedia,
   GridLayoutItem,
-  MQ
+  MQ,
+  Image
 } from 'newskit';
 import {
   CardHeadlineLink,
-  FullWidthCardMediaMob,
-  FullWidthBlock
+  FullWidthBlock,
+  FullWidthCardMediaMob
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
@@ -96,16 +96,6 @@ export const Article = ({
     label ||
     contentType;
 
-  const cardImage = !hideImage &&
-    imageWithCorrectRatio && {
-      media: {
-        src: `${imageWithCorrectRatio.url}&resize=750`,
-        alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2',
-        loading: 'lazy'
-      }
-    };
-
   const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
     images &&
@@ -166,11 +156,37 @@ export const Article = ({
       )}
       {showImage ? (
         isLeadImage ? (
-          /* @ts-ignore */
-          <FullWidthCardMediaMob {...cardImage} className="article-image" />
+          <GridLayoutItem area="media">
+            <FullWidthCardMediaMob
+              href={url}
+              external={false}
+              onClick={onClick}
+              className="article-image"
+            >
+              <Image
+                src={`${imageWithCorrectRatio!.url}&resize=750`}
+                alt={(images && images.alt) || headline}
+                loadingAspectRatio={imageWithCorrectRatio!.ratio || '3:2'}
+                loading="lazy"
+              />
+            </FullWidthCardMediaMob>
+          </GridLayoutItem>
         ) : (
-          /* @ts-ignore */
-          <CardMedia {...cardImage} className="article-image" />
+          <GridLayoutItem area="media">
+            <CardHeadlineLink
+              href={url}
+              external={false}
+              onClick={onClick}
+              className="article-image"
+            >
+              <Image
+                src={`${imageWithCorrectRatio!.url}&resize=750`}
+                alt={(images && images.alt) || headline}
+                loadingAspectRatio={imageWithCorrectRatio!.ratio || '3:2'}
+                loading="lazy"
+              />
+            </CardHeadlineLink>
+          </GridLayoutItem>
         )
       ) : null}
       <CardContent alignContent="start">
@@ -201,7 +217,6 @@ export const Article = ({
             typographyPreset: titleTypographyPreset,
             marginBlockStart: hasArticleTileInfo ? 'space030' : marginBlockStart
           }}
-          expand
           external={false}
           onClick={onClick}
         >

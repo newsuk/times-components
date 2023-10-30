@@ -57,7 +57,27 @@ export const ContainerInline = styled(Block)`
 `;
 
 const setFullWidthMargin = (space: string) => ({ marginInline: `-${space}` });
-export const FullWidthCardMediaMob = styled(CardMedia)<{
+export const FullWidthCardMediaMob = styled(CardLink)<{
+  ratio?: string;
+  className?: string;
+}>`
+  height: ${({ className }) =>
+    className && className !== 'article-image' ? 0 : '100%'};
+  overflow: hidden;
+  position: relative;
+  padding-bottom: ${({ ratio }) => (ratio ? `${100 / getRatio(ratio)}%;` : 0)};
+  img: {
+    opacity: 1,
+    zIndex: 2,
+    position: absolute,
+    display: block
+  }
+  ${getMediaQueryFromTheme('xs', 'md')} {
+    ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
+  }
+`;
+
+export const FullWidthCardMob = styled(CardMedia)<{
   ratio?: string;
   className?: string;
 }>`
