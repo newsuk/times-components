@@ -34,13 +34,6 @@ export const PuzzleCard = ({
     <PuzzleCardComposable
       key={data.id}
       overrides={{
-        minHeight: {
-          xs: '186.67px',
-          sm: '201.33px',
-          md: '186.67px',
-          lg: '211.33px',
-          xl: '261.33px'
-        },
         height: '100%',
         stylePreset: 'puzzleCard'
       }}

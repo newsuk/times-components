@@ -15,7 +15,7 @@ export const PuzzlesFlag: FC<FlagProps> = ({ status }) => {
     <Flag
       size="small"
       overrides={{
-        minWidth: '92px',
+        minWidth: '104px',
         stylePreset: `${FlagStatuses.get(status)!.stylePreset}`
       }}
     >
