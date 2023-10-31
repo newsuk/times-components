@@ -301,7 +301,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-id8srm"
               >
                 <a
-                  class="css-ru7h4a"
+                  class="lead-article-image css-orabsr"
                   href="https://www.thetimes.co.uk"
                 >
                   <span
@@ -465,7 +465,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-id8srm"
               >
                 <a
-                  class="css-ru7h4a"
+                  class="lead-article-image css-orabsr"
                   href="https://www.thetimes.co.uk"
                 >
                   <span
@@ -901,7 +901,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-id8srm"
               >
                 <a
-                  class="css-ru7h4a"
+                  class="lead-article-image css-orabsr"
                   href="https://www.thetimes.co.uk"
                 >
                   <span
@@ -1065,7 +1065,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-id8srm"
               >
                 <a
-                  class="css-ru7h4a"
+                  class="lead-article-image css-orabsr"
                   href="https://www.thetimes.co.uk"
                 >
                   <span

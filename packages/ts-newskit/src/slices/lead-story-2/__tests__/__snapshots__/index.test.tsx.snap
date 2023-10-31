@@ -32,7 +32,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                   class="css-id8srm"
                 >
                   <a
-                    class="css-ru7h4a"
+                    class="lead-article-image css-orabsr"
                     href="https://www.thetimes.co.uk"
                   >
                     <span
@@ -207,7 +207,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                   class="css-id8srm"
                 >
                   <a
-                    class="css-ru7h4a"
+                    class="lead-article-image css-orabsr"
                     href="https://www.thetimes.co.uk"
                   >
                     <span
@@ -664,7 +664,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                         class="css-id8srm"
                       >
                         <a
-                          class="css-ru7h4a"
+                          class="lead-article-image css-orabsr"
                           href="https://www.thetimes.co.uk"
                         >
                           <span
@@ -828,7 +828,7 @@ exports[`Render Lead Story 2 Slice Slice matches snapshot 1`] = `
                         class="css-id8srm"
                       >
                         <a
-                          class="css-ru7h4a"
+                          class="lead-article-image css-orabsr"
                           href="https://www.thetimes.co.uk"
                         >
                           <span
@@ -9355,7 +9355,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-id8srm"
                 >
                   <a
-                    class="css-ru7h4a"
+                    class="lead-article-image css-orabsr"
                     href="https://www.thetimes.co.uk"
                   >
                     <span
@@ -9530,7 +9530,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-id8srm"
                 >
                   <a
-                    class="css-ru7h4a"
+                    class="lead-article-image css-orabsr"
                     href="https://www.thetimes.co.uk"
                   >
                     <span
@@ -9987,7 +9987,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                         class="css-id8srm"
                       >
                         <a
-                          class="css-ru7h4a"
+                          class="lead-article-image css-orabsr"
                           href="https://www.thetimes.co.uk"
                         >
                           <span
@@ -10151,7 +10151,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                         class="css-id8srm"
                       >
                         <a
-                          class="css-ru7h4a"
+                          class="lead-article-image css-orabsr"
                           href="https://www.thetimes.co.uk"
                         >
                           <span
@@ -18678,7 +18678,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-id8srm"
                 >
                   <a
-                    class="css-ru7h4a"
+                    class="lead-article-image css-orabsr"
                     href="https://www.thetimes.co.uk"
                   >
                     <span
@@ -18853,7 +18853,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-id8srm"
                 >
                   <a
-                    class="css-ru7h4a"
+                    class="lead-article-image css-orabsr"
                     href="https://www.thetimes.co.uk"
                   >
                     <span
@@ -19310,7 +19310,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                         class="css-id8srm"
                       >
                         <a
-                          class="css-ru7h4a"
+                          class="lead-article-image css-orabsr"
                           href="https://www.thetimes.co.uk"
                         >
                           <span
@@ -19474,7 +19474,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                         class="css-id8srm"
                       >
                         <a
-                          class="css-ru7h4a"
+                          class="lead-article-image css-orabsr"
                           href="https://www.thetimes.co.uk"
                         >
                           <span
@@ -28001,7 +28001,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-id8srm"
                 >
                   <a
-                    class="css-ru7h4a"
+                    class="lead-article-image css-orabsr"
                     href="https://www.thetimes.co.uk"
                   >
                     <span
@@ -28176,7 +28176,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                   class="css-id8srm"
                 >
                   <a
-                    class="css-ru7h4a"
+                    class="lead-article-image css-orabsr"
                     href="https://www.thetimes.co.uk"
                   >
                     <span
@@ -28633,7 +28633,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                         class="css-id8srm"
                       >
                         <a
-                          class="css-ru7h4a"
+                          class="lead-article-image css-orabsr"
                           href="https://www.thetimes.co.uk"
                         >
                           <span
@@ -28797,7 +28797,7 @@ exports[`Render Lead Story 2 Slice modifies articles correctly when breakpointKe
                         class="css-id8srm"
                       >
                         <a
-                          class="css-ru7h4a"
+                          class="lead-article-image css-orabsr"
                           href="https://www.thetimes.co.uk"
                         >
                           <span
