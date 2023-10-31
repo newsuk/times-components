@@ -28,7 +28,7 @@ export interface LeadStory1Props {
   };
   smallArticles: ArticleProps[];
   singleArticle: ArticleProps;
-  articlesWithListItems: LeadArticleProps;
+  singleLeadArticle: LeadArticleProps;
   clickHandler: ClickHandlerType;
 }
 
@@ -38,11 +38,11 @@ export const LeadStory1 = ({
   groupedArticles,
   smallArticles,
   singleArticle,
-  articlesWithListItems,
+  singleLeadArticle,
   clickHandler
 }: LeadStory1Props) => {
   const modifiedArticlesWithUnorderedList = {
-    ...articlesWithListItems,
+    ...singleLeadArticle,
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
     headlineTypographyPreset: {
@@ -72,12 +72,6 @@ export const LeadStory1 = ({
     }
   };
 
-  const marginTop = singleArticle
-    ? 'space040'
-    : !!articlesWithListItems.listData
-      ? 'space020'
-      : 'space040';
-
   return (
     <LeadStoryContainer>
       <StackItem
@@ -106,10 +100,7 @@ export const LeadStory1 = ({
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
-                  marginBlockStart: !!articlesWithListItems.listData
-                    ? 'space020'
-                    : 'space040',
-                  marginBlockEnd: 'space040'
+                  marginBlock: 'space040'
                 }}
               />
             </FullWidthBlock>
@@ -130,8 +121,7 @@ export const LeadStory1 = ({
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
-                  marginBlockStart: marginTop,
-                  marginBlockEnd: 'space040'
+                  marginBlock: 'space040'
                 }}
               />
             </FullWidthBlock>

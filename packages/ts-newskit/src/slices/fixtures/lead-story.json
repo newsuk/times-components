@@ -48,8 +48,7 @@
       "label": "Tag",
       "href": "/"
     },
-    "flag": "4 minutes read",
-    "listData": []
+    "flag": "4 minutes read"
   },
   "articles": [
     {
@@ -303,11 +302,10 @@
       "flag": "Flag5"
     }
   ],
-  "articlesWithListItems": {
+  "singleLeadArticle": {
     "hasVideo": false,
     "label": "",
-    "expirableFlags": [
-    ],
+    "expirableFlags": [],
     "images": {
       "alt": "",
       "credits": "Gareth Fuller/Press Association",
@@ -347,14 +345,7 @@
       "href": "/"
     },
     "flag": "Flag",
-    "url": "#",
-    "listData": [
-      {
-        "label": "Unordered list item",
-        "href": "/",
-        "id": "19127"
-      }
-    ]
+    "url": "#"
   },
   "singleArticle": {
     "hasVideo": false,
@@ -456,8 +447,7 @@
           "label": "",
           "href": ""
         },
-        "flag": "",
-        "listData": []
+        "flag": ""
       },
       {
         "hasVideo": false,
@@ -508,8 +498,7 @@
           "label": "",
           "href": ""
         },
-        "flag": "",
-        "listData": []
+        "flag": ""
       }
     ]
   },
@@ -665,8 +654,7 @@
         "label": "Tag",
         "href": "/"
       },
-      "flag": "4 min read",
-      "listData": []
+      "flag": "4 min read"
     },
     {
       "hasVideo": false,
@@ -717,8 +705,7 @@
         "label": "Tag",
         "href": "/"
       },
-      "flag": "4 min read",
-      "listData": []
+      "flag": "4 min read"
     }
   ],
   "horizontalArticles": [
@@ -771,8 +758,7 @@
         "label": "Tag",
         "href": "/"
       },
-      "flag": "4 min read",
-      "listData": []
+      "flag": "4 min read"
     },
     {
       "hasVideo": false,
@@ -823,8 +809,7 @@
         "label": "Tag",
         "href": "/"
       },
-      "flag": "4 min read",
-      "listData": []
+      "flag": "4 min read"
     }
   ]
 }

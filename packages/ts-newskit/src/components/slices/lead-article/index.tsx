@@ -13,7 +13,6 @@ import {
   StyledSpan
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
-import { UnorderedListItems } from './unorderedList';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
 import {
@@ -24,11 +23,6 @@ import {
 type ImageCrops = {
   url?: string;
   ratio?: string;
-};
-type ListData = {
-  label: string;
-  href: string;
-  id: string;
 };
 
 type ImageProps = {
@@ -61,7 +55,6 @@ export interface LeadArticleProps {
   imageMarginBlockStart?: string;
   textBlockMarginBlockStart?: MQ<string> | string;
   tagAndFlagMarginBlockStart?: MQ<string> | string;
-  listData?: ListData[];
   hideImage?: boolean;
 }
 
@@ -93,7 +86,6 @@ export const LeadArticle = ({
     imageMarginBlockStart = 'space000',
     textBlockMarginBlockStart = 'space040',
     tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
-    listData,
     hideImage,
     expirableFlags,
     label
@@ -236,7 +228,6 @@ export const LeadArticle = ({
           flag={flag}
           marginBlockStart={tagAndFlagMarginBlockStart}
         />
-        <UnorderedListItems listData={listData} clickHandler={clickHandler} />
       </CardContent>
     </CardComposable>
   );

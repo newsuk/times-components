@@ -301,8 +301,7 @@
         "label": "Tag",
         "href": "/"
       },
-      "flag": "4 min read 1",
-      "listData": []
+      "flag": "4 min read 1"
     },
     {
       "hasVideo": false,
@@ -353,8 +352,7 @@
         "label": "Tag",
         "href": "/"
       },
-      "flag": "4 min read 2",
-      "listData": []
+      "flag": "4 min read 2"
     },
     {
       "hasVideo": false,
@@ -405,8 +403,7 @@
         "label": "Tag",
         "href": "/"
       },
-      "flag": "4 min read 3",
-      "listData": []
+      "flag": "4 min read 3"
     }
   ],
   "leadArticle": {
@@ -458,7 +455,6 @@
       "label": "Tag",
       "href": "/"
     },
-    "flag": "4 min read 1",
-    "listData": []
+    "flag": "4 min read 1"
   }
 }

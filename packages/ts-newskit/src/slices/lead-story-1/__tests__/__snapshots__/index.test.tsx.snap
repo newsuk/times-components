@@ -99,58 +99,6 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 Flag
               </span>
             </div>
-            <ul
-              class="css-a5fiw2"
-              role="list"
-            >
-              <li
-                class="css-czt13m"
-              >
-                <div
-                  class="css-16r6s3u"
-                >
-                  <div
-                    aria-hidden="true"
-                    class="css-wmopxz"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                      />
-                    </svg>
-                  </div>
-                  <p
-                    class="css-xg8lki"
-                  >
-                    <a
-                      class="css-1ks9f1u"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-1wc2zh5"
-                        >
-                          Unordered list item
-                        </span>
-                      </span>
-                    </a>
-                  </p>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
         <div
@@ -161,7 +109,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-kl9q1a"
+              class="css-1ft1o8k"
               data-testid="divider"
             />
           </div>
@@ -234,7 +182,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
         >
           <hr
             aria-hidden="true"
-            class="css-50mb7z"
+            class="css-1ft1o8k"
             data-testid="divider"
           />
         </div>
@@ -8737,7 +8685,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWithListItems\` are passed 1`] = `
+exports[`Render Lead Story 1 Slice modifies articles correctly when \`singleLeadArticle\` are passed 1`] = `
 <DocumentFragment>
   <div
     style="max-width: 1024px;"
@@ -8836,58 +8784,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                 Flag
               </span>
             </div>
-            <ul
-              class="css-a5fiw2"
-              role="list"
-            >
-              <li
-                class="css-czt13m"
-              >
-                <div
-                  class="css-16r6s3u"
-                >
-                  <div
-                    aria-hidden="true"
-                    class="css-wmopxz"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                      />
-                    </svg>
-                  </div>
-                  <p
-                    class="css-xg8lki"
-                  >
-                    <a
-                      class="css-1ks9f1u"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-1wc2zh5"
-                        >
-                          Unordered list item
-                        </span>
-                      </span>
-                    </a>
-                  </p>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
         <div
@@ -8898,7 +8794,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
           >
             <hr
               aria-hidden="true"
-              class="css-kl9q1a"
+              class="css-1ft1o8k"
               data-testid="divider"
             />
           </div>
@@ -8971,7 +8867,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
         >
           <hr
             aria-hidden="true"
-            class="css-50mb7z"
+            class="css-1ft1o8k"
             data-testid="divider"
           />
         </div>
@@ -17573,58 +17469,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 Flag
               </span>
             </div>
-            <ul
-              class="css-a5fiw2"
-              role="list"
-            >
-              <li
-                class="css-czt13m"
-              >
-                <div
-                  class="css-16r6s3u"
-                >
-                  <div
-                    aria-hidden="true"
-                    class="css-wmopxz"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                      />
-                    </svg>
-                  </div>
-                  <p
-                    class="css-xg8lki"
-                  >
-                    <a
-                      class="css-1ks9f1u"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-1wc2zh5"
-                        >
-                          Unordered list item
-                        </span>
-                      </span>
-                    </a>
-                  </p>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
         <div
@@ -17635,7 +17479,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-kl9q1a"
+              class="css-1ft1o8k"
               data-testid="divider"
             />
           </div>
@@ -17708,7 +17552,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-50mb7z"
+            class="css-1ft1o8k"
             data-testid="divider"
           />
         </div>
@@ -26310,58 +26154,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 Flag
               </span>
             </div>
-            <ul
-              class="css-a5fiw2"
-              role="list"
-            >
-              <li
-                class="css-czt13m"
-              >
-                <div
-                  class="css-16r6s3u"
-                >
-                  <div
-                    aria-hidden="true"
-                    class="css-wmopxz"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                      />
-                    </svg>
-                  </div>
-                  <p
-                    class="css-xg8lki"
-                  >
-                    <a
-                      class="css-1ks9f1u"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-1wc2zh5"
-                        >
-                          Unordered list item
-                        </span>
-                      </span>
-                    </a>
-                  </p>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
         <div
@@ -26372,7 +26164,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-kl9q1a"
+              class="css-1ft1o8k"
               data-testid="divider"
             />
           </div>
@@ -26445,7 +26237,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-50mb7z"
+            class="css-1ft1o8k"
             data-testid="divider"
           />
         </div>
@@ -35047,58 +34839,6 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 Flag
               </span>
             </div>
-            <ul
-              class="css-a5fiw2"
-              role="list"
-            >
-              <li
-                class="css-czt13m"
-              >
-                <div
-                  class="css-16r6s3u"
-                >
-                  <div
-                    aria-hidden="true"
-                    class="css-wmopxz"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="css-z5ltm7-EmotionIconBase ex0cdmw0"
-                      fill="currentColor"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0 0h24v24H0z"
-                        fill="none"
-                      />
-                      <path
-                        d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"
-                      />
-                    </svg>
-                  </div>
-                  <p
-                    class="css-xg8lki"
-                  >
-                    <a
-                      class="css-1ks9f1u"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-1wc2zh5"
-                        >
-                          Unordered list item
-                        </span>
-                      </span>
-                    </a>
-                  </p>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
         <div
@@ -35109,7 +34849,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
           >
             <hr
               aria-hidden="true"
-              class="css-kl9q1a"
+              class="css-1ft1o8k"
               data-testid="divider"
             />
           </div>
@@ -35182,7 +34922,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
         >
           <hr
             aria-hidden="true"
-            class="css-50mb7z"
+            class="css-1ft1o8k"
             data-testid="divider"
           />
         </div>

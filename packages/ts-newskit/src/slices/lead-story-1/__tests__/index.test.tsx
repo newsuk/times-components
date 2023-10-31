@@ -37,7 +37,7 @@ describe('Render Lead Story 1 Slice', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
-  test('modifies articles correctly when `articlesWithListItems` are passed', () => {
+  test('modifies articles correctly when `singleLeadArticle` are passed', () => {
     const { asFragment } = renderComponent(
       <LeadStory1 {...defaultProps} />,
       'lg'
