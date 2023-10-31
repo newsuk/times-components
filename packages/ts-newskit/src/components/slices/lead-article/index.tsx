@@ -163,7 +163,7 @@ export const LeadArticle = ({
                 <Image
                   src={`${imageWithCorrectRatio!.url}&resize=750`}
                   alt={(images && images.alt) || headline}
-                  loadingAspectRatio={imageWithCorrectRatio!.ratio || '3:2'}
+                  loadingAspectRatio={imageWithCorrectRatio!.ratio}
                   className="lcpItem"
                 />
               </FullWidthCardMediaMob>
