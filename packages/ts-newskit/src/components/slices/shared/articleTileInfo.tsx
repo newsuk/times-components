@@ -47,9 +47,6 @@ export const ArticleTileInfo = ({
   const hasExpirableFlag =
     expirableFlags && getActiveArticleFlags(expirableFlags);
 
-  const hasVideoIcon = Boolean(
-    contentType && contentType.toUpperCase() === 'VIDEO'
-  );
   const isLiveTag =
     expirableFlags &&
     getActiveArticleFlags(expirableFlags) &&
@@ -63,10 +60,9 @@ export const ArticleTileInfo = ({
   return (
     <>
       <StyledBlock
+        className="article-info"
         marginBlockStart={marginBlockStart}
         marginBlockEnd={marginBlockEnd}
-        hasVideoIcon={hasVideoIcon}
-        className="article-info"
       >
         <>
           {isLiveTag &&
