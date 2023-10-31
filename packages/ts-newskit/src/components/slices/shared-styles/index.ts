@@ -71,6 +71,9 @@ export const FullWidthCardMediaMob = styled(CardLink)<{
     position: absolute,
     display: block
   }
+  span {
+    height: unset;
+  }
   ${getMediaQueryFromTheme('xs', 'md')} {
     ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
   }

@@ -159,6 +159,8 @@ export const LeadArticle = ({
                 href={url}
                 external={false}
                 onClick={onClick}
+                ratio={imageWithCorrectRatio!.ratio}
+                className="lead-article-image"
               >
                 <Image
                   src={`${imageWithCorrectRatio!.url}&resize=750`}
