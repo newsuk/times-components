@@ -171,6 +171,7 @@ export const Article = ({
               href={url}
               external={false}
               onClick={onClick}
+              aria-label="article-lead-image"
               className="article-image"
             >
               {image}
