@@ -104,7 +104,7 @@ export const LeadArticle = ({
     images && images.crops
       ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
         images.crops.find(crop => crop.ratio === '3:2')
-      : null;
+      : undefined;
 
   const hasImage =
     images &&
@@ -163,9 +163,14 @@ export const LeadArticle = ({
                 className="lead-article-image"
               >
                 <Image
-                  src={`${imageWithCorrectRatio!.url}&resize=750`}
+                  src={
+                    imageWithCorrectRatio &&
+                    `${imageWithCorrectRatio.url}&resize=750`
+                  }
                   alt={(images && images.alt) || headline}
-                  loadingAspectRatio={imageWithCorrectRatio!.ratio}
+                  loadingAspectRatio={
+                    imageWithCorrectRatio && imageWithCorrectRatio.ratio
+                  }
                   className="lcpItem"
                 />
               </FullWidthCardMediaMob>

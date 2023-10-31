@@ -124,9 +124,11 @@ export const Article = ({
 
   const image = (
     <Image
-      src={`${imageWithCorrectRatio!.url}&resize=750`}
+      src={imageWithCorrectRatio && `${imageWithCorrectRatio.url}&resize=750`}
       alt={(images && images.alt) || headline}
-      loadingAspectRatio={imageWithCorrectRatio!.ratio || '3:2'}
+      loadingAspectRatio={
+        imageWithCorrectRatio ? imageWithCorrectRatio.ratio : '3:2'
+      }
       loading="lazy"
     />
   );
