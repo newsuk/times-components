@@ -53,7 +53,7 @@ export const SecondaryNavigation = ({
   };
 
   return (
-    <SecondaryNavContainer topDesktop={stickyTopDesktop} topMobile={stickyTop}>
+    <SecondaryNavContainer topDesktop={stickyTopDesktop} topMobile={stickyTop && stickyTop - 0.5}>
       <Visible sm xs>
         <SecondaryNavMobile
           data={data}
