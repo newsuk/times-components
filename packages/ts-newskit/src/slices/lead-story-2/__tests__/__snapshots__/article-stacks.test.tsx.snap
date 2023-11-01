@@ -298,7 +298,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="lead-image-container css-j6pksw"
             >
               <div
-                class="lead-article-image css-pjgzu9"
+                class="lead-article-image css-1pedwx4"
               >
                 <a
                   class="article-image"
@@ -458,7 +458,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="lead-image-container css-j6pksw"
             >
               <div
-                class="lead-article-image css-pjgzu9"
+                class="lead-article-image css-1pedwx4"
               >
                 <a
                   class="article-image"
@@ -890,7 +890,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="lead-image-container css-j6pksw"
             >
               <div
-                class="lead-article-image css-pjgzu9"
+                class="lead-article-image css-1pedwx4"
               >
                 <a
                   class="article-image"
@@ -1050,7 +1050,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="lead-image-container css-j6pksw"
             >
               <div
-                class="lead-article-image css-pjgzu9"
+                class="lead-article-image css-1pedwx4"
               >
                 <a
                   class="article-image"
