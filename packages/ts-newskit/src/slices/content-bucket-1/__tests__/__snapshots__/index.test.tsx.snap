@@ -24,20 +24,25 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="lead-image-container css-j6pksw"
               >
                 <div
-                  class="lcpItem css-6zwx7l"
+                  class="lead-article-image css-1pedwx4"
                 >
-                  <picture
-                    class="css-zp0elg"
+                  <a
+                    class="article-image"
+                    href="https://www.thetimes.co.uk"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
-                    <img
-                      alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
-                    />
-                  </picture>
+                    <picture
+                      class="css-zp0elg"
+                    >
+                      <div
+                        class="css-5pczz7"
+                      />
+                      <img
+                        alt="Sarcacens an inclusive club? They didnt look out for me"
+                        class="lcpItem css-1qgqq71"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <p
                   class="css-1c5i4sy"
@@ -121,11 +126,20 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     </span>
                   </span>
                 </a>
-                <p
-                  class="css-7ljupj"
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
-                  160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
-                </p>
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <p
+                      class="css-7ljupj"
+                    >
+                      160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                    </p>
+                  </span>
+                </a>
                 <div
                   class="css-13s74dp"
                   data-testid="tag-and-flag"
@@ -177,20 +191,25 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="lead-image-container css-1vuk75f"
               >
                 <div
-                  class="lcpItem css-6zwx7l"
+                  class="lead-article-image css-1pedwx4"
                 >
-                  <picture
-                    class="css-zp0elg"
+                  <a
+                    class="article-image"
+                    href="https://www.thetimes.co.uk"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
-                    <img
-                      alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
-                    />
-                  </picture>
+                    <picture
+                      class="css-zp0elg"
+                    >
+                      <div
+                        class="css-5pczz7"
+                      />
+                      <img
+                        alt="Sarcacens an inclusive club? They didnt look out for me"
+                        class="lcpItem css-1qgqq71"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <p
                   class="css-1c5i4sy"
@@ -279,11 +298,20 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     </span>
                   </span>
                 </a>
-                <p
-                  class="css-lp9m77"
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
-                  160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
-                </p>
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <p
+                      class="css-lp9m77"
+                    >
+                      160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                    </p>
+                  </span>
+                </a>
                 <div
                   class="css-1kfs2jd"
                   data-testid="tag-and-flag"
@@ -509,17 +537,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     class="css-1nw1nne"
                   >
                     <div
-                      class="article-image css-1kwj960"
+                      class="article-image css-id8srm"
                     >
-                      <picture
-                        class="css-l4lngz"
+                      <a
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                       >
-                        <img
-                          alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-ssxt4f"
-                          loading="lazy"
-                        />
-                      </picture>
+                        <picture
+                          class="css-l4lngz"
+                        >
+                          <img
+                            alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
+                            class="css-ssxt4f"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
                     </div>
                     <div
                       class="css-17cghxi"
@@ -601,17 +633,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       />
                     </div>
                     <div
-                      class="article-image css-1kwj960"
+                      class="article-image css-id8srm"
                     >
-                      <picture
-                        class="css-l4lngz"
+                      <a
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                       >
-                        <img
-                          alt="‘American owners pose threat to English pyramid’"
-                          class="css-ssxt4f"
-                          loading="lazy"
-                        />
-                      </picture>
+                        <picture
+                          class="css-l4lngz"
+                        >
+                          <img
+                            alt="‘American owners pose threat to English pyramid’"
+                            class="css-ssxt4f"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
                     </div>
                     <div
                       class="css-17cghxi"
@@ -693,17 +729,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       />
                     </div>
                     <div
-                      class="article-image css-1kwj960"
+                      class="article-image css-id8srm"
                     >
-                      <picture
-                        class="css-l4lngz"
+                      <a
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                       >
-                        <img
-                          alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-ssxt4f"
-                          loading="lazy"
-                        />
-                      </picture>
+                        <picture
+                          class="css-l4lngz"
+                        >
+                          <img
+                            alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
+                            class="css-ssxt4f"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
                     </div>
                     <div
                       class="css-17cghxi"
@@ -785,17 +825,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       />
                     </div>
                     <div
-                      class="article-image css-1kwj960"
+                      class="article-image css-id8srm"
                     >
-                      <picture
-                        class="css-l4lngz"
+                      <a
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                       >
-                        <img
-                          alt="Blow for rebel clubs as court says Uefa can block Super League"
-                          class="css-ssxt4f"
-                          loading="lazy"
-                        />
-                      </picture>
+                        <picture
+                          class="css-l4lngz"
+                        >
+                          <img
+                            alt="Blow for rebel clubs as court says Uefa can block Super League"
+                            class="css-ssxt4f"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
                     </div>
                     <div
                       class="css-17cghxi"
@@ -882,17 +926,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-1nw1nne"
               >
                 <div
-                  class="article-image css-1kwj960"
+                  class="article-image css-id8srm"
                 >
-                  <picture
-                    class="css-l4lngz"
+                  <a
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   >
-                    <img
-                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                      class="css-ssxt4f"
-                      loading="lazy"
-                    />
-                  </picture>
+                    <picture
+                      class="css-l4lngz"
+                    >
+                      <img
+                        alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
+                        class="css-ssxt4f"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <div
                   class="css-17cghxi"
@@ -974,17 +1022,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <div
-                  class="article-image css-1kwj960"
+                  class="article-image css-id8srm"
                 >
-                  <picture
-                    class="css-l4lngz"
+                  <a
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   >
-                    <img
-                      alt="‘American owners pose threat to English pyramid’"
-                      class="css-ssxt4f"
-                      loading="lazy"
-                    />
-                  </picture>
+                    <picture
+                      class="css-l4lngz"
+                    >
+                      <img
+                        alt="‘American owners pose threat to English pyramid’"
+                        class="css-ssxt4f"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <div
                   class="css-17cghxi"
@@ -1066,17 +1118,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <div
-                  class="article-image css-1kwj960"
+                  class="article-image css-id8srm"
                 >
-                  <picture
-                    class="css-l4lngz"
+                  <a
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   >
-                    <img
-                      alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                      class="css-ssxt4f"
-                      loading="lazy"
-                    />
-                  </picture>
+                    <picture
+                      class="css-l4lngz"
+                    >
+                      <img
+                        alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
+                        class="css-ssxt4f"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <div
                   class="css-17cghxi"
@@ -1158,17 +1214,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <div
-                  class="article-image css-1kwj960"
+                  class="article-image css-id8srm"
                 >
-                  <picture
-                    class="css-l4lngz"
+                  <a
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   >
-                    <img
-                      alt="Blow for rebel clubs as court says Uefa can block Super League"
-                      class="css-ssxt4f"
-                      loading="lazy"
-                    />
-                  </picture>
+                    <picture
+                      class="css-l4lngz"
+                    >
+                      <img
+                        alt="Blow for rebel clubs as court says Uefa can block Super League"
+                        class="css-ssxt4f"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <div
                   class="css-17cghxi"
@@ -1421,20 +1481,25 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 class="lead-image-container css-j6pksw"
               >
                 <div
-                  class="lcpItem css-6zwx7l"
+                  class="lead-article-image css-1pedwx4"
                 >
-                  <picture
-                    class="css-zp0elg"
+                  <a
+                    class="article-image"
+                    href="https://www.thetimes.co.uk"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
-                    <img
-                      alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
-                    />
-                  </picture>
+                    <picture
+                      class="css-zp0elg"
+                    >
+                      <div
+                        class="css-5pczz7"
+                      />
+                      <img
+                        alt="Sarcacens an inclusive club? They didnt look out for me"
+                        class="lcpItem css-1qgqq71"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <p
                   class="css-1c5i4sy"
@@ -1518,11 +1583,20 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     </span>
                   </span>
                 </a>
-                <p
-                  class="css-7ljupj"
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
-                  160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
-                </p>
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <p
+                      class="css-7ljupj"
+                    >
+                      160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                    </p>
+                  </span>
+                </a>
                 <div
                   class="css-13s74dp"
                   data-testid="tag-and-flag"
@@ -1574,20 +1648,25 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 class="lead-image-container css-1vuk75f"
               >
                 <div
-                  class="lcpItem css-6zwx7l"
+                  class="lead-article-image css-1pedwx4"
                 >
-                  <picture
-                    class="css-zp0elg"
+                  <a
+                    class="article-image"
+                    href="https://www.thetimes.co.uk"
                   >
-                    <div
-                      class="css-5pczz7"
-                    />
-                    <img
-                      alt="Sarcacens an inclusive club? They didnt look out for me"
-                      class="css-1qgqq71"
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
-                    />
-                  </picture>
+                    <picture
+                      class="css-zp0elg"
+                    >
+                      <div
+                        class="css-5pczz7"
+                      />
+                      <img
+                        alt="Sarcacens an inclusive club? They didnt look out for me"
+                        class="lcpItem css-1qgqq71"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <p
                   class="css-1c5i4sy"
@@ -1676,11 +1755,20 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     </span>
                   </span>
                 </a>
-                <p
-                  class="css-lp9m77"
+                <a
+                  class="css-10h0i3c"
+                  href="https://www.thetimes.co.uk"
                 >
-                  160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
-                </p>
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <p
+                      class="css-lp9m77"
+                    >
+                      160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                    </p>
+                  </span>
+                </a>
                 <div
                   class="css-1kfs2jd"
                   data-testid="tag-and-flag"
@@ -1906,17 +1994,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     class="css-1nw1nne"
                   >
                     <div
-                      class="article-image css-1kwj960"
+                      class="article-image css-id8srm"
                     >
-                      <picture
-                        class="css-l4lngz"
+                      <a
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                       >
-                        <img
-                          alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                          class="css-ssxt4f"
-                          loading="lazy"
-                        />
-                      </picture>
+                        <picture
+                          class="css-l4lngz"
+                        >
+                          <img
+                            alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
+                            class="css-ssxt4f"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
                     </div>
                     <div
                       class="css-17cghxi"
@@ -1998,17 +2090,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       />
                     </div>
                     <div
-                      class="article-image css-1kwj960"
+                      class="article-image css-id8srm"
                     >
-                      <picture
-                        class="css-l4lngz"
+                      <a
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                       >
-                        <img
-                          alt="‘American owners pose threat to English pyramid’"
-                          class="css-ssxt4f"
-                          loading="lazy"
-                        />
-                      </picture>
+                        <picture
+                          class="css-l4lngz"
+                        >
+                          <img
+                            alt="‘American owners pose threat to English pyramid’"
+                            class="css-ssxt4f"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
                     </div>
                     <div
                       class="css-17cghxi"
@@ -2090,17 +2186,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       />
                     </div>
                     <div
-                      class="article-image css-1kwj960"
+                      class="article-image css-id8srm"
                     >
-                      <picture
-                        class="css-l4lngz"
+                      <a
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                       >
-                        <img
-                          alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                          class="css-ssxt4f"
-                          loading="lazy"
-                        />
-                      </picture>
+                        <picture
+                          class="css-l4lngz"
+                        >
+                          <img
+                            alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
+                            class="css-ssxt4f"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
                     </div>
                     <div
                       class="css-17cghxi"
@@ -2182,17 +2282,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       />
                     </div>
                     <div
-                      class="article-image css-1kwj960"
+                      class="article-image css-id8srm"
                     >
-                      <picture
-                        class="css-l4lngz"
+                      <a
+                        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                       >
-                        <img
-                          alt="Blow for rebel clubs as court says Uefa can block Super League"
-                          class="css-ssxt4f"
-                          loading="lazy"
-                        />
-                      </picture>
+                        <picture
+                          class="css-l4lngz"
+                        >
+                          <img
+                            alt="Blow for rebel clubs as court says Uefa can block Super League"
+                            class="css-ssxt4f"
+                            loading="lazy"
+                          />
+                        </picture>
+                      </a>
                     </div>
                     <div
                       class="css-17cghxi"
@@ -2279,17 +2383,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 class="css-1nw1nne"
               >
                 <div
-                  class="article-image css-1kwj960"
+                  class="article-image css-id8srm"
                 >
-                  <picture
-                    class="css-l4lngz"
+                  <a
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   >
-                    <img
-                      alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
-                      class="css-ssxt4f"
-                      loading="lazy"
-                    />
-                  </picture>
+                    <picture
+                      class="css-l4lngz"
+                    >
+                      <img
+                        alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
+                        class="css-ssxt4f"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <div
                   class="css-17cghxi"
@@ -2371,17 +2479,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   />
                 </div>
                 <div
-                  class="article-image css-1kwj960"
+                  class="article-image css-id8srm"
                 >
-                  <picture
-                    class="css-l4lngz"
+                  <a
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   >
-                    <img
-                      alt="‘American owners pose threat to English pyramid’"
-                      class="css-ssxt4f"
-                      loading="lazy"
-                    />
-                  </picture>
+                    <picture
+                      class="css-l4lngz"
+                    >
+                      <img
+                        alt="‘American owners pose threat to English pyramid’"
+                        class="css-ssxt4f"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <div
                   class="css-17cghxi"
@@ -2463,17 +2575,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   />
                 </div>
                 <div
-                  class="article-image css-1kwj960"
+                  class="article-image css-id8srm"
                 >
-                  <picture
-                    class="css-l4lngz"
+                  <a
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   >
-                    <img
-                      alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
-                      class="css-ssxt4f"
-                      loading="lazy"
-                    />
-                  </picture>
+                    <picture
+                      class="css-l4lngz"
+                    >
+                      <img
+                        alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
+                        class="css-ssxt4f"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <div
                   class="css-17cghxi"
@@ -2555,17 +2671,21 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   />
                 </div>
                 <div
-                  class="article-image css-1kwj960"
+                  class="article-image css-id8srm"
                 >
-                  <picture
-                    class="css-l4lngz"
+                  <a
+                    href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   >
-                    <img
-                      alt="Blow for rebel clubs as court says Uefa can block Super League"
-                      class="css-ssxt4f"
-                      loading="lazy"
-                    />
-                  </picture>
+                    <picture
+                      class="css-l4lngz"
+                    >
+                      <img
+                        alt="Blow for rebel clubs as court says Uefa can block Super League"
+                        class="css-ssxt4f"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <div
                   class="css-17cghxi"

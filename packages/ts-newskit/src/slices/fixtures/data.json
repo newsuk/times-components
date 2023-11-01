@@ -34,15 +34,16 @@
           "ratio": "2:3"
         },
         {
-          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82edcbd6-778a-11ee-9496-ba645d21d0d9.jpg?crop=6117%2C3441%2C49%2C551",
           "ratio": "4:5"
         },
         {
-          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F6d78b116-7759-11ee-b999-2580d8ced837.jpg?crop=3868%2C2176%2C961%2C98",
           "ratio": "5:4"
         }
       ]
     },
+
     "url": "https://www.thetimes.co.uk",
     "tag": {
       "label": "Review",

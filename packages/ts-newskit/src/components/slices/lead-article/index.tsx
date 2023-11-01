@@ -4,13 +4,14 @@ import {
   CardContent,
   CardComposable,
   Divider,
-  MQ
+  MQ,
+  Image
 } from 'newskit';
 import React from 'react';
 import {
   CardHeadlineLink,
-  FullWidthCardMediaMob,
-  StyledSpan
+  StyledSpan,
+  FullWidthGridLayoutItem
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
@@ -102,17 +103,7 @@ export const LeadArticle = ({
     images && images.crops
       ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
         images.crops.find(crop => crop.ratio === '3:2')
-      : null;
-
-  const cardImage = images &&
-    imageWithCorrectRatio &&
-    imageWithCorrectRatio.url !== '' && {
-      media: {
-        src: `${imageWithCorrectRatio.url}&resize=750`,
-        alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio.ratio
-      }
-    };
+      : undefined;
 
   const hasImage =
     images &&
@@ -162,11 +153,25 @@ export const LeadArticle = ({
             marginBlockStart={imageMarginBlockStart}
             className="lead-image-container"
           >
-            <FullWidthCardMediaMob
-              {...cardImage}
-              className="lcpItem"
+            <FullWidthGridLayoutItem
+              area="media"
               ratio={imageWithCorrectRatio!.ratio}
-            />
+              className="lead-article-image"
+            >
+              <a href={url} onClick={onClick} className="article-image">
+                <Image
+                  src={
+                    imageWithCorrectRatio &&
+                    `${imageWithCorrectRatio.url}&resize=750`
+                  }
+                  alt={(images && images.alt) || headline}
+                  loadingAspectRatio={
+                    imageWithCorrectRatio && imageWithCorrectRatio.ratio
+                  }
+                  className="lcpItem"
+                />
+              </a>
+            </FullWidthGridLayoutItem>
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"
@@ -187,7 +192,9 @@ export const LeadArticle = ({
 
       <CardContent
         alignContent="start"
-        overrides={{ marginBlockEnd: contentTop ? 'space040' : 'space000' }}
+        overrides={{
+          marginBlockEnd: contentTop ? 'space040' : 'space000'
+        }}
       >
         {hasTopBorder && (
           <Divider
@@ -210,26 +217,27 @@ export const LeadArticle = ({
             typographyPreset: headlineTypography
           }}
           external={false}
-          expand={!tag}
           onClick={onClick}
         >
           {headline}
         </CardHeadlineLink>
         {shortSummary && (
-          <TextBlock
-            stylePreset={{
-              xs: 'inkSubtle',
-              md: 'inkBase'
-            }}
-            typographyPreset={{
-              xs: 'editorialParagraph020',
-              md: 'editorialParagraph010'
-            }}
-            marginBlockStart={textBlockMarginBlockStart}
-            as="p"
-          >
-            {shortSummary}
-          </TextBlock>
+          <CardHeadlineLink href={url} external={false} onClick={onClick}>
+            <TextBlock
+              stylePreset={{
+                xs: 'inkSubtle',
+                md: 'inkBase'
+              }}
+              typographyPreset={{
+                xs: 'editorialParagraph020',
+                md: 'editorialParagraph010'
+              }}
+              marginBlockStart={textBlockMarginBlockStart}
+              as="p"
+            >
+              {shortSummary}
+            </TextBlock>
+          </CardHeadlineLink>
         )}
         <TagAndFlag
           tag={tag}

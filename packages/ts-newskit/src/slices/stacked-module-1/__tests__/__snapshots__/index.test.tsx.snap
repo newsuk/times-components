@@ -25,24 +25,29 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-15dlyx9"
+          class="css-pv9ltj"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="article-image css-1g3uuk1"
+              aria-label="article-lead-image"
+              class="article-image css-vim2vd"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -147,17 +152,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 2"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 2"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -276,17 +285,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 3"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 3"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -391,17 +404,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 4"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 4"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -519,24 +536,29 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-7zbbh8"
+          class="css-1ak9hya"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="article-image css-1g3uuk1"
+              aria-label="article-lead-image"
+              class="article-image css-vim2vd"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 5"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 5"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -641,17 +663,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 6"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 6"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -770,17 +796,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 7"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 7"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -885,17 +915,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 8"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 8"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -1022,24 +1056,29 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
         class="css-13tedu1"
       >
         <div
-          class="css-15dlyx9"
+          class="css-pv9ltj"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="article-image css-1g3uuk1"
+              aria-label="article-lead-image"
+              class="article-image css-vim2vd"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -1144,17 +1183,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 2"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 2"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -1273,17 +1316,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 3"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 3"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -1388,17 +1435,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 4"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 4"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -1516,24 +1567,29 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
         class="css-13tedu1"
       >
         <div
-          class="css-7zbbh8"
+          class="css-1ak9hya"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="article-image css-1g3uuk1"
+              aria-label="article-lead-image"
+              class="article-image css-vim2vd"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 5"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 5"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -1638,17 +1694,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 6"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 6"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -1767,17 +1827,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 7"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 7"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -1882,17 +1946,21 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 8"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 8"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -2019,24 +2087,29 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-15dlyx9"
+          class="css-pv9ltj"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="article-image css-1g3uuk1"
+              aria-label="article-lead-image"
+              class="article-image css-vim2vd"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -2141,17 +2214,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 2"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 2"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -2270,17 +2347,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 3"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 3"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -2385,17 +2466,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 4"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 4"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -2513,24 +2598,29 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-7zbbh8"
+          class="css-1ak9hya"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="article-image css-1g3uuk1"
+              aria-label="article-lead-image"
+              class="article-image css-vim2vd"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 5"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 5"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -2635,17 +2725,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 6"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 6"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -2764,17 +2858,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 7"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 7"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -2879,17 +2977,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 8"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 8"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -3016,24 +3118,29 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-15dlyx9"
+          class="css-pv9ltj"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="article-image css-1g3uuk1"
+              aria-label="article-lead-image"
+              class="article-image css-vim2vd"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -3138,17 +3245,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 2"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 2"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -3267,17 +3378,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 3"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 3"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -3382,17 +3497,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 4"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 4"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -3510,24 +3629,29 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-7zbbh8"
+          class="css-1ak9hya"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="article-image css-1g3uuk1"
+              aria-label="article-lead-image"
+              class="article-image css-vim2vd"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 5"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 5"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -3632,17 +3756,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 6"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 6"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -3761,17 +3889,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 7"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 7"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -3876,17 +4008,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 8"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 8"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -4013,24 +4149,29 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-15dlyx9"
+          class="css-pv9ltj"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="article-image css-1g3uuk1"
+              aria-label="article-lead-image"
+              class="article-image css-vim2vd"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -4135,17 +4276,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 2"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 2"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -4264,17 +4409,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 3"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 3"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -4379,17 +4528,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 4"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 4"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -4507,24 +4660,29 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-7zbbh8"
+          class="css-1ak9hya"
           data-testid="article-container"
         >
           <div
             class="css-1nw1nne"
           >
             <div
-              class="article-image css-1g3uuk1"
+              aria-label="article-lead-image"
+              class="article-image css-vim2vd"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 5"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 5"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -4629,17 +4787,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 6"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 6"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -4758,17 +4920,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 7"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 7"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"
@@ -4873,17 +5039,21 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-1kwj960"
+              class="article-image css-id8srm"
             >
-              <picture
-                class="css-l4lngz"
+              <a
+                href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
               >
-                <img
-                  alt="Short title of the card describing the main content 8"
-                  class="css-ssxt4f"
-                  loading="lazy"
-                />
-              </picture>
+                <picture
+                  class="css-l4lngz"
+                >
+                  <img
+                    alt="Short title of the card describing the main content 8"
+                    class="css-ssxt4f"
+                    loading="lazy"
+                  />
+                </picture>
+              </a>
             </div>
             <div
               class="css-17cghxi"

@@ -4,14 +4,14 @@ import {
   CardContent,
   TextBlock,
   CardComposable,
-  CardMedia,
   GridLayoutItem,
-  MQ
+  MQ,
+  Image
 } from 'newskit';
 import {
   CardHeadlineLink,
-  FullWidthCardMediaMob,
-  FullWidthBlock
+  FullWidthBlock,
+  FullWidthGridLayoutItem
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
@@ -88,6 +88,7 @@ export const Article = ({
   } = article;
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
+
   const hasArticleTileInfo =
     (expirableFlags &&
       getActiveArticleFlags(expirableFlags) &&
@@ -95,16 +96,6 @@ export const Article = ({
     label ||
     contentType ||
     hasVideo;
-
-  const cardImage = !hideImage &&
-    imageWithCorrectRatio && {
-      media: {
-        src: `${imageWithCorrectRatio.url}&resize=750`,
-        alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio.ratio || '3:2',
-        loading: 'lazy'
-      }
-    };
 
   const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
@@ -129,6 +120,19 @@ export const Article = ({
       }}
       aria-label="article-divider-horizontal"
     />
+  );
+
+  const image = (
+    <a href={url} onClick={onClick}>
+      <Image
+        src={imageWithCorrectRatio && `${imageWithCorrectRatio.url}&resize=750`}
+        alt={(images && images.alt) || headline}
+        loadingAspectRatio={
+          imageWithCorrectRatio ? imageWithCorrectRatio.ratio : '3:2'
+        }
+        loading="lazy"
+      />
+    </a>
   );
 
   return (
@@ -166,11 +170,17 @@ export const Article = ({
       )}
       {showImage ? (
         isLeadImage ? (
-          /* @ts-ignore */
-          <FullWidthCardMediaMob {...cardImage} className="article-image" />
+          <FullWidthGridLayoutItem
+            area="media"
+            aria-label="article-lead-image"
+            className="article-image"
+          >
+            {image}
+          </FullWidthGridLayoutItem>
         ) : (
-          /* @ts-ignore */
-          <CardMedia {...cardImage} className="article-image" />
+          <GridLayoutItem area="media" className="article-image">
+            {image}
+          </GridLayoutItem>
         )
       ) : null}
       <CardContent alignContent="start">
