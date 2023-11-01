@@ -74,6 +74,10 @@ export const FullWidthCardMediaMob = styled(CardMedia)<{
   }
   ${getMediaQueryFromTheme('xs', 'md')} {
     ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
+    padding-bottom: ${({ ratio }) =>
+      ratio
+        ? `calc(${100 / getRatio(ratio)}% + ${40 / getRatio(ratio)}px)`
+        : 0};
   }
 `;
 
