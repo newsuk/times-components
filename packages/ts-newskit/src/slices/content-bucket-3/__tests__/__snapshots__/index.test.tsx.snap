@@ -30,7 +30,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               >
                 <div
                   aria-label="article-lead-image"
-                  class="article-image css-16luf35"
+                  class="article-image css-382ja0"
                 >
                   <a
                     href="https://www.thetimes.co.uk"
@@ -182,7 +182,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                 </div>
                 <div
                   aria-label="article-lead-image"
-                  class="article-image css-16luf35"
+                  class="article-image css-382ja0"
                 >
                   <a
                     href="https://www.thetimes.co.uk"
@@ -1359,7 +1359,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <div
                   aria-label="article-lead-image"
-                  class="article-image css-16luf35"
+                  class="article-image css-382ja0"
                 >
                   <a
                     href="https://www.thetimes.co.uk"
@@ -1511,7 +1511,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                 </div>
                 <div
                   aria-label="article-lead-image"
-                  class="article-image css-16luf35"
+                  class="article-image css-382ja0"
                 >
                   <a
                     href="https://www.thetimes.co.uk"
