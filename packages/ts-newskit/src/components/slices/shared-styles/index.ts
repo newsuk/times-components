@@ -8,7 +8,8 @@ import {
   getMediaQueryFromTheme,
   LinkInline,
   Hidden,
-  TextBlock
+  TextBlock,
+  GridLayoutItem
 } from 'newskit';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
@@ -56,7 +57,8 @@ export const ContainerInline = styled(Block)`
 `;
 
 const setFullWidthMargin = (space: string) => ({ marginInline: `-${space}` });
-export const FullWidthCardMediaMob = styled(CardLink)<{
+
+export const FullWidthGridLayoutItem = styled(GridLayoutItem)<{
   ratio?: string;
   className?: string;
 }>`

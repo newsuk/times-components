@@ -11,7 +11,7 @@ import {
 import {
   CardHeadlineLink,
   FullWidthBlock,
-  FullWidthCardMediaMob
+  FullWidthGridLayoutItem
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
@@ -123,14 +123,16 @@ export const Article = ({
   );
 
   const image = (
-    <Image
-      src={imageWithCorrectRatio && `${imageWithCorrectRatio.url}&resize=750`}
-      alt={(images && images.alt) || headline}
-      loadingAspectRatio={
-        imageWithCorrectRatio ? imageWithCorrectRatio.ratio : '3:2'
-      }
-      loading="lazy"
-    />
+    <a href={url} onClick={onClick}>
+      <Image
+        src={imageWithCorrectRatio && `${imageWithCorrectRatio.url}&resize=750`}
+        alt={(images && images.alt) || headline}
+        loadingAspectRatio={
+          imageWithCorrectRatio ? imageWithCorrectRatio.ratio : '3:2'
+        }
+        loading="lazy"
+      />
+    </a>
   );
 
   return (
@@ -167,28 +169,19 @@ export const Article = ({
         </GridLayoutItem>
       )}
       {showImage ? (
-        <GridLayoutItem area="media">
-          {isLeadImage ? (
-            <FullWidthCardMediaMob
-              href={url}
-              external={false}
-              onClick={onClick}
-              aria-label="article-lead-image"
-              className="article-image"
-            >
-              {image}
-            </FullWidthCardMediaMob>
-          ) : (
-            <CardHeadlineLink
-              href={url}
-              external={false}
-              onClick={onClick}
-              className="article-image"
-            >
-              {image}
-            </CardHeadlineLink>
-          )}
-        </GridLayoutItem>
+        isLeadImage ? (
+          <FullWidthGridLayoutItem
+            area="media"
+            aria-label="article-lead-image"
+            className="article-image"
+          >
+            {image}
+          </FullWidthGridLayoutItem>
+        ) : (
+          <GridLayoutItem area="media" className="article-image">
+            {image}
+          </GridLayoutItem>
+        )
       ) : null}
       <CardContent alignContent="start">
         {images &&

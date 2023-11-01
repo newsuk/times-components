@@ -5,14 +5,13 @@ import {
   CardComposable,
   Divider,
   MQ,
-  GridLayoutItem,
   Image
 } from 'newskit';
 import React from 'react';
 import {
   CardHeadlineLink,
   StyledSpan,
-  FullWidthCardMediaMob
+  FullWidthGridLayoutItem
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
@@ -154,14 +153,12 @@ export const LeadArticle = ({
             marginBlockStart={imageMarginBlockStart}
             className="lead-image-container"
           >
-            <GridLayoutItem area="media">
-              <FullWidthCardMediaMob
-                href={url}
-                external={false}
-                onClick={onClick}
-                ratio={imageWithCorrectRatio!.ratio}
-                className="lead-article-image"
-              >
+            <FullWidthGridLayoutItem
+              area="media"
+              ratio={imageWithCorrectRatio!.ratio}
+              className="lead-article-image"
+            >
+              <a href={url} onClick={onClick} className="article-image">
                 <Image
                   src={
                     imageWithCorrectRatio &&
@@ -173,8 +170,8 @@ export const LeadArticle = ({
                   }
                   className="lcpItem"
                 />
-              </FullWidthCardMediaMob>
-            </GridLayoutItem>
+              </a>
+            </FullWidthGridLayoutItem>
             {hasCaptionOrCredits && (
               <TextBlock
                 marginBlockStart="space020"
@@ -195,7 +192,9 @@ export const LeadArticle = ({
 
       <CardContent
         alignContent="start"
-        overrides={{ marginBlockEnd: contentTop ? 'space040' : 'space000' }}
+        overrides={{
+          marginBlockEnd: contentTop ? 'space040' : 'space000'
+        }}
       >
         {hasTopBorder && (
           <Divider
