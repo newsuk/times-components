@@ -73,9 +73,6 @@ export const FullWidthGridLayoutItem = styled(GridLayoutItem)<{
     position: absolute,
     display: block
   }
-  span {
-    height: unset;
-  }
   ${getMediaQueryFromTheme('xs', 'md')} {
     ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
   }
