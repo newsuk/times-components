@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.124.6](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.124.5...@times-components/ts-newskit@1.124.6) (2023-11-01)
+
+
+### Bug Fixes
+
+* **TMRX-1604:** make images clickable within new slices ([#3616](https://github.com/newsuk/times-components/issues/3616)) ([dedc954](https://github.com/newsuk/times-components/commit/dedc954ef590dc7db8898bbfc7db6238fd33037e))
+
+
+
+
+
 ## [1.124.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.124.4...@times-components/ts-newskit@1.124.5) (2023-10-31)
 
 **Note:** Version bump only for package @times-components/ts-newskit
