@@ -18,7 +18,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
             class="lead-image-container css-j6pksw"
           >
             <div
-              class="lead-article-image css-pjgzu9"
+              class="lead-article-image css-1pedwx4"
             >
               <a
                 class="article-image"
@@ -470,7 +470,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                 class="lead-image-container css-j6pksw"
               >
                 <div
-                  class="lead-article-image css-pjgzu9"
+                  class="lead-article-image css-1pedwx4"
                 >
                   <a
                     class="article-image"
@@ -9081,7 +9081,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
             class="lead-image-container css-j6pksw"
           >
             <div
-              class="lead-article-image css-pjgzu9"
+              class="lead-article-image css-1pedwx4"
             >
               <a
                 class="article-image"
@@ -9533,7 +9533,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                 class="lead-image-container css-j6pksw"
               >
                 <div
-                  class="lead-article-image css-pjgzu9"
+                  class="lead-article-image css-1pedwx4"
                 >
                   <a
                     class="article-image"
@@ -18144,7 +18144,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="lead-image-container css-j6pksw"
           >
             <div
-              class="lead-article-image css-pjgzu9"
+              class="lead-article-image css-1pedwx4"
             >
               <a
                 class="article-image"
@@ -18596,7 +18596,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lead-image-container css-j6pksw"
               >
                 <div
-                  class="lead-article-image css-pjgzu9"
+                  class="lead-article-image css-1pedwx4"
                 >
                   <a
                     class="article-image"
@@ -27207,7 +27207,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="lead-image-container css-j6pksw"
           >
             <div
-              class="lead-article-image css-pjgzu9"
+              class="lead-article-image css-1pedwx4"
             >
               <a
                 class="article-image"
@@ -27659,7 +27659,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lead-image-container css-j6pksw"
               >
                 <div
-                  class="lead-article-image css-pjgzu9"
+                  class="lead-article-image css-1pedwx4"
                 >
                   <a
                     class="article-image"
@@ -36270,7 +36270,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
             class="lead-image-container css-j6pksw"
           >
             <div
-              class="lead-article-image css-pjgzu9"
+              class="lead-article-image css-1pedwx4"
             >
               <a
                 class="article-image"
@@ -36722,7 +36722,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                 class="lead-image-container css-j6pksw"
               >
                 <div
-                  class="lead-article-image css-pjgzu9"
+                  class="lead-article-image css-1pedwx4"
                 >
                   <a
                     class="article-image"
