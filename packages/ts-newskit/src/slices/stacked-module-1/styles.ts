@@ -18,7 +18,7 @@ export const ArticleGrid = styled(GridLayout)<{
         display: none;
       }
 
-      .article-image:first-of-type {
+      [aria-label='article-lead-image'] {
         display: block;
       }
 
