@@ -64,7 +64,7 @@ export const FullWidthCardMediaMob = styled(CardLink)<{
     className && className !== 'article-image' ? 0 : '100%'};
   overflow: hidden;
   position: relative;
-  padding-bottom: ${({ ratio }) => (ratio ? `${100 / getRatio(ratio)}%;` : 0)};
+  padding-bottom: ${({ ratio }) => (ratio ? `${100 / getRatio(ratio)}%` : 0)};
   img: {
     opacity: 1,
     zIndex: 2,
@@ -76,6 +76,10 @@ export const FullWidthCardMediaMob = styled(CardLink)<{
   }
   ${getMediaQueryFromTheme('xs', 'md')} {
     ${getSpacingCssFromTheme(setFullWidthMargin, 'space045')};
+    padding-bottom: ${({ ratio }) =>
+      ratio
+        ? `calc(${100 / getRatio(ratio)}% + ${40 / getRatio(ratio)}px)`
+        : 0};
   }
 `;
 
