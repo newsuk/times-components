@@ -182,7 +182,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -311,7 +311,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -440,7 +440,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -569,7 +569,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -698,7 +698,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -827,7 +827,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -956,7 +956,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -1085,7 +1085,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -1295,7 +1295,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -1424,7 +1424,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -1553,7 +1553,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -1682,7 +1682,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -1811,7 +1811,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -1940,7 +1940,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -2069,7 +2069,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture
@@ -2198,7 +2198,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
               class="css-ax4h27"
             >
               <div
-                class="css-1kwj960"
+                class="lcpItem css-1kwj960"
                 data-testid="puzzle-image"
               >
                 <picture

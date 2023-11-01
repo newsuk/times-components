@@ -41,6 +41,8 @@ export const PuzzleCard = ({
       <PuzzleCardImgWrapper>
         {imageUrl ? (
           <CardMedia
+            /* @ts-ignore */
+            className="lcpItem"
             media={{
               loadingAspectRatio: '3:2',
               alt: data.title || 'Puzzle thumbnail',
