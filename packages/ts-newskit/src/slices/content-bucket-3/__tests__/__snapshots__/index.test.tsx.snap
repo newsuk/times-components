@@ -367,6 +367,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                   </a>
                   <p
                     class="css-1xcccqf"
+                    tabindex="0"
                   >
                     Now is Willis’s chance to show he’s got more to offer than Curry
                   </p>
@@ -440,6 +441,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                   </a>
                   <p
                     class="css-1xcccqf"
+                    tabindex="0"
                   >
                     Now is Jack's chance to show he’s got more to offer than Curry
                   </p>
@@ -1229,6 +1231,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                 </a>
                 <p
                   class="css-1xcccqf"
+                  tabindex="0"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
@@ -1302,6 +1305,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                 </a>
                 <p
                   class="css-1xcccqf"
+                  tabindex="0"
                 >
                   Now is Jack's chance to show he’s got more to offer than Curry
                 </p>
@@ -1696,6 +1700,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                   </a>
                   <p
                     class="css-1xcccqf"
+                    tabindex="0"
                   >
                     Now is Willis’s chance to show he’s got more to offer than Curry
                   </p>
@@ -1769,6 +1774,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                   </a>
                   <p
                     class="css-1xcccqf"
+                    tabindex="0"
                   >
                     Now is Jack's chance to show he’s got more to offer than Curry
                   </p>
@@ -2558,6 +2564,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                 </a>
                 <p
                   class="css-1xcccqf"
+                  tabindex="0"
                 >
                   Now is Willis’s chance to show he’s got more to offer than Curry
                 </p>
@@ -2631,6 +2638,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                 </a>
                 <p
                   class="css-1xcccqf"
+                  tabindex="0"
                 >
                   Now is Jack's chance to show he’s got more to offer than Curry
                 </p>
