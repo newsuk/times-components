@@ -49,6 +49,7 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
           </a>
           <p
             class="css-1tu9cmx"
+            tabindex="0"
           >
             Why unblinking Levy is the Pavlov's cat of football
           </p>
@@ -122,6 +123,7 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
           </a>
           <p
             class="css-1tu9cmx"
+            tabindex="0"
           >
             Why unblinking Levy is the Pavlov's cat of football
           </p>
@@ -195,6 +197,7 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
           </a>
           <p
             class="css-1tu9cmx"
+            tabindex="0"
           >
             Why unblinking Levy is the Pavlov's cat of football
           </p>

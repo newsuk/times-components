@@ -37,7 +37,7 @@ exports[`should render component to match snapshot 1`] = `
         </span>
       </a>
       <p
-        class="css-1xcccqf"
+        class="css-1assl38"
         tabindex="0"
       >
         Quote text
