@@ -46,7 +46,7 @@ export const SliceHeader = ({
   iconArrowSize = { xs: 'iconSize010', md: 'iconSize020' },
   iconSize = { xs: 'sizing060', md: 'sizing080' },
   padding = 'space030',
-  sliceHeaderClickHandler,
+  sliceHeaderClickHandler
 }: SliceHeaderProps) => {
   return (
     <SliceHeaderWrapper
