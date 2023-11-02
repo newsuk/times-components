@@ -25,26 +25,39 @@ describe('Secondary Menu Mobile', () => {
     const { asFragment, getByText } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
+        title=""
         options={options}
         clickHandler={mockClickHandler}
       />
     );
     expect(asFragment()).toMatchSnapshot();
-    expect(getByText('Home')).not.toHaveStyle({
+    expect(getByText('See all')).not.toHaveStyle({
       color: 'rgb(255, 255, 255)'
     });
+  });
+  it('should render the correct title', () => {
+    const { getByText } = render(
+      <SecondaryNavMobile
+        data={mainMenuItems}
+        title="Sport"
+        options={options}
+        clickHandler={mockClickHandler}
+      />
+    );
+    expect(getByText('See all Sport')).toBeInTheDocument();
   });
   it('should render the correct white text if theme color applied', () => {
     const { getByText } = render(
       <ThemeProvider theme={TimesWebLightSportTheme}>
         <SecondaryNavMobile
           data={mainMenuItems}
+          title=""
           options={options}
           clickHandler={mockClickHandler}
         />
       </ThemeProvider>
     );
-    expect(getByText('Home')).toHaveStyle({
+    expect(getByText('See all')).toHaveStyle({
       color: 'rgb(255, 255, 255)'
     });
   });
@@ -53,6 +66,7 @@ describe('Secondary Menu Mobile', () => {
     const { asFragment } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
+        title=""
         options={{ ...options, isExpanded: true }}
         clickHandler={mockClickHandler}
       />
@@ -66,6 +80,7 @@ describe('Secondary Menu Mobile', () => {
     render(
       <SecondaryNavMobile
         data={mainMenuItems}
+        title=""
         options={options}
         clickHandler={mockClickHandler}
         onClick={onClickMock}
