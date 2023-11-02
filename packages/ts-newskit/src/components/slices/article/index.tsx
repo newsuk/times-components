@@ -86,6 +86,13 @@ export const Article = ({
     contentType,
     hasVideo
   } = article;
+  if (article.tag) {
+    console.log('==========article.tag', article.tag);
+  }
+  if (article.flag) {
+    console.log('==========article.flag', article.flag);
+  }
+
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
 
