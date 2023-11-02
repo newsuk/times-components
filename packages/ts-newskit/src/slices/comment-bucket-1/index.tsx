@@ -54,7 +54,7 @@ export const CommentBucket1 = ({ data, clickHandler }: CommentStackProps) => (
             <CommentCard
               article={comment}
               clickHandler={clickHandler}
-              isCommentBucket1={true}
+              isCommentBucket1
             />
             {hasBorder}
           </React.Fragment>
