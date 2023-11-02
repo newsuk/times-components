@@ -34,10 +34,12 @@ export interface CommentCardProps {
 
 export const CommentCard = ({
   article,
-  clickHandler
+  clickHandler,
+  isCommentBucket1
 }: {
   article: CommentCardProps;
   clickHandler: ClickHandlerType;
+  isCommentBucket1?: boolean;
 }) => {
   const theme = useTheme();
 
@@ -52,10 +54,28 @@ export const CommentCard = ({
   return (
     <CardComposable
       columnGap="space040"
-      columns="77px 1fr"
-      areas={`
-        media content
-      `}
+      columns={{
+        xs: '77px 1fr',
+        md: isCommentBucket1 ? '1fr' : '77px 1fr',
+        lg: '77px 1fr'
+      }}
+      areas={{
+        xs: `
+             media content
+            `,
+        md: isCommentBucket1
+          ? `media 
+             content`
+          : `
+             media content
+            `,
+        lg: `
+            media content
+            `
+      }}
+      justifyItems={{
+        md: isCommentBucket1 ? 'center' : 'start'
+      }}
     >
       {imageWithCorrectRatio && (
         <CardMedia
@@ -64,13 +84,26 @@ export const CommentCard = ({
             alt: (images && images.alt) || byline,
             loadingAspectRatio: imageWithCorrectRatio.ratio,
             width: '77px',
-            overrides: { stylePreset: 'imageCircle' },
+            overrides: {
+              stylePreset: 'imageCircle',
+              marginBlockEnd: {
+                md: isCommentBucket1 ? 'space040' : 'space000',
+                lg: 'space000'
+              }
+            },
             loading: 'lazy'
           }}
         />
       )}
 
-      <CardContent rowGap="space030" alignContent="start">
+      <CardContent
+        rowGap="space030"
+        alignContent="start"
+        justifyItems={{
+          md: isCommentBucket1 ? 'center' : 'start',
+          lg: 'start'
+        }}
+      >
         <CardHeadlineLink
           href={url}
           $color={theme.colors.sectionBrand050 || theme.colors.inkBrand010}

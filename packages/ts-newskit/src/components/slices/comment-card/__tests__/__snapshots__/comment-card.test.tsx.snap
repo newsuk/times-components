@@ -3,13 +3,13 @@
 exports[`should render component to match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-19w1t19"
+    class="css-1wksyc6"
   >
     <div
       class="css-1kwj960"
     >
       <picture
-        class="css-rrorzh"
+        class="css-1o3l48o"
       >
         <img
           alt="Journalist name"
@@ -20,7 +20,7 @@ exports[`should render component to match snapshot 1`] = `
       </picture>
     </div>
     <div
-      class="css-xt66pu"
+      class="css-1yqtv4e"
     >
       <a
         class="css-gull0f"
