@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.126.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.125.0...@times-components/ts-newskit@1.126.0) (2023-11-02)
+
+
+### Features
+
+* **TMRX-1629:** tabindex added ([#3628](https://github.com/newsuk/times-components/issues/3628)) ([6eacf23](https://github.com/newsuk/times-components/commit/6eacf23d007cd2f49753cdb18dd16e4b98fc3440))
+
+
+
+
+
 # [1.125.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.124.6...@times-components/ts-newskit@1.125.0) (2023-11-02)
 
 
