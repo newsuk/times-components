@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.125.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.124.6...@times-components/ts-newskit@1.125.0) (2023-11-02)
+
+
+### Bug Fixes
+
+* **TMRX-1585:** cropped img for sm xs fixed ([#3626](https://github.com/newsuk/times-components/issues/3626)) ([44cc23d](https://github.com/newsuk/times-components/commit/44cc23d83b301ab4426d17f391394ea91ea0c35b))
+
+
+### Features
+
+* **TMPZ-199:** add lcpItem class to image container ([#3627](https://github.com/newsuk/times-components/issues/3627)) ([6b8390d](https://github.com/newsuk/times-components/commit/6b8390de78be2bcf2a379eb461d2d2cbea2b2604))
+
+
+
+
+
 ## [1.124.6](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.124.5...@times-components/ts-newskit@1.124.6) (2023-11-01)
 
 
