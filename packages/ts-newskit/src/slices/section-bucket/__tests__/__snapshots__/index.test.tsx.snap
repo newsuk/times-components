@@ -29,6 +29,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -326,6 +327,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -623,6 +625,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -920,6 +923,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -1231,6 +1235,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -1528,6 +1533,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -1825,6 +1831,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -2122,6 +2129,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -2445,6 +2453,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -2742,6 +2751,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -3039,6 +3049,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -3336,6 +3347,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -3647,6 +3659,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -3944,6 +3957,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -4241,6 +4255,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -4538,6 +4553,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"

@@ -28,7 +28,7 @@ const SliceHeaderLinkWrapper = ({
 }) => {
   if (href) {
     return (
-      <SliceHeaderLink href={href} onClick={onClick}>
+      <SliceHeaderLink href={href} onClick={onClick} tabIndex={0}>
         {children}
       </SliceHeaderLink>
     );
@@ -46,7 +46,7 @@ export const SliceHeader = ({
   iconArrowSize = { xs: 'iconSize010', md: 'iconSize020' },
   iconSize = { xs: 'sizing060', md: 'sizing080' },
   padding = 'space030',
-  sliceHeaderClickHandler
+  sliceHeaderClickHandler,
 }: SliceHeaderProps) => {
   return (
     <SliceHeaderWrapper

@@ -85,6 +85,7 @@ export const CommentCard = ({
         <ColouredText
           typographyPreset="editorialRegularHeadline020"
           $color="sectionBrand070"
+          tabIndex={0}
         >
           {headline}
         </ColouredText>
