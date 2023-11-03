@@ -86,11 +86,11 @@ export const Article = ({
     contentType,
     hasVideo
   } = article;
-  if (article.tag) {
-    console.log('==========article.tag', article.tag);
+  if (article.expirableFlags) {
+    console.log('==========expirableFlags', article.expirableFlags, article);
   }
-  if (article.flag) {
-    console.log('==========article.flag', article.flag);
+  if (article.label) {
+    console.log('==========label', article.label, article);
   }
 
   const imageWithCorrectRatio =
