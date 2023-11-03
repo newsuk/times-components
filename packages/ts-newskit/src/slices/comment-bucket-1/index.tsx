@@ -1,6 +1,6 @@
 import React from 'react';
 import { ClickHandlerType } from '../types';
-import { Divider, GridLayout, Visible } from 'newskit';
+import { Divider, GridLayout } from 'newskit';
 import { AvatarDivider } from '../shared-styles';
 import {
   CommentCard,
@@ -28,25 +28,15 @@ export const CommentBucket1 = ({ data, clickHandler }: CommentStackProps) => (
     >
       {data.map((comment, commentIndex, commentArr) => {
         const hasBorder = commentIndex < commentArr.length - 1 && (
-          <>
-            <Visible xs sm>
-              <AvatarDivider
-                overrides={{
-                  marginBlock: 'space040',
-                  stylePreset: 'lightDashedDivider'
-                }}
-              />
-            </Visible>
-            <Visible md lg xl>
-              <AvatarDivider
-                overrides={{
-                  marginBlock: 'space000',
-                  stylePreset: 'lightDivider'
-                }}
-                vertical
-              />
-            </Visible>
-          </>
+          <AvatarDivider
+            overrides={{
+              marginBlock: { xs: 'space040', md: 'space000' },
+              stylePreset: {
+                xs: 'lightDashedDivider',
+                md: 'commentCardlightDivider'
+              }
+            }}
+          />
         );
 
         return (

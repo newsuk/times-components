@@ -82,24 +82,11 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        class="css-gre9re"
-      >
-        <hr
-          aria-hidden="true"
-          class="css-189ndrp"
-          data-testid="divider"
-        />
-      </div>
-      <div
-        class="css-11l110t"
-      >
-        <hr
-          aria-hidden="true"
-          class="css-11gzkvf"
-          data-testid="divider"
-        />
-      </div>
+      <hr
+        aria-hidden="true"
+        class="css-wmkh54"
+        data-testid="divider"
+      />
       <div
         class="css-3jp9qu"
       >
@@ -169,24 +156,11 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
           </div>
         </div>
       </div>
-      <div
-        class="css-gre9re"
-      >
-        <hr
-          aria-hidden="true"
-          class="css-189ndrp"
-          data-testid="divider"
-        />
-      </div>
-      <div
-        class="css-11l110t"
-      >
-        <hr
-          aria-hidden="true"
-          class="css-11gzkvf"
-          data-testid="divider"
-        />
-      </div>
+      <hr
+        aria-hidden="true"
+        class="css-wmkh54"
+        data-testid="divider"
+      />
       <div
         class="css-3jp9qu"
       >
