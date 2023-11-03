@@ -4,7 +4,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-jzisxn"
+    class="css-1jefh8t"
   >
     <div
       class="css-1ycac6s"
@@ -1025,7 +1025,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-jzisxn"
+    class="css-1jefh8t"
   >
     <div
       class="css-1ycac6s"
@@ -1959,7 +1959,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-jzisxn"
+    class="css-1jefh8t"
   >
     <div
       class="css-1ycac6s"

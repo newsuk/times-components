@@ -7,7 +7,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
   >
     <div
       aria-label="header"
-      class="css-jzisxn"
+      class="css-1jefh8t"
     >
       <div
         class="css-1ycac6s"
@@ -945,7 +945,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
   >
     <div
       aria-label="header"
-      class="css-jzisxn"
+      class="css-1jefh8t"
     >
       <div
         class="css-1ycac6s"
