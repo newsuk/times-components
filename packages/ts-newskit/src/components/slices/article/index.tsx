@@ -87,11 +87,11 @@ export const Article = ({
     hasVideo
   } = article;
   if (article.tag) {
-    // eslint-disable-next-line no-console
+    // eslint-disable-next-line no-console // tslint:disable-next-line:no-console
     console.log('==========article.tag', article.tag);
   }
   if (article.flag) {
-    // eslint-disable-next-line no-console
+    // eslint-disable-next-line no-console // tslint:disable-next-line:no-console
     console.log('==========article.flag', article.flag);
   }
 
