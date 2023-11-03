@@ -109,7 +109,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="https://www.thetimes.co.uk"
                     role="link"
                   >
@@ -261,7 +261,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="https://www.thetimes.co.uk"
                     role="link"
                   >
@@ -332,27 +332,31 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               class="css-1704wtt"
             >
               <div
-                class="css-19w1t19"
+                class="css-1wksyc6"
               >
                 <div
-                  class="css-1kwj960"
-                >
-                  <picture
-                    class="css-rrorzh"
-                  >
-                    <img
-                      alt="Deborah Haynes"
-                      class="css-176aubw"
-                      loading="lazy"
-                      width="77px"
-                    />
-                  </picture>
-                </div>
-                <div
-                  class="css-xt66pu"
+                  class="css-id8srm"
                 >
                   <a
-                    class="css-gull0f"
+                    href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+                  >
+                    <picture
+                      class="css-1o3l48o"
+                    >
+                      <img
+                        alt="Deborah Haynes"
+                        class="css-176aubw"
+                        loading="lazy"
+                        width="77px"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div
+                  class="css-1yqtv4e"
+                >
+                  <a
+                    class="css-4rb6a9"
                     href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                   >
                     <span
@@ -365,12 +369,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                       </span>
                     </span>
                   </a>
-                  <p
-                    class="css-1xcccqf"
+                  <a
+                    class="css-j05cd8"
+                    href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                     tabindex="0"
                   >
-                    Now is Willis’s chance to show he’s got more to offer than Curry
-                  </p>
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-cpjcl7"
+                      >
+                        Now is Willis’s chance to show he’s got more to offer than Curry
+                      </span>
+                    </span>
+                  </a>
                   <div
                     class="css-sb8utn"
                   >
@@ -406,27 +419,31 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                 />
               </div>
               <div
-                class="css-19w1t19"
+                class="css-1wksyc6"
               >
                 <div
-                  class="css-1kwj960"
-                >
-                  <picture
-                    class="css-rrorzh"
-                  >
-                    <img
-                      alt="Deborah Haynes 2"
-                      class="css-176aubw"
-                      loading="lazy"
-                      width="77px"
-                    />
-                  </picture>
-                </div>
-                <div
-                  class="css-xt66pu"
+                  class="css-id8srm"
                 >
                   <a
-                    class="css-gull0f"
+                    href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+                  >
+                    <picture
+                      class="css-1o3l48o"
+                    >
+                      <img
+                        alt="Deborah Haynes 2"
+                        class="css-176aubw"
+                        loading="lazy"
+                        width="77px"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div
+                  class="css-1yqtv4e"
+                >
+                  <a
+                    class="css-4rb6a9"
                     href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                   >
                     <span
@@ -439,12 +456,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                       </span>
                     </span>
                   </a>
-                  <p
-                    class="css-1xcccqf"
+                  <a
+                    class="css-j05cd8"
+                    href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                     tabindex="0"
                   >
-                    Now is Jack's chance to show he’s got more to offer than Curry
-                  </p>
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-cpjcl7"
+                      >
+                        Now is Jack's chance to show he’s got more to offer than Curry
+                      </span>
+                    </span>
+                  </a>
                   <div
                     class="css-sb8utn"
                   >
@@ -533,7 +559,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -612,7 +638,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -691,7 +717,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -770,7 +796,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -860,7 +886,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -956,7 +982,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -1052,7 +1078,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -1148,7 +1174,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -1196,27 +1222,31 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
             class="css-1704wtt"
           >
             <div
-              class="css-19w1t19"
+              class="css-1wksyc6"
             >
               <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-rrorzh"
-                >
-                  <img
-                    alt="Deborah Haynes"
-                    class="css-176aubw"
-                    loading="lazy"
-                    width="77px"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-xt66pu"
+                class="css-id8srm"
               >
                 <a
-                  class="css-gull0f"
+                  href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+                >
+                  <picture
+                    class="css-1o3l48o"
+                  >
+                    <img
+                      alt="Deborah Haynes"
+                      class="css-176aubw"
+                      loading="lazy"
+                      width="77px"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div
+                class="css-1yqtv4e"
+              >
+                <a
+                  class="css-4rb6a9"
                   href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                 >
                   <span
@@ -1229,12 +1259,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </span>
                   </span>
                 </a>
-                <p
-                  class="css-1xcccqf"
+                <a
+                  class="css-j05cd8"
+                  href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                   tabindex="0"
                 >
-                  Now is Willis’s chance to show he’s got more to offer than Curry
-                </p>
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-cpjcl7"
+                    >
+                      Now is Willis’s chance to show he’s got more to offer than Curry
+                    </span>
+                  </span>
+                </a>
                 <div
                   class="css-sb8utn"
                 >
@@ -1270,27 +1309,31 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
               />
             </div>
             <div
-              class="css-19w1t19"
+              class="css-1wksyc6"
             >
               <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-rrorzh"
-                >
-                  <img
-                    alt="Deborah Haynes 2"
-                    class="css-176aubw"
-                    loading="lazy"
-                    width="77px"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-xt66pu"
+                class="css-id8srm"
               >
                 <a
-                  class="css-gull0f"
+                  href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+                >
+                  <picture
+                    class="css-1o3l48o"
+                  >
+                    <img
+                      alt="Deborah Haynes 2"
+                      class="css-176aubw"
+                      loading="lazy"
+                      width="77px"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div
+                class="css-1yqtv4e"
+              >
+                <a
+                  class="css-4rb6a9"
                   href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                 >
                   <span
@@ -1303,12 +1346,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     </span>
                   </span>
                 </a>
-                <p
-                  class="css-1xcccqf"
+                <a
+                  class="css-j05cd8"
+                  href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                   tabindex="0"
                 >
-                  Now is Jack's chance to show he’s got more to offer than Curry
-                </p>
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-cpjcl7"
+                    >
+                      Now is Jack's chance to show he’s got more to offer than Curry
+                    </span>
+                  </span>
+                </a>
                 <div
                   class="css-sb8utn"
                 >
@@ -1442,7 +1494,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="https://www.thetimes.co.uk"
                     role="link"
                   >
@@ -1594,7 +1646,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="https://www.thetimes.co.uk"
                     role="link"
                   >
@@ -1665,27 +1717,31 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               class="css-1704wtt"
             >
               <div
-                class="css-19w1t19"
+                class="css-1wksyc6"
               >
                 <div
-                  class="css-1kwj960"
-                >
-                  <picture
-                    class="css-rrorzh"
-                  >
-                    <img
-                      alt="Deborah Haynes"
-                      class="css-176aubw"
-                      loading="lazy"
-                      width="77px"
-                    />
-                  </picture>
-                </div>
-                <div
-                  class="css-xt66pu"
+                  class="css-id8srm"
                 >
                   <a
-                    class="css-gull0f"
+                    href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+                  >
+                    <picture
+                      class="css-1o3l48o"
+                    >
+                      <img
+                        alt="Deborah Haynes"
+                        class="css-176aubw"
+                        loading="lazy"
+                        width="77px"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div
+                  class="css-1yqtv4e"
+                >
+                  <a
+                    class="css-4rb6a9"
                     href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                   >
                     <span
@@ -1698,12 +1754,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                       </span>
                     </span>
                   </a>
-                  <p
-                    class="css-1xcccqf"
+                  <a
+                    class="css-j05cd8"
+                    href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                     tabindex="0"
                   >
-                    Now is Willis’s chance to show he’s got more to offer than Curry
-                  </p>
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-cpjcl7"
+                      >
+                        Now is Willis’s chance to show he’s got more to offer than Curry
+                      </span>
+                    </span>
+                  </a>
                   <div
                     class="css-sb8utn"
                   >
@@ -1739,27 +1804,31 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                 />
               </div>
               <div
-                class="css-19w1t19"
+                class="css-1wksyc6"
               >
                 <div
-                  class="css-1kwj960"
-                >
-                  <picture
-                    class="css-rrorzh"
-                  >
-                    <img
-                      alt="Deborah Haynes 2"
-                      class="css-176aubw"
-                      loading="lazy"
-                      width="77px"
-                    />
-                  </picture>
-                </div>
-                <div
-                  class="css-xt66pu"
+                  class="css-id8srm"
                 >
                   <a
-                    class="css-gull0f"
+                    href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+                  >
+                    <picture
+                      class="css-1o3l48o"
+                    >
+                      <img
+                        alt="Deborah Haynes 2"
+                        class="css-176aubw"
+                        loading="lazy"
+                        width="77px"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div
+                  class="css-1yqtv4e"
+                >
+                  <a
+                    class="css-4rb6a9"
                     href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                   >
                     <span
@@ -1772,12 +1841,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                       </span>
                     </span>
                   </a>
-                  <p
-                    class="css-1xcccqf"
+                  <a
+                    class="css-j05cd8"
+                    href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                     tabindex="0"
                   >
-                    Now is Jack's chance to show he’s got more to offer than Curry
-                  </p>
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-cpjcl7"
+                      >
+                        Now is Jack's chance to show he’s got more to offer than Curry
+                      </span>
+                    </span>
+                  </a>
                   <div
                     class="css-sb8utn"
                   >
@@ -1866,7 +1944,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -1945,7 +2023,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2024,7 +2102,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2103,7 +2181,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2193,7 +2271,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2289,7 +2367,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2385,7 +2463,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2481,7 +2559,7 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2529,27 +2607,31 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
             class="css-1704wtt"
           >
             <div
-              class="css-19w1t19"
+              class="css-1wksyc6"
             >
               <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-rrorzh"
-                >
-                  <img
-                    alt="Deborah Haynes"
-                    class="css-176aubw"
-                    loading="lazy"
-                    width="77px"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-xt66pu"
+                class="css-id8srm"
               >
                 <a
-                  class="css-gull0f"
+                  href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+                >
+                  <picture
+                    class="css-1o3l48o"
+                  >
+                    <img
+                      alt="Deborah Haynes"
+                      class="css-176aubw"
+                      loading="lazy"
+                      width="77px"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div
+                class="css-1yqtv4e"
+              >
+                <a
+                  class="css-4rb6a9"
                   href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                 >
                   <span
@@ -2562,12 +2644,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </span>
                   </span>
                 </a>
-                <p
-                  class="css-1xcccqf"
+                <a
+                  class="css-j05cd8"
+                  href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                   tabindex="0"
                 >
-                  Now is Willis’s chance to show he’s got more to offer than Curry
-                </p>
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-cpjcl7"
+                    >
+                      Now is Willis’s chance to show he’s got more to offer than Curry
+                    </span>
+                  </span>
+                </a>
                 <div
                   class="css-sb8utn"
                 >
@@ -2603,27 +2694,31 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
               />
             </div>
             <div
-              class="css-19w1t19"
+              class="css-1wksyc6"
             >
               <div
-                class="css-1kwj960"
-              >
-                <picture
-                  class="css-rrorzh"
-                >
-                  <img
-                    alt="Deborah Haynes 2"
-                    class="css-176aubw"
-                    loading="lazy"
-                    width="77px"
-                  />
-                </picture>
-              </div>
-              <div
-                class="css-xt66pu"
+                class="css-id8srm"
               >
                 <a
-                  class="css-gull0f"
+                  href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+                >
+                  <picture
+                    class="css-1o3l48o"
+                  >
+                    <img
+                      alt="Deborah Haynes 2"
+                      class="css-176aubw"
+                      loading="lazy"
+                      width="77px"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <div
+                class="css-1yqtv4e"
+              >
+                <a
+                  class="css-4rb6a9"
                   href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                 >
                   <span
@@ -2636,12 +2731,21 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     </span>
                   </span>
                 </a>
-                <p
-                  class="css-1xcccqf"
+                <a
+                  class="css-j05cd8"
+                  href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
                   tabindex="0"
                 >
-                  Now is Jack's chance to show he’s got more to offer than Curry
-                </p>
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-cpjcl7"
+                    >
+                      Now is Jack's chance to show he’s got more to offer than Curry
+                    </span>
+                  </span>
+                </a>
                 <div
                   class="css-sb8utn"
                 >

@@ -21,7 +21,7 @@ const getRatio = (ratioString: string) => {
 
 export const CardHeadlineLink = styled(CardLink)<{
   $color?: string;
-  $hoverColor?: string;
+  isCommentBucket1?: boolean;
 }>`
   ${({ $color }) => getColorCssFromTheme('color', $color || 'inkContrast')};
   cursor: pointer;
@@ -30,12 +30,15 @@ export const CardHeadlineLink = styled(CardLink)<{
   &&:hover,
   &&:active {
     text-decoration: none;
-    ${({ $hoverColor }) =>
-      getColorCssFromTheme('color', $hoverColor || 'interactiveLink020')};
+    ${getColorCssFromTheme('color', 'interactiveLink020')};
   }
 
   &&:active {
     ${getColorCssFromTheme('color', 'interactiveLink030')};
+  }
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ isCommentBucket1 }) => isCommentBucket1 && 'text-align: center'};
   }
 `;
 
