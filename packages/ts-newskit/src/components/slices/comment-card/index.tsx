@@ -1,16 +1,16 @@
 import {
   CardComposable,
   CardContent,
-  CardMedia,
   Block,
-  useTheme
+  useTheme,
+  Image,
+  GridLayoutItem
 } from 'newskit';
 import React from 'react';
 import { CardHeadlineLink } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { ClickHandlerType, MouseEventType } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
-import { ColouredText } from '../../coloured-text/index';
 
 type ImageCrops = {
   url?: string;
@@ -78,22 +78,24 @@ export const CommentCard = ({
       }}
     >
       {imageWithCorrectRatio && (
-        <CardMedia
-          media={{
-            src: `${imageWithCorrectRatio.url}&resize=360`,
-            alt: (images && images.alt) || byline,
-            loadingAspectRatio: imageWithCorrectRatio.ratio,
-            width: '77px',
-            overrides: {
-              stylePreset: 'imageCircle',
-              marginBlockEnd: {
-                md: isCommentBucket1 ? 'space040' : 'space000',
-                lg: 'space000'
-              }
-            },
-            loading: 'lazy'
-          }}
-        />
+        <GridLayoutItem area="media">
+          <a href={url} onClick={onClick}>
+            <Image
+              src={`${imageWithCorrectRatio.url}&resize=750`}
+              alt={(images && images.alt) || byline}
+              loadingAspectRatio={imageWithCorrectRatio.ratio}
+              width="77px"
+              loading="lazy"
+              overrides={{
+                stylePreset: 'imageCircle',
+                marginBlockEnd: {
+                  md: isCommentBucket1 ? 'space040' : 'space000',
+                  lg: 'space000'
+                }
+              }}
+            />
+          </a>
+        </GridLayoutItem>
       )}
 
       <CardContent
@@ -107,22 +109,23 @@ export const CommentCard = ({
         <CardHeadlineLink
           href={url}
           $color={theme.colors.sectionBrand050 || theme.colors.inkBrand010}
-          $hoverColor={theme.colors.sectionBrand060}
           overrides={{ typographyPreset: 'editorialHeadline010' }}
-          expand
           external={false}
           onClick={onClick}
         >
           {byline}
         </CardHeadlineLink>
-        <ColouredText
-          typographyPreset="editorialRegularHeadline020"
-          $color="sectionBrand070"
+        <CardHeadlineLink
+          href={url}
+          overrides={{ typographyPreset: 'editorialRegularHeadline020' }}
+          $color={theme.colors.sectionBrand070 || theme.colors.inkBase}
+          external={false}
+          onClick={onClick}
           tabIndex={0}
           isCommentBucket1={isCommentBucket1}
         >
           {headline}
-        </ColouredText>
+        </CardHeadlineLink>
         <Block marginBlockStart="space010">
           {flag && (
             <TagAndFlag

@@ -15,7 +15,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
         class="css-14sj7dz"
       >
         <p
-          class="css-1obztdp"
+          class="css-kkkz9d"
         >
           Home
         </p>
@@ -223,7 +223,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
         class="css-14sj7dz"
       >
         <p
-          class="css-1obztdp"
+          class="css-kkkz9d"
         >
           Home
         </p>

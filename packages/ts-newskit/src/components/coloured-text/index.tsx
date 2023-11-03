@@ -1,17 +1,5 @@
-import {
-  styled,
-  getColorCssFromTheme,
-  TextBlock,
-  getMediaQueryFromTheme
-} from 'newskit';
+import { styled, getColorCssFromTheme, TextBlock } from 'newskit';
 
-export const ColouredText = styled(TextBlock)<{
-  $color?: string;
-  isCommentBucket1?: boolean;
-}>`
+export const ColouredText = styled(TextBlock)<{ $color?: string }>`
   ${({ $color }) => $color && getColorCssFromTheme('color', $color)};
-
-  ${getMediaQueryFromTheme('md', 'lg')} {
-    ${({ isCommentBucket1 }) => isCommentBucket1 && 'text-align: center'};
-  }
 `;

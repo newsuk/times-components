@@ -17,24 +17,28 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
         class="css-3jp9qu"
       >
         <div
-          class="css-1kwj960"
+          class="css-id8srm"
         >
-          <picture
-            class="css-1wu5sn8"
+          <a
+            href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
           >
-            <img
-              alt="Martin Samuel"
-              class="css-176aubw"
-              loading="lazy"
-              width="77px"
-            />
-          </picture>
+            <picture
+              class="css-1wu5sn8"
+            >
+              <img
+                alt="Martin Samuel"
+                class="css-176aubw"
+                loading="lazy"
+                width="77px"
+              />
+            </picture>
+          </a>
         </div>
         <div
           class="css-18z9vru"
         >
           <a
-            class="css-gull0f"
+            class="css-4rb6a9"
             href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
           >
             <span
@@ -47,12 +51,21 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
               </span>
             </span>
           </a>
-          <p
-            class="css-1tu9cmx"
+          <a
+            class="css-af9wz9"
+            href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
             tabindex="0"
           >
-            Why unblinking Levy is the Pavlov's cat of football
-          </p>
+            <span
+              class="css-17x5lw"
+            >
+              <span
+                class="css-cpjcl7"
+              >
+                Why unblinking Levy is the Pavlov's cat of football
+              </span>
+            </span>
+          </a>
           <div
             class="css-sb8utn"
           >
@@ -91,24 +104,28 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
         class="css-3jp9qu"
       >
         <div
-          class="css-1kwj960"
+          class="css-id8srm"
         >
-          <picture
-            class="css-1wu5sn8"
+          <a
+            href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
           >
-            <img
-              alt="Martin Samuel"
-              class="css-176aubw"
-              loading="lazy"
-              width="77px"
-            />
-          </picture>
+            <picture
+              class="css-1wu5sn8"
+            >
+              <img
+                alt="Martin Samuel"
+                class="css-176aubw"
+                loading="lazy"
+                width="77px"
+              />
+            </picture>
+          </a>
         </div>
         <div
           class="css-18z9vru"
         >
           <a
-            class="css-gull0f"
+            class="css-4rb6a9"
             href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
           >
             <span
@@ -121,12 +138,21 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
               </span>
             </span>
           </a>
-          <p
-            class="css-1tu9cmx"
+          <a
+            class="css-af9wz9"
+            href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
             tabindex="0"
           >
-            Why unblinking Levy is the Pavlov's cat of football
-          </p>
+            <span
+              class="css-17x5lw"
+            >
+              <span
+                class="css-cpjcl7"
+              >
+                Why unblinking Levy is the Pavlov's cat of football
+              </span>
+            </span>
+          </a>
           <div
             class="css-sb8utn"
           >
@@ -165,24 +191,28 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
         class="css-3jp9qu"
       >
         <div
-          class="css-1kwj960"
+          class="css-id8srm"
         >
-          <picture
-            class="css-1wu5sn8"
+          <a
+            href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
           >
-            <img
-              alt="Martin Samuel"
-              class="css-176aubw"
-              loading="lazy"
-              width="77px"
-            />
-          </picture>
+            <picture
+              class="css-1wu5sn8"
+            >
+              <img
+                alt="Martin Samuel"
+                class="css-176aubw"
+                loading="lazy"
+                width="77px"
+              />
+            </picture>
+          </a>
         </div>
         <div
           class="css-18z9vru"
         >
           <a
-            class="css-gull0f"
+            class="css-4rb6a9"
             href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
           >
             <span
@@ -195,12 +225,21 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
               </span>
             </span>
           </a>
-          <p
-            class="css-1tu9cmx"
+          <a
+            class="css-af9wz9"
+            href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
             tabindex="0"
           >
-            Why unblinking Levy is the Pavlov's cat of football
-          </p>
+            <span
+              class="css-17x5lw"
+            >
+              <span
+                class="css-cpjcl7"
+              >
+                Why unblinking Levy is the Pavlov's cat of football
+              </span>
+            </span>
+          </a>
           <div
             class="css-sb8utn"
           >

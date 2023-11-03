@@ -6,24 +6,28 @@ exports[`should render component to match snapshot 1`] = `
     class="css-1wksyc6"
   >
     <div
-      class="css-1kwj960"
+      class="css-id8srm"
     >
-      <picture
-        class="css-1o3l48o"
+      <a
+        href="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       >
-        <img
-          alt="Journalist name"
-          class="css-176aubw"
-          loading="lazy"
-          width="77px"
-        />
-      </picture>
+        <picture
+          class="css-1o3l48o"
+        >
+          <img
+            alt="Journalist name"
+            class="css-176aubw"
+            loading="lazy"
+            width="77px"
+          />
+        </picture>
+      </a>
     </div>
     <div
       class="css-1yqtv4e"
     >
       <a
-        class="css-gull0f"
+        class="css-4rb6a9"
         href="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       >
         <span
@@ -36,12 +40,21 @@ exports[`should render component to match snapshot 1`] = `
           </span>
         </span>
       </a>
-      <p
-        class="css-1assl38"
+      <a
+        class="css-j05cd8"
+        href="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
         tabindex="0"
       >
-        Quote text
-      </p>
+        <span
+          class="css-17x5lw"
+        >
+          <span
+            class="css-cpjcl7"
+          >
+            Quote text
+          </span>
+        </span>
+      </a>
       <div
         class="css-sb8utn"
       />
