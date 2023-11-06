@@ -28,7 +28,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-86452u"
+                  class="article-info css-1wte5n0"
                 >
                   <span
                     class="css-6tvr2h"
@@ -154,7 +154,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-86452u"
+                  class="article-info css-1wte5n0"
                 >
                   <span
                     class="css-6tvr2h"
@@ -323,7 +323,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-86452u"
+                class="article-info css-1wte5n0"
               >
                 <span
                   class="css-6tvr2h"
@@ -483,7 +483,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-86452u"
+                class="article-info css-1wte5n0"
               >
                 <span
                   class="css-6tvr2h"
@@ -620,7 +620,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-86452u"
+                  class="article-info css-1wte5n0"
                 >
                   <span
                     class="css-6tvr2h"
@@ -746,7 +746,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-86452u"
+                  class="article-info css-1wte5n0"
                 >
                   <span
                     class="css-6tvr2h"
@@ -915,7 +915,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-86452u"
+                class="article-info css-1wte5n0"
               >
                 <span
                   class="css-6tvr2h"
@@ -1075,7 +1075,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-86452u"
+                class="article-info css-1wte5n0"
               >
                 <span
                   class="css-6tvr2h"
