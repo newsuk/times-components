@@ -8,6 +8,7 @@ import { SecondaryNavContainer } from './styles';
 interface SecondaryNavigationProps {
   data: SecondaryMenuItem[];
   pageSlug: string;
+  title: string;
   stickyTop?: number;
   stickyTopDesktop?: number;
   onClick?: (isExpanded: boolean) => void;
@@ -19,6 +20,7 @@ interface SecondaryNavigationProps {
 export const SecondaryNavigation = ({
   data,
   pageSlug,
+  title,
   stickyTopDesktop,
   stickyTop,
   onClick,
@@ -57,6 +59,7 @@ export const SecondaryNavigation = ({
       <Visible sm xs>
         <SecondaryNavMobile
           data={data}
+          title={title}
           options={options}
           onClick={onClick}
           height={heightMobile}

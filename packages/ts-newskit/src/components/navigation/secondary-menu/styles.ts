@@ -76,6 +76,9 @@ export const MenuContainerMob = styled(StyledBlock)`
   align-items: center;
   ${getColorCssFromTheme('backgroundColor', 'neutral010')};
   ${getColorCssFromTheme('backgroundColor', 'sectionBrand060')};
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const MenuContainer = styled(Menu)`

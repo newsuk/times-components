@@ -12,12 +12,12 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
       role="list"
     >
       <div
-        class="css-14sj7dz"
+        class="css-d53q5n"
       >
         <p
           class="css-kkkz9d"
         >
-          Home
+          See all 
         </p>
         <li
           class="nk-menu-item css-zbkqx2"
@@ -220,12 +220,12 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
       role="list"
     >
       <div
-        class="css-14sj7dz"
+        class="css-d53q5n"
       >
         <p
           class="css-kkkz9d"
         >
-          Home
+          See all 
         </p>
         <li
           class="nk-menu-item css-zbkqx2"
