@@ -28,7 +28,7 @@ const SliceHeaderLinkWrapper = ({
 }) => {
   if (href) {
     return (
-      <SliceHeaderLink href={href} onClick={onClick}>
+      <SliceHeaderLink href={href} onClick={onClick} tabIndex={0}>
         {children}
       </SliceHeaderLink>
     );

@@ -1,19 +1,10 @@
 import React from 'react';
-import {
-  screen,
-  render,
-  within,
-  fireEvent
-} from '../../../../../utils/test-utils';
+import { screen, within, fireEvent } from '../../../../../utils/test-utils';
 import '@testing-library/jest-dom';
-import { useBreakpointKey } from 'newskit';
+import { BreakpointKeys } from 'newskit';
+import { renderComponent } from '../../../../../utils';
 import { TopNav } from '../topnav';
 import data from '../../fixtures/data.json';
-
-jest.mock('newskit', () => ({
-  ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
-}));
 
 afterAll(() => {
   jest.clearAllMocks();
@@ -21,43 +12,35 @@ afterAll(() => {
   jest.restoreAllMocks();
 });
 
-const renderComponent = (isLoggedIn?: boolean) =>
-  render(
+const renderMenu = (isLoggedIn: boolean, size: BreakpointKeys = 'xl') =>
+  renderComponent(
     <TopNav
       isLoggedIn={isLoggedIn}
       mainMenu={data.mainMenuItems}
       accountMenu={data.accountMenuItems}
       isHamburgerOpen={false}
       toggleHamburger={jest.fn}
-    />
+    />,
+    size
   );
 
 describe('createMenu', () => {
   it('should render the correct menu length at "lg" breakpoint', async () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
+    renderMenu(false, 'lg');
 
-    renderComponent();
-
-    const menu = screen.getByRole('list');
-    const menuItems = within(menu).queryAllByRole('listitem');
-
-    expect(menuItems.length).toEqual(5);
+    const { asFragment } = renderMenu(false, 'lg');
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render the correct menu length at other breakpoints', async () => {
-    (useBreakpointKey as any).mockReturnValue('xs');
+    renderMenu(false, 'xs');
 
-    renderComponent();
-    const menu = screen.getByRole('list');
-    const menuItems = within(menu).queryAllByRole('listitem');
-
-    expect(menuItems.length).toEqual(9);
+    const { asFragment } = renderMenu(false, 'lg');
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('should trigger "selected" value when <MenuSub> is clicked', async () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
-
-    renderComponent();
+    renderMenu(false, 'lg');
     const menu = screen.getByRole('list');
     const MenuSub = within(menu).getByTestId('menu-sub-button');
 
@@ -68,7 +51,7 @@ describe('createMenu', () => {
 
 describe('accountCreateMenu', () => {
   it('isLoggedIn Menu', async () => {
-    renderComponent(true);
+    renderMenu(true);
     const menu = screen.getByLabelText('My Account Menu');
     const MenuSub = within(menu).getByTestId('menu-sub-button');
 
@@ -79,9 +62,7 @@ describe('accountCreateMenu', () => {
 
 describe('NavButtons Logged Out', () => {
   it('should render the correct menu length at other breakpoints', async () => {
-    (useBreakpointKey as any).mockReturnValue('xs');
-
-    renderComponent();
+    renderMenu(false, 'xs');
     const accountButtons = screen.getByRole('region', {
       name: 'My Account Navigation'
     });
@@ -90,7 +71,7 @@ describe('NavButtons Logged Out', () => {
   });
 
   it('should change the style based on the preset prop passed - Secondary', () => {
-    renderComponent();
+    renderMenu(false);
     const loginBtn = screen.getByRole('link', { name: 'Log in' });
     const subscribeBtn = screen.getByRole('link', { name: 'Subscribe' });
 
