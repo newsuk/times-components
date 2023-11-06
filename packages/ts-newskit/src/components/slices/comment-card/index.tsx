@@ -118,7 +118,7 @@ export const CommentCard = ({
         <CardHeadlineLink
           href={url}
           overrides={{ typographyPreset: 'editorialRegularHeadline020' }}
-          $color={theme.colors.sectionBrand070 || theme.colors.inkBase}
+          $color={theme.colors.sectionBrand080 || theme.colors.inkBase}
           external={false}
           onClick={onClick}
           tabIndex={0}
