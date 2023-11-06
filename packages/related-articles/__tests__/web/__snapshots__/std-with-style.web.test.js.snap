@@ -340,7 +340,9 @@ exports[`default styles 1`] = `
   >
     <h3
       className="c1"
-    />
+    >
+      Read more
+    </h3>
   </div>
   <div
     className="c2"

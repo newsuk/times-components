@@ -24,6 +24,7 @@ const RelatedArticlesHeading = () => (
       aria-level="3"
       styles={checkStylesForUnits(styles.title)}
     >
+      Read more
     </HeadingForRelatedArticles>
   </TcView>
 );
