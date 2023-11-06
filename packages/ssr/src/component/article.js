@@ -32,6 +32,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     swgProductId,
     getFallbackThumbnailUrl169,
     zephrDivs,
+    showAudioPlayer,
     sharingSavingFlag,
     commentingFlag,
     showAudioPlayer

@@ -23,6 +23,7 @@ module.exports = (
     swgProductId,
     getFallbackThumbnailUrl169,
     zephrDivs,
+    showAudioPlayer,
     sharingSavingFlag = true,
     commentingFlag = true,
     showAudioPlayer
@@ -76,6 +77,7 @@ module.exports = (
       isPreview,
       swgProductId,
       zephrDivs,
+      showAudioPlayer,
       sharingSavingFlag,
       commentingFlag,
       showAudioPlayer

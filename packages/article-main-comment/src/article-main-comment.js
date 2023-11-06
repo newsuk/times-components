@@ -68,7 +68,8 @@ class ArticlePage extends Component {
       isPreview,
       showAudioPlayer,
       swgProductId,
-      zephrDivs
+      zephrDivs,
+      showAudioPlayer
     } = this.props;
 
     if (error || isLoading) {

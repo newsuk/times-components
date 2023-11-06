@@ -21,7 +21,8 @@ const articleSkeletonDefaultProps = {
   Header: () => null,
   receiveChildList: () => {},
   swgProductId: null,
-  zephrDivs: false
+  zephrDivs: false,
+  showAudioPlayer: false
 };
 
 export { articleSkeletonPropTypes, articleSkeletonDefaultProps };

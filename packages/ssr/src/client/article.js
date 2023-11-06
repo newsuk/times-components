@@ -15,6 +15,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     swgProductId,
     zephrDivs,
+    showAudioPlayer,
     sharingSavingFlag = true,
     commentingFlag = true,
     showAudioPlayer
@@ -35,6 +36,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     swgProductId,
     zephrDivs,
+    showAudioPlayer,
     sharingSavingFlag,
     commentingFlag,
     showAudioPlayer

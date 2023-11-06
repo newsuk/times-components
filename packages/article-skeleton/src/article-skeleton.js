@@ -231,6 +231,9 @@ const ArticleSkeleton = ({
                     }
                   />
                 )}
+                {!!showAudioPlayer && (
+                  <InArticleAudio {...{ src, readyToPlayText, playingText, narrator, headline, feedback }} />
+                )}
               </HeaderContainer>
               <BodyContainer>
                 {!!zephrDivs && (
