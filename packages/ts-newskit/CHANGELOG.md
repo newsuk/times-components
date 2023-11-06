@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.129.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.128.0...@times-components/ts-newskit@1.129.0) (2023-11-06)
+
+
+### Features
+
+* **TMRX-1630:** Secondary nav updates ([#3630](https://github.com/newsuk/times-components/issues/3630)) ([db56390](https://github.com/newsuk/times-components/commit/db563901a673f92a71cf06d843ad7e7e1a5e5b87))
+
+
+
+
+
 # [1.128.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.127.0...@times-components/ts-newskit@1.128.0) (2023-11-06)
 
 
