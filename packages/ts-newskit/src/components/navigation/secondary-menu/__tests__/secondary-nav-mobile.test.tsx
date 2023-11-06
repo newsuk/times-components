@@ -21,6 +21,7 @@ describe('Secondary Menu', () => {
     const { asFragment } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
+        title=""
         options={options}
         onClick={() => {
           // noop

@@ -12,8 +12,7 @@
         "devDependencies": ["**/storybook/**"],
         "optionalDependencies": false
       }
-    ],
-    "no-console": "off"
+    ]  
   },
   "settings": {
     "import/resolver": {

@@ -29,6 +29,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -139,7 +140,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -215,7 +216,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -291,7 +292,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -326,6 +327,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -436,7 +438,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -512,7 +514,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -588,7 +590,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -623,6 +625,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -733,7 +736,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -809,7 +812,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -885,7 +888,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -920,6 +923,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -1030,7 +1034,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -1106,7 +1110,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -1182,7 +1186,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -1231,6 +1235,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -1341,7 +1346,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -1417,7 +1422,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -1493,7 +1498,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -1528,6 +1533,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -1638,7 +1644,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -1714,7 +1720,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -1790,7 +1796,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -1825,6 +1831,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -1935,7 +1942,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2011,7 +2018,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2087,7 +2094,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2122,6 +2129,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -2232,7 +2240,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2308,7 +2316,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2384,7 +2392,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -2445,6 +2453,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -2555,7 +2564,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2631,7 +2640,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2707,7 +2716,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2742,6 +2751,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -2852,7 +2862,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -2928,7 +2938,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -3004,7 +3014,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -3039,6 +3049,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -3149,7 +3160,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -3225,7 +3236,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -3301,7 +3312,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -3336,6 +3347,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 <a
                   class="css-1pyvojw"
                   href="https://www.thetimes.co.uk/"
+                  tabindex="0"
                 >
                   <div
                     class="css-1xlmj6j"
@@ -3446,7 +3458,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -3522,7 +3534,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -3598,7 +3610,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     </div>
                   </div>
                   <a
-                    class="article-headline css-17mo6gr"
+                    class="article-headline css-dkllnh"
                     href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                     role="link"
                   >
@@ -3647,6 +3659,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -3757,7 +3770,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3833,7 +3846,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3909,7 +3922,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -3944,6 +3957,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -4054,7 +4068,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -4130,7 +4144,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -4206,7 +4220,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -4241,6 +4255,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -4351,7 +4366,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -4427,7 +4442,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -4503,7 +4518,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -4538,6 +4553,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
               <a
                 class="css-1pyvojw"
                 href="https://www.thetimes.co.uk/"
+                tabindex="0"
               >
                 <div
                   class="css-1xlmj6j"
@@ -4648,7 +4664,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -4724,7 +4740,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >
@@ -4800,7 +4816,7 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   </div>
                 </div>
                 <a
-                  class="article-headline css-17mo6gr"
+                  class="article-headline css-dkllnh"
                   href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
                   role="link"
                 >

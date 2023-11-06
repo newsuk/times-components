@@ -8,6 +8,7 @@ exports[`Render Header should render a snapshot 1`] = `
     <a
       class="css-1pyvojw"
       href="https://www.thetimes.co.uk/"
+      tabindex="0"
     >
       <div
         class="css-dtd8ey"

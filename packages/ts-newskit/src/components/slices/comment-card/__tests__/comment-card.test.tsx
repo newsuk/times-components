@@ -96,8 +96,8 @@ it('should render the correct image', () => {
 });
 
 it('should call the click handler when clicked', () => {
-  const { getByRole } = renderComponent(defaultProps, mockClickHandler);
-  fireEvent.click(getByRole('link'));
+  const { getAllByRole } = renderComponent(defaultProps, mockClickHandler);
+  fireEvent.click(getAllByRole('link')[0]);
   expect(mockClickHandler).toHaveBeenCalled();
 });
 

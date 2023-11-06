@@ -20,6 +20,13 @@ export const sliceStylePresets = {
       borderColor: '{{colors.interface050}}'
     }
   },
+  commentCardlightDivider: {
+    base: {
+      borderStyle: 'solid',
+      borderWidth: '0 0 0 {{borders.borderWidth010}}',
+      borderColor: '{{colors.interface040}}'
+    }
+  },
   expirableFlagPreset: {
     base: {
       color: '{{colors.interactiveNegative030}}'

@@ -21,6 +21,7 @@ describe('Secondary Menu Desktop', () => {
       <SecondaryNavigation
         data={mainMenuItems}
         pageSlug="home"
+        title=""
         stickyTop={110}
         onClick={() => {
           // noop

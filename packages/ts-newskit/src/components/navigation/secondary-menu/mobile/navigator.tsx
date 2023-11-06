@@ -13,7 +13,13 @@ export const Navigator: React.FC<{
   const theme = useTheme();
 
   return (
-    <MenuContainerMob paddingInline="space045">
+    <MenuContainerMob
+      paddingInline="space045"
+      onClick={() => {
+        setIsExpanded(!isExpanded);
+        onClick && onClick(!isExpanded);
+      }}
+    >
       <ColouredText
         typographyPreset="utilitySubheading010"
         $color={theme.colors.sectionBrand060 && 'white'}
@@ -22,10 +28,6 @@ export const Navigator: React.FC<{
       </ColouredText>
       <MenuSubMob
         expanded={isExpanded}
-        onClick={() => {
-          setIsExpanded(!isExpanded);
-          onClick && onClick(!isExpanded);
-        }}
         aria-label={
           isExpanded ? 'Collapse Secondary Menu' : 'Expand Secondary Menu'
         }

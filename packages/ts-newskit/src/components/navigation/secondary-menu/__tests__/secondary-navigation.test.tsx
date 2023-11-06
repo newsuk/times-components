@@ -28,6 +28,7 @@ describe('Secondary Menu', () => {
       <SecondaryNavigation
         data={mainMenuItems}
         pageSlug="home"
+        title=""
         stickyTop={0}
         onClick={() => {
           // noop
@@ -43,6 +44,7 @@ describe('Secondary Menu', () => {
       <SecondaryNavigation
         data={[mainMenuItems[0], mainMenuItems[1]]}
         pageSlug=""
+        title=""
         stickyTop={0}
         onClick={() => {
           // noop
@@ -67,6 +69,7 @@ describe('Secondary Menu', () => {
       <SecondaryNavigation
         data={[mainMenuItems[0], mainMenuItems[1]]}
         pageSlug=""
+        title=""
         stickyTop={0}
         defaultSelectedIndex={0}
         onClick={() => {
@@ -92,6 +95,7 @@ describe('Secondary Menu', () => {
       <SecondaryNavigation
         data={mainMenuItems}
         pageSlug="home"
+        title=""
         stickyTop={110}
         stickyTopDesktop={60}
         onClick={() => {

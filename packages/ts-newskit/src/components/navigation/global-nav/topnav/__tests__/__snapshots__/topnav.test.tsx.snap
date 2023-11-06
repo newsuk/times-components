@@ -4,7 +4,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-cfp6i5"
+    class="css-1jefh8t"
   >
     <div
       class="css-1ycac6s"
@@ -308,6 +308,132 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   </span>
                 </a>
               </li>
+              <div
+                class="css-yj8ahp"
+              >
+                <li
+                  class="nk-menu-item css-1i1v9fb"
+                >
+                  <button
+                    aria-expanded="false"
+                    class="css-au5zjl"
+                    data-testid="menu-sub-button"
+                    type="button"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      More
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="css-v7cizm"
+                  >
+                    <nav
+                      aria-label="More menu items"
+                      class="css-1e8qhdd"
+                      data-testid="menu-container"
+                      role="navigation"
+                    >
+                      <ul
+                        role="list"
+                      >
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/arts-and-books"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Arts & Books
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/sport"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Sport
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/business-and-money"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Business & Money
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/puzzles"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Puzzles
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/magazines"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Magazines
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </ul>
+                </li>
+              </div>
             </ul>
           </nav>
         </div>
@@ -755,6 +881,132 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   </span>
                 </a>
               </li>
+              <div
+                class="css-yj8ahp"
+              >
+                <li
+                  class="nk-menu-item css-1iaj8wm"
+                >
+                  <button
+                    aria-expanded="false"
+                    class="css-au5zjl"
+                    data-testid="menu-sub-button"
+                    type="button"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      More
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="css-v7cizm"
+                  >
+                    <nav
+                      aria-label="More menu items"
+                      class="css-1e8qhdd"
+                      data-testid="menu-container"
+                      role="navigation"
+                    >
+                      <ul
+                        role="list"
+                      >
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/arts-and-books"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Arts & Books
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/sport"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Sport
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/business-and-money"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Business & Money
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/puzzles"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Puzzles
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/magazines"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Magazines
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </ul>
+                </li>
+              </div>
             </ul>
           </nav>
         </div>
@@ -773,7 +1025,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-cfp6i5"
+    class="css-1jefh8t"
   >
     <div
       class="css-1ycac6s"
@@ -1077,6 +1329,132 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   </span>
                 </a>
               </li>
+              <div
+                class="css-yj8ahp"
+              >
+                <li
+                  class="nk-menu-item css-1i1v9fb"
+                >
+                  <button
+                    aria-expanded="false"
+                    class="css-au5zjl"
+                    data-testid="menu-sub-button"
+                    type="button"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      More
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="css-v7cizm"
+                  >
+                    <nav
+                      aria-label="More menu items"
+                      class="css-1e8qhdd"
+                      data-testid="menu-container"
+                      role="navigation"
+                    >
+                      <ul
+                        role="list"
+                      >
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/arts-and-books"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Arts & Books
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/sport"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Sport
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/business-and-money"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Business & Money
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/puzzles"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Puzzles
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/magazines"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Magazines
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </ul>
+                </li>
+              </div>
             </ul>
           </nav>
         </div>
@@ -1437,6 +1815,132 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   </span>
                 </a>
               </li>
+              <div
+                class="css-yj8ahp"
+              >
+                <li
+                  class="nk-menu-item css-1iaj8wm"
+                >
+                  <button
+                    aria-expanded="false"
+                    class="css-au5zjl"
+                    data-testid="menu-sub-button"
+                    type="button"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      More
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="css-v7cizm"
+                  >
+                    <nav
+                      aria-label="More menu items"
+                      class="css-1e8qhdd"
+                      data-testid="menu-container"
+                      role="navigation"
+                    >
+                      <ul
+                        role="list"
+                      >
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/arts-and-books"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Arts & Books
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/sport"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Sport
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/business-and-money"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Business & Money
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/puzzles"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Puzzles
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/magazines"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Magazines
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </ul>
+                </li>
+              </div>
             </ul>
           </nav>
         </div>
@@ -1455,7 +1959,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-cfp6i5"
+    class="css-1jefh8t"
   >
     <div
       class="css-1ycac6s"
@@ -1749,6 +2253,132 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   </span>
                 </a>
               </li>
+              <div
+                class="css-yj8ahp"
+              >
+                <li
+                  class="nk-menu-item css-1i1v9fb"
+                >
+                  <button
+                    aria-expanded="false"
+                    class="css-au5zjl"
+                    data-testid="menu-sub-button"
+                    type="button"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      More
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="css-v7cizm"
+                  >
+                    <nav
+                      aria-label="More menu items"
+                      class="css-1e8qhdd"
+                      data-testid="menu-container"
+                      role="navigation"
+                    >
+                      <ul
+                        role="list"
+                      >
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/arts-and-books"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Arts & Books
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/sport"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Sport
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/business-and-money"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Business & Money
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/puzzles"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Puzzles
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/magazines"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Magazines
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </ul>
+                </li>
+              </div>
             </ul>
           </nav>
         </div>
@@ -2186,6 +2816,132 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   </span>
                 </a>
               </li>
+              <div
+                class="css-yj8ahp"
+              >
+                <li
+                  class="nk-menu-item css-1iaj8wm"
+                >
+                  <button
+                    aria-expanded="false"
+                    class="css-au5zjl"
+                    data-testid="menu-sub-button"
+                    type="button"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      More
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="css-v7cizm"
+                  >
+                    <nav
+                      aria-label="More menu items"
+                      class="css-1e8qhdd"
+                      data-testid="menu-container"
+                      role="navigation"
+                    >
+                      <ul
+                        role="list"
+                      >
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/arts-and-books"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Arts & Books
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/sport"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Sport
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/business-and-money"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Business & Money
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/puzzles"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Puzzles
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-thzfib"
+                            data-testid="buttonLink"
+                            href="/magazines"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Magazines
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </ul>
+                </li>
+              </div>
             </ul>
           </nav>
         </div>

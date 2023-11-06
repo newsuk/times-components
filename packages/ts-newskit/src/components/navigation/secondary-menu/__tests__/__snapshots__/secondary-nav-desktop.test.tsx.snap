@@ -18,12 +18,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           role="list"
         >
           <div
-            class="css-14sj7dz"
+            class="css-d53q5n"
           >
             <p
               class="css-kkkz9d"
             >
-              Home
+              See all 
             </p>
             <li
               class="nk-menu-item css-zbkqx2"

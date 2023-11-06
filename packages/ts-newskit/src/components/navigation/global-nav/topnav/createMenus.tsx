@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Menu,
-  MenuItem,
-  MenuSub,
-  MenuDivider,
-  useBreakpointKey
-} from 'newskit';
+import { Menu, MenuItem, MenuSub, MenuDivider, Visible } from 'newskit';
 import { AccountMenu } from '../styles';
 
 const menuItemPresets = {
@@ -16,14 +10,11 @@ const menuItemPresets = {
 };
 
 export const createMenu = (menuData: any) => {
-  const breakpointKey = useBreakpointKey();
   const [moreSelected, setMoreSelected] = useState<boolean>(false);
 
-  const menuItems = breakpointKey === 'lg' ? 4 : menuData.length;
-
-  const moreMenuLength = menuData.length - menuItems;
+  const moreMenuLength = menuData.length - 4;
   const navItems = menuData
-    .slice(0, menuItems)
+    .slice(0, menuData.length)
     .map(({ title, url }: { title: string; url: string }) => (
       <MenuItem
         href={url}
@@ -43,31 +34,31 @@ export const createMenu = (menuData: any) => {
       </MenuItem>
     ));
 
-  return menuItems === 4 ? (
+  return (
     <>
       {navItems}
-      <MenuSub
-        title="More"
-        onClick={() => setMoreSelected(!moreSelected)}
-        selected={moreSelected}
-        expanded={moreSelected}
-        overrides={{
-          ...menuItemPresets,
-          list: { stylePreset: 'moreSubMenu' }
-        }}
-        data-testid="more-sub-menu"
-      >
-        <Menu
-          vertical
-          overrides={{ spaceInline: 'sizing000' }}
-          aria-label="More menu items"
+      <Visible lg>
+        <MenuSub
+          title="More"
+          onClick={() => setMoreSelected(!moreSelected)}
+          selected={moreSelected}
+          expanded={moreSelected}
+          overrides={{
+            ...menuItemPresets,
+            list: { stylePreset: 'moreSubMenu' }
+          }}
+          data-testid="more-sub-menu"
         >
-          {createMoreMenu(menuData, moreMenuLength)}
-        </Menu>
-      </MenuSub>
+          <Menu
+            vertical
+            overrides={{ spaceInline: 'sizing000' }}
+            aria-label="More menu items"
+          >
+            {createMoreMenu(menuData, moreMenuLength)}
+          </Menu>
+        </MenuSub>
+      </Visible>
     </>
-  ) : (
-    navItems
   );
 };
 
