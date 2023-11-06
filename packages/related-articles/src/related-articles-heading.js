@@ -18,14 +18,14 @@ export const HeadingForRelatedArticles = styled.h3`
   ${props => props.styles && props.styles};
 `;
 
-const RelatedArticlesHeading = ({ heading }) => (
+const RelatedArticlesHeading = () => (
   <TcView style={styles.titleContainer}>
     <HeadingForRelatedArticles
       role="heading"
       aria-level="3"
       styles={checkStylesForUnits(styles.title)}
     >
-      {heading}
+      Read more
     </HeadingForRelatedArticles>
   </TcView>
 );
