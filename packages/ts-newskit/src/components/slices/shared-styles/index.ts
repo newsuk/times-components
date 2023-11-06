@@ -110,8 +110,11 @@ export const StyledTextBlock = styled(TextBlock)`
 `;
 
 export const StyledBlock = styled(Block)`
+  position: relative;
   display: flex;
   align-items: last baseline;
+  flex-wrap: wrap;
+  ${getSpacingCssFromTheme('row-gap', 'space020')};
 `;
 
 export const Wrapper = styled.div`

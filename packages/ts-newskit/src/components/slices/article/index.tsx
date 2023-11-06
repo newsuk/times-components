@@ -86,12 +86,6 @@ export const Article = ({
     contentType,
     hasVideo
   } = article;
-  if (article.expirableFlags) {
-    console.log('==========expirableFlags', article.expirableFlags, article);
-  }
-  if (article.label) {
-    console.log('==========label', article.label, article);
-  }
 
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
