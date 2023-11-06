@@ -6,9 +6,7 @@ exports[`1. three related articles 1`] = `
     <h3
       aria-level="3"
       role="heading"
-    >
-      Read more
-    </h3>
+    />
   </div>
   <div>
     <div>

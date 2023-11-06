@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { TcView, checkStylesForUnits } from "@times-components/utils";
-import PropTypes from "prop-types";
 
 import styles from "./styles";
 
@@ -25,17 +24,10 @@ const RelatedArticlesHeading = () => (
       aria-level="3"
       styles={checkStylesForUnits(styles.title)}
     >
-      Read more
     </HeadingForRelatedArticles>
   </TcView>
 );
 
-RelatedArticlesHeading.propTypes = {
-  heading: PropTypes.string
-};
 
-RelatedArticlesHeading.defaultProps = {
-  heading: "Related articles"
-};
 
 export default RelatedArticlesHeading;
