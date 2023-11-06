@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { TcView, checkStylesForUnits } from "@times-components/utils";
-
 import styles from "./styles";
 
 export const HeadingForRelatedArticles = styled.h3`
