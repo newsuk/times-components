@@ -42,7 +42,7 @@ export const RecommendedFetch: React.FC<{
     }
   }, []);
 
-  const heading = `Today\u{2019}s ${getSectionText(articleSection)}`;
+  const heading = 'Read more';
 
   return isClientSide ? (
     <FetchProvider
