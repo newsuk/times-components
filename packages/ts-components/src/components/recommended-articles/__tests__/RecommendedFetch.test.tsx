@@ -38,7 +38,7 @@ describe('<RecommendedFetch>', () => {
 
     expect(getByText('FetchProvider'));
     expect(getByText('RecommendedArticles'));
-    expect(getByText('Today’s news'));
+    expect(getByText('Read more'));
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -52,7 +52,7 @@ describe('<RecommendedFetch>', () => {
       />
     );
 
-    expect(getByText('Today’s Scotland'));
+    expect(getByText('Read more'));
   });
 
   it('should render an uppercase section name for Ireland', () => {
@@ -64,6 +64,6 @@ describe('<RecommendedFetch>', () => {
       />
     );
 
-    expect(getByText('Today’s Ireland'));
+    expect(getByText('Read more'));
   });
 });
