@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.81.6](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.81.5...@times-components/ts-components@1.81.6) (2023-11-07)
+
+
+### Bug Fixes
+
+* **TMRX-1634:** change today's rail title ([#3638](https://github.com/newsuk/times-components/issues/3638)) ([6d7af7a](https://github.com/newsuk/times-components/commit/6d7af7ad1dde42b73bc16e4cd30eff8eef547e4f))
+
+
+
+
+
 ## [1.81.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.81.4...@times-components/ts-components@1.81.5) (2023-10-19)
 
 **Note:** Version bump only for package @times-components/ts-components
