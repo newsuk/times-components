@@ -345,8 +345,8 @@ exports[`7. an article list header 1`] = `
       <div>
         <div>
           <IconTwitter
-            height={15}
-            width={15}
+            height={12}
+            width={12}
           />
         </div>
         <TextLink
