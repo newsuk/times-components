@@ -24,6 +24,7 @@ export const RecommendedFetch: React.FC<{
   useEffect(() => {
     try {
       const acsCookie = window.nuk.getCookieValue('acs_tnl');
+
       const envName = window.__TIMES_CONFIG__.environmentName;
 
       if (acsCookie && isValidEnvironment(envName)) {
