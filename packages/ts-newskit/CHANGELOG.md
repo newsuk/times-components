@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.130.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.129.0...@times-components/ts-newskit@1.130.0) (2023-11-06)
+
+
+### Features
+
+* **TMRX-1642:** change headline color in comment card ([#3636](https://github.com/newsuk/times-components/issues/3636)) ([73a5070](https://github.com/newsuk/times-components/commit/73a5070af34852edadc57a34ce3f87e2be2a2a39))
+
+
+
+
+
 # [1.129.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.128.0...@times-components/ts-newskit@1.129.0) (2023-11-06)
 
 
