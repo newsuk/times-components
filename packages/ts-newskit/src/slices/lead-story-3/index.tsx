@@ -113,14 +113,6 @@ export const LeadStory3 = ({
       </FullWidthHidden>
       <Visible md lg xl>
         <ArticleStackLeadStory
-          articleOptions={{
-            lg: {
-              hideImage: true
-            },
-            xl: {
-              imageRight: true
-            }
-          }}
           modifiedArticles={articles}
           clickHandler={clickHandler}
         />
