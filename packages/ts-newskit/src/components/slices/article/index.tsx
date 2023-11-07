@@ -105,7 +105,10 @@ export const Article = ({
     hasVideo;
 
   const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
-  const hasNoProfileAndFlag = !expirableFlags && !contentType && !label && !hasVideo ?  'space000' : 'space040';
+  const hasNoProfileAndFlag =
+    !expirableFlags && !contentType && !label && !hasVideo
+      ? 'space000'
+      : 'space040';
   const hasImage =
     images &&
     images.crops &&
@@ -220,7 +223,9 @@ export const Article = ({
           role="link"
           overrides={{
             typographyPreset: titleTypographyPreset,
-            marginBlockStart: hasArticleTileInfo ? 'space030' : hasNoProfileAndFlag
+            marginBlockStart: hasArticleTileInfo
+              ? 'space030'
+              : hasNoProfileAndFlag
           }}
           external={false}
           onClick={onClick}
