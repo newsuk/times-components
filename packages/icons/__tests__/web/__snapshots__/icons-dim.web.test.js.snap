@@ -65,6 +65,7 @@ exports[`7. icontwitter sets a width when height is set 1`] = `
   role="img"
   title="Twitter Icon"
   width={62.5}
+  xmlns="http://www.w3.org/2000/svg"
 />
 `;
 
