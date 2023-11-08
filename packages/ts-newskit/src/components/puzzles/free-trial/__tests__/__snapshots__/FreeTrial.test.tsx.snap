@@ -15,7 +15,7 @@ exports[`FreeTrial should render freeTrial banner component 1`] = `
           class="css-1ru9wvo"
         >
           <h2
-            class="withFallback css-9a7b8t"
+            class="withFallback css-1k8ybd8"
           >
             Train your brain with Times Puzzles
           </h2>
