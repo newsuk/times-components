@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  CardContent,
-  CardLink,
-  CardMedia,
-  Stack,
-  TextBlock,
-  Block
-} from 'newskit';
+import { CardContent, CardLink, Stack, TextBlock, Block, Image } from 'newskit';
 import {
   Wrap,
   StyledNewsKitPuzzlePlaceholder,
@@ -42,19 +35,13 @@ export const PuzzleCard = ({
     >
       <PuzzleCardImgWrapper>
         {imageUrl ? (
-          <CardMedia
-            /* @ts-ignore */
-            /* NOTE: We can't use this until the new icons are in use as the current ones are transparent: className="lcpItem" */
-            media={{
-              loadingAspectRatio: '3:2',
-              alt: data.title || 'Puzzle thumbnail',
-              src: croppedImageUrl,
-              placeholderIcon: true,
-              fit: 'cover',
-              loading: isLazyLoading ? 'lazy' : 'eager',
-              overrides: {
-                stylePreset: 'puzzleCardMedia'
-              }
+          <Image
+            loadingAspectRatio="3:2"
+            alt={data.title || 'Puzzle thumbnail'}
+            src={croppedImageUrl}
+            loading={isLazyLoading ? 'lazy' : 'eager'}
+            overrides={{
+              stylePreset: 'puzzleCardMedia'
             }}
             data-testid="puzzle-image"
           />
