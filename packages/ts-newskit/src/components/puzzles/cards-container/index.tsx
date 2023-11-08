@@ -88,9 +88,9 @@ export const CardsContainer = ({
           columns={
             !isScrollable
               ? {
-                xs: 'repeat(2, 1fr)',
-                md: 'repeat(4, 1fr)'
-              }
+                  xs: 'repeat(2, 1fr)',
+                  md: 'repeat(4, 1fr)'
+                }
               : undefined
           }
           autoFlow={isScrollable ? 'column' : undefined}
@@ -113,7 +113,11 @@ export const CardsContainer = ({
               data-test-id="single-card"
               ref={cardRef}
             >
-              <PuzzleCard data={card} isImageCropped={isImageCropped} isLazyLoading={index > 3} />
+              <PuzzleCard
+                data={card}
+                isImageCropped={isImageCropped}
+                isLazyLoading={index > 3}
+              />
             </GridLayoutItem>
           ))}
         </GridLayout>

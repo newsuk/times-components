@@ -34,7 +34,7 @@ export const FreeTrial: FC<FreeTrialProps> = ({
                 md: 'editorialHeadline080'
               }}
               stylePreset="inkContrast"
-              className='withFallback'
+              className="withFallback"
             >
               {freeTrialHeader}
             </TextBlockH2>
