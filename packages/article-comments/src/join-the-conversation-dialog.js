@@ -2,7 +2,7 @@
 import React from "react";
 import { InlineDialog } from "@times-components/ts-components";
 
-export default JoinTheConversationDialog = ({ storefrontConfig }) => {
+const JoinTheConversationDialog = ({ storefrontConfig }) => {
   const isLightPackUser =
     window.nuk && window.nuk.user && window.nuk.user.isLightPackUser;
   const href = isLightPackUser ? null : storefrontConfig;
@@ -25,3 +25,5 @@ export default JoinTheConversationDialog = ({ storefrontConfig }) => {
     </InlineDialog>
   );
 }
+
+export default JoinTheConversationDialog;
