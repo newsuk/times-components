@@ -55,6 +55,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
           const article = isPreview
             ? providerData.draftArticle
             : providerData.article;
+            
           const articleTemplate = article ? article.template : null;
 
           return React.createElement(
