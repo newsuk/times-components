@@ -39,6 +39,9 @@ ArticleComments.propTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
+  storefrontConfig: PropTypes.shape({
+    store: PropTypes.object
+  }).isRequired,
   isCommentEnabled: PropTypes.bool
 };
 

@@ -1,5 +1,6 @@
 /* eslint-env browser */
 import React from "react";
+import PropTypes from "prop-types";
 import { InlineDialog } from "@times-components/ts-components";
 
 const JoinTheConversationDialog = ({ storefrontConfig }) => {
@@ -24,6 +25,12 @@ const JoinTheConversationDialog = ({ storefrontConfig }) => {
       subscription to have your say.
     </InlineDialog>
   );
-}
+};
+
+JoinTheConversationDialog.propTypes = {
+  storefrontConfig: PropTypes.shape({
+    store: PropTypes.object
+  }).isRequired
+};
 
 export default JoinTheConversationDialog;
