@@ -108,6 +108,6 @@ export const StyledIconA4 = styled(IconA4)`
 
 export const TextBlockH2 = styled(TextBlock)`
   &.withFallback {
-    font-family: 'Times Modern', 'Times Modern fallback', serif;  
+    font-family: 'Times Modern', 'Times Modern fallback', serif;
   }
 `;

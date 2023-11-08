@@ -52,7 +52,7 @@ export const ScrollControls = ({
         }}
         onClick={() => controlsHandler('left')}
         data-testid="scroll-left"
-        aria-aria-label='scroll left'
+        aria-aria-label="scroll left"
       >
         <NewskitIconBack
           overrides={{
@@ -69,7 +69,7 @@ export const ScrollControls = ({
         }}
         onClick={() => controlsHandler('right')}
         data-testid="scroll-right"
-        aria-label='scroll right'
+        aria-label="scroll right"
       >
         <NewskitIconForward
           overrides={{
