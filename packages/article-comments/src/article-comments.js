@@ -12,12 +12,13 @@ const ArticleComments = ({
   isEnabled,
   isReadOnly,
   commentingConfig,
-  isCommentEnabled
+  isCommentEnabled,
+  storefrontConfig
 }) =>
   isEnabled && isCommentEnabled ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
-        <JoinTheConversationDialog />
+        <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
       </UserState>
       <UserState state={UserState.showCommentingModule}>
         <Comments

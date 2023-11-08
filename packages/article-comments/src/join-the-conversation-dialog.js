@@ -1,12 +1,11 @@
 /* eslint-env browser */
 import React from "react";
 import { InlineDialog } from "@times-components/ts-components";
-import getStoreLink from "./utils";
 
-export default function JoinTheConversationDialog() {
+export default JoinTheConversationDialog = ({ storefrontConfig }) => {
   const isLightPackUser =
     window.nuk && window.nuk.user && window.nuk.user.isLightPackUser;
-  const href = isLightPackUser ? null : getStoreLink();
+  const href = isLightPackUser ? null : storefrontConfig;
   // temp solution until the modal is moved out to a proper UI repo
   // this event triggers cps-content-render/packages/components-global/src/FreeArticlePromotion/FreeArticleBottomBanner/FreeArticleBottomBanner.tsx
   // todo: remove this event dispatching and implement the modal from the shared UI component repo
