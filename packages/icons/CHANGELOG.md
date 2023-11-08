@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.21.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.20.21...@times-components/icons@2.21.0) (2023-11-08)
+
+
+### Features
+
+* **TMRX-1611:** update twitter logo to X ([#3640](https://github.com/newsuk/times-components/issues/3640)) ([47900db](https://github.com/newsuk/times-components/commit/47900dbda000a827d32764746c1b272736b497b0))
+
+
+
+
+
 ## [2.20.21](https://github.com/newsuk/times-components/compare/@times-components/icons@2.20.20...@times-components/icons@2.20.21) (2023-10-19)
 
 **Note:** Version bump only for package @times-components/icons
