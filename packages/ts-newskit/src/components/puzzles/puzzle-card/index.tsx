@@ -20,11 +20,13 @@ import { convertDateToWeekday } from '../../../utils';
 export interface PuzzleCardProps {
   data: Puzzle;
   isImageCropped?: boolean;
+  isLazyLoading?: boolean;
 }
 
 export const PuzzleCard = ({
   data,
-  isImageCropped = false
+  isImageCropped = false,
+  isLazyLoading = false
 }: PuzzleCardProps) => {
   const publishedDate = convertDateToWeekday(data.publishedAt);
   const imageUrl = data.image ? data.image.crops[0].url : '';
@@ -42,13 +44,14 @@ export const PuzzleCard = ({
         {imageUrl ? (
           <CardMedia
             /* @ts-ignore */
-            className="lcpItem"
+            /* NOTE: We can't use this until the new icons are in use as the current ones are transparent: className="lcpItem" */
             media={{
               loadingAspectRatio: '3:2',
               alt: data.title || 'Puzzle thumbnail',
               src: croppedImageUrl,
               placeholderIcon: true,
               fit: 'cover',
+              loading: isLazyLoading ? 'lazy' : 'eager',
               overrides: {
                 stylePreset: 'puzzleCardMedia'
               }
