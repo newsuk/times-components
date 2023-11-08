@@ -189,9 +189,7 @@ exports[`1. a full article 1`] = `
           />
         </g>
         <defs>
-          <clipPath
-            id="clip0_2702_211136"
-          >
+          <clipPath>
             <rect
               height="24"
               width="24"
@@ -302,9 +300,7 @@ exports[`1. a full article 1`] = `
             />
           </g>
           <defs>
-            <clipPath
-              id="clip0_2702_211136"
-            >
+            <clipPath>
               <rect
                 height="24"
                 width="24"
@@ -391,9 +387,7 @@ exports[`1. a full article 1`] = `
             />
           </g>
           <defs>
-            <clipPath
-              id="clip0_2702_211136"
-            >
+            <clipPath>
               <rect
                 height="24"
                 width="24"

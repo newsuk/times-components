@@ -138,9 +138,7 @@ exports[`7. icontwitter renders 1`] = `
     />
   </g>
   <defs>
-    <clipPath
-      id="clip0_2702_211136"
-    >
+    <clipPath>
       <rect
         fill="white"
         height="24"

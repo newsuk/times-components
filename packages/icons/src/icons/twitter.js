@@ -34,7 +34,7 @@ const IconTwitter = ({
       />
     </g>
     <defs>
-      <clipPath id="clip0_2702_211136">
+      <clipPath>
         <rect width="24" height="24" fill="white" />
       </clipPath>
     </defs>
