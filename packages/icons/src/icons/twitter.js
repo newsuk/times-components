@@ -24,7 +24,7 @@ const IconTwitter = ({
     xmlns="http://www.w3.org/2000/svg"
   >
     <title>{title}</title>
-    <g>
+    <g clipPath="url(#clip0_2702_211136)">
       <path
         {...clean({
           fill: fillColour,
@@ -34,7 +34,9 @@ const IconTwitter = ({
       />
     </g>
     <defs>
+      <clipPath id="clip0_2702_211136">
         <rect width="24" height="24" fill="white" />
+      </clipPath>
     </defs>
   </svg>
 );
