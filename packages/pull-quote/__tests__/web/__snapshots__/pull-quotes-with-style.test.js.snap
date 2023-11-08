@@ -125,6 +125,7 @@ exports[`different colours 1`] = `
         paddingLeft={7}
       >
         <IconTwitter
+          fillColour="currentColor"
           height={10}
           width={11}
         />

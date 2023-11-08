@@ -345,6 +345,7 @@ exports[`7. an article list header 1`] = `
       <div>
         <div>
           <IconTwitter
+            fillColour="currentColor"
             height={12}
             width={12}
           />
