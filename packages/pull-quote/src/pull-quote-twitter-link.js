@@ -15,7 +15,7 @@ const PullQuoteTwitterLink = ({ onTwitterLinkPress, twitter }) => {
 
   return (
     <TcView style={styles.twitterContainer}>
-      <IconTwitter height={10} width={11} />
+      <IconTwitter fillColour="currentColor" height={10} width={11} />
       <TextLink
         className="pullQuoteTwitterLink"
         key={url}

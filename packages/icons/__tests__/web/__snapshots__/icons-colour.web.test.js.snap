@@ -77,10 +77,19 @@ Array [
   <title>
     Twitter Icon
   </title>,
-  <path
-    fill="#facade"
-    stroke="#c0ffee"
-  />,
+  <g>
+    <path
+      fill="#facade"
+      stroke="#c0ffee"
+    />
+  </g>,
+  <defs>
+    <clipPath>
+      <rect
+        fill="white"
+      />
+    </clipPath>
+  </defs>,
 ]
 `;
 
