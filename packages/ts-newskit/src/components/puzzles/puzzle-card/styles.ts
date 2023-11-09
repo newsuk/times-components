@@ -15,7 +15,7 @@ export const PuzzleCardComposable = styled(CardComposable)`
 
 export const PuzzleCardImgWrapper = styled(Block)`
   position: relative;
-  display: contents;
+  display: flex;
   justify-content: center;
   align-items: center;
   align-self: center;
