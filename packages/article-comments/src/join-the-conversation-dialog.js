@@ -28,9 +28,7 @@ const JoinTheConversationDialog = ({ storefrontConfig }) => {
 };
 
 JoinTheConversationDialog.propTypes = {
-  storefrontConfig: PropTypes.shape({
-    store: PropTypes.object
-  }).isRequired
+  storefrontConfig: PropTypes.string.isRequired
 };
 
 export default JoinTheConversationDialog;
