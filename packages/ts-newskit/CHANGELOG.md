@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.132.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.131.0...@times-components/ts-newskit@1.132.0) (2023-11-09)
+
+
+### Features
+
+* **TMPZ-204:** updated hero banner image size ([#3643](https://github.com/newsuk/times-components/issues/3643)) ([a7661f8](https://github.com/newsuk/times-components/commit/a7661f805bfa908c4a315843afc8c56ad1231aa5))
+
+
+
+
+
 # [1.131.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.130.0...@times-components/ts-newskit@1.131.0) (2023-11-07)
 
 
