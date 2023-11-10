@@ -63,6 +63,7 @@ export { LeadStory2 } from './slices/lead-story-2';
 export { LeadStory3 } from './slices/lead-story-3';
 export { SectionBucket } from './slices/section-bucket';
 export { StackModule1 } from './slices/stacked-module-1';
+export { CommentBucket1 } from './slices/comment-bucket-1';
 
 // SLICES HEADER
 export { SliceHeader } from './components/slices/slice-header';
