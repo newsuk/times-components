@@ -122,16 +122,30 @@ exports[`7. icontwitter renders 1`] = `
   aria-label="icon-twitter"
   role="img"
   title="IconTwitter"
-  viewBox="f0ca3b77f62fa9136cdfd9a3f847d07b"
+  viewBox="2d14da89158598e1aea5099b10f3d692"
   width={20}
+  xmlns="http://www.w3.org/2000/svg"
 >
   <title>
     IconTwitter
   </title>
-  <path
-    d="0407fd6a3edc199eb6063d0ebd2c66ad"
-    fill="#006699"
-  />
+  <g
+    clipPath="url(#clip0_2702_211136)"
+  >
+    <path
+      d="4c07ddf11115ea0567c67f79847089a8"
+      fill="#006699"
+    />
+  </g>
+  <defs>
+    <clipPath>
+      <rect
+        fill="white"
+        height="24"
+        width="24"
+      />
+    </clipPath>
+  </defs>
 </svg>
 `;
 

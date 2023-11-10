@@ -8,7 +8,7 @@ import styles from "./styles";
 const AuthorProfileHeadTwitter = ({ onTwitterLinkPress, twitter, url }) => (
   <TcView style={styles.twitter}>
     <TcView style={styles.twitterIcon}>
-      <IconTwitter height={15} width={15} />
+      <IconTwitter fillColour="currentColor" height={12} width={12} />
     </TcView>
     <TextLink
       onPress={e => onTwitterLinkPress(e, { twitter, url })}

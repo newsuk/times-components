@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.16.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.16.0...@times-components/author-profile@6.16.1) (2023-11-09)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+# [6.16.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.15.180...@times-components/author-profile@6.16.0) (2023-11-08)
+
+
+### Features
+
+* **TMRX-1611:** update twitter logo to X ([#3640](https://github.com/newsuk/times-components/issues/3640)) ([47900db](https://github.com/newsuk/times-components/commit/47900dbda000a827d32764746c1b272736b497b0))
+
+
+
+
+
 ## [6.15.180](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.15.179...@times-components/author-profile@6.15.180) (2023-11-07)
 
 **Note:** Version bump only for package @times-components/author-profile

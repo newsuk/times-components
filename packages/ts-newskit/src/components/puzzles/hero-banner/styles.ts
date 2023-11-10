@@ -79,7 +79,7 @@ export const StyledHeroIconContainer = styled(Block)`
 `;
 
 export const MainIconContainer = styled(Block)`
-  position: absolute;
+  position: relative;
   z-index: 2;
   top: 0;
 
@@ -99,12 +99,14 @@ export const MainIconContainer = styled(Block)`
     position: relative;
     ${getSpacingCssFromTheme('marginInlineStart', 'space010')};
   }
-  ${getMediaQueryFromTheme('lg')} {
+
+  @media (min-width: 1200px) {
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     & .iconType {
-      width: 130px;
+      width: 197px;
       height: unset;
     }
   }
@@ -112,12 +114,19 @@ export const MainIconContainer = styled(Block)`
 
 export const StyledIconWrapper = styled(Block)`
   position: relative;
-  ${getMediaQueryFromTheme('xs', 'lg')} {
-    display: none;
-  }
+  display: none;
+
   ${getMediaQueryFromTheme('lg')} {
     & .iconBg {
-      width: 320px;
+      width: 550px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    display: block;
+
+    & .iconBg {
+      width: 550px;
     }
   }
 `;
@@ -132,6 +141,13 @@ export const StyledHeroBannerKillerSudoku = styled(
     width: 43px;
     height: 54px;
   }
+
+  @media (min-width: 1200px) {
+    left: 20%;
+    top: 18%;
+    width: 68px;
+    height: 92px;
+  }
 `;
 
 export const StyledHeroBannerQuintagram = styled(NewsKitHeroBannerQuintagram)`
@@ -141,6 +157,13 @@ export const StyledHeroBannerQuintagram = styled(NewsKitHeroBannerQuintagram)`
     bottom: 25.3%;
     width: 49px;
     height: 49px;
+  }
+
+  @media (min-width: 1200px) {
+    right: 25.1%;
+    bottom: 11.3%;
+    width: 82px;
+    height: 82px;
   }
 `;
 
@@ -152,6 +175,13 @@ export const StyledHeroBannerSuko = styled(NewsKitHeroBannerSuko)`
     width: 49px;
     height: 49px;
   }
+
+  @media (min-width: 1200px) {
+    top: 9.6%;
+    right: 24%;
+    width: 82px;
+    height: 82px;
+  }
 `;
 
 export const StyledHeroBannerWordPuzzle = styled(NewsKitHeroBannerWordPuzzle)`
@@ -162,7 +192,20 @@ export const StyledHeroBannerWordPuzzle = styled(NewsKitHeroBannerWordPuzzle)`
     width: 49px;
     height: 49px;
   }
-}
+
+  ${getMediaQueryFromTheme('lg')} {
+    left: 21%;
+    bottom: 11%;
+    width: 82px;
+    height: 82px;
+  }
+
+  @media (min-width: 1200px) {
+    left: 21%;
+    bottom: 11%;
+    width: 82px;
+    height: 82px;
+  }
 `;
 
 export const StyledBlock = styled(Block)`

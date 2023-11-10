@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.72.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.72.0...@times-components/article-main-comment@2.72.1) (2023-11-09)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.72.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.71.17...@times-components/article-main-comment@2.72.0) (2023-11-08)
+
+
+### Features
+
+* **TMRX-1611:** update twitter logo to X ([#3640](https://github.com/newsuk/times-components/issues/3640)) ([47900db](https://github.com/newsuk/times-components/commit/47900dbda000a827d32764746c1b272736b497b0))
+
+
+
+
+
 ## [2.71.17](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.71.16...@times-components/article-main-comment@2.71.17) (2023-11-07)
 
 **Note:** Version bump only for package @times-components/article-main-comment
