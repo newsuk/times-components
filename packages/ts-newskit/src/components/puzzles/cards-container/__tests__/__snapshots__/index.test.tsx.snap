@@ -77,7 +77,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
           </span>
         </a>
         <button
-          aria-aria-label="scroll left"
+          aria-label="scroll left"
           class="css-1v2cnmj"
           data-testid="scroll-left"
           type="button"
