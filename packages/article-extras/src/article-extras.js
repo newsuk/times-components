@@ -29,7 +29,8 @@ const ArticleExtras = ({
   commentingConfig,
   topics,
   isSharingSavingEnabled,
-  isCommentEnabled
+  isCommentEnabled,
+  storefrontConfig
 }) => {
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticlesAndRelatedArticles = isRecommendedActive => (
@@ -86,6 +87,7 @@ const ArticleExtras = ({
         isEnabled={commentsEnabled}
         commentingConfig={commentingConfig}
         isCommentEnabled={isCommentEnabled}
+        storefrontConfig={storefrontConfig}
       />
     </UserState>
   );
@@ -108,7 +110,8 @@ ArticleExtras.propTypes = {
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
   isSharingSavingEnabled: PropTypes.bool,
-  isCommentEnabled: PropTypes.bool
+  isCommentEnabled: PropTypes.bool,
+  storefrontConfig: PropTypes.string.isRequired
 };
 
 ArticleExtras.defaultProps = {

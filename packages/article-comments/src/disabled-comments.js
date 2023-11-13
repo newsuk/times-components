@@ -16,7 +16,7 @@ const DisabledComments = () => (
       Comments are subject to our community guidelines, which can be viewed{" "}
       <TextLink
         style={styles.link}
-        url="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+        url="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
       >
         here
       </TextLink>

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.133.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.132.0...@times-components/ts-newskit@1.133.0) (2023-11-10)
+
+
+### Features
+
+* **TMRX-0000:** export comment bucket 1 ([#3647](https://github.com/newsuk/times-components/issues/3647)) ([fe5cfb5](https://github.com/newsuk/times-components/commit/fe5cfb506408129d40d812153f9b34935130d242))
+
+
+
+
+
 # [1.132.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.131.0...@times-components/ts-newskit@1.132.0) (2023-11-09)
 
 
