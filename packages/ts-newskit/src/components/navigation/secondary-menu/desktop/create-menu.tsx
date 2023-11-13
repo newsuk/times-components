@@ -34,7 +34,7 @@ export const CreateMenu: React.FC<{
       let charCount = 0;
       console.log('breakpoint=======', breakpoint);
       if (!data) {
-        return;
+        return 0;
       } else {
         switch (breakpoint) {
           case 'xl':
