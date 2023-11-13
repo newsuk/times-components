@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavigation } from '../index';
 import {
-  cleanup,
+  cleanup
   // fireEvent,
   // getAllByTestId,
   // waitFor
