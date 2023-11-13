@@ -18,7 +18,7 @@ const renderComments = ({ enabled }) =>
       onCommentGuidelinesPress={() => {}}
       onCommentsPress={() => {}}
       commentingConfig={{ account: "sp_pCQgrRiN" }}
-      storefrontConfig={{ store: { url: "https://www.mockUrl.co.uk" } }}
+      storefrontConfig="https://www.mockUrl.co.uk"
       url="dummy-article-url"
       isCommentEnabled
     />
