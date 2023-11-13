@@ -4,7 +4,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
 <DocumentFragment>
   <nav
     aria-label="Secondary Navigation"
-    class="css-1hyt1wq"
+    class="css-al5e3d"
     data-testid="menu-container"
     role="navigation"
   >
@@ -13,152 +13,253 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
     >
       <div
         class="css-ov1ktg"
+      />
+      <li
+        class="nk-menu-item css-1i1v9fb"
       >
-        <li
-          class="nk-menu-item css-1i1v9fb"
+        <button
+          aria-expanded="false"
+          class="css-wxo2bw"
+          data-testid="menu-sub-button"
+          type="button"
         >
-          <a
-            aria-current="page"
-            class="css-np1loc"
-            data-testid="buttonLink"
-            href="/home"
+          <span
+            class="css-t9dmcw"
           >
-            <span
-              class="css-t9dmcw"
-            >
-              Home
-            </span>
-          </a>
-        </li>
-        <li
-          class="nk-menu-item css-1i1v9fb"
+            More
+          </span>
+          <svg
+            aria-hidden="true"
+            class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </button>
+        <ul
+          class="css-8n1fik"
         >
-          <a
-            aria-current="false"
-            class="css-ltup8m"
-            data-testid="buttonLink"
-            href="/news"
+          <nav
+            class="css-ntkh1s"
+            data-testid="menu-container"
+            role="navigation"
           >
-            <span
-              class="css-t9dmcw"
+            <ul
+              role="list"
             >
-              News
-            </span>
-          </a>
-        </li>
-        <li
-          class="nk-menu-item css-1i1v9fb"
-        >
-          <a
-            aria-current="false"
-            class="css-ltup8m"
-            data-testid="buttonLink"
-            href="/comment"
-          >
-            <span
-              class="css-t9dmcw"
-            >
-              Comment
-            </span>
-          </a>
-        </li>
-        <li
-          class="nk-menu-item css-1i1v9fb"
-        >
-          <a
-            aria-current="false"
-            class="css-ltup8m"
-            data-testid="buttonLink"
-            href="/life-and-style"
-          >
-            <span
-              class="css-t9dmcw"
-            >
-              Life & Style
-            </span>
-          </a>
-        </li>
-        <li
-          class="nk-menu-item css-1i1v9fb"
-        >
-          <a
-            aria-current="false"
-            class="css-ltup8m"
-            data-testid="buttonLink"
-            href="/arts-and-books"
-          >
-            <span
-              class="css-t9dmcw"
-            >
-              Arts & Books
-            </span>
-          </a>
-        </li>
-        <li
-          class="nk-menu-item css-1i1v9fb"
-        >
-          <a
-            aria-current="false"
-            class="css-ltup8m"
-            data-testid="buttonLink"
-            href="/sport"
-          >
-            <span
-              class="css-t9dmcw"
-            >
-              Sport
-            </span>
-          </a>
-        </li>
-        <li
-          class="nk-menu-item css-1i1v9fb"
-        >
-          <a
-            aria-current="false"
-            class="css-ltup8m"
-            data-testid="buttonLink"
-            href="/business-and-money"
-          >
-            <span
-              class="css-t9dmcw"
-            >
-              Business & Money
-            </span>
-          </a>
-        </li>
-        <li
-          class="nk-menu-item css-1i1v9fb"
-        >
-          <a
-            aria-current="false"
-            class="css-ltup8m"
-            data-testid="buttonLink"
-            href="/puzzles"
-          >
-            <span
-              class="css-t9dmcw"
-            >
-              Puzzles
-            </span>
-          </a>
-        </li>
-        <li
-          class="nk-menu-item css-1i1v9fb"
-        >
-          <a
-            aria-current="false"
-            class="css-ltup8m"
-            data-testid="buttonLink"
-            href="/magazines"
-          >
-            <span
-              class="css-t9dmcw"
-            >
-              Magazines
-            </span>
-          </a>
-        </li>
-      </div>
+              <nav
+                aria-label="menu-multiple-auto"
+                class="css-1e8qhdd"
+                data-testid="menu-container"
+                role="navigation"
+              >
+                <ul
+                  role="list"
+                >
+                  <li
+                    class="nk-menu-item css-1kdinep"
+                  >
+                    <a
+                      aria-current="page"
+                      class="css-axtnr"
+                      data-testid="buttonLink"
+                      href="/home"
+                    >
+                      <span
+                        class="css-jfuxhr"
+                      >
+                        Home
+                      </span>
+                    </a>
+                  </li>
+                  <hr
+                    aria-hidden="true"
+                    class="css-s9wquo"
+                    data-testid="divider"
+                  />
+                  <li
+                    class="nk-menu-item css-1kdinep"
+                  >
+                    <a
+                      aria-current="false"
+                      class="css-11eetjm"
+                      data-testid="buttonLink"
+                      href="/news"
+                    >
+                      <span
+                        class="css-jfuxhr"
+                      >
+                        News
+                      </span>
+                    </a>
+                  </li>
+                  <hr
+                    aria-hidden="true"
+                    class="css-s9wquo"
+                    data-testid="divider"
+                  />
+                  <li
+                    class="nk-menu-item css-1kdinep"
+                  >
+                    <a
+                      aria-current="false"
+                      class="css-11eetjm"
+                      data-testid="buttonLink"
+                      href="/comment"
+                    >
+                      <span
+                        class="css-jfuxhr"
+                      >
+                        Comment
+                      </span>
+                    </a>
+                  </li>
+                  <hr
+                    aria-hidden="true"
+                    class="css-s9wquo"
+                    data-testid="divider"
+                  />
+                  <li
+                    class="nk-menu-item css-1kdinep"
+                  >
+                    <a
+                      aria-current="false"
+                      class="css-11eetjm"
+                      data-testid="buttonLink"
+                      href="/life-and-style"
+                    >
+                      <span
+                        class="css-jfuxhr"
+                      >
+                        Life & Style
+                      </span>
+                    </a>
+                  </li>
+                  <hr
+                    aria-hidden="true"
+                    class="css-s9wquo"
+                    data-testid="divider"
+                  />
+                  <li
+                    class="nk-menu-item css-1kdinep"
+                  >
+                    <a
+                      aria-current="false"
+                      class="css-11eetjm"
+                      data-testid="buttonLink"
+                      href="/arts-and-books"
+                    >
+                      <span
+                        class="css-jfuxhr"
+                      >
+                        Arts & Books
+                      </span>
+                    </a>
+                  </li>
+                  <hr
+                    aria-hidden="true"
+                    class="css-s9wquo"
+                    data-testid="divider"
+                  />
+                  <li
+                    class="nk-menu-item css-1kdinep"
+                  >
+                    <a
+                      aria-current="false"
+                      class="css-11eetjm"
+                      data-testid="buttonLink"
+                      href="/sport"
+                    >
+                      <span
+                        class="css-jfuxhr"
+                      >
+                        Sport
+                      </span>
+                    </a>
+                  </li>
+                  <hr
+                    aria-hidden="true"
+                    class="css-s9wquo"
+                    data-testid="divider"
+                  />
+                  <li
+                    class="nk-menu-item css-1kdinep"
+                  >
+                    <a
+                      aria-current="false"
+                      class="css-11eetjm"
+                      data-testid="buttonLink"
+                      href="/business-and-money"
+                    >
+                      <span
+                        class="css-jfuxhr"
+                      >
+                        Business & Money
+                      </span>
+                    </a>
+                  </li>
+                  <hr
+                    aria-hidden="true"
+                    class="css-s9wquo"
+                    data-testid="divider"
+                  />
+                  <li
+                    class="nk-menu-item css-1kdinep"
+                  >
+                    <a
+                      aria-current="false"
+                      class="css-11eetjm"
+                      data-testid="buttonLink"
+                      href="/puzzles"
+                    >
+                      <span
+                        class="css-jfuxhr"
+                      >
+                        Puzzles
+                      </span>
+                    </a>
+                  </li>
+                  <hr
+                    aria-hidden="true"
+                    class="css-s9wquo"
+                    data-testid="divider"
+                  />
+                  <li
+                    class="nk-menu-item css-1kdinep"
+                  >
+                    <a
+                      aria-current="false"
+                      class="css-11eetjm"
+                      data-testid="buttonLink"
+                      href="/magazines"
+                    >
+                      <span
+                        class="css-jfuxhr"
+                      >
+                        Magazines
+                      </span>
+                    </a>
+                  </li>
+                  <hr
+                    aria-hidden="true"
+                    class="css-s9wquo"
+                    data-testid="divider"
+                  />
+                </ul>
+              </nav>
+            </ul>
+          </nav>
+        </ul>
+      </li>
     </ul>
   </nav>
   <hr
