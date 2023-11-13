@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { SecondaryNavDesktop } from './desktop';
 import { SecondaryNavMobile } from './mobile';
 import { Visible } from 'newskit';
-import { SecondaryMenuItem } from './types';
+import { SecondaryMenuData, SecondaryMenuItem } from './types';
 import { SecondaryNavContainer } from './styles';
 
 interface SecondaryNavigationProps {
-  data: SecondaryMenuItem[];
+  data: SecondaryMenuData;
   pageSlug: string;
   title: string;
   stickyTop?: number;
@@ -29,13 +29,14 @@ export const SecondaryNavigation = ({
   heightMobile = 'auto'
 }: SecondaryNavigationProps) => {
   const getPageTitle = (slug: string) => {
-    const filteredItem = data.find(item => item.slug === slug);
+    const filteredItem = data.L2NavItems.find(item => item.slug === slug);
 
     if (filteredItem) {
       return filteredItem.title;
     } else {
       return defaultSelectedIndex >= 0
-        ? data[defaultSelectedIndex] && data[defaultSelectedIndex].title
+        ? data.L2NavItems[defaultSelectedIndex] &&
+            data.L2NavItems[defaultSelectedIndex].title
         : '';
     }
   };

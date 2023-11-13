@@ -1,3 +1,8 @@
+export type SecondaryMenuData = {
+  L2NavItems: SecondaryMenuItem[];
+  L3NavItems: SecondaryMenuItem[];
+};
+
 export type SecondaryMenuItem = {
   title: string;
   url: string;
