@@ -33,21 +33,28 @@ export const CreateMenu: React.FC<{
     () => {
       let charCount = 0;
       console.log('breakpoint=======', breakpoint);
-      switch (breakpoint) {
-        case 'xl':
-          charCount = MAX_NAV_ITEMS_CHAR_COUNT_XL;
-          break;
-        case 'lg':
-          charCount = MAX_NAV_ITEMS_CHAR_COUNT_LG;
-          break;
-        case 'md':
-          charCount = MAX_NAV_ITEMS_CHAR_COUNT_MD;
-          break;
+      if (!data) {
+        return;
+      } else {
+        switch (breakpoint) {
+          case 'xl':
+            charCount = MAX_NAV_ITEMS_CHAR_COUNT_XL;
+            break;
+          case 'lg':
+            charCount = MAX_NAV_ITEMS_CHAR_COUNT_LG;
+            break;
+          case 'md':
+            charCount = MAX_NAV_ITEMS_CHAR_COUNT_MD;
+            break;
+        }
+        console.log(
+          '======inedx',
+          getLastVisibleMenuItemIndex(data, charCount)
+        );
+        return getLastVisibleMenuItemIndex(data, charCount);
       }
-      console.log('======inedx', getLastVisibleMenuItemIndex(data, charCount));
-      return getLastVisibleMenuItemIndex(data, charCount);
     },
-    [breakpoint]
+    [breakpoint, data]
   );
   const hasMoreItem = useMemo(
     () => lastVisibleMenuItemIndex !== data.length - 1,
@@ -55,7 +62,7 @@ export const CreateMenu: React.FC<{
   );
   const moreMenuItemsLength = useMemo(
     () => (hasMoreItem ? data.length - 1 - lastVisibleMenuItemIndex : 0),
-    [hasMoreItem, lastVisibleMenuItemIndex]
+    [hasMoreItem]
   );
 
   const contanierRef = useRef<HTMLDivElement>(null);
