@@ -181,7 +181,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpItem css-8o1xuh"
+              class="lcpHeading css-2zeami"
             >
               <picture
                 class="css-2pubdt"
@@ -286,7 +286,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpItem css-8o1xuh"
+              class="lcpHeading css-2zeami"
             >
               <picture
                 class="css-2pubdt"
@@ -391,7 +391,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpItem css-8o1xuh"
+              class="lcpHeading css-2zeami"
             >
               <picture
                 class="css-2pubdt"
@@ -496,7 +496,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpItem css-8o1xuh"
+              class="lcpHeading css-2zeami"
             >
               <picture
                 class="css-2pubdt"
@@ -601,7 +601,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-8o1xuh"
+              class=" css-2zeami"
             >
               <picture
                 class="css-om84o6"
@@ -702,7 +702,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-8o1xuh"
+              class=" css-2zeami"
             >
               <picture
                 class="css-om84o6"
@@ -803,7 +803,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-8o1xuh"
+              class=" css-2zeami"
             >
               <picture
                 class="css-om84o6"
@@ -904,7 +904,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-8o1xuh"
+              class=" css-2zeami"
             >
               <picture
                 class="css-om84o6"
@@ -1086,7 +1086,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpItem css-8o1xuh"
+              class="lcpHeading css-2zeami"
             >
               <picture
                 class="css-2pubdt"
@@ -1191,7 +1191,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpItem css-8o1xuh"
+              class="lcpHeading css-2zeami"
             >
               <picture
                 class="css-2pubdt"
@@ -1296,7 +1296,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpItem css-8o1xuh"
+              class="lcpHeading css-2zeami"
             >
               <picture
                 class="css-2pubdt"
@@ -1401,7 +1401,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpItem css-8o1xuh"
+              class="lcpHeading css-2zeami"
             >
               <picture
                 class="css-2pubdt"
@@ -1506,7 +1506,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-8o1xuh"
+              class=" css-2zeami"
             >
               <picture
                 class="css-om84o6"
@@ -1607,7 +1607,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-8o1xuh"
+              class=" css-2zeami"
             >
               <picture
                 class="css-om84o6"
@@ -1708,7 +1708,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-8o1xuh"
+              class=" css-2zeami"
             >
               <picture
                 class="css-om84o6"
@@ -1809,7 +1809,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-8o1xuh"
+              class=" css-2zeami"
             >
               <picture
                 class="css-om84o6"
