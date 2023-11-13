@@ -8,11 +8,11 @@ const articlePropTypes = {
   data: PropTypes.shape({
     ...ArticleHeader.propTypes,
     ...ArticleMeta.propTypes
-    // Could have more here
   }),
   receiveChildList: PropTypes.func,
   navigationMode: PropTypes.shape({}).isRequired,
-  zephrDivs: PropTypes.bool
+  zephrDivs: PropTypes.bool,
+  storefrontConfig: PropTypes.string.isRequired
 };
 
 const articleDefaultProps = {

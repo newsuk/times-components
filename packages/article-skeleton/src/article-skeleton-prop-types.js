@@ -12,7 +12,8 @@ const articleSkeletonPropTypes = {
   }).isRequired,
   swgProductId: PropTypes.string,
   zephrDivs: PropTypes.bool,
-  showAudioPlayer: PropTypes.bool
+  showAudioPlayer: PropTypes.bool,
+  storefrontConfig: PropTypes.string.isRequired
 };
 
 const articleSkeletonDefaultProps = {
