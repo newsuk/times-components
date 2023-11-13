@@ -1,52 +1,68 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { Menu } from 'newskit';
+import React, { useEffect, useMemo, useRef } from 'react';
+import { Menu, useBreakpointKey } from 'newskit';
 import { MenuContainer, Wrapper, MainMenu, StyledMenuSub } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
-import { debounce, getWidth } from '../../../../utils';
+
+const MAX_NAV_ITEMS_CHAR_COUNT_MD = 55;
+const MAX_NAV_ITEMS_CHAR_COUNT_LG = 75;
+const MAX_NAV_ITEMS_CHAR_COUNT_XL = 100;
+
+const getLastVisibleMenuItemIndex = (
+  data: SecondaryMenuItem[],
+  charCount: number
+) => {
+  let charCountSum = 0;
+  for (let i = 0; i < data.length; i++) {
+    charCountSum = charCountSum + data[i].title.length;
+    if (charCountSum > charCount) {
+      return i - 1;
+    }
+  }
+  return data.length - 1;
+};
 
 export const CreateMenu: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
   clickHandler: (title: string) => void;
 }> = ({ options, data, clickHandler }) => {
+  const breakpoint = useBreakpointKey();
+  const lastVisibleMenuItemIndex = useMemo(
+    () => {
+      let charCount = 0;
+      console.log('breakpoint=======', breakpoint);
+      switch (breakpoint) {
+        case 'xl':
+          charCount = MAX_NAV_ITEMS_CHAR_COUNT_XL;
+          break;
+        case 'lg':
+          charCount = MAX_NAV_ITEMS_CHAR_COUNT_LG;
+          break;
+        case 'md':
+          charCount = MAX_NAV_ITEMS_CHAR_COUNT_MD;
+          break;
+      }
+      console.log('======inedx', getLastVisibleMenuItemIndex(data, charCount));
+      return getLastVisibleMenuItemIndex(data, charCount);
+    },
+    [breakpoint]
+  );
+  const hasMoreItem = useMemo(
+    () => lastVisibleMenuItemIndex !== data.length - 1,
+    [lastVisibleMenuItemIndex]
+  );
+  const moreMenuItemsLength = useMemo(
+    () => (hasMoreItem ? data.length - 1 - lastVisibleMenuItemIndex : 0),
+    [hasMoreItem, lastVisibleMenuItemIndex]
+  );
+
   const contanierRef = useRef<HTMLDivElement>(null);
   const navListRef = useRef<HTMLDivElement>(null);
   const { isExpanded, setIsExpanded } = options;
-  const [hasMenuItem, setHasMenuItem] = useState<number>(data.length);
-  const [moreMenuItemsLength, setMoreMenuItemsLength] = useState<number>(0);
+
   const subMenuTitle = isExpanded ? 'Less' : 'More';
-
-  useEffect(() => {
-    const handleResize = async (navAdjustCount = 1) => {
-      setMoreMenuItemsLength(moreMenuItemsLength);
-      setHasMenuItem(hasMenuItem);
-
-      const navListContainerWidth = await getWidth(contanierRef.current);
-      const navListWidth = await getWidth(navListRef.current);
-
-      if (
-        navListWidth > navListContainerWidth - 200 &&
-        navListWidth > 0 &&
-        navListContainerWidth > 0
-      ) {
-        setMoreMenuItemsLength(moreMenuItemsLength + navAdjustCount);
-        setHasMenuItem(hasMenuItem - navAdjustCount);
-
-        const updatedNavListWidth = await getWidth(navListRef.current);
-        updatedNavListWidth > navListContainerWidth - 200 &&
-          handleResize(navAdjustCount + 1);
-      }
-    };
-
-    window.addEventListener('resize', debounce(() => handleResize(), 500));
-    handleResize();
-
-    return () => {
-      window.removeEventListener('resize', debounce(() => handleResize(), 500));
-    };
-  }, []);
 
   useEffect(
     () => {
@@ -69,7 +85,7 @@ export const CreateMenu: React.FC<{
 
   return (
     <MainMenu
-      hasMoreItems={moreMenuItemsLength > 0 ? true : false}
+      hasMoreItems={!!hasMoreItem}
       aria-label="Secondary Navigation"
       overrides={{
         spaceInline: 'space000'
@@ -80,11 +96,11 @@ export const CreateMenu: React.FC<{
         <NavItems
           data={data}
           options={options}
-          hasMenuItem={hasMenuItem}
+          hasMenuItem={lastVisibleMenuItemIndex + 1}
           clickHandler={clickHandler}
         />
       </Wrapper>
-      {moreMenuItemsLength > 0 && (
+      {hasMoreItem && (
         <StyledMenuSub
           onClick={() => setIsExpanded(!isExpanded)}
           expanded={isExpanded}
