@@ -33,28 +33,24 @@ export const CreateMenu: React.FC<{
     () => {
       let charCount = 0;
       console.log('breakpoint=======', breakpoint);
-      if (!data) {
-        return 0;
-      } else {
-        switch (breakpoint) {
-          case 'xl':
-            charCount = MAX_NAV_ITEMS_CHAR_COUNT_XL;
-            break;
-          case 'lg':
-            charCount = MAX_NAV_ITEMS_CHAR_COUNT_LG;
-            break;
-          case 'md':
-            charCount = MAX_NAV_ITEMS_CHAR_COUNT_MD;
-            break;
-        }
-        console.log(
-          '======inedx',
-          getLastVisibleMenuItemIndex(data, charCount)
-        );
-        return getLastVisibleMenuItemIndex(data, charCount);
+      switch (breakpoint) {
+        case 'xl':
+          charCount = MAX_NAV_ITEMS_CHAR_COUNT_XL;
+          break;
+        case 'lg':
+          charCount = MAX_NAV_ITEMS_CHAR_COUNT_LG;
+          break;
+        case 'md':
+          charCount = MAX_NAV_ITEMS_CHAR_COUNT_MD;
+          break;
+        default:
+          charCount = MAX_NAV_ITEMS_CHAR_COUNT_MD;
       }
+      console.log('====data', data);
+      console.log('======inedx', getLastVisibleMenuItemIndex(data, charCount));
+      return getLastVisibleMenuItemIndex(data, charCount);
     },
-    [breakpoint, data]
+    [breakpoint]
   );
   const hasMoreItem = useMemo(
     () => lastVisibleMenuItemIndex !== data.length - 1,
