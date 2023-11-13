@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.74.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.73.2...@times-components/article-magazine-standard@3.74.0) (2023-11-13)
+
+
+### Features
+
+* **TMG-1049:** Switch commenting links based on environment, region ([#3645](https://github.com/newsuk/times-components/issues/3645)) ([659aed4](https://github.com/newsuk/times-components/commit/659aed4a5dcc1feb58cf383d1b140b5134e1fa0f))
+
+
+
+
+
 ## [3.73.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.73.1...@times-components/article-magazine-standard@3.73.2) (2023-11-10)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard
