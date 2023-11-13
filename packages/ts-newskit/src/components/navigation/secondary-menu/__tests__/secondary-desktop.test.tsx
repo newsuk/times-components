@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
-import { mainMenuItems } from '../fixtures/menu-items.json';
+import { mainMenuItems } from '../fixtures/new-menu-items.json';
 import { SecondaryNavDesktop } from '../desktop';
 import { cleanup, fireEvent } from '@testing-library/react';
 
@@ -23,7 +23,7 @@ describe('Secondary Menu Desktop', () => {
   it('should render snapshot', () => {
     const { asFragment } = render(
       <SecondaryNavDesktop
-        data={mainMenuItems}
+        data={mainMenuItems.L2NavItems}
         options={options}
         clickHandler={mockClickHandler}
       />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
-import { mainMenuItems } from '../fixtures/menu-items.json';
+import { mainMenuItems } from '../fixtures/new-menu-items.json';
 import { SecondaryNavigation } from '../index';
 import {
   cleanup,
@@ -42,7 +42,7 @@ describe('Secondary Menu', () => {
   it('should not highlight any titles when default index is not provided and slug is not found', () => {
     const { container } = render(
       <SecondaryNavigation
-        data={[mainMenuItems[0], mainMenuItems[1]]}
+        data={[mainMenuItems.L2NavItems[0], mainMenuItems.L2NavItems[1]]}
         pageSlug=""
         title=""
         stickyTop={0}

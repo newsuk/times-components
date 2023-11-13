@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
-import { mainMenuItems } from '../fixtures/menu-items.json';
+import { mainMenuItems } from '../fixtures/new-menu-items.json';
 import { cleanup, waitFor, fireEvent } from '@testing-library/react';
 import { CreateMenu } from '../desktop/create-menu';
 
@@ -26,7 +26,7 @@ describe('Create Menu', () => {
   const mockClickHandler = jest.fn();
 
   it('should render snapshot', async () => {
-    const initialStateForFirstUseStateCall = mainMenuItems.length - 2;
+    const initialStateForFirstUseStateCall = mainMenuItems.L2NavItems.length - 2;
     const initialStateForSecondUseStateCall = 2;
 
     await waitFor(
@@ -40,7 +40,7 @@ describe('Create Menu', () => {
     const { asFragment } = await waitFor(() =>
       render(
         <CreateMenu
-          data={mainMenuItems}
+          data={mainMenuItems.L2NavItems}
           options={options}
           clickHandler={mockClickHandler}
         />
@@ -49,7 +49,7 @@ describe('Create Menu', () => {
     expect(asFragment()).toMatchSnapshot();
   });
   it('callback is invoked after window resize event', async () => {
-    const initialStateForFirstUseStateCall = mainMenuItems.length;
+    const initialStateForFirstUseStateCall = mainMenuItems.L2NavItems.length;
     const initialStateForSecondUseStateCall = 1;
 
     await waitFor(
@@ -63,7 +63,7 @@ describe('Create Menu', () => {
     await waitFor(() =>
       render(
         <CreateMenu
-          data={mainMenuItems}
+          data={mainMenuItems.L2NavItems}
           options={options}
           clickHandler={mockClickHandler}
         />
@@ -71,7 +71,7 @@ describe('Create Menu', () => {
     );
   });
   it('should expand on click', async () => {
-    const initialStateForFirstUseStateCall = mainMenuItems.length - 2;
+    const initialStateForFirstUseStateCall = mainMenuItems.L2NavItems.length - 2;
     const initialStateForSecondUseStateCall = 2;
 
     await waitFor(
@@ -85,7 +85,7 @@ describe('Create Menu', () => {
     const { findByTestId } = await waitFor(() =>
       render(
         <CreateMenu
-          data={mainMenuItems}
+          data={mainMenuItems.L2NavItems}
           options={options}
           clickHandler={mockClickHandler}
         />
@@ -98,7 +98,7 @@ describe('Create Menu', () => {
     expect(options.setIsExpanded).toHaveBeenCalled();
   });
   it('should render test Less', async () => {
-    const initialStateForFirstUseStateCall = mainMenuItems.length - 2;
+    const initialStateForFirstUseStateCall = mainMenuItems.L2NavItems.length - 2;
     const initialStateForSecondUseStateCall = 2;
 
     await waitFor(
@@ -112,7 +112,7 @@ describe('Create Menu', () => {
     const { findByTestId } = await waitFor(() =>
       render(
         <CreateMenu
-          data={mainMenuItems}
+          data={mainMenuItems.L2NavItems}
           options={{ ...options, isExpanded: true }}
           clickHandler={mockClickHandler}
         />
