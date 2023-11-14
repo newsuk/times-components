@@ -14,7 +14,6 @@ const options = {
 
 const mockClickHandler = jest.fn();
 
-const hasMenuItem = 3;
 describe('Navitems Desktop', () => {
   afterEach(() => {
     jest.clearAllMocks();
@@ -26,7 +25,6 @@ describe('Navitems Desktop', () => {
       <NavItems
         data={mainMenuItems}
         options={options}
-        hasMenuItem={hasMenuItem}
         clickHandler={mockClickHandler}
       />
     );
@@ -37,7 +35,6 @@ describe('Navitems Desktop', () => {
       <NavItems
         data={mainMenuItems}
         options={options}
-        hasMenuItem={hasMenuItem}
         clickHandler={mockClickHandler}
       />
     );
@@ -49,7 +46,6 @@ describe('Navitems Desktop', () => {
       <NavItems
         data={mainMenuItems}
         options={options}
-        hasMenuItem={hasMenuItem}
         clickHandler={mockClickHandler}
       />
     );
@@ -62,7 +58,6 @@ describe('Navitems Desktop', () => {
       <NavItems
         data={mainMenuItems}
         options={options}
-        hasMenuItem={hasMenuItem}
         clickHandler={mockClickHandler}
       />
     );
