@@ -1,6 +1,6 @@
 import React from 'react';
 import { Divider } from 'newskit';
-import { ContainerInline, StyledBlock } from '../shared-styles';
+import { Container, InfoContainer, ContainerFlex } from '../shared-styles';
 import { LiveTag } from './live-tag';
 import { CustomTextBlock } from './customTextBlock';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
@@ -21,17 +21,17 @@ export interface ArticleTileInfoProps {
 }
 
 const TileWrapper = ({ children }: { children: React.ReactNode }) => (
-  <>
+  <ContainerFlex>
     {children}
-    <ContainerInline>
+    <Container>
       <Divider
         vertical
         overrides={{
           marginInline: 'space020'
         }}
       />
-    </ContainerInline>
-  </>
+    </Container>
+  </ContainerFlex>
 );
 
 export const ArticleTileInfo = ({
@@ -58,13 +58,11 @@ export const ArticleTileInfo = ({
   const capitalizedText = (text?: string) => text && text.toUpperCase();
 
   return (
-    <>
-      <StyledBlock
+      <InfoContainer
         className="article-info"
-        marginBlockStart={marginBlockStart}
-        marginBlockEnd={marginBlockEnd}
+        // marginBlockStart={marginBlockStart}
+        // marginBlockEnd={marginBlockEnd}
       >
-        <>
           {isLiveTag &&
             expirableFlags && (
               <TileWrapper>
@@ -104,8 +102,6 @@ export const ArticleTileInfo = ({
               <CustomTextBlock text={capitalizedText(label)} />
             </TileWrapper>
           )}
-        </>
-      </StyledBlock>
-    </>
+      </InfoContainer>
   );
 };

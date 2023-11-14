@@ -112,13 +112,32 @@ export const StyledTextBlock = styled(TextBlock)`
   border-radius: 2px;
 `;
 
-export const StyledBlock = styled(Block)`
-  position: relative;
-  display: flex;
-  align-items: last baseline;
-  flex-wrap: wrap;
-  ${getSpacingCssFromTheme('row-gap', 'space020')};
+export const ContainerFlex = styled.span`
+  display: inline-flex;
+  padding-bottom: 8px;
+  :last-child > div {
+    display: none;
+    padding-bottom: 0px;
+  } 
 `;
+
+export const InfoContainer = styled.span`
+word-break: break-word;
+`
+
+export const Container = styled.div`
+${getSizingCssFromTheme('height', 'sizing020')};
+
+`
+
+export const StyledBlock = styled(Block)`
+  // position: relative;
+  // display: flex;
+  // align-items: last baseline;
+  // flex-wrap: wrap;
+  // ${getSpacingCssFromTheme('row-gap', 'space020')};
+ 
+  `;
 
 export const Wrapper = styled.div`
   display: flex;
