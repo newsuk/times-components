@@ -1,13 +1,12 @@
 import React from 'react';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
-import { StyledMenuItemsDesktop } from '../styles';
+import { StyledMenuItemsDesktop, VisibleCheckNavContainer } from '../styles';
 
 export const NavItems: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-  hasMenuItem: number;
   clickHandler: (title: string) => void;
-}> = ({ options, data, hasMenuItem, clickHandler }) => {
+}> = ({ options, data, clickHandler }) => {
   const { handleSelect, isSelected } = options;
 
   const handleClick = (slug: string, title: string) => {
@@ -16,8 +15,8 @@ export const NavItems: React.FC<{
   };
 
   return (
-    <>
-      {data.slice(0, hasMenuItem).map(({ title, slug, url }) => (
+    <VisibleCheckNavContainer data={data}>
+      {data.map(({ title, slug, url }) => (
         <StyledMenuItemsDesktop
           overrides={{
             paddingInline: 'space040',
@@ -32,6 +31,6 @@ export const NavItems: React.FC<{
           {title}
         </StyledMenuItemsDesktop>
       ))}
-    </>
+    </VisibleCheckNavContainer>
   );
 };
