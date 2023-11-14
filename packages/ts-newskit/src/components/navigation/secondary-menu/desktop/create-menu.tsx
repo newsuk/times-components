@@ -1,66 +1,21 @@
-import React, { useEffect, useMemo, useRef } from 'react';
-import { Menu, useBreakpointKey } from 'newskit';
-import { MenuContainer, Wrapper, MainMenu, StyledMenuSub } from '../styles';
+import React, { useEffect, useRef } from 'react';
+import { Menu } from 'newskit';
+import {
+  MenuContainer,
+  Wrapper,
+  MainMenu,
+  StyledMenuSub,
+  VisibleCheckContainer
+} from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
-
-const MAX_NAV_ITEMS_CHAR_COUNT_MD = 55;
-const MAX_NAV_ITEMS_CHAR_COUNT_LG = 75;
-const MAX_NAV_ITEMS_CHAR_COUNT_XL = 100;
-
-const getLastVisibleMenuItemIndex = (
-  data: SecondaryMenuItem[],
-  charCount: number
-) => {
-  let charCountSum = 0;
-  for (let i = 0; i < data.length; i++) {
-    charCountSum = charCountSum + data[i].title.length;
-    if (charCountSum > charCount) {
-      return i - 1;
-    }
-  }
-  return data.length - 1;
-};
 
 export const CreateMenu: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
   clickHandler: (title: string) => void;
 }> = ({ options, data, clickHandler }) => {
-  const breakpoint = useBreakpointKey();
-  const lastVisibleMenuItemIndex = useMemo(
-    () => {
-      let charCount = 0;
-      console.log('breakpoint=======', breakpoint);
-      switch (breakpoint) {
-        case 'xl':
-          charCount = MAX_NAV_ITEMS_CHAR_COUNT_XL;
-          break;
-        case 'lg':
-          charCount = MAX_NAV_ITEMS_CHAR_COUNT_LG;
-          break;
-        case 'md':
-          charCount = MAX_NAV_ITEMS_CHAR_COUNT_MD;
-          break;
-        default:
-          charCount = MAX_NAV_ITEMS_CHAR_COUNT_MD;
-      }
-      console.log('====data', data);
-      console.log('======inedx', getLastVisibleMenuItemIndex(data, charCount));
-      return getLastVisibleMenuItemIndex(data, charCount);
-    },
-    [breakpoint]
-  );
-  const hasMoreItem = useMemo(
-    () => lastVisibleMenuItemIndex !== data.length - 1,
-    [lastVisibleMenuItemIndex]
-  );
-  const moreMenuItemsLength = useMemo(
-    () => (hasMoreItem ? data.length - 1 - lastVisibleMenuItemIndex : 0),
-    [hasMoreItem]
-  );
-
   const contanierRef = useRef<HTMLDivElement>(null);
   const navListRef = useRef<HTMLDivElement>(null);
   const { isExpanded, setIsExpanded } = options;
@@ -88,7 +43,7 @@ export const CreateMenu: React.FC<{
 
   return (
     <MainMenu
-      hasMoreItems={!!hasMoreItem}
+      data={data}
       aria-label="Secondary Navigation"
       overrides={{
         spaceInline: 'space000'
@@ -99,11 +54,10 @@ export const CreateMenu: React.FC<{
         <NavItems
           data={data}
           options={options}
-          hasMenuItem={lastVisibleMenuItemIndex + 1}
           clickHandler={clickHandler}
         />
       </Wrapper>
-      {hasMoreItem && (
+      <VisibleCheckContainer data={data}>
         <StyledMenuSub
           onClick={() => setIsExpanded(!isExpanded)}
           expanded={isExpanded}
@@ -129,13 +83,12 @@ export const CreateMenu: React.FC<{
               <CreateMoreMenu
                 data={data}
                 options={options}
-                moreMenuItemsLength={moreMenuItemsLength}
                 clickHandler={clickHandler}
               />
             </Menu>
           </MenuContainer>
         </StyledMenuSub>
-      )}
+      </VisibleCheckContainer>
     </MainMenu>
   );
 };

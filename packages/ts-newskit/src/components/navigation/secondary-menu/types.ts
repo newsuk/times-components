@@ -5,7 +5,7 @@ export type SecondaryMenuItem = {
 };
 
 export type MainMenuProp = {
-  hasMoreItems: boolean;
+  data: SecondaryMenuItem[];
 };
 
 export type SecondaryNavContainerProp = {

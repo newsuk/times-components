@@ -1,19 +1,18 @@
 import React, { Fragment } from 'react';
 import { MenuItem } from 'newskit';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
-import { MenuDividerDropdown } from '../styles';
+import { MenuDividerDropdown, VisibleCheckMenuContainer } from '../styles';
 
 export const CreateMoreMenu: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-  moreMenuItemsLength: number;
   clickHandler: (title: string) => void;
-}> = ({ options, data, moreMenuItemsLength, clickHandler }) => {
+}> = ({ options, data, clickHandler }) => {
   const { handleSelect, isSelected, isExpanded, setIsExpanded } = options;
 
   return (
-    <>
-      {data.slice(-moreMenuItemsLength).map(({ title, url }) => (
+    <VisibleCheckMenuContainer data={data}>
+      {data.map(({ title, url }) => (
         <Fragment key={title}>
           <MenuItem
             href={url}
@@ -33,6 +32,6 @@ export const CreateMoreMenu: React.FC<{
           <MenuDividerDropdown />
         </Fragment>
       ))}
-    </>
+    </VisibleCheckMenuContainer>
   );
 };
