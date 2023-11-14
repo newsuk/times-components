@@ -51,11 +51,7 @@ export const CreateMenu: React.FC<{
       ref={contanierRef}
     >
       <Wrapper ref={navListRef}>
-        <NavItems
-          data={data}
-          options={options}
-          clickHandler={clickHandler}
-        />
+        <NavItems data={data} options={options} clickHandler={clickHandler} />
       </Wrapper>
       <VisibleCheckContainer data={data}>
         <StyledMenuSub

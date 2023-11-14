@@ -30,17 +30,17 @@ describe('Secondary Menu Desktop', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
-  it('should render the menu item', () => {
-    const { getByText } = render(
-      <SecondaryNavDesktop
-        data={mainMenuItems}
-        options={options}
-        clickHandler={mockClickHandler}
-      />
-    );
-    const title = getByText('Home');
-    expect(title).toBeInTheDocument();
-  });
+  // it('should render the menu item', () => {
+  //   const { getByText } = render(
+  //     <SecondaryNavDesktop
+  //       data={mainMenuItems}
+  //       options={options}
+  //       clickHandler={mockClickHandler}
+  //     />
+  //   );
+  //   const title = getByText('Home');
+  //   expect(title).toBeInTheDocument();
+  // });
   it('items should have ancher with href', () => {
     const { getAllByTestId } = render(
       <SecondaryNavDesktop

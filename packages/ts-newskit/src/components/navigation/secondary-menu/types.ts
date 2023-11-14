@@ -17,10 +17,6 @@ export type BreakPointProp = {
   breakpointKey: string;
 };
 
-export type MoreMenuItemsProp = {
-  moreMenuItemsLength: number;
-};
-
 export type SecondaryMenuOptions = {
   isSelected: string;
   handleSelect: (value: string) => void;
