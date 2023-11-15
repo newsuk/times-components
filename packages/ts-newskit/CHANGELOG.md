@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.134.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.133.0...@times-components/ts-newskit@1.134.0) (2023-11-15)
+
+
+### Features
+
+* **TMPZ-199:** updated puzzles category for improved CWV ([#3644](https://github.com/newsuk/times-components/issues/3644)) ([d6e5ea0](https://github.com/newsuk/times-components/commit/d6e5ea09d559dc287be90d077eba9f7d844454e7))
+
+
+
+
+
 # [1.133.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.132.0...@times-components/ts-newskit@1.133.0) (2023-11-10)
 
 
