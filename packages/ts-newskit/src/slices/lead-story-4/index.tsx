@@ -50,7 +50,8 @@ export const LeadStory4 = ({
       hasTopBorder: index > 1
     }));
 
-  const articlesFrom5To9 = articleMediumBreakPoint && articleMediumBreakPoint.slice(1);
+  const articlesFrom5To9 =
+    articleMediumBreakPoint && articleMediumBreakPoint.slice(1);
   const article4 =
     articleMediumBreakPoint && articleMediumBreakPoint.slice(0, 1);
   const article234 = article4 && article2and3 && [...article2and3, ...article4];
