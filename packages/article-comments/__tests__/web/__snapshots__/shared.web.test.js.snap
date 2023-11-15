@@ -135,7 +135,7 @@ exports[`User States RA Users 1`] = `
     </div>
     <a
       class="c3"
-      href="https://thetimes.co.uk/subscribe/digital?ILC=GB-TNL_The_Times-Conversion_Page-Homepage-2020"
+      href="https://www.mockUrl.co.uk"
     >
       View offers
     </a>
@@ -252,7 +252,7 @@ exports[`disabled comments 1`] = `
       Comments are subject to our community guidelines, which can be viewed 
       <a
         class="c3"
-        href="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+        href="/article/f4024fbe-d989-11e6-9063-500e6740fc32"
         style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px;"
       >
         here

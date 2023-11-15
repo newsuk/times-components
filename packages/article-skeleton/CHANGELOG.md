@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.115.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.0...@times-components/article-skeleton@1.115.1) (2023-11-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.115.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.20...@times-components/article-skeleton@1.115.0) (2023-11-13)
+
+
+### Features
+
+* **TMG-1049:** Switch commenting links based on environment, region ([#3645](https://github.com/newsuk/times-components/issues/3645)) ([659aed4](https://github.com/newsuk/times-components/commit/659aed4a5dcc1feb58cf383d1b140b5134e1fa0f))
+
+
+
+
+
 ## [1.114.20](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.19...@times-components/article-skeleton@1.114.20) (2023-11-10)
 
 **Note:** Version bump only for package @times-components/article-skeleton

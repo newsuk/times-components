@@ -60,7 +60,8 @@ const ArticleSkeleton = ({
   swgProductId,
   getFallbackThumbnailUrl169,
   zephrDivs,
-  showAudioPlayer
+  showAudioPlayer,
+  storefrontConfig
 }) => {
   const {
     commentsEnabled,
@@ -300,6 +301,7 @@ const ArticleSkeleton = ({
                       topics={topics}
                       isSharingSavingEnabled={isSharingSavingEnabled}
                       isCommentEnabled={isCommentEnabled}
+                      storefrontConfig={storefrontConfig}
                     />
                   )}
                 </LazyLoad>
