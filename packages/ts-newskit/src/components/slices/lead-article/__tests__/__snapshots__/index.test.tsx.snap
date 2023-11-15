@@ -49,57 +49,73 @@ exports[`Render Component one should render a snapshot 1`] = `
         data-testid="divider"
       />
       <div
-        class="article-info css-1wte5n0"
+        class="article-info css-182uup4"
       >
-        <span
-          class="css-7b9bzx"
-        >
-          LIVE
-        </span>
         <div
-          class="css-p44zak"
+          class="css-1i82ydo"
         >
-          <hr
-            aria-hidden="true"
-            class="css-15kf7hd"
-            data-testid="divider"
-          />
-        </div>
-        <span
-          class="css-1basb1c"
-        >
-          <div
-            class="css-gb5m6n"
+          <span
+            class="css-jtt4jc"
           >
-            INTERVIEW
-          </div>
-        </span>
-        <div
-          class="css-p44zak"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-15kf7hd"
-            data-testid="divider"
-          />
-        </div>
-        <span
-          class="css-1basb1c"
-        >
-          <div
-            class="css-gb5m6n"
+            <span
+              class="css-7b9bzx"
+            >
+              LIVE
+            </span>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-15kf7hd"
+                data-testid="divider"
+              />
+            </div>
+          </span>
+          <span
+            class="css-jtt4jc"
           >
-            MARTIN SAMUEL
-          </div>
-        </span>
-        <div
-          class="css-p44zak"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-15kf7hd"
-            data-testid="divider"
-          />
+            <span
+              class="css-1basb1c"
+            >
+              <span
+                class="css-11qylza"
+              >
+                INTERVIEW
+              </span>
+            </span>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-15kf7hd"
+                data-testid="divider"
+              />
+            </div>
+          </span>
+          <span
+            class="css-jtt4jc"
+          >
+            <span
+              class="css-1basb1c"
+            >
+              <span
+                class="css-11qylza"
+              >
+                MARTIN SAMUEL
+              </span>
+            </span>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-15kf7hd"
+                data-testid="divider"
+              />
+            </div>
+          </span>
         </div>
       </div>
       <a
@@ -149,7 +165,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           </span>
         </a>
         <div
-          class="css-p44zak"
+          class="css-lew009"
         >
           <hr
             aria-hidden="true"
