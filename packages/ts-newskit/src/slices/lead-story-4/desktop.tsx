@@ -1,10 +1,12 @@
 import { Divider, Hidden, Visible, Stack } from 'newskit';
 import React from 'react';
-import { LeadArticle } from '../../components/slices/lead-article';
 import { StackItem, LeadStoryDivider, BlockItem } from '../shared-styles';
 import { ArticleStacks, ArticleStackLgAndXl } from './article-stack';
 import { ArticleProps } from '../../components/slices/article';
-import { LeadArticleProps } from '../../components/slices/lead-article';
+import {
+  LeadArticleProps,
+  LeadArticle
+} from '../../components/slices/lead-article';
 import { ClickHandlerType } from '../types';
 
 export interface LeadStory4PropsDesktop {

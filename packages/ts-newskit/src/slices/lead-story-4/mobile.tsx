@@ -1,11 +1,12 @@
 import { Block, Divider, Visible } from 'newskit';
 import React from 'react';
-import { LeadArticle } from '../../components/slices/lead-article';
-import { Article } from '../../components/slices/article';
 import { StackItem, BlockItem, LeadStoryContainer } from '../shared-styles';
 import { ArticleStackLarge } from '../shared';
-import { LeadArticleProps } from '../../components/slices/lead-article';
-import { ArticleProps } from '../../components/slices/article';
+import {
+  LeadArticleProps,
+  LeadArticle
+} from '../../components/slices/lead-article';
+import { ArticleProps, Article } from '../../components/slices/article';
 import { ClickHandlerType } from '../types';
 
 export interface LeadStory4Mobile {
@@ -72,7 +73,10 @@ export const LeadStory4Mobile = ({
       />
       <BlockItem>
         <Visible xs sm>
-          <ArticleStackLarge articles={articlesFrom5To9} clickHandler={clickHandler} />
+          <ArticleStackLarge
+            articles={articlesFrom5To9}
+            clickHandler={clickHandler}
+          />
         </Visible>
       </BlockItem>
     </LeadStoryContainer>
