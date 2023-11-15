@@ -33,7 +33,7 @@ export const PuzzleCard = ({
         stylePreset: 'puzzleCard'
       }}
     >
-      <PuzzleCardImgWrapper className={isLazyLoading ? '' : 'lcpHeading'}>
+      <PuzzleCardImgWrapper className={isLazyLoading ? '' : 'lcpPuzzles'}>
         {imageUrl ? (
           <Image
             loadingAspectRatio="3:2"

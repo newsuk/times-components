@@ -6,7 +6,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
     class="css-1ba9oov"
   >
     <div
-      class="lcpHeading css-2zeami"
+      class="lcpPuzzles css-2zeami"
     >
       <picture
         class="css-2pubdt"
