@@ -54,7 +54,8 @@ export const LeadStory4Mobile = ({
                     article={{
                       ...article,
                       hasTopBorder: true,
-                      isLeadImage: true
+                      isLeadImage: true,
+                      titleTypographyPreset: 'editorialHeadline030'
                     }}
                     clickHandler={clickHandler}
                   />
