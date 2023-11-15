@@ -1,5 +1,5 @@
 import React from 'react';
-import { Visible } from 'newskit';
+import { Hidden, Visible } from 'newskit';
 import { LeadArticleProps } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
 import { ClickHandlerType } from '../types';
@@ -57,7 +57,7 @@ export const LeadStory4 = ({
   const article234 = article4 && article2and3 && [...article2and3, ...article4];
   return (
     <>
-      <Visible md lg xl>
+      <Hidden xs sm>
         <LeadStory4Desktop
           leadArticle={modifiedLeadArticle}
           artcilesBelowMainImage={artcilesBelowMainImage}
@@ -67,7 +67,7 @@ export const LeadStory4 = ({
           articlesTop={articlesTop}
           articlesBottom={articlesBottom}
         />
-      </Visible>
+      </Hidden>
       <Visible xs sm>
         <LeadStory4Mobile
           leadArticle={modifiedLeadArticle}

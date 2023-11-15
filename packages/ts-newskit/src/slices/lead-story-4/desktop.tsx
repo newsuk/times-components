@@ -1,4 +1,4 @@
-import { Divider, Hidden, Visible, Stack } from 'newskit';
+import { Divider, Visible, Stack } from 'newskit';
 import React from 'react';
 import { StackItem, LeadStoryDivider, BlockItem } from '../shared-styles';
 import { ArticleStacks, ArticleStackLgAndXl } from './article-stack';
@@ -52,29 +52,27 @@ export const LeadStory4Desktop = ({
             xl: '50%'
           }}
         >
-          <Hidden xs sm>
-            <LeadStoryDivider
-              overrides={{ stylePreset: 'lightDivider' }}
-              vertical
-              position="left"
-            />
-            <Visible md>
-              <BlockItem>
-                <ArticleStacks
-                  articles={modifiedArticle2and3}
-                  clickHandler={clickHandler}
-                />
-              </BlockItem>
-            </Visible>
-            <Visible lg xl>
-              <BlockItem>
-                <ArticleStacks
-                  articles={modifiedArticleRight}
-                  clickHandler={clickHandler}
-                />
-              </BlockItem>
-            </Visible>
-          </Hidden>
+          <LeadStoryDivider
+            overrides={{ stylePreset: 'lightDivider' }}
+            vertical
+            position="left"
+          />
+          <Visible md>
+            <BlockItem>
+              <ArticleStacks
+                articles={modifiedArticle2and3}
+                clickHandler={clickHandler}
+              />
+            </BlockItem>
+          </Visible>
+          <Visible lg xl>
+            <BlockItem>
+              <ArticleStacks
+                articles={modifiedArticleRight}
+                clickHandler={clickHandler}
+              />
+            </BlockItem>
+          </Visible>
         </StackItem>
       </Stack>
       <Divider

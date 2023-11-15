@@ -72,12 +72,10 @@ export const LeadStory4Mobile = ({
         aria-label="article-divider-horizontal"
       />
       <BlockItem>
-        <Visible xs sm>
-          <ArticleStackLarge
-            articles={articlesFrom5To9}
-            clickHandler={clickHandler}
-          />
-        </Visible>
+        <ArticleStackLarge
+          articles={articlesFrom5To9}
+          clickHandler={clickHandler}
+        />
       </BlockItem>
     </LeadStoryContainer>
   );
