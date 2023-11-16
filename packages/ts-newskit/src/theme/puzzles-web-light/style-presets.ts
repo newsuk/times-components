@@ -171,15 +171,41 @@ stylePresets.contactuslink = {
 
 stylePresets.sidebarCard = {
   base: {
-    backgroundColor: '{{colors.interfaceSkeleton010}}',
     borderStyle: 'solid none none none',
-    borderWidth: '{{borders.borderWidth020}}',
+    borderWidth: '{{borders.borderWidth030}}',
     borderColor: '{{colors.inkBrand010}}'
   }
 };
 
 stylePresets.transparentCard = {
   base: {
-    backgroundColor: 'unset'
+    backgroundColor: 'unset',
+    color: '{{colors.inkContrast}}'
+  },
+
+  hover: {
+    color: '{{colors.interactiveLink020}}'
+  }
+};
+
+stylePresets.circleIconButton = {
+  base: {
+    borderRadius: '50%',
+    backgroundColor: '{{colors.interface030}}',
+    color: '{{colors.inkBrand010}}'
+  },
+
+  hover: {
+    color: '{{colors.interactiveLink020}}'
+  }
+};
+
+stylePresets.cardTitleIcon = {
+  base: {
+    color: '{{colors.inkBrand010}}'
+  },
+
+  hover: {
+    color: '{{colors.interactiveLink020}}'
   }
 };
