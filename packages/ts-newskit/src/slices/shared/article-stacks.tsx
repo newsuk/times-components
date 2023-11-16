@@ -5,6 +5,7 @@ import { StackItem, ScrollContainer } from '../shared-styles';
 import { ComposedArticleStack } from './composed-article-stack';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType, StackArticleOptions } from '../types';
+import { LeadArticleGrid } from '../shared-styles/article-stack';
 
 export const ArticleStackLarge = ({
   articles,
@@ -15,7 +16,7 @@ export const ArticleStackLarge = ({
   articleOptions?: StackArticleOptions;
 }) => {
   const articleGrid = (
-    <GridLayout
+    <LeadArticleGrid
       columns={{
         xs: '170px 1px 170px 1px 170px 1px 170px 1px 170px',
         md: '1fr 1px 1fr 1px 1fr',
@@ -59,7 +60,7 @@ export const ArticleStackLarge = ({
           </React.Fragment>
         );
       })}
-    </GridLayout>
+    </LeadArticleGrid>
   );
 
   return (

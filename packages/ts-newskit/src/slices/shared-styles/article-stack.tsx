@@ -40,3 +40,36 @@ export const ArticleGrid = styled(GridLayout)`
     }
   }
 `;
+
+export const LeadArticleGrid = styled(GridLayout)`
+  ${getMediaQueryFromTheme('md')} {
+    .article-image {
+      ${getSpacingCssFromTheme('margin-block-end', 'space030')};
+    }
+    .article-info {
+      ${getSpacingCssFromTheme('margin-block-start', 'space000')};
+      ${getSpacingCssFromTheme('margin-block-end', 'space030')};
+    }
+    .article-headline {
+      margin-block-start: 0;
+    }
+  }
+  ${getMediaQueryFromTheme('lg')} {
+    .article-headline {
+      margin-block-start: 0;
+    }
+    .article-info {
+      ${getSpacingCssFromTheme('margin-block-start', 'space000')};
+    }
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    .article-headline {
+      margin-block-start: 0;
+    }
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    & > div:nth-of-type(2) hr[aria-label='article-divider-horizontal'] {
+      display: none;
+    }
+  }
+`;
