@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { MenuItem } from 'newskit';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { MenuDividerDropdown, VisibleCheckMenuContainer } from '../styles';
@@ -13,7 +13,7 @@ export const CreateMoreMenu: React.FC<{
   return (
     <VisibleCheckMenuContainer data={data}>
       {data.map(({ title, url }) => (
-        <Fragment key={title}>
+        <div key={title}>
           <MenuItem
             href={url}
             overrides={{
@@ -30,7 +30,7 @@ export const CreateMoreMenu: React.FC<{
             {title}
           </MenuItem>
           <MenuDividerDropdown />
-        </Fragment>
+        </div>
       ))}
     </VisibleCheckMenuContainer>
   );
