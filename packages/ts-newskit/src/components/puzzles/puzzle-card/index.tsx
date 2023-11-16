@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  CardContent,
-  CardLink,
-  CardMedia,
-  Stack,
-  TextBlock,
-  Block
-} from 'newskit';
+import { CardContent, CardLink, Stack, TextBlock, Block, Image } from 'newskit';
 import {
   Wrap,
   StyledNewsKitPuzzlePlaceholder,
@@ -20,11 +13,13 @@ import { convertDateToWeekday } from '../../../utils';
 export interface PuzzleCardProps {
   data: Puzzle;
   isImageCropped?: boolean;
+  isLazyLoading?: boolean;
 }
 
 export const PuzzleCard = ({
   data,
-  isImageCropped = false
+  isImageCropped = false,
+  isLazyLoading = false
 }: PuzzleCardProps) => {
   const publishedDate = convertDateToWeekday(data.publishedAt);
   const imageUrl = data.image ? data.image.crops[0].url : '';
@@ -38,20 +33,15 @@ export const PuzzleCard = ({
         stylePreset: 'puzzleCard'
       }}
     >
-      <PuzzleCardImgWrapper>
+      <PuzzleCardImgWrapper className={isLazyLoading ? '' : 'lcpPuzzles'}>
         {imageUrl ? (
-          <CardMedia
-            /* @ts-ignore */
-            className="lcpItem"
-            media={{
-              loadingAspectRatio: '3:2',
-              alt: data.title || 'Puzzle thumbnail',
-              src: croppedImageUrl,
-              placeholderIcon: true,
-              fit: 'cover',
-              overrides: {
-                stylePreset: 'puzzleCardMedia'
-              }
+          <Image
+            loadingAspectRatio="3:2"
+            alt={data.title || 'Puzzle thumbnail'}
+            src={croppedImageUrl}
+            loading={isLazyLoading ? 'lazy' : 'eager'}
+            overrides={{
+              stylePreset: 'puzzleCardMedia'
             }}
             data-testid="puzzle-image"
           />

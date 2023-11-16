@@ -107,13 +107,17 @@ export const CardsContainer = ({
           }}
         >
           {' '}
-          {cards.map(card => (
+          {cards.map((card, index) => (
             <GridLayoutItem
               key={getSSRId()}
               data-test-id="single-card"
               ref={cardRef}
             >
-              <PuzzleCard data={card} isImageCropped={isImageCropped} />
+              <PuzzleCard
+                data={card}
+                isImageCropped={isImageCropped}
+                isLazyLoading={index > 3}
+              />
             </GridLayoutItem>
           ))}
         </GridLayout>
