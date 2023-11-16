@@ -124,7 +124,6 @@ export const Wrapper = styled.span<{ alignFlex: boolean }>`
   ${({ alignFlex }) => !alignFlex && 'line-height: 24px'};
   ${({ alignFlex }) => !alignFlex && 'position: absolute'};
   ${({ alignFlex }) => !alignFlex && 'top: -8px'};
-
 `;
 
 export const Container = styled.div`
