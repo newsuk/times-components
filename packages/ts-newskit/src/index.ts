@@ -5,6 +5,7 @@ export { formatThemeOverrides } from './utils/theme-formatting';
 // THEMES
 export { TimesWebLightTheme } from './theme/times-web-light';
 export { TimesWebLightSportTheme } from './theme/times-web-light-sport';
+export { TimesWebLightTravelTheme } from './theme/times-web-light-travel';
 
 // NAVIGATION
 export { Breadcrumb } from './components/navigation/breadcrumb';
