@@ -40,7 +40,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                         class="css-6tvr2h"
                       >
                         <span
-                          class="css-1ll69qq"
+                          class="css-78ny13"
                         >
                           NEW
                         </span>
@@ -62,7 +62,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                         class="css-1basb1c"
                       >
                         <span
-                          class="css-1ll69qq"
+                          class="css-78ny13"
                         >
                           PROFILE
                         </span>
@@ -178,7 +178,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                         class="css-6tvr2h"
                       >
                         <span
-                          class="css-1ll69qq"
+                          class="css-78ny13"
                         >
                           EXCLUSIVE
                         </span>
@@ -200,7 +200,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                         class="css-1basb1c"
                       >
                         <span
-                          class="css-1ll69qq"
+                          class="css-78ny13"
                         >
                           REVIEW
                         </span>
@@ -359,7 +359,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                       class="css-6tvr2h"
                     >
                       <span
-                        class="css-1ll69qq"
+                        class="css-78ny13"
                       >
                         NEW
                       </span>
@@ -381,7 +381,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                       class="css-1basb1c"
                     >
                       <span
-                        class="css-1ll69qq"
+                        class="css-78ny13"
                       >
                         REVIEW
                       </span>
@@ -531,7 +531,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                       class="css-6tvr2h"
                     >
                       <span
-                        class="css-1ll69qq"
+                        class="css-78ny13"
                       >
                         EXCLUSIVE
                       </span>
@@ -553,7 +553,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                       class="css-1basb1c"
                     >
                       <span
-                        class="css-1ll69qq"
+                        class="css-78ny13"
                       >
                         INTERVIEW
                       </span>
@@ -680,7 +680,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                         class="css-6tvr2h"
                       >
                         <span
-                          class="css-1ll69qq"
+                          class="css-78ny13"
                         >
                           NEW
                         </span>
@@ -702,7 +702,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                         class="css-1basb1c"
                       >
                         <span
-                          class="css-1ll69qq"
+                          class="css-78ny13"
                         >
                           PROFILE
                         </span>
@@ -818,7 +818,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                         class="css-6tvr2h"
                       >
                         <span
-                          class="css-1ll69qq"
+                          class="css-78ny13"
                         >
                           EXCLUSIVE
                         </span>
@@ -840,7 +840,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                         class="css-1basb1c"
                       >
                         <span
-                          class="css-1ll69qq"
+                          class="css-78ny13"
                         >
                           REVIEW
                         </span>
@@ -999,7 +999,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                       class="css-6tvr2h"
                     >
                       <span
-                        class="css-1ll69qq"
+                        class="css-78ny13"
                       >
                         NEW
                       </span>
@@ -1021,7 +1021,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                       class="css-1basb1c"
                     >
                       <span
-                        class="css-1ll69qq"
+                        class="css-78ny13"
                       >
                         REVIEW
                       </span>
@@ -1171,7 +1171,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                       class="css-6tvr2h"
                     >
                       <span
-                        class="css-1ll69qq"
+                        class="css-78ny13"
                       >
                         EXCLUSIVE
                       </span>
@@ -1193,7 +1193,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                       class="css-1basb1c"
                     >
                       <span
-                        class="css-1ll69qq"
+                        class="css-78ny13"
                       >
                         INTERVIEW
                       </span>
