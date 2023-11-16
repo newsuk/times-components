@@ -51,7 +51,7 @@
     "flag": "4 min read 1",
     "listData": []
   },
-  "artcilesRight": [
+  "articlesRight": [
     {
       "hasVideo": false,
       "contentType": "Profile",
@@ -253,7 +253,7 @@
       "flag": "Flag4"
     }
   ],
-  "artcilesBelowMainImage": [
+  "articlesBelowMainImage": [
     {
       "hasVideo": false,
       "contentType": "Q&A",

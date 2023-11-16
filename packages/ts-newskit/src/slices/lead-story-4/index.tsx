@@ -8,15 +8,15 @@ import { LeadStory4Mobile } from './mobile';
 
 export interface LeadStory4Props {
   leadArticle: LeadArticleProps;
-  artcilesRight: ArticleProps[];
-  artcilesBelowMainImage: ArticleProps[];
+  articlesRight: ArticleProps[];
+  articlesBelowMainImage: ArticleProps[];
   clickHandler: ClickHandlerType;
 }
 
 export const LeadStory4 = ({
   leadArticle,
-  artcilesRight,
-  artcilesBelowMainImage,
+  articlesRight,
+  articlesBelowMainImage,
   clickHandler
 }: LeadStory4Props) => {
   const modifiedLeadArticle = {
@@ -27,11 +27,11 @@ export const LeadStory4 = ({
     headlineTypographyPreset: 'editorialHeadline040'
   };
 
-  const article2and3 = artcilesRight && artcilesRight.slice(0, 2);
-  const article4and5 = artcilesRight && artcilesRight.slice(2, 4);
-  const articleMediumBreakPoint = artcilesBelowMainImage && [
+  const article2and3 = articlesRight && articlesRight.slice(0, 2);
+  const article4and5 = articlesRight && articlesRight.slice(2, 4);
+  const articleMediumBreakPoint = articlesBelowMainImage && [
     ...article4and5,
-    ...artcilesBelowMainImage
+    ...articlesBelowMainImage
   ];
   const articlesTop =
     articleMediumBreakPoint && articleMediumBreakPoint.slice(0, 3);
@@ -44,8 +44,8 @@ export const LeadStory4 = ({
       hasTopBorder: index === 1
     }));
   const modifiedArticleRight =
-    artcilesRight &&
-    artcilesRight.map((article, index) => ({
+    articlesRight &&
+    articlesRight.map((article, index) => ({
       ...article,
       hasTopBorder: index > 1
     }));
@@ -60,7 +60,7 @@ export const LeadStory4 = ({
       <Hidden xs sm>
         <LeadStory4Desktop
           leadArticle={modifiedLeadArticle}
-          artcilesBelowMainImage={artcilesBelowMainImage}
+          articlesBelowMainImage={articlesBelowMainImage}
           clickHandler={clickHandler}
           modifiedArticle2and3={modifiedArticle2and3}
           modifiedArticleRight={modifiedArticleRight}

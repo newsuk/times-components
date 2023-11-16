@@ -76,7 +76,7 @@ export const ArticleStacks = ({
   );
 };
 
-export const ArticleStackLgAndXl = ({
+export const ArticleStacksLgAndXl = ({
   articles,
   clickHandler
 }: {

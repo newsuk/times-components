@@ -27,23 +27,14 @@ export const LeadStory4Mobile = ({
     <LeadStoryContainer>
       <StackItem
         $width={{
-          xs: '100%',
-          md: '69.5%',
-          lg: '50%',
-          xl: '50%'
-        }}
-        marginInlineEnd={{
-          md: 'space060'
+          xs: '100%'
         }}
       >
         <LeadArticle article={leadArticle} clickHandler={clickHandler} />
       </StackItem>
       <StackItem
         $width={{
-          xs: '100%',
-          md: '30.5%',
-          lg: '50%',
-          xl: '50%'
+          xs: '100%'
         }}
       >
         <Visible xs sm>
@@ -68,8 +59,7 @@ export const LeadStory4Mobile = ({
       </StackItem>
       <FullWidthBlock
         paddingInlineStart={{
-          xs: 'space045',
-          md: 'space000'
+          xs: 'space045'
         }}
         marginBlockStart="space040"
       >

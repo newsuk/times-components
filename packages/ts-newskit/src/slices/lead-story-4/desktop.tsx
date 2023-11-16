@@ -1,7 +1,7 @@
 import { Divider, Visible, Stack } from 'newskit';
 import React from 'react';
 import { StackItem, LeadStoryDivider, BlockItem } from '../shared-styles';
-import { ArticleStacks, ArticleStackLgAndXl } from './article-stack';
+import { ArticleStacks, ArticleStacksLgAndXl } from './article-stack';
 import { ArticleProps } from '../../components/slices/article';
 import {
   LeadArticleProps,
@@ -11,7 +11,7 @@ import { ClickHandlerType } from '../types';
 
 export interface LeadStory4PropsDesktop {
   leadArticle: LeadArticleProps;
-  artcilesBelowMainImage: ArticleProps[];
+  articlesBelowMainImage: ArticleProps[];
   modifiedArticle2and3: ArticleProps[];
   modifiedArticleRight: ArticleProps[];
   articlesTop: ArticleProps[];
@@ -21,7 +21,7 @@ export interface LeadStory4PropsDesktop {
 
 export const LeadStory4Desktop = ({
   leadArticle,
-  artcilesBelowMainImage,
+  articlesBelowMainImage,
   clickHandler,
   articlesTop,
   modifiedArticle2and3,
@@ -33,7 +33,6 @@ export const LeadStory4Desktop = ({
       <Stack flow="horizontal-top" marginBlockEnd="space040">
         <StackItem
           $width={{
-            xs: '100%',
             md: '69.5%',
             lg: '50%',
             xl: '50%'
@@ -46,7 +45,6 @@ export const LeadStory4Desktop = ({
         </StackItem>
         <StackItem
           $width={{
-            xs: '100%',
             md: '30.5%',
             lg: '50%',
             xl: '50%'
@@ -83,8 +81,8 @@ export const LeadStory4Desktop = ({
         aria-label="article-divider-horizontal"
       />
       <Visible lg xl>
-        <ArticleStackLgAndXl
-          articles={artcilesBelowMainImage}
+        <ArticleStacksLgAndXl
+          articles={articlesBelowMainImage}
           clickHandler={clickHandler}
         />
       </Visible>
