@@ -120,10 +120,8 @@ export const Wrapper = styled.span<{ alignFlex: boolean }>`
   ${({ alignFlex }) => alignFlex && 'display: flex'};
   ${({ alignFlex }) => alignFlex && 'align-items: center'};
   ${({ alignFlex }) => alignFlex && getSpacingCssFromTheme('gap', 'space010')};
-  ${({ alignFlex }) => !alignFlex && 'vertical-align: middle'};
+  ${({ alignFlex }) => !alignFlex && 'vertical-align: baseline'};
   ${({ alignFlex }) => !alignFlex && 'line-height: 24px'};
-  ${({ alignFlex }) => !alignFlex && 'position: absolute'};
-  ${({ alignFlex }) => !alignFlex && 'top: -8px'};
 `;
 
 export const Container = styled.div`
