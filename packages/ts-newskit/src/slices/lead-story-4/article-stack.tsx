@@ -33,13 +33,14 @@ export const ArticleStacks = ({
       data-testid={`article-container-desktop`}
     >
       {articles.map((article: ArticleProps, articleIndex, articleArr) => {
-        const articleBorder = articleIndex < articleArr.length - 1 && (
-          <Divider
-            aria-label="stacked-article-divider-vertical"
-            overrides={{ stylePreset: 'lightDivider' }}
-            vertical
-          />
-        );
+        const articleBorder = isMediumBreakPoint &&
+          articleIndex < articleArr.length - 1 && (
+            <Divider
+              aria-label="stacked-article-divider-vertical"
+              overrides={{ stylePreset: 'lightDivider' }}
+              vertical
+            />
+          );
         return (
           <React.Fragment key={article.id}>
             {hasTopBorder ? (
@@ -61,7 +62,7 @@ export const ArticleStacks = ({
                 clickHandler={clickHandler}
               />
             )}
-            {isMediumBreakPoint && articleBorder}
+            {articleBorder}
           </React.Fragment>
         );
       })}
