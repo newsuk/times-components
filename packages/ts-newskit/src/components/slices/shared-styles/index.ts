@@ -130,7 +130,7 @@ export const Container = styled.div`
 
 export const TileSpanContainer = styled.span<{ isVideoIcon?: boolean }>`
   word-break: break-word;
-  display: ${({ isVideoIcon }) => (isVideoIcon ? 'inline-flex' : 'unset')};
+  ${({ isVideoIcon }) => isVideoIcon && 'vertical-align: baseline'};
   :last-child > div {
     display: none;
   }
