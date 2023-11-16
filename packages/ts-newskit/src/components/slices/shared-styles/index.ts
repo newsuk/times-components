@@ -122,6 +122,9 @@ export const Wrapper = styled.span<{ alignFlex: boolean }>`
   ${({ alignFlex }) => alignFlex && getSpacingCssFromTheme('gap', 'space010')};
   ${({ alignFlex }) => !alignFlex && 'vertical-align: middle'};
   ${({ alignFlex }) => !alignFlex && 'line-height: 24px'};
+  ${({ alignFlex }) => !alignFlex && 'position: absolute'};
+  ${({ alignFlex }) => !alignFlex && 'top: -8px'};
+
 `;
 
 export const Container = styled.div`
@@ -129,7 +132,7 @@ export const Container = styled.div`
 `;
 
 export const TileSpanContainer = styled.span<{ isVideoIcon?: boolean }>`
-  word-break: ${({ isVideoIcon }) => (isVideoIcon ? 'normal' : 'break-word')};
+  word-break: break-word;
   display: ${({ isVideoIcon }) => (isVideoIcon ? 'inline-flex' : 'unset')};
   :last-child > div {
     display: none;
