@@ -2569,12 +2569,15 @@ exports[`Render Lead Story 4 Slice Slice matches snapshot 1`] = `
             </div>
           </div>
         </div>
-        <hr
-          aria-hidden="true"
-          aria-label="article-divider-horizontal"
-          class="css-1ft1o8k"
-          data-testid="divider"
-        />
+        <div
+          class="css-149xura"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-176zs48"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-11icnc2"
         >
@@ -7711,12 +7714,15 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
             </div>
           </div>
         </div>
-        <hr
-          aria-hidden="true"
-          aria-label="article-divider-horizontal"
-          class="css-1ft1o8k"
-          data-testid="divider"
-        />
+        <div
+          class="css-149xura"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-176zs48"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-11icnc2"
         >
@@ -12853,12 +12859,15 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
             </div>
           </div>
         </div>
-        <hr
-          aria-hidden="true"
-          aria-label="article-divider-horizontal"
-          class="css-1ft1o8k"
-          data-testid="divider"
-        />
+        <div
+          class="css-149xura"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-176zs48"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-11icnc2"
         >
@@ -17995,12 +18004,15 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
             </div>
           </div>
         </div>
-        <hr
-          aria-hidden="true"
-          aria-label="article-divider-horizontal"
-          class="css-1ft1o8k"
-          data-testid="divider"
-        />
+        <div
+          class="css-149xura"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-176zs48"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-11icnc2"
         >
@@ -23137,12 +23149,15 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
             </div>
           </div>
         </div>
-        <hr
-          aria-hidden="true"
-          aria-label="article-divider-horizontal"
-          class="css-1ft1o8k"
-          data-testid="divider"
-        />
+        <div
+          class="css-149xura"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-176zs48"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-11icnc2"
         >

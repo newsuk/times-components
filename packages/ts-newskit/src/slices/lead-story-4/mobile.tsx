@@ -8,6 +8,7 @@ import {
 } from '../../components/slices/lead-article';
 import { ArticleProps, Article } from '../../components/slices/article';
 import { ClickHandlerType } from '../types';
+import { FullWidthBlock } from '../../components/slices/shared-styles/index';
 
 export interface LeadStory4Mobile {
   leadArticle: LeadArticleProps;
@@ -65,13 +66,20 @@ export const LeadStory4Mobile = ({
           })}
         </Visible>
       </StackItem>
-      <Divider
-        overrides={{
-          marginBlock: 'space040',
-          stylePreset: 'dashedDivider'
+      <FullWidthBlock
+        paddingInlineStart={{
+          xs: 'space045',
+          md: 'space000'
         }}
-        aria-label="article-divider-horizontal"
-      />
+        marginBlockStart="space040"
+      >
+        <Divider
+          overrides={{
+            marginBlockEnd: 'space040',
+            stylePreset: 'dashedDivider'
+          }}
+        />
+      </FullWidthBlock>
       <BlockItem>
         <ArticleStackLarge
           articles={articlesFrom5To9}
