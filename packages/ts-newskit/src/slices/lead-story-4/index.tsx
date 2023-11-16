@@ -11,13 +11,15 @@ export interface LeadStory4Props {
   articlesRight: ArticleProps[];
   articlesBelowMainImage: ArticleProps[];
   clickHandler: ClickHandlerType;
+  isSummaryEnabled?: boolean;
 }
 
 export const LeadStory4 = ({
   leadArticle,
   articlesRight,
   articlesBelowMainImage,
-  clickHandler
+  clickHandler,
+  isSummaryEnabled
 }: LeadStory4Props) => {
   const modifiedLeadArticle = {
     ...leadArticle,
@@ -27,11 +29,29 @@ export const LeadStory4 = ({
     headlineTypographyPreset: 'editorialHeadline040'
   };
 
-  const article2and3 = articlesRight && articlesRight.slice(0, 2);
-  const article4and5 = articlesRight && articlesRight.slice(2, 4);
-  const articleMediumBreakPoint = articlesBelowMainImage && [
+  const articlesRightWithIsSummaryEnabledProp = articlesRight.map(
+    articleRight => ({
+      ...articleRight,
+      isSummaryEnabled
+    })
+  );
+
+  const articlesBelowMainImageWithIsSummaryEnabledProp = articlesBelowMainImage.map(
+    articleBelowMainImage => ({
+      ...articleBelowMainImage,
+      isSummaryEnabled
+    })
+  );
+
+  const article2and3 =
+    articlesRightWithIsSummaryEnabledProp &&
+    articlesRightWithIsSummaryEnabledProp.slice(0, 2);
+  const article4and5 =
+    articlesRightWithIsSummaryEnabledProp &&
+    articlesRightWithIsSummaryEnabledProp.slice(2, 4);
+  const articleMediumBreakPoint = articlesBelowMainImageWithIsSummaryEnabledProp && [
     ...article4and5,
-    ...articlesBelowMainImage
+    ...articlesBelowMainImageWithIsSummaryEnabledProp
   ];
   const articlesTop =
     articleMediumBreakPoint && articleMediumBreakPoint.slice(0, 3);
@@ -44,8 +64,8 @@ export const LeadStory4 = ({
       hasTopBorder: index === 1
     }));
   const modifiedArticleRight =
-    articlesRight &&
-    articlesRight.map((article, index) => ({
+    articlesRightWithIsSummaryEnabledProp &&
+    articlesRightWithIsSummaryEnabledProp.map((article, index) => ({
       ...article,
       hasTopBorder: index > 1
     }));
@@ -60,7 +80,9 @@ export const LeadStory4 = ({
       <Hidden xs sm>
         <LeadStory4Desktop
           leadArticle={modifiedLeadArticle}
-          articlesBelowMainImage={articlesBelowMainImage}
+          articlesBelowMainImage={
+            articlesBelowMainImageWithIsSummaryEnabledProp
+          }
           clickHandler={clickHandler}
           modifiedArticle2and3={modifiedArticle2and3}
           modifiedArticleRight={modifiedArticleRight}
