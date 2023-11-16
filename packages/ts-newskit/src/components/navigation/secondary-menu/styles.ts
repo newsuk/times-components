@@ -18,7 +18,7 @@ import {
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
 const MAX_NAV_ITEMS_CHAR_COUNT_MD = 55;
-const MAX_NAV_ITEMS_CHAR_COUNT_LG = 80;
+const MAX_NAV_ITEMS_CHAR_COUNT_LG = 75;
 const MAX_NAV_ITEMS_CHAR_COUNT_XL = 100;
 
 const getLastMenuItemIndexWhenMoreItems = (
@@ -129,32 +129,38 @@ export const VisibleCheckContainer = styled.div<MainMenuProp>`
 export const VisibleCheckNavContainer = styled.div<MainMenuProp>`
   display: flex;
   ${getMediaQueryFromTheme('md', 'lg')} {
-    li:nth-last-child(-n+${({ data }) => moreItemsLength(data, 'md')}) {
+    li:nth-last-child(-n + ${({ data }) => moreItemsLength(data, 'md')}) {
       display: none;
-  } 
+    }
+  }
   ${getMediaQueryFromTheme('lg', 'xl')} {
-    li:nth-last-child(-n+${({ data }) => moreItemsLength(data, 'lg')}) {
+    li:nth-last-child(-n + ${({ data }) => moreItemsLength(data, 'lg')}) {
       display: none;
+    }
   }
   ${getMediaQueryFromTheme('xl')} {
-    li:nth-last-child(-n+${({ data }) => moreItemsLength(data, 'xl')}) {
+    li:nth-last-child(-n + ${({ data }) => moreItemsLength(data, 'xl')}) {
       display: none;
+    }
   }
 `;
 
 export const VisibleCheckMenuContainer = styled.div<MainMenuProp>`
-${getMediaQueryFromTheme('md', 'lg')} {
-  li:nth-child(-n+${({ data }) => visibleItemsLength(data, 'md')}) {
-    display: none;
-} 
-${getMediaQueryFromTheme('lg', 'xl')} {
-  li:nth-child(-n+${({ data }) => visibleItemsLength(data, 'lg')}) {
-    display: none;
-}
-${getMediaQueryFromTheme('xl')} {
-  li:nth-child(-n+${({ data }) => visibleItemsLength(data, 'xl')}) {
-    display: none;
-}
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    div:nth-child(-n + ${({ data }) => visibleItemsLength(data, 'md')}) {
+      display: none;
+    }
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    div:nth-child(-n + ${({ data }) => visibleItemsLength(data, 'lg')}) {
+      display: none;
+    }
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    div:nth-child(-n + ${({ data }) => visibleItemsLength(data, 'xl')}) {
+      display: none;
+    }
+  }
 `;
 
 export const MenuDivider = styled(Divider)`
