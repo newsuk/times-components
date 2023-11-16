@@ -28,8 +28,8 @@ export const LeadStory4Desktop = ({
   modifiedArticleRight,
   articlesBottom
 }: LeadStory4PropsDesktop) => {
-  return (
-    <>
+  const TopSection = () => {
+    return (
       <Stack flow="horizontal-top" marginBlockEnd="space040">
         <StackItem
           $width={{
@@ -73,6 +73,38 @@ export const LeadStory4Desktop = ({
           </Visible>
         </StackItem>
       </Stack>
+    );
+  };
+
+  const BottomSection = () => {
+    return (
+      <>
+        <Visible lg xl>
+          <ArticleStacksLgAndXl
+            articles={articlesBelowMainImage}
+            clickHandler={clickHandler}
+          />
+        </Visible>
+        <Visible md>
+          <ArticleStacks
+            articles={articlesTop}
+            clickHandler={clickHandler}
+            hasTopBorder={false}
+            isMediumBreakPoint
+          />
+          <ArticleStacks
+            articles={articlesBottom}
+            clickHandler={clickHandler}
+            hasTopBorder={true}
+            isMediumBreakPoint
+          />
+        </Visible>
+      </>
+    );
+  };
+  return (
+    <>
+      <TopSection />
       <Divider
         overrides={{
           marginBlockEnd: 'space040',
@@ -80,26 +112,7 @@ export const LeadStory4Desktop = ({
         }}
         aria-label="article-divider-horizontal"
       />
-      <Visible lg xl>
-        <ArticleStacksLgAndXl
-          articles={articlesBelowMainImage}
-          clickHandler={clickHandler}
-        />
-      </Visible>
-      <Visible md>
-        <ArticleStacks
-          articles={articlesTop}
-          clickHandler={clickHandler}
-          hasTopBorder={false}
-          isMediumBreakPoint
-        />
-        <ArticleStacks
-          articles={articlesBottom}
-          clickHandler={clickHandler}
-          hasTopBorder={true}
-          isMediumBreakPoint
-        />
-      </Visible>
+      <BottomSection />
     </>
   );
 };
