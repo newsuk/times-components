@@ -377,15 +377,11 @@ exports[`Render Lead Story 4 Slice Slice matches snapshot 1`] = `
                     </a>
                   </div>
                 </div>
-                <div
-                  class="css-15edd2j"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-1b55m0t"
-                    data-testid="article-stack-large-divider"
-                  />
-                </div>
+                <hr
+                  aria-hidden="true"
+                  class="css-fvvcc5"
+                  data-testid="article-stack-large-divider"
+                />
               </div>
             </div>
           </div>
@@ -810,15 +806,11 @@ exports[`Render Lead Story 4 Slice Slice matches snapshot 1`] = `
                     </div>
                   </div>
                 </div>
-                <div
-                  class="css-15edd2j"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-1b55m0t"
-                    data-testid="article-stack-large-divider"
-                  />
-                </div>
+                <hr
+                  aria-hidden="true"
+                  class="css-fvvcc5"
+                  data-testid="article-stack-large-divider"
+                />
               </div>
             </div>
           </div>
@@ -1639,15 +1631,11 @@ exports[`Render Lead Story 4 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="article-stack-large-divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-fvvcc5"
+            data-testid="article-stack-large-divider"
+          />
         </div>
         <div
           class="css-1rz1myb"
@@ -2047,15 +2035,11 @@ exports[`Render Lead Story 4 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
           </div>
-          <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="article-stack-large-divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-fvvcc5"
+            data-testid="article-stack-large-divider"
+          />
         </div>
       </div>
     </div>
@@ -5522,15 +5506,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
                     </a>
                   </div>
                 </div>
-                <div
-                  class="css-15edd2j"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-1b55m0t"
-                    data-testid="article-stack-large-divider"
-                  />
-                </div>
+                <hr
+                  aria-hidden="true"
+                  class="css-fvvcc5"
+                  data-testid="article-stack-large-divider"
+                />
               </div>
             </div>
           </div>
@@ -5955,15 +5935,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
                     </div>
                   </div>
                 </div>
-                <div
-                  class="css-15edd2j"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-1b55m0t"
-                    data-testid="article-stack-large-divider"
-                  />
-                </div>
+                <hr
+                  aria-hidden="true"
+                  class="css-fvvcc5"
+                  data-testid="article-stack-large-divider"
+                />
               </div>
             </div>
           </div>
@@ -6784,15 +6760,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
               </div>
             </div>
           </div>
-          <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="article-stack-large-divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-fvvcc5"
+            data-testid="article-stack-large-divider"
+          />
         </div>
         <div
           class="css-1rz1myb"
@@ -7192,15 +7164,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
               </div>
             </div>
           </div>
-          <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="article-stack-large-divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-fvvcc5"
+            data-testid="article-stack-large-divider"
+          />
         </div>
       </div>
     </div>
@@ -10667,15 +10635,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
                     </a>
                   </div>
                 </div>
-                <div
-                  class="css-15edd2j"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-1b55m0t"
-                    data-testid="article-stack-large-divider"
-                  />
-                </div>
+                <hr
+                  aria-hidden="true"
+                  class="css-fvvcc5"
+                  data-testid="article-stack-large-divider"
+                />
               </div>
             </div>
           </div>
@@ -11100,15 +11064,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
                     </div>
                   </div>
                 </div>
-                <div
-                  class="css-15edd2j"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-1b55m0t"
-                    data-testid="article-stack-large-divider"
-                  />
-                </div>
+                <hr
+                  aria-hidden="true"
+                  class="css-fvvcc5"
+                  data-testid="article-stack-large-divider"
+                />
               </div>
             </div>
           </div>
@@ -11929,15 +11889,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
               </div>
             </div>
           </div>
-          <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="article-stack-large-divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-fvvcc5"
+            data-testid="article-stack-large-divider"
+          />
         </div>
         <div
           class="css-1rz1myb"
@@ -12337,15 +12293,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
               </div>
             </div>
           </div>
-          <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="article-stack-large-divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-fvvcc5"
+            data-testid="article-stack-large-divider"
+          />
         </div>
       </div>
     </div>
@@ -15812,15 +15764,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
                     </a>
                   </div>
                 </div>
-                <div
-                  class="css-15edd2j"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-1b55m0t"
-                    data-testid="article-stack-large-divider"
-                  />
-                </div>
+                <hr
+                  aria-hidden="true"
+                  class="css-fvvcc5"
+                  data-testid="article-stack-large-divider"
+                />
               </div>
             </div>
           </div>
@@ -16245,15 +16193,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
                     </div>
                   </div>
                 </div>
-                <div
-                  class="css-15edd2j"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-1b55m0t"
-                    data-testid="article-stack-large-divider"
-                  />
-                </div>
+                <hr
+                  aria-hidden="true"
+                  class="css-fvvcc5"
+                  data-testid="article-stack-large-divider"
+                />
               </div>
             </div>
           </div>
@@ -17074,15 +17018,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
               </div>
             </div>
           </div>
-          <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="article-stack-large-divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-fvvcc5"
+            data-testid="article-stack-large-divider"
+          />
         </div>
         <div
           class="css-1rz1myb"
@@ -17482,15 +17422,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
               </div>
             </div>
           </div>
-          <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="article-stack-large-divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-fvvcc5"
+            data-testid="article-stack-large-divider"
+          />
         </div>
       </div>
     </div>
@@ -20957,15 +20893,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
                     </a>
                   </div>
                 </div>
-                <div
-                  class="css-15edd2j"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-1b55m0t"
-                    data-testid="article-stack-large-divider"
-                  />
-                </div>
+                <hr
+                  aria-hidden="true"
+                  class="css-fvvcc5"
+                  data-testid="article-stack-large-divider"
+                />
               </div>
             </div>
           </div>
@@ -21390,15 +21322,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
                     </div>
                   </div>
                 </div>
-                <div
-                  class="css-15edd2j"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-1b55m0t"
-                    data-testid="article-stack-large-divider"
-                  />
-                </div>
+                <hr
+                  aria-hidden="true"
+                  class="css-fvvcc5"
+                  data-testid="article-stack-large-divider"
+                />
               </div>
             </div>
           </div>
@@ -22219,15 +22147,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
               </div>
             </div>
           </div>
-          <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="article-stack-large-divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-fvvcc5"
+            data-testid="article-stack-large-divider"
+          />
         </div>
         <div
           class="css-1rz1myb"
@@ -22627,15 +22551,11 @@ exports[`Render Lead Story 4 Slice modifies articles correctly when breakpointKe
               </div>
             </div>
           </div>
-          <div
-            class="css-15edd2j"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1b55m0t"
-              data-testid="article-stack-large-divider"
-            />
-          </div>
+          <hr
+            aria-hidden="true"
+            class="css-fvvcc5"
+            data-testid="article-stack-large-divider"
+          />
         </div>
       </div>
     </div>
