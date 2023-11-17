@@ -1,8 +1,4 @@
-import {
-  getMediaQueryFromTheme,
-  GridLayout,
-  styled
-} from 'newskit';
+import { getMediaQueryFromTheme, GridLayout, styled } from 'newskit';
 
 export const ArticleGrid = styled(GridLayout)`
   hr[aria-label='article-divider-horizontal'] {

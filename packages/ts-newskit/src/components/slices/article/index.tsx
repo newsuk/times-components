@@ -184,7 +184,11 @@ export const Article = ({
             {image}
           </FullWidthGridLayoutItem>
         ) : (
-          <GridLayoutItem area="media" className="article-image" marginBlockEnd='space030'>
+          <GridLayoutItem
+            area="media"
+            className="article-image"
+            marginBlockEnd="space030"
+          >
             {image}
           </GridLayoutItem>
         )
@@ -210,7 +214,7 @@ export const Article = ({
             contentType={contentType}
             expirableFlags={expirableFlags}
             label={label}
-            marginBlockEnd='space030'
+            marginBlockEnd="space030"
           />
         )}
         <CardHeadlineLink
@@ -218,7 +222,7 @@ export const Article = ({
           href={url}
           role="link"
           overrides={{
-            typographyPreset: titleTypographyPreset,
+            typographyPreset: titleTypographyPreset
           }}
           external={false}
           onClick={onClick}
