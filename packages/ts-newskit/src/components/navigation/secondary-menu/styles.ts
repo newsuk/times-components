@@ -65,6 +65,7 @@ const visibleItemsLength = (
   data: SecondaryMenuItem[],
   breakpoint: BreakpointKeys
 ) => {
+  console.log('=========breakpoint========', breakpoint)
   const maxCharCount = getMaxCharCount(breakpoint);
   const index = getLastMenuItemIndexWhenMoreItems(data, maxCharCount);
   if (!!index) {
@@ -146,8 +147,8 @@ export const VisibleCheckNavContainer = styled.div<MainMenuProp>`
 `;
 
 export const VisibleCheckMenuContainer = styled.div<MainMenuProp>`
-  ${getMediaQueryFromTheme('md', 'lg')} {
-    div:nth-child(-n + ${({ data }) => visibleItemsLength(data, 'md')}) {
+  ${getMediaQueryFromTheme('xl')} {
+    div:nth-child(-n + ${({ data }) => visibleItemsLength(data, 'xl')}) {
       display: none;
     }
   }
@@ -156,8 +157,8 @@ export const VisibleCheckMenuContainer = styled.div<MainMenuProp>`
       display: none;
     }
   }
-  ${getMediaQueryFromTheme('xl')} {
-    div:nth-child(-n + ${({ data }) => visibleItemsLength(data, 'xl')}) {
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    div:nth-child(-n + ${({ data }) => visibleItemsLength(data, 'md')}) {
       display: none;
     }
   }
