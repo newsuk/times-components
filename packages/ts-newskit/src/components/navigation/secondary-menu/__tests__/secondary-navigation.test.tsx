@@ -5,9 +5,9 @@ import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavigation } from '../index';
 import {
   cleanup,
-  // fireEvent,
-  getAllByTestId
-  // waitFor
+  fireEvent,
+  getAllByTestId,
+  waitFor
 } from '@testing-library/react';
 
 jest.mock('newskit', () => ({
@@ -90,25 +90,25 @@ describe('Secondary Menu', () => {
     });
   });
 
-  // it('should close the dropdown ', () => {
-  //   const { getByTestId, queryByText, getAllByText } = render(
-  //     <SecondaryNavigation
-  //       data={mainMenuItems}
-  //       pageSlug="home"
-  //       title=""
-  //       stickyTop={110}
-  //       stickyTopDesktop={60}
-  //       onClick={() => {
-  //         // noop
-  //       }}
-  //       clickHandler={mockClickHandler}
-  //     />
-  //   );
-  //   const SeeAllButton = getByTestId('menu-sub-button');
-  //   fireEvent.click(SeeAllButton);
-  //   waitFor(() => expect(queryByText('News')).toBeInTheDocument());
-  //   const newsButton = getAllByText('News')[0];
-  //   fireEvent.click(newsButton);
-  //   waitFor(() => expect(queryByText('News')).toBeInTheDocument());
-  // });
+  it('should close the dropdown ', () => {
+    const { getByTestId, queryByText, getAllByText } = render(
+      <SecondaryNavigation
+        data={mainMenuItems}
+        pageSlug="home"
+        title=""
+        stickyTop={110}
+        stickyTopDesktop={60}
+        onClick={() => {
+          // noop
+        }}
+        clickHandler={mockClickHandler}
+      />
+    );
+    const SeeAllButton = getByTestId('menu-sub-button');
+    fireEvent.click(SeeAllButton);
+    waitFor(() => expect(queryByText('News')).toBeInTheDocument());
+    const newsButton = getAllByText('News')[0];
+    fireEvent.click(newsButton);
+    waitFor(() => expect(queryByText('News')).toBeInTheDocument());
+  });
 });

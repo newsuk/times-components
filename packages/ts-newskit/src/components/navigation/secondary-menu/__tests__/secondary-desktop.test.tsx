@@ -30,17 +30,17 @@ describe('Secondary Menu Desktop', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
-  // it('should render the menu item', () => {
-  //   const { getByText } = render(
-  //     <SecondaryNavDesktop
-  //       data={mainMenuItems}
-  //       options={options}
-  //       clickHandler={mockClickHandler}
-  //     />
-  //   );
-  //   const title = getByText('Home');
-  //   expect(title).toBeInTheDocument();
-  // });
+  it('should render the menu item', () => {
+    const { getAllByText } = render(
+      <SecondaryNavDesktop
+        data={mainMenuItems}
+        options={options}
+        clickHandler={mockClickHandler}
+      />
+    );
+    const title = getAllByText('Home');
+    expect(title).toBeInTheDocument();
+  });
   it('items should have ancher with href', () => {
     const { getAllByTestId } = render(
       <SecondaryNavDesktop
@@ -75,15 +75,15 @@ describe('Secondary Menu Desktop', () => {
   //   const list = getAllByRole('listitem');
   //   expect(list.length).toEqual(9);
   // });
-  // it('should change the width of menudivader when screen size change', () => {
-  //   const { getByTestId } = render(
-  //     <SecondaryNavDesktop
-  //       data={mainMenuItems}
-  //       options={options}
-  //       clickHandler={mockClickHandler}
-  //     />
-  //   );
-  //   const hr = getByTestId('divider');
-  //   expect(hr).toHaveStyle('width: 100%');
-  // });
+  it('should change the width of menu divider when screen size change', () => {
+    const { getAllByTestId } = render(
+      <SecondaryNavDesktop
+        data={mainMenuItems}
+        options={options}
+        clickHandler={mockClickHandler}
+      />
+    );
+    const hr = getAllByTestId('divider')[0];
+    expect(hr).toHaveStyle('width: 100%');
+  });
 });

@@ -3,215 +3,219 @@
 exports[`Create More Menu should render snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-hiaaq6"
-    data="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+    style="max-width: 1440px;"
   >
-    <div>
-      <li
-        class="nk-menu-item css-1kdinep"
-      >
-        <a
-          aria-current="false"
-          class="css-5vk2pu"
-          data-testid="buttonLink"
-          href="/home"
+    <div
+      class="css-hiaaq6"
+      data="[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]"
+    >
+      <div>
+        <li
+          class="nk-menu-item css-1kdinep"
         >
-          <span
-            class="css-jfuxhr"
+          <a
+            aria-current="false"
+            class="css-5vk2pu"
+            data-testid="buttonLink"
+            href="/home"
           >
-            Home
-          </span>
-        </a>
-      </li>
-      <hr
-        aria-hidden="true"
-        class="css-s9wquo"
-        data-testid="divider"
-      />
-    </div>
-    <div>
-      <li
-        class="nk-menu-item css-1kdinep"
-      >
-        <a
-          aria-current="false"
-          class="css-5vk2pu"
-          data-testid="buttonLink"
-          href="/news"
+            <span
+              class="css-jfuxhr"
+            >
+              Home
+            </span>
+          </a>
+        </li>
+        <hr
+          aria-hidden="true"
+          class="css-s9wquo"
+          data-testid="divider"
+        />
+      </div>
+      <div>
+        <li
+          class="nk-menu-item css-1kdinep"
         >
-          <span
-            class="css-jfuxhr"
+          <a
+            aria-current="false"
+            class="css-5vk2pu"
+            data-testid="buttonLink"
+            href="/news"
           >
-            News
-          </span>
-        </a>
-      </li>
-      <hr
-        aria-hidden="true"
-        class="css-s9wquo"
-        data-testid="divider"
-      />
-    </div>
-    <div>
-      <li
-        class="nk-menu-item css-1kdinep"
-      >
-        <a
-          aria-current="false"
-          class="css-5vk2pu"
-          data-testid="buttonLink"
-          href="/comment"
+            <span
+              class="css-jfuxhr"
+            >
+              News
+            </span>
+          </a>
+        </li>
+        <hr
+          aria-hidden="true"
+          class="css-s9wquo"
+          data-testid="divider"
+        />
+      </div>
+      <div>
+        <li
+          class="nk-menu-item css-1kdinep"
         >
-          <span
-            class="css-jfuxhr"
+          <a
+            aria-current="false"
+            class="css-5vk2pu"
+            data-testid="buttonLink"
+            href="/comment"
           >
-            Comment
-          </span>
-        </a>
-      </li>
-      <hr
-        aria-hidden="true"
-        class="css-s9wquo"
-        data-testid="divider"
-      />
-    </div>
-    <div>
-      <li
-        class="nk-menu-item css-1kdinep"
-      >
-        <a
-          aria-current="false"
-          class="css-5vk2pu"
-          data-testid="buttonLink"
-          href="/life-and-style"
+            <span
+              class="css-jfuxhr"
+            >
+              Comment
+            </span>
+          </a>
+        </li>
+        <hr
+          aria-hidden="true"
+          class="css-s9wquo"
+          data-testid="divider"
+        />
+      </div>
+      <div>
+        <li
+          class="nk-menu-item css-1kdinep"
         >
-          <span
-            class="css-jfuxhr"
+          <a
+            aria-current="false"
+            class="css-5vk2pu"
+            data-testid="buttonLink"
+            href="/life-and-style"
           >
-            Life & Style
-          </span>
-        </a>
-      </li>
-      <hr
-        aria-hidden="true"
-        class="css-s9wquo"
-        data-testid="divider"
-      />
-    </div>
-    <div>
-      <li
-        class="nk-menu-item css-1kdinep"
-      >
-        <a
-          aria-current="false"
-          class="css-5vk2pu"
-          data-testid="buttonLink"
-          href="/arts-and-books"
+            <span
+              class="css-jfuxhr"
+            >
+              Life & Style
+            </span>
+          </a>
+        </li>
+        <hr
+          aria-hidden="true"
+          class="css-s9wquo"
+          data-testid="divider"
+        />
+      </div>
+      <div>
+        <li
+          class="nk-menu-item css-1kdinep"
         >
-          <span
-            class="css-jfuxhr"
+          <a
+            aria-current="false"
+            class="css-5vk2pu"
+            data-testid="buttonLink"
+            href="/arts-and-books"
           >
-            Arts & Books
-          </span>
-        </a>
-      </li>
-      <hr
-        aria-hidden="true"
-        class="css-s9wquo"
-        data-testid="divider"
-      />
-    </div>
-    <div>
-      <li
-        class="nk-menu-item css-1kdinep"
-      >
-        <a
-          aria-current="false"
-          class="css-5vk2pu"
-          data-testid="buttonLink"
-          href="/sport"
+            <span
+              class="css-jfuxhr"
+            >
+              Arts & Books
+            </span>
+          </a>
+        </li>
+        <hr
+          aria-hidden="true"
+          class="css-s9wquo"
+          data-testid="divider"
+        />
+      </div>
+      <div>
+        <li
+          class="nk-menu-item css-1kdinep"
         >
-          <span
-            class="css-jfuxhr"
+          <a
+            aria-current="false"
+            class="css-5vk2pu"
+            data-testid="buttonLink"
+            href="/sport"
           >
-            Sport
-          </span>
-        </a>
-      </li>
-      <hr
-        aria-hidden="true"
-        class="css-s9wquo"
-        data-testid="divider"
-      />
-    </div>
-    <div>
-      <li
-        class="nk-menu-item css-1kdinep"
-      >
-        <a
-          aria-current="false"
-          class="css-5vk2pu"
-          data-testid="buttonLink"
-          href="/business-and-money"
+            <span
+              class="css-jfuxhr"
+            >
+              Sport
+            </span>
+          </a>
+        </li>
+        <hr
+          aria-hidden="true"
+          class="css-s9wquo"
+          data-testid="divider"
+        />
+      </div>
+      <div>
+        <li
+          class="nk-menu-item css-1kdinep"
         >
-          <span
-            class="css-jfuxhr"
+          <a
+            aria-current="false"
+            class="css-5vk2pu"
+            data-testid="buttonLink"
+            href="/business-and-money"
           >
-            Business & Money
-          </span>
-        </a>
-      </li>
-      <hr
-        aria-hidden="true"
-        class="css-s9wquo"
-        data-testid="divider"
-      />
-    </div>
-    <div>
-      <li
-        class="nk-menu-item css-1kdinep"
-      >
-        <a
-          aria-current="page"
-          class="css-1optcqp"
-          data-testid="buttonLink"
-          href="/puzzles"
+            <span
+              class="css-jfuxhr"
+            >
+              Business & Money
+            </span>
+          </a>
+        </li>
+        <hr
+          aria-hidden="true"
+          class="css-s9wquo"
+          data-testid="divider"
+        />
+      </div>
+      <div>
+        <li
+          class="nk-menu-item css-1kdinep"
         >
-          <span
-            class="css-jfuxhr"
+          <a
+            aria-current="page"
+            class="css-1optcqp"
+            data-testid="buttonLink"
+            href="/puzzles"
           >
-            Puzzles
-          </span>
-        </a>
-      </li>
-      <hr
-        aria-hidden="true"
-        class="css-s9wquo"
-        data-testid="divider"
-      />
-    </div>
-    <div>
-      <li
-        class="nk-menu-item css-1kdinep"
-      >
-        <a
-          aria-current="false"
-          class="css-5vk2pu"
-          data-testid="buttonLink"
-          href="/magazines"
+            <span
+              class="css-jfuxhr"
+            >
+              Puzzles
+            </span>
+          </a>
+        </li>
+        <hr
+          aria-hidden="true"
+          class="css-s9wquo"
+          data-testid="divider"
+        />
+      </div>
+      <div>
+        <li
+          class="nk-menu-item css-1kdinep"
         >
-          <span
-            class="css-jfuxhr"
+          <a
+            aria-current="false"
+            class="css-5vk2pu"
+            data-testid="buttonLink"
+            href="/magazines"
           >
-            Magazines
-          </span>
-        </a>
-      </li>
-      <hr
-        aria-hidden="true"
-        class="css-s9wquo"
-        data-testid="divider"
-      />
+            <span
+              class="css-jfuxhr"
+            >
+              Magazines
+            </span>
+          </a>
+        </li>
+        <hr
+          aria-hidden="true"
+          class="css-s9wquo"
+          data-testid="divider"
+        />
+      </div>
     </div>
   </div>
 </DocumentFragment>
