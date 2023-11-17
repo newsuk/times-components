@@ -91,6 +91,5 @@ describe('Create More Menu', () => {
   //   expect(list[6]).toHaveStyle('display: none')
   //   expect(list[7]).toHaveStyle('display: none')
   //   expect(list[8]).toHaveStyle('display: none')
-  // });  
+  // });
 });
-
