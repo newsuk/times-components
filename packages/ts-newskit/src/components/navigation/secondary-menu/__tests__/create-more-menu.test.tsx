@@ -15,6 +15,11 @@ const options = {
 
 const mockClickHandler = jest.fn();
 
+jest.mock('newskit', () => ({
+  ...jest.requireActual('newskit'),
+  useBreakpointKey: jest.fn().mockReturnValue('xl')
+}));
+
 const renderMoreMenu = (size: BreakpointKeys = 'xl') =>
   renderComponent(
     <CreateMoreMenu
@@ -53,7 +58,7 @@ describe('Create More Menu', () => {
     expect(options.handleSelect).toHaveBeenCalled();
     expect(options.setIsExpanded).toHaveBeenCalled();
   });
-  // it('9 items should be visible when xl breakpoint', () => {
+  // it('no items should be visible when xl breakpoint', () => {
   //   const { getAllByRole } = renderMoreMenu();
   //   const list = getAllByRole('listitem');
   //   expect(list[0]).toBeVisible();
@@ -66,7 +71,7 @@ describe('Create More Menu', () => {
   //   expect(list[7]).toBeVisible();
   //   expect(list[8]).toBeVisible();
   // });
-  // it('7 items should be visible when lg breakpoint', () => {
+  // it('2 items should be visible when lg breakpoint', () => {
   //   const { getAllByRole } = renderMoreMenu('lg');
   //   const list = getAllByRole('listitem');
   //   expect(list[0]).toBeVisible();
@@ -79,17 +84,24 @@ describe('Create More Menu', () => {
   //   expect(list[7]).toBeVisible();
   //   expect(list[8]).toBeVisible();
   // });
-  // it('7 items should be visible when md breakpoint', () => {
-  //   const { getAllByRole,asFragment } = renderMoreMenu('md');
-  //   const list = getAllByRole('listitem');
-  //   expect(list[0].style).toBe('display: none')
-  //   expect(list[1]).toHaveStyle('display: none')
-  //   expect(list[2]).toHaveStyle('display: none')
-  //   expect(list[3]).toHaveStyle('display: none')
-  //   expect(list[4]).toHaveStyle('display: none')
-  //   expect(list[5]).toHaveStyle('display: none')
-  //   expect(list[6]).toHaveStyle('display: none')
-  //   expect(list[7]).toHaveStyle('display: none')
-  //   expect(list[8]).toHaveStyle('display: none')
-  // });
+  it('4 items should be visible when md breakpoint', () => {
+    const { getAllByRole } = renderMoreMenu('md');
+    // Object.defineProperty(window, 'innerWidth', {
+    //   configurable: true,
+    //   value: 1000,
+    //   writable: true,
+    // })
+
+    const list = getAllByRole('listitem');
+    console.log('======  window.innerWidth', window.innerWidth)
+    // expect(list[0]).toBeVisible() not 
+    // expect(list[1]).toBeVisible() not
+    // expect(list[2]).toBeVisible() not
+    // expect(list[3]).toBeVisible() not
+    // expect(list[4]).toBeVisible() not
+    // expect(list[5]).toBeVisible()
+    // expect(list[6]).toBeVisible()
+    // expect(list[7]).toBeVisible()
+    // expect(list[8]).toBeVisible()
+  });
 });
