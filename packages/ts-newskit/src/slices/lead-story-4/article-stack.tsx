@@ -1,5 +1,5 @@
 import React from 'react';
-import { Visible, Divider, Block, GridLayout } from 'newskit';
+import { Divider, Block, GridLayout } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { ArticleDividerXL } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
@@ -66,13 +66,11 @@ export const ArticleStacks = ({
           </React.Fragment>
         );
       })}
-      <Visible lg xl>
-        <ArticleDividerXL
-          overrides={{ stylePreset: 'lightDivider' }}
-          vertical
-          data-testid="article-stack-large-divider"
-        />
-      </Visible>
+      <ArticleDividerXL
+        overrides={{ stylePreset: 'lightDivider' }}
+        vertical
+        data-testid="article-stack-large-divider"
+      />
     </GridLayout>
   );
 };
