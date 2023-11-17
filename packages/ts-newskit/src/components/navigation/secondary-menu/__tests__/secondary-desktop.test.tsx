@@ -38,7 +38,7 @@ describe('Secondary Menu Desktop', () => {
         clickHandler={mockClickHandler}
       />
     );
-    const title = getAllByText('Home');
+    const title = getAllByText('Home')[0];
     expect(title).toBeInTheDocument();
   });
   it('items should have ancher with href', () => {

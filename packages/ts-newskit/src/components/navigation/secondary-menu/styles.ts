@@ -17,7 +17,7 @@ import {
 } from './types';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
-const MAX_NAV_ITEMS_CHAR_COUNT_MD = 55;
+const MAX_NAV_ITEMS_CHAR_COUNT_MD = 50;
 const MAX_NAV_ITEMS_CHAR_COUNT_LG = 75;
 const MAX_NAV_ITEMS_CHAR_COUNT_XL = 100;
 

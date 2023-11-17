@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
-import { cleanup, fireEvent } from '@testing-library/react';
+import { fireEvent } from '@testing-library/react';
 import { CreateMoreMenu } from '../desktop/create-more-menu';
 import { BreakpointKeys } from 'newskit';
 import { renderComponent } from '../../../../utils';
@@ -28,7 +28,8 @@ const renderMoreMenu = (size: BreakpointKeys = 'xl') =>
 describe('Create More Menu', () => {
   afterEach(() => {
     jest.clearAllMocks();
-    cleanup();
+    jest.resetAllMocks();
+    jest.restoreAllMocks();
   });
 
   it('should render snapshot', () => {
@@ -52,20 +53,44 @@ describe('Create More Menu', () => {
     expect(options.handleSelect).toHaveBeenCalled();
     expect(options.setIsExpanded).toHaveBeenCalled();
   });
-  // investigate : mock screen width
-  // it('items should have length of 9', () => {
+  // it('9 items should be visible when xl breakpoint', () => {
   //   const { getAllByRole } = renderMoreMenu();
   //   const list = getAllByRole('listitem');
-  //   expect(list.length).toEqual(9);
+  //   expect(list[0]).toBeVisible();
+  //   expect(list[1]).toBeVisible();
+  //   expect(list[2]).toBeVisible();
+  //   expect(list[3]).toBeVisible();
+  //   expect(list[4]).toBeVisible();
+  //   expect(list[5]).toBeVisible();
+  //   expect(list[6]).toBeVisible();
+  //   expect(list[7]).toBeVisible();
+  //   expect(list[8]).toBeVisible();
   // });
-  // it('items should have length of 9', () => {
+  // it('7 items should be visible when lg breakpoint', () => {
   //   const { getAllByRole } = renderMoreMenu('lg');
   //   const list = getAllByRole('listitem');
-  //   expect(list.length).toEqual(9);
+  //   expect(list[0]).toBeVisible();
+  //   expect(list[1]).toBeVisible();
+  //   expect(list[2]).toBeVisible();
+  //   expect(list[3]).toBeVisible();
+  //   expect(list[4]).toBeVisible();
+  //   expect(list[5]).toBeVisible();
+  //   expect(list[6]).toBeVisible();
+  //   expect(list[7]).toBeVisible();
+  //   expect(list[8]).toBeVisible();
   // });
-  // it('items should have length of 9', () => {
-  //   const { getAllByRole } = renderMoreMenu('md');
+  // it('7 items should be visible when md breakpoint', () => {
+  //   const { getAllByRole,asFragment } = renderMoreMenu('md');
   //   const list = getAllByRole('listitem');
-  //   expect(list.length).toEqual(9);
-  // });
+  //   expect(list[0].style).toBe('display: none')
+  //   expect(list[1]).toHaveStyle('display: none')
+  //   expect(list[2]).toHaveStyle('display: none')
+  //   expect(list[3]).toHaveStyle('display: none')
+  //   expect(list[4]).toHaveStyle('display: none')
+  //   expect(list[5]).toHaveStyle('display: none')
+  //   expect(list[6]).toHaveStyle('display: none')
+  //   expect(list[7]).toHaveStyle('display: none')
+  //   expect(list[8]).toHaveStyle('display: none')
+  // });  
 });
+
