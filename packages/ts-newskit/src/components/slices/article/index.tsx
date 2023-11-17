@@ -104,7 +104,6 @@ export const Article = ({
     contentType ||
     hasVideo;
 
-  const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
     images &&
     images.crops &&
@@ -185,7 +184,7 @@ export const Article = ({
             {image}
           </FullWidthGridLayoutItem>
         ) : (
-          <GridLayoutItem area="media" className="article-image">
+          <GridLayoutItem area="media" className="article-image" marginBlockEnd='space030'>
             {image}
           </GridLayoutItem>
         )
@@ -197,6 +196,7 @@ export const Article = ({
           !hideImage && (
             <TextBlock
               marginBlockStart="space020"
+              marginBlockEnd="space040"
               stylePreset="inkSubtle"
               typographyPreset="editorialCaption010"
             >
@@ -210,7 +210,7 @@ export const Article = ({
             contentType={contentType}
             expirableFlags={expirableFlags}
             label={label}
-            marginBlockStart={marginBlockStart}
+            marginBlockEnd='space030'
           />
         )}
         <CardHeadlineLink
@@ -219,7 +219,6 @@ export const Article = ({
           role="link"
           overrides={{
             typographyPreset: titleTypographyPreset,
-            marginBlockStart: hasArticleTileInfo ? 'space030' : 'space000'
           }}
           external={false}
           onClick={onClick}

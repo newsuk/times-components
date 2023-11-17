@@ -1,6 +1,5 @@
 import {
   getMediaQueryFromTheme,
-  getSpacingCssFromTheme,
   GridLayout,
   styled
 } from 'newskit';
@@ -24,38 +23,6 @@ export const ArticleGrid = styled(GridLayout)`
   ${getMediaQueryFromTheme('lg', 'xl')} {
     .article-image {
       display: none;
-    }
-
-    & > div div,
-    .article-headline {
-      margin-block-start: 0;
-    }
-    .article-info + .article-headline {
-      ${getSpacingCssFromTheme('margin-block-start', 'space040')};
-    }
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    & > div:nth-of-type(2) hr[aria-label='article-divider-horizontal'] {
-      display: none;
-    }
-  }
-`;
-
-export const LeadArticleGrid = styled(GridLayout)`
-  ${getMediaQueryFromTheme('md')} {
-    .article-image,
-    .article-info {
-      ${getSpacingCssFromTheme('margin-block-end', 'space030')};
-    }
-    .article-info,
-    .article-headline {
-      margin-block-start: 0;
-    }
-  }
-  ${getMediaQueryFromTheme('lg')} {
-    .article-headline,
-    .article-info {
-      margin-block-start: 0;
     }
   }
   ${getMediaQueryFromTheme('xl')} {
