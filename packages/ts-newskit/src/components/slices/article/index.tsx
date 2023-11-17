@@ -38,6 +38,8 @@ export interface ArticleProps {
   headline: string;
   url: string;
   images?: ImageProps;
+  shortSummary?: string;
+  isSummaryEnabled?: boolean;
   tag?: {
     label: string;
     href: string;
@@ -53,6 +55,7 @@ export interface ArticleProps {
   isLeadImage?: boolean;
   imageRight?: boolean;
   isFullWidth?: boolean;
+  textBlockMarginBlockStart?: MQ<string> | string;
   titleTypographyPreset?: MQ<string> | string;
   tagAndFlagMarginBlockStart?: MQ<string> | string;
 }
@@ -77,8 +80,11 @@ export const Article = ({
     topBorderStyle = 'dashedDivider',
     hideImage,
     isLeadImage,
+    shortSummary,
+    isSummaryEnabled,
     imageRight,
     isFullWidth,
+    textBlockMarginBlockStart = 'space040',
     titleTypographyPreset = 'editorialHeadline020',
     tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
     expirableFlags,
@@ -220,6 +226,25 @@ export const Article = ({
         >
           {headline}
         </CardHeadlineLink>
+        {isSummaryEnabled &&
+          shortSummary && (
+            <CardHeadlineLink href={url} external={false} onClick={onClick}>
+              <TextBlock
+                stylePreset={{
+                  xs: 'inkSubtle',
+                  md: 'inkBase'
+                }}
+                typographyPreset={{
+                  xs: 'editorialParagraph020',
+                  md: 'editorialParagraph010'
+                }}
+                marginBlockStart={textBlockMarginBlockStart}
+                as="p"
+              >
+                {shortSummary}
+              </TextBlock>
+            </CardHeadlineLink>
+          )}
         <TagAndFlag
           tag={tag}
           flag={flag}

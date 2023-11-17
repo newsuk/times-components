@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.136.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.135.0...@times-components/ts-newskit@1.136.0) (2023-11-16)
+
+
+### Features
+
+* **TMRX-1472:** create lead story 4 slice ([#3651](https://github.com/newsuk/times-components/issues/3651)) ([f0a2202](https://github.com/newsuk/times-components/commit/f0a220244c35b833e34df5a3c90445135df717ae))
+
+
+
+
+
+# [1.135.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.134.0...@times-components/ts-newskit@1.135.0) (2023-11-16)
+
+
+### Features
+
+* **TMPZ-249:** updated design for sidebar card ([#3652](https://github.com/newsuk/times-components/issues/3652)) ([219d9b7](https://github.com/newsuk/times-components/commit/219d9b71e01d2e911f15dfebca176882e0e2014c))
+
+
+
+
+
 # [1.134.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.133.0...@times-components/ts-newskit@1.134.0) (2023-11-15)
 
 
