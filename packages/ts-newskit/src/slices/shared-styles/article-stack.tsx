@@ -43,27 +43,18 @@ export const ArticleGrid = styled(GridLayout)`
 
 export const LeadArticleGrid = styled(GridLayout)`
   ${getMediaQueryFromTheme('md')} {
-    .article-image {
-      ${getSpacingCssFromTheme('margin-block-end', 'space030')};
-    }
+    .article-image,
     .article-info {
-      ${getSpacingCssFromTheme('margin-block-start', 'space000')};
       ${getSpacingCssFromTheme('margin-block-end', 'space030')};
     }
+    .article-info,
     .article-headline {
       margin-block-start: 0;
     }
   }
   ${getMediaQueryFromTheme('lg')} {
-    .article-headline {
-      margin-block-start: 0;
-    }
+    .article-headline,
     .article-info {
-      ${getSpacingCssFromTheme('margin-block-start', 'space000')};
-    }
-  }
-  ${getMediaQueryFromTheme('lg', 'xl')} {
-    .article-headline {
       margin-block-start: 0;
     }
   }
