@@ -16,7 +16,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
           data-testid="scroll-container"
         >
           <div
-            class="article-container css-35mzo8"
+            class="article-container css-1y0mb1b"
             data-testid="article-container"
             style="position: relative;"
           >
@@ -1318,7 +1318,7 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
       class="css-11l110t"
     >
       <div
-        class="article-container css-35mzo8"
+        class="article-container css-1y0mb1b"
         data-testid="article-container"
         style="position: relative;"
       >

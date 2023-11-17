@@ -1176,7 +1176,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -2478,7 +2478,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -3789,7 +3789,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -4539,7 +4539,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -5592,7 +5592,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -6894,7 +6894,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -8205,7 +8205,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -8955,7 +8955,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -11156,7 +11156,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -12458,7 +12458,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -13769,7 +13769,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -14519,7 +14519,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -15572,7 +15572,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -16874,7 +16874,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -18185,7 +18185,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -18935,7 +18935,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -21136,7 +21136,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -22438,7 +22438,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -23749,7 +23749,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -24499,7 +24499,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -25552,7 +25552,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -26854,7 +26854,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -28165,7 +28165,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -28915,7 +28915,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -31116,7 +31116,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -32418,7 +32418,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -33729,7 +33729,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -34479,7 +34479,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -35532,7 +35532,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -36834,7 +36834,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -38145,7 +38145,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -38895,7 +38895,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -41096,7 +41096,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -42398,7 +42398,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -43709,7 +43709,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -44459,7 +44459,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -45512,7 +45512,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -46814,7 +46814,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
@@ -48125,7 +48125,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                   data-testid="scroll-container"
                 >
                   <div
-                    class="article-container css-35mzo8"
+                    class="article-container css-1y0mb1b"
                     data-testid="article-container"
                     style="position: relative;"
                   >
@@ -48875,7 +48875,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
               class="css-11l110t"
             >
               <div
-                class="article-container css-35mzo8"
+                class="article-container css-1y0mb1b"
                 data-testid="article-container"
                 style="position: relative;"
               >
