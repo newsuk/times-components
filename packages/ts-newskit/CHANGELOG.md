@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.137.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.137.0...@times-components/ts-newskit@1.137.1) (2023-11-20)
+
+
+### Bug Fixes
+
+* **TMRX-1578:** remove line break  ([#3653](https://github.com/newsuk/times-components/issues/3653)) ([587c994](https://github.com/newsuk/times-components/commit/587c99426214bf445a0b4224337a7e2b359684eb))
+
+
+
+
+
 # [1.137.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.136.0...@times-components/ts-newskit@1.137.0) (2023-11-17)
 
 
