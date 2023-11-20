@@ -30,29 +30,38 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
             >
               Puzzles for you
             </h3>
-            <button
-              class="css-ets7dk"
-              data-testid="button"
-              type="button"
+            <svg
+              class="css-176gl8i"
+              fill="none"
+              height="24"
+              overrides="[object Object]"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                aria-hidden="true"
-                class="css-7tslw"
-                fill="currentcolor"
-                overrides="[object Object]"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <g
+                clip-path="url(#clip0_154_17)"
               >
                 <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
+                  d="M24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12Z"
+                  fill="#EEEEEE"
                 />
                 <path
-                  d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
-                  fill="currentcolor"
+                  d="M14.667 12L10.667 8L9.72699 8.94L12.7803 12L9.72699 15.06L10.667 16L14.667 12Z"
                 />
-              </svg>
-            </button>
+              </g>
+              <defs>
+                <clippath
+                  id="clip0_154_17"
+                >
+                  <rect
+                    fill="white"
+                    height="24"
+                    width="24"
+                  />
+                </clippath>
+              </defs>
+            </svg>
           </div>
         </div>
         <p
