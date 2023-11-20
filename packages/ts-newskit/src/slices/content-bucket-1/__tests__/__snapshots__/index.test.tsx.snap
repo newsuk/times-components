@@ -1014,7 +1014,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   >
                     <hr
                       aria-hidden="true"
-                      class="css-1b55m0t"
+                      class="css-fvvcc5"
                       data-testid="article-stack-large-divider"
                     />
                   </div>
@@ -1451,7 +1451,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               >
                 <hr
                   aria-hidden="true"
-                  class="css-1b55m0t"
+                  class="css-fvvcc5"
                   data-testid="article-stack-large-divider"
                 />
               </div>
@@ -2655,7 +2655,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   >
                     <hr
                       aria-hidden="true"
-                      class="css-1b55m0t"
+                      class="css-fvvcc5"
                       data-testid="article-stack-large-divider"
                     />
                   </div>
@@ -3092,7 +3092,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
               >
                 <hr
                   aria-hidden="true"
-                  class="css-1b55m0t"
+                  class="css-fvvcc5"
                   data-testid="article-stack-large-divider"
                 />
               </div>
