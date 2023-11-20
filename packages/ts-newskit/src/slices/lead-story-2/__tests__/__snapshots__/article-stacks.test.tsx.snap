@@ -28,43 +28,55 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-1wte5n0"
+                  class="article-info css-182uup4"
                 >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      NEW
-                    </div>
-                  </span>
                   <div
-                    class="css-p44zak"
+                    class="css-1i82ydo"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
+                    <span
+                      class="css-125dpav"
                     >
-                      PROFILE
-                    </div>
-                  </span>
-                  <div
-                    class="css-p44zak"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
+                      <span
+                        class="css-6tvr2h"
+                      >
+                        <span
+                          class="css-11qylza"
+                        >
+                          NEW
+                        </span>
+                      </span>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                    </span>
+                    <span
+                      class="css-125dpav"
+                    >
+                      <span
+                        class="css-1basb1c"
+                      >
+                        <span
+                          class="css-11qylza"
+                        >
+                          PROFILE
+                        </span>
+                      </span>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                    </span>
                   </div>
                 </div>
                 <a
@@ -114,7 +126,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-p44zak"
+                    class="css-lew009"
                   >
                     <hr
                       aria-hidden="true"
@@ -154,43 +166,55 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-1wte5n0"
+                  class="article-info css-182uup4"
                 >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
-                  </span>
                   <div
-                    class="css-p44zak"
+                    class="css-1i82ydo"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
+                    <span
+                      class="css-125dpav"
                     >
-                      REVIEW
-                    </div>
-                  </span>
-                  <div
-                    class="css-p44zak"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
+                      <span
+                        class="css-6tvr2h"
+                      >
+                        <span
+                          class="css-11qylza"
+                        >
+                          EXCLUSIVE
+                        </span>
+                      </span>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                    </span>
+                    <span
+                      class="css-125dpav"
+                    >
+                      <span
+                        class="css-1basb1c"
+                      >
+                        <span
+                          class="css-11qylza"
+                        >
+                          REVIEW
+                        </span>
+                      </span>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                    </span>
                   </div>
                 </div>
                 <a
@@ -240,7 +264,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-p44zak"
+                    class="css-lew009"
                   >
                     <hr
                       aria-hidden="true"
@@ -323,43 +347,55 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-1wte5n0"
+                class="article-info css-182uup4"
               >
-                <span
-                  class="css-6tvr2h"
-                >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    NEW
-                  </div>
-                </span>
                 <div
-                  class="css-p44zak"
+                  class="css-1i82ydo"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
-                <span
-                  class="css-1basb1c"
-                >
-                  <div
-                    class="css-gb5m6n"
+                  <span
+                    class="css-125dpav"
                   >
-                    REVIEW
-                  </div>
-                </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                    <span
+                      class="css-6tvr2h"
+                    >
+                      <span
+                        class="css-11qylza"
+                      >
+                        NEW
+                      </span>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                  </span>
+                  <span
+                    class="css-125dpav"
+                  >
+                    <span
+                      class="css-1basb1c"
+                    >
+                      <span
+                        class="css-11qylza"
+                      >
+                        REVIEW
+                      </span>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                  </span>
                 </div>
               </div>
               <a
@@ -409,7 +445,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   </span>
                 </a>
                 <div
-                  class="css-p44zak"
+                  class="css-lew009"
                 >
                   <hr
                     aria-hidden="true"
@@ -483,43 +519,55 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-1wte5n0"
+                class="article-info css-182uup4"
               >
-                <span
-                  class="css-6tvr2h"
-                >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    EXCLUSIVE
-                  </div>
-                </span>
                 <div
-                  class="css-p44zak"
+                  class="css-1i82ydo"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
-                <span
-                  class="css-1basb1c"
-                >
-                  <div
-                    class="css-gb5m6n"
+                  <span
+                    class="css-125dpav"
                   >
-                    INTERVIEW
-                  </div>
-                </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                    <span
+                      class="css-6tvr2h"
+                    >
+                      <span
+                        class="css-11qylza"
+                      >
+                        EXCLUSIVE
+                      </span>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                  </span>
+                  <span
+                    class="css-125dpav"
+                  >
+                    <span
+                      class="css-1basb1c"
+                    >
+                      <span
+                        class="css-11qylza"
+                      >
+                        INTERVIEW
+                      </span>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                  </span>
                 </div>
               </div>
               <a
@@ -569,7 +617,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   </span>
                 </a>
                 <div
-                  class="css-p44zak"
+                  class="css-lew009"
                 >
                   <hr
                     aria-hidden="true"
@@ -620,43 +668,55 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-1wte5n0"
+                  class="article-info css-182uup4"
                 >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      NEW
-                    </div>
-                  </span>
                   <div
-                    class="css-p44zak"
+                    class="css-1i82ydo"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
+                    <span
+                      class="css-125dpav"
                     >
-                      PROFILE
-                    </div>
-                  </span>
-                  <div
-                    class="css-p44zak"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
+                      <span
+                        class="css-6tvr2h"
+                      >
+                        <span
+                          class="css-11qylza"
+                        >
+                          NEW
+                        </span>
+                      </span>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                    </span>
+                    <span
+                      class="css-125dpav"
+                    >
+                      <span
+                        class="css-1basb1c"
+                      >
+                        <span
+                          class="css-11qylza"
+                        >
+                          PROFILE
+                        </span>
+                      </span>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                    </span>
                   </div>
                 </div>
                 <a
@@ -706,7 +766,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-p44zak"
+                    class="css-lew009"
                   >
                     <hr
                       aria-hidden="true"
@@ -746,43 +806,55 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-1wte5n0"
+                  class="article-info css-182uup4"
                 >
-                  <span
-                    class="css-6tvr2h"
-                  >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
-                  </span>
                   <div
-                    class="css-p44zak"
+                    class="css-1i82ydo"
                   >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
-                  </div>
-                  <span
-                    class="css-1basb1c"
-                  >
-                    <div
-                      class="css-gb5m6n"
+                    <span
+                      class="css-125dpav"
                     >
-                      REVIEW
-                    </div>
-                  </span>
-                  <div
-                    class="css-p44zak"
-                  >
-                    <hr
-                      aria-hidden="true"
-                      class="css-15kf7hd"
-                      data-testid="divider"
-                    />
+                      <span
+                        class="css-6tvr2h"
+                      >
+                        <span
+                          class="css-11qylza"
+                        >
+                          EXCLUSIVE
+                        </span>
+                      </span>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                    </span>
+                    <span
+                      class="css-125dpav"
+                    >
+                      <span
+                        class="css-1basb1c"
+                      >
+                        <span
+                          class="css-11qylza"
+                        >
+                          REVIEW
+                        </span>
+                      </span>
+                      <div
+                        class="css-lew009"
+                      >
+                        <hr
+                          aria-hidden="true"
+                          class="css-15kf7hd"
+                          data-testid="divider"
+                        />
+                      </div>
+                    </span>
                   </div>
                 </div>
                 <a
@@ -832,7 +904,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-p44zak"
+                    class="css-lew009"
                   >
                     <hr
                       aria-hidden="true"
@@ -915,43 +987,55 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-1wte5n0"
+                class="article-info css-182uup4"
               >
-                <span
-                  class="css-6tvr2h"
-                >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    NEW
-                  </div>
-                </span>
                 <div
-                  class="css-p44zak"
+                  class="css-1i82ydo"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
-                <span
-                  class="css-1basb1c"
-                >
-                  <div
-                    class="css-gb5m6n"
+                  <span
+                    class="css-125dpav"
                   >
-                    REVIEW
-                  </div>
-                </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                    <span
+                      class="css-6tvr2h"
+                    >
+                      <span
+                        class="css-11qylza"
+                      >
+                        NEW
+                      </span>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                  </span>
+                  <span
+                    class="css-125dpav"
+                  >
+                    <span
+                      class="css-1basb1c"
+                    >
+                      <span
+                        class="css-11qylza"
+                      >
+                        REVIEW
+                      </span>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                  </span>
                 </div>
               </div>
               <a
@@ -1001,7 +1085,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   </span>
                 </a>
                 <div
-                  class="css-p44zak"
+                  class="css-lew009"
                 >
                   <hr
                     aria-hidden="true"
@@ -1075,43 +1159,55 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-1wte5n0"
+                class="article-info css-182uup4"
               >
-                <span
-                  class="css-6tvr2h"
-                >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    EXCLUSIVE
-                  </div>
-                </span>
                 <div
-                  class="css-p44zak"
+                  class="css-1i82ydo"
                 >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
-                <span
-                  class="css-1basb1c"
-                >
-                  <div
-                    class="css-gb5m6n"
+                  <span
+                    class="css-125dpav"
                   >
-                    INTERVIEW
-                  </div>
-                </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
+                    <span
+                      class="css-6tvr2h"
+                    >
+                      <span
+                        class="css-11qylza"
+                      >
+                        EXCLUSIVE
+                      </span>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                  </span>
+                  <span
+                    class="css-125dpav"
+                  >
+                    <span
+                      class="css-1basb1c"
+                    >
+                      <span
+                        class="css-11qylza"
+                      >
+                        INTERVIEW
+                      </span>
+                    </span>
+                    <div
+                      class="css-lew009"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                  </span>
                 </div>
               </div>
               <a
@@ -1161,7 +1257,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   </span>
                 </a>
                 <div
-                  class="css-p44zak"
+                  class="css-lew009"
                 >
                   <hr
                     aria-hidden="true"
