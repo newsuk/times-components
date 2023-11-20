@@ -9,9 +9,6 @@ import {
 } from 'newskit';
 import { CustomStackLayout } from '../shared';
 
-const setMarginBlockStart = (space: string) => ({
-  marginBlockStart: `${space}`
-});
 export const LeadStoryContainer = styled(CustomStackLayout)<{
   className?: string;
 }>`
@@ -24,16 +21,6 @@ export const LeadStoryContainer = styled(CustomStackLayout)<{
   ${getMediaQueryFromTheme('lg', 'xl')} {
     .article-container .article-image {
       display: none;
-    }
-    .article-container .article-info {
-      margin-block-start: 0;
-    }
-    .composed-article-card-0 .article-info {
-      ${({ className }) =>
-        getSpacingCssFromTheme(
-          setMarginBlockStart,
-          className !== 'lead-story-3-container' ? 'space030' : 'space000'
-        )};
     }
     .composed-article-card-0 .article-image {
       display: ${({ className }) =>
@@ -49,9 +36,6 @@ export const LeadStoryContainer = styled(CustomStackLayout)<{
   ${getMediaQueryFromTheme('md', 'lg')} {
     .bottom-article-stack .article-image {
       display: none;
-    }
-    .bottom-article-stack .article-info {
-      margin-block-start: 0;
     }
   }
 `;
