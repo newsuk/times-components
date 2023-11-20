@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.138.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.138.0...@times-components/ts-newskit@1.138.1) (2023-11-20)
+
+
+### Bug Fixes
+
+* **TMRX-1635:** Fix lead story article headline margin ([#3639](https://github.com/newsuk/times-components/issues/3639)) ([dd213c9](https://github.com/newsuk/times-components/commit/dd213c975587b0f1a7c39e5862e09ee49f70e39f))
+
+
+
+
+
 # [1.138.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.137.1...@times-components/ts-newskit@1.138.0) (2023-11-20)
 
 
