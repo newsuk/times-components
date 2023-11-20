@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.138.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.137.1...@times-components/ts-newskit@1.138.0) (2023-11-20)
+
+
+### Features
+
+* **tmrx-1578:** line height added ([#3656](https://github.com/newsuk/times-components/issues/3656)) ([3461ffc](https://github.com/newsuk/times-components/commit/3461ffcf8ce30c5cdb64a0d305978aafda81c504))
+
+
+
+
+
 ## [1.137.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.137.0...@times-components/ts-newskit@1.137.1) (2023-11-20)
 
 
