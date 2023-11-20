@@ -187,7 +187,10 @@ export const Article = ({
           <GridLayoutItem
             area="media"
             className="article-image"
-            marginBlockEnd="space030"
+            marginBlockEnd={{
+              xs: 'space040',
+              lg: 'space030'
+            }}
           >
             {image}
           </GridLayoutItem>
