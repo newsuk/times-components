@@ -3,6 +3,83 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.138.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.138.0...@times-components/ts-newskit@1.138.1) (2023-11-20)
+
+
+### Bug Fixes
+
+* **TMRX-1635:** Fix lead story article headline margin ([#3639](https://github.com/newsuk/times-components/issues/3639)) ([dd213c9](https://github.com/newsuk/times-components/commit/dd213c975587b0f1a7c39e5862e09ee49f70e39f))
+
+
+
+
+
+# [1.138.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.137.1...@times-components/ts-newskit@1.138.0) (2023-11-20)
+
+
+### Features
+
+* **tmrx-1578:** line height added ([#3656](https://github.com/newsuk/times-components/issues/3656)) ([3461ffc](https://github.com/newsuk/times-components/commit/3461ffcf8ce30c5cdb64a0d305978aafda81c504))
+
+
+
+
+
+## [1.137.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.137.0...@times-components/ts-newskit@1.137.1) (2023-11-20)
+
+
+### Bug Fixes
+
+* **TMRX-1578:** remove line break  ([#3653](https://github.com/newsuk/times-components/issues/3653)) ([587c994](https://github.com/newsuk/times-components/commit/587c99426214bf445a0b4224337a7e2b359684eb))
+
+
+
+
+
+# [1.137.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.136.0...@times-components/ts-newskit@1.137.0) (2023-11-17)
+
+
+### Features
+
+* **TMRX-1472:** implement design feedback ([#3654](https://github.com/newsuk/times-components/issues/3654)) ([69dc87c](https://github.com/newsuk/times-components/commit/69dc87c4920d0be321932c5b8a3cc7198d763d0b))
+
+
+
+
+
+# [1.136.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.135.0...@times-components/ts-newskit@1.136.0) (2023-11-16)
+
+
+### Features
+
+* **TMRX-1472:** create lead story 4 slice ([#3651](https://github.com/newsuk/times-components/issues/3651)) ([f0a2202](https://github.com/newsuk/times-components/commit/f0a220244c35b833e34df5a3c90445135df717ae))
+
+
+
+
+
+# [1.135.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.134.0...@times-components/ts-newskit@1.135.0) (2023-11-16)
+
+
+### Features
+
+* **TMPZ-249:** updated design for sidebar card ([#3652](https://github.com/newsuk/times-components/issues/3652)) ([219d9b7](https://github.com/newsuk/times-components/commit/219d9b71e01d2e911f15dfebca176882e0e2014c))
+
+
+
+
+
+# [1.134.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.133.0...@times-components/ts-newskit@1.134.0) (2023-11-15)
+
+
+### Features
+
+* **TMPZ-199:** updated puzzles category for improved CWV ([#3644](https://github.com/newsuk/times-components/issues/3644)) ([d6e5ea0](https://github.com/newsuk/times-components/commit/d6e5ea09d559dc287be90d077eba9f7d844454e7))
+
+
+
+
+
 # [1.133.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.132.0...@times-components/ts-newskit@1.133.0) (2023-11-10)
 
 

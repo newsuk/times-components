@@ -5,7 +5,8 @@ import {
   StyledBlock,
   StyledIconA4,
   StyledIconD2,
-  StyledWrapper
+  StyledWrapper,
+  TextBlockH2
 } from './styles';
 
 export interface FreeTrialProps {
@@ -26,16 +27,17 @@ export const FreeTrial: FC<FreeTrialProps> = ({
       <FreeTrialContainer paddingBlock="space090" paddingInline="space045">
         <StyledBlock marginBlock="space000" marginInline="auto">
           <StyledWrapper>
-            <TextBlock
+            <TextBlockH2
               as="h2"
               typographyPreset={{
                 xs: 'editorialHeadline050',
                 md: 'editorialHeadline080'
               }}
               stylePreset="inkContrast"
+              className="withFallback"
             >
               {freeTrialHeader}
-            </TextBlock>
+            </TextBlockH2>
             <TextBlock
               as="p"
               typographyPreset={{
