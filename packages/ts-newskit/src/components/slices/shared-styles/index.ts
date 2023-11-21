@@ -126,13 +126,14 @@ export const Wrapper = styled.span<{ alignFlex: boolean }>`
 
 export const Container = styled.div`
   display: block;
+  font-size: 1rem;
 `;
 
 export const TileSpanContainer = styled.span<{ isVideoIcon?: boolean }>`
   word-break: break-word;
   ${({ isVideoIcon }) => isVideoIcon && 'vertical-align: baseline'};
   line-height: ${({ isVideoIcon }) => (isVideoIcon ? '24px' : 'unset')};
-  font-size: unset;
+  font-size: 1rem;
   :last-child > div {
     display: none;
   }
