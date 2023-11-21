@@ -171,6 +171,10 @@ export const Article = ({
             area="media"
             aria-label="article-lead-image"
             className="article-image"
+            marginBlockEnd={{
+              xs: 'space040',
+              lg: 'space030'
+            }}
           >
             {image}
           </FullWidthGridLayoutItem>
@@ -178,10 +182,7 @@ export const Article = ({
           <GridLayoutItem
             area="media"
             className="article-image"
-            marginBlockEnd={{
-              xs: 'space040',
-              lg: 'space030'
-            }}
+            marginBlockEnd='space040'
           >
             {image}
           </GridLayoutItem>
