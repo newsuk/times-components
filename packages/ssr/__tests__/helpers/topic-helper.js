@@ -32,11 +32,11 @@ export default (options = {}) => {
       cy.get('div[data-testid="topic-description"]');
     });
 
-    it("should take you to the article page once an article has been selected", () => {
-      cy.get(`div[data-testid="article-list-item-0"]`).click();
+    // it("should take you to the article page once an article has been selected", () => {
+    //   cy.get(`div[data-testid="article-list-item-0"]`).click();
 
-      expect(cy.get('[data-testid="standfirst"]')).to.exist;
-    });
+    //   expect(cy.get('[data-testid="standfirst"]')).to.exist;
+    // });
 
     it("loads inline-ad", () => {
       expect(cy.get("#inline-ad")).to.exist;

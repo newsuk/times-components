@@ -5,7 +5,6 @@ const articleListProps = {
   emptyStateMessage:
     "Unfortunately, there are no articles relating to this page",
   imageRatio: 3 / 2,
-  highResSize: 900,
   isLoading: false,
   onArticlePress: () => {},
   onTwitterLinkPress: () => {},
