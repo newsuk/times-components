@@ -132,6 +132,7 @@ export const TileSpanContainer = styled.span<{ isVideoIcon?: boolean }>`
   word-break: break-word;
   ${({ isVideoIcon }) => isVideoIcon && 'vertical-align: baseline'};
   line-height: ${({ isVideoIcon }) => (isVideoIcon ? '24px' : 'unset')};
+  font-size: unset;
   :last-child > div {
     display: none;
   }
