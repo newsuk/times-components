@@ -2,10 +2,9 @@ export type SecondaryMenuItem = {
   title: string;
   url: string;
   slug: string;
-};
-
-export type MainMenuProp = {
-  data: SecondaryMenuItem[];
+  md: boolean;
+  lg: boolean;
+  xl: boolean;
 };
 
 export type SecondaryNavContainerProp = {

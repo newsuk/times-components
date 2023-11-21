@@ -5,7 +5,6 @@ import {
   Wrapper,
   MainMenu,
   StyledMenuSub,
-  VisibleCheckContainer
 } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
@@ -33,17 +32,42 @@ export const CreateMenu: React.FC<{
           setIsExpanded(!isExpanded);
         }
       };
+
       document.addEventListener('click', checkIfClickedOutside);
+      window.addEventListener('resize', () => setIsExpanded(false));
       return () => {
         document.removeEventListener('click', checkIfClickedOutside);
+        window.addEventListener('resize', () => setIsExpanded(false));
       };
     },
     [isExpanded]
   );
 
+  let charWidth = 0;
+  let showMoreMD = false;
+  let showMoreLG = false;
+  let showMoreXL = false;
+  data.map(({title}, index) => {
+    if(((title.length * 10) + charWidth) > 1270) {
+      data[index].xl = true
+      showMoreXL = true
+    }
+    if(((title.length * 10) + charWidth) > 970) {
+      data[index].lg = true
+      showMoreLG = true
+    }
+    if(((title.length * 10) + charWidth) > 700) {
+      data[index].md = true
+      showMoreMD = true
+    }
+    charWidth += (title.length * 10) + 32
+    console.log("itemcharWidth: ", title.length * 10)
+  })
+
+  console.log("charWidth: ", charWidth)
+
   return (
     <MainMenu
-      data={data}
       aria-label="Secondary Navigation"
       overrides={{
         spaceInline: 'space000'
@@ -53,38 +77,39 @@ export const CreateMenu: React.FC<{
       <Wrapper ref={navListRef}>
         <NavItems data={data} options={options} clickHandler={clickHandler} />
       </Wrapper>
-      <VisibleCheckContainer data={data}>
-        <StyledMenuSub
-          onClick={() => setIsExpanded(!isExpanded)}
-          expanded={isExpanded}
-          title={subMenuTitle}
-          overrides={{
-            paddingBlockStart: 'space020',
-            paddingBlockEnd: 'space030',
-            paddingInline: 'space040',
-            stylePreset: `${isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'}`,
-            list: { stylePreset: 'subMenuItems' },
-            typographyPreset: 'newPreset040'
-          }}
-          data-testid="more-sub-menu"
-        >
-          <MenuContainer>
-            <Menu
-              vertical
-              overrides={{
-                spaceInline: 'sizing000'
-              }}
-              aria-label="menu-multiple-auto"
-            >
-              <CreateMoreMenu
-                data={data}
-                options={options}
-                clickHandler={clickHandler}
-              />
-            </Menu>
-          </MenuContainer>
-        </StyledMenuSub>
-      </VisibleCheckContainer>
+      <StyledMenuSub
+        onClick={() => setIsExpanded(!isExpanded)}
+        expanded={isExpanded}
+        title={subMenuTitle}
+        overrides={{
+          paddingBlockStart: 'space020',
+          paddingBlockEnd: 'space030',
+          paddingInline: 'space040',
+          stylePreset: `${isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'}`,
+          list: { stylePreset: 'subMenuItems' },
+          typographyPreset: 'newPreset040'
+        }}
+        data-testid="more-sub-menu"
+        $showMoreMD={showMoreMD}
+        $showMoreLG={showMoreLG}
+        $showMoreXL={showMoreXL}
+      >
+        <MenuContainer>
+          <Menu
+            vertical
+            overrides={{
+              spaceInline: 'sizing000'
+            }}
+            aria-label="menu-multiple-auto"
+          >
+            <CreateMoreMenu
+              data={data}
+              options={options}
+              clickHandler={clickHandler}
+            />
+          </Menu>
+        </MenuContainer>
+      </StyledMenuSub>
     </MainMenu>
   );
 };

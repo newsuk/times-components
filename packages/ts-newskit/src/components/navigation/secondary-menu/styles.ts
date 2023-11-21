@@ -6,163 +6,13 @@ import {
   Block,
   MenuSub,
   MenuItem,
-  getMediaQueryFromTheme,
-  BreakpointKeys
+  getMediaQueryFromTheme
 } from 'newskit';
 import {
-  MainMenuProp,
   SecondaryNavContainerProp,
-  NavItemMobileContainerProp,
-  SecondaryMenuItem
+  NavItemMobileContainerProp
 } from './types';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
-
-const MAX_NAV_ITEMS_CHAR_COUNT_MD = 50;
-const MAX_NAV_ITEMS_CHAR_COUNT_LG = 75;
-const MAX_NAV_ITEMS_CHAR_COUNT_XL = 100;
-
-const getLastMenuItemIndexWhenMoreItems = (
-  data: SecondaryMenuItem[],
-  charCount: number
-) => {
-  let charCountSum = 0;
-  for (let i = 0; i < data.length; i++) {
-    charCountSum = charCountSum + data[i].title.length;
-    if (charCountSum > charCount) {
-      return i - 1;
-    }
-  }
-  return undefined;
-};
-
-const getMaxCharCount = (breakpoint: BreakpointKeys) => {
-  let charCount = 0;
-  switch (breakpoint) {
-    case 'xl':
-      charCount = MAX_NAV_ITEMS_CHAR_COUNT_XL;
-      break;
-    case 'lg':
-      charCount = MAX_NAV_ITEMS_CHAR_COUNT_LG;
-      break;
-    case 'md':
-      charCount = MAX_NAV_ITEMS_CHAR_COUNT_MD;
-      break;
-    default:
-      charCount = MAX_NAV_ITEMS_CHAR_COUNT_MD;
-  }
-  return charCount;
-};
-
-const hasMoreThanMaxChar = (
-  data: SecondaryMenuItem[],
-  breakpoint: BreakpointKeys
-) => {
-  const maxCharCount = getMaxCharCount(breakpoint);
-  return !!getLastMenuItemIndexWhenMoreItems(data, maxCharCount);
-};
-
-const visibleItemsLength = (
-  data: SecondaryMenuItem[],
-  breakpoint: BreakpointKeys
-) => {
-  console.log('=========breakpoint========', breakpoint)
-  const maxCharCount = getMaxCharCount(breakpoint);
-  const index = getLastMenuItemIndexWhenMoreItems(data, maxCharCount);
-  if (!!index) {
-    return index + 1;
-  } else {
-    return data.length;
-  }
-};
-
-const moreItemsLength = (
-  data: SecondaryMenuItem[],
-  breakpoint: BreakpointKeys
-) => {
-  return data.length - visibleItemsLength(data, breakpoint);
-};
-
-export const MainMenu = styled(Menu)<MainMenuProp>`
-  ${getMediaQueryFromTheme('md', 'lg')} {
-    padding-left: ${({ data }) =>
-      hasMoreThanMaxChar(data, 'md') ? '48px' : '54px'};
-    padding-right: ${({ data }) =>
-      hasMoreThanMaxChar(data, 'md') ? '28px' : '54px'};
-    ul {
-      justify-content: ${({ data }) =>
-        hasMoreThanMaxChar(data, 'md') ? `space-between` : `center`};
-    }
-  }
-  ${getMediaQueryFromTheme('lg', 'xl')} {
-    padding-left: ${({ data }) =>
-      hasMoreThanMaxChar(data, 'lg') ? '48px' : '54px'};
-    padding-right: ${({ data }) =>
-      hasMoreThanMaxChar(data, 'lg') ? '28px' : '54px'};
-    ul {
-      justify-content: ${({ data }) =>
-        hasMoreThanMaxChar(data, 'lg') ? `space-between` : `center`};
-    }
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    padding-left: ${({ data }) =>
-      hasMoreThanMaxChar(data, 'xl') ? '48px' : '54px'};
-    padding-right: ${({ data }) =>
-      hasMoreThanMaxChar(data, 'xl') ? '28px' : '54px'};
-    ul {
-      justify-content: ${({ data }) =>
-        hasMoreThanMaxChar(data, 'xl') ? `space-between` : `center`};
-    }
-  }
-`;
-
-export const VisibleCheckContainer = styled.div<MainMenuProp>`
-  ${getMediaQueryFromTheme('md', 'lg')} {
-    ${({ data }) => !hasMoreThanMaxChar(data, 'md') && 'display: none'};
-  }
-  ${getMediaQueryFromTheme('lg', 'xl')} {
-    ${({ data }) => !hasMoreThanMaxChar(data, 'lg') && 'display: none'};
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    ${({ data }) => !hasMoreThanMaxChar(data, 'xl') && 'display: none'};
-  }
-`;
-
-export const VisibleCheckNavContainer = styled.div<MainMenuProp>`
-  display: flex;
-  ${getMediaQueryFromTheme('md', 'lg')} {
-    li:nth-last-child(-n + ${({ data }) => moreItemsLength(data, 'md')}) {
-      display: none;
-    }
-  }
-  ${getMediaQueryFromTheme('lg', 'xl')} {
-    li:nth-last-child(-n + ${({ data }) => moreItemsLength(data, 'lg')}) {
-      display: none;
-    }
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    li:nth-last-child(-n + ${({ data }) => moreItemsLength(data, 'xl')}) {
-      display: none;
-    }
-  }
-`;
-
-export const VisibleCheckMenuContainer = styled.div<MainMenuProp>`
-  ${getMediaQueryFromTheme('xl')} {
-    div:nth-child(-n + ${({ data }) => visibleItemsLength(data, 'xl')}) {
-      display: none;
-    }
-  }
-  ${getMediaQueryFromTheme('lg', 'xl')} {
-    div:nth-child(-n + ${({ data }) => visibleItemsLength(data, 'lg')}) {
-      display: none;
-    }
-  }
-  ${getMediaQueryFromTheme('md', 'lg')} {
-    div:nth-child(-n + ${({ data }) => visibleItemsLength(data, 'md')}) {
-      display: none;
-    }
-  }
-`;
 
 export const MenuDivider = styled(Divider)`
   width: 100%;
@@ -172,6 +22,16 @@ export const MenuDivider = styled(Divider)`
 
 export const MenuDividerDropdown = styled(Divider)`
   ${getColorCssFromTheme('borderColor', 'neutral030')};
+`;
+
+export const MainMenu = styled(Menu)`
+  padding-inline: 48px;
+  ul {
+    justify-content: center;
+  }
+  li {
+    position: relative;
+  }
 `;
 
 export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
@@ -198,12 +58,52 @@ export const Wrapper = styled.div`
   display: flex;
 `;
 
-export const StyledMenuSub = styled(MenuSub)`
+export const StyledMenuSub = styled(MenuSub)<{$showMoreMD: boolean; $showMoreLG: boolean; $showMoreXL: boolean;}>`
   min-width: 100px;
+  display: none;
+
+  & > ul {
+    right: 0;
+  }
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $showMoreMD }) => $showMoreMD && `display: flex;`}
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $showMoreLG }) => $showMoreLG && `display: flex;`}
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $showMoreXL }) => $showMoreXL && `display: flex;`}
+  }
+
 `;
 
-export const StyledMenuItemsDesktop = styled(MenuItem)`
+export const StyledMenuItemsDesktop = styled(MenuItem)<{$hideMD: boolean; $hideLG: boolean; $hideXL: boolean;}>`
   min-width: max-content;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $hideMD }) => $hideMD && `display: none;`}
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $hideLG }) => $hideLG && `display: none;`}
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $hideXL }) => $hideXL && `display: none;`}
+  }
+`;
+export const StyledMenuItemsDropdown = styled(MenuItem)<{$showMD: boolean; $showLG: boolean; $showXL: boolean;}>`
+  min-width: max-content;
+  display: none;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $showMD }) => $showMD && `display: flex;`}
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $showLG }) => $showLG && `display: flex;`}
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $showXL }) => $showXL && `display: flex;`}
+  }
 `;
 
 export const StyledBlock = styled(Block)`
