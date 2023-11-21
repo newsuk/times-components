@@ -54,6 +54,9 @@ export const TextLink = styled(LinkInline)`
 export const ContainerInline = styled(Block)`
   display: inline-block;
   ${getSizingCssFromTheme('height', 'sizing020')};
+  :last-child {
+    display: none;
+  }
 `;
 
 const setFullWidthMargin = (space: string) => ({ marginInline: `-${space}` });
@@ -110,29 +113,15 @@ export const StyledTextBlock = styled(TextBlock)`
 `;
 
 export const StyledBlock = styled(Block)`
+  position: relative;
   display: flex;
   align-items: last baseline;
   flex-wrap: wrap;
   ${getSpacingCssFromTheme('row-gap', 'space020')};
 `;
 
-export const Wrapper = styled.span<{ alignFlex: boolean }>`
-  ${({ alignFlex }) => alignFlex && 'display: flex'};
-  ${({ alignFlex }) => alignFlex && 'align-items: center'};
-  ${({ alignFlex }) => alignFlex && getSpacingCssFromTheme('gap', 'space010')};
-  ${({ alignFlex }) => !alignFlex && 'vertical-align: baseline'};
-  ${({ alignFlex }) => !alignFlex && 'line-height: 24px'};
-`;
-
-export const Container = styled.div`
-  display: block;
-`;
-
-export const TileSpanContainer = styled.span<{ isVideoIcon?: boolean }>`
-  word-break: break-word;
-  ${({ isVideoIcon }) => isVideoIcon && 'vertical-align: baseline'};
-  ${({ isVideoIcon }) => isVideoIcon && 'line-height: 24px'};
-  :last-child > div {
-    display: none;
-  }
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  ${getSpacingCssFromTheme('gap', 'space010')};
 `;
