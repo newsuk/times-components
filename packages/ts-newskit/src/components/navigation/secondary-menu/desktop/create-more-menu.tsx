@@ -1,7 +1,6 @@
 import React from 'react';
-import { MenuItem } from 'newskit';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
-import { MenuDividerDropdown, VisibleCheckMenuContainer } from '../styles';
+import { MenuDividerDropdown, StyledMenuItemsDropdown } from '../styles';
 
 export const CreateMoreMenu: React.FC<{
   options: SecondaryMenuOptions;
@@ -11,10 +10,10 @@ export const CreateMoreMenu: React.FC<{
   const { handleSelect, isSelected, isExpanded, setIsExpanded } = options;
 
   return (
-    <VisibleCheckMenuContainer data={data}>
-      {data.map(({ title, url }) => (
+    <>
+      {data.map(({ title, url, md, lg, xl }) => (
         <div key={title}>
-          <MenuItem
+          <StyledMenuItemsDropdown
             href={url}
             overrides={{
               stylePreset: 'menuItemMore',
@@ -26,12 +25,15 @@ export const CreateMoreMenu: React.FC<{
               clickHandler(title);
             }}
             selected={isSelected === title}
+            $showMD={md}
+            $showLG={lg}
+            $showXL={xl}
           >
             {title}
-          </MenuItem>
+          </StyledMenuItemsDropdown>
           <MenuDividerDropdown />
         </div>
       ))}
-    </VisibleCheckMenuContainer>
+    </>
   );
 };
