@@ -61,10 +61,7 @@ export const CreateMenu: React.FC<{
       showMoreMD = true
     }
     charWidth += (title.length * 10) + 32
-    console.log("itemcharWidth: ", title.length * 10)
   })
-
-  console.log("charWidth: ", charWidth)
 
   return (
     <MainMenu
