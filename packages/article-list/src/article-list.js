@@ -159,9 +159,7 @@ class ArticleList extends Component {
                               )}
                               imageRatio={imageRatio}
                               index={index}
-                              isLoading={item.isLoading === true || !ArticleList.getImageSize(
-                                observed.get(elementId)
-                              )}
+                              isLoading={item.isLoading === true}
                               length={data.length}
                               lowResQuality={3}
                               lowResSize={200}
