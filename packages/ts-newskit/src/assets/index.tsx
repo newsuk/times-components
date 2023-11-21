@@ -35,6 +35,7 @@ import IconSubscribe3 from './IconSubscribe3';
 import IconSubscribeB from './IconSubscribeB';
 import IconSubscribeQuestion from './IconSubscribeQuestion';
 import PhoneIcon from './phone';
+import ChevronRightCircleIcon from './ChervronRightCircleIcon';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -81,6 +82,11 @@ export const NewsKitSundayTimesMasthead = customToNewsKitIcon(
 export const NewsKitChevronRightIcon = customToNewsKitIcon(
   'NewsKitChevronRightIcon',
   props => <ChevronRightIcon {...props} />
+);
+
+export const NewsKitChevronRightCircleIcon = customToNewsKitIcon(
+  'NewsKitChevronRightCircleIcon',
+  props => <ChevronRightCircleIcon {...props} />
 );
 
 export const NewsKitArticlePlaceholder = customToNewsKitIcon(
