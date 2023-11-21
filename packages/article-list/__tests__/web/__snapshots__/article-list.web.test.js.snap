@@ -22,69 +22,13 @@ exports[`1. article list 1`] = `
       id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
     >
       <div>
-        <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-1-968n7tdck1"
-        >
-          <div>
-            <Card
-              fadeImageIn={true}
-              highResSize={null}
-              imageAccessibilityLabel=""
-              imageRatio={1}
-              imageUri="https://lead1.io"
-              isLcpItem={true}
-              isLoading={false}
-              lowResQuality={3}
-              lowResSize={200}
-              showImage={true}
-            >
-              <div>
-                <ArticleSummary
-                  bylineProps={null}
-                  content={
-                    <ArticleSummaryContent
-                      ast={
-                        Array [
-                          Object {
-                            "attributes": Object {},
-                            "children": Array [
-                              Object {
-                                "attributes": Object {
-                                  "value": "Summary 1",
-                                },
-                                "children": Array [],
-                                "name": "text",
-                              },
-                            ],
-                            "name": "paragraph",
-                          },
-                        ]
-                      }
-                    />
-                  }
-                  datePublicationProps={
-                    Object {
-                      "date": "2017-11-17T00:01:00.000Z",
-                      "publication": "TIMES",
-                    }
-                  }
-                  headline={
-                    <ArticleSummaryHeadline
-                      headline="ShortHeadline 1"
-                    />
-                  }
-                  labelProps={
-                    Object {
-                      "color": "#636C17",
-                      "isVideo": true,
-                      "title": "Label 1",
-                    }
-                  }
-                />
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div>
+          <Card
+            imageRatio={1}
+            isLoading={false}
+            showImage={true}
+          />
+        </div>
       </div>
     </div>
     <div
@@ -95,92 +39,13 @@ exports[`1. article list 1`] = `
         <div>
           <div />
         </div>
-        <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-2-968n7tdck2"
-        >
-          <div>
-            <Card
-              fadeImageIn={true}
-              highResSize={null}
-              imageAccessibilityLabel=""
-              imageRatio={1}
-              imageUri="https://lead2.io"
-              isLcpItem={false}
-              isLoading={false}
-              lowResQuality={3}
-              lowResSize={200}
-              showImage={true}
-            >
-              <div>
-                <ArticleSummary
-                  bylineProps={
-                    Object {
-                      "ast": Array [
-                        Object {
-                          "byline": Array [
-                            Object {
-                              "attributes": Object {},
-                              "children": Array [
-                                Object {
-                                  "attributes": Object {
-                                    "value": "Byline 2",
-                                  },
-                                  "children": Array [],
-                                  "name": "text",
-                                },
-                              ],
-                              "name": "paragraph",
-                            },
-                          ],
-                        },
-                      ],
-                      "color": "#1D1D1B",
-                    }
-                  }
-                  content={
-                    <ArticleSummaryContent
-                      ast={
-                        Array [
-                          Object {
-                            "attributes": Object {},
-                            "children": Array [
-                              Object {
-                                "attributes": Object {
-                                  "value": "Summary 2",
-                                },
-                                "children": Array [],
-                                "name": "text",
-                              },
-                            ],
-                            "name": "paragraph",
-                          },
-                        ]
-                      }
-                    />
-                  }
-                  datePublicationProps={
-                    Object {
-                      "date": "2017-11-17T00:01:00.000Z",
-                      "publication": "SUNDAYTIMES",
-                    }
-                  }
-                  headline={
-                    <ArticleSummaryHeadline
-                      headline="ShortHeadline 2"
-                    />
-                  }
-                  labelProps={
-                    Object {
-                      "color": "#1D1D1B",
-                      "isVideo": false,
-                      "title": "Label 2",
-                    }
-                  }
-                />
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div>
+          <Card
+            imageRatio={1}
+            isLoading={false}
+            showImage={true}
+          />
+        </div>
       </div>
     </div>
     <div
@@ -191,92 +56,13 @@ exports[`1. article list 1`] = `
         <div>
           <div />
         </div>
-        <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-3-968n7tdck3"
-        >
-          <div>
-            <Card
-              fadeImageIn={true}
-              highResSize={null}
-              imageAccessibilityLabel=""
-              imageRatio={1}
-              imageUri="https://lead3.io"
-              isLcpItem={false}
-              isLoading={false}
-              lowResQuality={3}
-              lowResSize={200}
-              showImage={true}
-            >
-              <div>
-                <ArticleSummary
-                  bylineProps={
-                    Object {
-                      "ast": Array [
-                        Object {
-                          "byline": Array [
-                            Object {
-                              "attributes": Object {},
-                              "children": Array [
-                                Object {
-                                  "attributes": Object {
-                                    "value": "Byline 3",
-                                  },
-                                  "children": Array [],
-                                  "name": "text",
-                                },
-                              ],
-                              "name": "paragraph",
-                            },
-                          ],
-                        },
-                      ],
-                      "color": "#1D1D1B",
-                    }
-                  }
-                  content={
-                    <ArticleSummaryContent
-                      ast={
-                        Array [
-                          Object {
-                            "attributes": Object {},
-                            "children": Array [
-                              Object {
-                                "attributes": Object {
-                                  "value": "Summary 3",
-                                },
-                                "children": Array [],
-                                "name": "text",
-                              },
-                            ],
-                            "name": "paragraph",
-                          },
-                        ]
-                      }
-                    />
-                  }
-                  datePublicationProps={
-                    Object {
-                      "date": "2017-11-17T00:01:00.000Z",
-                      "publication": "SUNDAYTIMES",
-                    }
-                  }
-                  headline={
-                    <ArticleSummaryHeadline
-                      headline="ShortHeadline 3"
-                    />
-                  }
-                  labelProps={
-                    Object {
-                      "color": "#1D1D1B",
-                      "isVideo": false,
-                      "title": "Label 3",
-                    }
-                  }
-                />
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div>
+          <Card
+            imageRatio={1}
+            isLoading={false}
+            showImage={true}
+          />
+        </div>
       </div>
     </div>
     <div
@@ -287,92 +73,13 @@ exports[`1. article list 1`] = `
         <div>
           <div />
         </div>
-        <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-4-968n7tdck4"
-        >
-          <div>
-            <Card
-              fadeImageIn={true}
-              highResSize={null}
-              imageAccessibilityLabel=""
-              imageRatio={1}
-              imageUri="https://lead4.io"
-              isLcpItem={false}
-              isLoading={false}
-              lowResQuality={3}
-              lowResSize={200}
-              showImage={true}
-            >
-              <div>
-                <ArticleSummary
-                  bylineProps={
-                    Object {
-                      "ast": Array [
-                        Object {
-                          "byline": Array [
-                            Object {
-                              "attributes": Object {},
-                              "children": Array [
-                                Object {
-                                  "attributes": Object {
-                                    "value": "Byline 4",
-                                  },
-                                  "children": Array [],
-                                  "name": "text",
-                                },
-                              ],
-                              "name": "paragraph",
-                            },
-                          ],
-                        },
-                      ],
-                      "color": "#1D1D1B",
-                    }
-                  }
-                  content={
-                    <ArticleSummaryContent
-                      ast={
-                        Array [
-                          Object {
-                            "attributes": Object {},
-                            "children": Array [
-                              Object {
-                                "attributes": Object {
-                                  "value": "Summary 4",
-                                },
-                                "children": Array [],
-                                "name": "text",
-                              },
-                            ],
-                            "name": "paragraph",
-                          },
-                        ]
-                      }
-                    />
-                  }
-                  datePublicationProps={
-                    Object {
-                      "date": "2017-11-17T00:01:00.000Z",
-                      "publication": "SUNDAYTIMES",
-                    }
-                  }
-                  headline={
-                    <ArticleSummaryHeadline
-                      headline="ShortHeadline 4"
-                    />
-                  }
-                  labelProps={
-                    Object {
-                      "color": "#1D1D1B",
-                      "isVideo": false,
-                      "title": "Label 4",
-                    }
-                  }
-                />
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div>
+          <Card
+            imageRatio={1}
+            isLoading={false}
+            showImage={true}
+          />
+        </div>
       </div>
     </div>
     <div
@@ -383,92 +90,13 @@ exports[`1. article list 1`] = `
         <div>
           <div />
         </div>
-        <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-5-968n7tdck5"
-        >
-          <div>
-            <Card
-              fadeImageIn={true}
-              highResSize={null}
-              imageAccessibilityLabel=""
-              imageRatio={1}
-              imageUri="https://lead5.io"
-              isLcpItem={false}
-              isLoading={false}
-              lowResQuality={3}
-              lowResSize={200}
-              showImage={true}
-            >
-              <div>
-                <ArticleSummary
-                  bylineProps={
-                    Object {
-                      "ast": Array [
-                        Object {
-                          "byline": Array [
-                            Object {
-                              "attributes": Object {},
-                              "children": Array [
-                                Object {
-                                  "attributes": Object {
-                                    "value": "Byline 5",
-                                  },
-                                  "children": Array [],
-                                  "name": "text",
-                                },
-                              ],
-                              "name": "paragraph",
-                            },
-                          ],
-                        },
-                      ],
-                      "color": "#1D1D1B",
-                    }
-                  }
-                  content={
-                    <ArticleSummaryContent
-                      ast={
-                        Array [
-                          Object {
-                            "attributes": Object {},
-                            "children": Array [
-                              Object {
-                                "attributes": Object {
-                                  "value": "Summary 5",
-                                },
-                                "children": Array [],
-                                "name": "text",
-                              },
-                            ],
-                            "name": "paragraph",
-                          },
-                        ]
-                      }
-                    />
-                  }
-                  datePublicationProps={
-                    Object {
-                      "date": "2017-11-17T00:01:00.000Z",
-                      "publication": "SUNDAYTIMES",
-                    }
-                  }
-                  headline={
-                    <ArticleSummaryHeadline
-                      headline="ShortHeadline 5"
-                    />
-                  }
-                  labelProps={
-                    Object {
-                      "color": "#1D1D1B",
-                      "isVideo": false,
-                      "title": "Label 5",
-                    }
-                  }
-                />
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div>
+          <Card
+            imageRatio={1}
+            isLoading={false}
+            showImage={true}
+          />
+        </div>
       </div>
     </div>
     <div>
@@ -512,95 +140,13 @@ exports[`2. article list with no images 1`] = `
       id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
     >
       <div>
-        <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-1-968n7tdck1"
-        >
-          <div>
-            <Card
-              fadeImageIn={true}
-              highResSize={null}
-              imageAccessibilityLabel=""
-              imageRatio={1}
-              imageUri="https://lead1.io"
-              isLcpItem={true}
-              isLoading={false}
-              lowResQuality={3}
-              lowResSize={200}
-              showImage={false}
-            >
-              <div>
-                <div>
-                  <ArticleSummary
-                    bylineProps={null}
-                    content={<ArticleSummaryContent />}
-                    datePublicationProps={
-                      Object {
-                        "date": "2017-11-17T00:01:00.000Z",
-                        "publication": "TIMES",
-                      }
-                    }
-                    headline={
-                      <ArticleSummaryHeadline
-                        headline="ShortHeadline 1"
-                      />
-                    }
-                    labelProps={
-                      Object {
-                        "color": "#636C17",
-                        "isVideo": true,
-                        "title": "Label 1",
-                      }
-                    }
-                  />
-                </div>
-                <div>
-                  <ArticleSummary
-                    bylineProps={null}
-                    content={
-                      <ArticleSummaryContent
-                        ast={
-                          Array [
-                            Object {
-                              "attributes": Object {},
-                              "children": Array [
-                                Object {
-                                  "attributes": Object {
-                                    "value": "Short summary 1",
-                                  },
-                                  "children": Array [],
-                                  "name": "text",
-                                },
-                              ],
-                              "name": "paragraph",
-                            },
-                          ]
-                        }
-                      />
-                    }
-                    datePublicationProps={
-                      Object {
-                        "date": "2017-11-17T00:01:00.000Z",
-                        "publication": "TIMES",
-                      }
-                    }
-                    headline={
-                      <ArticleSummaryHeadline
-                        headline="ShortHeadline 1"
-                      />
-                    }
-                    labelProps={
-                      Object {
-                        "color": "#636C17",
-                        "isVideo": true,
-                        "title": "Label 1",
-                      }
-                    }
-                  />
-                </div>
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div>
+          <Card
+            imageRatio={1}
+            isLoading={false}
+            showImage={false}
+          />
+        </div>
       </div>
     </div>
     <div>
@@ -639,95 +185,13 @@ exports[`3. article list with missing image 1`] = `
       id="d98c257c-cb16-11e7-b529-95e3fc05f40f.0"
     >
       <div>
-        <Link
-          url="https://www.thetimes.co.uk/article/this-is-slug-1-968n7tdck1"
-        >
-          <div>
-            <Card
-              fadeImageIn={true}
-              highResSize={null}
-              imageAccessibilityLabel=""
-              imageRatio={1}
-              imageUri={null}
-              isLcpItem={true}
-              isLoading={false}
-              lowResQuality={3}
-              lowResSize={200}
-              showImage={false}
-            >
-              <div>
-                <div>
-                  <ArticleSummary
-                    bylineProps={null}
-                    content={<ArticleSummaryContent />}
-                    datePublicationProps={
-                      Object {
-                        "date": "2017-11-17T00:01:00.000Z",
-                        "publication": "TIMES",
-                      }
-                    }
-                    headline={
-                      <ArticleSummaryHeadline
-                        headline="ShortHeadline 1"
-                      />
-                    }
-                    labelProps={
-                      Object {
-                        "color": "#636C17",
-                        "isVideo": true,
-                        "title": "Label 1",
-                      }
-                    }
-                  />
-                </div>
-                <div>
-                  <ArticleSummary
-                    bylineProps={null}
-                    content={
-                      <ArticleSummaryContent
-                        ast={
-                          Array [
-                            Object {
-                              "attributes": Object {},
-                              "children": Array [
-                                Object {
-                                  "attributes": Object {
-                                    "value": "Short summary 1",
-                                  },
-                                  "children": Array [],
-                                  "name": "text",
-                                },
-                              ],
-                              "name": "paragraph",
-                            },
-                          ]
-                        }
-                      />
-                    }
-                    datePublicationProps={
-                      Object {
-                        "date": "2017-11-17T00:01:00.000Z",
-                        "publication": "TIMES",
-                      }
-                    }
-                    headline={
-                      <ArticleSummaryHeadline
-                        headline="ShortHeadline 1"
-                      />
-                    }
-                    labelProps={
-                      Object {
-                        "color": "#636C17",
-                        "isVideo": true,
-                        "title": "Label 1",
-                      }
-                    }
-                  />
-                </div>
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div>
+          <Card
+            imageRatio={1}
+            isLoading={false}
+            showImage={false}
+          />
+        </div>
       </div>
     </div>
     <div>
