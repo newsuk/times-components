@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.78.9](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.8...@times-components/article-in-depth@3.78.9) (2023-11-22)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.78.8](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.7...@times-components/article-in-depth@3.78.8) (2023-11-21)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.78.7](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.6...@times-components/article-in-depth@3.78.7) (2023-11-20)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.78.6](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.5...@times-components/article-in-depth@3.78.6) (2023-11-20)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.78.5](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.4...@times-components/article-in-depth@3.78.5) (2023-11-20)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.78.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.3...@times-components/article-in-depth@3.78.4) (2023-11-17)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.78.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.2...@times-components/article-in-depth@3.78.3) (2023-11-16)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.78.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.1...@times-components/article-in-depth@3.78.2) (2023-11-16)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.78.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.0...@times-components/article-in-depth@3.78.1) (2023-11-15)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+# [3.78.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.77.2...@times-components/article-in-depth@3.78.0) (2023-11-13)
+
+
+### Features
+
+* **TMG-1049:** Switch commenting links based on environment, region ([#3645](https://github.com/newsuk/times-components/issues/3645)) ([659aed4](https://github.com/newsuk/times-components/commit/659aed4a5dcc1feb58cf383d1b140b5134e1fa0f))
+
+
+
+
+
 ## [3.77.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.77.1...@times-components/article-in-depth@3.77.2) (2023-11-10)
 
 **Note:** Version bump only for package @times-components/article-in-depth

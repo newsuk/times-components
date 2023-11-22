@@ -9,7 +9,8 @@ const articlePropTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
-  navigationMode: PropTypes.shape({}).isRequired
+  navigationMode: PropTypes.shape({}).isRequired,
+  storefrontConfig: PropTypes.string.isRequired
 };
 
 const articleDefaultProps = {

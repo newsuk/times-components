@@ -38,6 +38,8 @@ export interface ArticleProps {
   headline: string;
   url: string;
   images?: ImageProps;
+  shortSummary?: string;
+  isSummaryEnabled?: boolean;
   tag?: {
     label: string;
     href: string;
@@ -53,6 +55,7 @@ export interface ArticleProps {
   isLeadImage?: boolean;
   imageRight?: boolean;
   isFullWidth?: boolean;
+  textBlockMarginBlockStart?: MQ<string> | string;
   titleTypographyPreset?: MQ<string> | string;
   tagAndFlagMarginBlockStart?: MQ<string> | string;
 }
@@ -77,8 +80,11 @@ export const Article = ({
     topBorderStyle = 'dashedDivider',
     hideImage,
     isLeadImage,
+    shortSummary,
+    isSummaryEnabled,
     imageRight,
     isFullWidth,
+    textBlockMarginBlockStart = 'space040',
     titleTypographyPreset = 'editorialHeadline020',
     tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
     expirableFlags,
@@ -98,7 +104,6 @@ export const Article = ({
     contentType ||
     hasVideo;
 
-  const marginBlockStart = imageRight || hideImage ? 'space000' : 'space040';
   const hasImage =
     images &&
     images.crops &&
@@ -179,7 +184,14 @@ export const Article = ({
             {image}
           </FullWidthGridLayoutItem>
         ) : (
-          <GridLayoutItem area="media" className="article-image">
+          <GridLayoutItem
+            area="media"
+            className="article-image"
+            marginBlockEnd={{
+              xs: 'space040',
+              lg: 'space030'
+            }}
+          >
             {image}
           </GridLayoutItem>
         )
@@ -191,6 +203,7 @@ export const Article = ({
           !hideImage && (
             <TextBlock
               marginBlockStart="space020"
+              marginBlockEnd="space040"
               stylePreset="inkSubtle"
               typographyPreset="editorialCaption010"
             >
@@ -204,7 +217,7 @@ export const Article = ({
             contentType={contentType}
             expirableFlags={expirableFlags}
             label={label}
-            marginBlockStart={marginBlockStart}
+            marginBlockEnd="space030"
           />
         )}
         <CardHeadlineLink
@@ -212,14 +225,32 @@ export const Article = ({
           href={url}
           role="link"
           overrides={{
-            typographyPreset: titleTypographyPreset,
-            marginBlockStart: hasArticleTileInfo ? 'space030' : marginBlockStart
+            typographyPreset: titleTypographyPreset
           }}
           external={false}
           onClick={onClick}
         >
           {headline}
         </CardHeadlineLink>
+        {isSummaryEnabled &&
+          shortSummary && (
+            <CardHeadlineLink href={url} external={false} onClick={onClick}>
+              <TextBlock
+                stylePreset={{
+                  xs: 'inkSubtle',
+                  md: 'inkBase'
+                }}
+                typographyPreset={{
+                  xs: 'editorialParagraph020',
+                  md: 'editorialParagraph010'
+                }}
+                marginBlockStart={textBlockMarginBlockStart}
+                as="p"
+              >
+                {shortSummary}
+              </TextBlock>
+            </CardHeadlineLink>
+          )}
         <TagAndFlag
           tag={tag}
           flag={flag}

@@ -6,7 +6,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
     class="css-niwyl0"
   >
     <div
-      class="article-image css-id8srm"
+      class="article-image css-jaciyh"
     >
       <a
         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -26,7 +26,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
       class="css-17cghxi"
     >
       <a
-        class="article-headline css-gqipuk"
+        class="article-headline css-4rb6a9"
         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
         role="link"
       >
@@ -59,7 +59,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
           </span>
         </a>
         <div
-          class="css-p44zak"
+          class="css-lew009"
         >
           <hr
             aria-hidden="true"
@@ -84,7 +84,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
     class="css-1nw1nne"
   >
     <div
-      class="article-image css-id8srm"
+      class="article-image css-jaciyh"
     >
       <a
         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -104,7 +104,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
       class="css-17cghxi"
     >
       <a
-        class="article-headline css-1ha0o2g"
+        class="article-headline css-4rb6a9"
         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
         role="link"
       >
@@ -137,7 +137,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
           </span>
         </a>
         <div
-          class="css-p44zak"
+          class="css-lew009"
         >
           <hr
             aria-hidden="true"

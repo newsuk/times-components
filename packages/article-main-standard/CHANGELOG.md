@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.82.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.82.8...@times-components/article-main-standard@3.82.9) (2023-11-22)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.82.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.82.7...@times-components/article-main-standard@3.82.8) (2023-11-21)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.82.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.82.6...@times-components/article-main-standard@3.82.7) (2023-11-20)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.82.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.82.5...@times-components/article-main-standard@3.82.6) (2023-11-20)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.82.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.82.4...@times-components/article-main-standard@3.82.5) (2023-11-20)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.82.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.82.3...@times-components/article-main-standard@3.82.4) (2023-11-17)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.82.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.82.2...@times-components/article-main-standard@3.82.3) (2023-11-16)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.82.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.82.1...@times-components/article-main-standard@3.82.2) (2023-11-16)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.82.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.82.0...@times-components/article-main-standard@3.82.1) (2023-11-15)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.82.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.81.2...@times-components/article-main-standard@3.82.0) (2023-11-13)
+
+
+### Features
+
+* **TMG-1049:** Switch commenting links based on environment, region ([#3645](https://github.com/newsuk/times-components/issues/3645)) ([659aed4](https://github.com/newsuk/times-components/commit/659aed4a5dcc1feb58cf383d1b140b5134e1fa0f))
+
+
+
+
+
 ## [3.81.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.81.1...@times-components/article-main-standard@3.81.2) (2023-11-10)
 
 **Note:** Version bump only for package @times-components/article-main-standard
