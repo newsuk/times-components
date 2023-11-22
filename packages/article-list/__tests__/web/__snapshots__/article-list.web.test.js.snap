@@ -25,7 +25,7 @@ exports[`1. article list 1`] = `
         <div>
           <Card
             imageRatio={1}
-            isLoading={false}
+            isLoading={true}
             showImage={true}
           />
         </div>
@@ -42,7 +42,7 @@ exports[`1. article list 1`] = `
         <div>
           <Card
             imageRatio={1}
-            isLoading={false}
+            isLoading={true}
             showImage={true}
           />
         </div>
@@ -59,7 +59,7 @@ exports[`1. article list 1`] = `
         <div>
           <Card
             imageRatio={1}
-            isLoading={false}
+            isLoading={true}
             showImage={true}
           />
         </div>
@@ -76,7 +76,7 @@ exports[`1. article list 1`] = `
         <div>
           <Card
             imageRatio={1}
-            isLoading={false}
+            isLoading={true}
             showImage={true}
           />
         </div>
@@ -93,7 +93,7 @@ exports[`1. article list 1`] = `
         <div>
           <Card
             imageRatio={1}
-            isLoading={false}
+            isLoading={true}
             showImage={true}
           />
         </div>
@@ -143,7 +143,7 @@ exports[`2. article list with no images 1`] = `
         <div>
           <Card
             imageRatio={1}
-            isLoading={false}
+            isLoading={true}
             showImage={false}
           />
         </div>
@@ -188,7 +188,7 @@ exports[`3. article list with missing image 1`] = `
         <div>
           <Card
             imageRatio={1}
-            isLoading={false}
+            isLoading={true}
             showImage={false}
           />
         </div>
