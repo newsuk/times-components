@@ -23,7 +23,7 @@ describe('Secondary Menu Desktop', () => {
   it('should render snapshot', () => {
     const { asFragment } = render(
       <SecondaryNavDesktop
-        data={mainMenuItems.L2NavItems}
+        data={mainMenuItems}
         options={options}
         clickHandler={mockClickHandler}
       />
@@ -73,17 +73,17 @@ describe('Secondary Menu Desktop', () => {
       />
     );
     const list = getAllByRole('listitem');
-    expect(list.length).toEqual(9);
+    expect(list.length).toEqual(10);
   });
   it('should change the width of menudivader when screen size change', () => {
-    const { getByTestId } = render(
+    const { getAllByTestId } = render(
       <SecondaryNavDesktop
         data={mainMenuItems}
         options={options}
         clickHandler={mockClickHandler}
       />
     );
-    const hr = getByTestId('divider');
-    expect(hr).toHaveStyle('width: 100%');
+    const hr = getAllByTestId('divider');
+    expect(hr[0]).toHaveStyle('width: 100%');
   });
 });

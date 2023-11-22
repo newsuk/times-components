@@ -42,7 +42,10 @@ describe('Secondary Menu', () => {
   it('should not highlight any titles when default index is not provided and slug is not found', () => {
     const { container } = render(
       <SecondaryNavigation
-        data={[mainMenuItems.L2NavItems[0], mainMenuItems.L2NavItems[1]]}
+        data={{
+          L2NavItems: mainMenuItems.L2NavItems,
+          L3NavItems: mainMenuItems.L3NavItems
+        }}
         pageSlug=""
         title=""
         stickyTop={0}
@@ -67,7 +70,10 @@ describe('Secondary Menu', () => {
   it('should highlight the correct title when default index is provided', () => {
     const { container } = render(
       <SecondaryNavigation
-        data={[mainMenuItems[0], mainMenuItems[1]]}
+        data={{
+          L2NavItems: mainMenuItems.L2NavItems,
+          L3NavItems: mainMenuItems.L3NavItems
+        }}
         pageSlug=""
         title=""
         stickyTop={0}

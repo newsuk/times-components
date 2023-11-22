@@ -26,7 +26,8 @@ describe('Create Menu', () => {
   const mockClickHandler = jest.fn();
 
   it('should render snapshot', async () => {
-    const initialStateForFirstUseStateCall = mainMenuItems.L2NavItems.length - 2;
+    const initialStateForFirstUseStateCall =
+      mainMenuItems.L2NavItems.length - 2;
     const initialStateForSecondUseStateCall = 2;
 
     await waitFor(
@@ -71,7 +72,8 @@ describe('Create Menu', () => {
     );
   });
   it('should expand on click', async () => {
-    const initialStateForFirstUseStateCall = mainMenuItems.L2NavItems.length - 2;
+    const initialStateForFirstUseStateCall =
+      mainMenuItems.L2NavItems.length - 2;
     const initialStateForSecondUseStateCall = 2;
 
     await waitFor(
@@ -98,7 +100,8 @@ describe('Create Menu', () => {
     expect(options.setIsExpanded).toHaveBeenCalled();
   });
   it('should render test Less', async () => {
-    const initialStateForFirstUseStateCall = mainMenuItems.L2NavItems.length - 2;
+    const initialStateForFirstUseStateCall =
+      mainMenuItems.L2NavItems.length - 2;
     const initialStateForSecondUseStateCall = 2;
 
     await waitFor(

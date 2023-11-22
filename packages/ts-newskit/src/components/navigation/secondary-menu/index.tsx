@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SecondaryNavDesktop } from './desktop';
 import { SecondaryNavMobile } from './mobile';
 import { Visible } from 'newskit';
-import { SecondaryMenuData, SecondaryMenuItem } from './types';
+import { SecondaryMenuData } from './types';
 import { SecondaryNavContainer } from './styles';
 
 interface SecondaryNavigationProps {
