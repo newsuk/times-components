@@ -17,7 +17,7 @@ export const HintButton: FC<HintButtonProps> = ({
       size="medium"
       onClick={onClick}
       overrides={{
-        stylePreset: `HintBtn`,
+        stylePreset: `buttonOutlinedSecondary`,
         typographyPreset: 'utilityButton020',
         minWidth: {
           xs: '167px',
