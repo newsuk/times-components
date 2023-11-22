@@ -3,7 +3,7 @@
 exports[`HintButton should render the HintButton component 1`] = `
 <DocumentFragment>
   <button
-    class="css-w1zbch"
+    class="css-1cndqxx"
     data-testid="button"
     type="button"
   >
