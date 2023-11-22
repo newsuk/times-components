@@ -138,7 +138,7 @@ stylePresets.HintBtn = {
 
 stylePresets.HowToPlay = {
   base: {
-    color: '{{colors.interactiveLink030}}',
+    color: '{{colors.interactiveLink010}}',
     borderRadius: '{{borders.borderRadiusDefault}}',
     borderStyle: 'solid',
     borderWidth: '{{borders.borderWidth000}}',
