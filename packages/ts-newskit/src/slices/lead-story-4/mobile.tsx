@@ -24,7 +24,7 @@ export const LeadStory4Mobile = ({
   article234
 }: LeadStory4Mobile) => {
   return (
-    <LeadStoryContainer>
+    <LeadStoryContainer marginBlockEnd="space000">
       <StackItem
         $width={{
           xs: '100%'
