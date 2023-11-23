@@ -1,10 +1,10 @@
 import React from 'react';
-import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
+import { SecondaryMenuOptions, ResponsiveSecondaryMenuItem } from '../types';
 import { MenuDividerDropdown, StyledMenuItemsDropdown } from '../styles';
 
 export const CreateMoreMenu: React.FC<{
   options: SecondaryMenuOptions;
-  data: SecondaryMenuItem[];
+  data: ResponsiveSecondaryMenuItem[];
   clickHandler: (title: string) => void;
 }> = ({ options, data, clickHandler }) => {
   const { handleSelect, isSelected, isExpanded, setIsExpanded } = options;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '../../../../utils/test-utils';
+import { renderComponent } from '../../../../utils';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { cleanup, fireEvent, waitFor } from '@testing-library/react';
@@ -27,12 +27,13 @@ describe('Create Menu', () => {
 
   it('should render snapshot', async () => {
     const { asFragment } = await waitFor(() =>
-      render(
+      renderComponent(
         <CreateMenu
           data={mainMenuItems}
           options={options}
           clickHandler={mockClickHandler}
-        />
+        />,
+        'xl'
       )
     );
     expect(asFragment()).toMatchSnapshot();
@@ -40,12 +41,13 @@ describe('Create Menu', () => {
 
   it('should expand on click', async () => {
     const { findByTestId } = await waitFor(() =>
-      render(
+      renderComponent(
         <CreateMenu
           data={mainMenuItems}
           options={options}
           clickHandler={mockClickHandler}
-        />
+        />,
+        'xl'
       )
     );
 
@@ -54,14 +56,16 @@ describe('Create Menu', () => {
     fireEvent.click(buttonText);
     expect(options.setIsExpanded).toHaveBeenCalled();
   });
+
   it('should render test Less', async () => {
     const { findByTestId } = await waitFor(() =>
-      render(
+      renderComponent(
         <CreateMenu
           data={mainMenuItems}
           options={{ ...options, isExpanded: true }}
           clickHandler={mockClickHandler}
-        />
+        />,
+        'xl'
       )
     );
 
