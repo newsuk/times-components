@@ -7,7 +7,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1vys7si"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/home"
     >
@@ -23,7 +23,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1vys7si"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/news"
     >
@@ -39,7 +39,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1vys7si"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/comment"
     >
@@ -55,7 +55,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1vys7si"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/life-and-style"
     >
@@ -71,7 +71,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1vys7si"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/arts-and-books"
     >
@@ -87,7 +87,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1vys7si"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/sport"
     >
@@ -103,7 +103,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1vys7si"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/business-and-money"
     >
@@ -119,7 +119,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1vys7si"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/puzzles"
     >
@@ -135,7 +135,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1vys7si"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/magazines"
     >
