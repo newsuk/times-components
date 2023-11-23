@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.17.31](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.17.30...@times-components/article-list@9.17.31) (2023-11-23)
+
+
+### Bug Fixes
+
+* **TMRX-1613:** fix content flickers on page load ([#3658](https://github.com/newsuk/times-components/issues/3658)) ([108eb2c](https://github.com/newsuk/times-components/commit/108eb2c03ffb3cbc481653bb1298cd71f0dbb6f8))
+
+
+
+
+
 ## [9.17.30](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.17.29...@times-components/article-list@9.17.30) (2023-11-08)
 
 **Note:** Version bump only for package @times-components/article-list
