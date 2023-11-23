@@ -138,6 +138,10 @@ class ArticleList extends Component {
                 return <ArticleListItemSeparator />;
               };
 
+              const highResSize = ArticleList.getImageSize(
+                observed.get(elementId)
+              );
+
               return (
                 <Fragment key={elementId}>
                   <div
@@ -154,12 +158,12 @@ class ArticleList extends Component {
                             <ArticleListItem
                               article={item.isLoading ? null : item}
                               fadeImageIn={clientHasRendered}
-                              highResSize={ArticleList.getImageSize(
-                                observed.get(elementId)
-                              )}
+                              highResSize={highResSize}
                               imageRatio={imageRatio}
                               index={index}
-                              isLoading={item.isLoading === true}
+                              isLoading={
+                                item.isLoading === true || !highResSize
+                              }
                               length={data.length}
                               lowResQuality={3}
                               lowResSize={200}
