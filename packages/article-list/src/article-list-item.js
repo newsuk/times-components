@@ -48,7 +48,7 @@ const ArticleListItem = props => {
   const imageUri = getImageUri(article);
   const imageAccessibilityLabel = (leadAsset && leadAsset.caption) || "";
 
-  if (isLoading) {
+  if (isLoading || !highResSize) {
     return (
       <ListItemWrapper>
         <Card
