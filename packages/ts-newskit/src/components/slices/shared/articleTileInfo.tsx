@@ -111,7 +111,6 @@ export const ArticleTileInfo = ({
                     style={{ verticalAlign: 'top', marginRight: '4px' }}
                   />
                 }
-                alignFlex={false}
               />
             </TileWrapper>
           )}

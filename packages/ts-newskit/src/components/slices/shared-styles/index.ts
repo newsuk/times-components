@@ -116,20 +116,11 @@ export const StyledBlock = styled(Block)`
   ${getSpacingCssFromTheme('row-gap', 'space020')};
 `;
 
-export const Wrapper = styled.span<{ alignFlex: boolean }>`
-  ${({ alignFlex }) => alignFlex && 'display: flex'};
-  ${({ alignFlex }) => alignFlex && 'align-items: center'};
-  ${({ alignFlex }) => alignFlex && getSpacingCssFromTheme('gap', 'space010')};
-  ${({ alignFlex }) => !alignFlex && 'vertical-align: baseline'};
-  ${({ alignFlex }) => !alignFlex && 'line-height: 24px'};
-`;
-
 export const Container = styled.div`
   display: block;
 `;
 
 export const TileSpanContainer = styled.span<{ isVideoIcon?: boolean }>`
-  word-break: break-word;
   ${({ isVideoIcon }) => isVideoIcon && 'vertical-align: baseline'};
   ${({ isVideoIcon }) => isVideoIcon && 'line-height: 24px'};
   :last-child > div {
