@@ -80,6 +80,135 @@ exports[`1. a full article 1`] = `
     >
       Some Standfirst
     </h2>
+    <a
+      href="https://www.thetimes.co.uk/puzzles"
+    >
+      <span />
+    </a>
+    <h3>
+      Puzzles
+    </h3>
+    <button
+      data-testid="button"
+      size="small"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="f26c9aa2fd65f549f7f5798bc90c1b94"
+        />
+        <path
+          d="208715844db1b1ae81587a9ce6a18dd3"
+        />
+      </svg>
+    </button>
+    <p>
+      Challenge yourself with today’s puzzles.
+    </p>
+    <hr
+      aria-hidden={true}
+      data-testid="divider"
+    />
+    <picture>
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="938534685771475d3929e67980a1d16c"
+        />
+        <path
+          d="5ea3dd8c80ddfdd1cb837e1cbc3c0123"
+        />
+      </svg>
+      <img
+        alt="Puzzle thumbnail"
+        src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+        width="40px"
+      />
+    </picture>
+    <a
+      href="https://www.thetimes.co.uk/puzzles/crossword"
+    >
+      <span />
+    </a>
+    <p>
+      Crossword
+    </p>
+    <hr
+      aria-hidden={true}
+      data-testid="divider"
+    />
+    <picture>
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="938534685771475d3929e67980a1d16c"
+        />
+        <path
+          d="5ea3dd8c80ddfdd1cb837e1cbc3c0123"
+        />
+      </svg>
+      <img
+        alt="Puzzle thumbnail"
+        src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+        width="40px"
+      />
+    </picture>
+    <a
+      href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+    >
+      <span />
+    </a>
+    <p>
+      Polygon
+    </p>
+    <hr
+      aria-hidden={true}
+      data-testid="divider"
+    />
+    <picture>
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="938534685771475d3929e67980a1d16c"
+        />
+        <path
+          d="5ea3dd8c80ddfdd1cb837e1cbc3c0123"
+        />
+      </svg>
+      <img
+        alt="Puzzle thumbnail"
+        src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+        width="40px"
+      />
+    </picture>
+    <a
+      href="https://www.thetimes.co.uk/puzzles/sudoku"
+    >
+      <span />
+    </a>
+    <p>
+      Sudoku
+    </p>
+    <hr
+      aria-hidden={true}
+      data-testid="divider"
+    />
     <figure>
       <img
         alt="Some Caption"
