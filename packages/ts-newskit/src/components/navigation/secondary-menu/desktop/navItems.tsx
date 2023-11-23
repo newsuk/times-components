@@ -1,10 +1,10 @@
 import React from 'react';
-import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
+import { SecondaryMenuOptions, ResponsiveSecondaryMenuItem } from '../types';
 import { StyledMenuItemsDesktop } from '../styles';
 
 export const NavItems: React.FC<{
   options: SecondaryMenuOptions;
-  data: SecondaryMenuItem[];
+  data: ResponsiveSecondaryMenuItem[];
   clickHandler: (title: string) => void;
 }> = ({ options, data, clickHandler }) => {
   const { handleSelect, isSelected } = options;

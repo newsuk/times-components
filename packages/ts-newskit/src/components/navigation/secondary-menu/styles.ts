@@ -79,9 +79,9 @@ export const StyledMenuSub = styled(MenuSub)<{
 `;
 
 export const StyledMenuItemsDesktop = styled(MenuItem)<{
-  $hideMD: boolean;
-  $hideLG: boolean;
-  $hideXL: boolean;
+  $hideMD?: boolean;
+  $hideLG?: boolean;
+  $hideXL?: boolean;
 }>`
   min-width: max-content;
 
