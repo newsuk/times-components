@@ -32,7 +32,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c24 {
+.c25 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -43,13 +43,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c24:first-of-type:after {
+.c25:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c27 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -68,7 +68,7 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c20 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -88,34 +88,6 @@ exports[`full article with style 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c30 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -144,11 +116,39 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c32 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c26 {
+.c27 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -169,7 +169,7 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
-.c25 {
+.c26 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -188,7 +188,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c21 {
+.c22 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -202,11 +202,11 @@ exports[`full article with style 1`] = `
   min-height: 210px;
 }
 
-.c21.hidden {
+.c22.hidden {
   visibility: hidden;
 }
 
-.c22 {
+.c23 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -218,13 +218,13 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
 }
 
-.c23 {
+.c24 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
-.c28 {
+.c29 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -233,7 +233,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c29 {
+.c30 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -273,58 +273,58 @@ exports[`full article with style 1`] = `
   z-index: 0;
 }
 
-.c2 > .c15 {
+.c2 > .c16 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c19 {
+.c20 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c18 {
+.c19 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c18 [data-tc-sticky-sizer] {
+.c19 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c18.tc-sticky {
+.c19.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR] {
+.c19[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c19[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: #ffffffdb;
 }
 
-.c17 {
+.c18 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c17 + .c16 {
+.c18 + .c17 {
   margin-top: -1px !important;
 }
 
-.c17:last-child {
+.c18:last-child {
   margin-bottom: 30px;
 }
 
-.c17.contains-tc-sticky {
+.c18.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
@@ -535,10 +535,19 @@ exports[`full article with style 1`] = `
   text-align: center;
 }
 
-.c14 {
+.c15 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+}
+
+.c14 {
+  padding-left: 20px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 100%;
+  display: none;
 }
 
 .c0 {
@@ -575,7 +584,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -585,62 +594,62 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c24 {
+  .c25 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c28 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c31 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c31 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c32 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c32 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c27 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c20 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c20 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c30 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c30 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c31 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c31 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c26 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -652,7 +661,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c26 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -661,47 +670,47 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c26 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c23 {
+  .c24 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c23:first-of-type {
+  .c24:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c23:last-child {
+  .c24:last-child {
     margin-left: 1.5%;
   }
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c29 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c28 {
+  .c29 {
     min-height: 283px;
   }
 }
@@ -714,19 +723,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c17 {
+  .c18 {
     width: 56.2%;
   }
 }
@@ -819,16 +828,32 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c15 {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width:1024px) {
-  .c14 {
+  .c15 {
     width: 56.2%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c14 {
+    display: block;
+    width: 19.8333%;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width:1320px) {
+  .c14 {
+    display: block;
+    width: 17.8333%;
+    padding-right: 75px;
   }
 }
 
@@ -946,7 +971,205 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c14 c5"
+          className="c14"
+        >
+          <div
+            className="css-s123ud"
+          >
+            <div
+              className="css-13byt3y"
+            >
+              <div
+                className="css-13byt3y"
+              >
+                <div
+                  className="css-1482yt8"
+                >
+                  <a
+                    className="css-xm00pa"
+                  >
+                    <span
+                      className="css-pqzzby"
+                    />
+                  </a>
+                  <div
+                    className="css-1bq9n3y"
+                  >
+                    <h3
+                      className="css-eqardm"
+                    >
+                      Puzzles
+                    </h3>
+                    <button
+                      className="css-1x6q5yj"
+                    >
+                      <svg
+                        className="css-3rbz36"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p
+                  className="css-4g5gt6"
+                >
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+          </div>
+        </div>
+        <div
+          className="c15 c5"
           marginBottom="20px"
         >
           <figure
@@ -988,14 +1211,14 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <div
-          className="c15 c16 c17"
+          className="c16 c17 c18"
         >
           <div
             display="none"
           />
           <div>
             <div
-              className="c18"
+              className="c19"
             >
               <div>
                 <SaveAndShareBar />
@@ -1005,12 +1228,12 @@ exports[`full article with style 1`] = `
         </div>
       </div>
       <article
-        className="c19"
+        className="c20"
       >
         <div>
           <div>
             <div
-              className="c20"
+              className="c21"
             >
               <ArticleImage />
             </div>
@@ -1020,30 +1243,30 @@ exports[`full article with style 1`] = `
           Some Link
         </Link>
         <div
-          className="group-3 hidden c21"
+          className="group-3 hidden c22"
         >
           <h2
-            className="c22"
+            className="c23"
           >
             Sponsored
           </h2>
           <div
-            className="c23"
+            className="c24"
           />
           <div
-            className="c23"
+            className="c24"
           />
         </div>
         <p
-          className="c24"
+          className="c25"
         >
           Some content
         </p>
         <div
-          className="c25"
+          className="c26"
         >
           <div
-            className="c26"
+            className="c27"
           >
             <PullQuote>
               The pull quote content
@@ -1051,7 +1274,7 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c20"
+          className="c21"
         >
           <figure
             margin={0}
@@ -1088,7 +1311,7 @@ exports[`full article with style 1`] = `
             </div>
             <figcaption>
               <div
-                className="c27"
+                className="c28"
               >
                 <Caption />
               </div>
@@ -1096,10 +1319,10 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <div
-          className="c28"
+          className="c29"
         >
           <h2
-            className="c29"
+            className="c30"
           >
             Advertisement
           </h2>
@@ -1108,7 +1331,7 @@ exports[`full article with style 1`] = `
         <div>
           <div>
             <div
-              className="c30"
+              className="c31"
             >
               <ArticleImage />
             </div>
@@ -1117,7 +1340,7 @@ exports[`full article with style 1`] = `
         <div>
           <div>
             <div
-              className="c31"
+              className="c32"
             >
               <ArticleImage />
             </div>
@@ -1166,7 +1389,7 @@ exports[`full article with style in the culture magazine 1`] = `
   overflow-wrap: break-word;
 }
 
-.c24 {
+.c25 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -1177,13 +1400,13 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-left: 10px;
 }
 
-.c24:first-of-type:after {
+.c25:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c27 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1202,7 +1425,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-left: 10px;
 }
 
-.c20 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1222,34 +1445,6 @@ exports[`full article with style in the culture magazine 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c30 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -1278,11 +1473,39 @@ exports[`full article with style in the culture magazine 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c32 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c26 {
+.c27 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1303,7 +1526,7 @@ exports[`full article with style in the culture magazine 1`] = `
   margin-bottom: 10px;
 }
 
-.c25 {
+.c26 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1322,7 +1545,7 @@ exports[`full article with style in the culture magazine 1`] = `
   display: block;
 }
 
-.c21 {
+.c22 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1336,11 +1559,11 @@ exports[`full article with style in the culture magazine 1`] = `
   min-height: 210px;
 }
 
-.c21.hidden {
+.c22.hidden {
   visibility: hidden;
 }
 
-.c22 {
+.c23 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -1352,13 +1575,13 @@ exports[`full article with style in the culture magazine 1`] = `
   text-transform: uppercase;
 }
 
-.c23 {
+.c24 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
-.c28 {
+.c29 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -1367,7 +1590,7 @@ exports[`full article with style in the culture magazine 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c29 {
+.c30 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -1407,58 +1630,58 @@ exports[`full article with style in the culture magazine 1`] = `
   z-index: 0;
 }
 
-.c2 > .c15 {
+.c2 > .c16 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c19 {
+.c20 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c18 {
+.c19 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c18 [data-tc-sticky-sizer] {
+.c19 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c18.tc-sticky {
+.c19.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR] {
+.c19[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c19[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: #ffffffdb;
 }
 
-.c17 {
+.c18 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c17 + .c16 {
+.c18 + .c17 {
   margin-top: -1px !important;
 }
 
-.c17:last-child {
+.c18:last-child {
   margin-bottom: 30px;
 }
 
-.c17.contains-tc-sticky {
+.c18.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
@@ -1670,10 +1893,19 @@ exports[`full article with style in the culture magazine 1`] = `
   text-align: center;
 }
 
-.c14 {
+.c15 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+}
+
+.c14 {
+  padding-left: 20px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 100%;
+  display: none;
 }
 
 .c0 {
@@ -1710,7 +1942,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -1720,62 +1952,62 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c24 {
+  .c25 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c28 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c31 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c31 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c32 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c32 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c27 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c20 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c20 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c30 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c30 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c31 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c31 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c26 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -1787,7 +2019,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c26 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -1796,47 +2028,47 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c26 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c23 {
+  .c24 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c23:first-of-type {
+  .c24:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c23:last-child {
+  .c24:last-child {
     margin-left: 1.5%;
   }
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c29 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c28 {
+  .c29 {
     min-height: 283px;
   }
 }
@@ -1849,19 +2081,19 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c17 {
+  .c18 {
     width: 56.2%;
   }
 }
@@ -1954,16 +2186,32 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c15 {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width:1024px) {
-  .c14 {
+  .c15 {
     width: 56.2%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c14 {
+    display: block;
+    width: 19.8333%;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width:1320px) {
+  .c14 {
+    display: block;
+    width: 17.8333%;
+    padding-right: 75px;
   }
 }
 
@@ -2081,7 +2329,205 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
         <div
-          className="c14 c5"
+          className="c14"
+        >
+          <div
+            className="css-s123ud"
+          >
+            <div
+              className="css-13byt3y"
+            >
+              <div
+                className="css-13byt3y"
+              >
+                <div
+                  className="css-1482yt8"
+                >
+                  <a
+                    className="css-xm00pa"
+                  >
+                    <span
+                      className="css-pqzzby"
+                    />
+                  </a>
+                  <div
+                    className="css-1bq9n3y"
+                  >
+                    <h3
+                      className="css-eqardm"
+                    >
+                      Puzzles
+                    </h3>
+                    <button
+                      className="css-1x6q5yj"
+                    >
+                      <svg
+                        className="css-3rbz36"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p
+                  className="css-4g5gt6"
+                >
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+          </div>
+        </div>
+        <div
+          className="c15 c5"
           marginBottom="20px"
         >
           <figure
@@ -2123,14 +2569,14 @@ exports[`full article with style in the culture magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c15 c16 c17"
+          className="c16 c17 c18"
         >
           <div
             display="none"
           />
           <div>
             <div
-              className="c18"
+              className="c19"
             >
               <div>
                 <SaveAndShareBar />
@@ -2140,12 +2586,12 @@ exports[`full article with style in the culture magazine 1`] = `
         </div>
       </div>
       <article
-        className="c19"
+        className="c20"
       >
         <div>
           <div>
             <div
-              className="c20"
+              className="c21"
             >
               <ArticleImage />
             </div>
@@ -2155,30 +2601,30 @@ exports[`full article with style in the culture magazine 1`] = `
           Some Link
         </Link>
         <div
-          className="group-3 hidden c21"
+          className="group-3 hidden c22"
         >
           <h2
-            className="c22"
+            className="c23"
           >
             Sponsored
           </h2>
           <div
-            className="c23"
+            className="c24"
           />
           <div
-            className="c23"
+            className="c24"
           />
         </div>
         <p
-          className="c24"
+          className="c25"
         >
           Some content
         </p>
         <div
-          className="c25"
+          className="c26"
         >
           <div
-            className="c26"
+            className="c27"
           >
             <PullQuote>
               The pull quote content
@@ -2186,7 +2632,7 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
         <div
-          className="c20"
+          className="c21"
         >
           <figure
             margin={0}
@@ -2223,7 +2669,7 @@ exports[`full article with style in the culture magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c27"
+                className="c28"
               >
                 <Caption />
               </div>
@@ -2231,10 +2677,10 @@ exports[`full article with style in the culture magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c28"
+          className="c29"
         >
           <h2
-            className="c29"
+            className="c30"
           >
             Advertisement
           </h2>
@@ -2243,7 +2689,7 @@ exports[`full article with style in the culture magazine 1`] = `
         <div>
           <div>
             <div
-              className="c30"
+              className="c31"
             >
               <ArticleImage />
             </div>
@@ -2252,7 +2698,7 @@ exports[`full article with style in the culture magazine 1`] = `
         <div>
           <div>
             <div
-              className="c31"
+              className="c32"
             >
               <ArticleImage />
             </div>
@@ -2301,7 +2747,7 @@ exports[`full article with style in the style magazine 1`] = `
   overflow-wrap: break-word;
 }
 
-.c24 {
+.c25 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -2312,13 +2758,13 @@ exports[`full article with style in the style magazine 1`] = `
   padding-left: 10px;
 }
 
-.c24:first-of-type:after {
+.c25:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c27 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2337,7 +2783,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-left: 10px;
 }
 
-.c20 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2357,34 +2803,6 @@ exports[`full article with style in the style magazine 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c30 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -2413,11 +2831,39 @@ exports[`full article with style in the style magazine 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c32 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c26 {
+.c27 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2438,7 +2884,7 @@ exports[`full article with style in the style magazine 1`] = `
   margin-bottom: 10px;
 }
 
-.c25 {
+.c26 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2457,7 +2903,7 @@ exports[`full article with style in the style magazine 1`] = `
   display: block;
 }
 
-.c21 {
+.c22 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2471,11 +2917,11 @@ exports[`full article with style in the style magazine 1`] = `
   min-height: 210px;
 }
 
-.c21.hidden {
+.c22.hidden {
   visibility: hidden;
 }
 
-.c22 {
+.c23 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -2487,13 +2933,13 @@ exports[`full article with style in the style magazine 1`] = `
   text-transform: uppercase;
 }
 
-.c23 {
+.c24 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
-.c28 {
+.c29 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -2502,7 +2948,7 @@ exports[`full article with style in the style magazine 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c29 {
+.c30 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -2542,58 +2988,58 @@ exports[`full article with style in the style magazine 1`] = `
   z-index: 0;
 }
 
-.c2 > .c15 {
+.c2 > .c16 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c19 {
+.c20 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c18 {
+.c19 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c18 [data-tc-sticky-sizer] {
+.c19 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c18.tc-sticky {
+.c19.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR] {
+.c19[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c19[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: #ffffffdb;
 }
 
-.c17 {
+.c18 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c17 + .c16 {
+.c18 + .c17 {
   margin-top: -1px !important;
 }
 
-.c17:last-child {
+.c18:last-child {
   margin-bottom: 30px;
 }
 
-.c17.contains-tc-sticky {
+.c18.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
@@ -2806,10 +3252,19 @@ exports[`full article with style in the style magazine 1`] = `
   text-align: center;
 }
 
-.c14 {
+.c15 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+}
+
+.c14 {
+  padding-left: 20px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 100%;
+  display: none;
 }
 
 .c0 {
@@ -2846,7 +3301,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -2856,62 +3311,62 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c24 {
+  .c25 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c28 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c31 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c31 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c32 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c32 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c27 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c20 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c20 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c30 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c30 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c31 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c31 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c26 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -2923,7 +3378,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c26 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -2932,47 +3387,47 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c26 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c23 {
+  .c24 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c23:first-of-type {
+  .c24:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c23:last-child {
+  .c24:last-child {
     margin-left: 1.5%;
   }
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c29 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c28 {
+  .c29 {
     min-height: 283px;
   }
 }
@@ -2985,19 +3440,19 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c17 {
+  .c18 {
     width: 56.2%;
   }
 }
@@ -3090,16 +3545,32 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c15 {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width:1024px) {
-  .c14 {
+  .c15 {
     width: 56.2%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c14 {
+    display: block;
+    width: 19.8333%;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width:1320px) {
+  .c14 {
+    display: block;
+    width: 17.8333%;
+    padding-right: 75px;
   }
 }
 
@@ -3217,7 +3688,205 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
         <div
-          className="c14 c5"
+          className="c14"
+        >
+          <div
+            className="css-s123ud"
+          >
+            <div
+              className="css-13byt3y"
+            >
+              <div
+                className="css-13byt3y"
+              >
+                <div
+                  className="css-1482yt8"
+                >
+                  <a
+                    className="css-xm00pa"
+                  >
+                    <span
+                      className="css-pqzzby"
+                    />
+                  </a>
+                  <div
+                    className="css-1bq9n3y"
+                  >
+                    <h3
+                      className="css-eqardm"
+                    >
+                      Puzzles
+                    </h3>
+                    <button
+                      className="css-1x6q5yj"
+                    >
+                      <svg
+                        className="css-3rbz36"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p
+                  className="css-4g5gt6"
+                >
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+          </div>
+        </div>
+        <div
+          className="c15 c5"
           marginBottom="20px"
         >
           <figure
@@ -3259,14 +3928,14 @@ exports[`full article with style in the style magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c15 c16 c17"
+          className="c16 c17 c18"
         >
           <div
             display="none"
           />
           <div>
             <div
-              className="c18"
+              className="c19"
             >
               <div>
                 <SaveAndShareBar />
@@ -3276,12 +3945,12 @@ exports[`full article with style in the style magazine 1`] = `
         </div>
       </div>
       <article
-        className="c19"
+        className="c20"
       >
         <div>
           <div>
             <div
-              className="c20"
+              className="c21"
             >
               <ArticleImage />
             </div>
@@ -3291,30 +3960,30 @@ exports[`full article with style in the style magazine 1`] = `
           Some Link
         </Link>
         <div
-          className="group-3 hidden c21"
+          className="group-3 hidden c22"
         >
           <h2
-            className="c22"
+            className="c23"
           >
             Sponsored
           </h2>
           <div
-            className="c23"
+            className="c24"
           />
           <div
-            className="c23"
+            className="c24"
           />
         </div>
         <p
-          className="c24"
+          className="c25"
         >
           Some content
         </p>
         <div
-          className="c25"
+          className="c26"
         >
           <div
-            className="c26"
+            className="c27"
           >
             <PullQuote>
               The pull quote content
@@ -3322,7 +3991,7 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
         <div
-          className="c20"
+          className="c21"
         >
           <figure
             margin={0}
@@ -3359,7 +4028,7 @@ exports[`full article with style in the style magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c27"
+                className="c28"
               >
                 <Caption />
               </div>
@@ -3367,10 +4036,10 @@ exports[`full article with style in the style magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c28"
+          className="c29"
         >
           <h2
-            className="c29"
+            className="c30"
           >
             Advertisement
           </h2>
@@ -3379,7 +4048,7 @@ exports[`full article with style in the style magazine 1`] = `
         <div>
           <div>
             <div
-              className="c30"
+              className="c31"
             >
               <ArticleImage />
             </div>
@@ -3388,7 +4057,7 @@ exports[`full article with style in the style magazine 1`] = `
         <div>
           <div>
             <div
-              className="c31"
+              className="c32"
             >
               <ArticleImage />
             </div>
@@ -3437,7 +4106,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   overflow-wrap: break-word;
 }
 
-.c24 {
+.c25 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -3448,13 +4117,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-left: 10px;
 }
 
-.c24:first-of-type:after {
+.c25:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c27 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3473,7 +4142,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-left: 10px;
 }
 
-.c20 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3493,34 +4162,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c30 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -3549,11 +4190,39 @@ exports[`full article with style in the sunday times magazine 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c32 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c26 {
+.c27 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3574,7 +4243,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   margin-bottom: 10px;
 }
 
-.c25 {
+.c26 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3593,7 +4262,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   display: block;
 }
 
-.c21 {
+.c22 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3607,11 +4276,11 @@ exports[`full article with style in the sunday times magazine 1`] = `
   min-height: 210px;
 }
 
-.c21.hidden {
+.c22.hidden {
   visibility: hidden;
 }
 
-.c22 {
+.c23 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -3623,13 +4292,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
   text-transform: uppercase;
 }
 
-.c23 {
+.c24 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
-.c28 {
+.c29 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -3638,7 +4307,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c29 {
+.c30 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -3678,58 +4347,58 @@ exports[`full article with style in the sunday times magazine 1`] = `
   z-index: 0;
 }
 
-.c2 > .c15 {
+.c2 > .c16 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c19 {
+.c20 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c18 {
+.c19 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c18 [data-tc-sticky-sizer] {
+.c19 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c18.tc-sticky {
+.c19.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR] {
+.c19[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c19[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: #ffffffdb;
 }
 
-.c17 {
+.c18 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c17 + .c16 {
+.c18 + .c17 {
   margin-top: -1px !important;
 }
 
-.c17:last-child {
+.c18:last-child {
   margin-bottom: 30px;
 }
 
-.c17.contains-tc-sticky {
+.c18.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
@@ -3941,10 +4610,19 @@ exports[`full article with style in the sunday times magazine 1`] = `
   text-align: center;
 }
 
-.c14 {
+.c15 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+}
+
+.c14 {
+  padding-left: 20px;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 100%;
+  display: none;
 }
 
 .c0 {
@@ -3981,7 +4659,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -3991,62 +4669,62 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c24 {
+  .c25 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c28 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c31 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c31 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c32 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c32 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c27 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c20 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c20 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c30 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c30 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c31 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c31 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c26 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -4058,7 +4736,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c26 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -4067,47 +4745,47 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c26 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c23 {
+  .c24 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c23:first-of-type {
+  .c24:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c23:last-child {
+  .c24:last-child {
     margin-left: 1.5%;
   }
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c29 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c28 {
+  .c29 {
     min-height: 283px;
   }
 }
@@ -4120,19 +4798,19 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c17 {
+  .c18 {
     width: 56.2%;
   }
 }
@@ -4225,16 +4903,32 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c15 {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width:1024px) {
-  .c14 {
+  .c15 {
     width: 56.2%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c14 {
+    display: block;
+    width: 19.8333%;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width:1320px) {
+  .c14 {
+    display: block;
+    width: 17.8333%;
+    padding-right: 75px;
   }
 }
 
@@ -4352,7 +5046,205 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
         <div
-          className="c14 c5"
+          className="c14"
+        >
+          <div
+            className="css-s123ud"
+          >
+            <div
+              className="css-13byt3y"
+            >
+              <div
+                className="css-13byt3y"
+              >
+                <div
+                  className="css-1482yt8"
+                >
+                  <a
+                    className="css-xm00pa"
+                  >
+                    <span
+                      className="css-pqzzby"
+                    />
+                  </a>
+                  <div
+                    className="css-1bq9n3y"
+                  >
+                    <h3
+                      className="css-eqardm"
+                    >
+                      Puzzles
+                    </h3>
+                    <button
+                      className="css-1x6q5yj"
+                    >
+                      <svg
+                        className="css-3rbz36"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p
+                  className="css-4g5gt6"
+                >
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1t6p58q"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+          </div>
+        </div>
+        <div
+          className="c15 c5"
           marginBottom="20px"
         >
           <figure
@@ -4394,14 +5286,14 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c15 c16 c17"
+          className="c16 c17 c18"
         >
           <div
             display="none"
           />
           <div>
             <div
-              className="c18"
+              className="c19"
             >
               <div>
                 <SaveAndShareBar />
@@ -4411,12 +5303,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
         </div>
       </div>
       <article
-        className="c19"
+        className="c20"
       >
         <div>
           <div>
             <div
-              className="c20"
+              className="c21"
             >
               <ArticleImage />
             </div>
@@ -4426,30 +5318,30 @@ exports[`full article with style in the sunday times magazine 1`] = `
           Some Link
         </Link>
         <div
-          className="group-3 hidden c21"
+          className="group-3 hidden c22"
         >
           <h2
-            className="c22"
+            className="c23"
           >
             Sponsored
           </h2>
           <div
-            className="c23"
+            className="c24"
           />
           <div
-            className="c23"
+            className="c24"
           />
         </div>
         <p
-          className="c24"
+          className="c25"
         >
           Some content
         </p>
         <div
-          className="c25"
+          className="c26"
         >
           <div
-            className="c26"
+            className="c27"
           >
             <PullQuote>
               The pull quote content
@@ -4457,7 +5349,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
         <div
-          className="c20"
+          className="c21"
         >
           <figure
             margin={0}
@@ -4494,7 +5386,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c27"
+                className="c28"
               >
                 <Caption />
               </div>
@@ -4502,10 +5394,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c28"
+          className="c29"
         >
           <h2
-            className="c29"
+            className="c30"
           >
             Advertisement
           </h2>
@@ -4514,7 +5406,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <div>
           <div>
             <div
-              className="c30"
+              className="c31"
             >
               <ArticleImage />
             </div>
@@ -4523,7 +5415,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <div>
           <div>
             <div
-              className="c31"
+              className="c32"
             >
               <ArticleImage />
             </div>
