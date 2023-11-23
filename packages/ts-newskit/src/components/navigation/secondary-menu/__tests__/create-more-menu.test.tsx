@@ -1,10 +1,11 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
-import { fireEvent } from '@testing-library/react';
 import { CreateMoreMenu } from '../desktop/create-more-menu';
 import { BreakpointKeys } from 'newskit';
 import { renderComponent } from '../../../../utils';
+import { fireEvent } from '../../../../utils/test-utils';
+import { SecondaryMenuItem } from '../types';
 
 const options = {
   handleSelect: jest.fn(),
@@ -15,10 +16,13 @@ const options = {
 
 const mockClickHandler = jest.fn();
 
-const renderMoreMenu = (size: BreakpointKeys = 'xl') =>
+const renderMoreMenu = (
+  menuItems: SecondaryMenuItem[] = mainMenuItems,
+  size: BreakpointKeys = 'xl'
+) =>
   renderComponent(
     <CreateMoreMenu
-      data={mainMenuItems}
+      data={menuItems}
       options={options}
       clickHandler={mockClickHandler}
     />,
@@ -26,11 +30,11 @@ const renderMoreMenu = (size: BreakpointKeys = 'xl') =>
   );
 
 describe('Create More Menu', () => {
-  // afterEach(() => {
-  //   jest.clearAllMocks();
-  //   jest.resetAllMocks();
-  //   jest.restoreAllMocks();
-  // });
+  afterEach(() => {
+    jest.clearAllMocks();
+    jest.resetAllMocks();
+    jest.restoreAllMocks();
+  });
 
   it('should render snapshot', () => {
     const { asFragment } = renderMoreMenu();
@@ -39,7 +43,7 @@ describe('Create More Menu', () => {
   it('should render the menu item', () => {
     const { getByText } = renderMoreMenu();
     const title = getByText('Puzzles');
-    expect(title).toBeInTheDocument();
+    expect(title).not.toBeVisible();
   });
   it('items should have ancher with href', () => {
     const { getAllByTestId } = renderMoreMenu();
@@ -53,51 +57,33 @@ describe('Create More Menu', () => {
     expect(options.handleSelect).toHaveBeenCalled();
     expect(options.setIsExpanded).toHaveBeenCalled();
   });
-  // it('no items should be visible when xl breakpoint', () => {
-  //   const { getAllByRole } = renderMoreMenu();
-  //   const list = getAllByRole('listitem');
-  //   expect(list[0]).toBeVisible();
-  //   expect(list[1]).toBeVisible();
-  //   expect(list[2]).toBeVisible();
-  //   expect(list[3]).toBeVisible();
-  //   expect(list[4]).toBeVisible();
-  //   expect(list[5]).toBeVisible();
-  //   expect(list[6]).toBeVisible();
-  //   expect(list[7]).toBeVisible();
-  //   expect(list[8]).toBeVisible();
-  // });
-  // it('2 items should be visible when lg breakpoint', () => {
-  //   const { getAllByRole } = renderMoreMenu('lg');
-  //   const list = getAllByRole('listitem');
-  //   expect(list[0]).toBeVisible();
-  //   expect(list[1]).toBeVisible();
-  //   expect(list[2]).toBeVisible();
-  //   expect(list[3]).toBeVisible();
-  //   expect(list[4]).toBeVisible();
-  //   expect(list[5]).toBeVisible();
-  //   expect(list[6]).toBeVisible();
-  //   expect(list[7]).toBeVisible();
-  //   expect(list[8]).toBeVisible();
-  // });
-  it('4 items should be visible when md breakpoint', () => {
-    // renderMoreMenu('sm');
-    const { getAllByRole } = renderMoreMenu('md');
-    // Object.defineProperty(window, 'innerWidth', {
-    //   configurable: true,
-    //   value: 1000,
-    //   writable: true,
-    // })
 
-    const list = getAllByRole('listitem');
-    console.log('======  window.innerWidth', window.innerWidth, list[0].innerHTML, list[3].innerText)
-    expect(list[0]).toBeVisible() 
-    expect(list[1]).toBeVisible()
-    expect(list[2]).toBeVisible()
-    expect(list[3]).toBeVisible()
-    expect(list[4]).toBeVisible()
-    expect(list[5]).toBeVisible()
-    expect(list[6]).toBeVisible()
-    expect(list[7]).toBeVisible()
-    expect(list[8]).toBeVisible()
+  it('no items should be visible when xl breakpoint', () => {
+    const { getByText } = renderMoreMenu();
+    const firstListITem = getByText(mainMenuItems[0].title);
+    const lastListITem = getByText(
+      mainMenuItems[mainMenuItems.length - 1].title
+    );
+    expect(firstListITem).not.toBeVisible();
+    expect(lastListITem).not.toBeVisible();
+  });
+
+  it('0 items should be visible when not expanded', () => {
+    const updatedMenu = mainMenuItems.map(
+      menuItem =>
+        menuItem.title === mainMenuItems[mainMenuItems.length - 1].title
+          ? {
+              ...menuItem,
+              lg: true,
+              xl: true
+            }
+          : menuItem
+    );
+
+    const { getByText } = renderMoreMenu(updatedMenu, 'lg');
+    const firstListItem = getByText(updatedMenu[0].title);
+    const lastListItem = getByText(updatedMenu[updatedMenu.length - 1].title);
+    expect(firstListItem).not.toBeVisible();
+    expect(lastListItem).not.toBeVisible();
   });
 });

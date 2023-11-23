@@ -8,10 +8,7 @@ import {
   MenuItem,
   getMediaQueryFromTheme
 } from 'newskit';
-import {
-  SecondaryNavContainerProp,
-  NavItemMobileContainerProp
-} from './types';
+import { SecondaryNavContainerProp, NavItemMobileContainerProp } from './types';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
 export const MenuDivider = styled(Divider)`
@@ -58,7 +55,11 @@ export const Wrapper = styled.div`
   display: flex;
 `;
 
-export const StyledMenuSub = styled(MenuSub)<{$showMoreMD: boolean; $showMoreLG: boolean; $showMoreXL: boolean;}>`
+export const StyledMenuSub = styled(MenuSub)<{
+  $showMoreMD: boolean;
+  $showMoreLG: boolean;
+  $showMoreXL: boolean;
+}>`
   min-width: 100px;
   display: none;
 
@@ -67,42 +68,49 @@ export const StyledMenuSub = styled(MenuSub)<{$showMoreMD: boolean; $showMoreLG:
   }
 
   ${getMediaQueryFromTheme('md', 'lg')} {
-    ${({ $showMoreMD }) => $showMoreMD && `display: flex;`}
+    ${({ $showMoreMD }) => $showMoreMD && `display: flex;`};
   }
   ${getMediaQueryFromTheme('lg', 'xl')} {
-    ${({ $showMoreLG }) => $showMoreLG && `display: flex;`}
+    ${({ $showMoreLG }) => $showMoreLG && `display: flex;`};
   }
   ${getMediaQueryFromTheme('xl')} {
-    ${({ $showMoreXL }) => $showMoreXL && `display: flex;`}
+    ${({ $showMoreXL }) => $showMoreXL && `display: flex;`};
   }
-
 `;
 
-export const StyledMenuItemsDesktop = styled(MenuItem)<{$hideMD: boolean; $hideLG: boolean; $hideXL: boolean;}>`
+export const StyledMenuItemsDesktop = styled(MenuItem)<{
+  $hideMD: boolean;
+  $hideLG: boolean;
+  $hideXL: boolean;
+}>`
   min-width: max-content;
 
   ${getMediaQueryFromTheme('md', 'lg')} {
-    ${({ $hideMD }) => $hideMD && `display: none;`}
+    ${({ $hideMD }) => $hideMD && `display: none;`};
   }
   ${getMediaQueryFromTheme('lg', 'xl')} {
-    ${({ $hideLG }) => $hideLG && `display: none;`}
+    ${({ $hideLG }) => $hideLG && `display: none;`};
   }
   ${getMediaQueryFromTheme('xl')} {
-    ${({ $hideXL }) => $hideXL && `display: none;`}
+    ${({ $hideXL }) => $hideXL && `display: none;`};
   }
 `;
-export const StyledMenuItemsDropdown = styled(MenuItem)<{$showMD: boolean; $showLG: boolean; $showXL: boolean;}>`
+export const StyledMenuItemsDropdown = styled(MenuItem)<{
+  $showMD?: boolean;
+  $showLG?: boolean;
+  $showXL?: boolean;
+}>`
   min-width: max-content;
   display: none;
 
   ${getMediaQueryFromTheme('md', 'lg')} {
-    ${({ $showMD }) => $showMD && `display: flex;`}
+    ${({ $showMD }) => $showMD && `display: flex;`};
   }
   ${getMediaQueryFromTheme('lg', 'xl')} {
-    ${({ $showLG }) => $showLG && `display: flex;`}
+    ${({ $showLG }) => $showLG && `display: flex;`};
   }
   ${getMediaQueryFromTheme('xl')} {
-    ${({ $showXL }) => $showXL && `display: flex;`}
+    ${({ $showXL }) => $showXL && `display: flex;`};
   }
 `;
 

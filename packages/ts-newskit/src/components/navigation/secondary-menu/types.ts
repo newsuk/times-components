@@ -2,10 +2,13 @@ export type SecondaryMenuItem = {
   title: string;
   url: string;
   slug: string;
-  md: boolean;
-  lg: boolean;
-  xl: boolean;
 };
+
+export interface ResponsiveSecondaryMenuItem extends SecondaryMenuItem {
+  md?: boolean;
+  lg?: boolean;
+  xl?: boolean;
+}
 
 export type SecondaryNavContainerProp = {
   topDesktop: number | undefined;

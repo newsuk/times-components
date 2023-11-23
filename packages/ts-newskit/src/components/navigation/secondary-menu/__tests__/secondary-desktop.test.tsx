@@ -23,37 +23,37 @@ describe('Secondary Menu Desktop', () => {
   });
 
   const renderSecodaryNav = (size: BreakpointKeys = 'xl') =>
-  renderComponent(
-    <SecondaryNavDesktop
+    renderComponent(
+      <SecondaryNavDesktop
         data={mainMenuItems}
         options={options}
         clickHandler={mockClickHandler}
       />,
-    size
-  ); 
+      size
+    );
 
   it('should render snapshot', () => {
-    const { asFragment } = renderSecodaryNav()
+    const { asFragment } = renderSecodaryNav();
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render the menu item', () => {
-    const { getAllByText } = renderSecodaryNav()
+    const { getAllByText } = renderSecodaryNav();
     const title = getAllByText('Home')[0];
     expect(title).toBeInTheDocument();
   });
   it('items should have ancher with href', () => {
-    const { getAllByTestId } = renderSecodaryNav()
+    const { getAllByTestId } = renderSecodaryNav();
     const title = getAllByTestId('buttonLink')[0];
     expect(title).toHaveAttribute('href', '/home');
   });
   it('should call handleSelect when clicked', () => {
-    const { getAllByTestId } = renderSecodaryNav()
+    const { getAllByTestId } = renderSecodaryNav();
     const Anchor = getAllByTestId('buttonLink')[0];
     fireEvent.click(Anchor);
     expect(options.handleSelect).toHaveBeenCalled();
   });
   it('should render all navitems', () => {
-    const { getAllByRole } = renderSecodaryNav()
+    const { getAllByRole } = renderSecodaryNav();
     const list = getAllByRole('listitem');
     expect(list[0]).toBeVisible();
     expect(list[1]).toBeVisible();
@@ -66,7 +66,7 @@ describe('Secondary Menu Desktop', () => {
     expect(list[8]).toBeVisible();
   });
   it('should change the width of menu divider when screen size change', () => {
-    const { getAllByTestId } = renderSecodaryNav()
+    const { getAllByTestId } = renderSecodaryNav();
     const hr = getAllByTestId('divider')[0];
     expect(hr).toHaveStyle('width: 100%');
   });

@@ -1,18 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { Menu } from 'newskit';
-import {
-  MenuContainer,
-  Wrapper,
-  MainMenu,
-  StyledMenuSub,
-} from '../styles';
-import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
+import { MenuContainer, Wrapper, MainMenu, StyledMenuSub } from '../styles';
+import { SecondaryMenuOptions, ResponsiveSecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
 
 export const CreateMenu: React.FC<{
   options: SecondaryMenuOptions;
-  data: SecondaryMenuItem[];
+  data: ResponsiveSecondaryMenuItem[];
   clickHandler: (title: string) => void;
 }> = ({ options, data, clickHandler }) => {
   const contanierRef = useRef<HTMLDivElement>(null);
@@ -23,21 +18,22 @@ export const CreateMenu: React.FC<{
 
   useEffect(
     () => {
+      const unsetExpanded = () => setIsExpanded(false);
       const checkIfClickedOutside = (e: any) => {
         if (
           isExpanded &&
           contanierRef.current &&
           !contanierRef.current.contains(e.target)
         ) {
-          setIsExpanded(!isExpanded);
+          unsetExpanded();
         }
       };
 
       document.addEventListener('click', checkIfClickedOutside);
-      window.addEventListener('resize', () => setIsExpanded(false));
+      window.addEventListener('resize', unsetExpanded);
       return () => {
         document.removeEventListener('click', checkIfClickedOutside);
-        window.addEventListener('resize', () => setIsExpanded(false));
+        window.addEventListener('resize', unsetExpanded);
       };
     },
     [isExpanded]
@@ -47,21 +43,21 @@ export const CreateMenu: React.FC<{
   let showMoreMD = false;
   let showMoreLG = false;
   let showMoreXL = false;
-  data.map(({title}, index) => {
-    if(((title.length * 10) + charWidth) > 1270) {
-      data[index].xl = true
-      showMoreXL = true
+  data.map(({ title }, index) => {
+    if (title.length * 10 + charWidth > 1270) {
+      data[index].xl = true;
+      showMoreXL = true;
     }
-    if(((title.length * 10) + charWidth) > 970) {
-      data[index].lg = true
-      showMoreLG = true
+    if (title.length * 10 + charWidth > 970) {
+      data[index].lg = true;
+      showMoreLG = true;
     }
-    if(((title.length * 10) + charWidth) > 700) {
-      data[index].md = true
-      showMoreMD = true
+    if (title.length * 10 + charWidth > 700) {
+      data[index].md = true;
+      showMoreMD = true;
     }
-    charWidth += (title.length * 10) + 32
-  })
+    charWidth += title.length * 10 + 32;
+  });
 
   return (
     <MainMenu
