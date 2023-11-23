@@ -190,12 +190,18 @@ stylePresets.transparentCard = {
 
 stylePresets.cardTitleIcon = {
   base: {
-    color: '{{colors.inkBrand010}}',
-    iconColor: '{{colors.inkBrand010}}'
+    color: '{{colors.inkBrand010}}'
   },
 
   hover: {
-    color: '{{colors.interactiveLink020}}',
-    iconColor: '{{colors.interactiveLink020}}'
+    color: '{{colors.interactiveLink020}}'
+  }
+};
+
+stylePresets.iconPreset = {
+  base: {
+    backgroundColor: '{{colors.interactiveSecondary020}}',
+    color: '{{colors.inkBrand010}}',
+    borderRadius: '{{borders.borderRadiusCircle}}'
   }
 };

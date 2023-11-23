@@ -7,10 +7,12 @@ import {
   CardContent,
   CardLink,
   Divider,
-  Stack
+  Stack,
+  IconButton
 } from 'newskit';
-import { NewsKitChevronRightCircleIcon } from '../../../assets';
+import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
+import { StyledCardComposable } from './styles';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
@@ -27,7 +29,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
     <Block stylePreset="sidebarCard" paddingBlockStart="space030">
       <Block>
         <Block>
-          <CardComposable
+          <StyledCardComposable
             overrides={{
               marginBlockEnd: 'space030',
               stylePreset: 'cardTitleIcon'
@@ -39,15 +41,17 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
                 {sectionTitle}
               </TextBlock>
 
-              <NewsKitChevronRightCircleIcon
+              <IconButton
                 overrides={{
-                  size: 'iconSize020',
-                  paddingInline: 'space000',
-                  paddingBlock: 'space000'
+                  stylePreset: 'iconPreset',
+                  width: 'sizing050',
+                  height: 'sizing050'
                 }}
-              />
+              >
+                <NewsKitChevronRightIcon />
+              </IconButton>
             </Stack>
-          </CardComposable>
+          </StyledCardComposable>
 
           <TextBlock
             as="p"
