@@ -19095,6 +19095,29 @@ newskit@7.2.0:
     react-transition-group "^4.4.1"
     react-virtual "^2.10.4"
 
+newskit@7.6.0:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/newskit/-/newskit-7.6.0.tgz#104b149e1c9bdfa81a102b1a2f31cc7577d7d775"
+  integrity sha512-lEst3nfGwM/uxjY1n7BrWjya8IIZnX24FxeRnEV7Y+V8z+SOW2adBN3Hws4Vq+7Y/bQ29XRuFQqUA+ePKZk+hw==
+  dependencies:
+    "@capsizecss/core" "^3.0.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+    "@emotion-icons/material" "3.9.0"
+    "@emotion-icons/material-outlined" "3.8.0"
+    "@floating-ui/react-dom-interactions" "^0.6.0"
+    "@seznam/compose-react-refs" "^1.0.5"
+    aria-hidden "^1.1.3"
+    date-fns "^2.6.0"
+    debounce "^1.2.0"
+    dequal "^1.0.0"
+    downshift "^6.1.7"
+    react-focus-lock "^2.5.0"
+    react-hook-form "^7.43.1"
+    react-hot-toast "^1.0.2"
+    react-range "^1.8.12"
+    react-transition-group "^4.4.1"
+    react-virtual "^2.10.4"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
