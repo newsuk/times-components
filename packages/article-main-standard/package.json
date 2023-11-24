@@ -63,7 +63,7 @@
     "@times-components/date-publication": "0.28.1",
     "@times-components/responsive": "0.17.1",
     "@times-components/ts-components": "1.81.7",
-    "@times-components/ts-newskit": "1.139.2",
+    "@times-components/ts-newskit": "1.140.0",
     "@times-components/ts-styleguide": "1.48.1",
     "@times-components/user-state": "0.5.11",
     "@times-components/utils": "6.16.21",
