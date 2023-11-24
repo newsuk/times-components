@@ -12,7 +12,6 @@
     "member-access": false,
     "ordered-imports": false,
     "interface-over-type-literal": false,
-    "no-submodule-imports": false,
-    "no-console": false
+    "no-submodule-imports": false
   }
 }
