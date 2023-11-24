@@ -33,7 +33,7 @@ export const CreateMenu: React.FC<{
       window.addEventListener('resize', unsetExpanded);
       return () => {
         document.removeEventListener('click', checkIfClickedOutside);
-        window.addEventListener('resize', unsetExpanded);
+        window.removeEventListener('resize', unsetExpanded);
       };
     },
     [isExpanded]
