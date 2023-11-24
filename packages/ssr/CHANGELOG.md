@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.49.12](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.49.11...@times-components/ssr@2.49.12) (2023-11-23)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.49.11](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.49.10...@times-components/ssr@2.49.11) (2023-11-23)
+
+
+### Bug Fixes
+
+* **TMRX-1613:** fix content flickers on page load ([#3658](https://github.com/newsuk/times-components/issues/3658)) ([108eb2c](https://github.com/newsuk/times-components/commit/108eb2c03ffb3cbc481653bb1298cd71f0dbb6f8))
+
+
+
+
+
 ## [2.49.10](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.49.9...@times-components/ssr@2.49.10) (2023-11-23)
 
 **Note:** Version bump only for package @times-components/ssr
