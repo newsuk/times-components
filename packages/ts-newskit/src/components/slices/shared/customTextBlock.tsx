@@ -5,13 +5,11 @@ import { Wrapper } from '../shared-styles';
 export const CustomTextBlock = ({
   text,
   stylePreset,
-  icon,
-  alignFlex = true
+  icon
 }: {
   text?: string;
   stylePreset?: string;
   icon?: ReactNode;
-  alignFlex?: boolean;
 }) => {
   return (
     <TextBlock
@@ -19,7 +17,7 @@ export const CustomTextBlock = ({
       stylePreset={stylePreset ? stylePreset : 'inkBrand010'}
       as="span"
     >
-      <Wrapper as="span" alignFlex={alignFlex}>
+      <Wrapper>
         {icon}
         {text}
       </Wrapper>
