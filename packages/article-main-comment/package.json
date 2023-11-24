@@ -67,7 +67,7 @@
     "@times-components/user-state": "0.5.11",
     "@times-components/utils": "6.16.21",
     "@times-components/video-label": "2.11.22",
-    "newskit": "7.6.0",
+    "newskit": "7.2.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
