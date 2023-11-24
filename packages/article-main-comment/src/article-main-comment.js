@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getHeadline } from "@times-components/utils";
+import { getHeadline, CanShowPuzzleSidebar } from "@times-components/utils";
 import {
   PuzzlesWebLightTheme,
   ArticleSidebar
 } from "@times-components/ts-newskit";
 import { NewsKitProvider } from "newskit";
-import { CanShowPuzzleSidebar } from "@times-components/utils/src";
 import ArticleHeader from "./article-header/article-header";
 import {
   articlePropTypes,
