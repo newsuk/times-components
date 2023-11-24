@@ -5,8 +5,11 @@ import {
   getLeadAsset,
   getStandardTemplateCrop
 } from "@times-components/utils";
-import { PuzzlesWebLightTheme, ArticleSidebar } from '@times-components/ts-newskit';
-import { NewsKitProvider } from 'newskit';
+import {
+  PuzzlesWebLightTheme,
+  ArticleSidebar
+} from "@times-components/ts-newskit";
+import { NewsKitProvider } from "newskit";
 import { CentredCaption } from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import {
@@ -15,16 +18,14 @@ import {
 } from "./article-prop-types/article-prop-types";
 import newStyles from "./newStyles";
 import { LeadAsset } from "./newStyles/responsive";
-import {
-  PuzzlesSidebar
-} from "./styles/responsive";
+import { PuzzlesSidebar } from "./styles/responsive";
 
 class ArticlePage extends Component {
   constructor(props) {
     super(props);
     this.renderHeader = this.renderHeader.bind(this);
     this.state = {
-      initialPosition: 0,
+      initialPosition: 0
     };
     this.sidebarRef = React.createRef();
     this.handleScroll = this.handleScroll.bind(this);
@@ -46,39 +47,45 @@ class ArticlePage extends Component {
 
   handleScroll() {
     const sidebarNode = this.sidebarRef.current;
-  
+
     if (sidebarNode) {
       const rect = sidebarNode.getBoundingClientRect();
-      const adElement = document.querySelector('.responsive__InlineAdWrapper-sc-4v1r4q-17');
-      const relatedArticlesElement = document.getElementById('related-articles');
-  
+      const adElement = document.querySelector(
+        ".responsive__InlineAdWrapper-sc-4v1r4q-17"
+      );
+      const relatedArticlesElement = document.getElementById(
+        "related-articles"
+      );
+
       let isAdIntersecting = false;
       let isRelatedArticlesIntersecting = false;
-  
+
       if (adElement) {
         const adRect = adElement.getBoundingClientRect();
-        isAdIntersecting = adRect.top <= rect.bottom && adRect.bottom >= rect.top;
+        isAdIntersecting =
+          adRect.top <= rect.bottom && adRect.bottom >= rect.top;
       }
-  
+
       if (relatedArticlesElement) {
         const relatedArticlesRect = relatedArticlesElement.getBoundingClientRect();
         isRelatedArticlesIntersecting =
-          relatedArticlesRect.top <= window.innerHeight && relatedArticlesRect.bottom >= 0;
+          relatedArticlesRect.top <= window.innerHeight &&
+          relatedArticlesRect.bottom >= 0;
       }
-  
+
       const { initialPosition } = this.state;
       if (isAdIntersecting || isRelatedArticlesIntersecting) {
-        sidebarNode.style.transition = 'opacity 0.5s ease';
-        sidebarNode.style.opacity = '0';
+        sidebarNode.style.transition = "opacity 0.5s ease";
+        sidebarNode.style.opacity = "0";
       } else {
         const isScrolled = rect.top <= 0 && window.scrollY > initialPosition;
-        sidebarNode.style.transition = 'opacity 0.5s ease';
-        sidebarNode.style.opacity = '1';
-        sidebarNode.style.position = isScrolled ? 'fixed' : 'absolute';
-        sidebarNode.style.top = isScrolled ? '0' : '100%';
+        sidebarNode.style.transition = "opacity 0.5s ease";
+        sidebarNode.style.opacity = "1";
+        sidebarNode.style.position = isScrolled ? "fixed" : "absolute";
+        sidebarNode.style.top = isScrolled ? "0" : "100%";
       }
     }
-  }  
+  }
 
   renderHeader() {
     const { article } = this.props;
@@ -109,25 +116,32 @@ class ArticlePage extends Component {
           updatedTime={updatedTime}
         />
         <NewsKitProvider theme={PuzzlesWebLightTheme}>
-            <PuzzlesSidebar ref={this.sidebarRef}>
-              <ArticleSidebar pageLink="https://www.thetimes.co.uk/puzzles" sectionTitle="Puzzles" data={[
+          <PuzzlesSidebar ref={this.sidebarRef}>
+            <ArticleSidebar
+              pageLink="https://www.thetimes.co.uk/puzzles"
+              sectionTitle="Puzzles"
+              data={[
                 {
                   title: "Crossword",
                   url: "https://www.thetimes.co.uk/puzzles/crossword",
-                  imgUrl: "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500",
+                  imgUrl:
+                    "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
                 },
                 {
                   title: "Polygon",
                   url: "https://www.thetimes.co.uk/puzzles/word-puzzles",
-                  imgUrl: "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500",
+                  imgUrl:
+                    "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
                 },
                 {
                   title: "Sudoku",
                   url: "https://www.thetimes.co.uk/puzzles/sudoku",
-                  imgUrl: "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500",
-                },
-              ]} />
-            </PuzzlesSidebar>
+                  imgUrl:
+                    "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                }
+              ]}
+            />
+          </PuzzlesSidebar>
         </NewsKitProvider>
         <LeadAsset
           {...getLeadAsset(article)}
