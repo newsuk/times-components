@@ -1,6 +1,10 @@
 import React, { Component, Fragment } from "react";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getHeadline, getLeadAsset, CanShowPuzzleSidebar } from "@times-components/utils";
+import {
+  getHeadline,
+  getLeadAsset,
+  CanShowPuzzleSidebar
+} from "@times-components/utils";
 import {
   PuzzlesWebLightTheme,
   ArticleSidebar
