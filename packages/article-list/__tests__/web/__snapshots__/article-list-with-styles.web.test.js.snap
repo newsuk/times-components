@@ -1,29 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. article list 1`] = `
-.c3 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  border-bottom-color: black;
-  border-bottom-width: 0px;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
-}
-
 .c0 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -85,7 +62,7 @@ exports[`1. article list 1`] = `
   padding-right: 10px;
 }
 
-.c4 {
+.c3 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -105,7 +82,7 @@ exports[`1. article list 1`] = `
   margin-right: 10px;
 }
 
-.c5 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -166,20 +143,20 @@ exports[`1. article list 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c3 {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c4 {
     min-height: 90px;
   }
 }
 
 @media (min-width:970px) {
-  .c5 {
+  .c4 {
     min-height: 250px;
   }
 }
@@ -212,22 +189,14 @@ exports[`1. article list 1`] = `
       <div
         className="c1"
       >
-        <Link>
-          <div
-            className="c2"
-          >
-            <Card
-              contentContainerClass="articleListContent"
-              imageContainerClass="articleListImage"
-            >
-              <div
-                className="c3"
-              >
-                <ArticleSummary />
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div
+          className="c2"
+        >
+          <Card
+            contentContainerClass="articleListContent"
+            imageContainerClass="articleListImage"
+          />
+        </div>
       </div>
     </div>
     <div>
@@ -235,7 +204,7 @@ exports[`1. article list 1`] = `
         className="c1"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
             backgroundColor="#DBDBDB"
@@ -243,22 +212,14 @@ exports[`1. article list 1`] = `
             height={1}
           />
         </div>
-        <Link>
-          <div
-            className="c2"
-          >
-            <Card
-              contentContainerClass="articleListContent"
-              imageContainerClass="articleListImage"
-            >
-              <div
-                className="c3"
-              >
-                <ArticleSummary />
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div
+          className="c2"
+        >
+          <Card
+            contentContainerClass="articleListContent"
+            imageContainerClass="articleListImage"
+          />
+        </div>
       </div>
     </div>
     <div>
@@ -266,7 +227,7 @@ exports[`1. article list 1`] = `
         className="c1"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
             backgroundColor="#DBDBDB"
@@ -274,22 +235,14 @@ exports[`1. article list 1`] = `
             height={1}
           />
         </div>
-        <Link>
-          <div
-            className="c2"
-          >
-            <Card
-              contentContainerClass="articleListContent"
-              imageContainerClass="articleListImage"
-            >
-              <div
-                className="c3"
-              >
-                <ArticleSummary />
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div
+          className="c2"
+        >
+          <Card
+            contentContainerClass="articleListContent"
+            imageContainerClass="articleListImage"
+          />
+        </div>
       </div>
     </div>
     <div>
@@ -297,7 +250,7 @@ exports[`1. article list 1`] = `
         className="c1"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
             backgroundColor="#DBDBDB"
@@ -305,22 +258,14 @@ exports[`1. article list 1`] = `
             height={1}
           />
         </div>
-        <Link>
-          <div
-            className="c2"
-          >
-            <Card
-              contentContainerClass="articleListContent"
-              imageContainerClass="articleListImage"
-            >
-              <div
-                className="c3"
-              >
-                <ArticleSummary />
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div
+          className="c2"
+        >
+          <Card
+            contentContainerClass="articleListContent"
+            imageContainerClass="articleListImage"
+          />
+        </div>
       </div>
     </div>
     <div>
@@ -328,7 +273,7 @@ exports[`1. article list 1`] = `
         className="c1"
       >
         <div
-          className="c4"
+          className="c3"
         >
           <div
             backgroundColor="#DBDBDB"
@@ -336,26 +281,18 @@ exports[`1. article list 1`] = `
             height={1}
           />
         </div>
-        <Link>
-          <div
-            className="c2"
-          >
-            <Card
-              contentContainerClass="articleListContent"
-              imageContainerClass="articleListImage"
-            >
-              <div
-                className="c3"
-              >
-                <ArticleSummary />
-              </div>
-            </Card>
-          </div>
-        </Link>
+        <div
+          className="c2"
+        >
+          <Card
+            contentContainerClass="articleListContent"
+            imageContainerClass="articleListImage"
+          />
+        </div>
       </div>
     </div>
     <div
-      className="c5"
+      className="c4"
     >
       <AdContainer />
     </div>

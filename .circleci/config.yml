@@ -40,7 +40,7 @@ commands:
       steps:
         - run:
             name: 'Install Lerna'
-            command: yarn global add lerna
+            command: yarn global add lerna@7.4.2
             working_directory: ~/project/
 
 jobs:
