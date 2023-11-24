@@ -1,10 +1,15 @@
 import React from 'react';
 import { Stack, GridLayout } from 'newskit';
+import { BlockItem } from '../shared-styles';
 export interface CustomStackLayoutProps {
   marginBlockEnd?: string;
   className?: string;
 }
 interface CustomGridLayoutProps {
+  children?: React.ReactNode;
+}
+
+interface CustomBlockLayoutProps {
   children?: React.ReactNode;
 }
 
@@ -69,5 +74,23 @@ export const CustomGridLayout: React.FC<CustomGridLayoutProps> = ({
     >
       {children}
     </GridLayout>
+  );
+};
+
+export const CustomBlockLayout: React.FC<CustomBlockLayoutProps> = ({
+  children
+}) => {
+  return (
+    <BlockItem
+      $width={{
+        xs: '100%',
+        md: '720px',
+        lg: '976px',
+        xl: '1276px'
+      }}
+      marginBlockEnd="space060"
+    >
+      {children}
+    </BlockItem>
   );
 };

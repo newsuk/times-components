@@ -6,13 +6,14 @@ import {
   CommentCard,
   CommentCardProps
 } from '../../components/slices/comment-card';
+import { CustomBlockLayout } from '../shared/layouts';
 export interface CommentStackProps {
   clickHandler: ClickHandlerType;
   data: CommentCardProps[];
 }
 
 export const CommentBucket1 = ({ data, clickHandler }: CommentStackProps) => (
-  <>
+  <CustomBlockLayout>
     <Divider
       overrides={{
         marginBlockEnd: 'space040',
@@ -51,5 +52,5 @@ export const CommentBucket1 = ({ data, clickHandler }: CommentStackProps) => (
         );
       })}
     </GridLayout>
-  </>
+  </CustomBlockLayout>
 );
