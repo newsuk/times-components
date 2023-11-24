@@ -4,11 +4,11 @@ export type SecondaryMenuItem = {
   slug: string;
 };
 
-export interface ResponsiveSecondaryMenuItem extends SecondaryMenuItem {
+export type ResponsiveSecondaryMenuItem = SecondaryMenuItem & {
   md?: boolean;
   lg?: boolean;
   xl?: boolean;
-}
+};
 
 export type SecondaryNavContainerProp = {
   topDesktop: number | undefined;
