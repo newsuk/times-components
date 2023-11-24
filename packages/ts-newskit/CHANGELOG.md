@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.139.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.139.1...@times-components/ts-newskit@1.139.2) (2023-11-23)
+
+
+### Bug Fixes
+
+* **TMRX-1667:** fix lead story 4 content widths ([#3663](https://github.com/newsuk/times-components/issues/3663)) ([25a854d](https://github.com/newsuk/times-components/commit/25a854d0aba9d1b9f4235de176abaa7eef043c13))
+
+
+
+
+
 ## [1.139.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.139.0...@times-components/ts-newskit@1.139.1) (2023-11-23)
 
 **Note:** Version bump only for package @times-components/ts-newskit

@@ -5,6 +5,7 @@ import { ArticleProps } from '../../components/slices/article';
 import { ClickHandlerType } from '../types';
 import { LeadStory4Desktop } from './desktop';
 import { LeadStory4Mobile } from './mobile';
+import { BlockItem } from '../shared-styles';
 
 export interface LeadStory4Props {
   leadArticle: LeadArticleProps;
@@ -76,7 +77,15 @@ export const LeadStory4 = ({
     articleMediumBreakPoint && articleMediumBreakPoint.slice(0, 1);
   const article234 = article4 && article2and3 && [...article2and3, ...article4];
   return (
-    <>
+    <BlockItem
+      $width={{
+        xs: '100%',
+        md: '720px',
+        lg: '976px',
+        xl: '1276px'
+      }}
+      marginBlockEnd="space060"
+    >
       <Hidden xs sm>
         <LeadStory4Desktop
           leadArticle={modifiedLeadArticle}
@@ -98,6 +107,6 @@ export const LeadStory4 = ({
           article234={article234}
         />
       </Visible>
-    </>
+    </BlockItem>
   );
 };
