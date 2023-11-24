@@ -7,6 +7,7 @@ import {
 } from "@times-components/ts-newskit";
 import { NewsKitProvider } from "newskit";
 import Caption from "@times-components/caption";
+import { CanShowPuzzleSidebar } from "@times-components/utils/src";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
@@ -111,7 +112,8 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst,
       topics,
-      updatedTime
+      updatedTime,
+      section
     } = article;
 
     const metaProps = { bylines, publicationName, publishedTime };
@@ -134,34 +136,36 @@ class ArticlePage extends Component {
             <ArticleTopics topics={topics} />
           </MetaContainer>
 
-          <NewsKitProvider theme={PuzzlesWebLightTheme}>
-            <PuzzlesSidebar ref={this.sidebarRef}>
-              <ArticleSidebar
-                pageLink="https://www.thetimes.co.uk/puzzles"
-                sectionTitle="Puzzles"
-                data={[
-                  {
-                    title: "Crossword",
-                    url: "https://www.thetimes.co.uk/puzzles/crossword",
-                    imgUrl:
-                      "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
-                  },
-                  {
-                    title: "Polygon",
-                    url: "https://www.thetimes.co.uk/puzzles/word-puzzles",
-                    imgUrl:
-                      "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
-                  },
-                  {
-                    title: "Sudoku",
-                    url: "https://www.thetimes.co.uk/puzzles/sudoku",
-                    imgUrl:
-                      "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
-                  }
-                ]}
-              />
-            </PuzzlesSidebar>
-          </NewsKitProvider>
+          {CanShowPuzzleSidebar(section) && (
+            <NewsKitProvider theme={PuzzlesWebLightTheme}>
+              <PuzzlesSidebar ref={this.sidebarRef}>
+                <ArticleSidebar
+                  pageLink="https://www.thetimes.co.uk/puzzles"
+                  sectionTitle="Puzzles"
+                  data={[
+                    {
+                      title: "Crossword",
+                      url: "https://www.thetimes.co.uk/puzzles/crossword",
+                      imgUrl:
+                        "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    },
+                    {
+                      title: "Polygon",
+                      url: "https://www.thetimes.co.uk/puzzles/word-puzzles",
+                      imgUrl:
+                        "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    },
+                    {
+                      title: "Sudoku",
+                      url: "https://www.thetimes.co.uk/puzzles/sudoku",
+                      imgUrl:
+                        "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    }
+                  ]}
+                />
+              </PuzzlesSidebar>
+            </NewsKitProvider>
+          )}
         </HeaderTopContainer>
         <LeadAsset {...getLeadAsset(article)} renderCaption={renderCaption} />
         <ArticleMeta {...metaProps} inline className="inline-meta" />
