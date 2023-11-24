@@ -54,6 +54,9 @@ export const TextLink = styled(LinkInline)`
 export const ContainerInline = styled(Block)`
   display: inline-block;
   ${getSizingCssFromTheme('height', 'sizing020')};
+  :last-child {
+    display: none;
+  }
 `;
 
 const setFullWidthMargin = (space: string) => ({ marginInline: `-${space}` });
@@ -110,6 +113,7 @@ export const StyledTextBlock = styled(TextBlock)`
 `;
 
 export const StyledBlock = styled(Block)`
+  position: relative;
   display: flex;
   align-items: last baseline;
   flex-wrap: wrap;

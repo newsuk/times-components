@@ -1,11 +1,6 @@
 import React from 'react';
 import { Divider } from 'newskit';
-import {
-  ContainerInline,
-  StyledBlock,
-  Container,
-  TileSpanContainer
-} from '../shared-styles';
+import { ContainerInline, StyledBlock } from '../shared-styles';
 import { LiveTag } from './live-tag';
 import { CustomTextBlock } from './customTextBlock';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
@@ -25,14 +20,8 @@ export interface ArticleTileInfoProps {
   marginBlockStart?: string;
 }
 
-const TileWrapper = ({
-  children,
-  isVideoIcon = false
-}: {
-  children: React.ReactNode;
-  isVideoIcon?: boolean;
-}) => (
-  <TileSpanContainer isVideoIcon={isVideoIcon}>
+const TileWrapper = ({ children }: { children: React.ReactNode }) => (
+  <>
     {children}
     <ContainerInline>
       <Divider
@@ -42,7 +31,7 @@ const TileWrapper = ({
         }}
       />
     </ContainerInline>
-  </TileSpanContainer>
+  </>
 );
 
 export const ArticleTileInfo = ({
@@ -75,7 +64,7 @@ export const ArticleTileInfo = ({
         marginBlockStart={marginBlockStart}
         marginBlockEnd={marginBlockEnd}
       >
-        <Container>
+        <>
           {isLiveTag &&
             expirableFlags && (
               <TileWrapper>
@@ -102,7 +91,7 @@ export const ArticleTileInfo = ({
             </TileWrapper>
           )}
           {hasVideo && (
-            <TileWrapper isVideoIcon>
+            <TileWrapper>
               <CustomTextBlock
                 text="VIDEO"
                 stylePreset="inkContrast"
@@ -119,7 +108,7 @@ export const ArticleTileInfo = ({
               <CustomTextBlock text={capitalizedText(label)} />
             </TileWrapper>
           )}
-        </Container>
+        </>
       </StyledBlock>
     </>
   );

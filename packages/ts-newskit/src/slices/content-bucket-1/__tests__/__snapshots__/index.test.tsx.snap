@@ -59,65 +59,49 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-7b9bzx"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-7b9bzx"
-                      >
-                        LIVE
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        INTERVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        MARTIN SAMUEL
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    LIVE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    INTERVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    MARTIN SAMUEL
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -167,7 +151,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -239,65 +223,49 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   data-testid="divider"
                 />
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-7b9bzx"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-7b9bzx"
-                      >
-                        LIVE
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        INTERVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        MARTIN SAMUEL
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    LIVE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    INTERVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    MARTIN SAMUEL
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -347,7 +315,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -601,47 +569,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       class="css-17cghxi"
                     >
                       <div
-                        class="article-info css-182uup4"
+                        class="article-info css-1wte5n0"
                       >
-                        <div
-                          class="css-1i82ydo"
+                        <span
+                          class="css-ciimpt"
                         >
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-ciimpt"
-                            >
-                              UPDATED
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-1kanhs9"
-                            >
-                              PROFILE
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
+                          UPDATED
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
+                        </div>
+                        <span
+                          class="css-1kanhs9"
+                        >
+                          PROFILE
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
                         </div>
                       </div>
                       <a
@@ -701,47 +657,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       class="css-17cghxi"
                     >
                       <div
-                        class="article-info css-182uup4"
+                        class="article-info css-1wte5n0"
                       >
-                        <div
-                          class="css-1i82ydo"
+                        <span
+                          class="css-ciimpt"
                         >
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-ciimpt"
-                            >
-                              EXCLUSIVE
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-1kanhs9"
-                            >
-                              REVIEW
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
+                          EXCLUSIVE
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
+                        </div>
+                        <span
+                          class="css-1kanhs9"
+                        >
+                          REVIEW
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
                         </div>
                       </div>
                       <a
@@ -801,47 +745,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       class="css-17cghxi"
                     >
                       <div
-                        class="article-info css-182uup4"
+                        class="article-info css-1wte5n0"
                       >
-                        <div
-                          class="css-1i82ydo"
+                        <span
+                          class="css-ciimpt"
                         >
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-ciimpt"
-                            >
-                              UPDATED
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-1kanhs9"
-                            >
-                              Q&A
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
+                          UPDATED
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
+                        </div>
+                        <span
+                          class="css-1kanhs9"
+                        >
+                          Q&A
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
                         </div>
                       </div>
                       <a
@@ -901,47 +833,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       class="css-17cghxi"
                     >
                       <div
-                        class="article-info css-182uup4"
+                        class="article-info css-1wte5n0"
                       >
-                        <div
-                          class="css-1i82ydo"
+                        <span
+                          class="css-ciimpt"
                         >
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-ciimpt"
-                            >
-                              EXCLUSIVE
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-1kanhs9"
-                            >
-                              REVIEW
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
+                          EXCLUSIVE
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
+                        </div>
+                        <span
+                          class="css-1kanhs9"
+                        >
+                          REVIEW
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
                         </div>
                       </div>
                       <a
@@ -1006,47 +926,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          UPDATED
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          PROFILE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      UPDATED
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      PROFILE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -1106,47 +1014,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          EXCLUSIVE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      EXCLUSIVE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -1206,47 +1102,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          UPDATED
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          Q&A
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      UPDATED
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      Q&A
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -1306,47 +1190,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          EXCLUSIVE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      EXCLUSIVE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -1620,65 +1492,49 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-7b9bzx"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-7b9bzx"
-                      >
-                        LIVE
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        INTERVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        MARTIN SAMUEL
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    LIVE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    INTERVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    MARTIN SAMUEL
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -1728,7 +1584,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -1800,65 +1656,49 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   data-testid="divider"
                 />
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-7b9bzx"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-7b9bzx"
-                      >
-                        LIVE
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        INTERVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        MARTIN SAMUEL
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    LIVE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    INTERVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    MARTIN SAMUEL
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -1908,7 +1748,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     </span>
                   </a>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -2162,47 +2002,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       class="css-17cghxi"
                     >
                       <div
-                        class="article-info css-182uup4"
+                        class="article-info css-1wte5n0"
                       >
-                        <div
-                          class="css-1i82ydo"
+                        <span
+                          class="css-ciimpt"
                         >
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-ciimpt"
-                            >
-                              UPDATED
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-1kanhs9"
-                            >
-                              PROFILE
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
+                          UPDATED
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
+                        </div>
+                        <span
+                          class="css-1kanhs9"
+                        >
+                          PROFILE
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
                         </div>
                       </div>
                       <a
@@ -2262,47 +2090,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       class="css-17cghxi"
                     >
                       <div
-                        class="article-info css-182uup4"
+                        class="article-info css-1wte5n0"
                       >
-                        <div
-                          class="css-1i82ydo"
+                        <span
+                          class="css-ciimpt"
                         >
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-ciimpt"
-                            >
-                              EXCLUSIVE
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-1kanhs9"
-                            >
-                              REVIEW
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
+                          EXCLUSIVE
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
+                        </div>
+                        <span
+                          class="css-1kanhs9"
+                        >
+                          REVIEW
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
                         </div>
                       </div>
                       <a
@@ -2362,47 +2178,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       class="css-17cghxi"
                     >
                       <div
-                        class="article-info css-182uup4"
+                        class="article-info css-1wte5n0"
                       >
-                        <div
-                          class="css-1i82ydo"
+                        <span
+                          class="css-ciimpt"
                         >
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-ciimpt"
-                            >
-                              UPDATED
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-1kanhs9"
-                            >
-                              Q&A
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
+                          UPDATED
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
+                        </div>
+                        <span
+                          class="css-1kanhs9"
+                        >
+                          Q&A
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
                         </div>
                       </div>
                       <a
@@ -2462,47 +2266,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       class="css-17cghxi"
                     >
                       <div
-                        class="article-info css-182uup4"
+                        class="article-info css-1wte5n0"
                       >
-                        <div
-                          class="css-1i82ydo"
+                        <span
+                          class="css-ciimpt"
                         >
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-ciimpt"
-                            >
-                              EXCLUSIVE
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
-                          <span
-                            class="css-u9icu4"
-                          >
-                            <span
-                              class="css-1kanhs9"
-                            >
-                              REVIEW
-                            </span>
-                            <div
-                              class="css-lew009"
-                            >
-                              <hr
-                                aria-hidden="true"
-                                class="css-15kf7hd"
-                                data-testid="divider"
-                              />
-                            </div>
-                          </span>
+                          EXCLUSIVE
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
+                        </div>
+                        <span
+                          class="css-1kanhs9"
+                        >
+                          REVIEW
+                        </span>
+                        <div
+                          class="css-p44zak"
+                        >
+                          <hr
+                            aria-hidden="true"
+                            class="css-15kf7hd"
+                            data-testid="divider"
+                          />
                         </div>
                       </div>
                       <a
@@ -2567,47 +2359,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          UPDATED
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          PROFILE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      UPDATED
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      PROFILE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -2667,47 +2447,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          EXCLUSIVE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      EXCLUSIVE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -2767,47 +2535,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          UPDATED
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          Q&A
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      UPDATED
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      Q&A
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -2867,47 +2623,35 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          EXCLUSIVE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      EXCLUSIVE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a

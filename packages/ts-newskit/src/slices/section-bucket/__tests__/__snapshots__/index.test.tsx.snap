@@ -100,47 +100,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          Q&A
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      Q&A
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -180,47 +168,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -260,47 +236,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          NEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      NEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -410,47 +374,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          EXCLUSIVE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      EXCLUSIVE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -490,47 +442,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -570,47 +510,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          NEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      NEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -720,47 +648,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          EXCLUSIVE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      EXCLUSIVE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -800,47 +716,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -880,47 +784,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          EXCLUSIVE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      EXCLUSIVE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -1030,47 +922,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -1110,47 +990,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          NEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      NEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -1190,47 +1058,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          INTERVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      INTERVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -1354,47 +1210,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        Q&A
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    Q&A
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -1434,47 +1278,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -1514,47 +1346,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        NEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    NEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -1664,47 +1484,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        EXCLUSIVE
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    EXCLUSIVE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -1744,47 +1552,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -1824,47 +1620,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        NEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    NEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -1974,47 +1758,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        EXCLUSIVE
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    EXCLUSIVE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -2054,47 +1826,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -2134,47 +1894,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        EXCLUSIVE
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    EXCLUSIVE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -2284,47 +2032,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -2364,47 +2100,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        NEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    NEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -2444,47 +2168,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        INTERVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    INTERVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -2620,47 +2332,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          Q&A
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      Q&A
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -2700,47 +2400,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -2780,47 +2468,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          NEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      NEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -2930,47 +2606,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          EXCLUSIVE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      EXCLUSIVE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -3010,47 +2674,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -3090,47 +2742,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          NEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      NEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -3240,47 +2880,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          EXCLUSIVE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      EXCLUSIVE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -3320,47 +2948,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -3400,47 +3016,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          EXCLUSIVE
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      EXCLUSIVE
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -3550,47 +3154,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -3630,47 +3222,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          NEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          REVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      NEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      REVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -3710,47 +3290,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="css-17cghxi"
                 >
                   <div
-                    class="article-info css-182uup4"
+                    class="article-info css-1wte5n0"
                   >
-                    <div
-                      class="css-1i82ydo"
+                    <span
+                      class="css-ciimpt"
                     >
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-ciimpt"
-                        >
-                          BREAKING
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
-                      <span
-                        class="css-u9icu4"
-                      >
-                        <span
-                          class="css-1kanhs9"
-                        >
-                          INTERVIEW
-                        </span>
-                        <div
-                          class="css-lew009"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </span>
+                      BREAKING
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
+                    </div>
+                    <span
+                      class="css-1kanhs9"
+                    >
+                      INTERVIEW
+                    </span>
+                    <div
+                      class="css-p44zak"
+                    >
+                      <hr
+                        aria-hidden="true"
+                        class="css-15kf7hd"
+                        data-testid="divider"
+                      />
                     </div>
                   </div>
                   <a
@@ -3874,47 +3442,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        Q&A
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    Q&A
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -3954,47 +3510,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -4034,47 +3578,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        NEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    NEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -4184,47 +3716,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        EXCLUSIVE
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    EXCLUSIVE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -4264,47 +3784,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -4344,47 +3852,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        NEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    NEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -4494,47 +3990,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        EXCLUSIVE
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    EXCLUSIVE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -4574,47 +4058,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -4654,47 +4126,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        EXCLUSIVE
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    EXCLUSIVE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -4804,47 +4264,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -4884,47 +4332,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        NEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        REVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    NEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
@@ -4964,47 +4400,35 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                 class="css-17cghxi"
               >
                 <div
-                  class="article-info css-182uup4"
+                  class="article-info css-1wte5n0"
                 >
-                  <div
-                    class="css-1i82ydo"
+                  <span
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-ciimpt"
-                      >
-                        BREAKING
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
-                    <span
-                      class="css-u9icu4"
-                    >
-                      <span
-                        class="css-1kanhs9"
-                      >
-                        INTERVIEW
-                      </span>
-                      <div
-                        class="css-lew009"
-                      >
-                        <hr
-                          aria-hidden="true"
-                          class="css-15kf7hd"
-                          data-testid="divider"
-                        />
-                      </div>
-                    </span>
+                    BREAKING
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1kanhs9"
+                  >
+                    INTERVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
                   </div>
                 </div>
                 <a
