@@ -25,7 +25,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-1xiomb0"
+          class="css-pv9ltj"
           data-testid="article-container"
         >
           <div
@@ -536,7 +536,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-vhnvwm"
+          class="css-1ak9hya"
           data-testid="article-container"
         >
           <div
@@ -1056,7 +1056,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
         class="css-13tedu1"
       >
         <div
-          class="css-1xiomb0"
+          class="css-pv9ltj"
           data-testid="article-container"
         >
           <div
@@ -1567,7 +1567,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
         class="css-13tedu1"
       >
         <div
-          class="css-vhnvwm"
+          class="css-1ak9hya"
           data-testid="article-container"
         >
           <div
@@ -2087,7 +2087,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1xiomb0"
+          class="css-pv9ltj"
           data-testid="article-container"
         >
           <div
@@ -2598,7 +2598,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-vhnvwm"
+          class="css-1ak9hya"
           data-testid="article-container"
         >
           <div
@@ -3118,7 +3118,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1xiomb0"
+          class="css-pv9ltj"
           data-testid="article-container"
         >
           <div
@@ -3629,7 +3629,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-vhnvwm"
+          class="css-1ak9hya"
           data-testid="article-container"
         >
           <div
@@ -4149,7 +4149,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1xiomb0"
+          class="css-pv9ltj"
           data-testid="article-container"
         >
           <div
@@ -4660,7 +4660,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-vhnvwm"
+          class="css-1ak9hya"
           data-testid="article-container"
         >
           <div
