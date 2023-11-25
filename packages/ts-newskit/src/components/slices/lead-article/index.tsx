@@ -15,29 +15,16 @@ import {
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
-import { ClickHandlerType, MouseEventType } from '../../../slices/types';
-import { articleClickTracking } from '../../../utils/tracking';
 import {
-  ArticleTileInfo,
+  ClickHandlerType,
+  MouseEventType,
+  ImageProps,
+  ListData,
   expirableFlagsProps
-} from '../shared/articleTileInfo';
+} from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
+import { ArticleTileInfo } from '../shared/articleTileInfo';
 
-export interface ImageCrops {
-  url?: string;
-  ratio?: string;
-}
-export interface ListData {
-  label: string;
-  href: string;
-  id: string;
-}
-
-export interface ImageProps {
-  alt?: string;
-  caption?: string;
-  credits?: string;
-  crops?: ImageCrops[];
-}
 export interface LeadArticleProps {
   id: string;
   headline: string;

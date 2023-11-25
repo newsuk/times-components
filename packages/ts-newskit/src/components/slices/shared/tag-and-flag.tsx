@@ -1,19 +1,7 @@
 import React from 'react';
-import { Block, TextBlock, Divider, MQ } from 'newskit';
+import { Block, TextBlock, Divider } from 'newskit';
 import { ContainerInline, TextLink } from '../shared-styles';
-
-export interface TagAndFlagProps {
-  flag?: string;
-  flagOverrides?: {
-    typographyPreset?: MQ<string> | string;
-    stylePreset?: MQ<string> | string;
-  };
-  tag?: {
-    label: string;
-    href: string;
-  };
-  marginBlockStart?: MQ<string> | string;
-}
+import { TagAndFlagProps } from '../../../slices/types';
 
 export const TagAndFlag = ({
   flag,
