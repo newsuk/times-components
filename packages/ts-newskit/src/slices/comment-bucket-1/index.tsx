@@ -6,7 +6,7 @@ import {
   CommentCard,
   CommentCardProps
 } from '../../components/slices/comment-card';
-import { CustomBlockLayout } from '../shared/layouts';
+import { CustomBlockLayout } from '../shared';
 export interface CommentStackProps {
   clickHandler: ClickHandlerType;
   data: CommentCardProps[];

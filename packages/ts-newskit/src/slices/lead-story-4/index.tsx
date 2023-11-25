@@ -5,7 +5,7 @@ import { ArticleProps } from '../../components/slices/article';
 import { ClickHandlerType } from '../types';
 import { LeadStory4Desktop } from './desktop';
 import { LeadStory4Mobile } from './mobile';
-import { CustomBlockLayout } from '../shared/layouts';
+import { CustomBlockLayout } from '../shared';
 
 export interface LeadStory4Props {
   leadArticle: LeadArticleProps;

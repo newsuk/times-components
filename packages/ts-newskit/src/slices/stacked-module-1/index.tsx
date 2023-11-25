@@ -2,12 +2,11 @@ import React from 'react';
 import { Divider } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
-import { WrappedStackLayout } from '../shared';
+import { WrappedStackLayout, CustomBlockLayout } from '../shared';
 import { StackItem } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType } from '../types';
 import { ArticleGrid } from './styles';
-import { CustomBlockLayout } from '../shared/layouts';
 
 export interface StackModule1Props {
   articles: ArticleProps[];

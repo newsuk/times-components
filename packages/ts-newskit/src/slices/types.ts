@@ -15,3 +15,11 @@ export type ClickHandlerType = (
 ) => void;
 
 export type StackArticleOptions = MQPartial<Partial<ArticleProps>>;
+
+export interface CustomStackLayoutProps {
+  marginBlockEnd?: string;
+  className?: string;
+}
+export interface CustomGridLayoutProps {
+  children?: React.ReactNode;
+}
