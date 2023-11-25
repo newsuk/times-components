@@ -1,7 +1,5 @@
-import {
-  LeadArticleProps,
-  ImageProps
-} from '../components/slices/lead-article';
+import { LeadArticleProps } from '../components/slices/lead-article';
+import { ImageProps } from '../slices/types';
 
 export const clearCreditsAndCaption = (data: LeadArticleProps) => {
   const updatedImages: ImageProps = {
