@@ -51,9 +51,16 @@ describe('Render TopNav', () => {
 
   it('should call the mockClickHandler when Times + button clicked', async () => {
     renderComponent(true);
-    const TimesText = screen.getByText('Times +');
-    fireEvent.click(TimesText);
+    const timesText = screen.getByText('Times +');
+    fireEvent.click(timesText);
     expect(mockClickHandler).toHaveBeenCalledWith('Times +');
+  });
+
+  it('should call the mockClickHandler when Manage account button clicked', async () => {
+    renderComponent(true);
+    const manageAccount = screen.getByText('Manage account');
+    fireEvent.click(manageAccount);
+    expect(mockClickHandler).toHaveBeenCalledWith('Manage account');
   });
 
   it('should call the mockClickHandler with "Close Menu" when hamburger icon clicked', async () => {
