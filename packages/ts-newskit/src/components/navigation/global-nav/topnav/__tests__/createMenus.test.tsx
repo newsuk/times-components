@@ -11,6 +11,7 @@ afterAll(() => {
   jest.resetAllMocks();
   jest.restoreAllMocks();
 });
+const mockClickHandler = jest.fn();
 
 const renderMenu = (isLoggedIn: boolean, size: BreakpointKeys = 'xl') =>
   renderComponent(
@@ -20,6 +21,7 @@ const renderMenu = (isLoggedIn: boolean, size: BreakpointKeys = 'xl') =>
       accountMenu={data.accountMenuItems}
       isHamburgerOpen={false}
       toggleHamburger={jest.fn}
+      clickHandler={mockClickHandler}
     />,
     size
   );

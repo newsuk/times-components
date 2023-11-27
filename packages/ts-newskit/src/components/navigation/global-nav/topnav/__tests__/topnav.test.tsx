@@ -4,6 +4,7 @@ import { render, screen } from '../../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { TopNav } from '../topnav';
 import data from '../../fixtures/data.json';
+const mockClickHandler = jest.fn();
 
 const renderComponent = (isLoggedIn?: boolean, isSunday?: boolean) =>
   render(
@@ -14,6 +15,7 @@ const renderComponent = (isLoggedIn?: boolean, isSunday?: boolean) =>
       accountMenu={data.accountMenuItems}
       isHamburgerOpen={false}
       toggleHamburger={jest.fn}
+      clickHandler={mockClickHandler}
     />
   );
 
