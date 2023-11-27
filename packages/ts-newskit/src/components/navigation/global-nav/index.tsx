@@ -10,9 +10,15 @@ interface GlobalNavProps {
   isLoggedIn?: boolean;
   isSunday?: boolean;
   data: NavigationData;
+  clickHandler: (title: string) => void;
 }
 
-export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
+export const GlobalNav = ({
+  isLoggedIn,
+  isSunday,
+  data,
+  clickHandler
+}: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
 
   return (
@@ -24,6 +30,7 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}
         toggleHamburger={setHamburgerActive}
+        clickHandler={clickHandler}
       />
       <HamburgerMenuContainer
         isLoggedIn={isLoggedIn}
@@ -32,7 +39,7 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
         closePosition="none"
         overrides={{ panel: { size: { xs: '100%', md: '322px' } } }}
       >
-        <HamburgerMenu {...{ isLoggedIn, data }} />
+        <HamburgerMenu {...{ isLoggedIn, data, clickHandler }} />
       </HamburgerMenuContainer>
     </>
   );
@@ -41,7 +48,8 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
 export const GlobalNavWithCustomDrawer = ({
   isLoggedIn,
   isSunday,
-  data
+  data,
+  clickHandler
 }: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
   return (
@@ -53,13 +61,14 @@ export const GlobalNavWithCustomDrawer = ({
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}
         toggleHamburger={setHamburgerActive}
+        clickHandler={clickHandler}
       />
       <CustomHamburgerMenuContainer
         setHamburgerActive={setHamburgerActive}
         hamburgerActive={hamburgerActive}
         isLoggedIn={isLoggedIn}
       >
-        <HamburgerMenu {...{ isLoggedIn, data }} />
+        <HamburgerMenu {...{ isLoggedIn, data, clickHandler }} />
       </CustomHamburgerMenuContainer>
     </>
   );

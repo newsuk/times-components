@@ -6,7 +6,8 @@ const NavigationList: React.FC<{
   data: MenuItemParent[];
   expandedL1?: string;
   onExpand?: (slug: string) => void;
-}> = ({ data, expandedL1, onExpand }) => {
+  clickHandler: (title: string) => void;
+}> = ({ data, expandedL1, onExpand, clickHandler }) => {
   return (
     <>
       {data.map(
@@ -36,6 +37,7 @@ const NavigationList: React.FC<{
                         stylePreset: 'menuItemL2',
                         typographyPreset: 'newPreset040'
                       }}
+                      onClick={() => clickHandler(i.title)}
                     >
                       {i.title}
                     </MenuItem>
@@ -55,6 +57,7 @@ const NavigationList: React.FC<{
                   stylePreset: 'menuItemL1',
                   typographyPreset: 'newPreset040'
                 }}
+                onClick={() => clickHandler(item.title)}
               >
                 {item.title}
               </MenuItem>

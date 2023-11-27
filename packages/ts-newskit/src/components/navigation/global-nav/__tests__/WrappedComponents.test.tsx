@@ -6,6 +6,7 @@ import {
   WrappedHamburger
 } from '../wrapped-components/WrappedComponents';
 import data from '../fixtures/data.json';
+const mockClickHandler = jest.fn();
 
 describe('WrappedComponents', () => {
   it('renders the wrapped hamburger', () => {
@@ -14,13 +15,18 @@ describe('WrappedComponents', () => {
         data={data}
         isLoggedIn={true}
         data-testid="WrappedHamburger"
+        clickHandler={mockClickHandler}
       />
     );
     expect(asFragment()).toBeTruthy();
   });
   it('renders the wrapped GlobalNav', () => {
     const { asFragment } = render(
-      <WrappedGlobalNav data={data} data-testid="WrappedGlobalNav" />
+      <WrappedGlobalNav
+        data={data}
+        data-testid="WrappedGlobalNav"
+        clickHandler={mockClickHandler}
+      />
     );
     expect(asFragment()).toBeTruthy();
   });

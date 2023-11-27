@@ -8,8 +8,12 @@ import {
   TSNewskitDrawer
 } from '../index';
 
+const mockClickHandler = jest.fn();
+
 const renderComponent = (isLoggedIn?: boolean) =>
-  render(<GlobalNav {...{ isLoggedIn, data }} />);
+  render(
+    <GlobalNav {...{ isLoggedIn, data }} clickHandler={mockClickHandler} />
+  );
 
 describe('Render GlobalNav', () => {
   it('should render the component in loggedIn state', () => {
@@ -54,6 +58,7 @@ describe('GlobalNavWithCustomDrawer', () => {
         data={data}
         isLoggedIn={false}
         isSunday={false}
+        clickHandler={mockClickHandler}
       />
     );
     expect(asFragment()).toBeTruthy();
@@ -65,6 +70,7 @@ describe('GlobalNavWithCustomDrawer', () => {
         data={data}
         isLoggedIn={true}
         isSunday={false}
+        clickHandler={mockClickHandler}
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -72,7 +78,11 @@ describe('GlobalNavWithCustomDrawer', () => {
 
   it('matches snapshot when logged out', () => {
     const { asFragment } = render(
-      <GlobalNavWithCustomDrawer data={data} isSunday={false} />
+      <GlobalNavWithCustomDrawer
+        data={data}
+        isSunday={false}
+        clickHandler={mockClickHandler}
+      />
     );
     expect(asFragment()).toMatchSnapshot();
   });

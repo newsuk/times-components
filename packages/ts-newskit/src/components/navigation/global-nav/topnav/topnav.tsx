@@ -27,6 +27,7 @@ type TopNavProps = {
   toggleHamburger: (isHamburgerOpen: boolean) => void;
   mainMenu?: any;
   accountMenu?: any;
+  clickHandler: (title: string) => void;
 };
 
 export const TopNav: React.FC<TopNavProps> = ({
@@ -35,7 +36,8 @@ export const TopNav: React.FC<TopNavProps> = ({
   isHamburgerOpen,
   toggleHamburger,
   isLoggedIn = false,
-  isSunday = false
+  isSunday = false,
+  clickHandler
 }) => {
   const [searchActive, setSearchActive] = useState<boolean>(false);
 
@@ -56,6 +58,11 @@ export const TopNav: React.FC<TopNavProps> = ({
     </LinkInline>
   );
 
+  const handleHamburgerClick = () => {
+    toggleHamburger(!isHamburgerOpen);
+    clickHandler(isHamburgerOpen ? 'Close Menu' : 'Open Menu');
+  };
+
   return (
     <>
       <TopNavContainer
@@ -74,7 +81,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               stylePreset: 'buttonTopNav'
             }}
             aria-label={isHamburgerOpen ? 'Close Menu' : 'Open Menu'}
-            onClick={() => toggleHamburger(!isHamburgerOpen)}
+            onClick={handleHamburgerClick}
             aria-controls="hamburgerMenu"
             aria-expanded={isHamburgerOpen}
           >
@@ -103,7 +110,7 @@ export const TopNav: React.FC<TopNavProps> = ({
                 overrides={{ spaceInline: 'space000' }}
                 aria-label="Main menu"
               >
-                {createMenu(mainMenu)}
+                {createMenu(mainMenu, clickHandler)}
               </Menu>
             </Visible>
           </TopNavHide>
@@ -112,11 +119,17 @@ export const TopNav: React.FC<TopNavProps> = ({
           </MastheadMob>
         </Stack>
         <Visible md lg xl>
-          {createAccountMenu(isLoggedIn, accountMenu)}
+          {createAccountMenu(isLoggedIn, accountMenu, clickHandler)}
         </Visible>
       </TopNavContainer>
       <ScrollMenuContainer xs sm>
-        {!isLoggedIn && <LoggedOutButtons loginUrl={'/'} subscribeUrl={'/'} />}
+        {!isLoggedIn && (
+          <LoggedOutButtons
+            loginUrl={'/'}
+            subscribeUrl={'/'}
+            clickHandler={clickHandler}
+          />
+        )}
         <Scroll overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}>
           <Stack flow="horizontal-top">
             <ScrollMenu
@@ -127,7 +140,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               }}
               aria-label="Main menu"
             >
-              {createMenu(mainMenu)}
+              {createMenu(mainMenu, clickHandler)}
             </ScrollMenu>
           </Stack>
         </Scroll>
