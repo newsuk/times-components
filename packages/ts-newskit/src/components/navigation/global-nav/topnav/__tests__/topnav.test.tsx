@@ -34,6 +34,37 @@ describe('Render TopNav', () => {
     const { asFragment } = renderComponent(true, true);
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('should call the mockClickHandler when log in button clicked', async () => {
+    renderComponent(false);
+    const loginBtn = screen.getByRole('link', { name: 'Log in' });
+    fireEvent.click(loginBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Log in');
+  });
+
+  it('should call the mockClickHandler when Subscribe button clicked', async () => {
+    renderComponent(false);
+    const subscribeBtn = screen.getByRole('link', { name: 'Subscribe' });
+    fireEvent.click(subscribeBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Subscribe');
+  });
+
+  it('should call the mockClickHandler with "Close Menu" when hamburger icon clicked', async () => {
+    render(
+      <TopNav
+        isLoggedIn={true}
+        isSunday={false}
+        mainMenu={data.mainMenuItems}
+        accountMenu={data.accountMenuItems}
+        isHamburgerOpen={true}
+        toggleHamburger={jest.fn}
+        clickHandler={mockClickHandler}
+      />
+    );
+    const hamburgerIcon = screen.getByLabelText('Close Menu');
+    fireEvent.click(hamburgerIcon);
+    expect(mockClickHandler).toHaveBeenCalledWith('Close Menu');
+  });
 });
 
 describe('TopNav button functions', () => {
