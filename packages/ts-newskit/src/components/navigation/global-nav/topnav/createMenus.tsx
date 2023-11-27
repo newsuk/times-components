@@ -82,7 +82,7 @@ const createMoreMenu = (
           typographyPreset: 'topNav010'
         }}
         key={url}
-        onClick={() => clickHandler(title)}
+        onClick={() => clickHandler(`more: ${title}`)}
       >
         {title}
       </MenuItem>

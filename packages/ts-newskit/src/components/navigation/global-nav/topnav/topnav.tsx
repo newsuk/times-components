@@ -58,7 +58,7 @@ export const TopNav: React.FC<TopNavProps> = ({
     </LinkInline>
   );
 
-  const handleHamburgerClick = () => {
+  const handleClick = () => {
     toggleHamburger(!isHamburgerOpen);
     clickHandler(isHamburgerOpen ? 'Close Menu' : 'Open Menu');
   };
@@ -81,7 +81,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               stylePreset: 'buttonTopNav'
             }}
             aria-label={isHamburgerOpen ? 'Close Menu' : 'Open Menu'}
-            onClick={handleHamburgerClick}
+            onClick={handleClick}
             aria-controls="hamburgerMenu"
             aria-expanded={isHamburgerOpen}
           >

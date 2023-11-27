@@ -80,4 +80,18 @@ describe('NavButtons Logged Out', () => {
     expect(loginBtn).toHaveStyle('background-color: rgba(29,29,27,1)');
     expect(subscribeBtn).toHaveStyle('background-color: rgba(0, 92, 138, 1)');
   });
+
+  it('should call the mockClickHandler when log in button clicked', async () => {
+    renderMenu(false);
+    const menu = screen.getByText(/Log in/i);
+    fireEvent.click(menu);
+    expect(mockClickHandler).toHaveBeenCalled();
+  });
+
+  it('should call the mockClickHandler when Subscribe button clicked', async () => {
+    renderMenu(false);
+    const menu = screen.getAllByText(/Subscribe/i)[0];
+    fireEvent.click(menu);
+    expect(mockClickHandler).toHaveBeenCalled();
+  });
 });
