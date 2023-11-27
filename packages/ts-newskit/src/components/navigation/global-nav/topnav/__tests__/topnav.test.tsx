@@ -63,6 +63,20 @@ describe('Render TopNav', () => {
     expect(mockClickHandler).toHaveBeenCalledWith('Manage account');
   });
 
+  it('should call the mockClickHandler when Login button clicked', async () => {
+    renderComponent(false);
+    const login = screen.getByText('Login');
+    fireEvent.click(login);
+    expect(mockClickHandler).toHaveBeenCalledWith('Login');
+  });
+
+  it('should call the mockClickHandler when Subscribe button clicked', async () => {
+    renderComponent(false);
+    const subscribe = screen.getAllByText('Subscribe')[0];
+    fireEvent.click(subscribe);
+    expect(mockClickHandler).toHaveBeenCalledWith('Subscribe');
+  });
+
   it('should call the mockClickHandler with "Close Menu" when hamburger icon clicked', async () => {
     render(
       <TopNav
