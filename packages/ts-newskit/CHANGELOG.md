@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.140.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.0...@times-components/ts-newskit@1.140.1) (2023-11-27)
+
+
+### Bug Fixes
+
+* **TMRX-1476:** wrap comment bucket with CustomBlockLayout ([#3669](https://github.com/newsuk/times-components/issues/3669)) ([d0e25a3](https://github.com/newsuk/times-components/commit/d0e25a35d8899f0146ae843dd07655a27f45f45d))
+
+
+
+
+
 # [1.140.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.139.2...@times-components/ts-newskit@1.140.0) (2023-11-24)
 
 
