@@ -31,13 +31,9 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      NEW
-                    </div>
+                    NEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -49,13 +45,9 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      PROFILE
-                    </div>
+                    PROFILE
                   </span>
                   <div
                     class="css-p44zak"
@@ -157,13 +149,9 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
+                    EXCLUSIVE
                   </span>
                   <div
                     class="css-p44zak"
@@ -175,13 +163,9 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -326,13 +310,9 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-6tvr2h"
+                  class="css-ciimpt"
                 >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    NEW
-                  </div>
+                  NEW
                 </span>
                 <div
                   class="css-p44zak"
@@ -344,13 +324,9 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1basb1c"
+                  class="css-1kanhs9"
                 >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    REVIEW
-                  </div>
+                  REVIEW
                 </span>
                 <div
                   class="css-p44zak"
@@ -486,13 +462,9 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-6tvr2h"
+                  class="css-ciimpt"
                 >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    EXCLUSIVE
-                  </div>
+                  EXCLUSIVE
                 </span>
                 <div
                   class="css-p44zak"
@@ -504,13 +476,9 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1basb1c"
+                  class="css-1kanhs9"
                 >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    INTERVIEW
-                  </div>
+                  INTERVIEW
                 </span>
                 <div
                   class="css-p44zak"
@@ -623,13 +591,9 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      NEW
-                    </div>
+                    NEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -641,13 +605,9 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      PROFILE
-                    </div>
+                    PROFILE
                   </span>
                   <div
                     class="css-p44zak"
@@ -749,13 +709,9 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
+                    EXCLUSIVE
                   </span>
                   <div
                     class="css-p44zak"
@@ -767,13 +723,9 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -918,13 +870,9 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-6tvr2h"
+                  class="css-ciimpt"
                 >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    NEW
-                  </div>
+                  NEW
                 </span>
                 <div
                   class="css-p44zak"
@@ -936,13 +884,9 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1basb1c"
+                  class="css-1kanhs9"
                 >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    REVIEW
-                  </div>
+                  REVIEW
                 </span>
                 <div
                   class="css-p44zak"
@@ -1078,13 +1022,9 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-6tvr2h"
+                  class="css-ciimpt"
                 >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    EXCLUSIVE
-                  </div>
+                  EXCLUSIVE
                 </span>
                 <div
                   class="css-p44zak"
@@ -1096,13 +1036,9 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1basb1c"
+                  class="css-1kanhs9"
                 >
-                  <div
-                    class="css-gb5m6n"
-                  >
-                    INTERVIEW
-                  </div>
+                  INTERVIEW
                 </span>
                 <div
                   class="css-p44zak"

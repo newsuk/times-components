@@ -112,6 +112,15 @@ export const StyledTextBlock = styled(TextBlock)`
   border-radius: 2px;
 `;
 
+export const InlineTextBlock = styled(TextBlock)`
+  display: inline;
+
+  ::before,
+  ::after {
+    display: inline-block;
+  }
+`;
+
 export const StyledBlock = styled(Block)`
   position: relative;
   display: flex;
@@ -120,8 +129,10 @@ export const StyledBlock = styled(Block)`
   ${getSpacingCssFromTheme('row-gap', 'space020')};
 `;
 
-export const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  ${getSpacingCssFromTheme('gap', 'space010')};
+export const VideoIconContainer = styled.span`
+  vertical-align: baseline;
+  line-height: 24px;
+  :last-child > div {
+    display: none;
+  }
 `;

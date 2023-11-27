@@ -66,13 +66,9 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-1basb1c"
+          class="css-1kanhs9"
         >
-          <div
-            class="css-gb5m6n"
-          >
-            INTERVIEW
-          </div>
+          INTERVIEW
         </span>
         <div
           class="css-p44zak"
@@ -84,13 +80,9 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-1basb1c"
+          class="css-1kanhs9"
         >
-          <div
-            class="css-gb5m6n"
-          >
-            MARTIN SAMUEL
-          </div>
+          MARTIN SAMUEL
         </span>
         <div
           class="css-p44zak"
