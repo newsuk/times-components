@@ -171,9 +171,7 @@ export const Article = ({
             area="media"
             aria-label="article-lead-image"
             className="article-image"
-            marginBlockEnd={{
-              xs: 'space020'
-            }}
+            marginBlockEnd='space020'
           >
             {image}
           </FullWidthGridLayoutItem>
