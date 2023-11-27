@@ -112,6 +112,15 @@ export const StyledTextBlock = styled(TextBlock)`
   border-radius: 2px;
 `;
 
+export const InlineTextBlock = styled(TextBlock)`
+  display: inline;
+
+  ::before,
+  ::after {
+    display: inline-block;
+  }
+`;
+
 export const StyledBlock = styled(Block)`
   position: relative;
   display: flex;
@@ -120,13 +129,9 @@ export const StyledBlock = styled(Block)`
   ${getSpacingCssFromTheme('row-gap', 'space020')};
 `;
 
-export const Container = styled.div`
-  display: block;
-`;
-
-export const TileSpanContainer = styled.span<{ isVideoIcon?: boolean }>`
-  ${({ isVideoIcon }) => isVideoIcon && 'vertical-align: baseline'};
-  ${({ isVideoIcon }) => isVideoIcon && 'line-height: 24px'};
+export const VideoIconContainer = styled.span`
+  vertical-align: baseline;
+  line-height: 24px;
   :last-child > div {
     display: none;
   }
