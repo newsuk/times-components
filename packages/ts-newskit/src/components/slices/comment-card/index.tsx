@@ -9,19 +9,12 @@ import {
 import React from 'react';
 import { CardHeadlineLink } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
-import { ClickHandlerType, MouseEventType } from '../../../slices/types';
+import {
+  ClickHandlerType,
+  MouseEventType,
+  ImageProps
+} from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
-
-type ImageCrops = {
-  url?: string;
-  ratio?: string;
-};
-
-type ImageProps = {
-  alt?: string;
-  caption?: string;
-  crops?: ImageCrops[];
-};
 
 export interface CommentCardProps {
   id: string;
