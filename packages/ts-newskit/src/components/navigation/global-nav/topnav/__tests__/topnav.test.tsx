@@ -49,6 +49,13 @@ describe('Render TopNav', () => {
     expect(mockClickHandler).toHaveBeenCalledWith('Subscribe');
   });
 
+  it('should call the mockClickHandler when Times + button clicked', async () => {
+    renderComponent(true);
+    const TimesText = screen.getByText('Times +');
+    fireEvent.click(TimesText);
+    expect(mockClickHandler).toHaveBeenCalledWith('Times +');
+  });
+
   it('should call the mockClickHandler with "Close Menu" when hamburger icon clicked', async () => {
     render(
       <TopNav
