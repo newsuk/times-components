@@ -49,6 +49,13 @@ describe('createMenu', () => {
     fireEvent.click(MenuSub);
     expect(MenuSub.getAttribute('aria-expanded')).toEqual('true');
   });
+
+  it('should call the mockClickHandler when navitem clicked', async () => {
+    renderMenu(false);
+    const subscribeBtn = screen.getByRole('link', { name: 'Home' });
+    fireEvent.click(subscribeBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Home');
+  });
 });
 
 describe('accountCreateMenu', () => {
@@ -59,6 +66,13 @@ describe('accountCreateMenu', () => {
 
     fireEvent.click(MenuSub);
     expect(MenuSub.getAttribute('aria-expanded')).toEqual('true');
+  });
+
+  it('should call the mockClickHandler when navitem with more button clicked', async () => {
+    renderMenu(false);
+    const subscribeBtn = screen.getByRole('link', { name: 'Sport' });
+    fireEvent.click(subscribeBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Sport');
   });
 });
 
