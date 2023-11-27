@@ -67,4 +67,18 @@ describe('NavigationList', () => {
     fireEvent.click(Button);
     expect(onExpand).toHaveBeenCalled();
   });
+
+  it('calls clickHandler when you click on an L2 item', () => {
+    const { getByText } = render(
+      <NavigationList
+        data={testData.mainMenuItems}
+        expandedL1="main-menu-2"
+        onExpand={onExpand}
+        clickHandler={mockClickHandler}
+      />
+    );
+    const L2Item = getByText('Item 1');
+    fireEvent.click(L2Item);
+    expect(mockClickHandler).toHaveBeenCalledWith('Item 1');
+  });
 });
