@@ -16,15 +16,13 @@ export type ClickHandlerType = (
 
 export type StackArticleOptions = MQPartial<Partial<ArticleProps>>;
 
-<<<<<<< HEAD
-export interface CustomStackLayoutProps {
+export type CustomStackLayoutProps = {
   marginBlockEnd?: string;
   className?: string;
-}
-export interface CustomGridLayoutProps {
+};
+export type CustomGridLayoutProps = {
   children?: React.ReactNode;
-}
-=======
+};
 export type ImageCrops = {
   url?: string;
   ratio?: string;
@@ -63,4 +61,3 @@ export type TagAndFlagProps = {
   };
   marginBlockStart?: MQ<string> | string;
 };
->>>>>>> 659760a61f (chore: move types to separate file)
