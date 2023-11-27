@@ -83,15 +83,15 @@ describe('NavButtons Logged Out', () => {
 
   it('should call the mockClickHandler when log in button clicked', async () => {
     renderMenu(false);
-    const menu = screen.getByText(/Log in/i);
-    fireEvent.click(menu);
-    expect(mockClickHandler).toHaveBeenCalled();
+    const loginBtn = screen.getByRole('link', { name: 'Log in' });
+    fireEvent.click(loginBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Log in');
   });
 
   it('should call the mockClickHandler when Subscribe button clicked', async () => {
     renderMenu(false);
-    const menu = screen.getAllByText(/Subscribe/i)[0];
-    fireEvent.click(menu);
-    expect(mockClickHandler).toHaveBeenCalled();
+    const subscribeBtn = screen.getByRole('link', { name: 'Subscribe' });
+    fireEvent.click(subscribeBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Subscribe');
   });
 });
