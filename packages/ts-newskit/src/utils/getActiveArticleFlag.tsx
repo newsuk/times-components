@@ -1,4 +1,4 @@
-import { expirableFlagsProps } from '../components/slices/shared/articleTileInfo';
+import { expirableFlagsProps } from '../slices/types';
 
 export const getActiveArticleFlags = (flags: expirableFlagsProps[]) => {
   const findFlag = flags.find(

@@ -1,12 +1,12 @@
 import { Block, Divider, Visible } from 'newskit';
 import React from 'react';
-import { BlockNoTopMargin } from '../lead-story-1/styles';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { ClickHandlerType } from '../types';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
+import { BlockNoTopMargin } from '../shared-styles';
 
 export interface ArticlesProps {
   leadArticles: LeadArticleProps[];

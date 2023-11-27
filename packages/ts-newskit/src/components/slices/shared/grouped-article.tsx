@@ -2,8 +2,7 @@ import React from 'react';
 import { Block, GridLayout, Divider } from 'newskit';
 import { LeadArticle, LeadArticleProps } from '../lead-article/index';
 import { FullWidthBlock } from '../shared-styles/index';
-import { ClickHandlerType } from '../../../slices/types';
-import { expirableFlagsProps } from './articleTileInfo';
+import { ClickHandlerType, expirableFlagsProps } from '../../../slices/types';
 
 export interface GroupedArticleProps {
   contentType?: string;

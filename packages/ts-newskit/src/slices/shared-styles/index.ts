@@ -9,6 +9,11 @@ import {
 } from 'newskit';
 import { CustomStackLayout } from '../shared';
 
+const setBlockMargin = (space: string) => ({ marginBlockStart: `-${space}` });
+export const BlockNoTopMargin = styled(Block)`
+  ${getSpacingCssFromTheme(setBlockMargin, 'space040')};
+`;
+
 export const LeadStoryContainer = styled(CustomStackLayout)<{
   className?: string;
 }>`

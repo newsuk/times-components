@@ -14,24 +14,15 @@ import {
   FullWidthGridLayoutItem
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
-import { ClickHandlerType, MouseEventType } from '../../../slices/types';
-import { articleClickTracking } from '../../../utils/tracking';
 import {
-  ArticleTileInfo,
+  ClickHandlerType,
+  MouseEventType,
+  ImageProps,
   expirableFlagsProps
-} from '../shared/articleTileInfo';
+} from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
+import { ArticleTileInfo } from '../shared/articleTileInfo';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
-
-type ImageCrops = {
-  url?: string;
-  ratio?: string;
-};
-
-type ImageProps = {
-  alt?: string;
-  caption?: string;
-  crops?: ImageCrops[];
-};
 
 export interface ArticleProps {
   id: string;
