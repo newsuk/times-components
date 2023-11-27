@@ -17,17 +17,19 @@ import { RelativeBlockItem } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType } from '../types';
 
+interface ArticleStackProps {
+  verticalArticles: LeadArticleProps[];
+  horizontalArticles: LeadArticleProps[];
+  horizontalArticleContentWidth?: MQ<string> | string;
+  clickHandler: ClickHandlerType;
+}
+
 export const ArticleStack = ({
   verticalArticles,
   horizontalArticles,
   horizontalArticleContentWidth,
   clickHandler
-}: {
-  verticalArticles: LeadArticleProps[];
-  horizontalArticles: LeadArticleProps[];
-  horizontalArticleContentWidth?: MQ<string> | string;
-  clickHandler: ClickHandlerType;
-}) => {
+}: ArticleStackProps) => {
   const modifiedHorizontalArticles = horizontalArticles.map(item => ({
     ...clearCreditsAndCaption(item),
     imageTop: true,

@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.140.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.2...@times-components/ts-newskit@1.140.3) (2023-11-27)
+
+
+### Bug Fixes
+
+* **TMRX-1578:** Remove article tile info line break ([#3664](https://github.com/newsuk/times-components/issues/3664)) ([635d8ab](https://github.com/newsuk/times-components/commit/635d8ab9bbc40394c84f4e96c22d42231a0b5c81))
+
+
+
+
+
+## [1.140.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.1...@times-components/ts-newskit@1.140.2) (2023-11-27)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.140.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.0...@times-components/ts-newskit@1.140.1) (2023-11-27)
+
+
+### Bug Fixes
+
+* **TMRX-1476:** wrap comment bucket with CustomBlockLayout ([#3669](https://github.com/newsuk/times-components/issues/3669)) ([d0e25a3](https://github.com/newsuk/times-components/commit/d0e25a35d8899f0146ae843dd07655a27f45f45d))
+
+
+
+
+
+# [1.140.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.139.2...@times-components/ts-newskit@1.140.0) (2023-11-24)
+
+
+### Features
+
+* **TMRX-1578:** reverted changes related to v2 updates ([#3660](https://github.com/newsuk/times-components/issues/3660)) ([4149144](https://github.com/newsuk/times-components/commit/4149144174e0a187cf95670cfe811eb3a97f4fc1))
+
+
+
+
+
+## [1.139.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.139.1...@times-components/ts-newskit@1.139.2) (2023-11-23)
+
+
+### Bug Fixes
+
+* **TMRX-1667:** fix lead story 4 content widths ([#3663](https://github.com/newsuk/times-components/issues/3663)) ([25a854d](https://github.com/newsuk/times-components/commit/25a854d0aba9d1b9f4235de176abaa7eef043c13))
+
+
+
+
+
 ## [1.139.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.139.0...@times-components/ts-newskit@1.139.1) (2023-11-23)
 
 **Note:** Version bump only for package @times-components/ts-newskit

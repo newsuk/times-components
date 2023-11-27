@@ -5,6 +5,7 @@ import { ArticleProps } from '../../components/slices/article';
 import { ClickHandlerType } from '../types';
 import { LeadStory4Desktop } from './desktop';
 import { LeadStory4Mobile } from './mobile';
+import { CustomBlockLayout } from '../shared';
 
 export interface LeadStory4Props {
   leadArticle: LeadArticleProps;
@@ -76,7 +77,7 @@ export const LeadStory4 = ({
     articleMediumBreakPoint && articleMediumBreakPoint.slice(0, 1);
   const article234 = article4 && article2and3 && [...article2and3, ...article4];
   return (
-    <>
+    <CustomBlockLayout>
       <Hidden xs sm>
         <LeadStory4Desktop
           leadArticle={modifiedLeadArticle}
@@ -98,6 +99,6 @@ export const LeadStory4 = ({
           article234={article234}
         />
       </Visible>
-    </>
+    </CustomBlockLayout>
   );
 };

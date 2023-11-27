@@ -1,9 +1,6 @@
 import React from 'react';
 import { StyledTextBlock } from '../shared-styles';
-
-export interface LiveTagProps {
-  liveTag?: string;
-}
+import { LiveTagProps } from '../../../slices/types';
 
 export const LiveTag = ({ liveTag }: LiveTagProps) => {
   const hasLiveTag = liveTag && liveTag !== '';
