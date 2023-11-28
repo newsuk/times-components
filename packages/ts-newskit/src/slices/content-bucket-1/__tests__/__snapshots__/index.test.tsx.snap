@@ -76,9 +76,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1kanhs9"
+                    class="css-1basb1c"
                   >
-                    INTERVIEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      INTERVIEW
+                    </div>
                   </span>
                   <div
                     class="css-p44zak"
@@ -90,9 +94,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1kanhs9"
+                    class="css-1basb1c"
                   >
-                    MARTIN SAMUEL
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      MARTIN SAMUEL
+                    </div>
                   </span>
                   <div
                     class="css-p44zak"
@@ -240,9 +248,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1kanhs9"
+                    class="css-1basb1c"
                   >
-                    INTERVIEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      INTERVIEW
+                    </div>
                   </span>
                   <div
                     class="css-p44zak"
@@ -254,9 +266,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1kanhs9"
+                    class="css-1basb1c"
                   >
-                    MARTIN SAMUEL
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      MARTIN SAMUEL
+                    </div>
                   </span>
                   <div
                     class="css-p44zak"
@@ -572,9 +588,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         class="article-info css-1wte5n0"
                       >
                         <span
-                          class="css-ciimpt"
+                          class="css-6tvr2h"
                         >
-                          UPDATED
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            UPDATED
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -586,9 +606,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           />
                         </div>
                         <span
-                          class="css-1kanhs9"
+                          class="css-1basb1c"
                         >
-                          PROFILE
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            PROFILE
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -660,9 +684,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         class="article-info css-1wte5n0"
                       >
                         <span
-                          class="css-ciimpt"
+                          class="css-6tvr2h"
                         >
-                          EXCLUSIVE
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            EXCLUSIVE
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -674,9 +702,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           />
                         </div>
                         <span
-                          class="css-1kanhs9"
+                          class="css-1basb1c"
                         >
-                          REVIEW
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            REVIEW
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -748,9 +780,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         class="article-info css-1wte5n0"
                       >
                         <span
-                          class="css-ciimpt"
+                          class="css-6tvr2h"
                         >
-                          UPDATED
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            UPDATED
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -762,9 +798,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           />
                         </div>
                         <span
-                          class="css-1kanhs9"
+                          class="css-1basb1c"
                         >
-                          Q&A
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            Q&A
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -836,9 +876,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         class="article-info css-1wte5n0"
                       >
                         <span
-                          class="css-ciimpt"
+                          class="css-6tvr2h"
                         >
-                          EXCLUSIVE
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            EXCLUSIVE
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -850,9 +894,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           />
                         </div>
                         <span
-                          class="css-1kanhs9"
+                          class="css-1basb1c"
                         >
-                          REVIEW
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            REVIEW
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -929,9 +977,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-ciimpt"
+                      class="css-6tvr2h"
                     >
-                      UPDATED
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -943,9 +995,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1kanhs9"
+                      class="css-1basb1c"
                     >
-                      PROFILE
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        PROFILE
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -1017,9 +1073,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-ciimpt"
+                      class="css-6tvr2h"
                     >
-                      EXCLUSIVE
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        EXCLUSIVE
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -1031,9 +1091,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1kanhs9"
+                      class="css-1basb1c"
                     >
-                      REVIEW
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        REVIEW
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -1105,9 +1169,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-ciimpt"
+                      class="css-6tvr2h"
                     >
-                      UPDATED
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -1119,9 +1187,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1kanhs9"
+                      class="css-1basb1c"
                     >
-                      Q&A
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -1193,9 +1265,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-ciimpt"
+                      class="css-6tvr2h"
                     >
-                      EXCLUSIVE
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        EXCLUSIVE
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -1207,9 +1283,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1kanhs9"
+                      class="css-1basb1c"
                     >
-                      REVIEW
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        REVIEW
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -1509,9 +1589,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1kanhs9"
+                    class="css-1basb1c"
                   >
-                    INTERVIEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      INTERVIEW
+                    </div>
                   </span>
                   <div
                     class="css-p44zak"
@@ -1523,9 +1607,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1kanhs9"
+                    class="css-1basb1c"
                   >
-                    MARTIN SAMUEL
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      MARTIN SAMUEL
+                    </div>
                   </span>
                   <div
                     class="css-p44zak"
@@ -1673,9 +1761,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1kanhs9"
+                    class="css-1basb1c"
                   >
-                    INTERVIEW
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      INTERVIEW
+                    </div>
                   </span>
                   <div
                     class="css-p44zak"
@@ -1687,9 +1779,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1kanhs9"
+                    class="css-1basb1c"
                   >
-                    MARTIN SAMUEL
+                    <div
+                      class="css-gb5m6n"
+                    >
+                      MARTIN SAMUEL
+                    </div>
                   </span>
                   <div
                     class="css-p44zak"
@@ -2005,9 +2101,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                         class="article-info css-1wte5n0"
                       >
                         <span
-                          class="css-ciimpt"
+                          class="css-6tvr2h"
                         >
-                          UPDATED
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            UPDATED
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -2019,9 +2119,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                           />
                         </div>
                         <span
-                          class="css-1kanhs9"
+                          class="css-1basb1c"
                         >
-                          PROFILE
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            PROFILE
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -2093,9 +2197,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                         class="article-info css-1wte5n0"
                       >
                         <span
-                          class="css-ciimpt"
+                          class="css-6tvr2h"
                         >
-                          EXCLUSIVE
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            EXCLUSIVE
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -2107,9 +2215,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                           />
                         </div>
                         <span
-                          class="css-1kanhs9"
+                          class="css-1basb1c"
                         >
-                          REVIEW
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            REVIEW
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -2181,9 +2293,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                         class="article-info css-1wte5n0"
                       >
                         <span
-                          class="css-ciimpt"
+                          class="css-6tvr2h"
                         >
-                          UPDATED
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            UPDATED
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -2195,9 +2311,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                           />
                         </div>
                         <span
-                          class="css-1kanhs9"
+                          class="css-1basb1c"
                         >
-                          Q&A
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            Q&A
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -2269,9 +2389,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                         class="article-info css-1wte5n0"
                       >
                         <span
-                          class="css-ciimpt"
+                          class="css-6tvr2h"
                         >
-                          EXCLUSIVE
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            EXCLUSIVE
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -2283,9 +2407,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                           />
                         </div>
                         <span
-                          class="css-1kanhs9"
+                          class="css-1basb1c"
                         >
-                          REVIEW
+                          <div
+                            class="css-gb5m6n"
+                          >
+                            REVIEW
+                          </div>
                         </span>
                         <div
                           class="css-p44zak"
@@ -2362,9 +2490,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-ciimpt"
+                      class="css-6tvr2h"
                     >
-                      UPDATED
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -2376,9 +2508,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1kanhs9"
+                      class="css-1basb1c"
                     >
-                      PROFILE
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        PROFILE
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -2450,9 +2586,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-ciimpt"
+                      class="css-6tvr2h"
                     >
-                      EXCLUSIVE
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        EXCLUSIVE
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -2464,9 +2604,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1kanhs9"
+                      class="css-1basb1c"
                     >
-                      REVIEW
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        REVIEW
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -2538,9 +2682,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-ciimpt"
+                      class="css-6tvr2h"
                     >
-                      UPDATED
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        UPDATED
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -2552,9 +2700,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1kanhs9"
+                      class="css-1basb1c"
                     >
-                      Q&A
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        Q&A
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -2626,9 +2778,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-ciimpt"
+                      class="css-6tvr2h"
                     >
-                      EXCLUSIVE
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        EXCLUSIVE
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"
@@ -2640,9 +2796,13 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot for mobile 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1kanhs9"
+                      class="css-1basb1c"
                     >
-                      REVIEW
+                      <div
+                        class="css-gb5m6n"
+                      >
+                        REVIEW
+                      </div>
                     </span>
                     <div
                       class="css-p44zak"

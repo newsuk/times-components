@@ -1,10 +1,6 @@
 import React from 'react';
 import { Divider } from 'newskit';
-import {
-  ContainerInline,
-  StyledBlock,
-  VideoIconContainer
-} from '../shared-styles';
+import { ContainerInline, StyledBlock } from '../shared-styles';
 import { LiveTag } from './live-tag';
 import { CustomTextBlock } from './customTextBlock';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
@@ -92,17 +88,11 @@ export const ArticleTileInfo = ({
           )}
           {hasVideo && (
             <TileWrapper>
-              <VideoIconContainer>
-                <CustomTextBlock
-                  text="VIDEO"
-                  stylePreset="inkContrast"
-                  icon={
-                    <VideoIcon
-                      style={{ verticalAlign: 'top', marginRight: '4px' }}
-                    />
-                  }
-                />
-              </VideoIconContainer>
+              <CustomTextBlock
+                text="VIDEO"
+                stylePreset="inkContrast"
+                icon={<VideoIcon />}
+              />
             </TileWrapper>
           )}
           {label && (
