@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.116.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.15...@times-components/article-skeleton@1.116.0) (2023-11-27)
+
+
+### Features
+
+* **TMG-911:** Add tracking param customerType ([#3671](https://github.com/newsuk/times-components/issues/3671)) ([b888fb2](https://github.com/newsuk/times-components/commit/b888fb2f97eba972cff4a45a6bd2341ed1e100a8))
+
+
+
+
+
+## [1.115.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.14...@times-components/article-skeleton@1.115.15) (2023-11-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.13...@times-components/article-skeleton@1.115.14) (2023-11-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.12...@times-components/article-skeleton@1.115.13) (2023-11-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.11...@times-components/article-skeleton@1.115.12) (2023-11-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.115.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.10...@times-components/article-skeleton@1.115.11) (2023-11-23)
 
 **Note:** Version bump only for package @times-components/article-skeleton

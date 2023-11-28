@@ -2,8 +2,8 @@ import React from 'react';
 import { Divider } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
-import { WrappedStackLayout } from '../shared';
-import { BlockItem, StackItem } from '../shared-styles';
+import { WrappedStackLayout, CustomBlockLayout } from '../shared';
+import { StackItem } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
 import { ClickHandlerType } from '../types';
 import { ArticleGrid } from './styles';
@@ -98,15 +98,7 @@ export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
   const articlesBottom = articles.slice(4);
 
   return (
-    <BlockItem
-      $width={{
-        xs: '100%',
-        md: '720px',
-        lg: '976px',
-        xl: '1276px'
-      }}
-      marginBlockEnd="space060"
-    >
+    <CustomBlockLayout>
       {articleStack({ articles: articlesTop, clickHandler })}
       {articleStack({
         articles: articlesBottom,
@@ -114,6 +106,6 @@ export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
         hideImageOnDesktop: true,
         clickHandler
       })}
-    </BlockItem>
+    </CustomBlockLayout>
   );
 };

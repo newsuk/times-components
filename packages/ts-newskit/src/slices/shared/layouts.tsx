@@ -1,12 +1,6 @@
 import React from 'react';
 import { Stack, GridLayout } from 'newskit';
-export interface CustomStackLayoutProps {
-  marginBlockEnd?: string;
-  className?: string;
-}
-interface CustomGridLayoutProps {
-  children?: React.ReactNode;
-}
+import { CustomGridLayoutProps, CustomStackLayoutProps } from '../types';
 
 export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
   children,

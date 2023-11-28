@@ -76,6 +76,11 @@ export const getRegistrationType = () => {
   return user && user.registrationType ? user.registrationType : "";
 };
 
+export const getCustomerType = () => {
+  const user = (global.nuk && global.nuk.user) || {};
+  return user && user.customerType ? user.customerType : "";
+};
+
 export const getSharedStatus = () => {
   const user = (global.nuk && global.nuk.user) || {};
   return user && user.isShared ? "yes" : "no";

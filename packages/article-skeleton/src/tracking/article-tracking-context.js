@@ -2,6 +2,7 @@ import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
 import {
   getRegistrationType,
+  getCustomerType,
   getSharedStatus,
   getIsLiveOrBreakingFlag,
   getActiveArticleFlags
@@ -58,6 +59,7 @@ export default Component =>
         section: pageSection || get(data, "section", ""),
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
+        customerType: getCustomerType(),
         shared: getSharedStatus(),
         article_flag: getActiveArticleFlags(flags)
           ? getActiveArticleFlags(flags)
