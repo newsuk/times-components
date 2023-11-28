@@ -129,10 +129,8 @@ export const StyledBlock = styled(Block)`
   ${getSpacingCssFromTheme('row-gap', 'space020')};
 `;
 
-export const VideoIconContainer = styled.span`
-  vertical-align: baseline;
-  line-height: 24px;
-  :last-child > div {
-    display: none;
-  }
+export const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  ${getSpacingCssFromTheme('gap', 'space010')};
 `;
