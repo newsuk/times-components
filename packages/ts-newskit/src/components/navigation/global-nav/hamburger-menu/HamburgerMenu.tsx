@@ -14,6 +14,7 @@ export const HamburgerMenu: React.FC<{
   const mainNavigation = 'Sections';
 
   const [expandedL1, setExpandedL1] = useState<string>('');
+
   const [selected, setSelected] = useState(mainNavigation);
 
   return (
