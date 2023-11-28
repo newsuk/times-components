@@ -103,13 +103,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -121,13 +117,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        Q&A
-                      </div>
+                      Q&A
                     </span>
                     <div
                       class="css-p44zak"
@@ -179,13 +171,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -197,13 +185,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -255,13 +239,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        NEW
-                      </div>
+                      NEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -273,13 +253,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -401,13 +377,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        EXCLUSIVE
-                      </div>
+                      EXCLUSIVE
                     </span>
                     <div
                       class="css-p44zak"
@@ -419,13 +391,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -477,13 +445,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -495,13 +459,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -553,13 +513,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        NEW
-                      </div>
+                      NEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -571,13 +527,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -699,13 +651,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        EXCLUSIVE
-                      </div>
+                      EXCLUSIVE
                     </span>
                     <div
                       class="css-p44zak"
@@ -717,13 +665,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -775,13 +719,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -793,13 +733,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -851,13 +787,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        EXCLUSIVE
-                      </div>
+                      EXCLUSIVE
                     </span>
                     <div
                       class="css-p44zak"
@@ -869,13 +801,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -997,13 +925,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -1015,13 +939,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -1073,13 +993,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        NEW
-                      </div>
+                      NEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -1091,13 +1007,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -1149,13 +1061,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -1167,13 +1075,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        INTERVIEW
-                      </div>
+                      INTERVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -1309,13 +1213,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -1327,13 +1227,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      Q&A
-                    </div>
+                    Q&A
                   </span>
                   <div
                     class="css-p44zak"
@@ -1385,13 +1281,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -1403,13 +1295,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -1461,13 +1349,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      NEW
-                    </div>
+                    NEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -1479,13 +1363,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -1607,13 +1487,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
+                    EXCLUSIVE
                   </span>
                   <div
                     class="css-p44zak"
@@ -1625,13 +1501,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -1683,13 +1555,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -1701,13 +1569,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -1759,13 +1623,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      NEW
-                    </div>
+                    NEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -1777,13 +1637,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -1905,13 +1761,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
+                    EXCLUSIVE
                   </span>
                   <div
                     class="css-p44zak"
@@ -1923,13 +1775,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -1981,13 +1829,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -1999,13 +1843,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -2057,13 +1897,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
+                    EXCLUSIVE
                   </span>
                   <div
                     class="css-p44zak"
@@ -2075,13 +1911,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -2203,13 +2035,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -2221,13 +2049,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -2279,13 +2103,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      NEW
-                    </div>
+                    NEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -2297,13 +2117,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -2355,13 +2171,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -2373,13 +2185,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with sm 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      INTERVIEW
-                    </div>
+                    INTERVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -2527,13 +2335,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -2545,13 +2349,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        Q&A
-                      </div>
+                      Q&A
                     </span>
                     <div
                       class="css-p44zak"
@@ -2603,13 +2403,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -2621,13 +2417,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -2679,13 +2471,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        NEW
-                      </div>
+                      NEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -2697,13 +2485,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -2825,13 +2609,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        EXCLUSIVE
-                      </div>
+                      EXCLUSIVE
                     </span>
                     <div
                       class="css-p44zak"
@@ -2843,13 +2623,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -2901,13 +2677,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -2919,13 +2691,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -2977,13 +2745,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        NEW
-                      </div>
+                      NEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -2995,13 +2759,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -3123,13 +2883,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        EXCLUSIVE
-                      </div>
+                      EXCLUSIVE
                     </span>
                     <div
                       class="css-p44zak"
@@ -3141,13 +2897,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -3199,13 +2951,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -3217,13 +2965,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -3275,13 +3019,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        EXCLUSIVE
-                      </div>
+                      EXCLUSIVE
                     </span>
                     <div
                       class="css-p44zak"
@@ -3293,13 +3033,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -3421,13 +3157,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -3439,13 +3171,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -3497,13 +3225,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        NEW
-                      </div>
+                      NEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -3515,13 +3239,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        REVIEW
-                      </div>
+                      REVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -3573,13 +3293,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     class="article-info css-1wte5n0"
                   >
                     <span
-                      class="css-6tvr2h"
+                      class="css-ciimpt"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        BREAKING
-                      </div>
+                      BREAKING
                     </span>
                     <div
                       class="css-p44zak"
@@ -3591,13 +3307,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                       />
                     </div>
                     <span
-                      class="css-1basb1c"
+                      class="css-1kanhs9"
                     >
-                      <div
-                        class="css-gb5m6n"
-                      >
-                        INTERVIEW
-                      </div>
+                      INTERVIEW
                     </span>
                     <div
                       class="css-p44zak"
@@ -3733,13 +3445,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -3751,13 +3459,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      Q&A
-                    </div>
+                    Q&A
                   </span>
                   <div
                     class="css-p44zak"
@@ -3809,13 +3513,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -3827,13 +3527,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -3885,13 +3581,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      NEW
-                    </div>
+                    NEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -3903,13 +3595,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -4031,13 +3719,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
+                    EXCLUSIVE
                   </span>
                   <div
                     class="css-p44zak"
@@ -4049,13 +3733,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -4107,13 +3787,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -4125,13 +3801,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -4183,13 +3855,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      NEW
-                    </div>
+                    NEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -4201,13 +3869,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -4329,13 +3993,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
+                    EXCLUSIVE
                   </span>
                   <div
                     class="css-p44zak"
@@ -4347,13 +4007,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -4405,13 +4061,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -4423,13 +4075,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -4481,13 +4129,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      EXCLUSIVE
-                    </div>
+                    EXCLUSIVE
                   </span>
                   <div
                     class="css-p44zak"
@@ -4499,13 +4143,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -4627,13 +4267,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -4645,13 +4281,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -4703,13 +4335,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      NEW
-                    </div>
+                    NEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -4721,13 +4349,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      REVIEW
-                    </div>
+                    REVIEW
                   </span>
                   <div
                     class="css-p44zak"
@@ -4779,13 +4403,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                   class="article-info css-1wte5n0"
                 >
                   <span
-                    class="css-6tvr2h"
+                    class="css-ciimpt"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      BREAKING
-                    </div>
+                    BREAKING
                   </span>
                   <div
                     class="css-p44zak"
@@ -4797,13 +4417,9 @@ exports[`Render SectionBucket Slice Slice matches snapshot with xl 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1basb1c"
+                    class="css-1kanhs9"
                   >
-                    <div
-                      class="css-gb5m6n"
-                    >
-                      INTERVIEW
-                    </div>
+                    INTERVIEW
                   </span>
                   <div
                     class="css-p44zak"
