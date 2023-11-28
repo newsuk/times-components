@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
-import { InlineTextBlock } from '../shared-styles';
+import { TextBlock } from 'newskit';
+import { Wrapper } from '../shared-styles';
 
 export const CustomTextBlock = ({
   text,
@@ -11,13 +12,15 @@ export const CustomTextBlock = ({
   icon?: ReactNode;
 }) => {
   return (
-    <InlineTextBlock
+    <TextBlock
       typographyPreset="utilityLabel005"
       stylePreset={stylePreset ? stylePreset : 'inkBrand010'}
       as="span"
     >
-      {icon}
-      {text}
-    </InlineTextBlock>
+      <Wrapper>
+        {icon}
+        {text}
+      </Wrapper>
+    </TextBlock>
   );
 };

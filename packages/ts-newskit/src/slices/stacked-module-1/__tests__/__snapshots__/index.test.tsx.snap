@@ -56,9 +56,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  NEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -70,9 +74,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  PROFILE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    PROFILE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -167,9 +175,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -181,9 +193,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -292,9 +308,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -306,9 +326,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -403,9 +427,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -417,9 +445,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -535,9 +567,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -549,9 +585,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -646,9 +686,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  NEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -660,9 +704,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -771,9 +819,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -785,9 +837,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -882,9 +938,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -896,9 +956,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1023,9 +1087,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  NEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1037,9 +1105,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  PROFILE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    PROFILE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1134,9 +1206,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1148,9 +1224,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1259,9 +1339,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1273,9 +1357,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1370,9 +1458,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1384,9 +1476,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1502,9 +1598,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1516,9 +1616,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1613,9 +1717,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  NEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1627,9 +1735,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1738,9 +1850,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1752,9 +1868,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1849,9 +1969,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1863,9 +1987,13 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -1990,9 +2118,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  NEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2004,9 +2136,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  PROFILE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    PROFILE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2101,9 +2237,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2115,9 +2255,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2226,9 +2370,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2240,9 +2388,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2337,9 +2489,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2351,9 +2507,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2469,9 +2629,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2483,9 +2647,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2580,9 +2748,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  NEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2594,9 +2766,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2705,9 +2881,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2719,9 +2899,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2816,9 +3000,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2830,9 +3018,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2957,9 +3149,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  NEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -2971,9 +3167,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  PROFILE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    PROFILE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3068,9 +3268,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3082,9 +3286,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3193,9 +3401,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3207,9 +3419,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3304,9 +3520,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3318,9 +3538,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3436,9 +3660,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3450,9 +3678,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3547,9 +3779,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  NEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3561,9 +3797,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3672,9 +3912,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3686,9 +3930,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3783,9 +4031,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3797,9 +4049,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3924,9 +4180,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  NEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -3938,9 +4198,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  PROFILE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    PROFILE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4035,9 +4299,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4049,9 +4317,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4160,9 +4432,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4174,9 +4450,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4271,9 +4551,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4285,9 +4569,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4403,9 +4691,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4417,9 +4709,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4514,9 +4810,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  NEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    NEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4528,9 +4828,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4639,9 +4943,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  EXCLUSIVE
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    EXCLUSIVE
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4653,9 +4961,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  REVIEW
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    REVIEW
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4750,9 +5062,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1wte5n0"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-6tvr2h"
                 >
-                  UPDATED
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    UPDATED
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
@@ -4764,9 +5080,13 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-1basb1c"
                 >
-                  Q&A
+                  <div
+                    class="css-gb5m6n"
+                  >
+                    Q&A
+                  </div>
                 </span>
                 <div
                   class="css-p44zak"
