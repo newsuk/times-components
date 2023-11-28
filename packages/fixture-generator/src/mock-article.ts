@@ -5,7 +5,7 @@ import {
   Flag,
   Markup,
   SectionName,
-  TemplateType
+  TemplateType,
 } from "./types";
 import keywords from "./mock-keywords";
 import UUID from "./mock-UUID";
@@ -40,10 +40,7 @@ class MockArticle {
       id: UUID(),
       keywords: keywords(),
       publicationName: getPublicationName(),
-      paywalledContent: new MockMarkup()
-        .addParagraphs(5)
-        .addAds()
-        .get(),
+      paywalledContent: new MockMarkup().addParagraphs(5).addAds().get(),
       url: "/article/123" as Url,
       slug: `british-trio-stopped-on-the-way-to-join-isis`,
       template: TemplateType.Mainstandard,
@@ -51,16 +48,13 @@ class MockArticle {
       expirableFlags: [
         {
           type: Flag.Exclusive,
-          expiryTime: "2030-03-14T12:00:00.000Z"
-        }
+          expiryTime: "2030-03-14T12:00:00.000Z",
+        },
       ],
       isTeased: false,
       label: "label",
       longRead: true,
-      content: new MockMarkup()
-        .addParagraphs(3)
-        .addAds()
-        .get(),
+      content: new MockMarkup().addParagraphs(3).addAds().get(),
       headline: "Venezuela shows how Corbyn’s socialism works",
       publishedTime: new Date(0),
       section: SectionName.Business,
@@ -84,13 +78,13 @@ class MockArticle {
         nodes: [],
         pageInfo: {
           hasNextPage: false,
-          hasPreviousPage: false
+          hasPreviousPage: false,
         },
-        totalCount: 1
+        totalCount: 1,
       },
       topicConnection: {
-        nodes: []
-      }
+        nodes: [],
+      },
     };
   }
 
@@ -111,7 +105,7 @@ class MockArticle {
 
   sundayTimes() {
     this.article.publicationName = getPublicationName(
-      PublicationName.Sundaytimes
+      PublicationName.Sundaytimes,
     );
     return this;
   }

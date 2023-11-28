@@ -1,6 +1,6 @@
 import sizes from "./sizes";
 
-const getMaxSizes = adSizes => {
+const getMaxSizes = (adSizes) => {
   if (!adSizes) {
     return { height: 0, width: 0 };
   }
@@ -8,9 +8,9 @@ const getMaxSizes = adSizes => {
   return adSizes.reduce(
     (max, [curWidth, curHeight]) => ({
       height: Math.max(max.height, curHeight),
-      width: Math.max(max.width, curWidth)
+      width: Math.max(max.width, curWidth),
     }),
-    { height: 0, width: 0 }
+    { height: 0, width: 0 },
   );
 };
 
@@ -26,7 +26,7 @@ const slotPositions = {
   mpu: 3,
   pixel: 2,
   pixelskin: 2,
-  pixelteads: 2
+  pixelteads: 2,
 };
 
 const sizeMap = {
@@ -42,7 +42,7 @@ const sizeMap = {
   "native-inline-ad": sizes.native,
   pixel: sizes.pixel,
   pixelskin: sizes.pixel,
-  pixelteads: sizes.pixel
+  pixelteads: sizes.pixel,
 };
 
 const getAdSizes = (adSizeMap, width) => {
@@ -63,7 +63,7 @@ const getSlotConfig = (slotName, width) => {
     mappings,
     maxSizes,
     sizes: adSizes,
-    slotName
+    slotName,
   };
 };
 

@@ -15,16 +15,16 @@ export default {
             "In Article Puff": "inArticlePuff",
             "Times Headline": "timesHeadline",
             "Twitter Embed": "twitterEmbed",
-            "Vertical Timeline": "verticalTimeline"
+            "Vertical Timeline": "verticalTimeline",
           },
-          "chapterHeading"
+          "chapterHeading",
         );
 
         return <InteractiveWrapper {...fixtures[value]} />;
       },
       name: "Interactive Wrapper",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Interactive Wrapper"
+  name: "Primitives/Interactive Wrapper",
 };

@@ -6,7 +6,7 @@ import { TcText } from "@times-components/utils";
 import Ad, { AdComposer } from "./src/ad";
 import adConfig from "./fixtures/article-ad-config.json";
 
-const withOpenInNewWindow = children => (
+const withOpenInNewWindow = (children) => (
   <AdComposer adConfig={adConfig}>
     <Fragment>
       <NewTab />
@@ -21,13 +21,13 @@ const slotNames = [
   "mpu",
   "pixel",
   "pixelteads",
-  "pixelskin"
+  "pixelskin",
 ];
 
 const articleContextURL =
   "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
 
-const renderAd = slotName => (
+const renderAd = (slotName) => (
   <Fragment>
     {slotName.indexOf("pixel") !== -1 && (
       <TcText style={{ display: "block" }}>
@@ -43,11 +43,11 @@ export default {
     {
       component: ({ select }) =>
         withOpenInNewWindow(
-          renderAd(select("Slot Name:", slotNames, slotNames[1]))
+          renderAd(select("Slot Name:", slotNames, slotNames[1])),
         ),
       name: "Ad",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Advertisement"
+  name: "Primitives/Advertisement",
 };

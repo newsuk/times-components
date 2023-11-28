@@ -11,18 +11,18 @@ const standard1ArticleFixtureData = standard1ArticleFixture({
   section: "thedish",
   shortHeadline: "Test Short Headline",
   summary125: testSummary(125),
-  url: "https://test.io"
+  url: "https://test.io",
 }).data;
 
-export default renderComponent => {
+export default (renderComponent) => {
   const realIntl = Intl;
 
   beforeEach(() => {
     mockDate.set(1514764800000, 0);
     global.Intl = {
       DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Europe/London" })
-      })
+        resolvedOptions: () => ({ timeZone: "Europe/London" }),
+      }),
     };
     jest.useFakeTimers();
   });
@@ -38,7 +38,7 @@ export default renderComponent => {
     const output = renderComponent(
       <RelatedArticles
         {...createRelatedArticlesProps(standard1ArticleFixtureData, events)}
-      />
+      />,
     );
 
     expect(output).toMatchSnapshot();

@@ -7,7 +7,7 @@ import {
   enzymeTreeSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 
 import "../mocks";
@@ -17,7 +17,7 @@ const omitProps = new Set([
   "article",
   "className",
   "responsiveLinkStyles",
-  "style"
+  "style",
 ]);
 
 describe("Article Link", () => {
@@ -26,7 +26,7 @@ describe("Article Link", () => {
     onPress: null,
     url: "www.example.com",
     target: "target",
-    children: ["A"]
+    children: ["A"],
   };
 
   addSerializers(
@@ -35,8 +35,8 @@ describe("Article Link", () => {
     compose(
       print,
       minimalWebTransform,
-      minimaliseTransform((value, key) => omitProps.has(key))
-    )
+      minimaliseTransform((value, key) => omitProps.has(key)),
+    ),
   );
 
   it("should render with the dropCap link not underlined", () => {

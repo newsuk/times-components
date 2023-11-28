@@ -40,7 +40,7 @@ describe('Puzzle Card', () => {
 
   it('crops the image', () => {
     const { container, queryByAltText } = render(
-      <PuzzleCard data={puzzles.list[0]} isImageCropped />
+      <PuzzleCard data={puzzles.list[0]} isImageCropped />,
     );
     const imageUrl = puzzles.list[0].image.crops[0].url;
     const croppedImageUrl = imageUrl + '&resize=500';
@@ -56,7 +56,7 @@ describe('Puzzle Card', () => {
       <PuzzleCard
         data={{ ...puzzles.list[0], title: 'Custom Puzzle Title' }}
         isImageCropped={false}
-      />
+      />,
     );
     const image = getByAltText('Custom Puzzle Title');
     expect(image).toBeInTheDocument();
@@ -67,7 +67,7 @@ describe('Puzzle Card', () => {
       <PuzzleCard
         data={{ ...puzzles.list[0], title: '' }}
         isImageCropped={false}
-      />
+      />,
     );
     const image = getByAltText('Puzzle thumbnail');
     expect(image).toBeInTheDocument();

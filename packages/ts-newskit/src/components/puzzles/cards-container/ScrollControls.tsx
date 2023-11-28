@@ -11,7 +11,7 @@ interface ScrollControlsProps {
 export const ScrollControls = ({
   scrollRef,
   seeAllLink,
-  cardRef
+  cardRef,
 }: ScrollControlsProps) => {
   const controlsHandler = (scrollDirection: 'left' | 'right') => {
     const scrollElement = scrollRef.current;
@@ -37,7 +37,7 @@ export const ScrollControls = ({
             marginInlineEnd: 'space030',
             typographyPreset: 'utilityLabel010',
             paddingInline: 'space000',
-            minWidth: 'unset'
+            minWidth: 'unset',
           }}
         >
           SEE ALL
@@ -48,7 +48,7 @@ export const ScrollControls = ({
           stylePreset: 'iconButtonOutlinedSecondary',
           marginInlineEnd: 'space030',
           paddingInline: 'space020',
-          paddingBlock: 'space020'
+          paddingBlock: 'space020',
         }}
         onClick={() => controlsHandler('left')}
         data-testid="scroll-left"
@@ -57,7 +57,7 @@ export const ScrollControls = ({
         <NewskitIconBack
           overrides={{
             size: 'iconSize010',
-            stylePreset: 'inkBase'
+            stylePreset: 'inkBase',
           }}
         />
       </IconButton>
@@ -65,7 +65,7 @@ export const ScrollControls = ({
         overrides={{
           stylePreset: 'iconButtonOutlinedSecondary',
           paddingInline: 'space020',
-          paddingBlock: 'space020'
+          paddingBlock: 'space020',
         }}
         onClick={() => controlsHandler('right')}
         data-testid="scroll-right"
@@ -74,7 +74,7 @@ export const ScrollControls = ({
         <NewskitIconForward
           overrides={{
             size: 'iconSize010',
-            stylePreset: 'inkBase'
+            stylePreset: 'inkBase',
           }}
         />
       </IconButton>

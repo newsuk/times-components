@@ -16,7 +16,7 @@ const defaultProps = {
   timeToRead: '4 min read',
   imgHiddenMobile: false,
   hiddenMobile: false,
-  mobileDivider: false
+  mobileDivider: false,
 };
 
 describe('Render puzzles story card', () => {
@@ -28,7 +28,7 @@ describe('Render puzzles story card', () => {
   it('should render the component', () => {
     const { getByText } = renderComponent(defaultProps);
     const getArticleListItem = getByText(
-      'ChatGPT invents Sudoku-style puzzle to keep the humans busy'
+      'ChatGPT invents Sudoku-style puzzle to keep the humans busy',
     );
     expect(getArticleListItem).toBeInTheDocument();
   });
@@ -56,14 +56,14 @@ describe('Render puzzles story card', () => {
       timeToRead: '4 min read',
       imgHiddenMobile: false,
       hiddenMobile: false,
-      mobileDivider: false
+      mobileDivider: false,
     });
     const storyCardAlt = screen.getByAltText(
-      'ChatGPT invents Sudoku-style puzzle to keep the humans busy'
+      'ChatGPT invents Sudoku-style puzzle to keep the humans busy',
     );
     expect(storyCardAlt).toHaveAttribute(
       'alt',
-      'ChatGPT invents Sudoku-style puzzle to keep the humans busy'
+      'ChatGPT invents Sudoku-style puzzle to keep the humans busy',
     );
   });
   it('items should render PLACEHOLDER if IMAGE is missing', () => {
@@ -76,7 +76,7 @@ describe('Render puzzles story card', () => {
       timeToRead: '4 min read',
       imgHiddenMobile: false,
       hiddenMobile: false,
-      mobileDivider: false
+      mobileDivider: false,
     });
     const storyCardPlaceholder = getAllByTestId('storyCard-placeholder')[0];
     expect(storyCardPlaceholder).toBeVisible;

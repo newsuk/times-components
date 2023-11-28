@@ -33,7 +33,7 @@ StarButton.propTypes = {
   isDark: PropTypes.bool,
   style: PropTypes.shape({}),
   onPress: PropTypes.func.isRequired,
-  selected: PropTypes.bool
+  selected: PropTypes.bool,
 };
 
 StarButton.defaultProps = {
@@ -41,7 +41,7 @@ StarButton.defaultProps = {
   height: 18,
   isDark: false,
   style: null,
-  selected: false
+  selected: false,
 };
 
 export default StarButton;

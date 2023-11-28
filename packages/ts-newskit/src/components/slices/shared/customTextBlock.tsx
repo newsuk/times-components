@@ -5,7 +5,7 @@ import { Wrapper } from '../shared-styles';
 export const CustomTextBlock = ({
   text,
   stylePreset,
-  icon
+  icon,
 }: {
   text?: string;
   stylePreset?: string;

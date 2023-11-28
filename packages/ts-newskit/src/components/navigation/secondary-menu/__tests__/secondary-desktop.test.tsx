@@ -9,7 +9,7 @@ const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),
   isExpanded: false,
-  isSelected: 'Home'
+  isSelected: 'Home',
 };
 
 const mockClickHandler = jest.fn();
@@ -26,7 +26,7 @@ describe('Secondary Menu Desktop', () => {
         data={mainMenuItems}
         options={options}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -36,7 +36,7 @@ describe('Secondary Menu Desktop', () => {
         data={mainMenuItems}
         options={options}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const title = getByText('Home');
     expect(title).toBeInTheDocument();
@@ -47,7 +47,7 @@ describe('Secondary Menu Desktop', () => {
         data={mainMenuItems}
         options={options}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const title = getAllByTestId('buttonLink')[0];
     expect(title).toHaveAttribute('href', '/home');
@@ -58,7 +58,7 @@ describe('Secondary Menu Desktop', () => {
         data={mainMenuItems}
         options={options}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const Anchor = getAllByTestId('buttonLink')[0];
     fireEvent.click(Anchor);
@@ -70,7 +70,7 @@ describe('Secondary Menu Desktop', () => {
         data={mainMenuItems}
         options={options}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const list = getAllByRole('listitem');
     expect(list.length).toEqual(9);
@@ -81,7 +81,7 @@ describe('Secondary Menu Desktop', () => {
         data={mainMenuItems}
         options={options}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const hr = getByTestId('divider');
     expect(hr).toHaveStyle('width: 100%');

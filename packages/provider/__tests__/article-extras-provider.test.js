@@ -3,11 +3,11 @@ import renderer from "react-test-renderer";
 import {
   MockedProvider,
   MockFixture,
-  articleExtras as makeArticleExtrasParams
+  articleExtras as makeArticleExtrasParams,
 } from "@times-components/provider-test-tools";
 import { ArticleExtrasProvider } from "../src/provider";
 
-const renderComponent = child => {
+const renderComponent = (child) => {
   const id = "113e9875-b7bf-4dd7-ac99-dee231bf6e74";
 
   return renderer.create(
@@ -17,22 +17,22 @@ const renderComponent = child => {
         enabled: true,
         id,
         variables: () => ({
-          id
-        })
+          id,
+        }),
       })}
-      render={mocks => (
+      render={(mocks) => (
         <MockedProvider mocks={mocks}>
           <ArticleExtrasProvider debounceTimeMs={0} id={id}>
             {child}
           </ArticleExtrasProvider>
         </MockedProvider>
       )}
-    />
+    />,
   );
 };
 
 describe("ArticleExtrasProvider", () => {
-  it("returns query result", done => {
+  it("returns query result", (done) => {
     renderComponent(({ isLoading, article }) => {
       if (!isLoading) {
         expect(article).toMatchSnapshot();

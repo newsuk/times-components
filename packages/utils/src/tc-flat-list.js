@@ -21,7 +21,7 @@ const TcFlatList = ({ data, initialNumToRender, RenderItem }) => {
 TcFlatList.propTypes = {
   data: PropTypes.arrayOf(PropTypes.element).isRequired,
   initialNumToRender: PropTypes.number.isRequired,
-  RenderItem: PropTypes.element.isRequired
+  RenderItem: PropTypes.element.isRequired,
 };
 
 export default TcFlatList;

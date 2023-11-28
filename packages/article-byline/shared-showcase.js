@@ -5,7 +5,7 @@ import { TcView } from "@times-components/utils";
 import {
   colours,
   fontsWithFallback,
-  fontSizes
+  fontSizes,
 } from "@times-components/ts-styleguide";
 
 const styles = {
@@ -13,25 +13,25 @@ const styles = {
   fontFamily: fontsWithFallback.supporting,
   fontSize: fontSizes.cardMetaMobile,
   letterSpacing: 0.6,
-  lineHeight: 12
+  lineHeight: 12,
 };
 
 const authorsAST = require("./fixtures/authors.json");
 
-const preventDefaultedAction = decorateAction =>
+const preventDefaultedAction = (decorateAction) =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    }
+    },
   ]);
 
 const ComponentWrapper = ({ children }) => (
   <TcView style={{ flexDirection: "row", flexWrap: "wrap" }}>{children}</TcView>
 );
 
-const getProps = decorateAction => ({
-  onAuthorPress: preventDefaultedAction(decorateAction)("onAuthorPress")
+const getProps = (decorateAction) => ({
+  onAuthorPress: preventDefaultedAction(decorateAction)("onAuthorPress"),
 });
 
 export default (Component, name) => ({
@@ -46,7 +46,7 @@ export default (Component, name) => ({
         </ComponentWrapper>
       ),
       name: "Byline with a single author",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
@@ -58,7 +58,7 @@ export default (Component, name) => ({
         </ComponentWrapper>
       ),
       name: "Byline with a text only element",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
@@ -70,7 +70,7 @@ export default (Component, name) => ({
         </ComponentWrapper>
       ),
       name: "Byline with multiple authors",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
@@ -82,7 +82,7 @@ export default (Component, name) => ({
         </ComponentWrapper>
       ),
       name: "Byline with author in the beginning",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
@@ -94,7 +94,7 @@ export default (Component, name) => ({
         </ComponentWrapper>
       ),
       name: "Byline with author at the end",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
@@ -106,7 +106,7 @@ export default (Component, name) => ({
         </ComponentWrapper>
       ),
       name: "Byline that is very long",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
@@ -119,8 +119,8 @@ export default (Component, name) => ({
         </ComponentWrapper>
       ),
       name: "Byline with style overriden",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name
+  name,
 });

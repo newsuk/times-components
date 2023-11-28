@@ -24,7 +24,7 @@ within your tests you can now use code that looks like this:
 ```javascript
 import {
   addSerializers,
-  enzymeRenderedSerializer
+  enzymeRenderedSerializer,
 } from "@times-components/jest-serializer";
 
 addSerializers(expect, enzymeRenderedSerializer());
@@ -62,10 +62,7 @@ This allows us to only visit each node once and perform each transformation
 that have side-effects that another transformer was relying on e.g.
 
 ```javascript
-compose(
-  stylePrinter,
-  minimalWebTransform
-);
+compose(stylePrinter, minimalWebTransform);
 ```
 
 is the same as running the `minimalWeb` and `rnw` serializers together, and if
@@ -152,7 +149,10 @@ irrelevant to your tests (especially on RN), this serializer is a key tool in
 keeping them focused e.g.
 
 ```javascript
-addSerializers(expect, minimalise((value, key) => key === "style"));
+addSerializers(
+  expect,
+  minimalise((value, key) => key === "style"),
+);
 ```
 
 will strip all styles from your JSX nodes.

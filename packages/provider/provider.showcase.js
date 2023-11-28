@@ -6,7 +6,7 @@ import {
   authorProfile as makeAuthorParams,
   MockedProvider,
   MockFixture,
-  topic as makeTopicParams
+  topic as makeTopicParams,
 } from "@times-components/provider-test-tools";
 import { authorArticlesWithImages as authorArticlesWithImagesQuery } from "@times-components/provider-queries";
 import connectGraphql, {
@@ -14,7 +14,7 @@ import connectGraphql, {
   AuthorProfileProvider,
   AuthorArticlesWithImagesProvider,
   TopicProvider,
-  TopicArticlesProvider
+  TopicArticlesProvider,
 } from "./src/provider.js";
 
 export default {
@@ -34,28 +34,28 @@ export default {
         const mocks = [
           {
             request: {
-              query
+              query,
             },
             result: {
               data: {
                 author: {
-                  name: "fiona-hamilton"
-                }
-              }
-            }
-          }
+                  name: "fiona-hamilton",
+                },
+              },
+            },
+          },
         ];
 
         return (
           <MockedProvider mocks={mocks} removeTypename>
             <WithData debounceTimeMs={0} prop1={1} prop2={2}>
-              {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+              {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
             </WithData>
           </MockedProvider>
         );
       },
       name: "Props and fetched data",
-      type: "story"
+      type: "story",
     },
     {
       component: () => {
@@ -72,24 +72,24 @@ export default {
         const mocks = [
           {
             error: {
-              message: "some error from the server"
+              message: "some error from the server",
             },
             request: {
-              query
-            }
-          }
+              query,
+            },
+          },
         ];
 
         return (
           <MockedProvider mocks={mocks} removeTypename>
             <WithData debounceTimeMs={0} prop1={1} prop2={2}>
-              {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+              {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
             </WithData>
           </MockedProvider>
         );
       },
       name: "Errors",
-      type: "story"
+      type: "story",
     },
     {
       component: () => {
@@ -101,16 +101,16 @@ export default {
           <MockFixture
             params={makeAuthorParams({
               articleQuery: authorArticlesWithImagesQuery,
-              articleVariables: iteration => ({
+              articleVariables: (iteration) => ({
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
-                slug
+                slug,
               }),
               pageSize,
-              slug
+              slug,
             })}
-            render={mocks => (
+            render={(mocks) => (
               <MockedProvider mocks={mocks}>
                 <AuthorProfileProvider
                   debounceTimeMs={0}
@@ -118,7 +118,7 @@ export default {
                   pageSize={pageSize}
                   slug={slug}
                 >
-                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+                  {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </AuthorProfileProvider>
               </MockedProvider>
             )}
@@ -126,7 +126,7 @@ export default {
         );
       },
       name: "Author Profile",
-      type: "story"
+      type: "story",
     },
     {
       component: () => {
@@ -136,13 +136,13 @@ export default {
           <MockFixture
             params={makeArticleParams({
               variables: () => ({
-                id
-              })
+                id,
+              }),
             })}
-            render={mocks => (
+            render={(mocks) => (
               <MockedProvider mocks={mocks}>
                 <ArticleProvider debounceTimeMs={0} id={id}>
-                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+                  {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </ArticleProvider>
               </MockedProvider>
             )}
@@ -150,7 +150,7 @@ export default {
         );
       },
       name: "Article",
-      type: "story"
+      type: "story",
     },
     {
       component: () => {
@@ -162,16 +162,16 @@ export default {
           <MockFixture
             params={makeAuthorParams({
               articleQuery: authorArticlesWithImagesQuery,
-              articleVariables: iteration => ({
+              articleVariables: (iteration) => ({
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
-                slug
+                slug,
               }),
               pageSize,
-              slug
+              slug,
             })}
-            render={mocks => (
+            render={(mocks) => (
               <MockedProvider mocks={mocks}>
                 <AuthorArticlesWithImagesProvider
                   debounceTimeMs={0}
@@ -179,7 +179,7 @@ export default {
                   pageSize={pageSize}
                   slug={slug}
                 >
-                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+                  {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </AuthorArticlesWithImagesProvider>
               </MockedProvider>
             )}
@@ -187,7 +187,7 @@ export default {
         );
       },
       name: "Author Profile Articles with Images",
-      type: "story"
+      type: "story",
     },
     {
       component: () => {
@@ -199,20 +199,20 @@ export default {
         return (
           <MockFixture
             params={makeTopicParams({
-              articleVariables: iteration => ({
+              articleVariables: (iteration) => ({
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
-                slug
+                slug,
               }),
               name,
               pageSize,
-              slug
+              slug,
             })}
-            render={mocks => (
+            render={(mocks) => (
               <MockedProvider mocks={mocks}>
                 <TopicProvider debounceTimeMs={0} slug="chelsea">
-                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+                  {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </TopicProvider>
               </MockedProvider>
             )}
@@ -220,7 +220,7 @@ export default {
         );
       },
       name: "Topic",
-      type: "story"
+      type: "story",
     },
     {
       component: () => {
@@ -232,17 +232,17 @@ export default {
         return (
           <MockFixture
             params={makeTopicParams({
-              articleVariables: iteration => ({
+              articleVariables: (iteration) => ({
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
-                slug
+                slug,
               }),
               name,
               pageSize,
-              slug
+              slug,
             })}
-            render={mocks => (
+            render={(mocks) => (
               <MockedProvider mocks={mocks}>
                 <TopicArticlesProvider
                   debounceTimeMs={0}
@@ -250,7 +250,7 @@ export default {
                   pageSize={pageSize}
                   slug={slug}
                 >
-                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+                  {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </TopicArticlesProvider>
               </MockedProvider>
             )}
@@ -258,8 +258,8 @@ export default {
         );
       },
       name: "Topic Articles",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Helpers/Provider"
+  name: "Helpers/Provider",
 };

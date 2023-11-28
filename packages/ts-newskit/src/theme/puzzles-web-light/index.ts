@@ -5,12 +5,12 @@ import { stylePresets } from './style-presets';
 import { formatThemeOverrides } from '../../utils/theme-formatting';
 
 const themeOverrides = {
-  stylePresets
+  stylePresets,
 };
 
 const updatedTheme = formatThemeOverrides(TheTimesLightPuzzle, themeOverrides);
 
 export const PuzzlesWebLightTheme = createTheme({
   name: 'puzzles-web-light',
-  ...updatedTheme
+  ...updatedTheme,
 });

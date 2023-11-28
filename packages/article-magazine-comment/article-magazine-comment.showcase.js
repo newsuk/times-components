@@ -3,25 +3,25 @@ import React from "react";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import {
   ContextProviderWithDefaults,
-  defaults
+  defaults,
 } from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import {
   article as makeParams,
   MockFixture,
-  MockedProvider
+  MockedProvider,
 } from "@times-components/provider-test-tools";
 import { sections } from "@times-components/storybook";
 import { scales, themeFactory } from "@times-components/ts-styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import ArticleMagazineComment from "./src/article-magazine-comment";
 
-const preventDefaultedAction = decorateAction =>
+const preventDefaultedAction = (decorateAction) =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    }
+    },
   ]);
 
 const templateName = "magazinecomment";
@@ -32,14 +32,14 @@ const renderArticle = ({
   decorateAction,
   id,
   scale,
-  section
+  section,
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, isLoading, error, refetch }) => {
       // When work is completed in TPA, the schema should do this for us
       const data = {
         ...article,
-        template: "magazinecomment"
+        template: "magazinecomment",
       };
 
       return (
@@ -47,8 +47,8 @@ const renderArticle = ({
           value={{
             theme: {
               ...themeFactory(section, templateName),
-              scale: scale || defaults.theme.scale
-            }
+              scale: scale || defaults.theme.scale,
+            },
           }}
         >
           <ArticleMagazineComment
@@ -58,29 +58,29 @@ const renderArticle = ({
             error={error}
             isLoading={isLoading}
             onAuthorPress={preventDefaultedAction(decorateAction)(
-              "onAuthorPress"
+              "onAuthorPress",
             )}
             onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-              "onCommentGuidelinesPress"
+              "onCommentGuidelinesPress",
             )}
             onCommentsPress={preventDefaultedAction(decorateAction)(
-              "onCommentsPress"
+              "onCommentsPress",
             )}
             onImagePress={preventDefaultedAction(decorateAction)(
-              "onImagePress"
+              "onImagePress",
             )}
             onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
             onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-              "onRelatedArticlePress"
+              "onRelatedArticlePress",
             )}
             onTopicPress={preventDefaultedAction(decorateAction)(
-              "onTopicPress"
+              "onTopicPress",
             )}
             onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-              "onTwitterLinkPress"
+              "onTwitterLinkPress",
             )}
             onVideoPress={preventDefaultedAction(decorateAction)(
-              "onVideoPress"
+              "onVideoPress",
             )}
             refetch={refetch}
           />
@@ -97,11 +97,11 @@ const mockArticle = ({
   id,
   params,
   scale,
-  section
+  section,
 }) => (
   <MockFixture
     params={params}
-    render={mocks => (
+    render={(mocks) => (
       <MockedProvider mocks={mocks}>
         {renderArticle({
           adConfig,
@@ -109,15 +109,15 @@ const mockArticle = ({
           decorateAction,
           id,
           scale,
-          section
+          section,
         })}
       </MockedProvider>
     )}
   />
 );
 
-const selectScales = select => select("Scale", scales, scales.medium);
-const selectSection = select =>
+const selectScales = (select) => select("Scale", scales, scales.medium);
+const selectSection = (select) =>
   sections[select("Section", sections, "The Sunday Times Magazine")];
 
 export default {
@@ -134,17 +134,17 @@ export default {
           params: makeParams({
             error: () => new Error("Article error"),
             variables: () => ({
-              id
-            })
+              id,
+            }),
           }),
           scale,
-          section
+          section,
         });
       },
       name: "Magazine Comment - Error",
       platform: "web",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Pages/Templates"
+  name: "Pages/Templates",
 };

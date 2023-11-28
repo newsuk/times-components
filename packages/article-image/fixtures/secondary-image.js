@@ -7,15 +7,15 @@ const defaultCredits = "Times photographer Richard Pohle";
 export default (
   uri = defaultImageSrc,
   caption = defaultCaption,
-  credits = defaultCredits
+  credits = defaultCredits,
 ) => ({
   captionOptions: {
     caption,
-    credits
+    credits,
   },
   imageOptions: {
     display: "secondary",
     ratio: "3:2",
-    uri
-  }
+    uri,
+  },
 });

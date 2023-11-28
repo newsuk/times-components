@@ -12,7 +12,7 @@ const renderCredits = (style, credits) => {
   const sanitisedText = xss(credits.toUpperCase(), {
     whiteList: { p: [], a: ["href"], br: [], img: [], b: [], strong: [] },
     stripIgnoreTag: true,
-    stripIgnoreTagBody: ["script"]
+    stripIgnoreTagBody: ["script"],
   });
 
   return (
@@ -21,7 +21,7 @@ const renderCredits = (style, credits) => {
         ...styles.text,
         ...styles.credits,
         ...style.text,
-        ...style.credits
+        ...style.credits,
       })}
       dangerouslySetInnerHTML={{ __html: sanitisedText }}
     />
@@ -38,7 +38,7 @@ const renderText = (style, text) => {
       style={checkStylesForUnits({
         ...styles.text,
         ...style.text,
-        ...style.caption
+        ...style.caption,
       })}
     >
       {text}

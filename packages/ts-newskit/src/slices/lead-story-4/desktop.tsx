@@ -5,7 +5,7 @@ import { ArticleStacks, ArticleStacksLgAndXl } from './article-stack';
 import { ArticleProps } from '../../components/slices/article';
 import {
   LeadArticleProps,
-  LeadArticle
+  LeadArticle,
 } from '../../components/slices/lead-article';
 import { ClickHandlerType } from '../types';
 
@@ -26,7 +26,7 @@ export const LeadStory4Desktop = ({
   articlesTop,
   modifiedArticle2and3,
   modifiedArticleRight,
-  articlesBottom
+  articlesBottom,
 }: LeadStory4PropsDesktop) => {
   const TopSection = () => {
     return (
@@ -35,10 +35,10 @@ export const LeadStory4Desktop = ({
           $width={{
             md: '69.5%',
             lg: '50%',
-            xl: '50%'
+            xl: '50%',
           }}
           marginInlineEnd={{
-            md: 'space060'
+            md: 'space060',
           }}
         >
           <LeadArticle article={leadArticle} clickHandler={clickHandler} />
@@ -47,7 +47,7 @@ export const LeadStory4Desktop = ({
           $width={{
             md: '30.5%',
             lg: '50%',
-            xl: '50%'
+            xl: '50%',
           }}
         >
           <LeadStoryDivider
@@ -108,7 +108,7 @@ export const LeadStory4Desktop = ({
       <Divider
         overrides={{
           marginBlockEnd: 'space040',
-          stylePreset: 'dashedDivider'
+          stylePreset: 'dashedDivider',
         }}
         aria-label="article-divider-horizontal"
       />

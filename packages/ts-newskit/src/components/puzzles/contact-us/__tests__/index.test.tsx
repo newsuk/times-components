@@ -30,7 +30,7 @@ describe('ContactUs', () => {
 
   it('should render contact Us section header if provided', () => {
     const { getByText } = render(
-      <ContactUs data={contactItems} header="Custom Header" />
+      <ContactUs data={contactItems} header="Custom Header" />,
     );
     const CustomHeader = getByText('Custom Header');
     expect(CustomHeader).toBeInTheDocument();

@@ -9,7 +9,7 @@ describe('DelayedComponent', () => {
     const { queryByText, getByText } = render(
       <DelayedComponent initialState={true} delay={800}>
         <div>Children</div>
-      </DelayedComponent>
+      </DelayedComponent>,
     );
     expect(getByText('Children')).toBeVisible();
     await waitFor(() => {
@@ -20,7 +20,7 @@ describe('DelayedComponent', () => {
     const { queryByText, getByText } = render(
       <DelayedComponent initialState={false} delay={800}>
         <div>Children</div>
-      </DelayedComponent>
+      </DelayedComponent>,
     );
     expect(queryByText('Children')).toBeFalsy();
     await waitFor(() => {

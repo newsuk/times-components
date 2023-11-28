@@ -13,14 +13,14 @@ export default {
           color={select(
             "Section",
             pick(colours.section, sections),
-            colours.section.default
+            colours.section.default,
           )}
           title="swimming"
         />
       ),
       name: "Article Label",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Article Label"
+  name: "Primitives/Article Label",
 };

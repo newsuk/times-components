@@ -4,7 +4,7 @@ import { BreakpointKeys } from 'newskit';
 
 export const renderComponent = (
   children: ReactNode,
-  breakpoint?: BreakpointKeys
+  breakpoint?: BreakpointKeys,
 ) => {
   const getMaxWidth = () => {
     switch (breakpoint) {

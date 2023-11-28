@@ -3,11 +3,11 @@ import renderer from "react-test-renderer";
 import {
   MockedProvider,
   MockFixture,
-  topic as makeTopicParams
+  topic as makeTopicParams,
 } from "@times-components/provider-test-tools";
 import { TopicArticlesProvider } from "../src/provider";
 
-const renderComponent = child => {
+const renderComponent = (child) => {
   const articleImageRatio = "3:2";
   const name = "Chelsea";
   const pageSize = 1;
@@ -16,17 +16,17 @@ const renderComponent = child => {
   return renderer.create(
     <MockFixture
       params={makeTopicParams({
-        articleVariables: iteration => ({
+        articleVariables: (iteration) => ({
           first: pageSize,
           imageRatio: articleImageRatio,
           skip: (iteration - 1) * pageSize,
-          slug
+          slug,
         }),
         name,
         pageSize,
-        slug
+        slug,
       })}
-      render={mocks => (
+      render={(mocks) => (
         <MockedProvider mocks={mocks}>
           <TopicArticlesProvider
             debounceTimeMs={0}
@@ -38,12 +38,12 @@ const renderComponent = child => {
           </TopicArticlesProvider>
         </MockedProvider>
       )}
-    />
+    />,
   );
 };
 
 describe("TopicArticlesProvider", () => {
-  it("returns query result", done => {
+  it("returns query result", (done) => {
     renderComponent(({ isLoading, topic }) => {
       if (!isLoading) {
         expect(topic).toMatchSnapshot();

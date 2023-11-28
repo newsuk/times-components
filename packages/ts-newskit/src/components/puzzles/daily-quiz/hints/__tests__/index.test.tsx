@@ -6,7 +6,7 @@ import { HintDisplay } from '../index';
 jest.mock('../styles', () => ({
   StyledTextBlock: ({ children }: { children: React.ReactNode }) => (
     <div>{children}</div>
-  )
+  ),
 }));
 
 describe('HintDisplay', () => {
@@ -14,7 +14,7 @@ describe('HintDisplay', () => {
     const hints = [
       { text: 'This is the first hint.' },
       { text: 'This is the second hint.' },
-      { text: 'This is the third hint.' }
+      { text: 'This is the third hint.' },
     ];
     const { asFragment } = render(<HintDisplay hints={hints} />);
     expect(asFragment()).toMatchSnapshot();
@@ -24,12 +24,12 @@ describe('HintDisplay', () => {
     const hints = [
       { text: 'This is the first hint.' },
       { text: 'This is the second hint.' },
-      { text: 'This is the third hint.' }
+      { text: 'This is the third hint.' },
     ];
 
     const { getByText } = render(<HintDisplay hints={hints} />);
 
-    hints.forEach(hint => {
+    hints.forEach((hint) => {
       expect(getByText(hint.text)).toBeInTheDocument();
     });
   });
@@ -38,7 +38,7 @@ describe('HintDisplay', () => {
     const hints = [
       { text: 'This is the first hint.' },
       { text: 'This is the second hint.' },
-      { text: 'This is the third hint.' }
+      { text: 'This is the third hint.' },
     ];
 
     const { getByText } = render(<HintDisplay hints={hints} />);

@@ -1,6 +1,6 @@
 export const debounce = <Args extends unknown[]>(
   fn: (...args: Args) => void,
-  delay: number
+  delay: number,
 ) => {
   let timeoutID: any | undefined;
 

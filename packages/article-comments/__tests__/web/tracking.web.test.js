@@ -9,8 +9,8 @@ class WithTrackingContext extends Component {
     const { analyticsStream } = this.props;
     return {
       tracking: {
-        analytics: analyticsStream
-      }
+        analytics: analyticsStream,
+      },
     };
   }
 
@@ -27,18 +27,18 @@ class WithTrackingContext extends Component {
 
 WithTrackingContext.childContextTypes = {
   tracking: PropTypes.shape({
-    analytics: PropTypes.func
-  })
+    analytics: PropTypes.func,
+  }),
 };
 WithTrackingContext.propTypes = {
-  analyticsStream: PropTypes.func.isRequired
+  analyticsStream: PropTypes.func.isRequired,
 };
 
 it("should track Comment start event ", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -52,7 +52,7 @@ it("should track Comment post (complete) event ", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -66,7 +66,7 @@ it("should track Comment notification event", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -80,7 +80,7 @@ it("should track Comments filtered by newest event", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -94,7 +94,7 @@ it("should track Comments filtered by most recommended", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -108,7 +108,7 @@ it("should track Comments filtered by oldest", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -122,7 +122,7 @@ it("should track Comment reply click event", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -136,7 +136,7 @@ it("should track Comment settings button click event", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -150,7 +150,7 @@ it("should track Comment shared by link event", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -164,7 +164,7 @@ it("should track Comment shared by email event", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -178,7 +178,7 @@ it("should track Comment shared by twitter event", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -192,7 +192,7 @@ it("should track Comment shared by facebook event", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -206,7 +206,7 @@ it("should track Comment when it is recommended", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -220,7 +220,7 @@ it("should track when user clicks on a comment notification", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
@@ -234,7 +234,7 @@ it("should track when user clicks on their username", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
-    <WithTrackingContext analyticsStream={analyticsStream} />
+    <WithTrackingContext analyticsStream={analyticsStream} />,
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 

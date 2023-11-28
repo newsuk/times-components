@@ -5,9 +5,9 @@ const amazonInitExtension = {
   data: {
     prebidConfig: {
       bidders: { amazon: { accountId: "mockAmazonAccount" } },
-      timeout: 1234
-    }
-  }
+      timeout: 1234,
+    },
+  },
 };
 
 export default () => {
@@ -21,8 +21,8 @@ export default () => {
   it("does not set up Amazon bidding if amazon account ID is not set", () => {
     const init = adInit(
       merge(initOptions, {
-        data: { prebidConfig: { bidders: { amazon: {} } } }
-      })
+        data: { prebidConfig: { bidders: { amazon: {} } } },
+      }),
     );
     jest.spyOn(init.apstag, "process");
     jest.spyOn(init.apstag, "init");
@@ -45,8 +45,8 @@ export default () => {
   it("does not set up Amazon bidding if no Amazon bidder config is present", () => {
     const init = adInit(
       merge(initOptions, {
-        data: { prebidConfig: { bidders: { amazon: null } } }
-      })
+        data: { prebidConfig: { bidders: { amazon: null } } },
+      }),
     );
     jest.spyOn(init.apstag, "init");
     init.init();
@@ -56,8 +56,8 @@ export default () => {
   it("does not set up Amazon bidding if no Amazon account id is set in the bidder config", () => {
     const init = adInit(
       merge(initOptions, {
-        data: { prebidConfig: { bidders: { amazon: { accountId: "" } } } }
-      })
+        data: { prebidConfig: { bidders: { amazon: { accountId: "" } } } },
+      }),
     );
     jest.spyOn(init.apstag, "init");
     init.init();
@@ -83,29 +83,46 @@ export default () => {
       .mockImplementation((slots, callback) => {
         callback();
       });
-    jest
-      .spyOn(init.apstag, "getConfig")
-      .mockReturnValue([{ code: "ad-header", sizes: [[970, 250], [970, 90]] }]);
+    jest.spyOn(init.apstag, "getConfig").mockReturnValue([
+      {
+        code: "ad-header",
+        sizes: [
+          [970, 250],
+          [970, 90],
+        ],
+      },
+    ]);
     init.apstag.bid();
     expect(mock.window.apstag.fetchBids).toHaveBeenCalled();
   });
 
   it("get Amazon Config with a commercial section", () => {
     const init = adInit(initOptions);
-    const slots = [{ code: "ad-header", sizes: [[970, 250], [970, 90]] }];
+    const slots = [
+      {
+        code: "ad-header",
+        sizes: [
+          [970, 250],
+          [970, 90],
+        ],
+      },
+    ];
     const amazonSlotConfig = [
       {
-        sizes: [[970, 250], [970, 90]],
+        sizes: [
+          [970, 250],
+          [970, 90],
+        ],
         slotID: "ad-header",
-        slotName: "/3048/d.thetimes.co.uk"
-      }
+        slotName: "/3048/d.thetimes.co.uk",
+      },
     ];
     expect(
       init.apstag.getConfig({
         slots,
         networkId: "3048",
-        adUnit: "d.thetimes.co.uk"
-      })
+        adUnit: "d.thetimes.co.uk",
+      }),
     ).toEqual(amazonSlotConfig);
   });
 
@@ -116,8 +133,8 @@ export default () => {
         slots: [],
         networkId: "3048",
         adUnit: "d.thetimes.co.uk",
-        section: "news"
-      })
+        section: "news",
+      }),
     ).toEqual([]);
   });
 
@@ -135,7 +152,7 @@ export default () => {
     mock.window.apstag.fetchBids("bids");
     expect(mock.window.apstag.addToQueue).toHaveBeenCalledWith(
       "f",
-      expect.objectContaining(["bids"])
+      expect.objectContaining(["bids"]),
     );
     expect(mock.window.apstag.targetingKeys()).toEqual([]);
   });

@@ -5,7 +5,7 @@ import {
   getSpacingCssFromTheme,
   getMediaQueryFromTheme,
   TextBlock,
-  getColorCssFromTheme
+  getColorCssFromTheme,
 } from 'newskit';
 
 export const Container = styled(Block)`

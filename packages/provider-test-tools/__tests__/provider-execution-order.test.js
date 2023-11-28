@@ -7,13 +7,13 @@ function AuthorQueryResolver({ variables }) {
     data: {
       author: {
         __typename: "Author",
-        name: variables.slug
-      }
-    }
+        name: variables.slug,
+      },
+    },
   };
 }
 
-const connect = query => {
+const connect = (query) => {
   const Wrapper = ({
     data: { error, loading, ...result },
     children,
@@ -23,7 +23,7 @@ const connect = query => {
       error,
       loading,
       ...result,
-      ...props
+      ...props,
     });
 
   return graphql(query)(Wrapper);
@@ -42,32 +42,32 @@ describe("provider execution order tests", () => {
     const { link, setProps } = providerTester(
       AuthorQueryResolver,
       connect(query),
-      { slug: "1" }
+      { slug: "1" },
     );
 
     await link.findByQuery("AuthorQuery", { slug: "1" }).resolve();
     expect(getRenderedQueries(link)[0]).toMatchObject({
       loading: true,
-      variables: { slug: "1" }
+      variables: { slug: "1" },
     });
 
     await setProps({ slug: "2" });
     expect(getRenderedQueries(link).length).toBe(2);
     expect(getRenderedQueries(link)[1]).toMatchObject({
       loading: true,
-      variables: { slug: "2" }
+      variables: { slug: "2" },
     });
 
     await link.findByQuery("AuthorQuery", { slug: "2" }).resolve();
     expect(getRenderedQueries(link).length).toBe(3);
     expect(getRenderedQueries(link)[2]).toMatchObject({
       author: {
-        name: "2"
+        name: "2",
       },
       loading: false,
       variables: {
-        slug: "2"
-      }
+        slug: "2",
+      },
     });
   });
 
@@ -75,7 +75,7 @@ describe("provider execution order tests", () => {
     const { link, setProps } = providerTester(
       AuthorQueryResolver,
       connect(query),
-      { slug: "1" }
+      { slug: "1" },
     );
 
     await setProps({ slug: "2" });
@@ -87,21 +87,21 @@ describe("provider execution order tests", () => {
     expect(getRenderedQueries(link)).toMatchObject([
       {
         loading: true,
-        variables: { slug: "1" }
+        variables: { slug: "1" },
       },
       {
         loading: true,
-        variables: { slug: "2" }
+        variables: { slug: "2" },
       },
       {
         author: {
-          name: "2"
+          name: "2",
         },
         loading: false,
         variables: {
-          slug: "2"
-        }
-      }
+          slug: "2",
+        },
+      },
     ]);
   });
 
@@ -109,7 +109,7 @@ describe("provider execution order tests", () => {
     const { link, setProps, component } = providerTester(
       AuthorQueryResolver,
       connect(query),
-      { slug: "1" }
+      { slug: "1" },
     );
 
     component.unmount();

@@ -7,7 +7,7 @@ interface FlagProps {
 
 const FlagStatuses = new Map([
   ['COMPLETE', { stylePreset: 'flagComplete' }],
-  ['IN PROGRESS', { stylePreset: 'flagProgress' }]
+  ['IN PROGRESS', { stylePreset: 'flagProgress' }],
 ]);
 
 export const PuzzlesFlag: FC<FlagProps> = ({ status }) => {
@@ -16,7 +16,7 @@ export const PuzzlesFlag: FC<FlagProps> = ({ status }) => {
       size="small"
       overrides={{
         minWidth: '104px',
-        stylePreset: `${FlagStatuses.get(status)!.stylePreset}`
+        stylePreset: `${FlagStatuses.get(status)!.stylePreset}`,
       }}
     >
       {status}

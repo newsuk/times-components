@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SudokusIcon: React.FC = props => {
+const SudokusIcon: React.FC = (props) => {
   return (
     <svg
       viewBox="0 0 383 382"

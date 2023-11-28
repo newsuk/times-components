@@ -20,7 +20,7 @@ export const Message: React.FC<{
         overrides={{
           stylePreset: 'iconButtonMinimalSecondary',
           iconSize: 'iconSize080',
-          marginInline: 'space000'
+          marginInline: 'space000',
         }}
         onClick={() => setClosed(!closed)}
         aria-label="close"

@@ -7,7 +7,7 @@ import getRatio from "../src/get-ratio";
 jest.mock("@times-components/image", () => ({
   __esModule: true,
   default: "Image",
-  ModalImage: "ModalImage"
+  ModalImage: "ModalImage",
 }));
 
 jest.mock("@times-components/video", () => "Video");
@@ -17,21 +17,21 @@ const imageLeadAsset = {
   credits: "The credits",
   crop169: {
     ratio: "16:9",
-    url: "https://crop169.io/"
+    url: "https://crop169.io/",
   },
   crop1251: {
     ratio: "1.25:1",
-    url: "https://crop1251.io/"
-  }
+    url: "https://crop1251.io/",
+  },
 };
 
 export const props = {
   aspectRatio: "16:9",
   displayImage: {
     ratio: "16:9",
-    url: "https://crop169.io/"
+    url: "https://crop169.io/",
   },
-  getImageCrop: leadAsset => leadAsset.crop169,
+  getImageCrop: (leadAsset) => leadAsset.crop169,
   leadAsset: imageLeadAsset,
   // eslint-disable-next-line react/prop-types
   renderCaption: ({ caption }) => (
@@ -40,7 +40,7 @@ export const props = {
       <TcText>{caption.credits}</TcText>
     </Fragment>
   ),
-  width: 600
+  width: 600,
 };
 
 const videoProps = {
@@ -53,9 +53,9 @@ const videoProps = {
     brightcovePolicyKey: "policyKey",
     brightcoveVideoId: "5678",
     brightcovePlayerId: "3456",
-    posterImage: imageLeadAsset
+    posterImage: imageLeadAsset,
   },
-  onVideoPress() {}
+  onVideoPress() {},
 };
 
 export default () => {
@@ -68,31 +68,31 @@ export default () => {
       name: "renders correctly with an image lead asset",
       test() {
         const testRenderer = TestRenderer.create(
-          <ArticleLeadAsset {...props} />
+          <ArticleLeadAsset {...props} />,
         );
 
         expect(testRenderer).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "renders correctly with a video lead asset",
       test() {
         const testRenderer = TestRenderer.create(
-          <ArticleLeadAsset {...videoProps} />
+          <ArticleLeadAsset {...videoProps} />,
         );
 
         expect(testRenderer).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "renders correctly when there is no lead asset",
       test() {
         const testRenderer = TestRenderer.create(
-          <ArticleLeadAsset {...props} leadAsset={null} />
+          <ArticleLeadAsset {...props} leadAsset={null} />,
         );
 
         expect(testRenderer).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ];
 };

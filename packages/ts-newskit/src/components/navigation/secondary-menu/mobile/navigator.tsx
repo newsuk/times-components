@@ -40,10 +40,10 @@ export const Navigator: React.FC<{
           indicatorIcon: {
             props: {
               overrides: {
-                stylePreset: 'subMenuMobIcon'
-              }
-            }
-          }
+                stylePreset: 'subMenuMobIcon',
+              },
+            },
+          },
         }}
       >
         {null}

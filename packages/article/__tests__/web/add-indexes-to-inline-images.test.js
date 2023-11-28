@@ -2,30 +2,30 @@ import { addIndexesToInlineImages } from "../../src/utils";
 
 const content = [
   {
-    name: "foo"
+    name: "foo",
   },
   {
     attributes: {
       caption: "caption",
       credits: "credits",
-      url: "image.com"
+      url: "image.com",
     },
-    name: "image"
+    name: "image",
   },
   {
-    name: "foo"
+    name: "foo",
   },
   {
     attributes: {
       caption: "caption",
-      posterImageUrl: "image.com"
+      posterImageUrl: "image.com",
     },
-    name: "video"
-  }
+    name: "video",
+  },
 ];
 
 const leadAsset = {
-  type: "foo"
+  type: "foo",
 };
 
 describe("addIndexesToInlineImages", () => {

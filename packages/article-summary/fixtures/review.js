@@ -9,7 +9,7 @@ const defaultParagraph =
 export default ({
   paragraph = defaultParagraph,
   review1Title = defaultReview1Title,
-  review2Title = defaultReview2Title
+  review2Title = defaultReview2Title,
 } = {}) => ({
   content: (
     <ArticleSummaryContent
@@ -22,40 +22,40 @@ export default ({
               children: [
                 {
                   attributes: {
-                    value: review1Title
+                    value: review1Title,
                   },
                   children: [],
-                  name: "text"
-                }
+                  name: "text",
+                },
               ],
-              name: "bold"
+              name: "bold",
             },
             {
               attributes: {},
               children: [],
-              name: "break"
+              name: "break",
             },
             {
               attributes: {
-                value: " ITV"
+                value: " ITV",
               },
               children: [],
-              name: "text"
+              name: "text",
             },
             {
               attributes: {},
               children: [],
-              name: "break"
+              name: "break",
             },
             {
               attributes: {
-                value: "★★★★☆"
+                value: "★★★★☆",
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "paragraph"
+          name: "paragraph",
         },
         {
           attributes: {},
@@ -65,55 +65,55 @@ export default ({
               children: [
                 {
                   attributes: {
-                    value: review2Title
+                    value: review2Title,
                   },
                   children: [],
-                  name: "text"
-                }
+                  name: "text",
+                },
               ],
-              name: "bold"
+              name: "bold",
             },
             {
               attributes: {},
               children: [],
-              name: "break"
+              name: "break",
             },
             {
               attributes: {
-                value: " BBC Two"
+                value: " BBC Two",
               },
               children: [],
-              name: "text"
+              name: "text",
             },
             {
               attributes: {},
               children: [],
-              name: "break"
+              name: "break",
             },
             {
               attributes: {
-                value: "★★★☆☆"
+                value: "★★★☆☆",
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "paragraph"
+          name: "paragraph",
         },
         {
           attributes: {},
           children: [
             {
               attributes: {
-                value: paragraph
+                value: paragraph,
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "paragraph"
-        }
+          name: "paragraph",
+        },
       ]}
     />
-  )
+  ),
 });

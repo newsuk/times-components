@@ -18,7 +18,7 @@ const AuthorProfileHeadBase = memo(
     renderImage,
     renderName,
     twitter,
-    contractualTitle
+    contractualTitle,
   }) => {
     const breakpoint = useBreakpointKey();
     const isLargeDevice = breakpoint === "lg" || breakpoint === "xl";
@@ -62,7 +62,7 @@ const AuthorProfileHeadBase = memo(
         </TcView>
       </Animations.FadeIn>
     );
-  }
+  },
 );
 
 AuthorProfileHeadBase.propTypes = {
@@ -73,14 +73,14 @@ AuthorProfileHeadBase.propTypes = {
   renderImage: PropTypes.func.isRequired,
   renderName: PropTypes.func.isRequired,
   twitter: PropTypes.string,
-  contractualTitle: PropTypes.string
+  contractualTitle: PropTypes.string,
 };
 
 AuthorProfileHeadBase.defaultProps = {
   isLoading: true,
   jobTitle: "",
   onTwitterLinkPress: () => {},
-  twitter: ""
+  twitter: "",
 };
 
 export default authorProfileHeadTrackingEvents(AuthorProfileHeadBase);

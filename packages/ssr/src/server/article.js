@@ -26,9 +26,9 @@ module.exports = (
     sharingSavingFlag = true,
     commentingFlag = true,
     showAudioPlayer,
-    storefrontConfig
+    storefrontConfig,
   },
-  userState
+  userState,
 ) => {
   if (typeof articleId !== "string") {
     throw new Error(`Article ID should be a string. Received ${articleId}`);
@@ -41,17 +41,17 @@ module.exports = (
   }
   if (!makeArticleUrl) {
     throw new Error(
-      `Make article url function is required. Received ${makeArticleUrl}`
+      `Make article url function is required. Received ${makeArticleUrl}`,
     );
   }
   if (!makeTopicUrl) {
     throw new Error(
-      `Make topic url function is required. Received ${makeTopicUrl}`
+      `Make topic url function is required. Received ${makeTopicUrl}`,
     );
   }
   if (typeof commentingConfig !== "object") {
     throw new Error(
-      `SpotIM account ID should be an object. Received ${commentingConfig}`
+      `SpotIM account ID should be an object. Received ${commentingConfig}`,
     );
   }
 
@@ -61,7 +61,7 @@ module.exports = (
       logger,
       uri: graphqlApiUrl,
       usePersistedQueries,
-      clientName
+      clientName,
     },
     data: {
       articleId,
@@ -80,12 +80,12 @@ module.exports = (
       sharingSavingFlag,
       commentingFlag,
       showAudioPlayer,
-      storefrontConfig
+      storefrontConfig,
     },
-    name: "article"
+    name: "article",
   };
 
-  return runServer(article, options).catch(error => {
+  return runServer(article, options).catch((error) => {
     throw new Error(error);
   });
 };

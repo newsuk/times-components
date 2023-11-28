@@ -4,7 +4,7 @@ import MockArticle from "./mock-article";
 
 const getAuthorArticles = (count: number): AuthorArticles => ({
   count,
-  list: new Array(count).fill(new MockArticle().get())
+  list: new Array(count).fill(new MockArticle().get()),
 });
 
 class MockAuthor {
@@ -21,7 +21,7 @@ class MockAuthor {
       hasLeadAssets: false,
       twitter: "fiona-hamilton",
       slug: "fiona-hamilton",
-      contractualTitle: "Contractual Title"
+      contractualTitle: "Contractual Title",
     };
   }
 

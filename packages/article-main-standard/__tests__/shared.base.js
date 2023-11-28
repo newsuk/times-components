@@ -19,10 +19,10 @@ const emptyArticle = {
   longRead: false,
   relatedArticleSlice: null,
   standfirst: null,
-  topics: null
+  topics: null,
 };
 
-export const snapshotTests = renderComponent => [
+export const snapshotTests = (renderComponent) => [
   {
     name: "an article",
     test() {
@@ -40,27 +40,27 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-        />
+        />,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "loading",
     test() {
       const output = renderComponent(
-        <ArticleMainStandard {...articleProps} isLoading />
+        <ArticleMainStandard {...articleProps} isLoading />,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "an error",
     test() {
       const props = {
-        error: { message: "An example error." }
+        error: { message: "An example error." },
       };
 
       const output = renderComponent(
@@ -77,11 +77,11 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-        />
+        />,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "an article with no headline falls back to use shortHeadline",
@@ -94,7 +94,7 @@ export const snapshotTests = renderComponent => [
           article={articleFixture({
             ...testFixture,
             ...emptyArticle,
-            headline: ""
+            headline: "",
           })}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
@@ -104,11 +104,11 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-        />
+        />,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "an article with ads",
@@ -125,9 +125,9 @@ export const snapshotTests = renderComponent => [
               {
                 attributes: {},
                 children: [],
-                name: "ad"
-              }
-            ]
+                name: "ad",
+              },
+            ],
           })}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
@@ -137,12 +137,12 @@ export const snapshotTests = renderComponent => [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-        />
+        />,
       );
 
       expect(output).toMatchSnapshot();
-    }
-  }
+    },
+  },
 ];
 
 const negativeTests = [
@@ -163,11 +163,11 @@ const negativeTests = [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-        />
+        />,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "an article with no label",
@@ -186,11 +186,11 @@ const negativeTests = [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-        />
+        />,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "an article with no standfirst",
@@ -202,7 +202,7 @@ const negativeTests = [
           analyticsStream={() => {}}
           article={articleFixture({
             ...testFixture,
-            standfirst: null
+            standfirst: null,
           })}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
@@ -212,10 +212,10 @@ const negativeTests = [
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-        />
+        />,
       );
 
-      const textNodes = testInstance.root.findAll(node => {
+      const textNodes = testInstance.root.findAll((node) => {
         if (typeof node.type === "string") {
           return (
             node.type === "Text" &&
@@ -228,8 +228,8 @@ const negativeTests = [
       });
 
       expect(textNodes).toEqual([]);
-    }
-  }
+    },
+  },
 ];
 
 export default (renderComponent, platformTests = []) => {
@@ -238,8 +238,8 @@ export default (renderComponent, platformTests = []) => {
   beforeEach(() => {
     global.Intl = {
       DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Europe/London" })
-      })
+        resolvedOptions: () => ({ timeZone: "Europe/London" }),
+      }),
     };
   });
 
@@ -250,7 +250,7 @@ export default (renderComponent, platformTests = []) => {
   iterator([
     ...snapshotTests(renderComponent),
     ...platformTests,
-    ...negativeTests
+    ...negativeTests,
   ]);
 };
 

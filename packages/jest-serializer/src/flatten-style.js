@@ -11,8 +11,8 @@ export const flattenStyleTransform = (accum, node, props, children) => {
     node,
     props: {
       ...other,
-      ...style
-    }
+      ...style,
+    },
   };
 };
 

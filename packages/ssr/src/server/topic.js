@@ -9,15 +9,15 @@ module.exports = (
     clientName,
     logger,
     makeArticleUrl,
-    makeTopicUrl
-  }
+    makeTopicUrl,
+  },
 ) => {
   if (typeof topicSlug !== "string") {
     throw new Error(`Topic slug should be a string. Received ${topicSlug}`);
   }
   if (!Number.isInteger(currentPage) || currentPage < 1) {
     throw new Error(
-      `Current page should be a positive integer. Received ${currentPage}`
+      `Current page should be a positive integer. Received ${currentPage}`,
     );
   }
   if (!graphqlApiUrl) {
@@ -28,12 +28,12 @@ module.exports = (
   }
   if (!makeArticleUrl) {
     throw new Error(
-      `Make article url function is required. Received ${makeArticleUrl}`
+      `Make article url function is required. Received ${makeArticleUrl}`,
     );
   }
   if (!makeTopicUrl) {
     throw new Error(
-      `Make topic url function is required. Received ${makeTopicUrl}`
+      `Make topic url function is required. Received ${makeTopicUrl}`,
     );
   }
 
@@ -44,8 +44,8 @@ module.exports = (
       usePersistedQueries,
       clientName,
       headers: {
-        "x-new-topic-data-source": true
-      }
+        "x-new-topic-data-source": true,
+      },
     },
     data: {
       debounceTimeMs: 0,
@@ -53,9 +53,9 @@ module.exports = (
       makeTopicUrl,
       page: currentPage,
       pageSize: 20,
-      topicSlug
+      topicSlug,
     },
-    name: "topicPage"
+    name: "topicPage",
   };
   return runServer(topic, options);
 };

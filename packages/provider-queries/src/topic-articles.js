@@ -7,10 +7,10 @@ export const propsToVariables = ({
   articleImageRatio = "3:2",
   page,
   pageSize,
-  slug
+  slug,
 }) => ({
   first: pageSize,
   imageRatio: articleImageRatio,
   skip: pageSize * (page - 1),
-  slug
+  slug,
 });

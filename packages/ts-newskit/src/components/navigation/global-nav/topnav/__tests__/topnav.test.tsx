@@ -14,7 +14,7 @@ const renderComponent = (isLoggedIn?: boolean, isSunday?: boolean) =>
       accountMenu={data.accountMenuItems}
       isHamburgerOpen={false}
       toggleHamburger={jest.fn}
-    />
+    />,
   );
 
 describe('Render TopNav', () => {
@@ -39,7 +39,7 @@ describe('TopNav button functions', () => {
     renderComponent();
     const searchBtn = screen.getByRole('button', {
       name: 'Open Search',
-      hidden: true
+      hidden: true,
     });
 
     fireEvent.click(searchBtn);

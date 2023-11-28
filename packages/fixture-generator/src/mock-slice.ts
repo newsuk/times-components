@@ -19,7 +19,7 @@ import {
   TwoPicAndSixNoPicSlice,
   Tile,
   SecondaryOneAndFourSlice,
-  Puzzle
+  Puzzle,
 } from "./types";
 import MockPuzzle from "./mock-puzzle";
 
@@ -97,7 +97,7 @@ function getDailyRegisterItem(): DailyUniversalRegisterItem {
   return {
     title: dailyRegisterItem.title,
     byline: dailyRegisterItem.byline,
-    content: dailyRegisterItem.content
+    content: dailyRegisterItem.content,
   };
 }
 
@@ -117,8 +117,8 @@ function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
     article: {
       ...tiles[0].article,
       hasVideo: true,
-      label: "short label centered"
-    }
+      label: "short label centered",
+    },
   };
 
   return <LeadOneAndFourSliceWithName>{
@@ -128,7 +128,7 @@ function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
     support2: tiles[2],
     support3: tiles[3],
     support4: tiles[4],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -136,7 +136,7 @@ function mockStandardSlice(): StandardSliceWithName {
   const tiles = getTiles(5);
   return <StandardSliceWithName>{
     name: "StandardSlice",
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -145,7 +145,7 @@ function mockLeadOneFullWidthSlice(): LeadOneFullWidthSliceWithName {
   return <LeadOneFullWidthSliceWithName>{
     name: "LeadOneFullWidthSlice",
     lead: tiles[0],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -154,30 +154,30 @@ function mockLeadOneAndOneSlice(): LeadOneAndOneSliceWithName {
   const expirableFlags = [
     {
       type: Flag.Exclusive,
-      expiryTime: "2030-03-14T12:00:00.000Z"
+      expiryTime: "2030-03-14T12:00:00.000Z",
     },
     {
       type: Flag.New,
-      expiryTime: "2030-03-14T12:00:00.000Z"
+      expiryTime: "2030-03-14T12:00:00.000Z",
     },
     {
       type: Flag.Sponsored,
-      expiryTime: "2030-03-14T12:00:00.000Z"
+      expiryTime: "2030-03-14T12:00:00.000Z",
     },
     {
       type: Flag.Updated,
-      expiryTime: "2030-03-14T12:00:00.000Z"
-    }
+      expiryTime: "2030-03-14T12:00:00.000Z",
+    },
   ];
   const leadTile = {
     ...tiles[0],
-    article: { ...tiles[0].article, expirableFlags, longRead: true }
+    article: { ...tiles[0].article, expirableFlags, longRead: true },
   };
   return <LeadOneAndOneSliceWithName>{
     name: "LeadOneAndOneSlice",
     lead: leadTile,
     support: tiles[1],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -188,7 +188,7 @@ function mockLeadOneAndTwoSlice(): LeadOneAndTwoSliceWithName {
     lead: tiles[0],
     support1: tiles[1],
     support2: tiles[2],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -200,7 +200,7 @@ function mockLeadTwoNoPicAndTwoSlice(): LeadTwoNoPicAndTwoSliceWithName {
     lead2: tiles[1],
     support1: tiles[2],
     support2: tiles[3],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -209,7 +209,7 @@ function mockSecondaryOneSlice(): SecondaryOneSliceWithName {
   return <SecondaryOneSliceWithName>{
     name: "SecondaryOneSlice",
     secondary: tiles[0],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -219,7 +219,7 @@ function mockSecondaryOneAndColumnistSlice(): SecondaryOneAndColumnistSliceWithN
     name: "SecondaryOneAndColumnistSlice",
     secondary: tiles[0],
     columnist: tiles[1],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -227,7 +227,7 @@ function mockSecondaryOneAndFourSlice(): SecondaryOneAndFourSliceWithName {
   const tiles = getTiles(5);
   const secondaryTile = {
     ...tiles[0],
-    strapline: "Readers share their top tips"
+    strapline: "Readers share their top tips",
   };
   return <SecondaryOneAndFourSliceWithName>{
     name: "SecondaryOneAndFourSlice",
@@ -236,7 +236,7 @@ function mockSecondaryOneAndFourSlice(): SecondaryOneAndFourSliceWithName {
     support2: tiles[2],
     support3: tiles[3],
     support4: tiles[4],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -248,7 +248,7 @@ function mockSecondaryFourSlice(): SecondaryFourSliceWithName {
     secondary2: tiles[1],
     secondary3: tiles[2],
     secondary4: tiles[3],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -260,7 +260,7 @@ function mockSecondaryTwoNoPicAndTwoSlice(): SecondaryTwoNoPicAndTwoSliceWithNam
     secondary2: tiles[1],
     support1: tiles[2],
     support2: tiles[3],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -271,16 +271,16 @@ function mockSecondaryTwoAndTwoSlice(): SecondaryTwoAndTwoSliceWithName {
     article: {
       ...tiles[0].article,
       hasVideo: true,
-      label: "long label | video icon too"
-    }
+      label: "long label | video icon too",
+    },
   };
 
   const secondaryTwoTile = {
     ...tiles[1],
     article: {
       ...tiles[1].article,
-      label: "long label | by some author"
-    }
+      label: "long label | by some author",
+    },
   };
 
   return <SecondaryTwoAndTwoSliceWithName>{
@@ -289,7 +289,7 @@ function mockSecondaryTwoAndTwoSlice(): SecondaryTwoAndTwoSliceWithName {
     secondary2: secondaryTwoTile,
     support1: tiles[2],
     support2: tiles[3],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -305,7 +305,7 @@ function mockListTwoAndSixNoPicSlice(): TwoPicAndSixNoPicSliceWithName {
     support4: tiles[5],
     support5: tiles[6],
     support6: tiles[7],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -316,7 +316,7 @@ function mockLeadersSlice(): LeadersSliceWithName {
     leader1: tiles[0],
     leader2: tiles[1],
     leader3: tiles[2],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -324,13 +324,13 @@ function mockCommentLeadAndCartoonSlice(): CommentLeadAndCartoonSliceWithName {
   const tiles = getTiles(2);
   const leadTile = {
     ...tiles[0],
-    article: { ...tiles[0].article, section: "opinion" }
+    article: { ...tiles[0].article, section: "opinion" },
   };
   return <CommentLeadAndCartoonSliceWithName>{
     name: "CommentLeadAndCartoonSlice",
     lead: leadTile,
     cartoon: tiles[1],
-    items: tiles
+    items: tiles,
   };
 }
 
@@ -341,7 +341,7 @@ function mockDailyRegisterSlice(): DailyUniversalRegister {
     onThisDay: dailyRegister[1],
     natureNotes: dailyRegister[2],
     birthdaysToday: dailyRegister[3],
-    items: dailyRegister
+    items: dailyRegister,
   };
 }
 
@@ -352,7 +352,7 @@ function mockArticleSlice(count: number): ArticleSlice {
 function mockPuzzleSlice(hideOnMobile: boolean = false): Puzzle {
   return <PuzzleWithName>{
     name: "Puzzle",
-    ...new MockPuzzle(hideOnMobile).get()
+    ...new MockPuzzle(hideOnMobile).get(),
   };
 }
 
@@ -374,5 +374,5 @@ export {
   mockSecondaryFourSlice,
   mockSecondaryTwoAndTwoSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
-  mockPuzzleSlice
+  mockPuzzleSlice,
 };

@@ -1,7 +1,7 @@
-export const capitalise = title =>
+export const capitalise = (title) =>
   title.charAt(0).toUpperCase() + title.slice(1);
 
-export const ratioTextToFloat = s => {
+export const ratioTextToFloat = (s) => {
   if (!s || !s.length) {
     return 1;
   }
@@ -15,10 +15,10 @@ export const ratioTextToFloat = s => {
 export const stripTags = (str, replacement) =>
   str.replace(/(<([^>]+)>)/gi, replacement);
 
-export const checkStylesForUnits = styles => {
+export const checkStylesForUnits = (styles) => {
   const newStyles = styles;
 
-  Object.keys(newStyles).forEach(key => {
+  Object.keys(newStyles).forEach((key) => {
     if (key === "lineHeight") {
       const value = newStyles[key];
       if (typeof value === "number") {

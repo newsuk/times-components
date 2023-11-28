@@ -1,4 +1,4 @@
-module.exports = api => {
+module.exports = (api) => {
   api.cache(true);
   return {
     plugins: ["babel-plugin-styled-components", "transform-class-properties"],
@@ -8,12 +8,12 @@ module.exports = api => {
         {
           targets: {
             esmodules: false,
-            node: "current"
-          }
-        }
+            node: "current",
+          },
+        },
       ],
       "@babel/preset-react",
-      "@babel/preset-typescript"
-    ]
+      "@babel/preset-typescript",
+    ],
   };
 };

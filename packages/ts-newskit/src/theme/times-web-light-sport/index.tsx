@@ -7,12 +7,12 @@ import { formatThemeOverrides } from '../../utils/theme-formatting';
 
 const themeOverrides = {
   stylePresets,
-  typographyPresets
+  typographyPresets,
 };
 
 const updatedTheme = formatThemeOverrides(TheTimesLightSport, themeOverrides);
 
 export const TimesWebLightSportTheme = createTheme({
   name: 'times-web-light-sport',
-  ...updatedTheme
+  ...updatedTheme,
 });

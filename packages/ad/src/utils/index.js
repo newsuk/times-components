@@ -6,5 +6,5 @@ export {
   getMaxSizes,
   getSlotConfig,
   prebidConfig,
-  getPrebidSlotConfig
+  getPrebidSlotConfig,
 };

@@ -9,10 +9,10 @@ const props = {
   imageRatio: 2 / 3,
   imageUri: "https://img.io/img",
   lowResSize: 50,
-  showImage: true
+  showImage: true,
 };
 
-export default renderMethod => {
+export default (renderMethod) => {
   // magic to stop the old RN Animated library from dying, as each test kicks off another animation that uses timing
   jest.useFakeTimers();
 
@@ -23,11 +23,11 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props}>
             <TcText>A card</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "pass an empty state to the image component",
@@ -35,11 +35,11 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} imageUri={null}>
             <TcText>A card with an empty image</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card without an image when showImage is false",
@@ -47,11 +47,11 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} showImage={false}>
             <TcText>No image</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "pass an empty state to the image component when the uri is null",
@@ -59,11 +59,11 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} imageUri={null}>
             <TcText>No URI</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card with reversed layout",
@@ -71,11 +71,11 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} isReversed>
             <TcText>A card in reverse</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card with reversed layout and no image",
@@ -83,11 +83,11 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} isReversed showImage={false}>
             <TcText>A card in reverse with no image</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card with a loading state",
@@ -95,11 +95,11 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} isLoading>
             <TcText>Loading state</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card with a loading state and no image",
@@ -107,11 +107,11 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} isLoading showImage={false}>
             <TcText>Loading with no image</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card with reversed loading state",
@@ -119,11 +119,11 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} isLoading isReversed>
             <TcText>Loading in reverse</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card with reversed loading state with no image",
@@ -131,11 +131,11 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} isLoading isReversed showImage={false}>
             <TcText>Loading in reverse with no image</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card should not re-render when imageRatio prop is changed",
@@ -143,7 +143,7 @@ export default renderMethod => {
         const testInstance = TestRenderer.create(
           <Card {...props}>
             <TcText>Do not re-render me</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -151,11 +151,11 @@ export default renderMethod => {
         testInstance.update(
           <Card {...props} imageRatio={16 / 9}>
             <TcText>Do not re-render me</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card should re-render when image uri changes",
@@ -163,7 +163,7 @@ export default renderMethod => {
         const testInstance = TestRenderer.create(
           <Card {...props}>
             <TcText>Some text</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -171,11 +171,11 @@ export default renderMethod => {
         testInstance.update(
           <Card {...props} imageUri="http://foo">
             <TcText>Some text</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card should re-render when low res size changes",
@@ -183,7 +183,7 @@ export default renderMethod => {
         const testInstance = TestRenderer.create(
           <Card {...props}>
             <TcText>Some content</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -191,11 +191,11 @@ export default renderMethod => {
         testInstance.update(
           <Card {...props} lowResSize={null}>
             <TcText>Some content</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card should re-render when high res size changes",
@@ -203,7 +203,7 @@ export default renderMethod => {
         const testInstance = TestRenderer.create(
           <Card {...props}>
             <TcText>Some content</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -211,11 +211,11 @@ export default renderMethod => {
         testInstance.update(
           <Card {...props} highResSize={null}>
             <TcText>Some content</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card should re-render when loading state changes",
@@ -223,7 +223,7 @@ export default renderMethod => {
         const testInstance = TestRenderer.create(
           <Card {...props} isLoading>
             <TcText>Re-render me</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -231,12 +231,12 @@ export default renderMethod => {
         testInstance.update(
           <Card {...props} isLoading={false}>
             <TcText>Re-render me</TcText>
-          </Card>
+          </Card>,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ];
 
   iterator(tests);

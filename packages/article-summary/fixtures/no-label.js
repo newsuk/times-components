@@ -10,7 +10,7 @@ const defaultParagraph =
 export default ({
   byline = defaultByline,
   headline = defaultHeadline,
-  paragraph = defaultParagraph
+  paragraph = defaultParagraph,
 } = {}) => ({
   bylineProps: {
     ast: [
@@ -21,17 +21,17 @@ export default ({
             children: [
               {
                 attributes: {
-                  value: byline
+                  value: byline,
                 },
                 children: [],
-                name: "text"
-              }
+                name: "text",
+              },
             ],
-            name: "inline"
-          }
-        ]
-      }
-    ]
+            name: "inline",
+          },
+        ],
+      },
+    ],
   },
   content: (
     <ArticleSummaryContent
@@ -41,20 +41,20 @@ export default ({
           children: [
             {
               attributes: {
-                value: paragraph
+                value: paragraph,
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "paragraph"
-        }
+          name: "paragraph",
+        },
       ]}
     />
   ),
   datePublicationProps: {
     date: "2017-11-17T00:01:00.000Z",
-    publication: "TIMES"
+    publication: "TIMES",
   },
-  headline: <ArticleSummaryHeadline headline={headline} />
+  headline: <ArticleSummaryHeadline headline={headline} />,
 });

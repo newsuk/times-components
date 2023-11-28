@@ -14,8 +14,8 @@ export const SectionHeader = ({ title }: SectionTitleItems) => {
         marginBlockEnd: { xs: 'space030', md: 'space045' },
         typographyPreset: {
           xs: 'sectionHeader010',
-          md: 'editorialDisplay008'
-        }
+          md: 'editorialDisplay008',
+        },
       }}
     >
       {title}

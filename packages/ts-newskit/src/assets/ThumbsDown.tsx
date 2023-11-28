@@ -12,7 +12,7 @@ const ThumbsDownIcon = (props: any) => (
     <mask
       id="mask0_3105_40978"
       style={{
-        maskType: 'alpha'
+        maskType: 'alpha',
       }}
       maskUnits="userSpaceOnUse"
       x="8"

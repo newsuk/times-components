@@ -6,13 +6,13 @@ const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
       key: "hb_bidder",
       val(bidResponse) {
         return bidResponse.bidder;
-      }
+      },
     },
     {
       key: "hb_adid",
       val(bidResponse) {
         return bidResponse.adId;
-      }
+      },
     },
     {
       key: "hb_pb",
@@ -24,15 +24,15 @@ const bidderSettings = ({ maxBid, minPrice, bucketSize }) => ({
           return minPrice.toFixed(2);
         }
         return (bidResponse.cpm - (bidResponse.cpm % bucketSize)).toFixed(2);
-      }
+      },
     },
     {
       key: "hb_size",
       val(bidResponse) {
         return bidResponse.size;
-      }
-    }
-  ]
+      },
+    },
+  ],
 });
 
 const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
@@ -41,13 +41,13 @@ const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
   let bids = [];
   if (biddersConfig.ix && biddersConfig.ix.siteId) {
     bids = bids.concat(
-      sizes.map(size => ({
+      sizes.map((size) => ({
         bidder: "ix",
         params: {
           siteId: biddersConfig.ix.siteId,
-          size
-        }
-      }))
+          size,
+        },
+      })),
     );
   }
   if (biddersConfig.appnexus && biddersConfig.appnexus.placementId) {
@@ -56,11 +56,11 @@ const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
       params: {
         keywords: {
           pos: position,
-          section
+          section,
         },
         placementId: biddersConfig.appnexus.placementId,
-        position
-      }
+        position,
+      },
     });
   }
   if (biddersConfig.rubicon && biddersConfig.rubicon.accountId) {
@@ -71,8 +71,8 @@ const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
         keywords: [section],
         position: position === 1 ? "atf" : "btf",
         siteId: biddersConfig.rubicon.siteId,
-        zoneId: biddersConfig.rubicon.zoneId
-      }
+        zoneId: biddersConfig.rubicon.zoneId,
+      },
     });
   }
   return {
@@ -80,10 +80,10 @@ const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
     code: slot,
     mediaTypes: {
       banner: {
-        sizes
-      }
+        sizes,
+      },
     },
-    sizes
+    sizes,
   };
 };
 
@@ -93,12 +93,12 @@ const prebidConfig = {
     bidderSequence: "random",
     bidTimeout: 3000,
     cache: {
-      url: "https://prebid.adnxs.com/pbc/v1/cache"
+      url: "https://prebid.adnxs.com/pbc/v1/cache",
     },
     consentManagement: {
       allowAuctionWithoutConsent: true,
       cmpApi: "iab",
-      timeout: 3000
+      timeout: 3000,
     },
     disableAjaxTimeout: false,
     enableSendAllBids: true,
@@ -109,9 +109,9 @@ const prebidConfig = {
       enableOverride: false,
       syncDelay: 3000,
       syncEnabled: true,
-      syncsPerBidder: 5
-    }
-  }
+      syncsPerBidder: 5,
+    },
+  },
 };
 
 export { prebidConfig, getPrebidSlotConfig };

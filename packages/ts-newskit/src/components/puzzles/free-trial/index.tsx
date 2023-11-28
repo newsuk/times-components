@@ -6,7 +6,7 @@ import {
   StyledIconA4,
   StyledIconD2,
   StyledWrapper,
-  TextBlockH2
+  TextBlockH2,
 } from './styles';
 
 export interface FreeTrialProps {
@@ -20,7 +20,7 @@ export const FreeTrial: FC<FreeTrialProps> = ({
   freeTrialHeader,
   freeTrialSubheadline,
   url,
-  title
+  title,
 }) => {
   return (
     <Block as="section">
@@ -31,7 +31,7 @@ export const FreeTrial: FC<FreeTrialProps> = ({
               as="h2"
               typographyPreset={{
                 xs: 'editorialHeadline050',
-                md: 'editorialHeadline080'
+                md: 'editorialHeadline080',
               }}
               stylePreset="inkContrast"
               className="withFallback"
@@ -42,7 +42,7 @@ export const FreeTrial: FC<FreeTrialProps> = ({
               as="p"
               typographyPreset={{
                 xs: 'editorialSubheadline020',
-                md: 'editorialSubheadline040'
+                md: 'editorialSubheadline040',
               }}
               stylePreset="inkBase"
               marginBlockStart="space045"
@@ -60,9 +60,9 @@ export const FreeTrial: FC<FreeTrialProps> = ({
                 marginBlockStart: 'space045',
                 minWidth: {
                   xs: '167px',
-                  lg: '199px'
+                  lg: '199px',
                 },
-                height: 'sizing.sizing050'
+                height: 'sizing.sizing050',
               }}
             >
               {title}

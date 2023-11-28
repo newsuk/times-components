@@ -5,26 +5,20 @@ import {
   addSerializers,
   compose,
   minimalWebTransform,
-  stylePrinter
+  stylePrinter,
 } from "../../src";
 
 describe("The serializers should", () => {
   it("minimalise and create styles", () => {
-    addSerializers(
-      expect,
-      compose(
-        stylePrinter,
-        minimalWebTransform
-      )
-    );
+    addSerializers(expect, compose(stylePrinter, minimalWebTransform));
 
     const styles = {
       colored: {
-        color: "red"
+        color: "red",
       },
       padded: {
-        padding: 1
-      }
+        padding: 1,
+      },
     };
 
     const component = (

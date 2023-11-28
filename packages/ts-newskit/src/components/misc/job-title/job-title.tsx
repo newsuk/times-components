@@ -3,7 +3,7 @@ import { Popover, IconButton, Tooltip } from 'newskit';
 import { NewsKitTooltipIcon } from '../../../assets';
 
 export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
-  contractualTitle
+  contractualTitle,
 }) => (
   <Tooltip
     aria-live="polite"
@@ -13,8 +13,8 @@ export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
     overrides={{
       offset: 'space000',
       panel: {
-        typographyPreset: 'utilityLabel010'
-      }
+        typographyPreset: 'utilityLabel010',
+      },
     }}
     data-testid="Tooltip"
   >
@@ -23,7 +23,7 @@ export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
       data-testid="Tooltip"
       overrides={{
         stylePreset: 'iconButtonMinimalSecondary',
-        marginInlineStart: 'space020'
+        marginInlineStart: 'space020',
       }}
     >
       <NewsKitTooltipIcon />
@@ -32,7 +32,7 @@ export const JobTitleTooltip: React.FC<{ contractualTitle: string }> = ({
 );
 
 export const JobTitlePopover: React.FC<{ contractualTitle: string }> = ({
-  contractualTitle
+  contractualTitle,
 }) => (
   <Popover
     content={<>{null}</>}
@@ -40,17 +40,17 @@ export const JobTitlePopover: React.FC<{ contractualTitle: string }> = ({
     placement="top-start"
     overrides={{
       closeButtonContainer: {
-        stylePreset: 'popover'
+        stylePreset: 'popover',
       },
       offset: 'space000',
       content: {
         paddingBlock: 'space000',
-        paddingInline: 'space000'
+        paddingInline: 'space000',
       },
       header: {
         typographyPreset: 'utilityLabel010',
-        stylePreset: 'popover'
-      }
+        stylePreset: 'popover',
+      },
     }}
   >
     <IconButton
@@ -58,7 +58,7 @@ export const JobTitlePopover: React.FC<{ contractualTitle: string }> = ({
       data-testid="Popover"
       overrides={{
         stylePreset: 'iconButtonMinimalSecondary',
-        marginInlineStart: 'space020'
+        marginInlineStart: 'space020',
       }}
     >
       <NewsKitTooltipIcon />

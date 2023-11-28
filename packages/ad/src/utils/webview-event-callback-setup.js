@@ -3,23 +3,24 @@
 
 /* eslint-env browser */
 
-const webviewEventCallbackSetup = options => {
+const webviewEventCallbackSetup = (options) => {
   const { window } = options;
   window.eventCallback = (type, detail) => {
     window.postMessage(
       JSON.stringify({
         detail,
         isTngMessage: true,
-        type
-      })
+        type,
+      }),
     );
   };
-  window.addEventListener("error", ev => {
+  window.addEventListener("error", (ev) => {
     const file = (ev.filename || "").substring(0, 100);
     window.eventCallback(
       "error",
-      `msg=${ev.message || ""}, file=${file}, line=${ev.lineno ||
-        ""}, col=${ev.colno || ""}`
+      `msg=${ev.message || ""}, file=${file}, line=${ev.lineno || ""}, col=${
+        ev.colno || ""
+      }`,
     );
   });
   // eslint-disable-next-line no-console

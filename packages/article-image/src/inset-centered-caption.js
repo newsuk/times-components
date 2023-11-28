@@ -2,11 +2,11 @@ import React from "react";
 import {
   CentredCaption,
   propTypes,
-  defaultProps
+  defaultProps,
 } from "@times-components/caption";
 import InsetCaption from "./inset-caption";
 
-const InsetCenteredCaption = props => (
+const InsetCenteredCaption = (props) => (
   <InsetCaption {...props} CaptionComponent={CentredCaption} />
 );
 

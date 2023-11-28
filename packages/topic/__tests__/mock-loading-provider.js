@@ -6,7 +6,7 @@ export const TopicArticlesProvider = ({ children }) => (
   <topicArticlesProvider>
     {children({
       isLoading: true,
-      variables: {}
+      variables: {},
     })}
   </topicArticlesProvider>
 );

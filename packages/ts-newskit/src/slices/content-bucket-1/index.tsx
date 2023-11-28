@@ -3,7 +3,7 @@ import React from 'react';
 import { CommentCardProps } from '../../components/slices/comment-card';
 import {
   LeadArticle,
-  LeadArticleProps
+  LeadArticleProps,
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
 import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
@@ -12,7 +12,7 @@ import { CommentStack } from '../shared/comment-stack';
 import { CustomStackLayout } from '../shared';
 import {
   FullWidthBlock,
-  FullWidthHidden
+  FullWidthHidden,
 } from '../../components/slices/shared-styles';
 import { ClickHandlerType } from '../types';
 import { ArticleStack } from '../shared/article-stack-cb';
@@ -28,7 +28,7 @@ export const ContentBucket1 = ({
   leadArticle,
   comments,
   articles,
-  clickHandler
+  clickHandler,
 }: ContentBucket1Props) => (
   <CustomStackLayout>
     <StackItem
@@ -36,10 +36,10 @@ export const ContentBucket1 = ({
         xs: '100%',
         md: '720px',
         lg: '760px',
-        xl: '840px'
+        xl: '840px',
       }}
       marginInlineEnd={{
-        lg: 'space060'
+        lg: 'space060',
       }}
     >
       <Block>
@@ -50,7 +50,7 @@ export const ContentBucket1 = ({
               hasTopBorder: false,
               imageTop: true,
               textBlockMarginBlockStart: 'space050',
-              tagAndFlagMarginBlockStart: 'space050'
+              tagAndFlagMarginBlockStart: 'space050',
             }}
             clickHandler={clickHandler}
           />
@@ -68,8 +68,8 @@ export const ContentBucket1 = ({
               imageTop: false,
               contentWidth: {
                 md: '283px auto',
-                xl: '312px auto'
-              }
+                xl: '312px auto',
+              },
             }}
             clickHandler={clickHandler}
           />
@@ -86,20 +86,20 @@ export const ContentBucket1 = ({
         xs: '100%',
         md: '720px',
         lg: '185px',
-        xl: '402px'
+        xl: '402px',
       }}
     >
       <FullWidthHidden lg xl>
         <FullWidthBlock
           paddingInlineStart={{
             xs: 'space045',
-            md: 'space000'
+            md: 'space000',
           }}
         >
           <Divider
             overrides={{
               marginBlock: 'space040',
-              stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' }
+              stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' },
             }}
           />
         </FullWidthBlock>
@@ -114,7 +114,7 @@ export const ContentBucket1 = ({
           xs: '100%',
           md: '720px',
           lg: '976px',
-          xl: '1276px'
+          xl: '1276px',
         }}
       >
         <CommentStack comments={comments} clickHandler={clickHandler} />

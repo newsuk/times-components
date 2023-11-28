@@ -10,7 +10,7 @@ const renderComponent = (props: CategoryCardProps) =>
 const defaultProps = {
   type: 'Sudokus',
   url: 'https://newskit.co.uk/',
-  Icon: NewsKitSudokusIcon
+  Icon: NewsKitSudokusIcon,
 };
 
 describe('Render puzzles category card', () => {

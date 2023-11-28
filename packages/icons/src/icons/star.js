@@ -9,7 +9,7 @@ const IconStar = ({
   opacity,
   strokeColour,
   title = "Save star",
-  width
+  width,
 }) => (
   <svg
     aria-label="icon-save-star"
@@ -18,7 +18,7 @@ const IconStar = ({
     {...clean({
       height,
       title,
-      width: width || height
+      width: width || height,
     })}
   >
     <title>{title}</title>
@@ -26,7 +26,7 @@ const IconStar = ({
       {...clean({
         fill: fillColour,
         opacity,
-        stroke: strokeColour
+        stroke: strokeColour,
       })}
       d="M13.616 16.644l-1.778-5.711 4.674-3.554-5.768.013L9 1.705 7.256 7.392 1.488 7.38l4.674 3.554-1.778 5.71L9 13.102l4.616 3.543z"
     />
@@ -36,7 +36,7 @@ const IconStar = ({
 IconStar.propTypes = propTypes;
 
 IconStar.defaultProps = {
-  fillColour: colours.functional.action
+  fillColour: colours.functional.action,
 };
 
 export default IconStar;

@@ -5,7 +5,7 @@ const content = "Some content";
 const caption = "A caption";
 const twitter = "@twitter";
 
-export default renderComponent => {
+export default (renderComponent) => {
   it("different colours", () => {
     const output = renderComponent(
       <PullQuotes
@@ -15,7 +15,7 @@ export default renderComponent => {
         twitter={twitter}
       >
         {content}
-      </PullQuotes>
+      </PullQuotes>,
     );
 
     expect(output).toMatchSnapshot();

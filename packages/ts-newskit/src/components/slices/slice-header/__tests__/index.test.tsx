@@ -12,7 +12,7 @@ describe('Render Header', () => {
         title="Rugby Union"
         href="https://www.thetimes.co.uk/"
         sliceHeaderClickHandler={mockSliceHeaderClickHandler}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -23,7 +23,7 @@ describe('Render Header', () => {
         title="Rugby Union"
         href="https://www.thetimes.co.uk/"
         sliceHeaderClickHandler={mockSliceHeaderClickHandler}
-      />
+      />,
     );
     const text = getByText('Rugby Union');
     expect(text).toBeInTheDocument();
@@ -35,7 +35,7 @@ describe('Render Header', () => {
         title="Rugby Union"
         href="https://www.thetimes.co.uk/"
         sliceHeaderClickHandler={mockSliceHeaderClickHandler}
-      />
+      />,
     );
     const text = getByText('Rugby Union');
     expect(text).toHaveStyle('color: #01000d');
@@ -46,7 +46,7 @@ describe('Render Header', () => {
         title="Rugby Union"
         href="https://www.thetimes.co.uk/"
         sliceHeaderClickHandler={mockSliceHeaderClickHandler}
-      />
+      />,
     );
     fireEvent.click(getByRole('link'));
     expect(mockSliceHeaderClickHandler).toHaveBeenCalledWith('Rugby Union');
@@ -56,7 +56,7 @@ describe('Render Header', () => {
       <SliceHeader
         title="Rugby Union"
         sliceHeaderClickHandler={mockSliceHeaderClickHandler}
-      />
+      />,
     );
     expect(queryByRole('link')).toBeFalsy();
   });

@@ -9,7 +9,7 @@ class MockDailyRegister {
     this.dailyRegister = {
       byline: new MockMarkup().addInlines().get(),
       content: new MockDailyRegisterMarkup().addBirthdaysToday(1).get(),
-      title: "Nature notes"
+      title: "Nature notes",
     };
   }
 

@@ -15,10 +15,10 @@ module.exports = ({ tiles }) => {
     return acc;
   }, []);
 
-  let titles = sections.map(section => section.title);
-  titles = titles.filter(title => title);
+  let titles = sections.map((section) => section.title);
+  titles = titles.filter((title) => title);
 
-  const nonNewsSection = titles.filter(title => title !== "news");
+  const nonNewsSection = titles.filter((title) => title !== "news");
 
   return nonNewsSection.length
     ? nonNewsSection[0].toLowerCase()

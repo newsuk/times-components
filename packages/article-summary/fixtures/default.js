@@ -12,39 +12,39 @@ const defaultParagraph =
 export default ({
   headline = defaultHeadline,
   label = defaultLabel,
-  paragraph = defaultParagraph
+  paragraph = defaultParagraph,
 } = {}) => ({
   bylineProps: {
     ast: [
       {
         attributes: {
-          slug: "camilla-long"
+          slug: "camilla-long",
         },
         children: [
           {
             attributes: {
-              value: "Camilla Long"
+              value: "Camilla Long",
             },
             children: [],
-            name: "text"
-          }
+            name: "text",
+          },
         ],
-        name: "author"
+        name: "author",
       },
       {
         attributes: {},
         children: [
           {
             attributes: {
-              value: ", Environment Editor"
+              value: ", Environment Editor",
             },
             children: [],
-            name: "text"
-          }
+            name: "text",
+          },
         ],
-        name: "inline"
-      }
-    ]
+        name: "inline",
+      },
+    ],
   },
   content: (
     <ArticleSummaryContent
@@ -54,32 +54,32 @@ export default ({
           children: [
             {
               attributes: {
-                value: paragraph
+                value: paragraph,
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "paragraph"
-        }
+          name: "paragraph",
+        },
       ]}
     />
   ),
   datePublicationProps: {
     date: "2017-11-17T00:01:00.000Z",
-    publication: "TIMES"
+    publication: "TIMES",
   },
   flags: (
     <ArticleFlags
       flags={[
         { expiryTime: "2020-03-13T12:00:00.000Z", type: "UPDATED" },
-        { expiryTime: "2019-03-14T12:00:00.000Z", type: "EXCLUSIVE" }
+        { expiryTime: "2019-03-14T12:00:00.000Z", type: "EXCLUSIVE" },
       ]}
     />
   ),
   headline: <ArticleSummaryHeadline headline={headline} />,
   labelProps: {
     color: colours.functional.primary,
-    title: label
-  }
+    title: label,
+  },
 });

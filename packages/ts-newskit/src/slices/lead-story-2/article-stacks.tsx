@@ -6,11 +6,11 @@ import {
   Stack,
   Visible,
   Hidden,
-  MQ
+  MQ,
 } from 'newskit';
 import {
   LeadArticle,
-  LeadArticleProps
+  LeadArticleProps,
 } from '../../components/slices/lead-article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { RelativeBlockItem } from '../shared-styles';
@@ -28,26 +28,26 @@ export const ArticleStack = ({
   verticalArticles,
   horizontalArticles,
   horizontalArticleContentWidth,
-  clickHandler
+  clickHandler,
 }: ArticleStackProps) => {
-  const modifiedHorizontalArticles = horizontalArticles.map(item => ({
+  const modifiedHorizontalArticles = horizontalArticles.map((item) => ({
     ...clearCreditsAndCaption(item),
     imageTop: true,
     headlineTypographyPreset: {
       xs: 'editorialHeadline030',
-      md: 'editorialHeadline020'
+      md: 'editorialHeadline020',
     },
-    hasTopBorder: false
+    hasTopBorder: false,
   }));
 
-  const modifiedVerticalArticles = verticalArticles.map(item => ({
+  const modifiedVerticalArticles = verticalArticles.map((item) => ({
     ...item,
     headlineTypographyPreset: {
       xs: 'editorialHeadline030',
-      md: 'editorialHeadline020'
+      md: 'editorialHeadline020',
     },
     hasTopBorder: false,
-    hideImage: true
+    hideImage: true,
   }));
 
   const articleStackHorizontal = (
@@ -62,7 +62,7 @@ export const ArticleStack = ({
             <Hidden xs sm>
               <Divider
                 overrides={{
-                  stylePreset: 'lightDivider'
+                  stylePreset: 'lightDivider',
                 }}
                 vertical
               />
@@ -76,14 +76,14 @@ export const ArticleStack = ({
                 <FullWidthBlock
                   paddingInline={{
                     xs: 'space045',
-                    md: 'space000'
+                    md: 'space000',
                   }}
                 >
                   <Visible xs sm>
                     <Divider
                       overrides={{
                         stylePreset: 'dashedDivider',
-                        marginBlock: 'space040'
+                        marginBlock: 'space040',
                       }}
                     />
                   </Visible>
@@ -93,7 +93,7 @@ export const ArticleStack = ({
               {articleBorder}
             </React.Fragment>
           );
-        }
+        },
       )}
     </GridLayout>
   );
@@ -110,7 +110,7 @@ export const ArticleStack = ({
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
-                marginBlock: 'space040'
+                marginBlock: 'space040',
               }}
             />
           );
@@ -120,7 +120,7 @@ export const ArticleStack = ({
                 <FullWidthBlock
                   paddingInline={{
                     xs: 'space045',
-                    md: 'space000'
+                    md: 'space000',
                   }}
                 >
                   {articleBorder}
@@ -129,7 +129,7 @@ export const ArticleStack = ({
               </Block>
             </RelativeBlockItem>
           );
-        }
+        },
       )}
     </GridLayout>
   );

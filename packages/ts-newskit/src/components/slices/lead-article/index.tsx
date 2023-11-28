@@ -5,13 +5,13 @@ import {
   CardComposable,
   Divider,
   MQ,
-  Image
+  Image,
 } from 'newskit';
 import React from 'react';
 import {
   CardHeadlineLink,
   StyledSpan,
-  FullWidthGridLayoutItem
+  FullWidthGridLayoutItem,
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
@@ -20,7 +20,7 @@ import {
   MouseEventType,
   ImageProps,
   ListData,
-  expirableFlagsProps
+  expirableFlagsProps,
 } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
 import { ArticleTileInfo } from '../shared/articleTileInfo';
@@ -55,7 +55,7 @@ export interface LeadArticleProps {
 export const LeadArticle = ({
   article,
   clickHandler,
-  className
+  className,
 }: {
   article: LeadArticleProps;
   clickHandler: ClickHandlerType;
@@ -82,12 +82,12 @@ export const LeadArticle = ({
     listData,
     hideImage,
     expirableFlags,
-    label
+    label,
   } = article;
   const imageWithCorrectRatio =
     images && images.crops
-      ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
-        images.crops.find(crop => crop.ratio === '3:2')
+      ? images.crops.find((crop) => crop.ratio === loadingAspectRatio) ||
+        images.crops.find((crop) => crop.ratio === '3:2')
       : undefined;
 
   const hasImage =
@@ -125,66 +125,64 @@ export const LeadArticle = ({
         md: displayArticleVertical
           ? `media 
              content`
-          : `content media`
+          : `content media`,
       }}
       columnGap="space040"
       columns={displayArticleVertical || !contentWidth ? '100%' : contentWidth}
       className={className}
     >
-      {hasImage &&
-        !hideImage && (
-          <Block
-            marginBlockEnd={imageTop ? 'space040' : 'space000'}
-            className="lead-image-container"
+      {hasImage && !hideImage && (
+        <Block
+          marginBlockEnd={imageTop ? 'space040' : 'space000'}
+          className="lead-image-container"
+        >
+          <FullWidthGridLayoutItem
+            area="media"
+            ratio={imageWithCorrectRatio!.ratio}
+            className="lead-article-image"
           >
-            <FullWidthGridLayoutItem
-              area="media"
-              ratio={imageWithCorrectRatio!.ratio}
-              className="lead-article-image"
+            <a href={url} onClick={onClick} className="article-image">
+              <Image
+                src={
+                  imageWithCorrectRatio &&
+                  `${imageWithCorrectRatio.url}&resize=750`
+                }
+                alt={(images && images.alt) || headline}
+                loadingAspectRatio={
+                  imageWithCorrectRatio && imageWithCorrectRatio.ratio
+                }
+                className="lcpItem"
+              />
+            </a>
+          </FullWidthGridLayoutItem>
+          {hasCaptionOrCredits && (
+            <TextBlock
+              marginBlockStart="space020"
+              typographyPreset="editorialCaption010"
+              stylePreset="inkSubtle"
             >
-              <a href={url} onClick={onClick} className="article-image">
-                <Image
-                  src={
-                    imageWithCorrectRatio &&
-                    `${imageWithCorrectRatio.url}&resize=750`
-                  }
-                  alt={(images && images.alt) || headline}
-                  loadingAspectRatio={
-                    imageWithCorrectRatio && imageWithCorrectRatio.ratio
-                  }
-                  className="lcpItem"
-                />
-              </a>
-            </FullWidthGridLayoutItem>
-            {hasCaptionOrCredits && (
-              <TextBlock
-                marginBlockStart="space020"
-                typographyPreset="editorialCaption010"
-                stylePreset="inkSubtle"
-              >
-                {images && images.caption}
-                {images &&
-                  images.credits && (
-                    <StyledSpan hasCaption={hasCaption}>
-                      {images.credits}
-                    </StyledSpan>
-                  )}
-              </TextBlock>
-            )}
-          </Block>
-        )}
+              {images && images.caption}
+              {images && images.credits && (
+                <StyledSpan hasCaption={hasCaption}>
+                  {images.credits}
+                </StyledSpan>
+              )}
+            </TextBlock>
+          )}
+        </Block>
+      )}
 
       <CardContent
         alignContent="start"
         overrides={{
-          marginBlockEnd: contentTop ? 'space040' : 'space000'
+          marginBlockEnd: contentTop ? 'space040' : 'space000',
         }}
       >
         {hasTopBorder && (
           <Divider
             overrides={{
               stylePreset: 'dashedDivider',
-              marginBlockEnd: 'space045'
+              marginBlockEnd: 'space045',
             }}
           />
         )}
@@ -198,7 +196,7 @@ export const LeadArticle = ({
         <CardHeadlineLink
           href={url}
           overrides={{
-            typographyPreset: headlineTypography
+            typographyPreset: headlineTypography,
           }}
           external={false}
           onClick={onClick}
@@ -210,11 +208,11 @@ export const LeadArticle = ({
             <TextBlock
               stylePreset={{
                 xs: 'inkSubtle',
-                md: 'inkBase'
+                md: 'inkBase',
               }}
               typographyPreset={{
                 xs: 'editorialParagraph020',
-                md: 'editorialParagraph010'
+                md: 'editorialParagraph010',
               }}
               marginBlockStart={textBlockMarginBlockStart}
               as="p"

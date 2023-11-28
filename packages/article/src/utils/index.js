@@ -9,15 +9,15 @@ const getMediaList = (content, leadAsset) => {
     mediaList.push({
       index: 0,
       name: "leadAsset",
-      value: leadAsset
+      value: leadAsset,
     });
   }
 
   const inlineMediaList = ast.filter(
-    item => item.name === "image" || item.name === "video"
+    (item) => item.name === "image" || item.name === "video",
   );
 
-  inlineMediaList.forEach(item => {
+  inlineMediaList.forEach((item) => {
     let inlineMedia;
 
     if (item.name === "video") {
@@ -27,14 +27,14 @@ const getMediaList = (content, leadAsset) => {
         name: "inlineVideo",
         value: {
           caption,
-          posterImageUrl
-        }
+          posterImageUrl,
+        },
       };
     } else {
       inlineMedia = {
         index,
         name: "inlineImage",
-        value: item.attributes
+        value: item.attributes,
       };
     }
     index += 1;
@@ -48,7 +48,7 @@ const addIndexesToInlineImages = (content, leadAsset) => {
   const mutatedContent = content || [];
   let index = leadAsset ? 1 : 0;
 
-  mutatedContent.forEach(item => {
+  mutatedContent.forEach((item) => {
     const contentItem = item;
     if (contentItem.name === "image" || contentItem.name === "video") {
       contentItem.attributes.imageIndex = index;

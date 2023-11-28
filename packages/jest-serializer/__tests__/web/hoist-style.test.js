@@ -8,15 +8,15 @@ import {
   enzymeRenderedSerializer,
   hoistStyle,
   hoistStyleTransform,
-  stylePrinter
+  stylePrinter,
 } from "../../src";
 
 Enzyme.configure({ adapter: new React16Adapter() });
 
 const styles = {
   text: {
-    color: "yellow"
-  }
+    color: "yellow",
+  },
 };
 
 describe("hoist-style should", () => {
@@ -26,7 +26,7 @@ describe("hoist-style should", () => {
     const wrapper = mount(
       <TcText foo="bar" style={{ ...styles.text, color: "red" }}>
         Some text
-      </TcText>
+      </TcText>,
     );
 
     expect(wrapper).toMatchSnapshot();
@@ -36,16 +36,13 @@ describe("hoist-style should", () => {
     addSerializers(
       expect,
       enzymeRenderedSerializer(),
-      compose(
-        stylePrinter,
-        hoistStyleTransform
-      )
+      compose(stylePrinter, hoistStyleTransform),
     );
 
     const wrapper = mount(
       <TcText foo="bar" style={{ ...styles.text, color: "red" }}>
         Some text
-      </TcText>
+      </TcText>,
     );
 
     expect(wrapper).toMatchSnapshot();

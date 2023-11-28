@@ -8,7 +8,7 @@ type LoggedOutNavButtonsProps = {
 };
 export const LoggedOutButtons: React.FC<LoggedOutNavButtonsProps> = ({
   loginUrl,
-  subscribeUrl
+  subscribeUrl,
 }) => (
   <>
     <LoggedOutButtonsContainer
@@ -22,7 +22,7 @@ export const LoggedOutButtons: React.FC<LoggedOutNavButtonsProps> = ({
           overrides={{
             stylePreset: 'buttonSolidSecondary',
             width: '100%',
-            height: '40px'
+            height: '40px',
           }}
           size="medium"
           href={loginUrl}
@@ -34,7 +34,7 @@ export const LoggedOutButtons: React.FC<LoggedOutNavButtonsProps> = ({
           overrides={{
             stylePreset: 'buttonSolidPrimary',
             width: '100%',
-            height: '40px'
+            height: '40px',
           }}
           size="medium"
           href={subscribeUrl}

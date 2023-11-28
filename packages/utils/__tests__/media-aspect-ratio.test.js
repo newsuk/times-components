@@ -4,7 +4,7 @@ import {
   addSerializers,
   compose,
   minimaliseTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 import TcText from "../src/tc-text";
 import AspectRatioContainer from "../src/media-aspect-ratio";
@@ -13,8 +13,8 @@ addSerializers(
   expect,
   compose(
     print,
-    minimaliseTransform((value, key) => key !== "style")
-  )
+    minimaliseTransform((value, key) => key !== "style"),
+  ),
 );
 
 describe("AspectRatioContainer should", () => {
@@ -22,7 +22,7 @@ describe("AspectRatioContainer should", () => {
     const testInstance = TestRenderer.create(
       <AspectRatioContainer aspectRatio="16:9">
         <TcText>Here are some children</TcText>
-      </AspectRatioContainer>
+      </AspectRatioContainer>,
     );
     expect(testInstance).toMatchSnapshot();
   });

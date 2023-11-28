@@ -7,12 +7,12 @@ import { formatThemeOverrides } from '../../utils/theme-formatting';
 
 const themeOverrides = {
   stylePresets,
-  typographyPresets
+  typographyPresets,
 };
 
 const updatedTheme = formatThemeOverrides(TheTimesLight, themeOverrides);
 
 export const TimesWebLightTheme = createTheme({
   name: 'times-web-light',
-  ...updatedTheme
+  ...updatedTheme,
 });

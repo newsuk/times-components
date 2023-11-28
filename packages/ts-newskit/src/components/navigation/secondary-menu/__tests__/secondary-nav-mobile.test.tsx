@@ -8,7 +8,7 @@ import { options } from '../fixtures/options';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('sm')
+  useBreakpointKey: jest.fn().mockReturnValue('sm'),
 }));
 
 describe('Secondary Menu', () => {
@@ -27,7 +27,7 @@ describe('Secondary Menu', () => {
           // noop
         }}
         clickHandler={jest.fn()}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });

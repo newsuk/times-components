@@ -12,7 +12,7 @@ const message =
 describe('Message Component', () => {
   it('should render snapshot', () => {
     const { asFragment } = render(
-      <Message setClosed={setClosed} closed={false} message={message} />
+      <Message setClosed={setClosed} closed={false} message={message} />,
     );
     expect(asFragment()).toMatchSnapshot();
   });

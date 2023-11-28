@@ -5,8 +5,8 @@ const colour = {
     alpha: 1,
     blue: 244,
     green: 223,
-    red: 66
-  }
+    red: 66,
+  },
 };
 
 describe("getRgbaToStyle should", () => {

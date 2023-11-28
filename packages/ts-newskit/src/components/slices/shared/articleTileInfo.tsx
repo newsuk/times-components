@@ -23,7 +23,7 @@ const TileWrapper = ({ children }: { children: React.ReactNode }) => (
       <Divider
         vertical
         overrides={{
-          marginInline: 'space020'
+          marginInline: 'space020',
         }}
       />
     </ContainerInline>
@@ -36,7 +36,7 @@ export const ArticleTileInfo = ({
   hasVideo,
   label,
   marginBlockStart = 'space000',
-  marginBlockEnd = 'space000'
+  marginBlockEnd = 'space000',
 }: ArticleTileInfoProps) => {
   const hasTag = Boolean(contentType);
 
@@ -61,16 +61,13 @@ export const ArticleTileInfo = ({
         marginBlockEnd={marginBlockEnd}
       >
         <>
-          {isLiveTag &&
-            expirableFlags && (
-              <TileWrapper>
-                <LiveTag
-                  liveTag={capitalizedText(
-                    getActiveArticleFlags(expirableFlags)
-                  )}
-                />
-              </TileWrapper>
-            )}
+          {isLiveTag && expirableFlags && (
+            <TileWrapper>
+              <LiveTag
+                liveTag={capitalizedText(getActiveArticleFlags(expirableFlags))}
+              />
+            </TileWrapper>
+          )}
           {!isLiveTag &&
             expirableFlags &&
             getActiveArticleFlags(expirableFlags) && (

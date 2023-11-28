@@ -18,7 +18,7 @@ export default () => {
     expect(scripts.length).toBe(1);
   });
 
-  it("resolves the promise on script element load event", done => {
+  it("resolves the promise on script element load event", (done) => {
     jest
       .spyOn(utils, "createScriptElement")
       .mockImplementation((uri, onLoad) => {
@@ -30,7 +30,7 @@ export default () => {
       .catch(done);
   });
 
-  it("rejects the promise on script element error event", done => {
+  it("rejects the promise on script element error event", (done) => {
     jest
       .spyOn(utils, "createScriptElement")
       .mockImplementation((uri, onLoad, onError) => {

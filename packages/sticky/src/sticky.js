@@ -155,7 +155,7 @@ class UnwrappedSticky extends Component {
     if (!this.placeholderBox) {
       this.placeholderBox = {
         top: getTopFromBody(this.placeholder),
-        height: this.placeholder.offsetHeight
+        height: this.placeholder.offsetHeight,
       };
     }
 
@@ -214,10 +214,10 @@ UnwrappedSticky.propTypes = {
   children: PropTypes.node,
   stickyContext: PropTypes.shape({
     top: PropTypes.number.isRequired,
-    node: PropTypes.object
+    node: PropTypes.object,
   }),
   zIndex: PropTypes.string,
-  shouldBeSticky: PropTypes.func
+  shouldBeSticky: PropTypes.func,
 };
 
 UnwrappedSticky.defaultProps = {
@@ -227,7 +227,7 @@ UnwrappedSticky.defaultProps = {
   stickyContext: { ...defaultContext },
   style: {},
   zIndex: "999",
-  shouldBeSticky: () => true
+  shouldBeSticky: () => true,
 };
 
 const Sticky = withStickyContext(UnwrappedSticky);

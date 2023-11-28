@@ -2,7 +2,7 @@ import { Divider, GridLayout, Visible } from 'newskit';
 import React from 'react';
 import {
   CommentCard,
-  CommentCardProps
+  CommentCardProps,
 } from '../../components/slices/comment-card';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { AvatarDivider } from '../shared-styles';
@@ -18,20 +18,20 @@ export const CommentStack = ({ comments, clickHandler }: CommentStackProps) => {
       <FullWidthBlock
         paddingInline={{
           xs: 'space045',
-          md: 'space000'
+          md: 'space000',
         }}
       >
         <Divider
           overrides={{
             marginBlock: 'space040',
-            stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' }
+            stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' },
           }}
         />
       </FullWidthBlock>
       <GridLayout
         columns={{
           xs: '1fr',
-          md: '1fr 1px 1fr'
+          md: '1fr 1px 1fr',
         }}
         columnGap="space040"
       >
@@ -42,7 +42,7 @@ export const CommentStack = ({ comments, clickHandler }: CommentStackProps) => {
                 <AvatarDivider
                   overrides={{
                     marginBlock: 'space040',
-                    stylePreset: 'lightDashedDivider'
+                    stylePreset: 'lightDashedDivider',
                   }}
                 />
               </Visible>
@@ -50,7 +50,7 @@ export const CommentStack = ({ comments, clickHandler }: CommentStackProps) => {
                 <AvatarDivider
                   overrides={{
                     marginBlock: 'space000',
-                    stylePreset: 'lightDivider'
+                    stylePreset: 'lightDivider',
                   }}
                   vertical
                 />

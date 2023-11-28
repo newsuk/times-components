@@ -6,12 +6,12 @@ import {
   Block,
   MenuSub,
   MenuItem,
-  getMediaQueryFromTheme
+  getMediaQueryFromTheme,
 } from 'newskit';
 import {
   MainMenuProp,
   SecondaryNavContainerProp,
-  NavItemMobileContainerProp
+  NavItemMobileContainerProp,
 } from './types';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 

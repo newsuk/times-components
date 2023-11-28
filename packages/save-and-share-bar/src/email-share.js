@@ -19,7 +19,7 @@ class EmailShare extends Component {
       shouldTokenise,
       articleUrl,
       onShareEmail,
-      articleHeadline
+      articleHeadline,
     } = this.props;
 
     e.preventDefault();
@@ -30,14 +30,14 @@ class EmailShare extends Component {
       this.setState({ isLoading: true });
 
       getTokenisedShareUrl(articleId)
-        .then(res => {
+        .then((res) => {
           const { data } = res;
           if (data && data.article) {
             this.setState({ isLoading: false });
             this.openMailClient(data.article.tokenisedUrl);
           }
         })
-        .catch(error => {
+        .catch((error) => {
           this.setState({ isLoading: false });
           console.error("Error in connecting to api", error);
         });
@@ -45,7 +45,7 @@ class EmailShare extends Component {
       const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
 
       this.openMailClient(
-        matches ? `${articleUrl}?shareToken=${matches[1]}` : articleUrl
+        matches ? `${articleUrl}?shareToken=${matches[1]}` : articleUrl,
       );
     }
   }
@@ -86,11 +86,11 @@ EmailShare.propTypes = {
   articleHeadline: PropTypes.string.isRequired,
   articleId: PropTypes.string.isRequired,
   shouldTokenise: PropTypes.bool.isRequired,
-  publicationName: PropTypes.string
+  publicationName: PropTypes.string,
 };
 
 EmailShare.defaultProps = {
-  publicationName: "TIMES"
+  publicationName: "TIMES",
 };
 
 export default EmailShare;

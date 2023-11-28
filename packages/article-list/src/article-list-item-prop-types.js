@@ -7,9 +7,9 @@ export const propTypesBase = {
     label: PropTypes.string,
     leadAsset: PropTypes.shape({
       crop: PropTypes.shape({
-        url: PropTypes.string
+        url: PropTypes.string,
       }),
-      title: PropTypes.string
+      title: PropTypes.string,
     }),
     longSummary: PropTypes.array,
     publicationName: PropTypes.string,
@@ -17,16 +17,16 @@ export const propTypesBase = {
     shortHeadline: PropTypes.string,
     shortSummary: PropTypes.array,
     summary: PropTypes.array,
-    url: PropTypes.string
+    url: PropTypes.string,
   }),
   fadeImageIn: PropTypes.bool,
-  highResSize: PropTypes.number
+  highResSize: PropTypes.number,
 };
 
 export const propTypes = {
   ...propTypesBase,
   imageRatio: PropTypes.number,
-  showImage: PropTypes.bool
+  showImage: PropTypes.bool,
 };
 
 export const defaultProps = {
@@ -35,5 +35,5 @@ export const defaultProps = {
   highResSize: null,
   imageRatio: 1,
   showImage: true,
-  summary: []
+  summary: [],
 };

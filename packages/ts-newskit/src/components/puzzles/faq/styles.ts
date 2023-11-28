@@ -5,7 +5,7 @@ import {
   styled,
   LinkInline,
   getColorCssFromTheme,
-  getSpacingCssFromTheme
+  getSpacingCssFromTheme,
 } from 'newskit';
 
 export const Container = styled(Block)`

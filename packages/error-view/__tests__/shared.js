@@ -13,8 +13,8 @@ export default () => {
   ErrorState.propTypes = {
     error: PropTypes.shape({
       message: PropTypes.string,
-      stack: PropTypes.string
-    }).isRequired
+      stack: PropTypes.string,
+    }).isRequired,
   };
 
   const GoodState = () => <TcText>All good</TcText>;
@@ -28,11 +28,11 @@ export default () => {
             {({ hasError, error }) =>
               hasError ? <ErrorState error={error} /> : <ThrowsError />
             }
-          </ErrorView>
+          </ErrorView>,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "error state if a component invokes an error",
@@ -46,11 +46,11 @@ export default () => {
                 <InvokesError onError={onError} />
               )
             }
-          </ErrorView>
+          </ErrorView>,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "good state if there is no error",
@@ -60,12 +60,12 @@ export default () => {
             {({ hasError, error }) =>
               hasError ? <ErrorState error={error} /> : <GoodState />
             }
-          </ErrorView>
+          </ErrorView>,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ];
 
   iterator(tests);

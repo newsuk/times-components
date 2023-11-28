@@ -12,13 +12,13 @@ export default [
                 name: "text",
                 children: [],
                 attributes: {
-                  value: "Conversations with Friends"
-                }
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+                  value: "Conversations with Friends",
+                },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];

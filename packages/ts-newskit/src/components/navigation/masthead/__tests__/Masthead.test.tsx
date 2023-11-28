@@ -6,7 +6,7 @@ import '@testing-library/jest-dom';
 describe('EditionMasthead', () => {
   it('should render The Times masthead', () => {
     const { asFragment } = render(
-      <EditionMasthead todaysDate="Wed Feb 22 2023 00:01:00 GMT+0000 (Greenwich Mean Time)" />
+      <EditionMasthead todaysDate="Wed Feb 22 2023 00:01:00 GMT+0000 (Greenwich Mean Time)" />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -16,7 +16,7 @@ describe('EditionMasthead', () => {
       <EditionMasthead
         isSunday={true}
         todaysDate="Sun Feb 26 2023 00:01:00 GMT+0000 (Greenwich Mean Time)"
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -26,7 +26,7 @@ describe('EditionMasthead', () => {
       <EditionMasthead
         isSunday={false}
         todaysDate="Wed Feb 22 2023 00:01:00 GMT+0000 (Greenwich Mean Time)"
-      />
+      />,
     );
     const date = getByText('Wednesday February 22 2023');
     expect(date).toBeInTheDocument();

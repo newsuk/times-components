@@ -4,17 +4,13 @@ import {
   enzymeRenderedSerializer,
   flattenStyleTransform,
   minimalWebTransform,
-  stylePrinter
+  stylePrinter,
 } from "@times-components/jest-serializer";
 
 addSerializers(
   expect,
   enzymeRenderedSerializer(),
-  compose(
-    stylePrinter,
-    minimalWebTransform,
-    flattenStyleTransform
-  )
+  compose(stylePrinter, minimalWebTransform, flattenStyleTransform),
 );
 
 // eslint-disable-next-line global-require

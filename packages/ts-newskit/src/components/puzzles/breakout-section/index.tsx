@@ -6,7 +6,7 @@ import {
   BreakoutSectionLink,
   StyledSudokuIconA4,
   StyledSudokuIconD2,
-  StyledSudokuIconD4
+  StyledSudokuIconD4,
 } from './styles';
 import { StyledNewskitWaveBg } from '../personal-stats/styles';
 import { breakoutItems } from './fixtures/breakoutItems.json';
@@ -21,7 +21,7 @@ interface BreakoutSectionProps {
 }
 
 export const BreakoutSection: FC<BreakoutSectionProps> = ({
-  items = breakoutItems
+  items = breakoutItems,
 }) => {
   return (
     <Block as="section">
@@ -52,7 +52,7 @@ export const BreakoutSection: FC<BreakoutSectionProps> = ({
           overrides={{
             marginBlockStart: { xs: 'space070', sm: 'space080' },
             width: '100%',
-            maxWidth: '1272px'
+            maxWidth: '1272px',
           }}
         >
           <StyledSudokuIconD2 />
@@ -62,7 +62,7 @@ export const BreakoutSection: FC<BreakoutSectionProps> = ({
               <BreakoutSectionLink
                 overrides={{
                   stylePreset: 'puzzlesShadowBtn',
-                  typographyPreset: 'utilityButton020'
+                  typographyPreset: 'utilityButton020',
                 }}
                 href={url}
               >

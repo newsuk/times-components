@@ -7,14 +7,14 @@ import GradientBase from "../src/gradient.base";
 
 const renderExampleText = () => <TcText>Some example text</TcText>;
 
-export default renderMethod => {
+export default (renderMethod) => {
   const makeMessageEvent = ({ width, height }) => ({
     nativeEvent: {
       layout: {
         height,
-        width
-      }
-    }
+        width,
+      },
+    },
   });
 
   const tests = [
@@ -24,7 +24,7 @@ export default renderMethod => {
         const output = renderMethod(<Gradient />);
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "gradient with a child",
@@ -32,7 +32,7 @@ export default renderMethod => {
         const output = renderMethod(<Gradient>{renderExampleText()}</Gradient>);
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "overlay gradient",
@@ -40,39 +40,39 @@ export default renderMethod => {
         const output = renderMethod(<OverlayGradient />);
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "overlay gradient with a child",
       test: () => {
         const output = renderMethod(
-          <OverlayGradient>{renderExampleText()}</OverlayGradient>
+          <OverlayGradient>{renderExampleText()}</OverlayGradient>,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "gradient defaults to size of its container",
       test: () => {
         const testRenderer = renderMethod(
-          <GradientBase endColour="#FFFFFF" startColour="#000000" />
+          <GradientBase endColour="#FFFFFF" startColour="#000000" />,
         );
         const testInstance = testRenderer.root;
-        const view = testInstance.find(child => !!child.props.onLayout);
+        const view = testInstance.find((child) => !!child.props.onLayout);
 
         view.props.onLayout(
           makeMessageEvent({
             height: 100,
-            width: 100
-          })
+            width: 100,
+          }),
         );
         const surface = testInstance.findByType(ReactArt.Surface);
 
         expect(surface.props).toEqual(
-          expect.objectContaining({ height: 100, width: 100 })
+          expect.objectContaining({ height: 100, width: 100 }),
         );
-      }
+      },
     },
     {
       name: "can override gradient size with custom width and height",
@@ -83,16 +83,16 @@ export default renderMethod => {
             height={200}
             startColour="#000000"
             width={300}
-          />
+          />,
         );
         const testInstance = testRenderer.root;
         const surface = testInstance.findByType(ReactArt.Surface);
 
         expect(surface.props).toEqual(
-          expect.objectContaining({ height: 200, width: 300 })
+          expect.objectContaining({ height: 200, width: 300 }),
         );
-      }
-    }
+      },
+    },
   ];
 
   iterator(tests);

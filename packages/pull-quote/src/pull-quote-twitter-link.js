@@ -19,7 +19,7 @@ const PullQuoteTwitterLink = ({ onTwitterLinkPress, twitter }) => {
       <TextLink
         className="pullQuoteTwitterLink"
         key={url}
-        onPress={e => onTwitterLinkPress(e, { twitter, url })}
+        onPress={(e) => onTwitterLinkPress(e, { twitter, url })}
         style={styles.link}
         target="_blank"
         url={url}

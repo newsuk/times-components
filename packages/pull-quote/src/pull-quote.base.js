@@ -8,7 +8,7 @@ import quoteStyleFactory from "./styles/quotes";
 
 const quoteStyle = (font, quoteColour) => ({
   ...quoteStyleFactory(font),
-  color: quoteColour
+  color: quoteColour,
 });
 
 const PullQuotes = ({
@@ -18,7 +18,7 @@ const PullQuotes = ({
   onTwitterLinkPress,
   quoteColour,
   text,
-  twitter
+  twitter,
 }) => (
   <TcView style={styles.container}>
     <TcText style={quoteStyle(font, quoteColour)}>&ldquo;</TcText>

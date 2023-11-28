@@ -4,7 +4,7 @@ import {
   getSSRId,
   Scroll,
   GridLayoutItem,
-  LinkInline
+  LinkInline,
 } from 'newskit';
 import { Puzzle } from '../archive/types';
 import { StyledTitleBar } from './styles';
@@ -24,7 +24,7 @@ export const CardsContainer = ({
   title,
   isScrollable = false,
   seeAllLink,
-  isImageCropped = false
+  isImageCropped = false,
 }: CardsContainerProps) => {
   const scrollRef = useRef(null);
   const cardRef = useRef(null);
@@ -36,17 +36,17 @@ export const CardsContainer = ({
         overrides={{
           paddingBlock: {
             xs: 'space040',
-            lg: 'space050'
+            lg: 'space050',
           },
           paddingInline: 'space000',
           heading: {
             typographyPreset: {
               xs: 'editorialDisplay002',
               md: 'editorialDisplay003',
-              lg: 'editorialDisplay004'
+              lg: 'editorialDisplay004',
             },
-            stylePreset: 'inkBrand010'
-          }
+            stylePreset: 'inkBrand010',
+          },
         }}
         actionItem={() =>
           isScrollable && cards.length > 4 ? (
@@ -59,7 +59,7 @@ export const CardsContainer = ({
         }
         hideActionItemOn={{
           xs: true,
-          sm: true
+          sm: true,
         }}
         data-testid="title-bar"
       >
@@ -68,7 +68,7 @@ export const CardsContainer = ({
             href={seeAllLink}
             overrides={{
               externalIcon: { size: '0' },
-              stylePreset: 'inkBrand010'
+              stylePreset: 'inkBrand010',
             }}
           >
             {title}
@@ -80,7 +80,7 @@ export const CardsContainer = ({
       <Scroll
         ref={scrollRef}
         overrides={{
-          overlays: { stylePreset: '__delete' }
+          overlays: { stylePreset: '__delete' },
         }}
         data-testid="scroll-container"
       >
@@ -89,7 +89,7 @@ export const CardsContainer = ({
             !isScrollable
               ? {
                   xs: 'repeat(2, 1fr)',
-                  md: 'repeat(4, 1fr)'
+                  md: 'repeat(4, 1fr)',
                 }
               : undefined
           }
@@ -99,11 +99,11 @@ export const CardsContainer = ({
           }
           columnGap={{
             xs: isScrollable ? 'space030' : 'space050',
-            md: 'space060'
+            md: 'space060',
           }}
           rowGap={{
             xs: 'space060',
-            md: 'space070'
+            md: 'space070',
           }}
         >
           {' '}

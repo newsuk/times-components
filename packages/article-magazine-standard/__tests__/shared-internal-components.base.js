@@ -7,16 +7,16 @@ import Standfirst from "../src/article-standfirst/article-standfirst";
 
 import { bylineWithLink } from "../fixtures/full-article";
 
-const snapshotTests = renderComponent => [
+const snapshotTests = (renderComponent) => [
   {
     name: "article standfirst with content",
     test() {
       const output = renderComponent(
-        <Standfirst standfirst="This is a standfirst" />
+        <Standfirst standfirst="This is a standfirst" />,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "article standfirst with no content",
@@ -24,7 +24,7 @@ const snapshotTests = renderComponent => [
       const output = renderComponent(<Standfirst />);
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "article label uses default section colour",
@@ -32,15 +32,15 @@ const snapshotTests = renderComponent => [
       const output = renderComponent(
         <ContextProviderWithDefaults
           value={{
-            theme: { sectionColour: null }
+            theme: { sectionColour: null },
           }}
         >
           <Label label="Random Label" />
-        </ContextProviderWithDefaults>
+        </ContextProviderWithDefaults>,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "article label renders null if there is no text",
@@ -48,7 +48,7 @@ const snapshotTests = renderComponent => [
       const output = renderComponent(<Label />);
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "article label shows video label is isVideo is truthy",
@@ -56,7 +56,7 @@ const snapshotTests = renderComponent => [
       const output = renderComponent(<Label isVideo label="Random Label" />);
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "article meta uses default section colour",
@@ -64,7 +64,7 @@ const snapshotTests = renderComponent => [
       const output = renderComponent(
         <ContextProviderWithDefaults
           value={{
-            theme: { sectionColour: null }
+            theme: { sectionColour: null },
           }}
         >
           <Meta
@@ -73,12 +73,12 @@ const snapshotTests = renderComponent => [
             publicationName="TIMES"
             publishedTime="2015-03-23T19:39:39.000Z"
           />
-        </ContextProviderWithDefaults>
+        </ContextProviderWithDefaults>,
       );
 
       expect(output).toMatchSnapshot();
-    }
-  }
+    },
+  },
 ];
 
 export default (renderComponent, platformTests = []) => {
@@ -87,8 +87,8 @@ export default (renderComponent, platformTests = []) => {
   beforeEach(() => {
     global.Intl = {
       DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Europe/London" })
-      })
+        resolvedOptions: () => ({ timeZone: "Europe/London" }),
+      }),
     };
   });
 

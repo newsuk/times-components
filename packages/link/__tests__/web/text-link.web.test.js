@@ -8,7 +8,7 @@ describe("Test Link", () => {
     const { baseElement, getByText, getByRole } = render(
       <TextLink onPress={() => {}} url="http://thetimes.co.uk">
         The Times
-      </TextLink>
+      </TextLink>,
     );
     expect(baseElement).toMatchSnapshot();
     expect(getByText("The Times")).toBeVisible();
@@ -22,13 +22,13 @@ describe("Test Link", () => {
         url="http://thetimes.co.uk"
       >
         The Times
-      </TextLink>
+      </TextLink>,
     );
     expect(baseElement).toMatchSnapshot();
     expect(getByText("The Times")).toBeVisible();
     expect(getByRole("link")).toHaveStyle({
       color: "#006699",
-      backgroundColor: "#0066799"
+      backgroundColor: "#0066799",
     });
   });
   it("calls onPress when clicked", () => {
@@ -40,7 +40,7 @@ describe("Test Link", () => {
         url="http://thetimes.co.uk"
       >
         The Times
-      </TextLink>
+      </TextLink>,
     );
     expect(baseElement).toMatchSnapshot();
     fireEvent.click(getByRole("link"));
@@ -50,7 +50,7 @@ describe("Test Link", () => {
     const { baseElement, getByText, getByRole } = render(
       <TextLink onPress={() => {}} url="http://thetimes.co.uk">
         <p>Children</p>
-      </TextLink>
+      </TextLink>,
     );
     expect(baseElement).toMatchSnapshot();
     expect(getByText("Children")).toBeVisible();
@@ -60,7 +60,7 @@ describe("Test Link", () => {
     const { baseElement, getByText, getByRole } = render(
       <TextLink onPress={() => {}} url="http://thetimes.co.uk" target="_blank">
         <p>Children</p>
-      </TextLink>
+      </TextLink>,
     );
     expect(baseElement).toMatchSnapshot();
     expect(getByText("Children")).toBeVisible();

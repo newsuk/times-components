@@ -16,7 +16,7 @@ export interface ListDataProps {
 
 export const UnorderedListItems = ({
   listData,
-  clickHandler
+  clickHandler,
 }: ListDataProps) => {
   if (!listData || listData.length === 0) {
     return null;
@@ -28,12 +28,12 @@ export const UnorderedListItems = ({
         marker: {
           size: 'iconSize005',
           spaceInline: 'space020',
-          stylePreset: 'inkContrast'
+          stylePreset: 'inkContrast',
         },
         marginBlockStart: 'space050',
         content: {
-          typographyPreset: 'utilityBody010'
-        }
+          typographyPreset: 'utilityBody010',
+        },
       }}
     >
       {listData.map(({ label, href, id }, index) => {
@@ -45,7 +45,7 @@ export const UnorderedListItems = ({
         return hasHref ? (
           <LinkInline
             overrides={{
-              stylePreset: 'inkContrast'
+              stylePreset: 'inkContrast',
             }}
             key={index}
             href={href}

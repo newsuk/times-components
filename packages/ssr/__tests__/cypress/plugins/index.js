@@ -1,5 +1,5 @@
 const {
-  addMatchImageSnapshotPlugin
+  addMatchImageSnapshotPlugin,
 } = require("cypress-image-snapshot/plugin");
 
 const mockTpa = require("@times-components/mock-tpa-server");
@@ -15,7 +15,7 @@ module.exports = (on, config) => {
     stopMockServer() {
       return mockTpa.stop();
     },
-    failed: failed()
+    failed: failed(),
   });
 
   on("task", {
@@ -30,7 +30,7 @@ module.exports = (on, config) => {
       console.table(message);
 
       return null;
-    }
+    },
   });
 
   return config;

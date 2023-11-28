@@ -7,7 +7,7 @@ export const TagAndFlag = ({
   flag,
   flagOverrides,
   tag,
-  marginBlockStart = 'space000'
+  marginBlockStart = 'space000',
 }: TagAndFlagProps) => {
   const hasTag = tag && tag.label;
   const hasFlag = flag && flag !== '';
@@ -23,9 +23,9 @@ export const TagAndFlag = ({
           overrides={{
             typographyPreset: {
               xs: 'utilityButton010',
-              md: 'utilityButton005'
+              md: 'utilityButton005',
             },
-            stylePreset: 'inkBrand010'
+            stylePreset: 'inkBrand010',
           }}
           href={tag.href}
         >
@@ -33,19 +33,16 @@ export const TagAndFlag = ({
         </TextLink>
       )}
 
-      {tag &&
-        Object.keys(tag).length > 0 &&
-        tag.label !== '' &&
-        flag && (
-          <ContainerInline>
-            <Divider
-              vertical
-              overrides={{
-                marginInline: 'space020'
-              }}
-            />
-          </ContainerInline>
-        )}
+      {tag && Object.keys(tag).length > 0 && tag.label !== '' && flag && (
+        <ContainerInline>
+          <Divider
+            vertical
+            overrides={{
+              marginInline: 'space020',
+            }}
+          />
+        </ContainerInline>
+      )}
 
       {flag && (
         <TextBlock

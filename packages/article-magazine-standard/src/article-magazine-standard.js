@@ -3,13 +3,13 @@ import ArticleSkeleton from "@times-components/article-skeleton";
 import {
   getHeadline,
   getLeadAsset,
-  getStandardTemplateCrop
+  getStandardTemplateCrop,
 } from "@times-components/utils";
 import { CentredCaption } from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import {
   articlePropTypes,
-  articleDefaultProps
+  articleDefaultProps,
 } from "./article-prop-types/article-prop-types";
 import newStyles from "./newStyles";
 import { LeadAsset } from "./newStyles/responsive";
@@ -32,7 +32,7 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst,
-      updatedTime
+      updatedTime,
     } = article;
 
     return (
@@ -71,7 +71,7 @@ class ArticlePage extends Component {
       paidContentClassName,
       isPreview,
       swgProductId,
-      storefrontConfig
+      storefrontConfig,
     } = this.props;
 
     if (error || isLoading) {

@@ -13,7 +13,7 @@ export const ShareAndSaveContainer = styled.div`
     display: none;
   }
 
-  ${props =>
+  ${(props) =>
     props.showBottomBorder &&
     `border-bottom-color: ${colours.functional.keyline};
      border-bottom-style: solid;

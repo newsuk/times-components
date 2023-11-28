@@ -9,7 +9,7 @@ import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 
 const mockEvent = {
-  preventDefault: () => {}
+  preventDefault: () => {},
 };
 
 class WithTrackingContext extends Component {
@@ -17,8 +17,8 @@ class WithTrackingContext extends Component {
     const { analyticsStream } = this.props;
     return {
       tracking: {
-        analytics: analyticsStream
-      }
+        analytics: analyticsStream,
+      },
     };
   }
 
@@ -29,8 +29,8 @@ class WithTrackingContext extends Component {
 
 WithTrackingContext.childContextTypes = {
   tracking: PropTypes.shape({
-    analytics: PropTypes.func
-  })
+    analytics: PropTypes.func,
+  }),
 };
 
 WithTrackingContext.propTypes = {
@@ -38,7 +38,7 @@ WithTrackingContext.propTypes = {
   articleUrl: PropTypes.string.isRequired,
   articleId: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
-  onCopyLink: PropTypes.func.isRequired
+  onCopyLink: PropTypes.func.isRequired,
 };
 
 export default () => {
@@ -79,7 +79,7 @@ export default () => {
       delete global.window.location;
       global.window.location = {
         assign: jest.fn(),
-        search: ""
+        search: "",
       };
     });
 
@@ -101,9 +101,8 @@ export default () => {
 
     it("when press share on facebook", () => {
       const testInstance = TestRenderer.create(<TestComponent />);
-      const shareOnFacebookBarItem = testInstance.root.findAllByType(
-        BarItem
-      )[2];
+      const shareOnFacebookBarItem =
+        testInstance.root.findAllByType(BarItem)[2];
       shareOnFacebookBarItem.props.onPress();
 
       const call = stream.mock.calls[0][0];
@@ -114,9 +113,8 @@ export default () => {
 
     xit("when press copy to clipboard", () => {
       const testInstance = TestRenderer.create(<TestComponent />);
-      const copyToClipboardBarItem = testInstance.root.findAllByType(
-        BarItem
-      )[3];
+      const copyToClipboardBarItem =
+        testInstance.root.findAllByType(BarItem)[3];
       copyToClipboardBarItem.props.onPress(mockEvent);
 
       const call = stream.mock.calls[0][0];
@@ -127,9 +125,8 @@ export default () => {
 
     it("when press share article url by email", async () => {
       const testInstance = TestRenderer.create(<TestComponent />);
-      const shareArticleUrlByEmailBarItem = testInstance.root.findAllByType(
-        BarItem
-      )[0];
+      const shareArticleUrlByEmailBarItem =
+        testInstance.root.findAllByType(BarItem)[0];
       await shareArticleUrlByEmailBarItem.props.onPress(mockEvent);
 
       const call = stream.mock.calls[0][0];

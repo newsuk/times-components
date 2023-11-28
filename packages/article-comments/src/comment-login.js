@@ -17,7 +17,7 @@ const loginRequest = (url, completeSSOCallback) => {
 const ssoCallback = (codeA, completeSSOCallback) =>
   loginRequest(
     `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}`,
-    completeSSOCallback
+    completeSSOCallback,
   );
 
 const executeSSOtransaction = () => {

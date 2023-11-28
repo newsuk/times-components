@@ -5,7 +5,7 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   print,
-  replacePropTransform
+  replacePropTransform,
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import shared from "./shared.base";
@@ -18,11 +18,10 @@ export default () => {
     compose(
       print,
       minimaliseTransform((value, key) => key === "style"),
-      replacePropTransform(
-        (value, key) =>
-          longKeysSet.has(key) ? hash(JSON.stringify(value)) : value
-      )
-    )
+      replacePropTransform((value, key) =>
+        longKeysSet.has(key) ? hash(JSON.stringify(value)) : value,
+      ),
+    ),
   );
 
   shared(mount);

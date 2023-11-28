@@ -12,8 +12,8 @@ describe('clearCreditsAndCaptionObject', () => {
         alt: 'Example Alt Text',
         credits: 'Example Credits',
         caption: 'Example Caption',
-        crops: []
-      }
+        crops: [],
+      },
     };
 
     const updatedLeadArticle = clearCreditsAndCaption(leadArticle);

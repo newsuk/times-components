@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Accordion as NewskitAccordion,
   AccordionGroup as NewskitAccordionGroup,
-  TextBlock
+  TextBlock,
 } from 'newskit';
 
 import { sanitiseCopy } from '../../../utils/text-formatting';
@@ -24,16 +24,16 @@ export const AccordionGroup = ({ group }: AccordionGroupProps) => {
       expanded={expandedGroup}
       onChange={toggleExpandedGroup}
     >
-      {group.map(accordion => (
+      {group.map((accordion) => (
         <NewskitAccordion
           key={accordion.header}
           header={accordion.header}
           overrides={{
             header: {
               stylePreset: 'accordionHeaderPrimary',
-              typographyPreset: 'utilityHeading010'
+              typographyPreset: 'utilityHeading010',
             },
-            panel: { stylePreset: 'accordionPanelPrimary' }
+            panel: { stylePreset: 'accordionPanelPrimary' },
           }}
         >
           <TextBlock
@@ -44,8 +44,8 @@ export const AccordionGroup = ({ group }: AccordionGroupProps) => {
                 br: {},
                 b: {},
                 i: {},
-                a: ['href']
-              })
+                a: ['href'],
+              }),
             }}
           />
         </NewskitAccordion>

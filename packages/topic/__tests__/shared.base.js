@@ -8,35 +8,35 @@ import Topic from "../src/topic";
 // eslint-disable-next-line global-require
 jest.mock("@times-components/provider", () => require("./mock-provider"));
 jest.mock("@times-components/tracking", () => {
-  const id = x => x;
+  const id = (x) => x;
 
   return {
     withTrackEvents: id,
-    withTrackingContext: id
+    withTrackingContext: id,
   };
 });
 
-export default props => {
+export default (props) => {
   const tests = [
     {
       name: "an error page",
       test() {
         const testInstance = TestRenderer.create(
-          <Topic {...props} error={new ApolloError("Some Error")} />
+          <Topic {...props} error={new ApolloError("Some Error")} />,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "a loading state",
       test() {
         const testInstance = TestRenderer.create(
-          <Topic {...props} isLoading page={1} />
+          <Topic {...props} isLoading page={1} />,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "uses general description when there is no description",
@@ -46,11 +46,11 @@ export default props => {
             {...{ ...props, topic: { name: "London", description: null } }}
             isLoading={false}
             page={1}
-          />
+          />,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "render description when there is description",
@@ -64,94 +64,94 @@ export default props => {
                 description: [
                   {
                     attributes: {
-                      value: "Sample "
+                      value: "Sample ",
                     },
                     children: [],
-                    name: "text"
+                    name: "text",
                   },
                   {
                     attributes: {},
                     children: [
                       {
                         attributes: {
-                          value: "Description."
+                          value: "Description.",
                         },
                         children: [],
-                        name: "text"
-                      }
+                        name: "text",
+                      },
                     ],
-                    name: "italic"
-                  }
-                ]
-              }
+                    name: "italic",
+                  },
+                ],
+              },
             }}
             isLoading={false}
             page={1}
-          />
+          />,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "an article list",
       test() {
         const testInstance = TestRenderer.create(
-          <Topic {...props} isLoading={false} page={2} />
+          <Topic {...props} isLoading={false} page={2} />,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "fetches more articles",
       test() {
         const testInstance = TestRenderer.create(
-          <Topic {...props} isLoading={false} page={2} />
+          <Topic {...props} isLoading={false} page={2} />,
         );
 
         const articleList = testInstance.root.find(
-          node => node.type === "ArticleList"
+          (node) => node.type === "ArticleList",
         );
 
         articleList.props.fetchMore(2);
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "fetches more articles and falls back to previous data if no more",
       test() {
         const testInstance = TestRenderer.create(
-          <Topic {...props} isLoading={false} page={2} />
+          <Topic {...props} isLoading={false} page={2} />,
         );
 
         const articleList = testInstance.root.find(
-          node => node.type === "ArticleList"
+          (node) => node.type === "ArticleList",
         );
 
         articleList.props.fetchMore(3);
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "an article list header",
       test() {
         const testInstance = TestRenderer.create(
-          <Topic {...props} isLoading={false} page={2} />
+          <Topic {...props} isLoading={false} page={2} />,
         );
 
         const articleList = testInstance.root.find(
-          node => node.type === "ArticleList"
+          (node) => node.type === "ArticleList",
         );
 
         const articleListHeader = TestRenderer.create(
-          articleList.props.articleListHeader
+          articleList.props.articleListHeader,
         );
 
         expect(articleListHeader).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "a topic header with no description",
@@ -162,40 +162,40 @@ export default props => {
             isLoading={false}
             page={2}
             topic={{
-              name: "No Desc"
+              name: "No Desc",
             }}
-          />
+          />,
         );
 
         const articleList = testInstance.root.find(
-          node => node.type === "ArticleList"
+          (node) => node.type === "ArticleList",
         );
 
         const articleListHeader = TestRenderer.create(
-          articleList.props.articleListHeader
+          articleList.props.articleListHeader,
         );
 
         expect(articleListHeader).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "an article list header loading",
       test() {
         const testInstance = TestRenderer.create(
-          <Topic {...props} isLoading />
+          <Topic {...props} isLoading />,
         );
 
         const articleList = testInstance.root.find(
-          node => node.type === "ArticleList"
+          (node) => node.type === "ArticleList",
         );
 
         const articleListHeader = TestRenderer.create(
-          articleList.props.articleListHeader
+          articleList.props.articleListHeader,
         );
 
         expect(articleListHeader).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ];
 
   jest.useFakeTimers();

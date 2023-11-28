@@ -2,18 +2,18 @@ import React from 'react';
 import { Block, Divider, Hidden, Visible } from 'newskit';
 import {
   LeadArticle,
-  LeadArticleProps
+  LeadArticleProps,
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
 import {
   LeadStoryDivider,
   StackItem,
   BlockItem,
-  LeadStoryContainer
+  LeadStoryContainer,
 } from '../shared-styles';
 import {
   FullWidthBlock,
-  FullWidthHidden
+  FullWidthHidden,
 } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { ArticleStack } from './article-stack';
@@ -31,7 +31,7 @@ export const LeadStory3 = ({
   leadArticle,
   articles,
   leadArticles,
-  clickHandler
+  clickHandler,
 }: LeadStory3Props) => {
   const modifiedLeadArticle = {
     ...leadArticle,
@@ -40,7 +40,7 @@ export const LeadStory3 = ({
     isLeadImage: true,
     hasTopBorder: false,
     loadingAspectRatio: '4:5',
-    shortSummary: undefined
+    shortSummary: undefined,
   };
 
   return (
@@ -48,7 +48,7 @@ export const LeadStory3 = ({
       <StackItem
         $width={{
           xs: '100%',
-          md: '260px'
+          md: '260px',
         }}
       >
         <ArticleStack leadArticles={leadArticles} clickHandler={clickHandler} />
@@ -58,26 +58,26 @@ export const LeadStory3 = ({
           xs: '100%',
           md: '428px',
           lg: '465px',
-          xl: '550px'
+          xl: '550px',
         }}
         marginInlineStart={{
-          md: 'space060'
+          md: 'space060',
         }}
         marginInlineEnd={{
-          lg: 'space060'
+          lg: 'space060',
         }}
       >
         <Hidden md lg xl>
           <FullWidthBlock
             paddingInline={{
               xs: 'space045',
-              md: 'space000'
+              md: 'space000',
             }}
           >
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
-                marginBlockEnd: 'space040'
+                marginBlockEnd: 'space040',
               }}
             />
           </FullWidthBlock>
@@ -95,7 +95,7 @@ export const LeadStory3 = ({
           <Visible md lg xl>
             <LeadStoryDivider
               overrides={{
-                stylePreset: 'lightDivider'
+                stylePreset: 'lightDivider',
               }}
               vertical
               position="left"

@@ -6,7 +6,7 @@ export function tidyEvent(e) {
   return {
     query: e.operation.operationName,
     type: e.type,
-    vars: e.operation.variables
+    vars: e.operation.variables,
   };
 }
 
@@ -17,14 +17,14 @@ export function getEvents(link) {
 export function getResolvedQueries(link) {
   return link
     .getEvents()
-    .filter(e => e.type === "resolved")
+    .filter((e) => e.type === "resolved")
     .map(tidyEvent);
 }
 
 export function getRenderedQueries(link) {
   return link
     .getEvents()
-    .filter(e => e.type === "render")
+    .filter((e) => e.type === "render")
     .map(tidyEvent)
-    .map(x => x.props);
+    .map((x) => x.props);
 }

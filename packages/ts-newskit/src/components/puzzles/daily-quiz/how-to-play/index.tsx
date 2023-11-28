@@ -25,7 +25,7 @@ export const HowToPlay: FC<HowToPlayProps> = ({ title, header, listItems }) => {
         overrides={{
           marker: { size: 'sizing010' },
           marginBlock: 'space020',
-          marginInline: 'space020'
+          marginInline: 'space020',
         }}
       >
         {listItems
@@ -34,7 +34,7 @@ export const HowToPlay: FC<HowToPlayProps> = ({ title, header, listItems }) => {
               'Answer the question of the day by typing your answer in the text box.',
               'Use up to four hints to find the answer.',
               'If you submit an incorrect answer, the next hint will display.',
-              'If you submit an incorrect answer after the fourth hint, the answer will be revealed.'
+              'If you submit an incorrect answer after the fourth hint, the answer will be revealed.',
             ]}
       </UnorderedList>
     </P>
@@ -47,7 +47,7 @@ export const HowToPlay: FC<HowToPlayProps> = ({ title, header, listItems }) => {
         data-testid="modal-open-button"
         overrides={{
           stylePreset: `HowToPlay`,
-          typographyPreset: 'utilityButton020'
+          typographyPreset: 'utilityButton020',
         }}
       >
         {title ? title : 'How to play'}
@@ -59,7 +59,7 @@ export const HowToPlay: FC<HowToPlayProps> = ({ title, header, listItems }) => {
         overrides={{
           overlay: {
             zIndex: 60,
-            stylePreset: 'overlayCustom'
+            stylePreset: 'overlayCustom',
           },
           panel: {
             width: {
@@ -67,12 +67,12 @@ export const HowToPlay: FC<HowToPlayProps> = ({ title, header, listItems }) => {
               sm: '100%',
               md: '80%',
               lg: '65%',
-              xl: '52%'
-            }
+              xl: '52%',
+            },
           },
           header: {
-            stylePreset: 'modalHeaderCustom'
-          }
+            stylePreset: 'modalHeaderCustom',
+          },
         }}
         header={header ? header : 'How to play Today’s Mini Quiz'}
       >

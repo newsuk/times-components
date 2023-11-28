@@ -4,42 +4,42 @@ import print from "./printers";
 export const propsNoChildren = (node, props) => ({
   children: [],
   node,
-  props
+  props,
 });
 
 export const justChildren = (node, props, children) => ({
-  children
+  children,
 });
 
-export const replaceTransform = config => (accum, node, props, children) => {
+export const replaceTransform = (config) => (accum, node, props, children) => {
   if (config[node.type] === undefined) {
     return {
       accum,
       children,
       node,
-      props
+      props,
     };
   }
 
   if (!config[node.type]) {
     return {
       accum,
-      node: null
+      node: null,
     };
   }
 
-  const { node: tNode, props: tProps, children: tChildren } = config[node.type](
-    node,
-    props,
-    children
-  );
+  const {
+    node: tNode,
+    props: tProps,
+    children: tChildren,
+  } = config[node.type](node, props, children);
 
   return {
     accum,
     children: tChildren,
     node: tNode,
-    props: tProps
+    props: tProps,
   };
 };
 
-export default config => traverse(print, replaceTransform(config));
+export default (config) => traverse(print, replaceTransform(config));

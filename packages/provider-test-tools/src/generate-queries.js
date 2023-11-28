@@ -8,8 +8,8 @@ export default (genConfig, iterations = 1) =>
         config,
         {
           ...config,
-          error: null
-        }
+          error: null,
+        },
       ];
     }
 

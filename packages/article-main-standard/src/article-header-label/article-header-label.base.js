@@ -5,20 +5,24 @@ import { colours } from "@times-components/ts-styleguide";
 import VideoLabel from "@times-components/video-label";
 import styles from "../styles/article-header";
 
-export default render => ({ isVideo, label }) => {
-  if (!isVideo && !label) return null;
+export default (render) =>
+  ({ isVideo, label }) => {
+    if (!isVideo && !label) return null;
 
-  const Label = isVideo ? VideoLabel : ArticleLabel;
+    const Label = isVideo ? VideoLabel : ArticleLabel;
 
-  return render(
-    {
-      style: styles.articleLabel,
-      testID: "label"
-    },
-    <Context.Consumer>
-      {({ theme: { sectionColour } }) => (
-        <Label color={sectionColour || colours.section.default} title={label} />
-      )}
-    </Context.Consumer>
-  );
-};
+    return render(
+      {
+        style: styles.articleLabel,
+        testID: "label",
+      },
+      <Context.Consumer>
+        {({ theme: { sectionColour } }) => (
+          <Label
+            color={sectionColour || colours.section.default}
+            title={label}
+          />
+        )}
+      </Context.Consumer>,
+    );
+  };

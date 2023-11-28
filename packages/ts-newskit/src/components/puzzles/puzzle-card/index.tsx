@@ -4,7 +4,7 @@ import {
   Wrap,
   StyledNewsKitPuzzlePlaceholder,
   PuzzleCardComposable,
-  PuzzleCardImgWrapper
+  PuzzleCardImgWrapper,
 } from './styles';
 import { PuzzlesFlag } from '../flag';
 import { Puzzle } from '../archive/types';
@@ -19,7 +19,7 @@ export interface PuzzleCardProps {
 export const PuzzleCard = ({
   data,
   isImageCropped = false,
-  isLazyLoading = false
+  isLazyLoading = false,
 }: PuzzleCardProps) => {
   const publishedDate = convertDateToWeekday(data.publishedAt);
   const imageUrl = data.image ? data.image.crops[0].url : '';
@@ -30,7 +30,7 @@ export const PuzzleCard = ({
       key={data.id}
       overrides={{
         height: '100%',
-        stylePreset: 'puzzleCard'
+        stylePreset: 'puzzleCard',
       }}
     >
       <PuzzleCardImgWrapper className={isLazyLoading ? '' : 'lcpPuzzles'}>
@@ -41,7 +41,7 @@ export const PuzzleCard = ({
             src={croppedImageUrl}
             loading={isLazyLoading ? 'lazy' : 'eager'}
             overrides={{
-              stylePreset: 'puzzleCardMedia'
+              stylePreset: 'puzzleCardMedia',
             }}
             data-testid="puzzle-image"
           />
@@ -61,7 +61,7 @@ export const PuzzleCard = ({
           data-testid="puzzleCard-link"
           overrides={{
             externalIcon: { size: '0' },
-            stylePreset: 'puzzleCardLink'
+            stylePreset: 'puzzleCardLink',
           }}
         >
           {data.title && (
@@ -72,7 +72,7 @@ export const PuzzleCard = ({
               stylePreset="inkContrast"
               typographyPreset={{
                 xs: 'editorialHeadline010',
-                lg: 'editorialHeadline020'
+                lg: 'editorialHeadline020',
               }}
             >
               {data.title}

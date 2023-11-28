@@ -9,7 +9,7 @@ const lastSunday = (month, year) => {
   return sunday;
 };
 
-const isBST = date => {
+const isBST = (date) => {
   const startOfBST = lastSunday(2, date.getFullYear());
   const endOfBST = lastSunday(9, date.getFullYear());
   const isAfterStartOfBST = date.getTime() >= startOfBST.getTime();
@@ -17,14 +17,14 @@ const isBST = date => {
   return isAfterStartOfBST && isBeforeEndOfBST;
 };
 
-const getUTCTime = date => {
+const getUTCTime = (date) => {
   const localDate = new Date(date);
   return new Date(
     localDate.getUTCFullYear(),
     localDate.getUTCMonth(),
     localDate.getUTCDate(),
     localDate.getUTCHours(),
-    localDate.getUTCMinutes()
+    localDate.getUTCMinutes(),
   );
 };
 

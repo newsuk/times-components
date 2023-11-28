@@ -7,7 +7,7 @@ import { colours } from "@times-components/ts-styleguide";
 
 import {
   articleLabelPropTypes,
-  articleLabelDefaultProps
+  articleLabelDefaultProps,
 } from "./article-label-prop-types";
 import styles from "../styles";
 

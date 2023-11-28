@@ -6,7 +6,7 @@ import StarButton from "../src/star-button";
 jest.mock("@times-components/link", () => "Link");
 
 jest.mock("@times-components/icons", () => ({
-  IconStar: "IconStar"
+  IconStar: "IconStar",
 }));
 
 export default () => {
@@ -15,62 +15,62 @@ export default () => {
       name: "renders default",
       test: () => {
         const testInstance = TestRenderer.create(
-          <StarButton onPress={() => {}} />
+          <StarButton onPress={() => {}} />,
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "renders selected",
       test: () => {
         const testInstance = TestRenderer.create(
-          <StarButton onPress={() => {}} selected />
+          <StarButton onPress={() => {}} selected />,
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "renders disabled",
       test: () => {
         const testInstance = TestRenderer.create(
-          <StarButton disabled onPress={() => {}} />
+          <StarButton disabled onPress={() => {}} />,
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "renders default in dark theme",
       test: () => {
         const testInstance = TestRenderer.create(
-          <StarButton isDark onPress={() => {}} />
+          <StarButton isDark onPress={() => {}} />,
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "renders selected in dark theme",
       test: () => {
         const testInstance = TestRenderer.create(
-          <StarButton isDark onPress={() => {}} selected />
+          <StarButton isDark onPress={() => {}} selected />,
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "renders disabled in dark theme",
       test: () => {
         const testInstance = TestRenderer.create(
-          <StarButton disabled isDark onPress={() => {}} />
+          <StarButton disabled isDark onPress={() => {}} />,
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ];
 
   iterator(tests);

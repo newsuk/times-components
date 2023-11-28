@@ -4,30 +4,30 @@ import { iterator } from "@times-components/test-utils";
 import Card from "@times-components/card";
 import RelatedArticles from "../src/related-articles";
 
-export const testSummary = summary => [
+export const testSummary = (summary) => [
   {
     attributes: {},
     children: [
       {
         attributes: {
-          value: `Summary ${summary}`
+          value: `Summary ${summary}`,
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 
 export const createRelatedArticlesProps = (
   fixtureData,
   action = () => {},
-  onPress = () => {}
+  onPress = () => {},
 ) => ({
   analyticsStream: action,
   onPress,
-  slice: fixtureData.relatedArticleSlice
+  slice: fixtureData.relatedArticleSlice,
 });
 
 const beforeAndAfterEach = () => {
@@ -37,8 +37,8 @@ const beforeAndAfterEach = () => {
     mockDate.set(1514764800000, 0);
     global.Intl = {
       DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Europe/London" })
-      })
+        resolvedOptions: () => ({ timeZone: "Europe/London" }),
+      }),
     };
     jest.useFakeTimers();
   });
@@ -49,233 +49,266 @@ const beforeAndAfterEach = () => {
   });
 };
 
-export const noArticlesTests = ({ fixture }) => renderComponent => {
-  beforeAndAfterEach();
+export const noArticlesTests =
+  ({ fixture }) =>
+  (renderComponent) => {
+    beforeAndAfterEach();
 
-  const tests = [
-    {
-      name: "no related articles",
-      test() {
-        const events = jest.fn();
+    const tests = [
+      {
+        name: "no related articles",
+        test() {
+          const events = jest.fn();
 
-        const output = renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
+          const output = renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
 
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "no related articles when there is no given slice name",
-      test() {
-        const output = renderComponent(
-          <RelatedArticles
-            analyticsStream={() => {}}
-            onPress={() => {}}
-            slice={{
-              sliceName: ""
-            }}
-          />
-        );
+          expect(output).toMatchSnapshot();
+        },
+      },
+      {
+        name: "no related articles when there is no given slice name",
+        test() {
+          const output = renderComponent(
+            <RelatedArticles
+              analyticsStream={() => {}}
+              onPress={() => {}}
+              slice={{
+                sliceName: "",
+              }}
+            />,
+          );
 
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: "analytics with no related articles",
-      test() {
-        const events = jest.fn();
+          expect(output).toMatchSnapshot();
+        },
+      },
+      {
+        name: "analytics with no related articles",
+        test() {
+          const events = jest.fn();
 
-        renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
+          renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
 
-        expect(events.mock.calls).toMatchSnapshot();
-      }
-    }
-  ];
+          expect(events.mock.calls).toMatchSnapshot();
+        },
+      },
+    ];
 
-  iterator(tests);
-};
+    iterator(tests);
+  };
 
-export const hasVideoTests = ({ fixture, name }) => renderComponent => {
-  beforeAndAfterEach();
+export const hasVideoTests =
+  ({ fixture, name }) =>
+  (renderComponent) => {
+    beforeAndAfterEach();
 
-  const tests = [
-    {
-      name,
-      test() {
-        const events = jest.fn();
+    const tests = [
+      {
+        name,
+        test() {
+          const events = jest.fn();
 
-        const output = renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
+          const output = renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
 
-        expect(output).toMatchSnapshot();
-      }
-    }
-  ];
+          expect(output).toMatchSnapshot();
+        },
+      },
+    ];
 
-  iterator(tests);
-};
+    iterator(tests);
+  };
 
-export const noShortHeadlineTests = ({ fixture, name }) => renderComponent => {
-  beforeAndAfterEach();
+export const noShortHeadlineTests =
+  ({ fixture, name }) =>
+  (renderComponent) => {
+    beforeAndAfterEach();
 
-  const tests = [
-    {
-      name,
-      test() {
-        const events = jest.fn();
+    const tests = [
+      {
+        name,
+        test() {
+          const events = jest.fn();
 
-        const output = renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
+          const output = renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
 
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: `analytics for ${name}`,
-      test() {
-        const events = jest.fn();
+          expect(output).toMatchSnapshot();
+        },
+      },
+      {
+        name: `analytics for ${name}`,
+        test() {
+          const events = jest.fn();
 
-        renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
+          renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
 
-        expect(events.mock.calls).toMatchSnapshot();
-      }
-    }
-  ];
+          expect(events.mock.calls).toMatchSnapshot();
+        },
+      },
+    ];
 
-  iterator(tests);
-};
+    iterator(tests);
+  };
 
-export const oneArticleTests = (platform = () => []) => ({
-  fixture,
-  name
-}) => renderComponent => {
-  beforeAndAfterEach();
+export const oneArticleTests =
+  (platform = () => []) =>
+  ({ fixture, name }) =>
+  (renderComponent) => {
+    beforeAndAfterEach();
 
-  const tests = [
-    {
-      name,
-      test() {
-        const events = jest.fn();
+    const tests = [
+      {
+        name,
+        test() {
+          const events = jest.fn();
 
-        const output = renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
+          const output = renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
 
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: `analytics for ${name}`,
-      test() {
-        const events = jest.fn();
+          expect(output).toMatchSnapshot();
+        },
+      },
+      {
+        name: `analytics for ${name}`,
+        test() {
+          const events = jest.fn();
 
-        renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
+          renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
 
-        expect(events.mock.calls).toMatchSnapshot();
-      }
-    },
-    ...platform(fixture, name)
-  ];
+          expect(events.mock.calls).toMatchSnapshot();
+        },
+      },
+      ...platform(fixture, name),
+    ];
 
-  iterator(tests);
-};
+    iterator(tests);
+  };
 
-export const twoArticlesTests = ({ fixture, name }) => renderComponent => {
-  beforeAndAfterEach();
+export const twoArticlesTests =
+  ({ fixture, name }) =>
+  (renderComponent) => {
+    beforeAndAfterEach();
 
-  const tests = [
-    {
-      name,
-      test() {
-        const events = jest.fn();
+    const tests = [
+      {
+        name,
+        test() {
+          const events = jest.fn();
 
-        const output = renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
+          const output = renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
 
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: `analytics for ${name}`,
-      test() {
-        const events = jest.fn();
+          expect(output).toMatchSnapshot();
+        },
+      },
+      {
+        name: `analytics for ${name}`,
+        test() {
+          const events = jest.fn();
 
-        renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
+          renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
 
-        expect(events.mock.calls).toMatchSnapshot();
-      }
-    }
-  ];
+          expect(events.mock.calls).toMatchSnapshot();
+        },
+      },
+    ];
 
-  iterator(tests);
-};
+    iterator(tests);
+  };
 
-export const threeArticlesTests = ({ fixture, name }) => renderComponent => {
-  beforeAndAfterEach();
+export const threeArticlesTests =
+  ({ fixture, name }) =>
+  (renderComponent) => {
+    beforeAndAfterEach();
 
-  const tests = [
-    {
-      name,
-      test() {
-        const events = jest.fn();
+    const tests = [
+      {
+        name,
+        test() {
+          const events = jest.fn();
 
-        const output = renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
-        expect(output).toMatchSnapshot();
-      }
-    },
-    {
-      name: `analytics for ${name}`,
-      test() {
-        const events = jest.fn();
+          const output = renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
+          expect(output).toMatchSnapshot();
+        },
+      },
+      {
+        name: `analytics for ${name}`,
+        test() {
+          const events = jest.fn();
 
-        renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
+          renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
 
-        expect(events.mock.calls).toMatchSnapshot();
-      }
-    }
-  ];
+          expect(events.mock.calls).toMatchSnapshot();
+        },
+      },
+    ];
 
-  iterator(tests);
-};
+    iterator(tests);
+  };
 
-export const threeArticlesWithLeadAssetOverrideTests = ({
-  fixture,
-  name
-}) => renderComponent => {
-  beforeAndAfterEach();
+export const threeArticlesWithLeadAssetOverrideTests =
+  ({ fixture, name }) =>
+  (renderComponent) => {
+    beforeAndAfterEach();
 
-  const tests = [
-    {
-      name,
-      test() {
-        const events = jest.fn();
+    const tests = [
+      {
+        name,
+        test() {
+          const events = jest.fn();
 
-        const output = renderComponent(
-          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-        );
+          const output = renderComponent(
+            <RelatedArticles
+              {...createRelatedArticlesProps(fixture, events)}
+            />,
+          );
 
-        expect(output.root.findAllByType(Card)[0].props.imageUri).toEqual(
-          "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d59bcac-d044-11e8-a7e2-4943f60e65b3.jpg?crop=1073%2C1750%2C64%2C400"
-        );
-      }
-    }
-  ];
+          expect(output.root.findAllByType(Card)[0].props.imageUri).toEqual(
+            "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d59bcac-d044-11e8-a7e2-4943f60e65b3.jpg?crop=1073%2C1750%2C64%2C400",
+          );
+        },
+      },
+    ];
 
-  iterator(tests);
-};
+    iterator(tests);
+  };

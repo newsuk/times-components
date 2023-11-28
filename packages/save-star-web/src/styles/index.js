@@ -9,17 +9,17 @@ const styles = {
     height: 40,
     marginLeft: spacing(1),
     overflow: "hidden",
-    width: 40
+    width: 40,
   },
   label: {
     ...fontFactory({
       font: "supporting",
-      fontSize: "saveAndShare"
+      fontSize: "saveAndShare",
     }),
     color: colours.functional.secondary,
     marginRight: spacing(2),
     transform: [{ translateY: "9%" }],
-    textAlign: "right"
+    textAlign: "right",
   },
   link: {
     base: `
@@ -49,20 +49,20 @@ const styles = {
       &:active {
         background-color: ${colours.functional.keyline};
       }
-  `
+  `,
   },
   save: {
     fillColour: colours.functional.action,
-    strokeColour: colours.functional.secondary
+    strokeColour: colours.functional.secondary,
   },
   svgIcon: {
     fillColour: colours.functional.secondary,
-    hoverFillColour: colours.functional.brandColour
+    hoverFillColour: colours.functional.brandColour,
   },
   unsave: {
     fillColour: colours.functional.white,
-    strokeColour: colours.functional.secondary
-  }
+    strokeColour: colours.functional.secondary,
+  },
 };
 
 const getStyles = ({ saveStatus }) =>

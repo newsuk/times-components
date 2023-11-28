@@ -9,7 +9,7 @@ const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),
   isExpanded: false,
-  isSelected: 'Puzzles'
+  isSelected: 'Puzzles',
 };
 
 const mockClickHandler = jest.fn();
@@ -27,7 +27,7 @@ describe('Create More Menu', () => {
         options={options}
         moreMenuItemsLength={2}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -38,7 +38,7 @@ describe('Create More Menu', () => {
         options={options}
         moreMenuItemsLength={2}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const title = getByText('Puzzles');
     expect(title).toBeInTheDocument();
@@ -50,7 +50,7 @@ describe('Create More Menu', () => {
         options={options}
         moreMenuItemsLength={2}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const title = getAllByTestId('buttonLink')[0];
     expect(title).toHaveAttribute('href', '/puzzles');
@@ -63,7 +63,7 @@ describe('Create More Menu', () => {
         options={options}
         moreMenuItemsLength={2}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const title = getByText('Puzzles');
     fireEvent.click(title);
@@ -78,7 +78,7 @@ describe('Create More Menu', () => {
         options={options}
         moreMenuItemsLength={2}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const list = getAllByRole('listitem');
     expect(list.length).toEqual(2);
@@ -90,7 +90,7 @@ describe('Create More Menu', () => {
         options={options}
         moreMenuItemsLength={8}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const list = getAllByRole('listitem');
     expect(list.length).toEqual(8);

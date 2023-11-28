@@ -6,15 +6,15 @@ const defaultCredits = "Times photographer Jack Hill";
 export default (
   uri = defaultImageSrc,
   caption = defaultCaption,
-  credits = defaultCredits
+  credits = defaultCredits,
 ) => ({
   captionOptions: {
     caption,
-    credits
+    credits,
   },
   imageOptions: {
     display: "inline",
     ratio: "3:2",
-    uri
-  }
+    uri,
+  },
 });

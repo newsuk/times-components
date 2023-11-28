@@ -5,7 +5,7 @@ import { addUserStateKnobs } from "@times-components/user-state";
 
 React.Fragment = ({ children }) => children;
 React.Fragment.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 React.Fragment.displayName = "React.Fragment";
 
@@ -21,7 +21,7 @@ const addStories = (
   knobs,
   actions,
   [child, ...children],
-  strictMode = true
+  strictMode = true,
 ) => {
   if (!child) {
     return;
@@ -45,17 +45,15 @@ const addStories = (
 
 export const isCorrectPlatform = ({ platform }) => !platform || platform;
 
-const converter = (storiesOf, knobs, actions) => (
-  module,
-  { name, children = [] } = {},
-  strictMode
-) =>
-  addStories(
-    storiesOf(name, module),
-    knobs,
-    actions,
-    children.filter(isCorrectPlatform),
-    strictMode
-  );
+const converter =
+  (storiesOf, knobs, actions) =>
+  (module, { name, children = [] } = {}, strictMode) =>
+    addStories(
+      storiesOf(name, module),
+      knobs,
+      actions,
+      children.filter(isCorrectPlatform),
+      strictMode,
+    );
 
 export default converter;

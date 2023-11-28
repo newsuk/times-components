@@ -7,9 +7,9 @@ export default function summarise(text) {
   const last = text[text.length - 1];
   const teaser = Object.assign({}, last, {
     attributes: {
-      isSingle: initial.length === 0
+      isSingle: initial.length === 0,
     },
-    name: "teaser"
+    name: "teaser",
   });
 
   return [...initial, teaser];

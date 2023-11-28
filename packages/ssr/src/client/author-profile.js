@@ -3,12 +3,8 @@ const runClient = require("../lib/run-client");
 
 if (window.nuk && window.nuk.ssr && window.nuk.authorProfile) {
   const { rootTag, makeArticleUrl, makeTopicUrl } = window.nuk.ssr;
-  const {
-    authorSlug,
-    debounceTimeMs,
-    page,
-    pageSize
-  } = window.nuk.authorProfile;
+  const { authorSlug, debounceTimeMs, page, pageSize } =
+    window.nuk.authorProfile;
 
   const data = {
     authorSlug,
@@ -16,13 +12,13 @@ if (window.nuk && window.nuk.ssr && window.nuk.authorProfile) {
     makeArticleUrl,
     makeTopicUrl,
     page,
-    pageSize
+    pageSize,
   };
 
   const clientOptions = {
     rootTag,
     useGET: true,
-    skipAuthorization: true
+    skipAuthorization: true,
   };
 
   runClient(authorProfile, clientOptions, data);

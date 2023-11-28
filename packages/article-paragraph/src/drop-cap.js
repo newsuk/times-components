@@ -13,7 +13,7 @@ function DropCapView({ colour, children, font }) {
 
 DropCapView.propTypes = {
   ...propTypes,
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
 };
 
 DropCapView.defaultProps = defaultProps;

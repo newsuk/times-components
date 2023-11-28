@@ -4,7 +4,7 @@ import { HamburgerMenu } from '../hamburger-menu/HamburgerMenu';
 import { NavigationData } from '../types';
 
 export const WrappedGlobalNav: React.FC<{ data: NavigationData }> = ({
-  data
+  data,
 }) => <GlobalNav data={data} />;
 
 export const WrappedHamburger: React.FC<{

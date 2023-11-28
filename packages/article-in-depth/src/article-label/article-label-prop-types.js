@@ -4,13 +4,13 @@ import { colours } from "@times-components/ts-styleguide";
 const articleLabelPropTypes = {
   color: PropTypes.string,
   isVideo: PropTypes.bool,
-  label: PropTypes.string
+  label: PropTypes.string,
 };
 
 const articleLabelDefaultProps = {
   color: colours.section.default,
   isVideo: false,
-  label: null
+  label: null,
 };
 
 export { articleLabelPropTypes, articleLabelDefaultProps };

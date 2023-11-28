@@ -13,7 +13,7 @@ const renderComponent = (
   arrowUp: boolean,
   updatedTime: string,
   articleId: string,
-  update: boolean
+  update: boolean,
 ) =>
   render(
     <UpdateButtonWithDelay
@@ -25,7 +25,7 @@ const renderComponent = (
       updatedTime={updatedTime}
       articleId={articleId}
       update={update}
-    />
+    />,
   );
 
 describe('Render UpdateButtonWithDelay', () => {
@@ -38,7 +38,7 @@ describe('Render UpdateButtonWithDelay', () => {
       true,
       '2023-10-12T00:00:00.000Z',
       '12345',
-      true
+      true,
     );
     expect(asFragment()).toMatchSnapshot();
     expect(getByRole('button')).toBeVisible();
@@ -56,14 +56,14 @@ describe('Render UpdateButtonWithDelay', () => {
       true,
       '2023-10-12T00:00:00.000Z',
       '12345',
-      false
+      false,
     );
 
     await waitFor(
       () => {
         expect(queryByTestId('button')).toBeNull();
       },
-      { timeout: 500 }
+      { timeout: 500 },
     );
 
     unmount();

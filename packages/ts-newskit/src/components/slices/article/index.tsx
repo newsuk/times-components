@@ -6,19 +6,19 @@ import {
   CardComposable,
   GridLayoutItem,
   MQ,
-  Image
+  Image,
 } from 'newskit';
 import {
   CardHeadlineLink,
   FullWidthBlock,
-  FullWidthGridLayoutItem
+  FullWidthGridLayoutItem,
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import {
   ClickHandlerType,
   MouseEventType,
   ImageProps,
-  expirableFlagsProps
+  expirableFlagsProps,
 } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
 import { ArticleTileInfo } from '../shared/articleTileInfo';
@@ -54,7 +54,7 @@ export interface ArticleProps {
 export const Article = ({
   article,
   clickHandler,
-  className
+  className,
 }: {
   article: ArticleProps;
   clickHandler: ClickHandlerType;
@@ -81,11 +81,11 @@ export const Article = ({
     expirableFlags,
     label,
     contentType,
-    hasVideo
+    hasVideo,
   } = article;
 
   const imageWithCorrectRatio =
-    images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
+    images && images.crops && images.crops.find((crop) => crop.ratio === '3:2');
 
   const hasArticleTileInfo =
     (expirableFlags &&
@@ -113,7 +113,7 @@ export const Article = ({
     <Divider
       overrides={{
         marginBlockEnd: 'space040',
-        stylePreset: topBorderStyle
+        stylePreset: topBorderStyle,
       }}
       aria-label="article-divider-horizontal"
     />
@@ -155,7 +155,7 @@ export const Article = ({
             <FullWidthBlock
               paddingInline={{
                 xs: 'space045',
-                md: 'space000'
+                md: 'space000',
               }}
             >
               {articleDivider}
@@ -180,7 +180,7 @@ export const Article = ({
             className="article-image"
             marginBlockEnd={{
               xs: 'space040',
-              lg: 'space030'
+              lg: 'space030',
             }}
           >
             {image}
@@ -188,19 +188,16 @@ export const Article = ({
         )
       ) : null}
       <CardContent alignContent="start">
-        {images &&
-          !imageRight &&
-          images.caption &&
-          !hideImage && (
-            <TextBlock
-              marginBlockStart="space020"
-              marginBlockEnd="space040"
-              stylePreset="inkSubtle"
-              typographyPreset="editorialCaption010"
-            >
-              {images.caption}
-            </TextBlock>
-          )}
+        {images && !imageRight && images.caption && !hideImage && (
+          <TextBlock
+            marginBlockStart="space020"
+            marginBlockEnd="space040"
+            stylePreset="inkSubtle"
+            typographyPreset="editorialCaption010"
+          >
+            {images.caption}
+          </TextBlock>
+        )}
 
         {hasArticleTileInfo && (
           <ArticleTileInfo
@@ -216,32 +213,31 @@ export const Article = ({
           href={url}
           role="link"
           overrides={{
-            typographyPreset: titleTypographyPreset
+            typographyPreset: titleTypographyPreset,
           }}
           external={false}
           onClick={onClick}
         >
           {headline}
         </CardHeadlineLink>
-        {isSummaryEnabled &&
-          shortSummary && (
-            <CardHeadlineLink href={url} external={false} onClick={onClick}>
-              <TextBlock
-                stylePreset={{
-                  xs: 'inkSubtle',
-                  md: 'inkBase'
-                }}
-                typographyPreset={{
-                  xs: 'editorialParagraph020',
-                  md: 'editorialParagraph010'
-                }}
-                marginBlockStart={textBlockMarginBlockStart}
-                as="p"
-              >
-                {shortSummary}
-              </TextBlock>
-            </CardHeadlineLink>
-          )}
+        {isSummaryEnabled && shortSummary && (
+          <CardHeadlineLink href={url} external={false} onClick={onClick}>
+            <TextBlock
+              stylePreset={{
+                xs: 'inkSubtle',
+                md: 'inkBase',
+              }}
+              typographyPreset={{
+                xs: 'editorialParagraph020',
+                md: 'editorialParagraph010',
+              }}
+              marginBlockStart={textBlockMarginBlockStart}
+              as="p"
+            >
+              {shortSummary}
+            </TextBlock>
+          </CardHeadlineLink>
+        )}
         <TagAndFlag
           tag={tag}
           flag={flag}

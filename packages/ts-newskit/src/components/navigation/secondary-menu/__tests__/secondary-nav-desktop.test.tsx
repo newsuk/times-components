@@ -7,7 +7,7 @@ import { cleanup } from '@testing-library/react';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
+  useBreakpointKey: jest.fn().mockReturnValue('xl'),
 }));
 
 describe('Secondary Menu Desktop', () => {
@@ -27,7 +27,7 @@ describe('Secondary Menu Desktop', () => {
           // noop
         }}
         clickHandler={jest.fn()}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });

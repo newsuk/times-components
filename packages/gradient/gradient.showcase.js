@@ -4,7 +4,7 @@ import { TcText } from "@times-components/utils";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import Gradient, { OverlayGradient } from "./src/gradient";
 
-const renderExampleText = color => (
+const renderExampleText = (color) => (
   <TcText style={{ color }}>Some example text</TcText>
 );
 
@@ -16,12 +16,12 @@ export default {
           style={{
             flex: 1,
             height: 250,
-            width: "100%"
+            width: "100%",
           }}
         />
       ),
       name: "Default",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
@@ -29,14 +29,14 @@ export default {
           style={{
             flex: 1,
             height: 250,
-            width: "100%"
+            width: "100%",
           }}
         >
           {renderExampleText(colours.functional.brandColour)}
         </Gradient>
       ),
       name: "With Children",
-      type: "story"
+      type: "story",
     },
     {
       component: ({ number }) => (
@@ -44,12 +44,12 @@ export default {
           degrees={number("Gradient Angle: ", 90)}
           style={{
             height: 200,
-            width: 200
+            width: 200,
           }}
         />
       ),
       name: "With Dynamic Angles",
-      type: "story"
+      type: "story",
     },
     {
       component: ({ number }) => (
@@ -65,7 +65,7 @@ export default {
               position: "absolute",
               top: 0,
               width: 685,
-              zIndex: 3
+              zIndex: 3,
             }}
           >
             {renderExampleText(colours.functional.white)}
@@ -75,14 +75,14 @@ export default {
             src="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb45ad130-5456-11e8-a94b-41e5a20c31cf.jpg?crop=2250%2C1266%2C0%2C117&resize=685"
             style={{
               height: 385,
-              width: 685
+              width: 685,
             }}
           />
         </Fragment>
       ),
       name: "Overlay gradient",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Gradient"
+  name: "Primitives/Gradient",
 };

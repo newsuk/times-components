@@ -15,10 +15,7 @@ describe("Debounce web test", () => {
     const component = mount(<Outer debounceTimeMs={1000} foo="initialFoo" />);
 
     const numberOfDebouncedPropsUpdates = () =>
-      component
-        .update()
-        .find("Inner")
-        .instance().numberOfDebouncedPropsUpdates;
+      component.update().find("Inner").instance().numberOfDebouncedPropsUpdates;
 
     expect(numberOfDebouncedPropsUpdates()).toEqual(0);
 

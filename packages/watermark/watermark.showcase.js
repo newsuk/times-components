@@ -12,15 +12,15 @@ export default {
         />
       ),
       name: "MPU",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
         <Watermark height={250} viewBox="0 0 1000 300" width={970} />
       ),
       name: "Full",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Watermark"
+  name: "Primitives/Watermark",
 };

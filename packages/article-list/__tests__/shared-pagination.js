@@ -7,7 +7,7 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
@@ -21,9 +21,9 @@ export default () => {
       print,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => omitProps.has(key) || key.includes("Class")
-      )
-    )
+        (value, key) => omitProps.has(key) || key.includes("Class"),
+      ),
+    ),
   );
 
   const tests = [
@@ -41,17 +41,17 @@ export default () => {
             page={1}
             pageSize={3}
             refetch={() => {}}
-          />
+          />,
         );
 
         const [nextPage] = testInstance.root.findAll(
-          node => node.props.testID === "page-next"
+          (node) => node.props.testID === "page-next",
         );
 
         nextPage.props.onPress();
 
         expect(onNext).toHaveBeenCalled();
-      }
+      },
     },
     {
       name: "previous uses onPrev callback",
@@ -67,17 +67,17 @@ export default () => {
             page={2}
             pageSize={3}
             refetch={() => {}}
-          />
+          />,
         );
 
         const [prevPage] = testInstance.root.findAll(
-          node => node.props.testID === "page-prev"
+          (node) => node.props.testID === "page-prev",
         );
 
         prevPage.props.onPress();
 
         expect(onPrev).toHaveBeenCalled();
-      }
+      },
     },
     {
       name: "scrolls to top when using bottom next pager",
@@ -95,27 +95,26 @@ export default () => {
             page={1}
             pageSize={3}
             refetch={() => {}}
-          />
+          />,
         );
 
         const [, nextPage] = testInstance.root.findAll(
-          node => node.props.testID === "page-next"
+          (node) => node.props.testID === "page-next",
         );
 
         nextPage.props.onPress();
 
         expect(window.scroll).toHaveBeenCalledWith({
           left: 0,
-          top: 0
+          top: 0,
         });
 
         windowSpy.mockRestore();
         consoleSpy.mockRestore();
-      }
+      },
     },
     {
-      name:
-        "does not scroll to top when using bottom next pager and scroll is disabled",
+      name: "does not scroll to top when using bottom next pager and scroll is disabled",
       test() {
         const windowSpy = jest.spyOn(window, "scroll");
         const onNext = jest.fn();
@@ -131,27 +130,26 @@ export default () => {
             page={1}
             pageSize={3}
             refetch={() => {}}
-          />
+          />,
         );
 
         const [, nextPage] = testInstance.root.findAll(
-          node => node.props.testID === "page-next"
+          (node) => node.props.testID === "page-next",
         );
 
         nextPage.props.onPress();
 
         expect(window.scroll).not.toHaveBeenCalledWith({
           left: 0,
-          top: 0
+          top: 0,
         });
 
         windowSpy.mockRestore();
         consoleSpy.mockRestore();
-      }
+      },
     },
     {
-      name:
-        "does not throw when using bottom next pager if window does not exist",
+      name: "does not throw when using bottom next pager if window does not exist",
       test() {
         // eslint-disable-next-line prefer-destructuring
         const window = global.window;
@@ -170,7 +168,7 @@ export default () => {
             page={1}
             pageSize={3}
             refetch={() => {}}
-          />
+          />,
         );
 
         wrapper
@@ -187,7 +185,7 @@ export default () => {
           .onPress();
 
         spy.mockRestore();
-      }
+      },
     },
     {
       name: "scrolls to top when using bottom previous pager",
@@ -206,27 +204,26 @@ export default () => {
             page={2}
             pageSize={3}
             refetch={() => {}}
-          />
+          />,
         );
 
         const [, prevPage] = testInstance.root.findAll(
-          node => node.props.testID === "page-prev"
+          (node) => node.props.testID === "page-prev",
         );
 
         prevPage.props.onPress();
 
         expect(windowSpy).toHaveBeenCalledWith({
           left: 0,
-          top: 0
+          top: 0,
         });
 
         windowSpy.mockRestore();
         consoleSpy.mockRestore();
-      }
+      },
     },
     {
-      name:
-        "does not throw when using bottom prev pager if window does not exist",
+      name: "does not throw when using bottom prev pager if window does not exist",
       test() {
         // eslint-disable-next-line prefer-destructuring
         const window = global.window;
@@ -245,7 +242,7 @@ export default () => {
             page={2}
             pageSize={3}
             refetch={() => {}}
-          />
+          />,
         );
 
         wrapper
@@ -262,8 +259,8 @@ export default () => {
           .onPress();
 
         spy.mockRestore();
-      }
-    }
+      },
+    },
   ];
 
   iterator(tests);

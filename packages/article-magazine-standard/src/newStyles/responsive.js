@@ -5,7 +5,7 @@ import {
   colours,
   fontSizes,
   lineHeight,
-  spacing
+  spacing,
 } from "@times-components/ts-styleguide";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 
@@ -96,7 +96,7 @@ export const StandfirstContainer = styled(TcText)`
     font-size: ${fontSizes.infoTitle}px;
     line-height: ${lineHeight({
       font: "bodyRegular",
-      fontSize: "infoTitle"
+      fontSize: "infoTitle",
     })}px;
     margin-bottom: ${spacing(5)};
   }

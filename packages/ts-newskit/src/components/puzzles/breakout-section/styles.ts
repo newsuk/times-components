@@ -7,7 +7,7 @@ import {
   ButtonProps,
   StackProps,
   LinkStandalone,
-  LinkProps
+  LinkProps,
 } from 'newskit';
 import SudokuIconD4 from '../../../assets/SudokuIconD4';
 import SudokuIconD2 from '../../../assets/SudokuIconD2';

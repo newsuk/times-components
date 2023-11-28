@@ -7,7 +7,7 @@ const renderComponent = () =>
   render(
     <TCThemeProvider>
       <ContentWrapper />
-    </TCThemeProvider>
+    </TCThemeProvider>,
   );
 
 describe('ContentWrapper', () => {

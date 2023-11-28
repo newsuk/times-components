@@ -2,7 +2,7 @@ import React from "react";
 import { TcText, checkStylesForUnits } from "@times-components/utils";
 import PropTypes from "prop-types";
 import renderTrees, {
-  propTypes as treePropTypes
+  propTypes as treePropTypes,
 } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import styles from "./styles";
@@ -17,7 +17,7 @@ const AuthorProfileHeadBiography = ({ biography }) => (
 );
 
 AuthorProfileHeadBiography.propTypes = {
-  biography: PropTypes.arrayOf(treePropTypes).isRequired
+  biography: PropTypes.arrayOf(treePropTypes).isRequired,
 };
 
 export default AuthorProfileHeadBiography;

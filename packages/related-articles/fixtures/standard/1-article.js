@@ -13,14 +13,14 @@ const defaultSummary105 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 
 const defaultSummary125 = [
@@ -30,14 +30,14 @@ const defaultSummary125 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 
 const defaultSummary145 = [
@@ -47,14 +47,14 @@ const defaultSummary145 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 
 const defaultSummary160 = [
@@ -64,14 +64,14 @@ const defaultSummary160 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 
 const defaultSummary175 = [
@@ -81,14 +81,14 @@ const defaultSummary175 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 
 const defaultSummary225 = [
@@ -98,14 +98,14 @@ const defaultSummary225 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 
 const defaultTitle =
@@ -132,7 +132,7 @@ export default ({
   title = defaultTitle,
   slug = defaultSlug,
   shortIdentifier = defaultShortIdentifier,
-  url = defaultUrl
+  url = defaultUrl,
 } = {}) => ({
   data: {
     relatedArticleSlice: {
@@ -144,20 +144,20 @@ export default ({
                 byline: [
                   {
                     attributes: {
-                      slug: "camilla-long"
+                      slug: "camilla-long",
                     },
                     children: [
                       {
                         attributes: {
-                          value: "Camilla Long"
+                          value: "Camilla Long",
                         },
                         children: [],
-                        name: "text"
-                      }
+                        name: "text",
+                      },
                     ],
-                    name: "author"
-                  }
-                ]
+                    name: "author",
+                  },
+                ],
               },
               {
                 byline: [
@@ -166,16 +166,16 @@ export default ({
                     children: [
                       {
                         attributes: {
-                          value: ", Environment Editor"
+                          value: ", Environment Editor",
                         },
                         children: [],
-                        name: "text"
-                      }
+                        name: "text",
+                      },
                     ],
-                    name: "inline"
-                  }
-                ]
-              }
+                    name: "inline",
+                  },
+                ],
+              },
             ],
             hasVideo,
             headline,
@@ -183,9 +183,9 @@ export default ({
             label,
             leadAsset: {
               crop169: {
-                url: crop169
+                url: crop169,
               },
-              title
+              title,
             },
             publicationName: "TIMES",
             publishedTime: "2015-03-13T18:54:58.000Z",
@@ -199,12 +199,12 @@ export default ({
             summary160,
             summary175,
             summary225,
-            url
+            url,
           },
-          leadAsset: null
-        }
+          leadAsset: null,
+        },
       ],
-      sliceName: "StandardSlice"
-    }
-  }
+      sliceName: "StandardSlice",
+    },
+  },
 });

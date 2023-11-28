@@ -6,7 +6,7 @@ import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleSkeletonProps from "./shared-article-skeleton-props";
 
-export default renderComponent => [
+export default (renderComponent) => [
   {
     name: "scaled medium full article",
     test: () => {
@@ -19,7 +19,7 @@ export default renderComponent => [
             adConfig={adConfig}
             analyticsStream={() => {}}
             data={articleFixture({
-              ...testFixture
+              ...testFixture,
             })}
             onAuthorPress={() => {}}
             onCommentGuidelinesPress={() => {}}
@@ -30,11 +30,11 @@ export default renderComponent => [
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
-        </ContextProviderWithDefaults>
+        </ContextProviderWithDefaults>,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "scaled large full article",
@@ -46,7 +46,7 @@ export default renderComponent => [
             adConfig={adConfig}
             analyticsStream={() => {}}
             data={articleFixture({
-              ...testFixture
+              ...testFixture,
             })}
             onAuthorPress={() => {}}
             onCommentGuidelinesPress={() => {}}
@@ -57,11 +57,11 @@ export default renderComponent => [
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
-        </ContextProviderWithDefaults>
+        </ContextProviderWithDefaults>,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "scaled xlarge full article",
@@ -75,7 +75,7 @@ export default renderComponent => [
             adConfig={adConfig}
             analyticsStream={() => {}}
             data={articleFixture({
-              ...testFixture
+              ...testFixture,
             })}
             onAuthorPress={() => {}}
             onCommentGuidelinesPress={() => {}}
@@ -86,10 +86,10 @@ export default renderComponent => [
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
-        </ContextProviderWithDefaults>
+        </ContextProviderWithDefaults>,
       );
 
       expect(output).toMatchSnapshot();
-    }
-  }
+    },
+  },
 ];

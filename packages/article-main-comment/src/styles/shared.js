@@ -4,49 +4,49 @@ const sharedStyles = {
   articleHeadline: {
     ...fontFactory({
       font: "headline",
-      fontSize: "headline"
+      fontSize: "headline",
     }),
     color: colours.functional.brandColour,
     marginBottom: spacing(2),
-    textAlign: "center"
+    textAlign: "center",
   },
   articleHeadlineTablet: {
     ...fontFactory({
       font: "headline",
-      fontSize: "articleHeadline"
-    })
+      fontSize: "articleHeadline",
+    }),
   },
   authorImage: {
-    marginBottom: spacing(5)
+    marginBottom: spacing(5),
   },
   container: {
     alignItems: "center",
     paddingLeft: spacing(2),
-    paddingRight: spacing(2)
+    paddingRight: spacing(2),
   },
   datePublication: {
     ...fontFactory({
       font: "supporting",
-      fontSize: "cardMeta"
+      fontSize: "cardMeta",
     }),
     color: colours.functional.secondary,
-    marginTop: spacing(1)
+    marginTop: spacing(1),
   },
   datePublicationTablet: {
-    marginTop: "auto"
+    marginTop: "auto",
   },
   header: {
     // TODO: put back after design signoff
     marginBottom: spacing(3),
     paddingBottom: spacing(4),
-    paddingTop: spacing(7)
+    paddingTop: spacing(7),
   },
   label: {
-    marginBottom: spacing(2)
+    marginBottom: spacing(2),
   },
   meta: {
     flexDirection: "row",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
   },
   metaContainer: {
     alignItems: "center",
@@ -56,30 +56,30 @@ const sharedStyles = {
     borderBottomColor: colours.functional.keyline,
     borderBottomWidth: 1,
     borderTopColor: colours.functional.keyline,
-    borderTopWidth: 1
+    borderTopWidth: 1,
   },
   metaContainerTablet: {
     flexDirection: "row",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   separator: {
     borderRightColor: colours.functional.keyline,
     borderRightWidth: 1,
     height: spacing(3),
     marginLeft: spacing(2),
-    marginRight: spacing(2)
+    marginRight: spacing(2),
   },
   standFirst: {
     ...fontFactory({
       font: "headlineRegular",
-      fontSize: "smallestHeadline"
+      fontSize: "smallestHeadline",
     }),
     color: colours.functional.primary,
     marginBottom: spacing(3),
     paddingLeft: spacing(2),
     paddingRight: spacing(2),
-    textAlign: "center"
-  }
+    textAlign: "center",
+  },
 };
 
 export default sharedStyles;

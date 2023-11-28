@@ -12,7 +12,7 @@ class MockTile {
       article,
       headline: "This is tile headline",
       leadAsset: article.leadAsset,
-      strapline: "Three Conservative MPs resign"
+      strapline: "Three Conservative MPs resign",
     };
   }
 

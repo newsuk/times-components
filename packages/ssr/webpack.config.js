@@ -5,12 +5,12 @@ const extensions = [".js"];
 
 const productionOptions = {
   devtool: "source-map",
-  mode: "production"
+  mode: "production",
 };
 
 const developmentOptions = {
   devtool: "inline-source-map",
-  mode: "development"
+  mode: "development",
 };
 
 const babelConfig = {
@@ -25,14 +25,14 @@ const babelConfig = {
           "@babel/preset-env",
           {
             targets: {
-              esmodules: true
-            }
-          }
+              esmodules: true,
+            },
+          },
         ],
-        "@babel/preset-react"
-      ]
-    }
-  }
+        "@babel/preset-react",
+      ],
+    },
+  },
 };
 
 const options =
@@ -45,10 +45,10 @@ module.exports = {
   entry: {
     article: path.resolve(__dirname, "./src/client/article.js"),
     "author-profile": path.resolve(__dirname, "./src/client/author-profile.js"),
-    topic: path.resolve(__dirname, "./src/client/topic.js")
+    topic: path.resolve(__dirname, "./src/client/topic.js"),
   },
   module: {
-    rules: [babelConfig]
+    rules: [babelConfig],
   },
   optimization: {
     splitChunks: {
@@ -57,16 +57,16 @@ module.exports = {
           chunks: "initial",
           minChunks: 2,
           minSize: 0,
-          name: "common"
-        }
-      }
-    }
+          name: "common",
+        },
+      },
+    },
   },
   output: {
     filename: "[name].react.bundle.js",
-    path: outputFolder
+    path: outputFolder,
   },
   resolve: {
-    extensions
-  }
+    extensions,
+  },
 };

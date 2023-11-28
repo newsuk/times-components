@@ -4,7 +4,7 @@ import {
   Container,
   Title,
   Subtitle,
-  Background
+  Background,
 } from './styles';
 import { backgroundImage } from './data';
 
@@ -14,7 +14,7 @@ export const OffersBanner = () => {
       <Title
         typographyPreset={{
           xs: 'editorialHeadline040',
-          md: 'editorialHeadline050'
+          md: 'editorialHeadline050',
         }}
         stylePreset="inkContrast"
         marginBlockEnd="space050"
@@ -24,7 +24,7 @@ export const OffersBanner = () => {
       <Subtitle
         typographyPreset={{
           xs: 'editorialSubheadline020',
-          md: 'editorialSubheadline030'
+          md: 'editorialSubheadline030',
         }}
         stylePreset="inkContrast"
         marginBlockEnd="space070"

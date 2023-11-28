@@ -4,7 +4,7 @@ import TestRenderer from "react-test-renderer";
 import renderTrees, {
   renderTree,
   renderTreeAsText,
-  renderTreeArrayAsText
+  renderTreeArrayAsText,
 } from "../src/markup-forest";
 import bioAST from "../fixtures/bio.json";
 import mixtureAST from "../fixtures/mixture.json";
@@ -23,19 +23,19 @@ iterator([
               children: [
                 {
                   attributes: {
-                    value: "some text here"
+                    value: "some text here",
                   },
                   children: [],
-                  name: "text"
-                }
+                  name: "text",
+                },
               ],
-              name: "bold"
-            }
+              name: "bold",
+            },
           ],
-          {}
-        )
+          {},
+        ),
       ).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "mixture of tags",
@@ -53,11 +53,11 @@ iterator([
         },
         text(key, { value }) {
           return value;
-        }
+        },
       });
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "nested tags",
@@ -71,11 +71,11 @@ iterator([
         },
         text(key, { value }) {
           return value;
-        }
+        },
       });
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "ignore children of nested tags",
@@ -92,11 +92,11 @@ iterator([
         },
         text(key, { value }) {
           return value;
-        }
+        },
       });
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "provide AST of node",
@@ -115,11 +115,11 @@ iterator([
         },
         text(key, attributes, renderedChildren) {
           return renderedChildren;
-        }
+        },
       });
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "provide AST of node for child",
@@ -136,11 +136,11 @@ iterator([
         },
         text(key, attributes, renderedChildren, indx, node) {
           return <div key={key}>{`special: ${JSON.stringify(node)}`}</div>;
-        }
+        },
       });
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "provide empty children",
@@ -157,11 +157,11 @@ iterator([
         },
         text(key, attributes, renderedChildren) {
           return <div key={key}>{renderedChildren.length}</div>;
-        }
+        },
       });
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "wrapped tags",
@@ -177,13 +177,13 @@ iterator([
             },
             text(key, { value }) {
               return value;
-            }
+            },
           })}
-        </div>
+        </div>,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "multiple children",
@@ -196,13 +196,13 @@ iterator([
             },
             text(key, { value }) {
               return value;
-            }
+            },
           })}
-        </div>
+        </div>,
       );
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "nested tags with a text only renderer",
@@ -210,7 +210,7 @@ iterator([
       const output = renderTreeAsText(nestedAST);
 
       expect(output).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "bio tags with a text only renderer",
@@ -218,6 +218,6 @@ iterator([
       const output = renderTreeArrayAsText(bioAST);
 
       expect(output).toMatchSnapshot();
-    }
-  }
+    },
+  },
 ]);

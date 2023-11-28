@@ -3,12 +3,12 @@ import renderer from "react-test-renderer";
 import {
   authorProfile as makeAuthorParams,
   MockedProvider,
-  MockFixture
+  MockFixture,
 } from "@times-components/provider-test-tools";
 import { authorArticlesWithImages as authorArticlesWithImagesQuery } from "@times-components/provider-queries";
 import { AuthorProfileProvider } from "../src/provider";
 
-const renderComponent = child => {
+const renderComponent = (child) => {
   const articleImageRatio = "3:2";
   const pageSize = 1;
   const slug = "deborah-haynes";
@@ -17,16 +17,16 @@ const renderComponent = child => {
     <MockFixture
       params={makeAuthorParams({
         articleQuery: authorArticlesWithImagesQuery,
-        articleVariables: iteration => ({
+        articleVariables: (iteration) => ({
           first: pageSize,
           imageRatio: articleImageRatio,
           skip: (iteration - 1) * pageSize,
-          slug
+          slug,
         }),
         pageSize,
-        slug
+        slug,
       })}
-      render={mocks => (
+      render={(mocks) => (
         <MockedProvider mocks={mocks}>
           <AuthorProfileProvider
             debounceTimeMs={0}
@@ -38,12 +38,12 @@ const renderComponent = child => {
           </AuthorProfileProvider>
         </MockedProvider>
       )}
-    />
+    />,
   );
 };
 
 describe("AuthorArticlesNoImages provider", () => {
-  it("returns query result", done => {
+  it("returns query result", (done) => {
     renderComponent(({ isLoading, author }) => {
       if (!isLoading) {
         expect(author).toMatchSnapshot();

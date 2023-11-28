@@ -2,7 +2,7 @@ import React from "react";
 import { iterator } from "@times-components/test-utils";
 import * as Icons from "../src/icons";
 
-export default renderMethod => {
+export default (renderMethod) => {
   const tests = [];
 
   Object.entries(Icons).forEach(([name, Icon]) => {
@@ -13,11 +13,11 @@ export default renderMethod => {
         const fill = "#facade";
 
         const output = renderMethod(
-          <Icon fillColour={fill} height={50} strokeColour={stroke} />
+          <Icon fillColour={fill} height={50} strokeColour={stroke} />,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     });
   });
 

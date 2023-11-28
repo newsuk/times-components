@@ -24,14 +24,14 @@ const articleStack = ({
   articles,
   marginBlockStart,
   hideImageOnDesktop,
-  clickHandler
+  clickHandler,
 }: ArticleStackProps) => (
   <WrappedStackLayout marginBlockEnd="space000">
     <StackItem>
       <FullWidthBlock
         paddingInline={{
           xs: 'space045',
-          md: 'space000'
+          md: 'space000',
         }}
         marginBlockEnd="space040"
       >
@@ -39,9 +39,9 @@ const articleStack = ({
           overrides={{
             stylePreset: {
               xs: 'lightDashedDivider',
-              md: 'dashedDivider'
+              md: 'dashedDivider',
             },
-            marginBlockStart: marginBlockStart || 'space000'
+            marginBlockStart: marginBlockStart || 'space000',
           }}
         />
       </FullWidthBlock>
@@ -51,7 +51,7 @@ const articleStack = ({
         hideImageOnDesktop={hideImageOnDesktop}
         columns={{
           xs: '1fr',
-          md: '1fr 1px 1fr 1px 1fr 1px 1fr'
+          md: '1fr 1px 1fr 1px 1fr 1px 1fr',
         }}
         columnGap="space040"
         rowGap="space040"
@@ -78,9 +78,9 @@ const articleStack = ({
                   tagAndFlagMarginBlockStart: 'space030',
                   topBorderStyle: {
                     xs: 'lightDashedDivider',
-                    md: 'dashedDivider'
+                    md: 'dashedDivider',
                   },
-                  titleTypographyPreset: 'editorialHeadline020'
+                  titleTypographyPreset: 'editorialHeadline020',
                 }}
                 clickHandler={clickHandler}
               />
@@ -104,7 +104,7 @@ export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
         articles: articlesBottom,
         marginBlockStart: 'space040',
         hideImageOnDesktop: true,
-        clickHandler
+        clickHandler,
       })}
     </CustomBlockLayout>
   );

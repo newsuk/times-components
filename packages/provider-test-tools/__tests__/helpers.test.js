@@ -4,29 +4,29 @@ const operationEvent = {
   operation: {
     operationName: "Test",
     variables: {
-      foo: 1
-    }
+      foo: 1,
+    },
   },
-  type: "resolved"
+  type: "resolved",
 };
 
 const tidyOperationEvent = {
   query: "Test",
   type: "resolved",
   vars: {
-    foo: 1
-  }
+    foo: 1,
+  },
 };
 
 const renderEvent = {
   props: {
-    foo: 1
+    foo: 1,
   },
-  type: "render"
+  type: "render",
 };
 
 const mockTestLink = {
-  getEvents: () => [operationEvent, renderEvent]
+  getEvents: () => [operationEvent, renderEvent],
 };
 
 describe("Provider helper tests", () => {

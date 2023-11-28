@@ -13,7 +13,7 @@ import {
   StyledIconWrapper,
   MainIconContainer,
   StyledBlock,
-  StyledSpan
+  StyledSpan,
 } from './styles';
 import {
   NewsKitBoardAndCardGamesIcon,
@@ -22,7 +22,7 @@ import {
   NewsKitNumbersAndLogicIcon,
   NewsKitQuizzesAndTeasersIcon,
   NewsKitSudokusIcon,
-  NewsKitWordPuzzlesIcon
+  NewsKitWordPuzzlesIcon,
 } from '../../../assets';
 import { Button, TextBlock, Block } from 'newskit';
 
@@ -68,13 +68,13 @@ const iconMapping: Record<PuzzleType, IconComponent> = {
       height={200}
       className="iconType"
     />
-  )
+  ),
 };
 
 export const HeroBanner: FC<HeroBannerProps> = ({
   puzzleName,
   loginUrl,
-  puzzleType
+  puzzleType,
 }) => {
   const Icon = iconMapping[puzzleType];
 
@@ -95,7 +95,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({
               as="h2"
               typographyPreset={{
                 xs: 'editorialHeadline050',
-                md: 'editorialHeadline080'
+                md: 'editorialHeadline080',
               }}
               stylePreset="inkContrast"
               marginBlockEnd={{ xs: 'space070', md: 'space060' }}
@@ -109,19 +109,19 @@ export const HeroBanner: FC<HeroBannerProps> = ({
                 marker: {
                   size: 'iconSize005',
                   spaceInline: 'space020',
-                  stylePreset: 'inkDark010'
+                  stylePreset: 'inkDark010',
                 },
                 spaceStack: 'space050',
                 content: {
                   typographyPreset: 'editorialSubheadline020',
-                  stylePreset: 'inkDark010'
-                }
+                  stylePreset: 'inkDark010',
+                },
               }}
             >
               {[
                 'Just £1 for your first month, then £4.99 a month thereafter',
                 'Play thousands of puzzles and crosswords on our website',
-                'Read up to 30 articles per month on thetimes.co.uk'
+                'Read up to 30 articles per month on thetimes.co.uk',
               ]}
             </SyledUnorderedList>
             <Button
@@ -135,9 +135,9 @@ export const HeroBanner: FC<HeroBannerProps> = ({
                 marginBlockStart: 'space040',
                 minWidth: {
                   xs: '100%',
-                  sm: '227px'
+                  sm: '227px',
                 },
-                height: 'sizing.sizing050'
+                height: 'sizing.sizing050',
               }}
             >
               Subscribe

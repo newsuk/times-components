@@ -51,7 +51,7 @@
     "jest": "24.8.0",
     "jest-styled-components": "6.3.1",
     "mockdate": "3.0.5",
-    "prettier": "1.14.3",
+    "prettier": "3.1.0",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-test-renderer": "16.9.0",

@@ -18,7 +18,7 @@ const AspectRatioContainer = ({ aspectRatio, children }) => {
 
 AspectRatioContainer.propTypes = {
   aspectRatio: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired
+  children: PropTypes.element.isRequired,
 };
 
 export default AspectRatioContainer;

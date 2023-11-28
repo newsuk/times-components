@@ -10,22 +10,22 @@ const styles = {
     paddingTop: spacing(2),
     paddingBottom: spacing(2),
     height: "100%",
-    alignItems: "center"
+    alignItems: "center",
   },
   activityLoader: {
     borderRadius: 9999,
     height: 40,
     overflow: "hidden",
-    width: 40
+    width: 40,
   },
   label: {
     ...fontFactory({
       font: "supporting",
-      fontSize: "saveAndShare"
+      fontSize: "saveAndShare",
     }),
     color: colours.functional.secondary,
     marginRight: spacing(2),
-    transform: "translateY(9%)"
+    transform: "translateY(9%)",
   },
   link: {
     base: `
@@ -47,34 +47,34 @@ const styles = {
       &:active {
         background-color: ${colours.functional.keyline};
       }
-    `
+    `,
   },
   rowItem: {
     alignItems: "center",
     flexDirection: "row",
-    height: ICON_SIZE
+    height: ICON_SIZE,
   },
   rowItemRight: {
     alignItems: "center",
     flexDirection: "row",
     height: ICON_SIZE,
-    marginLeft: "auto"
+    marginLeft: "auto",
   },
   svgIcon: {
     fb: {
-      height: 18
+      height: 18,
     },
     star: {
-      height: 18
+      height: 18,
     },
     fillColour: colours.functional.secondary,
     height: 16,
     hoverFillColour: colours.functional.brandColour,
     save: {
       fillColour: colours.functional.white,
-      strokeColour: colours.functional.secondary
-    }
-  }
+      strokeColour: colours.functional.secondary,
+    },
+  },
 };
 
 export default styles;

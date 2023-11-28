@@ -4,7 +4,7 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 import "./mocks";
 import shared from "./images.base";
@@ -16,7 +16,7 @@ const omitProps = new Set([
   "className",
   "data-testid",
   "responsiveLinkStyles",
-  "style"
+  "style",
 ]);
 
 export default () => {
@@ -26,15 +26,15 @@ export default () => {
     compose(
       print,
       minimalWebTransform,
-      minimaliseTransform((value, key) => omitProps.has(key))
-    )
+      minimaliseTransform((value, key) => omitProps.has(key)),
+    ),
   );
 
   beforeEach(() => {
     const nuk = {
       user: {
-        isLoggedIn: true
-      }
+        isLoggedIn: true,
+      },
     };
     global.nuk = nuk;
   });

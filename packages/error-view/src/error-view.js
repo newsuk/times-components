@@ -6,7 +6,7 @@ class ErrorView extends Component {
     super(props);
 
     this.state = {
-      error: null
+      error: null,
     };
 
     this.handleError = this.handleError.bind(this);
@@ -14,13 +14,13 @@ class ErrorView extends Component {
 
   componentDidCatch(e) {
     this.setState({
-      error: e
+      error: e,
     });
   }
 
   handleError(e) {
     this.setState({
-      error: e
+      error: e,
     });
   }
 
@@ -31,13 +31,13 @@ class ErrorView extends Component {
     return children({
       error,
       hasError: !!error,
-      onError: this.handleError
+      onError: this.handleError,
     });
   }
 }
 
 ErrorView.propTypes = {
-  children: PropTypes.func.isRequired
+  children: PropTypes.func.isRequired,
 };
 
 export default ErrorView;

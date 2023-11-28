@@ -1,1 +1,1 @@
-export default twitter => (twitter ? `https://twitter.com/${twitter}` : "");
+export default (twitter) => (twitter ? `https://twitter.com/${twitter}` : "");

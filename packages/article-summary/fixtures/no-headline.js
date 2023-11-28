@@ -8,7 +8,7 @@ const defaultParagraph =
 
 export default ({
   label = defaultLabel,
-  paragraph = defaultParagraph
+  paragraph = defaultParagraph,
 } = {}) => ({
   content: (
     <ArticleSummaryContent
@@ -18,23 +18,23 @@ export default ({
           children: [
             {
               attributes: {
-                value: paragraph
+                value: paragraph,
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "paragraph"
-        }
+          name: "paragraph",
+        },
       ]}
     />
   ),
   datePublicationProps: {
     date: "2017-07-01T14:32:00.000Z",
-    publication: "SUNDAYTIMES"
+    publication: "SUNDAYTIMES",
   },
   labelProps: {
     color: colours.functional.primary,
-    title: label
-  }
+    title: label,
+  },
 });

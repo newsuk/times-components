@@ -13,14 +13,14 @@ const Gutter = ({ children, style }) => (
 Gutter.propTypes = {
   children: PropTypes.node.isRequired,
   style: PropTypes.objectOf({
-    overflow: PropTypes.string
-  })
+    overflow: PropTypes.string,
+  }),
 };
 
 Gutter.defaultProps = {
   style: {
-    overflow: "hidden"
-  }
+    overflow: "hidden",
+  },
 };
 
 export default Gutter;

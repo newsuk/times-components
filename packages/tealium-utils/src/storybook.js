@@ -1,24 +1,24 @@
 import { action } from "@storybook/addon-actions";
 import tealiumReporter, {
-  TealiumSendScheduler
+  TealiumSendScheduler,
 } from "@times-components/tealium";
 
 const trackingOptions = {
   account: "newsinternational",
   enabled: true,
   env: "dev",
-  profile: "thetimes.2018"
+  profile: "thetimes.2018",
 };
 
 const tealiumSendScheduler = new TealiumSendScheduler(
   trackingOptions,
   global.window,
-  global.document
+  global.document,
 );
 
 const reporter = tealiumReporter(tealiumSendScheduler);
 
-export default e => {
+export default (e) => {
   if (reporter) reporter.analytics(e);
 
   return action("analytics-event")(e);

@@ -10,8 +10,8 @@ export default () => {
       name: "should return false when London is NOT the timezone",
       test() {
         expect(isLondonTimezone()).toEqual(false);
-      }
-    }
+      },
+    },
   ];
 
   iterator(tests);

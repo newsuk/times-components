@@ -1,6 +1,6 @@
 import { withTrackEvents } from "@times-components/tracking";
 
-export default Component =>
+export default (Component) =>
   withTrackEvents(Component, {
     analyticsEvents: [
       {
@@ -8,45 +8,45 @@ export default Component =>
         eventName: "onSaveToMyArticles",
         getAttrs: ({ articleId, articleHeadline }) => ({
           articleId,
-          articleHeadline
+          articleHeadline,
         }),
-        trackingName: "ArticleSaveToMyArticles"
+        trackingName: "ArticleSaveToMyArticles",
       },
       {
         actionName: "Pressed",
         eventName: "onShareEmail",
         getAttrs: ({ articleId, articleHeadline }) => ({
           articleId,
-          articleHeadline
+          articleHeadline,
         }),
-        trackingName: "ArticleShareUrlByEmail"
+        trackingName: "ArticleShareUrlByEmail",
       },
       {
         actionName: "Pressed",
         eventName: "onCopyLink",
         getAttrs: ({ articleId, articleHeadline }) => ({
           articleId,
-          articleHeadline
+          articleHeadline,
         }),
-        trackingName: "ArticleCopyLink"
+        trackingName: "ArticleCopyLink",
       },
       {
         actionName: "Pressed",
         eventName: "onShareOnFB",
         getAttrs: ({ articleId, articleHeadline }) => ({
           articleId,
-          articleHeadline
+          articleHeadline,
         }),
-        trackingName: "ArticleShareOnFacebook"
+        trackingName: "ArticleShareOnFacebook",
       },
       {
         actionName: "Pressed",
         eventName: "onShareOnTwitter",
         getAttrs: ({ articleId, articleHeadline }) => ({
           articleId,
-          articleHeadline
+          articleHeadline,
         }),
-        trackingName: "ArticleShareOnTwitter"
-      }
-    ]
+        trackingName: "ArticleShareOnTwitter",
+      },
+    ],
   });

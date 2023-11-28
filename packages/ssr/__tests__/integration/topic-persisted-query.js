@@ -4,5 +4,5 @@ import topicPageTests from "../helpers/topic-helper";
 topicPageTests({
   qs: "?pq=1",
   variant: "Persisted Query",
-  stickyElements: ["#nav"]
+  stickyElements: ["#nav"],
 });

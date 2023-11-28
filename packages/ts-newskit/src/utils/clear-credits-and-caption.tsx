@@ -5,11 +5,11 @@ export const clearCreditsAndCaption = (data: LeadArticleProps) => {
   const updatedImages: ImageProps = {
     ...data.images,
     credits: '',
-    caption: ''
+    caption: '',
   };
 
   return {
     ...data,
-    images: updatedImages
+    images: updatedImages,
   };
 };

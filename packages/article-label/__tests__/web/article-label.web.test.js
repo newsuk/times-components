@@ -5,7 +5,7 @@ import ArticleLabel from "../../src/article-label";
 describe("Article Label test on web", () => {
   it("renders ArticleLabel", () => {
     const testInstance = TestRenderer.create(
-      <ArticleLabel color="#008347" title="swimming" />
+      <ArticleLabel color="#008347" title="swimming" />,
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot();
@@ -16,11 +16,11 @@ describe("Article Label test on web", () => {
         alpha: 1,
         blue: 71,
         green: 131,
-        red: 0
-      }
+        red: 0,
+      },
     };
     const testInstance = TestRenderer.create(
-      <ArticleLabel color={color} title="swimming" />
+      <ArticleLabel color={color} title="swimming" />,
     );
 
     expect(testInstance.toJSON()).toMatchSnapshot();

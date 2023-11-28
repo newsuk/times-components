@@ -11,19 +11,19 @@ const ItemRowSeparator = ({ style }) => (
 );
 
 ItemColSeparator.defaultProps = {
-  style: {}
+  style: {},
 };
 
 ItemRowSeparator.defaultProps = {
-  style: {}
+  style: {},
 };
 
 ItemColSeparator.propTypes = {
-  style: PropTypes.shape({})
+  style: PropTypes.shape({}),
 };
 
 ItemRowSeparator.propTypes = {
-  style: PropTypes.shape({})
+  style: PropTypes.shape({}),
 };
 
 export { ItemColSeparator, ItemRowSeparator };

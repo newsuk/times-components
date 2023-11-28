@@ -27,11 +27,11 @@ const PaginationContainer = ({ children, hideResults }) =>
 
 PaginationContainer.propTypes = {
   children: PropTypes.node.isRequired,
-  hideResults: PropTypes.bool
+  hideResults: PropTypes.bool,
 };
 
 PaginationContainer.defaultProps = {
-  hideResults: false
+  hideResults: false,
 };
 
 export default PaginationContainer;

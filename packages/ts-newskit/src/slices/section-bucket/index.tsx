@@ -37,7 +37,7 @@ const ArticleStackBlock = ({
   articles,
   section,
   clickHandler,
-  sliceHeaderClickHandler
+  sliceHeaderClickHandler,
 }: ArticleStackBlockProps) => (
   <>
     <StyledBlock data-testid="article-block">
@@ -61,13 +61,13 @@ export const SectionBucket = ({
   articleStackThree,
   articleStackFour,
   clickHandler,
-  sliceHeaderClickHandler
+  sliceHeaderClickHandler,
 }: SectionBucketProps) => {
   const articleStacksArray = [
     articleStackOne,
     articleStackTwo,
     articleStackThree,
-    articleStackFour
+    articleStackFour,
   ];
 
   const ArticleStackBlocks = (
@@ -89,7 +89,7 @@ export const SectionBucket = ({
         <Scroll
           overrides={{
             overlays: { stylePreset: 'transparentBackground' },
-            marginBlockEnd: 'space060'
+            marginBlockEnd: 'space060',
           }}
           tabIndex={undefined}
         >
@@ -102,7 +102,7 @@ export const SectionBucket = ({
             xs: '100%',
             md: '720px',
             lg: '976px',
-            xl: '1276px'
+            xl: '1276px',
           }}
           marginBlockEnd="space060"
         >

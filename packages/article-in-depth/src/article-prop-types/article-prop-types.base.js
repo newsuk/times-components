@@ -7,19 +7,19 @@ const articlePagePropTypes = {
     graphQLErrors: PropTypes.array,
     message: PropTypes.string,
     networkError: PropTypes.shape({
-      message: PropTypes.string
-    })
+      message: PropTypes.string,
+    }),
   }),
   isLoading: PropTypes.bool,
   onImagePress: PropTypes.func,
-  receiveChildList: PropTypes.func.isRequired
+  receiveChildList: PropTypes.func.isRequired,
 };
 
 const articlePageDefaultProps = {
   article: null,
   error: null,
   isLoading: false,
-  onImagePress: null
+  onImagePress: null,
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };

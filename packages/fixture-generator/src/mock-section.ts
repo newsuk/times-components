@@ -3,7 +3,7 @@ import {
   PuzzleSection,
   MagazineSection,
   PuzzleSectionSlice,
-  ArticleSlice
+  ArticleSlice,
 } from "./types";
 import {
   mockLeadOneAndFourSlice,
@@ -17,7 +17,7 @@ import {
   mockSecondaryTwoAndTwoSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
   mockStandardSlice,
-  mockListTwoAndSixNoPicSlice
+  mockListTwoAndSixNoPicSlice,
 } from "./mock-slice";
 
 function getSlices(): Array<ArticleSlice> {
@@ -31,7 +31,7 @@ function getSlices(): Array<ArticleSlice> {
     mockSecondaryFourSlice(),
     mockSecondaryTwoAndTwoSlice(),
     mockSecondaryTwoNoPicAndTwoSlice(),
-    mockListTwoAndSixNoPicSlice()
+    mockListTwoAndSixNoPicSlice(),
   ];
 }
 
@@ -68,19 +68,19 @@ function mockStandardSection(title: string): StandardSectionWithName {
         alpha: 1,
         blue: 255,
         green: 255,
-        red: 255
-      }
+        red: 255,
+      },
     },
     id: "dummy-section-id",
     name: "StandardSection",
     slices: getSlices(),
     slug: "dummy-section-slug",
-    title
+    title,
   };
 }
 
 function mockStandardSectionWithSecondaryTwoSlices(
-  title: string
+  title: string,
 ): StandardSectionWithName {
   return {
     colour: {
@@ -88,14 +88,14 @@ function mockStandardSectionWithSecondaryTwoSlices(
         alpha: 1,
         blue: 255,
         green: 255,
-        red: 255
-      }
+        red: 255,
+      },
     },
     id: "dummy-section-id",
     name: "StandardSection",
     slices: getSecondaryTwoSlices(),
     slug: "dummy-section-slug",
-    title
+    title,
   };
 }
 
@@ -106,14 +106,14 @@ function mockPuzzleSection(title: string): PuzzleSectionWithName {
         alpha: 1,
         blue: 255,
         green: 255,
-        red: 255
-      }
+        red: 255,
+      },
     },
     id: "dummy-section-id",
     name: "PuzzleSection",
     slices: getPuzzleSlices(7),
     slug: "dummy-section-slug",
-    title
+    title,
   };
 }
 
@@ -121,5 +121,5 @@ export {
   getPuzzleSlices,
   mockPuzzleSection,
   mockStandardSection,
-  mockStandardSectionWithSecondaryTwoSlices
+  mockStandardSectionWithSecondaryTwoSlices,
 };

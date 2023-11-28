@@ -4,12 +4,12 @@ import { sections } from "@times-components/storybook";
 import { themeFactory } from "@times-components/ts-styleguide";
 import PullQuotes from "./src/pull-quote";
 
-const preventDefaultedAction = decorateAction =>
+const preventDefaultedAction = (decorateAction) =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    }
+    },
   ]);
 
 const content =
@@ -29,7 +29,7 @@ export default {
             caption={text("Caption: ", caption)}
             font={theme.pullQuoteFont}
             onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-              "onTwitterLinkPress"
+              "onTwitterLinkPress",
             )}
             quoteColour={color("Quote Colour: ", "#850029")}
             text={text("Title: ", title)}
@@ -40,8 +40,8 @@ export default {
         );
       },
       name: "Default",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Pull Quotes"
+  name: "Primitives/Pull Quotes",
 };

@@ -25,7 +25,7 @@ const Results = ({ children: message }) => (
 );
 
 Results.propTypes = {
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
 };
 
 export default Results;

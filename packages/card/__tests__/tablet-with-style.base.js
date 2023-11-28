@@ -9,16 +9,16 @@ const props = {
   imageRatio: 2 / 3,
   imageUri: "https://img.io/img",
   lowResSize: 25,
-  showImage: true
+  showImage: true,
 };
 
-const withTabletContext = WrappedComponent => (
+const withTabletContext = (WrappedComponent) => (
   <ResponsiveContext.Provider value={{ isTablet: true, screenWidth: 1000 }}>
     {WrappedComponent}
   </ResponsiveContext.Provider>
 );
 
-export default renderMethod => {
+export default (renderMethod) => {
   jest.useFakeTimers();
 
   const tests = [
@@ -29,15 +29,15 @@ export default renderMethod => {
           withTabletContext(
             <Card {...props}>
               <TcText>A card</TcText>
-            </Card>
-          )
+            </Card>,
+          ),
         );
 
         jest.runTimersToTime();
 
         expect(output).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ];
 
   iterator(tests);

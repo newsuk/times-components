@@ -2,13 +2,13 @@ import hyphenateStyleName from "hyphenate-style-name";
 import traverse from "./traverse";
 import { stylePrinter } from "./printers";
 
-const hyphenateStyles = styles =>
+const hyphenateStyles = (styles) =>
   Object.entries(styles).reduce(
     (acc, [property, value]) => ({
       ...acc,
-      [hyphenateStyleName(property)]: value
+      [hyphenateStyleName(property)]: value,
     }),
-    {}
+    {},
   );
 
 export const hoistStyleTransform = (accum, node, props, children) => {
@@ -19,13 +19,13 @@ export const hoistStyleTransform = (accum, node, props, children) => {
       accum,
       children,
       node,
-      props
+      props,
     };
   }
 
   if (Object.keys(style).length === 0) {
     const omittedStyle = {
-      ...other
+      ...other,
     };
 
     if (className) {
@@ -36,12 +36,13 @@ export const hoistStyleTransform = (accum, node, props, children) => {
       accum,
       children,
       node,
-      props: omittedStyle
+      props: omittedStyle,
     };
   }
 
-  const inlineStyleClass = `IS${Object.keys(accum.inlineStyles || {}).length +
-    1}`;
+  const inlineStyleClass = `IS${
+    Object.keys(accum.inlineStyles || {}).length + 1
+  }`;
   const newClassName = className
     ? `${className} ${inlineStyleClass}`
     : inlineStyleClass;
@@ -51,15 +52,15 @@ export const hoistStyleTransform = (accum, node, props, children) => {
       ...accum,
       inlineStyles: {
         ...accum.inlineStyles,
-        [inlineStyleClass]: hyphenateStyles(style)
-      }
+        [inlineStyleClass]: hyphenateStyles(style),
+      },
     },
     children,
     node,
     props: {
       className: newClassName,
-      ...other
-    }
+      ...other,
+    },
   };
 };
 

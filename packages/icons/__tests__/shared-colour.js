@@ -7,7 +7,7 @@ import {
   minimaliseTransform,
   print,
   replacePropTransform,
-  replaceTransform
+  replaceTransform,
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import shared from "./shared-colour.base";
@@ -20,14 +20,13 @@ export default () => {
     compose(
       print,
       replaceTransform({
-        svg: justChildren
+        svg: justChildren,
       }),
       minimaliseTransform((value, key) => key !== "fill" && key !== "stroke"),
-      replacePropTransform(
-        (value, key) =>
-          longKeysSet.has(key) ? hash(JSON.stringify(value)) : value
-      )
-    )
+      replacePropTransform((value, key) =>
+        longKeysSet.has(key) ? hash(JSON.stringify(value)) : value,
+      ),
+    ),
   );
 
   shared(mount);

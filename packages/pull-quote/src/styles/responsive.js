@@ -4,7 +4,7 @@ import {
   breakpoints,
   colours,
   fontsWithFallback,
-  fontSizes
+  fontSizes,
 } from "@times-components/ts-styleguide";
 
 const PullQuoteContent = styled(TcText)`

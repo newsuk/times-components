@@ -9,7 +9,7 @@ const props = {
   imageRatio: 2 / 3,
   imageUri: "https://img.io/img",
   lowResSize: 30,
-  showImage: true
+  showImage: true,
 };
 
 jest.useFakeTimers();
@@ -20,7 +20,7 @@ it("card with reversed layout", () => {
   const wrapper = mount(
     <Card {...props} isReversed>
       <TcText>A card in reverse</TcText>
-    </Card>
+    </Card>,
   );
 
   jest.runTimersToTime();

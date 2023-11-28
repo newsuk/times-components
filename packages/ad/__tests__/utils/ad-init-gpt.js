@@ -16,7 +16,7 @@ export default () => {
 
     init.init();
     expect(init.gpt.setPageTargeting).toHaveBeenCalledWith({
-      pageOptionName: "pageOptionValue"
+      pageOptionName: "pageOptionValue",
     });
   });
 
@@ -45,7 +45,7 @@ export default () => {
     expect(mock.sizeMapping.addSize).toHaveBeenCalledWith([100, 250], [[1, 1]]);
     expect(mock.slot.setTargeting).toHaveBeenCalledWith(
       "slotOptionName",
-      "slotOptionValue"
+      "slotOptionValue",
     );
     expect(mock.googletag.display).toHaveBeenCalledWith("mock-code");
   });

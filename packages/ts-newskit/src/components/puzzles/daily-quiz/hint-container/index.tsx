@@ -9,7 +9,7 @@ interface HintProps {
 
 export const HintContainer: FC<HintProps> = ({
   title,
-  hints: initialHints
+  hints: initialHints,
 }) => {
   const [hints, setHints] = useState<Array<{ info: string; text: string }>>([]);
   const totalHints = initialHints.length;
@@ -21,7 +21,10 @@ export const HintContainer: FC<HintProps> = ({
       const hintInfo = `Hint ${hintNumber} of ${totalHints}`;
       const hintText = initialHints[hintIndex].text;
       setHintIndex(hintNumber);
-      setHints(prevHints => [...prevHints, { info: hintInfo, text: hintText }]);
+      setHints((prevHints) => [
+        ...prevHints,
+        { info: hintInfo, text: hintText },
+      ]);
     }
   };
 

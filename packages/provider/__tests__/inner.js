@@ -20,7 +20,7 @@ class Inner extends Component {
   }
 }
 Inner.propTypes = {
-  debouncedProps: PropTypes.shape({}).isRequired
+  debouncedProps: PropTypes.shape({}).isRequired,
 };
 
 export default Inner;

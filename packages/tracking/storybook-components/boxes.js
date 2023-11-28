@@ -11,7 +11,7 @@ export default class Boxes extends Component {
 
   render() {
     const { boxes } = this.props;
-    return boxes.map(item => (
+    return boxes.map((item) => (
       <Box id={item.elementId} key={item.elementId} {...item}>
         <TcText>{item.elementId}</TcText>
       </Box>
@@ -20,8 +20,8 @@ export default class Boxes extends Component {
 }
 Boxes.propTypes = {
   boxes: PropTypes.arrayOf(PropTypes.object).isRequired,
-  receiveChildList: PropTypes.func
+  receiveChildList: PropTypes.func,
 };
 Boxes.defaultProps = {
-  receiveChildList: () => {}
+  receiveChildList: () => {},
 };

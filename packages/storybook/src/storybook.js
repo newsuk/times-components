@@ -10,7 +10,7 @@ const {
   CenteredDecorator,
   BarSpacingDecorator,
   LateralSpacingDecorator,
-  WhiteBgColorDecorator
+  WhiteBgColorDecorator,
 } = decorators;
 
 const showcaseConverter = showcaseToStoryBook(storiesOf, builtInKnobs, actions);
@@ -24,5 +24,5 @@ export {
   sections,
   showcaseConverter,
   WhiteBgColorDecorator,
-  NewTab
+  NewTab,
 };

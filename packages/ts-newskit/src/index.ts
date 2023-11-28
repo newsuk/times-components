@@ -11,18 +11,14 @@ export { TimesWebLightTravelTheme } from './theme/times-web-light-travel';
 export { Breadcrumb } from './components/navigation/breadcrumb';
 export { GlobalNav } from './components/navigation/global-nav';
 export { TopNav } from './components/navigation/global-nav/topnav/topnav';
-export {
-  HamburgerMenu
-} from './components/navigation/global-nav/hamburger-menu/HamburgerMenu';
+export { HamburgerMenu } from './components/navigation/global-nav/hamburger-menu/HamburgerMenu';
 export { EditionMasthead } from './components/navigation/masthead';
 export { SectionHeader } from './components/navigation/section-header';
 export {
   WrappedHamburger,
-  WrappedGlobalNav
+  WrappedGlobalNav,
 } from './components/navigation/global-nav/wrapped-components/WrappedComponents';
-export {
-  HamburgerMenuContainer
-} from './components/navigation/global-nav/styles';
+export { HamburgerMenuContainer } from './components/navigation/global-nav/styles';
 export { GlobalNavWithCustomDrawer } from './components/navigation/global-nav';
 export { SecondaryNavigation } from './components/navigation/secondary-menu';
 export { TSNewskitDrawer } from './components/navigation/global-nav';
@@ -34,9 +30,7 @@ export { PuzzlesFlag } from './components/puzzles/flag';
 export { AccordionGroup } from './components/misc/accordion/accordion-group';
 export { BreakoutSection } from './components/puzzles/breakout-section';
 export { HeroBanner } from './components/puzzles/hero-banner';
-export {
-  TeaserCardsContainer
-} from './components/puzzles/teaserCards-container';
+export { TeaserCardsContainer } from './components/puzzles/teaserCards-container';
 export { HintButton } from './components/puzzles/daily-quiz/hint-button';
 export { HintDisplay } from './components/puzzles/daily-quiz/hints';
 export { HintContainer } from './components/puzzles/daily-quiz/hint-container';
@@ -72,9 +66,7 @@ export { SliceHeader } from './components/slices/slice-header';
 
 // MISC
 export { JobTitle } from './components/misc/job-title/job-title';
-export {
-  UpdateButtonWithDelay
-} from './components/misc/update-button/update-button-with-delay';
+export { UpdateButtonWithDelay } from './components/misc/update-button/update-button-with-delay';
 export { ColouredText } from './components/coloured-text';
 
 // TODO Remove after tests - borisovy

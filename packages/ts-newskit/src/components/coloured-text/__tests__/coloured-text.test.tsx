@@ -7,7 +7,7 @@ const renderComponent = (color?: string) =>
   render(
     <TCThemeProvider>
       <ColouredText $color={color}>Test Text</ColouredText>
-    </TCThemeProvider>
+    </TCThemeProvider>,
   );
 
 test('ColouredText renders without a colour applied', () => {
@@ -15,7 +15,7 @@ test('ColouredText renders without a colour applied', () => {
   const component = screen.getByText('Test Text');
 
   expect(component).not.toHaveStyle({
-    color: 'rgb(1, 0, 13)'
+    color: 'rgb(1, 0, 13)',
   });
 });
 
@@ -24,6 +24,6 @@ test('ColouredText renders with a colour applied', () => {
   const component = screen.getByText('Test Text');
 
   expect(component).toHaveStyle({
-    color: 'rgb(1, 0, 13)'
+    color: 'rgb(1, 0, 13)',
   });
 });

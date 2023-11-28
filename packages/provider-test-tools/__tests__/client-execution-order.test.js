@@ -6,9 +6,9 @@ function AuthorQueryResolver({ variables }) {
     data: {
       author: {
         __typename: "Author",
-        name: variables.slug
-      }
-    }
+        name: variables.slug,
+      },
+    },
   };
 }
 
@@ -26,7 +26,7 @@ describe("apollo-client tests", () => {
 
     const q = client.query({
       query,
-      variables: { slug: "bar" }
+      variables: { slug: "bar" },
     });
 
     expect(link.findByQuery("AuthorQuery", { slug: "foo" })).toBe(undefined);
@@ -35,7 +35,7 @@ describe("apollo-client tests", () => {
     const data = await q;
 
     expect(data).toMatchObject({
-      data: { author: { name: "bar" } }
+      data: { author: { name: "bar" } },
     });
   });
 
@@ -46,7 +46,7 @@ describe("apollo-client tests", () => {
       client.query({ query, variables: { slug: "1" } }),
       client.query({ query, variables: { slug: "2" } }),
       client.query({ query, variables: { slug: "1" } }),
-      client.query({ query, variables: { slug: "2" } })
+      client.query({ query, variables: { slug: "2" } }),
     ]);
 
     expect(link.filterByQuery("AuthorQuery").length).toBe(2);
@@ -58,7 +58,7 @@ describe("apollo-client tests", () => {
 
     expect(getResolvedQueries(link)).toMatchObject([
       { vars: { slug: "1" } },
-      { vars: { slug: "2" } }
+      { vars: { slug: "2" } },
     ]);
   });
 
@@ -80,7 +80,7 @@ describe("apollo-client tests", () => {
 
     const queries = Promise.all([
       client.query({ query, variables: { slug: "1" } }),
-      client.query({ query, variables: { slug: "2" } })
+      client.query({ query, variables: { slug: "2" } }),
     ]);
 
     await link.findByQuery("AuthorQuery", { slug: "2" }).resolve();
@@ -90,7 +90,7 @@ describe("apollo-client tests", () => {
 
     expect(getResolvedQueries(link)).toMatchObject([
       { vars: { slug: "2" } },
-      { vars: { slug: "1" } }
+      { vars: { slug: "1" } },
     ]);
   });
 });

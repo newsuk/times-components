@@ -3,11 +3,15 @@ import { getMaxSizes } from "../../src/utils";
 export default () => {
   it("returns the maximum height and width from an array of arrays of sizes", () => {
     const biggestValue = 300;
-    const sizes = [[100, biggestValue], [biggestValue, 200], [100, 200]];
+    const sizes = [
+      [100, biggestValue],
+      [biggestValue, 200],
+      [100, 200],
+    ];
 
     expect(getMaxSizes(sizes)).toEqual({
       height: biggestValue,
-      width: biggestValue
+      width: biggestValue,
     });
   });
 

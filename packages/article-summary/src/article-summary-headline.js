@@ -11,7 +11,7 @@ const ArticleSummaryHeadline = ({ className, headline, style }) => (
     style={checkStylesForUnits({
       ...styles.headline,
       ...styles.headlineWrapper,
-      ...style
+      ...style,
     })}
   >
     {headline}
@@ -21,12 +21,12 @@ const ArticleSummaryHeadline = ({ className, headline, style }) => (
 ArticleSummaryHeadline.propTypes = {
   className: PropTypes.string,
   headline: PropTypes.string.isRequired,
-  style: {}
+  style: {},
 };
 
 ArticleSummaryHeadline.defaultProps = {
   className: "",
-  style: {}
+  style: {},
 };
 
 export default ArticleSummaryHeadline;

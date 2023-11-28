@@ -5,7 +5,7 @@ import { CustomGridLayoutProps, CustomStackLayoutProps } from '../types';
 export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
   children,
   marginBlockEnd,
-  className
+  className,
 }) => {
   return (
     <Stack
@@ -16,11 +16,11 @@ export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
         sm: 'wrap',
         md: 'wrap',
         lg: 'nowrap',
-        xl: 'nowrap'
+        xl: 'nowrap',
       }}
       marginInline={{
         xs: 'space045',
-        md: 'space000'
+        md: 'space000',
       }}
       marginBlockEnd={marginBlockEnd || 'space060'}
       // @ts-ignore
@@ -33,7 +33,7 @@ export const CustomStackLayout: React.FC<CustomStackLayoutProps> = ({
 
 export const WrappedStackLayout: React.FC<CustomStackLayoutProps> = ({
   children,
-  marginBlockEnd
+  marginBlockEnd,
 }) => {
   return (
     <Stack
@@ -42,7 +42,7 @@ export const WrappedStackLayout: React.FC<CustomStackLayoutProps> = ({
       wrap="wrap"
       marginInline={{
         xs: 'space045',
-        md: 'space000'
+        md: 'space000',
       }}
       marginBlockEnd={marginBlockEnd || 'space060'}
     >
@@ -52,7 +52,7 @@ export const WrappedStackLayout: React.FC<CustomStackLayoutProps> = ({
 };
 
 export const CustomGridLayout: React.FC<CustomGridLayoutProps> = ({
-  children
+  children,
 }) => {
   return (
     <GridLayout

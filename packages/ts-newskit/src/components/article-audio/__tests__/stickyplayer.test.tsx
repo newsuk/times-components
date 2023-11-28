@@ -6,7 +6,7 @@ import { InArticleAudio, InArticleAudioProps } from '../';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xs')
+  useBreakpointKey: jest.fn().mockReturnValue('xs'),
 }));
 
 afterEach(() => {
@@ -16,13 +16,12 @@ afterEach(() => {
 });
 
 const data = {
-  src:
-    'https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3',
+  src: 'https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3',
   readyToPlayText: 'Listen to article',
   playingText: 'Playing',
   narrator: 'James Marriott',
   headline: 'Article headline',
-  showAudioPlayer: true
+  showAudioPlayer: true,
 };
 
 const renderComponent = (props: InArticleAudioProps) =>
@@ -59,7 +58,7 @@ describe('StickyPlayerMob functions', () => {
 
   test('expands when scrolling text is clicked', async () => {
     const scrollText = screen.queryAllByText(
-      `${data.headline} - ${data.narrator}`
+      `${data.headline} - ${data.narrator}`,
     )[0];
     expect(scrollText).toBeVisible();
     expect(scrollText).toHaveStyle({ width: '240px' });
@@ -73,7 +72,7 @@ describe('StickyPlayerMob functions', () => {
 
   test('minimises expanded panel when collapse button is clicked', async () => {
     const scrollText = screen.queryAllByText(
-      `${data.headline} - ${data.narrator}`
+      `${data.headline} - ${data.narrator}`,
     )[0];
     expect(scrollText).toBeVisible();
 
@@ -87,7 +86,7 @@ describe('StickyPlayerMob functions', () => {
 
   test('minimises expanded panel when outside component is clicked', async () => {
     const scrollText = screen.queryAllByText(
-      `${data.headline} - ${data.narrator}`
+      `${data.headline} - ${data.narrator}`,
     )[0];
     expect(scrollText).toBeVisible();
 

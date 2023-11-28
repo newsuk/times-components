@@ -14,7 +14,7 @@ describe('Logged in Menu Item', () => {
         title="title"
         setSelected={setSelected}
         selected="not title"
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -24,7 +24,7 @@ describe('Logged in Menu Item', () => {
         title="title"
         setSelected={setSelected}
         selected="not title"
-      />
+      />,
     );
     expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #333333');
   });
@@ -34,7 +34,7 @@ describe('Logged in Menu Item', () => {
         title="title"
         setSelected={setSelected}
         selected="title"
-      />
+      />,
     );
     expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #ffffff');
   });
@@ -44,7 +44,7 @@ describe('Logged in Menu Item', () => {
         title="title"
         setSelected={setSelected}
         selected="title"
-      />
+      />,
     );
     const Button = getByRole('button');
     fireEvent.click(Button);

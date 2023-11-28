@@ -10,7 +10,7 @@ import {
   Stack,
   getShadowCssFromTheme,
   getBorderCssFromTheme,
-  getMediaQueryFromTheme
+  getMediaQueryFromTheme,
 } from 'newskit';
 
 const setBlockPadding = (space: string) => ({ paddingBlock: `${space}` });
@@ -18,7 +18,7 @@ const setInlinePadding = (space: string) => ({ paddingInline: `${space}` });
 const setWidth = (size: string) => ({ width: `${size}` });
 const setTopBorderRadius = (radius: string) => ({
   borderTopLeftRadius: `${radius}`,
-  borderTopRightRadius: `${radius}`
+  borderTopRightRadius: `${radius}`,
 });
 
 const scrollText = keyframes`

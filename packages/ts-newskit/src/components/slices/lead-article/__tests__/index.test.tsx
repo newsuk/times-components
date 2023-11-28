@@ -7,7 +7,7 @@ import { useBreakpointKey } from 'newskit';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xs')
+  useBreakpointKey: jest.fn().mockReturnValue('xs'),
 }));
 
 const mockClickHandler = jest.fn();
@@ -17,7 +17,7 @@ const renderComponent = () =>
     <LeadArticle
       article={{ ...leadArticle, imageTop: false }}
       clickHandler={mockClickHandler}
-    />
+    />,
   );
 
 describe('Render Component one', () => {
@@ -56,7 +56,7 @@ describe('Render Component one', () => {
       <LeadArticle
         article={{ ...leadArticle, imageTop: true }}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const tag = queryByText(leadArticle.tag.label);
     expect(tag).toBeVisible();
@@ -68,14 +68,14 @@ describe('Render Component one', () => {
     const leadArticleNoFlags = {
       ...leadArticle,
       tag: undefined,
-      flag: undefined
+      flag: undefined,
     };
 
     const { queryByText } = render(
       <LeadArticle
         article={leadArticleNoFlags}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const tag = queryByText('Tag');
     const flag = queryByText('Flag');
@@ -89,13 +89,13 @@ describe('Render Component one', () => {
       <LeadArticle
         article={{ ...leadArticle, contentTop: true }}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const headline = getByText(leadArticle.headline);
     const cardContainer = headline.closest('div');
 
     expect(cardContainer).toHaveStyle({
-      marginBlockEnd: '16px'
+      marginBlockEnd: '16px',
     });
   });
 
@@ -104,11 +104,11 @@ describe('Render Component one', () => {
       <LeadArticle
         article={{ ...leadArticle }}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const imageElement = getByAltText(leadArticle.headline) as HTMLImageElement;
     expect(imageElement.src).toBe(
-      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750'
+      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750',
     );
   });
 
@@ -119,12 +119,12 @@ describe('Render Component one', () => {
       <LeadArticle
         article={{ ...leadArticle, loadingAspectRatio }}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const imageElement = getByAltText(leadArticle.headline) as HTMLImageElement;
 
     expect(imageElement.src).toBe(
-      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750'
+      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750',
     );
   });
 
@@ -135,12 +135,12 @@ describe('Render Component one', () => {
       <LeadArticle
         article={{ ...leadArticle, loadingAspectRatio }}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const imageElement = getByAltText(leadArticle.headline) as HTMLImageElement;
 
     expect(imageElement.src).toBe(
-      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750'
+      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750',
     );
   });
 
@@ -152,14 +152,14 @@ describe('Render Component one', () => {
       images: {
         ...leadArticle.images,
         caption: '',
-        credits: 'test'
-      }
+        credits: 'test',
+      },
     };
     const { container } = render(
       <LeadArticle
         article={leadStoryDataWithCaption}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
 
     const styledSpan = container.querySelector('span');
@@ -173,14 +173,14 @@ describe('Render Component one', () => {
       images: {
         ...leadArticle.images,
         caption: 'caption',
-        credits: 'test'
-      }
+        credits: 'test',
+      },
     };
     const { container } = render(
       <LeadArticle
         article={{ ...leadStoryDataWithCaption }}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
 
     const styledSpan = container.querySelector('span');
@@ -189,7 +189,7 @@ describe('Render Component one', () => {
   it('should call the clickHandler when clicked', () => {
     const { getByText } = renderComponent();
     fireEvent.click(
-      getByText('Sarcacens an inclusive club? They didnt look out for me')
+      getByText('Sarcacens an inclusive club? They didnt look out for me'),
     );
     expect(mockClickHandler).toHaveBeenCalled();
   });

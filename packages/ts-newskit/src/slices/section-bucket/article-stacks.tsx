@@ -11,7 +11,7 @@ interface ArticleStackProps {
 
 export const ArticleStack: React.FC<ArticleStackProps> = ({
   articles,
-  clickHandler
+  clickHandler,
 }) => {
   return (
     <>
@@ -25,7 +25,7 @@ export const ArticleStack: React.FC<ArticleStackProps> = ({
               article={{
                 ...clearCreditsAndCaption(article),
                 hasTopBorder: articleTopBorder,
-                hideImage: !topArticle
+                hideImage: !topArticle,
               }}
               clickHandler={clickHandler}
             />

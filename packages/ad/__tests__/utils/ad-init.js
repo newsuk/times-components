@@ -112,9 +112,9 @@ export default () => {
     const initSecondRun = adInit(
       merge(initOptions, {
         window: {
-          initCalled: true
-        }
-      })
+          initCalled: true,
+        },
+      }),
     );
 
     jest
@@ -138,7 +138,7 @@ export default () => {
 
   it("reject if ads are disabled", () => {
     const init = adInit(merge(initOptions, { data: { disableAds: true } }));
-    return init.init().then(err => {
+    return init.init().then((err) => {
       expect(err).toEqual("ads disabled");
     });
   });

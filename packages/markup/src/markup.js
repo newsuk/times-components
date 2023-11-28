@@ -33,5 +33,5 @@ export default {
   },
   text(key, { value }) {
     return value;
-  }
+  },
 };

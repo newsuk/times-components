@@ -5,7 +5,7 @@ import { SUBSCRIBER, GUEST } from "./states";
 
 const activeStatesPerUserState = {
   [SUBSCRIBER]: ["isLoggedIn"],
-  [GUEST]: []
+  [GUEST]: [],
 };
 
 const userStatesOptions = [SUBSCRIBER, GUEST];
@@ -22,25 +22,25 @@ function addUserStateKnobs(defaultState = SUBSCRIBER) {
         "Current User State",
         userStatesOptions,
         defaultState,
-        groupId
+        groupId,
       );
       const isShared = boolean("Is Shared", false, groupId);
       const activeStateNames = activeStatesPerUserState[userStateName];
       const activeStates = activeStateNames.reduce(
         (acc, name) => ({
           ...acc,
-          [name]: true
+          [name]: true,
         }),
-        {}
+        {},
       );
 
       return {
         isLoggedIn: false,
         isMetered: false,
         isShared,
-        ...activeStates
+        ...activeStates,
       };
-    }
+    },
   });
 }
 

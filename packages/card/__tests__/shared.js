@@ -8,7 +8,7 @@ import {
   minimalWebTransform,
   print,
   propsNoChildren,
-  replaceTransform
+  replaceTransform,
 } from "@times-components/jest-serializer";
 import shared from "./shared.base";
 
@@ -20,16 +20,16 @@ export default () => {
       print,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => key === "style" || key === "className"
+        (value, key) => key === "style" || key === "className",
       ),
       replaceTransform({
         CardComponent: justChildren,
         CardContent: justChildren,
         Gradient: propsNoChildren,
         Loading: justChildren,
-        TimesImage: propsNoChildren
-      })
-    )
+        TimesImage: propsNoChildren,
+      }),
+    ),
   );
 
   shared(mount);

@@ -11,11 +11,11 @@ describe("The minimal serializer should", () => {
     it("not remove className", () => {
       const styles = {
         colored: {
-          color: "red"
+          color: "red",
         },
         padded: {
-          padding: 1
-        }
+          padding: 1,
+        },
       };
 
       const component = (

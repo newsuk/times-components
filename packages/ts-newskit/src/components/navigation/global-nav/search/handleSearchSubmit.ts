@@ -1,6 +1,6 @@
 export const handleSearchSubmit = (
   source: 'desktop' | 'mobile',
-  searchText: string
+  searchText: string,
 ) => {
   window.location.href = `/search?source=nav-${source}&q=${searchText}`;
 };

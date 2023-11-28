@@ -1,6 +1,6 @@
 import { withTrackEvents } from "@times-components/tracking";
 
-export default Component =>
+export default (Component) =>
   withTrackEvents(Component, {
     analyticsEvents: [
       {
@@ -8,9 +8,9 @@ export default Component =>
         eventName: "onAuthorPress",
         getAttrs: ({ name, slug }) => ({
           name,
-          slug
+          slug,
         }),
-        trackingName: "ArticlePressAuthor"
-      }
-    ]
+        trackingName: "ArticlePressAuthor",
+      },
+    ],
   });

@@ -7,7 +7,7 @@ describe('HintButton', () => {
   const onClick = jest.fn();
   it('should render the HintButton component', () => {
     const { asFragment } = render(
-      <HintButton onClick={onClick} disabled={false} />
+      <HintButton onClick={onClick} disabled={false} />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -19,7 +19,7 @@ describe('HintButton', () => {
         title="Custom Title"
         onClick={onClickHandler}
         disabled={false}
-      />
+      />,
     );
     expect(getByText('Custom Title')).toBeInTheDocument();
   });
@@ -27,7 +27,7 @@ describe('HintButton', () => {
   it('should display a default title if title prop is not provided', () => {
     const onClickHandler = jest.fn();
     const { getByText } = render(
-      <HintButton onClick={onClickHandler} disabled={false} />
+      <HintButton onClick={onClickHandler} disabled={false} />,
     );
     expect(getByText('Give me a hint')).toBeInTheDocument();
   });
@@ -35,7 +35,7 @@ describe('HintButton', () => {
   it('should trigger the onClick function when clicked', () => {
     const onClickHandler = jest.fn();
     const { getByText } = render(
-      <HintButton onClick={onClickHandler} disabled={false} />
+      <HintButton onClick={onClickHandler} disabled={false} />,
     );
     fireEvent.click(getByText('Give me a hint'));
     expect(onClickHandler).toHaveBeenCalledTimes(1);
@@ -44,7 +44,7 @@ describe('HintButton', () => {
   it('should disable the button when disabled prop is true', () => {
     const onClickHandler = jest.fn();
     const { getByTestId } = render(
-      <HintButton onClick={onClickHandler} disabled={true} />
+      <HintButton onClick={onClickHandler} disabled={true} />,
     );
     const button = getByTestId('button');
     expect(button).toHaveAttribute('disabled');

@@ -11,10 +11,10 @@ const { fragmentMatcher } = require("@times-components/schema");
 const { InMemoryCache } = require("apollo-cache-inmemory");
 const {
   default: tealiumReporter,
-  TealiumSendScheduler
+  TealiumSendScheduler,
 } = require("@times-components/tealium");
 
-const makeClient = options => {
+const makeClient = (options) => {
   if (!options.uri) {
     throw new Error("API endpoint is empty");
   }
@@ -28,7 +28,7 @@ const makeClient = options => {
       return fetch(compressedUrl, opts);
     },
     headers: options.headers ? { ...options.headers } : {},
-    uri: options.uri
+    uri: options.uri,
   };
 
   if (options.useGET) {
@@ -51,24 +51,24 @@ const makeClient = options => {
     [
       options.usePersistedQueries &&
         createPersistedQueryLink({ useGETForHashedQueries: true }),
-      createHttpLink(networkInterfaceOptions)
-    ].filter(Boolean)
+      createHttpLink(networkInterfaceOptions),
+    ].filter(Boolean),
   );
 
   return new ApolloClient({
     name: `@times-components/ssr/client (${options.clientName || "unknown"})`,
     cache: new InMemoryCache({ fragmentMatcher }).restore(
-      options.initialState || {}
+      options.initialState || {},
     ),
-    link
+    link,
   });
 };
 
-const makeAnalyticsStream = options => {
+const makeAnalyticsStream = (options) => {
   const tealiumSendScheduler = new TealiumSendScheduler(
     options.tracking,
     window,
-    document
+    document,
   );
   const reporter = tealiumReporter(tealiumSendScheduler);
   return reporter.analytics;
@@ -82,11 +82,11 @@ module.exports = (component, clientOptions, data) => {
     headers: clientOptions.headers,
     usePersistedQueries: window.nuk.graphqlapi.usePersistedQueries,
     skipAuthorization: clientOptions.skipAuthorization,
-    clientName: window.nuk.graphqlapi.clientName
+    clientName: window.nuk.graphqlapi.clientName,
   });
 
   const reporterOptions = {
-    tracking: window.nuk.tracking
+    tracking: window.nuk.tracking,
   };
   const analyticsStream = makeAnalyticsStream(reporterOptions);
 

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const numberOrString = PropTypes.oneOfType([
   PropTypes.string,
-  PropTypes.number
+  PropTypes.number,
 ]);
 
 export const propTypes = {
@@ -14,11 +14,11 @@ export const propTypes = {
   policyKey: PropTypes.string.isRequired,
   poster: PropTypes.shape({ uri: PropTypes.string.isRequired }),
   videoId: PropTypes.string.isRequired,
-  width: numberOrString.isRequired
+  width: numberOrString.isRequired,
 };
 
 export const defaultProps = {
   is360: false,
   playerId: "default",
-  poster: null
+  poster: null,
 };

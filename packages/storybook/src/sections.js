@@ -28,7 +28,7 @@ const sections = [
   "Today's Magazines",
   "Travel",
   "Weekend",
-  "World"
+  "World",
 ];
 
 export default sections;

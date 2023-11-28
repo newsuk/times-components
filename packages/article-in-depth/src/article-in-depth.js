@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import ArticleSkeleton, {
-  ArticleKeylineItem
+  ArticleKeylineItem,
 } from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import { CentredCaption } from "@times-components/caption";
@@ -8,7 +8,7 @@ import Meta from "./article-meta/article-meta";
 import ArticleHeader from "./article-header/article-header";
 import {
   articleDefaultProps,
-  articlePropTypes
+  articlePropTypes,
 } from "./article-prop-types/article-prop-types";
 import styles from "./styles";
 import { LeadAsset } from "./styles/responsive";
@@ -33,7 +33,7 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst,
       textColour,
-      updatedTime
+      updatedTime,
     } = article;
 
     return (
@@ -78,7 +78,7 @@ class ArticlePage extends Component {
       commentingConfig,
       isPreview,
       swgProductId,
-      storefrontConfig
+      storefrontConfig,
     } = this.props;
 
     if (error || isLoading) {

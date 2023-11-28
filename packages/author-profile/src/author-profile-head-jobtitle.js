@@ -8,7 +8,7 @@ import { AuthorProfileHeadJobTitleContainer } from "./styles/responsive";
 const AuthorProfileHeadJobTitle = ({
   jobTitle,
   contractualTitle,
-  isLargeDevice
+  isLargeDevice,
 }) => (
   <div style={checkStylesForUnits(styles.jobTitleContainer)}>
     <AuthorProfileHeadJobTitleContainer
@@ -30,11 +30,11 @@ const AuthorProfileHeadJobTitle = ({
 AuthorProfileHeadJobTitle.propTypes = {
   jobTitle: PropTypes.string.isRequired,
   contractualTitle: PropTypes.string,
-  isLargeDevice: PropTypes.bool.isRequired
+  isLargeDevice: PropTypes.bool.isRequired,
 };
 
 AuthorProfileHeadJobTitle.defaultProps = {
-  contractualTitle: ""
+  contractualTitle: "",
 };
 
 export default AuthorProfileHeadJobTitle;

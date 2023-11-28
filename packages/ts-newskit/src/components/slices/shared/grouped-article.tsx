@@ -14,16 +14,16 @@ export interface GroupedArticleProps {
 
 export const GroupedArticle = ({
   articles,
-  clickHandler
+  clickHandler,
 }: GroupedArticleProps) => {
-  const modifiedGroupedArticles = articles.map(article => ({
+  const modifiedGroupedArticles = articles.map((article) => ({
     ...article,
     hasTopBorder: false,
     headlineTypographyPreset: {
       xs: 'editorialHeadline030',
-      md: 'editorialHeadline020'
+      md: 'editorialHeadline020',
     },
-    hideImage: true
+    hideImage: true,
   }));
 
   return (
@@ -39,12 +39,12 @@ export const GroupedArticle = ({
                     marginBlock="space040"
                     paddingInline={{
                       xs: 'space045',
-                      md: 'space000'
+                      md: 'space000',
                     }}
                   >
                     <Divider
                       overrides={{
-                        stylePreset: 'dashedDivider'
+                        stylePreset: 'dashedDivider',
                       }}
                     />
                   </FullWidthBlock>
@@ -52,7 +52,7 @@ export const GroupedArticle = ({
                 <LeadArticle article={article} clickHandler={clickHandler} />
               </React.Fragment>
             );
-          }
+          },
         )}
       </GridLayout>
     </Block>

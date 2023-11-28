@@ -2,19 +2,19 @@ import { Block, Divider, Visible } from 'newskit';
 import React from 'react';
 import {
   LeadArticle,
-  LeadArticleProps
+  LeadArticleProps,
 } from '../../components/slices/lead-article';
 import { Article, ArticleProps } from '../../components/slices/article';
 import {
   StackItem,
   LeadStoryDivider,
   BlockItem,
-  LeadStoryContainer
+  LeadStoryContainer,
 } from '../shared-styles';
 import { ArticleStackLeadStory, ArticleStackSmall } from '../shared';
 import {
   FullWidthBlock,
-  FullWidthHidden
+  FullWidthHidden,
 } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
@@ -39,7 +39,7 @@ export const LeadStory1 = ({
   smallArticles,
   singleArticle,
   articlesWithListItems,
-  clickHandler
+  clickHandler,
 }: LeadStory1Props) => {
   const modifiedArticlesWithUnorderedList = {
     ...articlesWithListItems,
@@ -47,9 +47,9 @@ export const LeadStory1 = ({
     textBlockMarginBlockStart: 'space050',
     headlineTypographyPreset: {
       xs: 'editorialHeadline040',
-      md: 'editorialHeadline060'
+      md: 'editorialHeadline060',
     },
-    imageTop: true
+    imageTop: true,
   };
 
   const modifiedLeadArticle = {
@@ -59,8 +59,8 @@ export const LeadStory1 = ({
     isLeadImage: true,
     headlineTypographyPreset: {
       xs: 'editorialHeadline040',
-      md: 'editorialHeadline020'
-    }
+      md: 'editorialHeadline020',
+    },
   };
 
   const modifiedSingleArticle = {
@@ -68,8 +68,8 @@ export const LeadStory1 = ({
     hideImage: true,
     titleTypographyPreset: {
       xs: 'editorialHeadline030',
-      md: 'editorialHeadline020'
-    }
+      md: 'editorialHeadline020',
+    },
   };
 
   const marginTop = singleArticle
@@ -83,11 +83,11 @@ export const LeadStory1 = ({
       <StackItem
         marginBlockEnd={{
           xs: 'space040',
-          md: 'space000'
+          md: 'space000',
         }}
         $width={{
           xs: '100%',
-          md: '260px'
+          md: '260px',
         }}
       >
         <LeadArticle
@@ -100,7 +100,7 @@ export const LeadStory1 = ({
             <FullWidthBlock
               paddingInline={{
                 xs: 'space045',
-                md: 'space000'
+                md: 'space000',
               }}
             >
               <Divider
@@ -109,7 +109,7 @@ export const LeadStory1 = ({
                   marginBlockStart: !!articlesWithListItems.listData
                     ? 'space020'
                     : 'space040',
-                  marginBlockEnd: 'space040'
+                  marginBlockEnd: 'space040',
                 }}
               />
             </FullWidthBlock>
@@ -124,14 +124,14 @@ export const LeadStory1 = ({
             <FullWidthBlock
               paddingInline={{
                 xs: 'space045',
-                md: 'space000'
+                md: 'space000',
               }}
             >
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
                   marginBlockStart: marginTop,
-                  marginBlockEnd: 'space040'
+                  marginBlockEnd: 'space040',
                 }}
               />
             </FullWidthBlock>
@@ -144,26 +144,26 @@ export const LeadStory1 = ({
           xs: '100%',
           md: '428px',
           lg: '465px',
-          xl: '550px'
+          xl: '550px',
         }}
         marginInlineStart={{
-          md: 'space060'
+          md: 'space060',
         }}
         marginInlineEnd={{
-          lg: 'space060'
+          lg: 'space060',
         }}
       >
         <FullWidthHidden md lg xl>
           <FullWidthBlock
             paddingInline={{
               xs: 'space045',
-              md: 'space000'
+              md: 'space000',
             }}
           >
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
-                marginBlockEnd: 'space040'
+                marginBlockEnd: 'space040',
               }}
             />
           </FullWidthBlock>
@@ -183,7 +183,7 @@ export const LeadStory1 = ({
           <Visible md lg xl>
             <LeadStoryDivider
               overrides={{
-                stylePreset: 'lightDivider'
+                stylePreset: 'lightDivider',
               }}
               vertical
               position="left"
@@ -191,7 +191,7 @@ export const LeadStory1 = ({
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
-                marginBlock: 'space040'
+                marginBlock: 'space040',
               }}
             />
             <ArticleStackSmall
@@ -205,7 +205,7 @@ export const LeadStory1 = ({
               articleOptions={{
                 isFullWidth: true,
                 hasTopBorder: true,
-                hideImage: true
+                hideImage: true,
               }}
               clickHandler={clickHandler}
             />

@@ -9,23 +9,17 @@ const validateEvents = (events, componentName) => {
   events.forEach((e, i) => {
     if (e.eventName === undefined) {
       throw new Error(
-        `WithTrackEvents(${componentName}): Missing eventName at position ${i}, actionName ${
-          e.actionName
-        }`
+        `WithTrackEvents(${componentName}): Missing eventName at position ${i}, actionName ${e.actionName}`,
       );
     }
     if (e.actionName === undefined) {
       throw new Error(
-        `WithTrackEvents(${componentName}): Missing actionName at position ${i}, eventName ${
-          e.eventName
-        }`
+        `WithTrackEvents(${componentName}): Missing actionName at position ${i}, eventName ${e.eventName}`,
       );
     }
     if (nameMap.has(e.eventName)) {
       throw new Error(
-        `WithTrackEvents(${componentName}): Event ${
-          e.eventName
-        } was tracked multiple times`
+        `WithTrackEvents(${componentName}): Event ${e.eventName} was tracked multiple times`,
       );
     }
     nameMap.add(e.eventName);
@@ -46,8 +40,8 @@ export default (WrappedComponent, { analyticsEvents = [] } = {}) => {
           tracking.analytics({
             action: actionName,
             attrs,
-            component: trackingName || componentName
-          })
+            component: trackingName || componentName,
+          }),
       );
     }
 
@@ -55,7 +49,7 @@ export default (WrappedComponent, { analyticsEvents = [] } = {}) => {
       return eventNames.reduce(
         (
           wrappedFuncProps,
-          { eventName, actionName, getAttrs, trackingName }
+          { eventName, actionName, getAttrs, trackingName },
         ) => {
           const funcWrapped = (...args) => {
             const attrs = resolveAttrs(getAttrs, this.props, args);
@@ -65,17 +59,17 @@ export default (WrappedComponent, { analyticsEvents = [] } = {}) => {
 
           return {
             ...wrappedFuncProps,
-            [eventName]: funcWrapped
+            [eventName]: funcWrapped,
           };
         },
-        {}
+        {},
       );
     }
 
     render() {
       const wrappedProps = {
         ...this.props,
-        ...this.wrappedAnalyticsEvents
+        ...this.wrappedAnalyticsEvents,
       };
 
       return <WrappedComponent {...wrappedProps} />;

@@ -17,7 +17,7 @@ class DOMContext extends Component {
       el: this.div,
       eventCallback: this.eventCallback,
       platform: "web",
-      window
+      window,
     });
 
     if (this.adInit && this.adInit.init) {
@@ -36,7 +36,7 @@ class DOMContext extends Component {
   eventCallback = (type, detail) => {
     this.eventQueue.push({
       detail,
-      type
+      type,
     });
     this.processEventQueue();
   };
@@ -69,7 +69,7 @@ class DOMContext extends Component {
     const { width } = this.props;
     return (
       <div
-        ref={div => {
+        ref={(div) => {
           this.div = div;
         }}
         style={{ height: "auto", overflow: "hidden", width }}

@@ -3,7 +3,7 @@ import Context from "@times-components/context";
 import { checkStylesForUnits } from "@times-components/utils";
 import {
   ArticleFlags,
-  UpdatedTimeProvider
+  UpdatedTimeProvider,
 } from "@times-components/ts-components";
 import { fontsWithFallback } from "@times-components/ts-styleguide";
 import Label from "../article-label/article-label";
@@ -11,21 +11,21 @@ import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
 import {
   articleHeaderPropTypes,
-  articleHeaderDefaultProps
+  articleHeaderDefaultProps,
 } from "./article-header-prop-types";
 import styles from "../styles";
 
 import {
   FlagsContainer,
   HeaderContainer,
-  HeadlineContainer
+  HeadlineContainer,
 } from "../styles/responsive";
 
 const headlineContainerStyles = (headlineFont, headlineCase) =>
   checkStylesForUnits({
     ...styles.articleHeadline,
     fontFamily: headlineFont ? fontsWithFallback[headlineFont] : null,
-    textTransform: headlineCase || null
+    textTransform: headlineCase || null,
   });
 
 const ArticleHeader = ({
@@ -37,7 +37,7 @@ const ArticleHeader = ({
   publicationName,
   publishedTime,
   standfirst,
-  updatedTime
+  updatedTime,
 }) => (
   <Context.Consumer>
     {({ theme: { headlineFont, headlineCase } }) => (

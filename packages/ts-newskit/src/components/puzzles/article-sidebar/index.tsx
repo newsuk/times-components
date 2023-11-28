@@ -8,7 +8,7 @@ import {
   CardLink,
   Divider,
   Stack,
-  IconButton
+  IconButton,
 } from 'newskit';
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
@@ -23,7 +23,7 @@ export interface ArticleSideBarProps {
 export const ArticleSidebar: FC<ArticleSideBarProps> = ({
   sectionTitle,
   data,
-  pageLink
+  pageLink,
 }) => {
   return (
     <Block stylePreset="sidebarCard" paddingBlockStart="space030">
@@ -32,7 +32,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
           <StyledCardComposable
             overrides={{
               marginBlockEnd: 'space030',
-              stylePreset: 'cardTitleIcon'
+              stylePreset: 'cardTitleIcon',
             }}
           >
             <CardLink external={false} expand href={pageLink} />
@@ -45,7 +45,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
                 overrides={{
                   stylePreset: 'iconPreset',
                   width: 'sizing050',
-                  height: 'sizing050'
+                  height: 'sizing050',
                 }}
               >
                 <NewsKitChevronRightIcon />
@@ -73,7 +73,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
             columns="0fr 1fr"
             overrides={{
               stylePreset: 'transparentCard',
-              marginBlockStart: 'space040'
+              marginBlockStart: 'space040',
             }}
             areas={`
            media content          
@@ -86,8 +86,8 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
                 alt: 'Puzzle thumbnail',
                 placeholderIcon: true,
                 overrides: {
-                  marginInlineEnd: 'space040'
-                }
+                  marginInlineEnd: 'space040',
+                },
               }}
             />
             <CardLink external={false} expand href={url} />
@@ -100,7 +100,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
           <Divider
             overrides={{
               marginBlock: 'space040',
-              stylePreset: 'dashedDivider'
+              stylePreset: 'dashedDivider',
             }}
           />
         </>

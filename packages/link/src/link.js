@@ -5,16 +5,18 @@ import { breakpoints } from "@times-components/ts-styleguide";
 
 import {
   handleOnClickScrollTo,
-  handleHrefScrollTo
+  handleHrefScrollTo,
 } from "@times-components/utils";
 
 import PropTypes from "prop-types";
 
-const respStylesSelector = selector => ({ responsiveLinkStyles }) =>
-  (responsiveLinkStyles && responsiveLinkStyles[selector]) || "";
+const respStylesSelector =
+  (selector) =>
+  ({ responsiveLinkStyles }) =>
+    (responsiveLinkStyles && responsiveLinkStyles[selector]) || "";
 
 const RespLink = styled.a`
-  text-decoration: ${props =>
+  text-decoration: ${(props) =>
     props.underlined && props.responsiveLinkStyles ? "underline" : "none"};
 
   ${respStylesSelector("base")};
@@ -30,17 +32,17 @@ const Link = ({
   onPress = () => {},
   target = null,
   underlined = true,
-  responsiveLinkStyles = null
+  responsiveLinkStyles = null,
 }) => {
   const props = {
     underlined,
     target,
-    responsiveLinkStyles
+    responsiveLinkStyles,
   };
 
   return (
     <RespLink
-      onClick={event => {
+      onClick={(event) => {
         handleOnClickScrollTo(event, url);
         onPress(event);
       }}
@@ -60,8 +62,8 @@ Link.propTypes = {
   underlined: PropTypes.bool,
   responsiveLinkStyles: PropTypes.shape({
     base: PropTypes.string,
-    medium: PropTypes.string
-  })
+    medium: PropTypes.string,
+  }),
 };
 
 export default Link;

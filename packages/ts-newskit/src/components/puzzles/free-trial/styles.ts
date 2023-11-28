@@ -5,7 +5,7 @@ import {
   getMediaQueryFromTheme,
   StackProps,
   Block,
-  TextBlock
+  TextBlock,
 } from 'newskit';
 import IconD2 from '../../../assets/IconD2';
 import IconA4 from '../../../assets/IconA4';

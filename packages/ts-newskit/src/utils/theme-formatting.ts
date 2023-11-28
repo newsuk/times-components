@@ -13,30 +13,30 @@ export const updateThemeTypography = (themeObj: Theme) => {
 
     // Update Borders
     themeObj.borders = Object.fromEntries(
-      Object.entries(themeObj.borders).map(border => {
+      Object.entries(themeObj.borders).map((border) => {
         const updatedVal =
           typeof border[1] === 'string' && border[1].includes('rem')
             ? modifyBaseRemValue(1.6, border[1])
             : border[1];
 
         return [border[0], updatedVal];
-      })
+      }),
     );
 
     // Update Font Sizes
     themeObj.fonts = Object.fromEntries(
-      Object.entries(themeObj.fonts).map(font => {
+      Object.entries(themeObj.fonts).map((font) => {
         const updatedVal =
           typeof font[1] === 'string' && font[1].includes('rem')
             ? modifyBaseRemValue(1.6, font[1])
             : font[1];
 
         return [font[0], updatedVal];
-      })
+      }),
     );
 
     // Update Typography Presets
-    Object.values(themeObj.typographyPresets).map(preset => {
+    Object.values(themeObj.typographyPresets).map((preset) => {
       preset.fontSize =
         typeof preset.fontSize === 'string' && preset.fontSize.includes('rem')
           ? modifyBaseRemValue(1.6, preset.fontSize)
@@ -49,13 +49,13 @@ export const updateThemeTypography = (themeObj: Theme) => {
 
 export const addOverride = (
   updatedThemeObj: Theme,
-  themeOverrides: ThemeBase
+  themeOverrides: ThemeBase,
 ) => {
-  Object.entries(themeOverrides).forEach(themeOverride => {
+  Object.entries(themeOverrides).forEach((themeOverride) => {
     const [key, value] = themeOverride;
     updatedThemeObj[key as keyof ThemeBase] = {
       ...updatedThemeObj[key as keyof ThemeBase],
-      ...value
+      ...value,
     };
   });
 
@@ -64,14 +64,14 @@ export const addOverride = (
 
 export const formatThemeOverrides = (
   themeObj: Theme,
-  themeOverrides?: ThemeBase
+  themeOverrides?: ThemeBase,
 ) => {
   const breakpoints = {
     xs: 0,
     sm: 520,
     md: 768,
     lg: 1024,
-    xl: 1320
+    xl: 1320,
   };
 
   const updatedThemeTypography = updateThemeTypography(themeObj);
@@ -86,7 +86,7 @@ export const formatThemeOverrides = (
   return {
     overrides: {
       ...updatedThemeTypography,
-      ...addOverrides
-    }
+      ...addOverrides,
+    },
   };
 };

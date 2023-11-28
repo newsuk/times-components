@@ -6,16 +6,16 @@ export default [
           {
             attributes: {
               value:
-                "Q Some years ago I made the decision to take as a friend a woman who is very opinionated."
+                "Q Some years ago I made the decision to take as a friend a woman who is very opinionated.",
             },
             children: [],
-            name: "text"
-          }
+            name: "text",
+          },
         ],
-        name: "bold"
-      }
+        name: "bold",
+      },
     ],
-    name: "paragraph"
+    name: "paragraph",
   },
   {
     children: [
@@ -23,15 +23,15 @@ export default [
         children: [
           {
             attributes: {
-              value: "When she does come to social events, she dominates."
+              value: "When she does come to social events, she dominates.",
             },
             children: [],
-            name: "text"
-          }
+            name: "text",
+          },
         ],
-        name: "bold"
-      }
+        name: "bold",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];

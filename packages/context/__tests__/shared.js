@@ -3,13 +3,15 @@ import TestRenderer from "react-test-renderer";
 import { scales } from "@times-components/ts-styleguide";
 import Context, {
   ContextProviderWithDefaults,
-  SectionContext
+  SectionContext,
 } from "../src/context";
 
 export default () => {
   it("article context with default values", () => {
     const testInstance = TestRenderer.create(
-      <Context.Consumer>{context => JSON.stringify(context)}</Context.Consumer>
+      <Context.Consumer>
+        {(context) => JSON.stringify(context)}
+      </Context.Consumer>,
     );
 
     expect(testInstance).toMatchSnapshot();
@@ -24,9 +26,9 @@ export default () => {
         value={{ theme: { scale, sectionColour }, user: { isLoggedIn } }}
       >
         <Context.Consumer>
-          {context => JSON.stringify(context)}
+          {(context) => JSON.stringify(context)}
         </Context.Consumer>
-      </Context.Provider>
+      </Context.Provider>,
     );
 
     expect(testInstance).toMatchSnapshot();
@@ -35,8 +37,8 @@ export default () => {
   it("section context with default values", () => {
     const testInstance = TestRenderer.create(
       <SectionContext.Consumer>
-        {context => JSON.stringify(context)}
-      </SectionContext.Consumer>
+        {(context) => JSON.stringify(context)}
+      </SectionContext.Consumer>,
     );
 
     expect(testInstance).toMatchSnapshot();
@@ -51,14 +53,14 @@ export default () => {
           recentlyOpenedPuzzleCount: 123,
           savedArticles: {
             "dummy-article-id-1": true,
-            "dummy-article-id-2": true
-          }
+            "dummy-article-id-2": true,
+          },
         }}
       >
         <SectionContext.Consumer>
-          {context => JSON.stringify(context)}
+          {(context) => JSON.stringify(context)}
         </SectionContext.Consumer>
-      </SectionContext.Provider>
+      </SectionContext.Provider>,
     );
 
     expect(testInstance).toMatchSnapshot();
@@ -74,9 +76,9 @@ export default () => {
           value={{ theme: { scale, sectionColour }, user: { isLoggedIn } }}
         >
           <Context.Consumer>
-            {context => JSON.stringify(context)}
+            {(context) => JSON.stringify(context)}
           </Context.Consumer>
-        </ContextProviderWithDefaults>
+        </ContextProviderWithDefaults>,
       );
 
       expect(testInstance).toMatchSnapshot();

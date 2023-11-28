@@ -5,7 +5,7 @@ const { ApolloProvider } = require("react-apollo");
 const { HelmetProvider } = require("react-helmet-async");
 const { TopicProvider } = require("@times-components/provider/rnw");
 const {
-  ContextProviderWithDefaults
+  ContextProviderWithDefaults,
 } = require("@times-components/context/rnw");
 const { scales } = require("@times-components/ts-styleguide/rnw");
 const Topic = require("@times-components/topic/rnw").default;
@@ -20,7 +20,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     makeTopicUrl,
     page,
     pageSize,
-    topicSlug
+    topicSlug,
   } = data;
 
   return React.createElement(
@@ -35,7 +35,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
           debounceTimeMs,
           page,
           pageSize,
-          slug: topicSlug
+          slug: topicSlug,
         },
         ({ isLoading, error, refetch, topic }) =>
           React.createElement(
@@ -44,8 +44,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               value: {
                 makeArticleUrl,
                 makeTopicUrl,
-                theme: { scale, sectionColour }
-              }
+                theme: { scale, sectionColour },
+              },
             },
             React.createElement(Topic, {
               analyticsStream,
@@ -57,10 +57,10 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               pageSize,
               refetch,
               slug: topicSlug,
-              topic
-            })
-          )
-      )
-    )
+              topic,
+            }),
+          ),
+      ),
+    ),
   );
 };

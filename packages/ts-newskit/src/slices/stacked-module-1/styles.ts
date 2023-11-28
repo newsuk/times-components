@@ -2,7 +2,7 @@ import {
   GridLayout,
   getMediaQueryFromTheme,
   getSpacingCssFromTheme,
-  styled
+  styled,
 } from 'newskit';
 
 export const ArticleGrid = styled(GridLayout)<{

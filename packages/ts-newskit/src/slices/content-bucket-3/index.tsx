@@ -7,7 +7,7 @@ import {
   LeadStoryDivider,
   StackItem,
   BlockItem,
-  ArticleDivider
+  ArticleDivider,
 } from '../shared-styles';
 
 import { CommentStack } from '../shared/comment-stack';
@@ -30,7 +30,7 @@ export const ContentBucket3 = ({
   leadArticleRight,
   comments,
   articles,
-  clickHandler
+  clickHandler,
 }: ContentBucket3Props) => {
   const modifiedleadArticleLeft = {
     ...leadArticleLeft,
@@ -39,8 +39,8 @@ export const ContentBucket3 = ({
     titleTypographyPreset: {
       xs: 'editorialHeadline040',
       md: 'editorialHeadline020',
-      lg: 'editorialHeadline030'
-    }
+      lg: 'editorialHeadline030',
+    },
   };
 
   const modifiedleadArticleRight = {
@@ -51,8 +51,8 @@ export const ContentBucket3 = ({
     tagAndFlagMarginBlockStart: { xs: 'space030', md: 'space040' },
     titleTypographyPreset: {
       xs: 'editorialHeadline020',
-      lg: 'editorialHeadline030'
-    }
+      lg: 'editorialHeadline030',
+    },
   };
 
   return (
@@ -62,10 +62,10 @@ export const ContentBucket3 = ({
           xs: '100%',
           md: '720px',
           lg: '760px',
-          xl: '840px'
+          xl: '840px',
         }}
         marginInlineEnd={{
-          lg: 'space060'
+          lg: 'space060',
         }}
       >
         <LeadStoryDivider
@@ -78,7 +78,7 @@ export const ContentBucket3 = ({
             <GridLayout
               columns={{
                 xs: '1fr',
-                md: '1fr 1px 1fr'
+                md: '1fr 1px 1fr',
               }}
               columnGap={{ md: 'space040' }}
               rowGap="space040"
@@ -111,22 +111,22 @@ export const ContentBucket3 = ({
           xs: '100%',
           md: '720px',
           lg: '185px',
-          xl: '402px'
+          xl: '402px',
         }}
       >
         <FullWidthHidden lg xl>
           <Divider
             overrides={{
               marginBlock: 'space040',
-              stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' }
+              stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' },
             }}
           />
         </FullWidthHidden>
         <BlockItem>
           <ArticleStack
-            articles={articles.map(article => ({
+            articles={articles.map((article) => ({
               ...article,
-              topBorderStyle: { xs: 'lightDashedDivider', md: 'dashedDivider' }
+              topBorderStyle: { xs: 'lightDashedDivider', md: 'dashedDivider' },
             }))}
             clickHandler={clickHandler}
             isContentBucket3
@@ -139,7 +139,7 @@ export const ContentBucket3 = ({
             xs: '100%',
             md: '720px',
             lg: '976px',
-            xl: '1276px'
+            xl: '1276px',
           }}
         >
           <CommentStack comments={comments} clickHandler={clickHandler} />

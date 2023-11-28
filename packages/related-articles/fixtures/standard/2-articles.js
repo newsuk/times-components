@@ -12,14 +12,14 @@ const defaultFirstSummary105 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 const defaultFirstSummary125 = [
   {
@@ -27,14 +27,14 @@ const defaultFirstSummary125 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 const defaultFirstSummary145 = [
   {
@@ -42,14 +42,14 @@ const defaultFirstSummary145 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 const defaultFirstSummary160 = [
   {
@@ -57,14 +57,14 @@ const defaultFirstSummary160 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 const defaultFirstSummary175 = [
   {
@@ -72,14 +72,14 @@ const defaultFirstSummary175 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 const defaultFirstSummary225 = [
   {
@@ -87,14 +87,14 @@ const defaultFirstSummary225 = [
       {
         attributes: {
           value:
-            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the"
+            "Napoleon Bonaparte flaunted it to whip up enthusiasm for invading England. Heinrich Himmler tried to grab it for Nazi Germany and Britain failed to borrow it to celebrate the Coronation in 1953. Now the Bayeux Tapestry, the",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 const defaultFirstTitle =
   "The tapestry has had a purpose-built home since 1983, having once been kept at Bayeux Cathedral";
@@ -112,31 +112,31 @@ const defaultSecondSummary105 = [
   {
     attributes: {
       value:
-        "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+        "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by ",
     },
     children: [],
-    name: "text"
+    name: "text",
   },
   {
     attributes: {},
     children: [
       {
         attributes: {
-          value: "The Times"
+          value: "The Times",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "italic"
+    name: "italic",
   },
   {
     attributes: {
-      value: ", is"
+      value: ", is",
     },
     children: [],
-    name: "text"
-  }
+    name: "text",
+  },
 ];
 const defaultSecondSummary125 = [
   {
@@ -145,34 +145,34 @@ const defaultSecondSummary125 = [
       {
         attributes: {
           value:
-            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by ",
         },
         children: [],
-        name: "text"
+        name: "text",
       },
       {
         attributes: {},
         children: [
           {
             attributes: {
-              value: "The Times"
+              value: "The Times",
             },
             children: [],
-            name: "text"
-          }
+            name: "text",
+          },
         ],
-        name: "italic"
+        name: "italic",
       },
       {
         attributes: {
-          value: ", is expected to be to the"
+          value: ", is expected to be to the",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 const defaultSecondSummary145 = [
   {
@@ -181,39 +181,39 @@ const defaultSecondSummary145 = [
       {
         attributes: {
           value:
-            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by ",
         },
         children: [],
-        name: "text"
+        name: "text",
       },
       {
         attributes: {},
         children: [
           {
             attributes: {
-              value: "The Times"
+              value: "The Times",
             },
             children: [],
-            name: "text"
-          }
+            name: "text",
+          },
         ],
-        name: "italic"
+        name: "italic",
       },
       {
         attributes: {
-          value: ", is expected to be to the British Museum in 2022"
+          value: ", is expected to be to the British Museum in 2022",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
+    name: "paragraph",
   },
   {
     attributes: {},
     children: [],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 const defaultSecondSummary160 = [
   {
@@ -222,47 +222,47 @@ const defaultSecondSummary160 = [
       {
         attributes: {
           value:
-            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by ",
         },
         children: [],
-        name: "text"
+        name: "text",
       },
       {
         attributes: {},
         children: [
           {
             attributes: {
-              value: "The Times"
+              value: "The Times",
             },
             children: [],
-            name: "text"
-          }
+            name: "text",
+          },
         ],
-        name: "italic"
+        name: "italic",
       },
       {
         attributes: {
-          value: ", is expected to be to the British Museum in 2022."
+          value: ", is expected to be to the British Museum in 2022.",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
+    name: "paragraph",
   },
   {
     attributes: {},
     children: [
       {
         attributes: {
-          value: "Although the"
+          value: "Although the",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 const defaultSecondSummary175 = [
   {
@@ -271,47 +271,47 @@ const defaultSecondSummary175 = [
       {
         attributes: {
           value:
-            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by ",
         },
         children: [],
-        name: "text"
+        name: "text",
       },
       {
         attributes: {},
         children: [
           {
             attributes: {
-              value: "The Times"
+              value: "The Times",
             },
             children: [],
-            name: "text"
-          }
+            name: "text",
+          },
         ],
-        name: "italic"
+        name: "italic",
       },
       {
         attributes: {
-          value: ", is expected to be to the British Museum in 2022."
+          value: ", is expected to be to the British Museum in 2022.",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
+    name: "paragraph",
   },
   {
     attributes: {},
     children: [
       {
         attributes: {
-          value: "Although the museum stopped"
+          value: "Although the museum stopped",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 const defaultSecondSummary225 = [
   {
@@ -320,33 +320,33 @@ const defaultSecondSummary225 = [
       {
         attributes: {
           value:
-            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by "
+            "The first loan of the Bayeux Tapestry outside France for 950 years, revealed today by ",
         },
         children: [],
-        name: "text"
+        name: "text",
       },
       {
         attributes: {},
         children: [
           {
             attributes: {
-              value: "The Times"
+              value: "The Times",
             },
             children: [],
-            name: "text"
-          }
+            name: "text",
+          },
         ],
-        name: "italic"
+        name: "italic",
       },
       {
         attributes: {
-          value: ", is expected to be to the British Museum in 2022."
+          value: ", is expected to be to the British Museum in 2022.",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
+    name: "paragraph",
   },
   {
     attributes: {},
@@ -354,14 +354,14 @@ const defaultSecondSummary225 = [
       {
         attributes: {
           value:
-            "Although the museum stopped short of confirming that it had secured the loan"
+            "Although the museum stopped short of confirming that it had secured the loan",
         },
         children: [],
-        name: "text"
-      }
+        name: "text",
+      },
     ],
-    name: "paragraph"
-  }
+    name: "paragraph",
+  },
 ];
 const defaultSecondUrl =
   "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh";
@@ -398,7 +398,7 @@ export default ({
   secondSummary175 = defaultSecondSummary175,
   secondSummary225 = defaultSecondSummary225,
   secondTitle = defaultSecondTitle,
-  secondUrl = defaultSecondUrl
+  secondUrl = defaultSecondUrl,
 } = {}) => ({
   data: {
     relatedArticleSlice: {
@@ -413,25 +413,25 @@ export default ({
                     children: [
                       {
                         attributes: {
-                          value: "Camilla Long, Environment Editor"
+                          value: "Camilla Long, Environment Editor",
                         },
                         children: [],
-                        name: "text"
-                      }
+                        name: "text",
+                      },
                     ],
-                    name: "inline"
-                  }
-                ]
-              }
+                    name: "inline",
+                  },
+                ],
+              },
             ],
             headline: firstHeadline,
             id: "58604618-fb0e-11e7-a987-7fcf5e9983dc",
             label: firstLabel,
             leadAsset: {
               crop169: {
-                url: firstCrop169
+                url: firstCrop169,
               },
-              title: firstTitle
+              title: firstTitle,
             },
             publicationName: "TIMES",
             publishedTime: "2015-03-13T18:54:58.000Z",
@@ -445,9 +445,9 @@ export default ({
             summary160: firstSummary160,
             summary175: firstSummary175,
             summary225: firstSummary225,
-            url: firstUrl
+            url: firstUrl,
           },
-          leadAsset: null
+          leadAsset: null,
         },
         {
           article: {
@@ -459,25 +459,25 @@ export default ({
                     children: [
                       {
                         attributes: {
-                          value: "Camilla Long, Environment Editor"
+                          value: "Camilla Long, Environment Editor",
                         },
                         children: [],
-                        name: "text"
-                      }
+                        name: "text",
+                      },
                     ],
-                    name: "inline"
-                  }
-                ]
-              }
+                    name: "inline",
+                  },
+                ],
+              },
             ],
             headline: secondHeadline,
             id: "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
             label: secondLabel,
             leadAsset: {
               crop169: {
-                url: secondCrop169
+                url: secondCrop169,
               },
-              title: secondTitle
+              title: secondTitle,
             },
             publishedTime: "2018-01-17T12:00:00.000Z",
             section: secondSection,
@@ -488,20 +488,20 @@ export default ({
               {
                 attributes: {},
                 children: secondSummary105,
-                name: "paragraph"
-              }
+                name: "paragraph",
+              },
             ],
             summary125: secondSummary125,
             summary145: secondSummary145,
             summary160: secondSummary160,
             summary175: secondSummary175,
             summary225: secondSummary225,
-            url: secondUrl
+            url: secondUrl,
           },
-          leadAsset: null
-        }
+          leadAsset: null,
+        },
       ],
-      sliceName: "StandardSlice"
-    }
-  }
+      sliceName: "StandardSlice",
+    },
+  },
 });

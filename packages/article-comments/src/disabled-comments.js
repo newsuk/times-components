@@ -3,7 +3,7 @@ import { TextLink } from "@times-components/link";
 import {
   CommentContainer,
   CommentDisabledHeadline,
-  CommentDisabledGuidelines
+  CommentDisabledGuidelines,
 } from "./styles/responsive";
 import styles from "./styles";
 

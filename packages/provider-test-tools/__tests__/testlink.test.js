@@ -3,26 +3,29 @@ import TestLink from "../src/test-link";
 describe("TestLink tests", () => {
   it("should add an error event", async () => {
     const link = new TestLink(() => Promise.reject(new Error("network error")));
-    const error = await new Promise(done => {
-      link.request({ operationName: "Test" }).subscribe(() => {}, e => done(e));
+    const error = await new Promise((done) => {
+      link.request({ operationName: "Test" }).subscribe(
+        () => {},
+        (e) => done(e),
+      );
     });
 
     expect(error).toEqual(new Error("network error"));
 
     expect(link.getRequests()).toMatchObject([
       {
-        operation: { operationName: "Test" }
-      }
+        operation: { operationName: "Test" },
+      },
     ]);
 
     expect(link.getEvents()).toMatchObject([
       {
-        type: "request"
+        type: "request",
       },
       {
         error: new Error("network error"),
-        type: "error"
-      }
+        type: "error",
+      },
     ]);
   });
 });

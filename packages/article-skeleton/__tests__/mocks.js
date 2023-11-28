@@ -8,11 +8,11 @@ jest.mock("../src/head", () => "Head");
 // eslint-disable-next-line global-require
 jest.mock("@times-components/ad", () => ({
   __esModule: true,
-  AdContainer: "AdContainer"
+  AdContainer: "AdContainer",
 }));
 jest.mock("@times-components/article-byline", () => ({
   ArticleBylineWithLinks: "ArticleBylineWithLinks",
-  hasBylineData: () => true
+  hasBylineData: () => true,
 }));
 jest.mock("@times-components/article-extras", () => "ArticleExtras");
 jest.mock("@times-components/ts-components", () => ({
@@ -31,7 +31,7 @@ jest.mock("@times-components/ts-components", () => ({
   InfoCard: "InfoCard",
   GalleryCarousel: "GalleryCarousel",
   InfoCardBulletPoints: "InfoCardBulletPoints",
-  BigNumbers: "BigNumbers"
+  BigNumbers: "BigNumbers",
 }));
 jest.mock("@times-components/article-image", () => "ArticleImage");
 jest.mock("@times-components/article-topics", () => "ArticleTopics");
@@ -43,7 +43,7 @@ jest.mock("@times-components/key-facts", () => "KeyFacts");
 jest.mock("@times-components/link", () => ({
   __esModule: true,
   default: "Link",
-  TextLink: "TextLink"
+  TextLink: "TextLink",
 }));
 jest.mock("@times-components/pull-quote", () => "PullQuote");
 jest.mock("@times-components/related-articles", () => "RelatedArticles");
@@ -64,6 +64,6 @@ jest.mock("@times-components/sticky", () => {
     __esModule: true,
     ...actualSticky,
     computeProgressStyles: mockComputeProgressStyles,
-    PROGRESS_ATTR_NAME: "MOCK-PROGRESS-SELECTOR"
+    PROGRESS_ATTR_NAME: "MOCK-PROGRESS-SELECTOR",
   };
 });

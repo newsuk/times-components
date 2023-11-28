@@ -16,7 +16,7 @@ async function main() {
       process.cwd(),
       fetch,
 
-      process.env.GRAPHQL_ENDPOINT || "https://api.thetimes.co.uk/graphql"
+      process.env.GRAPHQL_ENDPOINT || "https://api.thetimes.co.uk/graphql",
     );
   } catch (e) {
     console.log(chalk.yellow(e));
@@ -26,7 +26,7 @@ async function main() {
       console.log(chalk.yellow("Your schema may be out of date for linting"));
     } catch (err) {
       console.log(
-        chalk.yellow("Without a schema you cannot perform gql linting")
+        chalk.yellow("Without a schema you cannot perform gql linting"),
       );
     }
   }

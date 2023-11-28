@@ -6,7 +6,7 @@ import NavSearch from '../search/search';
 import { handleSearchSubmit } from '../search/handleSearchSubmit';
 
 jest.mock('../search/handleSearchSubmit', () => ({
-  handleSearchSubmit: jest.fn()
+  handleSearchSubmit: jest.fn(),
 }));
 
 describe('Search', () => {
@@ -26,7 +26,7 @@ describe('Search', () => {
     const searchField = screen.getByPlaceholderText('Search times.co.uk');
 
     fireEvent.change(searchField, {
-      target: { value: 'Test Value' }
+      target: { value: 'Test Value' },
     });
 
     await fireEvent.submit(searchForm);
@@ -42,7 +42,7 @@ describe('Search', () => {
     const searchField = screen.getByPlaceholderText('Search times.co.uk');
 
     fireEvent.change(searchField, {
-      target: { value: 'Test Value' }
+      target: { value: 'Test Value' },
     });
 
     await fireEvent.submit(searchForm);

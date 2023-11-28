@@ -8,7 +8,7 @@ import data from '../../fixtures/data.json';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
+  useBreakpointKey: jest.fn().mockReturnValue('xl'),
 }));
 
 afterAll(() => {
@@ -20,14 +20,14 @@ const mockClickHandler = jest.fn();
 
 const defaultProps = {
   ...data,
-  clickHandler: mockClickHandler
+  clickHandler: mockClickHandler,
 };
 
 describe('Render Content Bucket 2 Slice', () => {
   test('Slice matches snapshot at `lg` breakpoint', () => {
     const { asFragment } = renderComponent(
       <ContentBucket2 {...defaultProps} />,
-      'lg'
+      'lg',
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -35,7 +35,7 @@ describe('Render Content Bucket 2 Slice', () => {
   test('Slice matches snapshot at `xs` breakpoint', async () => {
     const { asFragment } = renderComponent(
       <ContentBucket2 {...defaultProps} />,
-      'xs'
+      'xs',
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -53,12 +53,12 @@ describe('Content Bucket 2 Articles list above `md` breakpoint', () => {
     expect(articleItem1!.nextSibling).toHaveAttribute('data-testid', 'divider');
     expect(articleItem4!.previousSibling).toHaveAttribute(
       'data-testid',
-      'divider'
+      'divider',
     );
     expect(articleItem4!.nextSibling).toBeNull();
     expect(articleItem1!.nextSibling).toHaveStyle({
       borderColor: '#e4e4e4',
-      borderStyle: 'solid'
+      borderStyle: 'solid',
     });
   });
 });

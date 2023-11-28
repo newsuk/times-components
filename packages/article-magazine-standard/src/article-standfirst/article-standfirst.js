@@ -20,11 +20,11 @@ const HeaderStandfirst = ({ standfirst }) => {
 };
 
 HeaderStandfirst.propTypes = {
-  standfirst: PropTypes.string
+  standfirst: PropTypes.string,
 };
 
 HeaderStandfirst.defaultProps = {
-  standfirst: null
+  standfirst: null,
 };
 
 export default HeaderStandfirst;

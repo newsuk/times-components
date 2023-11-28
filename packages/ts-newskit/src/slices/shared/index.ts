@@ -4,6 +4,6 @@ export { CustomBlockLayout } from './custom-layout';
 export {
   ArticleStackSmall,
   ArticleStackLarge,
-  ArticleStackLeadStory
+  ArticleStackLeadStory,
 } from './article-stacks';
 export { ComposedArticleStack } from './composed-article-stack';

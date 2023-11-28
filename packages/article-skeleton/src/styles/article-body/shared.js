@@ -1,6 +1,6 @@
 import { tabletWidth, styleguide } from "@times-components/ts-styleguide";
 
-const sharedStyles = scale => {
+const sharedStyles = (scale) => {
   const { colours, fontFactory, spacing, lineHeight } = styleguide({ scale });
   return {
     ad: {
@@ -9,101 +9,101 @@ const sharedStyles = scale => {
       borderTopColor: colours.functional.keyline,
       borderTopWidth: 1,
       marginBottom: spacing(4),
-      padding: spacing(2)
+      padding: spacing(2),
     },
     articleLink: {
       color: colours.functional.action,
       ...fontFactory({
         font: "body",
-        fontSize: "bodyMobile"
+        fontSize: "bodyMobile",
       }),
       lineHeight: lineHeight({
         font: "body",
-        fontSize: "bodyMobile"
+        fontSize: "bodyMobile",
       }),
       marginBottom: spacing(5),
-      marginTop: 0
+      marginTop: 0,
     },
     articleMainContentRow: {
       paddingLeft: spacing(2),
-      paddingRight: spacing(2)
+      paddingRight: spacing(2),
     },
     articleTextElement: {
       ...fontFactory({
         font: "body",
-        fontSize: "bodyMobile"
+        fontSize: "bodyMobile",
       }),
       color: colours.functional.primary,
-      marginBottom: spacing(5)
+      marginBottom: spacing(5),
     },
     containerTablet: {
-      alignSelf: "center"
+      alignSelf: "center",
     },
     imageContainerTablet: {
-      alignSelf: "center"
+      alignSelf: "center",
     },
     interactiveContainer: {
       marginBottom: spacing(4),
       paddingLeft: spacing(2),
-      paddingRight: spacing(2)
+      paddingRight: spacing(2),
     },
     interactiveContainerTablet: {
       alignSelf: "center",
-      width: tabletWidth
+      width: tabletWidth,
     },
     interactiveContainerFullWidth: {
       width: "100%",
       paddingLeft: 0,
-      paddingRight: 0
+      paddingRight: 0,
     },
     leadAsset: {
-      marginBottom: spacing(2)
+      marginBottom: spacing(2),
     },
     primaryContainer: {
       flexDirection: "column",
       paddingBottom: spacing(5),
-      width: "100%"
+      width: "100%",
     },
     heading2: {
       ...fontFactory({
         font: "headline",
-        fontSize: "heading2Mobile"
+        fontSize: "heading2Mobile",
       }),
       marginBottom: spacing(2),
-      color: colours.functional.black
+      color: colours.functional.black,
     },
     heading3: {
       ...fontFactory({
         font: "headline",
-        fontSize: "heading3Mobile"
+        fontSize: "heading3Mobile",
       }),
       marginBottom: spacing(2),
-      color: colours.functional.black
+      color: colours.functional.black,
     },
     heading4: {
       ...fontFactory({
         font: "headline",
-        fontSize: "heading4Mobile"
+        fontSize: "heading4Mobile",
       }),
       marginBottom: spacing(2),
-      color: colours.functional.black
+      color: colours.functional.black,
     },
     heading5: {
       ...fontFactory({
         font: "headline",
-        fontSize: "heading5Mobile"
+        fontSize: "heading5Mobile",
       }),
       marginBottom: spacing(2),
-      color: colours.functional.black
+      color: colours.functional.black,
     },
     heading6: {
       ...fontFactory({
         font: "headline",
-        fontSize: "heading5Mobile"
+        fontSize: "heading5Mobile",
       }),
       marginBottom: spacing(2),
-      color: colours.functional.black
-    }
+      color: colours.functional.black,
+    },
   };
 };
 

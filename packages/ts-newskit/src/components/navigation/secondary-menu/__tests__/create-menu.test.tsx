@@ -9,7 +9,7 @@ const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),
   isExpanded: false,
-  isSelected: 'Home'
+  isSelected: 'Home',
 };
 
 describe('Create Menu', () => {
@@ -35,7 +35,7 @@ describe('Create Menu', () => {
           .fn()
           .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
           .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation(x => [x, () => null]))
+          .mockImplementation((x) => [x, () => null])),
     );
     const { asFragment } = await waitFor(() =>
       render(
@@ -43,8 +43,8 @@ describe('Create Menu', () => {
           data={mainMenuItems}
           options={options}
           clickHandler={mockClickHandler}
-        />
-      )
+        />,
+      ),
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -58,7 +58,7 @@ describe('Create Menu', () => {
           .fn()
           .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
           .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation(x => [x, () => null]))
+          .mockImplementation((x) => [x, () => null])),
     );
     await waitFor(() =>
       render(
@@ -66,8 +66,8 @@ describe('Create Menu', () => {
           data={mainMenuItems}
           options={options}
           clickHandler={mockClickHandler}
-        />
-      )
+        />,
+      ),
     );
   });
   it('should expand on click', async () => {
@@ -80,7 +80,7 @@ describe('Create Menu', () => {
           .fn()
           .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
           .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation(x => [x, () => null]))
+          .mockImplementation((x) => [x, () => null])),
     );
     const { findByTestId } = await waitFor(() =>
       render(
@@ -88,8 +88,8 @@ describe('Create Menu', () => {
           data={mainMenuItems}
           options={options}
           clickHandler={mockClickHandler}
-        />
-      )
+        />,
+      ),
     );
 
     const buttonText = await findByTestId('menu-sub-button');
@@ -107,7 +107,7 @@ describe('Create Menu', () => {
           .fn()
           .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
           .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation(x => [x, () => null]))
+          .mockImplementation((x) => [x, () => null])),
     );
     const { findByTestId } = await waitFor(() =>
       render(
@@ -115,8 +115,8 @@ describe('Create Menu', () => {
           data={mainMenuItems}
           options={{ ...options, isExpanded: true }}
           clickHandler={mockClickHandler}
-        />
-      )
+        />,
+      ),
     );
 
     const buttonText = await findByTestId('menu-sub-button');

@@ -27,7 +27,7 @@ BarItem.propTypes = {
   colour: PropTypes.string,
   dataTestId: PropTypes.string,
   hoverColour: PropTypes.string,
-  onPress: PropTypes.func
+  onPress: PropTypes.func,
 };
 
 export default BarItem;

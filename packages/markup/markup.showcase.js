@@ -19,14 +19,14 @@ export default {
     {
       decorator: CenteredDecorator,
       platform: "web",
-      type: "decorator"
+      type: "decorator",
     },
     {
       component: () => (
         <TcView>{renderTrees(multiParagraph, coreRenderers)}</TcView>
       ),
       name: "Multiple paragraphs",
-      type: "story"
+      type: "story",
     },
     {
       component: () =>
@@ -34,7 +34,7 @@ export default {
           ...coreRenderers,
           block(key, attributes, renderedChildren) {
             return {
-              element: <TcView key={key}>{renderedChildren}</TcView>
+              element: <TcView key={key}>{renderedChildren}</TcView>,
             };
           },
           link(key, attributes, renderedChildren) {
@@ -43,34 +43,34 @@ export default {
                 <TcText href={attributes.href} key={key}>
                   {renderedChildren}
                 </TcText>
-              )
+              ),
             };
-          }
+          },
         }),
       name: "Mixture of tags",
-      type: "story"
+      type: "story",
     },
     {
       component: () => <TcText>{renderTrees(bio, coreRenderers)}</TcText>,
       name: "Biography",
-      type: "story"
+      type: "story",
     },
     {
       component: () => <TcView>{renderTrees(ratings, coreRenderers)}</TcView>,
       name: "Ratings",
-      type: "story"
+      type: "story",
     },
     {
       component: () => <TcView>{renderTrees(subscript, coreRenderers)}</TcView>,
       name: "Subscript",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
         <TcView>{renderTrees(superscript, coreRenderers)}</TcView>
       ),
       name: "Superscript",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
@@ -85,20 +85,20 @@ export default {
                     style={{
                       color: "red",
                       fontFamily: fontsWithFallback.headline,
-                      margin: 10
+                      margin: 10,
                     }}
                   >
                     {children}
                   </TcText>
-                )
+                ),
               };
-            }
+            },
           })}
         </TcView>
       ),
       name: "Multiple children with styling",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Composed/Markup"
+  name: "Composed/Markup",
 };

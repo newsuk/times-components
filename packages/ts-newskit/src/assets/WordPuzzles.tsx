@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WordPuzzlesIcon: React.FC = props => {
+const WordPuzzlesIcon: React.FC = (props) => {
   return (
     <svg
       viewBox="0 0 382 382"

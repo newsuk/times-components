@@ -6,7 +6,7 @@ const styles = {
   button: {
     ...fontFactory({
       font: "supporting",
-      fontSize: "button"
+      fontSize: "button",
     }),
     alignItems: "center",
     backgroundColor: colours.functional.action,
@@ -18,8 +18,8 @@ const styles = {
     lineHeight: 0,
     minWidth: 100,
     paddingTop: 2,
-    width: 160
-  }
+    width: 160,
+  },
 };
 
 export default styles;

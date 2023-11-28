@@ -6,7 +6,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '14px',
       lineHeight: '1.000',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     topNav010: {
       fontFamily: 'Roboto-Medium',
@@ -15,7 +15,7 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: '0.778',
       letterSpacing: '0%',
       fontStretch: 'normal',
-      whiteSpace: 'nowrap'
+      whiteSpace: 'nowrap',
     },
     secondaryNavMenuItemMob: {
       fontFamily: 'Roboto-Regular',
@@ -23,7 +23,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '{{fonts.fontSize025}}',
       lineHeight: '1.000',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     newPreset040: {
       fontFamily: 'Roboto-Medium',
@@ -31,7 +31,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '15px',
       lineHeight: '1.250',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     newPreset050: {
       fontFamily: 'Roboto-Medium',
@@ -39,7 +39,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '14px',
       lineHeight: '1.000',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     newPreset060: {
       fontFamily: 'TimesModern-Regular',
@@ -47,7 +47,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '28px',
       lineHeight: '1.143',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     newPreset070: {
       fontFamily: 'TimesModern-Regular',
@@ -55,7 +55,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '22px',
       lineHeight: '1.429',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     newPreset080: {
       fontFamily: 'TimesModern-Bold',
@@ -63,7 +63,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '28px',
       lineHeight: '1.143',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     newPreset090: {
       fontFamily: 'Roboto-Medium',
@@ -71,7 +71,7 @@ export const typographyPresets = Object.fromEntries(
       fontWeight: 700,
       lineHeight: '1.200',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     newPreset100: {
       fontFamily: 'Roboto-Regular',
@@ -79,7 +79,7 @@ export const typographyPresets = Object.fromEntries(
       fontWeight: 400,
       lineHeight: '1.222',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     editorialHeadline035: {
       fontFamily: 'TimesModern-Regular',
@@ -87,7 +87,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '22px',
       lineHeight: '1.000',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     editorialHeadline082: {
       fontFamily: 'TimesModern-Regular',
@@ -95,7 +95,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '44px',
       lineHeight: '1.000',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     editorialHeadline085: {
       fontFamily: 'TimesModern-Regular',
@@ -103,7 +103,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '48px',
       lineHeight: '1.000',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     editorialHeadline087: {
       fontFamily: 'TimesModern-Regular',
@@ -111,7 +111,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '52px',
       lineHeight: '1.000',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     sectionHeader010: {
       fontFamily: 'TimesModern-Bold',
@@ -120,7 +120,7 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: '2.750',
       letterSpacing: '10%',
       fontStretch: 'normal',
-      textAlign: 'center'
+      textAlign: 'center',
     },
     mastheadTime: {
       fontFamily: 'Roboto-Regular',
@@ -128,7 +128,7 @@ export const typographyPresets = Object.fromEntries(
       fontWeight: 400,
       lineHeight: '2.750',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     breadcrumbText: {
       fontFamily: 'Roboto-Regular',
@@ -136,7 +136,7 @@ export const typographyPresets = Object.fromEntries(
       fontWeight: 500,
       lineHeight: '1.250',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     articleListTitle: {
       fontFamily: 'TimesModern-Regular',
@@ -144,7 +144,7 @@ export const typographyPresets = Object.fromEntries(
       fontWeight: 400,
       lineHeight: '1.273',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     articleListArticleType: {
       fontFamily: 'Roboto-Regular',
@@ -152,7 +152,7 @@ export const typographyPresets = Object.fromEntries(
       fontWeight: 700,
       lineHeight: '0.875',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     articleListTimeToRead: {
       fontFamily: 'Roboto-Regular',
@@ -160,7 +160,7 @@ export const typographyPresets = Object.fromEntries(
       fontWeight: 400,
       lineHeight: '0.875',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     editorialItalic060: {
       fontFamily: 'TimesModern-Regular',
@@ -169,7 +169,7 @@ export const typographyPresets = Object.fromEntries(
       fontStyle: 'italic',
       lineHeight: '1.200',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     utilityHeading060: {
       fontFamily: 'Roboto-Regular',
@@ -177,7 +177,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '14px',
       lineHeight: '1.286',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     editorialItalic050: {
       fontFamily: 'TimesModern-Regular',
@@ -186,7 +186,7 @@ export const typographyPresets = Object.fromEntries(
       fontStyle: 'italic',
       lineHeight: '1.200',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     utilitySubheadline010: {
       fontFamily: 'Roboto-Regular',
@@ -194,7 +194,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '16px',
       lineHeight: '1.250',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     utilitySubheadline020: {
       fontFamily: 'Roboto-Regular',
@@ -202,7 +202,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '18px',
       lineHeight: '1.333',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     utilitySubheadline030: {
       fontFamily: 'Roboto-Regular',
@@ -210,7 +210,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '22px',
       lineHeight: '1.273',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     utilitySubheadline040: {
       fontFamily: 'Roboto-Regular',
@@ -218,7 +218,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '24px',
       lineHeight: '1.333',
       letterSpacing: '0%',
-      fontStretch: 'normal'
+      fontStretch: 'normal',
     },
     utilitySubheadline050: {
       fontFamily: 'Roboto-Regular',
@@ -226,7 +226,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '28px',
       lineHeight: '1.286',
       letterSpacing: '0%',
-      fontStretch: 'normal'
-    }
-  })
+      fontStretch: 'normal',
+    },
+  }),
 );

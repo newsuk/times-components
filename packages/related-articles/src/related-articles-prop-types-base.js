@@ -5,9 +5,9 @@ export default {
   slice: PropTypes.shape({
     items: PropTypes.arrayOf(
       PropTypes.shape({
-        article: relatedArticleItemPropTypes.article
-      })
+        article: relatedArticleItemPropTypes.article,
+      }),
     ),
-    sliceName: PropTypes.string.isRequired
-  }).isRequired
+    sliceName: PropTypes.string.isRequired,
+  }).isRequired,
 };

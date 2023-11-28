@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from 'newskit';
 import {
   NewsKitFilledArrowIcon,
-  NewsKitFilledArrowIconDown
+  NewsKitFilledArrowIconDown,
 } from '../../../assets';
 
 type UpdateButtonProps = {
@@ -16,7 +16,7 @@ export const UpdateButton = ({
   loading,
   label,
   handleClick,
-  arrowUp
+  arrowUp,
 }: UpdateButtonProps) => {
   return (
     <Button
@@ -27,7 +27,7 @@ export const UpdateButton = ({
         paddingBlock: 'space020',
         paddingInline: 'space030',
         typographyPreset: 'utilityButton010',
-        width: loading ? 'sizing060' : 'fit-content'
+        width: loading ? 'sizing060' : 'fit-content',
       }}
       onClick={() => handleClick()}
     >

@@ -11,7 +11,7 @@ const IconEmail = ({
   height,
   strokeColour,
   title = "Email Icon",
-  width
+  width,
 }) => (
   <svg
     aria-label="icon-email"
@@ -20,7 +20,7 @@ const IconEmail = ({
     {...clean({
       height,
       title,
-      width: width || height * ratio
+      width: width || height * ratio,
     })}
   >
     <title>{title}</title>
@@ -36,7 +36,7 @@ const IconEmail = ({
 IconEmail.propTypes = propTypes;
 
 IconEmail.defaultProps = {
-  fillColour: colours.functional.brandColour
+  fillColour: colours.functional.brandColour,
 };
 
 export default IconEmail;

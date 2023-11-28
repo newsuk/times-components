@@ -10,7 +10,7 @@ const renderComponent = (
   loading: boolean,
   label: string,
   handleClick: any,
-  arrowUp: boolean
+  arrowUp: boolean,
 ) =>
   render(
     <UpdateButton
@@ -18,7 +18,7 @@ const renderComponent = (
       label={label}
       handleClick={handleClick}
       arrowUp={arrowUp}
-    />
+    />,
   );
 
 describe('Render UpdateButton', () => {
@@ -27,7 +27,7 @@ describe('Render UpdateButton', () => {
       false,
       'New Updates',
       handleClickMock,
-      true
+      true,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -36,7 +36,7 @@ describe('Render UpdateButton', () => {
       true,
       'New Update',
       handleClickMock,
-      true
+      true,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -45,7 +45,7 @@ describe('Render UpdateButton', () => {
       false,
       'Test New Updates',
       handleClickMock,
-      true
+      true,
     );
     expect(getByText('Test New Updates')).toBeVisible();
   });
@@ -54,7 +54,7 @@ describe('Render UpdateButton', () => {
       false,
       'New Update',
       handleClickMock,
-      true
+      true,
     );
     const Button = getByRole('button');
     fireEvent.click(Button);
@@ -65,7 +65,7 @@ describe('Render UpdateButton', () => {
       false,
       'New Updates',
       handleClickMock,
-      true
+      true,
     );
     expect(getByTestId('upward-arrow')).toBeVisible();
   });
@@ -74,7 +74,7 @@ describe('Render UpdateButton', () => {
       false,
       'New Updates',
       handleClickMock,
-      false
+      false,
     );
     expect(getByTestId('downward-arrow')).toBeVisible();
   });

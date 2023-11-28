@@ -3,28 +3,28 @@ import tagLastParagraph from "../../src/tracking/article-tracking-last-paragraph
 const noPaywallArticle = [
   {
     attributes: {
-      title: "title"
+      title: "title",
     },
     children: [
       {
-        name: "unorderedList"
-      }
+        name: "unorderedList",
+      },
     ],
-    name: "keyFacts"
-  }
+    name: "keyFacts",
+  },
 ];
 
 const articleWithPaywall = [
   {
     attributes: {
-      title: "title"
+      title: "title",
     },
     children: [
       {
-        name: "unorderedList"
-      }
+        name: "unorderedList",
+      },
     ],
-    name: "keyFacts"
+    name: "keyFacts",
   },
   {
     children: [
@@ -34,10 +34,10 @@ const articleWithPaywall = [
       { attributes: { value: 4 }, children: [], name: "other" },
       { attributes: { value: 5 }, children: [], name: "paragraph" },
       { attributes: { value: 6 }, children: [], name: "paragraph" },
-      { attributes: { value: 7 }, children: [], name: "other" }
+      { attributes: { value: 7 }, children: [], name: "other" },
     ],
-    name: "paywall"
-  }
+    name: "paywall",
+  },
 ];
 
 describe("tagLastParagraph", () => {

@@ -14,7 +14,7 @@ describe("handleOnClickScrollTo", () => {
     window.pageYOffset = 150;
     window.scrollTo = scrollTo;
     document.getElementById = () => ({
-      getBoundingClientRect: () => ({ top: 100 })
+      getBoundingClientRect: () => ({ top: 100 }),
     });
     document.querySelector = () => ({ offsetHeight: 0 });
   });

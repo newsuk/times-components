@@ -4,7 +4,7 @@ import { getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import {
   articlePropTypes,
-  articleDefaultProps
+  articleDefaultProps,
 } from "./article-prop-types/article-prop-types";
 
 class ArticlePage extends Component {
@@ -25,7 +25,7 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst,
-      updatedTime
+      updatedTime,
     } = article;
 
     const authorImage =
@@ -69,7 +69,7 @@ class ArticlePage extends Component {
       showAudioPlayer,
       swgProductId,
       zephrDivs,
-      storefrontConfig
+      storefrontConfig,
     } = this.props;
 
     if (error || isLoading) {

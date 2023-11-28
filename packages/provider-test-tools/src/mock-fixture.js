@@ -9,15 +9,15 @@ const makeMocks = mm(schema);
 
 const makeQuery = ({ defaults, delay, error, query, variables, repeatable }) =>
   graphql(makeMocks(defaults), print(query), null, null, variables).then(
-    mock => ({
+    (mock) => ({
       defaults,
       delay,
       error,
       mock,
       query,
       variables,
-      repeatable
-    })
+      repeatable,
+    }),
   );
 
 const toResponse = ({ delay, error, mock, query, variables, repeatable }) => {
@@ -26,9 +26,9 @@ const toResponse = ({ delay, error, mock, query, variables, repeatable }) => {
     error,
     request: {
       query,
-      variables
+      variables,
     },
-    result: mock
+    result: mock,
   };
 
   if (repeatable) {
@@ -38,9 +38,9 @@ const toResponse = ({ delay, error, mock, query, variables, repeatable }) => {
   return response;
 };
 
-export const schemaToMocks = params =>
+export const schemaToMocks = (params) =>
   Promise.all(params.map(makeQuery)).then(([...mocks]) =>
-    mocks.map(toResponse)
+    mocks.map(toResponse),
   );
 
 class MockFixture extends Component {
@@ -48,14 +48,14 @@ class MockFixture extends Component {
     super(props);
 
     this.state = {
-      mocks: []
+      mocks: [],
     };
   }
 
   componentDidMount() {
     const { params } = this.props;
 
-    schemaToMocks(params).then(mocks => this.setState({ mocks }));
+    schemaToMocks(params).then((mocks) => this.setState({ mocks }));
   }
 
   render() {
@@ -71,14 +71,14 @@ MockFixture.propTypes = {
     PropTypes.shape({
       defaults: PropTypes.shape({
         types: PropTypes.any,
-        values: PropTypes.any
+        values: PropTypes.any,
       }),
       delay: null,
       query: PropTypes.object.isRequired,
-      variables: PropTypes.object
-    })
+      variables: PropTypes.object,
+    }),
   ).isRequired,
-  render: PropTypes.func.isRequired
+  render: PropTypes.func.isRequired,
 };
 
 export default MockFixture;

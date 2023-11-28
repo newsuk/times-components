@@ -22,7 +22,7 @@ export default class TealiumSendScheduler {
     if (!enabled) {
       return;
     }
-    ["env", "profile", "account"].forEach(option => {
+    ["env", "profile", "account"].forEach((option) => {
       if (!options[option])
         throw new Error(`Tealium option not supplied: ${option}`);
     });
@@ -67,7 +67,7 @@ export default class TealiumSendScheduler {
         }
         const start = Date.now();
         this.sendEvents({
-          timeRemaining: () => Math.max(0, 50 - (Date.now() - start))
+          timeRemaining: () => Math.max(0, 50 - (Date.now() - start)),
         });
       }, 0);
     }
@@ -84,7 +84,8 @@ export default class TealiumSendScheduler {
 
       if (this.w.utag_data && this.w.utag_data.experiment_platform) {
         e.experiment_platform = this.w.utag_data.experiment_platform;
-        e.experiment_platform_user_id = this.w.utag_data.experiment_platform_user_id;
+        e.experiment_platform_user_id =
+          this.w.utag_data.experiment_platform_user_id;
         e.experiment_data = this.w.utag_data.experiment_data;
       }
 

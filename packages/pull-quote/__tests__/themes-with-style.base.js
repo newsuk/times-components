@@ -20,10 +20,10 @@ export default [
           text={text}
         >
           {content}
-        </PullQuotes>
+        </PullQuotes>,
       );
       expect(testInstance).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "pull quote in style magazine",
@@ -37,10 +37,10 @@ export default [
           text={text}
         >
           {content}
-        </PullQuotes>
+        </PullQuotes>,
       );
       expect(testInstance).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "pull quote in the sunday times magazine",
@@ -54,9 +54,9 @@ export default [
           text={text}
         >
           {content}
-        </PullQuotes>
+        </PullQuotes>,
       );
       expect(testInstance).toMatchSnapshot();
-    }
-  }
+    },
+  },
 ];

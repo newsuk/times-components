@@ -13,7 +13,7 @@ export const propTypes = {
   onLayout: PropTypes.func,
   rounded: PropTypes.bool,
   uri: PropTypes.string,
-  isLcpItem: PropTypes.bool
+  isLcpItem: PropTypes.bool,
 };
 
 export const defaultProps = {
@@ -24,5 +24,5 @@ export const defaultProps = {
   lowResSize: null,
   rounded: false,
   uri: null,
-  isLcpItem: false
+  isLcpItem: false,
 };

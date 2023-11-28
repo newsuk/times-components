@@ -15,7 +15,7 @@ const LoggedInMenuItem: React.FC<{
         typographyPreset: 'newPreset040',
         stylePreset: `${
           isSelected ? 'loggedInMenuItemActive' : 'loggedInMenuItem'
-        }`
+        }`,
       }}
       onClick={() => setSelected(title)}
     >

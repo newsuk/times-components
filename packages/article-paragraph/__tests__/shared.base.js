@@ -12,31 +12,31 @@ export default () => [
     test: async () => {
       const testInstance = TestRenderer.create(renderParagraph(paragraphData));
       expect(testInstance).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "empty paragraph",
     test: async () => {
       const testInstance = TestRenderer.create(
-        renderParagraph(emptyParagraphData)
+        renderParagraph(emptyParagraphData),
       );
       expect(testInstance).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "paragraph with a drop cap",
     test: async () => {
       const testInstance = TestRenderer.create(renderParagraph(dropCapData));
       expect(testInstance).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "paragraph with a short text and a drop cap",
     test: async () => {
       const testInstance = TestRenderer.create(
-        renderParagraph(dropCapShortTextData)
+        renderParagraph(dropCapShortTextData),
       );
       expect(testInstance).toMatchSnapshot();
-    }
-  }
+    },
+  },
 ];

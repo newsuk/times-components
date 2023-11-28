@@ -2,26 +2,26 @@ import { getMediaList } from "../../src/utils";
 
 const content = [
   {
-    name: "foo"
+    name: "foo",
   },
   {
     attributes: {
       caption: "caption",
       credits: "PA",
-      url: "image.com"
+      url: "image.com",
     },
-    name: "image"
+    name: "image",
   },
   {
-    name: "foo"
+    name: "foo",
   },
   {
     attributes: {
       caption: "caption",
-      posterImageUrl: "image.com"
+      posterImageUrl: "image.com",
     },
-    name: "video"
-  }
+    name: "video",
+  },
 ];
 
 const videoLeadAsset = {
@@ -29,21 +29,21 @@ const videoLeadAsset = {
     caption: null,
     credits: null,
     crop169: {
-      url: "image.com"
+      url: "image.com",
     },
-    title: ""
+    title: "",
   },
-  type: "Video"
+  type: "Video",
 };
 
 const imageLeadAsset = {
   caption: null,
   credits: "image credits",
   crop169: {
-    url: "image.com"
+    url: "image.com",
   },
   title: "image title",
-  type: "Image"
+  type: "Image",
 };
 
 describe("getMediaList", () => {
@@ -57,11 +57,11 @@ describe("getMediaList", () => {
           caption: null,
           credits: "image credits",
           crop169: {
-            url: "image.com"
+            url: "image.com",
           },
           title: "image title",
-          type: "Image"
-        }
+          type: "Image",
+        },
       },
       {
         index: 1,
@@ -69,17 +69,17 @@ describe("getMediaList", () => {
         value: {
           caption: "caption",
           credits: "PA",
-          url: "image.com"
-        }
+          url: "image.com",
+        },
       },
       {
         index: 2,
         name: "inlineVideo",
         value: {
           caption: "caption",
-          posterImageUrl: "image.com"
-        }
-      }
+          posterImageUrl: "image.com",
+        },
+      },
     ];
     expect(output.length).toEqual(3);
     expect(output[0].index).toEqual(0);
@@ -97,12 +97,12 @@ describe("getMediaList", () => {
             caption: null,
             credits: null,
             crop169: {
-              url: "image.com"
+              url: "image.com",
             },
-            title: ""
+            title: "",
           },
-          type: "Video"
-        }
+          type: "Video",
+        },
       },
       {
         index: 1,
@@ -110,17 +110,17 @@ describe("getMediaList", () => {
         value: {
           caption: "caption",
           credits: "PA",
-          url: "image.com"
-        }
+          url: "image.com",
+        },
       },
       {
         index: 2,
         name: "inlineVideo",
         value: {
           caption: "caption",
-          posterImageUrl: "image.com"
-        }
-      }
+          posterImageUrl: "image.com",
+        },
+      },
     ];
 
     expect(output.length).toEqual(3);
@@ -137,17 +137,17 @@ describe("getMediaList", () => {
         value: {
           caption: "caption",
           credits: "PA",
-          url: "image.com"
-        }
+          url: "image.com",
+        },
       },
       {
         index: 1,
         name: "inlineVideo",
         value: {
           caption: "caption",
-          posterImageUrl: "image.com"
-        }
-      }
+          posterImageUrl: "image.com",
+        },
+      },
     ];
 
     expect(output.length).toEqual(2);
@@ -166,13 +166,13 @@ describe("getMediaList", () => {
             caption: null,
             credits: null,
             crop169: {
-              url: "image.com"
+              url: "image.com",
             },
-            title: ""
+            title: "",
           },
-          type: "Video"
-        }
-      }
+          type: "Video",
+        },
+      },
     ];
 
     expect(output.length).toEqual(1);
@@ -191,13 +191,13 @@ describe("getMediaList", () => {
             caption: null,
             credits: null,
             crop169: {
-              url: "image.com"
+              url: "image.com",
             },
-            title: ""
+            title: "",
           },
-          type: "Video"
-        }
-      }
+          type: "Video",
+        },
+      },
     ];
 
     expect(output.length).toEqual(1);

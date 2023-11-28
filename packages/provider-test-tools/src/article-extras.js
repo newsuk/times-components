@@ -2,7 +2,7 @@ import { MockList } from "graphql-tools";
 import { articleExtras as articleExtrasQuery } from "@times-components/provider-queries";
 import article from "../fixtures/article.json";
 
-const convertRatio = ratio => {
+const convertRatio = (ratio) => {
   if (ratio === "16:9") {
     return "320_180";
   }
@@ -21,8 +21,8 @@ const getMediaUrl = (obj, ratio) => {
     url: crop
       ? crop.url
       : `https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_${convertRatio(
-          ratio
-        )}.jpg`
+          ratio,
+        )}.jpg`,
   };
 };
 
@@ -30,10 +30,10 @@ export default ({
   commentsEnabled = true,
   chooseMedia = () => ({ __typename: "Image" }),
   error = () => {},
-  makeArticle = x => x,
-  makeRelatedArticle = x => x,
+  makeArticle = (x) => x,
+  makeRelatedArticle = (x) => x,
   relatedArticleCount = 3,
-  variables = () => {}
+  variables = () => {},
 }) => {
   const queryVariables = variables();
   let mediaIndex = -1;
@@ -47,19 +47,19 @@ export default ({
               return makeArticle({
                 ...article,
                 commentsEnabled,
-                id
+                id,
               });
             }
 
             return makeRelatedArticle(parent);
           },
           ArticleByline: () => ({
-            __typename: "TextByline"
+            __typename: "TextByline",
           }),
           ArticleSlice: () => ({
             __typename: "StandardSlice",
             items: new MockList(relatedArticleCount),
-            sliceName: "StandardSlice"
+            sliceName: "StandardSlice",
           }),
           Crop: (parent, { ratio }) => {
             if (parent.posterImage) {
@@ -87,16 +87,16 @@ export default ({
           StandardSlice: () => ({
             __typename: "StandardSlice",
             items: [],
-            sliceName: "StandardSlice"
+            sliceName: "StandardSlice",
           }),
           Tile: () => ({}),
           URL: () => "https://test.io",
-          UUID: () => "a-u-u-i-d"
-        }
+          UUID: () => "a-u-u-i-d",
+        },
       },
       error: error(),
       query: articleExtrasQuery,
-      variables: queryVariables
-    }
+      variables: queryVariables,
+    },
   ];
 };

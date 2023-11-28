@@ -7,12 +7,12 @@ import ArticleByline from "../src/article-byline";
 import authorsFixture from "../fixtures/authors.json";
 import ArticleBylineWithLinks from "../src/article-byline-with-links";
 
-export default Component => {
-  const renderArticleByline = props =>
+export default (Component) => {
+  const renderArticleByline = (props) =>
     TestRenderer.create(
       <TcView>
         <Component {...props} />
-      </TcView>
+      </TcView>,
     );
 
   const tests = [
@@ -20,61 +20,61 @@ export default Component => {
       name: "single inline element",
       test: () => {
         const testInstance = renderArticleByline({
-          ast: authorsFixture.singleInlineElement
+          ast: authorsFixture.singleInlineElement,
         });
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "with the author in the begining",
       test: () => {
         const testInstance = renderArticleByline({
-          ast: authorsFixture.authorInTheBeginning
+          ast: authorsFixture.authorInTheBeginning,
         });
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "with the author at the end",
       test: () => {
         const testInstance = renderArticleByline({
-          ast: authorsFixture.authorAtTheEnd
+          ast: authorsFixture.authorAtTheEnd,
         });
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "with multiple authors separated by a pipe",
       test: () => {
         const testInstance = renderArticleByline({
-          ast: authorsFixture.multipleAuthorsPipeSeparated
+          ast: authorsFixture.multipleAuthorsPipeSeparated,
         });
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "with multiple authors separated by text with commas",
       test: () => {
         const testInstance = renderArticleByline({
-          ast: authorsFixture.multipleAuthorsCommaSeparated
+          ast: authorsFixture.multipleAuthorsCommaSeparated,
         });
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "with multiple authors separated by spaces",
       test: () => {
         const testInstance = renderArticleByline({
-          ast: authorsFixture.multipleAuthorsSpaceSeparated
+          ast: authorsFixture.multipleAuthorsSpaceSeparated,
         });
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "null with an empty AST",
@@ -82,8 +82,8 @@ export default Component => {
         const testInstance = TestRenderer.create(<ArticleByline ast={[]} />);
 
         expect(testInstance).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ];
 
   if (Component.displayName === "ArticleBylineWithLinks") {
@@ -91,17 +91,13 @@ export default Component => {
       name: "handle an empty onPress event",
       test: () => {
         const wrapper = shallow(
-          <ArticleBylineWithLinks ast={authorsFixture.singleAuthor} />
+          <ArticleBylineWithLinks ast={authorsFixture.singleAuthor} />,
         );
 
         expect(() =>
-          wrapper
-            .at(0)
-            .dive()
-            .find("AuthorComponent")
-            .simulate("press")
+          wrapper.at(0).dive().find("AuthorComponent").simulate("press"),
         ).not.toThrow();
-      }
+      },
     });
   }
 

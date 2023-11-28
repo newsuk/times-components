@@ -4,7 +4,7 @@ import {
   CardComposable,
   CardLink,
   Headline,
-  Block
+  Block,
 } from 'newskit';
 import { StyledIconWrapper } from './styles';
 
@@ -19,7 +19,7 @@ export const CategoryCard: FC<CategoryCardProps> = ({ type, url, Icon }) => {
     <Block
       paddingBlockEnd={{
         xs: 'space020',
-        lg: 'space070'
+        lg: 'space070',
       }}
     >
       <CardComposable>
@@ -31,7 +31,7 @@ export const CategoryCard: FC<CategoryCardProps> = ({ type, url, Icon }) => {
             sm: 'space060',
             md: 'space040',
             lg: 'space040',
-            xl: 'space050'
+            xl: 'space050',
           }}
         >
           <Icon />
@@ -43,9 +43,9 @@ export const CategoryCard: FC<CategoryCardProps> = ({ type, url, Icon }) => {
             data-testid="categoryCard-link"
             overrides={{
               externalIcon: {
-                size: '0'
+                size: '0',
               },
-              stylePreset: 'inkContrast'
+              stylePreset: 'inkContrast',
             }}
           >
             <Headline
@@ -53,7 +53,7 @@ export const CategoryCard: FC<CategoryCardProps> = ({ type, url, Icon }) => {
               overrides={{
                 marginBlockEnd: 'space040',
                 marginBlockStart: 'space040',
-                typographyPreset: 'editorialHeadline010'
+                typographyPreset: 'editorialHeadline010',
               }}
             >
               {type}

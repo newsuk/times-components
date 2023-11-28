@@ -4,7 +4,7 @@ import { PersonalStatsItem } from './types';
 import {
   PersonalStatisticsCard,
   PersonalStatisticsContainer,
-  StyledNewskitWaveBg
+  StyledNewskitWaveBg,
 } from './styles';
 
 interface PersonalStatsProps {
@@ -29,7 +29,7 @@ export const PersonalStats: FC<PersonalStatsProps> = ({ data }) => {
             paddingInline: 'space060',
             marginInline: 'auto',
             width: '100%',
-            maxWidth: '613px'
+            maxWidth: '613px',
           }}
           justifyContent="center"
         >

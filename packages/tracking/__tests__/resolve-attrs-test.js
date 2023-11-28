@@ -17,13 +17,13 @@ module.exports = () => {
     it("forwards props and eventArgs to getAttrs", () => {
       const getAttrs = (props, eventArgs) => ({
         someArg: eventArgs[0].three,
-        someProp: props.one
+        someProp: props.one,
       });
       const attrs = resolveAttrs(getAttrs, { one: "two" }, [{ three: "four" }]);
 
       expect(attrs).toEqual({
         someArg: "four",
-        someProp: "two"
+        someProp: "two",
       });
     });
   });

@@ -2,44 +2,44 @@ export default {
   description: [
     {
       attributes: {
-        value: "Test "
+        value: "Test ",
       },
       children: [],
-      name: "text"
+      name: "text",
     },
     {
       attributes: {},
       children: [
         {
           attributes: {
-            value: "italic "
+            value: "italic ",
           },
           children: [],
-          name: "text"
-        }
+          name: "text",
+        },
       ],
-      name: "italic"
+      name: "italic",
     },
     {
       attributes: {},
       children: [
         {
           attributes: {
-            value: "bold"
+            value: "bold",
           },
           children: [],
-          name: "text"
-        }
+          name: "text",
+        },
       ],
-      name: "bold"
+      name: "bold",
     },
     {
       attributes: {
-        value: " text."
+        value: " text.",
       },
       children: [],
-      name: "text"
-    }
+      name: "text",
+    },
   ],
-  name: "Test Name"
+  name: "Test Name",
 };

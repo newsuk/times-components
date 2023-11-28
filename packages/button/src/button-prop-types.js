@@ -7,7 +7,7 @@ export const propTypes = {
   style: PropTypes.object,
   title: PropTypes.string,
   textStyle: PropTypes.string,
-  underlayColor: PropTypes.string
+  underlayColor: PropTypes.string,
 };
 
 export const defaultProps = {
@@ -16,5 +16,5 @@ export const defaultProps = {
   style: null,
   textStyle: null,
   title: "Submit",
-  underlayColor: null
+  underlayColor: null,
 };

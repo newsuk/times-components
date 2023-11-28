@@ -12,8 +12,8 @@ export default (options = {}) => {
     before(() =>
       cy.task("startMockServerWith", {
         Article: new MockArticle().get(),
-        Author: new MockAuthor().setAuthorArticles(35).get()
-      })
+        Author: new MockAuthor().setAuthorArticles(35).get(),
+      }),
     );
 
     beforeEach(() => {
@@ -54,13 +54,13 @@ export default (options = {}) => {
         rules: [
           {
             id: "color-contrast",
-            enabled: false
+            enabled: false,
           },
           {
             id: "region",
-            enabled: false
-          }
-        ]
+            enabled: false,
+          },
+        ],
       });
       cy.checkA11y(null, null, terminalLog, null);
     });
@@ -73,8 +73,8 @@ export default (options = {}) => {
 
       // changed the position of navigation bar element to absolute, so we don't see
       // duplicate elements floating
-      stickyElements.forEach(selector => {
-        cy.get(selector).then(el => el.css("position", "absolute"));
+      stickyElements.forEach((selector) => {
+        cy.get(selector).then((el) => el.css("position", "absolute"));
       });
       cy.matchImageSnapshot();
     });

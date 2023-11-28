@@ -21,7 +21,7 @@ const renderComments = ({ enabled }) =>
       storefrontConfig="https://www.mockUrl.co.uk"
       url="dummy-article-url"
       isCommentEnabled
-    />
+    />,
   );
 
 describe("comments-login", () => {
@@ -32,7 +32,7 @@ describe("comments-login", () => {
   const xhrMock = {
     open: jest.fn(),
     send: jest.fn(),
-    addEventListener: jest.fn()
+    addEventListener: jest.fn(),
   };
 
   it("uses new commenting service", () => {
@@ -44,7 +44,7 @@ describe("comments-login", () => {
 
     expect(xhrMock.open).toHaveBeenCalledWith(
       "GET",
-      "/api/comments/loginv2?codeA=mock-code-a"
+      "/api/comments/loginv2?codeA=mock-code-a",
     );
   });
 });
@@ -53,11 +53,11 @@ describe("User States", () => {
   it("enabled comments", () => {
     const { asFragment, baseElement } = renderComments({
       count: 123,
-      enabled: true
+      enabled: true,
     });
 
     expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
-      "https://launcher.spot.im/spot/sp_pCQgrRiN"
+      "https://launcher.spot.im/spot/sp_pCQgrRiN",
     );
 
     expect(asFragment()).toMatchSnapshot();
@@ -68,7 +68,7 @@ describe("User States", () => {
 
     const { asFragment, getAllByText } = renderComments({
       count: 123,
-      enabled: true
+      enabled: true,
     });
     expect(getAllByText("Join the conversation").length).toEqual(1);
     expect(asFragment()).toMatchSnapshot();
@@ -79,7 +79,7 @@ describe("User States", () => {
 
     const { asFragment } = renderComments({
       count: 123,
-      enabled: true
+      enabled: true,
     });
     expect(asFragment()).toMatchSnapshot();
   });
@@ -88,7 +88,7 @@ describe("User States", () => {
 it("disabled comments", () => {
   const { asFragment, baseElement } = renderComments({
     count: 123,
-    enabled: false
+    enabled: false,
   });
   expect(baseElement.getElementsByClassName("info").length).toEqual(0);
   expect(asFragment()).toMatchSnapshot();
@@ -107,7 +107,7 @@ it("single comment", () => {
 it("Render comments label, when comments are loaded", () => {
   // eslint-disable-next-line no-undef
   window.SPOTIM = {
-    startSSO: () => {}
+    startSSO: () => {},
   };
 
   const { asFragment } = render(
@@ -120,7 +120,7 @@ it("Render comments label, when comments are loaded", () => {
       commentingConfig={{ account: "sp_pCQgrRiN" }}
       url="dummy-article-url"
       isCommentEnabled
-    />
+    />,
   );
 
   expect(asFragment()).toMatchSnapshot();
@@ -151,7 +151,7 @@ describe("window listeners added", () => {
         commentingConfig={{ account: "sp_pCQgrRiN" }}
         url="dummy-article-url"
         isCommentEnabled
-      />
+      />,
     );
     expect(Object.keys(listeners)).toMatchSnapshot();
   });

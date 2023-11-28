@@ -5,7 +5,7 @@ import {
   CenteredDecorator,
   BarSpacingDecorator,
   LateralSpacingDecorator,
-  WhiteBgColorDecorator
+  WhiteBgColorDecorator,
 } from "../src/storybook";
 import { StrictWrapper } from "../src/showcase-to-storybook";
 import "./shared-showcase";
@@ -46,7 +46,7 @@ export default () => {
       .create(
         <StrictWrapper>
           <WrappedComponent />
-        </StrictWrapper>
+        </StrictWrapper>,
       )
       .toJSON();
     expect(component).toMatchSnapshot();

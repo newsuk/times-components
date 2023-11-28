@@ -2,7 +2,7 @@ import {
   styled,
   getMediaQueryFromTheme,
   Stack,
-  getColorCssFromTheme
+  getColorCssFromTheme,
 } from 'newskit';
 
 export const StyledIconWrapper = styled(Stack)`

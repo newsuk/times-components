@@ -44,7 +44,7 @@
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "jest": "24.8.0",
-    "prettier": "1.14.3",
+    "prettier": "3.1.0",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "stylelint": "9.4.0",

@@ -9,8 +9,8 @@ describe("The Web serializer should", () => {
       test: {
         color: "red",
         flex: 1,
-        fontSize: 14
-      }
+        fontSize: 14,
+      },
     };
 
     const component = <TcText style={styles.test} testFunc={() => {}} />;
@@ -22,11 +22,11 @@ describe("The Web serializer should", () => {
   it("effect children", () => {
     const styles = {
       child: {
-        fontSize: 9
+        fontSize: 9,
       },
       parent: {
-        flex: 1
-      }
+        flex: 1,
+      },
     };
 
     const component = (
@@ -42,18 +42,18 @@ describe("The Web serializer should", () => {
   it("effect multiple children", () => {
     const styles = {
       child1: {
-        fontSize: 9
+        fontSize: 9,
       },
       child2: {
-        fontSize: 10
+        fontSize: 10,
       },
       child3: {
-        fontSize: 11
+        fontSize: 11,
       },
       parent: {
         backgroundColor: "red",
-        flex: 1
-      }
+        flex: 1,
+      },
     };
 
     const component = (
@@ -73,18 +73,18 @@ describe("The Web serializer should", () => {
   it("squash identical styles", () => {
     const styles = {
       child1: {
-        fontSize: 10
+        fontSize: 10,
       },
       child2: {
-        fontSize: 10
+        fontSize: 10,
       },
       child3: {
-        fontSize: 10
+        fontSize: 10,
       },
       parent: {
         backgroundColor: "red",
-        flex: 1
-      }
+        flex: 1,
+      },
     };
 
     const component = (
@@ -104,11 +104,11 @@ describe("The Web serializer should", () => {
   it("effect render props", () => {
     const styles = {
       child: {
-        fontSize: 9
+        fontSize: 9,
       },
       parent: {
-        flex: 1
-      }
+        flex: 1,
+      },
     };
 
     const Container = ({ renderProp }) => <TcView prop={renderProp} />;

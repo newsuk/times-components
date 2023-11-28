@@ -18,7 +18,7 @@ export const NavItems: React.FC<{
             marginBlockStart: '-2px',
             marginInlineEnd: '-2px',
             stylePreset: 'secondaryMenuItem',
-            typographyPreset: 'secondaryNavMenuItemMob'
+            typographyPreset: 'secondaryNavMenuItemMob',
           }}
           href={url}
           id={`vertical-${slug}`}

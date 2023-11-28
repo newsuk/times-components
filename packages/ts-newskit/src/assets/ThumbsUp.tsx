@@ -12,7 +12,7 @@ const ThumbsUpIcon = (props: any) => (
     <mask
       id="mask0_3112_40861"
       style={{
-        maskType: 'alpha'
+        maskType: 'alpha',
       }}
       maskUnits="userSpaceOnUse"
       x="8"

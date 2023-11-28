@@ -9,7 +9,7 @@ const articleListProps = {
   onArticlePress: () => {},
   onTwitterLinkPress: () => {},
   refetch: () => {},
-  showImages: true
+  showImages: true,
 };
 
 export default articleListProps;

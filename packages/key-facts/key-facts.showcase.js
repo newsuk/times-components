@@ -7,22 +7,22 @@ export default {
   children: [
     {
       decorator: LateralSpacingDecorator,
-      type: "decorator"
+      type: "decorator",
     },
     {
       component: ({ select }) =>
         renderKeyFacts({ ast: data, hasScaling: false, select }),
       name: "with title",
       platform: "web",
-      type: "story"
+      type: "story",
     },
     {
       component: ({ select }) =>
         renderKeyFacts({ ast: dataNoTitle, hasScaling: false, select }),
       name: "without title",
       platform: "web",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Composed/Key Facts"
+  name: "Composed/Key Facts",
 };

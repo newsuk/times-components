@@ -9,7 +9,7 @@ export const propTypes = {
   error: PropTypes.object, // ApolloError, TS will be better here
   pageSize: PropTypes.number,
   receiveChildList: PropTypes.func,
-  refetch: PropTypes.func.isRequired
+  refetch: PropTypes.func.isRequired,
 };
 
 export const defaultProps = {
@@ -17,5 +17,5 @@ export const defaultProps = {
   articles: [],
   error: null,
   pageSize: 10,
-  receiveChildList: () => {}
+  receiveChildList: () => {},
 };

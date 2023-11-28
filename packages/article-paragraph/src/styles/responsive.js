@@ -4,28 +4,28 @@ import {
   colours,
   fontsWithFallback,
   fontSizes,
-  spacing
+  spacing,
 } from "@times-components/ts-styleguide";
 
 const dropCapFontSizes = {
   cultureMagazine: 104,
   dropCap: 110,
   stMagazine: 105,
-  styleMagazine: 103
+  styleMagazine: 103,
 };
 
 const lineHeights = {
   cultureMagazine: 0.85,
   dropCap: 0.55,
   stMagazine: 0.7,
-  styleMagazine: 0.8
+  styleMagazine: 0.8,
 };
 
 const dropCapMargins = {
   cultureMagazine: -0.06,
   dropCap: 0.2,
   stMagazine: 0.065,
-  styleMagazine: -0.01
+  styleMagazine: -0.01,
 };
 
 export const Paragraph = styled.p`

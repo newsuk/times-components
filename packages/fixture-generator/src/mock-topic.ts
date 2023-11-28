@@ -4,7 +4,7 @@ import MockArticle from "./mock-article";
 
 const getTopicArticles = (count: number): TopicArticles => ({
   count,
-  list: new Array(count).fill(new MockArticle().get())
+  list: new Array(count).fill(new MockArticle().get()),
 });
 
 class MockTopic {
@@ -21,13 +21,13 @@ class MockTopic {
         nodes: [],
         pageInfo: {
           hasNextPage: false,
-          hasPreviousPage: false
+          hasPreviousPage: false,
         },
-        totalCount: 0
+        totalCount: 0,
       },
       articleConnection: {
-        nodes: []
-      }
+        nodes: [],
+      },
     };
   }
 

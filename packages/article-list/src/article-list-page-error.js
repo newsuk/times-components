@@ -6,7 +6,7 @@ import propTypes from "./article-list-error-prop-types";
 import {
   PageErrorContainer,
   PageErrorImageContainer,
-  PageErrorContentContainer
+  PageErrorContentContainer,
 } from "./styles/responsive";
 import { retryButtonStyles } from "./styles/index";
 

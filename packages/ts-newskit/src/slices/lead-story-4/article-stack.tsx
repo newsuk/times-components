@@ -9,7 +9,7 @@ export const ArticleStacks = ({
   articles,
   clickHandler,
   isMediumBreakPoint,
-  hasTopBorder
+  hasTopBorder,
 }: {
   articles: ArticleProps[];
   clickHandler: ClickHandlerType;
@@ -22,12 +22,12 @@ export const ArticleStacks = ({
         xs: '170px 1px 170px 1px 170px 1px 170px',
         md: isMediumBreakPoint ? '1fr 1px 1fr 1px 1fr' : '1fr',
         lg: '1fr 1fr',
-        xl: '1fr 1fr'
+        xl: '1fr 1fr',
       }}
       style={{ position: 'relative' }}
       columnGap={{
         xs: 'space040',
-        md: isMediumBreakPoint ? 'space040' : 'space060'
+        md: isMediumBreakPoint ? 'space040' : 'space060',
       }}
       rowGap={isMediumBreakPoint ? 'space000' : 'space040'}
       data-testid={`article-container-desktop`}
@@ -48,7 +48,7 @@ export const ArticleStacks = ({
                 <Article
                   article={{
                     ...clearCreditsAndCaption(article),
-                    hasTopBorder
+                    hasTopBorder,
                   }}
                   clickHandler={clickHandler}
                 />
@@ -57,7 +57,7 @@ export const ArticleStacks = ({
               <Article
                 article={{
                   ...clearCreditsAndCaption(article),
-                  hasTopBorder: article.hasTopBorder
+                  hasTopBorder: article.hasTopBorder,
                 }}
                 clickHandler={clickHandler}
               />
@@ -77,7 +77,7 @@ export const ArticleStacks = ({
 
 export const ArticleStacksLgAndXl = ({
   articles,
-  clickHandler
+  clickHandler,
 }: {
   articles: ArticleProps[];
   clickHandler: ClickHandlerType;
@@ -88,7 +88,7 @@ export const ArticleStacksLgAndXl = ({
         const articleBorder = articleIndex < articleArr.length - 1 && (
           <Divider
             overrides={{
-              stylePreset: 'lightDivider'
+              stylePreset: 'lightDivider',
             }}
             vertical
           />
@@ -97,7 +97,7 @@ export const ArticleStacksLgAndXl = ({
           <React.Fragment key={article.headline}>
             <Article
               article={{
-                ...clearCreditsAndCaption(article)
+                ...clearCreditsAndCaption(article),
               }}
               clickHandler={clickHandler}
             />

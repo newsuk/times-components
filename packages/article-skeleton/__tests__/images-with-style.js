@@ -5,7 +5,7 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  stylePrinter
+  stylePrinter,
 } from "@times-components/jest-serializer";
 import "./mocks";
 import shared from "./images.base";
@@ -17,11 +17,11 @@ export default () => {
       stylePrinter,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => key !== "style" && key !== "className"
+        (value, key) => key !== "style" && key !== "className",
       ),
       flattenStyleTransform,
-      hoistStyleTransform
-    )
+      hoistStyleTransform,
+    ),
   );
 
   // eslint-disable-next-line global-require
@@ -32,14 +32,14 @@ export default () => {
   beforeEach(() => {
     global.Intl = {
       DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Europe/London" })
-      })
+        resolvedOptions: () => ({ timeZone: "Europe/London" }),
+      }),
     };
 
     const nuk = {
       user: {
-        isLoggedIn: true
-      }
+        isLoggedIn: true,
+      },
     };
     global.nuk = nuk;
   });

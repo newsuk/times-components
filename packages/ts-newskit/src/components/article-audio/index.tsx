@@ -4,7 +4,7 @@ import {
   Block,
   Stack,
   TextBlock,
-  Visible
+  Visible,
 } from 'newskit';
 import React, { useEffect, useRef, useState } from 'react';
 import { Feedback } from './feedback';
@@ -14,7 +14,7 @@ import { StickyPlayerMob } from './sticky-player/stickyplayer.mob';
 import {
   AudioPlayerContainer,
   StickyAudioPlayer,
-  StickyAudioPlayerContainer
+  StickyAudioPlayerContainer,
 } from './styles';
 
 type FeedbackProps = {
@@ -39,7 +39,7 @@ export const InArticleAudio = ({
   playingText = 'Playing',
   narrator,
   headline,
-  feedback
+  feedback,
 }: InArticleAudioProps) => {
   const [isPlayed, setIsPlayed] = useState<boolean>(false);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
@@ -55,33 +55,30 @@ export const InArticleAudio = ({
     setIsPlaying(!isPlaying);
   };
 
-  useEffect(
-    () => {
-      const checkIfClickedOutside = (e: any) => {
-        if (
-          isExpanded &&
-          audioRef.current &&
-          !audioRef.current.contains(e.target)
-        ) {
-          setIsExpanded(!isExpanded);
-        }
-      };
+  useEffect(() => {
+    const checkIfClickedOutside = (e: any) => {
+      if (
+        isExpanded &&
+        audioRef.current &&
+        !audioRef.current.contains(e.target)
+      ) {
+        setIsExpanded(!isExpanded);
+      }
+    };
 
-      document.addEventListener('click', checkIfClickedOutside);
+    document.addEventListener('click', checkIfClickedOutside);
 
-      return () => {
-        document.removeEventListener('click', checkIfClickedOutside);
-      };
-    },
-    [isExpanded]
-  );
+    return () => {
+      document.removeEventListener('click', checkIfClickedOutside);
+    };
+  }, [isExpanded]);
 
   return (
     <AudioPlayerContainer
       ref={audioRef}
       className={[
         'article-audio-container',
-        showAudioPlayer ? 'opShow_articleAudio' : 'opHide_articleAudio'
+        showAudioPlayer ? 'opShow_articleAudio' : 'opHide_articleAudio',
       ].join(' ')}
     >
       <AudioPlayerComposable src={src}>
@@ -91,16 +88,16 @@ export const InArticleAudio = ({
             overrides={{
               height: {
                 xs: 'sizing060',
-                sm: 'sizing080'
+                sm: 'sizing080',
               },
               width: {
                 xs: 'sizing060',
-                sm: 'sizing080'
+                sm: 'sizing080',
               },
               iconSize: {
                 xs: 'sizing040',
-                sm: 'sizing050'
-              }
+                sm: 'sizing050',
+              },
             }}
             data-testid={
               isPlaying ? 'audio-player-pause-btn' : 'audio-player-play-btn'
@@ -122,14 +119,12 @@ export const InArticleAudio = ({
           </Block>
         </Stack>
 
-        {isPlayed &&
-          feedback &&
-          feedback.requestFeedback && (
-            <Feedback
-              feedbackMessage={feedback.feedbackMessage}
-              message={feedback.thankyouMessage}
-            />
-          )}
+        {isPlayed && feedback && feedback.requestFeedback && (
+          <Feedback
+            feedbackMessage={feedback.feedbackMessage}
+            message={feedback.thankyouMessage}
+          />
+        )}
 
         {showStickyPlayer && (
           <StickyAudioPlayerContainer>
@@ -142,7 +137,7 @@ export const InArticleAudio = ({
                     setShowStickyPlayer,
                     setIsExpanded,
                     handleClickPlayPause,
-                    isPlaying
+                    isPlaying,
                   }}
                 />
                 {isExpanded && (
@@ -152,7 +147,7 @@ export const InArticleAudio = ({
                       narrator,
                       setIsExpanded,
                       isPlaying,
-                      handleClickPlayPause
+                      handleClickPlayPause,
                     }}
                   />
                 )}

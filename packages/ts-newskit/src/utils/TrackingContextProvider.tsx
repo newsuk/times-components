@@ -19,16 +19,14 @@ export type TrackingContextType = TrackingContextProps & {
 };
 
 const TrackingContext = React.createContext<TrackingContextType>({
-  context: {}
+  context: {},
 });
 
 type TrackingContextChildren = {
   children:
-    | ((
-        props: {
-          fireAnalyticsEvent: (evt: TrackingContext) => void;
-        }
-      ) => JSX.Element | JSX.Element[])
+    | ((props: {
+        fireAnalyticsEvent: (evt: TrackingContext) => void;
+      }) => JSX.Element | JSX.Element[])
     | JSX.Element
     | JSX.Element[];
 };
@@ -38,7 +36,7 @@ export const useTrackingContext = () => useContext(TrackingContext);
 export const TrackingContextProvider = ({
   children,
   analyticsStream,
-  context
+  context,
 }: TrackingContextProps & TrackingContextChildren) => {
   const parentTrackingContext = useContext(TrackingContext);
   const stream =
@@ -51,8 +49,8 @@ export const TrackingContextProvider = ({
   const fireAnalyticsEvent = (event: TrackingContext) => {
     const aggregatedEvent = merge({}, aggregatedContext, event, {
       attrs: {
-        eventTime: new Date().toISOString()
-      }
+        eventTime: new Date().toISOString(),
+      },
     });
 
     stream
@@ -66,7 +64,7 @@ export const TrackingContextProvider = ({
       value={{
         fireAnalyticsEvent,
         context: aggregatedContext,
-        analyticsStream: stream
+        analyticsStream: stream,
       }}
     >
       {typeof children === 'function'

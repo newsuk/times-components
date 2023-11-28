@@ -18,7 +18,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     sharingSavingFlag = true,
     commentingFlag = true,
     showAudioPlayer,
-    storefrontConfig
+    storefrontConfig,
   } = window.nuk.article;
 
   const { getCookieValue } = window.nuk;
@@ -39,17 +39,17 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     sharingSavingFlag,
     commentingFlag,
     showAudioPlayer,
-    storefrontConfig
+    storefrontConfig,
   };
 
   const clientOptions = {
     rootTag,
     useGET: true,
     headers: {
-      "x-new-topic-data-source": true
+      "x-new-topic-data-source": true,
     },
     zephrDivs,
-    showAudioPlayer
+    showAudioPlayer,
   };
 
   runClient(article, clientOptions, data);

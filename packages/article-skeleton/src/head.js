@@ -23,7 +23,7 @@ function reduceTilesToTitles(tiles, prefix = "") {
     return acc;
   }, []);
 
-  return sections.map(section => prefix + section.title);
+  return sections.map((section) => prefix + section.title);
 }
 function getSectionName(article) {
   const { tiles } = article;
@@ -33,7 +33,7 @@ function getSectionName(article) {
     return null;
   }
 
-  const nonNews = titles.filter(title => title !== "News");
+  const nonNews = titles.filter((title) => title !== "News");
 
   return nonNews.length ? nonNews[0] : "News";
 }
@@ -46,7 +46,7 @@ function getSectionNameList(article) {
   }
 
   const uniqueSectionsArr = titles.filter(
-    (item, pos, self) => self.indexOf(item) === pos
+    (item, pos, self) => self.indexOf(item) === pos,
   );
   const maxUniqueSections = 2;
   const uniqueSections = uniqueSectionsArr
@@ -69,9 +69,9 @@ function getIsLiveBlogExpiryTime(articleFlags = []) {
 function getIsLiveBlog(articleFlags = []) {
   if (articleFlags !== undefined) {
     const articleLiveFlag = articleFlags.find(
-      flag =>
+      (flag) =>
         flag.type === "LIVE" &&
-        (Date.now() < new Date(flag.expiryTime) || flag.expiryTime === null)
+        (Date.now() < new Date(flag.expiryTime) || flag.expiryTime === null),
     );
     return articleLiveFlag !== undefined;
   }
@@ -94,7 +94,7 @@ function getAuthorAsText(article) {
 }
 
 function getAuthors({ bylines }) {
-  return bylines.map(byline => byline.author).filter(author => author);
+  return bylines.map((byline) => byline.author).filter((author) => author);
 }
 
 function getAuthorSchema(article) {
@@ -106,7 +106,7 @@ function getAuthorSchema(article) {
           "@type": "Person",
           name,
           jobTitle,
-          sameAs: twitter ? [url, `https://twitter.com/${twitter}`] : url
+          sameAs: twitter ? [url, `https://twitter.com/${twitter}`] : url,
         };
       })
     : [];
@@ -114,26 +114,26 @@ function getAuthorSchema(article) {
 
 const PUBLICATION_NAMES = {
   SUNDAYTIMES: "The Sunday Times",
-  TIMES: "The Times"
+  TIMES: "The Times",
 };
 
-const get169CropUrl = asset => get(asset, "crop169.url", null);
+const get169CropUrl = (asset) => get(asset, "crop169.url", null);
 
-const getVideoLeadAssetUrl = article =>
+const getVideoLeadAssetUrl = (article) =>
   get169CropUrl(
-    get(article, "leadAsset.posterImage", get(article, "leadAsset", null))
+    get(article, "leadAsset.posterImage", get(article, "leadAsset", null)),
   );
 
-const getImageLeadAssetUrl = article =>
+const getImageLeadAssetUrl = (article) =>
   get169CropUrl(get(article, "leadAsset", null));
 
-const getArticleLeadAssetUrl = article =>
+const getArticleLeadAssetUrl = (article) =>
   (article.hasVideo ? getVideoLeadAssetUrl : getImageLeadAssetUrl)(article);
 
-const getThumbnailUrlFromImage = article => {
+const getThumbnailUrlFromImage = (article) => {
   const tileUrl =
     article.tiles &&
-    article.tiles.find(tile => get(tile.leadAsset, "crop169.url", null));
+    article.tiles.find((tile) => get(tile.leadAsset, "crop169.url", null));
 
   if (tileUrl) {
     return tileUrl;
@@ -148,7 +148,7 @@ const getThumbnailUrlFromImage = article => {
   return get(article.leadAsset, "crop169.url", null);
 };
 
-const getThumbnailUrl = article => {
+const getThumbnailUrl = (article) => {
   const { hasVideo, leadAsset } = article;
   const thumbnailUrl = hasVideo
     ? getVideoLeadAssetUrl(article)
@@ -181,7 +181,7 @@ const getLiveBlogUpdates = (article, publisher, author) => {
 
   if (content !== undefined) {
     let update;
-    const loopContent = contentObj => {
+    const loopContent = (contentObj) => {
       for (let i = 0; i < contentObj.length; i += 1) {
         if (contentObj[i].name === "interactive") {
           if (
@@ -200,9 +200,9 @@ const getLiveBlogUpdates = (article, publisher, author) => {
               publisher,
               url: `${article.url}#${anchorString(
                 attributes.updated,
-                attributes.headline
+                attributes.headline,
               )}`,
-              author
+              author,
             };
           }
         } else if (contentObj[i].name === "paragraph") {
@@ -219,14 +219,14 @@ const getLiveBlogUpdates = (article, publisher, author) => {
             update.image = {
               "@type": "ImageObject",
               url: contentObj[i].attributes.url,
-              caption: contentObj[i].attributes.caption
+              caption: contentObj[i].attributes.caption,
             };
           }
         } else if (contentObj[i].name === "video") {
           if (update !== undefined) {
             update.video = {
               "@type": "VideoObject",
-              thumbnail: contentObj[i].attributes.posterImageUrl
+              thumbnail: contentObj[i].attributes.posterImageUrl,
             };
           }
         } else if (contentObj[i].name === "paywall") {
@@ -253,7 +253,7 @@ function Head({
   logoUrl,
   paidContentClassName,
   getFallbackThumbnailUrl169,
-  swgProductId
+  swgProductId,
 }) {
   const {
     descriptionMarkup,
@@ -267,7 +267,7 @@ function Head({
     seoDescription,
     keywords,
     url,
-    id
+    id,
   } = article;
 
   const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
@@ -298,7 +298,7 @@ function Head({
 
   const defaultAuthorSchema = {
     "@type": "Organization",
-    name: "The Times"
+    name: "The Times",
   };
   const textByLineAuthorSchema = authorName
     ? { "@type": "Person", name: authorName }
@@ -311,13 +311,13 @@ function Head({
     name: publication,
     logo: {
       "@type": "ImageObject",
-      url: logoUrl
-    }
+      url: logoUrl,
+    },
   };
   const liveBlogUpdateSchema = getLiveBlogUpdates(
     article,
     publisherSchema,
-    authorSchema
+    authorSchema,
   );
 
   const jsonLD = {
@@ -329,11 +329,11 @@ function Head({
       name: publication,
       logo: {
         "@type": "ImageObject",
-        url: logoUrl
-      }
+        url: logoUrl,
+      },
     },
     mainEntityOfPage: {
-      "@type": "WebPage"
+      "@type": "WebPage",
     },
     dateCreated: publishedTime,
     datePublished,
@@ -341,12 +341,12 @@ function Head({
     hasPart: {
       "@type": "WebPageElement",
       isAccessibleForFree: false,
-      cssSelector: `.${paidContentClassName}`
+      cssSelector: `.${paidContentClassName}`,
     },
     image: {
       "@type": "ImageObject",
       url: leadassetUrl,
-      caption
+      caption,
     },
     thumbnailUrl,
     dateModified,
@@ -354,14 +354,14 @@ function Head({
     articleSection: sectionname,
     keywords: sectionNameList,
     articleId: id,
-    url
+    url,
   };
 
   if (swgProductId) {
     jsonLD.isPartOf = {
       "@type": ["CreativeWork", "Product"],
       name: "The Times & The Sunday Times",
-      productID: swgProductId
+      productID: swgProductId,
     };
   }
 
@@ -376,7 +376,7 @@ function Head({
           Array.isArray(descriptionMarkup) && descriptionMarkup.length
             ? renderTreeAsText({ children: descriptionMarkup })
             : seoDescription || leadAsset.title || title,
-        contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
+        contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`,
       }
     : null;
 
@@ -387,7 +387,7 @@ function Head({
     description: seoDescription,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": url
+      "@id": url,
     },
     datePublished: publishedTime,
     dateModified: updatedTime,
@@ -398,13 +398,13 @@ function Head({
     image: {
       "@type": "ImageObject",
       url: leadassetUrl,
-      caption
+      caption,
     },
     publisher: publisherSchema,
     author: authorSchema,
     liveBlogUpdate: liveBlogUpdateSchema,
     articleSection: sectionname,
-    articleId: id
+    articleId: id,
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
@@ -471,16 +471,16 @@ Head.propTypes = {
     publicationName: PropTypes.string.isRequired,
     shortHeadline: PropTypes.string,
     shortIdentifier: PropTypes.string.isRequired,
-    tiles: PropTypes.array
+    tiles: PropTypes.array,
   }).isRequired,
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
-  swgProductId: PropTypes.string
+  swgProductId: PropTypes.string,
 };
 
 Head.defaultProps = {
-  swgProductId: null
+  swgProductId: null,
 };
 
 export default Head;

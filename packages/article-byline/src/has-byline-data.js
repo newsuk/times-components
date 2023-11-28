@@ -1,4 +1,4 @@
-export default bylines =>
+export default (bylines) =>
   bylines &&
   bylines.length > 0 &&
   bylines[0].byline &&

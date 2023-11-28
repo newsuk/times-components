@@ -3,7 +3,7 @@ import { colours } from "@times-components/ts-styleguide";
 import { defaultProps, propTypes } from "./gradient-prop-types";
 import GradientBase from "./gradient.base";
 
-const Gradient = props => (
+const Gradient = (props) => (
   <GradientBase
     endColour={colours.functional.backgroundSecondary}
     startColour={colours.functional.backgroundPrimary}

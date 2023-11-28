@@ -9,7 +9,7 @@ describe('sanitiseCopy', () => {
   it('should return html content correctly', () => {
     const text = sanitiseCopy(
       '<a href="www.some-url.com">Click here</a> if you want to <b>live</b>',
-      { a: ['href'] }
+      { a: ['href'] },
     );
     expect(text).toBe('<a href>Click here</a> if you want to live');
   });

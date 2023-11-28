@@ -1,16 +1,16 @@
-const insertNativeAd = children => {
+const insertNativeAd = (children) => {
   const clonedChildren = [...children];
-  const child = clonedChildren.find(item => item.name === "paywall");
-  const paragraph = clonedChildren.filter(x => x.name === "paragraph");
+  const child = clonedChildren.find((item) => item.name === "paywall");
+  const paragraph = clonedChildren.filter((x) => x.name === "paragraph");
 
   if (!child) {
     const nativeAdExists = clonedChildren.find(
-      item => item.name === "nativeAd"
+      (item) => item.name === "nativeAd",
     );
     if (!nativeAdExists) {
       clonedChildren.splice(2, 0, {
         name: "nativeAd",
-        children: []
+        children: [],
       });
     }
 
@@ -21,12 +21,12 @@ const insertNativeAd = children => {
   const paywallChildren = child.children;
   const paragraphItems = paywallChildren
     .map((item, index) => ({ ...item, index }))
-    .filter(item => item.name === "paragraph");
+    .filter((item) => item.name === "paragraph");
   const indexToAdd = paragraphItems[paragraphCount]
     ? paragraphItems[paragraphCount].index
     : null;
   // checks if nativeAd only renders once
-  const nativeAd = paywallChildren.find(item => item.name === "nativeAd");
+  const nativeAd = paywallChildren.find((item) => item.name === "nativeAd");
 
   if (nativeAd) {
     return clonedChildren;
@@ -35,7 +35,7 @@ const insertNativeAd = children => {
   if (indexToAdd && indexToAdd !== null) {
     paywallChildren.splice(indexToAdd, 0, {
       name: "nativeAd",
-      children: []
+      children: [],
     });
   }
 

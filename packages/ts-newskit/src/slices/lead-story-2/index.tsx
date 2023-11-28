@@ -2,14 +2,14 @@ import { Block, Divider, Visible } from 'newskit';
 import React from 'react';
 import {
   LeadArticle,
-  LeadArticleProps
+  LeadArticleProps,
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
 import {
   LeadStoryDivider,
   StackItem,
   BlockItem,
-  LeadStoryContainer
+  LeadStoryContainer,
 } from '../shared-styles';
 import { ArticleStack } from './article-stacks';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
@@ -30,7 +30,7 @@ export const LeadStory2 = ({
   articles,
   verticalArticles,
   horizontalArticles,
-  clickHandler
+  clickHandler,
 }: LeadStory2Props) => {
   const modifiedLeadArticle = {
     ...leadArticle,
@@ -38,8 +38,8 @@ export const LeadStory2 = ({
     textBlockMarginBlockStart: 'space050',
     headlineTypographyPreset: {
       xs: 'editorialHeadline040',
-      md: 'editorialHeadline060'
-    }
+      md: 'editorialHeadline060',
+    },
   };
 
   return (
@@ -49,10 +49,10 @@ export const LeadStory2 = ({
           xs: '100%',
           md: '720px',
           lg: '757px',
-          xl: '840px'
+          xl: '840px',
         }}
         marginInlineEnd={{
-          lg: 'space060'
+          lg: 'space060',
         }}
       >
         <Block>
@@ -68,22 +68,22 @@ export const LeadStory2 = ({
                 imageTop: true,
                 contentWidth: {
                   xs: '246px auto',
-                  xl: '274px auto'
-                }
+                  xl: '274px auto',
+                },
               }}
               clickHandler={clickHandler}
             />
             <FullWidthBlock
               paddingInline={{
                 xs: 'space045',
-                md: 'space000'
+                md: 'space000',
               }}
             >
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
                   marginBlockStart: 'space040',
-                  marginBlockEnd: 'space040'
+                  marginBlockEnd: 'space040',
                 }}
               />
             </FullWidthBlock>
@@ -94,15 +94,15 @@ export const LeadStory2 = ({
                 ...modifiedLeadArticle,
                 contentWidth: {
                   xs: '246px auto',
-                  xl: '274px auto'
-                }
+                  xl: '274px auto',
+                },
               }}
               clickHandler={clickHandler}
             />
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
-                marginBlock: 'space040'
+                marginBlock: 'space040',
               }}
             />
           </Visible>
@@ -111,7 +111,7 @@ export const LeadStory2 = ({
             horizontalArticles={horizontalArticles}
             horizontalArticleContentWidth={{
               md: '230px',
-              xl: '258px'
+              xl: '258px',
             }}
             clickHandler={clickHandler}
           />

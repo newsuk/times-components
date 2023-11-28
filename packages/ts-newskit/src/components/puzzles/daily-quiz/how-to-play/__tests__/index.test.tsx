@@ -11,7 +11,7 @@ describe('HowToPlay component', () => {
 
   it('renders with custom title and header', () => {
     const { container } = render(
-      <HowToPlay title="Custom Title" header="Custom Header" />
+      <HowToPlay title="Custom Title" header="Custom Header" />,
     );
     expect(container).toMatchSnapshot();
   });
@@ -27,13 +27,13 @@ describe('HowToPlay component', () => {
   it('renders list items when listItems prop is provided', () => {
     const listItems = ['Item 1', 'Item 2', 'Item 3'];
     const { getByTestId, queryByText } = render(
-      <HowToPlay listItems={listItems} />
+      <HowToPlay listItems={listItems} />,
     );
     const openButton = getByTestId('modal-open-button');
 
     fireEvent.click(openButton);
 
-    listItems.forEach(item => {
+    listItems.forEach((item) => {
       const listItemElement = queryByText(item);
       expect(listItemElement).toBeInTheDocument();
     });

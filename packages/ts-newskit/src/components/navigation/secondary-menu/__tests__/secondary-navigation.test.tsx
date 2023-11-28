@@ -7,12 +7,12 @@ import {
   cleanup,
   fireEvent,
   getAllByTestId,
-  waitFor
+  waitFor,
 } from '@testing-library/react';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('sm')
+  useBreakpointKey: jest.fn().mockReturnValue('sm'),
 }));
 
 const mockClickHandler = jest.fn();
@@ -34,7 +34,7 @@ describe('Secondary Menu', () => {
           // noop
         }}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -50,17 +50,17 @@ describe('Secondary Menu', () => {
           // noop
         }}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
 
     const firstMenuItem = getAllByTestId(container, 'buttonLink')[0];
     const secondMenuItem = getAllByTestId(container, 'buttonLink')[1];
 
     expect(firstMenuItem).toHaveStyle({
-      'border-bottom': '4px solid transparent'
+      'border-bottom': '4px solid transparent',
     });
     expect(secondMenuItem).toHaveStyle({
-      'border-bottom': '4px solid transparent'
+      'border-bottom': '4px solid transparent',
     });
   });
 
@@ -76,17 +76,17 @@ describe('Secondary Menu', () => {
           // noop
         }}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
 
     const firstMenuItem = getAllByTestId(container, 'buttonLink')[0];
     const secondMenuItem = getAllByTestId(container, 'buttonLink')[1];
 
     expect(firstMenuItem).toHaveStyle({
-      'border-bottom': '4px solid #01000d'
+      'border-bottom': '4px solid #01000d',
     });
     expect(secondMenuItem).toHaveStyle({
-      'border-bottom': '4px solid transparent'
+      'border-bottom': '4px solid transparent',
     });
   });
 
@@ -102,7 +102,7 @@ describe('Secondary Menu', () => {
           // noop
         }}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const SeeAllButton = getByTestId('menu-sub-button');
     fireEvent.click(SeeAllButton);

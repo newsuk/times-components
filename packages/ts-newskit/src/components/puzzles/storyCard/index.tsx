@@ -9,7 +9,7 @@ import {
   CardLink,
   Headline,
   GridLayout,
-  Divider
+  Divider,
 } from 'newskit';
 
 import { ImgWrap } from './styles';
@@ -34,7 +34,7 @@ export const StoryCard: FC<StoryCardProps> = ({
   timeToRead,
   imgHiddenMobile,
   hiddenMobile,
-  mobileDivider
+  mobileDivider,
 }) => {
   return (
     <Visible xs={!hiddenMobile} sm={!hiddenMobile} md lg xl>
@@ -53,7 +53,7 @@ export const StoryCard: FC<StoryCardProps> = ({
                 src: image,
                 placeholderIcon: true,
                 fit: 'cover',
-                loading: 'lazy'
+                loading: 'lazy',
               }}
             />
           ) : (
@@ -67,9 +67,9 @@ export const StoryCard: FC<StoryCardProps> = ({
             data-testid="storyCard-link"
             overrides={{
               externalIcon: {
-                size: '0'
+                size: '0',
               },
-              stylePreset: 'inkContrast'
+              stylePreset: 'inkContrast',
             }}
           >
             <Headline
@@ -78,9 +78,9 @@ export const StoryCard: FC<StoryCardProps> = ({
                 marginBlockEnd: 'space040',
                 marginBlockStart: {
                   xs: imgHiddenMobile ? '' : 'space040',
-                  md: 'space040'
+                  md: 'space040',
                 },
-                typographyPreset: 'editorialHeadline020'
+                typographyPreset: 'editorialHeadline020',
               }}
             >
               {title}
@@ -95,7 +95,7 @@ export const StoryCard: FC<StoryCardProps> = ({
                 typographyPreset: 'utilityLabel010',
                 minHeight: '16px',
                 paddingBlock: '0',
-                paddingInline: '0'
+                paddingInline: '0',
               }}
             >
               {category}
@@ -106,7 +106,7 @@ export const StoryCard: FC<StoryCardProps> = ({
                 typographyPreset: 'utilityLabel010',
                 minHeight: '16px',
                 paddingBlock: '0',
-                paddingInline: '0'
+                paddingInline: '0',
               }}
             >
               {timeToRead}

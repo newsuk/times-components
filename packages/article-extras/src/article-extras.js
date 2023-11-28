@@ -11,7 +11,7 @@ import ArticleTopics from "./article-topics";
 import { ShareAndSaveContainer } from "./styles/responsive";
 
 const clearingStyle = {
-  clear: "both"
+  clear: "both",
 };
 
 const ArticleExtras = ({
@@ -30,12 +30,12 @@ const ArticleExtras = ({
   topics,
   isSharingSavingEnabled,
   isCommentEnabled,
-  storefrontConfig
+  storefrontConfig,
 }) => {
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
-  const sponsoredArticlesAndRelatedArticles = isRecommendedActive => (
+  const sponsoredArticlesAndRelatedArticles = (isRecommendedActive) => (
     <>
-      <div id="related-articles" ref={node => registerNode(node)}>
+      <div id="related-articles" ref={(node) => registerNode(node)}>
         <RelatedArticles
           analyticsStream={analyticsStream}
           isVisible={relatedArticlesVisible}
@@ -104,21 +104,21 @@ ArticleExtras.propTypes = {
   relatedArticleSlice: PropTypes.shape({}),
   relatedArticlesVisible: PropTypes.bool.isRequired,
   commentingConfig: PropTypes.shape({
-    account: PropTypes.string.isRequired
+    account: PropTypes.string.isRequired,
   }).isRequired,
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
   isSharingSavingEnabled: PropTypes.bool,
   isCommentEnabled: PropTypes.bool,
-  storefrontConfig: PropTypes.string.isRequired
+  storefrontConfig: PropTypes.string.isRequired,
 };
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
   topics: null,
   isSharingSavingEnabled: true,
-  isCommentEnabled: true
+  isCommentEnabled: true,
 };
 
 export default ArticleExtras;

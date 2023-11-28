@@ -1,7 +1,7 @@
 import React from "react";
 import { TcView } from "@times-components/utils";
 
-export const CenteredDecorator = storyFn => (
+export const CenteredDecorator = (storyFn) => (
   <TcView
     style={{
       alignItems: "center",
@@ -12,37 +12,37 @@ export const CenteredDecorator = storyFn => (
       left: 0,
       position: "absolute",
       right: 0,
-      top: 0
+      top: 0,
     }}
   >
     {storyFn()}
   </TcView>
 );
 
-export const BarSpacingDecorator = storyFn => (
+export const BarSpacingDecorator = (storyFn) => (
   <TcView
     style={{
       flex: 1,
-      marginTop: 20
+      marginTop: 20,
     }}
   >
     {storyFn()}
   </TcView>
 );
 
-export const LateralSpacingDecorator = storyFn => (
+export const LateralSpacingDecorator = (storyFn) => (
   <TcView
     style={{
       flex: 1,
       marginLeft: 20,
-      marginRight: 20
+      marginRight: 20,
     }}
   >
     {storyFn()}
   </TcView>
 );
 
-export const WhiteBgColorDecorator = storyFn => (
+export const WhiteBgColorDecorator = (storyFn) => (
   <TcView
     style={{
       backgroundColor: "white",
@@ -51,7 +51,7 @@ export const WhiteBgColorDecorator = storyFn => (
       left: 0,
       position: "absolute",
       right: 0,
-      top: 0
+      top: 0,
     }}
   >
     {storyFn()}

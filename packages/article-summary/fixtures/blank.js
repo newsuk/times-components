@@ -9,11 +9,11 @@ const defaultLabel = "Camilla Long";
 export default ({ headline = defaultHeadline, label = defaultLabel } = {}) => ({
   datePublicationProps: {
     date: "2017-07-01T14:32:00.000Z",
-    publication: "SUNDAYTIMES"
+    publication: "SUNDAYTIMES",
   },
   headline: <ArticleSummaryHeadline headline={headline} />,
   labelProps: {
     color: colours.functional.primary,
-    title: label
-  }
+    title: label,
+  },
 });

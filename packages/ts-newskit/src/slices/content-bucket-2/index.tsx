@@ -13,7 +13,7 @@ export interface ContentBucket2Props {
 
 export const ContentBucket2 = ({
   articles,
-  clickHandler
+  clickHandler,
 }: ContentBucket2Props) => (
   <CustomStackLayout>
     <StackItem
@@ -21,13 +21,13 @@ export const ContentBucket2 = ({
         xs: '100%',
         md: '720px',
         lg: '976px',
-        xl: '1276px'
+        xl: '1276px',
       }}
     >
       <GridLayout
         columns={{
           xs: '1fr',
-          md: '1fr 1px 1fr 1px 1fr 1px 1fr'
+          md: '1fr 1px 1fr 1px 1fr 1px 1fr',
         }}
         columnGap="space040"
         rowGap="space000"
@@ -51,7 +51,7 @@ export const ContentBucket2 = ({
                       hideImage: articleIndex > 0,
                       isLeadImage: articleIndex === 0,
                       hasTopBorder: articleIndex > 0,
-                      topBorderStyle: 'lightDashedDivider'
+                      topBorderStyle: 'lightDashedDivider',
                     }}
                     clickHandler={clickHandler}
                   />
@@ -62,7 +62,7 @@ export const ContentBucket2 = ({
                       ...clearCreditsAndCaption(article),
                       hideImage: false,
                       isLeadImage: false,
-                      hasTopBorder: false
+                      hasTopBorder: false,
                     }}
                     clickHandler={clickHandler}
                   />

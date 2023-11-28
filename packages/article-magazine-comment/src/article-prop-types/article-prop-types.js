@@ -1,20 +1,20 @@
 import PropTypes from "prop-types";
 import {
   articlePagePropTypes,
-  articlePageDefaultProps
+  articlePageDefaultProps,
 } from "./article-prop-types.base";
 
 const articlePropTypes = {
   ...articlePagePropTypes,
   commentingConfig: PropTypes.shape({
-    account: PropTypes.string.isRequired
+    account: PropTypes.string.isRequired,
   }).isRequired,
   navigationMode: PropTypes.shape({}).isRequired,
-  storefrontConfig: PropTypes.string.isRequired
+  storefrontConfig: PropTypes.string.isRequired,
 };
 
 const articleDefaultProps = {
-  ...articlePageDefaultProps
+  ...articlePageDefaultProps,
 };
 
 export { articlePropTypes, articleDefaultProps };

@@ -3,7 +3,7 @@ import { Stack, TextBlock, IconButton, LinkInline } from 'newskit';
 import {
   NewsKitCloseIcon,
   NewsKitThumbsDownIcon,
-  NewsKitThumbsUpIcon
+  NewsKitThumbsUpIcon,
 } from '../../../assets';
 
 export const FeedbackText: React.FC<{
@@ -32,7 +32,7 @@ export const FeedbackText: React.FC<{
             overrides={{
               stylePreset: 'feedbackPreset',
               typographyPreset: 'utilityBody020',
-              paddingBlockStart: 'space010'
+              paddingBlockStart: 'space010',
             }}
             external={false}
             href="mailto:comments+engagement@thetimes.co.uk"
@@ -44,7 +44,7 @@ export const FeedbackText: React.FC<{
           overrides={{
             stylePreset: 'iconButtonMinimalSecondary',
             iconSize: 'iconSize080',
-            marginInline: 'space000'
+            marginInline: 'space000',
           }}
           size="small"
           onClick={() => setClosed(!closed)}
@@ -62,7 +62,7 @@ export const FeedbackText: React.FC<{
         <IconButton
           overrides={{
             stylePreset: 'iconButtonOutlinedSecondary',
-            iconSize: 'iconSize080'
+            iconSize: 'iconSize080',
           }}
           size="small"
           onClick={() => handleFeedback(!showFeedback)}
@@ -74,7 +74,7 @@ export const FeedbackText: React.FC<{
         <IconButton
           overrides={{
             stylePreset: 'iconButtonOutlinedSecondary',
-            iconSize: 'iconSize080'
+            iconSize: 'iconSize080',
           }}
           size="small"
           onClick={() => handleFeedback(!showFeedback)}

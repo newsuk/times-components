@@ -1,4 +1,4 @@
-const addMissingProtocol = uri => {
+const addMissingProtocol = (uri) => {
   if (!uri) {
     return null;
   }

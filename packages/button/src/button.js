@@ -10,7 +10,7 @@ const Button = ({ fontSize, lineHeight, onPress, style, title }) => {
     ...styles.button,
     ...style,
     ...fontSizeStyle,
-    ...lineHeightStyle
+    ...lineHeightStyle,
   };
 
   return (

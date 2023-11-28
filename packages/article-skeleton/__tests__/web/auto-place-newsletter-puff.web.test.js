@@ -6,7 +6,7 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 import { scales } from "@times-components/ts-styleguide";
 import Context from "@times-components/context";
@@ -19,7 +19,7 @@ import articleFixture, { testFixture } from "../../fixtures/full-article";
 import {
   content,
   paywallContent,
-  paywallContentWithNewsletter
+  paywallContentWithNewsletter,
 } from "../../fixtures/newsletter";
 
 import ArticleSkeleton from "../../src/article-skeleton";
@@ -29,7 +29,7 @@ jest.mock("@times-components/ts-components", () => ({
   __esModule: true,
   ...jest.requireActual("@times-components/ts-components"),
   InlineNewsletterPuff: "InlineNewsletterPuff",
-  AutoNewsletterPuff: "AutoNewsletterPuff"
+  AutoNewsletterPuff: "AutoNewsletterPuff",
 }));
 
 const omitProps = new Set([
@@ -37,7 +37,7 @@ const omitProps = new Set([
   "className",
   "data-testid",
   "responsiveLinkStyles",
-  "style"
+  "style",
 ]);
 
 addSerializers(
@@ -46,14 +46,14 @@ addSerializers(
   compose(
     print,
     minimalWebTransform,
-    minimaliseTransform((value, key) => omitProps.has(key))
-  )
+    minimaliseTransform((value, key) => omitProps.has(key)),
+  ),
 );
 
 const article = articleFixture({
   ...testFixture,
   withAds: false,
-  content
+  content,
 });
 
 const mocks = [
@@ -61,8 +61,8 @@ const mocks = [
     request: {
       query: getNewsletter,
       variables: {
-        code: "TNL-101"
-      }
+        code: "TNL-101",
+      },
     },
     result: {
       data: {
@@ -70,18 +70,18 @@ const mocks = [
           id: "a2l6E000000CdHzQAK",
           isSubscribed: false,
           title: "RED BOX",
-          __typename: "Newsletter"
-        }
-      }
-    }
-  }
+          __typename: "Newsletter",
+        },
+      },
+    },
+  },
 ];
 
 const renderArticle = (data, isPreview = false) => (
   <MockedProvider mocks={mocks}>
     <Context.Provider
       value={{
-        theme: { scale: scales.medium, sectionColour: "#FF0000" }
+        theme: { scale: scales.medium, sectionColour: "#FF0000" },
       }}
     >
       <ArticleSkeleton

@@ -6,7 +6,7 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  stylePrinter
+  stylePrinter,
 } from "@times-components/jest-serializer";
 
 import shared from "./shared.base";
@@ -19,9 +19,9 @@ export default () => {
       stylePrinter,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => key === "style" || key === "className"
-      )
-    )
+        (value, key) => key === "style" || key === "className",
+      ),
+    ),
   );
 
   iterator(shared());

@@ -9,7 +9,7 @@ class MessageBar extends Component {
     super(props);
     this.closeMessage = this.closeMessage.bind(this);
     this.state = {
-      closeActive: false
+      closeActive: false,
     };
   }
 
@@ -80,7 +80,7 @@ MessageBar.propTypes = {
   close: PropTypes.func.isRequired,
   delay: PropTypes.number.isRequired,
   message: PropTypes.string.isRequired,
-  scale: PropTypes.string.isRequired
+  scale: PropTypes.string.isRequired,
 };
 
 export default MessageBar;

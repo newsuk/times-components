@@ -3,7 +3,7 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 import shared from "./shared.base";
 
@@ -15,9 +15,9 @@ export default () => {
       minimalWebTransform,
       minimaliseTransform(
         (value, key) =>
-          key === "style" || key === "className" || key === "data-testid"
-      )
-    )
+          key === "style" || key === "className" || key === "data-testid",
+      ),
+    ),
   );
 
   shared(false);

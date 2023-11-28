@@ -7,7 +7,7 @@ import {
   minimalWebTransform,
   print,
   propsNoChildren,
-  replaceTransform
+  replaceTransform,
 } from "@times-components/jest-serializer";
 import { mount } from "enzyme";
 import shared from "./shared-with-style.base";
@@ -25,15 +25,15 @@ export default () => {
         InlineImage: justChildren,
         InsetCaptionWeb: justChildren,
         "responsive-styles__component": justChildren,
-        TimesImage: propsNoChildren
+        TimesImage: propsNoChildren,
       }),
       minimalWebTransform,
-      minimaliseTransform((value, key) => key === "style")
-    )
+      minimaliseTransform((value, key) => key === "style"),
+    ),
   );
 
   // eslint-disable-next-line global-require
   require("jest-styled-components");
 
-  shared(component => mount(component));
+  shared((component) => mount(component));
 };

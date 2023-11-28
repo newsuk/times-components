@@ -10,7 +10,7 @@ const defaultProps = {
   freeTrialHeader: 'Train your brain with Times Puzzles',
   freeTrialSubheadline: 'Start playing today for just £1 for your first month',
   url: 'https://www.thetimes.co.uk/subscribe/puzzles/',
-  title: 'Subscribe Now'
+  title: 'Subscribe Now',
 };
 
 describe('FreeTrial', () => {

@@ -12,7 +12,7 @@ const PhoneIcon = (props: any) => (
     <mask
       id="mask0_3242_16511"
       style={{
-        maskType: 'alpha'
+        maskType: 'alpha',
       }}
       maskUnits="userSpaceOnUse"
       x="0"

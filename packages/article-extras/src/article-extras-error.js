@@ -19,7 +19,7 @@ const ArticleExtrasError = ({ refetch }) => (
         const themedStyleguide = styleguide({ scale });
         const fontFactory = themedStyleguide.fontFactory({
           font: "supporting",
-          fontSize: "button"
+          fontSize: "button",
         });
         return (
           <Button
@@ -36,7 +36,7 @@ const ArticleExtrasError = ({ refetch }) => (
 );
 
 ArticleExtrasError.propTypes = {
-  refetch: PropTypes.func.isRequired
+  refetch: PropTypes.func.isRequired,
 };
 
 export default ArticleExtrasError;

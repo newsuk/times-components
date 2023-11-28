@@ -3,12 +3,12 @@ import React from "react";
 import { colours } from "@times-components/ts-styleguide";
 import Link, { TextLink } from "./src/link";
 
-const BigSquare = props => (
+const BigSquare = (props) => (
   <TcView
     style={{
       backgroundColor: colours.functional.backgroundSecondary,
       height: 100,
-      width: 100
+      width: 100,
     }}
     {...props}
   />
@@ -23,13 +23,13 @@ export default {
             style={{
               backgroundColor: colours.functional.backgroundSecondary,
               height: 100,
-              width: 100
+              width: 100,
             }}
           />
         </Link>
       ),
       name: "Link with big content",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { action }) => {
@@ -43,7 +43,7 @@ export default {
           `,
           medium: `
             background-color: blue;
-          `
+          `,
         };
 
         return (
@@ -60,12 +60,12 @@ export default {
       },
       name: "Responsive Link",
       type: "story",
-      platform: "web"
+      platform: "web",
     },
     {
       component: (_, { action }) => (
         <Link
-          onPress={e => {
+          onPress={(e) => {
             e.preventDefault();
             action("onPress")(e);
           }}
@@ -75,7 +75,7 @@ export default {
         </Link>
       ),
       name: "Link can prevent browser navigation",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { action }) => (
@@ -84,7 +84,7 @@ export default {
         </TextLink>
       ),
       name: "TextLink",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { action }) => (
@@ -97,8 +97,8 @@ export default {
         </TextLink>
       ),
       name: "TextLink with styles",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Link"
+  name: "Primitives/Link",
 };

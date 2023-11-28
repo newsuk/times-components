@@ -22,6 +22,6 @@ const formatDateToString = (date: Date) => {
   return date.toLocaleString('en-us', {
     weekday: 'long',
     month: 'long',
-    day: 'numeric'
+    day: 'numeric',
   });
 };

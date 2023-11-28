@@ -26,10 +26,10 @@ export const SecondaryNavigation = ({
   onClick,
   clickHandler,
   defaultSelectedIndex = -1,
-  heightMobile = 'auto'
+  heightMobile = 'auto',
 }: SecondaryNavigationProps) => {
   const getPageTitle = (slug: string) => {
-    const filteredItem = data.find(item => item.slug === slug);
+    const filteredItem = data.find((item) => item.slug === slug);
 
     if (filteredItem) {
       return filteredItem.title;
@@ -51,7 +51,7 @@ export const SecondaryNavigation = ({
     isSelected,
     handleSelect,
     isExpanded,
-    setIsExpanded
+    setIsExpanded,
   };
 
   return (

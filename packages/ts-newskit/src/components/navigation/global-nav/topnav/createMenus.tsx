@@ -6,7 +6,7 @@ const menuItemPresets = {
   minHeight: '60px',
   minWidth: '0',
   stylePreset: 'menuItem',
-  typographyPreset: 'topNav010'
+  typographyPreset: 'topNav010',
 };
 
 export const createMenu = (menuData: any) => {
@@ -25,8 +25,8 @@ export const createMenu = (menuData: any) => {
           paddingBlockStart: { xs: 'space010', md: 'space040' },
           stylePreset: {
             xs: 'menuItemScroll',
-            md: 'menuItem'
-          }
+            md: 'menuItem',
+          },
         }}
         key={url}
       >
@@ -45,7 +45,7 @@ export const createMenu = (menuData: any) => {
           expanded={moreSelected}
           overrides={{
             ...menuItemPresets,
-            list: { stylePreset: 'moreSubMenu' }
+            list: { stylePreset: 'moreSubMenu' },
           }}
           data-testid="more-sub-menu"
         >
@@ -71,7 +71,7 @@ const createMoreMenu = (menuData: any, moreMenuLength: number) =>
         overrides={{
           minWidth: '200px',
           stylePreset: 'subMenuItem',
-          typographyPreset: 'topNav010'
+          typographyPreset: 'topNav010',
         }}
         key={url}
       >
@@ -88,7 +88,7 @@ export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
       <MenuItem
         href="/times-plus"
         overrides={{
-          ...menuItemPresets
+          ...menuItemPresets,
         }}
       >
         Times +
@@ -101,7 +101,7 @@ export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
         expanded={myAccountSelected}
         overrides={{
           ...menuItemPresets,
-          list: { stylePreset: 'moreSubMenu' }
+          list: { stylePreset: 'moreSubMenu' },
         }}
         data-testid="more-sub-menu"
       >
@@ -117,7 +117,7 @@ export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
               overrides={{
                 minWidth: '222px',
                 stylePreset: 'subMenuItem',
-                typographyPreset: 'topNav010'
+                typographyPreset: 'topNav010',
               }}
               key={url}
             >
@@ -142,7 +142,7 @@ export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
         overrides={{
           stylePreset: 'menuSubscribe',
           typographyPreset: 'topNav010',
-          spaceInline: 'space090'
+          spaceInline: 'space090',
         }}
       >
         Subscribe

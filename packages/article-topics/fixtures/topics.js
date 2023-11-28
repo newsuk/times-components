@@ -1,24 +1,24 @@
 const topicsData = [
   {
     name: "Football",
-    slug: "football"
+    slug: "football",
   },
   {
     name: "Manchester United FC",
-    slug: "manchester-united"
+    slug: "manchester-united",
   },
   {
     name: "Chelsea FC",
-    slug: "chelsea"
+    slug: "chelsea",
   },
   {
     name: "Arsenal",
-    slug: "arsenal"
+    slug: "arsenal",
   },
   {
     name: "Rugby Union",
-    slug: "rugby-union"
-  }
+    slug: "rugby-union",
+  },
 ];
 
 export default topicsData;

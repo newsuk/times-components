@@ -1,11 +1,12 @@
 /* eslint-disable no-undef,global-require,import/no-extraneous-dependencies */
 function mockUserState() {
   jest.mock("@times-components/user-state", () => {
-    const RealUserState = require.requireActual("@times-components/user-state")
-      .default;
+    const RealUserState = require.requireActual(
+      "@times-components/user-state",
+    ).default;
 
     function MockUserState({ state, children = null, fallback = null }) {
-      return MockUserState.mockStates.find(s => s === state)
+      return MockUserState.mockStates.find((s) => s === state)
         ? children
         : fallback;
     }
@@ -23,7 +24,7 @@ function mockUserState() {
         RealUserState.showTopicTags,
         RealUserState.showArticleSaveButton,
         RealUserState.showTokenisedEmailShare,
-        RealUserState.showCommentingModule
+        RealUserState.showCommentingModule,
       ];
     };
 

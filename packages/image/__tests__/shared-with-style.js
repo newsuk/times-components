@@ -7,7 +7,7 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  stylePrinter
+  stylePrinter,
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import "./mocks";
@@ -16,7 +16,7 @@ import Image, { ModalImage } from "../src";
 const props = {
   aspectRatio: 3 / 2,
   highResSize: 700,
-  uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+  uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
 };
 
 export default () => {
@@ -26,11 +26,11 @@ export default () => {
       stylePrinter,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => key !== "style" && key !== "className"
+        (value, key) => key !== "style" && key !== "className",
       ),
       flattenStyleTransform,
-      hoistStyleTransform
-    )
+      hoistStyleTransform,
+    ),
   );
 
   // eslint-disable-next-line global-require
@@ -45,11 +45,11 @@ export default () => {
             aspectRatio={3 / 2}
             highResSize={900}
             uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
-          />
+          />,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "default modal",
@@ -57,8 +57,8 @@ export default () => {
         const testInstance = TestRenderer.create(<ModalImage {...props} />);
 
         expect(testInstance).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ];
 
   iterator(tests);

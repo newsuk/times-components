@@ -15,7 +15,7 @@ export default class TestLink extends ApolloLink {
     return this.operations.find(
       ({ operation }) =>
         operation.operationName === queryName &&
-        (!variables || isEqual(operation.variables, variables))
+        (!variables || isEqual(operation.variables, variables)),
     );
   }
 
@@ -23,7 +23,7 @@ export default class TestLink extends ApolloLink {
     return this.operations.filter(
       ({ operation }) =>
         operation.operationName === queryName &&
-        (!variables || isEqual(operation.variables, variables))
+        (!variables || isEqual(operation.variables, variables)),
     );
   }
 
@@ -51,34 +51,34 @@ export default class TestLink extends ApolloLink {
     this.operations.push({
       operation,
       promise,
-      resolve
+      resolve,
     });
     this.events.push({
       operation,
-      type: "request"
+      type: "request",
     });
-    return new Observable(observer => {
+    return new Observable((observer) => {
       Promise.resolve(this.onRequest(operation))
-        .then(async data => {
+        .then(async (data) => {
           this.events.push({
             operation,
-            type: "resolving"
+            type: "resolving",
           });
           await promise();
           this.events.push({
             data,
             operation,
-            type: "resolved"
+            type: "resolved",
           });
           if (!observer.closed) {
             observer.next(data);
             observer.complete();
           }
         })
-        .catch(e => {
+        .catch((e) => {
           this.events.push({
             error: e,
-            type: "error"
+            type: "error",
           });
           if (!observer.closed) {
             observer.error(e);

@@ -68,7 +68,7 @@
     "jest": "24.8.0",
     "lodash.shuffle": "4.2.0",
     "mockdate": "3.0.5",
-    "prettier": "1.14.3",
+    "prettier": "3.1.0",
     "react": "16.9.0",
     "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",

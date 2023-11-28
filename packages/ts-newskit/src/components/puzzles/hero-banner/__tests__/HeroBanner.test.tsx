@@ -7,7 +7,7 @@ const defaultProps: HeroBannerProps = {
   puzzleName: 'Crossword',
   puzzleType: 'crossword',
   loginUrl:
-    'https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles'
+    'https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles',
 };
 
 const renderComponent = (props: HeroBannerProps) =>
@@ -30,7 +30,7 @@ describe('HeroBanner', () => {
     const loginButton = getByText('Log In');
     expect(loginButton).toHaveAttribute(
       'href',
-      'https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles'
+      'https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles',
     );
   });
 });

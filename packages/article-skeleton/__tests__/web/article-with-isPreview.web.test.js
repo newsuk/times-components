@@ -6,7 +6,7 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 import { scales } from "@times-components/ts-styleguide";
 
@@ -23,7 +23,7 @@ const omitProps = new Set([
   "className",
   "data-testid",
   "responsiveLinkStyles",
-  "style"
+  "style",
 ]);
 
 addSerializers(
@@ -32,8 +32,8 @@ addSerializers(
   compose(
     print,
     minimalWebTransform,
-    minimaliseTransform((value, key) => omitProps.has(key))
-  )
+    minimaliseTransform((value, key) => omitProps.has(key)),
+  ),
 );
 
 // TODO: why is this here? we have a set of fixtures of articles already
@@ -48,39 +48,38 @@ const article = articleFixture({
             {
               attributes: {
                 value: "T",
-                dropCap: true
+                dropCap: true,
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "dropCap"
+          name: "dropCap",
         },
         {
           attributes: {
-            value: "his being Black History Month, last week"
+            value: "his being Black History Month, last week",
           },
           children: [],
-          name: "text"
-        }
+          name: "text",
+        },
       ],
-      name: "paragraph"
+      name: "paragraph",
     },
     {
       attributes: {
         display: "secondary",
         element: {
           attributes: {
-            "chart-id": "csmgb"
+            "chart-id": "csmgb",
           },
-          value: "times-datawrapper"
+          value: "times-datawrapper",
         },
         id: "d2f83305-d558-4f78-f582-32115c659355",
-        url:
-          "//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+        url: "//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html",
       },
       children: [],
-      name: "interactive"
+      name: "interactive",
     },
     {
       attributes: {
@@ -88,10 +87,10 @@ const article = articleFixture({
         credits: "The image credits",
         display: "primary",
         ratio: "1500:1000",
-        url: "https://image.io"
+        url: "https://image.io",
       },
       children: [],
-      name: "image"
+      name: "image",
     },
     {
       attributes: {
@@ -99,10 +98,10 @@ const article = articleFixture({
         credits: "The secondary image credits",
         display: "secondary",
         ratio: "1500:1000",
-        url: "https://image.io/secondary"
+        url: "https://image.io/secondary",
       },
       children: [],
-      name: "image"
+      name: "image",
     },
     {
       attributes: {
@@ -110,26 +109,26 @@ const article = articleFixture({
         credits: "The inline image credits",
         display: "inline",
         ratio: "1500:1000",
-        url: "https://image.io/inline"
+        url: "https://image.io/inline",
       },
       children: [],
-      name: "image"
+      name: "image",
     },
     {
       attributes: {
         href: "https://link.io",
-        target: "_blank"
+        target: "_blank",
       },
       children: [
         {
           attributes: {
-            value: "Some Link"
+            value: "Some Link",
           },
           children: [],
-          name: "text"
-        }
+          name: "text",
+        },
       ],
-      name: "link"
+      name: "link",
     },
     {
       children: [
@@ -138,32 +137,32 @@ const article = articleFixture({
           children: [
             {
               attributes: {
-                value: "Some content"
+                value: "Some content",
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "paragraph"
+          name: "paragraph",
         },
         {
           attributes: {
             caption: {
               name: "AName",
               text: "a text",
-              twitter: "@AName"
-            }
+              twitter: "@AName",
+            },
           },
           children: [
             {
               attributes: {
-                value: "The pull quote content"
+                value: "The pull quote content",
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "pullQuote"
+          name: "pullQuote",
         },
         {
           attributes: {
@@ -176,14 +175,14 @@ const article = articleFixture({
             caption: "This is video caption",
             display: "primary",
             posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-            posterImageUrl: "https://image.io"
+            posterImageUrl: "https://image.io",
           },
           children: [],
-          name: "video"
+          name: "video",
         },
         {
           attributes: {
-            title: "Example title"
+            title: "Example title",
           },
           children: [
             {
@@ -192,103 +191,103 @@ const article = articleFixture({
                   children: [
                     {
                       attributes: {
-                        value: "Example bullet text"
+                        value: "Example bullet text",
                       },
                       children: [],
-                      name: "text"
-                    }
+                      name: "text",
+                    },
                   ],
-                  name: "listElement"
+                  name: "listElement",
                 },
                 {
                   children: [
                     {
                       attributes: {
-                        value: "An example "
+                        value: "An example ",
                       },
                       children: [],
-                      name: "text"
+                      name: "text",
                     },
                     {
                       attributes: {
                         href: "https://example.io",
                         target: "_blank",
-                        type: "topic"
+                        type: "topic",
                       },
                       children: [
                         {
                           attributes: {
-                            value: "link"
+                            value: "link",
                           },
                           children: [],
-                          name: "text"
-                        }
+                          name: "text",
+                        },
                       ],
-                      name: "link"
-                    }
+                      name: "link",
+                    },
                   ],
-                  name: "listElement"
+                  name: "listElement",
                 },
                 {
                   children: [
                     {
                       attributes: {
-                        value: "More example text."
+                        value: "More example text.",
                       },
                       children: [],
-                      name: "text"
-                    }
+                      name: "text",
+                    },
                   ],
-                  name: "listElement"
+                  name: "listElement",
                 },
                 {
                   children: [
                     {
                       attributes: {
-                        value: "Example text "
+                        value: "Example text ",
                       },
                       children: [],
-                      name: "text"
+                      name: "text",
                     },
                     {
                       attributes: {},
                       children: [
                         {
                           attributes: {
-                            value: "this is bold "
+                            value: "this is bold ",
                           },
                           children: [],
-                          name: "text"
-                        }
+                          name: "text",
+                        },
                       ],
-                      name: "bold"
+                      name: "bold",
                     },
                     {
                       attributes: {},
                       children: [
                         {
                           attributes: {
-                            value: "this is in italics."
+                            value: "this is in italics.",
                           },
                           children: [],
-                          name: "text"
-                        }
+                          name: "text",
+                        },
                       ],
-                      name: "italic"
-                    }
+                      name: "italic",
+                    },
                   ],
-                  name: "listElement"
-                }
+                  name: "listElement",
+                },
               ],
-              name: "unorderedList"
-            }
+              name: "unorderedList",
+            },
           ],
-          name: "keyFacts"
-        }
+          name: "keyFacts",
+        },
       ],
-      name: "paywall"
-    }
-  ]
+      name: "paywall",
+    },
+  ],
 });
 
 let isPreview = true;
@@ -296,7 +295,7 @@ let isPreview = true;
 const renderArticle = () => (
   <Context.Provider
     value={{
-      theme: { scale: scales.medium, sectionColour: "#FF0000" }
+      theme: { scale: scales.medium, sectionColour: "#FF0000" },
     }}
   >
     <ArticleSkeleton

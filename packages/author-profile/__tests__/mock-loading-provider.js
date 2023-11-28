@@ -6,7 +6,7 @@ export const AuthorArticlesNoImagesProvider = ({ children }) => (
   <authorArticlesNoImagesProvider>
     {children({
       isLoading: true,
-      variables: {}
+      variables: {},
     })}
   </authorArticlesNoImagesProvider>
 );
@@ -15,7 +15,7 @@ export const AuthorArticlesWithImagesProvider = ({ children }) => (
   <authorArticlesWithImagesProvider>
     {children({
       isLoading: true,
-      variables: {}
+      variables: {},
     })}
   </authorArticlesWithImagesProvider>
 );

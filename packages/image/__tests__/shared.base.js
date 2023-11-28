@@ -9,7 +9,7 @@ const props = {
   relativeWidth: 0.5,
   relativeHeight: 0.4,
   relativeHorizontalOffset: 0.16666666666666666,
-  relativeVerticalOffset: 0.2
+  relativeVerticalOffset: 0.2,
 };
 
 export default (renderComponent, platformTests = []) => {
@@ -26,10 +26,10 @@ export default (renderComponent, platformTests = []) => {
             relativeHeight={0.4}
             relativeHorizontalOffset={0.16666666666666666}
             relativeVerticalOffset={0.2}
-          />
+          />,
         );
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "default layout without uri",
@@ -41,11 +41,11 @@ export default (renderComponent, platformTests = []) => {
             relativeHeight={0.4}
             relativeHorizontalOffset={0.16666666666666666}
             relativeVerticalOffset={0.2}
-          />
+          />,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "default layout without aspect ratio",
@@ -57,20 +57,20 @@ export default (renderComponent, platformTests = []) => {
             relativeHeight={0.4}
             relativeHorizontalOffset={0.16666666666666666}
             relativeVerticalOffset={0.2}
-          />
+          />,
         );
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "rounded image",
       test: () => {
         const testRenderer = renderComponent(<Image {...props} rounded />);
         expect(testRenderer).toMatchSnapshot();
-      }
+      },
     },
-    ...platformTests
+    ...platformTests,
   ];
 
   iterator(tests);

@@ -6,8 +6,8 @@ const tests = [
     name: "standard roles for tracking",
     test() {
       expect(standardRoles).toMatchSnapshot();
-    }
-  }
+    },
+  },
 ];
 
 iterator(tests);

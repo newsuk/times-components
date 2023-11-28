@@ -19,7 +19,7 @@ describe('TeaserCardsContainer tests', () => {
       <TeaserCardsContainer
         types={Categories as PuzzleType[]}
         title="Subscribe to access all of The Times puzzles"
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -29,12 +29,12 @@ describe('TeaserCardsContainer tests', () => {
       <TeaserCardsContainer
         types={Categories as PuzzleType[]}
         title="Subscribe to access all of The Times puzzles"
-      />
+      />,
     );
 
     const titleBar = getByRole('heading', {
       name: 'Subscribe to access all of The Times puzzles',
-      level: 2
+      level: 2,
     });
     expect(titleBar).toBeInTheDocument();
   });
@@ -44,7 +44,7 @@ describe('TeaserCardsContainer tests', () => {
       <TeaserCardsContainer
         types={Categories as PuzzleType[]}
         title="Subscribe to access all of The Times puzzles"
-      />
+      />,
     );
 
     const cards = getAllByTestId('single-card');

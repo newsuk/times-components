@@ -21,10 +21,10 @@ const defaultVideoProps = {
   },
   policyKey,
   poster: {
-    uri: posterImageURI
+    uri: posterImageURI,
   },
   videoId,
-  width: 320
+  width: 320,
 };
 
 const mockId = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee";
@@ -37,7 +37,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 10
+              marginTop: 10,
             }}
           >
             Mobile size:
@@ -46,7 +46,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 20
+              marginTop: 20,
             }}
           >
             Desktop size:
@@ -55,21 +55,21 @@ export default {
         </div>
       ),
       name: "default player",
-      type: "story"
+      type: "story",
     },
     {
       component: () => {
         const props = {
           playerId: "y4yoiFCf1",
           videoId: "5992442066001",
-          is360: true
+          is360: true,
         };
         return (
           <div>
             <div
               style={{
                 marginBottom: 10,
-                marginTop: 10
+                marginTop: 10,
               }}
             >
               Mobile size:
@@ -78,7 +78,7 @@ export default {
             <div
               style={{
                 marginBottom: 10,
-                marginTop: 20
+                marginTop: 20,
               }}
             >
               Desktop size:
@@ -95,7 +95,7 @@ export default {
       },
       name: "360 player",
       platform: "web",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
@@ -106,14 +106,14 @@ export default {
         </div>
       ),
       name: "two players with different videos",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
         <div
           style={{
             height: "100%",
-            width: "100%"
+            width: "100%",
           }}
         >
           <Video {...defaultVideoProps} height="100%" width="100%" />
@@ -121,7 +121,7 @@ export default {
       ),
       name: "100% width and height",
       platform: "web",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
@@ -129,7 +129,7 @@ export default {
           style={{
             height: "100vh",
             overflow: "hidden",
-            width: "100vw"
+            width: "100vw",
           }}
         >
           <Video {...defaultVideoProps} height="100%" width="100%" />
@@ -137,7 +137,7 @@ export default {
       ),
       name: "100% width and height",
       platform: "web",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
@@ -145,7 +145,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 10
+              marginTop: 10,
             }}
           >
             Mobile size:
@@ -154,7 +154,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 20
+              marginTop: 20,
             }}
           >
             Desktop size:
@@ -169,7 +169,7 @@ export default {
       ),
       name: "with error",
       platform: "web",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
@@ -177,7 +177,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 10
+              marginTop: 10,
             }}
           >
             Mobile size:
@@ -186,7 +186,7 @@ export default {
           <div
             style={{
               marginBottom: 10,
-              marginTop: 20
+              marginTop: 20,
             }}
           >
             Desktop size:
@@ -200,8 +200,8 @@ export default {
         </div>
       ),
       name: "no poster image",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Video"
+  name: "Primitives/Video",
 };

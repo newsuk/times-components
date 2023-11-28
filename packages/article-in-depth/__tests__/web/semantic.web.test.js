@@ -10,7 +10,7 @@ import {
   minimalWebTransform,
   print,
   replacePropTransform,
-  replaceTransform
+  replaceTransform,
 } from "@times-components/jest-serializer";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/ts-styleguide";
@@ -28,7 +28,7 @@ const omitProps = new Set([
   "fillRule",
   "stroke",
   "strokeWidth",
-  "style"
+  "style",
 ]);
 
 addSerializers(
@@ -37,11 +37,11 @@ addSerializers(
     print,
     minimalWebTransform,
     replaceTransform({
-      div: justChildren
+      div: justChildren,
     }),
     replacePropTransform((value, key) => (key === "d" ? hash(value) : value)),
-    minimaliseTransform((value, key) => omitProps.has(key))
-  )
+    minimaliseTransform((value, key) => omitProps.has(key)),
+  ),
 );
 
 const tests = [
@@ -57,58 +57,58 @@ const tests = [
               credits: "The image credits",
               display: "primary",
               ratio: "1500:1000",
-              url: "https://image.io"
+              url: "https://image.io",
             },
             children: [],
-            name: "image"
+            name: "image",
           },
           {
             attributes: {
               href: "https://link.io",
-              target: "_blank"
+              target: "_blank",
             },
             children: [
               {
                 attributes: {
-                  value: "Some Link"
+                  value: "Some Link",
                 },
                 children: [],
-                name: "text"
-              }
+                name: "text",
+              },
             ],
-            name: "link"
+            name: "link",
           },
           {
             attributes: {},
             children: [
               {
                 attributes: {
-                  value: "Some content"
+                  value: "Some content",
                 },
                 children: [],
-                name: "text"
-              }
+                name: "text",
+              },
             ],
-            name: "paragraph"
+            name: "paragraph",
           },
           {
             attributes: {
               caption: {
                 name: "AName",
                 text: "a text",
-                twitter: "@AName"
-              }
+                twitter: "@AName",
+              },
             },
             children: [
               {
                 attributes: {
-                  value: "The pull quote content"
+                  value: "The pull quote content",
                 },
                 children: [],
-                name: "text"
-              }
+                name: "text",
+              },
             ],
-            name: "pullQuote"
+            name: "pullQuote",
           },
           {
             attributes: {
@@ -121,18 +121,18 @@ const tests = [
               caption: "This is video caption",
               display: "primary",
               posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-              posterImageUrl: "https://image.io"
+              posterImageUrl: "https://image.io",
             },
             children: [],
-            name: "video"
-          }
-        ]
+            name: "video",
+          },
+        ],
       });
       const navigationMode = {
         isCurrentEdition: true,
         isPastSixDays: false,
         isMyArticles: false,
-        isStateless: false
+        isStateless: false,
       };
       const scale = scales.large;
       const sectionColour = "#FFFFFF";
@@ -140,7 +140,7 @@ const tests = [
         <ContextProviderWithDefaults
           value={{
             theme: { scale, sectionColour },
-            user: { hasAccess: true, isLoggedIn: true }
+            user: { hasAccess: true, isLoggedIn: true },
           }}
         >
           <MockedProvider>
@@ -159,12 +159,12 @@ const tests = [
               receiveChildList={() => {}}
             />
           </MockedProvider>
-        </ContextProviderWithDefaults>
+        </ContextProviderWithDefaults>,
       );
 
       expect(testRenderer).toMatchSnapshot();
-    }
-  }
+    },
+  },
 ];
 
 const realIntl = Intl;
@@ -172,15 +172,15 @@ const realIntl = Intl;
 beforeEach(() => {
   global.Intl = {
     DateTimeFormat: () => ({
-      resolvedOptions: () => ({ timeZone: "Europe/London" })
-    })
+      resolvedOptions: () => ({ timeZone: "Europe/London" }),
+    }),
   };
 
   const nuk = {
     user: {
       hasAccess: true,
-      isLoggedIn: true
-    }
+      isLoggedIn: true,
+    },
   };
   global.nuk = nuk;
 });

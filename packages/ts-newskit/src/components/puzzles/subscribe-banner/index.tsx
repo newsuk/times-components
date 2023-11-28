@@ -5,7 +5,7 @@ import {
   StyledBlock,
   StyledIconSubscribeB,
   StyledIconSubscribe3,
-  StyledIconSubscribeQuestion
+  StyledIconSubscribeQuestion,
 } from './styles';
 
 export interface SubscribeBannerProps {
@@ -19,7 +19,7 @@ export const SubscribeBanner: FC<SubscribeBannerProps> = ({
   SubscribeBannerHeader,
   SubscribeBannerSubheadline,
   url,
-  title
+  title,
 }) => {
   return (
     <Block as="section">
@@ -33,7 +33,7 @@ export const SubscribeBanner: FC<SubscribeBannerProps> = ({
               as="h2"
               typographyPreset={{
                 xs: 'editorialHeadline040',
-                md: 'editorialHeadline050'
+                md: 'editorialHeadline050',
               }}
               stylePreset="inkContrast"
             >
@@ -43,12 +43,12 @@ export const SubscribeBanner: FC<SubscribeBannerProps> = ({
               as="p"
               typographyPreset={{
                 xs: 'editorialSubheadline010',
-                md: 'editorialSubheadline020'
+                md: 'editorialSubheadline020',
               }}
               stylePreset="inkContrast"
               marginBlockStart={{
                 xs: 'space045',
-                md: 'space050'
+                md: 'space050',
               }}
             >
               {SubscribeBannerSubheadline}
@@ -63,13 +63,13 @@ export const SubscribeBanner: FC<SubscribeBannerProps> = ({
                 paddingInline: 'space040',
                 marginBlockStart: {
                   xs: 'space050',
-                  md: 'space070'
+                  md: 'space070',
                 },
                 minWidth: {
                   xs: '167px',
-                  lg: '199px'
+                  lg: '199px',
                 },
-                height: 'sizing.sizing050'
+                height: 'sizing.sizing050',
               }}
             >
               {title}

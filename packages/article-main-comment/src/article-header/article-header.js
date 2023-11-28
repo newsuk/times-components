@@ -1,7 +1,7 @@
 import React from "react";
 import {
   ArticleFlags,
-  UpdatedTimeProvider
+  UpdatedTimeProvider,
 } from "@times-components/ts-components";
 import { InArticleAudio, TCThemeProvider } from "@times-components/ts-newskit";
 import Image from "@times-components/image";
@@ -12,7 +12,7 @@ import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
 import {
   articleHeaderPropTypes,
-  articleHeaderDefaultProps
+  articleHeaderDefaultProps,
 } from "./article-header-prop-types";
 import styles from "../styles";
 
@@ -20,7 +20,7 @@ import {
   AuthorImageContainer,
   FlagsContainer,
   HeaderContainer,
-  HeadlineContainer
+  HeadlineContainer,
 } from "../styles/responsive";
 
 const ArticleHeader = ({
@@ -34,7 +34,7 @@ const ArticleHeader = ({
   showAudioPlayer,
   publishedTime,
   standfirst,
-  updatedTime
+  updatedTime,
 }) => (
   <HeaderContainer style={{ ...styles.header, ...styles.container }}>
     <AuthorImageContainer style={styles.authorImage}>
@@ -78,7 +78,7 @@ const ArticleHeader = ({
           feedbackMessage:
             "Want to listen to more articles? Give your feedback below or email",
           thankyouMessage:
-            "Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this."
+            "Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this.",
         }}
       />
     </TCThemeProvider>

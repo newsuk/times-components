@@ -9,7 +9,7 @@ type TrackingArticleProps = {
 export const articleClickTracking = (
   event: MouseEventType,
   article: TrackingArticleProps,
-  clickHandler: ClickHandlerType
+  clickHandler: ClickHandlerType,
 ) => {
   article && clickHandler(event, article);
 

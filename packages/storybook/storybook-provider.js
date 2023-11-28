@@ -11,20 +11,20 @@ const StorybookProvider = ({ children }) => {
   const nbsp = "\u00A0";
   const uri = text(
     `GraphQL${nbsp}Endpoint`,
-    process.env.STORYBOOK_ENDPOINT || ""
+    process.env.STORYBOOK_ENDPOINT || "",
   );
 
   const client = new ApolloClient({
     cache: new InMemoryCache({
-      fragmentMatcher
+      fragmentMatcher,
     }),
     link: new HttpLink({
       headers: {
-        "content-type": "application/x-www-form-urlencoded"
+        "content-type": "application/x-www-form-urlencoded",
       },
       uri,
-      useGETForQueries: true
-    })
+      useGETForQueries: true,
+    }),
   });
 
   return (
@@ -37,8 +37,8 @@ const StorybookProvider = ({ children }) => {
 StorybookProvider.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element)
-  ]).isRequired
+    PropTypes.arrayOf(PropTypes.element),
+  ]).isRequired,
 };
 
 export default StorybookProvider;

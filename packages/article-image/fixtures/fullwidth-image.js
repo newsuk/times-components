@@ -7,15 +7,15 @@ const defaultCredits = "The credits";
 export default (
   uri = defaultImageSrc,
   caption = defaultCaption,
-  credits = defaultCredits
+  credits = defaultCredits,
 ) => ({
   captionOptions: {
     caption,
-    credits
+    credits,
   },
   imageOptions: {
     display: "fullwidth",
     ratio: "15:12",
-    uri
-  }
+    uri,
+  },
 });

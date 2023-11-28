@@ -4,16 +4,16 @@ import { Query } from "react-apollo";
 import PropTypes from "prop-types";
 import { Debounce } from "./debounce";
 
-const flatten = l =>
+const flatten = (l) =>
   l.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []);
 
-const getQueryVariableNames = query =>
+const getQueryVariableNames = (query) =>
   flatten(
-    query.definitions.map(definition =>
+    query.definitions.map((definition) =>
       (definition.variableDefinitions || []).map(
-        variable => variable.variable.name.value
-      )
-    )
+        (variable) => variable.variable.name.value,
+      ),
+    ),
   );
 
 export const QueryProvider = ({
@@ -28,7 +28,7 @@ export const QueryProvider = ({
     debounceRender={({ children, ...renderProps }) => {
       const variables = pick(
         propsToVariables(renderProps.debouncedProps || renderProps),
-        getQueryVariableNames(query)
+        getQueryVariableNames(query),
       );
 
       return (
@@ -41,7 +41,7 @@ export const QueryProvider = ({
               refetch: () => refetch(),
               variables,
               ...renderProps,
-              ...data
+              ...data,
             })
           }
         </Query>
@@ -62,23 +62,23 @@ QueryProvider.propTypes = {
           PropTypes.shape({
             variable: PropTypes.shape({
               name: PropTypes.shape({
-                value: PropTypes.string.isRequired
-              }).isRequired
-            }).isRequired
-          })
-        )
-      })
-    ).isRequired
+                value: PropTypes.string.isRequired,
+              }).isRequired,
+            }).isRequired,
+          }),
+        ),
+      }),
+    ).isRequired,
   }).isRequired,
-  ssr: PropTypes.bool
+  ssr: PropTypes.bool,
 };
 
 QueryProvider.defaultProps = {
-  propsToVariables: i => i,
-  ssr: undefined
+  propsToVariables: (i) => i,
+  ssr: undefined,
 };
 
-const connectGraphql = (query, propsToVariables) => props => (
+const connectGraphql = (query, propsToVariables) => (props) => (
   <QueryProvider {...props} propsToVariables={propsToVariables} query={query} />
 );
 

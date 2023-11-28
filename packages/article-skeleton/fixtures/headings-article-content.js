@@ -6,10 +6,10 @@ export default [
         name: "text",
         children: [],
         attributes: {
-          value: "This is heading 2"
-        }
-      }
-    ]
+          value: "This is heading 2",
+        },
+      },
+    ],
   },
   {
     name: "heading3",
@@ -18,9 +18,9 @@ export default [
         name: "text",
         children: [],
         attributes: {
-          value: "This is heading 3"
-        }
-      }
-    ]
-  }
+          value: "This is heading 3",
+        },
+      },
+    ],
+  },
 ];

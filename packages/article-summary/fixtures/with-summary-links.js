@@ -18,7 +18,7 @@ export default ({
   link1 = defaultLink1,
   id1 = defaultId1,
   link2 = defaultLink2,
-  id2 = defaultId2
+  id2 = defaultId2,
 } = {}) => ({
   content: (
     <ArticleSummaryContent
@@ -29,64 +29,64 @@ export default ({
               attributes: {
                 canonicalId: id1,
                 href: link1,
-                type: "article"
+                type: "article",
               },
               children: [
                 {
                   attributes: {
-                    value: "Sajid Javid"
+                    value: "Sajid Javid",
                   },
                   children: [],
-                  name: "text"
-                }
+                  name: "text",
+                },
               ],
-              name: "link"
+              name: "link",
             },
             {
               attributes: {
                 value:
-                  " has warned the Home Office to expect an overhaul after the "
+                  " has warned the Home Office to expect an overhaul after the ",
               },
               children: [],
-              name: "text"
+              name: "text",
             },
             {
               attributes: {
                 canonicalId: id2,
                 href: link2,
-                type: "article"
+                type: "article",
               },
               children: [
                 {
                   attributes: {
-                    value: "Windrush scandal"
+                    value: "Windrush scandal",
                   },
                   children: [],
-                  name: "text"
-                }
+                  name: "text",
+                },
               ],
-              name: "link"
+              name: "link",
             },
             {
               attributes: {
-                value: " as he ditches the policy of creating a “hostile"
+                value: " as he ditches the policy of creating a “hostile",
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "paragraph"
-        }
+          name: "paragraph",
+        },
       ]}
     />
   ),
   datePublicationProps: {
     date: "2017-11-17T00:01:00.000Z",
-    publication: "TIMES"
+    publication: "TIMES",
   },
   headline: <ArticleSummaryHeadline headline={headline} />,
   labelProps: {
     color: colours.functional.primary,
-    title: label
-  }
+    title: label,
+  },
 });

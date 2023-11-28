@@ -12,13 +12,13 @@ const mockClickHandler = jest.fn();
 
 const defaultProps = {
   ...data,
-  clickHandler: mockClickHandler
+  clickHandler: mockClickHandler,
 };
 
 describe('Render Content Bucket 1 Slice', () => {
   test('Slice matches snapshot', () => {
     const { asFragment } = renderComponent(
-      <ContentBucket1 {...defaultProps} />
+      <ContentBucket1 {...defaultProps} />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -26,7 +26,7 @@ describe('Render Content Bucket 1 Slice', () => {
   test('Slice matches snapshot for mobile', () => {
     const { asFragment } = renderComponent(
       <ContentBucket1 {...defaultProps} />,
-      'sm'
+      'sm',
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -37,7 +37,7 @@ describe('Content Bucket 1 Articles list ', () => {
     renderComponent(<ContentBucket1 {...defaultProps} />, 'xl');
     const articleContainer = screen.getByTestId('article-container-desktop');
     const articleBorder = articleContainer.querySelector(
-      '[data-testid="article-stack-large-divider"]'
+      '[data-testid="article-stack-large-divider"]',
     );
 
     expect(articleBorder).toBeInTheDocument();
@@ -47,8 +47,8 @@ describe('Content Bucket 1 Articles list ', () => {
     renderComponent(<ContentBucket1 {...defaultProps} />, 'xl');
     const articleContainer = screen.getByTestId('article-container-desktop');
     const articleItem1 = articleContainer.firstElementChild;
-    const articleItem4 = articleContainer!.lastElementChild!
-      .previousElementSibling;
+    const articleItem4 =
+      articleContainer!.lastElementChild!.previousElementSibling;
 
     expect(articleItem1!.getElementsByTagName('hr').length).toBe(2);
     expect(articleItem4!.getElementsByTagName('hr').length).toBe(3);
@@ -59,7 +59,7 @@ describe('Content Bucket 1 Articles list ', () => {
     const articleContainer = screen.getByTestId('article-container-desktop');
     const articleItem1 = articleContainer.firstElementChild;
     const articleBorder = articleContainer.querySelector(
-      '[data-testid="article-stack-large-divider"]'
+      '[data-testid="article-stack-large-divider"]',
     );
 
     expect(articleBorder).not.toBeVisible();
@@ -70,8 +70,8 @@ describe('Content Bucket 1 Articles list ', () => {
     renderComponent(<ContentBucket1 {...defaultProps} />, 'lg');
     const articleContainer = screen.getByTestId('article-container-desktop');
     const articleItem1 = articleContainer!.firstElementChild;
-    const articleItem4 = articleContainer!.lastElementChild!
-      .previousElementSibling;
+    const articleItem4 =
+      articleContainer!.lastElementChild!.previousElementSibling;
 
     expect(articleItem1!.getElementsByTagName('hr').length).toBe(2);
     expect(articleItem4!.getElementsByTagName('hr').length).toBe(3);

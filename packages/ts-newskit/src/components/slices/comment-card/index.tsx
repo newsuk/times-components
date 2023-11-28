@@ -4,7 +4,7 @@ import {
   Block,
   useTheme,
   Image,
-  GridLayoutItem
+  GridLayoutItem,
 } from 'newskit';
 import React from 'react';
 import { CardHeadlineLink } from '../shared-styles';
@@ -12,7 +12,7 @@ import { TagAndFlag } from '../shared/tag-and-flag';
 import {
   ClickHandlerType,
   MouseEventType,
-  ImageProps
+  ImageProps,
 } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
 
@@ -28,7 +28,7 @@ export interface CommentCardProps {
 export const CommentCard = ({
   article,
   clickHandler,
-  isCommentBucket1
+  isCommentBucket1,
 }: {
   article: CommentCardProps;
   clickHandler: ClickHandlerType;
@@ -38,7 +38,7 @@ export const CommentCard = ({
 
   const { id, images, byline, headline, url, flag } = article;
   const imageWithCorrectRatio =
-    images && images.crops && images.crops.find(crop => crop.ratio === '1:1');
+    images && images.crops && images.crops.find((crop) => crop.ratio === '1:1');
 
   const onClick = (event: MouseEventType) => {
     const articleForTracking = { headline, id, url };
@@ -50,7 +50,7 @@ export const CommentCard = ({
       columns={{
         xs: '77px 1fr',
         md: isCommentBucket1 ? '1fr' : '77px 1fr',
-        lg: '77px 1fr'
+        lg: '77px 1fr',
       }}
       areas={{
         xs: `
@@ -64,10 +64,10 @@ export const CommentCard = ({
             `,
         lg: `
             media content
-            `
+            `,
       }}
       justifyItems={{
-        md: isCommentBucket1 ? 'center' : 'start'
+        md: isCommentBucket1 ? 'center' : 'start',
       }}
     >
       {imageWithCorrectRatio && (
@@ -83,8 +83,8 @@ export const CommentCard = ({
                 stylePreset: 'imageCircle',
                 marginBlockEnd: {
                   md: isCommentBucket1 ? 'space040' : 'space000',
-                  lg: 'space000'
-                }
+                  lg: 'space000',
+                },
               }}
             />
           </a>
@@ -96,7 +96,7 @@ export const CommentCard = ({
         alignContent="start"
         justifyItems={{
           md: isCommentBucket1 ? 'center' : 'start',
-          lg: 'start'
+          lg: 'start',
         }}
       >
         <CardHeadlineLink
@@ -125,7 +125,7 @@ export const CommentCard = ({
               flag={flag}
               flagOverrides={{
                 typographyPreset: 'utilityMeta005',
-                stylePreset: 'inkSubtle'
+                stylePreset: 'inkSubtle',
               }}
             />
           )}

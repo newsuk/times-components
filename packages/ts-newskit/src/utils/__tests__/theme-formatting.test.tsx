@@ -6,14 +6,14 @@ import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 describe('updateThemeTypography function', () => {
   test('typographyPreset fontSize is updated if it has a rem value', () => {
     expect(TheTimesLight.typographyPresets.editorialDisplay001.fontSize).toBe(
-      '1rem'
+      '1rem',
     );
 
     const updatedTheme = updateThemeTypography(
-      (TheTimesLight as unknown) as Theme
+      TheTimesLight as unknown as Theme,
     );
     expect(updatedTheme.typographyPresets.editorialDisplay001.fontSize).toBe(
-      '1.6rem'
+      '1.6rem',
     );
   });
 
@@ -23,17 +23,17 @@ describe('updateThemeTypography function', () => {
       fontWeight: 800,
       lineHeight: 1.125,
       fontSize: '10px',
-      letterSpacing: '0em'
+      letterSpacing: '0em',
     };
 
-    ((TheTimesLight as unknown) as Theme).typographyPresets.testPreset = testPreset;
+    (TheTimesLight as unknown as Theme).typographyPresets.testPreset =
+      testPreset;
 
     const updatedTheme = updateThemeTypography(
-      (TheTimesLight as unknown) as Theme
+      TheTimesLight as unknown as Theme,
     );
     expect(updatedTheme.typographyPresets.testPreset.fontSize).toBe(
-      ((TheTimesLight as unknown) as Theme).typographyPresets.testPreset
-        .fontSize
+      (TheTimesLight as unknown as Theme).typographyPresets.testPreset.fontSize,
     );
   });
 });
@@ -42,9 +42,9 @@ describe('addOverride function', () => {
   const stylePresets = {
     breadcrumbSeparator: {
       base: {
-        color: '{{colors.inkNonEssential}}'
-      }
-    }
+        color: '{{colors.inkNonEssential}}',
+      },
+    },
   };
 
   test('theme does NOT contain any overrides', () => {
@@ -53,12 +53,12 @@ describe('addOverride function', () => {
 
   test('theme does contain added style preset overrides', () => {
     const updatedThemeWithOverride = addOverride(
-      (TheTimesLight as unknown) as Theme,
-      (stylePresets as unknown) as ThemeBase
+      TheTimesLight as unknown as Theme,
+      stylePresets as unknown as ThemeBase,
     );
 
     expect(updatedThemeWithOverride).toEqual(
-      expect.objectContaining(stylePresets)
+      expect.objectContaining(stylePresets),
     );
   });
 });

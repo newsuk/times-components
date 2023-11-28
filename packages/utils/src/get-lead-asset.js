@@ -4,7 +4,7 @@ export const defaultAsset = {
   aspectRatio: "1:1",
   displayImage: null,
   isVideo: false,
-  leadAsset: null
+  leadAsset: null,
 };
 
 export default function getLeadAsset({ leadAsset }) {
@@ -25,6 +25,6 @@ export default function getLeadAsset({ leadAsset }) {
     aspectRatio,
     displayImage,
     isVideo,
-    leadAsset: { ...leadAsset, isVideo }
+    leadAsset: { ...leadAsset, isVideo },
   };
 }

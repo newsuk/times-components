@@ -3,18 +3,14 @@ import {
   compose,
   hoistStyleTransform,
   minimalWebTransform,
-  stylePrinter
+  stylePrinter,
 } from "@times-components/jest-serializer";
 import shared from "./shared-with-styles.base";
 
-export default Component => {
+export default (Component) => {
   addSerializers(
     expect,
-    compose(
-      stylePrinter,
-      hoistStyleTransform,
-      minimalWebTransform
-    )
+    compose(stylePrinter, hoistStyleTransform, minimalWebTransform),
   );
 
   shared(Component);

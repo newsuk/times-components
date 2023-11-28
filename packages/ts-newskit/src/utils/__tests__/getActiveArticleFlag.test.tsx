@@ -9,8 +9,8 @@ describe('Data helper', () => {
       const flags = [
         {
           type: 'LIVE',
-          expiryTime: null
-        }
+          expiryTime: null,
+        },
       ];
       expect(getActiveArticleFlags(flags)).toEqual('LIVE');
     });
@@ -18,8 +18,8 @@ describe('Data helper', () => {
       const flags = [
         {
           type: 'BREAKING',
-          expiryTime: active
-        }
+          expiryTime: active,
+        },
       ];
       expect(getActiveArticleFlags(flags)).toEqual('BREAKING');
     });
@@ -27,8 +27,8 @@ describe('Data helper', () => {
       const flags = [
         {
           type: 'BREAKING',
-          expiryTime: expired
-        }
+          expiryTime: expired,
+        },
       ];
       expect(getActiveArticleFlags(flags)).toEqual(undefined);
     });

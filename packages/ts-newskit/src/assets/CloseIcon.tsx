@@ -11,7 +11,7 @@ const CloseIcon = (props: any) => (
     <mask
       id="closeIconMask"
       style={{
-        maskType: 'alpha'
+        maskType: 'alpha',
       }}
       maskUnits="userSpaceOnUse"
       x={0}

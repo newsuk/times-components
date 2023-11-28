@@ -6,39 +6,39 @@ import AuthorProfile from "../src/author-profile";
 
 jest.mock(
   "@times-components/provider",
-  () => require("./mock-loading-provider") // eslint-disable-line global-require
+  () => require("./mock-loading-provider"), // eslint-disable-line global-require
 );
 jest.mock("@times-components/tracking", () => {
-  const id = x => x;
+  const id = (x) => x;
 
   return {
     withTrackEvents: id,
-    withTrackingContext: id
+    withTrackingContext: id,
   };
 });
 
-export default props => {
+export default (props) => {
   const tests = [
     {
       name: "an article list loading with images",
       test() {
         const testInstance = TestRenderer.create(
-          <AuthorProfile {...props} isLoading />
+          <AuthorProfile {...props} isLoading />,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "an article list loading without images",
       test() {
         const testInstance = TestRenderer.create(
-          <AuthorProfile {...props} isLoading />
+          <AuthorProfile {...props} isLoading />,
         );
 
         expect(testInstance).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ];
 
   jest.useFakeTimers();

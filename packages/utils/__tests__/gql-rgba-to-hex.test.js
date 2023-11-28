@@ -5,8 +5,8 @@ const colour = {
     alpha: 1,
     blue: 244,
     green: 223,
-    red: 66
-  }
+    red: 66,
+  },
 };
 
 describe("gqlRgbaToHex should", () => {
@@ -19,8 +19,8 @@ describe("gqlRgbaToHex should", () => {
         alpha: 1,
         blue: 7,
         green: 11,
-        red: 2
-      }
+        red: 2,
+      },
     };
     expect(gqlRgbaToHex(lowNumberColour)).toEqual("#020B07");
   });

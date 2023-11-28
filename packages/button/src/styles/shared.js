@@ -8,16 +8,16 @@ const styles = {
     height: 45,
     justifyContent: "center",
     minWidth: 100,
-    width: "100%"
+    width: "100%",
   },
   text: {
     color: colours.functional.white,
     ...fontFactory({
       font: "supporting",
-      fontSize: "button"
+      fontSize: "button",
     }),
-    paddingTop: 5
-  }
+    paddingTop: 5,
+  },
 };
 
 export default styles;

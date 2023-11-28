@@ -13,7 +13,7 @@ const message =
 describe('Feedback Component', () => {
   it('should render snapshot', () => {
     const { asFragment } = render(
-      <Feedback feedbackMessage={feedbackMessage} message={message} />
+      <Feedback feedbackMessage={feedbackMessage} message={message} />,
     );
     expect(asFragment()).toMatchSnapshot();
   });

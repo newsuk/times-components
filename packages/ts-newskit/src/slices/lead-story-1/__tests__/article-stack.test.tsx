@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import { articles } from '../../fixtures/lead-story.json';
 import {
   ArticleStackLarge,
-  ArticleStackSmall
+  ArticleStackSmall,
 } from '../../shared/article-stacks';
 import { renderComponent } from '../../../utils';
 
@@ -16,7 +16,7 @@ describe('Render Lead Story 1 Slice', () => {
   test('large Article Stack', () => {
     const { asFragment } = renderComponent(
       <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />,
-      'xs'
+      'xs',
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -26,7 +26,7 @@ describe('Render Lead Story 1 Slice', () => {
       <ArticleStackSmall
         articles={threeArticles}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -34,31 +34,31 @@ describe('Render Lead Story 1 Slice', () => {
   test("articleTopBorder renders correctly at 'xl' breakpoint", () => {
     renderComponent(
       <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />,
-      'xl'
+      'xl',
     );
     const articleContainer = screen.queryAllByTestId('article-container')[1];
-    const articleItem4 = articleContainer.lastElementChild!
-      .previousElementSibling;
+    const articleItem4 =
+      articleContainer.lastElementChild!.previousElementSibling;
     expect(articleItem4!.getElementsByTagName('hr').length).toBe(4);
   });
 
   test("articleTopBorder renders correctly below 'lg' breakpoint", () => {
     renderComponent(
       <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />,
-      'lg'
+      'lg',
     );
     const articleContainer = screen.queryAllByTestId('article-container')[1];
     const articleItem1 = articleContainer.firstElementChild;
     articleItem1 &&
       expect(
-        articleItem1.querySelectorAll('[data-testid=divider]').length
+        articleItem1.querySelectorAll('[data-testid=divider]').length,
       ).toBe(3);
   });
 
   test("articleTopBorder renders correctly at 'lg' breakpoint", () => {
     renderComponent(
       <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />,
-      'lg'
+      'lg',
     );
     const articleContainer = screen.queryAllByTestId('article-container')[1];
     const articleItem4 = articleContainer.lastElementChild;
@@ -67,7 +67,7 @@ describe('Render Lead Story 1 Slice', () => {
   test('renders article container with correct data-testid', () => {
     renderComponent(
       <ArticleStackLarge articles={articles} clickHandler={mockClickHandler} />,
-      'xl'
+      'xl',
     );
     const articleContainer = screen.queryAllByTestId('article-container')[1];
     expect(articleContainer).toBeInTheDocument();

@@ -9,7 +9,7 @@ TestComponent.propTypes = { someProp: PropTypes.string };
 TestComponent.defaultProps = { someProp: "foo" };
 TestComponent.someStatic = { foo: "bar" };
 
-export default trackingEnhancer => {
+export default (trackingEnhancer) => {
   it("renders when tracking context is missing", () => {
     const WithTracking = trackingEnhancer(TestComponent);
 

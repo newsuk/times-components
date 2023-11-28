@@ -20,29 +20,28 @@ export const LeadStory4 = ({
   articlesRight,
   articlesBelowMainImage,
   clickHandler,
-  isSummaryEnabled
+  isSummaryEnabled,
 }: LeadStory4Props) => {
   const modifiedLeadArticle = {
     ...leadArticle,
     hasTopBorder: false,
     imageTop: true,
     isLeadImage: true,
-    headlineTypographyPreset: 'editorialHeadline040'
+    headlineTypographyPreset: 'editorialHeadline040',
   };
 
   const articlesRightWithIsSummaryEnabledProp = articlesRight.map(
-    articleRight => ({
+    (articleRight) => ({
       ...articleRight,
-      isSummaryEnabled
-    })
+      isSummaryEnabled,
+    }),
   );
 
-  const articlesBelowMainImageWithIsSummaryEnabledProp = articlesBelowMainImage.map(
-    articleBelowMainImage => ({
+  const articlesBelowMainImageWithIsSummaryEnabledProp =
+    articlesBelowMainImage.map((articleBelowMainImage) => ({
       ...articleBelowMainImage,
-      isSummaryEnabled
-    })
-  );
+      isSummaryEnabled,
+    }));
 
   const article2and3 =
     articlesRightWithIsSummaryEnabledProp &&
@@ -50,10 +49,11 @@ export const LeadStory4 = ({
   const article4and5 =
     articlesRightWithIsSummaryEnabledProp &&
     articlesRightWithIsSummaryEnabledProp.slice(2, 4);
-  const articleMediumBreakPoint = articlesBelowMainImageWithIsSummaryEnabledProp && [
-    ...article4and5,
-    ...articlesBelowMainImageWithIsSummaryEnabledProp
-  ];
+  const articleMediumBreakPoint =
+    articlesBelowMainImageWithIsSummaryEnabledProp && [
+      ...article4and5,
+      ...articlesBelowMainImageWithIsSummaryEnabledProp,
+    ];
   const articlesTop =
     articleMediumBreakPoint && articleMediumBreakPoint.slice(0, 3);
   const articlesBottom =
@@ -62,13 +62,13 @@ export const LeadStory4 = ({
     article2and3 &&
     article2and3.map((article, index) => ({
       ...article,
-      hasTopBorder: index === 1
+      hasTopBorder: index === 1,
     }));
   const modifiedArticleRight =
     articlesRightWithIsSummaryEnabledProp &&
     articlesRightWithIsSummaryEnabledProp.map((article, index) => ({
       ...article,
-      hasTopBorder: index > 1
+      hasTopBorder: index > 1,
     }));
 
   const articlesFrom5To9 =

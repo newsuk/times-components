@@ -5,12 +5,12 @@ import DateTime from "./date-time";
 import {
   publications,
   getPublicationComma,
-  getPublicationName
+  getPublicationName,
 } from "./publication";
 
 const DatePublication = ({ publication, ...props }) => (
   <DateTime {...props}>
-    {dateTime => (
+    {(dateTime) => (
       <Fragment>
         <time dateTime={props.date}>
           {dateTime}
@@ -31,7 +31,7 @@ const PublicationName = styled.span`
 DatePublication.propTypes = {
   date: PropTypes.string.isRequired,
   publication: PropTypes.oneOf(Object.keys(publications)),
-  showDay: PropTypes.bool
+  showDay: PropTypes.bool,
 };
 
 DatePublication.defaultProps = { ...DateTime.defaultProps, publication: null };

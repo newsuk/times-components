@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import {
   saveBookmarks,
   unsaveBookmarks,
-  articleBookmarked
+  articleBookmarked,
 } from "@times-components/provider-queries";
 
 import MockedProvider from "./mocked-provider";
@@ -16,41 +16,41 @@ const createBookmarkMocks = ({ id } = {}, delay) => [
         Article: () => ({
           __typename: "Article",
           id,
-          isBookmarked: false
-        })
-      }
+          isBookmarked: false,
+        }),
+      },
     },
     query: articleBookmarked,
     variables: { id },
     repeatable: true,
-    delay
+    delay,
   },
   {
     query: saveBookmarks,
     variables: {
-      id
+      id,
     },
     defaults: {
       mutationValues: {
-        saveBookmarks: () => [{ id, __typename: "Bookmark" }]
-      }
+        saveBookmarks: () => [{ id, __typename: "Bookmark" }],
+      },
     },
     repeatable: true,
-    delay
+    delay,
   },
   {
     query: unsaveBookmarks,
     variables: {
-      id
+      id,
     },
     defaults: {
       mutationValues: {
-        unsaveBookmarks: () => [id]
-      }
+        unsaveBookmarks: () => [id],
+      },
     },
     repeatable: true,
-    delay
-  }
+    delay,
+  },
 ];
 
 class MockBookmarksProvider extends Component {
@@ -98,7 +98,7 @@ class MockBookmarksProvider extends Component {
     this.setState({
       mocks: MockBookmarksProvider.isCacheValid({ articleId, delay })
         ? MockBookmarksProvider.cache.mocks
-        : await MockBookmarksProvider.getMocks({ articleId, delay })
+        : await MockBookmarksProvider.getMocks({ articleId, delay }),
     });
   }
 

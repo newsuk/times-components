@@ -17,18 +17,18 @@ module.exports = () => {
     TestComponent.propTypes = {
       event1: PropTypes.func,
       event2: PropTypes.func,
-      someProp: PropTypes.string
+      someProp: PropTypes.string,
     };
     TestComponent.defaultProps = {
       event1: () => {},
       event2: () => {},
-      someProp: "foo"
+      someProp: "foo",
     };
     TestComponent.someStatic = { foo: "bar" };
 
     const props = {
       event1: () => {},
-      event2: () => {}
+      event2: () => {},
     };
 
     it("ignores events not exposed by tracked component", () => {
@@ -39,14 +39,14 @@ module.exports = () => {
           analyticsEvents: [
             {
               actionName: "happened",
-              eventName: "unknownEvent"
-            }
-          ]
-        })
+              eventName: "unknownEvent",
+            },
+          ],
+        }),
       );
 
       renderer.create(
-        <WithTrackingAndContext analyticsStream={reporter} {...props} />
+        <WithTrackingAndContext analyticsStream={reporter} {...props} />,
       );
 
       expect(reporter).not.toHaveBeenCalled();
@@ -59,20 +59,20 @@ module.exports = () => {
           analyticsEvents: [
             {
               actionName: "event1ed",
-              eventName: "event1"
-            }
-          ]
-        })
+              eventName: "event1",
+            },
+          ],
+        }),
       );
 
       renderer.create(
-        <WithTrackingAndContext analyticsStream={reporter} {...props} />
+        <WithTrackingAndContext analyticsStream={reporter} {...props} />,
       );
 
       expect(reporter).toHaveBeenCalledWith({
         action: "event1ed",
         attrs: {},
-        component: "TestComponent"
+        component: "TestComponent",
       });
     });
 
@@ -82,13 +82,13 @@ module.exports = () => {
           analyticsEvents: [
             {
               actionName: "event1ed",
-              eventName: "event1"
+              eventName: "event1",
             },
             {
               actionName: "event1ed",
-              eventName: "event1"
-            }
-          ]
+              eventName: "event1",
+            },
+          ],
         });
 
       expect(addTracking).toThrowErrorMatchingSnapshot();
@@ -97,7 +97,7 @@ module.exports = () => {
     it("raises error when action name is not set", () => {
       const addTracking = () =>
         withTrackEvents(TestComponent, {
-          analyticsEvents: [{ eventName: "event1" }]
+          analyticsEvents: [{ eventName: "event1" }],
         });
 
       expect(addTracking).toThrowErrorMatchingSnapshot();
@@ -106,7 +106,7 @@ module.exports = () => {
     it("raises error when event name is not set", () => {
       const addTracking = () =>
         withTrackEvents(TestComponent, {
-          analyticsEvents: [{ actionName: "event1ed" }]
+          analyticsEvents: [{ actionName: "event1ed" }],
         });
 
       expect(addTracking).toThrowErrorMatchingSnapshot();
@@ -120,18 +120,18 @@ module.exports = () => {
             {
               actionName: "event1ed",
               eventName: "event1",
-              trackingName: "OverriddenName"
-            }
-          ]
-        })
+              trackingName: "OverriddenName",
+            },
+          ],
+        }),
       );
 
       renderer.create(
-        <WithTrackingAndContext analyticsStream={reporter} {...props} />
+        <WithTrackingAndContext analyticsStream={reporter} {...props} />,
       );
 
       expect(reporter).toHaveBeenCalledWith(
-        expect.objectContaining({ component: "OverriddenName" })
+        expect.objectContaining({ component: "OverriddenName" }),
       );
     });
 
@@ -145,11 +145,11 @@ module.exports = () => {
               getAttrs: ({ aProp }, eventArgs) => ({
                 args: eventArgs,
                 fromProps: aProp,
-                static: "value"
-              })
-            }
-          ]
-        })
+                static: "value",
+              }),
+            },
+          ],
+        }),
       );
       const reporter = jest.fn();
 
@@ -158,7 +158,7 @@ module.exports = () => {
           analyticsStream={reporter}
           aProp="propValue"
           {...props}
-        />
+        />,
       );
 
       expect(reporter).toHaveBeenCalledWith(
@@ -166,9 +166,9 @@ module.exports = () => {
           attrs: expect.objectContaining({
             args: ["event1 arg"],
             fromProps: "propValue",
-            static: "value"
-          })
-        })
+            static: "value",
+          }),
+        }),
       );
     });
 
@@ -182,8 +182,8 @@ module.exports = () => {
               getAttrs: ({ aProp }, eventArgs) => ({
                 args: eventArgs,
                 fromProps: aProp,
-                static: "value"
-              })
+                static: "value",
+              }),
             },
             {
               actionName: "event2ed",
@@ -191,11 +191,11 @@ module.exports = () => {
               getAttrs: ({ aProp }, eventArgs) => ({
                 args: eventArgs,
                 fromProps: aProp,
-                static: "otherValue"
-              })
-            }
-          ]
-        })
+                static: "otherValue",
+              }),
+            },
+          ],
+        }),
       );
       const reporter = jest.fn();
 
@@ -204,7 +204,7 @@ module.exports = () => {
           analyticsStream={reporter}
           aProp="propValue"
           {...props}
-        />
+        />,
       );
 
       expect(reporter.mock.calls).toMatchSnapshot();
@@ -218,10 +218,10 @@ module.exports = () => {
           analyticsEvents: [
             {
               actionName: "event1ed",
-              eventName: "event1"
-            }
-          ]
-        })
+              eventName: "event1",
+            },
+          ],
+        }),
       );
 
       renderer.create(
@@ -229,7 +229,7 @@ module.exports = () => {
           analyticsStream={reporter}
           {...props}
           event1={handler}
-        />
+        />,
       );
 
       expect(reporter).toHaveBeenCalled();

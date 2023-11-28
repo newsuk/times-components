@@ -5,7 +5,7 @@ import Link from "@times-components/link";
 import {
   HoverIcon,
   TcText,
-  checkStylesForUnits
+  checkStylesForUnits,
 } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { IconStar, IconActivityIndicator } from "@times-components/icons";
@@ -26,7 +26,7 @@ function SaveStar({
   savedStatus,
   colour,
   hoverColour,
-  isLoading
+  isLoading,
 }) {
   function onSaveButtonPress(e) {
     e.preventDefault();
@@ -84,12 +84,12 @@ SaveStar.propTypes = {
   hoverColour: PropTypes.string,
   savedStatus: PropTypes.bool.isRequired,
   onSave: PropTypes.func.isRequired,
-  isLoading: PropTypes.bool.isRequired
+  isLoading: PropTypes.bool.isRequired,
 };
 
 SaveStar.defaultProps = {
   colour: styles.svgIcon.fillColour,
-  hoverColour: styles.svgIcon.hoverFillColour
+  hoverColour: styles.svgIcon.hoverFillColour,
 };
 
 export default withTrackEvents(SaveStar);

@@ -5,7 +5,7 @@ import data from '../fixtures/data.json';
 import {
   GlobalNav,
   GlobalNavWithCustomDrawer,
-  TSNewskitDrawer
+  TSNewskitDrawer,
 } from '../index';
 
 const renderComponent = (isLoggedIn?: boolean) =>
@@ -54,7 +54,7 @@ describe('GlobalNavWithCustomDrawer', () => {
         data={data}
         isLoggedIn={false}
         isSunday={false}
-      />
+      />,
     );
     expect(asFragment()).toBeTruthy();
   });
@@ -65,14 +65,14 @@ describe('GlobalNavWithCustomDrawer', () => {
         data={data}
         isLoggedIn={true}
         isSunday={false}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('matches snapshot when logged out', () => {
     const { asFragment } = render(
-      <GlobalNavWithCustomDrawer data={data} isSunday={false} />
+      <GlobalNavWithCustomDrawer data={data} isSunday={false} />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -84,11 +84,11 @@ describe('TSNewskitDrawer', () => {
       <TSNewskitDrawer
         open={true}
         onDismiss={() => {
-          '';
+          ('');
         }}
       >
         <div>hi</div>
-      </TSNewskitDrawer>
+      </TSNewskitDrawer>,
     );
     expect(asFragment()).toBeTruthy();
   });

@@ -3,7 +3,7 @@ import { colours } from "@times-components/ts-styleguide";
 import { defaultProps, propTypes } from "./gradient-prop-types";
 import GradientBase from "./gradient.base";
 
-const OverlayGradient = props => (
+const OverlayGradient = (props) => (
   <GradientBase
     {...props}
     endColour={colours.functional.overlayGradientEnd}

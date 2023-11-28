@@ -22,7 +22,7 @@ describe('<TrackingContextProvider>', () => {
         context={{
           component: 'component 1',
           object: 'object 1',
-          attrs: { level1: '3', level2: '3', level3: '3' }
+          attrs: { level1: '3', level2: '3', level3: '3' },
         }}
       >
         <TrackingContextProvider
@@ -38,7 +38,7 @@ describe('<TrackingContextProvider>', () => {
             )}
           </TrackingContextProvider>
         </TrackingContextProvider>
-      </TrackingContextProvider>
+      </TrackingContextProvider>,
     );
 
     const button = component.queryByText('button');
@@ -51,8 +51,8 @@ describe('<TrackingContextProvider>', () => {
         eventTime: '2021-05-03T00:00:00.000Z',
         level1: '1',
         level2: '2',
-        level3: '3'
-      }
+        level3: '3',
+      },
     });
   });
 });

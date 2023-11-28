@@ -9,33 +9,33 @@ export default () => {
   const { adserverTargeting } = prebidConfig.bidderSettings({
     bucketSize,
     maxBid,
-    minPrice
+    minPrice,
   });
 
   it("should return the correct value for the hd_bidder", () => {
     const hbBidder = adserverTargeting.filter(
-      item => item.key === "hb_bidder"
+      (item) => item.key === "hb_bidder",
     )[0];
     expect(hbBidder.val({ bidder: dummyValue })).toEqual(dummyValue);
   });
 
   it("should return the correct value for the hb_adid", () => {
-    const bid = adserverTargeting.filter(item => item.key === "hb_adid")[0];
+    const bid = adserverTargeting.filter((item) => item.key === "hb_adid")[0];
     expect(bid.val({ adId: dummyValue })).toEqual(dummyValue);
   });
 
   it("should return the correct value for the hb_pb when cpm is greater than maxBid (15)", () => {
-    const bid = adserverTargeting.filter(item => item.key === "hb_pb")[0];
+    const bid = adserverTargeting.filter((item) => item.key === "hb_pb")[0];
     expect(bid.val({ cpm: 16 })).toEqual(maxBid.toFixed(2));
   });
 
   it("should return the correct value for the hb_pb bid when cpm is less than bucketSize (0.25)", () => {
-    const bid = adserverTargeting.filter(item => item.key === "hb_pb")[0];
+    const bid = adserverTargeting.filter((item) => item.key === "hb_pb")[0];
     expect(bid.val({ cpm: 0.2 })).toEqual(minPrice.toFixed(2));
   });
 
   it("should return the correct value for the hb_pb when cpm is in the range 0.25 - 15.00", () => {
-    const bid = adserverTargeting.filter(item => item.key === "hb_pb")[0];
+    const bid = adserverTargeting.filter((item) => item.key === "hb_pb")[0];
     expect(bid.val({ cpm: 1.88 })).toEqual("1.75");
     expect(bid.val({ cpm: 1.2 })).toEqual("1.00");
     expect(bid.val({ cpm: 0.26 })).toEqual("0.25");
@@ -43,7 +43,7 @@ export default () => {
   });
 
   it("should return the correct value for the hb_size bid", () => {
-    const bid = adserverTargeting.filter(item => item.key === "hb_size")[0];
+    const bid = adserverTargeting.filter((item) => item.key === "hb_size")[0];
     expect(bid.val({ size: dummyValue })).toEqual(dummyValue);
   });
 };

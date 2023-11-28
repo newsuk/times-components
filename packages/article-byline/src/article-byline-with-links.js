@@ -14,7 +14,7 @@ const AuthorComponent = ({ slug, className, onAuthorPress, children }) => {
   return (
     <TextLink
       className={className}
-      onPress={e => {
+      onPress={(e) => {
         onAuthorPress(e, { name, slug });
       }}
       style={checkStylesForUnits(styles.link)}
@@ -30,7 +30,7 @@ const ArticleBylineWithLinks = ({ ast, centered, ...props }) =>
     withTrackEvents(AuthorComponent),
     ast,
     centered ? [styles.text, styles.centered] : styles.text,
-    props
+    props,
   );
 
 ArticleBylineWithLinks.displayName = "ArticleBylineWithLinks";

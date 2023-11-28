@@ -5,10 +5,10 @@ import {
   getCustomerType,
   getSharedStatus,
   getIsLiveOrBreakingFlag,
-  getActiveArticleFlags
+  getActiveArticleFlags,
 } from "../data-helper";
 
-export default Component =>
+export default (Component) =>
   withTrackingContext(Component, {
     getAttrs: ({ data, pageSection, navigationMode, referralUrl = "" }) => {
       let editionType = "";
@@ -37,20 +37,20 @@ export default Component =>
       return {
         articleId: get(data, "id", ""),
         article_topic_tags: data.topics
-          ? data.topics.map(topic => topic.name)
+          ? data.topics.map((topic) => topic.name)
           : [],
         isLocked: hasAccessViaTimes ? "unlocked" : "locked",
         bylines: get(
           data,
           "bylines[0].byline[0].children[0].attributes.value",
-          ""
+          "",
         ),
         headline: get(data, "headline", ""),
         label: get(data, "label", ""),
         pageName: `${get(data, "slug", "")}-${get(
           data,
           "shortIdentifier",
-          ""
+          "",
         )}`,
         edition_type: editionType,
         publishedTime: get(data, "publishedTime", ""),
@@ -66,8 +66,8 @@ export default Component =>
           : "no flag",
         article_template_name: getIsLiveOrBreakingFlag(flags)
           ? "live template"
-          : "standard template"
+          : "standard template",
       };
     },
-    trackingObjectName: "Article"
+    trackingObjectName: "Article",
   });

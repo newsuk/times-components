@@ -3,13 +3,13 @@ import React from "react";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import {
   ContextProviderWithDefaults,
-  defaults
+  defaults,
 } from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import {
   article as makeParams,
   MockFixture,
-  MockedProvider
+  MockedProvider,
 } from "@times-components/provider-test-tools";
 import { sections } from "@times-components/storybook";
 import { scales, themeFactory } from "@times-components/ts-styleguide";
@@ -17,12 +17,12 @@ import Responsive from "@times-components/responsive";
 import storybookReporter from "@times-components/tealium-utils";
 import Article from "./src/article-main-standard";
 
-const preventDefaultedAction = decorateAction =>
+const preventDefaultedAction = (decorateAction) =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    }
+    },
   ]);
 
 const templateName = "mainstandard";
@@ -33,7 +33,7 @@ const renderArticle = ({
   decorateAction,
   id,
   scale,
-  section
+  section,
 }) => (
   <Responsive>
     <ArticleProvider debounceTimeMs={0} id={id}>
@@ -42,8 +42,8 @@ const renderArticle = ({
           value={{
             theme: {
               ...themeFactory(section, templateName),
-              scale: scale || defaults.theme.scale
-            }
+              scale: scale || defaults.theme.scale,
+            },
           }}
         >
           <Article
@@ -53,29 +53,29 @@ const renderArticle = ({
             error={error}
             isLoading={isLoading}
             onAuthorPress={preventDefaultedAction(decorateAction)(
-              "onAuthorPress"
+              "onAuthorPress",
             )}
             onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-              "onCommentGuidelinesPress"
+              "onCommentGuidelinesPress",
             )}
             onCommentsPress={preventDefaultedAction(decorateAction)(
-              "onCommentsPress"
+              "onCommentsPress",
             )}
             onImagePress={preventDefaultedAction(decorateAction)(
-              "onImagePress"
+              "onImagePress",
             )}
             onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
             onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-              "onRelatedArticlePress"
+              "onRelatedArticlePress",
             )}
             onTopicPress={preventDefaultedAction(decorateAction)(
-              "onTopicPress"
+              "onTopicPress",
             )}
             onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-              "onTwitterLinkPress"
+              "onTwitterLinkPress",
             )}
             onVideoPress={preventDefaultedAction(decorateAction)(
-              "onVideoPress"
+              "onVideoPress",
             )}
             refetch={refetch}
           />
@@ -92,11 +92,11 @@ const mockArticle = ({
   id,
   params,
   scale,
-  sectionColour
+  sectionColour,
 }) => (
   <MockFixture
     params={params}
-    render={mocks => (
+    render={(mocks) => (
       <MockedProvider mocks={mocks}>
         {renderArticle({
           adConfig,
@@ -104,15 +104,15 @@ const mockArticle = ({
           decorateAction,
           id,
           scale,
-          sectionColour
+          sectionColour,
         })}
       </MockedProvider>
     )}
   />
 );
 
-const selectScales = select => select("Scale", scales, scales.medium);
-const selectSection = select => sections[select("Section", sections, "News")];
+const selectScales = (select) => select("Scale", scales, scales.medium);
+const selectSection = (select) => sections[select("Section", sections, "News")];
 
 export default {
   children: [
@@ -128,17 +128,17 @@ export default {
           params: makeParams({
             error: () => new Error("Article error"),
             variables: () => ({
-              id
-            })
+              id,
+            }),
           }),
           scale,
-          sectionColour
+          sectionColour,
         });
       },
       name: "Error",
       platform: "web",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Pages/Templates"
+  name: "Pages/Templates",
 };

@@ -11,7 +11,7 @@ describe('HamburgerMenuContainer', () => {
         hamburgerActive={false}
       >
         <div>hi</div>
-      </CustomHamburgerMenuContainer>
+      </CustomHamburgerMenuContainer>,
     );
     expect(asFragment()).toBeTruthy();
   });
@@ -23,7 +23,7 @@ describe('HamburgerMenuContainer', () => {
         setHamburgerActive={setHamburgerActive}
       >
         <div>hi</div>
-      </CustomHamburgerMenuContainer>
+      </CustomHamburgerMenuContainer>,
     );
     const Overlay = getByTestId('overlay');
     fireEvent.click(Overlay);

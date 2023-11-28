@@ -9,20 +9,20 @@ describe("getSectionFromTiles should", () => {
             {
               sections: [
                 {
-                  title: "Culture"
-                }
-              ]
-            }
-          ]
+                  title: "Culture",
+                },
+              ],
+            },
+          ],
         },
         {
           slices: [
             {
-              sections: []
-            }
-          ]
-        }
-      ]
+              sections: [],
+            },
+          ],
+        },
+      ],
     };
     expect(getSectionFromTiles(article)).toEqual("culture");
   });
@@ -33,22 +33,22 @@ describe("getSectionFromTiles should", () => {
         {
           slices: [
             {
-              sections: []
-            }
-          ]
+              sections: [],
+            },
+          ],
         },
         {
           slices: [
             {
               sections: [
                 {
-                  title: "Culture"
-                }
-              ]
-            }
-          ]
-        }
-      ]
+                  title: "Culture",
+                },
+              ],
+            },
+          ],
+        },
+      ],
     };
     expect(getSectionFromTiles(article)).toEqual("culture");
   });
@@ -59,25 +59,25 @@ describe("getSectionFromTiles should", () => {
         {
           slices: [
             {
-              sections: []
-            }
-          ]
+              sections: [],
+            },
+          ],
         },
         {
           slices: [
             {
-              sections: []
-            }
-          ]
-        }
-      ]
+              sections: [],
+            },
+          ],
+        },
+      ],
     };
     expect(getSectionFromTiles(article)).toEqual("default");
   });
 
   it("return the default section name when there is missing nested structure", () => {
     const article = {
-      tiles: []
+      tiles: [],
     };
     expect(getSectionFromTiles(article)).toEqual("default");
   });

@@ -47,179 +47,183 @@ const FilledArrowIconDown = styled(FilledArrowIcon)`
 
 export const NewsKitSearchIcon = customToNewsKitIcon(
   'NewskitSearchIcon',
-  props => <SearchIcon {...props} />
+  (props) => <SearchIcon {...props} />,
 );
 
-export const NewsKitBurgerIcon = customToNewsKitIcon('NewsKitBurger', props => (
-  <BurgerIcon {...props} />
-));
+export const NewsKitBurgerIcon = customToNewsKitIcon(
+  'NewsKitBurger',
+  (props) => <BurgerIcon {...props} />,
+);
 
 export const NewsKitRoundedCloseIcon = customToNewsKitIcon(
   'NewsKitRoundedCloseIcon',
-  props => <RoundedCloseIcon {...props} />
+  (props) => <RoundedCloseIcon {...props} />,
 );
 
 export const NewsKitCloseIcon = customToNewsKitIcon(
   'NewsKitCloseIcon',
-  props => <CloseIcon {...props} />
+  (props) => <CloseIcon {...props} />,
 );
 
 export const NewsKitChevronIcon = customToNewsKitIcon(
   'NewsKitChevronIcon',
-  props => <ChevronIcon {...props} />
+  (props) => <ChevronIcon {...props} />,
 );
 
 export const NewsKitTimesMasthead = customToNewsKitIcon(
   'NewskitTimesMasthead',
-  props => <TimesMasthead {...props} />
+  (props) => <TimesMasthead {...props} />,
 );
 
 export const NewsKitSundayTimesMasthead = customToNewsKitIcon(
   'NewskitSundayTimesMasthead',
-  props => <SundayTimesMasthead {...props} />
+  (props) => <SundayTimesMasthead {...props} />,
 );
 
 export const NewsKitChevronRightIcon = customToNewsKitIcon(
   'NewsKitChevronRightIcon',
-  props => <ChevronRightIcon {...props} />
+  (props) => <ChevronRightIcon {...props} />,
 );
 
 export const NewsKitChevronRightCircleIcon = customToNewsKitIcon(
   'NewsKitChevronRightCircleIcon',
-  props => <ChevronRightCircleIcon {...props} />
+  (props) => <ChevronRightCircleIcon {...props} />,
 );
 
 export const NewsKitArticlePlaceholder = customToNewsKitIcon(
   'NewsKitArticlePlaceholder',
-  props => <ArticlePlaceholder {...props} />
+  (props) => <ArticlePlaceholder {...props} />,
 );
-export const NewsKitWaveBg = customToNewsKitIcon('NewskitWaveBg', props => (
+export const NewsKitWaveBg = customToNewsKitIcon('NewskitWaveBg', (props) => (
   <WaveBg {...props} />
 ));
 
-export const NewskitIconEast = customToNewsKitIcon('NewskitIconEast', props => (
-  <EastArrow {...props} />
-));
+export const NewskitIconEast = customToNewsKitIcon(
+  'NewskitIconEast',
+  (props) => <EastArrow {...props} />,
+);
 
-export const NewskitIconBack = customToNewsKitIcon('NewskitIconBack', props => (
-  <SeeAllLeft {...props} />
-));
+export const NewskitIconBack = customToNewsKitIcon(
+  'NewskitIconBack',
+  (props) => <SeeAllLeft {...props} />,
+);
 
 export const NewskitIconForward = customToNewsKitIcon(
   'NewskitIconForward',
-  props => <SeeAllRight {...props} />
+  (props) => <SeeAllRight {...props} />,
 );
 
 export const NewsKitThumbsDownIcon = customToNewsKitIcon(
   'NewsKitThumbsDownIcon',
-  props => <ThumbsDownIcon {...props} />
+  (props) => <ThumbsDownIcon {...props} />,
 );
 
 export const NewsKitThumbsUpIcon = customToNewsKitIcon(
   'NewsKitThumbsUpIcon',
-  props => <ThumbsUpIcon {...props} />
+  (props) => <ThumbsUpIcon {...props} />,
 );
 
 export const NewsKitTooltipIcon = customToNewsKitIcon(
   'NewsKitTooltipIcon',
-  props => <TooltipIcon {...props} />
+  (props) => <TooltipIcon {...props} />,
 );
 
 export const NewsKitFilledArrowIcon = customToNewsKitIcon(
   'NewsKitFilledArrowIcon',
-  props => <FilledArrowIcon {...props} />
+  (props) => <FilledArrowIcon {...props} />,
 );
 
 export const NewsKitFilledArrowIconDown = customToNewsKitIcon(
   'NewsKitFilledArrowIconDown',
-  props => <FilledArrowIconDown {...props} />
+  (props) => <FilledArrowIconDown {...props} />,
 );
 
 export const NewsKitVideoButtonIcon = customToNewsKitIcon(
   'NewsKitVideoButtonIcon',
-  props => <VideoIcon {...props} />
+  (props) => <VideoIcon {...props} />,
 );
 
 export const NewsKitHeroBannerBackground = customToNewsKitIcon(
   'NewsKitHeroBannerBackground',
-  props => <HeroBannerBackground {...props} />
+  (props) => <HeroBannerBackground {...props} />,
 );
 
 export const NewsKitHeroBannerKillerSudoku = customToNewsKitIcon(
   'NewsKitHeroBannerKillerSudoku',
-  props => <HeroBannerKillerSudoku {...props} />
+  (props) => <HeroBannerKillerSudoku {...props} />,
 );
 
 export const NewsKitHeroBannerQuintagram = customToNewsKitIcon(
   'NewsKitHeroBannerQuintagram',
-  props => <HeroBannerQuintagram {...props} />
+  (props) => <HeroBannerQuintagram {...props} />,
 );
 
 export const NewsKitHeroBannerSuko = customToNewsKitIcon(
   'NewsKitHeroBannerSuko',
-  props => <HeroBannerSuko {...props} />
+  (props) => <HeroBannerSuko {...props} />,
 );
 
 export const NewsKitHeroBannerWordPuzzle = customToNewsKitIcon(
   'NewsKitHeroBannerWordPuzzle',
-  props => <HeroBannerWordPuzzle {...props} />
+  (props) => <HeroBannerWordPuzzle {...props} />,
 );
 
 export const NewsKitSudokusIcon = customToNewsKitIcon(
   'NewsKitSudokusIcon',
-  props => <SudokusIcon {...props} />
+  (props) => <SudokusIcon {...props} />,
 );
 
 export const NewsKitCrosswordsIcon = customToNewsKitIcon(
   'NewsKitCrosswordsIcon',
-  props => <CrosswordsIcon {...props} />
+  (props) => <CrosswordsIcon {...props} />,
 );
 
 export const NewsKitWordPuzzlesIcon = customToNewsKitIcon(
   'NewsKitWordPuzzlesIcon',
-  props => <WordPuzzlesIcon {...props} />
+  (props) => <WordPuzzlesIcon {...props} />,
 );
 
 export const NewsKitNumbersAndLogicIcon = customToNewsKitIcon(
   'NewsKitNumbersAndLogicIcon',
-  props => <NumbersAndLogicIcon {...props} />
+  (props) => <NumbersAndLogicIcon {...props} />,
 );
 
 export const NewsKitQuizzesAndTeasersIcon = customToNewsKitIcon(
   'NewsKitQuizzesAndTeasersIcon',
-  props => <QuizzesAndTeasersIcon {...props} />
+  (props) => <QuizzesAndTeasersIcon {...props} />,
 );
 
 export const NewsKitBoardAndCardGamesIcon = customToNewsKitIcon(
   'NewsKitBoardAndCardGamesIcon',
-  props => <BoardAndCardGamesIcon {...props} />
+  (props) => <BoardAndCardGamesIcon {...props} />,
 );
 
 export const NewsKitCrossIcon = customToNewsKitIcon(
   'NewsKitCrossIcon',
-  props => <CrossIcon {...props} />
+  (props) => <CrossIcon {...props} />,
 );
 
-export const NewsKitDoneIcon = customToNewsKitIcon('NewsKitDoneIcon', props => (
-  <DoneIcon {...props} />
-));
+export const NewsKitDoneIcon = customToNewsKitIcon(
+  'NewsKitDoneIcon',
+  (props) => <DoneIcon {...props} />,
+);
 
 export const NewsKitIconSubscribe3 = customToNewsKitIcon(
   'NewsKitIconSubscribe3',
-  props => <IconSubscribe3 {...props} />
+  (props) => <IconSubscribe3 {...props} />,
 );
 
 export const NewsKitIconSubscribeB = customToNewsKitIcon(
   'NewsKitIconSubscribeB',
-  props => <IconSubscribeB {...props} />
+  (props) => <IconSubscribeB {...props} />,
 );
 
 export const NewsKitIconSubscribeQuestion = customToNewsKitIcon(
   'NewsKitIconSubscribeQuestion',
-  props => <IconSubscribeQuestion {...props} />
+  (props) => <IconSubscribeQuestion {...props} />,
 );
 
 export const NewsKitPhoneIcon = customToNewsKitIcon(
   'NewsKitPhoneIcon',
-  props => <PhoneIcon {...props} />
+  (props) => <PhoneIcon {...props} />,
 );

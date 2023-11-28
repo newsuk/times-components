@@ -4,7 +4,7 @@ import { IconButton, TitleBar, MQ } from 'newskit';
 import {
   SliceHeaderWrapper,
   SliceHeaderLink,
-  SliceHeaderContainer
+  SliceHeaderContainer,
 } from './styles';
 
 export interface SliceHeaderProps {
@@ -20,7 +20,7 @@ export interface SliceHeaderProps {
 const SliceHeaderLinkWrapper = ({
   href,
   onClick,
-  children
+  children,
 }: {
   onClick: () => void;
   href?: string;
@@ -41,18 +41,18 @@ export const SliceHeader = ({
   href,
   titleTypographyPreset = {
     xs: 'editorialDisplay003',
-    md: 'editorialDisplay004'
+    md: 'editorialDisplay004',
   },
   iconArrowSize = { xs: 'iconSize010', md: 'iconSize020' },
   iconSize = { xs: 'sizing060', md: 'sizing080' },
   padding = 'space030',
-  sliceHeaderClickHandler
+  sliceHeaderClickHandler,
 }: SliceHeaderProps) => {
   return (
     <SliceHeaderWrapper
       stylePreset={{
         xs: 'sliceHeaderPresetMobile',
-        md: 'sliceHeaderPresetDesktop'
+        md: 'sliceHeaderPresetDesktop',
       }}
     >
       <SliceHeaderLinkWrapper
@@ -69,10 +69,10 @@ export const SliceHeader = ({
             overrides={{
               heading: {
                 typographyPreset: titleTypographyPreset,
-                stylePreset: 'inkBrand010'
+                stylePreset: 'inkBrand010',
               },
               paddingInline: 'space000',
-              paddingBlock: 'space000'
+              paddingBlock: 'space000',
             }}
           >
             {title}
@@ -83,7 +83,7 @@ export const SliceHeader = ({
                 stylePreset: 'sliceIconPreset',
                 iconSize: iconArrowSize,
                 height: iconSize,
-                width: iconSize
+                width: iconSize,
               }}
             >
               <NewsKitChevronRightIcon />

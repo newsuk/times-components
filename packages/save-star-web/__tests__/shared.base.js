@@ -13,14 +13,14 @@ jest.doMock("../src/save-api", () => {
     state = {
       savedStatus: false,
       isLoading: false,
-      toggleSaved: jest.fn()
+      toggleSaved: jest.fn(),
     };
 
     constructor(props) {
       super(props);
 
-      setSavedStatus = savedStatus => this.setState({ savedStatus });
-      setIsLoading = isLoading => this.setState({ isLoading });
+      setSavedStatus = (savedStatus) => this.setState({ savedStatus });
+      setIsLoading = (isLoading) => this.setState({ isLoading });
     }
 
     render() {
@@ -35,7 +35,7 @@ jest.doMock("../src/save-api", () => {
   return {
     __esModule: true,
     default: MockSaveApi,
-    getMock: () => ({ ...state, setSavedStatus, setIsLoading })
+    getMock: () => ({ ...state, setSavedStatus, setIsLoading }),
   };
 });
 
@@ -46,7 +46,7 @@ export default () => {
   describe("save star component", () => {
     it("star with saved status renders correctly", async () => {
       const testInstance = TestRenderer.create(
-        <SaveStarWeb articleId="article-id" />
+        <SaveStarWeb articleId="article-id" />,
       );
 
       getMock().setSavedStatus(true);
@@ -57,7 +57,7 @@ export default () => {
 
     it("star with unsaved status renders correctly", async () => {
       const testInstance = TestRenderer.create(
-        <SaveStarWeb articleId="article-id" />
+        <SaveStarWeb articleId="article-id" />,
       );
 
       getMock().setSavedStatus(false);
@@ -68,7 +68,7 @@ export default () => {
 
     it("save star loading state", async () => {
       const testInstance = TestRenderer.create(
-        <SaveStarWeb articleId="article-id" />
+        <SaveStarWeb articleId="article-id" />,
       );
 
       getMock().setIsLoading(true);
@@ -79,7 +79,7 @@ export default () => {
 
     it("check that toggleSaved method is invoked", async () => {
       const testInstance = TestRenderer.create(
-        <SaveStarWeb articleId="article-id" />
+        <SaveStarWeb articleId="article-id" />,
       );
 
       const { toggleSaved, setSavedStatus } = getMock();
@@ -93,13 +93,13 @@ export default () => {
 
       expect(toggleSaved).toHaveBeenCalledWith({
         savedStatus: true,
-        articleId: "article-id"
+        articleId: "article-id",
       });
     });
 
     it("check that the event default is properly prevented", async () => {
       const testInstance = TestRenderer.create(
-        <SaveStarWeb articleId="article-id" />
+        <SaveStarWeb articleId="article-id" />,
       );
 
       const [saveStarLink] = testInstance.root.findAllByType(Link);

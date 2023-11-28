@@ -3,7 +3,7 @@ import Video from "@times-components/video";
 
 import {
   videoPropTypes,
-  videoDefaultProps
+  videoDefaultProps,
 } from "./article-lead-asset-prop-types";
 
 const ArticleLeadAssetVideo = ({
@@ -15,13 +15,10 @@ const ArticleLeadAssetVideo = ({
   relativeWidth,
   relativeHeight,
   relativeHorizontalOffset,
-  relativeVerticalOffset
+  relativeVerticalOffset,
 }) => {
-  const {
-    brightcoveVideoId,
-    brightcovePolicyKey,
-    brightcoveAccountId
-  } = leadAsset;
+  const { brightcoveVideoId, brightcovePolicyKey, brightcoveAccountId } =
+    leadAsset;
   const height = width / aspectRatio;
 
   return (

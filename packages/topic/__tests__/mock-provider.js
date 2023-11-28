@@ -6,40 +6,40 @@ const articleList = [
   {
     headline: "Headline 1",
     id: "d98c257c-cb16-11e7-b529-95e3fc05f40f",
-    url: "https://article1.io"
+    url: "https://article1.io",
   },
   {
     headline: "Headline 2",
     id: "d98c257c-cb16-11e7-b529-95e3fc05f40g",
-    url: "https://article2.io"
+    url: "https://article2.io",
   },
   {
     headline: "Headline 3",
     id: "d98c257c-cb16-11e7-b529-95e3fc05f40h",
-    url: "https://article3.io"
+    url: "https://article3.io",
   },
   {
     headline: "Headline 4",
     id: "d98c257c-cb16-11e7-b529-95e3fc05f40i",
-    url: "https://article4.io"
+    url: "https://article4.io",
   },
   {
     headline: "Headline 5",
     id: "d98c257c-cb16-11e7-b529-95e3fc05f40j",
-    url: "https://article5.io"
+    url: "https://article5.io",
   },
   {
     headline: "Headline 6",
     id: "d98c257c-cb16-11e7-b529-95e3fc05f40k",
-    url: "https://article6.io"
-  }
+    url: "https://article6.io",
+  },
 ];
 
 const topic = (first, skip = 0) => ({
   articles: {
     count: 7,
-    list: articleList.slice(skip, skip + first)
-  }
+    list: articleList.slice(skip, skip + first),
+  },
 });
 
 export class TopicArticlesProvider extends Component {
@@ -55,9 +55,9 @@ export class TopicArticlesProvider extends Component {
         { topic: topic(1) },
         {
           fetchMoreResult:
-            variables.skip === 3 ? null : { topic: topic(1, variables.skip) }
-        }
-      ).topic
+            variables.skip === 3 ? null : { topic: topic(1, variables.skip) },
+        },
+      ).topic,
     });
   }
 
@@ -72,8 +72,8 @@ export class TopicArticlesProvider extends Component {
           pageSize,
           topic: stateTopic,
           variables: {
-            imageRatio: "5:4"
-          }
+            imageRatio: "5:4",
+          },
         })}
       </topicArticlesProvider>
     );

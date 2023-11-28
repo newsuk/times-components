@@ -7,14 +7,14 @@ import { ClickHandlerType } from '../../../../slices/types';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xs')
+  useBreakpointKey: jest.fn().mockReturnValue('xs'),
 }));
 
 const mockClickHandler = jest.fn();
 
 const renderComponent = (
   article: ArticleProps,
-  clickHandler: ClickHandlerType
+  clickHandler: ClickHandlerType,
 ) => render(<Article article={article} clickHandler={clickHandler} />);
 
 const defaultProps = {
@@ -24,48 +24,41 @@ const defaultProps = {
     caption: '',
     crops: [
       {
-        url:
-          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173',
-        ratio: '3:2'
+        url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173',
+        ratio: '3:2',
       },
       {
-        url:
-          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169',
-        ratio: '16:9'
+        url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169',
+        ratio: '16:9',
       },
       {
-        url:
-          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173',
-        ratio: '1:1'
+        url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173',
+        ratio: '1:1',
       },
       {
-        url:
-          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173',
-        ratio: '2:3'
+        url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173',
+        ratio: '2:3',
       },
       {
-        url:
-          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173',
-        ratio: '4:5'
+        url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173',
+        ratio: '4:5',
       },
       {
-        url:
-          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173',
-        ratio: '5:4'
-      }
-    ]
+        url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173',
+        ratio: '5:4',
+      },
+    ],
   },
   headline: "Harry & Meghan's New Project?",
-  url:
-    '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
+  url: '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
   tag: {
     label: 'Review',
-    href: '/'
+    href: '/',
   },
   flag: '4 min read',
   imageRight: false,
   hideImage: false,
-  hasVideo: false
+  hasVideo: false,
 };
 
 describe('Render Article List Item', () => {
@@ -79,9 +72,9 @@ describe('Render Article List Item', () => {
     const { asFragment } = renderComponent(
       {
         ...defaultProps,
-        imageRight: true
+        imageRight: true,
       },
-      mockClickHandler
+      mockClickHandler,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -98,7 +91,7 @@ describe('Render Article List Item', () => {
 
     expect(getArticleListItem.closest('a')).toHaveAttribute(
       'href',
-      '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m'
+      '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
     );
   });
 
@@ -118,52 +111,45 @@ describe('Render Article List Item', () => {
           caption: '',
           crops: [
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173',
-              ratio: '3:2'
+              url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173',
+              ratio: '3:2',
             },
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169',
-              ratio: '16:9'
+              url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169',
+              ratio: '16:9',
             },
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173',
-              ratio: '1:1'
+              url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173',
+              ratio: '1:1',
             },
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173',
-              ratio: '2:3'
+              url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173',
+              ratio: '2:3',
             },
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173',
-              ratio: '4:5'
+              url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173',
+              ratio: '4:5',
             },
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173',
-              ratio: '5:4'
-            }
-          ]
+              url: 'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173',
+              ratio: '5:4',
+            },
+          ],
         },
         headline: "Harry & Meghan's New Project?",
-        url:
-          '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
+        url: '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
         tag: {
           label: 'Review',
-          href: '/'
+          href: '/',
         },
-        flag: '4 min read'
+        flag: '4 min read',
       },
-      mockClickHandler
+      mockClickHandler,
     );
     const articleListUrl = screen.getByAltText("Harry & Meghan's New Project?");
     expect(articleListUrl).toHaveAttribute(
       'alt',
-      "Harry & Meghan's New Project?"
+      "Harry & Meghan's New Project?",
     );
   });
 });
@@ -192,9 +178,9 @@ describe('Render Article List Item with hidden image', () => {
         ...defaultProps,
         isFullWidth: true,
         hasTopBorder: true,
-        hideImage: true
+        hideImage: true,
       },
-      mockClickHandler
+      mockClickHandler,
     );
     const articleDivider = screen.getAllByTestId('divider')[0];
     expect(articleDivider).toBeInTheDocument();
@@ -205,9 +191,9 @@ describe('Render Article List Item with hidden image', () => {
         ...defaultProps,
         isFullWidth: true,
         hasTopBorder: true,
-        hideImage: false
+        hideImage: false,
       },
-      mockClickHandler
+      mockClickHandler,
     );
     const articleDivider = screen.getAllByTestId('divider')[1];
     expect(articleDivider.style.marginBottom).toBe('');
@@ -215,7 +201,7 @@ describe('Render Article List Item with hidden image', () => {
   it('should call click handler when clicked', () => {
     const { getByText } = renderComponent(
       { ...defaultProps },
-      mockClickHandler
+      mockClickHandler,
     );
     fireEvent.click(getByText("Harry & Meghan's New Project?"));
     expect(mockClickHandler).toHaveBeenCalled();

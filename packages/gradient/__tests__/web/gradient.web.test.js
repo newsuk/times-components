@@ -8,7 +8,7 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import Gradient from "../../src/gradient";
@@ -19,8 +19,8 @@ addSerializers(
   compose(
     print,
     minimaliseTransform((value, key) => key === "style"),
-    minimalWebTransform
-  )
+    minimalWebTransform,
+  ),
 );
 
 const tests = [
@@ -31,11 +31,11 @@ const tests = [
         mount(
           <Gradient>
             <TcText>Hello world!</TcText>
-          </Gradient>
-        )
+          </Gradient>,
+        ),
       ).toMatchSnapshot();
-    }
-  }
+    },
+  },
 ];
 
 iterator(tests);

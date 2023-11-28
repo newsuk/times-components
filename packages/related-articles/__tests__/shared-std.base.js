@@ -5,7 +5,7 @@ import {
   oneArticleTests,
   twoArticlesTests,
   threeArticlesTests,
-  testSummary
+  testSummary,
 } from "./shared-util";
 import standard0ArticleFixture from "../fixtures/standard/0-articles";
 import standard1ArticleFixture from "../fixtures/standard/1-article";
@@ -24,7 +24,7 @@ const standard1ArticleFixtureData = standard1ArticleFixture({
   shortHeadline: "Test Short Headline",
   slug: "test-slug",
   summary125: testSummary(125),
-  url: "https://test.io"
+  url: "https://test.io",
 }).data;
 
 const standardNoShortHeadlineFixtureData = standard1ArticleFixture({
@@ -35,7 +35,7 @@ const standardNoShortHeadlineFixtureData = standard1ArticleFixture({
   shortHeadline: "",
   slug: "test-slug",
   summary125: testSummary(125),
-  url: "https://test.io"
+  url: "https://test.io",
 }).data;
 
 const standardhasVideoFixtureData = standard1ArticleFixture({
@@ -45,7 +45,7 @@ const standardhasVideoFixtureData = standard1ArticleFixture({
   shortHeadline: "",
   slug: "test-slug",
   summary125: testSummary(125),
-  url: "https://test.io"
+  url: "https://test.io",
 }).data;
 
 const standard2ArticlesFixtureData = standard2ArticlesFixture({
@@ -63,7 +63,7 @@ const standard2ArticlesFixtureData = standard2ArticlesFixture({
   secondSection: "register",
   secondShortHeadline: "Second Short Headline",
   secondSummary125: testSummary(125),
-  secondUrl: "https://second.io"
+  secondUrl: "https://second.io",
 }).data;
 
 const standard3ArticlesFixtureData = standard3ArticlesFixture({
@@ -91,34 +91,34 @@ const standard3ArticlesFixtureData = standard3ArticlesFixture({
   thirdShortHeadline: "Third Short Headline",
   thirdSummary125: testSummary(125),
   thirdSummary145: testSummary(145),
-  thirdUrl: "https://third.io"
+  thirdUrl: "https://third.io",
 }).data;
 
 export const sharedNoArticles = noArticlesTests({
-  fixture: standard0ArticleFixtureData
+  fixture: standard0ArticleFixtureData,
 });
 
 export const sharedNoShortHeadline = noShortHeadlineTests({
   fixture: standardNoShortHeadlineFixtureData,
-  name: "no short headline"
+  name: "no short headline",
 });
 
 export const sharedHasVideo = hasVideoTests({
   fixture: standardhasVideoFixtureData,
-  name: "has video"
+  name: "has video",
 });
 
 export const sharedOneArticle = oneArticleTests({
   fixture: standard1ArticleFixtureData,
-  name: "a single related article"
+  name: "a single related article",
 });
 
 export const sharedTwoArticles = twoArticlesTests({
   fixture: standard2ArticlesFixtureData,
-  name: "two related articles"
+  name: "two related articles",
 });
 
 export const sharedThreeArticles = threeArticlesTests({
   fixture: standard3ArticlesFixtureData,
-  name: "three related articles"
+  name: "three related articles",
 });

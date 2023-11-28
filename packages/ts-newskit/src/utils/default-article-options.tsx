@@ -3,5 +3,5 @@ export const defaultArticleOptions = {
   sm: {},
   md: {},
   lg: {},
-  xl: {}
+  xl: {},
 };

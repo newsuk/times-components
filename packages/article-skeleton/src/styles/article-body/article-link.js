@@ -2,7 +2,7 @@ import {
   colours,
   fontsWithFallback,
   fontSizes,
-  spacing
+  spacing,
 } from "@times-components/ts-styleguide";
 
 export const linkStyles = {
@@ -17,7 +17,7 @@ export const linkStyles = {
   medium: `
       font-size: ${fontSizes.body}px;
       line-height: 30px;
-  `
+  `,
 };
 
 export const dropCapLinkStyles = {
@@ -25,5 +25,5 @@ export const dropCapLinkStyles = {
     font-size: inherit;
     text-decoration: none;
     color: ${colours.functional.action};
-  `
+  `,
 };

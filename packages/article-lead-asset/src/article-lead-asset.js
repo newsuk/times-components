@@ -11,7 +11,7 @@ const ArticleLeadAsset = ({
   displayImage,
   isVideo,
   leadAsset,
-  style
+  style,
 }) => {
   if (!leadAsset || !displayImage) {
     return null;
@@ -20,7 +20,7 @@ const ArticleLeadAsset = ({
   const captionContainer = isVideo ? leadAsset.posterImage : leadAsset;
   const caption = {
     credits: captionContainer.credits,
-    text: captionContainer.caption
+    text: captionContainer.caption,
   };
 
   const leadAssetView = isVideo ? (

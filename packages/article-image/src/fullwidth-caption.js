@@ -3,7 +3,7 @@ import Caption from "@times-components/caption";
 import { propTypes, defaultProps } from "./fullwidth-caption-prop-types";
 import { FullWidthCaptionContainer } from "./styles/responsive";
 
-const FullWidthCaptionWeb = props => (
+const FullWidthCaptionWeb = (props) => (
   <FullWidthCaptionContainer>
     <Caption {...props} />
   </FullWidthCaptionContainer>

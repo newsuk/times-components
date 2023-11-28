@@ -9,7 +9,7 @@ import {
   LinkInline,
   Hidden,
   TextBlock,
-  GridLayoutItem
+  GridLayoutItem,
 } from 'newskit';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
@@ -96,7 +96,7 @@ export const FullWidthBlock = styled(Block)`
   }
 `;
 const setInlinePaddingStart = (space: string) => ({
-  paddingInlineStart: `${space}`
+  paddingInlineStart: `${space}`,
 });
 export const StyledSpan = styled.span<{ hasCaption: boolean }>`
   ${({ hasCaption }) =>

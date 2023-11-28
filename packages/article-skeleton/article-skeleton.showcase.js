@@ -8,12 +8,12 @@ export default {
           boolean,
           decorateAction,
           hasScaling: false,
-          select
+          select,
         }),
       name: "Default",
       platform: "web",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Composed/Article Skeleton"
+  name: "Composed/Article Skeleton",
 };

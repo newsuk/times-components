@@ -15,7 +15,7 @@ class CardContent extends Component {
       lowResSize,
       highResSize,
       isLoading,
-      index
+      index,
     } = this.props;
 
     return (
@@ -45,11 +45,11 @@ class CardContent extends Component {
       lowResSize,
       relatedArticle,
       showImage,
-      isLcpItem
+      isLcpItem,
     } = this.props;
 
     const TcCardContainer = styled(TcView)`
-      ${props => props.styles && props.styles};
+      ${(props) => props.styles && props.styles};
     `;
 
     const renderImage = () => {
@@ -65,7 +65,7 @@ class CardContent extends Component {
           style={checkStylesForUnits({
             ...imageContainerStyle,
             ...imageStyle,
-            ...(isReversed ? styles.reversedImageContainer : "")
+            ...(isReversed ? styles.reversedImageContainer : ""),
           })}
         >
           <Image
@@ -90,7 +90,7 @@ class CardContent extends Component {
       <TcView
         style={checkStylesForUnits({
           ...cardContainerStyle,
-          ...(isReversed ? styles.reversedCardContainer : "")
+          ...(isReversed ? styles.reversedCardContainer : ""),
         })}
       >
         {!isReversed ? renderImage() : null}
@@ -99,7 +99,7 @@ class CardContent extends Component {
           styles={checkStylesForUnits({
             ...styles.contentContainer,
             ...(isReversed ? styles.reversedContentContainer : ""),
-            ...(isLoading ? styles.loadingContentContainer : "")
+            ...(isLoading ? styles.loadingContentContainer : ""),
           })}
         >
           {isLoading ? <Loading /> : children}

@@ -8,7 +8,7 @@ import {
   AudioPlayerTimeDisplay,
   Button,
   calculateTime,
-  Stack
+  Stack,
 } from 'newskit';
 import {
   ButtonContainer,
@@ -16,7 +16,7 @@ import {
   CollapseButton,
   ExpandedContainer,
   FullWidthRow,
-  EmptyBlock
+  EmptyBlock,
 } from '../styles';
 import { ScrollingText } from './scrolltext';
 
@@ -33,7 +33,7 @@ export const StickyPlayerExpanded: React.FC<StickyPlayerExpandedProps> = ({
   narrator,
   isPlaying,
   handleClickPlayPause,
-  setIsExpanded
+  setIsExpanded,
 }) => {
   return (
     <ExpandedContainer flow="vertical-center" stackDistribution="center">

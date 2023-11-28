@@ -16,11 +16,11 @@ const styles = {
     borderRightWidth: borderWidth,
     flexGrow: 1,
     justifyContent: "center",
-    padding: 20
+    padding: 20,
   },
   label: {
     fontFamily: fontsWithFallback.supporting,
-    paddingTop: 15
+    paddingTop: 15,
   },
   wrapper: {
     borderLeftColor: borderColor,
@@ -30,11 +30,11 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
-    margin: 20
-  }
+    margin: 20,
+  },
 };
 
-const renderIcon = color => args => {
+const renderIcon = (color) => (args) => {
   const name = args[0];
   const Icon = args[1];
 
@@ -45,7 +45,7 @@ const renderIcon = color => args => {
         height={50}
         strokeColour={color(
           `Icon ${name} strike`,
-          Icon.defaultProps.strokeColour
+          Icon.defaultProps.strokeColour,
         )}
         width={50}
       />
@@ -65,8 +65,8 @@ export default {
         </TcView>
       ),
       name: "Icons",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Icons"
+  name: "Primitives/Icons",
 };

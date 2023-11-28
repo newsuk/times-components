@@ -16,20 +16,20 @@ const markupTypes: Markup = {
                 name: "text",
                 children: [],
                 attributes: {
-                  value: "UK:"
-                }
-              }
-            ]
+                  value: "UK:",
+                },
+              },
+            ],
           },
           {
             name: "text",
             children: [],
             attributes: {
               value:
-                " Emily Thornberry, the shadow foreign secretary, gives a speech in London on Labour Party foreign policy."
-            }
-          }
-        ]
+                " Emily Thornberry, the shadow foreign secretary, gives a speech in London on Labour Party foreign policy.",
+            },
+          },
+        ],
       },
       {
         name: "paragraph",
@@ -41,22 +41,22 @@ const markupTypes: Markup = {
                 name: "text",
                 children: [],
                 attributes: {
-                  value: "Belgium:"
-                }
-              }
-            ]
+                  value: "Belgium:",
+                },
+              },
+            ],
           },
           {
             name: "text",
             children: [],
             attributes: {
               value:
-                " Jean-Claude Juncker, European Commission president, and Donald Tusk, European Council president, meet Leo Varadkar, the Irish prime minister, to discuss Brexit."
-            }
-          }
-        ]
-      }
-    ]
+                " Jean-Claude Juncker, European Commission president, and Donald Tusk, European Council president, meet Leo Varadkar, the Irish prime minister, to discuss Brexit.",
+            },
+          },
+        ],
+      },
+    ],
   },
   onThisDay: {
     title: "On this day",
@@ -69,8 +69,8 @@ const markupTypes: Markup = {
             name: "text",
             children: [],
             attributes: {
-              value: "In "
-            }
+              value: "In ",
+            },
           },
           {
             name: "bold",
@@ -79,17 +79,17 @@ const markupTypes: Markup = {
                 name: "text",
                 children: [],
                 attributes: {
-                  value: "1685 "
-                }
-              }
-            ]
+                  value: "1685 ",
+                },
+              },
+            ],
           },
           {
             name: "text",
             children: [],
             attributes: {
-              value: "King James II acceded to the throne; in "
-            }
+              value: "King James II acceded to the throne; in ",
+            },
           },
           {
             name: "bold",
@@ -98,38 +98,18 @@ const markupTypes: Markup = {
                 name: "text",
                 children: [],
                 attributes: {
-                  value: "1952 "
-                }
-              }
-            ]
-          },
-          {
-            name: "text",
-            children: [],
-            attributes: {
-              value:
-                "Queen Elizabeth II acceded to the throne while visiting Kenya; in "
-            }
-          },
-          {
-            name: "bold",
-            children: [
-              {
-                name: "text",
-                children: [],
-                attributes: {
-                  value: "1958 "
-                }
-              }
-            ]
+                  value: "1952 ",
+                },
+              },
+            ],
           },
           {
             name: "text",
             children: [],
             attributes: {
               value:
-                "seven members of the Manchester United football team were among those killed in an air crash in Munich; in "
-            }
+                "Queen Elizabeth II acceded to the throne while visiting Kenya; in ",
+            },
           },
           {
             name: "bold",
@@ -138,22 +118,42 @@ const markupTypes: Markup = {
                 name: "text",
                 children: [],
                 attributes: {
-                  value: "1964 "
-                }
-              }
-            ]
+                  value: "1958 ",
+                },
+              },
+            ],
           },
           {
             name: "text",
             children: [],
             attributes: {
               value:
-                "France and Britain agreed on the building of a Channel tunnel."
-            }
-          }
-        ]
-      }
-    ]
+                "seven members of the Manchester United football team were among those killed in an air crash in Munich; in ",
+            },
+          },
+          {
+            name: "bold",
+            children: [
+              {
+                name: "text",
+                children: [],
+                attributes: {
+                  value: "1964 ",
+                },
+              },
+            ],
+          },
+          {
+            name: "text",
+            children: [],
+            attributes: {
+              value:
+                "France and Britain agreed on the building of a Channel tunnel.",
+            },
+          },
+        ],
+      },
+    ],
   },
   natureNotes: {
     title: "Nature notes",
@@ -165,11 +165,11 @@ const markupTypes: Markup = {
             name: "text",
             children: [],
             attributes: {
-              value: "Derwent May"
-            }
-          }
-        ]
-      }
+              value: "Derwent May",
+            },
+          },
+        ],
+      },
     ],
     content: [
       {
@@ -180,12 +180,12 @@ const markupTypes: Markup = {
             children: [],
             attributes: {
               value:
-                "Many of the stoats in Scotland and northern England are now camouflaged against the snow by their remarkable white winter fur. They would be conspicuous in a snowy landscape if they still had the reddish-brown coats of fur that they had in the summer. The white coat gives them protection against their predators, such as foxes and golden eagles, and enables them to steal up unseen on the small animals they prey on. They acquire it very quickly once the snow falls, but the tip of their tail always remains black. However, stoats living farther south in Britain keep the same brown coat all the year round, even when snow falls. The beautiful, silky, white winter fur is called ermine, and the animal itself is sometimes called the ermine. This fur has always been very precious material for use in clothes and has been used to line the crowns of monarchs."
-            }
-          }
-        ]
-      }
-    ]
+                "Many of the stoats in Scotland and northern England are now camouflaged against the snow by their remarkable white winter fur. They would be conspicuous in a snowy landscape if they still had the reddish-brown coats of fur that they had in the summer. The white coat gives them protection against their predators, such as foxes and golden eagles, and enables them to steal up unseen on the small animals they prey on. They acquire it very quickly once the snow falls, but the tip of their tail always remains black. However, stoats living farther south in Britain keep the same brown coat all the year round, even when snow falls. The beautiful, silky, white winter fur is called ermine, and the animal itself is sometimes called the ermine. This fur has always been very precious material for use in clothes and has been used to line the crowns of monarchs.",
+            },
+          },
+        ],
+      },
+    ],
   },
   birthdaysToday: {
     title: "Birthdays today",
@@ -200,17 +200,17 @@ const markupTypes: Markup = {
                 name: "text",
                 children: [],
                 attributes: {
-                  value: "Rick Astley"
-                }
-              }
-            ]
+                  value: "Rick Astley",
+                },
+              },
+            ],
           },
           {
             name: "text",
             children: [],
             attributes: {
-              value: ", singer-songwriter, "
-            }
+              value: ", singer-songwriter, ",
+            },
           },
           {
             name: "italic",
@@ -219,17 +219,17 @@ const markupTypes: Markup = {
                 name: "text",
                 children: [],
                 attributes: {
-                  value: "Never Gonna Give You Up "
-                }
-              }
-            ]
+                  value: "Never Gonna Give You Up ",
+                },
+              },
+            ],
           },
           {
             name: "text",
             children: [],
             attributes: {
-              value: "(1987), 53; "
-            }
+              value: "(1987), 53; ",
+            },
           },
           {
             name: "bold",
@@ -238,17 +238,17 @@ const markupTypes: Markup = {
                 name: "text",
                 children: [],
                 attributes: {
-                  value: "Mike Batt"
-                }
-              }
-            ]
+                  value: "Mike Batt",
+                },
+              },
+            ],
           },
           {
             name: "text",
             children: [],
             attributes: {
-              value: ", composer, songwriter, "
-            }
+              value: ", composer, songwriter, ",
+            },
           },
           {
             name: "italic",
@@ -257,17 +257,17 @@ const markupTypes: Markup = {
                 name: "text",
                 children: [],
                 attributes: {
-                  value: "Wombling Free "
-                }
-              }
-            ]
+                  value: "Wombling Free ",
+                },
+              },
+            ],
           },
           {
             name: "text",
             children: [],
             attributes: {
-              value: "(1978), "
-            }
+              value: "(1978), ",
+            },
           },
           {
             name: "italic",
@@ -276,21 +276,21 @@ const markupTypes: Markup = {
                 name: "text",
                 children: [],
                 attributes: {
-                  value: "Bright Eyes "
-                }
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  }
+                  value: "Bright Eyes ",
+                },
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 };
 
 const generateDailyRegisterMarkup = (
   array: Array<Markup>,
   markupType: Markup,
-  iterations: number
+  iterations: number,
 ) => {
   new Array(iterations)
     .fill(0)
@@ -319,7 +319,7 @@ class MockDailyRegisterMarkup {
     this.markup = generateDailyRegisterMarkup(
       this.markup,
       "natureNotes",
-      length
+      length,
     );
     return this;
   }
@@ -328,7 +328,7 @@ class MockDailyRegisterMarkup {
     this.markup = generateDailyRegisterMarkup(
       this.markup,
       "birthdaysToday",
-      length
+      length,
     );
     return this;
   }

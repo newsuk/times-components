@@ -16,7 +16,7 @@ const InlineParagraph = ({
   tree,
   key,
   defaultFont,
-  LinkComponent
+  LinkComponent,
 }) => {
   const { spacing } = styleguide({ scale });
 
@@ -32,13 +32,13 @@ const InlineParagraph = ({
     Infinity,
     0,
     0,
-    dropCap ? [dropCap.exclusion] : []
+    dropCap ? [dropCap.exclusion] : [],
   );
 
   const slice = str.charAt(1) === " " ? 2 : dropCap.length;
 
   const manager = new LayoutManager(dropCap ? str.slice(slice) : str, [
-    container
+    container,
   ]);
 
   const positioned = manager.layout();
@@ -52,7 +52,7 @@ const InlineParagraph = ({
         style={{
           position: "absolute",
           left: gutters,
-          width: contentWidth * 0.35
+          width: contentWidth * 0.35,
         }}
       >
         {inline}
@@ -67,7 +67,7 @@ const InlineParagraph = ({
         !positioned.length
           ? 0
           : positioned[positioned.length - 1].position.y +
-            defaultFont.lineHeight
+              defaultFont.lineHeight,
       )}
     >
       {positioned.map((p, i) => {
@@ -80,14 +80,14 @@ const InlineParagraph = ({
           return (
             <LinkComponent
               url={href}
-              onPress={e =>
+              onPress={(e) =>
                 onLinkPress(e, { canonicalId, type, url: href.href })
               }
               style={{
                 ...linkStyle,
                 position: "absolute",
                 left: p.position.x,
-                top: p.position.y
+                top: p.position.y,
               }}
             >
               {p.text.string}
@@ -104,16 +104,16 @@ const InlineParagraph = ({
               {
                 position: "absolute",
                 left: p.position.x,
-                top: p.position.y
+                top: p.position.y,
               },
-              style
+              style,
             ]}
           >
             {p.text.string}
           </TcText>
         );
       })}
-    </ArticleParagraphWrapper>
+    </ArticleParagraphWrapper>,
   ];
 };
 
@@ -127,7 +127,7 @@ InlineParagraph.propTypes = {
   tree: PropTypes.object.isRequired,
   key: PropTypes.string.isRequired,
   defaultFont: PropTypes.object.isRequired,
-  LinkComponent: PropTypes.func.isRequired
+  LinkComponent: PropTypes.func.isRequired,
 };
 
 export default InlineParagraph;

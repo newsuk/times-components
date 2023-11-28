@@ -10,7 +10,7 @@ const renderComponent = ({ show }: ShowProp) =>
   render(
     <TCThemeProvider>
       <GridOverlay show={show} />
-    </TCThemeProvider>
+    </TCThemeProvider>,
   );
 
 describe('GridOverlay', () => {

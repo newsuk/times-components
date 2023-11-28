@@ -1,22 +1,22 @@
 const contentWithOutAd = [
   {
     name: "paragraph",
-    children: []
+    children: [],
   },
   {
     name: "paragraph",
-    children: []
+    children: [],
   },
   {
     name: "paywall",
     children: [
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "image",
@@ -24,79 +24,78 @@ const contentWithOutAd = [
           display: "secondary",
           caption: null,
           credits: null,
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535",
           ratio: "1000:1000",
           relativeHorizontalOffset: 0.19904240766073872,
           relativeVerticalOffset: 0.18278100444140757,
           relativeWidth: 0.5636114911080712,
-          relativeHeight: 0.5630338230269901
+          relativeHeight: 0.5630338230269901,
         },
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "ad",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
-      }
-    ]
-  }
+        children: [],
+      },
+    ],
+  },
 ];
 
 const contentWithAd = [
   {
     name: "paragraph",
-    children: []
+    children: [],
   },
   {
     name: "paragraph",
-    children: []
+    children: [],
   },
   {
     name: "paywall",
     children: [
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "image",
@@ -104,83 +103,82 @@ const contentWithAd = [
           display: "secondary",
           caption: null,
           credits: null,
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535",
           ratio: "1000:1000",
           relativeHorizontalOffset: 0.19904240766073872,
           relativeVerticalOffset: 0.18278100444140757,
           relativeWidth: 0.5636114911080712,
-          relativeHeight: 0.5630338230269901
+          relativeHeight: 0.5630338230269901,
         },
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "ad",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "nativeAd",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
-      }
-    ]
-  }
+        children: [],
+      },
+    ],
+  },
 ];
 
 const contentWithoutParagraphs = [
   {
     name: "paragraph",
-    children: []
+    children: [],
   },
   {
     name: "paragraph",
-    children: []
+    children: [],
   },
   {
     name: "paywall",
     children: [
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "image",
@@ -188,54 +186,53 @@ const contentWithoutParagraphs = [
           display: "secondary",
           caption: null,
           credits: null,
-          url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82508792-f900-11ea-bed7-6729a62ebe0a.jpg?crop=1648%2C1648%2C582%2C535",
           ratio: "1000:1000",
           relativeHorizontalOffset: 0.19904240766073872,
           relativeVerticalOffset: 0.18278100444140757,
           relativeWidth: 0.5636114911080712,
-          relativeHeight: 0.5630338230269901
+          relativeHeight: 0.5630338230269901,
         },
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
+        children: [],
       },
       {
         name: "ad",
-        children: []
+        children: [],
       },
       {
         name: "paragraph",
-        children: []
-      }
-    ]
-  }
+        children: [],
+      },
+    ],
+  },
 ];
 
 const contentIncludesPaywall = [
   {
     name: "paragraph",
-    children: []
+    children: [],
   },
   {
     name: "paragraph",
-    children: []
+    children: [],
   },
   {
     name: "nativeAd",
-    children: []
+    children: [],
   },
   {
     name: "paragraph",
-    children: []
-  }
+    children: [],
+  },
 ];
 
 export default {
   contentWithOutAd,
   contentWithAd,
   contentWithoutParagraphs,
-  contentIncludesPaywall
+  contentIncludesPaywall,
 };

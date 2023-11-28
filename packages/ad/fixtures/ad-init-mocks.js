@@ -5,7 +5,7 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
   const document = jsdom("<html></html>");
   const window = document.defaultView;
   window.matchMedia = jest.fn().mockImplementation(() => ({
-    addListener: jest.fn()
+    addListener: jest.fn(),
   }));
   const pubAds = {
     addEventListener: jest.fn(),
@@ -14,16 +14,16 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
     enableAsyncRendering: jest.fn(),
     enableSingleRequest: jest.fn(),
     refresh: jest.fn(),
-    setTargeting: jest.fn()
+    setTargeting: jest.fn(),
   };
   const slot = {
     addService: jest.fn(),
     defineSizeMapping: jest.fn(),
-    setTargeting: jest.fn()
+    setTargeting: jest.fn(),
   };
   const sizeMapping = {
     addSize: jest.fn(),
-    build: jest.fn()
+    build: jest.fn(),
   };
   const googletag = {
     cmd: [],
@@ -32,11 +32,11 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
     display: jest.fn(),
     enableServices: jest.fn(),
     pubads: jest.fn().mockImplementation(() => pubAds),
-    sizeMapping: jest.fn().mockImplementation(() => sizeMapping)
+    sizeMapping: jest.fn().mockImplementation(() => sizeMapping),
   };
   window.googletag = googletag;
   const processGoogletagCommandQueue = () => {
-    window.googletag.cmd.forEach(cmd => cmd());
+    window.googletag.cmd.forEach((cmd) => cmd());
     window.googletag.cmd = [];
   };
   const pbjs = {
@@ -48,11 +48,11 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
     removeAdUnit: jest.fn(),
     requestBids: jest.fn(),
     setConfig: jest.fn(),
-    setTargetingForGPTAsync: jest.fn()
+    setTargetingForGPTAsync: jest.fn(),
   };
   window.pbjs = pbjs;
   const processPrebidCommandQueue = () => {
-    window.pbjs.que.forEach(cmd => cmd());
+    window.pbjs.que.forEach((cmd) => cmd());
     window.pbjs.que = [];
   };
   const apstag = {
@@ -69,7 +69,7 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
     },
     /* eslint-enable prefer-rest-params, no-underscore-dangle */
     setDisplayBids: jest.fn(),
-    targetingKeys: jest.fn().mockReturnValue([])
+    targetingKeys: jest.fn().mockReturnValue([]),
   };
   window.apstag = apstag;
   const slotConfig = {
@@ -78,23 +78,23 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
       {
         height: 250,
         sizes: [[1, 1]],
-        width: 100
-      }
+        width: 100,
+      },
     ],
     maxSizes: {
       height: 0,
-      width: 0
+      width: 0,
     },
     sizes: [],
-    slotName: "mock-code"
+    slotName: "mock-code",
   };
   const nuk = {
     ads: withHeaderBidding
       ? {
           fetchBids: Promise.resolve(),
-          loaded: Promise.resolve()
+          loaded: Promise.resolve(),
         }
-      : false
+      : false,
   };
   window.nuk = nuk;
   const initOptions = {
@@ -102,7 +102,7 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
       adUnit: "mockAdUnit",
       allSlotConfigs: [
         Object.assign({}, slotConfig),
-        Object.assign({}, slotConfig)
+        Object.assign({}, slotConfig),
       ],
       bidInitialiser: Promise.resolve(),
       config: slotConfig,
@@ -110,7 +110,7 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
       disableAds: false,
       networkId: "mockNetwork",
       pageTargeting: {
-        pageOptionName: "pageOptionValue"
+        pageOptionName: "pageOptionValue",
       },
       prebidConfig: {
         bidders: {},
@@ -118,21 +118,21 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
         bucketSize: 0,
         maxBid: 0,
         minPrice: 0,
-        timeout: 0
+        timeout: 0,
       },
       section: "mockSection",
       sizingMap: [],
       slotName: "mockCode",
       slots: [],
       slotTargeting: {
-        slotOptionName: "slotOptionValue"
-      }
+        slotOptionName: "slotOptionValue",
+      },
     },
     el: document.createElement("div"),
     eventCallback: jest.fn(),
     platform: "web",
     renderComplete: jest.fn(),
-    window
+    window,
   };
 
   return {
@@ -147,8 +147,8 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
       sizeMapping,
       slot,
       slotConfig,
-      window
-    }
+      window,
+    },
   };
 };
 

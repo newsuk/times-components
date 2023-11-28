@@ -1,6 +1,6 @@
 import {
   topicArticles,
-  topicArticlesPTV
+  topicArticlesPTV,
 } from "@times-components/provider-queries";
 import connectGraphql from "./connect";
 

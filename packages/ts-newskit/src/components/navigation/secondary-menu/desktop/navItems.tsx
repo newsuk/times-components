@@ -22,7 +22,7 @@ export const NavItems: React.FC<{
           overrides={{
             paddingInline: 'space040',
             stylePreset: 'menuItemDesktop',
-            typographyPreset: 'newPreset040'
+            typographyPreset: 'newPreset040',
           }}
           href={url}
           key={url}

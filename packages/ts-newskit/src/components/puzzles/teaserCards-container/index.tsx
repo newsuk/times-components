@@ -8,7 +8,7 @@ import {
   NewsKitWordPuzzlesIcon,
   NewsKitNumbersAndLogicIcon,
   NewsKitQuizzesAndTeasersIcon,
-  NewsKitBoardAndCardGamesIcon
+  NewsKitBoardAndCardGamesIcon,
 } from '../../../assets';
 
 type PuzzleType =
@@ -55,12 +55,12 @@ const iconMapping: Record<PuzzleType, IconComponent> = {
       width={75}
       height={75}
     />
-  )
+  ),
 };
 
 export const TeaserCardsContainer = ({
   types,
-  title
+  title,
 }: TeaserCardsContainerProps) => {
   return (
     <>
@@ -69,13 +69,13 @@ export const TeaserCardsContainer = ({
         overrides={{
           paddingBlock: {
             xs: 'space050',
-            lg: 'space070'
+            lg: 'space070',
           },
           paddingInline: 'space000',
           heading: {
             typographyPreset: 'editorialHeadline040',
-            stylePreset: 'inkBrand010'
-          }
+            stylePreset: 'inkBrand010',
+          },
         }}
         data-testid="title-bar"
       >
@@ -84,13 +84,13 @@ export const TeaserCardsContainer = ({
       <GridLayout
         columns={{
           xs: 'repeat(2, 1fr)',
-          md: 'repeat(6, 1fr)'
+          md: 'repeat(6, 1fr)',
         }}
         columnGap={{
           xs: 'space050',
           md: 'space040',
           lg: 'space050',
-          xl: 'space060'
+          xl: 'space060',
         }}
       >
         {types.map((type, __) => (

@@ -13,19 +13,19 @@ Object.defineProperties(window.HTMLElement.prototype, {
     configurable: true,
     get() {
       return parseFloat(window.getComputedStyle(this).marginLeft) || 0;
-    }
+    },
   },
   offsetTop: {
     configurable: true,
     get() {
       return parseFloat(window.getComputedStyle(this).marginTop) || 0;
-    }
+    },
   },
   offsetHeight: {
     configurable: true,
     get() {
       return parseFloat(window.getComputedStyle(this).height) || 0;
-    }
+    },
   },
   offsetWidth: {
     configurable: true,
@@ -34,13 +34,13 @@ Object.defineProperties(window.HTMLElement.prototype, {
         parseFloat(window.getComputedStyle(this).width) ||
         (this.parentNode === document.body ? 1000 : this.parentNode.clientWidth)
       );
-    }
+    },
   },
   clientWidth: {
     configurable: true,
     get() {
       return this.offsetWidth;
-    }
+    },
   },
   getBoundingClientRect: {
     configurable: true,
@@ -66,6 +66,6 @@ Object.defineProperties(window.HTMLElement.prototype, {
       }
 
       return { top, left, width: this.offsetWidth, height: this.offsetHeight };
-    }
-  }
+    },
+  },
 });

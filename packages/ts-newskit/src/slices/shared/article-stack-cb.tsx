@@ -9,7 +9,7 @@ import { ArticleGrid } from '../shared-styles/article-stack';
 export const ArticleStack = ({
   articles,
   clickHandler,
-  isContentBucket3
+  isContentBucket3,
 }: {
   articles: ArticleProps[];
   clickHandler: ClickHandlerType;
@@ -31,7 +31,7 @@ export const ArticleStack = ({
             article={{
               ...clearCreditsAndCaption(article),
               hasTopBorder: articleIndex > 0,
-              hideImage
+              hideImage,
             }}
             clickHandler={clickHandler}
           />
@@ -46,7 +46,7 @@ export const ArticleStack = ({
         xs: '170px 1px 170px 1px 170px 1px 170px',
         md: '1fr 1px 1fr 1px 1fr 1px 1fr',
         lg: '1fr',
-        xl: '1fr 1fr'
+        xl: '1fr 1fr',
       }}
       style={{ position: 'relative' }}
       columnGap={{ xs: 'space040', xl: 'space060' }}

@@ -8,32 +8,32 @@ const captionText = "Some caption text goes in here";
 const credits = "Just credits";
 const style = {
   container: {
-    backgroundColor: "red"
+    backgroundColor: "red",
   },
   text: {
-    color: "green"
-  }
+    color: "green",
+  },
 };
 
 const allStyleOptions = {
   caption: {
-    fontSize: 10
+    fontSize: 10,
   },
   container: {
-    backgroundColor: "red"
+    backgroundColor: "red",
   },
   credits: {
-    fontSize: 8
+    fontSize: 8,
   },
   text: {
-    color: "green"
-  }
+    color: "green",
+  },
 };
 
 const containerOnlyStyle = {
   container: {
-    backgroundColor: "blue"
-  }
+    backgroundColor: "blue",
+  },
 };
 
 export default () => {
@@ -42,11 +42,11 @@ export default () => {
       name: "caption with container and text styles",
       test() {
         const testInstance = TestRenderer.create(
-          <Caption credits={credits} style={style} text={captionText} />
+          <Caption credits={credits} style={style} text={captionText} />,
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "caption with container, caption, and credit styles",
@@ -56,11 +56,11 @@ export default () => {
             credits={credits}
             style={allStyleOptions}
             text={captionText}
-          />
+          />,
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "caption with only container styles",
@@ -70,11 +70,11 @@ export default () => {
             credits={credits}
             style={containerOnlyStyle}
             text={captionText}
-          />
+          />,
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ]);
 };

@@ -11,7 +11,7 @@ export type MouseEventType = React.MouseEvent<HTMLAnchorElement, MouseEvent>;
 export type ClickHandlerType = (
   event: MouseEventType,
   article: SliceArticle,
-  position?: string
+  position?: string,
 ) => void;
 
 export type StackArticleOptions = MQPartial<Partial<ArticleProps>>;

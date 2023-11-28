@@ -8,6 +8,6 @@ articleTests("mainstandard", {
   blackoutElements: [
     "[data-testid=save-and-share-bar]",
     '[data-tc-sticky-container="true"]',
-    '[class^="sticky-save-and-share-bar__]'
-  ]
+    '[class^="sticky-save-and-share-bar__]',
+  ],
 });

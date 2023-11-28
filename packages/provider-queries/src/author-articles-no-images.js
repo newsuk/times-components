@@ -8,11 +8,11 @@ export const propsToVariables = ({
   pageSize,
   page,
   shortSummaryLength,
-  slug
+  slug,
 }) => ({
   first: pageSize,
   longSummaryLength,
   shortSummaryLength,
   skip: pageSize * (page - 1),
-  slug
+  slug,
 });

@@ -3,19 +3,19 @@ import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import {
   handleOnClickScrollTo,
-  handleHrefScrollTo
+  handleHrefScrollTo,
 } from "@times-components/utils";
 
 import props from "./key-facts-text-prop-types";
 import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 
-const getTitle = data => {
+const getTitle = (data) => {
   if (data.children.length === 1 && data.children[0].attributes) {
     return data.children[0].attributes.value;
   }
 
-  const linkText = data.children.map(
-    child => (child.attributes ? child.attributes.value : child.attributes)
+  const linkText = data.children.map((child) =>
+    child.attributes ? child.attributes.value : child.attributes,
   );
   const title = linkText.join(" ");
   return title.length > 0 ? title : " ";
@@ -29,8 +29,8 @@ const handleClickEventAnalytics = (fireAnalyticsEvent, title, articleFlag) => {
         event_navigation_name: "in-article component clicked : key moments",
         event_navigation_browsing_method: "click",
         article_parent_name: title,
-        article_flag: articleFlag
-      }
+        article_flag: articleFlag,
+      },
     });
   }
 };
@@ -39,7 +39,7 @@ const KeyFactsText = ({
   listIndex,
   keyFactItem,
   fireAnalyticsEvent,
-  articleFlag
+  articleFlag,
 }) => (
   <BulletContainer key={`key-facts-${listIndex}`}>
     <Bullet />
@@ -56,12 +56,12 @@ const KeyFactsText = ({
               return (
                 <KeyFactTextLink
                   key={key}
-                  onClick={event => {
+                  onClick={(event) => {
                     handleOnClickScrollTo(event, url);
                     handleClickEventAnalytics(
                       fireAnalyticsEvent,
                       title,
-                      articleFlag
+                      articleFlag,
                     );
                   }}
                   href={handleHrefScrollTo(url)}
@@ -69,10 +69,10 @@ const KeyFactsText = ({
                   {renderedChildren}
                 </KeyFactTextLink>
               );
-            }
+            },
           },
-          `key-facts-${listIndex}-${listItemIndex}`
-        )
+          `key-facts-${listIndex}-${listItemIndex}`,
+        ),
       )}
     </Text>
   </BulletContainer>

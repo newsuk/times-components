@@ -2,15 +2,15 @@ import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
 const styles = {
   container: {
-    alignItems: "center"
+    alignItems: "center",
   },
   description: {
     ...fontFactory({
       font: "body",
-      fontSize: "tertiary"
+      fontSize: "tertiary",
     }),
     color: colours.functional.primary,
-    textAlign: "center"
+    textAlign: "center",
   },
   divider: {
     borderStyle: "solid",
@@ -18,15 +18,15 @@ const styles = {
     borderTopWidth: 1,
     justifyContent: "center",
     marginBottom: spacing(5),
-    width: 200
+    width: 200,
   },
   name: {
     ...fontFactory({
       font: "headline",
-      fontSize: "pageHeadline"
+      fontSize: "pageHeadline",
     }),
     color: colours.functional.brandColour,
-    textAlign: "center"
+    textAlign: "center",
   },
   wrapper: {
     alignItems: "center",
@@ -38,8 +38,8 @@ const styles = {
     paddingLeft: spacing(2),
     paddingRight: spacing(2),
     paddingTop: spacing(8),
-    width: "100%"
-  }
+    width: "100%",
+  },
 };
 
 export default styles;

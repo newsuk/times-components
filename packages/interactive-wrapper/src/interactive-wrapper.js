@@ -46,11 +46,11 @@ export function polyfillWCIfNecessary() {
   if (!htmlImportsSupported || !registerElementSupported) {
     return Promise.all([
       ensureScript(
-        "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.min.js"
+        "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.min.js",
       ),
-      new Promise(resolve => {
+      new Promise((resolve) => {
         window.addEventListener("WebComponentsReady", resolve);
-      })
+      }),
     ]);
   }
 
@@ -93,8 +93,8 @@ export default class InteractiveWrapper extends Component {
 
     const newElement = document.createElement(element);
 
-    Object.keys(attributes).forEach(key =>
-      newElement.setAttribute(key, attributes[key])
+    Object.keys(attributes).forEach((key) =>
+      newElement.setAttribute(key, attributes[key]),
     );
 
     component.appendChild(newElement);
@@ -127,10 +127,10 @@ InteractiveWrapper.propTypes = {
   attributes: PropTypes.object,
   element: PropTypes.string.isRequired,
   source: PropTypes.string.isRequired,
-  fetchPolyfill: PropTypes.func
+  fetchPolyfill: PropTypes.func,
 };
 
 InteractiveWrapper.defaultProps = {
   attributes: {},
-  fetchPolyfill: polyfillWCIfNecessary
+  fetchPolyfill: polyfillWCIfNecessary,
 };

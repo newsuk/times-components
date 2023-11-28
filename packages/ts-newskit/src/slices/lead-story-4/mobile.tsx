@@ -4,7 +4,7 @@ import { StackItem, BlockItem, LeadStoryContainer } from '../shared-styles';
 import { ArticleStackLarge } from '../shared';
 import {
   LeadArticleProps,
-  LeadArticle
+  LeadArticle,
 } from '../../components/slices/lead-article';
 import { ArticleProps, Article } from '../../components/slices/article';
 import { ClickHandlerType } from '../types';
@@ -21,20 +21,20 @@ export const LeadStory4Mobile = ({
   leadArticle,
   clickHandler,
   articlesFrom5To9,
-  article234
+  article234,
 }: LeadStory4Mobile) => {
   return (
     <LeadStoryContainer marginBlockEnd="space000">
       <StackItem
         $width={{
-          xs: '100%'
+          xs: '100%',
         }}
       >
         <LeadArticle article={leadArticle} clickHandler={clickHandler} />
       </StackItem>
       <StackItem
         $width={{
-          xs: '100%'
+          xs: '100%',
         }}
       >
         <Visible xs sm>
@@ -47,7 +47,7 @@ export const LeadStory4Mobile = ({
                       ...article,
                       hasTopBorder: true,
                       isLeadImage: true,
-                      titleTypographyPreset: 'editorialHeadline030'
+                      titleTypographyPreset: 'editorialHeadline030',
                     }}
                     clickHandler={clickHandler}
                   />
@@ -59,14 +59,14 @@ export const LeadStory4Mobile = ({
       </StackItem>
       <FullWidthBlock
         paddingInlineStart={{
-          xs: 'space045'
+          xs: 'space045',
         }}
         marginBlockStart="space040"
       >
         <Divider
           overrides={{
             marginBlockEnd: 'space040',
-            stylePreset: 'dashedDivider'
+            stylePreset: 'dashedDivider',
           }}
         />
       </FullWidthBlock>

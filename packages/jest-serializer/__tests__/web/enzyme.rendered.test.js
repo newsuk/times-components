@@ -15,7 +15,7 @@ describe("On web the Enzyme", () => {
       const mounted = mount(
         <SomeComponent>
           <TcText>Hello!</TcText>
-        </SomeComponent>
+        </SomeComponent>,
       );
 
       expect(mounted).toMatchSnapshot();

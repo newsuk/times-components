@@ -40,39 +40,42 @@ export const CreateMenu: React.FC<{
       }
     };
 
-    window.addEventListener('resize', debounce(() => handleResize(), 500));
+    window.addEventListener(
+      'resize',
+      debounce(() => handleResize(), 500),
+    );
     handleResize();
 
     return () => {
-      window.removeEventListener('resize', debounce(() => handleResize(), 500));
+      window.removeEventListener(
+        'resize',
+        debounce(() => handleResize(), 500),
+      );
     };
   }, []);
 
-  useEffect(
-    () => {
-      const checkIfClickedOutside = (e: any) => {
-        if (
-          isExpanded &&
-          contanierRef.current &&
-          !contanierRef.current.contains(e.target)
-        ) {
-          setIsExpanded(!isExpanded);
-        }
-      };
-      document.addEventListener('click', checkIfClickedOutside);
-      return () => {
-        document.removeEventListener('click', checkIfClickedOutside);
-      };
-    },
-    [isExpanded]
-  );
+  useEffect(() => {
+    const checkIfClickedOutside = (e: any) => {
+      if (
+        isExpanded &&
+        contanierRef.current &&
+        !contanierRef.current.contains(e.target)
+      ) {
+        setIsExpanded(!isExpanded);
+      }
+    };
+    document.addEventListener('click', checkIfClickedOutside);
+    return () => {
+      document.removeEventListener('click', checkIfClickedOutside);
+    };
+  }, [isExpanded]);
 
   return (
     <MainMenu
       hasMoreItems={moreMenuItemsLength > 0 ? true : false}
       aria-label="Secondary Navigation"
       overrides={{
-        spaceInline: 'space000'
+        spaceInline: 'space000',
       }}
       ref={contanierRef}
     >
@@ -95,7 +98,7 @@ export const CreateMenu: React.FC<{
             paddingInline: 'space040',
             stylePreset: `${isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'}`,
             list: { stylePreset: 'subMenuItems' },
-            typographyPreset: 'newPreset040'
+            typographyPreset: 'newPreset040',
           }}
           data-testid="more-sub-menu"
         >
@@ -103,7 +106,7 @@ export const CreateMenu: React.FC<{
             <Menu
               vertical
               overrides={{
-                spaceInline: 'sizing000'
+                spaceInline: 'sizing000',
               }}
               aria-label="menu-multiple-auto"
             >

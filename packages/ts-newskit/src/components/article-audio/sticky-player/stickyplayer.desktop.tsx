@@ -9,7 +9,7 @@ import {
   Button,
   calculateTime,
   IconButton,
-  Stack
+  Stack,
 } from 'newskit';
 // tslint:disable-next-line
 import { IconOutlinedClose } from 'newskit/cjs/icons';
@@ -24,7 +24,7 @@ type StickyPlayerDesktopProps = {
 export const StickyPlayerDesktop: React.FC<StickyPlayerDesktopProps> = ({
   handleClickPlayPause,
   setShowStickyPlayer,
-  isPlaying
+  isPlaying,
 }) => {
   return (
     <Stack flow="horizontal-center" stackDistribution="center">
@@ -41,8 +41,8 @@ export const StickyPlayerDesktop: React.FC<StickyPlayerDesktopProps> = ({
         layout="horizontal"
         overrides={{
           slider: {
-            track: { length: '85px' }
-          }
+            track: { length: '85px' },
+          },
         }}
       />
       <Block marginInlineStart="space020">

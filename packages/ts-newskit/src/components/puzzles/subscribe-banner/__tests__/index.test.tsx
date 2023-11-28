@@ -11,7 +11,7 @@ const defaultProps = {
   SubscribeBannerSubheadline:
     'Just £1 for your first month, then £4.99 a month thereafter',
   url: 'https://www.thetimes.co.uk/subscribe/puzzles/',
-  title: 'Subscribe'
+  title: 'Subscribe',
 };
 
 describe('SubscribeBanner', () => {

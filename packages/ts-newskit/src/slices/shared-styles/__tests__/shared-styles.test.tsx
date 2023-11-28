@@ -7,7 +7,7 @@ import { TCThemeProvider } from '../../..';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
+  useBreakpointKey: jest.fn().mockReturnValue('xl'),
 }));
 
 beforeEach(() => {
@@ -26,12 +26,12 @@ describe('StackItem', () => {
             sm: '480px',
             md: '720px',
             lg: '760px',
-            xl: '840px'
+            xl: '840px',
           }}
         >
           StackItem
         </StackItem>
-      </TCThemeProvider>
+      </TCThemeProvider>,
     );
 
   test('responsive widths at sm', () => {
@@ -41,7 +41,7 @@ describe('StackItem', () => {
     const component = screen.getByText('StackItem');
 
     expect(component).toHaveStyle({
-      width: '100%'
+      width: '100%',
     });
   });
 });
@@ -62,12 +62,12 @@ describe('BlockItem', () => {
             sm: '480px',
             md: '720px',
             lg: '760px',
-            xl: '840px'
+            xl: '840px',
           }}
         >
           BlockItem
         </BlockItem>
-      </TCThemeProvider>
+      </TCThemeProvider>,
     );
 
   test('responsive widths at sm', () => {
@@ -77,7 +77,7 @@ describe('BlockItem', () => {
     const component = screen.getByText('BlockItem');
 
     expect(component).toHaveStyle({
-      width: '100%'
+      width: '100%',
     });
   });
 });

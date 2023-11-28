@@ -10,7 +10,7 @@ export default () => {
 
   it("initialises admantx", () => {
     const init = adInit(
-      merge(initOptions, { data: { bidInitialiser: false } })
+      merge(initOptions, { data: { bidInitialiser: false } }),
     );
 
     jest.spyOn(init.admantx, "init");
@@ -30,8 +30,8 @@ export default () => {
         score: 1,
         origin: "NORMAL",
         name: "Foo Foo Bar['=!+#*~;^()<>[],& ",
-        type: "PLACES"
-      }
+        type: "PLACES",
+      },
     ];
 
     const output = "foo,bar,foo_bar,foo_foo_bar";

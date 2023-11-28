@@ -14,7 +14,7 @@ server.use(express.static("dist"));
 const makeHtml = (
   initialState,
   initialProps,
-  { bundleName, headMarkup, markup, responsiveStyles, styles }
+  { bundleName, headMarkup, markup, responsiveStyles, styles },
 ) => `
         <!DOCTYPE html>
         <html>
@@ -65,7 +65,7 @@ const makeHtml = (
         </html>
       `;
 
-const toNumber = input => {
+const toNumber = (input) => {
   const parsed = Number.parseInt(input, 10);
 
   if (Number.isNaN(parsed)) {
@@ -78,21 +78,21 @@ const toNumber = input => {
 server.get("/article/:id", (request, response) => {
   const {
     params: { id: articleId },
-    query: { pq }
+    query: { pq },
   } = request;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
   const commentingConfig = {
-    account: process.env.SPOT_ID
+    account: process.env.SPOT_ID,
   };
 
   const headers = process.env.GRAPHQL_TOKEN
     ? {
-        "nuk-tpatoken": process.env.GRAPHQL_TOKEN
+        "nuk-tpatoken": process.env.GRAPHQL_TOKEN,
       }
     : null;
 
   const userState = {
-    isLoggedIn: true
+    isLoggedIn: true,
   };
 
   ssr
@@ -104,9 +104,9 @@ server.get("/article/:id", (request, response) => {
         graphqlApiUrl,
         usePersistedQueries: !!pq,
         logger,
-        commentingConfig
+        commentingConfig,
       },
-      userState
+      userState,
     )
     .then(
       ({
@@ -115,7 +115,7 @@ server.get("/article/:id", (request, response) => {
         headMarkup,
         markup,
         responsiveStyles,
-        styles
+        styles,
       }) =>
         response.send(
           makeHtml(initialState, initialProps, {
@@ -123,16 +123,16 @@ server.get("/article/:id", (request, response) => {
             headMarkup,
             markup,
             responsiveStyles,
-            styles
-          })
-        )
+            styles,
+          }),
+        ),
     );
 });
 
 server.get("/profile/:slug", (request, response) => {
   const {
     params: { slug: authorSlug },
-    query: { page, pq }
+    query: { page, pq },
   } = request;
   const currentPage = toNumber(page) || 1;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
@@ -140,7 +140,7 @@ server.get("/profile/:slug", (request, response) => {
   ssr
     .authorProfile(
       { authorSlug, currentPage },
-      { ...makeUrls, graphqlApiUrl, usePersistedQueries: !!pq, logger }
+      { ...makeUrls, graphqlApiUrl, usePersistedQueries: !!pq, logger },
     )
     .then(
       ({
@@ -149,7 +149,7 @@ server.get("/profile/:slug", (request, response) => {
         headMarkup,
         markup,
         responsiveStyles,
-        styles
+        styles,
       }) =>
         response.send(
           makeHtml(initialState, initialProps, {
@@ -157,16 +157,16 @@ server.get("/profile/:slug", (request, response) => {
             headMarkup,
             markup,
             responsiveStyles,
-            styles
-          })
-        )
+            styles,
+          }),
+        ),
     );
 });
 
 server.get("/topic/:slug", (request, response) => {
   const {
     params: { slug: topicSlug },
-    query: { page, pq }
+    query: { page, pq },
   } = request;
   const currentPage = toNumber(page) || 1;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
@@ -174,7 +174,7 @@ server.get("/topic/:slug", (request, response) => {
   ssr
     .topic(
       { currentPage, topicSlug },
-      { ...makeUrls, graphqlApiUrl, usePersistedQueries: !!pq, logger }
+      { ...makeUrls, graphqlApiUrl, usePersistedQueries: !!pq, logger },
     )
     .then(
       ({
@@ -183,7 +183,7 @@ server.get("/topic/:slug", (request, response) => {
         initialState,
         markup,
         responsiveStyles,
-        styles
+        styles,
       }) =>
         response.send(
           makeHtml(initialState, initialProps, {
@@ -191,16 +191,16 @@ server.get("/topic/:slug", (request, response) => {
             headMarkup,
             markup,
             responsiveStyles,
-            styles
-          })
-        )
+            styles,
+          }),
+        ),
     );
 });
 
 const serviceName = "Stand-alone renderer server";
 
 const App = server.listen(port, () =>
-  console.log(`🚀  ${serviceName} ready at http://localhost:${port}`)
+  console.log(`🚀  ${serviceName} ready at http://localhost:${port}`),
 );
 
 process.on("SIGTERM", () => {

@@ -8,10 +8,10 @@ const props = {
   imageRatio: 2 / 3,
   imageUri: "https://img.io/img",
   lowResSize: 25,
-  showImage: true
+  showImage: true,
 };
 
-export default renderMethod => {
+export default (renderMethod) => {
   jest.useFakeTimers();
 
   const tests = [
@@ -21,13 +21,13 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props}>
             <TcText>A card</TcText>
-          </Card>
+          </Card>,
         );
 
         jest.runTimersToTime();
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card with reversed state",
@@ -35,13 +35,13 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} isReversed>
             <TcText>A card in reverse</TcText>
-          </Card>
+          </Card>,
         );
 
         jest.runTimersToTime();
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card loading state",
@@ -49,13 +49,13 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} isLoading>
             <TcText>Loading state</TcText>
-          </Card>
+          </Card>,
         );
 
         jest.runTimersToTime();
 
         expect(output).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "card reversed loading state",
@@ -63,14 +63,14 @@ export default renderMethod => {
         const output = renderMethod(
           <Card {...props} isLoading isReversed>
             <TcText>Loading in reverse</TcText>
-          </Card>
+          </Card>,
         );
 
         jest.runTimersToTime();
 
         expect(output).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ];
 
   iterator(tests);

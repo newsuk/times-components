@@ -12,13 +12,13 @@ beforeEach(() => {
     { text: 'This is the second hint.' },
     { text: 'This is the third hint.' },
     { text: 'This is the fourth hint.' },
-    { text: 'This is the fifth hint.' }
+    { text: 'This is the fifth hint.' },
   ];
 
   container = render(
     <NewsKitProvider theme={PuzzlesWebLightTheme}>
       <HintContainer hints={Hints} />
-    </NewsKitProvider>
+    </NewsKitProvider>,
   );
 });
 

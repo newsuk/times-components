@@ -8,5 +8,5 @@ export const options: SecondaryMenuOptions = {
   isExpanded: true,
   setIsExpanded: () => {
     // noop
-  }
+  },
 };

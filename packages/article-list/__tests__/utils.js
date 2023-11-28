@@ -16,7 +16,7 @@ export const omitNative = new Set([
   "updateCellsBatchingPeriod",
   "viewabilityConfig",
   "viewabilityConfigCallbackPairs",
-  "windowSize"
+  "windowSize",
 ]);
 
 export const omitWeb = new Set(["className", "data-testid", "style"]);

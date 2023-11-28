@@ -22,13 +22,13 @@ ShowTopics.propTypes = {
   topics: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      slug: PropTypes.string.isRequired
-    }).isRequired
-  )
+      slug: PropTypes.string.isRequired,
+    }).isRequired,
+  ),
 };
 
 ShowTopics.defaultProps = {
-  topics: null
+  topics: null,
 };
 
 export default ShowTopics;

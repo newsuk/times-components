@@ -13,9 +13,9 @@ const fullwidthImage = fullwidthImageFixture();
 const landscapeInlineImage = landscapeInlineImageFixture();
 const portraitInlineImage = portraitInlineImageFixture();
 
-const withResponsive = render => (...args) => (
-  <Responsive>{render(...args)}</Responsive>
-);
+const withResponsive =
+  (render) =>
+  (...args) => <Responsive>{render(...args)}</Responsive>;
 
 export default {
   children: [
@@ -25,7 +25,7 @@ export default {
         const withHighRes = boolean("As high resolution");
 
         const imageOptions = {
-          ...primaryImage.imageOptions
+          ...primaryImage.imageOptions,
         };
 
         if (withHighRes) {
@@ -42,7 +42,7 @@ export default {
         );
       }),
       name: "Primary",
-      type: "story"
+      type: "story",
     },
     {
       component: withResponsive(() => (
@@ -52,7 +52,7 @@ export default {
         />
       )),
       name: "Secondary",
-      type: "story"
+      type: "story",
     },
     {
       component: withResponsive(() => (
@@ -62,7 +62,7 @@ export default {
         />
       )),
       name: "Full Width",
-      type: "story"
+      type: "story",
     },
     {
       component: withResponsive(() => (
@@ -72,7 +72,7 @@ export default {
         />
       )),
       name: "Inline (portrait)",
-      type: "story"
+      type: "story",
     },
     {
       component: withResponsive(() => (
@@ -82,8 +82,8 @@ export default {
         />
       )),
       name: "Inline (landscape)",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Article Image"
+  name: "Primitives/Article Image",
 };

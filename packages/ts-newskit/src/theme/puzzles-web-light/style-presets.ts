@@ -9,30 +9,30 @@ stylePresets.puzzlesShadowBtn = {
     borderColor: '{{colors.interface060}}',
     backgroundColor: '{{colors.interface010}}',
     boxShadow: '{{shadows.shadow020}}',
-    color: '{{colors.inkContrast}}'
-  }
+    color: '{{colors.inkContrast}}',
+  },
 };
 
 stylePresets.puzzlesCenterAlignedText = {
   base: {
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 };
 
 stylePresets.dashedDivider = {
   base: {
     borderStyle: 'dashed none none none',
     borderWidth: '{{borders.borderWidth010}}',
-    borderColor: '{{colors.interface060}}'
-  }
+    borderColor: '{{colors.interface060}}',
+  },
 };
 stylePresets.flagProgress = {
   base: {
     backgroundColor: '{{colors.interfaceInformative010}}',
     color: '{{colors.inkInverse}}',
     borderRadius: '{{borders.borderWidth020}}',
-    textTransform: 'uppercase'
-  }
+    textTransform: 'uppercase',
+  },
 };
 
 stylePresets.flagComplete = {
@@ -40,8 +40,8 @@ stylePresets.flagComplete = {
     backgroundColor: '{{colors.interfacePositive010}}',
     color: '{{colors.inkInverse}}',
     borderRadius: '{{borders.borderWidth020}}',
-    textTransform: 'uppercase'
-  }
+    textTransform: 'uppercase',
+  },
 };
 
 stylePresets.puzzleCard = {
@@ -50,40 +50,40 @@ stylePresets.puzzleCard = {
     borderStyle: 'solid',
     borderColor: '{{colors.interface040}}',
     borderRadius: '{{borders.borderRadiusRounded010}}',
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 };
 
 stylePresets.puzzleCardLink = {
   base: {
-    color: '{{colors.inkContrast}}'
-  }
+    color: '{{colors.inkContrast}}',
+  },
 };
 
 stylePresets.puzzleCardMedia = {
   base: {
     borderRadius:
-      '{{borders.borderRadiusRounded010}} {{borders.borderRadiusRounded010}} 0 0'
-  }
+      '{{borders.borderRadiusRounded010}} {{borders.borderRadiusRounded010}} 0 0',
+  },
 };
 
 stylePresets.accordionHeader = {
   base: {
     color: '{{colors.inkBrand010}}',
     borderStyle: 'none none dashed none',
-    iconColor: '{{colors.inkSubtle}}'
+    iconColor: '{{colors.inkSubtle}}',
   },
   hover: {
     backgroundColor: 'none',
     color: '{{colors.inkBrand010}}',
-    iconColor: '{{colors.inkSubtle}}'
-  }
+    iconColor: '{{colors.inkSubtle}}',
+  },
 };
 
 stylePresets.accordionPanel = {
   base: {
-    borderStyle: 'none none dashed none'
-  }
+    borderStyle: 'none none dashed none',
+  },
 };
 
 stylePresets.accordionHeaderPrimary = {
@@ -92,8 +92,8 @@ stylePresets.accordionHeaderPrimary = {
     backgroundColor: '{{colors.white}}',
     borderWidth: '{{borders.borderWidth010}}',
     borderStyle: 'none none solid none',
-    borderColor: '{{colors.neutral050}}'
-  }
+    borderColor: '{{colors.neutral050}}',
+  },
 };
 
 stylePresets.accordionPanelPrimary = {
@@ -101,8 +101,8 @@ stylePresets.accordionPanelPrimary = {
     color: '{{colors.inkSubtle}}',
     borderWidth: '{{borders.borderWidth010}}',
     borderStyle: 'none none solid none',
-    borderColor: '{{colors.neutral050}}'
-  }
+    borderColor: '{{colors.neutral050}}',
+  },
 };
 
 stylePresets.freeTrialShadowBtn = {
@@ -113,8 +113,8 @@ stylePresets.freeTrialShadowBtn = {
     borderWidth: '{{borders.borderWidth030}}',
     boxShadow: '{{shadows.shadow020}}',
     backgroundColor: '{{colors.interface010}}',
-    color: '{{colors.inkContrast}}'
-  }
+    color: '{{colors.inkContrast}}',
+  },
 };
 
 stylePresets.HintBtn = {
@@ -124,7 +124,7 @@ stylePresets.HintBtn = {
     borderStyle: 'solid',
     borderWidth: '{{borders.borderWidthDefault}}',
     borderColor: '{{colors.interactiveLink020}}',
-    backgroundColor: '{{colors.transparent}}'
+    backgroundColor: '{{colors.transparent}}',
   },
   disabled: {
     borderRadius: '{{borders.borderRadiusRounded010}}',
@@ -132,8 +132,8 @@ stylePresets.HintBtn = {
     borderStyle: 'solid',
     borderWidth: '{{borders.borderWidthDefault}}',
     borderColor: '{{colors.neutral020}}',
-    backgroundColor: '{{colors.neutral020}}'
-  }
+    backgroundColor: '{{colors.neutral020}}',
+  },
 };
 
 stylePresets.HowToPlay = {
@@ -142,8 +142,8 @@ stylePresets.HowToPlay = {
     borderRadius: '{{borders.borderRadiusDefault}}',
     borderStyle: 'solid',
     borderWidth: '{{borders.borderWidth000}}',
-    backgroundColor: '{{colors.transparent}}'
-  }
+    backgroundColor: '{{colors.transparent}}',
+  },
 };
 
 stylePresets.modalHeaderCustom = {
@@ -151,13 +151,13 @@ stylePresets.modalHeaderCustom = {
     borderStyle: 'none none solid none',
     borderWidth: '{{borders.borderWidth010}}',
     borderColor: '{{colors.interface040}}',
-    color: '{{colors.inkBase}}'
-  }
+    color: '{{colors.inkBase}}',
+  },
 };
 stylePresets.overlayCustom = {
   base: {
-    backgroundColor: '{{overlays.overlayTintBase020}}'
-  }
+    backgroundColor: '{{overlays.overlayTintBase020}}',
+  },
 };
 
 stylePresets.contactuslink = {
@@ -165,43 +165,43 @@ stylePresets.contactuslink = {
     textDecoration: 'none',
     borderWidth: '{{borders.borderWidth010}}',
     borderStyle: 'solid',
-    borderColor: '{{colors.interface040}}'
-  }
+    borderColor: '{{colors.interface040}}',
+  },
 };
 
 stylePresets.sidebarCard = {
   base: {
     borderStyle: 'solid none none none',
     borderWidth: '{{borders.borderWidth030}}',
-    borderColor: '{{colors.inkBrand010}}'
-  }
+    borderColor: '{{colors.inkBrand010}}',
+  },
 };
 
 stylePresets.transparentCard = {
   base: {
     backgroundColor: 'unset',
-    color: '{{colors.inkContrast}}'
+    color: '{{colors.inkContrast}}',
   },
 
   hover: {
-    color: '{{colors.interactiveLink020}}'
-  }
+    color: '{{colors.interactiveLink020}}',
+  },
 };
 
 stylePresets.cardTitleIcon = {
   base: {
-    color: '{{colors.inkBrand010}}'
+    color: '{{colors.inkBrand010}}',
   },
 
   hover: {
-    color: '{{colors.interactiveLink020}}'
-  }
+    color: '{{colors.interactiveLink020}}',
+  },
 };
 
 stylePresets.iconPreset = {
   base: {
     backgroundColor: '{{colors.interactiveSecondary020}}',
     color: '{{colors.inkBrand010}}',
-    borderRadius: '{{borders.borderRadiusCircle}}'
-  }
+    borderRadius: '{{borders.borderRadiusCircle}}',
+  },
 };

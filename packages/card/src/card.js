@@ -3,7 +3,7 @@ import { Animations } from "@times-components/ts-styleguide";
 import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
 import CardContent from "./card-content";
 
-const CardComponent = props => {
+const CardComponent = (props) => {
   const { isLoading } = props;
   if (isLoading) {
     return (

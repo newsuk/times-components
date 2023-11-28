@@ -2,12 +2,12 @@ import React from "react";
 import { TcText } from "@times-components/utils";
 import ArticleLeadAsset from "./src/article-lead-asset";
 
-const preventDefaultedAction = decorateAction =>
+const preventDefaultedAction = (decorateAction) =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    }
+    },
   ]);
 
 const imageLeadAsset = {
@@ -15,9 +15,8 @@ const imageLeadAsset = {
   credits: "Some Credits",
   crop169: {
     ratio: "16:9",
-    url:
-      "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14.jpg?crop=1600%2C900%2C0%2C0&resize=754"
-  }
+    url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14.jpg?crop=1600%2C900%2C0%2C0&resize=754",
+  },
 };
 
 const videoLeadAsset = {
@@ -25,15 +24,17 @@ const videoLeadAsset = {
   brightcovePolicyKey:
     "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
   brightcoveVideoId: "5831024132001",
-  posterImage: imageLeadAsset
+  posterImage: imageLeadAsset,
 };
 
 // eslint-disable-next-line react/prop-types
-const createCaption = label => ({ caption: { text, credits } }) => (
-  <TcText>
-    {label}: {text} {credits}
-  </TcText>
-);
+const createCaption =
+  (label) =>
+  ({ caption: { text, credits } }) => (
+    <TcText>
+      {label}: {text} {credits}
+    </TcText>
+  );
 
 export default {
   children: [
@@ -49,7 +50,7 @@ export default {
         />
       ),
       name: "Image",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
@@ -65,8 +66,8 @@ export default {
         />
       ),
       name: "Video",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Article Lead Asset"
+  name: "Primitives/Article Lead Asset",
 };

@@ -8,45 +8,45 @@ const textStyle = {
   height: 15,
   ...fontFactory({
     font: "supporting",
-    fontSize: "pagingMeta"
+    fontSize: "pagingMeta",
   }),
-  lineHeight: 13
+  lineHeight: 13,
 };
 
 const container = {
   alignItems: "center",
-  flexDirection: "row"
+  flexDirection: "row",
 };
 
 const styles = {
   nextContainer: Object.assign(
     {
       paddingBottom: "8px",
-      paddingTop: "10px"
+      paddingTop: "10px",
     },
-    container
+    container,
   ),
   nextText: Object.assign(
     {
       marginRight: spacing(2),
-      textAlign: "right"
+      textAlign: "right",
     },
-    textStyle
+    textStyle,
   ),
   previousContainer: Object.assign(
     {
       paddingBottom: "8px",
-      paddingTop: "10px"
+      paddingTop: "10px",
     },
-    container
+    container,
   ),
   previousText: Object.assign(
     {
       marginLeft: spacing(2),
-      textAlign: "left"
+      textAlign: "left",
     },
-    textStyle
-  )
+    textStyle,
+  ),
 };
 
 export const NextPageIcon = () => (

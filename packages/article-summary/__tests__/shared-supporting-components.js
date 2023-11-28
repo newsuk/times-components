@@ -3,7 +3,7 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  stylePrinter
+  stylePrinter,
 } from "@times-components/jest-serializer";
 import shared from "./shared-supporting-components.base";
 
@@ -13,10 +13,10 @@ export default () => {
     compose(
       stylePrinter,
       minimaliseTransform(
-        (value, key) => key === "style" || key === "data-testid"
+        (value, key) => key === "style" || key === "data-testid",
       ),
-      minimalWebTransform
-    )
+      minimalWebTransform,
+    ),
   );
 
   shared();

@@ -6,7 +6,7 @@ export default function clientTester(requestHandler) {
   const link = new TestLink(requestHandler);
   const client = new ApolloClient({
     cache: new InMemoryCache(),
-    link
+    link,
   });
 
   return { client, link };

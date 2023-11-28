@@ -10,7 +10,7 @@ interface HintButtonProps {
 export const HintButton: FC<HintButtonProps> = ({
   onClick,
   disabled,
-  title
+  title,
 }) => {
   return (
     <Button
@@ -21,9 +21,9 @@ export const HintButton: FC<HintButtonProps> = ({
         typographyPreset: 'utilityButton020',
         minWidth: {
           xs: '120px',
-          lg: '196px'
+          lg: '196px',
         },
-        height: '48px'
+        height: '48px',
       }}
       disabled={disabled}
     >

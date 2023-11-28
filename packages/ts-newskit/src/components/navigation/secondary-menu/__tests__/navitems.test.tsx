@@ -9,7 +9,7 @@ const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),
   isExpanded: false,
-  isSelected: 'true'
+  isSelected: 'true',
 };
 
 const mockClickHandler = jest.fn();
@@ -28,7 +28,7 @@ describe('Navitems Desktop', () => {
         options={options}
         hasMenuItem={hasMenuItem}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -39,7 +39,7 @@ describe('Navitems Desktop', () => {
         options={options}
         hasMenuItem={hasMenuItem}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const title = getByText('Home');
     expect(title).toBeInTheDocument();
@@ -51,7 +51,7 @@ describe('Navitems Desktop', () => {
         options={options}
         hasMenuItem={hasMenuItem}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const title = getAllByTestId('buttonLink')[0];
     expect(title).toHaveAttribute('href', '/home');
@@ -64,7 +64,7 @@ describe('Navitems Desktop', () => {
         options={options}
         hasMenuItem={hasMenuItem}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     const title = getAllByTestId('buttonLink')[0];
     fireEvent.click(title);

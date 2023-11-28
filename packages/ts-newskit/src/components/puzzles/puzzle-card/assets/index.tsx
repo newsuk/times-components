@@ -4,5 +4,5 @@ import PuzzlePlaceholder from './PuzzlePlaceholder';
 
 export const NewsKitPuzzlePlaceholder = customToNewsKitIcon(
   'NewsKitPuzzlePlaceholder',
-  props => <PuzzlePlaceholder {...props} />
+  (props) => <PuzzlePlaceholder {...props} />,
 );

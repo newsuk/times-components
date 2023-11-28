@@ -5,7 +5,7 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  stylePrinter
+  stylePrinter,
 } from "@times-components/jest-serializer";
 import shared from "./shared-with-style.base";
 import topic from "./fixtures";
@@ -17,11 +17,11 @@ export default () => {
       stylePrinter,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => key !== "style" && key !== "className"
+        (value, key) => key !== "style" && key !== "className",
       ),
       flattenStyleTransform,
-      hoistStyleTransform
-    )
+      hoistStyleTransform,
+    ),
   );
 
   // eslint-disable-next-line global-require
@@ -33,7 +33,7 @@ export default () => {
     onPrev() {},
     refetch() {},
     slug: "some-slug",
-    topic
+    topic,
   };
 
   shared(props);

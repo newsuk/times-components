@@ -5,7 +5,7 @@ import {
   showArticleSaveButton,
   showTokenisedEmailShare,
   showCommentingModule,
-  showJoinTheConversationDialog
+  showJoinTheConversationDialog,
 } from "../src/matchers";
 
 const defaultUserState = {
@@ -14,15 +14,15 @@ const defaultUserState = {
   isMetered: false,
   isShared: false,
   isLightPackUser: false,
-  isRegisteredUser: false
+  isRegisteredUser: false,
 };
 
-const hasAccessLoggedInOrSharedUser = func => {
+const hasAccessLoggedInOrSharedUser = (func) => {
   it("should return true if hasAccess and isLoggedIn", () => {
     const userState = {
       ...defaultUserState,
       hasAccess: true,
-      isLoggedIn: true
+      isLoggedIn: true,
     };
     expect(func(userState)).toBe(true);
   });
@@ -31,7 +31,7 @@ const hasAccessLoggedInOrSharedUser = func => {
     const userState = {
       ...defaultUserState,
       hasAccess: true,
-      isShared: true
+      isShared: true,
     };
     expect(func(userState)).toBe(true);
   });
@@ -47,12 +47,12 @@ const hasAccessLoggedInOrSharedUser = func => {
   });
 };
 
-const hasAccessLoggedInUser = func => {
+const hasAccessLoggedInUser = (func) => {
   it("should return true if hasAccess and isLoggedIn", () => {
     const userState = {
       ...defaultUserState,
       hasAccess: true,
-      isLoggedIn: true
+      isLoggedIn: true,
     };
     expect(func(userState)).toBe(true);
   });
@@ -68,12 +68,12 @@ const hasAccessLoggedInUser = func => {
   });
 };
 
-const hasAccessLoggedInNonMeteredUser = func => {
+const hasAccessLoggedInNonMeteredUser = (func) => {
   it("should return true if hasAccess and isLoggedIn", () => {
     const userState = {
       ...defaultUserState,
       hasAccess: true,
-      isLoggedIn: true
+      isLoggedIn: true,
     };
     expect(func(userState)).toBe(true);
   });
@@ -93,7 +93,7 @@ const hasAccessLoggedInNonMeteredUser = func => {
       ...defaultUserState,
       hasAccess: true,
       isLoggedIn: true,
-      isMetered: true
+      isMetered: true,
     };
     expect(func(userState)).toBe(false);
   });
@@ -103,7 +103,7 @@ const hasAccessLoggedInNonMeteredUser = func => {
       ...defaultUserState,
       hasAccess: true,
       isLoggedIn: true,
-      isLightPackUser: true
+      isLightPackUser: true,
     };
     expect(func(userState)).toBe(false);
   });
@@ -113,19 +113,19 @@ const hasAccessLoggedInNonMeteredUser = func => {
       ...defaultUserState,
       hasAccess: true,
       isLoggedIn: true,
-      isRegisteredUser: true
+      isRegisteredUser: true,
     };
     expect(func(userState)).toBe(false);
   });
 };
 
-const hasAccessLoggedInMeteredUser = func => {
+const hasAccessLoggedInMeteredUser = (func) => {
   it("should return true if hasAccess, isLoggedIn and isMetered", () => {
     const userState = {
       ...defaultUserState,
       hasAccess: true,
       isLoggedIn: true,
-      isMetered: true
+      isMetered: true,
     };
     expect(func(userState)).toBe(true);
   });
@@ -135,7 +135,7 @@ const hasAccessLoggedInMeteredUser = func => {
       ...defaultUserState,
       hasAccess: true,
       isLoggedIn: true,
-      isLightPackUser: true
+      isLightPackUser: true,
     };
     expect(func(userState)).toBe(true);
   });
@@ -145,7 +145,7 @@ const hasAccessLoggedInMeteredUser = func => {
       ...defaultUserState,
       hasAccess: true,
       isLoggedIn: true,
-      isRegisteredUser: true
+      isRegisteredUser: true,
     };
     expect(func(userState)).toBe(true);
   });
@@ -164,7 +164,7 @@ const hasAccessLoggedInMeteredUser = func => {
     const userState = {
       ...defaultUserState,
       hasAccess: true,
-      isLoggedIn: true
+      isLoggedIn: true,
     };
     expect(func(userState)).toBe(false);
   });

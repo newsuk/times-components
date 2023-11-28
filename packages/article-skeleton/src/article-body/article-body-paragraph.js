@@ -19,14 +19,14 @@ const ArticleParagraph = ({
   onLinkPress,
   data,
   dropCapFont,
-  LinkComponent
+  LinkComponent,
 }) => {
   const str = AttributedString.join(
-    children.filter(child => child instanceof AttributedString)
+    children.filter((child) => child instanceof AttributedString),
   );
 
   const [inline] = children.filter(
-    child => !(child instanceof AttributedString)
+    (child) => !(child instanceof AttributedString),
   );
 
   const dropCap = useMemo(
@@ -34,7 +34,7 @@ const ArticleParagraph = ({
       !dropcapsDisabled && index === 0
         ? makeDropCap(scale, colours.section[data.section], dropCapFont, str)
         : false,
-    [data.section, dropCapFont, dropcapsDisabled, index, scale, str]
+    [data.section, dropCapFont, dropcapsDisabled, index, scale, str],
   );
 
   if (!inline && !dropCap) {
@@ -79,7 +79,7 @@ ArticleParagraph.propTypes = {
   onLinkPress: PropTypes.func.isRequired,
   data: PropTypes.object.isRequired,
   dropCapFont: PropTypes.object.isRequired,
-  LinkComponent: PropTypes.func.isRequired
+  LinkComponent: PropTypes.func.isRequired,
 };
 
 export default ArticleParagraph;

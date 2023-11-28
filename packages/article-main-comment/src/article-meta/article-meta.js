@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import {
   ArticleBylineWithLinks,
-  hasBylineData
+  hasBylineData,
 } from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import { checkStylesForUnits } from "@times-components/utils";
@@ -11,7 +11,7 @@ import {
   DatePublicationContainer,
   Meta,
   MetaContainer,
-  Separator
+  Separator,
 } from "../styles/responsive";
 import styles from "../styles";
 

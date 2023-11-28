@@ -7,7 +7,7 @@ import clientTester from "./client-tester";
 export default function providerTester(
   requestHandler,
   WrappedComponent,
-  defaultProps = {}
+  defaultProps = {},
 ) {
   const { link, client } = clientTester(requestHandler);
 
@@ -21,14 +21,14 @@ export default function providerTester(
 
     componentDidMount() {
       isMounted = true;
-      setProps = state => {
+      setProps = (state) => {
         if (!isMounted) return Promise.resolve();
 
-        return new Promise(done =>
+        return new Promise((done) =>
           this.setState(() => {
             done(state);
             return state;
-          })
+          }),
         );
       };
     }
@@ -46,19 +46,19 @@ export default function providerTester(
   }
 
   Stateful.propTypes = {
-    children: PropTypes.func.isRequired
+    children: PropTypes.func.isRequired,
   };
 
   const component = renderer.create(
     <ApolloProvider client={client}>
       {
         <Stateful>
-          {state => (
+          {(state) => (
             <WrappedComponent {...state}>
-              {props => {
+              {(props) => {
                 link.pushEvent({
                   props,
-                  type: "render"
+                  type: "render",
                 });
                 return null;
               }}
@@ -66,13 +66,13 @@ export default function providerTester(
           )}
         </Stateful>
       }
-    </ApolloProvider>
+    </ApolloProvider>,
   );
 
   return {
     client,
     component,
     link,
-    setProps
+    setProps,
   };
 }

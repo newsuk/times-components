@@ -10,7 +10,7 @@ const props = {
   imageRatio: 2 / 3,
   imageUri: "https://img.io/img",
   lowResSize: 60,
-  showImage: true
+  showImage: true,
 };
 
 jest.useFakeTimers();
@@ -24,11 +24,11 @@ const tests = [
       const wrapper = mount(
         <Card {...props} isLoading>
           <TcText>Loading state</TcText>
-        </Card>
+        </Card>,
       );
 
       expect(wrapper).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "card with reversed loading state",
@@ -36,14 +36,14 @@ const tests = [
       const wrapper = mount(
         <Card {...props} isLoading isReversed>
           <TcText>Loading in reverse</TcText>
-        </Card>
+        </Card>,
       );
 
       jest.runTimersToTime();
 
       expect(wrapper).toMatchSnapshot();
-    }
-  }
+    },
+  },
 ];
 
 iterator(tests);

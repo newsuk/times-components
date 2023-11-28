@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const cropPropTypes = PropTypes.shape({
   ratio: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
 });
 
 const videoLeadAssetPropTypes = {
@@ -11,25 +11,25 @@ const videoLeadAssetPropTypes = {
   brightcoveVideoId: PropTypes.string.isRequired,
   posterImage: PropTypes.shape({
     crop32: cropPropTypes,
-    crop169: cropPropTypes
-  }).isRequired
+    crop169: cropPropTypes,
+  }).isRequired,
 };
 
 export const imageLeadAssetPropTypes = {
   aspectRatio: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  uri: PropTypes.string.isRequired
+  uri: PropTypes.string.isRequired,
 };
 
 export const videoPropTypes = {
   aspectRatio: PropTypes.number.isRequired,
   leadAsset: PropTypes.shape(videoLeadAssetPropTypes),
   onVideoPress: PropTypes.func.isRequired,
-  uri: PropTypes.string.isRequired
+  uri: PropTypes.string.isRequired,
 };
 
 export const videoDefaultProps = {
-  leadAsset: {}
+  leadAsset: {},
 };
 
 export const leadAssetImageCropsPropTypes = {
@@ -41,7 +41,7 @@ export const leadAssetImageCropsPropTypes = {
   crop32: cropPropTypes,
   crop45: cropPropTypes,
   crop169: cropPropTypes,
-  crop1251: cropPropTypes
+  crop1251: cropPropTypes,
 };
 
 export const propTypes = {
@@ -50,11 +50,11 @@ export const propTypes = {
   isVideo: PropTypes.bool,
   leadAsset: PropTypes.oneOfType([
     PropTypes.shape(leadAssetImageCropsPropTypes),
-    PropTypes.shape(videoLeadAssetPropTypes)
+    PropTypes.shape(videoLeadAssetPropTypes),
   ]),
   renderCaption: PropTypes.func,
   style: PropTypes.any,
-  width: PropTypes.number
+  width: PropTypes.number,
 };
 
 export const defaultProps = {
@@ -63,5 +63,5 @@ export const defaultProps = {
   isVideo: false,
   leadAsset: null,
   renderCaption: () => null,
-  width: null
+  width: null,
 };

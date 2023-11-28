@@ -4,7 +4,7 @@ import { Subscriber } from "react-broadcast";
 import {
   screenWidth,
   ServerClientRender,
-  TcView
+  TcView,
 } from "@times-components/utils";
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 import adInit from "./utils/ad-init";
@@ -19,7 +19,7 @@ class Ad extends Component {
     const { slotName } = nextProps;
 
     return {
-      config: getSlotConfig(slotName, screenWidth())
+      config: getSlotConfig(slotName, screenWidth()),
     };
   }
 
@@ -34,53 +34,47 @@ class Ad extends Component {
       config: getSlotConfig(slotName, screenWidth()),
       hasError: false,
       isAdReady: false,
-      hasAdBlock: false
+      hasAdBlock: false,
     };
   }
 
   componentDidMount() {
     this.setState({
-      hasAdBlock: window.hasAdBlock
+      hasAdBlock: window.hasAdBlock,
     });
   }
 
   setAdReady = () => {
     this.setState({
-      isAdReady: true
+      isAdReady: true,
     });
   };
 
   setAdError = () => {
     this.setState({
-      hasError: true
+      hasError: true,
     });
   };
 
   renderAd(adConfig) {
-    const {
-      baseUrl,
-      contextUrl,
-      isLoading,
-      section,
-      slotName,
-      style
-    } = this.props;
+    const { baseUrl, contextUrl, isLoading, section, slotName, style } =
+      this.props;
     const { config, hasError, isAdReady, hasAdBlock } = this.state;
 
     if (hasAdBlock || hasError) return null;
 
-    this.slots = adConfig.bidderSlots.map(slot =>
+    this.slots = adConfig.bidderSlots.map((slot) =>
       getPrebidSlotConfig(
         slot,
         section,
         config.maxSizes.width,
-        adConfig.biddersConfig.bidders
-      )
+        adConfig.biddersConfig.bidders,
+      ),
     );
 
     this.allSlotConfigs = adConfig.globalSlots
       .concat(adConfig.bidderSlots)
-      .map(slot => getSlotConfig(slot, screenWidth()));
+      .map((slot) => getSlotConfig(slot, screenWidth()));
 
     const data = {
       adUnit: adConfig.adUnit,
@@ -97,20 +91,20 @@ class Ad extends Component {
         bucketSize: adConfig.biddersConfig.bucketSize,
         maxBid: adConfig.biddersConfig.maxBid,
         minPrice: adConfig.biddersConfig.minPrice,
-        timeout: adConfig.biddersConfig.timeout
+        timeout: adConfig.biddersConfig.timeout,
       }),
       section,
       sizingMap: config.mappings,
       slotName,
       slots: this.slots,
-      slotTargeting: adConfig.slotTargeting
+      slotTargeting: adConfig.slotTargeting,
     };
 
     const sizeProps = !isAdReady
       ? { height: 0, width: 0 }
       : {
           height: config.maxSizes.height,
-          width: config.maxSizes.width
+          width: config.maxSizes.width,
         };
 
     const adView = (
@@ -138,7 +132,7 @@ class Ad extends Component {
     }
     return (
       <Subscriber channel="adConfig">
-        {adConfig => this.renderAd(adConfig)}
+        {(adConfig) => this.renderAd(adConfig)}
       </Subscriber>
     );
   }

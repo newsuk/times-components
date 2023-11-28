@@ -8,14 +8,14 @@ describe("clean", () => {
       c: false,
       d: null,
       e: undefined,
-      f: NaN
+      f: NaN,
     };
 
     expect(clean(props)).toEqual({
       a: 1,
       b: 0,
       c: false,
-      d: null
+      d: null,
     });
   });
 

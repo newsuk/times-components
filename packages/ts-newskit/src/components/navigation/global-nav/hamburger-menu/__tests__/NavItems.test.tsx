@@ -14,13 +14,13 @@ describe('NavigationList', () => {
         data={testData.mainMenuItems}
         expandedL1="News"
         onExpand={onExpand}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
   it('renders the component without nested items', () => {
     const { asFragment } = render(
-      <NavigationList data={testData.accountMenuItems} onExpand={onExpand} />
+      <NavigationList data={testData.accountMenuItems} onExpand={onExpand} />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -30,7 +30,7 @@ describe('NavigationList', () => {
         data={testData.mainMenuItems}
         expandedL1="main-menu-2"
         onExpand={onExpand}
-      />
+      />,
     );
     expect(getByText('Item 1')).toBeVisible();
     expect(getByText('Item 2')).toBeVisible();
@@ -41,7 +41,7 @@ describe('NavigationList', () => {
         data={testData.mainMenuItems}
         expandedL1="not-an-item"
         onExpand={onExpand}
-      />
+      />,
     );
     expect(getByText('Item 1')).not.toBeVisible();
     expect(getByText('Item 2')).not.toBeVisible();
@@ -52,7 +52,7 @@ describe('NavigationList', () => {
         data={testData.mainMenuItems}
         expandedL1="main-menu-2"
         onExpand={onExpand}
-      />
+      />,
     );
     const Button = getAllByTestId('menu-sub-button')[0];
     fireEvent.click(Button);

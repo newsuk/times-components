@@ -35,7 +35,7 @@ export const ContactUs: FC<ContactUsProps> = ({ data, header }) => {
         overrides={{
           marginBlockStart: 'space060',
           width: '100%',
-          maxWidth: '560px'
+          maxWidth: '560px',
         }}
       >
         {data.map(({ title, phone, hrs }) => (
@@ -43,7 +43,7 @@ export const ContactUs: FC<ContactUsProps> = ({ data, header }) => {
             href={`tel: ${phone}`}
             textOnly
             overrides={{
-              stylePreset: 'contactuslink'
+              stylePreset: 'contactuslink',
             }}
           >
             <StyledGridLayoutItem

@@ -21,7 +21,7 @@ const renderMenu = (isLoggedIn: boolean, size: BreakpointKeys = 'xl') =>
       isHamburgerOpen={false}
       toggleHamburger={jest.fn}
     />,
-    size
+    size,
   );
 
 describe('createMenu', () => {
@@ -64,7 +64,7 @@ describe('NavButtons Logged Out', () => {
   it('should render the correct menu length at other breakpoints', async () => {
     renderMenu(false, 'xs');
     const accountButtons = screen.getByRole('region', {
-      name: 'My Account Navigation'
+      name: 'My Account Navigation',
     });
 
     expect(accountButtons).toBeInTheDocument();

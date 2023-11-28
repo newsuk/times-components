@@ -6,11 +6,11 @@ import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/ts-styleguide";
 import {
   KeylineItem,
-  ArticleKeylineItem
+  ArticleKeylineItem,
 } from "@times-components/article-skeleton";
 import {
   ArticleBylineWithLinks,
-  hasBylineData
+  hasBylineData,
 } from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import { defaultProps, propTypes } from "./article-meta-prop-types";
@@ -36,7 +36,7 @@ function ArticleMeta({
   publishedTime,
   onAuthorPress,
   inline = false,
-  className = ""
+  className = "",
 }) {
   const bylineRow = hasBylineData(bylines) ? (
     <MetaTextElement>
@@ -76,7 +76,7 @@ function ArticleMeta({
 ArticleMeta.propTypes = {
   ...propTypes,
   inline: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 ArticleMeta.defaultProps = defaultProps;
 

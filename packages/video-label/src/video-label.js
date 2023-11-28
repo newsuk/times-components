@@ -19,7 +19,7 @@ const IconContainer = styled(TcView)`
 
 const VideoLabel = ({ color, title }) => {
   const textStyles = {
-    ...styles.title
+    ...styles.title,
   };
 
   Object.assign(textStyles, { color });
@@ -38,12 +38,12 @@ const VideoLabel = ({ color, title }) => {
 
 VideoLabel.propTypes = {
   color: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 VideoLabel.defaultProps = {
   color: "black",
-  title: ""
+  title: "",
 };
 
 export default VideoLabel;

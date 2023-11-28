@@ -6,7 +6,7 @@ const ExampleChild = ({ children }) => <TcText>{children}</TcText>;
 ExampleChild.displayName = "ExampleChild";
 
 ExampleChild.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
-export default id => <ExampleChild id={id}>{id}</ExampleChild>;
+export default (id) => <ExampleChild id={id}>{id}</ExampleChild>;

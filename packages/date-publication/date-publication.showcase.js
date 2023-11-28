@@ -4,7 +4,7 @@ import { TcText } from "@times-components/utils";
 import {
   colours,
   fontsWithFallback,
-  fontSizes
+  fontSizes,
 } from "@times-components/ts-styleguide";
 import DatePublication from "./src/date-publication";
 
@@ -13,15 +13,15 @@ const styles = {
     color: colours.functional.secondary,
     fontFamily: fontsWithFallback.supporting,
     fontSize: fontSizes.cardMeta,
-    lineHeight: "15px"
-  }
+    lineHeight: "15px",
+  },
 };
 
 const timezones = [
   "2017-07-01T04:32:00.000Z",
   "2017-01-01T04:32:00.000Z",
   "2017-07-01T14:32:00.000Z",
-  "2017-01-01T14:32:00.000Z"
+  "2017-01-01T14:32:00.000Z",
 ];
 
 export default {
@@ -36,7 +36,7 @@ export default {
         </TcText>
       ),
       name: "Default",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
@@ -45,8 +45,8 @@ export default {
         </TcText>
       ),
       name: "Without Publication",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Date Publication"
+  name: "Primitives/Date Publication",
 };

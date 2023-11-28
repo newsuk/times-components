@@ -4,7 +4,7 @@ import {
   StackProps,
   styled,
   getColorCssFromTheme,
-  getStylePresetFromTheme
+  getStylePresetFromTheme,
 } from 'newskit';
 import { NewsKitWaveBg } from '../../../assets';
 

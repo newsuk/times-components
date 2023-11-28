@@ -4,7 +4,7 @@ import { ArticleProps } from '../../components/slices/article';
 import { ArticleStackLarge, ArticleStackSmall } from './article-stacks';
 import {
   FullWidthBlock,
-  FullWidthHidden
+  FullWidthHidden,
 } from '../../components/slices/shared-styles';
 import { ClickHandlerType, StackArticleOptions } from '../types';
 
@@ -17,7 +17,7 @@ export interface LeadStory1Props {
 export const ComposedArticleStack = ({
   articles,
   clickHandler,
-  articleOptions
+  articleOptions,
 }: Omit<LeadStory1Props, 'breakpoint'> & {
   articleOptions?: StackArticleOptions;
 }) => {
@@ -30,13 +30,13 @@ export const ComposedArticleStack = ({
         <FullWidthBlock
           paddingInlineStart={{
             xs: 'space045',
-            md: 'space000'
+            md: 'space000',
           }}
         >
           <Divider
             overrides={{
               marginBlockEnd: 'space040',
-              stylePreset: 'dashedDivider'
+              stylePreset: 'dashedDivider',
             }}
           />
         </FullWidthBlock>
@@ -59,7 +59,7 @@ export const ComposedArticleStack = ({
         <Divider
           overrides={{
             stylePreset: 'dashedDivider',
-            marginBlock: 'space040'
+            marginBlock: 'space040',
           }}
         />
         <Block

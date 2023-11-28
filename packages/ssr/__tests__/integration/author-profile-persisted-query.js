@@ -4,5 +4,5 @@ authorProfileTests({
   qs: "?pq=1",
   variant: "Persisted Query",
   stickyElements: ["#nav"],
-  skipSnapshotTest: true
+  skipSnapshotTest: true,
 });

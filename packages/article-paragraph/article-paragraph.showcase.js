@@ -50,7 +50,7 @@ const renderParagraph = ({ select, boolean }, ast) => {
           {children}
         </ArticleLink>
       );
-    }
+    },
   });
 };
 
@@ -60,14 +60,14 @@ export default {
       component: ({ select }) => renderParagraph({ select }, paragraphData),
       name: "Paragraph",
       platform: "web",
-      type: "story"
+      type: "story",
     },
     {
       component: ({ select, boolean }) =>
         renderParagraph({ select, boolean }, dropCapData),
       name: "Paragraph with dropcap",
       platform: "web",
-      type: "story"
+      type: "story",
     },
     {
       component: ({ select, boolean }) => (
@@ -79,14 +79,14 @@ export default {
       ),
       name: "DropCap paragraph with short text",
       platform: "web",
-      type: "story"
+      type: "story",
     },
     {
       component: ({ select, boolean }) => renderParagraph({ select, boolean }),
       name: "Drop Cap",
       platform: "web",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "PRIMITIVES ARTICLE PARAGRAPH/Dropcap"
+  name: "PRIMITIVES ARTICLE PARAGRAPH/Dropcap",
 };

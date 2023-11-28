@@ -17,7 +17,7 @@ export const DateCard = ({ data, sectionColour }: DateCardProps) => {
     .toLocaleDateString('en-US', {
       month: 'short',
       day: 'numeric',
-      year: 'numeric'
+      year: 'numeric',
     })
     .replace(',', '');
 

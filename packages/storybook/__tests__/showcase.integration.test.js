@@ -11,6 +11,6 @@ test("The storybook should create the expected converter", () => {
   expect(showcaseToStoryBook).toHaveBeenCalledWith(
     storiesOf,
     builtInKnobs,
-    actions
+    actions,
   );
 });

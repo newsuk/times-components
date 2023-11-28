@@ -5,30 +5,30 @@ import { withTrackingContext } from "@times-components/tracking";
 import {
   authorProfile as makeAuthorParams,
   MockedProvider,
-  MockFixture
+  MockFixture,
 } from "@times-components/provider-test-tools";
 import {
   authorArticlesNoImages as authorArticlesNoImagesQuery,
-  authorArticlesWithImages as authorArticlesWithImagesQuery
+  authorArticlesWithImages as authorArticlesWithImagesQuery,
 } from "@times-components/provider-queries";
 import {
   AuthorArticlesNoImagesProvider,
-  AuthorArticlesWithImagesProvider
+  AuthorArticlesWithImagesProvider,
 } from "@times-components/provider";
 import get from "lodash.get";
 import ArticleList, { ArticleListPageError } from "./src/article-list";
 import adConfig from "./fixtures/article-ad-config.json";
 import { ratioTextToFloat } from "../utils/dist";
 
-const preventDefaultedAction = decorateAction =>
+const preventDefaultedAction = (decorateAction) =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    }
+    },
   ]);
 
-const getProps = decorateAction => ({
+const getProps = (decorateAction) => ({
   adConfig,
   analyticsStream: storybookReporter,
   emptyStateMessage:
@@ -37,11 +37,11 @@ const getProps = decorateAction => ({
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   onNext: preventDefaultedAction(decorateAction)("onNext"),
   onPrev: preventDefaultedAction(decorateAction)("onPrev"),
-  refetch: preventDefaultedAction(decorateAction)("refetch")
+  refetch: preventDefaultedAction(decorateAction)("refetch"),
 });
 
 const TrackedArticleList = withTrackingContext(ArticleList, {
-  trackingObjectName: "ArticleList"
+  trackingObjectName: "ArticleList",
 });
 
 const articleImageRatio = "3:2";
@@ -58,17 +58,17 @@ export default {
         <MockFixture
           params={makeAuthorParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: iteration => ({
+            articleVariables: (iteration) => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug
+              slug,
             }),
             count,
             pageSize,
-            slug
+            slug,
           })}
-          render={mocks => (
+          render={(mocks) => (
             <MockedProvider mocks={mocks}>
               <AuthorArticlesWithImagesProvider
                 debounceTimeMs={0}
@@ -82,7 +82,7 @@ export default {
                   isLoading: articlesLoading,
                   page: articlePage,
                   pageSize: articlePageSize,
-                  variables: { imageRatio = "3:2" }
+                  variables: { imageRatio = "3:2" },
                 }) => (
                   <TrackedArticleList
                     articles={get(data, "articles.list", [])}
@@ -103,26 +103,26 @@ export default {
         />
       ),
       name: "Default with images",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
         <MockFixture
           params={makeAuthorParams({
             articleQuery: authorArticlesNoImagesQuery,
-            articleVariables: iteration => ({
+            articleVariables: (iteration) => ({
               first: pageSize,
               longSummaryLength: 360,
               shortSummaryLength: 220,
               skip: (iteration - 1) * pageSize,
-              slug
+              slug,
             }),
             count,
             hasLeadAssets: false,
             pageSize,
-            slug
+            slug,
           })}
-          render={mocks => (
+          render={(mocks) => (
             <MockedProvider mocks={mocks}>
               <AuthorArticlesNoImagesProvider
                 debounceTimeMs={0}
@@ -135,7 +135,7 @@ export default {
                   error: articlesError,
                   isLoading: articlesLoading,
                   page: articlePage,
-                  pageSize: articlePageSize
+                  pageSize: articlePageSize,
                 }) => (
                   <TrackedArticleList
                     articles={get(data, "articles.list", [])}
@@ -155,18 +155,18 @@ export default {
         />
       ),
       name: "Default without images",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
         <MockFixture
           params={makeAuthorParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: iteration => ({
+            articleVariables: (iteration) => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug
+              slug,
             }),
             count,
             makeItem: (item, itemIndex) => {
@@ -174,16 +174,16 @@ export default {
                 return {
                   ...item,
                   headline: null,
-                  shortHeadline: `Short Headline ${itemIndex}`
+                  shortHeadline: `Short Headline ${itemIndex}`,
                 };
               }
 
               return item;
             },
             pageSize,
-            slug
+            slug,
           })}
-          render={mocks => (
+          render={(mocks) => (
             <MockedProvider mocks={mocks}>
               <AuthorArticlesWithImagesProvider
                 debounceTimeMs={0}
@@ -197,7 +197,7 @@ export default {
                   isLoading: articlesLoading,
                   page: articlePage,
                   pageSize: articlePageSize,
-                  variables: { imageRatio = "3:2" }
+                  variables: { imageRatio = "3:2" },
                 }) => (
                   <TrackedArticleList
                     articles={get(data, "articles.list", [])}
@@ -218,7 +218,7 @@ export default {
         />
       ),
       name: "With a short headline",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => {
@@ -229,7 +229,7 @@ export default {
               backgroundColor: "#999",
               height: 100,
               justifyContent: "center",
-              width: "100%"
+              width: "100%",
             }}
           >
             <TcText style={{ color: "#FFF" }}>Article List Header</TcText>
@@ -240,17 +240,17 @@ export default {
           <MockFixture
             params={makeAuthorParams({
               articleQuery: authorArticlesWithImagesQuery,
-              articleVariables: iteration => ({
+              articleVariables: (iteration) => ({
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
-                slug
+                slug,
               }),
               count,
               pageSize,
-              slug
+              slug,
             })}
-            render={mocks => (
+            render={(mocks) => (
               <MockedProvider mocks={mocks}>
                 <AuthorArticlesWithImagesProvider
                   debounceTimeMs={0}
@@ -264,7 +264,7 @@ export default {
                     isLoading: articlesLoading,
                     page: articlePage,
                     pageSize: articlePageSize,
-                    variables: { imageRatio = "3:2" }
+                    variables: { imageRatio = "3:2" },
                   }) => (
                     <TrackedArticleList
                       articleListHeader={articleListHeader}
@@ -287,14 +287,14 @@ export default {
         );
       },
       name: "With a header",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
         <TrackedArticleList {...getProps(decorateAction)} articlesLoading />
       ),
       name: "Loading articles",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
@@ -303,7 +303,7 @@ export default {
         />
       ),
       name: "Error getting page-level data",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
@@ -311,17 +311,17 @@ export default {
           params={makeAuthorParams({
             articleError: () => new Error("Some Error"),
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: iteration => ({
+            articleVariables: (iteration) => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug
+              slug,
             }),
             count,
             pageSize,
-            slug
+            slug,
           })}
-          render={mocks => (
+          render={(mocks) => (
             <MockedProvider mocks={mocks}>
               <AuthorArticlesWithImagesProvider
                 debounceTimeMs={0}
@@ -335,7 +335,7 @@ export default {
                   isLoading: articlesLoading,
                   page: articlePage,
                   pageSize: articlePageSize,
-                  variables: { imageRatio = "3:2" }
+                  variables: { imageRatio = "3:2" },
                 }) => (
                   <TrackedArticleList
                     articles={get(data, "articles.list", [])}
@@ -356,24 +356,24 @@ export default {
         />
       ),
       name: "Error getting article list data",
-      type: "story"
+      type: "story",
     },
     {
       component: (_, { decorateAction }) => (
         <MockFixture
           params={makeAuthorParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: iteration => ({
+            articleVariables: (iteration) => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug
+              slug,
             }),
             count: 0,
             pageSize,
-            slug
+            slug,
           })}
-          render={mocks => (
+          render={(mocks) => (
             <MockedProvider mocks={mocks}>
               <AuthorArticlesWithImagesProvider
                 debounceTimeMs={0}
@@ -387,7 +387,7 @@ export default {
                   isLoading: articlesLoading,
                   page: articlePage,
                   pageSize: articlePageSize,
-                  variables: { imageRatio = "3:2" }
+                  variables: { imageRatio = "3:2" },
                 }) => (
                   <TrackedArticleList
                     articles={get(data, "articles.list", [])}
@@ -408,8 +408,8 @@ export default {
         />
       ),
       name: "Empty article list",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Composed/Article List"
+  name: "Composed/Article List",
 };

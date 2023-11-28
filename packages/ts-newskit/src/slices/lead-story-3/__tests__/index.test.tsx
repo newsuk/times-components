@@ -8,7 +8,7 @@ const mockClickHandler = jest.fn();
 
 const defaultProps = {
   ...data,
-  clickHandler: mockClickHandler
+  clickHandler: mockClickHandler,
 };
 
 describe('Render Lead Story 3 Slice', () => {
@@ -19,28 +19,28 @@ describe('Render Lead Story 3 Slice', () => {
   test('modifies articles correctly when breakpointKey is "lg"', () => {
     const { asFragment } = renderComponent(
       <LeadStory3 {...defaultProps} />,
-      'lg'
+      'lg',
     );
     expect(asFragment()).toMatchSnapshot();
   });
   test('modifies articles correctly when breakpointKey is "md"', () => {
     const { asFragment } = renderComponent(
       <LeadStory3 {...defaultProps} />,
-      'md'
+      'md',
     );
     expect(asFragment()).toMatchSnapshot();
   });
   test('modifies articles correctly when breakpointKey is "xs"', () => {
     const { asFragment } = renderComponent(
       <LeadStory3 {...defaultProps} />,
-      'xs'
+      'xs',
     );
     expect(asFragment()).toMatchSnapshot();
   });
   test('modifies articles correctly when breakpointKey is "sm"', () => {
     const { asFragment } = renderComponent(
       <LeadStory3 {...defaultProps} />,
-      'sm'
+      'sm',
     );
     expect(asFragment()).toMatchSnapshot();
   });

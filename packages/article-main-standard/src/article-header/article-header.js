@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { TcView, checkStylesForUnits } from "@times-components/utils";
 import {
   ArticleFlags,
-  UpdatedTimeProvider
+  UpdatedTimeProvider,
 } from "@times-components/ts-components";
 
 import HeaderLabel from "../article-header-label/article-header-label";
@@ -20,7 +20,7 @@ const ArticleHeader = ({
   label,
   standfirst,
   style,
-  updatedTime
+  updatedTime,
 }) => (
   <TcView style={style}>
     <HeaderLabel isVideo={hasVideo} label={label} />
@@ -44,15 +44,15 @@ ArticleHeader.propTypes = {
   flags: PropTypes.arrayOf(
     PropTypes.shape({
       expiryTime: PropTypes.string,
-      type: PropTypes.string
-    })
+      type: PropTypes.string,
+    }),
   ),
   hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
   standfirst: PropTypes.string,
   style: PropTypes.object,
-  updatedTime: PropTypes.string
+  updatedTime: PropTypes.string,
 };
 
 ArticleHeader.defaultProps = {
@@ -61,7 +61,7 @@ ArticleHeader.defaultProps = {
   label: null,
   standfirst: null,
   style: {},
-  updatedTime: null
+  updatedTime: null,
 };
 
 export default ArticleHeader;

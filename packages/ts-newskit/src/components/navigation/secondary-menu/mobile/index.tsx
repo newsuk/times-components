@@ -17,30 +17,26 @@ export const SecondaryNavMobile: React.FC<{
   const navRef = useRef<HTMLDivElement>(null);
   const [navHeight, setNavHeight] = useState<string>(height);
 
-  useEffect(
-    () => {
-      if (navRef && navRef.current) {
-        if (
-          window.innerHeight <= navRef.current.getBoundingClientRect().bottom
-        ) {
-          setNavHeight(
-            `${window.innerHeight -
-              navRef.current.getBoundingClientRect().top}px`
-          );
-        } else {
-          setNavHeight(height);
-        }
+  useEffect(() => {
+    if (navRef && navRef.current) {
+      if (window.innerHeight <= navRef.current.getBoundingClientRect().bottom) {
+        setNavHeight(
+          `${
+            window.innerHeight - navRef.current.getBoundingClientRect().top
+          }px`,
+        );
+      } else {
+        setNavHeight(height);
       }
-    },
-    [navRef && navRef.current]
-  );
+    }
+  }, [navRef && navRef.current]);
 
   return (
     <Menu
       vertical
       aria-label="Secondary Navigation"
       overrides={{
-        spaceInline: 'space000'
+        spaceInline: 'space000',
       }}
     >
       <Navigator

@@ -8,5 +8,5 @@ export default {
   height: PropTypes.number,
   strokeColour: PropTypes.string,
   title: PropTypes.string,
-  width: PropTypes.number
+  width: PropTypes.number,
 };

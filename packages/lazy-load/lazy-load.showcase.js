@@ -26,7 +26,7 @@ class SeenText extends Component {
     super(props);
 
     this.state = {
-      showVisibleText: false
+      showVisibleText: false,
     };
   }
 
@@ -34,9 +34,9 @@ class SeenText extends Component {
     setTimeout(
       () =>
         this.setState({
-          showVisibleText: true
+          showVisibleText: true,
         }),
-      500
+      500,
     );
   }
 
@@ -53,14 +53,14 @@ export default {
         <LazyLoad rootMargin="100px" threshold={0.5}>
           {({ observed, registerNode }) => (
             <ul>
-              {list.map(id => {
+              {list.map((id) => {
                 const isVisible = !!observed.get(id);
                 const StyledElement = isVisible ? SeenElement : UnseenElement;
 
                 return (
                   <StyledElement
                     id={id}
-                    innerRef={node => registerNode(node)}
+                    innerRef={(node) => registerNode(node)}
                     key={id}
                   >
                     {isVisible ? <SeenText /> : <UnseenText />}
@@ -73,8 +73,8 @@ export default {
       ),
       name: "Default",
       platform: "web",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Helpers/Lazy load"
+  name: "Helpers/Lazy load",
 };

@@ -5,7 +5,7 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  stylePrinter
+  stylePrinter,
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
@@ -19,9 +19,9 @@ export default () => {
       stylePrinter,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => key !== "style" && key !== "className"
-      )
-    )
+        (value, key) => key !== "style" && key !== "className",
+      ),
+    ),
   );
 
   // eslint-disable-next-line global-require
@@ -32,9 +32,9 @@ export default () => {
       name: "mpu config",
       test: () => {
         expect(
-          TestRenderer.create(renderParagraph(dropCapData))
+          TestRenderer.create(renderParagraph(dropCapData)),
         ).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ]);
 };

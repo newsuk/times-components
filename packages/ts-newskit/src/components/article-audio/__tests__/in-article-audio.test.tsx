@@ -4,13 +4,12 @@ import { render, screen, fireEvent } from '../../../utils/test-utils';
 import { InArticleAudio, InArticleAudioProps } from '../index';
 
 export const data = {
-  src:
-    'https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3',
+  src: 'https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3',
   readyToPlayText: 'Listen to article',
   playingText: 'Playing',
   narrator: 'James Marriott',
   headline: 'Article headline',
-  showAudioPlayer: false
+  showAudioPlayer: false,
 };
 
 export const renderComponent = (props: InArticleAudioProps) =>
@@ -25,7 +24,7 @@ describe('Audio player', () => {
   test('renders correctly when visible', () => {
     const { asFragment } = renderComponent({
       ...data,
-      showAudioPlayer: true
+      showAudioPlayer: true,
     });
     expect(asFragment()).toMatchSnapshot();
   });
@@ -47,7 +46,7 @@ describe('Audio player', () => {
       ...data,
       showAudioPlayer: true,
       readyToPlayText: undefined,
-      playingText: undefined
+      playingText: undefined,
     });
 
     const readyToPlayDefaultText = screen.getByText('Listen to article');
@@ -63,7 +62,7 @@ describe('Audio player', () => {
       ...data,
       showAudioPlayer: true,
       readyToPlayText: undefined,
-      playingText: undefined
+      playingText: undefined,
     });
 
     const playBtn = screen.getByRole('button', { name: 'Play' });

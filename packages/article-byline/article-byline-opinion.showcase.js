@@ -5,20 +5,20 @@ import { ArticleBylineOpinion } from "./src/article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
 
-const preventDefaultedAction = decorateAction =>
+const preventDefaultedAction = (decorateAction) =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    }
+    },
   ]);
 
 const ComponentWrapper = ({ children }) => (
   <TcView style={{ flexDirection: "row", flexWrap: "wrap" }}>{children}</TcView>
 );
 
-const getProps = decorateAction => ({
-  onAuthorPress: preventDefaultedAction(decorateAction)("onAuthorPress")
+const getProps = (decorateAction) => ({
+  onAuthorPress: preventDefaultedAction(decorateAction)("onAuthorPress"),
 });
 
 export default {
@@ -33,8 +33,8 @@ export default {
         </ComponentWrapper>
       ),
       name: "Byline with a single author",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Article Byline/Opinion"
+  name: "Primitives/Article Byline/Opinion",
 };

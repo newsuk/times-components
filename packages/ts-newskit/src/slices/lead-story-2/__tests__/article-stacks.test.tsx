@@ -14,7 +14,7 @@ const renderComponent = (width?: string) =>
       {...{ horizontalArticles, verticalArticles }}
       horizontalArticleContentWidth={width}
       clickHandler={mockClickHandler}
-    />
+    />,
   );
 
 describe('Render ArticleStack', () => {

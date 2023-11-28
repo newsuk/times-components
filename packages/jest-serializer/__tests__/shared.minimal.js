@@ -25,7 +25,7 @@ export default () => {
   });
 
   it("remove undefined props", () => {
-    const Dummy = props => <TcText {...props} />;
+    const Dummy = (props) => <TcText {...props} />;
     const DummyRenderer = () => (
       <TcView>
         <Dummy False={false} Null={null} Undef={undefined} Zero={0} />
@@ -38,7 +38,7 @@ export default () => {
   });
 
   it("remove functions as props", () => {
-    const Dummy = props => <TcText {...props} />;
+    const Dummy = (props) => <TcText {...props} />;
     const DummyRenderer = () => (
       <TcView>
         <Dummy testFunc={() => 42} />

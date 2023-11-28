@@ -3,33 +3,33 @@ import renderer from "react-test-renderer";
 import {
   edition as makeEditionParams,
   MockedProvider,
-  MockFixture
+  MockFixture,
 } from "@times-components/provider-test-tools";
 import { EditionProvider } from "../src/provider";
 
-const renderComponent = child => {
+const renderComponent = (child) => {
   const id = "2b6e462c-225f-11e9-b782-40e94f317da5";
 
   return renderer.create(
     <MockFixture
       params={makeEditionParams({
         variables: () => ({
-          id
-        })
+          id,
+        }),
       })}
-      render={mocks => (
+      render={(mocks) => (
         <MockedProvider mocks={mocks}>
           <EditionProvider debounceTimeMs={0} id={id}>
             {child}
           </EditionProvider>
         </MockedProvider>
       )}
-    />
+    />,
   );
 };
 
 describe("Edition provider", () => {
-  it("returns query result", done => {
+  it("returns query result", (done) => {
     renderComponent(({ isLoading, edition, error }) => {
       if (error) {
         throw error;

@@ -20,20 +20,20 @@ export default (scale, color, dropCapFont, paragraph) => {
     fontStyle: "",
     fontWeight: "",
     fontSize,
-    color
+    color,
   };
   const font = FontStorage.getFont(fontSettings);
   const { height } = getStringBounds(fontSettings, letter.string);
   const dropCapAdvanceWidth = font.getAdvanceWidth(
     letter.string,
-    fontSettings.fontSize
+    fontSettings.fontSize,
   );
 
   const exclusion = new BoxExclusion(
     0,
     0,
     dropCapAdvanceWidth + styles.articleMainContentRow.paddingRight,
-    height
+    height,
   );
   const element = (
     <TcText
@@ -45,8 +45,8 @@ export default (scale, color, dropCapFont, paragraph) => {
           fontSize,
           lineHeight: height * 1.33,
           fontFamily: fontsWithFallback[dropCapFont],
-          color: fontSettings.color
-        }
+          color: fontSettings.color,
+        },
       ]}
     >
       {letter.string}
@@ -55,6 +55,6 @@ export default (scale, color, dropCapFont, paragraph) => {
   return {
     exclusion,
     element,
-    length: letter.length
+    length: letter.length,
   };
 };

@@ -1,4 +1,4 @@
-module.exports = api => {
+module.exports = (api) => {
   api.cache(true);
   return {
     plugins: ["babel-plugin-styled-components"],
@@ -7,11 +7,11 @@ module.exports = api => {
         "@babel/preset-env",
         {
           targets: {
-            node: "current"
-          }
-        }
+            node: "current",
+          },
+        },
       ],
-      "@babel/preset-react"
-    ]
+      "@babel/preset-react",
+    ],
   };
 };

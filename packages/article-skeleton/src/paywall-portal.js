@@ -19,7 +19,7 @@ const PaywallPortal = ({ id, componentName }) => {
 
 PaywallPortal.propTypes = {
   id: PropTypes.string.isRequired,
-  componentName: PropTypes.string.isRequired
+  componentName: PropTypes.string.isRequired,
 };
 
 export default PaywallPortal;

@@ -12,7 +12,7 @@ export default (options = {}) => {
     before(() => {
       cy.task("startMockServerWith", {
         Article: new MockArticle().get(),
-        Topic: new MockTopic().setTopicArticles(25).get()
+        Topic: new MockTopic().setTopicArticles(25).get(),
       });
     });
 
@@ -26,9 +26,7 @@ export default (options = {}) => {
 
     it("Topic head has required elements", () => {
       cy.get("#main-container > div:nth-child(1)");
-      cy.get("#main-container h1")
-        .first()
-        .contains("Topic Page");
+      cy.get("#main-container h1").first().contains("Topic Page");
       cy.get('div[data-testid="topic-description"]');
     });
 
@@ -57,17 +55,17 @@ export default (options = {}) => {
         rules: [
           {
             id: "color-contrast",
-            enabled: false
+            enabled: false,
           },
           {
             id: "region",
-            enabled: false
+            enabled: false,
           },
           {
             id: "heading-order",
-            enabled: false
-          }
-        ]
+            enabled: false,
+          },
+        ],
       });
       cy.checkA11y();
     });

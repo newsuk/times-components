@@ -4,16 +4,16 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 import shared from "./shared.base";
 
 jest.mock("@times-components/link", () => ({
-  TextLink: "TextLink"
+  TextLink: "TextLink",
 }));
 
 jest.mock("@times-components/icons", () => ({
-  IconTwitter: "IconTwitter"
+  IconTwitter: "IconTwitter",
 }));
 
 export default () => {
@@ -23,9 +23,9 @@ export default () => {
       print,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => key === "style" || key === "className"
-      )
-    )
+        (value, key) => key === "style" || key === "className",
+      ),
+    ),
   );
 
   shared(TestRenderer.create);

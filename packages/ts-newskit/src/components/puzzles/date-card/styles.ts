@@ -5,7 +5,7 @@ import {
   Block,
   getMediaQueryFromTheme,
   getSpacingCssFromTheme,
-  getSizingCssFromTheme
+  getSizingCssFromTheme,
 } from 'newskit';
 
 export const Container = styled(Block)`

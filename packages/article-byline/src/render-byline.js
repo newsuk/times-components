@@ -6,8 +6,8 @@ import renderers from "@times-components/markup";
 import styled from "styled-components";
 
 const InlineText = styled(TcText)`
-  ${props =>
-    props.textStyle ? checkStylesForUnits(props.textStyle) : ""} ${props =>
+  ${(props) =>
+    props.textStyle ? checkStylesForUnits(props.textStyle) : ""} ${(props) =>
     props.bylineStyle ? checkStylesForUnits(props.bylineStyle) : ""};
 `;
 
@@ -33,13 +33,12 @@ const bylineRenderers = (Component, textStyle, props = {}) => ({
         {children}
       </InlineText>
     );
-  }
+  },
 });
 
 const renderByline = (Component, ast, textStyle, props = {}) => {
-  const bylineAst = ast.map(
-    bylineObj =>
-      bylineObj.byline && bylineObj.byline.length > 0 ? bylineObj.byline[0] : {}
+  const bylineAst = ast.map((bylineObj) =>
+    bylineObj.byline && bylineObj.byline.length > 0 ? bylineObj.byline[0] : {},
   );
   return renderTrees(bylineAst, bylineRenderers(Component, textStyle, props));
 };

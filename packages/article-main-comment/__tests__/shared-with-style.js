@@ -7,7 +7,7 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  stylePrinter
+  stylePrinter,
 } from "@times-components/jest-serializer";
 import "./mocks";
 import { ContextProviderWithDefaults } from "@times-components/context";
@@ -24,11 +24,11 @@ export default () => {
       stylePrinter,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => key !== "style" && key !== "className"
+        (value, key) => key !== "style" && key !== "className",
       ),
       flattenStyleTransform,
-      hoistStyleTransform
-    )
+      hoistStyleTransform,
+    ),
   );
 
   // eslint-disable-next-line global-require
@@ -37,8 +37,8 @@ export default () => {
   beforeEach(() => {
     const nuk = {
       user: {
-        isLoggedIn: true
-      }
+        isLoggedIn: true,
+      },
     };
     global.nuk = nuk;
   });
@@ -51,7 +51,7 @@ export default () => {
     const article = articleFixture({
       ...testFixture,
       author: {
-        image: "https://image.io"
+        image: "https://image.io",
       },
       content: [
         {
@@ -60,58 +60,58 @@ export default () => {
             credits: "The image credits",
             display: "primary",
             ratio: "1500:1000",
-            url: "https://image.io"
+            url: "https://image.io",
           },
           children: [],
-          name: "image"
+          name: "image",
         },
         {
           attributes: {
             href: "https://link.io",
-            target: "_blank"
+            target: "_blank",
           },
           children: [
             {
               attributes: {
-                value: "Some Link"
+                value: "Some Link",
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "link"
+          name: "link",
         },
         {
           attributes: {},
           children: [
             {
               attributes: {
-                value: "Some content"
+                value: "Some content",
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "paragraph"
+          name: "paragraph",
         },
         {
           attributes: {
             caption: {
               name: "AName",
               text: "a text",
-              twitter: "@AName"
-            }
+              twitter: "@AName",
+            },
           },
           children: [
             {
               attributes: {
-                value: "The pull quote content"
+                value: "The pull quote content",
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "pullQuote"
+          name: "pullQuote",
         },
         {
           attributes: {
@@ -121,15 +121,15 @@ export default () => {
             caption: "This is video caption",
             display: "primary",
             posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-            posterImageUrl: "https://image.io"
+            posterImageUrl: "https://image.io",
           },
           children: [],
-          name: "video"
+          name: "video",
         },
         {
           attributes: {},
           children: [],
-          name: "ad"
+          name: "ad",
         },
         {
           attributes: {
@@ -137,10 +137,10 @@ export default () => {
             credits: "Some Credits",
             display: "secondary",
             ratio: "3:2",
-            url: "https://image-2.io"
+            url: "https://image-2.io",
           },
           children: [],
-          name: "image"
+          name: "image",
         },
         {
           attributes: {
@@ -148,22 +148,22 @@ export default () => {
             credits: "Some Credits",
             display: "inline",
             ratio: "9:4",
-            url: "https://image-inline.io"
+            url: "https://image-inline.io",
           },
           children: [],
-          name: "image"
-        }
-      ]
+          name: "image",
+        },
+      ],
     });
 
     const testRenderer = TestRenderer.create(
       <ContextProviderWithDefaults
         value={{
-          user: { isLoggedIn: true }
+          user: { isLoggedIn: true },
         }}
       >
         <ArticleMainComment {...sharedProps} article={article} />
-      </ContextProviderWithDefaults>
+      </ContextProviderWithDefaults>,
     );
 
     expect(testRenderer).toMatchSnapshot();

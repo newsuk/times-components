@@ -11,7 +11,7 @@ const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),
   isExpanded: false,
-  isSelected: 'Home'
+  isSelected: 'Home',
 };
 
 const mockClickHandler = jest.fn();
@@ -28,11 +28,11 @@ describe('Secondary Menu Mobile', () => {
         title=""
         options={options}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
     expect(getByText('See all')).not.toHaveStyle({
-      color: 'rgb(255, 255, 255)'
+      color: 'rgb(255, 255, 255)',
     });
   });
   it('should render the correct title', () => {
@@ -42,7 +42,7 @@ describe('Secondary Menu Mobile', () => {
         title="Sport"
         options={options}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     expect(getByText('See all Sport')).toBeInTheDocument();
   });
@@ -55,10 +55,10 @@ describe('Secondary Menu Mobile', () => {
           options={options}
           clickHandler={mockClickHandler}
         />
-      </ThemeProvider>
+      </ThemeProvider>,
     );
     expect(getByText('See all')).toHaveStyle({
-      color: 'rgb(255, 255, 255)'
+      color: 'rgb(255, 255, 255)',
     });
   });
 
@@ -69,7 +69,7 @@ describe('Secondary Menu Mobile', () => {
         title=""
         options={{ ...options, isExpanded: true }}
         clickHandler={mockClickHandler}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
     const Button = screen.getByTestId('menu-sub-button');
@@ -84,7 +84,7 @@ describe('Secondary Menu Mobile', () => {
         options={options}
         clickHandler={mockClickHandler}
         onClick={onClickMock}
-      />
+      />,
     );
     const Button = screen.getByTestId('menu-sub-button');
     expect(Button).toHaveAttribute('aria-label', 'Expand Secondary Menu');

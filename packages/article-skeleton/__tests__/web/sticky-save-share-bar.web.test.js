@@ -6,7 +6,7 @@ import {
   enzymeTreeSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 
 import "../mocks";
@@ -15,18 +15,15 @@ import StickySaveAndShareBar from "../../src/sticky-save-and-share-bar";
 
 window.matchMedia = jest.fn(() => ({ matches: true }));
 
-jest.mock("@times-components/save-and-share-bar", () => () =>
-  "SaveAndShareBar"
+jest.mock(
+  "@times-components/save-and-share-bar",
+  () => () => "SaveAndShareBar",
 );
 
 addSerializers(
   expect,
   enzymeTreeSerializer(),
-  compose(
-    print,
-    minimalWebTransform,
-    minimaliseTransform()
-  )
+  compose(print, minimalWebTransform, minimaliseTransform()),
 );
 
 describe("StickySaveAndShareBar", () => {

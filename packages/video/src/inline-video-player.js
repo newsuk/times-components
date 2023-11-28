@@ -71,7 +71,7 @@ class InlineVideoPlayer extends Component {
 
     this.state = {
       error: null,
-      hasVideoPlayed: false
+      hasVideoPlayed: false,
     };
 
     this.id = `${props.videoId}-${props.accountId}-${props.id}`;
@@ -100,7 +100,7 @@ class InlineVideoPlayer extends Component {
 
   componentWillUnmount() {
     InlineVideoPlayer.activePlayers.splice(
-      InlineVideoPlayer.activePlayers.indexOf(this)
+      InlineVideoPlayer.activePlayers.indexOf(this),
     );
     if (this.player) {
       this.player.dispose();
@@ -119,7 +119,7 @@ class InlineVideoPlayer extends Component {
   handlePlay = () => {
     this.setState({ hasVideoPlayed: true });
 
-    InlineVideoPlayer.activePlayers.forEach(video => {
+    InlineVideoPlayer.activePlayers.forEach((video) => {
       if (video !== this && video.player) {
         video.player.pause();
       }
@@ -128,7 +128,7 @@ class InlineVideoPlayer extends Component {
 
   createIntersectionObserver() {
     return "IntersectionObserver" in window
-      ? new window.IntersectionObserver(entries => {
+      ? new window.IntersectionObserver((entries) => {
           if (entries[0].isIntersecting) {
             this.loadBrightcoveSDKIfRequired();
           }
@@ -143,12 +143,16 @@ class InlineVideoPlayer extends Component {
       const s = this.createBrightcoveScript();
 
       s.onload = () => {
-        InlineVideoPlayer.activePlayers.forEach(player => player.initVideojs());
+        InlineVideoPlayer.activePlayers.forEach((player) =>
+          player.initVideojs(),
+        );
       };
 
       s.onerror = () => {
         InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
-        InlineVideoPlayer.activePlayers.forEach(player => player.handleError());
+        InlineVideoPlayer.activePlayers.forEach((player) =>
+          player.handleError(),
+        );
       };
 
       InlineVideoPlayer.appendScript(s);
@@ -181,15 +185,8 @@ class InlineVideoPlayer extends Component {
   }
 
   render() {
-    const {
-      width,
-      height,
-      poster,
-      videoId,
-      accountId,
-      playerId,
-      is360
-    } = this.props;
+    const { width, height, poster, videoId, accountId, playerId, is360 } =
+      this.props;
     const { error, hasVideoPlayed } = this.state;
     if (error) {
       throw new Error("Can't load video"); // caught by parent ErrorView

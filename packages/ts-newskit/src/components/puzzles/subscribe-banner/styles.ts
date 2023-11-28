@@ -4,13 +4,13 @@ import {
   getColorCssFromTheme,
   getMediaQueryFromTheme,
   StackProps,
-  Block
+  Block,
 } from 'newskit';
 
 import {
   NewsKitIconSubscribe3,
   NewsKitIconSubscribeB,
-  NewsKitIconSubscribeQuestion
+  NewsKitIconSubscribeQuestion,
 } from '../../../assets';
 
 export const SubscribeBannerContainer = styled(Stack)<StackProps>`

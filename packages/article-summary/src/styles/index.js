@@ -4,8 +4,8 @@ const styles = {
   ...sharedStyles,
   headline: {
     ...sharedStyles.headline,
-    fontWeight: "400"
-  }
+    fontWeight: "400",
+  },
 };
 
 export default styles;

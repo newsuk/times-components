@@ -19,9 +19,9 @@ class MockedProvider extends Component {
     this.client = new ApolloClient({
       cache: new Cache({
         addTypename: !props.removeTypename,
-        fragmentMatcher
+        fragmentMatcher,
       }),
-      link
+      link,
     });
   }
 
@@ -37,7 +37,7 @@ const GraphQLRequest = PropTypes.shape({
   extensions: PropTypes.object,
   operationName: PropTypes.string,
   query: PropTypes.object.isRequired,
-  variables: PropTypes.object
+  variables: PropTypes.object,
 });
 
 MockedProvider.propTypes = {
@@ -49,15 +49,15 @@ MockedProvider.propTypes = {
       error: PropTypes.object,
       newData: PropTypes.func,
       request: GraphQLRequest.isRequired,
-      result: PropTypes.object
-    })
+      result: PropTypes.object,
+    }),
   ).isRequired,
-  removeTypename: PropTypes.bool
+  removeTypename: PropTypes.bool,
 };
 
 MockedProvider.defaultProps = {
   isLoading: false,
-  removeTypename: false
+  removeTypename: false,
 };
 
 export default MockedProvider;

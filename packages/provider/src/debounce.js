@@ -5,7 +5,7 @@ import getDisplayName from "react-display-name";
 import hoistNonReactStatic from "hoist-non-react-statics";
 import isEqual from "lodash.isequal";
 
-const validateProps = props => {
+const validateProps = (props) => {
   if (typeof props.debounceTimeMs !== "number") {
     throw new Error("debounceTimeMs prop required");
   }
@@ -20,7 +20,7 @@ export class Debounce extends Component {
     if (!isEqual(props, state.debouncedProps)) {
       return {
         ...state,
-        debouncedProps: props
+        debouncedProps: props,
       };
     }
 
@@ -32,7 +32,7 @@ export class Debounce extends Component {
     validateProps(props);
     this.state = {
       debouncedProps: props,
-      isDebouncing: false
+      isDebouncing: false,
     };
     this.debounceTimeout = null;
   }
@@ -53,7 +53,7 @@ export class Debounce extends Component {
 
     this.debounceTimeout = setTimeout(
       this.handleDebounceTimer,
-      nextProps.debounceTimeMs
+      nextProps.debounceTimeMs,
     );
   }
 
@@ -72,29 +72,29 @@ export class Debounce extends Component {
 
     return debounceRender({
       ...props,
-      ...this.state
+      ...this.state,
     });
   }
 }
 
 Debounce.propTypes = {
   debounceRender: PropTypes.func.isRequired,
-  debounceTimeMs: PropTypes.number.isRequired
+  debounceTimeMs: PropTypes.number.isRequired,
 };
 
-const withDebounce = WrappedComponent => {
-  const WithDebounce = props => (
+const withDebounce = (WrappedComponent) => {
+  const WithDebounce = (props) => (
     <Debounce
       {...props}
-      debounceRender={renderProps => <WrappedComponent {...renderProps} />}
+      debounceRender={(renderProps) => <WrappedComponent {...renderProps} />}
     />
   );
   WithDebounce.displayName = `WithDebounce(${getDisplayName(
-    WrappedComponent
+    WrappedComponent,
   )})`;
   WithDebounce.propTypes = {
     ...Debounce.propTypes,
-    ...WrappedComponent.propTypes
+    ...WrappedComponent.propTypes,
   };
   delete WithDebounce.propTypes.debounceRender;
   delete WithDebounce.propTypes.debouncedProps;

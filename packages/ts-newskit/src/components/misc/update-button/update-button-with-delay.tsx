@@ -22,7 +22,7 @@ export const UpdateButtonWithDelay = ({
   arrowUp,
   updatedTime,
   articleId,
-  update = false
+  update = false,
 }: UpdateWithDelayProps) => {
   const [hasUpdate, setUpdate] = useState(update);
   useEffect(() => {

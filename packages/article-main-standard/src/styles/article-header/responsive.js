@@ -4,7 +4,7 @@ import {
   breakpoints,
   colours,
   fontsWithFallback,
-  fontSizes
+  fontSizes,
 } from "@times-components/ts-styleguide";
 
 export const HeadlineContainer = styled.h1`
@@ -20,7 +20,7 @@ export const HeadlineContainer = styled.h1`
   font-family: ${fontsWithFallback.headline};
   font-weight: 400;
   line-height: 30px;
-  ${props => props.styles && props.styles}
+  ${(props) => props.styles && props.styles}
 
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;

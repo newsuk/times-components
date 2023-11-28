@@ -9,7 +9,7 @@ export interface StoryCardListingProps {
 
 export const StoryCardListing: FC<StoryCardListingProps> = ({
   articles,
-  sectionTitle
+  sectionTitle,
 }) => {
   return (
     <>
@@ -19,17 +19,17 @@ export const StoryCardListing: FC<StoryCardListingProps> = ({
           stylePreset: 'dashedDivider',
           paddingBlock: {
             xs: 'space040',
-            lg: 'space050'
+            lg: 'space050',
           },
           paddingInline: 'space000',
           heading: {
             typographyPreset: {
               xs: 'editorialDisplay002',
               md: 'editorialDisplay003',
-              lg: 'editorialDisplay004'
+              lg: 'editorialDisplay004',
             },
-            stylePreset: 'inkBrand010'
-          }
+            stylePreset: 'inkBrand010',
+          },
         }}
         data-testid="title-bar"
       >

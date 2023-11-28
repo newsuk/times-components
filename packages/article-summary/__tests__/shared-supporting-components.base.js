@@ -17,22 +17,22 @@ export default () => {
             className="bigOne"
             headline={text}
             style={style}
-          />
+          />,
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      }
+      },
     },
     {
       name: "article summary strapline component",
       test: () => {
         const testInstance = TestRenderer.create(
-          <ArticleSummaryStrapline strapline={text} style={style} />
+          <ArticleSummaryStrapline strapline={text} style={style} />,
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      }
-    }
+      },
+    },
   ];
 
   iterator(tests);

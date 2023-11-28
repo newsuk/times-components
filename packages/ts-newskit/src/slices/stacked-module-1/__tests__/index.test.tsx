@@ -7,7 +7,7 @@ import { stackedModule1Articles } from '../../fixtures/data.json';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
+  useBreakpointKey: jest.fn().mockReturnValue('xl'),
 }));
 
 const mockClickHandler = jest.fn();
@@ -17,7 +17,7 @@ const renderComponent = () =>
     <StackModule1
       articles={stackedModule1Articles}
       clickHandler={mockClickHandler}
-    />
+    />,
   );
 
 describe('Render StackModule 1 Slice', () => {

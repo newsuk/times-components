@@ -34,12 +34,12 @@ class ServerClientRender extends Component {
 
 ServerClientRender.propTypes = {
   server: PropTypes.func,
-  client: PropTypes.func
+  client: PropTypes.func,
 };
 
 ServerClientRender.defaultProps = {
   server: null,
-  client: null
+  client: null,
 };
 
 export default ServerClientRender;

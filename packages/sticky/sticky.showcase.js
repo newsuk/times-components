@@ -8,7 +8,7 @@ import Sticky, {
   StickyProvider,
   selectors,
   computeProgressStyles,
-  mediaQuery
+  mediaQuery,
 } from "./src/sticky";
 
 const Styles = createScopedGlobalStyle`
@@ -59,9 +59,9 @@ const ScrollProgressBar = styled.div`
   ${selectors.sticky(css`
     background: blue;
   `)} ${computeProgressStyles(
-    progress => css`
+    (progress) => css`
       opacity: ${1 - progress};
-    `
+    `,
   )};
 `;
 
@@ -164,7 +164,7 @@ export default {
         </StickyProvider>
       ),
       name: "Sticky without fixed sibling",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
@@ -264,7 +264,7 @@ export default {
         </div>
       ),
       name: "Sticky with fixed sibling",
-      type: "story"
+      type: "story",
     },
     {
       component: () => (
@@ -364,7 +364,7 @@ export default {
         </div>
       ),
       name: "Sticky with scroll progress",
-      type: "story"
+      type: "story",
     },
     {
       component: () => {
@@ -468,8 +468,8 @@ export default {
         );
       },
       name: "Sticky with fixed sibling & media query",
-      type: "story"
-    }
+      type: "story",
+    },
   ],
-  name: "Primitives/Sticky"
+  name: "Primitives/Sticky",
 };

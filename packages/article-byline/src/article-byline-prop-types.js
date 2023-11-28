@@ -7,10 +7,10 @@ export const propTypes = {
   children: PropTypes.array,
   key: PropTypes.string,
   attributes: PropTypes.array,
-  slug: PropTypes.string
+  slug: PropTypes.string,
 };
 
 export const defaultProps = {
   onAuthorPress: () => null,
-  capitalize: false
+  capitalize: false,
 };

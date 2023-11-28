@@ -14,11 +14,11 @@ class Erroring extends Component {
 }
 
 Erroring.propTypes = {
-  onError: PropTypes.func
+  onError: PropTypes.func,
 };
 
 Erroring.defaultProps = {
-  onError: () => {}
+  onError: () => {},
 };
 
 export default Erroring;

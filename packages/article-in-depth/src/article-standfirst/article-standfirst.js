@@ -22,12 +22,12 @@ const HeaderStandfirst = ({ standfirst, color }) => {
 
 HeaderStandfirst.propTypes = {
   color: PropTypes.string,
-  standfirst: PropTypes.string
+  standfirst: PropTypes.string,
 };
 
 HeaderStandfirst.defaultProps = {
   color: colours.functional.white,
-  standfirst: null
+  standfirst: null,
 };
 
 export default HeaderStandfirst;

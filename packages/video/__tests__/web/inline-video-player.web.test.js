@@ -23,7 +23,7 @@ describe("InlineVideoPlayer", () => {
       dispose: jest.fn(),
       on: jest.fn(),
       pause: jest.fn(),
-      ready: jest.fn().mockImplementation(f => f())
+      ready: jest.fn().mockImplementation((f) => f()),
     }));
   };
 
@@ -31,17 +31,17 @@ describe("InlineVideoPlayer", () => {
     renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
 
     expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>'
+      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>',
     );
   });
 
   it("appends correct script tag to body when no playerId supplied", () => {
     renderer.create(
-      <InlineVideoPlayer {...defaultVideoProps} playerId={undefined} />
+      <InlineVideoPlayer {...defaultVideoProps} playerId={undefined} />,
     );
 
     expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>'
+      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>',
     );
   });
 
@@ -49,21 +49,21 @@ describe("InlineVideoPlayer", () => {
     const observeMock = jest.fn();
     window.IntersectionObserver = jest.fn(() => ({
       observe: observeMock,
-      disconnect: jest.fn()
+      disconnect: jest.fn(),
     }));
 
     renderer.create(
-      <InlineVideoPlayer {...defaultVideoProps} playerId={undefined} />
+      <InlineVideoPlayer {...defaultVideoProps} playerId={undefined} />,
     );
 
     expect(document.body.innerHTML.trim()).not.toBe(
-      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js"></script>'
+      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js"></script>',
     );
 
     window.IntersectionObserver.mock.calls[0][0]([{ isIntersecting: true }]);
 
     expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>'
+      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>',
     );
   });
 
@@ -118,7 +118,7 @@ describe("InlineVideoPlayer", () => {
 
     renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
     renderer.create(
-      <InlineVideoPlayer {...defaultVideoProps} id="[tpa video id 2]" />
+      <InlineVideoPlayer {...defaultVideoProps} id="[tpa video id 2]" />,
     );
 
     const [component1, component2] = InlineVideoPlayer.activePlayers;
@@ -134,7 +134,7 @@ describe("InlineVideoPlayer", () => {
   it("doesn't hold references to players after they have been unmounted", () => {
     renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
     const p2 = renderer.create(
-      <InlineVideoPlayer {...defaultVideoProps} id="[tpa video id 2]" />
+      <InlineVideoPlayer {...defaultVideoProps} id="[tpa video id 2]" />,
     );
 
     expect(InlineVideoPlayer.activePlayers.length).toBe(2);
@@ -146,7 +146,7 @@ describe("InlineVideoPlayer", () => {
 
   const fireScriptEventAndExpectComponentMethodToBeCalled = (
     eventName,
-    methodName
+    methodName,
   ) => {
     const mockScript = {};
     jest
@@ -156,7 +156,7 @@ describe("InlineVideoPlayer", () => {
 
     renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
     renderer.create(
-      <InlineVideoPlayer {...defaultVideoProps} id="[tpa video id 2]" />
+      <InlineVideoPlayer {...defaultVideoProps} id="[tpa video id 2]" />,
     );
     const [component1, component2] = InlineVideoPlayer.activePlayers;
 

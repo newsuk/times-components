@@ -9,5 +9,5 @@ export const sanitiseCopy = (copy: string = '', allowedTags: {} = {}) =>
   xss(decodeEntities(copy), {
     whiteList: allowedTags,
     stripIgnoreTag: true,
-    stripIgnoreTagBody: ['script']
+    stripIgnoreTagBody: ['script'],
   });

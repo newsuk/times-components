@@ -4,7 +4,7 @@ import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { ClickHandlerType } from '../types';
 import {
   LeadArticle,
-  LeadArticleProps
+  LeadArticleProps,
 } from '../../components/slices/lead-article';
 import { BlockNoTopMargin } from '../shared-styles';
 
@@ -26,18 +26,18 @@ export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
                   textBlockMarginBlockStart: 'space050',
                   headlineTypographyPreset: {
                     xs: 'editorialHeadline040',
-                    md: 'editorialHeadline060'
+                    md: 'editorialHeadline060',
                   },
-                  hasTopBorder: false
+                  hasTopBorder: false,
                 }
               : {
                   ...article,
                   headlineTypographyPreset: {
                     xs: 'editorialHeadline030',
-                    md: 'editorialHeadline020'
+                    md: 'editorialHeadline020',
                   },
                   hideImage: true,
-                  hasTopBorder: false
+                  hasTopBorder: false,
                 };
 
           if (index === 0) {
@@ -64,12 +64,12 @@ export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
               <FullWidthBlock
                 paddingInline={{
                   xs: 'space045',
-                  md: 'space000'
+                  md: 'space000',
                 }}
               >
                 <Divider
                   overrides={{
-                    stylePreset: 'dashedDivider'
+                    stylePreset: 'dashedDivider',
                   }}
                 />
               </FullWidthBlock>
@@ -87,7 +87,7 @@ export const ArticleStack = ({ leadArticles, clickHandler }: ArticlesProps) => {
                       shortSummary:
                         index === leadArticles.length - 1
                           ? ''
-                          : modifiedArticle.shortSummary
+                          : modifiedArticle.shortSummary,
                     }}
                     clickHandler={clickHandler}
                   />

@@ -2,7 +2,7 @@ import { withTrackingContext } from "@times-components/tracking";
 import getHeadline from "./utils";
 import standardRoles from "./roles";
 
-export default Component =>
+export default (Component) =>
   withTrackingContext(Component, {
     getAttrs: ({ slice }) => {
       const { items, sliceName } = slice;
@@ -14,13 +14,13 @@ export default Component =>
           return {
             headline: getHeadline(headline, shortHeadline),
             id,
-            role: standardRoles[index]
+            role: standardRoles[index],
           };
         });
 
       const trackingObject = {
         articles: [],
-        template: sliceName
+        template: sliceName,
       };
 
       if (!items) return trackingObject;
@@ -29,5 +29,5 @@ export default Component =>
 
       return trackingObject;
     },
-    trackingObjectName: "Article"
+    trackingObjectName: "Article",
   });

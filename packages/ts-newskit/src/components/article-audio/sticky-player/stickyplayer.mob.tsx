@@ -20,7 +20,7 @@ export const StickyPlayerMob: React.FC<StickyPlayerMobProps> = ({
   handleClickPlayPause,
   setShowStickyPlayer,
   setIsExpanded,
-  isPlaying
+  isPlaying,
 }) => {
   return (
     <>

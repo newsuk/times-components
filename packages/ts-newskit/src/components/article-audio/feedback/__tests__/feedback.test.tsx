@@ -19,7 +19,7 @@ describe('FeedbackText Component', () => {
         setClosed={setClosed}
         showFeedback={true}
         feedbackMessage={feedbackMessage}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -32,7 +32,7 @@ describe('FeedbackText Component', () => {
         setClosed={setClosed}
         showFeedback={true}
         feedbackMessage={feedbackMessage}
-      />
+      />,
     );
     expect(screen.getByText(feedbackMessage)).toBeInTheDocument();
   });

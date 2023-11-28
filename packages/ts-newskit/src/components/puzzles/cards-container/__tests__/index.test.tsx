@@ -12,7 +12,7 @@ describe('CardsContainer tests', () => {
         cards={Array(8).fill(puzzleGame)}
         title="Crosswords"
         seeAllLink="https://newskit.co.uk/components"
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -23,7 +23,7 @@ describe('CardsContainer tests', () => {
         title="Crosswords"
         seeAllLink="https://newskit.co.uk/components"
         isScrollable={true}
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -34,7 +34,7 @@ describe('CardsContainer tests', () => {
         title="Crosswords"
         seeAllLink="https://newskit.co.uk/components"
         isScrollable={true}
-      />
+      />,
     );
     const scrollContainer = getByTestId('scroll-container');
     const btnScrollRight = getByTestId('scroll-right');
@@ -49,7 +49,7 @@ describe('CardsContainer tests', () => {
         title="Crosswords"
         seeAllLink="https://newskit.co.uk/components"
         isScrollable={true}
-      />
+      />,
     );
     const scrollContainer = getByTestId('scroll-container');
     const btnScrollLeft = getByTestId('scroll-left');

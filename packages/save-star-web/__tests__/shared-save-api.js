@@ -21,13 +21,13 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>
+      </MockBookmarksProvider>,
     );
 
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        toggleSaved: expect.any(Function)
-      })
+        toggleSaved: expect.any(Function),
+      }),
     );
   });
 
@@ -37,13 +37,13 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>
+      </MockBookmarksProvider>,
     );
 
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        isLoading: true
-      })
+        isLoading: true,
+      }),
     );
   });
 
@@ -53,7 +53,7 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>
+      </MockBookmarksProvider>,
     );
 
     await delay(0);
@@ -61,14 +61,14 @@ export default () => {
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
         isLoading: false,
-        savedStatus: false
-      })
+        savedStatus: false,
+      }),
     );
   });
 
   it("updates loading state when toggling saved state while currently unsaved", async () => {
     let toggleSaved;
-    const children = jest.fn(mockData => {
+    const children = jest.fn((mockData) => {
       ({ toggleSaved } = mockData);
       return null;
     });
@@ -76,7 +76,7 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>
+      </MockBookmarksProvider>,
     );
 
     await delay(0);
@@ -86,8 +86,8 @@ export default () => {
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
         savedStatus: false,
-        isLoading: true
-      })
+        isLoading: true,
+      }),
     );
 
     await promise;
@@ -95,7 +95,7 @@ export default () => {
 
   it("updates saved state when toggling saved state while currently unsaved finishes loading", async () => {
     let toggleSaved;
-    const children = jest.fn(mockData => {
+    const children = jest.fn((mockData) => {
       ({ toggleSaved } = mockData);
       return null;
     });
@@ -103,7 +103,7 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>
+      </MockBookmarksProvider>,
     );
 
     await delay(0);
@@ -112,14 +112,14 @@ export default () => {
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
         savedStatus: true,
-        isLoading: false
-      })
+        isLoading: false,
+      }),
     );
   });
 
   it("updates loading state when toggling saved state while currently saved", async () => {
     let toggleSaved;
-    const children = jest.fn(mockData => {
+    const children = jest.fn((mockData) => {
       ({ toggleSaved } = mockData);
       return null;
     });
@@ -127,7 +127,7 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>
+      </MockBookmarksProvider>,
     );
 
     await delay(0);
@@ -138,8 +138,8 @@ export default () => {
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
         savedStatus: true,
-        isLoading: true
-      })
+        isLoading: true,
+      }),
     );
 
     await promise;
@@ -147,7 +147,7 @@ export default () => {
 
   it("updates saved state when toggling saved state while currently saved finishes loading", async () => {
     let toggleSaved;
-    const children = jest.fn(mockData => {
+    const children = jest.fn((mockData) => {
       ({ toggleSaved } = mockData);
       return null;
     });
@@ -155,7 +155,7 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>
+      </MockBookmarksProvider>,
     );
 
     await delay(0);
@@ -165,8 +165,8 @@ export default () => {
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
         savedStatus: false,
-        isLoading: false
-      })
+        isLoading: false,
+      }),
     );
   });
 };

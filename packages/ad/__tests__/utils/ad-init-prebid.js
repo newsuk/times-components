@@ -11,24 +11,24 @@ export default () => {
 
   it("perform bidding request for web", () => {
     const init = adInit(
-      merge(initOptions, { data: { bidInitialiser: false } })
+      merge(initOptions, { data: { bidInitialiser: false } }),
     );
     jest.spyOn(init.prebid, "process");
     init.init();
     expect(init.prebid.process).toHaveBeenCalledTimes(1);
   });
 
-  it("requestPrebidBids fetches bids using pbjs", done => {
+  it("requestPrebidBids fetches bids using pbjs", (done) => {
     const init = adInit(initOptions);
     mock.window.pbjs.addAdUnits = jest.fn();
     mock.window.pbjs.requestBids = jest
       .fn()
-      .mockImplementation(options => options.bidsBackHandler([]));
+      .mockImplementation((options) => options.bidsBackHandler([]));
     mock.window.pbjs.removeAdUnit = jest.fn();
     init.prebid
       .bid({ slots: [{ code: "A" }] })
       .then(() => done())
-      .catch(error => done(error));
+      .catch((error) => done(error));
 
     mock.processPrebidCommandQueue();
 

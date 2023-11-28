@@ -14,7 +14,7 @@ export const templates = {
   magazinecomment: ArticleMagazineComment,
   magazinestandard: ArticleMagazineStandard,
   maincomment: ArticleMainComment,
-  mainstandard: ArticleMainStandard
+  mainstandard: ArticleMainStandard,
 };
 
 export class TakeoverBailout extends Error {
@@ -24,7 +24,7 @@ export class TakeoverBailout extends Error {
   }
 }
 
-const Article = props => {
+const Article = (props) => {
   const { article, onImagePress } = props;
   const { leadAsset, template } = article || {};
   let { content } = article || {};
@@ -35,15 +35,15 @@ const Article = props => {
   if (onImagePress) {
     content = addIndexesToInlineImages(content, leadAsset);
     const mediaList = getMediaList(content, leadAsset);
-    onImagePressArticle = index => onImagePress(index, mediaList);
+    onImagePressArticle = (index) => onImagePress(index, mediaList);
   }
   const Component = templates[template] || ArticleMainStandard;
   const newProps = {
     ...props,
     article: {
       ...article,
-      template: article && article.template ? article.template : "mainstandard"
-    }
+      template: article && article.template ? article.template : "mainstandard",
+    },
   };
 
   return (

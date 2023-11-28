@@ -13,7 +13,7 @@ const newTabStyles = {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  padding: "0 10px"
+  padding: "0 10px",
 };
 
 function NewTab() {

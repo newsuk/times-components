@@ -16,13 +16,13 @@ export default () => [
           delay={1}
           message="test message"
           scale={scales.medium}
-        />
+        />,
       );
 
       await delay(500);
 
       expect(testInstance.toJSON()).toMatchSnapshot();
-    }
+    },
   },
   {
     name: "closes when clicking the close button",
@@ -34,13 +34,13 @@ export default () => [
           delay={10000}
           message="test message"
           scale={scales.medium}
-        />
+        />,
       );
       const button = testInstance.find(CloseButton);
       button.simulate("click");
       await delay(300);
       expect(closed.mock.calls.length).toEqual(1);
-    }
+    },
   },
   {
     name: "extends the timeout when updated with the same message",
@@ -51,19 +51,19 @@ export default () => [
           delay={100}
           message="test message"
           scale={scales.medium}
-        />
+        />,
       );
 
       const prevTimeout = testInstance.instance().timeout;
 
       testInstance.setProps({
-        message: "test message"
+        message: "test message",
       });
 
       const newTimeout = testInstance.instance().timeout;
 
       expect(prevTimeout).not.toEqual(newTimeout);
-    }
+    },
   },
   {
     name: "doesn't extend the timeout if its a new message",
@@ -74,16 +74,16 @@ export default () => [
           delay={100}
           message="test message"
           scale={scales.medium}
-        />
+        />,
       );
 
       const prevTimeout = testInstance.instance().timeout;
       testInstance.setProps({
-        message: "new test message"
+        message: "new test message",
       });
 
       const newTimeout = testInstance.instance().timeout;
       expect(prevTimeout).toEqual(newTimeout);
-    }
-  }
+    },
+  },
 ];

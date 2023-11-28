@@ -10,8 +10,9 @@ import "../mocks";
 import { PROGRESS_ATTR_NAME } from "@times-components/sticky";
 import StickySaveAndShareBar from "../../src/sticky-save-and-share-bar";
 
-jest.mock("@times-components/save-and-share-bar", () => () =>
-  "SaveAndShareBar"
+jest.mock(
+  "@times-components/save-and-share-bar",
+  () => () => "SaveAndShareBar",
 );
 
 describe("StickySaveAndShareBar ssr", () => {

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export const propTypes = {
   captionOptions: PropTypes.shape({
     caption: PropTypes.string,
-    credits: PropTypes.string
+    credits: PropTypes.string,
   }),
   imageOptions: PropTypes.shape({
     display: PropTypes.oneOf(["primary", "secondary", "inline", "fullwidth"]),
@@ -11,15 +11,15 @@ export const propTypes = {
     lowResQuality: PropTypes.number,
     lowResSize: PropTypes.number,
     ratio: PropTypes.string,
-    uri: PropTypes.string.isRequired
+    uri: PropTypes.string.isRequired,
   }).isRequired,
-  onImagePress: PropTypes.func
+  onImagePress: PropTypes.func,
 };
 
 export const defaultPropTypes = {
   captionOptions: {
     caption: null,
-    credits: null
+    credits: null,
   },
-  onImagePress: null
+  onImagePress: null,
 };

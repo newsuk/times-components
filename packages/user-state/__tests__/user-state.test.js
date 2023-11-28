@@ -5,12 +5,15 @@ import {
   compose,
   flattenStyleTransform,
   minimaliseTransform,
-  print
+  print,
 } from "@times-components/jest-serializer";
 import UserState from "../src/user-state";
 
-jest.mock("../src/client-user-state-consumer", () => ({ children }) =>
-  children({ user: global.mockUserState })
+jest.mock(
+  "../src/client-user-state-consumer",
+  () =>
+    ({ children }) =>
+      children({ user: global.mockUserState }),
 );
 
 addSerializers(
@@ -18,8 +21,8 @@ addSerializers(
   compose(
     print,
     minimaliseTransform((value, key) => key !== "style"),
-    flattenStyleTransform
-  )
+    flattenStyleTransform,
+  ),
 );
 
 describe("UserState", () => {
@@ -31,7 +34,7 @@ describe("UserState", () => {
     const testRenderer = TestRenderer.create(
       <UserState state={() => true}>
         <div>should render children</div>
-      </UserState>
+      </UserState>,
     );
 
     expect(testRenderer).toMatchSnapshot();
@@ -41,7 +44,7 @@ describe("UserState", () => {
     const testRenderer = TestRenderer.create(
       <UserState state={() => false}>
         <div>should not render children</div>
-      </UserState>
+      </UserState>,
     );
 
     expect(testRenderer).toMatchSnapshot();
@@ -54,7 +57,7 @@ describe("UserState", () => {
         fallback={<div>should render fallback</div>}
       >
         <div>should not render children</div>
-      </UserState>
+      </UserState>,
     );
 
     expect(testRenderer).toMatchSnapshot();
@@ -67,7 +70,7 @@ describe("UserState", () => {
         fallback={<div>should not render fallback</div>}
       >
         <div>should render children</div>
-      </UserState>
+      </UserState>,
     );
 
     expect(testRenderer).toMatchSnapshot();
@@ -80,7 +83,7 @@ describe("UserState", () => {
     TestRenderer.create(
       <UserState state={matcher}>
         <div />
-      </UserState>
+      </UserState>,
     );
 
     expect(matcher).toHaveBeenCalledWith(global.mockUserState);

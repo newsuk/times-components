@@ -8,7 +8,7 @@ import { ClickHandlerType, StackArticleOptions } from '../types';
 
 export const ArticleStackLarge = ({
   articles,
-  clickHandler
+  clickHandler,
 }: {
   articles: ArticleProps[];
   clickHandler: ClickHandlerType;
@@ -20,7 +20,7 @@ export const ArticleStackLarge = ({
         xs: '170px 1px 170px 1px 170px 1px 170px 1px 170px',
         md: '1fr 1px 1fr 1px 1fr',
         lg: '1fr',
-        xl: '1fr'
+        xl: '1fr',
       }}
       style={{ position: 'relative' }}
       columnGap={{ xs: 'space040', xl: 'space060' }}
@@ -36,7 +36,7 @@ export const ArticleStackLarge = ({
                 article={{
                   ...clearCreditsAndCaption(article),
                   imageRight: true,
-                  hasTopBorder: articleIndex > 0
+                  hasTopBorder: articleIndex > 0,
                 }}
                 clickHandler={clickHandler}
               />
@@ -45,7 +45,7 @@ export const ArticleStackLarge = ({
               <Article
                 article={{
                   ...clearCreditsAndCaption(article),
-                  hasTopBorder: articleIndex > 0
+                  hasTopBorder: articleIndex > 0,
                 }}
                 clickHandler={clickHandler}
                 className={`composed-article-card-${articleIndex}`}
@@ -82,7 +82,7 @@ export const ArticleStackLarge = ({
 export const ArticleStackSmall = ({
   articles,
   clickHandler,
-  articleOptions
+  articleOptions,
 }: {
   articles: ArticleProps[];
   clickHandler: ClickHandlerType;
@@ -104,7 +104,7 @@ export const ArticleStackSmall = ({
               <Article
                 article={{
                   ...clearCreditsAndCaption(article),
-                  ...articleOptions
+                  ...articleOptions,
                 }}
                 clickHandler={clickHandler}
               />
@@ -113,7 +113,7 @@ export const ArticleStackSmall = ({
               <Visible md lg xl>
                 <Divider
                   overrides={{
-                    stylePreset: 'lightDivider'
+                    stylePreset: 'lightDivider',
                   }}
                   vertical
                 />
@@ -128,7 +128,7 @@ export const ArticleStackSmall = ({
 export const ArticleStackLeadStory = ({
   modifiedArticles,
   clickHandler,
-  articleOptions
+  articleOptions,
 }: {
   modifiedArticles: ArticleProps[];
   clickHandler: ClickHandlerType;
@@ -139,11 +139,11 @@ export const ArticleStackLeadStory = ({
       $width={{
         md: '720px',
         lg: '185px',
-        xl: '402px'
+        xl: '402px',
       }}
       marginBlockStart={{
         xs: 'space040',
-        lg: 'space000'
+        lg: 'space000',
       }}
     >
       <ComposedArticleStack

@@ -2,7 +2,7 @@ import { MockArticle, MockUser } from "@times-components/fixture-generator";
 import {
   checkDropCapChanges,
   checkShareBarLoaded,
-  waitUntilSelectorExists
+  waitUntilSelectorExists,
 } from "../cypress/support";
 
 const relatedArticleCount = 3;
@@ -34,21 +34,19 @@ const articleTemplateTest = (template, options = {}) => {
       cy
         .task("startMockServerWith", {
           Article: sundayTimesArticleWithThreeRelatedArticles,
-          User: userWithBookmarks
+          User: userWithBookmarks,
         })
         .visit(pageUrl)
         .get("#related-articles")
         .scrollIntoView()
         .then(() => {
           cy.get("#related-articles > div:first-child img:first-child").as(
-            "raImages"
+            "raImages",
           );
 
-          cy.get("@raImages")
-            .its("length")
-            .should("eq", relatedArticleCount);
+          cy.get("@raImages").its("length").should("eq", relatedArticleCount);
 
-          cy.get("@raImages").each(item => {
+          cy.get("@raImages").each((item) => {
             const url = new URL(item.attr("src"));
             const initialResize = "100";
             expect(url.searchParams.get("resize")).to.not.equal(initialResize);
@@ -58,7 +56,7 @@ const articleTemplateTest = (template, options = {}) => {
     it("loads all the required article ads", () => {
       cy.task("startMockServerWith", {
         Article: sundayTimesArticleWithThreeRelatedArticles,
-        User: userWithBookmarks
+        User: userWithBookmarks,
       })
         .visit(pageUrl)
         .wait(2000);
@@ -82,7 +80,7 @@ const articleTemplateTest = (template, options = {}) => {
 
       cy.task("startMockServerWith", {
         Article: articleWithCommentsEnabled,
-        User: userWithBookmarks
+        User: userWithBookmarks,
       }).visit(pageUrl);
 
       cy.get("script[data-spotim-module]")
@@ -91,7 +89,7 @@ const articleTemplateTest = (template, options = {}) => {
         .should(
           "have.attr",
           "data-post-url",
-          `https://www.thetimes.co.uk/article/${articleWithCommentsEnabled.id}`
+          `https://www.thetimes.co.uk/article/${articleWithCommentsEnabled.id}`,
         );
     });
 
@@ -103,7 +101,7 @@ const articleTemplateTest = (template, options = {}) => {
 
       cy.task("startMockServerWith", {
         Article: articleWithCommentsDisabled,
-        User: userWithBookmarks
+        User: userWithBookmarks,
       }).visit(pageUrl);
 
       cy.get("script[data-spotim-module]").should("not.exist");
@@ -115,7 +113,7 @@ const articleTemplateTest = (template, options = {}) => {
         blackoutElements = [],
         attachFlags = false,
         skipDropCapCheck = false,
-        skipSnapshotTest = false
+        skipSnapshotTest = false,
       } = options;
       if (skipSnapshotTest) return; // we need to add docker to execute the snapshot testing as viewport is
       // is mismatching while running the test cases on local server. Here is the link to the ticket
@@ -125,12 +123,12 @@ const articleTemplateTest = (template, options = {}) => {
           ...sundayTimesArticleWithThreeRelatedArticles,
           dropcapsDisabled: false,
           sharingEnabled: true,
-          savingEnabled: true
+          savingEnabled: true,
         }) ||
         sundayTimesArticleWithThreeRelatedArticles;
       cy.task("startMockServerWith", {
         Article: articleProps,
-        User: userWithBookmarks
+        User: userWithBookmarks,
       })
         .visit(pageUrl)
         .then(() => {
@@ -143,11 +141,11 @@ const articleTemplateTest = (template, options = {}) => {
 
           // changed the position of navigation bar element to absolute, so we don't see
           // duplicate elements floating
-          stickyElements.forEach(selector => {
-            cy.get(selector).then(el => el.css("position", "absolute"));
+          stickyElements.forEach((selector) => {
+            cy.get(selector).then((el) => el.css("position", "absolute"));
           });
           cy.get("body").matchImageSnapshot({
-            blackout: blackoutElements
+            blackout: blackoutElements,
           });
         });
     });
@@ -155,7 +153,7 @@ const articleTemplateTest = (template, options = {}) => {
     it("should pass basic a11y test", () => {
       cy.task("startMockServerWith", {
         Article: sundayTimesArticleWithThreeRelatedArticles,
-        User: userWithBookmarks
+        User: userWithBookmarks,
       })
         .visit(pageUrl)
         .wait(1000)
@@ -165,17 +163,17 @@ const articleTemplateTest = (template, options = {}) => {
           rules: [
             {
               id: "color-contrast",
-              enabled: false
+              enabled: false,
             },
             {
               id: "frame-title-unique",
-              enabled: false
+              enabled: false,
             },
             {
               id: "region",
-              enabled: false
-            }
-          ]
+              enabled: false,
+            },
+          ],
         })
         .checkA11y();
     });

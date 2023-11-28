@@ -6,7 +6,7 @@ interface CustomBlockLayoutProps {
 }
 
 export const CustomBlockLayout: React.FC<CustomBlockLayoutProps> = ({
-  children
+  children,
 }) => {
   return (
     <BlockItem
@@ -14,7 +14,7 @@ export const CustomBlockLayout: React.FC<CustomBlockLayoutProps> = ({
         xs: '100%',
         md: '720px',
         lg: '976px',
-        xl: '1276px'
+        xl: '1276px',
       }}
       marginBlockEnd="space060"
     >

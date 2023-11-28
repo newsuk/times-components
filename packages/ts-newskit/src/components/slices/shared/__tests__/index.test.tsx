@@ -10,7 +10,7 @@ describe('TagAndFlag', () => {
         flag="flag"
         tag={{ label: 'Tag', href: '/' }}
         marginBlockStart="space000"
-      />
+      />,
     );
     const tagAndFlag = screen.getByTestId('tag-and-flag');
     expect(tagAndFlag.style.marginTop).toBe('');
@@ -21,7 +21,7 @@ describe('TagAndFlag', () => {
         flag="flag"
         tag={{ label: 'Tag', href: '/' }}
         marginBlockStart="16px"
-      />
+      />,
     );
     expect(asFragment()).toMatchSnapshot();
   });
@@ -31,7 +31,7 @@ describe('TagAndFlag', () => {
         flag="flag"
         tag={{ label: 'Tag', href: '/' }}
         marginBlockStart=""
-      />
+      />,
     );
     const tagAndFlag = screen.getByTestId('tag-and-flag');
     expect(tagAndFlag.style.marginTop).toBe('');

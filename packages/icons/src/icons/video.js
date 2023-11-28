@@ -11,7 +11,7 @@ const IconVideo = ({
   height,
   strokeColour,
   title = "Video Icon",
-  width
+  width,
 }) => (
   <svg
     aria-label="icon-video"
@@ -20,14 +20,14 @@ const IconVideo = ({
     {...clean({
       height,
       title,
-      width: width || height * ratio
+      width: width || height * ratio,
     })}
   >
     <title>{title}</title>
     <rect
       {...clean({
         fill: fillColour,
-        stroke: strokeColour
+        stroke: strokeColour,
       })}
       height="40"
       width="50"
@@ -37,7 +37,7 @@ const IconVideo = ({
     <polygon
       {...clean({
         fill: fillColour,
-        stroke: strokeColour
+        stroke: strokeColour,
       })}
       points="52 12 68 2 68 38 52 28"
     />
@@ -47,7 +47,7 @@ const IconVideo = ({
 IconVideo.propTypes = propTypes;
 
 IconVideo.defaultProps = {
-  fillColour: colours.functional.brandColour
+  fillColour: colours.functional.brandColour,
 };
 
 export default IconVideo;

@@ -12,7 +12,7 @@ const clickHandler = jest.fn();
 describe('Render Comment Bucket 1 Slice', () => {
   test('Slice matches snapshot', () => {
     const { asFragment } = renderComponent(
-      <CommentBucket1 data={data} clickHandler={clickHandler} />
+      <CommentBucket1 data={data} clickHandler={clickHandler} />,
     );
     expect(asFragment()).toMatchSnapshot();
   });

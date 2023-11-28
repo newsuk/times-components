@@ -5,7 +5,7 @@ import {
   styled,
   Stack,
   Block,
-  Scroll
+  Scroll,
 } from 'newskit';
 import { CustomStackLayout } from '../shared';
 
@@ -53,7 +53,7 @@ export const LeadStoryDivider = styled(Divider)<{ position: string }>`
   ${({ position }) =>
     getSpacingCssFromTheme(
       position === 'left' ? setDividerPositionLeft : setDividerPositionRight,
-      'space040'
+      'space040',
     )};
 
   ${getMediaQueryFromTheme('xs', 'lg')} {

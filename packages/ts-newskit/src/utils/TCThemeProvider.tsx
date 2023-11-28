@@ -10,5 +10,5 @@ export const TimesWebThemes = themes;
 
 export const TCThemeProvider: React.FC<TCThemeProviderProps> = ({
   theme = themes.TimesWebLightTheme,
-  children
+  children,
 }) => <NewsKitProvider theme={theme}>{children}</NewsKitProvider>;

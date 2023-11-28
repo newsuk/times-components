@@ -1,35 +1,36 @@
 import { makeExecutableSchema, addMockFunctionsToSchema } from "graphql-tools";
 import { printSchema, buildClientSchema } from "graphql/utilities";
 
-export default ({ data: { __schema } }) => ({
-  types: defaultTypes,
-  values: defaultValues,
-  mutationValues: defaultMutationValues
-} = {}) => {
-  const schemaSDL = printSchema(buildClientSchema({ __schema }));
+export default ({ data: { __schema } }) =>
+  ({
+    types: defaultTypes,
+    values: defaultValues,
+    mutationValues: defaultMutationValues,
+  } = {}) => {
+    const schemaSDL = printSchema(buildClientSchema({ __schema }));
 
-  const schema = makeExecutableSchema({
-    resolvers: {
-      Query: {
-        ...defaultValues
+    const schema = makeExecutableSchema({
+      resolvers: {
+        Query: {
+          ...defaultValues,
+        },
+        Mutation: {
+          ...defaultMutationValues,
+        },
       },
-      Mutation: {
-        ...defaultMutationValues
-      }
-    },
-    resolverValidationOptions: {
-      requireResolversForResolveType: false
-    },
-    typeDefs: schemaSDL
-  });
+      resolverValidationOptions: {
+        requireResolversForResolveType: false,
+      },
+      typeDefs: schemaSDL,
+    });
 
-  addMockFunctionsToSchema({
-    mocks: {
-      ...defaultTypes
-    },
-    preserveResolvers: true,
-    schema
-  });
+    addMockFunctionsToSchema({
+      mocks: {
+        ...defaultTypes,
+      },
+      preserveResolvers: true,
+      schema,
+    });
 
-  return schema;
-};
+    return schema;
+  };

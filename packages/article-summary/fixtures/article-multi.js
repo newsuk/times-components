@@ -13,7 +13,7 @@ export default ({
   byline = defaultByline,
   headline = defaultHeadline,
   paragraph1 = defaultParagraph1,
-  paragraph2 = defaultParagraph2
+  paragraph2 = defaultParagraph2,
 } = {}) => ({
   bylineProps: {
     ast: [
@@ -24,17 +24,17 @@ export default ({
             children: [
               {
                 attributes: {
-                  value: byline
+                  value: byline,
                 },
                 children: [],
-                name: "text"
-              }
+                name: "text",
+              },
             ],
-            name: "inline"
-          }
-        ]
-      }
-    ]
+            name: "inline",
+          },
+        ],
+      },
+    ],
   },
   content: (
     <ArticleSummaryContent
@@ -44,33 +44,33 @@ export default ({
           children: [
             {
               attributes: {
-                value: paragraph1
+                value: paragraph1,
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "paragraph"
+          name: "paragraph",
         },
         {
           attributes: {},
           children: [
             {
               attributes: {
-                value: paragraph2
+                value: paragraph2,
               },
               children: [],
-              name: "text"
-            }
+              name: "text",
+            },
           ],
-          name: "paragraph"
-        }
+          name: "paragraph",
+        },
       ]}
     />
   ),
   datePublicationProps: {
     date: "2017-11-17T00:01:00.000Z",
-    publication: "TIMES"
+    publication: "TIMES",
   },
-  headline: <ArticleSummaryHeadline headline={headline} />
+  headline: <ArticleSummaryHeadline headline={headline} />,
 });

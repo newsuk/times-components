@@ -14,7 +14,7 @@ export const FinalScreen = ({
   message,
   hints,
   ans,
-  status
+  status,
 }: FinalScreenProps) => {
   const insertBoldTag = (text: string) => {
     return { __html: text };

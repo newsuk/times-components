@@ -14,14 +14,14 @@ const ArticleTopic = ({ fontSize, lineHeight, name, onPress, slug }) => {
   const textStyles = {
     ...styles.text,
     fontSizeStyle,
-    ...lineHeightStyle
+    ...lineHeightStyle,
   };
   return (
     <Context.Consumer>
       {({ makeTopicUrl }) => (
         <TcView style={styles.spacer}>
           <Link
-            onPress={e => onPress(e, { name, slug })}
+            onPress={(e) => onPress(e, { name, slug })}
             url={makeTopicUrl({ slug })}
           >
             <TcView style={styles.container}>
@@ -50,9 +50,9 @@ export default withTrackEvents(ArticleTopic, {
       eventName: "onPress",
       getAttrs: ({ name, slug }) => ({
         name,
-        slug
+        slug,
       }),
-      trackingName: "TopicLink"
-    }
-  ]
+      trackingName: "TopicLink",
+    },
+  ],
 });

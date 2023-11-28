@@ -8,13 +8,13 @@ import {
   Block,
   Divider,
   TextBlock,
-  UnorderedList
+  UnorderedList,
 } from 'newskit';
 import {
   NewsKitHeroBannerKillerSudoku,
   NewsKitHeroBannerQuintagram,
   NewsKitHeroBannerSuko,
-  NewsKitHeroBannerWordPuzzle
+  NewsKitHeroBannerWordPuzzle,
 } from '../../../assets';
 
 export const SyledUnorderedList = styled(UnorderedList)`
@@ -132,7 +132,7 @@ export const StyledIconWrapper = styled(Block)`
 `;
 
 export const StyledHeroBannerKillerSudoku = styled(
-  NewsKitHeroBannerKillerSudoku
+  NewsKitHeroBannerKillerSudoku,
 )`
   position: absolute;
   ${getMediaQueryFromTheme('lg')} {

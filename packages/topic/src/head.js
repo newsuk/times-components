@@ -16,7 +16,7 @@ function Head({
   slug,
   page,
   articleCount,
-  pageSize
+  pageSize,
 }) {
   const totalPages =
     articleCount && pageSize ? Math.ceil(articleCount / pageSize) : 0;
@@ -63,16 +63,16 @@ Head.propTypes = {
   slug: PropTypes.string.isRequired,
   page: PropTypes.number,
   articleCount: PropTypes.number,
-  pageSize: PropTypes.number
+  pageSize: PropTypes.number,
 };
 
 Head.defaultProps = {
   ...defaultProps,
-  articleCount: defaultProps.page * defaultProps.pageSize
+  articleCount: defaultProps.page * defaultProps.pageSize,
 };
 
 Head.defaultProps = {
-  metaDescription: null
+  metaDescription: null,
 };
 
 export default Head;

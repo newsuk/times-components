@@ -8,7 +8,7 @@ import {
   articleStackOne,
   articleStackTwo,
   articleStackThree,
-  articleStackFour
+  articleStackFour,
 } from '../../fixtures/data.json';
 
 const mockClickHandler = jest.fn();
@@ -20,27 +20,27 @@ const renderSliceComponent = (breakpoint: BreakpointKeys) =>
       articleStackOne={{
         ...articleStackOne,
         clickHandler: mockClickHandler,
-        sliceHeaderClickHandler: mockSliceHeaderClickHandler
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler,
       }}
       articleStackTwo={{
         ...articleStackTwo,
         clickHandler: mockClickHandler,
-        sliceHeaderClickHandler: mockSliceHeaderClickHandler
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler,
       }}
       articleStackThree={{
         ...articleStackThree,
         clickHandler: mockClickHandler,
-        sliceHeaderClickHandler: mockSliceHeaderClickHandler
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler,
       }}
       articleStackFour={{
         ...articleStackFour,
         clickHandler: mockClickHandler,
-        sliceHeaderClickHandler: mockSliceHeaderClickHandler
+        sliceHeaderClickHandler: mockSliceHeaderClickHandler,
       }}
       clickHandler={mockClickHandler}
       sliceHeaderClickHandler={mockSliceHeaderClickHandler}
     />,
-    breakpoint
+    breakpoint,
   );
 
 describe('Render SectionBucket Slice', () => {
@@ -63,7 +63,7 @@ describe('Render SectionBucket Slice', () => {
   test('calls the click event when the slice header button is clicked', () => {
     const { getAllByRole } = renderSliceComponent('xl');
     const links = getAllByRole('link');
-    links.map(link => fireEvent.click(link));
+    links.map((link) => fireEvent.click(link));
     expect(mockSliceHeaderClickHandler).toHaveBeenCalledTimes(4);
     expect(mockSliceHeaderClickHandler).toHaveBeenCalledWith('Title bar');
   });
@@ -71,7 +71,7 @@ describe('Render SectionBucket Slice', () => {
   test('renders correct number of articles in each blocks', () => {
     const { getAllByTestId } = renderSliceComponent('xl');
     const articleStackBlocks = getAllByTestId('article-block');
-    articleStackBlocks.forEach(block => {
+    articleStackBlocks.forEach((block) => {
       const articles = block.querySelectorAll('.css-1nw1nne');
       expect(articles.length).toBe(3);
     });
