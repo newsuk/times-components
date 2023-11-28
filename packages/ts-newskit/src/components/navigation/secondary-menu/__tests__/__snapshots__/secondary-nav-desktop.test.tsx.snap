@@ -227,6 +227,42 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
         class="css-aqz7qs"
         data-testid="divider"
       />
+      <nav
+        aria-label="Secondary Navigation"
+        class="css-1hyt1wq"
+        data-testid="menu-container"
+        role="navigation"
+      >
+        <ul
+          role="list"
+        >
+          <div
+            class="css-ov1ktg"
+          >
+            <li
+              class="nk-menu-item css-1i1v9fb"
+            >
+              <a
+                aria-current="false"
+                class="css-ltup8m"
+                data-testid="buttonLink"
+                href="/money"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Money
+                </span>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <hr
+        aria-hidden="true"
+        class="css-aqz7qs"
+        data-testid="divider"
+      />
     </div>
   </div>
 </DocumentFragment>

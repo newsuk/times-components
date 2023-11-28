@@ -1,13 +1,13 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Menu } from 'newskit';
 import { Navigator } from './navigator';
-import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
+import { SecondaryMenuOptions, SecondaryMenuData } from '../types';
 import { NavItems } from './navItems';
 import { NavItemsMobileContainer } from '../styles';
 
 export const SecondaryNavMobile: React.FC<{
   options: SecondaryMenuOptions;
-  data: SecondaryMenuItem[];
+  data: SecondaryMenuData;
   title: string;
   onClick?: (isExpanded: boolean) => void;
   height?: string;
@@ -50,7 +50,11 @@ export const SecondaryNavMobile: React.FC<{
       />
       {isExpanded ? (
         <NavItemsMobileContainer $height={navHeight} ref={navRef}>
-          <NavItems data={data} options={options} clickHandler={clickHandler} />
+          <NavItems
+            data={data.L2NavItems}
+            options={options}
+            clickHandler={clickHandler}
+          />
         </NavItemsMobileContainer>
       ) : null}
     </Menu>

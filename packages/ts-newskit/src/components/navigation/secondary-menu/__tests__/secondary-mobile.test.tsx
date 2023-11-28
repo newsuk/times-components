@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
-import { mainMenuItems } from '../fixtures/menu-items.json';
+import { mainMenuItems } from '../fixtures/new-menu-items.json';
 import { SecondaryNavMobile } from '../mobile';
 import { cleanup, fireEvent } from '@testing-library/react';
 import { ThemeProvider } from 'newskit';

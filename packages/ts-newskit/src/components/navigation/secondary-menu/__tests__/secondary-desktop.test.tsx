@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
-import { mainMenuItems } from '../fixtures/menu-items.json';
+import { mainMenuItems } from '../fixtures/new-menu-items.json';
 import { SecondaryNavDesktop } from '../desktop';
 import { cleanup, fireEvent } from '@testing-library/react';
 
@@ -73,17 +73,17 @@ describe('Secondary Menu Desktop', () => {
       />
     );
     const list = getAllByRole('listitem');
-    expect(list.length).toEqual(9);
+    expect(list.length).toEqual(10);
   });
   it('should change the width of menudivader when screen size change', () => {
-    const { getByTestId } = render(
+    const { getAllByTestId } = render(
       <SecondaryNavDesktop
         data={mainMenuItems}
         options={options}
         clickHandler={mockClickHandler}
       />
     );
-    const hr = getByTestId('divider');
-    expect(hr).toHaveStyle('width: 100%');
+    const hr = getAllByTestId('divider');
+    expect(hr[0]).toHaveStyle('width: 100%');
   });
 });
