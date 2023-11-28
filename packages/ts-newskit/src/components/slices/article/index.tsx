@@ -87,6 +87,11 @@ export const Article = ({
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
 
+  const hasCaption = !!(images && images.caption);
+  const hasCredits = !!(images && images.credits);
+
+  const hasCaptionOrCredits = hasCaption || hasCredits;
+
   const hasArticleTileInfo =
     (expirableFlags &&
       getActiveArticleFlags(expirableFlags) &&
@@ -171,7 +176,7 @@ export const Article = ({
             area="media"
             aria-label="article-lead-image"
             className="article-image"
-            marginBlockEnd="space020"
+            marginBlockEnd={hasCaptionOrCredits ? 'space000' : 'space020'}
           >
             {image}
           </FullWidthGridLayoutItem>
