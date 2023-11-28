@@ -21,13 +21,13 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>,
+      </MockBookmarksProvider>
     );
 
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        toggleSaved: expect.any(Function),
-      }),
+        toggleSaved: expect.any(Function)
+      })
     );
   });
 
@@ -37,13 +37,13 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>,
+      </MockBookmarksProvider>
     );
 
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
-        isLoading: true,
-      }),
+        isLoading: true
+      })
     );
   });
 
@@ -53,7 +53,7 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>,
+      </MockBookmarksProvider>
     );
 
     await delay(0);
@@ -61,8 +61,8 @@ export default () => {
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
         isLoading: false,
-        savedStatus: false,
-      }),
+        savedStatus: false
+      })
     );
   });
 
@@ -76,7 +76,7 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>,
+      </MockBookmarksProvider>
     );
 
     await delay(0);
@@ -86,8 +86,8 @@ export default () => {
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
         savedStatus: false,
-        isLoading: true,
-      }),
+        isLoading: true
+      })
     );
 
     await promise;
@@ -103,7 +103,7 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>,
+      </MockBookmarksProvider>
     );
 
     await delay(0);
@@ -112,8 +112,8 @@ export default () => {
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
         savedStatus: true,
-        isLoading: false,
-      }),
+        isLoading: false
+      })
     );
   });
 
@@ -127,7 +127,7 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>,
+      </MockBookmarksProvider>
     );
 
     await delay(0);
@@ -138,8 +138,8 @@ export default () => {
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
         savedStatus: true,
-        isLoading: true,
-      }),
+        isLoading: true
+      })
     );
 
     await promise;
@@ -155,7 +155,7 @@ export default () => {
     TestRenderer.create(
       <MockBookmarksProvider articleId={articleId}>
         <SaveAPI articleId={articleId}>{children}</SaveAPI>
-      </MockBookmarksProvider>,
+      </MockBookmarksProvider>
     );
 
     await delay(0);
@@ -165,8 +165,8 @@ export default () => {
     expect(children).toHaveBeenLastCalledWith(
       expect.objectContaining({
         savedStatus: false,
-        isLoading: false,
-      }),
+        isLoading: false
+      })
     );
   });
 };

@@ -14,13 +14,13 @@ export default (withPageState, renderComponent) => {
         const PageChanger = withPageState(Component);
 
         const props = {
-          page: 1,
+          page: 1
         };
 
         const output = renderComponent(<PageChanger {...props} />);
 
         expect(output).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "inner component with new props",
@@ -32,7 +32,7 @@ export default (withPageState, renderComponent) => {
 
         const props = {
           foo: "not bar",
-          page: 1,
+          page: 1
         };
 
         const wrapper = shallow(<PageChanger {...props} />);
@@ -42,7 +42,7 @@ export default (withPageState, renderComponent) => {
 
         expect(wrapper.state().foo).toEqual("bar");
         expect(wrapper.state().page).toEqual(1);
-      },
+      }
     },
     {
       name: "inner component with prev page",
@@ -53,7 +53,7 @@ export default (withPageState, renderComponent) => {
         const PageChanger = withPageState(Component);
 
         const props = {
-          page: 2,
+          page: 2
         };
 
         const wrapper = shallow(<PageChanger {...props} />);
@@ -61,7 +61,7 @@ export default (withPageState, renderComponent) => {
         wrapper.update();
 
         expect(wrapper.state().page).toEqual(1);
-      },
+      }
     },
     {
       name: "inner component with next page",
@@ -72,7 +72,7 @@ export default (withPageState, renderComponent) => {
         const PageChanger = withPageState(Component);
 
         const props = {
-          page: 2,
+          page: 2
         };
 
         const wrapper = shallow(<PageChanger {...props} />);
@@ -80,8 +80,8 @@ export default (withPageState, renderComponent) => {
         wrapper.update();
 
         expect(wrapper.state().page).toEqual(3);
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

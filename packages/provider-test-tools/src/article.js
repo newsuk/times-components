@@ -22,8 +22,8 @@ const getMediaUrl = (obj, ratio) => {
     url: crop
       ? crop.url
       : `https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_${convertRatio(
-          ratio,
-        )}.jpg`,
+          ratio
+        )}.jpg`
   };
 };
 
@@ -33,7 +33,7 @@ export default ({
   makeArticle = (x) => x,
   makeRelatedArticle = (x) => x,
   relatedArticleCount = 3,
-  variables = () => {},
+  variables = () => {}
 } = {}) => {
   const queryVariables = variables();
   let mediaIndex = -1;
@@ -46,7 +46,7 @@ export default ({
             if (!parent) {
               return makeArticle({
                 ...article,
-                id,
+                id
               });
             }
 
@@ -54,7 +54,7 @@ export default ({
           },
           ArticleSlice: () => ({
             __typename: "StandardSlice",
-            items: new MockList(relatedArticleCount),
+            items: new MockList(relatedArticleCount)
           }),
           Crop: (parent, { ratio }) => {
             if (parent.posterImage) {
@@ -82,17 +82,17 @@ export default ({
           Slug: () => "some-slug",
           StandardSlice: () => ({
             __typename: "StandardSlice",
-            items: [],
+            items: []
           }),
           Tile: () => ({}),
           URL: () => "https://test.io",
-          UUID: () => "a-u-u-i-d",
-        },
+          UUID: () => "a-u-u-i-d"
+        }
       },
       error: error(),
       query: articleQuery,
-      variables: queryVariables,
+      variables: queryVariables
     },
-    ...bookmarks({ id: queryVariables.id }, 1000),
+    ...bookmarks({ id: queryVariables.id }, 1000)
   ];
 };

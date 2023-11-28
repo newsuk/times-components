@@ -6,7 +6,7 @@ describe("TestLink tests", () => {
     const error = await new Promise((done) => {
       link.request({ operationName: "Test" }).subscribe(
         () => {},
-        (e) => done(e),
+        (e) => done(e)
       );
     });
 
@@ -14,18 +14,18 @@ describe("TestLink tests", () => {
 
     expect(link.getRequests()).toMatchObject([
       {
-        operation: { operationName: "Test" },
-      },
+        operation: { operationName: "Test" }
+      }
     ]);
 
     expect(link.getEvents()).toMatchObject([
       {
-        type: "request",
+        type: "request"
       },
       {
         error: new Error("network error"),
-        type: "error",
-      },
+        type: "error"
+      }
     ]);
   });
 });

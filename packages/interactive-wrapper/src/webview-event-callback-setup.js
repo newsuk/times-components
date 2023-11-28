@@ -10,8 +10,8 @@ const webviewEventCallbackSetup = (options) => {
       JSON.stringify({
         detail,
         isTngMessage: true,
-        type,
-      }),
+        type
+      })
     );
   };
   window.addEventListener("error", (ev) => {
@@ -20,7 +20,7 @@ const webviewEventCallbackSetup = (options) => {
       "error",
       `msg=${ev.message || ""}, file=${file}, line=${ev.lineno || ""}, col=${
         ev.colno || ""
-      }`,
+      }`
     );
   });
   // eslint-disable-next-line no-console
@@ -30,7 +30,7 @@ const webviewEventCallbackSetup = (options) => {
   const meta = window.document.createElement("meta");
   meta.setAttribute(
     "content",
-    "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0",
+    "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
   );
   meta.setAttribute("name", "viewport");
   window.document.getElementsByTagName("head")[0].appendChild(meta);

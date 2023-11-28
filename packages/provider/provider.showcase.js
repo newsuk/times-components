@@ -6,7 +6,7 @@ import {
   authorProfile as makeAuthorParams,
   MockedProvider,
   MockFixture,
-  topic as makeTopicParams,
+  topic as makeTopicParams
 } from "@times-components/provider-test-tools";
 import { authorArticlesWithImages as authorArticlesWithImagesQuery } from "@times-components/provider-queries";
 import connectGraphql, {
@@ -14,7 +14,7 @@ import connectGraphql, {
   AuthorProfileProvider,
   AuthorArticlesWithImagesProvider,
   TopicProvider,
-  TopicArticlesProvider,
+  TopicArticlesProvider
 } from "./src/provider.js";
 
 export default {
@@ -34,16 +34,16 @@ export default {
         const mocks = [
           {
             request: {
-              query,
+              query
             },
             result: {
               data: {
                 author: {
-                  name: "fiona-hamilton",
-                },
-              },
-            },
-          },
+                  name: "fiona-hamilton"
+                }
+              }
+            }
+          }
         ];
 
         return (
@@ -55,7 +55,7 @@ export default {
         );
       },
       name: "Props and fetched data",
-      type: "story",
+      type: "story"
     },
     {
       component: () => {
@@ -72,12 +72,12 @@ export default {
         const mocks = [
           {
             error: {
-              message: "some error from the server",
+              message: "some error from the server"
             },
             request: {
-              query,
-            },
-          },
+              query
+            }
+          }
         ];
 
         return (
@@ -89,7 +89,7 @@ export default {
         );
       },
       name: "Errors",
-      type: "story",
+      type: "story"
     },
     {
       component: () => {
@@ -105,10 +105,10 @@ export default {
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
-                slug,
+                slug
               }),
               pageSize,
-              slug,
+              slug
             })}
             render={(mocks) => (
               <MockedProvider mocks={mocks}>
@@ -126,7 +126,7 @@ export default {
         );
       },
       name: "Author Profile",
-      type: "story",
+      type: "story"
     },
     {
       component: () => {
@@ -136,8 +136,8 @@ export default {
           <MockFixture
             params={makeArticleParams({
               variables: () => ({
-                id,
-              }),
+                id
+              })
             })}
             render={(mocks) => (
               <MockedProvider mocks={mocks}>
@@ -150,7 +150,7 @@ export default {
         );
       },
       name: "Article",
-      type: "story",
+      type: "story"
     },
     {
       component: () => {
@@ -166,10 +166,10 @@ export default {
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
-                slug,
+                slug
               }),
               pageSize,
-              slug,
+              slug
             })}
             render={(mocks) => (
               <MockedProvider mocks={mocks}>
@@ -187,7 +187,7 @@ export default {
         );
       },
       name: "Author Profile Articles with Images",
-      type: "story",
+      type: "story"
     },
     {
       component: () => {
@@ -203,11 +203,11 @@ export default {
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
-                slug,
+                slug
               }),
               name,
               pageSize,
-              slug,
+              slug
             })}
             render={(mocks) => (
               <MockedProvider mocks={mocks}>
@@ -220,7 +220,7 @@ export default {
         );
       },
       name: "Topic",
-      type: "story",
+      type: "story"
     },
     {
       component: () => {
@@ -236,11 +236,11 @@ export default {
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
-                slug,
+                slug
               }),
               name,
               pageSize,
-              slug,
+              slug
             })}
             render={(mocks) => (
               <MockedProvider mocks={mocks}>
@@ -258,8 +258,8 @@ export default {
         );
       },
       name: "Topic Articles",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Helpers/Provider",
+  name: "Helpers/Provider"
 };

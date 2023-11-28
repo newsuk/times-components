@@ -1,7 +1,7 @@
 import {
   acceptedWidths,
   normaliseWidthForAssetRequestCache,
-  screenWidth,
+  screenWidth
 } from "../src/index";
 
 describe("screen utilities", () => {
@@ -10,7 +10,7 @@ describe("screen utilities", () => {
       const firstAcceptedWidthItem = acceptedWidths[0];
       const width = firstAcceptedWidthItem - 1;
       expect(normaliseWidthForAssetRequestCache(width)).toEqual(
-        firstAcceptedWidthItem,
+        firstAcceptedWidthItem
       );
     });
 
@@ -18,7 +18,7 @@ describe("screen utilities", () => {
       const lastAcceptedWidthItem = acceptedWidths[acceptedWidths.length - 1];
       const width = lastAcceptedWidthItem + 1;
       expect(normaliseWidthForAssetRequestCache(width)).toEqual(
-        lastAcceptedWidthItem,
+        lastAcceptedWidthItem
       );
     });
   });

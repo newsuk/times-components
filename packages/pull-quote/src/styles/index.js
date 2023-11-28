@@ -5,8 +5,8 @@ const styles = {
   ...sharedStyles,
   container: {
     ...sharedStyles.container,
-    marginBottom: spacing(3),
-  },
+    marginBottom: spacing(3)
+  }
 };
 
 export default styles;

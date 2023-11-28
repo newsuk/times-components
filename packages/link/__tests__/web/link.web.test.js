@@ -8,7 +8,7 @@ describe("Link", () => {
     const { baseElement, getByText, getByRole } = render(
       <Link onPress={() => {}} url="http://thetimes.co.uk">
         The Times
-      </Link>,
+      </Link>
     );
     expect(baseElement).toMatchSnapshot();
     expect(getByText("The Times")).toBeVisible();
@@ -18,7 +18,7 @@ describe("Link", () => {
     const { baseElement, getByRole } = render(
       <Link onPress={() => {}} target="_blank" url="http://thetimes.co.uk">
         The Times
-      </Link>,
+      </Link>
     );
     expect(baseElement).toMatchSnapshot();
     expect(getByRole("link")).toHaveAttribute("target", "_blank");
@@ -28,7 +28,7 @@ describe("Link", () => {
     const { getByRole } = render(
       <Link onPress={mockOnPress} target="_blank" url="http://thetimes.co.uk">
         The Times
-      </Link>,
+      </Link>
     );
     fireEvent.click(getByRole("link"));
     expect(mockOnPress).toHaveBeenCalled();

@@ -9,7 +9,7 @@ export default (Component) => {
     TestRenderer.create(
       <TcView>
         <Component {...props} />
-      </TcView>,
+      </TcView>
     );
 
   const tests = [
@@ -17,22 +17,22 @@ export default (Component) => {
       name: "with a single author",
       test: () => {
         const testInstance = renderArticleByline({
-          ast: authorsFixture.singleAuthor,
+          ast: authorsFixture.singleAuthor
         });
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "with a very long byline",
       test: () => {
         const testInstance = renderArticleByline({
-          ast: authorsFixture.veryLongByline,
+          ast: authorsFixture.veryLongByline
         });
 
         expect(testInstance).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

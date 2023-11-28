@@ -5,15 +5,15 @@ import {
   flattenStyleTransform,
   hoistStyleTransform,
   minimalWebTransform,
-  stylePrinter,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import shared from "./shared-with-style.base";
 
 jest.mock("@times-components/link", () => ({
-  TextLink: "TextLink",
+  TextLink: "TextLink"
 }));
 jest.mock("@times-components/icons", () => ({
-  IconTwitter: "IconTwitter",
+  IconTwitter: "IconTwitter"
 }));
 
 export default () => {
@@ -23,8 +23,8 @@ export default () => {
       stylePrinter,
       minimalWebTransform,
       flattenStyleTransform,
-      hoistStyleTransform,
-    ),
+      hoistStyleTransform
+    )
   );
 
   // eslint-disable-next-line global-require

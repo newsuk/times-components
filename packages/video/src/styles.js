@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {
   fontsWithFallback,
   spacing,
-  colours,
+  colours
 } from "@times-components/ts-styleguide";
 
 export const Video360Container = styled.div`

@@ -5,7 +5,7 @@ import {
   addSerializers,
   compose,
   minimalWebTransform,
-  stylePrinter,
+  stylePrinter
 } from "../../src";
 
 describe("The serializers should", () => {
@@ -14,11 +14,11 @@ describe("The serializers should", () => {
 
     const styles = {
       colored: {
-        color: "red",
+        color: "red"
       },
       padded: {
-        padding: 1,
-      },
+        padding: 1
+      }
     };
 
     const component = (

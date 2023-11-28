@@ -4,14 +4,14 @@ const styles = {
   title: {
     ...fontFactory({
       font: "supporting",
-      fontSize: "cardMetaMobile",
+      fontSize: "cardMetaMobile"
     }),
     fontWeight: "400",
     lineHeight: 11,
     marginBottom: 0,
     marginTop: -1,
-    paddingTop: 1,
-  },
+    paddingTop: 1
+  }
 };
 
 export default styles;

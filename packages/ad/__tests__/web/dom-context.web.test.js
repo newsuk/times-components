@@ -5,7 +5,7 @@ import DOMContext from "../../src/dom-context";
 describe("DOMContext Web", () => {
   const props = {
     height: 200,
-    width: 200,
+    width: 200
   };
 
   it("passes an element to the init function", () => {
@@ -16,8 +16,8 @@ describe("DOMContext Web", () => {
 
     expect(init).toHaveBeenCalledWith(
       expect.objectContaining({
-        el: expect.any(HTMLElement),
-      }),
+        el: expect.any(HTMLElement)
+      })
     );
   });
 
@@ -30,8 +30,8 @@ describe("DOMContext Web", () => {
 
     expect(init).toHaveBeenCalledWith(
       expect.objectContaining({
-        data: { foo: "bar" },
-      }),
+        data: { foo: "bar" }
+      })
     );
   });
 
@@ -46,7 +46,7 @@ describe("DOMContext Web", () => {
           init={() => {
             throw new Error("broken");
           }}
-        />,
+        />
       );
     };
 
@@ -61,7 +61,7 @@ describe("DOMContext Web", () => {
         {...props}
         init={({ eventCallback }) => eventCallback("renderComplete")}
         onRenderComplete={onRenderComplete}
-      />,
+      />
     );
 
     expect(onRenderComplete).toHaveBeenCalled();
@@ -75,7 +75,7 @@ describe("DOMContext Web", () => {
         {...props}
         init={({ eventCallback }) => eventCallback("renderFailed")}
         onRenderError={onRenderErrorMock}
-      />,
+      />
     );
 
     expect(onRenderErrorMock).toHaveBeenCalled();
@@ -87,7 +87,7 @@ describe("DOMContext Web", () => {
         <DOMContext
           {...props}
           init={({ eventCallback }) => eventCallback("renderComplete")}
-        />,
+        />
       );
     expect(f).not.toThrow();
   });
@@ -100,7 +100,7 @@ describe("DOMContext Web", () => {
         init={() => {
           return { init: () => {} };
         }}
-      />,
+      />
     );
 
     expect(() => {

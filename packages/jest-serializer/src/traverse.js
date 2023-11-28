@@ -11,15 +11,15 @@ const mergeTransformation =
     const { accum: propAccum, element } = transform(
       transformed.accum,
       transformElement,
-      prop,
+      prop
     );
 
     return {
       accum: propAccum,
       props: {
         ...transformed.props,
-        [key]: element,
-      },
+        [key]: element
+      }
     };
   };
 
@@ -29,13 +29,13 @@ const transformRenderProps = (transform, accum, transformElement, props) => {
   if (renderProps.length === 0) {
     return {
       accum,
-      props,
+      props
     };
   }
 
   return renderProps.reduce(mergeTransformation(transform, transformElement), {
     accum,
-    props,
+    props
   });
 };
 
@@ -44,7 +44,7 @@ const transformChildren = (transform, transformElement) => (merged, child) => {
 
   return {
     accum,
-    children: merged.children.concat(element),
+    children: merged.children.concat(element)
   };
 };
 
@@ -52,47 +52,47 @@ const transform = (accum, transformElement, node) => {
   if (!node || !node.props)
     return {
       accum,
-      element: node,
+      element: node
     };
 
   const { accum: childAccum, children } = []
     .concat(node.children || node.props.children || [])
     .reduce(transformChildren(transform, transformElement), {
       accum,
-      children: [],
+      children: []
     });
 
   const trp = transformRenderProps(
     transform,
     childAccum || accum,
     transformElement,
-    node.props,
+    node.props
   );
 
   const u = transformElement(
     trp.accum,
     withoutProps(node),
     trp.props,
-    children,
+    children
   );
 
   if (!u.node) {
     if (u.children) {
       return {
         accum: u.accum,
-        element: u.children.length === 1 ? u.children[0] : u.children,
+        element: u.children.length === 1 ? u.children[0] : u.children
       };
     }
 
     return {
       accum: u.accum,
-      element: null,
+      element: null
     };
   }
 
   return {
     accum: u.accum,
-    element: React.cloneElement(u.node, u.props, ...u.children),
+    element: React.cloneElement(u.node, u.props, ...u.children)
   };
 };
 
@@ -107,5 +107,5 @@ const print = (printer, transformElement) => (node, serialize) => {
 
 module.exports = (printer, transformElement) => ({
   print: print(printer, transformElement),
-  test,
+  test
 });

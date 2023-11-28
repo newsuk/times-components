@@ -6,7 +6,7 @@ export function tidyEvent(e) {
   return {
     query: e.operation.operationName,
     type: e.type,
-    vars: e.operation.variables,
+    vars: e.operation.variables
   };
 }
 

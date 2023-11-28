@@ -3,5 +3,5 @@ const jestConfigurator =
 const path = require("path");
 
 module.exports = jestConfigurator(__dirname, {
-  setupFilesAfterEnv: path.join(__dirname, "./web/serializers"),
+  setupFilesAfterEnv: path.join(__dirname, "./web/serializers")
 });

@@ -41,7 +41,7 @@ function ClientUserStateConsumer({ children, serverRender = true }) {
 
 ClientUserStateConsumer.propTypes = {
   children: PropTypes.func.isRequired,
-  serverRender: PropTypes.bool,
+  serverRender: PropTypes.bool
 };
 
 export default ClientUserStateConsumer;

@@ -9,8 +9,8 @@ export default (WrappedComponent) => {
         tracking: {
           analytics(...args) {
             self.props.analyticsStream(...args);
-          },
-        },
+          }
+        }
       };
     }
 

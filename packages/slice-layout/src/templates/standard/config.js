@@ -5,7 +5,7 @@ import { breakpoints, spacing } from "@times-components/ts-styleguide";
 const summaryConfig = {
   1: [125],
   2: [125],
-  3: [125, 145],
+  3: [125, 145]
 };
 
 export const getConfig = ({ itemCount }) => ({
@@ -13,8 +13,8 @@ export const getConfig = ({ itemCount }) => ({
   headlineClass: "headlineClass",
   imageContainerClass: "imageContainerClass",
   summaryConfig: {
-    lengths: summaryConfig[itemCount],
-  },
+    lengths: summaryConfig[itemCount]
+  }
 });
 
 export const getConfigWrapper = ({ itemCount }) => {

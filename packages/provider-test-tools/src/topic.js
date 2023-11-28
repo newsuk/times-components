@@ -1,39 +1,39 @@
 import { MockList } from "graphql-tools";
 import {
   topic as topicQuery,
-  topicArticles as articleQuery,
+  topicArticles as articleQuery
 } from "@times-components/provider-queries";
 import generateQueries from "./generate-queries";
 
 const description = [
   {
     attributes: {
-      value: "Chelsea is known for its ",
+      value: "Chelsea is known for its "
     },
     children: [],
-    name: "text",
+    name: "text"
   },
   {
     attributes: {},
     children: [
       {
         attributes: {
-          value: "affluent",
+          value: "affluent"
         },
         children: [],
-        name: "text",
-      },
+        name: "text"
+      }
     ],
-    name: "italic",
+    name: "italic"
   },
   {
     attributes: {
       value:
-        " residents and the posh shops and restaurants that cater to them. It’s a cultural haven too, with the Royal Court Theatre on Sloane Square and the modern Saatchi Gallery on the Duke of York Square. Close by, busy King’s Road is lined with mid- to high-end stores.",
+        " residents and the posh shops and restaurants that cater to them. It’s a cultural haven too, with the Royal Court Theatre on Sloane Square and the modern Saatchi Gallery on the Duke of York Square. Close by, busy King’s Road is lined with mid- to high-end stores."
     },
     children: [],
-    name: "text",
-  },
+    name: "text"
+  }
 ];
 
 const generateTopic = ({ delay, error, name, slug }) => {
@@ -43,24 +43,24 @@ const generateTopic = ({ delay, error, name, slug }) => {
         topic: () => ({
           __typename: "Topic",
           description,
-          name,
-        }),
-      },
+          name
+        })
+      }
     },
     delay,
     query: topicQuery,
     variables: {
-      slug,
-    },
+      slug
+    }
   };
 
   if (error) {
     return [
       {
         ...query,
-        error: error(),
+        error: error()
       },
-      query,
+      query
     ];
   }
 
@@ -76,7 +76,7 @@ export default ({
   makeItem = (x) => x,
   name,
   pageSize,
-  slug,
+  slug
 }) => [
   ...generateTopic({ delay, error: topicError, name, slug }),
   ...generateQueries(
@@ -104,13 +104,13 @@ export default ({
                   shortIdentifier: `968n7tdck${itemIndex}`,
                   slug: `this-is-slug-${itemIndex}`,
                   summary: [],
-                  url: "https://url.io",
+                  url: "https://url.io"
                 },
-                itemIndex,
+                itemIndex
               );
             },
             Crop: () => ({
-              url: "https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_300_200.jpg",
+              url: "https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_300_200.jpg"
             }),
             Image: () => {
               imageIndex += 1;
@@ -119,13 +119,13 @@ export default ({
                 id: `e98c2${imageIndex
                   .toString()
                   .padStart(2)}c-cb16-11e7-b529-95e3fc05f40f`,
-                title: `Some title ${imageIndex}`,
+                title: `Some title ${imageIndex}`
               };
             },
             Media: () => ({
-              __typename: "Image",
+              __typename: "Image"
             }),
-            SectionName: () => "bricksmortar",
+            SectionName: () => "bricksmortar"
           },
           values: {
             topic: () => ({
@@ -134,17 +134,17 @@ export default ({
 
                 list(_, { first }) {
                   return new MockList(Math.min(count, first));
-                },
-              },
-            }),
-          },
+                }
+              }
+            })
+          }
         },
         delay,
         error: articleError(iteration),
         query: articleQuery,
-        variables: articleVariables(iteration),
+        variables: articleVariables(iteration)
       };
     },
-    count === 0 ? 1 : count / pageSize,
-  ),
+    count === 0 ? 1 : count / pageSize
+  )
 ];

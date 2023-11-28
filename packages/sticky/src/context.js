@@ -58,11 +58,11 @@ class StickyProvider extends Component {
 
 StickyProvider.propTypes = {
   Component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 StickyProvider.defaultProps = {
-  Component: "div",
+  Component: "div"
 };
 
 function withStickyContext(WrappedComponent) {
@@ -77,7 +77,7 @@ function withStickyContext(WrappedComponent) {
   }
 
   WithStickyContext.displayName = `WithStickyContext(${getDisplayName(
-    WrappedComponent,
+    WrappedComponent
   )})`;
   hoistNonReactStatic(WithStickyContext, WrappedComponent);
 

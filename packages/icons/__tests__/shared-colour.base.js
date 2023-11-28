@@ -13,11 +13,11 @@ export default (renderMethod) => {
         const fill = "#facade";
 
         const output = renderMethod(
-          <Icon fillColour={fill} height={50} strokeColour={stroke} />,
+          <Icon fillColour={fill} height={50} strokeColour={stroke} />
         );
 
         expect(output).toMatchSnapshot();
-      },
+      }
     });
   });
 

@@ -3,7 +3,7 @@ import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import {
   handleOnClickScrollTo,
-  handleHrefScrollTo,
+  handleHrefScrollTo
 } from "@times-components/utils";
 
 import props from "./key-facts-text-prop-types";
@@ -15,7 +15,7 @@ const getTitle = (data) => {
   }
 
   const linkText = data.children.map((child) =>
-    child.attributes ? child.attributes.value : child.attributes,
+    child.attributes ? child.attributes.value : child.attributes
   );
   const title = linkText.join(" ");
   return title.length > 0 ? title : " ";
@@ -29,8 +29,8 @@ const handleClickEventAnalytics = (fireAnalyticsEvent, title, articleFlag) => {
         event_navigation_name: "in-article component clicked : key moments",
         event_navigation_browsing_method: "click",
         article_parent_name: title,
-        article_flag: articleFlag,
-      },
+        article_flag: articleFlag
+      }
     });
   }
 };
@@ -39,7 +39,7 @@ const KeyFactsText = ({
   listIndex,
   keyFactItem,
   fireAnalyticsEvent,
-  articleFlag,
+  articleFlag
 }) => (
   <BulletContainer key={`key-facts-${listIndex}`}>
     <Bullet />
@@ -61,7 +61,7 @@ const KeyFactsText = ({
                     handleClickEventAnalytics(
                       fireAnalyticsEvent,
                       title,
-                      articleFlag,
+                      articleFlag
                     );
                   }}
                   href={handleHrefScrollTo(url)}
@@ -69,10 +69,10 @@ const KeyFactsText = ({
                   {renderedChildren}
                 </KeyFactTextLink>
               );
-            },
+            }
           },
-          `key-facts-${listIndex}-${listItemIndex}`,
-        ),
+          `key-facts-${listIndex}-${listItemIndex}`
+        )
       )}
     </Text>
   </BulletContainer>

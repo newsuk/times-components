@@ -9,7 +9,7 @@ export default () => {
         <ResponsiveContext.Consumer>
           {(context) => JSON.stringify(context)}
         </ResponsiveContext.Consumer>
-      </Responsive>,
+      </Responsive>
     );
 
     expect(testInstance).toMatchSnapshot();

@@ -21,11 +21,11 @@ export default (renderComponent) => {
             text={text}
           >
             {content}
-          </PullQuotes>,
+          </PullQuotes>
         );
 
         expect(output).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "with a caption but no text",
@@ -33,11 +33,11 @@ export default (renderComponent) => {
         const output = renderComponent(
           <PullQuotes onTwitterLinkPress={() => null} text={text}>
             {content}
-          </PullQuotes>,
+          </PullQuotes>
         );
 
         expect(output).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "with a text but no caption",
@@ -45,21 +45,21 @@ export default (renderComponent) => {
         const output = renderComponent(
           <PullQuotes onTwitterLinkPress={() => null} text={text}>
             {content}
-          </PullQuotes>,
+          </PullQuotes>
         );
 
         expect(output).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "without a caption or a text",
       test() {
         const output = renderComponent(
-          <PullQuotes onTwitterLinkPress={() => null}>{content}</PullQuotes>,
+          <PullQuotes onTwitterLinkPress={() => null}>{content}</PullQuotes>
         );
 
         expect(output).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "with a twitter handle",
@@ -71,11 +71,11 @@ export default (renderComponent) => {
             twitter={twitter}
           >
             {content}
-          </PullQuotes>,
+          </PullQuotes>
         );
 
         expect(output).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "twitter handle can be clicked",
@@ -86,14 +86,14 @@ export default (renderComponent) => {
           <PullQuoteTwitterLink
             onTwitterLinkPress={onTwitterLinkPressMock}
             twitter={twitter}
-          />,
+          />
         );
 
         wrapper.find(".pullQuoteTwitterLink").simulate("press", {});
 
         expect(onTwitterLinkPressMock).toHaveBeenCalled();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

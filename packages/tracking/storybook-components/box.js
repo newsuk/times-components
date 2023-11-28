@@ -8,8 +8,8 @@ export const boxStyles = {
     borderStyle: "solid",
     borderWidth: 2,
     height: 200,
-    width: 200,
-  },
+    width: 200
+  }
 };
 
 const Box = ({ children, color, id }) => (
@@ -22,12 +22,12 @@ const Box = ({ children, color, id }) => (
 Box.propTypes = {
   children: PropTypes.element,
   color: PropTypes.string,
-  id: PropTypes.string,
+  id: PropTypes.string
 };
 Box.defaultProps = {
   children: null,
   color: "",
-  id: "",
+  id: ""
 };
 
 export default Box;

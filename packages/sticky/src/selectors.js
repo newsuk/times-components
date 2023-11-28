@@ -27,5 +27,5 @@ export const selectors = {
   sticky,
   containsSticky,
   sizer,
-  stickySizer,
+  stickySizer
 };

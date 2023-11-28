@@ -26,7 +26,7 @@ class SeenText extends Component {
     super(props);
 
     this.state = {
-      showVisibleText: false,
+      showVisibleText: false
     };
   }
 
@@ -34,9 +34,9 @@ class SeenText extends Component {
     setTimeout(
       () =>
         this.setState({
-          showVisibleText: true,
+          showVisibleText: true
         }),
-      500,
+      500
     );
   }
 
@@ -73,8 +73,8 @@ export default {
       ),
       name: "Default",
       platform: "web",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Helpers/Lazy load",
+  name: "Helpers/Lazy load"
 };

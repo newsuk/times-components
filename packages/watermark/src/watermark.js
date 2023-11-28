@@ -24,11 +24,11 @@ const Watermark = ({ height, viewBox, width }) => (
 Watermark.propTypes = {
   height: PropTypes.number.isRequired,
   viewBox: PropTypes.string,
-  width: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired
 };
 
 Watermark.defaultProps = {
-  viewBox: "0 0 300 250",
+  viewBox: "0 0 300 250"
 };
 
 export default Watermark;

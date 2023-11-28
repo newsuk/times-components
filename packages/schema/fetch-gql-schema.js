@@ -10,12 +10,12 @@ const writeFile = promisify(fs.writeFile);
 const fetchIntrospection = async (fetch, endpoint) => {
   const fetchResult = await fetch(endpoint, {
     body: JSON.stringify({
-      query: introspectionQuery,
+      query: introspectionQuery
     }),
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     },
-    method: "POST",
+    method: "POST"
   });
 
   return fetchResult.json();
@@ -27,7 +27,7 @@ const writeSchema = async (cwd, schema) =>
 const writeFragmentMatcher = (cwd, schema) => {
   // eslint-disable-next-line no-underscore-dangle
   const filteredTypes = schema.data.__schema.types.filter(
-    ({ possibleTypes }) => possibleTypes !== null,
+    ({ possibleTypes }) => possibleTypes !== null
   );
 
   const fm = `
@@ -54,6 +54,6 @@ module.exports = async (cwd, fetch, endpoint) => {
 
   return Promise.all([
     writeSchema(cwd, schema),
-    writeFragmentMatcher(cwd, schema),
+    writeFragmentMatcher(cwd, schema)
   ]);
 };

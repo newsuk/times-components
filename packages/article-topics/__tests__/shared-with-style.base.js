@@ -16,11 +16,11 @@ export default () => {
         const testInstance = TestRenderer.create(
           <ContextProviderWithDefaults value={{ theme: { scale } }}>
             <ArticleTopics onPress={() => {}} topics={topicData.slice(0, 1)} />
-          </ContextProviderWithDefaults>,
+          </ContextProviderWithDefaults>
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "group of topics at large scale",
@@ -29,11 +29,11 @@ export default () => {
         const testInstance = TestRenderer.create(
           <ContextProviderWithDefaults value={{ theme: { scale } }}>
             <ArticleTopics onPress={() => {}} topics={topicData.slice(0, 1)} />
-          </ContextProviderWithDefaults>,
+          </ContextProviderWithDefaults>
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "group of topics at xlarge scale",
@@ -42,11 +42,11 @@ export default () => {
         const testInstance = TestRenderer.create(
           <ContextProviderWithDefaults value={{ theme: { scale } }}>
             <ArticleTopics onPress={() => {}} topics={topicData.slice(0, 1)} />
-          </ContextProviderWithDefaults>,
+          </ContextProviderWithDefaults>
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "article topic with style",
@@ -59,11 +59,11 @@ export default () => {
             name="Test"
             onPress={() => {}}
             slug="test-slug"
-          />,
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "article topic with no additional style",
@@ -74,12 +74,12 @@ export default () => {
             name="Test"
             onPress={() => {}}
             slug="test-slug"
-          />,
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

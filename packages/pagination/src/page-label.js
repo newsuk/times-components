@@ -21,7 +21,7 @@ const PageLabel = ({ direction }) => (
 );
 
 PageLabel.propTypes = {
-  direction: PropTypes.string.isRequired,
+  direction: PropTypes.string.isRequired
 };
 
 export default PageLabel;

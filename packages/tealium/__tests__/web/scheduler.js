@@ -10,7 +10,7 @@ export default () => {
       account: "newsuk",
       enabled: true,
       env: "dev",
-      profile: "times.2017",
+      profile: "times.2017"
     };
 
     const realUtag = global.window.utag;
@@ -23,7 +23,7 @@ export default () => {
 
     afterEach(() => {
       const utags = global.window.document.querySelectorAll(
-        'script[src*="utag.js"]',
+        'script[src*="utag.js"]'
       );
       utags.forEach((utag) => utag.remove());
 
@@ -36,10 +36,10 @@ export default () => {
           new TealiumSendScheduler(
             {
               ...trackingOptions,
-              env: undefined,
+              env: undefined
             },
             global.window,
-            global.window.document,
+            global.window.document
           );
         expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
       });
@@ -49,10 +49,10 @@ export default () => {
           new TealiumSendScheduler(
             {
               ...trackingOptions,
-              profile: undefined,
+              profile: undefined
             },
             global.window,
-            global.window.document,
+            global.window.document
           );
         expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
       });
@@ -62,10 +62,10 @@ export default () => {
           new TealiumSendScheduler(
             {
               ...trackingOptions,
-              account: undefined,
+              account: undefined
             },
             global.window,
-            global.window.document,
+            global.window.document
           );
         expect(makeTealiumScheduler).toThrowErrorMatchingSnapshot();
       });
@@ -75,10 +75,10 @@ export default () => {
         new TealiumSendScheduler(
           trackingOptions,
           global.window,
-          global.window.document,
+          global.window.document
         );
         expect(
-          global.window.document.querySelector('script[src*="utag.js"]'),
+          global.window.document.querySelector('script[src*="utag.js"]')
         ).not.toBeNull();
       });
 
@@ -87,17 +87,17 @@ export default () => {
         new TealiumSendScheduler(
           trackingOptions,
           global.window,
-          global.window.document,
+          global.window.document
         );
         // eslint-disable-next-line no-new
         new TealiumSendScheduler(
           trackingOptions,
           global.window,
-          global.window.document,
+          global.window.document
         );
         expect(
           global.window.document.querySelectorAll('script[src*="utag.js"]')
-            .length,
+            .length
         ).toBe(1);
       });
 
@@ -105,7 +105,7 @@ export default () => {
         // eslint-disable-next-line no-new
         new TealiumSendScheduler({ ...trackingOptions, enabled: false });
         expect(
-          global.window.document.querySelector('script[src*="utag.js"]'),
+          global.window.document.querySelector('script[src*="utag.js"]')
         ).toBeNull();
       });
 
@@ -114,7 +114,7 @@ export default () => {
         new TealiumSendScheduler(
           trackingOptions,
           global.window,
-          global.window.document,
+          global.window.document
         );
         expect(global.window.utag_cfg_ovrd.noview).toBe(true);
       });
@@ -129,11 +129,11 @@ export default () => {
         sendScheduler = new TealiumSendScheduler(
           trackingOptions,
           global.window,
-          global.window.document,
+          global.window.document
         );
 
         const utag = global.window.document.querySelector(
-          'script[src*="utag.js"]',
+          'script[src*="utag.js"]'
         );
 
         utag.onload();
@@ -151,7 +151,7 @@ export default () => {
 
         expect(global.window.requestIdleCallback).toHaveBeenCalledWith(
           sendScheduler.sendEvents,
-          { timeout: 2000 },
+          { timeout: 2000 }
         );
       });
 
@@ -220,7 +220,7 @@ export default () => {
             fn({
               timeRemaining() {
                 return 0;
-              },
+              }
             });
           }, 0);
         };

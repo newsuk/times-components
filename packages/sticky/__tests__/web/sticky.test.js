@@ -9,7 +9,7 @@ import Sticky, {
   computeProgressStyles,
   selectors,
   StickyProvider,
-  UnwrappedSticky,
+  UnwrappedSticky
 } from "../../src/sticky";
 
 import "./js-dom-ext";
@@ -65,7 +65,7 @@ describe("Sticky", () => {
           <Sticky style={{ marginTop: 10, marginBottom: 20, height: 60 }} />
         </div>
       </StickyProvider>,
-      root,
+      root
     );
 
     expect(document.body).toMatchSnapshot();
@@ -85,7 +85,7 @@ describe("Sticky", () => {
           </Sticky>
         </div>
       </StickyProvider>,
-      root,
+      root
     );
 
     expect(document.body).toMatchSnapshot();
@@ -143,7 +143,7 @@ describe("Sticky", () => {
           <Sticky style={{ marginTop: 10, marginBottom: 20, height: 60 }} />
         </div>
       </StickyProvider>,
-      root,
+      root
     );
 
     scrollTo(10);
@@ -157,7 +157,7 @@ describe("Sticky", () => {
       <StickyProvider>
         <Sticky style={{ marginTop: 10, height: 60 }} />
       </StickyProvider>,
-      root,
+      root
     );
 
     scrollTo(10);
@@ -170,13 +170,13 @@ describe("Sticky", () => {
       <StickyProvider>
         <Sticky style={{ height: 60 }} zIndex="666" />
       </StickyProvider>,
-      root,
+      root
     );
 
     scrollTo(0);
 
     expect(
-      document.body.querySelector("[data-tc-sticky-container]").style.zIndex,
+      document.body.querySelector("[data-tc-sticky-container]").style.zIndex
     ).toEqual("666");
   });
 
@@ -187,13 +187,13 @@ describe("Sticky", () => {
       <StickyProvider>
         <Sticky style={{ height: 60 }} />
       </StickyProvider>,
-      root,
+      root
     );
 
     scrollTo(0);
 
     expect(
-      document.body.querySelector("[data-tc-sticky-container]").style.top,
+      document.body.querySelector("[data-tc-sticky-container]").style.top
     ).toEqual("30px");
   });
 
@@ -208,12 +208,12 @@ describe("Sticky", () => {
       <StickyProvider Component={TestComponent}>
         <Sticky />
       </StickyProvider>,
-      root,
+      root
     );
 
     scrollTo(0);
     expect(
-      document.body.querySelector("[data-tc-sticky-container]").parentNode,
+      document.body.querySelector("[data-tc-sticky-container]").parentNode
     ).toEqual(document.querySelector("#sticky-provider-container"));
   });
 
@@ -223,7 +223,7 @@ describe("Sticky", () => {
       <StickyProvider>
         <Sticky shouldBeSticky={shouldBeSticky} />
       </StickyProvider>,
-      root,
+      root
     );
 
     scrollTo(0);
@@ -249,7 +249,7 @@ describe("Sticky", () => {
     });
 
     expect(
-      document.body.querySelector("[data-tc-sticky-container]").style.top,
+      document.body.querySelector("[data-tc-sticky-container]").style.top
     ).toEqual("50px");
   });
 
@@ -260,7 +260,7 @@ describe("Sticky", () => {
           <Sticky style={{ marginTop: 10, marginBottom: 20, height: 60 }} />
         </div>
       </StickyProvider>,
-      root,
+      root
     );
 
     scrollTo(10);
@@ -301,7 +301,7 @@ describe("Sticky", () => {
         style={{ marginTop: 10, height: 60 }}
         stickyContext={{ top: 10 }}
       />,
-      root,
+      root
     );
 
     resize(10);
@@ -314,13 +314,13 @@ describe("Sticky", () => {
         <StickyProvider>
           <Sticky style={{ marginTop: 1, height: 60 }} className="component" />
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(0);
       const component = document.querySelector(".component");
       expect(component.getAttributeNames()).not.toContain(
-        "data-sticky-progress",
+        "data-sticky-progress"
       );
     });
 
@@ -334,13 +334,13 @@ describe("Sticky", () => {
             className="component"
           />
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(15);
       const component = document.querySelector(".component");
       expect(component.getAttributeNames()).not.toContain(
-        "data-sticky-progress",
+        "data-sticky-progress"
       );
     });
 
@@ -354,7 +354,7 @@ describe("Sticky", () => {
             className="component"
           />
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(75);
@@ -372,7 +372,7 @@ describe("Sticky", () => {
             className="component"
           />
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(135);
@@ -387,7 +387,7 @@ describe("Sticky", () => {
         <StickyProvider>
           <Sticky style={{ height: 30 }} className="component" />
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(999999);
@@ -405,7 +405,7 @@ describe("Sticky", () => {
             className="component"
           />
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(140);
@@ -414,7 +414,7 @@ describe("Sticky", () => {
 
       const component = document.querySelector(".component");
       expect(component.getAttributeNames()).not.toContain(
-        "data-sticky-progress",
+        "data-sticky-progress"
       );
     });
 
@@ -425,7 +425,7 @@ describe("Sticky", () => {
           className="component"
           stickyContext={{ top: 0 }}
         />,
-        root,
+        root
       );
 
       scrollTo(40);
@@ -448,13 +448,13 @@ describe("Sticky", () => {
 
       render(
         <TestComponent data-sticky-progress="50" className="component" />,
-        root,
+        root
       );
 
       const component = document.body.querySelector(".component");
       expect(window.getComputedStyle(component)).toHaveProperty(
         "opacity",
-        "0.5",
+        "0.5"
       );
     });
   });
@@ -474,13 +474,13 @@ describe("Sticky", () => {
         <StickyProvider>
           <Sticky Component={TestComponent} className="component" />
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(20);
 
       expect(
-        window.getComputedStyle(document.body.querySelector(".component")),
+        window.getComputedStyle(document.body.querySelector(".component"))
       ).toHaveProperty("color", "blue");
     });
 
@@ -499,13 +499,13 @@ describe("Sticky", () => {
         <StickyProvider>
           <Sticky Component={TestComponent} className="component" />
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(0);
 
       expect(
-        window.getComputedStyle(document.body.querySelector(".component")),
+        window.getComputedStyle(document.body.querySelector(".component"))
       ).toHaveProperty("color", "black");
     });
 
@@ -525,15 +525,15 @@ describe("Sticky", () => {
             <Sticky />
           </StickyContainer>
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(0);
 
       expect(
         window.getComputedStyle(
-          document.body.querySelector(".sticky-container"),
-        ),
+          document.body.querySelector(".sticky-container")
+        )
       ).toHaveProperty("color", "black");
     });
 
@@ -553,15 +553,15 @@ describe("Sticky", () => {
             <Sticky />
           </StickyContainer>
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(10);
 
       expect(
         window.getComputedStyle(
-          document.body.querySelector(".sticky-container"),
-        ),
+          document.body.querySelector(".sticky-container")
+        )
       ).toHaveProperty("color", "blue");
     });
 
@@ -578,13 +578,13 @@ describe("Sticky", () => {
         <StickyProvider>
           <Sticky Component={TestComponent} className="component" />
         </StickyProvider>,
-        root,
+        root
       );
 
       expect(
         window.getComputedStyle(
-          document.body.querySelector("[data-tc-sticky-sizer]"),
-        ),
+          document.body.querySelector("[data-tc-sticky-sizer]")
+        )
       ).toHaveProperty("color", "blue");
     });
 
@@ -601,15 +601,15 @@ describe("Sticky", () => {
         <StickyProvider>
           <Sticky Component={TestComponent} className="component" />
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(20);
 
       expect(
         window.getComputedStyle(
-          document.body.querySelector("[data-tc-sticky-sizer]"),
-        ),
+          document.body.querySelector("[data-tc-sticky-sizer]")
+        )
       ).toHaveProperty("color", "blue");
     });
 
@@ -627,15 +627,15 @@ describe("Sticky", () => {
         <StickyProvider>
           <Sticky Component={TestComponent} className="component" />
         </StickyProvider>,
-        root,
+        root
       );
 
       scrollTo(0);
 
       expect(
         window.getComputedStyle(
-          document.body.querySelector("[data-tc-sticky-sizer]"),
-        ),
+          document.body.querySelector("[data-tc-sticky-sizer]")
+        )
       ).not.toHaveProperty("color", "blue");
     });
   });

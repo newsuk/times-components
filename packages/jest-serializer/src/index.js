@@ -2,13 +2,13 @@ import { createSerializer } from "enzyme-to-json";
 import minimalise, {
   minimaliseTransform,
   minimalWebTransform,
-  minimalWeb,
+  minimalWeb
 } from "./minimalise";
 import flattenStyle, { flattenStyleTransform } from "./flatten-style";
 import replace, {
   justChildren,
   propsNoChildren,
-  replaceTransform,
+  replaceTransform
 } from "./replace";
 import replaceProp, { replacePropTransform } from "./replace-prop";
 import hoistStyle, { hoistStyleTransform } from "./hoist-style";
@@ -24,7 +24,7 @@ const compose = (printer, ...transformers) =>
             accum: a,
             children: c,
             node: n,
-            props: p,
+            props: p
           };
         }
 
@@ -34,9 +34,9 @@ const compose = (printer, ...transformers) =>
         accum,
         children,
         node,
-        props,
-      },
-    ),
+        props
+      }
+    )
   );
 
 const addSerializers = (expect, ...serializers) => {
@@ -70,5 +70,5 @@ export {
   replaceProp,
   replacePropTransform,
   replaceTransform,
-  stylePrinter,
+  stylePrinter
 };

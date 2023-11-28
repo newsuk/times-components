@@ -6,77 +6,77 @@ export default (Component) =>
       {
         actionName: "navigation",
         eventName: "onCommentStart",
-        trackingName: "spot im : comment : start",
+        trackingName: "spot im : comment : start"
       },
       {
         actionName: "navigation",
         eventName: "onCommentPost",
-        trackingName: "spot im : comment : complete",
+        trackingName: "spot im : comment : complete"
       },
       {
         actionName: "navigation",
         eventName: "onCommentNotification",
-        trackingName: "spot im : notification",
+        trackingName: "spot im : notification"
       },
       {
         actionName: "navigation",
         eventName: "onCommentFilterNewest",
-        trackingName: "spot im : sort : newest",
+        trackingName: "spot im : sort : newest"
       },
       {
         actionName: "navigation",
         eventName: "onCommentFilterMostRecommended",
-        trackingName: "spot im : sort : best",
+        trackingName: "spot im : sort : best"
       },
       {
         actionName: "navigation",
         eventName: "onCommentFilterOldest",
-        trackingName: "spot im : sort : oldest",
+        trackingName: "spot im : sort : oldest"
       },
       {
         actionName: "navigation",
         eventName: "onCommentReplyClick",
-        trackingName: "spot im : reply",
+        trackingName: "spot im : reply"
       },
       {
         actionName: "navigation",
         eventName: "onCommentSettingsClicked",
-        trackingName: "spot im : settings button clicked",
+        trackingName: "spot im : settings button clicked"
       },
       {
         actionName: "navigation",
         eventName: "onCommentShareLink",
-        trackingName: "spot im : comment : share : copy link",
+        trackingName: "spot im : comment : share : copy link"
       },
       {
         actionName: "navigation",
         eventName: "onCommentShareEmail",
-        trackingName: "spot im : comment : share : email",
+        trackingName: "spot im : comment : share : email"
       },
       {
         actionName: "navigation",
         eventName: "onCommentShareTwitter",
-        trackingName: "spot im : comment : share : twitter",
+        trackingName: "spot im : comment : share : twitter"
       },
       {
         actionName: "navigation",
         eventName: "onCommentShareFacebook",
-        trackingName: "spot im : comment : share : facebook",
+        trackingName: "spot im : comment : share : facebook"
       },
       {
         actionName: "navigation",
         eventName: "onCommentRecommend",
-        trackingName: "spot im : vote up",
+        trackingName: "spot im : vote up"
       },
       {
         actionName: "navigation",
         eventName: "onCommentUsernameClicked",
-        trackingName: "spot im : username clicked",
+        trackingName: "spot im : username clicked"
       },
       {
         actionName: "navigation",
         eventName: "onCommentNotificationClicked",
-        trackingName: "spot im : notification clicked",
-      },
-    ],
+        trackingName: "spot im : notification clicked"
+      }
+    ]
   });

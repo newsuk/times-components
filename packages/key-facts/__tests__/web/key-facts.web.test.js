@@ -3,7 +3,7 @@ import React from "react";
 import { shallow, mount } from "enzyme";
 import {
   addSerializers,
-  enzymeTreeSerializer,
+  enzymeTreeSerializer
 } from "@times-components/jest-serializer";
 import { TrackingContextProvider } from "@times-components/ts-components";
 import mockDate from "mockdate";
@@ -21,7 +21,7 @@ const props = {
   section: "news",
   ast: data,
   isLiveOrBreaking: "breaking",
-  analyticsStream,
+  analyticsStream
 };
 
 class FakeIntersectionObserver {
@@ -64,12 +64,12 @@ describe("Key moments", () => {
       <TrackingContextProvider
         context={{
           component: "ArticleSkeleton",
-          attrs: {},
+          attrs: {}
         }}
         analyticsStream={analyticsStream}
       >
         <KeyFacts {...props} />
-      </TrackingContextProvider>,
+      </TrackingContextProvider>
     );
 
     expect(wrapper.find("Example title"));
@@ -80,12 +80,12 @@ describe("Key moments", () => {
       <TrackingContextProvider
         context={{
           component: "ArticleSkeleton",
-          attrs: {},
+          attrs: {}
         }}
         analyticsStream={analyticsStream}
       >
         <KeyFacts {...props} ast={dataNoTitle} />
-      </TrackingContextProvider>,
+      </TrackingContextProvider>
     );
 
     expect(wrapper.find("Example title"));
@@ -96,12 +96,12 @@ describe("Key moments", () => {
       <TrackingContextProvider
         context={{
           component: "ArticleSkeleton",
-          attrs: {},
+          attrs: {}
         }}
         analyticsStream={analyticsStream}
       >
         <KeyFacts {...props} />
-      </TrackingContextProvider>,
+      </TrackingContextProvider>
     );
 
     FakeIntersectionObserver.intersect();
@@ -121,10 +121,10 @@ describe("Key moments", () => {
         event_navigation_browsing_method: "scroll",
         article_name: "some headline",
         article_flag: "breaking",
-        eventTime: "2021-05-03T00:00:00.000Z",
+        eventTime: "2021-05-03T00:00:00.000Z"
       },
       action: "Scrolled",
-      object: "KeyMoments",
+      object: "KeyMoments"
     });
 
     expect(analyticsStream.mock.calls[1][0]).toEqual({
@@ -139,10 +139,10 @@ describe("Key moments", () => {
         article_parent_name: "a link title",
         article_name: "some headline",
         article_flag: "breaking",
-        eventTime: "2021-05-03T00:00:00.000Z",
+        eventTime: "2021-05-03T00:00:00.000Z"
       },
       action: "Clicked",
-      object: "KeyMoments",
+      object: "KeyMoments"
     });
   });
 
@@ -150,20 +150,20 @@ describe("Key moments", () => {
     const linkDataChildren = {
       name: "text",
       attributes: {
-        value: "a link title",
+        value: "a link title"
       },
-      children: [],
+      children: []
     };
 
     it("should return a concatenated string when there is more than 1 child element", () => {
       expect(
-        getTitle({ children: [linkDataChildren, linkDataChildren] }),
+        getTitle({ children: [linkDataChildren, linkDataChildren] })
       ).toEqual("a link title a link title");
     });
 
     it("should return immediately when there is only 1 child element", () => {
       expect(getTitle({ children: [linkDataChildren] })).toEqual(
-        "a link title",
+        "a link title"
       );
     });
   });

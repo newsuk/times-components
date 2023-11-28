@@ -4,8 +4,8 @@ module.exports = (api) => {
     plugins: [
       "babel-plugin-styled-components",
       "transform-class-properties",
-      "@babel/plugin-proposal-export-default-from",
+      "@babel/plugin-proposal-export-default-from"
     ],
-    presets: ["@babel/preset-env", "@babel/preset-react"],
+    presets: ["@babel/preset-env", "@babel/preset-react"]
   };
 };

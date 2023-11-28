@@ -10,8 +10,8 @@ const webviewEventCallbackSetup = (options) => {
       JSON.stringify({
         detail,
         isTngMessage: true,
-        type,
-      }),
+        type
+      })
     );
   };
   window.addEventListener("error", (ev) => {
@@ -20,7 +20,7 @@ const webviewEventCallbackSetup = (options) => {
       "error",
       `msg=${ev.message || ""}, file=${file}, line=${ev.lineno || ""}, col=${
         ev.colno || ""
-      }`,
+      }`
     );
   });
   // eslint-disable-next-line no-console

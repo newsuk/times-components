@@ -3,7 +3,7 @@
 import {
   getDisplayNameFromLocalStorage,
   userShouldUpdateName,
-  getCpnId,
+  getCpnId
 } from "../../src/utils";
 
 const unmockedFetch = global.fetch;
@@ -15,7 +15,7 @@ const localStorageMock = {
   setItem: jest.fn((key, value) => {
     localStorageMock.storage[key] = value;
   }),
-  removeItem: jest.fn((key) => delete localStorageMock.storage[key]),
+  removeItem: jest.fn((key) => delete localStorageMock.storage[key])
 };
 
 Object.defineProperty(window, "localStorage", { value: localStorageMock });
@@ -33,14 +33,14 @@ describe("utils", () => {
     it("should return false if there is no display name", () => {
       window.localStorage.setItem(
         "SPOTIM_CURRENT_USER",
-        '{"data":{"id":"u_sgCrqrs7KNLv","imageId":"#Grey-Cactus","username":"JohnSmith750","isRegistered":true}}',
+        '{"data":{"id":"u_sgCrqrs7KNLv","imageId":"#Grey-Cactus","username":"JohnSmith750","isRegistered":true}}'
       );
       expect(getDisplayNameFromLocalStorage()).toEqual(false);
     });
     it("should return the display name ", () => {
       window.localStorage.setItem(
         "SPOTIM_CURRENT_USER",
-        '{"data":{"id":"u_sgCrqrs7KNLv","displayName":"John Smith","imageId":"#Grey-Cactus","username":"JohnSmith750","isRegistered":true}}',
+        '{"data":{"id":"u_sgCrqrs7KNLv","displayName":"John Smith","imageId":"#Grey-Cactus","username":"JohnSmith750","isRegistered":true}}'
       );
       expect(getDisplayNameFromLocalStorage()).toEqual("John Smith");
     });
@@ -50,7 +50,7 @@ describe("utils", () => {
     beforeAll(() => {
       global.fetch = () =>
         Promise.resolve({
-          json: () => Promise.resolve(mockFetchResponse),
+          json: () => Promise.resolve(mockFetchResponse)
         });
     });
 

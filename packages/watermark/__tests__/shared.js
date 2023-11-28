@@ -5,7 +5,7 @@ import {
   compose,
   enzymeTreeSerializer,
   print,
-  replacePropTransform,
+  replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import Watermark from "../src/watermark";
@@ -18,8 +18,8 @@ export default () => {
     enzymeTreeSerializer(),
     compose(
       print,
-      replacePropTransform((value, key) => (key === "d" ? hash(value) : value)),
-    ),
+      replacePropTransform((value, key) => (key === "d" ? hash(value) : value))
+    )
   );
 
   it("1. watermark", () => {

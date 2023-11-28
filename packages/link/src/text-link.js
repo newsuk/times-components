@@ -5,8 +5,8 @@ import { defaultProps, propTypes } from "./text-link-prop-types";
 
 const styles = {
   textLink: {
-    "text-decoration": "underline",
-  },
+    "text-decoration": "underline"
+  }
 };
 const LinkTextObj = styled(TcTextLink)`
   ${(props) => (props.style ? checkStylesForUnits(props.style) : "")};
@@ -18,7 +18,7 @@ const TextLink = ({ children, onPress, style, target, url, ...props }) => {
     accessibilityRole: "link",
     href: url,
     onClick: onPress,
-    style: linkStyles,
+    style: linkStyles
   };
 
   return target ? (

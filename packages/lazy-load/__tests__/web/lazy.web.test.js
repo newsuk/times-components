@@ -4,7 +4,7 @@ import { iterator } from "@times-components/test-utils";
 import {
   addSerializers,
   enzymeRenderedSerializer,
-  minimalise,
+  minimalise
 } from "@times-components/jest-serializer";
 import LazyLoad from "../../src/lazy-load";
 
@@ -15,7 +15,7 @@ const omitProps = new Set(["class", "className", "style"]);
 addSerializers(
   expect,
   enzymeRenderedSerializer(),
-  minimalise((value, key) => omitProps.has(key)),
+  minimalise((value, key) => omitProps.has(key))
 );
 
 const intersectionObserverInstances = [];
@@ -24,13 +24,13 @@ class FakeIntersectionObserver {
     this.instanceId = intersectionObserverInstances.length;
     intersectionObserverInstances.push({
       cb,
-      nodes: new Set(),
+      nodes: new Set()
     });
   }
 
   observe(node) {
     Object.defineProperty(node, "clientWidth", {
-      value: 600,
+      value: 600
     });
     intersectionObserverInstances[this.instanceId].nodes.add(node);
   }
@@ -70,11 +70,11 @@ const tests = [
       mount(
         <LazyLoad rootMargin="15px" threshold={0.7}>
           {() => null}
-        </LazyLoad>,
+        </LazyLoad>
       );
 
       expect(optsSpy.mock.calls[0][0]).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "should render with an observed node if it's visible",
@@ -94,7 +94,7 @@ const tests = [
               ))}
             </ul>
           )}
-        </LazyLoad>,
+        </LazyLoad>
       );
 
       expect(component.find("#node-1").text()).toEqual("false");
@@ -102,7 +102,7 @@ const tests = [
       const makeEntries = (nodes) =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.75 : 0,
-          target: node,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
@@ -112,7 +112,7 @@ const tests = [
       component.update();
 
       expect(component.find("#node-1").text()).toEqual("true");
-    },
+    }
   },
   {
     name: "should render with an unobserved node if it is not visible",
@@ -132,7 +132,7 @@ const tests = [
               ))}
             </ul>
           )}
-        </LazyLoad>,
+        </LazyLoad>
       );
 
       expect(component.find("#node-2").text()).toEqual("false");
@@ -140,7 +140,7 @@ const tests = [
       const makeEntries = (nodes) =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.75 : 0,
-          target: node,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
@@ -150,7 +150,7 @@ const tests = [
       component.update();
 
       expect(component.find("#node-2").text()).toEqual("false");
-    },
+    }
   },
   {
     name: "should render with all nodes as observed if there is no IntersectionObserver",
@@ -168,7 +168,7 @@ const tests = [
               ))}
             </ul>
           )}
-        </LazyLoad>,
+        </LazyLoad>
       );
 
       await delay(100);
@@ -178,7 +178,7 @@ const tests = [
       expect(component.find("#node-1").text()).toEqual("true");
       expect(component.find("#node-2").text()).toEqual("true");
       expect(component.find("#node-3").text()).toEqual("true");
-    },
+    }
   },
   {
     name: "should not observe an item if it is scrolled past quickly",
@@ -198,13 +198,13 @@ const tests = [
               ))}
             </ul>
           )}
-        </LazyLoad>,
+        </LazyLoad>
       );
 
       const makeEntries = (nodes) =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.75 : 0,
-          target: node,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
@@ -214,7 +214,7 @@ const tests = [
       const makeNewEntries = (nodes) =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.25 : 0.75,
-          target: node,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeNewEntries);
@@ -226,7 +226,7 @@ const tests = [
       expect(component.find("#node-1").text()).toEqual("false");
       expect(component.find("#node-2").text()).toEqual("true");
       expect(component.find("#node-3").text()).toEqual("true");
-    },
+    }
   },
   {
     name: "should observe no nodes if there are no pending items",
@@ -246,13 +246,13 @@ const tests = [
               ))}
             </ul>
           )}
-        </LazyLoad>,
+        </LazyLoad>
       );
 
       const makeEntries = (nodes) =>
         [...nodes].map((node) => ({
           intersectionRatio: 0.75,
-          target: node,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
@@ -262,7 +262,7 @@ const tests = [
       const makeNewEntries = (nodes) =>
         [...nodes].map((node) => ({
           intersectionRatio: 0,
-          target: node,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeNewEntries);
@@ -274,7 +274,7 @@ const tests = [
       expect(component.find("#node-1").text()).toEqual("false");
       expect(component.find("#node-2").text()).toEqual("false");
       expect(component.find("#node-3").text()).toEqual("false");
-    },
+    }
   },
   {
     name: "should not set state after unmounting",
@@ -296,13 +296,13 @@ const tests = [
               ))}
             </ul>
           )}
-        </LazyLoad>,
+        </LazyLoad>
       );
 
       const makeEntries = (nodes) =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.75 : 0,
-          target: node,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
@@ -312,7 +312,7 @@ const tests = [
       const makeNewEntries = (nodes) =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.25 : 0.75,
-          target: node,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeNewEntries);
@@ -326,7 +326,7 @@ const tests = [
       expect(setStateSpy.mock.calls.length).toBe(1);
 
       setStateSpy.mockRestore();
-    },
+    }
   },
   {
     name: "should disconnect from the IntersectionObserver when unmounting",
@@ -335,7 +335,7 @@ const tests = [
 
       const disconnectSpy = jest.spyOn(
         window.IntersectionObserver.prototype,
-        "disconnect",
+        "disconnect"
       );
 
       const list = ["node-1", "node-2", "node-3"];
@@ -351,7 +351,7 @@ const tests = [
               ))}
             </ul>
           )}
-        </LazyLoad>,
+        </LazyLoad>
       );
 
       component.unmount();
@@ -359,7 +359,7 @@ const tests = [
       expect(disconnectSpy).toHaveBeenCalled();
 
       disconnectSpy.mockRestore();
-    },
+    }
   },
   {
     name: "should not throw when unmounting with no IntersectionObserver",
@@ -379,12 +379,12 @@ const tests = [
               ))}
             </ul>
           )}
-        </LazyLoad>,
+        </LazyLoad>
       );
 
       expect(component.unmount.bind(component)).not.toThrow();
-    },
-  },
+    }
+  }
 ];
 
 iterator(tests);

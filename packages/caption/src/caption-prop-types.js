@@ -8,14 +8,14 @@ export const propTypes = {
   credits: PropTypes.string,
   style: PropTypes.shape({
     container: ViewPropTypesStyle,
-    text: TextPropTypesStyle,
+    text: TextPropTypesStyle
   }),
-  text: PropTypes.string,
+  text: PropTypes.string
 };
 
 export const defaultProps = {
   children: null,
   credits: "",
   style: {},
-  text: "",
+  text: ""
 };

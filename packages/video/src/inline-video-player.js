@@ -71,7 +71,7 @@ class InlineVideoPlayer extends Component {
 
     this.state = {
       error: null,
-      hasVideoPlayed: false,
+      hasVideoPlayed: false
     };
 
     this.id = `${props.videoId}-${props.accountId}-${props.id}`;
@@ -100,7 +100,7 @@ class InlineVideoPlayer extends Component {
 
   componentWillUnmount() {
     InlineVideoPlayer.activePlayers.splice(
-      InlineVideoPlayer.activePlayers.indexOf(this),
+      InlineVideoPlayer.activePlayers.indexOf(this)
     );
     if (this.player) {
       this.player.dispose();
@@ -144,14 +144,14 @@ class InlineVideoPlayer extends Component {
 
       s.onload = () => {
         InlineVideoPlayer.activePlayers.forEach((player) =>
-          player.initVideojs(),
+          player.initVideojs()
         );
       };
 
       s.onerror = () => {
         InlineVideoPlayer.scriptLoadError = "Brightcove script failed to load";
         InlineVideoPlayer.activePlayers.forEach((player) =>
-          player.handleError(),
+          player.handleError()
         );
       };
 

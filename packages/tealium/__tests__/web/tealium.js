@@ -4,7 +4,7 @@ export default () => {
   describe("createTealiumReport", () => {
     const mockEnqueue = jest.fn();
     const mockScheduler = jest.fn(() => ({
-      enqueue: mockEnqueue,
+      enqueue: mockEnqueue
     }));
 
     const callReporter = () => createTealiumReport(mockScheduler());

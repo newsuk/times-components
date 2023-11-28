@@ -8,15 +8,15 @@ export default {
         renderArticleTopics({ data: topicsData, decorateAction }),
       name: "Group of Topics",
       platform: "web",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
         renderArticleTopics({ data: [topicsData[0]], decorateAction }),
       name: "Single Topic",
       platform: "web",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Primitives/Article Topics",
+  name: "Primitives/Article Topics"
 };

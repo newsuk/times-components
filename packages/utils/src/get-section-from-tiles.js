@@ -17,6 +17,6 @@ module.exports = (article) =>
           hasSlices(curr) && hasSections(curr) && getSectionTitle(curr)
             ? getSectionTitle(curr)
             : acc,
-        "default",
+        "default"
       )
     : "default";

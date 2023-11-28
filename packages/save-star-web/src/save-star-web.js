@@ -25,12 +25,12 @@ function SaveStarWeb({ colour, hoverColour, articleId }) {
 SaveStarWeb.propTypes = {
   articleId: PropTypes.string.isRequired,
   colour: PropTypes.string,
-  hoverColour: PropTypes.string,
+  hoverColour: PropTypes.string
 };
 
 SaveStarWeb.defaultProps = {
   colour: styles.svgIcon.fillColour,
-  hoverColour: styles.svgIcon.hoverFillColour,
+  hoverColour: styles.svgIcon.hoverFillColour
 };
 
 export default SaveStarWeb;

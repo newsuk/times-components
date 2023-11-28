@@ -40,7 +40,7 @@ class Comments extends Component {
       onCommentRecommend,
       onCommentNotificationClicked,
       onCommentUsernameClicked,
-      onCommentSettingsClicked,
+      onCommentSettingsClicked
     } = this.props;
 
     if (!this.container || !articleId || !commentingConfig) {
@@ -85,43 +85,43 @@ class Comments extends Component {
         const shouldShowBanner = await userShouldUpdateName(displayName);
         if (shouldShowBanner) {
           window.dispatchEvent(
-            new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {}),
+            new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {})
           );
         }
       },
-      { once: true },
+      { once: true }
     );
 
     document.addEventListener(
       "spot-im-current-user-sent-message",
-      onCommentPost,
+      onCommentPost
     );
     document.addEventListener(
       "spot-im-notification-drop-down-link",
-      onCommentNotification,
+      onCommentNotification
     );
     document.addEventListener("spot-im-user-up-vote-click", onCommentRecommend);
     document.addEventListener("spot-im-sort-by-select", (event) =>
-      getFilterEvent(event),
+      getFilterEvent(event)
     );
     document.addEventListener(
       "spot-im-user-clicked-reply",
-      onCommentReplyClick,
+      onCommentReplyClick
     );
     document.addEventListener(
       "spot-im-clicked-settings",
-      onCommentSettingsClicked,
+      onCommentSettingsClicked
     );
     document.addEventListener(
       "spot-im-user-notifications-click",
-      onCommentNotificationClicked,
+      onCommentNotificationClicked
     );
     document.addEventListener(
       "spot-im-open-user-profile",
-      onCommentUsernameClicked,
+      onCommentUsernameClicked
     );
     document.addEventListener("spot-im-share-type", (event) =>
-      getShareEvent(event),
+      getShareEvent(event)
     );
 
     if (!isReadOnly) {
@@ -138,13 +138,13 @@ class Comments extends Component {
     launcherScript.setAttribute("async", "async");
     launcherScript.setAttribute(
       "src",
-      `https://launcher.spot.im/spot/${commentingConfig.account}`,
+      `https://launcher.spot.im/spot/${commentingConfig.account}`
     );
     launcherScript.setAttribute("data-spotim-module", "spotim-launcher");
     launcherScript.setAttribute("data-post-id", articleId);
     launcherScript.setAttribute(
       "data-post-url",
-      `https://www.thetimes.co.uk/article/${articleId}`,
+      `https://www.thetimes.co.uk/article/${articleId}`
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
@@ -174,7 +174,7 @@ class Comments extends Component {
       onCommentRecommend,
       onCommentNotificationClicked,
       onCommentUsernameClicked,
-      onCommentSettingsClicked,
+      onCommentSettingsClicked
     } = this.props;
 
     return (
@@ -210,7 +210,7 @@ Comments.propTypes = {
   articleId: PropTypes.string.isRequired,
   isReadOnly: PropTypes.bool.isRequired,
   commentingConfig: PropTypes.shape({
-    account: PropTypes.string.isRequired,
+    account: PropTypes.string.isRequired
   }).isRequired,
   onCommentStart: PropTypes.func,
   onCommentPost: PropTypes.func,
@@ -226,7 +226,7 @@ Comments.propTypes = {
   onCommentRecommend: PropTypes.func,
   onCommentNotificationClicked: PropTypes.func,
   onCommentUsernameClicked: PropTypes.func,
-  onCommentSettingsClicked: PropTypes.func,
+  onCommentSettingsClicked: PropTypes.func
 };
 
 // onCommentStart and onCommentPost are added as props in order to allow this events to be tracked by analytics.
@@ -245,7 +245,7 @@ Comments.defaultProps = {
   onCommentRecommend: () => {},
   onCommentNotificationClicked: () => {},
   onCommentUsernameClicked: () => {},
-  onCommentSettingsClicked: () => {},
+  onCommentSettingsClicked: () => {}
 };
 
 export default withTrackEvents(Comments);

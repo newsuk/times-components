@@ -5,32 +5,32 @@ import generateQueries from "./generate-queries";
 const biography = [
   {
     attributes: {
-      value: "Deborah Haynes is the defence editor at ",
+      value: "Deborah Haynes is the defence editor at "
     },
     children: [],
-    name: "text",
+    name: "text"
   },
   {
     attributes: {},
     children: [
       {
         attributes: {
-          value: "The Times",
+          value: "The Times"
         },
         children: [],
-        name: "text",
-      },
+        name: "text"
+      }
     ],
-    name: "italic",
+    name: "italic"
   },
   {
     attributes: {
       value:
-        ", covering the most important defence & security news in the UK and around the world.",
+        ", covering the most important defence & security news in the UK and around the world."
     },
     children: [],
-    name: "text",
-  },
+    name: "text"
+  }
 ];
 
 const generateAuthors = ({ count, error, hasLeadAssets, slug }) => {
@@ -41,7 +41,7 @@ const generateAuthors = ({ count, error, hasLeadAssets, slug }) => {
           __typename: "Author",
           articles: {
             __typename: "Articles",
-            count,
+            count
           },
           biography,
           hasLeadAssets,
@@ -49,23 +49,23 @@ const generateAuthors = ({ count, error, hasLeadAssets, slug }) => {
           jobTitle: "Defence Editor",
           name: "Deborah Haynes",
           twitter: "jdoe",
-          contractualTitle: "Contractual Title",
-        }),
-      },
+          contractualTitle: "Contractual Title"
+        })
+      }
     },
     query: authorQuery,
     variables: {
-      slug,
-    },
+      slug
+    }
   };
 
   if (error) {
     return [
       {
         ...query,
-        error: error(),
+        error: error()
       },
-      query,
+      query
     ];
   }
 
@@ -81,7 +81,7 @@ export default ({
   hasLeadAssets = true,
   makeItem = (x) => x,
   pageSize,
-  slug,
+  slug
 }) => [
   ...generateAuthors({ count, error: authorError, hasLeadAssets, slug }),
   ...generateQueries(
@@ -108,13 +108,13 @@ export default ({
                   shortIdentifier: `968n7tdck${itemIndex}`,
                   slug: `this-is-slug-${itemIndex}`,
                   summary: [],
-                  url: "https://url.io",
+                  url: "https://url.io"
                 },
-                itemIndex,
+                itemIndex
               );
             },
             Crop: () => ({
-              url: "https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_300_200.jpg",
+              url: "https://times-static-assets.s3.eu-west-1.amazonaws.com/assets/tech_300_200.jpg"
             }),
             Image: () => {
               imageIndex += 1;
@@ -123,12 +123,12 @@ export default ({
                 id: `e98c2${imageIndex
                   .toString()
                   .padStart(2)}c-cb16-11e7-b529-95e3fc05f40f`,
-                title: `Some title ${imageIndex}`,
+                title: `Some title ${imageIndex}`
               };
             },
             Media: () => ({
-              __typename: "Image",
-            }),
+              __typename: "Image"
+            })
           },
           values: {
             author: () => ({
@@ -137,16 +137,16 @@ export default ({
 
                 list(_, { first }) {
                   return new MockList(Math.min(count, first));
-                },
-              },
-            }),
-          },
+                }
+              }
+            })
+          }
         },
         error: articleError(iteration),
         query: articleQuery,
-        variables: articleVariables(iteration),
+        variables: articleVariables(iteration)
       };
     },
-    count === 0 ? 1 : count / pageSize,
-  ),
+    count === 0 ? 1 : count / pageSize
+  )
 ];

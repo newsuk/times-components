@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import {
   article as makeParams,
   MockedProvider,
-  schemaToMocks,
+  schemaToMocks
 } from "@times-components/provider-test-tools";
 import { ArticleProvider } from "../src/provider";
 
@@ -13,7 +13,7 @@ const renderComponent = (mocks, id, child) =>
       <ArticleProvider debounceTimeMs={0} id={id}>
         {child}
       </ArticleProvider>
-    </MockedProvider>,
+    </MockedProvider>
   );
 
 describe("ArticleProvider", () => {
@@ -29,24 +29,24 @@ describe("ArticleProvider", () => {
               children: [
                 {
                   attributes: {
-                    value: "test",
+                    value: "test"
                   },
-                  name: "text",
-                },
+                  name: "text"
+                }
               ],
-              name: "paragraph",
-            },
+              name: "paragraph"
+            }
           ],
           relatedArticleSlice: {
             __typename: "StandardSlice",
-            items: [article.relatedArticleSlice.items[0]],
-          },
+            items: [article.relatedArticleSlice.items[0]]
+          }
         }),
         relatedArticleCount: 1,
         variables: () => ({
-          id,
-        }),
-      }),
+          id
+        })
+      })
     ).then((mocks) =>
       renderComponent(mocks, id, ({ article, isLoading }) => {
         if (!isLoading) {
@@ -55,7 +55,7 @@ describe("ArticleProvider", () => {
         }
 
         return null;
-      }),
+      })
     );
   });
 });

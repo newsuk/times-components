@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import {
   authorProfile as makeAuthorParams,
   MockedProvider,
-  MockFixture,
+  MockFixture
 } from "@times-components/provider-test-tools";
 import { authorArticlesWithImages as authorArticlesWithImagesQuery } from "@times-components/provider-queries";
 import { AuthorProfileProvider } from "../src/provider";
@@ -21,10 +21,10 @@ const renderComponent = (child) => {
           first: pageSize,
           imageRatio: articleImageRatio,
           skip: (iteration - 1) * pageSize,
-          slug,
+          slug
         }),
         pageSize,
-        slug,
+        slug
       })}
       render={(mocks) => (
         <MockedProvider mocks={mocks}>
@@ -38,7 +38,7 @@ const renderComponent = (child) => {
           </AuthorProfileProvider>
         </MockedProvider>
       )}
-    />,
+    />
   );
 };
 

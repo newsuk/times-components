@@ -5,7 +5,7 @@ import { breakpoints } from "@times-components/ts-styleguide";
 
 import {
   handleOnClickScrollTo,
-  handleHrefScrollTo,
+  handleHrefScrollTo
 } from "@times-components/utils";
 
 import PropTypes from "prop-types";
@@ -32,12 +32,12 @@ const Link = ({
   onPress = () => {},
   target = null,
   underlined = true,
-  responsiveLinkStyles = null,
+  responsiveLinkStyles = null
 }) => {
   const props = {
     underlined,
     target,
-    responsiveLinkStyles,
+    responsiveLinkStyles
   };
 
   return (
@@ -62,8 +62,8 @@ Link.propTypes = {
   underlined: PropTypes.bool,
   responsiveLinkStyles: PropTypes.shape({
     base: PropTypes.string,
-    medium: PropTypes.string,
-  }),
+    medium: PropTypes.string
+  })
 };
 
 export default Link;

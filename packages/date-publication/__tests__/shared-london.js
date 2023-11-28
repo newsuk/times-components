@@ -10,42 +10,42 @@ export default (date) => {
       name: "date and TIMES publication",
       test() {
         const testInstance = TestRenderer.create(
-          <DatePublication date={date} publication="TIMES" />,
+          <DatePublication date={date} publication="TIMES" />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "date and SUNDAYTIMES publication",
       test() {
         const testInstance = TestRenderer.create(
-          <DatePublication date={date} publication="SUNDAYTIMES" />,
+          <DatePublication date={date} publication="SUNDAYTIMES" />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "date and no given publication",
       test() {
         const testInstance = TestRenderer.create(
-          <DatePublication date={date} />,
+          <DatePublication date={date} />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "date and no day",
       test() {
         const testInstance = TestRenderer.create(
-          <DatePublication date={date} showDay={false} />,
+          <DatePublication date={date} showDay={false} />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

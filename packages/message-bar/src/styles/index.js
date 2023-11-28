@@ -7,8 +7,8 @@ const styles = (scale, breakpoint) => ({
   messageManager: {
     ...sharedStyles(scale, breakpoint).messageManager,
     position: "fixed",
-    left: 0,
-  },
+    left: 0
+  }
 });
 
 const AnimationIn = keyframes`

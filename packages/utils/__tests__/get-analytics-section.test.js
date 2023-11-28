@@ -3,7 +3,7 @@ import { getSectionNameForAnalytics } from "../src/index";
 describe("getSectionNameForAnalytics", () => {
   it("should return null when no tiles present", () => {
     const article = {
-      tiles: null,
+      tiles: null
     };
     expect(getSectionNameForAnalytics(article)).toEqual(null);
   });
@@ -14,11 +14,11 @@ describe("getSectionNameForAnalytics", () => {
         {
           slices: [
             {
-              sections: [],
-            },
-          ],
-        },
-      ],
+              sections: []
+            }
+          ]
+        }
+      ]
     };
     expect(getSectionNameForAnalytics(article)).toEqual("unknown section");
   });
@@ -31,13 +31,13 @@ describe("getSectionNameForAnalytics", () => {
             {
               sections: [
                 {
-                  title: null,
-                },
-              ],
-            },
-          ],
-        },
-      ],
+                  title: null
+                }
+              ]
+            }
+          ]
+        }
+      ]
     };
     expect(getSectionNameForAnalytics(article)).toEqual("unknown section");
   });
@@ -50,16 +50,16 @@ describe("getSectionNameForAnalytics", () => {
             {
               sections: [
                 {
-                  title: "ireland",
+                  title: "ireland"
                 },
                 {
-                  title: "news",
-                },
-              ],
-            },
-          ],
-        },
-      ],
+                  title: "news"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     };
     expect(getSectionNameForAnalytics(article)).toEqual("ireland");
   });

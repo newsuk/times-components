@@ -4,7 +4,7 @@ import {
   enzymeRenderedSerializer,
   minimalWebTransform,
   minimaliseTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 
 addSerializers(
@@ -13,6 +13,6 @@ addSerializers(
   compose(
     print,
     minimalWebTransform,
-    minimaliseTransform((value, key) => key === "style" || key === "className"),
-  ),
+    minimaliseTransform((value, key) => key === "style" || key === "className")
+  )
 );

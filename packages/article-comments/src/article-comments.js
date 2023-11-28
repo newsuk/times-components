@@ -13,7 +13,7 @@ const ArticleComments = ({
   isReadOnly,
   commentingConfig,
   isCommentEnabled,
-  storefrontConfig,
+  storefrontConfig
 }) =>
   isEnabled && isCommentEnabled ? (
     <>
@@ -37,15 +37,15 @@ ArticleComments.propTypes = {
   isEnabled: PropTypes.bool.isRequired,
   isReadOnly: PropTypes.bool,
   commentingConfig: PropTypes.shape({
-    account: PropTypes.string.isRequired,
+    account: PropTypes.string.isRequired
   }).isRequired,
   storefrontConfig: PropTypes.string.isRequired,
-  isCommentEnabled: PropTypes.bool,
+  isCommentEnabled: PropTypes.bool
 };
 
 ArticleComments.defaultProps = {
   isReadOnly: false,
-  isCommentEnabled: true,
+  isCommentEnabled: true
 };
 
 export default ArticleComments;

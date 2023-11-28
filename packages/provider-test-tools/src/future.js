@@ -9,6 +9,6 @@ export default function createFuture() {
     resolve: () => {
       resolve();
       return promise;
-    },
+    }
   };
 }

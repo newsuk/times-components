@@ -6,13 +6,13 @@ import { ArticleBookmarked } from "@times-components/provider";
 import {
   saveBookmarks,
   unsaveBookmarks,
-  articleBookmarked,
+  articleBookmarked
 } from "@times-components/provider-queries";
 
 function updateCache(cache, { id, isBookmarked }) {
   const cached = cache.readQuery({
     query: articleBookmarked,
-    variables: { id },
+    variables: { id }
   });
 
   cache.writeQuery({
@@ -22,9 +22,9 @@ function updateCache(cache, { id, isBookmarked }) {
       ...cached,
       article: {
         ...cached.article,
-        isBookmarked,
-      },
-    },
+        isBookmarked
+      }
+    }
   });
 }
 
@@ -38,14 +38,14 @@ function removeBookmark(cache, id) {
 
 function onSaveMutationUpdate(
   cache,
-  { data: { saveBookmarks: bookmarks = [] } },
+  { data: { saveBookmarks: bookmarks = [] } }
 ) {
   bookmarks.forEach((bookmark) => addBookmark(cache, bookmark.id));
 }
 
 function onUnsaveMutationUpdate(
   cache,
-  { data: { unsaveBookmarks: ids = [] } },
+  { data: { unsaveBookmarks: ids = [] } }
 ) {
   ids.forEach((articleId) => removeBookmark(cache, articleId));
 }
@@ -75,7 +75,7 @@ function SaveAPI({ articleId, children }) {
                       }
                     },
                     isLoading:
-                      isLoading || saveMutationLoading || unsaveMutationLoading,
+                      isLoading || saveMutationLoading || unsaveMutationLoading
                   })
                 }
               </Mutation>
@@ -89,7 +89,7 @@ function SaveAPI({ articleId, children }) {
 
 SaveAPI.propTypes = {
   children: PropTypes.func.isRequired,
-  articleId: PropTypes.string.isRequired,
+  articleId: PropTypes.string.isRequired
 };
 
 export default SaveAPI;

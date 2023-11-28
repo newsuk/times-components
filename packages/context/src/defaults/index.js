@@ -7,12 +7,12 @@ export default {
       : "",
   makeTopicUrl: ({ slug }) => `/topic/${slug}`,
   theme: {
-    scale: scales.medium,
+    scale: scales.medium
   },
   user: {
     isLoggedIn: false,
     isMetered: false,
     isShared: false,
-    registrationType: "",
-  },
+    registrationType: ""
+  }
 };

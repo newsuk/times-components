@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { colours } from "@times-components/ts-styleguide";
 import {
   propTypes as twitterPropTypes,
-  defaultProps as twitterDefaultTypes,
+  defaultProps as twitterDefaultTypes
 } from "./pull-quote-twitter-link-prop-types";
 
 export const propTypes = {
@@ -12,7 +12,7 @@ export const propTypes = {
   onTwitterLinkPress: twitterPropTypes.onTwitterLinkPress,
   quoteColour: PropTypes.string,
   text: PropTypes.string,
-  twitter: twitterPropTypes.twitter,
+  twitter: twitterPropTypes.twitter
 };
 
 export const defaultProps = {
@@ -20,5 +20,5 @@ export const defaultProps = {
   font: null,
   quoteColour: colours.functional.secondary,
   text: "",
-  twitter: twitterDefaultTypes.twitter,
+  twitter: twitterDefaultTypes.twitter
 };

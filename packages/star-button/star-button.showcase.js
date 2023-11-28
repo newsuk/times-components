@@ -3,7 +3,7 @@ import StarButton from "./src/star-button";
 
 const getProps = ({ boolean }) => ({
   isDark: boolean("Enable Dark theme", false),
-  onPress: () => {},
+  onPress: () => {}
 });
 
 export default {
@@ -11,18 +11,18 @@ export default {
     {
       component: (knobs) => <StarButton {...getProps(knobs)} />,
       name: "Initial",
-      type: "story",
+      type: "story"
     },
     {
       component: (knobs) => <StarButton {...getProps(knobs)} selected />,
       name: "Selected",
-      type: "story",
+      type: "story"
     },
     {
       component: (knobs) => <StarButton {...getProps(knobs)} disabled />,
       name: "Disabled",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Primitives/Star Button",
+  name: "Primitives/Star Button"
 };

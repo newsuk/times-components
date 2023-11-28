@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 import {
   VideoErrorContainer,
   VideoErrorHeading,
-  VideoErrorBody,
+  VideoErrorBody
 } from "./styles";
 
 const VideoError = ({ height, width }) => (
   <VideoErrorContainer
     style={{
       height,
-      width,
+      width
     }}
   >
     <VideoErrorHeading>Video unable to play</VideoErrorHeading>
@@ -23,7 +23,7 @@ const VideoError = ({ height, width }) => (
 
 VideoError.propTypes = {
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 
 export default VideoError;

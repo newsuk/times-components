@@ -24,7 +24,7 @@ within your tests you can now use code that looks like this:
 ```javascript
 import {
   addSerializers,
-  enzymeRenderedSerializer,
+  enzymeRenderedSerializer
 } from "@times-components/jest-serializer";
 
 addSerializers(expect, enzymeRenderedSerializer());
@@ -151,7 +151,7 @@ keeping them focused e.g.
 ```javascript
 addSerializers(
   expect,
-  minimalise((value, key) => key === "style"),
+  minimalise((value, key) => key === "style")
 );
 ```
 

@@ -65,12 +65,12 @@ const data = [
       {
         name: "text",
         attributes: {
-          value: "Some text value here",
+          value: "Some text value here"
         },
-        children: [],
-      },
-    ],
-  },
+        children: []
+      }
+    ]
+  }
 ];
 
 renderTrees(data, coreRenderers);

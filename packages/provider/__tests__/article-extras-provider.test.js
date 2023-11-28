@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import {
   MockedProvider,
   MockFixture,
-  articleExtras as makeArticleExtrasParams,
+  articleExtras as makeArticleExtrasParams
 } from "@times-components/provider-test-tools";
 import { ArticleExtrasProvider } from "../src/provider";
 
@@ -17,8 +17,8 @@ const renderComponent = (child) => {
         enabled: true,
         id,
         variables: () => ({
-          id,
-        }),
+          id
+        })
       })}
       render={(mocks) => (
         <MockedProvider mocks={mocks}>
@@ -27,7 +27,7 @@ const renderComponent = (child) => {
           </ArticleExtrasProvider>
         </MockedProvider>
       )}
-    />,
+    />
   );
 };
 

@@ -7,7 +7,7 @@ export const getSelfContainedFunctionErrors = (f) => {
 
   return linter
     .verify(source, {
-      rules: { "no-undef": "error" },
+      rules: { "no-undef": "error" }
     })
     .filter((e) => !/'cov_\w+' is not defined./.test(e.message))
     .filter((e) => !/'console' is not defined./.test(e.message))

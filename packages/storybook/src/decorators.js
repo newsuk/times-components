@@ -12,7 +12,7 @@ export const CenteredDecorator = (storyFn) => (
       left: 0,
       position: "absolute",
       right: 0,
-      top: 0,
+      top: 0
     }}
   >
     {storyFn()}
@@ -23,7 +23,7 @@ export const BarSpacingDecorator = (storyFn) => (
   <TcView
     style={{
       flex: 1,
-      marginTop: 20,
+      marginTop: 20
     }}
   >
     {storyFn()}
@@ -35,7 +35,7 @@ export const LateralSpacingDecorator = (storyFn) => (
     style={{
       flex: 1,
       marginLeft: 20,
-      marginRight: 20,
+      marginRight: 20
     }}
   >
     {storyFn()}
@@ -51,7 +51,7 @@ export const WhiteBgColorDecorator = (storyFn) => (
       left: 0,
       position: "absolute",
       right: 0,
-      top: 0,
+      top: 0
     }}
   >
     {storyFn()}

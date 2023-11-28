@@ -4,7 +4,7 @@ import {
   spacing,
   fontsWithFallback,
   colours,
-  fontSizes,
+  fontSizes
 } from "@times-components/ts-styleguide";
 
 export const KeyFactTextLink = styled.a`

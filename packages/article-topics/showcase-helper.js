@@ -7,7 +7,7 @@ const preventDefaultedAction = (decorateAction) =>
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    },
+    }
   ]);
 
 const renderArticleTopics = ({ data, decorateAction }) => (

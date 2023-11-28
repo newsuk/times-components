@@ -12,7 +12,7 @@ export const cardPropTypes = {
   isLoading: PropTypes.bool,
   isLcpItem: PropTypes.bool,
   lowResQuality: PropTypes.number,
-  lowResSize: PropTypes.number,
+  lowResSize: PropTypes.number
 };
 
 export const cardDefaultProps = {
@@ -26,5 +26,5 @@ export const cardDefaultProps = {
   isLoading: false,
   isLcpItem: false,
   lowResQuality: null,
-  lowResSize: null,
+  lowResSize: null
 };

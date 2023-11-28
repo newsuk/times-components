@@ -9,16 +9,16 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value:
-            "Critically, he said this would not necessarily require the withdrawal agreement to be reopened but could instead be done by a legally binding codicil. He added that should his amendment be passed in a Commons vote tomorrow it would give “enormous firepower” to the prime minister when she returned to Brussels.",
+            "Critically, he said this would not necessarily require the withdrawal agreement to be reopened but could instead be done by a legally binding codicil. He added that should his amendment be passed in a Commons vote tomorrow it would give “enormous firepower” to the prime minister when she returned to Brussels."
         },
-        children: [],
-      },
-    ],
+        children: []
+      }
+    ]
   },
   ad: {
     name: "ad",
     attributes: {},
-    children: [],
+    children: []
   },
   inline: {
     name: "inline",
@@ -27,11 +27,11 @@ const markupTypes: Markup = {
       {
         name: "text",
         attributes: {
-          value: "Libby Purves",
+          value: "Libby Purves"
         },
-        children: [],
-      },
-    ],
+        children: []
+      }
+    ]
   },
   bylines: [
     {
@@ -43,16 +43,16 @@ const markupTypes: Markup = {
               name: "text",
               children: [],
               attributes: {
-                value: "Richard Lloyd Parry",
-              },
-            },
+                value: "Richard Lloyd Parry"
+              }
+            }
           ],
           attributes: {
-            slug: "richard-lloyd-parry",
-          },
-        },
+            slug: "richard-lloyd-parry"
+          }
+        }
       ],
-      image: null,
+      image: null
     },
     {
       byline: [
@@ -63,14 +63,14 @@ const markupTypes: Markup = {
               name: "text",
               children: [],
               attributes: {
-                value: ", Hanoi",
-              },
-            },
-          ],
-        },
+                value: ", Hanoi"
+              }
+            }
+          ]
+        }
       ],
-      image: null,
-    },
+      image: null
+    }
   ],
   summary105: {
     name: "paragraph",
@@ -80,11 +80,11 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value:
-            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught",
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught"
         },
-        children: [],
-      },
-    ],
+        children: []
+      }
+    ]
   },
   summary125: {
     name: "paragraph",
@@ -94,11 +94,11 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value:
-            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.",
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty."
         },
-        children: [],
-      },
-    ],
+        children: []
+      }
+    ]
   },
   summary145: {
     name: "paragraph",
@@ -108,11 +108,11 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value:
-            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.",
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty."
         },
-        children: [],
-      },
-    ],
+        children: []
+      }
+    ]
   },
   summary160: {
     name: "paragraph",
@@ -122,11 +122,11 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value:
-            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty. The first is to try and stop MPs voting",
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty. The first is to try and stop MPs voting"
         },
-        children: [],
-      },
-    ],
+        children: []
+      }
+    ]
   },
   summary175: {
     name: "paragraph",
@@ -136,11 +136,11 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value:
-            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty. The first is to try and stop MPs voting to take",
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty. The first is to try and stop MPs voting to take"
         },
-        children: [],
-      },
-    ],
+        children: []
+      }
+    ]
   },
   summary225: {
     name: "paragraph",
@@ -150,11 +150,11 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value:
-            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty. The first is to try and stop MPs voting to take control of the Brexit process themselves. To do this a",
+            "Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty. The first is to try and stop MPs voting to take control of the Brexit process themselves. To do this a"
         },
-        children: [],
-      },
-    ],
+        children: []
+      }
+    ]
   },
   summary300: {
     name: "paragraph",
@@ -164,11 +164,11 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value:
-            "‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.",
+            "‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye."
         },
-        children: [],
-      },
-    ],
+        children: []
+      }
+    ]
   },
   summary800: {
     name: "paragraph",
@@ -178,11 +178,11 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value:
-            "Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit",
+            "Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit"
         },
-        children: [],
-      },
-    ],
+        children: []
+      }
+    ]
   },
   summary1000: {
     name: "paragraph",
@@ -192,12 +192,12 @@ const markupTypes: Markup = {
         name: "text",
         attributes: {
           value:
-            "Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit. to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today.",
+            "Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit. to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today."
         },
-        children: [],
-      },
-    ],
-  },
+        children: []
+      }
+    ]
+  }
 };
 
 interface MarkupConfig {
@@ -208,7 +208,7 @@ interface MarkupConfig {
 const generateMarkup = (
   array: Array<Markup>,
   markupType: Markup,
-  iterations: number,
+  iterations: number
 ) => {
   new Array(iterations)
     .fill(0)
@@ -226,7 +226,7 @@ class MockMarkup {
     this.markup = generateMarkup(
       this.markup,
       markupTypes.paragraph.name,
-      length,
+      length
     );
     return this;
   }

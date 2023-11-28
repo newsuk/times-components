@@ -2,17 +2,17 @@
 import React from "react";
 import {
   addSerializers,
-  enzymeTreeSerializer,
+  enzymeTreeSerializer
 } from "@times-components/jest-serializer";
 import { mount } from "enzyme";
 import { delay } from "@times-components/test-utils";
 import InteractiveWrapper, {
-  polyfillWCIfNecessary,
+  polyfillWCIfNecessary
 } from "../../src/interactive-wrapper";
 
 jest.mock("@times-components/image", () => ({
   __esModule: true,
-  Placeholder: () => null,
+  Placeholder: () => null
 }));
 
 addSerializers(expect, enzymeTreeSerializer());
@@ -25,7 +25,7 @@ describe("interactive-wrapper", () => {
   async function waitForInserted() {
     await polyfillPromise;
     Array.from(document.querySelectorAll("link")).forEach((link) =>
-      link.onload(),
+      link.onload()
     );
   }
 
@@ -44,13 +44,13 @@ describe("interactive-wrapper", () => {
       attributes: {
         chaptercounter: "Chapter%20one",
         heading: "A heading",
-        standfirst: "A standfirst",
+        standfirst: "A standfirst"
       },
       element: "chapter-header",
       id: "a0534eee-682e-4955-8e1e-84b428ef1e79",
       source:
         "//components.timesdev.tools/lib2/times-chapter-header-1.0.0/chapter-header.html",
-      fetchPolyfill: () => polyfillPromise,
+      fetchPolyfill: () => polyfillPromise
     };
   });
 
@@ -121,7 +121,7 @@ describe("interactive-wrapper", () => {
     it("adds the polyfill to the page only once", async () => {
       const promise = Promise.all([
         polyfillWCIfNecessary(),
-        polyfillWCIfNecessary(),
+        polyfillWCIfNecessary()
       ]);
 
       window.dispatchEvent(new Event("WebComponentsReady"));
@@ -138,7 +138,7 @@ describe("interactive-wrapper", () => {
   it("calls to fetch polyfill when mounting", () => {
     const fetchPolyfill = jest.fn(() => Promise.resolve());
     mount(<InteractiveWrapper {...props} fetchPolyfill={fetchPolyfill} />, {
-      attachTo: container,
+      attachTo: container
     });
 
     expect(fetchPolyfill).toHaveBeenCalled();
@@ -165,7 +165,7 @@ describe("interactive-wrapper", () => {
 
   it("renders correctly once polyfill is loaded", async () => {
     mount(<InteractiveWrapper {...props} />, {
-      attachTo: container,
+      attachTo: container
     });
 
     await waitForInserted();
@@ -175,13 +175,13 @@ describe("interactive-wrapper", () => {
 
   it("re-shows the placeholder on re-render", async () => {
     const component = mount(<InteractiveWrapper {...props} />, {
-      attachTo: container,
+      attachTo: container
     });
 
     await waitForInserted();
 
     component.setProps({
-      source: "//components.timesdev.tools/new-element.html",
+      source: "//components.timesdev.tools/new-element.html"
     });
 
     await polyfillPromise;
@@ -191,19 +191,19 @@ describe("interactive-wrapper", () => {
 
   it("updates the rendered interactive on update", async () => {
     const component = mount(<InteractiveWrapper {...props} />, {
-      attachTo: container,
+      attachTo: container
     });
 
     await waitForInserted();
 
     component.setProps({
       attributes: {
-        another: "attribute",
+        another: "attribute"
       },
       element: "another-component",
       id: "another-component",
       source:
-        "//components.timesdev.tools/lib2/times-another-component-1.0.0/another-component.html",
+        "//components.timesdev.tools/lib2/times-another-component-1.0.0/another-component.html"
     });
 
     await waitForInserted();
@@ -216,8 +216,8 @@ describe("interactive-wrapper", () => {
     const component = mount(
       <InteractiveWrapper {...props} element="test-element" />,
       {
-        attachTo: container,
-      },
+        attachTo: container
+      }
     );
 
     await polyfillPromise;

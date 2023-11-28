@@ -3,19 +3,19 @@ module.exports = (api) => {
   return {
     plugins: [
       "babel-plugin-styled-components",
-      "@babel/plugin-proposal-export-default-from",
+      "@babel/plugin-proposal-export-default-from"
     ],
     presets: [
       [
         "@babel/preset-env",
         {
           targets: {
-            esmodules: true,
-          },
-        },
+            esmodules: true
+          }
+        }
       ],
       "@babel/preset-react",
-      "@babel/preset-typescript",
-    ],
+      "@babel/preset-typescript"
+    ]
   };
 };

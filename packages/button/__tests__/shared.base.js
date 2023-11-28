@@ -8,11 +8,11 @@ export default (renderMethod) => {
       name: "button",
       test: () => {
         const output = renderMethod(
-          <Button onPress={() => null} title="test button" />,
+          <Button onPress={() => null} title="test button" />
         );
 
         expect(output).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "button with font and line-height",
@@ -23,12 +23,12 @@ export default (renderMethod) => {
             lineHeight={10}
             onPress={() => null}
             title="test button"
-          />,
+          />
         );
 
         expect(output).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

@@ -25,7 +25,7 @@ export default () => {
       }),
       postMessageDecoded: jest.fn(),
       requestAnimationFrame: realWindow.requestAnimationFrame,
-      setTimeout: realWindow.setTimeout,
+      setTimeout: realWindow.setTimeout
     };
     errorHandler = null;
   });
@@ -51,7 +51,7 @@ export default () => {
     expect(window.postMessageDecoded).toHaveBeenCalledWith({
       detail: messageDetail,
       isTngMessage: true,
-      type: "error",
+      type: "error"
     });
   };
 
@@ -60,7 +60,7 @@ export default () => {
       colno: "d",
       filename: "b",
       lineno: "c",
-      message: "a",
+      message: "a"
     };
     expectMessageFromError(error, "msg=a, file=b, line=c, col=d");
   });
@@ -74,11 +74,11 @@ export default () => {
       colno: "d",
       filename: longFileName,
       lineno: "c",
-      message: "a",
+      message: "a"
     };
     expectMessageFromError(
       error,
-      `msg=a, file=${truncatedFileName}, line=c, col=d`,
+      `msg=a, file=${truncatedFileName}, line=c, col=d`
     );
   });
 
@@ -94,7 +94,7 @@ export default () => {
     expect(window.postMessageDecoded).toHaveBeenCalledWith({
       detail: "a\nb\nc",
       isTngMessage: true,
-      type: "error",
+      type: "error"
     });
   });
 };

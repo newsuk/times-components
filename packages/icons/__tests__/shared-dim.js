@@ -7,7 +7,7 @@ import {
   print,
   propsNoChildren,
   replacePropTransform,
-  replaceTransform,
+  replaceTransform
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import shared from "./shared-dim.base";
@@ -20,13 +20,13 @@ export default () => {
     compose(
       print,
       replaceTransform({
-        svg: propsNoChildren,
+        svg: propsNoChildren
       }),
       minimaliseTransform((value, key) => key === "style" || key === "viewBox"),
       replacePropTransform((value, key) =>
-        longKeysSet.has(key) ? hash(JSON.stringify(value)) : value,
-      ),
-    ),
+        longKeysSet.has(key) ? hash(JSON.stringify(value)) : value
+      )
+    )
   );
 
   shared(mount);

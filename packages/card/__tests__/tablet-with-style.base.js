@@ -9,7 +9,7 @@ const props = {
   imageRatio: 2 / 3,
   imageUri: "https://img.io/img",
   lowResSize: 25,
-  showImage: true,
+  showImage: true
 };
 
 const withTabletContext = (WrappedComponent) => (
@@ -29,15 +29,15 @@ export default (renderMethod) => {
           withTabletContext(
             <Card {...props}>
               <TcText>A card</TcText>
-            </Card>,
-          ),
+            </Card>
+          )
         );
 
         jest.runTimersToTime();
 
         expect(output).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

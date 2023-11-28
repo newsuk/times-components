@@ -7,10 +7,10 @@ const videoProps = {
   playerId: "default",
   policyKey: "[policy key]",
   poster: {
-    uri: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+    uri: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
   },
   videoId: "[video id]",
-  width: 300,
+  width: 300
 };
 
 export default videoProps;

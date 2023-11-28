@@ -14,7 +14,7 @@ const AdContainer = ({ slotName, style }) => {
     pixelskin: "ad-pixelskin",
     inlineAd1: "ad-article-inline-1",
     inlineAd2: "ad-article-inline-2",
-    inlineAd3: "ad-article-inline-3",
+    inlineAd3: "ad-article-inline-3"
   };
 
   return (
@@ -26,7 +26,7 @@ const AdContainer = ({ slotName, style }) => {
 
 const propTypes = {
   slotName: PropTypes.string.isRequired,
-  style: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  style: PropTypes.oneOfType([PropTypes.object]).isRequired
 };
 
 AdContainer.propTypes = propTypes;

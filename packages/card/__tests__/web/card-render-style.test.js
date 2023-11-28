@@ -9,7 +9,7 @@ const props = {
   imageRatio: 2 / 3,
   imageUri: "https://img.io/img",
   lowResSize: 50,
-  showImage: true,
+  showImage: true
 };
 
 jest.useFakeTimers();
@@ -20,7 +20,7 @@ it("card with default layout", () => {
   const wrapper = mount(
     <Card {...props}>
       <TcText>A card</TcText>
-    </Card>,
+    </Card>
   );
 
   jest.runTimersToTime();

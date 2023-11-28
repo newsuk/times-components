@@ -9,12 +9,12 @@ export default () => {
   const { adserverTargeting } = prebidConfig.bidderSettings({
     bucketSize,
     maxBid,
-    minPrice,
+    minPrice
   });
 
   it("should return the correct value for the hd_bidder", () => {
     const hbBidder = adserverTargeting.filter(
-      (item) => item.key === "hb_bidder",
+      (item) => item.key === "hb_bidder"
     )[0];
     expect(hbBidder.val({ bidder: dummyValue })).toEqual(dummyValue);
   });

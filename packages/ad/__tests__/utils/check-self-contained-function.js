@@ -1,6 +1,6 @@
 import {
   getSelfContainedFunctionErrors,
-  reportErrors,
+  reportErrors
 } from "../../fixtures/check-self-contained-function";
 
 export default () => {
@@ -23,7 +23,7 @@ export default () => {
   it("does not find errors in a function using console", () => {
     // eslint-disable-next-line no-console
     expect(getSelfContainedFunctionErrors(() => console.log("Hi!"))).toEqual(
-      [],
+      []
     );
   });
 

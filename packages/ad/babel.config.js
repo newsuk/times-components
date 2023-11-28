@@ -8,12 +8,12 @@ module.exports = (api) => {
         {
           targets: {
             esmodules: false,
-            node: "current",
-          },
-        },
+            node: "current"
+          }
+        }
       ],
       "@babel/preset-react",
-      "@babel/preset-typescript",
-    ],
+      "@babel/preset-typescript"
+    ]
   };
 };

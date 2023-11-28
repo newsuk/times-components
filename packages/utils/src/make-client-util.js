@@ -31,14 +31,14 @@ const makeClient = () => {
     [
       usePersistedQueries &&
         createPersistedQueryLink({ useGETForHashedQueries: true }),
-      createHttpLink(networkInterfaceOptions),
-    ].filter(Boolean),
+      createHttpLink(networkInterfaceOptions)
+    ].filter(Boolean)
   );
 
   return new ApolloClient({
     name: `@times-components/utils (${clientName})`,
     cache: new InMemoryCache({ fragmentMatcher }),
-    link,
+    link
   });
 };
 

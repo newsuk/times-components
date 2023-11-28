@@ -4,11 +4,11 @@ import print from "./printers";
 export const propsNoChildren = (node, props) => ({
   children: [],
   node,
-  props,
+  props
 });
 
 export const justChildren = (node, props, children) => ({
-  children,
+  children
 });
 
 export const replaceTransform = (config) => (accum, node, props, children) => {
@@ -17,28 +17,28 @@ export const replaceTransform = (config) => (accum, node, props, children) => {
       accum,
       children,
       node,
-      props,
+      props
     };
   }
 
   if (!config[node.type]) {
     return {
       accum,
-      node: null,
+      node: null
     };
   }
 
   const {
     node: tNode,
     props: tProps,
-    children: tChildren,
+    children: tChildren
   } = config[node.type](node, props, children);
 
   return {
     accum,
     children: tChildren,
     node: tNode,
-    props: tProps,
+    props: tProps
   };
 };
 

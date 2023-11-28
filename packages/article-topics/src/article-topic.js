@@ -14,7 +14,7 @@ const ArticleTopic = ({ fontSize, lineHeight, name, onPress, slug }) => {
   const textStyles = {
     ...styles.text,
     fontSizeStyle,
-    ...lineHeightStyle,
+    ...lineHeightStyle
   };
   return (
     <Context.Consumer>
@@ -50,9 +50,9 @@ export default withTrackEvents(ArticleTopic, {
       eventName: "onPress",
       getAttrs: ({ name, slug }) => ({
         name,
-        slug,
+        slug
       }),
-      trackingName: "TopicLink",
-    },
-  ],
+      trackingName: "TopicLink"
+    }
+  ]
 });

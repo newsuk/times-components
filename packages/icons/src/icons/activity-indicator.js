@@ -33,7 +33,7 @@ const ActivityIndicatorContainer = styled.div`
 
 const IconActivityIndicator = ({
   fillColour,
-  title = "Activity Indicator",
+  title = "Activity Indicator"
 }) => (
   <ActivityIndicatorContainer>
     <ActivityIndicatorSpinner
@@ -46,7 +46,7 @@ const IconActivityIndicator = ({
 IconActivityIndicator.propTypes = propTypes;
 
 IconActivityIndicator.defaultProps = {
-  fillColour: colours.functional.action,
+  fillColour: colours.functional.action
 };
 
 export default IconActivityIndicator;

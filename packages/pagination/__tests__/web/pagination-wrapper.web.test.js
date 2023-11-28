@@ -13,7 +13,7 @@ test("replaces history state when mounted", () => {
   const PageChanger = withPageState(TestComponent);
 
   const props = {
-    page: 2,
+    page: 2
   };
 
   const pushState = jest.spyOn(window.history, "pushState");
@@ -46,7 +46,7 @@ test("adds history state when the page changes", () => {
   const PageChanger = withPageState(TestComponent);
 
   const props = {
-    page: 2,
+    page: 2
   };
 
   TestRenderer.create(<PageChanger {...props} />);
@@ -69,15 +69,15 @@ test("updates the page state when the history changes", () => {
   const PageChanger = withPageState(TestComponent);
 
   const props = {
-    page: 2,
+    page: 2
   };
 
   const testRenderer = TestRenderer.create(<PageChanger {...props} />);
 
   window.onpopstate({
     state: {
-      page: 4,
-    },
+      page: 4
+    }
   });
 
   expect(testRenderer).toMatchSnapshot();
@@ -92,7 +92,7 @@ test("does not update the page state when the history changes without a page", (
   const PageChanger = withPageState(TestComponent);
 
   const props = {
-    page: 2,
+    page: 2
   };
 
   const testRenderer = TestRenderer.create(<PageChanger {...props} />);
@@ -111,7 +111,7 @@ test("removes the onpopstate customisation when unmounted", () => {
   const PageChanger = withPageState(TestComponent);
 
   const props = {
-    page: 2,
+    page: 2
   };
 
   const testRenderer = TestRenderer.create(<PageChanger {...props} />);

@@ -5,7 +5,7 @@ import {
   flattenStyleTransform,
   hoistStyleTransform,
   minimalWebTransform,
-  stylePrinter,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import { mount } from "enzyme";
 import shared from "./shared.base";
@@ -18,8 +18,8 @@ export default () => {
       stylePrinter,
       flattenStyleTransform,
       hoistStyleTransform,
-      minimalWebTransform,
-    ),
+      minimalWebTransform
+    )
   );
 
   shared(mount);

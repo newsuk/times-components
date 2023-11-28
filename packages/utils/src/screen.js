@@ -2,7 +2,7 @@ import { tabletWidth } from "@times-components/ts-styleguide";
 import getDimensions from "./dimensions-util";
 
 export const acceptedWidths = [
-  320, 440, 660, 800, 1080, 1280, 1440, 1670, 1920, 2308,
+  320, 440, 660, 800, 1080, 1280, 1440, 1670, 1920, 2308
 ];
 const { width } = getDimensions();
 

@@ -21,7 +21,7 @@ const slotNames = [
   "mpu",
   "pixel",
   "pixelteads",
-  "pixelskin",
+  "pixelskin"
 ];
 
 const articleContextURL =
@@ -43,11 +43,11 @@ export default {
     {
       component: ({ select }) =>
         withOpenInNewWindow(
-          renderAd(select("Slot Name:", slotNames, slotNames[1])),
+          renderAd(select("Slot Name:", slotNames, slotNames[1]))
         ),
       name: "Ad",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Primitives/Advertisement",
+  name: "Primitives/Advertisement"
 };

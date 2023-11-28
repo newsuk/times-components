@@ -18,9 +18,9 @@ class FakeIntersectionObserver {
         intersectionRatio: 1,
         isIntersecting: true,
         target: {
-          id: element.id,
-        },
-      })),
+          id: element.id
+        }
+      }))
     );
   }
 
@@ -50,17 +50,17 @@ class ListComponent extends Component {
       items: PropTypes.arrayOf(
         PropTypes.shape({
           someKey: PropTypes.string,
-          someValue: PropTypes.string,
-        }),
+          someValue: PropTypes.string
+        })
       ),
-      receiveChildList: PropTypes.func,
+      receiveChildList: PropTypes.func
     };
   }
 
   static get defaultProps() {
     return {
       items: [{ someKey: "1", someValue: "one" }],
-      receiveChildList: () => {},
+      receiveChildList: () => {}
     };
   }
 
@@ -128,7 +128,7 @@ module.exports = () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent),
-        { trackingObjectName: "TestObject" },
+        { trackingObjectName: "TestObject" }
       );
 
       renderer.create(
@@ -139,22 +139,22 @@ module.exports = () => {
               elementId: 1,
               name: "name1",
               someKey: "1",
-              someValue: "one",
+              someValue: "one"
             },
             {
               elementId: 2,
               name: "name2",
               someKey: "2",
-              someValue: "two",
+              someValue: "two"
             },
             {
               elementId: 3,
               name: "name3",
               someKey: "3",
-              someValue: "three",
-            },
+              someValue: "three"
+            }
           ]}
-        />,
+        />
       );
 
       FakeIntersectionObserver.dispatchObservedAll();
@@ -166,7 +166,7 @@ module.exports = () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent),
-        { trackingObjectName: "TestObject" },
+        { trackingObjectName: "TestObject" }
       );
 
       const items = [
@@ -174,24 +174,24 @@ module.exports = () => {
           elementId: 1,
           name: "name1",
           someKey: "1",
-          someValue: "one",
+          someValue: "one"
         },
         {
           elementId: 2,
           name: "name2",
           someKey: "2",
-          someValue: "two",
+          someValue: "two"
         },
         {
           elementId: 3,
           name: "name3",
           someKey: "3",
-          someValue: "three",
-        },
+          someValue: "three"
+        }
       ];
 
       const component = mount(
-        <ListWithChildTracking analyticsStream={reporter} items={items} />,
+        <ListWithChildTracking analyticsStream={reporter} items={items} />
       );
 
       eventMap.scroll();
@@ -205,9 +205,9 @@ module.exports = () => {
             elementId: 4,
             name: "name4",
             someKey: "4",
-            someValue: "four",
-          },
-        ],
+            someValue: "four"
+          }
+        ]
       });
 
       FakeIntersectionObserver.dispatchObservedAll();
@@ -219,8 +219,8 @@ module.exports = () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent, {
-          trackingName: "SomeItem",
-        }),
+          trackingName: "SomeItem"
+        })
       );
 
       renderer.create(
@@ -230,10 +230,10 @@ module.exports = () => {
             {
               elementId: 1,
               someKey: "1",
-              someValue: "one",
-            },
+              someValue: "one"
+            }
           ]}
-        />,
+        />
       );
 
       eventMap.scroll();
@@ -242,8 +242,8 @@ module.exports = () => {
 
       expect(reporter).toHaveBeenCalledWith(
         expect.objectContaining({
-          component: "SomeItemChild",
-        }),
+          component: "SomeItemChild"
+        })
       );
     });
 
@@ -253,16 +253,16 @@ module.exports = () => {
         withTrackScrollDepth(ListComponent, {
           getAttrs: (props) => ({
             id: props.someKey,
-            myKey: "myVal",
-          }),
-        }),
+            myKey: "myVal"
+          })
+        })
       );
 
       renderer.create(
         <ListWithChildTracking
           analyticsStream={reporter}
           items={[{ someKey: "1", someValue: "one" }]}
-        />,
+        />
       );
 
       eventMap.scroll();
@@ -273,16 +273,16 @@ module.exports = () => {
         expect.objectContaining({
           attrs: expect.objectContaining({
             id: "1",
-            myKey: "myVal",
-          }),
-        }),
+            myKey: "myVal"
+          })
+        })
       );
     });
 
     it("emits events including scroll depth", async () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
-        withTrackScrollDepth(ListComponent),
+        withTrackScrollDepth(ListComponent)
       );
 
       renderer.create(
@@ -292,15 +292,15 @@ module.exports = () => {
             {
               elementId: 1,
               someKey: "1",
-              someValue: "one",
+              someValue: "one"
             },
             {
               elementId: 2,
               someKey: "2",
-              someValue: "two",
-            },
+              someValue: "two"
+            }
           ]}
-        />,
+        />
       );
 
       eventMap.scroll();
@@ -310,20 +310,20 @@ module.exports = () => {
       expect(reporter).toHaveBeenCalledWith(
         expect.objectContaining({
           attrs: expect.objectContaining({
-            scrollDepth: { itemNumber: 2, total: 2 },
-          }),
-        }),
+            scrollDepth: { itemNumber: 2, total: 2 }
+          })
+        })
       );
     });
 
     it("cleans-up on unmount", () => {
       const disconnectSpy = jest.spyOn(
         global.window.IntersectionObserver.prototype,
-        "disconnect",
+        "disconnect"
       );
 
       const ListWithChildTracking = withTestContext(
-        withTrackScrollDepth(ListComponent),
+        withTrackScrollDepth(ListComponent)
       );
 
       renderer
@@ -340,13 +340,13 @@ module.exports = () => {
       delete global.window.IntersectionObserver;
 
       const ListWithChildTracking = withTestContext(
-        withTrackScrollDepth(ListComponent),
+        withTrackScrollDepth(ListComponent)
       );
 
       const renderComponent = () =>
         renderer
           .create(
-            <ListWithChildTracking analyticsStream={() => {}} items={[]} />,
+            <ListWithChildTracking analyticsStream={() => {}} items={[]} />
           )
           .unmount();
 
@@ -357,7 +357,7 @@ module.exports = () => {
 
     it("does not throw if IntersectionObserver is not available", () => {
       const ListWithChildTracking = withTestContext(
-        withTrackScrollDepth(ListComponent),
+        withTrackScrollDepth(ListComponent)
       );
 
       const IO = global.window.IntersectionObserver;
@@ -366,7 +366,7 @@ module.exports = () => {
 
       const renderComponent = () =>
         renderer.create(
-          <ListWithChildTracking analyticsStream={() => {}} items={[]} />,
+          <ListWithChildTracking analyticsStream={() => {}} items={[]} />
         );
 
       expect(renderComponent).not.toThrow();
@@ -385,15 +385,15 @@ module.exports = () => {
               {
                 elementId: 1,
                 someKey: "1",
-                someValue: "one",
+                someValue: "one"
               },
               {
                 elementId: 2,
                 someKey: "2",
-                someValue: "two",
-              },
+                someValue: "two"
+              }
             ]}
-          />,
+          />
         );
 
         FakeIntersectionObserver.dispatchObservedAll();
@@ -404,7 +404,7 @@ module.exports = () => {
 
     it("does not throw if there is nothing to observe", () => {
       const ListWithChildTracking = withTestContext(
-        withTrackScrollDepth(ListComponent),
+        withTrackScrollDepth(ListComponent)
       );
 
       const renderComponent = () => {
@@ -415,15 +415,15 @@ module.exports = () => {
               {
                 elementId: 1,
                 someKey: "1",
-                someValue: "one",
+                someValue: "one"
               },
               {
                 elementId: 2,
                 someKey: "2",
-                someValue: "two",
-              },
+                someValue: "two"
+              }
             ]}
-          />,
+          />
         );
 
         FakeIntersectionObserver.dispatchObservedAllAsUndefined();
@@ -438,7 +438,7 @@ module.exports = () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent),
-        { trackingObjectName: "TestObject" },
+        { trackingObjectName: "TestObject" }
       );
 
       renderer.create(
@@ -448,20 +448,20 @@ module.exports = () => {
             {
               elementId: 1,
               someKey: "1",
-              someValue: "one",
+              someValue: "one"
             },
             {
               elementId: 2,
               someKey: "2",
-              someValue: "two",
+              someValue: "two"
             },
             {
               elementId: 3,
               someKey: "3",
-              someValue: "three",
-            },
+              someValue: "three"
+            }
           ]}
-        />,
+        />
       );
 
       FakeIntersectionObserver.dispatchObservedAll();

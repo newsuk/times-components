@@ -10,12 +10,12 @@ export default (date) => {
       name: "date and TIMES publication",
       test() {
         const testInstance = TestRenderer.create(
-          <DatePublication date={date} publication="TIMES" />,
+          <DatePublication date={date} publication="TIMES" />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

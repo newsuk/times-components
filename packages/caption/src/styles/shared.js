@@ -2,27 +2,27 @@ import {
   colours,
   fontFactory,
   fontSizes,
-  spacing,
+  spacing
 } from "@times-components/ts-styleguide";
 
 const styles = {
   container: {
-    paddingTop: spacing(2),
+    paddingTop: spacing(2)
   },
   credits: {
     color: colours.functional.primary,
     fontSize: fontSizes.credits,
     fontWeight: "400",
     letterSpacing: 0.5,
-    lineHeight: 16,
+    lineHeight: 16
   },
   text: {
     color: colours.functional.secondary,
     ...fontFactory({
       font: "supporting",
-      fontSize: "captionText",
-    }),
-  },
+      fontSize: "captionText"
+    })
+  }
 };
 
 export default styles;

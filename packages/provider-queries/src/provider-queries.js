@@ -14,13 +14,13 @@ export unsaveBookmarks from "./unsave-bookmark";
 
 export {
   default as authorArticlesNoImages,
-  propsToVariables as authorArticlesNoImagesPTV,
+  propsToVariables as authorArticlesNoImagesPTV
 } from "./author-articles-no-images";
 export {
   default as authorArticlesWithImages,
-  propsToVariables as authorArticlesWithImagesPTV,
+  propsToVariables as authorArticlesWithImagesPTV
 } from "./author-articles-with-images";
 export {
   default as topicArticles,
-  propsToVariables as topicArticlesPTV,
+  propsToVariables as topicArticlesPTV
 } from "./topic-articles";

@@ -13,14 +13,14 @@ export default (makeTest) => {
           imageOptions: {
             display: null,
             ratio: "16:9",
-            uri: testImageUrl,
-          },
+            uri: testImageUrl
+          }
         };
 
         expect(
-          makeTest(<ArticleImage imageOptions={noDisplay.imageOptions} />),
+          makeTest(<ArticleImage imageOptions={noDisplay.imageOptions} />)
         ).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "does not render a primary image if ratio is not received",
@@ -29,14 +29,14 @@ export default (makeTest) => {
           imageOptions: {
             display: "primary",
             ratio: null,
-            uri: testImageUrl,
-          },
+            uri: testImageUrl
+          }
         };
 
         expect(
-          makeTest(<ArticleImage imageOptions={noRatio.imageOptions} />),
+          makeTest(<ArticleImage imageOptions={noRatio.imageOptions} />)
         ).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "does not render an inline image with no ratio and no caption or credits",
@@ -45,14 +45,14 @@ export default (makeTest) => {
           imageOptions: {
             display: "inline",
             ratio: null,
-            uri: testImageUrl,
-          },
+            uri: testImageUrl
+          }
         };
 
         expect(
-          makeTest(<ArticleImage imageOptions={noRatio.imageOptions} />),
+          makeTest(<ArticleImage imageOptions={noRatio.imageOptions} />)
         ).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "inline image with no ratio only shows caption and credits",
@@ -60,13 +60,13 @@ export default (makeTest) => {
         const noRatio = {
           captionOptions: {
             caption: "Some caption",
-            credits: "Some credit",
+            credits: "Some credit"
           },
           imageOptions: {
             display: "inline",
             ratio: null,
-            uri: testImageUrl,
-          },
+            uri: testImageUrl
+          }
         };
 
         expect(
@@ -74,10 +74,10 @@ export default (makeTest) => {
             <ArticleImage
               captionOptions={noRatio.captionOptions}
               imageOptions={noRatio.imageOptions}
-            />,
-          ),
+            />
+          )
         ).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "image with no caption",
@@ -86,18 +86,18 @@ export default (makeTest) => {
           imageOptions: {
             display: "primary",
             ratio: "16:9",
-            uri: testImageUrl,
-          },
+            uri: testImageUrl
+          }
         };
 
         expect(
           makeTest(
             <ArticleImage
               imageOptions={primaryImageNoCaptionProps.imageOptions}
-            />,
-          ),
+            />
+          )
         ).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "image with no display only shows given caption",
@@ -105,13 +105,13 @@ export default (makeTest) => {
         const noCredits = {
           captionOptions: {
             caption: "Some caption",
-            credits: null,
+            credits: null
           },
           imageOptions: {
             display: null,
             ratio: "16:9",
-            uri: testImageUrl,
-          },
+            uri: testImageUrl
+          }
         };
 
         expect(
@@ -119,10 +119,10 @@ export default (makeTest) => {
             <ArticleImage
               captionOptions={noCredits.captionOptions}
               imageOptions={noCredits.imageOptions}
-            />,
-          ),
+            />
+          )
         ).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "image with no display only shows given credits",
@@ -130,13 +130,13 @@ export default (makeTest) => {
         const noCredits = {
           captionOptions: {
             caption: null,
-            credits: "Some credit",
+            credits: "Some credit"
           },
           imageOptions: {
             display: null,
             ratio: "16:9",
-            uri: testImageUrl,
-          },
+            uri: testImageUrl
+          }
         };
 
         expect(
@@ -144,10 +144,10 @@ export default (makeTest) => {
             <ArticleImage
               captionOptions={noCredits.captionOptions}
               imageOptions={noCredits.imageOptions}
-            />,
-          ),
+            />
+          )
         ).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "primary image renders with caption and credits",
@@ -155,13 +155,13 @@ export default (makeTest) => {
         const primaryImage = {
           captionOptions: {
             caption: "Some caption",
-            credits: "Some credit",
+            credits: "Some credit"
           },
           imageOptions: {
             display: "primary",
             ratio: "16:9",
-            uri: testImageUrl,
-          },
+            uri: testImageUrl
+          }
         };
 
         expect(
@@ -169,10 +169,10 @@ export default (makeTest) => {
             <ArticleImage
               captionOptions={primaryImage.captionOptions}
               imageOptions={primaryImage.imageOptions}
-            />,
-          ),
+            />
+          )
         ).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "primary image with given resolutions",
@@ -180,15 +180,15 @@ export default (makeTest) => {
         const primaryImage = {
           captionOptions: {
             caption: "Some caption",
-            credits: "Some credit",
+            credits: "Some credit"
           },
           imageOptions: {
             display: "primary",
             highResSize: 900,
             lowResSize: 50,
             ratio: "16:9",
-            uri: testImageUrl,
-          },
+            uri: testImageUrl
+          }
         };
 
         expect(
@@ -196,11 +196,11 @@ export default (makeTest) => {
             <ArticleImage
               captionOptions={primaryImage.captionOptions}
               imageOptions={primaryImage.imageOptions}
-            />,
-          ),
+            />
+          )
         ).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

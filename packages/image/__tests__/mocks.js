@@ -1,3 +1,3 @@
 jest.mock("@times-components/gradient", () => ({
-  OverlayGradient: "OverlayGradient",
+  OverlayGradient: "OverlayGradient"
 }));

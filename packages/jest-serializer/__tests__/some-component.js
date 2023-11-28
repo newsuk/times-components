@@ -13,13 +13,13 @@ const SomeComponent = ({ style, children }) => (
 SomeComponent.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.element,
-    PropTypes.arrayOf(PropTypes.element),
+    PropTypes.arrayOf(PropTypes.element)
   ]).isRequired,
-  style: PropTypes.object,
+  style: PropTypes.object
 };
 
 SomeComponent.defaultProps = {
-  style: null,
+  style: null
 };
 
 export default SomeComponent;

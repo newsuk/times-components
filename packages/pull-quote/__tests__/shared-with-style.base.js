@@ -15,7 +15,7 @@ export default (renderComponent) => {
         twitter={twitter}
       >
         {content}
-      </PullQuotes>,
+      </PullQuotes>
     );
 
     expect(output).toMatchSnapshot();

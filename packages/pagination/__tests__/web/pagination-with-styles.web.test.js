@@ -7,7 +7,7 @@ import {
   hoistStyleTransform,
   minimalWebTransform,
   replaceTransform,
-  stylePrinter,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import Pagination from "../../src/pagination";
@@ -19,11 +19,11 @@ addSerializers(
   compose(
     stylePrinter,
     replaceTransform({
-      svg: null,
+      svg: null
     }),
     minimalWebTransform,
-    hoistStyleTransform,
-  ),
+    hoistStyleTransform
+  )
 );
 
 const mockGenerateLink = (page) => `?mock-${page}`;
@@ -36,13 +36,13 @@ const tests = [
         count: 21,
         generatePageLink: mockGenerateLink,
         page: 2,
-        pageSize: 3,
+        pageSize: 3
       };
 
       const wrapper = mount(<Pagination {...props} />);
 
       expect(wrapper).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "renders with no results",
@@ -52,14 +52,14 @@ const tests = [
         generatePageLink: mockGenerateLink,
         hideResults: true,
         page: 0,
-        pageSize: 0,
+        pageSize: 0
       };
 
       const wrapper = mount(<Pagination {...props} />);
 
       expect(wrapper).toMatchSnapshot();
-    },
-  },
+    }
+  }
 ];
 
 iterator(tests);

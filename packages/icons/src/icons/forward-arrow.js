@@ -18,7 +18,7 @@ const ForwardArrow = ({ fillColour }) => (
 ForwardArrow.propTypes = propTypes;
 
 ForwardArrow.defaultProps = {
-  fillColour: colours.functional.action,
+  fillColour: colours.functional.action
 };
 
 export default ForwardArrow;

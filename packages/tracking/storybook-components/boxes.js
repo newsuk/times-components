@@ -20,8 +20,8 @@ export default class Boxes extends Component {
 }
 Boxes.propTypes = {
   boxes: PropTypes.arrayOf(PropTypes.object).isRequired,
-  receiveChildList: PropTypes.func,
+  receiveChildList: PropTypes.func
 };
 Boxes.defaultProps = {
-  receiveChildList: () => {},
+  receiveChildList: () => {}
 };

@@ -8,12 +8,12 @@ const testImageUrl = "https://img/someImage";
 const landscapeInlineImage = landscapeInlineImageFixture(
   testImageUrl,
   "Landscape caption",
-  "Landscape credits",
+  "Landscape credits"
 );
 const portraitInlineImage = portraitInlineImageFixture(
   testImageUrl,
   "Portrait caption",
-  "Portrait credits",
+  "Portrait credits"
 );
 
 export default (makeTest) => {
@@ -26,10 +26,10 @@ export default (makeTest) => {
             <ArticleImage
               captionOptions={landscapeInlineImage.captionOptions}
               imageOptions={landscapeInlineImage.imageOptions}
-            />,
-          ),
+            />
+          )
         ).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "inline image (portrait) with caption and credits",
@@ -39,11 +39,11 @@ export default (makeTest) => {
             <ArticleImage
               captionOptions={portraitInlineImage.captionOptions}
               imageOptions={portraitInlineImage.imageOptions}
-            />,
-          ),
+            />
+          )
         ).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

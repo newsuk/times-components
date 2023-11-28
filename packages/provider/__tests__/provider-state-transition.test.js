@@ -2,7 +2,7 @@ import React from "react";
 import gql from "graphql-tag";
 import {
   providerTester,
-  getRenderedQueries,
+  getRenderedQueries
 } from "@times-components/provider-test-tools";
 
 import { delayAndAdvance } from "@times-components/test-utils";
@@ -13,9 +13,9 @@ function AuthorQueryResolver({ variables }) {
     data: {
       author: {
         __typename: "Author",
-        name: variables.slug,
-      },
-    },
+        name: variables.slug
+      }
+    }
   };
 }
 
@@ -36,7 +36,7 @@ describe("provider execution order tests", () => {
 
   it("should resolve in order", async () => {
     const { link, setProps } = providerTester(AuthorQueryResolver, Debounced, {
-      slug: "1",
+      slug: "1"
     });
 
     await link.findByQuery("AuthorQuery", { slug: "1" }).resolve();
@@ -51,7 +51,7 @@ describe("provider execution order tests", () => {
 
   it("should be able to be in isLoading and isDebouncing state simultaneously", async () => {
     const { link, setProps } = providerTester(AuthorQueryResolver, Debounced, {
-      slug: "1",
+      slug: "1"
     });
 
     await link.findByQuery("AuthorQuery", { slug: "1" }).resolve();

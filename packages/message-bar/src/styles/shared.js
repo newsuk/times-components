@@ -11,7 +11,7 @@ const messageBarBody = {
   flexGrow: 1,
   flexShrink: 0,
   marginLeft: "auto",
-  marginRight: "auto",
+  marginRight: "auto"
 };
 
 const messageBarCloseButton = {
@@ -25,7 +25,7 @@ const messageBarCloseButton = {
   width: 28,
   padding: 0,
   display: "inherit",
-  border: "0px",
+  border: "0px"
 };
 
 const messageBarText = (scale) => ({
@@ -33,9 +33,9 @@ const messageBarText = (scale) => ({
   ...fontFactory({
     font: "headline",
     fontSize: "secondary",
-    scale,
+    scale
   }),
-  marginLeft: 20,
+  marginLeft: 20
 });
 
 export const sharedStyle = (scale) => ({
@@ -44,64 +44,64 @@ export const sharedStyle = (scale) => ({
     shadowColor: "rgba(0, 0, 0, 0.2)",
     shadowOffset: {
       height: 2,
-      width: 0,
+      width: 0
     },
     shadowRadius: 5,
-    zIndex: 10,
+    zIndex: 10
   },
   messageBarBody,
   messageBarCloseButton,
   messageBarText: {
-    ...messageBarText(scale),
+    ...messageBarText(scale)
   },
   messageManager: {
     flex: 1,
     width: "100%",
-    zIndex: 10,
-  },
+    zIndex: 10
+  }
 });
 
 const smallBreakpointStyles = (scale) => ({
   ...sharedStyle(scale),
   messageBarCloseButton: {
     ...messageBarCloseButton,
-    marginRight: 10,
+    marginRight: 10
   },
   messageBarText: {
     ...messageBarText(scale),
-    marginLeft: 10,
-  },
+    marginLeft: 10
+  }
 });
 
 const mediumBreakpointStyles = (scale) => ({
   ...sharedStyle(scale),
   messageBarCloseButton: {
     ...messageBarCloseButton,
-    marginRight: 10,
+    marginRight: 10
   },
   messageBarText: {
     ...messageBarText(scale),
-    marginLeft: 60,
-  },
+    marginLeft: 60
+  }
 });
 
 const wideBreakpointStyles = (scale) => ({
   ...sharedStyle(scale),
   messageBarBody: {
     ...messageBarBody,
-    maxWidth: 1024,
-  },
+    maxWidth: 1024
+  }
 });
 
 const hugeBreakpointStyles = (scale) => ({
-  ...sharedStyle(scale),
+  ...sharedStyle(scale)
 });
 
 const stylesResolver = {
   small: smallBreakpointStyles,
   medium: mediumBreakpointStyles,
   wide: wideBreakpointStyles,
-  huge: hugeBreakpointStyles,
+  huge: hugeBreakpointStyles
 };
 
 export default (scale, breakpoint = "huge") =>

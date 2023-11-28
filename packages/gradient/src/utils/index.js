@@ -8,12 +8,12 @@ const angleToPoints = (angle) => {
   return {
     end: {
       x: x >= 0 ? x : x + 1,
-      y: y >= 0 ? y : y + 1,
+      y: y >= 0 ? y : y + 1
     },
     start: {
       x: x < 0 ? 1 : 0,
-      y: y < 0 ? 1 : 0,
-    },
+      y: y < 0 ? 1 : 0
+    }
   };
 };
 

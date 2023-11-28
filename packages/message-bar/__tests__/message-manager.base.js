@@ -25,13 +25,13 @@ export default () => [
           <TcView>
             <TcText>test child content</TcText>
           </TcView>
-        </MessageManager>,
+        </MessageManager>
       );
 
       await delay(500);
 
       expect(testInstance.toJSON()).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "children can show a message",
@@ -39,7 +39,7 @@ export default () => [
       const testInstance = TestRenderer.create(
         <MessageManager delay={1} scale={scales.medium}>
           <TestConsumer />
-        </MessageManager>,
+        </MessageManager>
       );
 
       const button = testInstance.root.findByType(Button);
@@ -47,7 +47,7 @@ export default () => [
       button.props.onClick();
 
       expect(testInstance.root.instance.state.message).toEqual("foo");
-    },
+    }
   },
   {
     name: "removes the message when the bar says it closed",
@@ -55,7 +55,7 @@ export default () => [
       const testInstance = TestRenderer.create(
         <MessageManager delay={1000} scale={scales.medium}>
           <TestConsumer />
-        </MessageManager>,
+        </MessageManager>
       );
 
       const button = testInstance.root.findByType(Button);
@@ -71,6 +71,6 @@ export default () => [
 
       await delay(300);
       expect(testInstance.root.instance.state.message).toEqual(null);
-    },
-  },
+    }
+  }
 ];

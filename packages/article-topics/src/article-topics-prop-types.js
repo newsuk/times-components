@@ -6,11 +6,11 @@ export const topicsPropTypes = {
   topics: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
-      slug: PropTypes.string.isRequired,
-    }).isRequired,
-  ).isRequired,
+      slug: PropTypes.string.isRequired
+    }).isRequired
+  ).isRequired
 };
 
 export const topicsDefaultProps = {
-  style: null,
+  style: null
 };

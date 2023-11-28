@@ -13,21 +13,21 @@ export default () => {
       name: "caption without credits",
       test: () => {
         const testInstance = TestRenderer.create(
-          <Caption text={captionText} />,
+          <Caption text={captionText} />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "caption with credits",
       test: () => {
         const testInstance = TestRenderer.create(
-          <Caption credits={credits} text={captionText} />,
+          <Caption credits={credits} text={captionText} />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "caption with credits only",
@@ -35,7 +35,7 @@ export default () => {
         const testInstance = TestRenderer.create(<Caption credits={credits} />);
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "caption with child",
@@ -43,41 +43,41 @@ export default () => {
         const testInstance = TestRenderer.create(
           <Caption credits={credits} text={captionText}>
             <TcText>Hello world!</TcText>
-          </Caption>,
+          </Caption>
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "centred caption without credits",
       test: () => {
         const testInstance = TestRenderer.create(
-          <CentredCaption text={captionText} />,
+          <CentredCaption text={captionText} />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "centred caption caption with credits",
       test: () => {
         const testInstance = TestRenderer.create(
-          <CentredCaption credits={credits} text={captionText} />,
+          <CentredCaption credits={credits} text={captionText} />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "centred caption caption with credits only",
       test: () => {
         const testInstance = TestRenderer.create(
-          <CentredCaption credits={credits} />,
+          <CentredCaption credits={credits} />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "centred caption caption with child",
@@ -85,12 +85,12 @@ export default () => {
         const testInstance = TestRenderer.create(
           <CentredCaption credits={credits} text={captionText}>
             <TcText>Hello world!</TcText>
-          </CentredCaption>,
+          </CentredCaption>
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

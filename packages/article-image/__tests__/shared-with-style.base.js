@@ -8,12 +8,12 @@ const testImageUrl = "https://img/someImage";
 const primaryImage = primaryImageFixture(
   testImageUrl,
   "Some caption",
-  "Some credits",
+  "Some credits"
 );
 const secondaryImage = secondaryImageFixture(
   testImageUrl,
   "Another caption",
-  "Other credits",
+  "Other credits"
 );
 
 export default (makeTest) => {
@@ -26,10 +26,10 @@ export default (makeTest) => {
             <ArticleImage
               captionOptions={primaryImage.captionOptions}
               imageOptions={primaryImage.imageOptions}
-            />,
-          ),
+            />
+          )
         ).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "secondary image with caption and credits",
@@ -39,11 +39,11 @@ export default (makeTest) => {
             <ArticleImage
               captionOptions={secondaryImage.captionOptions}
               imageOptions={secondaryImage.imageOptions}
-            />,
-          ),
+            />
+          )
         ).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

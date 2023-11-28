@@ -112,9 +112,9 @@ export default () => {
     const initSecondRun = adInit(
       merge(initOptions, {
         window: {
-          initCalled: true,
-        },
-      }),
+          initCalled: true
+        }
+      })
     );
 
     jest

@@ -14,7 +14,7 @@ class StandardSlice extends Component {
     this.ConfigWrapper = getConfigWrapper({ itemCount });
     this.config = getConfig({ itemCount });
     this.ChildrenContainer = getChildrenContainer({
-      childCount: itemCount,
+      childCount: itemCount
     });
   }
 
@@ -40,7 +40,7 @@ class StandardSlice extends Component {
               .reduce((previous, current) => [
                 ...(previous.length > 0 ? previous : [previous]),
                 <Separator key={`separator-${current.key}`} />,
-                current,
+                current
               ])}
           </ChildrenContainer>
         </SliceContainer>
@@ -51,7 +51,7 @@ class StandardSlice extends Component {
 
 StandardSlice.propTypes = {
   itemCount: PropTypes.number.isRequired,
-  renderItems: PropTypes.func.isRequired,
+  renderItems: PropTypes.func.isRequired
 };
 
 export default StandardSlice;

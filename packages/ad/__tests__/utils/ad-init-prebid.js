@@ -11,7 +11,7 @@ export default () => {
 
   it("perform bidding request for web", () => {
     const init = adInit(
-      merge(initOptions, { data: { bidInitialiser: false } }),
+      merge(initOptions, { data: { bidInitialiser: false } })
     );
     jest.spyOn(init.prebid, "process");
     init.init();

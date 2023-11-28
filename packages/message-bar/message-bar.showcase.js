@@ -14,8 +14,8 @@ export default {
         />
       ),
       name: "MessageBar",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Primitives/MessageBar",
+  name: "Primitives/MessageBar"
 };

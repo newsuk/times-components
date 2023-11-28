@@ -19,14 +19,14 @@ import {
   showArticleSaveButton,
   showTokenisedEmailShare,
   showCommentingModule,
-  showJoinTheConversationDialog,
+  showJoinTheConversationDialog
 } from "./matchers";
 
 function UserState({
   state: shouldRenderInCurrentUserState,
   children,
   fallback,
-  serverRender,
+  serverRender
 }) {
   return (
     <ClientUserStateConsumer serverRender={serverRender}>
@@ -49,13 +49,13 @@ UserState.propTypes = {
   state: PropTypes.func.isRequired,
   children: PropTypes.node,
   fallback: PropTypes.node,
-  serverRender: PropTypes.bool,
+  serverRender: PropTypes.bool
 };
 
 UserState.defaultProps = {
   children: null,
   serverRender: true,
-  fallback: null,
+  fallback: null
 };
 
 export { default as mockUserState } from "./mock-user-state";

@@ -7,7 +7,7 @@ const GradientBase = ({ children, degrees, endColour, startColour, style }) => (
     style={{
       backgroundImage: `linear-gradient(${degrees}deg, ${startColour} 0%, ${endColour} 100%)`,
 
-      ...style,
+      ...style
     }}
   >
     {children}

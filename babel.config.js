@@ -5,19 +5,19 @@ module.exports = (api) => {
       "babel-plugin-styled-components",
       "@babel/plugin-transform-runtime",
       "@babel/plugin-proposal-export-default-from",
-      "@babel/plugin-transform-modules-commonjs",
+      "@babel/plugin-transform-modules-commonjs"
     ],
     presets: [
       [
         "@babel/preset-env",
         {
           targets: {
-            esmodules: true,
-          },
-        },
+            esmodules: true
+          }
+        }
       ],
       "@babel/preset-react",
-      "@babel/preset-typescript",
-    ],
+      "@babel/preset-typescript"
+    ]
   };
 };

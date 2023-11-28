@@ -3,7 +3,7 @@ import renderer from "react-test-renderer";
 import {
   edition as makeEditionParams,
   MockedProvider,
-  MockFixture,
+  MockFixture
 } from "@times-components/provider-test-tools";
 import { EditionProvider } from "../src/provider";
 
@@ -14,8 +14,8 @@ const renderComponent = (child) => {
     <MockFixture
       params={makeEditionParams({
         variables: () => ({
-          id,
-        }),
+          id
+        })
       })}
       render={(mocks) => (
         <MockedProvider mocks={mocks}>
@@ -24,7 +24,7 @@ const renderComponent = (child) => {
           </EditionProvider>
         </MockedProvider>
       )}
-    />,
+    />
   );
 };
 

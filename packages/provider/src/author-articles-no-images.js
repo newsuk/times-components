@@ -1,13 +1,13 @@
 import React from "react";
 import {
   authorArticlesNoImages,
-  authorArticlesNoImagesPTV,
+  authorArticlesNoImagesPTV
 } from "@times-components/provider-queries";
 import connectGraphql from "./connect";
 
 const AuthorArticlesNoImagesProvider = connectGraphql(
   authorArticlesNoImages,
-  authorArticlesNoImagesPTV,
+  authorArticlesNoImagesPTV
 );
 
 export default (props) => (

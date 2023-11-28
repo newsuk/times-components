@@ -15,9 +15,9 @@ const styles = {
     color: colours.functional.action,
     ...fontFactory({
       font: "supporting",
-      fontSize: "meta",
-    }),
-  },
+      fontSize: "meta"
+    })
+  }
 };
 
 const Pagination = ({
@@ -27,7 +27,7 @@ const Pagination = ({
   onNext,
   onPrev,
   page,
-  pageSize,
+  pageSize
 }) => {
   const finalResult = Math.min(count, page * pageSize);
   const startResult = Math.min(finalResult, (page - 1) * pageSize + 1);
@@ -77,7 +77,7 @@ Pagination.propTypes = {
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
   page: PropTypes.number,
-  pageSize: PropTypes.number,
+  pageSize: PropTypes.number
 };
 
 Pagination.defaultProps = {
@@ -86,7 +86,7 @@ Pagination.defaultProps = {
   onNext: () => {},
   onPrev: () => {},
   page: 1,
-  pageSize: 20,
+  pageSize: 20
 };
 
 export default withTrackEvents(Pagination, {
@@ -96,18 +96,18 @@ export default withTrackEvents(Pagination, {
       eventName: "onNext",
       getAttrs: (props, [, destinationPage]) => ({
         destinationPage,
-        direction: "next",
-      }),
+        direction: "next"
+      })
     },
     {
       actionName: "Pressed",
       eventName: "onPrev",
       getAttrs: (props, [, destinationPage]) => ({
         destinationPage,
-        direction: "previous",
-      }),
-    },
-  ],
+        direction: "previous"
+      })
+    }
+  ]
 });
 
 export { withPageState };

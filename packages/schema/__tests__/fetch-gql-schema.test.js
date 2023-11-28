@@ -27,13 +27,13 @@ const mockSchema = {
               args: [],
               type: { kind: "OBJECT", name: "Author", ofType: null },
               isDeprecated: false,
-              deprecationReason: null,
-            },
+              deprecationReason: null
+            }
           ],
           inputFields: null,
           interfaces: [],
           enumValues: null,
-          possibleTypes: null,
+          possibleTypes: null
         },
         {
           name: "leadAsset",
@@ -41,7 +41,7 @@ const mockSchema = {
           args: [],
           type: { kind: "UNION", name: "Media", ofType: null },
           isDeprecated: false,
-          deprecationReason: null,
+          deprecationReason: null
         },
         {
           kind: "UNION",
@@ -53,13 +53,13 @@ const mockSchema = {
           enumValues: null,
           possibleTypes: [
             { kind: "OBJECT", name: "Image", ofType: null },
-            { kind: "OBJECT", name: "Video", ofType: null },
-          ],
-        },
+            { kind: "OBJECT", name: "Video", ofType: null }
+          ]
+        }
       ],
-      directives: [],
-    },
-  },
+      directives: []
+    }
+  }
 };
 
 const makeTestDir = (name) => mkdir(name);
@@ -78,8 +78,8 @@ describe("fetch gql schema should", () => {
           Promise.resolve({
             json() {
               return Promise.resolve(mockSchema);
-            },
-          }),
+            }
+          })
         );
         const mockEndpoint = "https://graphql.io/graphql";
 
@@ -91,7 +91,7 @@ describe("fetch gql schema should", () => {
         expect(query).toMatchSnapshot();
 
         await removeTestDir(testDir);
-      },
+      }
     },
     {
       name: "write the expected fragment matcher",
@@ -103,8 +103,8 @@ describe("fetch gql schema should", () => {
           Promise.resolve({
             json() {
               return Promise.resolve(mockSchema);
-            },
-          }),
+            }
+          })
         );
         const mockEndpoint = "https://graphql.io/graphql";
 
@@ -112,13 +112,13 @@ describe("fetch gql schema should", () => {
 
         const fragmentMatcher = await readFile(
           path.join(testDir, "fragment-matcher.js"),
-          "utf8",
+          "utf8"
         );
 
         expect(fragmentMatcher).toMatchSnapshot();
 
         await removeTestDir(testDir);
-      },
+      }
     },
     {
       name: "make an introspection query for the given GraphQL endpoint",
@@ -130,8 +130,8 @@ describe("fetch gql schema should", () => {
           Promise.resolve({
             json() {
               return Promise.resolve(mockSchema);
-            },
-          }),
+            }
+          })
         );
         const mockEndpoint = "https://graphql.io/graphql";
 
@@ -143,7 +143,7 @@ describe("fetch gql schema should", () => {
         expect(endpoint).toEqual(mockEndpoint);
 
         await removeTestDir(testDir);
-      },
+      }
     },
     {
       name: "write the expected schema",
@@ -155,8 +155,8 @@ describe("fetch gql schema should", () => {
           Promise.resolve({
             json() {
               return Promise.resolve(mockSchema);
-            },
-          }),
+            }
+          })
         );
         const mockEndpoint = "https://graphql.io/graphql";
 
@@ -164,14 +164,14 @@ describe("fetch gql schema should", () => {
 
         const writtenSchema = await readFile(
           path.join(testDir, "schema.json"),
-          "utf8",
+          "utf8"
         );
 
         expect(JSON.parse(writtenSchema)).toEqual(mockSchema);
 
         await removeTestDir(testDir);
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

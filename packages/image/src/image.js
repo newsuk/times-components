@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
   addMissingProtocol,
   appendToImageURL,
-  TcView,
+  TcView
 } from "@times-components/utils";
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
@@ -16,7 +16,7 @@ class TimesImage extends Component {
       highResIsLoaded: false,
       highResIsVisible: false,
       imageIsLoaded: false,
-      lowResIsLoaded: !props.fadeImageIn,
+      lowResIsLoaded: !props.fadeImageIn
     };
 
     this.handleHighResOnLoad = this.handleHighResOnLoad.bind(this);
@@ -28,7 +28,7 @@ class TimesImage extends Component {
 
   onHighResTransitionEnd() {
     this.setState({
-      highResIsVisible: true,
+      highResIsVisible: true
     });
   }
 
@@ -47,14 +47,14 @@ class TimesImage extends Component {
   handleLowResOnLoad() {
     this.setState({
       imageIsLoaded: true,
-      lowResIsLoaded: true,
+      lowResIsLoaded: true
     });
   }
 
   handleHighResOnLoad() {
     this.setState({
       highResIsLoaded: true,
-      imageIsLoaded: true,
+      imageIsLoaded: true
     });
   }
 
@@ -116,12 +116,12 @@ class TimesImage extends Component {
       uri,
       onLayout,
       rounded,
-      isLcpItem,
+      isLcpItem
     } = this.props;
     const { imageIsLoaded } = this.state;
     const url = addMissingProtocol(uri);
     const styles = {
-      ...style,
+      ...style
     };
     if (rounded) {
       Object.assign(styles, { borderRadius: "50%", overflow: "hidden" });

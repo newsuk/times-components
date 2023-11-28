@@ -8,7 +8,7 @@ export const propTypes = {
   isLoading: PropTypes.bool,
   section: PropTypes.string,
   slotName: PropTypes.string.isRequired,
-  style: ViewPropTypesStyle,
+  style: ViewPropTypesStyle
 };
 
 export const defaultProps = {
@@ -16,5 +16,5 @@ export const defaultProps = {
   contextUrl: "",
   isLoading: false,
   section: "",
-  style: null,
+  style: null
 };

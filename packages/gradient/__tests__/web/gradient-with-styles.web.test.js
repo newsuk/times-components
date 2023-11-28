@@ -7,7 +7,7 @@ import {
   enzymeRenderedSerializer,
   hoistStyleTransform,
   minimalWebTransform,
-  stylePrinter,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import Gradient from "../../src/gradient";
@@ -15,7 +15,7 @@ import Gradient from "../../src/gradient";
 addSerializers(
   expect,
   enzymeRenderedSerializer(),
-  compose(stylePrinter, hoistStyleTransform, minimalWebTransform),
+  compose(stylePrinter, hoistStyleTransform, minimalWebTransform)
 );
 
 const tests = [
@@ -24,15 +24,15 @@ const tests = [
     test() {
       const styles = {
         gradient: {
-          backgroundColor: "red",
-        },
+          backgroundColor: "red"
+        }
       };
 
       expect(
-        mount(<Gradient degrees={30} style={styles.gradient} />),
+        mount(<Gradient degrees={30} style={styles.gradient} />)
       ).toMatchSnapshot();
-    },
-  },
+    }
+  }
 ];
 
 iterator(tests);

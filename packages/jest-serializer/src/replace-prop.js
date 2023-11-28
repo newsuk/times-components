@@ -6,16 +6,16 @@ export const replacePropTransform =
     const transformedProps = Object.entries(props).reduce(
       (tProps, [key, value]) => ({
         ...tProps,
-        [key]: replacer(value, key),
+        [key]: replacer(value, key)
       }),
-      {},
+      {}
     );
 
     return {
       accum,
       children,
       node,
-      props: transformedProps,
+      props: transformedProps
     };
   };
 

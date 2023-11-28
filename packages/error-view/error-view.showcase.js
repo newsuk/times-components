@@ -15,18 +15,18 @@ class BadComponent extends Component {
 
 const styles = {
   background: {
-    backgroundColor: "red",
+    backgroundColor: "red"
   },
   customError: {
     alignItems: "center",
     height: "300px",
     justifyContent: "center",
-    width: "400px",
+    width: "400px"
   },
   text: {
     color: "white",
-    fontSize: fontSizes.smallestHeadline,
-  },
+    fontSize: fontSizes.smallestHeadline
+  }
 };
 
 const ErrorState = ({ error: { message }, style }) => (
@@ -37,15 +37,15 @@ const ErrorState = ({ error: { message }, style }) => (
 
 ErrorState.defaultProps = {
   error: null,
-  style: {},
+  style: {}
 };
 
 ErrorState.propTypes = {
   error: PropTypes.shape({
     message: PropTypes.string,
-    stack: PropTypes.string,
+    stack: PropTypes.string
   }),
-  style: ViewPropTypesStyle,
+  style: ViewPropTypesStyle
 };
 
 class FiresOnError extends Component {
@@ -60,7 +60,7 @@ class FiresOnError extends Component {
 }
 
 FiresOnError.propTypes = {
-  onError: PropTypes.func.isRequired,
+  onError: PropTypes.func.isRequired
 };
 
 export default {
@@ -78,7 +78,7 @@ export default {
         </ErrorView>
       ),
       name: "Error",
-      type: "story",
+      type: "story"
     },
     {
       component: () => (
@@ -93,8 +93,8 @@ export default {
         </ErrorView>
       ),
       name: "Async error",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Primitives/Error View",
+  name: "Primitives/Error View"
 };

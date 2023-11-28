@@ -24,7 +24,7 @@ const getUTCTime = (date) => {
     localDate.getUTCMonth(),
     localDate.getUTCDate(),
     localDate.getUTCHours(),
-    localDate.getUTCMinutes(),
+    localDate.getUTCMinutes()
   );
 };
 

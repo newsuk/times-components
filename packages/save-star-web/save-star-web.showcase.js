@@ -9,8 +9,8 @@ const styles = {
   star: {
     alignItems: "center",
     flexDirection: "row",
-    padding: spacing(4),
-  },
+    padding: spacing(4)
+  }
 };
 
 export default {
@@ -31,8 +31,8 @@ export default {
         </MockBookmarksProvider>
       ),
       name: "SaveStarWeb",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Primitives/SaveStarWeb",
+  name: "Primitives/SaveStarWeb"
 };

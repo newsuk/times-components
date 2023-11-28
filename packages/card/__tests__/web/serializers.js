@@ -8,7 +8,7 @@ import {
   minimalWebTransform,
   propsNoChildren,
   replaceTransform,
-  stylePrinter,
+  stylePrinter
 } from "@times-components/jest-serializer";
 
 export default () => {
@@ -22,12 +22,12 @@ export default () => {
         CardContent: justChildren,
         Gradient: propsNoChildren,
         Loading: justChildren,
-        TimesImage: propsNoChildren,
+        TimesImage: propsNoChildren
       }),
       flattenStyleTransform,
       hoistStyleTransform,
-      minimalWebTransform,
-    ),
+      minimalWebTransform
+    )
   );
 
   // eslint-disable-next-line global-require

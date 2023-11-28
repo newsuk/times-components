@@ -4,7 +4,7 @@ export const render = (renderers) => {
     const renderer = renderers[name] || renderers.unknown;
     if (!renderer) return null;
     const renderedChildren = children.map((child, index) =>
-      run(child, `${key}.${index}`, index),
+      run(child, `${key}.${index}`, index)
     );
     const result = renderer.call(
       renderers,
@@ -12,7 +12,7 @@ export const render = (renderers) => {
       attributes,
       renderedChildren,
       indx,
-      tree,
+      tree
     );
     return result;
   };
@@ -24,7 +24,7 @@ export const renderTree = (tree, renderers, key = 0, indx = 0) =>
 
 export const renderTreeAsText = (
   { attributes: { value } = {}, children, name },
-  key = "0",
+  key = "0"
 ) =>
   (name === "text" && value) ||
   (children

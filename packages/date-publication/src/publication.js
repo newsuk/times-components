@@ -1,6 +1,6 @@
 export const publications = {
   SUNDAYTIMES: "The Sunday Times",
-  TIMES: "The Times",
+  TIMES: "The Times"
 };
 
 export const getPublicationComma = (publication) =>

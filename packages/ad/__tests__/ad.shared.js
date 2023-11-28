@@ -5,7 +5,7 @@ import {
   compose,
   enzymeRootSerializer,
   minimaliseTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 import adConfig from "../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../src/ad";
@@ -14,8 +14,8 @@ const props = {
   contextUrl: "https://www.thetimes.co.uk",
   section: "news",
   style: {
-    backgroundColor: "red",
-  },
+    backgroundColor: "red"
+  }
 };
 
 export default () => {
@@ -24,8 +24,8 @@ export default () => {
     enzymeRootSerializer(),
     compose(
       print,
-      minimaliseTransform((value, key) => key === "style" || key === "value"),
-    ),
+      minimaliseTransform((value, key) => key === "style" || key === "value")
+    )
   );
 
   it("advert", () => {
@@ -34,7 +34,7 @@ export default () => {
         <Fragment>
           <Ad {...props} slotName="header" />
         </Fragment>
-      </AdComposer>,
+      </AdComposer>
     );
 
     expect(wrapper).toMatchSnapshot();

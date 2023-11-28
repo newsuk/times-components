@@ -5,7 +5,7 @@ import { iterator } from "@times-components/test-utils";
 import {
   addSerializers,
   enzymeRootSerializer,
-  minimalise,
+  minimalise
 } from "@times-components/jest-serializer";
 
 import Inner from "./inner";
@@ -14,7 +14,7 @@ import withDebounce, { Debounce } from "../src/debounce";
 addSerializers(
   expect,
   enzymeRootSerializer(),
-  minimalise((_, key) => key === "debounceRender"),
+  minimalise((_, key) => key === "debounceRender")
 );
 
 jest.useFakeTimers();
@@ -29,7 +29,7 @@ const testUpdateInnerPropsAfterDelay = (delay) => {
       debounceRender={(props) => <Inner {...props} />}
       debounceTimeMs={delay}
       foo="initialFoo"
-    />,
+    />
   );
   const innerProps = () => component.update().find("Inner").props();
 
@@ -55,21 +55,21 @@ iterator([
     name: "immediately updates props, but delays update of debouncedProps",
     test() {
       testUpdateInnerPropsAfterDelay(1000);
-    },
+    }
   },
 
   {
     name: "handles different debounce delays",
     test() {
       testUpdateInnerPropsAfterDelay(2500);
-    },
+    }
   },
 
   {
     name: "handles zero debounce delay",
     test() {
       testUpdateInnerPropsAfterDelay(0);
-    },
+    }
   },
 
   {
@@ -80,7 +80,7 @@ iterator([
           debounceRender={(props) => <Inner {...props} />}
           debounceTimeMs={1000}
           foo="initialFoo"
-        />,
+        />
       );
       const setState = jest.spyOn(component.instance(), "handleDebounceTimer");
 
@@ -94,7 +94,7 @@ iterator([
       component.unmount();
       jest.advanceTimersByTime(1200);
       expect(setState.mock.calls.length).toEqual(1);
-    },
+    }
   },
 
   {
@@ -104,12 +104,12 @@ iterator([
       InnerWithStatics.staticMember = "staticMemberValue";
       InnerWithStatics.propTypes = {
         debouncedProps: PropTypes.shape({
-          foo: PropTypes.string,
+          foo: PropTypes.string
         }).isRequired,
-        foo: PropTypes.string,
+        foo: PropTypes.string
       };
       InnerWithStatics.defaultProps = {
-        foo: "",
+        foo: ""
       };
       InnerWithStatics.displayName = "InnerWithStatics";
 
@@ -118,10 +118,10 @@ iterator([
       expect(Outer.staticMember).toEqual("staticMemberValue");
       expect(Outer.propTypes).toEqual({
         debounceTimeMs: PropTypes.number.isRequired,
-        foo: PropTypes.string,
+        foo: PropTypes.string
       }); // debounceTimeMs removed
       expect(Outer.defaultProps).toEqual(InnerWithStatics.defaultProps);
-    },
+    }
   },
 
   {
@@ -130,7 +130,7 @@ iterator([
       const Outer = withDebounce(Inner);
       const rendered = shallow(<Outer debounceTimeMs={1000} />);
       expect(rendered).toMatchSnapshot();
-    },
+    }
   },
 
   {
@@ -141,7 +141,7 @@ iterator([
       const renderProp = rendered.find(Debounce).prop("debounceRender");
       const inner = renderProp({ debouncedProps: { foo: "bar" } });
       expect(inner).toMatchSnapshot();
-    },
+    }
   },
 
   {
@@ -152,19 +152,19 @@ iterator([
           debounceRender={(props) => <Inner {...props} />}
           debounceTimeMs={1000}
           foo="initialFoo"
-        />,
+        />
       );
       expect(component.find("Inner").props()).toEqual({
         debouncedProps: {
           debounceRender: expect.any(Function),
           debounceTimeMs: 1000,
-          foo: "initialFoo",
+          foo: "initialFoo"
         },
         debounceTimeMs: 1000,
         foo: "initialFoo",
-        isDebouncing: false,
+        isDebouncing: false
       });
-    },
+    }
   },
 
   {
@@ -175,19 +175,19 @@ iterator([
           debounceRender={(props) => <Inner {...props} />}
           debounceTimeMs={1000}
           foo="initialFoo"
-        />,
+        />
       );
       component.setProps({ foo: "initialFoo" });
       expect(component.find("Inner").props()).toEqual({
         debouncedProps: {
           debounceRender: expect.any(Function),
           debounceTimeMs: 1000,
-          foo: "initialFoo",
+          foo: "initialFoo"
         },
         debounceTimeMs: 1000,
         foo: "initialFoo",
-        isDebouncing: false,
+        isDebouncing: false
       });
-    },
-  },
+    }
+  }
 ]);

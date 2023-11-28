@@ -16,8 +16,8 @@ const makeQuery = ({ defaults, delay, error, query, variables, repeatable }) =>
       mock,
       query,
       variables,
-      repeatable,
-    }),
+      repeatable
+    })
   );
 
 const toResponse = ({ delay, error, mock, query, variables, repeatable }) => {
@@ -26,9 +26,9 @@ const toResponse = ({ delay, error, mock, query, variables, repeatable }) => {
     error,
     request: {
       query,
-      variables,
+      variables
     },
-    result: mock,
+    result: mock
   };
 
   if (repeatable) {
@@ -40,7 +40,7 @@ const toResponse = ({ delay, error, mock, query, variables, repeatable }) => {
 
 export const schemaToMocks = (params) =>
   Promise.all(params.map(makeQuery)).then(([...mocks]) =>
-    mocks.map(toResponse),
+    mocks.map(toResponse)
   );
 
 class MockFixture extends Component {
@@ -48,7 +48,7 @@ class MockFixture extends Component {
     super(props);
 
     this.state = {
-      mocks: [],
+      mocks: []
     };
   }
 
@@ -71,14 +71,14 @@ MockFixture.propTypes = {
     PropTypes.shape({
       defaults: PropTypes.shape({
         types: PropTypes.any,
-        values: PropTypes.any,
+        values: PropTypes.any
       }),
       delay: null,
       query: PropTypes.object.isRequired,
-      variables: PropTypes.object,
-    }),
+      variables: PropTypes.object
+    })
   ).isRequired,
-  render: PropTypes.func.isRequired,
+  render: PropTypes.func.isRequired
 };
 
 export default MockFixture;

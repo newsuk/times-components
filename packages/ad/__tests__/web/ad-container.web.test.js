@@ -4,7 +4,7 @@ import {
   addSerializers,
   compose,
   minimaliseTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 import AdContainer from "../../src/ad-container";
 
@@ -13,8 +13,8 @@ describe("ad-container", () => {
     expect,
     compose(
       print,
-      minimaliseTransform((value, key) => key === "style"),
-    ),
+      minimaliseTransform((value, key) => key === "style")
+    )
   );
 
   it("header ad", () => {
@@ -23,7 +23,7 @@ describe("ad-container", () => {
   });
   it("inline ad", () => {
     const testInstance = TestRenderer.create(
-      <AdContainer slotName="inline-ad" />,
+      <AdContainer slotName="inline-ad" />
     );
     expect(testInstance).toMatchSnapshot();
   });
@@ -33,13 +33,13 @@ describe("ad-container", () => {
   });
   it("pixelteads ad", () => {
     const testInstance = TestRenderer.create(
-      <AdContainer slotName="pixelteads" />,
+      <AdContainer slotName="pixelteads" />
     );
     expect(testInstance).toMatchSnapshot();
   });
   it("pixelskin ad", () => {
     const testInstance = TestRenderer.create(
-      <AdContainer slotName="pixelskin" />,
+      <AdContainer slotName="pixelskin" />
     );
     expect(testInstance).toMatchSnapshot();
   });

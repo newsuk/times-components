@@ -21,7 +21,7 @@ const Video = (props) => {
                 <div
                   style={{
                     height,
-                    width,
+                    width
                   }}
                 >
                   <Image aspectRatio={width / height} uri={poster.uri} />

@@ -18,7 +18,7 @@ const ForwardChevron = ({ fillColour, height, width }) => (
 ForwardChevron.propTypes = propTypes;
 
 ForwardChevron.defaultProps = {
-  fillColour: colours.functional.action,
+  fillColour: colours.functional.action
 };
 
 export default ForwardChevron;

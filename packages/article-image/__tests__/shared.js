@@ -7,7 +7,7 @@ import {
   minimalWebTransform,
   print,
   propsNoChildren,
-  replaceTransform,
+  replaceTransform
 } from "@times-components/jest-serializer";
 import { mount } from "enzyme";
 import shared from "./shared.base";
@@ -22,13 +22,13 @@ export default () => {
         ArticleImage: justChildren,
         ArticleImageWeb: justChildren,
         Caption: justChildren,
-        TimesImage: propsNoChildren,
+        TimesImage: propsNoChildren
       }),
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => key === "style" || key === "className",
-      ),
-    ),
+        (value, key) => key === "style" || key === "className"
+      )
+    )
   );
 
   shared((component) => mount(component));

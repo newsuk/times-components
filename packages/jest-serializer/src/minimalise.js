@@ -7,7 +7,7 @@ export const minimaliseTransform =
     accum,
     children,
     node,
-    props: omitBy(props, excludeProps),
+    props: omitBy(props, excludeProps)
   });
 
 export default (excludeProps) =>
@@ -22,7 +22,7 @@ export const minimalWebTransform = minimaliseTransform(
     typeof value === "function" ||
     isEmptyObject(value) ||
     key === "dir" ||
-    key === "data-focusable",
+    key === "data-focusable"
 );
 
 export const minimalWeb = traverse(print, minimalWebTransform);

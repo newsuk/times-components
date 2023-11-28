@@ -12,7 +12,7 @@ const Responsive = ({ children }) => {
       value={{
         editionBreakpoint: getEditionBreakpoint(width),
         isTablet: false,
-        screenWidth: width,
+        screenWidth: width
       }}
     >
       {children}
@@ -21,11 +21,11 @@ const Responsive = ({ children }) => {
 };
 
 Responsive.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 
 Responsive.defaultProps = {
-  children: null,
+  children: null
 };
 
 export default Responsive;

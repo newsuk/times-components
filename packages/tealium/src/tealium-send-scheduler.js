@@ -67,7 +67,7 @@ export default class TealiumSendScheduler {
         }
         const start = Date.now();
         this.sendEvents({
-          timeRemaining: () => Math.max(0, 50 - (Date.now() - start)),
+          timeRemaining: () => Math.max(0, 50 - (Date.now() - start))
         });
       }, 0);
     }

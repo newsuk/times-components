@@ -1,5 +1,5 @@
 global.Intl = {
   DateTimeFormat: () => ({
-    resolvedOptions: () => ({ timeZone: "Europe/Kiev" }),
-  }),
+    resolvedOptions: () => ({ timeZone: "Europe/Kiev" })
+  })
 };

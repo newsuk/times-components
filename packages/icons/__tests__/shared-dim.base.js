@@ -12,7 +12,7 @@ export default (renderMethod) => {
         const output = renderMethod(<Icon height={50} />);
 
         expect(output).toMatchSnapshot();
-      },
+      }
     });
   });
 

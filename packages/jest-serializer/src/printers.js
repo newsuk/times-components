@@ -6,21 +6,21 @@ const getDeclarationsAst = (rules) =>
   Object.entries(rules).map(([property, value]) => ({
     property,
     type: "declaration",
-    value,
+    value
   }));
 
 const getRulesAst = (jss) =>
   Object.entries(jss).map(([selector, rules]) => ({
     declarations: getDeclarationsAst(rules),
     selectors: [`.${selector}`],
-    type: "rule",
+    type: "rule"
   }));
 
 const getStylesheetAst = (jss) => ({
   stylesheet: {
-    rules: getRulesAst(jss),
+    rules: getRulesAst(jss)
   },
-  type: "stylesheet",
+  type: "stylesheet"
 });
 
 const stringifyJss = (jss) => css.stringify(getStylesheetAst(jss));
@@ -28,7 +28,7 @@ const stringifyJss = (jss) => css.stringify(getStylesheetAst(jss));
 export const stylePrinter = (serialize, accum, element) => {
   const mergedStyles = {
     ...(accum.rnw || {}),
-    ...(accum.inlineStyles || {}),
+    ...(accum.inlineStyles || {})
   };
   const styleBlock =
     Object.keys(mergedStyles).length > 0

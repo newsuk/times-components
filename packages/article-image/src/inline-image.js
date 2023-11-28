@@ -4,7 +4,7 @@ import Image from "@times-components/image";
 import { propTypes, defaultPropTypes } from "./article-image-prop-types";
 import {
   InsetCaptionContainerStyle,
-  InsetImageStyle,
+  InsetImageStyle
 } from "./styles/responsive";
 
 const renderCaption = (display, caption, credits) => {

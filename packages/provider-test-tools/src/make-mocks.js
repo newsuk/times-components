@@ -5,31 +5,31 @@ export default ({ data: { __schema } }) =>
   ({
     types: defaultTypes,
     values: defaultValues,
-    mutationValues: defaultMutationValues,
+    mutationValues: defaultMutationValues
   } = {}) => {
     const schemaSDL = printSchema(buildClientSchema({ __schema }));
 
     const schema = makeExecutableSchema({
       resolvers: {
         Query: {
-          ...defaultValues,
+          ...defaultValues
         },
         Mutation: {
-          ...defaultMutationValues,
-        },
+          ...defaultMutationValues
+        }
       },
       resolverValidationOptions: {
-        requireResolversForResolveType: false,
+        requireResolversForResolveType: false
       },
-      typeDefs: schemaSDL,
+      typeDefs: schemaSDL
     });
 
     addMockFunctionsToSchema({
       mocks: {
-        ...defaultTypes,
+        ...defaultTypes
       },
       preserveResolvers: true,
-      schema,
+      schema
     });
 
     return schema;

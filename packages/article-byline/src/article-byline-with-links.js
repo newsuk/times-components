@@ -30,7 +30,7 @@ const ArticleBylineWithLinks = ({ ast, centered, ...props }) =>
     withTrackEvents(AuthorComponent),
     ast,
     centered ? [styles.text, styles.centered] : styles.text,
-    props,
+    props
   );
 
 ArticleBylineWithLinks.displayName = "ArticleBylineWithLinks";

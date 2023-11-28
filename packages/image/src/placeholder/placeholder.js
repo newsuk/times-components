@@ -8,7 +8,7 @@ import T from "../logo/t";
 function Placeholder({ borderRadius = 0 }) {
   const viewStyles = {
     ...styles.placeholder,
-    borderRadius,
+    borderRadius
   };
   return (
     <TcView height="100%" style={viewStyles} width="100%">
@@ -18,7 +18,7 @@ function Placeholder({ borderRadius = 0 }) {
 }
 
 Placeholder.propTypes = {
-  borderRadius: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  borderRadius: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 };
 
 export default Placeholder;

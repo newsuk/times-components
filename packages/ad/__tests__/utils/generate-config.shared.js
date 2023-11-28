@@ -6,12 +6,12 @@ export default () => {
     const sizes = [
       [100, biggestValue],
       [biggestValue, 200],
-      [100, 200],
+      [100, 200]
     ];
 
     expect(getMaxSizes(sizes)).toEqual({
       height: biggestValue,
-      width: biggestValue,
+      width: biggestValue
     });
   });
 

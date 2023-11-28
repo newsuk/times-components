@@ -6,7 +6,7 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  stylePrinter,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import Button from "../src/button";
 import shared from "./shared.base";
@@ -20,14 +20,14 @@ export default () => {
     compose(
       stylePrinter,
       minimalWebTransform,
-      minimaliseTransform((value, key) => accessibleAttributes.has(key)),
-    ),
+      minimaliseTransform((value, key) => accessibleAttributes.has(key))
+    )
   );
 
   it("should handle the onPress event", () => {
     const onPressMock = jest.fn();
     const wrapper = shallow(
-      <Button onPress={onPressMock} title="test button" />,
+      <Button onPress={onPressMock} title="test button" />
     );
 
     wrapper.simulate("click");

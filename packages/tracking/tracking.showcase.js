@@ -5,7 +5,7 @@ import storybookReporter from "@times-components/tealium-utils";
 import {
   withTrackingContext,
   withTrackEvents,
-  withTrackScrollDepth,
+  withTrackScrollDepth
 } from "./src/tracking";
 import Box, { boxStyles } from "./storybook-components/box";
 import Boxes from "./storybook-components/boxes";
@@ -27,14 +27,14 @@ const BoxWithButtons = ({ color, onClick }) => (
 );
 BoxWithButtons.propTypes = {
   color: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired
 };
 
 const BoxWithTrackingContext = withTrackingContext(Box, {
   getAttrs: (props) => ({
-    color: props.color,
+    color: props.color
   }),
-  trackingObjectName: "TrackRenderStory",
+  trackingObjectName: "TrackRenderStory"
 });
 
 const BoxWithClickTrackingAndContext = withTrackingContext(
@@ -44,23 +44,23 @@ const BoxWithClickTrackingAndContext = withTrackingContext(
         actionName: "Clicked",
         eventName: "onClick",
         getAttrs: (props, eventArgs) => ({
-          button: eventArgs[0],
+          button: eventArgs[0]
         }),
-        trackingName: "ColoredBox",
-      },
-    ],
+        trackingName: "ColoredBox"
+      }
+    ]
   }),
-  { trackingObjectName: "TrackRenderStory" },
+  { trackingObjectName: "TrackRenderStory" }
 );
 
 const BoxesWithTrackingContext = withTrackingContext(
   withTrackScrollDepth(Boxes, {
     getAttrs: (props) => ({
-      id: props.elementId,
+      id: props.elementId
     }),
-    trackingName: "ColoredBox",
+    trackingName: "ColoredBox"
   }),
-  { trackingObjectName: "Story" },
+  { trackingObjectName: "Story" }
 );
 
 export default {
@@ -73,7 +73,7 @@ export default {
         />
       ),
       name: "Page tracking",
-      type: "story",
+      type: "story"
     },
     {
       component: () => (
@@ -84,13 +84,13 @@ export default {
         />
       ),
       name: "Event tracking",
-      type: "story",
+      type: "story"
     },
     {
       component: () => {
         const boxes = [...Array(50).keys()].map((i) => ({
           color: i % 2 === 0 ? "green" : "blue",
-          elementId: `box-${i + 1}`,
+          elementId: `box-${i + 1}`
         }));
         return (
           <BoxesWithTrackingContext
@@ -101,8 +101,8 @@ export default {
         );
       },
       name: "Scroll depth tracking",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Helpers/Tracking",
+  name: "Helpers/Tracking"
 };

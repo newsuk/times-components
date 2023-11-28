@@ -10,7 +10,7 @@ const preventDefaultedAction = (decorateAction) =>
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    },
+    }
   ]);
 
 const ComponentWrapper = ({ children }) => (
@@ -18,7 +18,7 @@ const ComponentWrapper = ({ children }) => (
 );
 
 const getProps = (decorateAction) => ({
-  onAuthorPress: preventDefaultedAction(decorateAction)("onAuthorPress"),
+  onAuthorPress: preventDefaultedAction(decorateAction)("onAuthorPress")
 });
 
 export default {
@@ -33,8 +33,8 @@ export default {
         </ComponentWrapper>
       ),
       name: "Byline with a single author",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Primitives/Article Byline/Opinion",
+  name: "Primitives/Article Byline/Opinion"
 };

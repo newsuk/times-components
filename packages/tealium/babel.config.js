@@ -7,11 +7,11 @@ module.exports = (api) => {
         "@babel/preset-env",
         {
           targets: {
-            node: "current",
-          },
-        },
+            node: "current"
+          }
+        }
       ],
-      "@babel/preset-react",
-    ],
+      "@babel/preset-react"
+    ]
   };
 };

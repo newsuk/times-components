@@ -11,7 +11,7 @@ class LazyLoad extends Component {
     this.pendingTimer = null;
     this.state = {
       clientHasRendered: false,
-      nodes: new Map(),
+      nodes: new Map()
     };
     this.unobserved = new Set();
     this.unobservedTimer = null;
@@ -25,18 +25,18 @@ class LazyLoad extends Component {
 
     const options = {
       rootMargin: props.rootMargin,
-      threshold: props.threshold,
+      threshold: props.threshold
     };
 
     this.observer = new window.IntersectionObserver(
       this.handleObservation.bind(this),
-      options,
+      options
     );
   }
 
   componentDidMount() {
     const newState = {
-      clientHasRendered: true,
+      clientHasRendered: true
     };
 
     // eslint-disable-next-line react/no-did-mount-set-state
@@ -78,8 +78,8 @@ class LazyLoad extends Component {
         this.setState((state) => ({
           nodes: new Map([
             ...state.nodes,
-            ...[...this.pending].map((n) => [n.id, n]),
-          ]),
+            ...[...this.pending].map((n) => [n.id, n])
+          ])
         }));
 
         this.pending.clear();
@@ -103,7 +103,7 @@ class LazyLoad extends Component {
 
       this.unobservedTimer = setTimeout(() => {
         this.setState({
-          nodes: new Map([...this.unobserved].map((n) => [n.id, n])),
+          nodes: new Map([...this.unobserved].map((n) => [n.id, n]))
         });
         this.unobserved.clear();
       }, 10);
@@ -122,7 +122,7 @@ class LazyLoad extends Component {
       clientHasRendered,
       isObserving: this.isObserving,
       observed: nodes,
-      registerNode: this.registerNode,
+      registerNode: this.registerNode
     });
   }
 }
@@ -130,11 +130,11 @@ class LazyLoad extends Component {
 LazyLoad.propTypes = {
   children: PropTypes.func.isRequired,
   rootMargin: PropTypes.string,
-  threshold: PropTypes.number.isRequired,
+  threshold: PropTypes.number.isRequired
 };
 
 LazyLoad.defaultProps = {
-  rootMargin: "0px",
+  rootMargin: "0px"
 };
 
 export default LazyLoad;

@@ -9,7 +9,7 @@ import styles from "./styles";
 const BylineText = styled(TcText)`
   ${(props) =>
     props.style ? checkStylesForUnits(props.style) : ""} ${checkStylesForUnits(
-    styles.nonLinkText,
+    styles.nonLinkText
   )};
 `;
 

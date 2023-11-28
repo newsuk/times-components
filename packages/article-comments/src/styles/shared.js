@@ -4,7 +4,7 @@ const styles = {
   button: {
     marginBottom: spacing(0),
     marginTop: spacing(5),
-    maxWidth: 215,
+    maxWidth: 215
   },
   container: {
     alignItems: "center",
@@ -12,31 +12,31 @@ const styles = {
     borderTopColor: colours.functional.keyline,
     borderTopWidth: 1,
     marginBottom: spacing(10),
-    width: "100%",
+    width: "100%"
   },
   headline: {
     color: colours.functional.primary,
     ...fontFactory({
       font: "headline",
-      fontSize: "commentsHeadline",
+      fontSize: "commentsHeadline"
     }),
     maxWidth: 315,
     paddingBottom: spacing(2),
     paddingTop: spacing(6),
-    textAlign: "center",
+    textAlign: "center"
   },
   link: {
-    color: colours.functional.action,
+    color: colours.functional.action
   },
   supporting: {
     ...fontFactory({
       font: "supporting",
-      fontSize: "tertiary",
+      fontSize: "tertiary"
     }),
     color: colours.functional.secondary,
     maxWidth: 280,
-    textAlign: "center",
-  },
+    textAlign: "center"
+  }
 };
 
 export default styles;

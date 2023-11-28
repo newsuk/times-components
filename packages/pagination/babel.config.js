@@ -3,12 +3,12 @@ module.exports = (api) => {
   return {
     plugins: [
       "babel-plugin-styled-components",
-      "babel-plugin-transform-class-properties",
+      "babel-plugin-transform-class-properties"
     ],
     presets: [
       "@babel/preset-env",
       "@babel/preset-react",
-      "@babel/preset-typescript",
-    ],
+      "@babel/preset-typescript"
+    ]
   };
 };

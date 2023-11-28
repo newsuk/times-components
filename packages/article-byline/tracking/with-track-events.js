@@ -8,9 +8,9 @@ export default (Component) =>
         eventName: "onAuthorPress",
         getAttrs: ({ name, slug }) => ({
           name,
-          slug,
+          slug
         }),
-        trackingName: "ArticlePressAuthor",
-      },
-    ],
+        trackingName: "ArticlePressAuthor"
+      }
+    ]
   });

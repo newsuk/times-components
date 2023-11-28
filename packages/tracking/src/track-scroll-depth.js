@@ -7,7 +7,7 @@ import resolveAttrs from "./resolve-attrs";
 
 export default (
   WrappedComponent,
-  { trackingName, getAttrs = () => ({}) } = {},
+  { trackingName, getAttrs = () => ({}) } = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
@@ -25,8 +25,8 @@ export default (
           {
             root: null,
             rootMargin: "0px",
-            threshold: 0.5,
-          },
+            threshold: 0.5
+          }
         );
       }
       this.childList = [];
@@ -72,12 +72,12 @@ export default (
           scrollDepth: {
             itemNumber: childProps.index + 1,
             name: childProps.name,
-            total: childProps.total,
-          },
+            total: childProps.total
+          }
         },
         component: childProps.eventNavigationName
           ? childProps.eventNavigationName
-          : `${trackingName || componentName}Child`,
+          : `${trackingName || componentName}Child`
       });
     }
 
@@ -96,7 +96,7 @@ export default (
             this.observeChild({
               ...props,
               index,
-              total: this.childList.length,
+              total: this.childList.length
             });
           }
         });

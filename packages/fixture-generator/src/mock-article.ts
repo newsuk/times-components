@@ -5,7 +5,7 @@ import {
   Flag,
   Markup,
   SectionName,
-  TemplateType,
+  TemplateType
 } from "./types";
 import keywords from "./mock-keywords";
 import UUID from "./mock-UUID";
@@ -48,8 +48,8 @@ class MockArticle {
       expirableFlags: [
         {
           type: Flag.Exclusive,
-          expiryTime: "2030-03-14T12:00:00.000Z",
-        },
+          expiryTime: "2030-03-14T12:00:00.000Z"
+        }
       ],
       isTeased: false,
       label: "label",
@@ -78,13 +78,13 @@ class MockArticle {
         nodes: [],
         pageInfo: {
           hasNextPage: false,
-          hasPreviousPage: false,
+          hasPreviousPage: false
         },
-        totalCount: 1,
+        totalCount: 1
       },
       topicConnection: {
-        nodes: [],
-      },
+        nodes: []
+      }
     };
   }
 
@@ -105,7 +105,7 @@ class MockArticle {
 
   sundayTimes() {
     this.article.publicationName = getPublicationName(
-      PublicationName.Sundaytimes,
+      PublicationName.Sundaytimes
     );
     return this;
   }

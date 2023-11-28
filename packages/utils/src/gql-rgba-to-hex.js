@@ -6,6 +6,6 @@ const convertToHex = (rgbaNumber) => {
 export default (colour) =>
   colour && colour.rgba
     ? `#${convertToHex(colour.rgba.red)}${convertToHex(
-        colour.rgba.green,
+        colour.rgba.green
       )}${convertToHex(colour.rgba.blue)}`.toUpperCase()
     : null;

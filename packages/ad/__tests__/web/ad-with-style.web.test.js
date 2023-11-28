@@ -11,7 +11,7 @@ import {
   minimalWebTransform,
   propsNoChildren,
   replaceTransform,
-  stylePrinter,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import adInit from "../../src/utils/ad-init";
@@ -26,19 +26,19 @@ jest.mock("@times-components/utils", () => {
   }
   return {
     ...utils,
-    ServerClientRender: MockServerClientRender,
+    ServerClientRender: MockServerClientRender
   };
 });
 
 jest.mock("../../src/utils/ad-init");
 adInit.mockImplementation(() => ({
   destroySlots: () => {},
-  init: () => {},
+  init: () => {}
 }));
 
 const props = {
   contextUrl: "https://www.thetimes.co.uk",
-  section: "news",
+  section: "news"
 };
 
 addSerializers(
@@ -53,9 +53,9 @@ addSerializers(
     replaceTransform({
       Broadcast: justChildren,
       Subscriber: justChildren,
-      Watermark: propsNoChildren,
-    }),
-  ),
+      Watermark: propsNoChildren
+    })
+  )
 );
 
 const tests = [
@@ -69,7 +69,7 @@ const tests = [
             <Ad {...props} slotName="pixel" />
             <Ad {...props} slotName="intervention" />
           </Fragment>
-        </AdComposer>,
+        </AdComposer>
       );
 
       wrapper.find("Ad").forEach((node) => {
@@ -79,7 +79,7 @@ const tests = [
       wrapper.update();
 
       expect(wrapper).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "placeholder when isLoading",
@@ -89,13 +89,13 @@ const tests = [
           <Fragment>
             <Ad {...props} isLoading slotName="header" />
           </Fragment>
-        </AdComposer>,
+        </AdComposer>
       );
 
       const AdComponent = wrapper.find("Ad");
 
       expect(AdComponent).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "nothing if there is an error in the loading of scripts",
@@ -105,7 +105,7 @@ const tests = [
           <Fragment>
             <Ad {...props} slotName="header" />
           </Fragment>
-        </AdComposer>,
+        </AdComposer>
       );
 
       const AdComponent = wrapper.find("Ad");
@@ -115,7 +115,7 @@ const tests = [
       wrapper.update();
 
       expect(AdComponent).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "returns nothing if user has AdBlock",
@@ -127,14 +127,14 @@ const tests = [
           <Fragment>
             <Ad {...props} slotName="header" />
           </Fragment>
-        </AdComposer>,
+        </AdComposer>
       );
 
       const AdComponent = wrapper.find("Ad");
 
       expect(AdComponent).toMatchSnapshot();
-    },
-  },
+    }
+  }
 ];
 
 iterator(tests);

@@ -11,14 +11,14 @@ const withTrackingContext = (
   {
     getAttrs = () => ({}),
     trackingObjectName = "",
-    isDataReady = ({ isLoading }) => !isLoading,
-  } = {},
+    isDataReady = ({ isLoading }) => !isLoading
+  } = {}
 ) => {
   const componentName = getDisplayName(WrappedComponent);
 
   class WithTrackingContext extends Component {
     static defaultProps = {
-      ...WrappedComponent.defaultProps,
+      ...WrappedComponent.defaultProps
     };
 
     constructor(props, context) {
@@ -30,12 +30,12 @@ const withTrackingContext = (
       if (this.isRootTrackingContext()) {
         if (!trackingObjectName) {
           throw new TypeError(
-            "Missing argument trackingObjectName of withTrackingContext()",
+            "Missing argument trackingObjectName of withTrackingContext()"
           );
         }
         if (!analyticsStream) {
           throw new TypeError(
-            "Missing prop analyticsStream of WithTrackingContext",
+            "Missing prop analyticsStream of WithTrackingContext"
           );
         }
       }
@@ -44,8 +44,8 @@ const withTrackingContext = (
     getChildContext() {
       return {
         tracking: {
-          analytics: this.fireAnalyticsEvent,
-        },
+          analytics: this.fireAnalyticsEvent
+        }
       };
     }
 
@@ -62,10 +62,10 @@ const withTrackingContext = (
         action,
         attrs: {
           ...resolveAttrs(getAttrs, this.props),
-          ...attrs,
+          ...attrs
         },
         component,
-        object: trackingObjectName,
+        object: trackingObjectName
       };
 
       if (object || trackingObjectName) {
@@ -94,7 +94,7 @@ const withTrackingContext = (
         this.fireAnalyticsEvent({
           action: "Viewed",
           attrs: resolveAttrs(getAttrs, props),
-          component: "Page",
+          component: "Page"
         });
       }
     }
@@ -120,7 +120,7 @@ const withTrackingContext = (
   WithTrackingContext.childContextTypes = trackingContextTypes;
   WithTrackingContext.propTypes = {
     analyticsStream: PropTypes.func,
-    ...WrappedComponent.propTypes,
+    ...WrappedComponent.propTypes
   };
   hoistNonReactStatic(WithTrackingContext, WrappedComponent);
 

@@ -7,7 +7,7 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   stylePrinter,
-  replacePropTransform,
+  replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
 import Pagination from "../../src/pagination";
@@ -20,10 +20,10 @@ addSerializers(
     minimalWebTransform,
     minimaliseTransform(
       (value, key) =>
-        key === "style" || key === "className" || key === "data-testid",
+        key === "style" || key === "className" || key === "data-testid"
     ),
-    replacePropTransform((value, key) => (key === "d" ? hash(value) : value)),
-  ),
+    replacePropTransform((value, key) => (key === "d" ? hash(value) : value))
+  )
 );
 
 const mockGenerateLink = (page) => `?mock-${page}`;
@@ -36,13 +36,13 @@ const tests = [
         count: 20,
         generatePageLink: mockGenerateLink,
         page: 5,
-        pageSize: 3,
+        pageSize: 3
       };
 
       const wrapper = mount(<Pagination {...props} />);
 
       expect(wrapper).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "renders with no results",
@@ -52,13 +52,13 @@ const tests = [
         generatePageLink: mockGenerateLink,
         hideResults: true,
         page: 5,
-        pageSize: 3,
+        pageSize: 3
       };
 
       const wrapper = mount(<Pagination {...props} />);
 
       expect(wrapper).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "does not give a count smaller than a single page",
@@ -67,13 +67,13 @@ const tests = [
         count: 20,
         generatePageLink: mockGenerateLink,
         page: 1,
-        pageSize: 25,
+        pageSize: 25
       };
 
       const wrapper = mount(<Pagination {...props} />);
 
       expect(wrapper).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "limits the starting result to the total count",
@@ -82,13 +82,13 @@ const tests = [
         count: 20,
         generatePageLink: mockGenerateLink,
         page: 4,
-        pageSize: 10,
+        pageSize: 10
       };
 
       const wrapper = mount(<Pagination {...props} />);
 
       expect(wrapper).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "renders previous and not next",
@@ -98,13 +98,13 @@ const tests = [
         generatePageLink: mockGenerateLink,
         hideResults: true,
         page: 5,
-        pageSize: 4,
+        pageSize: 4
       };
 
       const wrapper = mount(<Pagination {...props} />);
 
       expect(wrapper).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "renders next and not previous",
@@ -114,13 +114,13 @@ const tests = [
         generatePageLink: mockGenerateLink,
         hideResults: true,
         page: 1,
-        pageSize: 4,
+        pageSize: 4
       };
 
       const wrapper = mount(<Pagination {...props} />);
 
       expect(wrapper).toMatchSnapshot();
-    },
+    }
   },
   {
     name: "tracks next page interaction",
@@ -129,8 +129,8 @@ const tests = [
       const wrapper = shallow(
         <Pagination count={21} generatePageLink={mockGenerateLink} page={1} />,
         {
-          context: { tracking: { analytics: stream } },
-        },
+          context: { tracking: { analytics: stream } }
+        }
       );
 
       wrapper.dive().find("Link").simulate("press");
@@ -139,11 +139,11 @@ const tests = [
         action: "Pressed",
         attrs: {
           destinationPage: 2,
-          direction: "next",
+          direction: "next"
         },
-        component: "Pagination",
+        component: "Pagination"
       });
-    },
+    }
   },
   {
     name: "tracks previous page interaction",
@@ -152,8 +152,8 @@ const tests = [
       const wrapper = shallow(
         <Pagination count={21} generatePageLink={mockGenerateLink} page={2} />,
         {
-          context: { tracking: { analytics: stream } },
-        },
+          context: { tracking: { analytics: stream } }
+        }
       );
 
       wrapper.dive().find("Link").simulate("press");
@@ -162,12 +162,12 @@ const tests = [
         action: "Pressed",
         attrs: {
           destinationPage: 1,
-          direction: "previous",
+          direction: "previous"
         },
-        component: "Pagination",
+        component: "Pagination"
       });
-    },
-  },
+    }
+  }
 ];
 
 iterator(tests);

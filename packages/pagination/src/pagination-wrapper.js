@@ -21,7 +21,7 @@ export default (PaginatedComponent) => {
     static getDerivedStateFromProps(props, state) {
       return {
         ...props,
-        page: state.page,
+        page: state.page
       };
     }
 
@@ -38,7 +38,7 @@ export default (PaginatedComponent) => {
         window.onpopstate = (event) => {
           if (event.state) {
             this.setState({
-              page: event.state.page,
+              page: event.state.page
             });
           }
         };
@@ -70,14 +70,14 @@ export default (PaginatedComponent) => {
   }
 
   Helper.displayName = `Pagination Helper (${getDisplayName(
-    PaginatedComponent,
+    PaginatedComponent
   )})`;
   Helper.propTypes = {
-    page: PropTypes.number,
+    page: PropTypes.number
   };
 
   Helper.defaultProps = {
-    page: 1,
+    page: 1
   };
 
   return Helper;

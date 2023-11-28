@@ -4,7 +4,7 @@ import { Subscriber } from "react-broadcast";
 import {
   screenWidth,
   ServerClientRender,
-  TcView,
+  TcView
 } from "@times-components/utils";
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 import adInit from "./utils/ad-init";
@@ -19,7 +19,7 @@ class Ad extends Component {
     const { slotName } = nextProps;
 
     return {
-      config: getSlotConfig(slotName, screenWidth()),
+      config: getSlotConfig(slotName, screenWidth())
     };
   }
 
@@ -34,25 +34,25 @@ class Ad extends Component {
       config: getSlotConfig(slotName, screenWidth()),
       hasError: false,
       isAdReady: false,
-      hasAdBlock: false,
+      hasAdBlock: false
     };
   }
 
   componentDidMount() {
     this.setState({
-      hasAdBlock: window.hasAdBlock,
+      hasAdBlock: window.hasAdBlock
     });
   }
 
   setAdReady = () => {
     this.setState({
-      isAdReady: true,
+      isAdReady: true
     });
   };
 
   setAdError = () => {
     this.setState({
-      hasError: true,
+      hasError: true
     });
   };
 
@@ -68,8 +68,8 @@ class Ad extends Component {
         slot,
         section,
         config.maxSizes.width,
-        adConfig.biddersConfig.bidders,
-      ),
+        adConfig.biddersConfig.bidders
+      )
     );
 
     this.allSlotConfigs = adConfig.globalSlots
@@ -91,20 +91,20 @@ class Ad extends Component {
         bucketSize: adConfig.biddersConfig.bucketSize,
         maxBid: adConfig.biddersConfig.maxBid,
         minPrice: adConfig.biddersConfig.minPrice,
-        timeout: adConfig.biddersConfig.timeout,
+        timeout: adConfig.biddersConfig.timeout
       }),
       section,
       sizingMap: config.mappings,
       slotName,
       slots: this.slots,
-      slotTargeting: adConfig.slotTargeting,
+      slotTargeting: adConfig.slotTargeting
     };
 
     const sizeProps = !isAdReady
       ? { height: 0, width: 0 }
       : {
           height: config.maxSizes.height,
-          width: config.maxSizes.width,
+          width: config.maxSizes.width
         };
 
     const adView = (

@@ -9,7 +9,7 @@ import { KeyFactsTitle, KeyFactsContainer } from "./styles";
 const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
   const {
     children,
-    attributes: { title },
+    attributes: { title }
   } = ast;
 
   const { children: keyFactsItems } = children[0];
@@ -28,15 +28,15 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
           component_name: title,
           section_details: `section : ${section}`,
           article_name: headline,
-          article_flag: articleFlag,
-        },
+          article_flag: articleFlag
+        }
       }}
       scrolledEvent={{
         action: "Scrolled",
         attrs: {
           event_navigation_name: "in-article component displayed : key moments",
-          event_navigation_browsing_method: "scroll",
-        },
+          event_navigation_browsing_method: "scroll"
+        }
       }}
     >
       {({ fireAnalyticsEvent, intersectObserverRef }) => (
