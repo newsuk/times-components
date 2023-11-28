@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.140.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.3...@times-components/ts-newskit@1.140.4) (2023-11-28)
+
+
+### Bug Fixes
+
+* **TMRX-1578:** revert article tile info line break changes ([#3673](https://github.com/newsuk/times-components/issues/3673)) ([da96fe2](https://github.com/newsuk/times-components/commit/da96fe263d773322aabd785fa46eb12873c6d6f3))
+
+
+
+
+
 ## [1.140.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.2...@times-components/ts-newskit@1.140.3) (2023-11-27)
 
 
