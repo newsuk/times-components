@@ -5,12 +5,13 @@ import { NavigationData } from './types';
 import { CustomHamburgerMenuContainer } from './HamburgerMenuContainer';
 import { HamburgerMenuContainer } from './styles';
 import { Drawer } from 'newskit';
+import { HAMBURGER_MENU, GLOBAL_NAVIGATION } from '../constants';
 
 interface GlobalNavProps {
   isLoggedIn?: boolean;
   isSunday?: boolean;
   data: NavigationData;
-  clickHandler: (title: string) => void;
+  clickHandler: (title: string, section: string) => void;
 }
 
 export const GlobalNav = ({
@@ -21,6 +22,14 @@ export const GlobalNav = ({
 }: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
 
+  const hamburgerClickHandler = (title: string) => {
+    clickHandler(title, HAMBURGER_MENU);
+  };
+
+  const globalNavClickHandler = (title: string) => {
+    clickHandler(title, GLOBAL_NAVIGATION);
+  };
+
   return (
     <>
       <TopNav
@@ -30,7 +39,7 @@ export const GlobalNav = ({
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}
         toggleHamburger={setHamburgerActive}
-        clickHandler={clickHandler}
+        clickHandler={globalNavClickHandler}
       />
       <HamburgerMenuContainer
         isLoggedIn={isLoggedIn}
@@ -39,7 +48,7 @@ export const GlobalNav = ({
         closePosition="none"
         overrides={{ panel: { size: { xs: '100%', md: '322px' } } }}
       >
-        <HamburgerMenu {...{ isLoggedIn, data, clickHandler }} />
+        <HamburgerMenu {...{ isLoggedIn, data, hamburgerClickHandler }} />
       </HamburgerMenuContainer>
     </>
   );
@@ -52,6 +61,14 @@ export const GlobalNavWithCustomDrawer = ({
   clickHandler
 }: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
+  const hamburgerClickHandler = (title: string) => {
+    clickHandler(title, HAMBURGER_MENU);
+  };
+
+  const globalNavClickHandler = (title: string) => {
+    clickHandler(title, GLOBAL_NAVIGATION);
+  };
+
   return (
     <>
       <TopNav
@@ -61,14 +78,14 @@ export const GlobalNavWithCustomDrawer = ({
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}
         toggleHamburger={setHamburgerActive}
-        clickHandler={clickHandler}
+        clickHandler={globalNavClickHandler}
       />
       <CustomHamburgerMenuContainer
         setHamburgerActive={setHamburgerActive}
         hamburgerActive={hamburgerActive}
         isLoggedIn={isLoggedIn}
       >
-        <HamburgerMenu {...{ isLoggedIn, data, clickHandler }} />
+        <HamburgerMenu {...{ isLoggedIn, data, hamburgerClickHandler }} />
       </CustomHamburgerMenuContainer>
     </>
   );

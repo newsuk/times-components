@@ -26,20 +26,20 @@ const NavigationList: React.FC<{
                   typographyPreset: 'newPreset040'
                 }}
               >
-                {item.items.map(i => (
-                  <Fragment key={`sub-${i.slug}`}>
+                {item.items.map(({ slug, title, url }) => (
+                  <Fragment key={`sub-${slug}`}>
                     <MenuItem
                       key={item.slug}
-                      href={i.url}
-                      id={`vertical-sub-${i.slug}`}
+                      href={url}
+                      id={`vertical-sub-${slug}`}
                       overrides={{
                         paddingInlineStart: 'space060',
                         stylePreset: 'menuItemL2',
                         typographyPreset: 'newPreset040'
                       }}
-                      onClick={() => clickHandler(i.title)}
+                      onClick={() => clickHandler(title)}
                     >
-                      {i.title}
+                      {title}
                     </MenuItem>
                     <MenuDivider />
                   </Fragment>

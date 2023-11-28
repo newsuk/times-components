@@ -5,7 +5,8 @@ const LoggedInMenuItem: React.FC<{
   title: string;
   selected: string;
   setSelected: (title: string) => void;
-}> = ({ title, setSelected, selected }) => {
+  clickHandler: (title: string) => void;
+}> = ({ title, setSelected, selected, clickHandler }) => {
   const isSelected = selected === title ? true : false;
 
   return (
@@ -17,7 +18,10 @@ const LoggedInMenuItem: React.FC<{
           isSelected ? 'loggedInMenuItemActive' : 'loggedInMenuItem'
         }`
       }}
-      onClick={() => setSelected(title)}
+      onClick={() => {
+        setSelected(title);
+        clickHandler(title);
+      }}
     >
       {title}
     </Button>

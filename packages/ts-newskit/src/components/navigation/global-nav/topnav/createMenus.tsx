@@ -110,7 +110,10 @@ export const createAccountMenu = (
       <MenuDivider />
       <MenuSub
         title="My Account"
-        onClick={() => setMyAccountSelected(!myAccountSelected)}
+        onClick={() => {
+          setMyAccountSelected(!myAccountSelected);
+          clickHandler('My Account');
+        }}
         selected={myAccountSelected}
         expanded={myAccountSelected}
         overrides={{

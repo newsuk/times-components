@@ -12,7 +12,7 @@ const renderComponent = (loggedIn: boolean) =>
     <HamburgerMenu
       data={data}
       isLoggedIn={loggedIn}
-      clickHandler={mockClickHandler}
+      hamburgerClickHandler={mockClickHandler}
     />
   );
 
