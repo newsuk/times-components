@@ -113,6 +113,7 @@ const newslettersBySection = [
 ];
 
 const getNewsletterPuff = section => {
+  console.log(section, 'SECTION')
   const newsletter = newslettersBySection.find(
     item => item.section === section.toLowerCase()
   );
@@ -159,7 +160,7 @@ const checkParagraphs = (children, paywall) => {
 const insertNewsletterPuff = (section, isPreview, flags) => children => {
   if (isPreview || getIsLiveOrBreakingFlag(flags)) return children;
 
-  const newsletterPuff = getNewsletterPuff(section);
+  const newsletterPuff = section && getNewsletterPuff(section);
   if (!newsletterPuff) return children;
 
   const paywall = children.find(item => item.name === "paywall");
