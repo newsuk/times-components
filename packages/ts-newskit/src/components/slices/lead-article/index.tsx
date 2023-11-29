@@ -141,6 +141,7 @@ export const LeadArticle = ({
               area="media"
               ratio={imageWithCorrectRatio!.ratio}
               className="lead-article-image"
+              marginBlockEnd={hasCaptionOrCredits ? 'space020' : 'space000'}
             >
               <a href={url} onClick={onClick} className="article-image">
                 <Image
@@ -158,7 +159,6 @@ export const LeadArticle = ({
             </FullWidthGridLayoutItem>
             {hasCaptionOrCredits && (
               <TextBlock
-                marginBlockStart="space020"
                 typographyPreset="editorialCaption010"
                 stylePreset="inkSubtle"
               >
