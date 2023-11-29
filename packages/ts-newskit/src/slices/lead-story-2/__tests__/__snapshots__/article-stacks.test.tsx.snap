@@ -28,7 +28,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-d8brxu"
+                  class="article-info css-1fjzok1"
                 >
                   <span
                     class="css-ciimpt"
@@ -146,7 +146,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-d8brxu"
+                  class="article-info css-1fjzok1"
                 >
                   <span
                     class="css-ciimpt"
@@ -307,7 +307,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-d8brxu"
+                class="article-info css-as1knc"
               >
                 <span
                   class="css-ciimpt"
@@ -459,7 +459,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-d8brxu"
+                class="article-info css-as1knc"
               >
                 <span
                   class="css-ciimpt"
@@ -588,7 +588,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-d8brxu"
+                  class="article-info css-1fjzok1"
                 >
                   <span
                     class="css-ciimpt"
@@ -706,7 +706,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="css-gpke1l"
               >
                 <div
-                  class="article-info css-d8brxu"
+                  class="article-info css-1fjzok1"
                 >
                   <span
                     class="css-ciimpt"
@@ -867,7 +867,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-d8brxu"
+                class="article-info css-as1knc"
               >
                 <span
                   class="css-ciimpt"
@@ -1019,7 +1019,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
               class="css-gpke1l"
             >
               <div
-                class="article-info css-d8brxu"
+                class="article-info css-as1knc"
               >
                 <span
                   class="css-ciimpt"
