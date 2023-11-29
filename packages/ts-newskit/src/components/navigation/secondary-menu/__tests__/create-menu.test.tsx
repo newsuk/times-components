@@ -72,4 +72,24 @@ describe('Create Menu', () => {
     const buttonText = await findByTestId('menu-sub-button');
     expect(buttonText).toHaveTextContent('Less');
   });
+
+  it('should render more menu dropdown', async () => {
+    const longTitleMenuItem = {
+      title: 'Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooong',
+      url: '/Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooong',
+      slug: 'Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooong'
+    };
+    const { findByTestId } = await waitFor(() =>
+      renderComponent(
+        <CreateMenu
+          data={[...mainMenuItems, longTitleMenuItem]}
+          options={options}
+          clickHandler={mockClickHandler}
+        />,
+        'xl'
+      )
+    );
+    const buttonText = await findByTestId('menu-sub-button');
+    expect(buttonText).toHaveTextContent('More');
+  });
 });

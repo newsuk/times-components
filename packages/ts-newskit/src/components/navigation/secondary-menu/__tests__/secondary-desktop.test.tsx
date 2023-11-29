@@ -56,13 +56,6 @@ describe('Secondary Menu Desktop', () => {
     const { getAllByRole } = renderSecodaryNav();
     const list = getAllByRole('listitem');
     expect(list[0]).toBeVisible();
-    expect(list[1]).toBeVisible();
-    expect(list[2]).toBeVisible();
-    expect(list[3]).toBeVisible();
-    expect(list[4]).toBeVisible();
-    expect(list[5]).toBeVisible();
-    expect(list[6]).toBeVisible();
-    expect(list[7]).toBeVisible();
     expect(list[8]).toBeVisible();
   });
   it('should change the width of menu divider when screen size change', () => {

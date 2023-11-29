@@ -118,7 +118,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-ka6cmy"
+              class="css-1iprkpu"
               data-testid="buttonLink"
               href="/business-and-money"
             >
@@ -134,7 +134,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-ka6cmy"
+              class="css-1iprkpu"
               data-testid="buttonLink"
               href="/puzzles"
             >
@@ -150,7 +150,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1ac54j9"
+              class="css-pajspa"
               data-testid="buttonLink"
               href="/magazines"
             >
@@ -167,7 +167,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-hct3pv"
+            class="css-13n8yrf"
             data-testid="menu-sub-button"
             type="button"
           >
@@ -357,7 +357,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
                       >
                         <a
                           aria-current="false"
-                          class="css-1dv8umx"
+                          class="css-1fc4wvh"
                           data-testid="buttonLink"
                           href="/business-and-money"
                         >
@@ -380,7 +380,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
                       >
                         <a
                           aria-current="false"
-                          class="css-1dv8umx"
+                          class="css-1fc4wvh"
                           data-testid="buttonLink"
                           href="/puzzles"
                         >
@@ -403,7 +403,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
                       >
                         <a
                           aria-current="false"
-                          class="css-bni1dj"
+                          class="css-197wtnp"
                           data-testid="buttonLink"
                           href="/magazines"
                         >
