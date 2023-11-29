@@ -8,11 +8,7 @@ import {
   MenuItem,
   getMediaQueryFromTheme
 } from 'newskit';
-import {
-  MainMenuProp,
-  SecondaryNavContainerProp,
-  NavItemMobileContainerProp
-} from './types';
+import { SecondaryNavContainerProp, NavItemMobileContainerProp } from './types';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
 export const MenuDivider = styled(Divider)`
@@ -25,12 +21,13 @@ export const MenuDividerDropdown = styled(Divider)`
   ${getColorCssFromTheme('borderColor', 'neutral030')};
 `;
 
-export const MainMenu = styled(Menu)<MainMenuProp>`
-  padding-left: ${({ hasMoreItems }) => (hasMoreItems ? '48px' : '54px')};
-  padding-right: ${({ hasMoreItems }) => (hasMoreItems ? '28px' : '54px')};
+export const MainMenu = styled(Menu)`
+  padding-inline: 48px;
   ul {
-    justify-content: ${({ hasMoreItems }) =>
-      hasMoreItems ? `space-between` : `center`};
+    justify-content: center;
+  }
+  li {
+    position: relative;
   }
 `;
 
@@ -58,12 +55,63 @@ export const Wrapper = styled.div`
   display: flex;
 `;
 
-export const StyledMenuSub = styled(MenuSub)`
+export const StyledMenuSub = styled(MenuSub)<{
+  $showMoreMD: boolean;
+  $showMoreLG: boolean;
+  $showMoreXL: boolean;
+}>`
   min-width: 100px;
+  display: none;
+
+  & > ul {
+    right: 0;
+  }
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $showMoreMD }) => $showMoreMD && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $showMoreLG }) => $showMoreLG && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $showMoreXL }) => $showMoreXL && `display: flex`};
+  }
 `;
 
-export const StyledMenuItemsDesktop = styled(MenuItem)`
+export const StyledMenuItemsDesktop = styled(MenuItem)<{
+  $hideMD?: boolean;
+  $hideLG?: boolean;
+  $hideXL?: boolean;
+}>`
   min-width: max-content;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $hideMD }) => $hideMD && `display: none`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $hideLG }) => $hideLG && `display: none`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $hideXL }) => $hideXL && `display: none`};
+  }
+`;
+export const StyledMenuItemsDropdown = styled(MenuItem)<{
+  $showMD?: boolean;
+  $showLG?: boolean;
+  $showXL?: boolean;
+}>`
+  min-width: max-content;
+  display: none;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $showMD }) => $showMD && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $showLG }) => $showLG && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $showXL }) => $showXL && `display: flex`};
+  }
 `;
 
 export const StyledBlock = styled(Block)`
