@@ -193,8 +193,7 @@ export const LeadArticle = ({
           contentType={contentType}
           expirableFlags={expirableFlags}
           label={label}
-          marginBlockStart={imageTop ? '-1px' : '-4px'}
-          marginBlockEnd={imageTop ? 'space030' : 'space020'}
+          marginBlockEnd="space020"
         />
         <CardHeadlineLink
           href={url}
