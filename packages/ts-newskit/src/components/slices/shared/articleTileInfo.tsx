@@ -1,10 +1,6 @@
 import React from 'react';
-import { Divider } from 'newskit';
-import {
-  ContainerInline,
-  StyledBlock,
-  VideoIconContainer
-} from '../shared-styles';
+import { Block, Divider } from 'newskit';
+import { ContainerInline, VideoIconContainer } from '../shared-styles';
 import { LiveTag } from './live-tag';
 import { CustomTextBlock } from './customTextBlock';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
@@ -39,7 +35,7 @@ export const ArticleTileInfo = ({
   contentType,
   hasVideo,
   label,
-  marginBlockStart = 'space000',
+  marginBlockStart = '-4px',
   marginBlockEnd = 'space000'
 }: ArticleTileInfoProps) => {
   const hasTag = Boolean(contentType);
@@ -58,54 +54,56 @@ export const ArticleTileInfo = ({
   const capitalizedText = (text?: string) => text && text.toUpperCase();
 
   return (
-    <StyledBlock
+    <Block
       className="article-info"
       marginBlockStart={marginBlockStart}
       marginBlockEnd={marginBlockEnd}
     >
-      {isLiveTag &&
-        expirableFlags && (
+      <>
+        {isLiveTag &&
+          expirableFlags && (
+            <TileWrapper>
+              <LiveTag
+                liveTag={capitalizedText(getActiveArticleFlags(expirableFlags))}
+              />
+            </TileWrapper>
+          )}
+        {!isLiveTag &&
+          expirableFlags &&
+          getActiveArticleFlags(expirableFlags) && (
+            <TileWrapper>
+              <CustomTextBlock
+                stylePreset="expirableFlagPreset"
+                text={capitalizedText(getActiveArticleFlags(expirableFlags))}
+              />
+            </TileWrapper>
+          )}
+        {contentType && (
           <TileWrapper>
-            <LiveTag
-              liveTag={capitalizedText(getActiveArticleFlags(expirableFlags))}
-            />
+            <CustomTextBlock text={capitalizedText(contentType)} />
           </TileWrapper>
         )}
-      {!isLiveTag &&
-        expirableFlags &&
-        getActiveArticleFlags(expirableFlags) && (
+        {hasVideo && (
           <TileWrapper>
-            <CustomTextBlock
-              stylePreset="expirableFlagPreset"
-              text={capitalizedText(getActiveArticleFlags(expirableFlags))}
-            />
+            <VideoIconContainer>
+              <CustomTextBlock
+                text="VIDEO"
+                stylePreset="inkContrast"
+                icon={
+                  <VideoIcon
+                    style={{ verticalAlign: 'top', marginRight: '4px' }}
+                  />
+                }
+              />
+            </VideoIconContainer>
           </TileWrapper>
         )}
-      {contentType && (
-        <TileWrapper>
-          <CustomTextBlock text={capitalizedText(contentType)} />
-        </TileWrapper>
-      )}
-      {hasVideo && (
-        <TileWrapper>
-          <VideoIconContainer>
-            <CustomTextBlock
-              text="VIDEO"
-              stylePreset="inkContrast"
-              icon={
-                <VideoIcon
-                  style={{ verticalAlign: 'top', marginRight: '4px' }}
-                />
-              }
-            />
-          </VideoIconContainer>
-        </TileWrapper>
-      )}
-      {label && (
-        <TileWrapper>
-          <CustomTextBlock text={capitalizedText(label)} />
-        </TileWrapper>
-      )}
-    </StyledBlock>
+        {label && (
+          <TileWrapper>
+            <CustomTextBlock text={capitalizedText(label)} />
+          </TileWrapper>
+        )}
+      </>
+    </Block>
   );
 };

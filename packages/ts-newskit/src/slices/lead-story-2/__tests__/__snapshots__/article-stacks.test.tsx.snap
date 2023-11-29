@@ -31,7 +31,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   class="article-info css-d8brxu"
                 >
                   <span
-                    class="css-wbmhi1"
+                    class="css-ciimpt"
                   >
                     NEW
                   </span>
@@ -45,7 +45,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-gl6a3u"
+                    class="css-1kanhs9"
                   >
                     PROFILE
                   </span>
@@ -149,7 +149,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   class="article-info css-d8brxu"
                 >
                   <span
-                    class="css-wbmhi1"
+                    class="css-ciimpt"
                   >
                     EXCLUSIVE
                   </span>
@@ -163,7 +163,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-gl6a3u"
+                    class="css-1kanhs9"
                   >
                     REVIEW
                   </span>
@@ -310,7 +310,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="article-info css-d8brxu"
               >
                 <span
-                  class="css-wbmhi1"
+                  class="css-ciimpt"
                 >
                   NEW
                 </span>
@@ -324,7 +324,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-gl6a3u"
+                  class="css-1kanhs9"
                 >
                   REVIEW
                 </span>
@@ -462,7 +462,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 class="article-info css-d8brxu"
               >
                 <span
-                  class="css-wbmhi1"
+                  class="css-ciimpt"
                 >
                   EXCLUSIVE
                 </span>
@@ -476,7 +476,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-gl6a3u"
+                  class="css-1kanhs9"
                 >
                   INTERVIEW
                 </span>
@@ -591,7 +591,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   class="article-info css-d8brxu"
                 >
                   <span
-                    class="css-wbmhi1"
+                    class="css-ciimpt"
                   >
                     NEW
                   </span>
@@ -605,7 +605,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-gl6a3u"
+                    class="css-1kanhs9"
                   >
                     PROFILE
                   </span>
@@ -709,7 +709,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   class="article-info css-d8brxu"
                 >
                   <span
-                    class="css-wbmhi1"
+                    class="css-ciimpt"
                   >
                     EXCLUSIVE
                   </span>
@@ -723,7 +723,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-gl6a3u"
+                    class="css-1kanhs9"
                   >
                     REVIEW
                   </span>
@@ -870,7 +870,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="article-info css-d8brxu"
               >
                 <span
-                  class="css-wbmhi1"
+                  class="css-ciimpt"
                 >
                   NEW
                 </span>
@@ -884,7 +884,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-gl6a3u"
+                  class="css-1kanhs9"
                 >
                   REVIEW
                 </span>
@@ -1022,7 +1022,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 class="article-info css-d8brxu"
               >
                 <span
-                  class="css-wbmhi1"
+                  class="css-ciimpt"
                 >
                   EXCLUSIVE
                 </span>
@@ -1036,7 +1036,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-gl6a3u"
+                  class="css-1kanhs9"
                 >
                   INTERVIEW
                 </span>

@@ -117,12 +117,8 @@ export const InlineTextBlock = styled(TextBlock)`
 
   ::before,
   ::after {
-    display: inline;
+    display: inline-block;
   }
-`;
-
-export const StyledBlock = styled(Block)`
-  margin-top: -4px;
 `;
 
 export const VideoIconContainer = styled.span`
