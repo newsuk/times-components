@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.140.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.4...@times-components/ts-newskit@1.140.5) (2023-11-29)
+
+
+### Bug Fixes
+
+* **TMRX-1648:** secondary nav more dropdown disappears and reappears ([#3655](https://github.com/newsuk/times-components/issues/3655)) ([231cee2](https://github.com/newsuk/times-components/commit/231cee26e177948db3bfbb9ac1d03824329f7835))
+
+
+
+
+
 ## [1.140.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.3...@times-components/ts-newskit@1.140.4) (2023-11-28)
 
 
