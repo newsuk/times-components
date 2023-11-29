@@ -68,13 +68,13 @@ export const StyledMenuSub = styled(MenuSub)<{
   }
 
   ${getMediaQueryFromTheme('md', 'lg')} {
-    ${({ $showMoreMD }) => $showMoreMD && `display: flex;`};
+    ${({ $showMoreMD }) => $showMoreMD && `display: flex`};
   }
   ${getMediaQueryFromTheme('lg', 'xl')} {
-    ${({ $showMoreLG }) => $showMoreLG && `display: flex;`};
+    ${({ $showMoreLG }) => $showMoreLG && `display: flex`};
   }
   ${getMediaQueryFromTheme('xl')} {
-    ${({ $showMoreXL }) => $showMoreXL && `display: flex;`};
+    ${({ $showMoreXL }) => $showMoreXL && `display: flex`};
   }
 `;
 
@@ -86,13 +86,13 @@ export const StyledMenuItemsDesktop = styled(MenuItem)<{
   min-width: max-content;
 
   ${getMediaQueryFromTheme('md', 'lg')} {
-    ${({ $hideMD }) => $hideMD && `display: none;`};
+    ${({ $hideMD }) => $hideMD && `display: none`};
   }
   ${getMediaQueryFromTheme('lg', 'xl')} {
-    ${({ $hideLG }) => $hideLG && `display: none;`};
+    ${({ $hideLG }) => $hideLG && `display: none`};
   }
   ${getMediaQueryFromTheme('xl')} {
-    ${({ $hideXL }) => $hideXL && `display: none;`};
+    ${({ $hideXL }) => $hideXL && `display: none`};
   }
 `;
 export const StyledMenuItemsDropdown = styled(MenuItem)<{
@@ -104,13 +104,13 @@ export const StyledMenuItemsDropdown = styled(MenuItem)<{
   display: none;
 
   ${getMediaQueryFromTheme('md', 'lg')} {
-    ${({ $showMD }) => $showMD && `display: flex;`};
+    ${({ $showMD }) => $showMD && `display: flex`};
   }
   ${getMediaQueryFromTheme('lg', 'xl')} {
-    ${({ $showLG }) => $showLG && `display: flex;`};
+    ${({ $showLG }) => $showLG && `display: flex`};
   }
   ${getMediaQueryFromTheme('xl')} {
-    ${({ $showXL }) => $showXL && `display: flex;`};
+    ${({ $showXL }) => $showXL && `display: flex`};
   }
 `;
 
