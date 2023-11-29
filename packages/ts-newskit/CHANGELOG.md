@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.140.6](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.5...@times-components/ts-newskit@1.140.6) (2023-11-29)
+
+
+### Bug Fixes
+
+* **TMRX-1635:** fix article image spacing ([#3665](https://github.com/newsuk/times-components/issues/3665)) ([8644d09](https://github.com/newsuk/times-components/commit/8644d09e8f18a333003d1f0cd179605ac6da4b69))
+
+
+
+
+
 ## [1.140.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.4...@times-components/ts-newskit@1.140.5) (2023-11-29)
 
 
