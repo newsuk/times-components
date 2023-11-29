@@ -117,12 +117,12 @@ export const InlineTextBlock = styled(TextBlock)`
 
   ::before,
   ::after {
-    display: inline-block;
+    display: inline;
   }
 `;
 
 export const StyledBlock = styled(Block)`
-  ${getSpacingCssFromTheme('row-gap', 'space020')};
+  margin-top: -4px;
 `;
 
 export const VideoIconContainer = styled.span`
