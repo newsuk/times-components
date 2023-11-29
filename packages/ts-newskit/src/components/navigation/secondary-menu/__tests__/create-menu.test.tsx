@@ -1,8 +1,8 @@
 import React from 'react';
-import { render } from '../../../../utils/test-utils';
+import { renderComponent } from '../../../../utils';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
-import { cleanup, waitFor, fireEvent } from '@testing-library/react';
+import { cleanup, fireEvent, waitFor } from '@testing-library/react';
 import { CreateMenu } from '../desktop/create-menu';
 
 const options = {
@@ -26,69 +26,28 @@ describe('Create Menu', () => {
   const mockClickHandler = jest.fn();
 
   it('should render snapshot', async () => {
-    const initialStateForFirstUseStateCall = mainMenuItems.length - 2;
-    const initialStateForSecondUseStateCall = 2;
-
-    await waitFor(
-      () =>
-        (React.useState = jest
-          .fn()
-          .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
-          .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation(x => [x, () => null]))
-    );
     const { asFragment } = await waitFor(() =>
-      render(
+      renderComponent(
         <CreateMenu
           data={mainMenuItems}
           options={options}
           clickHandler={mockClickHandler}
-        />
+        />,
+        'xl'
       )
     );
     expect(asFragment()).toMatchSnapshot();
   });
-  it('callback is invoked after window resize event', async () => {
-    const initialStateForFirstUseStateCall = mainMenuItems.length;
-    const initialStateForSecondUseStateCall = 1;
 
-    await waitFor(
-      () =>
-        (React.useState = jest
-          .fn()
-          .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
-          .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation(x => [x, () => null]))
-    );
-    await waitFor(() =>
-      render(
-        <CreateMenu
-          data={mainMenuItems}
-          options={options}
-          clickHandler={mockClickHandler}
-        />
-      )
-    );
-  });
   it('should expand on click', async () => {
-    const initialStateForFirstUseStateCall = mainMenuItems.length - 2;
-    const initialStateForSecondUseStateCall = 2;
-
-    await waitFor(
-      () =>
-        (React.useState = jest
-          .fn()
-          .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
-          .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation(x => [x, () => null]))
-    );
     const { findByTestId } = await waitFor(() =>
-      render(
+      renderComponent(
         <CreateMenu
           data={mainMenuItems}
           options={options}
           clickHandler={mockClickHandler}
-        />
+        />,
+        'xl'
       )
     );
 
@@ -97,29 +56,40 @@ describe('Create Menu', () => {
     fireEvent.click(buttonText);
     expect(options.setIsExpanded).toHaveBeenCalled();
   });
-  it('should render test Less', async () => {
-    const initialStateForFirstUseStateCall = mainMenuItems.length - 2;
-    const initialStateForSecondUseStateCall = 2;
 
-    await waitFor(
-      () =>
-        (React.useState = jest
-          .fn()
-          .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
-          .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation(x => [x, () => null]))
-    );
+  it('should render test Less', async () => {
     const { findByTestId } = await waitFor(() =>
-      render(
+      renderComponent(
         <CreateMenu
           data={mainMenuItems}
           options={{ ...options, isExpanded: true }}
           clickHandler={mockClickHandler}
-        />
+        />,
+        'xl'
       )
     );
 
     const buttonText = await findByTestId('menu-sub-button');
     expect(buttonText).toHaveTextContent('Less');
+  });
+
+  it('should render more menu dropdown', async () => {
+    const longTitleMenuItem = {
+      title: 'Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooong',
+      url: '/Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooong',
+      slug: 'Loooooooooooooooooooooooooooooooooooooooooooooooooooooooooong'
+    };
+    const { findByTestId } = await waitFor(() =>
+      renderComponent(
+        <CreateMenu
+          data={[...mainMenuItems, longTitleMenuItem]}
+          options={options}
+          clickHandler={mockClickHandler}
+        />,
+        'xl'
+      )
+    );
+    const buttonText = await findByTestId('menu-sub-button');
+    expect(buttonText).toHaveTextContent('More');
   });
 });

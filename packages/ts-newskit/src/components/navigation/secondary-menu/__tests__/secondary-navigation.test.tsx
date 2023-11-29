@@ -12,7 +12,7 @@ import {
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('sm')
+  useBreakpointKey: jest.fn().mockReturnValue('md')
 }));
 
 const mockClickHandler = jest.fn();
@@ -91,7 +91,7 @@ describe('Secondary Menu', () => {
   });
 
   it('should close the dropdown ', () => {
-    const { getByTestId, queryByText, getAllByText } = render(
+    const { queryByText, getAllByText, container } = render(
       <SecondaryNavigation
         data={mainMenuItems}
         pageSlug="home"
@@ -104,7 +104,7 @@ describe('Secondary Menu', () => {
         clickHandler={mockClickHandler}
       />
     );
-    const SeeAllButton = getByTestId('menu-sub-button');
+    const SeeAllButton = getAllByTestId(container, 'menu-sub-button')[0];
     fireEvent.click(SeeAllButton);
     waitFor(() => expect(queryByText('News')).toBeInTheDocument());
     const newsButton = getAllByText('News')[0];

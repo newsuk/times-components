@@ -25,7 +25,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-pv9ltj"
+          class="css-1xiomb0"
           data-testid="article-container"
         >
           <div
@@ -33,7 +33,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           >
             <div
               aria-label="article-lead-image"
-              class="article-image css-vim2vd"
+              class="article-image css-cxo30k"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -144,7 +144,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -269,7 +269,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -380,7 +380,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -504,7 +504,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
         class="css-13tedu1"
       >
         <div
-          class="css-1ak9hya"
+          class="css-vhnvwm"
           data-testid="article-container"
         >
           <div
@@ -512,7 +512,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
           >
             <div
               aria-label="article-lead-image"
-              class="article-image css-vim2vd"
+              class="article-image css-cxo30k"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -623,7 +623,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -748,7 +748,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -859,7 +859,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -992,7 +992,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
         class="css-13tedu1"
       >
         <div
-          class="css-pv9ltj"
+          class="css-1xiomb0"
           data-testid="article-container"
         >
           <div
@@ -1000,7 +1000,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
           >
             <div
               aria-label="article-lead-image"
-              class="article-image css-vim2vd"
+              class="article-image css-cxo30k"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -1111,7 +1111,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -1236,7 +1236,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -1347,7 +1347,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -1471,7 +1471,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
         class="css-13tedu1"
       >
         <div
-          class="css-1ak9hya"
+          class="css-vhnvwm"
           data-testid="article-container"
         >
           <div
@@ -1479,7 +1479,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
           >
             <div
               aria-label="article-lead-image"
-              class="article-image css-vim2vd"
+              class="article-image css-cxo30k"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -1590,7 +1590,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -1715,7 +1715,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -1826,7 +1826,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -1959,7 +1959,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-pv9ltj"
+          class="css-1xiomb0"
           data-testid="article-container"
         >
           <div
@@ -1967,7 +1967,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           >
             <div
               aria-label="article-lead-image"
-              class="article-image css-vim2vd"
+              class="article-image css-cxo30k"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -2078,7 +2078,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -2203,7 +2203,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -2314,7 +2314,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -2438,7 +2438,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1ak9hya"
+          class="css-vhnvwm"
           data-testid="article-container"
         >
           <div
@@ -2446,7 +2446,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           >
             <div
               aria-label="article-lead-image"
-              class="article-image css-vim2vd"
+              class="article-image css-cxo30k"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -2557,7 +2557,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -2682,7 +2682,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -2793,7 +2793,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -2926,7 +2926,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-pv9ltj"
+          class="css-1xiomb0"
           data-testid="article-container"
         >
           <div
@@ -2934,7 +2934,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           >
             <div
               aria-label="article-lead-image"
-              class="article-image css-vim2vd"
+              class="article-image css-cxo30k"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -3045,7 +3045,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -3170,7 +3170,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -3281,7 +3281,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -3405,7 +3405,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1ak9hya"
+          class="css-vhnvwm"
           data-testid="article-container"
         >
           <div
@@ -3413,7 +3413,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           >
             <div
               aria-label="article-lead-image"
-              class="article-image css-vim2vd"
+              class="article-image css-cxo30k"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -3524,7 +3524,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -3649,7 +3649,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -3760,7 +3760,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -3893,7 +3893,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-pv9ltj"
+          class="css-1xiomb0"
           data-testid="article-container"
         >
           <div
@@ -3901,7 +3901,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           >
             <div
               aria-label="article-lead-image"
-              class="article-image css-vim2vd"
+              class="article-image css-cxo30k"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -4012,7 +4012,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -4137,7 +4137,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -4248,7 +4248,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -4372,7 +4372,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
         class="css-13tedu1"
       >
         <div
-          class="css-1ak9hya"
+          class="css-vhnvwm"
           data-testid="article-container"
         >
           <div
@@ -4380,7 +4380,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
           >
             <div
               aria-label="article-lead-image"
-              class="article-image css-vim2vd"
+              class="article-image css-cxo30k"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -4491,7 +4491,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -4616,7 +4616,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
@@ -4727,7 +4727,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
               </div>
             </div>
             <div
-              class="article-image css-jaciyh"
+              class="article-image css-qjtrfy"
             >
               <a
                 href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
