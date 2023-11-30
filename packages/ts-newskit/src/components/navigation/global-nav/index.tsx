@@ -4,30 +4,30 @@ import { HamburgerMenu } from './hamburger-menu/HamburgerMenu';
 import { NavigationData } from './types';
 import { CustomHamburgerMenuContainer } from './HamburgerMenuContainer';
 import { HamburgerMenuContainer } from './styles';
-import { Drawer } from 'newskit';
+import { Drawer, useInstrumentation } from 'newskit';
 import { HAMBURGER_MENU, GLOBAL_NAVIGATION } from '../constants';
+import { getTopNavClickEvent } from '../analytics/ga-event';
 
 interface GlobalNavProps {
   isLoggedIn?: boolean;
   isSunday?: boolean;
   data: NavigationData;
-  clickHandler: (title: string, section: string) => void;
 }
 
-export const GlobalNav = ({
-  isLoggedIn,
-  isSunday,
-  data,
-  clickHandler
-}: GlobalNavProps) => {
+export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
+  const { fireEvent } = useInstrumentation();
+
+  const onClickTopNavigation = (title: string, section: string) => {
+    fireEvent(getTopNavClickEvent(title, section));
+  };
 
   const hamburgerClickHandler = (title: string) => {
-    clickHandler(title, HAMBURGER_MENU);
+    onClickTopNavigation(title, HAMBURGER_MENU);
   };
 
   const globalNavClickHandler = (title: string) => {
-    clickHandler(title, GLOBAL_NAVIGATION);
+    onClickTopNavigation(title, GLOBAL_NAVIGATION);
   };
 
   return (
@@ -57,16 +57,21 @@ export const GlobalNav = ({
 export const GlobalNavWithCustomDrawer = ({
   isLoggedIn,
   isSunday,
-  data,
-  clickHandler
+  data
 }: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
+  const { fireEvent } = useInstrumentation();
+
+  const onClickTopNavigation = (title: string, section: string) => {
+    fireEvent(getTopNavClickEvent(title, section));
+  };
+
   const hamburgerClickHandler = (title: string) => {
-    clickHandler(title, HAMBURGER_MENU);
+    onClickTopNavigation(title, HAMBURGER_MENU);
   };
 
   const globalNavClickHandler = (title: string) => {
-    clickHandler(title, GLOBAL_NAVIGATION);
+    onClickTopNavigation(title, GLOBAL_NAVIGATION);
   };
 
   return (
