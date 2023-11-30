@@ -35,7 +35,7 @@ export const ArticleTileInfo = ({
   contentType,
   hasVideo,
   label,
-  marginBlockStart = '-4px',
+  marginBlockStart = '-4px', // Adding negative margin to fix alignment issues with line heights
   marginBlockEnd = 'space000'
 }: ArticleTileInfoProps) => {
   const hasTag = Boolean(contentType);
