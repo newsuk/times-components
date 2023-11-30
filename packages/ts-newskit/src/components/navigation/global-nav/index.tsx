@@ -12,6 +12,7 @@ interface GlobalNavProps {
   isLoggedIn?: boolean;
   isSunday?: boolean;
   data: NavigationData;
+  clickHandler: (title: string) => void;
 }
 
 export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
