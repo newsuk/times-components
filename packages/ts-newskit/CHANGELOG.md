@@ -3,6 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.140.6](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.5...@times-components/ts-newskit@1.140.6) (2023-11-29)
+
+
+### Bug Fixes
+
+* **TMRX-1635:** fix article image spacing ([#3665](https://github.com/newsuk/times-components/issues/3665)) ([8644d09](https://github.com/newsuk/times-components/commit/8644d09e8f18a333003d1f0cd179605ac6da4b69))
+
+
+
+
+
+## [1.140.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.4...@times-components/ts-newskit@1.140.5) (2023-11-29)
+
+
+### Bug Fixes
+
+* **TMRX-1648:** secondary nav more dropdown disappears and reappears ([#3655](https://github.com/newsuk/times-components/issues/3655)) ([231cee2](https://github.com/newsuk/times-components/commit/231cee26e177948db3bfbb9ac1d03824329f7835))
+
+
+
+
+
+## [1.140.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.3...@times-components/ts-newskit@1.140.4) (2023-11-28)
+
+
+### Bug Fixes
+
+* **TMRX-1578:** revert article tile info line break changes ([#3673](https://github.com/newsuk/times-components/issues/3673)) ([da96fe2](https://github.com/newsuk/times-components/commit/da96fe263d773322aabd785fa46eb12873c6d6f3))
+
+
+
+
+
+## [1.140.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.2...@times-components/ts-newskit@1.140.3) (2023-11-27)
+
+
+### Bug Fixes
+
+* **TMRX-1578:** Remove article tile info line break ([#3664](https://github.com/newsuk/times-components/issues/3664)) ([635d8ab](https://github.com/newsuk/times-components/commit/635d8ab9bbc40394c84f4e96c22d42231a0b5c81))
+
+
+
+
+
+## [1.140.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.1...@times-components/ts-newskit@1.140.2) (2023-11-27)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.140.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.0...@times-components/ts-newskit@1.140.1) (2023-11-27)
+
+
+### Bug Fixes
+
+* **TMRX-1476:** wrap comment bucket with CustomBlockLayout ([#3669](https://github.com/newsuk/times-components/issues/3669)) ([d0e25a3](https://github.com/newsuk/times-components/commit/d0e25a35d8899f0146ae843dd07655a27f45f45d))
+
+
+
+
+
 # [1.140.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.139.2...@times-components/ts-newskit@1.140.0) (2023-11-24)
 
 

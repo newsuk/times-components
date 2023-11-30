@@ -5,13 +5,9 @@ import { LiveTag } from './live-tag';
 import { CustomTextBlock } from './customTextBlock';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
 import { NewsKitVideoButtonIcon as VideoIcon } from '../../../assets';
+import { expirableFlagsProps } from '../../../slices/types';
 
-export type expirableFlagsProps = {
-  type: string;
-  expiryTime: string | null;
-};
-
-export interface ArticleTileInfoProps {
+interface ArticleTileInfoProps {
   expirableFlags?: expirableFlagsProps[];
   hasVideo: boolean;
   contentType?: string;

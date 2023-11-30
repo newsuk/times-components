@@ -14,24 +14,15 @@ import {
   FullWidthGridLayoutItem
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
-import { ClickHandlerType, MouseEventType } from '../../../slices/types';
-import { articleClickTracking } from '../../../utils/tracking';
 import {
-  ArticleTileInfo,
+  ClickHandlerType,
+  MouseEventType,
+  ImageProps,
   expirableFlagsProps
-} from '../shared/articleTileInfo';
+} from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
+import { ArticleTileInfo } from '../shared/articleTileInfo';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
-
-type ImageCrops = {
-  url?: string;
-  ratio?: string;
-};
-
-type ImageProps = {
-  alt?: string;
-  caption?: string;
-  crops?: ImageCrops[];
-};
 
 export interface ArticleProps {
   id: string;
@@ -95,6 +86,11 @@ export const Article = ({
 
   const imageWithCorrectRatio =
     images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
+
+  const hasCaption = !!(images && images.caption);
+  const hasCredits = !!(images && images.credits);
+
+  const hasCaptionOrCredits = hasCaption || hasCredits;
 
   const hasArticleTileInfo =
     (expirableFlags &&
@@ -180,6 +176,7 @@ export const Article = ({
             area="media"
             aria-label="article-lead-image"
             className="article-image"
+            marginBlockEnd={hasCaptionOrCredits ? 'space000' : 'space020'}
           >
             {image}
           </FullWidthGridLayoutItem>
@@ -189,7 +186,8 @@ export const Article = ({
             className="article-image"
             marginBlockEnd={{
               xs: 'space040',
-              lg: 'space030'
+              lg: 'space030',
+              xl: imageRight ? 'space000' : 'space030'
             }}
           >
             {image}

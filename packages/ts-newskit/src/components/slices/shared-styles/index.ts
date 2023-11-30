@@ -112,6 +112,15 @@ export const StyledTextBlock = styled(TextBlock)`
   border-radius: 2px;
 `;
 
+export const InlineTextBlock = styled(TextBlock)`
+  display: inline;
+
+  ::before,
+  ::after {
+    display: inline-block;
+  }
+`;
+
 export const StyledBlock = styled(Block)`
   position: relative;
   display: flex;

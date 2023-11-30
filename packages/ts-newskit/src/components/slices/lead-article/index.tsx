@@ -15,29 +15,16 @@ import {
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
-import { ClickHandlerType, MouseEventType } from '../../../slices/types';
-import { articleClickTracking } from '../../../utils/tracking';
 import {
-  ArticleTileInfo,
+  ClickHandlerType,
+  MouseEventType,
+  ImageProps,
+  ListData,
   expirableFlagsProps
-} from '../shared/articleTileInfo';
+} from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
+import { ArticleTileInfo } from '../shared/articleTileInfo';
 
-type ImageCrops = {
-  url?: string;
-  ratio?: string;
-};
-type ListData = {
-  label: string;
-  href: string;
-  id: string;
-};
-
-type ImageProps = {
-  alt?: string;
-  caption?: string;
-  credits?: string;
-  crops?: ImageCrops[];
-};
 export interface LeadArticleProps {
   id: string;
   headline: string;
@@ -59,7 +46,6 @@ export interface LeadArticleProps {
   contentWidth?: MQ<string> | string;
   headlineTypographyPreset?: MQ<string> | string;
   loadingAspectRatio?: string;
-  imageMarginBlockStart?: string;
   textBlockMarginBlockStart?: MQ<string> | string;
   tagAndFlagMarginBlockStart?: MQ<string> | string;
   listData?: ListData[];
@@ -91,7 +77,6 @@ export const LeadArticle = ({
     contentWidth,
     headlineTypographyPreset,
     loadingAspectRatio,
-    imageMarginBlockStart = 'space000',
     textBlockMarginBlockStart = 'space040',
     tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
     listData,
@@ -150,13 +135,13 @@ export const LeadArticle = ({
         !hideImage && (
           <Block
             marginBlockEnd={imageTop ? 'space040' : 'space000'}
-            marginBlockStart={imageMarginBlockStart}
             className="lead-image-container"
           >
             <FullWidthGridLayoutItem
               area="media"
               ratio={imageWithCorrectRatio!.ratio}
               className="lead-article-image"
+              marginBlockEnd={hasCaptionOrCredits ? 'space020' : 'space000'}
             >
               <a href={url} onClick={onClick} className="article-image">
                 <Image
@@ -174,7 +159,6 @@ export const LeadArticle = ({
             </FullWidthGridLayoutItem>
             {hasCaptionOrCredits && (
               <TextBlock
-                marginBlockStart="space020"
                 typographyPreset="editorialCaption010"
                 stylePreset="inkSubtle"
               >
