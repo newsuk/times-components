@@ -111,7 +111,7 @@ export const PuzzlesSidebar = styled.div`
   }
   @media (min-width: ${breakpoints.huge}px) {
     display: block;
-    width: 17.8333%;
-    padding-right: ${spacing(15)};
+    width: 18.8333%;
+    padding-right: ${spacing(10)};
   }
 `;

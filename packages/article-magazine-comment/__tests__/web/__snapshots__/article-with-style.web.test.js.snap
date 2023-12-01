@@ -852,8 +852,8 @@ exports[`full article with style 1`] = `
 @media (min-width:1320px) {
   .c14 {
     display: block;
-    width: 17.8333%;
-    padding-right: 75px;
+    width: 18.8333%;
+    padding-right: 50px;
   }
 }
 
@@ -2210,8 +2210,8 @@ exports[`full article with style in the culture magazine 1`] = `
 @media (min-width:1320px) {
   .c14 {
     display: block;
-    width: 17.8333%;
-    padding-right: 75px;
+    width: 18.8333%;
+    padding-right: 50px;
   }
 }
 
@@ -3569,8 +3569,8 @@ exports[`full article with style in the style magazine 1`] = `
 @media (min-width:1320px) {
   .c14 {
     display: block;
-    width: 17.8333%;
-    padding-right: 75px;
+    width: 18.8333%;
+    padding-right: 50px;
   }
 }
 
@@ -4927,8 +4927,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
 @media (min-width:1320px) {
   .c14 {
     display: block;
-    width: 17.8333%;
-    padding-right: 75px;
+    width: 18.8333%;
+    padding-right: 50px;
   }
 }
 

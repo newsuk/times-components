@@ -35,7 +35,8 @@ class ArticlePage extends Component {
     const sidebarNode = this.sidebarRef.current;
     if (sidebarNode) {
       const rect = sidebarNode.getBoundingClientRect();
-      this.setState({ initialPosition: rect.top });
+      const stickyNavigationHeight = 40;
+      this.setState({ initialPosition: rect.top - stickyNavigationHeight });
     }
   }
 
@@ -72,15 +73,21 @@ class ArticlePage extends Component {
       }
 
       const { initialPosition } = this.state;
+      const stickyNavigationHeight = 40;
+
       if (isAdIntersecting || isRelatedArticlesIntersecting) {
         sidebarNode.style.transition = "opacity 0.5s ease";
         sidebarNode.style.opacity = "0";
       } else {
-        const isScrolled = rect.top <= 0 && window.scrollY > initialPosition;
+        const isScrolled =
+          rect.top <= stickyNavigationHeight &&
+          window.scrollY > initialPosition;
         sidebarNode.style.transition = "opacity 0.5s ease";
         sidebarNode.style.opacity = "1";
         sidebarNode.style.position = isScrolled ? "fixed" : "absolute";
-        sidebarNode.style.top = isScrolled ? "0" : "100%";
+        sidebarNode.style.top = isScrolled
+          ? `${stickyNavigationHeight}px`
+          : "100%";
       }
     }
   }
