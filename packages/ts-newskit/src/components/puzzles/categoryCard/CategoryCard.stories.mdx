@@ -4,6 +4,7 @@ import { PuzzlesWebLightTheme } from '../../../theme';
 import { CategoryCard } from './index';
 import { CardComposable } from 'newskit';
 import { NewsKitSudokusIcon } from '../../../assets';
+import { BASE_URL } from '../../../constants'
 
 <Meta
   title="Newskit Components/Puzzles/CategoryCard"
@@ -33,6 +34,6 @@ export const CategoryCardStory = ({ type, url, Icon }) => (
 );
 
 
-<Story name="Category Card" args={{ type: 'Sudokus', url: 'https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00', Icon: NewsKitSudokusIcon }}>
+<Story name="Category Card" args={{ type: 'Sudokus', url: `${BASE_URL}/checkout?pc=PUZ025N3Z00`, Icon: NewsKitSudokusIcon }}>
   {CategoryCardStory.bind({})}
 </Story>

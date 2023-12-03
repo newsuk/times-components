@@ -1,3 +1,5 @@
+import { IMAGE_BASE_URL } from '../../constants';
+
 export default {
   43434: {
     fields: {
@@ -10,8 +12,7 @@ export default {
         {
           type: 'image',
           data: {
-            image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F3005c946-089d-11eb-b792-c9107992ffa0.jpg?crop=1500%2C1000%2C0%2C0&resize=1500',
+            image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F3005c946-089d-11eb-b792-c9107992ffa0.jpg?crop=1500%2C1000%2C0%2C0&resize=1500`,
             credit: 'Michael Clarke',
             title: 'Birch',
             copy:
@@ -22,8 +23,7 @@ export default {
         {
           type: 'image',
           data: {
-            image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0f831cea-0317-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500',
+            image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0f831cea-0317-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500`,
             credit: 'John Doe',
             title: 'Crockers at Henley',
             copy:
@@ -34,8 +34,7 @@ export default {
         {
           type: 'image',
           data: {
-            image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F762b1950-0337-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500',
+            image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F762b1950-0337-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500`,
             credit: 'Jane Doe',
             title: 'Mitre',
             copy:
@@ -46,8 +45,7 @@ export default {
         {
           type: 'image',
           data: {
-            image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F2f35c210-032e-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500',
+            image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F2f35c210-032e-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500`,
             credit: 'John Doe',
             title: 'Stock Exchange Hotel',
             copy:
@@ -58,8 +56,7 @@ export default {
         {
           type: 'image',
           data: {
-            image:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fc2ca3a0e-04b6-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500',
+            image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fc2ca3a0e-04b6-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500`,
             credit: 'Jane Doe',
             title: 'The Pig at Harlyn Bay',
             copy:
@@ -70,8 +67,7 @@ export default {
         {
           type: 'image',
           data: {
-            image:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff4625e70-e7ff-11eb-baaa-861dba20d87a.jpg?crop=7679%2C4319%2C0%2C400&resize=1500',
+            image: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff4625e70-e7ff-11eb-baaa-861dba20d87a.jpg?crop=7679%2C4319%2C0%2C400&resize=1500`,
             credit: 'Test empty title and copy',
             imageTitle: '',
             copy: ''

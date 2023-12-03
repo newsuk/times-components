@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import { TcText } from "@times-components/utils";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import Gradient, { OverlayGradient } from "./src/gradient";
+import { IMAGE_BASE_URL } from "./constants";
 
 const renderExampleText = color => (
   <TcText style={{ color }}>Some example text</TcText>
@@ -72,7 +73,7 @@ export default {
           </OverlayGradient>
           <img
             alt="some alt text"
-            src="https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb45ad130-5456-11e8-a94b-41e5a20c31cf.jpg?crop=2250%2C1266%2C0%2C117&resize=685"
+            src={`${IMAGE_BASE_URL}/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb45ad130-5456-11e8-a94b-41e5a20c31cf.jpg?crop=2250%2C1266%2C0%2C117&resize=685`}
             style={{
               height: 385,
               width: 685

@@ -8,6 +8,7 @@ import {
 } from '../../../../utils/test-utils';
 import { CommentCard, CommentCardProps } from '..';
 import { ClickHandlerType } from '../../../../slices/types';
+import { BASE_URL, IMAGE_BASE_URL } from '../../../../constants';
 
 const mockClickHandler = jest.fn();
 
@@ -23,38 +24,34 @@ const defaultProps = {
     caption: 'Caption',
     crops: [
       {
-        url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
+        url: `${BASE_URL}/d/img/profile/deborah-haynes.jpg`,
         ratio: '3:2'
       },
       {
-        url:
-          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169',
+        url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169`,
         ratio: '16:9'
       },
       {
-        url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
+        url: `${BASE_URL}/d/img/profile/deborah-haynes.jpg`,
         ratio: '1:1'
       },
       {
-        url:
-          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173',
+        url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173`,
         ratio: '2:3'
       },
       {
-        url:
-          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173',
+        url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173`,
         ratio: '4:5'
       },
       {
-        url:
-          'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173',
+        url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173`,
         ratio: '5:4'
       }
     ]
   },
   byline: 'Journalist name',
   headline: 'Quote text',
-  url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
+  url: `${BASE_URL}/d/img/profile/deborah-haynes.jpg`
 };
 
 it('should render component to match snapshot', () => {
@@ -89,7 +86,7 @@ it('should render the correct image', () => {
   waitFor(() =>
     expect(image).toHaveAttribute(
       'src',
-      'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
+      `${BASE_URL}/d/img/profile/deborah-haynes.jpg`
     )
   );
   expect(image).toHaveAttribute('alt', 'Journalist name');
@@ -110,38 +107,34 @@ it('should render the correct text, without Heading', () => {
         caption: 'Caption',
         crops: [
           {
-            url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
+            url: `${BASE_URL}/d/img/profile/deborah-haynes.jpg`,
             ratio: '3:2'
           },
           {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169',
+            url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169`,
             ratio: '16:9'
           },
           {
-            url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
+            url: `${BASE_URL}/d/img/profile/deborah-haynes.jpg`,
             ratio: '1:1'
           },
           {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173',
+            url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173`,
             ratio: '2:3'
           },
           {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173',
+            url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173`,
             ratio: '4:5'
           },
           {
-            url:
-              'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173',
+            url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173`,
             ratio: '5:4'
           }
         ]
       },
       byline: 'Journalist name',
       headline: 'Quote text',
-      url: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
+      url: `${BASE_URL}/d/img/profile/deborah-haynes.jpg`
     },
     mockClickHandler
   );

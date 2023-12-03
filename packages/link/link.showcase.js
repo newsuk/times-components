@@ -2,6 +2,7 @@ import { TcView } from "@times-components/utils";
 import React from "react";
 import { colours } from "@times-components/ts-styleguide";
 import Link, { TextLink } from "./src/link";
+import { BASE_DOMAIN } from "./constants";
 
 const BigSquare = props => (
   <TcView
@@ -18,7 +19,7 @@ export default {
   children: [
     {
       component: (_, { action }) => (
-        <Link onPress={action("onPress")} url="https://thetimes.co.uk">
+        <Link onPress={action("onPress")} url={`https://${BASE_DOMAIN}`}>
           <TcView
             style={{
               backgroundColor: colours.functional.backgroundSecondary,
@@ -49,7 +50,7 @@ export default {
         return (
           <Link
             onPress={action("onPress")}
-            url="https://thetimes.co.uk"
+            url={`https://${BASE_DOMAIN}`}
             target="_blank"
             responsiveLinkStyles={responsiveLinkStyles}
             underlined={false}
@@ -69,7 +70,7 @@ export default {
             e.preventDefault();
             action("onPress")(e);
           }}
-          url="https://thetimes.co.uk"
+          url={`https://${BASE_DOMAIN}`}
         >
           <BigSquare />
         </Link>
@@ -79,7 +80,7 @@ export default {
     },
     {
       component: (_, { action }) => (
-        <TextLink onPress={action("onPress")} url="https://thetimes.co.uk/">
+        <TextLink onPress={action("onPress")} url={`https://${BASE_DOMAIN}/`}>
           The Times
         </TextLink>
       ),
@@ -91,7 +92,7 @@ export default {
         <TextLink
           onPress={action("onPress")}
           style={{ color: colours.functional.action }}
-          url="https://thetimes.co.uk/"
+          url={`https://${BASE_DOMAIN}/`}
         >
           The Times
         </TextLink>

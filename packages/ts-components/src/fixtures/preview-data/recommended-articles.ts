@@ -1,9 +1,10 @@
+import { BASE_URL, IMAGE_BASE_URL } from '../../constants';
+
 export default {
   recommendations: {
     articles: [
       {
-        url:
-          'https://www.thetimes.co.uk/article/save-or-splurge-what-experts-spend-their-own-money-on-tdd65qlj6',
+        url: `${BASE_URL}/article/save-or-splurge-what-experts-spend-their-own-money-on-tdd65qlj6`,
         slug: 'save-or-splurge-what-experts-spend-their-own-money-on',
         label: null,
         headline: 'Save or splurge: what experts spend their own money on',
@@ -40,8 +41,7 @@ export default {
         media: {
           crops: [
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F831e0f3c-e5b7-11ec-9b02-3f136f233710.jpg?crop=1600%2C900%2C0%2C0',
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F831e0f3c-e5b7-11ec-9b02-3f136f233710.jpg?crop=1600%2C900%2C0%2C0`,
               alt: null,
               aspectRatio: '16:9'
             }
@@ -49,8 +49,7 @@ export default {
         }
       },
       {
-        url:
-          'https://www.thetimes.co.uk/article/lieutenant-colonel-ian-crooke-obituary-t0b890wgp',
+        url: `${BASE_URL}/article/lieutenant-colonel-ian-crooke-obituary-t0b890wgp`,
         slug: 'lieutenant-colonel-ian-crooke-obituary',
         label: 'Obituary',
         headline: 'Lieutenant Colonel Ian Crooke',
@@ -67,8 +66,7 @@ export default {
         media: {
           crops: [
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5ecb5d44-e650-11ec-9b02-3f136f233710.jpg?crop=5616%2C3159%2C0%2C293',
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5ecb5d44-e650-11ec-9b02-3f136f233710.jpg?crop=5616%2C3159%2C0%2C293`,
               alt: null,
               aspectRatio: '16:9'
             }
@@ -76,8 +74,7 @@ export default {
         }
       },
       {
-        url:
-          'https://www.thetimes.co.uk/article/is-the-party-over-for-boris-johnson-k8s0jxv6r',
+        url: `${BASE_URL}/article/is-the-party-over-for-boris-johnson-k8s0jxv6r`,
         slug: 'is-the-party-over-for-boris-johnson',
         label: 'RED BOX | PATRICK MAGUIRE',
         headline: 'Is the party over for Johnson?',
@@ -106,8 +103,7 @@ export default {
           posterImage: {
             crops: [
               {
-                url:
-                  'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Feb05c224-e626-11ec-aa87-2eea7c6e5b01.jpg?crop=1500%2C844%2C0%2C78',
+                url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Feb05c224-e626-11ec-aa87-2eea7c6e5b01.jpg?crop=1500%2C844%2C0%2C78`,
                 alt: null,
                 aspectRatio: '16:9'
               }
@@ -116,8 +112,7 @@ export default {
         }
       },
       {
-        url:
-          'https://www.thetimes.co.uk/article/quentin-letts-a-pm-his-party-and-the-country-left-firmly-in-limp-on-territory-klvfgrj8g',
+        url: `${BASE_URL}/article/quentin-letts-a-pm-his-party-and-the-country-left-firmly-in-limp-on-territory-klvfgrj8g`,
         slug:
           'quentin-letts-a-pm-his-party-and-the-country-left-firmly-in-limp-on-territory',
         label: 'Political Sketch',
@@ -141,8 +136,7 @@ export default {
         media: {
           crops: [
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F99796bb8-e62b-11ec-9b02-3f136f233710.jpg?crop=3296%2C1854%2C254%2C179',
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F99796bb8-e62b-11ec-9b02-3f136f233710.jpg?crop=3296%2C1854%2C254%2C179`,
               alt: null,
               aspectRatio: '16:9'
             }
@@ -150,8 +144,7 @@ export default {
         }
       },
       {
-        url:
-          'https://www.thetimes.co.uk/article/boris-johnson-should-look-for-an-honourable-exit-7fkgkl2rq',
+        url: `${BASE_URL}/article/boris-johnson-should-look-for-an-honourable-exit-7fkgkl2rq`,
         slug: 'boris-johnson-should-look-for-an-honourable-exit',
         label: 'WILLIAM HAGUE | COMMENT',
         headline: 'Hague: Johnson should look for an honourable exit',
@@ -173,8 +166,7 @@ export default {
         media: {
           crops: [
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05ea8ffe-e5da-11ec-9b02-3f136f233710.jpg?crop=1314%2C739%2C13%2C135',
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05ea8ffe-e5da-11ec-9b02-3f136f233710.jpg?crop=1314%2C739%2C13%2C135`,
               alt: null,
               aspectRatio: '16:9'
             }
@@ -182,8 +174,7 @@ export default {
         }
       },
       {
-        url:
-          'https://www.thetimes.co.uk/article/carrie-johnson-and-hard-times-at-no-10-hfmkr8ssn',
+        url: `${BASE_URL}/article/carrie-johnson-and-hard-times-at-no-10-hfmkr8ssn`,
         slug: 'carrie-johnson-and-hard-times-at-no-10',
         label: 'POLITICS',
         headline: 'Carrie Johnson and hard times at No 10',
@@ -205,8 +196,7 @@ export default {
         media: {
           crops: [
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F57d7d616-e5ba-11ec-aa87-2eea7c6e5b01.jpg?crop=3012%2C1694%2C37%2C614',
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F57d7d616-e5ba-11ec-aa87-2eea7c6e5b01.jpg?crop=3012%2C1694%2C37%2C614`,
               alt: null,
               aspectRatio: '16:9'
             }
@@ -214,8 +204,7 @@ export default {
         }
       },
       {
-        url:
-          'https://www.thetimes.co.uk/article/dead-man-walking-times-commentators-give-their-verdicts-boris-johnson-confidence-vote-0f59md3bt',
+        url: `${BASE_URL}/article/dead-man-walking-times-commentators-give-their-verdicts-boris-johnson-confidence-vote-0f59md3bt`,
         slug:
           'dead-man-walking-times-commentators-give-their-verdicts-boris-johnson-confidence-vote',
         label: 'Politics',
@@ -258,8 +247,7 @@ export default {
         media: {
           crops: [
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5b026192-e5df-11ec-9b02-3f136f233710.jpg?crop=2857%2C1607%2C157%2C293',
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5b026192-e5df-11ec-9b02-3f136f233710.jpg?crop=2857%2C1607%2C157%2C293`,
               alt: null,
               aspectRatio: '16:9'
             }
@@ -267,8 +255,7 @@ export default {
         }
       },
       {
-        url:
-          'https://www.thetimes.co.uk/article/margot-heuman-obituary-9fdm8h3hr',
+        url: `${BASE_URL}/article/margot-heuman-obituary-9fdm8h3hr`,
         slug: 'margot-heuman-obituary',
         label: 'Obituary',
         headline: 'Margot Heuman',
@@ -285,8 +272,7 @@ export default {
         media: {
           crops: [
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F88f1de7e-e59a-11ec-9b02-3f136f233710.jpg?crop=847%2C477%2C6%2C255',
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F88f1de7e-e59a-11ec-9b02-3f136f233710.jpg?crop=847%2C477%2C6%2C255`,
               alt: null,
               aspectRatio: '16:9'
             }
@@ -294,8 +280,7 @@ export default {
         }
       },
       {
-        url:
-          'https://www.thetimes.co.uk/article/the-times-view-on-tory-confidence-in-boris-johnson-pyrrhic-victory-wl5fl2jb2',
+        url: `${BASE_URL}/article/the-times-view-on-tory-confidence-in-boris-johnson-pyrrhic-victory-wl5fl2jb2`,
         slug:
           'the-times-view-on-tory-confidence-in-boris-johnson-pyrrhic-victory',
         label: 'LEADING ARTICLE',
@@ -318,8 +303,7 @@ export default {
         media: {
           crops: [
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F38de8446-e5b8-11ec-9b02-3f136f233710.jpg?crop=4081%2C2296%2C0%2C0',
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F38de8446-e5b8-11ec-9b02-3f136f233710.jpg?crop=4081%2C2296%2C0%2C0`,
               alt: null,
               aspectRatio: '16:9'
             }
@@ -327,8 +311,7 @@ export default {
         }
       },
       {
-        url:
-          'https://www.thetimes.co.uk/article/boris-johnson-allies-took-time-saving-big-dog-leadership-contest-rn5dzbw8h',
+        url: `${BASE_URL}/article/boris-johnson-allies-took-time-saving-big-dog-leadership-contest-rn5dzbw8h`,
         slug:
           'boris-johnson-allies-took-time-saving-big-dog-leadership-contest',
         label: 'Politics',
@@ -374,8 +357,7 @@ export default {
         media: {
           crops: [
             {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F37a60a08-e5d7-11ec-9b02-3f136f233710.jpg?crop=1600%2C900%2C0%2C0',
+              url: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F37a60a08-e5d7-11ec-9b02-3f136f233710.jpg?crop=1600%2C900%2C0%2C0`,
               alt: null,
               aspectRatio: '16:9'
             }

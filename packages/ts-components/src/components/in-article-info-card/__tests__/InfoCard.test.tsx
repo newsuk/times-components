@@ -5,6 +5,7 @@ import { InfoCard } from '../InfoCard';
 import { useFetch } from '../../../helpers/fetch/FetchProvider';
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import mockDate from 'mockdate';
+import { IMAGE_BASE_URL } from '../../../constants';
 
 jest.mock('@times-components/image', () => ({
   Placeholder: () => <div>Placeholder</div>
@@ -43,8 +44,7 @@ const testDataWide = {
       {
         type: 'card',
         data: {
-          image:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180',
+          image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180`,
           subtitle: 'Birch',
           copy:
             'Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently'
@@ -119,8 +119,7 @@ const testDataStandard = {
       {
         type: 'card',
         data: {
-          image:
-            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180',
+          image: `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180`,
           subtitle: 'Birch',
           copy:
             'Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently'
@@ -231,7 +230,7 @@ describe('InfoCard', () => {
     ).toBeTruthy();
     expect(getAllByRole('img')[0]).toHaveAttribute(
       'src',
-      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180'
+      `${IMAGE_BASE_URL}/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180`
     );
   });
 
