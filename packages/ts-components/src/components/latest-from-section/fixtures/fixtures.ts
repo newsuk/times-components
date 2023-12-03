@@ -1,3 +1,4 @@
+import { IMAGE_BASE_URL } from '../../../constants';
 import { LatestSection } from '../formatters';
 
 export const latestFromSection: LatestSection[] = [
@@ -20,33 +21,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F67e9ebea-d984-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       },
@@ -65,33 +60,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffa6bcc2-d91d-11eb-8f14-0bb645f59db0.jpg`
           }
         ]
       },
@@ -112,33 +101,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd00ee736-d978-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       }
@@ -161,33 +144,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb8185bfc-d8ed-11eb-8f14-0bb645f59db0.jpg`
           }
         ]
       },
@@ -205,33 +182,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd2cac800-d8f6-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       },
@@ -250,33 +221,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F05d28904-d8f2-11eb-8f14-0bb645f59db0.jpg`
           }
         ]
       }
@@ -300,33 +265,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcedb7af4-d8ed-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       },
@@ -347,33 +306,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd6673ed4-d7e4-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd6673ed4-d7e4-11eb-b92f-5fe539a30c29.png`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb951c63a-d9af-11eb-8f14-0bb645f59db0.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb951c63a-d9af-11eb-8f14-0bb645f59db0.png`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbd7f8b70-d9af-11eb-8f14-0bb645f59db0.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbd7f8b70-d9af-11eb-8f14-0bb645f59db0.png`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd6673ed4-d7e4-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd6673ed4-d7e4-11eb-b92f-5fe539a30c29.png`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd6673ed4-d7e4-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd6673ed4-d7e4-11eb-b92f-5fe539a30c29.png`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd6673ed4-d7e4-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd6673ed4-d7e4-11eb-b92f-5fe539a30c29.png`
           }
         ]
       },
@@ -393,33 +346,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d10c65e-d975-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       }
@@ -444,33 +391,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff80e7476-d979-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       },
@@ -489,33 +430,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa09d52b6-d96f-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       },
@@ -533,33 +468,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       }
@@ -585,33 +514,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F216c4a06-d90b-11eb-8f14-0bb645f59db0.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F216c4a06-d90b-11eb-8f14-0bb645f59db0.png`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg`
           }
         ]
       },
@@ -631,33 +554,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7a0813f4-d913-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7a0813f4-d913-11eb-b92f-5fe539a30c29.png`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbf5c006a-d98f-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbf5c006a-d98f-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbf5c006a-d98f-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbf5c006a-d98f-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       },
@@ -677,33 +594,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65f0ffc0-d918-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65f0ffc0-d918-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F798e1dce-d918-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F798e1dce-d918-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c4bfc92-d919-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c4bfc92-d919-11eb-b92f-5fe539a30c29.png`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65f0ffc0-d918-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65f0ffc0-d918-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65f0ffc0-d918-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65f0ffc0-d918-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65f0ffc0-d918-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65f0ffc0-d918-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       }
@@ -728,33 +639,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc95698d0-d8f1-11eb-8ad2-fb3f1cb33344.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc95698d0-d8f1-11eb-8ad2-fb3f1cb33344.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc6141666-d8f1-11eb-8ad2-fb3f1cb33344.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc6141666-d8f1-11eb-8ad2-fb3f1cb33344.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc95698d0-d8f1-11eb-8ad2-fb3f1cb33344.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc95698d0-d8f1-11eb-8ad2-fb3f1cb33344.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc95698d0-d8f1-11eb-8ad2-fb3f1cb33344.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc95698d0-d8f1-11eb-8ad2-fb3f1cb33344.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc95698d0-d8f1-11eb-8ad2-fb3f1cb33344.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc95698d0-d8f1-11eb-8ad2-fb3f1cb33344.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc95698d0-d8f1-11eb-8ad2-fb3f1cb33344.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc95698d0-d8f1-11eb-8ad2-fb3f1cb33344.jpg`
           }
         ]
       },
@@ -776,33 +681,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc51803d6-d8d7-11eb-8f14-0bb645f59db0.jpg`
           }
         ]
       },
@@ -822,33 +721,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb1996b90-d8f7-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       }
@@ -872,33 +765,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F2554ea38-d8e8-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       },
@@ -917,33 +804,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F62e894e4-d8e8-11eb-b92f-5fe539a30c29.png`
           }
         ]
       },
@@ -962,33 +843,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F512af3c8-d8e8-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       }
@@ -1014,33 +889,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7ac7e21e-d919-11eb-8f14-0bb645f59db0.jpg`
           }
         ]
       },
@@ -1058,33 +927,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fa2bbc430-d904-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       },
@@ -1106,33 +969,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fde36d2b8-d97a-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       }
@@ -1158,33 +1015,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbeb17fc-d8e5-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       },
@@ -1204,33 +1055,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdbca59fa-d8ee-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       },
@@ -1251,33 +1096,27 @@ export const latestFromSection: LatestSection[] = [
         leadAsset: [
           {
             ratio: '3:2',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '16:9',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '2:3',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '4:5',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg`
           },
           {
             ratio: '1.25:1',
-            source:
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg'
+            source: `${IMAGE_BASE_URL}/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F4bfa8540-d8d8-11eb-b92f-5fe539a30c29.jpg`
           }
         ]
       }

@@ -5,6 +5,7 @@ import { HoverIcon } from '@times-components/utils';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 
 import { InpPreferencesText } from '../styles';
+import { HOME_URL } from '../../../constants';
 
 export const NewsletterPuffLink = ({ onPress }: any) => {
   return (
@@ -33,10 +34,7 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
             });
         };
         return (
-          <Link
-            url="https://home.thetimes.co.uk/myNews"
-            onPress={() => handlePress()}
-          >
+          <Link url={`${HOME_URL}/myNews`} onPress={() => handlePress()}>
             <HoverIcon underline={true} colour="#006699">
               <InpPreferencesText ref={intersectObserverRef}>
                 Explore our newsletters

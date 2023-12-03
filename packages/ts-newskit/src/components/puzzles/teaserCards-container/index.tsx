@@ -10,6 +10,7 @@ import {
   NewsKitQuizzesAndTeasersIcon,
   NewsKitBoardAndCardGamesIcon
 } from '../../../assets';
+import { BASE_URL } from '../../../constants';
 
 type PuzzleType =
   | 'Crosswords'
@@ -97,7 +98,7 @@ export const TeaserCardsContainer = ({
           <GridLayoutItem data-testid="single-card">
             <CategoryCard
               type={type}
-              url="https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00"
+              url={`${BASE_URL}/checkout?pc=PUZ025N3Z00`}
               Icon={iconMapping[type]}
             />
           </GridLayoutItem>

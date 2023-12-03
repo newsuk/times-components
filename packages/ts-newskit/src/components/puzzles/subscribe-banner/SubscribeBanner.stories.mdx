@@ -2,6 +2,7 @@ import { Meta, Story, Props } from '@storybook/addon-docs'
 import { NewsKitProvider } from 'newskit';
 import { PuzzlesWebLightTheme } from '../../../theme';
 import { SubscribeBanner } from './index';
+import { BASE_URL } from '../../../constants';
 
 <Meta
   title="Newskit Components/Puzzles/SubscribeBanner"
@@ -34,7 +35,7 @@ export const SubscribeBannerStory = ({ SubscribeBannerHeader, SubscribeBannerSub
 <Story name="SubscribeBanner"  args={{
     SubscribeBannerHeader: "Start playing today",
     SubscribeBannerSubheadline: "Just £1 for your first month, then £4.99 a month thereafter",
-    url: "https://www.thetimes.co.uk/subscribe/puzzles/",
+    url: `${BASE_URL}/subscribe/puzzles/`,
     title: "Subscribe",
   }}>
   {SubscribeBannerStory.bind({})}

@@ -1,15 +1,14 @@
 import React from "react";
 import { colours } from "@times-components/ts-styleguide";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "..";
+import { BASE_URL } from "../constants";
 
 const defaultHeadline = "Sajid Javid to end hostile era for illegal immigrants";
 const defaultLabel = "Francis Elliott";
-const defaultLink1 =
-  "https://www.thetimes.co.uk/edition/news/sajid-javid-son-of-bus-driver-who-rose-from-poverty-to-become-home-secretary-9606jg3h7";
+const defaultLink1 = `${BASE_URL}/edition/news/sajid-javid-son-of-bus-driver-who-rose-from-poverty-to-become-home-secretary-9606jg3h7`;
 const defaultId1 =
   "sajid-javid-son-of-bus-driver-who-rose-from-poverty-to-become-home-secretary-9606jg3h7";
-const defaultLink2 =
-  "https://www.thetimes.co.uk/article/timeline-windrush-immigration-scandals-29s3vtp53";
+const defaultLink2 = `${BASE_URL}/article/timeline-windrush-immigration-scandals-29s3vtp53`;
 const defaultId2 = "timeline-windrush-immigration-scandals-29s3vtp53";
 
 export default ({

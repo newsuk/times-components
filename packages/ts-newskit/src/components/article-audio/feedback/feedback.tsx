@@ -5,6 +5,7 @@ import {
   NewsKitThumbsDownIcon,
   NewsKitThumbsUpIcon
 } from '../../../assets';
+import { BASE_DOMAIN } from '../../../constants';
 
 export const FeedbackText: React.FC<{
   handleFeedback: (value: boolean) => void;
@@ -35,9 +36,9 @@ export const FeedbackText: React.FC<{
               paddingBlockStart: 'space010'
             }}
             external={false}
-            href="mailto:comments+engagement@thetimes.co.uk"
+            href={`mailto:comments+engagement@${BASE_DOMAIN}`}
           >
-            comments+engagement@thetimes.co.uk
+            {`comments+engagement@${BASE_DOMAIN}`}
           </LinkInline>
         </Stack>
         <IconButton

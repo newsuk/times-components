@@ -1,3 +1,5 @@
+import { FIXTURES_ARTICLE_BASE_URL } from "../constants";
+
 export default [
   {
     name: "paragraph",
@@ -33,8 +35,7 @@ export default [
           }
         ],
         attributes: {
-          href:
-            "https://www.thetimes.co.uk/article/the-times-coronavirus-charity-appeal-2020-help-those-in-hardship-lp6f2jdsb",
+          href: `${FIXTURES_ARTICLE_BASE_URL}/article/the-times-coronavirus-charity-appeal-2020-help-those-in-hardship-lp6f2jdsb`,
           type: "article",
           canonicalId:
             "the-times-coronavirus-charity-appeal-2020-help-those-in-hardship-lp6f2jdsb"

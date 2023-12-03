@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
+import { PROFILE_BASE_URL } from "../constants";
 
 const SYNDICATED_ARTICLE_IDS = ["37a19ac4-1cbb-11ee-8198-bf96b6365670"];
 
@@ -101,7 +102,7 @@ function getAuthorSchema(article) {
   const { bylines } = article;
   return bylines
     ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => {
-        const url = `https://thetimes.co.uk/profile/${slug}`;
+        const url = `${PROFILE_BASE_URL}/profile/${slug}`;
         return {
           "@type": "Person",
           name,

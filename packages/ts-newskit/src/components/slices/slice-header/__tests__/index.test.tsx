@@ -2,6 +2,7 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render, fireEvent } from '../../../../utils/test-utils';
 import { SliceHeader } from '../index';
+import { BASE_URL } from '../../../../constants';
 
 const mockSliceHeaderClickHandler = jest.fn();
 
@@ -10,7 +11,7 @@ describe('Render Header', () => {
     const { asFragment } = render(
       <SliceHeader
         title="Rugby Union"
-        href="https://www.thetimes.co.uk/"
+        href={`${BASE_URL}/`}
         sliceHeaderClickHandler={mockSliceHeaderClickHandler}
       />
     );
@@ -21,7 +22,7 @@ describe('Render Header', () => {
     const { getByText } = render(
       <SliceHeader
         title="Rugby Union"
-        href="https://www.thetimes.co.uk/"
+        href={`${BASE_URL}/`}
         sliceHeaderClickHandler={mockSliceHeaderClickHandler}
       />
     );
@@ -33,7 +34,7 @@ describe('Render Header', () => {
     const { getByText } = render(
       <SliceHeader
         title="Rugby Union"
-        href="https://www.thetimes.co.uk/"
+        href={`${BASE_URL}/`}
         sliceHeaderClickHandler={mockSliceHeaderClickHandler}
       />
     );
@@ -44,7 +45,7 @@ describe('Render Header', () => {
     const { getByRole } = render(
       <SliceHeader
         title="Rugby Union"
-        href="https://www.thetimes.co.uk/"
+        href={`${BASE_URL}/`}
         sliceHeaderClickHandler={mockSliceHeaderClickHandler}
       />
     );

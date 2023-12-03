@@ -1,3 +1,5 @@
+import { FIXTURES_ARTICLE_BASE_URL } from "../constants";
+
 export default [
   {
     name: "paragraph",
@@ -26,8 +28,7 @@ export default [
           }
         ],
         attributes: {
-          href:
-            "https://www.thetimes.co.uk/article/superforecasting-by-philip-tetlock-and-dan-gardner-gkwwpbf3gsb",
+          href: `${FIXTURES_ARTICLE_BASE_URL}/article/superforecasting-by-philip-tetlock-and-dan-gardner-gkwwpbf3gsb`,
           type: "article",
           canonicalId:
             "superforecasting-by-philip-tetlock-and-dan-gardner-gkwwpbf3gsb"
