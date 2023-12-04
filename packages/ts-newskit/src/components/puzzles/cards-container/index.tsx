@@ -17,6 +17,7 @@ interface CardsContainerProps {
   isScrollable?: boolean;
   seeAllLink?: string;
   isImageCropped?: boolean;
+  isDashHidden?: boolean;
 }
 
 export const CardsContainer = ({
@@ -24,7 +25,8 @@ export const CardsContainer = ({
   title,
   isScrollable = false,
   seeAllLink,
-  isImageCropped = false
+  isImageCropped = false,
+  isDashHidden = false
 }: CardsContainerProps) => {
   const scrollRef = useRef(null);
   const cardRef = useRef(null);
@@ -46,7 +48,9 @@ export const CardsContainer = ({
               lg: 'editorialDisplay004'
             },
             stylePreset: 'inkBrand010'
-          }
+          },
+
+          stylePreset: isDashHidden ? '' : 'dashedDivider'
         }}
         actionItem={() =>
           isScrollable && cards.length > 4 ? (
