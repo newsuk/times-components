@@ -215,7 +215,7 @@ export const Article = ({
             contentType={contentType}
             expirableFlags={expirableFlags}
             label={label}
-            marginBlockEnd="space030"
+            marginBlockEnd="space020"
           />
         )}
         <CardHeadlineLink

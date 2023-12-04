@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.140.8](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.7...@times-components/ts-newskit@1.140.8) (2023-12-04)
+
+
+### Bug Fixes
+
+* **TMRX-1578:** remove line break after expirable flag ([#3674](https://github.com/newsuk/times-components/issues/3674)) ([71e4028](https://github.com/newsuk/times-components/commit/71e40286227ba91821e7de2569df1d9ddbbfd908))
+
+
+
+
+
+## [1.140.7](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.6...@times-components/ts-newskit@1.140.7) (2023-12-01)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
 ## [1.140.6](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.5...@times-components/ts-newskit@1.140.6) (2023-11-29)
 
 
