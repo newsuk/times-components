@@ -32,7 +32,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c25 {
+.c23 {
   color: #333333;
   display: block;
   font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
@@ -43,13 +43,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c25:first-of-type:after {
+.c23:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c28 {
+.c26 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -68,7 +68,7 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c21 {
+.c19 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -91,7 +91,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c31 {
+.c29 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -119,7 +119,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c32 {
+.c30 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -148,7 +148,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c27 {
+.c25 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -169,7 +169,7 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
-.c26 {
+.c24 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -188,7 +188,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c22 {
+.c20 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -202,11 +202,11 @@ exports[`full article with style 1`] = `
   min-height: 210px;
 }
 
-.c22.hidden {
+.c20.hidden {
   visibility: hidden;
 }
 
-.c23 {
+.c21 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -218,13 +218,13 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
 }
 
-.c24 {
+.c22 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
-.c29 {
+.c27 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -233,7 +233,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c30 {
+.c28 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -279,25 +279,11 @@ exports[`full article with style 1`] = `
   order: 3;
 }
 
-.c20 {
+.c18 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
-}
-
-.c18 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 40px;
-  display: none;
-}
-
-.c19 {
-  position: absolute;
-  padding-left: 20px;
-  right: 0;
-  z-index: 1;
 }
 
 .c17 {
@@ -576,7 +562,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c23 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -586,47 +572,32 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c23 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c26 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c19 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c19 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c31 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c31 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c32 {
+  .c29 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -635,13 +606,28 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c32 {
+  .c29 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c27 {
+  .c30 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c30 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c25 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -653,7 +639,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c26 {
+  .c24 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -662,47 +648,47 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c26 {
+  .c24 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c20 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c22 {
+  .c20 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c24 {
+  .c22 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c24:first-of-type {
+  .c22:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c24:last-child {
+  .c22:last-child {
     margin-left: 1.5%;
   }
 }
 
 @media (min-width:768px) {
-  .c29 {
+  .c27 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c29 {
+  .c27 {
     min-height: 283px;
   }
 }
@@ -711,26 +697,6 @@ exports[`full article with style 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c18 {
-    display: block;
-  }
-}
-
-@media (min-width:1024px) {
-  .c19 {
-    width: 19.8333%;
-    padding-right: 40px;
-  }
-}
-
-@media (min-width:1320px) {
-  .c19 {
-    width: 18.8333%;
-    padding-right: 50px;
   }
 }
 
@@ -1008,215 +974,13 @@ exports[`full article with style 1`] = `
           </div>
         </div>
       </div>
-      <div
-        className="c18"
-      >
-        <div
-          className="c19"
-        >
-          <div
-            className="css-s123ud"
-          >
-            <div
-              className="css-13byt3y"
-            >
-              <div
-                className="css-13byt3y"
-              >
-                <div
-                  className="css-1482yt8"
-                >
-                  <a
-                    className="css-xm00pa"
-                  >
-                    <span
-                      className="css-pqzzby"
-                    />
-                  </a>
-                  <div
-                    className="css-1bq9n3y"
-                  >
-                    <h3
-                      className="css-eqardm"
-                    >
-                      Puzzles
-                    </h3>
-                    <button
-                      className="css-1x6q5yj"
-                    >
-                      <svg
-                        className="css-3rbz36"
-                      >
-                        <path />
-                        <path />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <p
-                  className="css-4g5gt6"
-                >
-                  Challenge yourself with today’s puzzles.
-                </p>
-              </div>
-            </div>
-            <hr
-              className="css-1ft1o8k"
-            />
-            <div
-              className="css-y2vd7q"
-            >
-              <div
-                className="css-1kwj960"
-              >
-                <picture
-                  className="css-128l0kk"
-                >
-                  <div
-                    className="css-5pczz7"
-                  >
-                    <div
-                      className="css-1q2lbmy"
-                    >
-                      <svg
-                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
-                      >
-                        <path />
-                        <path />
-                      </svg>
-                    </div>
-                  </div>
-                  <img
-                    className="css-1kdjcna"
-                  />
-                </picture>
-              </div>
-              <a
-                className="css-xm00pa"
-              >
-                <span
-                  className="css-pqzzby"
-                />
-              </a>
-              <div
-                className="css-btpi9y"
-              >
-                <p
-                  className="css-cj4mhx"
-                >
-                  Crossword
-                </p>
-              </div>
-            </div>
-            <hr
-              className="css-1ft1o8k"
-            />
-            <div
-              className="css-y2vd7q"
-            >
-              <div
-                className="css-1kwj960"
-              >
-                <picture
-                  className="css-128l0kk"
-                >
-                  <div
-                    className="css-5pczz7"
-                  >
-                    <div
-                      className="css-1q2lbmy"
-                    >
-                      <svg
-                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
-                      >
-                        <path />
-                        <path />
-                      </svg>
-                    </div>
-                  </div>
-                  <img
-                    className="css-1kdjcna"
-                  />
-                </picture>
-              </div>
-              <a
-                className="css-xm00pa"
-              >
-                <span
-                  className="css-pqzzby"
-                />
-              </a>
-              <div
-                className="css-btpi9y"
-              >
-                <p
-                  className="css-cj4mhx"
-                >
-                  Polygon
-                </p>
-              </div>
-            </div>
-            <hr
-              className="css-1ft1o8k"
-            />
-            <div
-              className="css-y2vd7q"
-            >
-              <div
-                className="css-1kwj960"
-              >
-                <picture
-                  className="css-128l0kk"
-                >
-                  <div
-                    className="css-5pczz7"
-                  >
-                    <div
-                      className="css-1q2lbmy"
-                    >
-                      <svg
-                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
-                      >
-                        <path />
-                        <path />
-                      </svg>
-                    </div>
-                  </div>
-                  <img
-                    className="css-1kdjcna"
-                  />
-                </picture>
-              </div>
-              <a
-                className="css-xm00pa"
-              >
-                <span
-                  className="css-pqzzby"
-                />
-              </a>
-              <div
-                className="css-btpi9y"
-              >
-                <p
-                  className="css-cj4mhx"
-                >
-                  Sudoku
-                </p>
-              </div>
-            </div>
-            <hr
-              className="css-1ft1o8k"
-            />
-          </div>
-        </div>
-      </div>
       <article
-        className="c20"
+        className="c18"
       >
         <div>
           <div>
             <div
-              className="c21"
+              className="c19"
             >
               <ArticleImage />
             </div>
@@ -1226,30 +990,30 @@ exports[`full article with style 1`] = `
           Some Link
         </Link>
         <div
-          className="group-3 hidden c22"
+          className="group-3 hidden c20"
         >
           <h2
-            className="c23"
+            className="c21"
           >
             Sponsored
           </h2>
           <div
-            className="c24"
+            className="c22"
           />
           <div
-            className="c24"
+            className="c22"
           />
         </div>
         <p
-          className="c25"
+          className="c23"
         >
           Some content
         </p>
         <div
-          className="c26"
+          className="c24"
         >
           <div
-            className="c27"
+            className="c25"
           >
             <PullQuote>
               The pull quote content
@@ -1257,7 +1021,7 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c21"
+          className="c19"
         >
           <figure
             margin={0}
@@ -1294,7 +1058,7 @@ exports[`full article with style 1`] = `
             </div>
             <figcaption>
               <div
-                className="c28"
+                className="c26"
               >
                 <Caption />
               </div>
@@ -1302,10 +1066,10 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <div
-          className="c29"
+          className="c27"
         >
           <h2
-            className="c30"
+            className="c28"
           >
             Advertisement
           </h2>
@@ -1314,7 +1078,7 @@ exports[`full article with style 1`] = `
         <div>
           <div>
             <div
-              className="c31"
+              className="c29"
             >
               <ArticleImage />
             </div>
@@ -1323,7 +1087,7 @@ exports[`full article with style 1`] = `
         <div>
           <div>
             <div
-              className="c32"
+              className="c30"
             >
               <ArticleImage />
             </div>
