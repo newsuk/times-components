@@ -8,19 +8,23 @@ const NavigationList: React.FC<{
   onExpand?: (slug: string) => void;
   clickHandler: (title: string) => void;
 }> = ({ data, expandedL1, onExpand, clickHandler }) => {
+  const handleItemClick = (slug: string, title: string) => {
+    if (onExpand) {
+      expandedL1 !== slug ? onExpand(slug) : onExpand('');
+    }
+    clickHandler(title);
+  };
   return (
     <>
       {data.map(
         item =>
-          item.items && onExpand ? (
+          item.items ? (
             <Fragment key={item.slug}>
               <MenuSub
                 title={item.title}
                 id={`vertical-${item.slug}`}
                 expanded={expandedL1 === item.slug}
-                onClick={() =>
-                  expandedL1 !== item.slug ? onExpand(item.slug) : onExpand('')
-                }
+                onClick={() => handleItemClick(item.slug, item.title)}
                 overrides={{
                   stylePreset: 'menuItemL1',
                   typographyPreset: 'newPreset040'

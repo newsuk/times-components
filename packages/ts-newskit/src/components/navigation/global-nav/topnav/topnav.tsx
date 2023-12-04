@@ -49,7 +49,11 @@ export const TopNav: React.FC<TopNavProps> = ({
   };
 
   const NavMasthead = (
-    <LinkInline href="/" overrides={{ stylePreset: 'menuLogo' }}>
+    <LinkInline
+      href="/"
+      overrides={{ stylePreset: 'menuLogo' }}
+      onClick={() => clickHandler('Masthead logo')}
+    >
       {isSunday ? (
         <NewsKitSundayTimesMasthead {...logoProps} />
       ) : (

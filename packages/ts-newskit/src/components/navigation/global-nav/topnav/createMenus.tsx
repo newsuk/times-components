@@ -15,6 +15,11 @@ export const createMenu = (
 ) => {
   const [moreSelected, setMoreSelected] = useState<boolean>(false);
 
+  const handleMoreClick = () => {
+    setMoreSelected(!moreSelected);
+    clickHandler('More');
+  };
+
   const moreMenuLength = menuData.length - 4;
   const navItems = menuData
     .slice(0, menuData.length)
@@ -44,7 +49,7 @@ export const createMenu = (
       <Visible lg>
         <MenuSub
           title="More"
-          onClick={() => setMoreSelected(!moreSelected)}
+          onClick={handleMoreClick}
           selected={moreSelected}
           expanded={moreSelected}
           overrides={{
