@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.141.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.8...@times-components/ts-newskit@1.141.0) (2023-12-04)
+
+
+### Features
+
+* **TMPZ-277:** aded hide dash option to cards container ([#3678](https://github.com/newsuk/times-components/issues/3678)) ([5617e0e](https://github.com/newsuk/times-components/commit/5617e0e1836baa314d4024d9ac64a9415736f49e))
+
+
+
+
+
 ## [1.140.8](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.7...@times-components/ts-newskit@1.140.8) (2023-12-04)
 
 
