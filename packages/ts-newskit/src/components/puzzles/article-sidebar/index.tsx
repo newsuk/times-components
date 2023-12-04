@@ -86,7 +86,8 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
                 alt: 'Puzzle thumbnail',
                 placeholderIcon: true,
                 overrides: {
-                  marginInlineEnd: 'space040'
+                  marginInlineEnd: 'space040',
+                  maxWidth: 'initial'
                 }
               }}
             />
