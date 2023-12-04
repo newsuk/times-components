@@ -96,14 +96,14 @@ const ArticleSkeleton = ({
     const sidebarNode = sidebarRef.current;
     if (sidebarNode) {
       const adElement = document.querySelector(
-        ".responsive__InlineAdWrapper-sc-4v1r4q-17, responsive__FullWidthImg-sc-4v1r4q-4"
+        ".responsive__InlineAdWrapper-sc-4v1r4q-17"
       );
-      const relatedArticlesElement = document.getElementById(
-        "related-articles"
+      const fullWidthImgElement = document.querySelector(
+        ".responsive__FullWidthImg-sc-4v1r4q-4"
       );
 
       let isAdIntersecting = false;
-      let isRelatedArticlesIntersecting = false;
+      let isFullWidthImgIntersecting = false;
 
       if (adElement) {
         const adRect = adElement.getBoundingClientRect();
@@ -112,16 +112,16 @@ const ArticleSkeleton = ({
           adRect.bottom >= sidebarNode.getBoundingClientRect().top;
       }
 
-      if (relatedArticlesElement) {
-        const relatedArticlesRect = relatedArticlesElement.getBoundingClientRect();
-        isRelatedArticlesIntersecting =
-          relatedArticlesRect.top <= window.innerHeight &&
-          relatedArticlesRect.bottom >= 0;
+      if (fullWidthImgElement) {
+        const fullWidthImgRect = fullWidthImgElement.getBoundingClientRect();
+        isFullWidthImgIntersecting =
+          fullWidthImgRect.top <= window.innerHeight &&
+          fullWidthImgRect.bottom >= 0;
       }
 
       sidebarNode.style.transition = "opacity 0.5s ease"; // Set transition property
 
-      if (isAdIntersecting || isRelatedArticlesIntersecting) {
+      if (isAdIntersecting || isFullWidthImgIntersecting) {
         sidebarNode.style.opacity = "0";
       } else {
         sidebarNode.style.opacity = "1";
