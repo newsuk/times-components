@@ -1013,7 +1013,6 @@ exports[`full article with style 1`] = `
       >
         <div
           className="c19"
-          opacity={1}
         >
           <div
             className="css-s123ud"
