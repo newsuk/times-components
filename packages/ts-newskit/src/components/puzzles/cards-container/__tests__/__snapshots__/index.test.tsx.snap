@@ -3,7 +3,7 @@
 exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
 <DocumentFragment>
   <div
-    class="css-1n1vvh4"
+    class="css-1kev6ns"
     data-testid="title-bar"
   >
     <div
@@ -1006,7 +1006,912 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
 exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
 <DocumentFragment>
   <div
-    class="css-1n1vvh4"
+    class="css-1kev6ns"
+    data-testid="title-bar"
+  >
+    <div
+      class="css-16bai6p"
+    >
+      <section
+        class="css-108cn6a"
+      >
+        <h2
+          class="nk-headline-heading css-i2jo9u"
+        >
+          <a
+            class="css-1ks9f1u"
+            href="https://newskit.co.uk/components"
+          >
+            <span
+              class="css-pqzzby"
+            >
+              <span
+                class="css-1xzc2un"
+              >
+                <span
+                  class="css-1wc2zh5"
+                >
+                  Crosswords
+                </span>
+              </span>
+              <span
+                class="css-1xzc2un"
+              >
+                <svg
+                  class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                  fill="currentColor"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>
+                    External link
+                  </title>
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                  />
+                </svg>
+              </span>
+            </span>
+          </a>
+        </h2>
+      </section>
+    </div>
+    <div
+      class="css-11l110t"
+    />
+  </div>
+  <div
+    class="css-1r18k3i"
+  >
+    <div
+      class="css-6uqogc"
+      data-testid="scroll-container"
+      tabindex="0"
+    >
+      <div
+        class="css-13ctbov"
+      >
+         
+        <div
+          class="css-bdm6mo"
+          data-test-id="single-card"
+        >
+          <div
+            class="css-1ba9oov"
+          >
+            <div
+              class="lcpPuzzles css-2zeami"
+            >
+              <picture
+                class="css-2pubdt"
+              >
+                <div
+                  class="css-5pczz7"
+                />
+                <img
+                  alt="Puzzle Name"
+                  class="css-1qgqq71"
+                  data-testid="puzzle-image"
+                  loading="eager"
+                  src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                />
+              </picture>
+              <div
+                class="css-11mq3i1"
+              >
+                <div
+                  class="css-1az3j4h"
+                  data-testid="flag"
+                >
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    IN PROGRESS
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-5p0hht"
+            >
+              <a
+                class="css-1r8aulg"
+                data-testid="puzzleCard-link"
+                href="https://www.newskit.co.uk/components/accordion/"
+              >
+                <span
+                  class="css-pqzzby"
+                >
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <div
+                      class="css-m1f215"
+                    >
+                      Puzzle Name
+                    </div>
+                  </span>
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <svg
+                      class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        External link
+                      </title>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-1dfr6je"
+              >
+                <div
+                  class="css-13byt3y"
+                >
+                  <span
+                    class="css-1ke0ou6"
+                  >
+                    Friday March 3
+                  </span>
+                  <span
+                    class="css-16y7d56"
+                  >
+                     | test-1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-bdm6mo"
+          data-test-id="single-card"
+        >
+          <div
+            class="css-1ba9oov"
+          >
+            <div
+              class="lcpPuzzles css-2zeami"
+            >
+              <picture
+                class="css-2pubdt"
+              >
+                <div
+                  class="css-5pczz7"
+                />
+                <img
+                  alt="Puzzle Name"
+                  class="css-1qgqq71"
+                  data-testid="puzzle-image"
+                  loading="eager"
+                  src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                />
+              </picture>
+              <div
+                class="css-11mq3i1"
+              >
+                <div
+                  class="css-1az3j4h"
+                  data-testid="flag"
+                >
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    IN PROGRESS
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-5p0hht"
+            >
+              <a
+                class="css-1r8aulg"
+                data-testid="puzzleCard-link"
+                href="https://www.newskit.co.uk/components/accordion/"
+              >
+                <span
+                  class="css-pqzzby"
+                >
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <div
+                      class="css-m1f215"
+                    >
+                      Puzzle Name
+                    </div>
+                  </span>
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <svg
+                      class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        External link
+                      </title>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-1dfr6je"
+              >
+                <div
+                  class="css-13byt3y"
+                >
+                  <span
+                    class="css-1ke0ou6"
+                  >
+                    Friday March 3
+                  </span>
+                  <span
+                    class="css-16y7d56"
+                  >
+                     | test-1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-bdm6mo"
+          data-test-id="single-card"
+        >
+          <div
+            class="css-1ba9oov"
+          >
+            <div
+              class="lcpPuzzles css-2zeami"
+            >
+              <picture
+                class="css-2pubdt"
+              >
+                <div
+                  class="css-5pczz7"
+                />
+                <img
+                  alt="Puzzle Name"
+                  class="css-1qgqq71"
+                  data-testid="puzzle-image"
+                  loading="eager"
+                  src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                />
+              </picture>
+              <div
+                class="css-11mq3i1"
+              >
+                <div
+                  class="css-1az3j4h"
+                  data-testid="flag"
+                >
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    IN PROGRESS
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-5p0hht"
+            >
+              <a
+                class="css-1r8aulg"
+                data-testid="puzzleCard-link"
+                href="https://www.newskit.co.uk/components/accordion/"
+              >
+                <span
+                  class="css-pqzzby"
+                >
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <div
+                      class="css-m1f215"
+                    >
+                      Puzzle Name
+                    </div>
+                  </span>
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <svg
+                      class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        External link
+                      </title>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-1dfr6je"
+              >
+                <div
+                  class="css-13byt3y"
+                >
+                  <span
+                    class="css-1ke0ou6"
+                  >
+                    Friday March 3
+                  </span>
+                  <span
+                    class="css-16y7d56"
+                  >
+                     | test-1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-bdm6mo"
+          data-test-id="single-card"
+        >
+          <div
+            class="css-1ba9oov"
+          >
+            <div
+              class="lcpPuzzles css-2zeami"
+            >
+              <picture
+                class="css-2pubdt"
+              >
+                <div
+                  class="css-5pczz7"
+                />
+                <img
+                  alt="Puzzle Name"
+                  class="css-1qgqq71"
+                  data-testid="puzzle-image"
+                  loading="eager"
+                  src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+                />
+              </picture>
+              <div
+                class="css-11mq3i1"
+              >
+                <div
+                  class="css-1az3j4h"
+                  data-testid="flag"
+                >
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    IN PROGRESS
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-5p0hht"
+            >
+              <a
+                class="css-1r8aulg"
+                data-testid="puzzleCard-link"
+                href="https://www.newskit.co.uk/components/accordion/"
+              >
+                <span
+                  class="css-pqzzby"
+                >
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <div
+                      class="css-m1f215"
+                    >
+                      Puzzle Name
+                    </div>
+                  </span>
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <svg
+                      class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        External link
+                      </title>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-1dfr6je"
+              >
+                <div
+                  class="css-13byt3y"
+                >
+                  <span
+                    class="css-1ke0ou6"
+                  >
+                    Friday March 3
+                  </span>
+                  <span
+                    class="css-16y7d56"
+                  >
+                     | test-1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-bdm6mo"
+          data-test-id="single-card"
+        >
+          <div
+            class="css-1ba9oov"
+          >
+            <div
+              class=" css-2zeami"
+            >
+              <picture
+                class="css-om84o6"
+              >
+                <img
+                  alt="Puzzle Name"
+                  class="css-ssxt4f"
+                  data-testid="puzzle-image"
+                  loading="lazy"
+                />
+              </picture>
+              <div
+                class="css-11mq3i1"
+              >
+                <div
+                  class="css-1az3j4h"
+                  data-testid="flag"
+                >
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    IN PROGRESS
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-5p0hht"
+            >
+              <a
+                class="css-1r8aulg"
+                data-testid="puzzleCard-link"
+                href="https://www.newskit.co.uk/components/accordion/"
+              >
+                <span
+                  class="css-pqzzby"
+                >
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <div
+                      class="css-m1f215"
+                    >
+                      Puzzle Name
+                    </div>
+                  </span>
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <svg
+                      class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        External link
+                      </title>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-1dfr6je"
+              >
+                <div
+                  class="css-13byt3y"
+                >
+                  <span
+                    class="css-1ke0ou6"
+                  >
+                    Friday March 3
+                  </span>
+                  <span
+                    class="css-16y7d56"
+                  >
+                     | test-1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-bdm6mo"
+          data-test-id="single-card"
+        >
+          <div
+            class="css-1ba9oov"
+          >
+            <div
+              class=" css-2zeami"
+            >
+              <picture
+                class="css-om84o6"
+              >
+                <img
+                  alt="Puzzle Name"
+                  class="css-ssxt4f"
+                  data-testid="puzzle-image"
+                  loading="lazy"
+                />
+              </picture>
+              <div
+                class="css-11mq3i1"
+              >
+                <div
+                  class="css-1az3j4h"
+                  data-testid="flag"
+                >
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    IN PROGRESS
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-5p0hht"
+            >
+              <a
+                class="css-1r8aulg"
+                data-testid="puzzleCard-link"
+                href="https://www.newskit.co.uk/components/accordion/"
+              >
+                <span
+                  class="css-pqzzby"
+                >
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <div
+                      class="css-m1f215"
+                    >
+                      Puzzle Name
+                    </div>
+                  </span>
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <svg
+                      class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        External link
+                      </title>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-1dfr6je"
+              >
+                <div
+                  class="css-13byt3y"
+                >
+                  <span
+                    class="css-1ke0ou6"
+                  >
+                    Friday March 3
+                  </span>
+                  <span
+                    class="css-16y7d56"
+                  >
+                     | test-1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-bdm6mo"
+          data-test-id="single-card"
+        >
+          <div
+            class="css-1ba9oov"
+          >
+            <div
+              class=" css-2zeami"
+            >
+              <picture
+                class="css-om84o6"
+              >
+                <img
+                  alt="Puzzle Name"
+                  class="css-ssxt4f"
+                  data-testid="puzzle-image"
+                  loading="lazy"
+                />
+              </picture>
+              <div
+                class="css-11mq3i1"
+              >
+                <div
+                  class="css-1az3j4h"
+                  data-testid="flag"
+                >
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    IN PROGRESS
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-5p0hht"
+            >
+              <a
+                class="css-1r8aulg"
+                data-testid="puzzleCard-link"
+                href="https://www.newskit.co.uk/components/accordion/"
+              >
+                <span
+                  class="css-pqzzby"
+                >
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <div
+                      class="css-m1f215"
+                    >
+                      Puzzle Name
+                    </div>
+                  </span>
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <svg
+                      class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        External link
+                      </title>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-1dfr6je"
+              >
+                <div
+                  class="css-13byt3y"
+                >
+                  <span
+                    class="css-1ke0ou6"
+                  >
+                    Friday March 3
+                  </span>
+                  <span
+                    class="css-16y7d56"
+                  >
+                     | test-1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="css-bdm6mo"
+          data-test-id="single-card"
+        >
+          <div
+            class="css-1ba9oov"
+          >
+            <div
+              class=" css-2zeami"
+            >
+              <picture
+                class="css-om84o6"
+              >
+                <img
+                  alt="Puzzle Name"
+                  class="css-ssxt4f"
+                  data-testid="puzzle-image"
+                  loading="lazy"
+                />
+              </picture>
+              <div
+                class="css-11mq3i1"
+              >
+                <div
+                  class="css-1az3j4h"
+                  data-testid="flag"
+                >
+                  <span
+                    class="css-1x1ve0y"
+                  >
+                    IN PROGRESS
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="css-5p0hht"
+            >
+              <a
+                class="css-1r8aulg"
+                data-testid="puzzleCard-link"
+                href="https://www.newskit.co.uk/components/accordion/"
+              >
+                <span
+                  class="css-pqzzby"
+                >
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <div
+                      class="css-m1f215"
+                    >
+                      Puzzle Name
+                    </div>
+                  </span>
+                  <span
+                    class="css-1xzc2un"
+                  >
+                    <svg
+                      class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>
+                        External link
+                      </title>
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </a>
+              <div
+                class="css-1dfr6je"
+              >
+                <div
+                  class="css-13byt3y"
+                >
+                  <span
+                    class="css-1ke0ou6"
+                  >
+                    Friday March 3
+                  </span>
+                  <span
+                    class="css-16y7d56"
+                  >
+                     | test-1
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CardsContainer tests should render a snapshot without scroller and without dash divider 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1ibqgfs"
     data-testid="title-bar"
   >
     <div
