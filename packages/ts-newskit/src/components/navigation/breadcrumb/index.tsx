@@ -6,11 +6,12 @@ type BreadcrumbsItem = {
   url?: string;
 };
 
-interface BreadcrumbProps {
+type BreadcrumbProps = {
   data: BreadcrumbsItem[];
-}
+  clickHandler: (title: string) => void;
+};
 
-export const Breadcrumb = ({ data }: BreadcrumbProps) => {
+export const Breadcrumb = ({ data, clickHandler }: BreadcrumbProps) => {
   return (
     <Breadcrumbs
       size="small"
@@ -32,6 +33,12 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
           overrides={{
             stylePreset: 'breadcrumbStyle',
             typographyPreset: 'breadcrumbText'
+          }}
+          onClick={e => {
+            e.preventDefault();
+            if (breadcrumbIndex + 1 !== breadcrumbArr.length) {
+              clickHandler(breadcrumbItem.title);
+            }
           }}
         >
           {breadcrumbItem.title}
