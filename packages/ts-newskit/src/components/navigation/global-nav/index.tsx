@@ -23,14 +23,6 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
     fireEvent(getTopNavClickEvent(title, section));
   };
 
-  const hamburgerClickHandler = (title: string) => {
-    onClickTopNavigation(title, HAMBURGER_MENU);
-  };
-
-  const globalNavClickHandler = (title: string) => {
-    onClickTopNavigation(title, GLOBAL_NAVIGATION);
-  };
-
   return (
     <>
       <TopNav
@@ -40,7 +32,9 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}
         toggleHamburger={setHamburgerActive}
-        clickHandler={globalNavClickHandler}
+        clickHandler={(title: string) =>
+          onClickTopNavigation(title, GLOBAL_NAVIGATION)
+        }
       />
       <HamburgerMenuContainer
         isLoggedIn={isLoggedIn}
@@ -49,7 +43,12 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
         closePosition="none"
         overrides={{ panel: { size: { xs: '100%', md: '322px' } } }}
       >
-        <HamburgerMenu {...{ isLoggedIn, data, hamburgerClickHandler }} />
+        <HamburgerMenu
+          {...{ isLoggedIn, data }}
+          hamburgerClickHandler={(title: string) =>
+            onClickTopNavigation(title, HAMBURGER_MENU)
+          }
+        />
       </HamburgerMenuContainer>
     </>
   );
@@ -67,14 +66,6 @@ export const GlobalNavWithCustomDrawer = ({
     fireEvent(getTopNavClickEvent(title, section));
   };
 
-  const hamburgerClickHandler = (title: string) => {
-    onClickTopNavigation(title, HAMBURGER_MENU);
-  };
-
-  const globalNavClickHandler = (title: string) => {
-    onClickTopNavigation(title, GLOBAL_NAVIGATION);
-  };
-
   return (
     <>
       <TopNav
@@ -84,14 +75,19 @@ export const GlobalNavWithCustomDrawer = ({
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}
         toggleHamburger={setHamburgerActive}
-        clickHandler={globalNavClickHandler}
+        clickHandler={title => onClickTopNavigation(title, GLOBAL_NAVIGATION)}
       />
       <CustomHamburgerMenuContainer
         setHamburgerActive={setHamburgerActive}
         hamburgerActive={hamburgerActive}
         isLoggedIn={isLoggedIn}
       >
-        <HamburgerMenu {...{ isLoggedIn, data, hamburgerClickHandler }} />
+        <HamburgerMenu
+          {...{ isLoggedIn, data }}
+          hamburgerClickHandler={title =>
+            onClickTopNavigation(title, HAMBURGER_MENU)
+          }
+        />
       </CustomHamburgerMenuContainer>
     </>
   );
