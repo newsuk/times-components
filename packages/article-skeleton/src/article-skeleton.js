@@ -95,33 +95,39 @@ const ArticleSkeleton = ({
   const handleScroll = () => {
     const sidebarNode = sidebarRef.current;
     if (sidebarNode) {
-      const adElement = document.querySelector(
-        ".responsive__InlineAdWrapper-sc-4v1r4q-17"
+      const adElements = document.querySelectorAll(
+        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4"
       );
-      const fullWidthImgElement = document.querySelector(
-        ".responsive__FullWidthImg-sc-4v1r4q-4"
+      const relatedArticlesElement = document.getElementById(
+        "related-articles"
       );
 
-      let isAdIntersecting = false;
-      let isFullWidthImgIntersecting = false;
+      let isAnyAdIntersecting = false;
+      let isRelatedArticlesIntersecting = false;
 
-      if (adElement) {
-        const adRect = adElement.getBoundingClientRect();
-        isAdIntersecting =
-          adRect.top <= sidebarNode.getBoundingClientRect().bottom &&
-          adRect.bottom >= sidebarNode.getBoundingClientRect().top;
+      adElements.forEach(adElement => {
+        if (adElement) {
+          const adRect = adElement.getBoundingClientRect();
+          const isAdIntersecting =
+            adRect.top <= sidebarNode.getBoundingClientRect().bottom &&
+            adRect.bottom >= sidebarNode.getBoundingClientRect().top;
+
+          if (isAdIntersecting) {
+            isAnyAdIntersecting = true;
+          }
+        }
+      });
+
+      if (relatedArticlesElement) {
+        const relatedArticlesRect = relatedArticlesElement.getBoundingClientRect();
+        isRelatedArticlesIntersecting =
+          relatedArticlesRect.top <= window.innerHeight &&
+          relatedArticlesRect.bottom >= 0;
       }
 
-      if (fullWidthImgElement) {
-        const fullWidthImgRect = fullWidthImgElement.getBoundingClientRect();
-        isFullWidthImgIntersecting =
-          fullWidthImgRect.top <= window.innerHeight &&
-          fullWidthImgRect.bottom >= 0;
-      }
+      sidebarNode.style.transition = "opacity 0.5s ease";
 
-      sidebarNode.style.transition = "opacity 0.5s ease"; // Set transition property
-
-      if (isAdIntersecting || isFullWidthImgIntersecting) {
+      if (isAnyAdIntersecting || isRelatedArticlesIntersecting) {
         sidebarNode.style.opacity = "0";
       } else {
         sidebarNode.style.opacity = "1";
