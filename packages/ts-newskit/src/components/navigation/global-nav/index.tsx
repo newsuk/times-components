@@ -4,9 +4,10 @@ import { HamburgerMenu } from './hamburger-menu/HamburgerMenu';
 import { NavigationData } from './types';
 import { CustomHamburgerMenuContainer } from './HamburgerMenuContainer';
 import { HamburgerMenuContainer } from './styles';
-import { Drawer, useInstrumentation } from 'newskit';
+import { Drawer, useInstrumentation, NewsKitProvider } from 'newskit';
 import { HAMBURGER_MENU, GLOBAL_NAVIGATION } from '../constants';
 import { getTopNavClickEvent } from '../analytics/ga-event';
+import { TimesWebLightTheme } from '../../../theme';
 
 interface GlobalNavProps {
   isLoggedIn?: boolean;
@@ -76,7 +77,7 @@ export const GlobalNavWithCustomDrawer = ({
   };
 
   return (
-    <>
+    <NewsKitProvider theme={TimesWebLightTheme}>
       <TopNav
         isLoggedIn={isLoggedIn}
         isSunday={isSunday}
@@ -93,7 +94,7 @@ export const GlobalNavWithCustomDrawer = ({
       >
         <HamburgerMenu {...{ isLoggedIn, data, hamburgerClickHandler }} />
       </CustomHamburgerMenuContainer>
-    </>
+    </NewsKitProvider>
   );
 };
 
