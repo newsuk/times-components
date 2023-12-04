@@ -62,3 +62,29 @@ export const UpdateButtonContainer = styled.div`
     bottom: 120px;
   }
 `;
+
+export const SidebarWarpper = styled.div`
+  position: sticky;
+  top: 40px;
+  display: none;
+
+  @media (min-width: ${breakpoints.wide}px) {
+    display: block;
+  }
+`;
+
+export const PuzzlesSidebar = styled.div`
+  position: absolute;
+  padding-left: ${spacing(4)};
+  right: 0;
+  z-index: 1;
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 19.8333%;
+    padding-right: ${spacing(8)};
+  }
+  @media (min-width: ${breakpoints.huge}px) {
+    width: 18.8333%;
+    padding-right: ${spacing(10)};
+  }
+`;

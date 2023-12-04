@@ -149,6 +149,52 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           </div>
         </div>
         <div>
+          <figure>
+            <div>
+              <div>
+                <div>
+                  <img
+                    alt="Some Caption"
+                    fetchpriority="high"
+                    src="https://crop169.io?resize=360"
+                    srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
+                  />
+                </div>
+              </div>
+            </div>
+            <figcaption>
+              <CenteredCaption
+                credits="Some Credits"
+                text="Some Caption"
+              />
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline=""
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
           <div>
             <div>
               <div>
@@ -321,50 +367,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             <hr
               aria-hidden={true}
             />
-          </div>
-        </div>
-        <div>
-          <figure>
-            <div>
-              <div>
-                <div>
-                  <img
-                    alt="Some Caption"
-                    fetchpriority="high"
-                    src="https://crop169.io?resize=360"
-                    srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
-                  />
-                </div>
-              </div>
-            </div>
-            <figcaption>
-              <CenteredCaption
-                credits="Some Credits"
-                text="Some Caption"
-              />
-            </figcaption>
-          </figure>
-        </div>
-        <div>
-          <div
-            data-tc-sticky-placeholder={true}
-          />
-          <div
-            data-tc-sticky-container={true}
-          >
-            <div>
-              <div
-                data-tc-sticky-sizer={true}
-              >
-                <SaveAndShareBar
-                  articleHeadline=""
-                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                  articleUrl="https://url.io"
-                  savingEnabled={true}
-                  sharingEnabled={true}
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -612,6 +614,52 @@ exports[`4. an article with ads 1`] = `
           </div>
         </div>
         <div>
+          <figure>
+            <div>
+              <div>
+                <div>
+                  <img
+                    alt="Some Caption"
+                    fetchpriority="high"
+                    src="https://crop169.io?resize=360"
+                    srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
+                  />
+                </div>
+              </div>
+            </div>
+            <figcaption>
+              <CenteredCaption
+                credits="Some Credits"
+                text="Some Caption"
+              />
+            </figcaption>
+          </figure>
+        </div>
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
           <div>
             <div>
               <div>
@@ -784,50 +832,6 @@ exports[`4. an article with ads 1`] = `
             <hr
               aria-hidden={true}
             />
-          </div>
-        </div>
-        <div>
-          <figure>
-            <div>
-              <div>
-                <div>
-                  <img
-                    alt="Some Caption"
-                    fetchpriority="high"
-                    src="https://crop169.io?resize=360"
-                    srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
-                  />
-                </div>
-              </div>
-            </div>
-            <figcaption>
-              <CenteredCaption
-                credits="Some Credits"
-                text="Some Caption"
-              />
-            </figcaption>
-          </figure>
-        </div>
-        <div>
-          <div
-            data-tc-sticky-placeholder={true}
-          />
-          <div
-            data-tc-sticky-container={true}
-          >
-            <div>
-              <div
-                data-tc-sticky-sizer={true}
-              >
-                <SaveAndShareBar
-                  articleHeadline="Some Headline"
-                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                  articleUrl="https://url.io"
-                  savingEnabled={true}
-                  sharingEnabled={true}
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>

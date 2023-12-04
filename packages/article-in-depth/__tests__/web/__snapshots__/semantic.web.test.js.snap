@@ -80,6 +80,125 @@ exports[`1. a full article 1`] = `
     >
       Some Standfirst
     </h2>
+    <figure>
+      <img
+        alt="Some Caption"
+        fetchpriority="high"
+        src="https://crop169.io?resize=360"
+        srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
+      />
+      <figcaption>
+        Some Caption
+      </figcaption>
+    </figure>
+    Some byline
+    <time
+      dateTime="2015-03-13T18:54:58.000Z"
+    >
+      Friday March 13 2015, 6.54pm
+      , 
+    </time>
+    <span>
+      The Times
+    </span>
+    Share
+    <a
+      href=""
+      target={null}
+    >
+      <svg
+        aria-label="icon-email"
+        height={16}
+        role="img"
+        title="Share by email"
+        viewBox="0 0 22 16"
+        width={22}
+      >
+        <title>
+          Share by email
+        </title>
+        <g>
+          <path
+            d="7662b27a9a5411e756afc5097a4eb94d"
+          />
+        </g>
+      </svg>
+    </a>
+    <a
+      href="https://twitter.com/intent/tweet?text=https://url.io"
+      target="_blank"
+    >
+      <svg
+        aria-label="icon-twitter"
+        height={16}
+        role="img"
+        title="Share on Twitter"
+        viewBox="0 0 24 24"
+        width={20}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Share on Twitter
+        </title>
+        <g
+          clipPath="url(#clip0_2702_211136)"
+        >
+          <path
+            d="e7781feea17d63d57f67e7eaa876efac"
+          />
+        </g>
+        <defs>
+          <clipPath>
+            <rect
+              height="24"
+              width="24"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
+      target="_blank"
+    >
+      <svg
+        aria-label="icon-facebook"
+        height={18}
+        role="img"
+        title="Share on Facebook"
+        viewBox="14 10 10.592460632324219 20.397258758544922"
+        width={9}
+      >
+        <title>
+          Share on Facebook
+        </title>
+        <g>
+          <path
+            d="8f9b8bbdce60b96352628d3dbf6e37a0"
+          />
+        </g>
+      </svg>
+    </a>
+    <a
+      href=""
+      target={null}
+    >
+      <svg
+        aria-label="icon-copy-link"
+        height={16}
+        role="img"
+        title="Copy link to clipboard"
+        viewBox="0 0 15 15"
+        width={15}
+      >
+        <title>
+          Copy link to clipboard
+        </title>
+        <path
+          d="f65af77b7574644b0c2e60934732135f"
+        />
+      </svg>
+    </a>
     <a
       href="https://www.thetimes.co.uk/puzzles"
     >
@@ -209,125 +328,6 @@ exports[`1. a full article 1`] = `
       aria-hidden={true}
       data-testid="divider"
     />
-    <figure>
-      <img
-        alt="Some Caption"
-        fetchpriority="high"
-        src="https://crop169.io?resize=360"
-        srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
-      />
-      <figcaption>
-        Some Caption
-      </figcaption>
-    </figure>
-    Some byline
-    <time
-      dateTime="2015-03-13T18:54:58.000Z"
-    >
-      Friday March 13 2015, 6.54pm
-      , 
-    </time>
-    <span>
-      The Times
-    </span>
-    Share
-    <a
-      href=""
-      target={null}
-    >
-      <svg
-        aria-label="icon-email"
-        height={16}
-        role="img"
-        title="Share by email"
-        viewBox="0 0 22 16"
-        width={22}
-      >
-        <title>
-          Share by email
-        </title>
-        <g>
-          <path
-            d="7662b27a9a5411e756afc5097a4eb94d"
-          />
-        </g>
-      </svg>
-    </a>
-    <a
-      href="https://twitter.com/intent/tweet?text=https://url.io"
-      target="_blank"
-    >
-      <svg
-        aria-label="icon-twitter"
-        height={16}
-        role="img"
-        title="Share on Twitter"
-        viewBox="0 0 24 24"
-        width={20}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          Share on Twitter
-        </title>
-        <g
-          clipPath="url(#clip0_2702_211136)"
-        >
-          <path
-            d="e7781feea17d63d57f67e7eaa876efac"
-          />
-        </g>
-        <defs>
-          <clipPath>
-            <rect
-              height="24"
-              width="24"
-            />
-          </clipPath>
-        </defs>
-      </svg>
-    </a>
-    <a
-      href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
-      target="_blank"
-    >
-      <svg
-        aria-label="icon-facebook"
-        height={18}
-        role="img"
-        title="Share on Facebook"
-        viewBox="14 10 10.592460632324219 20.397258758544922"
-        width={9}
-      >
-        <title>
-          Share on Facebook
-        </title>
-        <g>
-          <path
-            d="8f9b8bbdce60b96352628d3dbf6e37a0"
-          />
-        </g>
-      </svg>
-    </a>
-    <a
-      href=""
-      target={null}
-    >
-      <svg
-        aria-label="icon-copy-link"
-        height={16}
-        role="img"
-        title="Copy link to clipboard"
-        viewBox="0 0 15 15"
-        width={15}
-      >
-        <title>
-          Copy link to clipboard
-        </title>
-        <path
-          d="f65af77b7574644b0c2e60934732135f"
-        />
-      </svg>
-    </a>
     <article>
       <img
         alt="An image caption"

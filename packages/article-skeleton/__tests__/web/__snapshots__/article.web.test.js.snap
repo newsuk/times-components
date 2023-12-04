@@ -62,6 +62,183 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           suppressHydrationWarning={true}
         />
       </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
+      </div>
       <article>
         <div
           dangerouslySetInnerHTML={
@@ -534,6 +711,183 @@ exports[`2. an article with interactives 1`] = `
           suppressHydrationWarning={true}
         />
       </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
+      </div>
       <article>
         <div
           dangerouslySetInnerHTML={
@@ -749,6 +1103,183 @@ exports[`3. an article with no content 1`] = `
           suppressHydrationWarning={true}
         />
       </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
+      </div>
       <article>
         <div
           dangerouslySetInnerHTML={
@@ -920,6 +1451,183 @@ exports[`4. an article with no content if content is set as null 1`] = `
           }
           suppressHydrationWarning={true}
         />
+      </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
       </div>
       <article>
         <div
@@ -1093,6 +1801,183 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
           suppressHydrationWarning={true}
         />
       </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
+      </div>
       <article>
         <div
           dangerouslySetInnerHTML={
@@ -1241,6 +2126,183 @@ exports[`6. an article with heading tags 1`] = `
           }
           suppressHydrationWarning={true}
         />
+      </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
       </div>
       <article>
         <div
@@ -1432,6 +2494,183 @@ exports[`7. an article with link 1`] = `
           }
           suppressHydrationWarning={true}
         />
+      </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
       </div>
       <article>
         <div
@@ -1626,6 +2865,183 @@ exports[`8. an article with italic link 1`] = `
           }
           suppressHydrationWarning={true}
         />
+      </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
       </div>
       <article>
         <div
@@ -1824,6 +3240,183 @@ exports[`9. an article with bold text followed by bold link 1`] = `
           suppressHydrationWarning={true}
         />
       </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
+      </div>
       <article>
         <div
           dangerouslySetInnerHTML={
@@ -2019,6 +3612,183 @@ exports[`10. an article with italic and normal text link 1`] = `
           }
           suppressHydrationWarning={true}
         />
+      </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
       </div>
       <article>
         <div
@@ -2218,6 +3988,183 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
           suppressHydrationWarning={true}
         />
       </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
+      </div>
       <article>
         <div
           dangerouslySetInnerHTML={
@@ -2410,6 +4357,183 @@ exports[`12. an article with text wrapped in inline element 1`] = `
           suppressHydrationWarning={true}
         />
       </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
+      </div>
       <article>
         <div
           dangerouslySetInnerHTML={
@@ -2599,6 +4723,183 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
           }
           suppressHydrationWarning={true}
         />
+      </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
       </div>
       <article>
         <div
@@ -2790,6 +5091,183 @@ exports[`14. an article with inline inside a bold tag 1`] = `
           }
           suppressHydrationWarning={true}
         />
+      </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
       </div>
       <article>
         <div
@@ -2983,6 +5461,183 @@ exports[`15. an article starting with single quote 1`] = `
           suppressHydrationWarning={true}
         />
       </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
+      </div>
       <article>
         <div
           dangerouslySetInnerHTML={
@@ -3173,6 +5828,183 @@ exports[`16. an article starting with double quote 1`] = `
           }
           suppressHydrationWarning={true}
         />
+      </div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <div>
+                  <a
+                    href="https://www.thetimes.co.uk/puzzles"
+                  >
+                    <span />
+                  </a>
+                  <div>
+                    <h3>
+                      Puzzles
+                    </h3>
+                    <button
+                      size="small"
+                      type="button"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        fill="currentcolor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        />
+                        <path
+                          d="m12 8-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+                          fill="currentcolor"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p>
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/crossword"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+            <div>
+              <div>
+                <picture>
+                  <div>
+                    <div>
+                      <svg
+                        aria-hidden="true"
+                        fill="currentColor"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0 0h24v24H0V0z"
+                          fill="none"
+                        />
+                        <path
+                          d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    alt="Puzzle thumbnail"
+                    src="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                    width="40px"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://www.thetimes.co.uk/puzzles/sudoku"
+              >
+                <span />
+              </a>
+              <div>
+                <p>
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              aria-hidden={true}
+            />
+          </div>
+        </div>
       </div>
       <article>
         <div

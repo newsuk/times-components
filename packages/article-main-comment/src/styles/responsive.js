@@ -134,23 +134,3 @@ export const StandfirstContainer = styled.h2`
     margin-bottom: ${spacing(4)};
   }
 `;
-
-export const PuzzlesSidebar = styled.div`
-  padding-left: ${spacing(4)};
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  top: 100%;
-  display: none;
-
-  @media (min-width: ${breakpoints.wide}px) {
-    display: block;
-    width: 19.8333%;
-    padding-right: ${spacing(8)};
-  }
-  @media (min-width: ${breakpoints.huge}px) {
-    display: block;
-    width: 18.8333%;
-    padding-right: ${spacing(10)};
-  }
-`;

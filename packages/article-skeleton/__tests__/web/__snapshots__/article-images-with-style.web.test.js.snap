@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
-.c4 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -24,7 +24,7 @@ exports[`1. a primary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c5 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -38,11 +38,11 @@ exports[`1. a primary image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -54,7 +54,7 @@ exports[`1. a primary image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -83,17 +83,31 @@ exports[`1. a primary image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c5 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+  display: none;
+}
+
+.c4 {
+  position: absolute;
+  padding-left: 20px;
+  right: 0;
+  z-index: 1;
 }
 
 .c0 {
@@ -130,42 +144,42 @@ exports[`1. a primary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c6 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -174,6 +188,26 @@ exports[`1. a primary image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    display: block;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 19.8333%;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width:1320px) {
+  .c4 {
+    width: 18.8333%;
+    padding-right: 50px;
   }
 }
 
@@ -206,31 +240,233 @@ exports[`1. a primary image 1`] = `
       <div
         className="c2"
       />
-      <article
+      <div
         className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="css-s123ud"
+          >
+            <div
+              className="css-13byt3y"
+            >
+              <div
+                className="css-13byt3y"
+              >
+                <div
+                  className="css-1482yt8"
+                >
+                  <a
+                    className="css-xm00pa"
+                  >
+                    <span
+                      className="css-pqzzby"
+                    />
+                  </a>
+                  <div
+                    className="css-1bq9n3y"
+                  >
+                    <h3
+                      className="css-eqardm"
+                    >
+                      Puzzles
+                    </h3>
+                    <button
+                      className="css-1x6q5yj"
+                    >
+                      <svg
+                        className="css-3rbz36"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p
+                  className="css-4g5gt6"
+                >
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+          </div>
+        </div>
+      </div>
+      <article
+        className="c5"
       >
         <div>
           <div>
             <div
-              className="c4"
+              className="c6"
             >
               <ArticleImage />
             </div>
           </div>
         </div>
         <div
-          className="group-3 hidden c5"
+          className="group-3 hidden c7"
         >
           <h2
-            className="c6"
+            className="c8"
           >
             Sponsored
           </h2>
           <div
-            className="c7"
+            className="c9"
           />
           <div
-            className="c7"
+            className="c9"
           />
         </div>
         <div />
@@ -245,7 +481,7 @@ exports[`1. a primary image 1`] = `
 `;
 
 exports[`2. a fullwidth image 1`] = `
-.c4 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -264,7 +500,7 @@ exports[`2. a fullwidth image 1`] = `
   padding-bottom: 20px;
 }
 
-.c5 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -278,11 +514,11 @@ exports[`2. a fullwidth image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -294,7 +530,7 @@ exports[`2. a fullwidth image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -323,17 +559,31 @@ exports[`2. a fullwidth image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c5 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+  display: none;
+}
+
+.c4 {
+  position: absolute;
+  padding-left: 20px;
+  right: 0;
+  z-index: 1;
 }
 
 .c0 {
@@ -370,29 +620,29 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -401,6 +651,26 @@ exports[`2. a fullwidth image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    display: block;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 19.8333%;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width:1320px) {
+  .c4 {
+    width: 18.8333%;
+    padding-right: 50px;
   }
 }
 
@@ -433,31 +703,233 @@ exports[`2. a fullwidth image 1`] = `
       <div
         className="c2"
       />
-      <article
+      <div
         className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="css-s123ud"
+          >
+            <div
+              className="css-13byt3y"
+            >
+              <div
+                className="css-13byt3y"
+              >
+                <div
+                  className="css-1482yt8"
+                >
+                  <a
+                    className="css-xm00pa"
+                  >
+                    <span
+                      className="css-pqzzby"
+                    />
+                  </a>
+                  <div
+                    className="css-1bq9n3y"
+                  >
+                    <h3
+                      className="css-eqardm"
+                    >
+                      Puzzles
+                    </h3>
+                    <button
+                      className="css-1x6q5yj"
+                    >
+                      <svg
+                        className="css-3rbz36"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p
+                  className="css-4g5gt6"
+                >
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+          </div>
+        </div>
+      </div>
+      <article
+        className="c5"
       >
         <div>
           <div>
             <div
-              className="c4"
+              className="c6"
             >
               <ArticleImage />
             </div>
           </div>
         </div>
         <div
-          className="group-3 hidden c5"
+          className="group-3 hidden c7"
         >
           <h2
-            className="c6"
+            className="c8"
           >
             Sponsored
           </h2>
           <div
-            className="c7"
+            className="c9"
           />
           <div
-            className="c7"
+            className="c9"
           />
         </div>
         <div />
@@ -472,7 +944,7 @@ exports[`2. a fullwidth image 1`] = `
 `;
 
 exports[`3. a secondary image 1`] = `
-.c4 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -500,7 +972,7 @@ exports[`3. a secondary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c5 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -514,11 +986,11 @@ exports[`3. a secondary image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -530,7 +1002,7 @@ exports[`3. a secondary image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -559,17 +1031,31 @@ exports[`3. a secondary image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c5 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+  display: none;
+}
+
+.c4 {
+  position: absolute;
+  padding-left: 20px;
+  right: 0;
+  z-index: 1;
 }
 
 .c0 {
@@ -606,7 +1092,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -615,35 +1101,35 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c6 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -652,6 +1138,26 @@ exports[`3. a secondary image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    display: block;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 19.8333%;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width:1320px) {
+  .c4 {
+    width: 18.8333%;
+    padding-right: 50px;
   }
 }
 
@@ -684,31 +1190,233 @@ exports[`3. a secondary image 1`] = `
       <div
         className="c2"
       />
-      <article
+      <div
         className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="css-s123ud"
+          >
+            <div
+              className="css-13byt3y"
+            >
+              <div
+                className="css-13byt3y"
+              >
+                <div
+                  className="css-1482yt8"
+                >
+                  <a
+                    className="css-xm00pa"
+                  >
+                    <span
+                      className="css-pqzzby"
+                    />
+                  </a>
+                  <div
+                    className="css-1bq9n3y"
+                  >
+                    <h3
+                      className="css-eqardm"
+                    >
+                      Puzzles
+                    </h3>
+                    <button
+                      className="css-1x6q5yj"
+                    >
+                      <svg
+                        className="css-3rbz36"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p
+                  className="css-4g5gt6"
+                >
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+          </div>
+        </div>
+      </div>
+      <article
+        className="c5"
       >
         <div>
           <div>
             <div
-              className="c4"
+              className="c6"
             >
               <ArticleImage />
             </div>
           </div>
         </div>
         <div
-          className="group-3 hidden c5"
+          className="group-3 hidden c7"
         >
           <h2
-            className="c6"
+            className="c8"
           >
             Sponsored
           </h2>
           <div
-            className="c7"
+            className="c9"
           />
           <div
-            className="c7"
+            className="c9"
           />
         </div>
         <div />
@@ -723,7 +1431,7 @@ exports[`3. a secondary image 1`] = `
 `;
 
 exports[`4. an inline image 1`] = `
-.c4 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -752,7 +1460,7 @@ exports[`4. an inline image 1`] = `
   display: block;
 }
 
-.c5 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -766,11 +1474,11 @@ exports[`4. an inline image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -782,7 +1490,7 @@ exports[`4. an inline image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -811,17 +1519,31 @@ exports[`4. an inline image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c5 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 40px;
+  display: none;
+}
+
+.c4 {
+  position: absolute;
+  padding-left: 20px;
+  right: 0;
+  z-index: 1;
 }
 
 .c0 {
@@ -858,7 +1580,7 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -867,35 +1589,35 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c6 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -904,6 +1626,26 @@ exports[`4. an inline image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    display: block;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 19.8333%;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width:1320px) {
+  .c4 {
+    width: 18.8333%;
+    padding-right: 50px;
   }
 }
 
@@ -936,31 +1678,233 @@ exports[`4. an inline image 1`] = `
       <div
         className="c2"
       />
-      <article
+      <div
         className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="css-s123ud"
+          >
+            <div
+              className="css-13byt3y"
+            >
+              <div
+                className="css-13byt3y"
+              >
+                <div
+                  className="css-1482yt8"
+                >
+                  <a
+                    className="css-xm00pa"
+                  >
+                    <span
+                      className="css-pqzzby"
+                    />
+                  </a>
+                  <div
+                    className="css-1bq9n3y"
+                  >
+                    <h3
+                      className="css-eqardm"
+                    >
+                      Puzzles
+                    </h3>
+                    <button
+                      className="css-1x6q5yj"
+                    >
+                      <svg
+                        className="css-3rbz36"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <p
+                  className="css-4g5gt6"
+                >
+                  Challenge yourself with today’s puzzles.
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Crossword
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Polygon
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+            <div
+              className="css-y2vd7q"
+            >
+              <div
+                className="css-1kwj960"
+              >
+                <picture
+                  className="css-128l0kk"
+                >
+                  <div
+                    className="css-5pczz7"
+                  >
+                    <div
+                      className="css-1q2lbmy"
+                    >
+                      <svg
+                        className="css-2xpd25-EmotionIconBase ex0cdmw0"
+                      >
+                        <path />
+                        <path />
+                      </svg>
+                    </div>
+                  </div>
+                  <img
+                    className="css-1kdjcna"
+                  />
+                </picture>
+              </div>
+              <a
+                className="css-xm00pa"
+              >
+                <span
+                  className="css-pqzzby"
+                />
+              </a>
+              <div
+                className="css-btpi9y"
+              >
+                <p
+                  className="css-cj4mhx"
+                >
+                  Sudoku
+                </p>
+              </div>
+            </div>
+            <hr
+              className="css-1ft1o8k"
+            />
+          </div>
+        </div>
+      </div>
+      <article
+        className="c5"
       >
         <div>
           <div>
             <div
-              className="c4"
+              className="c6"
             >
               <ArticleImage />
             </div>
           </div>
         </div>
         <div
-          className="group-3 hidden c5"
+          className="group-3 hidden c7"
         >
           <h2
-            className="c6"
+            className="c8"
           >
             Sponsored
           </h2>
           <div
-            className="c7"
+            className="c9"
           />
           <div
-            className="c7"
+            className="c9"
           />
         </div>
         <div />
