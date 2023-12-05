@@ -16,6 +16,17 @@ describe('CardsContainer tests', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+  it('should render a snapshot without scroller and without dash divider', () => {
+    const { asFragment } = render(
+      <CardsContainer
+        cards={Array(8).fill(puzzleGame)}
+        title="Crosswords"
+        seeAllLink="https://newskit.co.uk/components"
+        isDashHidden={true}
+      />
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
   it('should render a snapshot with scroller', () => {
     const { asFragment } = render(
       <CardsContainer
