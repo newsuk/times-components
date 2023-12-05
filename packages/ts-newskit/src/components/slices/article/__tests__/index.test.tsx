@@ -75,7 +75,7 @@ describe('Render Article List Item', () => {
   });
 
   it('items should render without margin', () => {
-    (useBreakpointKey as any).mockReturnValue('xl');
+    (useBreakpointKey as jest.Mock).mockReturnValue('xl');
     const { asFragment } = renderComponent(
       {
         ...defaultProps,

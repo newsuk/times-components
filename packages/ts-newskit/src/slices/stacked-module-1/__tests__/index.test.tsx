@@ -22,28 +22,28 @@ const renderComponent = () =>
 
 describe('Render StackModule 1 Slice', () => {
   test('Slice matches snapshot', () => {
-    (useBreakpointKey as any).mockReturnValue('xl');
+    (useBreakpointKey as jest.Mock).mockReturnValue('xl');
 
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
   test('modifies articles correctly when breakpointKey is "md"', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
+    (useBreakpointKey as jest.Mock).mockReturnValue('md');
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
   test('modifies articles correctly when breakpointKey is "xs"', () => {
-    (useBreakpointKey as any).mockReturnValue('xs');
+    (useBreakpointKey as jest.Mock).mockReturnValue('xs');
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
   test('modifies articles correctly when breakpointKey is "sm"', () => {
-    (useBreakpointKey as any).mockReturnValue('sm');
+    (useBreakpointKey as jest.Mock).mockReturnValue('sm');
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
   test('Slice matches snapshot for `null` breakpoint value', () => {
-    (useBreakpointKey as any).mockReturnValue(null);
+    (useBreakpointKey as jest.Mock).mockReturnValue(null);
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
