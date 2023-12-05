@@ -4,16 +4,24 @@ import { HamburgerMenu } from './hamburger-menu/HamburgerMenu';
 import { NavigationData } from './types';
 import { CustomHamburgerMenuContainer } from './HamburgerMenuContainer';
 import { HamburgerMenuContainer } from './styles';
-import { Drawer } from 'newskit';
+import { Drawer, useInstrumentation } from 'newskit';
+import { HAMBURGER_MENU, GLOBAL_NAVIGATION } from '../constants';
+import { getTopNavClickEvent } from '../analytics/ga-event';
 
 interface GlobalNavProps {
   isLoggedIn?: boolean;
   isSunday?: boolean;
   data: NavigationData;
+  clickHandler: (title: string) => void;
 }
 
 export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
+  const { fireEvent } = useInstrumentation();
+
+  const onClickTopNavigation = (title: string, section: string) => {
+    fireEvent(getTopNavClickEvent(title, section));
+  };
 
   return (
     <>
@@ -24,6 +32,9 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}
         toggleHamburger={setHamburgerActive}
+        clickHandler={(title: string) =>
+          onClickTopNavigation(title, GLOBAL_NAVIGATION)
+        }
       />
       <HamburgerMenuContainer
         isLoggedIn={isLoggedIn}
@@ -32,7 +43,12 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
         closePosition="none"
         overrides={{ panel: { size: { xs: '100%', md: '322px' } } }}
       >
-        <HamburgerMenu {...{ isLoggedIn, data }} />
+        <HamburgerMenu
+          {...{ isLoggedIn, data }}
+          hamburgerClickHandler={(title: string) =>
+            onClickTopNavigation(title, HAMBURGER_MENU)
+          }
+        />
       </HamburgerMenuContainer>
     </>
   );
@@ -44,6 +60,12 @@ export const GlobalNavWithCustomDrawer = ({
   data
 }: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
+  const { fireEvent } = useInstrumentation();
+
+  const onClickTopNavigation = (title: string, section: string) => {
+    fireEvent(getTopNavClickEvent(title, section));
+  };
+
   return (
     <>
       <TopNav
@@ -53,13 +75,19 @@ export const GlobalNavWithCustomDrawer = ({
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}
         toggleHamburger={setHamburgerActive}
+        clickHandler={title => onClickTopNavigation(title, GLOBAL_NAVIGATION)}
       />
       <CustomHamburgerMenuContainer
         setHamburgerActive={setHamburgerActive}
         hamburgerActive={hamburgerActive}
         isLoggedIn={isLoggedIn}
       >
-        <HamburgerMenu {...{ isLoggedIn, data }} />
+        <HamburgerMenu
+          {...{ isLoggedIn, data }}
+          hamburgerClickHandler={title =>
+            onClickTopNavigation(title, HAMBURGER_MENU)
+          }
+        />
       </CustomHamburgerMenuContainer>
     </>
   );
