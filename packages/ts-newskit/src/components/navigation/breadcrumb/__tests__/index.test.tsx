@@ -1,5 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
+import { fireEvent } from '@testing-library/react';
 import { render } from '../../../../utils/test-utils';
 import { Breadcrumb } from '../index';
 import { breadcrumbItems } from '../fixtures/breadcrumbs.json';
@@ -36,5 +37,14 @@ describe('Render Breadcrumbs', () => {
     );
     const title = getAllByTestId('button')[0];
     expect(title).toHaveAttribute('aria-current', 'page');
+  });
+
+  it('calls clickHandler when you click', () => {
+    const { getByText } = render(
+      <Breadcrumb data={breadcrumbItems} clickHandler={mockClickHandler} />
+    );
+    const breadcrumb = getByText('Tennis');
+    fireEvent.click(breadcrumb);
+    expect(mockClickHandler).toHaveBeenCalledWith('Tennis');
   });
 });

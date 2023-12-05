@@ -34,11 +34,10 @@ export const Breadcrumb = ({ data, clickHandler }: BreadcrumbProps) => {
             stylePreset: 'breadcrumbStyle',
             typographyPreset: 'breadcrumbText'
           }}
-          onClick={() => {
-            if (breadcrumbIndex + 1 !== breadcrumbArr.length) {
-              clickHandler(breadcrumbItem.title);
-            }
-          }}
+          onClick={() =>
+            breadcrumbIndex + 1 !== breadcrumbArr.length &&
+            clickHandler(breadcrumbItem.title)
+          }
         >
           {breadcrumbItem.title}
         </BreadcrumbItem>
