@@ -1,9 +1,9 @@
 const path = require('path');
 const fs = require('fs');
 
-const buildConfig = dir => {
+const buildConfig = (dir) => {
   const { name: packageName } = JSON.parse(
-    fs.readFileSync(path.join(dir, 'package.json'), 'utf8')
+    fs.readFileSync(path.join(dir, 'package.json'), 'utf8'),
   );
   const name = packageName.replace('@times-components/', '');
   return {
@@ -15,16 +15,16 @@ const buildConfig = dir => {
     setupFiles: [],
     testMatch: [
       `**/packages/${name}/**/__tests__/*.test.tsx`,
-      `**/packages/${name}/**/__tests__/*.test.ts`
+      `**/packages/${name}/**/__tests__/*.test.ts`,
     ],
     transform: {
       '.+\\.js$': 'babel-jest',
-      '.+\\.tsx?$': 'ts-jest'
+      '.+\\.tsx?$': 'ts-jest',
     },
     globals: {
       'ts-jest': {
-        tsConfig: './tsconfig.jest.json'
-      }
+        tsConfig: './tsconfig.jest.json',
+      },
     },
     collectCoverage: true,
     coverageReporters: ['json', 'html', 'lcov', 'text'],
@@ -34,16 +34,16 @@ const buildConfig = dir => {
       '!<rootDir>/packages/ts-components/src/**/*.(stories|d).*',
       '!<rootDir>/packages/ts-components/src/index.*',
       '!<rootDir>/packages/ts-components/src/fixtures/**',
-      '!<rootDir>/node_modules/'
+      '!<rootDir>/node_modules/',
     ],
     coverageThreshold: {
       global: {
         statements: 96,
         branches: 83,
         lines: 96,
-        functions: 96
-      }
-    }
+        functions: 96,
+      },
+    },
   };
 };
 

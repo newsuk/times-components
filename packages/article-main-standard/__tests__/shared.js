@@ -6,7 +6,7 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 import { UserState } from "./mocks";
 import shared from "./shared.base";
@@ -19,7 +19,7 @@ const omitProps = new Set([
   "className",
   "data-testid",
   "responsiveLinkStyles",
-  "style",
+  "style"
 ]);
 
 export default () => {
@@ -29,8 +29,8 @@ export default () => {
     compose(
       print,
       minimalWebTransform,
-      minimaliseTransform((value, key) => omitProps.has(key)),
-    ),
+      minimaliseTransform((value, key) => omitProps.has(key))
+    )
   );
 
   beforeEach(() => {
@@ -44,7 +44,7 @@ export default () => {
         UserState.mockStates = [
           UserState.showSaveAndShareBar,
           UserState.showArticleExtras,
-          UserState.showTopicTags,
+          UserState.showTopicTags
         ];
 
         const output = TestRenderer.create(
@@ -61,11 +61,11 @@ export default () => {
             onTopicPress={() => {}}
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
-          />,
+          />
         );
 
         expect(output).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ]);
 };

@@ -1,28 +1,28 @@
 import React from "react";
 import {
   ArticleFlags,
-  UpdatedTimeProvider,
+  UpdatedTimeProvider
 } from "@times-components/ts-components";
 import { fontsWithFallback } from "@times-components/ts-styleguide";
 import Context from "@times-components/context";
 import {
   gqlRgbaToStyle,
   checkStylesForUnits,
-  TcView,
+  TcView
 } from "@times-components/utils";
 
 import Label from "../article-label/article-label";
 import Standfirst from "../article-standfirst/article-standfirst";
 import {
   articleHeaderPropTypes,
-  articleHeaderDefaultProps,
+  articleHeaderDefaultProps
 } from "./article-header-prop-types";
 import styles from "../styles";
 
 import {
   FlagsContainer,
   HeaderContainer,
-  HeadlineContainer,
+  HeadlineContainer
 } from "../styles/responsive";
 
 const ArticleHeader = ({
@@ -33,7 +33,7 @@ const ArticleHeader = ({
   label,
   standfirst,
   textColour: rgbTextColour,
-  updatedTime,
+  updatedTime
 }) => {
   const backgroundColour = gqlRgbaToStyle(rgbBackgroundColour);
   const textColour = gqlRgbaToStyle(rgbTextColour);
@@ -42,7 +42,7 @@ const ArticleHeader = ({
       ...styles.articleHeadline,
       color: textColour,
       fontFamily: headlineFont ? fontsWithFallback[headlineFont] : null,
-      textTransform: headlineCase || null,
+      textTransform: headlineCase || null
     });
 
   return (

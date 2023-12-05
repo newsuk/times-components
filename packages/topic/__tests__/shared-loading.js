@@ -3,7 +3,7 @@ import {
   compose,
   minimalWebTransform,
   print,
-  replacePropTransform,
+  replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import shared from "./shared-loading.base";
@@ -16,9 +16,9 @@ export default () => {
       print,
       minimalWebTransform,
       replacePropTransform((value, key) =>
-        key === "emptyStateMessage" ? hash(value) : value,
-      ),
-    ),
+        key === "emptyStateMessage" ? hash(value) : value
+      )
+    )
   );
 
   const props = {
@@ -27,7 +27,7 @@ export default () => {
     onPrev() {},
     refetch() {},
     slug: "some-slug",
-    topic,
+    topic
   };
 
   shared(props);

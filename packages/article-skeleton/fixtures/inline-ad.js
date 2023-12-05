@@ -1,22 +1,22 @@
 const contentWithOutAd = [
   {
     name: "paragraph",
-    children: [],
+    children: []
   },
   {
     name: "paragraph",
-    children: [],
+    children: []
   },
   {
     name: "paywall",
     children: [
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "image",
@@ -29,29 +29,29 @@ const contentWithOutAd = [
           relativeHorizontalOffset: 0.19904240766073872,
           relativeVerticalOffset: 0.18278100444140757,
           relativeWidth: 0.5636114911080712,
-          relativeHeight: 0.5630338230269901,
+          relativeHeight: 0.5630338230269901
         },
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "ad",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "image",
@@ -64,66 +64,66 @@ const contentWithOutAd = [
           relativeHorizontalOffset: 0.19904240766073872,
           relativeVerticalOffset: 0.18278100444140757,
           relativeWidth: 0.5636114911080712,
-          relativeHeight: 0.5630338230269901,
+          relativeHeight: 0.5630338230269901
         },
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         // 13th para
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
-      },
-    ],
-  },
+        children: []
+      }
+    ]
+  }
 ];
 
 const contentWithAd = [
   {
     name: "paragraph",
-    children: [],
+    children: []
   },
   {
     name: "paragraph",
-    children: [],
+    children: []
   },
   {
     name: "paywall",
     children: [
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "image",
@@ -136,29 +136,29 @@ const contentWithAd = [
           relativeHorizontalOffset: 0.19904240766073872,
           relativeVerticalOffset: 0.18278100444140757,
           relativeWidth: 0.5636114911080712,
-          relativeHeight: 0.5630338230269901,
+          relativeHeight: 0.5630338230269901
         },
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "ad",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "image",
@@ -171,70 +171,70 @@ const contentWithAd = [
           relativeHorizontalOffset: 0.19904240766073872,
           relativeVerticalOffset: 0.18278100444140757,
           relativeWidth: 0.5636114911080712,
-          relativeHeight: 0.5630338230269901,
+          relativeHeight: 0.5630338230269901
         },
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         // 13th para
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "inlineAd1",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
-      },
-    ],
-  },
+        children: []
+      }
+    ]
+  }
 ];
 
 const contentWithLessParagraphs = [
   {
     name: "paragraph",
-    children: [],
+    children: []
   },
   {
     name: "paragraph",
-    children: [],
+    children: []
   },
   {
     name: "paywall",
     children: [
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "image",
@@ -247,36 +247,36 @@ const contentWithLessParagraphs = [
           relativeHorizontalOffset: 0.19904240766073872,
           relativeVerticalOffset: 0.18278100444140757,
           relativeWidth: 0.5636114911080712,
-          relativeHeight: 0.5630338230269901,
+          relativeHeight: 0.5630338230269901
         },
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
+        children: []
       },
       {
         name: "ad",
-        children: [],
+        children: []
       },
       {
         name: "paragraph",
-        children: [],
-      },
-    ],
-  },
+        children: []
+      }
+    ]
+  }
 ];
 
 export default {
   contentWithOutAd,
   contentWithAd,
-  contentWithLessParagraphs,
+  contentWithLessParagraphs
 };

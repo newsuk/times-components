@@ -6,7 +6,7 @@ function mockUserState() {
     ).default;
 
     function MockUserState({ state, children = null, fallback = null }) {
-      return MockUserState.mockStates.find((s) => s === state)
+      return MockUserState.mockStates.find(s => s === state)
         ? children
         : fallback;
     }

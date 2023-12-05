@@ -1,6 +1,6 @@
 /* global fetch window */
 
-export const userShouldUpdateName = async (username) => {
+export const userShouldUpdateName = async username => {
   if (!username) {
     return false;
   }
@@ -8,8 +8,8 @@ export const userShouldUpdateName = async (username) => {
   const url = `/api/comments/display-names-pseudonyms?username=${username}`;
 
   const checkUsername = fetch(url)
-    .then((response) => response.json())
-    .then((data) => data);
+    .then(response => response.json())
+    .then(data => data);
 
   const { isPseudonym } = await checkUsername;
 
@@ -33,12 +33,12 @@ export const getDisplayNameFromLocalStorage = () => {
   return displayName || false;
 };
 
-const parseCookie = (cookie) =>
+const parseCookie = cookie =>
   cookie.split("&").reduce((acc, param) => {
     const [key, value] = param.split("=");
     acc[key] = value;
     return acc;
   }, {});
 
-export const getCpnId = (cookie) =>
+export const getCpnId = cookie =>
   cookie ? parseCookie(cookie).eid : undefined;

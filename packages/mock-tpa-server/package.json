@@ -35,7 +35,7 @@
     "eslint": "5.9.0",
     "eslint-plugin-graphql": "2.1.1",
     "jest": "24.8.0",
-    "prettier": "1.14.3"
+    "prettier": "3.1.0"
   },
   "dependencies": {
     "@times-components/provider-test-tools": "1.29.1",

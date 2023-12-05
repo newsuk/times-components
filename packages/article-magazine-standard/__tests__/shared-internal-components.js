@@ -5,7 +5,7 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 import "./mocks";
 import shared from "./shared-internal-components.base";
@@ -14,7 +14,7 @@ const omitProps = new Set([
   "className",
   "data-testid",
   "responsiveLinkStyles",
-  "style",
+  "style"
 ]);
 
 export default () => {
@@ -24,8 +24,8 @@ export default () => {
     compose(
       print,
       minimalWebTransform,
-      minimaliseTransform((value, key) => omitProps.has(key)),
-    ),
+      minimaliseTransform((value, key) => omitProps.has(key))
+    )
   );
 
   shared(TestRenderer.create);

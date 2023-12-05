@@ -2,7 +2,7 @@ import hyphenateStyleName from "hyphenate-style-name";
 import traverse from "./traverse";
 import { stylePrinter } from "./printers";
 
-const hyphenateStyles = (styles) =>
+const hyphenateStyles = styles =>
   Object.entries(styles).reduce(
     (acc, [property, value]) => ({
       ...acc,

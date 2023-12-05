@@ -6,7 +6,7 @@ import {
   minimalWebTransform,
   flattenStyleTransform,
   hoistStyleTransform,
-  stylePrinter,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import shared, { props } from "./shared.base";
@@ -19,8 +19,8 @@ addSerializers(
     stylePrinter,
     minimalWebTransform,
     flattenStyleTransform,
-    hoistStyleTransform,
-  ),
+    hoistStyleTransform
+  )
 );
 export default () =>
   iterator([
@@ -34,20 +34,20 @@ export default () =>
             displayImage={null}
             leadAsset={{}}
             width={600}
-          />,
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "it renders correctly with a className",
       test() {
         const testInstance = TestRenderer.create(
-          <ArticleLeadAsset {...props} className="test-class-name" />,
+          <ArticleLeadAsset {...props} className="test-class-name" />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ]);

@@ -7,7 +7,7 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 import { ApolloError } from "apollo-client";
 import "./mocks";
@@ -19,7 +19,7 @@ const omitProps = new Set([
   ...omitWeb,
   "bylineProps",
   "datePublicationProps",
-  "labelProps",
+  "labelProps"
 ]);
 
 export default () => {
@@ -29,9 +29,9 @@ export default () => {
       print,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => omitProps.has(key) || key.includes("Class"),
-      ),
-    ),
+        (value, key) => omitProps.has(key) || key.includes("Class")
+      )
+    )
   );
 
   const tests = [
@@ -45,11 +45,11 @@ export default () => {
             emptyStateMessage="Empty State"
             error={apolloError}
             refetch={() => {}}
-          />,
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "an error view with header",
@@ -62,11 +62,11 @@ export default () => {
             emptyStateMessage="Empty State"
             error={apolloError}
             refetch={() => {}}
-          />,
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "an empty list",
@@ -77,11 +77,11 @@ export default () => {
             articles={[]}
             emptyStateMessage="Empty state"
             refetch={() => {}}
-          />,
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "loading state",
@@ -93,12 +93,12 @@ export default () => {
             emptyStateMessage="Empty state"
             pageSize={3}
             refetch={() => {}}
-          />,
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

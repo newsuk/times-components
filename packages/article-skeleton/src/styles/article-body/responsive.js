@@ -5,7 +5,7 @@ import {
   colours,
   fontsWithFallback,
   fontSizes,
-  spacing,
+  spacing
 } from "@times-components/ts-styleguide";
 
 /* --- Body --- */
@@ -44,7 +44,7 @@ export const Paragraph = styled.p`
 export const InteractiveContainer = styled.div`
   margin-bottom: ${spacing(4)};
 
-  ${(props) =>
+  ${props =>
     props.fullWidth
       ? css`
           width: 100%;

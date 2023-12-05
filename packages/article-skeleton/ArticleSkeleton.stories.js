@@ -27,24 +27,24 @@ const articles = [
   article3,
   article4,
   article5,
-  article6,
-].map((article) => article.data.article);
+  article6
+].map(article => article.data.article);
 
 const articleHeadlines = articles.reduce(
   (result, { shortHeadline }, index) => ({ ...result, [shortHeadline]: index }),
-  {},
+  {}
 );
 
 const commentingConfig = {
-  account: "sp_pCQgrRiN",
+  account: "sp_pCQgrRiN"
 };
 
-const preventDefaultedAction = (action) =>
+const preventDefaultedAction = action =>
   action([
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    },
+    }
   ]);
 
 storiesOf("Composed/Article Skeleton", module).add("Article Selection", () => {
@@ -53,7 +53,7 @@ storiesOf("Composed/Article Skeleton", module).add("Article Selection", () => {
     "Section",
     pick(colours.section, sections),
     colours.section.default,
-    "User State",
+    "User State"
   );
 
   const article = select("Article", articleHeadlines, 0, "User State");
@@ -67,8 +67,8 @@ storiesOf("Composed/Article Skeleton", module).add("Article Selection", () => {
           component: "ArticleSkeleton",
           attrs: {
             article_name: "Headline",
-            section_details: "Section",
-          },
+            section_details: "Section"
+          }
         }}
       >
         <MockBookmarksProvider otherMocks={[]} delay={1000} articleId={data.id}>
@@ -82,28 +82,28 @@ storiesOf("Composed/Article Skeleton", module).add("Article Selection", () => {
               data={data}
               isPreview={false}
               onAuthorPress={preventDefaultedAction(decorateAction)(
-                "onAuthorPress",
+                "onAuthorPress"
               )}
               onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-                "onCommentGuidelinesPress",
+                "onCommentGuidelinesPress"
               )}
               onCommentsPress={preventDefaultedAction(decorateAction)(
-                "onCommentsPress",
+                "onCommentsPress"
               )}
               onLinkPress={preventDefaultedAction(decorateAction)(
-                "onLinkPress",
+                "onLinkPress"
               )}
               onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-                "onRelatedArticlePress",
+                "onRelatedArticlePress"
               )}
               onTopicPress={preventDefaultedAction(decorateAction)(
-                "onTopicPress",
+                "onTopicPress"
               )}
               onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-                "onTwitterLinkPress",
+                "onTwitterLinkPress"
               )}
               onVideoPress={preventDefaultedAction(decorateAction)(
-                "onVideoPress",
+                "onVideoPress"
               )}
               onViewableItemsChanged={() => null}
             />

@@ -10,7 +10,7 @@ const AuthorArticlesNoImagesProvider = connectGraphql(
   authorArticlesNoImagesPTV
 );
 
-export default (props) => (
+export default props => (
   <AuthorArticlesNoImagesProvider
     {...props}
     longSummaryLength={360}

@@ -17,7 +17,7 @@ const defaultUserState = {
   isRegisteredUser: false
 };
 
-const hasAccessLoggedInOrSharedUser = (func) => {
+const hasAccessLoggedInOrSharedUser = func => {
   it("should return true if hasAccess and isLoggedIn", () => {
     const userState = {
       ...defaultUserState,
@@ -47,7 +47,7 @@ const hasAccessLoggedInOrSharedUser = (func) => {
   });
 };
 
-const hasAccessLoggedInUser = (func) => {
+const hasAccessLoggedInUser = func => {
   it("should return true if hasAccess and isLoggedIn", () => {
     const userState = {
       ...defaultUserState,
@@ -68,7 +68,7 @@ const hasAccessLoggedInUser = (func) => {
   });
 };
 
-const hasAccessLoggedInNonMeteredUser = (func) => {
+const hasAccessLoggedInNonMeteredUser = func => {
   it("should return true if hasAccess and isLoggedIn", () => {
     const userState = {
       ...defaultUserState,
@@ -119,7 +119,7 @@ const hasAccessLoggedInNonMeteredUser = (func) => {
   });
 };
 
-const hasAccessLoggedInMeteredUser = (func) => {
+const hasAccessLoggedInMeteredUser = func => {
   it("should return true if hasAccess, isLoggedIn and isMetered", () => {
     const userState = {
       ...defaultUserState,

@@ -15,11 +15,11 @@ const ArticleSummaryStrapline = ({ strapline, style }) => (
 
 ArticleSummaryStrapline.propTypes = {
   strapline: PropTypes.string.isRequired,
-  style: {},
+  style: {}
 };
 
 ArticleSummaryStrapline.defaultProps = {
-  style: {},
+  style: {}
 };
 
 export default ArticleSummaryStrapline;

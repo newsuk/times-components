@@ -11,7 +11,7 @@ export const justChildren = (node, props, children) => ({
   children
 });
 
-export const replaceTransform = (config) => (accum, node, props, children) => {
+export const replaceTransform = config => (accum, node, props, children) => {
   if (config[node.type] === undefined) {
     return {
       accum,
@@ -42,4 +42,4 @@ export const replaceTransform = (config) => (accum, node, props, children) => {
   };
 };
 
-export default (config) => traverse(print, replaceTransform(config));
+export default config => traverse(print, replaceTransform(config));

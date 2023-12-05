@@ -4,8 +4,8 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import authorsFixture from "../fixtures/authors.json";
 
-export default (Component) => {
-  const renderArticleByline = (props) =>
+export default Component => {
+  const renderArticleByline = props =>
     TestRenderer.create(
       <TcView>
         <Component {...props} />

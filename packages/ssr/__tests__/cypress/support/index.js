@@ -21,12 +21,12 @@ import "cypress-axe";
 require("cypress-failed-log");
 require("cypress-wait-until");
 
-Cypress.on("fail", (error) => {
+Cypress.on("fail", error => {
   // debugger;
   throw error;
 });
 
-Cypress.on("uncaught:exception", (err) => {
+Cypress.on("uncaught:exception", err => {
   // should only contain errors that are occuring inside of third party scripts
   // see https://docs.cypress.io/guides/references/error-messages.html#Cypress-detected-that-an-uncaught-error-was-thrown-from-a-cross-origin-script
   if (err.message.includes("cross-origin-script-error")) {
@@ -35,7 +35,7 @@ Cypress.on("uncaught:exception", (err) => {
   return true;
 });
 
-export const checkDropCapChanges = (path) => {
+export const checkDropCapChanges = path => {
   cy.waitUntil(
     () =>
       cy
@@ -46,12 +46,12 @@ export const checkDropCapChanges = (path) => {
     {
       errorMsg: "Element is not found even after waiting",
       timeout: 10000,
-      interval: 500,
-    },
+      interval: 500
+    }
   );
 };
 
-export const checkShareBarLoaded = (path) => {
+export const checkShareBarLoaded = path => {
   cy.waitUntil(
     () =>
       cy
@@ -61,17 +61,17 @@ export const checkShareBarLoaded = (path) => {
     {
       errorMsg: "Element is not found even after waiting",
       timeout: 10000,
-      interval: 500,
-    },
+      interval: 500
+    }
   );
 };
 
-export const terminalLog = (violations) => {
+export const terminalLog = violations => {
   cy.task(
     "log",
     `${violations.length} accessibility violation${
       violations.length === 1 ? "" : "s"
-    } ${violations.length === 1 ? "was" : "were"} detected`,
+    } ${violations.length === 1 ? "was" : "were"} detected`
   );
   // pluck specific keys to keep the table readable
   const violationData = violations.map(
@@ -79,8 +79,8 @@ export const terminalLog = (violations) => {
       id,
       impact,
       description,
-      nodes: nodes.length,
-    }),
+      nodes: nodes.length
+    })
   );
 
   cy.task("table", violationData);
@@ -88,7 +88,7 @@ export const terminalLog = (violations) => {
 
 export const waitUntilSelectorExists = (
   skipDropCapCheck,
-  remainingAttempts,
+  remainingAttempts
 ) => {
   let selector = '[class^="responsive__DropCap-sc-"]';
   if (skipDropCapCheck) {

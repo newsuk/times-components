@@ -7,17 +7,17 @@ const articlePropTypes = {
   analyticsStream: PropTypes.func.isRequired,
   data: PropTypes.shape({
     ...ArticleHeader.propTypes,
-    ...ArticleMeta.propTypes,
+    ...ArticleMeta.propTypes
   }),
   receiveChildList: PropTypes.func,
   navigationMode: PropTypes.shape({}).isRequired,
   zephrDivs: PropTypes.bool,
-  storefrontConfig: PropTypes.string.isRequired,
+  storefrontConfig: PropTypes.string.isRequired
 };
 
 const articleDefaultProps = {
   data: null,
-  receiveChildList: () => {},
+  receiveChildList: () => {}
 };
 
 export { articlePropTypes, articleDefaultProps };

@@ -1,9 +1,9 @@
 const path = require('path');
 const fs = require('fs');
 
-const buildConfig = dir => {
+const buildConfig = (dir) => {
   const { name: packageName } = JSON.parse(
-    fs.readFileSync(path.join(dir, 'package.json'), 'utf8')
+    fs.readFileSync(path.join(dir, 'package.json'), 'utf8'),
   );
   const name = packageName.replace('@times-components/', '');
   return {
@@ -14,19 +14,19 @@ const buildConfig = dir => {
     setupFiles: [],
     testMatch: [
       `**/packages/${name}/**/__tests__/*.test.tsx`,
-      `**/packages/${name}/**/__tests__/*.test.ts`
+      `**/packages/${name}/**/__tests__/*.test.ts`,
     ],
     transform: {
       '.+\\.js$': 'babel-jest',
-      '.+\\.tsx?$': 'ts-jest'
+      '.+\\.tsx?$': 'ts-jest',
     },
     transformIgnorePatterns: [
-      "node_modules/(?!(@times-components|@storybook/react)/)"
+      'node_modules/(?!(@times-components|@storybook/react)/)',
     ],
     globals: {
       'ts-jest': {
-        tsConfig: './tsconfig.jest.json'
-      }
+        tsConfig: './tsconfig.jest.json',
+      },
     },
     collectCoverage: true,
     coverageReporters: ['json', 'html', 'lcov', 'text'],
@@ -34,8 +34,8 @@ const buildConfig = dir => {
     collectCoverageFrom: [
       '<rootDir>/packages/ts-slices/src/**/*.tsx',
       '!<rootDir>/packages/ts-slices/src/**/*.stories.*',
-      '!<rootDir>/node_modules/'
-    ]
+      '!<rootDir>/node_modules/',
+    ],
   };
 };
 

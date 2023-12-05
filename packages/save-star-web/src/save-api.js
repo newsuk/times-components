@@ -40,14 +40,14 @@ function onSaveMutationUpdate(
   cache,
   { data: { saveBookmarks: bookmarks = [] } }
 ) {
-  bookmarks.forEach((bookmark) => addBookmark(cache, bookmark.id));
+  bookmarks.forEach(bookmark => addBookmark(cache, bookmark.id));
 }
 
 function onUnsaveMutationUpdate(
   cache,
   { data: { unsaveBookmarks: ids = [] } }
 ) {
-  ids.forEach((articleId) => removeBookmark(cache, articleId));
+  ids.forEach(articleId => removeBookmark(cache, articleId));
 }
 
 function SaveAPI({ articleId, children }) {

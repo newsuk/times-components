@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ArticleByline, {
   ArticleBylineOpinion,
-  articleBylinePropTypes,
+  articleBylinePropTypes
 } from "@times-components/article-byline";
 import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import ArticleLabel from "@times-components/article-label";
@@ -61,7 +61,7 @@ function ArticleSummary(props) {
     style,
     strapline,
     saveStar,
-    isTablet,
+    isTablet
   } = props;
 
   const { isOpinionByline = false } = bylineProps || {};
@@ -96,22 +96,22 @@ ArticleSummary.propTypes = {
   bylineProps: PropTypes.shape({
     ...articleBylinePropTypes,
     bylineClass: PropTypes.string,
-    isOpinionByline: PropTypes.bool,
+    isOpinionByline: PropTypes.bool
   }),
   content: PropTypes.node,
   datePublicationProps: PropTypes.shape({
     date: PropTypes.string,
-    publication: PropTypes.string,
+    publication: PropTypes.string
   }),
   flags: PropTypes.node,
   headline: PropTypes.node,
   labelProps: PropTypes.shape({
     color: PropTypes.string,
     isVideo: PropTypes.bool,
-    title: PropTypes.string,
+    title: PropTypes.string
   }),
   strapline: PropTypes.node,
-  style: PropTypes.shape({}),
+  style: PropTypes.shape({})
 };
 
 ArticleSummary.defaultProps = {
@@ -122,7 +122,7 @@ ArticleSummary.defaultProps = {
   headline: null,
   labelProps: null,
   strapline: null,
-  style: null,
+  style: null
 };
 
 export {
@@ -131,7 +131,7 @@ export {
   ArticleSummaryStrapline,
   renderAst,
   renderer,
-  summarise,
+  summarise
 };
 
 export default ArticleSummary;

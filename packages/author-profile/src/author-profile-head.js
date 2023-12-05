@@ -8,7 +8,7 @@ import {
   AuthorHeadWrapper,
   AuthorNameWrapper,
   BioContainer,
-  ImageContainer,
+  ImageContainer
 } from "./styles/responsive";
 
 const AuthorProfileHead = ({
@@ -19,7 +19,7 @@ const AuthorProfileHead = ({
   twitter,
   uri,
   contractualTitle,
-  isLargeDevice,
+  isLargeDevice
 }) => {
   const renderBiography = () => {
     if (!biography) return null;

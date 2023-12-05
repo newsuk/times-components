@@ -8,5 +8,5 @@ export default () =>
     onNext() {},
     onPrev() {},
     refetch() {},
-    slug: "some-slug",
+    slug: "some-slug"
   });

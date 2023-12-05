@@ -4,7 +4,7 @@ import SaveAndShareBar from "@times-components/save-and-share-bar";
 import Sticky, {
   computeProgressStyles,
   selectors,
-  mediaQuery,
+  mediaQuery
 } from "@times-components/sticky";
 import { breakpoints, colours } from "@times-components/ts-styleguide";
 import { ServerClientRender } from "@times-components/utils";
@@ -14,7 +14,7 @@ const SaveShareContainer = styled.div`
   background-color: ${colours.functional.white};
   height: 60px;
 
-  ${(props) =>
+  ${props =>
     props.isClient && [
       selectors.sizer(css`
         border-bottom: 1px solid transparent;
@@ -24,7 +24,7 @@ const SaveShareContainer = styled.div`
         will-change: height, box-shadow;
       `),
       computeProgressStyles(
-        (progress) => css`
+        progress => css`
           height: ${60 - progress * 10}px;
           box-shadow: 0 2px 5px 0 ${colours.functional.greyStickyBarBoxShadow};
 
@@ -32,8 +32,8 @@ const SaveShareContainer = styled.div`
             border-bottom-color: ${colours.functional
               .greyStickyBarBorderBottom};
           `)};
-        `,
-      ),
+        `
+      )
     ]};
 `;
 

@@ -25,7 +25,7 @@ export default () => {
       const utags = global.window.document.querySelectorAll(
         'script[src*="utag.js"]'
       );
-      utags.forEach((utag) => utag.remove());
+      utags.forEach(utag => utag.remove());
 
       global.window.utag = realUtag;
     });
@@ -215,7 +215,7 @@ export default () => {
       });
 
       it("should send more events if they cannot be sent in time", async () => {
-        global.window.requestIdleCallback = (fn) => {
+        global.window.requestIdleCallback = fn => {
           setTimeout(() => {
             fn({
               timeRemaining() {

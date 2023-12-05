@@ -72,13 +72,15 @@ export function getAllRequirements(packages) {
 }
 
 export function computeVersionSets(requirements) {
-  return requirements.map(p => p.requires).reduce(
-    (sets, { name, version }) => ({
-      ...sets,
-      [name]: distinct([version, ...(sets[name] || [])])
-    }),
-    {}
-  );
+  return requirements
+    .map(p => p.requires)
+    .reduce(
+      (sets, { name, version }) => ({
+        ...sets,
+        [name]: distinct([version, ...(sets[name] || [])])
+      }),
+      {}
+    );
 }
 
 export function computeFlatReverseLookupMap(requirements) {

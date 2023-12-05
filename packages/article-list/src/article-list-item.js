@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import ArticleSummary, {
   ArticleSummaryHeadline,
-  ArticleSummaryContent,
+  ArticleSummaryContent
 } from "@times-components/article-summary";
 import Card from "@times-components/card";
 import Context from "@times-components/context";
@@ -14,10 +14,10 @@ import { getImageUri, getHeadline } from "./utils";
 import {
   ListItemWrapper,
   ListItemLongText,
-  ListItemShortText,
+  ListItemShortText
 } from "./styles/responsive";
 
-const ArticleListItem = (props) => {
+const ArticleListItem = props => {
   const {
     article,
     fadeImageIn,
@@ -27,7 +27,7 @@ const ArticleListItem = (props) => {
     lowResQuality,
     lowResSize,
     showImage,
-    index,
+    index
   } = props;
 
   const {
@@ -42,7 +42,7 @@ const ArticleListItem = (props) => {
     section,
     shortHeadline,
     shortSummary,
-    summary,
+    summary
   } = article || {};
 
   const imageUri = getImageUri(article);
@@ -66,12 +66,12 @@ const ArticleListItem = (props) => {
     bylineProps: bylines
       ? {
           ast: bylines,
-          color: colours.section.default,
+          color: colours.section.default
         }
       : null,
     datePublicationProps: {
       date: publishedTime,
-      publication: publicationName,
+      publication: publicationName
     },
     headline: (
       <ArticleSummaryHeadline headline={getHeadline(headline, shortHeadline)} />
@@ -79,8 +79,8 @@ const ArticleListItem = (props) => {
     labelProps: {
       color: colours.section[section] || colours.section.default,
       isVideo: hasVideo,
-      title: label,
-    },
+      title: label
+    }
   };
 
   const children = showImage ? (

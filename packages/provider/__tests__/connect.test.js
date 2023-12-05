@@ -48,7 +48,7 @@ const queryWithVariable = gql`
 
 const propsToVariables = () => ({});
 
-const prepareMockForSnapshot = (fn) => ({
+const prepareMockForSnapshot = fn => ({
   ...fn.mock.calls[0][0],
   debouncedProps: omit(fn.mock.calls[0][0].debouncedProps, "children")
 });
@@ -88,7 +88,7 @@ iterator([
         <QueryProvider
           articleId="123"
           debounceTimeMs={1000}
-          propsToVariables={(props) => ({ id: props.articleId })}
+          propsToVariables={props => ({ id: props.articleId })}
           query={queryWithVariable}
         >
           {child}

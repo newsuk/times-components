@@ -11,16 +11,16 @@ const colours = [
   { backgroundColor: "blue", id: 4 }
 ];
 
-const createItems = (noOfItems) =>
+const createItems = noOfItems =>
   colours
-    .map((colour) => {
+    .map(colour => {
       const { backgroundColor, id } = colour;
       if (id > noOfItems) return false;
       return (
         <TcView id={`item-${id}`} style={{ minHeight: 150, backgroundColor }} />
       );
     })
-    .filter((item) => item !== false);
+    .filter(item => item !== false);
 
 export default {
   children: [

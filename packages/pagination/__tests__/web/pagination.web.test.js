@@ -26,7 +26,7 @@ addSerializers(
   )
 );
 
-const mockGenerateLink = (page) => `?mock-${page}`;
+const mockGenerateLink = page => `?mock-${page}`;
 
 const tests = [
   {

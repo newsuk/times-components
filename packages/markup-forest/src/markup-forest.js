@@ -1,4 +1,4 @@
-export const render = (renderers) => {
+export const render = renderers => {
   const run = (tree, key = "0", indx = 0) => {
     const { name, attributes, children } = tree;
     const renderer = renderers[name] || renderers.unknown;
@@ -33,8 +33,8 @@ export const renderTreeAsText = (
         .join("")
     : "");
 
-export const renderTreeArrayAsText = (markupTree) =>
-  markupTree.map((tree) => renderTreeAsText(tree)).join("");
+export const renderTreeArrayAsText = markupTree =>
+  markupTree.map(tree => renderTreeAsText(tree)).join("");
 
 export default (trees, renderers) =>
   trees.map((tree, index) => renderTree(tree, renderers, `${index}`, index));

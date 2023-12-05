@@ -6,7 +6,7 @@ import { withTrackingContext } from "@times-components/tracking";
 import Pagination from "./src/pagination";
 import { PreviousPageIcon, NextPageIcon } from "./src/pagination-icons";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
@@ -17,7 +17,7 @@ const preventDefaultedAction = (decorateAction) =>
 const createPagination = ({ decorateAction, overrideProps = {} }) => {
   const props = {
     count: 60,
-    generatePageLink: (pageNum) => `?page=${pageNum}`,
+    generatePageLink: pageNum => `?page=${pageNum}`,
     onNext: preventDefaultedAction(decorateAction)("first-page-next"),
     onPrev: preventDefaultedAction(decorateAction)("first-page-prev"),
     page: 1,
@@ -126,7 +126,7 @@ const pagination = {
           <PaginationWithTrackingContext
             analyticsStream={storybookReporter}
             count={60}
-            generatePageLink={(pageNum) => `?page=${pageNum}`}
+            generatePageLink={pageNum => `?page=${pageNum}`}
             hideResults
             onNext={preventDefaultedAction(decorateAction)("onNext")}
             onPrev={preventDefaultedAction(decorateAction)("onPrev")}

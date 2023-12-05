@@ -5,7 +5,7 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import "../mocks";
@@ -19,15 +19,15 @@ jest.mock("@times-components/lazy-load", () => ({ children }) => {
     [
       "1",
       {
-        clientWidth: 600,
-      },
+        clientWidth: 600
+      }
     ],
     [
       "related-articles",
       {
-        clientWidth: 100,
-      },
-    ],
+        clientWidth: 100
+      }
+    ]
   ]);
 
   return children({ observed, registerNode: () => {} });
@@ -37,7 +37,7 @@ const omitProps = new Set([
   "className",
   "data-testid",
   "responsiveLinkStyles",
-  "style",
+  "style"
 ]);
 
 addSerializers(
@@ -45,8 +45,8 @@ addSerializers(
   compose(
     print,
     minimalWebTransform,
-    minimaliseTransform((value, key) => omitProps.has(key)),
-  ),
+    minimaliseTransform((value, key) => omitProps.has(key))
+  )
 );
 
 iterator([
@@ -62,18 +62,18 @@ iterator([
               credits: "The image credits",
               display: "primary",
               ratio: "15:10",
-              url: "https://image.io",
+              url: "https://image.io"
             },
             children: [],
-            name: "image",
-          },
-        ],
+            name: "image"
+          }
+        ]
       });
 
       const nuk = {
         user: {
-          isLoggedIn: true,
-        },
+          isLoggedIn: true
+        }
       };
       window.nuk = nuk;
 
@@ -91,18 +91,18 @@ iterator([
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
           commentingConfig={{ account: "dummiy-spotim-id" }}
-        />,
+        />
       );
 
       const {
         props: {
-          imageOptions: { highResSize, lowResSize },
-        },
+          imageOptions: { highResSize, lowResSize }
+        }
       } = testRenderer.root.findByType("ArticleImage");
 
       expect(highResSize).toEqual(null);
       expect(lowResSize).toEqual(400);
-    },
+    }
   },
   {
     name: "a high quality image if viewed",
@@ -116,10 +116,10 @@ iterator([
               credits: "The image credits",
               display: "primary",
               ratio: "15:10",
-              url: "https://image.io",
+              url: "https://image.io"
             },
             children: [],
-            name: "image",
+            name: "image"
           },
           {
             attributes: {
@@ -127,18 +127,18 @@ iterator([
               credits: "The image credits",
               display: "primary",
               ratio: "15:10",
-              url: "https://image.io",
+              url: "https://image.io"
             },
             children: [],
-            name: "image",
-          },
-        ],
+            name: "image"
+          }
+        ]
       });
 
       const nuk = {
         user: {
-          isLoggedIn: true,
-        },
+          isLoggedIn: true
+        }
       };
       window.nuk = nuk;
 
@@ -156,33 +156,33 @@ iterator([
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
           commentingConfig={{ account: "dummiy-spotim-id" }}
-        />,
+        />
       );
 
       const [
         ,
         {
           props: {
-            imageOptions: { highResSize, lowResSize },
-          },
-        },
+            imageOptions: { highResSize, lowResSize }
+          }
+        }
       ] = testRenderer.root.findAllByType("ArticleImage");
 
       expect(highResSize).toEqual(600);
       expect(lowResSize).toEqual(400);
-    },
+    }
   },
   {
     name: "visible related articles",
     test() {
       const article = articleFixture({
-        ...testFixture,
+        ...testFixture
       });
 
       const nuk = {
         user: {
-          isLoggedIn: true,
-        },
+          isLoggedIn: true
+        }
       };
       window.nuk = nuk;
 
@@ -200,13 +200,13 @@ iterator([
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
           commentingConfig={{ account: "dummiy-spotim-id" }}
-        />,
+        />
       );
 
       const { relatedArticlesVisible } =
         testRenderer.root.findByType("ArticleExtras").props;
 
       expect(relatedArticlesVisible).toEqual(true);
-    },
-  },
+    }
+  }
 ]);

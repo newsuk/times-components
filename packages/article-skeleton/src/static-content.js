@@ -11,6 +11,6 @@ export default function StaticContent({
     ...props,
     undefined,
     suppressHydrationWarning: true,
-    dangerouslySetInnerHTML: { __html: html },
+    dangerouslySetInnerHTML: { __html: html }
   });
 }

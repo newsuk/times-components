@@ -31,5 +31,5 @@ export default () => {
     )
   );
 
-  shared((component) => mount(component));
+  shared(component => mount(component));
 };

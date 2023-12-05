@@ -68,7 +68,7 @@ export default () => {
 
   it("updates loading state when toggling saved state while currently unsaved", async () => {
     let toggleSaved;
-    const children = jest.fn((mockData) => {
+    const children = jest.fn(mockData => {
       ({ toggleSaved } = mockData);
       return null;
     });
@@ -95,7 +95,7 @@ export default () => {
 
   it("updates saved state when toggling saved state while currently unsaved finishes loading", async () => {
     let toggleSaved;
-    const children = jest.fn((mockData) => {
+    const children = jest.fn(mockData => {
       ({ toggleSaved } = mockData);
       return null;
     });
@@ -119,7 +119,7 @@ export default () => {
 
   it("updates loading state when toggling saved state while currently saved", async () => {
     let toggleSaved;
-    const children = jest.fn((mockData) => {
+    const children = jest.fn(mockData => {
       ({ toggleSaved } = mockData);
       return null;
     });
@@ -147,7 +147,7 @@ export default () => {
 
   it("updates saved state when toggling saved state while currently saved finishes loading", async () => {
     let toggleSaved;
-    const children = jest.fn((mockData) => {
+    const children = jest.fn(mockData => {
       ({ toggleSaved } = mockData);
       return null;
     });

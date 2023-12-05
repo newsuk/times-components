@@ -69,7 +69,7 @@ function withStickyContext(WrappedComponent) {
   function WithStickyContext(props) {
     return (
       <Consumer>
-        {(stickyContext) => (
+        {stickyContext => (
           <WrappedComponent {...props} stickyContext={stickyContext} />
         )}
       </Consumer>

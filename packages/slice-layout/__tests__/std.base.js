@@ -3,7 +3,7 @@ import { iterator } from "@times-components/test-utils";
 import createItem from "./utils";
 import { StandardSlice } from "../src/slice-layout";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "no child elements",

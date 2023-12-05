@@ -7,7 +7,7 @@ export default () => {
     const testInstance = TestRenderer.create(
       <Responsive>
         <ResponsiveContext.Consumer>
-          {(context) => JSON.stringify(context)}
+          {context => JSON.stringify(context)}
         </ResponsiveContext.Consumer>
       </Responsive>
     );

@@ -69,7 +69,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
           this.gpt.refreshAd();
           eventCallback("renderComplete");
         })
-        .catch((err) => {
+        .catch(err => {
           eventCallback("error", err.stack);
           eventCallback("renderFailed");
         });
@@ -94,7 +94,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
       };
 
       if (window.matchMedia) {
-        Object.keys(breakpoints).forEach((size) => {
+        Object.keys(breakpoints).forEach(size => {
           window
             .matchMedia(breakpoints[size])
             .addListener(this.handleBreakPointChange.bind(this, size));
@@ -115,7 +115,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
     admantx: {
       extractNames(values) {
         const cleansedValues = new Set(
-          values.map((value) =>
+          values.map(value =>
             value.name
               .toLowerCase()
               .trim()
@@ -212,11 +212,11 @@ export default ({ el, data, platform, eventCallback, window }) => {
             }
 
             const gptMapping = googletag.sizeMapping();
-            mappings.forEach((size) =>
+            mappings.forEach(size =>
               gptMapping.addSize([size.width, size.height], size.sizes)
             );
             slot.defineSizeMapping(gptMapping.build());
-            Object.keys(slotTargeting || []).forEach((key) =>
+            Object.keys(slotTargeting || []).forEach(key =>
               slot.setTargeting(key, slotTargeting[key])
             );
             const randomTestingGroup = Math.floor(
@@ -239,7 +239,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
         googletag.cmd.push(() => {
           try {
             const pubads = googletag.pubads();
-            Object.keys(keyValuePairs).forEach((key) => {
+            Object.keys(keyValuePairs).forEach(key => {
               pubads.setTargeting(key, keyValuePairs[key]);
             });
             eventCallback("warn", "[Google] INFO: set page target");
@@ -285,7 +285,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
       },
 
       waitUntilReady() {
-        return new Promise((resolve) =>
+        return new Promise(resolve =>
           googletag.cmd.push(() => {
             resolve();
           })
@@ -303,7 +303,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
               if (slots.length > 0) {
                 eventCallback("warn", "[Prebid] INFO: requesting bids");
                 eventCallback("log", slots);
-                slots.forEach((slot) => pbjs.removeAdUnit(slot.code));
+                slots.forEach(slot => pbjs.removeAdUnit(slot.code));
                 pbjs.addAdUnits(slots);
                 pbjs.requestBids({
                   bidsBackHandler(bids) {
@@ -362,7 +362,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
         const adUnitPath = adUnitPathParts.reduce((acc, cur, index) =>
           index === 1 ? `/${acc}/${cur}` : `${acc}/${cur}`
         );
-        return slots.map((slot) => ({
+        return slots.map(slot => ({
           sizes: slot.sizes,
           slotID: slot.code,
           slotName: adUnitPath
@@ -370,7 +370,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
       },
 
       bid() {
-        return new Promise((resolve) => {
+        return new Promise(resolve => {
           try {
             const amazonSlots = this.getConfig();
             if (amazonSlots.length > 0) {
@@ -380,7 +380,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
                 {
                   slots: amazonSlots
                 },
-                (aBids) => {
+                aBids => {
                   eventCallback("warn", "[Amazon] INFO: bids response");
                   eventCallback("log", aBids);
                   resolve(aBids);

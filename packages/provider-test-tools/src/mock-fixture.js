@@ -9,7 +9,7 @@ const makeMocks = mm(schema);
 
 const makeQuery = ({ defaults, delay, error, query, variables, repeatable }) =>
   graphql(makeMocks(defaults), print(query), null, null, variables).then(
-    (mock) => ({
+    mock => ({
       defaults,
       delay,
       error,
@@ -38,7 +38,7 @@ const toResponse = ({ delay, error, mock, query, variables, repeatable }) => {
   return response;
 };
 
-export const schemaToMocks = (params) =>
+export const schemaToMocks = params =>
   Promise.all(params.map(makeQuery)).then(([...mocks]) =>
     mocks.map(toResponse)
   );
@@ -55,7 +55,7 @@ class MockFixture extends Component {
   componentDidMount() {
     const { params } = this.props;
 
-    schemaToMocks(params).then((mocks) => this.setState({ mocks }));
+    schemaToMocks(params).then(mocks => this.setState({ mocks }));
   }
 
   render() {

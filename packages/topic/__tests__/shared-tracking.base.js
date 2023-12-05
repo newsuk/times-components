@@ -8,7 +8,7 @@ import Topic from "../src/topic";
 // eslint-disable-next-line global-require
 jest.mock("@times-components/provider", () => require("./mock-provider"));
 
-export default (props) => {
+export default props => {
   const tests = [
     {
       name: "tracking information",
@@ -21,12 +21,12 @@ export default (props) => {
             analyticsStream={analyticsStream}
             isLoading={false}
             page={2}
-          />,
+          />
         );
 
         expect(analyticsStream.mock.calls).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   jest.useFakeTimers();

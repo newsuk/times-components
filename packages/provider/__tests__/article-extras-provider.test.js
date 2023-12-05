@@ -7,7 +7,7 @@ import {
 } from "@times-components/provider-test-tools";
 import { ArticleExtrasProvider } from "../src/provider";
 
-const renderComponent = (child) => {
+const renderComponent = child => {
   const id = "113e9875-b7bf-4dd7-ac99-dee231bf6e74";
 
   return renderer.create(
@@ -20,7 +20,7 @@ const renderComponent = (child) => {
           id
         })
       })}
-      render={(mocks) => (
+      render={mocks => (
         <MockedProvider mocks={mocks}>
           <ArticleExtrasProvider debounceTimeMs={0} id={id}>
             {child}
@@ -32,7 +32,7 @@ const renderComponent = (child) => {
 };
 
 describe("ArticleExtrasProvider", () => {
-  it("returns query result", (done) => {
+  it("returns query result", done => {
     renderComponent(({ isLoading, article }) => {
       if (!isLoading) {
         expect(article).toMatchSnapshot();

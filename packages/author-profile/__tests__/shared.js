@@ -4,7 +4,7 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   print,
-  replacePropTransform,
+  replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import shared from "./shared.base";
@@ -18,12 +18,12 @@ export default () => {
       minimalWebTransform,
       minimaliseTransform(
         (value, key) =>
-          key === "style" || key === "className" || key === "data-testid",
+          key === "style" || key === "className" || key === "data-testid"
       ),
       replacePropTransform((value, key) =>
-        key === "emptyStateMessage" ? hash(value) : value,
-      ),
-    ),
+        key === "emptyStateMessage" ? hash(value) : value
+      )
+    )
   );
 
   const props = {
@@ -32,7 +32,7 @@ export default () => {
     onNext() {},
     onPrev() {},
     refetch() {},
-    slug: "some-slug",
+    slug: "some-slug"
   };
 
   shared(props);

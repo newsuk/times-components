@@ -41,7 +41,7 @@ const getPrebidSlotConfig = (slot, section, width, biddersConfig) => {
   let bids = [];
   if (biddersConfig.ix && biddersConfig.ix.siteId) {
     bids = bids.concat(
-      sizes.map((size) => ({
+      sizes.map(size => ({
         bidder: "ix",
         params: {
           siteId: biddersConfig.ix.siteId,

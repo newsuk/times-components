@@ -75,10 +75,10 @@ class LazyLoad extends Component {
           return;
         }
 
-        this.setState((state) => ({
+        this.setState(state => ({
           nodes: new Map([
             ...state.nodes,
-            ...[...this.pending].map((n) => [n.id, n])
+            ...[...this.pending].map(n => [n.id, n])
           ])
         }));
 
@@ -103,7 +103,7 @@ class LazyLoad extends Component {
 
       this.unobservedTimer = setTimeout(() => {
         this.setState({
-          nodes: new Map([...this.unobserved].map((n) => [n.id, n]))
+          nodes: new Map([...this.unobserved].map(n => [n.id, n]))
         });
         this.unobserved.clear();
       }, 10);

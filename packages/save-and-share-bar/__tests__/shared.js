@@ -2,7 +2,7 @@ import {
   addSerializers,
   compose,
   minimalWebTransform,
-  stylePrinter,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import shared from "./shared.base";
 

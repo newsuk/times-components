@@ -11,7 +11,7 @@ const props = {
   showImage: true
 };
 
-export default (renderMethod) => {
+export default renderMethod => {
   jest.useFakeTimers();
 
   const tests = [

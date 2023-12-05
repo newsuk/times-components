@@ -10,7 +10,7 @@ const ArticleSummaryContent = ({
   className,
   style,
   whiteSpaceHeight,
-  initialLines = 2,
+  initialLines = 2
 }) => {
   const lineHeight = (style && style.lineHeight) || styles.text.lineHeight;
   const numberOfLinesToRender =
@@ -19,7 +19,7 @@ const ArticleSummaryContent = ({
       : initialLines;
 
   const numberOfLinesProp = whiteSpaceHeight !== undefined && {
-    numberOfLines: numberOfLinesToRender,
+    numberOfLines: numberOfLinesToRender
   };
 
   return ast.length > 0 ? (
@@ -36,13 +36,13 @@ const ArticleSummaryContent = ({
 ArticleSummaryContent.propTypes = {
   ast: PropTypes.arrayOf(treePropType),
   className: PropTypes.string,
-  style: {},
+  style: {}
 };
 
 ArticleSummaryContent.defaultProps = {
   ast: [],
   className: "",
-  style: null,
+  style: null
 };
 
 export default ArticleSummaryContent;

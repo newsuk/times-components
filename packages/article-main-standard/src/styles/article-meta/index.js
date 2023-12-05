@@ -1,7 +1,7 @@
 import sharedStyles from "./shared";
 
 const styles = {
-  ...sharedStyles,
+  ...sharedStyles
 };
 
 export default styles;

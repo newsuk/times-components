@@ -63,7 +63,7 @@ class Ad extends Component {
 
     if (hasAdBlock || hasError) return null;
 
-    this.slots = adConfig.bidderSlots.map((slot) =>
+    this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
         slot,
         section,
@@ -74,7 +74,7 @@ class Ad extends Component {
 
     this.allSlotConfigs = adConfig.globalSlots
       .concat(adConfig.bidderSlots)
-      .map((slot) => getSlotConfig(slot, screenWidth()));
+      .map(slot => getSlotConfig(slot, screenWidth()));
 
     const data = {
       adUnit: adConfig.adUnit,
@@ -132,7 +132,7 @@ class Ad extends Component {
     }
     return (
       <Subscriber channel="adConfig">
-        {(adConfig) => this.renderAd(adConfig)}
+        {adConfig => this.renderAd(adConfig)}
       </Subscriber>
     );
   }

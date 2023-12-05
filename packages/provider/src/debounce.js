@@ -5,7 +5,7 @@ import getDisplayName from "react-display-name";
 import hoistNonReactStatic from "hoist-non-react-statics";
 import isEqual from "lodash.isequal";
 
-const validateProps = (props) => {
+const validateProps = props => {
   if (typeof props.debounceTimeMs !== "number") {
     throw new Error("debounceTimeMs prop required");
   }
@@ -82,11 +82,11 @@ Debounce.propTypes = {
   debounceTimeMs: PropTypes.number.isRequired
 };
 
-const withDebounce = (WrappedComponent) => {
-  const WithDebounce = (props) => (
+const withDebounce = WrappedComponent => {
+  const WithDebounce = props => (
     <Debounce
       {...props}
-      debounceRender={(renderProps) => <WrappedComponent {...renderProps} />}
+      debounceRender={renderProps => <WrappedComponent {...renderProps} />}
     />
   );
   WithDebounce.displayName = `WithDebounce(${getDisplayName(

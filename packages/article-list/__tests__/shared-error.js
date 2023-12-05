@@ -4,7 +4,7 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   print,
-  replacePropTransform,
+  replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import { omitWeb as omitProps } from "./utils";
@@ -18,9 +18,9 @@ export default () => {
       minimalWebTransform,
       minimaliseTransform((value, key) => omitProps.has(key)),
       replacePropTransform((value, key) =>
-        key === "src" ? hash(JSON.stringify(value)) : value,
-      ),
-    ),
+        key === "src" ? hash(JSON.stringify(value)) : value
+      )
+    )
   );
 
   shared();

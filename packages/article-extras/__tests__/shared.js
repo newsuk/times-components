@@ -5,7 +5,7 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 
@@ -14,7 +14,7 @@ import ArticleExtras from "../src/article-extras";
 import { relatedArticleSlice, topics } from "../fixtures/article-extras";
 
 const commentingConfig = {
-  account: "sp_pCQgrRiN",
+  account: "sp_pCQgrRiN"
 };
 
 export default () => {
@@ -29,9 +29,9 @@ export default () => {
           key === "className" ||
           key === "data-testid" ||
           key === "topics" ||
-          key === "slice",
-      ),
-    ),
+          key === "slice"
+      )
+    )
   );
 
   const tests = [
@@ -48,11 +48,11 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
-          />,
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "no topics and comments when user not logged in, only related articles and sponsored div",
@@ -68,11 +68,11 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
-          />,
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "read only comments when the user is a share token reader",
@@ -87,11 +87,11 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
-          />,
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "renders the additional related articles",
@@ -106,12 +106,12 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
-          />,
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

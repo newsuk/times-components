@@ -9,7 +9,7 @@ import EmailShare from "../src/email-share";
 import MockedProvider from "../../provider-test-tools/src/mocked-provider";
 
 const mockEvent = {
-  preventDefault: () => {},
+  preventDefault: () => {}
 };
 
 export default () => {
@@ -28,7 +28,7 @@ export default () => {
       onShareEmail,
       getTokenisedShareUrl: mockGetTokenisedArticleUrl,
       sharingEnabled: true,
-      savingEnabled: true,
+      savingEnabled: true
     };
 
     let realLocation;
@@ -40,14 +40,14 @@ export default () => {
       delete global.window.location;
       global.window.location = {
         assign: jest.fn(),
-        search: "",
+        search: ""
       };
       clipboardData = "";
       mockClipboard = {
-        writeText: jest.fn((data) => {
+        writeText: jest.fn(data => {
           clipboardData = data;
         }),
-        readText: jest.fn(() => clipboardData),
+        readText: jest.fn(() => clipboardData)
       };
       global.navigator.clipboard = mockClipboard;
     });
@@ -62,7 +62,7 @@ export default () => {
       const testInstance = TestRenderer.create(
         <MockedProvider>
           <SaveAndShareBar {...props} />
-        </MockedProvider>,
+        </MockedProvider>
       );
       expect(testInstance.toJSON()).toMatchSnapshot();
     });
@@ -73,7 +73,7 @@ export default () => {
       const testInstance = TestRenderer.create(
         <MockedProvider>
           <SaveAndShareBar {...props} />
-        </MockedProvider>,
+        </MockedProvider>
       );
       expect(testInstance.toJSON()).toMatchSnapshot();
     });
@@ -82,7 +82,7 @@ export default () => {
       const testInstance = TestRenderer.create(
         <MockedProvider>
           <SaveAndShareBar {...props} />
-        </MockedProvider>,
+        </MockedProvider>
       );
       testInstance.root.findAllByType(BarItem)[3].props.onPress(mockEvent);
       expect(navigator.clipboard.writeText).toHaveBeenCalledWith(articleUrl);
@@ -92,12 +92,12 @@ export default () => {
     it("tokenises when logged in as a subscriber", () => {
       UserState.mockStates = [
         UserState.showSaveAndShareBar,
-        UserState.showTokenisedEmailShare,
+        UserState.showTokenisedEmailShare
       ];
 
       const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
       expect(
-        testInstance.root.findByType(EmailShare).props.shouldTokenise,
+        testInstance.root.findByType(EmailShare).props.shouldTokenise
       ).toEqual(true);
     });
 
@@ -105,14 +105,14 @@ export default () => {
       UserState.mockStates = [];
       const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
       expect(
-        testInstance.root.findByType(EmailShare).props.shouldTokenise,
+        testInstance.root.findByType(EmailShare).props.shouldTokenise
       ).toEqual(false);
     });
 
     it("email icon when tokenising with loading state while network request is fetching data", async () => {
       const apiMock = () =>
         Promise.resolve({
-          loading: true,
+          loading: true
         });
 
       const testInstance = TestRenderer.create(
@@ -121,7 +121,7 @@ export default () => {
           getTokenisedShareUrl={apiMock}
           shouldTokenise
           publicationName="TIMES"
-        />,
+        />
       );
       await testInstance.root.findByType(BarItem).props.onPress(mockEvent);
 
@@ -130,7 +130,7 @@ export default () => {
 
     it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
       const testInstance = TestRenderer.create(
-        <EmailShare {...props} shouldTokenise publicationName="TIMES" />,
+        <EmailShare {...props} shouldTokenise publicationName="TIMES" />
       );
 
       const mock = await mockGetTokenisedArticleUrl(articleId);
@@ -150,7 +150,7 @@ export default () => {
           {...props}
           shouldTokenise
           publicationName="THE SUNDAY TIMES"
-        />,
+        />
       );
 
       const mock = await mockGetTokenisedArticleUrl(articleId);
@@ -167,11 +167,7 @@ export default () => {
     it("when not tokenising, but using existing tokenised article, email icon uses existing tokenised article url and change window.location", async () => {
       window.location.search = "?shareToken=foo";
       const testInstance = TestRenderer.create(
-        <EmailShare
-          {...props}
-          shouldTokenise={false}
-          publicationName="TIMES"
-        />,
+        <EmailShare {...props} shouldTokenise={false} publicationName="TIMES" />
       );
 
       const url = `${articleUrl}?shareToken=foo`;
@@ -185,11 +181,7 @@ export default () => {
 
     it("when not tokenising email icon uses article url and change window.location", async () => {
       const testInstance = TestRenderer.create(
-        <EmailShare
-          {...props}
-          shouldTokenise={false}
-          publicationName="TIMES"
-        />,
+        <EmailShare {...props} shouldTokenise={false} publicationName="TIMES" />
       );
 
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${articleUrl}`;

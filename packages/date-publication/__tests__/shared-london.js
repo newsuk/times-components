@@ -4,7 +4,7 @@ import { iterator } from "@times-components/test-utils";
 import "./mock-timezone-london";
 import DatePublication from "../src/date-publication";
 
-export default (date) => {
+export default date => {
   const tests = [
     {
       name: "date and TIMES publication",

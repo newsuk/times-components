@@ -7,21 +7,21 @@ import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TrackingContextProvider,
-  WelcomeBanner,
+  WelcomeBanner
 } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 import {
   TCThemeProvider,
-  UpdateButtonWithDelay,
+  UpdateButtonWithDelay
 } from "@times-components/ts-newskit";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
   articleSkeletonDefaultProps,
-  articleSkeletonPropTypes,
+  articleSkeletonPropTypes
 } from "./article-skeleton-prop-types";
 import articleTrackingContext from "./tracking/article-tracking-context";
 import tagLastParagraph from "./tracking/article-tracking-last-paragraph";
@@ -31,7 +31,7 @@ import {
   getHeaderAdStyles,
   HeaderContainer,
   MainContainer,
-  UpdateButtonContainer,
+  UpdateButtonContainer
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -61,7 +61,7 @@ const ArticleSkeleton = ({
   getFallbackThumbnailUrl169,
   zephrDivs,
   showAudioPlayer,
-  storefrontConfig,
+  storefrontConfig
 }) => {
   const {
     commentsEnabled,
@@ -82,7 +82,7 @@ const ArticleSkeleton = ({
     publishedTime,
     isSavingEnabled,
     isSharingEnabled,
-    isCommentEnabled,
+    isCommentEnabled
   } = article;
 
   const articleContentReducers = [
@@ -90,16 +90,16 @@ const ArticleSkeleton = ({
     insertNewsletterPuff(section, isPreview, expirableFlags),
     insertNativeAd,
     insertInlineAd,
-    tagLastParagraph,
+    tagLastParagraph
   ];
   const newContent = reduceArticleContent(content, articleContentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
-  const scrollToTopAndRefresh = (window) => {
+  const scrollToTopAndRefresh = window => {
     window.scroll({
       left: 0,
-      top: 0,
+      top: 0
     });
     window.location.reload(true);
   };
@@ -108,12 +108,12 @@ const ArticleSkeleton = ({
     {
       elementId: "last-paragraph",
       name: "end of article",
-      eventNavigationName: "Article : View End",
+      eventNavigationName: "Article : View End"
     },
     {
       elementId: "related-articles",
-      name: "related articles",
-    },
+      name: "related articles"
+    }
   ]);
 
   const isSharingSavingEnabledExternal = isSavingEnabled || isSharingEnabled;
@@ -130,8 +130,8 @@ const ArticleSkeleton = ({
           component: "ArticleSkeleton",
           attrs: {
             article_name: headline || shortHeadline || "",
-            section_details: section,
-          },
+            section_details: section
+          }
         }}
         analyticsStream={analyticsStream}
       >
@@ -333,7 +333,7 @@ const ArticleSkeleton = ({
 
 ArticleSkeleton.propTypes = {
   ...articleSkeletonPropTypes,
-  paidContentClassName: PropTypes.string,
+  paidContentClassName: PropTypes.string
 };
 ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 

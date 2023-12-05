@@ -48,7 +48,7 @@ export function polyfillWCIfNecessary() {
       ensureScript(
         "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.min.js"
       ),
-      new Promise((resolve) => {
+      new Promise(resolve => {
         window.addEventListener("WebComponentsReady", resolve);
       })
     ]);
@@ -93,7 +93,7 @@ export default class InteractiveWrapper extends Component {
 
     const newElement = document.createElement(element);
 
-    Object.keys(attributes).forEach((key) =>
+    Object.keys(attributes).forEach(key =>
       newElement.setAttribute(key, attributes[key])
     );
 

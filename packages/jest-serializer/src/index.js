@@ -40,7 +40,7 @@ const compose = (printer, ...transformers) =>
   );
 
 const addSerializers = (expect, ...serializers) => {
-  serializers.forEach((serializer) => expect.addSnapshotSerializer(serializer));
+  serializers.forEach(serializer => expect.addSnapshotSerializer(serializer));
 };
 
 const enzymeRenderedSerializer = () => createSerializer({ mode: "deep" });

@@ -5,21 +5,21 @@ import { iterator } from "@times-components/test-utils";
 import {
   addSerializers,
   enzymeRenderedSerializer,
-  minimalise,
+  minimalise
 } from "@times-components/jest-serializer";
 import { defaults } from "@times-components/context";
 import articleListFixture from "../../fixtures/articles.json";
 import adConfig from "../../fixtures/article-ad-config.json";
 import ArticleList from "../../src/article-list";
 
-const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+const delay = ms => new Promise(res => setTimeout(res, ms));
 
 const omitProps = new Set(["class", "className", "style"]);
 
 addSerializers(
   expect,
   enzymeRenderedSerializer(),
-  minimalise((value, key) => omitProps.has(key)),
+  minimalise((value, key) => omitProps.has(key))
 );
 
 const realIntl = Intl;
@@ -33,7 +33,7 @@ const articleListProps = {
   imageRatio: 3 / 2,
   page: 1,
   pageSize: 5,
-  refetch: () => {},
+  refetch: () => {}
 };
 
 const intersectionObserverInstances = [];
@@ -45,7 +45,7 @@ class FakeIntersectionObserver {
 
   observe(node) {
     Object.defineProperty(node, "clientWidth", {
-      value: 600,
+      value: 600
     });
     intersectionObserverInstances[this.instanceId].nodes.add(node);
   }
@@ -64,8 +64,8 @@ class FakeIntersectionObserver {
 beforeEach(() => {
   global.Intl = {
     DateTimeFormat: () => ({
-      resolvedOptions: () => ({ timeZone: "Europe/London" }),
-    }),
+      resolvedOptions: () => ({ timeZone: "Europe/London" })
+    })
   };
 });
 
@@ -86,17 +86,17 @@ const tests = [
       const component = mount(<ArticleList {...articleListProps} />);
       // prove the first image starts off as low quality
       expect(component.find("TimesImage").at(0).props().lowResSize).toEqual(
-        null,
+        null
       );
 
       expect(component.find("TimesImage").at(0).props().highResSize).toEqual(
-        null,
+        null
       );
 
-      const makeEntries = (nodes) =>
+      const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.75 : 0,
-          target: node,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
@@ -106,13 +106,13 @@ const tests = [
       component.update();
 
       expect(component.find("TimesImage").at(0).props().lowResSize).toEqual(
-        200,
+        200
       );
 
       expect(component.find("TimesImage").at(0).props().highResSize).toEqual(
-        660,
+        660
       );
-    },
+    }
   },
   {
     name: "should render a poor quality image if it is not visible",
@@ -121,10 +121,10 @@ const tests = [
 
       const component = mount(<ArticleList {...articleListProps} />);
 
-      const makeEntries = (nodes) =>
+      const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.75 : 0,
-          target: node,
+          target: node
         }));
 
       window.IntersectionObserver.dispatchEntriesForInstance(1, makeEntries);
@@ -139,7 +139,7 @@ const tests = [
       expect(lowResSize).toEqual(null);
 
       expect(highResSize).toEqual(null);
-    },
+    }
   },
   {
     name: "should emit scroll tracking events for an article list",
@@ -150,7 +150,7 @@ const tests = [
         eventMap[eventName] = callback;
       });
 
-      window.removeEventListener = jest.fn((eventName) => {
+      window.removeEventListener = jest.fn(eventName => {
         delete eventMap[eventName];
       });
 
@@ -172,16 +172,16 @@ const tests = [
           context: {
             makeArticleUrl: defaults.makeArticleUrl,
             tracking: {
-              analytics: reporter,
-            },
-          },
-        },
+              analytics: reporter
+            }
+          }
+        }
       );
 
-      const makeEntries = (nodes) =>
+      const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
           isIntersecting: indx === 0,
-          target: node,
+          target: node
         }));
 
       eventMap.scroll();
@@ -193,16 +193,16 @@ const tests = [
           attrs: expect.objectContaining({
             scrollDepth: {
               itemNumber: 1,
-              total: 3,
-            },
-          }),
-        }),
+              total: 3
+            }
+          })
+        })
       );
 
       window.addEventListener = window.addEventListener;
       window.removeEventListener = window.removeEventListener;
-    },
-  },
+    }
+  }
 ];
 
 iterator(tests);

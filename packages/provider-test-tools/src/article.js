@@ -3,7 +3,7 @@ import { article as articleQuery } from "@times-components/provider-queries";
 import bookmarks from "./bookmarks";
 import article from "../fixtures/article.json";
 
-const convertRatio = (ratio) => {
+const convertRatio = ratio => {
   if (ratio === "16:9") {
     return "320_180";
   }
@@ -30,8 +30,8 @@ const getMediaUrl = (obj, ratio) => {
 export default ({
   chooseMedia = () => ({ __typename: "Image" }),
   error = () => {},
-  makeArticle = (x) => x,
-  makeRelatedArticle = (x) => x,
+  makeArticle = x => x,
+  makeRelatedArticle = x => x,
   relatedArticleCount = 3,
   variables = () => {}
 } = {}) => {

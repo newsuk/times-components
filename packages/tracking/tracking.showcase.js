@@ -31,7 +31,7 @@ BoxWithButtons.propTypes = {
 };
 
 const BoxWithTrackingContext = withTrackingContext(Box, {
-  getAttrs: (props) => ({
+  getAttrs: props => ({
     color: props.color
   }),
   trackingObjectName: "TrackRenderStory"
@@ -55,7 +55,7 @@ const BoxWithClickTrackingAndContext = withTrackingContext(
 
 const BoxesWithTrackingContext = withTrackingContext(
   withTrackScrollDepth(Boxes, {
-    getAttrs: (props) => ({
+    getAttrs: props => ({
       id: props.elementId
     }),
     trackingName: "ColoredBox"
@@ -88,7 +88,7 @@ export default {
     },
     {
       component: () => {
-        const boxes = [...Array(50).keys()].map((i) => ({
+        const boxes = [...Array(50).keys()].map(i => ({
           color: i % 2 === 0 ? "green" : "blue",
           elementId: `box-${i + 1}`
         }));

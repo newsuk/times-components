@@ -14,7 +14,7 @@ const landscapeInlineImage = landscapeInlineImageFixture();
 const portraitInlineImage = portraitInlineImageFixture();
 
 const withResponsive =
-  (render) =>
+  render =>
   (...args) => <Responsive>{render(...args)}</Responsive>;
 
 export default {

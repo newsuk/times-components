@@ -5,8 +5,8 @@ const styles = {
   ...sharedStyles,
   description: {
     ...sharedStyles.description,
-    paddingBottom: spacing(3),
-  },
+    paddingBottom: spacing(3)
+  }
 };
 
 export default styles;

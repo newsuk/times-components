@@ -12,13 +12,13 @@ if (window.nuk && window.nuk.ssr && window.nuk.authorProfile) {
     makeArticleUrl,
     makeTopicUrl,
     page,
-    pageSize,
+    pageSize
   };
 
   const clientOptions = {
     rootTag,
     useGET: true,
-    skipAuthorization: true,
+    skipAuthorization: true
   };
 
   runClient(authorProfile, clientOptions, data);

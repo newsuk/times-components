@@ -28,7 +28,7 @@ const messageBarCloseButton = {
   border: "0px"
 };
 
-const messageBarText = (scale) => ({
+const messageBarText = scale => ({
   color: colours.functional.white,
   ...fontFactory({
     font: "headline",
@@ -38,7 +38,7 @@ const messageBarText = (scale) => ({
   marginLeft: 20
 });
 
-export const sharedStyle = (scale) => ({
+export const sharedStyle = scale => ({
   messageBarBodyContainer: {
     backgroundColor: colours.functional.articleFlagUpdated,
     shadowColor: "rgba(0, 0, 0, 0.2)",
@@ -61,7 +61,7 @@ export const sharedStyle = (scale) => ({
   }
 });
 
-const smallBreakpointStyles = (scale) => ({
+const smallBreakpointStyles = scale => ({
   ...sharedStyle(scale),
   messageBarCloseButton: {
     ...messageBarCloseButton,
@@ -73,7 +73,7 @@ const smallBreakpointStyles = (scale) => ({
   }
 });
 
-const mediumBreakpointStyles = (scale) => ({
+const mediumBreakpointStyles = scale => ({
   ...sharedStyle(scale),
   messageBarCloseButton: {
     ...messageBarCloseButton,
@@ -85,7 +85,7 @@ const mediumBreakpointStyles = (scale) => ({
   }
 });
 
-const wideBreakpointStyles = (scale) => ({
+const wideBreakpointStyles = scale => ({
   ...sharedStyle(scale),
   messageBarBody: {
     ...messageBarBody,
@@ -93,7 +93,7 @@ const wideBreakpointStyles = (scale) => ({
   }
 });
 
-const hugeBreakpointStyles = (scale) => ({
+const hugeBreakpointStyles = scale => ({
   ...sharedStyle(scale)
 });
 

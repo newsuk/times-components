@@ -13,7 +13,7 @@ function AuthorQueryResolver({ variables }) {
   };
 }
 
-const connect = (query) => {
+const connect = query => {
   const Wrapper = ({
     data: { error, loading, ...result },
     children,

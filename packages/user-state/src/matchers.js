@@ -1,41 +1,41 @@
 /* User states */
 
-const hasAccessLoggedInOrSharedUser = (userState) =>
+const hasAccessLoggedInOrSharedUser = userState =>
   userState.hasAccess && (userState.isLoggedIn || userState.isShared);
 
-const hasAccessLoggedInUser = (userState) =>
+const hasAccessLoggedInUser = userState =>
   userState.hasAccess && userState.isLoggedIn;
 
-const isMeteredUser = (userState) =>
+const isMeteredUser = userState =>
   userState.isMetered ||
   userState.isLightPackUser ||
   userState.isRegisteredUser;
 
-const hasAccessLoggedInNonMeteredUser = (userState) =>
+const hasAccessLoggedInNonMeteredUser = userState =>
   hasAccessLoggedInUser(userState) && !isMeteredUser(userState);
 
-const hasAccessLoggedInMeteredUser = (userState) =>
+const hasAccessLoggedInMeteredUser = userState =>
   hasAccessLoggedInUser(userState) && isMeteredUser(userState);
 
 /* Entitlements */
 
-export const showSaveAndShareBar = (userState) =>
+export const showSaveAndShareBar = userState =>
   hasAccessLoggedInOrSharedUser(userState);
 
-export const showArticleExtras = (userState) =>
+export const showArticleExtras = userState =>
   hasAccessLoggedInOrSharedUser(userState);
 
-export const showTopicTags = (userState) =>
+export const showTopicTags = userState =>
   hasAccessLoggedInOrSharedUser(userState);
 
-export const showArticleSaveButton = (userState) =>
+export const showArticleSaveButton = userState =>
   hasAccessLoggedInUser(userState);
 
-export const showTokenisedEmailShare = (userState) =>
+export const showTokenisedEmailShare = userState =>
   hasAccessLoggedInNonMeteredUser(userState);
 
-export const showCommentingModule = (userState) =>
+export const showCommentingModule = userState =>
   hasAccessLoggedInNonMeteredUser(userState);
 
-export const showJoinTheConversationDialog = (userState) =>
+export const showJoinTheConversationDialog = userState =>
   hasAccessLoggedInMeteredUser(userState);

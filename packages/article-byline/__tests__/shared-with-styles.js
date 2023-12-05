@@ -7,7 +7,7 @@ import {
 } from "@times-components/jest-serializer";
 import shared from "./shared-with-styles.base";
 
-export default (Component) => {
+export default Component => {
   addSerializers(
     expect,
     compose(stylePrinter, hoistStyleTransform, minimalWebTransform)

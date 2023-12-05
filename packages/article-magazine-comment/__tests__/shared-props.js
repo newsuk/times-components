@@ -13,7 +13,7 @@ const sharedProps = {
   onVideoPress: () => {},
   onViewed: () => {},
   receiveChildList: () => {},
-  refetch: () => {},
+  refetch: () => {}
 };
 
 export default sharedProps;

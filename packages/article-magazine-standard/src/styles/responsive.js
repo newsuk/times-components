@@ -5,12 +5,12 @@ import {
   colours,
   fontSizes,
   lineHeight,
-  spacing,
+  spacing
 } from "@times-components/ts-styleguide";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 
 export const DatePublicationContainer = styled(TcText)`
-  ${(props) => props.styles && props.styles};
+  ${props => props.styles && props.styles};
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: ${spacing(3)};
@@ -55,7 +55,7 @@ export const HeadlineContainer = styled.h1`
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-weight: 400;
-  ${(props) => props.styles && props.styles}
+  ${props => props.styles && props.styles}
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
     line-height: 50px;
@@ -110,12 +110,12 @@ export const StandfirstContainer = styled.h2`
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-weight: 400;
-  ${(props) => props.styles && props.styles}
+  ${props => props.styles && props.styles}
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.infoTitle}px;
     line-height: ${lineHeight({
       font: "bodyRegular",
-      fontSize: "infoTitle",
+      fontSize: "infoTitle"
     })}px;
     margin-bottom: ${spacing(5)};
   }

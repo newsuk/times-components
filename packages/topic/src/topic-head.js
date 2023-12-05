@@ -7,7 +7,7 @@ import {
   HeadContainer,
   HeadContainerWithDescription,
   ResponsiveDivider,
-  ResponsiveName,
+  ResponsiveName
 } from "./styles/responsive";
 import styles from "./styles";
 

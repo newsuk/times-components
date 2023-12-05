@@ -21,10 +21,10 @@ export default function providerTester(
 
     componentDidMount() {
       isMounted = true;
-      setProps = (state) => {
+      setProps = state => {
         if (!isMounted) return Promise.resolve();
 
-        return new Promise((done) =>
+        return new Promise(done =>
           this.setState(() => {
             done(state);
             return state;
@@ -53,9 +53,9 @@ export default function providerTester(
     <ApolloProvider client={client}>
       {
         <Stateful>
-          {(state) => (
+          {state => (
             <WrappedComponent {...state}>
-              {(props) => {
+              {props => {
                 link.pushEvent({
                   props,
                   type: "render"

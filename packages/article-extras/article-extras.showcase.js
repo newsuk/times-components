@@ -7,7 +7,7 @@ import ArticleExtras from "./src/article-extras";
 import { relatedArticleSlice, topics } from "./fixtures/article-extras";
 
 const commentingConfig = {
-  account: "sp_pCQgrRiN",
+  account: "sp_pCQgrRiN"
 };
 
 const Container = styled.div`
@@ -21,7 +21,7 @@ const Container = styled.div`
   }
 `;
 
-const getAnalyticsStream = (action) => (event) => {
+const getAnalyticsStream = action => event => {
   // eslint-disable-next-line no-console
   console.log("analytics-action", event);
   action("analytics-action")(event);
@@ -49,7 +49,7 @@ export default {
         );
       },
       name: "Article Extras",
-      type: "story",
+      type: "story"
     },
     {
       component: ({ text }, { action }) => {
@@ -62,27 +62,27 @@ export default {
                   children: [
                     {
                       attributes: {
-                        value: text("ByLline", "Alyson Rudd", "User State"),
+                        value: text("ByLline", "Alyson Rudd", "User State")
                       },
                       children: [],
-                      name: "text",
-                    },
+                      name: "text"
+                    }
                   ],
-                  name: "inline",
-                },
-              ],
-            },
+                  name: "inline"
+                }
+              ]
+            }
           ],
           headline: text(
             "Headline",
             "If this was goodbye, Harry Kane went with a whimper",
-            "User State",
+            "User State"
           ),
           label: text("Label", "Premier League", "User State"),
           section: text("Section", "sport", "User State"),
           topics: text("Topics (csv)", "Premier League,Football", "User State")
             .split(",")
-            .map((topic) => ({ name: topic.trim() })),
+            .map(topic => ({ name: topic.trim() }))
         };
         return (
           <>
@@ -100,8 +100,8 @@ export default {
         );
       },
       name: "Algolia Rail",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Composed/Article Extras",
+  name: "Composed/Article Extras"
 };

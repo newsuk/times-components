@@ -37,7 +37,7 @@ export default () => {
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
-        </MockedProvider>,
+        </MockedProvider>
       );
       expect(stream.mock.calls).toMatchSnapshot();
     });
@@ -59,7 +59,7 @@ export default () => {
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
-        </MockedProvider>,
+        </MockedProvider>
       );
       expect(stream.mock.calls).toMatchSnapshot();
     });
@@ -72,7 +72,7 @@ export default () => {
             analyticsStream={stream}
             data={articleFixture({
               withAds: true,
-              referralUrl: "from-data.com",
+              referralUrl: "from-data.com"
             })}
             Header={() => null}
             onAuthorPress={() => {}}
@@ -83,7 +83,7 @@ export default () => {
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
-        </MockedProvider>,
+        </MockedProvider>
       );
       expect(stream.mock.calls).toMatchSnapshot();
     });

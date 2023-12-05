@@ -2,7 +2,7 @@ import React from "react";
 import { iterator } from "@times-components/test-utils";
 import * as Icons from "../src/icons";
 
-export default (renderMethod) => {
+export default renderMethod => {
   const tests = [];
 
   Object.entries(Icons).forEach(([name, Icon]) => {

@@ -1,14 +1,14 @@
 {
-    "contactItems": [
-        {
-            "title": "Call us (UK)",
-            "phone": "0800 068 4965",
-            "hrs": "Mon - Fri: 8am - 7pm Weekends: 8am - 4pm"
-        },
-        {
-            "title": "Call us (Ireland)",
-            "phone": "1800 949690",
-            "hrs": "Mon - Fri: 8am - 7pm Weekends: 8am - 4pm"
-        }
-    ]
+  "contactItems": [
+    {
+      "title": "Call us (UK)",
+      "phone": "0800 068 4965",
+      "hrs": "Mon - Fri: 8am - 7pm Weekends: 8am - 4pm"
+    },
+    {
+      "title": "Call us (Ireland)",
+      "phone": "1800 949690",
+      "hrs": "Mon - Fri: 8am - 7pm Weekends: 8am - 4pm"
+    }
+  ]
 }

@@ -5,12 +5,12 @@ const templateWithDropCaps = [
   "indepth",
   "maincomment",
   "magazinestandard",
-  "magazinecomment",
+  "magazinecomment"
 ];
 
-export const isQuote = (char) => /'|"|‘|“/.test(char);
+export const isQuote = char => /'|"|‘|“/.test(char);
 
-const splitNode = (node) => {
+const splitNode = node => {
   const { children } = node;
   if (children.length === 0) {
     return node;
@@ -25,7 +25,7 @@ const splitNode = (node) => {
     return {
       ...node,
       attributes: {
-        ...node.attributes,
+        ...node.attributes
       },
       children: [
         {
@@ -33,19 +33,19 @@ const splitNode = (node) => {
           attributes: {
             ...children[0].attributes,
             value: children[0].attributes.value.slice(0, sliceIndex),
-            dropCap: true,
-          },
+            dropCap: true
+          }
         },
         {
           ...children[0],
           attributes: {
             ...children[0].attributes,
             value: children[0].attributes.value.slice(sliceIndex),
-            dropCap: true,
-          },
+            dropCap: true
+          }
         },
-        ...children.slice(1),
-      ],
+        ...children.slice(1)
+      ]
     };
   }
   if (children[0].name === "link" && children[0].children.length === 0) {
@@ -57,22 +57,22 @@ const splitNode = (node) => {
       ...node,
       attributes: {
         ...node.attributes,
-        dropCap: true,
+        dropCap: true
       },
-      children: [firstChild, ...children.slice(1)],
+      children: [firstChild, ...children.slice(1)]
     };
     firstChild.attributes.dropCap = true;
     return result;
   }
   const result = {
     ...node,
-    children: [firstChild, ...children.slice(1)],
+    children: [firstChild, ...children.slice(1)]
   };
   firstChild.attributes.dropCap = true;
   return result;
 };
 
-const findFirstTextNode = (children) => {
+const findFirstTextNode = children => {
   const child = children[0];
   if (!child) {
     return children;
@@ -91,7 +91,7 @@ const insertDropcapIntoAST = (children, template, isDropcapDisabled) => {
       !isDropcapDisabled &&
       children.length > 0
     ) {
-      const child = children.find((x) => x.name === "paragraph");
+      const child = children.find(x => x.name === "paragraph");
 
       if (!child || child.children.length === 0) {
         return children;
@@ -114,9 +114,9 @@ const insertDropcapIntoAST = (children, template, isDropcapDisabled) => {
         {
           name: "dropCap",
           attributes: {},
-          children: [withCap],
+          children: [withCap]
         },
-        withoutCap,
+        withoutCap
       );
 
       return clonedChildren;

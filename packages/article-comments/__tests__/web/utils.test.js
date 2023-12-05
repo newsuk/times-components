@@ -11,11 +11,11 @@ let mockFetchResponse = {};
 
 const localStorageMock = {
   storage: {},
-  getItem: jest.fn((key) => localStorageMock.storage[key]),
+  getItem: jest.fn(key => localStorageMock.storage[key]),
   setItem: jest.fn((key, value) => {
     localStorageMock.storage[key] = value;
   }),
-  removeItem: jest.fn((key) => delete localStorageMock.storage[key])
+  removeItem: jest.fn(key => delete localStorageMock.storage[key])
 };
 
 Object.defineProperty(window, "localStorage", { value: localStorageMock });

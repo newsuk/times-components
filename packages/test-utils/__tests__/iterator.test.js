@@ -5,7 +5,7 @@ import { iterator } from "../src/index";
 
 Enzyme.configure({ adapter: new Adapter() });
 
-const exampleTest = (ordinal) => {
+const exampleTest = ordinal => {
   const TextComponent = <div>This is the {ordinal} test</div>;
   const wrapper = shallow(TextComponent);
   expect(wrapper).toMatchSnapshot();

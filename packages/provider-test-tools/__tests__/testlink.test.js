@@ -3,10 +3,10 @@ import TestLink from "../src/test-link";
 describe("TestLink tests", () => {
   it("should add an error event", async () => {
     const link = new TestLink(() => Promise.reject(new Error("network error")));
-    const error = await new Promise((done) => {
+    const error = await new Promise(done => {
       link.request({ operationName: "Test" }).subscribe(
         () => {},
-        (e) => done(e)
+        e => done(e)
       );
     });
 

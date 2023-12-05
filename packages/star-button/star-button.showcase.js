@@ -9,17 +9,17 @@ const getProps = ({ boolean }) => ({
 export default {
   children: [
     {
-      component: (knobs) => <StarButton {...getProps(knobs)} />,
+      component: knobs => <StarButton {...getProps(knobs)} />,
       name: "Initial",
       type: "story"
     },
     {
-      component: (knobs) => <StarButton {...getProps(knobs)} selected />,
+      component: knobs => <StarButton {...getProps(knobs)} selected />,
       name: "Selected",
       type: "story"
     },
     {
-      component: (knobs) => <StarButton {...getProps(knobs)} disabled />,
+      component: knobs => <StarButton {...getProps(knobs)} disabled />,
       name: "Disabled",
       type: "story"
     }

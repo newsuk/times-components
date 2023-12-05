@@ -1,6 +1,6 @@
 const { onError } = require("apollo-link-error");
 
-const errorLink = (logger) =>
+const errorLink = logger =>
   onError(({ networkError, graphQLErrors }) => {
     let msg = "";
     if (graphQLErrors) {

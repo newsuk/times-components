@@ -14,7 +14,7 @@ class FakeIntersectionObserver {
 
   static dispatchObservedAll() {
     this.observationCallback(
-      this.observing.map((element) => ({
+      this.observing.map(element => ({
         intersectionRatio: 1,
         isIntersecting: true,
         target: {
@@ -42,7 +42,7 @@ class FakeIntersectionObserver {
 }
 FakeIntersectionObserver.observing = [];
 
-const stubGetElementById = (id) => ({ id });
+const stubGetElementById = id => ({ id });
 
 class ListComponent extends Component {
   static get propTypes() {
@@ -82,7 +82,7 @@ class ListComponent extends Component {
     const { items } = this.props;
     return (
       <TcView>
-        {items.map((item) => (
+        {items.map(item => (
           <TcText id={item.elementId} key={item.someKey}>
             Item {item.someValue}
           </TcText>
@@ -108,7 +108,7 @@ module.exports = () => {
         eventMap[eventName] = callback;
       });
 
-      global.window.removeEventListener = jest.fn((eventName) => {
+      global.window.removeEventListener = jest.fn(eventName => {
         delete eventMap[eventName];
       });
     });
@@ -251,7 +251,7 @@ module.exports = () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent, {
-          getAttrs: (props) => ({
+          getAttrs: props => ({
             id: props.someKey,
             myKey: "myVal"
           })

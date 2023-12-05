@@ -47,7 +47,7 @@ class Comments extends Component {
       return;
     }
 
-    const getFilterEvent = (event) => {
+    const getFilterEvent = event => {
       switch (event.detail.sortedBy) {
         case "best":
           return onCommentFilterMostRecommended(event);
@@ -60,7 +60,7 @@ class Comments extends Component {
       }
     };
 
-    const getShareEvent = (event) => {
+    const getShareEvent = event => {
       switch (event.detail.type) {
         case "link":
           return onCommentShareLink(event);
@@ -77,7 +77,7 @@ class Comments extends Component {
 
     document.addEventListener(
       "spot-im-current-user-typing-start",
-      async (event) => {
+      async event => {
         onCommentStart(event);
         const displayName = getDisplayNameFromLocalStorage();
         if (!displayName) return;
@@ -101,7 +101,7 @@ class Comments extends Component {
       onCommentNotification
     );
     document.addEventListener("spot-im-user-up-vote-click", onCommentRecommend);
-    document.addEventListener("spot-im-sort-by-select", (event) =>
+    document.addEventListener("spot-im-sort-by-select", event =>
       getFilterEvent(event)
     );
     document.addEventListener(
@@ -120,7 +120,7 @@ class Comments extends Component {
       "spot-im-open-user-profile",
       onCommentUsernameClicked
     );
-    document.addEventListener("spot-im-share-type", (event) =>
+    document.addEventListener("spot-im-share-type", event =>
       getShareEvent(event)
     );
 
@@ -197,7 +197,7 @@ class Comments extends Component {
         onCommentSettingsClicked={onCommentSettingsClicked}
       >
         <div
-          ref={(el) => {
+          ref={el => {
             this.container = el;
           }}
         />

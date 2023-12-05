@@ -35,5 +35,5 @@ export default () => {
   // eslint-disable-next-line global-require
   require("jest-styled-components");
 
-  shared((component) => mount(component));
+  shared(component => mount(component));
 };

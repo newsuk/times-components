@@ -10,7 +10,7 @@ const SimpleParagraph = ({
   key,
   children,
   defaultFont,
-  LinkComponent,
+  LinkComponent
 }) => {
   if (children.length === 0) {
     return null;
@@ -21,8 +21,8 @@ const SimpleParagraph = ({
   return (
     <ArticleParagraphWrapper ast={tree} key={key} uid={key}>
       <TcText allowFontScaling={false} selectable style={{ lineHeight }}>
-        {children.map((child) =>
-          child.splitByDifferenceInAttributes().map((nestedChild) => {
+        {children.map(child =>
+          child.splitByDifferenceInAttributes().map(nestedChild => {
             const [attribute, href] = nestedChild.collapsedAttributes(0);
             const style = attribute ? attribute.settings : defaultFont;
             const type = href ? href.type : null;
@@ -33,7 +33,7 @@ const SimpleParagraph = ({
                 <LinkComponent
                   url={href}
                   style={linkStyle}
-                  onPress={(e) =>
+                  onPress={e =>
                     onLinkPress(e, { canonicalId, type, url: href.href })
                   }
                 >
@@ -46,7 +46,7 @@ const SimpleParagraph = ({
                 {nestedChild.string}
               </TcText>
             );
-          }),
+          })
         )}
       </TcText>
     </ArticleParagraphWrapper>
@@ -59,7 +59,7 @@ SimpleParagraph.propTypes = {
   key: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   defaultFont: PropTypes.object.isRequired,
-  LinkComponent: PropTypes.func.isRequired,
+  LinkComponent: PropTypes.func.isRequired
 };
 
 export default SimpleParagraph;

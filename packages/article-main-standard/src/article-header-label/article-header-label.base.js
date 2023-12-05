@@ -5,7 +5,7 @@ import { colours } from "@times-components/ts-styleguide";
 import VideoLabel from "@times-components/video-label";
 import styles from "../styles/article-header";
 
-export default (render) =>
+export default render =>
   ({ isVideo, label }) => {
     if (!isVideo && !label) return null;
 
@@ -14,7 +14,7 @@ export default (render) =>
     return render(
       {
         style: styles.articleLabel,
-        testID: "label",
+        testID: "label"
       },
       <Context.Consumer>
         {({ theme: { sectionColour } }) => (
@@ -23,6 +23,6 @@ export default (render) =>
             title={label}
           />
         )}
-      </Context.Consumer>,
+      </Context.Consumer>
     );
   };

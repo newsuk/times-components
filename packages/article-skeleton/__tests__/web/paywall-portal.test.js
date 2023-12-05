@@ -6,7 +6,7 @@ describe("Paywall Portal", () => {
   describe("Should return an empty div with an id of the id that is passed as prop", () => {
     const props = {
       id: "id",
-      componentName: "componentName",
+      componentName: "componentName"
     };
 
     it("when window is undefined", () => {
@@ -24,8 +24,8 @@ describe("Paywall Portal", () => {
     it("when id is not a property of paywallComponent", () => {
       window = {
         paywallComponent: {
-          hello: "World",
-        },
+          hello: "World"
+        }
       };
       const output = TestRenderer.create(<PaywallPortal {...props} />);
       expect(output).toMatchSnapshot();
@@ -36,11 +36,11 @@ describe("Paywall Portal", () => {
     it("and contain the component that is passed as componentName", () => {
       const props = {
         id: "id",
-        componentName: "componentName",
+        componentName: "componentName"
       };
 
       window.paywallComponent = {
-        componentName: "<div>Hello World</div>",
+        componentName: "<div>Hello World</div>"
       };
 
       const output = TestRenderer.create(<PaywallPortal {...props} />);

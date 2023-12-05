@@ -12,7 +12,7 @@ const props = {
   showImage: true
 };
 
-export default (renderMethod) => {
+export default renderMethod => {
   // magic to stop the old RN Animated library from dying, as each test kicks off another animation that uses timing
   jest.useFakeTimers();
 

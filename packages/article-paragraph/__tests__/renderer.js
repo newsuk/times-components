@@ -13,8 +13,8 @@ export default (ast, section = "default") => {
       value={{
         theme: {
           ...themeFactory(section, "mainstandard"),
-          scale: scales.medium,
-        },
+          scale: scales.medium
+        }
       }}
     >
       {renderTree(ast, {
@@ -32,7 +32,7 @@ export default (ast, section = "default") => {
               {children}
             </ArticleParagraph>
           );
-        },
+        }
       })}
     </ContextProviderWithDefaults>
   );

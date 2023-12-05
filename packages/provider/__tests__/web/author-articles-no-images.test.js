@@ -8,7 +8,7 @@ import {
 import { authorArticlesNoImages as authorArticlesNoImagesQuery } from "@times-components/provider-queries";
 import { AuthorArticlesNoImagesProvider } from "../../src/provider";
 
-const renderComponent = (child) => {
+const renderComponent = child => {
   const pageSize = 1;
   const slug = "deborah-haynes";
 
@@ -16,7 +16,7 @@ const renderComponent = (child) => {
     <MockFixture
       params={makeAuthorParams({
         articleQuery: authorArticlesNoImagesQuery,
-        articleVariables: (iteration) => ({
+        articleVariables: iteration => ({
           first: pageSize,
           longSummaryLength: 360,
           shortSummaryLength: 220,
@@ -27,7 +27,7 @@ const renderComponent = (child) => {
         pageSize,
         slug
       })}
-      render={(mocks) => (
+      render={mocks => (
         <MockedProvider mocks={mocks}>
           <AuthorArticlesNoImagesProvider
             debounceTimeMs={0}
@@ -44,7 +44,7 @@ const renderComponent = (child) => {
 };
 
 describe("AuthorArticlesNoImagesProvider", () => {
-  it("returns query result", (done) => {
+  it("returns query result", done => {
     renderComponent(({ isLoading, author }) => {
       if (!isLoading) {
         expect(author).toMatchSnapshot();

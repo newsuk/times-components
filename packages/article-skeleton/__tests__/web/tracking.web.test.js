@@ -28,7 +28,7 @@ it("analytics when rendering a shared Article page with metered access", () => {
     isLoggedIn: true,
     isMetered: true,
     isShared: true,
-    registrationType: "metered access:article limit not reached",
+    registrationType: "metered access:article limit not reached"
   };
 
   global.nuk.user = userStateMock;
@@ -49,7 +49,7 @@ it("analytics when rendering a shared Article page with metered access", () => {
         onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
       />
-    </MockedProvider>,
+    </MockedProvider>
   );
   expect(stream.mock.calls).toMatchSnapshot();
 });
@@ -71,8 +71,8 @@ it("should track ArticleLink clicks in analytics", () => {
     getChildContext() {
       return {
         tracking: {
-          analytics: analyticsStream,
-        },
+          analytics: analyticsStream
+        }
       };
     }
 
@@ -87,8 +87,8 @@ it("should track ArticleLink clicks in analytics", () => {
 
   WithTrackingContext.childContextTypes = {
     tracking: PropTypes.shape({
-      analytics: PropTypes.func,
-    }),
+      analytics: PropTypes.func
+    })
   };
 
   const testInstance = TestRenderer.create(<WithTrackingContext />);

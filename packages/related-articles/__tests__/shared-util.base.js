@@ -4,30 +4,30 @@ import { iterator } from "@times-components/test-utils";
 import Card from "@times-components/card";
 import RelatedArticles from "../src/related-articles";
 
-export const testSummary = (summary) => [
+export const testSummary = summary => [
   {
     attributes: {},
     children: [
       {
         attributes: {
-          value: `Summary ${summary}`,
+          value: `Summary ${summary}`
         },
         children: [],
-        name: "text",
-      },
+        name: "text"
+      }
     ],
-    name: "paragraph",
-  },
+    name: "paragraph"
+  }
 ];
 
 export const createRelatedArticlesProps = (
   fixtureData,
   action = () => {},
-  onPress = () => {},
+  onPress = () => {}
 ) => ({
   analyticsStream: action,
   onPress,
-  slice: fixtureData.relatedArticleSlice,
+  slice: fixtureData.relatedArticleSlice
 });
 
 const beforeAndAfterEach = () => {
@@ -37,8 +37,8 @@ const beforeAndAfterEach = () => {
     mockDate.set(1514764800000, 0);
     global.Intl = {
       DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Europe/London" }),
-      }),
+        resolvedOptions: () => ({ timeZone: "Europe/London" })
+      })
     };
     jest.useFakeTimers();
   });
@@ -51,7 +51,7 @@ const beforeAndAfterEach = () => {
 
 export const noArticlesTests =
   ({ fixture }) =>
-  (renderComponent) => {
+  renderComponent => {
     beforeAndAfterEach();
 
     const tests = [
@@ -61,13 +61,11 @@ export const noArticlesTests =
           const events = jest.fn();
 
           const output = renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
 
           expect(output).toMatchSnapshot();
-        },
+        }
       },
       {
         name: "no related articles when there is no given slice name",
@@ -77,13 +75,13 @@ export const noArticlesTests =
               analyticsStream={() => {}}
               onPress={() => {}}
               slice={{
-                sliceName: "",
+                sliceName: ""
               }}
-            />,
+            />
           );
 
           expect(output).toMatchSnapshot();
-        },
+        }
       },
       {
         name: "analytics with no related articles",
@@ -91,14 +89,12 @@ export const noArticlesTests =
           const events = jest.fn();
 
           renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
 
           expect(events.mock.calls).toMatchSnapshot();
-        },
-      },
+        }
+      }
     ];
 
     iterator(tests);
@@ -106,7 +102,7 @@ export const noArticlesTests =
 
 export const hasVideoTests =
   ({ fixture, name }) =>
-  (renderComponent) => {
+  renderComponent => {
     beforeAndAfterEach();
 
     const tests = [
@@ -116,14 +112,12 @@ export const hasVideoTests =
           const events = jest.fn();
 
           const output = renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
 
           expect(output).toMatchSnapshot();
-        },
-      },
+        }
+      }
     ];
 
     iterator(tests);
@@ -131,7 +125,7 @@ export const hasVideoTests =
 
 export const noShortHeadlineTests =
   ({ fixture, name }) =>
-  (renderComponent) => {
+  renderComponent => {
     beforeAndAfterEach();
 
     const tests = [
@@ -141,13 +135,11 @@ export const noShortHeadlineTests =
           const events = jest.fn();
 
           const output = renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
 
           expect(output).toMatchSnapshot();
-        },
+        }
       },
       {
         name: `analytics for ${name}`,
@@ -155,14 +147,12 @@ export const noShortHeadlineTests =
           const events = jest.fn();
 
           renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
 
           expect(events.mock.calls).toMatchSnapshot();
-        },
-      },
+        }
+      }
     ];
 
     iterator(tests);
@@ -171,7 +161,7 @@ export const noShortHeadlineTests =
 export const oneArticleTests =
   (platform = () => []) =>
   ({ fixture, name }) =>
-  (renderComponent) => {
+  renderComponent => {
     beforeAndAfterEach();
 
     const tests = [
@@ -181,13 +171,11 @@ export const oneArticleTests =
           const events = jest.fn();
 
           const output = renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
 
           expect(output).toMatchSnapshot();
-        },
+        }
       },
       {
         name: `analytics for ${name}`,
@@ -195,15 +183,13 @@ export const oneArticleTests =
           const events = jest.fn();
 
           renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
 
           expect(events.mock.calls).toMatchSnapshot();
-        },
+        }
       },
-      ...platform(fixture, name),
+      ...platform(fixture, name)
     ];
 
     iterator(tests);
@@ -211,7 +197,7 @@ export const oneArticleTests =
 
 export const twoArticlesTests =
   ({ fixture, name }) =>
-  (renderComponent) => {
+  renderComponent => {
     beforeAndAfterEach();
 
     const tests = [
@@ -221,13 +207,11 @@ export const twoArticlesTests =
           const events = jest.fn();
 
           const output = renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
 
           expect(output).toMatchSnapshot();
-        },
+        }
       },
       {
         name: `analytics for ${name}`,
@@ -235,14 +219,12 @@ export const twoArticlesTests =
           const events = jest.fn();
 
           renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
 
           expect(events.mock.calls).toMatchSnapshot();
-        },
-      },
+        }
+      }
     ];
 
     iterator(tests);
@@ -250,7 +232,7 @@ export const twoArticlesTests =
 
 export const threeArticlesTests =
   ({ fixture, name }) =>
-  (renderComponent) => {
+  renderComponent => {
     beforeAndAfterEach();
 
     const tests = [
@@ -260,12 +242,10 @@ export const threeArticlesTests =
           const events = jest.fn();
 
           const output = renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
           expect(output).toMatchSnapshot();
-        },
+        }
       },
       {
         name: `analytics for ${name}`,
@@ -273,14 +253,12 @@ export const threeArticlesTests =
           const events = jest.fn();
 
           renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
 
           expect(events.mock.calls).toMatchSnapshot();
-        },
-      },
+        }
+      }
     ];
 
     iterator(tests);
@@ -288,7 +266,7 @@ export const threeArticlesTests =
 
 export const threeArticlesWithLeadAssetOverrideTests =
   ({ fixture, name }) =>
-  (renderComponent) => {
+  renderComponent => {
     beforeAndAfterEach();
 
     const tests = [
@@ -298,16 +276,14 @@ export const threeArticlesWithLeadAssetOverrideTests =
           const events = jest.fn();
 
           const output = renderComponent(
-            <RelatedArticles
-              {...createRelatedArticlesProps(fixture, events)}
-            />,
+            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
           );
 
           expect(output.root.findAllByType(Card)[0].props.imageUri).toEqual(
-            "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d59bcac-d044-11e8-a7e2-4943f60e65b3.jpg?crop=1073%2C1750%2C64%2C400",
+            "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9d59bcac-d044-11e8-a7e2-4943f60e65b3.jpg?crop=1073%2C1750%2C64%2C400"
           );
-        },
-      },
+        }
+      }
     ];
 
     iterator(tests);

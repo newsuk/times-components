@@ -9,12 +9,12 @@ import {
 import props from "./key-facts-text-prop-types";
 import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 
-const getTitle = (data) => {
+const getTitle = data => {
   if (data.children.length === 1 && data.children[0].attributes) {
     return data.children[0].attributes.value;
   }
 
-  const linkText = data.children.map((child) =>
+  const linkText = data.children.map(child =>
     child.attributes ? child.attributes.value : child.attributes
   );
   const title = linkText.join(" ");
@@ -56,7 +56,7 @@ const KeyFactsText = ({
               return (
                 <KeyFactTextLink
                   key={key}
-                  onClick={(event) => {
+                  onClick={event => {
                     handleOnClickScrollTo(event, url);
                     handleClickEventAnalytics(
                       fireAnalyticsEvent,

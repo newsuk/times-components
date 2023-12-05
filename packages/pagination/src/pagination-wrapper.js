@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
 
-export default (PaginatedComponent) => {
+export default PaginatedComponent => {
   class Helper extends Component {
     static addHistory(page) {
       if (typeof window !== "undefined" && window.history) {
@@ -35,7 +35,7 @@ export default (PaginatedComponent) => {
     componentDidMount() {
       const { page } = this.state;
       if (typeof window !== "undefined") {
-        window.onpopstate = (event) => {
+        window.onpopstate = event => {
           if (event.state) {
             this.setState({
               page: event.state.page

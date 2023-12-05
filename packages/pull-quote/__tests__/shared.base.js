@@ -9,7 +9,7 @@ const caption = "A caption";
 const text = "Some extra text";
 const twitter = "@twitter";
 
-export default (renderComponent) => {
+export default renderComponent => {
   const tests = [
     {
       name: "with a caption and a text",

@@ -46,7 +46,7 @@ describe("Sticky", () => {
       eventMap[eventName] = callback;
     });
 
-    window.removeEventListener = jest.fn((eventName) => {
+    window.removeEventListener = jest.fn(eventName => {
       delete eventMap[eventName];
     });
 
@@ -443,7 +443,7 @@ describe("Sticky", () => {
 
     it("computeProgressStyles correctly applies the style for the correct progress", () => {
       const TestComponent = styled.div`
-        ${computeProgressStyles((progress) => `opacity: ${progress}`)};
+        ${computeProgressStyles(progress => `opacity: ${progress}`)};
       `;
 
       render(

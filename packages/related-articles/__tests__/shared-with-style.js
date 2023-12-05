@@ -5,7 +5,7 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  stylePrinter,
+  stylePrinter
 } from "@times-components/jest-serializer";
 
 jest.mock("@times-components/card", () => "Card");
@@ -18,8 +18,8 @@ addSerializers(
     stylePrinter,
     minimalWebTransform,
     minimaliseTransform((value, key) => key !== "style" && key !== "className"),
-    hoistStyleTransform,
-  ),
+    hoistStyleTransform
+  )
 );
 
 // eslint-disable-next-line global-require

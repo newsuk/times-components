@@ -24,7 +24,7 @@ describe("interactive-wrapper", () => {
 
   async function waitForInserted() {
     await polyfillPromise;
-    Array.from(document.querySelectorAll("link")).forEach((link) =>
+    Array.from(document.querySelectorAll("link")).forEach(link =>
       link.onload()
     );
   }

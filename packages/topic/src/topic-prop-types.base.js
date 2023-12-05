@@ -11,8 +11,8 @@ export const propTypes = {
   topic: PropTypes.shape({
     metaDescription: PropTypes.string,
     description: topicHeadPropTypes.description,
-    name: topicHeadPropTypes.name,
-  }),
+    name: topicHeadPropTypes.name
+  })
 };
 
 export const defaultProps = {
@@ -20,5 +20,5 @@ export const defaultProps = {
   isLoading: true,
   page: 1,
   pageSize: 10,
-  topic: null,
+  topic: null
 };

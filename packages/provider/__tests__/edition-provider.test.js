@@ -7,7 +7,7 @@ import {
 } from "@times-components/provider-test-tools";
 import { EditionProvider } from "../src/provider";
 
-const renderComponent = (child) => {
+const renderComponent = child => {
   const id = "2b6e462c-225f-11e9-b782-40e94f317da5";
 
   return renderer.create(
@@ -17,7 +17,7 @@ const renderComponent = (child) => {
           id
         })
       })}
-      render={(mocks) => (
+      render={mocks => (
         <MockedProvider mocks={mocks}>
           <EditionProvider debounceTimeMs={0} id={id}>
             {child}
@@ -29,7 +29,7 @@ const renderComponent = (child) => {
 };
 
 describe("Edition provider", () => {
-  it("returns query result", (done) => {
+  it("returns query result", done => {
     renderComponent(({ isLoading, edition, error }) => {
       if (error) {
         throw error;

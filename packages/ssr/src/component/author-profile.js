@@ -5,7 +5,7 @@ const { ApolloProvider } = require("react-apollo");
 const { HelmetProvider } = require("react-helmet-async");
 const { AuthorProfileProvider } = require("@times-components/provider/rnw");
 const {
-  ContextProviderWithDefaults,
+  ContextProviderWithDefaults
 } = require("@times-components/context/rnw");
 const AuthorProfile = require("@times-components/author-profile/rnw").default;
 
@@ -16,7 +16,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     makeArticleUrl,
     makeTopicUrl,
     page,
-    pageSize,
+    pageSize
   } = data;
 
   return React.createElement(
@@ -31,7 +31,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
           debounceTimeMs,
           page,
           pageSize,
-          slug: authorSlug,
+          slug: authorSlug
         },
         ({ author, isLoading, error, refetch }) =>
           React.createElement(
@@ -47,10 +47,10 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               page,
               pageSize,
               refetch,
-              slug: authorSlug,
-            }),
-          ),
-      ),
-    ),
+              slug: authorSlug
+            })
+          )
+      )
+    )
   );
 };

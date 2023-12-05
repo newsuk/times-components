@@ -4,7 +4,7 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 import TestRenderer from "react-test-renderer";
 import "./mocks";
@@ -20,9 +20,9 @@ export default () => {
       print,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => omitProps.has(key) || key.includes("Class"),
-      ),
-    ),
+        (value, key) => omitProps.has(key) || key.includes("Class")
+      )
+    )
   );
 
   const tests = [
@@ -36,11 +36,11 @@ export default () => {
             pageSize={3}
             refetch={() => {}}
             showImages={false}
-          />,
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "article list with missing image",
@@ -50,8 +50,8 @@ export default () => {
           ...article,
           leadAsset: {
             crop: {},
-            title: "Lead 1",
-          },
+            title: "Lead 1"
+          }
         };
 
         const testInstance = TestRenderer.create(
@@ -61,12 +61,12 @@ export default () => {
             pageSize={3}
             refetch={() => {}}
             showImages={false}
-          />,
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   shared(tests);

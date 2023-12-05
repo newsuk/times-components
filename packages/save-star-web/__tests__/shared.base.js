@@ -19,8 +19,8 @@ jest.doMock("../src/save-api", () => {
     constructor(props) {
       super(props);
 
-      setSavedStatus = (savedStatus) => this.setState({ savedStatus });
-      setIsLoading = (isLoading) => this.setState({ isLoading });
+      setSavedStatus = savedStatus => this.setState({ savedStatus });
+      setIsLoading = isLoading => this.setState({ isLoading });
     }
 
     render() {

@@ -62,9 +62,9 @@ const mockSchema = {
   }
 };
 
-const makeTestDir = (name) => mkdir(name);
+const makeTestDir = name => mkdir(name);
 
-const removeTestDir = (name) => rmdir(name);
+const removeTestDir = name => rmdir(name);
 
 describe("fetch gql schema should", () => {
   const tests = [

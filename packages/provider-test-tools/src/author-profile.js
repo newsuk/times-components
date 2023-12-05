@@ -79,13 +79,13 @@ export default ({
   authorError,
   count = 200,
   hasLeadAssets = true,
-  makeItem = (x) => x,
+  makeItem = x => x,
   pageSize,
   slug
 }) => [
   ...generateAuthors({ count, error: authorError, hasLeadAssets, slug }),
   ...generateQueries(
-    (iteration) => {
+    iteration => {
       let itemIndex = (iteration - 1) * pageSize;
       let imageIndex = (iteration - 1) * pageSize;
 

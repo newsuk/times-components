@@ -28,7 +28,7 @@ const query = gql`
 `;
 
 const Connected = connect(query);
-const Debounced = (props) => <Connected {...props} debounceTimeMs={1000} />;
+const Debounced = props => <Connected {...props} debounceTimeMs={1000} />;
 
 describe("provider execution order tests", () => {
   beforeAll(() => jest.useFakeTimers());

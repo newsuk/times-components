@@ -3,7 +3,7 @@
 
 /* eslint-env browser */
 
-const webviewEventCallbackSetup = (options) => {
+const webviewEventCallbackSetup = options => {
   const { window } = options;
   window.eventCallback = (type, detail) => {
     window.postMessage(
@@ -14,7 +14,7 @@ const webviewEventCallbackSetup = (options) => {
       })
     );
   };
-  window.addEventListener("error", (ev) => {
+  window.addEventListener("error", ev => {
     const file = (ev.filename || "").substring(0, 100);
     window.eventCallback(
       "error",

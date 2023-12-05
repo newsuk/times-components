@@ -49,7 +49,7 @@ class CardContent extends Component {
     } = this.props;
 
     const TcCardContainer = styled(TcView)`
-      ${(props) => props.styles && props.styles};
+      ${props => props.styles && props.styles};
     `;
 
     const renderImage = () => {

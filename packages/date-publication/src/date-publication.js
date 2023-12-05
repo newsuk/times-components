@@ -10,7 +10,7 @@ import {
 
 const DatePublication = ({ publication, ...props }) => (
   <DateTime {...props}>
-    {(dateTime) => (
+    {dateTime => (
       <Fragment>
         <time dateTime={props.date}>
           {dateTime}

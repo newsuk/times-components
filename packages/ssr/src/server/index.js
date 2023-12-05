@@ -5,5 +5,5 @@ const topicServer = require("./topic");
 module.exports = {
   article: articleServer,
   authorProfile: authorProfileServer,
-  topic: topicServer,
+  topic: topicServer
 };

@@ -9,10 +9,10 @@ const { width } = getDimensions();
 // We want to ensure a small number of caches that are more frequently "warm"
 // so we limit the number of resolutions we will request for assets
 // across devices to a common set
-export const normaliseWidthForAssetRequestCache = (widthInPixels) => {
-  const nWidth = acceptedWidths.find((w) => widthInPixels <= w);
+export const normaliseWidthForAssetRequestCache = widthInPixels => {
+  const nWidth = acceptedWidths.find(w => widthInPixels <= w);
 
   return nWidth || acceptedWidths[acceptedWidths.length - 1];
 };
 
-export const screenWidth = (isTablet) => (isTablet ? tabletWidth : width);
+export const screenWidth = isTablet => (isTablet ? tabletWidth : width);

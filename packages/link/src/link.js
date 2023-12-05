@@ -11,12 +11,12 @@ import {
 import PropTypes from "prop-types";
 
 const respStylesSelector =
-  (selector) =>
+  selector =>
   ({ responsiveLinkStyles }) =>
     (responsiveLinkStyles && responsiveLinkStyles[selector]) || "";
 
 const RespLink = styled.a`
-  text-decoration: ${(props) =>
+  text-decoration: ${props =>
     props.underlined && props.responsiveLinkStyles ? "underline" : "none"};
 
   ${respStylesSelector("base")};
@@ -42,7 +42,7 @@ const Link = ({
 
   return (
     <RespLink
-      onClick={(event) => {
+      onClick={event => {
         handleOnClickScrollTo(event, url);
         onPress(event);
       }}

@@ -5,34 +5,34 @@ import {
   authorProfile as makeParams,
   fixtures,
   MockFixture,
-  MockedProvider,
+  MockedProvider
 } from "@times-components/provider-test-tools";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import {
   authorArticlesWithImages as authorArticlesWithImagesQuery,
-  authorArticlesNoImages as authorArticlesNoImagesQuery,
+  authorArticlesNoImages as authorArticlesNoImagesQuery
 } from "@times-components/provider-queries";
 import storybookReporter from "@times-components/tealium-utils";
 import AuthorProfile from "./src/author-profile";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    },
+    }
   ]);
 
 const {
-  defaultProps: { adConfig },
+  defaultProps: { adConfig }
 } = AdComposer;
 
-const getProps = (decorateAction) => ({
+const getProps = decorateAction => ({
   adConfig,
   analyticsStream: storybookReporter,
   onArticlePress: preventDefaultedAction(decorateAction)("onArticlePress"),
   onTwitterLinkPress:
-    preventDefaultedAction(decorateAction)("onTwitterLinkPress"),
+    preventDefaultedAction(decorateAction)("onTwitterLinkPress")
 });
 
 const articleImageRatio = "3:2";
@@ -42,7 +42,7 @@ const slug = "deborah-haynes";
 const makeAuthorProfile = (decorateAction, params) => (
   <MockFixture
     params={params}
-    render={(mocks) => (
+    render={mocks => (
       <MockedProvider mocks={mocks}>
         <AuthorProfileProvider
           articleImageRatio={articleImageRatio}
@@ -57,7 +57,7 @@ const makeAuthorProfile = (decorateAction, params) => (
             error,
             page,
             pageSize: authorPageSize,
-            refetch,
+            refetch
           }) => (
             <AuthorProfile
               author={author}
@@ -84,11 +84,11 @@ export default {
           decorateAction,
           makeParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug,
+              slug
             }),
             makeItem(item, itemIndex) {
               if (fixtures.articleListWithImages[itemIndex]) {
@@ -98,11 +98,11 @@ export default {
               return item;
             },
             pageSize,
-            slug,
-          }),
+            slug
+          })
         ),
       name: "Default with images",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
@@ -110,12 +110,12 @@ export default {
           decorateAction,
           makeParams({
             articleQuery: authorArticlesNoImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               longSummaryLength: 360,
               shortSummaryLength: 220,
               skip: (iteration - 1) * pageSize,
-              slug,
+              slug
             }),
             hasLeadAssets: false,
             makeItem(item, itemIndex) {
@@ -129,18 +129,18 @@ export default {
                     }
 
                     return fixtures.articleListNoImages[itemIndex].shortSummary;
-                  },
+                  }
                 };
               }
 
               return item;
             },
             pageSize,
-            slug,
-          }),
+            slug
+          })
         ),
       name: "Default without images",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) => (
@@ -154,7 +154,7 @@ export default {
         </MockedProvider>
       ),
       name: "Loading",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
@@ -162,19 +162,19 @@ export default {
           decorateAction,
           makeParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug,
+              slug
             }),
             authorError: () => new Error("Author Error"),
             pageSize,
-            slug,
-          }),
+            slug
+          })
         ),
       name: "With an error getting author",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
@@ -183,39 +183,39 @@ export default {
           makeParams({
             articleError: () => new Error("Broken Page"),
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug,
+              slug
             }),
             pageSize,
-            slug,
-          }),
+            slug
+          })
         ),
       name: "With an error getting articles",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
         makeAuthorProfile(
           decorateAction,
           makeParams({
-            articleError: (iteration) =>
+            articleError: iteration =>
               iteration === 2 ? new Error("Broken Page") : null,
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug,
+              slug
             }),
             pageSize,
-            slug,
-          }),
+            slug
+          })
         ),
       name: "With an error on pagination",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
@@ -223,11 +223,11 @@ export default {
           decorateAction,
           makeParams({
             articleQuery: authorArticlesWithImagesQuery,
-            articleVariables: (iteration) => ({
+            articleVariables: iteration => ({
               first: pageSize,
               imageRatio: articleImageRatio,
               skip: (iteration - 1) * pageSize,
-              slug,
+              slug
             }),
             makeItem: (item, itemIndex) => ({
               ...item,
@@ -239,23 +239,23 @@ export default {
                         children: [
                           {
                             attributes: {
-                              value: "This will error",
+                              value: "This will error"
                             },
                             children: {},
-                            name: "text",
-                          },
+                            name: "text"
+                          }
                         ],
-                        name: "paragraph",
-                      },
+                        name: "paragraph"
+                      }
                     ]
-                  : item.summary,
+                  : item.summary
             }),
             pageSize,
-            slug,
-          }),
+            slug
+          })
         ),
       name: "With an error rendering a card",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) => (
@@ -273,8 +273,8 @@ export default {
         </StorybookProvider>
       ),
       name: "With Provider and Tracking",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Pages/Author Profile",
+  name: "Pages/Author Profile"
 };

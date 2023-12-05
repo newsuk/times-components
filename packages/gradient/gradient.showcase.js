@@ -4,7 +4,7 @@ import { TcText } from "@times-components/utils";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import Gradient, { OverlayGradient } from "./src/gradient";
 
-const renderExampleText = (color) => (
+const renderExampleText = color => (
   <TcText style={{ color }}>Some example text</TcText>
 );
 

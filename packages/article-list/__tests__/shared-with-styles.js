@@ -5,7 +5,7 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  stylePrinter,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import "./mocks";
 import shared from "./shared.base";
@@ -19,11 +19,11 @@ export default () => {
       stylePrinter,
       minimalWebTransform,
       minimaliseTransform(
-        (value, key) => !keepProps.has(key) && !key.includes("Class"),
+        (value, key) => !keepProps.has(key) && !key.includes("Class")
       ),
       flattenStyleTransform,
-      hoistStyleTransform,
-    ),
+      hoistStyleTransform
+    )
   );
 
   // eslint-disable-next-line global-require

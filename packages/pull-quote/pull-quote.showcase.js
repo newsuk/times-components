@@ -4,7 +4,7 @@ import { sections } from "@times-components/storybook";
 import { themeFactory } from "@times-components/ts-styleguide";
 import PullQuotes from "./src/pull-quote";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();

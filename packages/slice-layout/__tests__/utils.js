@@ -9,4 +9,4 @@ ExampleChild.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default (id) => <ExampleChild id={id}>{id}</ExampleChild>;
+export default id => <ExampleChild id={id}>{id}</ExampleChild>;

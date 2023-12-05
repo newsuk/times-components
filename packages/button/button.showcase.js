@@ -2,7 +2,7 @@
 import React from "react";
 import Button from "./src/button";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();

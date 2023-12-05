@@ -12,7 +12,7 @@ const quoteMargins = {
   }
 };
 
-const quoteStyleFactory = (fontName) => ({
+const quoteStyleFactory = fontName => ({
   ...(quoteMargins[fontName] || {}),
   fontFamily: fontsWithFallback[fontName] || fontsWithFallback.headlineRegular,
   fontSize: 75,

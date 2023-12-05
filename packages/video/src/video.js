@@ -7,7 +7,7 @@ import VideoError from "./video-error";
 import { propTypes, defaultProps } from "./video-prop-types";
 import { NoSubscriptionWrapper, NoSubscriptionMessage } from "./styles";
 
-const Video = (props) => {
+const Video = props => {
   const { height, poster, width } = props;
   return (
     <ErrorView>
@@ -16,7 +16,7 @@ const Video = (props) => {
           <VideoError height={height} width={width} />
         ) : (
           <IsPaidSubscriber.Consumer>
-            {(isPaidSubscriber) =>
+            {isPaidSubscriber =>
               !isPaidSubscriber ? (
                 <div
                   style={{

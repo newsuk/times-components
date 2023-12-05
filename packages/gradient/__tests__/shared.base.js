@@ -7,7 +7,7 @@ import GradientBase from "../src/gradient.base";
 
 const renderExampleText = () => <TcText>Some example text</TcText>;
 
-export default (renderMethod) => {
+export default renderMethod => {
   const makeMessageEvent = ({ width, height }) => ({
     nativeEvent: {
       layout: {
@@ -59,7 +59,7 @@ export default (renderMethod) => {
           <GradientBase endColour="#FFFFFF" startColour="#000000" />
         );
         const testInstance = testRenderer.root;
-        const view = testInstance.find((child) => !!child.props.onLayout);
+        const view = testInstance.find(child => !!child.props.onLayout);
 
         view.props.onLayout(
           makeMessageEvent({

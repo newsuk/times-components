@@ -11,11 +11,11 @@ export default {
               name: "text",
               attributes: {
                 value:
-                  "A healthy 42-year-old father who enjoyed hiking and running but refused to get vaccinated has died from Covid-19 after admitting he wished he had got a jab, his twin sister has said.",
+                  "A healthy 42-year-old father who enjoyed hiking and running but refused to get vaccinated has died from Covid-19 after admitting he wished he had got a jab, his twin sister has said."
               },
-              children: [],
-            },
-          ],
+              children: []
+            }
+          ]
         },
         {
           name: "paragraph",
@@ -24,11 +24,11 @@ export default {
               name: "text",
               attributes: {
                 value:
-                  "John Eyers of Southport, Merseyside, worked in construction and had a love of wild camping and adventuring. His last trip had been to the Welsh mountains, just one month before his death last week.",
+                  "John Eyers of Southport, Merseyside, worked in construction and had a love of wild camping and adventuring. His last trip had been to the Welsh mountains, just one month before his death last week."
               },
-              children: [],
-            },
-          ],
+              children: []
+            }
+          ]
         },
         {
           name: "paragraph",
@@ -36,9 +36,9 @@ export default {
             {
               name: "text",
               attributes: {
-                value: "His twin sister, Jenny McCann from London, told the ",
+                value: "His twin sister, Jenny McCann from London, told the "
               },
-              children: [],
+              children: []
             },
             {
               name: "italic",
@@ -46,21 +46,21 @@ export default {
                 {
                   name: "text",
                   attributes: {
-                    value: "Daily Mail",
+                    value: "Daily Mail"
                   },
-                  children: [],
-                },
-              ],
+                  children: []
+                }
+              ]
             },
             {
               name: "text",
               attributes: {
                 value:
-                  " he was the “fittest, healthiest person I know”, but added that Eyers had a “belief in his own immortality”. She said that before he went on a ventilator he had confessed to a doctor that he wished he had received the jab.",
+                  " he was the “fittest, healthiest person I know”, but added that Eyers had a “belief in his own immortality”. She said that before he went on a ventilator he had confessed to a doctor that he wished he had received the jab."
               },
-              children: [],
-            },
-          ],
+              children: []
+            }
+          ]
         },
         {
           name: "paragraph",
@@ -68,9 +68,9 @@ export default {
             {
               name: "text",
               attributes: {
-                value: "According to the newspaper, McCann has",
+                value: "According to the newspaper, McCann has"
               },
-              children: [],
+              children: []
             },
             {
               name: "paywall",
@@ -79,13 +79,13 @@ export default {
                   name: "text",
                   attributes: {
                     value:
-                      " been targeted by antivaxers on social media after sharing news of her brother’s death, with some falsely claiming she had been “paid by the government”.",
+                      " been targeted by antivaxers on social media after sharing news of her brother’s death, with some falsely claiming she had been “paid by the government”."
                   },
-                  children: [],
-                },
-              ],
-            },
-          ],
+                  children: []
+                }
+              ]
+            }
+          ]
         },
         {
           name: "paywall",
@@ -98,14 +98,14 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "Eyers, who competed in ironman competitions and was an amateur bodybuilder, died in intensive care after suffering from an infection and organ failure, leaving behind a daughter aged 19. Four weeks previously he had tested positive for coronavirus.",
-                  },
-                },
-              ],
+                      "Eyers, who competed in ironman competitions and was an amateur bodybuilder, died in intensive care after suffering from an infection and organ failure, leaving behind a daughter aged 19. Four weeks previously he had tested positive for coronavirus."
+                  }
+                }
+              ]
             },
             {
               name: "ad",
-              children: [],
+              children: []
             },
             {
               name: "paragraph",
@@ -115,10 +115,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "McCann said her brother was “pumped full of every drug in the hospital” but he died from the virus.",
-                  },
-                },
-              ],
+                      "McCann said her brother was “pumped full of every drug in the hospital” but he died from the virus."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -128,10 +128,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "“They threw everything at him but eventually the bedfellows of Covid-19, infection and organ failure claimed his life,” she said. “Before he was ventilated he told his consultant that he wished he had been vaccinated, that he wished he had listened. His death is a tragedy. It shouldn’t have happened.”",
-                  },
-                },
-              ],
+                      "“They threw everything at him but eventually the bedfellows of Covid-19, infection and organ failure claimed his life,” she said. “Before he was ventilated he told his consultant that he wished he had been vaccinated, that he wished he had listened. His death is a tragedy. It shouldn’t have happened.”"
+                  }
+                }
+              ]
             },
             {
               name: "image",
@@ -146,9 +146,9 @@ export default {
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
                 relativeWidth: 1,
-                relativeHeight: 0.9836065573770492,
+                relativeHeight: 0.9836065573770492
               },
-              children: [],
+              children: []
             },
             {
               name: "paragraph",
@@ -158,10 +158,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "She described her brother as a “fun uncle” who dressed up as Father Christmas on Christmas Day.",
-                  },
-                },
-              ],
+                      "She described her brother as a “fun uncle” who dressed up as Father Christmas on Christmas Day."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -171,10 +171,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "“My mum wants people to know about John. For his story to save someone’s life. For pain and loss to drive people to get a vaccine,” she said.",
-                  },
-                },
-              ],
+                      "“My mum wants people to know about John. For his story to save someone’s life. For pain and loss to drive people to get a vaccine,” she said."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -184,8 +184,8 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "Ministers are worried that three million under-30s have yet to get a coronavirus vaccination and have vowed to introduce measures to encourage take-up. It has been announced that 16 and 17-year-olds are ",
-                  },
+                      "Ministers are worried that three million under-30s have yet to get a coronavirus vaccination and have vowed to introduce measures to encourage take-up. It has been announced that 16 and 17-year-olds are "
+                  }
                 },
                 {
                   name: "link",
@@ -194,29 +194,29 @@ export default {
                       name: "text",
                       children: [],
                       attributes: {
-                        value: "soon to be offered jabs",
-                      },
-                    },
+                        value: "soon to be offered jabs"
+                      }
+                    }
                   ],
                   attributes: {
                     href: "https://www.thetimes.co.uk/article/all-children-over-16-will-be-offered-covid-jabs-235m87qj2",
                     type: "article",
                     canonicalId:
-                      "all-children-over-16-will-be-offered-covid-jabs-235m87qj2",
-                  },
+                      "all-children-over-16-will-be-offered-covid-jabs-235m87qj2"
+                  }
                 },
                 {
                   name: "text",
                   children: [],
                   attributes: {
                     value:
-                      ", paving the way for the rollout to 1.5 million teenagers later this month.",
-                  },
-                },
-              ],
-            },
-          ],
-        },
+                      ", paving the way for the rollout to 1.5 million teenagers later this month."
+                  }
+                }
+              ]
+            }
+          ]
+        }
       ],
       descriptionMarkup: [
         {
@@ -226,11 +226,11 @@ export default {
               name: "text",
               attributes: {
                 value:
-                  "A healthy 42-year-old father who enjoyed hiking and running but refused to get vaccinated has died from Covid-19 after admitting he wished he had got a jab, his twin sister has said.",
+                  "A healthy 42-year-old father who enjoyed hiking and running but refused to get vaccinated has died from Covid-19 after admitting he wished he had got a jab, his twin sister has said."
               },
-              children: [],
-            },
-          ],
+              children: []
+            }
+          ]
         },
         {
           name: "paragraph",
@@ -238,19 +238,19 @@ export default {
             {
               name: "text",
               attributes: {
-                value: "John Eyers of",
+                value: "John Eyers of"
               },
-              children: [],
-            },
-          ],
-        },
+              children: []
+            }
+          ]
+        }
       ],
       dropcapsDisabled: false,
       expirableFlags: [
         {
           type: "NEW",
-          expiryTime: "2021-08-04T16:00:00.000Z",
-        },
+          expiryTime: "2021-08-04T16:00:00.000Z"
+        }
       ],
       keywords: [
         "healthy",
@@ -264,7 +264,7 @@ export default {
         "‘wishing",
         "he",
         "had",
-        "listened’",
+        "listened’"
       ],
       leadAsset: {
         caption:
@@ -272,28 +272,28 @@ export default {
         credits: null,
         crop169: {
           ratio: "16:9",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=1018%2C573%2C20%2C154",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=1018%2C573%2C20%2C154"
         },
         crop32: {
           ratio: "3:2",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=1018%2C679%2C22%2C150",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=1018%2C679%2C22%2C150"
         },
         crop1251: null,
         crop11: {
           ratio: "1:1",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=558%2C558%2C352%2C132",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=558%2C558%2C352%2C132"
         },
         crop45: {
           ratio: "4:5",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=764%2C955%2C263%2C98",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=764%2C955%2C263%2C98"
         },
         crop23: {
           ratio: "2:3",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=524%2C786%2C371%2C140",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcf733a34-f525-11eb-8f01-2c678acbb979.jpg?crop=524%2C786%2C371%2C140"
         },
         crop2251: null,
         id: "aad8cdea-43f7-46b9-85a6-30c1e5d5b736",
-        title: "",
+        title: ""
       },
       relatedArticleSlice: {
         sliceName: "StandardSlice",
@@ -303,13 +303,13 @@ export default {
             article: {
               leadAsset: {
                 crop169: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b0dbf90-f4a0-11eb-8f01-2c678acbb979.jpg?crop=5805%2C3265%2C458%2C825",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b0dbf90-f4a0-11eb-8f01-2c678acbb979.jpg?crop=5805%2C3265%2C458%2C825"
                 },
                 crop32: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b0dbf90-f4a0-11eb-8f01-2c678acbb979.jpg?crop=5805%2C3870%2C466%2C457",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F1b0dbf90-f4a0-11eb-8f01-2c678acbb979.jpg?crop=5805%2C3870%2C466%2C457"
                 },
                 id: "d6b0502d-5f54-413c-8701-907af06bf5c1",
-                title: "Teen girl after her vaccination",
+                title: "Teen girl after her vaccination"
               },
               bylines: [
                 {
@@ -321,16 +321,16 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: "Steven Swinford",
-                          },
-                        },
+                            value: "Steven Swinford"
+                          }
+                        }
                       ],
                       attributes: {
-                        slug: "steven-swinford",
-                      },
-                    },
+                        slug: "steven-swinford"
+                      }
+                    }
                   ],
-                  image: null,
+                  image: null
                 },
                 {
                   byline: [
@@ -341,13 +341,13 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: ", Political Editor | ",
-                          },
-                        },
-                      ],
-                    },
+                            value: ", Political Editor | "
+                          }
+                        }
+                      ]
+                    }
                   ],
-                  image: null,
+                  image: null
                 },
                 {
                   byline: [
@@ -358,16 +358,16 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: "Chris Smyth",
-                          },
-                        },
+                            value: "Chris Smyth"
+                          }
+                        }
                       ],
                       attributes: {
-                        slug: "chris-smyth",
-                      },
-                    },
+                        slug: "chris-smyth"
+                      }
+                    }
                   ],
-                  image: null,
+                  image: null
                 },
                 {
                   byline: [
@@ -378,14 +378,14 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: ", Whitehall Editor",
-                          },
-                        },
-                      ],
-                    },
+                            value: ", Whitehall Editor"
+                          }
+                        }
+                      ]
+                    }
                   ],
-                  image: null,
-                },
+                  image: null
+                }
               ],
               hasVideo: false,
               headline: "All UK children over 16 will be offered Covid vaccine",
@@ -407,12 +407,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally",
+                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary125: [
                 {
@@ -422,12 +422,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move",
+                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary145: [
                 {
@@ -437,11 +437,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days.",
+                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -449,12 +449,12 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "The Joint",
+                        value: "The Joint"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary160: [
                 {
@@ -464,11 +464,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days.",
+                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -476,12 +476,12 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "The Joint Committee on",
+                        value: "The Joint Committee on"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary175: [
                 {
@@ -491,11 +491,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days.",
+                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -503,12 +503,12 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "The Joint Committee on Vaccination and",
+                        value: "The Joint Committee on Vaccination and"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary225: [
                 {
@@ -518,11 +518,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days.",
+                          "All over-16s in Britain are set to be offered coronavirus jabs as ministers expect scientists to formally back the move within days."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -531,27 +531,27 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "The Joint Committee on Vaccination and Immunisation (JCVI) is expected to recommend vaccines",
+                          "The Joint Committee on Vaccination and Immunisation (JCVI) is expected to recommend vaccines"
                       },
-                      children: [],
-                    },
-                  ],
-                },
-              ],
-            },
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            }
           },
           {
             leadAsset: null,
             article: {
               leadAsset: {
                 crop169: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff339b932-f518-11eb-8f01-2c678acbb979.jpg?crop=3500%2C1969%2C0%2C182",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff339b932-f518-11eb-8f01-2c678acbb979.jpg?crop=3500%2C1969%2C0%2C182"
                 },
                 crop32: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff339b932-f518-11eb-8f01-2c678acbb979.jpg?crop=3500%2C2333%2C0%2C0",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff339b932-f518-11eb-8f01-2c678acbb979.jpg?crop=3500%2C2333%2C0%2C0"
                 },
                 id: "0533812b-b8b3-442d-8899-4dc8c82d09d1",
-                title: "Coronavirus - Tue Aug 3, 2021",
+                title: "Coronavirus - Tue Aug 3, 2021"
               },
               bylines: [
                 {
@@ -563,16 +563,16 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: "Chris Smyth",
-                          },
-                        },
+                            value: "Chris Smyth"
+                          }
+                        }
                       ],
                       attributes: {
-                        slug: "chris-smyth",
-                      },
-                    },
+                        slug: "chris-smyth"
+                      }
+                    }
                   ],
-                  image: null,
+                  image: null
                 },
                 {
                   byline: [
@@ -583,14 +583,14 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: ", Whitehall Editor",
-                          },
-                        },
-                      ],
-                    },
+                            value: ", Whitehall Editor"
+                          }
+                        }
+                      ]
+                    }
                   ],
-                  image: null,
-                },
+                  image: null
+                }
               ],
               hasVideo: false,
               headline:
@@ -614,12 +614,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help",
+                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary125: [
                 {
@@ -629,12 +629,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down",
+                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary145: [
                 {
@@ -644,11 +644,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down.",
+                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -656,12 +656,12 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "The final phase of",
+                        value: "The final phase of"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary160: [
                 {
@@ -671,11 +671,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down.",
+                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -683,12 +683,12 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "The final phase of vaccination in",
+                        value: "The final phase of vaccination in"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary175: [
                 {
@@ -698,11 +698,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down.",
+                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -711,12 +711,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "The final phase of vaccination in adults, coupled",
+                          "The final phase of vaccination in adults, coupled"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary225: [
                 {
@@ -726,11 +726,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down.",
+                          "More than 90 per cent of adults in England now have coronavirus antibodies as rising immunity levels help to drive cases down."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -739,16 +739,16 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "The final phase of vaccination in adults, coupled with a surge of cases in young people, mean that",
+                          "The final phase of vaccination in adults, coupled with a surge of cases in young people, mean that"
                       },
-                      children: [],
-                    },
-                  ],
-                },
-              ],
-            },
-          },
-        ],
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
       },
       sharingEnabled: true,
       savingEnabled: true,
@@ -760,18 +760,18 @@ export default {
               sections: [
                 {
                   id: "3a5c0fcd-04eb-4b49-8cae-08d36e3c1c9b",
-                  title: "News",
-                },
-              ],
-            },
-          ],
+                  title: "News"
+                }
+              ]
+            }
+          ]
         },
         {
           slices: [
             {
-              sections: [],
-            },
-          ],
+              sections: []
+            }
+          ]
         },
         {
           slices: [
@@ -779,20 +779,20 @@ export default {
               sections: [
                 {
                   id: "ba2ada9a-1037-4136-8901-67be5df95f37",
-                  title: "News",
-                },
-              ],
-            },
-          ],
-        },
+                  title: "News"
+                }
+              ]
+            }
+          ]
+        }
       ],
       template: "mainstandard",
       textColour: null,
       topics: [
         {
           name: "Coronavirus",
-          slug: "coronavirus",
-        },
+          slug: "coronavirus"
+        }
       ],
       bylines: [
         {
@@ -804,14 +804,14 @@ export default {
                   name: "text",
                   children: [],
                   attributes: {
-                    value: "Peter Chappell",
-                  },
-                },
-              ],
-            },
+                    value: "Peter Chappell"
+                  }
+                }
+              ]
+            }
           ],
-          image: null,
-        },
+          image: null
+        }
       ],
       hasVideo: false,
       headline:
@@ -826,7 +826,7 @@ export default {
       shortHeadline:
         "Healthy father dies after refusing jab and ‘wishing he had listened’",
       slug: "healthy-father-dies-after-refusing-covid-vaccine-and-wishing-he-had-listened",
-      url: "https://www.thetimes.co.uk/article/healthy-father-dies-after-refusing-covid-vaccine-and-wishing-he-had-listened-lzsqms0ds",
-    },
-  },
+      url: "https://www.thetimes.co.uk/article/healthy-father-dies-after-refusing-covid-vaccine-and-wishing-he-had-listened-lzsqms0ds"
+    }
+  }
 };

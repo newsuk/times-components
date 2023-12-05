@@ -57,9 +57,9 @@ export default class TestLink extends ApolloLink {
       operation,
       type: "request"
     });
-    return new Observable((observer) => {
+    return new Observable(observer => {
       Promise.resolve(this.onRequest(operation))
-        .then(async (data) => {
+        .then(async data => {
           this.events.push({
             operation,
             type: "resolving"
@@ -75,7 +75,7 @@ export default class TestLink extends ApolloLink {
             observer.complete();
           }
         })
-        .catch((e) => {
+        .catch(e => {
           this.events.push({
             error: e,
             type: "error"

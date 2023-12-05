@@ -1,9 +1,9 @@
 const path = require('path');
 const fs = require('fs');
 
-const buildConfig = dir => {
+const buildConfig = (dir) => {
   const { name: packageName } = JSON.parse(
-    fs.readFileSync(path.join(dir, 'package.json'), 'utf8')
+    fs.readFileSync(path.join(dir, 'package.json'), 'utf8'),
   );
   const name = packageName.replace('@times-components/', '');
   return {
@@ -16,16 +16,16 @@ const buildConfig = dir => {
     setupFilesAfterEnv: ['<rootDir>/packages/ts-newskit/jest.setup.js'],
     testMatch: [
       `**/packages/${name}/**/__tests__/*.test.tsx`,
-      `**/packages/${name}/**/__tests__/*.test.ts`
+      `**/packages/${name}/**/__tests__/*.test.ts`,
     ],
     transform: {
       '.+\\.js$': 'babel-jest',
-      '.+\\.tsx?$': 'ts-jest'
+      '.+\\.tsx?$': 'ts-jest',
     },
     globals: {
       'ts-jest': {
-        tsConfig: './tsconfig.jest.json'
-      }
+        tsConfig: './tsconfig.jest.json',
+      },
     },
     clearMocks: true,
     collectCoverage: true,
@@ -43,9 +43,9 @@ const buildConfig = dir => {
         statements: 95,
         branches: 95,
         lines: 95,
-        functions: 95
-      }
-    }
+        functions: 95,
+      },
+    },
   };
 };
 

@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import {
   propTypes as basePropTypes,
-  defaultProps,
+  defaultProps
 } from "./article-list-prop-types-base";
 
 export const propTypes = {
@@ -10,7 +10,7 @@ export const propTypes = {
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
   page: PropTypes.number,
-  pageSize: PropTypes.number,
+  pageSize: PropTypes.number
 };
 
 export { defaultProps };

@@ -16,7 +16,7 @@ const secondaryImage = secondaryImageFixture(
   "Other credits"
 );
 
-export default (makeTest) => {
+export default makeTest => {
   const tests = [
     {
       name: "mobile primary image with caption and credits",

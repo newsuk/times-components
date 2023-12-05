@@ -14,7 +14,7 @@ const AuthorComponent = ({ slug, className, onAuthorPress, children }) => {
   return (
     <TextLink
       className={className}
-      onPress={(e) => {
+      onPress={e => {
         onAuthorPress(e, { name, slug });
       }}
       style={checkStylesForUnits(styles.link)}

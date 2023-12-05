@@ -1,17 +1,17 @@
-module.exports = api => {
+module.exports = (api) => {
   api.cache(true);
   return {
-    plugins: ["babel-plugin-styled-components"],
+    plugins: ['babel-plugin-styled-components'],
     presets: [
       [
-        "@babel/preset-env",
+        '@babel/preset-env',
         {
           targets: {
-            esmodules: true
-          }
-        }
+            esmodules: true,
+          },
+        },
       ],
-      "@babel/preset-react"
-    ]
+      '@babel/preset-react',
+    ],
   };
 };

@@ -4,31 +4,31 @@ export const content = [
       {
         attributes: { value: "Some paragraph 1" },
         children: [],
-        name: "text",
-      },
+        name: "text"
+      }
     ],
-    name: "paragraph",
+    name: "paragraph"
   },
   {
     children: [
       {
         attributes: { value: "Some paragraph 2" },
         children: [],
-        name: "text",
-      },
+        name: "text"
+      }
     ],
-    name: "paragraph",
+    name: "paragraph"
   },
   {
     children: [
       {
         attributes: { value: "Some paragraph 3" },
         children: [],
-        name: "text",
-      },
+        name: "text"
+      }
     ],
-    name: "paragraph",
-  },
+    name: "paragraph"
+  }
 ];
 
 export const paywallContent = {
@@ -39,22 +39,22 @@ export const paywallContent = {
         {
           attributes: { value: "Some paragraph 4" },
           children: [],
-          name: "text",
-        },
+          name: "text"
+        }
       ],
-      name: "paragraph",
+      name: "paragraph"
     },
     {
       children: [
         {
           attributes: { value: "Some paragraph 5" },
           children: [],
-          name: "text",
-        },
+          name: "text"
+        }
       ],
-      name: "paragraph",
-    },
-  ],
+      name: "paragraph"
+    }
+  ]
 };
 
 export const paywallContentWithNewsletter = {
@@ -65,10 +65,10 @@ export const paywallContentWithNewsletter = {
         {
           attributes: { value: "Some paragraph 4" },
           children: [],
-          name: "text",
-        },
+          name: "text"
+        }
       ],
-      name: "paragraph",
+      name: "paragraph"
     },
     {
       name: "interactive",
@@ -81,21 +81,21 @@ export const paywallContentWithNewsletter = {
             headline: "Best of Times",
             copy: "We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.",
             imageUri:
-              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800",
-          },
-        },
+              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
+          }
+        }
       },
-      children: [],
+      children: []
     },
     {
       children: [
         {
           attributes: { value: "Some paragraph 5" },
           children: [],
-          name: "text",
-        },
+          name: "text"
+        }
       ],
-      name: "paragraph",
-    },
-  ],
+      name: "paragraph"
+    }
+  ]
 };

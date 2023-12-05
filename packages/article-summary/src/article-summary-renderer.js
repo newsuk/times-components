@@ -5,7 +5,7 @@ import { TcText } from "@times-components/utils";
 const style = {
   color: "inherit",
   font: "inherit",
-  "white-space": "inherit",
+  "white-space": "inherit"
 };
 export default {
   ...coreRenderers,
@@ -34,5 +34,5 @@ export default {
         ...
       </TcText>
     );
-  },
+  }
 };

@@ -73,14 +73,14 @@ export default ({
   count = 200,
   delay = 0,
   topicError,
-  makeItem = (x) => x,
+  makeItem = x => x,
   name,
   pageSize,
   slug
 }) => [
   ...generateTopic({ delay, error: topicError, name, slug }),
   ...generateQueries(
-    (iteration) => {
+    iteration => {
       let itemIndex = (iteration - 1) * pageSize;
       let imageIndex = (iteration - 1) * pageSize;
 

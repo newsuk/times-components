@@ -11,7 +11,7 @@ const AuthorProfileHeadTwitter = ({ onTwitterLinkPress, twitter, url }) => (
       <IconTwitter fillColour="currentColor" height={12} width={12} />
     </TcView>
     <TextLink
-      onPress={(e) => onTwitterLinkPress(e, { twitter, url })}
+      onPress={e => onTwitterLinkPress(e, { twitter, url })}
       style={styles.twitterLink}
       testID="twitterLink"
       url={url}
@@ -24,7 +24,7 @@ const AuthorProfileHeadTwitter = ({ onTwitterLinkPress, twitter, url }) => (
 AuthorProfileHeadTwitter.propTypes = {
   onTwitterLinkPress: PropTypes.func.isRequired,
   twitter: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired
 };
 
 export default AuthorProfileHeadTwitter;

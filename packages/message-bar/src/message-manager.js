@@ -14,7 +14,7 @@ class MessageManager extends Component {
     super(props);
     this.state = {
       message: null,
-      showMessage: (message) => this.addMessage(message),
+      showMessage: message => this.addMessage(message),
       offsetTop: 0
     };
     this.addMessage = this.addMessage.bind(this);

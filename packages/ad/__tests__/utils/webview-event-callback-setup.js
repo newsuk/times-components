@@ -20,7 +20,7 @@ export default () => {
         }
       }),
       console: {},
-      postMessage: jest.fn().mockImplementation((data) => {
+      postMessage: jest.fn().mockImplementation(data => {
         window.postMessageDecoded(JSON.parse(data));
       }),
       postMessageDecoded: jest.fn(),

@@ -1,6 +1,6 @@
 import { withTrackEvents } from "@times-components/tracking";
 
-export default (Component) =>
+export default Component =>
   withTrackEvents(Component, {
     analyticsEvents: [
       {
@@ -9,8 +9,8 @@ export default (Component) =>
         getAttrs: ({ article: { headline, id, url, shortHeadline } }) => ({
           targetArticleHeadline: shortHeadline || headline,
           targetArticleId: id,
-          targetArticleUrl: url,
-        }),
-      },
-    ],
+          targetArticleUrl: url
+        })
+      }
+    ]
   });

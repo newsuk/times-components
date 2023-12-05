@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 import {
   sharedPropTypes,
-  sharedDefaultProps,
+  sharedDefaultProps
 } from "./related-article-item-prop-types-base";
 
 export const relatedArticleItemPropTypes = {
@@ -10,7 +10,7 @@ export const relatedArticleItemPropTypes = {
   bylineClass: PropTypes.string,
   contentContainerClass: PropTypes.string,
   headlineClass: PropTypes.string,
-  imageContainerClass: PropTypes.string,
+  imageContainerClass: PropTypes.string
 };
 
 export const relatedArticleItemDefaultProps = {
@@ -18,5 +18,5 @@ export const relatedArticleItemDefaultProps = {
   bylineClass: "",
   contentContainerClass: "",
   headlineClass: "",
-  imageContainerClass: "",
+  imageContainerClass: ""
 };

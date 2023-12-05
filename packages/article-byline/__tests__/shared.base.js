@@ -7,8 +7,8 @@ import ArticleByline from "../src/article-byline";
 import authorsFixture from "../fixtures/authors.json";
 import ArticleBylineWithLinks from "../src/article-byline-with-links";
 
-export default (Component) => {
-  const renderArticleByline = (props) =>
+export default Component => {
+  const renderArticleByline = props =>
     TestRenderer.create(
       <TcView>
         <Component {...props} />

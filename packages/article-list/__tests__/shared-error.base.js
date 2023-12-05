@@ -31,12 +31,12 @@ export default () => {
       test() {
         const refetchMock = jest.fn();
         const testInstance = TestRenderer.create(
-          <ArticleListPageError refetch={refetchMock} />,
+          <ArticleListPageError refetch={refetchMock} />
         );
         testInstance.root.findByType("Button").props.onPress();
         expect(refetchMock).toHaveBeenCalled();
         expect(testInstance).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "article list",
@@ -48,12 +48,12 @@ export default () => {
             emptyStateMessage="Empty state"
             pageSize={1}
             refetch={() => {}}
-          />,
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

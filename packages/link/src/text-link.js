@@ -9,7 +9,7 @@ const styles = {
   }
 };
 const LinkTextObj = styled(TcTextLink)`
-  ${(props) => (props.style ? checkStylesForUnits(props.style) : "")};
+  ${props => (props.style ? checkStylesForUnits(props.style) : "")};
 `;
 const TextLink = ({ children, onPress, style, target, url, ...props }) => {
   const linkStyles = { ...styles.textLink, ...style };

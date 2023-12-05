@@ -11,11 +11,11 @@ export default {
               name: "text",
               attributes: {
                 value:
-                  "Winemakers across France are hoping for an end to rainy weather that has led to outbreaks of mildew decimating the vines of Champagne and Alsace.",
+                  "Winemakers across France are hoping for an end to rainy weather that has led to outbreaks of mildew decimating the vines of Champagne and Alsace."
               },
-              children: [],
-            },
-          ],
+              children: []
+            }
+          ]
         },
         {
           name: "paragraph",
@@ -24,11 +24,11 @@ export default {
               name: "text",
               attributes: {
                 value:
-                  "With champagne makers predicting that about 25 per cent of their grapes will be destroyed by the fungus, and the producers of Alsace wines equally pessimistic, vineyard owners in Bordeaux and other regions are nervously studying the skies.",
+                  "With champagne makers predicting that about 25 per cent of their grapes will be destroyed by the fungus, and the producers of Alsace wines equally pessimistic, vineyard owners in Bordeaux and other regions are nervously studying the skies."
               },
-              children: [],
-            },
-          ],
+              children: []
+            }
+          ]
         },
         {
           name: "paragraph",
@@ -37,9 +37,9 @@ export default {
               name: "text",
               attributes: {
                 value:
-                  "The mildew, which has posed particular difficulties for organic winemakers unable to use fungicides, has exacerbated anguish among French vineyard owners over unstable weather that they ascribe to ",
+                  "The mildew, which has posed particular difficulties for organic winemakers unable to use fungicides, has exacerbated anguish among French vineyard owners over unstable weather that they ascribe to "
               },
-              children: [],
+              children: []
             },
             {
               name: "link",
@@ -47,26 +47,26 @@ export default {
                 href: "https://www.thetimes.co.uk/article/macrons-big-idea-ask-the-voters-to-set-frances-climate-targets-7kd6k0r9c",
                 type: "article",
                 canonicalId:
-                  "macrons-big-idea-ask-the-voters-to-set-frances-climate-targets-7kd6k0r9c",
+                  "macrons-big-idea-ask-the-voters-to-set-frances-climate-targets-7kd6k0r9c"
               },
               children: [
                 {
                   name: "text",
                   attributes: {
-                    value: "climate change",
+                    value: "climate change"
                   },
-                  children: [],
-                },
-              ],
+                  children: []
+                }
+              ]
             },
             {
               name: "text",
               attributes: {
-                value: ".",
+                value: "."
               },
-              children: [],
-            },
-          ],
+              children: []
+            }
+          ]
         },
         {
           name: "paragraph",
@@ -75,11 +75,11 @@ export default {
               name: "text",
               attributes: {
                 value:
-                  "Increasingly frequent hail storms, frost and rising temperatures are forcing the industry to review its practices in an attempt to maintain its harvests.",
+                  "Increasingly frequent hail storms, frost and rising temperatures are forcing the industry to review its practices in an attempt to maintain its harvests."
               },
-              children: [],
-            },
-          ],
+              children: []
+            }
+          ]
         },
         {
           name: "paragraph",
@@ -87,9 +87,9 @@ export default {
             {
               name: "text",
               attributes: {
-                value: "This summer’s heavy rain storms are being seen",
+                value: "This summer’s heavy rain storms are being seen"
               },
-              children: [],
+              children: []
             },
             {
               name: "paywall",
@@ -98,20 +98,20 @@ export default {
                   name: "text",
                   attributes: {
                     value:
-                      " as a further pointer to the turmoil that lies ahead. About a quarter of the region’s average annual rainfall has fallen in what should have been the last two drier summer months.",
+                      " as a further pointer to the turmoil that lies ahead. About a quarter of the region’s average annual rainfall has fallen in what should have been the last two drier summer months."
                   },
-                  children: [],
-                },
-              ],
-            },
-          ],
+                  children: []
+                }
+              ]
+            }
+          ]
         },
         {
           name: "paywall",
           children: [
             {
               name: "ad",
-              children: [],
+              children: []
             },
             {
               name: "paragraph",
@@ -121,10 +121,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "Maxime Toubart, vice-president of the Champagne Committee, said: “We have had 300 millimetres of rain in two months. That’s an enormous amount especially when vines need the sun to ripen.”",
-                  },
-                },
-              ],
+                      "Maxime Toubart, vice-president of the Champagne Committee, said: “We have had 300 millimetres of rain in two months. That’s an enormous amount especially when vines need the sun to ripen.”"
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -134,10 +134,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "The result has been the worst attack of mildew in Champagne since at least 2012, locals say.",
-                  },
-                },
-              ],
+                      "The result has been the worst attack of mildew in Champagne since at least 2012, locals say."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -147,10 +147,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "The committee said the region’s vineyards would lose between 20 and 25 per cent of their grapes on average, but with wide disparities between districts — the worst hit vineyards were likely to lose 50 per cent of their grapes.",
-                  },
-                },
-              ],
+                      "The committee said the region’s vineyards would lose between 20 and 25 per cent of their grapes on average, but with wide disparities between districts — the worst hit vineyards were likely to lose 50 per cent of their grapes."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -160,10 +160,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "The mildew, which attacks both the leaves and the grapes, causing them to wither, follows frost in the spring which reduced the harvest by 30 per cent compared with a normal year.",
-                  },
-                },
-              ],
+                      "The mildew, which attacks both the leaves and the grapes, causing them to wither, follows frost in the spring which reduced the harvest by 30 per cent compared with a normal year."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -173,10 +173,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "“Between the frost and the mildew, we have lost about 50 per cent of our harvest,” Toubart said.",
-                  },
-                },
-              ],
+                      "“Between the frost and the mildew, we have lost about 50 per cent of our harvest,” Toubart said."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -186,10 +186,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "The mildew will eat into the earnings of Champagne’s small, independent vineyards but will have little impact on prices, according to Toubart.",
-                  },
-                },
-              ],
+                      "The mildew will eat into the earnings of Champagne’s small, independent vineyards but will have little impact on prices, according to Toubart."
+                  }
+                }
+              ]
             },
             {
               name: "image",
@@ -204,9 +204,9 @@ export default {
                 relativeHorizontalOffset: 0,
                 relativeVerticalOffset: 0,
                 relativeWidth: 0.941315945465323,
-                relativeHeight: 1,
+                relativeHeight: 1
               },
-              children: [],
+              children: []
             },
             {
               name: "paragraph",
@@ -216,10 +216,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "He said the sector kept grapes in reserve and had enough to make up for this year’s losses.",
-                  },
-                },
-              ],
+                      "He said the sector kept grapes in reserve and had enough to make up for this year’s losses."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -229,10 +229,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "Unlike fine wine producers, the champagne houses often mix vintages.",
-                  },
-                },
-              ],
+                      "Unlike fine wine producers, the champagne houses often mix vintages."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -242,10 +242,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "They also have an estimated 1.5 billion bottles stocked in their cellars, which is sufficient to keep the world supplied for five years or so.",
-                  },
-                },
-              ],
+                      "They also have an estimated 1.5 billion bottles stocked in their cellars, which is sufficient to keep the world supplied for five years or so."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -255,10 +255,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "In Alsace, the owners of vineyards that make wines with the riesling, pinot noir and gewurztraminer grape varieties, said the mildew outbreak was the worst in living memory.",
-                  },
-                },
-              ],
+                      "In Alsace, the owners of vineyards that make wines with the riesling, pinot noir and gewurztraminer grape varieties, said the mildew outbreak was the worst in living memory."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -268,10 +268,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "“There’s really nothing left,” said Stéphane Bannwarth, 55, a wine maker in Obermorschwihr in Alsace.",
-                  },
-                },
-              ],
+                      "“There’s really nothing left,” said Stéphane Bannwarth, 55, a wine maker in Obermorschwihr in Alsace."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -281,10 +281,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "“Usually you get 25 to 30 bunches per vine. Now we’ve got one grape for five vines.",
-                  },
-                },
-              ],
+                      "“Usually you get 25 to 30 bunches per vine. Now we’ve got one grape for five vines."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -294,10 +294,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "“If I manage to harvest 30 per cent of what I was planning I will be happy.”",
-                  },
-                },
-              ],
+                      "“If I manage to harvest 30 per cent of what I was planning I will be happy.”"
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -307,10 +307,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "Suzanne Bannwarth, 83, his mother, said: “I’ve never seen mildew like this. It makes my heart ache.”",
-                  },
-                },
-              ],
+                      "Suzanne Bannwarth, 83, his mother, said: “I’ve never seen mildew like this. It makes my heart ache.”"
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -320,10 +320,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "The family will sell bottles from previous vintages to maintain supplies. “It will enable the vineyard to stay afloat,” said Bannwarth. “But we no longer have a margin of manoeuvre.”",
-                  },
-                },
-              ],
+                      "The family will sell bottles from previous vintages to maintain supplies. “It will enable the vineyard to stay afloat,” said Bannwarth. “But we no longer have a margin of manoeuvre.”"
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -333,10 +333,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "Marc Tardy, a climatologist at Météo-France, the French weather office, said the mildew resulted from wet weather following France’s seventh rainiest July since 1950.",
-                  },
-                },
-              ],
+                      "Marc Tardy, a climatologist at Météo-France, the French weather office, said the mildew resulted from wet weather following France’s seventh rainiest July since 1950."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -346,10 +346,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "“The ground is saturated and the temperatures cool. There is therefore a lot of humidity around the plants and the condensation on the leaves favours the development of fungi.”",
-                  },
-                },
-              ],
+                      "“The ground is saturated and the temperatures cool. There is therefore a lot of humidity around the plants and the condensation on the leaves favours the development of fungi.”"
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -359,10 +359,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "The question now facing France’s wine industry is what other regions will be hit. In Bordeaux, for instance, château proprietors have already detected an onset of mildew in their vines, with the merlot grape particularly badly affected.",
-                  },
-                },
-              ],
+                      "The question now facing France’s wine industry is what other regions will be hit. In Bordeaux, for instance, château proprietors have already detected an onset of mildew in their vines, with the merlot grape particularly badly affected."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -372,10 +372,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "David Arnaud, who manages Château Tour des Graves, said that some of his vines had lost up to 80 per cent of their grapes. “The disease has won,” he told France 3, the state television channel.",
-                  },
-                },
-              ],
+                      "David Arnaud, who manages Château Tour des Graves, said that some of his vines had lost up to 80 per cent of their grapes. “The disease has won,” he told France 3, the state television channel."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -385,10 +385,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "Across the region as a whole, however, winemakers remain hopeful of saving this year’s harvest.",
-                  },
-                },
-              ],
+                      "Across the region as a whole, however, winemakers remain hopeful of saving this year’s harvest."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -398,13 +398,13 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "They say that if the sun emerges and the rain recedes they are likely to avoid the sort of difficulties facing the Champagne region.",
-                  },
-                },
-              ],
-            },
-          ],
-        },
+                      "They say that if the sun emerges and the rain recedes they are likely to avoid the sort of difficulties facing the Champagne region."
+                  }
+                }
+              ]
+            }
+          ]
+        }
       ],
       descriptionMarkup: [
         {
@@ -414,11 +414,11 @@ export default {
               name: "text",
               attributes: {
                 value:
-                  "Winemakers across France are hoping for an end to rainy weather that has led to outbreaks of mildew decimating the vines of Champagne and Alsace.",
+                  "Winemakers across France are hoping for an end to rainy weather that has led to outbreaks of mildew decimating the vines of Champagne and Alsace."
               },
-              children: [],
-            },
-          ],
+              children: []
+            }
+          ]
         },
         {
           name: "paragraph",
@@ -426,13 +426,12 @@ export default {
             {
               name: "text",
               attributes: {
-                value:
-                  "With champagne makers predicting that about 25 per cent",
+                value: "With champagne makers predicting that about 25 per cent"
               },
-              children: [],
-            },
-          ],
-        },
+              children: []
+            }
+          ]
+        }
       ],
       dropcapsDisabled: false,
       expirableFlags: [],
@@ -448,7 +447,7 @@ export default {
         "in",
         "champagne",
         "and",
-        "alsace",
+        "alsace"
       ],
       leadAsset: {
         caption:
@@ -456,28 +455,28 @@ export default {
         credits: "SEBASTIEN BOZON/AFP/Getty Images",
         crop169: {
           ratio: "16:9",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=5906%2C3322%2C0%2C308",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=5906%2C3322%2C0%2C308"
         },
         crop32: {
           ratio: "3:2",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=5906%2C3937%2C0%2C0",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=5906%2C3937%2C0%2C0"
         },
         crop1251: null,
         crop11: {
           ratio: "1:1",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=3937%2C3937%2C984%2C0",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=3937%2C3937%2C984%2C0"
         },
         crop45: {
           ratio: "4:5",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=3150%2C3937%2C1378%2C0",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=3150%2C3937%2C1378%2C0"
         },
         crop23: {
           ratio: "2:3",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=2625%2C3937%2C1641%2C0",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F387207be-f39f-11eb-8f01-2c678acbb979.jpg?crop=2625%2C3937%2C1641%2C0"
         },
         crop2251: null,
         id: "1c316133-6eb0-41f1-9640-6abcdc49cc3f",
-        title: "FRANCE-AGRICULTURE-VINEYARD",
+        title: "FRANCE-AGRICULTURE-VINEYARD"
       },
       relatedArticleSlice: {
         sliceName: "StandardSlice",
@@ -487,13 +486,13 @@ export default {
             article: {
               leadAsset: {
                 crop169: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F917c4054-f2eb-11eb-8f01-2c678acbb979.jpg?crop=5184%2C2916%2C0%2C270",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F917c4054-f2eb-11eb-8f01-2c678acbb979.jpg?crop=5184%2C2916%2C0%2C270"
                 },
                 crop32: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F917c4054-f2eb-11eb-8f01-2c678acbb979.jpg?crop=5184%2C3456%2C0%2C0",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F917c4054-f2eb-11eb-8f01-2c678acbb979.jpg?crop=5184%2C3456%2C0%2C0"
                 },
                 id: "7a2b4420-29f2-4738-8d1b-cab9b9507e72",
-                title: "",
+                title: ""
               },
               bylines: [
                 {
@@ -505,14 +504,14 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: "Caroline Bullock",
-                          },
-                        },
-                      ],
-                    },
+                            value: "Caroline Bullock"
+                          }
+                        }
+                      ]
+                    }
                   ],
-                  image: null,
-                },
+                  image: null
+                }
               ],
               hasVideo: false,
               headline:
@@ -536,12 +535,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left",
+                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary125: [
                 {
@@ -551,12 +550,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left Simon Woodhead ruing",
+                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left Simon Woodhead ruing"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary145: [
                 {
@@ -566,12 +565,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left Simon Woodhead ruing the impact of Brexit",
+                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left Simon Woodhead ruing the impact of Brexit"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary160: [
                 {
@@ -581,12 +580,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left Simon Woodhead ruing the impact of Brexit. Without his",
+                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left Simon Woodhead ruing the impact of Brexit. Without his"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary175: [
                 {
@@ -596,12 +595,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left Simon Woodhead ruing the impact of Brexit. Without his 20-strong team",
+                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left Simon Woodhead ruing the impact of Brexit. Without his 20-strong team"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary225: [
                 {
@@ -611,9 +610,9 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left Simon Woodhead ruing the impact of Brexit. Without his 20-strong team of seasonal ",
+                          "Rushing to press a depleted grape harvest in fading light at his vineyard in Stopham, West Sussex, left Simon Woodhead ruing the impact of Brexit. Without his 20-strong team of seasonal "
                       },
-                      children: [],
+                      children: []
                     },
                     {
                       name: "link",
@@ -621,42 +620,42 @@ export default {
                         href: "https://www.thetimes.co.uk/article/132-000-leave-jobs-and-return-to-europe-5sslw65kn",
                         type: "article",
                         canonicalId:
-                          "132-000-leave-jobs-and-return-to-europe-5sslw65kn",
+                          "132-000-leave-jobs-and-return-to-europe-5sslw65kn"
                       },
                       children: [
                         {
                           name: "text",
                           attributes: {
-                            value: "eastern European workers",
+                            value: "eastern European workers"
                           },
-                          children: [],
-                        },
-                      ],
+                          children: []
+                        }
+                      ]
                     },
                     {
                       name: "text",
                       attributes: {
-                        value: " gathering nine",
+                        value: " gathering nine"
                       },
-                      children: [],
-                    },
-                  ],
-                },
-              ],
-            },
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            }
           },
           {
             leadAsset: null,
             article: {
               leadAsset: {
                 crop169: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc3b4a5b8-e33a-11eb-afdb-c7b01afbcfc5.jpg?crop=1600%2C900%2C0%2C0",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc3b4a5b8-e33a-11eb-afdb-c7b01afbcfc5.jpg?crop=1600%2C900%2C0%2C0"
                 },
                 crop32: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc28f8658-e33a-11eb-afdb-c7b01afbcfc5.jpg?crop=1500%2C1000%2C0%2C0",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc28f8658-e33a-11eb-afdb-c7b01afbcfc5.jpg?crop=1500%2C1000%2C0%2C0"
                 },
                 id: "2f6fd274-6262-41bc-b84b-99d8bfa1e0ea",
-                title: "",
+                title: ""
               },
               bylines: [
                 {
@@ -668,16 +667,16 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: "Adam Sage",
-                          },
-                        },
+                            value: "Adam Sage"
+                          }
+                        }
                       ],
                       attributes: {
-                        slug: "adam-sage",
-                      },
-                    },
+                        slug: "adam-sage"
+                      }
+                    }
                   ],
-                  image: null,
+                  image: null
                 },
                 {
                   byline: [
@@ -688,14 +687,14 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: ", Paris",
-                          },
-                        },
-                      ],
-                    },
+                            value: ", Paris"
+                          }
+                        }
+                      ]
+                    }
                   ],
-                  image: null,
-                },
+                  image: null
+                }
               ],
               hasVideo: false,
               headline:
@@ -719,12 +718,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create",
+                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary125: [
                 {
@@ -734,12 +733,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create an official",
+                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create an official"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary145: [
                 {
@@ -749,12 +748,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create an official classification of their wines",
+                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create an official classification of their wines"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary160: [
                 {
@@ -764,12 +763,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create an official classification of their wines, only two",
+                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create an official classification of their wines, only two"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary175: [
                 {
@@ -779,12 +778,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create an official classification of their wines, only two received the top A",
+                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create an official classification of their wines, only two received the top A"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary225: [
                 {
@@ -794,11 +793,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create an official classification of their wines, only two received the top A grade.",
+                          "When the vineyards around Saint-Émilion, the medieval village in the Bordeaux region, decided to create an official classification of their wines, only two received the top A grade."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -806,27 +805,27 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "The distinction has placed Château Ausone",
+                        value: "The distinction has placed Château Ausone"
                       },
-                      children: [],
-                    },
-                  ],
-                },
-              ],
-            },
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            }
           },
           {
             leadAsset: null,
             article: {
               leadAsset: {
                 crop169: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdface8aa-dff9-11eb-bac0-9597568b601f.jpg?crop=5726%2C3221%2C0%2C298",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdface8aa-dff9-11eb-bac0-9597568b601f.jpg?crop=5726%2C3221%2C0%2C298"
                 },
                 crop32: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdface8aa-dff9-11eb-bac0-9597568b601f.jpg?crop=5726%2C3817%2C0%2C0",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdface8aa-dff9-11eb-bac0-9597568b601f.jpg?crop=5726%2C3817%2C0%2C0"
                 },
                 id: "8cb84225-1902-4929-a5c5-8d32d0f3f1ef",
-                title: "CHINA-FRANCE-DIPLOMACY",
+                title: "CHINA-FRANCE-DIPLOMACY"
               },
               bylines: [
                 {
@@ -838,16 +837,16 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: "Adam Sage",
-                          },
-                        },
+                            value: "Adam Sage"
+                          }
+                        }
                       ],
                       attributes: {
-                        slug: "adam-sage",
-                      },
-                    },
+                        slug: "adam-sage"
+                      }
+                    }
                   ],
-                  image: null,
+                  image: null
                 },
                 {
                   byline: [
@@ -858,14 +857,14 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: ", Paris",
-                          },
-                        },
-                      ],
-                    },
+                            value: ", Paris"
+                          }
+                        }
+                      ]
+                    }
                   ],
-                  image: null,
-                },
+                  image: null
+                }
               ],
               hasVideo: false,
               headline:
@@ -889,12 +888,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of",
+                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary125: [
                 {
@@ -904,12 +903,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of a political",
+                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of a political"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary145: [
                 {
@@ -919,12 +918,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of a political stitch-up by President",
+                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of a political stitch-up by President"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary160: [
                 {
@@ -934,11 +933,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of a political stitch-up by President Macron.",
+                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of a political stitch-up by President Macron."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -946,12 +945,12 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "The tussle",
+                        value: "The tussle"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary175: [
                 {
@@ -961,11 +960,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of a political stitch-up by President Macron.",
+                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of a political stitch-up by President Macron."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -973,12 +972,12 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "The tussle between the two",
+                        value: "The tussle between the two"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary225: [
                 {
@@ -988,11 +987,11 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of a political stitch-up by President Macron.",
+                          "Bordeaux is to lose out to Burgundy in a battle to become the “world capital of wine” amid allegations of a political stitch-up by President Macron."
                       },
-                      children: [],
-                    },
-                  ],
+                      children: []
+                    }
+                  ]
                 },
                 {
                   name: "paragraph",
@@ -1001,16 +1000,16 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "The tussle between the two regions was sparked by the announcement that the",
+                          "The tussle between the two regions was sparked by the announcement that the"
                       },
-                      children: [],
-                    },
-                  ],
-                },
-              ],
-            },
-          },
-        ],
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
       },
       sharingEnabled: true,
       savingEnabled: true,
@@ -1022,11 +1021,11 @@ export default {
               sections: [
                 {
                   id: "54666822-aa8e-430a-b90f-ee4a255b214e",
-                  title: "World",
-                },
-              ],
-            },
-          ],
+                  title: "World"
+                }
+              ]
+            }
+          ]
         },
         {
           slices: [
@@ -1034,11 +1033,11 @@ export default {
               sections: [
                 {
                   id: "ec30cb58-77ed-4b7c-aee6-d0bf2d1ab72a",
-                  title: "World",
-                },
-              ],
-            },
-          ],
+                  title: "World"
+                }
+              ]
+            }
+          ]
         },
         {
           slices: [
@@ -1046,12 +1045,12 @@ export default {
               sections: [
                 {
                   id: "a4531556-cbd5-4ba9-9abb-679719a7700a",
-                  title: "World",
-                },
-              ],
-            },
-          ],
-        },
+                  title: "World"
+                }
+              ]
+            }
+          ]
+        }
       ],
       template: "mainstandard",
       textColour: null,
@@ -1066,16 +1065,16 @@ export default {
                   name: "text",
                   children: [],
                   attributes: {
-                    value: "Adam Sage",
-                  },
-                },
+                    value: "Adam Sage"
+                  }
+                }
               ],
               attributes: {
-                slug: "adam-sage",
-              },
-            },
+                slug: "adam-sage"
+              }
+            }
           ],
-          image: null,
+          image: null
         },
         {
           byline: [
@@ -1086,14 +1085,14 @@ export default {
                   name: "text",
                   children: [],
                   attributes: {
-                    value: ", Paris",
-                  },
-                },
-              ],
-            },
+                    value: ", Paris"
+                  }
+                }
+              ]
+            }
           ],
-          image: null,
-        },
+          image: null
+        }
       ],
       hasVideo: false,
       headline:
@@ -1108,7 +1107,7 @@ export default {
       shortHeadline:
         "Fungus is the bogeyman for this year’s harvest in Champagne",
       slug: "fungus-is-the-bogeyman-for-this-years-harvest-in-champagne-and-alsace",
-      url: "https://www.thetimes.co.uk/article/fungus-is-the-bogeyman-for-this-years-harvest-in-champagne-and-alsace-tclz58csj",
-    },
-  },
+      url: "https://www.thetimes.co.uk/article/fungus-is-the-bogeyman-for-this-years-harvest-in-champagne-and-alsace-tclz58csj"
+    }
+  }
 };

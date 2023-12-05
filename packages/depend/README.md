@@ -165,7 +165,7 @@ everything that installs jest
 
 all the dependencies of all times-components packages
 
-`*=>*` , ``, `*`
+`*=>*` , ``, `\*`
 
 everything
 

@@ -16,7 +16,7 @@ const portraitInlineImage = portraitInlineImageFixture(
   "Portrait credits"
 );
 
-export default (makeTest) => {
+export default makeTest => {
   const tests = [
     {
       name: "inline image (landscape) with caption and credits",

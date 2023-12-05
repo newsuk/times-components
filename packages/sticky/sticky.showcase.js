@@ -59,7 +59,7 @@ const ScrollProgressBar = styled.div`
   ${selectors.sticky(css`
     background: blue;
   `)} ${computeProgressStyles(
-    (progress) => css`
+    progress => css`
       opacity: ${1 - progress};
     `
   )};

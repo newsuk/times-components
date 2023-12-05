@@ -5,7 +5,7 @@ import {
   colours,
   fontsWithFallback,
   fontSizes,
-  spacing,
+  spacing
 } from "@times-components/ts-styleguide";
 
 export const AuthorHeadWrapper = styled(TcView)`

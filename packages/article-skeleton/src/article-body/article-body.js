@@ -6,7 +6,7 @@ import LazyLoad from "@times-components/lazy-load";
 import ArticleImage from "@times-components/article-image";
 
 import ArticleParagraph, {
-  DropCapView,
+  DropCapView
 } from "@times-components/article-paragraph";
 
 import Context from "@times-components/context";
@@ -38,7 +38,7 @@ import {
   InfoCardBulletPoints,
   BigNumbers,
   safeDecodeURIComponent,
-  Timelines,
+  Timelines
 } from "@times-components/ts-components";
 import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
@@ -61,15 +61,15 @@ import {
   NativeAdTitle,
   Ad,
   InlineAdWrapper,
-  InlineAdTitle,
+  InlineAdTitle
 } from "../styles/article-body/responsive";
 
 const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
 
 const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
-const hasDisabledAds = (id) => disabledAds.includes(id);
+const hasDisabledAds = id => disabledAds.includes(id);
 
-export const responsiveDisplayWrapper = (displayType) => {
+export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
     case "secondary":
       return SecondaryImg;
@@ -105,7 +105,7 @@ const renderers = ({
   isLiveOrBreaking,
   section,
   articleHeadline,
-  articleId,
+  articleId
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -144,7 +144,7 @@ const renderers = ({
     return (
       <Context.Consumer key={key}>
         {({
-          theme: { dropCapFont, sectionColour = colours.section.default },
+          theme: { dropCapFont, sectionColour = colours.section.default }
         }) => (
           <DropCapView colour={sectionColour} font={dropCapFont}>
             {children}
@@ -167,13 +167,13 @@ const renderers = ({
     return (
       <LazyLoad key={key} rootMargin={spacing(40)} threshold={0}>
         {({ observed, registerNode }) => (
-          <div id={key} ref={(node) => registerNode(node)}>
+          <div id={key} ref={node => registerNode(node)}>
             <div id={id}>
               <MediaWrapper>
                 <ArticleImage
                   captionOptions={{
                     caption,
-                    credits,
+                    credits
                   }}
                   imageOptions={{
                     display,
@@ -181,7 +181,7 @@ const renderers = ({
                     lowResQuality: 3,
                     lowResSize: 400,
                     ratio,
-                    uri: url,
+                    uri: url
                   }}
                 />
               </MediaWrapper>
@@ -446,7 +446,7 @@ const renderers = ({
   },
   autoNewsletterPuff(key, { element }) {
     const {
-      attributes: { code, copy, headline },
+      attributes: { code, copy, headline }
     } = element;
 
     return (
@@ -514,7 +514,7 @@ const renderers = ({
     return (
       <Context.Consumer key={key}>
         {({
-          theme: { pullQuoteFont, sectionColour = colours.section.default },
+          theme: { pullQuoteFont, sectionColour = colours.section.default }
         }) => (
           <PullQuoteContainer>
             <PullQuoteResp>
@@ -543,8 +543,8 @@ const renderers = ({
       brightcoveAccountId,
       brightcovePlayerId,
       caption,
-      posterImageUrl,
-    },
+      posterImageUrl
+    }
   ) {
     const MediaWrapper = responsiveDisplayWrapper("primary");
     return (
@@ -569,16 +569,16 @@ const renderers = ({
         </figure>
       </MediaWrapper>
     );
-  },
+  }
 });
 
 const decorateAd =
   ({ contextUrl, section }) =>
-  (element) =>
+  element =>
     element.name === "ad"
       ? {
           ...element,
-          attributes: { ...element.attributes, contextUrl, section },
+          attributes: { ...element.attributes, contextUrl, section }
         }
       : element;
 
@@ -593,7 +593,7 @@ const ArticleBody = ({
   inArticlePuffFlag,
   isLiveOrBreaking,
   articleHeadline,
-  id: articleId,
+  id: articleId
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -606,8 +606,8 @@ const ArticleBody = ({
       isLiveOrBreaking,
       articleId,
       section,
-      articleHeadline,
-    }),
+      articleHeadline
+    })
   );
 
 ArticleBody.propTypes = {
@@ -615,12 +615,12 @@ ArticleBody.propTypes = {
     PropTypes.shape({
       attributes: PropTypes.object,
       children: PropTypes.arrayOf(PropTypes.object),
-      name: PropTypes.string,
-    }),
+      name: PropTypes.string
+    })
   ).isRequired,
   contextUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string,
-  section: PropTypes.string,
+  section: PropTypes.string
 };
 
 export { ArticleLink };

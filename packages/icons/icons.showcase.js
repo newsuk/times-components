@@ -34,7 +34,7 @@ const styles = {
   }
 };
 
-const renderIcon = (color) => (args) => {
+const renderIcon = color => args => {
   const name = args[0];
   const Icon = args[1];
 

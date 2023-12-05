@@ -11,9 +11,9 @@ jest.mock("@times-components/icons", () => ({
   IconFacebook: "IconFacebook",
   IconSaveBookmark: "IconSaveBookmark",
   IconTwitter: "IconTwitter",
-  IconActivityIndicator: "IconActivityIndicator",
+  IconActivityIndicator: "IconActivityIndicator"
 }));
 
 jest.mock("@times-components/ts-components", () => ({
-  SaveStar: "SaveStar",
+  SaveStar: "SaveStar"
 }));

@@ -5,7 +5,7 @@ import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import {
   IconFacebook,
   IconTwitter,
-  IconCopyLink,
+  IconCopyLink
 } from "@times-components/icons";
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
@@ -40,7 +40,7 @@ class SaveAndShareBar extends Component {
       savingEnabled,
       sharingEnabled,
       onShareOnFB,
-      onShareOnTwitter,
+      onShareOnTwitter
     } = this.props;
 
     return (
@@ -133,7 +133,7 @@ SaveAndShareBar.propTypes = {
   onShareEmail: PropTypes.func,
   onShareOnTwitter: PropTypes.func,
   savingEnabled: PropTypes.bool.isRequired,
-  sharingEnabled: PropTypes.bool.isRequired,
+  sharingEnabled: PropTypes.bool.isRequired
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */
@@ -141,7 +141,7 @@ SaveAndShareBar.defaultProps = {
   onShareOnFB: () => {},
   onShareOnTwitter: () => {},
   onShareEmail: () => {},
-  getTokenisedShareUrl: getTokenisedArticleUrlApi,
+  getTokenisedShareUrl: getTokenisedArticleUrlApi
 };
 
 export default withTrackEvents(SaveAndShareBar);

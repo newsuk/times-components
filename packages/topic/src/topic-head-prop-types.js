@@ -5,12 +5,12 @@ export const propTypes = {
   metaDescription: PropTypes.string,
   description: PropTypes.arrayOf(treePropType),
   isLoading: PropTypes.bool,
-  name: PropTypes.string,
+  name: PropTypes.string
 };
 
 export const defaultProps = {
   metaDescription: "",
   description: [],
   isLoading: true,
-  name: "",
+  name: ""
 };

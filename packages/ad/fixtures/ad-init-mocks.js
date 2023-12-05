@@ -36,7 +36,7 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
   };
   window.googletag = googletag;
   const processGoogletagCommandQueue = () => {
-    window.googletag.cmd.forEach((cmd) => cmd());
+    window.googletag.cmd.forEach(cmd => cmd());
     window.googletag.cmd = [];
   };
   const pbjs = {
@@ -52,7 +52,7 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
   };
   window.pbjs = pbjs;
   const processPrebidCommandQueue = () => {
-    window.pbjs.que.forEach((cmd) => cmd());
+    window.pbjs.que.forEach(cmd => cmd());
     window.pbjs.que = [];
   };
   const apstag = {

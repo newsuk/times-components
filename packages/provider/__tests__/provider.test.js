@@ -47,7 +47,7 @@ const renderComponent = (child, customMocks) =>
   renderer.create(constructComponent(child, customMocks));
 
 describe("Provider Tests", () => {
-  it("returns query result", (done) => {
+  it("returns query result", done => {
     renderComponent(({ isLoading, author }) => {
       if (!isLoading) {
         expect(author).toMatchSnapshot();
@@ -58,7 +58,7 @@ describe("Provider Tests", () => {
     });
   });
 
-  it("returns loading state with no author", (done) => {
+  it("returns loading state with no author", done => {
     renderComponent(({ isLoading, author }) => {
       if (isLoading) {
         expect(author).toMatchSnapshot();
@@ -69,7 +69,7 @@ describe("Provider Tests", () => {
     });
   });
 
-  it("returns config data", (done) => {
+  it("returns config data", done => {
     renderComponent(({ isLoading, config1, config2 }) => {
       if (!isLoading) {
         expect({ config1, config2 }).toMatchSnapshot();
@@ -80,7 +80,7 @@ describe("Provider Tests", () => {
     });
   });
 
-  it("returns an error", (done) => {
+  it("returns an error", done => {
     const customMocks = [
       {
         error: {
@@ -102,7 +102,7 @@ describe("Provider Tests", () => {
     }, customMocks);
   });
 
-  it("re-renders with refetched data after error", (done) => {
+  it("re-renders with refetched data after error", done => {
     const customMocks = [
       {
         error: {
@@ -142,7 +142,7 @@ describe("Provider Tests", () => {
   });
 
   // Test is excluded as React-Native may have been glossing over some of the issues we are encountering
-  xit("supports another refetch after error during refetch", (done) => {
+  xit("supports another refetch after error during refetch", done => {
     const customMocks = [
       {
         error: {
@@ -194,7 +194,7 @@ describe("Provider Tests", () => {
     }, customMocks);
   });
 
-  it("complains if you omit the debounceTimeMs parameter to a connected component", (done) => {
+  it("complains if you omit the debounceTimeMs parameter to a connected component", done => {
     const ConnectedComponent = connectGraphql(query);
 
     jest.spyOn(console, "error").mockImplementation(() => {});

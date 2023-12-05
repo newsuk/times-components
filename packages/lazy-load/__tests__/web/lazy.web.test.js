@@ -8,7 +8,7 @@ import {
 } from "@times-components/jest-serializer";
 import LazyLoad from "../../src/lazy-load";
 
-const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+const delay = ms => new Promise(res => setTimeout(res, ms));
 
 const omitProps = new Set(["class", "className", "style"]);
 
@@ -87,8 +87,8 @@ const tests = [
         <LazyLoad rootMargin="15px" threshold={0.7}>
           {({ observed, registerNode }) => (
             <ul>
-              {list.map((item) => (
-                <li id={item} key={item} ref={(node) => registerNode(node)}>
+              {list.map(item => (
+                <li id={item} key={item} ref={node => registerNode(node)}>
                   {JSON.stringify(!!observed.get(item))}
                 </li>
               ))}
@@ -99,7 +99,7 @@ const tests = [
 
       expect(component.find("#node-1").text()).toEqual("false");
 
-      const makeEntries = (nodes) =>
+      const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.75 : 0,
           target: node
@@ -125,8 +125,8 @@ const tests = [
         <LazyLoad rootMargin="15px" threshold={0.7}>
           {({ observed, registerNode }) => (
             <ul>
-              {list.map((item) => (
-                <li id={item} key={item} ref={(node) => registerNode(node)}>
+              {list.map(item => (
+                <li id={item} key={item} ref={node => registerNode(node)}>
                   {JSON.stringify(!!observed.get(item))}
                 </li>
               ))}
@@ -137,7 +137,7 @@ const tests = [
 
       expect(component.find("#node-2").text()).toEqual("false");
 
-      const makeEntries = (nodes) =>
+      const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.75 : 0,
           target: node
@@ -161,8 +161,8 @@ const tests = [
         <LazyLoad rootMargin="15px" threshold={0.7}>
           {({ observed, registerNode }) => (
             <ul>
-              {list.map((item) => (
-                <li id={item} key={item} ref={(node) => registerNode(node)}>
+              {list.map(item => (
+                <li id={item} key={item} ref={node => registerNode(node)}>
                   {JSON.stringify(!!observed.get(item))}
                 </li>
               ))}
@@ -191,8 +191,8 @@ const tests = [
         <LazyLoad rootMargin="15px" threshold={0.7}>
           {({ observed, registerNode }) => (
             <ul>
-              {list.map((item) => (
-                <li id={item} key={item} ref={(node) => registerNode(node)}>
+              {list.map(item => (
+                <li id={item} key={item} ref={node => registerNode(node)}>
                   {JSON.stringify(!!observed.get(item))}
                 </li>
               ))}
@@ -201,7 +201,7 @@ const tests = [
         </LazyLoad>
       );
 
-      const makeEntries = (nodes) =>
+      const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.75 : 0,
           target: node
@@ -211,7 +211,7 @@ const tests = [
 
       await delay(20);
 
-      const makeNewEntries = (nodes) =>
+      const makeNewEntries = nodes =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.25 : 0.75,
           target: node
@@ -239,8 +239,8 @@ const tests = [
         <LazyLoad rootMargin="15px" threshold={0.7}>
           {({ observed, registerNode }) => (
             <ul>
-              {list.map((item) => (
-                <li id={item} key={item} ref={(node) => registerNode(node)}>
+              {list.map(item => (
+                <li id={item} key={item} ref={node => registerNode(node)}>
                   {JSON.stringify(!!observed.get(item))}
                 </li>
               ))}
@@ -249,8 +249,8 @@ const tests = [
         </LazyLoad>
       );
 
-      const makeEntries = (nodes) =>
-        [...nodes].map((node) => ({
+      const makeEntries = nodes =>
+        [...nodes].map(node => ({
           intersectionRatio: 0.75,
           target: node
         }));
@@ -259,8 +259,8 @@ const tests = [
 
       await delay(20);
 
-      const makeNewEntries = (nodes) =>
-        [...nodes].map((node) => ({
+      const makeNewEntries = nodes =>
+        [...nodes].map(node => ({
           intersectionRatio: 0,
           target: node
         }));
@@ -289,8 +289,8 @@ const tests = [
         <LazyLoad rootMargin="15px" threshold={0.7}>
           {({ observed, registerNode }) => (
             <ul>
-              {list.map((item) => (
-                <li id={item} key={item} ref={(node) => registerNode(node)}>
+              {list.map(item => (
+                <li id={item} key={item} ref={node => registerNode(node)}>
                   {JSON.stringify(!!observed.get(item))}
                 </li>
               ))}
@@ -299,7 +299,7 @@ const tests = [
         </LazyLoad>
       );
 
-      const makeEntries = (nodes) =>
+      const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.75 : 0,
           target: node
@@ -309,7 +309,7 @@ const tests = [
 
       await delay(20);
 
-      const makeNewEntries = (nodes) =>
+      const makeNewEntries = nodes =>
         [...nodes].map((node, indx) => ({
           intersectionRatio: indx === 0 ? 0.25 : 0.75,
           target: node
@@ -344,8 +344,8 @@ const tests = [
         <LazyLoad rootMargin="15px" threshold={0.7}>
           {({ observed, registerNode }) => (
             <ul>
-              {list.map((item) => (
-                <li id={item} key={item} ref={(node) => registerNode(node)}>
+              {list.map(item => (
+                <li id={item} key={item} ref={node => registerNode(node)}>
                   {JSON.stringify(!!observed.get(item))}
                 </li>
               ))}
@@ -372,8 +372,8 @@ const tests = [
         <LazyLoad rootMargin="15px" threshold={0.7}>
           {({ observed, registerNode }) => (
             <ul>
-              {list.map((item) => (
-                <li id={item} key={item} ref={(node) => registerNode(node)}>
+              {list.map(item => (
+                <li id={item} key={item} ref={node => registerNode(node)}>
                   {JSON.stringify(!!observed.get(item))}
                 </li>
               ))}

@@ -21,11 +21,11 @@ const InsetCaptionWeb = ({ caption, credits }) => (
 );
 
 InsetCaptionWeb.propTypes = {
-  ...Caption.propTypes,
+  ...Caption.propTypes
 };
 
 InsetCaptionWeb.defaultProps = {
-  ...Caption.defaultProps,
+  ...Caption.defaultProps
 };
 
 export default InsetCaptionWeb;

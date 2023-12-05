@@ -10,7 +10,7 @@ const LeadAssetImage = ({ aspectRatio, alt, uri }) => {
 
   const sizes = [360, 520, 680, 860, 1200, 1500];
   const srcSet = sizes.map(
-    (size) => `${appendToImageURL(url, "resize", size)} ${size}w`,
+    size => `${appendToImageURL(url, "resize", size)} ${size}w`
   );
 
   return (

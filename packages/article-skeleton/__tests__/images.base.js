@@ -16,7 +16,7 @@ const emptyArticle = {
   leadAsset: null,
   relatedArticleSlice: null,
   standfirst: null,
-  topics: null,
+  topics: null
 };
 
 export default () =>
@@ -27,7 +27,7 @@ export default () =>
         const output = TestRenderer.create(
           <Context.Provider
             value={{
-              user: { isLoggedIn: true },
+              user: { isLoggedIn: true }
             }}
           >
             <ArticleSkeleton
@@ -45,12 +45,12 @@ export default () =>
                       display: "primary",
                       imageIndex: 1,
                       ratio: "3:2",
-                      url: "https://image-2.io",
+                      url: "https://image-2.io"
                     },
                     children: [],
-                    name: "image",
-                  },
-                ],
+                    name: "image"
+                  }
+                ]
               })}
               onAuthorPress={() => {}}
               onCommentGuidelinesPress={() => {}}
@@ -62,11 +62,11 @@ export default () =>
               onVideoPress={() => {}}
               commentingConfig={{ account: "dummiy-spotim-id" }}
             />
-          </Context.Provider>,
+          </Context.Provider>
         );
 
         expect(output).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "a fullwidth image",
@@ -74,7 +74,7 @@ export default () =>
         const output = TestRenderer.create(
           <Context.Provider
             value={{
-              user: { isLoggedIn: true },
+              user: { isLoggedIn: true }
             }}
           >
             <ArticleSkeleton
@@ -92,12 +92,12 @@ export default () =>
                       display: "fullwidth",
                       imageIndex: 1,
                       ratio: "3:2",
-                      url: "https://image-2.io",
+                      url: "https://image-2.io"
                     },
                     children: [],
-                    name: "image",
-                  },
-                ],
+                    name: "image"
+                  }
+                ]
               })}
               onAuthorPress={() => {}}
               onCommentGuidelinesPress={() => {}}
@@ -109,11 +109,11 @@ export default () =>
               onVideoPress={() => {}}
               commentingConfig={{ account: "dummiy-spotim-id" }}
             />
-          </Context.Provider>,
+          </Context.Provider>
         );
 
         expect(output).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "a secondary image",
@@ -121,7 +121,7 @@ export default () =>
         const output = TestRenderer.create(
           <Context.Provider
             value={{
-              user: { isLoggedIn: true },
+              user: { isLoggedIn: true }
             }}
           >
             <ArticleSkeleton
@@ -139,12 +139,12 @@ export default () =>
                       display: "secondary",
                       imageIndex: 1,
                       ratio: "3:2",
-                      url: "https://image-2.io",
+                      url: "https://image-2.io"
                     },
                     children: [],
-                    name: "image",
-                  },
-                ],
+                    name: "image"
+                  }
+                ]
               })}
               onAuthorPress={() => {}}
               onCommentGuidelinesPress={() => {}}
@@ -156,11 +156,11 @@ export default () =>
               onVideoPress={() => {}}
               commentingConfig={{ account: "dummiy-spotim-id" }}
             />
-          </Context.Provider>,
+          </Context.Provider>
         );
 
         expect(output).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "an inline image",
@@ -168,7 +168,7 @@ export default () =>
         const output = TestRenderer.create(
           <Context.Provider
             value={{
-              user: { isLoggedIn: true },
+              user: { isLoggedIn: true }
             }}
           >
             <ArticleSkeleton
@@ -186,12 +186,12 @@ export default () =>
                       display: "inline",
                       imageIndex: 1,
                       ratio: "9:4",
-                      url: "https://image-inline.io",
+                      url: "https://image-inline.io"
                     },
                     children: [],
-                    name: "image",
-                  },
-                ],
+                    name: "image"
+                  }
+                ]
               })}
               onAuthorPress={() => {}}
               onCommentGuidelinesPress={() => {}}
@@ -203,10 +203,10 @@ export default () =>
               onVideoPress={() => {}}
               commentingConfig={{ account: "dummiy-spotim-id" }}
             />
-          </Context.Provider>,
+          </Context.Provider>
         );
 
         expect(output).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ]);

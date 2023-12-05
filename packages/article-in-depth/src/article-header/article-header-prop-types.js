@@ -6,14 +6,14 @@ const articleHeaderPropTypes = {
       alpha: PropTypes.number,
       blue: PropTypes.number,
       green: PropTypes.number,
-      red: PropTypes.number,
-    }),
+      red: PropTypes.number
+    })
   }),
   flags: PropTypes.arrayOf(
     PropTypes.shape({
       expiryTime: PropTypes.string,
-      type: PropTypes.string,
-    }),
+      type: PropTypes.string
+    })
   ),
   hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
@@ -25,10 +25,10 @@ const articleHeaderPropTypes = {
       alpha: PropTypes.number,
       blue: PropTypes.number,
       green: PropTypes.number,
-      red: PropTypes.number,
-    }),
+      red: PropTypes.number
+    })
   }),
-  updatedTime: PropTypes.string,
+  updatedTime: PropTypes.string
 };
 
 const articleHeaderDefaultProps = {
@@ -37,8 +37,8 @@ const articleHeaderDefaultProps = {
       alpha: 1,
       blue: 255,
       green: 255,
-      red: 255,
-    },
+      red: 255
+    }
   },
   flags: [],
   hasVideo: false,
@@ -50,10 +50,10 @@ const articleHeaderDefaultProps = {
       alpha: 1,
       blue: 0,
       green: 0,
-      red: 0,
-    },
+      red: 0
+    }
   },
-  updatedTime: null,
+  updatedTime: null
 };
 
 export { articleHeaderPropTypes, articleHeaderDefaultProps };

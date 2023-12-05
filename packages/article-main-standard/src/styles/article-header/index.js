@@ -3,7 +3,7 @@ import sharedStyles from "./shared";
 
 const styles = {
   ...globalStyle,
-  ...sharedStyles,
+  ...sharedStyles
 };
 
 export default styles;

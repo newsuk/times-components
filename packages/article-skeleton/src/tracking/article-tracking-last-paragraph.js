@@ -1,5 +1,5 @@
-const tagLastParagraph = (content) => {
-  const paywall = content.find((item) => item.name === "paywall");
+const tagLastParagraph = content => {
+  const paywall = content.find(item => item.name === "paywall");
   if (!paywall) return content;
   const lastPaywallParagraph = paywall.children
     .filter(({ name }) => name === "paragraph")
@@ -10,17 +10,17 @@ const tagLastParagraph = (content) => {
     index === lastParagraphIndex
       ? {
           ...child,
-          attributes: { ...child.attributes, id: "last-paragraph" },
+          attributes: { ...child.attributes, id: "last-paragraph" }
         }
-      : child,
+      : child
   );
-  return content.map((child) =>
+  return content.map(child =>
     child.name === "paywall"
       ? {
           ...child,
-          children: paywallChildren,
+          children: paywallChildren
         }
-      : child,
+      : child
   );
 };
 export default tagLastParagraph;

@@ -72,7 +72,7 @@ const tests = [
         </AdComposer>
       );
 
-      wrapper.find("Ad").forEach((node) => {
+      wrapper.find("Ad").forEach(node => {
         node.instance().setAdReady();
       });
 

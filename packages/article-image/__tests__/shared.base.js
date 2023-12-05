@@ -4,7 +4,7 @@ import ArticleImage from "../src/article-image";
 
 const testImageUrl = "https://img/someImage";
 
-export default (makeTest) => {
+export default makeTest => {
   const tests = [
     {
       name: "does not render an image if display is not received",

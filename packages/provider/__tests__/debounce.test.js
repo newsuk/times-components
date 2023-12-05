@@ -23,10 +23,10 @@ jest.useFakeTimers();
 // Jest has done this in v22, so this can be removed if we upgrade
 jest.advanceTimersByTime = jest.runTimersToTime;
 
-const testUpdateInnerPropsAfterDelay = (delay) => {
+const testUpdateInnerPropsAfterDelay = delay => {
   const component = shallow(
     <Debounce
-      debounceRender={(props) => <Inner {...props} />}
+      debounceRender={props => <Inner {...props} />}
       debounceTimeMs={delay}
       foo="initialFoo"
     />
@@ -77,7 +77,7 @@ iterator([
     test() {
       const component = shallow(
         <Debounce
-          debounceRender={(props) => <Inner {...props} />}
+          debounceRender={props => <Inner {...props} />}
           debounceTimeMs={1000}
           foo="initialFoo"
         />
@@ -100,7 +100,7 @@ iterator([
   {
     name: "withDebounce has appropriate static members on the outer component",
     test() {
-      const InnerWithStatics = (props) => props.foo;
+      const InnerWithStatics = props => props.foo;
       InnerWithStatics.staticMember = "staticMemberValue";
       InnerWithStatics.propTypes = {
         debouncedProps: PropTypes.shape({
@@ -149,7 +149,7 @@ iterator([
     test() {
       const component = shallow(
         <Debounce
-          debounceRender={(props) => <Inner {...props} />}
+          debounceRender={props => <Inner {...props} />}
           debounceTimeMs={1000}
           foo="initialFoo"
         />
@@ -172,7 +172,7 @@ iterator([
     test() {
       const component = shallow(
         <Debounce
-          debounceRender={(props) => <Inner {...props} />}
+          debounceRender={props => <Inner {...props} />}
           debounceTimeMs={1000}
           foo="initialFoo"
         />

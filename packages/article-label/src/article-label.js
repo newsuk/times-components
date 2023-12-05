@@ -7,7 +7,7 @@ import {
 import PropTypes from "prop-types";
 import styles from "./style";
 
-const articleStyle = (color) => ({
+const articleStyle = color => ({
   ...checkStylesForUnits(styles.title),
   color: gqlRgbaToHex(color) || color
 });

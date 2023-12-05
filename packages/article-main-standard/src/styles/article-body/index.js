@@ -9,17 +9,17 @@ const webStyles = {
   ad: {
     ...sharedStyles.ad,
     marginBottom: spacing(6),
-    marginTop: spacing(6),
+    marginTop: spacing(6)
   },
   articleTextElement: {
     ...sharedStyles.articleTextElement,
-    marginTop: 0,
-  },
+    marginTop: 0
+  }
 };
 
 const styles = {
   ...globalStyle,
-  ...webStyles,
+  ...webStyles
 };
 
 export default styles;

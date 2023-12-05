@@ -7,12 +7,12 @@ import defaultFixture from "../fixtures/default";
 jest.mock("@times-components/article-byline", () => ({
   __esModule: true,
   ArticleBylineOpinion: "ArticleBylineOpinion",
-  default: "ArticleByline",
+  default: "ArticleByline"
 }));
 jest.mock("@times-components/ts-components", () => ({
   __esModule: true,
   ...jest.requireActual("@times-components/ts-components"),
-  ArticleFlags: "ArticleFlags",
+  ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/article-label", () => "ArticleLabel");
 jest.mock("@times-components/date-publication", () => "DatePublication");
@@ -28,14 +28,14 @@ export default () => {
       children: [
         {
           attributes: {
-            value: "Test",
+            value: "Test"
           },
           children: [],
-          name: "text",
-        },
+          name: "text"
+        }
       ],
-      name: "paragraph",
-    },
+      name: "paragraph"
+    }
   ];
 
   const tests = [
@@ -47,23 +47,23 @@ export default () => {
             {...defaultFixture({
               headline,
               label,
-              paragraph,
+              paragraph
             })}
-          />,
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "article summary content component with the given style",
       test: () => {
         const testInstance = TestRenderer.create(
-          <ArticleSummaryContent ast={ast} />,
+          <ArticleSummaryContent ast={ast} />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "article summary content component with white space height and lineHeight",
@@ -73,22 +73,22 @@ export default () => {
             ast={ast}
             style={{ lineHeight: 30 }}
             whiteSpaceHeight={60}
-          />,
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
+      }
     },
     {
       name: "article summary content component without white space height",
       test: () => {
         const testInstance = TestRenderer.create(
-          <ArticleSummaryContent ast={ast} whiteSpaceHeight={0} />,
+          <ArticleSummaryContent ast={ast} whiteSpaceHeight={0} />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator(tests);

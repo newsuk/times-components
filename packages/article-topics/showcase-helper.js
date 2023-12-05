@@ -2,7 +2,7 @@
 import React from "react";
 import ArticleTopics from "./src/article-topics";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();

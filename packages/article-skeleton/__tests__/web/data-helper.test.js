@@ -1,6 +1,6 @@
 import {
   getActiveArticleFlags,
-  getIsLiveOrBreakingFlag,
+  getIsLiveOrBreakingFlag
 } from "../../src/data-helper";
 
 describe("Data helper", () => {
@@ -12,8 +12,8 @@ describe("Data helper", () => {
       const flags = [
         {
           type: "LIVE",
-          expiryTime: null,
-        },
+          expiryTime: null
+        }
       ];
       expect(getActiveArticleFlags(flags)).toEqual("live");
     });
@@ -21,8 +21,8 @@ describe("Data helper", () => {
       const flags = [
         {
           type: "BREAKING",
-          expiryTime: active,
-        },
+          expiryTime: active
+        }
       ];
       expect(getActiveArticleFlags(flags)).toEqual("breaking");
     });
@@ -34,8 +34,8 @@ describe("Data helper", () => {
       const flags = [
         {
           type: "BREAKING",
-          expiryTime: expired,
-        },
+          expiryTime: expired
+        }
       ];
       expect(getActiveArticleFlags(flags)).toEqual(undefined);
     });
@@ -45,8 +45,8 @@ describe("Data helper", () => {
       const flags = [
         {
           type: "LIVE",
-          expiryTime: active,
-        },
+          expiryTime: active
+        }
       ];
       expect(getIsLiveOrBreakingFlag(flags)).toEqual("LIVE");
     });
@@ -54,8 +54,8 @@ describe("Data helper", () => {
       const flags = [
         {
           type: "LIVE",
-          expiryTime: expired,
-        },
+          expiryTime: expired
+        }
       ];
       expect(getIsLiveOrBreakingFlag(flags)).toEqual("LIVE");
     });
@@ -63,8 +63,8 @@ describe("Data helper", () => {
       const flags = [
         {
           type: "BREAKING",
-          expiryTime: active,
-        },
+          expiryTime: active
+        }
       ];
       expect(getIsLiveOrBreakingFlag(flags)).toEqual("BREAKING");
     });
@@ -72,8 +72,8 @@ describe("Data helper", () => {
       const flags = [
         {
           type: "BREAKING",
-          expiryTime: expired,
-        },
+          expiryTime: expired
+        }
       ];
       expect(getIsLiveOrBreakingFlag(flags)).toEqual("BREAKING");
     });
@@ -85,8 +85,8 @@ describe("Data helper", () => {
       const flags = [
         {
           type: "UPDATED",
-          expiryTime: active,
-        },
+          expiryTime: active
+        }
       ];
       expect(getIsLiveOrBreakingFlag(flags)).toEqual(undefined);
     });

@@ -5,46 +5,46 @@ const styles = {
   ...sharedStyles,
   listContentErrorContainer: {
     flex: 1,
-    margin: spacing(3),
+    margin: spacing(3)
   },
   listEmptyBackButton: {
     alignSelf: "center",
     marginBottom: spacing(2),
-    marginTop: spacing(4),
+    marginTop: spacing(4)
   },
   listEmptyMessage: {
     color: colours.functional.secondary,
     ...fontFactory({
       font: "bodyRegular",
-      fontSize: "infoTitle",
+      fontSize: "infoTitle"
     }),
     left: "25%",
     position: "absolute",
     textAlign: "center",
-    top: "140px",
+    top: "140px"
   },
   listEmptyStateContainer: {
     height: "100vh",
-    justifyContent: "flex-end",
+    justifyContent: "flex-end"
   },
   listErrorHeading: {
     ...sharedStyles.listErrorHeading,
-    marginTop: spacing(4),
+    marginTop: spacing(4)
   },
   listErrorMessage: {
     ...sharedStyles.listErrorMessage,
-    lineHeight: 27,
+    lineHeight: 27
   },
   paginationSpacing: {
     ...sharedStyles.paginationSpacing,
-    flex: 1,
-  },
+    flex: 1
+  }
 };
 
 const retryButtonStyles = {
   alignSelf: "center",
   marginBottom: spacing(2),
-  marginTop: spacing(8),
+  marginTop: spacing(8)
 };
 
 export { retryButtonStyles };

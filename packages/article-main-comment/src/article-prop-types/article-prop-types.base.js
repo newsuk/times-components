@@ -7,14 +7,14 @@ const articlePagePropTypes = {
     graphQLErrors: PropTypes.array,
     message: PropTypes.string,
     networkError: PropTypes.shape({
-      message: PropTypes.string,
-    }),
+      message: PropTypes.string
+    })
   }),
   isLoading: PropTypes.bool,
   onImagePress: PropTypes.func,
   receiveChildList: PropTypes.func.isRequired,
   zephrDivs: PropTypes.bool,
-  showAudioPlayer: PropTypes.bool,
+  showAudioPlayer: PropTypes.bool
 };
 
 const articlePageDefaultProps = {
@@ -22,7 +22,7 @@ const articlePageDefaultProps = {
   error: null,
   isLoading: false,
   onImagePress: null,
-  showAudioPlayer: false,
+  showAudioPlayer: false
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };

@@ -15,7 +15,7 @@ export const HeadingForRelatedArticles = styled.h3`
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  ${(props) => props.styles && props.styles};
+  ${props => props.styles && props.styles};
 `;
 
 const RelatedArticlesHeading = ({ heading }) => (
@@ -31,11 +31,11 @@ const RelatedArticlesHeading = ({ heading }) => (
 );
 
 RelatedArticlesHeading.propTypes = {
-  heading: PropTypes.string,
+  heading: PropTypes.string
 };
 
 RelatedArticlesHeading.defaultProps = {
-  heading: "Related articles",
+  heading: "Related articles"
 };
 
 export default RelatedArticlesHeading;

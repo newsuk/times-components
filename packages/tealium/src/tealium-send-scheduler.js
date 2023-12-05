@@ -22,7 +22,7 @@ export default class TealiumSendScheduler {
     if (!enabled) {
       return;
     }
-    ["env", "profile", "account"].forEach((option) => {
+    ["env", "profile", "account"].forEach(option => {
       if (!options[option])
         throw new Error(`Tealium option not supplied: ${option}`);
     });

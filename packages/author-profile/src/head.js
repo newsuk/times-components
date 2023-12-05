@@ -25,11 +25,11 @@ function Head({ metaDescription, description, name }) {
 Head.propTypes = {
   metaDescription: PropTypes.string,
   description: authorProfileHeadPropTypes.biography.isRequired,
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired
 };
 
 Head.defaultProps = {
-  metaDescription: null,
+  metaDescription: null
 };
 
 export default Head;

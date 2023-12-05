@@ -8,7 +8,7 @@ export default (withPageState, renderComponent) => {
     {
       name: "inner component with page",
       test: () => {
-        const Component = (props) => (
+        const Component = props => (
           <TcText>{JSON.stringify(props, null, 2)}</TcText>
         );
         const PageChanger = withPageState(Component);
@@ -25,7 +25,7 @@ export default (withPageState, renderComponent) => {
     {
       name: "inner component with new props",
       test: () => {
-        const Component = (props) => (
+        const Component = props => (
           <TcText>{JSON.stringify(props, null, 2)}</TcText>
         );
         const PageChanger = withPageState(Component);
@@ -47,7 +47,7 @@ export default (withPageState, renderComponent) => {
     {
       name: "inner component with prev page",
       test: () => {
-        const Component = (props) => (
+        const Component = props => (
           <TcText>{JSON.stringify(props, null, 2)}</TcText>
         );
         const PageChanger = withPageState(Component);
@@ -66,7 +66,7 @@ export default (withPageState, renderComponent) => {
     {
       name: "inner component with next page",
       test: () => {
-        const Component = (props) => (
+        const Component = props => (
           <TcText>{JSON.stringify(props, null, 2)}</TcText>
         );
         const PageChanger = withPageState(Component);

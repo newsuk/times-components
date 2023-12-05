@@ -306,8 +306,7 @@
   "articlesWithListItems": {
     "hasVideo": false,
     "label": "",
-    "expirableFlags": [
-    ],
+    "expirableFlags": [],
     "images": {
       "alt": "",
       "credits": "Gareth Fuller/Press Association",

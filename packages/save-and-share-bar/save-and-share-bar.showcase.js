@@ -7,19 +7,19 @@ import SaveAndShareBar from "./src/save-and-share-bar";
 
 const articleId = "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6";
 
-const mockGetTokenisedArticleUrl = (id) =>
-  new Promise((resolve) =>
+const mockGetTokenisedArticleUrl = id =>
+  new Promise(resolve =>
     setTimeout(
       () =>
         resolve({
           data: {
             article: {
-              tokenisedUrl: `https://www.thetimes.co.uk/article/${id}?shareToken=333310c5af52a3c6e467e3b15516c950`,
-            },
-          },
+              tokenisedUrl: `https://www.thetimes.co.uk/article/${id}?shareToken=333310c5af52a3c6e467e3b15516c950`
+            }
+          }
         }),
-      1000,
-    ),
+      1000
+    )
   );
 
 export default {
@@ -45,8 +45,8 @@ export default {
         </MockBookmarksProvider>
       ),
       name: "Save and Share bar",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Composed/Save and Share bar",
+  name: "Composed/Save and Share bar"
 };

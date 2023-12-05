@@ -49,7 +49,7 @@ export default {
         return (
           <MockedProvider mocks={mocks} removeTypename>
             <WithData debounceTimeMs={0} prop1={1} prop2={2}>
-              {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+              {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
             </WithData>
           </MockedProvider>
         );
@@ -83,7 +83,7 @@ export default {
         return (
           <MockedProvider mocks={mocks} removeTypename>
             <WithData debounceTimeMs={0} prop1={1} prop2={2}>
-              {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+              {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
             </WithData>
           </MockedProvider>
         );
@@ -101,7 +101,7 @@ export default {
           <MockFixture
             params={makeAuthorParams({
               articleQuery: authorArticlesWithImagesQuery,
-              articleVariables: (iteration) => ({
+              articleVariables: iteration => ({
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
@@ -110,7 +110,7 @@ export default {
               pageSize,
               slug
             })}
-            render={(mocks) => (
+            render={mocks => (
               <MockedProvider mocks={mocks}>
                 <AuthorProfileProvider
                   debounceTimeMs={0}
@@ -118,7 +118,7 @@ export default {
                   pageSize={pageSize}
                   slug={slug}
                 >
-                  {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </AuthorProfileProvider>
               </MockedProvider>
             )}
@@ -139,10 +139,10 @@ export default {
                 id
               })
             })}
-            render={(mocks) => (
+            render={mocks => (
               <MockedProvider mocks={mocks}>
                 <ArticleProvider debounceTimeMs={0} id={id}>
-                  {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </ArticleProvider>
               </MockedProvider>
             )}
@@ -162,7 +162,7 @@ export default {
           <MockFixture
             params={makeAuthorParams({
               articleQuery: authorArticlesWithImagesQuery,
-              articleVariables: (iteration) => ({
+              articleVariables: iteration => ({
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
@@ -171,7 +171,7 @@ export default {
               pageSize,
               slug
             })}
-            render={(mocks) => (
+            render={mocks => (
               <MockedProvider mocks={mocks}>
                 <AuthorArticlesWithImagesProvider
                   debounceTimeMs={0}
@@ -179,7 +179,7 @@ export default {
                   pageSize={pageSize}
                   slug={slug}
                 >
-                  {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </AuthorArticlesWithImagesProvider>
               </MockedProvider>
             )}
@@ -199,7 +199,7 @@ export default {
         return (
           <MockFixture
             params={makeTopicParams({
-              articleVariables: (iteration) => ({
+              articleVariables: iteration => ({
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
@@ -209,10 +209,10 @@ export default {
               pageSize,
               slug
             })}
-            render={(mocks) => (
+            render={mocks => (
               <MockedProvider mocks={mocks}>
                 <TopicProvider debounceTimeMs={0} slug="chelsea">
-                  {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </TopicProvider>
               </MockedProvider>
             )}
@@ -232,7 +232,7 @@ export default {
         return (
           <MockFixture
             params={makeTopicParams({
-              articleVariables: (iteration) => ({
+              articleVariables: iteration => ({
                 first: pageSize,
                 imageRatio: articleImageRatio,
                 skip: (iteration - 1) * pageSize,
@@ -242,7 +242,7 @@ export default {
               pageSize,
               slug
             })}
-            render={(mocks) => (
+            render={mocks => (
               <MockedProvider mocks={mocks}>
                 <TopicArticlesProvider
                   debounceTimeMs={0}
@@ -250,7 +250,7 @@ export default {
                   pageSize={pageSize}
                   slug={slug}
                 >
-                  {(props) => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </TopicArticlesProvider>
               </MockedProvider>
             )}

@@ -11,7 +11,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     makeTopicUrl,
     page,
     pageSize,
-    topicSlug,
+    topicSlug
   };
 
   const clientOptions = {
@@ -19,8 +19,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     useGET: true,
     skipAuthorization: true,
     headers: {
-      "x-new-topic-data-source": true,
-    },
+      "x-new-topic-data-source": true
+    }
   };
 
   runClient(topic, clientOptions, data);

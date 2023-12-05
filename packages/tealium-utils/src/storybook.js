@@ -18,7 +18,7 @@ const tealiumSendScheduler = new TealiumSendScheduler(
 
 const reporter = tealiumReporter(tealiumSendScheduler);
 
-export default (e) => {
+export default e => {
   if (reporter) reporter.analytics(e);
 
   return action("analytics-event")(e);

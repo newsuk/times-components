@@ -1,6 +1,6 @@
 import { withTrackEvents } from "@times-components/tracking";
 
-export default (Component) =>
+export default Component =>
   withTrackEvents(Component, {
     analyticsEvents: [
       {
@@ -11,9 +11,9 @@ export default (Component) =>
           articleId: id,
           scrollDepth: {
             itemNumber: index + 1,
-            total: length,
-          },
-        }),
-      },
-    ],
+            total: length
+          }
+        })
+      }
+    ]
   });

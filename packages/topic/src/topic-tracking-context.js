@@ -1,11 +1,11 @@
 import { withTrackingContext } from "@times-components/tracking";
 
-export default (Component) =>
+export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ topic, page, pageSize }) => ({
       page,
       pageSize,
-      topicName: topic && topic.name,
+      topicName: topic && topic.name
     }),
-    trackingObjectName: "Topic",
+    trackingObjectName: "Topic"
   });

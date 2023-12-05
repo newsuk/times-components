@@ -14,7 +14,7 @@ const safeStringify = require("./safe-stringify");
 const errorLink = require("./graphql-error-link");
 const LoggingLink = require("./graphql-logging-link");
 
-const makeClient = (options) => {
+const makeClient = options => {
   if (!options.uri) {
     throw new Error("API endpoint is empty");
   }
@@ -28,7 +28,7 @@ const makeClient = (options) => {
       return fetch(compressedUrl, opts);
     },
     headers: { "content-type": "application/json" },
-    uri: options.uri,
+    uri: options.uri
   };
 
   if (options.headers) {
@@ -49,15 +49,15 @@ const makeClient = (options) => {
       errorLink(options.logger),
       options.usePersistedQueries &&
         createPersistedQueryLink({ useGETForHashedQueries: true }),
-      httpLink,
-    ].filter(Boolean),
+      httpLink
+    ].filter(Boolean)
   );
 
   return new ApolloClient({
     name: `@times-components/ssr/client (${options.clientName || "unknown"})`,
     cache: new InMemoryCache({ addTypename: true, fragmentMatcher }),
     link,
-    ssrMode: true,
+    ssrMode: true
   });
 };
 
@@ -66,7 +66,7 @@ const renderData = (app, helmetContext = {}) =>
     const serverStylesheet = new ServerStyleSheet();
 
     const markup = ReactDOMServer.renderToString(
-      serverStylesheet.collectStyles(app),
+      serverStylesheet.collectStyles(app)
     );
 
     const responsiveStyles = serverStylesheet.getStyleTags();
@@ -77,7 +77,7 @@ const renderData = (app, helmetContext = {}) =>
     const headMarkup = helmet
       ? ["title", "meta", "link", "script"].reduce(
           (head, key) => head + helmet[key].toString(),
-          "",
+          ""
         )
       : "";
 
@@ -85,7 +85,7 @@ const renderData = (app, helmetContext = {}) =>
       headMarkup,
       markup,
       responsiveStyles,
-      styles,
+      styles
     };
   });
 
@@ -97,7 +97,7 @@ module.exports = async (component, options) => {
 
   const { headMarkup, markup, responsiveStyles, styles } = await renderData(
     app,
-    helmetContext,
+    helmetContext
   );
 
   const props = safeStringify(options.data);
@@ -112,6 +112,6 @@ module.exports = async (component, options) => {
     initialState,
     markup,
     responsiveStyles,
-    styles,
+    styles
   };
 };

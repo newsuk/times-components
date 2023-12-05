@@ -16,12 +16,12 @@ export const sharedPropTypes = {
     summary160: PropTypes.arrayOf(treePropType),
     summary175: PropTypes.arrayOf(treePropType),
     summary225: PropTypes.arrayOf(treePropType),
-    url: PropTypes.string,
+    url: PropTypes.string
   }),
   imageConfig: PropTypes.shape({
     cropSize: PropTypes.string,
     imageRatio: PropTypes.number,
-    style: PropTypes.object,
+    style: PropTypes.object
   }),
   isOpinionByline: PropTypes.bool,
   isReversed: PropTypes.bool,
@@ -30,8 +30,8 @@ export const sharedPropTypes = {
   summaryConfig: PropTypes.shape({
     lengths: PropTypes.arrayOf(PropTypes.number),
     style: PropTypes.object,
-    type: PropTypes.string,
-  }),
+    type: PropTypes.string
+  })
 };
 
 export const sharedDefaultProps = {
@@ -47,5 +47,5 @@ export const sharedDefaultProps = {
   summary160: [],
   summary175: [],
   summary225: [],
-  summaryConfig: {},
+  summaryConfig: {}
 };

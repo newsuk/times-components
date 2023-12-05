@@ -23,7 +23,7 @@ describe("InlineVideoPlayer", () => {
       dispose: jest.fn(),
       on: jest.fn(),
       pause: jest.fn(),
-      ready: jest.fn().mockImplementation((f) => f())
+      ready: jest.fn().mockImplementation(f => f())
     }));
   };
 

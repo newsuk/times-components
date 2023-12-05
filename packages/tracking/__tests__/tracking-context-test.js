@@ -13,7 +13,7 @@ module.exports = () => {
     TestComponent.defaultProps = { someProp: "foo" };
     TestComponent.someStatic = { foo: "bar" };
 
-    const withTestTracking = (WrappedComponent) => {
+    const withTestTracking = WrappedComponent => {
       const TestTracking = (props, context) => {
         const { tracking } = context;
         tracking.analytics({
@@ -37,7 +37,7 @@ module.exports = () => {
       const WithTrackingAndContext = withTrackingContext(
         withTestTracking(TestComponent),
         {
-          getAttrs: (props) => ({ one: props.keyTwo, three: "four" }),
+          getAttrs: props => ({ one: props.keyTwo, three: "four" }),
           trackingObjectName: "TestObject"
         }
       );

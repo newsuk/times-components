@@ -2,29 +2,29 @@ import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
 const styles = {
   byline: {
-    marginBottom: 0,
+    marginBottom: 0
   },
   headline: {
     color: colours.functional.primary,
     ...fontFactory({
       font: "headline",
-      fontSize: "smallHeadline",
+      fontSize: "smallHeadline"
     }),
     fontWeight: "400",
     marginBottom: spacing(1),
-    marginTop: 0,
+    marginTop: 0
   },
   opinionByline: {
     lineHeight: 24,
     marginBottom: 0,
-    marginTop: 0,
+    marginTop: 0
   },
   title: {
     color: colours.functional.primary,
     ...fontFactory({
       font: "headline",
-      fontSize: "pageComponentHeadline",
-    }),
+      fontSize: "pageComponentHeadline"
+    })
   },
   titleContainer: {
     alignItems: "center",
@@ -35,8 +35,8 @@ const styles = {
     borderTopWidth: 1,
     display: "flex",
     justifyContent: "center",
-    padding: spacing(2),
-  },
+    padding: spacing(2)
+  }
 };
 
 export default styles;

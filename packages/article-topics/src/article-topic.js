@@ -21,7 +21,7 @@ const ArticleTopic = ({ fontSize, lineHeight, name, onPress, slug }) => {
       {({ makeTopicUrl }) => (
         <TcView style={styles.spacer}>
           <Link
-            onPress={(e) => onPress(e, { name, slug })}
+            onPress={e => onPress(e, { name, slug })}
             url={makeTopicUrl({ slug })}
           >
             <TcView style={styles.container}>

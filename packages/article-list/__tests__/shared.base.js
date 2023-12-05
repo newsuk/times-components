@@ -10,8 +10,8 @@ export default (additionalTests = []) => {
   beforeEach(() => {
     global.Intl = {
       DateTimeFormat: () => ({
-        resolvedOptions: () => ({ timeZone: "Europe/London" }),
-      }),
+        resolvedOptions: () => ({ timeZone: "Europe/London" })
+      })
     };
     jest.useFakeTimers();
   });
@@ -29,12 +29,12 @@ export default (additionalTests = []) => {
             articles={articlesFixture}
             emptyStateMessage="Empty state"
             refetch={() => {}}
-          />,
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
-      },
-    },
+      }
+    }
   ];
 
   iterator([...tests, ...additionalTests]);

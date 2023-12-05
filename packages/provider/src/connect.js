@@ -4,14 +4,14 @@ import { Query } from "react-apollo";
 import PropTypes from "prop-types";
 import { Debounce } from "./debounce";
 
-const flatten = (l) =>
+const flatten = l =>
   l.reduce((a, b) => a.concat(Array.isArray(b) ? flatten(b) : b), []);
 
-const getQueryVariableNames = (query) =>
+const getQueryVariableNames = query =>
   flatten(
-    query.definitions.map((definition) =>
+    query.definitions.map(definition =>
       (definition.variableDefinitions || []).map(
-        (variable) => variable.variable.name.value
+        variable => variable.variable.name.value
       )
     )
   );
@@ -74,11 +74,11 @@ QueryProvider.propTypes = {
 };
 
 QueryProvider.defaultProps = {
-  propsToVariables: (i) => i,
+  propsToVariables: i => i,
   ssr: undefined
 };
 
-const connectGraphql = (query, propsToVariables) => (props) => (
+const connectGraphql = (query, propsToVariables) => props => (
   <QueryProvider {...props} propsToVariables={propsToVariables} query={query} />
 );
 

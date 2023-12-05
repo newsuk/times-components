@@ -7,7 +7,7 @@ import { propTypes, defaultProps } from "./article-byline-prop-types";
 import styles from "./styles";
 
 const BylineText = styled(TcText)`
-  ${(props) =>
+  ${props =>
     props.style ? checkStylesForUnits(props.style) : ""} ${checkStylesForUnits(
     styles.nonLinkText
   )};

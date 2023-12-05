@@ -7,7 +7,7 @@ const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;
 
   const standFirstStyles = {
-    ...styles.standFirst,
+    ...styles.standFirst
   };
 
   return (
@@ -23,11 +23,11 @@ const HeaderStandfirst = ({ standfirst }) => {
 };
 
 HeaderStandfirst.propTypes = {
-  standfirst: PropTypes.string,
+  standfirst: PropTypes.string
 };
 
 HeaderStandfirst.defaultProps = {
-  standfirst: null,
+  standfirst: null
 };
 
 export default HeaderStandfirst;

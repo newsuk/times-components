@@ -11,7 +11,7 @@ import videoLabelFixture from "./fixtures/video-label";
 import reviewFixture from "./fixtures/review";
 import straplineFixture from "./fixtures/strapline";
 
-const story = (m) => <TcView style={{ padding: 20 }}>{m}</TcView>;
+const story = m => <TcView style={{ padding: 20 }}>{m}</TcView>;
 const isTablet = true;
 
 export default {
@@ -19,49 +19,49 @@ export default {
     {
       component: () => story(<ArticleSummary {...defaultFixture()} />),
       name: "Default",
-      type: "story",
+      type: "story"
     },
     {
       component: () =>
         story(<ArticleSummary {...defaultFixture()} isTablet={isTablet} />),
       name: "Default on tablet",
-      type: "story",
+      type: "story"
     },
     {
       component: () => story(<ArticleSummary {...withSummaryLinksFixture()} />),
       name: "With links in summary",
-      type: "story",
+      type: "story"
     },
     {
       component: () => story(<ArticleSummary {...noBylineFixture()} />),
       name: "No byline",
-      type: "story",
+      type: "story"
     },
     {
       component: () => story(<ArticleSummary {...articleMultiFixture()} />),
       name: "Summary with multiple paragraphs",
-      type: "story",
+      type: "story"
     },
     {
       component: () => story(<ArticleSummary {...videoLabelFixture()} />),
       name: "Video label",
-      type: "story",
+      type: "story"
     },
     {
       component: () => story(<ArticleSummary {...noLabelFixture()} />),
       name: "No label",
-      type: "story",
+      type: "story"
     },
     {
       component: () => story(<ArticleSummary {...reviewFixture()} />),
       name: "Review/Rating summary",
-      type: "story",
+      type: "story"
     },
     {
       component: () => story(<ArticleSummary {...straplineFixture()} />),
       name: "with Strapline",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Composed/Article Summary",
+  name: "Composed/Article Summary"
 };

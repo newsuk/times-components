@@ -1,6 +1,6 @@
 import sizes from "./sizes";
 
-const getMaxSizes = (adSizes) => {
+const getMaxSizes = adSizes => {
   if (!adSizes) {
     return { height: 0, width: 0 };
   }

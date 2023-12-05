@@ -7,7 +7,7 @@ import { spacing } from "@times-components/ts-styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TcView,
-  normaliseWidthForAssetRequestCache,
+  normaliseWidthForAssetRequestCache
 } from "@times-components/utils";
 import LazyLoad from "@times-components/lazy-load";
 import { scrollUpToPaging } from "./utils/index";
@@ -56,12 +56,12 @@ class ArticleList extends Component {
       pageSize,
       receiveChildList,
       refetch,
-      showImages,
+      showImages
     } = this.props;
 
     const paginationComponent = ({
       hideResults = false,
-      autoScroll = false,
+      autoScroll = false
     } = {}) => (
       <ArticleListPagination
         count={count}
@@ -103,11 +103,11 @@ class ArticleList extends Component {
           .map((number, index) => ({
             elementId: `empty.${index}`,
             id: index,
-            isLoading: true,
+            isLoading: true
           }))
       : articles.map((article, index) => ({
           ...article,
-          elementId: `${article.id}.${index}`,
+          elementId: `${article.id}.${index}`
         }));
 
     const Contents = ({ clientHasRendered, observed, registerNode }) =>
@@ -139,7 +139,7 @@ class ArticleList extends Component {
               };
 
               const highResSize = ArticleList.getImageSize(
-                observed.get(elementId),
+                observed.get(elementId)
               );
 
               return (
@@ -148,7 +148,7 @@ class ArticleList extends Component {
                     accessibility-label={elementId}
                     data-testid={`article-list-item-${index}`}
                     id={elementId}
-                    ref={(node) => registerNode(node)}
+                    ref={node => registerNode(node)}
                   >
                     <ErrorView>
                       {({ hasError }) =>
@@ -194,7 +194,7 @@ class ArticleList extends Component {
               : Contents({
                   clientHasRendered,
                   observed,
-                  registerNode,
+                  registerNode
                 })}
           </TcView>
         )}

@@ -3,7 +3,7 @@ import {
   compose,
   minimaliseTransform,
   minimalWebTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 
 jest.mock("@times-components/card", () => "Card");
@@ -15,7 +15,7 @@ addSerializers(
     print,
     minimalWebTransform,
     minimaliseTransform(
-      (value, key) => key === "style" || key.toLowerCase().includes("class"),
-    ),
-  ),
+      (value, key) => key === "style" || key.toLowerCase().includes("class")
+    )
+  )
 );

@@ -1,6 +1,6 @@
 import { withTrackEvents } from "@times-components/tracking";
 
-export default (Component) =>
+export default Component =>
   withTrackEvents(Component, {
     analyticsEvents: [
       {

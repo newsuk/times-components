@@ -7,7 +7,7 @@ import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
 import {
   articleDefaultProps,
-  articlePropTypes,
+  articlePropTypes
 } from "./article-prop-types/article-prop-types";
 import { LeadAssetCaptionContainer } from "./styles/article-body/responsive";
 
@@ -16,7 +16,7 @@ import {
   HeaderContainer,
   HeaderTopContainer,
   LeadAsset,
-  MetaContainer,
+  MetaContainer
 } from "./styles/responsive";
 
 const renderCaption = ({ caption }) => (
@@ -44,7 +44,7 @@ class ArticlePage extends Component {
       shortHeadline,
       standfirst,
       topics,
-      updatedTime,
+      updatedTime
     } = article;
 
     const metaProps = { bylines, publicationName, publishedTime };
@@ -88,7 +88,7 @@ class ArticlePage extends Component {
       swgProductId,
       getFallbackThumbnailUrl169,
       zephrDivs,
-      storefrontConfig,
+      storefrontConfig
     } = this.props;
 
     if (error || isLoading) {

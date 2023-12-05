@@ -11,11 +11,11 @@ export default {
               name: "text",
               attributes: {
                 value:
-                  "Great Britain’s men’s team pursuit squad have missed out on a chance to defend their Olympic title after a chaotic race in which one of their riders was sent flying off his bike when a member of the Denmark team crashed into his back wheel.",
+                  "Great Britain’s men’s team pursuit squad have missed out on a chance to defend their Olympic title after a chaotic race in which one of their riders was sent flying off his bike when a member of the Denmark team crashed into his back wheel."
               },
-              children: [],
-            },
-          ],
+              children: []
+            }
+          ]
         },
         {
           name: "paragraph",
@@ -24,9 +24,9 @@ export default {
               name: "text",
               attributes: {
                 value:
-                  "The Danes were already well on course for victory before the crash, with team pursuit rules stating that a catch is made by a team when they are within one metre of the other team’s last rider. But the British team were not happy with the way in which Frederik Madsen rode straight into Charlie Tanfield, while British Cycling’s director of performance, Stephen Park, said he thought Denmark should have been disqualified for using aerodynamic kit in the qualifiers that,",
+                  "The Danes were already well on course for victory before the crash, with team pursuit rules stating that a catch is made by a team when they are within one metre of the other team’s last rider. But the British team were not happy with the way in which Frederik Madsen rode straight into Charlie Tanfield, while British Cycling’s director of performance, Stephen Park, said he thought Denmark should have been disqualified for using aerodynamic kit in the qualifiers that,"
               },
-              children: [],
+              children: []
             },
             {
               name: "paywall",
@@ -35,13 +35,13 @@ export default {
                   name: "text",
                   attributes: {
                     value:
-                      " he claimed, did not meet regulations. Denmark were declared winners of the chaotic race, however, meaning GB can no longer win a medal.",
+                      " he claimed, did not meet regulations. Denmark were declared winners of the chaotic race, however, meaning GB can no longer win a medal."
                   },
-                  children: [],
-                },
-              ],
-            },
-          ],
+                  children: []
+                }
+              ]
+            }
+          ]
         },
         {
           name: "paywall",
@@ -54,10 +54,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "The drama at the track began two hours before the event, when Ed Clancy, the only remaining member of the GB team who won gold in Rio, announced that he was pulling out of the rest of the competition and retiring, citing a back injury. Clancy, 36, who is one of the most successful team pursuit riders in the world, with three consecutive Olympic titles, had helped the team to finish fourth in the qualifiers on Monday but said he feared his injury could cost them going forward.",
-                  },
-                },
-              ],
+                      "The drama at the track began two hours before the event, when Ed Clancy, the only remaining member of the GB team who won gold in Rio, announced that he was pulling out of the rest of the competition and retiring, citing a back injury. Clancy, 36, who is one of the most successful team pursuit riders in the world, with three consecutive Olympic titles, had helped the team to finish fourth in the qualifiers on Monday but said he feared his injury could cost them going forward."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -67,10 +67,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "The team from Denmark finished the qualifying round top of the table, after breaking the Olympic record, set by the Britons when they won their gold at the Rio Games in 2016. But Park said that a number of teams, including GB, had complained to the sport’s governing body, the UCI, about some of the kit the Danes were wearing, including tape onthe shins of each rider and, he said, undervests that “concerned” other teams. Denmark’s performance engineer is aerodynamics expert Dan Bigham, who has been national British champion as a rider and was thought to be a contender for a spot in the GB squad before being dropped.",
-                  },
-                },
-              ],
+                      "The team from Denmark finished the qualifying round top of the table, after breaking the Olympic record, set by the Britons when they won their gold at the Rio Games in 2016. But Park said that a number of teams, including GB, had complained to the sport’s governing body, the UCI, about some of the kit the Danes were wearing, including tape onthe shins of each rider and, he said, undervests that “concerned” other teams. Denmark’s performance engineer is aerodynamics expert Dan Bigham, who has been national British champion as a rider and was thought to be a contender for a spot in the GB squad before being dropped."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -80,14 +80,14 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "Park said that he believed Denmark should be disqualified from the competition. “I don’t think there is any alternative,” he said. “The rules are clear. It says you cannot apply something to the skin. They have applied something to the skin. It says in the specific rule that if you break that rule, your option is for being eliminated or disqualified, so they have no option. There is no doubt in anyone else’s mind that it is deliberate.” He said the UCI had issued Denmark with a warning and they were no longer allowed to wear the kit in question.",
-                  },
-                },
-              ],
+                      "Park said that he believed Denmark should be disqualified from the competition. “I don’t think there is any alternative,” he said. “The rules are clear. It says you cannot apply something to the skin. They have applied something to the skin. It says in the specific rule that if you break that rule, your option is for being eliminated or disqualified, so they have no option. There is no doubt in anyone else’s mind that it is deliberate.” He said the UCI had issued Denmark with a warning and they were no longer allowed to wear the kit in question."
+                  }
+                }
+              ]
             },
             {
               name: "ad",
-              children: [],
+              children: []
             },
             {
               name: "paragraph",
@@ -97,10 +97,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "The performance director added that he was “disappointed” that the governing body “were not going to apply their own rules… particularly because there has been a significantly long drawn out process for registering the equipment. A number of the teams including ourselves have gone to huge lengths to make sure we are legal and have checked every single item with the UCI, as required by the regulations before we got here,” he said.",
-                  },
-                },
-              ],
+                      "The performance director added that he was “disappointed” that the governing body “were not going to apply their own rules… particularly because there has been a significantly long drawn out process for registering the equipment. A number of the teams including ourselves have gone to huge lengths to make sure we are legal and have checked every single item with the UCI, as required by the regulations before we got here,” he said."
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -110,10 +110,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "It was a sentiment echoed after the crash by British Cycling head coach, Iain Dyer, who said that he “didn’t know where” the eventual time awarded to the team pursuit riders had come from and that he felt the decision to send Denmark through to the final and not GB was inconsistent with a recent UCI decision on another crash, which happened at the St Petersburg Cup earlier this year.",
-                  },
-                },
-              ],
+                      "It was a sentiment echoed after the crash by British Cycling head coach, Iain Dyer, who said that he “didn’t know where” the eventual time awarded to the team pursuit riders had come from and that he felt the decision to send Denmark through to the final and not GB was inconsistent with a recent UCI decision on another crash, which happened at the St Petersburg Cup earlier this year."
+                  }
+                }
+              ]
             },
             {
               name: "image",
@@ -127,9 +127,9 @@ export default {
                 relativeHorizontalOffset: 0.10078125,
                 relativeVerticalOffset: 0.146875,
                 relativeWidth: 0.78359375,
-                relativeHeight: 0.696875,
+                relativeHeight: 0.696875
               },
-              children: [],
+              children: []
             },
             {
               name: "paragraph",
@@ -139,10 +139,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "“It’s our understanding that what the Danes did was basically cause a crash to their opponents,” he said. “In the St Petersburg Nations Cup, [a rider] was disqualified for causing the crash of an opponent. That was my take on it because obviously it prevents us from setting a time and progressing to the correct heat in the next round still to come. They didn’t see it that way. I said the regulation hasn’t changed but instead I’ve got a lot of carbon fibre shrapnel and an injured rider.”",
-                  },
-                },
-              ],
+                      "“It’s our understanding that what the Danes did was basically cause a crash to their opponents,” he said. “In the St Petersburg Nations Cup, [a rider] was disqualified for causing the crash of an opponent. That was my take on it because obviously it prevents us from setting a time and progressing to the correct heat in the next round still to come. They didn’t see it that way. I said the regulation hasn’t changed but instead I’ve got a lot of carbon fibre shrapnel and an injured rider.”"
+                  }
+                }
+              ]
             },
             {
               name: "paragraph",
@@ -152,10 +152,10 @@ export default {
                   children: [],
                   attributes: {
                     value:
-                      "Tanfield, the rider in question, had stepped into the team after Clancy’s announcement. Dyer said Tanfield was “a bit battered” but able to get up after the crash. Clancy said that stepping away from the event was an “incredibly difficult” decision to make but the right one. “There’s no way I’m going to pretend my back is ok and jeopardise the chances of the entire team and keep [Tanfield] on the sidelines,” he said. “I want those boys to do well, I want what’s best for the team, for British cycling and I don’t care if that comes at my expense.”",
-                  },
-                },
-              ],
+                      "Tanfield, the rider in question, had stepped into the team after Clancy’s announcement. Dyer said Tanfield was “a bit battered” but able to get up after the crash. Clancy said that stepping away from the event was an “incredibly difficult” decision to make but the right one. “There’s no way I’m going to pretend my back is ok and jeopardise the chances of the entire team and keep [Tanfield] on the sidelines,” he said. “I want those boys to do well, I want what’s best for the team, for British cycling and I don’t care if that comes at my expense.”"
+                  }
+                }
+              ]
             },
             {
               name: "interactive",
@@ -166,14 +166,14 @@ export default {
                 element: {
                   value: "olympics-schedule",
                   attributes: {
-                    style: "background-color:white",
-                  },
-                },
+                    style: "background-color:white"
+                  }
+                }
               },
-              children: [],
-            },
-          ],
-        },
+              children: []
+            }
+          ]
+        }
       ],
       descriptionMarkup: [
         {
@@ -183,19 +183,19 @@ export default {
               name: "text",
               attributes: {
                 value:
-                  "Great Britain’s men’s team pursuit squad have missed out on a chance to defend their Olympic title after a chaotic race in which one of their riders was sent flying off his bike when a member of the",
+                  "Great Britain’s men’s team pursuit squad have missed out on a chance to defend their Olympic title after a chaotic race in which one of their riders was sent flying off his bike when a member of the"
               },
-              children: [],
-            },
-          ],
-        },
+              children: []
+            }
+          ]
+        }
       ],
       dropcapsDisabled: false,
       expirableFlags: [
         {
           type: "NEW",
-          expiryTime: "2021-08-03T19:00:00.000Z",
-        },
+          expiryTime: "2021-08-03T19:00:00.000Z"
+        }
       ],
       keywords: [
         "tokyo",
@@ -210,7 +210,7 @@ export default {
         "ended",
         "british",
         "team’s",
-        "hopes",
+        "hopes"
       ],
       leadAsset: {
         caption:
@@ -218,28 +218,28 @@ export default {
         credits: "TIMES PHOTOGRAPHER MARC ASPLAND",
         crop169: {
           ratio: "16:9",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=4497%2C2530%2C0%2C262",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=4497%2C2530%2C0%2C262"
         },
         crop32: {
           ratio: "3:2",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=4497%2C2998%2C0%2C0",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=4497%2C2998%2C0%2C0"
         },
         crop1251: null,
         crop11: {
           ratio: "1:1",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=2719%2C2719%2C327%2C103",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffab53df8-f450-11eb-a2a3-afea84050239.jpg?crop=2719%2C2719%2C327%2C103"
         },
         crop45: {
           ratio: "4:5",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F60d375fa-f44c-11eb-a2a3-afea84050239.jpg?crop=2298%2C2873%2C71%2C271",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F60d375fa-f44c-11eb-a2a3-afea84050239.jpg?crop=2298%2C2873%2C71%2C271"
         },
         crop23: {
           ratio: "2:3",
-          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F60d375fa-f44c-11eb-a2a3-afea84050239.jpg?crop=2413%2C3619%2C0%2C0",
+          url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F60d375fa-f44c-11eb-a2a3-afea84050239.jpg?crop=2413%2C3619%2C0%2C0"
         },
         crop2251: null,
         id: "febd425e-4eab-4ac5-b7d9-04fe3a975492",
-        title: "Tokyo Olympics. Day 11. Cycling Track - Men's Team Pursuit",
+        title: "Tokyo Olympics. Day 11. Cycling Track - Men's Team Pursuit"
       },
       relatedArticleSlice: {
         sliceName: "StandardSlice",
@@ -249,14 +249,14 @@ export default {
             article: {
               leadAsset: {
                 crop169: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4529%2C2548%2C2%2C450",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4529%2C2548%2C2%2C450"
                 },
                 crop32: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4552%2C3035%2C0%2C0",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4552%2C3035%2C0%2C0"
                 },
                 id: "39de6425-613f-42d9-847b-cd49b16d7e65",
                 title:
-                  "Tokyo Olympics. Day 11. Cycling Track - Women's Team Pursuit",
+                  "Tokyo Olympics. Day 11. Cycling Track - Women's Team Pursuit"
               },
               bylines: [
                 {
@@ -268,16 +268,16 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: "Rebecca Myers",
-                          },
-                        },
+                            value: "Rebecca Myers"
+                          }
+                        }
                       ],
                       attributes: {
-                        slug: "rebecca-myers",
-                      },
-                    },
+                        slug: "rebecca-myers"
+                      }
+                    }
                   ],
-                  image: null,
+                  image: null
                 },
                 {
                   byline: [
@@ -288,14 +288,14 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: ", Tokyo",
-                          },
-                        },
-                      ],
-                    },
+                            value: ", Tokyo"
+                          }
+                        }
+                      ]
+                    }
                   ],
-                  image: null,
-                },
+                  image: null
+                }
               ],
               hasVideo: false,
               headline:
@@ -319,12 +319,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were",
+                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary125: [
                 {
@@ -334,12 +334,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by",
+                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary145: [
                 {
@@ -349,12 +349,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the",
+                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary160: [
                 {
@@ -364,12 +364,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of",
+                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary175: [
                 {
@@ -379,12 +379,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of their Olympic",
+                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of their Olympic"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary225: [
                 {
@@ -394,27 +394,27 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of their Olympic titles. They took second place in the sprint and team",
+                          "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of their Olympic titles. They took second place in the sprint and team"
                       },
-                      children: [],
-                    },
-                  ],
-                },
-              ],
-            },
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            }
           },
           {
             leadAsset: null,
             article: {
               leadAsset: {
                 crop169: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffcf2e3a-f445-11eb-8f01-2c678acbb979.jpg?crop=4692%2C2639%2C0%2C186",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffcf2e3a-f445-11eb-8f01-2c678acbb979.jpg?crop=4692%2C2639%2C0%2C186"
                 },
                 crop32: {
-                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffcf2e3a-f445-11eb-8f01-2c678acbb979.jpg?crop=4010%2C2673%2C267%2C131",
+                  url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fffcf2e3a-f445-11eb-8f01-2c678acbb979.jpg?crop=4010%2C2673%2C267%2C131"
                 },
                 id: "e6d165dd-7219-4923-ae22-f1ffa9ba7053",
-                title: "Tokyo 2020 Olympic Games - Day 11 - Athletics",
+                title: "Tokyo 2020 Olympic Games - Day 11 - Athletics"
               },
               bylines: [
                 {
@@ -426,16 +426,16 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: "Matt Lawton",
-                          },
-                        },
+                            value: "Matt Lawton"
+                          }
+                        }
                       ],
                       attributes: {
-                        slug: "matt-lawton",
-                      },
-                    },
+                        slug: "matt-lawton"
+                      }
+                    }
                   ],
-                  image: null,
+                  image: null
                 },
                 {
                   byline: [
@@ -446,14 +446,14 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: ", Tokyo",
-                          },
-                        },
-                      ],
-                    },
+                            value: ", Tokyo"
+                          }
+                        }
+                      ]
+                    }
                   ],
-                  image: null,
-                },
+                  image: null
+                }
               ],
               hasVideo: false,
               headline:
@@ -477,12 +477,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten",
+                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary125: [
                 {
@@ -492,12 +492,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten Warholm had even crossed",
+                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten Warholm had even crossed"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary145: [
                 {
@@ -507,12 +507,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten Warholm had even crossed the finish line. He",
+                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten Warholm had even crossed the finish line. He"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary160: [
                 {
@@ -522,12 +522,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten Warholm had even crossed the finish line. He was little",
+                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten Warholm had even crossed the finish line. He was little"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary175: [
                 {
@@ -537,12 +537,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten Warholm had even crossed the finish line. He was little more than ten",
+                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten Warholm had even crossed the finish line. He was little more than ten"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary225: [
                 {
@@ -552,14 +552,14 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten Warholm had even crossed the finish line. He was little more than ten metres short and the clock was still reading 44",
+                          "The first jaw-dropping moment of an extraordinary day inside the Olympic Stadium came before Karsten Warholm had even crossed the finish line. He was little more than ten metres short and the clock was still reading 44"
                       },
-                      children: [],
-                    },
-                  ],
-                },
-              ],
-            },
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            }
           },
           {
             leadAsset: null,
@@ -567,14 +567,14 @@ export default {
               leadAsset: {
                 posterImage: {
                   crop169: {
-                    url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1278%2C719%2C0%2C0",
+                    url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1278%2C719%2C0%2C0"
                   },
                   crop32: {
-                    url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1078%2C719%2C100%2C0",
+                    url: "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1078%2C719%2C100%2C0"
                   },
                   id: "f874d69b-bd32-4734-b1f0-37f9cd36dec9",
-                  title: "",
-                },
+                  title: ""
+                }
               },
               bylines: [
                 {
@@ -586,14 +586,14 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: "Ed Gorman, George Sandeman",
-                          },
-                        },
-                      ],
-                    },
+                            value: "Ed Gorman, George Sandeman"
+                          }
+                        }
+                      ]
+                    }
                   ],
-                  image: null,
-                },
+                  image: null
+                }
               ],
               hasVideo: true,
               headline:
@@ -617,12 +617,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame",
+                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary125: [
                 {
@@ -632,12 +632,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s",
+                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary145: [
                 {
@@ -647,12 +647,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch",
+                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary160: [
                 {
@@ -662,12 +662,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the",
+                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary175: [
                 {
@@ -677,12 +677,12 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the 800m, making the",
+                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the 800m, making the"
                       },
-                      children: [],
-                    },
-                  ],
-                },
+                      children: []
+                    }
+                  ]
+                }
               ],
               summary225: [
                 {
@@ -692,16 +692,16 @@ export default {
                       name: "text",
                       attributes: {
                         value:
-                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the 800m, making the 11th day of the Games one of the nation’s most",
+                          "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the 800m, making the 11th day of the Games one of the nation’s most"
                       },
-                      children: [],
-                    },
-                  ],
-                },
-              ],
-            },
-          },
-        ],
+                      children: []
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
       },
       sharingEnabled: true,
       savingEnabled: true,
@@ -713,18 +713,18 @@ export default {
               sections: [
                 {
                   id: "e0313ff2-5180-4ef1-a3dd-e6db63e21647",
-                  title: "Sport",
-                },
-              ],
-            },
-          ],
+                  title: "Sport"
+                }
+              ]
+            }
+          ]
         },
         {
           slices: [
             {
-              sections: [],
-            },
-          ],
+              sections: []
+            }
+          ]
         },
         {
           slices: [
@@ -732,11 +732,11 @@ export default {
               sections: [
                 {
                   id: "a532cd03-8c03-4d91-8f66-9b937a5dff42",
-                  title: "Sport",
-                },
-              ],
-            },
-          ],
+                  title: "Sport"
+                }
+              ]
+            }
+          ]
         },
         {
           slices: [
@@ -744,11 +744,11 @@ export default {
               sections: [
                 {
                   id: "81076f88-5d5a-4955-9a52-8ac833fce5cc",
-                  title: "Sport",
-                },
-              ],
-            },
-          ],
+                  title: "Sport"
+                }
+              ]
+            }
+          ]
         },
         {
           slices: [
@@ -756,11 +756,11 @@ export default {
               sections: [
                 {
                   id: "ad543d96-9141-4fdb-b0f6-ba7b4e0cebc8",
-                  title: "Sport",
-                },
-              ],
-            },
-          ],
+                  title: "Sport"
+                }
+              ]
+            }
+          ]
         },
         {
           slices: [
@@ -768,24 +768,24 @@ export default {
               sections: [
                 {
                   id: "1c50b4f7-5204-4ca0-8bed-2cb85b49edb7",
-                  title: "Sport",
-                },
-              ],
-            },
-          ],
-        },
+                  title: "Sport"
+                }
+              ]
+            }
+          ]
+        }
       ],
       template: "mainstandard",
       textColour: null,
       topics: [
         {
           name: "Tokyo Olympics 2021",
-          slug: "olympics",
+          slug: "olympics"
         },
         {
           name: "Cycling",
-          slug: "cycling",
-        },
+          slug: "cycling"
+        }
       ],
       bylines: [
         {
@@ -797,16 +797,16 @@ export default {
                   name: "text",
                   children: [],
                   attributes: {
-                    value: "Rebecca Myers",
-                  },
-                },
+                    value: "Rebecca Myers"
+                  }
+                }
               ],
               attributes: {
-                slug: "rebecca-myers",
-              },
-            },
+                slug: "rebecca-myers"
+              }
+            }
           ],
-          image: null,
+          image: null
         },
         {
           byline: [
@@ -817,14 +817,14 @@ export default {
                   name: "text",
                   children: [],
                   attributes: {
-                    value: ", Tokyo",
-                  },
-                },
-              ],
-            },
+                    value: ", Tokyo"
+                  }
+                }
+              ]
+            }
           ],
-          image: null,
-        },
+          image: null
+        }
       ],
       hasVideo: false,
       headline:
@@ -839,7 +839,7 @@ export default {
       shortHeadline:
         "‘Denmark bent rules and caused crash’ that ended British team’s hopes",
       slug: "tokyo-olympics-denmark-crash-denies-great-britain-chance-to-defend-mens-team-pursuit-title",
-      url: "https://www.thetimes.co.uk/article/tokyo-olympics-denmark-crash-denies-great-britain-chance-to-defend-mens-team-pursuit-title-nvpkz5z0d",
-    },
-  },
+      url: "https://www.thetimes.co.uk/article/tokyo-olympics-denmark-crash-denies-great-britain-chance-to-defend-mens-team-pursuit-title-nvpkz5z0d"
+    }
+  }
 };

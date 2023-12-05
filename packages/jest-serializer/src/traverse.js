@@ -1,6 +1,6 @@
 import React from "react";
 
-const withoutProps = (node) => ({ ...node, props: {} });
+const withoutProps = node => ({ ...node, props: {} });
 
 const isReactElement = ([key, value]) =>
   key !== "children" && React.isValidElement(value);
@@ -96,7 +96,7 @@ const transform = (accum, transformElement, node) => {
   };
 };
 
-const test = (value) =>
+const test = value =>
   !!value && value.$$typeof === Symbol.for("react.test.json");
 
 const print = (printer, transformElement) => (node, serialize) => {

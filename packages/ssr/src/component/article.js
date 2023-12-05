@@ -10,7 +10,7 @@ const { DraftArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
 const {
   ContextProviderWithDefaults,
-  defaults,
+  defaults
 } = require("@times-components/context/rnw");
 const { scales, themeFactory } = require("@times-components/ts-styleguide/rnw");
 
@@ -35,7 +35,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     sharingSavingFlag,
     commentingFlag,
     showAudioPlayer,
-    storefrontConfig,
+    storefrontConfig
   } = data;
 
   return React.createElement(
@@ -49,9 +49,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
         {
           analyticsStream,
           debounceTimeMs,
-          id: articleId,
+          id: articleId
         },
-        (providerData) => {
+        providerData => {
           const { isLoading, error, refetch } = providerData;
           const article = isPreview
             ? providerData.draftArticle
@@ -68,12 +68,12 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 theme: {
                   ...themeFactory(
                     article ? getSectionFromTiles(article) : "",
-                    articleTemplate,
+                    articleTemplate
                   ),
-                  scale: scale || defaults.theme.scale,
+                  scale: scale || defaults.theme.scale
                 },
-                user: userState,
-              },
+                user: userState
+              }
             },
             React.createElement(Article, {
               analyticsStream,
@@ -84,7 +84,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                   : "unknown section",
                 isSavingEnabled: sharingSavingFlag,
                 isSharingEnabled: sharingSavingFlag,
-                isCommentEnabled: commentingFlag,
+                isCommentEnabled: commentingFlag
               },
               error,
               isLoading,
@@ -101,11 +101,11 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               getFallbackThumbnailUrl169,
               zephrDivs,
               showAudioPlayer,
-              storefrontConfig,
-            }),
+              storefrontConfig
+            })
           );
-        },
-      ),
-    ),
+        }
+      )
+    )
   );
 };

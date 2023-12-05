@@ -34,7 +34,7 @@ class StandardSlice extends Component {
         <SliceContainer>
           <ChildrenContainer>
             {items
-              .map((item) => (
+              .map(item => (
                 <ChildContainer key={item.props.id}>{item}</ChildContainer>
               ))
               .reduce((previous, current) => [

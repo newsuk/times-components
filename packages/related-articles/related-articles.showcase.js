@@ -12,12 +12,12 @@ import standard2RelatedArticlesFixture from "./fixtures/standard/2-articles";
 import standard3RelatedArticlesFixture from "./fixtures/standard/3-articles";
 import draftStandard3RelatedArticlesFixture from "./fixtures/standard/3-draft-article.json";
 
-const preventDefaultedAction = (decorateAction) =>
+const preventDefaultedAction = decorateAction =>
   decorateAction([
     ([e, ...args]) => {
       e.preventDefault();
       return ["[SyntheticEvent (storybook prevented default)]", ...args];
-    },
+    }
   ]);
 
 const createRelatedArticles = (decorateAction, fixtureData, extraProps) => {
@@ -26,7 +26,7 @@ const createRelatedArticles = (decorateAction, fixtureData, extraProps) => {
     analyticsStream: storybookReporter,
     onPress: preventDefaultedAction(decorateAction)("onArticlePress"),
     slice: relatedArticleSlice,
-    ...extraProps,
+    ...extraProps
   };
   return (
     <TcView>
@@ -41,84 +41,84 @@ export default {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          standard1RelatedArticleFixture().data,
+          standard1RelatedArticleFixture().data
         ),
       name: "Standard template with one related article",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          standard1RelatedArticleFixtureVideoLead.data,
+          standard1RelatedArticleFixtureVideoLead.data
         ),
       name: "Standard template with one related article with video lead",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          standard1RelatedArticleNoImageFixture.data,
+          standard1RelatedArticleNoImageFixture.data
         ),
       name: "Standard template with one related article with no image",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          standard1RelatedArticleNoLabelFixture.data,
+          standard1RelatedArticleNoLabelFixture.data
         ),
       name: "Standard template with one related article with no label",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          standard1RelatedArticleNoBylineFixture.data,
+          standard1RelatedArticleNoBylineFixture.data
         ),
       name: "Standard template with one related article with no byline",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          standard2RelatedArticlesFixture().data,
+          standard2RelatedArticlesFixture().data
         ),
       name: "Standard template with two related articles",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          standard3RelatedArticlesFixture().data,
+          standard3RelatedArticlesFixture().data
         ),
       name: "Standard template with three related articles",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
-          draftStandard3RelatedArticlesFixture.data,
+          draftStandard3RelatedArticlesFixture.data
         ),
       name: "Standard template with three DRAFT related articles (preview)",
-      type: "story",
+      type: "story"
     },
     {
       component: (_, { decorateAction }) =>
         createRelatedArticles(
           decorateAction,
           standard3RelatedArticlesFixture().data,
-          { heading: "Additional Featured Articles" },
+          { heading: "Additional Featured Articles" }
         ),
       name: "Alternate heading",
-      type: "story",
-    },
+      type: "story"
+    }
   ],
-  name: "Composed/RelatedArticles",
+  name: "Composed/RelatedArticles"
 };

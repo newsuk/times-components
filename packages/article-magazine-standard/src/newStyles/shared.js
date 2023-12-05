@@ -4,72 +4,72 @@ const sharedStyles = {
   articleHeadline: {
     ...fontFactory({
       font: "headline",
-      fontSize: "headline",
+      fontSize: "headline"
     }),
     color: colours.functional.brandColour,
     marginBottom: spacing(2),
-    textAlign: "center",
+    textAlign: "center"
   },
   container: {
     alignItems: "center",
     marginBottom: spacing(5),
     paddingLeft: spacing(2),
     paddingRight: spacing(2),
-    paddingTop: spacing(7),
+    paddingTop: spacing(7)
   },
   datePublication: {
     ...fontFactory({
       font: "supporting",
-      fontSize: "cardMeta",
+      fontSize: "cardMeta"
     }),
     color: colours.functional.secondary,
-    marginTop: spacing(3),
+    marginTop: spacing(3)
   },
   datePublicationTablet: {
-    marginTop: "auto",
+    marginTop: "auto"
   },
   label: {
-    marginBottom: spacing(2),
+    marginBottom: spacing(2)
   },
   leadAssetContainer: {
-    marginBottom: spacing(4),
+    marginBottom: spacing(4)
   },
   leadAssetContainerTablet: {
     paddingLeft: spacing(2),
-    paddingRight: spacing(2),
+    paddingRight: spacing(2)
   },
   meta: {
     flexDirection: "row",
-    flexWrap: "wrap",
+    flexWrap: "wrap"
   },
   metaContainer: {
-    alignItems: "center",
+    alignItems: "center"
   },
   metaContainerTablet: {
     flexDirection: "row",
-    justifyContent: "center",
+    justifyContent: "center"
   },
   metaTablet: {
-    paddingTop: spacing(1),
+    paddingTop: spacing(1)
   },
   separator: {
     borderRightColor: colours.functional.keyline,
     borderRightWidth: 1,
     height: spacing(3),
     marginLeft: spacing(2),
-    marginRight: spacing(2),
+    marginRight: spacing(2)
   },
   standFirst: {
     ...fontFactory({
       font: "headlineRegular",
-      fontSize: "smallestHeadline",
+      fontSize: "smallestHeadline"
     }),
     color: colours.functional.primary,
     marginBottom: spacing(3),
     paddingLeft: spacing(2),
     paddingRight: spacing(2),
-    textAlign: "center",
-  },
+    textAlign: "center"
+  }
 };
 
 export default sharedStyles;

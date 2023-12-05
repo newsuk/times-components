@@ -9,7 +9,7 @@ export const propTypes = {
   twitter: PropTypes.string,
   uri: PropTypes.string,
   metaDescription: PropTypes.string,
-  contractualTitle: PropTypes.string,
+  contractualTitle: PropTypes.string
 };
 
 export const defaultProps = {
@@ -20,5 +20,5 @@ export const defaultProps = {
   twitter: "",
   uri: "",
   metaDescription: "",
-  contractualTitle: "",
+  contractualTitle: ""
 };

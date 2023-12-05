@@ -53,14 +53,14 @@ export default {
         <LazyLoad rootMargin="100px" threshold={0.5}>
           {({ observed, registerNode }) => (
             <ul>
-              {list.map((id) => {
+              {list.map(id => {
                 const isVisible = !!observed.get(id);
                 const StyledElement = isVisible ? SeenElement : UnseenElement;
 
                 return (
                   <StyledElement
                     id={id}
-                    innerRef={(node) => registerNode(node)}
+                    innerRef={node => registerNode(node)}
                     key={id}
                   >
                     {isVisible ? <SeenText /> : <UnseenText />}
