@@ -5,10 +5,12 @@ import { LoggedOutButtonsContainer } from '../styles';
 type LoggedOutNavButtonsProps = {
   loginUrl: string;
   subscribeUrl: string;
+  clickHandler: (title: string) => void;
 };
 export const LoggedOutButtons: React.FC<LoggedOutNavButtonsProps> = ({
   loginUrl,
-  subscribeUrl
+  subscribeUrl,
+  clickHandler
 }) => (
   <>
     <LoggedOutButtonsContainer
@@ -26,6 +28,7 @@ export const LoggedOutButtons: React.FC<LoggedOutNavButtonsProps> = ({
           }}
           size="medium"
           href={loginUrl}
+          onClick={() => clickHandler('Log in')}
         >
           Log in
         </Button>
@@ -38,6 +41,7 @@ export const LoggedOutButtons: React.FC<LoggedOutNavButtonsProps> = ({
           }}
           size="medium"
           href={subscribeUrl}
+          onClick={() => clickHandler('Subscribe')}
         >
           Subscribe
         </Button>

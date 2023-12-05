@@ -11,6 +11,7 @@ afterAll(() => {
   jest.resetAllMocks();
   jest.restoreAllMocks();
 });
+const mockClickHandler = jest.fn();
 
 const renderMenu = (isLoggedIn: boolean, size: BreakpointKeys = 'xl') =>
   renderComponent(
@@ -20,6 +21,7 @@ const renderMenu = (isLoggedIn: boolean, size: BreakpointKeys = 'xl') =>
       accountMenu={data.accountMenuItems}
       isHamburgerOpen={false}
       toggleHamburger={jest.fn}
+      clickHandler={mockClickHandler}
     />,
     size
   );
@@ -47,6 +49,13 @@ describe('createMenu', () => {
     fireEvent.click(MenuSub);
     expect(MenuSub.getAttribute('aria-expanded')).toEqual('true');
   });
+
+  it('should call the mockClickHandler when navitem clicked', async () => {
+    renderMenu(false);
+    const subscribeBtn = screen.getByRole('link', { name: 'Home' });
+    fireEvent.click(subscribeBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Home');
+  });
 });
 
 describe('accountCreateMenu', () => {
@@ -57,6 +66,13 @@ describe('accountCreateMenu', () => {
 
     fireEvent.click(MenuSub);
     expect(MenuSub.getAttribute('aria-expanded')).toEqual('true');
+  });
+
+  it('should call the mockClickHandler when navitem with more button clicked', async () => {
+    renderMenu(false);
+    const subscribeBtn = screen.getByRole('link', { name: 'Sport' });
+    fireEvent.click(subscribeBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Sport');
   });
 });
 
@@ -77,5 +93,19 @@ describe('NavButtons Logged Out', () => {
 
     expect(loginBtn).toHaveStyle('background-color: rgba(29,29,27,1)');
     expect(subscribeBtn).toHaveStyle('background-color: rgba(0, 92, 138, 1)');
+  });
+
+  it('should call the mockClickHandler when log in button clicked', async () => {
+    renderMenu(false);
+    const loginBtn = screen.getByRole('link', { name: 'Log in' });
+    fireEvent.click(loginBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Log in');
+  });
+
+  it('should call the mockClickHandler when Subscribe button clicked', async () => {
+    renderMenu(false);
+    const subscribeBtn = screen.getByRole('link', { name: 'Subscribe' });
+    fireEvent.click(subscribeBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Subscribe');
   });
 });
