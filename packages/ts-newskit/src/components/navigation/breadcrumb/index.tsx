@@ -34,8 +34,7 @@ export const Breadcrumb = ({ data, clickHandler }: BreadcrumbProps) => {
             stylePreset: 'breadcrumbStyle',
             typographyPreset: 'breadcrumbText'
           }}
-          onClick={e => {
-            e.preventDefault();
+          onClick={() => {
             if (breadcrumbIndex + 1 !== breadcrumbArr.length) {
               clickHandler(breadcrumbItem.title);
             }
