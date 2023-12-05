@@ -1892,10 +1892,6 @@ export interface Newsletter {
 }
 
 export interface Mutation {
-  saveBookmarks: Bookmark[];
-
-  unsaveBookmarks: Uuid[];
-
   subscribeNewsletter?: Newsletter | null;
 
   unsubscribeNewsletter?: Newsletter | null;
