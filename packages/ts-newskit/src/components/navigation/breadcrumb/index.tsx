@@ -21,27 +21,23 @@ export const Breadcrumb = ({ data, clickHandler }: BreadcrumbProps) => {
         }
       }}
     >
-      {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => (
-        <BreadcrumbItem
-          key={breadcrumbItem.title}
-          href={
-            breadcrumbIndex + 1 === breadcrumbArr.length
-              ? undefined
-              : breadcrumbItem.url
-          }
-          selected={breadcrumbIndex + 1 === breadcrumbArr.length}
-          overrides={{
-            stylePreset: 'breadcrumbStyle',
-            typographyPreset: 'breadcrumbText'
-          }}
-          onClick={() =>
-            breadcrumbIndex + 1 !== breadcrumbArr.length &&
-            clickHandler(breadcrumbItem.title)
-          }
-        >
-          {breadcrumbItem.title}
-        </BreadcrumbItem>
-      ))}
+      {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => {
+        const isLastItem = breadcrumbIndex + 1 === breadcrumbArr.length;
+        return (
+          <BreadcrumbItem
+            key={breadcrumbItem.title}
+            href={isLastItem ? undefined : breadcrumbItem.url}
+            selected={isLastItem}
+            overrides={{
+              stylePreset: 'breadcrumbStyle',
+              typographyPreset: 'breadcrumbText'
+            }}
+            onClick={() => !isLastItem && clickHandler(breadcrumbItem.title)}
+          >
+            {breadcrumbItem.title}
+          </BreadcrumbItem>
+        );
+      })}
     </Breadcrumbs>
   );
 };
