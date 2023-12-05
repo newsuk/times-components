@@ -51,7 +51,7 @@ describe('Render Component one', () => {
   });
 
   it('should render tag if tag is provided', () => {
-    (useBreakpointKey as any).mockReturnValue('xs');
+    (useBreakpointKey as jest.Mock).mockReturnValue('xs');
     const { queryByText } = render(
       <LeadArticle
         article={{ ...leadArticle, imageTop: true }}
@@ -63,7 +63,7 @@ describe('Render Component one', () => {
   });
 
   it('should not render tag or flag if they are not provided', () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
+    (useBreakpointKey as jest.Mock).mockReturnValue('lg');
 
     const leadArticleNoFlags = {
       ...leadArticle,
@@ -145,7 +145,7 @@ describe('Render Component one', () => {
   });
 
   it('should render StyledSpan if caption not provided', () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
+    (useBreakpointKey as jest.Mock).mockReturnValue('lg');
 
     const leadStoryDataWithCaption = {
       ...leadArticle,
@@ -166,7 +166,7 @@ describe('Render Component one', () => {
     expect(styledSpan).toBeInTheDocument();
   });
   it('should render StyledSpan with if caption provided', () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
+    (useBreakpointKey as jest.Mock).mockReturnValue('lg');
 
     const leadStoryDataWithCaption = {
       ...leadArticle,
