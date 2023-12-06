@@ -17,10 +17,6 @@ export {
 export { EditionMasthead } from './components/navigation/masthead';
 export { SectionHeader } from './components/navigation/section-header';
 export {
-  WrappedHamburger,
-  WrappedGlobalNav
-} from './components/navigation/global-nav/wrapped-components/WrappedComponents';
-export {
   HamburgerMenuContainer
 } from './components/navigation/global-nav/styles';
 export { GlobalNavWithCustomDrawer } from './components/navigation/global-nav';
