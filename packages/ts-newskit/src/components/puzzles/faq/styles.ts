@@ -33,6 +33,7 @@ export const StyledAccordionGroup = styled(AccordionGroup)`
       ${getSpacingCssFromTheme(setBlockPadding, 'space050')};
     }
     ${getMediaQueryFromTheme('md')} {
+      font-size: 18px;
       ${getSpacingCssFromTheme(setBlockPadding, 'space030')};
     }
   }
