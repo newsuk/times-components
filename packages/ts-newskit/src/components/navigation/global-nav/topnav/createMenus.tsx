@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, MenuItem, MenuSub, MenuDivider, Visible } from 'newskit';
 import { AccountMenu } from '../styles';
+import { MenuItemParent } from '../types';
 
 const menuItemPresets = {
   minHeight: '60px',
@@ -10,7 +11,7 @@ const menuItemPresets = {
 };
 
 export const createMenu = (
-  menuData: any,
+  menuData: MenuItemParent[],
   clickHandler: (title: string) => void
 ) => {
   const [moreSelected, setMoreSelected] = useState<boolean>(false);
@@ -72,7 +73,7 @@ export const createMenu = (
 };
 
 const createMoreMenu = (
-  menuData: any,
+  menuData: MenuItemParent[],
   moreMenuLength: number,
   clickHandler: (title: string) => void
 ) =>
@@ -95,7 +96,7 @@ const createMoreMenu = (
 
 export const createAccountMenu = (
   isLoggedIn: boolean,
-  menuData: any,
+  menuData: MenuItemParent[],
   clickHandler: (title: string) => void
 ) => {
   const [myAccountSelected, setMyAccountSelected] = useState<boolean>(false);

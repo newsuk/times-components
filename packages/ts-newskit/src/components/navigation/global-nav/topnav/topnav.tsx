@@ -19,14 +19,15 @@ import {
 } from '../styles';
 import NavSearch from '../search/search';
 import { LoggedOutButtons } from './loggedOutButtons';
+import { MenuItemParent } from '../types';
 
 type TopNavProps = {
   isLoggedIn?: boolean;
   isSunday?: boolean;
   isHamburgerOpen: boolean;
   toggleHamburger: (isHamburgerOpen: boolean) => void;
-  mainMenu?: any;
-  accountMenu?: any;
+  mainMenu: MenuItemParent[];
+  accountMenu: MenuItemParent[];
   clickHandler: (title: string) => void;
 };
 
