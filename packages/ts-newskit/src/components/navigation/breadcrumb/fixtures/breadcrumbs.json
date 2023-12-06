@@ -11,5 +11,16 @@
       {
         "title": "Australian Open"
       }
+    ],
+    "breadcrumbItemsForTrackingDemo" : [
+      {
+        "title": "Sport"
+      },
+      {
+        "title": "Tennis"
+      },
+      {
+        "title": "Australian Open"
+      }
     ]
 }
