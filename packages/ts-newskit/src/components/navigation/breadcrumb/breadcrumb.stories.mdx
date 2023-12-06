@@ -1,7 +1,9 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
 import { TCThemeProvider } from '../../../utils/index.tsx';
 import { Breadcrumb } from './index.tsx';
-import { breadcrumbItems } from './fixtures/breadcrumbs.json';
+import { breadcrumbItems, breadcrumbItemsForDemoTracking } from './fixtures/breadcrumbs.json';
+import { TrackingContextProvider } from '../../../utils/TrackingContextProvider';
+import { analyticsStream} from "../fixtures/analytics-actions"
 
 <Meta
   title="Newskit Components/Navigation/Breadcrumb"
@@ -26,10 +28,23 @@ Please click the 'Canvas' tab for a better viewing experience, where you can upd
 
 export const BreadcrumbStory = ({ data, clickHandler }) => (
   <TCThemeProvider>
+  <TrackingContextProvider
+      analyticsStream={analyticsStream}
+      context={{
+        component: 'breadcrumb',
+        attrs: {
+        }
+      }}
+    >
     <Breadcrumb {...{ data, clickHandler }} />
+  </TrackingContextProvider>
   </TCThemeProvider>
 );
 
 <Story name="Breadcrumb" args={{ data: breadcrumbItems, clickHandler: (title) => console.log(title) }}>
+  {BreadcrumbStory.bind({})}
+</Story>
+
+<Story name="Breadcrumb - tracking demo" args={{ data: breadcrumbItemsForTrackingDemo, clickHandler: (title) => console.log(title) }}>
   {BreadcrumbStory.bind({})}
 </Story>
