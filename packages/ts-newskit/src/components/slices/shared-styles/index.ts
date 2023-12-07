@@ -44,10 +44,10 @@ export const CardHeadlineLink = styled(CardLink)<{
 
 export const TextLink = styled(LinkInline)`
   text-decoration: none;
+  ${getColorCssFromTheme('color', 'inkContrast')};
   &&:hover,
   &&:active {
-    text-decoration: underline;
-    text-underline-position: under;
+    ${getColorCssFromTheme('color', 'interactiveLink020')};
   }
 `;
 

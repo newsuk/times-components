@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.145.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.144.0...@times-components/ts-newskit@1.145.0) (2023-12-07)
+
+
+### Features
+
+* **TMPZ-279:** FAQ block mobile bugs ([#3682](https://github.com/newsuk/times-components/issues/3682)) ([bd55906](https://github.com/newsuk/times-components/commit/bd559068c243b1bd33b724ad965124845bb2ac57))
+* **TMRX-1687:** tracking added into breadcrumb ([#3679](https://github.com/newsuk/times-components/issues/3679)) ([c2b8cea](https://github.com/newsuk/times-components/commit/c2b8cea173cb654fafa00913eac4c2b2f17a3262))
+
+
+
+
+
 # [1.144.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.143.0...@times-components/ts-newskit@1.144.0) (2023-12-07)
 
 

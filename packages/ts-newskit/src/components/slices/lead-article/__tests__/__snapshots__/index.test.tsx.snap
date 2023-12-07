@@ -127,7 +127,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         data-testid="tag-and-flag"
       >
         <a
-          class="css-10d4t8c"
+          class="css-18s7xts"
           href="/"
         >
           <span
