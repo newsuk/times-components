@@ -26,7 +26,7 @@ An example of the `data` structure can be found in the 'Controls' section on the
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const BreadcrumbStory = ({ data, clickHandler }) => (
+export const BreadcrumbStory = ({ data }) => (
   <TCThemeProvider>
   <TrackingContextProvider
       analyticsStream={analyticsStream}
@@ -36,15 +36,15 @@ export const BreadcrumbStory = ({ data, clickHandler }) => (
         }
       }}
     >
-    <Breadcrumb {...{ data, clickHandler }} />
+    <Breadcrumb {...{ data }} />
   </TrackingContextProvider>
   </TCThemeProvider>
 );
 
-<Story name="Breadcrumb" args={{ data: breadcrumbItems, clickHandler: (title) => console.log(title) }}>
+<Story name="Breadcrumb" args={{ data: breadcrumbItems }}>
   {BreadcrumbStory.bind({})}
 </Story>
 
-<Story name="Breadcrumb - tracking demo" args={{ data: breadcrumbItemsForTrackingDemo, clickHandler: (title) => console.log(title) }}>
+<Story name="Breadcrumb - tracking demo" args={{ data: breadcrumbItemsForTrackingDemo }}>
   {BreadcrumbStory.bind({})}
 </Story>
