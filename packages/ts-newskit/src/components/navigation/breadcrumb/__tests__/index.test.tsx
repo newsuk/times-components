@@ -42,7 +42,7 @@ describe('Render Breadcrumbs', () => {
     expect(title).toHaveAttribute('aria-current', 'page');
   });
 
-  it('calls clickHandler when you click', () => {
+  it('calls analyticsStream when you click', () => {
     const analyticsStream = jest.fn();
     const { getByText } = renderBreadcrumb(analyticsStream);
     const breadcrumb = getByText('Tennis');
