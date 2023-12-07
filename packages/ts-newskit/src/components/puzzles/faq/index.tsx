@@ -12,7 +12,10 @@ export const Faq: React.FC<FaqProps> = ({ data }) => {
     <Container>
       <Title
         as="h2"
-        typographyPreset="editorialSubheadline050"
+        typographyPreset={{
+          xs: 'editorialRegularHeadline040',
+          md: 'editorialSubheadline050'
+        }}
         stylePreset="inkContrast"
         marginBlockEnd="space080"
       >
