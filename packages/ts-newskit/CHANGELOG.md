@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.144.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.143.0...@times-components/ts-newskit@1.144.0) (2023-12-07)
+
+
+### Features
+
+* **TMRX-0000:** disable summary for mobile ([#3683](https://github.com/newsuk/times-components/issues/3683)) ([b9d375e](https://github.com/newsuk/times-components/commit/b9d375e26fbafd7266b765e6e0356515a29ec5f9))
+
+
+
+
+
 # [1.143.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.142.0...@times-components/ts-newskit@1.143.0) (2023-12-06)
 
 
