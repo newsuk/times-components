@@ -97,7 +97,7 @@ const ArticleSkeleton = ({
     const sidebarNode = sidebarRef.current;
     if (sidebarNode) {
       const adElements = document.querySelectorAll(
-        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4"
+        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
       );
       const relatedArticlesElement = document.getElementById(
         "related-articles"
