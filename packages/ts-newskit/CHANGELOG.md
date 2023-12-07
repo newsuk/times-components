@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.146.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.145.0...@times-components/ts-newskit@1.146.0) (2023-12-07)
+
+
+### Features
+
+* **TMRX-1714:** implement category labels design feedback ([#3684](https://github.com/newsuk/times-components/issues/3684)) ([2ce1cf6](https://github.com/newsuk/times-components/commit/2ce1cf6c808b2ce792d9199abddf23cf99ad0668))
+
+
+
+
+
 # [1.145.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.144.0...@times-components/ts-newskit@1.145.0) (2023-12-07)
 
 
