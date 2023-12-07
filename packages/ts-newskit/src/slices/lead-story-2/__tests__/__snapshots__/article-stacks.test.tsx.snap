@@ -92,7 +92,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   data-testid="tag-and-flag"
                 >
                   <a
-                    class="css-10d4t8c"
+                    class="css-18s7xts"
                     href="/"
                   >
                     <span
@@ -210,7 +210,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   data-testid="tag-and-flag"
                 >
                   <a
-                    class="css-10d4t8c"
+                    class="css-18s7xts"
                     href="/"
                   >
                     <span
@@ -371,7 +371,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 data-testid="tag-and-flag"
               >
                 <a
-                  class="css-10d4t8c"
+                  class="css-18s7xts"
                   href="/"
                 >
                   <span
@@ -523,7 +523,7 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 data-testid="tag-and-flag"
               >
                 <a
-                  class="css-10d4t8c"
+                  class="css-18s7xts"
                   href="/"
                 >
                   <span
@@ -652,7 +652,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   data-testid="tag-and-flag"
                 >
                   <a
-                    class="css-10d4t8c"
+                    class="css-18s7xts"
                     href="/"
                   >
                     <span
@@ -770,7 +770,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   data-testid="tag-and-flag"
                 >
                   <a
-                    class="css-10d4t8c"
+                    class="css-18s7xts"
                     href="/"
                   >
                     <span
@@ -931,7 +931,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 data-testid="tag-and-flag"
               >
                 <a
-                  class="css-10d4t8c"
+                  class="css-18s7xts"
                   href="/"
                 >
                   <span
@@ -1083,7 +1083,7 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 data-testid="tag-and-flag"
               >
                 <a
-                  class="css-10d4t8c"
+                  class="css-18s7xts"
                   href="/"
                 >
                   <span

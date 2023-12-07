@@ -45,7 +45,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
         data-testid="tag-and-flag"
       >
         <a
-          class="css-10d4t8c"
+          class="css-18s7xts"
           href="/"
         >
           <span
@@ -123,7 +123,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
         data-testid="tag-and-flag"
       >
         <a
-          class="css-10d4t8c"
+          class="css-18s7xts"
           href="/"
         >
           <span
