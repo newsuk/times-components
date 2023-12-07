@@ -126,8 +126,6 @@ const ArticleSkeleton = ({
           relatedArticlesRect.bottom >= 0;
       }
 
-      sidebarNode.style.transition = "opacity 0.5s ease";
-
       if (isAnyAdIntersecting || isRelatedArticlesIntersecting) {
         sidebarNode.style.opacity = "0";
       } else {
@@ -137,6 +135,12 @@ const ArticleSkeleton = ({
   };
 
   useEffect(() => {
+    const sidebarNode = sidebarRef.current;
+    if (sidebarNode) {
+      sidebarNode.style.transition = "opacity 0.5s ease";
+    }
+
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
 
     return () => {
