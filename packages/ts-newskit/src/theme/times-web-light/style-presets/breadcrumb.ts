@@ -9,7 +9,7 @@ export const breadcrumbStylePresets = {
       color: '{{colors.blue070}}'
     },
     selected: {
-      color: '{{colors.inkContrast}}',
+      color: '{{colors.inkContrast}}'
     },
     'selected:hover': {
       color: '{{colors.inkContrast}}',
