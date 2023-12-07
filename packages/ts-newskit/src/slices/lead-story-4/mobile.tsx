@@ -23,6 +23,11 @@ export const LeadStory4Mobile = ({
   articlesFrom5To9,
   article234
 }: LeadStory4Mobile) => {
+  const articlesWithDisabledSummary = articlesFrom5To9.map(item => ({
+    ...item,
+    isSummaryEnabled: false
+  }));
+
   return (
     <LeadStoryContainer marginBlockEnd="space000">
       <StackItem
@@ -72,7 +77,7 @@ export const LeadStory4Mobile = ({
       </FullWidthBlock>
       <BlockItem>
         <ArticleStackLarge
-          articles={articlesFrom5To9}
+          articles={articlesWithDisabledSummary}
           clickHandler={clickHandler}
         />
       </BlockItem>
