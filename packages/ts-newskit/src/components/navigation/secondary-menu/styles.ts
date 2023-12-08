@@ -9,7 +9,6 @@ import {
   getMediaQueryFromTheme
 } from 'newskit';
 import { SecondaryNavContainerProp, NavItemMobileContainerProp } from './types';
-import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
 export const MenuDivider = styled(Divider)`
   width: 100%;
@@ -37,7 +36,7 @@ export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
   ${getMediaQueryFromTheme('md')} {
     ${({ topDesktop }) => topDesktop !== undefined && `top: ${topDesktop}px`};
   }
-  background-color: ${TheTimesLight.colors.interfaceBackground};
+  background-color: white;
   z-index: 2;
 `;
 
@@ -120,10 +119,13 @@ export const StyledBlock = styled(Block)`
   height: 48px;
 `;
 
-export const MenuContainerMob = styled(StyledBlock)`
+export const MenuContainerMob = styled(StyledBlock)<{ isDefault: boolean }>`
   align-items: center;
-  ${getColorCssFromTheme('backgroundColor', 'neutral010')};
-  ${getColorCssFromTheme('backgroundColor', 'sectionBrand060')};
+  ${({ isDefault }) =>
+    getColorCssFromTheme(
+      'backgroundColor',
+      isDefault ? 'neutral010' : 'sectionBrand060'
+    )};
   &:hover {
     cursor: pointer;
   }
