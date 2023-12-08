@@ -99,12 +99,14 @@ const ArticleSkeleton = ({
       const adElements = document.querySelectorAll(
         ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
       );
-      const relatedArticlesElement = document.getElementById(
-        "related-articles"
-      );
+      const relatedArticlesIds = [
+        "related-articles",
+        "sponsored-article-container",
+        "comments-container"
+      ];
 
       let isAnyAdIntersecting = false;
-      let isRelatedArticlesIntersecting = false;
+      let isAnyArticlesIntersecting = false;
 
       adElements.forEach(adElement => {
         if (adElement) {
@@ -119,14 +121,21 @@ const ArticleSkeleton = ({
         }
       });
 
-      if (relatedArticlesElement) {
-        const relatedArticlesRect = relatedArticlesElement.getBoundingClientRect();
-        isRelatedArticlesIntersecting =
-          relatedArticlesRect.top <= window.innerHeight &&
-          relatedArticlesRect.bottom >= 0;
-      }
+      relatedArticlesIds.forEach(id => {
+        const relatedArticlesElement = document.getElementById(id);
+        if (relatedArticlesElement) {
+          const relatedArticlesRect = relatedArticlesElement.getBoundingClientRect();
+          const isRelatedArticlesIntersecting =
+            relatedArticlesRect.top <= window.innerHeight &&
+            relatedArticlesRect.bottom >= 0;
 
-      if (isAnyAdIntersecting || isRelatedArticlesIntersecting) {
+          if (isRelatedArticlesIntersecting) {
+            isAnyArticlesIntersecting = true;
+          }
+        }
+      });
+
+      if (isAnyAdIntersecting || isAnyArticlesIntersecting) {
         sidebarNode.style.opacity = "0";
       } else {
         sidebarNode.style.opacity = "1";
