@@ -4,7 +4,9 @@ import {
   getSSRId,
   Scroll,
   GridLayoutItem,
-  LinkInline
+  LinkInline,
+  EventTrigger,
+  useInstrumentation
 } from 'newskit';
 import { Puzzle } from '../archive/types';
 import { StyledTitleBar } from './styles';
@@ -18,6 +20,10 @@ interface CardsContainerProps {
   seeAllLink?: string;
   isImageCropped?: boolean;
   isDashHidden?: boolean;
+  handleScrollArrowClick?: (
+    title: string,
+    direction: 'previous' | 'next'
+  ) => void;
 }
 
 export const CardsContainer = ({
@@ -26,10 +32,30 @@ export const CardsContainer = ({
   isScrollable = false,
   seeAllLink,
   isImageCropped = false,
-  isDashHidden = false
+  isDashHidden = false,
+  handleScrollArrowClick
 }: CardsContainerProps) => {
   const scrollRef = useRef(null);
   const cardRef = useRef(null);
+  const { fireEvent } = useInstrumentation();
+
+  const defaultHandleScrollArrowClick = (
+    puzzleTitle: string,
+    direction: 'previous' | 'next'
+  ) => {
+    fireEvent({
+      originator: 'Puzzles Scroll',
+      trigger: EventTrigger.Click,
+      context: {
+        event_navigation_action: 'navigation',
+        event_navigation_name: `puzzle ${direction} button clicked `,
+        event_navigation_browsing_method: 'click',
+        page_name: puzzleTitle || ''
+      }
+    });
+  };
+  const effectiveHandleScrollArrowClick =
+    handleScrollArrowClick || defaultHandleScrollArrowClick;
 
   return (
     <>
@@ -58,6 +84,8 @@ export const CardsContainer = ({
               scrollRef={scrollRef}
               seeAllLink={seeAllLink}
               cardRef={cardRef}
+              title={title || ''}
+              onScrollArrowClick={effectiveHandleScrollArrowClick}
             />
           ) : null
         }

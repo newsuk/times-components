@@ -67,7 +67,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               id="vertical-home"
             >
               <span
-                class="css-fmaqio"
+                class="css-1tx73yr"
               >
                 Home
               </span>
@@ -83,7 +83,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               id="vertical-news"
             >
               <span
-                class="css-fmaqio"
+                class="css-1tx73yr"
               >
                 News
               </span>
@@ -99,7 +99,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               id="vertical-comment"
             >
               <span
-                class="css-fmaqio"
+                class="css-1tx73yr"
               >
                 Comment
               </span>
@@ -115,7 +115,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               id="vertical-life-and-style"
             >
               <span
-                class="css-fmaqio"
+                class="css-1tx73yr"
               >
                 Life & Style
               </span>
@@ -131,7 +131,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               id="vertical-arts-and-books"
             >
               <span
-                class="css-fmaqio"
+                class="css-1tx73yr"
               >
                 Arts & Books
               </span>
@@ -147,7 +147,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               id="vertical-sport"
             >
               <span
-                class="css-fmaqio"
+                class="css-1tx73yr"
               >
                 Sport
               </span>
@@ -163,7 +163,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               id="vertical-business-and-money"
             >
               <span
-                class="css-fmaqio"
+                class="css-1tx73yr"
               >
                 Business & Money
               </span>
@@ -179,7 +179,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               id="vertical-puzzles"
             >
               <span
-                class="css-fmaqio"
+                class="css-1tx73yr"
               >
                 Puzzles
               </span>
@@ -195,7 +195,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               id="vertical-magazines"
             >
               <span
-                class="css-fmaqio"
+                class="css-1tx73yr"
               >
                 Magazines
               </span>

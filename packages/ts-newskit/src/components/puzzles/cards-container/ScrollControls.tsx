@@ -6,22 +6,28 @@ interface ScrollControlsProps {
   scrollRef: React.RefObject<HTMLDivElement>;
   cardRef: React.RefObject<HTMLDivElement>;
   seeAllLink?: string;
+  title: string;
+  onScrollArrowClick: (title: string, direction: 'previous' | 'next') => void;
 }
 
 export const ScrollControls = ({
   scrollRef,
   seeAllLink,
-  cardRef
+  cardRef,
+  title,
+  onScrollArrowClick
 }: ScrollControlsProps) => {
   const controlsHandler = (scrollDirection: 'left' | 'right') => {
     const scrollElement = scrollRef.current;
     const cardElement = cardRef.current;
     if (scrollElement && cardElement) {
       if (scrollDirection === 'left') {
+        onScrollArrowClick(title, 'previous');
         scrollElement.scrollLeft =
           scrollElement.scrollLeft - cardElement.offsetWidth - 30;
       }
       if (scrollDirection === 'right') {
+        onScrollArrowClick(title, 'next');
         scrollElement.scrollLeft =
           scrollElement.scrollLeft + cardElement.offsetWidth + 30;
       }

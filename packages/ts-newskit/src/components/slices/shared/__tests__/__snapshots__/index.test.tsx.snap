@@ -14,7 +14,7 @@ exports[`TagAndFlag should render a snapshot 1`] = `
         class="css-17x5lw"
       >
         <span
-          class="css-qx2986"
+          class="css-17tht57"
         >
           Tag
         </span>
@@ -30,7 +30,7 @@ exports[`TagAndFlag should render a snapshot 1`] = `
       />
     </div>
     <span
-      class="css-1selp7x"
+      class="css-1fq1fvw"
     >
       flag
     </span>

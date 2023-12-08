@@ -56,7 +56,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   NEW
                 </span>
@@ -70,7 +70,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   PROFILE
                 </span>
@@ -111,7 +111,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -167,7 +167,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -181,7 +181,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -222,7 +222,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -238,7 +238,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -292,7 +292,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -306,7 +306,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   Q&A
                 </span>
@@ -347,7 +347,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -403,7 +403,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -417,7 +417,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -458,7 +458,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -474,7 +474,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -535,7 +535,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -549,7 +549,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -590,7 +590,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -646,7 +646,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   NEW
                 </span>
@@ -660,7 +660,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -701,7 +701,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -717,7 +717,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -771,7 +771,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -785,7 +785,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -826,7 +826,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -882,7 +882,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -896,7 +896,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   Q&A
                 </span>
@@ -937,7 +937,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -953,7 +953,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -1023,7 +1023,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   NEW
                 </span>
@@ -1037,7 +1037,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   PROFILE
                 </span>
@@ -1078,7 +1078,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -1134,7 +1134,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -1148,7 +1148,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -1189,7 +1189,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -1205,7 +1205,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -1259,7 +1259,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -1273,7 +1273,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   Q&A
                 </span>
@@ -1314,7 +1314,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -1370,7 +1370,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -1384,7 +1384,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -1425,7 +1425,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -1441,7 +1441,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -1502,7 +1502,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -1516,7 +1516,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -1557,7 +1557,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -1613,7 +1613,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   NEW
                 </span>
@@ -1627,7 +1627,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -1668,7 +1668,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -1684,7 +1684,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -1738,7 +1738,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -1752,7 +1752,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -1793,7 +1793,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -1849,7 +1849,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -1863,7 +1863,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   Q&A
                 </span>
@@ -1904,7 +1904,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -1920,7 +1920,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -1990,7 +1990,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   NEW
                 </span>
@@ -2004,7 +2004,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   PROFILE
                 </span>
@@ -2045,7 +2045,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -2101,7 +2101,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -2115,7 +2115,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -2156,7 +2156,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -2172,7 +2172,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -2226,7 +2226,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -2240,7 +2240,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   Q&A
                 </span>
@@ -2281,7 +2281,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -2337,7 +2337,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -2351,7 +2351,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -2392,7 +2392,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -2408,7 +2408,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -2469,7 +2469,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -2483,7 +2483,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -2524,7 +2524,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -2580,7 +2580,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   NEW
                 </span>
@@ -2594,7 +2594,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -2635,7 +2635,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -2651,7 +2651,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -2705,7 +2705,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -2719,7 +2719,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -2760,7 +2760,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -2816,7 +2816,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -2830,7 +2830,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   Q&A
                 </span>
@@ -2871,7 +2871,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -2887,7 +2887,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -2957,7 +2957,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   NEW
                 </span>
@@ -2971,7 +2971,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   PROFILE
                 </span>
@@ -3012,7 +3012,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -3068,7 +3068,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -3082,7 +3082,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -3123,7 +3123,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -3139,7 +3139,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -3193,7 +3193,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -3207,7 +3207,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   Q&A
                 </span>
@@ -3248,7 +3248,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -3304,7 +3304,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -3318,7 +3318,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -3359,7 +3359,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -3375,7 +3375,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -3436,7 +3436,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -3450,7 +3450,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -3491,7 +3491,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -3547,7 +3547,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   NEW
                 </span>
@@ -3561,7 +3561,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -3602,7 +3602,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -3618,7 +3618,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -3672,7 +3672,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -3686,7 +3686,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -3727,7 +3727,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -3783,7 +3783,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -3797,7 +3797,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   Q&A
                 </span>
@@ -3838,7 +3838,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -3854,7 +3854,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -3924,7 +3924,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   NEW
                 </span>
@@ -3938,7 +3938,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   PROFILE
                 </span>
@@ -3979,7 +3979,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -4035,7 +4035,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -4049,7 +4049,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -4090,7 +4090,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -4106,7 +4106,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -4160,7 +4160,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -4174,7 +4174,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   Q&A
                 </span>
@@ -4215,7 +4215,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -4271,7 +4271,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -4285,7 +4285,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -4326,7 +4326,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -4342,7 +4342,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -4403,7 +4403,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -4417,7 +4417,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -4458,7 +4458,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -4514,7 +4514,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   NEW
                 </span>
@@ -4528,7 +4528,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -4569,7 +4569,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -4585,7 +4585,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
@@ -4639,7 +4639,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   EXCLUSIVE
                 </span>
@@ -4653,7 +4653,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   REVIEW
                 </span>
@@ -4694,7 +4694,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -4750,7 +4750,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                 class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-ciimpt"
+                  class="css-l7a34x"
                 >
                   UPDATED
                 </span>
@@ -4764,7 +4764,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1kanhs9"
+                  class="css-h1hmq8"
                 >
                   Q&A
                 </span>
@@ -4805,7 +4805,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     class="css-17x5lw"
                   >
                     <span
-                      class="css-qx2986"
+                      class="css-17tht57"
                     >
                       Tag
                     </span>
@@ -4821,7 +4821,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                   />
                 </div>
                 <span
-                  class="css-1selp7x"
+                  class="css-1fq1fvw"
                 >
                   Flag
                 </span>
