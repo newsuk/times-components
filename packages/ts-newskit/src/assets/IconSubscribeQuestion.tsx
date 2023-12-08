@@ -14,8 +14,8 @@ const IconSubscribeQuestion = (props: any) => (
       fill="#FFD7A6"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M37.4677 -1.13722e-06L67.2079 14.0998L75 48.4155L54.6885 75L20.3172 75L1.46928e-06 48.408L7.79752 15.6296L37.4677 -1.13722e-06ZM37.538 3.34511L10.392 17.6451L3.23787 47.7188L21.7949 72.007L53.2108 72.007L71.7735 47.7113L64.614 16.1819L37.538 3.34511Z"
       fill="black"
     />
