@@ -29,7 +29,7 @@ export const Subtitle = styled(TextBlock)`
 `;
 
 export const ViewOffersButton = styled(Button)`
-  ${getColorCssFromTheme('backroundColor', 'inkInformative')};
+  ${getColorCssFromTheme('backgroundColor', 'inkInformative')};
   color: white;
   margin: 0 auto;
   width: 200px;
