@@ -3,6 +3,110 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.20](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.19...@times-components/save-star-web@0.10.20) (2023-11-08)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.19](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.18...@times-components/save-star-web@0.10.19) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.18](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.17...@times-components/save-star-web@0.10.18) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.17](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.16...@times-components/save-star-web@0.10.17) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.16](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.15...@times-components/save-star-web@0.10.16) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.15](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.14...@times-components/save-star-web@0.10.15) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.14](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.13...@times-components/save-star-web@0.10.14) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.13](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.12...@times-components/save-star-web@0.10.13) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.12](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.11...@times-components/save-star-web@0.10.12) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.11](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.10...@times-components/save-star-web@0.10.11) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.10](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.9...@times-components/save-star-web@0.10.10) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.9](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.8...@times-components/save-star-web@0.10.9) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.10.8](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.7...@times-components/save-star-web@0.10.8) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
 ## [0.10.7](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.6...@times-components/save-star-web@0.10.7) (2023-07-27)
 
 **Note:** Version bump only for package @times-components/save-star-web

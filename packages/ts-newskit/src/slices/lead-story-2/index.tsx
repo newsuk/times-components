@@ -1,78 +1,49 @@
-import {
-  Block,
-  Divider,
-  Stack,
-  useBreakpointKey,
-  Visible,
-  BreakpointKeys
-} from 'newskit';
-import React, { useState, useEffect } from 'react';
+import { Block, Divider, Visible } from 'newskit';
+import React from 'react';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
-import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
+import {
+  LeadStoryDivider,
+  StackItem,
+  BlockItem,
+  LeadStoryContainer
+} from '../shared-styles';
 import { ArticleStack } from './article-stacks';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { ArticleStackLeadStory, ComposedArticleStack } from '../shared';
+import { ClickHandlerType } from '../types';
+import { FullWidthHidden } from '../../components/slices/shared-styles/index';
 
 export interface LeadStory2Props {
   leadArticle: LeadArticleProps;
   articles: ArticleProps[];
   verticalArticles: LeadArticleProps[];
   horizontalArticles: LeadArticleProps[];
+  clickHandler: ClickHandlerType;
 }
 
 export const LeadStory2 = ({
   leadArticle,
   articles,
   verticalArticles,
-  horizontalArticles
+  horizontalArticles,
+  clickHandler
 }: LeadStory2Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
-  const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
-    },
-    [breakpointKey]
-  );
-
-  const modifedArticles =
-    currentBreakpoint === 'xl'
-      ? articles.map(article => ({
-          ...article,
-          imageRight: true
-        }))
-      : articles;
-
-  const screenXsAndSm =
-    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
-
   const modifiedLeadArticle = {
     ...leadArticle,
-    imageTop: !!screenXsAndSm,
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
-    headlineTypographyPreset:
-      currentBreakpoint === 'xs'
-        ? 'editorialHeadline040'
-        : currentBreakpoint === 'sm'
-          ? 'editorialHeadline050'
-          : 'editorialHeadline060'
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline040',
+      md: 'editorialHeadline060'
+    }
   };
 
   return (
-    <Stack
-      flow="horizontal-top"
-      stackDistribution="center"
-      wrap="wrap"
-      marginInline={{
-        xs: 'space045',
-        md: 'space000'
-      }}
-    >
+    <LeadStoryContainer>
       <StackItem
         $width={{
           xs: '100%',
@@ -85,19 +56,29 @@ export const LeadStory2 = ({
         }}
       >
         <Block>
-          <Visible lg xl>
-            <LeadStoryDivider
-              overrides={{ stylePreset: 'lightDivider' }}
-              vertical
-              position="right"
-            />
-          </Visible>
-          <LeadArticle
-            contentWidth={currentBreakpoint === 'xl' ? '274px' : '246px'}
-            {...modifiedLeadArticle}
+          <LeadStoryDivider
+            overrides={{ stylePreset: 'lightDivider' }}
+            vertical
+            position="right"
           />
-          {screenXsAndSm ? (
-            <FullWidthBlock>
+          <Visible xs sm>
+            <LeadArticle
+              article={{
+                ...modifiedLeadArticle,
+                imageTop: true,
+                contentWidth: {
+                  xs: '246px auto',
+                  xl: '274px auto'
+                }
+              }}
+              clickHandler={clickHandler}
+            />
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
@@ -106,38 +87,50 @@ export const LeadStory2 = ({
                 }}
               />
             </FullWidthBlock>
-          ) : (
+          </Visible>
+          <Visible md lg xl>
+            <LeadArticle
+              article={{
+                ...modifiedLeadArticle,
+                contentWidth: {
+                  xs: '246px auto',
+                  xl: '274px auto'
+                }
+              }}
+              clickHandler={clickHandler}
+            />
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
                 marginBlock: 'space040'
               }}
             />
-          )}
+          </Visible>
           <ArticleStack
             verticalArticles={verticalArticles}
-            breakpoint={currentBreakpoint}
             horizontalArticles={horizontalArticles}
-            horizontalArticleContentWidth={
-              currentBreakpoint === 'xl' ? '258px' : '230px'
-            }
+            horizontalArticleContentWidth={{
+              md: '230px',
+              xl: '258px'
+            }}
+            clickHandler={clickHandler}
           />
         </Block>
       </StackItem>
-      {screenXsAndSm ? (
+      <FullWidthHidden md lg xl>
         <BlockItem marginBlockStart="space040">
           <ComposedArticleStack
-            articles={modifedArticles}
-            breakpoint={currentBreakpoint}
+            articles={articles}
+            clickHandler={clickHandler}
           />
         </BlockItem>
-      ) : (
+      </FullWidthHidden>
+      <Visible md lg xl>
         <ArticleStackLeadStory
-          mdWidth="720px"
-          modifedArticles={modifedArticles}
-          breakpoint={currentBreakpoint}
+          modifiedArticles={articles}
+          clickHandler={clickHandler}
         />
-      )}
-    </Stack>
+      </Visible>
+    </LeadStoryContainer>
   );
 };

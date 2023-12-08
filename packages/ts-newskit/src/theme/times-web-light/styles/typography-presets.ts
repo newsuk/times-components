@@ -17,18 +17,10 @@ export const typographyPresets = Object.fromEntries(
       fontStretch: 'normal',
       whiteSpace: 'nowrap'
     },
-    newPreset020: {
+    secondaryNavMenuItemMob: {
       fontFamily: 'Roboto-Regular',
       fontWeight: 500,
-      fontSize: '15px',
-      lineHeight: '1.000',
-      letterSpacing: '0%',
-      fontStretch: 'normal'
-    },
-    newPreset030: {
-      fontFamily: 'Roboto-Medium',
-      fontWeight: 500,
-      fontSize: '13px',
+      fontSize: '{{fonts.fontSize025}}',
       lineHeight: '1.000',
       letterSpacing: '0%',
       fontStretch: 'normal'
@@ -235,13 +227,6 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: '1.286',
       letterSpacing: '0%',
       fontStretch: 'normal'
-    },
-    customTagAndFlagPreset: {
-      fontFamily: 'Roboto',
-      fontWeight: 500,
-      lineHeight: 1.5,
-      fontSize: '1.2rem',
-      letterSpacing: '0em'
     }
   })
 );

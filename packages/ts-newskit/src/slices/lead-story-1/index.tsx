@@ -1,44 +1,35 @@
-import {
-  Block,
-  Divider,
-  useBreakpointKey,
-  Visible,
-  BreakpointKeys
-} from 'newskit';
-import React, { useState, useEffect } from 'react';
+import { Block, Divider, Visible } from 'newskit';
+import React from 'react';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { Article, ArticleProps } from '../../components/slices/article';
-import { StackItem, LeadStoryDivider, BlockItem } from '../shared-styles';
 import {
-  ArticleStackLeadStory,
-  ArticleStackSmall,
-  CustomStackLayout
-} from '../shared';
+  StackItem,
+  LeadStoryDivider,
+  BlockItem,
+  LeadStoryContainer
+} from '../shared-styles';
+import { ArticleStackLeadStory, ArticleStackSmall } from '../shared';
 import {
   FullWidthBlock,
   FullWidthHidden
 } from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { GroupedArticle } from '../../components/slices/shared/grouped-article';
-import { StyledDivider } from './styles';
-import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
+import { ClickHandlerType } from '../types';
 
 export interface LeadStory1Props {
   leadArticle: LeadArticleProps;
   articles: ArticleProps[];
   groupedArticles: {
     articles: LeadArticleProps[];
-    tagL1: {
-      label: string;
-      href: string;
-    };
   };
   smallArticles: ArticleProps[];
   singleArticle: ArticleProps;
   articlesWithListItems: LeadArticleProps;
+  clickHandler: ClickHandlerType;
 }
 
 export const LeadStory1 = ({
@@ -47,62 +38,48 @@ export const LeadStory1 = ({
   groupedArticles,
   smallArticles,
   singleArticle,
-  articlesWithListItems
+  articlesWithListItems,
+  clickHandler
 }: LeadStory1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
-  const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
-    },
-    [breakpointKey]
-  );
-  const screenXsAndSm =
-    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
-  const modifiedArticles =
-    currentBreakpoint === 'xl'
-      ? articles.map(article => ({
-          ...clearCreditsAndCaption(article),
-          imageRight: true
-        }))
-      : articles;
-
   const modifiedArticlesWithUnorderedList = {
     ...articlesWithListItems,
     hasTopBorder: false,
     textBlockMarginBlockStart: 'space050',
-    headlineTypographyPreset:
-      currentBreakpoint === 'xs'
-        ? 'editorialHeadline040'
-        : currentBreakpoint === 'sm'
-          ? 'editorialHeadline050'
-          : 'editorialHeadline060',
-    showTagL1: false,
-    hideImage: true
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline040',
+      md: 'editorialHeadline060'
+    },
+    imageTop: true
   };
 
   const modifiedLeadArticle = {
     ...leadArticle,
     hasTopBorder: false,
     imageTop: true,
-    headlineTypographyPreset: screenXsAndSm
-      ? 'editorialHeadline040'
-      : 'editorialHeadline030'
+    isLeadImage: true,
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline040',
+      md: 'editorialHeadline020'
+    }
   };
 
   const modifiedSingleArticle = {
     ...singleArticle,
-    hideImage: true
+    hideImage: true,
+    titleTypographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline020'
+    }
   };
 
-  const marginTop = modifiedSingleArticle
+  const marginTop = singleArticle
     ? 'space040'
     : !!articlesWithListItems.listData
       ? 'space020'
       : 'space040';
 
   return (
-    <CustomStackLayout>
+    <LeadStoryContainer>
       <StackItem
         marginBlockEnd={{
           xs: 'space040',
@@ -113,11 +90,20 @@ export const LeadStory1 = ({
           md: '260px'
         }}
       >
-        <LeadArticle {...modifiedArticlesWithUnorderedList} />
-        {modifiedSingleArticle && (
+        <LeadArticle
+          article={modifiedArticlesWithUnorderedList}
+          clickHandler={clickHandler}
+          className="lead-article"
+        />
+        {singleArticle && (
           <BlockItem>
-            <FullWidthBlock>
-              <StyledDivider
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
+              <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
                   marginBlockStart: !!articlesWithListItems.listData
@@ -127,12 +113,20 @@ export const LeadStory1 = ({
                 }}
               />
             </FullWidthBlock>
-            <Article {...modifiedSingleArticle} />
+            <Article
+              article={modifiedSingleArticle}
+              clickHandler={clickHandler}
+            />
           </BlockItem>
         )}
         {groupedArticles && (
           <>
-            <FullWidthBlock>
+            <FullWidthBlock
+              paddingInline={{
+                xs: 'space045',
+                md: 'space000'
+              }}
+            >
               <Divider
                 overrides={{
                   stylePreset: 'dashedDivider',
@@ -141,7 +135,7 @@ export const LeadStory1 = ({
                 }}
               />
             </FullWidthBlock>
-            <GroupedArticle {...groupedArticles} />
+            <GroupedArticle {...groupedArticles} clickHandler={clickHandler} />
           </>
         )}
       </StackItem>
@@ -160,7 +154,12 @@ export const LeadStory1 = ({
         }}
       >
         <FullWidthHidden md lg xl>
-          <FullWidthBlock>
+          <FullWidthBlock
+            paddingInline={{
+              xs: 'space045',
+              md: 'space000'
+            }}
+          >
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
@@ -170,15 +169,16 @@ export const LeadStory1 = ({
           </FullWidthBlock>
         </FullWidthHidden>
         <Block>
-          <Visible lg xl>
-            <LeadStoryDivider
-              overrides={{ stylePreset: 'lightDivider' }}
-              vertical
-              position="right"
-            />
-          </Visible>
+          <LeadStoryDivider
+            overrides={{ stylePreset: 'lightDivider' }}
+            vertical
+            position="right"
+          />
           <BlockItem marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-            <LeadArticle {...modifiedLeadArticle} />
+            <LeadArticle
+              article={modifiedLeadArticle}
+              clickHandler={clickHandler}
+            />
           </BlockItem>
           <Visible md lg xl>
             <LeadStoryDivider
@@ -194,30 +194,38 @@ export const LeadStory1 = ({
                 marginBlock: 'space040'
               }}
             />
+            <ArticleStackSmall
+              articles={smallArticles}
+              clickHandler={clickHandler}
+            />
           </Visible>
-          <ArticleStackSmall
-            articles={smallArticles}
-            isFullWidth={screenXsAndSm}
-            hideImage={screenXsAndSm}
-            hasTopBorder={!!screenXsAndSm}
-            breakpoint={currentBreakpoint}
-          />
+          <Visible xs sm>
+            <ArticleStackSmall
+              articles={smallArticles}
+              articleOptions={{
+                isFullWidth: true,
+                hasTopBorder: true,
+                hideImage: true
+              }}
+              clickHandler={clickHandler}
+            />
+          </Visible>
         </Block>
       </StackItem>
-      {screenXsAndSm ? (
+      <FullWidthHidden md lg xl>
         <BlockItem>
           <ComposedArticleStack
-            articles={modifiedArticles}
-            breakpoint={currentBreakpoint}
+            articles={articles}
+            clickHandler={clickHandler}
           />
         </BlockItem>
-      ) : (
+      </FullWidthHidden>
+      <Visible md lg xl>
         <ArticleStackLeadStory
-          mdWidth="720px"
-          modifedArticles={modifiedArticles}
-          breakpoint={currentBreakpoint}
+          modifiedArticles={articles}
+          clickHandler={clickHandler}
         />
-      )}
-    </CustomStackLayout>
+      </Visible>
+    </LeadStoryContainer>
   );
 };

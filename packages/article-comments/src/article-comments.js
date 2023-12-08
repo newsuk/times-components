@@ -12,12 +12,13 @@ const ArticleComments = ({
   isEnabled,
   isReadOnly,
   commentingConfig,
-  isCommentEnabled
+  isCommentEnabled,
+  storefrontConfig
 }) =>
   isEnabled && isCommentEnabled ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
-        <JoinTheConversationDialog />
+        <JoinTheConversationDialog storefrontConfig={storefrontConfig} />
       </UserState>
       <UserState state={UserState.showCommentingModule}>
         <Comments
@@ -38,6 +39,7 @@ ArticleComments.propTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
+  storefrontConfig: PropTypes.string.isRequired,
   isCommentEnabled: PropTypes.bool
 };
 

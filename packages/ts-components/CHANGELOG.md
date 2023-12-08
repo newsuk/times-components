@@ -3,6 +3,168 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.81.7](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.81.6...@times-components/ts-components@1.81.7) (2023-11-08)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.81.6](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.81.5...@times-components/ts-components@1.81.6) (2023-11-07)
+
+
+### Bug Fixes
+
+* **TMRX-1634:** change today's rail title ([#3638](https://github.com/newsuk/times-components/issues/3638)) ([6d7af7a](https://github.com/newsuk/times-components/commit/6d7af7ad1dde42b73bc16e4cd30eff8eef547e4f))
+
+
+
+
+
+## [1.81.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.81.4...@times-components/ts-components@1.81.5) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.81.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.81.3...@times-components/ts-components@1.81.4) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.81.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.81.2...@times-components/ts-components@1.81.3) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.81.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.81.1...@times-components/ts-components@1.81.2) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.81.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.81.0...@times-components/ts-components@1.81.1) (2023-10-13)
+
+
+### Bug Fixes
+
+* **TMRX-1577:** Dont call fetch if authorSlug is undefined ([#3585](https://github.com/newsuk/times-components/issues/3585)) ([921f648](https://github.com/newsuk/times-components/commit/921f648000070ff70868d2ec992a06c21afcc21f))
+
+
+
+
+
+# [1.81.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.80.0...@times-components/ts-components@1.81.0) (2023-10-09)
+
+
+### Features
+
+* **TMRX-1528:** update secondary nav styling ([#3571](https://github.com/newsuk/times-components/issues/3571)) ([8ebe00e](https://github.com/newsuk/times-components/commit/8ebe00eecc22cd00fca9c9a8b54bb3942b8665a0))
+
+
+
+
+
+# [1.80.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.79.0...@times-components/ts-components@1.80.0) (2023-09-15)
+
+
+### Features
+
+* **TMRX-1300:** Mock fetch in tests ([#3532](https://github.com/newsuk/times-components/issues/3532)) ([5dbef7f](https://github.com/newsuk/times-components/commit/5dbef7fe7c7edebe69bfc20bbd7b966a4761c646))
+
+
+
+
+
+# [1.79.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.78.0...@times-components/ts-components@1.79.0) (2023-09-13)
+
+
+### Features
+
+* **TMRX-1300:** create article byline block ([#3525](https://github.com/newsuk/times-components/issues/3525)) ([2f1466a](https://github.com/newsuk/times-components/commit/2f1466a6d992b577ddae3d9fc20e62eb4fd80cd2))
+
+
+
+
+
+# [1.78.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.7...@times-components/ts-components@1.78.0) (2023-08-18)
+
+
+### Features
+
+* **TMG-914:** Update welcome banner design ([#3497](https://github.com/newsuk/times-components/issues/3497)) ([2d79a74](https://github.com/newsuk/times-components/commit/2d79a74166875b309bf5fa91ebee980801082500))
+
+
+
+
+
+## [1.77.7](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.6...@times-components/ts-components@1.77.7) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.77.6](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.5...@times-components/ts-components@1.77.6) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.77.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.4...@times-components/ts-components@1.77.5) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.77.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.3...@times-components/ts-components@1.77.4) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.77.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.2...@times-components/ts-components@1.77.3) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.77.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.1...@times-components/ts-components@1.77.2) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.77.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.77.0...@times-components/ts-components@1.77.1) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 # [1.77.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.76.0...@times-components/ts-components@1.77.0) (2023-08-01)
 
 

@@ -1,42 +1,33 @@
 import React from 'react';
-import { Block, GridLayout } from 'newskit';
-import { TextLink } from '../shared-styles';
+import { Block, GridLayout, Divider } from 'newskit';
 import { LeadArticle, LeadArticleProps } from '../lead-article/index';
 import { FullWidthBlock } from '../shared-styles/index';
-import { StyledDivider } from '../../../slices/lead-story-1/styles';
+import { ClickHandlerType, expirableFlagsProps } from '../../../slices/types';
 
 export interface GroupedArticleProps {
-  tagL1: {
-    label: string;
-    href: string;
-  };
+  contentType?: string;
+  label?: string;
+  expirableFlags?: expirableFlagsProps[];
   articles: LeadArticleProps[];
+  clickHandler: ClickHandlerType;
 }
 
-export const GroupedArticle = ({ articles, tagL1 }: GroupedArticleProps) => {
+export const GroupedArticle = ({
+  articles,
+  clickHandler
+}: GroupedArticleProps) => {
   const modifiedGroupedArticles = articles.map(article => ({
     ...article,
     hasTopBorder: false,
-    headlineTypographyPreset: 'editorialHeadline020',
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline020'
+    },
     hideImage: true
   }));
 
   return (
     <Block>
-      {tagL1 &&
-        tagL1.label !== '' && (
-          <TextLink
-            overrides={{
-              typographyPreset: 'utilityButton010',
-              stylePreset: 'inkBrand010',
-              marginBlockEnd: 'space040'
-            }}
-            href={tagL1.href}
-          >
-            {tagL1.label}
-          </TextLink>
-        )}
-
       <GridLayout>
         {modifiedGroupedArticles.map(
           (article: LeadArticleProps, articleIndex: number) => {
@@ -44,15 +35,21 @@ export const GroupedArticle = ({ articles, tagL1 }: GroupedArticleProps) => {
             return (
               <React.Fragment key={article.headline}>
                 {isSecondDivider && (
-                  <FullWidthBlock marginBlock="space040">
-                    <StyledDivider
+                  <FullWidthBlock
+                    marginBlock="space040"
+                    paddingInline={{
+                      xs: 'space045',
+                      md: 'space000'
+                    }}
+                  >
+                    <Divider
                       overrides={{
                         stylePreset: 'dashedDivider'
                       }}
                     />
                   </FullWidthBlock>
                 )}
-                <LeadArticle {...article} />
+                <LeadArticle article={article} clickHandler={clickHandler} />
               </React.Fragment>
             );
           }

@@ -3,6 +3,102 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.8.15](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.14...@times-components/caption@3.8.15) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.8.14](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.13...@times-components/caption@3.8.14) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.8.13](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.12...@times-components/caption@3.8.13) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.8.12](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.11...@times-components/caption@3.8.12) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.8.11](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.10...@times-components/caption@3.8.11) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.8.10](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.9...@times-components/caption@3.8.10) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.8.9](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.8...@times-components/caption@3.8.9) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.8.8](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.7...@times-components/caption@3.8.8) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.8.7](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.6...@times-components/caption@3.8.7) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.8.6](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.5...@times-components/caption@3.8.6) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.8.5](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.4...@times-components/caption@3.8.5) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.8.4](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.3...@times-components/caption@3.8.4) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
 ## [3.8.3](https://github.com/newsuk/times-components/compare/@times-components/caption@3.8.2...@times-components/caption@3.8.3) (2023-07-25)
 
 **Note:** Version bump only for package @times-components/caption

@@ -1,0 +1,50 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { NewsKitProvider } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../../theme';
+import { HintButton } from './index';
+
+<Meta title="Newskit Components/Puzzles/HintButton" component={HintButton} />
+
+# HintButton
+
+The `HintButton` component is used to display a button for requesting hints for daily quiz.
+
+## Props
+
+<Props of={HintButton} />
+
+### `onClick` (required)
+A function to be called when the button is clicked.
+
+### `disabled` (required)
+A boolean value that determines whether the button is disabled.
+
+### `title` (optional)
+The text to be displayed on the button. If not provided, the default text is "Give me a hint".
+
+## Code Example
+
+`<HintButton
+  onClick={() => alert('Button clicked')}
+  disabled={false}
+  title="Get Hint"
+/>`
+
+An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the FinalScreen component.
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const HintButtonStory = ({ onClick, disabled, title }) => (
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+    <HintButton onClick={onClick} disabled={disabled} title={title} />
+  </NewsKitProvider>
+);
+
+<Story name="HintButton" args={{
+  onClick: () => alert('Button clicked'),
+  disabled: false,
+  title: "Give me a hint"
+}}>
+  {HintButtonStory}
+</Story>

@@ -1,10 +1,11 @@
-export { TCThemeProvider } from './utils/TCThemeProvider';
+export { TCThemeProvider, TimesWebThemes } from './utils/TCThemeProvider';
 export { InArticleAudio } from './components/article-audio';
-export { updateThemeTypography } from './utils/theme-formatting';
+export { formatThemeOverrides } from './utils/theme-formatting';
 
 // THEMES
 export { TimesWebLightTheme } from './theme/times-web-light';
 export { TimesWebLightSportTheme } from './theme/times-web-light-sport';
+export { TimesWebLightTravelTheme } from './theme/times-web-light-travel';
 
 // NAVIGATION
 export { Breadcrumb } from './components/navigation/breadcrumb';
@@ -15,10 +16,6 @@ export {
 } from './components/navigation/global-nav/hamburger-menu/HamburgerMenu';
 export { EditionMasthead } from './components/navigation/masthead';
 export { SectionHeader } from './components/navigation/section-header';
-export {
-  WrappedHamburger,
-  WrappedGlobalNav
-} from './components/navigation/global-nav/wrapped-components/WrappedComponents';
 export {
   HamburgerMenuContainer
 } from './components/navigation/global-nav/styles';
@@ -32,22 +29,39 @@ export { DateCard } from './components/puzzles/date-card';
 export { PuzzlesFlag } from './components/puzzles/flag';
 export { AccordionGroup } from './components/misc/accordion/accordion-group';
 export { BreakoutSection } from './components/puzzles/breakout-section';
+export { HeroBanner } from './components/puzzles/hero-banner';
+export {
+  TeaserCardsContainer
+} from './components/puzzles/teaserCards-container';
+export { HintButton } from './components/puzzles/daily-quiz/hint-button';
+export { HintDisplay } from './components/puzzles/daily-quiz/hints';
+export { HintContainer } from './components/puzzles/daily-quiz/hint-container';
+export { HowToPlay } from './components/puzzles/daily-quiz/how-to-play';
+export { FinalScreen } from './components/puzzles/daily-quiz/final-screen';
 export { CardsContainer } from './components/puzzles/cards-container';
+export { ContactUs } from './components/puzzles/contact-us';
+export { Faq } from './components/puzzles/faq';
+export { OffersBanner } from './components/puzzles/offers-banner';
 export { FreeTrial } from './components/puzzles/free-trial';
 export { PersonalStats } from './components/puzzles/personal-stats';
 export { PuzzleCard } from './components/puzzles/puzzle-card';
 export { StoryCardListing } from './components/puzzles/story-card-listing';
 export { StoryCard } from './components/puzzles/storyCard';
+export { SubscribeBanner } from './components/puzzles/subscribe-banner';
+export { ArticleSidebar } from './components/puzzles/article-sidebar';
 export { PuzzlesWebLightTheme } from './theme/puzzles-web-light/index';
 
 // SLICES
 export { ContentBucket1 } from './slices/content-bucket-1';
 export { ContentBucket2 } from './slices/content-bucket-2';
+export { ContentBucket3 } from './slices/content-bucket-3';
 export { LeadStory1 } from './slices/lead-story-1';
 export { LeadStory2 } from './slices/lead-story-2';
 export { LeadStory3 } from './slices/lead-story-3';
+export { LeadStory4 } from './slices/lead-story-4';
 export { SectionBucket } from './slices/section-bucket';
 export { StackModule1 } from './slices/stacked-module-1';
+export { CommentBucket1 } from './slices/comment-bucket-1';
 
 // SLICES HEADER
 export { SliceHeader } from './components/slices/slice-header';
@@ -57,3 +71,6 @@ export { JobTitle } from './components/misc/job-title/job-title';
 export {
   UpdateButtonWithDelay
 } from './components/misc/update-button/update-button-with-delay';
+export { ColouredText } from './components/coloured-text';
+
+// TODO Remove after tests - borisovy

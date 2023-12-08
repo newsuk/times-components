@@ -35,7 +35,7 @@ describe('StackItem', () => {
     );
 
   test('responsive widths at sm', () => {
-    (useBreakpointKey as any).mockReturnValue('sm');
+    (useBreakpointKey as jest.Mock).mockReturnValue('sm');
 
     renderComponent();
     const component = screen.getByText('StackItem');
@@ -71,7 +71,7 @@ describe('BlockItem', () => {
     );
 
   test('responsive widths at sm', () => {
-    (useBreakpointKey as any).mockReturnValue('sm');
+    (useBreakpointKey as jest.Mock).mockReturnValue('sm');
 
     renderComponent();
     const component = screen.getByText('BlockItem');

@@ -7,6 +7,43 @@ import {
   Block,
   Scroll
 } from 'newskit';
+import { CustomStackLayout } from '../shared';
+
+const setBlockMargin = (space: string) => ({ marginBlockStart: `-${space}` });
+export const BlockNoTopMargin = styled(Block)`
+  ${getSpacingCssFromTheme(setBlockMargin, 'space040')};
+`;
+
+export const LeadStoryContainer = styled(CustomStackLayout)<{
+  className?: string;
+}>`
+  ${getMediaQueryFromTheme('xs', 'lg')} {
+    .article-container hr[aria-label='article-divider-horizontal'] {
+      display: none;
+    }
+  }
+
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    .article-container .article-image {
+      display: none;
+    }
+    .composed-article-card-0 .article-image {
+      display: ${({ className }) =>
+        className === 'lead-story-3-container' ? 'none' : 'grid'};
+    }
+  }
+
+  ${getMediaQueryFromTheme('md')} {
+    .lead-article .lead-image-container {
+      display: none;
+    }
+  }
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    .bottom-article-stack .article-image {
+      display: none;
+    }
+  }
+`;
 
 const setDividerPositionLeft = (space: string) => ({ left: `-${space}` });
 const setDividerPositionRight = (space: string) => ({ right: `-${space}` });
@@ -18,6 +55,15 @@ export const LeadStoryDivider = styled(Divider)<{ position: string }>`
       position === 'left' ? setDividerPositionLeft : setDividerPositionRight,
       'space040'
     )};
+
+  ${getMediaQueryFromTheme('xs', 'lg')} {
+    ${({ position }) => position !== 'left' && 'display: none'};
+  }
+`;
+
+export const ArticleDivider = styled(Divider)`
+  position: absolute;
+  top: 0;
 `;
 
 export const AvatarDivider = styled(Divider)`
@@ -28,6 +74,17 @@ export const AvatarDivider = styled(Divider)`
 
 export const StyledDivider = styled(Divider)`
   height: auto;
+`;
+
+export const ArticleDividerXL = styled(Divider)`
+  display: none;
+  ${getMediaQueryFromTheme('lg')} {
+    display: block;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    top: 0;
+  }
 `;
 
 export const StackItem = styled(Stack)<{

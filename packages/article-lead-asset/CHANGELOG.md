@@ -3,6 +3,95 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.4](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.17.3...@times-components/article-lead-asset@1.17.4) (2023-11-08)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.17.3](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.17.2...@times-components/article-lead-asset@1.17.3) (2023-10-19)
+
+
+### Bug Fixes
+
+* **TMPZ-192:** Toggle dynamic height on FAQ component ([#3603](https://github.com/newsuk/times-components/issues/3603)) ([095d074](https://github.com/newsuk/times-components/commit/095d0747dc5dac8bb183ad5b00595898c7f435a2))
+
+
+
+
+
+## [1.17.2](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.17.1...@times-components/article-lead-asset@1.17.2) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.17.1](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.17.0...@times-components/article-lead-asset@1.17.1) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+# [1.17.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.16.7...@times-components/article-lead-asset@1.17.0) (2023-08-18)
+
+
+### Features
+
+* **TMRX-1268:** update article audio to toggle by class ([#3496](https://github.com/newsuk/times-components/issues/3496)) ([eb2c76f](https://github.com/newsuk/times-components/commit/eb2c76f2d2025a33f09a079042947bdae496413c))
+
+
+
+
+
+## [1.16.7](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.16.6...@times-components/article-lead-asset@1.16.7) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.16.6](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.16.5...@times-components/article-lead-asset@1.16.6) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.16.5](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.16.4...@times-components/article-lead-asset@1.16.5) (2023-08-11)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** remove script and align versions ([#3486](https://github.com/newsuk/times-components/issues/3486)) ([dec0168](https://github.com/newsuk/times-components/commit/dec016815d3c34d54c1a20d35d3b7bf2e2e5e965))
+
+
+
+
+
+## [1.16.4](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.16.3...@times-components/article-lead-asset@1.16.4) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.16.3](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.16.2...@times-components/article-lead-asset@1.16.3) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
 ## [1.16.2](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.16.1...@times-components/article-lead-asset@1.16.2) (2023-07-25)
 
 

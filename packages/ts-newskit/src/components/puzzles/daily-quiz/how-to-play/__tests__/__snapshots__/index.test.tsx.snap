@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HowToPlay component renders HowToPlay component with default props 1`] = `
+<div>
+  <div
+    class="css-eek6fr"
+  >
+    <button
+      class="css-4t5l73"
+      data-testid="modal-open-button"
+      type="button"
+    >
+      <span
+        class="css-135wemz"
+      >
+        How to play
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`HowToPlay component renders with custom title and header 1`] = `
+<div>
+  <div
+    class="css-eek6fr"
+  >
+    <button
+      class="css-4t5l73"
+      data-testid="modal-open-button"
+      type="button"
+    >
+      <span
+        class="css-135wemz"
+      >
+        Custom Title
+      </span>
+    </button>
+  </div>
+</div>
+`;

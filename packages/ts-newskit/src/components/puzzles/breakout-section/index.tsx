@@ -11,7 +11,18 @@ import {
 import { StyledNewskitWaveBg } from '../personal-stats/styles';
 import { breakoutItems } from './fixtures/breakoutItems.json';
 
-export const BreakoutSection: FC = () => {
+interface BreakoutSectionItem {
+  title: string;
+  url: string;
+}
+
+interface BreakoutSectionProps {
+  items?: BreakoutSectionItem[];
+}
+
+export const BreakoutSection: FC<BreakoutSectionProps> = ({
+  items = breakoutItems
+}) => {
   return (
     <Block as="section">
       <BreakoutSectionContainer
@@ -46,8 +57,8 @@ export const BreakoutSection: FC = () => {
         >
           <StyledSudokuIconD2 />
           <StyledSudokuIconA4 />
-          {breakoutItems.map(({ id, title, url }) => (
-            <GridLayoutItem key={id} id={id}>
+          {items.map(({ title, url }) => (
+            <GridLayoutItem key={title}>
               <BreakoutSectionLink
                 overrides={{
                   stylePreset: 'puzzlesShadowBtn',

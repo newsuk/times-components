@@ -4,6 +4,7 @@ import { fireEvent } from '@testing-library/react';
 import { render } from '../../../../../utils/test-utils';
 
 const setSelected = jest.fn();
+const mockClickHandler = jest.fn();
 
 import LoggedInMenuItem from '../LoggedInMenuItem';
 
@@ -14,6 +15,7 @@ describe('Logged in Menu Item', () => {
         title="title"
         setSelected={setSelected}
         selected="not title"
+        clickHandler={mockClickHandler}
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -24,6 +26,7 @@ describe('Logged in Menu Item', () => {
         title="title"
         setSelected={setSelected}
         selected="not title"
+        clickHandler={mockClickHandler}
       />
     );
     expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #333333');
@@ -34,6 +37,7 @@ describe('Logged in Menu Item', () => {
         title="title"
         setSelected={setSelected}
         selected="title"
+        clickHandler={mockClickHandler}
       />
     );
     expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #ffffff');
@@ -44,6 +48,7 @@ describe('Logged in Menu Item', () => {
         title="title"
         setSelected={setSelected}
         selected="title"
+        clickHandler={mockClickHandler}
       />
     );
     const Button = getByRole('button');

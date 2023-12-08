@@ -1,0 +1,38 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { TCThemeProvider } from '../../../utils/index';
+import { PuzzlesWebLightTheme } from '../../../theme';
+import { CategoryCard } from './index';
+import { CardComposable } from 'newskit';
+import { NewsKitSudokusIcon } from '../../../assets';
+
+<Meta
+  title="Newskit Components/Puzzles/CategoryCard"
+  component={CategoryCard}
+/>
+
+# CategoryCard component
+The `CategoryCard component` component displays recent stories on puzzles page.
+
+This takes in props listed below to display recent story.
+
+## Props
+<Props of={CategoryCard} />
+
+## Code Example
+`<CategoryCard type={type} url={url} Icon={Icon}>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const CategoryCardStory = ({ type, url, Icon }) => (
+  <TCThemeProvider theme={PuzzlesWebLightTheme}>
+    <CardComposable overrides={{maxWidth: {xs:'170px', md: '199px', xl: '299px'}}}>
+      <CategoryCard type={type} url={url} Icon={Icon} />
+    </CardComposable>
+  </TCThemeProvider>
+);
+
+
+<Story name="Category Card" args={{ type: 'Sudokus', url: 'https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00', Icon: NewsKitSudokusIcon }}>
+  {CategoryCardStory.bind({})}
+</Story>

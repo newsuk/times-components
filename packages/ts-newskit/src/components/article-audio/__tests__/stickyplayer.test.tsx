@@ -21,7 +21,8 @@ const data = {
   readyToPlayText: 'Listen to article',
   playingText: 'Playing',
   narrator: 'James Marriott',
-  headline: 'Article headline'
+  headline: 'Article headline',
+  showAudioPlayer: true
 };
 
 const renderComponent = (props: InArticleAudioProps) =>
@@ -30,16 +31,26 @@ const renderComponent = (props: InArticleAudioProps) =>
 describe('StickyPlayerMob renders', () => {
   test('renders correctly', async () => {
     const { asFragment } = renderComponent(data);
-    const playBtn = screen.getByRole('button', { name: 'Play' });
+    const playBtn = screen.getByTestId('audio-player-play-btn');
+
+    expect(playBtn).toBeVisible();
+
     await fireEvent.click(playBtn);
 
+    const pauseBtn = screen.getAllByTestId('audio-player-pause-btn');
+    expect(pauseBtn[1]).toBeVisible();
     expect(asFragment()).toMatchSnapshot();
+
+    await fireEvent.click(playBtn);
+
+    const stickyPlayBtn = screen.getAllByTestId('audio-player-play-btn')[1];
+    expect(stickyPlayBtn).toBeVisible();
   });
 });
 
 describe('StickyPlayerMob functions', () => {
   beforeEach(async () => {
-    (useBreakpointKey as any).mockReturnValue('xs');
+    (useBreakpointKey as jest.Mock).mockReturnValue('xs');
     renderComponent(data);
 
     const playBtn = screen.getByRole('button', { name: 'Play' });
@@ -56,6 +67,7 @@ describe('StickyPlayerMob functions', () => {
     await fireEvent.click(scrollText);
     const audioSlider = screen.queryAllByTestId('audio-slider');
     expect(audioSlider[0]).toBeVisible();
+    expect(audioSlider[1]).not.toBeVisible();
     expect(audioSlider[1]).not.toBeVisible();
   });
 
@@ -98,7 +110,7 @@ describe('StickyPlayerMob functions', () => {
 
 describe('StickyPlayerDesktop functions', () => {
   test('closes sticky player', async () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
+    (useBreakpointKey as jest.Mock).mockReturnValue('lg');
 
     renderComponent(data);
 

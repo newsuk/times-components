@@ -1,11 +1,11 @@
-import {
-  clearCreditsAndCaption,
-  ArticleProps
-} from '../clear-credits-and-caption';
+import { clearCreditsAndCaption } from '../clear-credits-and-caption';
+import { LeadArticleProps } from '../../components/slices/lead-article';
 
 describe('clearCreditsAndCaptionObject', () => {
-  it('should clear credits and caption of a single ArticleProps object', () => {
-    const leadArticle: ArticleProps = {
+  it('should clear credits and caption of a single Article object', () => {
+    const leadArticle: LeadArticleProps = {
+      hasVideo: false,
+      id: '1234',
       headline: 'Example Headline',
       url: '',
       images: {

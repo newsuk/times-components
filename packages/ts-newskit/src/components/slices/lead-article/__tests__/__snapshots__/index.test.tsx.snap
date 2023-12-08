@@ -3,33 +3,38 @@
 exports[`Render Component one should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-19qmu5v"
+    class="css-1bk5aro"
   >
     <div
-      class="css-1vuk75f"
+      class="lead-image-container css-fit37q"
     >
       <div
-        class="css-uxw9nr"
+        class="lead-article-image css-szsib6"
       >
-        <picture
-          class="css-zp0elg"
+        <a
+          class="article-image"
+          href="https://www.thetimes.co.uk"
         >
-          <div
-            class="css-5pczz7"
-          />
-          <img
-            alt="Sarcacens an inclusive club? They didnt look out for me"
-            class="css-1qgqq71"
-            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-          />
-        </picture>
+          <picture
+            class="css-zp0elg"
+          >
+            <div
+              class="css-5pczz7"
+            />
+            <img
+              alt="Sarcacens an inclusive club? They didnt look out for me"
+              class="lcpItem css-1qgqq71"
+              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+            />
+          </picture>
+        </a>
       </div>
       <p
-        class="css-9pk24b"
+        class="css-xkphwk"
       >
         Sarcacens an inclusive club? They didnt look
         <span
-          class="css-9hwrm8"
+          class="css-15rs040"
         >
           Gareth Fuller/Press Association
         </span>
@@ -40,11 +45,57 @@ exports[`Render Component one should render a snapshot 1`] = `
     >
       <hr
         aria-hidden="true"
-        class="css-tk98gp"
+        class="css-yrt0o7"
         data-testid="divider"
       />
+      <div
+        class="article-info css-1fjzok1"
+      >
+        <span
+          class="css-7b9bzx"
+        >
+          LIVE
+        </span>
+        <div
+          class="css-p44zak"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
+        </div>
+        <span
+          class="css-1kanhs9"
+        >
+          INTERVIEW
+        </span>
+        <div
+          class="css-p44zak"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
+        </div>
+        <span
+          class="css-1kanhs9"
+        >
+          MARTIN SAMUEL
+        </span>
+        <div
+          class="css-p44zak"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
+        </div>
+      </div>
       <a
-        class="css-10h0i3c"
+        class="css-4rb6a9"
         href="https://www.thetimes.co.uk"
       >
         <span
@@ -57,31 +108,40 @@ exports[`Render Component one should render a snapshot 1`] = `
           </span>
         </span>
       </a>
-      <p
-        class="css-1nrveqv"
+      <a
+        class="css-4rb6a9"
+        href="https://www.thetimes.co.uk"
       >
-        Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
-      </p>
+        <span
+          class="css-17x5lw"
+        >
+          <p
+            class="css-lp9m77"
+          >
+            160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+          </p>
+        </span>
+      </a>
       <div
-        class="css-1atazsr"
+        class="css-1kfs2jd"
         data-testid="tag-and-flag"
       >
         <a
-          class="css-10d4t8c"
+          class="css-18s7xts"
           href="/"
         >
           <span
             class="css-17x5lw"
           >
             <span
-              class="css-zhtub2"
+              class="css-qx2986"
             >
               Review
             </span>
           </span>
         </a>
         <div
-          class="css-lew009"
+          class="css-p44zak"
         >
           <hr
             aria-hidden="true"
@@ -90,7 +150,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-1vzvkql"
+          class="css-1selp7x"
         >
           4 min read
         </span>

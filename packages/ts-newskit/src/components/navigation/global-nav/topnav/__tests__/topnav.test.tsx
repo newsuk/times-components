@@ -3,8 +3,8 @@ import { fireEvent } from '@testing-library/react';
 import { render, screen } from '../../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { TopNav } from '../topnav';
-import NavSearch from '../../search';
 import data from '../../fixtures/data.json';
+const mockClickHandler = jest.fn();
 
 const renderComponent = (isLoggedIn?: boolean, isSunday?: boolean) =>
   render(
@@ -15,6 +15,7 @@ const renderComponent = (isLoggedIn?: boolean, isSunday?: boolean) =>
       accountMenu={data.accountMenuItems}
       isHamburgerOpen={false}
       toggleHamburger={jest.fn}
+      clickHandler={mockClickHandler}
     />
   );
 
@@ -33,6 +34,65 @@ describe('Render TopNav', () => {
     const { asFragment } = renderComponent(true, true);
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('should call the mockClickHandler when log in button clicked', async () => {
+    renderComponent(false);
+    const loginBtn = screen.getByRole('link', { name: 'Log in' });
+    fireEvent.click(loginBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Log in');
+  });
+
+  it('should call the mockClickHandler when Subscribe button clicked', async () => {
+    renderComponent(false);
+    const subscribeBtn = screen.getByRole('link', { name: 'Subscribe' });
+    fireEvent.click(subscribeBtn);
+    expect(mockClickHandler).toHaveBeenCalledWith('Subscribe');
+  });
+
+  it('should call the mockClickHandler when Times + button clicked', async () => {
+    renderComponent(true);
+    const timesText = screen.getByText('Times +');
+    fireEvent.click(timesText);
+    expect(mockClickHandler).toHaveBeenCalledWith('Times +');
+  });
+
+  it('should call the mockClickHandler when Manage account button clicked', async () => {
+    renderComponent(true);
+    const manageAccount = screen.getByText('Manage account');
+    fireEvent.click(manageAccount);
+    expect(mockClickHandler).toHaveBeenCalledWith('Manage account');
+  });
+
+  it('should call the mockClickHandler when Login button clicked', async () => {
+    renderComponent(false);
+    const login = screen.getByText('Login');
+    fireEvent.click(login);
+    expect(mockClickHandler).toHaveBeenCalledWith('Login');
+  });
+
+  it('should call the mockClickHandler when Subscribe button clicked', async () => {
+    renderComponent(false);
+    const subscribe = screen.getAllByText('Subscribe')[0];
+    fireEvent.click(subscribe);
+    expect(mockClickHandler).toHaveBeenCalledWith('Subscribe');
+  });
+
+  it('should call the mockClickHandler with "Close Menu" when hamburger icon clicked', async () => {
+    render(
+      <TopNav
+        isLoggedIn={true}
+        isSunday={false}
+        mainMenu={data.mainMenuItems}
+        accountMenu={data.accountMenuItems}
+        isHamburgerOpen={true}
+        toggleHamburger={jest.fn}
+        clickHandler={mockClickHandler}
+      />
+    );
+    const hamburgerIcon = screen.getByLabelText('Close Menu');
+    fireEvent.click(hamburgerIcon);
+    expect(mockClickHandler).toHaveBeenCalledWith('Close Menu');
+  });
 });
 
 describe('TopNav button functions', () => {
@@ -45,15 +105,5 @@ describe('TopNav button functions', () => {
 
     fireEvent.click(searchBtn);
     expect(searchBtn.getAttribute('aria-label')).toEqual('Close Search');
-  });
-});
-
-describe('Search field', () => {
-  it('should update onChange', async () => {
-    render(<NavSearch />);
-    const searchField: HTMLInputElement = screen.getByRole('textbox');
-    fireEvent.change(searchField, { target: { value: 'test' } });
-
-    expect(searchField.getAttribute('value')).toBe('test');
   });
 });

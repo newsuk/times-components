@@ -1,33 +1,50 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { SecondaryNavDesktop } from './desktop';
 import { SecondaryNavMobile } from './mobile';
 import { Visible } from 'newskit';
 import { SecondaryMenuItem } from './types';
+import { SecondaryNavContainer } from './styles';
 
 interface SecondaryNavigationProps {
   data: SecondaryMenuItem[];
   pageSlug: string;
+  title: string;
+  stickyTop?: number;
+  stickyTopDesktop?: number;
+  onClick?: (isExpanded: boolean) => void;
+  clickHandler: (title: string) => void;
+  defaultSelectedIndex?: number;
+  heightMobile?: string;
 }
 
 export const SecondaryNavigation = ({
   data,
-  pageSlug
+  pageSlug,
+  title,
+  stickyTopDesktop,
+  stickyTop,
+  onClick,
+  clickHandler,
+  defaultSelectedIndex = -1,
+  heightMobile = 'auto'
 }: SecondaryNavigationProps) => {
-  const [isExpanded, setIsExpanded] = useState<boolean>(false);
-  const [isSelected, setIsSelected] = useState<string>('');
-  const firstItem = data[0].title;
+  const getPageTitle = (slug: string) => {
+    const filteredItem = data.find(item => item.slug === slug);
 
-  useEffect(() => {
-    handleSelect(pageSlug);
-  }, []);
+    if (filteredItem) {
+      return filteredItem.title;
+    } else {
+      return defaultSelectedIndex >= 0
+        ? data[defaultSelectedIndex] && data[defaultSelectedIndex].title
+        : '';
+    }
+  };
+
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
+  const [isSelected, setIsSelected] = useState<string>(getPageTitle(pageSlug));
 
   const handleSelect = (slug: string) => {
-    const filteredItem = data.find(item => item.slug === slug);
-    if (filteredItem) {
-      setIsSelected(filteredItem.title);
-    } else {
-      setIsSelected(firstItem);
-    }
+    setIsSelected(getPageTitle(slug));
   };
 
   const options = {
@@ -38,13 +55,24 @@ export const SecondaryNavigation = ({
   };
 
   return (
-    <>
+    <SecondaryNavContainer topDesktop={stickyTopDesktop} topMobile={stickyTop}>
       <Visible sm xs>
-        <SecondaryNavMobile data={data} options={options} />
+        <SecondaryNavMobile
+          data={data}
+          title={title}
+          options={options}
+          onClick={onClick}
+          height={heightMobile}
+          clickHandler={clickHandler}
+        />
       </Visible>
       <Visible md lg xl>
-        <SecondaryNavDesktop data={data} options={options} />
+        <SecondaryNavDesktop
+          data={data}
+          options={options}
+          clickHandler={clickHandler}
+        />
       </Visible>
-    </>
+    </SecondaryNavContainer>
   );
 };

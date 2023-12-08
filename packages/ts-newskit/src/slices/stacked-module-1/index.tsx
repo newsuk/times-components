@@ -1,45 +1,54 @@
-import { Divider, GridLayout, useBreakpointKey, BreakpointKeys } from 'newskit';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Divider } from 'newskit';
 import { Article, ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
-import { CustomStackLayout } from '../shared';
-import { BlockItem, StackItem, StyledDivider } from '../shared-styles';
+import { WrappedStackLayout, CustomBlockLayout } from '../shared';
+import { StackItem } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
+import { ClickHandlerType } from '../types';
+import { ArticleGrid } from './styles';
 
 export interface StackModule1Props {
   articles: ArticleProps[];
+  clickHandler: ClickHandlerType;
 }
 
 type ArticleStackProps = {
   articles: ArticleProps[];
   marginBlockStart?: string;
-  isDesktop?: boolean;
-  isMob?: boolean;
+  hideImageOnDesktop?: boolean;
+  clickHandler: ClickHandlerType;
 };
-
-const fullWidthDivider = (marginBlockStart?: string) => (
-  <Divider
-    overrides={{
-      stylePreset: 'dashedDivider',
-      marginBlockStart: marginBlockStart || 'space000'
-    }}
-  />
-);
 
 const articleStack = ({
   articles,
   marginBlockStart,
-  isDesktop,
-  isMob
+  hideImageOnDesktop,
+  clickHandler
 }: ArticleStackProps) => (
-  <CustomStackLayout>
+  <WrappedStackLayout marginBlockEnd="space000">
     <StackItem>
-      <FullWidthBlock marginBlockEnd="space040">
-        {fullWidthDivider(marginBlockStart)}
+      <FullWidthBlock
+        paddingInline={{
+          xs: 'space045',
+          md: 'space000'
+        }}
+        marginBlockEnd="space040"
+      >
+        <Divider
+          overrides={{
+            stylePreset: {
+              xs: 'lightDashedDivider',
+              md: 'dashedDivider'
+            },
+            marginBlockStart: marginBlockStart || 'space000'
+          }}
+        />
       </FullWidthBlock>
     </StackItem>
     <StackItem>
-      <GridLayout
+      <ArticleGrid
+        hideImageOnDesktop={hideImageOnDesktop}
         columns={{
           xs: '1fr',
           md: '1fr 1px 1fr 1px 1fr 1px 1fr'
@@ -50,68 +59,53 @@ const articleStack = ({
       >
         {articles.map((article: ArticleProps, articleIndex, articleArr) => {
           const articleBorder = articleIndex < articleArr.length - 1 &&
-            !isMob &&
             articleIndex !== 3 && (
-              <StyledDivider
+              <Divider
+                aria-label="stacked-article-divider-vertical"
                 overrides={{ stylePreset: 'lightDivider' }}
                 vertical
               />
             );
 
-          const hasImage = isMob && articleIndex > 0;
-
           return (
             <React.Fragment key={article.headline}>
               <Article
-                {...clearCreditsAndCaption(article)}
-                hideImage={hasImage || (hasImage || isDesktop)}
-                isLeadImage={isMob && articleIndex === 0}
-                hasTopBorder={hasImage}
-                isFullWidth={true}
-                tagAndFlagMarginBlockStart="space030"
-                titleTypographyPreset={
-                  isMob ? 'editorialHeadline030' : 'editorialHeadline020'
-                }
+                article={{
+                  ...clearCreditsAndCaption(article),
+                  isLeadImage: articleIndex === 0,
+                  hasTopBorder: articleIndex > 0,
+                  isFullWidth: true,
+                  tagAndFlagMarginBlockStart: 'space030',
+                  topBorderStyle: {
+                    xs: 'lightDashedDivider',
+                    md: 'dashedDivider'
+                  },
+                  titleTypographyPreset: 'editorialHeadline020'
+                }}
+                clickHandler={clickHandler}
               />
               {articleBorder}
             </React.Fragment>
           );
         })}
-      </GridLayout>
+      </ArticleGrid>
     </StackItem>
-  </CustomStackLayout>
+  </WrappedStackLayout>
 );
 
-export const StackModule1 = ({ articles }: StackModule1Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
-  const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
-    },
-    [breakpointKey]
-  );
-  const isMob = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
+export const StackModule1 = ({ articles, clickHandler }: StackModule1Props) => {
   const articlesTop = articles.slice(0, 4);
   const articlesBottom = articles.slice(4);
 
   return (
-    <BlockItem
-      $width={{
-        xs: '100%',
-        md: '720px',
-        lg: '976px',
-        xl: '1276px'
-      }}
-    >
-      {articleStack({ articles: articlesTop, isMob })}
+    <CustomBlockLayout>
+      {articleStack({ articles: articlesTop, clickHandler })}
       {articleStack({
         articles: articlesBottom,
         marginBlockStart: 'space040',
-        isDesktop: !isMob,
-        isMob
+        hideImageOnDesktop: true,
+        clickHandler
       })}
-      {fullWidthDivider('space040')}
-    </BlockItem>
+    </CustomBlockLayout>
   );
 };

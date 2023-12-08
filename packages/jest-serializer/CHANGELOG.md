@@ -3,6 +3,69 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.12.2](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.1...@times-components/jest-serializer@3.12.2) (2023-10-19)
+
+
+### Bug Fixes
+
+* **TMPZ-192:** Toggle dynamic height on FAQ component ([#3603](https://github.com/newsuk/times-components/issues/3603)) ([095d074](https://github.com/newsuk/times-components/commit/095d0747dc5dac8bb183ad5b00595898c7f435a2))
+
+
+
+
+
+## [3.12.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.0...@times-components/jest-serializer@3.12.1) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/jest-serializer
+
+
+
+
+
+# [3.12.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.11.0...@times-components/jest-serializer@3.12.0) (2023-08-18)
+
+
+### Features
+
+* **TMRX-1268:** update article audio to toggle by class ([#3496](https://github.com/newsuk/times-components/issues/3496)) ([eb2c76f](https://github.com/newsuk/times-components/commit/eb2c76f2d2025a33f09a079042947bdae496413c))
+
+
+
+
+
+# [3.11.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.10.1...@times-components/jest-serializer@3.11.0) (2023-08-16)
+
+
+### Features
+
+* **TMRX-1388:** updated typography for dropdown active state ([#3489](https://github.com/newsuk/times-components/issues/3489)) ([b339e33](https://github.com/newsuk/times-components/commit/b339e3350a890223da7bfd9a782653933d277198))
+
+
+
+
+
+## [3.10.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.10.0...@times-components/jest-serializer@3.10.1) (2023-08-11)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** remove script and align versions ([#3486](https://github.com/newsuk/times-components/issues/3486)) ([dec0168](https://github.com/newsuk/times-components/commit/dec016815d3c34d54c1a20d35d3b7bf2e2e5e965))
+
+
+
+
+
+# [3.10.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.9.1...@times-components/jest-serializer@3.10.0) (2023-08-10)
+
+
+### Features
+
+* **TMRX-1444:** Update image on mobile web for Lead 1 and Lead 3 ([#3483](https://github.com/newsuk/times-components/issues/3483)) ([e49f620](https://github.com/newsuk/times-components/commit/e49f6203bc75b2e528538343fac8483e9ee34960))
+
+
+
+
+
 ## [3.9.1](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.9.0...@times-components/jest-serializer@3.9.1) (2023-07-25)
 
 

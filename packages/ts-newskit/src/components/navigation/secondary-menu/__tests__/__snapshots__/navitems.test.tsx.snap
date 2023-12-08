@@ -7,7 +7,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1c56mmi"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/home"
     >
@@ -23,7 +23,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1c56mmi"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/news"
     >
@@ -39,7 +39,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1c56mmi"
+      class="css-b09pon"
       data-testid="buttonLink"
       href="/comment"
     >
@@ -47,6 +47,102 @@ exports[`Navitems Desktop should render snapshot 1`] = `
         class="css-t9dmcw"
       >
         Comment
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-b09pon"
+      data-testid="buttonLink"
+      href="/life-and-style"
+    >
+      <span
+        class="css-t9dmcw"
+      >
+        Life & Style
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-b09pon"
+      data-testid="buttonLink"
+      href="/arts-and-books"
+    >
+      <span
+        class="css-t9dmcw"
+      >
+        Arts & Books
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-b09pon"
+      data-testid="buttonLink"
+      href="/sport"
+    >
+      <span
+        class="css-t9dmcw"
+      >
+        Sport
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-b09pon"
+      data-testid="buttonLink"
+      href="/business-and-money"
+    >
+      <span
+        class="css-t9dmcw"
+      >
+        Business & Money
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-b09pon"
+      data-testid="buttonLink"
+      href="/puzzles"
+    >
+      <span
+        class="css-t9dmcw"
+      >
+        Puzzles
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-b09pon"
+      data-testid="buttonLink"
+      href="/magazines"
+    >
+      <span
+        class="css-t9dmcw"
+      >
+        Magazines
       </span>
     </a>
   </li>

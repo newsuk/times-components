@@ -10,7 +10,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
     >
       <hr
         aria-hidden="true"
-        class="css-obfal1"
+        class="css-1ft1o8k"
         data-testid="divider"
       />
     </div>

@@ -1,51 +1,53 @@
 import React from 'react';
-import { MenuSub, TextBlock } from 'newskit';
+import { useTheme } from 'newskit';
 import { SecondaryMenuOptions } from '../types';
-import { StyledBlock } from '../styles';
+import { MenuContainerMob, MenuSubMob } from '../styles';
+import { ColouredText } from '../../../coloured-text';
 
 export const Navigator: React.FC<{
   options: SecondaryMenuOptions;
   title: string;
-  subMenuTitle: string;
-}> = ({ title, options, subMenuTitle }) => {
+  onClick?: (isExpanded: boolean) => void;
+}> = ({ title, options, onClick }) => {
   const { isExpanded, setIsExpanded } = options;
+  const theme = useTheme();
 
   return (
-    <StyledBlock
-      paddingInlineStart="space040"
-      paddingInlineEnd="space040"
-      stylePreset="secondaryNavMenuBlock"
+    <MenuContainerMob
+      paddingInline="space045"
+      onClick={() => {
+        setIsExpanded(!isExpanded);
+        onClick && onClick(!isExpanded);
+      }}
     >
-      <TextBlock
-        marginBlockStart="space040"
-        typographyPreset="utilityHeading060"
+      <ColouredText
+        typographyPreset="utilitySubheading010"
+        $color={theme.colors.sectionBrand060 && 'white'}
       >
         {title}
-      </TextBlock>
-      <MenuSub
-        title={subMenuTitle}
+      </ColouredText>
+      <MenuSubMob
         expanded={isExpanded}
-        onClick={() => {
-          setIsExpanded(!isExpanded);
-        }}
+        aria-label={
+          isExpanded ? 'Collapse Secondary Menu' : 'Expand Secondary Menu'
+        }
         overrides={{
-          marginBlockStart: 'space020',
-          marginInlineEnd: 'space020',
-          paddingInline: 'space030',
-          minHeight: 'sizing060',
-          stylePreset: 'subMenu',
-          typographyPreset: 'newPreset030',
+          paddingBlock: 'space000',
+          paddingInline: 'space000',
+          minHeight: 'sizing050',
+          minWidth: 'sizing050',
+          stylePreset: 'subMenuMob',
           indicatorIcon: {
             props: {
               overrides: {
-                stylePreset: 'icon'
+                stylePreset: 'subMenuMobIcon'
               }
             }
           }
         }}
       >
         {null}
-      </MenuSub>
-    </StyledBlock>
+      </MenuSubMob>
+    </MenuContainerMob>
   );
 };

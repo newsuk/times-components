@@ -4,41 +4,36 @@ import {
   CardContent,
   CardComposable,
   Divider,
-  Hidden
+  MQ,
+  Image
 } from 'newskit';
 import React from 'react';
 import {
   CardHeadlineLink,
-  FullWidthCardMediaMob,
   StyledSpan,
-  TextLink
+  FullWidthGridLayoutItem
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import { UnorderedListItems } from './unorderedList';
+import {
+  ClickHandlerType,
+  MouseEventType,
+  ImageProps,
+  ListData,
+  expirableFlagsProps
+} from '../../../slices/types';
+import { articleClickTracking } from '../../../utils/tracking';
+import { ArticleTileInfo } from '../shared/articleTileInfo';
 
-type ImageCrops = {
-  url?: string;
-  ratio?: string;
-};
-type ListData = {
-  label: string;
-  href: string;
-};
-
-type ImageProps = {
-  alt?: string;
-  caption?: string;
-  credits?: string;
-  crops?: ImageCrops[];
-};
 export interface LeadArticleProps {
+  id: string;
   headline: string;
   flag?: string;
   shortSummary?: string;
-  tagL1?: {
-    label: string;
-    href: string;
-  };
+  contentType?: string;
+  hasVideo: boolean;
+  label?: string;
+  expirableFlags?: expirableFlagsProps[];
   images?: ImageProps;
   url: string;
   tag?: {
@@ -48,52 +43,52 @@ export interface LeadArticleProps {
   imageTop?: boolean;
   hasTopBorder?: boolean;
   contentTop?: boolean;
-  contentWidth?: string;
-  headlineTypographyPreset?: string;
+  contentWidth?: MQ<string> | string;
+  headlineTypographyPreset?: MQ<string> | string;
   loadingAspectRatio?: string;
-  imageMarginBlockStart?: string;
-  textBlockMarginBlockStart?: string;
-  tagAndFlagMarginBlockStart?: string;
+  textBlockMarginBlockStart?: MQ<string> | string;
+  tagAndFlagMarginBlockStart?: MQ<string> | string;
   listData?: ListData[];
-  showTagL1?: boolean;
   hideImage?: boolean;
 }
+
 export const LeadArticle = ({
-  headline,
-  flag,
-  shortSummary,
-  tagL1,
-  images,
-  url,
-  tag,
-  imageTop,
-  hasTopBorder = true,
-  contentTop,
-  contentWidth,
-  headlineTypographyPreset,
-  loadingAspectRatio,
-  imageMarginBlockStart = 'space000',
-  textBlockMarginBlockStart = 'space040',
-  tagAndFlagMarginBlockStart = 'space040',
-  listData,
-  showTagL1,
-  hideImage
-}: LeadArticleProps) => {
+  article,
+  clickHandler,
+  className
+}: {
+  article: LeadArticleProps;
+  clickHandler: ClickHandlerType;
+  className?: string;
+}) => {
+  const {
+    id,
+    headline,
+    flag,
+    shortSummary,
+    contentType,
+    hasVideo,
+    images,
+    url,
+    tag,
+    imageTop,
+    hasTopBorder = true,
+    contentTop,
+    contentWidth,
+    headlineTypographyPreset,
+    loadingAspectRatio,
+    textBlockMarginBlockStart = 'space040',
+    tagAndFlagMarginBlockStart = { xs: 'space050', md: 'space040' },
+    listData,
+    hideImage,
+    expirableFlags,
+    label
+  } = article;
   const imageWithCorrectRatio =
     images && images.crops
       ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
         images.crops.find(crop => crop.ratio === '3:2')
-      : null;
-
-  const cardImage = images &&
-    imageWithCorrectRatio &&
-    imageWithCorrectRatio.url !== '' && {
-      media: {
-        src: imageWithCorrectRatio.url,
-        alt: (images && images.alt) || headline,
-        loadingAspectRatio: imageWithCorrectRatio.ratio
-      }
-    };
+      : undefined;
 
   const hasImage =
     images &&
@@ -114,6 +109,11 @@ export const LeadArticle = ({
       : 'editorialHeadline040';
   const displayArticleVertical = imageTop || hideImage;
 
+  const onClick = (event: MouseEventType) => {
+    const articleForTracking = { headline, id, url };
+    articleClickTracking(event, articleForTracking, clickHandler);
+  };
+
   return (
     <CardComposable
       areas={{
@@ -128,21 +128,39 @@ export const LeadArticle = ({
           : `content media`
       }}
       columnGap="space040"
-      columns={{
-        md: displayArticleVertical ? '100%' : `${contentWidth || '260px'} auto`
-      }}
+      columns={displayArticleVertical || !contentWidth ? '100%' : contentWidth}
+      className={className}
     >
       {hasImage &&
         !hideImage && (
           <Block
-            marginBlockEnd={imageTop ? 'space050' : 'space000'}
-            marginBlockStart={imageMarginBlockStart}
+            marginBlockEnd={imageTop ? 'space040' : 'space000'}
+            className="lead-image-container"
           >
-            <FullWidthCardMediaMob {...cardImage} />
+            <FullWidthGridLayoutItem
+              area="media"
+              ratio={imageWithCorrectRatio!.ratio}
+              className="lead-article-image"
+              marginBlockEnd={hasCaptionOrCredits ? 'space020' : 'space000'}
+            >
+              <a href={url} onClick={onClick} className="article-image">
+                <Image
+                  src={
+                    imageWithCorrectRatio &&
+                    `${imageWithCorrectRatio.url}&resize=750`
+                  }
+                  alt={(images && images.alt) || headline}
+                  loadingAspectRatio={
+                    imageWithCorrectRatio && imageWithCorrectRatio.ratio
+                  }
+                  className="lcpItem"
+                />
+              </a>
+            </FullWidthGridLayoutItem>
             {hasCaptionOrCredits && (
               <TextBlock
-                marginBlockStart="space020"
-                typographyPreset="utilityMeta010"
+                typographyPreset="editorialCaption010"
+                stylePreset="inkSubtle"
               >
                 {images && images.caption}
                 {images &&
@@ -158,61 +176,59 @@ export const LeadArticle = ({
 
       <CardContent
         alignContent="start"
-        overrides={{ marginBlockEnd: contentTop ? 'space040' : 'space000' }}
+        overrides={{
+          marginBlockEnd: contentTop ? 'space040' : 'space000'
+        }}
       >
         {hasTopBorder && (
           <Divider
             overrides={{
               stylePreset: 'dashedDivider',
-              marginBlockEnd: 'space050'
+              marginBlockEnd: 'space045'
             }}
           />
         )}
-
-        {tagL1 &&
-          tagL1.label !== '' && (
-            <Hidden xs={showTagL1} sm={showTagL1}>
-              <TextLink
-                overrides={{
-                  typographyPreset: 'utilityButton010',
-                  stylePreset: 'inkBrand010',
-                  marginBlockEnd: 'space040'
-                }}
-                href={tagL1.href}
-              >
-                {tagL1.label}
-              </TextLink>
-            </Hidden>
-          )}
-
+        <ArticleTileInfo
+          hasVideo={hasVideo}
+          contentType={contentType}
+          expirableFlags={expirableFlags}
+          label={label}
+          marginBlockEnd="space020"
+        />
         <CardHeadlineLink
           href={url}
           overrides={{
             typographyPreset: headlineTypography
           }}
           external={false}
-          expand={!tag}
+          onClick={onClick}
         >
           {headline}
         </CardHeadlineLink>
         {shortSummary && (
-          <TextBlock
-            typographyPreset={{
-              xs: 'editorialParagraph020',
-              md: 'editorialParagraph010'
-            }}
-            marginBlockStart={textBlockMarginBlockStart}
-            as="p"
-          >
-            {shortSummary}
-          </TextBlock>
+          <CardHeadlineLink href={url} external={false} onClick={onClick}>
+            <TextBlock
+              stylePreset={{
+                xs: 'inkSubtle',
+                md: 'inkBase'
+              }}
+              typographyPreset={{
+                xs: 'editorialParagraph020',
+                md: 'editorialParagraph010'
+              }}
+              marginBlockStart={textBlockMarginBlockStart}
+              as="p"
+            >
+              {shortSummary}
+            </TextBlock>
+          </CardHeadlineLink>
         )}
         <TagAndFlag
           tag={tag}
           flag={flag}
           marginBlockStart={tagAndFlagMarginBlockStart}
         />
-        <UnorderedListItems listData={listData} />
+        <UnorderedListItems listData={listData} clickHandler={clickHandler} />
       </CardContent>
     </CardComposable>
   );

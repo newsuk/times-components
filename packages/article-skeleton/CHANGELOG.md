@@ -3,6 +3,1126 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.116.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.11...@times-components/article-skeleton@1.116.12) (2023-12-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.10...@times-components/article-skeleton@1.116.11) (2023-12-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.9...@times-components/article-skeleton@1.116.10) (2023-12-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.8...@times-components/article-skeleton@1.116.9) (2023-12-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.7...@times-components/article-skeleton@1.116.8) (2023-12-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.6...@times-components/article-skeleton@1.116.7) (2023-12-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.5...@times-components/article-skeleton@1.116.6) (2023-12-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.4...@times-components/article-skeleton@1.116.5) (2023-12-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.3...@times-components/article-skeleton@1.116.4) (2023-11-30)
+
+
+### Bug Fixes
+
+* **TMRX-1550:** newsletter puff not appearing in irish sport section ([#3676](https://github.com/newsuk/times-components/issues/3676)) ([b72ab65](https://github.com/newsuk/times-components/commit/b72ab65bee181b305b7f382bd6f50c527e066ff7))
+
+
+
+
+
+## [1.116.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.2...@times-components/article-skeleton@1.116.3) (2023-11-29)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.1...@times-components/article-skeleton@1.116.2) (2023-11-29)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.0...@times-components/article-skeleton@1.116.1) (2023-11-28)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.116.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.15...@times-components/article-skeleton@1.116.0) (2023-11-27)
+
+
+### Features
+
+* **TMG-911:** Add tracking param customerType ([#3671](https://github.com/newsuk/times-components/issues/3671)) ([b888fb2](https://github.com/newsuk/times-components/commit/b888fb2f97eba972cff4a45a6bd2341ed1e100a8))
+
+
+
+
+
+## [1.115.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.14...@times-components/article-skeleton@1.115.15) (2023-11-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.13...@times-components/article-skeleton@1.115.14) (2023-11-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.12...@times-components/article-skeleton@1.115.13) (2023-11-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.11...@times-components/article-skeleton@1.115.12) (2023-11-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.10...@times-components/article-skeleton@1.115.11) (2023-11-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.9...@times-components/article-skeleton@1.115.10) (2023-11-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.8...@times-components/article-skeleton@1.115.9) (2023-11-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.7...@times-components/article-skeleton@1.115.8) (2023-11-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.6...@times-components/article-skeleton@1.115.7) (2023-11-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.5...@times-components/article-skeleton@1.115.6) (2023-11-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.4...@times-components/article-skeleton@1.115.5) (2023-11-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.3...@times-components/article-skeleton@1.115.4) (2023-11-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.2...@times-components/article-skeleton@1.115.3) (2023-11-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.1...@times-components/article-skeleton@1.115.2) (2023-11-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.115.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.115.0...@times-components/article-skeleton@1.115.1) (2023-11-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.115.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.20...@times-components/article-skeleton@1.115.0) (2023-11-13)
+
+
+### Features
+
+* **TMG-1049:** Switch commenting links based on environment, region ([#3645](https://github.com/newsuk/times-components/issues/3645)) ([659aed4](https://github.com/newsuk/times-components/commit/659aed4a5dcc1feb58cf383d1b140b5134e1fa0f))
+
+
+
+
+
+## [1.114.20](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.19...@times-components/article-skeleton@1.114.20) (2023-11-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.19](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.18...@times-components/article-skeleton@1.114.19) (2023-11-09)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.18](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.17...@times-components/article-skeleton@1.114.18) (2023-11-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.16...@times-components/article-skeleton@1.114.17) (2023-11-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.15...@times-components/article-skeleton@1.114.16) (2023-11-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.14...@times-components/article-skeleton@1.114.15) (2023-11-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.13...@times-components/article-skeleton@1.114.14) (2023-11-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.12...@times-components/article-skeleton@1.114.13) (2023-11-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.11...@times-components/article-skeleton@1.114.12) (2023-11-03)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.10...@times-components/article-skeleton@1.114.11) (2023-11-02)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.9...@times-components/article-skeleton@1.114.10) (2023-11-02)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.8...@times-components/article-skeleton@1.114.9) (2023-11-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.7...@times-components/article-skeleton@1.114.8) (2023-10-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.6...@times-components/article-skeleton@1.114.7) (2023-10-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.5...@times-components/article-skeleton@1.114.6) (2023-10-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.4...@times-components/article-skeleton@1.114.5) (2023-10-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.3...@times-components/article-skeleton@1.114.4) (2023-10-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.2...@times-components/article-skeleton@1.114.3) (2023-10-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.1...@times-components/article-skeleton@1.114.2) (2023-10-26)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.114.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.114.0...@times-components/article-skeleton@1.114.1) (2023-10-26)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.114.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.36...@times-components/article-skeleton@1.114.0) (2023-10-25)
+
+
+### Features
+
+* **TMRX-1605:** update article audio component ([#3606](https://github.com/newsuk/times-components/issues/3606)) ([1b5510e](https://github.com/newsuk/times-components/commit/1b5510e42cba3cc3c30e2f4fefac4c5ce222d3f3))
+
+
+
+
+
+## [1.113.36](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.35...@times-components/article-skeleton@1.113.36) (2023-10-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.35](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.34...@times-components/article-skeleton@1.113.35) (2023-10-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.34](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.33...@times-components/article-skeleton@1.113.34) (2023-10-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.33](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.32...@times-components/article-skeleton@1.113.33) (2023-10-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.32](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.31...@times-components/article-skeleton@1.113.32) (2023-10-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.31](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.30...@times-components/article-skeleton@1.113.31) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.30](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.29...@times-components/article-skeleton@1.113.30) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.29](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.28...@times-components/article-skeleton@1.113.29) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.28](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.27...@times-components/article-skeleton@1.113.28) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.27](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.26...@times-components/article-skeleton@1.113.27) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.26](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.25...@times-components/article-skeleton@1.113.26) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.25](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.24...@times-components/article-skeleton@1.113.25) (2023-10-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.24](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.23...@times-components/article-skeleton@1.113.24) (2023-10-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.23](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.22...@times-components/article-skeleton@1.113.23) (2023-10-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.22](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.21...@times-components/article-skeleton@1.113.22) (2023-10-13)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.21](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.20...@times-components/article-skeleton@1.113.21) (2023-10-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.20](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.19...@times-components/article-skeleton@1.113.20) (2023-10-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.19](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.18...@times-components/article-skeleton@1.113.19) (2023-10-11)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.18](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.17...@times-components/article-skeleton@1.113.18) (2023-10-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.16...@times-components/article-skeleton@1.113.17) (2023-10-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.15...@times-components/article-skeleton@1.113.16) (2023-10-09)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.14...@times-components/article-skeleton@1.113.15) (2023-10-09)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.13...@times-components/article-skeleton@1.113.14) (2023-10-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.12...@times-components/article-skeleton@1.113.13) (2023-10-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.11...@times-components/article-skeleton@1.113.12) (2023-10-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.10...@times-components/article-skeleton@1.113.11) (2023-10-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.9...@times-components/article-skeleton@1.113.10) (2023-10-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.8...@times-components/article-skeleton@1.113.9) (2023-10-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.7...@times-components/article-skeleton@1.113.8) (2023-10-03)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.6...@times-components/article-skeleton@1.113.7) (2023-10-02)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.5...@times-components/article-skeleton@1.113.6) (2023-09-28)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.4...@times-components/article-skeleton@1.113.5) (2023-09-28)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.3...@times-components/article-skeleton@1.113.4) (2023-09-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.2...@times-components/article-skeleton@1.113.3) (2023-09-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.1...@times-components/article-skeleton@1.113.2) (2023-09-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.113.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.113.0...@times-components/article-skeleton@1.113.1) (2023-09-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.113.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.112.8...@times-components/article-skeleton@1.113.0) (2023-09-21)
+
+
+### Features
+
+* **TMRX-1463:** add newsletter objects for ireland ([#3544](https://github.com/newsuk/times-components/issues/3544)) ([ffc98ca](https://github.com/newsuk/times-components/commit/ffc98cae85b39d819fe2511e2eff2d08de1b3c0b))
+
+
+
+
+
+## [1.112.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.112.7...@times-components/article-skeleton@1.112.8) (2023-09-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.112.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.112.6...@times-components/article-skeleton@1.112.7) (2023-09-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.112.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.112.5...@times-components/article-skeleton@1.112.6) (2023-09-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.112.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.112.4...@times-components/article-skeleton@1.112.5) (2023-09-19)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.112.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.112.3...@times-components/article-skeleton@1.112.4) (2023-09-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.112.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.112.2...@times-components/article-skeleton@1.112.3) (2023-09-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.112.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.112.1...@times-components/article-skeleton@1.112.2) (2023-09-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.112.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.112.0...@times-components/article-skeleton@1.112.1) (2023-09-13)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.112.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.28...@times-components/article-skeleton@1.112.0) (2023-09-13)
+
+
+### Features
+
+* **TMRX-1300:** create article byline block ([#3525](https://github.com/newsuk/times-components/issues/3525)) ([2f1466a](https://github.com/newsuk/times-components/commit/2f1466a6d992b577ddae3d9fc20e62eb4fd80cd2))
+
+
+
+
+
+## [1.111.28](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.27...@times-components/article-skeleton@1.111.28) (2023-09-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.27](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.26...@times-components/article-skeleton@1.111.27) (2023-09-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.26](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.25...@times-components/article-skeleton@1.111.26) (2023-09-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.25](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.24...@times-components/article-skeleton@1.111.25) (2023-09-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.24](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.23...@times-components/article-skeleton@1.111.24) (2023-09-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.23](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.22...@times-components/article-skeleton@1.111.23) (2023-09-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.22](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.21...@times-components/article-skeleton@1.111.22) (2023-09-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.21](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.20...@times-components/article-skeleton@1.111.21) (2023-09-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.20](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.19...@times-components/article-skeleton@1.111.20) (2023-08-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.19](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.18...@times-components/article-skeleton@1.111.19) (2023-08-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.18](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.17...@times-components/article-skeleton@1.111.18) (2023-08-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.16...@times-components/article-skeleton@1.111.17) (2023-08-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.15...@times-components/article-skeleton@1.111.16) (2023-08-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.14...@times-components/article-skeleton@1.111.15) (2023-08-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.13...@times-components/article-skeleton@1.111.14) (2023-08-29)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.12...@times-components/article-skeleton@1.111.13) (2023-08-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.11...@times-components/article-skeleton@1.111.12) (2023-08-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.10...@times-components/article-skeleton@1.111.11) (2023-08-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.9...@times-components/article-skeleton@1.111.10) (2023-08-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.8...@times-components/article-skeleton@1.111.9) (2023-08-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.7...@times-components/article-skeleton@1.111.8) (2023-08-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.6...@times-components/article-skeleton@1.111.7) (2023-08-22)
+
+
+### Bug Fixes
+
+* **ARCH-00:** change ld+json articleID to be articleId so parsely can find it ([#3500](https://github.com/newsuk/times-components/issues/3500)) ([f21d54c](https://github.com/newsuk/times-components/commit/f21d54c3fc3cb79df46b551ec11c1ef99c0f3ba1))
+
+
+
+
+
+## [1.111.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.5...@times-components/article-skeleton@1.111.6) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.4...@times-components/article-skeleton@1.111.5) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.3...@times-components/article-skeleton@1.111.4) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.2...@times-components/article-skeleton@1.111.3) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.1...@times-components/article-skeleton@1.111.2) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.111.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.111.0...@times-components/article-skeleton@1.111.1) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.111.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.27...@times-components/article-skeleton@1.111.0) (2023-08-11)
+
+
+### Features
+
+* **ARCH-00:** add url and articleID to ld+json for Parsely crawler so Parsely does not detect duplicate articles when we change the slug ([#3482](https://github.com/newsuk/times-components/issues/3482)) ([45565c8](https://github.com/newsuk/times-components/commit/45565c81a13db75b03408d744900e783bfda66cc))
+
+
+
+
+
+## [1.110.27](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.26...@times-components/article-skeleton@1.110.27) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.110.26](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.25...@times-components/article-skeleton@1.110.26) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.110.25](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.24...@times-components/article-skeleton@1.110.25) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.110.24](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.23...@times-components/article-skeleton@1.110.24) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.110.23](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.22...@times-components/article-skeleton@1.110.23) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.110.22](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.21...@times-components/article-skeleton@1.110.22) (2023-08-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.110.21](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.20...@times-components/article-skeleton@1.110.21) (2023-08-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.110.20](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.19...@times-components/article-skeleton@1.110.20) (2023-08-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.110.19](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.18...@times-components/article-skeleton@1.110.19) (2023-08-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.110.18](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.17...@times-components/article-skeleton@1.110.18) (2023-08-03)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.110.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.16...@times-components/article-skeleton@1.110.17) (2023-08-03)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.110.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.15...@times-components/article-skeleton@1.110.16) (2023-08-02)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.110.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.110.14...@times-components/article-skeleton@1.110.15) (2023-08-02)
 
 **Note:** Version bump only for package @times-components/article-skeleton

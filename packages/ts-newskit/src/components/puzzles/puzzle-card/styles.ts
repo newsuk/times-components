@@ -1,14 +1,11 @@
-import {
-  styled,
-  Block,
-  getColorCssFromTheme,
-  CardComposable,
-  getMediaQueryFromTheme
-} from 'newskit';
+import { styled, Block, getColorCssFromTheme, CardComposable } from 'newskit';
 import { NewsKitPuzzlePlaceholder } from './assets';
 
 export const Wrap = styled(Block)`
   position: absolute;
+  top: 39%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 export const PuzzleCardComposable = styled(CardComposable)`
@@ -19,23 +16,8 @@ export const PuzzleCardComposable = styled(CardComposable)`
 export const PuzzleCardImgWrapper = styled(Block)`
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: flex-start;
-  min-height: 50%;
-
-  ${getMediaQueryFromTheme('sm')} {
-    min-height: 51%;
-  }
-  ${getMediaQueryFromTheme('md')} {
-    min-height: 55%;
-  }
-  ${getMediaQueryFromTheme('lg')} {
-    min-height: 68%;
-  }
-  ${getMediaQueryFromTheme('xl')} {
-    min-height: 74%;
-  }
+  height: 0;
+  padding-bottom: 66.6%;
 
   img {
     aspect-ratio: 3/2;
@@ -43,5 +25,5 @@ export const PuzzleCardImgWrapper = styled(Block)`
 `;
 
 export const StyledNewsKitPuzzlePlaceholder = styled(NewsKitPuzzlePlaceholder)`
-  ${getColorCssFromTheme('color', 'puzzles010')};
+  ${getColorCssFromTheme('color', 'sectionBrand010')};
 `;

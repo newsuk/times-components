@@ -3,13 +3,13 @@
 exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
 <DocumentFragment>
   <div
-    class="css-y73puv"
+    class="css-1s57n01"
   >
     <div
-      class="css-1th2wme"
+      class="css-uxiwo2"
     >
       <div
-        class="css-1jza4en"
+        class="css-1vgdeio"
         style="margin-block: space000;"
       >
         <div
@@ -19,53 +19,24 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             class="css-13byt3y"
           >
             <div
-              class="css-1g5vzsh"
+              class="css-1ms6dj6"
             />
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
               >
-                <a
-                  class="css-10h0i3c"
-                  href="https://www.thetimes.co.uk"
+                <div
+                  class="article-info css-1fjzok1"
                 >
                   <span
-                    class="css-17x5lw"
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      Short title of the card describing the main content
-                    </span>
+                    NEW
                   </span>
-                </a>
-                <p
-                  class="css-1nrveqv"
-                >
-                  Short paragraph description of the article, outlining main story and focus.
-                </p>
-                <div
-                  class="css-1atazsr"
-                  data-testid="tag-and-flag"
-                >
-                  <a
-                    class="css-10d4t8c"
-                    href="/"
-                  >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-zhtub2"
-                      >
-                        Tag
-                      </span>
-                    </span>
-                  </a>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -74,7 +45,77 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1vzvkql"
+                    class="css-1kanhs9"
+                  >
+                    PROFILE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="css-4rb6a9"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-135o9vn"
+                    >
+                      Short title of the card describing the main content 5
+                    </span>
+                  </span>
+                </a>
+                <a
+                  class="css-4rb6a9"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <p
+                      class="css-lp9m77"
+                    >
+                      160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                    </p>
+                  </span>
+                </a>
+                <div
+                  class="css-1kfs2jd"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-18s7xts"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-qx2986"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -90,59 +131,30 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             class="css-13byt3y"
           >
             <div
-              class="css-1g5vzsh"
+              class="css-1ms6dj6"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
               >
-                <a
-                  class="css-10h0i3c"
-                  href="https://www.thetimes.co.uk"
+                <div
+                  class="article-info css-1fjzok1"
                 >
                   <span
-                    class="css-17x5lw"
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      Short title of the card describing the main content 2
-                    </span>
+                    EXCLUSIVE
                   </span>
-                </a>
-                <p
-                  class="css-1nrveqv"
-                >
-                  Short paragraph description of the article, outlining main story and focus.
-                </p>
-                <div
-                  class="css-1atazsr"
-                  data-testid="tag-and-flag"
-                >
-                  <a
-                    class="css-10d4t8c"
-                    href="/"
-                  >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-zhtub2"
-                      >
-                        Tag
-                      </span>
-                    </span>
-                  </a>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -151,7 +163,77 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1vzvkql"
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="css-4rb6a9"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-135o9vn"
+                    >
+                      Short title of the card describing the main content 6
+                    </span>
+                  </span>
+                </a>
+                <a
+                  class="css-4rb6a9"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <p
+                      class="css-lp9m77"
+                    >
+                      160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                    </p>
+                  </span>
+                </a>
+                <div
+                  class="css-1kfs2jd"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-18s7xts"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-qx2986"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -163,97 +245,77 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
       </div>
     </div>
     <div
-      class="css-1th2wme"
+      class="css-uxiwo2"
     >
       <div
         class="css-r51htr"
       >
-        <hr
-          aria-hidden="true"
-          class="css-13rcg9f"
-          data-testid="divider"
-        />
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-13byt3y"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
           >
             <div
               class="css-gre9re"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
-              class="css-1l8qede"
+              class="lead-image-container css-1pgtvq2"
             >
               <div
-                class="css-uxw9nr"
+                class="lead-article-image css-fe1bh6"
               >
-                <picture
-                  class="css-zp0elg"
+                <a
+                  class="article-image"
+                  href="https://www.thetimes.co.uk"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
-                  <img
-                    alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                  />
-                </picture>
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="Short title of the card describing the main content 7"
+                      class="lcpItem css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    />
+                  </picture>
+                </a>
               </div>
             </div>
             <div
               class="css-gpke1l"
             >
-              <a
-                class="css-10h0i3c"
-                href="https://www.thetimes.co.uk"
+              <div
+                class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-17x5lw"
+                  class="css-ciimpt"
                 >
-                  <span
-                    class="css-65zrxz"
-                  >
-                    Short title of the card describing the main content
-                  </span>
+                  NEW
                 </span>
-              </a>
-              <p
-                class="css-1nrveqv"
-              >
-                Short paragraph description of the article, outlining main story and focus.
-              </p>
-              <div
-                class="css-1atazsr"
-                data-testid="tag-and-flag"
-              >
-                <a
-                  class="css-10d4t8c"
-                  href="/"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-zhtub2"
-                    >
-                      Tag
-                    </span>
-                  </span>
-                </a>
                 <div
-                  class="css-lew009"
+                  class="css-p44zak"
                 >
                   <hr
                     aria-hidden="true"
@@ -262,7 +324,77 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1vzvkql"
+                  class="css-1kanhs9"
+                >
+                  REVIEW
+                </span>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+              </div>
+              <a
+                class="css-4rb6a9"
+                href="https://www.thetimes.co.uk"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content 7
+                  </span>
+                </span>
+              </a>
+              <a
+                class="css-4rb6a9"
+                href="https://www.thetimes.co.uk"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <p
+                    class="css-lp9m77"
+                  >
+                    160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                  </p>
+                </span>
+              </a>
+              <div
+                class="css-1kfs2jd"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-18s7xts"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-qx2986"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1selp7x"
                 >
                   4 min read
                 </span>
@@ -270,92 +402,72 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
             </div>
           </div>
         </div>
-        <hr
-          aria-hidden="true"
-          class="css-13rcg9f"
-          data-testid="divider"
-        />
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-13byt3y"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
           >
             <div
               class="css-gre9re"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
-              class="css-1l8qede"
+              class="lead-image-container css-1pgtvq2"
             >
               <div
-                class="css-uxw9nr"
+                class="lead-article-image css-fe1bh6"
               >
-                <picture
-                  class="css-zp0elg"
+                <a
+                  class="article-image"
+                  href="https://www.thetimes.co.uk"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
-                  <img
-                    alt="Short title of the card describing the main content 2"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                  />
-                </picture>
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="Short title of the card describing the main content 8"
+                      class="lcpItem css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    />
+                  </picture>
+                </a>
               </div>
             </div>
             <div
               class="css-gpke1l"
             >
-              <a
-                class="css-10h0i3c"
-                href="https://www.thetimes.co.uk"
+              <div
+                class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-17x5lw"
+                  class="css-ciimpt"
                 >
-                  <span
-                    class="css-65zrxz"
-                  >
-                    Short title of the card describing the main content 2
-                  </span>
+                  EXCLUSIVE
                 </span>
-              </a>
-              <p
-                class="css-1nrveqv"
-              >
-                Short paragraph description of the article, outlining main story and focus.
-              </p>
-              <div
-                class="css-1atazsr"
-                data-testid="tag-and-flag"
-              >
-                <a
-                  class="css-10d4t8c"
-                  href="/"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-zhtub2"
-                    >
-                      Tag
-                    </span>
-                  </span>
-                </a>
                 <div
-                  class="css-lew009"
+                  class="css-p44zak"
                 >
                   <hr
                     aria-hidden="true"
@@ -364,7 +476,77 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1vzvkql"
+                  class="css-1kanhs9"
+                >
+                  INTERVIEW
+                </span>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+              </div>
+              <a
+                class="css-4rb6a9"
+                href="https://www.thetimes.co.uk"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content 8
+                  </span>
+                </span>
+              </a>
+              <a
+                class="css-4rb6a9"
+                href="https://www.thetimes.co.uk"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <p
+                    class="css-lp9m77"
+                  >
+                    160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                  </p>
+                </span>
+              </a>
+              <div
+                class="css-1kfs2jd"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-18s7xts"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-qx2986"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1selp7x"
                 >
                   4 min read
                 </span>
@@ -381,13 +563,13 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
 exports[`Render ArticleStack renders with passed width 1`] = `
 <DocumentFragment>
   <div
-    class="css-y73puv"
+    class="css-1s57n01"
   >
     <div
-      class="css-1th2wme"
+      class="css-uxiwo2"
     >
       <div
-        class="css-1eh6fyx"
+        class="css-1szvsxp"
         style="margin-block: space000;"
       >
         <div
@@ -397,53 +579,24 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             class="css-13byt3y"
           >
             <div
-              class="css-1g5vzsh"
+              class="css-1ms6dj6"
             />
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
               >
-                <a
-                  class="css-10h0i3c"
-                  href="https://www.thetimes.co.uk"
+                <div
+                  class="article-info css-1fjzok1"
                 >
                   <span
-                    class="css-17x5lw"
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      Short title of the card describing the main content
-                    </span>
+                    NEW
                   </span>
-                </a>
-                <p
-                  class="css-1nrveqv"
-                >
-                  Short paragraph description of the article, outlining main story and focus.
-                </p>
-                <div
-                  class="css-1atazsr"
-                  data-testid="tag-and-flag"
-                >
-                  <a
-                    class="css-10d4t8c"
-                    href="/"
-                  >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-zhtub2"
-                      >
-                        Tag
-                      </span>
-                    </span>
-                  </a>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -452,7 +605,77 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1vzvkql"
+                    class="css-1kanhs9"
+                  >
+                    PROFILE
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="css-4rb6a9"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-135o9vn"
+                    >
+                      Short title of the card describing the main content 5
+                    </span>
+                  </span>
+                </a>
+                <a
+                  class="css-4rb6a9"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <p
+                      class="css-lp9m77"
+                    >
+                      160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                    </p>
+                  </span>
+                </a>
+                <div
+                  class="css-1kfs2jd"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-18s7xts"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-qx2986"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -468,59 +691,30 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             class="css-13byt3y"
           >
             <div
-              class="css-1g5vzsh"
+              class="css-1ms6dj6"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
             <div
-              class="css-6wqjuf"
+              class="css-1kb13lf"
             >
               <div
                 class="css-gpke1l"
               >
-                <a
-                  class="css-10h0i3c"
-                  href="https://www.thetimes.co.uk"
+                <div
+                  class="article-info css-1fjzok1"
                 >
                   <span
-                    class="css-17x5lw"
+                    class="css-ciimpt"
                   >
-                    <span
-                      class="css-65zrxz"
-                    >
-                      Short title of the card describing the main content 2
-                    </span>
+                    EXCLUSIVE
                   </span>
-                </a>
-                <p
-                  class="css-1nrveqv"
-                >
-                  Short paragraph description of the article, outlining main story and focus.
-                </p>
-                <div
-                  class="css-1atazsr"
-                  data-testid="tag-and-flag"
-                >
-                  <a
-                    class="css-10d4t8c"
-                    href="/"
-                  >
-                    <span
-                      class="css-17x5lw"
-                    >
-                      <span
-                        class="css-zhtub2"
-                      >
-                        Tag
-                      </span>
-                    </span>
-                  </a>
                   <div
-                    class="css-lew009"
+                    class="css-p44zak"
                   >
                     <hr
                       aria-hidden="true"
@@ -529,7 +723,77 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                     />
                   </div>
                   <span
-                    class="css-1vzvkql"
+                    class="css-1kanhs9"
+                  >
+                    REVIEW
+                  </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                </div>
+                <a
+                  class="css-4rb6a9"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-135o9vn"
+                    >
+                      Short title of the card describing the main content 6
+                    </span>
+                  </span>
+                </a>
+                <a
+                  class="css-4rb6a9"
+                  href="https://www.thetimes.co.uk"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <p
+                      class="css-lp9m77"
+                    >
+                      160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                    </p>
+                  </span>
+                </a>
+                <div
+                  class="css-1kfs2jd"
+                  data-testid="tag-and-flag"
+                >
+                  <a
+                    class="css-18s7xts"
+                    href="/"
+                  >
+                    <span
+                      class="css-17x5lw"
+                    >
+                      <span
+                        class="css-qx2986"
+                      >
+                        Tag
+                      </span>
+                    </span>
+                  </a>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
+                  <span
+                    class="css-1selp7x"
                   >
                     4 min read
                   </span>
@@ -541,97 +805,77 @@ exports[`Render ArticleStack renders with passed width 1`] = `
       </div>
     </div>
     <div
-      class="css-1th2wme"
+      class="css-uxiwo2"
     >
       <div
         class="css-r51htr"
       >
-        <hr
-          aria-hidden="true"
-          class="css-13rcg9f"
-          data-testid="divider"
-        />
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-13byt3y"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
           >
             <div
               class="css-gre9re"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
-              class="css-1l8qede"
+              class="lead-image-container css-1pgtvq2"
             >
               <div
-                class="css-uxw9nr"
+                class="lead-article-image css-fe1bh6"
               >
-                <picture
-                  class="css-zp0elg"
+                <a
+                  class="article-image"
+                  href="https://www.thetimes.co.uk"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
-                  <img
-                    alt="Short title of the card describing the main content"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                  />
-                </picture>
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="Short title of the card describing the main content 7"
+                      class="lcpItem css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    />
+                  </picture>
+                </a>
               </div>
             </div>
             <div
               class="css-gpke1l"
             >
-              <a
-                class="css-10h0i3c"
-                href="https://www.thetimes.co.uk"
+              <div
+                class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-17x5lw"
+                  class="css-ciimpt"
                 >
-                  <span
-                    class="css-65zrxz"
-                  >
-                    Short title of the card describing the main content
-                  </span>
+                  NEW
                 </span>
-              </a>
-              <p
-                class="css-1nrveqv"
-              >
-                Short paragraph description of the article, outlining main story and focus.
-              </p>
-              <div
-                class="css-1atazsr"
-                data-testid="tag-and-flag"
-              >
-                <a
-                  class="css-10d4t8c"
-                  href="/"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-zhtub2"
-                    >
-                      Tag
-                    </span>
-                  </span>
-                </a>
                 <div
-                  class="css-lew009"
+                  class="css-p44zak"
                 >
                   <hr
                     aria-hidden="true"
@@ -640,7 +884,77 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1vzvkql"
+                  class="css-1kanhs9"
+                >
+                  REVIEW
+                </span>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+              </div>
+              <a
+                class="css-4rb6a9"
+                href="https://www.thetimes.co.uk"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content 7
+                  </span>
+                </span>
+              </a>
+              <a
+                class="css-4rb6a9"
+                href="https://www.thetimes.co.uk"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <p
+                    class="css-lp9m77"
+                  >
+                    160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                  </p>
+                </span>
+              </a>
+              <div
+                class="css-1kfs2jd"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-18s7xts"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-qx2986"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1selp7x"
                 >
                   4 min read
                 </span>
@@ -648,92 +962,72 @@ exports[`Render ArticleStack renders with passed width 1`] = `
             </div>
           </div>
         </div>
-        <hr
-          aria-hidden="true"
-          class="css-13rcg9f"
-          data-testid="divider"
-        />
+        <div
+          class="css-11l110t"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-13rcg9f"
+            data-testid="divider"
+          />
+        </div>
         <div
           class="css-13byt3y"
         >
           <div
-            class="css-1g5vzsh"
+            class="css-1ms6dj6"
           >
             <div
               class="css-gre9re"
             >
               <hr
                 aria-hidden="true"
-                class="css-obfal1"
+                class="css-1ft1o8k"
                 data-testid="divider"
               />
             </div>
           </div>
           <div
-            class="css-6wqjuf"
+            class="css-1kb13lf"
           >
             <div
-              class="css-1l8qede"
+              class="lead-image-container css-1pgtvq2"
             >
               <div
-                class="css-uxw9nr"
+                class="lead-article-image css-fe1bh6"
               >
-                <picture
-                  class="css-zp0elg"
+                <a
+                  class="article-image"
+                  href="https://www.thetimes.co.uk"
                 >
-                  <div
-                    class="css-5pczz7"
-                  />
-                  <img
-                    alt="Short title of the card describing the main content 2"
-                    class="css-1qgqq71"
-                    src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-                  />
-                </picture>
+                  <picture
+                    class="css-zp0elg"
+                  >
+                    <div
+                      class="css-5pczz7"
+                    />
+                    <img
+                      alt="Short title of the card describing the main content 8"
+                      class="lcpItem css-1qgqq71"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    />
+                  </picture>
+                </a>
               </div>
             </div>
             <div
               class="css-gpke1l"
             >
-              <a
-                class="css-10h0i3c"
-                href="https://www.thetimes.co.uk"
+              <div
+                class="article-info css-1fjzok1"
               >
                 <span
-                  class="css-17x5lw"
+                  class="css-ciimpt"
                 >
-                  <span
-                    class="css-65zrxz"
-                  >
-                    Short title of the card describing the main content 2
-                  </span>
+                  EXCLUSIVE
                 </span>
-              </a>
-              <p
-                class="css-1nrveqv"
-              >
-                Short paragraph description of the article, outlining main story and focus.
-              </p>
-              <div
-                class="css-1atazsr"
-                data-testid="tag-and-flag"
-              >
-                <a
-                  class="css-10d4t8c"
-                  href="/"
-                >
-                  <span
-                    class="css-17x5lw"
-                  >
-                    <span
-                      class="css-zhtub2"
-                    >
-                      Tag
-                    </span>
-                  </span>
-                </a>
                 <div
-                  class="css-lew009"
+                  class="css-p44zak"
                 >
                   <hr
                     aria-hidden="true"
@@ -742,7 +1036,77 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   />
                 </div>
                 <span
-                  class="css-1vzvkql"
+                  class="css-1kanhs9"
+                >
+                  INTERVIEW
+                </span>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+              </div>
+              <a
+                class="css-4rb6a9"
+                href="https://www.thetimes.co.uk"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <span
+                    class="css-135o9vn"
+                  >
+                    Short title of the card describing the main content 8
+                  </span>
+                </span>
+              </a>
+              <a
+                class="css-4rb6a9"
+                href="https://www.thetimes.co.uk"
+              >
+                <span
+                  class="css-17x5lw"
+                >
+                  <p
+                    class="css-lp9m77"
+                  >
+                    160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid
+                  </p>
+                </span>
+              </a>
+              <div
+                class="css-1kfs2jd"
+                data-testid="tag-and-flag"
+              >
+                <a
+                  class="css-18s7xts"
+                  href="/"
+                >
+                  <span
+                    class="css-17x5lw"
+                  >
+                    <span
+                      class="css-qx2986"
+                    >
+                      Tag
+                    </span>
+                  </span>
+                </a>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-1selp7x"
                 >
                   4 min read
                 </span>

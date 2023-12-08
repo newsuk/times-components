@@ -9,7 +9,7 @@ exports[`<RecommendedFetch> should render headers in lowercase correctly 1`] = `
         RecommendedArticles
       </div>
       <div>
-        Today’s news
+        Read more
       </div>
     </div>
   </div>

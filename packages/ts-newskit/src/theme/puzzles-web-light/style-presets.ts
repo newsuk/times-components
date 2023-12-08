@@ -116,3 +116,92 @@ stylePresets.freeTrialShadowBtn = {
     color: '{{colors.inkContrast}}'
   }
 };
+
+stylePresets.HintBtn = {
+  base: {
+    color: '{{colors.interactiveLink030}}',
+    borderRadius: '{{borders.borderRadiusRounded010}}',
+    borderStyle: 'solid',
+    borderWidth: '{{borders.borderWidthDefault}}',
+    borderColor: '{{colors.interactiveLink020}}',
+    backgroundColor: '{{colors.transparent}}'
+  },
+  disabled: {
+    borderRadius: '{{borders.borderRadiusRounded010}}',
+    color: '{{colors.neutral060}}',
+    borderStyle: 'solid',
+    borderWidth: '{{borders.borderWidthDefault}}',
+    borderColor: '{{colors.neutral020}}',
+    backgroundColor: '{{colors.neutral020}}'
+  }
+};
+
+stylePresets.HowToPlay = {
+  base: {
+    color: '{{colors.interactiveLink010}}',
+    borderRadius: '{{borders.borderRadiusDefault}}',
+    borderStyle: 'solid',
+    borderWidth: '{{borders.borderWidth000}}',
+    backgroundColor: '{{colors.transparent}}'
+  }
+};
+
+stylePresets.modalHeaderCustom = {
+  base: {
+    borderStyle: 'none none solid none',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderColor: '{{colors.interface040}}',
+    color: '{{colors.inkBase}}'
+  }
+};
+stylePresets.overlayCustom = {
+  base: {
+    backgroundColor: '{{overlays.overlayTintBase020}}'
+  }
+};
+
+stylePresets.contactuslink = {
+  base: {
+    textDecoration: 'none',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderStyle: 'solid',
+    borderColor: '{{colors.interface040}}'
+  }
+};
+
+stylePresets.sidebarCard = {
+  base: {
+    borderStyle: 'solid none none none',
+    borderWidth: '{{borders.borderWidth030}}',
+    borderColor: '{{colors.inkBrand010}}'
+  }
+};
+
+stylePresets.transparentCard = {
+  base: {
+    backgroundColor: 'unset',
+    color: '{{colors.inkContrast}}'
+  },
+
+  hover: {
+    color: '{{colors.interactiveLink020}}'
+  }
+};
+
+stylePresets.cardTitleIcon = {
+  base: {
+    color: '{{colors.inkBrand010}}'
+  },
+
+  hover: {
+    color: '{{colors.interactiveLink020}}'
+  }
+};
+
+stylePresets.iconPreset = {
+  base: {
+    backgroundColor: '{{colors.interactiveSecondary020}}',
+    color: '{{colors.inkBrand010}}',
+    borderRadius: '{{borders.borderRadiusCircle}}'
+  }
+};

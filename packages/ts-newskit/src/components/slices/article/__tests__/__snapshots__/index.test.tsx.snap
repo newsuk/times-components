@@ -6,107 +6,27 @@ exports[`Render Article List Item items should render without margin 1`] = `
     class="css-niwyl0"
   >
     <div
-      class="css-1kwj960"
-    >
-      <picture
-        class="css-zp0elg"
-      >
-        <div
-          class="css-5pczz7"
-        />
-        <img
-          alt="This is ALT Text"
-          class="css-1qgqq71"
-          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-        />
-      </picture>
-    </div>
-    <div
-      class="css-diffbd"
-    >
-      <div
-        class="css-13byt3y"
-      >
-        <a
-          class="css-bxykrz"
-          href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
-          role="link"
-        >
-          <span
-            class="css-17x5lw"
-          >
-            <span
-              class="css-65zrxz"
-            >
-              Harry & Meghan's New Project?
-            </span>
-          </span>
-        </a>
-        <div
-          class="css-1atazsr"
-          data-testid="tag-and-flag"
-        >
-          <a
-            class="css-10d4t8c"
-            href="/"
-          >
-            <span
-              class="css-17x5lw"
-            >
-              <span
-                class="css-zhtub2"
-              >
-                Review
-              </span>
-            </span>
-          </a>
-          <div
-            class="css-lew009"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-15kf7hd"
-              data-testid="divider"
-            />
-          </div>
-          <span
-            class="css-1vzvkql"
-          >
-            4 min read
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Render Article List Item should render a snapshot 1`] = `
-<DocumentFragment>
-  <div
-    class="css-1nw1nne"
-  >
-    <div
-      class="css-1kwj960"
-    >
-      <picture
-        class="css-zp0elg"
-      >
-        <div
-          class="css-5pczz7"
-        />
-        <img
-          alt="This is ALT Text"
-          class="css-1qgqq71"
-          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173"
-        />
-      </picture>
-    </div>
-    <div
-      class="css-diffbd"
+      class="article-image css-121g6vu"
     >
       <a
-        class="css-u57k3c"
+        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      >
+        <picture
+          class="css-l4lngz"
+        >
+          <img
+            alt="This is ALT Text"
+            class="css-ssxt4f"
+            loading="lazy"
+          />
+        </picture>
+      </a>
+    </div>
+    <div
+      class="css-17cghxi"
+    >
+      <a
+        class="article-headline css-4rb6a9"
         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
         role="link"
       >
@@ -121,25 +41,25 @@ exports[`Render Article List Item should render a snapshot 1`] = `
         </span>
       </a>
       <div
-        class="css-1atazsr"
+        class="css-1kfs2jd"
         data-testid="tag-and-flag"
       >
         <a
-          class="css-10d4t8c"
+          class="css-18s7xts"
           href="/"
         >
           <span
             class="css-17x5lw"
           >
             <span
-              class="css-zhtub2"
+              class="css-qx2986"
             >
               Review
             </span>
           </span>
         </a>
         <div
-          class="css-lew009"
+          class="css-p44zak"
         >
           <hr
             aria-hidden="true"
@@ -148,7 +68,85 @@ exports[`Render Article List Item should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-1vzvkql"
+          class="css-1selp7x"
+        >
+          4 min read
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Render Article List Item should render a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1nw1nne"
+  >
+    <div
+      class="article-image css-qjtrfy"
+    >
+      <a
+        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+      >
+        <picture
+          class="css-l4lngz"
+        >
+          <img
+            alt="This is ALT Text"
+            class="css-ssxt4f"
+            loading="lazy"
+          />
+        </picture>
+      </a>
+    </div>
+    <div
+      class="css-17cghxi"
+    >
+      <a
+        class="article-headline css-4rb6a9"
+        href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+        role="link"
+      >
+        <span
+          class="css-17x5lw"
+        >
+          <span
+            class="css-65zrxz"
+          >
+            Harry & Meghan's New Project?
+          </span>
+        </span>
+      </a>
+      <div
+        class="css-1kfs2jd"
+        data-testid="tag-and-flag"
+      >
+        <a
+          class="css-18s7xts"
+          href="/"
+        >
+          <span
+            class="css-17x5lw"
+          >
+            <span
+              class="css-qx2986"
+            >
+              Review
+            </span>
+          </span>
+        </a>
+        <div
+          class="css-p44zak"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
+        </div>
+        <span
+          class="css-1selp7x"
         >
           4 min read
         </span>

@@ -3,47 +3,61 @@
 exports[`should render component to match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-19w1t19"
+    class="css-1wksyc6"
   >
     <div
-      class="css-1kwj960"
-    >
-      <picture
-        class="css-33c418"
-      >
-        <div
-          class="css-5pczz7"
-        />
-        <img
-          alt="Journalist name"
-          class="css-1t6p58q"
-          src="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
-          width="77px"
-        />
-      </picture>
-    </div>
-    <div
-      class="css-lq9usb"
+      class="css-id8srm"
     >
       <a
-        class="css-gull0f"
+        href="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+      >
+        <picture
+          class="css-1o3l48o"
+        >
+          <img
+            alt="Journalist name"
+            class="css-176aubw"
+            loading="lazy"
+            width="77px"
+          />
+        </picture>
+      </a>
+    </div>
+    <div
+      class="css-1yqtv4e"
+    >
+      <a
+        class="css-4rb6a9"
         href="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
       >
         <span
           class="css-17x5lw"
         >
           <span
-            class="css-65zrxz"
+            class="css-u8ri0n"
           >
             Journalist name
           </span>
         </span>
       </a>
-      <p
-        class="css-d8s6u6"
+      <a
+        class="css-j05cd8"
+        href="https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+        tabindex="0"
       >
-        Quote text
-      </p>
+        <span
+          class="css-17x5lw"
+        >
+          <span
+            class="css-cpjcl7"
+          >
+            Quote text
+          </span>
+        </span>
+      </a>
+      <div
+        class="css-sb8utn"
+      />
     </div>
   </div>
 </DocumentFragment>

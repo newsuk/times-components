@@ -63,7 +63,7 @@ exports[`1. a full article 1`] = `
     <script
       type="application/ld+json"
     >
-      {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"Some Section","keywords":"Section:Some Section"}
+      {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"Some Section","keywords":"Section:Some Section","articleId":"198c4b2f-ecec-4f34-be53-c89f83bc1b44","url":"https://url.io"}
     </script>
   </Helmet>
   <main>
@@ -133,15 +133,28 @@ exports[`1. a full article 1`] = `
         height={16}
         role="img"
         title="Share on Twitter"
-        viewBox="-354.2 -279.4 750 600"
+        viewBox="0 0 24 24"
         width={20}
+        xmlns="http://www.w3.org/2000/svg"
       >
         <title>
           Share on Twitter
         </title>
-        <path
-          d="ebf51b280a2c9ea0e632fdbf86606550"
-        />
+        <g
+          clipPath="url(#clip0_2702_211136)"
+        >
+          <path
+            d="e7781feea17d63d57f67e7eaa876efac"
+          />
+        </g>
+        <defs>
+          <clipPath>
+            <rect
+              height="24"
+              width="24"
+            />
+          </clipPath>
+        </defs>
       </svg>
     </a>
     <a
@@ -231,15 +244,28 @@ exports[`1. a full article 1`] = `
           height={10}
           role="img"
           title="Twitter Icon"
-          viewBox="-354.2 -279.4 750 600"
+          viewBox="0 0 24 24"
           width={11}
+          xmlns="http://www.w3.org/2000/svg"
         >
           <title>
             Twitter Icon
           </title>
-          <path
-            d="ebf51b280a2c9ea0e632fdbf86606550"
-          />
+          <g
+            clipPath="url(#clip0_2702_211136)"
+          >
+            <path
+              d="e7781feea17d63d57f67e7eaa876efac"
+            />
+          </g>
+          <defs>
+            <clipPath>
+              <rect
+                height="24"
+                width="24"
+              />
+            </clipPath>
+          </defs>
         </svg>
         <a
           href="https://twitter.com/@AName"
@@ -305,15 +331,28 @@ exports[`1. a full article 1`] = `
           height={16}
           role="img"
           title="Share on Twitter"
-          viewBox="-354.2 -279.4 750 600"
+          viewBox="0 0 24 24"
           width={20}
+          xmlns="http://www.w3.org/2000/svg"
         >
           <title>
             Share on Twitter
           </title>
-          <path
-            d="ebf51b280a2c9ea0e632fdbf86606550"
-          />
+          <g
+            clipPath="url(#clip0_2702_211136)"
+          >
+            <path
+              d="e7781feea17d63d57f67e7eaa876efac"
+            />
+          </g>
+          <defs>
+            <clipPath>
+              <rect
+                height="24"
+                width="24"
+              />
+            </clipPath>
+          </defs>
         </svg>
       </a>
       <a

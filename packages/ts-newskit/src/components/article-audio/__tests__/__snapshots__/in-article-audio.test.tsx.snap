@@ -3,7 +3,7 @@
 exports[`Audio player renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="css-og8l64"
+    class="article-audio-container opHide_articleAudio css-1i5p60e"
   >
     <section
       aria-label="Audio Player"
@@ -20,13 +20,13 @@ exports[`Audio player renders correctly 1`] = `
           aria-label="Play"
           aria-live="polite"
           aria-pressed="false"
-          class="css-7ycgmb"
-          data-testid="audio-player-play-pause-button"
+          class="css-1cktvs"
+          data-testid="audio-player-play-btn"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="css-mxa34f"
+            class="css-2gkv6s"
             fill="currentColor"
             viewBox="0 0 64 64"
             xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,64 @@ exports[`Audio player renders correctly 1`] = `
             Listen to article
           </p>
           <p
-            class="css-90ibmi"
+            class="article-audio-narrator css-90ibmi"
+          >
+            Narrated by James Marriott
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Audio player renders correctly when visible 1`] = `
+<DocumentFragment>
+  <div
+    class="article-audio-container opShow_articleAudio css-1i5p60e"
+  >
+    <section
+      aria-label="Audio Player"
+    >
+      <audio
+        data-testid="audio-element"
+        src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+      />
+      <div
+        class="css-qoq9ah"
+      >
+        <button
+          aria-busy="true"
+          aria-label="Play"
+          aria-live="polite"
+          aria-pressed="false"
+          class="css-1cktvs"
+          data-testid="audio-player-play-btn"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="css-2gkv6s"
+            fill="currentColor"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50%"
+              cy="50%"
+            />
+          </svg>
+        </button>
+        <div
+          class="css-1iuvgg2"
+        >
+          <p
+            class="css-1yaue50"
+          >
+            Listen to article
+          </p>
+          <p
+            class="article-audio-narrator css-90ibmi"
           >
             Narrated by James Marriott
           </p>

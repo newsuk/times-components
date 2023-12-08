@@ -23,6 +23,7 @@ import { ScrollingText } from './scrolltext';
 type StickyPlayerExpandedProps = {
   handleClickPlayPause: () => void;
   setIsExpanded: (value: boolean) => void;
+  isPlaying: boolean;
   narrator: string;
   headline: string;
 };
@@ -30,6 +31,7 @@ type StickyPlayerExpandedProps = {
 export const StickyPlayerExpanded: React.FC<StickyPlayerExpandedProps> = ({
   headline,
   narrator,
+  isPlaying,
   handleClickPlayPause,
   setIsExpanded
 }) => {
@@ -63,7 +65,12 @@ export const StickyPlayerExpanded: React.FC<StickyPlayerExpandedProps> = ({
             <AudioPlayerReplayButton />
           </ButtonContainer>
           <ButtonContainer marginInline="space010">
-            <AudioPlayerPlayPauseButton onClick={handleClickPlayPause} />
+            <AudioPlayerPlayPauseButton
+              onClick={handleClickPlayPause}
+              data-testid={
+                isPlaying ? 'audio-player-pause-btn' : 'audio-player-play-btn'
+              }
+            />
           </ButtonContainer>
           <ButtonContainer>
             <AudioPlayerForwardButton />

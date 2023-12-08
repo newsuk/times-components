@@ -1,6 +1,15 @@
 {
   "articles": [
     {
+      "hasVideo": false,
+      "contentType": "Profile",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "live",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -33,6 +42,7 @@
         ]
       },
       "headline": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
+      "id": "212",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -41,6 +51,15 @@
       "flag": "Flag1"
     },
     {
+      "hasVideo": false,
+      "contentType": "Review",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "Exclusive",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -73,6 +92,7 @@
         ]
       },
       "headline": "American owners pose threat to English pyramid",
+      "id": "2123",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "",
@@ -81,6 +101,15 @@
       "flag": ""
     },
     {
+      "hasVideo": false,
+      "contentType": "Interview",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "Breaking",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -113,6 +142,7 @@
         ]
       },
       "headline": "£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid",
+      "id": "21234",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -121,6 +151,15 @@
       "flag": ""
     },
     {
+      "hasVideo": false,
+      "contentType": "Q&A",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "Exclusive",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -153,6 +192,7 @@
         ]
       },
       "headline": "Blow for rebel clubs as court says Uefa can block Super League",
+      "id": "212345",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "",
@@ -161,6 +201,15 @@
       "flag": "Flag4"
     },
     {
+      "hasVideo": false,
+      "contentType": "Q&A",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "Breaking",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -192,7 +241,8 @@
           }
         ]
       },
-      "headline": "Blow for rebel clubs as court says Uefa can block Super League",
+      "headline": "Blow for rebel clubs as court says Uefa can block Super League 2",
+      "id": "2123456",
       "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
       "tag": {
         "label": "Tag",
@@ -201,20 +251,24 @@
       "flag": "Flag5"
     }
   ],
-
   "leadArticles": [
     {
-      "tagL1": {
-        "label": "",
-        "href": ""
-      },
+      "hasVideo": false,
+      "contentType": "Review",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "New",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
         "caption": "Sarcacens an inclusive club? They didnt look out for me",
         "crops": [
           {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c246bf4-fa83-11ed-9be0-622d8a105167.jpg?crop=1200%2C1500%2C0%2C0&resize=747",
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
             "ratio": "3:2"
           },
           {
@@ -240,7 +294,8 @@
         ]
       },
       "headline": "Short title of the card describing the main content",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+      "id": "21234567",
+      "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -250,10 +305,15 @@
       "listData": []
     },
     {
-      "tagL1": {
-        "label": "",
-        "href": ""
-      },
+      "hasVideo": false,
+      "contentType": "Interview",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "Exclusive",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -286,7 +346,8 @@
         ]
       },
       "headline": "Short title of the card describing the main content",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+      "id": "212345678",
+      "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -296,10 +357,15 @@
       "listData": []
     },
     {
-      "tagL1": {
-        "label": "",
-        "href": ""
-      },
+      "hasVideo": false,
+      "contentType": "Profile",
+      "label": "",
+      "expirableFlags": [
+        {
+          "type": "New",
+          "expiryTime": null
+        }
+      ],
       "images": {
         "alt": "",
         "credits": "Gareth Fuller/Press Association",
@@ -332,7 +398,8 @@
         ]
       },
       "headline": "Short title of the card describing the main content",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
+      "id": "2123456789",
+      "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
       "url": "https://www.thetimes.co.uk",
       "tag": {
         "label": "Tag",
@@ -340,59 +407,18 @@
       },
       "flag": "4 min read 3",
       "listData": []
-    },
-    {
-      "tagL1": {
-        "label": "",
-        "href": ""
-      },
-      "images": {
-        "alt": "",
-        "credits": "Gareth Fuller/Press Association",
-        "caption": "Sarcacens an inclusive club? They didnt look out for me",
-        "crops": [
-          {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c246bf4-fa83-11ed-9be0-622d8a105167.jpg?crop=1200%2C1500%2C0%2C0&resize=747",
-            "ratio": "3:2"
-          },
-          {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
-            "ratio": "16:9"
-          },
-          {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
-            "ratio": "1:1"
-          },
-          {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
-            "ratio": "2:3"
-          },
-          {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
-            "ratio": "4:5"
-          },
-          {
-            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
-            "ratio": "5:4"
-          }
-        ]
-      },
-      "headline": "Short title of the card describing the main content",
-      "shortSummary": "Short paragraph description of the article, outlining main story and focus.",
-      "url": "https://www.thetimes.co.uk",
-      "tag": {
-        "label": "Tag",
-        "href": "/"
-      },
-      "flag": "4 min read 4",
-      "listData": []
     }
   ],
   "leadArticle": {
-    "tagL1": {
-      "label": "",
-      "href": ""
-    },
+    "hasVideo": false,
+    "contentType": "Profile",
+    "label": "",
+    "expirableFlags": [
+      {
+        "type": "Exclusive",
+        "expiryTime": null
+      }
+    ],
     "images": {
       "alt": "",
       "credits": "Gareth Fuller/Press Association",
@@ -425,6 +451,8 @@
       ]
     },
     "headline": "Short title of the card describing the main content",
+    "id": "21234567892",
+    "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
     "url": "https://www.thetimes.co.uk",
     "tag": {
       "label": "Tag",

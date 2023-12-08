@@ -52,6 +52,15 @@ Any of these source files can be debugged directly.
 
 Follow these steps [here](https://github.com/newsuk/cps-content-render#integrating-with-times-components)
 
+## See your changes in Render with rnw.js files
+
+Besides linking the Times Components and Render repos together, you can view changes made to Times Components in Render through the rnw.js files.
+
+1. In Times Components, after you have made your changes, run `yarn bundle` in the package in which you were working. If you were working in the `ts-components` package you will need to run `yarn build` first and then `yarn bundle`.
+2. Running the command creates an rnw.js file in the root of the folder. Check the file to see if your changes have come through.
+3. Copy the contents of the rnw.js file and paste it into the related file in Render's `node_modules`. For example, if you bundled the rnw.js file in the `article-skeleton` package in Times Components, you would paste the contents into `node_modules/@times-components/article-skeleton/rnw.js`.
+4. Run render and you should see your changes.
+
 ## Debugging the tests
 
 Tests are currently using [jest](https://jestjs.io/) to run so if you want to debug any test follow these steps:

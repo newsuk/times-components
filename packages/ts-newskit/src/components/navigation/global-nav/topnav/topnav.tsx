@@ -17,16 +17,18 @@ import {
   TopNavHide,
   TopNavIcon
 } from '../styles';
-import NavSearch from '../search';
+import NavSearch from '../search/search';
 import { LoggedOutButtons } from './loggedOutButtons';
+import { MenuItemParent } from '../types';
 
 type TopNavProps = {
   isLoggedIn?: boolean;
   isSunday?: boolean;
   isHamburgerOpen: boolean;
   toggleHamburger: (isHamburgerOpen: boolean) => void;
-  mainMenu?: any;
-  accountMenu?: any;
+  mainMenu: MenuItemParent[];
+  accountMenu: MenuItemParent[];
+  clickHandler: (title: string) => void;
 };
 
 export const TopNav: React.FC<TopNavProps> = ({
@@ -35,7 +37,8 @@ export const TopNav: React.FC<TopNavProps> = ({
   isHamburgerOpen,
   toggleHamburger,
   isLoggedIn = false,
-  isSunday = false
+  isSunday = false,
+  clickHandler
 }) => {
   const [searchActive, setSearchActive] = useState<boolean>(false);
 
@@ -47,7 +50,11 @@ export const TopNav: React.FC<TopNavProps> = ({
   };
 
   const NavMasthead = (
-    <LinkInline href="/" overrides={{ stylePreset: 'menuLogo' }}>
+    <LinkInline
+      href="/"
+      overrides={{ stylePreset: 'menuLogo' }}
+      onClick={() => clickHandler('Masthead logo')}
+    >
       {isSunday ? (
         <NewsKitSundayTimesMasthead {...logoProps} />
       ) : (
@@ -55,6 +62,11 @@ export const TopNav: React.FC<TopNavProps> = ({
       )}
     </LinkInline>
   );
+
+  const handleClick = () => {
+    toggleHamburger(!isHamburgerOpen);
+    clickHandler(isHamburgerOpen ? 'Close Menu' : 'Open Menu');
+  };
 
   return (
     <>
@@ -74,7 +86,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               stylePreset: 'buttonTopNav'
             }}
             aria-label={isHamburgerOpen ? 'Close Menu' : 'Open Menu'}
-            onClick={() => toggleHamburger(!isHamburgerOpen)}
+            onClick={handleClick}
             aria-controls="hamburgerMenu"
             aria-expanded={isHamburgerOpen}
           >
@@ -103,7 +115,7 @@ export const TopNav: React.FC<TopNavProps> = ({
                 overrides={{ spaceInline: 'space000' }}
                 aria-label="Main menu"
               >
-                {createMenu(mainMenu)}
+                {createMenu(mainMenu, clickHandler)}
               </Menu>
             </Visible>
           </TopNavHide>
@@ -112,11 +124,17 @@ export const TopNav: React.FC<TopNavProps> = ({
           </MastheadMob>
         </Stack>
         <Visible md lg xl>
-          {createAccountMenu(isLoggedIn, accountMenu)}
+          {createAccountMenu(isLoggedIn, accountMenu, clickHandler)}
         </Visible>
       </TopNavContainer>
       <ScrollMenuContainer xs sm>
-        {!isLoggedIn && <LoggedOutButtons loginUrl={'/'} subscribeUrl={'/'} />}
+        {!isLoggedIn && (
+          <LoggedOutButtons
+            loginUrl={'/'}
+            subscribeUrl={'/'}
+            clickHandler={clickHandler}
+          />
+        )}
         <Scroll overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}>
           <Stack flow="horizontal-top">
             <ScrollMenu
@@ -127,7 +145,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               }}
               aria-label="Main menu"
             >
-              {createMenu(mainMenu)}
+              {createMenu(mainMenu, clickHandler)}
             </ScrollMenu>
           </Stack>
         </Scroll>

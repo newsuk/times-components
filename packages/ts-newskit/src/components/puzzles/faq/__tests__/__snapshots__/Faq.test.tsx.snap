@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Faq should render Faq 1`] = `
+<DocumentFragment>
+  <div
+    class="css-7ayqs0"
+  >
+    <h2
+      class="css-1sbojwb"
+    >
+      All your questions answered
+    </h2>
+    <div
+      class="css-1tv526w"
+    >
+      <div
+        class="css-1oteowz"
+      >
+        <h3
+          class="css-18mb4bh"
+        >
+          <button
+            aria-controls="nk-1-content"
+            aria-expanded="false"
+            class="css-1cd27cb"
+            data-testid="accordion-control"
+            id="nk-1-control"
+          >
+            <div
+              class="css-1gwez8i"
+            >
+              What does a Puzzles subscription include?
+            </div>
+            <div
+              class="css-1cwczap"
+            >
+              <svg
+                aria-hidden="true"
+                class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </svg>
+            </div>
+          </button>
+        </h3>
+        <div
+          class="nk-accordion-exit-done css-84bues"
+          data-testid="panel-transition-container"
+          style="max-height: 0px;"
+        >
+          <div
+            aria-labelledby="nk-1-control"
+            class="css-wriz82"
+            data-testid="accordion-content"
+            id="nk-1-content"
+            role="region"
+          >
+            A Puzzles subscription gives you unlimited access to Times Puzzles. It also gives you access to 30 articles per calendar month on thetimes.co.uk website.
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-1oteowz"
+      >
+        <h3
+          class="css-18mb4bh"
+        >
+          <button
+            aria-controls="nk-2-content"
+            aria-expanded="false"
+            class="css-1cd27cb"
+            data-testid="accordion-control"
+            id="nk-2-control"
+          >
+            <div
+              class="css-1gwez8i"
+            >
+              When do my 30 articles renew?
+            </div>
+            <div
+              class="css-1cwczap"
+            >
+              <svg
+                aria-hidden="true"
+                class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </svg>
+            </div>
+          </button>
+        </h3>
+        <div
+          class="nk-accordion-exit-done css-84bues"
+          data-testid="panel-transition-container"
+          style="max-height: 0px;"
+        >
+          <div
+            aria-labelledby="nk-2-control"
+            class="css-wriz82"
+            data-testid="accordion-content"
+            id="nk-2-content"
+            role="region"
+          >
+            Your 30 articles will renew on the 1st of each calendar month.
+          </div>
+        </div>
+      </div>
+      <div
+        class="css-1oteowz"
+      >
+        <h3
+          class="css-18mb4bh"
+        >
+          <button
+            aria-controls="nk-3-content"
+            aria-expanded="false"
+            class="css-1cd27cb"
+            data-testid="accordion-control"
+            id="nk-3-control"
+          >
+            <div
+              class="css-1gwez8i"
+            >
+              How do I upgrade my subscription?
+            </div>
+            <div
+              class="css-1cwczap"
+            >
+              <svg
+                aria-hidden="true"
+                class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                />
+              </svg>
+            </div>
+          </button>
+        </h3>
+        <div
+          class="nk-accordion-exit-done css-84bues"
+          data-testid="panel-transition-container"
+          style="max-height: 0px;"
+        >
+          <div
+            aria-labelledby="nk-3-control"
+            class="css-wriz82"
+            data-testid="accordion-content"
+            id="nk-3-content"
+            role="region"
+          >
+            You can upgrade to any of our digital subscriptions at any time by calling Customer Services on 0800 068 4965. Call us Monday – Friday 8am to 7pm or at the weekends 8am to 4pm. 
+ 
+ You won’t be charged for your new subscription until your next billing date. You will continue to be billed on the same date each month as your original billing date.
+          </div>
+        </div>
+      </div>
+    </div>
+    <a
+      class="css-1ir023x"
+      href="/subscribe/faqs/"
+    >
+      <span
+        class="css-17x5lw"
+      >
+        <span
+          class="css-1wc2zh5"
+        >
+          See All FAQs
+        </span>
+      </span>
+    </a>
+  </div>
+</DocumentFragment>
+`;

@@ -3,6 +3,87 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.21.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.2...@times-components/tracking@2.21.3) (2023-10-19)
+
+
+### Bug Fixes
+
+* **TMPZ-192:** Toggle dynamic height on FAQ component ([#3603](https://github.com/newsuk/times-components/issues/3603)) ([095d074](https://github.com/newsuk/times-components/commit/095d0747dc5dac8bb183ad5b00595898c7f435a2))
+
+
+
+
+
+## [2.21.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.1...@times-components/tracking@2.21.2) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.21.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.21.0...@times-components/tracking@2.21.1) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+# [2.21.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.6...@times-components/tracking@2.21.0) (2023-08-18)
+
+
+### Features
+
+* **TMRX-1268:** update article audio to toggle by class ([#3496](https://github.com/newsuk/times-components/issues/3496)) ([eb2c76f](https://github.com/newsuk/times-components/commit/eb2c76f2d2025a33f09a079042947bdae496413c))
+
+
+
+
+
+## [2.20.6](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.5...@times-components/tracking@2.20.6) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.20.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.4...@times-components/tracking@2.20.5) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.20.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.3...@times-components/tracking@2.20.4) (2023-08-11)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** remove script and align versions ([#3486](https://github.com/newsuk/times-components/issues/3486)) ([dec0168](https://github.com/newsuk/times-components/commit/dec016815d3c34d54c1a20d35d3b7bf2e2e5e965))
+
+
+
+
+
+## [2.20.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.2...@times-components/tracking@2.20.3) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.20.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.1...@times-components/tracking@2.20.2) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
 ## [2.20.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.20.0...@times-components/tracking@2.20.1) (2023-07-25)
 
 

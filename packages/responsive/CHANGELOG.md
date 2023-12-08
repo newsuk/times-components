@@ -3,6 +3,87 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.17.0...@times-components/responsive@0.17.1) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.16.2...@times-components/responsive@0.17.0) (2023-10-18)
+
+
+### Features
+
+* **TMRX-1585:** Resize images on new slices ([#3599](https://github.com/newsuk/times-components/issues/3599)) ([2c728bb](https://github.com/newsuk/times-components/commit/2c728bb32a5e3f76727a41846e19f16e28b10428))
+
+
+
+
+
+## [0.16.2](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.16.1...@times-components/responsive@0.16.2) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.16.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.16.0...@times-components/responsive@0.16.1) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.15.2...@times-components/responsive@0.16.0) (2023-08-17)
+
+
+### Features
+
+* **TMRX-1400:** Implement category labels flags above the headline ([#3495](https://github.com/newsuk/times-components/issues/3495)) ([506b900](https://github.com/newsuk/times-components/commit/506b900d6c592c3d701078cfe0c58d2ea8a18a72))
+
+
+
+
+
+## [0.15.2](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.15.1...@times-components/responsive@0.15.2) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.15.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.15.0...@times-components/responsive@0.15.1) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+# [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.14.29...@times-components/responsive@0.15.0) (2023-08-11)
+
+
+### Features
+
+* **TMRX-1385:** Make Secondary Nav Stick under Global Nav ([#3479](https://github.com/newsuk/times-components/issues/3479)) ([410eae7](https://github.com/newsuk/times-components/commit/410eae794efb0065fa69d4e62556df68fbc629da))
+
+
+
+
+
+## [0.14.29](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.14.28...@times-components/responsive@0.14.29) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
 ## [0.14.28](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.14.27...@times-components/responsive@0.14.28) (2023-07-25)
 
 **Note:** Version bump only for package @times-components/responsive

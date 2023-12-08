@@ -4,16 +4,19 @@ export type SecondaryMenuItem = {
   slug: string;
 };
 
-export type MainMenuProp = {
-  hasMoreItems: boolean;
+export type ResponsiveSecondaryMenuItem = SecondaryMenuItem & {
+  md?: boolean;
+  lg?: boolean;
+  xl?: boolean;
+};
+
+export type SecondaryNavContainerProp = {
+  topDesktop: number | undefined;
+  topMobile: number | undefined;
 };
 
 export type BreakPointProp = {
   breakpointKey: string;
-};
-
-export type MoreMenuItemsProp = {
-  moreMenuItemsLength: number;
 };
 
 export type SecondaryMenuOptions = {
@@ -21,4 +24,8 @@ export type SecondaryMenuOptions = {
   handleSelect: (value: string) => void;
   isExpanded: boolean;
   setIsExpanded: (value: boolean) => void;
+};
+
+export type NavItemMobileContainerProp = {
+  $height: string;
 };

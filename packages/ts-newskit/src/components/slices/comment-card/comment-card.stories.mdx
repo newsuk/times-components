@@ -2,6 +2,7 @@ import { Meta, Story, Props } from '@storybook/addon-docs'
 import { CommentCard } from "./index";
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../../theme';
+import { action } from '@storybook/addon-actions';
 
 <Meta
   title="Newskit Components/Slices/CommentCard"
@@ -58,14 +59,15 @@ This takes in a series of props, as below, to display journalists details, the c
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const CommentCardStory = ({ images, headline, byline, href }) => (
+export const CommentCardStory = ({ article, clickHandler }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <CommentCard {...{ images, headline, byline, href }} />
+    <CommentCard article={article} clickHandler={clickHandler}/>
   </NewsKitProvider>
 );
 
 <Story name="CommentCard" args={{
-  "images": {
+  article: {
+"images": {
     "alt": "",
     "caption": "Caption",
     "crops": [
@@ -96,9 +98,12 @@ export const CommentCardStory = ({ images, headline, byline, href }) => (
     ]
   },
   headline: 'Now is Willis’s chance to show he’s got more to offer than Curry',
+  id: '1234',
   byline: 'Deborah Haynes',
-  href: '/',
+  url: undefined,
   flag: '3 mins ago',
+  },
+  clickHandler: action("ClickHandler")
 }}>
   {CommentCardStory.bind({})}
 </Story>

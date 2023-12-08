@@ -3,6 +3,102 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.16.14](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.13...@times-components/article-image@7.16.14) (2023-10-19)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.16.13](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.12...@times-components/article-image@7.16.13) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.16.12](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.11...@times-components/article-image@7.16.12) (2023-10-18)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.16.11](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.10...@times-components/article-image@7.16.11) (2023-10-17)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.16.10](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.9...@times-components/article-image@7.16.10) (2023-08-18)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.16.9](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.8...@times-components/article-image@7.16.9) (2023-08-17)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.16.8](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.7...@times-components/article-image@7.16.8) (2023-08-16)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.16.7](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.6...@times-components/article-image@7.16.7) (2023-08-15)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.16.6](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.5...@times-components/article-image@7.16.6) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.16.5](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.4...@times-components/article-image@7.16.5) (2023-08-11)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.16.4](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.3...@times-components/article-image@7.16.4) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.16.3](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.2...@times-components/article-image@7.16.3) (2023-08-10)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
 ## [7.16.2](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.16.1...@times-components/article-image@7.16.2) (2023-07-25)
 
 **Note:** Version bump only for package @times-components/article-image

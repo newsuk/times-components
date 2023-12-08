@@ -22,15 +22,15 @@ The `CardsContainer` component is used to display Puzzle cards using the NewsKit
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const CardsContainerStory = ({cards, title, isScrollable, seeAllLink, isImageCropped}) => (
+export const CardsContainerStory = ({cards, title, isScrollable, seeAllLink, isImageCropped, isDashHidden}) => (
   <NewsKitProvider theme={PuzzlesWebLightTheme}>
     <ContentWrapper marginInline='auto' paddingBlock='space020' paddingInline='space020'>
-      <CardsContainer cards={cards} title={title} isScrollable={isScrollable} seeAllLink={seeAllLink} isImageCropped={isImageCropped}/>
+      <CardsContainer cards={cards} title={title} isScrollable={isScrollable} seeAllLink={seeAllLink} isImageCropped={isImageCropped} isDashHidden={isDashHidden}/>
     </ContentWrapper>
   </NewsKitProvider>
 );
 
-<Story name="Cards Container" args={{cards: Array(4).fill(puzzleGame), title: 'Latest Crosswords', isScrollable: false, seeAllLink: 'https://www.newskit.co.uk/'}}
+<Story name="Cards Container" args={{cards: Array(4).fill(puzzleGame), title: 'Latest Crosswords', isScrollable: false, seeAllLink: 'https://www.newskit.co.uk/', isDashHidden: false}}
 argTypes={{
   cards: {
     control: 'select',
@@ -60,7 +60,11 @@ argTypes={{
   isImageCropped: {
     control: 'boolean',
     name: 'Is Image Cropped'
-  }
+  },
+    isDashHidden: {
+    control: 'boolean',
+    name: 'Is Dash Hidden'
+  }  
 }}
 >
   {CardsContainerStory.bind({})}

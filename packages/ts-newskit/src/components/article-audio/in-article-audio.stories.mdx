@@ -37,18 +37,19 @@ An example of the `data` structure can be found in the 'Controls' section on the
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const InArticleAudioStory = ({ src, readyToPlayText, playingText, narrator, headline, feedback }) => (
+export const InArticleAudioStory = ({ src, readyToPlayText, playingText, narrator, headline, feedback, showAudioPlayer }) => (
   <TCThemeProvider theme={TimesWebLightTheme}>
-    <InArticleAudio {...{ src, readyToPlayText, playingText, narrator, headline, feedback }} />
+    <InArticleAudio {...{ src, readyToPlayText, playingText, narrator, headline, feedback, showAudioPlayer }} />
   </TCThemeProvider>
 );
 
 <Story name="InArticleAudio" args={{ 
-  src: "https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3",
+  src: "https://www.thetimes.co.uk/d/optimizely/manveen-business-column-read.mp3",
   readyToPlayText: 'Listen to article',
   playingText: 'Playing',
   narrator: 'James Marriott',
   headline: 'Article headline',
+  showAudioPlayer: true,
   feedback: {
     requestFeedback: true,
     feedbackMessage: "Want to listen to more articles? Give your feedback below or email",

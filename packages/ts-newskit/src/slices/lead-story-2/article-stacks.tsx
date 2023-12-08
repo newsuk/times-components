@@ -5,7 +5,8 @@ import {
   GridLayout,
   Stack,
   Visible,
-  BreakpointKeys
+  Hidden,
+  MQ
 } from 'newskit';
 import {
   LeadArticle,
@@ -14,31 +15,41 @@ import {
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { RelativeBlockItem } from '../shared-styles';
 import { clearCreditsAndCaption } from '../../utils/clear-credits-and-caption';
+import { ClickHandlerType } from '../types';
+
+interface ArticleStackProps {
+  verticalArticles: LeadArticleProps[];
+  horizontalArticles: LeadArticleProps[];
+  horizontalArticleContentWidth?: MQ<string> | string;
+  clickHandler: ClickHandlerType;
+}
 
 export const ArticleStack = ({
   verticalArticles,
-  breakpoint,
   horizontalArticles,
-  horizontalArticleContentWidth
-}: {
-  verticalArticles: LeadArticleProps[];
-  breakpoint: BreakpointKeys;
-  horizontalArticles: LeadArticleProps[];
-  horizontalArticleContentWidth?: string;
-}) => {
+  horizontalArticleContentWidth,
+  clickHandler
+}: ArticleStackProps) => {
   const modifiedHorizontalArticles = horizontalArticles.map(item => ({
     ...clearCreditsAndCaption(item),
     imageTop: true,
-    headlineTypographyPreset: 'editorialHeadline020',
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline020'
+    },
     hasTopBorder: false
   }));
 
   const modifiedVerticalArticles = verticalArticles.map(item => ({
     ...item,
-    headlineTypographyPreset: 'editorialHeadline020',
+    headlineTypographyPreset: {
+      xs: 'editorialHeadline030',
+      md: 'editorialHeadline020'
+    },
     hasTopBorder: false,
     hideImage: true
   }));
+
   const articleStackHorizontal = (
     <GridLayout
       columns={{ md: '1px 1fr 1px 1fr' }}
@@ -47,22 +58,27 @@ export const ArticleStack = ({
     >
       {modifiedHorizontalArticles.map(
         (article: LeadArticleProps, articleIndex, articleArr) => {
-          const articleBorder = breakpoint !== 'xs' &&
-            breakpoint !== 'sm' &&
-            articleIndex < articleArr.length - 1 && (
+          const articleBorder = articleIndex < articleArr.length - 1 && (
+            <Hidden xs sm>
               <Divider
                 overrides={{
                   stylePreset: 'lightDivider'
                 }}
                 vertical
               />
-            );
+            </Hidden>
+          );
 
           return (
             <React.Fragment key={article.headline}>
               {articleBorder}
               <Block>
-                <FullWidthBlock>
+                <FullWidthBlock
+                  paddingInline={{
+                    xs: 'space045',
+                    md: 'space000'
+                  }}
+                >
                   <Visible xs sm>
                     <Divider
                       overrides={{
@@ -72,7 +88,7 @@ export const ArticleStack = ({
                     />
                   </Visible>
                 </FullWidthBlock>
-                <LeadArticle {...article} />
+                <LeadArticle article={article} clickHandler={clickHandler} />
               </Block>
               {articleBorder}
             </React.Fragment>
@@ -84,7 +100,7 @@ export const ArticleStack = ({
 
   const articleGridVertical = (
     <GridLayout
-      columns={{ md: `${horizontalArticleContentWidth || '1fr'}` }}
+      columns={horizontalArticleContentWidth || '1fr'}
       columnGap={{ md: 'space060' }}
       style={{ marginBlock: 'space000' }}
     >
@@ -101,8 +117,15 @@ export const ArticleStack = ({
           return (
             <RelativeBlockItem key={article.headline}>
               <Block>
-                <FullWidthBlock>{articleBorder}</FullWidthBlock>
-                <LeadArticle {...article} />
+                <FullWidthBlock
+                  paddingInline={{
+                    xs: 'space045',
+                    md: 'space000'
+                  }}
+                >
+                  {articleBorder}
+                </FullWidthBlock>
+                <LeadArticle article={article} clickHandler={clickHandler} />
               </Block>
             </RelativeBlockItem>
           );
@@ -114,14 +137,8 @@ export const ArticleStack = ({
   return (
     <Stack
       stackDistribution="flex-start"
-      flow={
-        breakpoint !== 'xs' && breakpoint !== 'sm'
-          ? 'horizontal-top'
-          : 'vertical-left'
-      }
-      spaceInline={
-        breakpoint === 'xs' || breakpoint === 'sm' ? 'space000' : 'space040'
-      }
+      flow={{ xs: 'vertical-left', md: 'horizontal-top' }}
+      spaceInline={{ xs: 'space000', md: 'space040' }}
     >
       {articleGridVertical}
       {articleStackHorizontal}

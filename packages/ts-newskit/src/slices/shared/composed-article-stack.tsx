@@ -6,26 +6,33 @@ import {
   FullWidthBlock,
   FullWidthHidden
 } from '../../components/slices/shared-styles';
+import { ClickHandlerType, StackArticleOptions } from '../types';
 
 export interface LeadStory1Props {
   articles: ArticleProps[];
   breakpoint: BreakpointKeys;
+  clickHandler: ClickHandlerType;
 }
 
 export const ComposedArticleStack = ({
-  breakpoint,
-  articles
-}: LeadStory1Props) => {
+  articles,
+  clickHandler,
+  articleOptions
+}: Omit<LeadStory1Props, 'breakpoint'> & {
+  articleOptions?: StackArticleOptions;
+}) => {
   const firstThreeArticles = articles.slice(0, 3);
   const secondTwoArticles = articles.slice(3);
-  const screenXsAndSm = breakpoint === 'xs' || breakpoint === 'sm';
-  const screenMd = breakpoint === 'md';
-  const articlesArray = screenMd ? firstThreeArticles : articles;
 
   return (
     <>
       <FullWidthHidden lg xl>
-        <FullWidthBlock>
+        <FullWidthBlock
+          paddingInlineStart={{
+            xs: 'space045',
+            md: 'space000'
+          }}
+        >
           <Divider
             overrides={{
               marginBlockEnd: 'space040',
@@ -34,23 +41,34 @@ export const ComposedArticleStack = ({
           />
         </FullWidthBlock>
       </FullWidthHidden>
-      <ArticleStackLarge articles={articlesArray} breakpoint={breakpoint} />
+      <Hidden md>
+        <ArticleStackLarge
+          articles={articles}
+          clickHandler={clickHandler}
+          articleOptions={articleOptions}
+        />
+      </Hidden>
       <Visible md>
-        <Hidden xs sm>
-          <Divider
-            overrides={{
-              stylePreset: 'dashedDivider',
-              marginBlock: 'space040'
-            }}
-          />
-        </Hidden>
-        <Block marginBlockEnd={{ md: 'space040' }}>
+        <ArticleStackLarge
+          articles={firstThreeArticles}
+          clickHandler={clickHandler}
+          articleOptions={articleOptions}
+        />
+      </Visible>
+      <Visible md>
+        <Divider
+          overrides={{
+            stylePreset: 'dashedDivider',
+            marginBlock: 'space040'
+          }}
+        />
+        <Block
+          marginBlockEnd={{ md: 'space040' }}
+          className="bottom-article-stack"
+        >
           <ArticleStackSmall
             articles={secondTwoArticles}
-            isFullWidth={screenXsAndSm}
-            hideImage={screenMd}
-            hasTopBorder={false}
-            breakpoint={breakpoint}
+            clickHandler={clickHandler}
           />
         </Block>
       </Visible>

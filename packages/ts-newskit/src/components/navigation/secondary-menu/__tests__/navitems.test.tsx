@@ -12,7 +12,8 @@ const options = {
   isSelected: 'true'
 };
 
-const hasMenuItem = 3;
+const mockClickHandler = jest.fn();
+
 describe('Navitems Desktop', () => {
   afterEach(() => {
     jest.clearAllMocks();
@@ -24,7 +25,7 @@ describe('Navitems Desktop', () => {
       <NavItems
         data={mainMenuItems}
         options={options}
-        hasMenuItem={hasMenuItem}
+        clickHandler={mockClickHandler}
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -34,7 +35,7 @@ describe('Navitems Desktop', () => {
       <NavItems
         data={mainMenuItems}
         options={options}
-        hasMenuItem={hasMenuItem}
+        clickHandler={mockClickHandler}
       />
     );
     const title = getByText('Home');
@@ -45,7 +46,7 @@ describe('Navitems Desktop', () => {
       <NavItems
         data={mainMenuItems}
         options={options}
-        hasMenuItem={hasMenuItem}
+        clickHandler={mockClickHandler}
       />
     );
     const title = getAllByTestId('buttonLink')[0];
@@ -57,7 +58,7 @@ describe('Navitems Desktop', () => {
       <NavItems
         data={mainMenuItems}
         options={options}
-        hasMenuItem={hasMenuItem}
+        clickHandler={mockClickHandler}
       />
     );
     const title = getAllByTestId('buttonLink')[0];

@@ -7,21 +7,21 @@ exports[`TagAndFlag should render a snapshot 1`] = `
     data-testid="tag-and-flag"
   >
     <a
-      class="css-10d4t8c"
+      class="css-18s7xts"
       href="/"
     >
       <span
         class="css-17x5lw"
       >
         <span
-          class="css-zhtub2"
+          class="css-qx2986"
         >
           Tag
         </span>
       </span>
     </a>
     <div
-      class="css-lew009"
+      class="css-p44zak"
     >
       <hr
         aria-hidden="true"
@@ -30,7 +30,7 @@ exports[`TagAndFlag should render a snapshot 1`] = `
       />
     </div>
     <span
-      class="css-1vzvkql"
+      class="css-1selp7x"
     >
       flag
     </span>

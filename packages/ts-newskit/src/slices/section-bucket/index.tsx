@@ -1,28 +1,44 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { ArticleProps } from '../../components/slices/article';
 import { ArticleStack } from './article-stacks';
-import {
-  SliceHeader,
-  SliceHeaderProps
-} from '../../components/slices/slice-header';
-import { Divider, useBreakpointKey, Scroll, BreakpointKeys } from 'newskit';
+import { SliceHeader } from '../../components/slices/slice-header';
+import { Divider, Scroll, FlagSize, Visible } from 'newskit';
 import { CustomGridLayout } from '../shared/layouts';
 import { StyledBlock } from './styles';
 import { BlockItem } from '../shared-styles';
+import { ClickHandlerType } from '../types';
 
 export interface SectionBucketProps {
-  articleStackOne: ArticleStackProps;
-  articleStackTwo: ArticleStackProps;
-  articleStackThree: ArticleStackProps;
-  articleStackFour: ArticleStackProps;
+  articleStackOne: ArticleStackBlockProps;
+  articleStackTwo: ArticleStackBlockProps;
+  articleStackThree: ArticleStackBlockProps;
+  articleStackFour: ArticleStackBlockProps;
+  clickHandler: ClickHandlerType;
+  sliceHeaderClickHandler: (title: string) => void;
 }
 
-type ArticleStackProps = {
-  articles: ArticleProps[];
-  section: SliceHeaderProps;
+type SectionBucketSliceHeaderProps = {
+  title: string;
+  href?: string;
+  titleTypographyPreset?: string;
+  iconArrowSize?: string;
+  iconSize?: FlagSize;
+  padding?: string;
 };
 
-const ArticleStackBlock = ({ articles, section }: ArticleStackProps) => (
+type ArticleStackBlockProps = {
+  articles: ArticleProps[];
+  section: SectionBucketSliceHeaderProps;
+  clickHandler: ClickHandlerType;
+  sliceHeaderClickHandler: (title: string) => void;
+};
+
+const ArticleStackBlock = ({
+  articles,
+  section,
+  clickHandler,
+  sliceHeaderClickHandler
+}: ArticleStackBlockProps) => (
   <>
     <StyledBlock data-testid="article-block">
       <SliceHeader
@@ -31,8 +47,9 @@ const ArticleStackBlock = ({ articles, section }: ArticleStackProps) => (
         iconArrowSize="iconSize010"
         iconSize="small"
         padding="space040"
+        sliceHeaderClickHandler={sliceHeaderClickHandler}
       />
-      <ArticleStack articles={articles} />
+      <ArticleStack articles={articles} clickHandler={clickHandler} />
     </StyledBlock>
     <Divider overrides={{ stylePreset: 'lightDivider' }} vertical />
   </>
@@ -42,18 +59,10 @@ export const SectionBucket = ({
   articleStackOne,
   articleStackTwo,
   articleStackThree,
-  articleStackFour
+  articleStackFour,
+  clickHandler,
+  sliceHeaderClickHandler
 }: SectionBucketProps) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
-  const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
-    },
-    [breakpointKey]
-  );
-  const isMobile = currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
-
   const articleStacksArray = [
     articleStackOne,
     articleStackTwo,
@@ -64,28 +73,42 @@ export const SectionBucket = ({
   const ArticleStackBlocks = (
     <CustomGridLayout>
       {articleStacksArray.map((stack, index) => (
-        <ArticleStackBlock key={index} {...stack} />
+        <ArticleStackBlock
+          key={index}
+          {...stack}
+          clickHandler={clickHandler}
+          sliceHeaderClickHandler={sliceHeaderClickHandler}
+        />
       ))}
     </CustomGridLayout>
   );
 
-  return isMobile ? (
-    <Scroll
-      overrides={{ overlays: { stylePreset: 'transparentBackground' } }}
-      tabIndex={undefined}
-    >
-      {ArticleStackBlocks}
-    </Scroll>
-  ) : (
-    <BlockItem
-      $width={{
-        xs: '100%',
-        md: '720px',
-        lg: '976px',
-        xl: '1276px'
-      }}
-    >
-      {ArticleStackBlocks}
-    </BlockItem>
+  return (
+    <>
+      <Visible xs sm>
+        <Scroll
+          overrides={{
+            overlays: { stylePreset: 'transparentBackground' },
+            marginBlockEnd: 'space060'
+          }}
+          tabIndex={undefined}
+        >
+          {ArticleStackBlocks}
+        </Scroll>
+      </Visible>
+      <Visible md lg xl>
+        <BlockItem
+          $width={{
+            xs: '100%',
+            md: '720px',
+            lg: '976px',
+            xl: '1276px'
+          }}
+          marginBlockEnd="space060"
+        >
+          {ArticleStackBlocks}
+        </BlockItem>
+      </Visible>
+    </>
   );
 };

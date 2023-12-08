@@ -5,13 +5,14 @@ import {
   Divider,
   Block,
   MenuSub,
-  MenuItem
+  MenuItem,
+  getMediaQueryFromTheme
 } from 'newskit';
-import { MainMenuProp, BreakPointProp } from './types';
+import { SecondaryNavContainerProp, NavItemMobileContainerProp } from './types';
+import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
 
-export const MenuDivider = styled(Divider)<BreakPointProp>`
-  width: ${({ breakpointKey }) =>
-    breakpointKey === 'xl' ? '1140px' : 'calc(100% - 54px)'};
+export const MenuDivider = styled(Divider)`
+  width: 100%;
   margin: auto;
   ${getColorCssFromTheme('borderColor', 'neutral030')};
 `;
@@ -20,31 +21,112 @@ export const MenuDividerDropdown = styled(Divider)`
   ${getColorCssFromTheme('borderColor', 'neutral030')};
 `;
 
-export const MainMenu = styled(Menu)<MainMenuProp>`
-  padding-left: ${({ hasMoreItems }) => (hasMoreItems ? '48px' : '54px')};
-  padding-right: ${({ hasMoreItems }) => (hasMoreItems ? '28px' : '54px')};
+export const MainMenu = styled(Menu)`
+  padding-inline: 48px;
   ul {
-    justify-content: ${({ hasMoreItems }) =>
-      hasMoreItems ? `space-between` : `center`};
+    justify-content: center;
   }
+  li {
+    position: relative;
+  }
+`;
+
+export const SecondaryNavContainer = styled.div<SecondaryNavContainerProp>`
+  position: sticky;
+  ${({ topMobile }) => topMobile !== undefined && `top: ${topMobile}px`};
+  ${getMediaQueryFromTheme('md')} {
+    ${({ topDesktop }) => topDesktop !== undefined && `top: ${topDesktop}px`};
+  }
+  background-color: ${TheTimesLight.colors.interfaceBackground};
+  z-index: 2;
+`;
+
+export const SecondaryNavMenuItemMob = styled(MenuItem)<{
+  isSelected: boolean;
+}>`
+  ${({ isSelected }) =>
+    isSelected &&
+    `& span {
+    font-weight: 800
+  }`};
 `;
 
 export const Wrapper = styled.div`
   display: flex;
 `;
 
-export const StyledMenuSub = styled(MenuSub)`
+export const StyledMenuSub = styled(MenuSub)<{
+  $showMoreMD: boolean;
+  $showMoreLG: boolean;
+  $showMoreXL: boolean;
+}>`
   min-width: 100px;
+  display: none;
+
+  & > ul {
+    right: 0;
+  }
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $showMoreMD }) => $showMoreMD && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $showMoreLG }) => $showMoreLG && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $showMoreXL }) => $showMoreXL && `display: flex`};
+  }
 `;
 
-export const StyledMenuItemsDesktop = styled(MenuItem)`
+export const StyledMenuItemsDesktop = styled(MenuItem)<{
+  $hideMD?: boolean;
+  $hideLG?: boolean;
+  $hideXL?: boolean;
+}>`
   min-width: max-content;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $hideMD }) => $hideMD && `display: none`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $hideLG }) => $hideLG && `display: none`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $hideXL }) => $hideXL && `display: none`};
+  }
+`;
+export const StyledMenuItemsDropdown = styled(MenuItem)<{
+  $showMD?: boolean;
+  $showLG?: boolean;
+  $showXL?: boolean;
+}>`
+  min-width: max-content;
+  display: none;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $showMD }) => $showMD && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $showLG }) => $showLG && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $showXL }) => $showXL && `display: flex`};
+  }
 `;
 
 export const StyledBlock = styled(Block)`
   display: flex;
   justify-content: space-between;
   height: 48px;
+`;
+
+export const MenuContainerMob = styled(StyledBlock)`
+  align-items: center;
+  ${getColorCssFromTheme('backgroundColor', 'neutral010')};
+  ${getColorCssFromTheme('backgroundColor', 'sectionBrand060')};
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const MenuContainer = styled(Menu)`
@@ -72,10 +154,21 @@ export const MenuContainer = styled(Menu)`
 `;
 
 export const NavItemsContainer = styled.div`
-  position: absolute;
-  top: 100%;
+  height: 100%;
+  top: 48px;
   left: 0;
   right: 0;
   z-index: 1;
   ${getColorCssFromTheme('backgroundColor', 'white')};
+`;
+
+export const NavItemsMobileContainer = styled.div<NavItemMobileContainerProp>`
+  height: ${({ $height }) => $height};
+  overflow-y: auto;
+`;
+
+export const MenuSubMob = styled(MenuSub)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

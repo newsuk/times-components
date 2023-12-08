@@ -46,4 +46,26 @@ describe('Render UpdateButtonWithDelay', () => {
       expect(queryByTestId('button')).toBeFalsy();
     });
   });
+
+  it('should not render the Update button component and the DelayComponent as expected when it has an update', async () => {
+    const { unmount, queryByTestId } = renderComponent(
+      500,
+      true,
+      'Update Now',
+      handleClickMock,
+      true,
+      '2023-10-12T00:00:00.000Z',
+      '12345',
+      false
+    );
+
+    await waitFor(
+      () => {
+        expect(queryByTestId('button')).toBeNull();
+      },
+      { timeout: 500 }
+    );
+
+    unmount();
+  });
 });

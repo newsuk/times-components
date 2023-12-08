@@ -1,8 +1,9 @@
 import React from 'react';
-import { useBreakpointKey } from 'newskit';
-import { render, screen } from '../../../utils/test-utils';
+import { screen } from '../../../utils/test-utils';
+import { renderComponent } from '../../../utils';
 import '@testing-library/jest-dom';
 import { ContentBucket2 } from '..';
+
 import data from '../../fixtures/data.json';
 
 jest.mock('newskit', () => ({
@@ -14,27 +15,34 @@ afterAll(() => {
   jest.clearAllMocks();
   jest.resetAllMocks();
 });
-const { articles } = data;
-const renderComponent = async () =>
-  render(<ContentBucket2 {...{ articles }} />);
+
+const mockClickHandler = jest.fn();
+
+const defaultProps = {
+  ...data,
+  clickHandler: mockClickHandler
+};
 
 describe('Render Content Bucket 2 Slice', () => {
-  test('Slice matches snapshot at `lg` breakpoint', async () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
-    const { asFragment } = await renderComponent();
+  test('Slice matches snapshot at `lg` breakpoint', () => {
+    const { asFragment } = renderComponent(
+      <ContentBucket2 {...defaultProps} />,
+      'lg'
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 
   test('Slice matches snapshot at `xs` breakpoint', async () => {
-    (useBreakpointKey as any).mockReturnValue('xs');
-    const { asFragment } = await renderComponent();
+    const { asFragment } = renderComponent(
+      <ContentBucket2 {...defaultProps} />,
+      'xs'
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 });
 
 describe('Content Bucket 2 Articles list above `md` breakpoint', () => {
-  (useBreakpointKey as any).mockReturnValue('md');
-  renderComponent();
+  renderComponent(<ContentBucket2 {...defaultProps} />, 'md');
 
   const articleContainer = screen.getByTestId('article-container');
 
@@ -57,30 +65,27 @@ describe('Content Bucket 2 Articles list above `md` breakpoint', () => {
 
 describe('Content Bucket 2 Articles list below `md` breakpoint', () => {
   beforeEach(async () => {
-    (useBreakpointKey as any).mockReturnValue('xs');
-    await renderComponent();
+    renderComponent(<ContentBucket2 {...defaultProps} />, 'xs');
   });
 
   test('articleBorder', () => {
     const articleContainer = screen.getByTestId('article-container');
 
-    const articleItem1 = articleContainer.firstElementChild;
-    const articleItem4 = articleContainer.lastElementChild;
+    const articleItem1 = articleContainer.firstElementChild!.firstElementChild;
+    const articleItem4 = articleContainer.lastElementChild!.firstElementChild;
 
-    expect(articleItem1!.getElementsByTagName('hr').length).toBe(0);
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
+    expect(articleItem1!.getElementsByTagName('hr').length).toBe(2);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(3);
   });
 
   test('article images', () => {
     const articleContainer = screen.getByTestId('article-container');
 
-    const articleItem1 = articleContainer.firstElementChild;
-    const articleItem4 = articleContainer.lastElementChild;
+    const articleItem1 = articleContainer.firstElementChild!.firstElementChild;
+    const articleItem4 = articleContainer.lastElementChild!.firstElementChild;
 
     expect(articleItem1!.getElementsByTagName('img').length).toBe(1);
-
     expect(articleItem4!.getElementsByTagName('img').length).toBe(0);
-
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(1);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(3);
   });
 });

@@ -1,4 +1,6 @@
-export { CustomStackLayout } from './layouts';
+export { CustomStackLayout, WrappedStackLayout } from './layouts';
+export { CustomBlockLayout } from './custom-layout';
+
 export {
   ArticleStackSmall,
   ArticleStackLarge,

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HintContainer should render the HintContainer component 1`] = `
+<DocumentFragment>
+  <button
+    class="css-1cndqxx"
+    data-testid="button"
+    type="button"
+  >
+    <p
+      class="css-1ynvxmq"
+    >
+      Give me a hint
+    </p>
+  </button>
+  <div
+    class="css-13byt3y"
+  />
+</DocumentFragment>
+`;

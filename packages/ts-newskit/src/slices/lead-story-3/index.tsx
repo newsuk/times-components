@@ -1,79 +1,57 @@
-import {
-  Block,
-  Divider,
-  Hidden,
-  useBreakpointKey,
-  Visible,
-  BreakpointKeys
-} from 'newskit';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Block, Divider, Hidden, Visible } from 'newskit';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
-import { LeadStoryDivider, StackItem, BlockItem } from '../shared-styles';
-import { FullWidthBlock } from '../../components/slices/shared-styles';
+import {
+  LeadStoryDivider,
+  StackItem,
+  BlockItem,
+  LeadStoryContainer
+} from '../shared-styles';
+import {
+  FullWidthBlock,
+  FullWidthHidden
+} from '../../components/slices/shared-styles';
 import { ComposedArticleStack } from '../shared/composed-article-stack';
 import { ArticleStack } from './article-stack';
-import { ArticleStackLeadStory, CustomStackLayout } from '../shared';
+import { ArticleStackLeadStory } from '../shared';
+import { ClickHandlerType } from '../types';
 
 export interface LeadStory3Props {
   leadArticle: LeadArticleProps;
   articles: ArticleProps[];
   leadArticles: LeadArticleProps[];
+  clickHandler: ClickHandlerType;
 }
 
 export const LeadStory3 = ({
   leadArticle,
   articles,
-  leadArticles
+  leadArticles,
+  clickHandler
 }: LeadStory3Props) => {
-  const [currentBreakpoint, setBreakpoint] = useState<BreakpointKeys>('xs');
-  const breakpointKey = useBreakpointKey();
-  useEffect(
-    () => {
-      setBreakpoint(breakpointKey);
-    },
-    [breakpointKey]
-  );
-
-  const modifedArticles =
-    currentBreakpoint === 'xl'
-      ? articles.map(article => ({
-          ...article,
-          imageRight: true
-        }))
-      : articles;
-
-  const screenXsAndSm =
-    currentBreakpoint === 'xs' || currentBreakpoint === 'sm';
-
-  const modifedLeadArticle = {
+  const modifiedLeadArticle = {
     ...leadArticle,
     headlineTypographyPreset: 'editorialHeadline040',
     imageTop: true,
+    isLeadImage: true,
     hasTopBorder: false,
-    loadingAspectRatio: '4:5'
+    loadingAspectRatio: '4:5',
+    shortSummary: undefined
   };
 
-  const modifedLeadArticles = leadArticles.map(article => ({
-    ...article,
-    hasTopBorder: false
-  }));
-
   return (
-    <CustomStackLayout>
+    <LeadStoryContainer className="lead-story-3-container">
       <StackItem
         $width={{
           xs: '100%',
           md: '260px'
         }}
       >
-        <ArticleStack
-          leadArticles={modifedLeadArticles}
-          breakpointKey={currentBreakpoint}
-        />
+        <ArticleStack leadArticles={leadArticles} clickHandler={clickHandler} />
       </StackItem>
       <StackItem
         $width={{
@@ -90,7 +68,12 @@ export const LeadStory3 = ({
         }}
       >
         <Hidden md lg xl>
-          <FullWidthBlock>
+          <FullWidthBlock
+            paddingInline={{
+              xs: 'space045',
+              md: 'space000'
+            }}
+          >
             <Divider
               overrides={{
                 stylePreset: 'dashedDivider',
@@ -100,14 +83,15 @@ export const LeadStory3 = ({
           </FullWidthBlock>
         </Hidden>
         <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-          <Visible lg xl>
-            <LeadStoryDivider
-              overrides={{ stylePreset: 'lightDivider' }}
-              vertical
-              position="right"
-            />
-          </Visible>
-          <LeadArticle {...modifedLeadArticle} />
+          <LeadStoryDivider
+            overrides={{ stylePreset: 'lightDivider' }}
+            vertical
+            position="right"
+          />
+          <LeadArticle
+            article={modifiedLeadArticle}
+            clickHandler={clickHandler}
+          />
           <Visible md lg xl>
             <LeadStoryDivider
               overrides={{
@@ -119,20 +103,20 @@ export const LeadStory3 = ({
           </Visible>
         </Block>
       </StackItem>
-      {screenXsAndSm ? (
+      <FullWidthHidden md lg xl>
         <BlockItem>
           <ComposedArticleStack
-            articles={modifedArticles}
-            breakpoint={currentBreakpoint}
+            articles={articles}
+            clickHandler={clickHandler}
           />
         </BlockItem>
-      ) : (
+      </FullWidthHidden>
+      <Visible md lg xl>
         <ArticleStackLeadStory
-          mdWidth="720px"
-          modifedArticles={modifedArticles}
-          breakpoint={currentBreakpoint}
+          modifiedArticles={articles}
+          clickHandler={clickHandler}
         />
-      )}
-    </CustomStackLayout>
+      </Visible>
+    </LeadStoryContainer>
   );
 };

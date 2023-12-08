@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
-import {
-  Menu,
-  MenuItem,
-  MenuSub,
-  MenuDivider,
-  useBreakpointKey
-} from 'newskit';
+import { Menu, MenuItem, MenuSub, MenuDivider, Visible } from 'newskit';
 import { AccountMenu } from '../styles';
+import { MenuItemParent } from '../types';
 
 const menuItemPresets = {
   minHeight: '60px',
@@ -15,15 +10,20 @@ const menuItemPresets = {
   typographyPreset: 'topNav010'
 };
 
-export const createMenu = (menuData: any) => {
-  const breakpointKey = useBreakpointKey();
+export const createMenu = (
+  menuData: MenuItemParent[],
+  clickHandler: (title: string) => void
+) => {
   const [moreSelected, setMoreSelected] = useState<boolean>(false);
 
-  const menuItems = breakpointKey === 'lg' ? 4 : menuData.length;
+  const handleMoreClick = () => {
+    setMoreSelected(!moreSelected);
+    clickHandler('More');
+  };
 
-  const moreMenuLength = menuData.length - menuItems;
+  const moreMenuLength = menuData.length - 4;
   const navItems = menuData
-    .slice(0, menuItems)
+    .slice(0, menuData.length)
     .map(({ title, url }: { title: string; url: string }) => (
       <MenuItem
         href={url}
@@ -37,41 +37,46 @@ export const createMenu = (menuData: any) => {
             md: 'menuItem'
           }
         }}
+        onClick={() => clickHandler(title)}
         key={url}
       >
         {title}
       </MenuItem>
     ));
 
-  return menuItems === 4 ? (
+  return (
     <>
       {navItems}
-      <MenuSub
-        title="More"
-        onClick={() => setMoreSelected(!moreSelected)}
-        selected={moreSelected}
-        expanded={moreSelected}
-        overrides={{
-          ...menuItemPresets,
-          list: { stylePreset: 'moreSubMenu' }
-        }}
-        data-testid="more-sub-menu"
-      >
-        <Menu
-          vertical
-          overrides={{ spaceInline: 'sizing000' }}
-          aria-label="More menu items"
+      <Visible lg>
+        <MenuSub
+          title="More"
+          onClick={handleMoreClick}
+          selected={moreSelected}
+          expanded={moreSelected}
+          overrides={{
+            ...menuItemPresets,
+            list: { stylePreset: 'moreSubMenu' }
+          }}
+          data-testid="more-sub-menu"
         >
-          {createMoreMenu(menuData, moreMenuLength)}
-        </Menu>
-      </MenuSub>
+          <Menu
+            vertical
+            overrides={{ spaceInline: 'sizing000' }}
+            aria-label="More menu items"
+          >
+            {createMoreMenu(menuData, moreMenuLength, clickHandler)}
+          </Menu>
+        </MenuSub>
+      </Visible>
     </>
-  ) : (
-    navItems
   );
 };
 
-const createMoreMenu = (menuData: any, moreMenuLength: number) =>
+const createMoreMenu = (
+  menuData: MenuItemParent[],
+  moreMenuLength: number,
+  clickHandler: (title: string) => void
+) =>
   menuData
     .slice(-moreMenuLength)
     .map(({ title, url }: { title: string; url: string }) => (
@@ -83,12 +88,17 @@ const createMoreMenu = (menuData: any, moreMenuLength: number) =>
           typographyPreset: 'topNav010'
         }}
         key={url}
+        onClick={() => clickHandler(`more: ${title}`)}
       >
         {title}
       </MenuItem>
     ));
 
-export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
+export const createAccountMenu = (
+  isLoggedIn: boolean,
+  menuData: MenuItemParent[],
+  clickHandler: (title: string) => void
+) => {
   const [myAccountSelected, setMyAccountSelected] = useState<boolean>(false);
 
   return isLoggedIn ? (
@@ -99,13 +109,17 @@ export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
         overrides={{
           ...menuItemPresets
         }}
+        onClick={() => clickHandler('Times +')}
       >
         Times +
       </MenuItem>
       <MenuDivider />
       <MenuSub
         title="My Account"
-        onClick={() => setMyAccountSelected(!myAccountSelected)}
+        onClick={() => {
+          setMyAccountSelected(!myAccountSelected);
+          clickHandler('My Account');
+        }}
         selected={myAccountSelected}
         expanded={myAccountSelected}
         overrides={{
@@ -129,6 +143,7 @@ export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
                 typographyPreset: 'topNav010'
               }}
               key={url}
+              onClick={() => clickHandler(title)}
             >
               {title}
             </MenuItem>
@@ -142,7 +157,11 @@ export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
       aria-label="My Account Menu"
     >
       <MenuDivider />
-      <MenuItem href="/login" overrides={{ ...menuItemPresets }}>
+      <MenuItem
+        href="/login"
+        overrides={{ ...menuItemPresets }}
+        onClick={() => clickHandler('Login')}
+      >
         Login
       </MenuItem>
       <MenuDivider />
@@ -153,6 +172,7 @@ export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
           typographyPreset: 'topNav010',
           spaceInline: 'space090'
         }}
+        onClick={() => clickHandler('Subscribe')}
       >
         Subscribe
       </MenuItem>

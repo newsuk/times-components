@@ -4,14 +4,15 @@ import {
   getColorCssFromTheme,
   getMediaQueryFromTheme,
   StackProps,
-  Block
+  Block,
+  TextBlock
 } from 'newskit';
 import IconD2 from '../../../assets/IconD2';
 import IconA4 from '../../../assets/IconA4';
 
 export const FreeTrialContainer = styled(Stack)<StackProps>`
   overflow: hidden;
-  ${getColorCssFromTheme('backgroundColor', 'puzzles040')};
+  ${getColorCssFromTheme('backgroundColor', 'sectionBrand040')};
   ${getMediaQueryFromTheme('xs')} {
     text-align: center;
   }
@@ -102,5 +103,11 @@ export const StyledIconA4 = styled(IconA4)`
     bottom: -20px;
     width: 125.1px;
     height: 125.1px;
+  }
+`;
+
+export const TextBlockH2 = styled(TextBlock)`
+  &.withFallback {
+    font-family: 'Times Modern', 'Times Modern fallback', serif;
   }
 `;
