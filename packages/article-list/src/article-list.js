@@ -93,11 +93,13 @@ class ArticleList extends Component {
       </ListContentContainer>
     );
 
-    const renderAdComponent = ({ slug, index }) => (
+    const renderAdComponent = ({ adIndex }) => {
+      adIndex++;
+        return (
       <InlineAdWrapper>
-        <AdContainer isLoading={articlesLoading} slotName="articleListAd" identifier={`${slug}-${index}`} />
+        <AdContainer isLoading={articlesLoading} slotName="articleListAd" identifier={adIndex} />
       </InlineAdWrapper>
-    );
+    )};
 
     const data = articlesLoading
       ? Array(pageSize)
@@ -125,8 +127,9 @@ class ArticleList extends Component {
               const { elementId } = item;
 
               const renderAd = () => {
+                let adIndex = 0;
                 if (index === this.advertPosition) {
-                  return renderAdComponent({ key: `advert${index}`, page, index });
+                  return renderAdComponent({ key: `advert${index}`, adIndex });
                 }
 
                 return null;
