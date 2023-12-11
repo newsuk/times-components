@@ -14,7 +14,7 @@ const AdContainer = ({ slotName, style, identifier }) => {
     pixelskin: "ad-pixelskin",
     inlineAd1: "ad-article-inline-1",
     inlineAd2: "ad-article-inline-2",
-    inlineAd3: "ad-article-inline-3",
+    inlineAd3: "ad-article-inline-3"
   };
 
   return (

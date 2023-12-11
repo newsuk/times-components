@@ -101,6 +101,7 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <AdContainer
+        identifier={1}
         slotName="articleListAd"
       />
     </div>
