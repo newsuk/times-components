@@ -10,8 +10,7 @@ export const propTypes = {
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
   page: PropTypes.number,
-  pageSize: PropTypes.number,
-  slug: PropTypes.string
+  pageSize: PropTypes.number
 };
 
 export { defaultProps };

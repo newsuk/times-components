@@ -57,9 +57,7 @@ class ArticleList extends Component {
       receiveChildList,
       refetch,
       showImages,
-      slug
     } = this.props;
-    console.log(articleListHeader, 'articleListHeader')
 
     const paginationComponent = ({
       hideResults = false,
