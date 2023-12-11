@@ -56,7 +56,7 @@ class ArticleList extends Component {
       pageSize,
       receiveChildList,
       refetch,
-      showImages,
+      showImages
     } = this.props;
 
     const paginationComponent = ({
@@ -92,12 +92,18 @@ class ArticleList extends Component {
     );
 
     const renderAdComponent = ({ adIndex }) => {
+      // eslint-disable-next-line
       adIndex++;
-        return (
-      <InlineAdWrapper>
-        <AdContainer isLoading={articlesLoading} slotName="articleListAd" identifier={adIndex} />
-      </InlineAdWrapper>
-    )};
+      return (
+        <InlineAdWrapper>
+          <AdContainer
+            isLoading={articlesLoading}
+            slotName="articleListAd"
+            identifier={adIndex}
+          />
+        </InlineAdWrapper>
+      );
+    };
 
     const data = articlesLoading
       ? Array(pageSize)
@@ -125,7 +131,7 @@ class ArticleList extends Component {
               const { elementId } = item;
 
               const renderAd = () => {
-                let adIndex = 0;
+                const adIndex = 0;
                 if (index === this.advertPosition) {
                   return renderAdComponent({ key: `advert${index}`, adIndex });
                 }

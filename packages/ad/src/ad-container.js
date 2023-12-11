@@ -30,6 +30,11 @@ const propTypes = {
   identifier: PropTypes.string
 };
 
+const defaultProps = {
+  identifier: null
+};
+
 AdContainer.propTypes = propTypes;
+AdContainer.defaultProps = defaultProps;
 
 export default AdContainer;
