@@ -36,7 +36,7 @@ export default (options = {}) => {
     });
 
     it("loads inline-ad", () => {
-      expect(cy.get("#inline-ad")).to.exist;
+      expect(cy.get("#inline-ad-1")).to.exist;
     });
 
     it("navigates between article pages", () => {
