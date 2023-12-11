@@ -56,8 +56,10 @@ class ArticleList extends Component {
       pageSize,
       receiveChildList,
       refetch,
-      showImages
+      showImages,
+      slug
     } = this.props;
+    console.log(articleListHeader, 'articleListHeader')
 
     const paginationComponent = ({
       hideResults = false,
@@ -91,9 +93,9 @@ class ArticleList extends Component {
       </ListContentContainer>
     );
 
-    const renderAdComponent = () => (
+    const renderAdComponent = ({ slug, index }) => (
       <InlineAdWrapper>
-        <AdContainer isLoading={articlesLoading} slotName="articleListAd" />
+        <AdContainer isLoading={articlesLoading} slotName="articleListAd" identifier={`${slug}-${index}`} />
       </InlineAdWrapper>
     );
 
@@ -124,7 +126,7 @@ class ArticleList extends Component {
 
               const renderAd = () => {
                 if (index === this.advertPosition) {
-                  return renderAdComponent({ key: `advert${index}` });
+                  return renderAdComponent({ key: `advert${index}`, page, index });
                 }
 
                 return null;

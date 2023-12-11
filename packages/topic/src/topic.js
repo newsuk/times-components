@@ -115,6 +115,7 @@ const Topic = ({
               pageSize={pageSize}
               refetch={refetchArticles}
               showImages
+              slug={slug}
             />
           </Responsive>
         );

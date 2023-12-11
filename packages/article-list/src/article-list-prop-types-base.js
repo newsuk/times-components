@@ -9,7 +9,8 @@ export const propTypes = {
   error: PropTypes.object, // ApolloError, TS will be better here
   pageSize: PropTypes.number,
   receiveChildList: PropTypes.func,
-  refetch: PropTypes.func.isRequired
+  refetch: PropTypes.func.isRequired,
+  slug: PropTypes.string,
 };
 
 export const defaultProps = {

@@ -4,17 +4,17 @@ import PropTypes from "prop-types";
 import { TcView } from "@times-components/utils";
 import styles from "./styles";
 
-const AdContainer = ({ slotName, style }) => {
+const AdContainer = ({ slotName, style, identifier }) => {
   const adMap = {
     header: "ad-header",
     "inline-ad": "ad-article-inline",
-    articleListAd: "inline-ad",
+    articleListAd: `inline-ad-${identifier}`,
     pixel: "ad-pixel",
     pixelteads: "ad-pixelteads",
     pixelskin: "ad-pixelskin",
     inlineAd1: "ad-article-inline-1",
     inlineAd2: "ad-article-inline-2",
-    inlineAd3: "ad-article-inline-3"
+    inlineAd3: "ad-article-inline-3",
   };
 
   return (
@@ -26,7 +26,8 @@ const AdContainer = ({ slotName, style }) => {
 
 const propTypes = {
   slotName: PropTypes.string.isRequired,
-  style: PropTypes.oneOfType([PropTypes.object]).isRequired
+  style: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  identifier: PropTypes.string
 };
 
 AdContainer.propTypes = propTypes;
