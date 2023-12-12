@@ -50,13 +50,13 @@ export const StyledAdBlock = styled(Block)`
   height: 250px;
   width: 100%;
   background: #ff5858;
-  margin: 16px 0 30px 0;
+  margin: 0 0 30px 0;
   font-size: 30px;
   ${getMediaQueryFromTheme('md')} {
     height: 250px;
     width: 100%;
     background: #ff5858;
-    margin: 16px 0 30px 0;
+    margin: 0 0 30px 0;
     font-size: 30px;
   }
   ${getMediaQueryFromTheme('lg')} {

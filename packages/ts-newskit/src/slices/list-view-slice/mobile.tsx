@@ -63,13 +63,15 @@ export const ListViewSliceMobile = ({
                 clickHandler={clickHandler}
               />
             </StyledBlock>
-            <Block marginBlock="space040">
-              <Divider
-                overrides={{
-                  stylePreset: 'dashedDivider'
-                }}
-              />
-            </Block>
+            {index !== 4 && (
+              <Block marginBlock="space040">
+                <Divider
+                  overrides={{
+                    stylePreset: 'dashedDivider'
+                  }}
+                />
+              </Block>
+            )}
             {index === 4 && <StyledAdBlock>Billboard 970 x 250</StyledAdBlock>}
           </Visible>
         );

@@ -4,7 +4,7 @@ import {
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { ClickHandlerType } from '../types';
-import { Divider, Block } from 'newskit';
+import { Divider, Block, Visible, Hidden } from 'newskit';
 import { StyledAdBlock } from './styles';
 
 export interface ListViewSliceProps {
@@ -38,19 +38,49 @@ export const ArticleStack = ({
               }}
               clickHandler={clickHandler}
             />
-            {leadArticle.length > 1 &&
-              index < leadArticle.length - 1 && (
-                <Block marginBlock="space040">
-                  <Divider
-                    overrides={{
-                      stylePreset: 'dashedDivider'
-                    }}
-                  />
-                </Block>
-              )}
+            <Visible md>
+              {leadArticle.length > 1 &&
+                index < leadArticle.length - 1 &&
+                fifthArticle.id !== item.id && (
+                  <Block marginBlock="space040">
+                    <Divider
+                      overrides={{
+                        stylePreset: 'dashedDivider'
+                      }}
+                    />
+                  </Block>
+                )}
+            </Visible>
+            <Hidden md>
+              {leadArticle.length > 1 &&
+                index < leadArticle.length - 1 && (
+                  <Block marginBlock="space040">
+                    <Divider
+                      overrides={{
+                        stylePreset: 'dashedDivider'
+                      }}
+                    />
+                  </Block>
+                )}
+            </Hidden>
             <div style={{ marginLeft: '-170px', marginRight: '-30px' }}>
               {fifthArticle.id === item.id && (
-                <StyledAdBlock>Billboard 970 x 250</StyledAdBlock>
+                <>
+                  <Visible md>
+                    <div
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        padding: '10px 0',
+                        borderTop: '1px solid black',
+                        marginTop: '40px'
+                      }}
+                    >
+                      advertisement
+                    </div>
+                  </Visible>
+                  <StyledAdBlock />
+                </>
               )}
             </div>
           </>
