@@ -101,7 +101,9 @@ export const CommentCard = ({
       >
         <CardHeadlineLink
           href={url}
-          $color={theme.colors.sectionBrand050 || theme.colors.inkBrand010}
+          $color={
+            theme.name === 'times-web-light' ? 'inkBrand010' : 'sectionBrand050'
+          }
           overrides={{ typographyPreset: 'editorialHeadline010' }}
           external={false}
           onClick={onClick}
@@ -111,7 +113,7 @@ export const CommentCard = ({
         <CardHeadlineLink
           href={url}
           overrides={{ typographyPreset: 'editorialRegularHeadline020' }}
-          $color={theme.colors.sectionBrand080 || theme.colors.inkBase}
+          $color="sectionBrand080"
           external={false}
           onClick={onClick}
           tabIndex={0}

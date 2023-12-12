@@ -3,7 +3,7 @@
 exports[`Secondary Menu should render snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-19u0kbr"
+    class="css-14ngk3x"
   >
     <div
       class="css-gre9re"
@@ -18,10 +18,10 @@ exports[`Secondary Menu should render snapshot 1`] = `
           role="list"
         >
           <div
-            class="css-d53q5n"
+            class="css-quq4j1"
           >
             <p
-              class="css-kkkz9d"
+              class="css-1psd7we"
             >
               See all 
             </p>

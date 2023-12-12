@@ -16,7 +16,7 @@ exports[`OffersBanner should render OffersBanner component 1`] = `
       View all digital subscription offers
     </p>
     <a
-      class="css-1v6vqqa"
+      class="css-8ay5u"
       data-testid="buttonLink"
       href="https://www.thetimes.co.uk/subscribe/digital/?ilc=sub_benefit_page_bottom"
     >

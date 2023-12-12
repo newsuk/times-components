@@ -34,50 +34,50 @@ const IconSubscribeB = (props: any) => (
       fill="black"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M104.265 6.19151L54.6319 11.2823L54.4667 9.79165L104.1 4.70082L104.265 6.19151Z"
       fill="#FFD7A6"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M53.4756 11.1476L1.60869 14.5995L1.49438 13.1034L53.3613 9.6515L53.4756 11.1476Z"
       fill="#FFD7A6"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M77.2965 -19.2903L106.078 4.8603L104.889 6.27771L76.1071 -17.8729L77.2965 -19.2903Z"
       fill="black"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M1.527 12.5609L59.0877 60.8601L57.8984 62.2775L0.337701 13.9783L1.527 12.5609Z"
       fill="black"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M24.7223 -15.0852L82.283 33.214L81.0938 34.6313L23.533 -13.6679L24.7223 -15.0852Z"
       fill="black"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M0.306625 13.9565L24.3909 -14.7461L25.7949 -13.568L1.7106 15.1346L0.306625 13.9565Z"
       fill="black"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M29.1345 38.1165L77.3012 -19.2863L78.7051 -18.1083L30.5384 39.2945L29.1345 38.1165Z"
       fill="black"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M56.5076 61.0847L104.674 3.68196L106.078 4.85999L57.9115 62.2628L56.5076 61.0847Z"
       fill="black"
     />
