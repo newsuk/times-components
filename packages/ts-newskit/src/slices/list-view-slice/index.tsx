@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import { LeadArticleProps } from '../../components/slices/lead-article';
 import { ClickHandlerType } from '../types';
-import { CustomBlockLayout } from '../shared';
+import { CustomBlockLayout, WrappedStackLayout } from '../shared';
 import { Divider, TextBlock, Block, Stack, Visible } from 'newskit';
 import { ArticleStack } from './artcile-stack';
-import { StyledMainDivider, StyledAdContainer, StyledAdBlock } from './styles';
+import { StyledMainDivider, StyledAdContainer } from './styles';
 import { ListViewSliceMobile } from './mobile';
 
 export interface ListViewSliceProps {
@@ -133,12 +133,14 @@ export const ListViewSlice = ({
           </StyledAdContainer>
         </Stack>
       </Visible>
-      <Visible xs sm>
-        <ListViewSliceMobile
-          leadArticle={leadArticle}
-          clickHandler={clickHandler}
-        />
-      </Visible>
+      <WrappedStackLayout>
+        <Visible xs sm>
+          <ListViewSliceMobile
+            leadArticle={leadArticle}
+            clickHandler={clickHandler}
+          />
+        </Visible>
+      </WrappedStackLayout>
     </CustomBlockLayout>
   );
 };
