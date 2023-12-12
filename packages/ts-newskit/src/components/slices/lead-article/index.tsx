@@ -33,6 +33,7 @@ export interface LeadArticleProps {
   contentType?: string;
   hasVideo: boolean;
   label?: string;
+  datePublished?: string;
   expirableFlags?: expirableFlagsProps[];
   images?: ImageProps;
   url: string;
@@ -41,9 +42,11 @@ export interface LeadArticleProps {
     href: string;
   };
   imageTop?: boolean;
+  byline?: string;
   hasTopBorder?: boolean;
   contentTop?: boolean;
   contentWidth?: MQ<string> | string;
+  columnGap?: MQ<string> | string;
   headlineTypographyPreset?: MQ<string> | string;
   loadingAspectRatio?: string;
   textBlockMarginBlockStart?: MQ<string> | string;
@@ -71,10 +74,12 @@ export const LeadArticle = ({
     images,
     url,
     tag,
+    byline,
     imageTop,
     hasTopBorder = true,
     contentTop,
     contentWidth,
+    columnGap,
     headlineTypographyPreset,
     loadingAspectRatio,
     textBlockMarginBlockStart = 'space040',
@@ -127,7 +132,7 @@ export const LeadArticle = ({
              content`
           : `content media`
       }}
-      columnGap="space040"
+      columnGap={columnGap || 'space040'}
       columns={displayArticleVertical || !contentWidth ? '100%' : contentWidth}
       className={className}
     >
@@ -226,6 +231,7 @@ export const LeadArticle = ({
         <TagAndFlag
           tag={tag}
           flag={flag}
+          byline={byline}
           marginBlockStart={tagAndFlagMarginBlockStart}
         />
         <UnorderedListItems listData={listData} clickHandler={clickHandler} />
