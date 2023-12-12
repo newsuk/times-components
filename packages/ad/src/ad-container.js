@@ -8,7 +8,7 @@ const AdContainer = ({ slotName, style }) => {
   const adMap = {
     header: "ad-header",
     "inline-ad": "ad-article-inline",
-    articleListAd: "inline-ad",
+    articleListAd: "ad-article-inline",
     pixel: "ad-pixel",
     pixelteads: "ad-pixelteads",
     pixelskin: "ad-pixelskin",
