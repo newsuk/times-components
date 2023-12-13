@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.49.31](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.49.30...@times-components/ssr@2.49.31) (2023-12-12)
+
+
+### Bug Fixes
+
+* **TMRX-1745:** Fix ads on list view slice ([#3688](https://github.com/newsuk/times-components/issues/3688)) ([c6365c0](https://github.com/newsuk/times-components/commit/c6365c0999c39e5f7f12b9be16d9c61aaa25efd7))
+
+
+
+
+
 ## [2.49.30](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.49.29...@times-components/ssr@2.49.30) (2023-12-08)
 
 **Note:** Version bump only for package @times-components/ssr
