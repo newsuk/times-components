@@ -8,11 +8,13 @@ import {
   CardLink,
   Divider,
   Stack,
-  IconButton
+  IconButton,
+  useInstrumentation
 } from 'newskit';
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
 import { StyledCardComposable } from './styles';
+import { sidebarClickEvent } from './tracking/tealium';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
@@ -25,6 +27,12 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
   data,
   pageLink
 }) => {
+
+  const { fireEvent } = useInstrumentation();
+  const onClickSidebarHeader = () => {
+    fireEvent(sidebarClickEvent());
+  };
+
   return (
     <Block stylePreset="sidebarCard" paddingBlockStart="space030">
       <Block>
@@ -37,7 +45,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
           >
             <CardLink external={false} expand href={pageLink} />
             <Stack flow="horizontal-center" stackDistribution="space-between">
-              <TextBlock as="h3" typographyPreset="editorialDisplay002">
+              <TextBlock as="h3" typographyPreset="editorialDisplay002" onClick={onClickSidebarHeader}>
                 {sectionTitle}
               </TextBlock>
 
