@@ -40,6 +40,7 @@ export interface HeroBannerProps {
   puzzleName: string;
   puzzleType: PuzzleType;
   loginUrl: string;
+  onClick: () => void;
 }
 
 const iconMapping: Record<PuzzleType, IconComponent> = {
@@ -74,9 +75,14 @@ const iconMapping: Record<PuzzleType, IconComponent> = {
 export const HeroBanner: FC<HeroBannerProps> = ({
   puzzleName,
   loginUrl,
-  puzzleType
+  puzzleType,
+  onClick
 }) => {
   const Icon = iconMapping[puzzleType];
+
+  const handleClick = () => {
+    onClick();
+  };
 
   return (
     <HeroBannerContainer
@@ -125,6 +131,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({
               ]}
             </SyledUnorderedList>
             <Button
+              onClick={handleClick}
               size="medium"
               href="https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00"
               overrides={{
