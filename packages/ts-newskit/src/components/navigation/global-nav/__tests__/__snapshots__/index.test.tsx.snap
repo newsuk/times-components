@@ -1023,7 +1023,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
     data-testid="overlay"
   />
   <div
-    class="css-1mosdy0"
+    class="css-1led2la"
   >
     <nav
       aria-label="menu-vertical"
@@ -4624,7 +4624,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
     data-testid="overlay"
   />
   <div
-    class="css-16ui3d2"
+    class="css-1mpsryh"
   >
     <nav
       aria-label="menu-vertical"
