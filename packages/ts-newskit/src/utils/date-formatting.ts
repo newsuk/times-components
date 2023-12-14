@@ -26,11 +26,11 @@ const formatDateToString = (date: Date) => {
   });
 };
 
-export function convertDateToMonth(publishDate: string) {
+export const convertDateToMonth = (publishDate: string) => {
   const timestamp = new Date(publishDate).toLocaleDateString('en-US', {
     month: 'short',
     day: 'numeric',
     year: 'numeric'
   });
   return timestamp;
-}
+};

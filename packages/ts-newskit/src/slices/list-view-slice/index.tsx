@@ -13,9 +13,8 @@ export interface ListViewSliceProps {
   clickHandler: ClickHandlerType;
 }
 
-export function removeDuplicateDates(data: LeadArticleProps[]) {
+export const removeDuplicateDates = (data: LeadArticleProps[]) => {
   let uniqueDates = new Set();
-
   let processedData = data.map(item => {
     let datePublished = item.datePublished;
     if (uniqueDates.has(datePublished)) {
@@ -26,7 +25,7 @@ export function removeDuplicateDates(data: LeadArticleProps[]) {
     }
   });
   return processedData;
-}
+};
 
 export const ListViewSlice = ({
   leadArticles,
@@ -37,7 +36,7 @@ export const ListViewSlice = ({
     headlineTypographyPreset: 'editorialHeadline020',
     isLeadImage: false
   }));
-  console.log({ mordifiedLeadArticles });
+
   mordifiedLeadArticles.sort((a, b) => {
     const dateA = a.datePublished ? new Date(a.datePublished) : null;
     const dateB = b.datePublished ? new Date(b.datePublished) : null;
@@ -53,21 +52,17 @@ export const ListViewSlice = ({
     }
   });
 
-  const groupedByDate: {
-    [key: string]: LeadArticleProps[];
-  } = mordifiedLeadArticles.reduce(
-    (result, article) => {
-      const date = article.datePublished && article.datePublished.split('T')[0];
+  const initialEmptyObject: { [key: string]: LeadArticleProps[] } = {};
+  const groupedByDate = mordifiedLeadArticles.reduce((result, article) => {
+    const date = article.datePublished && article.datePublished.split('T')[0];
 
-      if (date) {
-        result[date] = result[date] || [];
-        result[date].push(article);
-      }
+    if (date) {
+      result[date] = result[date] || [];
+      result[date].push(article);
+    }
 
-      return result;
-    },
-    {} as { [key: string]: LeadArticleProps[] }
-  );
+    return result;
+  }, initialEmptyObject);
 
   const arrayOfArrays = Object.values(groupedByDate).map(arrayOfArray =>
     removeDuplicateDates(arrayOfArray)

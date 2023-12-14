@@ -7,6 +7,7 @@ import { ClickHandlerType } from '../types';
 import { StyledAdBlock, StyledBlock } from './styles';
 import { CustomBlockLayout } from '../shared';
 import { Divider, TextBlock, Block, Visible, Stack } from 'newskit';
+import { convertDateToMonth } from '../../utils/date-formatting';
 
 export interface ListViewSliceProps {
   leadArticle: LeadArticleProps[];
@@ -17,15 +18,6 @@ export const ListViewSliceMobile = ({
   leadArticle,
   clickHandler
 }: ListViewSliceProps) => {
-  function formatDate(publishDate: string) {
-    const timestamp = new Date(publishDate).toLocaleDateString('en-US', {
-      month: 'short',
-      day: 'numeric',
-      year: 'numeric'
-    });
-    return timestamp;
-  }
-
   return (
     <CustomBlockLayout>
       {leadArticle.map((item: LeadArticleProps, index) => {
@@ -44,7 +36,7 @@ export const ListViewSliceMobile = ({
               marginInlineEnd="space060"
               marginBlockEnd="space040"
             >
-              {item.datePublished && formatDate(item.datePublished)}
+              {item.datePublished && convertDateToMonth(item.datePublished)}
             </TextBlock>
             <StyledBlock>
               <LeadArticle
