@@ -10,7 +10,7 @@ const MenuDrawer = styled.div<{ open: boolean; isLoggedIn?: boolean }>`
   width: 100%;
   height: 100%;
   @media screen and (min-width: 768px) {
-    width: 320px;
+    width: 322px;
     top: 60px;
   }
 `;
