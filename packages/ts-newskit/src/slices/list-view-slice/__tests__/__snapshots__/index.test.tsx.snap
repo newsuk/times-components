@@ -3891,15 +3891,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   </div>
                 </div>
               </div>
-              <div
-                class="css-h18yzn"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-3x9ze4"
-                  data-testid="divider"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -7799,15 +7790,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="css-h18yzn"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-3x9ze4"
-                  data-testid="divider"
-                />
               </div>
             </div>
           </div>
@@ -11709,15 +11691,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   </div>
                 </div>
               </div>
-              <div
-                class="css-h18yzn"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-3x9ze4"
-                  data-testid="divider"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -15618,15 +15591,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   </div>
                 </div>
               </div>
-              <div
-                class="css-h18yzn"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-3x9ze4"
-                  data-testid="divider"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -19526,15 +19490,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="css-h18yzn"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-3x9ze4"
-                  data-testid="divider"
-                />
               </div>
             </div>
           </div>

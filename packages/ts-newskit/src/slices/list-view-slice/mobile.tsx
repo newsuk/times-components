@@ -55,15 +55,16 @@ export const ListViewSliceMobile = ({
                 clickHandler={clickHandler}
               />
             </StyledBlock>
-            {index !== 4 && (
-              <Block marginBlock="space040">
-                <Divider
-                  overrides={{
-                    stylePreset: 'dashedDivider'
-                  }}
-                />
-              </Block>
-            )}
+            {index !== 4 &&
+              index !== leadArticle.length - 1 && (
+                <Block marginBlock="space040">
+                  <Divider
+                    overrides={{
+                      stylePreset: 'dashedDivider'
+                    }}
+                  />
+                </Block>
+              )}
             {index === 4 && (
               <>
                 <Stack
