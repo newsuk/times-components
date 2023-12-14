@@ -16,7 +16,12 @@ interface GlobalNavProps {
   onClick?: (isHamburgerOpen: boolean) => void;
 }
 
-export const GlobalNav = ({ isLoggedIn, isSunday, data, onClick }: GlobalNavProps) => {
+export const GlobalNav = ({
+  isLoggedIn,
+  isSunday,
+  data,
+  onClick
+}: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
   const { fireEvent } = useInstrumentation();
 
@@ -36,7 +41,7 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data, onClick }: GlobalNavProp
           onClick && onClick(isHamburgerOpen);
           setHamburgerActive(isHamburgerOpen);
         }}
-          clickHandler={(title: string) =>
+        clickHandler={(title: string) =>
           onClickTopNavigation(title, GLOBAL_NAVIGATION)
         }
       />
