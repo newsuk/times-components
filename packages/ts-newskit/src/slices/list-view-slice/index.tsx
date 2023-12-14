@@ -7,25 +7,16 @@ import { ArticleStack } from './artcile-stack';
 import { StyledMainDivider, StyledAdContainer, StyledAdBlock } from './styles';
 import { ListViewSliceMobile } from './mobile';
 import { convertDateToMonth } from '../../utils/date-formatting';
+import {
+  groupArticlesByDate,
+  removeDuplicateDates,
+  sortByDatePublished
+} from './utils';
 
 export interface ListViewSliceProps {
   leadArticles: LeadArticleProps[];
   clickHandler: ClickHandlerType;
 }
-
-export const removeDuplicateDates = (data: LeadArticleProps[]) => {
-  let uniqueDates = new Set();
-  let processedData = data.map(item => {
-    let datePublished = item.datePublished;
-    if (uniqueDates.has(datePublished)) {
-      return { ...item, datePublished: undefined };
-    } else {
-      uniqueDates.add(datePublished);
-      return item;
-    }
-  });
-  return processedData;
-};
 
 export const ListViewSlice = ({
   leadArticles,
@@ -37,36 +28,11 @@ export const ListViewSlice = ({
     isLeadImage: false
   }));
 
-  mordifiedLeadArticles.sort((a, b) => {
-    const dateA = a.datePublished ? new Date(a.datePublished) : null;
-    const dateB = b.datePublished ? new Date(b.datePublished) : null;
+  mordifiedLeadArticles.sort(sortByDatePublished);
 
-    if (dateA === null && dateB === null) {
-      return 0;
-    } else if (dateA === null) {
-      return -1;
-    } else if (dateB === null) {
-      return 1;
-    } else {
-      return dateA.getTime() - dateB.getTime();
-    }
-  });
-
-  const initialEmptyObject: { [key: string]: LeadArticleProps[] } = {};
-  const groupedByDate = mordifiedLeadArticles.reduce((result, article) => {
-    const date = article.datePublished && article.datePublished.split('T')[0];
-
-    if (date) {
-      result[date] = result[date] || [];
-      result[date].push(article);
-    }
-
-    return result;
-  }, initialEmptyObject);
-
-  const arrayOfArrays = Object.values(groupedByDate).map(arrayOfArray =>
-    removeDuplicateDates(arrayOfArray)
-  );
+  const arrayOfArrays = Object.values(
+    groupArticlesByDate(mordifiedLeadArticles)
+  ).map(arrayOfArray => removeDuplicateDates(arrayOfArray));
 
   const articleWithAdSlot = arrayOfArrays.flat()[4];
 
