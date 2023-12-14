@@ -1,0 +1,47 @@
+import React from 'react';
+import '@testing-library/jest-dom';
+import { ListViewSlice } from '../index';
+import { leadArticles } from '../data.json';
+import { renderComponent } from '../../../utils';
+
+const mockClickHandler = jest.fn();
+
+const defaultProps = {
+  leadArticles,
+  clickHandler: mockClickHandler
+};
+
+describe('Render List View Slice', () => {
+  test('Slice matches snapshot', () => {
+    const { asFragment } = renderComponent(<ListViewSlice {...defaultProps} />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('modifies articles correctly when breakpointKey is "lg"', () => {
+    const { asFragment } = renderComponent(
+      <ListViewSlice {...defaultProps} />,
+      'lg'
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('modifies articles correctly when breakpointKey is "md"', () => {
+    const { asFragment } = renderComponent(
+      <ListViewSlice {...defaultProps} />,
+      'md'
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('modifies articles correctly when breakpointKey is "xs"', () => {
+    const { asFragment } = renderComponent(
+      <ListViewSlice {...defaultProps} />,
+      'xs'
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+  test('modifies articles correctly when breakpointKey is "sm"', () => {
+    const { asFragment } = renderComponent(
+      <ListViewSlice {...defaultProps} />,
+      'sm'
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+});
