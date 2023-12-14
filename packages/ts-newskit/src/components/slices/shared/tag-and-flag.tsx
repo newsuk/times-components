@@ -34,22 +34,23 @@ export const TagAndFlag = ({
 
   return (
     <Block marginBlockStart={marginBlockStart} data-testid="tag-and-flag">
-      {tag && (
-        <TagAndFlagWrapper>
-          <TextLink
-            overrides={{
-              typographyPreset: {
-                xs: 'utilityButton010',
-                md: 'utilityButton005'
-              },
-              stylePreset: 'inkBrand010'
-            }}
-            href={tag.href}
-          >
-            {tag.label}
-          </TextLink>
-        </TagAndFlagWrapper>
-      )}
+      {tag &&
+        tag.label !== '' && (
+          <TagAndFlagWrapper>
+            <TextLink
+              overrides={{
+                typographyPreset: {
+                  xs: 'utilityButton010',
+                  md: 'utilityButton005'
+                },
+                stylePreset: 'inkBrand010'
+              }}
+              href={tag.href}
+            >
+              {tag.label}
+            </TextLink>
+          </TagAndFlagWrapper>
+        )}
 
       {byline && (
         <TagAndFlagWrapper>
