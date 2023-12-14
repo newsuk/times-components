@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.147.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.146.1...@times-components/ts-newskit@1.147.0) (2023-12-14)
+
+
+### Features
+
+* **TMRX-1671:** fix hamburger menu alignment ([#3691](https://github.com/newsuk/times-components/issues/3691)) ([62a61ba](https://github.com/newsuk/times-components/commit/62a61baa4be3d605508caa08b804958a247ef99f))
+
+
+
+
+
 ## [1.146.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.146.0...@times-components/ts-newskit@1.146.1) (2023-12-08)
 
 **Note:** Version bump only for package @times-components/ts-newskit
