@@ -87,6 +87,7 @@
     "@times-components/user-state": "0.5.11",
     "@times-components/utils": "6.16.21",
     "@times-components/video": "4.15.23",
+    "newskit": "7.2.0",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "memoize-one": "5.1.1",

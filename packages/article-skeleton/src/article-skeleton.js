@@ -1,6 +1,8 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
+import { CanShowPuzzleSidebar } from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
+import { NewsKitProvider } from "newskit";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { StickyProvider } from "@times-components/sticky";
@@ -14,7 +16,9 @@ import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 import {
   TCThemeProvider,
-  UpdateButtonWithDelay
+  UpdateButtonWithDelay,
+  PuzzlesWebLightTheme,
+  ArticleSidebar
 } from "@times-components/ts-newskit";
 import StaticContent from "./static-content";
 
@@ -31,7 +35,9 @@ import {
   getHeaderAdStyles,
   HeaderContainer,
   MainContainer,
-  UpdateButtonContainer
+  UpdateButtonContainer,
+  PuzzlesSidebar,
+  SidebarWarpper
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -84,6 +90,72 @@ const ArticleSkeleton = ({
     isSharingEnabled,
     isCommentEnabled
   } = article;
+
+  const sidebarRef = useRef();
+
+  const handleScroll = () => {
+    const sidebarNode = sidebarRef.current;
+    if (sidebarNode) {
+      const adElements = document.querySelectorAll(
+        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
+      );
+      const relatedArticlesIds = [
+        "related-articles",
+        "sponsored-article-container",
+        "comments-container"
+      ];
+
+      let isAnyAdIntersecting = false;
+      let isAnyArticlesIntersecting = false;
+
+      adElements.forEach(adElement => {
+        if (adElement) {
+          const adRect = adElement.getBoundingClientRect();
+          const isAdIntersecting =
+            adRect.top <= sidebarNode.getBoundingClientRect().bottom &&
+            adRect.bottom >= sidebarNode.getBoundingClientRect().top;
+
+          if (isAdIntersecting) {
+            isAnyAdIntersecting = true;
+          }
+        }
+      });
+
+      relatedArticlesIds.forEach(id => {
+        const relatedArticlesElement = document.getElementById(id);
+        if (relatedArticlesElement) {
+          const relatedArticlesRect = relatedArticlesElement.getBoundingClientRect();
+          const isRelatedArticlesIntersecting =
+            relatedArticlesRect.top <= window.innerHeight &&
+            relatedArticlesRect.bottom >= 0;
+
+          if (isRelatedArticlesIntersecting) {
+            isAnyArticlesIntersecting = true;
+          }
+        }
+      });
+
+      if (isAnyAdIntersecting || isAnyArticlesIntersecting) {
+        sidebarNode.style.opacity = "0";
+      } else {
+        sidebarNode.style.opacity = "1";
+      }
+    }
+  };
+
+  useEffect(() => {
+    const sidebarNode = sidebarRef.current;
+    if (sidebarNode) {
+      sidebarNode.style.transition = "opacity 0.5s ease";
+    }
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
@@ -233,6 +305,39 @@ const ArticleSkeleton = ({
                   />
                 )}
               </HeaderContainer>
+              {CanShowPuzzleSidebar(section) && (
+                <SidebarWarpper>
+                  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+                    <PuzzlesSidebar ref={sidebarRef}>
+                      <ArticleSidebar
+                        pageLink="https://www.thetimes.co.uk/puzzles"
+                        sectionTitle="Puzzles"
+                        data={[
+                          {
+                            title: "Crossword",
+                            url: "https://www.thetimes.co.uk/puzzles/crossword",
+                            imgUrl:
+                              "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                          },
+                          {
+                            title: "Polygon",
+                            url:
+                              "https://www.thetimes.co.uk/puzzles/word-puzzles",
+                            imgUrl:
+                              "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                          },
+                          {
+                            title: "Sudoku",
+                            url: "https://www.thetimes.co.uk/puzzles/sudoku",
+                            imgUrl:
+                              "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0&resize=500"
+                          }
+                        ]}
+                      />
+                    </PuzzlesSidebar>
+                  </NewsKitProvider>
+                </SidebarWarpper>
+              )}
               <BodyContainer>
                 {!!zephrDivs && (
                   <StaticContent
