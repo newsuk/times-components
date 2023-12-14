@@ -4,20 +4,13 @@ import { ClickHandlerType } from '../types';
 import { CustomBlockLayout, WrappedStackLayout } from '../shared';
 import { Divider, TextBlock, Block, Stack, Visible } from 'newskit';
 import { ArticleStack } from './artcile-stack';
-import { StyledMainDivider, StyledAdContainer } from './styles';
+import { StyledMainDivider, StyledAdContainer, StyledAdBlock } from './styles';
 import { ListViewSliceMobile } from './mobile';
+import { convertDateToMonth } from '../../utils/date-formatting';
 
 export interface ListViewSliceProps {
-  leadArticle: LeadArticleProps[];
+  leadArticles: LeadArticleProps[];
   clickHandler: ClickHandlerType;
-}
-export function formatDate(publishDate: string) {
-  const timestamp = new Date(publishDate).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric'
-  });
-  return timestamp;
 }
 
 export function removeDuplicateDates(data: LeadArticleProps[]) {
@@ -36,32 +29,58 @@ export function removeDuplicateDates(data: LeadArticleProps[]) {
 }
 
 export const ListViewSlice = ({
-  leadArticle,
+  leadArticles,
   clickHandler
 }: ListViewSliceProps) => {
-  leadArticle.sort(
-    (a, b) => new Date(a.datePublished) - new Date(b.datePublished)
-  );
+  const mordifiedLeadArticles = leadArticles.map(item => ({
+    ...item,
+    headlineTypographyPreset: 'editorialHeadline020',
+    isLeadImage: false
+  }));
+  console.log({ mordifiedLeadArticles });
+  mordifiedLeadArticles.sort((a, b) => {
+    const dateA = a.datePublished ? new Date(a.datePublished) : null;
+    const dateB = b.datePublished ? new Date(b.datePublished) : null;
 
-  const groupedByDate = leadArticle.reduce((result, article) => {
-    const date = article.datePublished.split('T')[0];
-    result[date] = result[date] || [];
-    result[date].push(article);
-    return result;
-  }, {});
+    if (dateA === null && dateB === null) {
+      return 0;
+    } else if (dateA === null) {
+      return -1;
+    } else if (dateB === null) {
+      return 1;
+    } else {
+      return dateA.getTime() - dateB.getTime();
+    }
+  });
+
+  const groupedByDate: {
+    [key: string]: LeadArticleProps[];
+  } = mordifiedLeadArticles.reduce(
+    (result, article) => {
+      const date = article.datePublished && article.datePublished.split('T')[0];
+
+      if (date) {
+        result[date] = result[date] || [];
+        result[date].push(article);
+      }
+
+      return result;
+    },
+    {} as { [key: string]: LeadArticleProps[] }
+  );
 
   const arrayOfArrays = Object.values(groupedByDate).map(arrayOfArray =>
     removeDuplicateDates(arrayOfArray)
   );
 
-  const fifthArticle = arrayOfArrays.flat()[4];
+  const articleWithAdSlot = arrayOfArrays.flat()[4];
 
   return (
     <CustomBlockLayout>
       <Visible md lg xl>
         <Stack flow="horizontal-top">
           <Block>
-            {arrayOfArrays.map((item, index) => {
+            {arrayOfArrays.map((arrayOfArray, index) => {
               return (
                 <Fragment>
                   <StyledMainDivider>
@@ -94,15 +113,15 @@ export const ListViewSlice = ({
                             width: '109px'
                           }}
                         >
-                          {item[0].datePublished &&
-                            formatDate(item[0].datePublished)}
+                          {arrayOfArray[0].datePublished &&
+                            convertDateToMonth(arrayOfArray[0].datePublished)}
                         </TextBlock>
                       </Block>
                       <Block>
                         <ArticleStack
-                          leadArticle={item}
+                          leadArticle={arrayOfArray}
                           clickHandler={clickHandler}
-                          fifthArticle={fifthArticle}
+                          articleWithAdSlot={articleWithAdSlot}
                         />
                       </Block>
                     </Stack>
@@ -119,16 +138,14 @@ export const ListViewSlice = ({
                 position: 'fixed'
               }}
             >
-              <Stack flow="horizontal-top">
-                <TextBlock>Advertisement</TextBlock>
+              <Stack
+                flow="horizontal-center"
+                stackDistribution="center"
+                marginBlock="space030"
+              >
+                ADVERTISEMENT
               </Stack>
-              <Block
-                style={{
-                  width: '300px',
-                  height: '600px',
-                  background: '#FF5858'
-                }}
-              />
+              <StyledAdBlock />
             </Block>
           </StyledAdContainer>
         </Stack>
@@ -136,7 +153,7 @@ export const ListViewSlice = ({
       <WrappedStackLayout>
         <Visible xs sm>
           <ListViewSliceMobile
-            leadArticle={leadArticle}
+            leadArticle={mordifiedLeadArticles}
             clickHandler={clickHandler}
           />
         </Visible>

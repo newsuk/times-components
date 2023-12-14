@@ -6,13 +6,13 @@ import {
 import { ClickHandlerType } from '../types';
 import { StyledAdBlock, StyledBlock } from './styles';
 import { CustomBlockLayout } from '../shared';
-import { Divider, TextBlock, Block, Visible } from 'newskit';
+import { Divider, TextBlock, Block, Visible, Stack } from 'newskit';
 
 export interface ListViewSliceProps {
   leadArticle: LeadArticleProps[];
   clickHandler: ClickHandlerType;
 }
-StyledBlock;
+
 export const ListViewSliceMobile = ({
   leadArticle,
   clickHandler
@@ -28,7 +28,7 @@ export const ListViewSliceMobile = ({
 
   return (
     <CustomBlockLayout>
-      {leadArticle.map((item: leadArticle, index) => {
+      {leadArticle.map((item: LeadArticleProps, index) => {
         return (
           <Visible xs sm>
             <TextBlock
@@ -44,7 +44,7 @@ export const ListViewSliceMobile = ({
               marginInlineEnd="space060"
               marginBlockEnd="space040"
             >
-              {formatDate(item.datePublished)}
+              {item.datePublished && formatDate(item.datePublished)}
             </TextBlock>
             <StyledBlock>
               <LeadArticle
@@ -72,7 +72,18 @@ export const ListViewSliceMobile = ({
                 />
               </Block>
             )}
-            {index === 4 && <StyledAdBlock>Billboard 970 x 250</StyledAdBlock>}
+            {index === 4 && (
+              <>
+                <Stack
+                  flow="horizontal-center"
+                  stackDistribution="center"
+                  marginBlock="space030"
+                >
+                  ADVERTISEMENT
+                </Stack>
+                <StyledAdBlock />
+              </>
+            )}
           </Visible>
         );
       })}

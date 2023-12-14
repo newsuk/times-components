@@ -4,18 +4,18 @@ import {
   LeadArticleProps
 } from '../../components/slices/lead-article';
 import { ClickHandlerType } from '../types';
-import { Divider, Block, Visible, Hidden } from 'newskit';
+import { Divider, Block, Visible, Hidden, Stack } from 'newskit';
 import { StyledAdBlock } from './styles';
 
 export interface ListViewSliceProps {
   leadArticle: LeadArticleProps[];
   clickHandler: ClickHandlerType;
-  fifthArticle: LeadArticleProps;
+  articleWithAdSlot: LeadArticleProps;
 }
 
 export const ArticleStack = ({
   leadArticle,
-  fifthArticle,
+  articleWithAdSlot,
   clickHandler
 }: ListViewSliceProps) => {
   return (
@@ -41,7 +41,7 @@ export const ArticleStack = ({
             <Visible md>
               {leadArticle.length > 1 &&
                 index < leadArticle.length - 1 &&
-                fifthArticle.id !== item.id && (
+                articleWithAdSlot.id !== item.id && (
                   <Block marginBlock="space040">
                     <Divider
                       overrides={{
@@ -63,26 +63,29 @@ export const ArticleStack = ({
                   </Block>
                 )}
             </Hidden>
-            <div style={{ marginLeft: '-170px', marginRight: '-30px' }}>
-              {fifthArticle.id === item.id && (
+            <Block style={{ marginLeft: '-170px', marginRight: '-30px' }}>
+              {articleWithAdSlot.id === item.id && (
                 <>
                   <Visible md>
-                    <div
-                      style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        padding: '10px 0',
-                        borderTop: '1px solid black',
-                        marginTop: '40px'
+                    <Divider
+                      overrides={{
+                        marginBlockEnd: 'space030',
+                        marginBlockStart: 'space060',
+                        stylePreset: 'lightDivider'
                       }}
+                    />
+                    <Stack
+                      flow="horizontal-center"
+                      stackDistribution="center"
+                      marginBlockEnd="space030"
                     >
-                      advertisement
-                    </div>
+                      ADVERTISEMENT
+                    </Stack>
+                    <StyledAdBlock />
                   </Visible>
-                  <StyledAdBlock />
                 </>
               )}
-            </div>
+            </Block>
           </>
         );
       })}

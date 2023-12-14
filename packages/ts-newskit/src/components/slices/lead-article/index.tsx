@@ -42,6 +42,7 @@ export interface LeadArticleProps {
     href: string;
   };
   imageTop?: boolean;
+  isLeadImage?: boolean;
   byline?: string;
   hasTopBorder?: boolean;
   contentTop?: boolean;
@@ -79,6 +80,7 @@ export const LeadArticle = ({
     hasTopBorder = true,
     contentTop,
     contentWidth,
+    isLeadImage,
     columnGap,
     headlineTypographyPreset,
     loadingAspectRatio,
@@ -162,20 +164,21 @@ export const LeadArticle = ({
                 />
               </a>
             </FullWidthGridLayoutItem>
-            {hasCaptionOrCredits && (
-              <TextBlock
-                typographyPreset="editorialCaption010"
-                stylePreset="inkSubtle"
-              >
-                {images && images.caption}
-                {images &&
-                  images.credits && (
-                    <StyledSpan hasCaption={hasCaption}>
-                      {images.credits}
-                    </StyledSpan>
-                  )}
-              </TextBlock>
-            )}
+            {hasCaptionOrCredits &&
+              isLeadImage && (
+                <TextBlock
+                  typographyPreset="editorialCaption010"
+                  stylePreset="inkSubtle"
+                >
+                  {images && images.caption}
+                  {images &&
+                    images.credits && (
+                      <StyledSpan hasCaption={hasCaption}>
+                        {images.credits}
+                      </StyledSpan>
+                    )}
+                </TextBlock>
+              )}
           </Block>
         )}
 

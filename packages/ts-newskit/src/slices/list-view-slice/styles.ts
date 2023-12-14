@@ -49,15 +49,16 @@ export const StyledAdContainer = styled(Block)`
 export const StyledAdBlock = styled(Block)`
   height: 250px;
   background: #ff5858;
-  margin: 30px -20px;
-  font-size: 30px;
+  margin-bottom: 30px;
   ${getMediaQueryFromTheme('md')} {
     height: 250px;
     background: #ff5858;
     margin: 0 0 30px 0;
-    font-size: 30px;
   }
+
   ${getMediaQueryFromTheme('lg')} {
-    display: none;
+    width: 300px;
+    height: 600px;
+    background: #ff5858;
   }
 `;
