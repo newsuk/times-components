@@ -33,7 +33,7 @@ export interface LeadArticleProps {
   contentType?: string;
   hasVideo: boolean;
   label?: string;
-  datePublished?: string;
+  datePublished?: string | null;
   expirableFlags?: expirableFlagsProps[];
   images?: ImageProps;
   url: string;
