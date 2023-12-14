@@ -9,12 +9,12 @@ import {
   Divider,
   Stack,
   IconButton,
-  useInstrumentation
+  useInstrumentation,
+  EventTrigger
 } from 'newskit';
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
 import { StyledCardComposable } from './styles';
-import { sidebarClickEvent } from './tracking/tealium';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
@@ -22,15 +22,25 @@ export interface ArticleSideBarProps {
   pageLink: string;
 }
 
+export const sidebarClickEvent = () => ({
+  originator: 'Puzzle Sidebar',
+  trigger: EventTrigger.Click,
+  context: {
+    event_navigation_action: 'navigation',
+    event_navigation_name: 'puzzle sidebar: header selected',
+    event_navigation_browsing_method: 'click'
+  }
+});
+
 export const ArticleSidebar: FC<ArticleSideBarProps> = ({
   sectionTitle,
   data,
   pageLink
 }) => {
-
   const { fireEvent } = useInstrumentation();
   const onClickSidebarHeader = () => {
-    fireEvent(sidebarClickEvent());
+    const event = sidebarClickEvent();
+    fireEvent(event);
   };
 
   return (
@@ -43,9 +53,15 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
               stylePreset: 'cardTitleIcon'
             }}
           >
-            <CardLink external={false} expand href={pageLink} />
+            <CardLink
+              className="trigger"
+              external={false}
+              expand
+              href={pageLink}
+              onClick={onClickSidebarHeader}
+            />
             <Stack flow="horizontal-center" stackDistribution="space-between">
-              <TextBlock as="h3" typographyPreset="editorialDisplay002" onClick={onClickSidebarHeader}>
+              <TextBlock as="h3" typographyPreset="editorialDisplay002">
                 {sectionTitle}
               </TextBlock>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArticleSidebar, ArticleSideBarProps } from '../index';
+import { fireEvent } from '@testing-library/react';
 import { render } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 
@@ -29,5 +30,10 @@ describe('ArticleSidebar', () => {
   it('should render ArticleSidebar component', () => {
     const { asFragment } = renderComponent(defaultProps);
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should call onClickSidebarHeader when header is clicked', () => {
+    const { container } = render(<ArticleSidebar {...defaultProps} />);
+    fireEvent.click(container.querySelector('.trigger')!);
   });
 });

@@ -15,7 +15,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
           class="css-17dke9t"
         >
           <a
-            class="css-xm00pa"
+            class="trigger css-xm00pa"
             href="https://www.thetimes.co.uk/puzzles"
           >
             <span
