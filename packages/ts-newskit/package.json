@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-newskit",
-  "version": "1.146.1",
+  "version": "1.146.2-alpha.3",
   "description": "Reuseable Typescript React Components",
   "main": "dist/index.js",
   "dev": "dist/index.js",
