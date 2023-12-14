@@ -6,7 +6,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
     class="css-13byt3y"
   >
     <div
-      class="css-tpqlc3"
+      class="css-rnfvhm"
     >
       <h2
         class="css-16qz5b"
@@ -316,7 +316,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
       </svg>
     </div>
     <svg
-      class="css-3yvuk1"
+      class="css-22vdtv"
       height="24"
       overrides="[object Object]"
       preserveAspectRatio="none"
