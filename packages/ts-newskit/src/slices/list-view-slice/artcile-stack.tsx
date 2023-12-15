@@ -5,7 +5,7 @@ import {
 } from '../../components/slices/lead-article';
 import { ClickHandlerType } from '../types';
 import { Divider, Block, Visible, Hidden, Stack } from 'newskit';
-import { StyledAdBlock } from './styles';
+import { StyledAdBlock, AdBlockWrapperMedium } from './styles';
 
 export interface ListViewSliceProps {
   leadArticle: LeadArticleProps[];
@@ -63,7 +63,7 @@ export const ArticleStack = ({
                   </Block>
                 )}
             </Hidden>
-            <Block style={{ marginLeft: '-170px', marginRight: '-30px' }}>
+            <AdBlockWrapperMedium>
               {articleWithAdSlot.id === item.id && (
                 <>
                   <Visible md>
@@ -85,7 +85,7 @@ export const ArticleStack = ({
                   </Visible>
                 </>
               )}
-            </Block>
+            </AdBlockWrapperMedium>
           </>
         );
       })}

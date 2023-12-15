@@ -24,14 +24,8 @@ export const ListViewSliceMobile = ({
         return (
           <Visible xs sm>
             <TextBlock
-              typographyPreset={{
-                xs: 'utilityMeta010',
-                md: 'utilityMeta005'
-              }}
-              stylePreset={{
-                xs: 'utilityButton010',
-                md: 'utilityButton005'
-              }}
+              typographyPreset="utilityLabel005"
+              stylePreset="inkNonEssential"
               as="span"
               marginInlineEnd="space060"
               marginBlockEnd="space040"

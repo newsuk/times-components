@@ -2,9 +2,15 @@ import React, { Fragment } from 'react';
 import { LeadArticleProps } from '../../components/slices/lead-article';
 import { ClickHandlerType } from '../types';
 import { CustomBlockLayout, WrappedStackLayout } from '../shared';
-import { Divider, TextBlock, Block, Stack, Visible } from 'newskit';
+import { Divider, Block, Stack, Visible } from 'newskit';
 import { ArticleStack } from './artcile-stack';
-import { StyledMainDivider, StyledAdContainer, StyledAdBlock } from './styles';
+import {
+  StyledMainDivider,
+  StyledAdContainer,
+  StyledAdBlock,
+  StyledDateText,
+  AdBlockWrapperLargeAndAbove
+} from './styles';
 import { ListViewSliceMobile } from './mobile';
 import { convertDateToMonth } from '../../utils/date-formatting';
 import {
@@ -56,24 +62,14 @@ export const ListViewSlice = ({
                       <Block
                         marginInlineEnd={{ md: 'space060', xl: 'space080' }}
                       >
-                        <TextBlock
-                          typographyPreset={{
-                            xs: 'utilityMeta010',
-                            md: 'utilityMeta005'
-                          }}
-                          stylePreset={{
-                            xs: 'utilityButton010',
-                            md: 'utilityButton005'
-                          }}
+                        <StyledDateText
+                          typographyPreset="utilityLabel005"
+                          stylePreset="inkNonEssential"
                           as="span"
-                          style={{
-                            whiteSpace: 'nowrap',
-                            width: '109px'
-                          }}
                         >
                           {arrayOfArray[0].datePublished &&
                             convertDateToMonth(arrayOfArray[0].datePublished)}
-                        </TextBlock>
+                        </StyledDateText>
                       </Block>
                       <Block>
                         <ArticleStack
@@ -91,11 +87,7 @@ export const ListViewSlice = ({
           <StyledAdContainer
             marginInlineStart={{ lg: 'space060', xl: 'space100' }}
           >
-            <Block
-              style={{
-                position: 'fixed'
-              }}
-            >
+            <AdBlockWrapperLargeAndAbove>
               <Stack
                 flow="horizontal-center"
                 stackDistribution="center"
@@ -104,9 +96,15 @@ export const ListViewSlice = ({
                 ADVERTISEMENT
               </Stack>
               <StyledAdBlock />
-            </Block>
+            </AdBlockWrapperLargeAndAbove>
           </StyledAdContainer>
         </Stack>
+        <Divider
+          overrides={{
+            stylePreset: 'dashedDivider',
+            marginBlockStart: 'space080'
+          }}
+        />
       </Visible>
       <WrappedStackLayout>
         <Visible xs sm>

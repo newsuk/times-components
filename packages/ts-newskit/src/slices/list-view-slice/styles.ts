@@ -1,4 +1,4 @@
-import { Block, styled, getMediaQueryFromTheme } from 'newskit';
+import { Block, styled, getMediaQueryFromTheme, TextBlock } from 'newskit';
 
 export const StyledBlock = styled(Block)`
   .lead-image-container {
@@ -61,4 +61,18 @@ export const StyledAdBlock = styled(Block)`
     height: 600px;
     background: #ff5858;
   }
+`;
+
+export const StyledDateText = styled(TextBlock)`
+  white-space: nowrap;
+  width: 109px;
+`;
+
+export const AdBlockWrapperLargeAndAbove = styled(Block)`
+  position: fixed;
+`;
+
+export const AdBlockWrapperMedium = styled(Block)`
+  margin-left: -170px;
+  margin-right: -30px;
 `;
