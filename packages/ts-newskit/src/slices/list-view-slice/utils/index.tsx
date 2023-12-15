@@ -31,13 +31,14 @@ export const removeDuplicateDates = (data: LeadArticleProps[]) => {
 
 export const sortByDatePublished = (
   a: LeadArticleProps,
-  b: LeadArticleProps
+  b: LeadArticleProps,
+  sortOrder: 'asc' | 'dsc' = 'asc'
 ) => {
   const dateA = a.datePublished ? new Date(a.datePublished) : null;
   const dateB = b.datePublished ? new Date(b.datePublished) : null;
 
-  return (
-    (dateA !== null ? dateA.getTime() : 0) -
-    (dateB !== null ? dateB.getTime() : 0)
-  );
+  const numA = dateA !== null ? dateA.getTime() : 0;
+  const numB = dateB !== null ? dateB.getTime() : 0;
+
+  return sortOrder === 'asc' ? numA - numB : numB - numA;
 };

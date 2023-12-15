@@ -10,7 +10,6 @@ import { convertDateToMonth } from '../../utils/date-formatting';
 import {
   groupArticlesByDate,
   removeDuplicateDates,
-  sortByDatePublished
 } from './utils';
 
 export interface ListViewSliceProps {
@@ -27,8 +26,6 @@ export const ListViewSlice = ({
     headlineTypographyPreset: 'editorialHeadline020',
     isLeadImage: false
   }));
-
-  mordifiedLeadArticles.sort(sortByDatePublished);
 
   const arrayOfArrays = Object.values(
     groupArticlesByDate(mordifiedLeadArticles)

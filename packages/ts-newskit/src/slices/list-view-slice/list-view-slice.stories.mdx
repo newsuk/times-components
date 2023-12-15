@@ -3,6 +3,7 @@ import { GridOverlay, TCThemeProvider, TimesWebThemes } from '../../utils/index.
 import { ListViewSlice } from "./";
 import { leadArticles } from './data.json';
 import { action } from '@storybook/addon-actions';
+import { sortByDatePublished } from './utils/index';
 
 <Meta
   title="Newskit Slices/List View Slice"
@@ -39,7 +40,7 @@ ListViewSliceStory.args = {
 <Story 
   name="ListViewSlice"
   args={{
-    leadArticles,
+    leadArticles: leadArticles.sort((a, b) => sortByDatePublished(a, b, 'dsc')),
     clickHandler: action("ClickHandler"),
   }}
   argTypes={{
