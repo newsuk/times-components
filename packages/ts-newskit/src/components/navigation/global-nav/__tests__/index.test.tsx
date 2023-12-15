@@ -9,10 +9,11 @@ import {
 } from '../index';
 
 const mockClickHandler = jest.fn();
+const mockOnClick = jest.fn();
 
 const renderComponent = (isLoggedIn?: boolean) =>
   render(
-    <GlobalNav {...{ isLoggedIn, data }} clickHandler={mockClickHandler} />
+    <GlobalNav {...{ isLoggedIn, data }} clickHandler={mockClickHandler} onClick={mockOnClick}/>
   );
 
 describe('Render GlobalNav', () => {
@@ -59,6 +60,7 @@ describe('GlobalNavWithCustomDrawer', () => {
         isLoggedIn={false}
         isSunday={false}
         clickHandler={mockClickHandler}
+        onClick={mockOnClick}
       />
     );
     expect(asFragment()).toBeTruthy();
@@ -71,6 +73,7 @@ describe('GlobalNavWithCustomDrawer', () => {
         isLoggedIn={true}
         isSunday={false}
         clickHandler={mockClickHandler}
+        onClick={mockOnClick}
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -82,6 +85,7 @@ describe('GlobalNavWithCustomDrawer', () => {
         data={data}
         isSunday={false}
         clickHandler={mockClickHandler}
+        onClick={mockOnClick}
       />
     );
     expect(asFragment()).toMatchSnapshot();
