@@ -17,6 +17,7 @@ import {
   groupArticlesByDate,
   removeDuplicateDates,
 } from './utils';
+import { Paginations } from './pagination';
 
 export interface ListViewSliceProps {
   leadArticles: LeadArticleProps[];
@@ -105,6 +106,13 @@ export const ListViewSlice = ({
             marginBlockStart: 'space080'
           }}
         />
+        <Stack
+          flow="horizontal-center"
+          stackDistribution="center"
+          marginBlockStart="space060"
+        >
+          <Paginations />
+        </Stack>
       </Visible>
       <WrappedStackLayout>
         <Visible xs sm>

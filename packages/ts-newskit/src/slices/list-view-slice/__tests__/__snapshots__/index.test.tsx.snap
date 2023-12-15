@@ -2042,6 +2042,387 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
           class="css-ya35i8"
           data-testid="divider"
         />
+        <div
+          class="css-ribncx"
+        >
+          <nav
+            aria-label="input for selected item"
+            class="css-1ewdlr8"
+            data-testid="pagination-container"
+          >
+            <ul
+              class="css-wx88k6"
+            >
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to first page"
+                  class="css-bi08xr"
+                  data-testid="pagination-first-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"
+                    />
+                    <path
+                      d="M24 24H0V0h24v24z"
+                      fill="none"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to previous page"
+                  class="css-bi08xr"
+                  data-testid="pagination-prev-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 1"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      1
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                aria-hidden="true"
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-disabled="true"
+                  class="css-mff5ot"
+                  data-testid="pagination-item"
+                  disabled=""
+                  type="button"
+                >
+                  <span
+                    class="css-135wemz"
+                  >
+                    [
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="css-aj6bir-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="css-135wemz"
+                  >
+                    ]
+                  </span>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 6"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      6
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 7"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      7
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 8"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      8
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-current="page"
+                    aria-label="current page, page 9"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      9
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 10"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      10
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 11"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      11
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 12"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      12
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                aria-hidden="true"
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-disabled="true"
+                  class="css-mff5ot"
+                  data-testid="pagination-item"
+                  disabled=""
+                  type="button"
+                >
+                  <span
+                    class="css-135wemz"
+                  >
+                    [
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="css-aj6bir-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="css-135wemz"
+                  >
+                    ]
+                  </span>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 24"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      24
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to next page"
+                  class="css-bi08xr"
+                  data-testid="pagination-next-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to last page"
+                  class="css-bi08xr"
+                  data-testid="pagination-last-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div
         class="css-1gwix8r"
@@ -5943,6 +6324,387 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
           class="css-ya35i8"
           data-testid="divider"
         />
+        <div
+          class="css-ribncx"
+        >
+          <nav
+            aria-label="input for selected item"
+            class="css-1ewdlr8"
+            data-testid="pagination-container"
+          >
+            <ul
+              class="css-wx88k6"
+            >
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to first page"
+                  class="css-bi08xr"
+                  data-testid="pagination-first-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"
+                    />
+                    <path
+                      d="M24 24H0V0h24v24z"
+                      fill="none"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to previous page"
+                  class="css-bi08xr"
+                  data-testid="pagination-prev-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 1"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      1
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                aria-hidden="true"
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-disabled="true"
+                  class="css-mff5ot"
+                  data-testid="pagination-item"
+                  disabled=""
+                  type="button"
+                >
+                  <span
+                    class="css-135wemz"
+                  >
+                    [
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="css-aj6bir-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="css-135wemz"
+                  >
+                    ]
+                  </span>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 6"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      6
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 7"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      7
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 8"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      8
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-current="page"
+                    aria-label="current page, page 9"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      9
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 10"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      10
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 11"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      11
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 12"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      12
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                aria-hidden="true"
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-disabled="true"
+                  class="css-mff5ot"
+                  data-testid="pagination-item"
+                  disabled=""
+                  type="button"
+                >
+                  <span
+                    class="css-135wemz"
+                  >
+                    [
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="css-aj6bir-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="css-135wemz"
+                  >
+                    ]
+                  </span>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 24"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      24
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to next page"
+                  class="css-bi08xr"
+                  data-testid="pagination-next-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to last page"
+                  class="css-bi08xr"
+                  data-testid="pagination-last-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div
         class="css-1gwix8r"
@@ -9844,6 +10606,387 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
           class="css-ya35i8"
           data-testid="divider"
         />
+        <div
+          class="css-ribncx"
+        >
+          <nav
+            aria-label="input for selected item"
+            class="css-1ewdlr8"
+            data-testid="pagination-container"
+          >
+            <ul
+              class="css-wx88k6"
+            >
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to first page"
+                  class="css-bi08xr"
+                  data-testid="pagination-first-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"
+                    />
+                    <path
+                      d="M24 24H0V0h24v24z"
+                      fill="none"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to previous page"
+                  class="css-bi08xr"
+                  data-testid="pagination-prev-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 1"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      1
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                aria-hidden="true"
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-disabled="true"
+                  class="css-mff5ot"
+                  data-testid="pagination-item"
+                  disabled=""
+                  type="button"
+                >
+                  <span
+                    class="css-135wemz"
+                  >
+                    [
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="css-aj6bir-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="css-135wemz"
+                  >
+                    ]
+                  </span>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 6"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      6
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 7"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      7
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 8"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      8
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-current="page"
+                    aria-label="current page, page 9"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      9
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 10"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      10
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 11"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      11
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 12"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      12
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                aria-hidden="true"
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-disabled="true"
+                  class="css-mff5ot"
+                  data-testid="pagination-item"
+                  disabled=""
+                  type="button"
+                >
+                  <span
+                    class="css-135wemz"
+                  >
+                    [
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="css-aj6bir-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="css-135wemz"
+                  >
+                    ]
+                  </span>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 24"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      24
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to next page"
+                  class="css-bi08xr"
+                  data-testid="pagination-next-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to last page"
+                  class="css-bi08xr"
+                  data-testid="pagination-last-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div
         class="css-1gwix8r"
@@ -13745,6 +14888,387 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
           class="css-ya35i8"
           data-testid="divider"
         />
+        <div
+          class="css-ribncx"
+        >
+          <nav
+            aria-label="input for selected item"
+            class="css-1ewdlr8"
+            data-testid="pagination-container"
+          >
+            <ul
+              class="css-wx88k6"
+            >
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to first page"
+                  class="css-bi08xr"
+                  data-testid="pagination-first-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"
+                    />
+                    <path
+                      d="M24 24H0V0h24v24z"
+                      fill="none"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to previous page"
+                  class="css-bi08xr"
+                  data-testid="pagination-prev-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 1"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      1
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                aria-hidden="true"
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-disabled="true"
+                  class="css-mff5ot"
+                  data-testid="pagination-item"
+                  disabled=""
+                  type="button"
+                >
+                  <span
+                    class="css-135wemz"
+                  >
+                    [
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="css-aj6bir-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="css-135wemz"
+                  >
+                    ]
+                  </span>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 6"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      6
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 7"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      7
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 8"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      8
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-current="page"
+                    aria-label="current page, page 9"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      9
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 10"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      10
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 11"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      11
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 12"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      12
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                aria-hidden="true"
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-disabled="true"
+                  class="css-mff5ot"
+                  data-testid="pagination-item"
+                  disabled=""
+                  type="button"
+                >
+                  <span
+                    class="css-135wemz"
+                  >
+                    [
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="css-aj6bir-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="css-135wemz"
+                  >
+                    ]
+                  </span>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 24"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      24
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to next page"
+                  class="css-bi08xr"
+                  data-testid="pagination-next-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to last page"
+                  class="css-bi08xr"
+                  data-testid="pagination-last-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div
         class="css-1gwix8r"
@@ -17645,6 +19169,387 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
           class="css-ya35i8"
           data-testid="divider"
         />
+        <div
+          class="css-ribncx"
+        >
+          <nav
+            aria-label="input for selected item"
+            class="css-1ewdlr8"
+            data-testid="pagination-container"
+          >
+            <ul
+              class="css-wx88k6"
+            >
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to first page"
+                  class="css-bi08xr"
+                  data-testid="pagination-first-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"
+                    />
+                    <path
+                      d="M24 24H0V0h24v24z"
+                      fill="none"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to previous page"
+                  class="css-bi08xr"
+                  data-testid="pagination-prev-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 1"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      1
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                aria-hidden="true"
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-disabled="true"
+                  class="css-mff5ot"
+                  data-testid="pagination-item"
+                  disabled=""
+                  type="button"
+                >
+                  <span
+                    class="css-135wemz"
+                  >
+                    [
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="css-aj6bir-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="css-135wemz"
+                  >
+                    ]
+                  </span>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 6"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      6
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 7"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      7
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 8"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      8
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-current="page"
+                    aria-label="current page, page 9"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      9
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 10"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      10
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 11"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      11
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 12"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      12
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                aria-hidden="true"
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-disabled="true"
+                  class="css-mff5ot"
+                  data-testid="pagination-item"
+                  disabled=""
+                  type="button"
+                >
+                  <span
+                    class="css-135wemz"
+                  >
+                    [
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="css-aj6bir-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+                    />
+                  </svg>
+                  <span
+                    class="css-135wemz"
+                  >
+                    ]
+                  </span>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <div
+                  class="css-1ao2mke"
+                >
+                  <button
+                    aria-label="go to page 24"
+                    class="css-f83137"
+                    data-testid="pagination-item"
+                    type="button"
+                  >
+                    <span
+                      class="css-135wemz"
+                    >
+                      24
+                    </span>
+                  </button>
+                </div>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to next page"
+                  class="css-bi08xr"
+                  data-testid="pagination-next-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+                    />
+                  </svg>
+                </button>
+              </li>
+              <li
+                class="css-1o2fxxh"
+              >
+                <button
+                  aria-label="go to last page"
+                  class="css-bi08xr"
+                  data-testid="pagination-last-item"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <div
         class="css-1gwix8r"
