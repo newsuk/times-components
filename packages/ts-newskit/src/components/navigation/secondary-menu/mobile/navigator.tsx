@@ -15,6 +15,7 @@ export const Navigator: React.FC<{
   return (
     <MenuContainerMob
       paddingInline="space045"
+      isDefault={theme.name === 'times-web-light'}
       onClick={() => {
         setIsExpanded(!isExpanded);
         onClick && onClick(!isExpanded);
@@ -22,7 +23,7 @@ export const Navigator: React.FC<{
     >
       <ColouredText
         typographyPreset="utilitySubheading010"
-        $color={theme.colors.sectionBrand060 && 'white'}
+        $color={theme.name === 'times-web-light' ? 'black' : 'white'}
       >
         {title}
       </ColouredText>

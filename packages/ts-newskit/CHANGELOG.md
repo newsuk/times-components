@@ -3,6 +3,122 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.147.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.146.1...@times-components/ts-newskit@1.147.0) (2023-12-14)
+
+
+### Features
+
+* **TMRX-1671:** fix hamburger menu alignment ([#3691](https://github.com/newsuk/times-components/issues/3691)) ([62a61ba](https://github.com/newsuk/times-components/commit/62a61baa4be3d605508caa08b804958a247ef99f))
+
+
+
+
+
+## [1.146.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.146.0...@times-components/ts-newskit@1.146.1) (2023-12-08)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+# [1.146.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.145.0...@times-components/ts-newskit@1.146.0) (2023-12-07)
+
+
+### Features
+
+* **TMRX-1714:** implement category labels design feedback ([#3684](https://github.com/newsuk/times-components/issues/3684)) ([2ce1cf6](https://github.com/newsuk/times-components/commit/2ce1cf6c808b2ce792d9199abddf23cf99ad0668))
+
+
+
+
+
+# [1.145.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.144.0...@times-components/ts-newskit@1.145.0) (2023-12-07)
+
+
+### Features
+
+* **TMPZ-279:** FAQ block mobile bugs ([#3682](https://github.com/newsuk/times-components/issues/3682)) ([bd55906](https://github.com/newsuk/times-components/commit/bd559068c243b1bd33b724ad965124845bb2ac57))
+* **TMRX-1687:** tracking added into breadcrumb ([#3679](https://github.com/newsuk/times-components/issues/3679)) ([c2b8cea](https://github.com/newsuk/times-components/commit/c2b8cea173cb654fafa00913eac4c2b2f17a3262))
+
+
+
+
+
+# [1.144.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.143.0...@times-components/ts-newskit@1.144.0) (2023-12-07)
+
+
+### Features
+
+* **TMRX-0000:** disable summary for mobile ([#3683](https://github.com/newsuk/times-components/issues/3683)) ([b9d375e](https://github.com/newsuk/times-components/commit/b9d375e26fbafd7266b765e6e0356515a29ec5f9))
+
+
+
+
+
+# [1.143.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.142.0...@times-components/ts-newskit@1.143.0) (2023-12-06)
+
+
+### Features
+
+* **tmrx-0000:** cleanup any ([#3681](https://github.com/newsuk/times-components/issues/3681)) ([80b8162](https://github.com/newsuk/times-components/commit/80b816265a3e082fe03e4dafc446a07c729790af))
+
+
+
+
+
+# [1.142.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.141.0...@times-components/ts-newskit@1.142.0) (2023-12-05)
+
+
+### Features
+
+* **TMRX-1582:** add tracking to global navigation ([#3672](https://github.com/newsuk/times-components/issues/3672)) ([a1eb38c](https://github.com/newsuk/times-components/commit/a1eb38c34b30c8f334223488dfd26f8034f335cb))
+
+
+
+
+
+# [1.141.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.8...@times-components/ts-newskit@1.141.0) (2023-12-04)
+
+
+### Features
+
+* **TMPZ-277:** aded hide dash option to cards container ([#3678](https://github.com/newsuk/times-components/issues/3678)) ([5617e0e](https://github.com/newsuk/times-components/commit/5617e0e1836baa314d4024d9ac64a9415736f49e))
+
+
+
+
+
+## [1.140.8](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.7...@times-components/ts-newskit@1.140.8) (2023-12-04)
+
+
+### Bug Fixes
+
+* **TMRX-1578:** remove line break after expirable flag ([#3674](https://github.com/newsuk/times-components/issues/3674)) ([71e4028](https://github.com/newsuk/times-components/commit/71e40286227ba91821e7de2569df1d9ddbbfd908))
+
+
+
+
+
+## [1.140.7](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.6...@times-components/ts-newskit@1.140.7) (2023-12-01)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.140.6](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.5...@times-components/ts-newskit@1.140.6) (2023-11-29)
+
+
+### Bug Fixes
+
+* **TMRX-1635:** fix article image spacing ([#3665](https://github.com/newsuk/times-components/issues/3665)) ([8644d09](https://github.com/newsuk/times-components/commit/8644d09e8f18a333003d1f0cd179605ac6da4b69))
+
+
+
+
+
 ## [1.140.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.140.4...@times-components/ts-newskit@1.140.5) (2023-11-29)
 
 

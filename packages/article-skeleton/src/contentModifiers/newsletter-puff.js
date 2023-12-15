@@ -102,7 +102,7 @@ const newslettersBySection = [
     })
   },
   {
-    section: "irish-sport",
+    section: "irish sport",
     payload: setNewsletterPayload({
       code: "TNL-152",
       headline: "Best of Times Ireland newsletter:",

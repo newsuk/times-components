@@ -50,7 +50,7 @@ describe('StickyPlayerMob renders', () => {
 
 describe('StickyPlayerMob functions', () => {
   beforeEach(async () => {
-    (useBreakpointKey as any).mockReturnValue('xs');
+    (useBreakpointKey as jest.Mock).mockReturnValue('xs');
     renderComponent(data);
 
     const playBtn = screen.getByRole('button', { name: 'Play' });
@@ -110,7 +110,7 @@ describe('StickyPlayerMob functions', () => {
 
 describe('StickyPlayerDesktop functions', () => {
   test('closes sticky player', async () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
+    (useBreakpointKey as jest.Mock).mockReturnValue('lg');
 
     renderComponent(data);
 

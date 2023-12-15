@@ -68,7 +68,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
       />
 
       {data.map(({ title, url, imgUrl }) => (
-        <>
+        <React.Fragment key={title}>
           <CardComposable
             columns="0fr 1fr"
             overrides={{
@@ -86,7 +86,8 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
                 alt: 'Puzzle thumbnail',
                 placeholderIcon: true,
                 overrides: {
-                  marginInlineEnd: 'space040'
+                  marginInlineEnd: 'space040',
+                  maxWidth: 'initial'
                 }
               }}
             />
@@ -103,7 +104,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
               stylePreset: 'dashedDivider'
             }}
           />
-        </>
+        </React.Fragment>
       ))}
     </Block>
   );

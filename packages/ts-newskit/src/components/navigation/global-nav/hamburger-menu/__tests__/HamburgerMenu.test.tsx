@@ -5,9 +5,16 @@ import '@testing-library/jest-dom';
 import data from '../../__tests__/fixtures/test-data.json';
 
 import HamburgerMenu from '../HamburgerMenu';
+const mockClickHandler = jest.fn();
 
 const renderComponent = (loggedIn: boolean) =>
-  render(<HamburgerMenu data={data} isLoggedIn={loggedIn} />);
+  render(
+    <HamburgerMenu
+      data={data}
+      isLoggedIn={loggedIn}
+      hamburgerClickHandler={mockClickHandler}
+    />
+  );
 
 describe('HamburgerMenu', () => {
   it('should render the component', () => {

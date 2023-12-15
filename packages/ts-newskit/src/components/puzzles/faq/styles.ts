@@ -5,8 +5,10 @@ import {
   styled,
   LinkInline,
   getColorCssFromTheme,
-  getSpacingCssFromTheme
+  getSpacingCssFromTheme,
+  getMediaQueryFromTheme
 } from 'newskit';
+const setBlockPadding = (space: string) => ({ paddingBlock: `${space}` });
 
 export const Container = styled(Block)`
   max-width: 620px;
@@ -25,6 +27,14 @@ export const StyledAccordionGroup = styled(AccordionGroup)`
 
     &:hover {
       color: #333333 !important;
+    }
+    ${getMediaQueryFromTheme('xs')} {
+      font-size: 16px;
+      ${getSpacingCssFromTheme(setBlockPadding, 'space050')};
+    }
+    ${getMediaQueryFromTheme('md')} {
+      font-size: 18px;
+      ${getSpacingCssFromTheme(setBlockPadding, 'space030')};
     }
   }
   [data-testid='accordion-content'] {

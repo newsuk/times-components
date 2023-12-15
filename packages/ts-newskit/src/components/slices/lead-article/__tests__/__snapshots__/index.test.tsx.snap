@@ -49,7 +49,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         data-testid="divider"
       />
       <div
-        class="article-info css-1wte5n0"
+        class="article-info css-1fjzok1"
       >
         <span
           class="css-7b9bzx"
@@ -66,13 +66,9 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-1basb1c"
+          class="css-1kanhs9"
         >
-          <div
-            class="css-gb5m6n"
-          >
-            INTERVIEW
-          </div>
+          INTERVIEW
         </span>
         <div
           class="css-p44zak"
@@ -84,13 +80,9 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-1basb1c"
+          class="css-1kanhs9"
         >
-          <div
-            class="css-gb5m6n"
-          >
-            MARTIN SAMUEL
-          </div>
+          MARTIN SAMUEL
         </span>
         <div
           class="css-p44zak"
@@ -135,7 +127,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         data-testid="tag-and-flag"
       >
         <a
-          class="css-10d4t8c"
+          class="css-18s7xts"
           href="/"
         >
           <span

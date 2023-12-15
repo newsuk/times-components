@@ -9,10 +9,12 @@ import NavButtonSection from './NavButtons';
 export const HamburgerMenu: React.FC<{
   isLoggedIn?: boolean;
   data: NavigationData;
-}> = ({ isLoggedIn, data }) => {
+  hamburgerClickHandler: (title: string) => void;
+}> = ({ isLoggedIn, data, hamburgerClickHandler }) => {
   const mainNavigation = 'Sections';
 
   const [expandedL1, setExpandedL1] = useState<string>('');
+
   const [selected, setSelected] = useState(mainNavigation);
 
   return (
@@ -32,7 +34,11 @@ export const HamburgerMenu: React.FC<{
           <NavSearch isHamburger />
         </Block>
         {isLoggedIn && (
-          <NavButtonSection setSelected={setSelected} selected={selected} />
+          <NavButtonSection
+            setSelected={setSelected}
+            selected={selected}
+            clickHandler={hamburgerClickHandler}
+          />
         )}
       </Visible>
       <NavigationList
@@ -43,6 +49,7 @@ export const HamburgerMenu: React.FC<{
         }
         onExpand={setExpandedL1}
         expandedL1={expandedL1}
+        clickHandler={hamburgerClickHandler}
       />
       {selected === mainNavigation ? (
         <>
@@ -54,7 +61,10 @@ export const HamburgerMenu: React.FC<{
             <TextBlock typographyPreset="newPreset010">More</TextBlock>
           </Block>
           <MenuDivider />
-          <NavigationList data={data.moreMenuItems} />
+          <NavigationList
+            data={data.moreMenuItems}
+            clickHandler={hamburgerClickHandler}
+          />
         </>
       ) : null}
     </HamburgerMenuNav>
