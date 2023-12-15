@@ -113,7 +113,6 @@ const newslettersBySection = [
 ];
 
 const getNewsletterPuff = section => {
-  console.log(section, 'SECTION')
   const newsletter = newslettersBySection.find(
     item => item.section === section.toLowerCase()
   );
