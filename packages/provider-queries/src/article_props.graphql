@@ -14,6 +14,12 @@ fragment articleProps on Article {
       }
     }
   }
+  categoryConnection(desc: true) {
+    nodes {
+      slug
+      title
+    }
+  }
   hasVideo
   headline
   id
