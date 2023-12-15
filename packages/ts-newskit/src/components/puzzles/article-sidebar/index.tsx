@@ -8,13 +8,12 @@ import {
   CardLink,
   Divider,
   Stack,
-  IconButton,
-  useInstrumentation,
-  EventTrigger
+  IconButton
 } from 'newskit';
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
 import { StyledCardComposable } from './styles';
+import { useTrackingContext } from '@times-components/ts-components/src/helpers/tracking/TrackingContextProvider';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
@@ -22,25 +21,23 @@ export interface ArticleSideBarProps {
   pageLink: string;
 }
 
-export const sidebarClickEvent = () => ({
-  originator: 'Puzzle Sidebar',
-  trigger: EventTrigger.Click,
-  context: {
-    event_navigation_action: 'navigation',
-    event_navigation_name: 'puzzle sidebar: header selected',
-    event_navigation_browsing_method: 'click'
-  }
-});
-
 export const ArticleSidebar: FC<ArticleSideBarProps> = ({
   sectionTitle,
   data,
   pageLink
 }) => {
-  const { fireEvent } = useInstrumentation();
+  const { fireAnalyticsEvent } = useTrackingContext();
   const onClickSidebarHeader = () => {
-    const event = sidebarClickEvent();
-    fireEvent(event);
+    fireAnalyticsEvent &&
+      fireAnalyticsEvent({
+        action: 'Clicked',
+        object: 'Puzzle Sidebar',
+        attrs: {
+          event_navigation_name: 'puzzle sidebar: header selected',
+          event_navigation_browsing_method: 'click',
+          event_navigation_action: 'navigation'
+        }
+      });
   };
 
   return (
@@ -58,7 +55,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
               external={false}
               expand
               href={pageLink}
-              onClick={onClickSidebarHeader}
+              onClick={() => onClickSidebarHeader()}
             />
             <Stack flow="horizontal-center" stackDistribution="space-between">
               <TextBlock as="h3" typographyPreset="editorialDisplay002">
