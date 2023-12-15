@@ -65,25 +65,23 @@ export const ArticleStack = ({
             </Hidden>
             <AdBlockWrapperMedium>
               {articleWithAdSlot.id === item.id && (
-                <>
-                  <Visible md>
-                    <Divider
-                      overrides={{
-                        marginBlockEnd: 'space030',
-                        marginBlockStart: 'space060',
-                        stylePreset: 'lightDivider'
-                      }}
-                    />
-                    <Stack
-                      flow="horizontal-center"
-                      stackDistribution="center"
-                      marginBlockEnd="space030"
-                    >
-                      ADVERTISEMENT
-                    </Stack>
-                    <StyledAdBlock />
-                  </Visible>
-                </>
+                <Visible md>
+                  <Divider
+                    overrides={{
+                      marginBlockEnd: 'space030',
+                      marginBlockStart: 'space060',
+                      stylePreset: 'lightDivider'
+                    }}
+                  />
+                  <Stack
+                    flow="horizontal-center"
+                    stackDistribution="center"
+                    marginBlockEnd="space030"
+                  >
+                    ADVERTISEMENT
+                  </Stack>
+                  <StyledAdBlock />
+                </Visible>
               )}
             </AdBlockWrapperMedium>
           </>

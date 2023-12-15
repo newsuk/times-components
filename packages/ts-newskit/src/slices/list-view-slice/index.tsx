@@ -13,10 +13,7 @@ import {
 } from './styles';
 import { ListViewSliceMobile } from './mobile';
 import { convertDateToMonth } from '../../utils/date-formatting';
-import {
-  groupArticlesByDate,
-  removeDuplicateDates,
-} from './utils';
+import { groupArticlesByDate, removeDuplicateDates } from './utils';
 import { Paginations } from './pagination';
 
 export interface ListViewSliceProps {

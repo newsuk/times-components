@@ -6,7 +6,7 @@ import {
 import { ClickHandlerType } from '../types';
 import { StyledAdBlock, StyledBlock } from './styles';
 import { CustomBlockLayout } from '../shared';
-import { Divider, TextBlock, Block, Visible, Stack } from 'newskit';
+import { Divider, TextBlock, Block, Stack } from 'newskit';
 import { convertDateToMonth } from '../../utils/date-formatting';
 
 export interface ListViewSliceProps {
@@ -22,7 +22,7 @@ export const ListViewSliceMobile = ({
     <CustomBlockLayout>
       {leadArticle.map((item: LeadArticleProps, index) => {
         return (
-          <Visible xs sm>
+          <>
             <TextBlock
               typographyPreset="utilityLabel005"
               stylePreset="inkNonEssential"
@@ -36,15 +36,7 @@ export const ListViewSliceMobile = ({
               <LeadArticle
                 article={{
                   ...item,
-                  hasTopBorder: false,
-                  contentWidth: {
-                    md: '407px auto',
-                    lg: '331px auto',
-                    xl: '470px auto'
-                  },
-                  columnGap: {
-                    md: '32px'
-                  }
+                  hasTopBorder: false
                 }}
                 clickHandler={clickHandler}
               />
@@ -71,7 +63,7 @@ export const ListViewSliceMobile = ({
                 <StyledAdBlock />
               </>
             )}
-          </Visible>
+          </>
         );
       })}
     </CustomBlockLayout>
