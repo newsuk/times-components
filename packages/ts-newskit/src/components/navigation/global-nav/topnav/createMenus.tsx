@@ -131,6 +131,16 @@ export const createAccountMenu = (
           setMyAccountSelected(!myAccountSelected);
           clickHandler('My Account');
         }}
+        onBlur={e => {
+          if (
+            e.relatedTarget &&
+            (e.relatedTarget as HTMLElement).getAttribute('data-testid') ===
+              'my-account-menu-item'
+          ) {
+            return;
+          }
+          setMyAccountSelected(false);
+        }}
         selected={myAccountSelected}
         expanded={myAccountSelected}
         overrides={{
@@ -153,6 +163,7 @@ export const createAccountMenu = (
                 stylePreset: 'subMenuItem',
                 typographyPreset: 'topNav010'
               }}
+              data-testid="my-account-menu-item"
               key={url}
               onClick={() => clickHandler(title)}
             >
