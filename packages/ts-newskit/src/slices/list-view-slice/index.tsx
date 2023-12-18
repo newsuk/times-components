@@ -10,10 +10,14 @@ export type ListViewSliceProps = {
   leadArticles: LeadArticleProps[];
   clickHandler: ClickHandlerType;
   articleWithAdSlot?: LeadArticleProps;
+  currentPage?: number;
+  setCurrentPage?: (currentPage: number) => void;
 };
 export const ListViewSlice = ({
   leadArticles,
-  clickHandler
+  clickHandler,
+  currentPage,
+  setCurrentPage
 }: ListViewSliceProps) => {
   const mordifiedLeadArticles = leadArticles.map(item => ({
     ...item,
@@ -27,6 +31,8 @@ export const ListViewSlice = ({
         <ListViewSliceDesktop
           leadArticles={mordifiedLeadArticles}
           clickHandler={clickHandler}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
         />
       </Visible>
       <Visible xs sm>

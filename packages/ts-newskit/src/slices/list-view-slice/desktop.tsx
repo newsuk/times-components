@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import { Divider, Block, Stack } from 'newskit';
 import { ArticleStack } from './artcile-stack';
 import {
@@ -16,10 +16,10 @@ import { ListViewSliceProps } from '.';
 const ITEMS_PER_PAGE = 10;
 export const ListViewSliceDesktop = ({
   leadArticles,
-  clickHandler
+  clickHandler,
+  currentPage = 1,
+  setCurrentPage
 }: ListViewSliceProps) => {
-  const [currentPage, setCurrentPage] = useState(1);
-
   const mordifiedLeadArticles = leadArticles.map(item => ({
     ...item,
     headlineTypographyPreset: 'editorialHeadline020',
@@ -49,7 +49,6 @@ export const ListViewSliceDesktop = ({
                       />
                     </Block>
                   )}
-
                   <Stack flow="horizontal-top">
                     <Block marginInlineEnd={{ md: 'space060', xl: 'space080' }}>
                       <StyledDateText
@@ -104,7 +103,7 @@ export const ListViewSliceDesktop = ({
           totalItems={mordifiedLeadArticles.length}
           pageSize={ITEMS_PER_PAGE}
           currentPage={currentPage}
-          onPageChange={page => setCurrentPage(page)}
+          onPageChange={page => setCurrentPage && setCurrentPage(page)}
         />
       </Stack>
     </>
