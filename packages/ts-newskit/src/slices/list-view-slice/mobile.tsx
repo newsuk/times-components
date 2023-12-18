@@ -3,24 +3,19 @@ import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
-import { ClickHandlerType } from '../types';
 import { StyledAdBlock, StyledBlock } from './styles';
 import { CustomBlockLayout } from '../shared';
 import { Divider, TextBlock, Block, Stack } from 'newskit';
 import { convertDateToMonth } from '../../utils/date-formatting';
-
-export type ListViewSliceProps = {
-  leadArticle: LeadArticleProps[];
-  clickHandler: ClickHandlerType;
-};
+import { ListViewSliceProps } from '.';
 
 export const ListViewSliceMobile = ({
-  leadArticle,
+  leadArticles,
   clickHandler
 }: ListViewSliceProps) => {
   return (
     <CustomBlockLayout>
-      {leadArticle.map((item: LeadArticleProps, index) => {
+      {leadArticles.map((item: LeadArticleProps, index) => {
         return (
           <>
             <TextBlock
@@ -42,7 +37,7 @@ export const ListViewSliceMobile = ({
               />
             </StyledBlock>
             {index !== 4 &&
-              index !== leadArticle.length - 1 && (
+              index !== leadArticles.length - 1 && (
                 <Block marginBlock="space040">
                   <Divider
                     overrides={{

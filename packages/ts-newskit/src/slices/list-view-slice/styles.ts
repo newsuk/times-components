@@ -3,7 +3,7 @@ import {
   styled,
   getMediaQueryFromTheme,
   TextBlock,
-  PaginationButton,
+  PaginationButton
 } from 'newskit';
 
 export const StyledBlock = styled(Block)`
