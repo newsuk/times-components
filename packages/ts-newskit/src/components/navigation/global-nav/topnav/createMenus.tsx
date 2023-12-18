@@ -53,6 +53,16 @@ export const createMenu = (
           onClick={handleMoreClick}
           selected={moreSelected}
           expanded={moreSelected}
+          onBlur={e => {
+            if (
+              e.relatedTarget &&
+              (e.relatedTarget as HTMLElement).getAttribute('data-testid') ===
+                'more-menu-item'
+            ) {
+              return;
+            }
+            setMoreSelected(false);
+          }}
           overrides={{
             ...menuItemPresets,
             list: { stylePreset: 'moreSubMenu' }
@@ -82,6 +92,7 @@ const createMoreMenu = (
     .map(({ title, url }: { title: string; url: string }) => (
       <MenuItem
         href={url}
+        data-testid="more-menu-item"
         overrides={{
           minWidth: '200px',
           stylePreset: 'subMenuItem',
