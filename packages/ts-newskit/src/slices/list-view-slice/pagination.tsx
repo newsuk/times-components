@@ -3,42 +3,70 @@ import {
   PaginationFirstItem,
   PaginationPrevItem,
   PaginationItems,
-  PaginationButton,
   PaginationNextItem,
   PaginationLastItem
 } from 'newskit';
 import React from 'react';
+import { StyledPaginationButton } from './styles';
 
-export const Paginations = () => {
+type PaginationsProps = {
+  totalItems: number;
+  pageSize: number;
+  defaultPage?: number;
+  currentPage: number;
+  onPageChange: (currentPage: number) => void;
+};
+export const Paginations = ({
+  totalItems,
+  pageSize,
+  defaultPage = 1,
+  currentPage,
+  onPageChange
+}: PaginationsProps) => {
   return (
     <Pagination
-      totalItems={232}
-      pageSize={10}
-      defaultPage={9}
-      aria-label="input for selected item"
+      totalItems={totalItems}
+      pageSize={pageSize}
+      defaultPage={defaultPage}
+      aria-label={`pagination-${currentPage}`}
+      onPageChange={onPageChange}
+      page={currentPage}
     >
-      <PaginationFirstItem overrides={{ stylePreset: 'interfaceBrand010' }} />
-      <PaginationPrevItem overrides={{ stylePreset: 'interfaceBrand010' }} />
+      <PaginationFirstItem
+        overrides={{ stylePreset: 'interfaceBrand010' }}
+        style={{ backgroundColor: 'transparent' }}
+      />
+      <PaginationPrevItem
+        overrides={{ stylePreset: 'interfaceBrand010' }}
+        style={{ backgroundColor: 'transparent' }}
+      />
       <PaginationItems
         truncation
-        siblings={3}
+        siblings={2}
         boundaries={1}
         overrides={{
           stylePreset: 'interfaceBrand010',
           itemButton: ({ selected, ...rest }) => {
             return (
-              <PaginationButton
+              <StyledPaginationButton
+                selected={selected}
                 overrides={{ stylePreset: 'interfaceBrand010' }}
                 {...rest}
               >
                 {rest.pageNumber}
-              </PaginationButton>
+              </StyledPaginationButton>
             );
           }
         }}
       />
-      <PaginationNextItem overrides={{ stylePreset: 'interfaceBrand010' }} />
-      <PaginationLastItem overrides={{ stylePreset: 'interfaceBrand010' }} />
+      <PaginationNextItem
+        overrides={{ stylePreset: 'interfaceBrand010' }}
+        style={{ backgroundColor: 'transparent' }}
+      />
+      <PaginationLastItem
+        overrides={{ stylePreset: 'interfaceBrand010' }}
+        style={{ backgroundColor: 'transparent' }}
+      />
     </Pagination>
   );
 };

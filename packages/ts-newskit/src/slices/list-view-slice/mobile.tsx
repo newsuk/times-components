@@ -9,10 +9,10 @@ import { CustomBlockLayout } from '../shared';
 import { Divider, TextBlock, Block, Stack } from 'newskit';
 import { convertDateToMonth } from '../../utils/date-formatting';
 
-export interface ListViewSliceProps {
+export type ListViewSliceProps = {
   leadArticle: LeadArticleProps[];
   clickHandler: ClickHandlerType;
-}
+};
 
 export const ListViewSliceMobile = ({
   leadArticle,

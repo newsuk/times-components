@@ -1,4 +1,10 @@
-import { Block, styled, getMediaQueryFromTheme, TextBlock } from 'newskit';
+import {
+  Block,
+  styled,
+  getMediaQueryFromTheme,
+  TextBlock,
+  PaginationButton,
+} from 'newskit';
 
 export const StyledBlock = styled(Block)`
   .lead-image-container {
@@ -75,4 +81,13 @@ export const AdBlockWrapperLargeAndAbove = styled(Block)`
 export const AdBlockWrapperMedium = styled(Block)`
   margin-left: -170px;
   margin-right: -30px;
+`;
+
+type ButtonProps = { selected?: boolean };
+export const StyledPaginationButton = styled(PaginationButton)<ButtonProps>`
+  background-color: ${({ selected }) => (selected ? '#E4E4E4' : 'transparent')};
+  border-radius: 8px;
+  :disabled {
+    background-color: 'transparent'; // todo: this doesn't work
+  }
 `;

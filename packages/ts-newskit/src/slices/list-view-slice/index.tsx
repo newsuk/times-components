@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState} from 'react';
 import { LeadArticleProps } from '../../components/slices/lead-article';
 import { ClickHandlerType } from '../types';
 import { CustomBlockLayout, WrappedStackLayout } from '../shared';
@@ -16,15 +16,17 @@ import { convertDateToMonth } from '../../utils/date-formatting';
 import { groupArticlesByDate, removeDuplicateDates } from './utils';
 import { Paginations } from './pagination';
 
-export interface ListViewSliceProps {
+export type ListViewSliceProps = {
   leadArticles: LeadArticleProps[];
   clickHandler: ClickHandlerType;
-}
-
+};
+const ITEMS_PER_PAGE = 10;
 export const ListViewSlice = ({
   leadArticles,
   clickHandler
 }: ListViewSliceProps) => {
+  const [currentPage, setCurrentPage] = useState(1);
+
   const mordifiedLeadArticles = leadArticles.map(item => ({
     ...item,
     headlineTypographyPreset: 'editorialHeadline020',
@@ -108,7 +110,12 @@ export const ListViewSlice = ({
           stackDistribution="center"
           marginBlockStart="space060"
         >
-          <Paginations />
+          <Paginations
+            totalItems={mordifiedLeadArticles.length}
+            pageSize={ITEMS_PER_PAGE}
+            currentPage={currentPage}
+            onPageChange={(page) => setCurrentPage(page)}
+          />
         </Stack>
       </Visible>
       <WrappedStackLayout>
@@ -122,3 +129,4 @@ export const ListViewSlice = ({
     </CustomBlockLayout>
   );
 };
+
