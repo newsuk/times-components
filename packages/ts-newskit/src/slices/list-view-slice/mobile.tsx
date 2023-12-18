@@ -8,11 +8,14 @@ import { CustomBlockLayout } from '../shared';
 import { Divider, TextBlock, Block, Stack } from 'newskit';
 import { convertDateToMonth } from '../../utils/date-formatting';
 import { ListViewSliceProps } from '.';
+import LoadMoreButton from './load-more-button';
 
 export const ListViewSliceMobile = ({
   leadArticles,
   clickHandler
 }: ListViewSliceProps) => {
+  const handleLoadMoreClick = () => {};
+
   return (
     <CustomBlockLayout>
       {leadArticles.map((item: LeadArticleProps, index) => {
@@ -61,6 +64,7 @@ export const ListViewSliceMobile = ({
           </>
         );
       })}
+      <LoadMoreButton onClick={handleLoadMoreClick} title="Load more" />
     </CustomBlockLayout>
   );
 };

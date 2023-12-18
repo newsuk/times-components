@@ -23,10 +23,10 @@ describe('Render List View Slice', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
-  test('modifies articles correctly when breakpointKey is "md"', () => {
+  test('modifies articles correctly when breakpointKey is "xl"', () => {
     const { asFragment } = renderComponent(
       <ListViewSlice {...defaultProps} />,
-      'md'
+      'xl'
     );
     expect(asFragment()).toMatchSnapshot();
   });
