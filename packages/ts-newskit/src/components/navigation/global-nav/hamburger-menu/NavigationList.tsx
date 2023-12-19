@@ -17,7 +17,7 @@ const NavigationList: React.FC<{
   };
 
   useEffect(() => {
-    const [_domain, l1, l2] = window.location.pathname.split('/');
+    const [_, l1, l2] = window.location.pathname.split('/');
 
     const l1Menu = document.getElementById(`vertical-${l1}`);
     const l2Menu = document.getElementById(`vertical-sub-${l2}`);
