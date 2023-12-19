@@ -77,6 +77,20 @@ describe('HamburgerMenu - Logged In', () => {
     expect(getByText('Main Menu 1')).toBeVisible();
     expect(queryByText('Account Menu 1')).toBeFalsy();
   });
+
+  it('should indicate active l1', () => {
+    window.history.pushState({}, '', '/main-menu-1');
+    const { getAllByTestId } = renderComponent(true);
+    const Button = getAllByTestId('buttonLink')[0];
+    expect(Button).toHaveClass('active');
+  });
+
+  it('should indicate active l2', () => {
+    window.history.pushState({}, '', '/main-menu-2/item-1');
+    const { getAllByTestId } = renderComponent(true);
+    const Button = getAllByTestId('buttonLink')[1];
+    expect(Button).toHaveClass('active');
+  });
 });
 
 describe('HamburgerMenu - Logged Out', () => {

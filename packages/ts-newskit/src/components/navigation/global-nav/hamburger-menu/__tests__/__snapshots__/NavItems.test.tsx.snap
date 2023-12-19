@@ -6,7 +6,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
     class="nk-menu-item css-1kdinep"
   >
     <a
-      class="css-1ux7vti"
+      class="css-1g0g8x5"
       data-testid="buttonLink"
       href="/main-menu-1"
       id="vertical-main-menu-1"
@@ -34,7 +34,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <button
       aria-expanded="false"
-      class="css-1pi7wg9"
+      class="css-qzl3m7"
       data-testid="menu-sub-button"
       id="vertical-main-menu-2"
       type="button"
@@ -68,7 +68,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
         class="nk-menu-item css-1kdinep"
       >
         <a
-          class="css-qveg5m"
+          class="css-1fog891"
           data-testid="buttonLink"
           href="/item-1"
           id="vertical-sub-item-1"
@@ -95,7 +95,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
         class="nk-menu-item css-1kdinep"
       >
         <a
-          class="css-qveg5m"
+          class="css-1fog891"
           data-testid="buttonLink"
           href="/item-2"
           id="vertical-sub-item-2"
@@ -136,7 +136,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <button
       aria-expanded="false"
-      class="css-1pi7wg9"
+      class="css-qzl3m7"
       data-testid="menu-sub-button"
       id="vertical-main-menu-3"
       type="button"
@@ -170,7 +170,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
         class="nk-menu-item css-1kdinep"
       >
         <a
-          class="css-qveg5m"
+          class="css-1fog891"
           data-testid="buttonLink"
           href="/item-1"
           id="vertical-sub-item-1"
@@ -197,7 +197,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
         class="nk-menu-item css-1kdinep"
       >
         <a
-          class="css-qveg5m"
+          class="css-1fog891"
           data-testid="buttonLink"
           href="/menu-3-item-2"
           id="vertical-sub-menu-3-item-2"
@@ -242,7 +242,7 @@ exports[`NavigationList renders the component without nested items 1`] = `
     class="nk-menu-item css-1kdinep"
   >
     <a
-      class="css-1ux7vti"
+      class="css-1g0g8x5"
       data-testid="buttonLink"
       href="/account-menu-1"
       id="vertical-account-menu-1"
@@ -269,7 +269,7 @@ exports[`NavigationList renders the component without nested items 1`] = `
     class="nk-menu-item css-1kdinep"
   >
     <a
-      class="css-1ux7vti"
+      class="css-1g0g8x5"
       data-testid="buttonLink"
       href="/account-menu-2"
       id="vertical-account-menu-2"
