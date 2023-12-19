@@ -3,7 +3,7 @@ import {
   styled,
   getMediaQueryFromTheme,
   TextBlock,
-  PaginationButton
+  Pagination
 } from 'newskit';
 
 export const StyledBlock = styled(Block)`
@@ -83,11 +83,12 @@ export const AdBlockWrapperMedium = styled(Block)`
   margin-right: -30px;
 `;
 
-type ButtonProps = { selected?: boolean };
-export const StyledPaginationButton = styled(PaginationButton)<ButtonProps>`
-  background-color: ${({ selected }) => (selected ? '#E4E4E4' : 'transparent')};
-  border-radius: 8px;
-  :disabled {
-    background-color: 'transparent'; // todo: this doesn't work
+export const StyledPagination = styled(Pagination)`
+  ul li button {
+    background-color: inherit;
+    border-radius: 8px;
+    &[aria-current='page'] {
+      background-color: #e4e4e4;
+    }
   }
 `;

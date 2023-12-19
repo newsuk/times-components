@@ -2047,7 +2047,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
         >
           <nav
             aria-label="pagination-1"
-            class="css-1ewdlr8"
+            class="css-ay6nge"
             data-testid="pagination-container"
           >
             <ul
@@ -2061,7 +2061,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="css-hu5lgw"
                   data-testid="pagination-first-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -2090,7 +2089,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="css-hu5lgw"
                   data-testid="pagination-prev-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -2120,7 +2118,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   <button
                     aria-current="page"
                     aria-label="current page, page 1"
-                    class="css-q6sqh7"
+                    class="css-f83137"
                     data-testid="pagination-item"
                     type="button"
                   >
@@ -2140,7 +2138,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="css-hu5lgw"
                   data-testid="pagination-next-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -2169,7 +2166,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="css-hu5lgw"
                   data-testid="pagination-last-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -6074,7 +6070,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
         >
           <nav
             aria-label="pagination-1"
-            class="css-1ewdlr8"
+            class="css-ay6nge"
             data-testid="pagination-container"
           >
             <ul
@@ -6088,7 +6084,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-first-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -6117,7 +6112,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-prev-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -6147,7 +6141,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   <button
                     aria-current="page"
                     aria-label="current page, page 1"
-                    class="css-q6sqh7"
+                    class="css-f83137"
                     data-testid="pagination-item"
                     type="button"
                   >
@@ -6167,7 +6161,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-next-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -6196,7 +6189,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-last-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -10101,7 +10093,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
         >
           <nav
             aria-label="pagination-1"
-            class="css-1ewdlr8"
+            class="css-ay6nge"
             data-testid="pagination-container"
           >
             <ul
@@ -10115,7 +10107,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-first-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -10144,7 +10135,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-prev-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -10174,7 +10164,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   <button
                     aria-current="page"
                     aria-label="current page, page 1"
-                    class="css-q6sqh7"
+                    class="css-f83137"
                     data-testid="pagination-item"
                     type="button"
                   >
@@ -10194,7 +10184,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-next-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -10223,7 +10212,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-last-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -14128,7 +14116,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
         >
           <nav
             aria-label="pagination-1"
-            class="css-1ewdlr8"
+            class="css-ay6nge"
             data-testid="pagination-container"
           >
             <ul
@@ -14142,7 +14130,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-first-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -14171,7 +14158,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-prev-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -14201,7 +14187,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   <button
                     aria-current="page"
                     aria-label="current page, page 1"
-                    class="css-q6sqh7"
+                    class="css-f83137"
                     data-testid="pagination-item"
                     type="button"
                   >
@@ -14221,7 +14207,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-next-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -14250,7 +14235,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-last-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -18154,7 +18138,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
         >
           <nav
             aria-label="pagination-1"
-            class="css-1ewdlr8"
+            class="css-ay6nge"
             data-testid="pagination-container"
           >
             <ul
@@ -18168,7 +18152,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-first-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -18197,7 +18180,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-prev-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -18227,7 +18209,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   <button
                     aria-current="page"
                     aria-label="current page, page 1"
-                    class="css-q6sqh7"
+                    class="css-f83137"
                     data-testid="pagination-item"
                     type="button"
                   >
@@ -18247,7 +18229,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-next-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
@@ -18276,7 +18257,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="css-hu5lgw"
                   data-testid="pagination-last-item"
                   disabled=""
-                  style="background-color: transparent;"
                   type="button"
                 >
                   <svg
