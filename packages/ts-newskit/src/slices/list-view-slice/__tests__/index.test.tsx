@@ -5,10 +5,13 @@ import { leadArticles } from '../data.json';
 import { renderComponent } from '../../../utils';
 
 const mockClickHandler = jest.fn();
+const mockPageClick = jest.fn();
 
 const defaultProps = {
   leadArticles,
-  clickHandler: mockClickHandler
+  clickHandler: mockClickHandler,
+  currentPage: 1,
+  onPageClick: mockPageClick
 };
 
 describe('Render List View Slice', () => {

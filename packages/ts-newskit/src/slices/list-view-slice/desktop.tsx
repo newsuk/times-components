@@ -13,12 +13,12 @@ import { groupArticlesByDate, removeDuplicateDates } from './utils';
 import { Paginations } from './pagination';
 import { ListViewSliceProps } from '.';
 
-const ITEMS_PER_PAGE = 10;
 export const ListViewSliceDesktop = ({
   leadArticles,
   clickHandler,
   currentPage = 1,
-  setCurrentPage
+  onPageClick,
+  itemsPerPage = 10
 }: ListViewSliceProps) => {
   const mordifiedLeadArticles = leadArticles.map(item => ({
     ...item,
@@ -101,9 +101,9 @@ export const ListViewSliceDesktop = ({
       >
         <Paginations
           totalItems={mordifiedLeadArticles.length}
-          pageSize={ITEMS_PER_PAGE}
+          pageSize={itemsPerPage}
           currentPage={currentPage}
-          onPageChange={page => setCurrentPage && setCurrentPage(page)}
+          onPageChange={page => onPageClick && onPageClick(page)}
         />
       </Stack>
     </>

@@ -11,13 +11,15 @@ export type ListViewSliceProps = {
   clickHandler: ClickHandlerType;
   articleWithAdSlot?: LeadArticleProps;
   currentPage?: number;
-  setCurrentPage?: (currentPage: number) => void;
+  onPageClick?: (currentPage: number) => void;
+  itemsPerPage?: number;
 };
 export const ListViewSlice = ({
   leadArticles,
   clickHandler,
   currentPage,
-  setCurrentPage
+  onPageClick,
+  itemsPerPage = 10
 }: ListViewSliceProps) => {
   const mordifiedLeadArticles = leadArticles.map(item => ({
     ...item,
@@ -32,7 +34,8 @@ export const ListViewSlice = ({
           leadArticles={mordifiedLeadArticles}
           clickHandler={clickHandler}
           currentPage={currentPage}
-          setCurrentPage={setCurrentPage}
+          onPageClick={onPageClick}
+          itemsPerPage={itemsPerPage}
         />
       </Visible>
       <Visible xs sm>
@@ -40,6 +43,7 @@ export const ListViewSlice = ({
           <ListViewSliceMobile
             leadArticles={mordifiedLeadArticles}
             clickHandler={clickHandler}
+            onPageClick={onPageClick}
           />
         </WrappedStackLayout>
       </Visible>

@@ -12,13 +12,14 @@ import LoadMoreButton from './load-more-button';
 
 export const ListViewSliceMobile = ({
   leadArticles,
-  clickHandler
+  clickHandler,
+  currentPage = 1,
+  onPageClick
 }: ListViewSliceProps) => {
-  const handleLoadMoreClick = () => {};
-
   return (
     <CustomBlockLayout>
       {leadArticles.map((item: LeadArticleProps, index) => {
+        const renderAds = (index + 1) % 10 === 5; 
         return (
           <>
             <TextBlock
@@ -39,7 +40,7 @@ export const ListViewSliceMobile = ({
                 clickHandler={clickHandler}
               />
             </StyledBlock>
-            {index !== 4 &&
+            {!renderAds &&
               index !== leadArticles.length - 1 && (
                 <Block marginBlock="space040">
                   <Divider
@@ -49,7 +50,7 @@ export const ListViewSliceMobile = ({
                   />
                 </Block>
               )}
-            {index === 4 && (
+            {renderAds && (
               <>
                 <Stack
                   flow="horizontal-center"
@@ -64,7 +65,10 @@ export const ListViewSliceMobile = ({
           </>
         );
       })}
-      <LoadMoreButton onClick={handleLoadMoreClick} title="Load more" />
+      <LoadMoreButton
+        onClick={() => onPageClick && onPageClick(currentPage + 1)}
+        title="Load more"
+      />
     </CustomBlockLayout>
   );
 };
