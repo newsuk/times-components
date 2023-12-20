@@ -48,7 +48,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               <input
                 aria-describedby="searchTimesLabel"
                 class="css-ju903y"
-                placeholder="Search times.co.uk"
+                placeholder="Search"
                 type="text"
                 value=""
               />
@@ -453,7 +453,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               <input
                 aria-describedby="searchTimesLabel"
                 class="css-ju903y"
-                placeholder="Search times.co.uk"
+                placeholder="Search"
                 type="text"
                 value=""
               />
