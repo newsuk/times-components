@@ -129,7 +129,7 @@ export const HamburgerMenuNav = styled(Menu)`
 
 export const StyledMenuSub = styled(MenuSub)`
   &.active {
-    background-color: #222222;
+    ${getColorCssFromTheme('backgroundColor', 'interfaceNeutral010')};
   }
 `;
 

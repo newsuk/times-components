@@ -1150,7 +1150,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-news"
             type="button"
@@ -1495,7 +1495,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-comment"
             type="button"
@@ -1705,7 +1705,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-life-and-style"
             type="button"
@@ -2050,7 +2050,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-arts-and-books"
             type="button"
@@ -2287,7 +2287,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-sport"
             type="button"
@@ -2632,7 +2632,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-business-and-money"
             type="button"
@@ -2869,7 +2869,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-puzzles"
             type="button"
@@ -3052,7 +3052,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-magazines"
             type="button"
@@ -4718,7 +4718,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-news"
             type="button"
@@ -5063,7 +5063,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-comment"
             type="button"
@@ -5273,7 +5273,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-life-and-style"
             type="button"
@@ -5618,7 +5618,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-arts-and-books"
             type="button"
@@ -5855,7 +5855,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-sport"
             type="button"
@@ -6200,7 +6200,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-business-and-money"
             type="button"
@@ -6437,7 +6437,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-puzzles"
             type="button"
@@ -6620,7 +6620,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1hdtaqk"
+            class="css-yazqt"
             data-testid="menu-sub-button"
             id="vertical-magazines"
             type="button"

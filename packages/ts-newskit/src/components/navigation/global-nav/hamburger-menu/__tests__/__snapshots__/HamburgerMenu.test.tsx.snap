@@ -127,7 +127,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
       >
         <button
           aria-expanded="false"
-          class="css-1hdtaqk"
+          class="css-yazqt"
           data-testid="menu-sub-button"
           id="vertical-main-menu-2"
           type="button"
@@ -229,7 +229,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
       >
         <button
           aria-expanded="false"
-          class="css-1hdtaqk"
+          class="css-yazqt"
           data-testid="menu-sub-button"
           id="vertical-main-menu-3"
           type="button"
@@ -532,7 +532,7 @@ exports[`HamburgerMenu should render the component 1`] = `
       >
         <button
           aria-expanded="false"
-          class="css-1hdtaqk"
+          class="css-yazqt"
           data-testid="menu-sub-button"
           id="vertical-main-menu-2"
           type="button"
@@ -634,7 +634,7 @@ exports[`HamburgerMenu should render the component 1`] = `
       >
         <button
           aria-expanded="false"
-          class="css-1hdtaqk"
+          class="css-yazqt"
           data-testid="menu-sub-button"
           id="vertical-main-menu-3"
           type="button"

@@ -34,7 +34,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <button
       aria-expanded="false"
-      class="css-qzl3m7"
+      class="css-99tcxa"
       data-testid="menu-sub-button"
       id="vertical-main-menu-2"
       type="button"
@@ -136,7 +136,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <button
       aria-expanded="false"
-      class="css-qzl3m7"
+      class="css-99tcxa"
       data-testid="menu-sub-button"
       id="vertical-main-menu-3"
       type="button"
