@@ -14,7 +14,7 @@ export type ListViewSliceProps = {
   onPageClick?: (currentPage: number) => void;
   itemsPerPage?: number;
   totalItems: number;
-  isLoading?: boolean
+  isLoading?: boolean;
 };
 export const ListViewSlice = ({
   leadArticles,

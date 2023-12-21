@@ -15,7 +15,7 @@ type PaginationsProps = {
   defaultPage?: number;
   currentPage: number;
   onPageChange: (currentPage: number) => void;
-  isLoading?: boolean
+  isLoading?: boolean;
 };
 export const Paginations = ({
   totalItems,
