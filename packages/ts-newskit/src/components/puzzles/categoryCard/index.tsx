@@ -21,9 +21,8 @@ export const CategoryCard: FC<CategoryCardProps> = ({
   Icon,
   onClick
 }) => {
-  
   const handleClick = () => {
-    if(onClick) {
+    if (onClick) {
       onClick(type);
     }
   };

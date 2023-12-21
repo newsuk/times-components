@@ -24,7 +24,7 @@ export const SubscribeBanner: FC<SubscribeBannerProps> = ({
   onClick
 }) => {
   const handleClick = () => {
-    if(onClick) {
+    if (onClick) {
       onClick();
     }
   };

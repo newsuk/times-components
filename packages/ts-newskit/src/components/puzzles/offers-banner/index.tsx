@@ -14,7 +14,7 @@ export interface OffersBannerProps {
 
 export const OffersBanner: FC<OffersBannerProps> = ({ onClick }) => {
   const handleClick = () => {
-    if(onClick) {
+    if (onClick) {
       onClick();
     }
   };
