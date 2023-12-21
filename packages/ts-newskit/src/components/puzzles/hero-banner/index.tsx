@@ -40,8 +40,8 @@ export interface HeroBannerProps {
   puzzleName: string;
   puzzleType: PuzzleType;
   loginUrl: string;
-  onBtnClick: () => void;
-  onLinkClick: () => void;
+  onBtnClick?: () => void;
+  onLinkClick?: () => void;
 }
 
 const iconMapping: Record<PuzzleType, IconComponent> = {
@@ -83,11 +83,15 @@ export const HeroBanner: FC<HeroBannerProps> = ({
   const Icon = iconMapping[puzzleType];
 
   const handleBtnClick = () => {
-    onBtnClick();
+    if(onBtnClick) {
+      onBtnClick();
+    }
   };
 
   const handleLinkClick = () => {
-    onLinkClick();
+    if(onLinkClick) {
+      onLinkClick();
+    }
   };
 
   return (

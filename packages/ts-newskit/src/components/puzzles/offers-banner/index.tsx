@@ -9,12 +9,14 @@ import {
 import { backgroundImage } from './data';
 
 export interface OffersBannerProps {
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export const OffersBanner: FC<OffersBannerProps> = ({ onClick }) => {
   const handleClick = () => {
-    onClick();
+    if(onClick) {
+      onClick();
+    }
   };
 
   return (

@@ -13,7 +13,7 @@ export interface SubscribeBannerProps {
   SubscribeBannerSubheadline: string;
   url: string;
   title: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export const SubscribeBanner: FC<SubscribeBannerProps> = ({
@@ -24,7 +24,9 @@ export const SubscribeBanner: FC<SubscribeBannerProps> = ({
   onClick
 }) => {
   const handleClick = () => {
-    onClick();
+    if(onClick) {
+      onClick();
+    }
   };
 
   return (

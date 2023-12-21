@@ -12,7 +12,7 @@ export interface CategoryCardProps {
   type: string;
   url: string;
   Icon: React.ComponentType;
-  onClick: (categoryName: string) => void;
+  onClick?: (categoryName: string) => void;
 }
 
 export const CategoryCard: FC<CategoryCardProps> = ({
@@ -21,8 +21,11 @@ export const CategoryCard: FC<CategoryCardProps> = ({
   Icon,
   onClick
 }) => {
+  
   const handleClick = () => {
-    onClick(type);
+    if(onClick) {
+      onClick(type);
+    }
   };
 
   return (
