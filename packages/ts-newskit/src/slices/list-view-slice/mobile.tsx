@@ -19,7 +19,7 @@ export const ListViewSliceMobile = ({
   return (
     <CustomBlockLayout>
       {leadArticles.map((item: LeadArticleProps, index) => {
-        const renderAds = (index + 1) % 10 === 5; 
+        const renderAds = (index + 1) % 10 === 5;
         return (
           <>
             <TextBlock
@@ -66,7 +66,10 @@ export const ListViewSliceMobile = ({
         );
       })}
       <LoadMoreButton
-        onClick={() => onPageClick && onPageClick(currentPage + 1)}
+        onClick={() => {
+          history.pushState(null, '', `?page=${currentPage + 1}`);
+          onPageClick && onPageClick(currentPage + 1);
+        }}
         title="Load more"
       />
     </CustomBlockLayout>
