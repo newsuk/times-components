@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Menu, Visible, Divider, Scroll, Stack, LinkInline } from 'newskit';
 import { createAccountMenu, createMenu } from './createMenus';
 import {
-  NewsKitBurgerIcon,
-  NewsKitCloseIcon,
   NewsKitTimesMasthead,
   NewsKitSearchIcon,
   NewsKitSundayTimesMasthead
 } from '../../../../assets';
 import {
+  HamburgerIcon,
+  HamburgerIconButton,
   MastheadMob,
   MenuScrollDivider,
   ScrollMenu,
@@ -81,7 +81,7 @@ export const TopNav: React.FC<TopNavProps> = ({
           stackDistribution="flex-start"
           wrap="nowrap"
         >
-          <TopNavIcon
+          <HamburgerIconButton
             overrides={{
               stylePreset: 'buttonTopNav'
             }}
@@ -90,8 +90,12 @@ export const TopNav: React.FC<TopNavProps> = ({
             aria-controls="hamburgerMenu"
             aria-expanded={isHamburgerOpen}
           >
-            {isHamburgerOpen ? <NewsKitCloseIcon /> : <NewsKitBurgerIcon />}
-          </TopNavIcon>
+            <HamburgerIcon className={`${isHamburgerOpen ? 'open' : ''}`}>
+              <span />
+              <span />
+              <span />
+            </HamburgerIcon>
+          </HamburgerIconButton>
           <TopNavHide xs sm display="flex">
             <Divider vertical />
             <TopNavIcon
