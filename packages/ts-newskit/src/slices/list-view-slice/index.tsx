@@ -13,13 +13,17 @@ export type ListViewSliceProps = {
   currentPage?: number;
   onPageClick?: (currentPage: number) => void;
   itemsPerPage?: number;
+  totalItems: number;
+  isLoading?: boolean
 };
 export const ListViewSlice = ({
   leadArticles,
   clickHandler,
   currentPage,
   onPageClick,
-  itemsPerPage = 10
+  itemsPerPage = 10,
+  totalItems,
+  isLoading = false
 }: ListViewSliceProps) => {
   const mordifiedLeadArticles = leadArticles.map(item => ({
     ...item,
@@ -36,6 +40,8 @@ export const ListViewSlice = ({
           currentPage={currentPage}
           onPageClick={onPageClick}
           itemsPerPage={itemsPerPage}
+          totalItems={totalItems}
+          isLoading={isLoading}
         />
       </Visible>
       <Visible xs sm>
@@ -44,6 +50,7 @@ export const ListViewSlice = ({
             leadArticles={mordifiedLeadArticles}
             clickHandler={clickHandler}
             onPageClick={onPageClick}
+            isLoading={isLoading}
           />
         </WrappedStackLayout>
       </Visible>

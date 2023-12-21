@@ -11,7 +11,8 @@ const defaultProps = {
   leadArticles,
   clickHandler: mockClickHandler,
   currentPage: 1,
-  onPageClick: mockPageClick
+  onPageClick: mockPageClick,
+  totalItems: 10
 };
 
 describe('Render List View Slice', () => {

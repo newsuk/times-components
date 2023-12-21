@@ -15,13 +15,15 @@ type PaginationsProps = {
   defaultPage?: number;
   currentPage: number;
   onPageChange: (currentPage: number) => void;
+  isLoading?: boolean
 };
 export const Paginations = ({
   totalItems,
   pageSize,
   defaultPage = 1,
   currentPage,
-  onPageChange
+  onPageChange,
+  isLoading
 }: PaginationsProps) => {
   return (
     <StyledPagination
@@ -44,6 +46,7 @@ export const Paginations = ({
             return (
               <PaginationButton
                 overrides={{ stylePreset: 'interfaceBrand010' }}
+                disabled={isLoading}
                 {...rest}
               >
                 {rest.pageNumber}

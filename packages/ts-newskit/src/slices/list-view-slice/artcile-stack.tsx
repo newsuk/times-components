@@ -11,7 +11,7 @@ export const ArticleStack = ({
   leadArticles,
   articleWithAdSlot,
   clickHandler
-}: ListViewSliceProps) => {
+}: Omit<ListViewSliceProps, 'totalItems'>) => {
   return (
     <>
       {leadArticles.map((item: LeadArticleProps, index: number) => {

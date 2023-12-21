@@ -18,7 +18,9 @@ export const ListViewSliceDesktop = ({
   clickHandler,
   currentPage = 1,
   onPageClick,
-  itemsPerPage = 10
+  itemsPerPage = 10,
+  totalItems,
+  isLoading
 }: ListViewSliceProps) => {
   const mordifiedLeadArticles = leadArticles.map(item => ({
     ...item,
@@ -100,10 +102,11 @@ export const ListViewSliceDesktop = ({
         marginBlockStart="space060"
       >
         <Paginations
-          totalItems={mordifiedLeadArticles.length}
+          totalItems={totalItems}
           pageSize={itemsPerPage}
           currentPage={currentPage}
           onPageChange={page => onPageClick && onPageClick(page)}
+          isLoading={isLoading}
         />
       </Stack>
     </>

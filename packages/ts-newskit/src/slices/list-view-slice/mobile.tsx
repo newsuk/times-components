@@ -14,8 +14,9 @@ export const ListViewSliceMobile = ({
   leadArticles,
   clickHandler,
   currentPage = 1,
-  onPageClick
-}: ListViewSliceProps) => {
+  onPageClick,
+  isLoading
+}: Omit<ListViewSliceProps, 'totalItems'>) => {
   return (
     <CustomBlockLayout>
       {leadArticles.map((item: LeadArticleProps, index) => {
@@ -71,6 +72,7 @@ export const ListViewSliceMobile = ({
           onPageClick && onPageClick(currentPage + 1);
         }}
         title="Load more"
+        disabled={isLoading}
       />
     </CustomBlockLayout>
   );
