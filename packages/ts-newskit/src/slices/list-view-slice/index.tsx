@@ -11,7 +11,8 @@ export type ListViewSliceProps = {
   clickHandler: ClickHandlerType;
   articleWithAdSlot?: LeadArticleProps;
   currentPage?: number;
-  onPageClick?: (currentPage: number) => void;
+  onDesktopPageClick?: (currentPage: number) => void;
+  onMobilePageClick?: (currentPage: number) => void;
   itemsPerPage?: number;
   totalItems: number;
   isLoading?: boolean;
@@ -20,7 +21,8 @@ export const ListViewSlice = ({
   leadArticles,
   clickHandler,
   currentPage,
-  onPageClick,
+  onDesktopPageClick,
+  onMobilePageClick,
   itemsPerPage = 10,
   totalItems,
   isLoading = false
@@ -38,7 +40,7 @@ export const ListViewSlice = ({
           leadArticles={mordifiedLeadArticles}
           clickHandler={clickHandler}
           currentPage={currentPage}
-          onPageClick={onPageClick}
+          onDesktopPageClick={onDesktopPageClick}
           itemsPerPage={itemsPerPage}
           totalItems={totalItems}
           isLoading={isLoading}
@@ -49,7 +51,7 @@ export const ListViewSlice = ({
           <ListViewSliceMobile
             leadArticles={mordifiedLeadArticles}
             clickHandler={clickHandler}
-            onPageClick={onPageClick}
+            onMobilePageClick={onMobilePageClick}
             isLoading={isLoading}
           />
         </WrappedStackLayout>

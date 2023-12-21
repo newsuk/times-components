@@ -17,7 +17,7 @@ export const ListViewSliceDesktop = ({
   leadArticles,
   clickHandler,
   currentPage = 1,
-  onPageClick,
+  onDesktopPageClick,
   itemsPerPage = 10,
   totalItems,
   isLoading
@@ -105,7 +105,7 @@ export const ListViewSliceDesktop = ({
           totalItems={totalItems}
           pageSize={itemsPerPage}
           currentPage={currentPage}
-          onPageChange={page => onPageClick && onPageClick(page)}
+          onPageChange={page => onDesktopPageClick && onDesktopPageClick(page)}
           isLoading={isLoading}
         />
       </Stack>

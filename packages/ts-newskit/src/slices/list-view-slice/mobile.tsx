@@ -14,7 +14,7 @@ export const ListViewSliceMobile = ({
   leadArticles,
   clickHandler,
   currentPage = 1,
-  onPageClick,
+  onMobilePageClick,
   isLoading
 }: Omit<ListViewSliceProps, 'totalItems'>) => {
   return (
@@ -69,7 +69,7 @@ export const ListViewSliceMobile = ({
       <LoadMoreButton
         onClick={() => {
           history.pushState(null, '', `?page=${currentPage + 1}`);
-          onPageClick && onPageClick(currentPage + 1);
+          onMobilePageClick && onMobilePageClick(currentPage + 1);
         }}
         title="Load more"
         disabled={isLoading}
