@@ -10,7 +10,8 @@ const defaultProps: HeroBannerProps = {
   puzzleType: 'crossword',
   loginUrl:
     'https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles',
-  onClick: handleClick
+  onBtnClick: handleClick,
+  onLinkClick: handleClick
 };
 
 const renderComponent = (props: HeroBannerProps) =>
@@ -37,9 +38,18 @@ describe('HeroBanner', () => {
     );
   });
 
-  it('triggers onClick function when clicked', () => {
+  it('triggers onBtnClick function when clicked', () => {
     const { getByText } = renderComponent(defaultProps);
     const component = getByText('Subscribe');
+
+    fireEvent.click(component);
+
+    expect(handleClick).toHaveBeenCalled();
+  });
+
+  it('triggers onLinkClick function when clicked', () => {
+    const { getByText } = renderComponent(defaultProps);
+    const component = getByText('Log In');
 
     fireEvent.click(component);
 
