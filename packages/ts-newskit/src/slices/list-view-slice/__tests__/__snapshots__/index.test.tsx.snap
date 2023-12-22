@@ -2047,7 +2047,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
         >
           <nav
             aria-label="pagination-1"
-            class="css-ay6nge"
+            class="css-118zj1w"
             data-testid="pagination-container"
           >
             <ul
@@ -2118,7 +2118,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   <a
                     aria-current="page"
                     aria-label="current page, page 1"
-                    class="css-s3ky7c"
+                    class="css-89926q"
                     data-testid="pagination-item"
                     href="/?page=1"
                   >
@@ -6070,7 +6070,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
         >
           <nav
             aria-label="pagination-1"
-            class="css-ay6nge"
+            class="css-118zj1w"
             data-testid="pagination-container"
           >
             <ul
@@ -6141,7 +6141,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   <a
                     aria-current="page"
                     aria-label="current page, page 1"
-                    class="css-s3ky7c"
+                    class="css-89926q"
                     data-testid="pagination-item"
                     href="/?page=1"
                   >
@@ -10093,7 +10093,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
         >
           <nav
             aria-label="pagination-1"
-            class="css-ay6nge"
+            class="css-118zj1w"
             data-testid="pagination-container"
           >
             <ul
@@ -10164,7 +10164,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   <a
                     aria-current="page"
                     aria-label="current page, page 1"
-                    class="css-s3ky7c"
+                    class="css-89926q"
                     data-testid="pagination-item"
                     href="/?page=1"
                   >
@@ -14116,7 +14116,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
         >
           <nav
             aria-label="pagination-1"
-            class="css-ay6nge"
+            class="css-118zj1w"
             data-testid="pagination-container"
           >
             <ul
@@ -14187,7 +14187,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   <a
                     aria-current="page"
                     aria-label="current page, page 1"
-                    class="css-s3ky7c"
+                    class="css-89926q"
                     data-testid="pagination-item"
                     href="/?page=1"
                   >
@@ -18138,7 +18138,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
         >
           <nav
             aria-label="pagination-1"
-            class="css-ay6nge"
+            class="css-118zj1w"
             data-testid="pagination-container"
           >
             <ul
@@ -18209,7 +18209,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   <a
                     aria-current="page"
                     aria-label="current page, page 1"
-                    class="css-s3ky7c"
+                    class="css-89926q"
                     data-testid="pagination-item"
                     href="/?page=1"
                   >

@@ -87,13 +87,13 @@ export const AdBlockWrapperMedium = styled(Block)`
 export const StyledPagination = styled(Pagination)`
   ul li button {
     background-color: inherit;
-    border-radius: 8px;
-    &[aria-current='page'] {
-      background-color: #e4e4e4;
-    }
   }
 `;
 
 export const StyledPaginationButton = styled(PaginationButton)`
   color: inherit;
+  border-radius: 8px;
+  &[aria-current='page'] {
+    background-color: #e4e4e4;
+  }
 `;
