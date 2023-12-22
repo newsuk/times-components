@@ -47,6 +47,7 @@ export const Paginations = ({
               <PaginationButton
                 overrides={{ stylePreset: 'interfaceBrand010' }}
                 disabled={isLoading}
+                href={`${window.location.pathname}?page=${rest.pageNumber}`}
                 {...rest}
               >
                 {rest.pageNumber}

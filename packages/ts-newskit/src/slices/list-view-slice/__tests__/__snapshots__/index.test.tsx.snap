@@ -4002,17 +4002,17 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
             <div
               class="css-ribncx"
             >
-              <button
+              <a
                 class="css-1gt9qzx"
-                data-testid="button"
-                type="button"
+                data-testid="buttonLink"
+                href="/?page=2"
               >
                 <span
                   class="css-135wemz"
                 >
                   Load more
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -8025,17 +8025,17 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
             <div
               class="css-ribncx"
             >
-              <button
+              <a
                 class="css-1gt9qzx"
-                data-testid="button"
-                type="button"
+                data-testid="buttonLink"
+                href="/?page=2"
               >
                 <span
                   class="css-135wemz"
                 >
                   Load more
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -12048,17 +12048,17 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
             <div
               class="css-ribncx"
             >
-              <button
+              <a
                 class="css-1gt9qzx"
-                data-testid="button"
-                type="button"
+                data-testid="buttonLink"
+                href="/?page=2"
               >
                 <span
                   class="css-135wemz"
                 >
                   Load more
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -16071,17 +16071,17 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
             <div
               class="css-ribncx"
             >
-              <button
+              <a
                 class="css-1gt9qzx"
-                data-testid="button"
-                type="button"
+                data-testid="buttonLink"
+                href="/?page=2"
               >
                 <span
                   class="css-135wemz"
                 >
                   Load more
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -20093,17 +20093,17 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
             <div
               class="css-ribncx"
             >
-              <button
+              <a
                 class="css-1gt9qzx"
-                data-testid="button"
-                type="button"
+                data-testid="buttonLink"
+                href="/?page=2"
               >
                 <span
                   class="css-135wemz"
                 >
                   Load more
                 </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

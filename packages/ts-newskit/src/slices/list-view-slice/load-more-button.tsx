@@ -5,11 +5,13 @@ type LoadMoreButtonProps = {
   title: string;
   onClick: () => void;
   disabled?: boolean;
+  href: string
 };
 const LoadMoreButton: React.FC<LoadMoreButtonProps> = ({
   title,
   onClick,
-  disabled
+  disabled,
+  href
 }) => {
   return (
     <Stack
@@ -25,6 +27,7 @@ const LoadMoreButton: React.FC<LoadMoreButtonProps> = ({
         }}
         onClick={onClick}
         disabled={disabled}
+        href={href}
       >
         {title}
       </Button>
