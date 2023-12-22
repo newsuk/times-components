@@ -5,13 +5,15 @@ import { leadArticles } from '../data.json';
 import { renderComponent } from '../../../utils';
 
 const mockClickHandler = jest.fn();
-const mockPageClick = jest.fn();
+const mockMobilePageClick = jest.fn();
+const mockDesktopPageClick = jest.fn();
 
 const defaultProps = {
   leadArticles,
   clickHandler: mockClickHandler,
   currentPage: 1,
-  onPageClick: mockPageClick,
+  onMobilePageClick: mockMobilePageClick,
+  onDesktopPageClick: mockDesktopPageClick,
   totalItems: 10
 };
 

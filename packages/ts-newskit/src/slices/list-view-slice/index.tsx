@@ -52,6 +52,8 @@ export const ListViewSlice = ({
             leadArticles={mordifiedLeadArticles}
             clickHandler={clickHandler}
             onMobilePageClick={onMobilePageClick}
+            itemsPerPage={itemsPerPage}
+            totalItems={totalItems}
             isLoading={isLoading}
           />
         </WrappedStackLayout>

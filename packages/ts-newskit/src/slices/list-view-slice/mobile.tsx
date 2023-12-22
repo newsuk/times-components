@@ -15,8 +15,11 @@ export const ListViewSliceMobile = ({
   clickHandler,
   currentPage = 1,
   onMobilePageClick,
-  isLoading
-}: Omit<ListViewSliceProps, 'totalItems'>) => {
+  isLoading,
+  itemsPerPage = 10,
+  totalItems
+}: ListViewSliceProps) => {
+  const renderLoadMoreButton = currentPage * itemsPerPage < totalItems;
   return (
     <CustomBlockLayout>
       {leadArticles.map((item: LeadArticleProps, index) => {
@@ -66,15 +69,17 @@ export const ListViewSliceMobile = ({
           </>
         );
       })}
-      <LoadMoreButton
-        onClick={() => {
-          history.pushState(null, '', `?page=${currentPage + 1}`);
-          onMobilePageClick && onMobilePageClick(currentPage + 1);
-        }}
-        title="Load more"
-        disabled={isLoading}
-        href={`${window.location.pathname}?page=${currentPage + 1}`}
-      />
+      {renderLoadMoreButton && (
+        <LoadMoreButton
+          onClick={() => {
+            history.pushState(null, '', `?page=${currentPage + 1}`);
+            onMobilePageClick && onMobilePageClick(currentPage + 1);
+          }}
+          title="Load more"
+          disabled={isLoading}
+          href={`${window.location.pathname}?page=${currentPage + 1}`}
+        />
+      )}
     </CustomBlockLayout>
   );
 };
