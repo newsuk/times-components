@@ -5,7 +5,7 @@ type LoadMoreButtonProps = {
   title: string;
   onClick: () => void;
   disabled?: boolean;
-  href: string
+  href: string;
 };
 const LoadMoreButton: React.FC<LoadMoreButtonProps> = ({
   title,

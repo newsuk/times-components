@@ -74,7 +74,7 @@ export const ListViewSliceMobile = ({
         title="Load more"
         disabled={isLoading}
         href={`${window.location.pathname}?page=${currentPage + 1}`}
-        />
+      />
     </CustomBlockLayout>
   );
 };
