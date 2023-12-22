@@ -4,7 +4,7 @@ import {
   PaginationItems,
   PaginationNextItem,
   PaginationLastItem,
-  PaginationButton,
+  PaginationButton
 } from 'newskit';
 import React from 'react';
 import { StyledPagination } from './styles';
@@ -48,10 +48,10 @@ export const Paginations = ({
                 overrides={{ stylePreset: 'interfaceBrand010' }}
                 disabled={isLoading}
                 href={`${window.location.pathname}?page=${rest.pageNumber}`}
-                as='a'
+                as="a"
                 {...rest}
               >
-               {rest.pageNumber}
+                {rest.pageNumber}
               </PaginationButton>
             );
           }
