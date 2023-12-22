@@ -3,7 +3,8 @@ import {
   styled,
   getMediaQueryFromTheme,
   TextBlock,
-  Pagination
+  Pagination,
+  PaginationButton
 } from 'newskit';
 
 export const StyledBlock = styled(Block)`
@@ -91,4 +92,8 @@ export const StyledPagination = styled(Pagination)`
       background-color: #e4e4e4;
     }
   }
+`;
+
+export const StyledPaginationButton = styled(PaginationButton)`
+  color: inherit;
 `;

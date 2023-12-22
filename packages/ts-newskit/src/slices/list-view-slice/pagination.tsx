@@ -3,11 +3,10 @@ import {
   PaginationPrevItem,
   PaginationItems,
   PaginationNextItem,
-  PaginationLastItem,
-  PaginationButton
+  PaginationLastItem
 } from 'newskit';
 import React from 'react';
-import { StyledPagination } from './styles';
+import { StyledPagination, StyledPaginationButton } from './styles';
 
 type PaginationsProps = {
   totalItems: number;
@@ -44,7 +43,7 @@ export const Paginations = ({
           stylePreset: 'interfaceBrand010',
           itemButton: ({ href, ...rest }) => {
             return (
-              <PaginationButton
+              <StyledPaginationButton
                 overrides={{ stylePreset: 'interfaceBrand010' }}
                 disabled={isLoading}
                 href={`${window.location.pathname}?page=${rest.pageNumber}`}
@@ -52,7 +51,7 @@ export const Paginations = ({
                 {...rest}
               >
                 {rest.pageNumber}
-              </PaginationButton>
+              </StyledPaginationButton>
             );
           }
         }}
