@@ -93,8 +93,6 @@ export const TopNavIcon = styled(IconButton)`
   }
 `;
 
-export const HamburgerIconButton = styled(TopNavIcon)``;
-
 export const HamburgerIcon = styled.div`
   --transition: 0.25s ease-in-out;
 

@@ -8,7 +8,6 @@ import {
 } from '../../../../assets';
 import {
   HamburgerIcon,
-  HamburgerIconButton,
   MastheadMob,
   MenuScrollDivider,
   ScrollMenu,
@@ -81,7 +80,7 @@ export const TopNav: React.FC<TopNavProps> = ({
           stackDistribution="flex-start"
           wrap="nowrap"
         >
-          <HamburgerIconButton
+          <TopNavIcon
             overrides={{
               stylePreset: 'buttonTopNav'
             }}
@@ -95,7 +94,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               <span />
               <span />
             </HamburgerIcon>
-          </HamburgerIconButton>
+          </TopNavIcon>
           <TopNavHide xs sm display="flex">
             <Divider vertical />
             <TopNavIcon
