@@ -64,22 +64,13 @@ exports[`NavigationList renders the component with nested items 1`] = `
     <ul
       class="css-8n1fik"
     >
-      <li
-        class="nk-menu-item css-1kdinep"
+      <a
+        class="css-2xb4pt"
+        href="/item-1"
+        id="vertical-sub-item-1"
       >
-        <a
-          class="css-qveg5m"
-          data-testid="buttonLink"
-          href="/item-1"
-          id="vertical-sub-item-1"
-        >
-          <span
-            class="css-t9dmcw"
-          >
-            Item 1
-          </span>
-        </a>
-      </li>
+        Item 1
+      </a>
       <li
         aria-hidden="true"
         class="css-1uftliw"
@@ -91,22 +82,13 @@ exports[`NavigationList renders the component with nested items 1`] = `
           data-testid="divider"
         />
       </li>
-      <li
-        class="nk-menu-item css-1kdinep"
+      <a
+        class="css-2xb4pt"
+        href="/item-2"
+        id="vertical-sub-item-2"
       >
-        <a
-          class="css-qveg5m"
-          data-testid="buttonLink"
-          href="/item-2"
-          id="vertical-sub-item-2"
-        >
-          <span
-            class="css-t9dmcw"
-          >
-            Item 2
-          </span>
-        </a>
-      </li>
+        Item 2
+      </a>
       <li
         aria-hidden="true"
         class="css-1uftliw"
@@ -166,22 +148,13 @@ exports[`NavigationList renders the component with nested items 1`] = `
     <ul
       class="css-8n1fik"
     >
-      <li
-        class="nk-menu-item css-1kdinep"
+      <a
+        class="css-2xb4pt"
+        href="/item-1"
+        id="vertical-sub-item-1"
       >
-        <a
-          class="css-qveg5m"
-          data-testid="buttonLink"
-          href="/item-1"
-          id="vertical-sub-item-1"
-        >
-          <span
-            class="css-t9dmcw"
-          >
-            Menu 3 Item 1
-          </span>
-        </a>
-      </li>
+        Menu 3 Item 1
+      </a>
       <li
         aria-hidden="true"
         class="css-1uftliw"
@@ -193,22 +166,13 @@ exports[`NavigationList renders the component with nested items 1`] = `
           data-testid="divider"
         />
       </li>
-      <li
-        class="nk-menu-item css-1kdinep"
+      <a
+        class="css-2xb4pt"
+        href="/menu-3-item-2"
+        id="vertical-sub-menu-3-item-2"
       >
-        <a
-          class="css-qveg5m"
-          data-testid="buttonLink"
-          href="/menu-3-item-2"
-          id="vertical-sub-menu-3-item-2"
-        >
-          <span
-            class="css-t9dmcw"
-          >
-            Menu 3 Item 2
-          </span>
-        </a>
-      </li>
+        Menu 3 Item 2
+      </a>
       <li
         aria-hidden="true"
         class="css-1uftliw"

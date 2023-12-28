@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { MenuSub, MenuItem, MenuDivider } from 'newskit';
 import { MenuItemParent } from '../types';
+import { StyledMenuItem } from '../styles';
 
 const NavigationList: React.FC<{
   data: MenuItemParent[];
@@ -32,19 +33,14 @@ const NavigationList: React.FC<{
               >
                 {item.items.map(({ slug, title, url }) => (
                   <Fragment key={`sub-${slug}`}>
-                    <MenuItem
+                    <StyledMenuItem
                       key={item.slug}
                       href={url}
                       id={`vertical-sub-${slug}`}
-                      overrides={{
-                        paddingInlineStart: 'space060',
-                        stylePreset: 'menuItemL2',
-                        typographyPreset: 'newPreset040'
-                      }}
                       onClick={() => clickHandler(title)}
                     >
                       {title}
-                    </MenuItem>
+                    </StyledMenuItem>
                     <MenuDivider />
                   </Fragment>
                 ))}

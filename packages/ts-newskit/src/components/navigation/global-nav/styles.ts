@@ -9,7 +9,9 @@ import {
   Hidden,
   IconButton,
   Drawer,
-  Visible
+  Visible,
+  getTypographyPresetFromTheme,
+  getStylePresetFromTheme
 } from 'newskit';
 
 export const TopNavContainer = styled(Stack)`
@@ -123,4 +125,19 @@ export const HamburgerMenuNav = styled(Menu)`
   overflow-y: scroll;
   background-color: #151515;
   width: 100%;
+`;
+
+export const StyledMenuItem = styled.a`
+  ${getStylePresetFromTheme('menuItemL2')}
+  ${getTypographyPresetFromTheme('newPreset040')}
+
+  ${getSpacingCssFromTheme('paddingBlock', 'space020')}
+  ${getSpacingCssFromTheme('paddingInlineStart', 'space060')}
+
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  
+  text-decoration: none;
 `;
