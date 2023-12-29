@@ -35,8 +35,8 @@ const NavigationList: React.FC<{
                   <Fragment key={`sub-${slug}`}>
                     <StyledMenuItem
                       key={item.slug}
-                      href={url}
                       id={`vertical-sub-${slug}`}
+                      href={url}
                       onClick={() => clickHandler(title)}
                     >
                       {title}
