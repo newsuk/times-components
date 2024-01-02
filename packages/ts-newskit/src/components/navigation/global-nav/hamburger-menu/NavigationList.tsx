@@ -16,18 +16,43 @@ const NavigationList: React.FC<{
     clickHandler(title);
   };
 
+  const indicateActiveItem = (el: HTMLElement, slug?: string) => {
+    el.classList.add("active")
+    onExpand && slug && onExpand(slug);
+  }
+
   useEffect(() => {
     const [_, l1, l2] = window.location.pathname.split('/');
 
-    const l1Menu = document.getElementById(`vertical-${l1}`);
-    const l2Menu = document.getElementById(`vertical-sub-${l2}`);
+    // Non nested L1
+    const L1MenuItem = document.getElementById(`vertical-${l1}`);
+    
+    // nested L1
+    const nestedL1MenuItem = document.getElementById(`vertical-sub-${l1}`);
 
-    if (l2Menu) {
-      l2Menu.classList.add('active');
-      onExpand && onExpand(l1);
-    } else if (l1Menu) {
-      l1Menu.classList.add('active');
+    // L1 which has a sub menu
+    const subL1MenuItem = document.getElementById(
+      `vertical-sub-top-stories-${l1}`
+    );
+
+    const l2MenuItem = document.getElementById(`vertical-sub-${l2}`);
+
+
+    if (l2MenuItem) {
+      indicateActiveItem(l2MenuItem, l1)
+    } 
+    else if (subL1MenuItem) {
+      indicateActiveItem(subL1MenuItem, l1)
+    } 
+    else if (L1MenuItem) {
+      indicateActiveItem(L1MenuItem)
     }
+    else if (nestedL1MenuItem) {
+      const parentButton = (nestedL1MenuItem.parentElement?.parentElement?.previousSibling as HTMLElement)
+      const parentSlug = parentButton?.getAttribute("id")?.slice(9)
+      indicateActiveItem(nestedL1MenuItem, parentSlug)
+    }
+
   }, []);
 
   return (
