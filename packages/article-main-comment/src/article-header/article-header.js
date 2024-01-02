@@ -30,7 +30,6 @@ const ArticleHeader = ({
   headline,
   label,
   publicationName,
-  showAudioPlayer,
   publishedTime,
   standfirst,
   updatedTime
