@@ -91,6 +91,20 @@ describe('HamburgerMenu - Logged In', () => {
     const Button = getAllByTestId('buttonLink')[1];
     expect(Button).toHaveClass('active');
   });
+
+  it('should indicate sub l1 item', () => {
+    window.history.pushState({}, '', '/main-menu-4');
+    const { getAllByTestId } = renderComponent(true);
+    const Button = getAllByTestId('buttonLink')[5];
+    expect(Button).toHaveClass('active');
+  });
+
+  it('should indicate nested l1 item', () => {
+    window.history.pushState({}, '', '/nested-l1');
+    const { getAllByTestId } = renderComponent(true);
+    const Button = getAllByTestId('buttonLink')[6];
+    expect(Button).toHaveClass('active');
+  });
 });
 
 describe('HamburgerMenu - Logged Out', () => {
