@@ -3,8 +3,6 @@ import {
   ArticleFlags,
   UpdatedTimeProvider
 } from "@times-components/ts-components";
-import { InArticleAudio, TCThemeProvider } from "@times-components/ts-newskit";
-import { hasBylineData } from "@times-components/article-byline";
 import Image from "@times-components/image";
 import { checkStylesForUnits } from "@times-components/utils";
 
@@ -64,27 +62,6 @@ const ArticleHeader = ({
       publicationName={publicationName}
       publishedTime={publishedTime}
     />
-    <TCThemeProvider>
-      <InArticleAudio
-        showAudioPlayer={showAudioPlayer}
-        src=""
-        readyToPlayText="Listen to article"
-        playingText="Playing"
-        narrator={
-          hasBylineData(bylines)
-            ? bylines[0].byline[0].children[0].attributes.value
-            : ""
-        }
-        headline={headline}
-        feedback={{
-          requestFeedback: true,
-          feedbackMessage:
-            "Want to listen to more articles? Give your feedback below or email",
-          thankyouMessage:
-            "Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this."
-        }}
-      />
-    </TCThemeProvider>
   </HeaderContainer>
 );
 
