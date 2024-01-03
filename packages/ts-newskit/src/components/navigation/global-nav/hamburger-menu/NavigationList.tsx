@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
-import { MenuSub, MenuItem, MenuDivider } from 'newskit';
+import { MenuDivider } from 'newskit';
 import { MenuItemParent } from '../types';
-import { StyledMenuItem } from '../styles';
+import { StyledL2MenuItem, StyledMenuItem, StyledMenuSub } from '../styles';
 
 const NavigationList: React.FC<{
   data: MenuItemParent[];
@@ -21,7 +21,7 @@ const NavigationList: React.FC<{
         item =>
           item.items ? (
             <Fragment key={item.slug}>
-              <MenuSub
+              <StyledMenuSub
                 title={item.title}
                 id={`vertical-${item.slug}`}
                 expanded={expandedL1 === item.slug}
@@ -33,23 +33,23 @@ const NavigationList: React.FC<{
               >
                 {item.items.map(({ slug, title, url }) => (
                   <Fragment key={`sub-${slug}`}>
-                    <StyledMenuItem
+                    <StyledL2MenuItem
                       key={item.slug}
                       id={`vertical-sub-${slug}`}
                       href={url}
                       onClick={() => clickHandler(title)}
                     >
                       {title}
-                    </StyledMenuItem>
+                    </StyledL2MenuItem>
                     <MenuDivider />
                   </Fragment>
                 ))}
-              </MenuSub>
+              </StyledMenuSub>
               <MenuDivider />
             </Fragment>
           ) : (
             <Fragment key={item.slug}>
-              <MenuItem
+              <StyledMenuItem
                 key={item.slug}
                 href={item.url}
                 id={`vertical-${item.slug}`}
@@ -60,7 +60,7 @@ const NavigationList: React.FC<{
                 onClick={() => clickHandler(item.title)}
               >
                 {item.title}
-              </MenuItem>
+              </StyledMenuItem>
               <MenuDivider />
             </Fragment>
           )
