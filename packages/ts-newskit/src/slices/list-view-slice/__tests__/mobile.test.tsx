@@ -4,16 +4,19 @@ import { leadArticles } from '../data.json';
 import { renderComponent } from '../../../utils';
 import { ListViewSliceMobile } from '../mobile';
 import { fireEvent } from '@testing-library/react';
+import { SectionAd } from '../utils/ads'
 
 const mockClickHandler = jest.fn();
-const mockMobilePageClick = jest.fn();
+const handlePageChange = jest.fn();
 
 const defaultProps = {
   leadArticles,
   clickHandler: mockClickHandler,
   currentPage: 1,
-  onMobilePageClick: mockMobilePageClick,
-  totalItems: 12
+  handlePageChange: handlePageChange,
+  totalItems: 12,
+  StickyAd: SectionAd,
+  SectionAd: SectionAd
 };
 
 describe('Render ListViewSliceMobile', () => {
@@ -29,7 +32,7 @@ describe('Render ListViewSliceMobile', () => {
     );
     const loadMoreButton = getByText('Load more');
     fireEvent.click(loadMoreButton);
-    expect(mockMobilePageClick).toHaveBeenCalled();
+    expect(handlePageChange).toHaveBeenCalled();
     expect(loadMoreButton).toBeTruthy();
   });
   it(`doesn't render load more button when no items to load`, () => {

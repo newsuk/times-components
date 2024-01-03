@@ -905,13 +905,17 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="css-hgdps2"
+        class="css-h18yzn"
       >
-        ADVERTISEMENT
+        <div
+          class="css-hgdps2"
+        >
+          ADVERTISEMENT
+        </div>
+        <div
+          class="css-7ai59q"
+        />
       </div>
-      <div
-        class="css-lqfdvw"
-      />
       <span
         class="css-9qegzi"
       >

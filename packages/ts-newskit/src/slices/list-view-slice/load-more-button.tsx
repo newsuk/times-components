@@ -3,13 +3,15 @@ import { Button, Stack } from 'newskit';
 
 type LoadMoreButtonProps = {
   title: string;
-  onClick: () => void;
+  currentPage: number;
+  handlePageChange: (page: number) => void;
   disabled?: boolean;
   href: string;
 };
 const LoadMoreButton: React.FC<LoadMoreButtonProps> = ({
   title,
-  onClick,
+  currentPage,
+  handlePageChange,
   disabled,
   href
 }) => {
@@ -25,7 +27,10 @@ const LoadMoreButton: React.FC<LoadMoreButtonProps> = ({
           stylePreset: 'buttonOutlinedSecondary',
           width: '375px'
         }}
-        onClick={onClick}
+        onClick={(event: React.MouseEvent) => {
+          event.preventDefault()
+          handlePageChange(currentPage + 1)
+        }}
         disabled={disabled}
         href={href}
       >

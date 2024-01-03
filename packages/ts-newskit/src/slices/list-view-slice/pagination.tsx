@@ -3,7 +3,7 @@ import {
   PaginationPrevItem,
   PaginationItems,
   PaginationNextItem,
-  PaginationLastItem
+  PaginationLastItem,
 } from 'newskit';
 import React from 'react';
 import { StyledPagination, StyledPaginationButton } from './styles';
@@ -13,15 +13,16 @@ type PaginationsProps = {
   pageSize: number;
   defaultPage?: number;
   currentPage: number;
-  onPageChange: (currentPage: number) => void;
+  handlePageChange: (page: number) => void;
   isLoading?: boolean;
 };
+
 export const Paginations = ({
   totalItems,
   pageSize,
   defaultPage = 1,
   currentPage,
-  onPageChange,
+  handlePageChange,
   isLoading
 }: PaginationsProps) => {
   return (
@@ -30,34 +31,54 @@ export const Paginations = ({
       pageSize={pageSize}
       defaultPage={defaultPage}
       aria-label={`pagination-${currentPage}`}
-      onPageChange={onPageChange}
       page={currentPage}
     >
-      <PaginationFirstItem overrides={{ stylePreset: 'interfaceBrand010' }} />
-      <PaginationPrevItem overrides={{ stylePreset: 'interfaceBrand010' }} />
+      <PaginationFirstItem 
+        overrides={{ stylePreset: 'interfaceBrand010' }}
+        onClick={() => handlePageChange(1)}
+      />
+      <PaginationPrevItem
+        overrides={{ stylePreset: 'interfaceBrand010' }}
+        onClick={() => handlePageChange(currentPage - 1)}
+
+      />
       <PaginationItems
         truncation
         siblings={2}
         boundaries={1}
         overrides={{
           stylePreset: 'interfaceBrand010',
-          itemButton: ({ href, ...rest }) => {
+          itemButton: ({ pageNumber, ...rest }) => {
             return (
               <StyledPaginationButton
-                overrides={{ stylePreset: 'interfaceBrand010' }}
-                disabled={isLoading}
-                href={`${window.location.pathname}?page=${rest.pageNumber}`}
-                as="a"
                 {...rest}
+                overrides={{
+                  minHeight: { xs: undefined },
+                  minWidth: { xs: undefined },
+                  stylePreset: 'interfaceBrand010'
+                }}
+                disabled={isLoading}
+                onClick={(event: React.MouseEvent) => {
+                  event.preventDefault()
+                  pageNumber && handlePageChange(pageNumber)
+                }}
+                href={`${window.location.pathname}?page=${pageNumber}`}
               >
-                {rest.pageNumber}
+                {pageNumber}
               </StyledPaginationButton>
             );
           }
         }}
       />
-      <PaginationNextItem overrides={{ stylePreset: 'interfaceBrand010' }} />
-      <PaginationLastItem overrides={{ stylePreset: 'interfaceBrand010' }} />
+      <PaginationNextItem
+        overrides={{ stylePreset: 'interfaceBrand010' }}
+        onClick={() => handlePageChange(currentPage + 1)}
+
+      />
+      <PaginationLastItem
+        overrides={{ stylePreset: 'interfaceBrand010' }}
+        onClick={() => handlePageChange(Math.ceil(totalItems/pageSize))}
+      />
     </StyledPagination>
   );
 };

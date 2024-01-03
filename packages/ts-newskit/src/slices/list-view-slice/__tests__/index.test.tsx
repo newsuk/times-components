@@ -3,18 +3,19 @@ import '@testing-library/jest-dom';
 import { ListViewSlice } from '../index';
 import { leadArticles } from '../data.json';
 import { renderComponent } from '../../../utils';
+import { SectionAd } from '../utils/ads';
 
 const mockClickHandler = jest.fn();
-const mockMobilePageClick = jest.fn();
-const mockDesktopPageClick = jest.fn();
+const handlePageChange = jest.fn();
 
 const defaultProps = {
   leadArticles,
   clickHandler: mockClickHandler,
   currentPage: 1,
-  onMobilePageClick: mockMobilePageClick,
-  onDesktopPageClick: mockDesktopPageClick,
-  totalItems: 10
+  handlePageChange: handlePageChange,
+  totalItems: 10,
+  StickyAd: SectionAd,
+  SectionAd: SectionAd
 };
 
 describe('Render List View Slice', () => {

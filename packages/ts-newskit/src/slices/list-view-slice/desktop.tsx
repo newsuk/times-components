@@ -1,10 +1,9 @@
 import React, { Fragment } from 'react';
 import { Divider, Block, Stack } from 'newskit';
-import { ArticleStack } from './artcile-stack';
+import { ArticleStack } from './article-stack';
 import {
   StyledMainDivider,
   StyledAdContainer,
-  StyledAdBlock,
   StyledDateText,
   AdBlockWrapperLargeAndAbove
 } from './styles';
@@ -17,22 +16,26 @@ export const ListViewSliceDesktop = ({
   leadArticles,
   clickHandler,
   currentPage = 1,
-  onDesktopPageClick,
+  handlePageChange,
   itemsPerPage = 10,
   totalItems,
-  isLoading
+  isLoading,
+  StickyAd,
+  SectionAd
 }: ListViewSliceProps) => {
-  const mordifiedLeadArticles = leadArticles.map(item => ({
-    ...item,
-    headlineTypographyPreset: 'editorialHeadline020',
-    isLeadImage: false
-  }));
+  const mordifiedLeadArticles = leadArticles
+    .slice(0, itemsPerPage)
+    .map(item => ({
+      ...item,
+      headlineTypographyPreset: 'editorialHeadline020',
+      isLeadImage: false
+    }));
 
   const arrayOfArrays = Object.values(
     groupArticlesByDate(mordifiedLeadArticles)
   ).map(arrayOfArray => removeDuplicateDates(arrayOfArray));
 
-  const articleWithAdSlot = arrayOfArrays.flat()[4];
+  const articleWithAdSlot = arrayOfArrays.flat()[Math.ceil(arrayOfArrays.length/2)];
 
   return (
     <>
@@ -65,6 +68,7 @@ export const ListViewSliceDesktop = ({
                     <Block>
                       <ArticleStack
                         leadArticles={arrayOfArray}
+                        SectionAd={SectionAd}
                         clickHandler={clickHandler}
                         articleWithAdSlot={articleWithAdSlot}
                       />
@@ -75,18 +79,9 @@ export const ListViewSliceDesktop = ({
             );
           })}
         </Block>
-        <StyledAdContainer
-          marginInlineStart={{ lg: 'space060', xl: 'space100' }}
-        >
+        <StyledAdContainer marginInlineStart={{ lg: 'space060', xl: 'space100' }}>
           <AdBlockWrapperLargeAndAbove>
-            <Stack
-              flow="horizontal-center"
-              stackDistribution="center"
-              marginBlock="space030"
-            >
-              ADVERTISEMENT
-            </Stack>
-            <StyledAdBlock />
+            <StickyAd />
           </AdBlockWrapperLargeAndAbove>
         </StyledAdContainer>
       </Stack>
@@ -105,7 +100,7 @@ export const ListViewSliceDesktop = ({
           totalItems={totalItems}
           pageSize={itemsPerPage}
           currentPage={currentPage}
-          onPageChange={page => onDesktopPageClick && onDesktopPageClick(page)}
+          handlePageChange={handlePageChange}
           isLoading={isLoading}
         />
       </Stack>

@@ -3,15 +3,16 @@ import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
-import { Divider, Block, Visible, Hidden, Stack } from 'newskit';
-import { StyledAdBlock, AdBlockWrapperMedium } from './styles';
+import { Divider, Block, Visible, Hidden } from 'newskit';
+import { AdBlockWrapperMedium } from './styles';
 import { ListViewSliceProps } from '.';
 
 export const ArticleStack = ({
   leadArticles,
   articleWithAdSlot,
+  SectionAd,
   clickHandler
-}: Omit<ListViewSliceProps, 'totalItems'>) => {
+}: Omit<ListViewSliceProps, 'totalItems' | 'handlePageChange' | 'StickyAd'>) => {
   return (
     <>
       {leadArticles.map((item: LeadArticleProps, index: number) => {
@@ -69,14 +70,7 @@ export const ArticleStack = ({
                         stylePreset: 'lightDivider'
                       }}
                     />
-                    <Stack
-                      flow="horizontal-center"
-                      stackDistribution="center"
-                      marginBlockEnd="space030"
-                    >
-                      ADVERTISEMENT
-                    </Stack>
-                    <StyledAdBlock />
+                    <SectionAd />
                   </Visible>
                 )}
             </AdBlockWrapperMedium>

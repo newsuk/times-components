@@ -1008,12 +1008,12 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                     data-testid="divider"
                   />
                   <div
-                    class="css-rl0qtu"
+                    class="css-hgdps2"
                   >
                     ADVERTISEMENT
                   </div>
                   <div
-                    class="css-lqfdvw"
+                    class="css-7ai59q"
                   />
                 </div>
               </div>
@@ -2015,7 +2015,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
         class="css-1sozmkk"
       >
         <div
-          class="css-79111u"
+          class="css-18tqgyi"
         >
           <div
             class="css-hgdps2"
@@ -2023,7 +2023,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
             ADVERTISEMENT
           </div>
           <div
-            class="css-lqfdvw"
+            class="css-7ai59q"
           />
         </div>
       </div>
@@ -2109,7 +2109,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
               <a
                 aria-current="page"
                 aria-label="current page, page 1"
-                class="css-1ocvllq"
+                class="css-1twhds8"
                 data-testid="pagination-item"
                 href="/?page=1"
               >
@@ -2129,7 +2129,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
             >
               <a
                 aria-label="go to page 2"
-                class="css-1ocvllq"
+                class="css-1twhds8"
                 data-testid="pagination-item"
                 href="/?page=2"
               >

@@ -4,7 +4,8 @@ import {
   getMediaQueryFromTheme,
   TextBlock,
   Pagination,
-  PaginationButton
+  PaginationButton,
+  getSpacingCssFromTheme
 } from 'newskit';
 
 export const StyledBlock = styled(Block)`
@@ -58,8 +59,6 @@ export const StyledAdBlock = styled(Block)`
   background: #ff5858;
   margin-bottom: 30px;
   ${getMediaQueryFromTheme('md')} {
-    height: 250px;
-    background: #ff5858;
     margin: 0 0 30px 0;
   }
 
@@ -77,6 +76,7 @@ export const StyledDateText = styled(TextBlock)`
 
 export const AdBlockWrapperLargeAndAbove = styled(Block)`
   position: fixed;
+  ${getSpacingCssFromTheme((space: string) => ({ top: `${space}` }), 'space040')}
 `;
 
 export const AdBlockWrapperMedium = styled(Block)`

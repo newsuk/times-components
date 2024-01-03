@@ -4,16 +4,19 @@ import { leadArticles } from '../data.json';
 import { renderComponent } from '../../../utils';
 import { ListViewSliceDesktop } from '../desktop';
 import { fireEvent } from '@testing-library/react';
+import { SectionAd } from '../utils/ads';
 
 const mockClickHandler = jest.fn();
-const mockDesktopPageClick = jest.fn();
+const handlePageChange = jest.fn();
 
 const defaultProps = {
   leadArticles,
   clickHandler: mockClickHandler,
   currentPage: 1,
-  onDesktopPageClick: mockDesktopPageClick,
-  totalItems: 11
+  handlePageChange: handlePageChange,
+  totalItems: 11,
+  StickyAd: SectionAd,
+  SectionAd: SectionAd
 };
 
 describe('Render ListViewSliceDesktop', () => {
@@ -29,7 +32,7 @@ describe('Render ListViewSliceDesktop', () => {
     );
     const paginationButotn = getAllByTestId('pagination-item')[1];
     fireEvent.click(paginationButotn);
-    expect(mockDesktopPageClick).toHaveBeenCalled();
+    expect(handlePageChange).toHaveBeenCalled();
     expect(paginationButotn).toBeTruthy();
   });
 });

@@ -11,21 +11,22 @@ export type ListViewSliceProps = {
   clickHandler: ClickHandlerType;
   articleWithAdSlot?: LeadArticleProps;
   currentPage?: number;
-  onDesktopPageClick?: (currentPage: number) => void;
-  onMobilePageClick?: (currentPage: number) => void;
+  handlePageChange: (page: number) => void;
   itemsPerPage?: number;
   totalItems: number;
   isLoading?: boolean;
+  StickyAd: React.FunctionComponent;
+  SectionAd: React.FunctionComponent;
 };
 export const ListViewSlice = ({
   leadArticles,
   clickHandler,
   currentPage,
-  onDesktopPageClick,
-  onMobilePageClick,
+  handlePageChange,
   itemsPerPage = 10,
-  totalItems,
-  isLoading = false
+  isLoading = false,
+  StickyAd,
+  SectionAd
 }: ListViewSliceProps) => {
   const mordifiedLeadArticles = leadArticles.map(item => ({
     ...item,
@@ -33,29 +34,26 @@ export const ListViewSlice = ({
     isLeadImage: false
   }));
 
+  const sliceProps = {
+    leadArticles: mordifiedLeadArticles,
+    clickHandler: clickHandler,
+    currentPage: currentPage,
+    handlePageChange: handlePageChange,
+    itemsPerPage: itemsPerPage,
+    totalItems: leadArticles.length,
+    isLoading: isLoading,
+    StickyAd: StickyAd,
+    SectionAd: SectionAd
+  }
+
   return (
     <CustomBlockLayout>
       <Visible md lg xl>
-        <ListViewSliceDesktop
-          leadArticles={mordifiedLeadArticles}
-          clickHandler={clickHandler}
-          currentPage={currentPage}
-          onDesktopPageClick={onDesktopPageClick}
-          itemsPerPage={itemsPerPage}
-          totalItems={totalItems}
-          isLoading={isLoading}
-        />
+        <ListViewSliceDesktop {...sliceProps} />
       </Visible>
       <Visible xs sm>
         <WrappedStackLayout>
-          <ListViewSliceMobile
-            leadArticles={mordifiedLeadArticles}
-            clickHandler={clickHandler}
-            onMobilePageClick={onMobilePageClick}
-            itemsPerPage={itemsPerPage}
-            totalItems={totalItems}
-            isLoading={isLoading}
-          />
+          <ListViewSliceMobile {...sliceProps} />
         </WrappedStackLayout>
       </Visible>
     </CustomBlockLayout>
