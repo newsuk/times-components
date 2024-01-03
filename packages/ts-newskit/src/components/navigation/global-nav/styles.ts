@@ -11,9 +11,7 @@ import {
   Drawer,
   Visible,
   getTypographyPresetFromTheme,
-  getStylePresetFromTheme,
-  MenuSub,
-  MenuItem
+  getStylePresetFromTheme
 } from 'newskit';
 
 export const TopNavContainer = styled(Stack)`
@@ -129,7 +127,7 @@ export const HamburgerMenuNav = styled(Menu)`
   width: 100%;
 `;
 
-export const StyledL2MenuItem = styled.a`
+export const StyledMenuItem = styled.a`
   ${getStylePresetFromTheme('menuItemL2')}
   ${getTypographyPresetFromTheme('newPreset040')}
 
@@ -142,12 +140,4 @@ export const StyledL2MenuItem = styled.a`
   align-items: center;
   
   text-decoration: none;
-`;
-
-export const StyledMenuSub = styled(MenuSub)`
-  transition-duration: 0s !important;
-`;
-
-export const StyledMenuItem = styled(MenuItem)`
-  transition-duration: 0s !important;
 `;

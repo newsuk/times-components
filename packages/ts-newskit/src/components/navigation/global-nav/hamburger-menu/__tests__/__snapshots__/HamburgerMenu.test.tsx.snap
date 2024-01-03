@@ -99,7 +99,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
         class="nk-menu-item css-zbkqx2"
       >
         <a
-          class="css-1wllw6r"
+          class="css-1asvzz7"
           data-testid="buttonLink"
           href="/main-menu-1"
           id="vertical-main-menu-1"
@@ -127,7 +127,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
       >
         <button
           aria-expanded="false"
-          class="css-lca10z"
+          class="css-1codkq0"
           data-testid="menu-sub-button"
           id="vertical-main-menu-2"
           type="button"
@@ -211,7 +211,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
       >
         <button
           aria-expanded="false"
-          class="css-lca10z"
+          class="css-1codkq0"
           data-testid="menu-sub-button"
           id="vertical-main-menu-3"
           type="button"
@@ -314,7 +314,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
         class="nk-menu-item css-zbkqx2"
       >
         <a
-          class="css-1wllw6r"
+          class="css-1asvzz7"
           data-testid="buttonLink"
           href="/more-1"
           id="vertical-more-1"
@@ -341,7 +341,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
         class="nk-menu-item css-zbkqx2"
       >
         <a
-          class="css-1wllw6r"
+          class="css-1asvzz7"
           data-testid="buttonLink"
           href="/more-2"
           id="vertical-more-2"
@@ -468,7 +468,7 @@ exports[`HamburgerMenu should render the component 1`] = `
         class="nk-menu-item css-zbkqx2"
       >
         <a
-          class="css-1wllw6r"
+          class="css-1asvzz7"
           data-testid="buttonLink"
           href="/main-menu-1"
           id="vertical-main-menu-1"
@@ -496,7 +496,7 @@ exports[`HamburgerMenu should render the component 1`] = `
       >
         <button
           aria-expanded="false"
-          class="css-lca10z"
+          class="css-1codkq0"
           data-testid="menu-sub-button"
           id="vertical-main-menu-2"
           type="button"
@@ -580,7 +580,7 @@ exports[`HamburgerMenu should render the component 1`] = `
       >
         <button
           aria-expanded="false"
-          class="css-lca10z"
+          class="css-1codkq0"
           data-testid="menu-sub-button"
           id="vertical-main-menu-3"
           type="button"
@@ -683,7 +683,7 @@ exports[`HamburgerMenu should render the component 1`] = `
         class="nk-menu-item css-zbkqx2"
       >
         <a
-          class="css-1wllw6r"
+          class="css-1asvzz7"
           data-testid="buttonLink"
           href="/more-1"
           id="vertical-more-1"
@@ -710,7 +710,7 @@ exports[`HamburgerMenu should render the component 1`] = `
         class="nk-menu-item css-zbkqx2"
       >
         <a
-          class="css-1wllw6r"
+          class="css-1asvzz7"
           data-testid="buttonLink"
           href="/more-2"
           id="vertical-more-2"

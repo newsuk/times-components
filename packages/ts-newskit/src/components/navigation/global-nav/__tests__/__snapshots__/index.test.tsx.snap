@@ -1122,7 +1122,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/home"
             id="vertical-home"
@@ -1150,7 +1150,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-news"
             type="button"
@@ -1396,7 +1396,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-comment"
             type="button"
@@ -1552,7 +1552,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-life-and-style"
             type="button"
@@ -1798,7 +1798,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-arts-and-books"
             type="button"
@@ -1972,7 +1972,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-sport"
             type="button"
@@ -2218,7 +2218,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-business-and-money"
             type="button"
@@ -2392,7 +2392,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-puzzles"
             type="button"
@@ -2530,7 +2530,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-magazines"
             type="button"
@@ -2687,7 +2687,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/e-paper"
             id="vertical-e-paper"
@@ -2714,7 +2714,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/newsletters"
             id="vertical-newsletters"
@@ -2741,7 +2741,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/tv-guide"
             id="vertical-tv-guide"
@@ -2768,7 +2768,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/times-plus"
             id="vertical-times-plus"
@@ -2795,7 +2795,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/times-radio"
             id="vertical-times-radio"
@@ -2822,7 +2822,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/podcasts"
             id="vertical-podcasts"
@@ -2849,7 +2849,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/money-mentor"
             id="vertical-money-mentor"
@@ -2876,7 +2876,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/times-travel"
             id="vertical-times-travel"
@@ -2903,7 +2903,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/wine-club"
             id="vertical-wine-club"
@@ -2930,7 +2930,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/times-appointments"
             id="vertical-times-appointments"
@@ -2957,7 +2957,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/rich-list"
             id="vertical-rich-list"
@@ -2984,7 +2984,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/uni-guide"
             id="vertical-uni-guide"
@@ -3011,7 +3011,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/school-guide"
             id="vertical-school-guide"
@@ -3038,7 +3038,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/best-places-to-live"
             id="vertical-best-places-to-live"
@@ -3065,7 +3065,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/best-places-to-stay"
             id="vertical-best-places-to-stay"
@@ -3092,7 +3092,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/growth-100"
             id="vertical-growth-100"
@@ -4123,7 +4123,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/home"
             id="vertical-home"
@@ -4151,7 +4151,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-news"
             type="button"
@@ -4397,7 +4397,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-comment"
             type="button"
@@ -4553,7 +4553,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-life-and-style"
             type="button"
@@ -4799,7 +4799,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-arts-and-books"
             type="button"
@@ -4973,7 +4973,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-sport"
             type="button"
@@ -5219,7 +5219,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-business-and-money"
             type="button"
@@ -5393,7 +5393,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-puzzles"
             type="button"
@@ -5531,7 +5531,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-lca10z"
+            class="css-1codkq0"
             data-testid="menu-sub-button"
             id="vertical-magazines"
             type="button"
@@ -5688,7 +5688,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/e-paper"
             id="vertical-e-paper"
@@ -5715,7 +5715,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/newsletters"
             id="vertical-newsletters"
@@ -5742,7 +5742,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/tv-guide"
             id="vertical-tv-guide"
@@ -5769,7 +5769,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/times-plus"
             id="vertical-times-plus"
@@ -5796,7 +5796,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/times-radio"
             id="vertical-times-radio"
@@ -5823,7 +5823,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/podcasts"
             id="vertical-podcasts"
@@ -5850,7 +5850,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/money-mentor"
             id="vertical-money-mentor"
@@ -5877,7 +5877,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/times-travel"
             id="vertical-times-travel"
@@ -5904,7 +5904,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/wine-club"
             id="vertical-wine-club"
@@ -5931,7 +5931,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/times-appointments"
             id="vertical-times-appointments"
@@ -5958,7 +5958,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/rich-list"
             id="vertical-rich-list"
@@ -5985,7 +5985,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/uni-guide"
             id="vertical-uni-guide"
@@ -6012,7 +6012,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/school-guide"
             id="vertical-school-guide"
@@ -6039,7 +6039,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/best-places-to-live"
             id="vertical-best-places-to-live"
@@ -6066,7 +6066,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/best-places-to-stay"
             id="vertical-best-places-to-stay"
@@ -6093,7 +6093,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1wllw6r"
+            class="css-1asvzz7"
             data-testid="buttonLink"
             href="/growth-100"
             id="vertical-growth-100"
