@@ -23,7 +23,7 @@ export const ListViewSliceDesktop = ({
   StickyAd,
   SectionAd
 }: ListViewSliceProps) => {
-  const mordifiedLeadArticles = leadArticles
+  const modifiedLeadArticles = leadArticles
     .slice(0, itemsPerPage)
     .map(item => ({
       ...item,
@@ -32,7 +32,7 @@ export const ListViewSliceDesktop = ({
     }));
 
   const arrayOfArrays = Object.values(
-    groupArticlesByDate(mordifiedLeadArticles)
+    groupArticlesByDate(modifiedLeadArticles)
   ).map(arrayOfArray => removeDuplicateDates(arrayOfArray));
 
   const articleWithAdSlot = arrayOfArrays.flat()[

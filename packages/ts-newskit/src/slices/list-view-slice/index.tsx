@@ -28,14 +28,14 @@ export const ListViewSlice = ({
   StickyAd,
   SectionAd
 }: ListViewSliceProps) => {
-  const mordifiedLeadArticles = leadArticles.map(item => ({
+  const modifiedLeadArticles = leadArticles.map(item => ({
     ...item,
     headlineTypographyPreset: 'editorialHeadline020',
     isLeadImage: false
   }));
 
   const sliceProps = {
-    leadArticles: mordifiedLeadArticles,
+    leadArticles: modifiedLeadArticles,
     clickHandler,
     currentPage,
     handlePageChange,
