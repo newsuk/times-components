@@ -12,7 +12,10 @@ export const ArticleStack = ({
   articleWithAdSlot,
   SectionAd,
   clickHandler
-}: Omit<ListViewSliceProps, 'totalItems' | 'handlePageChange' | 'StickyAd'>) => {
+}: Omit<
+  ListViewSliceProps,
+  'totalItems' | 'handlePageChange' | 'StickyAd'
+>) => {
   return (
     <>
       {leadArticles.map((item: LeadArticleProps, index: number) => {

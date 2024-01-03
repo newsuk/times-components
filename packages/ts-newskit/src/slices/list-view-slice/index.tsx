@@ -36,15 +36,15 @@ export const ListViewSlice = ({
 
   const sliceProps = {
     leadArticles: mordifiedLeadArticles,
-    clickHandler: clickHandler,
-    currentPage: currentPage,
-    handlePageChange: handlePageChange,
-    itemsPerPage: itemsPerPage,
+    clickHandler,
+    currentPage,
+    handlePageChange,
+    itemsPerPage,
     totalItems: leadArticles.length,
-    isLoading: isLoading,
-    StickyAd: StickyAd,
-    SectionAd: SectionAd
-  }
+    isLoading,
+    StickyAd,
+    SectionAd
+  };
 
   return (
     <CustomBlockLayout>

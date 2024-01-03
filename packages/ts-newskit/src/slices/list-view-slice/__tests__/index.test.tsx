@@ -12,10 +12,10 @@ const defaultProps = {
   leadArticles,
   clickHandler: mockClickHandler,
   currentPage: 1,
-  handlePageChange: handlePageChange,
+  handlePageChange,
   totalItems: 10,
   StickyAd: SectionAd,
-  SectionAd: SectionAd
+  SectionAd
 };
 
 describe('Render List View Slice', () => {

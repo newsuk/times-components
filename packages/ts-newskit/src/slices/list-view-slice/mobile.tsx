@@ -24,9 +24,10 @@ export const ListViewSliceMobile = ({
 
   return (
     <CustomBlockLayout>
-      {leadArticles.slice(0, itemsPerPage)
+      {leadArticles
+        .slice(0, itemsPerPage)
         .map((item: LeadArticleProps, index) => {
-          const renderAds = index + 1 === Math.ceil(itemsPerPage/2);
+          const renderAds = index + 1 === Math.ceil(itemsPerPage / 2);
 
           return (
             <>
@@ -48,7 +49,8 @@ export const ListViewSliceMobile = ({
                   clickHandler={clickHandler}
                 />
               </StyledBlock>
-              {!renderAds && index + 1 < itemsPerPage &&
+              {!renderAds &&
+                index + 1 < itemsPerPage &&
                 index !== leadArticles.length - 1 && (
                   <Block marginBlock="space040">
                     <Divider
@@ -65,8 +67,7 @@ export const ListViewSliceMobile = ({
               )}
             </>
           );
-        })
-      }
+        })}
       {renderLoadMoreButton && (
         <LoadMoreButton
           handlePageChange={handlePageChange}

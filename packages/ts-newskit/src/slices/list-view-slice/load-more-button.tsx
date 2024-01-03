@@ -28,8 +28,8 @@ const LoadMoreButton: React.FC<LoadMoreButtonProps> = ({
           width: '375px'
         }}
         onClick={(event: React.MouseEvent) => {
-          event.preventDefault()
-          handlePageChange(currentPage + 1)
+          event.preventDefault();
+          handlePageChange(currentPage + 1);
         }}
         disabled={disabled}
         href={href}

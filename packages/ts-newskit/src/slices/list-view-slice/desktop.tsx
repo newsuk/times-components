@@ -35,7 +35,9 @@ export const ListViewSliceDesktop = ({
     groupArticlesByDate(mordifiedLeadArticles)
   ).map(arrayOfArray => removeDuplicateDates(arrayOfArray));
 
-  const articleWithAdSlot = arrayOfArrays.flat()[Math.ceil(arrayOfArrays.length/2)];
+  const articleWithAdSlot = arrayOfArrays.flat()[
+    Math.ceil(arrayOfArrays.length / 2)
+  ];
 
   return (
     <>
@@ -79,7 +81,9 @@ export const ListViewSliceDesktop = ({
             );
           })}
         </Block>
-        <StyledAdContainer marginInlineStart={{ lg: 'space060', xl: 'space100' }}>
+        <StyledAdContainer
+          marginInlineStart={{ lg: 'space060', xl: 'space100' }}
+        >
           <AdBlockWrapperLargeAndAbove>
             <StickyAd />
           </AdBlockWrapperLargeAndAbove>

@@ -4,7 +4,7 @@ import { leadArticles } from '../data.json';
 import { renderComponent } from '../../../utils';
 import { ListViewSliceMobile } from '../mobile';
 import { fireEvent } from '@testing-library/react';
-import { SectionAd } from '../utils/ads'
+import { SectionAd } from '../utils/ads';
 
 const mockClickHandler = jest.fn();
 const handlePageChange = jest.fn();
@@ -13,10 +13,10 @@ const defaultProps = {
   leadArticles,
   clickHandler: mockClickHandler,
   currentPage: 1,
-  handlePageChange: handlePageChange,
+  handlePageChange,
   totalItems: 12,
   StickyAd: SectionAd,
-  SectionAd: SectionAd
+  SectionAd
 };
 
 describe('Render ListViewSliceMobile', () => {

@@ -3,7 +3,7 @@ import {
   PaginationPrevItem,
   PaginationItems,
   PaginationNextItem,
-  PaginationLastItem,
+  PaginationLastItem
 } from 'newskit';
 import React from 'react';
 import { StyledPagination, StyledPaginationButton } from './styles';
@@ -33,14 +33,13 @@ export const Paginations = ({
       aria-label={`pagination-${currentPage}`}
       page={currentPage}
     >
-      <PaginationFirstItem 
+      <PaginationFirstItem
         overrides={{ stylePreset: 'interfaceBrand010' }}
         onClick={() => handlePageChange(1)}
       />
       <PaginationPrevItem
         overrides={{ stylePreset: 'interfaceBrand010' }}
         onClick={() => handlePageChange(currentPage - 1)}
-
       />
       <PaginationItems
         truncation
@@ -59,8 +58,8 @@ export const Paginations = ({
                 }}
                 disabled={isLoading}
                 onClick={(event: React.MouseEvent) => {
-                  event.preventDefault()
-                  pageNumber && handlePageChange(pageNumber)
+                  event.preventDefault();
+                  pageNumber && handlePageChange(pageNumber);
                 }}
                 href={`${window.location.pathname}?page=${pageNumber}`}
               >
@@ -73,11 +72,10 @@ export const Paginations = ({
       <PaginationNextItem
         overrides={{ stylePreset: 'interfaceBrand010' }}
         onClick={() => handlePageChange(currentPage + 1)}
-
       />
       <PaginationLastItem
         overrides={{ stylePreset: 'interfaceBrand010' }}
-        onClick={() => handlePageChange(Math.ceil(totalItems/pageSize))}
+        onClick={() => handlePageChange(Math.ceil(totalItems / pageSize))}
       />
     </StyledPagination>
   );

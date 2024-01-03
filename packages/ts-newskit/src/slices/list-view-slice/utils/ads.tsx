@@ -1,6 +1,6 @@
-import { Stack } from 'newskit'
-import React from 'react'
-import { StyledAdBlock } from '../styles'
+import { Stack } from 'newskit';
+import React from 'react';
+import { StyledAdBlock } from '../styles';
 
 export const SectionAd = () => {
   return (
@@ -14,5 +14,5 @@ export const SectionAd = () => {
       </Stack>
       <StyledAdBlock />
     </>
-  )
-}
+  );
+};

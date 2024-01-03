@@ -76,7 +76,10 @@ export const StyledDateText = styled(TextBlock)`
 
 export const AdBlockWrapperLargeAndAbove = styled(Block)`
   position: fixed;
-  ${getSpacingCssFromTheme((space: string) => ({ top: `${space}` }), 'space040')}
+  ${getSpacingCssFromTheme(
+    (space: string) => ({ top: `${space}` }),
+    'space040'
+  )};
 `;
 
 export const AdBlockWrapperMedium = styled(Block)`
