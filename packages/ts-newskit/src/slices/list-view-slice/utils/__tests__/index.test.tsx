@@ -1,4 +1,4 @@
-import { LeadArticleProps } from '../../../../components/slices/lead-article/index';
+import { LeadArticleWithDateProps } from '../..';
 import { groupArticlesByDate, sortByDatePublished } from '../index';
 
 describe('groupArticlesByDate', () => {
@@ -61,14 +61,14 @@ describe('groupArticlesByDate', () => {
 
 describe('sortByDatePublished', () => {
   it('should return a negative number if dateA is earlier than dateB', () => {
-    const dateA: LeadArticleProps = {
+    const dateA: LeadArticleWithDateProps = {
       id: '1',
       headline: 'Article 1',
       hasVideo: false,
       url: 'https://www.thetimes.co.uk',
       datePublished: '2023-01-01T12:00:00.000Z'
     };
-    const dateB: LeadArticleProps = {
+    const dateB: LeadArticleWithDateProps = {
       id: '2',
       headline: 'Article 2',
       hasVideo: false,
@@ -80,14 +80,14 @@ describe('sortByDatePublished', () => {
   });
 
   it('should return a positive number if dateA is later than dateB', () => {
-    const dateA: LeadArticleProps = {
+    const dateA: LeadArticleWithDateProps = {
       id: '3',
       headline: 'Article 3',
       hasVideo: false,
       url: 'https://www.thetimes.co.uk',
       datePublished: '2023-01-02T12:00:00.000Z'
     };
-    const dateB: LeadArticleProps = {
+    const dateB: LeadArticleWithDateProps = {
       id: '4',
       headline: 'Article 4',
       hasVideo: false,
@@ -99,14 +99,14 @@ describe('sortByDatePublished', () => {
   });
 
   it('should return a negative number if dateA is later than dateB and set to descending order', () => {
-    const dateA: LeadArticleProps = {
+    const dateA: LeadArticleWithDateProps = {
       id: '3',
       headline: 'Article 3',
       hasVideo: false,
       url: 'https://www.thetimes.co.uk',
       datePublished: '2023-01-02T12:00:00.000Z'
     };
-    const dateB: LeadArticleProps = {
+    const dateB: LeadArticleWithDateProps = {
       id: '4',
       headline: 'Article 4',
       hasVideo: false,
@@ -118,14 +118,14 @@ describe('sortByDatePublished', () => {
   });
 
   it('should return 0 if both dates are equal', () => {
-    const dateA: LeadArticleProps = {
+    const dateA: LeadArticleWithDateProps = {
       id: '5',
       headline: 'Article 5',
       hasVideo: false,
       url: 'https://www.thetimes.co.uk',
       datePublished: '2023-01-01T12:00:00.000Z'
     };
-    const dateB: LeadArticleProps = {
+    const dateB: LeadArticleWithDateProps = {
       id: '6',
       headline: 'Article 6',
       hasVideo: false,

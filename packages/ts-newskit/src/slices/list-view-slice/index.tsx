@@ -6,8 +6,12 @@ import { Visible } from 'newskit';
 import { ListViewSliceMobile } from './mobile';
 import { ListViewSliceDesktop } from './desktop';
 
+export type LeadArticleWithDateProps = Omit<
+  LeadArticleProps,
+  'datePublished'
+> & { datePublished: string };
 export type ListViewSliceProps = {
-  leadArticles: LeadArticleProps[];
+  leadArticles: LeadArticleWithDateProps[];
   clickHandler: ClickHandlerType;
   currentPage?: number;
   handlePageChange: (page: number) => void;

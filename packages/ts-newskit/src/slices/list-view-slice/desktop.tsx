@@ -83,6 +83,7 @@ export const ListViewSliceDesktop = ({
         </Block>
         <StyledAdContainer
           marginInlineStart={{ lg: 'space060', xl: 'space100' }}
+          id="inline-ad-mpu"
         >
           <AdBlockWrapperLargeAndAbove>
             <StickyAd />

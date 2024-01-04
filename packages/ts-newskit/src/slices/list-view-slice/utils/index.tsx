@@ -1,7 +1,8 @@
+import { LeadArticleWithDateProps } from '..';
 import { LeadArticleProps } from '../../../components/slices/lead-article/index';
 
 export const groupArticlesByDate = (
-  articles: LeadArticleProps[]
+  articles: LeadArticleWithDateProps[]
 ): { [key: string]: LeadArticleProps[] } => {
   const initialEmptyObject: { [key: string]: LeadArticleProps[] } = {};
   return articles.reduce((result, article) => {
@@ -13,8 +14,8 @@ export const groupArticlesByDate = (
 };
 
 export const sortByDatePublished = (
-  a: LeadArticleProps,
-  b: LeadArticleProps,
+  a: LeadArticleWithDateProps,
+  b: LeadArticleWithDateProps,
   sortOrder: 'asc' | 'dsc' = 'asc'
 ) => {
   const dateA = new Date(a.datePublished);

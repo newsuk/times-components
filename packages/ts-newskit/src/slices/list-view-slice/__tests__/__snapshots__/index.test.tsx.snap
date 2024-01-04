@@ -2019,6 +2019,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
           </div>
           <div
             class="css-1sozmkk"
+            id="inline-ad-mpu"
           >
             <div
               class="css-y19ppi"
@@ -6027,6 +6028,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
           </div>
           <div
             class="css-1sozmkk"
+            id="inline-ad-mpu"
           >
             <div
               class="css-y19ppi"
@@ -10035,6 +10037,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
           </div>
           <div
             class="css-1sozmkk"
+            id="inline-ad-mpu"
           >
             <div
               class="css-y19ppi"
@@ -14043,6 +14046,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
           </div>
           <div
             class="css-1sozmkk"
+            id="inline-ad-mpu"
           >
             <div
               class="css-y19ppi"
@@ -18051,6 +18055,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
           </div>
           <div
             class="css-1sozmkk"
+            id="inline-ad-mpu"
           >
             <div
               class="css-y19ppi"
