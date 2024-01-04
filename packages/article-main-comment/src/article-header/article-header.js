@@ -4,6 +4,7 @@ import {
   UpdatedTimeProvider
 } from "@times-components/ts-components";
 import { InArticleAudio, TCThemeProvider } from "@times-components/ts-newskit";
+import { hasBylineData } from "@times-components/article-byline";
 import Image from "@times-components/image";
 import { checkStylesForUnits } from "@times-components/utils";
 
@@ -70,7 +71,9 @@ const ArticleHeader = ({
         readyToPlayText="Listen to article"
         playingText="Playing"
         narrator={
-          bylines ? bylines[0].byline[0].children[0].attributes.value : ""
+          hasBylineData(bylines)
+            ? bylines[0].byline[0].children[0].attributes.value
+            : ""
         }
         headline={headline}
         feedback={{
