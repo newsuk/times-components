@@ -12,7 +12,6 @@ const handlePageChange = jest.fn();
 const defaultProps = {
   leadArticles,
   clickHandler: mockClickHandler,
-  currentPage: 1,
   handlePageChange,
   totalItems: 12,
   StickyAd: SectionAd,

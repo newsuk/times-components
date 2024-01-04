@@ -9,7 +9,6 @@ import { ListViewSliceDesktop } from './desktop';
 export type ListViewSliceProps = {
   leadArticles: LeadArticleProps[];
   clickHandler: ClickHandlerType;
-  articleWithAdSlot?: LeadArticleProps;
   currentPage?: number;
   handlePageChange: (page: number) => void;
   itemsPerPage?: number;

@@ -8,7 +8,7 @@ import {
   AdBlockWrapperLargeAndAbove
 } from './styles';
 import { convertDateToMonth } from '../../utils/date-formatting';
-import { groupArticlesByDate, removeDuplicateDates } from './utils';
+import { groupArticlesByDate } from './utils';
 import { Paginations } from './pagination';
 import { ListViewSliceProps } from '.';
 
@@ -33,7 +33,7 @@ export const ListViewSliceDesktop = ({
 
   const arrayOfArrays = Object.values(
     groupArticlesByDate(modifiedLeadArticles)
-  ).map(arrayOfArray => removeDuplicateDates(arrayOfArray));
+  );
 
   const articleWithAdSlot = arrayOfArrays.flat()[
     Math.ceil(arrayOfArrays.length / 2)

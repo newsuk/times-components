@@ -5,17 +5,21 @@ import {
 } from '../../components/slices/lead-article';
 import { Divider, Block, Visible, Hidden } from 'newskit';
 import { AdBlockWrapperMedium } from './styles';
-import { ListViewSliceProps } from '.';
+import { ClickHandlerType } from '../types';
+
+type ArticleStackProps = {
+  leadArticles: LeadArticleProps[];
+  articleWithAdSlot: LeadArticleProps;
+  SectionAd: React.FunctionComponent;
+  clickHandler: ClickHandlerType;
+};
 
 export const ArticleStack = ({
   leadArticles,
   articleWithAdSlot,
   SectionAd,
   clickHandler
-}: Omit<
-  ListViewSliceProps,
-  'totalItems' | 'handlePageChange' | 'StickyAd'
->) => {
+}: ArticleStackProps) => {
   return (
     <>
       {leadArticles.map((item: LeadArticleProps, index: number) => {
