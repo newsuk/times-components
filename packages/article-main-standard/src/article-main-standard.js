@@ -18,6 +18,7 @@ import {
   LeadAsset,
   MetaContainer
 } from "./styles/responsive";
+import { Breadcrumb, TCThemeProvider } from "@times-components/ts-newskit";
 
 const renderCaption = ({ caption }) => (
   <LeadAssetCaptionContainer>
@@ -35,6 +36,7 @@ class ArticlePage extends Component {
     const { article } = this.props;
     const {
       bylines,
+      categoryConnection,
       hasVideo,
       headline,
       expirableFlags,
@@ -53,6 +55,9 @@ class ArticlePage extends Component {
       <Fragment>
         <HeaderTopContainer>
           <HeaderContainer>
+            <TCThemeProvider>
+              <Breadcrumb data={categoryConnection.nodes} />
+            </TCThemeProvider>
             <ArticleHeader
               flags={expirableFlags}
               hasVideo={hasVideo}
