@@ -34,7 +34,7 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
         value={searchText}
         autoFocus
         onChange={event => setSearchText(event.target.value)}
-        placeholder="Search times.co.uk"
+        placeholder="Search"
         overrides={{
           ...presets,
           typographyPreset: 'topNav010'

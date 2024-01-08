@@ -1065,7 +1065,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 <input
                   aria-describedby="searchTimesLabel"
                   class="css-ju903y"
-                  placeholder="Search times.co.uk"
+                  placeholder="Search"
                   type="text"
                   value=""
                 />
@@ -4660,7 +4660,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 <input
                   aria-describedby="searchTimesLabel"
                   class="css-ju903y"
-                  placeholder="Search times.co.uk"
+                  placeholder="Search"
                   type="text"
                   value=""
                 />
