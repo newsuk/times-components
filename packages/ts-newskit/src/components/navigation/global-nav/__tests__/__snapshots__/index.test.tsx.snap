@@ -1013,7 +1013,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
     />
   </div>
   <div
-    class="css-1lcjzk9"
+    class="css-1nnp05a"
     data-testid="overlay"
   />
   <div
@@ -4608,7 +4608,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
     />
   </div>
   <div
-    class="css-1lcjzk9"
+    class="css-1nnp05a"
     data-testid="overlay"
   />
   <div
