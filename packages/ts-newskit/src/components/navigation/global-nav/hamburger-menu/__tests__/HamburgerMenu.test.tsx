@@ -119,13 +119,13 @@ describe('HamburgerMenu - Logged Out', () => {
 describe('Search field', () => {
   it('contains the search bar', () => {
     const { getByPlaceholderText } = renderComponent(false);
-    expect(getByPlaceholderText('Search times.co.uk')).toBeVisible();
+    expect(getByPlaceholderText('Search')).toBeVisible();
   });
 
   it('should update search field value', async () => {
     renderComponent(false);
 
-    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+    const searchField = screen.getByPlaceholderText('Search');
 
     fireEvent.change(searchField, {
       target: { value: 'Test Value' }
@@ -136,7 +136,7 @@ describe('Search field', () => {
   it('should clear search field when clicked', async () => {
     renderComponent(false);
 
-    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+    const searchField = screen.getByPlaceholderText('Search');
 
     fireEvent.change(searchField, {
       target: { value: 'Test Value' }

@@ -1,8 +1,10 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render } from '../../../../utils/test-utils';
+import { render, fireEvent } from '../../../../utils/test-utils';
 import { CategoryCard, CategoryCardProps } from '../index';
 import { NewsKitSudokusIcon } from '../../../../assets/index';
+
+const handleClick = jest.fn();
 
 const renderComponent = (props: CategoryCardProps) =>
   render(<CategoryCard {...props} />);
@@ -10,7 +12,8 @@ const renderComponent = (props: CategoryCardProps) =>
 const defaultProps = {
   type: 'Sudokus',
   url: 'https://newskit.co.uk/',
-  Icon: NewsKitSudokusIcon
+  Icon: NewsKitSudokusIcon,
+  onClick: handleClick
 };
 
 describe('Render puzzles category card', () => {
@@ -29,5 +32,14 @@ describe('Render puzzles category card', () => {
     const { getAllByTestId } = renderComponent(defaultProps);
     const categoryCardUrl = getAllByTestId('categoryCard-link')[0];
     expect(categoryCardUrl).toHaveAttribute('href', 'https://newskit.co.uk/');
+  });
+
+  it('triggers onClick function when clicked', () => {
+    const { getAllByTestId } = renderComponent(defaultProps);
+    const categoryCardUrl = getAllByTestId('categoryCard-link')[0];
+
+    fireEvent.click(categoryCardUrl);
+
+    expect(handleClick).toHaveBeenCalled();
   });
 });

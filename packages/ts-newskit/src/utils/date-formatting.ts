@@ -25,3 +25,12 @@ const formatDateToString = (date: Date) => {
     day: 'numeric'
   });
 };
+
+export const convertDateToMonth = (publishDate: string) => {
+  const timestamp = new Date(publishDate).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
+  });
+  return timestamp;
+};
