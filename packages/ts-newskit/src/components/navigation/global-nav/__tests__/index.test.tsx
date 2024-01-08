@@ -13,7 +13,11 @@ const mockOnClick = jest.fn();
 
 const renderComponent = (isLoggedIn?: boolean) =>
   render(
-    <GlobalNav {...{ isLoggedIn, data }} clickHandler={mockClickHandler} onClick={mockOnClick}/>
+    <GlobalNav
+      {...{ isLoggedIn, data }}
+      clickHandler={mockClickHandler}
+      onClick={mockOnClick}
+    />
   );
 
 describe('Render GlobalNav', () => {
