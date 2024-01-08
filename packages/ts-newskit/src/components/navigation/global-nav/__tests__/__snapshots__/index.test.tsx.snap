@@ -1122,7 +1122,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/home"
             id="vertical-home"
@@ -1150,7 +1150,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-news"
             type="button"
@@ -1180,13 +1180,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/news"
-              id="vertical-sub-top-stories-news"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/news"
+                id="vertical-sub-top-stories-news"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1198,13 +1207,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/uk"
-              id="vertical-sub-uk"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              UK
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/uk"
+                id="vertical-sub-uk"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  UK
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1216,13 +1234,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/world"
-              id="vertical-sub-world"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              World
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/world"
+                id="vertical-sub-world"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  World
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1234,13 +1261,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/health-and-science"
-              id="vertical-sub-health-and-science"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Health & Science
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/health-and-science"
+                id="vertical-sub-health-and-science"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Health & Science
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1252,13 +1288,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/environment"
-              id="vertical-sub-environment"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Environment
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/environment"
+                id="vertical-sub-environment"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Environment
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1270,13 +1315,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/royal-family"
-              id="vertical-sub-royal-family"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Royal family
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/royal-family"
+                id="vertical-sub-royal-family"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Royal family
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1288,13 +1342,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/investigations"
-              id="vertical-sub-investigations"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Investigations
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/investigations"
+                id="vertical-sub-investigations"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Investigations
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1306,13 +1369,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/obituaries"
-              id="vertical-sub-obituaries"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Obituaries
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/obituaries"
+                id="vertical-sub-obituaries"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Obituaries
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1324,13 +1396,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/education"
-              id="vertical-sub-education"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Education
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/education"
+                id="vertical-sub-education"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Education
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1342,13 +1423,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/scotland"
-              id="vertical-sub-scotland"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Scotland
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/scotland"
+                id="vertical-sub-scotland"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Scotland
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1360,13 +1450,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/law"
-              id="vertical-sub-law"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Law
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/law"
+                id="vertical-sub-law"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Law
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1396,7 +1495,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-comment"
             type="button"
@@ -1426,13 +1525,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/comment"
-              id="vertical-sub-top-stories-comment"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/comment"
+                id="vertical-sub-top-stories-comment"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1444,13 +1552,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/columnists"
-              id="vertical-sub-columnists"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Columnists
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/columnists"
+                id="vertical-sub-columnists"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Columnists
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1462,13 +1579,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/the-times-view"
-              id="vertical-sub-the-times-view"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              The Times view
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/the-times-view"
+                id="vertical-sub-the-times-view"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  The Times view
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1480,13 +1606,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/letters-to-the-editor"
-              id="vertical-sub-letters-to-the-editor"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Letters to the Editor
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/letters-to-the-editor"
+                id="vertical-sub-letters-to-the-editor"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Letters to the Editor
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1498,13 +1633,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/cartoons"
-              id="vertical-sub-cartoons"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Cartoons
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/cartoons"
+                id="vertical-sub-cartoons"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Cartoons
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1516,13 +1660,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/register"
-              id="vertical-sub-register"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Register
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/register"
+                id="vertical-sub-register"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Register
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1552,7 +1705,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-life-and-style"
             type="button"
@@ -1582,13 +1735,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/life-and-style"
-              id="vertical-sub-top-stories-life-and-style"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/life-and-style"
+                id="vertical-sub-top-stories-life-and-style"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1600,13 +1762,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/property"
-              id="vertical-sub-property"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Property
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/property"
+                id="vertical-sub-property"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Property
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1618,13 +1789,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/sex-and-relationships"
-              id="vertical-sub-sex-and-relationships"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Sex & Relationships
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/sex-and-relationships"
+                id="vertical-sub-sex-and-relationships"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Sex & Relationships
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1636,13 +1816,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/food-and-drink"
-              id="vertical-sub-food-and-drink"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Food & Drink
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/food-and-drink"
+                id="vertical-sub-food-and-drink"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Food & Drink
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1654,13 +1843,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/travel"
-              id="vertical-sub-travel"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Travel
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/travel"
+                id="vertical-sub-travel"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Travel
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1672,13 +1870,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/fashion"
-              id="vertical-sub-fashion"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Fashion
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/fashion"
+                id="vertical-sub-fashion"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Fashion
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1690,13 +1897,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/beauty"
-              id="vertical-sub-beauty"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Beauty
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/beauty"
+                id="vertical-sub-beauty"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Beauty
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1708,13 +1924,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/fitness-and-wellbeing"
-              id="vertical-sub-fitness-and-wellbeing"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Fitness & Wellbeing
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/fitness-and-wellbeing"
+                id="vertical-sub-fitness-and-wellbeing"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Fitness & Wellbeing
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1726,13 +1951,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/luxury"
-              id="vertical-sub-luxury"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Luxury
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/luxury"
+                id="vertical-sub-luxury"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Luxury
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1744,13 +1978,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/driving"
-              id="vertical-sub-driving"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Driving
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/driving"
+                id="vertical-sub-driving"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Driving
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1762,13 +2005,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/parenting"
-              id="vertical-sub-parenting"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Parenting
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/parenting"
+                id="vertical-sub-parenting"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Parenting
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1798,7 +2050,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-arts-and-books"
             type="button"
@@ -1828,13 +2080,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/arts-and-books"
-              id="vertical-sub-top-stories-arts-and-books"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/arts-and-books"
+                id="vertical-sub-top-stories-arts-and-books"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1846,13 +2107,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/tv-and-radio"
-              id="vertical-sub-tv-and-radio"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              TV & Radio
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/tv-and-radio"
+                id="vertical-sub-tv-and-radio"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  TV & Radio
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1864,13 +2134,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/books"
-              id="vertical-sub-books"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Books
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/books"
+                id="vertical-sub-books"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Books
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1882,13 +2161,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/music"
-              id="vertical-sub-music"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Music
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/music"
+                id="vertical-sub-music"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Music
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1900,13 +2188,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/film"
-              id="vertical-sub-Theatre"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Film
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/film"
+                id="vertical-sub-Theatre"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Film
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1918,13 +2215,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/opera"
-              id="vertical-sub-opera"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Opera
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/opera"
+                id="vertical-sub-opera"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Opera
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1936,13 +2242,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/arts"
-              id="vertical-sub-arts"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Arts
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/arts"
+                id="vertical-sub-arts"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Arts
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -1972,7 +2287,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-sport"
             type="button"
@@ -2002,13 +2317,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/sport"
-              id="vertical-sub-top-stories-sport"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/sport"
+                id="vertical-sub-top-stories-sport"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2020,13 +2344,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/football"
-              id="vertical-sub-football"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Football
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/football"
+                id="vertical-sub-football"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Football
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2038,13 +2371,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/rugby-union"
-              id="vertical-sub-rugby-union"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Rugby Union
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/rugby-union"
+                id="vertical-sub-rugby-union"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Rugby Union
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2056,13 +2398,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/tennis"
-              id="vertical-sub-tennis"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Tennis
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/tennis"
+                id="vertical-sub-tennis"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Tennis
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2074,13 +2425,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/cricket"
-              id="vertical-sub-cricket"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Cricket
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/cricket"
+                id="vertical-sub-cricket"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Cricket
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2092,13 +2452,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/athletics"
-              id="vertical-sub-athletics"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Athletics
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/athletics"
+                id="vertical-sub-athletics"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Athletics
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2110,13 +2479,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/cycling"
-              id="vertical-sub-cycling"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Cycling
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/cycling"
+                id="vertical-sub-cycling"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Cycling
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2128,13 +2506,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/formula-one"
-              id="vertical-sub-formula-one"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Formula One
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/formula-one"
+                id="vertical-sub-formula-one"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Formula One
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2146,13 +2533,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/golf"
-              id="vertical-sub-golf"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Golf
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/golf"
+                id="vertical-sub-golf"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Golf
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2164,13 +2560,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/horse-racing"
-              id="vertical-sub-horse-racing"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Horse Racing
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/horse-racing"
+                id="vertical-sub-horse-racing"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Horse Racing
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2182,13 +2587,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/boxing"
-              id="vertical-sub-boxing"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Boxing
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/boxing"
+                id="vertical-sub-boxing"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Boxing
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2218,7 +2632,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-business-and-money"
             type="button"
@@ -2248,13 +2662,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/business-and-money"
-              id="vertical-sub-top-stories-business-and-money"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/business-and-money"
+                id="vertical-sub-top-stories-business-and-money"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2266,13 +2689,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/money"
-              id="vertical-sub-money"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Money
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/money"
+                id="vertical-sub-money"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Money
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2284,13 +2716,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/economics"
-              id="vertical-sub-economics"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Economics
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/economics"
+                id="vertical-sub-economics"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Economics
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2302,13 +2743,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/markets"
-              id="vertical-sub-markets"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Markets
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/markets"
+                id="vertical-sub-markets"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Markets
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2320,13 +2770,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/technology"
-              id="vertical-sub-technology"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Technology
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/technology"
+                id="vertical-sub-technology"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Technology
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2338,13 +2797,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/entrepreneurs"
-              id="vertical-sub-entrepreneurs"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Entrepreneurs
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/entrepreneurs"
+                id="vertical-sub-entrepreneurs"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Entrepreneurs
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2356,13 +2824,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/companies"
-              id="vertical-sub-companies"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Companies
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/companies"
+                id="vertical-sub-companies"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Companies
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2392,7 +2869,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-puzzles"
             type="button"
@@ -2422,13 +2899,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/crossword-club"
-              id="vertical-sub-crossword-club"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Crossword Club
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/crossword-club"
+                id="vertical-sub-crossword-club"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Crossword Club
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2440,13 +2926,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/crosswords"
-              id="vertical-sub-crosswords"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Crosswords
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/crosswords"
+                id="vertical-sub-crosswords"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Crosswords
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2458,13 +2953,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/mind-games"
-              id="vertical-sub-mind-games"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Mind games
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/mind-games"
+                id="vertical-sub-mind-games"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Mind games
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2476,13 +2980,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/daily-quiz"
-              id="vertical-sub-daily-quiz"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Daily Quiz
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/daily-quiz"
+                id="vertical-sub-daily-quiz"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Daily Quiz
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2494,13 +3007,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/soduku"
-              id="vertical-sub-soduku"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Soduku
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/soduku"
+                id="vertical-sub-soduku"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Soduku
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2530,7 +3052,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-magazines"
             type="button"
@@ -2560,13 +3082,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/the-sunday-times-magazine"
-              id="vertical-sub-the-sunday-times-magazine"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              The Sunday Times magazine
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/the-sunday-times-magazine"
+                id="vertical-sub-the-sunday-times-magazine"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  The Sunday Times magazine
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2578,13 +3109,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/culture-magazine"
-              id="vertical-sub-culture-magazine"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Culture magazine
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/culture-magazine"
+                id="vertical-sub-culture-magazine"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Culture magazine
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2596,13 +3136,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/weekend-magazine"
-              id="vertical-sub-weekend-magazine"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Weekend magazine
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/weekend-magazine"
+                id="vertical-sub-weekend-magazine"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Weekend magazine
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2614,13 +3163,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/style-magazine"
-              id="vertical-sub-style-magazine"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Style magazine
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/style-magazine"
+                id="vertical-sub-style-magazine"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Style magazine
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2632,13 +3190,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/the-times-magazine"
-              id="vertical-sub-the-times-magazine"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              The Times magazine
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/the-times-magazine"
+                id="vertical-sub-the-times-magazine"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  The Times magazine
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -2687,7 +3254,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/e-paper"
             id="vertical-e-paper"
@@ -2714,7 +3281,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/newsletters"
             id="vertical-newsletters"
@@ -2741,7 +3308,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/tv-guide"
             id="vertical-tv-guide"
@@ -2768,7 +3335,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/times-plus"
             id="vertical-times-plus"
@@ -2795,7 +3362,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/times-radio"
             id="vertical-times-radio"
@@ -2822,7 +3389,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/podcasts"
             id="vertical-podcasts"
@@ -2849,7 +3416,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/money-mentor"
             id="vertical-money-mentor"
@@ -2876,7 +3443,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/times-travel"
             id="vertical-times-travel"
@@ -2903,7 +3470,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/wine-club"
             id="vertical-wine-club"
@@ -2930,7 +3497,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/times-appointments"
             id="vertical-times-appointments"
@@ -2957,7 +3524,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/rich-list"
             id="vertical-rich-list"
@@ -2984,7 +3551,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/uni-guide"
             id="vertical-uni-guide"
@@ -3011,7 +3578,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/school-guide"
             id="vertical-school-guide"
@@ -3038,7 +3605,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/best-places-to-live"
             id="vertical-best-places-to-live"
@@ -3065,7 +3632,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/best-places-to-stay"
             id="vertical-best-places-to-stay"
@@ -3092,7 +3659,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/growth-100"
             id="vertical-growth-100"
@@ -4123,7 +4690,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/home"
             id="vertical-home"
@@ -4151,7 +4718,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-news"
             type="button"
@@ -4181,13 +4748,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/news"
-              id="vertical-sub-top-stories-news"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/news"
+                id="vertical-sub-top-stories-news"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4199,13 +4775,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/uk"
-              id="vertical-sub-uk"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              UK
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/uk"
+                id="vertical-sub-uk"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  UK
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4217,13 +4802,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/world"
-              id="vertical-sub-world"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              World
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/world"
+                id="vertical-sub-world"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  World
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4235,13 +4829,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/health-and-science"
-              id="vertical-sub-health-and-science"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Health & Science
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/health-and-science"
+                id="vertical-sub-health-and-science"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Health & Science
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4253,13 +4856,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/environment"
-              id="vertical-sub-environment"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Environment
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/environment"
+                id="vertical-sub-environment"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Environment
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4271,13 +4883,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/royal-family"
-              id="vertical-sub-royal-family"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Royal family
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/royal-family"
+                id="vertical-sub-royal-family"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Royal family
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4289,13 +4910,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/investigations"
-              id="vertical-sub-investigations"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Investigations
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/investigations"
+                id="vertical-sub-investigations"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Investigations
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4307,13 +4937,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/obituaries"
-              id="vertical-sub-obituaries"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Obituaries
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/obituaries"
+                id="vertical-sub-obituaries"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Obituaries
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4325,13 +4964,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/education"
-              id="vertical-sub-education"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Education
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/education"
+                id="vertical-sub-education"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Education
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4343,13 +4991,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/scotland"
-              id="vertical-sub-scotland"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Scotland
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/scotland"
+                id="vertical-sub-scotland"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Scotland
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4361,13 +5018,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/law"
-              id="vertical-sub-law"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Law
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/law"
+                id="vertical-sub-law"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Law
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4397,7 +5063,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-comment"
             type="button"
@@ -4427,13 +5093,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/comment"
-              id="vertical-sub-top-stories-comment"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/comment"
+                id="vertical-sub-top-stories-comment"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4445,13 +5120,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/columnists"
-              id="vertical-sub-columnists"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Columnists
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/columnists"
+                id="vertical-sub-columnists"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Columnists
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4463,13 +5147,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/the-times-view"
-              id="vertical-sub-the-times-view"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              The Times view
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/the-times-view"
+                id="vertical-sub-the-times-view"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  The Times view
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4481,13 +5174,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/letters-to-the-editor"
-              id="vertical-sub-letters-to-the-editor"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Letters to the Editor
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/letters-to-the-editor"
+                id="vertical-sub-letters-to-the-editor"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Letters to the Editor
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4499,13 +5201,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/cartoons"
-              id="vertical-sub-cartoons"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Cartoons
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/cartoons"
+                id="vertical-sub-cartoons"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Cartoons
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4517,13 +5228,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/register"
-              id="vertical-sub-register"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Register
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/register"
+                id="vertical-sub-register"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Register
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4553,7 +5273,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-life-and-style"
             type="button"
@@ -4583,13 +5303,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/life-and-style"
-              id="vertical-sub-top-stories-life-and-style"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/life-and-style"
+                id="vertical-sub-top-stories-life-and-style"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4601,13 +5330,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/property"
-              id="vertical-sub-property"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Property
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/property"
+                id="vertical-sub-property"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Property
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4619,13 +5357,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/sex-and-relationships"
-              id="vertical-sub-sex-and-relationships"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Sex & Relationships
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/sex-and-relationships"
+                id="vertical-sub-sex-and-relationships"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Sex & Relationships
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4637,13 +5384,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/food-and-drink"
-              id="vertical-sub-food-and-drink"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Food & Drink
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/food-and-drink"
+                id="vertical-sub-food-and-drink"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Food & Drink
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4655,13 +5411,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/travel"
-              id="vertical-sub-travel"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Travel
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/travel"
+                id="vertical-sub-travel"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Travel
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4673,13 +5438,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/fashion"
-              id="vertical-sub-fashion"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Fashion
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/fashion"
+                id="vertical-sub-fashion"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Fashion
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4691,13 +5465,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/beauty"
-              id="vertical-sub-beauty"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Beauty
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/beauty"
+                id="vertical-sub-beauty"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Beauty
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4709,13 +5492,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/fitness-and-wellbeing"
-              id="vertical-sub-fitness-and-wellbeing"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Fitness & Wellbeing
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/fitness-and-wellbeing"
+                id="vertical-sub-fitness-and-wellbeing"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Fitness & Wellbeing
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4727,13 +5519,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/luxury"
-              id="vertical-sub-luxury"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Luxury
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/luxury"
+                id="vertical-sub-luxury"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Luxury
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4745,13 +5546,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/driving"
-              id="vertical-sub-driving"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Driving
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/driving"
+                id="vertical-sub-driving"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Driving
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4763,13 +5573,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/parenting"
-              id="vertical-sub-parenting"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Parenting
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/parenting"
+                id="vertical-sub-parenting"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Parenting
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4799,7 +5618,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-arts-and-books"
             type="button"
@@ -4829,13 +5648,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/arts-and-books"
-              id="vertical-sub-top-stories-arts-and-books"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/arts-and-books"
+                id="vertical-sub-top-stories-arts-and-books"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4847,13 +5675,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/tv-and-radio"
-              id="vertical-sub-tv-and-radio"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              TV & Radio
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/tv-and-radio"
+                id="vertical-sub-tv-and-radio"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  TV & Radio
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4865,13 +5702,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/books"
-              id="vertical-sub-books"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Books
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/books"
+                id="vertical-sub-books"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Books
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4883,13 +5729,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/music"
-              id="vertical-sub-music"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Music
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/music"
+                id="vertical-sub-music"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Music
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4901,13 +5756,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/film"
-              id="vertical-sub-Theatre"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Film
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/film"
+                id="vertical-sub-Theatre"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Film
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4919,13 +5783,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/opera"
-              id="vertical-sub-opera"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Opera
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/opera"
+                id="vertical-sub-opera"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Opera
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4937,13 +5810,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/arts"
-              id="vertical-sub-arts"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Arts
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/arts"
+                id="vertical-sub-arts"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Arts
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -4973,7 +5855,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-sport"
             type="button"
@@ -5003,13 +5885,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/sport"
-              id="vertical-sub-top-stories-sport"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/sport"
+                id="vertical-sub-top-stories-sport"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5021,13 +5912,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/football"
-              id="vertical-sub-football"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Football
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/football"
+                id="vertical-sub-football"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Football
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5039,13 +5939,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/rugby-union"
-              id="vertical-sub-rugby-union"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Rugby Union
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/rugby-union"
+                id="vertical-sub-rugby-union"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Rugby Union
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5057,13 +5966,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/tennis"
-              id="vertical-sub-tennis"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Tennis
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/tennis"
+                id="vertical-sub-tennis"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Tennis
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5075,13 +5993,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/cricket"
-              id="vertical-sub-cricket"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Cricket
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/cricket"
+                id="vertical-sub-cricket"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Cricket
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5093,13 +6020,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/athletics"
-              id="vertical-sub-athletics"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Athletics
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/athletics"
+                id="vertical-sub-athletics"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Athletics
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5111,13 +6047,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/cycling"
-              id="vertical-sub-cycling"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Cycling
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/cycling"
+                id="vertical-sub-cycling"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Cycling
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5129,13 +6074,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/formula-one"
-              id="vertical-sub-formula-one"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Formula One
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/formula-one"
+                id="vertical-sub-formula-one"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Formula One
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5147,13 +6101,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/golf"
-              id="vertical-sub-golf"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Golf
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/golf"
+                id="vertical-sub-golf"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Golf
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5165,13 +6128,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/horse-racing"
-              id="vertical-sub-horse-racing"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Horse Racing
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/horse-racing"
+                id="vertical-sub-horse-racing"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Horse Racing
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5183,13 +6155,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/boxing"
-              id="vertical-sub-boxing"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Boxing
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/boxing"
+                id="vertical-sub-boxing"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Boxing
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5219,7 +6200,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-business-and-money"
             type="button"
@@ -5249,13 +6230,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/business-and-money"
-              id="vertical-sub-top-stories-business-and-money"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Top stories
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/business-and-money"
+                id="vertical-sub-top-stories-business-and-money"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Top stories
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5267,13 +6257,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/money"
-              id="vertical-sub-money"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Money
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/money"
+                id="vertical-sub-money"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Money
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5285,13 +6284,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/economics"
-              id="vertical-sub-economics"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Economics
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/economics"
+                id="vertical-sub-economics"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Economics
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5303,13 +6311,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/markets"
-              id="vertical-sub-markets"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Markets
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/markets"
+                id="vertical-sub-markets"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Markets
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5321,13 +6338,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/technology"
-              id="vertical-sub-technology"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Technology
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/technology"
+                id="vertical-sub-technology"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Technology
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5339,13 +6365,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/entrepreneurs"
-              id="vertical-sub-entrepreneurs"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Entrepreneurs
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/entrepreneurs"
+                id="vertical-sub-entrepreneurs"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Entrepreneurs
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5357,13 +6392,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/companies"
-              id="vertical-sub-companies"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Companies
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/companies"
+                id="vertical-sub-companies"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Companies
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5393,7 +6437,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-puzzles"
             type="button"
@@ -5423,13 +6467,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/crossword-club"
-              id="vertical-sub-crossword-club"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Crossword Club
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/crossword-club"
+                id="vertical-sub-crossword-club"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Crossword Club
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5441,13 +6494,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/crosswords"
-              id="vertical-sub-crosswords"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Crosswords
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/crosswords"
+                id="vertical-sub-crosswords"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Crosswords
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5459,13 +6521,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/mind-games"
-              id="vertical-sub-mind-games"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Mind games
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/mind-games"
+                id="vertical-sub-mind-games"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Mind games
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5477,13 +6548,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/daily-quiz"
-              id="vertical-sub-daily-quiz"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Daily Quiz
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/daily-quiz"
+                id="vertical-sub-daily-quiz"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Daily Quiz
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5495,13 +6575,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/soduku"
-              id="vertical-sub-soduku"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Soduku
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/soduku"
+                id="vertical-sub-soduku"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Soduku
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5531,7 +6620,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-1codkq0"
+            class="css-lca10z"
             data-testid="menu-sub-button"
             id="vertical-magazines"
             type="button"
@@ -5561,13 +6650,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           <ul
             class="css-1mm64yz"
           >
-            <a
-              class="css-2xb4pt"
-              href="/the-sunday-times-magazine"
-              id="vertical-sub-the-sunday-times-magazine"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              The Sunday Times magazine
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/the-sunday-times-magazine"
+                id="vertical-sub-the-sunday-times-magazine"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  The Sunday Times magazine
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5579,13 +6677,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/culture-magazine"
-              id="vertical-sub-culture-magazine"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Culture magazine
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/culture-magazine"
+                id="vertical-sub-culture-magazine"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Culture magazine
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5597,13 +6704,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/weekend-magazine"
-              id="vertical-sub-weekend-magazine"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Weekend magazine
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/weekend-magazine"
+                id="vertical-sub-weekend-magazine"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Weekend magazine
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5615,13 +6731,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/style-magazine"
-              id="vertical-sub-style-magazine"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              Style magazine
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/style-magazine"
+                id="vertical-sub-style-magazine"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  Style magazine
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5633,13 +6758,22 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 data-testid="divider"
               />
             </li>
-            <a
-              class="css-2xb4pt"
-              href="/the-times-magazine"
-              id="vertical-sub-the-times-magazine"
+            <li
+              class="nk-menu-item css-zbkqx2"
             >
-              The Times magazine
-            </a>
+              <a
+                class="css-1tkkun1"
+                data-testid="buttonLink"
+                href="/the-times-magazine"
+                id="vertical-sub-the-times-magazine"
+              >
+                <span
+                  class="css-t9dmcw"
+                >
+                  The Times magazine
+                </span>
+              </a>
+            </li>
             <li
               aria-hidden="true"
               class="css-axn6lz"
@@ -5688,7 +6822,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/e-paper"
             id="vertical-e-paper"
@@ -5715,7 +6849,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/newsletters"
             id="vertical-newsletters"
@@ -5742,7 +6876,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/tv-guide"
             id="vertical-tv-guide"
@@ -5769,7 +6903,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/times-plus"
             id="vertical-times-plus"
@@ -5796,7 +6930,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/times-radio"
             id="vertical-times-radio"
@@ -5823,7 +6957,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/podcasts"
             id="vertical-podcasts"
@@ -5850,7 +6984,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/money-mentor"
             id="vertical-money-mentor"
@@ -5877,7 +7011,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/times-travel"
             id="vertical-times-travel"
@@ -5904,7 +7038,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/wine-club"
             id="vertical-wine-club"
@@ -5931,7 +7065,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/times-appointments"
             id="vertical-times-appointments"
@@ -5958,7 +7092,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/rich-list"
             id="vertical-rich-list"
@@ -5985,7 +7119,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/uni-guide"
             id="vertical-uni-guide"
@@ -6012,7 +7146,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/school-guide"
             id="vertical-school-guide"
@@ -6039,7 +7173,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/best-places-to-live"
             id="vertical-best-places-to-live"
@@ -6066,7 +7200,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/best-places-to-stay"
             id="vertical-best-places-to-stay"
@@ -6093,7 +7227,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="nk-menu-item css-zbkqx2"
         >
           <a
-            class="css-1asvzz7"
+            class="css-1wllw6r"
             data-testid="buttonLink"
             href="/growth-100"
             id="vertical-growth-100"

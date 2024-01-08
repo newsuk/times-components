@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
-import { MenuDivider, MenuItem, MenuSub } from 'newskit';
+import { MenuSub, MenuItem, MenuDivider } from 'newskit';
 import { MenuItemParent } from '../types';
-import { StyledMenuItem } from '../styles';
 
 const NavigationList: React.FC<{
   data: MenuItemParent[];
@@ -28,20 +27,24 @@ const NavigationList: React.FC<{
                 onClick={() => handleItemClick(item.slug, item.title)}
                 overrides={{
                   stylePreset: 'menuItemL1',
-                  typographyPreset: 'newPreset040',
-                  transitionPreset: 'motionDuration000'
+                  typographyPreset: 'newPreset040'
                 }}
               >
                 {item.items.map(({ slug, title, url }) => (
                   <Fragment key={`sub-${slug}`}>
-                    <StyledMenuItem
+                    <MenuItem
                       key={item.slug}
-                      id={`vertical-sub-${slug}`}
                       href={url}
+                      id={`vertical-sub-${slug}`}
+                      overrides={{
+                        paddingInlineStart: 'space060',
+                        stylePreset: 'menuItemL2',
+                        typographyPreset: 'newPreset040'
+                      }}
                       onClick={() => clickHandler(title)}
                     >
                       {title}
-                    </StyledMenuItem>
+                    </MenuItem>
                     <MenuDivider />
                   </Fragment>
                 ))}
@@ -56,8 +59,7 @@ const NavigationList: React.FC<{
                 id={`vertical-${item.slug}`}
                 overrides={{
                   stylePreset: 'menuItemL1',
-                  typographyPreset: 'newPreset040',
-                  transitionPreset: 'motionDuration000'
+                  typographyPreset: 'newPreset040'
                 }}
                 onClick={() => clickHandler(item.title)}
               >
