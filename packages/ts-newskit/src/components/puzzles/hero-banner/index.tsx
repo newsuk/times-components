@@ -83,15 +83,11 @@ export const HeroBanner: FC<HeroBannerProps> = ({
   const Icon = iconMapping[puzzleType];
 
   const handleBtnClick = () => {
-    if (onBtnClick) {
-      onBtnClick();
-    }
+    onBtnClick && onBtnClick();
   };
 
   const handleLinkClick = () => {
-    if (onLinkClick) {
-      onLinkClick();
-    }
+    onLinkClick && onLinkClick();
   };
 
   return (

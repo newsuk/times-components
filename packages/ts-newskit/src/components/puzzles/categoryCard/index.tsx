@@ -22,9 +22,7 @@ export const CategoryCard: FC<CategoryCardProps> = ({
   onClick
 }) => {
   const handleClick = () => {
-    if (onClick) {
-      onClick(type);
-    }
+    onClick && onClick(type);
   };
 
   return (
