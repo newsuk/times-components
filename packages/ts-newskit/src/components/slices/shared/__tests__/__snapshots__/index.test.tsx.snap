@@ -34,6 +34,15 @@ exports[`TagAndFlag should render a snapshot 1`] = `
     >
       flag
     </span>
+    <div
+      class="css-p44zak"
+    >
+      <hr
+        aria-hidden="true"
+        class="css-15kf7hd"
+        data-testid="divider"
+      />
+    </div>
   </div>
 </DocumentFragment>
 `;
