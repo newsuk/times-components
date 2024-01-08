@@ -72,6 +72,15 @@ exports[`Render Article List Item items should render without margin 1`] = `
         >
           4 min read
         </span>
+        <div
+          class="css-p44zak"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -150,6 +159,15 @@ exports[`Render Article List Item should render a snapshot 1`] = `
         >
           4 min read
         </span>
+        <div
+          class="css-p44zak"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
+        </div>
       </div>
     </div>
   </div>
