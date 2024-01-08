@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import {
   ViewOffersButton,
   Container,
@@ -8,7 +8,17 @@ import {
 } from './styles';
 import { backgroundImage } from './data';
 
-export const OffersBanner = () => {
+export interface OffersBannerProps {
+  onClick?: () => void;
+}
+
+export const OffersBanner: FC<OffersBannerProps> = ({ onClick }) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
     <Container>
       <Title
@@ -31,7 +41,10 @@ export const OffersBanner = () => {
       >
         View all digital subscription offers
       </Subtitle>
-      <ViewOffersButton href="https://www.thetimes.co.uk/subscribe/digital/?ilc=sub_benefit_page_bottom">
+      <ViewOffersButton
+        onClick={handleClick}
+        href="https://www.thetimes.co.uk/subscribe/digital/?ilc=sub_benefit_page_bottom"
+      >
         View offers
       </ViewOffersButton>
       <Background src={backgroundImage} />

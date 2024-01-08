@@ -12,9 +12,21 @@ export interface CategoryCardProps {
   type: string;
   url: string;
   Icon: React.ComponentType;
+  onClick?: (categoryName: string) => void;
 }
 
-export const CategoryCard: FC<CategoryCardProps> = ({ type, url, Icon }) => {
+export const CategoryCard: FC<CategoryCardProps> = ({
+  type,
+  url,
+  Icon,
+  onClick
+}) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick(type);
+    }
+  };
+
   return (
     <Block
       paddingBlockEnd={{
@@ -38,6 +50,7 @@ export const CategoryCard: FC<CategoryCardProps> = ({ type, url, Icon }) => {
         </StyledIconWrapper>
         <CardContent>
           <CardLink
+            onClick={handleClick}
             expand
             href={url}
             data-testid="categoryCard-link"

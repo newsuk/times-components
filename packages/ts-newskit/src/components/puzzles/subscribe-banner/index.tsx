@@ -13,14 +13,22 @@ export interface SubscribeBannerProps {
   SubscribeBannerSubheadline: string;
   url: string;
   title: string;
+  onClick?: () => void;
 }
 
 export const SubscribeBanner: FC<SubscribeBannerProps> = ({
   SubscribeBannerHeader,
   SubscribeBannerSubheadline,
   url,
-  title
+  title,
+  onClick
 }) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
     <Block as="section">
       <SubscribeBannerContainer
@@ -56,6 +64,7 @@ export const SubscribeBanner: FC<SubscribeBannerProps> = ({
             <Button
               size="medium"
               href={url}
+              onClick={handleClick}
               overrides={{
                 stylePreset: 'freeTrialShadowBtn',
                 typographyPreset: 'utilityButton020',
