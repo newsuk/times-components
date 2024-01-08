@@ -56,6 +56,16 @@ describe('createMenu', () => {
     fireEvent.click(subscribeBtn);
     expect(mockClickHandler).toHaveBeenCalledWith('Home');
   });
+
+  it('should close the menu when it loses focus', () => {
+    renderMenu(false, 'lg');
+    const menu = screen.getByRole('list');
+    const MenuSub = within(menu).getByTestId('menu-sub-button');
+    fireEvent.click(MenuSub);
+    expect(MenuSub.getAttribute('aria-expanded')).toEqual('true');
+    fireEvent.blur(MenuSub);
+    expect(MenuSub.getAttribute('aria-expanded')).toEqual('false');
+  });
 });
 
 describe('accountCreateMenu', () => {
@@ -107,5 +117,15 @@ describe('NavButtons Logged Out', () => {
     const subscribeBtn = screen.getByRole('link', { name: 'Subscribe' });
     fireEvent.click(subscribeBtn);
     expect(mockClickHandler).toHaveBeenCalledWith('Subscribe');
+  });
+
+  it('should close the menu when it loses focus', () => {
+    renderMenu(true);
+    const menu = screen.getByLabelText('My Account Menu');
+    const MenuSub = within(menu).getByTestId('menu-sub-button');
+    fireEvent.click(MenuSub);
+    expect(MenuSub.getAttribute('aria-expanded')).toEqual('true');
+    fireEvent.blur(MenuSub);
+    expect(MenuSub.getAttribute('aria-expanded')).toEqual('false');
   });
 });

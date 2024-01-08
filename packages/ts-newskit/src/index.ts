@@ -62,6 +62,7 @@ export { LeadStory4 } from './slices/lead-story-4';
 export { SectionBucket } from './slices/section-bucket';
 export { StackModule1 } from './slices/stacked-module-1';
 export { CommentBucket1 } from './slices/comment-bucket-1';
+export { ListViewSlice } from './slices/list-view-slice';
 
 // SLICES HEADER
 export { SliceHeader } from './components/slices/slice-header';

@@ -13,16 +13,14 @@ const articlePagePropTypes = {
   isLoading: PropTypes.bool,
   onImagePress: PropTypes.func,
   receiveChildList: PropTypes.func.isRequired,
-  zephrDivs: PropTypes.bool,
-  showAudioPlayer: PropTypes.bool
+  zephrDivs: PropTypes.bool
 };
 
 const articlePageDefaultProps = {
   article: null,
   error: null,
   isLoading: false,
-  onImagePress: null,
-  showAudioPlayer: false
+  onImagePress: null
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };

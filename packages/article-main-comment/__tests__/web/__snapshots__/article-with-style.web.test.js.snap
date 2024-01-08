@@ -922,40 +922,6 @@ exports[`full article with style 1`] = `
               </div>
             </div>
           </div>
-          <div
-            className="article-audio-container opHide_articleAudio css-1i5p60e"
-          >
-            <section>
-              <audio />
-              <div
-                className="css-qoq9ah"
-              >
-                <button
-                  className="css-1cktvs"
-                >
-                  <svg
-                    className="css-2gkv6s"
-                  >
-                    <circle />
-                  </svg>
-                </button>
-                <div
-                  className="css-1iuvgg2"
-                >
-                  <p
-                    className="css-1yaue50"
-                  >
-                    Listen to article
-                  </p>
-                  <p
-                    className="article-audio-narrator css-90ibmi"
-                  >
-                    Narrated by Some byline
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
         </div>
         <div
           className="c14 c15 c16"

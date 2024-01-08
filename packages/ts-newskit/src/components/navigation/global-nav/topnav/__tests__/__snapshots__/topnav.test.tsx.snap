@@ -353,7 +353,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/arts-and-books"
                           >
                             <span
@@ -368,7 +368,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/sport"
                           >
                             <span
@@ -383,7 +383,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/business-and-money"
                           >
                             <span
@@ -398,7 +398,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/puzzles"
                           >
                             <span
@@ -413,7 +413,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/magazines"
                           >
                             <span
@@ -624,7 +624,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/account"
                     >
                       <span
@@ -639,7 +639,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/change-password"
                     >
                       <span
@@ -654,7 +654,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/my-newsletters"
                     >
                       <span
@@ -669,7 +669,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/my-articles"
                     >
                       <span
@@ -684,7 +684,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/contact-us"
                     >
                       <span
@@ -699,7 +699,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/log-out"
                     >
                       <span
@@ -926,7 +926,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/arts-and-books"
                           >
                             <span
@@ -941,7 +941,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/sport"
                           >
                             <span
@@ -956,7 +956,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/business-and-money"
                           >
                             <span
@@ -971,7 +971,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/puzzles"
                           >
                             <span
@@ -986,7 +986,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/magazines"
                           >
                             <span
@@ -1368,7 +1368,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/arts-and-books"
                           >
                             <span
@@ -1383,7 +1383,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/sport"
                           >
                             <span
@@ -1398,7 +1398,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/business-and-money"
                           >
                             <span
@@ -1413,7 +1413,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/puzzles"
                           >
                             <span
@@ -1428,7 +1428,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/magazines"
                           >
                             <span
@@ -1854,7 +1854,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/arts-and-books"
                           >
                             <span
@@ -1869,7 +1869,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/sport"
                           >
                             <span
@@ -1884,7 +1884,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/business-and-money"
                           >
                             <span
@@ -1899,7 +1899,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/puzzles"
                           >
                             <span
@@ -1914,7 +1914,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/magazines"
                           >
                             <span
@@ -2286,7 +2286,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/arts-and-books"
                           >
                             <span
@@ -2301,7 +2301,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/sport"
                           >
                             <span
@@ -2316,7 +2316,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/business-and-money"
                           >
                             <span
@@ -2331,7 +2331,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/puzzles"
                           >
                             <span
@@ -2346,7 +2346,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/magazines"
                           >
                             <span
@@ -2547,7 +2547,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/account"
                     >
                       <span
@@ -2562,7 +2562,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/change-password"
                     >
                       <span
@@ -2577,7 +2577,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/my-newsletters"
                     >
                       <span
@@ -2592,7 +2592,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/my-articles"
                     >
                       <span
@@ -2607,7 +2607,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/contact-us"
                     >
                       <span
@@ -2622,7 +2622,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   >
                     <a
                       class="css-4yjxcc"
-                      data-testid="buttonLink"
+                      data-testid="my-account-menu-item"
                       href="/log-out"
                     >
                       <span
@@ -2849,7 +2849,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/arts-and-books"
                           >
                             <span
@@ -2864,7 +2864,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/sport"
                           >
                             <span
@@ -2879,7 +2879,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/business-and-money"
                           >
                             <span
@@ -2894,7 +2894,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/puzzles"
                           >
                             <span
@@ -2909,7 +2909,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         >
                           <a
                             class="css-thzfib"
-                            data-testid="buttonLink"
+                            data-testid="more-menu-item"
                             href="/magazines"
                           >
                             <span
