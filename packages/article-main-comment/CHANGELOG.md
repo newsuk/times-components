@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.73.32](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.73.31...@times-components/article-main-comment@2.73.32) (2024-01-02)
+
+
+### Bug Fixes
+
+* **TMRX-1768:** Check a byline exists ([#3703](https://github.com/newsuk/times-components/issues/3703)) ([fad95e9](https://github.com/newsuk/times-components/commit/fad95e992b63f93ed95eadda683c5fcb1b91f53a))
+
+
+
+
+
 ## [2.73.31](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.73.30...@times-components/article-main-comment@2.73.31) (2023-12-14)
 
 **Note:** Version bump only for package @times-components/article-main-comment
