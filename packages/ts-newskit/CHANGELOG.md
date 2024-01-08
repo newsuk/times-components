@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.152.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.151.0...@times-components/ts-newskit@1.152.0) (2024-01-08)
+
+
+### Features
+
+* **TMRX: 1674:** change global nav overlay opacity ([#3702](https://github.com/newsuk/times-components/issues/3702)) ([7e415f3](https://github.com/newsuk/times-components/commit/7e415f313dd7f2b48ff95e9b7a77d75508014e2b))
+
+
+
+
+
 # [1.151.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.150.0...@times-components/ts-newskit@1.151.0) (2024-01-08)
 
 
