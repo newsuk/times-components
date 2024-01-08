@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.73.35](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.73.34...@times-components/article-main-comment@2.73.35) (2024-01-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.73.34](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.73.33...@times-components/article-main-comment@2.73.34) (2024-01-08)
+
+
+### Bug Fixes
+
+* **TMRX-1782:** Remove inArticleAudio integration for now until ready to productionise ([#3704](https://github.com/newsuk/times-components/issues/3704)) ([139c9bd](https://github.com/newsuk/times-components/commit/139c9bd8f032a4eda60004fb457b0b6cc698598e))
+
+
+
+
+
+## [2.73.33](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.73.32...@times-components/article-main-comment@2.73.33) (2024-01-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.73.32](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.73.31...@times-components/article-main-comment@2.73.32) (2024-01-02)
+
+
+### Bug Fixes
+
+* **TMRX-1768:** Check a byline exists ([#3703](https://github.com/newsuk/times-components/issues/3703)) ([fad95e9](https://github.com/newsuk/times-components/commit/fad95e992b63f93ed95eadda683c5fcb1b91f53a))
+
+
+
+
+
 ## [2.73.31](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.73.30...@times-components/article-main-comment@2.73.31) (2023-12-14)
 
 **Note:** Version bump only for package @times-components/article-main-comment

@@ -10,6 +10,13 @@ const menuItemPresets = {
   typographyPreset: 'topNav010'
 };
 
+const hasClickedOnMenu = (
+  event: React.FocusEvent<HTMLAnchorElement>,
+  testId: string
+) =>
+  event.relatedTarget instanceof HTMLAnchorElement &&
+  event.relatedTarget.getAttribute('data-testid') === testId;
+
 export const createMenu = (
   menuData: MenuItemParent[],
   clickHandler: (title: string) => void
@@ -53,6 +60,10 @@ export const createMenu = (
           onClick={handleMoreClick}
           selected={moreSelected}
           expanded={moreSelected}
+          onBlur={e => {
+            // Close menu when it loses focus if user has not clicked on it
+            !hasClickedOnMenu(e, 'more-menu-item') && setMoreSelected(false);
+          }}
           overrides={{
             ...menuItemPresets,
             list: { stylePreset: 'moreSubMenu' }
@@ -82,6 +93,7 @@ const createMoreMenu = (
     .map(({ title, url }: { title: string; url: string }) => (
       <MenuItem
         href={url}
+        data-testid="more-menu-item"
         overrides={{
           minWidth: '200px',
           stylePreset: 'subMenuItem',
@@ -120,6 +132,11 @@ export const createAccountMenu = (
           setMyAccountSelected(!myAccountSelected);
           clickHandler('My Account');
         }}
+        onBlur={e => {
+          // Close menu when it loses focus if user has not clicked on it
+          !hasClickedOnMenu(e, 'my-account-menu-item') &&
+            setMyAccountSelected(false);
+        }}
         selected={myAccountSelected}
         expanded={myAccountSelected}
         overrides={{
@@ -142,6 +159,7 @@ export const createAccountMenu = (
                 stylePreset: 'subMenuItem',
                 typographyPreset: 'topNav010'
               }}
+              data-testid="my-account-menu-item"
               key={url}
               onClick={() => clickHandler(title)}
             >
