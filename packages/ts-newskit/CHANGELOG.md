@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.150.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.149.0...@times-components/ts-newskit@1.150.0) (2024-01-08)
+
+
+### Features
+
+* **TMRX-1676:** animate hamburger to x ([#3701](https://github.com/newsuk/times-components/issues/3701)) ([168cf2d](https://github.com/newsuk/times-components/commit/168cf2da5a3b9d5f03fba0ba3c85d5a9db151922))
+
+
+
+
+
 # [1.149.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.148.0...@times-components/ts-newskit@1.149.0) (2024-01-08)
 
 
