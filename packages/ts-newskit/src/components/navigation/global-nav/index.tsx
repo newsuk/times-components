@@ -13,9 +13,15 @@ interface GlobalNavProps {
   isSunday?: boolean;
   data: NavigationData;
   clickHandler: (title: string) => void;
+  onClick?: (isHamburgerOpen: boolean) => void;
 }
 
-export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
+export const GlobalNav = ({
+  isLoggedIn,
+  isSunday,
+  data,
+  onClick
+}: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
   const { fireEvent } = useInstrumentation();
 
@@ -31,7 +37,10 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
         mainMenu={data.mainMenuItems}
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}
-        toggleHamburger={setHamburgerActive}
+        toggleHamburger={isHamburgerOpen => {
+          onClick && onClick(isHamburgerOpen);
+          setHamburgerActive(isHamburgerOpen);
+        }}
         clickHandler={(title: string) =>
           onClickTopNavigation(title, GLOBAL_NAVIGATION)
         }
@@ -62,7 +71,8 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
 export const GlobalNavWithCustomDrawer = ({
   isLoggedIn,
   isSunday,
-  data
+  data,
+  onClick
 }: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
   const { fireEvent } = useInstrumentation();
@@ -79,7 +89,10 @@ export const GlobalNavWithCustomDrawer = ({
         mainMenu={data.mainMenuItems}
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}
-        toggleHamburger={setHamburgerActive}
+        toggleHamburger={isHamburgerOpen => {
+          onClick && onClick(isHamburgerOpen);
+          setHamburgerActive(isHamburgerOpen);
+        }}
         clickHandler={title => onClickTopNavigation(title, GLOBAL_NAVIGATION)}
       />
       <CustomHamburgerMenuContainer

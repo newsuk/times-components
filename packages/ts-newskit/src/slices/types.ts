@@ -55,6 +55,7 @@ export type TagAndFlagProps = {
     typographyPreset?: MQ<string> | string;
     stylePreset?: MQ<string> | string;
   };
+  byline?: string;
   tag?: {
     label: string;
     href: string;
