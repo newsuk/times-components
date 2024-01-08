@@ -119,6 +119,15 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   >
                     4 min read
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -237,6 +246,15 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                   >
                     4 min read
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -398,6 +416,15 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 >
                   4 min read
                 </span>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -550,6 +577,15 @@ exports[`Render ArticleStack Slice matches snapshot with default width 1`] = `
                 >
                   4 min read
                 </span>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -679,6 +715,15 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   >
                     4 min read
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -797,6 +842,15 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                   >
                     4 min read
                   </span>
+                  <div
+                    class="css-p44zak"
+                  >
+                    <hr
+                      aria-hidden="true"
+                      class="css-15kf7hd"
+                      data-testid="divider"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -958,6 +1012,15 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 >
                   4 min read
                 </span>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1110,6 +1173,15 @@ exports[`Render ArticleStack renders with passed width 1`] = `
                 >
                   4 min read
                 </span>
+                <div
+                  class="css-p44zak"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-15kf7hd"
+                    data-testid="divider"
+                  />
+                </div>
               </div>
             </div>
           </div>

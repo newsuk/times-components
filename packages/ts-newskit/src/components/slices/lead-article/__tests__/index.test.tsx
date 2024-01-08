@@ -44,7 +44,12 @@ describe('Render Component one', () => {
     expect(readingTimeText).toBeInTheDocument();
   });
   it('should render correct caption', () => {
-    const { getByText } = renderComponent();
+    const { getByText } = render(
+      <LeadArticle
+        article={{ ...leadArticle, imageTop: false, isLeadImage: true }}
+        clickHandler={mockClickHandler}
+      />
+    );
 
     const captionText = getByText(leadArticle.images.caption);
     expect(captionText).toBeInTheDocument();
