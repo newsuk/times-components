@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import { Menu, Visible, Divider, Scroll, Stack, LinkInline } from 'newskit';
 import { createAccountMenu, createMenu } from './createMenus';
 import {
-  NewsKitBurgerIcon,
-  NewsKitCloseIcon,
   NewsKitTimesMasthead,
   NewsKitSearchIcon,
   NewsKitSundayTimesMasthead
 } from '../../../../assets';
 import {
+  HamburgerIcon,
   MastheadMob,
   MenuScrollDivider,
   ScrollMenu,
@@ -90,7 +89,11 @@ export const TopNav: React.FC<TopNavProps> = ({
             aria-controls="hamburgerMenu"
             aria-expanded={isHamburgerOpen}
           >
-            {isHamburgerOpen ? <NewsKitCloseIcon /> : <NewsKitBurgerIcon />}
+            <HamburgerIcon className={`${isHamburgerOpen ? 'open' : ''}`}>
+              <span />
+              <span />
+              <span />
+            </HamburgerIcon>
           </TopNavIcon>
           <TopNavHide xs sm display="flex">
             <Divider vertical />

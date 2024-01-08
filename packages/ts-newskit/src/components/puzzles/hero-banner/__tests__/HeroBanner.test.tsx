@@ -1,13 +1,17 @@
 import React from 'react';
 import { HeroBanner, HeroBannerProps } from '../index';
-import { render } from '../../../../utils/test-utils';
+import { render, fireEvent } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
+
+const handleClick = jest.fn();
 
 const defaultProps: HeroBannerProps = {
   puzzleName: 'Crossword',
   puzzleType: 'crossword',
   loginUrl:
-    'https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles'
+    'https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles',
+  onBtnClick: handleClick,
+  onLinkClick: handleClick
 };
 
 const renderComponent = (props: HeroBannerProps) =>
@@ -32,5 +36,23 @@ describe('HeroBanner', () => {
       'href',
       'https://login.thetimes.co.uk?gotoUrl=https://www.thetimes.co.uk/puzzles'
     );
+  });
+
+  it('triggers onBtnClick function when clicked', () => {
+    const { getByText } = renderComponent(defaultProps);
+    const component = getByText('Subscribe');
+
+    fireEvent.click(component);
+
+    expect(handleClick).toHaveBeenCalled();
+  });
+
+  it('triggers onLinkClick function when clicked', () => {
+    const { getByText } = renderComponent(defaultProps);
+    const component = getByText('Log In');
+
+    fireEvent.click(component);
+
+    expect(handleClick).toHaveBeenCalled();
   });
 });

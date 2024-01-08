@@ -20,19 +20,13 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
           data-testid="button"
           type="button"
         >
-          <svg
-            class="css-ny3roy"
-            fill="none"
-            height="16"
-            viewBox="0 0 16 12"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class=" css-rqxi1j"
           >
-            <path
-              d="M0 12v-1.5h16V12H0Zm0-5.25v-1.5h11.556v1.5H0ZM0 1.5V0h16v1.5H0Z"
-              fill="currentcolor"
-            />
-          </svg>
+            <span />
+            <span />
+            <span />
+          </div>
         </button>
         <div
           class="css-cqe1om"
@@ -362,7 +356,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/arts-and-books"
                             >
                               <span
@@ -377,7 +371,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/sport"
                             >
                               <span
@@ -392,7 +386,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/business-and-money"
                             >
                               <span
@@ -407,7 +401,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/puzzles"
                             >
                               <span
@@ -422,7 +416,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/magazines"
                             >
                               <span
@@ -848,7 +842,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/arts-and-books"
                             >
                               <span
@@ -863,7 +857,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/sport"
                             >
                               <span
@@ -878,7 +872,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/business-and-money"
                             >
                               <span
@@ -893,7 +887,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/puzzles"
                             >
                               <span
@@ -908,7 +902,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/magazines"
                             >
                               <span
@@ -958,19 +952,13 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
           data-testid="button"
           type="button"
         >
-          <svg
-            class="css-ny3roy"
-            fill="none"
-            height="16"
-            viewBox="0 0 16 12"
-            width="16"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class=" css-rqxi1j"
           >
-            <path
-              d="M0 12v-1.5h16V12H0Zm0-5.25v-1.5h11.556v1.5H0ZM0 1.5V0h16v1.5H0Z"
-              fill="currentcolor"
-            />
-          </svg>
+            <span />
+            <span />
+            <span />
+          </div>
         </button>
         <div
           class="css-cqe1om"
@@ -1300,7 +1288,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/arts-and-books"
                             >
                               <span
@@ -1315,7 +1303,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/sport"
                             >
                               <span
@@ -1330,7 +1318,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/business-and-money"
                             >
                               <span
@@ -1345,7 +1333,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/puzzles"
                             >
                               <span
@@ -1360,7 +1348,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/magazines"
                             >
                               <span
@@ -1786,7 +1774,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/arts-and-books"
                             >
                               <span
@@ -1801,7 +1789,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/sport"
                             >
                               <span
@@ -1816,7 +1804,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/business-and-money"
                             >
                               <span
@@ -1831,7 +1819,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/puzzles"
                             >
                               <span
@@ -1846,7 +1834,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                           >
                             <a
                               class="css-thzfib"
-                              data-testid="buttonLink"
+                              data-testid="more-menu-item"
                               href="/magazines"
                             >
                               <span
