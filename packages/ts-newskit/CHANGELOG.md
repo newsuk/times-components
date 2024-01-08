@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.151.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.150.0...@times-components/ts-newskit@1.151.0) (2024-01-08)
+
+
+### Features
+
+* **TMRX-1673:** amend search bar placeholder ([#3697](https://github.com/newsuk/times-components/issues/3697)) ([4077826](https://github.com/newsuk/times-components/commit/40778265482ba3f55a389fad0d8ec2499ee4debd))
+
+
+
+
+
 # [1.150.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.149.0...@times-components/ts-newskit@1.150.0) (2024-01-08)
 
 
