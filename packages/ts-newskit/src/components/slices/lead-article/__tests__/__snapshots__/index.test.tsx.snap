@@ -29,16 +29,6 @@ exports[`Render Component one should render a snapshot 1`] = `
           </picture>
         </a>
       </div>
-      <p
-        class="css-xkphwk"
-      >
-        Sarcacens an inclusive club? They didnt look
-        <span
-          class="css-15rs040"
-        >
-          Gareth Fuller/Press Association
-        </span>
-      </p>
     </div>
     <div
       class="css-gpke1l"
@@ -154,6 +144,15 @@ exports[`Render Component one should render a snapshot 1`] = `
         >
           4 min read
         </span>
+        <div
+          class="css-p44zak"
+        >
+          <hr
+            aria-hidden="true"
+            class="css-15kf7hd"
+            data-testid="divider"
+          />
+        </div>
       </div>
     </div>
   </div>
