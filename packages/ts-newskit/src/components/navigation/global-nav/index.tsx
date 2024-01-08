@@ -50,7 +50,12 @@ export const GlobalNav = ({
         open={hamburgerActive}
         onDismiss={() => setHamburgerActive(false)}
         closePosition="none"
-        overrides={{ panel: { size: { xs: '100%', md: '322px' } } }}
+        overrides={{
+          panel: { size: { xs: '100%', md: '322px' } },
+          overlay: {
+            stylePreset: 'menuOverlay'
+          }
+        }}
       >
         <HamburgerMenu
           {...{ isLoggedIn, data }}
