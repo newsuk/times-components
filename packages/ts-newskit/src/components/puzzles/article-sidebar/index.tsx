@@ -13,7 +13,7 @@ import {
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
 import { StyledCardComposable } from './styles';
-import { TrackingContextProvider } from '@times-components/ts-components/src/helpers/tracking/TrackingContextProvider';
+import { TrackingContextProvider } from '@times-components/ts-components';
 import analyticsStream from '@times-components/ts-components/src/fixtures/analytics-actions/analytics-actions';
 
 export interface ArticleSideBarProps {
