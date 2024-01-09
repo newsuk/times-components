@@ -11,7 +11,8 @@ import {
 import {
   CardHeadlineLink,
   FullWidthBlock,
-  FullWidthGridLayoutItem
+  FullWidthGridLayoutItem,
+  StyledSpan
 } from '../shared-styles';
 import { TagAndFlag } from '../shared/tag-and-flag';
 import {
@@ -176,7 +177,7 @@ export const Article = ({
             area="media"
             aria-label="article-lead-image"
             className="article-image"
-            marginBlockEnd={hasCaptionOrCredits ? 'space000' : 'space020'}
+            marginBlockEnd={hasCaptionOrCredits ? 'space000' : 'space040'}
           >
             {image}
           </FullWidthGridLayoutItem>
@@ -197,7 +198,7 @@ export const Article = ({
       <CardContent alignContent="start">
         {images &&
           !imageRight &&
-          images.caption &&
+          hasCaptionOrCredits &&
           !hideImage && (
             <TextBlock
               marginBlockStart="space020"
@@ -206,6 +207,11 @@ export const Article = ({
               typographyPreset="editorialCaption010"
             >
               {images.caption}
+              {images.credits && (
+                <StyledSpan hasCaption={hasCaption}>
+                  {images.credits}
+                </StyledSpan>
+              )}
             </TextBlock>
           )}
 

@@ -53,6 +53,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     class="css-lg4krt"
                   >
                     Sarcacens an inclusive club? They didnt look
+                    <span
+                      class="css-15rs040"
+                    >
+                      Gareth Fuller/Press Association
+                    </span>
                   </p>
                   <div
                     class="article-info css-1fjzok1"
@@ -206,6 +211,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot 1`] = `
                     class="css-lg4krt"
                   >
                     Sarcacens an inclusive club? They didnt look
+                    <span
+                      class="css-15rs040"
+                    >
+                      Gareth Fuller/Press Association
+                    </span>
                   </p>
                   <div
                     class="article-info css-1fjzok1"
@@ -1412,6 +1422,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     class="css-lg4krt"
                   >
                     Sarcacens an inclusive club? They didnt look
+                    <span
+                      class="css-15rs040"
+                    >
+                      Gareth Fuller/Press Association
+                    </span>
                   </p>
                   <div
                     class="article-info css-1fjzok1"
@@ -1565,6 +1580,11 @@ exports[`Render Content Bucket 3 Slice Slice matches snapshot for mobile 1`] = `
                     class="css-lg4krt"
                   >
                     Sarcacens an inclusive club? They didnt look
+                    <span
+                      class="css-15rs040"
+                    >
+                      Gareth Fuller/Press Association
+                    </span>
                   </p>
                   <div
                     class="article-info css-1fjzok1"
