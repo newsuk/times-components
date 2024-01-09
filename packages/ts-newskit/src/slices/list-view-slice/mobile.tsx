@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
   LeadArticle,
   LeadArticleProps
@@ -30,7 +30,7 @@ export const ListViewSliceMobile = ({
           const renderAds = index + 1 === Math.ceil(itemsPerPage / 2);
 
           return (
-            <>
+            <Fragment key={item.id}>
               <TextBlock
                 typographyPreset="utilityLabel005"
                 stylePreset="inkNonEssential"
@@ -65,7 +65,7 @@ export const ListViewSliceMobile = ({
                   <SectionAd />
                 </Block>
               )}
-            </>
+            </Fragment>
           );
         })}
       {renderLoadMoreButton && (
@@ -74,7 +74,7 @@ export const ListViewSliceMobile = ({
           currentPage={currentPage}
           title="Load more"
           disabled={isLoading}
-          href={`${window.location.pathname}?page=${currentPage + 1}`}
+          href={`?page=${currentPage + 1}`}
         />
       )}
     </CustomBlockLayout>

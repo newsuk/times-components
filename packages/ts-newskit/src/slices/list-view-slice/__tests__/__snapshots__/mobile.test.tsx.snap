@@ -1678,7 +1678,7 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
         <a
           class="css-1gt9qzx"
           data-testid="buttonLink"
-          href="/?page=2"
+          href="?page=2"
         >
           <span
             class="css-135wemz"
