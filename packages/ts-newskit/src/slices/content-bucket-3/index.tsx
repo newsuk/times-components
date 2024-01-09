@@ -1,20 +1,23 @@
 import { Block, Divider, Hidden, Visible, GridLayout } from 'newskit';
 import React from 'react';
 import { CommentCardProps } from '../../components/slices/comment-card';
-import { LeadArticleProps } from '../../components/slices/lead-article';
-import { ArticleProps, Article } from '../../components/slices/article';
+import {
+  LeadArticle,
+  LeadArticleProps
+} from '../../components/slices/lead-article';
+import { ArticleProps } from '../../components/slices/article';
 import {
   LeadStoryDivider,
   StackItem,
   BlockItem,
   ArticleDivider
 } from '../shared-styles';
+import { LeadArticles } from './styles';
 
 import { CommentStack } from '../shared/comment-stack';
 import { CustomStackLayout } from '../shared';
 import { FullWidthHidden } from '../../components/slices/shared-styles';
 import { ClickHandlerType } from '../types';
-import { LeadArticles } from './styles';
 import { ArticleStack } from '../shared/article-stack-cb';
 
 export interface ContentBucket3Props {
@@ -35,8 +38,10 @@ export const ContentBucket3 = ({
   const modifiedleadArticleLeft = {
     ...leadArticleLeft,
     hasTopBorder: false,
+    imageTop: true,
     isLeadImage: true,
-    titleTypographyPreset: {
+    shortSummary: '',
+    headlineTypographyPreset: {
       xs: 'editorialHeadline040',
       md: 'editorialHeadline020',
       lg: 'editorialHeadline030'
@@ -45,11 +50,12 @@ export const ContentBucket3 = ({
 
   const modifiedleadArticleRight = {
     ...leadArticleRight,
+    imageTop: true,
+    shortSummary: '',
+    hasTopBorder: false,
     isLeadImage: true,
-    hasTopBorder: true,
-    topBorderStyle: 'lightDashedDivider',
     tagAndFlagMarginBlockStart: { xs: 'space030', md: 'space040' },
-    titleTypographyPreset: {
+    headlineTypographyPreset: {
       xs: 'editorialHeadline020',
       lg: 'editorialHeadline030'
     }
@@ -83,20 +89,27 @@ export const ContentBucket3 = ({
               columnGap={{ md: 'space040' }}
               rowGap="space040"
             >
-              <Article
-                article={modifiedleadArticleLeft}
-                clickHandler={clickHandler}
-              />
+              <Block>
+                <LeadArticle
+                  article={modifiedleadArticleLeft}
+                  clickHandler={clickHandler}
+                />
+              </Block>
               <Hidden xs sm>
                 <ArticleDivider
                   overrides={{ stylePreset: 'lightDivider' }}
                   vertical
                 />
               </Hidden>
-              <Article
-                article={modifiedleadArticleRight}
-                clickHandler={clickHandler}
-              />
+              <Visible xs sm>
+                <Divider overrides={{ stylePreset: 'lightDashedDivider' }} />
+              </Visible>
+              <Block>
+                <LeadArticle
+                  article={modifiedleadArticleRight}
+                  clickHandler={clickHandler}
+                />
+              </Block>
             </GridLayout>
           </LeadArticles>
         </StackItem>
