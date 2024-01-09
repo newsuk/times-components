@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.153.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.153.1...@times-components/ts-newskit@1.153.2) (2024-01-09)
+
+
+### Bug Fixes
+
+* **TMRX-1446:** remove window reference ([#3708](https://github.com/newsuk/times-components/issues/3708)) ([9641fbd](https://github.com/newsuk/times-components/commit/9641fbd38013fb996c11e678c58236a76ad08b98))
+
+
+
+
+
 ## [1.153.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.153.0...@times-components/ts-newskit@1.153.1) (2024-01-08)
 
 **Note:** Version bump only for package @times-components/ts-newskit
