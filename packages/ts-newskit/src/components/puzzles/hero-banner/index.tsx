@@ -40,6 +40,8 @@ export interface HeroBannerProps {
   puzzleName: string;
   puzzleType: PuzzleType;
   loginUrl: string;
+  onBtnClick?: () => void;
+  onLinkClick?: () => void;
 }
 
 const iconMapping: Record<PuzzleType, IconComponent> = {
@@ -74,9 +76,19 @@ const iconMapping: Record<PuzzleType, IconComponent> = {
 export const HeroBanner: FC<HeroBannerProps> = ({
   puzzleName,
   loginUrl,
-  puzzleType
+  puzzleType,
+  onBtnClick,
+  onLinkClick
 }) => {
   const Icon = iconMapping[puzzleType];
+
+  const handleBtnClick = () => {
+    onBtnClick && onBtnClick();
+  };
+
+  const handleLinkClick = () => {
+    onLinkClick && onLinkClick();
+  };
 
   return (
     <HeroBannerContainer
@@ -125,6 +137,7 @@ export const HeroBanner: FC<HeroBannerProps> = ({
               ]}
             </SyledUnorderedList>
             <Button
+              onClick={handleBtnClick}
               size="medium"
               href="https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00"
               overrides={{
@@ -165,7 +178,10 @@ export const HeroBanner: FC<HeroBannerProps> = ({
           marginBlockStart={{ xs: 'space070', sm: 'space060' }}
           marginBlockEnd={{ xs: 'space090', sm: 'space100' }}
         >
-          Already a subscriber? <a href={loginUrl}>Log In</a>
+          Already a subscriber?{' '}
+          <a onClick={handleLinkClick} href={loginUrl}>
+            Log In
+          </a>
         </StyledTextBlock>
       </StyledBlock>
     </HeroBannerContainer>

@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.153.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.153.0...@times-components/ts-newskit@1.153.1) (2024-01-08)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+# [1.153.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.152.0...@times-components/ts-newskit@1.153.0) (2024-01-08)
+
+
+### Features
+
+* **TMRX-1672:** global nav L1 and L2 active indicator ([#3696](https://github.com/newsuk/times-components/issues/3696)) ([2d9e075](https://github.com/newsuk/times-components/commit/2d9e07526b06f56d97edbad64b11c395858e846d))
+
+
+
+
+
+# [1.152.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.151.0...@times-components/ts-newskit@1.152.0) (2024-01-08)
+
+
+### Features
+
+* **TMRX: 1674:** change global nav overlay opacity ([#3702](https://github.com/newsuk/times-components/issues/3702)) ([7e415f3](https://github.com/newsuk/times-components/commit/7e415f313dd7f2b48ff95e9b7a77d75508014e2b))
+
+
+
+
+
+# [1.151.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.150.0...@times-components/ts-newskit@1.151.0) (2024-01-08)
+
+
+### Features
+
+* **TMRX-1673:** amend search bar placeholder ([#3697](https://github.com/newsuk/times-components/issues/3697)) ([4077826](https://github.com/newsuk/times-components/commit/40778265482ba3f55a389fad0d8ec2499ee4debd))
+
+
+
+
+
+# [1.150.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.149.0...@times-components/ts-newskit@1.150.0) (2024-01-08)
+
+
+### Features
+
+* **TMRX-1676:** animate hamburger to x ([#3701](https://github.com/newsuk/times-components/issues/3701)) ([168cf2d](https://github.com/newsuk/times-components/commit/168cf2da5a3b9d5f03fba0ba3c85d5a9db151922))
+
+
+
+
+
 # [1.149.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.148.0...@times-components/ts-newskit@1.149.0) (2024-01-08)
 
 

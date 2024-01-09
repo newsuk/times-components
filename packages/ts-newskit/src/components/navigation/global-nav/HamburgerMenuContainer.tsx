@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { styled } from 'newskit';
+import { getOverlayCssFromTheme, styled } from 'newskit';
 
 const MenuDrawer = styled.div<{ open: boolean; isLoggedIn?: boolean }>`
   z-index: 1;
@@ -20,7 +20,10 @@ const Overlay = styled.div<{ open: boolean }>`
   position: absolute;
   width: ${({ open }) => (open ? '100%' : '0')};
   height: 100vh;
-  opacity: ${({ open }) => (open ? 1 : 0)};
+  ${({ open }) =>
+    open
+      ? getOverlayCssFromTheme('opacity', 'opacity040')
+      : getOverlayCssFromTheme('opacity', 'opacity000')};
   background-color: rgba(10, 10, 10, 0.8);
   transition-property: opacity;
   transition-duration: 200ms;

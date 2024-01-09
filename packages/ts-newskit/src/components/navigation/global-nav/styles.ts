@@ -9,7 +9,9 @@ import {
   Hidden,
   IconButton,
   Drawer,
-  Visible
+  Visible,
+  MenuSub,
+  MenuItem
 } from 'newskit';
 
 export const TopNavContainer = styled(Stack)`
@@ -93,6 +95,86 @@ export const TopNavIcon = styled(IconButton)`
   }
 `;
 
+export const HamburgerIcon = styled.div`
+  --transition: 0.25s ease-in-out;
+
+  height: 16px;
+  width: 16px;
+
+  position: relative;
+  margin: auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+
+  span {
+    display: block;
+    position: absolute;
+    height: 1.5px;
+    width: 100%;
+    left: 0;
+    ${getColorCssFromTheme('background', 'inkInverse')};
+    opacity: 1;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+  }
+
+  span:nth-child(1) {
+    top: 2px;
+  }
+
+  span:nth-child(2) {
+    top: 7px;
+    width: 75%;
+  }
+
+  span:nth-child(3) {
+    top: 12px;
+  }
+
+  &.open {
+    transform: scale(0.875);
+  }
+
+  &.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0.25px;
+    left: 1px;
+    width: 19.8px;
+  }
+
+  &.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  &.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 14.25px;
+    left: 1px;
+    width: 19.8px;
+  }
+`;
+
 const setHamburgerMenuPadding = (space: string) => ({ padding: `${space}` });
 export const HamburgerMenuContainer = styled(Drawer)<{ isLoggedIn?: boolean }>`
   top: ${({ isLoggedIn }) => (isLoggedIn ? '50px' : '114px')};
@@ -123,4 +205,16 @@ export const HamburgerMenuNav = styled(Menu)`
   overflow-y: scroll;
   background-color: #151515;
   width: 100%;
+`;
+
+export const StyledMenuSub = styled(MenuSub)`
+  &.active {
+    ${getColorCssFromTheme('backgroundColor', 'interfaceNeutral010')};
+  }
+`;
+
+export const StyledMenuItem = styled(MenuItem)`
+  &.active {
+    ${getColorCssFromTheme('backgroundColor', 'interfaceNeutral010')};
+  }
 `;
