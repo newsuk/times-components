@@ -2112,7 +2112,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                 aria-label="current page, page 1"
                 class="css-1twhds8"
                 data-testid="pagination-item"
-                href="/?page=1"
+                href="?page=1"
               >
                 <span
                   class="css-135wemz"
@@ -2132,7 +2132,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                 aria-label="go to page 2"
                 class="css-1twhds8"
                 data-testid="pagination-item"
-                href="/?page=2"
+                href="?page=2"
               >
                 <span
                   class="css-135wemz"
