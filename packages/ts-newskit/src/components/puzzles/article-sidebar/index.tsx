@@ -13,8 +13,11 @@ import {
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
 import { StyledCardComposable } from './styles';
-import { TrackingContextProvider } from '@times-components/ts-components/src/helpers/tracking/TrackingContextProvider';
-import analyticsStream from '@times-components/ts-components/src/fixtures/analytics-actions/analytics-actions';
+import {
+  TrackingContext,
+  TrackingContextProvider
+} from '../../../utils/TrackingContextProvider';
+import analyticsStream from '../../../components/navigation/fixtures/analytics-actions';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
@@ -27,19 +30,27 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
   data,
   pageLink
 }) => {
+  const clickEvent = (title: string) => ({
+    action: 'Clicked',
+    object: 'ArticleSidebar',
+    attrs: {
+      event_navigation_action: 'navigation',
+      event_navigation_browsing_method: 'click',
+      event_navigation_name: `${title}`,
+      component_name: 'Article Sidebar'
+    }
+  });
+
+  const handleClick = (
+    fireAnalyticsEvent: (evt: TrackingContext) => void,
+    title: string
+  ) => {
+    fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(title));
+  };
+
   return (
-    <TrackingContextProvider
-      analyticsStream={analyticsStream}
-      context={{
-        object: 'ArticleSidebar',
-        attrs: {
-          component_type: 'Puzzle Sidebar',
-          event_navigation_action: 'navigation',
-          component_name: `Article Sidebar`
-        }
-      }}
-    >
-      {({ intersectObserverRef, fireAnalyticsEvent }) => (
+    <TrackingContextProvider analyticsStream={analyticsStream}>
+      {({ fireAnalyticsEvent }) => (
         <Block stylePreset="sidebarCard" paddingBlockStart="space030">
           <Block>
             <Block>
@@ -48,23 +59,18 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
                   marginBlockEnd: 'space030',
                   stylePreset: 'cardTitleIcon'
                 }}
-                ref={intersectObserverRef}
               >
                 <CardLink
                   className="trigger"
                   external={false}
                   expand
                   href={pageLink}
-                  onClick={() => {
-                    fireAnalyticsEvent({
-                      attrs: {
-                        event_navigation_name:
-                          'puzzle sidebar: header selected',
-                        component_name: 'Article Sidebar',
-                        event_navigation_browsing_method: 'click'
-                      }
-                    });
-                  }}
+                  onClick={() =>
+                    handleClick(
+                      fireAnalyticsEvent,
+                      'puzzle sidebar: header selected'
+                    )
+                  }
                 />
                 <Stack
                   flow="horizontal-center"
@@ -132,16 +138,12 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
                   external={false}
                   expand
                   href={url}
-                  onClick={() => {
-                    fireAnalyticsEvent({
-                      attrs: {
-                        event_navigation_name:
-                          'puzzle sidebar: puzzle selected',
-                        component_name: 'Article Sidebar',
-                        event_navigation_browsing_method: 'click'
-                      }
-                    });
-                  }}
+                  onClick={() =>
+                    handleClick(
+                      fireAnalyticsEvent,
+                      'puzzle sidebar: puzzle selected'
+                    )
+                  }
                 />
                 <CardContent alignItems="center">
                   <TextBlock typographyPreset="editorialSubheadline010">
