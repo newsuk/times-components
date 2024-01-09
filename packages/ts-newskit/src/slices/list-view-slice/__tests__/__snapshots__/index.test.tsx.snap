@@ -2118,7 +2118,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                     aria-label="current page, page 1"
                     class="css-1twhds8"
                     data-testid="pagination-item"
-                    href="/?page=1"
+                    href="?page=1"
                   >
                     <span
                       class="css-135wemz"
@@ -6127,7 +6127,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     aria-label="current page, page 1"
                     class="css-1twhds8"
                     data-testid="pagination-item"
-                    href="/?page=1"
+                    href="?page=1"
                   >
                     <span
                       class="css-135wemz"
@@ -10136,7 +10136,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     aria-label="current page, page 1"
                     class="css-1twhds8"
                     data-testid="pagination-item"
-                    href="/?page=1"
+                    href="?page=1"
                   >
                     <span
                       class="css-135wemz"
@@ -14145,7 +14145,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     aria-label="current page, page 1"
                     class="css-1twhds8"
                     data-testid="pagination-item"
-                    href="/?page=1"
+                    href="?page=1"
                   >
                     <span
                       class="css-135wemz"
@@ -18154,7 +18154,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     aria-label="current page, page 1"
                     class="css-1twhds8"
                     data-testid="pagination-item"
-                    href="/?page=1"
+                    href="?page=1"
                   >
                     <span
                       class="css-135wemz"
