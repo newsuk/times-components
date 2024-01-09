@@ -34,7 +34,8 @@ export const ListViewSlice = ({
   const modifiedLeadArticles = leadArticles.map(item => ({
     ...item,
     headlineTypographyPreset: 'editorialHeadline020',
-    isLeadImage: false
+    isLeadImage: false,
+    isListView: true
   }));
 
   const sliceProps = {
