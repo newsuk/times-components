@@ -108,7 +108,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
         </picture>
       </div>
       <a
-        class="css-xm00pa"
+        class="trigger-card-link css-xm00pa"
         href="https://www.thetimes.co.uk/puzzles/crossword"
       >
         <span
@@ -172,7 +172,7 @@ exports[`ArticleSidebar should render ArticleSidebar component 1`] = `
         </picture>
       </div>
       <a
-        class="css-xm00pa"
+        class="trigger-card-link css-xm00pa"
         href="https://www.thetimes.co.uk/puzzles/sudoku"
       >
         <span

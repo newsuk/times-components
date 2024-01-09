@@ -128,6 +128,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
                   }}
                 />
                 <CardLink
+                  className="trigger-card-link"
                   external={false}
                   expand
                   href={url}
