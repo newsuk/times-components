@@ -61,7 +61,7 @@ export const Paginations = ({
                   event.preventDefault();
                   pageNumber && handlePageChange(pageNumber);
                 }}
-                href={`${window.location.pathname}?page=${pageNumber}`}
+                href={`?page=${pageNumber}`}
               >
                 {pageNumber}
               </StyledPaginationButton>
