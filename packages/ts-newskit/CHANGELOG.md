@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.153.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.153.2...@times-components/ts-newskit@1.153.3) (2024-01-09)
+
+
+### Bug Fixes
+
+* **TMRX-1800:** add padding between image and label ([#3707](https://github.com/newsuk/times-components/issues/3707)) ([9cbfa77](https://github.com/newsuk/times-components/commit/9cbfa770f4a3a52d0fbc0cf3541a7f591c6769ad))
+
+
+
+
+
 ## [1.153.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.153.1...@times-components/ts-newskit@1.153.2) (2024-01-09)
 
 
