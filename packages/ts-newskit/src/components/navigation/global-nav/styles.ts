@@ -9,7 +9,9 @@ import {
   Hidden,
   IconButton,
   Drawer,
-  Visible
+  Visible,
+  MenuSub,
+  MenuItem
 } from 'newskit';
 
 export const TopNavContainer = styled(Stack)`
@@ -203,4 +205,16 @@ export const HamburgerMenuNav = styled(Menu)`
   overflow-y: scroll;
   background-color: #151515;
   width: 100%;
+`;
+
+export const StyledMenuSub = styled(MenuSub)`
+  &.active {
+    ${getColorCssFromTheme('backgroundColor', 'interfaceNeutral010')};
+  }
+`;
+
+export const StyledMenuItem = styled(MenuItem)`
+  &.active {
+    ${getColorCssFromTheme('backgroundColor', 'interfaceNeutral010')};
+  }
 `;
