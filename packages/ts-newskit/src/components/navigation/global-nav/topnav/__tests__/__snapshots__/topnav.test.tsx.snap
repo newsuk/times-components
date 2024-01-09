@@ -17,19 +17,13 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
         data-testid="button"
         type="button"
       >
-        <svg
-          class="css-ny3roy"
-          fill="none"
-          height="16"
-          viewBox="0 0 16 12"
-          width="16"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          class=" css-rqxi1j"
         >
-          <path
-            d="M0 12v-1.5h16V12H0Zm0-5.25v-1.5h11.556v1.5H0ZM0 1.5V0h16v1.5H0Z"
-            fill="currentcolor"
-          />
-        </svg>
+          <span />
+          <span />
+          <span />
+        </div>
       </button>
       <div
         class="css-cqe1om"
@@ -1038,19 +1032,13 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
         data-testid="button"
         type="button"
       >
-        <svg
-          class="css-ny3roy"
-          fill="none"
-          height="16"
-          viewBox="0 0 16 12"
-          width="16"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          class=" css-rqxi1j"
         >
-          <path
-            d="M0 12v-1.5h16V12H0Zm0-5.25v-1.5h11.556v1.5H0ZM0 1.5V0h16v1.5H0Z"
-            fill="currentcolor"
-          />
-        </svg>
+          <span />
+          <span />
+          <span />
+        </div>
       </button>
       <div
         class="css-cqe1om"
@@ -1972,19 +1960,13 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
         data-testid="button"
         type="button"
       >
-        <svg
-          class="css-ny3roy"
-          fill="none"
-          height="16"
-          viewBox="0 0 16 12"
-          width="16"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          class=" css-rqxi1j"
         >
-          <path
-            d="M0 12v-1.5h16V12H0Zm0-5.25v-1.5h11.556v1.5H0ZM0 1.5V0h16v1.5H0Z"
-            fill="currentcolor"
-          />
-        </svg>
+          <span />
+          <span />
+          <span />
+        </div>
       </button>
       <div
         class="css-cqe1om"

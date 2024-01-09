@@ -23,7 +23,7 @@ describe('Search', () => {
     handleSearchSubmit('desktop', 'Search');
 
     const searchForm = screen.getByRole('search');
-    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+    const searchField = screen.getByPlaceholderText('Search');
 
     fireEvent.change(searchField, {
       target: { value: 'Test Value' }
@@ -39,7 +39,7 @@ describe('Search', () => {
     render(<NavSearch isHamburger />);
 
     const searchForm = screen.getByRole('search');
-    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+    const searchField = screen.getByPlaceholderText('Search');
 
     fireEvent.change(searchField, {
       target: { value: 'Test Value' }

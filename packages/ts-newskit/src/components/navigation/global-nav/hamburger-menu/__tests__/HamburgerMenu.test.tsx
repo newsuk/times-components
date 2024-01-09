@@ -77,6 +77,34 @@ describe('HamburgerMenu - Logged In', () => {
     expect(getByText('Main Menu 1')).toBeVisible();
     expect(queryByText('Account Menu 1')).toBeFalsy();
   });
+
+  it('should indicate active l1', () => {
+    window.history.pushState({}, '', '/main-menu-1');
+    const { getAllByTestId } = renderComponent(true);
+    const Button = getAllByTestId('buttonLink')[0];
+    expect(Button).toHaveClass('active');
+  });
+
+  it('should indicate active l2', () => {
+    window.history.pushState({}, '', '/main-menu-2/item-1');
+    const { getAllByTestId } = renderComponent(true);
+    const Button = getAllByTestId('buttonLink')[1];
+    expect(Button).toHaveClass('active');
+  });
+
+  it('should indicate sub l1 item', () => {
+    window.history.pushState({}, '', '/main-menu-4');
+    const { getAllByTestId } = renderComponent(true);
+    const Button = getAllByTestId('buttonLink')[5];
+    expect(Button).toHaveClass('active');
+  });
+
+  it('should indicate nested l1 item', () => {
+    window.history.pushState({}, '', '/nested-l1');
+    const { getAllByTestId } = renderComponent(true);
+    const Button = getAllByTestId('buttonLink')[6];
+    expect(Button).toHaveClass('active');
+  });
 });
 
 describe('HamburgerMenu - Logged Out', () => {
@@ -91,13 +119,13 @@ describe('HamburgerMenu - Logged Out', () => {
 describe('Search field', () => {
   it('contains the search bar', () => {
     const { getByPlaceholderText } = renderComponent(false);
-    expect(getByPlaceholderText('Search times.co.uk')).toBeVisible();
+    expect(getByPlaceholderText('Search')).toBeVisible();
   });
 
   it('should update search field value', async () => {
     renderComponent(false);
 
-    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+    const searchField = screen.getByPlaceholderText('Search');
 
     fireEvent.change(searchField, {
       target: { value: 'Test Value' }
@@ -108,7 +136,7 @@ describe('Search field', () => {
   it('should clear search field when clicked', async () => {
     renderComponent(false);
 
-    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+    const searchField = screen.getByPlaceholderText('Search');
 
     fireEvent.change(searchField, {
       target: { value: 'Test Value' }
