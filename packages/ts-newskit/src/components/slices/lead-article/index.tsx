@@ -107,6 +107,7 @@ export const LeadArticle = ({
     imageWithCorrectRatio.url !== '';
 
   const hasCaption = !!(images && images.caption);
+
   const hasCredits = !!(images && images.credits);
 
   const hasCaptionOrCredits = hasCaption || hasCredits;
