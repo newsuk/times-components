@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.153.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.153.3...@times-components/ts-newskit@1.153.4) (2024-01-10)
+
+
+### Bug Fixes
+
+* **TMRX-1806:** remove byline from tag and flag ([#3710](https://github.com/newsuk/times-components/issues/3710)) ([a16b62f](https://github.com/newsuk/times-components/commit/a16b62fc864b6e702620538e2359f7e0bd2ae5a3))
+
+
+
+
+
 ## [1.153.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.153.2...@times-components/ts-newskit@1.153.3) (2024-01-09)
 
 
