@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.154.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.153.4...@times-components/ts-newskit@1.154.0) (2024-01-10)
+
+
+### Features
+
+* **TMRX-1677:** global nav performance ([#3705](https://github.com/newsuk/times-components/issues/3705)) ([f9197e6](https://github.com/newsuk/times-components/commit/f9197e66e6ded0d06594b842ea8f4eae6ad8847d))
+
+
+
+
+
 ## [1.153.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.153.3...@times-components/ts-newskit@1.153.4) (2024-01-10)
 
 
