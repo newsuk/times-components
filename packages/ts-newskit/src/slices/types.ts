@@ -56,6 +56,7 @@ export type TagAndFlagProps = {
     stylePreset?: MQ<string> | string;
   };
   byline?: string;
+  isListView?: boolean;
   tag?: {
     label: string;
     href: string;
