@@ -29,7 +29,6 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
                 class="css-1wu5sn8"
               >
                 <img
-                  alt="Martin Samuel"
                   class="css-176aubw"
                   loading="lazy"
                   width="77px"
@@ -45,14 +44,8 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
               href="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
             >
               <span
-                class="css-17x5lw"
-              >
-                <span
-                  class="css-u8ri0n"
-                >
-                  Martin Samuel
-                </span>
-              </span>
+                class="css-pqzzby"
+              />
             </a>
             <a
               class="css-af9wz9"
@@ -65,7 +58,7 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
                 <span
                   class="css-cpjcl7"
                 >
-                  Why unblinking Levy is the Pavlov's cat of football
+                  Gunners misfire, replay rows and free pints
                 </span>
               </span>
             </a>
