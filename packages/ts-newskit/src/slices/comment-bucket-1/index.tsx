@@ -2,9 +2,7 @@ import React from 'react';
 import { ClickHandlerType } from '../types';
 import { Divider, GridLayout } from 'newskit';
 import { AvatarDivider } from '../shared-styles';
-import {
-  CommentCard
-} from '../../components/slices/comment-card';
+import { CommentCard } from '../../components/slices/comment-card';
 import { CustomBlockLayout } from '../shared';
 export interface CommentStackProps {
   clickHandler: ClickHandlerType;
