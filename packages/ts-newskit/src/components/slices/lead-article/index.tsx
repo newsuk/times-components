@@ -4,8 +4,8 @@ import {
   CardContent,
   CardComposable,
   Divider,
+  Image,
   MQ,
-  Image
 } from 'newskit';
 import React from 'react';
 import {
@@ -96,7 +96,7 @@ export const LeadArticle = ({
   const imageWithCorrectRatio =
     images && images.crops
       ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
-        images.crops.find(crop => crop.ratio === '3:2' || '*')
+        images.crops.find(crop => crop.ratio === '3:2') || images.crops.find(crop => crop.ratio === '*')
       : undefined;
 
   const hasImage =
@@ -124,6 +124,14 @@ export const LeadArticle = ({
     articleClickTracking(event, articleForTracking, clickHandler);
   };
 
+  const forceExternalContentRatio = (image: { url: string, ratio: string}) => {
+    console.log(image, 'IMAGE')
+    if (image.ratio === '*') { 
+      return '3:2' }
+    return image.ratio;
+  }
+
+
   return (
     <CardComposable
       areas={{
@@ -149,7 +157,7 @@ export const LeadArticle = ({
           >
             <FullWidthGridLayoutItem
               area="media"
-              ratio={imageWithCorrectRatio!.ratio}
+              ratio={imageWithCorrectRatio!.ratio!== '*' ? imageWithCorrectRatio!.ratio : forceExternalContentRatio(imageWithCorrectRatio)}
               className="lead-article-image"
               marginBlockEnd={hasCaptionOrCredits ? 'space020' : 'space000'}
             >
@@ -161,9 +169,8 @@ export const LeadArticle = ({
                   }
                   alt={(images && images.alt) || headline}
                   loadingAspectRatio={
-                    imageWithCorrectRatio && imageWithCorrectRatio.ratio
+                    imageWithCorrectRatio && imageWithCorrectRatio.ratio && forceExternalContentRatio(imageWithCorrectRatio)
                   }
-                  className="lcpItem"
                 />
               </a>
             </FullWidthGridLayoutItem>
