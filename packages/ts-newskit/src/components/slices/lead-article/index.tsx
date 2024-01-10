@@ -96,7 +96,7 @@ export const LeadArticle = ({
   const imageWithCorrectRatio =
     images && images.crops
       ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
-        images.crops.find(crop => crop.ratio === '3:2')
+        images.crops.find(crop => crop.ratio === '3:2' || '*')
       : undefined;
 
   const hasImage =
