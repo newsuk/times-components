@@ -30,22 +30,24 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
   data,
   pageLink
 }) => {
-  const clickEvent = (title: string) => ({
+  const clickEvent = (title: string, parent: string = '') => ({
     action: 'Clicked',
     object: 'ArticleSidebar',
     attrs: {
       event_navigation_action: 'navigation',
       event_navigation_browsing_method: 'click',
       event_navigation_name: `${title}`,
-      component_name: 'Article Sidebar'
+      component_name: 'Article Sidebar',
+      ...(parent && { article_parent_name: parent.toLowerCase() })
     }
   });
 
   const handleClick = (
     fireAnalyticsEvent: (evt: TrackingContext) => void,
-    title: string
+    title: string,
+    parent?: string
   ) => {
-    fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(title));
+    fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(title, parent));
   };
 
   return (
@@ -141,7 +143,8 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
                   onClick={() =>
                     handleClick(
                       fireAnalyticsEvent,
-                      'puzzle sidebar: puzzle selected'
+                      'puzzle sidebar: puzzle selected',
+                      `${title}`
                     )
                   }
                 />
