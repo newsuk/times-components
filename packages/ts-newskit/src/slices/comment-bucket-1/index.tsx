@@ -3,13 +3,12 @@ import { ClickHandlerType } from '../types';
 import { Divider, GridLayout } from 'newskit';
 import { AvatarDivider } from '../shared-styles';
 import {
-  CommentCard,
-  CommentCardProps
+  CommentCard
 } from '../../components/slices/comment-card';
 import { CustomBlockLayout } from '../shared';
 export interface CommentStackProps {
   clickHandler: ClickHandlerType;
-  data: CommentCardProps[];
+  data: any[];
 }
 
 export const CommentBucket1 = ({ data, clickHandler }: CommentStackProps) => (
