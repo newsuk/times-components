@@ -18,8 +18,8 @@ export type ListViewSliceProps = {
   itemsPerPage?: number;
   totalItems: number;
   isLoading?: boolean;
-  StickyAd: any;
-  SectionAd: any;
+  StickyAd: React.FunctionComponent;
+  SectionAd: React.FunctionComponent;
 };
 export const ListViewSlice = ({
   leadArticles,
@@ -27,6 +27,7 @@ export const ListViewSlice = ({
   currentPage,
   handlePageChange,
   itemsPerPage = 10,
+  totalItems,
   isLoading = false,
   StickyAd,
   SectionAd
@@ -44,12 +45,11 @@ export const ListViewSlice = ({
     currentPage,
     handlePageChange,
     itemsPerPage,
-    totalItems: leadArticles.length,
+    totalItems: totalItems || leadArticles.length,
     isLoading,
     StickyAd,
     SectionAd
   };
-
   return (
     <CustomBlockLayout>
       <Visible md lg xl>

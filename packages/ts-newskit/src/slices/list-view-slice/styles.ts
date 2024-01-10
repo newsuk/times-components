@@ -54,7 +54,7 @@ export const StyledAdContainer = styled(Block)`
     position: sticky;
     ${getSpacingCssFromTheme(
       (space: string) => ({ top: `${space}` }),
-      'space040'
+      'space100'
     )};
   }
 `;
