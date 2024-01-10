@@ -2,7 +2,6 @@ import React, { Fragment, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import { CanShowPuzzleSidebar } from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
-import { NewsKitProvider } from "newskit";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { StickyProvider } from "@times-components/sticky";
@@ -307,7 +306,7 @@ const ArticleSkeleton = ({
               </HeaderContainer>
               {CanShowPuzzleSidebar(section) && (
                 <SidebarWarpper>
-                  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+                  <TCThemeProvider theme={PuzzlesWebLightTheme}>
                     <PuzzlesSidebar ref={sidebarRef}>
                       <ArticleSidebar
                         pageLink="https://www.thetimes.co.uk/puzzles"
@@ -335,7 +334,7 @@ const ArticleSkeleton = ({
                         ]}
                       />
                     </PuzzlesSidebar>
-                  </NewsKitProvider>
+                  </TCThemeProvider>
                 </SidebarWarpper>
               )}
               <BodyContainer>
