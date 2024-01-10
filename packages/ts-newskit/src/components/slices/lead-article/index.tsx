@@ -237,7 +237,8 @@ export const LeadArticle = ({
         <TagAndFlag
           tag={tag}
           flag={flag}
-          byline={isListView ? byline : ''}
+          byline={byline}
+          isListView={isListView}
           marginBlockStart={tagAndFlagMarginBlockStart}
         />
         <UnorderedListItems listData={listData} clickHandler={clickHandler} />
