@@ -126,7 +126,6 @@ export const LeadArticle = ({
   };
 
   const forceExternalContentRatio = (image: { url: string; ratio: string }) => {
-    console.log(image, 'IMAGE');
     if (image.ratio === '*') {
       return '3:2';
     }
