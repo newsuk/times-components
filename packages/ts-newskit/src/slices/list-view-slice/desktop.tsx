@@ -19,7 +19,7 @@ export const ListViewSliceDesktop = ({
   SectionAd
 }: ListViewSliceProps) => {
   const modifiedLeadArticles = leadArticles
-    .slice(0, itemsPerPage)
+    .slice((currentPage - 1) * itemsPerPage, itemsPerPage * currentPage)
     .map(item => ({
       ...item,
       headlineTypographyPreset: 'editorialHeadline020',

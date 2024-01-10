@@ -21,13 +21,18 @@ export const ListViewSliceMobile = ({
   SectionAd
 }: ListViewSliceProps) => {
   const renderLoadMoreButton = currentPage * itemsPerPage < totalItems;
+  const adSlots = [Math.ceil(itemsPerPage / 2)];
+  for (let i = 1; i * itemsPerPage < totalItems; i++) {
+    const slotVal = adSlots[adSlots.length - 1];
+    adSlots.push(slotVal + itemsPerPage);
+  }
 
   return (
     <CustomBlockLayout>
       {leadArticles
-        .slice(0, itemsPerPage)
+        .slice(0, currentPage * itemsPerPage)
         .map((item: LeadArticleProps, index) => {
-          const renderAds = index + 1 === Math.ceil(itemsPerPage / 2);
+          const renderAds = adSlots.includes(index + 1);
 
           return (
             <Fragment key={item.id}>
@@ -50,7 +55,7 @@ export const ListViewSliceMobile = ({
                 />
               </StyledBlock>
               {!renderAds &&
-                index + 1 < itemsPerPage &&
+                index + 1 < itemsPerPage * currentPage &&
                 index !== leadArticles.length - 1 && (
                   <Block marginBlock="space040">
                     <Divider
