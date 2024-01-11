@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
   LeadArticle,
   LeadArticleProps
@@ -24,7 +24,7 @@ export const ArticleStack = ({
     <>
       {leadArticles.map((item: LeadArticleProps, index: number) => {
         return (
-          <>
+          <Fragment key={item.id}>
             <LeadArticle
               article={{
                 ...item,
@@ -81,7 +81,7 @@ export const ArticleStack = ({
                   </Visible>
                 )}
             </AdBlockWrapperMedium>
-          </>
+          </Fragment>
         );
       })}
     </>
