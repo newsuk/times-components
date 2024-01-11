@@ -9,11 +9,17 @@ export const navStylePresets = {
       ...navSearch,
       borderRadius: '{{sizing.sizing020}}',
       placeholderColor: '#999'
+    },
+    focus: {
+      placeholderColor: '#999'
     }
   },
   topNavSearch: {
     base: {
       ...navSearch,
+      placeholderColor: '#999'
+    },
+    focus: {
       placeholderColor: '#999'
     }
   },
