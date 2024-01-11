@@ -7,12 +7,14 @@ export const navStylePresets = {
   hamburgerSearch: {
     base: {
       ...navSearch,
-      borderRadius: '{{sizing.sizing020}}'
+      borderRadius: '{{sizing.sizing020}}',
+      placeholderColor: '#999'
     }
   },
   topNavSearch: {
     base: {
-      ...navSearch
+      ...navSearch,
+      placeholderColor: '#999'
     }
   },
   searchClear: {

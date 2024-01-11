@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { ScreenReaderOnly, IconButton, Form } from 'newskit';
+import { ScreenReaderOnly, IconButton, Form, TextField } from 'newskit';
 import { NewsKitRoundedCloseIcon, NewsKitSearchIcon } from '../../../../assets';
 import { handleSearchSubmit } from './handleSearchSubmit';
-import { StyledTextField } from '../styles';
 
 type NavSearchProps = {
   isHamburger?: boolean;
@@ -29,7 +28,7 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
       }
       role="search"
     >
-      <StyledTextField
+      <TextField
         id={isHamburger ? undefined : 'searchTimes'}
         aria-describedby="searchTimesLabel"
         value={searchText}

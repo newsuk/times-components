@@ -11,8 +11,7 @@ import {
   Drawer,
   Visible,
   MenuSub,
-  MenuItem,
-  TextField
+  MenuItem
 } from 'newskit';
 
 export const TopNavContainer = styled(Stack)`
@@ -217,21 +216,5 @@ export const StyledMenuSub = styled(MenuSub)`
 export const StyledMenuItem = styled(MenuItem)`
   &.active {
     ${getColorCssFromTheme('backgroundColor', 'interfaceNeutral010')};
-  }
-`;
-
-export const StyledTextField = styled(TextField)`
-  cursor: text;
-
-  &::-webkit-input-placeholder,
-  &::-ms-input-placeholder,
-  &::-moz-placeholder {
-    color: #a9a9a9;
-  }
-
-  &:focus-within {
-    &::, &::-ms-input-placeholder, &::-moz-placeholder {
-      color: #a9a9a9;
-    }
   }
 `;
