@@ -8,11 +8,13 @@ import { SectionAd } from '../utils/ads';
 
 const mockClickHandler = jest.fn();
 const handlePageChange = jest.fn();
+const onPageChange = jest.fn();
 
 const defaultProps = {
   leadArticles,
   clickHandler: mockClickHandler,
   handlePageChange,
+  onPageChange,
   totalItems: 11,
   StickyAd: SectionAd,
   SectionAd
@@ -32,6 +34,7 @@ describe('Render ListViewSliceDesktop', () => {
     const paginationButton = getAllByTestId('pagination-item')[1];
     fireEvent.click(paginationButton);
     expect(handlePageChange).toHaveBeenCalled();
+    expect(onPageChange).toHaveBeenCalled();
     expect(paginationButton).toBeTruthy();
   });
 });
@@ -44,6 +47,7 @@ describe('ListViewSliceDesktop pagination', () => {
     const paginationButton = getByTestId('pagination-first-item');
     fireEvent.click(paginationButton);
     expect(handlePageChange).not.toHaveBeenCalled();
+    expect(onPageChange).not.toHaveBeenCalled();
   });
   it('does not triggers when clicking previous and on first page', () => {
     const { getByTestId } = renderComponent(
@@ -78,6 +82,7 @@ describe('ListViewSliceDesktop pagination', () => {
     const paginationButton = getByTestId('pagination-next-item');
     fireEvent.click(paginationButton);
     expect(handlePageChange).toHaveBeenCalledWith(2);
+    expect(onPageChange).toHaveBeenCalled();
   });
 
   it('triggers correctly when clicking last item', () => {
@@ -87,5 +92,6 @@ describe('ListViewSliceDesktop pagination', () => {
     const paginationButton = getByTestId('pagination-last-item');
     fireEvent.click(paginationButton);
     expect(handlePageChange).toHaveBeenCalledWith(2);
+    expect(onPageChange).toHaveBeenCalled();
   });
 });

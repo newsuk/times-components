@@ -14,6 +14,7 @@ type PaginationsProps = {
   defaultPage?: number;
   currentPage: number;
   handlePageChange: (page: number) => void;
+  onPageChange?: () => void;
   isLoading?: boolean;
 };
 
@@ -23,6 +24,7 @@ export const Paginations = ({
   defaultPage = 1,
   currentPage,
   handlePageChange,
+  onPageChange,
   isLoading
 }: PaginationsProps) => {
   return (
@@ -32,6 +34,7 @@ export const Paginations = ({
       defaultPage={defaultPage}
       aria-label={`pagination-${currentPage}`}
       page={currentPage}
+      onPageChange={onPageChange}
     >
       <PaginationFirstItem
         overrides={{ stylePreset: 'interfaceBrand010' }}
@@ -60,6 +63,7 @@ export const Paginations = ({
                 onClick={(event: React.MouseEvent) => {
                   event.preventDefault();
                   pageNumber && handlePageChange(pageNumber);
+                  onPageChange && onPageChange();
                 }}
                 href={`?page=${pageNumber}`}
               >

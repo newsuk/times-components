@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.12.3](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.2...@times-components/jest-serializer@3.12.3) (2024-01-11)
+
+
+### Bug Fixes
+
+* **TMRX-1446:** remove window reference, update types and ad block ([#3709](https://github.com/newsuk/times-components/issues/3709)) ([9cf291a](https://github.com/newsuk/times-components/commit/9cf291a20ed1ff44db78823aee3a818548a7d7ae))
+
+
+
+
+
 ## [3.12.2](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.1...@times-components/jest-serializer@3.12.2) (2023-10-19)
 
 
