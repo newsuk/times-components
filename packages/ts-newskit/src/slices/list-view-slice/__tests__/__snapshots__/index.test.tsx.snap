@@ -2018,21 +2018,17 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
             </div>
           </div>
           <div
-            class="css-1sozmkk"
+            class="css-13yo7b5"
             id="inline-ad-mpu"
           >
             <div
-              class="css-y19ppi"
+              class="css-hgdps2"
             >
-              <div
-                class="css-hgdps2"
-              >
-                ADVERTISEMENT
-              </div>
-              <div
-                class="css-7ai59q"
-              />
+              ADVERTISEMENT
             </div>
+            <div
+              class="css-7ai59q"
+            />
           </div>
         </div>
         <hr
@@ -2118,7 +2114,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                     aria-label="current page, page 1"
                     class="css-1twhds8"
                     data-testid="pagination-item"
-                    href="/?page=1"
+                    href="?page=1"
                   >
                     <span
                       class="css-135wemz"
@@ -6027,21 +6023,17 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
             </div>
           </div>
           <div
-            class="css-1sozmkk"
+            class="css-13yo7b5"
             id="inline-ad-mpu"
           >
             <div
-              class="css-y19ppi"
+              class="css-hgdps2"
             >
-              <div
-                class="css-hgdps2"
-              >
-                ADVERTISEMENT
-              </div>
-              <div
-                class="css-7ai59q"
-              />
+              ADVERTISEMENT
             </div>
+            <div
+              class="css-7ai59q"
+            />
           </div>
         </div>
         <hr
@@ -6127,7 +6119,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     aria-label="current page, page 1"
                     class="css-1twhds8"
                     data-testid="pagination-item"
-                    href="/?page=1"
+                    href="?page=1"
                   >
                     <span
                       class="css-135wemz"
@@ -10036,21 +10028,17 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
             </div>
           </div>
           <div
-            class="css-1sozmkk"
+            class="css-13yo7b5"
             id="inline-ad-mpu"
           >
             <div
-              class="css-y19ppi"
+              class="css-hgdps2"
             >
-              <div
-                class="css-hgdps2"
-              >
-                ADVERTISEMENT
-              </div>
-              <div
-                class="css-7ai59q"
-              />
+              ADVERTISEMENT
             </div>
+            <div
+              class="css-7ai59q"
+            />
           </div>
         </div>
         <hr
@@ -10136,7 +10124,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     aria-label="current page, page 1"
                     class="css-1twhds8"
                     data-testid="pagination-item"
-                    href="/?page=1"
+                    href="?page=1"
                   >
                     <span
                       class="css-135wemz"
@@ -14045,21 +14033,17 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
             </div>
           </div>
           <div
-            class="css-1sozmkk"
+            class="css-13yo7b5"
             id="inline-ad-mpu"
           >
             <div
-              class="css-y19ppi"
+              class="css-hgdps2"
             >
-              <div
-                class="css-hgdps2"
-              >
-                ADVERTISEMENT
-              </div>
-              <div
-                class="css-7ai59q"
-              />
+              ADVERTISEMENT
             </div>
+            <div
+              class="css-7ai59q"
+            />
           </div>
         </div>
         <hr
@@ -14145,7 +14129,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     aria-label="current page, page 1"
                     class="css-1twhds8"
                     data-testid="pagination-item"
-                    href="/?page=1"
+                    href="?page=1"
                   >
                     <span
                       class="css-135wemz"
@@ -18054,21 +18038,17 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
             </div>
           </div>
           <div
-            class="css-1sozmkk"
+            class="css-13yo7b5"
             id="inline-ad-mpu"
           >
             <div
-              class="css-y19ppi"
+              class="css-hgdps2"
             >
-              <div
-                class="css-hgdps2"
-              >
-                ADVERTISEMENT
-              </div>
-              <div
-                class="css-7ai59q"
-              />
+              ADVERTISEMENT
             </div>
+            <div
+              class="css-7ai59q"
+            />
           </div>
         </div>
         <hr
@@ -18154,7 +18134,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     aria-label="current page, page 1"
                     class="css-1twhds8"
                     data-testid="pagination-item"
-                    href="/?page=1"
+                    href="?page=1"
                   >
                     <span
                       class="css-135wemz"
