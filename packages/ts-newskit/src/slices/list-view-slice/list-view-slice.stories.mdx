@@ -43,7 +43,8 @@ ListViewSliceStory.args = {
   args={{
     leadArticles: leadArticles.sort((a, b) => sortByDatePublished(a, b, 'dsc')),
     clickHandler: action("ClickHandler"),
-    itemsPerPage: 10,
+    itemsPerPage: 5,
+    totalItems: 10,
     handlePageChange: (page) => {
       history.pushState(
           null,
