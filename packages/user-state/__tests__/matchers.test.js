@@ -3,6 +3,7 @@ import {
   showArticleExtras,
   showTopicTags,
   showArticleSaveButton,
+  showLiveUpdateButton,
   showTokenisedEmailShare,
   showCommentingModule,
   showJoinTheConversationDialog
@@ -185,6 +186,10 @@ describe("user state should", () => {
 
   describe("showArticleSaveButton", () => {
     hasAccessLoggedInUser(showArticleSaveButton);
+  });
+
+  describe("showLiveUpdateButton", () => {
+    hasAccessLoggedInUser(showLiveUpdateButton);
   });
 
   describe("showTokenisedEmailShare", () => {

@@ -17,6 +17,7 @@ import {
   showArticleExtras,
   showTopicTags,
   showArticleSaveButton,
+  showLiveUpdateButton,
   showTokenisedEmailShare,
   showCommentingModule,
   showJoinTheConversationDialog
@@ -41,6 +42,7 @@ UserState.showSaveAndShareBar = showSaveAndShareBar;
 UserState.showArticleExtras = showArticleExtras;
 UserState.showTopicTags = showTopicTags;
 UserState.showArticleSaveButton = showArticleSaveButton;
+UserState.showLiveUpdateButton = showLiveUpdateButton;
 UserState.showTokenisedEmailShare = showTokenisedEmailShare;
 UserState.showCommentingModule = showCommentingModule;
 UserState.showJoinTheConversationDialog = showJoinTheConversationDialog;
