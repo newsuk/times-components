@@ -58,6 +58,7 @@ export const CardsContainer = ({
               scrollRef={scrollRef}
               seeAllLink={seeAllLink}
               cardRef={cardRef}
+              sectionTitle={title}
             />
           ) : null
         }
