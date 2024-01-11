@@ -68,8 +68,10 @@ export const SidebarWarpper = styled.div`
   top: 130px;
   display: none;
 
-  @media (min-width: ${breakpoints.huge}px) {
+  @media (min-width: ${breakpoints.wide}px) {
     display: block;
+  }
+  @media (min-width: ${breakpoints.huge}px) {
     top: 80px;
   }
 `;
