@@ -25,7 +25,7 @@ const LoadMoreButton: React.FC<LoadMoreButtonProps> = ({
         size="medium"
         overrides={{
           stylePreset: 'buttonOutlinedSecondary',
-          width: '375px'
+          width: '100%'
         }}
         onClick={(event: React.MouseEvent) => {
           event.preventDefault();
