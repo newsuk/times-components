@@ -22,6 +22,7 @@ function mockUserState() {
         RealUserState.showArticleExtras,
         RealUserState.showTopicTags,
         RealUserState.showArticleSaveButton,
+        RealUserState.showLiveUpdateButton,
         RealUserState.showTokenisedEmailShare,
         RealUserState.showCommentingModule
       ];

@@ -6,7 +6,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
     class="nk-menu-item css-1kdinep"
   >
     <a
-      class="css-1ux7vti"
+      class="css-1uxjo1o"
       data-testid="buttonLink"
       href="/main-menu-1"
       id="vertical-main-menu-1"
@@ -34,7 +34,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <button
       aria-expanded="false"
-      class="css-1pi7wg9"
+      class="css-qwae75"
       data-testid="menu-sub-button"
       id="vertical-main-menu-2"
       type="button"
@@ -68,7 +68,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
         class="nk-menu-item css-1kdinep"
       >
         <a
-          class="css-qveg5m"
+          class="css-1ckyilr"
           data-testid="buttonLink"
           href="/item-1"
           id="vertical-sub-item-1"
@@ -95,7 +95,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
         class="nk-menu-item css-1kdinep"
       >
         <a
-          class="css-qveg5m"
+          class="css-1ckyilr"
           data-testid="buttonLink"
           href="/item-2"
           id="vertical-sub-item-2"
@@ -136,7 +136,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <button
       aria-expanded="false"
-      class="css-1pi7wg9"
+      class="css-qwae75"
       data-testid="menu-sub-button"
       id="vertical-main-menu-3"
       type="button"
@@ -170,7 +170,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
         class="nk-menu-item css-1kdinep"
       >
         <a
-          class="css-qveg5m"
+          class="css-1ckyilr"
           data-testid="buttonLink"
           href="/item-1"
           id="vertical-sub-item-1"
@@ -197,7 +197,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
         class="nk-menu-item css-1kdinep"
       >
         <a
-          class="css-qveg5m"
+          class="css-1ckyilr"
           data-testid="buttonLink"
           href="/menu-3-item-2"
           id="vertical-sub-menu-3-item-2"
@@ -206,6 +206,108 @@ exports[`NavigationList renders the component with nested items 1`] = `
             class="css-t9dmcw"
           >
             Menu 3 Item 2
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="css-1uftliw"
+        role="separator"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-1udfuyx"
+          data-testid="divider"
+        />
+      </li>
+    </ul>
+  </li>
+  <li
+    aria-hidden="true"
+    class="css-1uftliw"
+    role="separator"
+  >
+    <hr
+      aria-hidden="true"
+      class="css-1udfuyx"
+      data-testid="divider"
+    />
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <button
+      aria-expanded="false"
+      class="css-qwae75"
+      data-testid="menu-sub-button"
+      id="vertical-main-menu-4"
+      type="button"
+    >
+      <span
+        class="css-t9dmcw"
+      >
+        Main Menu 4
+      </span>
+      <svg
+        aria-hidden="true"
+        class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
+    </button>
+    <ul
+      class="css-8n1fik"
+    >
+      <li
+        class="nk-menu-item css-1kdinep"
+      >
+        <a
+          class="css-1ckyilr"
+          data-testid="buttonLink"
+          href="/main-menu-4"
+          id="vertical-sub-top-stories-main-menu-4"
+        >
+          <span
+            class="css-t9dmcw"
+          >
+            Top Stories Hello World
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="css-1uftliw"
+        role="separator"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-1udfuyx"
+          data-testid="divider"
+        />
+      </li>
+      <li
+        class="nk-menu-item css-1kdinep"
+      >
+        <a
+          class="css-1ckyilr"
+          data-testid="buttonLink"
+          href="/nested-l1"
+          id="vertical-sub-nested-l1"
+        >
+          <span
+            class="css-t9dmcw"
+          >
+            nested l1 item
           </span>
         </a>
       </li>
@@ -242,7 +344,7 @@ exports[`NavigationList renders the component without nested items 1`] = `
     class="nk-menu-item css-1kdinep"
   >
     <a
-      class="css-1ux7vti"
+      class="css-1uxjo1o"
       data-testid="buttonLink"
       href="/account-menu-1"
       id="vertical-account-menu-1"
@@ -269,7 +371,7 @@ exports[`NavigationList renders the component without nested items 1`] = `
     class="nk-menu-item css-1kdinep"
   >
     <a
-      class="css-1ux7vti"
+      class="css-1uxjo1o"
       data-testid="buttonLink"
       href="/account-menu-2"
       id="vertical-account-menu-2"

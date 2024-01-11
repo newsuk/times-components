@@ -51,6 +51,11 @@ export const StyledAdContainer = styled(Block)`
   }
   ${getMediaQueryFromTheme('lg')} {
     display: inline;
+    position: sticky;
+    ${getSpacingCssFromTheme(
+      (space: string) => ({ top: `${space}` }),
+      'space100'
+    )};
   }
 `;
 
@@ -72,14 +77,6 @@ export const StyledAdBlock = styled(Block)`
 export const StyledDateText = styled(TextBlock)`
   white-space: nowrap;
   width: 109px;
-`;
-
-export const AdBlockWrapperLargeAndAbove = styled(Block)`
-  position: fixed;
-  ${getSpacingCssFromTheme(
-    (space: string) => ({ top: `${space}` }),
-    'space040'
-  )};
 `;
 
 export const AdBlockWrapperMedium = styled(Block)`
