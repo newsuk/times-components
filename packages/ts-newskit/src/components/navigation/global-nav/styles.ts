@@ -218,3 +218,58 @@ export const StyledMenuItem = styled(MenuItem)`
     ${getColorCssFromTheme('backgroundColor', 'interfaceNeutral010')};
   }
 `;
+
+export const StyledMoreMenuSub = styled(MenuSub)<{
+  $showMoreMD: boolean;
+  $showMoreLG: boolean;
+  $showMoreXL: boolean;
+}>`
+  display: none;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $showMoreMD }) => $showMoreMD && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $showMoreLG }) => $showMoreLG && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $showMoreXL }) => $showMoreXL && `display: flex`};
+  }
+`;
+
+export const StyledMenuItemsDropdown = styled(MenuItem)<{
+  $showMD?: boolean;
+  $showLG?: boolean;
+  $showXL?: boolean;
+}>`
+  min-width: max-content;
+  display: none;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $showMD }) => $showMD && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $showLG }) => $showLG && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $showXL }) => $showXL && `display: flex`};
+  }
+`;
+
+export const StyledVisibleMenuItems = styled(MenuItem)<{
+  $hideMD?: boolean;
+  $hideLG?: boolean;
+  $hideXL?: boolean;
+}>`
+  min-width: max-content;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $hideMD }) => $hideMD && `display: none`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $hideLG }) => $hideLG && `display: none`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $hideXL }) => $hideXL && `display: none`};
+  }
+`;
