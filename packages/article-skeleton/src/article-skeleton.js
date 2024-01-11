@@ -96,7 +96,7 @@ const ArticleSkeleton = ({
     const sidebarNode = sidebarRef.current;
     if (sidebarNode) {
       const adElements = document.querySelectorAll(
-        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
+        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2, .styles__Container-kqn9c8-0 jmmsXr"
       );
       const relatedArticlesIds = [
         "related-articles",
@@ -145,7 +145,7 @@ const ArticleSkeleton = ({
   useEffect(() => {
     const sidebarNode = sidebarRef.current;
     if (sidebarNode) {
-      sidebarNode.style.transition = "opacity 0.5s ease";
+      sidebarNode.style.transition = "opacity 0.2s ease";
     }
 
     handleScroll();

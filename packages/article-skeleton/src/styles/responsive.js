@@ -65,11 +65,12 @@ export const UpdateButtonContainer = styled.div`
 
 export const SidebarWarpper = styled.div`
   position: sticky;
-  top: 80px;
+  top: 130px;
   display: none;
 
   @media (min-width: ${breakpoints.wide}px) {
     display: block;
+    top: 80px;
   }
 `;
 
