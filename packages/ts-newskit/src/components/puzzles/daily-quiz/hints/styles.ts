@@ -8,7 +8,7 @@ export const HintContainerBlock = styled(Block)`
   display: flex;
   flex-wrap: wrap-reverse;
 
-  &> div {
+  & > div {
     width: 100%;
   }
 `;

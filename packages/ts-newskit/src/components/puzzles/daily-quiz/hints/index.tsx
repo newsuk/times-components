@@ -36,8 +36,7 @@ export const HintDisplay: FC<HintDisplayProps> = ({ hints, totalHints }) => {
             </StyledTextBlock>
           </Block>
         </React.Fragment>
-      ))
-      }
-    </HintContainerBlock >
+      ))}
+    </HintContainerBlock>
   );
 };
