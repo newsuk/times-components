@@ -41,6 +41,7 @@ export interface LeadArticleProps {
     label: string;
     href: string;
   };
+  isListView?: boolean;
   imageTop?: boolean;
   isLeadImage?: boolean;
   byline?: string;
@@ -79,6 +80,7 @@ export const LeadArticle = ({
     imageTop,
     hasTopBorder = true,
     contentTop,
+    isListView,
     contentWidth,
     isLeadImage,
     columnGap,
@@ -105,6 +107,7 @@ export const LeadArticle = ({
     imageWithCorrectRatio.url !== '';
 
   const hasCaption = !!(images && images.caption);
+
   const hasCredits = !!(images && images.credits);
 
   const hasCaptionOrCredits = hasCaption || hasCredits;
@@ -235,6 +238,7 @@ export const LeadArticle = ({
           tag={tag}
           flag={flag}
           byline={byline}
+          isListView={isListView}
           marginBlockStart={tagAndFlagMarginBlockStart}
         />
         <UnorderedListItems listData={listData} clickHandler={clickHandler} />

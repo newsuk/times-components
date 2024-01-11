@@ -22,7 +22,8 @@ export const TagAndFlag = ({
   flagOverrides,
   tag,
   marginBlockStart = 'space000',
-  byline
+  byline,
+  isListView
 }: TagAndFlagProps) => {
   const hasTag = tag && tag.label;
   const hasFlag = flag && flag !== '';
@@ -52,25 +53,26 @@ export const TagAndFlag = ({
           </TagAndFlagWrapper>
         )}
 
-      {byline && (
-        <TagAndFlagWrapper>
-          <TextBlock
-            typographyPreset={
-              flagOverrides && flagOverrides.typographyPreset
-                ? flagOverrides.typographyPreset
-                : { xs: 'utilityButton010', md: 'utilityButton005' }
-            }
-            stylePreset={
-              flagOverrides && flagOverrides.stylePreset
-                ? flagOverrides.stylePreset
-                : { xs: 'inkNonEssential', md: 'inkSubtle' }
-            }
-            as="span"
-          >
-            {byline}
-          </TextBlock>
-        </TagAndFlagWrapper>
-      )}
+      {isListView &&
+        byline && (
+          <TagAndFlagWrapper>
+            <TextBlock
+              typographyPreset={
+                flagOverrides && flagOverrides.typographyPreset
+                  ? flagOverrides.typographyPreset
+                  : { xs: 'utilityButton010', md: 'utilityButton005' }
+              }
+              stylePreset={
+                flagOverrides && flagOverrides.stylePreset
+                  ? flagOverrides.stylePreset
+                  : { xs: 'inkNonEssential', md: 'inkSubtle' }
+              }
+              as="span"
+            >
+              {byline}
+            </TextBlock>
+          </TagAndFlagWrapper>
+        )}
 
       {flag && (
         <TagAndFlagWrapper>
