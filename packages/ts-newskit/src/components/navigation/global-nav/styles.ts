@@ -23,15 +23,6 @@ export const TopNavContainer = styled(Stack)`
     height: 50px;
   }
   z-index: 1;
-
-  ${getMediaQueryFromTheme('lg', 'xl')} {
-    & nav[aria-label='Main menu'] > ul > li {
-      display: none;
-    }
-    & nav[aria-label='Main menu'] > ul > li:nth-child(-n + 4) {
-      display: block;
-    }
-  }
 `;
 
 export const TopNavHide = styled(Hidden)`

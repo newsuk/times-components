@@ -4,7 +4,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-1jefh8t"
+    class="css-cfp6i5"
   >
     <div
       class="css-1ycac6s"
@@ -188,12 +188,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 <a
                   class="css-96mx00"
                   data-testid="buttonLink"
-                  href="/news"
+                  href="/uk"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    News
+                    UK
                   </span>
                 </a>
               </li>
@@ -202,6 +202,21 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
               >
                 <a
                   class="css-96mx00"
+                  data-testid="buttonLink"
+                  href="/world"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    World
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1i1v9fb"
+              >
+                <a
+                  class="css-hlvcfu"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -218,7 +233,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 <a
                   class="css-hlvcfu"
                   data-testid="buttonLink"
-                  href="/life-and-style"
+                  href="/life-style"
                 >
                   <span
                     class="css-1pur78d"
@@ -233,12 +248,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 <a
                   class="css-1g00gfz"
                   data-testid="buttonLink"
-                  href="/arts-and-books"
+                  href="/culture-books"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    Arts & Books
+                    Culture & Books
                   </span>
                 </a>
               </li>
@@ -247,6 +262,21 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
               >
                 <a
                   class="css-1g00gfz"
+                  data-testid="buttonLink"
+                  href="/business-money"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    Business and Money
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1i1v9fb"
+              >
+                <a
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -261,22 +291,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1g00gfz"
-                  data-testid="buttonLink"
-                  href="/business-and-money"
-                >
-                  <span
-                    class="css-1pur78d"
-                  >
-                    Business & Money
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nk-menu-item css-1i1v9fb"
-              >
-                <a
-                  class="css-1g00gfz"
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -366,12 +381,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         <a
                           class="css-1s8t5vg"
                           data-testid="more-menu-item"
-                          href="/news"
+                          href="/uk"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            News
+                            UK
                           </span>
                         </a>
                       </li>
@@ -380,6 +395,21 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                       >
                         <a
                           class="css-1s8t5vg"
+                          data-testid="more-menu-item"
+                          href="/world"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            World
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-8rhp0r"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -396,7 +426,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         <a
                           class="css-8rhp0r"
                           data-testid="more-menu-item"
-                          href="/life-and-style"
+                          href="/life-style"
                         >
                           <span
                             class="css-1pur78d"
@@ -411,12 +441,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         <a
                           class="css-1j8amn0"
                           data-testid="more-menu-item"
-                          href="/arts-and-books"
+                          href="/culture-books"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            Arts & Books
+                            Culture & Books
                           </span>
                         </a>
                       </li>
@@ -425,6 +455,21 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                       >
                         <a
                           class="css-1j8amn0"
+                          data-testid="more-menu-item"
+                          href="/business-money"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            Business and Money
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -439,22 +484,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1j8amn0"
-                          data-testid="more-menu-item"
-                          href="/business-and-money"
-                        >
-                          <span
-                            class="css-1pur78d"
-                          >
-                            Business & Money
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item css-1kdinep"
-                      >
-                        <a
-                          class="css-1j8amn0"
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -817,12 +847,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 <a
                   class="css-96mx00"
                   data-testid="buttonLink"
-                  href="/news"
+                  href="/uk"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    News
+                    UK
                   </span>
                 </a>
               </li>
@@ -831,6 +861,21 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
               >
                 <a
                   class="css-96mx00"
+                  data-testid="buttonLink"
+                  href="/world"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    World
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1iaj8wm"
+              >
+                <a
+                  class="css-hlvcfu"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -847,7 +892,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 <a
                   class="css-hlvcfu"
                   data-testid="buttonLink"
-                  href="/life-and-style"
+                  href="/life-style"
                 >
                   <span
                     class="css-1pur78d"
@@ -862,12 +907,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 <a
                   class="css-1g00gfz"
                   data-testid="buttonLink"
-                  href="/arts-and-books"
+                  href="/culture-books"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    Arts & Books
+                    Culture & Books
                   </span>
                 </a>
               </li>
@@ -876,6 +921,21 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
               >
                 <a
                   class="css-1g00gfz"
+                  data-testid="buttonLink"
+                  href="/business-money"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    Business and Money
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1iaj8wm"
+              >
+                <a
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -890,22 +950,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1g00gfz"
-                  data-testid="buttonLink"
-                  href="/business-and-money"
-                >
-                  <span
-                    class="css-1pur78d"
-                  >
-                    Business & Money
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nk-menu-item css-1iaj8wm"
-              >
-                <a
-                  class="css-1g00gfz"
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -995,12 +1040,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         <a
                           class="css-1s8t5vg"
                           data-testid="more-menu-item"
-                          href="/news"
+                          href="/uk"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            News
+                            UK
                           </span>
                         </a>
                       </li>
@@ -1009,6 +1054,21 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                       >
                         <a
                           class="css-1s8t5vg"
+                          data-testid="more-menu-item"
+                          href="/world"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            World
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-8rhp0r"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -1025,7 +1085,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         <a
                           class="css-8rhp0r"
                           data-testid="more-menu-item"
-                          href="/life-and-style"
+                          href="/life-style"
                         >
                           <span
                             class="css-1pur78d"
@@ -1040,12 +1100,12 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         <a
                           class="css-1j8amn0"
                           data-testid="more-menu-item"
-                          href="/arts-and-books"
+                          href="/culture-books"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            Arts & Books
+                            Culture & Books
                           </span>
                         </a>
                       </li>
@@ -1054,6 +1114,21 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                       >
                         <a
                           class="css-1j8amn0"
+                          data-testid="more-menu-item"
+                          href="/business-money"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            Business and Money
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -1068,22 +1143,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1j8amn0"
-                          data-testid="more-menu-item"
-                          href="/business-and-money"
-                        >
-                          <span
-                            class="css-1pur78d"
-                          >
-                            Business & Money
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item css-1kdinep"
-                      >
-                        <a
-                          class="css-1j8amn0"
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -1131,7 +1191,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-1jefh8t"
+    class="css-cfp6i5"
   >
     <div
       class="css-1ycac6s"
@@ -1315,12 +1375,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 <a
                   class="css-96mx00"
                   data-testid="buttonLink"
-                  href="/news"
+                  href="/uk"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    News
+                    UK
                   </span>
                 </a>
               </li>
@@ -1329,6 +1389,21 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
               >
                 <a
                   class="css-96mx00"
+                  data-testid="buttonLink"
+                  href="/world"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    World
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1i1v9fb"
+              >
+                <a
+                  class="css-hlvcfu"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -1345,7 +1420,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 <a
                   class="css-hlvcfu"
                   data-testid="buttonLink"
-                  href="/life-and-style"
+                  href="/life-style"
                 >
                   <span
                     class="css-1pur78d"
@@ -1360,12 +1435,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 <a
                   class="css-1g00gfz"
                   data-testid="buttonLink"
-                  href="/arts-and-books"
+                  href="/culture-books"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    Arts & Books
+                    Culture & Books
                   </span>
                 </a>
               </li>
@@ -1374,6 +1449,21 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
               >
                 <a
                   class="css-1g00gfz"
+                  data-testid="buttonLink"
+                  href="/business-money"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    Business and Money
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1i1v9fb"
+              >
+                <a
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -1388,22 +1478,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1g00gfz"
-                  data-testid="buttonLink"
-                  href="/business-and-money"
-                >
-                  <span
-                    class="css-1pur78d"
-                  >
-                    Business & Money
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nk-menu-item css-1i1v9fb"
-              >
-                <a
-                  class="css-1g00gfz"
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -1493,12 +1568,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         <a
                           class="css-1s8t5vg"
                           data-testid="more-menu-item"
-                          href="/news"
+                          href="/uk"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            News
+                            UK
                           </span>
                         </a>
                       </li>
@@ -1507,6 +1582,21 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                       >
                         <a
                           class="css-1s8t5vg"
+                          data-testid="more-menu-item"
+                          href="/world"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            World
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-8rhp0r"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -1523,7 +1613,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         <a
                           class="css-8rhp0r"
                           data-testid="more-menu-item"
-                          href="/life-and-style"
+                          href="/life-style"
                         >
                           <span
                             class="css-1pur78d"
@@ -1538,12 +1628,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         <a
                           class="css-1j8amn0"
                           data-testid="more-menu-item"
-                          href="/arts-and-books"
+                          href="/culture-books"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            Arts & Books
+                            Culture & Books
                           </span>
                         </a>
                       </li>
@@ -1552,6 +1642,21 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                       >
                         <a
                           class="css-1j8amn0"
+                          data-testid="more-menu-item"
+                          href="/business-money"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            Business and Money
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -1566,22 +1671,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1j8amn0"
-                          data-testid="more-menu-item"
-                          href="/business-and-money"
-                        >
-                          <span
-                            class="css-1pur78d"
-                          >
-                            Business & Money
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item css-1kdinep"
-                      >
-                        <a
-                          class="css-1j8amn0"
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -1857,12 +1947,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 <a
                   class="css-96mx00"
                   data-testid="buttonLink"
-                  href="/news"
+                  href="/uk"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    News
+                    UK
                   </span>
                 </a>
               </li>
@@ -1871,6 +1961,21 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
               >
                 <a
                   class="css-96mx00"
+                  data-testid="buttonLink"
+                  href="/world"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    World
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1iaj8wm"
+              >
+                <a
+                  class="css-hlvcfu"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -1887,7 +1992,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 <a
                   class="css-hlvcfu"
                   data-testid="buttonLink"
-                  href="/life-and-style"
+                  href="/life-style"
                 >
                   <span
                     class="css-1pur78d"
@@ -1902,12 +2007,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 <a
                   class="css-1g00gfz"
                   data-testid="buttonLink"
-                  href="/arts-and-books"
+                  href="/culture-books"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    Arts & Books
+                    Culture & Books
                   </span>
                 </a>
               </li>
@@ -1916,6 +2021,21 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
               >
                 <a
                   class="css-1g00gfz"
+                  data-testid="buttonLink"
+                  href="/business-money"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    Business and Money
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1iaj8wm"
+              >
+                <a
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -1930,22 +2050,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1g00gfz"
-                  data-testid="buttonLink"
-                  href="/business-and-money"
-                >
-                  <span
-                    class="css-1pur78d"
-                  >
-                    Business & Money
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nk-menu-item css-1iaj8wm"
-              >
-                <a
-                  class="css-1g00gfz"
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -2035,12 +2140,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         <a
                           class="css-1s8t5vg"
                           data-testid="more-menu-item"
-                          href="/news"
+                          href="/uk"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            News
+                            UK
                           </span>
                         </a>
                       </li>
@@ -2049,6 +2154,21 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                       >
                         <a
                           class="css-1s8t5vg"
+                          data-testid="more-menu-item"
+                          href="/world"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            World
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-8rhp0r"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -2065,7 +2185,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         <a
                           class="css-8rhp0r"
                           data-testid="more-menu-item"
-                          href="/life-and-style"
+                          href="/life-style"
                         >
                           <span
                             class="css-1pur78d"
@@ -2080,12 +2200,12 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         <a
                           class="css-1j8amn0"
                           data-testid="more-menu-item"
-                          href="/arts-and-books"
+                          href="/culture-books"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            Arts & Books
+                            Culture & Books
                           </span>
                         </a>
                       </li>
@@ -2094,6 +2214,21 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                       >
                         <a
                           class="css-1j8amn0"
+                          data-testid="more-menu-item"
+                          href="/business-money"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            Business and Money
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -2108,22 +2243,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1j8amn0"
-                          data-testid="more-menu-item"
-                          href="/business-and-money"
-                        >
-                          <span
-                            class="css-1pur78d"
-                          >
-                            Business & Money
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item css-1kdinep"
-                      >
-                        <a
-                          class="css-1j8amn0"
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -2171,7 +2291,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-1jefh8t"
+    class="css-cfp6i5"
   >
     <div
       class="css-1ycac6s"
@@ -2345,12 +2465,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 <a
                   class="css-96mx00"
                   data-testid="buttonLink"
-                  href="/news"
+                  href="/uk"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    News
+                    UK
                   </span>
                 </a>
               </li>
@@ -2359,6 +2479,21 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
               >
                 <a
                   class="css-96mx00"
+                  data-testid="buttonLink"
+                  href="/world"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    World
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1i1v9fb"
+              >
+                <a
+                  class="css-hlvcfu"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -2375,7 +2510,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 <a
                   class="css-hlvcfu"
                   data-testid="buttonLink"
-                  href="/life-and-style"
+                  href="/life-style"
                 >
                   <span
                     class="css-1pur78d"
@@ -2390,12 +2525,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 <a
                   class="css-1g00gfz"
                   data-testid="buttonLink"
-                  href="/arts-and-books"
+                  href="/culture-books"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    Arts & Books
+                    Culture & Books
                   </span>
                 </a>
               </li>
@@ -2404,6 +2539,21 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
               >
                 <a
                   class="css-1g00gfz"
+                  data-testid="buttonLink"
+                  href="/business-money"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    Business and Money
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1i1v9fb"
+              >
+                <a
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -2418,22 +2568,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1g00gfz"
-                  data-testid="buttonLink"
-                  href="/business-and-money"
-                >
-                  <span
-                    class="css-1pur78d"
-                  >
-                    Business & Money
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nk-menu-item css-1i1v9fb"
-              >
-                <a
-                  class="css-1g00gfz"
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -2523,12 +2658,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         <a
                           class="css-1s8t5vg"
                           data-testid="more-menu-item"
-                          href="/news"
+                          href="/uk"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            News
+                            UK
                           </span>
                         </a>
                       </li>
@@ -2537,6 +2672,21 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                       >
                         <a
                           class="css-1s8t5vg"
+                          data-testid="more-menu-item"
+                          href="/world"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            World
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-8rhp0r"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -2553,7 +2703,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         <a
                           class="css-8rhp0r"
                           data-testid="more-menu-item"
-                          href="/life-and-style"
+                          href="/life-style"
                         >
                           <span
                             class="css-1pur78d"
@@ -2568,12 +2718,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         <a
                           class="css-1j8amn0"
                           data-testid="more-menu-item"
-                          href="/arts-and-books"
+                          href="/culture-books"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            Arts & Books
+                            Culture & Books
                           </span>
                         </a>
                       </li>
@@ -2582,6 +2732,21 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                       >
                         <a
                           class="css-1j8amn0"
+                          data-testid="more-menu-item"
+                          href="/business-money"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            Business and Money
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -2596,22 +2761,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1j8amn0"
-                          data-testid="more-menu-item"
-                          href="/business-and-money"
-                        >
-                          <span
-                            class="css-1pur78d"
-                          >
-                            Business & Money
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item css-1kdinep"
-                      >
-                        <a
-                          class="css-1j8amn0"
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -2964,12 +3114,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 <a
                   class="css-96mx00"
                   data-testid="buttonLink"
-                  href="/news"
+                  href="/uk"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    News
+                    UK
                   </span>
                 </a>
               </li>
@@ -2978,6 +3128,21 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
               >
                 <a
                   class="css-96mx00"
+                  data-testid="buttonLink"
+                  href="/world"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    World
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1iaj8wm"
+              >
+                <a
+                  class="css-hlvcfu"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -2994,7 +3159,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 <a
                   class="css-hlvcfu"
                   data-testid="buttonLink"
-                  href="/life-and-style"
+                  href="/life-style"
                 >
                   <span
                     class="css-1pur78d"
@@ -3009,12 +3174,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 <a
                   class="css-1g00gfz"
                   data-testid="buttonLink"
-                  href="/arts-and-books"
+                  href="/culture-books"
                 >
                   <span
                     class="css-1pur78d"
                   >
-                    Arts & Books
+                    Culture & Books
                   </span>
                 </a>
               </li>
@@ -3023,6 +3188,21 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
               >
                 <a
                   class="css-1g00gfz"
+                  data-testid="buttonLink"
+                  href="/business-money"
+                >
+                  <span
+                    class="css-1pur78d"
+                  >
+                    Business and Money
+                  </span>
+                </a>
+              </li>
+              <li
+                class="nk-menu-item css-1iaj8wm"
+              >
+                <a
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -3037,22 +3217,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1g00gfz"
-                  data-testid="buttonLink"
-                  href="/business-and-money"
-                >
-                  <span
-                    class="css-1pur78d"
-                  >
-                    Business & Money
-                  </span>
-                </a>
-              </li>
-              <li
-                class="nk-menu-item css-1iaj8wm"
-              >
-                <a
-                  class="css-1g00gfz"
+                  class="css-1b5dl97"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -3142,12 +3307,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         <a
                           class="css-1s8t5vg"
                           data-testid="more-menu-item"
-                          href="/news"
+                          href="/uk"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            News
+                            UK
                           </span>
                         </a>
                       </li>
@@ -3156,6 +3321,21 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                       >
                         <a
                           class="css-1s8t5vg"
+                          data-testid="more-menu-item"
+                          href="/world"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            World
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-8rhp0r"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -3172,7 +3352,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         <a
                           class="css-8rhp0r"
                           data-testid="more-menu-item"
-                          href="/life-and-style"
+                          href="/life-style"
                         >
                           <span
                             class="css-1pur78d"
@@ -3187,12 +3367,12 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         <a
                           class="css-1j8amn0"
                           data-testid="more-menu-item"
-                          href="/arts-and-books"
+                          href="/culture-books"
                         >
                           <span
                             class="css-1pur78d"
                           >
-                            Arts & Books
+                            Culture & Books
                           </span>
                         </a>
                       </li>
@@ -3201,6 +3381,21 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                       >
                         <a
                           class="css-1j8amn0"
+                          data-testid="more-menu-item"
+                          href="/business-money"
+                        >
+                          <span
+                            class="css-1pur78d"
+                          >
+                            Business and Money
+                          </span>
+                        </a>
+                      </li>
+                      <li
+                        class="nk-menu-item css-1kdinep"
+                      >
+                        <a
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -3215,22 +3410,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1j8amn0"
-                          data-testid="more-menu-item"
-                          href="/business-and-money"
-                        >
-                          <span
-                            class="css-1pur78d"
-                          >
-                            Business & Money
-                          </span>
-                        </a>
-                      </li>
-                      <li
-                        class="nk-menu-item css-1kdinep"
-                      >
-                        <a
-                          class="css-1j8amn0"
+                          class="css-1ancif"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
