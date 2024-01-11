@@ -9,7 +9,6 @@ describe('Section Header', () => {
     const { asFragment } = render(<SectionHeader>News</SectionHeader>);
     expect(asFragment()).toMatchSnapshot();
   });
-
   it('should render Section Header text correctly', () => {
     const { getByText } = render(<SectionHeader>Business</SectionHeader>);
     expect(getByText('Business')).toBeVisible();
