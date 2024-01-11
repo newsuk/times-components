@@ -72,7 +72,13 @@ const NavigationList: React.FC<{
                 onClick={() => handleItemClick(item.slug, item.title)}
                 overrides={{
                   stylePreset: 'menuItemL1',
-                  typographyPreset: 'newPreset040'
+                  typographyPreset: 'newPreset040',
+                  transitionPreset: {
+                    extend: 'backgroundColorChange',
+                    base: {
+                      transitionDuration: '100ms'
+                    }
+                  }
                 }}
               >
                 {item.items.map(({ slug, title, url }) => (
@@ -84,7 +90,13 @@ const NavigationList: React.FC<{
                       overrides={{
                         paddingInlineStart: 'space060',
                         stylePreset: 'menuItemL2',
-                        typographyPreset: 'newPreset040'
+                        typographyPreset: 'newPreset040',
+                        transitionPreset: {
+                          extend: 'backgroundColorChange',
+                          base: {
+                            transitionDuration: '100ms'
+                          }
+                        }
                       }}
                       onClick={() => clickHandler(title)}
                     >
@@ -104,7 +116,13 @@ const NavigationList: React.FC<{
                 id={`vertical-${item.slug}`}
                 overrides={{
                   stylePreset: 'menuItemL1',
-                  typographyPreset: 'newPreset040'
+                  typographyPreset: 'newPreset040',
+                  transitionPreset: {
+                    extend: 'backgroundColorChange',
+                    base: {
+                      transitionDuration: '100ms'
+                    }
+                  }
                 }}
                 onClick={() => clickHandler(item.title)}
               >
