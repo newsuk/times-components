@@ -21,12 +21,12 @@ This takes in a `title` prop, as below, to display the correct text for the asso
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review and configure with different titles.
 
-export const SectionHeaderStory = ({ title }) => (
+export const SectionHeaderStory = ({ children }) => (
   <TCThemeProvider>
-    <SectionHeader {...{ title }} />
+    <SectionHeader {...{ children }} />
   </TCThemeProvider>
 );
 
-<Story name="SectionHeader" args={{ title: 'Section Title' }}>
+<Story name="SectionHeader" args={{ children: 'Business & Money' }}>
   {SectionHeaderStory.bind({})}
 </Story>
