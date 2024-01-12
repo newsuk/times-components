@@ -31,6 +31,9 @@ export const showTopicTags = userState =>
 export const showArticleSaveButton = userState =>
   hasAccessLoggedInUser(userState);
 
+export const showLiveUpdateButton = userState =>
+  hasAccessLoggedInUser(userState);
+
 export const showTokenisedEmailShare = userState =>
   hasAccessLoggedInNonMeteredUser(userState);
 

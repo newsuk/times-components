@@ -1,12 +1,7 @@
 import React, { Fragment } from 'react';
 import { Divider, Block, Stack } from 'newskit';
 import { ArticleStack } from './article-stack';
-import {
-  StyledMainDivider,
-  StyledAdContainer,
-  StyledDateText,
-  AdBlockWrapperLargeAndAbove
-} from './styles';
+import { StyledMainDivider, StyledAdContainer, StyledDateText } from './styles';
 import { convertDateToMonth } from '../../utils/date-formatting';
 import { groupArticlesByDate } from './utils';
 import { Paginations } from './pagination';
@@ -17,6 +12,7 @@ export const ListViewSliceDesktop = ({
   clickHandler,
   currentPage = 1,
   handlePageChange,
+  onPageChange,
   itemsPerPage = 10,
   totalItems,
   isLoading,
@@ -24,7 +20,7 @@ export const ListViewSliceDesktop = ({
   SectionAd
 }: ListViewSliceProps) => {
   const modifiedLeadArticles = leadArticles
-    .slice(0, itemsPerPage)
+    .slice((currentPage - 1) * itemsPerPage, itemsPerPage * currentPage)
     .map(item => ({
       ...item,
       headlineTypographyPreset: 'editorialHeadline020',
@@ -45,7 +41,7 @@ export const ListViewSliceDesktop = ({
         <Block>
           {arrayOfArrays.map((arrayOfArray, index) => {
             return (
-              <Fragment>
+              <Fragment key={arrayOfArray[0].id}>
                 <StyledMainDivider>
                   {index > 0 && (
                     <Block marginBlock="space040">
@@ -85,9 +81,7 @@ export const ListViewSliceDesktop = ({
           marginInlineStart={{ lg: 'space060', xl: 'space100' }}
           id="inline-ad-mpu"
         >
-          <AdBlockWrapperLargeAndAbove>
-            <StickyAd />
-          </AdBlockWrapperLargeAndAbove>
+          <StickyAd />
         </StyledAdContainer>
       </Stack>
       <Divider
@@ -106,6 +100,7 @@ export const ListViewSliceDesktop = ({
           pageSize={itemsPerPage}
           currentPage={currentPage}
           handlePageChange={handlePageChange}
+          onPageChange={onPageChange}
           isLoading={isLoading}
         />
       </Stack>
