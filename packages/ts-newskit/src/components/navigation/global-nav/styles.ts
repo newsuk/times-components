@@ -11,7 +11,8 @@ import {
   Drawer,
   Visible,
   MenuSub,
-  MenuItem
+  MenuItem,
+  TextField
 } from 'newskit';
 
 export const TopNavContainer = styled(Stack)`
@@ -262,5 +263,29 @@ export const StyledVisibleMenuItems = styled(MenuItem)<{
   }
   ${getMediaQueryFromTheme('xl')} {
     ${({ $hideXL }) => $hideXL && `display: none`};
+  `;
+
+export const StyledTextField = styled(TextField)`
+  cursor: text;
+  &::-webkit-input-placeholder {
+    color: #999;
+  }
+  &::-ms-input-placeholder {
+    color: #999;
+  }
+  &::-moz-placeholder {
+    color: #999;
+  }
+
+  &:focus-within {
+    &::-webkit-input-placeholder {
+      color: #999;
+    }
+    &::-ms-input-placeholder {
+      color: #999;
+    }
+    &::-moz-placeholder {
+      color: #999;
+    }
   }
 `;
