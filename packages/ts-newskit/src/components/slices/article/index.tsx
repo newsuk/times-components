@@ -86,8 +86,8 @@ export const Article = ({
 
   const imageWithCorrectRatio =
     images &&
-    images.crops &&
-    images.crops.find(crop => crop.ratio === '3:2' || crop.ratio === '*');
+    images.crops ?
+    (images.crops.find(crop => crop.ratio === '3:2') || images.crops.find(crop => crop.ratio === '*')): undefined;
 
   const hasCaption = !!(images && images.caption);
   const hasCredits = !!(images && images.credits);

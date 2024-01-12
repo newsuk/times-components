@@ -20,7 +20,8 @@ import {
   MouseEventType,
   ImageProps,
   ListData,
-  expirableFlagsProps
+  expirableFlagsProps,
+  ImageCrops
 } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
 import { ArticleTileInfo } from '../shared/articleTileInfo';
@@ -125,11 +126,11 @@ export const LeadArticle = ({
     articleClickTracking(event, articleForTracking, clickHandler);
   };
 
-  const forceExternalContentRatio = (image: { url: string; ratio: string }) => {
-    if (image.ratio === '*') {
-      return '3:2';
+  const forceExternalContentRatio = (image: ImageCrops ) => {
+    if (image.ratio === '*' || !image.ratio) {
+      return {ratio: '3:2', aspectRatio: '3/2'};
     }
-    return image.ratio;
+    return {ratio: image.ratio, aspectRatio: image.ratio.replace(":", '/')};
   };
 
   return (
@@ -157,11 +158,6 @@ export const LeadArticle = ({
           >
             <FullWidthGridLayoutItem
               area="media"
-              ratio={
-                imageWithCorrectRatio!.ratio !== '*'
-                  ? imageWithCorrectRatio!.ratio
-                  : forceExternalContentRatio(imageWithCorrectRatio as any)
-              }
               className="lead-article-image"
               marginBlockEnd={hasCaptionOrCredits ? 'space020' : 'space000'}
             >
@@ -174,9 +170,9 @@ export const LeadArticle = ({
                   alt={(images && images.alt) || headline}
                   loadingAspectRatio={
                     imageWithCorrectRatio &&
-                    imageWithCorrectRatio.ratio &&
-                    forceExternalContentRatio(imageWithCorrectRatio as any)
+                    forceExternalContentRatio(imageWithCorrectRatio).ratio
                   }
+                  style={{aspectRatio:imageWithCorrectRatio && forceExternalContentRatio(imageWithCorrectRatio).aspectRatio}}
                 />
               </a>
             </FullWidthGridLayoutItem>
