@@ -38,9 +38,10 @@ export const CommentCard = ({
 
   const { id, images, byline, headline, url, flag } = article;
   const imageWithCorrectRatio =
-    images &&
-    images.crops ?
-    (images.crops.find(crop => crop.ratio === '1:1') || images.crops.find(crop => crop.ratio === '*')) :undefined;
+    images && images.crops
+      ? images.crops.find(crop => crop.ratio === '1:1') ||
+        images.crops.find(crop => crop.ratio === '*')
+      : undefined;
 
   const onClick = (event: MouseEventType) => {
     const articleForTracking = { headline, id, url };

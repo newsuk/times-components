@@ -126,11 +126,11 @@ export const LeadArticle = ({
     articleClickTracking(event, articleForTracking, clickHandler);
   };
 
-  const forceExternalContentRatio = (image: ImageCrops ) => {
+  const forceExternalContentRatio = (image: ImageCrops) => {
     if (image.ratio === '*' || !image.ratio) {
-      return {ratio: '3:2', aspectRatio: '3/2'};
+      return { ratio: '3:2', aspectRatio: '3/2' };
     }
-    return {ratio: image.ratio, aspectRatio: image.ratio.replace(":", '/')};
+    return { ratio: image.ratio, aspectRatio: image.ratio.replace(':', '/') };
   };
 
   return (
@@ -172,7 +172,12 @@ export const LeadArticle = ({
                     imageWithCorrectRatio &&
                     forceExternalContentRatio(imageWithCorrectRatio).ratio
                   }
-                  style={{aspectRatio:imageWithCorrectRatio && forceExternalContentRatio(imageWithCorrectRatio).aspectRatio}}
+                  style={{
+                    aspectRatio:
+                      imageWithCorrectRatio &&
+                      forceExternalContentRatio(imageWithCorrectRatio)
+                        .aspectRatio
+                  }}
                 />
               </a>
             </FullWidthGridLayoutItem>
