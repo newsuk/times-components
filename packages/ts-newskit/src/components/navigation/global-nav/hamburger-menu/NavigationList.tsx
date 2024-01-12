@@ -76,7 +76,7 @@ const NavigationList: React.FC<{
                   transitionPreset: {
                     extend: 'backgroundColorChange',
                     base: {
-                      transitionDuration: '100ms'
+                      transitionDuration: '{{motions.motionDuration010}}'
                     }
                   }
                 }}
@@ -94,7 +94,7 @@ const NavigationList: React.FC<{
                         transitionPreset: {
                           extend: 'backgroundColorChange',
                           base: {
-                            transitionDuration: '100ms'
+                            transitionDuration: '{{motions.motionDuration010}}'
                           }
                         }
                       }}
@@ -120,7 +120,7 @@ const NavigationList: React.FC<{
                   transitionPreset: {
                     extend: 'backgroundColorChange',
                     base: {
-                      transitionDuration: '100ms'
+                      transitionDuration: '{{motions.motionDuration010}}'
                     }
                   }
                 }}
