@@ -1,7 +1,12 @@
 export function getResponsiveNavData<T extends { title: string }>(
   menuData: T[],
   limit: { md: number; lg: number; xl: number }
-) {
+): {
+  responsiveMenuData: Array<T & { xl: boolean; lg: boolean; md: boolean }>;
+  showMoreMD: boolean;
+  showMoreLG: boolean;
+  showMoreXL: boolean;
+} {
   let charWidth = 0;
   let showMoreMD = false;
   let showMoreLG = false;
