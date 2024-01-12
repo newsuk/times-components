@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.154.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.3...@times-components/ts-newskit@1.154.4) (2024-01-12)
+
+
+### Bug Fixes
+
+* **TMRX-1810:** global nav search bar placeholder disappears on focus ([#3714](https://github.com/newsuk/times-components/issues/3714)) ([d45b3fa](https://github.com/newsuk/times-components/commit/d45b3fafc3c0e7b5b1e6f39cdf2dc011fe399783))
+
+
+
+
+
+## [1.154.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.2...@times-components/ts-newskit@1.154.3) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.154.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.1...@times-components/ts-newskit@1.154.2) (2024-01-11)
+
+
+### Bug Fixes
+
+* **TMRX-1446:** remove window reference, update types and ad block ([#3709](https://github.com/newsuk/times-components/issues/3709)) ([9cf291a](https://github.com/newsuk/times-components/commit/9cf291a20ed1ff44db78823aee3a818548a7d7ae))
+
+
+
+
+
+## [1.154.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.0...@times-components/ts-newskit@1.154.1) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
 # [1.154.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.153.4...@times-components/ts-newskit@1.154.0) (2024-01-10)
 
 

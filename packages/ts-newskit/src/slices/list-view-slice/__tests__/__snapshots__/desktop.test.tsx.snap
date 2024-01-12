@@ -1872,21 +1872,17 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="css-1sozmkk"
+        class="css-13yo7b5"
         id="inline-ad-mpu"
       >
         <div
-          class="css-y19ppi"
+          class="css-hgdps2"
         >
-          <div
-            class="css-hgdps2"
-          >
-            ADVERTISEMENT
-          </div>
-          <div
-            class="css-7ai59q"
-          />
+          ADVERTISEMENT
         </div>
+        <div
+          class="css-7ai59q"
+        />
       </div>
     </div>
     <hr

@@ -15,6 +15,7 @@ export type ListViewSliceProps = {
   clickHandler: ClickHandlerType;
   currentPage?: number;
   handlePageChange: (page: number) => void;
+  onPageChange?: () => void;
   itemsPerPage?: number;
   totalItems: number;
   isLoading?: boolean;
@@ -26,7 +27,9 @@ export const ListViewSlice = ({
   clickHandler,
   currentPage,
   handlePageChange,
+  onPageChange,
   itemsPerPage = 10,
+  totalItems,
   isLoading = false,
   StickyAd,
   SectionAd
@@ -44,16 +47,15 @@ export const ListViewSlice = ({
     currentPage,
     handlePageChange,
     itemsPerPage,
-    totalItems: leadArticles.length,
+    totalItems,
     isLoading,
     StickyAd,
     SectionAd
   };
-
   return (
     <CustomBlockLayout>
       <Visible md lg xl>
-        <ListViewSliceDesktop {...sliceProps} />
+        <ListViewSliceDesktop onPageChange={onPageChange} {...sliceProps} />
       </Visible>
       <Visible xs sm>
         <WrappedStackLayout>

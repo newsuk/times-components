@@ -23,6 +23,7 @@ type IconComponent = React.ComponentType;
 interface TeaserCardsContainerProps {
   types: PuzzleType[];
   title?: string;
+  onClick?: (categoryName: string) => void;
 }
 
 const iconMapping: Record<PuzzleType, IconComponent> = {
@@ -60,7 +61,8 @@ const iconMapping: Record<PuzzleType, IconComponent> = {
 
 export const TeaserCardsContainer = ({
   types,
-  title
+  title,
+  onClick
 }: TeaserCardsContainerProps) => {
   return (
     <>
@@ -99,6 +101,7 @@ export const TeaserCardsContainer = ({
               type={type}
               url="https://www.thetimes.co.uk/checkout?pc=PUZ025N3Z00"
               Icon={iconMapping[type]}
+              onClick={onClick}
             />
           </GridLayoutItem>
         ))}

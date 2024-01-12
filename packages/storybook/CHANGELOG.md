@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.11.6](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.11.5...@times-components/storybook@4.11.6) (2024-01-12)
+
+
+### Bug Fixes
+
+* **TMRX-1810:** global nav search bar placeholder disappears on focus ([#3714](https://github.com/newsuk/times-components/issues/3714)) ([d45b3fa](https://github.com/newsuk/times-components/commit/d45b3fafc3c0e7b5b1e6f39cdf2dc011fe399783))
+
+
+
+
+
+## [4.11.5](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.11.4...@times-components/storybook@4.11.5) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
+## [4.11.4](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.11.3...@times-components/storybook@4.11.4) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
 ## [4.11.3](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.11.2...@times-components/storybook@4.11.3) (2023-10-19)
 
 

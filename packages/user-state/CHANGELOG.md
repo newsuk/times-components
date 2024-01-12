@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.15](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.5.14...@times-components/user-state@0.5.15) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.5.14](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.5.13...@times-components/user-state@0.5.14) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.5.13](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.5.12...@times-components/user-state@0.5.13) (2024-01-11)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.5.12](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.5.11...@times-components/user-state@0.5.12) (2024-01-11)
+
+
+### Bug Fixes
+
+* **TMRX-000:** Limit live update to logged in users ([#3713](https://github.com/newsuk/times-components/issues/3713)) ([00a5e12](https://github.com/newsuk/times-components/commit/00a5e121eadc157c00c82f2929f8d99a73eeac6a))
+
+
+
+
+
 ## [0.5.11](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.5.10...@times-components/user-state@0.5.11) (2023-10-19)
 
 **Note:** Version bump only for package @times-components/user-state
