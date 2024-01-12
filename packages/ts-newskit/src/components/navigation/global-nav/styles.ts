@@ -222,14 +222,25 @@ export const StyledMenuItem = styled(MenuItem)`
 
 export const StyledTextField = styled(TextField)`
   cursor: text;
-  &::-webkit-input-placeholder,
-  &::-ms-input-placeholder,
-  &::-moz-placeholder {
-    color: #a9a9a9;
+  &::-webkit-input-placeholder {
+    color: #999;
   }
+  &::-ms-input-placeholder {
+    color: #999;
+  }
+  &::-moz-placeholder {
+    color: #999;
+  }
+
   &:focus-within {
-    &::, &::-ms-input-placeholder, &::-moz-placeholder {
-      color: #a9a9a9;
+    &::-webkit-input-placeholder {
+      color: #999;
+    }
+    &::-ms-input-placeholder {
+      color: #999;
+    }
+    &::-moz-placeholder {
+      color: #999;
     }
   }
 `;
