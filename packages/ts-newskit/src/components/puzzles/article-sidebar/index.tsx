@@ -17,7 +17,7 @@ import {
   TrackingContext,
   TrackingContextProvider
 } from '../../../utils/TrackingContextProvider';
-import analyticsStream from '../../../components/navigation/fixtures/analytics-actions';
+import analyticsStream from './fixtures/analytics-actions';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
