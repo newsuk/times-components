@@ -7,6 +7,7 @@ import {
   StyledMoreMenuSub
 } from '../styles';
 import { MenuItemParent, ResponsiveMenuItemParent } from '../types';
+import { getResponsiveNavData } from '../../../../utils';
 
 const XL_BREAKPOINT = 1440;
 const LG_BREAKPOINT = 1024;
@@ -38,28 +39,18 @@ export const createMenu = (
     clickHandler('More');
   };
 
-  let charWidth = 0;
-  let showMoreMD = false;
-  let showMoreLG = false;
-  let showMoreXL = false;
-
-  menuData.map(({ title }, index) => {
-    if (title.length * 10 + charWidth > XL_BREAKPOINT - OTHER_NAV_ELEMENTS) {
-      menuData[index].xl = true;
-      showMoreXL = true;
-    }
-    if (title.length * 10 + charWidth > LG_BREAKPOINT - OTHER_NAV_ELEMENTS) {
-      menuData[index].lg = true;
-      showMoreLG = true;
-    }
-    if (title.length * 10 + charWidth > MD_BREAKPOINT - OTHER_NAV_ELEMENTS) {
-      menuData[index].md = true;
-      showMoreMD = true;
-    }
-    charWidth += title.length * 10 + 32;
+  const {
+    responsiveMenuData,
+    showMoreMD,
+    showMoreLG,
+    showMoreXL
+  } = getResponsiveNavData(menuData, {
+    md: MD_BREAKPOINT - OTHER_NAV_ELEMENTS,
+    lg: LG_BREAKPOINT - OTHER_NAV_ELEMENTS,
+    xl: XL_BREAKPOINT - OTHER_NAV_ELEMENTS
   });
 
-  const navItems = menuData.map(({ title, url, md, lg, xl }) => (
+  const navItems = responsiveMenuData.map(({ title, url, md, lg, xl }) => (
     <StyledVisibleMenuItems
       href={url}
       overrides={{
@@ -109,7 +100,7 @@ export const createMenu = (
           overrides={{ spaceInline: 'sizing000' }}
           aria-label="More menu items"
         >
-          {createMoreMenu(menuData, clickHandler)}
+          {createMoreMenu(responsiveMenuData, clickHandler)}
         </Menu>
       </StyledMoreMenuSub>
     </>
