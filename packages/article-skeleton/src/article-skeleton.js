@@ -96,12 +96,14 @@ const ArticleSkeleton = ({
     const sidebarNode = sidebarRef.current;
     if (sidebarNode) {
       const adElements = document.querySelectorAll(
-        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2, .styles__Container-kqn9c8-0 jmmsXr"
+        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
       );
       const relatedArticlesIds = [
-        "related-articles",
-        "sponsored-article-container",
-        "comments-container"
+        "#related-articles",
+        "#sponsored-article-container",
+        "#comments-container",
+        ".styles__Container-kqn9c8-0 jmmsXr",
+        ".GlobalFooter"
       ];
 
       let isAnyAdIntersecting = false;
@@ -121,17 +123,19 @@ const ArticleSkeleton = ({
       });
 
       relatedArticlesIds.forEach(id => {
-        const relatedArticlesElement = document.getElementById(id);
-        if (relatedArticlesElement) {
-          const relatedArticlesRect = relatedArticlesElement.getBoundingClientRect();
-          const isRelatedArticlesIntersecting =
-            relatedArticlesRect.top <= window.innerHeight &&
-            relatedArticlesRect.bottom >= 0;
+        const relatedArticlesElements = document.querySelectorAll(id);
+        relatedArticlesElements.forEach(relatedArticlesElement => {
+          if (relatedArticlesElement) {
+            const relatedArticlesRect = relatedArticlesElement.getBoundingClientRect();
+            const isRelatedArticlesIntersecting =
+              relatedArticlesRect.top <= window.innerHeight &&
+              relatedArticlesRect.bottom >= 0;
 
-          if (isRelatedArticlesIntersecting) {
-            isAnyArticlesIntersecting = true;
+            if (isRelatedArticlesIntersecting) {
+              isAnyArticlesIntersecting = true;
+            }
           }
-        }
+        });
       });
 
       if (isAnyAdIntersecting || isAnyArticlesIntersecting) {
