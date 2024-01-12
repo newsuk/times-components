@@ -15,6 +15,7 @@ import {
   ImageProps
 } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
+import { getForceExternalContentRatio } from '../../../utils';
 
 export interface CommentCardProps {
   id: string;
@@ -47,6 +48,7 @@ export const CommentCard = ({
     const articleForTracking = { headline, id, url };
     articleClickTracking(event, articleForTracking, clickHandler);
   };
+
   return (
     <CardComposable
       columnGap="space040"
@@ -88,6 +90,12 @@ export const CommentCard = ({
                   md: isCommentBucket1 ? 'space040' : 'space000',
                   lg: 'space000'
                 }
+              }}
+              style={{
+                aspectRatio:
+                  imageWithCorrectRatio &&
+                  getForceExternalContentRatio(imageWithCorrectRatio, '1:1')
+                    .aspectRatio
               }}
             />
           </a>

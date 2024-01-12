@@ -20,11 +20,11 @@ import {
   MouseEventType,
   ImageProps,
   ListData,
-  expirableFlagsProps,
-  ImageCrops
+  expirableFlagsProps
 } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
 import { ArticleTileInfo } from '../shared/articleTileInfo';
+import { getForceExternalContentRatio } from '../../../utils';
 
 export interface LeadArticleProps {
   id: string;
@@ -126,13 +126,6 @@ export const LeadArticle = ({
     articleClickTracking(event, articleForTracking, clickHandler);
   };
 
-  const forceExternalContentRatio = (image: ImageCrops) => {
-    if (image.ratio === '*' || !image.ratio) {
-      return { ratio: '3:2', aspectRatio: '3/2' };
-    }
-    return { ratio: image.ratio, aspectRatio: image.ratio.replace(':', '/') };
-  };
-
   return (
     <CardComposable
       areas={{
@@ -158,6 +151,7 @@ export const LeadArticle = ({
           >
             <FullWidthGridLayoutItem
               area="media"
+              ratio={imageWithCorrectRatio!.ratio}
               className="lead-article-image"
               marginBlockEnd={hasCaptionOrCredits ? 'space020' : 'space000'}
             >
@@ -170,12 +164,13 @@ export const LeadArticle = ({
                   alt={(images && images.alt) || headline}
                   loadingAspectRatio={
                     imageWithCorrectRatio &&
-                    forceExternalContentRatio(imageWithCorrectRatio).ratio
+                    getForceExternalContentRatio(imageWithCorrectRatio, '3:2')
+                      .ratio
                   }
                   style={{
                     aspectRatio:
                       imageWithCorrectRatio &&
-                      forceExternalContentRatio(imageWithCorrectRatio)
+                      getForceExternalContentRatio(imageWithCorrectRatio, '3:2')
                         .aspectRatio
                   }}
                 />

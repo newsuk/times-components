@@ -23,6 +23,7 @@ import {
 import { articleClickTracking } from '../../../utils/tracking';
 import { ArticleTileInfo } from '../shared/articleTileInfo';
 import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
+import { getForceExternalContentRatio } from '../../../utils';
 
 export interface ArticleProps {
   id: string;
@@ -133,9 +134,16 @@ export const Article = ({
         src={imageWithCorrectRatio && `${imageWithCorrectRatio.url}&resize=750`}
         alt={(images && images.alt) || headline}
         loadingAspectRatio={
-          imageWithCorrectRatio ? imageWithCorrectRatio.ratio : '3:2'
+          imageWithCorrectRatio &&
+          getForceExternalContentRatio(imageWithCorrectRatio, '3:2').ratio
         }
         loading="lazy"
+        style={{
+          aspectRatio:
+            imageWithCorrectRatio &&
+            getForceExternalContentRatio(imageWithCorrectRatio, '3:2')
+              .aspectRatio
+        }}
       />
     </a>
   );
