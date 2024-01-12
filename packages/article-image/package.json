@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "7.16.16",
+  "version": "7.16.17",
   "description": "Article Image ",
   "main": "dist/article-image",
   "dev": "src/article-image",
@@ -53,12 +53,12 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/caption": "3.8.17",
-    "@times-components/context": "1.10.38",
-    "@times-components/image": "6.15.16",
-    "@times-components/responsive": "0.17.2",
-    "@times-components/ts-styleguide": "1.48.2",
-    "@times-components/utils": "6.16.23",
+    "@times-components/caption": "3.8.18",
+    "@times-components/context": "1.10.39",
+    "@times-components/image": "6.15.17",
+    "@times-components/responsive": "0.17.3",
+    "@times-components/ts-styleguide": "1.48.3",
+    "@times-components/utils": "6.16.24",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
