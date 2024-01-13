@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.154.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.4...@times-components/ts-newskit@1.154.5) (2024-01-12)
+
+
+### Bug Fixes
+
+* **TMRX-1680:** global nav bar appears to be cropped on ([#3719](https://github.com/newsuk/times-components/issues/3719)) ([af3f52c](https://github.com/newsuk/times-components/commit/af3f52c8837db75cdf822a48dff64f7a39223d89))
+
+
+
+
+
 ## [1.154.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.3...@times-components/ts-newskit@1.154.4) (2024-01-12)
 
 

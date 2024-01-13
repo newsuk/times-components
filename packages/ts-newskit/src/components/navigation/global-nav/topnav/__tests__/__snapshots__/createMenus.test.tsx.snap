@@ -7,7 +7,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
   >
     <div
       aria-label="header"
-      class="css-1jefh8t"
+      class="css-cfp6i5"
     >
       <div
         class="css-1ycac6s"
@@ -174,7 +174,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
                     data-testid="buttonLink"
                     href="/home"
                   >
@@ -189,14 +189,14 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
                     data-testid="buttonLink"
-                    href="/news"
+                    href="/uk"
                   >
                     <span
                       class="css-1pur78d"
                     >
-                      News
+                      UK
                     </span>
                   </a>
                 </li>
@@ -204,7 +204,22 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
+                    data-testid="buttonLink"
+                    href="/world"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      World
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item css-1i1v9fb"
+                >
+                  <a
+                    class="css-1irdiub"
                     data-testid="buttonLink"
                     href="/comment"
                   >
@@ -219,9 +234,9 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-1irdiub"
                     data-testid="buttonLink"
-                    href="/life-and-style"
+                    href="/life-style"
                   >
                     <span
                       class="css-1pur78d"
@@ -234,14 +249,14 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-vjdu73"
                     data-testid="buttonLink"
-                    href="/arts-and-books"
+                    href="/culture-books"
                   >
                     <span
                       class="css-1pur78d"
                     >
-                      Arts & Books
+                      Culture & Books
                     </span>
                   </a>
                 </li>
@@ -249,7 +264,22 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-vjdu73"
+                    data-testid="buttonLink"
+                    href="/business-money"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      Business and Money
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item css-1i1v9fb"
+                >
+                  <a
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/sport"
                   >
@@ -264,22 +294,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
-                    data-testid="buttonLink"
-                    href="/business-and-money"
-                  >
-                    <span
-                      class="css-1pur78d"
-                    >
-                      Business & Money
-                    </span>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item css-1i1v9fb"
-                >
-                  <a
-                    class="css-1mopshi"
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/puzzles"
                   >
@@ -294,7 +309,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/magazines"
                   >
@@ -305,132 +320,203 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                     </span>
                   </a>
                 </li>
-                <div
-                  class="css-yj8ahp"
+                <li
+                  class="nk-menu-item css-1i1v9fb"
                 >
-                  <li
-                    class="nk-menu-item css-1i1v9fb"
+                  <button
+                    aria-expanded="false"
+                    class="css-e88ut0"
+                    data-testid="menu-sub-button"
+                    type="button"
                   >
-                    <button
-                      aria-expanded="false"
-                      class="css-au5zjl"
-                      data-testid="menu-sub-button"
-                      type="button"
+                    <span
+                      class="css-1pur78d"
                     >
-                      <span
-                        class="css-1pur78d"
-                      >
-                        More
-                      </span>
-                      <svg
-                        aria-hidden="true"
-                        class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                        />
-                      </svg>
-                    </button>
-                    <ul
-                      class="css-v7cizm"
+                      More
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <nav
-                        aria-label="More menu items"
-                        class="css-1e8qhdd"
-                        data-testid="menu-container"
-                        role="navigation"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="css-v7cizm"
+                  >
+                    <nav
+                      aria-label="More menu items"
+                      class="css-1e8qhdd"
+                      data-testid="menu-container"
+                      role="navigation"
+                    >
+                      <ul
+                        role="list"
                       >
-                        <ul
-                          role="list"
+                        <li
+                          class="nk-menu-item css-1kdinep"
                         >
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/home"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/arts-and-books"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Arts & Books
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              Home
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/uk"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/sport"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Sport
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              UK
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/world"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/business-and-money"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Business & Money
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              World
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-8rhp0r"
+                            data-testid="more-menu-item"
+                            href="/comment"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/puzzles"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Puzzles
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              Comment
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-8rhp0r"
+                            data-testid="more-menu-item"
+                            href="/life-style"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/magazines"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Magazines
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </ul>
-                  </li>
-                </div>
+                              Life & Style
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1j8amn0"
+                            data-testid="more-menu-item"
+                            href="/culture-books"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Culture & Books
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1j8amn0"
+                            data-testid="more-menu-item"
+                            href="/business-money"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Business and Money
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/sport"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Sport
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/puzzles"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Puzzles
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/magazines"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Magazines
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </ul>
+                </li>
               </ul>
             </nav>
           </div>
@@ -660,7 +746,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
                     data-testid="buttonLink"
                     href="/home"
                   >
@@ -675,14 +761,14 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
                     data-testid="buttonLink"
-                    href="/news"
+                    href="/uk"
                   >
                     <span
                       class="css-1pur78d"
                     >
-                      News
+                      UK
                     </span>
                   </a>
                 </li>
@@ -690,7 +776,22 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
+                    data-testid="buttonLink"
+                    href="/world"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      World
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item css-1iaj8wm"
+                >
+                  <a
+                    class="css-1irdiub"
                     data-testid="buttonLink"
                     href="/comment"
                   >
@@ -705,9 +806,9 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-1irdiub"
                     data-testid="buttonLink"
-                    href="/life-and-style"
+                    href="/life-style"
                   >
                     <span
                       class="css-1pur78d"
@@ -720,14 +821,14 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-vjdu73"
                     data-testid="buttonLink"
-                    href="/arts-and-books"
+                    href="/culture-books"
                   >
                     <span
                       class="css-1pur78d"
                     >
-                      Arts & Books
+                      Culture & Books
                     </span>
                   </a>
                 </li>
@@ -735,7 +836,22 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-vjdu73"
+                    data-testid="buttonLink"
+                    href="/business-money"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      Business and Money
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item css-1iaj8wm"
+                >
+                  <a
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/sport"
                   >
@@ -750,22 +866,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
-                    data-testid="buttonLink"
-                    href="/business-and-money"
-                  >
-                    <span
-                      class="css-1pur78d"
-                    >
-                      Business & Money
-                    </span>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item css-1iaj8wm"
-                >
-                  <a
-                    class="css-1mopshi"
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/puzzles"
                   >
@@ -780,7 +881,7 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/magazines"
                   >
@@ -791,132 +892,203 @@ exports[`createMenu should render the correct menu length at "lg" breakpoint 1`]
                     </span>
                   </a>
                 </li>
-                <div
-                  class="css-yj8ahp"
+                <li
+                  class="nk-menu-item css-1iaj8wm"
                 >
-                  <li
-                    class="nk-menu-item css-1iaj8wm"
+                  <button
+                    aria-expanded="false"
+                    class="css-e88ut0"
+                    data-testid="menu-sub-button"
+                    type="button"
                   >
-                    <button
-                      aria-expanded="false"
-                      class="css-au5zjl"
-                      data-testid="menu-sub-button"
-                      type="button"
+                    <span
+                      class="css-1pur78d"
                     >
-                      <span
-                        class="css-1pur78d"
-                      >
-                        More
-                      </span>
-                      <svg
-                        aria-hidden="true"
-                        class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                        />
-                      </svg>
-                    </button>
-                    <ul
-                      class="css-v7cizm"
+                      More
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <nav
-                        aria-label="More menu items"
-                        class="css-1e8qhdd"
-                        data-testid="menu-container"
-                        role="navigation"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="css-v7cizm"
+                  >
+                    <nav
+                      aria-label="More menu items"
+                      class="css-1e8qhdd"
+                      data-testid="menu-container"
+                      role="navigation"
+                    >
+                      <ul
+                        role="list"
                       >
-                        <ul
-                          role="list"
+                        <li
+                          class="nk-menu-item css-1kdinep"
                         >
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/home"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/arts-and-books"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Arts & Books
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              Home
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/uk"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/sport"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Sport
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              UK
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/world"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/business-and-money"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Business & Money
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              World
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-8rhp0r"
+                            data-testid="more-menu-item"
+                            href="/comment"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/puzzles"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Puzzles
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              Comment
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-8rhp0r"
+                            data-testid="more-menu-item"
+                            href="/life-style"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/magazines"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Magazines
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </ul>
-                  </li>
-                </div>
+                              Life & Style
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1j8amn0"
+                            data-testid="more-menu-item"
+                            href="/culture-books"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Culture & Books
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1j8amn0"
+                            data-testid="more-menu-item"
+                            href="/business-money"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Business and Money
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/sport"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Sport
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/puzzles"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Puzzles
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/magazines"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Magazines
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </ul>
+                </li>
               </ul>
             </nav>
           </div>
@@ -939,7 +1111,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
   >
     <div
       aria-label="header"
-      class="css-1jefh8t"
+      class="css-cfp6i5"
     >
       <div
         class="css-1ycac6s"
@@ -1106,7 +1278,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
                     data-testid="buttonLink"
                     href="/home"
                   >
@@ -1121,14 +1293,14 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
                     data-testid="buttonLink"
-                    href="/news"
+                    href="/uk"
                   >
                     <span
                       class="css-1pur78d"
                     >
-                      News
+                      UK
                     </span>
                   </a>
                 </li>
@@ -1136,7 +1308,22 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
+                    data-testid="buttonLink"
+                    href="/world"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      World
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item css-1i1v9fb"
+                >
+                  <a
+                    class="css-1irdiub"
                     data-testid="buttonLink"
                     href="/comment"
                   >
@@ -1151,9 +1338,9 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-1irdiub"
                     data-testid="buttonLink"
-                    href="/life-and-style"
+                    href="/life-style"
                   >
                     <span
                       class="css-1pur78d"
@@ -1166,14 +1353,14 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-vjdu73"
                     data-testid="buttonLink"
-                    href="/arts-and-books"
+                    href="/culture-books"
                   >
                     <span
                       class="css-1pur78d"
                     >
-                      Arts & Books
+                      Culture & Books
                     </span>
                   </a>
                 </li>
@@ -1181,7 +1368,22 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-vjdu73"
+                    data-testid="buttonLink"
+                    href="/business-money"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      Business and Money
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item css-1i1v9fb"
+                >
+                  <a
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/sport"
                   >
@@ -1196,22 +1398,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
-                    data-testid="buttonLink"
-                    href="/business-and-money"
-                  >
-                    <span
-                      class="css-1pur78d"
-                    >
-                      Business & Money
-                    </span>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item css-1i1v9fb"
-                >
-                  <a
-                    class="css-1mopshi"
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/puzzles"
                   >
@@ -1226,7 +1413,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1i1v9fb"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/magazines"
                   >
@@ -1237,132 +1424,203 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                     </span>
                   </a>
                 </li>
-                <div
-                  class="css-yj8ahp"
+                <li
+                  class="nk-menu-item css-1i1v9fb"
                 >
-                  <li
-                    class="nk-menu-item css-1i1v9fb"
+                  <button
+                    aria-expanded="false"
+                    class="css-e88ut0"
+                    data-testid="menu-sub-button"
+                    type="button"
                   >
-                    <button
-                      aria-expanded="false"
-                      class="css-au5zjl"
-                      data-testid="menu-sub-button"
-                      type="button"
+                    <span
+                      class="css-1pur78d"
                     >
-                      <span
-                        class="css-1pur78d"
-                      >
-                        More
-                      </span>
-                      <svg
-                        aria-hidden="true"
-                        class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                        />
-                      </svg>
-                    </button>
-                    <ul
-                      class="css-v7cizm"
+                      More
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <nav
-                        aria-label="More menu items"
-                        class="css-1e8qhdd"
-                        data-testid="menu-container"
-                        role="navigation"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="css-v7cizm"
+                  >
+                    <nav
+                      aria-label="More menu items"
+                      class="css-1e8qhdd"
+                      data-testid="menu-container"
+                      role="navigation"
+                    >
+                      <ul
+                        role="list"
                       >
-                        <ul
-                          role="list"
+                        <li
+                          class="nk-menu-item css-1kdinep"
                         >
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/home"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/arts-and-books"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Arts & Books
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              Home
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/uk"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/sport"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Sport
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              UK
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/world"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/business-and-money"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Business & Money
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              World
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-8rhp0r"
+                            data-testid="more-menu-item"
+                            href="/comment"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/puzzles"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Puzzles
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              Comment
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-8rhp0r"
+                            data-testid="more-menu-item"
+                            href="/life-style"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/magazines"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Magazines
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </ul>
-                  </li>
-                </div>
+                              Life & Style
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1j8amn0"
+                            data-testid="more-menu-item"
+                            href="/culture-books"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Culture & Books
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1j8amn0"
+                            data-testid="more-menu-item"
+                            href="/business-money"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Business and Money
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/sport"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Sport
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/puzzles"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Puzzles
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/magazines"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Magazines
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </ul>
+                </li>
               </ul>
             </nav>
           </div>
@@ -1592,7 +1850,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
                     data-testid="buttonLink"
                     href="/home"
                   >
@@ -1607,14 +1865,14 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
                     data-testid="buttonLink"
-                    href="/news"
+                    href="/uk"
                   >
                     <span
                       class="css-1pur78d"
                     >
-                      News
+                      UK
                     </span>
                   </a>
                 </li>
@@ -1622,7 +1880,22 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-f18nj3"
+                    data-testid="buttonLink"
+                    href="/world"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      World
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item css-1iaj8wm"
+                >
+                  <a
+                    class="css-1irdiub"
                     data-testid="buttonLink"
                     href="/comment"
                   >
@@ -1637,9 +1910,9 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-1irdiub"
                     data-testid="buttonLink"
-                    href="/life-and-style"
+                    href="/life-style"
                   >
                     <span
                       class="css-1pur78d"
@@ -1652,14 +1925,14 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-vjdu73"
                     data-testid="buttonLink"
-                    href="/arts-and-books"
+                    href="/culture-books"
                   >
                     <span
                       class="css-1pur78d"
                     >
-                      Arts & Books
+                      Culture & Books
                     </span>
                   </a>
                 </li>
@@ -1667,7 +1940,22 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-vjdu73"
+                    data-testid="buttonLink"
+                    href="/business-money"
+                  >
+                    <span
+                      class="css-1pur78d"
+                    >
+                      Business and Money
+                    </span>
+                  </a>
+                </li>
+                <li
+                  class="nk-menu-item css-1iaj8wm"
+                >
+                  <a
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/sport"
                   >
@@ -1682,22 +1970,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
-                    data-testid="buttonLink"
-                    href="/business-and-money"
-                  >
-                    <span
-                      class="css-1pur78d"
-                    >
-                      Business & Money
-                    </span>
-                  </a>
-                </li>
-                <li
-                  class="nk-menu-item css-1iaj8wm"
-                >
-                  <a
-                    class="css-1mopshi"
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/puzzles"
                   >
@@ -1712,7 +1985,7 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                   class="nk-menu-item css-1iaj8wm"
                 >
                   <a
-                    class="css-1mopshi"
+                    class="css-1laeaai"
                     data-testid="buttonLink"
                     href="/magazines"
                   >
@@ -1723,132 +1996,203 @@ exports[`createMenu should render the correct menu length at other breakpoints 1
                     </span>
                   </a>
                 </li>
-                <div
-                  class="css-yj8ahp"
+                <li
+                  class="nk-menu-item css-1iaj8wm"
                 >
-                  <li
-                    class="nk-menu-item css-1iaj8wm"
+                  <button
+                    aria-expanded="false"
+                    class="css-e88ut0"
+                    data-testid="menu-sub-button"
+                    type="button"
                   >
-                    <button
-                      aria-expanded="false"
-                      class="css-au5zjl"
-                      data-testid="menu-sub-button"
-                      type="button"
+                    <span
+                      class="css-1pur78d"
                     >
-                      <span
-                        class="css-1pur78d"
-                      >
-                        More
-                      </span>
-                      <svg
-                        aria-hidden="true"
-                        class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
-                        fill="currentColor"
-                        focusable="false"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M0 0h24v24H0z"
-                          fill="none"
-                        />
-                        <path
-                          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                        />
-                      </svg>
-                    </button>
-                    <ul
-                      class="css-v7cizm"
+                      More
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      <nav
-                        aria-label="More menu items"
-                        class="css-1e8qhdd"
-                        data-testid="menu-container"
-                        role="navigation"
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                      />
+                    </svg>
+                  </button>
+                  <ul
+                    class="css-v7cizm"
+                  >
+                    <nav
+                      aria-label="More menu items"
+                      class="css-1e8qhdd"
+                      data-testid="menu-container"
+                      role="navigation"
+                    >
+                      <ul
+                        role="list"
                       >
-                        <ul
-                          role="list"
+                        <li
+                          class="nk-menu-item css-1kdinep"
                         >
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/home"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/arts-and-books"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Arts & Books
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              Home
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/uk"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/sport"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Sport
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              UK
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1s8t5vg"
+                            data-testid="more-menu-item"
+                            href="/world"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/business-and-money"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Business & Money
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              World
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-8rhp0r"
+                            data-testid="more-menu-item"
+                            href="/comment"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/puzzles"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Puzzles
-                              </span>
-                            </a>
-                          </li>
-                          <li
-                            class="nk-menu-item css-1kdinep"
+                              Comment
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-8rhp0r"
+                            data-testid="more-menu-item"
+                            href="/life-style"
                           >
-                            <a
-                              class="css-thzfib"
-                              data-testid="more-menu-item"
-                              href="/magazines"
+                            <span
+                              class="css-1pur78d"
                             >
-                              <span
-                                class="css-1pur78d"
-                              >
-                                Magazines
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </ul>
-                  </li>
-                </div>
+                              Life & Style
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1j8amn0"
+                            data-testid="more-menu-item"
+                            href="/culture-books"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Culture & Books
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1j8amn0"
+                            data-testid="more-menu-item"
+                            href="/business-money"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Business and Money
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/sport"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Sport
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/puzzles"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Puzzles
+                            </span>
+                          </a>
+                        </li>
+                        <li
+                          class="nk-menu-item css-1kdinep"
+                        >
+                          <a
+                            class="css-1ancif"
+                            data-testid="more-menu-item"
+                            href="/magazines"
+                          >
+                            <span
+                              class="css-1pur78d"
+                            >
+                              Magazines
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </ul>
+                </li>
               </ul>
             </nav>
           </div>

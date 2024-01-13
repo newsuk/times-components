@@ -93,6 +93,7 @@ export const LeadArticle = ({
     expirableFlags,
     label
   } = article;
+
   const imageWithCorrectRatio =
     images && images.crops
       ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
