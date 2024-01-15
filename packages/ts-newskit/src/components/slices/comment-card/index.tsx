@@ -15,6 +15,7 @@ import {
   ImageProps
 } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
+import { getForcedExternalContentRatio } from '../../../utils';
 
 export interface CommentCardProps {
   id: string;
@@ -38,7 +39,10 @@ export const CommentCard = ({
 
   const { id, images, byline, headline, url, flag } = article;
   const imageWithCorrectRatio =
-    images && images.crops && images.crops.find(crop => crop.ratio === '1:1');
+    images &&
+    images.crops &&
+    (images.crops.find(crop => crop.ratio === '1:1') ||
+      images.crops.find(crop => crop.ratio === '*'));
 
   const onClick = (event: MouseEventType) => {
     const articleForTracking = { headline, id, url };
@@ -76,7 +80,12 @@ export const CommentCard = ({
             <Image
               src={`${imageWithCorrectRatio.url}&resize=750`}
               alt={(images && images.alt) || byline}
-              loadingAspectRatio={imageWithCorrectRatio.ratio}
+              loadingAspectRatio={
+                // NOTE: This ensures external content image renders - will be removed once CP side resolved
+                imageWithCorrectRatio &&
+                getForcedExternalContentRatio(imageWithCorrectRatio, '1:1')
+                  .ratio
+              }
               width="77px"
               loading="lazy"
               overrides={{
@@ -85,6 +94,13 @@ export const CommentCard = ({
                   md: isCommentBucket1 ? 'space040' : 'space000',
                   lg: 'space000'
                 }
+              }}
+              // NOTE: This ensures external content image renders - will be removed once CP side resolved
+              style={{
+                aspectRatio:
+                  imageWithCorrectRatio &&
+                  getForcedExternalContentRatio(imageWithCorrectRatio, '1:1')
+                    .aspectRatio
               }}
             />
           </a>

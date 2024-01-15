@@ -24,6 +24,7 @@ import {
 } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
 import { ArticleTileInfo } from '../shared/articleTileInfo';
+import { getForcedExternalContentRatio } from '../../../utils';
 
 export interface LeadArticleProps {
   id: string;
@@ -97,7 +98,8 @@ export const LeadArticle = ({
   const imageWithCorrectRatio =
     images && images.crops
       ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
-        images.crops.find(crop => crop.ratio === '3:2')
+        images.crops.find(crop => crop.ratio === '3:2') ||
+        images.crops.find(crop => crop.ratio === '*')
       : undefined;
 
   const hasImage =
@@ -162,9 +164,21 @@ export const LeadArticle = ({
                   }
                   alt={(images && images.alt) || headline}
                   loadingAspectRatio={
-                    imageWithCorrectRatio && imageWithCorrectRatio.ratio
+                    // NOTE: This ensures external content image renders - will be removed once CP side resolved
+                    imageWithCorrectRatio &&
+                    getForcedExternalContentRatio(imageWithCorrectRatio, '3:2')
+                      .ratio
                   }
                   className="lcpItem"
+                  // NOTE: This ensures external content image renders - will be removed once CP side resolved
+                  style={{
+                    aspectRatio:
+                      imageWithCorrectRatio &&
+                      getForcedExternalContentRatio(
+                        imageWithCorrectRatio,
+                        '3:2'
+                      ).aspectRatio
+                  }}
                 />
               </a>
             </FullWidthGridLayoutItem>
