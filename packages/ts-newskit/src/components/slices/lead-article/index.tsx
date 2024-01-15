@@ -152,7 +152,13 @@ export const LeadArticle = ({
           >
             <FullWidthGridLayoutItem
               area="media"
-              ratio={imageWithCorrectRatio!.ratio}
+              ratio={
+                // NOTE: This ensures external content image renders - will be removed once CP side resolved
+                imageWithCorrectRatio!.ratio !== '*'
+                  ? imageWithCorrectRatio!.ratio
+                  : getForcedExternalContentRatio(imageWithCorrectRatio, '3:2')
+                      .ratio
+              }
               className="lead-article-image"
               marginBlockEnd={hasCaptionOrCredits ? 'space020' : 'space000'}
             >

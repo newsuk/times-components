@@ -37,13 +37,14 @@ const buildConfig = dir => {
       '!<rootDir>/packages/ts-newskit/src/index.*',
       '!<rootDir>/node_modules/',
       '!<rootDir>/packages/ts-newskit/src/**/fixtures/*.(tsx|ts)',
+      '!<rootDir>/packages/ts-newskit/src/**/shared-styles/index.ts',
     ],
     coverageThreshold: {
       global: {
-        statements: 90,
-        branches: 90,
-        lines: 90,
-        functions: 90
+        statements: 95,
+        branches: 95,
+        lines: 95,
+        functions: 95
       }
     }
   };

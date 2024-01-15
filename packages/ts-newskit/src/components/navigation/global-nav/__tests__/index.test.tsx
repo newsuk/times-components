@@ -30,6 +30,14 @@ describe('Render GlobalNav', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('should triger onClick event', () => {
+    renderComponent();
+    const hamburgerBtn = screen.getByRole('button', { name: 'Open Menu' });
+
+    fireEvent.click(hamburgerBtn);
+    expect(mockOnClick).toBeCalled();
+  });
 });
 
 describe('Hamburger toggle', () => {
@@ -93,6 +101,21 @@ describe('GlobalNavWithCustomDrawer', () => {
       />
     );
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should triger onClick event', () => {
+    render(
+      <GlobalNavWithCustomDrawer
+        data={data}
+        isSunday={false}
+        clickHandler={mockClickHandler}
+        onClick={mockOnClick}
+      />
+    );
+    const hamburgerBtn = screen.getByRole('button', { name: 'Open Menu' });
+
+    fireEvent.click(hamburgerBtn);
+    expect(mockOnClick).toBeCalled();
   });
 });
 

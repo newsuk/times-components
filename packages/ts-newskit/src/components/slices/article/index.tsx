@@ -152,19 +152,6 @@ export const Article = ({
     </a>
   );
 
-  console.log('===images', images);
-  console.log('===imageWithCorrectRatio', imageWithCorrectRatio);
-  console.log(
-    '===aspectRatio',
-    imageWithCorrectRatio &&
-      getForcedExternalContentRatio(imageWithCorrectRatio, '3:2').aspectRatio
-  );
-  console.log(
-    '===ratio',
-    imageWithCorrectRatio &&
-      getForcedExternalContentRatio(imageWithCorrectRatio, '3:2').ratio
-  );
-
   return (
     <CardComposable
       alignContent="start"
