@@ -22,7 +22,10 @@ import {
 } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
 import { ArticleTileInfo } from '../shared/articleTileInfo';
-import { getActiveArticleFlags } from '../../../utils/getActiveArticleFlag';
+import {
+  getActiveArticleFlags,
+  getForcedExternalContentRatio
+} from '../../../utils';
 
 export interface ArticleProps {
   id: string;
@@ -85,7 +88,10 @@ export const Article = ({
   } = article;
 
   const imageWithCorrectRatio =
-    images && images.crops && images.crops.find(crop => crop.ratio === '3:2');
+    images &&
+    images.crops &&
+    (images.crops.find(crop => crop.ratio === '3:2') ||
+      images.crops.find(crop => crop.ratio === '*'));
 
   const hasCaption = !!(images && images.caption);
   const hasCredits = !!(images && images.credits);
@@ -130,9 +136,16 @@ export const Article = ({
         src={imageWithCorrectRatio && `${imageWithCorrectRatio.url}&resize=750`}
         alt={(images && images.alt) || headline}
         loadingAspectRatio={
-          imageWithCorrectRatio ? imageWithCorrectRatio.ratio : '3:2'
+          imageWithCorrectRatio &&
+          getForcedExternalContentRatio(imageWithCorrectRatio, '3:2').ratio
         }
         loading="lazy"
+        style={{
+          aspectRatio:
+            imageWithCorrectRatio &&
+            getForcedExternalContentRatio(imageWithCorrectRatio, '3:2')
+              .aspectRatio
+        }}
       />
     </a>
   );
