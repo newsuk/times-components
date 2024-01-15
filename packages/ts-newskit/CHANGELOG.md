@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.156.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.155.0...@times-components/ts-newskit@1.156.0) (2024-01-15)
+
+
+### Features
+
+* **TMRX-1763:** external content images render on new slices ([#3724](https://github.com/newsuk/times-components/issues/3724)) ([57d6b49](https://github.com/newsuk/times-components/commit/57d6b497c42878afe92a1e7a530843f89156df4c))
+
+
+
+
+
 # [1.155.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.5...@times-components/ts-newskit@1.155.0) (2024-01-15)
 
 
