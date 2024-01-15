@@ -136,10 +136,12 @@ export const Article = ({
         src={imageWithCorrectRatio && `${imageWithCorrectRatio.url}&resize=750`}
         alt={(images && images.alt) || headline}
         loadingAspectRatio={
+          // NOTE: This ensures external content image renders - will be removed once CP side resolved
           imageWithCorrectRatio &&
           getForcedExternalContentRatio(imageWithCorrectRatio, '3:2').ratio
         }
         loading="lazy"
+        // NOTE: This ensures external content image renders - will be removed once CP side resolved
         style={{
           aspectRatio:
             imageWithCorrectRatio &&
@@ -148,6 +150,19 @@ export const Article = ({
         }}
       />
     </a>
+  );
+
+  console.log('===images', images);
+  console.log('===imageWithCorrectRatio', imageWithCorrectRatio);
+  console.log(
+    '===aspectRatio',
+    imageWithCorrectRatio &&
+      getForcedExternalContentRatio(imageWithCorrectRatio, '3:2').aspectRatio
+  );
+  console.log(
+    '===ratio',
+    imageWithCorrectRatio &&
+      getForcedExternalContentRatio(imageWithCorrectRatio, '3:2').ratio
   );
 
   return (
