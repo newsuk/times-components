@@ -11,7 +11,7 @@ executors:
         resource_class: small
 
 orbs:
-  sonarcloud: sonarsource/sonarcloud@1.0.3
+  sonarcloud: sonarsource/sonarcloud@2.0.0
 
 commands:
     install-dependencies:

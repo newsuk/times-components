@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.155.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.5...@times-components/ts-newskit@1.155.0) (2024-01-15)
+
+
+### Features
+
+* **TMRX-1799:** refactor section header ([#3720](https://github.com/newsuk/times-components/issues/3720)) ([75ba900](https://github.com/newsuk/times-components/commit/75ba9008da141419077cf3bb9bd70744f1b4a153))
+
+
+
+
+
 ## [1.154.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.4...@times-components/ts-newskit@1.154.5) (2024-01-12)
 
 
