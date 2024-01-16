@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.157.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.156.0...@times-components/ts-newskit@1.157.0) (2024-01-16)
+
+
+### Features
+
+* **TMRX-1826:** update pagination, spacing and make byline clickable ([#3725](https://github.com/newsuk/times-components/issues/3725)) ([312f962](https://github.com/newsuk/times-components/commit/312f96229d29ea6103df9af25bde7a20b8091426))
+
+
+
+
+
 # [1.156.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.155.0...@times-components/ts-newskit@1.156.0) (2024-01-15)
 
 
