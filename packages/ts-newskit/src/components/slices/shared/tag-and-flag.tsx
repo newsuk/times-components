@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block, TextBlock, Divider, LinkInline } from 'newskit';
+import { Block, TextBlock, Divider, LinkInline, MQ } from 'newskit';
 import { ContainerInline, TextLink } from '../shared-styles';
 import { TagAndFlagProps } from '../../../slices/types';
 
@@ -33,14 +33,14 @@ export const TagAndFlag = ({
     return null;
   }
 
-  const defaultStylePreset = (xsStyle: string, mdStyle: string) =>
+  const defaultStylePreset = (preset: MQ<string>) =>
     flagOverrides && flagOverrides.stylePreset
       ? flagOverrides.stylePreset
-      : { xs: xsStyle, md: mdStyle };
-  const defaultTypographyPreset = (xsStyle: string, mdStyle: string) =>
+      : preset;
+  const defaultTypographyPreset = (preset: MQ<string>) =>
     flagOverrides && flagOverrides.typographyPreset
       ? flagOverrides.typographyPreset
-      : { xs: xsStyle, md: mdStyle };
+      : preset;
 
   return (
     <Block marginBlockStart={marginBlockStart} data-testid="tag-and-flag">
@@ -68,14 +68,14 @@ export const TagAndFlag = ({
             {byline.slug ? (
               <LinkInline
                 overrides={{
-                  typographyPreset: defaultTypographyPreset(
-                    'utilityButton010',
-                    'utilityButton005'
-                  ),
-                  stylePreset: defaultStylePreset(
-                    'inkNonEssential',
-                    'inkSubtle'
-                  )
+                  typographyPreset: defaultTypographyPreset({
+                    xs: 'utilityButton010',
+                    md: 'utilityButton005'
+                  }),
+                  stylePreset: defaultStylePreset({
+                    xs: 'inkNonEssential',
+                    md: 'inkSubtle'
+                  })
                 }}
                 href={`/profile/${byline.slug}`}
               >
@@ -83,11 +83,14 @@ export const TagAndFlag = ({
               </LinkInline>
             ) : (
               <TextBlock
-                typographyPreset={defaultTypographyPreset(
-                  'utilityButton010',
-                  'utilityButton005'
-                )}
-                stylePreset={defaultStylePreset('inkNonEssential', 'inkSubtle')}
+                typographyPreset={defaultTypographyPreset({
+                  xs: 'utilityButton010',
+                  md: 'utilityButton005'
+                })}
+                stylePreset={defaultStylePreset({
+                  xs: 'inkNonEssential',
+                  md: 'inkSubtle'
+                })}
                 as="span"
               >
                 {byline.name}
@@ -99,11 +102,14 @@ export const TagAndFlag = ({
       {flag && (
         <TagAndFlagWrapper>
           <TextBlock
-            typographyPreset={defaultTypographyPreset(
-              'utilityMeta010',
-              'utilityMeta005'
-            )}
-            stylePreset={defaultStylePreset('inkNonEssential', 'inkSubtle')}
+            typographyPreset={defaultTypographyPreset({
+              xs: 'utilityMeta010',
+              md: 'utilityMeta005'
+            })}
+            stylePreset={defaultStylePreset({
+              xs: 'inkNonEssential',
+              md: 'inkSubtle'
+            })}
             as="span"
           >
             {flag}
