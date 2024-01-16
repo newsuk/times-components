@@ -39,6 +39,7 @@ export const Paginations = ({
         onClick={() => handlePageChange(currentPage - 1)}
       />
       <PaginationItems
+        truncation={false}
         siblings={2}
         boundaries={1}
         overrides={{
