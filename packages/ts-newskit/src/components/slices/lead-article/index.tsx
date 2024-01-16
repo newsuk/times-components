@@ -45,7 +45,10 @@ export interface LeadArticleProps {
   isListView?: boolean;
   imageTop?: boolean;
   isLeadImage?: boolean;
-  byline?: string;
+  byline?: {
+    name: string;
+    slug?: string;
+  };
   hasTopBorder?: boolean;
   contentTop?: boolean;
   contentWidth?: MQ<string> | string;
@@ -224,7 +227,7 @@ export const LeadArticle = ({
           contentType={contentType}
           expirableFlags={expirableFlags}
           label={label}
-          marginBlockEnd="space020"
+          marginBlockEnd="space030"
         />
         <CardHeadlineLink
           href={url}

@@ -1,9 +1,7 @@
 import {
-  PaginationFirstItem,
   PaginationPrevItem,
   PaginationItems,
-  PaginationNextItem,
-  PaginationLastItem
+  PaginationNextItem
 } from 'newskit';
 import React from 'react';
 import { StyledPagination, StyledPaginationButton } from './styles';
@@ -36,16 +34,11 @@ export const Paginations = ({
       page={currentPage}
       onPageChange={onPageChange}
     >
-      <PaginationFirstItem
-        overrides={{ stylePreset: 'interfaceBrand010' }}
-        onClick={() => handlePageChange(1)}
-      />
       <PaginationPrevItem
         overrides={{ stylePreset: 'interfaceBrand010' }}
         onClick={() => handlePageChange(currentPage - 1)}
       />
       <PaginationItems
-        truncation
         siblings={2}
         boundaries={1}
         overrides={{
@@ -76,10 +69,6 @@ export const Paginations = ({
       <PaginationNextItem
         overrides={{ stylePreset: 'interfaceBrand010' }}
         onClick={() => handlePageChange(currentPage + 1)}
-      />
-      <PaginationLastItem
-        overrides={{ stylePreset: 'interfaceBrand010' }}
-        onClick={() => handlePageChange(Math.ceil(totalItems / pageSize))}
       />
     </StyledPagination>
   );
