@@ -3,6 +3,7 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import "./mocks";
 import AuthorProfile from "../src/author-profile";
+import { TCThemeProvider } from "@times-components/ts-newskit";
 
 // eslint-disable-next-line global-require
 jest.mock("@times-components/provider", () => require("./mock-provider"));
@@ -29,7 +30,9 @@ export default (props, platformTests = []) => {
         );
 
         const articleListHeader = TestRenderer.create(
-          articleList.props.articleListHeader
+          <TCThemeProvider>
+            {articleList.props.articleListHeader}
+          </TCThemeProvider>
         );
 
         expect(articleListHeader).toMatchSnapshot();
@@ -47,7 +50,9 @@ export default (props, platformTests = []) => {
         );
 
         const articleListHeader = TestRenderer.create(
-          articleList.props.articleListHeader
+          <TCThemeProvider>
+            {articleList.props.articleListHeader}
+          </TCThemeProvider>
         );
 
         expect(articleListHeader).toMatchSnapshot();
