@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.12.4](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.3...@times-components/jest-serializer@3.12.4) (2024-01-12)
+
+
+### Bug Fixes
+
+* **TMRX-1810:** global nav search bar placeholder disappears on focus ([#3714](https://github.com/newsuk/times-components/issues/3714)) ([d45b3fa](https://github.com/newsuk/times-components/commit/d45b3fafc3c0e7b5b1e6f39cdf2dc011fe399783))
+
+
+
+
+
 ## [3.12.3](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.2...@times-components/jest-serializer@3.12.3) (2024-01-11)
 
 
