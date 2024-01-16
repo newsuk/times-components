@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import { Headline } from 'newskit';
 
 interface SectionTitleItems {
-  title: string;
+  children: ReactNode;
 }
 
-export const SectionHeader = ({ title }: SectionTitleItems) => {
+export const SectionHeader = ({ children }: SectionTitleItems) => {
   return (
     <Headline
       headingAs="h1"
@@ -18,7 +18,7 @@ export const SectionHeader = ({ title }: SectionTitleItems) => {
         }
       }}
     >
-      {title}
+      {children}
     </Headline>
   );
 };

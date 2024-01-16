@@ -4,6 +4,7 @@ import { MenuContainer, Wrapper, MainMenu, StyledMenuSub } from '../styles';
 import { SecondaryMenuOptions, ResponsiveSecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
+import { getResponsiveNavData } from '../../../../utils';
 
 export const CreateMenu: React.FC<{
   options: SecondaryMenuOptions;
@@ -39,24 +40,15 @@ export const CreateMenu: React.FC<{
     [isExpanded]
   );
 
-  let charWidth = 0;
-  let showMoreMD = false;
-  let showMoreLG = false;
-  let showMoreXL = false;
-  data.map(({ title }, index) => {
-    if (title.length * 10 + charWidth > 1270) {
-      data[index].xl = true;
-      showMoreXL = true;
-    }
-    if (title.length * 10 + charWidth > 970) {
-      data[index].lg = true;
-      showMoreLG = true;
-    }
-    if (title.length * 10 + charWidth > 700) {
-      data[index].md = true;
-      showMoreMD = true;
-    }
-    charWidth += title.length * 10 + 32;
+  const {
+    responsiveMenuData,
+    showMoreMD,
+    showMoreLG,
+    showMoreXL
+  } = getResponsiveNavData<ResponsiveSecondaryMenuItem>(data, {
+    md: 700,
+    lg: 970,
+    xl: 1270
   });
 
   return (
@@ -68,7 +60,11 @@ export const CreateMenu: React.FC<{
       ref={contanierRef}
     >
       <Wrapper ref={navListRef}>
-        <NavItems data={data} options={options} clickHandler={clickHandler} />
+        <NavItems
+          data={responsiveMenuData}
+          options={options}
+          clickHandler={clickHandler}
+        />
       </Wrapper>
       <StyledMenuSub
         onClick={() => setIsExpanded(!isExpanded)}
@@ -96,7 +92,7 @@ export const CreateMenu: React.FC<{
             aria-label="menu-multiple-auto"
           >
             <CreateMoreMenu
-              data={data}
+              data={responsiveMenuData}
               options={options}
               clickHandler={clickHandler}
             />
