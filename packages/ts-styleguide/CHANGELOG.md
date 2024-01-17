@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.49.0](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.48.4...@times-components/ts-styleguide@1.49.0) (2024-01-17)
+
+
+### Features
+
+* **TMPZ-19:** added tracking for the puzzle category scroll buttons ([#3716](https://github.com/newsuk/times-components/issues/3716)) ([982afc5](https://github.com/newsuk/times-components/commit/982afc54adfeaf06543a046be1095e9d4ee74689))
+
+
+
+
+
 ## [1.48.4](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.48.3...@times-components/ts-styleguide@1.48.4) (2024-01-12)
 
 **Note:** Version bump only for package @times-components/ts-styleguide
