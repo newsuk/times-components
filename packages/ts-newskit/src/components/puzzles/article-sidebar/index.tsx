@@ -82,7 +82,8 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
             <CardMedia
               media={{
                 src: imgUrl,
-                width: '40px',
+                height: '40px',
+                width: 'auto',
                 alt: 'Puzzle thumbnail',
                 placeholderIcon: true,
                 overrides: {
