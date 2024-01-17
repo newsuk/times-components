@@ -11,7 +11,8 @@ import {
   Drawer,
   Visible,
   MenuSub,
-  MenuItem
+  MenuItem,
+  TextField
 } from 'newskit';
 
 export const TopNavContainer = styled(Stack)`
@@ -23,15 +24,6 @@ export const TopNavContainer = styled(Stack)`
     height: 50px;
   }
   z-index: 1;
-
-  ${getMediaQueryFromTheme('lg', 'xl')} {
-    & nav[aria-label='Main menu'] > ul > li {
-      display: none;
-    }
-    & nav[aria-label='Main menu'] > ul > li:nth-child(-n + 4) {
-      display: block;
-    }
-  }
 `;
 
 export const TopNavHide = styled(Hidden)`
@@ -216,5 +208,84 @@ export const StyledMenuSub = styled(MenuSub)`
 export const StyledMenuItem = styled(MenuItem)`
   &.active {
     ${getColorCssFromTheme('backgroundColor', 'interfaceNeutral010')};
+  }
+`;
+
+export const StyledMoreMenuSub = styled(MenuSub)<{
+  $showMoreMD: boolean;
+  $showMoreLG: boolean;
+  $showMoreXL: boolean;
+}>`
+  display: none;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $showMoreMD }) => $showMoreMD && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $showMoreLG }) => $showMoreLG && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $showMoreXL }) => $showMoreXL && `display: flex`};
+  }
+`;
+
+export const StyledMenuItemsDropdown = styled(MenuItem)<{
+  $showMD?: boolean;
+  $showLG?: boolean;
+  $showXL?: boolean;
+}>`
+  min-width: max-content;
+  display: none;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $showMD }) => $showMD && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $showLG }) => $showLG && `display: flex`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $showXL }) => $showXL && `display: flex`};
+  }
+`;
+
+export const StyledVisibleMenuItems = styled(MenuItem)<{
+  $hideMD?: boolean;
+  $hideLG?: boolean;
+  $hideXL?: boolean;
+}>`
+  min-width: max-content;
+
+  ${getMediaQueryFromTheme('md', 'lg')} {
+    ${({ $hideMD }) => $hideMD && `display: none`};
+  }
+  ${getMediaQueryFromTheme('lg', 'xl')} {
+    ${({ $hideLG }) => $hideLG && `display: none`};
+  }
+  ${getMediaQueryFromTheme('xl')} {
+    ${({ $hideXL }) => $hideXL && `display: none`};
+  `;
+
+export const StyledTextField = styled(TextField)`
+  cursor: text;
+  &::-webkit-input-placeholder {
+    color: #999;
+  }
+  &::-ms-input-placeholder {
+    color: #999;
+  }
+  &::-moz-placeholder {
+    color: #999;
+  }
+
+  &:focus-within {
+    &::-webkit-input-placeholder {
+      color: #999;
+    }
+    &::-ms-input-placeholder {
+      color: #999;
+    }
+    &::-moz-placeholder {
+      color: #999;
+    }
   }
 `;

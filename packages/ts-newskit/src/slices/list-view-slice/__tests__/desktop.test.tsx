@@ -40,15 +40,6 @@ describe('Render ListViewSliceDesktop', () => {
 });
 
 describe('ListViewSliceDesktop pagination', () => {
-  it('does not triggers when clicking first item and on first page', () => {
-    const { getByTestId } = renderComponent(
-      <ListViewSliceDesktop {...defaultProps} />
-    );
-    const paginationButton = getByTestId('pagination-first-item');
-    fireEvent.click(paginationButton);
-    expect(handlePageChange).not.toHaveBeenCalled();
-    expect(onPageChange).not.toHaveBeenCalled();
-  });
   it('does not triggers when clicking previous and on first page', () => {
     const { getByTestId } = renderComponent(
       <ListViewSliceDesktop {...defaultProps} />
@@ -58,14 +49,6 @@ describe('ListViewSliceDesktop pagination', () => {
     expect(handlePageChange).not.toHaveBeenCalled();
   });
 
-  it('does trigger when clicking first item and NOT on first page', () => {
-    const { getByTestId } = renderComponent(
-      <ListViewSliceDesktop {...defaultProps} currentPage={2} />
-    );
-    const paginationButton = getByTestId('pagination-first-item');
-    fireEvent.click(paginationButton);
-    expect(handlePageChange).toHaveBeenCalledWith(1);
-  });
   it('does trigger when clicking previous and NOT on first page', () => {
     const { getByTestId } = renderComponent(
       <ListViewSliceDesktop {...defaultProps} currentPage={2} />
@@ -80,16 +63,6 @@ describe('ListViewSliceDesktop pagination', () => {
       <ListViewSliceDesktop {...defaultProps} />
     );
     const paginationButton = getByTestId('pagination-next-item');
-    fireEvent.click(paginationButton);
-    expect(handlePageChange).toHaveBeenCalledWith(2);
-    expect(onPageChange).toHaveBeenCalled();
-  });
-
-  it('triggers correctly when clicking last item', () => {
-    const { getByTestId } = renderComponent(
-      <ListViewSliceDesktop {...defaultProps} />
-    );
-    const paginationButton = getByTestId('pagination-last-item');
     fireEvent.click(paginationButton);
     expect(handlePageChange).toHaveBeenCalledWith(2);
     expect(onPageChange).toHaveBeenCalled();

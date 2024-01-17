@@ -7,7 +7,7 @@ import { TCThemeProvider } from '../index';
 const renderComponent = () =>
   render(
     <TCThemeProvider>
-      <SectionHeader title="test" />
+      <SectionHeader>test</SectionHeader>
     </TCThemeProvider>
   );
 

@@ -61,7 +61,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                   class="css-gpke1l"
                 >
                   <div
-                    class="article-info css-1fjzok1"
+                    class="article-info css-t0h780"
                   >
                     <span
                       class="css-ciimpt"
@@ -249,7 +249,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                   class="css-gpke1l"
                 >
                   <div
-                    class="article-info css-1fjzok1"
+                    class="article-info css-t0h780"
                   >
                     <span
                       class="css-ciimpt"
@@ -437,7 +437,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                   class="css-gpke1l"
                 >
                   <div
-                    class="article-info css-1fjzok1"
+                    class="article-info css-t0h780"
                   >
                     <span
                       class="css-ciimpt"
@@ -625,7 +625,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                   class="css-gpke1l"
                 >
                   <div
-                    class="article-info css-1fjzok1"
+                    class="article-info css-t0h780"
                   >
                     <span
                       class="css-ciimpt"
@@ -803,7 +803,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                   class="css-gpke1l"
                 >
                   <div
-                    class="article-info css-1fjzok1"
+                    class="article-info css-t0h780"
                   >
                     <span
                       class="css-ciimpt"
@@ -1009,7 +1009,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                   class="css-gpke1l"
                 >
                   <div
-                    class="article-info css-1fjzok1"
+                    class="article-info css-t0h780"
                   >
                     <span
                       class="css-ciimpt"
@@ -1197,7 +1197,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                   class="css-gpke1l"
                 >
                   <div
-                    class="article-info css-1fjzok1"
+                    class="article-info css-t0h780"
                   >
                     <span
                       class="css-ciimpt"
@@ -1375,7 +1375,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                   class="css-gpke1l"
                 >
                   <div
-                    class="article-info css-1fjzok1"
+                    class="article-info css-t0h780"
                   >
                     <span
                       class="css-ciimpt"
@@ -1563,7 +1563,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                   class="css-gpke1l"
                 >
                   <div
-                    class="article-info css-1fjzok1"
+                    class="article-info css-t0h780"
                   >
                     <span
                       class="css-ciimpt"
@@ -1741,7 +1741,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                   class="css-gpke1l"
                 >
                   <div
-                    class="article-info css-1fjzok1"
+                    class="article-info css-t0h780"
                   >
                     <span
                       class="css-ciimpt"
@@ -1907,34 +1907,6 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
             <button
               aria-disabled="true"
               class="css-hu5lgw"
-              data-testid="pagination-first-item"
-              disabled=""
-              type="button"
-            >
-              <svg
-                aria-hidden="true"
-                class="css-1my36lh-EmotionIconBase ex0cdmw0"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"
-                />
-                <path
-                  d="M24 24H0V0h24v24z"
-                  fill="none"
-                />
-              </svg>
-            </button>
-          </li>
-          <li
-            class="css-1o2fxxh"
-          >
-            <button
-              aria-disabled="true"
-              class="css-hu5lgw"
               data-testid="pagination-prev-item"
               disabled=""
               type="button"
@@ -2021,33 +1993,6 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                 />
                 <path
                   d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                />
-              </svg>
-            </button>
-          </li>
-          <li
-            class="css-1o2fxxh"
-          >
-            <button
-              aria-label="go to last page"
-              class="css-bi08xr"
-              data-testid="pagination-last-item"
-              type="button"
-            >
-              <svg
-                aria-hidden="true"
-                class="css-1my36lh-EmotionIconBase ex0cdmw0"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0V0z"
-                  fill="none"
-                />
-                <path
-                  d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"
                 />
               </svg>
             </button>

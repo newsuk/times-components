@@ -55,7 +55,10 @@ export type TagAndFlagProps = {
     typographyPreset?: MQ<string> | string;
     stylePreset?: MQ<string> | string;
   };
-  byline?: string;
+  byline?: {
+    name: string;
+    slug?: string;
+  };
   isListView?: boolean;
   tag?: {
     label: string;

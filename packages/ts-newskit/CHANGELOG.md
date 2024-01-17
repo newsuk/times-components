@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.158.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.157.0...@times-components/ts-newskit@1.158.0) (2024-01-16)
+
+
+### Features
+
+* **TMRX-1826:** remove truncated pagination ([#3727](https://github.com/newsuk/times-components/issues/3727)) ([1eea835](https://github.com/newsuk/times-components/commit/1eea8350c39669ee9a0ed40ecf929a3033d0b472))
+* **tmrx-1832:** corrected getResponsiveNavData function ([#3728](https://github.com/newsuk/times-components/issues/3728)) ([c29d6ac](https://github.com/newsuk/times-components/commit/c29d6ac65a9d31b305ef4a6ce15278f4064059c5))
+
+
+
+
+
+# [1.157.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.156.0...@times-components/ts-newskit@1.157.0) (2024-01-16)
+
+
+### Features
+
+* **TMRX-1826:** update pagination, spacing and make byline clickable ([#3725](https://github.com/newsuk/times-components/issues/3725)) ([312f962](https://github.com/newsuk/times-components/commit/312f96229d29ea6103df9af25bde7a20b8091426))
+
+
+
+
+
+# [1.156.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.155.0...@times-components/ts-newskit@1.156.0) (2024-01-15)
+
+
+### Features
+
+* **TMRX-1763:** external content images render on new slices ([#3724](https://github.com/newsuk/times-components/issues/3724)) ([57d6b49](https://github.com/newsuk/times-components/commit/57d6b497c42878afe92a1e7a530843f89156df4c))
+
+
+
+
+
+# [1.155.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.5...@times-components/ts-newskit@1.155.0) (2024-01-15)
+
+
+### Features
+
+* **TMRX-1799:** refactor section header ([#3720](https://github.com/newsuk/times-components/issues/3720)) ([75ba900](https://github.com/newsuk/times-components/commit/75ba9008da141419077cf3bb9bd70744f1b4a153))
+
+
+
+
+
+## [1.154.5](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.4...@times-components/ts-newskit@1.154.5) (2024-01-12)
+
+
+### Bug Fixes
+
+* **TMRX-1680:** global nav bar appears to be cropped on ([#3719](https://github.com/newsuk/times-components/issues/3719)) ([af3f52c](https://github.com/newsuk/times-components/commit/af3f52c8837db75cdf822a48dff64f7a39223d89))
+
+
+
+
+
+## [1.154.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.3...@times-components/ts-newskit@1.154.4) (2024-01-12)
+
+
+### Bug Fixes
+
+* **TMRX-1810:** global nav search bar placeholder disappears on focus ([#3714](https://github.com/newsuk/times-components/issues/3714)) ([d45b3fa](https://github.com/newsuk/times-components/commit/d45b3fafc3c0e7b5b1e6f39cdf2dc011fe399783))
+
+
+
+
+
 ## [1.154.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.154.2...@times-components/ts-newskit@1.154.3) (2024-01-12)
 
 **Note:** Version bump only for package @times-components/ts-newskit
