@@ -4,6 +4,7 @@ import { CardsContainer } from '../index';
 import '@testing-library/jest-dom';
 import { fireEvent } from '@testing-library/react';
 import { puzzleGame } from './../fixtures/puzzleGame.json';
+import { TrackingContextProvider } from '../../../../utils/TrackingContextProvider';
 
 describe('CardsContainer tests', () => {
   it('should render a snapshot without scroller', () => {
@@ -67,5 +68,37 @@ describe('CardsContainer tests', () => {
 
     fireEvent.click(btnScrollLeft);
     expect(scrollContainer.scrollLeft).toBeLessThan(0);
+  });
+
+  const renderControlsWithTracking = (analyticsStream?: (event: any) => void) =>
+    render(
+      <TrackingContextProvider
+        context={{
+          component: 'breadcrumb',
+          attrs: {}
+        }}
+        analyticsStream={analyticsStream}
+      >
+        <CardsContainer
+          cards={Array(7).fill(puzzleGame)}
+          title="Crosswords"
+          seeAllLink="https://newskit.co.uk/components"
+          isScrollable={true}
+        />
+      </TrackingContextProvider>
+    );
+  it('calls analyticsStream when you click scroll right', () => {
+    const analyticsStream = jest.fn();
+    const { getByTestId } = renderControlsWithTracking(analyticsStream);
+    const scrollRight = getByTestId('scroll-right');
+    fireEvent.click(scrollRight);
+    expect(analyticsStream).toHaveBeenCalledTimes(1);
+  });
+  it('calls analyticsStream when you click scroll left', () => {
+    const analyticsStream = jest.fn();
+    const { getByTestId } = renderControlsWithTracking(analyticsStream);
+    const scrollLeft = getByTestId('scroll-left');
+    fireEvent.click(scrollLeft);
+    expect(analyticsStream).toHaveBeenCalledTimes(1);
   });
 });
