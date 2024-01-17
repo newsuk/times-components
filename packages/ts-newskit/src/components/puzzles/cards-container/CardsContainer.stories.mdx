@@ -3,7 +3,9 @@ import { CardsContainer } from "./index";
 import { NewsKitProvider, Block } from 'newskit';
 import { PuzzlesWebLightTheme } from '../../../theme';
 import { ContentWrapper } from '../../../utils/contentWrapper.tsx';
+import { TrackingContextProvider } from '../../../utils/TrackingContextProvider';
 import { puzzleGame} from './fixtures/puzzleGame.json';
+import analyticsStream from "./fixtures/analytics-actions"
 
 <Meta
   title="Newskit Components/Puzzles/Cards Container"
@@ -24,9 +26,18 @@ Please click the 'Canvas' tab for a better viewing experience, where you can upd
 
 export const CardsContainerStory = ({cards, title, isScrollable, seeAllLink, isImageCropped, isDashHidden}) => (
   <NewsKitProvider theme={PuzzlesWebLightTheme}>
-    <ContentWrapper marginInline='auto' paddingBlock='space020' paddingInline='space020'>
-      <CardsContainer cards={cards} title={title} isScrollable={isScrollable} seeAllLink={seeAllLink} isImageCropped={isImageCropped} isDashHidden={isDashHidden}/>
-    </ContentWrapper>
+    <TrackingContextProvider
+      analyticsStream={analyticsStream}
+      context={{
+        component: 'breadcrumb',
+        attrs: {
+        }
+      }}
+    >
+      <ContentWrapper marginInline='auto' paddingBlock='space020' paddingInline='space020'>
+        <CardsContainer cards={cards} title={title} isScrollable={isScrollable} seeAllLink={seeAllLink} isImageCropped={isImageCropped} isDashHidden={isDashHidden}/>
+      </ContentWrapper>
+    </TrackingContextProvider>
   </NewsKitProvider>
 );
 
