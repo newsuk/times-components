@@ -23,11 +23,12 @@ export function getResponsiveNavData<T extends { title: string }>(
       md: length * 10 + charWidth > md
     };
     charWidth += length * 10 + 32;
-    showMoreMD = length * 10 + charWidth > md;
-    showMoreLG = length * 10 + charWidth > lg;
-    showMoreXL = length * 10 + charWidth > xl;
     return copiedData;
   });
+
+  showMoreMD = charWidth > md;
+  showMoreLG = charWidth > lg;
+  showMoreXL = charWidth > xl;
 
   return { responsiveMenuData, showMoreMD, showMoreLG, showMoreXL };
 }
