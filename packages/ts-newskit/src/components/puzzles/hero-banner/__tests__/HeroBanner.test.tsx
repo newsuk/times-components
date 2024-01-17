@@ -55,4 +55,54 @@ describe('HeroBanner', () => {
 
     expect(handleClick).toHaveBeenCalled();
   });
+
+  it('renders Sudoku icon when puzzleType is sudoku', () => {
+    const { getByTestId } = renderComponent({
+      ...defaultProps,
+      puzzleType: 'sudoku'
+    });
+
+    const sudokuIcon = getByTestId('sudoku-icon');
+    expect(sudokuIcon).toBeInTheDocument();
+  });
+
+  it('renders Word Puzzles icon when puzzleType is word-puzzles', () => {
+    const { getByTestId } = renderComponent({
+      ...defaultProps,
+      puzzleType: 'word-puzzles'
+    });
+
+    const wordpuzzlesIcon = getByTestId('wordpuzzles-icon');
+    expect(wordpuzzlesIcon).toBeInTheDocument();
+  });
+
+  it('renders Numbers and Logic icon when puzzleType is numbers-and-logic', () => {
+    const { getByTestId } = renderComponent({
+      ...defaultProps,
+      puzzleType: 'numbers-and-logic'
+    });
+
+    const numberslogicIcon = getByTestId('numberslogic-icon');
+    expect(numberslogicIcon).toBeInTheDocument();
+  });
+
+  it('renders Quizzes and Teasers icon when puzzleType is quizzes-and-teasers', () => {
+    const { getByTestId } = renderComponent({
+      ...defaultProps,
+      puzzleType: 'quizzes-and-teasers'
+    });
+
+    const quizzesandteasersIcon = getByTestId('quizzes-and-teasers-icon');
+    expect(quizzesandteasersIcon).toBeInTheDocument();
+  });
+
+  it('renders Board and CardGames icon when puzzleType is board-and-card-games', () => {
+    const { getByTestId } = renderComponent({
+      ...defaultProps,
+      puzzleType: 'board-and-card-games'
+    });
+
+    const boardandcardgamesIcon = getByTestId('board-and-card-games-icon');
+    expect(boardandcardgamesIcon).toBeInTheDocument();
+  });
 });

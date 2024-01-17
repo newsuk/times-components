@@ -24,6 +24,7 @@ import {
 } from '../../../slices/types';
 import { articleClickTracking } from '../../../utils/tracking';
 import { ArticleTileInfo } from '../shared/articleTileInfo';
+import { getForcedExternalContentRatio } from '../../../utils';
 
 export interface LeadArticleProps {
   id: string;
@@ -44,7 +45,10 @@ export interface LeadArticleProps {
   isListView?: boolean;
   imageTop?: boolean;
   isLeadImage?: boolean;
-  byline?: string;
+  byline?: {
+    name: string;
+    slug?: string;
+  };
   hasTopBorder?: boolean;
   contentTop?: boolean;
   contentWidth?: MQ<string> | string;
@@ -93,10 +97,12 @@ export const LeadArticle = ({
     expirableFlags,
     label
   } = article;
+
   const imageWithCorrectRatio =
     images && images.crops
       ? images.crops.find(crop => crop.ratio === loadingAspectRatio) ||
-        images.crops.find(crop => crop.ratio === '3:2')
+        images.crops.find(crop => crop.ratio === '3:2') ||
+        images.crops.find(crop => crop.ratio === '*')
       : undefined;
 
   const hasImage =
@@ -149,7 +155,12 @@ export const LeadArticle = ({
           >
             <FullWidthGridLayoutItem
               area="media"
-              ratio={imageWithCorrectRatio!.ratio}
+              ratio={
+                // NOTE: This ensures external content image renders - will be removed once CP side resolved
+                imageWithCorrectRatio &&
+                getForcedExternalContentRatio(imageWithCorrectRatio, '3:2')
+                  .ratio
+              }
               className="lead-article-image"
               marginBlockEnd={hasCaptionOrCredits ? 'space020' : 'space000'}
             >
@@ -161,9 +172,21 @@ export const LeadArticle = ({
                   }
                   alt={(images && images.alt) || headline}
                   loadingAspectRatio={
-                    imageWithCorrectRatio && imageWithCorrectRatio.ratio
+                    // NOTE: This ensures external content image renders - will be removed once CP side resolved
+                    imageWithCorrectRatio &&
+                    getForcedExternalContentRatio(imageWithCorrectRatio, '3:2')
+                      .ratio
                   }
                   className="lcpItem"
+                  // NOTE: This ensures external content image renders - will be removed once CP side resolved
+                  style={{
+                    aspectRatio:
+                      imageWithCorrectRatio &&
+                      getForcedExternalContentRatio(
+                        imageWithCorrectRatio,
+                        '3:2'
+                      ).aspectRatio
+                  }}
                 />
               </a>
             </FullWidthGridLayoutItem>
@@ -204,7 +227,7 @@ export const LeadArticle = ({
           contentType={contentType}
           expirableFlags={expirableFlags}
           label={label}
-          marginBlockEnd="space020"
+          marginBlockEnd="space030"
         />
         <CardHeadlineLink
           href={url}

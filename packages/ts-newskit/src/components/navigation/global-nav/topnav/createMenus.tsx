@@ -1,7 +1,18 @@
 import React, { useState } from 'react';
-import { Menu, MenuItem, MenuSub, MenuDivider, Visible } from 'newskit';
-import { AccountMenu } from '../styles';
-import { MenuItemParent } from '../types';
+import { Menu, MenuItem, MenuSub, MenuDivider } from 'newskit';
+import {
+  AccountMenu,
+  StyledMenuItemsDropdown,
+  StyledVisibleMenuItems,
+  StyledMoreMenuSub
+} from '../styles';
+import { MenuItemParent, ResponsiveMenuItemParent } from '../types';
+import { getResponsiveNavData } from '../../../../utils';
+
+const XL_BREAKPOINT = 1440;
+const LG_BREAKPOINT = 1024;
+const MD_BREAKPOINT = 768;
+const OTHER_NAV_ELEMENTS = 540;
 
 const menuItemPresets = {
   minHeight: '60px',
@@ -18,7 +29,7 @@ const hasClickedOnMenu = (
   event.relatedTarget.getAttribute('data-testid') === testId;
 
 export const createMenu = (
-  menuData: MenuItemParent[],
+  menuData: ResponsiveMenuItemParent[],
   clickHandler: (title: string) => void
 ) => {
   const [moreSelected, setMoreSelected] = useState<boolean>(false);
@@ -28,83 +39,96 @@ export const createMenu = (
     clickHandler('More');
   };
 
-  const moreMenuLength = menuData.length - 4;
-  const navItems = menuData
-    .slice(0, menuData.length)
-    .map(({ title, url }: { title: string; url: string }) => (
-      <MenuItem
-        href={url}
-        overrides={{
-          ...menuItemPresets,
-          paddingInline: { xs: 'space000', md: 'space040' },
-          paddingBlockEnd: { xs: 'space000', md: 'space040' },
-          paddingBlockStart: { xs: 'space010', md: 'space040' },
-          stylePreset: {
-            xs: 'menuItemScroll',
-            md: 'menuItem'
-          }
-        }}
-        onClick={() => clickHandler(title)}
-        key={url}
-      >
-        {title}
-      </MenuItem>
-    ));
+  const {
+    responsiveMenuData,
+    showMoreMD,
+    showMoreLG,
+    showMoreXL
+  } = getResponsiveNavData(menuData, {
+    md: MD_BREAKPOINT - OTHER_NAV_ELEMENTS,
+    lg: LG_BREAKPOINT - OTHER_NAV_ELEMENTS,
+    xl: XL_BREAKPOINT - OTHER_NAV_ELEMENTS
+  });
+
+  const navItems = responsiveMenuData.map(({ title, url, md, lg, xl }) => (
+    <StyledVisibleMenuItems
+      href={url}
+      overrides={{
+        ...menuItemPresets,
+        paddingInline: { xs: 'space000', md: 'space040' },
+        paddingBlockEnd: { xs: 'space000', md: 'space040' },
+        paddingBlockStart: { xs: 'space010', md: 'space040' },
+        stylePreset: {
+          xs: 'menuItemScroll',
+          md: 'menuItem'
+        }
+      }}
+      onClick={() => clickHandler(title)}
+      key={url}
+      $hideMD={md}
+      $hideLG={lg}
+      $hideXL={xl}
+    >
+      {title}
+    </StyledVisibleMenuItems>
+  ));
 
   return (
     <>
       {navItems}
-      <Visible lg>
-        <MenuSub
-          title="More"
-          onClick={handleMoreClick}
-          selected={moreSelected}
-          expanded={moreSelected}
-          onBlur={e => {
-            // Close menu when it loses focus if user has not clicked on it
-            !hasClickedOnMenu(e, 'more-menu-item') && setMoreSelected(false);
-          }}
-          overrides={{
-            ...menuItemPresets,
-            list: { stylePreset: 'moreSubMenu' }
-          }}
-          data-testid="more-sub-menu"
+
+      <StyledMoreMenuSub
+        title="More"
+        onClick={handleMoreClick}
+        selected={moreSelected}
+        expanded={moreSelected}
+        onBlur={e => {
+          // Close menu when it loses focus if user has not clicked on it
+          !hasClickedOnMenu(e, 'more-menu-item') && setMoreSelected(false);
+        }}
+        overrides={{
+          ...menuItemPresets,
+          list: { stylePreset: 'moreSubMenu' }
+        }}
+        data-testid="more-sub-menu"
+        $showMoreMD={showMoreMD}
+        $showMoreLG={showMoreLG}
+        $showMoreXL={showMoreXL}
+      >
+        <Menu
+          vertical
+          overrides={{ spaceInline: 'sizing000' }}
+          aria-label="More menu items"
         >
-          <Menu
-            vertical
-            overrides={{ spaceInline: 'sizing000' }}
-            aria-label="More menu items"
-          >
-            {createMoreMenu(menuData, moreMenuLength, clickHandler)}
-          </Menu>
-        </MenuSub>
-      </Visible>
+          {createMoreMenu(responsiveMenuData, clickHandler)}
+        </Menu>
+      </StyledMoreMenuSub>
     </>
   );
 };
 
 const createMoreMenu = (
-  menuData: MenuItemParent[],
-  moreMenuLength: number,
+  menuData: ResponsiveMenuItemParent[],
   clickHandler: (title: string) => void
 ) =>
-  menuData
-    .slice(-moreMenuLength)
-    .map(({ title, url }: { title: string; url: string }) => (
-      <MenuItem
-        href={url}
-        data-testid="more-menu-item"
-        overrides={{
-          minWidth: '200px',
-          stylePreset: 'subMenuItem',
-          typographyPreset: 'topNav010'
-        }}
-        key={url}
-        onClick={() => clickHandler(`more: ${title}`)}
-      >
-        {title}
-      </MenuItem>
-    ));
+  menuData.map(({ title, url, md, lg, xl }) => (
+    <StyledMenuItemsDropdown
+      href={url}
+      data-testid="more-menu-item"
+      overrides={{
+        minWidth: '200px',
+        stylePreset: 'subMenuItem',
+        typographyPreset: 'topNav010'
+      }}
+      key={url}
+      onClick={() => clickHandler(`more: ${title}`)}
+      $showMD={md}
+      $showLG={lg}
+      $showXL={xl}
+    >
+      {title}
+    </StyledMenuItemsDropdown>
+  ));
 
 export const createAccountMenu = (
   isLoggedIn: boolean,

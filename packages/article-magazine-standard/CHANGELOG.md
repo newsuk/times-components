@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.74.51](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.74.50...@times-components/article-magazine-standard@3.74.51) (2024-01-16)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.74.50](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.74.49...@times-components/article-magazine-standard@3.74.50) (2024-01-16)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.74.49](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.74.48...@times-components/article-magazine-standard@3.74.49) (2024-01-15)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.74.48](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.74.47...@times-components/article-magazine-standard@3.74.48) (2024-01-15)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.74.47](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.74.46...@times-components/article-magazine-standard@3.74.47) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.74.46](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.74.45...@times-components/article-magazine-standard@3.74.46) (2024-01-12)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
 ## [3.74.45](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.74.44...@times-components/article-magazine-standard@3.74.45) (2024-01-12)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard

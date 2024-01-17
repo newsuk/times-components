@@ -52,7 +52,10 @@
       },
       "flag": "The Times",
       "datePublished": "2023-12-11T16:00:00.000Z",
-      "byline": "ibrahim"
+      "byline": {
+        "name": "ibrahim",
+        "slug": "ibrahim"
+      }
     },
 
     {
@@ -107,7 +110,10 @@
       },
       "flag": "The Times",
       "datePublished": "2023-04-11T16:00:00.000Z",
-      "byline": "ibrahim"
+      "byline": {
+        "name": "ibrahim",
+        "slug": "ibrahim"
+      }
     },
     {
       "hasVideo": false,
@@ -161,7 +167,10 @@
       },
       "flag": "The Sunday Times",
       "datePublished": "2023-02-11T16:00:00.000Z",
-      "byline": "ibrahim"
+      "byline": {
+        "name": "ibrahim",
+        "slug": "ibrahim"
+      }
     },
     {
       "hasVideo": false,
@@ -215,7 +224,10 @@
       },
       "flag": "The Times",
       "datePublished": "2023-11-11T16:00:00.000Z",
-      "byline": "ibrahim"
+      "byline": {
+        "name": "ibrahim",
+        "slug": "ibrahim"
+      }
     },
     {
       "hasVideo": false,
@@ -269,7 +281,10 @@
       },
       "flag": "The Sunday Times",
       "datePublished": "2023-11-11T16:00:00.000Z",
-      "byline": "ibrahim"
+      "byline": {
+        "name": "ibrahim",
+        "slug": "ibrahim"
+      }
     },
     {
       "hasVideo": false,
@@ -323,7 +338,10 @@
       },
       "flag": "The Times",
       "datePublished": "2023-10-11T16:00:00.000Z",
-      "byline": "ibrahim"
+      "byline": {
+        "name": "ibrahim",
+        "slug": "ibrahim"
+      }
     },
     {
       "hasVideo": false,
@@ -377,7 +395,9 @@
       },
       "flag": "The Sunday Times",
       "datePublished": "2023-09-11T16:00:00.000Z",
-      "byline": "ibrahim kurhan"
+      "byline": {
+        "name": "ibrahim kurhan"
+      }
     },
     {
       "hasVideo": false,
@@ -432,7 +452,10 @@
       "flag": "The Times",
 
       "datePublished": "2023-09-11T16:00:00.000Z",
-      "byline": "ibrahim"
+      "byline": {
+        "name": "ibrahim",
+        "slug": "ibrahim"
+      }
     },
     {
       "hasVideo": false,
@@ -486,7 +509,10 @@
       },
       "flag": "The Times",
       "datePublished": "2023-06-11T16:00:00.000Z",
-      "byline": "ibrahim"
+      "byline": {
+        "name": "ibrahim",
+        "slug": "ibrahim"
+      }
     },
     {
       "hasVideo": false,
@@ -540,7 +566,10 @@
       },
       "flag": "The Times",
       "datePublished": "2023-06-11T16:00:00.000Z",
-      "byline": "ibrahim"
+      "byline": {
+        "name": "ibrahim",
+        "slug": "ibrahim"
+      }
     }
   ]
 }
