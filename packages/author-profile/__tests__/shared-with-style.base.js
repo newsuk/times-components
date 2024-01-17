@@ -1,9 +1,9 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
+import { TCThemeProvider } from "@times-components/ts-newskit";
 import { iterator } from "@times-components/test-utils";
 import "./mocks";
 import AuthorProfile from "../src/author-profile";
-import { TCThemeProvider } from "@times-components/ts-newskit";
 
 // eslint-disable-next-line global-require
 jest.mock("@times-components/provider", () => require("./mock-provider"));
