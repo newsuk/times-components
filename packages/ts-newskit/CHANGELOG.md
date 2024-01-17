@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.159.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.158.0...@times-components/ts-newskit@1.159.0) (2024-01-17)
+
+
+### Features
+
+* **TMRX-1826:** update pagination props ([#3729](https://github.com/newsuk/times-components/issues/3729)) ([a83b5bf](https://github.com/newsuk/times-components/commit/a83b5bff4526e0f93cdb39c606f8443201a1e4c8))
+
+
+
+
+
 # [1.158.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.157.0...@times-components/ts-newskit@1.158.0) (2024-01-16)
 
 
