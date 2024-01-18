@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.16.0](https://github.com/newsuk/times-components/compare/@times-components/link@3.15.4...@times-components/link@3.16.0) (2024-01-17)
+
+
+### Features
+
+* **TMPZ-19:** added tracking for the puzzle category scroll buttons ([#3716](https://github.com/newsuk/times-components/issues/3716)) ([982afc5](https://github.com/newsuk/times-components/commit/982afc54adfeaf06543a046be1095e9d4ee74689))
+
+
+
+
+
 ## [3.15.4](https://github.com/newsuk/times-components/compare/@times-components/link@3.15.3...@times-components/link@3.15.4) (2024-01-12)
 
 **Note:** Version bump only for package @times-components/link
