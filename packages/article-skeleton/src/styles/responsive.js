@@ -67,6 +67,7 @@ export const SidebarWarpper = styled.div`
   position: sticky;
   top: 130px;
   display: none;
+  padding-top: 32px;
 
   @media (min-width: ${breakpoints.wide}px) {
     display: block;
