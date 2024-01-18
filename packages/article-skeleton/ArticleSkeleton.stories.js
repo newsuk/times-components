@@ -6,6 +6,7 @@ import { sections } from "@times-components/storybook";
 import { HelmetProvider } from "react-helmet-async";
 import pick from "lodash.pick";
 
+import { TCThemeProvider } from "@times-components/ts-newskit";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import storybookReporter from "@times-components/tealium-utils";
@@ -75,38 +76,40 @@ storiesOf("Composed/Article Skeleton", module).add("Article Selection", () => {
           <ContextProviderWithDefaults
             value={{ theme: { scale, sectionColour } }}
           >
-            <ArticleSkeleton
-              adConfig={articleAdConfig}
-              commentingConfig={commentingConfig}
-              analyticsStream={storybookReporter}
-              data={data}
-              isPreview={false}
-              onAuthorPress={preventDefaultedAction(decorateAction)(
-                "onAuthorPress"
-              )}
-              onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-                "onCommentGuidelinesPress"
-              )}
-              onCommentsPress={preventDefaultedAction(decorateAction)(
-                "onCommentsPress"
-              )}
-              onLinkPress={preventDefaultedAction(decorateAction)(
-                "onLinkPress"
-              )}
-              onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-                "onRelatedArticlePress"
-              )}
-              onTopicPress={preventDefaultedAction(decorateAction)(
-                "onTopicPress"
-              )}
-              onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-                "onTwitterLinkPress"
-              )}
-              onVideoPress={preventDefaultedAction(decorateAction)(
-                "onVideoPress"
-              )}
-              onViewableItemsChanged={() => null}
-            />
+            <TCThemeProvider>
+              <ArticleSkeleton
+                adConfig={articleAdConfig}
+                commentingConfig={commentingConfig}
+                analyticsStream={storybookReporter}
+                data={data}
+                isPreview={false}
+                onAuthorPress={preventDefaultedAction(decorateAction)(
+                  "onAuthorPress"
+                )}
+                onCommentGuidelinesPress={preventDefaultedAction(
+                  decorateAction
+                )("onCommentGuidelinesPress")}
+                onCommentsPress={preventDefaultedAction(decorateAction)(
+                  "onCommentsPress"
+                )}
+                onLinkPress={preventDefaultedAction(decorateAction)(
+                  "onLinkPress"
+                )}
+                onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+                  "onRelatedArticlePress"
+                )}
+                onTopicPress={preventDefaultedAction(decorateAction)(
+                  "onTopicPress"
+                )}
+                onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+                  "onTwitterLinkPress"
+                )}
+                onVideoPress={preventDefaultedAction(decorateAction)(
+                  "onVideoPress"
+                )}
+                onViewableItemsChanged={() => null}
+              />
+            </TCThemeProvider>
           </ContextProviderWithDefaults>
         </MockBookmarksProvider>
       </TrackingContextProvider>
