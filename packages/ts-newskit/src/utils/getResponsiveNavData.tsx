@@ -1,34 +1,51 @@
 export function getResponsiveNavData<T extends { title: string }>(
   menuData: T[],
-  limit: { md: number; lg: number; xl: number }
+  limit: { md: number; lg: number; xl: number; xxl?: number }
 ): {
-  responsiveMenuData: Array<T & { xl: boolean; lg: boolean; md: boolean }>;
+  responsiveMenuData: Array<
+    T & { xxl?: boolean; xl: boolean; lg: boolean; md: boolean }
+  >;
   showMoreMD: boolean;
   showMoreLG: boolean;
   showMoreXL: boolean;
+  showMoreXXL: boolean;
+  charWidth: number;
 } {
   let charWidth = 0;
   let showMoreMD = false;
   let showMoreLG = false;
   let showMoreXL = false;
+  let showMoreXXL = false;
 
-  const { md, lg, xl } = limit;
+  const { md, lg, xl, xxl } = limit;
 
   const responsiveMenuData = menuData.map(data => {
     const length = data.title.length;
+    const addingWidth = length * 10 + 32;
     const copiedData = {
       ...data,
-      xl: length * 10 + charWidth > xl,
-      lg: length * 10 + charWidth > lg,
-      md: length * 10 + charWidth > md
+      ...(xxl !== undefined ? { xxl: addingWidth + charWidth > xxl } : {}),
+      xl: addingWidth + charWidth > xl,
+      lg: addingWidth + charWidth > lg,
+      md: addingWidth + charWidth > md
     };
-    charWidth += length * 10 + 32;
+    charWidth += addingWidth;
     return copiedData;
   });
 
+  if (xxl !== undefined) {
+    showMoreXXL = charWidth > xxl;
+  }
   showMoreMD = charWidth > md;
   showMoreLG = charWidth > lg;
   showMoreXL = charWidth > xl;
 
-  return { responsiveMenuData, showMoreMD, showMoreLG, showMoreXL };
+  return {
+    responsiveMenuData,
+    showMoreMD,
+    showMoreLG,
+    showMoreXL,
+    showMoreXXL,
+    charWidth
+  };
 }

@@ -9,6 +9,7 @@ import {
 import { MenuItemParent, ResponsiveMenuItemParent } from '../types';
 import { getResponsiveNavData } from '../../../../utils';
 
+const XXL_BREAKPOINT = 1700;
 const XL_BREAKPOINT = 1440;
 const LG_BREAKPOINT = 1024;
 const MD_BREAKPOINT = 768;
@@ -43,14 +44,16 @@ export const createMenu = (
     responsiveMenuData,
     showMoreMD,
     showMoreLG,
-    showMoreXL
+    showMoreXL,
+    showMoreXXL,
   } = getResponsiveNavData(menuData, {
     md: MD_BREAKPOINT - OTHER_NAV_ELEMENTS,
     lg: LG_BREAKPOINT - OTHER_NAV_ELEMENTS,
-    xl: XL_BREAKPOINT - OTHER_NAV_ELEMENTS
+    xl: XL_BREAKPOINT - OTHER_NAV_ELEMENTS,
+    xxl: XXL_BREAKPOINT - OTHER_NAV_ELEMENTS
   });
 
-  const navItems = responsiveMenuData.map(({ title, url, md, lg, xl }) => (
+  const navItems = responsiveMenuData.map(({ title, url, md, lg, xl, xxl }) => (
     <StyledVisibleMenuItems
       href={url}
       overrides={{
@@ -68,6 +71,7 @@ export const createMenu = (
       $hideMD={md}
       $hideLG={lg}
       $hideXL={xl}
+      $hideXXL={xxl}
     >
       {title}
     </StyledVisibleMenuItems>
@@ -94,6 +98,7 @@ export const createMenu = (
         $showMoreMD={showMoreMD}
         $showMoreLG={showMoreLG}
         $showMoreXL={showMoreXL}
+        $showMoreXXL={showMoreXXL}
       >
         <Menu
           vertical
@@ -111,7 +116,7 @@ const createMoreMenu = (
   menuData: ResponsiveMenuItemParent[],
   clickHandler: (title: string) => void
 ) =>
-  menuData.map(({ title, url, md, lg, xl }) => (
+  menuData.map(({ title, url, md, lg, xl, xxl }) => (
     <StyledMenuItemsDropdown
       href={url}
       data-testid="more-menu-item"
@@ -125,6 +130,7 @@ const createMoreMenu = (
       $showMD={md}
       $showLG={lg}
       $showXL={xl}
+      $showXXL={xxl}
     >
       {title}
     </StyledMenuItemsDropdown>
