@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.17.0](https://github.com/newsuk/times-components/compare/@times-components/link@3.16.0...@times-components/link@3.17.0) (2024-01-18)
+
+
+### Features
+
+* **TMPZ-280:** reversed display order of mini-quiz hints ([#3717](https://github.com/newsuk/times-components/issues/3717)) ([52b2dd2](https://github.com/newsuk/times-components/commit/52b2dd2c43c5deafff5e93f7de8b596164502e36))
+
+
+
+
+
 # [3.16.0](https://github.com/newsuk/times-components/compare/@times-components/link@3.15.4...@times-components/link@3.16.0) (2024-01-17)
 
 
