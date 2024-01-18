@@ -85,7 +85,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 href="/home"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Home
                 </span>
@@ -101,7 +101,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 href="/news"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   News
                 </span>
@@ -117,7 +117,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 href="/comment"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Comment
                 </span>
@@ -133,7 +133,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 href="/life-and-style"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Life & Style
                 </span>
@@ -149,7 +149,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 href="/arts-and-books"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Arts & Books
                 </span>
@@ -165,7 +165,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 href="/sport"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Sport
                 </span>
@@ -181,7 +181,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 href="/business-and-money"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Business & Money
                 </span>
@@ -197,7 +197,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 href="/puzzles"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Puzzles
                 </span>
@@ -213,7 +213,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 href="/magazines"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Magazines
                 </span>
@@ -230,7 +230,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               type="button"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 More
               </span>
@@ -282,7 +282,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                             href="/home"
                           >
                             <span
-                              class="css-jfuxhr"
+                              class="css-hwdhvu"
                             >
                               Home
                             </span>
@@ -305,7 +305,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                             href="/news"
                           >
                             <span
-                              class="css-jfuxhr"
+                              class="css-hwdhvu"
                             >
                               News
                             </span>
@@ -328,7 +328,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                             href="/comment"
                           >
                             <span
-                              class="css-jfuxhr"
+                              class="css-hwdhvu"
                             >
                               Comment
                             </span>
@@ -351,7 +351,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                             href="/life-and-style"
                           >
                             <span
-                              class="css-jfuxhr"
+                              class="css-hwdhvu"
                             >
                               Life & Style
                             </span>
@@ -374,7 +374,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                             href="/arts-and-books"
                           >
                             <span
-                              class="css-jfuxhr"
+                              class="css-hwdhvu"
                             >
                               Arts & Books
                             </span>
@@ -397,7 +397,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                             href="/sport"
                           >
                             <span
-                              class="css-jfuxhr"
+                              class="css-hwdhvu"
                             >
                               Sport
                             </span>
@@ -420,7 +420,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                             href="/business-and-money"
                           >
                             <span
-                              class="css-jfuxhr"
+                              class="css-hwdhvu"
                             >
                               Business & Money
                             </span>
@@ -443,7 +443,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                             href="/puzzles"
                           >
                             <span
-                              class="css-jfuxhr"
+                              class="css-hwdhvu"
                             >
                               Puzzles
                             </span>
@@ -466,7 +466,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
                             href="/magazines"
                           >
                             <span
-                              class="css-jfuxhr"
+                              class="css-hwdhvu"
                             >
                               Magazines
                             </span>

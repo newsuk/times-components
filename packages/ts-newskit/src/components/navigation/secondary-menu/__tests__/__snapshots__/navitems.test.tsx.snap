@@ -12,7 +12,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/home"
     >
       <span
-        class="css-t9dmcw"
+        class="css-hwdhvu"
       >
         Home
       </span>
@@ -28,7 +28,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/news"
     >
       <span
-        class="css-t9dmcw"
+        class="css-hwdhvu"
       >
         News
       </span>
@@ -44,7 +44,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/comment"
     >
       <span
-        class="css-t9dmcw"
+        class="css-hwdhvu"
       >
         Comment
       </span>
@@ -60,7 +60,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/life-and-style"
     >
       <span
-        class="css-t9dmcw"
+        class="css-hwdhvu"
       >
         Life & Style
       </span>
@@ -76,7 +76,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/arts-and-books"
     >
       <span
-        class="css-t9dmcw"
+        class="css-hwdhvu"
       >
         Arts & Books
       </span>
@@ -92,7 +92,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/sport"
     >
       <span
-        class="css-t9dmcw"
+        class="css-hwdhvu"
       >
         Sport
       </span>
@@ -108,7 +108,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/business-and-money"
     >
       <span
-        class="css-t9dmcw"
+        class="css-hwdhvu"
       >
         Business & Money
       </span>
@@ -124,7 +124,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/puzzles"
     >
       <span
-        class="css-t9dmcw"
+        class="css-hwdhvu"
       >
         Puzzles
       </span>
@@ -140,7 +140,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/magazines"
     >
       <span
-        class="css-t9dmcw"
+        class="css-hwdhvu"
       >
         Magazines
       </span>

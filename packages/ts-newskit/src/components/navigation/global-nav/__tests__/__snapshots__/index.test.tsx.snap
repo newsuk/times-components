@@ -176,7 +176,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Home
                   </span>
@@ -191,7 +191,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/uk"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     UK
                   </span>
@@ -206,7 +206,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/world"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     World
                   </span>
@@ -221,7 +221,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Comment
                   </span>
@@ -236,7 +236,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/life-style"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Life & Style
                   </span>
@@ -251,7 +251,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/culture-books"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Culture & Books
                   </span>
@@ -266,7 +266,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/business-money"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Business and Money
                   </span>
@@ -281,7 +281,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Sport
                   </span>
@@ -296,7 +296,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Puzzles
                   </span>
@@ -311,7 +311,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Magazines
                   </span>
@@ -327,7 +327,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   type="button"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     More
                   </span>
@@ -369,7 +369,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/home"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Home
                           </span>
@@ -384,7 +384,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/uk"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             UK
                           </span>
@@ -399,7 +399,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/world"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             World
                           </span>
@@ -414,7 +414,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/comment"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Comment
                           </span>
@@ -429,7 +429,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/life-style"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Life & Style
                           </span>
@@ -444,7 +444,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/culture-books"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Culture & Books
                           </span>
@@ -459,7 +459,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/business-money"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Business and Money
                           </span>
@@ -474,7 +474,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/sport"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Sport
                           </span>
@@ -489,7 +489,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/puzzles"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Puzzles
                           </span>
@@ -504,7 +504,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/magazines"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Magazines
                           </span>
@@ -645,7 +645,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
               href="/times-plus"
             >
               <span
-                class="css-1pur78d"
+                class="css-1g36jq3"
               >
                 Times +
               </span>
@@ -672,7 +672,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
               type="button"
             >
               <span
-                class="css-1pur78d"
+                class="css-1g36jq3"
               >
                 My Account
               </span>
@@ -714,7 +714,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                       href="/account"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         Manage account
                       </span>
@@ -729,7 +729,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                       href="/change-password"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         Change password
                       </span>
@@ -744,7 +744,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                       href="/my-newsletters"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         My Newsletters
                       </span>
@@ -759,7 +759,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                       href="/my-articles"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         My articles
                       </span>
@@ -774,7 +774,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                       href="/contact-us"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         Contact us
                       </span>
@@ -789,7 +789,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                       href="/log-out"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         Log out
                       </span>
@@ -835,7 +835,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Home
                   </span>
@@ -850,7 +850,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/uk"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     UK
                   </span>
@@ -865,7 +865,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/world"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     World
                   </span>
@@ -880,7 +880,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Comment
                   </span>
@@ -895,7 +895,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/life-style"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Life & Style
                   </span>
@@ -910,7 +910,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/culture-books"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Culture & Books
                   </span>
@@ -925,7 +925,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/business-money"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Business and Money
                   </span>
@@ -940,7 +940,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Sport
                   </span>
@@ -955,7 +955,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Puzzles
                   </span>
@@ -970,7 +970,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Magazines
                   </span>
@@ -986,7 +986,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                   type="button"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     More
                   </span>
@@ -1028,7 +1028,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/home"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Home
                           </span>
@@ -1043,7 +1043,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/uk"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             UK
                           </span>
@@ -1058,7 +1058,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/world"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             World
                           </span>
@@ -1073,7 +1073,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/comment"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Comment
                           </span>
@@ -1088,7 +1088,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/life-style"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Life & Style
                           </span>
@@ -1103,7 +1103,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/culture-books"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Culture & Books
                           </span>
@@ -1118,7 +1118,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/business-money"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Business and Money
                           </span>
@@ -1133,7 +1133,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/sport"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Sport
                           </span>
@@ -1148,7 +1148,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/puzzles"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Puzzles
                           </span>
@@ -1163,7 +1163,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                           href="/magazines"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Magazines
                           </span>
@@ -1236,7 +1236,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 </div>
                 <input
                   aria-describedby="searchTimesLabel"
-                  class="css-14aj5j6"
+                  class="css-4xfaly"
                   placeholder="Search"
                   type="text"
                   value=""
@@ -1265,7 +1265,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 type="button"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Sections
                 </span>
@@ -1276,7 +1276,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 type="button"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   My account
                 </span>
@@ -1294,7 +1294,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-home"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Home
             </span>
@@ -1322,7 +1322,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               UK
             </span>
@@ -1356,7 +1356,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-uk"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -1383,7 +1383,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-politics"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Politics
                 </span>
@@ -1410,7 +1410,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-health"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Health
                 </span>
@@ -1437,7 +1437,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-science"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Science
                 </span>
@@ -1464,7 +1464,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-environment"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Environment
                 </span>
@@ -1491,7 +1491,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-education"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Education
                 </span>
@@ -1518,7 +1518,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-law"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Law
                 </span>
@@ -1545,7 +1545,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-royal-family"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Royal Family
                 </span>
@@ -1572,7 +1572,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-obituaries"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Obituaries
                 </span>
@@ -1599,7 +1599,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-investigations"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Investigations
                 </span>
@@ -1640,7 +1640,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               World
             </span>
@@ -1674,7 +1674,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-world"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -1701,7 +1701,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-us-canada"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   US & Canada
                 </span>
@@ -1728,7 +1728,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-russia-ukraine-war"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Russia-Ukraine war
                 </span>
@@ -1755,7 +1755,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-europe"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Europe
                 </span>
@@ -1782,7 +1782,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-ireland"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Ireland
                 </span>
@@ -1809,7 +1809,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-asia"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Asia
                 </span>
@@ -1836,7 +1836,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-latin-america"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Latin America
                 </span>
@@ -1863,7 +1863,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-middle-east"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Middle East
                 </span>
@@ -1890,7 +1890,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-africa"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Africa
                 </span>
@@ -1917,7 +1917,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-australasia"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Australasia
                 </span>
@@ -1958,7 +1958,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Comment
             </span>
@@ -1992,7 +1992,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-comment"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Today
                 </span>
@@ -2019,7 +2019,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-columnists"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Columnists
                 </span>
@@ -2046,7 +2046,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-the-times-view"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   The Times view
                 </span>
@@ -2073,7 +2073,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-letters-to-editor"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Letters to the Editor
                 </span>
@@ -2100,7 +2100,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-cartoons"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Cartoons
                 </span>
@@ -2127,7 +2127,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-register"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Register
                 </span>
@@ -2168,7 +2168,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Life & Style
             </span>
@@ -2202,7 +2202,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-top-stories"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -2243,7 +2243,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Culture & Books
             </span>
@@ -2277,7 +2277,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-culture-books"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -2304,7 +2304,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-tv-audio"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   TV & Audio
                 </span>
@@ -2331,7 +2331,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-film"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Film
                 </span>
@@ -2358,7 +2358,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-books"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Books
                 </span>
@@ -2385,7 +2385,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-music"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Music
                 </span>
@@ -2412,7 +2412,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-theatre"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Theatre
                 </span>
@@ -2439,7 +2439,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-opera-dance"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Opera & Dance
                 </span>
@@ -2466,7 +2466,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-art-design"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Art & Design
                 </span>
@@ -2507,7 +2507,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Business and Money
             </span>
@@ -2541,7 +2541,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-business-money"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -2568,7 +2568,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-money"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Money
                 </span>
@@ -2595,7 +2595,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-economics"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Economics
                 </span>
@@ -2622,7 +2622,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-markets"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Markets
                 </span>
@@ -2649,7 +2649,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-entrepreneurs"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Entrepreneurs
                 </span>
@@ -2676,7 +2676,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-technology"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Technology
                 </span>
@@ -2703,7 +2703,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-companies"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Companies
                 </span>
@@ -2744,7 +2744,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Sport
             </span>
@@ -2778,7 +2778,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-top-stories"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -2805,7 +2805,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-football"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Football
                 </span>
@@ -2832,7 +2832,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-cricket"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Cricket
                 </span>
@@ -2859,7 +2859,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-rugby-union"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Rugby Union
                 </span>
@@ -2886,7 +2886,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-formula-one"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Formula 1
                 </span>
@@ -2913,7 +2913,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-tennis"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Tennis
                 </span>
@@ -2940,7 +2940,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-golf"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Golf
                 </span>
@@ -2967,7 +2967,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-all-sport"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Other Sport
                 </span>
@@ -3008,7 +3008,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Puzzles
             </span>
@@ -3042,7 +3042,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-puzzles"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Todays Puzzles
                 </span>
@@ -3083,7 +3083,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Magazines
             </span>
@@ -3117,7 +3117,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-sunday-times-magazine"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   The Sunday Times Magazine
                 </span>
@@ -3144,7 +3144,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-culture"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Culture
                 </span>
@@ -3171,7 +3171,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-style"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Style
                 </span>
@@ -3198,7 +3198,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 id="vertical-sub-times-magazine"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   The Times Magazine
                 </span>
@@ -3232,7 +3232,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
           class="css-1ybfqts"
         >
           <p
-            class="css-8wsvtq"
+            class="css-137542m"
           >
             More
           </p>
@@ -3258,7 +3258,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-e-paper"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               E-paper
             </span>
@@ -3285,7 +3285,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-newsletters"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Newsletters
             </span>
@@ -3312,7 +3312,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-tv-guide"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               TV Guide
             </span>
@@ -3339,7 +3339,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-times-plus"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times +
             </span>
@@ -3366,7 +3366,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-times-radio"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times Radio
             </span>
@@ -3393,7 +3393,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-podcasts"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times Podcasts
             </span>
@@ -3420,7 +3420,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-money-mentor"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times Money Mentor
             </span>
@@ -3447,7 +3447,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-times-travel"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times Travel
             </span>
@@ -3474,7 +3474,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-wine-club"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times wine club
             </span>
@@ -3501,7 +3501,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-times-appointments"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times appointments
             </span>
@@ -3528,7 +3528,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-rich-list"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               The Sunday Times Rich List
             </span>
@@ -3555,7 +3555,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-uni-guide"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               The Times good uni guide
             </span>
@@ -3582,7 +3582,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-school-guide"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               The Times good school guide
             </span>
@@ -3609,7 +3609,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-best-places-to-live"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               The Times best places to live
             </span>
@@ -3636,7 +3636,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-best-places-to-stay"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               The Times best places to stay
             </span>
@@ -3663,7 +3663,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
             id="vertical-growth-100"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Growth 100
             </span>
@@ -3862,7 +3862,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Home
                   </span>
@@ -3877,7 +3877,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/uk"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     UK
                   </span>
@@ -3892,7 +3892,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/world"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     World
                   </span>
@@ -3907,7 +3907,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Comment
                   </span>
@@ -3922,7 +3922,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/life-style"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Life & Style
                   </span>
@@ -3937,7 +3937,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/culture-books"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Culture & Books
                   </span>
@@ -3952,7 +3952,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/business-money"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Business and Money
                   </span>
@@ -3967,7 +3967,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Sport
                   </span>
@@ -3982,7 +3982,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Puzzles
                   </span>
@@ -3997,7 +3997,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Magazines
                   </span>
@@ -4013,7 +4013,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   type="button"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     More
                   </span>
@@ -4055,7 +4055,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/home"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Home
                           </span>
@@ -4070,7 +4070,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/uk"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             UK
                           </span>
@@ -4085,7 +4085,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/world"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             World
                           </span>
@@ -4100,7 +4100,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/comment"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Comment
                           </span>
@@ -4115,7 +4115,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/life-style"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Life & Style
                           </span>
@@ -4130,7 +4130,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/culture-books"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Culture & Books
                           </span>
@@ -4145,7 +4145,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/business-money"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Business and Money
                           </span>
@@ -4160,7 +4160,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/sport"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Sport
                           </span>
@@ -4175,7 +4175,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/puzzles"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Puzzles
                           </span>
@@ -4190,7 +4190,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/magazines"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Magazines
                           </span>
@@ -4331,7 +4331,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
               href="/login"
             >
               <span
-                class="css-1pur78d"
+                class="css-1g36jq3"
               >
                 Login
               </span>
@@ -4357,7 +4357,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
               href="/"
             >
               <span
-                class="css-1pur78d"
+                class="css-1g36jq3"
               >
                 Subscribe
               </span>
@@ -4434,7 +4434,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Home
                   </span>
@@ -4449,7 +4449,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/uk"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     UK
                   </span>
@@ -4464,7 +4464,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/world"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     World
                   </span>
@@ -4479,7 +4479,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Comment
                   </span>
@@ -4494,7 +4494,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/life-style"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Life & Style
                   </span>
@@ -4509,7 +4509,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/culture-books"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Culture & Books
                   </span>
@@ -4524,7 +4524,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/business-money"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Business and Money
                   </span>
@@ -4539,7 +4539,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Sport
                   </span>
@@ -4554,7 +4554,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Puzzles
                   </span>
@@ -4569,7 +4569,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Magazines
                   </span>
@@ -4585,7 +4585,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                   type="button"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     More
                   </span>
@@ -4627,7 +4627,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/home"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Home
                           </span>
@@ -4642,7 +4642,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/uk"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             UK
                           </span>
@@ -4657,7 +4657,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/world"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             World
                           </span>
@@ -4672,7 +4672,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/comment"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Comment
                           </span>
@@ -4687,7 +4687,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/life-style"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Life & Style
                           </span>
@@ -4702,7 +4702,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/culture-books"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Culture & Books
                           </span>
@@ -4717,7 +4717,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/business-money"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Business and Money
                           </span>
@@ -4732,7 +4732,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/sport"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Sport
                           </span>
@@ -4747,7 +4747,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/puzzles"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Puzzles
                           </span>
@@ -4762,7 +4762,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                           href="/magazines"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Magazines
                           </span>
@@ -4835,7 +4835,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 </div>
                 <input
                   aria-describedby="searchTimesLabel"
-                  class="css-14aj5j6"
+                  class="css-4xfaly"
                   placeholder="Search"
                   type="text"
                   value=""
@@ -4860,7 +4860,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-home"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Home
             </span>
@@ -4888,7 +4888,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               UK
             </span>
@@ -4922,7 +4922,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-uk"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -4949,7 +4949,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-politics"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Politics
                 </span>
@@ -4976,7 +4976,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-health"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Health
                 </span>
@@ -5003,7 +5003,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-science"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Science
                 </span>
@@ -5030,7 +5030,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-environment"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Environment
                 </span>
@@ -5057,7 +5057,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-education"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Education
                 </span>
@@ -5084,7 +5084,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-law"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Law
                 </span>
@@ -5111,7 +5111,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-royal-family"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Royal Family
                 </span>
@@ -5138,7 +5138,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-obituaries"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Obituaries
                 </span>
@@ -5165,7 +5165,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-investigations"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Investigations
                 </span>
@@ -5206,7 +5206,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               World
             </span>
@@ -5240,7 +5240,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-world"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -5267,7 +5267,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-us-canada"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   US & Canada
                 </span>
@@ -5294,7 +5294,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-russia-ukraine-war"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Russia-Ukraine war
                 </span>
@@ -5321,7 +5321,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-europe"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Europe
                 </span>
@@ -5348,7 +5348,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-ireland"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Ireland
                 </span>
@@ -5375,7 +5375,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-asia"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Asia
                 </span>
@@ -5402,7 +5402,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-latin-america"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Latin America
                 </span>
@@ -5429,7 +5429,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-middle-east"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Middle East
                 </span>
@@ -5456,7 +5456,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-africa"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Africa
                 </span>
@@ -5483,7 +5483,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-australasia"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Australasia
                 </span>
@@ -5524,7 +5524,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Comment
             </span>
@@ -5558,7 +5558,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-comment"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Today
                 </span>
@@ -5585,7 +5585,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-columnists"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Columnists
                 </span>
@@ -5612,7 +5612,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-the-times-view"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   The Times view
                 </span>
@@ -5639,7 +5639,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-letters-to-editor"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Letters to the Editor
                 </span>
@@ -5666,7 +5666,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-cartoons"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Cartoons
                 </span>
@@ -5693,7 +5693,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-register"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Register
                 </span>
@@ -5734,7 +5734,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Life & Style
             </span>
@@ -5768,7 +5768,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-top-stories"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -5809,7 +5809,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Culture & Books
             </span>
@@ -5843,7 +5843,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-culture-books"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -5870,7 +5870,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-tv-audio"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   TV & Audio
                 </span>
@@ -5897,7 +5897,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-film"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Film
                 </span>
@@ -5924,7 +5924,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-books"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Books
                 </span>
@@ -5951,7 +5951,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-music"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Music
                 </span>
@@ -5978,7 +5978,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-theatre"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Theatre
                 </span>
@@ -6005,7 +6005,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-opera-dance"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Opera & Dance
                 </span>
@@ -6032,7 +6032,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-art-design"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Art & Design
                 </span>
@@ -6073,7 +6073,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Business and Money
             </span>
@@ -6107,7 +6107,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-business-money"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -6134,7 +6134,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-money"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Money
                 </span>
@@ -6161,7 +6161,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-economics"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Economics
                 </span>
@@ -6188,7 +6188,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-markets"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Markets
                 </span>
@@ -6215,7 +6215,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-entrepreneurs"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Entrepreneurs
                 </span>
@@ -6242,7 +6242,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-technology"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Technology
                 </span>
@@ -6269,7 +6269,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-companies"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Companies
                 </span>
@@ -6310,7 +6310,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Sport
             </span>
@@ -6344,7 +6344,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-top-stories"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Top Stories
                 </span>
@@ -6371,7 +6371,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-football"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Football
                 </span>
@@ -6398,7 +6398,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-cricket"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Cricket
                 </span>
@@ -6425,7 +6425,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-rugby-union"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Rugby Union
                 </span>
@@ -6452,7 +6452,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-formula-one"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Formula 1
                 </span>
@@ -6479,7 +6479,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-tennis"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Tennis
                 </span>
@@ -6506,7 +6506,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-golf"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Golf
                 </span>
@@ -6533,7 +6533,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-all-sport"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Other Sport
                 </span>
@@ -6574,7 +6574,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Puzzles
             </span>
@@ -6608,7 +6608,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-puzzles"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Todays Puzzles
                 </span>
@@ -6649,7 +6649,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             type="button"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Magazines
             </span>
@@ -6683,7 +6683,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-sunday-times-magazine"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   The Sunday Times Magazine
                 </span>
@@ -6710,7 +6710,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-culture"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Culture
                 </span>
@@ -6737,7 +6737,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-style"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   Style
                 </span>
@@ -6764,7 +6764,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 id="vertical-sub-times-magazine"
               >
                 <span
-                  class="css-t9dmcw"
+                  class="css-hwdhvu"
                 >
                   The Times Magazine
                 </span>
@@ -6798,7 +6798,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
           class="css-1ybfqts"
         >
           <p
-            class="css-8wsvtq"
+            class="css-137542m"
           >
             More
           </p>
@@ -6824,7 +6824,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-e-paper"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               E-paper
             </span>
@@ -6851,7 +6851,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-newsletters"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Newsletters
             </span>
@@ -6878,7 +6878,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-tv-guide"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               TV Guide
             </span>
@@ -6905,7 +6905,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-times-plus"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times +
             </span>
@@ -6932,7 +6932,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-times-radio"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times Radio
             </span>
@@ -6959,7 +6959,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-podcasts"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times Podcasts
             </span>
@@ -6986,7 +6986,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-money-mentor"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times Money Mentor
             </span>
@@ -7013,7 +7013,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-times-travel"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times Travel
             </span>
@@ -7040,7 +7040,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-wine-club"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times wine club
             </span>
@@ -7067,7 +7067,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-times-appointments"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Times appointments
             </span>
@@ -7094,7 +7094,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-rich-list"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               The Sunday Times Rich List
             </span>
@@ -7121,7 +7121,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-uni-guide"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               The Times good uni guide
             </span>
@@ -7148,7 +7148,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-school-guide"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               The Times good school guide
             </span>
@@ -7175,7 +7175,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-best-places-to-live"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               The Times best places to live
             </span>
@@ -7202,7 +7202,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-best-places-to-stay"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               The Times best places to stay
             </span>
@@ -7229,7 +7229,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
             id="vertical-growth-100"
           >
             <span
-              class="css-t9dmcw"
+              class="css-hwdhvu"
             >
               Growth 100
             </span>
@@ -7428,7 +7428,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Home
                   </span>
@@ -7443,7 +7443,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/uk"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     UK
                   </span>
@@ -7458,7 +7458,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/world"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     World
                   </span>
@@ -7473,7 +7473,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Comment
                   </span>
@@ -7488,7 +7488,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/life-style"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Life & Style
                   </span>
@@ -7503,7 +7503,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/culture-books"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Culture & Books
                   </span>
@@ -7518,7 +7518,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/business-money"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Business and Money
                   </span>
@@ -7533,7 +7533,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Sport
                   </span>
@@ -7548,7 +7548,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Puzzles
                   </span>
@@ -7563,7 +7563,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Magazines
                   </span>
@@ -7579,7 +7579,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   type="button"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     More
                   </span>
@@ -7621,7 +7621,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/home"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Home
                           </span>
@@ -7636,7 +7636,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/uk"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             UK
                           </span>
@@ -7651,7 +7651,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/world"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             World
                           </span>
@@ -7666,7 +7666,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/comment"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Comment
                           </span>
@@ -7681,7 +7681,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/life-style"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Life & Style
                           </span>
@@ -7696,7 +7696,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/culture-books"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Culture & Books
                           </span>
@@ -7711,7 +7711,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/business-money"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Business and Money
                           </span>
@@ -7726,7 +7726,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/sport"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Sport
                           </span>
@@ -7741,7 +7741,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/puzzles"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Puzzles
                           </span>
@@ -7756,7 +7756,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/magazines"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Magazines
                           </span>
@@ -7897,7 +7897,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
               href="/times-plus"
             >
               <span
-                class="css-1pur78d"
+                class="css-1g36jq3"
               >
                 Times +
               </span>
@@ -7924,7 +7924,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
               type="button"
             >
               <span
-                class="css-1pur78d"
+                class="css-1g36jq3"
               >
                 My Account
               </span>
@@ -7966,7 +7966,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/account"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         Manage account
                       </span>
@@ -7981,7 +7981,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/change-password"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         Change password
                       </span>
@@ -7996,7 +7996,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/my-newsletters"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         My Newsletters
                       </span>
@@ -8011,7 +8011,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/my-articles"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         My articles
                       </span>
@@ -8026,7 +8026,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/contact-us"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         Contact us
                       </span>
@@ -8041,7 +8041,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/log-out"
                     >
                       <span
-                        class="css-1pur78d"
+                        class="css-1g36jq3"
                       >
                         Log out
                       </span>
@@ -8087,7 +8087,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Home
                   </span>
@@ -8102,7 +8102,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/uk"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     UK
                   </span>
@@ -8117,7 +8117,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/world"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     World
                   </span>
@@ -8132,7 +8132,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Comment
                   </span>
@@ -8147,7 +8147,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/life-style"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Life & Style
                   </span>
@@ -8162,7 +8162,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/culture-books"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Culture & Books
                   </span>
@@ -8177,7 +8177,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/business-money"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Business and Money
                   </span>
@@ -8192,7 +8192,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Sport
                   </span>
@@ -8207,7 +8207,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Puzzles
                   </span>
@@ -8222,7 +8222,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Magazines
                   </span>
@@ -8238,7 +8238,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   type="button"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     More
                   </span>
@@ -8280,7 +8280,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/home"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Home
                           </span>
@@ -8295,7 +8295,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/uk"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             UK
                           </span>
@@ -8310,7 +8310,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/world"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             World
                           </span>
@@ -8325,7 +8325,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/comment"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Comment
                           </span>
@@ -8340,7 +8340,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/life-style"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Life & Style
                           </span>
@@ -8355,7 +8355,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/culture-books"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Culture & Books
                           </span>
@@ -8370,7 +8370,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/business-money"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Business and Money
                           </span>
@@ -8385,7 +8385,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/sport"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Sport
                           </span>
@@ -8400,7 +8400,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/puzzles"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Puzzles
                           </span>
@@ -8415,7 +8415,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                           href="/magazines"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Magazines
                           </span>
@@ -8615,7 +8615,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Home
                   </span>
@@ -8630,7 +8630,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/uk"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     UK
                   </span>
@@ -8645,7 +8645,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/world"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     World
                   </span>
@@ -8660,7 +8660,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Comment
                   </span>
@@ -8675,7 +8675,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/life-style"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Life & Style
                   </span>
@@ -8690,7 +8690,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/culture-books"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Culture & Books
                   </span>
@@ -8705,7 +8705,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/business-money"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Business and Money
                   </span>
@@ -8720,7 +8720,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Sport
                   </span>
@@ -8735,7 +8735,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Puzzles
                   </span>
@@ -8750,7 +8750,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Magazines
                   </span>
@@ -8766,7 +8766,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   type="button"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     More
                   </span>
@@ -8808,7 +8808,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/home"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Home
                           </span>
@@ -8823,7 +8823,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/uk"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             UK
                           </span>
@@ -8838,7 +8838,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/world"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             World
                           </span>
@@ -8853,7 +8853,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/comment"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Comment
                           </span>
@@ -8868,7 +8868,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/life-style"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Life & Style
                           </span>
@@ -8883,7 +8883,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/culture-books"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Culture & Books
                           </span>
@@ -8898,7 +8898,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/business-money"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Business and Money
                           </span>
@@ -8913,7 +8913,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/sport"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Sport
                           </span>
@@ -8928,7 +8928,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/puzzles"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Puzzles
                           </span>
@@ -8943,7 +8943,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/magazines"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Magazines
                           </span>
@@ -9084,7 +9084,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
               href="/login"
             >
               <span
-                class="css-1pur78d"
+                class="css-1g36jq3"
               >
                 Login
               </span>
@@ -9110,7 +9110,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
               href="/"
             >
               <span
-                class="css-1pur78d"
+                class="css-1g36jq3"
               >
                 Subscribe
               </span>
@@ -9187,7 +9187,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Home
                   </span>
@@ -9202,7 +9202,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/uk"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     UK
                   </span>
@@ -9217,7 +9217,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/world"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     World
                   </span>
@@ -9232,7 +9232,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Comment
                   </span>
@@ -9247,7 +9247,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/life-style"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Life & Style
                   </span>
@@ -9262,7 +9262,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/culture-books"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Culture & Books
                   </span>
@@ -9277,7 +9277,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/business-money"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Business and Money
                   </span>
@@ -9292,7 +9292,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Sport
                   </span>
@@ -9307,7 +9307,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Puzzles
                   </span>
@@ -9322,7 +9322,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     Magazines
                   </span>
@@ -9338,7 +9338,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   type="button"
                 >
                   <span
-                    class="css-1pur78d"
+                    class="css-1g36jq3"
                   >
                     More
                   </span>
@@ -9380,7 +9380,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/home"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Home
                           </span>
@@ -9395,7 +9395,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/uk"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             UK
                           </span>
@@ -9410,7 +9410,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/world"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             World
                           </span>
@@ -9425,7 +9425,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/comment"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Comment
                           </span>
@@ -9440,7 +9440,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/life-style"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Life & Style
                           </span>
@@ -9455,7 +9455,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/culture-books"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Culture & Books
                           </span>
@@ -9470,7 +9470,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/business-money"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Business and Money
                           </span>
@@ -9485,7 +9485,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/sport"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Sport
                           </span>
@@ -9500,7 +9500,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/puzzles"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Puzzles
                           </span>
@@ -9515,7 +9515,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                           href="/magazines"
                         >
                           <span
-                            class="css-1pur78d"
+                            class="css-1g36jq3"
                           >
                             Magazines
                           </span>

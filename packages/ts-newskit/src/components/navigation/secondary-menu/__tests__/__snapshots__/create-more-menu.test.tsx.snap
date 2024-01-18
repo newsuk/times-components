@@ -16,7 +16,7 @@ exports[`Create More Menu should render snapshot 1`] = `
           href="/home"
         >
           <span
-            class="css-jfuxhr"
+            class="css-hwdhvu"
           >
             Home
           </span>
@@ -39,7 +39,7 @@ exports[`Create More Menu should render snapshot 1`] = `
           href="/news"
         >
           <span
-            class="css-jfuxhr"
+            class="css-hwdhvu"
           >
             News
           </span>
@@ -62,7 +62,7 @@ exports[`Create More Menu should render snapshot 1`] = `
           href="/comment"
         >
           <span
-            class="css-jfuxhr"
+            class="css-hwdhvu"
           >
             Comment
           </span>
@@ -85,7 +85,7 @@ exports[`Create More Menu should render snapshot 1`] = `
           href="/life-and-style"
         >
           <span
-            class="css-jfuxhr"
+            class="css-hwdhvu"
           >
             Life & Style
           </span>
@@ -108,7 +108,7 @@ exports[`Create More Menu should render snapshot 1`] = `
           href="/arts-and-books"
         >
           <span
-            class="css-jfuxhr"
+            class="css-hwdhvu"
           >
             Arts & Books
           </span>
@@ -131,7 +131,7 @@ exports[`Create More Menu should render snapshot 1`] = `
           href="/sport"
         >
           <span
-            class="css-jfuxhr"
+            class="css-hwdhvu"
           >
             Sport
           </span>
@@ -154,7 +154,7 @@ exports[`Create More Menu should render snapshot 1`] = `
           href="/business-and-money"
         >
           <span
-            class="css-jfuxhr"
+            class="css-hwdhvu"
           >
             Business & Money
           </span>
@@ -177,7 +177,7 @@ exports[`Create More Menu should render snapshot 1`] = `
           href="/puzzles"
         >
           <span
-            class="css-jfuxhr"
+            class="css-hwdhvu"
           >
             Puzzles
           </span>
@@ -200,7 +200,7 @@ exports[`Create More Menu should render snapshot 1`] = `
           href="/magazines"
         >
           <span
-            class="css-jfuxhr"
+            class="css-hwdhvu"
           >
             Magazines
           </span>

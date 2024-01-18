@@ -17,7 +17,7 @@ export const CreateMoreMenu: React.FC<{
             href={url}
             overrides={{
               stylePreset: 'menuItemMore',
-              typographyPreset: 'newPreset050'
+              typographyPreset: 'newPreset040'
             }}
             onClick={() => {
               handleSelect(title);

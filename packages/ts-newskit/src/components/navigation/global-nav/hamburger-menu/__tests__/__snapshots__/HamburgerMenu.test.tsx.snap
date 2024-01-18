@@ -47,7 +47,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               </div>
               <input
                 aria-describedby="searchTimesLabel"
-                class="css-14aj5j6"
+                class="css-4xfaly"
                 placeholder="Search"
                 type="text"
                 value=""
@@ -76,7 +76,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               type="button"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Sections
               </span>
@@ -87,7 +87,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               type="button"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 My account
               </span>
@@ -105,7 +105,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           id="vertical-main-menu-1"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             Main Menu 1
           </span>
@@ -133,7 +133,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           type="button"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             Main Menu 2
           </span>
@@ -167,7 +167,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               id="vertical-sub-item-1"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Item 1
               </span>
@@ -194,7 +194,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               id="vertical-sub-item-2"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Item 2
               </span>
@@ -235,7 +235,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           type="button"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             Main Menu 3
           </span>
@@ -269,7 +269,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               id="vertical-sub-item-1"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Menu 3 Item 1
               </span>
@@ -296,7 +296,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               id="vertical-sub-menu-3-item-2"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Menu 3 Item 2
               </span>
@@ -337,7 +337,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           type="button"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             Main Menu 4
           </span>
@@ -371,7 +371,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               id="vertical-sub-top-stories-main-menu-4"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Top Stories Hello World
               </span>
@@ -398,7 +398,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               id="vertical-sub-nested-l1"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 nested l1 item
               </span>
@@ -432,7 +432,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
         class="css-1ybfqts"
       >
         <p
-          class="css-8wsvtq"
+          class="css-137542m"
         >
           More
         </p>
@@ -458,7 +458,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           id="vertical-more-1"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             More 1
           </span>
@@ -485,7 +485,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           id="vertical-more-2"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             More 2
           </span>
@@ -554,7 +554,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               </div>
               <input
                 aria-describedby="searchTimesLabel"
-                class="css-14aj5j6"
+                class="css-4xfaly"
                 placeholder="Search"
                 type="text"
                 value=""
@@ -583,7 +583,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               type="button"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Sections
               </span>
@@ -594,7 +594,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               type="button"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 My account
               </span>
@@ -612,7 +612,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           id="vertical-main-menu-1"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             Main Menu 1
           </span>
@@ -640,7 +640,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           type="button"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             Main Menu 2
           </span>
@@ -674,7 +674,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               id="vertical-sub-item-1"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Item 1
               </span>
@@ -701,7 +701,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               id="vertical-sub-item-2"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Item 2
               </span>
@@ -742,7 +742,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           type="button"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             Main Menu 3
           </span>
@@ -776,7 +776,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               id="vertical-sub-item-1"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Menu 3 Item 1
               </span>
@@ -803,7 +803,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               id="vertical-sub-menu-3-item-2"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Menu 3 Item 2
               </span>
@@ -844,7 +844,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           type="button"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             Main Menu 4
           </span>
@@ -878,7 +878,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               id="vertical-sub-top-stories-main-menu-4"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 Top Stories Hello World
               </span>
@@ -905,7 +905,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               id="vertical-sub-nested-l1"
             >
               <span
-                class="css-t9dmcw"
+                class="css-hwdhvu"
               >
                 nested l1 item
               </span>
@@ -939,7 +939,7 @@ exports[`HamburgerMenu should render the component 1`] = `
         class="css-1ybfqts"
       >
         <p
-          class="css-8wsvtq"
+          class="css-137542m"
         >
           More
         </p>
@@ -965,7 +965,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           id="vertical-more-1"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             More 1
           </span>
@@ -992,7 +992,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           id="vertical-more-2"
         >
           <span
-            class="css-t9dmcw"
+            class="css-hwdhvu"
           >
             More 2
           </span>
