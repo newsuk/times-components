@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.18.0](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.17.0...@times-components/article-label@2.18.0) (2024-01-18)
+
+
+### Features
+
+* **TMPZ-280:** reversed display order of mini-quiz hints ([#3717](https://github.com/newsuk/times-components/issues/3717)) ([52b2dd2](https://github.com/newsuk/times-components/commit/52b2dd2c43c5deafff5e93f7de8b596164502e36))
+
+
+
+
+
 # [2.17.0](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.16.4...@times-components/article-label@2.17.0) (2024-01-17)
 
 
