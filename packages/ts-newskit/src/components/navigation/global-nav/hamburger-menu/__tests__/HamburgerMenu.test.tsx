@@ -21,6 +21,7 @@ describe('HamburgerMenu', () => {
     const { asFragment } = renderComponent(true);
     expect(asFragment()).toMatchSnapshot();
   });
+
   it('should expand the L1 you click on it', () => {
     const { getByText, getAllByTestId } = renderComponent(true);
     expect(getByText('Item 1')).not.toBeVisible();
@@ -28,6 +29,7 @@ describe('HamburgerMenu', () => {
     fireEvent.click(Button);
     expect(getByText('Item 1')).toBeVisible();
   });
+
   it('should close the expanded L1 if you click on it again', () => {
     const { getByText, getAllByTestId } = renderComponent(true);
     expect(getByText('Item 1')).not.toBeVisible();
@@ -37,6 +39,7 @@ describe('HamburgerMenu', () => {
     fireEvent.click(Button);
     expect(getByText('Item 1')).not.toBeVisible();
   });
+
   it('should close the expanded L1 if you click on another L1', () => {
     const { getByText, getAllByTestId } = renderComponent(true);
     expect(getByText('Item 1')).not.toBeVisible();
