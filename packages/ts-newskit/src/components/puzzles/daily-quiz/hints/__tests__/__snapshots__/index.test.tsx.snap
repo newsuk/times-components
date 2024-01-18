@@ -2,26 +2,36 @@
 
 exports[`HintDisplay should render the HintDisplay component 1`] = `
 <DocumentFragment>
-  <div
-    class="css-13byt3y"
-  >
-    <div>
-      Hint 1 of 3
+  <div>
+    <div
+      class="css-13byt3y"
+    >
+      <div>
+        Hint 1 of 3
+      </div>
+      <div>
+        This is the first hint.
+      </div>
     </div>
-    <div>
-      This is the first hint.
+    <div
+      class="css-13byt3y"
+    >
+      <div>
+        Hint 2 of 3
+      </div>
+      <div>
+        This is the second hint.
+      </div>
     </div>
-    <div>
-      Hint 2 of 3
-    </div>
-    <div>
-      This is the second hint.
-    </div>
-    <div>
-      Hint 3 of 3
-    </div>
-    <div>
-      This is the third hint.
+    <div
+      class="css-13byt3y"
+    >
+      <div>
+        Hint 3 of 3
+      </div>
+      <div>
+        This is the third hint.
+      </div>
     </div>
   </div>
 </DocumentFragment>

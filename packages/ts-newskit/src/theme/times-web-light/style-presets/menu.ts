@@ -11,7 +11,7 @@ export const menuStylePresets = {
       opacity: '0.4 !important',
       backgroundColor: 'rgba(10, 10, 10, 0.8)',
       transitionProperty: 'opacity',
-      transitionDuration: '200ms'
+      transitionDuration: '{{motions.motionDuration020}}'
     }
   },
   loggedOutMenu: {
