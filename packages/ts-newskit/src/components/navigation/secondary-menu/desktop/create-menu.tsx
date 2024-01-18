@@ -44,15 +44,12 @@ export const CreateMenu: React.FC<{
     responsiveMenuData,
     showMoreMD,
     showMoreLG,
-    showMoreXL,
-    charWidth
+    showMoreXL
   } = getResponsiveNavData<ResponsiveSecondaryMenuItem>(data, {
     md: 700,
     lg: 1050,
     xl: 1270
   });
-
-  console.log('charWidth===', charWidth)
 
   return (
     <MainMenu

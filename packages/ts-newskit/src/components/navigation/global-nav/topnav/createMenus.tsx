@@ -45,7 +45,7 @@ export const createMenu = (
     showMoreMD,
     showMoreLG,
     showMoreXL,
-    showMoreXXL,
+    showMoreXXL
   } = getResponsiveNavData(menuData, {
     md: MD_BREAKPOINT - OTHER_NAV_ELEMENTS,
     lg: LG_BREAKPOINT - OTHER_NAV_ELEMENTS,
