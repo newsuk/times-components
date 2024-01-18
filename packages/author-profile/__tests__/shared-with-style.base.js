@@ -1,5 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
+import { TCThemeProvider } from "@times-components/ts-newskit";
 import { iterator } from "@times-components/test-utils";
 import "./mocks";
 import AuthorProfile from "../src/author-profile";
@@ -29,7 +30,9 @@ export default (props, platformTests = []) => {
         );
 
         const articleListHeader = TestRenderer.create(
-          articleList.props.articleListHeader
+          <TCThemeProvider>
+            {articleList.props.articleListHeader}
+          </TCThemeProvider>
         );
 
         expect(articleListHeader).toMatchSnapshot();
@@ -47,7 +50,9 @@ export default (props, platformTests = []) => {
         );
 
         const articleListHeader = TestRenderer.create(
-          articleList.props.articleListHeader
+          <TCThemeProvider>
+            {articleList.props.articleListHeader}
+          </TCThemeProvider>
         );
 
         expect(articleListHeader).toMatchSnapshot();
