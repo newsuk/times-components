@@ -8,6 +8,7 @@ const { getSectionFromTiles } = require("@times-components/utils/rnw");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const { DraftArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
+const { TCThemeProvider } = require("@times-components/ts-newskit/rnw");
 const {
   ContextProviderWithDefaults,
   defaults
@@ -45,66 +46,70 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
       ApolloProvider,
       { client },
       React.createElement(
-        isPreview ? DraftArticleProvider : ArticleProvider,
-        {
-          analyticsStream,
-          debounceTimeMs,
-          id: articleId
-        },
-        providerData => {
-          const { isLoading, error, refetch } = providerData;
-          const article = isPreview
-            ? providerData.draftArticle
-            : providerData.article;
-          const articleTemplate = article ? article.template : null;
+        TCThemeProvider,
+        {},
+        React.createElement(
+          isPreview ? DraftArticleProvider : ArticleProvider,
+          {
+            analyticsStream,
+            debounceTimeMs,
+            id: articleId
+          },
+          providerData => {
+            const { isLoading, error, refetch } = providerData;
+            const article = isPreview
+              ? providerData.draftArticle
+              : providerData.article;
+            const articleTemplate = article ? article.template : null;
 
-          return React.createElement(
-            ContextProviderWithDefaults,
-            {
-              value: {
-                getCookieValue,
-                makeArticleUrl,
-                makeTopicUrl,
-                theme: {
-                  ...themeFactory(
-                    article ? getSectionFromTiles(article) : "",
-                    articleTemplate
-                  ),
-                  scale: scale || defaults.theme.scale
-                },
-                user: userState
-              }
-            },
-            React.createElement(Article, {
-              analyticsStream,
-              article: {
-                ...article,
-                section: article
-                  ? getSectionNameForAnalytics(article)
-                  : "unknown section",
-                isSavingEnabled: sharingSavingFlag,
-                isSharingEnabled: sharingSavingFlag,
-                isCommentEnabled: commentingFlag
+            return React.createElement(
+              ContextProviderWithDefaults,
+              {
+                value: {
+                  getCookieValue,
+                  makeArticleUrl,
+                  makeTopicUrl,
+                  theme: {
+                    ...themeFactory(
+                      article ? getSectionFromTiles(article) : "",
+                      articleTemplate
+                    ),
+                    scale: scale || defaults.theme.scale
+                  },
+                  user: userState
+                }
               },
-              error,
-              isLoading,
-              logoUrl,
-              navigationMode,
-              onAuthorPress: () => {},
-              onRelatedArticlePress: () => {},
-              onTopicPress: () => {},
-              refetch,
-              commentingConfig,
-              paidContentClassName,
-              isPreview,
-              swgProductId,
-              getFallbackThumbnailUrl169,
-              zephrDivs,
-              showAudioPlayer,
-              storefrontConfig
-            })
-          );
-        }
+              React.createElement(Article, {
+                analyticsStream,
+                article: {
+                  ...article,
+                  section: article
+                    ? getSectionNameForAnalytics(article)
+                    : "unknown section",
+                  isSavingEnabled: sharingSavingFlag,
+                  isSharingEnabled: sharingSavingFlag,
+                  isCommentEnabled: commentingFlag
+                },
+                error,
+                isLoading,
+                logoUrl,
+                navigationMode,
+                onAuthorPress: () => {},
+                onRelatedArticlePress: () => {},
+                onTopicPress: () => {},
+                refetch,
+                commentingConfig,
+                paidContentClassName,
+                isPreview,
+                swgProductId,
+                getFallbackThumbnailUrl169,
+                zephrDivs,
+                showAudioPlayer,
+                storefrontConfig
+              })
+            );
+          }
+        )
       )
     )
   );
