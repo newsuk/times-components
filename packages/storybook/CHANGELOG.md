@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.12.0](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.11.6...@times-components/storybook@4.12.0) (2024-01-18)
+
+
+### Features
+
+* **TMRX-1668:** update menu transition for mobile ([#3721](https://github.com/newsuk/times-components/issues/3721)) ([c572cea](https://github.com/newsuk/times-components/commit/c572cea8f94e4767c56630d7db8f6df17d41e220))
+
+
+
+
+
 ## [4.11.6](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.11.5...@times-components/storybook@4.11.6) (2024-01-12)
 
 

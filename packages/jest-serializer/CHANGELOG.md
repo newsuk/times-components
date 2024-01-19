@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.13.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.4...@times-components/jest-serializer@3.13.0) (2024-01-18)
+
+
+### Features
+
+* **TMRX-1668:** update menu transition for mobile ([#3721](https://github.com/newsuk/times-components/issues/3721)) ([c572cea](https://github.com/newsuk/times-components/commit/c572cea8f94e4767c56630d7db8f6df17d41e220))
+
+
+
+
+
 ## [3.12.4](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.12.3...@times-components/jest-serializer@3.12.4) (2024-01-12)
 
 
