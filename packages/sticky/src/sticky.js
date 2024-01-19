@@ -57,9 +57,11 @@ class UnwrappedSticky extends Component {
 
     if (shouldBeSticky) {
       const styles = window.getComputedStyle(component);
+      const shareBanner = document.getElementById('shared-header');
+      const sharedBannerHeight = shareBanner && shareBanner.offsetHeight || 0; 
 
       container.style.cssText += `
-        top: ${stickyContext.top}px;
+        top: ${stickyContext.top - sharedBannerHeight}px;
         z-index: ${zIndex};
         position: fixed;
         left: 0;
