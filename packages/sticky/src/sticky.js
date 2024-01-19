@@ -57,7 +57,9 @@ class UnwrappedSticky extends Component {
 
     if (shouldBeSticky) {
       const styles = window.getComputedStyle(component);
-      const shareBanner = window.document.getElementById("shared-header");
+      const shareBanner = window.document.getElementById(
+        "shared-token-header-banner"
+      );
       const sharedBannerHeight = (shareBanner && shareBanner.offsetHeight) || 0;
 
       container.style.cssText += `
