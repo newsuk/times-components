@@ -1,4 +1,4 @@
-export function getResponsiveNavData<T extends { title: string }>(
+export const getResponsiveNavData = <T extends { title: string }>(
   menuData: T[],
   limit: { md: number; lg: number; xl: number; xxl?: number }
 ): {
@@ -10,7 +10,7 @@ export function getResponsiveNavData<T extends { title: string }>(
   showMoreXL: boolean;
   showMoreXXL: boolean;
   charWidth: number;
-} {
+} => {
   let charWidth = 0;
   let showMoreMD = false;
   let showMoreLG = false;
@@ -48,4 +48,4 @@ export function getResponsiveNavData<T extends { title: string }>(
     showMoreXXL,
     charWidth
   };
-}
+};
