@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.50.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.49.56...@times-components/ssr@2.50.0) (2024-01-18)
+
+
+### Features
+
+* **TMRX-1618:** remove theme provider in components ([#3731](https://github.com/newsuk/times-components/issues/3731)) ([3c186c5](https://github.com/newsuk/times-components/commit/3c186c50e2ffbee1b6d468da5eb050dcaa5e5d86))
+
+
+
+
+
 ## [2.49.56](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.49.55...@times-components/ssr@2.49.56) (2024-01-18)
 
 **Note:** Version bump only for package @times-components/ssr
