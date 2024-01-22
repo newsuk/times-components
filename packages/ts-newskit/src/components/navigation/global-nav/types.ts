@@ -12,6 +12,7 @@ export type ResponsiveMenuItemParent = MenuItemParent & {
   md?: boolean;
   lg?: boolean;
   xl?: boolean;
+  xxl?: boolean;
 };
 
 export type NavigationData = {
