@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.161.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.160.0...@times-components/ts-newskit@1.161.0) (2024-01-18)
+
+
+### Features
+
+* **TMPZ-280:** reversed display order of mini-quiz hints ([#3717](https://github.com/newsuk/times-components/issues/3717)) ([52b2dd2](https://github.com/newsuk/times-components/commit/52b2dd2c43c5deafff5e93f7de8b596164502e36))
+* **TMRX-1668:** update menu transition for mobile ([#3721](https://github.com/newsuk/times-components/issues/3721)) ([c572cea](https://github.com/newsuk/times-components/commit/c572cea8f94e4767c56630d7db8f6df17d41e220))
+
+
+
+
+
+# [1.160.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.159.0...@times-components/ts-newskit@1.160.0) (2024-01-17)
+
+
+### Features
+
+* **TMPZ-19:** added tracking for the puzzle category scroll buttons ([#3716](https://github.com/newsuk/times-components/issues/3716)) ([982afc5](https://github.com/newsuk/times-components/commit/982afc54adfeaf06543a046be1095e9d4ee74689))
+* **TMPZ-244:** Article sidebar component feedback ([#3730](https://github.com/newsuk/times-components/issues/3730)) ([af5040a](https://github.com/newsuk/times-components/commit/af5040a8fa9f6b35ae1d0395ca6ac0bc59e66b62))
+
+
+
+
+
+# [1.159.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.158.0...@times-components/ts-newskit@1.159.0) (2024-01-17)
+
+
+### Features
+
+* **TMRX-1826:** update pagination props ([#3729](https://github.com/newsuk/times-components/issues/3729)) ([a83b5bf](https://github.com/newsuk/times-components/commit/a83b5bff4526e0f93cdb39c606f8443201a1e4c8))
+
+
+
+
+
 # [1.158.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.157.0...@times-components/ts-newskit@1.158.0) (2024-01-16)
 
 

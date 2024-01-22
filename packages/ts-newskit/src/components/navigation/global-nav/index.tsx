@@ -51,7 +51,19 @@ export const GlobalNav = ({
         onDismiss={() => setHamburgerActive(false)}
         closePosition="none"
         overrides={{
-          panel: { size: { xs: '100%', md: '322px' } },
+          panel: {
+            size: { xs: '100%', md: '322px' },
+            transitionPreset: {
+              xs: {
+                extend: 'fade',
+                base: {
+                  transitionDelay: '{{motions.motionDuration000}}',
+                  transitionDuration: '{{motions.motionDuration020}}'
+                }
+              },
+              md: 'slideLeft'
+            }
+          },
           overlay: {
             stylePreset: 'menuOverlay'
           }

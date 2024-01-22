@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.117.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.38...@times-components/article-skeleton@1.117.0) (2024-01-18)
+
+
+### Features
+
+* **TMRX-1618:** remove theme provider in components ([#3731](https://github.com/newsuk/times-components/issues/3731)) ([3c186c5](https://github.com/newsuk/times-components/commit/3c186c50e2ffbee1b6d468da5eb050dcaa5e5d86))
+
+
+
+
+
+## [1.116.38](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.37...@times-components/article-skeleton@1.116.38) (2024-01-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.37](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.36...@times-components/article-skeleton@1.116.37) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.116.36](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.35...@times-components/article-skeleton@1.116.36) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.116.35](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.116.34...@times-components/article-skeleton@1.116.35) (2024-01-16)
 
 **Note:** Version bump only for package @times-components/article-skeleton

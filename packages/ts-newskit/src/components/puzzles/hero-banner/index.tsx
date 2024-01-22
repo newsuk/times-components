@@ -46,19 +46,35 @@ export interface HeroBannerProps {
 
 const iconMapping: Record<PuzzleType, IconComponent> = {
   sudoku: () => (
-    <NewsKitSudokusIcon width={200} height={200} className="iconType" />
+    <NewsKitSudokusIcon
+      data-testid="sudoku-icon"
+      width={200}
+      height={200}
+      className="iconType"
+    />
   ),
   crossword: () => (
     <NewsKitCrosswordsIcon width={200} height={200} className="iconType" />
   ),
   'word-puzzles': () => (
-    <NewsKitWordPuzzlesIcon width={200} height={200} className="iconType" />
+    <NewsKitWordPuzzlesIcon
+      data-testid="wordpuzzles-icon"
+      width={200}
+      height={200}
+      className="iconType"
+    />
   ),
   'numbers-and-logic': () => (
-    <NewsKitNumbersAndLogicIcon width={200} height={200} className="iconType" />
+    <NewsKitNumbersAndLogicIcon
+      data-testid="numberslogic-icon"
+      width={200}
+      height={200}
+      className="iconType"
+    />
   ),
   'quizzes-and-teasers': () => (
     <NewsKitQuizzesAndTeasersIcon
+      data-testid="quizzes-and-teasers-icon"
       width={200}
       height={200}
       className="iconType"
@@ -66,6 +82,7 @@ const iconMapping: Record<PuzzleType, IconComponent> = {
   ),
   'board-and-card-games': () => (
     <NewsKitBoardAndCardGamesIcon
+      data-testid="board-and-card-games-icon"
       width={200}
       height={200}
       className="iconType"

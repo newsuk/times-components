@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.18.0...@times-components/responsive@0.19.0) (2024-01-18)
+
+
+### Features
+
+* **TMPZ-280:** reversed display order of mini-quiz hints ([#3717](https://github.com/newsuk/times-components/issues/3717)) ([52b2dd2](https://github.com/newsuk/times-components/commit/52b2dd2c43c5deafff5e93f7de8b596164502e36))
+
+
+
+
+
+# [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.17.4...@times-components/responsive@0.18.0) (2024-01-17)
+
+
+### Features
+
+* **TMPZ-19:** added tracking for the puzzle category scroll buttons ([#3716](https://github.com/newsuk/times-components/issues/3716)) ([982afc5](https://github.com/newsuk/times-components/commit/982afc54adfeaf06543a046be1095e9d4ee74689))
+
+
+
+
+
 ## [0.17.4](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.17.3...@times-components/responsive@0.17.4) (2024-01-12)
 
 **Note:** Version bump only for package @times-components/responsive

@@ -6,6 +6,9 @@ import { HintDisplay } from '../index';
 jest.mock('../styles', () => ({
   StyledTextBlock: ({ children }: { children: React.ReactNode }) => (
     <div>{children}</div>
+  ),
+  HintContainerBlock: ({ children }: { children: React.ReactNode }) => (
+    <div>{children}</div>
   )
 }));
 

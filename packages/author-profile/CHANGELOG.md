@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.17.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.16.55...@times-components/author-profile@6.17.0) (2024-01-18)
+
+
+### Features
+
+* **TMRX-1618:** remove theme provider in components ([#3731](https://github.com/newsuk/times-components/issues/3731)) ([3c186c5](https://github.com/newsuk/times-components/commit/3c186c50e2ffbee1b6d468da5eb050dcaa5e5d86))
+
+
+
+
+
+## [6.16.55](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.16.54...@times-components/author-profile@6.16.55) (2024-01-18)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.16.54](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.16.53...@times-components/author-profile@6.16.54) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.16.53](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.16.52...@times-components/author-profile@6.16.53) (2024-01-17)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
 ## [6.16.52](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.16.51...@times-components/author-profile@6.16.52) (2024-01-16)
 
 **Note:** Version bump only for package @times-components/author-profile

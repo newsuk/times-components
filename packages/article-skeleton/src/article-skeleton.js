@@ -96,12 +96,9 @@ const ArticleSkeleton = ({
     const sidebarNode = sidebarRef.current;
     if (sidebarNode) {
       const adElements = document.querySelectorAll(
-        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2"
+        ".responsive__InlineAdWrapper-sc-4v1r4q-17, .responsive__FullWidthImg-sc-4v1r4q-4, .responsive__InteractiveContainer-sc-4v1r4q-2, #related-articles, #sponsored-article-container, #comments-container"
       );
       const relatedArticlesIds = [
-        "#related-articles",
-        "#sponsored-article-container",
-        "#comments-container",
         ".styles__Container-kqn9c8-0 jmmsXr",
         ".GlobalFooter"
       ];
@@ -365,19 +362,18 @@ const ArticleSkeleton = ({
                 )}
                 {isLiveOrBreaking && (
                   <UserState state={UserState.showLiveUpdateButton}>
-                    <TCThemeProvider>
-                      <UpdateButtonContainer data-testid="Update button container">
-                        <UpdateButtonWithDelay
-                          delay={8000}
-                          display
-                          label="New update"
-                          handleClick={() => scrollToTopAndRefresh(window)}
-                          arrowUp
-                          updatedTime={article.publishedTime}
-                          articleId={article.id}
-                        />
-                      </UpdateButtonContainer>
-                    </TCThemeProvider>
+                    <UpdateButtonContainer data-testid="Update button container">
+                      <UpdateButtonWithDelay
+                        delay={8000}
+                        update
+                        display
+                        label="New update"
+                        handleClick={() => scrollToTopAndRefresh(window)}
+                        arrowUp
+                        updatedTime={article.publishedTime}
+                        articleId={article.id}
+                      />
+                    </UpdateButtonContainer>
                   </UserState>
                 )}
                 <PaywallPortal

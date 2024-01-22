@@ -39,9 +39,9 @@ export const Paginations = ({
         onClick={() => handlePageChange(currentPage - 1)}
       />
       <PaginationItems
-        truncation={false}
+        truncation={true}
         siblings={2}
-        boundaries={1}
+        boundaries={0}
         overrides={{
           stylePreset: 'interfaceBrand010',
           itemButton: ({ pageNumber, ...rest }) => {
