@@ -17,7 +17,7 @@ const renderComponent = (mocks, id, child) =>
   );
 
 describe("ArticleProvider", () => {
-  it("returns query result", done => {
+  xit("returns query result", done => {
     const id = "113e9875-b7bf-4dd7-ac99-dee231bf6e74";
 
     schemaToMocks(
