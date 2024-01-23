@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.51.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.50.2...@times-components/ssr@2.51.0) (2024-01-23)
+
+
+### Features
+
+* **TMRX-000:** Update article path ([#3735](https://github.com/newsuk/times-components/issues/3735)) ([84d54e0](https://github.com/newsuk/times-components/commit/84d54e08f5b6674d8ba97a38516ca9cc1c291887))
+* **TMRX-000:** Update article path ([#3737](https://github.com/newsuk/times-components/issues/3737)) ([c47ae21](https://github.com/newsuk/times-components/commit/c47ae218618c8622c8d09d526b8b531aeb7b3757))
+
+
+
+
+
 ## [2.50.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.50.1...@times-components/ssr@2.50.2) (2024-01-22)
 
 **Note:** Version bump only for package @times-components/ssr
