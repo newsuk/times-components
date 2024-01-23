@@ -232,7 +232,7 @@ const ArticleSkeleton = ({
                 )}
               </HeaderContainer>
               <BodyContainer>
-                {categoryConnection?.nodes[0]?.title && <div>{categoryConnection?.nodes[0]?.title}</div>}
+                {!!categoryConnection?.nodes[0]?.title && <div>{categoryConnection?.nodes[0]?.title}</div>}
                 {!!zephrDivs && (
                   <StaticContent
                     html={
