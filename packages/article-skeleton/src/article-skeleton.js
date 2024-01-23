@@ -79,7 +79,8 @@ const ArticleSkeleton = ({
     publishedTime,
     isSavingEnabled,
     isSharingEnabled,
-    isCommentEnabled
+    isCommentEnabled,
+    categoryConnection
   } = article;
 
   const articleContentReducers = [
@@ -231,6 +232,7 @@ const ArticleSkeleton = ({
                 )}
               </HeaderContainer>
               <BodyContainer>
+                <div>{categoryConnection.nodes[0].title}</div>
                 {!!zephrDivs && (
                   <StaticContent
                     html={

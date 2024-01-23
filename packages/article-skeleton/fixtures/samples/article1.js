@@ -3,6 +3,15 @@ export default {
     article: {
       backgroundColour: null,
       commentsEnabled: true,
+      categoryConnection: {
+        nodes: [
+          {
+          title: 'Category',
+          slug: 'category',
+        categoryType: 'PRIMARY'
+          }
+        ]
+      },
       content: [
         {
           name: "paragraph",

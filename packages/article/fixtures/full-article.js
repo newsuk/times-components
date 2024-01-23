@@ -826,7 +826,7 @@ const defaultCommentsEnabled = true;
 const defaultContent = [
   {
     attributes: {
-      title: "New Brexit referendum"
+      title: "Hello"
     },
     children: [
       {

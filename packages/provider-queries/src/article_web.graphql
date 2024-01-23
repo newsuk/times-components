@@ -17,6 +17,13 @@ query ArticleQuery($id: ID!) {
       expiryTime
     }
     keywords
+    categoryConnection {
+      nodes {
+        title
+        slug
+        categoryType
+      }
+    }
     leadAsset {
       ... on Video {
         id
