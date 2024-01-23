@@ -52,6 +52,7 @@ const ArticleSkeleton = ({
   logoUrl,
   receiveChildList,
   commentingConfig,
+  articleCategoryPath,
   paidContentClassName,
   isPreview,
   swgProductId,
@@ -176,6 +177,7 @@ const ArticleSkeleton = ({
             paidContentClassName={paidContentClassName}
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
             swgProductId={swgProductId}
+            articleCategoryPath={articleCategoryPath}
           />
           {!!zephrDivs && (
             <StaticContent

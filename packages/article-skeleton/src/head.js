@@ -253,7 +253,8 @@ function Head({
   logoUrl,
   paidContentClassName,
   getFallbackThumbnailUrl169,
-  swgProductId
+  swgProductId,
+  articleCategoryPath
 }) {
   const {
     descriptionMarkup,
@@ -411,7 +412,10 @@ function Head({
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
-        jsonLD.mainEntityOfPage["@id"] = makeArticleUrl(article);
+        jsonLD.mainEntityOfPage["@id"] = makeArticleUrl(
+          article,
+          articleCategoryPath
+        );
         return (
           <Helmet encodeSpecialCharacters={false}>
             <title>{title}</title>
@@ -424,7 +428,10 @@ function Head({
 
             <meta content={title} property="og:title" />
             <meta content="article" property="og:type" />
-            <meta content={makeArticleUrl(article)} property="og:url" />
+            <meta
+              content={makeArticleUrl(article, articleCategoryPath)}
+              property="og:url"
+            />
             {desc && <meta content={desc} property="og:description" />}
             {leadassetUrl && (
               <meta content={leadassetUrl} property="og:image" />
@@ -433,7 +440,10 @@ function Head({
 
             <meta content={title} name="twitter:title" />
             <meta content="summary_large_image" name="twitter:card" />
-            <meta content={makeArticleUrl(article)} name="twitter:url" />
+            <meta
+              content={makeArticleUrl(article, articleCategoryPath)}
+              name="twitter:url"
+            />
             {desc && <meta content={desc} name="twitter:description" />}
             {leadassetUrl && (
               <meta content={leadassetUrl} name="twitter:image" />
@@ -476,11 +486,13 @@ Head.propTypes = {
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
-  swgProductId: PropTypes.string
+  swgProductId: PropTypes.string,
+  articleCategoryPath: PropTypes.string
 };
 
 Head.defaultProps = {
-  swgProductId: null
+  swgProductId: null,
+  articleCategoryPath: null
 };
 
 export default Head;

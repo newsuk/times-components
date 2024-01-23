@@ -89,8 +89,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                     : "unknown section",
                   isSavingEnabled: sharingSavingFlag,
                   isSharingEnabled: sharingSavingFlag,
-                  isCommentEnabled: commentingFlag,
-                  path: articleCategoryPath
+                  isCommentEnabled: commentingFlag
                 },
                 error,
                 isLoading,
@@ -101,6 +100,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 onTopicPress: () => {},
                 refetch,
                 commentingConfig,
+                articleCategoryPath,
                 paidContentClassName,
                 isPreview,
                 swgProductId,
