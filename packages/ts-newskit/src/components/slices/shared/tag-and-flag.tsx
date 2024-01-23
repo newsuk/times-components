@@ -28,8 +28,9 @@ export const TagAndFlag = ({
   const hasTag = tag && tag.label;
   const hasFlag = flag && flag !== '';
   const hasbyline = byline && byline.name !== '';
+  const hasNoTagAndFlag = !hasTag && !hasFlag;
 
-  if (!hasTag && !hasFlag && !hasbyline) {
+  if (hasNoTagAndFlag || (hasNoTagAndFlag && isListView && !hasbyline)) {
     return null;
   }
 
