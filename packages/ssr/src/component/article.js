@@ -26,6 +26,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     makeTopicUrl,
     navigationMode,
     commentingConfig,
+    articleCategoryPath,
     getCookieValue,
     userState,
     paidContentClassName,
@@ -88,7 +89,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                     : "unknown section",
                   isSavingEnabled: sharingSavingFlag,
                   isSharingEnabled: sharingSavingFlag,
-                  isCommentEnabled: commentingFlag
+                  isCommentEnabled: commentingFlag,
+                  path: articleCategoryPath
                 },
                 error,
                 isLoading,
