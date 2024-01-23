@@ -5603,6 +5603,28 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
+"@times-components/link@3.17.0":
+  version "3.17.0"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.17.0.tgz#9ebcbbe28a5b960b6b1cbabbff8a327079bbf719"
+  integrity sha512-qywxpybCa1de+NSYMtPaNDXbqmSwc+07gf1CGS0lvIqGo7IgTflqJ5+BaYQQCls0qBPivvbWG1VCneI6FDwNvw==
+  dependencies:
+    "@times-components/ts-styleguide" "1.50.0"
+    "@times-components/utils" "6.16.27"
+    prop-types "15.7.2"
+    react "16.9.0"
+    react-dom "16.9.0"
+    styled-components "4.3.2"
+
+"@times-components/ts-styleguide@1.50.0":
+  version "1.50.0"
+  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.50.0.tgz#4ba45b48ea8ac64653c6dc1d56c9ac7db2d8f54b"
+  integrity sha512-iVo6fAaVpa/HR3HJq+SakdenNSUsdtXXx7CvoyC/2Sb3Ro+bywWfxCen7qJdV9E5EGR/m7dTO+3+kfGROMBJ4g==
+  dependencies:
+    "@times-components/link" "3.17.0"
+    "@times-components/utils" "6.16.27"
+    react "16.9.0"
+    styled-components "4.3.2"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
