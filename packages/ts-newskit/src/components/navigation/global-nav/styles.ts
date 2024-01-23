@@ -215,6 +215,7 @@ export const StyledMoreMenuSub = styled(MenuSub)<{
   $showMoreMD: boolean;
   $showMoreLG: boolean;
   $showMoreXL: boolean;
+  $showMoreXXL: boolean;
 }>`
   display: none;
 
@@ -224,8 +225,11 @@ export const StyledMoreMenuSub = styled(MenuSub)<{
   ${getMediaQueryFromTheme('lg', 'xl')} {
     ${({ $showMoreLG }) => $showMoreLG && `display: flex`};
   }
-  ${getMediaQueryFromTheme('xl')} {
+  ${getMediaQueryFromTheme('xl')} and (max-width: 1499px) {
     ${({ $showMoreXL }) => $showMoreXL && `display: flex`};
+  }
+  @media screen and (min-width: 1500px) {
+    ${({ $showMoreXXL }) => $showMoreXXL && `display: flex`};
   }
 `;
 
@@ -233,6 +237,7 @@ export const StyledMenuItemsDropdown = styled(MenuItem)<{
   $showMD?: boolean;
   $showLG?: boolean;
   $showXL?: boolean;
+  $showXXL?: boolean;
 }>`
   min-width: max-content;
   display: none;
@@ -243,8 +248,11 @@ export const StyledMenuItemsDropdown = styled(MenuItem)<{
   ${getMediaQueryFromTheme('lg', 'xl')} {
     ${({ $showLG }) => $showLG && `display: flex`};
   }
-  ${getMediaQueryFromTheme('xl')} {
+  ${getMediaQueryFromTheme('xl')} and (max-width: 1499px) {
     ${({ $showXL }) => $showXL && `display: flex`};
+  }
+  @media screen and (min-width: 1500px) {
+    ${({ $showXXL }) => $showXXL && `display: flex`};
   }
 `;
 
@@ -252,6 +260,7 @@ export const StyledVisibleMenuItems = styled(MenuItem)<{
   $hideMD?: boolean;
   $hideLG?: boolean;
   $hideXL?: boolean;
+  $hideXXL?: boolean;
 }>`
   min-width: max-content;
 
@@ -261,9 +270,13 @@ export const StyledVisibleMenuItems = styled(MenuItem)<{
   ${getMediaQueryFromTheme('lg', 'xl')} {
     ${({ $hideLG }) => $hideLG && `display: none`};
   }
-  ${getMediaQueryFromTheme('xl')} {
+  ${getMediaQueryFromTheme('xl')} and (max-width: 1499px) {
     ${({ $hideXL }) => $hideXL && `display: none`};
-  `;
+  }
+  @media screen and (min-width: 1500px) {
+    ${({ $hideXXL }) => $hideXXL && `display: none`};
+  }
+`;
 
 export const StyledTextField = styled(TextField)`
   cursor: text;

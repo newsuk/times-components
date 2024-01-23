@@ -8,11 +8,13 @@ import {
 } from '../styles';
 import { MenuItemParent, ResponsiveMenuItemParent } from '../types';
 import { getResponsiveNavData } from '../../../../utils';
+import { breakpoints } from '@times-components/ts-styleguide';
 
-const XL_BREAKPOINT = 1440;
-const LG_BREAKPOINT = 1024;
-const MD_BREAKPOINT = 768;
 const OTHER_NAV_ELEMENTS = 540;
+const MD_LIMIT = breakpoints.medium - OTHER_NAV_ELEMENTS;
+const LG_LIMIT = breakpoints.wide - OTHER_NAV_ELEMENTS;
+const XL_LIMIT = breakpoints.huge - OTHER_NAV_ELEMENTS;
+const XXL_LIMIT = 1160;
 
 const menuItemPresets = {
   minHeight: '60px',
@@ -43,14 +45,16 @@ export const createMenu = (
     responsiveMenuData,
     showMoreMD,
     showMoreLG,
-    showMoreXL
-  } = getResponsiveNavData(menuData, {
-    md: MD_BREAKPOINT - OTHER_NAV_ELEMENTS,
-    lg: LG_BREAKPOINT - OTHER_NAV_ELEMENTS,
-    xl: XL_BREAKPOINT - OTHER_NAV_ELEMENTS
+    showMoreXL,
+    showMoreXXL
+  } = getResponsiveNavData<ResponsiveMenuItemParent>(menuData, {
+    md: MD_LIMIT,
+    lg: LG_LIMIT,
+    xl: XL_LIMIT,
+    xxl: XXL_LIMIT
   });
 
-  const navItems = responsiveMenuData.map(({ title, url, md, lg, xl }) => (
+  const navItems = responsiveMenuData.map(({ title, url, md, lg, xl, xxl }) => (
     <StyledVisibleMenuItems
       href={url}
       overrides={{
@@ -68,6 +72,7 @@ export const createMenu = (
       $hideMD={md}
       $hideLG={lg}
       $hideXL={xl}
+      $hideXXL={xxl}
     >
       {title}
     </StyledVisibleMenuItems>
@@ -94,6 +99,7 @@ export const createMenu = (
         $showMoreMD={showMoreMD}
         $showMoreLG={showMoreLG}
         $showMoreXL={showMoreXL}
+        $showMoreXXL={showMoreXXL}
       >
         <Menu
           vertical
@@ -111,7 +117,7 @@ const createMoreMenu = (
   menuData: ResponsiveMenuItemParent[],
   clickHandler: (title: string) => void
 ) =>
-  menuData.map(({ title, url, md, lg, xl }) => (
+  menuData.map(({ title, url, md, lg, xl, xxl }) => (
     <StyledMenuItemsDropdown
       href={url}
       data-testid="more-menu-item"
@@ -125,6 +131,7 @@ const createMoreMenu = (
       $showMD={md}
       $showLG={lg}
       $showXL={xl}
+      $showXXL={xxl}
     >
       {title}
     </StyledMenuItemsDropdown>

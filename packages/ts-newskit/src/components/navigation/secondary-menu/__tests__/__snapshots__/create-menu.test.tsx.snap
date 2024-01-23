@@ -150,7 +150,7 @@ exports[`Create Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-pajspa"
+              class="css-1iprkpu"
               data-testid="buttonLink"
               href="/magazines"
             >
@@ -167,7 +167,7 @@ exports[`Create Menu should render snapshot 1`] = `
         >
           <button
             aria-expanded="false"
-            class="css-13n8yrf"
+            class="css-1q2lqdm"
             data-testid="menu-sub-button"
             type="button"
           >
@@ -403,7 +403,7 @@ exports[`Create Menu should render snapshot 1`] = `
                       >
                         <a
                           aria-current="false"
-                          class="css-197wtnp"
+                          class="css-1fc4wvh"
                           data-testid="buttonLink"
                           href="/magazines"
                         >

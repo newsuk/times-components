@@ -2,6 +2,7 @@ import { getResponsiveNavData } from '../getResponsiveNavData';
 import { mainMenuItems } from '../../components/navigation/global-nav/fixtures/data.json';
 
 const RESULT_ONE = {
+  charWidth: 1160,
   responsiveMenuData: [
     {
       lg: false,
@@ -9,7 +10,8 @@ const RESULT_ONE = {
       slug: 'home',
       title: 'Home',
       url: '/home',
-      xl: false
+      xl: false,
+      xxl: false
     },
     {
       items: [
@@ -37,7 +39,8 @@ const RESULT_ONE = {
       slug: 'uk',
       title: 'UK',
       url: '/uk',
-      xl: false
+      xl: false,
+      xxl: false
     },
     {
       items: [
@@ -69,7 +72,8 @@ const RESULT_ONE = {
       slug: 'world',
       title: 'World',
       url: '/world',
-      xl: false
+      xl: false,
+      xxl: false
     },
     {
       items: [
@@ -93,7 +97,8 @@ const RESULT_ONE = {
       slug: 'comment',
       title: 'Comment',
       url: '/comment',
-      xl: false
+      xl: false,
+      xxl: false
     },
     {
       items: [
@@ -104,7 +109,8 @@ const RESULT_ONE = {
       slug: 'life-style',
       title: 'Life & Style',
       url: '/life-style',
-      xl: false
+      xl: false,
+      xxl: false
     },
     {
       items: [
@@ -134,7 +140,8 @@ const RESULT_ONE = {
       slug: 'culture-books',
       title: 'Culture & Books',
       url: '/culture-books',
-      xl: false
+      xl: false,
+      xxl: false
     },
     {
       items: [
@@ -171,7 +178,8 @@ const RESULT_ONE = {
       slug: 'business-money',
       title: 'Business and Money',
       url: '/business-money',
-      xl: false
+      xl: false,
+      xxl: false
     },
     {
       items: [
@@ -193,16 +201,18 @@ const RESULT_ONE = {
       slug: 'sport',
       title: 'Sport',
       url: '/sport',
-      xl: false
+      xl: false,
+      xxl: false
     },
     {
       items: [{ slug: 'puzzles', title: 'Todays Puzzles', url: '/puzzles' }],
-      lg: false,
+      lg: true,
       md: true,
       slug: 'puzzles',
       title: 'Puzzles',
       url: '/puzzles',
-      xl: false
+      xl: false,
+      xxl: false
     },
     {
       items: [
@@ -224,14 +234,17 @@ const RESULT_ONE = {
       slug: 'magazines',
       title: 'Magazines',
       url: '/magazines',
-      xl: false
+      xl: false,
+      xxl: false
     }
   ],
   showMoreLG: true,
   showMoreMD: true,
-  showMoreXL: false
+  showMoreXL: false,
+  showMoreXXL: false
 };
 const RESULT_TWO = {
+  charWidth: 1160,
   responsiveMenuData: [
     {
       lg: false,
@@ -319,7 +332,7 @@ const RESULT_TWO = {
         { slug: 'register', title: 'Register', url: '/comment/register' }
       ],
       lg: false,
-      md: false,
+      md: true,
       slug: 'comment',
       title: 'Comment',
       url: '/comment',
@@ -459,7 +472,8 @@ const RESULT_TWO = {
   ],
   showMoreLG: true,
   showMoreMD: true,
-  showMoreXL: true
+  showMoreXL: true,
+  showMoreXXL: false
 };
 
 describe('getResponsiveNavData', () => {
@@ -468,7 +482,8 @@ describe('getResponsiveNavData', () => {
       getResponsiveNavData(mainMenuItems, {
         md: 768,
         lg: 1024,
-        xl: 1440
+        xl: 1440,
+        xxl: 1770
       })
     ).toEqual(RESULT_ONE);
   });
