@@ -18,7 +18,6 @@ export const getResponsiveNavData = <T extends { title: string }>(
   let showMoreXXL = false;
 
   const { md, lg, xl, xxl } = limit;
-
   const responsiveMenuData = menuData.map(data => {
     const length = data.title.length;
     const addingWidth = length * 10 + 32;
