@@ -59,6 +59,7 @@
     "@times-components/schema": "0.7.4",
     "@times-components/tealium": "1.15.2",
     "@times-components/topic": "5.10.48",
+    "@times-components/ts-newskit": "1.161.1",
     "@times-components/ts-styleguide": "1.50.0",
     "@times-components/utils": "6.16.27",
     "apollo-cache-inmemory": "1.5.1",
