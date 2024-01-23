@@ -6,9 +6,13 @@ import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import { RecommendedFetch } from "@times-components/ts-components";
+import { Breadcrumb } from "@times-components/ts-newskit";
 
 import ArticleTopics from "./article-topics";
-import { ShareAndSaveContainer } from "./styles/responsive";
+import {
+  BreadcrumbContainer,
+  ShareAndSaveContainer
+} from "./styles/responsive";
 
 const clearingStyle = {
   clear: "both"
@@ -30,12 +34,29 @@ const ArticleExtras = ({
   topics,
   isSharingSavingEnabled,
   isCommentEnabled,
-  storefrontConfig
+  storefrontConfig,
+  categoryConnection
 }) => {
+  const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => (
+    <>
+      {categoryConnection &&
+      categoryConnection.nodes &&
+      categoryConnection.nodes.length ? (
+        <BreadcrumbContainer $border={showBorder}>
+          <Breadcrumb data={categoryConnection.nodes} />
+        </BreadcrumbContainer>
+      ) : (
+        // Returning empty div to workaround React.children prop-type error
+        <div />
+      )}
+    </>
+  );
+
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticlesAndRelatedArticles = isRecommendedActive => (
     <>
       <div id="related-articles" ref={node => registerNode(node)}>
+        {!isRecommendedActive && renderBreadcrumb()}
         <RelatedArticles
           analyticsStream={analyticsStream}
           isVisible={relatedArticlesVisible}
@@ -60,6 +81,7 @@ const ArticleExtras = ({
       fallback={sponsoredArticlesAndRelatedArticles(false)}
     >
       <div style={clearingStyle} />
+      {renderBreadcrumb({ showBorder: true })}
       <ArticleTopics topics={topics} />
       {isSharingSavingEnabled && (
         <UserState state={UserState.showSaveAndShareBar}>
@@ -111,14 +133,16 @@ ArticleExtras.propTypes = {
   sharingEnabled: PropTypes.bool.isRequired,
   isSharingSavingEnabled: PropTypes.bool,
   isCommentEnabled: PropTypes.bool,
-  storefrontConfig: PropTypes.string.isRequired
+  storefrontConfig: PropTypes.string.isRequired,
+  categoryConnection: PropTypes.shape({})
 };
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
   topics: null,
   isSharingSavingEnabled: true,
-  isCommentEnabled: true
+  isCommentEnabled: true,
+  categoryConnection: null
 };
 
 export default ArticleExtras;

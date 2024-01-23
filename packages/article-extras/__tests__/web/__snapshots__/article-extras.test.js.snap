@@ -3,6 +3,7 @@
 exports[`1. renders correctly 1`] = `
 Array [
   <div />,
+  <div />,
   <div>
     <nav
       data-cy="topic-tags"
@@ -48,6 +49,7 @@ Array [
   <div
     id="related-articles"
   >
+    <div />
     <RelatedArticles
       isVisible={true}
     />
@@ -64,6 +66,7 @@ Array [
 
 exports[`3. read only comments when the user is a share token reader 1`] = `
 Array [
+  <div />,
   <div />,
   <div>
     <nav
@@ -107,6 +110,7 @@ Array [
 
 exports[`4. renders the additional related articles 1`] = `
 Array [
+  <div />,
   <div />,
   <div>
     <nav

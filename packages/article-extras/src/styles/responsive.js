@@ -19,3 +19,23 @@ export const ShareAndSaveContainer = styled.div`
      border-bottom-style: solid;
      border-bottom-width: 1px;`};
 `;
+
+export const BreadcrumbContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  ${props =>
+    props.$border
+      ? `
+    border-bottom-color: ${colours.functional.keyline};
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  `
+      : ""};
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+  }
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
+`;

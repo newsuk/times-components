@@ -256,6 +256,7 @@ function Head({
   swgProductId
 }) {
   const {
+    categoryConnection,
     descriptionMarkup,
     headline,
     leadAsset,
@@ -408,6 +409,24 @@ function Head({
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
+  const breadcrumbJsonLD =
+    categoryConnection &&
+    categoryConnection.nodes &&
+    categoryConnection.nodes.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: categoryConnection.nodes.map(
+            (breadcrumb, breadcrumbIndex) => ({
+              "@type": "ListItem",
+              position: breadcrumbIndex + 1,
+              name: breadcrumb.title,
+              item: `https://thetimes.co.uk/${breadcrumb.slug}`
+            })
+          )
+        }
+      : null;
+
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
@@ -452,6 +471,11 @@ function Head({
             {videoJsonLD && (
               <script type="application/ld+json">
                 {JSON.stringify(videoJsonLD)}
+              </script>
+            )}
+            {breadcrumbJsonLD && (
+              <script type="application/ld+json">
+                {JSON.stringify(breadcrumbJsonLD)}
               </script>
             )}
           </Helmet>

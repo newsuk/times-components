@@ -58,6 +58,7 @@
     "@times-components/save-and-share-bar": "0.19.41",
     "@times-components/ts-components": "1.81.14",
     "@times-components/ts-styleguide": "1.50.1",
+    "@times-components/ts-newskit": "1.161.0",
     "@times-components/user-state": "0.5.18",
     "@times-components/utils": "6.16.27",
     "prop-types": "15.7.2",

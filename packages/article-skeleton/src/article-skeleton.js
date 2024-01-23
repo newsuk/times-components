@@ -79,7 +79,8 @@ const ArticleSkeleton = ({
     publishedTime,
     isSavingEnabled,
     isSharingEnabled,
-    isCommentEnabled
+    isCommentEnabled,
+    categoryConnection
   } = article;
 
   const articleContentReducers = [
@@ -300,6 +301,7 @@ const ArticleSkeleton = ({
                       isSharingSavingEnabled={isSharingSavingEnabled}
                       isCommentEnabled={isCommentEnabled}
                       storefrontConfig={storefrontConfig}
+                      categoryConnection={categoryConnection}
                     />
                   )}
                 </LazyLoad>
