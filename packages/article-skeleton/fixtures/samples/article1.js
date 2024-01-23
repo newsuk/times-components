@@ -6,9 +6,9 @@ export default {
       categoryConnection: {
         nodes: [
           {
-          title: 'Category',
-          slug: 'category',
-        categoryType: 'PRIMARY'
+            title: "Category",
+            slug: "category",
+            categoryType: "PRIMARY"
           }
         ]
       },
