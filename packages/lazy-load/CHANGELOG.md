@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.34...@times-components/lazy-load@0.8.0) (2024-01-24)
+
+
+### Features
+
+* **TMRX-000:** Sync dependancies ([98e6d13](https://github.com/newsuk/times-components/commit/98e6d1309833ddd9401d9f1f7852dd4a5dd372a0))
+
+
+
+
+
 ## [0.7.34](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.33...@times-components/lazy-load@0.7.34) (2024-01-23)
 
 **Note:** Version bump only for package @times-components/lazy-load

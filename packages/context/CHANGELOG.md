@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.11.0...@times-components/context@1.12.0) (2024-01-24)
+
+
+### Features
+
+* **TMRX-000:** Article category path meta update ([#3738](https://github.com/newsuk/times-components/issues/3738)) ([c2b19de](https://github.com/newsuk/times-components/commit/c2b19deaf195338216a630b52896e090d31e2cdb))
+* **TMRX-000:** Sync dependancies ([98e6d13](https://github.com/newsuk/times-components/commit/98e6d1309833ddd9401d9f1f7852dd4a5dd372a0))
+
+
+
+
+
 # [1.11.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.10.42...@times-components/context@1.11.0) (2024-01-23)
 
 

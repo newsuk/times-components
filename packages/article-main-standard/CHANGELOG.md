@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.83.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.82.59...@times-components/article-main-standard@3.83.0) (2024-01-24)
+
+
+### Features
+
+* **TMRX-000:** Article category path meta update ([#3738](https://github.com/newsuk/times-components/issues/3738)) ([c2b19de](https://github.com/newsuk/times-components/commit/c2b19deaf195338216a630b52896e090d31e2cdb))
+
+
+
+
+
 ## [3.82.59](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.82.58...@times-components/article-main-standard@3.82.59) (2024-01-24)
 
 **Note:** Version bump only for package @times-components/article-main-standard
