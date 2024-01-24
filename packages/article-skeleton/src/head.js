@@ -2,7 +2,7 @@ import React from "react";
 import get from "lodash.get";
 import { Helmet } from "react-helmet-async";
 import PropTypes from "prop-types";
-import Context from "@times-components/context";
+
 import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
 
@@ -253,7 +253,8 @@ function Head({
   logoUrl,
   paidContentClassName,
   getFallbackThumbnailUrl169,
-  swgProductId
+  swgProductId,
+  articleDataFromRender
 }) {
   const {
     descriptionMarkup,
@@ -269,6 +270,10 @@ function Head({
     url,
     id
   } = article;
+
+  const { hostName, canonicalUrl } = articleDataFromRender || {};
+  const articleUrl =
+    hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
   const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
   const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
@@ -333,7 +338,8 @@ function Head({
       }
     },
     mainEntityOfPage: {
-      "@type": "WebPage"
+      "@type": "WebPage",
+      "@id": articleUrl
     },
     dateCreated: publishedTime,
     datePublished,
@@ -354,7 +360,7 @@ function Head({
     articleSection: sectionname,
     keywords: sectionNameList,
     articleId: id,
-    url
+    url: articleUrl
   };
 
   if (swgProductId) {
@@ -387,13 +393,13 @@ function Head({
     description: seoDescription,
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": url
+      "@id": articleUrl
     },
     datePublished: publishedTime,
     dateModified: updatedTime,
     coverageStartTime: publishedTime,
     coverageEndTime: liveBlogArticleExpiry,
-    url,
+    url: articleUrl,
     keywords,
     image: {
       "@type": "ImageObject",
@@ -409,55 +415,42 @@ function Head({
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
   return (
-    <Context.Consumer>
-      {({ makeArticleUrl }) => {
-        jsonLD.mainEntityOfPage["@id"] = makeArticleUrl(article);
-        return (
-          <Helmet encodeSpecialCharacters={false}>
-            <title>{title}</title>
-            {isSyndicatedArticle && <meta name="robots" content="noindex" />}
-            <meta name="robots" content="max-image-preview:large" />
-            <meta content={title} name="article:title" />
-            <meta content={publication} name="article:publication" />
-            {desc && <meta content={desc} name="description" />}
-            {authorName && <meta content={authorName} name="author" />}
+    <Helmet encodeSpecialCharacters={false}>
+      <title>{title}</title>
+      {isSyndicatedArticle && <meta name="robots" content="noindex" />}
+      <meta name="robots" content="max-image-preview:large" />
+      <meta content={title} name="article:title" />
+      <meta content={publication} name="article:publication" />
+      {desc && <meta content={desc} name="description" />}
+      {authorName && <meta content={authorName} name="author" />}
 
-            <meta content={title} property="og:title" />
-            <meta content="article" property="og:type" />
-            <meta content={makeArticleUrl(article)} property="og:url" />
-            {desc && <meta content={desc} property="og:description" />}
-            {leadassetUrl && (
-              <meta content={leadassetUrl} property="og:image" />
-            )}
-            {hasVideo && <meta name="robots" content="max-video-preview:-1" />}
+      <meta content={title} property="og:title" />
+      <meta content="article" property="og:type" />
+      <meta content={articleUrl} property="og:url" />
+      {desc && <meta content={desc} property="og:description" />}
+      {leadassetUrl && <meta content={leadassetUrl} property="og:image" />}
+      {hasVideo && <meta name="robots" content="max-video-preview:-1" />}
 
-            <meta content={title} name="twitter:title" />
-            <meta content="summary_large_image" name="twitter:card" />
-            <meta content={makeArticleUrl(article)} name="twitter:url" />
-            {desc && <meta content={desc} name="twitter:description" />}
-            {leadassetUrl && (
-              <meta content={leadassetUrl} name="twitter:image" />
-            )}
+      <meta content={title} name="twitter:title" />
+      <meta content="summary_large_image" name="twitter:card" />
+      <meta content={articleUrl} name="twitter:url" />
+      {desc && <meta content={desc} name="twitter:description" />}
+      {leadassetUrl && <meta content={leadassetUrl} name="twitter:image" />}
 
-            {isLiveBlogArticle ? (
-              <script type="application/ld+json">
-                {JSON.stringify(liveBlogJsonLD)}
-              </script>
-            ) : (
-              <script type="application/ld+json">
-                {JSON.stringify(jsonLD)}
-              </script>
-            )}
+      {isLiveBlogArticle ? (
+        <script type="application/ld+json">
+          {JSON.stringify(liveBlogJsonLD)}
+        </script>
+      ) : (
+        <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
+      )}
 
-            {videoJsonLD && (
-              <script type="application/ld+json">
-                {JSON.stringify(videoJsonLD)}
-              </script>
-            )}
-          </Helmet>
-        );
-      }}
-    </Context.Consumer>
+      {videoJsonLD && (
+        <script type="application/ld+json">
+          {JSON.stringify(videoJsonLD)}
+        </script>
+      )}
+    </Helmet>
   );
 }
 
@@ -476,11 +469,16 @@ Head.propTypes = {
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
-  swgProductId: PropTypes.string
+  swgProductId: PropTypes.string,
+  articleDataFromRender: PropTypes.shape({
+    hostName: PropTypes.string,
+    canonicalUrl: PropTypes.string
+  })
 };
 
 Head.defaultProps = {
-  swgProductId: null
+  swgProductId: null,
+  articleDataFromRender: null
 };
 
 export default Head;

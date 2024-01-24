@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.161.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.161.1...@times-components/ts-newskit@1.161.2) (2024-01-24)
+
+
+### Bug Fixes
+
+* **TMRX-1866:** fixed logic to render tag and label component ([#3740](https://github.com/newsuk/times-components/issues/3740)) ([724ebdf](https://github.com/newsuk/times-components/commit/724ebdf9cda8bf89b180c282f13fb68c2a265eb2))
+
+
+
+
+
 ## [1.161.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.161.0...@times-components/ts-newskit@1.161.1) (2024-01-22)
 
 

@@ -1,10 +1,9 @@
 import { scales } from "@times-components/ts-styleguide";
 
 export default {
-  makeArticleUrl: ({ path, slug, shortIdentifier }) =>
+  makeArticleUrl: ({ slug, shortIdentifier }) =>
     slug && shortIdentifier
-      ? `https://www.thetimes.co.uk/${path ||
-          "article"}/${slug}-${shortIdentifier}`
+      ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
       : "",
   makeTopicUrl: ({ slug }) => `/topic/${slug}`,
   theme: {
