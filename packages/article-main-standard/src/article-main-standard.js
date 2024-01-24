@@ -83,7 +83,7 @@ class ArticlePage extends Component {
       navigationMode,
       receiveChildList,
       commentingConfig,
-      articleCategoryPath,
+      articleDataFromRender,
       paidContentClassName,
       isPreview,
       swgProductId,
@@ -107,7 +107,7 @@ class ArticlePage extends Component {
           receiveChildList={receiveChildList}
           navigationMode={navigationMode}
           commentingConfig={commentingConfig}
-          articleCategoryPath={articleCategoryPath}
+          articleDataFromRender={articleDataFromRender}
           paidContentClassName={paidContentClassName}
           isPreview={isPreview}
           swgProductId={swgProductId}

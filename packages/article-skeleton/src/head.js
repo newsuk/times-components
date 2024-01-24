@@ -254,7 +254,7 @@ function Head({
   paidContentClassName,
   getFallbackThumbnailUrl169,
   swgProductId,
-  articleCategoryPath
+  articleDataFromRender
 }) {
   const {
     descriptionMarkup,
@@ -354,8 +354,7 @@ function Head({
     author: authorSchema,
     articleSection: sectionname,
     keywords: sectionNameList,
-    articleId: id,
-    url
+    articleId: id
   };
 
   if (swgProductId) {
@@ -387,8 +386,7 @@ function Head({
     headline,
     description: seoDescription,
     mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": url
+      "@type": "WebPage"
     },
     datePublished: publishedTime,
     dateModified: updatedTime,
@@ -412,10 +410,14 @@ function Head({
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
-        jsonLD.mainEntityOfPage["@id"] = makeArticleUrl(
-          article,
-          articleCategoryPath
-        );
+        const articleUrl =
+          articleDataFromRender && articleDataFromRender.canonicalUrl
+            ? articleDataFromRender.canonicalUrl
+            : makeArticleUrl(article);
+
+        jsonLD.url = articleUrl;
+        jsonLD.mainEntityOfPage["@id"] = articleUrl;
+
         return (
           <Helmet encodeSpecialCharacters={false}>
             <title>{title}</title>
@@ -428,10 +430,7 @@ function Head({
 
             <meta content={title} property="og:title" />
             <meta content="article" property="og:type" />
-            <meta
-              content={makeArticleUrl(article, articleCategoryPath)}
-              property="og:url"
-            />
+            <meta content={articleUrl} property="og:url" />
             {desc && <meta content={desc} property="og:description" />}
             {leadassetUrl && (
               <meta content={leadassetUrl} property="og:image" />
@@ -440,10 +439,7 @@ function Head({
 
             <meta content={title} name="twitter:title" />
             <meta content="summary_large_image" name="twitter:card" />
-            <meta
-              content={makeArticleUrl(article, articleCategoryPath)}
-              name="twitter:url"
-            />
+            <meta content={articleUrl} name="twitter:url" />
             {desc && <meta content={desc} name="twitter:description" />}
             {leadassetUrl && (
               <meta content={leadassetUrl} name="twitter:image" />
@@ -487,12 +483,14 @@ Head.propTypes = {
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
   swgProductId: PropTypes.string,
-  articleCategoryPath: PropTypes.string
+  articleDataFromRender: PropTypes.shape({
+    canonicalUrl: PropTypes.string
+  })
 };
 
 Head.defaultProps = {
   swgProductId: null,
-  articleCategoryPath: null
+  articleDataFromRender: null
 };
 
 export default Head;
