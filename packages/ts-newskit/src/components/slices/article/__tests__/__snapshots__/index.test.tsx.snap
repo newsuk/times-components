@@ -26,7 +26,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
       class="css-17cghxi"
     >
       <a
-        class="article-headline css-4rb6a9"
+        class="article-headline css-fauarv"
         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
         role="link"
       >
@@ -113,7 +113,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
       class="css-17cghxi"
     >
       <a
-        class="article-headline css-4rb6a9"
+        class="article-headline css-fauarv"
         href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
         role="link"
       >
