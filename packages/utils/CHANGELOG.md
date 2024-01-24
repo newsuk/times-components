@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.16.28](https://github.com/newsuk/times-components/compare/@times-components/utils@6.16.27...@times-components/utils@6.16.28) (2024-01-24)
+
+
+### Bug Fixes
+
+* **TMRX-1866:** fixed logic to render tag and label component ([#3740](https://github.com/newsuk/times-components/issues/3740)) ([724ebdf](https://github.com/newsuk/times-components/commit/724ebdf9cda8bf89b180c282f13fb68c2a265eb2))
+
+
+
+
+
 ## [6.16.27](https://github.com/newsuk/times-components/compare/@times-components/utils@6.16.26...@times-components/utils@6.16.27) (2024-01-18)
 
 **Note:** Version bump only for package @times-components/utils
