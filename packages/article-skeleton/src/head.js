@@ -410,9 +410,11 @@ function Head({
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
+        const { hostName, canonicalUrl } = articleDataFromRender || {};
+
         const articleUrl =
-          articleDataFromRender && articleDataFromRender.canonicalUrl
-            ? articleDataFromRender.canonicalUrl
+          hostName && canonicalUrl
+            ? `${hostName}${canonicalUrl}`
             : makeArticleUrl(article);
 
         jsonLD.url = articleUrl;
@@ -484,6 +486,7 @@ Head.propTypes = {
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
   swgProductId: PropTypes.string,
   articleDataFromRender: PropTypes.shape({
+    hostName: PropTypes.string,
     canonicalUrl: PropTypes.string
   })
 };
