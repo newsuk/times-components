@@ -38,7 +38,7 @@ export const TagAndFlag = ({
     flagOverrides && flagOverrides.stylePreset
       ? flagOverrides.stylePreset
       : preset;
-      
+
   const defaultTypographyPreset = (preset: MQ<string>) =>
     flagOverrides && flagOverrides.typographyPreset
       ? flagOverrides.typographyPreset
