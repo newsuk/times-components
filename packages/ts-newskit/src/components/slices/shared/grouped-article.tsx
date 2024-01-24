@@ -57,7 +57,7 @@ export const GroupedArticle = ({
           }
         )}
         <Visible xs sm>
-          <AdContainer data-testid="Ad container"/>
+          <AdContainer data-testid="Ad container" />
         </Visible>
       </GridLayout>
     </Block>
