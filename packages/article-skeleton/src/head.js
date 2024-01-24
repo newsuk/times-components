@@ -354,7 +354,8 @@ function Head({
     author: authorSchema,
     articleSection: sectionname,
     keywords: sectionNameList,
-    articleId: id
+    articleId: id,
+    url
   };
 
   if (swgProductId) {
@@ -386,7 +387,8 @@ function Head({
     headline,
     description: seoDescription,
     mainEntityOfPage: {
-      "@type": "WebPage"
+      "@type": "WebPage",
+      "@id": url
     },
     datePublished: publishedTime,
     dateModified: updatedTime,
@@ -417,8 +419,9 @@ function Head({
             ? `${hostName}${canonicalUrl}`
             : makeArticleUrl(article);
 
-        jsonLD.url = articleUrl;
+        // jsonLD.url = articleUrl;
         jsonLD.mainEntityOfPage["@id"] = articleUrl;
+        // liveBlogJsonLD.mainEntityOfPage["@id"] = articleUrl;
 
         return (
           <Helmet encodeSpecialCharacters={false}>
