@@ -250,11 +250,11 @@ const getLiveBlogUpdates = (article, publisher, author) => {
 
 function Head({
   article,
+  articleUrl,
   logoUrl,
   paidContentClassName,
   getFallbackThumbnailUrl169,
-  swgProductId,
-  articleDataFromRender
+  swgProductId
 }) {
   const {
     descriptionMarkup,
@@ -267,13 +267,8 @@ function Head({
     hasVideo,
     seoDescription,
     keywords,
-    url,
     id
   } = article;
-
-  const { hostName, canonicalUrl } = articleDataFromRender || {};
-  const articleUrl =
-    hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
   const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
   const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
@@ -466,19 +461,15 @@ Head.propTypes = {
     shortIdentifier: PropTypes.string.isRequired,
     tiles: PropTypes.array
   }).isRequired,
+  articleUrl: PropTypes.string.isRequired,
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
-  swgProductId: PropTypes.string,
-  articleDataFromRender: PropTypes.shape({
-    hostName: PropTypes.string,
-    canonicalUrl: PropTypes.string
-  })
+  swgProductId: PropTypes.string
 };
 
 Head.defaultProps = {
-  swgProductId: null,
-  articleDataFromRender: null
+  swgProductId: null
 };
 
 export default Head;
