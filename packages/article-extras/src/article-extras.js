@@ -39,7 +39,7 @@ const ArticleExtras = ({
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => (
     <>
-      { breadcrumbs && breadcrumbs.length > 0 ? (
+      {breadcrumbs && breadcrumbs.length > 0 ? (
         <BreadcrumbContainer $border={showBorder}>
           <Breadcrumb data={breadcrumbs} />
         </BreadcrumbContainer>

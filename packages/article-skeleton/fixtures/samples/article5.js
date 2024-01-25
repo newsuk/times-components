@@ -905,7 +905,10 @@ export default {
           image: null
         }
       ],
-      breadcrumbs: [ { title: 'News', url: '/news' }, { title: 'UK', url: '/news/uk' } ],
+      breadcrumbs: [
+        { title: "News", url: "/news" },
+        { title: "UK", url: "/news/uk" }
+      ],
       hasVideo: true,
       headline:
         "Olympic spirit the winner after high jumpers Barshim, of Qatar and Tamberi, of Italy, share gold",

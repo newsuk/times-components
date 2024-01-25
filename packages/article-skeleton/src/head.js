@@ -411,19 +411,16 @@ function Head({
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
   const breadcrumbJsonLD =
-    breadcrumbs &&
-    breadcrumbs.length
+    breadcrumbs && breadcrumbs.length
       ? {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
-          itemListElement: breadcrumbs.map(
-            (breadcrumb, breadcrumbIndex) => ({
-              "@type": "ListItem",
-              position: breadcrumbIndex + 1,
-              name: breadcrumb.title,
-              item: `https://thetimes.co.uk/${breadcrumb.slug}`
-            })
-          )
+          itemListElement: breadcrumbs.map((breadcrumb, breadcrumbIndex) => ({
+            "@type": "ListItem",
+            position: breadcrumbIndex + 1,
+            name: breadcrumb.title,
+            item: `https://thetimes.co.uk/${breadcrumb.slug}`
+          }))
         }
       : null;
 
