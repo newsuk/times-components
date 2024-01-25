@@ -43,6 +43,9 @@ export const SliceHeaderContainer = styled(Stack)`
 
 export const TitleBarContainer = styled(Stack)`
   max-width: 760px;
+  ${getMediaQueryFromTheme('lg')} {
+    max-width: 840px;
+  }
 `;
 
 export const StyledTitleBar = styled(TitleBar)`
