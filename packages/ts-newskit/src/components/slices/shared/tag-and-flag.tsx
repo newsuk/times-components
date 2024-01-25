@@ -30,8 +30,14 @@ export const TagAndFlag = ({
   const hasbyline = byline && byline.name !== '';
   const hasNoTagAndFlag = !hasTag && !hasFlag;
 
-  if (hasNoTagAndFlag || (hasNoTagAndFlag && isListView && !hasbyline)) {
-    return null;
+  if (hasNoTagAndFlag) {
+    if (!isListView) {
+      return null;
+    } else {
+      if (!hasbyline) {
+        return null;
+      }
+    }
   }
 
   const defaultStylePreset = (preset: MQ<string>) =>
