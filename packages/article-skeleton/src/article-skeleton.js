@@ -80,7 +80,7 @@ const ArticleSkeleton = ({
     isSavingEnabled,
     isSharingEnabled,
     isCommentEnabled,
-    categoryConnection
+    breadcrumbs
   } = article;
 
   const { hostName, canonicalUrl } = articleDataFromRender || {};
@@ -306,7 +306,7 @@ const ArticleSkeleton = ({
                       isSharingSavingEnabled={isSharingSavingEnabled}
                       isCommentEnabled={isCommentEnabled}
                       storefrontConfig={storefrontConfig}
-                      categoryConnection={categoryConnection}
+                      breadcrumbs={breadcrumbs}
                     />
                   )}
                 </LazyLoad>

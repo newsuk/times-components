@@ -35,15 +35,13 @@ const ArticleExtras = ({
   isSharingSavingEnabled,
   isCommentEnabled,
   storefrontConfig,
-  categoryConnection
+  breadcrumbs
 }) => {
   const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => (
     <>
-      {categoryConnection &&
-      categoryConnection.nodes &&
-      categoryConnection.nodes.length ? (
+      { breadcrumbs && breadcrumbs.length > 0 ? (
         <BreadcrumbContainer $border={showBorder}>
-          <Breadcrumb data={categoryConnection.nodes} />
+          <Breadcrumb data={breadcrumbs} />
         </BreadcrumbContainer>
       ) : (
         // Returning empty div to workaround React.children prop-type error
@@ -134,7 +132,7 @@ ArticleExtras.propTypes = {
   isSharingSavingEnabled: PropTypes.bool,
   isCommentEnabled: PropTypes.bool,
   storefrontConfig: PropTypes.string.isRequired,
-  categoryConnection: PropTypes.shape({})
+  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
 };
 
 ArticleExtras.defaultProps = {
@@ -142,7 +140,7 @@ ArticleExtras.defaultProps = {
   topics: null,
   isSharingSavingEnabled: true,
   isCommentEnabled: true,
-  categoryConnection: null
+  breadcrumbs: []
 };
 
 export default ArticleExtras;

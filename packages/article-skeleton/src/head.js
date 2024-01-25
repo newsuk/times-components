@@ -257,7 +257,7 @@ function Head({
   swgProductId
 }) {
   const {
-    categoryConnection,
+    breadcrumbs,
     descriptionMarkup,
     headline,
     leadAsset,
@@ -411,13 +411,12 @@ function Head({
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
   const breadcrumbJsonLD =
-    categoryConnection &&
-    categoryConnection.nodes &&
-    categoryConnection.nodes.length
+    breadcrumbs &&
+    breadcrumbs.length
       ? {
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
-          itemListElement: categoryConnection.nodes.map(
+          itemListElement: breadcrumbs.map(
             (breadcrumb, breadcrumbIndex) => ({
               "@type": "ListItem",
               position: breadcrumbIndex + 1,
