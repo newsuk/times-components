@@ -79,11 +79,10 @@ const ArticleSkeleton = ({
     publishedTime,
     isSavingEnabled,
     isSharingEnabled,
-    isCommentEnabled,
-    breadcrumbs
+    isCommentEnabled
   } = article;
 
-  const { hostName, canonicalUrl } = articleDataFromRender || {};
+  const { hostName, canonicalUrl, breadcrumbs } = articleDataFromRender || {};
   const articleUrl =
     hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
@@ -182,6 +181,7 @@ const ArticleSkeleton = ({
             paidContentClassName={paidContentClassName}
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
             swgProductId={swgProductId}
+            breadcrumbs={breadcrumbs}
           />
           {!!zephrDivs && (
             <StaticContent

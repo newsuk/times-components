@@ -27,8 +27,7 @@ module.exports = (
     sharingSavingFlag = true,
     commentingFlag = true,
     showAudioPlayer,
-    storefrontConfig,
-    breadcrumbs
+    storefrontConfig
   },
   userState
 ) => {
@@ -83,8 +82,7 @@ module.exports = (
       sharingSavingFlag,
       commentingFlag,
       showAudioPlayer,
-      storefrontConfig,
-      breadcrumbs
+      storefrontConfig
     },
     name: "article"
   };

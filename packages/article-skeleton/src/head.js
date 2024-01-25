@@ -254,10 +254,10 @@ function Head({
   logoUrl,
   paidContentClassName,
   getFallbackThumbnailUrl169,
-  swgProductId
+  swgProductId,
+  breadcrumbs
 }) {
   const {
-    breadcrumbs,
     descriptionMarkup,
     headline,
     leadAsset,
