@@ -850,7 +850,7 @@ exports[`7. card with a loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0,
           "isStatic": false,
           "lastClassName": "dazpaJ",
           "rules": Array [
@@ -888,7 +888,7 @@ exports[`7. card with a loading state 1`] = `
           "TsTcView-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0,
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1055,7 +1055,7 @@ exports[`8. card with a loading state and no image 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0,
           "isStatic": false,
           "lastClassName": "dazpaJ",
           "rules": Array [
@@ -1093,7 +1093,7 @@ exports[`8. card with a loading state and no image 1`] = `
           "TsTcView-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0,
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1219,7 +1219,7 @@ exports[`9. card with reversed loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0,
           "isStatic": false,
           "lastClassName": "dazpaJ",
           "rules": Array [
@@ -1257,7 +1257,7 @@ exports[`9. card with reversed loading state 1`] = `
           "TsTcView-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0,
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1424,7 +1424,7 @@ exports[`10. card with reversed loading state with no image 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0,
           "isStatic": false,
           "lastClassName": "dazpaJ",
           "rules": Array [
@@ -1462,7 +1462,7 @@ exports[`10. card with reversed loading state with no image 1`] = `
           "TsTcView-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0,
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
