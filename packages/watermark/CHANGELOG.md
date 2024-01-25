@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.10.49...@times-components/watermark@2.11.0) (2024-01-24)
+
+
+### Features
+
+* **TMRX-000:** Sync dependancies ([98e6d13](https://github.com/newsuk/times-components/commit/98e6d1309833ddd9401d9f1f7852dd4a5dd372a0))
+
+
+
+
+
 ## [2.10.49](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.10.48...@times-components/watermark@2.10.49) (2024-01-23)
 
 **Note:** Version bump only for package @times-components/watermark

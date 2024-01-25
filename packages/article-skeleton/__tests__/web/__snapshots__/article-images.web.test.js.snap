@@ -12,6 +12,7 @@ exports[`1. a primary image 1`] = `
     id="article-main"
   >
     <Head
+      articleUrl="https://url.io"
       swgProductId={null}
     />
     <div>
@@ -107,6 +108,7 @@ exports[`2. a fullwidth image 1`] = `
     id="article-main"
   >
     <Head
+      articleUrl="https://url.io"
       swgProductId={null}
     />
     <div>
@@ -202,6 +204,7 @@ exports[`3. a secondary image 1`] = `
     id="article-main"
   >
     <Head
+      articleUrl="https://url.io"
       swgProductId={null}
     />
     <div>
@@ -297,6 +300,7 @@ exports[`4. an inline image 1`] = `
     id="article-main"
   >
     <Head
+      articleUrl="https://url.io"
       swgProductId={null}
     />
     <div>

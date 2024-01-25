@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.119.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.118.0...@times-components/article-skeleton@1.119.0) (2024-01-25)
+
+
+### Features
+
+* **TMRX-000:** Article canonical url ([#3743](https://github.com/newsuk/times-components/issues/3743)) ([e9e28da](https://github.com/newsuk/times-components/commit/e9e28dad358f6996f3bb3fe2909c2cf482232a56))
+
+
+
+
+
+# [1.118.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.117.4...@times-components/article-skeleton@1.118.0) (2024-01-24)
+
+
+### Features
+
+* **TMRX-000:** Article category path meta update ([#3738](https://github.com/newsuk/times-components/issues/3738)) ([c2b19de](https://github.com/newsuk/times-components/commit/c2b19deaf195338216a630b52896e090d31e2cdb))
+
+
+
+
+
+## [1.117.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.117.3...@times-components/article-skeleton@1.117.4) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.117.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.117.2...@times-components/article-skeleton@1.117.3) (2024-01-23)
 
 **Note:** Version bump only for package @times-components/article-skeleton

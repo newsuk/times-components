@@ -12,6 +12,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
     id="article-main"
   >
     <Head
+      articleUrl="https://url.io"
       swgProductId={null}
     />
     <div>
@@ -146,6 +147,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
     id="article-main"
   >
     <Head
+      articleUrl="https://url.io"
       swgProductId={null}
     />
     <div>
