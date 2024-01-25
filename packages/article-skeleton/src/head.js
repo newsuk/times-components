@@ -486,11 +486,13 @@ Head.propTypes = {
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
-  swgProductId: PropTypes.string
+  swgProductId: PropTypes.string,
+  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
 };
 
 Head.defaultProps = {
-  swgProductId: null
+  swgProductId: null,
+  breadcrumbs: []
 };
 
 export default Head;
