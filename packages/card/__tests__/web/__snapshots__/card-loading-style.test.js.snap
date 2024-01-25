@@ -128,7 +128,7 @@ exports[`1. card loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
         "styledComponentId": "Animations__FadeIn-w31u4-0",

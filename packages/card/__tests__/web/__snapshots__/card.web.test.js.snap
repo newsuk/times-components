@@ -885,7 +885,7 @@ exports[`7. card with a loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
         "styledComponentId": "Animations__FadeIn-w31u4-0",
@@ -1090,7 +1090,7 @@ exports[`8. card with a loading state and no image 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
         "styledComponentId": "Animations__FadeIn-w31u4-0",
@@ -1254,7 +1254,7 @@ exports[`9. card with reversed loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
         "styledComponentId": "Animations__FadeIn-w31u4-0",
@@ -1459,7 +1459,7 @@ exports[`10. card with reversed loading state with no image 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
         "styledComponentId": "Animations__FadeIn-w31u4-0",
