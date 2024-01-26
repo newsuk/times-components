@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.13.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.12.25...@times-components/card@6.13.0) (2024-01-26)
+
+
+### Features
+
+* **TMRX-1762:** productionise breadcrumb component ([#3746](https://github.com/newsuk/times-components/issues/3746)) ([bf1b896](https://github.com/newsuk/times-components/commit/bf1b8964a34d4ae8dd0b1283d1f1fbc80ccecec6))
+
+
+
+
+
 ## [6.12.25](https://github.com/newsuk/times-components/compare/@times-components/card@6.12.24...@times-components/card@6.12.25) (2024-01-25)
 
 **Note:** Version bump only for package @times-components/card

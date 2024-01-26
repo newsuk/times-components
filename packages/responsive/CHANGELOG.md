@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.20.0...@times-components/responsive@0.20.1) (2024-01-26)
+
+
+### Bug Fixes
+
+* **TMRX-1879:** add prop for mobile ad slot ([#3745](https://github.com/newsuk/times-components/issues/3745)) ([7c74c35](https://github.com/newsuk/times-components/commit/7c74c35fb93e34a33c0da2fe1aa7590c8a559bd0))
+
+
+
+
+
 # [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.19.1...@times-components/responsive@0.20.0) (2024-01-25)
 
 
