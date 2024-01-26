@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.8.0...@times-components/lazy-load@0.8.1) (2024-01-25)
+
+
+### Bug Fixes
+
+* **TMRX-1866:** remove additional space under the paragraph ([#3744](https://github.com/newsuk/times-components/issues/3744)) ([1068895](https://github.com/newsuk/times-components/commit/1068895c84ce26103bb4a4ef6a869a0fd55c7c5e))
+
+
+
+
+
 # [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.7.34...@times-components/lazy-load@0.8.0) (2024-01-24)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.11.1](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.11.0...@times-components/watermark@2.11.1) (2024-01-25)
+
+
+### Bug Fixes
+
+* **TMRX-1866:** remove additional space under the paragraph ([#3744](https://github.com/newsuk/times-components/issues/3744)) ([1068895](https://github.com/newsuk/times-components/commit/1068895c84ce26103bb4a4ef6a869a0fd55c7c5e))
+
+
+
+
+
 # [2.11.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.10.49...@times-components/watermark@2.11.0) (2024-01-24)
 
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.163.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.162.0...@times-components/ts-newskit@1.163.0) (2024-01-25)
+
+
+### Bug Fixes
+
+* **TMRX-1866:** remove additional space under the paragraph ([#3744](https://github.com/newsuk/times-components/issues/3744)) ([1068895](https://github.com/newsuk/times-components/commit/1068895c84ce26103bb4a4ef6a869a0fd55c7c5e))
+
+
+### Features
+
+* **TMRX-1850:** add tagline to sliceheader ([#3742](https://github.com/newsuk/times-components/issues/3742)) ([ac504c6](https://github.com/newsuk/times-components/commit/ac504c630323e547c685b40322f03e195ff2d757))
+
+
+
+
+
 # [1.162.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.161.2...@times-components/ts-newskit@1.162.0) (2024-01-25)
 
 

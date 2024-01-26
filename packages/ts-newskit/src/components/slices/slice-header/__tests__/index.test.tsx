@@ -16,6 +16,17 @@ describe('Render Header', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+  it('should render a snapshot with tagline', () => {
+    const { asFragment } = render(
+      <SliceHeader
+        title="Rugby Union"
+        href="https://www.thetimes.co.uk/"
+        tagline="this is the test tagline"
+        sliceHeaderClickHandler={mockSliceHeaderClickHandler}
+      />
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
 
   it('should render correct title', () => {
     const { getByText } = render(
@@ -27,6 +38,20 @@ describe('Render Header', () => {
     );
     const text = getByText('Rugby Union');
     expect(text).toBeInTheDocument();
+  });
+
+  it('should render correct tagline', () => {
+    const { getAllByText } = render(
+      <SliceHeader
+        title="Rugby Union"
+        href="https://www.thetimes.co.uk/"
+        tagline="this is the test tagline"
+        sliceHeaderClickHandler={mockSliceHeaderClickHandler}
+      />
+    );
+    const text = getAllByText('this is the test tagline');
+    expect(text[0]).not.toBeVisible();
+    expect(text[1]).toBeVisible();
   });
 
   it('should render correct color', () => {
