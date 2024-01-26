@@ -104,7 +104,7 @@ const ArticleExtras = ({
           </MessageContext.Consumer>
         </UserState>
       )}
-      {sponsoredArticlesAndRelatedArticles(false)}
+      {sponsoredArticlesAndRelatedArticles(true, false)}
       <ArticleComments
         articleId={articleId}
         isEnabled={commentsEnabled}
