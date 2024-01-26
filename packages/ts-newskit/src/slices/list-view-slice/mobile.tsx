@@ -18,7 +18,7 @@ export const ListViewSliceMobile = ({
   isLoading,
   itemsPerPage = 10,
   totalItems,
-  SectionAd
+  SectionAdMob
 }: ListViewSliceProps) => {
   const renderLoadMoreButton = currentPage * itemsPerPage < totalItems;
   const adSlots = [Math.ceil(itemsPerPage / 2)];
@@ -67,7 +67,7 @@ export const ListViewSliceMobile = ({
                 )}
               {renderAds && (
                 <Block marginBlock="space040">
-                  <SectionAd />
+                  <SectionAdMob />
                 </Block>
               )}
             </Fragment>

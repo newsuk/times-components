@@ -21,6 +21,7 @@ export type ListViewSliceProps = {
   isLoading?: boolean;
   StickyAd: React.FunctionComponent;
   SectionAd: React.FunctionComponent;
+  SectionAdMob: React.FunctionComponent;
 };
 export const ListViewSlice = ({
   leadArticles,
@@ -32,7 +33,8 @@ export const ListViewSlice = ({
   totalItems,
   isLoading = false,
   StickyAd,
-  SectionAd
+  SectionAd,
+  SectionAdMob
 }: ListViewSliceProps) => {
   const modifiedLeadArticles = leadArticles.map(item => ({
     ...item,
@@ -50,7 +52,8 @@ export const ListViewSlice = ({
     totalItems,
     isLoading,
     StickyAd,
-    SectionAd
+    SectionAd,
+    SectionAdMob
   };
   return (
     <CustomBlockLayout>
