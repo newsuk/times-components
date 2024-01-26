@@ -254,7 +254,8 @@ function Head({
   logoUrl,
   paidContentClassName,
   getFallbackThumbnailUrl169,
-  swgProductId
+  swgProductId,
+  breadcrumbs
 }) {
   const {
     descriptionMarkup,
@@ -409,6 +410,20 @@ function Head({
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
+  const breadcrumbJsonLD =
+    breadcrumbs && breadcrumbs.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: breadcrumbs.map((breadcrumb, breadcrumbIndex) => ({
+            "@type": "ListItem",
+            position: breadcrumbIndex + 1,
+            name: breadcrumb.title,
+            item: `https://thetimes.co.uk/${breadcrumb.slug}`
+          }))
+        }
+      : null;
+
   return (
     <Helmet encodeSpecialCharacters={false}>
       <title>{title}</title>
@@ -445,6 +460,12 @@ function Head({
           {JSON.stringify(videoJsonLD)}
         </script>
       )}
+
+      {breadcrumbJsonLD && (
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbJsonLD)}
+        </script>
+      )}
     </Helmet>
   );
 }
@@ -465,11 +486,13 @@ Head.propTypes = {
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
-  swgProductId: PropTypes.string
+  swgProductId: PropTypes.string,
+  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
 };
 
 Head.defaultProps = {
-  swgProductId: null
+  swgProductId: null,
+  breadcrumbs: []
 };
 
 export default Head;

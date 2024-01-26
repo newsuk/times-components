@@ -6,9 +6,13 @@ import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import { RecommendedFetch } from "@times-components/ts-components";
+import { Breadcrumb } from "@times-components/ts-newskit";
 
 import ArticleTopics from "./article-topics";
-import { ShareAndSaveContainer } from "./styles/responsive";
+import {
+  BreadcrumbContainer,
+  ShareAndSaveContainer
+} from "./styles/responsive";
 
 const clearingStyle = {
   clear: "both"
@@ -30,12 +34,29 @@ const ArticleExtras = ({
   topics,
   isSharingSavingEnabled,
   isCommentEnabled,
-  storefrontConfig
+  storefrontConfig,
+  breadcrumbs
 }) => {
+  const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
+    if (breadcrumbs && breadcrumbs.length > 0) {
+      return (
+        <BreadcrumbContainer $border={showBorder}>
+          <Breadcrumb data={breadcrumbs} />
+        </BreadcrumbContainer>
+      );
+    }
+
+    return null;
+  };
+
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
-  const sponsoredArticlesAndRelatedArticles = isRecommendedActive => (
+  const sponsoredArticlesAndRelatedArticles = (
+    isRecommendedActive,
+    showBreadcrumbs
+  ) => (
     <>
       <div id="related-articles" ref={node => registerNode(node)}>
+        {showBreadcrumbs && renderBreadcrumb({ showBorder: false })}
         <RelatedArticles
           analyticsStream={analyticsStream}
           isVisible={relatedArticlesVisible}
@@ -57,9 +78,10 @@ const ArticleExtras = ({
   return (
     <UserState
       state={UserState.showArticleExtras}
-      fallback={sponsoredArticlesAndRelatedArticles(false)}
+      fallback={sponsoredArticlesAndRelatedArticles(false, true)}
     >
       <div style={clearingStyle} />
+      {renderBreadcrumb({ showBorder: topics && topics.length > 0 })}
       <ArticleTopics topics={topics} />
       {isSharingSavingEnabled && (
         <UserState state={UserState.showSaveAndShareBar}>
@@ -81,7 +103,7 @@ const ArticleExtras = ({
           </MessageContext.Consumer>
         </UserState>
       )}
-      {sponsoredArticlesAndRelatedArticles(true)}
+      {sponsoredArticlesAndRelatedArticles(true, false)}
       <ArticleComments
         articleId={articleId}
         isEnabled={commentsEnabled}
@@ -111,14 +133,16 @@ ArticleExtras.propTypes = {
   sharingEnabled: PropTypes.bool.isRequired,
   isSharingSavingEnabled: PropTypes.bool,
   isCommentEnabled: PropTypes.bool,
-  storefrontConfig: PropTypes.string.isRequired
+  storefrontConfig: PropTypes.string.isRequired,
+  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
 };
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
   topics: null,
   isSharingSavingEnabled: true,
-  isCommentEnabled: true
+  isCommentEnabled: true,
+  breadcrumbs: []
 };
 
 export default ArticleExtras;
