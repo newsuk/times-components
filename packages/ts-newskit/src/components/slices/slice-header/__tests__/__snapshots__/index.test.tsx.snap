@@ -14,7 +14,7 @@ exports[`Render Header should render a snapshot 1`] = `
         class="css-dtd8ey"
       >
         <div
-          class="css-1w57ntt"
+          class="css-sy3cfj"
         >
           <div
             class="css-16p0gc"
@@ -79,7 +79,7 @@ exports[`Render Header should render a snapshot with tagline 1`] = `
         class="css-dtd8ey"
       >
         <div
-          class="css-1w57ntt"
+          class="css-sy3cfj"
         >
           <div
             class="css-16p0gc"

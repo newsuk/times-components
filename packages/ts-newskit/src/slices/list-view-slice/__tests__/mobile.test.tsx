@@ -14,8 +14,9 @@ const defaultProps = {
   clickHandler: mockClickHandler,
   handlePageChange,
   totalItems: 12,
+  SectionAd,
   StickyAd: SectionAd,
-  SectionAd
+  SectionAdMob: SectionAd
 };
 
 describe('Render ListViewSliceMobile', () => {
