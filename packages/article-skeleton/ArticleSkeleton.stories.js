@@ -82,6 +82,12 @@ storiesOf("Composed/Article Skeleton", module).add("Article Selection", () => {
                 commentingConfig={commentingConfig}
                 analyticsStream={storybookReporter}
                 data={data}
+                articleDataFromRender={{
+                  breadcrumbs: [
+                    { title: "World", url: "/world" },
+                    { title: "News", url: "/news" }
+                  ]
+                }}
                 isPreview={false}
                 onAuthorPress={preventDefaultedAction(decorateAction)(
                   "onAuthorPress"

@@ -51,10 +51,13 @@ const ArticleExtras = ({
   );
 
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
-  const sponsoredArticlesAndRelatedArticles = isRecommendedActive => (
+  const sponsoredArticlesAndRelatedArticles = (
+    isRecommendedActive,
+    showBreadcrumbs
+  ) => (
     <>
       <div id="related-articles" ref={node => registerNode(node)}>
-        {!isRecommendedActive && renderBreadcrumb()}
+        {showBreadcrumbs && renderBreadcrumb({ showBorder: false })}
         <RelatedArticles
           analyticsStream={analyticsStream}
           isVisible={relatedArticlesVisible}
@@ -76,7 +79,7 @@ const ArticleExtras = ({
   return (
     <UserState
       state={UserState.showArticleExtras}
-      fallback={sponsoredArticlesAndRelatedArticles(false)}
+      fallback={sponsoredArticlesAndRelatedArticles(false, true)}
     >
       <div style={clearingStyle} />
       {renderBreadcrumb({ showBorder: true })}
@@ -101,7 +104,7 @@ const ArticleExtras = ({
           </MessageContext.Consumer>
         </UserState>
       )}
-      {sponsoredArticlesAndRelatedArticles(true)}
+      {sponsoredArticlesAndRelatedArticles(false)}
       <ArticleComments
         articleId={articleId}
         isEnabled={commentsEnabled}
