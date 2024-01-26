@@ -45,6 +45,8 @@ const ArticleExtras = ({
         </BreadcrumbContainer>
       );
     }
+
+    return null;
   };
 
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
