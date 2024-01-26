@@ -82,7 +82,7 @@ const ArticleExtras = ({
       fallback={sponsoredArticlesAndRelatedArticles(false, true)}
     >
       <div style={clearingStyle} />
-      {renderBreadcrumb({ showBorder: true })}
+      {renderBreadcrumb({ showBorder: topics && topics.length > 0 })}
       <ArticleTopics topics={topics} />
       {isSharingSavingEnabled && (
         <UserState state={UserState.showSaveAndShareBar}>
