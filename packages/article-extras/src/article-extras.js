@@ -37,18 +37,15 @@ const ArticleExtras = ({
   storefrontConfig,
   breadcrumbs
 }) => {
-  const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => (
-    <>
-      {breadcrumbs && breadcrumbs.length > 0 ? (
+  const renderBreadcrumb = ({ showBorder } = { showBorder: false }) => {
+    if (breadcrumbs && breadcrumbs.length > 0) {
+      return (
         <BreadcrumbContainer $border={showBorder}>
           <Breadcrumb data={breadcrumbs} />
         </BreadcrumbContainer>
-      ) : (
-        // Returning empty div to workaround React.children prop-type error
-        <div />
-      )}
-    </>
-  );
+      );
+    }
+  };
 
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticlesAndRelatedArticles = (
