@@ -7,6 +7,7 @@ import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import "./mocks";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
+import { BASE_URL } from "../constants";
 
 const mockEvent = {
   preventDefault: () => {}
@@ -49,7 +50,7 @@ export default () => {
     const onShareEmail = jest.fn();
     const articleId = "id-123";
     const articleHeadline = "test-headline";
-    const articleUrl = "https://www.thetimes.co.uk/";
+    const articleUrl = `${BASE_URL}/`;
     const getTokenisedShareUrl = jest.fn(mockGetTokenisedArticleUrl);
 
     let stream = null;
