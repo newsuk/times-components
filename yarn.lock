@@ -5603,42 +5603,6 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
-"@times-components/link@3.17.4":
-  version "3.17.4"
-  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.17.4.tgz#713ecaa56cd1f5b4a70427812e7edf0f9846ad60"
-  integrity sha512-QskWXA6VkwAIAaccFpeiH30KiM/tIWLNQBb/cM3f3tc3Nom6MLMTS8NZp7WgcdKijSL4GLm1h9IkSSarMvSCQw==
-  dependencies:
-    "@times-components/ts-styleguide" "1.50.4"
-    "@times-components/utils" "6.17.0"
-    prop-types "15.7.2"
-    react "16.9.0"
-    react-dom "16.9.0"
-    styled-components "4.3.2"
-
-"@times-components/ts-newskit@1.162.0":
-  version "1.162.0"
-  resolved "https://registry.yarnpkg.com/@times-components/ts-newskit/-/ts-newskit-1.162.0.tgz#9dde3107590b6dc05843a0a066e77a57c5721212"
-  integrity sha512-mesE69XKM7pI465Ud1rgDsA6JeKPYV0zxs2XH0bhvWB0dNsxgLDOUUOORK60h0lGNCfLYG081mSXajhxJRRPiQ==
-  dependencies:
-    "@emotion/react" "11.11.0"
-    "@emotion/styled" "11.11.0"
-    "@newskit-themes/the-times" "1.1.0"
-    isomorphic-unfetch "3.1.0"
-    lodash.merge "4.6.2"
-    newskit "7.2.0"
-    react "16.9.0"
-    xss "^1.0.10"
-
-"@times-components/ts-styleguide@1.50.4":
-  version "1.50.4"
-  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.50.4.tgz#2c216d72d366fc6845ad4e8b0c834d11514211c4"
-  integrity sha512-l2AWiITQkGDmguEijdUV6U3HeqZoblJXMAIE10xQqdFW2UBi4STLq1LZ53oH2SJ89iZZUmW1wCBzL4qtVFh4/Q==
-  dependencies:
-    "@times-components/link" "3.17.4"
-    "@times-components/utils" "6.17.0"
-    react "16.9.0"
-    styled-components "4.3.2"
-
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
