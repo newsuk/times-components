@@ -16,8 +16,9 @@ const defaultProps = {
   handlePageChange,
   onPageChange,
   totalItems: 11,
-  StickyAd: SectionAd,
-  SectionAd
+  SectionAd,
+  SectionAdMob: SectionAd,
+  StickyAd: SectionAd
 };
 
 describe('Render ListViewSliceDesktop', () => {
