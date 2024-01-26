@@ -17,6 +17,7 @@ import { iterator } from "@times-components/test-utils";
 import adInit from "../../src/utils/ad-init";
 import adConfig from "../../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../../src/ad";
+import { AD_DEFAULT_BASE_URL } from "../../src/utils/constants";
 
 jest.mock("@times-components/utils", () => {
   const utils = jest.requireActual("@times-components/utils");
@@ -37,7 +38,7 @@ adInit.mockImplementation(() => ({
 }));
 
 const props = {
-  contextUrl: "https://www.thetimes.co.uk",
+  contextUrl: `${AD_DEFAULT_BASE_URL}`,
   section: "news"
 };
 
