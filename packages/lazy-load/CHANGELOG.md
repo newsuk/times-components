@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.8.1...@times-components/lazy-load@0.9.0) (2024-01-29)
+
+
+### Features
+
+* **TMRX-1762:** add padding to breadcrumb container ([#3748](https://github.com/newsuk/times-components/issues/3748)) ([f7b1fe0](https://github.com/newsuk/times-components/commit/f7b1fe0c27af26d50911d2f38970b411db6df841))
+
+
+
+
+
 ## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.8.0...@times-components/lazy-load@0.8.1) (2024-01-25)
 
 
