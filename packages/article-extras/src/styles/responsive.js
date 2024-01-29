@@ -24,6 +24,8 @@ export const BreadcrumbContainer = styled.div`
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding-bottom: 8px;
+
   ${props =>
     props.$border
       ? `
