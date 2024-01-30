@@ -8,15 +8,6 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '0%',
       fontStretch: 'normal'
     },
-    topNav010: {
-      fontFamily: 'Roboto-Medium',
-      fontWeight: 500,
-      fontSize: '14px',
-      lineHeight: '0.778',
-      letterSpacing: '0%',
-      fontStretch: 'normal',
-      whiteSpace: 'nowrap'
-    },
     secondaryNavMenuItemMob: {
       fontFamily: 'Roboto-Regular',
       fontWeight: 500,
