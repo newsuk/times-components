@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.9.0...@times-components/lazy-load@0.10.0) (2024-01-30)
+
+
+### Features
+
+* **TMRX-1762:** remove breadcrumb last item url logic ([#3749](https://github.com/newsuk/times-components/issues/3749)) ([c6ca76a](https://github.com/newsuk/times-components/commit/c6ca76a20502018eacd7cfee93f5139d9b965438))
+
+
+
+
+
 # [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.8.1...@times-components/lazy-load@0.9.0) (2024-01-29)
 
 
