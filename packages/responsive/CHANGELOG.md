@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.21.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.20.1...@times-components/responsive@0.21.0) (2024-01-30)
+
+
+### Features
+
+* **TMRX-1843:** add note to files that are being moved to render ([#3747](https://github.com/newsuk/times-components/issues/3747)) ([c94ffaf](https://github.com/newsuk/times-components/commit/c94ffaf7b13a65fb254783471d1e0a7b345f0d24))
+
+
+
+
+
 ## [0.20.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.20.0...@times-components/responsive@0.20.1) (2024-01-26)
 
 
