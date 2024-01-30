@@ -26,6 +26,12 @@ describe('Render ListViewSliceMobile', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+  it('matches snapshot when isLoading is TRUE', () => {
+    const { asFragment } = renderComponent(
+      <ListViewSliceMobile {...defaultProps} isLoading />
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
   it('triggers correctly when clicking page', () => {
     const { getByText } = renderComponent(
       <ListViewSliceMobile {...defaultProps} />
