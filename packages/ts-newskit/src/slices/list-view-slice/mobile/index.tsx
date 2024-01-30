@@ -2,13 +2,14 @@ import React, { Fragment } from 'react';
 import {
   LeadArticle,
   LeadArticleProps
-} from '../../components/slices/lead-article';
-import { StyledBlock } from './styles';
-import { CustomBlockLayout } from '../shared';
+} from '../../../components/slices/lead-article';
+import { StyledBlock } from '../styles';
+import { CustomBlockLayout } from '../../shared';
 import { Divider, TextBlock, Block } from 'newskit';
-import { convertDateToMonth } from '../../utils/date-formatting';
-import { ListViewSliceProps } from '.';
-import LoadMoreButton from './load-more-button';
+import { convertDateToMonth } from '../../../utils/date-formatting';
+import { ListViewSliceProps } from '..';
+import LoadMoreButton from '../load-more-button';
+import { ListViewSliceLoading } from './loading';
 
 export const ListViewSliceMobile = ({
   leadArticles,
@@ -20,6 +21,10 @@ export const ListViewSliceMobile = ({
   totalItems,
   SectionAdMob
 }: ListViewSliceProps) => {
+  if (isLoading) {
+    return <ListViewSliceLoading itemsPerPage={itemsPerPage} />;
+  }
+
   const renderLoadMoreButton = currentPage * itemsPerPage < totalItems;
   const adSlots = [Math.ceil(itemsPerPage / 2)];
   for (let i = 1; i * itemsPerPage < totalItems; i++) {

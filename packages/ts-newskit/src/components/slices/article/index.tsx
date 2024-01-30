@@ -152,6 +152,9 @@ export const Article = ({
     </a>
   );
 
+  const hasTag = tag && tag.label;
+  const hasTagOrFlag = hasTag || flag;
+
   return (
     <CardComposable
       alignContent="start"
@@ -264,11 +267,13 @@ export const Article = ({
               </TextBlock>
             </CardHeadlineLink>
           )}
-        <TagAndFlag
-          tag={tag}
-          flag={flag}
-          marginBlockStart={tagAndFlagMarginBlockStart}
-        />
+        {hasTagOrFlag && (
+          <TagAndFlag
+            tag={tag}
+            flag={flag}
+            marginBlockStart={tagAndFlagMarginBlockStart}
+          />
+        )}
       </CardContent>
     </CardComposable>
   );

@@ -144,15 +144,6 @@ exports[`Render Component one should render a snapshot 1`] = `
         >
           4 min read
         </span>
-        <div
-          class="css-p44zak"
-        >
-          <hr
-            aria-hidden="true"
-            class="css-15kf7hd"
-            data-testid="divider"
-          />
-        </div>
       </div>
     </div>
   </div>

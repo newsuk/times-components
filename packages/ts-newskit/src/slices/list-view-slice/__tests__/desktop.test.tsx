@@ -28,6 +28,12 @@ describe('Render ListViewSliceDesktop', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+  it('matches snapshot when isLoading is TRUE', () => {
+    const { asFragment } = renderComponent(
+      <ListViewSliceDesktop {...defaultProps} isLoading />
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
   it('triggers correctly when clicking page', () => {
     const { getAllByTestId } = renderComponent(
       <ListViewSliceDesktop {...defaultProps} />

@@ -273,18 +273,9 @@
           }
         ]
       },
-
       "url": "https://www.thetimes.co.uk",
-      "tag": {
-        "label": "Review",
-        "href": "/"
-      },
       "flag": "The Sunday Times",
-      "datePublished": "2023-11-11T16:00:00.000Z",
-      "byline": {
-        "name": "ibrahim",
-        "slug": "ibrahim"
-      }
+      "datePublished": "2023-11-11T16:00:00.000Z"
     },
     {
       "hasVideo": false,
@@ -387,17 +378,9 @@
           }
         ]
       },
-
       "url": "https://www.thetimes.co.uk",
-      "tag": {
-        "label": "Review",
-        "href": "/"
-      },
-      "flag": "The Sunday Times",
-      "datePublished": "2023-09-11T16:00:00.000Z",
-      "byline": {
-        "name": "ibrahim kurhan"
-      }
+      "flag": "",
+      "datePublished": "2023-09-11T16:00:00.000Z"
     },
     {
       "hasVideo": false,
@@ -449,8 +432,7 @@
         "label": "Review",
         "href": "/"
       },
-      "flag": "The Times",
-
+      "flag": "",
       "datePublished": "2023-09-11T16:00:00.000Z",
       "byline": {
         "name": "ibrahim",
@@ -501,12 +483,7 @@
           }
         ]
       },
-
       "url": "https://www.thetimes.co.uk",
-      "tag": {
-        "label": "Review",
-        "href": "/"
-      },
       "flag": "The Times",
       "datePublished": "2023-06-11T16:00:00.000Z",
       "byline": {
@@ -565,11 +542,7 @@
         "href": "/"
       },
       "flag": "The Times",
-      "datePublished": "2023-06-11T16:00:00.000Z",
-      "byline": {
-        "name": "ibrahim",
-        "slug": "ibrahim"
-      }
+      "datePublished": "2023-06-11T16:00:00.000Z"
     }
   ]
 }
