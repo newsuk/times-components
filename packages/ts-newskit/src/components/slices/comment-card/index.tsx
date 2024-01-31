@@ -34,6 +34,7 @@ export const CommentCard = ({
   article: CommentCardProps;
   clickHandler: ClickHandlerType;
   isCommentBucket1?: boolean;
+  isCommentLead1?: boolean;
 }) => {
   const theme = useTheme();
 

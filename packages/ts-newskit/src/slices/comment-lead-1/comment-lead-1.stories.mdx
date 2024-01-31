@@ -1,0 +1,65 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { GridOverlay, TCThemeProvider, TimesWebThemes } from '../../utils/index.tsx';
+import { CommentLead1 } from "./";
+import { data } from '../fixtures/data.json';
+import { action } from '@storybook/addon-actions';
+
+<Meta
+  title="Newskit Slices/Comment Lead 1"
+  component={CommentLead1}
+/>
+
+# CommentLead1 component
+The `CommentLead1` component is used to display the comment quotes.
+It is comprised of the `CommentCard` slice components.
+
+This takes in a series of props, as below, to display the part of the slices.
+
+## Props
+<Props of={CommentLead1} />
+
+## Code Example
+`<CommentLead1 {...{ data }} />`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const CommentLead1Story = ({ data, theme, gridOverlay, clickHandler }) => (
+  <TCThemeProvider theme={theme}>
+    <>
+      <GridOverlay show={gridOverlay} />
+      <CommentLead1 {...{ data, clickHandler }} />
+    </>
+  </TCThemeProvider>
+);
+CommentLead1Story.args = {
+  theme: 'TimesWebLightTheme',
+};
+
+<Story 
+  name="CommentLead1"
+  args={{
+    data,
+    clickHandler: action("ClickHandler"),
+    expirableFlags: [
+        {
+          type: "BREAKING",
+          expiryTime: null
+        }
+    ],
+    contentType:"Q&A",
+    label:"MARTIN SAMUAL",
+  }}
+  argTypes={{
+    theme: {
+      options: Object.keys(TimesWebThemes),
+      mapping: TimesWebThemes,
+      control: { type: 'select' },
+    },
+    gridOverlay: {
+      control: { type: 'boolean' },
+    },
+  }}
+>
+  {CommentLead1Story.bind({})}
+</Story>
