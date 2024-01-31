@@ -496,11 +496,10 @@ describe('getResponsiveNavData', () => {
   //     })
   //   ).toEqual(RESULT_TWO);
   // });
-    it('returns correct shape of objects', () => {
+  it('returns correct shape of objects', () => {
     expect(
       getResponsiveNavData(mainMenuItems, {
-        md: 300,
-  
+        md: 300
       }).charWidth
     ).toEqual(1160);
   });
