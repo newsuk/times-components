@@ -42,7 +42,7 @@ export const createMenu = (
 
   const { responsiveMenuData, showMoreMD } = getResponsiveNavData<
     ResponsiveMenuItemParent
-  >(menuData, { md: topNavAvailableSpace }, 12, 8);
+  >(menuData, { md: topNavAvailableSpace }, 12, 9);
 
   const navItems = responsiveMenuData.map(({ title, url, md }) => (
     <StyledVisibleMenuItems
@@ -69,30 +69,32 @@ export const createMenu = (
     <>
       {navItems}
 
-      <StyledMoreMenuSub
-        title="More"
-        onClick={handleMoreClick}
-        selected={moreSelected}
-        expanded={moreSelected}
-        onBlur={e => {
-          // Close menu when it loses focus if user has not clicked on it
-          !hasClickedOnMenu(e, 'more-menu-item') && setMoreSelected(false);
-        }}
-        overrides={{
-          ...menuItemPresets,
-          list: { stylePreset: 'moreSubMenu' }
-        }}
-        data-testid="more-sub-menu"
-        $showMore={showMoreMD}
-      >
-        <Menu
-          vertical
-          overrides={{ spaceInline: 'sizing000' }}
-          aria-label="More menu items"
+      {showMoreMD && (
+        <StyledMoreMenuSub
+          title="More"
+          onClick={handleMoreClick}
+          selected={moreSelected}
+          expanded={moreSelected}
+          onBlur={e => {
+            // Close menu when it loses focus if user has not clicked on it
+            !hasClickedOnMenu(e, 'more-menu-item') && setMoreSelected(false);
+          }}
+          overrides={{
+            ...menuItemPresets,
+            list: { stylePreset: 'moreSubMenu' }
+          }}
+          data-testid="more-sub-menu"
+          $showMore={showMoreMD}
         >
-          {createMoreMenu(responsiveMenuData, clickHandler)}
-        </Menu>
-      </StyledMoreMenuSub>
+          <Menu
+            vertical
+            overrides={{ spaceInline: 'sizing000' }}
+            aria-label="More menu items"
+          >
+            {createMoreMenu(responsiveMenuData, clickHandler)}
+          </Menu>
+        </StyledMoreMenuSub>
+      )}
     </>
   );
 };
