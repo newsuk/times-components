@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.18.1](https://github.com/newsuk/times-components/compare/@times-components/utils@6.18.0...@times-components/utils@6.18.1) (2024-01-30)
+
+
+### Bug Fixes
+
+* **TMRX-1841:** listviewslice updates ([#3750](https://github.com/newsuk/times-components/issues/3750)) ([0e7da01](https://github.com/newsuk/times-components/commit/0e7da0123ebb5e5bb008fe585d028b841c2fe754))
+
+
+
+
+
 # [6.18.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.17.1...@times-components/utils@6.18.0) (2024-01-30)
 
 
