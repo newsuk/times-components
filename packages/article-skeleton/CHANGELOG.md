@@ -3,6 +3,68 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.120.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.120.3...@times-components/article-skeleton@1.120.4) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.120.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.120.2...@times-components/article-skeleton@1.120.3) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.120.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.120.1...@times-components/article-skeleton@1.120.2) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.120.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.120.0...@times-components/article-skeleton@1.120.1) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.120.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.119.1...@times-components/article-skeleton@1.120.0) (2024-01-26)
+
+
+### Features
+
+* **TMRX-1762:** productionise breadcrumb component ([#3746](https://github.com/newsuk/times-components/issues/3746)) ([bf1b896](https://github.com/newsuk/times-components/commit/bf1b8964a34d4ae8dd0b1283d1f1fbc80ccecec6))
+
+
+
+
+
+## [1.119.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.119.0...@times-components/article-skeleton@1.119.1) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.119.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.118.0...@times-components/article-skeleton@1.119.0) (2024-01-25)
+
+
+### Features
+
+* **TMRX-000:** Article canonical url ([#3743](https://github.com/newsuk/times-components/issues/3743)) ([e9e28da](https://github.com/newsuk/times-components/commit/e9e28dad358f6996f3bb3fe2909c2cf482232a56))
+
+
+
+
+
 # [1.118.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.117.4...@times-components/article-skeleton@1.118.0) (2024-01-24)
 
 

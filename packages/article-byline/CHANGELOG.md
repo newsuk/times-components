@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.13.31](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.13.30...@times-components/article-byline@3.13.31) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.13.30](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.13.29...@times-components/article-byline@3.13.30) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.13.29](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.13.28...@times-components/article-byline@3.13.29) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.13.28](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.13.27...@times-components/article-byline@3.13.28) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.13.27](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.13.26...@times-components/article-byline@3.13.27) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.13.26](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.13.25...@times-components/article-byline@3.13.26) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.13.25](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.13.24...@times-components/article-byline@3.13.25) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
 ## [3.13.24](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.13.23...@times-components/article-byline@3.13.24) (2024-01-24)
 
 **Note:** Version bump only for package @times-components/article-byline

@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.11.38](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.11.37...@times-components/video-label@2.11.38) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+## [2.11.37](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.11.36...@times-components/video-label@2.11.37) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+## [2.11.36](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.11.35...@times-components/video-label@2.11.36) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+## [2.11.35](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.11.34...@times-components/video-label@2.11.35) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+## [2.11.34](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.11.33...@times-components/video-label@2.11.34) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+## [2.11.33](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.11.32...@times-components/video-label@2.11.33) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+## [2.11.32](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.11.31...@times-components/video-label@2.11.32) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
 ## [2.11.31](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.11.30...@times-components/video-label@2.11.31) (2024-01-24)
 
 **Note:** Version bump only for package @times-components/video-label

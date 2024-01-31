@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.18.1](https://github.com/newsuk/times-components/compare/@times-components/utils@6.18.0...@times-components/utils@6.18.1) (2024-01-30)
+
+
+### Bug Fixes
+
+* **TMRX-1841:** listviewslice updates ([#3750](https://github.com/newsuk/times-components/issues/3750)) ([0e7da01](https://github.com/newsuk/times-components/commit/0e7da0123ebb5e5bb008fe585d028b841c2fe754))
+
+
+
+
+
+# [6.18.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.17.1...@times-components/utils@6.18.0) (2024-01-30)
+
+
+### Features
+
+* **TMRX-1843:** add note to files that are being moved to render ([#3747](https://github.com/newsuk/times-components/issues/3747)) ([c94ffaf](https://github.com/newsuk/times-components/commit/c94ffaf7b13a65fb254783471d1e0a7b345f0d24))
+
+
+
+
+
+## [6.17.1](https://github.com/newsuk/times-components/compare/@times-components/utils@6.17.0...@times-components/utils@6.17.1) (2024-01-26)
+
+
+### Bug Fixes
+
+* **TMRX-1879:** add prop for mobile ad slot ([#3745](https://github.com/newsuk/times-components/issues/3745)) ([7c74c35](https://github.com/newsuk/times-components/commit/7c74c35fb93e34a33c0da2fe1aa7590c8a559bd0))
+
+
+
+
+
+# [6.17.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.16.28...@times-components/utils@6.17.0) (2024-01-25)
+
+
+### Features
+
+* **TMRX-000:** Article canonical url ([#3743](https://github.com/newsuk/times-components/issues/3743)) ([e9e28da](https://github.com/newsuk/times-components/commit/e9e28dad358f6996f3bb3fe2909c2cf482232a56))
+
+
+
+
+
 ## [6.16.28](https://github.com/newsuk/times-components/compare/@times-components/utils@6.16.27...@times-components/utils@6.16.28) (2024-01-24)
 
 

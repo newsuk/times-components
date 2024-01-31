@@ -14,14 +14,21 @@ const defaultProps = {
   clickHandler: mockClickHandler,
   handlePageChange,
   totalItems: 12,
+  SectionAd,
   StickyAd: SectionAd,
-  SectionAd
+  SectionAdMob: SectionAd
 };
 
 describe('Render ListViewSliceMobile', () => {
   it('matches snapshot', () => {
     const { asFragment } = renderComponent(
       <ListViewSliceMobile {...defaultProps} />
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+  it('matches snapshot when isLoading is TRUE', () => {
+    const { asFragment } = renderComponent(
+      <ListViewSliceMobile {...defaultProps} isLoading />
     );
     expect(asFragment()).toMatchSnapshot();
   });

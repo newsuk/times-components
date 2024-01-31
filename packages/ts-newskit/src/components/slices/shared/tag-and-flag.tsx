@@ -3,18 +3,15 @@ import { Block, TextBlock, Divider, LinkInline, MQ } from 'newskit';
 import { ContainerInline, TextLink } from '../shared-styles';
 import { TagAndFlagProps } from '../../../slices/types';
 
-const TagAndFlagWrapper = ({ children }: { children: React.ReactNode }) => (
-  <>
-    {children}
-    <ContainerInline>
-      <Divider
-        vertical
-        overrides={{
-          marginInline: 'space020'
-        }}
-      />
-    </ContainerInline>
-  </>
+const TagAndFlagDivider = () => (
+  <ContainerInline>
+    <Divider
+      vertical
+      overrides={{
+        marginInline: 'space020'
+      }}
+    />
+  </ContainerInline>
 );
 
 export const TagAndFlag = ({
@@ -25,15 +22,6 @@ export const TagAndFlag = ({
   byline,
   isListView
 }: TagAndFlagProps) => {
-  const hasTag = tag && tag.label;
-  const hasFlag = flag && flag !== '';
-  const hasbyline = byline && byline.name !== '';
-  const hasNoTagAndFlag = !hasTag && !hasFlag;
-
-  if (hasNoTagAndFlag || (hasNoTagAndFlag && isListView && !hasbyline)) {
-    return null;
-  }
-
   const defaultStylePreset = (preset: MQ<string>) =>
     flagOverrides && flagOverrides.stylePreset
       ? flagOverrides.stylePreset
@@ -48,65 +36,45 @@ export const TagAndFlag = ({
     <Block marginBlockStart={marginBlockStart} data-testid="tag-and-flag">
       {tag &&
         tag.label !== '' && (
-          <TagAndFlagWrapper>
-            <TextLink
-              overrides={{
-                typographyPreset: {
-                  xs: 'utilityButton010',
-                  md: 'utilityButton005'
-                },
-                stylePreset: 'inkBrand010'
-              }}
-              href={tag.href}
-            >
-              {tag.label}
-            </TextLink>
-          </TagAndFlagWrapper>
+          <TextLink
+            overrides={{
+              typographyPreset: {
+                xs: 'utilityButton010',
+                md: 'utilityButton005'
+              },
+              stylePreset: 'inkBrand010'
+            }}
+            href={tag.href}
+          >
+            {tag.label}
+          </TextLink>
         )}
+
+      {tag && tag.label && (byline || flag) && <TagAndFlagDivider />}
 
       {isListView &&
-        byline && (
-          <TagAndFlagWrapper>
-            {byline.slug ? (
-              <LinkInline
-                overrides={{
-                  typographyPreset: defaultTypographyPreset({
-                    xs: 'utilityButton010',
-                    md: 'utilityButton005'
-                  }),
-                  stylePreset: defaultStylePreset({
-                    xs: 'inkNonEssential',
-                    md: 'inkSubtle'
-                  })
-                }}
-                href={`/profile/${byline.slug}`}
-              >
-                {byline.name}
-              </LinkInline>
-            ) : (
-              <TextBlock
-                typographyPreset={defaultTypographyPreset({
-                  xs: 'utilityButton010',
-                  md: 'utilityButton005'
-                })}
-                stylePreset={defaultStylePreset({
-                  xs: 'inkNonEssential',
-                  md: 'inkSubtle'
-                })}
-                as="span"
-              >
-                {byline.name}
-              </TextBlock>
-            )}
-          </TagAndFlagWrapper>
-        )}
-
-      {flag && (
-        <TagAndFlagWrapper>
+        byline &&
+        (byline.slug ? (
+          <LinkInline
+            overrides={{
+              typographyPreset: defaultTypographyPreset({
+                xs: 'utilityButton010',
+                md: 'utilityButton005'
+              }),
+              stylePreset: defaultStylePreset({
+                xs: 'inkNonEssential',
+                md: 'inkSubtle'
+              })
+            }}
+            href={`/profile/${byline.slug}`}
+          >
+            {byline.name}
+          </LinkInline>
+        ) : (
           <TextBlock
             typographyPreset={defaultTypographyPreset({
-              xs: 'utilityMeta010',
-              md: 'utilityMeta005'
+              xs: 'utilityButton010',
+              md: 'utilityButton005'
             })}
             stylePreset={defaultStylePreset({
               xs: 'inkNonEssential',
@@ -114,9 +82,26 @@ export const TagAndFlag = ({
             })}
             as="span"
           >
-            {flag}
+            {byline.name}
           </TextBlock>
-        </TagAndFlagWrapper>
+        ))}
+
+      {byline && byline.name && flag && <TagAndFlagDivider />}
+
+      {flag && (
+        <TextBlock
+          typographyPreset={defaultTypographyPreset({
+            xs: 'utilityMeta010',
+            md: 'utilityMeta005'
+          })}
+          stylePreset={defaultStylePreset({
+            xs: 'inkNonEssential',
+            md: 'inkSubtle'
+          })}
+          as="span"
+        >
+          {flag}
+        </TextBlock>
       )}
     </Block>
   );

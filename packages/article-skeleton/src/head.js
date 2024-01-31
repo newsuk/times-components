@@ -250,11 +250,12 @@ const getLiveBlogUpdates = (article, publisher, author) => {
 
 function Head({
   article,
+  articleUrl,
   logoUrl,
   paidContentClassName,
   getFallbackThumbnailUrl169,
   swgProductId,
-  articleDataFromRender
+  breadcrumbs
 }) {
   const {
     descriptionMarkup,
@@ -267,13 +268,8 @@ function Head({
     hasVideo,
     seoDescription,
     keywords,
-    url,
     id
   } = article;
-
-  const { hostName, canonicalUrl } = articleDataFromRender || {};
-  const articleUrl =
-    hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
   const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
   const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
@@ -414,6 +410,20 @@ function Head({
   };
   const isSyndicatedArticle = SYNDICATED_ARTICLE_IDS.includes(article.id);
 
+  const breadcrumbJsonLD =
+    breadcrumbs && breadcrumbs.length
+      ? {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: breadcrumbs.map((breadcrumb, breadcrumbIndex) => ({
+            "@type": "ListItem",
+            position: breadcrumbIndex + 1,
+            name: breadcrumb.title,
+            item: `https://thetimes.co.uk/${breadcrumb.slug}`
+          }))
+        }
+      : null;
+
   return (
     <Helmet encodeSpecialCharacters={false}>
       <title>{title}</title>
@@ -450,6 +460,12 @@ function Head({
           {JSON.stringify(videoJsonLD)}
         </script>
       )}
+
+      {breadcrumbJsonLD && (
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbJsonLD)}
+        </script>
+      )}
     </Helmet>
   );
 }
@@ -466,19 +482,17 @@ Head.propTypes = {
     shortIdentifier: PropTypes.string.isRequired,
     tiles: PropTypes.array
   }).isRequired,
+  articleUrl: PropTypes.string.isRequired,
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
   swgProductId: PropTypes.string,
-  articleDataFromRender: PropTypes.shape({
-    hostName: PropTypes.string,
-    canonicalUrl: PropTypes.string
-  })
+  breadcrumbs: PropTypes.arrayOf(PropTypes.shape({}))
 };
 
 Head.defaultProps = {
   swgProductId: null,
-  articleDataFromRender: null
+  breadcrumbs: []
 };
 
 export default Head;

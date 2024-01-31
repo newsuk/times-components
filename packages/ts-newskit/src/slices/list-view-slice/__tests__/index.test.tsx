@@ -15,7 +15,8 @@ const defaultProps = {
   handlePageChange,
   totalItems: 10,
   StickyAd: SectionAd,
-  SectionAd
+  SectionAd,
+  SectionAdMob: SectionAd
 };
 
 describe('Render List View Slice', () => {

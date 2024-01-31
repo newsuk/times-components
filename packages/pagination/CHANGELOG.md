@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.12.37](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.12.36...@times-components/pagination@3.12.37) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.12.36](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.12.35...@times-components/pagination@3.12.36) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.12.35](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.12.34...@times-components/pagination@3.12.35) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.12.34](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.12.33...@times-components/pagination@3.12.34) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.12.33](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.12.32...@times-components/pagination@3.12.33) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.12.32](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.12.31...@times-components/pagination@3.12.32) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.12.31](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.12.30...@times-components/pagination@3.12.31) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
 ## [3.12.30](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.12.29...@times-components/pagination@3.12.30) (2024-01-24)
 
 **Note:** Version bump only for package @times-components/pagination

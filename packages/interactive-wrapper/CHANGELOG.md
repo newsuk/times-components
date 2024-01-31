@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.62](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.61...@times-components/interactive-wrapper@0.9.62) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.61](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.60...@times-components/interactive-wrapper@0.9.61) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.60](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.59...@times-components/interactive-wrapper@0.9.60) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.59](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.58...@times-components/interactive-wrapper@0.9.59) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.58](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.57...@times-components/interactive-wrapper@0.9.58) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.57](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.56...@times-components/interactive-wrapper@0.9.57) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.9.56](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.55...@times-components/interactive-wrapper@0.9.56) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
 ## [0.9.55](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.9.54...@times-components/interactive-wrapper@0.9.55) (2024-01-24)
 
 **Note:** Version bump only for package @times-components/interactive-wrapper

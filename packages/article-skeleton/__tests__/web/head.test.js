@@ -55,6 +55,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={article}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -71,6 +72,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={syndicatedArticle}
+        articleUrl={syndicatedArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -83,6 +85,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={article}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
         swgProductId="uat-thetimes.co.uk:basic"
@@ -96,6 +99,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={videoArticle}
+        articleUrl={videoArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -205,6 +209,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -285,6 +290,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -329,6 +335,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -343,6 +350,7 @@ describe("Head", () => {
           ...article,
           bylines: []
         }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -355,6 +363,7 @@ describe("Head", () => {
           ...article,
           bylines: null
         }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -366,6 +375,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={{ ...article, seoDescription: "sample seoDescription" }}
+        articleUrl={article.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -381,6 +391,7 @@ describe("Head", () => {
           headline: null,
           shortHeadline: "short headline"
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -397,6 +408,7 @@ describe("Head", () => {
           headline: null,
           shortHeadline: null
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -446,6 +458,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -473,6 +486,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -500,6 +514,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -515,6 +530,7 @@ describe("Head", () => {
           ...article,
           tiles: null
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -545,6 +561,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -560,6 +577,7 @@ describe("Head", () => {
           ...article,
           publicationName: "SUNDAYTIMES"
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -575,6 +593,7 @@ describe("Head", () => {
           ...article,
           publicationName: "TIMES"
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -590,6 +609,7 @@ describe("Head", () => {
           ...article,
           bylines: null
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -613,6 +633,7 @@ describe("Head", () => {
           ...article,
           descriptionMarkup: null
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -634,6 +655,7 @@ describe("Head", () => {
           ...article,
           descriptionMarkup: []
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -669,6 +691,7 @@ describe("Head", () => {
           ...article,
           leadAsset: null
         }}
+        articleUrl={article.url}
       />
     );
 
@@ -681,7 +704,9 @@ describe("Head", () => {
   });
 
   it("shows image tags if leadAsset available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} />);
+    const testRenderer = TestRenderer.create(
+      <Head article={article} articleUrl={article.url} />
+    );
 
     expect(
       testRenderer.root.findAllByProps({ property: "og:image" })
@@ -693,7 +718,10 @@ describe("Head", () => {
 
   it("shows image tags if leadAsset is an image, but there is a video elsewhere in the article", () => {
     const testRenderer = TestRenderer.create(
-      <Head article={standardArticleWithInlineVideo} />
+      <Head
+        article={standardArticleWithInlineVideo}
+        articleUrl={standardArticleWithInlineVideo.url}
+      />
     );
 
     expect(
@@ -708,6 +736,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={videoArticle}
+        articleUrl={videoArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -719,6 +748,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={videoArticle}
+        articleUrl={videoArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -755,6 +785,7 @@ describe("Head", () => {
       const testRenderer = TestRenderer.create(
         <Head
           article={{ ...videoArticle, leadAsset }}
+          articleUrl={videoArticle.url}
           logoUrl={logoUrl}
           paidContentClassName={paidContentClassName}
         />
@@ -767,6 +798,7 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={{ ...videoArticle, descriptionMarkup: null }}
+        articleUrl={videoArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -782,6 +814,7 @@ describe("Head", () => {
           descriptionMarkup: null,
           seoDescription: "some seoDescription"
         }}
+        articleUrl={videoArticle.url}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -837,6 +870,7 @@ describe("Head", () => {
             }
           ]
         }}
+        articleUrl={article.url}
       />
     );
     expect(testRenderer).toMatchSnapshot();

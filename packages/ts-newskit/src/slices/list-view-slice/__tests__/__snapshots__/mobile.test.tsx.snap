@@ -148,11 +148,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Times
-              </span>
               <div
                 class="css-p44zak"
               >
@@ -162,6 +157,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
+              <span
+                class="css-1selp7x"
+              >
+                The Times
+              </span>
             </div>
           </div>
         </div>
@@ -315,11 +315,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Times
-              </span>
               <div
                 class="css-p44zak"
               >
@@ -329,6 +324,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
+              <span
+                class="css-1selp7x"
+              >
+                The Times
+              </span>
             </div>
           </div>
         </div>
@@ -482,11 +482,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Sunday Times
-              </span>
               <div
                 class="css-p44zak"
               >
@@ -496,6 +491,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
+              <span
+                class="css-1selp7x"
+              >
+                The Sunday Times
+              </span>
             </div>
           </div>
         </div>
@@ -649,11 +649,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Times
-              </span>
               <div
                 class="css-p44zak"
               >
@@ -663,6 +658,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
+              <span
+                class="css-1selp7x"
+              >
+                The Times
+              </span>
             </div>
           </div>
         </div>
@@ -793,43 +793,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
               class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
-              <a
-                class="css-18s7xts"
-                href="/"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-qx2986"
-                  >
-                    Review
-                  </span>
-                </span>
-              </a>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
               <span
                 class="css-1selp7x"
               >
                 The Sunday Times
               </span>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -986,11 +954,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Times
-              </span>
               <div
                 class="css-p44zak"
               >
@@ -1000,6 +963,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
+              <span
+                class="css-1selp7x"
+              >
+                The Times
+              </span>
             </div>
           </div>
         </div>
@@ -1126,48 +1094,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                 </p>
               </span>
             </a>
-            <div
-              class="css-1kfs2jd"
-              data-testid="tag-and-flag"
-            >
-              <a
-                class="css-18s7xts"
-                href="/"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-qx2986"
-                  >
-                    Review
-                  </span>
-                </span>
-              </a>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Sunday Times
-              </span>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -1320,20 +1246,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Times
-              </span>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -1464,20 +1376,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
               class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
-              <a
-                class="css-18s7xts"
-                href="/"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-qx2986"
-                  >
-                    Review
-                  </span>
-                </span>
-              </a>
               <div
                 class="css-p44zak"
               >
@@ -1492,15 +1390,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
               >
                 The Times
               </span>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -1659,15 +1548,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
               >
                 The Times
               </span>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -1686,6 +1566,370 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             Load more
           </span>
         </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Render ListViewSliceMobile matches snapshot when isLoading is TRUE 1`] = `
+<DocumentFragment>
+  <div
+    style="max-width: 768px;"
+  >
+    <div
+      class="css-6buzpa"
+    >
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
       </div>
     </div>
   </div>

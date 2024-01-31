@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.18.10](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.9...@times-components/article-lead-asset@1.18.10) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.18.9](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.8...@times-components/article-lead-asset@1.18.9) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.18.8](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.7...@times-components/article-lead-asset@1.18.8) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.18.7](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.6...@times-components/article-lead-asset@1.18.7) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.18.6](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.5...@times-components/article-lead-asset@1.18.6) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.18.5](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.4...@times-components/article-lead-asset@1.18.5) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.18.4](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.3...@times-components/article-lead-asset@1.18.4) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
 ## [1.18.3](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.2...@times-components/article-lead-asset@1.18.3) (2024-01-24)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

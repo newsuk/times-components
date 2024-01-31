@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.79.7](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.6...@times-components/article-in-depth@3.79.7) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.6](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.5...@times-components/article-in-depth@3.79.6) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.5](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.4...@times-components/article-in-depth@3.79.5) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.3...@times-components/article-in-depth@3.79.4) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.2...@times-components/article-in-depth@3.79.3) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.1...@times-components/article-in-depth@3.79.2) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.0...@times-components/article-in-depth@3.79.1) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
 # [3.79.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.59...@times-components/article-in-depth@3.79.0) (2024-01-24)
 
 

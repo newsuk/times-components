@@ -3,6 +3,68 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.24.3](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.24.2...@times-components/article-extras@0.24.3) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.24.2](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.24.1...@times-components/article-extras@0.24.2) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.24.1](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.24.0...@times-components/article-extras@0.24.1) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+# [0.24.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.23.0...@times-components/article-extras@0.24.0) (2024-01-29)
+
+
+### Features
+
+* **TMRX-1762:** add padding to breadcrumb container ([#3748](https://github.com/newsuk/times-components/issues/3748)) ([f7b1fe0](https://github.com/newsuk/times-components/commit/f7b1fe0c27af26d50911d2f38970b411db6df841))
+
+
+
+
+
+# [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.22.11...@times-components/article-extras@0.23.0) (2024-01-26)
+
+
+### Features
+
+* **TMRX-1762:** productionise breadcrumb component ([#3746](https://github.com/newsuk/times-components/issues/3746)) ([bf1b896](https://github.com/newsuk/times-components/commit/bf1b8964a34d4ae8dd0b1283d1f1fbc80ccecec6))
+
+
+
+
+
+## [0.22.11](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.22.10...@times-components/article-extras@0.22.11) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.22.10](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.22.9...@times-components/article-extras@0.22.10) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
 ## [0.22.9](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.22.8...@times-components/article-extras@0.22.9) (2024-01-24)
 
 **Note:** Version bump only for package @times-components/article-extras

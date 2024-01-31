@@ -130,6 +130,10 @@ export const LeadArticle = ({
     articleClickTracking(event, articleForTracking, clickHandler);
   };
 
+  const hasTag = tag && tag.label;
+  const hasByline = byline && byline.name;
+  const hasTagOrFlag = hasTag || flag;
+
   return (
     <CardComposable
       areas={{
@@ -257,13 +261,15 @@ export const LeadArticle = ({
             </TextBlock>
           </CardHeadlineLink>
         )}
-        <TagAndFlag
-          tag={tag}
-          flag={flag}
-          byline={byline}
-          isListView={isListView}
-          marginBlockStart={tagAndFlagMarginBlockStart}
-        />
+        {(hasByline || hasTagOrFlag) && (
+          <TagAndFlag
+            tag={tag}
+            flag={flag}
+            byline={byline}
+            isListView={isListView}
+            marginBlockStart={tagAndFlagMarginBlockStart}
+          />
+        )}
         <UnorderedListItems listData={listData} clickHandler={clickHandler} />
       </CardContent>
     </CardComposable>

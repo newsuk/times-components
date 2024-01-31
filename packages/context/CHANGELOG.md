@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.13.0...@times-components/context@1.14.0) (2024-01-30)
+
+
+### Features
+
+* **TMRX-1762:** remove breadcrumb last item url logic ([#3749](https://github.com/newsuk/times-components/issues/3749)) ([c6ca76a](https://github.com/newsuk/times-components/commit/c6ca76a20502018eacd7cfee93f5139d9b965438))
+
+
+
+
+
+# [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.12.1...@times-components/context@1.13.0) (2024-01-29)
+
+
+### Features
+
+* **TMRX-1762:** add padding to breadcrumb container ([#3748](https://github.com/newsuk/times-components/issues/3748)) ([f7b1fe0](https://github.com/newsuk/times-components/commit/f7b1fe0c27af26d50911d2f38970b411db6df841))
+
+
+
+
+
+## [1.12.1](https://github.com/newsuk/times-components/compare/@times-components/context@1.12.0...@times-components/context@1.12.1) (2024-01-25)
+
+
+### Bug Fixes
+
+* **TMRX-1866:** remove additional space under the paragraph ([#3744](https://github.com/newsuk/times-components/issues/3744)) ([1068895](https://github.com/newsuk/times-components/commit/1068895c84ce26103bb4a4ef6a869a0fd55c7c5e))
+
+
+
+
+
 # [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.11.0...@times-components/context@1.12.0) (2024-01-24)
 
 

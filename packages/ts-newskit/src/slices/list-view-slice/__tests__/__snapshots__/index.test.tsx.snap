@@ -195,15 +195,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -406,15 +397,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -617,15 +599,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         >
                           The Sunday Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -828,15 +801,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -978,66 +942,11 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         class="css-1kfs2jd"
                         data-testid="tag-and-flag"
                       >
-                        <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <a
-                          class="css-1z0urni"
-                          href="/profile/ibrahim"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              ibrahim
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                         <span
                           class="css-1selp7x"
                         >
                           The Sunday Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -1258,15 +1167,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -1414,62 +1314,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                           </p>
                         </span>
                       </a>
-                      <div
-                        class="css-1kfs2jd"
-                        data-testid="tag-and-flag"
-                      >
-                        <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-4z8vdx"
-                        >
-                          ibrahim kurhan
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-1selp7x"
-                        >
-                          The Sunday Times
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <div
@@ -1647,29 +1491,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             </span>
                           </span>
                         </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-1selp7x"
-                        >
-                          The Times
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -1822,29 +1643,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         data-testid="tag-and-flag"
                       >
                         <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <a
                           class="css-1z0urni"
                           href="/profile/ibrahim"
                         >
@@ -1872,15 +1670,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -2045,43 +1834,11 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             data-testid="divider"
                           />
                         </div>
-                        <a
-                          class="css-1z0urni"
-                          href="/profile/ibrahim"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              ibrahim
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                         <span
                           class="css-1selp7x"
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -2386,15 +2143,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -2576,15 +2324,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -2766,15 +2505,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                     >
                       The Sunday Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -2956,15 +2686,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -3095,66 +2816,11 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                     class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
-                    <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <a
-                      class="css-1z0urni"
-                      href="/profile/ibrahim"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          ibrahim
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
                       class="css-1selp7x"
                     >
                       The Sunday Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -3339,15 +3005,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -3474,62 +3131,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                       </p>
                     </span>
                   </a>
-                  <div
-                    class="css-1kfs2jd"
-                    data-testid="tag-and-flag"
-                  >
-                    <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-4z8vdx"
-                    >
-                      ibrahim kurhan
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-1selp7x"
-                    >
-                      The Sunday Times
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -3696,29 +3297,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         </span>
                       </span>
                     </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-1selp7x"
-                    >
-                      The Times
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -3850,29 +3428,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                     data-testid="tag-and-flag"
                   >
                     <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <a
                       class="css-1z0urni"
                       href="/profile/ibrahim"
                     >
@@ -3900,15 +3455,6 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -4062,43 +3608,11 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         data-testid="divider"
                       />
                     </div>
-                    <a
-                      class="css-1z0urni"
-                      href="/profile/ibrahim"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          ibrahim
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
                       class="css-1selp7x"
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -4306,15 +3820,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -4517,15 +4022,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -4728,15 +4224,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Sunday Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -4939,15 +4426,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -5089,66 +4567,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         class="css-1kfs2jd"
                         data-testid="tag-and-flag"
                       >
-                        <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <a
-                          class="css-1z0urni"
-                          href="/profile/ibrahim"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              ibrahim
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                         <span
                           class="css-1selp7x"
                         >
                           The Sunday Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -5369,15 +4792,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -5525,62 +4939,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                           </p>
                         </span>
                       </a>
-                      <div
-                        class="css-1kfs2jd"
-                        data-testid="tag-and-flag"
-                      >
-                        <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-4z8vdx"
-                        >
-                          ibrahim kurhan
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-1selp7x"
-                        >
-                          The Sunday Times
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <div
@@ -5758,29 +5116,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             </span>
                           </span>
                         </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-1selp7x"
-                        >
-                          The Times
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -5933,29 +5268,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         data-testid="tag-and-flag"
                       >
                         <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <a
                           class="css-1z0urni"
                           href="/profile/ibrahim"
                         >
@@ -5983,15 +5295,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -6156,43 +5459,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             data-testid="divider"
                           />
                         </div>
-                        <a
-                          class="css-1z0urni"
-                          href="/profile/ibrahim"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              ibrahim
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                         <span
                           class="css-1selp7x"
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -6497,15 +5768,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -6687,15 +5949,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -6877,15 +6130,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Sunday Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -7067,15 +6311,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -7206,66 +6441,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
-                    <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <a
-                      class="css-1z0urni"
-                      href="/profile/ibrahim"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          ibrahim
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
                       class="css-1selp7x"
                     >
                       The Sunday Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -7450,15 +6630,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -7585,62 +6756,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       </p>
                     </span>
                   </a>
-                  <div
-                    class="css-1kfs2jd"
-                    data-testid="tag-and-flag"
-                  >
-                    <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-4z8vdx"
-                    >
-                      ibrahim kurhan
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-1selp7x"
-                    >
-                      The Sunday Times
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -7807,29 +6922,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         </span>
                       </span>
                     </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-1selp7x"
-                    >
-                      The Times
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -7961,29 +7053,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     data-testid="tag-and-flag"
                   >
                     <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <a
                       class="css-1z0urni"
                       href="/profile/ibrahim"
                     >
@@ -8011,15 +7080,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -8173,43 +7233,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         data-testid="divider"
                       />
                     </div>
-                    <a
-                      class="css-1z0urni"
-                      href="/profile/ibrahim"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          ibrahim
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
                       class="css-1selp7x"
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -8417,15 +7445,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -8628,15 +7647,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -8839,15 +7849,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Sunday Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -9050,15 +8051,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -9200,66 +8192,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         class="css-1kfs2jd"
                         data-testid="tag-and-flag"
                       >
-                        <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <a
-                          class="css-1z0urni"
-                          href="/profile/ibrahim"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              ibrahim
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                         <span
                           class="css-1selp7x"
                         >
                           The Sunday Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -9480,15 +8417,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -9636,62 +8564,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                           </p>
                         </span>
                       </a>
-                      <div
-                        class="css-1kfs2jd"
-                        data-testid="tag-and-flag"
-                      >
-                        <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-4z8vdx"
-                        >
-                          ibrahim kurhan
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-1selp7x"
-                        >
-                          The Sunday Times
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <div
@@ -9869,29 +8741,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             </span>
                           </span>
                         </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-1selp7x"
-                        >
-                          The Times
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -10044,29 +8893,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         data-testid="tag-and-flag"
                       >
                         <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <a
                           class="css-1z0urni"
                           href="/profile/ibrahim"
                         >
@@ -10094,15 +8920,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -10267,43 +9084,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             data-testid="divider"
                           />
                         </div>
-                        <a
-                          class="css-1z0urni"
-                          href="/profile/ibrahim"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              ibrahim
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                         <span
                           class="css-1selp7x"
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -10608,15 +9393,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -10798,15 +9574,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -10988,15 +9755,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Sunday Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -11178,15 +9936,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -11317,66 +10066,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
-                    <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <a
-                      class="css-1z0urni"
-                      href="/profile/ibrahim"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          ibrahim
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
                       class="css-1selp7x"
                     >
                       The Sunday Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -11561,15 +10255,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -11696,62 +10381,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       </p>
                     </span>
                   </a>
-                  <div
-                    class="css-1kfs2jd"
-                    data-testid="tag-and-flag"
-                  >
-                    <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-4z8vdx"
-                    >
-                      ibrahim kurhan
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-1selp7x"
-                    >
-                      The Sunday Times
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -11918,29 +10547,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         </span>
                       </span>
                     </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-1selp7x"
-                    >
-                      The Times
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -12072,29 +10678,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     data-testid="tag-and-flag"
                   >
                     <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <a
                       class="css-1z0urni"
                       href="/profile/ibrahim"
                     >
@@ -12122,15 +10705,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -12284,43 +10858,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         data-testid="divider"
                       />
                     </div>
-                    <a
-                      class="css-1z0urni"
-                      href="/profile/ibrahim"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          ibrahim
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
                       class="css-1selp7x"
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -12528,15 +11070,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -12739,15 +11272,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -12950,15 +11474,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Sunday Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -13161,15 +11676,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -13311,66 +11817,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         class="css-1kfs2jd"
                         data-testid="tag-and-flag"
                       >
-                        <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <a
-                          class="css-1z0urni"
-                          href="/profile/ibrahim"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              ibrahim
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                         <span
                           class="css-1selp7x"
                         >
                           The Sunday Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -13591,15 +12042,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -13747,62 +12189,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                           </p>
                         </span>
                       </a>
-                      <div
-                        class="css-1kfs2jd"
-                        data-testid="tag-and-flag"
-                      >
-                        <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-4z8vdx"
-                        >
-                          ibrahim kurhan
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-1selp7x"
-                        >
-                          The Sunday Times
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <div
@@ -13980,29 +12366,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             </span>
                           </span>
                         </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-1selp7x"
-                        >
-                          The Times
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -14155,29 +12518,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         data-testid="tag-and-flag"
                       >
                         <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <a
                           class="css-1z0urni"
                           href="/profile/ibrahim"
                         >
@@ -14205,15 +12545,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -14378,43 +12709,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             data-testid="divider"
                           />
                         </div>
-                        <a
-                          class="css-1z0urni"
-                          href="/profile/ibrahim"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              ibrahim
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                         <span
                           class="css-1selp7x"
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -14719,15 +13018,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -14909,15 +13199,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -15099,15 +13380,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Sunday Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -15289,15 +13561,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -15428,66 +13691,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
-                    <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <a
-                      class="css-1z0urni"
-                      href="/profile/ibrahim"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          ibrahim
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
                       class="css-1selp7x"
                     >
                       The Sunday Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -15672,15 +13880,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -15807,62 +14006,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       </p>
                     </span>
                   </a>
-                  <div
-                    class="css-1kfs2jd"
-                    data-testid="tag-and-flag"
-                  >
-                    <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-4z8vdx"
-                    >
-                      ibrahim kurhan
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-1selp7x"
-                    >
-                      The Sunday Times
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -16029,29 +14172,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         </span>
                       </span>
                     </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-1selp7x"
-                    >
-                      The Times
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -16183,29 +14303,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     data-testid="tag-and-flag"
                   >
                     <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <a
                       class="css-1z0urni"
                       href="/profile/ibrahim"
                     >
@@ -16233,15 +14330,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -16395,43 +14483,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         data-testid="divider"
                       />
                     </div>
-                    <a
-                      class="css-1z0urni"
-                      href="/profile/ibrahim"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          ibrahim
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
                       class="css-1selp7x"
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -16639,15 +14695,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -16850,15 +14897,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -17061,15 +15099,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Sunday Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -17272,15 +15301,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -17422,66 +15442,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         class="css-1kfs2jd"
                         data-testid="tag-and-flag"
                       >
-                        <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <a
-                          class="css-1z0urni"
-                          href="/profile/ibrahim"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              ibrahim
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                         <span
                           class="css-1selp7x"
                         >
                           The Sunday Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -17702,15 +15667,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -17858,62 +15814,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                           </p>
                         </span>
                       </a>
-                      <div
-                        class="css-1kfs2jd"
-                        data-testid="tag-and-flag"
-                      >
-                        <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-4z8vdx"
-                        >
-                          ibrahim kurhan
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-1selp7x"
-                        >
-                          The Sunday Times
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                      </div>
                     </div>
                   </div>
                   <div
@@ -18091,29 +15991,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             </span>
                           </span>
                         </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <span
-                          class="css-1selp7x"
-                        >
-                          The Times
-                        </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -18266,29 +16143,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         data-testid="tag-and-flag"
                       >
                         <a
-                          class="css-18s7xts"
-                          href="/"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              Review
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
-                        <a
                           class="css-1z0urni"
                           href="/profile/ibrahim"
                         >
@@ -18316,15 +16170,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -18489,43 +16334,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             data-testid="divider"
                           />
                         </div>
-                        <a
-                          class="css-1z0urni"
-                          href="/profile/ibrahim"
-                        >
-                          <span
-                            class="css-17x5lw"
-                          >
-                            <span
-                              class="css-qx2986"
-                            >
-                              ibrahim
-                            </span>
-                          </span>
-                        </a>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                         <span
                           class="css-1selp7x"
                         >
                           The Times
                         </span>
-                        <div
-                          class="css-p44zak"
-                        >
-                          <hr
-                            aria-hidden="true"
-                            class="css-15kf7hd"
-                            data-testid="divider"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -18830,15 +16643,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -19020,15 +16824,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -19210,15 +17005,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Sunday Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -19400,15 +17186,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -19539,66 +17316,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     class="css-1kfs2jd"
                     data-testid="tag-and-flag"
                   >
-                    <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <a
-                      class="css-1z0urni"
-                      href="/profile/ibrahim"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          ibrahim
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
                       class="css-1selp7x"
                     >
                       The Sunday Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -19783,15 +17505,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -19918,62 +17631,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       </p>
                     </span>
                   </a>
-                  <div
-                    class="css-1kfs2jd"
-                    data-testid="tag-and-flag"
-                  >
-                    <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-4z8vdx"
-                    >
-                      ibrahim kurhan
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-1selp7x"
-                    >
-                      The Sunday Times
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -20140,29 +17797,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         </span>
                       </span>
                     </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <span
-                      class="css-1selp7x"
-                    >
-                      The Times
-                    </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -20294,29 +17928,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     data-testid="tag-and-flag"
                   >
                     <a
-                      class="css-18s7xts"
-                      href="/"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          Review
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
-                    <a
                       class="css-1z0urni"
                       href="/profile/ibrahim"
                     >
@@ -20344,15 +17955,6 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -20506,43 +18108,11 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         data-testid="divider"
                       />
                     </div>
-                    <a
-                      class="css-1z0urni"
-                      href="/profile/ibrahim"
-                    >
-                      <span
-                        class="css-17x5lw"
-                      >
-                        <span
-                          class="css-qx2986"
-                        >
-                          ibrahim
-                        </span>
-                      </span>
-                    </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                     <span
                       class="css-1selp7x"
                     >
                       The Times
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>

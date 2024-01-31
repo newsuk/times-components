@@ -125,15 +125,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     >
                       Flag1
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -243,15 +234,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     >
                       Flag1
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -547,15 +529,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         </span>
                       </span>
                     </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -661,15 +634,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                         </span>
                       </span>
                     </a>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -775,15 +739,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     >
                       Flag4
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -880,15 +835,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     >
                       Flag4
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1017,15 +963,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     >
                       Flag5
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1145,15 +1082,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     >
                       Flag5
                     </span>
-                    <div
-                      class="css-p44zak"
-                    >
-                      <hr
-                        aria-hidden="true"
-                        class="css-15kf7hd"
-                        data-testid="divider"
-                      />
-                    </div>
                   </div>
                 </div>
               </div>
@@ -1275,15 +1203,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   Flag1
                 </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -1393,15 +1312,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   Flag1
                 </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -1697,15 +1607,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </span>
                 </a>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -1811,15 +1712,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                     </span>
                   </span>
                 </a>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -1925,15 +1817,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   Flag4
                 </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -2030,15 +1913,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   Flag4
                 </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -2167,15 +2041,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   Flag5
                 </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -2295,15 +2160,6 @@ exports[`Render Lead Story 1 Slice large Article Stack 1`] = `
                 >
                   Flag5
                 </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -2495,15 +2351,6 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
                 </span>
               </span>
             </a>
-            <div
-              class="css-p44zak"
-            >
-              <hr
-                aria-hidden="true"
-                class="css-15kf7hd"
-                data-testid="divider"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -2599,15 +2446,6 @@ exports[`Render Lead Story 1 Slice small Article Stack 1`] = `
             >
               Flag4
             </span>
-            <div
-              class="css-p44zak"
-            >
-              <hr
-                aria-hidden="true"
-                class="css-15kf7hd"
-                data-testid="divider"
-              />
-            </div>
           </div>
         </div>
       </div>
