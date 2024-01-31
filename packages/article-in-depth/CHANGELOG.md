@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.79.7](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.6...@times-components/article-in-depth@3.79.7) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.6](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.5...@times-components/article-in-depth@3.79.6) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.5](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.4...@times-components/article-in-depth@3.79.5) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.3...@times-components/article-in-depth@3.79.4) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.2...@times-components/article-in-depth@3.79.3) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.1...@times-components/article-in-depth@3.79.2) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.0...@times-components/article-in-depth@3.79.1) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+# [3.79.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.59...@times-components/article-in-depth@3.79.0) (2024-01-24)
+
+
+### Features
+
+* **TMRX-000:** Article category path meta update ([#3738](https://github.com/newsuk/times-components/issues/3738)) ([c2b19de](https://github.com/newsuk/times-components/commit/c2b19deaf195338216a630b52896e090d31e2cdb))
+
+
+
+
+
+## [3.78.59](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.58...@times-components/article-in-depth@3.78.59) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.78.58](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.57...@times-components/article-in-depth@3.78.58) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
 ## [3.78.57](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.78.56...@times-components/article-in-depth@3.78.57) (2024-01-22)
 
 **Note:** Version bump only for package @times-components/article-in-depth

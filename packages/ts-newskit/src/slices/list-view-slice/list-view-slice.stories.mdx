@@ -26,11 +26,11 @@ This takes in a series of props, as below, to display the part of the slices.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const ListViewSliceStory = ({ leadArticles, theme, gridOverlay, clickHandler, articleWithAdSlot, currentPage, itemsPerPage, totalItems, isLoading, handlePageChange, onPageChange, StickyAd, SectionAd }) => (
+export const ListViewSliceStory = ({ leadArticles, theme, gridOverlay, clickHandler, articleWithAdSlot, currentPage, itemsPerPage, totalItems, isLoading, handlePageChange, onPageChange, StickyAd, SectionAd, SectionAdMob }) => (
   <TCThemeProvider theme={theme}>
     <>
       <GridOverlay show={gridOverlay} />
-      <ListViewSlice {...{ leadArticles, clickHandler, articleWithAdSlot, currentPage, itemsPerPage, totalItems, isLoading, handlePageChange, onPageChange, StickyAd, SectionAd }} />
+      <ListViewSlice {...{ leadArticles, clickHandler, articleWithAdSlot, currentPage, itemsPerPage, totalItems, isLoading, handlePageChange, onPageChange, StickyAd, SectionAd, SectionAdMob }} />
     </>
   </TCThemeProvider>
 );
@@ -57,7 +57,8 @@ ListViewSliceStory.args = {
       console.log("ON PAGE CHANGE")
     },
     StickyAd: SectionAd,
-    SectionAd: SectionAd
+    SectionAd: SectionAd,
+    SectionAdMob: SectionAd
   }}
   argTypes={{
     theme: {

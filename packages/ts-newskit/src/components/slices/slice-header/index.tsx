@@ -1,15 +1,22 @@
 import React from 'react';
 import { NewsKitChevronRightIcon } from '../../../assets';
-import { IconButton, TitleBar, MQ } from 'newskit';
+import { MQ } from 'newskit';
 import {
   SliceHeaderWrapper,
   SliceHeaderLink,
-  SliceHeaderContainer
+  SliceHeaderContainer,
+  TitleBarContainer,
+  StyledDivider,
+  StyledTitleBar,
+  StyledIconButton,
+  Tagline,
+  TaglineMob
 } from './styles';
 
 export interface SliceHeaderProps {
   title: string;
   href?: string;
+  tagline?: string;
   titleTypographyPreset?: MQ<string>;
   iconArrowSize?: MQ<string>;
   iconSize?: MQ<string>;
@@ -39,6 +46,7 @@ const SliceHeaderLinkWrapper = ({
 export const SliceHeader = ({
   title,
   href,
+  tagline,
   titleTypographyPreset = {
     xs: 'editorialDisplay003',
     md: 'editorialDisplay004'
@@ -65,32 +73,60 @@ export const SliceHeader = ({
           paddingBlock={padding}
           paddingInline={{ xs: 'space045', md: 'space000' }}
         >
-          <TitleBar
-            overrides={{
-              heading: {
-                typographyPreset: titleTypographyPreset,
-                stylePreset: 'inkBrand010'
-              },
-              paddingInline: 'space000',
-              paddingBlock: 'space000'
-            }}
-          >
-            {title}
-          </TitleBar>
+          <TitleBarContainer flow="horizontal-center">
+            <StyledTitleBar
+              overrides={{
+                heading: {
+                  typographyPreset: titleTypographyPreset,
+                  stylePreset: 'inkBrand010'
+                },
+                paddingInline: 'space000',
+                paddingBlock: 'space000'
+              }}
+            >
+              {title}
+            </StyledTitleBar>
+            {tagline && (
+              <>
+                <StyledDivider
+                  overrides={{
+                    stylePreset: 'lightDivider',
+                    marginInline: 'space030'
+                  }}
+                  vertical
+                />
+                <Tagline
+                  typographyPreset="editorialCaption010"
+                  stylePreset="inkSubtle"
+                >
+                  {tagline}
+                </Tagline>
+              </>
+            )}
+          </TitleBarContainer>
           {href && (
-            <IconButton
+            <StyledIconButton
               overrides={{
                 stylePreset: 'sliceIconPreset',
                 iconSize: iconArrowSize,
                 height: iconSize,
-                width: iconSize
+                width: iconSize,
+                marginInlineStart: 'space040'
               }}
             >
               <NewsKitChevronRightIcon />
-            </IconButton>
+            </StyledIconButton>
           )}
         </SliceHeaderContainer>
       </SliceHeaderLinkWrapper>
+      <TaglineMob
+        typographyPreset="editorialCaption010"
+        stylePreset="inkSubtle"
+        paddingInline="space045"
+        paddingBlockEnd="space040"
+      >
+        {tagline}
+      </TaglineMob>
     </SliceHeaderWrapper>
   );
 };

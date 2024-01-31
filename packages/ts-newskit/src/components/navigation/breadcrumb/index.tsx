@@ -48,14 +48,13 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
             return (
               <BreadcrumbItem
                 key={breadcrumbItem.title}
-                href={isLastItem ? undefined : breadcrumbItem.url}
+                href={breadcrumbItem.url}
                 selected={isLastItem}
                 overrides={{
                   stylePreset: 'breadcrumbStyle',
                   typographyPreset: 'breadcrumbText'
                 }}
                 onClick={() =>
-                  !isLastItem &&
                   handleClick(fireAnalyticsEvent, breadcrumbItem.title)
                 }
               >
