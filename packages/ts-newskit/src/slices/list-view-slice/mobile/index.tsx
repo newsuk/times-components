@@ -70,11 +70,12 @@ export const ListViewSliceMobile = ({
                     />
                   </Block>
                 )}
-              {renderAds && SectionAdMob && (
-                <Block marginBlock="space040">
-                  <SectionAdMob />
-                </Block>
-              )}
+              {renderAds &&
+                SectionAdMob && (
+                  <Block marginBlock="space040">
+                    <SectionAdMob />
+                  </Block>
+                )}
             </Fragment>
           );
         })}
