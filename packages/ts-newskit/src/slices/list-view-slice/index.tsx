@@ -19,9 +19,9 @@ export type ListViewSliceProps = {
   itemsPerPage?: number;
   totalItems: number;
   isLoading?: boolean;
-  StickyAd: React.FunctionComponent;
-  SectionAd: React.FunctionComponent;
-  SectionAdMob: React.FunctionComponent;
+  StickyAd?: React.FunctionComponent;
+  SectionAd?: React.FunctionComponent;
+  SectionAdMob?: React.FunctionComponent;
 };
 export const ListViewSlice = ({
   leadArticles,
