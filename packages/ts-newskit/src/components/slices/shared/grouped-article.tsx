@@ -1,7 +1,7 @@
 import React from 'react';
-import { Block, GridLayout, Divider } from 'newskit';
+import { Block, GridLayout, Divider, Visible } from 'newskit';
 import { LeadArticle, LeadArticleProps } from '../lead-article/index';
-import { FullWidthBlock } from '../shared-styles/index';
+import { FullWidthBlock, AdContainer } from '../shared-styles/index';
 import { ClickHandlerType, expirableFlagsProps } from '../../../slices/types';
 
 export interface GroupedArticleProps {
@@ -35,25 +35,30 @@ export const GroupedArticle = ({
             return (
               <React.Fragment key={article.headline}>
                 {isSecondDivider && (
-                  <FullWidthBlock
-                    marginBlock="space040"
-                    paddingInline={{
-                      xs: 'space045',
-                      md: 'space000'
-                    }}
-                  >
-                    <Divider
-                      overrides={{
-                        stylePreset: 'dashedDivider'
+                  <>
+                    <FullWidthBlock
+                      marginBlock="space040"
+                      paddingInline={{
+                        xs: 'space045',
+                        md: 'space000'
                       }}
-                    />
-                  </FullWidthBlock>
+                    >
+                      <Divider
+                        overrides={{
+                          stylePreset: 'dashedDivider'
+                        }}
+                      />
+                    </FullWidthBlock>
+                  </>
                 )}
                 <LeadArticle article={article} clickHandler={clickHandler} />
               </React.Fragment>
             );
           }
         )}
+        <Visible xs sm>
+          <AdContainer data-testid="Ad container" />
+        </Visible>
       </GridLayout>
     </Block>
   );

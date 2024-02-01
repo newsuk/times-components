@@ -19,6 +19,15 @@ const getRatio = (ratioString: string) => {
   return Number(ratioWidth) / Number(ratioHeight);
 };
 
+export const AdContainer = styled.div`
+  display: flex;
+  height: 250px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  ${getColorCssFromTheme('background-color', 'interface020')};
+`;
+
 export const CardHeadlineLink = styled(CardLink)<{
   $color?: string;
   isCommentBucket1?: boolean;
@@ -26,7 +35,6 @@ export const CardHeadlineLink = styled(CardLink)<{
   ${({ $color }) => getColorCssFromTheme('color', $color || 'inkContrast')};
   cursor: pointer;
   text-decoration: none;
-
   &&:hover,
   &&:active {
     text-decoration: none;
