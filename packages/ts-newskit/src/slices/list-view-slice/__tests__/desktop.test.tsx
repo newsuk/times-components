@@ -16,14 +16,21 @@ const defaultProps = {
   handlePageChange,
   onPageChange,
   totalItems: 11,
-  StickyAd: SectionAd,
-  SectionAd
+  SectionAd,
+  SectionAdMob: SectionAd,
+  StickyAd: SectionAd
 };
 
 describe('Render ListViewSliceDesktop', () => {
   it('matches snapshot', () => {
     const { asFragment } = renderComponent(
       <ListViewSliceDesktop {...defaultProps} />
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+  it('matches snapshot when isLoading is TRUE', () => {
+    const { asFragment } = renderComponent(
+      <ListViewSliceDesktop {...defaultProps} isLoading />
     );
     expect(asFragment()).toMatchSnapshot();
   });

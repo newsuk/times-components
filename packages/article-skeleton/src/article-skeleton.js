@@ -60,6 +60,7 @@ const ArticleSkeleton = ({
   logoUrl,
   receiveChildList,
   commentingConfig,
+  articleDataFromRender,
   paidContentClassName,
   isPreview,
   swgProductId,
@@ -78,7 +79,6 @@ const ArticleSkeleton = ({
     headline,
     shortHeadline,
     expirableFlags,
-    label,
     topics,
     relatedArticleSlice,
     template,
@@ -156,6 +156,9 @@ const ArticleSkeleton = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const { hostName, canonicalUrl, breadcrumbs } = articleDataFromRender || {};
+  const articleUrl =
+    hostName && canonicalUrl ? `${hostName}${canonicalUrl}` : url;
 
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
@@ -247,10 +250,12 @@ const ArticleSkeleton = ({
           )}
           <Head
             article={article}
+            articleUrl={articleUrl}
             logoUrl={logoUrl}
             paidContentClassName={paidContentClassName}
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
             swgProductId={swgProductId}
+            breadcrumbs={breadcrumbs}
           />
           {!!zephrDivs && (
             <StaticContent
@@ -286,7 +291,7 @@ const ArticleSkeleton = ({
                         <StickySaveAndShareBar
                           articleId={articleId}
                           articleHeadline={headline}
-                          articleUrl={url}
+                          articleUrl={articleUrl}
                           onCopyLink={() => showMessage("Article link copied")}
                           onSaveToMyArticles={() => {}}
                           onShareOnEmail={() => {}}
@@ -351,7 +356,7 @@ const ArticleSkeleton = ({
                     id={article.id}
                     analyticsStream={analyticsStream}
                     content={newContent}
-                    contextUrl={url}
+                    contextUrl={articleUrl}
                     section={section}
                     articleHeadline={headline}
                     paidContentClassName={paidContentClassName}
@@ -392,7 +397,7 @@ const ArticleSkeleton = ({
                       analyticsStream={analyticsStream}
                       articleId={articleId}
                       articleHeadline={headline}
-                      articleUrl={url}
+                      articleUrl={articleUrl}
                       section={section}
                       publishedTime={publishedTime}
                       savingEnabled={savingEnabled}
@@ -408,6 +413,7 @@ const ArticleSkeleton = ({
                       isSharingSavingEnabled={isSharingSavingEnabled}
                       isCommentEnabled={isCommentEnabled}
                       storefrontConfig={storefrontConfig}
+                      breadcrumbs={breadcrumbs}
                     />
                   )}
                 </LazyLoad>

@@ -3,6 +3,99 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.165.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.165.0...@times-components/ts-newskit@1.165.1) (2024-01-30)
+
+
+### Bug Fixes
+
+* **TMRX-1841:** listviewslice updates ([#3750](https://github.com/newsuk/times-components/issues/3750)) ([0e7da01](https://github.com/newsuk/times-components/commit/0e7da0123ebb5e5bb008fe585d028b841c2fe754))
+
+
+
+
+
+# [1.165.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.164.0...@times-components/ts-newskit@1.165.0) (2024-01-30)
+
+
+### Features
+
+* **TMRX-1762:** remove breadcrumb last item url logic ([#3749](https://github.com/newsuk/times-components/issues/3749)) ([c6ca76a](https://github.com/newsuk/times-components/commit/c6ca76a20502018eacd7cfee93f5139d9b965438))
+
+
+
+
+
+# [1.164.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.163.1...@times-components/ts-newskit@1.164.0) (2024-01-30)
+
+
+### Features
+
+* **TMRX-1843:** add note to files that are being moved to render ([#3747](https://github.com/newsuk/times-components/issues/3747)) ([c94ffaf](https://github.com/newsuk/times-components/commit/c94ffaf7b13a65fb254783471d1e0a7b345f0d24))
+
+
+
+
+
+## [1.163.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.163.0...@times-components/ts-newskit@1.163.1) (2024-01-26)
+
+
+### Bug Fixes
+
+* **TMRX-1879:** add prop for mobile ad slot ([#3745](https://github.com/newsuk/times-components/issues/3745)) ([7c74c35](https://github.com/newsuk/times-components/commit/7c74c35fb93e34a33c0da2fe1aa7590c8a559bd0))
+
+
+
+
+
+# [1.163.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.162.0...@times-components/ts-newskit@1.163.0) (2024-01-25)
+
+
+### Bug Fixes
+
+* **TMRX-1866:** remove additional space under the paragraph ([#3744](https://github.com/newsuk/times-components/issues/3744)) ([1068895](https://github.com/newsuk/times-components/commit/1068895c84ce26103bb4a4ef6a869a0fd55c7c5e))
+
+
+### Features
+
+* **TMRX-1850:** add tagline to sliceheader ([#3742](https://github.com/newsuk/times-components/issues/3742)) ([ac504c6](https://github.com/newsuk/times-components/commit/ac504c630323e547c685b40322f03e195ff2d757))
+
+
+
+
+
+# [1.162.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.161.2...@times-components/ts-newskit@1.162.0) (2024-01-25)
+
+
+### Features
+
+* **TMRX-000:** Article canonical url ([#3743](https://github.com/newsuk/times-components/issues/3743)) ([e9e28da](https://github.com/newsuk/times-components/commit/e9e28dad358f6996f3bb3fe2909c2cf482232a56))
+
+
+
+
+
+## [1.161.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.161.1...@times-components/ts-newskit@1.161.2) (2024-01-24)
+
+
+### Bug Fixes
+
+* **TMRX-1866:** fixed logic to render tag and label component ([#3740](https://github.com/newsuk/times-components/issues/3740)) ([724ebdf](https://github.com/newsuk/times-components/commit/724ebdf9cda8bf89b180c282f13fb68c2a265eb2))
+
+
+
+
+
+## [1.161.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.161.0...@times-components/ts-newskit@1.161.1) (2024-01-22)
+
+
+### Bug Fixes
+
+* **TMRX-1680:** xxl breakpoint for global nav to show all menus ([#3732](https://github.com/newsuk/times-components/issues/3732)) ([3b70452](https://github.com/newsuk/times-components/commit/3b70452784a89fe0da738e9197f33a9a62683645))
+
+
+
+
+
 # [1.161.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.160.0...@times-components/ts-newskit@1.161.0) (2024-01-18)
 
 

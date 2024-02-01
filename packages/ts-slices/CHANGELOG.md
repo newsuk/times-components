@@ -3,6 +3,86 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.42](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.41...@times-components/ts-slices@1.8.42) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/ts-slices
+
+
+
+
+
+## [1.8.41](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.40...@times-components/ts-slices@1.8.41) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/ts-slices
+
+
+
+
+
+## [1.8.40](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.39...@times-components/ts-slices@1.8.40) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/ts-slices
+
+
+
+
+
+## [1.8.39](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.38...@times-components/ts-slices@1.8.39) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/ts-slices
+
+
+
+
+
+## [1.8.38](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.37...@times-components/ts-slices@1.8.38) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/ts-slices
+
+
+
+
+
+## [1.8.37](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.36...@times-components/ts-slices@1.8.37) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/ts-slices
+
+
+
+
+
+## [1.8.36](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.35...@times-components/ts-slices@1.8.36) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/ts-slices
+
+
+
+
+
+## [1.8.35](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.34...@times-components/ts-slices@1.8.35) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/ts-slices
+
+
+
+
+
+## [1.8.34](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.33...@times-components/ts-slices@1.8.34) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/ts-slices
+
+
+
+
+
+## [1.8.33](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.32...@times-components/ts-slices@1.8.33) (2024-01-23)
+
+**Note:** Version bump only for package @times-components/ts-slices
+
+
+
+
+
 ## [1.8.32](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.8.31...@times-components/ts-slices@1.8.32) (2024-01-18)
 
 **Note:** Version bump only for package @times-components/ts-slices

@@ -3,6 +3,109 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.52.7](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.52.6...@times-components/ssr@2.52.7) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.52.6](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.52.5...@times-components/ssr@2.52.6) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.52.5](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.52.4...@times-components/ssr@2.52.5) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.52.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.52.3...@times-components/ssr@2.52.4) (2024-01-29)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.52.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.52.2...@times-components/ssr@2.52.3) (2024-01-26)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.52.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.52.1...@times-components/ssr@2.52.2) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.52.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.52.0...@times-components/ssr@2.52.1) (2024-01-25)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.52.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.51.1...@times-components/ssr@2.52.0) (2024-01-24)
+
+
+### Features
+
+* **TMRX-000:** Article category path meta update ([#3738](https://github.com/newsuk/times-components/issues/3738)) ([c2b19de](https://github.com/newsuk/times-components/commit/c2b19deaf195338216a630b52896e090d31e2cdb))
+
+
+
+
+
+## [2.51.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.51.0...@times-components/ssr@2.51.1) (2024-01-24)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.51.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.50.2...@times-components/ssr@2.51.0) (2024-01-23)
+
+
+### Features
+
+* **TMRX-000:** Update article path ([#3735](https://github.com/newsuk/times-components/issues/3735)) ([84d54e0](https://github.com/newsuk/times-components/commit/84d54e08f5b6674d8ba97a38516ca9cc1c291887))
+* **TMRX-000:** Update article path ([#3737](https://github.com/newsuk/times-components/issues/3737)) ([c47ae21](https://github.com/newsuk/times-components/commit/c47ae218618c8622c8d09d526b8b531aeb7b3757))
+
+
+
+
+
+## [2.50.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.50.1...@times-components/ssr@2.50.2) (2024-01-22)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.50.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.50.0...@times-components/ssr@2.50.1) (2024-01-22)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
 # [2.50.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.49.56...@times-components/ssr@2.50.0) (2024-01-18)
 
 

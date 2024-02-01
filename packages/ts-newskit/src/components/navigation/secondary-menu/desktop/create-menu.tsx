@@ -47,7 +47,7 @@ export const CreateMenu: React.FC<{
     showMoreXL
   } = getResponsiveNavData<ResponsiveSecondaryMenuItem>(data, {
     md: 700,
-    lg: 970,
+    lg: 1050,
     xl: 1270
   });
 
