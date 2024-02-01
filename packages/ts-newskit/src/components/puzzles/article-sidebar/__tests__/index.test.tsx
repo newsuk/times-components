@@ -36,9 +36,9 @@ describe('ArticleSidebar', () => {
     const { container } = render(<ArticleSidebar {...defaultProps} />);
     fireEvent.click(container.querySelector('.trigger')!);
   });
+
   it('should call onClick when puzzle card is clicked', () => {
     const { container } = render(<ArticleSidebar {...defaultProps} />);
-
     fireEvent.click(container.querySelector('.trigger-card-link')!);
   });
 });
