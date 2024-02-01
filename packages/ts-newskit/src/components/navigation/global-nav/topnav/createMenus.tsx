@@ -13,13 +13,6 @@ import {
 } from '../styles';
 import { MenuItemParent, ResponsiveMenuItemParent } from '../types';
 import { getResponsiveNavData } from '../../../../utils';
-import { breakpoints } from '@times-components/ts-styleguide';
-
-const OTHER_NAV_ELEMENTS = 540;
-const MD_LIMIT = breakpoints.medium - OTHER_NAV_ELEMENTS;
-const LG_LIMIT = breakpoints.wide - OTHER_NAV_ELEMENTS;
-const XL_LIMIT = breakpoints.huge - OTHER_NAV_ELEMENTS;
-const XXL_LIMIT = 1160;
 
 const menuItemPresets = {
   minHeight: '60px',
@@ -37,7 +30,8 @@ const hasClickedOnMenu = (
 
 export const createMenu = (
   menuData: ResponsiveMenuItemParent[],
-  clickHandler: (title: string) => void
+  clickHandler: (title: string) => void,
+  topNavAvailableSpace: number
 ) => {
   const [moreSelected, setMoreSelected] = useState<boolean>(false);
 
@@ -46,27 +40,18 @@ export const createMenu = (
     clickHandler('More');
   };
 
-  const {
-    responsiveMenuData,
-    showMoreMD,
-    showMoreLG,
-    showMoreXL,
-    showMoreXXL
-  } = getResponsiveNavData<ResponsiveMenuItemParent>(menuData, {
-    md: MD_LIMIT,
-    lg: LG_LIMIT,
-    xl: XL_LIMIT,
-    xxl: XXL_LIMIT
-  });
+  const { responsiveMenuData, showMoreMD } = getResponsiveNavData<
+    ResponsiveMenuItemParent
+  >(menuData, { md: topNavAvailableSpace }, 12, 9);
 
-  const navItems = responsiveMenuData.map(({ title, url, md, lg, xl, xxl }) => (
+  const navItems = responsiveMenuData.map(({ title, url, md }) => (
     <StyledVisibleMenuItems
       href={url}
       overrides={{
         ...menuItemPresets,
-        paddingInline: { xs: 'space000', md: 'space040' },
-        paddingBlockEnd: { xs: 'space000', md: 'space040' },
-        paddingBlockStart: { xs: 'space010', md: 'space040' },
+        paddingInline: { xs: 'space000', md: 'space030' },
+        paddingBlockEnd: { xs: 'space000', md: 'space030' },
+        paddingBlockStart: { xs: 'space010', md: 'space030' },
         stylePreset: {
           xs: 'menuItemScroll',
           md: 'menuItem'
@@ -74,10 +59,7 @@ export const createMenu = (
       }}
       onClick={() => clickHandler(title)}
       key={url}
-      $hideMD={md}
-      $hideLG={lg}
-      $hideXL={xl}
-      $hideXXL={xxl}
+      $hide={md}
     >
       {title}
     </StyledVisibleMenuItems>
@@ -87,33 +69,32 @@ export const createMenu = (
     <>
       {navItems}
 
-      <StyledMoreMenuSub
-        title="More"
-        onClick={handleMoreClick}
-        selected={moreSelected}
-        expanded={moreSelected}
-        onBlur={e => {
-          // Close menu when it loses focus if user has not clicked on it
-          !hasClickedOnMenu(e, 'more-menu-item') && setMoreSelected(false);
-        }}
-        overrides={{
-          ...menuItemPresets,
-          list: { stylePreset: 'moreSubMenu' }
-        }}
-        data-testid="more-sub-menu"
-        $showMoreMD={showMoreMD}
-        $showMoreLG={showMoreLG}
-        $showMoreXL={showMoreXL}
-        $showMoreXXL={showMoreXXL}
-      >
-        <Menu
-          vertical
-          overrides={{ spaceInline: 'sizing000' }}
-          aria-label="More menu items"
+      {showMoreMD && (
+        <StyledMoreMenuSub
+          title="More"
+          onClick={handleMoreClick}
+          selected={moreSelected}
+          expanded={moreSelected}
+          onBlur={e => {
+            // Close menu when it loses focus if user has not clicked on it
+            !hasClickedOnMenu(e, 'more-menu-item') && setMoreSelected(false);
+          }}
+          overrides={{
+            ...menuItemPresets,
+            list: { stylePreset: 'moreSubMenu' }
+          }}
+          data-testid="more-sub-menu"
+          $showMore={showMoreMD}
         >
-          {createMoreMenu(responsiveMenuData, clickHandler)}
-        </Menu>
-      </StyledMoreMenuSub>
+          <Menu
+            vertical
+            overrides={{ spaceInline: 'sizing000' }}
+            aria-label="More menu items"
+          >
+            {createMoreMenu(responsiveMenuData, clickHandler)}
+          </Menu>
+        </StyledMoreMenuSub>
+      )}
     </>
   );
 };
@@ -122,7 +103,7 @@ const createMoreMenu = (
   menuData: ResponsiveMenuItemParent[],
   clickHandler: (title: string) => void
 ) =>
-  menuData.map(({ title, url, md, lg, xl, xxl }) => (
+  menuData.map(({ title, url, md }) => (
     <StyledMenuItemsDropdown
       href={url}
       data-testid="more-menu-item"
@@ -133,10 +114,7 @@ const createMoreMenu = (
       }}
       key={url}
       onClick={() => clickHandler(`more: ${title}`)}
-      $showMD={md}
-      $showLG={lg}
-      $showXL={xl}
-      $showXXL={xxl}
+      $show={md}
     >
       {title}
     </StyledMenuItemsDropdown>

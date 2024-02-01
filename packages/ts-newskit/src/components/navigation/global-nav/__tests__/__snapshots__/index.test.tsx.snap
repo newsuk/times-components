@@ -171,7 +171,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -186,7 +186,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/uk"
                 >
@@ -201,7 +201,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/world"
                 >
@@ -216,7 +216,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -231,7 +231,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/life-style"
                 >
@@ -246,7 +246,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ku3duz"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/culture-books"
                 >
@@ -261,7 +261,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/business-money"
                 >
@@ -276,7 +276,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -291,7 +291,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -306,7 +306,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -322,7 +322,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
               >
                 <button
                   aria-expanded="false"
-                  class="css-1t3ieu4"
+                  class="css-1q58f62"
                   data-testid="menu-sub-button"
                   type="button"
                 >
@@ -364,7 +364,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/home"
                         >
@@ -379,7 +379,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/uk"
                         >
@@ -394,7 +394,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/world"
                         >
@@ -409,7 +409,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -424,7 +424,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/life-style"
                         >
@@ -439,7 +439,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1serrty"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/culture-books"
                         >
@@ -454,7 +454,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/business-money"
                         >
@@ -469,7 +469,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -484,7 +484,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -499,7 +499,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/magazines"
                         >
@@ -613,194 +613,196 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
         </a>
       </div>
     </div>
-    <div
-      class="css-11l110t"
-    >
-      <nav
-        aria-label="My Account Menu"
-        class="css-yl1oeq"
-        data-testid="menu-container"
-        role="navigation"
+    <div>
+      <div
+        class="css-11l110t"
       >
-        <ul
-          role="list"
+        <nav
+          aria-label="My Account Menu"
+          class="css-yl1oeq"
+          data-testid="menu-container"
+          role="navigation"
         >
-          <li
-            aria-hidden="true"
-            class="css-1lgifga"
-            role="separator"
+          <ul
+            role="list"
           >
-            <hr
+            <li
               aria-hidden="true"
-              class="css-1udfuyx"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item css-1i1v9fb"
-          >
-            <a
-              class="css-no2l92"
-              data-testid="buttonLink"
-              href="/times-plus"
+              class="css-1lgifga"
+              role="separator"
             >
-              <span
-                class="css-1pur78d"
-              >
-                Times +
-              </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="css-1lgifga"
-            role="separator"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1udfuyx"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item css-1i1v9fb"
-          >
-            <button
-              aria-expanded="false"
-              class="css-au5zjl"
-              data-testid="menu-sub-button"
-              type="button"
-            >
-              <span
-                class="css-1pur78d"
-              >
-                My Account
-              </span>
-              <svg
+              <hr
                 aria-hidden="true"
-                class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </svg>
-            </button>
-            <ul
-              class="css-v7cizm"
+                class="css-1udfuyx"
+                data-testid="divider"
+              />
+            </li>
+            <li
+              class="nk-menu-item css-1i1v9fb"
             >
-              <nav
-                aria-label="My Account menu items"
-                class="css-1e8qhdd"
-                data-testid="menu-container"
-                role="navigation"
+              <a
+                class="css-no2l92"
+                data-testid="buttonLink"
+                href="/times-plus"
               >
-                <ul
-                  role="list"
+                <span
+                  class="css-1pur78d"
                 >
-                  <li
-                    class="nk-menu-item css-1kdinep"
+                  Times +
+                </span>
+              </a>
+            </li>
+            <li
+              aria-hidden="true"
+              class="css-1lgifga"
+              role="separator"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-1udfuyx"
+                data-testid="divider"
+              />
+            </li>
+            <li
+              class="nk-menu-item css-1i1v9fb"
+            >
+              <button
+                aria-expanded="false"
+                class="css-au5zjl"
+                data-testid="menu-sub-button"
+                type="button"
+              >
+                <span
+                  class="css-1pur78d"
+                >
+                  My Account
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </button>
+              <ul
+                class="css-v7cizm"
+              >
+                <nav
+                  aria-label="My Account menu items"
+                  class="css-1e8qhdd"
+                  data-testid="menu-container"
+                  role="navigation"
+                >
+                  <ul
+                    role="list"
                   >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/account"
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/account"
                       >
-                        Manage account
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="nk-menu-item css-1kdinep"
-                  >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/change-password"
+                        <span
+                          class="css-1pur78d"
+                        >
+                          Manage account
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/change-password"
                       >
-                        Change password
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="nk-menu-item css-1kdinep"
-                  >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/my-newsletters"
+                        <span
+                          class="css-1pur78d"
+                        >
+                          Change password
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/my-newsletters"
                       >
-                        My Newsletters
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="nk-menu-item css-1kdinep"
-                  >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/my-articles"
+                        <span
+                          class="css-1pur78d"
+                        >
+                          My Newsletters
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/my-articles"
                       >
-                        My articles
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="nk-menu-item css-1kdinep"
-                  >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/contact-us"
+                        <span
+                          class="css-1pur78d"
+                        >
+                          My articles
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/contact-us"
                       >
-                        Contact us
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="nk-menu-item css-1kdinep"
-                  >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/log-out"
+                        <span
+                          class="css-1pur78d"
+                        >
+                          Contact us
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/log-out"
                       >
-                        Log out
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+                        <span
+                          class="css-1pur78d"
+                        >
+                          Log out
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
   <div
@@ -830,7 +832,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -845,7 +847,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/uk"
                 >
@@ -860,7 +862,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/world"
                 >
@@ -875,7 +877,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -890,7 +892,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/life-style"
                 >
@@ -905,7 +907,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ku3duz"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/culture-books"
                 >
@@ -920,7 +922,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/business-money"
                 >
@@ -935,7 +937,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -950,7 +952,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -965,7 +967,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -981,7 +983,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
               >
                 <button
                   aria-expanded="false"
-                  class="css-1t3ieu4"
+                  class="css-1q58f62"
                   data-testid="menu-sub-button"
                   type="button"
                 >
@@ -1023,7 +1025,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/home"
                         >
@@ -1038,7 +1040,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/uk"
                         >
@@ -1053,7 +1055,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/world"
                         >
@@ -1068,7 +1070,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -1083,7 +1085,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/life-style"
                         >
@@ -1098,7 +1100,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1serrty"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/culture-books"
                         >
@@ -1113,7 +1115,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/business-money"
                         >
@@ -1128,7 +1130,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -1143,7 +1145,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -1158,7 +1160,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged in 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/magazines"
                         >
@@ -3857,7 +3859,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -3872,7 +3874,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/uk"
                 >
@@ -3887,7 +3889,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/world"
                 >
@@ -3902,7 +3904,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -3917,7 +3919,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/life-style"
                 >
@@ -3932,7 +3934,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ku3duz"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/culture-books"
                 >
@@ -3947,7 +3949,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/business-money"
                 >
@@ -3962,7 +3964,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -3977,7 +3979,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -3992,7 +3994,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -4008,7 +4010,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
               >
                 <button
                   aria-expanded="false"
-                  class="css-1t3ieu4"
+                  class="css-1q58f62"
                   data-testid="menu-sub-button"
                   type="button"
                 >
@@ -4050,7 +4052,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/home"
                         >
@@ -4065,7 +4067,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/uk"
                         >
@@ -4080,7 +4082,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/world"
                         >
@@ -4095,7 +4097,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -4110,7 +4112,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/life-style"
                         >
@@ -4125,7 +4127,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1serrty"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/culture-books"
                         >
@@ -4140,7 +4142,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/business-money"
                         >
@@ -4155,7 +4157,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -4170,7 +4172,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -4185,7 +4187,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/magazines"
                         >
@@ -4299,72 +4301,74 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
         </a>
       </div>
     </div>
-    <div
-      class="css-11l110t"
-    >
-      <nav
-        aria-label="My Account Menu"
-        class="css-1vmpsnr"
-        data-testid="menu-container"
-        role="navigation"
+    <div>
+      <div
+        class="css-11l110t"
       >
-        <ul
-          role="list"
+        <nav
+          aria-label="My Account Menu"
+          class="css-1vmpsnr"
+          data-testid="menu-container"
+          role="navigation"
         >
-          <li
-            aria-hidden="true"
-            class="css-1lgifga"
-            role="separator"
+          <ul
+            role="list"
           >
-            <hr
+            <li
               aria-hidden="true"
-              class="css-1udfuyx"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item css-1i1v9fb"
-          >
-            <a
-              class="css-no2l92"
-              data-testid="buttonLink"
-              href="/login"
+              class="css-1lgifga"
+              role="separator"
             >
-              <span
-                class="css-1pur78d"
+              <hr
+                aria-hidden="true"
+                class="css-1udfuyx"
+                data-testid="divider"
+              />
+            </li>
+            <li
+              class="nk-menu-item css-1i1v9fb"
+            >
+              <a
+                class="css-no2l92"
+                data-testid="buttonLink"
+                href="/login"
               >
-                Login
-              </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="css-1lgifga"
-            role="separator"
-          >
-            <hr
+                <span
+                  class="css-1pur78d"
+                >
+                  Login
+                </span>
+              </a>
+            </li>
+            <li
               aria-hidden="true"
-              class="css-1udfuyx"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item css-1i1v9fb"
-          >
-            <a
-              class="css-13qt8e4"
-              data-testid="buttonLink"
-              href="/"
+              class="css-1lgifga"
+              role="separator"
             >
-              <span
-                class="css-1pur78d"
+              <hr
+                aria-hidden="true"
+                class="css-1udfuyx"
+                data-testid="divider"
+              />
+            </li>
+            <li
+              class="nk-menu-item css-1i1v9fb"
+            >
+              <a
+                class="css-13qt8e4"
+                data-testid="buttonLink"
+                href="/"
               >
-                Subscribe
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+                <span
+                  class="css-1pur78d"
+                >
+                  Subscribe
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
   <div
@@ -4429,7 +4433,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -4444,7 +4448,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/uk"
                 >
@@ -4459,7 +4463,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/world"
                 >
@@ -4474,7 +4478,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -4489,7 +4493,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/life-style"
                 >
@@ -4504,7 +4508,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ku3duz"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/culture-books"
                 >
@@ -4519,7 +4523,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/business-money"
                 >
@@ -4534,7 +4538,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -4549,7 +4553,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -4564,7 +4568,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -4580,7 +4584,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
               >
                 <button
                   aria-expanded="false"
-                  class="css-1t3ieu4"
+                  class="css-1q58f62"
                   data-testid="menu-sub-button"
                   type="button"
                 >
@@ -4622,7 +4626,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/home"
                         >
@@ -4637,7 +4641,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/uk"
                         >
@@ -4652,7 +4656,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/world"
                         >
@@ -4667,7 +4671,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -4682,7 +4686,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/life-style"
                         >
@@ -4697,7 +4701,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1serrty"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/culture-books"
                         >
@@ -4712,7 +4716,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/business-money"
                         >
@@ -4727,7 +4731,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -4742,7 +4746,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -4757,7 +4761,7 @@ exports[`GlobalNavWithCustomDrawer matches snapshot when logged out 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/magazines"
                         >
@@ -7423,7 +7427,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -7438,7 +7442,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/uk"
                 >
@@ -7453,7 +7457,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/world"
                 >
@@ -7468,7 +7472,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -7483,7 +7487,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/life-style"
                 >
@@ -7498,7 +7502,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ku3duz"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/culture-books"
                 >
@@ -7513,7 +7517,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/business-money"
                 >
@@ -7528,7 +7532,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -7543,7 +7547,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -7558,7 +7562,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -7574,7 +7578,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
               >
                 <button
                   aria-expanded="false"
-                  class="css-1t3ieu4"
+                  class="css-1q58f62"
                   data-testid="menu-sub-button"
                   type="button"
                 >
@@ -7616,7 +7620,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/home"
                         >
@@ -7631,7 +7635,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/uk"
                         >
@@ -7646,7 +7650,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/world"
                         >
@@ -7661,7 +7665,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -7676,7 +7680,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/life-style"
                         >
@@ -7691,7 +7695,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1serrty"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/culture-books"
                         >
@@ -7706,7 +7710,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/business-money"
                         >
@@ -7721,7 +7725,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -7736,7 +7740,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -7751,7 +7755,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/magazines"
                         >
@@ -7865,194 +7869,196 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
         </a>
       </div>
     </div>
-    <div
-      class="css-11l110t"
-    >
-      <nav
-        aria-label="My Account Menu"
-        class="css-yl1oeq"
-        data-testid="menu-container"
-        role="navigation"
+    <div>
+      <div
+        class="css-11l110t"
       >
-        <ul
-          role="list"
+        <nav
+          aria-label="My Account Menu"
+          class="css-yl1oeq"
+          data-testid="menu-container"
+          role="navigation"
         >
-          <li
-            aria-hidden="true"
-            class="css-1lgifga"
-            role="separator"
+          <ul
+            role="list"
           >
-            <hr
+            <li
               aria-hidden="true"
-              class="css-1udfuyx"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item css-1i1v9fb"
-          >
-            <a
-              class="css-no2l92"
-              data-testid="buttonLink"
-              href="/times-plus"
+              class="css-1lgifga"
+              role="separator"
             >
-              <span
-                class="css-1pur78d"
-              >
-                Times +
-              </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="css-1lgifga"
-            role="separator"
-          >
-            <hr
-              aria-hidden="true"
-              class="css-1udfuyx"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item css-1i1v9fb"
-          >
-            <button
-              aria-expanded="false"
-              class="css-au5zjl"
-              data-testid="menu-sub-button"
-              type="button"
-            >
-              <span
-                class="css-1pur78d"
-              >
-                My Account
-              </span>
-              <svg
+              <hr
                 aria-hidden="true"
-                class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
-                fill="currentColor"
-                focusable="false"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 0h24v24H0z"
-                  fill="none"
-                />
-                <path
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                />
-              </svg>
-            </button>
-            <ul
-              class="css-v7cizm"
+                class="css-1udfuyx"
+                data-testid="divider"
+              />
+            </li>
+            <li
+              class="nk-menu-item css-1i1v9fb"
             >
-              <nav
-                aria-label="My Account menu items"
-                class="css-1e8qhdd"
-                data-testid="menu-container"
-                role="navigation"
+              <a
+                class="css-no2l92"
+                data-testid="buttonLink"
+                href="/times-plus"
               >
-                <ul
-                  role="list"
+                <span
+                  class="css-1pur78d"
                 >
-                  <li
-                    class="nk-menu-item css-1kdinep"
+                  Times +
+                </span>
+              </a>
+            </li>
+            <li
+              aria-hidden="true"
+              class="css-1lgifga"
+              role="separator"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-1udfuyx"
+                data-testid="divider"
+              />
+            </li>
+            <li
+              class="nk-menu-item css-1i1v9fb"
+            >
+              <button
+                aria-expanded="false"
+                class="css-au5zjl"
+                data-testid="menu-sub-button"
+                type="button"
+              >
+                <span
+                  class="css-1pur78d"
+                >
+                  My Account
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
+                  fill="currentColor"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  />
+                </svg>
+              </button>
+              <ul
+                class="css-v7cizm"
+              >
+                <nav
+                  aria-label="My Account menu items"
+                  class="css-1e8qhdd"
+                  data-testid="menu-container"
+                  role="navigation"
+                >
+                  <ul
+                    role="list"
                   >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/account"
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/account"
                       >
-                        Manage account
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="nk-menu-item css-1kdinep"
-                  >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/change-password"
+                        <span
+                          class="css-1pur78d"
+                        >
+                          Manage account
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/change-password"
                       >
-                        Change password
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="nk-menu-item css-1kdinep"
-                  >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/my-newsletters"
+                        <span
+                          class="css-1pur78d"
+                        >
+                          Change password
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/my-newsletters"
                       >
-                        My Newsletters
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="nk-menu-item css-1kdinep"
-                  >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/my-articles"
+                        <span
+                          class="css-1pur78d"
+                        >
+                          My Newsletters
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/my-articles"
                       >
-                        My articles
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="nk-menu-item css-1kdinep"
-                  >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/contact-us"
+                        <span
+                          class="css-1pur78d"
+                        >
+                          My articles
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/contact-us"
                       >
-                        Contact us
-                      </span>
-                    </a>
-                  </li>
-                  <li
-                    class="nk-menu-item css-1kdinep"
-                  >
-                    <a
-                      class="css-4yjxcc"
-                      data-testid="my-account-menu-item"
-                      href="/log-out"
+                        <span
+                          class="css-1pur78d"
+                        >
+                          Contact us
+                        </span>
+                      </a>
+                    </li>
+                    <li
+                      class="nk-menu-item css-1kdinep"
                     >
-                      <span
-                        class="css-1pur78d"
+                      <a
+                        class="css-4yjxcc"
+                        data-testid="my-account-menu-item"
+                        href="/log-out"
                       >
-                        Log out
-                      </span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+                        <span
+                          class="css-1pur78d"
+                        >
+                          Log out
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
   <div
@@ -8082,7 +8088,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -8097,7 +8103,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/uk"
                 >
@@ -8112,7 +8118,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/world"
                 >
@@ -8127,7 +8133,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -8142,7 +8148,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/life-style"
                 >
@@ -8157,7 +8163,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ku3duz"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/culture-books"
                 >
@@ -8172,7 +8178,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/business-money"
                 >
@@ -8187,7 +8193,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -8202,7 +8208,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -8217,7 +8223,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -8233,7 +8239,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
               >
                 <button
                   aria-expanded="false"
-                  class="css-1t3ieu4"
+                  class="css-1q58f62"
                   data-testid="menu-sub-button"
                   type="button"
                 >
@@ -8275,7 +8281,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/home"
                         >
@@ -8290,7 +8296,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/uk"
                         >
@@ -8305,7 +8311,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/world"
                         >
@@ -8320,7 +8326,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -8335,7 +8341,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/life-style"
                         >
@@ -8350,7 +8356,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1serrty"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/culture-books"
                         >
@@ -8365,7 +8371,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/business-money"
                         >
@@ -8380,7 +8386,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -8395,7 +8401,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -8410,7 +8416,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/magazines"
                         >
@@ -8610,7 +8616,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -8625,7 +8631,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/uk"
                 >
@@ -8640,7 +8646,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/world"
                 >
@@ -8655,7 +8661,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -8670,7 +8676,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/life-style"
                 >
@@ -8685,7 +8691,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-ku3duz"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/culture-books"
                 >
@@ -8700,7 +8706,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/business-money"
                 >
@@ -8715,7 +8721,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -8730,7 +8736,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -8745,7 +8751,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1i1v9fb"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -8761,7 +8767,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
               >
                 <button
                   aria-expanded="false"
-                  class="css-1t3ieu4"
+                  class="css-1q58f62"
                   data-testid="menu-sub-button"
                   type="button"
                 >
@@ -8803,7 +8809,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/home"
                         >
@@ -8818,7 +8824,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/uk"
                         >
@@ -8833,7 +8839,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/world"
                         >
@@ -8848,7 +8854,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -8863,7 +8869,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/life-style"
                         >
@@ -8878,7 +8884,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1serrty"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/culture-books"
                         >
@@ -8893,7 +8899,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/business-money"
                         >
@@ -8908,7 +8914,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -8923,7 +8929,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -8938,7 +8944,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/magazines"
                         >
@@ -9052,72 +9058,74 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
         </a>
       </div>
     </div>
-    <div
-      class="css-11l110t"
-    >
-      <nav
-        aria-label="My Account Menu"
-        class="css-1vmpsnr"
-        data-testid="menu-container"
-        role="navigation"
+    <div>
+      <div
+        class="css-11l110t"
       >
-        <ul
-          role="list"
+        <nav
+          aria-label="My Account Menu"
+          class="css-1vmpsnr"
+          data-testid="menu-container"
+          role="navigation"
         >
-          <li
-            aria-hidden="true"
-            class="css-1lgifga"
-            role="separator"
+          <ul
+            role="list"
           >
-            <hr
+            <li
               aria-hidden="true"
-              class="css-1udfuyx"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item css-1i1v9fb"
-          >
-            <a
-              class="css-no2l92"
-              data-testid="buttonLink"
-              href="/login"
+              class="css-1lgifga"
+              role="separator"
             >
-              <span
-                class="css-1pur78d"
+              <hr
+                aria-hidden="true"
+                class="css-1udfuyx"
+                data-testid="divider"
+              />
+            </li>
+            <li
+              class="nk-menu-item css-1i1v9fb"
+            >
+              <a
+                class="css-no2l92"
+                data-testid="buttonLink"
+                href="/login"
               >
-                Login
-              </span>
-            </a>
-          </li>
-          <li
-            aria-hidden="true"
-            class="css-1lgifga"
-            role="separator"
-          >
-            <hr
+                <span
+                  class="css-1pur78d"
+                >
+                  Login
+                </span>
+              </a>
+            </li>
+            <li
               aria-hidden="true"
-              class="css-1udfuyx"
-              data-testid="divider"
-            />
-          </li>
-          <li
-            class="nk-menu-item css-1i1v9fb"
-          >
-            <a
-              class="css-13qt8e4"
-              data-testid="buttonLink"
-              href="/"
+              class="css-1lgifga"
+              role="separator"
             >
-              <span
-                class="css-1pur78d"
+              <hr
+                aria-hidden="true"
+                class="css-1udfuyx"
+                data-testid="divider"
+              />
+            </li>
+            <li
+              class="nk-menu-item css-1i1v9fb"
+            >
+              <a
+                class="css-13qt8e4"
+                data-testid="buttonLink"
+                href="/"
               >
-                Subscribe
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+                <span
+                  class="css-1pur78d"
+                >
+                  Subscribe
+                </span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
   <div
@@ -9182,7 +9190,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -9197,7 +9205,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/uk"
                 >
@@ -9212,7 +9220,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1u9qk1g"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/world"
                 >
@@ -9227,7 +9235,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -9242,7 +9250,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-1xbhn2m"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/life-style"
                 >
@@ -9257,7 +9265,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-ku3duz"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/culture-books"
                 >
@@ -9272,7 +9280,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/business-money"
                 >
@@ -9287,7 +9295,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -9302,7 +9310,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -9317,7 +9325,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-13ut96h"
+                  class="css-1xqhq9w"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -9333,7 +9341,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
               >
                 <button
                   aria-expanded="false"
-                  class="css-1t3ieu4"
+                  class="css-1q58f62"
                   data-testid="menu-sub-button"
                   type="button"
                 >
@@ -9375,7 +9383,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/home"
                         >
@@ -9390,7 +9398,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/uk"
                         >
@@ -9405,7 +9413,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-8dv5le"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/world"
                         >
@@ -9420,7 +9428,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/comment"
                         >
@@ -9435,7 +9443,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-xor33q"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/life-style"
                         >
@@ -9450,7 +9458,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1serrty"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/culture-books"
                         >
@@ -9465,7 +9473,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/business-money"
                         >
@@ -9480,7 +9488,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/sport"
                         >
@@ -9495,7 +9503,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/puzzles"
                         >
@@ -9510,7 +9518,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                         class="nk-menu-item css-1kdinep"
                       >
                         <a
-                          class="css-1wkutqx"
+                          class="css-328py3"
                           data-testid="more-menu-item"
                           href="/magazines"
                         >

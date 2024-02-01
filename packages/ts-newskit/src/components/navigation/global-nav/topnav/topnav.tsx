@@ -3,7 +3,7 @@
 // For updates or modifications, refer to the main repository once the move is complete.
 // In case of emergencies, please reach out to reader-experience team for further assistance.
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Menu, Visible, Divider, Scroll, Stack, LinkInline } from 'newskit';
 import { createAccountMenu, createMenu } from './createMenus';
 import {
@@ -45,6 +45,7 @@ export const TopNav: React.FC<TopNavProps> = ({
   clickHandler
 }) => {
   const [searchActive, setSearchActive] = useState<boolean>(false);
+  const [topNavSpace, setTopNavSpace] = useState(0);
 
   const logoProps = {
     height: 20,
@@ -52,6 +53,21 @@ export const TopNav: React.FC<TopNavProps> = ({
     overrides: { paddingInline: 'space040' },
     'aria-label': 'The Times &amp; The Sunday Times'
   };
+
+  const leftRef = React.createRef<HTMLHRElement>();
+  const rightRef = React.createRef<HTMLDivElement>();
+
+  useEffect(
+    () => {
+      if (leftRef && leftRef.current && rightRef && rightRef.current) {
+        setTopNavSpace(
+          rightRef.current.getBoundingClientRect().left -
+            leftRef.current.getBoundingClientRect().right
+        );
+      }
+    },
+    [leftRef && leftRef.current, rightRef && rightRef.current]
+  );
 
   const NavMasthead = (
     <LinkInline
@@ -117,13 +133,13 @@ export const TopNav: React.FC<TopNavProps> = ({
             </TopNavIcon>
             <Divider vertical />
             {searchActive ? <NavSearch /> : NavMasthead}
-            <Divider vertical />
+            <Divider vertical ref={leftRef} />
             <Visible lg xl>
               <Menu
                 overrides={{ spaceInline: 'space000' }}
                 aria-label="Main menu"
               >
-                {createMenu(mainMenu, clickHandler)}
+                {createMenu(mainMenu, clickHandler, topNavSpace)}
               </Menu>
             </Visible>
           </TopNavHide>
@@ -131,9 +147,11 @@ export const TopNav: React.FC<TopNavProps> = ({
             {NavMasthead}
           </MastheadMob>
         </Stack>
-        <Visible md lg xl>
-          {createAccountMenu(isLoggedIn, accountMenu, clickHandler)}
-        </Visible>
+        <div ref={rightRef}>
+          <Visible md lg xl>
+            {createAccountMenu(isLoggedIn, accountMenu, clickHandler)}
+          </Visible>
+        </div>
       </TopNavContainer>
       <ScrollMenuContainer xs sm>
         {!isLoggedIn && (
@@ -153,7 +171,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               }}
               aria-label="Main menu"
             >
-              {createMenu(mainMenu, clickHandler)}
+              {createMenu(mainMenu, clickHandler, 0)}
             </ScrollMenu>
           </Stack>
         </Scroll>
