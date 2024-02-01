@@ -6,5 +6,8 @@
   "rules": {
     "react-hooks/exhaustive-deps": false,
     "no-fallthrough": 1
+  },
+  "env": {
+    "browser": true
   }
 }
