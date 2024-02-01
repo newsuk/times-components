@@ -42,7 +42,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -56,7 +56,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             />
                             <img
                               alt="1 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -244,7 +244,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -258,7 +258,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             />
                             <img
                               alt="2 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -446,7 +446,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -460,7 +460,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             />
                             <img
                               alt="3 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -648,7 +648,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -662,7 +662,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             />
                             <img
                               alt="4 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -840,7 +840,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -854,7 +854,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             />
                             <img
                               alt="5 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -1014,7 +1014,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -1028,7 +1028,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             />
                             <img
                               alt="6 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -1216,7 +1216,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -1230,7 +1230,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             />
                             <img
                               alt="7 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -1352,7 +1352,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -1366,7 +1366,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             />
                             <img
                               alt="8 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -1540,7 +1540,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -1554,7 +1554,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             />
                             <img
                               alt="9 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -1709,7 +1709,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -1723,7 +1723,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                             />
                             <img
                               alt="10 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -1990,7 +1990,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -2004,7 +2004,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         />
                         <img
                           alt="1 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -2171,7 +2171,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -2185,7 +2185,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         />
                         <img
                           alt="2 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -2352,7 +2352,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -2366,7 +2366,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         />
                         <img
                           alt="3 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -2533,7 +2533,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -2547,7 +2547,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         />
                         <img
                           alt="4 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -2714,7 +2714,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -2728,7 +2728,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         />
                         <img
                           alt="5 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -2852,7 +2852,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -2866,7 +2866,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         />
                         <img
                           alt="6 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -3033,7 +3033,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -3047,7 +3047,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         />
                         <img
                           alt="7 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -3158,7 +3158,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -3172,7 +3172,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         />
                         <img
                           alt="8 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -3325,7 +3325,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -3339,7 +3339,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         />
                         <img
                           alt="9 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -3483,7 +3483,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -3497,7 +3497,7 @@ exports[`Render List View Slice Slice matches snapshot 1`] = `
                         />
                         <img
                           alt="10 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -3667,7 +3667,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -3681,7 +3681,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="1 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -3869,7 +3869,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -3883,7 +3883,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="2 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -4071,7 +4071,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -4085,7 +4085,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="3 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -4273,7 +4273,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -4287,7 +4287,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="4 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -4465,7 +4465,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -4479,7 +4479,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="5 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -4639,7 +4639,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -4653,7 +4653,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="6 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -4841,7 +4841,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -4855,7 +4855,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="7 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -4977,7 +4977,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -4991,7 +4991,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="8 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -5165,7 +5165,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -5179,7 +5179,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="9 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -5334,7 +5334,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -5348,7 +5348,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="10 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -5615,7 +5615,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -5629,7 +5629,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="1 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -5796,7 +5796,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -5810,7 +5810,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="2 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -5977,7 +5977,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -5991,7 +5991,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="3 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -6158,7 +6158,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -6172,7 +6172,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="4 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -6339,7 +6339,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -6353,7 +6353,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="5 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -6477,7 +6477,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -6491,7 +6491,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="6 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -6658,7 +6658,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -6672,7 +6672,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="7 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -6783,7 +6783,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -6797,7 +6797,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="8 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -6950,7 +6950,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -6964,7 +6964,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="9 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -7108,7 +7108,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -7122,7 +7122,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="10 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -7292,7 +7292,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -7306,7 +7306,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="1 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -7494,7 +7494,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -7508,7 +7508,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="2 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -7696,7 +7696,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -7710,7 +7710,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="3 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -7898,7 +7898,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -7912,7 +7912,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="4 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -8090,7 +8090,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -8104,7 +8104,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="5 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -8264,7 +8264,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -8278,7 +8278,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="6 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -8466,7 +8466,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -8480,7 +8480,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="7 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -8602,7 +8602,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -8616,7 +8616,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="8 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -8790,7 +8790,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -8804,7 +8804,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="9 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -8959,7 +8959,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -8973,7 +8973,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="10 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -9240,7 +9240,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -9254,7 +9254,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="1 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -9421,7 +9421,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -9435,7 +9435,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="2 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -9602,7 +9602,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -9616,7 +9616,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="3 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -9783,7 +9783,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -9797,7 +9797,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="4 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -9964,7 +9964,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -9978,7 +9978,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="5 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -10102,7 +10102,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -10116,7 +10116,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="6 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -10283,7 +10283,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -10297,7 +10297,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="7 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -10408,7 +10408,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -10422,7 +10422,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="8 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -10575,7 +10575,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -10589,7 +10589,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="9 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -10733,7 +10733,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -10747,7 +10747,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="10 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -10917,7 +10917,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -10931,7 +10931,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="1 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -11119,7 +11119,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -11133,7 +11133,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="2 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -11321,7 +11321,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -11335,7 +11335,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="3 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -11523,7 +11523,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -11537,7 +11537,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="4 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -11715,7 +11715,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -11729,7 +11729,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="5 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -11889,7 +11889,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -11903,7 +11903,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="6 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -12091,7 +12091,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -12105,7 +12105,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="7 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -12227,7 +12227,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -12241,7 +12241,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="8 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -12415,7 +12415,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -12429,7 +12429,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="9 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -12584,7 +12584,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -12598,7 +12598,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="10 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -12865,7 +12865,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -12879,7 +12879,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="1 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -13046,7 +13046,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -13060,7 +13060,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="2 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -13227,7 +13227,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -13241,7 +13241,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="3 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -13408,7 +13408,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -13422,7 +13422,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="4 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -13589,7 +13589,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -13603,7 +13603,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="5 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -13727,7 +13727,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -13741,7 +13741,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="6 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -13908,7 +13908,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -13922,7 +13922,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="7 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -14033,7 +14033,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -14047,7 +14047,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="8 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -14200,7 +14200,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -14214,7 +14214,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="9 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -14358,7 +14358,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -14372,7 +14372,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="10 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -14542,7 +14542,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -14556,7 +14556,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="1 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -14744,7 +14744,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -14758,7 +14758,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="2 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -14946,7 +14946,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -14960,7 +14960,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="3 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -15148,7 +15148,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -15162,7 +15162,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="4 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -15340,7 +15340,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -15354,7 +15354,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="5 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -15514,7 +15514,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -15528,7 +15528,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="6 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -15716,7 +15716,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -15730,7 +15730,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="7 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -15852,7 +15852,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -15866,7 +15866,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="8 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -16040,7 +16040,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -16054,7 +16054,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="9 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -16209,7 +16209,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                       class="lead-image-container css-fit37q"
                     >
                       <div
-                        class="lead-article-image css-szsib6"
+                        class="lead-article-image lcpItem css-szsib6"
                       >
                         <a
                           class="article-image"
@@ -16223,7 +16223,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                             />
                             <img
                               alt="10 Sarcacens an inclusive club? They didnt look out for me"
-                              class="lcpItem css-1qgqq71"
+                              class="css-1qgqq71"
                               src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                             />
                           </picture>
@@ -16490,7 +16490,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -16504,7 +16504,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="1 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -16671,7 +16671,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -16685,7 +16685,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="2 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -16852,7 +16852,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -16866,7 +16866,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="3 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -17033,7 +17033,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -17047,7 +17047,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="4 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -17214,7 +17214,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -17228,7 +17228,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="5 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -17352,7 +17352,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -17366,7 +17366,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="6 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -17533,7 +17533,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -17547,7 +17547,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="7 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -17658,7 +17658,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -17672,7 +17672,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="8 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -17825,7 +17825,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -17839,7 +17839,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="9 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
@@ -17983,7 +17983,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                   class="lead-image-container css-fit37q"
                 >
                   <div
-                    class="lead-article-image css-szsib6"
+                    class="lead-article-image lcpItem css-szsib6"
                   >
                     <a
                       class="article-image"
@@ -17997,7 +17997,7 @@ exports[`Render List View Slice modifies articles correctly when breakpointKey i
                         />
                         <img
                           alt="10 Sarcacens an inclusive club? They didnt look out for me"
-                          class="lcpItem css-1qgqq71"
+                          class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
                         />
                       </picture>
