@@ -165,7 +165,7 @@ export const LeadArticle = ({
                 getForcedExternalContentRatio(imageWithCorrectRatio, '3:2')
                   .ratio
               }
-              className="lead-article-image"
+              className="lead-article-image lcpItem"
               marginBlockEnd={hasCaptionOrCredits ? 'space020' : 'space000'}
             >
               <a href={url} onClick={onClick} className="article-image">
@@ -181,7 +181,6 @@ export const LeadArticle = ({
                     getForcedExternalContentRatio(imageWithCorrectRatio, '3:2')
                       .ratio
                   }
-                  className="lcpItem"
                   // NOTE: This ensures external content image renders - will be removed once CP side resolved
                   style={{
                     aspectRatio:
