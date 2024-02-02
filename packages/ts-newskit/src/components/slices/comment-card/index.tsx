@@ -97,6 +97,7 @@ export const CommentCard = ({
               }}
               // NOTE: This ensures external content image renders - will be removed once CP side resolved
               style={{
+                objectFit: 'cover',
                 aspectRatio:
                   imageWithCorrectRatio &&
                   getForcedExternalContentRatio(imageWithCorrectRatio, '1:1')
