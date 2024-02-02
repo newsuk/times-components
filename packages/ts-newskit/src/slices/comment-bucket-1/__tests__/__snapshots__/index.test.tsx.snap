@@ -32,6 +32,7 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
                   alt="Martin Samuel"
                   class="css-176aubw"
                   loading="lazy"
+                  style="object-fit: cover;"
                   width="77px"
                 />
               </picture>
@@ -106,6 +107,7 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
                   alt="Martin Samuel"
                   class="css-176aubw"
                   loading="lazy"
+                  style="object-fit: cover;"
                   width="77px"
                 />
               </picture>
@@ -180,6 +182,7 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
                   alt="Martin Samuel"
                   class="css-176aubw"
                   loading="lazy"
+                  style="object-fit: cover;"
                   width="77px"
                 />
               </picture>
