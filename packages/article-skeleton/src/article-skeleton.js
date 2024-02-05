@@ -19,7 +19,7 @@ import {
   PuzzlesWebLightTheme,
   ArticleSidebar
 } from "@times-components/ts-newskit";
-import GET_PUZZLE_SECTIONS from "@times-components/provider-queries/src/polygon-data";
+import GET_PUZZLE_SECTIONS from "@times-components/provider-queries/src/polygon-data.js";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
