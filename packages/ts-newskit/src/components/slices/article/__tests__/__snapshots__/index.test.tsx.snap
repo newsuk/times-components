@@ -18,6 +18,7 @@ exports[`Render Article List Item items should render without margin 1`] = `
             alt="This is ALT Text"
             class="css-ssxt4f"
             loading="lazy"
+            style="object-fit: cover;"
           />
         </picture>
       </a>
@@ -96,6 +97,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
             alt="This is ALT Text"
             class="css-ssxt4f"
             loading="lazy"
+            style="object-fit: cover;"
           />
         </picture>
       </a>

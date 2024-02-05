@@ -45,6 +45,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     alt="Short title of the card describing the main content"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -156,6 +157,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     alt="Short title of the card describing the main content 2"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -281,6 +283,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     alt="Short title of the card describing the main content 3"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -392,6 +395,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     alt="Short title of the card describing the main content 4"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -524,6 +528,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     alt="Short title of the card describing the main content 5"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -635,6 +640,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     alt="Short title of the card describing the main content 6"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -760,6 +766,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     alt="Short title of the card describing the main content 7"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -871,6 +878,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot 1`] = `
                     alt="Short title of the card describing the main content 8"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1012,6 +1020,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     alt="Short title of the card describing the main content"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1123,6 +1132,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     alt="Short title of the card describing the main content 2"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1248,6 +1258,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     alt="Short title of the card describing the main content 3"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1359,6 +1370,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     alt="Short title of the card describing the main content 4"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1491,6 +1503,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     alt="Short title of the card describing the main content 5"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1602,6 +1615,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     alt="Short title of the card describing the main content 6"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1727,6 +1741,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     alt="Short title of the card describing the main content 7"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1838,6 +1853,7 @@ exports[`Render StackModule 1 Slice Slice matches snapshot for \`null\` breakpoi
                     alt="Short title of the card describing the main content 8"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1979,6 +1995,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -2090,6 +2107,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 2"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -2215,6 +2233,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 3"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -2326,6 +2345,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 4"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -2458,6 +2478,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 5"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -2569,6 +2590,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 6"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -2694,6 +2716,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 7"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -2805,6 +2828,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 8"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -2946,6 +2970,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -3057,6 +3082,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 2"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -3182,6 +3208,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 3"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -3293,6 +3320,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 4"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -3425,6 +3453,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 5"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -3536,6 +3565,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 6"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -3661,6 +3691,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 7"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -3772,6 +3803,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 8"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -3913,6 +3945,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -4024,6 +4057,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 2"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -4149,6 +4183,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 3"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -4260,6 +4295,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 4"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -4392,6 +4428,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 5"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -4503,6 +4540,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 6"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -4628,6 +4666,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 7"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -4739,6 +4778,7 @@ exports[`Render StackModule 1 Slice modifies articles correctly when breakpointK
                     alt="Short title of the card describing the main content 8"
                     class="css-ssxt4f"
                     loading="lazy"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>

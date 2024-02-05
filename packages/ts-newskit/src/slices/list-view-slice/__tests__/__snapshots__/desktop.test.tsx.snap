@@ -52,6 +52,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                           alt="1 Sarcacens an inclusive club? They didnt look out for me"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -240,6 +241,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                           alt="2 Sarcacens an inclusive club? They didnt look out for me"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -428,6 +430,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                           alt="3 Sarcacens an inclusive club? They didnt look out for me"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -616,6 +619,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                           alt="4 Sarcacens an inclusive club? They didnt look out for me"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -794,6 +798,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                           alt="5 Sarcacens an inclusive club? They didnt look out for me"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -968,6 +973,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                           alt="6 Sarcacens an inclusive club? They didnt look out for me"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -1156,6 +1162,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                           alt="7 Sarcacens an inclusive club? They didnt look out for me"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -1292,6 +1299,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                           alt="8 Sarcacens an inclusive club? They didnt look out for me"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -1466,6 +1474,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                           alt="9 Sarcacens an inclusive club? They didnt look out for me"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -1621,6 +1630,7 @@ exports[`Render ListViewSliceDesktop matches snapshot 1`] = `
                           alt="10 Sarcacens an inclusive club? They didnt look out for me"
                           class="css-1qgqq71"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>

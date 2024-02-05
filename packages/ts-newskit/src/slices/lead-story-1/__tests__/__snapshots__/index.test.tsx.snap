@@ -34,6 +34,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -457,6 +458,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                         alt="Sarcacens an inclusive club? They didnt look out for me"
                         class="css-1qgqq71"
                         src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                        style="object-fit: cover;"
                       />
                     </picture>
                   </a>
@@ -620,6 +622,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
                           class="css-ssxt4f"
                           loading="lazy"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -715,6 +718,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                           alt="‘American owners pose threat to English pyramid’"
                           class="css-ssxt4f"
                           loading="lazy"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -1005,6 +1009,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -1114,6 +1119,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -1242,6 +1248,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -1328,6 +1335,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -1423,6 +1431,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -1528,6 +1537,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -1642,6 +1652,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -1738,6 +1749,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -1843,6 +1855,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -1962,6 +1975,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -2083,6 +2097,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -2192,6 +2207,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -2320,6 +2336,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -2406,6 +2423,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -2501,6 +2519,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -2606,6 +2625,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -2720,6 +2740,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -2816,6 +2837,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -2921,6 +2943,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -3040,6 +3063,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -3170,6 +3194,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -3279,6 +3304,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -3407,6 +3433,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -3493,6 +3520,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -3588,6 +3616,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -3693,6 +3722,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -3800,6 +3830,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -3909,6 +3940,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -4037,6 +4069,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -4123,6 +4156,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -4218,6 +4252,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -4323,6 +4358,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -4435,6 +4471,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -4530,6 +4567,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -4681,6 +4719,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -4790,6 +4829,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -4918,6 +4958,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -5004,6 +5045,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -5099,6 +5141,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -5204,6 +5247,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -5318,6 +5362,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -5414,6 +5459,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -5519,6 +5565,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -5638,6 +5685,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -5759,6 +5807,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -5868,6 +5917,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -5996,6 +6046,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -6082,6 +6133,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -6177,6 +6229,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -6282,6 +6335,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -6396,6 +6450,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -6492,6 +6547,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -6597,6 +6653,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -6716,6 +6773,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -6846,6 +6904,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -6955,6 +7014,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -7083,6 +7143,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -7169,6 +7230,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -7264,6 +7326,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -7369,6 +7432,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -7476,6 +7540,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -7585,6 +7650,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -7713,6 +7779,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -7799,6 +7866,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -7894,6 +7962,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -7999,6 +8068,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -8111,6 +8181,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -8206,6 +8277,7 @@ exports[`Render Lead Story 1 Slice Slice matches snapshot 1`] = `
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -8340,6 +8412,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -8763,6 +8836,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                         alt="Sarcacens an inclusive club? They didnt look out for me"
                         class="css-1qgqq71"
                         src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                        style="object-fit: cover;"
                       />
                     </picture>
                   </a>
@@ -8926,6 +9000,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
                           class="css-ssxt4f"
                           loading="lazy"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -9021,6 +9096,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                           alt="‘American owners pose threat to English pyramid’"
                           class="css-ssxt4f"
                           loading="lazy"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -9311,6 +9387,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -9420,6 +9497,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -9548,6 +9626,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -9634,6 +9713,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -9729,6 +9809,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -9834,6 +9915,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -9948,6 +10030,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -10044,6 +10127,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -10149,6 +10233,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -10268,6 +10353,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -10389,6 +10475,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -10498,6 +10585,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -10626,6 +10714,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -10712,6 +10801,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -10807,6 +10897,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -10912,6 +11003,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -11026,6 +11118,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -11122,6 +11215,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -11227,6 +11321,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -11346,6 +11441,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -11476,6 +11572,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -11585,6 +11682,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -11713,6 +11811,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -11799,6 +11898,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -11894,6 +11994,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -11999,6 +12100,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -12106,6 +12208,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -12215,6 +12318,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -12343,6 +12447,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -12429,6 +12534,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -12524,6 +12630,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -12629,6 +12736,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -12741,6 +12849,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -12836,6 +12945,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -12987,6 +13097,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -13096,6 +13207,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -13224,6 +13336,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -13310,6 +13423,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -13405,6 +13519,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -13510,6 +13625,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -13624,6 +13740,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -13720,6 +13837,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -13825,6 +13943,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -13944,6 +14063,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -14065,6 +14185,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -14174,6 +14295,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -14302,6 +14424,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -14388,6 +14511,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -14483,6 +14607,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -14588,6 +14713,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -14702,6 +14828,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -14798,6 +14925,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -14903,6 +15031,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -15022,6 +15151,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -15152,6 +15282,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -15261,6 +15392,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -15389,6 +15521,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -15475,6 +15608,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -15570,6 +15704,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -15675,6 +15810,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -15782,6 +15918,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -15891,6 +16028,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -16019,6 +16157,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -16105,6 +16244,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -16200,6 +16340,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -16305,6 +16446,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -16417,6 +16559,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -16512,6 +16655,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when \`articlesWi
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -16646,6 +16790,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -17069,6 +17214,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         alt="Sarcacens an inclusive club? They didnt look out for me"
                         class="css-1qgqq71"
                         src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                        style="object-fit: cover;"
                       />
                     </picture>
                   </a>
@@ -17232,6 +17378,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
                           class="css-ssxt4f"
                           loading="lazy"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -17327,6 +17474,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           alt="‘American owners pose threat to English pyramid’"
                           class="css-ssxt4f"
                           loading="lazy"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -17617,6 +17765,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -17726,6 +17875,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -17854,6 +18004,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -17940,6 +18091,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -18035,6 +18187,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -18140,6 +18293,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -18254,6 +18408,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -18350,6 +18505,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -18455,6 +18611,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -18574,6 +18731,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -18695,6 +18853,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -18804,6 +18963,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -18932,6 +19092,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -19018,6 +19179,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -19113,6 +19275,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -19218,6 +19381,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -19332,6 +19496,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -19428,6 +19593,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -19533,6 +19699,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -19652,6 +19819,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -19782,6 +19950,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -19891,6 +20060,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -20019,6 +20189,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -20105,6 +20276,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -20200,6 +20372,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -20305,6 +20478,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -20412,6 +20586,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -20521,6 +20696,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -20649,6 +20825,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -20735,6 +20912,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -20830,6 +21008,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -20935,6 +21114,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -21047,6 +21227,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -21142,6 +21323,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -21293,6 +21475,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -21402,6 +21585,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -21530,6 +21714,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -21616,6 +21801,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -21711,6 +21897,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -21816,6 +22003,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -21930,6 +22118,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -22026,6 +22215,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -22131,6 +22321,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -22250,6 +22441,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -22371,6 +22563,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -22480,6 +22673,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -22608,6 +22802,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -22694,6 +22889,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -22789,6 +22985,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -22894,6 +23091,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -23008,6 +23206,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -23104,6 +23303,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -23209,6 +23409,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -23328,6 +23529,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -23458,6 +23660,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -23567,6 +23770,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -23695,6 +23899,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -23781,6 +23986,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -23876,6 +24082,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -23981,6 +24188,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -24088,6 +24296,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -24197,6 +24406,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -24325,6 +24535,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -24411,6 +24622,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -24506,6 +24718,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -24611,6 +24824,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -24723,6 +24937,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -24818,6 +25033,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -24952,6 +25168,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -25375,6 +25592,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         alt="Sarcacens an inclusive club? They didnt look out for me"
                         class="css-1qgqq71"
                         src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                        style="object-fit: cover;"
                       />
                     </picture>
                   </a>
@@ -25538,6 +25756,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
                           class="css-ssxt4f"
                           loading="lazy"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -25633,6 +25852,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           alt="‘American owners pose threat to English pyramid’"
                           class="css-ssxt4f"
                           loading="lazy"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -25923,6 +26143,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -26032,6 +26253,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -26160,6 +26382,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -26246,6 +26469,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -26341,6 +26565,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -26446,6 +26671,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -26560,6 +26786,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -26656,6 +26883,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -26761,6 +26989,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -26880,6 +27109,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -27001,6 +27231,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -27110,6 +27341,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -27238,6 +27470,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -27324,6 +27557,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -27419,6 +27653,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -27524,6 +27759,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -27638,6 +27874,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -27734,6 +27971,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -27839,6 +28077,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -27958,6 +28197,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -28088,6 +28328,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -28197,6 +28438,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -28325,6 +28567,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -28411,6 +28654,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -28506,6 +28750,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -28611,6 +28856,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -28718,6 +28964,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -28827,6 +29074,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -28955,6 +29203,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -29041,6 +29290,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -29136,6 +29386,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -29241,6 +29492,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -29353,6 +29605,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -29448,6 +29701,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -29599,6 +29853,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -29708,6 +29963,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -29836,6 +30092,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -29922,6 +30179,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -30017,6 +30275,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -30122,6 +30381,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -30236,6 +30496,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -30332,6 +30593,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -30437,6 +30699,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -30556,6 +30819,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -30677,6 +30941,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -30786,6 +31051,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -30914,6 +31180,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -31000,6 +31267,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -31095,6 +31363,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -31200,6 +31469,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -31314,6 +31584,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -31410,6 +31681,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -31515,6 +31787,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -31634,6 +31907,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -31764,6 +32038,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -31873,6 +32148,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -32001,6 +32277,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -32087,6 +32364,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -32182,6 +32460,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -32287,6 +32566,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -32394,6 +32674,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -32503,6 +32784,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -32631,6 +32913,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -32717,6 +33000,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -32812,6 +33096,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -32917,6 +33202,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -33029,6 +33315,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -33124,6 +33411,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -33258,6 +33546,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                     alt="Short title of the card describing the main content"
                     class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -33681,6 +33970,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                         alt="Sarcacens an inclusive club? They didnt look out for me"
                         class="css-1qgqq71"
                         src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                        style="object-fit: cover;"
                       />
                     </picture>
                   </a>
@@ -33844,6 +34134,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia 2"
                           class="css-ssxt4f"
                           loading="lazy"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -33939,6 +34230,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                           alt="‘American owners pose threat to English pyramid’"
                           class="css-ssxt4f"
                           loading="lazy"
+                          style="object-fit: cover;"
                         />
                       </picture>
                     </a>
@@ -34229,6 +34521,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -34338,6 +34631,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -34466,6 +34760,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -34552,6 +34847,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -34647,6 +34943,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -34752,6 +35049,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -34866,6 +35164,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -34962,6 +35261,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -35067,6 +35367,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -35186,6 +35487,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -35307,6 +35609,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -35416,6 +35719,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -35544,6 +35848,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -35630,6 +35935,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -35725,6 +36031,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -35830,6 +36137,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -35944,6 +36252,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -36040,6 +36349,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -36145,6 +36455,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -36264,6 +36575,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -36394,6 +36706,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -36503,6 +36816,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -36631,6 +36945,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -36717,6 +37032,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -36812,6 +37128,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -36917,6 +37234,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -37024,6 +37342,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -37133,6 +37452,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -37261,6 +37581,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -37347,6 +37668,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -37442,6 +37764,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -37547,6 +37870,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -37659,6 +37983,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -37754,6 +38079,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -37905,6 +38231,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -38014,6 +38341,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -38142,6 +38470,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -38228,6 +38557,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -38323,6 +38653,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -38428,6 +38759,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -38542,6 +38874,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -38638,6 +38971,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -38743,6 +39077,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -38862,6 +39197,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -38983,6 +39319,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -39092,6 +39429,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -39220,6 +39558,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -39306,6 +39645,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -39401,6 +39741,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -39506,6 +39847,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -39620,6 +39962,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -39716,6 +40059,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -39821,6 +40165,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -39940,6 +40285,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -40070,6 +40416,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -40179,6 +40526,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -40307,6 +40655,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -40393,6 +40742,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="American owners pose threat to English pyramid 2"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -40488,6 +40838,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -40593,6 +40944,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                                 alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                                 class="css-ssxt4f"
                                 loading="lazy"
+                                style="object-fit: cover;"
                               />
                             </picture>
                           </a>
@@ -40700,6 +41052,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -40809,6 +41162,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="European cup winner Mihajlovic dies aged 53 after battle with leukaemia"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -40937,6 +41291,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -41023,6 +41378,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="American owners pose threat to English pyramid 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -41118,6 +41474,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -41223,6 +41580,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -41335,6 +41693,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
@@ -41430,6 +41789,7 @@ exports[`Render Lead Story 1 Slice modifies articles correctly when breakpointKe
                             alt="Blow for rebel clubs as court says Uefa can block Super League 2"
                             class="css-ssxt4f"
                             loading="lazy"
+                            style="object-fit: cover;"
                           />
                         </picture>
                       </a>
