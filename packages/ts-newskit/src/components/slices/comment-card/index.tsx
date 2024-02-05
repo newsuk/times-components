@@ -29,7 +29,8 @@ export interface CommentCardProps {
 export const CommentCard = ({
   article,
   clickHandler,
-  isCommentBucket1
+  isCommentBucket1,
+  isCommentLead1
 }: {
   article: CommentCardProps;
   clickHandler: ClickHandlerType;
