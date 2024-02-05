@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.166.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.166.1...@times-components/ts-newskit@1.166.2) (2024-02-05)
+
+
+### Bug Fixes
+
+* **TNLBT-1219:** slightly narrowed images on channel pages ([#3755](https://github.com/newsuk/times-components/issues/3755)) ([dcc4897](https://github.com/newsuk/times-components/commit/dcc4897639ee8d6ada027b15a7d8915cf91bd82c))
+
+
+
+
+
 ## [1.166.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.166.0...@times-components/ts-newskit@1.166.1) (2024-02-01)
 
 
