@@ -19,7 +19,7 @@ import {
   PuzzlesWebLightTheme,
   ArticleSidebar
 } from "@times-components/ts-newskit";
-import GetPuzzleSections from "@times-components/provider-queries/src/polygon_data.graphql";
+import GET_PUZZLE_SECTIONS from "@times-components/provider-queries/src/polygon-data";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -214,7 +214,7 @@ const ArticleSkeleton = ({
       const response = await fetch("https://api.thetimes.co.uk/graphql", {
         method: "POST",
         body: JSON.stringify({
-          query: GetPuzzleSections
+          query: GET_PUZZLE_SECTIONS
         })
       });
 
