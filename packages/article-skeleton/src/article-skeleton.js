@@ -224,26 +224,28 @@ const ArticleSkeleton = ({
 
       const data = await response.json();
 
-      const puzzleSectionsData = data?.data?.editions?.list
-        .map(edition => {
-          const puzzleSection = edition.sections.find(
-            sec => sec.__typename === "PuzzleSection"
-          );
-
-          return puzzleSection
-            ? {
-                ...puzzleSection,
-                slices: puzzleSection.slices.map(slice => ({
-                  ...slice,
-                  section: {
-                    title: puzzleSection.title,
-                    id: puzzleSection.id
-                  }
-                }))
-              }
-            : null;
-        })
-        .filter(Boolean);
+      const puzzleSectionsData =
+        data && data.data && data.data.editions && data.data.editions.list
+          ? data.data.editions.list
+              .map(edition => {
+                const puzzleSection = edition.sections.find(
+                  sec => sec && sec.__typename === "PuzzleSection"
+                );
+                return puzzleSection
+                  ? {
+                      ...puzzleSection,
+                      slices: puzzleSection.slices.map(slice => ({
+                        ...slice,
+                        section: {
+                          title: puzzleSection.title,
+                          id: puzzleSection.id
+                        }
+                      }))
+                    }
+                  : null;
+              })
+              .filter(Boolean)
+          : [];
 
       const filteredPuzzleSlices = puzzleSectionsData.flatMap(sec =>
         sec.slices
