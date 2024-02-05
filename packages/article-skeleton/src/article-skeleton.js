@@ -1,4 +1,4 @@
-import React, { Fragment, useRef, useEffect } from "react";
+import React, { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { CanShowPuzzleSidebar } from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
@@ -19,6 +19,7 @@ import {
   PuzzlesWebLightTheme,
   ArticleSidebar
 } from "@times-components/ts-newskit";
+import GetPuzzleSections from "@times-components/provider-queries/src/polygon_data.graphql";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -197,6 +198,82 @@ const ArticleSkeleton = ({
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
 
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+  const [polygonUrl, setPolygonUrl] = useState([]);
+
+  const generatePuzzleUrl = slice => {
+    const base = "/puzzles/word-puzzles";
+
+    if (slice.shortIdentifier) {
+      return `${base}/${slice.slug}-${slice.shortIdentifier}`;
+    }
+    return base;
+  };
+
+  const fetchPolygonData = async () => {
+    try {
+      const response = await fetch("https://api.thetimes.co.uk/graphql", {
+        method: "POST",
+        body: JSON.stringify({
+          query: GetPuzzleSections
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`Network response was not ok: ${response.status}`);
+      }
+
+      const data = await response.json();
+
+      const puzzleSectionsData = data?.data?.editions?.list
+        .map(edition => {
+          const puzzleSection = edition.sections.find(
+            sec => sec.__typename === "PuzzleSection"
+          );
+
+          return puzzleSection
+            ? {
+                ...puzzleSection,
+                slices: puzzleSection.slices.map(slice => ({
+                  ...slice,
+                  section: {
+                    title: puzzleSection.title,
+                    id: puzzleSection.id
+                  }
+                }))
+              }
+            : null;
+        })
+        .filter(Boolean);
+
+      const filteredPuzzleSlices = puzzleSectionsData.flatMap(sec =>
+        sec.slices
+          .filter(
+            slice => slice.__typename === "Puzzle" && slice.type === "polygon"
+          )
+          .map(({ slug, shortIdentifier }) => ({
+            slug,
+            shortIdentifier
+          }))
+      );
+
+      const polygonData = filteredPuzzleSlices.map(puzzle =>
+        generatePuzzleUrl(puzzle)
+      );
+      setPolygonUrl(polygonData[0]);
+    } catch (error) {
+      // Handle error fetching puzzle data: log to console
+      // console.error("Error fetching puzzle data:", error);
+    }
+  };
+
+  useEffect(
+    () => {
+      if (CanShowPuzzleSidebar(section)) {
+        fetchPolygonData();
+      }
+    },
+    [CanShowPuzzleSidebar, section]
+  );
 
   return (
     <StickyProvider>
@@ -326,8 +403,7 @@ const ArticleSkeleton = ({
                           },
                           {
                             title: "Polygon",
-                            url:
-                              "https://www.thetimes.co.uk/puzzles/word-puzzles",
+                            url: polygonUrl,
                             imgUrl:
                               "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F04934dfb-0e8f-4f00-872d-c796fed01ba3.png?crop=1250%2C833%2C0%2C0&resize=500"
                           },
