@@ -1,5 +1,5 @@
 import { getResponsiveNavData } from '../getResponsiveNavData';
-import { mainMenuItems } from '../../components/navigation/global-nav/fixtures/data.json';
+import { mainMenuItems } from '../../components/navigation/secondary-menu/fixtures/data.json';
 
 const RESULT_ONE = {
   charWidth: 1160,
