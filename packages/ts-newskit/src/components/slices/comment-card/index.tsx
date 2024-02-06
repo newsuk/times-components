@@ -140,7 +140,7 @@ export const CommentCard = ({
           {headline}
         </CardHeadlineLink>
         <Block marginBlockStart="space010">
-          {flag && (
+          {!isCommentLead1 && flag ? (
             <TagAndFlag
               flag={flag}
               flagOverrides={{
@@ -148,7 +148,7 @@ export const CommentCard = ({
                 stylePreset: 'inkSubtle'
               }}
             />
-          )}
+          ) : null}
         </Block>
       </CardContent>
     </CardComposable>

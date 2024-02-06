@@ -22,6 +22,7 @@ const getRatio = (ratioString: string) => {
 export const CardHeadlineLink = styled(CardLink)<{
   $color?: string;
   isCommentBucket1?: boolean;
+  isCommentLead1?: boolean;
 }>`
   ${({ $color }) => getColorCssFromTheme('color', $color || 'inkContrast')};
   cursor: pointer;
@@ -39,6 +40,10 @@ export const CardHeadlineLink = styled(CardLink)<{
 
   ${getMediaQueryFromTheme('md', 'lg')} {
     ${({ isCommentBucket1 }) => isCommentBucket1 && 'text-align: center'};
+  }
+
+  ${getMediaQueryFromTheme()} {
+    ${({ isCommentLead1 }) => isCommentLead1 && 'text-align: center'};
   }
 `;
 

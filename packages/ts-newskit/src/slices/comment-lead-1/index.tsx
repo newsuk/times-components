@@ -19,6 +19,7 @@ import {
 } from '../../components/slices/lead-article';
 import { ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
+import { CommentArticle } from '../../components/slices/comment-article';
 
 export interface CommentLeadProps {
   clickHandler: ClickHandlerType;
@@ -79,7 +80,7 @@ export const CommentLead1 = ({
             md: '260px'
           }}
         >
-          <CommentCard
+          <CommentArticle
             key={modifiedCommentArticle.headline}
             article={modifiedCommentArticle}
             clickHandler={clickHandler}
@@ -136,22 +137,20 @@ export const CommentLead1 = ({
             </Visible>
           </Block>
         </StackItem>
-        {/* RIGHT SIDE comment */}
+        {/* RIGHT SIDE article */}
         {groupedArticles && (
           <>
-            {/*         <FullWidthBlock
+            <FullWidthBlock
               paddingInline={{
                 xs: 'space045',
                 md: 'space000'
               }}
             >
-              <Divider
-                overrides={{
-                  stylePreset: 'dashedDivider'
-                }}
+              <GroupedArticle
+                {...groupedArticles}
+                clickHandler={clickHandler}
               />
-            </FullWidthBlock> */}
-            <GroupedArticle {...groupedArticles} clickHandler={clickHandler} />
+            </FullWidthBlock>
           </>
         )}
       </LeadStoryContainer>
