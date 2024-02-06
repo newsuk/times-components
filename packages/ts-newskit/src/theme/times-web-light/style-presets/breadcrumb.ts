@@ -12,8 +12,9 @@ export const breadcrumbStylePresets = {
       color: '{{colors.inkContrast}}'
     },
     'selected:hover': {
-      color: '{{colors.inkContrast}}',
-      textDecoration: 'none'
+      color: '{{colors.blue070}}',
+      textDecoration: 'none',
+      cursor: 'pointer'
     }
   },
   breadcrumbSeparator: {
