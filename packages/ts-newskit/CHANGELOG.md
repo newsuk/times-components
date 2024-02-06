@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.167.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.166.2...@times-components/ts-newskit@1.167.0) (2024-02-06)
+
+
+### Features
+
+* **TMRX-1902:** update active breadcrumb styling ([#3757](https://github.com/newsuk/times-components/issues/3757)) ([31c1fc1](https://github.com/newsuk/times-components/commit/31c1fc13717e5066b8e947a6d869506d5dbabcd7))
+
+
+
+
+
 ## [1.166.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.166.1...@times-components/ts-newskit@1.166.2) (2024-02-05)
 
 

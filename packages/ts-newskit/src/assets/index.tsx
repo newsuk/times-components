@@ -3,11 +3,7 @@ import { customToNewsKitIcon, styled } from 'newskit';
 import EastArrow from './EastArrow';
 import SeeAllLeft from './SeeAllLeft';
 import SeeAllRight from './SeeAllRight';
-import SearchIcon from './SearchIcon';
-import BurgerIcon from './BurgerIcon';
-import RoundedPlusIcon from './RoundedPlusIcon';
 import CloseIcon from './CloseIcon';
-import ChevronIcon from './ChevronIcon';
 import TimesMasthead from './TimesMasthead';
 import SundayTimesMasthead from './SundayTimesMasthead';
 import HeroBannerBackground from './HeroBannerBackground';
@@ -35,38 +31,14 @@ import IconSubscribe3 from './IconSubscribe3';
 import IconSubscribeB from './IconSubscribeB';
 import IconSubscribeQuestion from './IconSubscribeQuestion';
 import PhoneIcon from './phone';
-import ChevronRightCircleIcon from './ChervronRightCircleIcon';
-
-const RoundedCloseIcon = styled(RoundedPlusIcon)`
-  transform: rotate(45deg);
-`;
 
 const FilledArrowIconDown = styled(FilledArrowIcon)`
   transform: rotate(180deg);
 `;
 
-export const NewsKitSearchIcon = customToNewsKitIcon(
-  'NewskitSearchIcon',
-  props => <SearchIcon {...props} />
-);
-
-export const NewsKitBurgerIcon = customToNewsKitIcon('NewsKitBurger', props => (
-  <BurgerIcon {...props} />
-));
-
-export const NewsKitRoundedCloseIcon = customToNewsKitIcon(
-  'NewsKitRoundedCloseIcon',
-  props => <RoundedCloseIcon {...props} />
-);
-
 export const NewsKitCloseIcon = customToNewsKitIcon(
   'NewsKitCloseIcon',
   props => <CloseIcon {...props} />
-);
-
-export const NewsKitChevronIcon = customToNewsKitIcon(
-  'NewsKitChevronIcon',
-  props => <ChevronIcon {...props} />
 );
 
 export const NewsKitTimesMasthead = customToNewsKitIcon(
@@ -82,11 +54,6 @@ export const NewsKitSundayTimesMasthead = customToNewsKitIcon(
 export const NewsKitChevronRightIcon = customToNewsKitIcon(
   'NewsKitChevronRightIcon',
   props => <ChevronRightIcon {...props} />
-);
-
-export const NewsKitChevronRightCircleIcon = customToNewsKitIcon(
-  'NewsKitChevronRightCircleIcon',
-  props => <ChevronRightCircleIcon {...props} />
 );
 
 export const NewsKitArticlePlaceholder = customToNewsKitIcon(
