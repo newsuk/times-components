@@ -5,7 +5,10 @@ import {
   TextBlock,
   Pagination,
   PaginationButton,
-  getSpacingCssFromTheme
+  getSpacingCssFromTheme,
+  getColorCssFromTheme,
+  getSizingCssFromTheme,
+  MQ
 } from 'newskit';
 
 export const StyledBlock = styled(Block)`
@@ -96,4 +99,24 @@ export const StyledPaginationButton = styled(PaginationButton)`
   &[aria-current='page'] {
     background-color: #e4e4e4;
   }
+`;
+
+export const LoadingBlock = styled(Block)<{
+  height: string | MQ<string>;
+  width?: string;
+}>`
+  ${getColorCssFromTheme('background-color', 'neutral010')};
+  ${({ width }) => width && `width: ${width || '100%'};`} ${({ width }) =>
+    !width && getMediaQueryFromTheme('md')} {
+    width: 407px;
+  }
+  ${({ width }) => !width && getMediaQueryFromTheme('lg')} {
+    width: 331px;
+  }
+  ${({ width }) => !width && getMediaQueryFromTheme('xl')} {
+    width: 470px;
+  }
+
+  ${({ height }) =>
+    getSizingCssFromTheme((size: string) => ({ height: `${size}` }), height)};
 `;

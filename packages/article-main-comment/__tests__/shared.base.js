@@ -87,6 +87,23 @@ export const snapshotTests = renderComponent => [
 
       expect(testRenderer).toMatchSnapshot();
     }
+  },
+  {
+    name: "an article with puzzle sidebar",
+    test() {
+      const testRenderer = renderComponent(
+        <ArticleMainComment
+          {...sharedProps}
+          article={articleFixture({
+            ...testFixture,
+            ...emptyArticle,
+            section: "Times2"
+          })}
+        />
+      );
+
+      expect(testRenderer).toMatchSnapshot();
+    }
   }
 ];
 

@@ -39,7 +39,7 @@ describe('Render Lead Story 1 Slice', () => {
     const articleContainer = screen.queryAllByTestId('article-container')[1];
     const articleItem4 = articleContainer.lastElementChild!
       .previousElementSibling;
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(5);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(4);
   });
 
   test("articleTopBorder renders correctly below 'lg' breakpoint", () => {
@@ -52,7 +52,7 @@ describe('Render Lead Story 1 Slice', () => {
     articleItem1 &&
       expect(
         articleItem1.querySelectorAll('[data-testid=divider]').length
-      ).toBe(4);
+      ).toBe(3);
   });
 
   test("articleTopBorder renders correctly at 'lg' breakpoint", () => {
@@ -62,7 +62,7 @@ describe('Render Lead Story 1 Slice', () => {
     );
     const articleContainer = screen.queryAllByTestId('article-container')[1];
     const articleItem4 = articleContainer.lastElementChild;
-    expect(articleItem4!.getElementsByTagName('hr').length).toBe(5);
+    expect(articleItem4!.getElementsByTagName('hr').length).toBe(4);
   });
   test('renders article container with correct data-testid', () => {
     renderComponent(

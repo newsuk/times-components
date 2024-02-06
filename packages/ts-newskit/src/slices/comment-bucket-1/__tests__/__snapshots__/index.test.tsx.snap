@@ -32,6 +32,7 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
                   alt="Martin Samuel"
                   class="css-176aubw"
                   loading="lazy"
+                  style="object-fit: cover;"
                   width="77px"
                 />
               </picture>
@@ -81,15 +82,6 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
                 >
                   3 mins ago
                 </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -115,6 +107,7 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
                   alt="Martin Samuel"
                   class="css-176aubw"
                   loading="lazy"
+                  style="object-fit: cover;"
                   width="77px"
                 />
               </picture>
@@ -164,15 +157,6 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
                 >
                   3 mins ago
                 </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -198,6 +182,7 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
                   alt="Martin Samuel"
                   class="css-176aubw"
                   loading="lazy"
+                  style="object-fit: cover;"
                   width="77px"
                 />
               </picture>
@@ -247,15 +232,6 @@ exports[`Render Comment Bucket 1 Slice Slice matches snapshot 1`] = `
                 >
                   21 mins ago
                 </span>
-                <div
-                  class="css-p44zak"
-                >
-                  <hr
-                    aria-hidden="true"
-                    class="css-15kf7hd"
-                    data-testid="divider"
-                  />
-                </div>
               </div>
             </div>
           </div>

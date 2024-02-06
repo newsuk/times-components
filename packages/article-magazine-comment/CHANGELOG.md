@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.75.10](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.75.9...@times-components/article-magazine-comment@3.75.10) (2024-02-05)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.75.9](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.75.8...@times-components/article-magazine-comment@3.75.9) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.75.8](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.75.7...@times-components/article-magazine-comment@3.75.8) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.75.7](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.75.6...@times-components/article-magazine-comment@3.75.7) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
 ## [3.75.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.75.5...@times-components/article-magazine-comment@3.75.6) (2024-01-30)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

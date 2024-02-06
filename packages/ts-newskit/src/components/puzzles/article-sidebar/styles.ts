@@ -6,4 +6,7 @@ export const StyledCardComposable = styled(CardComposable)`
       ${getColorCssFromTheme('backgroundColor', 'interface040')};
     }
   }
+  h3 {
+    color: inherit;
+  }
 `;

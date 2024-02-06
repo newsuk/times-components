@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.121.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.121.1...@times-components/article-skeleton@1.121.2) (2024-02-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.121.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.121.0...@times-components/article-skeleton@1.121.1) (2024-02-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.121.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.120.4...@times-components/article-skeleton@1.121.0) (2024-02-01)
+
+
+### Features
+
+* **TMPZ-244:** Add puzzle sidebar component to article sidebar ([#3667](https://github.com/newsuk/times-components/issues/3667)) ([cb19d9b](https://github.com/newsuk/times-components/commit/cb19d9be6755dd885882e42d69b45e28a38e533c)), closes [#3668](https://github.com/newsuk/times-components/issues/3668)
+
+
+
+
+
+## [1.120.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.120.3...@times-components/article-skeleton@1.120.4) (2024-01-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.120.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.120.2...@times-components/article-skeleton@1.120.3) (2024-01-30)
 
 **Note:** Version bump only for package @times-components/article-skeleton

@@ -18,6 +18,7 @@ exports[`should render component to match snapshot 1`] = `
             alt="Journalist name"
             class="css-176aubw"
             loading="lazy"
+            style="object-fit: cover;"
             width="77px"
           />
         </picture>

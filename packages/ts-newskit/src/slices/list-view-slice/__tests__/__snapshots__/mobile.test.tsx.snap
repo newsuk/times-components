@@ -23,7 +23,7 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             class="lead-image-container css-fit37q"
           >
             <div
-              class="lead-article-image css-szsib6"
+              class="lead-article-image lcpItem css-szsib6"
             >
               <a
                 class="article-image"
@@ -37,8 +37,9 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   />
                   <img
                     alt="1 Sarcacens an inclusive club? They didnt look out for me"
-                    class="lcpItem css-1qgqq71"
+                    class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -148,11 +149,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Times
-              </span>
               <div
                 class="css-p44zak"
               >
@@ -162,6 +158,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
+              <span
+                class="css-1selp7x"
+              >
+                The Times
+              </span>
             </div>
           </div>
         </div>
@@ -190,7 +191,7 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             class="lead-image-container css-fit37q"
           >
             <div
-              class="lead-article-image css-szsib6"
+              class="lead-article-image lcpItem css-szsib6"
             >
               <a
                 class="article-image"
@@ -204,8 +205,9 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   />
                   <img
                     alt="2 Sarcacens an inclusive club? They didnt look out for me"
-                    class="lcpItem css-1qgqq71"
+                    class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -315,11 +317,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Times
-              </span>
               <div
                 class="css-p44zak"
               >
@@ -329,6 +326,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
+              <span
+                class="css-1selp7x"
+              >
+                The Times
+              </span>
             </div>
           </div>
         </div>
@@ -357,7 +359,7 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             class="lead-image-container css-fit37q"
           >
             <div
-              class="lead-article-image css-szsib6"
+              class="lead-article-image lcpItem css-szsib6"
             >
               <a
                 class="article-image"
@@ -371,8 +373,9 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   />
                   <img
                     alt="3 Sarcacens an inclusive club? They didnt look out for me"
-                    class="lcpItem css-1qgqq71"
+                    class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -482,11 +485,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Sunday Times
-              </span>
               <div
                 class="css-p44zak"
               >
@@ -496,6 +494,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
+              <span
+                class="css-1selp7x"
+              >
+                The Sunday Times
+              </span>
             </div>
           </div>
         </div>
@@ -524,7 +527,7 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             class="lead-image-container css-fit37q"
           >
             <div
-              class="lead-article-image css-szsib6"
+              class="lead-article-image lcpItem css-szsib6"
             >
               <a
                 class="article-image"
@@ -538,8 +541,9 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   />
                   <img
                     alt="4 Sarcacens an inclusive club? They didnt look out for me"
-                    class="lcpItem css-1qgqq71"
+                    class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -649,11 +653,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Times
-              </span>
               <div
                 class="css-p44zak"
               >
@@ -663,6 +662,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
+              <span
+                class="css-1selp7x"
+              >
+                The Times
+              </span>
             </div>
           </div>
         </div>
@@ -691,7 +695,7 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             class="lead-image-container css-fit37q"
           >
             <div
-              class="lead-article-image css-szsib6"
+              class="lead-article-image lcpItem css-szsib6"
             >
               <a
                 class="article-image"
@@ -705,8 +709,9 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   />
                   <img
                     alt="5 Sarcacens an inclusive club? They didnt look out for me"
-                    class="lcpItem css-1qgqq71"
+                    class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -793,43 +798,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
               class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
-              <a
-                class="css-18s7xts"
-                href="/"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-qx2986"
-                  >
-                    Review
-                  </span>
-                </span>
-              </a>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
               <span
                 class="css-1selp7x"
               >
                 The Sunday Times
               </span>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -861,7 +834,7 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             class="lead-image-container css-fit37q"
           >
             <div
-              class="lead-article-image css-szsib6"
+              class="lead-article-image lcpItem css-szsib6"
             >
               <a
                 class="article-image"
@@ -875,8 +848,9 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   />
                   <img
                     alt="6 Sarcacens an inclusive club? They didnt look out for me"
-                    class="lcpItem css-1qgqq71"
+                    class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -986,11 +960,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Times
-              </span>
               <div
                 class="css-p44zak"
               >
@@ -1000,6 +969,11 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
+              <span
+                class="css-1selp7x"
+              >
+                The Times
+              </span>
             </div>
           </div>
         </div>
@@ -1028,7 +1002,7 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             class="lead-image-container css-fit37q"
           >
             <div
-              class="lead-article-image css-szsib6"
+              class="lead-article-image lcpItem css-szsib6"
             >
               <a
                 class="article-image"
@@ -1042,8 +1016,9 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   />
                   <img
                     alt="7 Sarcacens an inclusive club? They didnt look out for me"
-                    class="lcpItem css-1qgqq71"
+                    class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1126,48 +1101,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                 </p>
               </span>
             </a>
-            <div
-              class="css-1kfs2jd"
-              data-testid="tag-and-flag"
-            >
-              <a
-                class="css-18s7xts"
-                href="/"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-qx2986"
-                  >
-                    Review
-                  </span>
-                </span>
-              </a>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Sunday Times
-              </span>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -1195,7 +1128,7 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             class="lead-image-container css-fit37q"
           >
             <div
-              class="lead-article-image css-szsib6"
+              class="lead-article-image lcpItem css-szsib6"
             >
               <a
                 class="article-image"
@@ -1209,8 +1142,9 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   />
                   <img
                     alt="8 Sarcacens an inclusive club? They didnt look out for me"
-                    class="lcpItem css-1qgqq71"
+                    class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1320,20 +1254,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   data-testid="divider"
                 />
               </div>
-              <span
-                class="css-1selp7x"
-              >
-                The Times
-              </span>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -1362,7 +1282,7 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             class="lead-image-container css-fit37q"
           >
             <div
-              class="lead-article-image css-szsib6"
+              class="lead-article-image lcpItem css-szsib6"
             >
               <a
                 class="article-image"
@@ -1376,8 +1296,9 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   />
                   <img
                     alt="9 Sarcacens an inclusive club? They didnt look out for me"
-                    class="lcpItem css-1qgqq71"
+                    class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1464,20 +1385,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
               class="css-1kfs2jd"
               data-testid="tag-and-flag"
             >
-              <a
-                class="css-18s7xts"
-                href="/"
-              >
-                <span
-                  class="css-17x5lw"
-                >
-                  <span
-                    class="css-qx2986"
-                  >
-                    Review
-                  </span>
-                </span>
-              </a>
               <div
                 class="css-p44zak"
               >
@@ -1492,15 +1399,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
               >
                 The Times
               </span>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -1529,7 +1427,7 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             class="lead-image-container css-fit37q"
           >
             <div
-              class="lead-article-image css-szsib6"
+              class="lead-article-image lcpItem css-szsib6"
             >
               <a
                 class="article-image"
@@ -1543,8 +1441,9 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
                   />
                   <img
                     alt="10 Sarcacens an inclusive club? They didnt look out for me"
-                    class="lcpItem css-1qgqq71"
+                    class="css-1qgqq71"
                     src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173&resize=750"
+                    style="object-fit: cover;"
                   />
                 </picture>
               </a>
@@ -1659,15 +1558,6 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
               >
                 The Times
               </span>
-              <div
-                class="css-p44zak"
-              >
-                <hr
-                  aria-hidden="true"
-                  class="css-15kf7hd"
-                  data-testid="divider"
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -1686,6 +1576,370 @@ exports[`Render ListViewSliceMobile matches snapshot 1`] = `
             Load more
           </span>
         </a>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Render ListViewSliceMobile matches snapshot when isLoading is TRUE 1`] = `
+<DocumentFragment>
+  <div
+    style="max-width: 768px;"
+  >
+    <div
+      class="css-6buzpa"
+    >
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
+      </div>
+      <div
+        class="css-h18yzn"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-3x9ze4"
+          data-testid="divider"
+        />
+      </div>
+      <div
+        class="css-13byt3y"
+      >
+        <div
+          class="css-1w6w1lq"
+          height="sizing020"
+          width="109px"
+        />
+        <div
+          class="css-pppxyn"
+          height="sizing020"
+          width="185px"
+        />
+        <div
+          class="css-1m4zw7"
+          height="sizing050"
+        />
+        <div
+          class="css-dgmwv1"
+          height="sizing080"
+        />
+        <div
+          class="css-1syew1d"
+          height="sizing020"
+          width="110px"
+        />
       </div>
     </div>
   </div>
