@@ -12,7 +12,6 @@ import {
   CommentCardProps
 } from '../../components/slices/comment-card';
 import { CustomBlockLayout } from '../shared';
-import { GroupedArticle } from '../../components/slices/shared/grouped-article';
 import {
   LeadArticle,
   LeadArticleProps
@@ -20,28 +19,24 @@ import {
 import { ArticleProps } from '../../components/slices/article';
 import { FullWidthBlock } from '../../components/slices/shared-styles';
 import { CommentArticle } from '../../components/slices/comment-article';
+import { ArticleBucket } from './article-bucket';
 
 export interface CommentLeadProps {
   clickHandler: ClickHandlerType;
   data: CommentCardProps[];
   leadArticle: LeadArticleProps;
-  articles: ArticleProps[];
+  articles: ArticleProps;
   leadArticles: LeadArticleProps[];
-  groupedArticles: {
-    articles: LeadArticleProps[];
-  };
 }
 
 export const CommentLead1 = ({
   data,
-  clickHandler,
-  leadArticle,
   articles,
-  groupedArticles
+  clickHandler,
+  leadArticle
 }: CommentLeadProps) => {
   const modifiedLeadArticle = {
     ...leadArticle,
-    headline: undefined,
     headlineTypographyPreset: undefined,
     imageTop: true,
     isLeadImage: true,
@@ -54,20 +49,14 @@ export const CommentLead1 = ({
     expirableFlags: undefined,
     caption: undefined
   };
+  const modifiedArticleBucket = {
+    ...articles
+  };
   const modifiedCommentArticle = {
     ...data[0],
     flag: undefined,
     tag: undefined
   };
-
-  /*   const marginTop = singleArticle
-  ? 'space040'
-  : !!articlesWithListItems.listData
-    ? 'space020'
-    : 'space040';
- */
-
-  console.log(modifiedLeadArticle);
 
   return (
     //Lead Article
@@ -138,21 +127,10 @@ export const CommentLead1 = ({
           </Block>
         </StackItem>
         {/* RIGHT SIDE article */}
-        {groupedArticles && (
-          <>
-            <FullWidthBlock
-              paddingInline={{
-                xs: 'space045',
-                md: 'space000'
-              }}
-            >
-              <GroupedArticle
-                {...groupedArticles}
-                clickHandler={clickHandler}
-              />
-            </FullWidthBlock>
-          </>
-        )}
+        <ArticleBucket
+          articles={modifiedArticleBucket}
+          clickHandler={clickHandler}
+        />
       </LeadStoryContainer>
 
       {/* Comment Slice */}

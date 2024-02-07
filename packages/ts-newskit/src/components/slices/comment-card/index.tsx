@@ -22,6 +22,7 @@ export interface CommentCardProps {
   images?: ImageProps;
   byline: string;
   headline: string;
+  subHeadline: string;
   url: string;
   flag?: string;
 }
