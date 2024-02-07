@@ -10,8 +10,6 @@ export { TimesWebLightTravelTheme } from './theme/times-web-light-travel';
 // NAVIGATION
 export { Breadcrumb } from './components/navigation/breadcrumb';
 export { EditionMasthead } from './components/navigation/masthead';
-export { SectionHeader } from './components/navigation/section-header';
-export { SecondaryNavigation } from './components/navigation/secondary-menu';
 
 // PUZZLES
 export { Archive } from './components/puzzles/archive';
@@ -62,6 +60,5 @@ export { JobTitle } from './components/misc/job-title/job-title';
 export {
   UpdateButtonWithDelay
 } from './components/misc/update-button/update-button-with-delay';
-export { ColouredText } from './components/coloured-text';
 
 // TODO Remove after tests - borisovy
