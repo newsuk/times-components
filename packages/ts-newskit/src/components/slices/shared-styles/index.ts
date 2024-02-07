@@ -12,6 +12,7 @@ import {
   GridLayoutItem
 } from 'newskit';
 import TheTimesLight from '@newskit-themes/the-times/TheTimes-light.json';
+import { StackItem } from '../../../slices/shared-styles';
 
 const getRatio = (ratioString: string) => {
   const [ratioWidth, ratioHeight] = ratioString.split(':');
@@ -42,6 +43,14 @@ export const CardHeadlineLink = styled(CardLink)<{
     ${({ isCommentBucket1 }) => isCommentBucket1 && 'text-align: center'};
   }
 
+  ${getMediaQueryFromTheme()} {
+    ${({ isCommentLead1 }) => isCommentLead1 && 'text-align: center'};
+  }
+`;
+
+export const StyledStackItem = styled(StackItem)<{
+  isCommentLead1?: boolean;
+}>`
   ${getMediaQueryFromTheme()} {
     ${({ isCommentLead1 }) => isCommentLead1 && 'text-align: center'};
   }

@@ -241,7 +241,8 @@ export const Article = ({
           href={url}
           role="link"
           overrides={{
-            typographyPreset: titleTypographyPreset
+            typographyPreset: titleTypographyPreset,
+            marginInline: 'auto'
           }}
           external={false}
           onClick={onClick}

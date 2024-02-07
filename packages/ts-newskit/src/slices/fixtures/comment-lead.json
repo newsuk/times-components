@@ -1,0 +1,314 @@
+{
+  "singleArticle": {
+    "hasVideo": false,
+    "contentType": "",
+    "label": "",
+    "expirableFlags": [],
+    "images": {
+      "alt": "",
+      "credits": "Gareth Fuller/Press Association",
+      "caption": "Sarcacens an inclusive club? They didnt look out for me",
+      "crops": [
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3844%2C2563%2C188%2C173",
+          "ratio": "3:2"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+          "ratio": "16:9"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+          "ratio": "1:1"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+          "ratio": "2:3"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+          "ratio": "4:5"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+          "ratio": "5:4"
+        }
+      ]
+    },
+    "headline": "Short title of the card describing the main content 2",
+    "shortSummary": "As China and Russia forge a closer alliance, the western democracies must make a greater effort to convince the global south of the rightness of their values",
+    "id": "19123456789",
+    "url": "#",
+    "tag": {
+      "label": "",
+      "href": ""
+    },
+    "flag": ""
+  },
+  "groupedArticles": {
+    "articles": [
+      {
+        "hasVideo": false,
+        "label": "",
+        "expirableFlags": [],
+        "images": {
+          "alt": "",
+          "credits": "Gareth Fuller/Press Association",
+          "caption": "Sarcacens an inclusive club? They didnt look out for me",
+          "crops": [
+            {
+              "url": "/assets/small_04.jpg",
+              "ratio": "3:2"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+              "ratio": "16:9"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+              "ratio": "1:1"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+              "ratio": "2:3"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+              "ratio": "4:5"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+              "ratio": "5:4"
+            }
+          ]
+        },
+        "headline": "Short title of the card describing the main content 3",
+        "id": "191234567890",
+        "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
+        "url": "#",
+        "tag": {
+          "label": "",
+          "href": ""
+        },
+        "flag": "",
+        "listData": []
+      },
+      {
+        "hasVideo": false,
+        "contentType": "",
+        "label": "",
+        "expirableFlags": [],
+        "images": {
+          "alt": "",
+          "credits": "Gareth Fuller/Press Association",
+          "caption": "Sarcacens an inclusive club? They didnt look out for me",
+          "crops": [
+            {
+              "url": "/assets/small_04.jpg",
+              "ratio": "3:2"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+              "ratio": "16:9"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+              "ratio": "1:1"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+              "ratio": "2:3"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+              "ratio": "4:5"
+            },
+            {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+              "ratio": "5:4"
+            }
+          ]
+        },
+        "headline": "Short title of the card describing the main content 4",
+        "id": "1912345678901",
+        "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
+        "url": "#",
+        "tag": {
+          "label": "",
+          "href": ""
+        },
+        "flag": "",
+        "listData": []
+      }
+    ]
+  },
+  "leadArticle": {
+    "hasVideo": false,
+    "contentType": "Profile",
+    "label": "",
+    "expirableFlags": [
+      {
+        "type": "Exclusive",
+        "expiryTime": null
+      }
+    ],
+    "images": {
+      "alt": "",
+      "credits": "Gareth Fuller/Press Association",
+      "caption": "Sarcacens an inclusive club? They didnt look out for me",
+      "crops": [
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7c246bf4-fa83-11ed-9be0-622d8a105167.jpg?crop=1200%2C1500%2C0%2C0&resize=747",
+          "ratio": "3:2"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+          "ratio": "16:9"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173",
+          "ratio": "1:1"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+          "ratio": "2:3"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+          "ratio": "4:5"
+        },
+        {
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+          "ratio": "5:4"
+        }
+      ]
+    },
+    "headline": "Short title of the card describing the main content",
+    "id": "21234567892",
+    "shortSummary": "160 C. count, turn down United’s bid for Mason Mount while Brentford have a club-record offer of £30 million for Brennan Johnson rejected turn down United’s bid",
+    "url": "https://www.thetimes.co.uk",
+    "tag": {
+      "label": "Tag",
+      "href": "/"
+    },
+    "flag": "4 min read 1",
+    "listData": []
+  },
+  "data": [
+    {
+      "byline": "Martin Samuel",
+      "headline": "Why unblinking Levy is the Pavlov's cat of football",
+      "subHeadline": "The best politicians tackle issues of national importance but today’s selection process is diminishing the talent pool",
+      "id": "6789",
+      "flag": "3 mins ago",
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F77aa4ba4-c9d9-4226-9e8c-c38134dc305a.png?crop=1000%2C1000%2C250%2C0",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F77aa4ba4-c9d9-4226-9e8c-c38134dc305a.png?crop=1000%2C1000%2C250%2C0",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
+      },
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+    },
+    {
+      "byline": "Martin Samuel",
+      "headline": "Why unblinking Levy is the Pavlov's cat of football",
+      "id": "6789",
+      "flag": "3 mins ago",
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F77aa4ba4-c9d9-4226-9e8c-c38134dc305a.png?crop=1000%2C1000%2C250%2C0",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F77aa4ba4-c9d9-4226-9e8c-c38134dc305a.png?crop=1000%2C1000%2C250%2C0",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
+      },
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+    },
+    {
+      "byline": "Martin Samuel",
+      "headline": "Why unblinking Levy is the Pavlov's cat of football",
+      "id": "789",
+      "flag": "21 mins ago",
+      "images": {
+        "alt": "",
+        "credits": "Gareth Fuller/Press Association",
+        "caption": "Sarcacens an inclusive club? They didnt look out for me",
+        "crops": [
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F77aa4ba4-c9d9-4226-9e8c-c38134dc305a.png?crop=1000%2C1000%2C250%2C0",
+            "ratio": "3:2"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2497%2C1405%2C1041%2C169",
+            "ratio": "16:9"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F77aa4ba4-c9d9-4226-9e8c-c38134dc305a.png?crop=1000%2C1000%2C250%2C0",
+            "ratio": "1:1"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=1708%2C2563%2C1256%2C173",
+            "ratio": "2:3"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2050%2C2563%2C1085%2C173",
+            "ratio": "4:5"
+          },
+          {
+            "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=3203%2C2563%2C508%2C173",
+            "ratio": "5:4"
+          }
+        ]
+      },
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fbde50bea-247f-11ee-8c1b-d5d52b458fbd.jpg?crop=2563%2C2563%2C828%2C173"
+    }
+  ]
+}

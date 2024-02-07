@@ -59,6 +59,7 @@ export interface LeadArticleProps {
   tagAndFlagMarginBlockStart?: MQ<string> | string;
   listData?: ListData[];
   hideImage?: boolean;
+  isCommentLead1?: boolean;
 }
 
 export const LeadArticle = ({
@@ -82,6 +83,7 @@ export const LeadArticle = ({
     tag,
     byline,
     imageTop,
+    isCommentLead1,
     hasTopBorder = true,
     contentTop,
     isListView,
@@ -240,6 +242,7 @@ export const LeadArticle = ({
           }}
           external={false}
           onClick={onClick}
+          style={isCommentLead1 ? { marginInline: 'auto' } : undefined}
         >
           {headline}
         </CardHeadlineLink>

@@ -1,9 +1,9 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
 import { GridOverlay, TCThemeProvider, TimesWebThemes } from '../../utils/index.tsx';
-import { leadArticle, articles, leadArticles } from '../fixtures/lead-story3.json';
-import { articleStackOne, articleStackTwo, articleStackThree, articleStackFour } from '../fixtures/data.json';
+import { articles } from '../fixtures/lead-story3.json';
+import { groupedArticles, singleArticle, data, leadArticle } from '../fixtures/comment-lead.json';
 import { CommentLead1 } from "./";
-import { data } from '../fixtures/data.json';
+
 import { action } from '@storybook/addon-actions';
 
 <Meta
@@ -30,7 +30,7 @@ export const CommentLead1Story = ({ data, articles, leadArticle, clickHandler, a
   <TCThemeProvider theme={theme}>
     <>
       <GridOverlay show={gridOverlay} />
-      <CommentLead1 {...{ data, articles, leadArticle, clickHandler, articleBucket }} />
+      <CommentLead1 {...{ data, articles, leadArticle, clickHandler, groupedArticles, singleArticle }} />
     </>
   </TCThemeProvider>
 );
@@ -44,6 +44,8 @@ CommentLead1Story.args = {
     data,
     articles,
     leadArticle,
+    groupedArticles,
+    singleArticle,
     clickHandler: action("ClickHandler"),
     expirableFlags: [
         {

@@ -112,7 +112,9 @@ export const CommentArticle = ({
               overrides={{ typographyPreset: 'editorialHeadline010' }}
               external={false}
               onClick={onClick}
-              isCommentLead1={isCommentLead1}
+              style={{
+                marginInline: 'auto'
+              }}
             >
               {byline}
             </CardHeadlineLink>
@@ -123,6 +125,9 @@ export const CommentArticle = ({
               external={false}
               onClick={onClick}
               tabIndex={0}
+              style={{
+                marginInline: 'auto'
+              }}
               isCommentLead1={isCommentLead1}
             >
               {headline}
