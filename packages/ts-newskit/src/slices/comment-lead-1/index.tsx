@@ -22,7 +22,9 @@ import {
   StyledStackItem
 } from '../../components/slices/shared-styles';
 import { CommentArticle } from '../../components/slices/comment-article';
-import { GroupedArticle } from '../../components/slices/shared/grouped-article';
+import { GroupedBottomArticle } from './bottom-stack-group';
+import { TopArticle } from './top-stack';
+import { CommentStackArray } from '../../components/slices/comment-stack-array';
 
 export interface CommentLeadProps {
   clickHandler: ClickHandlerType;
@@ -61,7 +63,6 @@ export const CommentLead1 = ({
     flag: undefined,
     tag: undefined
   };
-
   const modifiedGroupArticles = groupedArticles.articles.map(article => ({
     ...article
   }));
@@ -149,7 +150,7 @@ export const CommentLead1 = ({
           </StackItem>
           {/* RIGHT SIDE article */}
           <StyledStackItem isCommentLead1>
-            <Article
+            <TopArticle
               article={modifiedSingleArticle}
               clickHandler={clickHandler}
             />
@@ -166,11 +167,15 @@ export const CommentLead1 = ({
                 }}
               />
             </FullWidthBlock>
-            <GroupedArticle {...groupedArticles} clickHandler={clickHandler} />
+            <GroupedBottomArticle
+              {...groupedArticles}
+              clickHandler={clickHandler}
+            />
           </StyledStackItem>
         </LeadStoryContainer>
 
         {/* Comment Slice */}
+        {/* <CommentStackArray data={data} clickHandler={clickHandler} /> */}
         <Divider
           overrides={{
             marginBlockEnd: 'space040',
@@ -180,7 +185,8 @@ export const CommentLead1 = ({
         <GridLayout
           columns={{
             xs: '1fr',
-            md: '1fr 1px 1fr 1px 1fr'
+            md: '1fr 1px 1fr 1px 1fr',
+            lg: '1fr 1px 1fr 1px 1fr 1px'
           }}
           columnGap="space040"
         >

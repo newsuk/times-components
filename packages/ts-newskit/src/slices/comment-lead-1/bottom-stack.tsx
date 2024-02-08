@@ -12,21 +12,21 @@ import {
   CardHeadlineLink,
   StyledSpan,
   FullWidthGridLayoutItem
-} from '../shared-styles';
-import { TagAndFlag } from '../shared/tag-and-flag';
-import { UnorderedListItems } from './unorderedList';
+} from '../../components/slices/shared-styles';
+import { TagAndFlag } from '../../components/slices/shared/tag-and-flag';
+import { UnorderedListItems } from './unordered-list';
 import {
   ClickHandlerType,
   MouseEventType,
   ImageProps,
   ListData,
   expirableFlagsProps
-} from '../../../slices/types';
-import { articleClickTracking } from '../../../utils/tracking';
-import { ArticleTileInfo } from '../shared/articleTileInfo';
-import { getForcedExternalContentRatio } from '../../../utils';
+} from '../types';
+import { articleClickTracking } from '../../utils/tracking';
+import { ArticleTileInfo } from '../../components/slices/shared/articleTileInfo';
+import { getForcedExternalContentRatio } from '../../utils';
 
-export interface LeadArticleProps {
+export interface BottomStackProps {
   id: string;
   headline: string;
   flag?: string;
@@ -61,12 +61,12 @@ export interface LeadArticleProps {
   hideImage?: boolean;
 }
 
-export const LeadArticle = ({
+export const BottomArticleStack = ({
   article,
   clickHandler,
   className
 }: {
-  article: LeadArticleProps;
+  article: BottomStackProps;
   clickHandler: ClickHandlerType;
   className?: string;
 }) => {
@@ -139,12 +139,12 @@ export const LeadArticle = ({
       areas={{
         xs: displayArticleVertical
           ? `media
-             content`
+               content`
           : `content 
-             media`,
+               media`,
         md: displayArticleVertical
           ? `media 
-             content`
+               content`
           : `content media`
       }}
       columnGap={columnGap || 'space040'}
@@ -236,7 +236,8 @@ export const LeadArticle = ({
         <CardHeadlineLink
           href={url}
           overrides={{
-            typographyPreset: headlineTypography
+            typographyPreset: headlineTypography,
+            marginInline: 'auto'
           }}
           external={false}
           onClick={onClick}
