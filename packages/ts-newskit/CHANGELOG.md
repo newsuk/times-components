@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.168.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.167.0...@times-components/ts-newskit@1.168.0) (2024-02-07)
+
+
+### Features
+
+* **TMRX-1869:** add note to secondary nav files which being moved to render ([#3758](https://github.com/newsuk/times-components/issues/3758)) ([7066f14](https://github.com/newsuk/times-components/commit/7066f1490d04e8025e290822a8eac668bdbe706c))
+
+
+
+
+
 # [1.167.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.166.2...@times-components/ts-newskit@1.167.0) (2024-02-06)
 
 
