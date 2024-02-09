@@ -1,4 +1,4 @@
-import React, { Fragment, useRef, useEffect } from "react";
+import React, { Fragment, useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { CanShowPuzzleSidebar } from "@times-components/utils";
 import { AdContainer } from "@times-components/ad";
@@ -19,6 +19,7 @@ import {
   PuzzlesWebLightTheme,
   ArticleSidebar
 } from "@times-components/ts-newskit";
+import fetchPolygonData from "./article-sidebar";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -197,6 +198,21 @@ const ArticleSkeleton = ({
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
 
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+  const [polygonUrl, setPolygonUrl] = useState([]);
+
+  const fetchPolygon = async () => {
+    const polygon = await fetchPolygonData();
+    setPolygonUrl(polygon);
+  };
+
+  useEffect(
+    () => {
+      if (CanShowPuzzleSidebar(section)) {
+        fetchPolygon();
+      }
+    },
+    [CanShowPuzzleSidebar, section]
+  );
 
   return (
     <StickyProvider>
@@ -326,8 +342,7 @@ const ArticleSkeleton = ({
                           },
                           {
                             title: "Polygon",
-                            url:
-                              "https://www.thetimes.co.uk/puzzles/word-puzzles",
+                            url: polygonUrl,
                             imgUrl:
                               "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F04934dfb-0e8f-4f00-872d-c796fed01ba3.png?crop=1250%2C833%2C0%2C0&resize=500"
                           },

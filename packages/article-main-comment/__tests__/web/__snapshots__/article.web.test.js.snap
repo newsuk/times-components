@@ -809,9 +809,7 @@ exports[`5. an article with puzzle sidebar 1`] = `
                   />
                 </picture>
               </div>
-              <a
-                href="https://www.thetimes.co.uk/puzzles/word-puzzles"
-              >
+              <a>
                 <span />
               </a>
               <div>
