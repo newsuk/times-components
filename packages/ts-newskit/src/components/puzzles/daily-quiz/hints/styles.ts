@@ -7,6 +7,7 @@ export const StyledTextBlock = styled(TextBlock)`
 export const HintContainerBlock = styled(Block)`
   display: flex;
   flex-wrap: wrap-reverse;
+  background-color: #feeedc;
 
   & > div {
     width: 100%;
