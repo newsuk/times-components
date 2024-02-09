@@ -18,9 +18,9 @@ export const HintDisplay: FC<HintDisplayProps> = ({ hints, totalHints }) => {
             <StyledTextBlock
               key={`info_${index}`}
               as="h4"
-              typographyPreset="utilityHeading010"
+              typographyPreset="utilitySubheading010"
               stylePreset="inkBase"
-              marginBlockStart="space050"
+              marginBlockStart="space040"
             >
               {`Hint ${index + 1} of ${hintstotal}`}
             </StyledTextBlock>
@@ -30,7 +30,7 @@ export const HintDisplay: FC<HintDisplayProps> = ({ hints, totalHints }) => {
               data-testid="hint"
               typographyPreset="utilityMeta010"
               stylePreset="inkBase"
-              marginBlock="space030"
+              marginBlock="space040"
             >
               {hint.text}
             </StyledTextBlock>
