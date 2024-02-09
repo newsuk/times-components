@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.85.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.84.5...@times-components/article-main-standard@3.85.0) (2024-02-09)
+
+
+### Features
+
+* **TMPZ-321:** Update puzzle sidebar component so that polygon links to the latest polygon puzzle instead of the word puzzles cateogory page ([#3756](https://github.com/newsuk/times-components/issues/3756)) ([cde3b44](https://github.com/newsuk/times-components/commit/cde3b44af598ee195c551819415b0c1262ffbefa))
+
+
+
+
+
+## [3.84.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.84.4...@times-components/article-main-standard@3.84.5) (2024-02-08)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.84.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.84.3...@times-components/article-main-standard@3.84.4) (2024-02-07)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [3.84.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.84.2...@times-components/article-main-standard@3.84.3) (2024-02-06)
 
 **Note:** Version bump only for package @times-components/article-main-standard
