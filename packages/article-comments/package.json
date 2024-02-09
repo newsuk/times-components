@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-comments",
-  "version": "0.41.17",
+  "version": "0.41.18",
   "description": "Article Comments",
   "main": "dist/article-comments",
   "dev": "src/article-comments",
@@ -35,7 +35,7 @@
   "dependencies": {
     "@times-components/link": "3.17.11",
     "@times-components/tracking": "2.22.11",
-    "@times-components/ts-components": "1.81.24",
+    "@times-components/ts-components": "1.81.25",
     "@times-components/ts-styleguide": "1.50.11",
     "@times-components/user-state": "0.5.28",
     "prop-types": "15.7.2",
