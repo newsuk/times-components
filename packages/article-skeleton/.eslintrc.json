@@ -5,7 +5,8 @@
   },
   "rules": {
     "react-hooks/exhaustive-deps": false,
-    "no-fallthrough": 1
+    "no-fallthrough": 1,
+    "no-underscore-dangle": 0
   },
   "env": {
     "browser": true

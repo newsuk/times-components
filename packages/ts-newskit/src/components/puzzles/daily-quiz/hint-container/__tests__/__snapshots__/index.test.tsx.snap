@@ -14,7 +14,7 @@ exports[`HintContainer should render the HintContainer component 1`] = `
     </p>
   </button>
   <div
-    class="css-164jxml"
+    class="css-lcuzyc"
   />
 </DocumentFragment>
 `;
