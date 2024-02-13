@@ -255,6 +255,7 @@ export const BottomArticleStack = ({
                 xs: 'editorialParagraph020',
                 md: 'editorialParagraph010'
               }}
+              style={{ textAlign: 'center' }}
               marginBlockStart={textBlockMarginBlockStart}
               as="p"
             >

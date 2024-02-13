@@ -253,6 +253,7 @@ export const TopArticle = ({
           shortSummary && (
             <CardHeadlineLink href={url} external={false} onClick={onClick}>
               <TextBlock
+                style={{ textAlign: 'center' }}
                 stylePreset={{
                   xs: 'inkSubtle',
                   md: 'inkBase'

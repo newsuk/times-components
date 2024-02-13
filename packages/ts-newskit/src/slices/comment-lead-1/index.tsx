@@ -1,22 +1,18 @@
 import React from 'react';
 import { ClickHandlerType } from '../types';
-import { Block, Divider, GridLayout, Hidden, Visible } from 'newskit';
+import { Block, Divider, Hidden, Visible } from 'newskit';
 import {
-  AvatarDivider,
   LeadStoryContainer,
   LeadStoryDivider,
   StackItem
 } from '../shared-styles';
-import {
-  CommentCard,
-  CommentCardProps
-} from '../../components/slices/comment-card';
+import { CommentCardProps } from '../../components/slices/comment-card';
 import { CustomBlockLayout } from '../shared';
 import {
   LeadArticle,
   LeadArticleProps
 } from '../../components/slices/lead-article';
-import { Article, ArticleProps } from '../../components/slices/article';
+import { ArticleProps } from '../../components/slices/article';
 import {
   FullWidthBlock,
   StyledStackItem
@@ -24,7 +20,7 @@ import {
 import { CommentArticle } from '../../components/slices/comment-article';
 import { GroupedBottomArticle } from './bottom-stack-group';
 import { TopArticle } from './top-stack';
-import { CommentStackArray } from '../../components/slices/comment-stack-array';
+import { CommentBucket1 } from '../comment-bucket-1';
 
 export interface CommentLeadProps {
   clickHandler: ClickHandlerType;
@@ -63,9 +59,6 @@ export const CommentLead1 = ({
     flag: undefined,
     tag: undefined
   };
-  const modifiedGroupArticles = groupedArticles.articles.map(article => ({
-    ...article
-  }));
 
   const modifiedSingleArticle = {
     ...singleArticle,
@@ -82,38 +75,115 @@ export const CommentLead1 = ({
   return (
     //Lead Article
     <>
-      <CustomBlockLayout>
-        <LeadStoryContainer className="comment-lead-1-container">
-          {/* LEFT SIDE Comment */}
-          <StackItem
-            $width={{
-              xs: '100%',
-              md: '260px'
-            }}
-          >
-            <CommentArticle
-              key={modifiedCommentArticle.headline}
-              article={modifiedCommentArticle}
-              clickHandler={clickHandler}
-              isCommentLead1
-            />
-          </StackItem>
-          <StackItem
-            $width={{
-              xs: '100%',
-              md: '428px',
-              lg: '465px',
-              xl: '550px'
-            }}
-            marginInlineStart={{
-              md: 'space060'
-            }}
-            marginInlineEnd={{
-              lg: 'space060'
-            }}
-          >
-            <Hidden md lg xl>
+      <Visible lg xl>
+        <CustomBlockLayout>
+          <LeadStoryContainer className="comment-lead-1-container">
+            {/* LEFT SIDE Comment */}
+            <StackItem
+              $width={{
+                xs: '100%',
+                md: '260px'
+              }}
+            >
+              <CommentArticle
+                key={modifiedCommentArticle.headline}
+                article={modifiedCommentArticle}
+                clickHandler={clickHandler}
+                isCommentLead1
+              />
+            </StackItem>
+            <StackItem
+              $width={{
+                xs: '100%',
+                md: '428px',
+                lg: '465px',
+                xl: '550px'
+              }}
+              marginInlineStart={{
+                md: 'space060'
+              }}
+              marginInlineEnd={{
+                lg: 'space060'
+              }}
+            >
+              <Hidden md lg xl>
+                <FullWidthBlock
+                  paddingInline={{
+                    xs: 'space045',
+                    md: 'space000'
+                  }}
+                >
+                  <Divider
+                    overrides={{
+                      stylePreset: 'dashedDivider',
+                      marginBlockEnd: 'space040'
+                    }}
+                  />
+                </FullWidthBlock>
+              </Hidden>
+              <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
+                <LeadStoryDivider
+                  overrides={{ stylePreset: 'lightDivider' }}
+                  vertical
+                  position="right"
+                />
+                <LeadArticle
+                  article={modifiedLeadArticle}
+                  clickHandler={clickHandler}
+                />
+                <Visible md lg xl>
+                  <LeadStoryDivider
+                    overrides={{
+                      stylePreset: 'lightDivider'
+                    }}
+                    vertical
+                    position="left"
+                  />
+                </Visible>
+              </Block>
+            </StackItem>
+            {/* RIGHT SIDE article */}
+            <Hidden lg>
+              <StyledStackItem isCommentLead1>
+                <TopArticle
+                  article={modifiedSingleArticle}
+                  clickHandler={clickHandler}
+                />
+                <FullWidthBlock
+                  marginBlock="space040"
+                  paddingInline={{
+                    xs: 'space045',
+                    md: 'space000'
+                  }}
+                >
+                  <Divider
+                    overrides={{
+                      stylePreset: 'dashedDivider'
+                    }}
+                  />
+                </FullWidthBlock>
+                <GroupedBottomArticle
+                  {...groupedArticles}
+                  clickHandler={clickHandler}
+                />
+              </StyledStackItem>
+            </Hidden>
+          </LeadStoryContainer>
+
+          {/* Comment Slice */}
+          <CommentBucket1
+            data={data}
+            clickHandler={clickHandler}
+            isCommentLead1
+          />
+          <Visible lg>
+            <StyledStackItem isCommentLead1>
+              <TopArticle
+                article={modifiedSingleArticle}
+                clickHandler={clickHandler}
+              />
               <FullWidthBlock
+                marginBlock="space040"
                 paddingInline={{
                   xs: 'space045',
                   md: 'space000'
@@ -121,101 +191,118 @@ export const CommentLead1 = ({
               >
                 <Divider
                   overrides={{
-                    stylePreset: 'dashedDivider',
-                    marginBlockEnd: 'space040'
+                    stylePreset: 'dashedDivider'
                   }}
                 />
               </FullWidthBlock>
-            </Hidden>
-            <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
-              <LeadStoryDivider
-                overrides={{ stylePreset: 'lightDivider' }}
-                vertical
-                position="right"
-              />
-              <LeadArticle
-                article={modifiedLeadArticle}
+              <GroupedBottomArticle
+                {...groupedArticles}
                 clickHandler={clickHandler}
               />
-              <Visible md lg xl>
-                <LeadStoryDivider
-                  overrides={{
-                    stylePreset: 'lightDivider'
-                  }}
-                  vertical
-                  position="left"
-                />
-              </Visible>
-            </Block>
-          </StackItem>
-          {/* RIGHT SIDE article */}
-          <StyledStackItem isCommentLead1>
-            <TopArticle
-              article={modifiedSingleArticle}
-              clickHandler={clickHandler}
-            />
-            <FullWidthBlock
-              marginBlock="space040"
-              paddingInline={{
-                xs: 'space045',
-                md: 'space000'
+            </StyledStackItem>
+          </Visible>
+        </CustomBlockLayout>
+      </Visible>
+      <Visible xs sm md>
+        <CustomBlockLayout>
+          <LeadStoryContainer className="comment-lead-1-container">
+            {/* LEFT SIDE Comment */}
+            <StackItem
+              $width={{
+                xs: '100%',
+                md: '260px'
               }}
             >
-              <Divider
-                overrides={{
-                  stylePreset: 'dashedDivider'
-                }}
+              <CommentArticle
+                key={modifiedCommentArticle.headline}
+                article={modifiedCommentArticle}
+                clickHandler={clickHandler}
+                isCommentLead1
               />
-            </FullWidthBlock>
-            <GroupedBottomArticle
-              {...groupedArticles}
-              clickHandler={clickHandler}
-            />
-          </StyledStackItem>
-        </LeadStoryContainer>
-
-        {/* Comment Slice */}
-        {/* <CommentStackArray data={data} clickHandler={clickHandler} /> */}
-        <Divider
-          overrides={{
-            marginBlockEnd: 'space040',
-            stylePreset: { xs: 'lightDashedDivider', md: 'dashedDivider' }
-          }}
-        />
-        <GridLayout
-          columns={{
-            xs: '1fr',
-            md: '1fr 1px 1fr 1px 1fr',
-            lg: '1fr 1px 1fr 1px 1fr 1px'
-          }}
-          columnGap="space040"
-        >
-          {data.map((comment, commentIndex, commentArr) => {
-            const hasBorder = commentIndex < commentArr.length - 1 && (
-              <AvatarDivider
-                overrides={{
-                  marginBlock: { xs: 'space040', md: 'space000' },
-                  stylePreset: {
-                    xs: 'lightDashedDivider',
-                    md: 'commentCardlightDivider'
-                  }
-                }}
-              />
-            );
-
-            return (
-              <React.Fragment key={comment.headline}>
-                <CommentCard
-                  article={comment}
-                  clickHandler={clickHandler}
-                  isCommentLead1
+            </StackItem>
+            <StackItem
+              $width={{
+                xs: '100%',
+                md: '428px',
+                lg: '465px',
+                xl: '550px'
+              }}
+              marginInlineStart={{
+                md: 'space060'
+              }}
+              marginInlineEnd={{
+                lg: 'space060'
+              }}
+            >
+              <Hidden md lg xl>
+                <FullWidthBlock
+                  paddingInline={{
+                    xs: 'space045',
+                    md: 'space000'
+                  }}
+                >
+                  <Divider
+                    overrides={{
+                      stylePreset: 'dashedDivider',
+                      marginBlockEnd: 'space040'
+                    }}
+                  />
+                </FullWidthBlock>
+              </Hidden>
+              <Block marginBlockEnd={{ xs: 'space040', md: 'space000' }}>
+                <LeadStoryDivider
+                  overrides={{ stylePreset: 'lightDivider' }}
+                  vertical
+                  position="right"
                 />
-                {hasBorder}
-              </React.Fragment>
-            );
-          })}
-        </GridLayout>
-      </CustomBlockLayout>
+                <LeadArticle
+                  article={modifiedLeadArticle}
+                  clickHandler={clickHandler}
+                />
+                <Visible md lg xl>
+                  <LeadStoryDivider
+                    overrides={{
+                      stylePreset: 'lightDivider'
+                    }}
+                    vertical
+                    position="left"
+                  />
+                </Visible>
+              </Block>
+            </StackItem>
+            {/* Comment Slice */}
+            <CommentBucket1
+              data={data}
+              clickHandler={clickHandler}
+              isCommentLead1
+            />
+            {/* RIGHT SIDE article */}
+            <StyledStackItem isCommentLead1>
+              <TopArticle
+                article={modifiedSingleArticle}
+                clickHandler={clickHandler}
+              />
+              <FullWidthBlock
+                marginBlock="space040"
+                paddingInline={{
+                  xs: 'space045',
+                  md: 'space000'
+                }}
+              >
+                <Divider
+                  overrides={{
+                    stylePreset: 'dashedDivider'
+                  }}
+                />
+              </FullWidthBlock>
+              <GroupedBottomArticle
+                {...groupedArticles}
+                clickHandler={clickHandler}
+              />
+            </StyledStackItem>
+          </LeadStoryContainer>
+        </CustomBlockLayout>
+      </Visible>
     </>
   );
 };

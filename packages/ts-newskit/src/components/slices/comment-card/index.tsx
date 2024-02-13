@@ -112,6 +112,7 @@ export const CommentCard = ({
 
       <CardContent
         rowGap="space030"
+        style={{ marginBlockEnd: 'space040' }}
         alignContent="start"
         justifyItems={{
           md: isCommentBucket1 ? 'center' : 'start',
@@ -141,7 +142,7 @@ export const CommentCard = ({
           {headline}
         </CardHeadlineLink>
         <Block marginBlockStart="space010">
-          {!isCommentLead1 && flag ? (
+          {flag && (
             <TagAndFlag
               flag={flag}
               flagOverrides={{
@@ -149,7 +150,7 @@ export const CommentCard = ({
                 stylePreset: 'inkSubtle'
               }}
             />
-          ) : null}
+          )}
         </Block>
       </CardContent>
     </CardComposable>
