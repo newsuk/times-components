@@ -43,6 +43,7 @@ export interface LeadArticleProps {
     href: string;
   };
   isListView?: boolean;
+  centerContent?: boolean;
   imageTop?: boolean;
   isLeadImage?: boolean;
   byline?: {
@@ -82,6 +83,7 @@ export const LeadArticle = ({
     tag,
     byline,
     imageTop,
+    centerContent = false,
     hasTopBorder = true,
     contentTop,
     isListView,
@@ -214,6 +216,7 @@ export const LeadArticle = ({
 
       <CardContent
         alignContent="start"
+        justifyItems={centerContent ? 'center' : undefined}
         overrides={{
           marginBlockEnd: contentTop ? 'space040' : 'space000'
         }}

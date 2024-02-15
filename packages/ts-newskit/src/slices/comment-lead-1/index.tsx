@@ -7,7 +7,8 @@ import {
   GridLayoutItem,
   Hidden,
   TextBlock,
-  Visible
+  Visible,
+  styled
 } from 'newskit';
 import {
   LeadStoryContainer,
@@ -29,6 +30,12 @@ import { CommentArticle } from '../../components/slices/comment-article';
 import { GroupedBottomArticle } from './bottom-stack-group';
 import { TopArticle } from './top-stack';
 import { CommentBucket1 } from '../comment-bucket-1';
+
+const StyledGridLayoutItem = styled(GridLayoutItem)`
+  span {
+    text-align: center;
+  }
+`;
 
 export interface CommentLeadProps {
   clickHandler: ClickHandlerType;
@@ -311,60 +318,69 @@ export const CommentLead1 = ({
             </TextBlock>
             <GridLayout
               areas={{
-                xs: `article2 
-            divider1 
-            article1 
-            divider2 
-            article3 `,
+                xs: `
+                  article1 
+                  divider1 
+                  article2 
+                  divider2 
+                  article3 
+              `,
                 md: `article2 divider1 article1 divider2 article3`
               }}
             >
-              <GridLayoutItem area="article1">
+              <StyledGridLayoutItem area="article1">
                 <TopArticle
-                  article={modifiedSingleArticle}
+                  article={{
+                    ...modifiedSingleArticle,
+                    titleTypographyPreset: 'editorialRegularHeadline020'
+                  }}
                   clickHandler={clickHandler}
                 />
-              </GridLayoutItem>
+              </StyledGridLayoutItem>
               <GridLayoutItem area="divider1">
                 <Divider
                   vertical={{ xs: false, md: true }}
                   overrides={{
                     marginBlock: { xs: 'space040', md: 'auto' },
-                    marginInline: 'space040'
+                    marginInline: 'space040',
+                    stylePreset: 'lightDivider'
                   }}
                 />
               </GridLayoutItem>
-              <GridLayoutItem area="article2">
+              <StyledGridLayoutItem area="article2">
                 <LeadArticle
                   article={{
                     ...groupedArticles.articles[0],
                     hideImage: true,
                     hasTopBorder: false,
-                    headlineTypographyPreset: 'editorialRegularHeadline020'
+                    headlineTypographyPreset: 'editorialRegularHeadline020',
+                    centerContent: true
                   }}
                   clickHandler={clickHandler}
                 />
-              </GridLayoutItem>
+              </StyledGridLayoutItem>
               <GridLayoutItem area="divider2">
                 <Divider
                   vertical={{ xs: false, md: true }}
                   overrides={{
                     marginBlock: { xs: 'space040', md: 'auto' },
-                    marginInline: 'space040'
+                    marginInline: 'space040',
+                    stylePreset: 'lightDivider'
                   }}
                 />
               </GridLayoutItem>
-              <GridLayoutItem area="article3">
+              <StyledGridLayoutItem area="article3">
                 <LeadArticle
                   article={{
                     ...groupedArticles.articles[1],
                     hideImage: true,
                     hasTopBorder: false,
-                    headlineTypographyPreset: 'editorialRegularHeadline020'
+                    headlineTypographyPreset: 'editorialRegularHeadline020',
+                    centerContent: true
                   }}
                   clickHandler={clickHandler}
                 />
-              </GridLayoutItem>
+              </StyledGridLayoutItem>
             </GridLayout>
           </LeadStoryContainer>
         </CustomBlockLayout>
