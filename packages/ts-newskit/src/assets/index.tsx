@@ -17,7 +17,6 @@ import ThumbsDownIcon from './ThumbsDown';
 import ThumbsUpIcon from './ThumbsUp';
 import TooltipIcon from './TooltipIcon';
 import FilledArrowIcon from './FilledArrowIcon';
-import VideoIcon from './VideoIcon';
 import HeroBannerWordPuzzle from './HeroBannerWordPuzzle';
 import SudokusIcon from './Sudokus';
 import CrosswordsIcon from './Crosswords';
@@ -100,11 +99,6 @@ export const NewsKitFilledArrowIcon = customToNewsKitIcon(
 export const NewsKitFilledArrowIconDown = customToNewsKitIcon(
   'NewsKitFilledArrowIconDown',
   props => <FilledArrowIconDown {...props} />
-);
-
-export const NewsKitVideoButtonIcon = customToNewsKitIcon(
-  'NewsKitVideoButtonIcon',
-  props => <VideoIcon {...props} />
 );
 
 export const NewsKitHeroBannerBackground = customToNewsKitIcon(
