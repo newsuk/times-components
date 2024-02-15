@@ -51,30 +51,30 @@ export const CommentCard = ({
     const articleForTracking = { headline, id, url };
     articleClickTracking(event, articleForTracking, clickHandler);
   };
+
+  const mdAreas = isCommentBucket1
+    ? `media
+    content`
+    : `media content`;
+
   return (
     <CardComposable
       columnGap="space040"
       columns={{
         xs: '77px 1fr',
-        md: isCommentBucket1 ? '1fr' : '77px 1fr',
-        lg: '77px 1fr'
+        md: !isCommentBucket1 ? '77px 1fr' : '1fr'
       }}
       areas={{
         xs: `
-             media content
-            `,
-        md: isCommentBucket1
-          ? `media 
-             content`
-          : `
-             media content
-            `,
+          media content
+        `,
+        md: mdAreas,
         lg: `
-            media content
-            `
+          media content
+        `
       }}
       justifyItems={{
-        md: isCommentBucket1 ? 'center' : 'start'
+        md: isCommentBucket1 && !isCommentLead1 ? 'center' : 'start'
       }}
     >
       {imageWithCorrectRatio && (

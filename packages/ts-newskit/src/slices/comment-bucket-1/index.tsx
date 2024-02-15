@@ -11,6 +11,7 @@ export interface CommentStackProps {
   clickHandler: ClickHandlerType;
   data: CommentCardProps[];
   isCommentLead1?: boolean;
+  isCommentBucket1?: boolean;
 }
 
 export const CommentBucket1 = ({
@@ -18,7 +19,6 @@ export const CommentBucket1 = ({
   clickHandler,
   isCommentLead1
 }: CommentStackProps) => {
-  console.log(data);
   return (
     <CustomBlockLayout>
       <Divider
@@ -53,8 +53,8 @@ export const CommentBucket1 = ({
               <CommentCard
                 article={comment}
                 clickHandler={clickHandler}
-                isCommentBucket1
-                isCommentLead1
+                isCommentBucket1={!isCommentLead1}
+                isCommentLead1={isCommentLead1}
               />
               {hasBorder}
             </React.Fragment>

@@ -51,6 +51,10 @@ export const CardHeadlineLink = styled(CardLink)<{
 export const StyledStackItem = styled(StackItem)<{
   isCommentLead1?: boolean;
 }>`
+  ${getMediaQueryFromTheme('xs')} {
+    text-align: center;
+  }
+
   ${getMediaQueryFromTheme()} {
     ${({ isCommentLead1 }) => isCommentLead1 && 'text-align: center'};
   }

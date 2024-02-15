@@ -1,6 +1,14 @@
 import React from 'react';
 import { ClickHandlerType } from '../types';
-import { Block, Divider, Hidden, Visible } from 'newskit';
+import {
+  Block,
+  Divider,
+  GridLayout,
+  GridLayoutItem,
+  Hidden,
+  TextBlock,
+  Visible
+} from 'newskit';
 import {
   LeadStoryContainer,
   LeadStoryDivider,
@@ -70,10 +78,7 @@ export const CommentLead1 = ({
     }
   };
 
-  console.log(modifiedSingleArticle);
-
   return (
-    //Lead Article
     <>
       <Visible lg xl>
         <CustomBlockLayout>
@@ -145,6 +150,15 @@ export const CommentLead1 = ({
             {/* RIGHT SIDE article */}
             <Hidden lg>
               <StyledStackItem isCommentLead1>
+                <TextBlock
+                  typographyPreset="utilityLabel005"
+                  marginBlockEnd="space040"
+                  style={{
+                    marginInline: 'auto'
+                  }}
+                >
+                  Times View
+                </TextBlock>
                 <TopArticle
                   article={modifiedSingleArticle}
                   clickHandler={clickHandler}
@@ -178,6 +192,15 @@ export const CommentLead1 = ({
           />
           <Visible lg>
             <StyledStackItem isCommentLead1>
+              <TextBlock
+                typographyPreset="utilityLabel005"
+                marginBlockEnd="space040"
+                style={{
+                  marginInline: 'auto'
+                }}
+              >
+                Times View
+              </TextBlock>
               <TopArticle
                 article={modifiedSingleArticle}
                 clickHandler={clickHandler}
@@ -277,29 +300,72 @@ export const CommentLead1 = ({
               isCommentLead1
             />
             {/* RIGHT SIDE article */}
-            <StyledStackItem isCommentLead1>
-              <TopArticle
-                article={modifiedSingleArticle}
-                clickHandler={clickHandler}
-              />
-              <FullWidthBlock
-                marginBlock="space040"
-                paddingInline={{
-                  xs: 'space045',
-                  md: 'space000'
-                }}
-              >
+            <TextBlock
+              typographyPreset="utilityLabel005"
+              marginBlockEnd="space040"
+              style={{
+                marginInline: 'auto'
+              }}
+            >
+              Times View
+            </TextBlock>
+            <GridLayout
+              areas={{
+                xs: `article2 
+            divider1 
+            article1 
+            divider2 
+            article3 `,
+                md: `article2 divider1 article1 divider2 article3`
+              }}
+            >
+              <GridLayoutItem area="article1">
+                <TopArticle
+                  article={modifiedSingleArticle}
+                  clickHandler={clickHandler}
+                />
+              </GridLayoutItem>
+              <GridLayoutItem area="divider1">
                 <Divider
+                  vertical={{ xs: false, md: true }}
                   overrides={{
-                    stylePreset: 'dashedDivider'
+                    marginBlock: { xs: 'space040', md: 'auto' },
+                    marginInline: 'space040'
                   }}
                 />
-              </FullWidthBlock>
-              <GroupedBottomArticle
-                {...groupedArticles}
-                clickHandler={clickHandler}
-              />
-            </StyledStackItem>
+              </GridLayoutItem>
+              <GridLayoutItem area="article2">
+                <LeadArticle
+                  article={{
+                    ...groupedArticles.articles[0],
+                    hideImage: true,
+                    hasTopBorder: false,
+                    headlineTypographyPreset: 'editorialRegularHeadline020'
+                  }}
+                  clickHandler={clickHandler}
+                />
+              </GridLayoutItem>
+              <GridLayoutItem area="divider2">
+                <Divider
+                  vertical={{ xs: false, md: true }}
+                  overrides={{
+                    marginBlock: { xs: 'space040', md: 'auto' },
+                    marginInline: 'space040'
+                  }}
+                />
+              </GridLayoutItem>
+              <GridLayoutItem area="article3">
+                <LeadArticle
+                  article={{
+                    ...groupedArticles.articles[1],
+                    hideImage: true,
+                    hasTopBorder: false,
+                    headlineTypographyPreset: 'editorialRegularHeadline020'
+                  }}
+                  clickHandler={clickHandler}
+                />
+              </GridLayoutItem>
+            </GridLayout>
           </LeadStoryContainer>
         </CustomBlockLayout>
       </Visible>

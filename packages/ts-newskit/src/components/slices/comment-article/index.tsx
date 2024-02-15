@@ -1,7 +1,6 @@
 import {
   CardComposable,
   CardContent,
-  Block,
   useTheme,
   Image,
   GridLayoutItem,
@@ -9,7 +8,6 @@ import {
 } from 'newskit';
 import React from 'react';
 import { CardHeadlineLink } from '../shared-styles';
-import { TagAndFlag } from '../shared/tag-and-flag';
 import {
   ClickHandlerType,
   MouseEventType,
@@ -35,7 +33,6 @@ export const CommentArticle = ({
 }: {
   article: CommentArticleProps;
   clickHandler: ClickHandlerType;
-  isCommentBucket1?: boolean;
   isCommentLead1?: boolean;
 }) => {
   const theme = useTheme();
@@ -96,7 +93,7 @@ export const CommentArticle = ({
           </a>
 
           <CardContent
-            rowGap="space030"
+            // rowGap="space030"
             alignContent="start"
             justifyItems={{
               md: 'center'
@@ -104,12 +101,11 @@ export const CommentArticle = ({
           >
             <CardHeadlineLink
               href={url}
-              $color={
-                theme.name === 'times-web-light'
-                  ? 'inkBrand010'
-                  : 'sectionBrand050'
-              }
-              overrides={{ typographyPreset: 'editorialHeadline010' }}
+              $color="sectionBrand070"
+              overrides={{
+                typographyPreset: 'utilityLabel005',
+                marginBlockEnd: 'space045'
+              }}
               external={false}
               onClick={onClick}
               style={{
@@ -120,7 +116,11 @@ export const CommentArticle = ({
             </CardHeadlineLink>
             <CardHeadlineLink
               href={url}
-              overrides={{ typographyPreset: 'editorialHeadline040' }}
+              overrides={{
+                typographyPreset: 'editorialHeadline040',
+                stylePreset: 'inkBrand010',
+                marginBlockEnd: 'space050'
+              }}
               $color="sectionBrand080"
               external={false}
               onClick={onClick}
@@ -138,12 +138,14 @@ export const CommentArticle = ({
               external={false}
               onClick={onClick}
               tabIndex={0}
+              overrides={{
+                marginBlockEnd: { xs: 'space040', md: 'space000' }
+              }}
               isCommentLead1={isCommentLead1}
             >
               <TextBlock
                 stylePreset={{
-                  xs: 'inkSubtle',
-                  md: 'inkBase'
+                  xs: 'inkBase'
                 }}
                 typographyPreset={{
                   xs: 'editorialParagraph020',
@@ -154,17 +156,6 @@ export const CommentArticle = ({
                 {subHeadline}
               </TextBlock>
             </CardHeadlineLink>
-            <Block marginBlockStart="space010">
-              {!isCommentLead1 && flag ? (
-                <TagAndFlag
-                  flag={flag}
-                  flagOverrides={{
-                    typographyPreset: 'utilityMeta005',
-                    stylePreset: 'inkSubtle'
-                  }}
-                />
-              ) : null}
-            </Block>
           </CardContent>
         </GridLayoutItem>
       )}
