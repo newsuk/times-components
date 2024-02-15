@@ -15,7 +15,9 @@ import {
   IconButton
 } from 'newskit';
 
-export const SliceHeaderWrapper = styled(Block)`
+export const SliceHeaderWrapper = styled(Block)<{ showDivider?: boolean }>`
+  ${({ showDivider }) => !showDivider && 'border: none !important'};
+
   & a:hover {
     cursor: pointer;
 

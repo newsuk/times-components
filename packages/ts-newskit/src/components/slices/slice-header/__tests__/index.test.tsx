@@ -85,4 +85,14 @@ describe('Render Header', () => {
     );
     expect(queryByRole('link')).toBeFalsy();
   });
+  it('does not render the divider if showDivider is false', () => {
+    const { baseElement } = render(
+      <SliceHeader
+        title="Rugby Union"
+        sliceHeaderClickHandler={mockSliceHeaderClickHandler}
+        showDivider={false}
+      />
+    );
+    expect(baseElement).toHaveStyle({ border: 'none' });
+  });
 });

@@ -24,7 +24,7 @@ This takes in a series of props, as below, to display title and href.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const HeaderStory = ({ title , href, tagline }) => (
+export const HeaderStory = ({ title , href, tagline, showDivider }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
   <TrackingContextProvider
       analyticsStream={action('analytics-action')}
@@ -34,11 +34,11 @@ export const HeaderStory = ({ title , href, tagline }) => (
         }
       }}
     >
-    <SliceHeader {...{ title,href,tagline }} />
+    <SliceHeader {...{ title,href,tagline, showDivider }} />
     </TrackingContextProvider>
   </NewsKitProvider>
 );
 
-<Story name="SliceHeader" args={{ title: 'Rugby Union', href : '/', tagline: 'The definitive Good University Guide from The Times and Sunday Times provides you with everything you need to know' }}>
+<Story name="SliceHeader" args={{ title: 'Rugby Union', href : '/', tagline: 'The definitive Good University Guide from The Times and Sunday Times provides you with everything you need to know', showDivider: true }}>
   {HeaderStory.bind({})}
 </Story>

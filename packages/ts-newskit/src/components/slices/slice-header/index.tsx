@@ -27,6 +27,7 @@ export interface SliceHeaderProps {
   iconSize?: MQ<string>;
   padding?: string;
   sliceHeaderClickHandler: (title: string) => void;
+  showDivider?: boolean;
 }
 
 const SliceHeaderLinkWrapper = ({
@@ -59,10 +60,12 @@ export const SliceHeader = ({
   iconArrowSize = { xs: 'iconSize010', md: 'iconSize020' },
   iconSize = { xs: 'sizing060', md: 'sizing080' },
   padding = 'space030',
-  sliceHeaderClickHandler
+  sliceHeaderClickHandler,
+  showDivider = true
 }: SliceHeaderProps) => {
   return (
     <SliceHeaderWrapper
+      showDivider={showDivider}
       stylePreset={{
         xs: 'sliceHeaderPresetMobile',
         md: 'sliceHeaderPresetDesktop'
