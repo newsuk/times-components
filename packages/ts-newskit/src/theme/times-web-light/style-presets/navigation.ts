@@ -94,11 +94,13 @@ export const navStylePresets = {
       backgroundImage: '{{overlays.overlayGradientBaseHorizontal}}'
     }
   },
+
   globalMenuScrollOverlay: {
     base: {
       backgroundImage: '{{overlays.overlayGradientInverseHorizontal}}'
     }
   },
+
   transparentBackground: {
     base: {
       backgroundImage: 'transparent'
