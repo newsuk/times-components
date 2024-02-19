@@ -37,7 +37,7 @@ export const FinalScreen = ({
         <StyledTextBlock
           as="p"
           typographyPreset="utilityBody020"
-          stylePreset="inkContrast"
+          stylePreset="inkNotice"
         >
           You didn't get it this time.
         </StyledTextBlock>
@@ -45,7 +45,7 @@ export const FinalScreen = ({
         <StyledTextBlock
           as="p"
           typographyPreset="utilityBody020"
-          stylePreset="inkContrast"
+          stylePreset="inkNotice"
         >
           <div dangerouslySetInnerHTML={insertBoldTag(message)} />
           You did it with {hints} hints.
