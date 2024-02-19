@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.171.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.170.0...@times-components/ts-newskit@1.171.0) (2024-02-19)
+
+
+### Features
+
+* **TMRX-1852:** Apply Culture theme to Culture channel page ([#3768](https://github.com/newsuk/times-components/issues/3768)) ([31b64e8](https://github.com/newsuk/times-components/commit/31b64e8d0779246a384df06a7c36d9b84e63dd12))
+
+
+
+
+
+# [1.170.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.169.0...@times-components/ts-newskit@1.170.0) (2024-02-19)
+
+
+### Features
+
+* **TMRX-1929:** create style preset for global menu ([#3770](https://github.com/newsuk/times-components/issues/3770)) ([1916a8b](https://github.com/newsuk/times-components/commit/1916a8b1ca7ef5accb0c03a14709b7c1c0c7cc73))
+
+
+
+
+
+# [1.169.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.168.4...@times-components/ts-newskit@1.169.0) (2024-02-19)
+
+
+### Features
+
+* **TMPZ-346:** adjuted daily quiz styling ([#3769](https://github.com/newsuk/times-components/issues/3769)) ([19f4a8f](https://github.com/newsuk/times-components/commit/19f4a8f4d62875b2ebf8582be4626032641242ff))
+
+
+
+
+
 ## [1.168.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.168.3...@times-components/ts-newskit@1.168.4) (2024-02-15)
 
 **Note:** Version bump only for package @times-components/ts-newskit
