@@ -151,7 +151,7 @@ stylePresets.modalHeaderCustom = {
     borderStyle: 'none none solid none',
     borderWidth: '{{borders.borderWidth010}}',
     borderColor: '{{colors.interface040}}',
-    color: '{{colors.inkBase}}'
+    color: '{{colors.inkNotice}}'
   }
 };
 stylePresets.overlayCustom = {
