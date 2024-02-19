@@ -10,10 +10,7 @@ const themeOverrides = {
   typographyPresets
 };
 
-const updatedTheme = formatThemeOverrides(
-  TheTimesLightCulture,
-  themeOverrides
-);
+const updatedTheme = formatThemeOverrides(TheTimesLightCulture, themeOverrides);
 
 export const TimesWebLightCultureTheme = createTheme({
   name: 'times-web-light-culture',
