@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.170.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.169.0...@times-components/ts-newskit@1.170.0) (2024-02-19)
+
+
+### Features
+
+* **TMRX-1929:** create style preset for global menu ([#3770](https://github.com/newsuk/times-components/issues/3770)) ([1916a8b](https://github.com/newsuk/times-components/commit/1916a8b1ca7ef5accb0c03a14709b7c1c0c7cc73))
+
+
+
+
+
 # [1.169.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.168.4...@times-components/ts-newskit@1.169.0) (2024-02-19)
 
 
