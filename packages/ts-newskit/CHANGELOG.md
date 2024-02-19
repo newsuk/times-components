@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.169.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.168.4...@times-components/ts-newskit@1.169.0) (2024-02-19)
+
+
+### Features
+
+* **TMPZ-346:** adjuted daily quiz styling ([#3769](https://github.com/newsuk/times-components/issues/3769)) ([19f4a8f](https://github.com/newsuk/times-components/commit/19f4a8f4d62875b2ebf8582be4626032641242ff))
+
+
+
+
+
 ## [1.168.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.168.3...@times-components/ts-newskit@1.168.4) (2024-02-15)
 
 **Note:** Version bump only for package @times-components/ts-newskit
