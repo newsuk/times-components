@@ -20,12 +20,16 @@ const useActiveState = (initial = false): [boolean, () => void, () => void] => {
 export const HowToPlay: FC<HowToPlayProps> = ({ title, header, listItems }) => {
   const [isActive, open, close] = useActiveState();
   const modalContent = (
-    <P overrides={{ typographyPreset: 'editorialParagraph010' }}>
+    <P>
       <UnorderedList
         overrides={{
           marker: { size: 'sizing010' },
           marginBlock: 'space020',
-          marginInline: 'space020'
+          marginInline: 'space020',
+          spaceStack: 'space050',
+          content: {
+            typographyPreset: 'utilityBody010'
+          }
         }}
       >
         {listItems
@@ -71,7 +75,8 @@ export const HowToPlay: FC<HowToPlayProps> = ({ title, header, listItems }) => {
             }
           },
           header: {
-            stylePreset: 'modalHeaderCustom'
+            stylePreset: 'modalHeaderCustom',
+            typographyPreset: 'utilitySubheading020'
           }
         }}
         header={header ? header : 'How to play Today’s Mini Quiz'}
