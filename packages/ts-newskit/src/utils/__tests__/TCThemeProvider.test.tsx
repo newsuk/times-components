@@ -1,13 +1,25 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import { SectionHeader } from '../../components/navigation/section-header';
+import { Headline } from 'newskit';
 import { TCThemeProvider } from '../index';
 
 const renderComponent = () =>
   render(
     <TCThemeProvider>
-      <SectionHeader>test</SectionHeader>
+      <Headline
+        headingAs="h1"
+        overrides={{
+          marginBlockStart: { md: 'space070' },
+          marginBlockEnd: { xs: 'space030', md: 'space045' },
+          typographyPreset: {
+            xs: 'sectionHeader010',
+            md: 'editorialDisplay008'
+          }
+        }}
+      >
+        test
+      </Headline>
     </TCThemeProvider>
   );
 

@@ -6,6 +6,5 @@ export { convertDateToWeekday } from './date-formatting';
 export { formatThemeOverrides } from './theme-formatting';
 export { ContentWrapper } from './contentWrapper';
 export { renderComponent } from './responsiveRender';
-export { getResponsiveNavData } from './getResponsiveNavData';
 export { getActiveArticleFlags } from './getActiveArticleFlag';
 export { getForcedExternalContentRatio } from './getForcedExternalContentRatio';
