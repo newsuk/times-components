@@ -97,7 +97,7 @@ export const ListViewSliceDesktop = ({
           marginInlineStart={{ lg: 'space060', xl: 'space100' }}
           id="inline-ad-mpu"
         >
-          <StickyAd />
+          {StickyAd && <StickyAd />}
         </StyledAdContainer>
       </Stack>
       <Divider

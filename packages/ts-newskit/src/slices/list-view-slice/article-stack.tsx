@@ -15,7 +15,7 @@ import { ClickHandlerType } from '../types';
 type ArticleStackProps = {
   leadArticles: LeadArticleProps[];
   articleWithAdSlot: LeadArticleProps;
-  SectionAd: React.FunctionComponent;
+  SectionAd?: React.FunctionComponent;
   clickHandler: ClickHandlerType;
 };
 
@@ -82,7 +82,7 @@ export const ArticleStack = ({
                         stylePreset: 'lightDivider'
                       }}
                     />
-                    <SectionAd />
+                    {SectionAd && <SectionAd />}
                   </Visible>
                 )}
             </AdBlockWrapperMedium>
