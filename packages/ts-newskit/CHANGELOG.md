@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.172.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.171.0...@times-components/ts-newskit@1.172.0) (2024-02-20)
+
+
+### Features
+
+* **TMRX-1954:** add note to files which are being moved to render ([#3773](https://github.com/newsuk/times-components/issues/3773)) ([94552f8](https://github.com/newsuk/times-components/commit/94552f8166ba85d952f44de88b68c0f89a988aae))
+
+
+
+
+
 # [1.171.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.170.0...@times-components/ts-newskit@1.171.0) (2024-02-19)
 
 
