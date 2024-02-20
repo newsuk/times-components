@@ -135,7 +135,7 @@ class Comments extends Component {
     }
 
     // In case of token expiration we need to renew sso
-    document.addEventListener('spot-im-renew-sso', () => {
+    document.addEventListener("spot-im-renew-sso", () => {
       executeSSOtransaction();
     });
 
