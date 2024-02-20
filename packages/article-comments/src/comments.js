@@ -24,6 +24,7 @@ class Comments extends Component {
   initialiseComments() {
     const {
       articleId,
+      articleUrl,
       isReadOnly,
       commentingConfig,
       onCommentStart,
@@ -149,7 +150,7 @@ class Comments extends Component {
     launcherScript.setAttribute("data-post-id", articleId);
     launcherScript.setAttribute(
       "data-post-url",
-      `https://www.thetimes.co.uk/article/${articleId}`
+      articleUrl // `https://www.thetimes.co.uk/article/${articleId}`
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
@@ -213,6 +214,7 @@ class Comments extends Component {
 
 Comments.propTypes = {
   articleId: PropTypes.string.isRequired,
+  articleUrl: PropTypes.string.isRequired,
   isReadOnly: PropTypes.bool.isRequired,
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired

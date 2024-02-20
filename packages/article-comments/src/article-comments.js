@@ -9,6 +9,7 @@ import JoinTheConversationDialog from "./join-the-conversation-dialog";
 
 const ArticleComments = ({
   articleId,
+  articleUrl,
   isEnabled,
   isReadOnly,
   commentingConfig,
@@ -23,6 +24,7 @@ const ArticleComments = ({
       <UserState state={UserState.showCommentingModule}>
         <Comments
           articleId={articleId}
+          articleUrl={articleUrl}
           isReadOnly={isReadOnly}
           commentingConfig={commentingConfig}
         />
@@ -34,6 +36,7 @@ const ArticleComments = ({
 
 ArticleComments.propTypes = {
   articleId: PropTypes.string.isRequired,
+  articleUrl: PropTypes.string.isRequired,
   isEnabled: PropTypes.bool.isRequired,
   isReadOnly: PropTypes.bool,
   commentingConfig: PropTypes.shape({

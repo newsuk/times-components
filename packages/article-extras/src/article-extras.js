@@ -106,6 +106,7 @@ const ArticleExtras = ({
       {sponsoredArticlesAndRelatedArticles(true, false)}
       <ArticleComments
         articleId={articleId}
+        articleUrl={articleUrl}
         isEnabled={commentsEnabled}
         commentingConfig={commentingConfig}
         isCommentEnabled={isCommentEnabled}
