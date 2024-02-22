@@ -6,7 +6,6 @@ exports[`1. video without a poster image 1`] = `
     <video
       controls={true}
       id="[video id]-[account id]-[tpa video id]"
-      poster="ad893a546e726c9a0da65d0ae1add0a1"
     />
   </div>
 </div>

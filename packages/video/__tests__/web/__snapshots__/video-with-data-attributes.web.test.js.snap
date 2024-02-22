@@ -12,7 +12,6 @@ exports[`1. video with data attributes 1`] = `
       data-embed="default"
       data-player="default"
       data-video-id="[video id]"
-      poster="ad893a546e726c9a0da65d0ae1add0a1"
     />
   </div>
 </div>
@@ -36,7 +35,6 @@ exports[`2. 360 video with data attributes 1`] = `
       data-embed="default"
       data-player="default"
       data-video-id="[video id]"
-      poster="ad893a546e726c9a0da65d0ae1add0a1"
     />
   </div>
 </div>
