@@ -10,24 +10,61 @@ const css = `
   }
 
   .video-js .vjs-big-play-button {
-    width: 70px;
-    height: 70px;
-    margin-top: -35px;
-    margin-left: -35px;
-
-    background: rgba(0, 0, 0, 0.4);
-
-    line-height: 65px;
-
+    margin: 0;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: unset;
+    bottom: 8px;
+    left: 8px;
     border-radius: 0;
-    border-style: solid;
-    border-width: 3px;
-    border-color: white;
+
+    &::before {
+      content: '';
+      height: 200%;
+      width: 200%;
+      position: absolute;
+      left: -8px;
+      bottom: -8px;
+      background: radial-gradient(circle at 0% 100%, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 70%);
+      z-index: 0;
+    }
+
+    span:before {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      color: #000;
+      font-size: 24px;
+      transition: all 200ms ease-in-out;
+    }
+    
+    @media(min-width: 768px){
+      height: 64px;
+      width: 64px;
+      span:before {
+        font-size: 36px;
+      }
+    }
+
+    @media(min-width: 1024px){
+      height: 72px;
+      width: 72px;
+      span:before {
+        font-size: 48px;
+      }
+    }
   }
 
-  .video-js .vjs-big-play-button:before {
-    font-size: 60px;
-    left: -2px;
+  .video-js {
+    &:hover {
+      .vjs-big-play-button span:before {
+        background-color: #ccc;
+      }
+    }
   }
 
   .video-js .vjs-dock-text {
@@ -210,9 +247,10 @@ class InlineVideoPlayer extends Component {
           <video
             id={this.id}
             style={{ height, width }}
-            {...(poster
-              ? { poster: appendToImageURL(poster.uri, "resize", 960) }
-              : {})}
+            poster="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F966b7411-0f9b-4757-bc35-e754bb35e69a.jpg?crop=2220%2C2775%2C0%2C112&resize=480"
+            // {...(poster
+            //   ? { poster: appendToImageURL(poster.uri, "resize", 960) }
+            //   : {})}
             className="video-js"
             controls
             data-account={accountId}
