@@ -247,10 +247,9 @@ class InlineVideoPlayer extends Component {
           <video
             id={this.id}
             style={{ height, width }}
-            poster="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F966b7411-0f9b-4757-bc35-e754bb35e69a.jpg?crop=2220%2C2775%2C0%2C112&resize=480"
-            // {...(poster
-            //   ? { poster: appendToImageURL(poster.uri, "resize", 960) }
-            //   : {})}
+            {...(poster
+              ? { poster: appendToImageURL(poster.uri, "resize", 960) }
+              : {})}
             className="video-js"
             controls
             data-account={accountId}
