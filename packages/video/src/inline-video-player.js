@@ -37,16 +37,20 @@ const css = `
       align-items: center;
       justify-content: center;
       background-color: #fff;
-      color: #000;
-      font-size: 24px;
+      color: #333333;
+      font-size: 36px;
       transition: all 200ms ease-in-out;
+    }
+
+    .vjs-icon-placeholder:before {
+      padding-right: 4px;
     }
     
     @media(min-width: 768px){
       height: 64px;
       width: 64px;
       span:before {
-        font-size: 36px;
+        font-size: 48px;
       }
     }
 
@@ -54,7 +58,7 @@ const css = `
       height: 72px;
       width: 72px;
       span:before {
-        font-size: 48px;
+        font-size: 50px;
       }
     }
   }
