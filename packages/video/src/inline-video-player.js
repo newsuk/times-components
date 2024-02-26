@@ -66,7 +66,8 @@ const css = `
   .video-js {
     &:hover {
       .vjs-big-play-button span:before {
-        background-color: #ccc;
+        background-color: #00527A;
+        color: #fff;
       }
     }
   }
