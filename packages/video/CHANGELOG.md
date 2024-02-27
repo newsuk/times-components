@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.16.0](https://github.com/newsuk/times-components/compare/@times-components/video@4.15.40...@times-components/video@4.16.0) (2024-02-27)
+
+
+### Features
+
+* **TMRX-1734:** Consistent video button UI ([#3776](https://github.com/newsuk/times-components/issues/3776)) ([de23ef6](https://github.com/newsuk/times-components/commit/de23ef6895c8224deb03fa0e21b32a0ce48a7eeb))
+
+
+
+
+
 ## [4.15.40](https://github.com/newsuk/times-components/compare/@times-components/video@4.15.39...@times-components/video@4.15.40) (2024-02-01)
 
 **Note:** Version bump only for package @times-components/video
