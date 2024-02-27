@@ -17,7 +17,7 @@ const insertNativeAd = children => {
     return clonedChildren;
   }
 
-  const paragraphCount = Number(9 - paragraph.length);
+  const paragraphCount = Number(10 - paragraph.length);
   const paywallChildren = child.children;
   const paragraphItems = paywallChildren
     .map((item, index) => ({ ...item, index }))

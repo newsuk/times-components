@@ -4,8 +4,6 @@ import EastArrow from './EastArrow';
 import SeeAllLeft from './SeeAllLeft';
 import SeeAllRight from './SeeAllRight';
 import CloseIcon from './CloseIcon';
-import TimesMasthead from './TimesMasthead';
-import SundayTimesMasthead from './SundayTimesMasthead';
 import HeroBannerBackground from './HeroBannerBackground';
 import HeroBannerKillerSudoku from './HeroBannerKillerSudoku';
 import HeroBannerQuintagram from './HeroBannerQuintagram';
@@ -38,16 +36,6 @@ const FilledArrowIconDown = styled(FilledArrowIcon)`
 export const NewsKitCloseIcon = customToNewsKitIcon(
   'NewsKitCloseIcon',
   props => <CloseIcon {...props} />
-);
-
-export const NewsKitTimesMasthead = customToNewsKitIcon(
-  'NewskitTimesMasthead',
-  props => <TimesMasthead {...props} />
-);
-
-export const NewsKitSundayTimesMasthead = customToNewsKitIcon(
-  'NewskitSundayTimesMasthead',
-  props => <SundayTimesMasthead {...props} />
 );
 
 export const NewsKitChevronRightIcon = customToNewsKitIcon(
