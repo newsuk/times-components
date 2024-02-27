@@ -39,7 +39,7 @@ const css = `
       max-width: 144px;
       max-height: 144px;
 
-      transition: background-image 200ms ease-in-out;
+      transition: background-image 100ms ease-in-out;
     }
 
     span:before {
