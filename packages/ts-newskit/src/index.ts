@@ -9,7 +9,6 @@ export { TimesWebLightTravelTheme } from './theme/times-web-light-travel';
 
 // NAVIGATION
 export { Breadcrumb } from './components/navigation/breadcrumb';
-export { EditionMasthead } from './components/navigation/masthead';
 
 // PUZZLES
 export { Archive } from './components/puzzles/archive';
