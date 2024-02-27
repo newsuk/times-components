@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.123.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.122.10...@times-components/article-skeleton@1.123.0) (2024-02-26)
+
+
+### Features
+
+* **TMRX-1962:** Update ad placement in articles ([#3775](https://github.com/newsuk/times-components/issues/3775)) ([4115834](https://github.com/newsuk/times-components/commit/41158344f92428ad4b2e33ed8fc9ad7fe837f611))
+
+
+
+
+
 ## [1.122.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.122.9...@times-components/article-skeleton@1.122.10) (2024-02-21)
 
 **Note:** Version bump only for package @times-components/article-skeleton
