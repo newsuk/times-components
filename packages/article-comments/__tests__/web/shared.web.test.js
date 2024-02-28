@@ -13,6 +13,7 @@ const renderComments = ({ enabled }) =>
   render(
     <ArticleComments
       articleId="dummy-article-id"
+      articleUrl="https://www.thetimes.com/article/dummy-article-id"
       commentsEnabled={enabled}
       isEnabled={enabled}
       onCommentGuidelinesPress={() => {}}
