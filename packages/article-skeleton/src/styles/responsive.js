@@ -77,9 +77,9 @@ export const SidebarWarpper = styled.div`
 `;
 
 export const PuzzlesSidebar = styled.div`
-  position: absolute;
+  position: sticky;
   padding-left: ${spacing(4)};
-  right: 0;
+  left: 100%;
   z-index: 1;
 
   @media (min-width: ${breakpoints.wide}px) {
@@ -90,4 +90,12 @@ export const PuzzlesSidebar = styled.div`
     width: 18.8333%;
     padding-right: ${spacing(10)};
   }
+`;
+
+export const ArticleWrapper = styled.div`
+  position: relative;
+`;
+
+export const ArticleContent = styled.div`
+  position: relative;
 `;

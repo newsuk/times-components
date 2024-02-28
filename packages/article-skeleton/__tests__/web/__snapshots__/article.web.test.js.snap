@@ -64,317 +64,321 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          <span>
-            T
-          </span>
-          his being Black History Month, last week
-        </p>
         <div>
-          <div
-            id="d2f83305-d558-4f78-f582-32115c659355"
-          >
-            <InteractiveWrapper
-              attributes={
+          <div>
+            <div
+              dangerouslySetInnerHTML={
                 Object {
-                  "chart-id": "csmgb",
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
                 }
               }
-              element="times-datawrapper"
-              source="https://interactive.io"
+              suppressHydrationWarning={true}
             />
-          </div>
-        </div>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
-        <div
-          id="3"
-        >
-          <div>
+            <p>
+              <span>
+                T
+              </span>
+              his being Black History Month, last week
+            </p>
             <div>
-              <ArticleImage
-                captionOptions={
-                  Object {
-                    "caption": "An image caption",
-                    "credits": "The image credits",
+              <div
+                id="d2f83305-d558-4f78-f582-32115c659355"
+              >
+                <InteractiveWrapper
+                  attributes={
+                    Object {
+                      "chart-id": "csmgb",
+                    }
                   }
-                }
-                imageOptions={
-                  Object {
-                    "display": "primary",
-                    "highResSize": null,
-                    "lowResQuality": 3,
-                    "lowResSize": 400,
-                    "ratio": "1500:1000",
-                    "uri": "https://image.io",
-                  }
-                }
+                  element="times-datawrapper"
+                  source="https://interactive.io"
+                />
+              </div>
+            </div>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
               />
             </div>
-          </div>
-        </div>
-        <div
-          id="4"
-        >
-          <div>
-            <div>
-              <ArticleImage
-                captionOptions={
-                  Object {
-                    "caption": "A secondary image caption",
-                    "credits": "The secondary image credits",
-                  }
-                }
-                imageOptions={
-                  Object {
-                    "display": "secondary",
-                    "highResSize": null,
-                    "lowResQuality": 3,
-                    "lowResSize": 400,
-                    "ratio": "1500:1000",
-                    "uri": "https://image.io/secondary",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          id="5"
-        >
-          <div>
-            <div>
-              <ArticleImage
-                captionOptions={
-                  Object {
-                    "caption": "An inline image caption",
-                    "credits": "The inline image credits",
-                  }
-                }
-                imageOptions={
-                  Object {
-                    "display": "inline",
-                    "highResSize": null,
-                    "lowResQuality": 3,
-                    "lowResSize": 400,
-                    "ratio": "1500:1000",
-                    "uri": "https://image.io/inline",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-        <p>
-          <Link
-            target="_blank"
-            underlined={true}
-            url="https://link.io"
-          >
-            Some Link
-          </Link>
-        </p>
-        <p>
-          Some content
-        </p>
-        <div>
-          <h2>
-            Advertisement
-          </h2>
-          <AdContainer
-            slotName="inline-ad"
-          />
-        </div>
-        <div>
-          <div>
-            <PullQuote
-              caption="AName"
-              quoteColour="#FF0000"
-              text="a text"
-              twitter="@AName"
+            <div
+              id="3"
             >
-              The pull quote content
-            </PullQuote>
-          </div>
-        </div>
-        <div>
-          <figure>
-            <div>
               <div>
-                <div
-                  data-is-360={false}
-                >
-                  <div>
-                    <video
-                      controls={true}
-                      data-account="57838016001"
-                      data-application-id={true}
-                      data-embed="default"
-                      data-player="default"
-                      data-video-id="4084164751001"
-                      id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
-                      poster="https://image.io?resize=960"
-                    />
-                  </div>
+                <div>
+                  <ArticleImage
+                    captionOptions={
+                      Object {
+                        "caption": "An image caption",
+                        "credits": "The image credits",
+                      }
+                    }
+                    imageOptions={
+                      Object {
+                        "display": "primary",
+                        "highResSize": null,
+                        "lowResQuality": 3,
+                        "lowResSize": 400,
+                        "ratio": "1500:1000",
+                        "uri": "https://image.io",
+                      }
+                    }
+                  />
                 </div>
               </div>
             </div>
-            <figcaption>
+            <div
+              id="4"
+            >
               <div>
-                <Caption
-                  text="This is video caption"
-                />
+                <div>
+                  <ArticleImage
+                    captionOptions={
+                      Object {
+                        "caption": "A secondary image caption",
+                        "credits": "The secondary image credits",
+                      }
+                    }
+                    imageOptions={
+                      Object {
+                        "display": "secondary",
+                        "highResSize": null,
+                        "lowResQuality": 3,
+                        "lowResSize": 400,
+                        "ratio": "1500:1000",
+                        "uri": "https://image.io/secondary",
+                      }
+                    }
+                  />
+                </div>
               </div>
-            </figcaption>
-          </figure>
-        </div>
-        <KeyFacts
-          ast={
-            Object {
-              "attributes": Object {
-                "title": "Example title",
-              },
-              "children": Array [
+            </div>
+            <div
+              id="5"
+            >
+              <div>
+                <div>
+                  <ArticleImage
+                    captionOptions={
+                      Object {
+                        "caption": "An inline image caption",
+                        "credits": "The inline image credits",
+                      }
+                    }
+                    imageOptions={
+                      Object {
+                        "display": "inline",
+                        "highResSize": null,
+                        "lowResQuality": 3,
+                        "lowResSize": 400,
+                        "ratio": "1500:1000",
+                        "uri": "https://image.io/inline",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+            <p>
+              <Link
+                target="_blank"
+                underlined={true}
+                url="https://link.io"
+              >
+                Some Link
+              </Link>
+            </p>
+            <p>
+              Some content
+            </p>
+            <div>
+              <h2>
+                Advertisement
+              </h2>
+              <AdContainer
+                slotName="inline-ad"
+              />
+            </div>
+            <div>
+              <div>
+                <PullQuote
+                  caption="AName"
+                  quoteColour="#FF0000"
+                  text="a text"
+                  twitter="@AName"
+                >
+                  The pull quote content
+                </PullQuote>
+              </div>
+            </div>
+            <div>
+              <figure>
+                <div>
+                  <div>
+                    <div
+                      data-is-360={false}
+                    >
+                      <div>
+                        <video
+                          controls={true}
+                          data-account="57838016001"
+                          data-application-id={true}
+                          data-embed="default"
+                          data-player="default"
+                          data-video-id="4084164751001"
+                          id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
+                          poster="https://image.io?resize=960"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <figcaption>
+                  <div>
+                    <Caption
+                      text="This is video caption"
+                    />
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+            <KeyFacts
+              ast={
                 Object {
+                  "attributes": Object {
+                    "title": "Example title",
+                  },
                   "children": Array [
                     Object {
                       "children": Array [
                         Object {
-                          "attributes": Object {
-                            "value": "Example bullet text",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "listElement",
-                    },
-                    Object {
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "An example ",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                        Object {
-                          "attributes": Object {
-                            "href": "https://example.io",
-                            "target": "_blank",
-                            "type": "topic",
-                          },
                           "children": Array [
                             Object {
                               "attributes": Object {
-                                "value": "link",
+                                "value": "Example bullet text",
                               },
                               "children": Array [],
                               "name": "text",
                             },
                           ],
-                          "name": "link",
-                        },
-                      ],
-                      "name": "listElement",
-                    },
-                    Object {
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "More example text.",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "listElement",
-                    },
-                    Object {
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Example text ",
-                          },
-                          "children": Array [],
-                          "name": "text",
+                          "name": "listElement",
                         },
                         Object {
-                          "attributes": Object {},
                           "children": Array [
                             Object {
                               "attributes": Object {
-                                "value": "this is bold ",
+                                "value": "An example ",
+                              },
+                              "children": Array [],
+                              "name": "text",
+                            },
+                            Object {
+                              "attributes": Object {
+                                "href": "https://example.io",
+                                "target": "_blank",
+                                "type": "topic",
+                              },
+                              "children": Array [
+                                Object {
+                                  "attributes": Object {
+                                    "value": "link",
+                                  },
+                                  "children": Array [],
+                                  "name": "text",
+                                },
+                              ],
+                              "name": "link",
+                            },
+                          ],
+                          "name": "listElement",
+                        },
+                        Object {
+                          "children": Array [
+                            Object {
+                              "attributes": Object {
+                                "value": "More example text.",
                               },
                               "children": Array [],
                               "name": "text",
                             },
                           ],
-                          "name": "bold",
+                          "name": "listElement",
                         },
                         Object {
-                          "attributes": Object {},
                           "children": Array [
                             Object {
                               "attributes": Object {
-                                "value": "this is in italics.",
+                                "value": "Example text ",
                               },
                               "children": Array [],
                               "name": "text",
                             },
+                            Object {
+                              "attributes": Object {},
+                              "children": Array [
+                                Object {
+                                  "attributes": Object {
+                                    "value": "this is bold ",
+                                  },
+                                  "children": Array [],
+                                  "name": "text",
+                                },
+                              ],
+                              "name": "bold",
+                            },
+                            Object {
+                              "attributes": Object {},
+                              "children": Array [
+                                Object {
+                                  "attributes": Object {
+                                    "value": "this is in italics.",
+                                  },
+                                  "children": Array [],
+                                  "name": "text",
+                                },
+                              ],
+                              "name": "italic",
+                            },
                           ],
-                          "name": "italic",
+                          "name": "listElement",
                         },
                       ],
-                      "name": "listElement",
+                      "name": "unorderedList",
                     },
                   ],
-                  "name": "unorderedList",
-                },
-              ],
-              "name": "keyFacts",
-            }
-          }
-          headline="Some Headline"
-          section="Some Section"
-        />
-        <h2>
-          This is heading 2
-        </h2>
-        <h3>
-          This is heading 3
-        </h3>
-        <h4>
-          This is heading 4
-        </h4>
-        <h5>
-          This is heading 5
-        </h5>
-        <h6>
-          This is heading 6
-        </h6>
-        <div
-          id="paywall-portal-article-footer"
-        />
+                  "name": "keyFacts",
+                }
+              }
+              headline="Some Headline"
+              section="Some Section"
+            />
+            <h2>
+              This is heading 2
+            </h2>
+            <h3>
+              This is heading 3
+            </h3>
+            <h4>
+              This is heading 4
+            </h4>
+            <h5>
+              This is heading 5
+            </h5>
+            <h6>
+              This is heading 6
+            </h6>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
+        </div>
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -537,60 +541,64 @@ exports[`2. an article with interactives 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
         <div>
-          <div
-            id="d2f83305-d558-4f78-f582-32115c659355"
-          >
-            <InteractiveWrapper
-              attributes={
+          <div>
+            <div
+              dangerouslySetInnerHTML={
                 Object {
-                  "chart-id": "csmgb",
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
                 }
               }
-              element="times-datawrapper"
-              source="https://interactive.io"
+              suppressHydrationWarning={true}
+            />
+            <div>
+              <div
+                id="d2f83305-d558-4f78-f582-32115c659355"
+              >
+                <InteractiveWrapper
+                  attributes={
+                    Object {
+                      "chart-id": "csmgb",
+                    }
+                  }
+                  element="times-datawrapper"
+                  source="https://interactive.io"
+                />
+              </div>
+            </div>
+            <div>
+              <div
+                id="abc"
+              >
+                <InteractiveWrapper
+                  attributes={
+                    Object {
+                      "chart-id": "csmgb",
+                    }
+                  }
+                  element="times-datawrapper"
+                  source="https://interactive.io"
+                />
+              </div>
+            </div>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
             />
           </div>
         </div>
-        <div>
-          <div
-            id="abc"
-          >
-            <InteractiveWrapper
-              attributes={
-                Object {
-                  "chart-id": "csmgb",
-                }
-              }
-              element="times-datawrapper"
-              source="https://interactive.io"
-            />
-          </div>
-        </div>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -753,17 +761,21 @@ exports[`3. an article with no content 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          id="paywall-portal-article-footer"
-        />
+        <div>
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
+        </div>
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -926,17 +938,21 @@ exports[`4. an article with no content if content is set as null 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          id="paywall-portal-article-footer"
-        />
+        <div>
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
+        </div>
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -1099,45 +1115,49 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          <span>
-            <b>
-              Q
-            </b>
-          </span>
-          <b>
-             Some years ago I made the decision to take as a friend a woman who is very opinionated.
-          </b>
-        </p>
-        <p>
-          <b>
-            When she does come to social events, she dominates.
-          </b>
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <p>
+              <span>
+                <b>
+                  Q
+                </b>
+              </span>
+              <b>
+                 Some years ago I made the decision to take as a friend a woman who is very opinionated.
+              </b>
+            </p>
+            <p>
+              <b>
+                When she does come to social events, she dominates.
+              </b>
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -1249,36 +1269,40 @@ exports[`6. an article with heading tags 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <h2>
-          This is heading 2
-        </h2>
-        <h3>
-          This is heading 3
-        </h3>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <h2>
+              This is heading 2
+            </h2>
+            <h3>
+              This is heading 3
+            </h3>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -1441,39 +1465,43 @@ exports[`7. an article with link 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          <Link
-            underlined={true}
-            url="https://www.thetimes.co.uk/article/i-like-it-boiling-hot-says-twitter-boss-jack-dorsey-cjclqjpb2"
-          >
-            Jack Dorsey
-          </Link>
-           said today that while the company was unlikely to open its offices before September, almost all staff could now work permanently from wherever they want.
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <p>
+              <Link
+                underlined={true}
+                url="https://www.thetimes.co.uk/article/i-like-it-boiling-hot-says-twitter-boss-jack-dorsey-cjclqjpb2"
+              >
+                Jack Dorsey
+              </Link>
+               said today that while the company was unlikely to open its offices before September, almost all staff could now work permanently from wherever they want.
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -1636,42 +1664,46 @@ exports[`8. an article with italic link 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          In his 2015 book on the tournaments, 
-          <Link
-            underlined={true}
-            url="https://www.thetimes.co.uk/article/superforecasting-by-philip-tetlock-and-dan-gardner-gkwwpbf3gsb"
-          >
-            <i>
-              Superforecasting
-            </i>
-          </Link>
-          , Professor Tetlock said the most accurate predictors all used very similar methods. They used a historical “base rate” for predicting how likely an event was, adjusting constantly in the light of new information.
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <p>
+              In his 2015 book on the tournaments, 
+              <Link
+                underlined={true}
+                url="https://www.thetimes.co.uk/article/superforecasting-by-philip-tetlock-and-dan-gardner-gkwwpbf3gsb"
+              >
+                <i>
+                  Superforecasting
+                </i>
+              </Link>
+              , Professor Tetlock said the most accurate predictors all used very similar methods. They used a historical “base rate” for predicting how likely an event was, adjusting constantly in the light of new information.
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -1834,41 +1866,45 @@ exports[`9. an article with bold text followed by bold link 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          <b>
-            2 
-            <Link
-              underlined={true}
-              url="https://www.thetimes.co.uk/article/review-becoming-by-michelle-obama-the-astonishing-pressures-of-being-first-lady-zb6jkpffd"
-            >
-              Becoming by Michelle Obama
-            </Link>
-          </b>
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <p>
+              <b>
+                2 
+                <Link
+                  underlined={true}
+                  url="https://www.thetimes.co.uk/article/review-becoming-by-michelle-obama-the-astonishing-pressures-of-being-first-lady-zb6jkpffd"
+                >
+                  Becoming by Michelle Obama
+                </Link>
+              </b>
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -2031,43 +2067,47 @@ exports[`10. an article with italic and normal text link 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          Family Action is one of two charities being supported by 
-          <Link
-            underlined={true}
-            url="https://www.thetimes.co.uk/article/the-times-coronavirus-charity-appeal-2020-help-those-in-hardship-lp6f2jdsb"
-          >
-            <i>
-              The Times
-            </i>
-             Coronavirus Charity Appeal
-          </Link>
-           to support people in greatest hardship under the restrictions. The second charity is The Big Issue Foundation.
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <p>
+              Family Action is one of two charities being supported by 
+              <Link
+                underlined={true}
+                url="https://www.thetimes.co.uk/article/the-times-coronavirus-charity-appeal-2020-help-those-in-hardship-lp6f2jdsb"
+              >
+                <i>
+                  The Times
+                </i>
+                 Coronavirus Charity Appeal
+              </Link>
+               to support people in greatest hardship under the restrictions. The second charity is The Big Issue Foundation.
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -2230,37 +2270,41 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          <b>
-            <i>
-              Conversations with Friends
-            </i>
-          </b>
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <p>
+              <b>
+                <i>
+                  Conversations with Friends
+                </i>
+              </b>
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -2423,35 +2467,39 @@ exports[`12. an article with text wrapped in inline element 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          <span>
-            They may have been improved by the controversy that ensued when Watson appeared on the cover of Vanity Fair to promote it, wearing a top that partially exposed her breasts. She rejected criticism that the pose was at odds with her claim to be a feminist. “Feminism is not a stick with which to beat other women. It’s about liberation. It’s about equality,” she said, adding: “I really don’t know what my tits have to do with it.” 
-          </span>
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <p>
+              <span>
+                They may have been improved by the controversy that ensued when Watson appeared on the cover of Vanity Fair to promote it, wearing a top that partially exposed her breasts. She rejected criticism that the pose was at odds with her claim to be a feminist. “Feminism is not a stick with which to beat other women. It’s about liberation. It’s about equality,” she said, adding: “I really don’t know what my tits have to do with it.” 
+              </span>
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -2614,36 +2662,40 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          20. 
-          <span>
-            Participants’ names and general locations will be published if they are the winner of the Competition in accordance with regulatory requirements, both during this and future promotions by the Promoter or any associated or subsidiary company of News Corp UK & Ireland Limited.
-          </span>
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <p>
+              20. 
+              <span>
+                Participants’ names and general locations will be published if they are the winner of the Competition in accordance with regulatory requirements, both during this and future promotions by the Promoter or any associated or subsidiary company of News Corp UK & Ireland Limited.
+              </span>
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -2806,37 +2858,41 @@ exports[`14. an article with inline inside a bold tag 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          <b>
-            <span>
-              Meera Menon, 15, 100min
-            </span>
-          </b>
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <p>
+              <b>
+                <span>
+                  Meera Menon, 15, 100min
+                </span>
+              </b>
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -2999,36 +3055,40 @@ exports[`15. an article starting with single quote 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          <span>
-            ‘S
-          </span>
-          orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <p>
+              <span>
+                ‘S
+              </span>
+              orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -3191,36 +3251,40 @@ exports[`16. an article starting with double quote 1`] = `
         />
       </div>
       <article>
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <p>
-          <span>
-            “S
-          </span>
-          orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
+            <p>
+              <span>
+                “S
+              </span>
+              orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"

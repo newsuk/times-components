@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
-.c4 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -24,7 +24,7 @@ exports[`1. a primary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c5 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -38,11 +38,11 @@ exports[`1. a primary image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -54,7 +54,7 @@ exports[`1. a primary image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -83,7 +83,7 @@ exports[`1. a primary image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -94,6 +94,14 @@ exports[`1. a primary image 1`] = `
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c4 {
+  position: relative;
+}
+
+.c5 {
+  position: relative;
 }
 
 .c0 {
@@ -130,42 +138,42 @@ exports[`1. a primary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c6 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -209,31 +217,39 @@ exports[`1. a primary image 1`] = `
       <article
         className="c3"
       >
-        <div>
-          <div>
-            <div
-              className="c4"
-            >
-              <ArticleImage />
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div>
+              <div>
+                <div
+                  className="c6"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
             </div>
+            <div
+              className="group-3 hidden c7"
+            >
+              <h2
+                className="c8"
+              >
+                Sponsored
+              </h2>
+              <div
+                className="c9"
+              />
+              <div
+                className="c9"
+              />
+            </div>
+            <div />
           </div>
         </div>
-        <div
-          className="group-3 hidden c5"
-        >
-          <h2
-            className="c6"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c7"
-          />
-          <div
-            className="c7"
-          />
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -245,7 +261,7 @@ exports[`1. a primary image 1`] = `
 `;
 
 exports[`2. a fullwidth image 1`] = `
-.c4 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -264,7 +280,7 @@ exports[`2. a fullwidth image 1`] = `
   padding-bottom: 20px;
 }
 
-.c5 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -278,11 +294,11 @@ exports[`2. a fullwidth image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -294,7 +310,7 @@ exports[`2. a fullwidth image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -323,7 +339,7 @@ exports[`2. a fullwidth image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -334,6 +350,14 @@ exports[`2. a fullwidth image 1`] = `
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c4 {
+  position: relative;
+}
+
+.c5 {
+  position: relative;
 }
 
 .c0 {
@@ -370,29 +394,29 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -436,31 +460,39 @@ exports[`2. a fullwidth image 1`] = `
       <article
         className="c3"
       >
-        <div>
-          <div>
-            <div
-              className="c4"
-            >
-              <ArticleImage />
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div>
+              <div>
+                <div
+                  className="c6"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
             </div>
+            <div
+              className="group-3 hidden c7"
+            >
+              <h2
+                className="c8"
+              >
+                Sponsored
+              </h2>
+              <div
+                className="c9"
+              />
+              <div
+                className="c9"
+              />
+            </div>
+            <div />
           </div>
         </div>
-        <div
-          className="group-3 hidden c5"
-        >
-          <h2
-            className="c6"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c7"
-          />
-          <div
-            className="c7"
-          />
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -472,7 +504,7 @@ exports[`2. a fullwidth image 1`] = `
 `;
 
 exports[`3. a secondary image 1`] = `
-.c4 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -500,7 +532,7 @@ exports[`3. a secondary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c5 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -514,11 +546,11 @@ exports[`3. a secondary image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -530,7 +562,7 @@ exports[`3. a secondary image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -559,7 +591,7 @@ exports[`3. a secondary image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -570,6 +602,14 @@ exports[`3. a secondary image 1`] = `
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c4 {
+  position: relative;
+}
+
+.c5 {
+  position: relative;
 }
 
 .c0 {
@@ -606,7 +646,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -615,35 +655,35 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c6 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -687,31 +727,39 @@ exports[`3. a secondary image 1`] = `
       <article
         className="c3"
       >
-        <div>
-          <div>
-            <div
-              className="c4"
-            >
-              <ArticleImage />
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div>
+              <div>
+                <div
+                  className="c6"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
             </div>
+            <div
+              className="group-3 hidden c7"
+            >
+              <h2
+                className="c8"
+              >
+                Sponsored
+              </h2>
+              <div
+                className="c9"
+              />
+              <div
+                className="c9"
+              />
+            </div>
+            <div />
           </div>
         </div>
-        <div
-          className="group-3 hidden c5"
-        >
-          <h2
-            className="c6"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c7"
-          />
-          <div
-            className="c7"
-          />
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -723,7 +771,7 @@ exports[`3. a secondary image 1`] = `
 `;
 
 exports[`4. an inline image 1`] = `
-.c4 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -752,7 +800,7 @@ exports[`4. an inline image 1`] = `
   display: block;
 }
 
-.c5 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -766,11 +814,11 @@ exports[`4. an inline image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -782,7 +830,7 @@ exports[`4. an inline image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -811,7 +859,7 @@ exports[`4. an inline image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -822,6 +870,14 @@ exports[`4. an inline image 1`] = `
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c4 {
+  position: relative;
+}
+
+.c5 {
+  position: relative;
 }
 
 .c0 {
@@ -858,7 +914,7 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -867,35 +923,35 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c6 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -939,31 +995,39 @@ exports[`4. an inline image 1`] = `
       <article
         className="c3"
       >
-        <div>
-          <div>
-            <div
-              className="c4"
-            >
-              <ArticleImage />
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div>
+              <div>
+                <div
+                  className="c6"
+                >
+                  <ArticleImage />
+                </div>
+              </div>
             </div>
+            <div
+              className="group-3 hidden c7"
+            >
+              <h2
+                className="c8"
+              >
+                Sponsored
+              </h2>
+              <div
+                className="c9"
+              />
+              <div
+                className="c9"
+              />
+            </div>
+            <div />
           </div>
         </div>
-        <div
-          className="group-3 hidden c5"
-        >
-          <h2
-            className="c6"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c7"
-          />
-          <div
-            className="c7"
-          />
-        </div>
-        <div />
         <ArticleExtras />
       </article>
     </main>

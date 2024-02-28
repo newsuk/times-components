@@ -181,25 +181,29 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         </div>
       </div>
       <article>
-        <p>
-          Some content
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <p>
+              Some content
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline=""
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -457,29 +461,33 @@ exports[`4. an article with ads 1`] = `
       </div>
       <article>
         <div>
-          <h2>
-            Advertisement
-          </h2>
-          <AdContainer
-            slotName="inline-ad"
-          />
+          <div>
+            <div>
+              <h2>
+                Advertisement
+              </h2>
+              <AdContainer
+                slotName="inline-ad"
+              />
+            </div>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -757,25 +765,29 @@ exports[`7. an article with no author 1`] = `
         </div>
       </div>
       <article>
-        <p>
-          Some content
-        </p>
         <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
+          <div>
+            <p>
+              Some content
+            </p>
+            <div>
+              <h2>
+                Sponsored
+              </h2>
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-1"
+              />
+              <div
+                data-parent="group-3"
+                id="advert-inarticle-native-2"
+              />
+            </div>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
         </div>
-        <div
-          id="paywall-portal-article-footer"
-        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"

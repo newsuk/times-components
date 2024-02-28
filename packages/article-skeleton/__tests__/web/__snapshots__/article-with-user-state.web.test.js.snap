@@ -23,275 +23,279 @@ exports[`Article with user state Render full article when user has access to ful
     <main>
       <div />
       <article>
-        <p>
-          <span>
-            T
-          </span>
-          his being Black History Month, last week
-        </p>
         <div>
-          <div
-            id="d2f83305-d558-4f78-f582-32115c659355"
-          >
-            <InteractiveWrapper
-              attributes={
-                Object {
-                  "chart-id": "csmgb",
-                }
-              }
-              element="times-datawrapper"
-              source="//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
-            />
-          </div>
-        </div>
-        <div
-          id="2"
-        >
           <div>
+            <p>
+              <span>
+                T
+              </span>
+              his being Black History Month, last week
+            </p>
             <div>
-              <ArticleImage
-                captionOptions={
-                  Object {
-                    "caption": "An image caption",
-                    "credits": "The image credits",
-                  }
-                }
-                imageOptions={
-                  Object {
-                    "display": "primary",
-                    "highResSize": null,
-                    "lowResQuality": 3,
-                    "lowResSize": 400,
-                    "ratio": "1500:1000",
-                    "uri": "https://image.io",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          id="3"
-        >
-          <div>
-            <div>
-              <ArticleImage
-                captionOptions={
-                  Object {
-                    "caption": "A secondary image caption",
-                    "credits": "The secondary image credits",
-                  }
-                }
-                imageOptions={
-                  Object {
-                    "display": "secondary",
-                    "highResSize": null,
-                    "lowResQuality": 3,
-                    "lowResSize": 400,
-                    "ratio": "1500:1000",
-                    "uri": "https://image.io/secondary",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          id="4"
-        >
-          <div>
-            <div>
-              <ArticleImage
-                captionOptions={
-                  Object {
-                    "caption": "An inline image caption",
-                    "credits": "The inline image credits",
-                  }
-                }
-                imageOptions={
-                  Object {
-                    "display": "inline",
-                    "highResSize": null,
-                    "lowResQuality": 3,
-                    "lowResSize": 400,
-                    "ratio": "1500:1000",
-                    "uri": "https://image.io/inline",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-        <Link
-          target="_blank"
-          underlined={true}
-          url="https://link.io"
-        >
-          Some Link
-        </Link>
-        <span>
-          <p
-            id="last-paragraph"
-          >
-            Some content
-          </p>
-          <div>
-            <div>
-              <PullQuote
-                caption="AName"
-                quoteColour="#FF0000"
-                text="a text"
-                twitter="@AName"
+              <div
+                id="d2f83305-d558-4f78-f582-32115c659355"
               >
-                The pull quote content
-              </PullQuote>
+                <InteractiveWrapper
+                  attributes={
+                    Object {
+                      "chart-id": "csmgb",
+                    }
+                  }
+                  element="times-datawrapper"
+                  source="//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+                />
+              </div>
             </div>
-          </div>
-          <div>
-            <figure>
+            <div
+              id="2"
+            >
               <div>
                 <div>
-                  <div
-                    data-is-360={false}
-                  >
-                    <div>
-                      <video
-                        controls={true}
-                        data-account="57838016001"
-                        data-application-id={true}
-                        data-embed="default"
-                        data-player="default"
-                        data-video-id="4084164751001"
-                        id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
-                        poster="https://image.io?resize=960"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <figcaption>
-                <div>
-                  <Caption
-                    text="This is video caption"
+                  <ArticleImage
+                    captionOptions={
+                      Object {
+                        "caption": "An image caption",
+                        "credits": "The image credits",
+                      }
+                    }
+                    imageOptions={
+                      Object {
+                        "display": "primary",
+                        "highResSize": null,
+                        "lowResQuality": 3,
+                        "lowResSize": 400,
+                        "ratio": "1500:1000",
+                        "uri": "https://image.io",
+                      }
+                    }
                   />
                 </div>
-              </figcaption>
-            </figure>
-          </div>
-          <KeyFacts
-            ast={
-              Object {
-                "attributes": Object {
-                  "title": "Example title",
-                },
-                "children": Array [
+              </div>
+            </div>
+            <div
+              id="3"
+            >
+              <div>
+                <div>
+                  <ArticleImage
+                    captionOptions={
+                      Object {
+                        "caption": "A secondary image caption",
+                        "credits": "The secondary image credits",
+                      }
+                    }
+                    imageOptions={
+                      Object {
+                        "display": "secondary",
+                        "highResSize": null,
+                        "lowResQuality": 3,
+                        "lowResSize": 400,
+                        "ratio": "1500:1000",
+                        "uri": "https://image.io/secondary",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              id="4"
+            >
+              <div>
+                <div>
+                  <ArticleImage
+                    captionOptions={
+                      Object {
+                        "caption": "An inline image caption",
+                        "credits": "The inline image credits",
+                      }
+                    }
+                    imageOptions={
+                      Object {
+                        "display": "inline",
+                        "highResSize": null,
+                        "lowResQuality": 3,
+                        "lowResSize": 400,
+                        "ratio": "1500:1000",
+                        "uri": "https://image.io/inline",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+            <Link
+              target="_blank"
+              underlined={true}
+              url="https://link.io"
+            >
+              Some Link
+            </Link>
+            <span>
+              <p
+                id="last-paragraph"
+              >
+                Some content
+              </p>
+              <div>
+                <div>
+                  <PullQuote
+                    caption="AName"
+                    quoteColour="#FF0000"
+                    text="a text"
+                    twitter="@AName"
+                  >
+                    The pull quote content
+                  </PullQuote>
+                </div>
+              </div>
+              <div>
+                <figure>
+                  <div>
+                    <div>
+                      <div
+                        data-is-360={false}
+                      >
+                        <div>
+                          <video
+                            controls={true}
+                            data-account="57838016001"
+                            data-application-id={true}
+                            data-embed="default"
+                            data-player="default"
+                            data-video-id="4084164751001"
+                            id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
+                            poster="https://image.io?resize=960"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <div>
+                      <Caption
+                        text="This is video caption"
+                      />
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <KeyFacts
+                ast={
                   Object {
+                    "attributes": Object {
+                      "title": "Example title",
+                    },
                     "children": Array [
                       Object {
                         "children": Array [
                           Object {
-                            "attributes": Object {
-                              "value": "Example bullet text",
-                            },
-                            "children": Array [],
-                            "name": "text",
-                          },
-                        ],
-                        "name": "listElement",
-                      },
-                      Object {
-                        "children": Array [
-                          Object {
-                            "attributes": Object {
-                              "value": "An example ",
-                            },
-                            "children": Array [],
-                            "name": "text",
-                          },
-                          Object {
-                            "attributes": Object {
-                              "href": "https://example.io",
-                              "target": "_blank",
-                              "type": "topic",
-                            },
                             "children": Array [
                               Object {
                                 "attributes": Object {
-                                  "value": "link",
+                                  "value": "Example bullet text",
                                 },
                                 "children": Array [],
                                 "name": "text",
                               },
                             ],
-                            "name": "link",
-                          },
-                        ],
-                        "name": "listElement",
-                      },
-                      Object {
-                        "children": Array [
-                          Object {
-                            "attributes": Object {
-                              "value": "More example text.",
-                            },
-                            "children": Array [],
-                            "name": "text",
-                          },
-                        ],
-                        "name": "listElement",
-                      },
-                      Object {
-                        "children": Array [
-                          Object {
-                            "attributes": Object {
-                              "value": "Example text ",
-                            },
-                            "children": Array [],
-                            "name": "text",
+                            "name": "listElement",
                           },
                           Object {
-                            "attributes": Object {},
                             "children": Array [
                               Object {
                                 "attributes": Object {
-                                  "value": "this is bold ",
+                                  "value": "An example ",
+                                },
+                                "children": Array [],
+                                "name": "text",
+                              },
+                              Object {
+                                "attributes": Object {
+                                  "href": "https://example.io",
+                                  "target": "_blank",
+                                  "type": "topic",
+                                },
+                                "children": Array [
+                                  Object {
+                                    "attributes": Object {
+                                      "value": "link",
+                                    },
+                                    "children": Array [],
+                                    "name": "text",
+                                  },
+                                ],
+                                "name": "link",
+                              },
+                            ],
+                            "name": "listElement",
+                          },
+                          Object {
+                            "children": Array [
+                              Object {
+                                "attributes": Object {
+                                  "value": "More example text.",
                                 },
                                 "children": Array [],
                                 "name": "text",
                               },
                             ],
-                            "name": "bold",
+                            "name": "listElement",
                           },
                           Object {
-                            "attributes": Object {},
                             "children": Array [
                               Object {
                                 "attributes": Object {
-                                  "value": "this is in italics.",
+                                  "value": "Example text ",
                                 },
                                 "children": Array [],
                                 "name": "text",
                               },
+                              Object {
+                                "attributes": Object {},
+                                "children": Array [
+                                  Object {
+                                    "attributes": Object {
+                                      "value": "this is bold ",
+                                    },
+                                    "children": Array [],
+                                    "name": "text",
+                                  },
+                                ],
+                                "name": "bold",
+                              },
+                              Object {
+                                "attributes": Object {},
+                                "children": Array [
+                                  Object {
+                                    "attributes": Object {
+                                      "value": "this is in italics.",
+                                    },
+                                    "children": Array [],
+                                    "name": "text",
+                                  },
+                                ],
+                                "name": "italic",
+                              },
                             ],
-                            "name": "italic",
+                            "name": "listElement",
                           },
                         ],
-                        "name": "listElement",
+                        "name": "unorderedList",
                       },
                     ],
-                    "name": "unorderedList",
-                  },
-                ],
-                "name": "keyFacts",
-              }
-            }
-            headline="Some Headline"
-            section="Some Section"
-          />
-        </span>
-        <div
-          id="paywall-portal-article-footer"
-        />
+                    "name": "keyFacts",
+                  }
+                }
+                headline="Some Headline"
+                section="Some Section"
+              />
+            </span>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
+        </div>
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -397,275 +401,279 @@ exports[`Article with user state Render teaser article when user does not have a
     <main>
       <div />
       <article>
-        <p>
-          <span>
-            T
-          </span>
-          his being Black History Month, last week
-        </p>
         <div>
-          <div
-            id="d2f83305-d558-4f78-f582-32115c659355"
-          >
-            <InteractiveWrapper
-              attributes={
-                Object {
-                  "chart-id": "csmgb",
-                }
-              }
-              element="times-datawrapper"
-              source="//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
-            />
-          </div>
-        </div>
-        <div
-          id="2"
-        >
           <div>
+            <p>
+              <span>
+                T
+              </span>
+              his being Black History Month, last week
+            </p>
             <div>
-              <ArticleImage
-                captionOptions={
-                  Object {
-                    "caption": "An image caption",
-                    "credits": "The image credits",
-                  }
-                }
-                imageOptions={
-                  Object {
-                    "display": "primary",
-                    "highResSize": null,
-                    "lowResQuality": 3,
-                    "lowResSize": 400,
-                    "ratio": "1500:1000",
-                    "uri": "https://image.io",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          id="3"
-        >
-          <div>
-            <div>
-              <ArticleImage
-                captionOptions={
-                  Object {
-                    "caption": "A secondary image caption",
-                    "credits": "The secondary image credits",
-                  }
-                }
-                imageOptions={
-                  Object {
-                    "display": "secondary",
-                    "highResSize": null,
-                    "lowResQuality": 3,
-                    "lowResSize": 400,
-                    "ratio": "1500:1000",
-                    "uri": "https://image.io/secondary",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          id="4"
-        >
-          <div>
-            <div>
-              <ArticleImage
-                captionOptions={
-                  Object {
-                    "caption": "An inline image caption",
-                    "credits": "The inline image credits",
-                  }
-                }
-                imageOptions={
-                  Object {
-                    "display": "inline",
-                    "highResSize": null,
-                    "lowResQuality": 3,
-                    "lowResSize": 400,
-                    "ratio": "1500:1000",
-                    "uri": "https://image.io/inline",
-                  }
-                }
-              />
-            </div>
-          </div>
-        </div>
-        <Link
-          target="_blank"
-          underlined={true}
-          url="https://link.io"
-        >
-          Some Link
-        </Link>
-        <span>
-          <p
-            id="last-paragraph"
-          >
-            Some content
-          </p>
-          <div>
-            <div>
-              <PullQuote
-                caption="AName"
-                quoteColour="#FF0000"
-                text="a text"
-                twitter="@AName"
+              <div
+                id="d2f83305-d558-4f78-f582-32115c659355"
               >
-                The pull quote content
-              </PullQuote>
+                <InteractiveWrapper
+                  attributes={
+                    Object {
+                      "chart-id": "csmgb",
+                    }
+                  }
+                  element="times-datawrapper"
+                  source="//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+                />
+              </div>
             </div>
-          </div>
-          <div>
-            <figure>
+            <div
+              id="2"
+            >
               <div>
                 <div>
-                  <div
-                    data-is-360={false}
-                  >
-                    <div>
-                      <video
-                        controls={true}
-                        data-account="57838016001"
-                        data-application-id={true}
-                        data-embed="default"
-                        data-player="default"
-                        data-video-id="4084164751001"
-                        id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
-                        poster="https://image.io?resize=960"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <figcaption>
-                <div>
-                  <Caption
-                    text="This is video caption"
+                  <ArticleImage
+                    captionOptions={
+                      Object {
+                        "caption": "An image caption",
+                        "credits": "The image credits",
+                      }
+                    }
+                    imageOptions={
+                      Object {
+                        "display": "primary",
+                        "highResSize": null,
+                        "lowResQuality": 3,
+                        "lowResSize": 400,
+                        "ratio": "1500:1000",
+                        "uri": "https://image.io",
+                      }
+                    }
                   />
                 </div>
-              </figcaption>
-            </figure>
-          </div>
-          <KeyFacts
-            ast={
-              Object {
-                "attributes": Object {
-                  "title": "Example title",
-                },
-                "children": Array [
+              </div>
+            </div>
+            <div
+              id="3"
+            >
+              <div>
+                <div>
+                  <ArticleImage
+                    captionOptions={
+                      Object {
+                        "caption": "A secondary image caption",
+                        "credits": "The secondary image credits",
+                      }
+                    }
+                    imageOptions={
+                      Object {
+                        "display": "secondary",
+                        "highResSize": null,
+                        "lowResQuality": 3,
+                        "lowResSize": 400,
+                        "ratio": "1500:1000",
+                        "uri": "https://image.io/secondary",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              id="4"
+            >
+              <div>
+                <div>
+                  <ArticleImage
+                    captionOptions={
+                      Object {
+                        "caption": "An inline image caption",
+                        "credits": "The inline image credits",
+                      }
+                    }
+                    imageOptions={
+                      Object {
+                        "display": "inline",
+                        "highResSize": null,
+                        "lowResQuality": 3,
+                        "lowResSize": 400,
+                        "ratio": "1500:1000",
+                        "uri": "https://image.io/inline",
+                      }
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+            <Link
+              target="_blank"
+              underlined={true}
+              url="https://link.io"
+            >
+              Some Link
+            </Link>
+            <span>
+              <p
+                id="last-paragraph"
+              >
+                Some content
+              </p>
+              <div>
+                <div>
+                  <PullQuote
+                    caption="AName"
+                    quoteColour="#FF0000"
+                    text="a text"
+                    twitter="@AName"
+                  >
+                    The pull quote content
+                  </PullQuote>
+                </div>
+              </div>
+              <div>
+                <figure>
+                  <div>
+                    <div>
+                      <div
+                        data-is-360={false}
+                      >
+                        <div>
+                          <video
+                            controls={true}
+                            data-account="57838016001"
+                            data-application-id={true}
+                            data-embed="default"
+                            data-player="default"
+                            data-video-id="4084164751001"
+                            id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
+                            poster="https://image.io?resize=960"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <figcaption>
+                    <div>
+                      <Caption
+                        text="This is video caption"
+                      />
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <KeyFacts
+                ast={
                   Object {
+                    "attributes": Object {
+                      "title": "Example title",
+                    },
                     "children": Array [
                       Object {
                         "children": Array [
                           Object {
-                            "attributes": Object {
-                              "value": "Example bullet text",
-                            },
-                            "children": Array [],
-                            "name": "text",
-                          },
-                        ],
-                        "name": "listElement",
-                      },
-                      Object {
-                        "children": Array [
-                          Object {
-                            "attributes": Object {
-                              "value": "An example ",
-                            },
-                            "children": Array [],
-                            "name": "text",
-                          },
-                          Object {
-                            "attributes": Object {
-                              "href": "https://example.io",
-                              "target": "_blank",
-                              "type": "topic",
-                            },
                             "children": Array [
                               Object {
                                 "attributes": Object {
-                                  "value": "link",
+                                  "value": "Example bullet text",
                                 },
                                 "children": Array [],
                                 "name": "text",
                               },
                             ],
-                            "name": "link",
-                          },
-                        ],
-                        "name": "listElement",
-                      },
-                      Object {
-                        "children": Array [
-                          Object {
-                            "attributes": Object {
-                              "value": "More example text.",
-                            },
-                            "children": Array [],
-                            "name": "text",
-                          },
-                        ],
-                        "name": "listElement",
-                      },
-                      Object {
-                        "children": Array [
-                          Object {
-                            "attributes": Object {
-                              "value": "Example text ",
-                            },
-                            "children": Array [],
-                            "name": "text",
+                            "name": "listElement",
                           },
                           Object {
-                            "attributes": Object {},
                             "children": Array [
                               Object {
                                 "attributes": Object {
-                                  "value": "this is bold ",
+                                  "value": "An example ",
+                                },
+                                "children": Array [],
+                                "name": "text",
+                              },
+                              Object {
+                                "attributes": Object {
+                                  "href": "https://example.io",
+                                  "target": "_blank",
+                                  "type": "topic",
+                                },
+                                "children": Array [
+                                  Object {
+                                    "attributes": Object {
+                                      "value": "link",
+                                    },
+                                    "children": Array [],
+                                    "name": "text",
+                                  },
+                                ],
+                                "name": "link",
+                              },
+                            ],
+                            "name": "listElement",
+                          },
+                          Object {
+                            "children": Array [
+                              Object {
+                                "attributes": Object {
+                                  "value": "More example text.",
                                 },
                                 "children": Array [],
                                 "name": "text",
                               },
                             ],
-                            "name": "bold",
+                            "name": "listElement",
                           },
                           Object {
-                            "attributes": Object {},
                             "children": Array [
                               Object {
                                 "attributes": Object {
-                                  "value": "this is in italics.",
+                                  "value": "Example text ",
                                 },
                                 "children": Array [],
                                 "name": "text",
                               },
+                              Object {
+                                "attributes": Object {},
+                                "children": Array [
+                                  Object {
+                                    "attributes": Object {
+                                      "value": "this is bold ",
+                                    },
+                                    "children": Array [],
+                                    "name": "text",
+                                  },
+                                ],
+                                "name": "bold",
+                              },
+                              Object {
+                                "attributes": Object {},
+                                "children": Array [
+                                  Object {
+                                    "attributes": Object {
+                                      "value": "this is in italics.",
+                                    },
+                                    "children": Array [],
+                                    "name": "text",
+                                  },
+                                ],
+                                "name": "italic",
+                              },
                             ],
-                            "name": "italic",
+                            "name": "listElement",
                           },
                         ],
-                        "name": "listElement",
+                        "name": "unorderedList",
                       },
                     ],
-                    "name": "unorderedList",
-                  },
-                ],
-                "name": "keyFacts",
-              }
-            }
-            headline="Some Headline"
-            section="Some Section"
-          />
-        </span>
-        <div
-          id="paywall-portal-article-footer"
-        />
+                    "name": "keyFacts",
+                  }
+                }
+                headline="Some Headline"
+                section="Some Section"
+              />
+            </span>
+            <div
+              id="paywall-portal-article-footer"
+            />
+          </div>
+        </div>
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
