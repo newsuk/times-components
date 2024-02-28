@@ -114,6 +114,7 @@ it("Render comments label, when comments are loaded", () => {
   const { asFragment } = render(
     <ArticleComments
       articleId="dummy-article-id"
+      articleUrl="https://www.thetimes.com/article/dummy-article-id"
       commentsEnabled
       isEnabled
       onCommentGuidelinesPress={() => {}}
@@ -145,6 +146,7 @@ describe("window listeners added", () => {
     render(
       <ArticleComments
         articleId="dummy-article-id"
+        articleUrl="https://www.thetimes.com/article/dummy-article-id"
         commentsEnabled
         isEnabled
         onCommentGuidelinesPress={() => {}}
