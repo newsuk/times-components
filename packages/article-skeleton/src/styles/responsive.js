@@ -95,7 +95,3 @@ export const PuzzlesSidebar = styled.div`
 export const ArticleWrapper = styled.div`
   position: relative;
 `;
-
-export const ArticleContent = styled.div`
-  position: relative;
-`;
