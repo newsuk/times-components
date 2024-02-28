@@ -34,10 +34,10 @@ const css = `
       aspect-ratio: 1 !important;
       width: 25%;
       height: unset;
-      min-width: 96px;
-      min-height: 96px;
-      max-width: 144px;
-      max-height: 144px;
+      min-width: 80px;
+      min-height: 80px;
+      max-width: 128px;
+      max-height: 128px;
 
       transition: background-image 100ms ease-in-out;
     }
