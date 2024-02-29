@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
-.c5 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -24,7 +24,7 @@ exports[`1. a primary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c6 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -38,11 +38,11 @@ exports[`1. a primary image 1`] = `
   min-height: 210px;
 }
 
-.c6.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c7 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -54,7 +54,7 @@ exports[`1. a primary image 1`] = `
   text-transform: uppercase;
 }
 
-.c8 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -83,7 +83,7 @@ exports[`1. a primary image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c9 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -134,42 +134,42 @@ exports[`1. a primary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c6 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c8 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c8:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c8:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -178,6 +178,14 @@ exports[`1. a primary image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -216,29 +224,31 @@ exports[`1. a primary image 1`] = `
         <div
           className="c4"
         >
-          <div>
+          <div
+            className="c5"
+          >
             <div>
               <div>
                 <div
-                  className="c5"
+                  className="c6"
                 >
                   <ArticleImage />
                 </div>
               </div>
             </div>
             <div
-              className="group-3 hidden c6"
+              className="group-3 hidden c7"
             >
               <h2
-                className="c7"
+                className="c8"
               >
                 Sponsored
               </h2>
               <div
-                className="c8"
+                className="c9"
               />
               <div
-                className="c8"
+                className="c9"
               />
             </div>
             <div />
@@ -255,7 +265,7 @@ exports[`1. a primary image 1`] = `
 `;
 
 exports[`2. a fullwidth image 1`] = `
-.c5 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -274,7 +284,7 @@ exports[`2. a fullwidth image 1`] = `
   padding-bottom: 20px;
 }
 
-.c6 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -288,11 +298,11 @@ exports[`2. a fullwidth image 1`] = `
   min-height: 210px;
 }
 
-.c6.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c7 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -304,7 +314,7 @@ exports[`2. a fullwidth image 1`] = `
   text-transform: uppercase;
 }
 
-.c8 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -333,7 +343,7 @@ exports[`2. a fullwidth image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c9 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -384,29 +394,29 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c8 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c8:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c8:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -415,6 +425,14 @@ exports[`2. a fullwidth image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -453,29 +471,31 @@ exports[`2. a fullwidth image 1`] = `
         <div
           className="c4"
         >
-          <div>
+          <div
+            className="c5"
+          >
             <div>
               <div>
                 <div
-                  className="c5"
+                  className="c6"
                 >
                   <ArticleImage />
                 </div>
               </div>
             </div>
             <div
-              className="group-3 hidden c6"
+              className="group-3 hidden c7"
             >
               <h2
-                className="c7"
+                className="c8"
               >
                 Sponsored
               </h2>
               <div
-                className="c8"
+                className="c9"
               />
               <div
-                className="c8"
+                className="c9"
               />
             </div>
             <div />
@@ -492,7 +512,7 @@ exports[`2. a fullwidth image 1`] = `
 `;
 
 exports[`3. a secondary image 1`] = `
-.c5 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -520,7 +540,7 @@ exports[`3. a secondary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c6 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -534,11 +554,11 @@ exports[`3. a secondary image 1`] = `
   min-height: 210px;
 }
 
-.c6.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c7 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -550,7 +570,7 @@ exports[`3. a secondary image 1`] = `
   text-transform: uppercase;
 }
 
-.c8 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -579,7 +599,7 @@ exports[`3. a secondary image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c9 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -630,7 +650,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -639,35 +659,35 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c6 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c8 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c8:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c8:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -676,6 +696,14 @@ exports[`3. a secondary image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -714,29 +742,31 @@ exports[`3. a secondary image 1`] = `
         <div
           className="c4"
         >
-          <div>
+          <div
+            className="c5"
+          >
             <div>
               <div>
                 <div
-                  className="c5"
+                  className="c6"
                 >
                   <ArticleImage />
                 </div>
               </div>
             </div>
             <div
-              className="group-3 hidden c6"
+              className="group-3 hidden c7"
             >
               <h2
-                className="c7"
+                className="c8"
               >
                 Sponsored
               </h2>
               <div
-                className="c8"
+                className="c9"
               />
               <div
-                className="c8"
+                className="c9"
               />
             </div>
             <div />
@@ -753,7 +783,7 @@ exports[`3. a secondary image 1`] = `
 `;
 
 exports[`4. an inline image 1`] = `
-.c5 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -782,7 +812,7 @@ exports[`4. an inline image 1`] = `
   display: block;
 }
 
-.c6 {
+.c7 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -796,11 +826,11 @@ exports[`4. an inline image 1`] = `
   min-height: 210px;
 }
 
-.c6.hidden {
+.c7.hidden {
   visibility: hidden;
 }
 
-.c7 {
+.c8 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -812,7 +842,7 @@ exports[`4. an inline image 1`] = `
   text-transform: uppercase;
 }
 
-.c8 {
+.c9 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -841,7 +871,7 @@ exports[`4. an inline image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c9 {
+.c2 > .c10 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -892,7 +922,7 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -901,35 +931,35 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c6 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c8 {
+  .c9 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c8:first-of-type {
+  .c9:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c8:last-child {
+  .c9:last-child {
     margin-left: 1.5%;
   }
 }
@@ -938,6 +968,14 @@ exports[`4. an inline image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    margin-top: 0;
+    -webkit-transition: margin-top 0.2s ease;
+    transition: margin-top 0.2s ease;
   }
 }
 
@@ -976,29 +1014,31 @@ exports[`4. an inline image 1`] = `
         <div
           className="c4"
         >
-          <div>
+          <div
+            className="c5"
+          >
             <div>
               <div>
                 <div
-                  className="c5"
+                  className="c6"
                 >
                   <ArticleImage />
                 </div>
               </div>
             </div>
             <div
-              className="group-3 hidden c6"
+              className="group-3 hidden c7"
             >
               <h2
-                className="c7"
+                className="c8"
               >
                 Sponsored
               </h2>
               <div
-                className="c8"
+                className="c9"
               />
               <div
-                className="c8"
+                className="c9"
               />
             </div>
             <div />
