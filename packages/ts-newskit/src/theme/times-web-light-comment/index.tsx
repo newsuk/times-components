@@ -12,7 +12,7 @@ const themeOverrides = {
 
 const updatedTheme = formatThemeOverrides(TheTimesLightComment, themeOverrides);
 
-export const TimesWebLightComentTheme = createTheme({
+export const TimesWebLightCommentTheme = createTheme({
   name: 'times-web-light-comment',
   ...updatedTheme
 });
