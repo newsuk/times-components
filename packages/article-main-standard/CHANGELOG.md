@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.85.15](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.14...@times-components/article-main-standard@3.85.15) (2024-02-29)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.85.14](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.13...@times-components/article-main-standard@3.85.14) (2024-02-28)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.85.13](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.12...@times-components/article-main-standard@3.85.13) (2024-02-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.85.12](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.11...@times-components/article-main-standard@3.85.12) (2024-02-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.85.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.10...@times-components/article-main-standard@3.85.11) (2024-02-26)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.85.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.9...@times-components/article-main-standard@3.85.10) (2024-02-21)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [3.85.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.8...@times-components/article-main-standard@3.85.9) (2024-02-20)
 
 **Note:** Version bump only for package @times-components/article-main-standard

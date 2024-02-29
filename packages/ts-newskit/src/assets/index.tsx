@@ -4,8 +4,6 @@ import EastArrow from './EastArrow';
 import SeeAllLeft from './SeeAllLeft';
 import SeeAllRight from './SeeAllRight';
 import CloseIcon from './CloseIcon';
-import TimesMasthead from './TimesMasthead';
-import SundayTimesMasthead from './SundayTimesMasthead';
 import HeroBannerBackground from './HeroBannerBackground';
 import HeroBannerKillerSudoku from './HeroBannerKillerSudoku';
 import HeroBannerQuintagram from './HeroBannerQuintagram';
@@ -17,7 +15,6 @@ import ThumbsDownIcon from './ThumbsDown';
 import ThumbsUpIcon from './ThumbsUp';
 import TooltipIcon from './TooltipIcon';
 import FilledArrowIcon from './FilledArrowIcon';
-import VideoIcon from './VideoIcon';
 import HeroBannerWordPuzzle from './HeroBannerWordPuzzle';
 import SudokusIcon from './Sudokus';
 import CrosswordsIcon from './Crosswords';
@@ -39,16 +36,6 @@ const FilledArrowIconDown = styled(FilledArrowIcon)`
 export const NewsKitCloseIcon = customToNewsKitIcon(
   'NewsKitCloseIcon',
   props => <CloseIcon {...props} />
-);
-
-export const NewsKitTimesMasthead = customToNewsKitIcon(
-  'NewskitTimesMasthead',
-  props => <TimesMasthead {...props} />
-);
-
-export const NewsKitSundayTimesMasthead = customToNewsKitIcon(
-  'NewskitSundayTimesMasthead',
-  props => <SundayTimesMasthead {...props} />
 );
 
 export const NewsKitChevronRightIcon = customToNewsKitIcon(
@@ -100,11 +87,6 @@ export const NewsKitFilledArrowIcon = customToNewsKitIcon(
 export const NewsKitFilledArrowIconDown = customToNewsKitIcon(
   'NewsKitFilledArrowIconDown',
   props => <FilledArrowIconDown {...props} />
-);
-
-export const NewsKitVideoButtonIcon = customToNewsKitIcon(
-  'NewsKitVideoButtonIcon',
-  props => <VideoIcon {...props} />
 );
 
 export const NewsKitHeroBannerBackground = customToNewsKitIcon(

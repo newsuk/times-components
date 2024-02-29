@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.79.29](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.28...@times-components/article-in-depth@3.79.29) (2024-02-29)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.28](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.27...@times-components/article-in-depth@3.79.28) (2024-02-28)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.27](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.26...@times-components/article-in-depth@3.79.27) (2024-02-27)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.26](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.25...@times-components/article-in-depth@3.79.26) (2024-02-27)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.25](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.24...@times-components/article-in-depth@3.79.25) (2024-02-26)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.79.24](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.23...@times-components/article-in-depth@3.79.24) (2024-02-21)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
 ## [3.79.23](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.79.22...@times-components/article-in-depth@3.79.23) (2024-02-20)
 
 **Note:** Version bump only for package @times-components/article-in-depth

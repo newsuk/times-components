@@ -3,6 +3,7 @@ import React, { Component, Fragment } from "react";
 import { appendToImageURL } from "@times-components/utils";
 import { propTypes, defaultProps } from "./video-prop-types";
 import Video360Icon from "./video-360-icon";
+import videoPlayIcon from "../assets/video-play-icon";
 
 const css = `
   div[data-is-360="true"] button.vjs-big-play-button {
@@ -10,24 +11,52 @@ const css = `
   }
 
   .video-js .vjs-big-play-button {
-    width: 70px;
-    height: 70px;
-    margin-top: -35px;
-    margin-left: -35px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: unset !important;
 
-    background: rgba(0, 0, 0, 0.4);
+    &::before {
+      content: "";
 
-    line-height: 65px;
+      position: absolute;
+      top: unset;
+      bottom: 0;
+      left: 0;
+      
+      background-image: url(${videoPlayIcon.base});
+      background-size: contain;
+      background-repeat: no-repeat;
+      
+      aspect-ratio: 1 !important;
+      width: 25%;
+      height: unset;
+      min-width: 80px;
+      min-height: 80px;
+      max-width: 128px;
+      max-height: 128px;
 
-    border-radius: 0;
-    border-style: solid;
-    border-width: 3px;
-    border-color: white;
-  }
+      transition: background-image 100ms ease-in-out;
+    }
 
-  .video-js .vjs-big-play-button:before {
-    font-size: 60px;
-    left: -2px;
+    span:before {
+      display: none;
+    }
+
+    &:focus {
+      outline: none;
+      &::before {
+        background-image: url(${videoPlayIcon.hover});
+      }
+    }
+    &:hover {
+      &::before {
+        background-image: url(${videoPlayIcon.hover});
+      }
+    }
   }
 
   .video-js .vjs-dock-text {

@@ -8,7 +8,7 @@ const {
 } = inlineAdFixture;
 
 describe("inline-ad", () => {
-  it("it adds the inline ad block after the 13th paragraph", () => {
+  it("it adds the inline ad block after the 15th paragraph", () => {
     expect(insertInlineAd(contentWithOutAd)).toStrictEqual(contentWithAd);
   });
 
