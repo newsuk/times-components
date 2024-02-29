@@ -68,14 +68,13 @@ export const ScrollControls = ({
           paddingInline: 'space020',
           paddingBlock: 'space020'
         }}
-        onClick={(event: MouseEventType) =>{
+        onClick={(event: MouseEventType) => {
           event.preventDefault();
-          controlsHandler(event, 'left', sectionTitle)
-        }
-        }
+          controlsHandler(event, 'left', sectionTitle);
+        }}
         data-testid="scroll-left"
         aria-label="scroll left"
-        href=''
+        href=""
       >
         <NewskitIconBack
           overrides={{
@@ -90,14 +89,13 @@ export const ScrollControls = ({
           paddingInline: 'space020',
           paddingBlock: 'space020'
         }}
-        onClick={(event: MouseEventType) =>{
+        onClick={(event: MouseEventType) => {
           event.preventDefault();
-          controlsHandler(event, 'right', sectionTitle)
-        }
-        }
+          controlsHandler(event, 'right', sectionTitle);
+        }}
         data-testid="scroll-right"
         aria-label="scroll right"
-        href=''
+        href=""
       >
         <NewskitIconForward
           overrides={{
