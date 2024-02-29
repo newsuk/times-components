@@ -1,9 +1,4 @@
-import {
-  CardComposable,
-  getColorCssFromTheme,
-  styled,
-  CardMedia
-} from 'newskit';
+import { CardComposable, getColorCssFromTheme, styled } from 'newskit';
 
 export const StyledCardComposable = styled(CardComposable)`
   &:hover {
@@ -13,13 +8,5 @@ export const StyledCardComposable = styled(CardComposable)`
   }
   h3 {
     color: inherit;
-  }
-`;
-
-export const StyledCardMedia = styled(CardMedia)`
-  picture {
-    min-height: 40px;
-    min-width: 60px;
-    background: transparent;
   }
 `;

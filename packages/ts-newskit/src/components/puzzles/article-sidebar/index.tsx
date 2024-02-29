@@ -3,6 +3,7 @@ import {
   TextBlock,
   Block,
   CardComposable,
+  CardMedia,
   CardContent,
   CardLink,
   Divider,
@@ -11,7 +12,7 @@ import {
 } from 'newskit';
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
-import { StyledCardComposable, StyledCardMedia } from './styles';
+import { StyledCardComposable } from './styles';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
@@ -78,7 +79,7 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
            media content          
          `}
           >
-            <StyledCardMedia
+            <CardMedia
               media={{
                 src: imgUrl,
                 height: '40px',
