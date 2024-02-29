@@ -76,11 +76,11 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             SEE ALL
           </span>
         </a>
-        <a
+        <button
           aria-label="scroll left"
           class="css-1v2cnmj"
           data-testid="scroll-left"
-          href=""
+          type="button"
         >
           <svg
             class="css-1e6cmyg"
@@ -116,12 +116,12 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               />
             </g>
           </svg>
-        </a>
-        <a
+        </button>
+        <button
           aria-label="scroll right"
           class="css-19u5zmf"
           data-testid="scroll-right"
-          href=""
+          type="button"
         >
           <svg
             class="css-1e6cmyg"
@@ -157,7 +157,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
               />
             </g>
           </svg>
-        </a>
+        </button>
       </div>
     </div>
   </div>
