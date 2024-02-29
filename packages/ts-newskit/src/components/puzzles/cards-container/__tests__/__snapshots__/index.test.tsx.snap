@@ -17,6 +17,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
         >
           <a
             class="css-1ks9f1u"
+            data-testid="card-controller-see-all-link"
             href="https://newskit.co.uk/components"
           >
             <span
@@ -1020,6 +1021,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
         >
           <a
             class="css-1ks9f1u"
+            data-testid="card-controller-see-all-link"
             href="https://newskit.co.uk/components"
           >
             <span
@@ -1925,6 +1927,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
         >
           <a
             class="css-1ks9f1u"
+            data-testid="card-controller-see-all-link"
             href="https://newskit.co.uk/components"
           >
             <span

@@ -21,6 +21,21 @@ const renderComponent = (
   render(<CardsContainer cardsProps={theProps} clickHandler={clickHandler} />);
 
 describe('CardsContainer tests', () => {
+  it('should render a seeAllLink', () => {
+    const { getAllByTestId } = renderComponent(defaultProps, mockClickHandler);
+
+    const seeAllLink = getAllByTestId('card-controller-see-all-link')[0];
+    expect(seeAllLink).toBeInTheDocument();
+    expect(seeAllLink).toHaveAttribute('href', 'https://newskit.co.uk/components');
+  });
+
+  it('should NOT render a seeAllLink', () => {
+    const { getAllByTestId } = renderComponent({ ...defaultProps, seeAllLink: undefined }, mockClickHandler);
+
+    const seeAllLink = getAllByTestId('no-see-all-link')[0];
+    expect(seeAllLink).toBeInTheDocument();
+  });
+
   it('should render a snapshot without scroller', () => {
     const { asFragment } = renderComponent(defaultProps, mockClickHandler);
     expect(asFragment()).toMatchSnapshot();

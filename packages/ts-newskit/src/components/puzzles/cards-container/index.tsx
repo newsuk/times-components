@@ -83,6 +83,7 @@ export const CardsContainer = ({
         {seeAllLink ? (
           <LinkInline
             href={seeAllLink}
+            data-testid="card-controller-see-all-link"
             overrides={{
               externalIcon: { size: '0' },
               stylePreset: 'inkBrand010'
@@ -91,7 +92,7 @@ export const CardsContainer = ({
             {title}
           </LinkInline>
         ) : (
-          title
+          <span data-testid="no-see-all-link">{title}</span>
         )}
       </StyledTitleBar>
       <Scroll
@@ -105,9 +106,9 @@ export const CardsContainer = ({
           columns={
             !isScrollable
               ? {
-                  xs: 'repeat(2, 1fr)',
-                  md: 'repeat(4, 1fr)'
-                }
+                xs: 'repeat(2, 1fr)',
+                md: 'repeat(4, 1fr)'
+              }
               : undefined
           }
           autoFlow={isScrollable ? 'column' : undefined}
