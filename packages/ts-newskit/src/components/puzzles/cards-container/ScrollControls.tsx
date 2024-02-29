@@ -1,10 +1,8 @@
 import React from 'react';
 import { Stack, IconButton, Button } from 'newskit';
 import { NewskitIconBack, NewskitIconForward } from '../../../assets';
-import {
-  TrackingContext,
-  TrackingContextProvider
-} from '../../../utils/TrackingContextProvider';
+import { puzzleCategoryClickTracking } from '../../../utils/tracking';
+import { PuzzleScrollClickHandlerType, MouseEventType } from './types';
 
 interface ScrollControlsProps {
   scrollRef: React.RefObject<HTMLDivElement>;
@@ -13,24 +11,23 @@ interface ScrollControlsProps {
   sectionTitle?: string;
 }
 
-const clickEvent = (puzzleType: string, nextPrev: string) => ({
-  action: 'Clicked',
-  attrs: {
-    event_navigation_action: 'navigation',
-    event_navigation_name: `puzzle ${nextPrev} button clicked`,
-    event_navigation_browsing_method: 'click',
-    article_parent_name: `${puzzleType}`
-  }
-});
-
 export const ScrollControls = ({
-  scrollRef,
-  seeAllLink,
-  cardRef,
-  sectionTitle
-}: ScrollControlsProps) => {
+  scrollProps,
+  clickHandler
+}: {
+  scrollProps: ScrollControlsProps,
+  clickHandler: PuzzleScrollClickHandlerType
+}) => {
+
+  const {
+    scrollRef,
+    seeAllLink,
+    cardRef,
+    sectionTitle
+  } = scrollProps;
+
   const controlsHandler = (
-    fireAnalyticsEvent: (evt: TrackingContext) => void,
+    event: MouseEventType,
     scrollDirection: 'left' | 'right',
     clickableSectionTitle: string = 'Puzzles'
   ) => {
@@ -46,69 +43,69 @@ export const ScrollControls = ({
         scrollElement.scrollLeft =
           scrollElement.scrollLeft + cardElement.offsetWidth + 30;
       }
-      fireAnalyticsEvent &&
-        fireAnalyticsEvent(clickEvent(clickableSectionTitle, eventDirection));
+
+      const puzzleScroll = { nextPrev: eventDirection, puzzleType: clickableSectionTitle };
+      puzzleCategoryClickTracking(event, puzzleScroll, clickHandler);
+
     }
   };
   return (
-    <TrackingContextProvider>
-      {({ fireAnalyticsEvent }) => (
-        <Stack flow="horizontal-center">
-          {seeAllLink && (
-            <Button
-              href={seeAllLink}
-              overrides={{
-                stylePreset: 'inkBrand010',
-                marginInlineEnd: 'space030',
-                typographyPreset: 'utilityLabel010',
-                paddingInline: 'space000',
-                minWidth: 'unset'
-              }}
-            >
-              SEE ALL
-            </Button>
-          )}
-          <IconButton
-            overrides={{
-              stylePreset: 'iconButtonOutlinedSecondary',
-              marginInlineEnd: 'space030',
-              paddingInline: 'space020',
-              paddingBlock: 'space020'
-            }}
-            onClick={() =>
-              controlsHandler(fireAnalyticsEvent, 'left', sectionTitle)
-            }
-            data-testid="scroll-left"
-            aria-label="scroll left"
-          >
-            <NewskitIconBack
-              overrides={{
-                size: 'iconSize010',
-                stylePreset: 'inkBase'
-              }}
-            />
-          </IconButton>
-          <IconButton
-            overrides={{
-              stylePreset: 'iconButtonOutlinedSecondary',
-              paddingInline: 'space020',
-              paddingBlock: 'space020'
-            }}
-            onClick={() =>
-              controlsHandler(fireAnalyticsEvent, 'right', sectionTitle)
-            }
-            data-testid="scroll-right"
-            aria-label="scroll right"
-          >
-            <NewskitIconForward
-              overrides={{
-                size: 'iconSize010',
-                stylePreset: 'inkBase'
-              }}
-            />
-          </IconButton>
-        </Stack>
+    <Stack flow="horizontal-center">
+      {seeAllLink && (
+        <Button
+          href={seeAllLink}
+          overrides={{
+            stylePreset: 'inkBrand010',
+            marginInlineEnd: 'space030',
+            typographyPreset: 'utilityLabel010',
+            paddingInline: 'space000',
+            minWidth: 'unset'
+          }}
+        >
+          SEE ALL
+        </Button>
       )}
-    </TrackingContextProvider>
+      <IconButton
+        overrides={{
+          stylePreset: 'iconButtonOutlinedSecondary',
+          marginInlineEnd: 'space030',
+          paddingInline: 'space020',
+          paddingBlock: 'space020'
+        }}
+        onClick={(event: MouseEventType) =>
+          controlsHandler(event, 'left', sectionTitle)
+        }
+        data-testid="scroll-left"
+        aria-label="scroll left"
+        href=""
+      >
+        <NewskitIconBack
+          overrides={{
+            size: 'iconSize010',
+            stylePreset: 'inkBase'
+          }}
+        />
+      </IconButton>
+      <IconButton
+        overrides={{
+          stylePreset: 'iconButtonOutlinedSecondary',
+          paddingInline: 'space020',
+          paddingBlock: 'space020'
+        }}
+        onClick={(event: MouseEventType) =>
+          controlsHandler(event, 'right', sectionTitle)
+        }
+        data-testid="scroll-right"
+        aria-label="scroll right"
+        href=""
+      >
+        <NewskitIconForward
+          overrides={{
+            size: 'iconSize010',
+            stylePreset: 'inkBase'
+          }}
+        />
+      </IconButton>
+    </Stack>
   );
 };

@@ -10,24 +10,33 @@ import { Puzzle } from '../archive/types';
 import { StyledTitleBar } from './styles';
 import { ScrollControls } from './ScrollControls';
 import { PuzzleCard } from '../puzzle-card';
+import { PuzzleScrollClickHandlerType } from './types';
 
-interface CardsContainerProps {
+export interface CardsContainerProps {
   cards: Puzzle[];
   title?: string;
   isScrollable?: boolean;
   seeAllLink?: string;
   isImageCropped?: boolean;
-  isDashHidden?: boolean;
+  isDashHidden?: boolean
 }
 
 export const CardsContainer = ({
-  cards,
-  title,
-  isScrollable = false,
-  seeAllLink,
-  isImageCropped = false,
-  isDashHidden = false
-}: CardsContainerProps) => {
+  cardsProps,
+  clickHandler
+}: {
+  cardsProps: CardsContainerProps,
+  clickHandler: PuzzleScrollClickHandlerType
+}) => {
+  const {
+    cards,
+    title,
+    isScrollable = false,
+    seeAllLink,
+    isImageCropped = false,
+    isDashHidden = false
+  } = cardsProps;
+
   const scrollRef = useRef(null);
   const cardRef = useRef(null);
 
@@ -59,6 +68,7 @@ export const CardsContainer = ({
               seeAllLink={seeAllLink}
               cardRef={cardRef}
               sectionTitle={title}
+              clickHandler={clickHandler}
             />
           ) : null
         }
@@ -93,9 +103,9 @@ export const CardsContainer = ({
           columns={
             !isScrollable
               ? {
-                  xs: 'repeat(2, 1fr)',
-                  md: 'repeat(4, 1fr)'
-                }
+                xs: 'repeat(2, 1fr)',
+                md: 'repeat(4, 1fr)'
+              }
               : undefined
           }
           autoFlow={isScrollable ? 'column' : undefined}

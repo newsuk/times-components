@@ -24,7 +24,7 @@ The `CardsContainer` component is used to display Puzzle cards using the NewsKit
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const CardsContainerStory = ({cards, title, isScrollable, seeAllLink, isImageCropped, isDashHidden}) => (
+export const CardsContainerStory = ({cardsProps, clickHandler}) => (
   <NewsKitProvider theme={PuzzlesWebLightTheme}>
     <TrackingContextProvider
       analyticsStream={analyticsStream}
@@ -35,7 +35,7 @@ export const CardsContainerStory = ({cards, title, isScrollable, seeAllLink, isI
       }}
     >
       <ContentWrapper marginInline='auto' paddingBlock='space020' paddingInline='space020'>
-        <CardsContainer cards={cards} title={title} isScrollable={isScrollable} seeAllLink={seeAllLink} isImageCropped={isImageCropped} isDashHidden={isDashHidden}/>
+        <CardsContainer cardsProps={cardsProps} clickHandler={clickHandler} />
       </ContentWrapper>
     </TrackingContextProvider>
   </NewsKitProvider>

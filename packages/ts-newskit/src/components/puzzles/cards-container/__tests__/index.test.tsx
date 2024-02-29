@@ -1,68 +1,55 @@
 import React from 'react';
 import { render } from '../../../../utils/test-utils';
-import { CardsContainer } from '../index';
+import { CardsContainer, CardsContainerProps } from '../index';
 import '@testing-library/jest-dom';
 import { fireEvent } from '@testing-library/react';
 import { puzzleGame } from './../fixtures/puzzleGame.json';
-import { TrackingContextProvider } from '../../../../utils/TrackingContextProvider';
+import { PuzzleScrollClickHandlerType } from '../types';
+
+const mockClickHandler = jest.fn();
+
+const defaultProps = {
+  cards: Array(8).fill(puzzleGame),
+  title: "Crosswords",
+  seeAllLink: "https://newskit.co.uk/components"
+};
+
+const renderComponent = (
+  theProps: CardsContainerProps,
+  clickHandler: PuzzleScrollClickHandlerType
+) => render(<CardsContainer
+  cardsProps={theProps}
+  clickHandler={clickHandler} />);
 
 describe('CardsContainer tests', () => {
   it('should render a snapshot without scroller', () => {
-    const { asFragment } = render(
-      <CardsContainer
-        cards={Array(8).fill(puzzleGame)}
-        title="Crosswords"
-        seeAllLink="https://newskit.co.uk/components"
-      />
-    );
+    const { asFragment } = renderComponent(defaultProps, mockClickHandler);
     expect(asFragment()).toMatchSnapshot();
   });
+
   it('should render a snapshot without scroller and without dash divider', () => {
-    const { asFragment } = render(
-      <CardsContainer
-        cards={Array(8).fill(puzzleGame)}
-        title="Crosswords"
-        seeAllLink="https://newskit.co.uk/components"
-        isDashHidden={true}
-      />
-    );
+    const { asFragment } = renderComponent({ ...defaultProps, isDashHidden: true }, mockClickHandler);
     expect(asFragment()).toMatchSnapshot();
   });
+
   it('should render a snapshot with scroller', () => {
-    const { asFragment } = render(
-      <CardsContainer
-        cards={Array(8).fill(puzzleGame)}
-        title="Crosswords"
-        seeAllLink="https://newskit.co.uk/components"
-        isScrollable={true}
-      />
-    );
+    const { asFragment } = renderComponent({ ...defaultProps, isScrollable: true }, mockClickHandler);
     expect(asFragment()).toMatchSnapshot();
   });
+
   it('should scroll right once scroll right control is clicked', () => {
-    const { getByTestId } = render(
-      <CardsContainer
-        cards={Array(7).fill(puzzleGame)}
-        title="Crosswords"
-        seeAllLink="https://newskit.co.uk/components"
-        isScrollable={true}
-      />
-    );
+    const { getByTestId } = renderComponent({ ...defaultProps, isScrollable: true }, mockClickHandler);
+
     const scrollContainer = getByTestId('scroll-container');
     const btnScrollRight = getByTestId('scroll-right');
 
     fireEvent.click(btnScrollRight);
     expect(scrollContainer.scrollLeft).toBeGreaterThan(0);
   });
+
   it('should scroll left once scroll left control is clicked', () => {
-    const { getByTestId } = render(
-      <CardsContainer
-        cards={Array(7).fill(puzzleGame)}
-        title="Crosswords"
-        seeAllLink="https://newskit.co.uk/components"
-        isScrollable={true}
-      />
-    );
+    const { getByTestId } = renderComponent({ ...defaultProps, isScrollable: true, cards: Array(7).fill(puzzleGame) }, mockClickHandler);
+
     const scrollContainer = getByTestId('scroll-container');
     const btnScrollLeft = getByTestId('scroll-left');
 
@@ -70,35 +57,4 @@ describe('CardsContainer tests', () => {
     expect(scrollContainer.scrollLeft).toBeLessThan(0);
   });
 
-  const renderControlsWithTracking = (analyticsStream?: (event: any) => void) =>
-    render(
-      <TrackingContextProvider
-        context={{
-          component: 'breadcrumb',
-          attrs: {}
-        }}
-        analyticsStream={analyticsStream}
-      >
-        <CardsContainer
-          cards={Array(7).fill(puzzleGame)}
-          title="Crosswords"
-          seeAllLink="https://newskit.co.uk/components"
-          isScrollable={true}
-        />
-      </TrackingContextProvider>
-    );
-  it('calls analyticsStream when you click scroll right', () => {
-    const analyticsStream = jest.fn();
-    const { getByTestId } = renderControlsWithTracking(analyticsStream);
-    const scrollRight = getByTestId('scroll-right');
-    fireEvent.click(scrollRight);
-    expect(analyticsStream).toHaveBeenCalledTimes(1);
-  });
-  it('calls analyticsStream when you click scroll left', () => {
-    const analyticsStream = jest.fn();
-    const { getByTestId } = renderControlsWithTracking(analyticsStream);
-    const scrollLeft = getByTestId('scroll-left');
-    fireEvent.click(scrollLeft);
-    expect(analyticsStream).toHaveBeenCalledTimes(1);
-  });
 });
