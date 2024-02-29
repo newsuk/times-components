@@ -26,11 +26,17 @@ describe('CardsContainer tests', () => {
 
     const seeAllLink = getAllByTestId('card-controller-see-all-link')[0];
     expect(seeAllLink).toBeInTheDocument();
-    expect(seeAllLink).toHaveAttribute('href', 'https://newskit.co.uk/components');
+    expect(seeAllLink).toHaveAttribute(
+      'href',
+      'https://newskit.co.uk/components'
+    );
   });
 
   it('should NOT render a seeAllLink', () => {
-    const { getAllByTestId } = renderComponent({ ...defaultProps, seeAllLink: undefined }, mockClickHandler);
+    const { getAllByTestId } = renderComponent(
+      { ...defaultProps, seeAllLink: undefined },
+      mockClickHandler
+    );
 
     const seeAllLink = getAllByTestId('no-see-all-link')[0];
     expect(seeAllLink).toBeInTheDocument();

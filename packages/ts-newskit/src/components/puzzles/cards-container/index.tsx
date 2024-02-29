@@ -106,9 +106,9 @@ export const CardsContainer = ({
           columns={
             !isScrollable
               ? {
-                xs: 'repeat(2, 1fr)',
-                md: 'repeat(4, 1fr)'
-              }
+                  xs: 'repeat(2, 1fr)',
+                  md: 'repeat(4, 1fr)'
+                }
               : undefined
           }
           autoFlow={isScrollable ? 'column' : undefined}
