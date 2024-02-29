@@ -95,3 +95,10 @@ export const PuzzlesSidebar = styled.div`
 export const ArticleWrapper = styled.div`
   position: relative;
 `;
+
+export const ArticleContent = styled.div`
+  @media (min-width: ${breakpoints.wide}px) {
+    margin-top: ${({ showMargin }) => (showMargin ? "-335px" : "0")};
+    transition: margin-top 0.2s ease;
+  }
+`;

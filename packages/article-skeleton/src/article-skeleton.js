@@ -38,7 +38,8 @@ import {
   UpdateButtonContainer,
   PuzzlesSidebar,
   SidebarWarpper,
-  ArticleWrapper
+  ArticleWrapper,
+  ArticleContent
 } from "./styles/responsive";
 import styles from "./styles/article-body/index";
 import Head from "./head";
@@ -342,13 +343,7 @@ const ArticleSkeleton = ({
                       </TCThemeProvider>
                     </SidebarWarpper>
                   )}
-                  <div
-                    style={
-                      CanShowPuzzleSidebar(section)
-                        ? { marginTop: "-335px" }
-                        : null
-                    }
-                  >
+                  <ArticleContent showMargin={CanShowPuzzleSidebar(section)}>
                     {!!zephrDivs && (
                       <StaticContent
                         html={
@@ -398,7 +393,7 @@ const ArticleSkeleton = ({
                         />
                       )}
                     </PaywallPortal>
-                  </div>
+                  </ArticleContent>
                 </ArticleWrapper>
                 <LazyLoad rootMargin={spacing(40)} threshold={0}>
                   {({ observed, registerNode }) => (
