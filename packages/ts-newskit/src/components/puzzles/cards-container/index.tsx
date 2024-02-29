@@ -18,15 +18,15 @@ export interface CardsContainerProps {
   isScrollable?: boolean;
   seeAllLink?: string;
   isImageCropped?: boolean;
-  isDashHidden?: boolean
+  isDashHidden?: boolean;
 }
 
 export const CardsContainer = ({
   cardsProps,
   clickHandler
 }: {
-  cardsProps: CardsContainerProps,
-  clickHandler: PuzzleScrollClickHandlerType
+  cardsProps: CardsContainerProps;
+  clickHandler: PuzzleScrollClickHandlerType;
 }) => {
   const {
     cards,
@@ -64,10 +64,12 @@ export const CardsContainer = ({
         actionItem={() =>
           isScrollable && cards.length > 4 ? (
             <ScrollControls
-              scrollRef={scrollRef}
-              seeAllLink={seeAllLink}
-              cardRef={cardRef}
-              sectionTitle={title}
+              scrollProps={{
+                scrollRef,
+                cardRef,
+                seeAllLink,
+                sectionTitle: title
+              }}
               clickHandler={clickHandler}
             />
           ) : null
@@ -103,9 +105,9 @@ export const CardsContainer = ({
           columns={
             !isScrollable
               ? {
-                xs: 'repeat(2, 1fr)',
-                md: 'repeat(4, 1fr)'
-              }
+                  xs: 'repeat(2, 1fr)',
+                  md: 'repeat(4, 1fr)'
+                }
               : undefined
           }
           autoFlow={isScrollable ? 'column' : undefined}

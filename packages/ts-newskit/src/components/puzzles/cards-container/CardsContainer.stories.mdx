@@ -41,9 +41,9 @@ export const CardsContainerStory = ({cardsProps, clickHandler}) => (
   </NewsKitProvider>
 );
 
-<Story name="Cards Container" args={{cards: Array(4).fill(puzzleGame), title: 'Latest Crosswords', isScrollable: false, seeAllLink: 'https://www.newskit.co.uk/', isDashHidden: false}}
+<Story name="Cards Container" args={{cardsProps: {cards: Array(8).fill(puzzleGame), title: 'Latest Crosswords', isScrollable: false, seeAllLink: 'https://www.newskit.co.uk/', isDashHidden: false}}}
 argTypes={{
-  cards: {
+  cardsProps: {cards: {
     control: 'select',
     name: 'Cards (choose number of cards)',
     options: ['3 cards', '4 cards', '5 cards', '6 cards', '7 cards', '8 cards'],
@@ -75,7 +75,8 @@ argTypes={{
     isDashHidden: {
     control: 'boolean',
     name: 'Is Dash Hidden'
-  }  
+  } 
+}
 }}
 >
   {CardsContainerStory.bind({})}

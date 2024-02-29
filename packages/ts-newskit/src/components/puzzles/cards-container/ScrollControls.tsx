@@ -15,16 +15,10 @@ export const ScrollControls = ({
   scrollProps,
   clickHandler
 }: {
-  scrollProps: ScrollControlsProps,
-  clickHandler: PuzzleScrollClickHandlerType
+  scrollProps: ScrollControlsProps;
+  clickHandler: PuzzleScrollClickHandlerType;
 }) => {
-
-  const {
-    scrollRef,
-    seeAllLink,
-    cardRef,
-    sectionTitle
-  } = scrollProps;
+  const { scrollRef, seeAllLink, cardRef, sectionTitle } = scrollProps;
 
   const controlsHandler = (
     event: MouseEventType,
@@ -44,9 +38,11 @@ export const ScrollControls = ({
           scrollElement.scrollLeft + cardElement.offsetWidth + 30;
       }
 
-      const puzzleScroll = { nextPrev: eventDirection, puzzleType: clickableSectionTitle };
+      const puzzleScroll = {
+        nextPrev: eventDirection,
+        puzzleType: clickableSectionTitle
+      };
       puzzleCategoryClickTracking(event, puzzleScroll, clickHandler);
-
     }
   };
   return (

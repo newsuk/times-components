@@ -1,4 +1,7 @@
-import { PuzzleScrollClickHandlerType, MouseEventType } from '../cards-container/types';
+import {
+  PuzzleScrollClickHandlerType,
+  MouseEventType
+} from '../cards-container/types';
 
 type TrackingPuzzleCategoryProps = {
   nextPrev: string;
