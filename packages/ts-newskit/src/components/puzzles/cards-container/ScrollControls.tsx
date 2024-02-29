@@ -1,7 +1,7 @@
 import React from 'react';
 import { Stack, IconButton, Button } from 'newskit';
 import { NewskitIconBack, NewskitIconForward } from '../../../assets';
-import { puzzleCategoryClickTracking } from '../../../utils/tracking';
+import { puzzleCategoryClickTracking } from '../utils/tracking';
 import { PuzzleScrollClickHandlerType, MouseEventType } from './types';
 
 interface ScrollControlsProps {
