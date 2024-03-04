@@ -6,7 +6,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
     class="css-1ba9oov"
   >
     <div
-      class="lcpPuzzles css-2zeami"
+      class="lcpPuzzles css-8yodrv"
     >
       <picture
         class="css-2pubdt"
@@ -23,7 +23,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
         />
       </picture>
       <div
-        class="css-11mq3i1"
+        class="css-7wldo2"
       >
         <div
           class="css-1az3j4h"
@@ -52,7 +52,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
             class="css-1xzc2un"
           >
             <div
-              class="css-m1f215"
+              class="css-ui5q32"
             >
               Polygon
             </div>
