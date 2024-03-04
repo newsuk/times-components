@@ -19,7 +19,7 @@ const css = `
     width: 100%;
     background-color: unset !important;
 
-    &::before {
+    &::before, &::after {
       content: "";
 
       position: absolute;
@@ -38,12 +38,21 @@ const css = `
       min-height: 80px;
       max-width: 128px;
       max-height: 128px;
-
-      transition: background-image 100ms ease-in-out;
+      transition: opacity 100ms ease-in-out;
     }
 
-    span:before {
-      display: none;
+    &::before {
+      background-image: url(${videoPlayIcon.base});
+      opacity: 1;
+    }
+
+    &::after {
+      background-image: url(${videoPlayIcon.hover});
+      opacity: 0;
+    }
+
+    span::before {
+      display: none;  
     }
 
     &:focus {
@@ -54,7 +63,10 @@ const css = `
     }
     &:hover {
       &::before {
-        background-image: url(${videoPlayIcon.hover});
+        opacity: 0;
+      }
+      &::after {
+        opacity: 1;
       }
     }
   }
