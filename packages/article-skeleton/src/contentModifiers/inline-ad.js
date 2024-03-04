@@ -11,7 +11,7 @@ const insertInlineAd = children => {
   const paywallParagraphs = paywallChildren
     .map((item, index) => ({ ...item, index }))
     .filter(item => item.name === "paragraph");
-  const paraPostition = [15, 20, 25];
+  const paraPostition = [13, 20, 27];
 
   paraPostition.forEach((item, i) => {
     const inlineAd = paywallChildren.find(ad => ad.name === `inlineAd${i + 1}`);
@@ -28,6 +28,7 @@ const insertInlineAd = children => {
       }
     }
   });
+
   return clonedChildren;
 };
 
