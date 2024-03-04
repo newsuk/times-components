@@ -14,12 +14,14 @@ export interface PuzzleCardProps {
   data: Puzzle;
   isImageCropped?: boolean;
   isLazyLoading?: boolean;
+  bgColor?: string;
 }
 
 export const PuzzleCard = ({
   data,
   isImageCropped = false,
-  isLazyLoading = false
+  isLazyLoading = false,
+  bgColor = '#FEEEDC'
 }: PuzzleCardProps) => {
   const publishedDate = convertDateToWeekday(data.publishedAt);
   const imageUrl = data.image ? data.image.crops[0].url : '';
@@ -33,7 +35,10 @@ export const PuzzleCard = ({
         stylePreset: 'puzzleCard'
       }}
     >
-      <PuzzleCardImgWrapper className={isLazyLoading ? '' : 'lcpPuzzles'}>
+      <PuzzleCardImgWrapper
+        className={isLazyLoading ? '' : 'lcpPuzzles'}
+        bgColor={bgColor}
+      >
         {imageUrl ? (
           <Image
             loadingAspectRatio="3:2"
@@ -69,6 +74,7 @@ export const PuzzleCard = ({
               as="div"
               marginBlock="space020"
               marginInline="space020"
+              marginBlockStart="space030"
               stylePreset="inkContrast"
               typographyPreset={{
                 xs: 'editorialHeadline010',
