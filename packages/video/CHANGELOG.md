@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.17.1](https://github.com/newsuk/times-components/compare/@times-components/video@4.17.0...@times-components/video@4.17.1) (2024-03-05)
+
+
+### Bug Fixes
+
+* double video icon ([#3784](https://github.com/newsuk/times-components/issues/3784)) ([a573143](https://github.com/newsuk/times-components/commit/a57314329281bcf3cfeb9a076e6c330b408f9b94))
+
+
+
+
+
 # [4.17.0](https://github.com/newsuk/times-components/compare/@times-components/video@4.16.0...@times-components/video@4.17.0) (2024-02-28)
 
 
