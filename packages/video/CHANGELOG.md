@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.17.2](https://github.com/newsuk/times-components/compare/@times-components/video@4.17.1...@times-components/video@4.17.2) (2024-03-05)
+
+
+### Reverts
+
+* Revert "feat(TMRX-1734): Consistent video button UI (#3776)" (#3789) ([2882944](https://github.com/newsuk/times-components/commit/2882944743fc85b7695cb25578dc38ee5f2e8d7a)), closes [#3776](https://github.com/newsuk/times-components/issues/3776) [#3789](https://github.com/newsuk/times-components/issues/3789)
+* Revert "feat(TMRX-1734): update video play button ui (#3777)" (#3787) ([7dd4ab4](https://github.com/newsuk/times-components/commit/7dd4ab4baa17df06e29be4cc789c41d1bfce4aef)), closes [#3777](https://github.com/newsuk/times-components/issues/3777) [#3787](https://github.com/newsuk/times-components/issues/3787)
+* Revert "fix: double video icon (#3784)" (#3786) ([dea0686](https://github.com/newsuk/times-components/commit/dea068683fa66b828c5abf5286138543160c7587)), closes [#3784](https://github.com/newsuk/times-components/issues/3784) [#3786](https://github.com/newsuk/times-components/issues/3786)
+
+
+
+
+
+## [4.17.1](https://github.com/newsuk/times-components/compare/@times-components/video@4.17.0...@times-components/video@4.17.1) (2024-03-05)
+
+
+### Bug Fixes
+
+* double video icon ([#3784](https://github.com/newsuk/times-components/issues/3784)) ([a573143](https://github.com/newsuk/times-components/commit/a57314329281bcf3cfeb9a076e6c330b408f9b94))
+
+
+
+
+
 # [4.17.0](https://github.com/newsuk/times-components/compare/@times-components/video@4.16.0...@times-components/video@4.17.0) (2024-02-28)
 
 

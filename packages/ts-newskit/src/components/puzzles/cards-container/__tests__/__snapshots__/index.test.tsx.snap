@@ -182,7 +182,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -199,7 +199,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -228,7 +228,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -287,7 +287,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -304,7 +304,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -333,7 +333,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -392,7 +392,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -409,7 +409,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -438,7 +438,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -497,7 +497,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -514,7 +514,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -543,7 +543,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -602,7 +602,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -615,7 +615,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -644,7 +644,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -703,7 +703,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -716,7 +716,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -745,7 +745,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -804,7 +804,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -817,7 +817,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -846,7 +846,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -905,7 +905,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -918,7 +918,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -947,7 +947,7 @@ exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -1088,7 +1088,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -1105,7 +1105,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -1134,7 +1134,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -1193,7 +1193,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -1210,7 +1210,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -1239,7 +1239,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -1298,7 +1298,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -1315,7 +1315,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -1344,7 +1344,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -1403,7 +1403,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -1420,7 +1420,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -1449,7 +1449,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -1508,7 +1508,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -1521,7 +1521,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -1550,7 +1550,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -1609,7 +1609,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -1622,7 +1622,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -1651,7 +1651,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -1710,7 +1710,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -1723,7 +1723,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -1752,7 +1752,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -1811,7 +1811,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -1824,7 +1824,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -1853,7 +1853,7 @@ exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -1994,7 +1994,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -2011,7 +2011,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -2040,7 +2040,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -2099,7 +2099,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -2116,7 +2116,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -2145,7 +2145,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -2204,7 +2204,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -2221,7 +2221,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -2250,7 +2250,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -2309,7 +2309,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
             class="css-1ba9oov"
           >
             <div
-              class="lcpPuzzles css-2zeami"
+              class="lcpPuzzles css-8yodrv"
             >
               <picture
                 class="css-2pubdt"
@@ -2326,7 +2326,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -2355,7 +2355,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -2414,7 +2414,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -2427,7 +2427,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -2456,7 +2456,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -2515,7 +2515,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -2528,7 +2528,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -2557,7 +2557,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -2616,7 +2616,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -2629,7 +2629,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -2658,7 +2658,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>
@@ -2717,7 +2717,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
             class="css-1ba9oov"
           >
             <div
-              class=" css-2zeami"
+              class=" css-8yodrv"
             >
               <picture
                 class="css-om84o6"
@@ -2730,7 +2730,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                 />
               </picture>
               <div
-                class="css-11mq3i1"
+                class="css-7wldo2"
               >
                 <div
                   class="css-1az3j4h"
@@ -2759,7 +2759,7 @@ exports[`CardsContainer tests should render a snapshot without scroller and with
                     class="css-1xzc2un"
                   >
                     <div
-                      class="css-m1f215"
+                      class="css-ui5q32"
                     >
                       Puzzle Name
                     </div>

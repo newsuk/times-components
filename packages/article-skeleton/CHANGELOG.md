@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.123.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.123.6...@times-components/article-skeleton@1.123.7) (2024-03-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.123.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.123.5...@times-components/article-skeleton@1.123.6) (2024-03-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.123.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.123.4...@times-components/article-skeleton@1.123.5) (2024-03-04)
+
+
+### Reverts
+
+* Revert "feat(TMRX-1962): Update ad placement in articles (#3775)" (#3782) ([3d7a766](https://github.com/newsuk/times-components/commit/3d7a766318d750d672a44827d87ebc892bff72ae)), closes [#3775](https://github.com/newsuk/times-components/issues/3775) [#3782](https://github.com/newsuk/times-components/issues/3782)
+
+
+
+
+
 ## [1.123.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.123.3...@times-components/article-skeleton@1.123.4) (2024-02-29)
 
 **Note:** Version bump only for package @times-components/article-skeleton
