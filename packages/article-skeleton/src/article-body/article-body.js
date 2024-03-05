@@ -57,9 +57,6 @@ import {
   Heading4,
   Heading5,
   Heading6,
-  NativeAd,
-  NativeAdTitle,
-  Ad,
   InlineAdWrapper,
   InlineAdTitle
 } from "../styles/article-body/responsive";

@@ -13,9 +13,7 @@ import {
   BreadcrumbContainer,
   ShareAndSaveContainer
 } from "./styles/responsive";
-import { NativeAd,
-  NativeAdTitle,
-  Ad,} from "./styles"
+import { NativeAd, NativeAdTitle, Ad } from "./styles";
 
 const clearingStyle = {
   clear: "both"

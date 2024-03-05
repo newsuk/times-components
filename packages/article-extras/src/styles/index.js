@@ -7,7 +7,7 @@ import {
   fontSizes,
   fontsWithFallback
 } from "@times-components/ts-styleguide";
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const NativeAd = styled.div`
   clear: both;
