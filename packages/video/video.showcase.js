@@ -8,7 +8,7 @@ const policyKey =
 const accountId = "5436121857001";
 const videoId = "5831024132001";
 const posterImageURI =
-  "https://cf-images.eu-west-1.prod.boltdns.net/v1/static/5436121857001/5b0db6f6-a899-4ad8-b42f-4ab0af99505e/904aca55-79ca-4a4f-8d19-46c3a68c0700/1280x720/match/image.jpg";
+  "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
 
 const defaultVideoProps = {
   accountId,
@@ -49,19 +49,9 @@ export default {
               marginTop: 20
             }}
           >
-            Tablet size:
-          </div>
-          <Video {...defaultVideoProps} width={498} height={280} />
-
-          <div
-            style={{
-              marginBottom: 10,
-              marginTop: 20
-            }}
-          >
             Desktop size:
           </div>
-          <Video {...defaultVideoProps} width={760} height={427} />
+          <Video {...defaultVideoProps} height={374} width={664} />
         </div>
       ),
       name: "default player",
@@ -96,8 +86,8 @@ export default {
             <Video
               {...defaultVideoProps}
               {...props}
-              width={768}
-              height={432}
+              height={374}
+              width={664}
               id={mockId}
             />
           </div>
