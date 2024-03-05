@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-newskit",
-  "version": "1.172.4",
+  "version": "1.173.0",
   "description": "Reuseable Typescript React Components",
   "main": "dist/index.js",
   "dev": "dist/index.js",
@@ -52,7 +52,7 @@
   "dependencies": {
     "@emotion/react": "11.11.0",
     "@emotion/styled": "11.11.0",
-    "@newskit-themes/the-times": "1.1.0",
+    "@newskit-themes/the-times": "1.2.1",
     "isomorphic-unfetch": "3.1.0",
     "lodash.merge": "4.6.2",
     "newskit": "7.2.0",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.173.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.172.4...@times-components/ts-newskit@1.173.0) (2024-03-05)
+
+
+### Features
+
+* **TMRX-1852:** new culture theme ([#3785](https://github.com/newsuk/times-components/issues/3785)) ([f729843](https://github.com/newsuk/times-components/commit/f72984333fa17a2d79f0625cb65dc5fc3d922125))
+
+
+
+
+
 ## [1.172.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.172.3...@times-components/ts-newskit@1.172.4) (2024-03-04)
 
 **Note:** Version bump only for package @times-components/ts-newskit
