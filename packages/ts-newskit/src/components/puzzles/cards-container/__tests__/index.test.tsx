@@ -32,7 +32,7 @@ describe('CardsContainer tests', () => {
     );
   });
 
-  it('should NOT render a seeAllLink', () => {
+  it('should NOT be rendering a seeAllLink', () => {
     const { getAllByTestId } = renderComponent(
       { ...defaultProps, seeAllLink: undefined },
       mockClickHandler
