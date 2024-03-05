@@ -188,19 +188,6 @@ const contentWithAd = [
         children: []
       },
       {
-        name: "paragraph",
-        children: []
-      },
-      {
-        name: "paragraph",
-        children: []
-      },
-      {
-        // 13th para
-        name: "paragraph",
-        children: []
-      },
-      {
         name: "inlineAd1",
         children: []
       },
@@ -210,6 +197,23 @@ const contentWithAd = [
       },
       {
         name: "paragraph",
+        children: []
+      },
+      {
+        name: "paragraph",
+        children: []
+      },
+      {
+        name: "paragraph",
+        children: []
+      },
+      // 15th para
+      {
+        name: "paragraph",
+        children: []
+      },
+      {
+        name: "inlineAd2",
         children: []
       },
       {

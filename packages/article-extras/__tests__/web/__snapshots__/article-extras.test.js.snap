@@ -23,11 +23,17 @@ Array [
       RecommendedFetch
     </div>
   </div>,
-  <div
-    id="sponsored-article-container"
-  >
+  <div>
+    <h2>
+      Sponsored
+    </h2>
     <div
-      id="sponsored-article"
+      data-parent="group-3"
+      id="advert-inarticle-native-1"
+    />
+    <div
+      data-parent="group-3"
+      id="advert-inarticle-native-2"
     />
   </div>,
   <ArticleComments
@@ -52,11 +58,17 @@ Array [
       isVisible={true}
     />
   </div>,
-  <div
-    id="sponsored-article-container"
-  >
+  <div>
+    <h2>
+      Sponsored
+    </h2>
     <div
-      id="sponsored-article"
+      data-parent="group-3"
+      id="advert-inarticle-native-1"
+    />
+    <div
+      data-parent="group-3"
+      id="advert-inarticle-native-2"
     />
   </div>,
 ]
@@ -85,11 +97,17 @@ Array [
       RecommendedFetch
     </div>
   </div>,
-  <div
-    id="sponsored-article-container"
-  >
+  <div>
+    <h2>
+      Sponsored
+    </h2>
     <div
-      id="sponsored-article"
+      data-parent="group-3"
+      id="advert-inarticle-native-1"
+    />
+    <div
+      data-parent="group-3"
+      id="advert-inarticle-native-2"
     />
   </div>,
   <ArticleComments
@@ -128,11 +146,17 @@ Array [
       RecommendedFetch
     </div>
   </div>,
-  <div
-    id="sponsored-article-container"
-  >
+  <div>
+    <h2>
+      Sponsored
+    </h2>
     <div
-      id="sponsored-article"
+      data-parent="group-3"
+      id="advert-inarticle-native-1"
+    />
+    <div
+      data-parent="group-3"
+      id="advert-inarticle-native-2"
     />
   </div>,
   <ArticleComments

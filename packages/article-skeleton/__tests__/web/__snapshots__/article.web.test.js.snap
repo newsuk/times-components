@@ -93,21 +93,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             />
           </div>
         </div>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
-          id="3"
+          id="2"
         >
           <div>
             <div>
@@ -133,7 +120,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           </div>
         </div>
         <div
-          id="4"
+          id="3"
         >
           <div>
             <div>
@@ -159,7 +146,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           </div>
         </div>
         <div
-          id="5"
+          id="4"
         >
           <div>
             <div>
@@ -574,19 +561,6 @@ exports[`2. an article with interactives 1`] = `
               source="https://interactive.io"
             />
           </div>
-        </div>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
         </div>
         <div
           id="paywall-portal-article-footer"
@@ -1122,19 +1096,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
             When she does come to social events, she dominates.
           </b>
         </p>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -1263,19 +1224,6 @@ exports[`6. an article with heading tags 1`] = `
         <h3>
           This is heading 3
         </h3>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -1458,19 +1406,6 @@ exports[`7. an article with link 1`] = `
           </Link>
            said today that while the company was unlikely to open its offices before September, almost all staff could now work permanently from wherever they want.
         </p>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -1656,19 +1591,6 @@ exports[`8. an article with italic link 1`] = `
           </Link>
           , Professor Tetlock said the most accurate predictors all used very similar methods. They used a historical “base rate” for predicting how likely an event was, adjusting constantly in the light of new information.
         </p>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -1853,19 +1775,6 @@ exports[`9. an article with bold text followed by bold link 1`] = `
             </Link>
           </b>
         </p>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -2052,19 +1961,6 @@ exports[`10. an article with italic and normal text link 1`] = `
           </Link>
            to support people in greatest hardship under the restrictions. The second charity is The Big Issue Foundation.
         </p>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -2245,19 +2141,6 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
             </i>
           </b>
         </p>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -2436,19 +2319,6 @@ exports[`12. an article with text wrapped in inline element 1`] = `
             They may have been improved by the controversy that ensued when Watson appeared on the cover of Vanity Fair to promote it, wearing a top that partially exposed her breasts. She rejected criticism that the pose was at odds with her claim to be a feminist. “Feminism is not a stick with which to beat other women. It’s about liberation. It’s about equality,” she said, adding: “I really don’t know what my tits have to do with it.” 
           </span>
         </p>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -2628,19 +2498,6 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
             Participants’ names and general locations will be published if they are the winner of the Competition in accordance with regulatory requirements, both during this and future promotions by the Promoter or any associated or subsidiary company of News Corp UK & Ireland Limited.
           </span>
         </p>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -2821,19 +2678,6 @@ exports[`14. an article with inline inside a bold tag 1`] = `
             </span>
           </b>
         </p>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -3013,19 +2857,6 @@ exports[`15. an article starting with single quote 1`] = `
           </span>
           orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
         </p>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -3205,19 +3036,6 @@ exports[`16. an article starting with double quote 1`] = `
           </span>
           orting eyebrows?! Really? During a pandemic?!” This tweet landed in my Twitter feed after talking to Jenni Murray on BBC Radio 4 
         </p>
-        <div>
-          <h2>
-            Sponsored
-          </h2>
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-1"
-          />
-          <div
-            data-parent="group-3"
-            id="advert-inarticle-native-2"
-          />
-        </div>
         <div
           id="paywall-portal-article-footer"
         />

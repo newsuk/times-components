@@ -13,6 +13,9 @@ import {
   BreadcrumbContainer,
   ShareAndSaveContainer
 } from "./styles/responsive";
+import { NativeAd,
+  NativeAdTitle,
+  Ad,} from "./styles"
 
 const clearingStyle = {
   clear: "both"
@@ -70,9 +73,11 @@ const ArticleExtras = ({
           />
         )}
       </div>
-      <div id="sponsored-article-container">
-        <div id="sponsored-article" />
-      </div>
+      <NativeAd className="group-3 hidden" key="1">
+        <NativeAdTitle>Sponsored</NativeAdTitle>
+        <Ad id="advert-inarticle-native-1" data-parent="group-3" />
+        <Ad id="advert-inarticle-native-2" data-parent="group-3" />
+      </NativeAd>
     </>
   );
   return (

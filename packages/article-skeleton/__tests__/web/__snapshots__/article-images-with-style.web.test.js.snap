@@ -24,42 +24,6 @@ exports[`1. a primary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c5 {
-  clear: both;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto 30px;
-  width: 80.8%;
-  min-height: 210px;
-}
-
-.c5.hidden {
-  visibility: hidden;
-}
-
-.c6 {
-  border-bottom: 1px solid #dbdbdb;
-  color: #333;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
-  margin-bottom: 10px;
-  padding: 5px 0;
-  text-transform: uppercase;
-}
-
-.c7 {
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -83,7 +47,7 @@ exports[`1. a primary image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c5 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -142,34 +106,6 @@ exports[`1. a primary image 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c5 {
-    min-height: 120px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    width: 56.2%;
-  }
-}
-
-@media (max-width:767px) {
-  .c7 {
-    -webkit-flex: 1 1 46%;
-    -ms-flex: 1 1 46%;
-    flex: 1 1 46%;
-  }
-
-  .c7:first-of-type {
-    margin-right: 1.5%;
-  }
-
-  .c7:last-child {
-    margin-left: 1.5%;
-  }
-}
-
 @media (min-width:1024px) {
   .c1 {
     padding-top: 20px;
@@ -218,21 +154,6 @@ exports[`1. a primary image 1`] = `
             </div>
           </div>
         </div>
-        <div
-          className="group-3 hidden c5"
-        >
-          <h2
-            className="c6"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c7"
-          />
-          <div
-            className="c7"
-          />
-        </div>
         <div />
         <ArticleExtras />
       </article>
@@ -264,42 +185,6 @@ exports[`2. a fullwidth image 1`] = `
   padding-bottom: 20px;
 }
 
-.c5 {
-  clear: both;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto 30px;
-  width: 80.8%;
-  min-height: 210px;
-}
-
-.c5.hidden {
-  visibility: hidden;
-}
-
-.c6 {
-  border-bottom: 1px solid #dbdbdb;
-  color: #333;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
-  margin-bottom: 10px;
-  padding: 5px 0;
-  text-transform: uppercase;
-}
-
-.c7 {
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -323,7 +208,7 @@ exports[`2. a fullwidth image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c5 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -369,34 +254,6 @@ exports[`2. a fullwidth image 1`] = `
   padding-bottom: 10px;
 }
 
-@media (min-width:768px) {
-  .c5 {
-    min-height: 120px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    width: 56.2%;
-  }
-}
-
-@media (max-width:767px) {
-  .c7 {
-    -webkit-flex: 1 1 46%;
-    -ms-flex: 1 1 46%;
-    flex: 1 1 46%;
-  }
-
-  .c7:first-of-type {
-    margin-right: 1.5%;
-  }
-
-  .c7:last-child {
-    margin-left: 1.5%;
-  }
-}
-
 @media (min-width:1024px) {
   .c1 {
     padding-top: 20px;
@@ -445,21 +302,6 @@ exports[`2. a fullwidth image 1`] = `
             </div>
           </div>
         </div>
-        <div
-          className="group-3 hidden c5"
-        >
-          <h2
-            className="c6"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c7"
-          />
-          <div
-            className="c7"
-          />
-        </div>
         <div />
         <ArticleExtras />
       </article>
@@ -500,42 +342,6 @@ exports[`3. a secondary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c5 {
-  clear: both;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto 30px;
-  width: 80.8%;
-  min-height: 210px;
-}
-
-.c5.hidden {
-  visibility: hidden;
-}
-
-.c6 {
-  border-bottom: 1px solid #dbdbdb;
-  color: #333;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
-  margin-bottom: 10px;
-  padding: 5px 0;
-  text-transform: uppercase;
-}
-
-.c7 {
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -559,7 +365,7 @@ exports[`3. a secondary image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c5 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -620,34 +426,6 @@ exports[`3. a secondary image 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c5 {
-    min-height: 120px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    width: 56.2%;
-  }
-}
-
-@media (max-width:767px) {
-  .c7 {
-    -webkit-flex: 1 1 46%;
-    -ms-flex: 1 1 46%;
-    flex: 1 1 46%;
-  }
-
-  .c7:first-of-type {
-    margin-right: 1.5%;
-  }
-
-  .c7:last-child {
-    margin-left: 1.5%;
-  }
-}
-
 @media (min-width:1024px) {
   .c1 {
     padding-top: 20px;
@@ -695,21 +473,6 @@ exports[`3. a secondary image 1`] = `
               <ArticleImage />
             </div>
           </div>
-        </div>
-        <div
-          className="group-3 hidden c5"
-        >
-          <h2
-            className="c6"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c7"
-          />
-          <div
-            className="c7"
-          />
         </div>
         <div />
         <ArticleExtras />
@@ -752,42 +515,6 @@ exports[`4. an inline image 1`] = `
   display: block;
 }
 
-.c5 {
-  clear: both;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 auto 30px;
-  width: 80.8%;
-  min-height: 210px;
-}
-
-.c5.hidden {
-  visibility: hidden;
-}
-
-.c6 {
-  border-bottom: 1px solid #dbdbdb;
-  color: #333;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
-  margin-bottom: 10px;
-  padding: 5px 0;
-  text-transform: uppercase;
-}
-
-.c7 {
-  -webkit-flex: 1 1 50%;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -811,7 +538,7 @@ exports[`4. an inline image 1`] = `
   z-index: 0;
 }
 
-.c2 > .c8 {
+.c2 > .c5 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
@@ -872,34 +599,6 @@ exports[`4. an inline image 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c5 {
-    min-height: 120px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c5 {
-    width: 56.2%;
-  }
-}
-
-@media (max-width:767px) {
-  .c7 {
-    -webkit-flex: 1 1 46%;
-    -ms-flex: 1 1 46%;
-    flex: 1 1 46%;
-  }
-
-  .c7:first-of-type {
-    margin-right: 1.5%;
-  }
-
-  .c7:last-child {
-    margin-left: 1.5%;
-  }
-}
-
 @media (min-width:1024px) {
   .c1 {
     padding-top: 20px;
@@ -947,21 +646,6 @@ exports[`4. an inline image 1`] = `
               <ArticleImage />
             </div>
           </div>
-        </div>
-        <div
-          className="group-3 hidden c5"
-        >
-          <h2
-            className="c6"
-          >
-            Sponsored
-          </h2>
-          <div
-            className="c7"
-          />
-          <div
-            className="c7"
-          />
         </div>
         <div />
         <ArticleExtras />
