@@ -6,5 +6,3 @@ export { PuzzlesWebLightTheme } from './puzzles-web-light';
 export { TimesWebLightBusinessTheme } from './times-web-light-business';
 export { TimesWebLightCultureTheme } from './times-web-light-culture';
 export { TimesWebLightWorldTheme } from './times-web-light-world';
-
-
