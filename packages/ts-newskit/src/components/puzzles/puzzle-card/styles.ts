@@ -25,10 +25,10 @@ export const PuzzleCardImgWrapper = styled(Block)<{ bgColor?: string }>`
   background: ${props => props.bgColor};
   height: 102px;
 
-  ${getMediaQueryFromTheme('md')} {
+  ${getMediaQueryFromTheme('lg')} {
     height: 144px;
   }
-  ${getMediaQueryFromTheme('lg')} {
+  ${getMediaQueryFromTheme('xl')} {
     height: 193px;
   }
   img {
