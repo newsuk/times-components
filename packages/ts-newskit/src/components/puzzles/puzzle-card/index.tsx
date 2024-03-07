@@ -42,7 +42,6 @@ export const PuzzleCard = ({
       >
         {imageUrl ? (
           <Image
-            loadingAspectRatio="3:2"
             alt={data.title || 'Puzzle thumbnail'}
             src={croppedImageUrl}
             loading={isLazyLoading ? 'lazy' : 'eager'}
