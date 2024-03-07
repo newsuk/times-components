@@ -33,7 +33,7 @@ export const PuzzleCard = ({
       overrides={{
         height: '100%',
         stylePreset: 'puzzleCard',
-        maxWidth: '293px',
+        maxWidth: '293px'
       }}
     >
       <PuzzleCardImgWrapper
