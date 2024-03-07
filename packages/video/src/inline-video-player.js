@@ -3,6 +3,7 @@ import React, { Component, Fragment } from "react";
 import { appendToImageURL } from "@times-components/utils";
 import { propTypes, defaultProps } from "./video-prop-types";
 import Video360Icon from "./video-360-icon";
+import videoPlayIcon from "../assets/video-play-icon";
 
 const css = `
   div[data-is-360="true"] button.vjs-big-play-button {
@@ -10,24 +11,13 @@ const css = `
   }
 
   .video-js .vjs-big-play-button {
-    width: 70px;
-    height: 70px;
-    margin-top: -35px;
-    margin-left: -35px;
-
-    background: rgba(0, 0, 0, 0.4);
-
-    line-height: 65px;
-
-    border-radius: 0;
-    border-style: solid;
-    border-width: 3px;
-    border-color: white;
-  }
-
-  .video-js .vjs-big-play-button:before {
-    font-size: 60px;
-    left: -2px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: unset !important;
   }
 
   .video-js .vjs-dock-text {
@@ -40,6 +30,56 @@ const css = `
 
   .video-js .vjs-tech {
     position: relative;
+  }
+
+  .vjs-big-play-button .vjs-icon-placeholder::before, .vjs-big-play-button .vjs-icon-placeholder::after {
+    content: "" !important;
+
+    position: absolute;
+    top: unset !important;
+    bottom: 0;
+    left: 0;
+    
+    background-image: url(${videoPlayIcon.base});
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    aspect-ratio: 1 !important;
+    width: 25% !important;
+    height: unset !important;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 128px;
+    max-height: 128px;
+    transition: opacity 100ms ease-in-out;
+  }
+
+  .vjs-big-play-button .vjs-icon-placeholder::before {
+    background-image: url(${videoPlayIcon.base});
+    opacity: 1;
+  }
+
+  .vjs-big-play-button .vjs-icon-placeholder::after {
+    background-image: url(${videoPlayIcon.hover});
+    opacity: 0;
+  }
+
+  .vjs-big-play-button:hover .vjs-icon-placeholder::before {
+      opacity: 0;
+  }
+  .vjs-big-play-button:hover .vjs-icon-placeholder::after {
+      opacity: 1;
+  }
+  .vjs-big-play-button:focus .vjs-icon-placeholder::before {
+    background-image: url(${videoPlayIcon.hover});
+  }
+
+  .vjs-big-play-button:focus {
+   outline: none;
+  }
+
+  .video-js.vjs-has-started  .vjs-big-play-button .vjs-icon-placeholder::before, .video-js.vjs-has-started  .vjs-big-play-button .vjs-icon-placeholder::after {
+    display: none !important;
   }
 `;
 
