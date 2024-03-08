@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.125.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.125.0...@times-components/article-skeleton@1.125.1) (2024-03-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.125.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.124.1...@times-components/article-skeleton@1.125.0) (2024-03-07)
+
+
+### Features
+
+* **TMRX-1941:** update newsletter copy text on luxury articles ([#3793](https://github.com/newsuk/times-components/issues/3793)) ([887aa35](https://github.com/newsuk/times-components/commit/887aa354c7e0891099c71fbe300acebb81bab26b))
+
+
+
+
+
+## [1.124.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.124.0...@times-components/article-skeleton@1.124.1) (2024-03-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 # [1.124.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.123.8...@times-components/article-skeleton@1.124.0) (2024-03-05)
 
 
