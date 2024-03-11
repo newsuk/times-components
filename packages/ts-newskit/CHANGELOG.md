@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.174.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.173.0...@times-components/ts-newskit@1.174.0) (2024-03-07)
+
+
+### Features
+
+* **TMRX-1975:** implement world channel design theme ([#3792](https://github.com/newsuk/times-components/issues/3792)) ([a3cc16b](https://github.com/newsuk/times-components/commit/a3cc16bc523019dd1fd50a1ed8fa2476738f60e3))
+
+
+
+
+
 # [1.173.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.172.4...@times-components/ts-newskit@1.173.0) (2024-03-05)
 
 
