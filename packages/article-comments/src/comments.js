@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import { CommentContainer } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
-import { getDisplayNameFromLocalStorage, userShouldUpdateName } from "./utils";
 
 class Comments extends Component {
   constructor() {
@@ -77,19 +76,7 @@ class Comments extends Component {
 
     document.addEventListener(
       "spot-im-current-user-typing-start",
-      async event => {
-        onCommentStart(event);
-        const displayName = getDisplayNameFromLocalStorage();
-        if (!displayName) return;
-
-        const shouldShowBanner = await userShouldUpdateName(displayName);
-        if (shouldShowBanner) {
-          window.dispatchEvent(
-            new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {})
-          );
-        }
-      },
-      { once: true }
+      onCommentStart
     );
 
     document.addEventListener(
