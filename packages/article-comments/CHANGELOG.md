@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.42.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.18...@times-components/article-comments@0.42.0) (2024-02-20)
+
+
+### Features
+
+* **TMRX-000:** Commenting SSO renew ([#3772](https://github.com/newsuk/times-components/issues/3772)) ([b9c81a9](https://github.com/newsuk/times-components/commit/b9c81a926185e4aee26c9e5fe3236b89ebf43438))
+
+
+
+
+
 ## [0.41.18](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.41.17...@times-components/article-comments@0.41.18) (2024-02-09)
 
 **Note:** Version bump only for package @times-components/article-comments

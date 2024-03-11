@@ -3,6 +3,120 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.174.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.173.0...@times-components/ts-newskit@1.174.0) (2024-03-07)
+
+
+### Features
+
+* **TMRX-1975:** implement world channel design theme ([#3792](https://github.com/newsuk/times-components/issues/3792)) ([a3cc16b](https://github.com/newsuk/times-components/commit/a3cc16bc523019dd1fd50a1ed8fa2476738f60e3))
+
+
+
+
+
+# [1.173.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.172.4...@times-components/ts-newskit@1.173.0) (2024-03-05)
+
+
+### Features
+
+* **TMRX-1852:** new culture theme ([#3785](https://github.com/newsuk/times-components/issues/3785)) ([f729843](https://github.com/newsuk/times-components/commit/f72984333fa17a2d79f0625cb65dc5fc3d922125))
+
+
+
+
+
+## [1.172.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.172.3...@times-components/ts-newskit@1.172.4) (2024-03-04)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.172.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.172.2...@times-components/ts-newskit@1.172.3) (2024-02-29)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.172.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.172.1...@times-components/ts-newskit@1.172.2) (2024-02-27)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.172.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.172.0...@times-components/ts-newskit@1.172.1) (2024-02-21)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+# [1.172.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.171.0...@times-components/ts-newskit@1.172.0) (2024-02-20)
+
+
+### Features
+
+* **TMRX-1954:** add note to files which are being moved to render ([#3773](https://github.com/newsuk/times-components/issues/3773)) ([94552f8](https://github.com/newsuk/times-components/commit/94552f8166ba85d952f44de88b68c0f89a988aae))
+
+
+
+
+
+# [1.171.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.170.0...@times-components/ts-newskit@1.171.0) (2024-02-19)
+
+
+### Features
+
+* **TMRX-1852:** Apply Culture theme to Culture channel page ([#3768](https://github.com/newsuk/times-components/issues/3768)) ([31b64e8](https://github.com/newsuk/times-components/commit/31b64e8d0779246a384df06a7c36d9b84e63dd12))
+
+
+
+
+
+# [1.170.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.169.0...@times-components/ts-newskit@1.170.0) (2024-02-19)
+
+
+### Features
+
+* **TMRX-1929:** create style preset for global menu ([#3770](https://github.com/newsuk/times-components/issues/3770)) ([1916a8b](https://github.com/newsuk/times-components/commit/1916a8b1ca7ef5accb0c03a14709b7c1c0c7cc73))
+
+
+
+
+
+# [1.169.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.168.4...@times-components/ts-newskit@1.169.0) (2024-02-19)
+
+
+### Features
+
+* **TMPZ-346:** adjuted daily quiz styling ([#3769](https://github.com/newsuk/times-components/issues/3769)) ([19f4a8f](https://github.com/newsuk/times-components/commit/19f4a8f4d62875b2ebf8582be4626032641242ff))
+
+
+
+
+
+## [1.168.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.168.3...@times-components/ts-newskit@1.168.4) (2024-02-15)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+## [1.168.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.168.2...@times-components/ts-newskit@1.168.3) (2024-02-12)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
 ## [1.168.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.168.1...@times-components/ts-newskit@1.168.2) (2024-02-09)
 
 **Note:** Version bump only for package @times-components/ts-newskit

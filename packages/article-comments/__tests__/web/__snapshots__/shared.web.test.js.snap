@@ -313,6 +313,7 @@ Array [
   "spot-im-user-notifications-click",
   "spot-im-open-user-profile",
   "spot-im-share-type",
+  "spot-im-renew-sso",
 ]
 `;
 

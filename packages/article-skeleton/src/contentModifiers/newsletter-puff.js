@@ -82,6 +82,17 @@ const newslettersBySection = [
     })
   },
   {
+    section: "luxury",
+    payload: setNewsletterPayload({
+      code: "TNL-148",
+      headline: "Luxury newsletter",
+      copy:
+        "Do you need more luxury in your life? Sign up to the Times Luxury newsletter with one click.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbd3c7a9-4d25-422a-b4a5-a48072778002.jpg?crop=1990%2C1322%2C0%2C0&resize=800"
+    })
+  },
+  {
     section: "bricks & mortar",
     payload: setNewsletterPayload({
       code: "TNL-113",

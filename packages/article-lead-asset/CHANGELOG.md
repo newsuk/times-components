@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.18.16](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.15...@times-components/article-lead-asset@1.18.16) (2024-03-07)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.18.15](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.14...@times-components/article-lead-asset@1.18.15) (2024-03-05)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.18.14](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.13...@times-components/article-lead-asset@1.18.14) (2024-03-05)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.18.13](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.12...@times-components/article-lead-asset@1.18.13) (2024-02-28)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.18.12](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.11...@times-components/article-lead-asset@1.18.12) (2024-02-27)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
 ## [1.18.11](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.18.10...@times-components/article-lead-asset@1.18.11) (2024-02-01)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

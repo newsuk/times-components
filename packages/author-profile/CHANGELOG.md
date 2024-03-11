@@ -3,6 +3,102 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.17.31](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.30...@times-components/author-profile@6.17.31) (2024-03-07)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.30](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.29...@times-components/author-profile@6.17.30) (2024-03-05)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.29](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.28...@times-components/author-profile@6.17.29) (2024-03-04)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.28](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.27...@times-components/author-profile@6.17.28) (2024-02-29)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.27](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.26...@times-components/author-profile@6.17.27) (2024-02-27)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.26](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.25...@times-components/author-profile@6.17.26) (2024-02-21)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.25](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.24...@times-components/author-profile@6.17.25) (2024-02-20)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.24](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.23...@times-components/author-profile@6.17.24) (2024-02-19)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.23](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.22...@times-components/author-profile@6.17.23) (2024-02-19)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.22](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.21...@times-components/author-profile@6.17.22) (2024-02-19)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.21](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.20...@times-components/author-profile@6.17.21) (2024-02-15)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.17.20](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.19...@times-components/author-profile@6.17.20) (2024-02-12)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
 ## [6.17.19](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.17.18...@times-components/author-profile@6.17.19) (2024-02-09)
 
 **Note:** Version bump only for package @times-components/author-profile
