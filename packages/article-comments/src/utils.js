@@ -7,4 +7,4 @@ const parseCookie = cookie =>
 
 const getCpnId = cookie => (cookie ? parseCookie(cookie).eid : undefined);
 
-export default { getCpnId };
+export default getCpnId;
