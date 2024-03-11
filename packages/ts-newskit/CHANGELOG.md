@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.176.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.175.0...@times-components/ts-newskit@1.176.0) (2024-03-11)
+
+
+### Features
+
+* **TMPZ-19:** adding pass through click tracking ([#3779](https://github.com/newsuk/times-components/issues/3779)) ([9691075](https://github.com/newsuk/times-components/commit/9691075ea4579fb4251fd276cc3407020b6ea9f7))
+
+
+
+
+
 # [1.175.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.174.0...@times-components/ts-newskit@1.175.0) (2024-03-11)
 
 
