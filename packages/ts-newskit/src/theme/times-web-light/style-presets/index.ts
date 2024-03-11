@@ -11,6 +11,7 @@ import { feedbackStylePresets } from './feedback';
 import { buttonStylePresets } from './buttons';
 import { sliceHeaderStylePresets } from './slice-header';
 import { popoverStylePresets } from './popover';
+import { chipStylePresets } from './chip';
 
 export const stylePresets = {
   ...popoverStylePresets,
@@ -25,5 +26,6 @@ export const stylePresets = {
   ...secondaryNavigationStylePresets,
   ...sliceStylePresets,
   ...feedbackStylePresets,
-  ...sliceHeaderStylePresets
+  ...sliceHeaderStylePresets,
+  ...chipStylePresets
 };
