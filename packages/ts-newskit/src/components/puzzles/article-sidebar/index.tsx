@@ -12,6 +12,11 @@ import {
 import { NewsKitChevronRightIcon } from '../../../assets';
 import { Puzzle } from './types';
 import { StyledCardComposable, StyledCardMedia } from './styles';
+import {
+  TrackingContext,
+  TrackingContextProvider
+} from '../../../utils/TrackingContextProvider';
+import analyticsStream from './fixtures/analytics-actions';
 
 export interface ArticleSideBarProps {
   sectionTitle: string;
@@ -24,88 +29,141 @@ export const ArticleSidebar: FC<ArticleSideBarProps> = ({
   data,
   pageLink
 }) => {
-  return (
-    <Block stylePreset="sidebarCard" paddingBlockStart="space030">
-      <Block>
-        <Block>
-          <StyledCardComposable
-            overrides={{
-              marginBlockEnd: 'space030',
-              stylePreset: 'cardTitleIcon'
-            }}
-          >
-            <CardLink external={false} expand href={pageLink} />
-            <Stack flow="horizontal-center" stackDistribution="space-between">
-              <TextBlock as="h3" typographyPreset="editorialDisplay002">
-                {sectionTitle}
-              </TextBlock>
+  const clickEvent = (title: string, parent: string = '') => ({
+    action: 'Clicked',
+    object: 'ArticleSidebar',
+    attrs: {
+      event_navigation_action: 'navigation',
+      event_navigation_browsing_method: 'click',
+      event_navigation_name: `${title}`,
+      component_name: 'Article Sidebar',
+      ...(parent && { article_parent_name: parent.toLowerCase() })
+    }
+  });
 
-              <IconButton
+  const handleClick = (
+    fireAnalyticsEvent: (evt: TrackingContext) => void,
+    title: string,
+    parent?: string
+  ) => {
+    fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(title, parent));
+  };
+
+  return (
+    <TrackingContextProvider analyticsStream={analyticsStream}>
+      {({ fireAnalyticsEvent }) => (
+        <Block stylePreset="sidebarCard" paddingBlockStart="space030">
+          <Block>
+            <Block>
+              <StyledCardComposable
                 overrides={{
-                  stylePreset: 'iconPreset',
-                  width: 'sizing050',
-                  height: 'sizing050'
+                  marginBlockEnd: 'space030',
+                  stylePreset: 'cardTitleIcon'
                 }}
               >
-                <NewsKitChevronRightIcon />
-              </IconButton>
-            </Stack>
-          </StyledCardComposable>
+                <CardLink
+                  className="trigger"
+                  external={false}
+                  expand
+                  href={pageLink}
+                  onClick={() =>
+                    handleClick(
+                      fireAnalyticsEvent,
+                      'puzzle sidebar: header selected'
+                    )
+                  }
+                />
+                <Stack
+                  flow="horizontal-center"
+                  stackDistribution="space-between"
+                >
+                  <TextBlock as="h3" typographyPreset="editorialDisplay002">
+                    {sectionTitle}
+                  </TextBlock>
 
-          <TextBlock
-            as="p"
-            marginBlockEnd="space030"
-            stylePreset="inkBase"
-            typographyPreset="utilityBody010"
-          >
-            Challenge yourself with today’s puzzles.
-          </TextBlock>
-        </Block>
-      </Block>
-      <Divider
-        overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
-      />
+                  <IconButton
+                    overrides={{
+                      stylePreset: 'iconPreset',
+                      width: 'sizing050',
+                      height: 'sizing050'
+                    }}
+                  >
+                    <NewsKitChevronRightIcon />
+                  </IconButton>
+                </Stack>
+              </StyledCardComposable>
 
-      {data.map(({ title, url, imgUrl }) => (
-        <React.Fragment key={title}>
-          <CardComposable
-            columns="0fr 1fr"
-            overrides={{
-              stylePreset: 'transparentCard',
-              marginBlockStart: 'space040'
-            }}
-            areas={`
-           media content          
-         `}
-          >
-            <StyledCardMedia
-              media={{
-                src: imgUrl,
-                height: '40px',
-                width: 'auto',
-                alt: 'Puzzle thumbnail',
-                placeholderIcon: true,
-                overrides: {
-                  marginInlineEnd: 'space040',
-                  maxWidth: 'initial'
-                }
-              }}
-            />
-            <CardLink external={false} expand href={url} />
-            <CardContent alignItems="center">
-              <TextBlock typographyPreset="editorialSubheadline010">
-                {title}
+              <TextBlock
+                as="p"
+                marginBlockEnd="space030"
+                stylePreset="inkBase"
+                typographyPreset="utilityBody010"
+              >
+                Challenge yourself with today’s puzzles.
               </TextBlock>
-            </CardContent>
-          </CardComposable>
+            </Block>
+          </Block>
           <Divider
             overrides={{
               marginBlock: 'space040',
               stylePreset: 'dashedDivider'
             }}
           />
-        </React.Fragment>
-      ))}
-    </Block>
+
+          {data.map(({ title, url, imgUrl }) => (
+            <React.Fragment key={title}>
+              <CardComposable
+                columns="0fr 1fr"
+                overrides={{
+                  stylePreset: 'transparentCard',
+                  marginBlockStart: 'space040'
+                }}
+                areas={`
+           media content          
+         `}
+              >
+                <StyledCardMedia
+                  media={{
+                    src: imgUrl,
+                    height: '40px',
+                    width: 'auto',
+                    alt: 'Puzzle thumbnail',
+                    placeholderIcon: true,
+                    overrides: {
+                      marginInlineEnd: 'space040',
+                      maxWidth: 'initial'
+                    }
+                  }}
+                />
+                <CardLink
+                  className="trigger-card-link"
+                  external={false}
+                  expand
+                  href={url}
+                  onClick={() =>
+                    handleClick(
+                      fireAnalyticsEvent,
+                      'puzzle sidebar: puzzle selected',
+                      `${title}`
+                    )
+                  }
+                />
+                <CardContent alignItems="center">
+                  <TextBlock typographyPreset="editorialSubheadline010">
+                    {title}
+                  </TextBlock>
+                </CardContent>
+              </CardComposable>
+              <Divider
+                overrides={{
+                  marginBlock: 'space040',
+                  stylePreset: 'dashedDivider'
+                }}
+              />
+            </React.Fragment>
+          ))}
+        </Block>
+      )}
+    </TrackingContextProvider>
   );
 };
