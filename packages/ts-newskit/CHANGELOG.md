@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.175.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.174.0...@times-components/ts-newskit@1.175.0) (2024-03-11)
+
+
+### Features
+
+* **TMPZ-368:** Use transparent icons for puzzle tiles and add a background color, enabling same images to be used on sidebar ([#3794](https://github.com/newsuk/times-components/issues/3794)) ([442df31](https://github.com/newsuk/times-components/commit/442df3165e12fa8f53f2b4e02339f0cb0f61d3fe))
+* **TNLBT-1128:** Added style presets for Chip component ([#3795](https://github.com/newsuk/times-components/issues/3795)) ([a0ae650](https://github.com/newsuk/times-components/commit/a0ae650bf11e100b834b120faf8d9c421418bce2))
+
+
+
+
+
+# [1.174.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.173.0...@times-components/ts-newskit@1.174.0) (2024-03-07)
+
+
+### Features
+
+* **TMRX-1975:** implement world channel design theme ([#3792](https://github.com/newsuk/times-components/issues/3792)) ([a3cc16b](https://github.com/newsuk/times-components/commit/a3cc16bc523019dd1fd50a1ed8fa2476738f60e3))
+
+
+
+
+
+# [1.173.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.172.4...@times-components/ts-newskit@1.173.0) (2024-03-05)
+
+
+### Features
+
+* **TMRX-1852:** new culture theme ([#3785](https://github.com/newsuk/times-components/issues/3785)) ([f729843](https://github.com/newsuk/times-components/commit/f72984333fa17a2d79f0625cb65dc5fc3d922125))
+
+
+
+
+
 ## [1.172.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.172.3...@times-components/ts-newskit@1.172.4) (2024-03-04)
 
 **Note:** Version bump only for package @times-components/ts-newskit

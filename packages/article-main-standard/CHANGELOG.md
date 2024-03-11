@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.85.24](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.23...@times-components/article-main-standard@3.85.24) (2024-03-11)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.85.23](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.22...@times-components/article-main-standard@3.85.23) (2024-03-07)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.85.22](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.21...@times-components/article-main-standard@3.85.22) (2024-03-07)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.85.21](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.20...@times-components/article-main-standard@3.85.21) (2024-03-07)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.85.20](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.19...@times-components/article-main-standard@3.85.20) (2024-03-05)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.85.19](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.18...@times-components/article-main-standard@3.85.19) (2024-03-05)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [3.85.18](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.85.17...@times-components/article-main-standard@3.85.18) (2024-03-05)
 
 **Note:** Version bump only for package @times-components/article-main-standard
